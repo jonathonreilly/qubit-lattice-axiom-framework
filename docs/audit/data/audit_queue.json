@@ -3,7 +3,7 @@
     "critical": 472,
     "high": 174,
     "leaf": 318,
-    "medium": 325
+    "medium": 324
   },
   "cycle_break_target_count": 131,
   "cycle_break_targets": [
@@ -22150,37 +22150,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "persistent_inertial_response_readiness_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mesoscopic_surrogate_threshold_2d_note",
-        "localized_source_response_sweep_note",
-        "mesoscopic_surrogate_compact_floor_sweep_note",
-        "mesoscopic_surrogate_annular_tapered_sweep_note",
-        "mesoscopic_surrogate_h025_constrained_localization_note",
-        "broad_surrogate_point_source_compare_note",
-        "mesoscopic_surrogate_backreaction_note",
-        "mesoscopic_surrogate_multistage_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.7,
-      "note_path": "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40217,6 +40186,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 1,
-  "total_pending": 1289
+  "ready_count": 0,
+  "total_pending": 1288
 }

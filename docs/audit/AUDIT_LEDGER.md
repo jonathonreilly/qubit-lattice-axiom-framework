@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 14 |
-| unaudited | 1289 |
+| unaudited | 1288 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 98 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,18 +47,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 638 |
-| `audited_conditional` | 98 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1514 |
+| `unaudited` | 1513 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1025 |
+| `bounded_theorem` | 1024 |
 | `decoration` | 31 |
-| `meta` | 228 |
+| `meta` | 229 |
 | `no_go` | 238 |
 | `open_gate` | 112 |
 | `positive_theorem` | 741 |
@@ -817,6 +817,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
+| `persistent_inertial_response_readiness_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8208,6 +8209,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No top-N class met the capture/carry/shift thresholds, so the honest read is broad-surrogate steering, not a closed persistent-mass object.  _(class `C`)_
 - **chain closes:** True — The live probe reproduces the relaunch sweep and the threshold test: every top-N row fails at least one admissibility threshold, and the leading surrogate is broad topN=361 with rel_shift_err 0.271.
 - **rationale:** The retained claim is a negative diagnostic, not a positive persistent-mass theorem. The live runner recomputes the full top-N sweep, finds no admissible class under capture >= 0.80, carry >= 0.90, and rel_shift_err <= 0.05, and identifies only a broad topN=361 surrogate with capture 0.839, carry 0.954, and rel_shift_err 0.271. Residual risk is threshold/scope risk only; this clean audit retains the no-go/broad-surrogate read and explicitly does not retain persistent inertial mass closure.
+- **auditor confidence:** high
+
+### `persistent_inertial_response_readiness_note`
+
+- **Note:** [`PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md`](../../docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md)
+- **claim_type:** `meta`
+- **claim_scope:** A cross-note readiness summary that the provided retained-bounded surrogate, relaunch, localization, threshold, backreaction, and multistage controls do not yet amount to a persistent or quasi-persistent inertial-response object on the retained ordered-lattice family.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T020156Z-e7b5fa80-persistent_inertial_resp-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current retained ordered-lattice harnesses only close the test-particle regime and do not yet produce a localized pattern whose own persistence and response can both be measured on the same family.  _(class `B`)_
+- **chain closes:** False — The restricted packet supports the bounded readiness warning, but it does not close a tier-ratifiable theorem because the source note expressly depends on a synthesis of surrogate authorities and says no registered runner re-derives the ranking or persistent-response criteria. The missing step is a registered readiness/frontier runner or bridge theorem that derives the stated blocker from audit-clean dependencies under explicit criteria.
+- **rationale:** The load-bearing step is a cross-note synthesis over the cited bounded controls, not a first-principles computation or algebraic closure. The cited authorities are presented as retained_bounded, but the source note itself explicitly says the readiness summary cannot be tier-ratified, that no persistent-mass theorem is asserted, and that closure would require auditing or repairing each cited authority and re-deriving the ranking from a registered runner. Therefore the bounded meta-read is coherent, but the chain does not close as an independently ratifiable theorem.
 - **auditor confidence:** high
 
 ### `persistent_object_adaptive_readout_note`

@@ -118,11 +118,11 @@ fractional-instanton dilute-gas condensate.
 
 ## Downstream usage
 
-This wrapper is consumed by:
+This wrapper is consumed by the following downstream notes (back-references, not load-bearing on this wrapper — these consumers cite this wrapper as upstream authority. Markdown links demoted to backticks to break length-2 cycles `cycle-0013`, `cycle-0014`, and `cycle-0015` in `docs/audit/data/cycle_inventory.json`; citation graph direction is *consumer → this wrapper*, not vice versa):
 
-- [INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) — uses Bogomolny + BPST + Atiyah-Singer + Luescher.
-- [MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) — uses Luescher + twisted-`T^4` `'t Hooft / van Baal` for the `Q = 1/2`, `S = 4 pi^2 / g^2` sector.
-- [FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) — uses Luescher + twisted-`T^4` `'t Hooft / van Baal` for fractional `Q = k / N` sectors on twisted `T^4`.
+- `INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md` — uses Bogomolny + BPST + Atiyah-Singer + Luescher.
+- `MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md` — uses Luescher + twisted-`T^4` `'t Hooft / van Baal` for the `Q = 1/2`, `S = 4 pi^2 / g^2` sector.
+- `FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md` — uses Luescher + twisted-`T^4` `'t Hooft / van Baal` for fractional `Q = k / N` sectors on twisted `T^4`.
 
 ## Boundary
 

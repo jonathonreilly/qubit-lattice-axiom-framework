@@ -107,5 +107,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [s3_anomaly_spacetime_lift_note](S3_ANOMALY_SPACETIME_LIFT_NOTE.md)
 - [universal_gr_tensor_variational_candidate_note](UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md)
 - [universal_gr_tensor_quotient_uniqueness_note](UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md)
-- [universal_gr_curvature_localization_blocker_note](UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md)
+- `UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md` (back-reference, not load-bearing on this A1 invariant section — the blocker note is a *downstream consumer* that cites this A1 section as authority for the rank-2 invariant projector. Backticked to break length-4 cycles `cycle-0001` and `cycle-0002` in `docs/audit/data/cycle_inventory.json`; citation graph direction is *downstream blocker → this A1 section*.)
 - [universal_gr_polarization_frame_bundle_blocker_note](UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md)

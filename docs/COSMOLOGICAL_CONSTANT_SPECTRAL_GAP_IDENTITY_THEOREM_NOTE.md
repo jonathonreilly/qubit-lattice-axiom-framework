@@ -56,7 +56,7 @@ status.
 | [`S3_GENERAL_R_DERIVATION_NOTE.md`](S3_GENERAL_R_DERIVATION_NOTE.md) | round `S^3` of radius `R` for any `R > 0` (theorem condition 4 part i) | unaudited |
 | [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md) | `S^3` cap uniqueness (theorem condition 4 part ii) | audited_conditional |
 | `COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` (backticked to break cycle-0043/0044 length-3 cycles; the load-bearing citation direction is *result_2026-04-12 → spectral-gap-identity* via the result note's own dependency chain, not the other way: Leg B Obata equality below is proved directly from Lichnerowicz-Obata, not from the result note) | "exact on the retained internal surface" point 2 — Leg B Obata equality attribution back-reference | unaudited |
-| [`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md) | "Fixed-gap vacuum scale" section — Leg A Einstein-side reference | audited_conditional |
+| `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` (back-reference, not load-bearing — cosmology_scale_identification names this identity theorem as an *upstream* authority for its derivation chain, so the load-bearing citation direction is *cosmology_scale_identification → this identity*, not vice versa. Backticked to break length-2 cycle `cycle-0007` in `docs/audit/data/cycle_inventory.json`.) | "Fixed-gap vacuum scale" section — Leg A Einstein-side reference | audited_conditional |
 | [`DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`](DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md) | downstream EOS corollary that consumes this identity | unaudited |
 
 **What the cite-chain does NOT close.** Five of the eight cited authorities
@@ -106,8 +106,8 @@ The identity is already called "exact on the retained internal surface" in
 attribution back-reference only, this note's Leg A/Leg B proof stands without that note)
 (section "Exact on the retained internal surface", point 2), and the GR-side
 derivation is already written out in
-[`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md)
-(section "Fixed-gap vacuum scale"). This note does not add new science —
+`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`
+(section "Fixed-gap vacuum scale"; backticked here to break length-2 cycle `cycle-0007` in `docs/audit/data/cycle_inventory.json` — cosmology_scale_identification cites this identity theorem as an upstream authority for its own derivation chain, so the load-bearing citation direction is *cosmology_scale_identification → this identity theorem*, not vice versa). This note does not add new science —
 it crystallizes that already-internally-exact statement into a standalone
 retained theorem surface so downstream corollaries (including
 [`DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`](DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md))
@@ -173,7 +173,10 @@ spatial S^3 of radius `R`). Therefore
   `Lambda_vac = 3 / R^2`.
 
 This is the content of the "Fixed-gap vacuum scale" section of
-[`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md).
+`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` (backticked, not a
+markdown link, to break length-2 cycle `cycle-0007` in
+`docs/audit/data/cycle_inventory.json`; see the demotion explanation in
+the citation-table footnote above).
 
 *Leg B (spectral side, Lichnerowicz–Obata).* On the round S^3 of radius `R`
 (condition 4), the scalar Laplacian has exact spectrum `lambda_n =
@@ -212,7 +215,8 @@ numerical value of `R` is not. □
 
 - the numerical value of `R` / `R_Lambda`: the cosmology-scale identification
   remains the honest remaining gap, as recorded in
-  [`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md),
+  `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`
+  (backticked to break `cycle-0007`; see citation-table demotion footnote above),
   "Honest Remaining Gap";
 - the numerical value of `Lambda`: remains the bounded companion
   result of
@@ -251,7 +255,7 @@ retained structural identity row in the cosmology block:
 
 | Quantity / lane | Workstream | Framework result | Observation / comparator | Claim-strength status | Import class | Current publication decision | Authority / best source | Frozen-out ref |
 |---|---|---|---|---|---|---|---|---|
-| Spectral-gap cosmological-constant identity | retained GR + spectral-gap cosmology | `Lambda_vac = lambda_1(S^3_R) = 3 / R^2` as an exact function identity in `R` on the retained de Sitter stationary vacuum + round `S^3` spatial topology | n/a (identity, not a numerical comparison) | retained | retained direct-universal GR closure + retained smooth global gravitational stationary/Gaussian class + retained canonical textbook continuum GR closure + retained `S^3` topology + Lichnerowicz–Obata equality for spheres | retained structural identity may appear on the flagship / SI / theorem box; numerical `R_Lambda` / `Lambda` values stay in the existing bounded companion rows | this note + [COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md](../../COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md) + [COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md](../../COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md) | n/a |
+| Spectral-gap cosmological-constant identity | retained GR + spectral-gap cosmology | `Lambda_vac = lambda_1(S^3_R) = 3 / R^2` as an exact function identity in `R` on the retained de Sitter stationary vacuum + round `S^3` spatial topology | n/a (identity, not a numerical comparison) | retained | retained direct-universal GR closure + retained smooth global gravitational stationary/Gaussian class + retained canonical textbook continuum GR closure + retained `S^3` topology + Lichnerowicz–Obata equality for spheres | retained structural identity may appear on the flagship / SI / theorem box; numerical `R_Lambda` / `Lambda` values stay in the existing bounded companion rows | this note + `COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` + `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` (both backticked, not markdown links, to break length-2 cycle `cycle-0007` and prior cycle hygiene actions in `docs/audit/data/cycle_inventory.json`; these are downstream companion rows, not load-bearing on this identity theorem) | n/a |
 
 The adjacent numerical `Cosmological constant Lambda` row, the
 `\Omega_\Lambda` chain, the `spectral tilt n_s` row, the numerical graviton
@@ -289,7 +293,8 @@ This note does not close:
 
 - the numerical value of `R` / `R_Lambda`: cosmology-scale identification
   remains the honest remaining gap, recorded in
-  [`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md),
+  `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`
+  (backticked to break `cycle-0007`; see citation-table demotion footnote above),
   "Honest Remaining Gap";
 - the numerical value of `Lambda`: bounded companion result of
   `COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` (backticked to break

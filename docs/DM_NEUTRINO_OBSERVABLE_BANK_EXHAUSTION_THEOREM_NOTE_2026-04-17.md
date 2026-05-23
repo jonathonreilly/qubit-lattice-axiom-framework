@@ -262,8 +262,7 @@ All retained / theorem-grade:
  — cosmology chain downstream of `R`.
 - [DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md](./DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md)
  — PMNS-side selector bank CP-sheet blindness (O8).
-- [DM_NEUTRINO_TRANSPORT_CHAMBER_BLINDNESS_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_TRANSPORT_CHAMBER_BLINDNESS_THEOREM_NOTE_2026-04-17.md)
- — prior chamber-blindness at A..D (this note extends to E = parity-mixing F1).
+- `DM_NEUTRINO_TRANSPORT_CHAMBER_BLINDNESS_THEOREM_NOTE_2026-04-17.md` (back-reference, not load-bearing — names the sibling chamber-blindness theorem at slots A..D that this note extends to slot E = parity-mixing F1. Backticked to break length-10 cycle `cycle-0003` in `docs/audit/data/cycle_inventory.json`; the load-bearing inputs for E = parity-mixing F1 are the source-surface notes listed above this entry, not the prior chamber-blindness theorem.)
 - [DM_NEUTRINO_SOURCE_SURFACE_PARITY_MIXING_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_PARITY_MIXING_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md)
  — candidate E and functional-selection ambiguity.
 

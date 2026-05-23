@@ -43,7 +43,8 @@ prediction `K (2−√2) / (4 c L) = 0.029985` to within `−0.33%`.
   identifies the slit-anchored per-arm width: with slits at `y = ±SLIT_Y` on
   layer `nl // 3`, `σ_arm(h) = C_arm · h^α` with `C_arm ≈ 2.71`, `α ≈ 0.5256`.
 - **Quadratic-phase closed-form context**:
-  [`NN_LATTICE_RESCALED_C2_DERIVATION_NOTE_2026-05-10.md`](NN_LATTICE_RESCALED_C2_DERIVATION_NOTE_2026-05-10.md)
+  `NN_LATTICE_RESCALED_C2_DERIVATION_NOTE_2026-05-10.md`
+  (see-also cross-reference; backticked to break length-3 cycle `cycle-0012` in `docs/audit/data/cycle_inventory.json`. The c2_derivation sibling consumes this full-kernel identification note as upstream authority for the rescaled-kernel decomposition, so the load-bearing citation direction is *c2_derivation → this full-kernel-identification*, not vice versa; this back-pointer is contextual.)
   and [`scripts/lattice_nn_rescaled_c2_derivation.py`](../scripts/lattice_nn_rescaled_c2_derivation.py)
   closed form: `c2_∞ = K (2 − √2) / (4 c L_total) ≈ 0.029985` with
   `L_total = 40` (no-slit anchoring is the right one for the phase saddle).

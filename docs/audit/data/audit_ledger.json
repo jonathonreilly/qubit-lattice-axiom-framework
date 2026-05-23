@@ -116822,7 +116822,7 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -116838,11 +116838,11 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 4.5,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "44c0db1fa87421c2e185558665d5d0fcf744274bf384bc56eab2fc16f918b04c",
       "note_path": "docs/H2T_H0125_NARROW_BRIDGE_NOTE.md",
       "notes_for_re_audit_if_any": null,
@@ -150535,11 +150535,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 5.585,
+      "load_bearing_score": 2.585,
       "load_bearing_step": "The current fixed-family artifact chain supports a completed h=0.125 row, machine-clean Born/k=0 behavior, TOWARD bridge sign, and F~M remaining about 0.50 rather than 1.00.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "96af8a9789e90b2d55f30bedcfa00f4bfd256c5096c7aca67e248d19df6e9a45",
       "note_path": "docs/LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md",
       "notes_for_re_audit_if_any": "Re-check only if the scope is widened to a continuum-limit theorem, Newtonian F~M=1 closure, or exact Born-residue prediction.",
@@ -238190,24 +238190,44 @@
       "verdict_rationale": null
     },
     "staggered_dirac_realization_gate_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T18:38:10.003476+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 29.976,
+        "runner_hash": null,
+        "transitive_descendants": 1006
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T183750Z-6fe6a399-staggered_dirac_realizat-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note explicitly states that it does not close the staggered-Dirac realization gate and supplies no end-to-end derivation of substeps (1)-(4). The missing step is a retained-grade proof or coordinated retained theorem chain forcing the Grassmann staggered-Dirac realization and physical species reading from A1+A2.",
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
-      "claim_scope": null,
+      "claim_scope": "Audited only the note's role as a canonical open-gate parent identity for the staggered-Dirac realization target, not a proof of the target.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T18:38:10.003476+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -238215,19 +238235,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 40,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 29.976,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "This note's load-bearing content is identity assignment only: it names the framework baseline, the four substeps the closure must discharge, and the supporting notes.",
+      "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "472fa3e171a6bcba5f321943df8c0dbd70bdda3ceb8d44a363b7f45ab75d5103",
       "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if a future packet replaces this parent-identity note with the cited synthesis theorem or an end-to-end retained proof of substeps (1)-(4).",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -238426,7 +238446,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.977003+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
@@ -238439,7 +238459,7 @@
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note",
       "transitive_descendants": 1006,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note is candidly an identity/package note: it introduces a canonical parent handle for an open gate and points to downstream supporting attempts. Its only load-bearing step is definitional rather than an algebraic or first-principles derivation from the cited axiom premise. The substantive staggered-Dirac realization remains explicitly open in the restricted packet."
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
       "audit_date": "2026-05-23T01:49:53.064076+00:00",
@@ -275023,7 +275043,7 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -290450,8 +290470,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2334,
-    "re_audit_required": 1,
+    "preserved_existing": 2335,
+    "re_audit_required": 0,
     "row_count": 2379,
     "seeded_new": 0
   }

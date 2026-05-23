@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1285 |
+| unaudited | 1284 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 1 |
+| `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -50,20 +50,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 643 |
 | `audited_conditional` | 101 |
-| `audited_decoration` | 26 |
+| `audited_decoration` | 27 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1510 |
+| `unaudited` | 1509 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1013 |
-| `decoration` | 27 |
+| `decoration` | 28 |
 | `meta` | 229 |
 | `no_go` | 239 |
 | `open_gate` | 112 |
-| `positive_theorem` | 757 |
+| `positive_theorem` | 756 |
 
 | criticality | count |
 |---|---:|
@@ -867,6 +867,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
+| `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | algebraic_corollary_of_parent | `cpt_exact_note` |
 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
@@ -2391,6 +2392,20 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The framework's per-site algebra at every x in Z^3 is Cl(3), the site Hilbert space is the faithful irreducible representation, and by the cited per-site uniqueness theorem dim_C H_x = 2.  _(class `A`)_
 - **chain closes:** True — The former physical-Hilbert bridge is supplied by the allowed k=1 qubit-per-site axiom-content context, which states H_x is exactly C^2 rather than a multi-copy Cl(3) module. The retained_bounded Cl(3) uniqueness authority supplies the 2-dim Pauli irrep, and the finite-block formula is standard tensor-product arithmetic.
 - **rationale:** On the targeted packet including the R1 k=1 axiom-content reading, the missing physical-Hilbert bridge does not remain. The cited Cl(3) authority alone would not carry the old U4 physical-site conclusion, but it is sufficient for the abstract Pauli irrep content once R1 supplies H_x = C^2. The runner checks only algebraic Pauli relations, irreducibility, unitary equivalence, and tensor-dimension arithmetic; it does not independently prove R1.
+- **auditor confidence:** high
+
+### `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`
+
+- **Note:** [`CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic SU(3) representation-theory corollary on the cited 3D symmetric-base carrier: 3 ⊗ 3̄ decomposes as one singlet plus one octet, with the normalized trace singlet projector.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T160323Z-9811420a-cl3_quark_antiquark_colo-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The standard Clebsch-Gordan decomposition for SU(N) gives N ⊗ N̄ = 1 ⊕ adj(N), and with N_c = 3 this becomes 3 ⊗ 3̄ = 1 ⊕ 8.  _(class `A`)_
+- **chain closes:** True — Within the algebraic carrier supplied by the cited retained authority, the decomposition and singlet multiplicity follow directly from standard SU(N) representation theory at N=3. The packet does not close the separate physical-color identification, but this audited scope is only the algebraic q-qbar color-structure decomposition on the admitted SU(3) carrier.
+- **rationale:** The proof is a standard algebraic corollary of one upstream retained color-structure theorem plus admitted SU(N) representation theory. The runner genuinely checks normalization, invariance under explicit Gell-Mann generators, projector idempotence/rank, and the 8-dimensional complement, but it does not derive a new framework number beyond the parent carrier and standard group theory. There are no external comparator checks or tuned numerical inputs. Because the chain reduces to a single upstream parent plus standard mathematics, the conservative rubric classifies it as decoration rather than an independent positive theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `cl4c_carrier_axiom_consequence_map_note_2026-04-28`

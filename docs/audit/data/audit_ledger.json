@@ -35403,44 +35403,62 @@
       "verdict_rationale": "On the targeted packet including the R1 k=1 axiom-content reading, the missing physical-Hilbert bridge does not remain. The cited Cl(3) authority alone would not carry the old U4 physical-site conclusion, but it is sufficient for the abstract Pauli irrep content once R1 supplies H_x = C^2. The runner checks only algebraic Pauli relations, irreducibility, unitary equivalence, and tensor-dimension arithmetic; it does not independently prove R1."
     },
     "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T16:03:45.342611+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 8.508,
+        "runner_hash": "9b94820a8a01aedd943356be99a082ccd0cddcb41733e35367ab0511b1d1548c",
+        "transitive_descendants": 181
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T160323Z-9811420a-cl3_quark_antiquark_colo-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the algebraic carrier supplied by the cited retained authority, the decomposition and singlet multiplicity follow directly from standard SU(N) representation theory at N=3. The packet does not close the separate physical-color identification, but this audited scope is only the algebraic q-qbar color-structure decomposition on the admitted SU(3) carrier.",
       "claim_id": "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Algebraic SU(3) representation-theory corollary on the cited 3D symmetric-base carrier: 3 \u2297 3\u0304 decomposes as one singlet plus one octet, with the normalized trace singlet projector.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T16:03:45.342611+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_cl3_color_automorphism_theorem",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_cl3_color_automorphism_theorem",
       "load_bearing_score": 8.508,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The standard Clebsch-Gordan decomposition for SU(N) gives N \u2297 N\u0304 = 1 \u2295 adj(N), and with N_c = 3 this becomes 3 \u2297 3\u0304 = 1 \u2295 8.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "2340409c32410bf80410bf2af414d0b27f9b60c563d88037475951a0188ea050",
       "note_path": "docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the algebraic-scope boundary and do not read this as closing the separate physical SM color bridge.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -35836,16 +35854,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/cl3_quark_antiquark_color_singlet_check.py",
       "title": "Quark-Antiquark State Contains Exactly One Color Singlet",
       "transitive_descendants": 181,
-      "verdict_rationale": null
+      "verdict_rationale": "The proof is a standard algebraic corollary of one upstream retained color-structure theorem plus admitted SU(N) representation theory. The runner genuinely checks normalization, invariance under explicit Gell-Mann generators, projector idempotence/rank, and the 8-dimensional complement, but it does not derive a new framework number beyond the parent carrier and standard group theory. There are no external comparator checks or tuned numerical inputs. Because the chain reduces to a single upstream parent plus standard mathematics, the conservative rubric classifies it as decoration rather than an independent positive theorem."
     },
     "cl3_sm_embedding_master_note": {
       "audit_date": null,

@@ -1,48 +1,6 @@
 {
   "live": [
     {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Can the abstract S3 representation theorem on C^8 = (C^2)^3 under tensor-position permutations be reclassified as positive_theorem while leaving the framework taste-cube carrier interpretation and physical flavor claims gated?",
-      "blocked_by_group_ids": [],
-      "claim_id": "s3_taste_cube_decomposition_note",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this bounded-to-retained queue as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries",
-        "PR 1648 source-coupled local-action convention as an assumed axiom"
-      ],
-      "generated_order": 11,
-      "group_id": "finite_representation_theory",
-      "group_order": 3,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
-      "queue_order": 1,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_s3_action_taste_cube_decomposition.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
       "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "unaudited",
@@ -82,7 +40,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 2,
+      "queue_order": 1,
       "ready": false,
       "ready_blocker": null,
       "runner_path": null,
@@ -91,9 +49,9 @@
       "state": "live"
     }
   ],
-  "live_count": 2,
+  "live_count": 1,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 1,
+  "ready_count": 0,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "unaudited",
@@ -507,6 +465,45 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_su3_wigner_4fold_haar_projector.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "retained",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Can the abstract S3 representation theorem on C^8 = (C^2)^3 under tensor-position permutations be reclassified as positive_theorem while leaving the framework taste-cube carrier interpretation and physical flavor claims gated?",
+      "blocked_by_group_ids": [],
+      "claim_id": "s3_taste_cube_decomposition_note",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this bounded-to-retained queue as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries",
+        "PR 1648 source-coupled local-action convention as an assumed axiom"
+      ],
+      "generated_order": 11,
+      "group_id": "finite_representation_theory",
+      "group_order": 3,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
+      "runner_path": "scripts/frontier_s3_action_taste_cube_decomposition.py",
       "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"

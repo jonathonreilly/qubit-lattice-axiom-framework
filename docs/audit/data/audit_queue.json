@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 279,
     "high": 348,
-    "leaf": 333,
+    "leaf": 332,
     "medium": 339
   },
   "cycle_break_target_count": 0,
@@ -29296,31 +29296,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38901,6 +38876,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 32,
-  "total_pending": 1299
+  "ready_count": 31,
+  "total_pending": 1298
 }

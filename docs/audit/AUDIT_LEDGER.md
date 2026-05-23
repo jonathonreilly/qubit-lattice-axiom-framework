@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1295 |
+| unaudited | 1294 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 7 |
+| ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -54,8 +54,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 7 |
-| `unaudited` | 1520 |
+| `audited_renaming` | 8 |
+| `unaudited` | 1519 |
 
 | claim_type | count |
 |---|---:|
@@ -978,6 +978,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -11661,6 +11662,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The runner performs exact algebraic and symbolic checks, with no external numerical comparator or fitted input, and its source matches the stated class-A substitution role. The load-bearing inference from N_SU(2)=2 to the 1/2 prefactor is a genuine algebraic specialization of the admitted Lüscher convention. The conditional blocker is ledger/status hygiene: the packet labels the X2 cited authority as decoration_under the Cl(3) split note, not as retained, retained_no_go, or retained_bounded.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audit of the U4 per-site Hilbert-space identification under A1: each Z^3 site has H_x = C^2 and multiplicity k(x)=1.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T175506Z-7543c845-u4_closes_under_qubit_re-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the qubit-per-site baseline, the conditional in (C1) is no longer required: the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.  _(class `F`)_
+- **chain closes:** True — Given the accepted axiom premise that a site carries one qubit, the U4 identification follows by unpacking that wording plus standard M_2(C) module uniqueness. The closure is an identity/unpacking of the axiom-surface qubit clause, not an independent derivation.
+- **rationale:** The row is not audited_decoration under cl3_complexification_split: that parent explicitly stops before the physical-Hilbert U4 bridge, and the note also depends on the A1 qubit premise. The load-bearing move identifies A1's 'qubit at every site' with H_x = C^2 and k=1, then restates that as the U4 bridge. That is a concept identity/unpacking, not a class-A algebraic corollary of a single retained parent and not a class-C first-principles computation. No runner was supplied, so the judgment is from the note text and cited authorities.
 - **auditor confidence:** high
 
 ### `unified_basin_freeze_note`

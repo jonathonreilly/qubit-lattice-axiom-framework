@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 305,
-    "leaf": 321,
+    "leaf": 322,
     "medium": 340
   },
   "cycle_break_target_count": 24,
@@ -29280,6 +29280,37 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "central_band_dense_largen_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/central_band_dense_joint_card.py",
+        "scripts/central_band_layernorm_combo.py",
+        "scripts/combined_gravity_scaling.py",
+        "scripts/gap_topological_asymmetry.py",
+        "scripts/gap_topological_asymmetry_layernorm_combo.py",
+        "scripts/generative_causal_dag_interference.py",
+        "scripts/stochastic_collapse_born_calibration.py",
+        "scripts/topology_families.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CENTRAL_BAND_DENSE_LARGEN_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/central_band_dense_joint_largeN.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38738,6 +38769,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 0,
-  "total_pending": 1279
+  "ready_count": 1,
+  "total_pending": 1280
 }

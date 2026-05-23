@@ -43478,7 +43478,7 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "0e4ab2d44ade16ea06ad8c5b91a6d41d10b11ea978ec3553a3b2413bced31262",
+      "note_hash": "17befaac6bc6a48e95619742657cd92b073f66c97cb0bdd0575de4f7395d761b",
       "path": "docs/CENTRAL_BAND_DENSE_LARGEN_NOTE.md",
       "runner_path": "scripts/central_band_dense_joint_largeN.py",
       "title": "Central-Band Dense Large-N Joint Card Note"

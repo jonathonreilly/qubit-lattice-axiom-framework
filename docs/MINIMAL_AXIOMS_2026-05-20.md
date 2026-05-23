@@ -42,12 +42,15 @@ This note also records three consequences of the qubit reframe:
    This addresses the framework's own stated repair target on
    `BORN_RULE_ANALYSIS_2026-04-11.md` (`audited_failed`).
 
-3. The **ideal projective measurement instrument** is fixed by the
-   LSP-projective framework rule ratified on 2026-05-22: for an ideal
-   unrefined sharp projective measurement of projection `P`, the
-   framework uses the Lüders instrument `K_P = P`, so sequential
-   composition with effect `E` is `P E P`. This is a narrow
-   projective-measurement rule, not a universal POVM or apparatus
+3. The **ideal projective measurement instrument** is treated in a
+   named derivation lane, not as axiom content: for an ideal unrefined
+   sharp projective measurement of projection `P`, the canonical-frame
+   Kraus operator is `K_P = P`, so sequential composition with effect
+   `E` is `P E P` (see
+   `LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`,
+   which derives this as the canonical Naimark-dilation frame rather
+   than positing it as a framework rule). This is a narrow
+   projective-measurement statement, not a universal POVM or apparatus
    rule.
 
 ## The two framework axioms
@@ -121,33 +124,31 @@ See companion defense note
 `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` for the explicit response
 to the "vocabulary substitution" framing.
 
-**Ratification clause (R1) — per-site k = 1 selection (2026-05-22).**
-Axiom 1's reading of "qubit at every lattice site" carries the
-`k = 1` selection as load-bearing axiom content: the per-site Hilbert
-space `H_x` is **exactly** `ℂ²` — the unique faithful complex
-irreducible module of `M_2(ℂ)`, with multiplicity `k(x) = 1`, not a
-multi-copy direct sum. Both `k = 1` and `k ≥ 2` are admissible
-finite-dimensional `Cl(3,0)` modules on the abstract algebraic
-surface; Axiom 1's "qubit" reading selects `k = 1`. Relative to the
-weaker algebra-only reading, this is an explicit ratification of
-Axiom 1's intended qubit meaning, not a separate axiom.
-Full ratification text and downstream effects in
-`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening II".
+### Derivation lanes (not axiom content)
 
-**Ratification clause — LSP-projective instrument selection
-(2026-05-22).** For an ideal unrefined sharp projective measurement of
-an orthogonal projection `P ∈ A_Λ` on a finite qubit-lattice region,
-the framework's projective-measurement instrument is the Lüders
-operator `K_P := P`. Sequential composition of outcome `P` followed by
-effect `E` is therefore `M_{P,E} := K_P† E K_P = P E P`.
-This is a load-bearing framework-rule selection, not a theorem forced
-by Axiom 1 and Axiom 2 alone. It applies only to ideal unrefined sharp
-projective measurements; non-projective POVM instruments, refined
-projective measurements later coarse-grained to `P`, apparatus
-back-action, persistent records, and Born-rule promotion remain in
-their own derivation lanes.
-Full ratification text and downstream effects in
-`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening III".
+The following content was previously recorded as ratification clauses
+inside this axiom doc. It has since been moved to named derivation
+lanes that derive the same content from standard machinery, so it is
+**not** axiom content and is **not** a framework rule:
+
+- **Per-site k = 1 selection.** That "qubit at every lattice site"
+  means one qubit per site (`H_x = ℂ²`, multiplicity `k(x) = 1`) is
+  derived in
+  `QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md`
+  from the standard quantum-information definition of "qubit" as the
+  minimal faithful complex irreducible module of `M_2(ℂ)`. It is the
+  meaning of A1's "qubit," not a separate selection.
+- **LSP-projective instrument.** That the ideal unrefined sharp
+  projective measurement of `P` uses `K_P = P` (so `M_{P,E} = P E P`)
+  is derived in
+  `LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`
+  as the canonical Naimark-dilation frame, with twisted alternatives
+  `K_P = U·P` corresponding to apparatus-frame rotations.
+
+These lanes are downstream consequences on A1+A2, owned by the audit
+lane. They are recorded here only as navigation pointers; A1+A2 carry
+no instrument-selection or multiplicity-selection rule beyond the
+standard meaning of "qubit."
 
 ### What "qubit" and "site" mean (commentary, not axiom content)
 
@@ -338,11 +339,11 @@ governance pass retags the row.
 - not a claim that DM, CKM, or Koide gates are already closed
 - not a change to the `Cl(3) ≅ M_2(ℂ)` local-algebra identification,
   which has been the load-bearing Step 1 of `cl3_per_site_uniqueness`
-  from the start; the 2026-05-22 ratification records the intended
-  `k = 1` one-qubit-per-site reading inside Axiom 1
+  from the start; the `k = 1` one-qubit-per-site reading is the
+  standard meaning of "qubit," derived in the named k=1 derivation lane
 - not a unilateral re-axiomatization — this revision sharpens the
-  presentation of Axiom 1 and records two new derivation lanes that
-  follow from Axiom 1 plus Axiom 2 on the qubit reading
+  presentation of Axiom 1 and points to derivation lanes that follow
+  from Axiom 1 plus Axiom 2 on the qubit reading
 
 ## Citation-graph note
 

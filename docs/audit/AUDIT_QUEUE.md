@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1316
-**Ready (all deps already at retained-grade or metadata tiers):** 14
+**Total pending:** 1317
+**Ready (all deps already at retained-grade or metadata tiers):** 15
 
 By criticality:
 - `critical`: 328
 - `high`: 312
-- `medium`: 342
+- `medium`: 343
 - `leaf`: 334
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -18,7 +18,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 1 | `native_gauge_closure_note` | positive_theorem | unaudited | critical | 1059 | 29.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_non_abelian_gauge.py` |
 | 2 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | unaudited | critical | 1008 | 29.98 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 3 | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | unaudited | critical | 1005 | 14.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py` |
-| 4 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | unaudited | critical | 996 | 12.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py` |
+| 4 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | positive_theorem | unaudited | critical | 996 | 12.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py` |
 | 5 | `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | positive_theorem | unaudited | critical | 872 | 18.27 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_planck_target3_clifford_phase_bridge.py` |
 | 6 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | positive_theorem | unaudited | critical | 1050 | 17.54 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ew_current_fierz_channel_decomposition.py` |
 | 7 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | unaudited | critical | 1045 | 16.53 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ew_current_matching_rule_no_go.py` |

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 125 |
+| **retained** | 126 |
 | **retained_no_go** | 147 |
-| **retained_bounded** | 386 |
-| _retained_pending_chain_ | 8 |
+| **retained_bounded** | 385 |
+| _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1316 |
+| unaudited | 1317 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 17 |
@@ -46,22 +46,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 633 |
+| `audited_clean` | 632 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1541 |
+| `unaudited` | 1542 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1023 |
-| `decoration` | 24 |
+| `bounded_theorem` | 1022 |
+| `decoration` | 23 |
 | `meta` | 229 |
 | `no_go` | 239 |
 | `open_gate` | 112 |
-| `positive_theorem` | 750 |
+| `positive_theorem` | 752 |
 
 | criticality | count |
 |---|---:|
@@ -70,7 +70,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 583 |
 | `leaf` | 924 |
 
-- **Retained pending chain closure:** 8
+- **Retained pending chain closure:** 7
 - **Citation cycles detected:** 24
 
 ### Runner classification (static heuristic)
@@ -306,7 +306,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
-| `gauge_scalar_temporal_completion_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -324,7 +324,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4377,14 +4376,14 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 ### `gauge_scalar_temporal_completion_theorem_note`
 
 - **Note:** [`GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md`](../../docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact temporal-completion ratio for the accepted Wilson nearest-neighbor local bosonic scalar gauge-source class with one uniform plaquette weight on the minimal APBC 3 spatial + 1 derived-time block.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop:fresh-2026-05-02-gauge-scalar-temporal-ampere`  (codex-gpt-5; independence=fresh_context)
-- **load-bearing step:** the accepted Wilson local bosonic scalar gauge-source class has one exact temporal kernel shape on the minimal 3+1 block, differing only by overall normalization: K_O(omega) = 3w (3 + sin^2 omega)  _(class `A`)_
-- **chain closes:** True — Within the stated Wilson-source grammar, the six uniform plaquette orientations induce a_x=a_y=a_z=a_t=3w, and the APBC minimal cube sets the spatial sin^2 gaps to 1, giving K_O(omega)=3w(3+sin^2 omega). The normalization cancels in A_inf/A_2, and the exact endpoint ratio is 2/sqrt(3).
-- **rationale:** The audited claim is clean only as a bounded exact algebraic theorem on the explicitly accepted Wilson nearest-neighbor source class. The runner checks the load-bearing bridge from uniform six-orientation plaquette weights to equal directional coefficients, the APBC minimal-cube reduction, normalization cancellation, the endpoint ratio, and negative tests showing anisotropy or forbidden site terms leave the theorem's scope and change the ratio. Residual risk is scope creep: the note's plaquette-bridge language must not be read as closing the full interacting gauge-vacuum plaquette observable, which the source note itself identifies as still open.
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T133506Z-79b61050-gauge_scalar_temporal_co-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Every accepted source reduces exactly to K_O(omega) = 3w (3 + sin^2 omega), so the normalization cancels and A_O(inf) / A_O(2) = 2 / sqrt(3).  _(class `A`)_
+- **chain closes:** True — Within the stated Wilson nearest-neighbor source grammar, the six plaquette orientations induce equal directional weights and the minimal APBC spatial cube gives three unit spatial gaps, yielding K_O(omega) = 3w(3 + sin^2 omega). The endpoint ratio then follows algebraically from the Lt=2 sum and the standard infinite-time trigonometric average; no downstream plaquette-observable closure is claimed.
+- **rationale:** The audited claim is narrow: universality only inside the accepted Wilson nearest-neighbor scalar gauge-source grammar, excluding anisotropic terms, site terms, unrelated source classes, and the interacting plaquette expectation. The load-bearing step is a combinatorial/algebraic reduction of that scoped grammar, not a definition substitution or external numerical match. The runner checks the Wilson orientation count, induced directional equality, minimal-cube kernel reduction, normalization independence, and sensitivity to forbidden deformations; it uses no external comparators.
 - **auditor confidence:** high
 
 ### `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03`
@@ -4747,19 +4746,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k has summands of common sign under the induction hypothesis, so every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support.
-- **auditor confidence:** high
-
-### `gauge_wilson_isotropy_boundary_note_2026-05-04`
-
-- **Note:** [`GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md`](../../docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Route-specific no-go: on the accepted isotropic nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:qubit_axiom_hardening_note_2026-05-20`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T123634Z-8818b9f4-gauge_wilson_isotropy_bo-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The Cl(3) pseudoscalar commutes with all three spatial generators, while the standard staggered-eta plaquette product equals -1 for every one of the six plaquette orientations, so neither checked mechanism supplies orientation-dependent Wilson plaquette coefficients.  _(class `A`)_
-- **chain closes:** True — The algebraic centrality calculation and the eta-product calculation close directly on the local Cl(3,0)/Pauli algebra, the defined staggered phases, and the retained-bounded accepted Wilson grammar with one common coefficient. The note explicitly scopes out global spacetime-emergence or future anisotropy derivations, so the negative boundary matches only the two tested routes.
-- **rationale:** The runner source performs the claimed algebraic checks rather than printing constants: Pauli anticommutation, pseudoscalar square and centrality, non-anticommutation with each generator, and exhaustive eta-products over the parity cube for all six orientations. The axiom-premise citation supplies the local Cl(3,0) qubit algebra under the rubric carve-out, and the Wilson-surface parent is retained_bounded. The no-go discipline gate is satisfied because the claim is narrow to the two attacked mechanisms, distinguishes non-independent walls, rejects hidden anisotropy from standard/canonical language using packet evidence, and leaves future separately approved anisotropy theorems open.
 - **auditor confidence:** high
 
 ### `generation_axiom_boundary_note`

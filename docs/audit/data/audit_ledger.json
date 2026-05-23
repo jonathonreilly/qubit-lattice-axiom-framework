@@ -274576,27 +274576,33 @@
       "verdict_rationale": "The runner directly computes the finite numerical diagnostic rather than hard-coding the shell counts, and the cached output supports the narrow finite shell-margin statement. However the source note itself is explicitly conditional: its status line names the wrong registered runner path, live-stale secondary gap count, and broader inferences not closed by the packet. The retained-claim wording still says 'on admissible irregular bipartite graphs,' which overstates the evidence unless read as shorthand for the audited irregular graph surface. Under the hostile-review rubric, the clean tuple is too strong because it could be recorded as closing more than the finite runner surface and would ignore named operational and scope walls. Applying the N1-N8 wall gate at audit scope: N1 alternative routes beyond the finite shell diagnostic are not closed in this packet; N2 the walls are separable enough to keep explicit; N3 phrases such as retained, admissible, and registered expose hidden scope/registration admissions; N4 no broader witness is available in the restricted packet; N5 the negative carveouts are properly narrow but not fully stress-tested as a no-go; N6 the packet itself gives partial closure by narrowing to the finite diagnostic; N7 a hostile reviewer can accept 60/60 shell margin while rejecting graph-family theorem promotion; N8 prior echo search is unavailable by restriction. Therefore the safe applyable tuple is audited_conditional/bounded_theorem/C, preserving the finite result while recording the unclosed walls.\n\nFive-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theorem', 'C')."
     },
     "weak_coupling_sign_sensitivity_note_2026-04-11": {
-      "audit_date": "2026-05-02T18:00:00+00:00",
+      "audit_date": "2026-05-23T18:02:48.474160+00:00",
       "audit_state_snapshot": {
         "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
         "load_bearing_score": 1.5,
+        "runner_hash": "8e5b06b603d5511804bca3580dbfd2ec43124a39d24c3bd8ca81dc76a986044d",
         "transitive_descendants": 1
       },
       "audit_status": "audited_clean",
-      "auditor": "claude-opus-4.7-1m:open-gates-2026-05-02-c1-02",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T180225Z-2f0c69c0-weak_coupling_sign_sensi-01",
       "auditor_confidence": "high",
-      "auditor_family": "claude-opus",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The bounded claim is purely numerical from the runner: counts of w_asym < 1 across 15 runs, mean width effects, and shell-force counts. The note correctly does NOT promote this to closure of the off-lattice blocker; the bounded scope here is exactly the regime-finding fact that weak-coupling is the strongest currently observed sign-sensitive regime.",
+      "chain_closure_explanation": "The runner source genuinely constructs the graph families, Laplacian, parity-coupled Hamiltonian, Crank-Nicolson evolution, width, gap, and shell-force observables, and the cached output matches the note's reported counts and caveats. The audited scope is bounded to this explicit computational battery and does not close the broader off-lattice blocker.",
       "claim_id": "weak_coupling_sign_sensitivity_note_2026-04-11",
-      "claim_scope": "Exploratory positive: in the weak-coupling regime (G in {5, 10}) on three irregular graph families (random geometric side=8, growing n_target=64, layered cycle 8x8) with seeds 42..46, attractive parity coupling gives w_asym < 1 in 14/15 runs, with mean width effects 9.5% (G=5) and 13.5% (G=10) and the strongest shell-force separation observed across the retained battery. Explicitly does NOT achieve 15/15 universal sign-selection or the cleanly 0/40 repulsive shell-force row required to close the off-lattice sign-selection blocker.",
+      "claim_scope": "For the provided frontier_weak_coupling_battery.py runner at G=5 and G=10 on the specified three graph families, five seeds each, the computed observables show 14/15 width-asymmetry wins for attractive coupling at each G and strong but non-universal shell-force separation.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-02T18:00:00+00:00",
+      "claim_type_last_reviewed": "2026-05-23T18:02:48.474160+00:00",
       "claim_type_provenance": "audited",
       "criticality": "leaf",
       "decoration_parent_claim_id": null,
@@ -274605,16 +274611,16 @@
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "weak",
+      "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "Across G in {5, 10} and three graph families with seeds 42..46, attractive coupling produces w_asym < 1 in 14/15 runs with mean width effects 9.5% and 13.5%; one growing run flips with w_asym = 1.0725.",
+      "load_bearing_step": "The weak-coupling regime is the strongest currently known sign-sensitive regime on the irregular graph families, with attractive coupling almost always contracting more and widening the spectral gap more than repulsive coupling.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "meta",
       "max_descendant_status_rank": 25,
       "note_hash": "5b31b3c65219b0682f9f9c056a32390b165c84450bb3a7b68ebdc7fd6d1a4a09",
       "note_path": "docs/WEAK_COUPLING_SIGN_SENSITIVITY_NOTE_2026-04-11.md",
-      "notes_for_re_audit_if_any": "Re-audit only if cited as proof that the off-lattice sign-selection blocker is closed; the note explicitly disavows that.",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether class C is intended to cover this graph-model first-principles computation rather than only literal Cl(3) on Z^3 computations.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -274644,7 +274650,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -274655,7 +274661,7 @@
       "runner_path": "scripts/frontier_weak_coupling_battery.py",
       "title": "Weak-Coupling Sign-Sensitivity Note",
       "transitive_descendants": 1,
-      "verdict_rationale": "Within the stated 14/15 numerical scope on the named graph battery, the chain closes by direct measurement. The note explicitly enumerates what it does not close (universal sign-selection, clean 0/40 repulsive shell-force, frozen retained semantics), so the bounded interpretation matches the source's safe read. No upgrade to retained closure is implied."
+      "verdict_rationale": "Within the bounded computational scope, the claim follows from the completed runner output and the runner source does not hard-code the contested result or import it from another note. The note accurately preserves the non-universality caveats: 14/15 rather than 15/15 width separation and nonzero repulsive shell-force counts in some random-geometric runs. No external comparator or open cited dependency is used for the bounded claim."
     },
     "wide_family_h0125_bridge_reopen_audit": {
       "audit_date": "2026-05-17T15:54:12.574901+00:00",

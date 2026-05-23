@@ -382,25 +382,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "su3_wigner_intertwiner_block3_theorem_note_2026-05-03",
-      "claim_scope": null,
+      "claim_scope": "Finite L_s=3 PBC 3D cube geometry and tensor-network incidence/index structure: 27 sites, 81 directed links, 81 plaquettes, 4 plaquettes per link, 486 link-labeled adjacency edges with degree 12, and 324 plaquette-link tensor slots, using the retained Block 2 rank-8 projector only as an upstream primitive for the stated index/memory setup.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
         "su3_wigner_intertwiner_block2_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 10.977,
       "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_geometry.py",
       "transitive_descendants": 1007

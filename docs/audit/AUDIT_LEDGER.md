@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 138 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 386 |
+| **retained_bounded** | 387 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1272 |
+| unaudited | 1271 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 647 |
+| `audited_clean` | 648 |
 | `audited_conditional` | 118 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1498 |
+| `unaudited` | 1497 |
 
 | claim_type | count |
 |---|---:|
@@ -581,6 +581,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `retardation_discriminator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9462,6 +9463,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Once phi_ext = Pi_R^ext phi and sigma_R = H_0 phi_ext are fixed, Dirichlet uniqueness gives u = phi_ext and the two local static-conformal constraints uniquely force rho = sigma_R/(2 pi psi^5) and S = 0.5 rho (1/alpha - 1), while the Schur complement makes the exact trace the unique minimizer.  _(class `A`)_
 - **chain closes:** True — Within the stated finite-box O_h source class, the chain closes by finite-dimensional linear algebra: projector-shell identity, Dirichlet uniqueness, triangular solution of the restricted constraints, and positive-definite Schur minimization. The note explicitly keeps the result inside the scalar/static-conformal boundary and does not import a full Einstein/Regge or astrophysical bridge.
 - **rationale:** The current packet runner completed with PASS=41 FAIL=0 TOTAL=41, and the component code computes algebraic finite-box identities rather than checking an external comparator or tuning a target value. The source object is treated as the fixed bounded input class, not as a derived universal gravity source, and the audited conclusion is scoped accordingly. Minor roundoff-level differences between note snippets and current runner output do not affect the closure. No unclosed full-GR, Regge, no-horizon, echo, or astrophysical strong-field consequence is used by the bounded claim.
+- **auditor confidence:** high
+
+### `retardation_discriminator_note`
+
+- **Note:** [`RETARDATION_DISCRIMINATOR_NOTE.md`](../../docs/RETARDATION_DISCRIMINATOR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite toy-harness assertion-gated result for the frozen graph families, fixed source setup, exact nulls, delay-5 difference curve, delay-law checks, global-delay residual, family/seed robustness, and phase-sensitivity slice.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T200423Z-48dc42e1-retardation_discriminato-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within the stated graph family and imposed oscillating-source setup, the delay-difference curve distinguishes finite-propagation response from the instantaneous response to the same imposed source.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite toy graph and propagation amplitudes from fixed parameters, computes instantaneous and retarded phases, and assertion-gates the reported observable surface. The broader no-instantaneous-emulator theorem is explicitly out of binding scope, so it is not needed for this audited claim.
+- **rationale:** The binding claim has been narrowed to a finite deterministic toy-harness computation, not gravitational-wave detection or a general exclusion theorem. The supplied runner source performs the graph growth, propagation, phase extraction, and residual checks rather than merely printing constants; the hard-coded values are used as assertion gates against computed quantities. The cached run exits 0 with 31 passing checks and no helper imports or upstream dependencies are missing.
 - **auditor confidence:** high
 
 ### `retarded_field_causality_probe_note`

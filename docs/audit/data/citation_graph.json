@@ -1929,6 +1929,22 @@
       "to": "anomaly_forces_time_fb_note_2026-05-17"
     },
     {
+      "from": "born_rule_analysis_2026-04-11",
+      "to": "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2"
+    },
+    {
+      "from": "born_rule_analysis_2026-04-11",
+      "to": "higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4"
+    },
+    {
+      "from": "born_rule_analysis_2026-04-11",
+      "to": "closure_t2_gnewton_reaudit_note_2026-05-10_t2gnewton"
+    },
+    {
+      "from": "born_rule_analysis_2026-04-11",
+      "to": "closure_c_bb_f2_1_correction_note_2026-05-10_cbb_correction"
+    },
+    {
       "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
       "to": "minimal_axioms"
     },
@@ -42351,15 +42367,20 @@
     },
     "born_rule_analysis_2026-04-11": {
       "claim_id": "born_rule_analysis_2026-04-11",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (interpretive conditional reading; the",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
+        "higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4",
+        "closure_t2_gnewton_reaudit_note_2026-05-10_t2gnewton",
+        "closure_c_bb_f2_1_correction_note_2026-05-10_cbb_correction"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "2499b346c475a1b78b9e7d508011dea584137563290d4674a9912d2d18f5263b",
+      "note_hash": "bcb31930a19257da376153a3b41f5e1e132714f6e8a319c22a296cf07f9d8233",
       "path": "docs/BORN_RULE_ANALYSIS_2026-04-11.md",
       "runner_path": null,
-      "title": "Born Rule Negative \u2014 What It Teaches"
+      "title": "Born Rule Negative \u2014 Interpretive Conditional Reading"
     },
     "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
       "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
@@ -83698,7 +83719,6 @@
     "bmv_entanglement_note_2026-04-11",
     "bmv_threebody_note_2026-04-11",
     "born_lane_comparison_note",
-    "born_rule_analysis_2026-04-11",
     "bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10",
     "bound_state_selection_note",
     "branch_cleanup_recommendation_2026-05-03",
@@ -84390,11 +84410,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 522,
+      "bounded_theorem": 523,
       "decoration": 1,
       "meta": 187,
       "no_go": 65,
-      "none": 1494,
+      "none": 1493,
       "open_gate": 46,
       "positive_theorem": 176
     },
@@ -84407,10 +84427,10 @@
       "open_gate": 124,
       "positive_theorem": 609
     },
-    "edge_count": 9682,
-    "leaf_count": 759,
+    "edge_count": 9686,
+    "leaf_count": 758,
     "node_count": 2491,
-    "root_count": 822,
+    "root_count": 821,
     "runners_with_path": 2052
   }
 }

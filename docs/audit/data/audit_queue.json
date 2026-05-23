@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 313,
-    "high": 305,
+    "high": 306,
     "leaf": 321,
     "medium": 340
   },
@@ -14635,6 +14635,33 @@
       "helper_runner_paths": [],
       "load_bearing_score": 12.977,
       "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": null,
+      "transitive_descendants": 62
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "born_rule_analysis_2026-04-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
+        "higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4",
+        "closure_t2_gnewton_reaudit_note_2026-05-10_t2gnewton",
+        "closure_c_bb_f2_1_correction_note_2026-05-10_cbb_correction"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.977,
+      "note_path": "docs/BORN_RULE_ANALYSIS_2026-04-11.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
@@ -38739,5 +38766,5 @@
     }
   ],
   "ready_count": 0,
-  "total_pending": 1279
+  "total_pending": 1280
 }

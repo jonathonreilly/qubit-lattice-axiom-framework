@@ -51,6 +51,14 @@ import runner_cache as rc
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIT_DIR = REPO_ROOT / "docs" / "audit"
+
+# Centralized accepted-premise policy (axiom node + admitted external
+# imports). Shared with compute_effective_status / audit_lint /
+# compute_reaudit_candidates via docs/audit/scripts/premise_nodes.py so the
+# prompt and the deterministic pipeline cannot drift.
+sys.path.insert(0, str(AUDIT_DIR / "scripts"))
+import premise_nodes
+
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
 REAUDIT_CANDIDATES_PATH = AUDIT_DIR / "data" / "reaudit_candidates.json"
@@ -544,10 +552,17 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         dep_body = read_note_body(dep_path) or f"[dep note missing: {dep_path}]"
         eff = dep_row.get("effective_status") or "unaudited"
         ct = dep_row.get("claim_type") or "?"
+        premise_line = ""
+        if premise_nodes.is_axiom_premise(dep_cid):
+            premise_line = (
+                "=== Cited authority axiom_premise: true "
+                "(accepted framework premise; see rubric §4 carve-out) ===\n"
+            )
         cited_blocks.append(
             f"=== BEGIN CITED AUTHORITY: {dep_path} ===\n"
             f"=== Cited authority effective_status: {eff} ===\n"
             f"=== Cited authority claim_type: {ct} ===\n"
+            f"{premise_line}"
             f"{dep_body}\n"
             f"=== END CITED AUTHORITY: {dep_path} ==="
         )

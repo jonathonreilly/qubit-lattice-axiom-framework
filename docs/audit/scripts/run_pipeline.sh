@@ -35,6 +35,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 cd "${REPO_ROOT}"
 
+echo "==> 0/15 check_axiom_premise_clean.py (guard: axiom-premise docs stay pure A1+A2)"
+python3 docs/audit/scripts/check_axiom_premise_clean.py
+
 echo "==> 1/15 build_citation_graph.py"
 python3 docs/audit/scripts/build_citation_graph.py
 

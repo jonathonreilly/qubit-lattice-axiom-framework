@@ -16020,6 +16020,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_observable_principle_p1_campaign_closure_synthesis_2026_05_18.py"
     },
+    "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": {
+      "assert_count": 2,
+      "counts": {
+        "A": 7,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -24504,6 +24516,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_yt_p3_msbar_to_pole_k3.py"
     },
+    "yt_pr230_route_exhaustion_summary_note_2026-05-22": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_yt_pr230_route_exhaustion_summary.py"
+    },
     "yt_qfp_insensitivity_support_note": {
       "assert_count": 0,
       "counts": {
@@ -26221,6 +26245,21 @@
       "counts": {
         "A": 19,
         "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py": {
+      "assert_count": 2,
+      "claims": [
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -48647,6 +48686,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_yt_pr230_route_exhaustion_summary.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_pr230_route_exhaustion_summary_note_2026-05-22"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_yt_qfp_insensitivity.py": {
       "assert_count": 0,
       "claims": [
@@ -53763,15 +53817,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 307,
+    "decoration_candidates": 309,
     "dominant_class_distribution": {
-      "A": 201,
-      "B": 264,
+      "A": 202,
+      "B": 265,
       "C": 733,
       "D": 296,
       "none": 433
     },
-    "runners_classified": 1927,
+    "runners_classified": 1929,
     "runners_with_C": 950,
     "runners_with_D": 548
   }

@@ -12,9 +12,8 @@ downstream repair target, not an upstream theorem dependency for this row.
 
 ## Claim
 
-On the qubit-lattice substrate
-([`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md):
-A1 = qubit at every site = `M_2(ℂ)`; A2 = `Z^3`), the canonical
+On the one-qubit operator algebra over the `Z^3` spatial substrate
+([`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)), the canonical
 **qubit-trace generating functional**
 
 ```text
@@ -46,7 +45,7 @@ retag the parent row by itself.
 
 ## Setup
 
-By A1+A2, the quasi-local operator algebra is
+By the framework baseline, the quasi-local operator algebra is
 `A = ⊗_{x ∈ Z^3} M_2(ℂ)`, the UHF C*-algebra of type `2^∞`. For a
 finite region `Λ ⊂ Z^3`, `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ)` is a simple
 finite-dim C*-algebra acting on `H_Λ = ⊗_x ℂ²` of dimension `2^|Λ|`.
@@ -128,7 +127,7 @@ operator-trace content on the qubit algebra.
 
 The independent-subsystem premise (`H = H_1 ⊗ 𝟙 + 𝟙 ⊗ H_2`,
 `[J_1, J_2] = 0` across regions) is the **defining** content of
-"independent subsystems" on the qubit lattice. Under A1+A2, this
+"independent subsystems" on the qubit lattice. On that substrate, this
 is tracked by the equal-time locality row
 `LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10`.
 That upstream row's audit status is independent of this note.
@@ -253,10 +252,11 @@ This is a `bounded_theorem` candidate. The steps are textbook
 operator-algebraic linear algebra (Steps 1, 3) plus separately tracked
 framework primitives (microcausality, CPT). The narrow contribution
 is the explicit identification that the qubit-trace formulation
-(canonically available since the qubit reframe of A1) makes P1 and
-P2 derivable rather than admitted.
+(canonically available from the qubit-per-site baseline) makes P1 and
+P2 bounded theorem candidates rather than standalone admissions on the
+qubit-trace scope.
 
-The qubit reframe of A1 (landed in main as
+The qubit-per-site baseline (landed in main as
 `MINIMAL_AXIOMS_2026-05-20.md`) is what enables this note: the
 canonical trace on `M_2(ℂ)` makes the qubit-trace partition
 function `Z[J] = Tr(e^{-H[J]})` the natural starting point,
@@ -265,15 +265,15 @@ mathematically equivalent under the Grassmann/Berezin bridge.
 
 Without the qubit reframe, the natural scalar generator was the
 fermion-det version `log|det(D+J)|`, for which P1 and P2 had to be
-admitted as selection premises. With the qubit reframe, the natural
+admitted as selection premises. With the qubit-per-site baseline, the natural
 scalar generator is the qubit-trace `log Z[J]`, for which P1 and P2
-are theorems.
+are bounded theorem candidates on the stated scope.
 
 ## Citation-graph note
 
 **Upstream framework dependencies** (load-bearing; markdown links so the citation graph records them as deps):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate); the qubit-trace formulation requires the canonical trace on `M_2(ℂ)`
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site axiom and `Z^3` spatial substrate; the qubit-trace formulation requires the canonical trace on `M_2(ℂ)`
 - [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md) — supplies microcausality for the independent-subsystem premise
 - [`AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`](AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) — supplies the CPT action used in Step 2 phase-blindness derivation
 
@@ -289,6 +289,71 @@ are theorems.
   whose P1/P2 repair this note may support after independent audit and
   dependency-chain update
 - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` — Grassmann gate closure target; the gate-conditional bridge in Step 4 depends on this gate closing
+
+## Runner companion
+
+Primary runner:
+[`scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py`](../scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py)
+verifies Step 1 at exact sympy precision on small qubit blocks, checks
+Step 2 positivity by symbolic Hermitian-spectrum algebra plus numeric
+samples, and adds randomized numeric checks on 2-site and 3-site qubit
+registers:
+
+- **T1**: Symbolic 1-qubit factorization
+  `exp(-(H_A ⊗ I + I ⊗ H_B + J_A ⊗ I + I ⊗ J_B))
+  = exp(-(H_A + J_A)) ⊗ exp(-(H_B + J_B))` at exact sympy precision on
+  diagonal Hermitian inputs, plus the trace identity (Eq. 6 of the note).
+- **T2**: log-additivity follow-through
+  `W_qubit[J_A ⊕ J_B] = W_qubit[J_A] + W_qubit[J_B]` at high-precision
+  rational numeric sympy evaluation (50-digit) on three independent
+  substitutions (Eq. 8 of the note).
+- **T3**: Trace-tensor identity `Tr(B_A ⊗ B_B) = Tr(B_A) · Tr(B_B)` on
+  10 random rational 2x2 pairs (the linear-algebra input used in Step 1,
+  Eq. 6).
+- **T4**: Boundary normalization `W_qubit[0] = 0` (Step 3 / P4)
+  symbolically and on a numeric 4x4 Hermitian sample.
+- **T5**: 2-site numeric factorization on 25 random Hermitian
+  (`H_A, H_B, J_A, J_B`) 2x2 samples, residual `< 1e-12`.
+- **T6**: 3-site (8x8) numeric factorization on 15 random Hermitian
+  (`H_A` 2x2, `H_B` 4x4, `J_A` 2x2, `J_B` 4x4) samples, residual
+  `< 1e-10`. (Sympy `Matrix.exp` on 8x8 symbolic Hermitian times out
+  > 60 s; exact-symbolic verification is done at T1 / T2 on the
+  smaller 4x4 case, numeric at T6 confirms the same identity at
+  higher dimension.)
+- **T7**: Positivity (Step 2 / P2 side condition).  Generic 2x2 Hermitian
+  `M` parameterized by 4 real symbols `(x, y, z, w)`; verify the
+  eigenvalue discriminant `(x-y)^2 + 4(z^2 + w^2)` is a manifest sum
+  of real squares so eigenvalues are real; verify `Tr(exp(-M)) > 0`
+  on a symbolic substitution and on 100 random Hermitian samples
+  (d in {2, 4}, 50 each).
+- **T8**: CPT-equivariance shape check
+  `Tr((exp(-(H+J)))^*) = Tr(exp(-(H + J^*)))` for real `H` and
+  Hermitian `J` (Step 2 CPT footnote), numeric on a 4x4 instance, plus
+  modulus equivariance `|Z[J]| = |Z[ΘJΘ^{-1}]|`.
+- **T9**: Source-note boundary check — required strings
+  (`bounded_theorem candidate`, `independent audit lane owns the verdict`,
+  `gate-conditional`, `audited_conditional`) present and forbidden
+  overclaim phrases absent.
+- **T10**: Independence (microcausality input, Eq. §1 of "Admitted
+  inputs") — `[J_A ⊗ I, I ⊗ J_B] = 0` for arbitrary 2x2 Hermitian
+  `J_A, J_B` at exact symbolic precision.
+
+Reproduction:
+
+```bash
+python3 scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py
+```
+
+Expected scorecard: PASS=23 FAIL=0 at exact sympy precision where
+tractable plus the named high-precision and randomized numeric checks.
+A passing run supports the bounded structural content for Steps 1 and 2
+of the note, plus the P4 normalization and boundary/scope checks; it
+does not retag the broad parent row `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+and does not verify or internalize the Grassmann/Berezin bridge to the
+`det` form (which remains gate-conditional on
+`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`).
+
+`runner_path: scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py`
 
 ## What this file is not
 

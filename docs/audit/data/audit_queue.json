@@ -34322,7 +34322,7 @@
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
       "transitive_descendants": 0
     },
     {

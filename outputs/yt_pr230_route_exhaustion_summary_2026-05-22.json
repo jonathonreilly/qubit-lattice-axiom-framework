@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "backup_branch_named": true,
+    "direct_compute_demoted": true,
+    "fh_lsz_blocker_named": true,
+    "forbidden_import_firewall": true,
+    "lsp_firewall_named": true,
+    "negative_scope_limited": true,
+    "no_go_discipline_gate_present": true,
+    "schur_blocker_named": true,
+    "status_support_only": true,
+    "surviving_gate_named": true,
+    "wz_blocker_named": true
+  },
+  "fail_count": 0,
+  "pass_count": 11,
+  "proposal_allowed": false,
+  "review_surface": [
+    "docs/YT_PR230_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md",
+    "scripts/frontier_yt_pr230_route_exhaustion_summary.py",
+    "outputs/yt_pr230_route_exhaustion_summary_2026-05-22.json"
+  ],
+  "status": "route-memory support only / no retained or proposed_retained claim"
+}

@@ -19,7 +19,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 137 |
-| **retained_no_go** | 151 |
+| **retained_no_go** | 150 |
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
@@ -27,7 +27,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 638 |
-| `audited_conditional` | 101 |
+| `audited_clean` | 637 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
@@ -598,7 +598,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
-| `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | weak | claude-opus | C | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `sixth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
@@ -839,6 +838,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9599,13 +9599,13 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md`](../../docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md)
 - **claim_type:** `no_go`
-- **claim_scope:** On the F3 cycle-2 stuck fan-out scope, no single-cycle Sigma m_nu retention route exists across 5 orthogonal premises (F3-alpha PDG osc lower bound, F3-beta retained N_eff, F3-gamma CMB peak Omega h^2 alt admission, F3-delta Lane 4D Dirac/Majorana basis, F3-epsilon eta admitted-input promotion): each route is either comparator-only, structural-only, kinematic-only, speculative, or yields a result in marginal tension with the NO oscillation floor (~0.003 eV either way). The structural-tension residue is identified as framework current-bank Omega_DM in [0.2677, 0.2697] vs. observation ~0.265, not (T-4F-alpha-2) itself. Excludes any claim of numerical Sigma m_nu retention.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `claude-opus-4.7-1m:open-gates-2026-05-02-c1-06`  (claude-opus; independence=weak)
-- **load-bearing step:** Across all 5 enumerated F3 routes, the table of independent-cross-bound? answers is (No, No, Yes-but-tension, No, No); the only positive route (F3-gamma) gives Sigma m_nu approx 0.056 eV, ~0.003 eV below the NO oscillation floor 0.0586 eV; and the framework current-bank Omega_DM excess by ~0.003 over Planck-derived ~0.265 is the structural-tension source.  _(class `C`)_
-- **chain closes:** True — The no-go is structural and arithmetic: each of the 5 routes is shown not to supply an independent cross-bound producing positive Sigma m_nu within the NO oscillation floor under the framework's no-fitted-parameter posture. The runner check breakdown (A=3, B=10, C=4, D=3) verifies the route-by-route enumeration and the ~0.003 eV magnitude of the residual tension.
-- **rationale:** Within the stuck-fan-out scope, the chain closes as a clean no-go for single-cycle Sigma m_nu retention. The structural-tension residue (framework Omega_DM vs. observation) is sharp and identified, and the three pivots forward (Omega_DM tightening, alt-admission bypass, Lane 5 C1 closure) are flagged as research-level moves beyond the cycle. This is a ratified negative result, not an active failure.
+- **claim_scope:** F3 fan-out no-go that the five named Sigma m_nu routes do not supply numerical retention on the current framework surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T175948Z-c610fed3-sigma_mnu_f3_stuck_fanou-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** No orthogonal F3-* route supplies an independent Sigma m_nu cross-bound on the framework's current-bank surface.  _(class `A`)_
+- **chain closes:** False — The finite-route synthesis follows only if the five route statuses and current-framework surface are accepted as inputs. The packet supplies no upstream authorities for T-4F-alpha-2, the current-bank Omega_DM interval, retained N_eff, the no-fitted-parameter rule, eta status, or the Lane 5 gate, and the runner hard-codes most of those status judgments.
+- **rationale:** The no-go gate passes N1 at the surface level because the note enumerates five distinct attack routes and mostly collapses non-independent routes under N2. It fails clean no-go under N4/N8: the restricted packet does not include the witness authorities needed to verify the Cycle-1 Omega_DM residue, T-4F-alpha-2, current-bank Omega_DM, eta status, or Lane 5 gate using same-packet evidence. The runner checks the PDG/CMB arithmetic but hard-codes most route-status and completeness conclusions as True. The scoped no-go is therefore plausible but conditional on missing dependency edges.
 - **auditor confidence:** high
 
 ### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`

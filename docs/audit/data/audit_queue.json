@@ -3,7 +3,7 @@
     "critical": 313,
     "high": 305,
     "leaf": 335,
-    "medium": 343
+    "medium": 342
   },
   "cycle_break_target_count": 24,
   "cycle_break_targets": [
@@ -18786,30 +18786,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.085,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py",
-      "transitive_descendants": 47
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39163,6 +39139,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 16,
-  "total_pending": 1296
+  "ready_count": 15,
+  "total_pending": 1295
 }

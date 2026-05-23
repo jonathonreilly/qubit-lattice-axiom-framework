@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 133 |
+| **retained** | 134 |
 | **retained_no_go** | 150 |
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1296 |
+| unaudited | 1295 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 636 |
+| `audited_clean` | 637 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1521 |
+| `unaudited` | 1520 |
 
 | claim_type | count |
 |---|---:|
@@ -328,6 +328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4922,6 +4923,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input.
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input.
 - **auditor confidence:** judicial_panel_majority
+
+### `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For K_1(t)=log I_0(t), the Taylor coefficients have zero odd orders and strictly nonzero alternating-sign even orders for all k>=1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T152609Z-d35016d4-gauge_vacuum_plaquette_u-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Riccati recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k, together with induction, proves every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
+- **chain closes:** True — The recurrence follows algebraically from the stated Bessel derivative identities and the Riccati equation, and the sign induction is valid because all summands in the convolution share the same nonzero sign. The cited parent is retained_no_go, and no open upstream premise is needed for the narrow U(1) coefficient theorem beyond the stated U(1) normalization and standard Bessel calculus.
+- **rationale:** The proof is a genuine algebraic closure: parity follows from evenness of I_0, while density and sign alternation follow from the explicit Riccati coefficient recurrence and a correct strong induction. The runner source performs exact symbolic and rational checks rather than merely printing constants, though its finite-order checks are only corroborative because the note supplies the all-order induction. The cached runner summary line reports THEOREM PASS=7 while the note expected PASS=8, but the source and stdout show no failing theorem check and this count mismatch is not load-bearing.
+- **auditor confidence:** high
 
 ### `gellmann_completeness_theorem_note_2026-05-02`
 

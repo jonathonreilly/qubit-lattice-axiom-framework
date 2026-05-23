@@ -13,8 +13,8 @@
       },
       "bias_direction_breakdown": {},
       "criticality_counts": {
-        "critical": 2,
-        "high": 1,
+        "critical": 1,
+        "high": 2,
         "leaf": 12,
         "medium": 6
       },
@@ -56,8 +56,8 @@
         "same_severity": 9
       },
       "criticality_counts": {
-        "critical": 26,
-        "high": 12,
+        "critical": 19,
+        "high": 19,
         "leaf": 181,
         "medium": 36
       },
@@ -102,10 +102,10 @@
         "same_severity": 18
       },
       "criticality_counts": {
-        "critical": 140,
-        "high": 45,
-        "leaf": 231,
-        "medium": 170
+        "critical": 88,
+        "high": 90,
+        "leaf": 234,
+        "medium": 174
       },
       "cross_confirmation_agreement_rate": 0.747,
       "cross_confirmation_outcomes": {

@@ -86,8 +86,50 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 
+AXIOM_PREMISE_NODES_PATH = AUDIT_DATA_DIR / "axiom_premise_nodes.json"
+
+
+def _load_axiom_premise_path_map() -> dict[str, str]:
+    """Map repo-relative source path -> canonical un-dated claim_id.
+
+    Lets a re-datable axiom doc (e.g. MINIMAL_AXIOMS_2026-05-20.md) keep a
+    stable claim_id (`minimal_axioms`) so inbound citation edges and the
+    axiom-premise status survive re-dating. Allowlist only; see
+    docs/audit/data/axiom_premise_nodes.json.
+    """
+    if not AXIOM_PREMISE_NODES_PATH.exists():
+        return {}
+    try:
+        data = json.loads(AXIOM_PREMISE_NODES_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    out: dict[str, str] = {}
+    for canonical_id, entry in (data.get("nodes") or {}).items():
+        for p in entry.get("aliased_paths", []):
+            out[str(p)] = canonical_id
+    return out
+
+
+_AXIOM_PREMISE_PATH_MAP: dict[str, str] | None = None
+
+
+def _axiom_premise_path_map() -> dict[str, str]:
+    global _AXIOM_PREMISE_PATH_MAP
+    if _AXIOM_PREMISE_PATH_MAP is None:
+        _AXIOM_PREMISE_PATH_MAP = _load_axiom_premise_path_map()
+    return _AXIOM_PREMISE_PATH_MAP
+
+
 def claim_id_from_path(path: Path) -> str:
-    """Stable claim_id from doc path: docs/X/Y.md -> X.Y (stem, lowercase)."""
+    """Stable claim_id from doc path: docs/X/Y.md -> X.Y (stem, lowercase).
+
+    Allowlisted axiom-premise source paths are canonicalized to their
+    stable un-dated id (see docs/audit/data/axiom_premise_nodes.json).
+    """
+    rel_repo = path.resolve().relative_to(REPO_ROOT).as_posix()
+    canonical = _axiom_premise_path_map().get(rel_repo)
+    if canonical is not None:
+        return canonical
     rel = path.relative_to(DOCS_DIR)
     parts = list(rel.with_suffix("").parts)
     return ".".join(parts).lower()

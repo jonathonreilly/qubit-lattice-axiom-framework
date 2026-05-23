@@ -37,6 +37,21 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+AXIOM_PREMISE_NODES_PATH = REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+
+_AXIOM_PREMISE_IDS: set[str] | None = None
+
+
+def axiom_premise_ids() -> set[str]:
+    """Canonical axiom-premise claim_ids (see axiom_premise_nodes.json)."""
+    global _AXIOM_PREMISE_IDS
+    if _AXIOM_PREMISE_IDS is None:
+        try:
+            data = json.loads(AXIOM_PREMISE_NODES_PATH.read_text(encoding="utf-8"))
+            _AXIOM_PREMISE_IDS = set(data.get("canonical_ids") or [])
+        except Exception:
+            _AXIOM_PREMISE_IDS = set()
+    return _AXIOM_PREMISE_IDS
 
 REQUIRED_FIELDS = {
     "claim_id",
@@ -293,6 +308,17 @@ def snapshot_audit_state(row: dict, rows: dict[str, dict]) -> dict:
         "dep_claim_scope": {
             d: rows.get(d, {}).get("claim_scope")
             for d in deps
+        },
+        # Note-hash of any axiom-premise dep at audit time. An axiom-premise
+        # node stays effective_status=meta across content edits, so a change
+        # to the axiom prose is invisible to the dep_effective_status /
+        # dep_claim_type / dep_claim_scope triggers above. Recording its hash
+        # lets invalidate_stale_audits re-look at direct citers when the axiom
+        # text actually changes.
+        "dep_axiom_premise_note_hash": {
+            d: rows.get(d, {}).get("note_hash")
+            for d in deps
+            if d in axiom_premise_ids()
         },
         "criticality": row.get("criticality"),
         "load_bearing_score": row.get("load_bearing_score"),

@@ -203,6 +203,20 @@ Definitions you must use:
     The carve-out applies only to authorities the packet explicitly flags
     `axiom_premise: true`; every other not-retained-grade authority still
     downgrades as above.
+    **Admitted-external-import carve-out.** A cited authority flagged
+    `admitted_external_import: true` is an allowlisted, precisely-cited,
+    scope-limited standard textbook theorem that makes no framework-specific
+    claim (e.g. Powers' UHF unique-trace theorem; Naimark dilation). It is
+    accepted as retained-grade upstream **for its stated imported result
+    only**, the way a math paper cites a textbook theorem — so it does not
+    count toward the not-retained-grade downgrade. As with the axiom premise,
+    this is not a free pass: the citing note's own load-bearing step must
+    still close, and the import may only be used within the scope the flag
+    states. If the citing note leans on the import beyond its stated scope,
+    or the import is used to stand in for a framework-specific derivation,
+    the chain does not close → `audited_conditional`. The flagged import
+    note's own audited status is irrelevant to this carve-out; the carve-out
+    is about whether a *dependent* may cite it as settled textbook upstream.
   - `audited_decoration` — every load-bearing step is class (A), the
     note has zero (D) checks, and the chain reduces to a single upstream
     parent claim plus standard mathematics. (See

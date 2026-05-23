@@ -55,8 +55,10 @@ LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
 REAUDIT_CANDIDATES_PATH = AUDIT_DIR / "data" / "reaudit_candidates.json"
 AXIOM_PREMISE_NODES_PATH = AUDIT_DIR / "data" / "axiom_premise_nodes.json"
+EXTERNAL_IMPORT_NODES_PATH = AUDIT_DIR / "data" / "external_import_nodes.json"
 
 _AXIOM_PREMISE_IDS: set[str] | None = None
+_EXTERNAL_IMPORT_IDS: set[str] | None = None
 
 
 def axiom_premise_ids() -> set[str]:
@@ -74,6 +76,22 @@ def axiom_premise_ids() -> set[str]:
         except Exception:
             _AXIOM_PREMISE_IDS = set()
     return _AXIOM_PREMISE_IDS
+
+
+def external_import_ids() -> set[str]:
+    """Allowlisted admitted-external-import claim_ids (see
+    external_import_nodes.json). Citing one is accepted as retained-grade
+    upstream for its stated scope (AUDIT_AGENT_PROMPT_TEMPLATE.md). Empty
+    when the registry is absent.
+    """
+    global _EXTERNAL_IMPORT_IDS
+    if _EXTERNAL_IMPORT_IDS is None:
+        try:
+            data = json.loads(EXTERNAL_IMPORT_NODES_PATH.read_text(encoding="utf-8"))
+            _EXTERNAL_IMPORT_IDS = set((data.get("nodes") or {}).keys())
+        except Exception:
+            _EXTERNAL_IMPORT_IDS = set()
+    return _EXTERNAL_IMPORT_IDS
 PROMPT_TEMPLATE_PATH = AUDIT_DIR / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
 APPLY_AUDIT_SCRIPT = AUDIT_DIR / "scripts" / "apply_audit.py"
 ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
@@ -569,6 +587,12 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             premise_line = (
                 "=== Cited authority axiom_premise: true "
                 "(accepted framework premise; see rubric §4 carve-out) ===\n"
+            )
+        elif dep_cid in external_import_ids():
+            premise_line = (
+                "=== Cited authority admitted_external_import: true "
+                "(allowlisted textbook import, retained-grade for its stated "
+                "scope; see rubric §4 carve-out) ===\n"
             )
         cited_blocks.append(
             f"=== BEGIN CITED AUTHORITY: {dep_path} ===\n"

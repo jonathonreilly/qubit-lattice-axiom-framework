@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "Allowlist of admitted external-import nodes. Each entry is a named, precisely-cited, scope-limited standard textbook theorem that makes NO framework-specific claim. An authority on this allowlist is accepted as retained-grade upstream FOR ITS STATED SCOPE ONLY (see AUDIT_AGENT_PROMPT_TEMPLATE.md), so a dependent note may cite it without an automatic not-retained-grade downgrade. This does not change the import note's own audited status; it only lets vetted textbook results serve as cited upstream, the way a math paper cites a textbook theorem. PR adds the carve-out + the first two entries.",
+  "nodes": {
+    "uhf_tracial_uniqueness_textbook_import_note_2026-05-23": {
+      "current_path": "docs/UHF_TRACIAL_UNIQUENESS_TEXTBOOK_IMPORT_NOTE_2026-05-23.md",
+      "imported_result": "The UHF C*-algebra of type 2^infinity has a unique tracial state (Powers 1967); its finite-region restriction is the normalized trace.",
+      "citation": "Powers 1967; Bratteli-Robinson, Operator Algebras and Quantum Statistical Mechanics; standard UHF/AF C*-algebra theory.",
+      "makes_framework_claim": false
+    },
+    "naimark_dilation_textbook_import_note_2026-05-23": {
+      "current_path": "docs/NAIMARK_DILATION_TEXTBOOK_IMPORT_NOTE_2026-05-23.md",
+      "imported_result": "Naimark dilation: every POVM dilates to a PVM on a larger space; for a projective measurement the canonical dilation gives Kraus operators K_r = P_r.",
+      "citation": "Naimark 1940; Holevo, Probabilistic and Statistical Aspects of Quantum Theory, Ch. III; Watrous, Theory of Quantum Information, Sec. 2.4.",
+      "makes_framework_claim": false
+    }
+  }
+}

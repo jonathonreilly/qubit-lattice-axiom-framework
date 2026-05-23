@@ -199425,22 +199425,42 @@
       "verdict_rationale": "The claim is a bounded no-go, not a positive PMNS construction: it only closes the uniform translation-invariant scalar deformation route. The load-bearing algebra shows that a uniform scalar condensate cannot split or mix the hw=1 generation triplets, and the induced active/passive response profiles remain scalar. The runner does not merely print constants; it constructs the finite Hamiltonian, computes the response profiles, and invokes the live retained closure stack, which rejects the scalar lane with PASS=22 FAIL=0. Residual risk is confined to the already-scoped reliance on the retained PMNS closure criterion itself, not to this uniform-scalar boundary argument."
     },
     "poisson_3d_self_field_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T20:23:33.699013+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row."
+        },
+        "dep_claim_type": {
+          "gate_b_poisson_self_gravity_note": "no_go"
+        },
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c0457fc4395e9b58e4c13a5183a54e1b24419a5d32cda6bf16ebb5eae18c9311",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T202121Z-d9f1ddf3-poisson_3d_self_field_no-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source genuinely computes the finite 3D Poisson stencil and propagates with the computed field; it does not hard-code the reported observables or import contested values from another note. The closed scope is the stated finite/static harness, not continuum convergence, retardation, or a self-gravity bridge.",
       "claim_id": "poisson_3d_self_field_note",
-      "claim_scope": null,
+      "claim_scope": "Finite static NL=30, PW=8, H=0.5, 6-point 3D Poisson Gauss-Seidel runner showing no explicit longitudinal multiplier and preserving the listed internal gravity, F~M, Born, and null checks.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T20:23:33.699013+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -199448,19 +199468,19 @@
         "gate_b_poisson_self_gravity_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Solve laplacian_3D(f) = -source on the full (x, y, z) lattice with a delta source, using the resulting 3D field for both longitudinal and transverse falloff without an explicit longitudinal factor.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1c76edf14f941e4b74665089703f55b4111354934215fa283239a7c352af8e0d",
       "note_path": "docs/POISSON_3D_SELF_FIELD_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check the literal Born number in the note, 1.10e-15, against the current runner output, 4.99e-16; both support the machine-precision Born claim.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -199570,20 +199590,20 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.976971+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/poisson_3d_self_field.py",
       "title": "Poisson 3D Self-Field: Full Field from One Local Equation",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The included runner computes the load-bearing 3D field from the local stencil and then recomputes the downstream observables from that field. The cited upstream authority is retained_no_go, which is retained-grade under the rubric and is not used as an open physical bridge. The stdout supports the scoped claims: derived axial falloff without an imposed longitudinal factor, TOWARD shifts in all three families, F~M near 1, machine-precision Born behavior, and exact s=0 null behavior. This verdict is limited to the finite static runner scope and does not certify larger-lattice convergence or time-dependent causal-cone closure."
     },
     "poisson_exhaustive_uniqueness_note": {
       "audit_date": "2026-05-18T13:14:39.156012+00:00",

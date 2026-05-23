@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 138 |
+| **retained** | 139 |
 | **retained_no_go** | 151 |
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1260 |
+| unaudited | 1259 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 14 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 651 |
+| `audited_clean` | 652 |
 | `audited_conditional` | 125 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1486 |
+| `unaudited` | 1485 |
 
 | claim_type | count |
 |---|---:|
@@ -557,6 +557,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_born_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9091,6 +9092,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Within the scoped uniform-scalar lane, the note reduces the deformation to sector-scalar triplet blocks and scalar resolvent profiles. The cached runner constructs the uniform scalar Hamiltonian, verifies the scalar/degenerate response chain, and confirms the live retained lower-level PMNS closure rejects the resulting scalar packs.
 - **rationale:** The claim is a bounded no-go, not a positive PMNS construction: it only closes the uniform translation-invariant scalar deformation route. The load-bearing algebra shows that a uniform scalar condensate cannot split or mix the hw=1 generation triplets, and the induced active/passive response profiles remain scalar. The runner does not merely print constants; it constructs the finite Hamiltonian, computes the response profiles, and invokes the live retained closure stack, which rejects the scalar lane with PASS=22 FAIL=0. Residual risk is confined to the already-scoped reliance on the retained PMNS closure criterion itself, not to this uniform-scalar boundary argument.
 - **auditor confidence:** high
+
+### `poisson_3d_self_field_note`
+
+- **Note:** [`POISSON_3D_SELF_FIELD_NOTE.md`](../../docs/POISSON_3D_SELF_FIELD_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite static NL=30, PW=8, H=0.5, 6-point 3D Poisson Gauss-Seidel runner showing no explicit longitudinal multiplier and preserving the listed internal gravity, F~M, Born, and null checks.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T202121Z-d9f1ddf3-poisson_3d_self_field_no-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Solve laplacian_3D(f) = -source on the full (x, y, z) lattice with a delta source, using the resulting 3D field for both longitudinal and transverse falloff without an explicit longitudinal factor.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely computes the finite 3D Poisson stencil and propagates with the computed field; it does not hard-code the reported observables or import contested values from another note. The closed scope is the stated finite/static harness, not continuum convergence, retardation, or a self-gravity bridge.
+- **rationale:** The included runner computes the load-bearing 3D field from the local stencil and then recomputes the downstream observables from that field. The cited upstream authority is retained_no_go, which is retained-grade under the rubric and is not used as an open physical bridge. The stdout supports the scoped claims: derived axial falloff without an imposed longitudinal factor, TOWARD shifts in all three families, F~M near 1, machine-precision Born behavior, and exact s=0 null behavior. This verdict is limited to the finite static runner scope and does not certify larger-lattice convergence or time-dependent causal-cone closure.
+- **auditor confidence:** medium
 
 ### `poisson_exhaustive_uniqueness_note`
 

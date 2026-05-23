@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1295 |
+| unaudited | 1294 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 108 |
+| ~~audited_conditional~~ | 109 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 641 |
-| `audited_conditional` | 108 |
+| `audited_conditional` | 109 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1521 |
+| `unaudited` | 1520 |
 
 | claim_type | count |
 |---|---:|
@@ -782,6 +782,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -3332,6 +3333,25 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner substantively verifies the algebraic PMNS projector interface by diagonalizing Hermitian pairs, checking unitarity/double stochasticity, and sampling eigenvector rephasings. Parts 2 and 3 compute conditional diagnostic transport values for chosen canonical samples, but those values are not retained-scope authority and depend on imported transport machinery whose source is not included. The note itself explicitly admits the carrier authority and physical-column authority are open dependencies, so retained status cannot propagate to a physical leptogenesis conclusion.
 - **open / conditional deps cited:**
   - `DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the positive-cone logdet Legendre identity and the runner's sampled local lowest-action closure-branch check, conditional on the supplied helper machinery for H_seed, eta, W_rel, and favored-column construction.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T192528Z-15dddb49-dm_leptogenesis_pmns_rel-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The seed-relative action satisfies S_rel(Y)=sup_K[log det(I+K)-Tr(KY)] with unique maximizer K_*=Y^{-1}-I, so the minimization rule is the native effective-action selector.  _(class `A`)_
+- **chain closes:** False — The algebraic Legendre identity closes on its own as a positive-cone matrix identity. The broader claim that this is derived from the sole Cl(3) axiom and supplies the physical PMNS closure selector remains conditional because the restricted packet imports or hard-codes the observable generator, seed, eta normalizations, and favored-column machinery rather than deriving them from cited retained authorities.
+- **rationale:** The runner genuinely checks the Legendre-dual algebraic identity and performs numerical sampled constrained minimization, but much of the printed PASS count is unclassified bottom-line or sampled optimization evidence rather than first-principles derivation. The helper chain includes fixed numerical constants and operational constructions for H_seed, eta, transport kernels, and favored-column selection, while the source note itself states that the helper machinery and derivation from Cl(3) remain separate open work. Therefore the narrowed algebraic identity is retained only as conditional support for the branch-local numerical claim, not as a clean derivation of the selector from the sole axiom.
+- **open / conditional deps cited:**
+  - `scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`
+  - `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py`
+  - `scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py`
+  - `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py`
+  - `scripts/dm_leptogenesis_exact_common.py`
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1259 |
+| unaudited | 1258 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 125 |
+| ~~audited_conditional~~ | 126 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 652 |
-| `audited_conditional` | 125 |
+| `audited_conditional` | 126 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1485 |
+| `unaudited` | 1484 |
 
 | claim_type | count |
 |---|---:|
@@ -864,6 +864,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `quark_five_sixths_scale_selection_boundary_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -9518,6 +9519,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** rho_E = 0 and rho_E = 21/4 produce the same exact shell coupling but different exact center couplings on the same slice backbone, so the unresolved readout map blocks a unique Theta_R -> Lambda_R time-coupling theorem.  _(class `A`)_
 - **chain closes:** True — The bounded claim closes: the source note does not claim a unique time-coupling law, only a conditional family plus an obstruction. The one-hop readout note supplies the reduced P(rho_E) family, and the runner verifies that two admissible choices agree on shell coupling but differ on center coupling while the slice factor is exact and nonzero.
 - **rationale:** The load-bearing step is an algebraic obstruction over the supplied readout family and computed slice backbone, not a tuned comparator or a renaming of the target quantity. The runner does not establish the missing unique readout theorem; instead it checks the bounded statement the note actually makes: conditional exactness once P_R is supplied and non-uniqueness when the readout entry remains unresolved. Because the audited scope is explicitly bounded away from a unique Theta_R -> Lambda_R theorem, the hostile review objection becomes the note's stated obstruction rather than a closure failure.
+- **auditor confidence:** high
+
+### `quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28`
+
+- **Note:** [`QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md`](../../docs/QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the exact conditional algebra from c_TE=-R_conn to rho_E=21/4 and the restricted-carrier import-boundary obstruction; not a derivation of the missing source-domain bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T202417Z-10aa1076-quark_route2_rconn_cente-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Changing rho_E leaves the E-shell and granted T-side readouts fixed and changes only the E-center lift, so rho_E=0 and rho_E=21/4 are both exact maps unless an additional E-center source/readout primitive supplies gamma_T(center)/gamma_E(center)=-R_conn.  _(class `A`)_
+- **chain closes:** True — The conditional exact algebra and non-uniqueness witness close within the restricted carrier: imposing c_TE=-R_conn gives q_E=15/8 and rho_E=21/4, while rho_E=0 and rho_E=21/4 agree on all granted endpoints except E-center. The source-domain bridge itself remains missing, so the closure is only the bridge-obstruction claim.
+- **rationale:** The runner performs real rational algebra and a restricted-map witness, not merely a printout, and its 26 passing checks support the stated conditional bridge and import boundary. The note explicitly depends on granted T-side candidates and on the still-missing typed identification gamma_T(center)/gamma_E(center)=-R_conn, so retained status does not propagate to an E-channel law. The provided G_BARE authority also contains explicit open-gate language despite the packet header marking it retained_bounded, and the source note names the staggered-Dirac gate as open. Under the negative-claim gate, audited_clean is blocked because N1/N3 cannot rule out a future typed bridge outside the restricted packet; the claim remains bounded to current Route-2/R_conn surfaces.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `G_BARE_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28`

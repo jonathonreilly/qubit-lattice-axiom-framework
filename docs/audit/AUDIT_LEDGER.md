@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1293 |
+| unaudited | 1292 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 110 |
+| ~~audited_conditional~~ | 111 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 641 |
-| `audited_conditional` | 110 |
+| `audited_conditional` | 111 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1519 |
+| `unaudited` | 1518 |
 
 | claim_type | count |
 |---|---:|
@@ -853,6 +853,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `su3_cube_full_rho_perron_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -10954,6 +10955,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Peter-Weyl/Schur character orthogonality plus finite-dimensional diagonal-operator algebra on the SU(3) character truncation, reducing convolution by Z to eigenvalue multiplication by rho_(p,q).  _(class `A`)_
 - **chain closes:** True — The source has zero ledger dependencies and is scoped to textbook compact-Lie-group character algebra on an abstract finite truncation. The live runner reproduced PASS=13, FAIL=0, including Schur orthogonality checks, algebraic reduction, uniqueness, positivity, self-adjointness, swap symmetry, and abstract numerical sanity cases.
 - **rationale:** The theorem's conclusions are exactly the standard finite-dimensional character-convolution consequences of Schur orthogonality and diagonal linear algebra. The note explicitly forbids importing Wilson action, beta=6 data, or the parent plaquette environment identification, and the runner treats companion Wilson coefficients only as abstract positive symmetric input data. Within that boundary, no gap remains.
+- **auditor confidence:** high
+
+### `su3_cube_full_rho_perron_2026-05-04`
+
+- **Note:** [`SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`](../../docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the restricted packet's L_s=2 all-forward/no-phase full candidate-rho Perron computation, its NMAX_rho stability, and its comparison to the hard-coded Block 5 and bridge constants.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T192936Z-957ee17b-su3_cube_full_rho_perron-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the existing-runner all-forward/no-APBC-phase convention, the full candidate ansatz rho_(p,q)(6)=((d_(p,q)c_(p,q)(6)/c_(0,0)(6))^12)d_(p,q)^(-16) gives P_cube(L_s=2,beta=6)=0.4291049969, stable across NMAX_rho.  _(class `B`)_
+- **chain closes:** False — The runner genuinely computes the displayed finite Perron value from the encoded candidate ansatz, but the restricted packet does not retain the L_s=2 index-graph/candidate-rho ansatz or the APBC boundary-condition convention. The sole cited authority is retained only for Block 4 and explicitly removes the Block 5/P_candidate/bridge limb from its load-bearing scope.
+- **rationale:** The runner source computes Wilson character coefficients, builds the candidate rho diagonal, constructs the finite Perron transfer matrix, and reproduces the reported stable value; stdout alone is not the issue. The load-bearing exponents and the APBC-equals-PBC/no-phase interpretation are imported from the former Block 5/open-gate surface, while the provided retained authority now disclaims exactly those L_s=2 and bridge constants. The source also admits a possible Z_3 center-twist APBC phase implementation gap. No-Go gate N1/N6 blocks a clean negative boundary for the 'cannot close' claim because the packet does not enumerate five attack routes and itself leaves a convention/implementation route open.
+- **open / conditional deps cited:**
+  - `SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md`
+  - `GAUGE_SCALAR_BRIDGE_3PLUS1_NATIVE_TUBE_STAGING_GATE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `su3_dabc_symmetric_theorem_note_2026-05-02`

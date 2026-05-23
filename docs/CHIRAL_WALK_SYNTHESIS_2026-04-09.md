@@ -59,7 +59,12 @@ live status is whatever the audit-ledger row for the linked note says
 today.
 
 - **3+1D operating-point closure-card and TOWARD basin** — see
-  [`CHIRAL_WALK_SYNTHESIS_2026-04-10_ADDENDUM.md`](CHIRAL_WALK_SYNTHESIS_2026-04-10_ADDENDUM.md),
+  `CHIRAL_WALK_SYNTHESIS_2026-04-10_ADDENDUM.md` (downstream addendum;
+  backticked to avoid length-2 cycle — the addendum's "## Audit dependency
+  repair links" section records this synthesis as its load-bearing
+  upstream; the index pointer here is non-load-bearing per this
+  section's "Inclusion in this index is **not** a status assertion"
+  preamble),
   [`CHIRAL_3PLUS1D_RECURRENCE_NOTE.md`](CHIRAL_3PLUS1D_RECURRENCE_NOTE.md),
   [`CHIRAL_3PLUS1D_MIXING_PERIOD_NOTE.md`](CHIRAL_3PLUS1D_MIXING_PERIOD_NOTE.md).
 - **Carrier-k chromaticity / achromatic-deflection narrowing** — see

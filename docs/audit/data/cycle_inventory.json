@@ -1,5 +1,5 @@
 {
-  "cycle_count": 131,
+  "cycle_count": 129,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -31159,43 +31159,6 @@
       "decision": null,
       "edges": [
         {
-          "from": "lattice_3d_l2_tail_stats_note",
-          "to": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
-        },
-        {
-          "from": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-          "to": "lattice_3d_l2_tail_stats_note"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 14,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "lattice_3d_l2_tail_stats_note",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md",
-          "title": "3D 1/L^2 Tail Statistics Note",
-          "transitive_descendants": 14
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md",
-          "title": "3D Inverse-Square Kernel Helper Module",
-          "transitive_descendants": 14
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0123",
-      "decision": null,
-      "edges": [
-        {
           "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
           "to": "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
         },
@@ -31229,7 +31192,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0124",
+      "cycle_id": "cycle-0123",
       "decision": null,
       "edges": [
         {
@@ -31279,44 +31242,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0125",
-      "decision": null,
-      "edges": [
-        {
-          "from": "chiral_walk_synthesis_2026-04-09",
-          "to": "chiral_walk_synthesis_2026-04-10_addendum"
-        },
-        {
-          "from": "chiral_walk_synthesis_2026-04-10_addendum",
-          "to": "chiral_walk_synthesis_2026-04-09"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 4,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "chiral_walk_synthesis_2026-04-09",
-          "claim_type": "meta",
-          "effective_status": "meta",
-          "note_path": "docs/CHIRAL_WALK_SYNTHESIS_2026-04-09.md",
-          "title": "Chiral Walk Architecture \u2014 Complete Synthesis",
-          "transitive_descendants": 4
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "chiral_walk_synthesis_2026-04-10_addendum",
-          "claim_type": "positive_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/CHIRAL_WALK_SYNTHESIS_2026-04-10_ADDENDUM.md",
-          "title": "Chiral Walk Synthesis Addendum",
-          "transitive_descendants": 4
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0126",
+      "cycle_id": "cycle-0124",
       "decision": null,
       "edges": [
         {
@@ -31353,7 +31279,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0127",
+      "cycle_id": "cycle-0125",
       "decision": null,
       "edges": [
         {
@@ -31390,7 +31316,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0128",
+      "cycle_id": "cycle-0126",
       "decision": null,
       "edges": [
         {
@@ -31427,7 +31353,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0129",
+      "cycle_id": "cycle-0127",
       "decision": null,
       "edges": [
         {
@@ -31464,7 +31390,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0130",
+      "cycle_id": "cycle-0128",
       "decision": null,
       "edges": [
         {
@@ -31501,7 +31427,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0131",
+      "cycle_id": "cycle-0129",
       "decision": null,
       "edges": [
         {
@@ -31548,7 +31474,7 @@
     "17": 6,
     "18": 6,
     "19": 11,
-    "2": 15,
+    "2": 13,
     "20": 1,
     "21": 2,
     "22": 2,

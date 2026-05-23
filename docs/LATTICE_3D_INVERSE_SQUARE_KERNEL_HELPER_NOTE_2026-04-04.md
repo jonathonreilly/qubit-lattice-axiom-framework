@@ -14,9 +14,11 @@ is audit-lane infrastructure for the corresponding helper module.
 
 This wrapper note documents the 3D inverse-square kernel helper
 module so downstream notes (notably
-[LATTICE_3D_L2_TAIL_STATS_NOTE.md](LATTICE_3D_L2_TAIL_STATS_NOTE.md))
-can register a one-hop dependency rather than carry the helper as an
-unattributed module-top-import.
+`LATTICE_3D_L2_TAIL_STATS_NOTE.md`) can register a one-hop dependency
+rather than carry the helper as an unattributed module-top-import.
+(Downstream consumer backticked to avoid length-2 cycle — load-bearing
+citation direction is *downstream tail-stats → this helper wrapper*,
+recorded in the tail-stats note's "## Upstream authority" section.)
 
 ## What this module provides
 

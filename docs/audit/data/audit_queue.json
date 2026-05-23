@@ -5,7 +5,7 @@
     "leaf": 320,
     "medium": 324
   },
-  "cycle_break_target_count": 131,
+  "cycle_break_target_count": 129,
   "cycle_break_targets": [
     {
       "all_cycle_nodes": [
@@ -3755,24 +3755,10 @@
     },
     {
       "all_cycle_nodes": [
-        "lattice_3d_l2_tail_stats_note",
-        "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
-      ],
-      "cycle_id": "cycle-0122",
-      "cycle_length": 2,
-      "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['lattice_3d_l2_tail_stats_note'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
-      "max_transitive_descendants": 14,
-      "primary_break_target": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-      "primary_break_target_audit_status": "unaudited",
-      "primary_break_target_criticality": "medium",
-      "repair_class": "cycle_break_required"
-    },
-    {
-      "all_cycle_nodes": [
         "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
         "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
       ],
-      "cycle_id": "cycle-0123",
+      "cycle_id": "cycle-0122",
       "cycle_length": 2,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['nn_lattice_rescaled_c_arm_derivation_note_2026-05-10'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 6,
@@ -3787,7 +3773,7 @@
         "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
         "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
-      "cycle_id": "cycle-0124",
+      "cycle_id": "cycle-0123",
       "cycle_length": 3,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['nn_lattice_rescaled_c_arm_derivation_note_2026-05-10', 'nn_lattice_rescaled_full_kernel_identification_note_2026-05-10'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 6,
@@ -3798,24 +3784,10 @@
     },
     {
       "all_cycle_nodes": [
-        "chiral_walk_synthesis_2026-04-09",
-        "chiral_walk_synthesis_2026-04-10_addendum"
-      ],
-      "cycle_id": "cycle-0125",
-      "cycle_length": 2,
-      "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['chiral_walk_synthesis_2026-04-10_addendum'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
-      "max_transitive_descendants": 4,
-      "primary_break_target": "chiral_walk_synthesis_2026-04-09",
-      "primary_break_target_audit_status": "unaudited",
-      "primary_break_target_criticality": "medium",
-      "repair_class": "cycle_break_required"
-    },
-    {
-      "all_cycle_nodes": [
         "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
       ],
-      "cycle_id": "cycle-0126",
+      "cycle_id": "cycle-0124",
       "cycle_length": 2,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['topological_instanton_textbook_infrastructure_import_note_2026-05-17'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 3,
@@ -3829,7 +3801,7 @@
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
         "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16"
       ],
-      "cycle_id": "cycle-0127",
+      "cycle_id": "cycle-0125",
       "cycle_length": 2,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['topological_instanton_textbook_infrastructure_import_note_2026-05-17'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 3,
@@ -3843,7 +3815,7 @@
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
         "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16"
       ],
-      "cycle_id": "cycle-0128",
+      "cycle_id": "cycle-0126",
       "cycle_length": 2,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['topological_instanton_textbook_infrastructure_import_note_2026-05-17'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 3,
@@ -3857,7 +3829,7 @@
         "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
         "dimension_selection_note"
       ],
-      "cycle_id": "cycle-0129",
+      "cycle_id": "cycle-0127",
       "cycle_length": 2,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['dimension_selection_upper_bound_textbook_import_note_2026-05-17'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 2,
@@ -3871,7 +3843,7 @@
         "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
         "dt1_time_dimension_proof_walk_note_2026-05-17"
       ],
-      "cycle_id": "cycle-0130",
+      "cycle_id": "cycle-0128",
       "cycle_length": 2,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['dt1_time_dimension_proof_walk_note_2026-05-17'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 2,
@@ -3885,7 +3857,7 @@
         "teleportation_poisson_resource_sweep_note",
         "teleportation_resource_from_poisson_note"
       ],
-      "cycle_id": "cycle-0131",
+      "cycle_id": "cycle-0129",
       "cycle_length": 2,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['teleportation_resource_from_poisson_note'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 2,
@@ -23167,6 +23139,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.407,
+      "note_path": "docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 14
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30332,30 +30326,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gravity_signed_sector_harness.py",
-      "transitive_descendants": 14
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_3d_l2_tail_stats_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.407,
-      "note_path": "docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
       "transitive_descendants": 14
     },
     {
@@ -42504,6 +42474,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 5,
+  "ready_count": 6,
   "total_pending": 1289
 }

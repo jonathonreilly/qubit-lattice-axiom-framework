@@ -3774,10 +3774,6 @@
     },
     {
       "from": "chiral_walk_synthesis_2026-04-09",
-      "to": "chiral_walk_synthesis_2026-04-10_addendum"
-    },
-    {
-      "from": "chiral_walk_synthesis_2026-04-09",
       "to": "chiral_3plus1d_recurrence_note"
     },
     {
@@ -16411,10 +16407,6 @@
     {
       "from": "lattice_3d_dense_refinement_reconciliation_note",
       "to": "action_power_note"
-    },
-    {
-      "from": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-      "to": "lattice_3d_l2_tail_stats_note"
     },
     {
       "from": "lattice_3d_l2_tail_stats_note",
@@ -43926,12 +43918,11 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [
-        "chiral_walk_synthesis_2026-04-10_addendum",
         "chiral_3plus1d_recurrence_note",
         "chiral_3plus1d_mixing_period_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "db19fb90d5afd2564809180b6bf3a941e491fb5e16a5c79ef65114ed7db06b45",
+      "note_hash": "da2aa9769686f43dd393ad66cb0f7e98f2f082089eb0b5d093e7bcc2d6fce654",
       "path": "docs/CHIRAL_WALK_SYNTHESIS_2026-04-09.md",
       "runner_path": null,
       "title": "Chiral Walk Architecture \u2014 Complete Synthesis"
@@ -62169,11 +62160,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "lattice_3d_l2_tail_stats_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "cbd358087fa2ef8c82c95e8d7eb01ea896445b9558153b056d4f76f0365b86c6",
+      "note_hash": "706add5fb212875944419780cb3c484c3bd3f8718fa85b6a942eef4eb99d8d9f",
       "path": "docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md",
       "runner_path": null,
       "title": "3D Inverse-Square Kernel Helper Module"
@@ -84035,6 +84024,7 @@
     "lanes_open_science_03_quark_mass_retention_open_lane_2026-04-26_note_2026-05-17",
     "lattice_3d_dense_spent_delay_z2_z5_support_note_2026-04-30",
     "lattice_3d_dense_window_extension_note",
+    "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
     "lattice_3d_l2_numpy_h0125_audit_note",
     "lattice_3d_l2_numpy_h0125_bridge_note",
     "lattice_3d_tapered_refinement_note",
@@ -84424,10 +84414,10 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9688,
+    "edge_count": 9686,
     "leaf_count": 757,
     "node_count": 2490,
-    "root_count": 819,
+    "root_count": 820,
     "runners_with_path": 2051
   }
 }

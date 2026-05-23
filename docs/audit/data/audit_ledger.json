@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -26954,7 +26953,6 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "chiral_walk_synthesis_2026-04-10_addendum",
         "chiral_3plus1d_recurrence_note",
         "chiral_3plus1d_mixing_period_note"
       ],
@@ -26969,7 +26967,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "db19fb90d5afd2564809180b6bf3a941e491fb5e16a5c79ef65114ed7db06b45",
+      "note_hash": "da2aa9769686f43dd393ad66cb0f7e98f2f082089eb0b5d093e7bcc2d6fce654",
       "note_path": "docs/CHIRAL_WALK_SYNTHESIS_2026-04-09.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -148148,9 +148146,7 @@
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "lattice_3d_l2_tail_stats_note"
-      ],
+      "deps": [],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -148162,7 +148158,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "cbd358087fa2ef8c82c95e8d7eb01ea896445b9558153b056d4f76f0365b86c6",
+      "note_hash": "706add5fb212875944419780cb3c484c3bd3f8718fa85b6a942eef4eb99d8d9f",
       "note_path": "docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

@@ -514,4 +514,4 @@ obstruction calculation on the unreduced carrier.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [koide_mru_demotion_note_2026-04-20](KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)
+- `KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)

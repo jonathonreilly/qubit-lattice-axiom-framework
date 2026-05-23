@@ -316,5 +316,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   present derived note's "Exact (given S^3 with R = c/H_0)" section. The
   load-bearing citation direction is *spectral_gap_identity_theorem →
   this_graviton_mass_derived*, not vice versa.)
-- [graviton_mass_spectral_gap_identity_theorem_note](GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
+- `GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` (downstream consumer; backticked to avoid length-2 cycle — the preceding paragraph explicitly states "the load-bearing citation direction is *spectral_gap_identity_theorem → this_graviton_mass_derived*, not vice versa")
 - [universal_qg_canonical_textbook_continuum_gr_closure_note](UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md)

@@ -278871,24 +278871,42 @@
       "verdict_rationale": null
     },
     "yt_color_projection_correction_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T15:12:30.220761+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 14.25,
+        "runner_hash": "b640f7b2d46ee89fbb30783393a80fef4a3d9df0fd556966ec0b8c5cee89f12d",
+        "transitive_descendants": 608
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T151209Z-04e31b60-yt_color_projection_corr-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority supplies only the exact SU(3) channel fractions, and the source note gives an explicit two-completion witness sharing those retained premises while disagreeing on K_Y. That is sufficient for the narrow underdetermination claim.",
       "claim_id": "yt_color_projection_correction_note",
-      "claim_scope": "Packet-level no-go: the provided Fierz/channel-count authority plus color-blind scaling do not derive the Yukawa-side connected-trace selector kappa_Y=0 or an unconditional sqrt(8/9) correction.",
+      "claim_scope": "Packet-level no-go: the cited Fierz/channel-count theorem plus color-blind scaling do not derive the Yukawa-side connected-trace selector kappa_Y = 0.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": "2026-05-23T15:11:41.020688+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-23T15:12:30.220761+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -278903,27 +278921,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-23T15:12:30.220761+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T151209Z-04e31b60-yt_color_projection_corr-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Packet-level no-go: the cited Fierz/channel-count theorem plus color-blind scaling do not derive the Yukawa-side connected-trace selector kappa_Y = 0.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 14.25,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Two completions with the same retained Fierz fractions and color-blind scaling, kappa_Y = 0 giving K_Y = 8/9 and kappa_Y = 1 giving K_Y = 1, satisfy the cited premises but disagree on the Yukawa correction.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "32e448b3c067510f8a7150db198f3543e0e86cb8869bba563b152f9f285425d4",
       "note_path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if a new scalar/taste-condensate matching theorem deriving kappa_Y = 0 is added to the restricted packet.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -279119,16 +279148,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 42,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 42
       },
       "runner_path": "scripts/frontier_yt_color_projection_correction.py",
       "title": "Y_T Color Projection Matching No-Go and Conditional Family",
       "transitive_descendants": 608,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic independence witness over the cited Fierz fractions, not a numerical comparator or a renamed positive theorem. The Fierz authority is retained-grade as a decoration under a retained parent, and its open EW matching rule is not imported as a premise for this Y_T no-go. The no-go discipline gate is satisfied in the packet: the note enumerates five attack routes, collapses the selector wall, scans hidden assumptions, narrows the negative scope, and leaves the scalar/taste-condensate matching theorem as the explicit future closure path."
     },
     "yt_constructive_uv_bridge_note": {
       "audit_date": null,

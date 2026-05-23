@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 273,
+    "critical": 272,
     "high": 349,
     "leaf": 342,
     "medium": 339
@@ -8,37 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
-        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
-        "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
-      ],
-      "load_bearing_score": 12.459,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py",
-      "transitive_descendants": 994
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -39001,6 +38970,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 45,
-  "total_pending": 1303
+  "ready_count": 44,
+  "total_pending": 1302
 }

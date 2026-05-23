@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 3 |
+| `decoration_under_cl3_color_automorphism_theorem` | 4 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -50,16 +50,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 643 |
 | `audited_conditional` | 101 |
-| `audited_decoration` | 28 |
+| `audited_decoration` | 29 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1508 |
+| `unaudited` | 1507 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1013 |
-| `decoration` | 29 |
+| `bounded_theorem` | 1012 |
+| `decoration` | 30 |
 | `meta` | 229 |
 | `no_go` | 239 |
 | `open_gate` | 112 |
@@ -889,6 +889,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
+| `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -11000,6 +11001,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute N_W=(N_color+1)*N_gen, n_S^complex_components=2, C_2(adj SU(2))=N_pair, and T(F)=1/2 into the admitted Peskin-Schroeder formula to obtain b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.  _(class `A`)_
 - **chain closes:** False — The main P1/P2/P3 substitution closes, but C2 does not follow as stated. From P1, b_2/(-1/6)=-22*N_pair+2*(N_color+1)*N_gen+1, which at N_gen=N_color is 2*N_color*(N_color+1)-22*N_pair+1, not N_color*(N_color+1)-11*N_pair.
 - **rationale:** The runner source genuinely performs exact symbolic and Rational arithmetic for P1, P1', P2, P3, C1, C3, C4, and counterfactual checks. However, despite the source note claiming validation of C1-C4, the runner does not check C2. Direct algebra from the claimed P1 contradicts C2 as written: at framework counts b_2:(-1/6) is -19, while N_color*(N_color+1)-11*N_pair is -10. Because C2 is included among the note's claimed derivable corollaries, the full bounded claim does not close on its own terms.
+- **auditor confidence:** high
+
+### `su3_adjoint_casimir_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Pure SU(3) algebra in Gell-Mann normalization: the adjoint quadratic Casimir is C_2(adj)=3·I_8 and C_2(adj)/C_2(fund)=9/4, with physical-gluon/QCD bridge claims excluded.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T160527Z-e5733fa2-su3_adjoint_casimir_theo-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The SU(N) identity Σ_{c,d} f^{acd} f^{bcd}=N δ^{ab}, specialized to N=3, gives Tr[T^a_adj T^b_adj]=3δ^{ab} and hence C_2(adj)=3·I_8 after the Schur/trace step.  _(class `A`)_
+- **chain closes:** True — The cited retained authority supplies the trace-normalized SU(3) Gell-Mann generators and structure constants. Standard adjoint construction, Jacobi identity, Schur's lemma, and the SU(N) Killing-form identity close the algebraic Casimir claim without importing the deferred physical-color bridge.
+- **rationale:** The runner genuinely computes structure constants from Gell-Mann matrices, builds the adjoint generators, and checks hermiticity, closure, trace normalization, scalar Casimir behavior, value 3, and the 9/4 ratio. These are algebraic consistency checks over the single upstream SU(3) parent plus standard Lie-algebra facts, with no external comparator or tuned numerical input. Because the claim adds a standard algebraic corollary of the upstream SU(3) embedding and explicitly carves out physical-gluon/QCD consequences, the conservative tie-break is audited_decoration rather than an independent bounded theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

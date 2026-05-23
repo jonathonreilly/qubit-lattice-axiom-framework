@@ -1,11 +1,11 @@
 # Audit Queue
 
-**Total pending:** 1283
-**Ready (all deps already at retained-grade or metadata tiers):** 4
+**Total pending:** 1282
+**Ready (all deps already at retained-grade or metadata tiers):** 3
 
 By criticality:
 - `critical`: 313
-- `high`: 306
+- `high`: 305
 - `medium`: 341
 - `leaf`: 323
 

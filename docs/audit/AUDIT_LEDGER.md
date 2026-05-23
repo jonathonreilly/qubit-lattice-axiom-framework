@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1303 |
+| unaudited | 1302 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 2 |
+| `decoration_under_cl3_color_automorphism_theorem` | 3 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -50,20 +50,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 634 |
 | `audited_conditional` | 95 |
-| `audited_decoration` | 26 |
+| `audited_decoration` | 27 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1528 |
+| `unaudited` | 1527 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1015 |
-| `decoration` | 27 |
+| `decoration` | 28 |
 | `meta` | 229 |
 | `no_go` | 239 |
 | `open_gate` | 112 |
-| `positive_theorem` | 755 |
+| `positive_theorem` | 754 |
 
 | criticality | count |
 |---|---:|
@@ -849,6 +849,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yukawa_color_projection_theorem` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
+| `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -2275,6 +2276,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substitute the four parametric input identities into the five Wolfenstein-leading squared-magnitude formulas and apply n_quark = n_pair * n_color.  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and all substitutions close from the stated hypotheses. No cited external authority, numerical alpha_s value, physical CKM identification, or comparator is needed.
 - **rationale:** The correct audited object is a bounded theorem: exact closed forms follow conditionally from explicitly supplied identities and the count constraint. The runner's own PASS labels identify the load-bearing operations as Pattern A algebraic substitution; the provided automated classifier breakdown conflicts with those labels but does not expose a failed algebraic step. Because the note disclaims derivation of the hypotheses and physical/comparator interpretation, there are no hidden dependencies within the scoped row.
+- **auditor confidence:** high
+
+### `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02`
+
+- **Note:** [`CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md`](../../docs/CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic SU(3) statement on the cited symmetric-base carrier: 3 ⊗ 3 ⊗ 3 decomposes as 1 ⊕ 8 ⊕ 8 ⊕ 10 and contains exactly one totally antisymmetric ε-singlet.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T151518Z-8b114eb4-cl3_baryon_qqq_color_sin-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For SU(3), the Clebsch-Gordan decomposition gives 3 ⊗ 3 ⊗ 3 = 1 ⊕ 8 ⊕ 8 ⊕ 10, with the unique singlet generated by ε_{abc}.  _(class `A`)_
+- **chain closes:** True — Within the narrowed algebraic scope, the conclusion follows from the retained-bounded SU(3) symmetric-base carrier plus standard SU(3) tensor-product representation theory. Physical SM-baryon interpretations remain outside the audited closure and conditional on the deferred physical-color bridge.
+- **rationale:** The load-bearing work is a standard algebraic SU(3) tensor-product and invariant-tensor check over the cited N_c = 3 carrier. The runner genuinely verifies normalization, invariance, antisymmetry, and one-dimensional singlet nullspace, but it hard-sets the cited SU(3) carrier rather than deriving physical color. Because the audited result is a pure algebraic consequence of a single retained-bounded parent plus standard mathematics, with no external comparator checks, it is a decoration rather than an independent positive theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17`

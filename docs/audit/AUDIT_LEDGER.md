@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1291 |
+| unaudited | 1290 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 16 |
+| ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -51,8 +51,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 16 |
-| `unaudited` | 1516 |
+| `audited_renaming` | 17 |
+| `unaudited` | 1515 |
 
 | claim_type | count |
 |---|---:|
@@ -973,6 +973,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_theta_hierarchy_open_scalar_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -8441,6 +8442,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The exact-lattice branch has a self-maintaining multistage top4 floor that transfers across most of the widened local pocket, with only a residual inward-source boundary between source_z=1.00 and source_z=1.25.  _(class `C`)_
 - **chain closes:** True — The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
 - **rationale:** The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
+- **auditor confidence:** high
+
+### `persistent_record_as_kraus_operator_note_2026-05-20`
+
+- **Note:** [`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](../../docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the provided persistent-record overlap-kernel pilot plus the axiom note establish a record-indexed Kraus instrument with selective update, identity resolution, and CPTP unconditional update.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125050Z-6e72da9f-persistent_record_as_kra-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note asserts that the record-amplitude map K_r: |ψ⟩ → A_r |φ_r⟩ is linear in |ψ⟩ and therefore extends to a bounded operator satisfying the Kraus completeness relation Σ_r K_r†K_r = I_sys.  _(class `E`)_
+- **chain closes:** False — The cited persistent-record pilot supplies a mesoscopic overlap kernel and bounded numerical behavior, but it does not construct a linear system-to-system record instrument, an isometry/dilation, orthogonal outcome readout, or the normalization identity needed for Σ_r K_r†K_r = I_sys. The key Kraus operators are introduced by assertion/definition rather than derived from the cited record process.
+- **rationale:** The chain reduces to naming a record-conditional amplitude map as K_r and then invoking standard Kraus consequences once that structure is assumed. The upstream overlap-kernel note is retained_bounded, but it is only a bounded pilot for mesoscopic record overlap and does not provide the load-bearing operator construction or completeness proof. No runner is supplied, and the note text alone does not close the bridge from soft record overlap to a valid exhaustive quantum instrument.
 - **auditor confidence:** high
 
 ### `persistent_record_matched_compare_note`

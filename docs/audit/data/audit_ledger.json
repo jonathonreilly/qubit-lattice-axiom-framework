@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -84196,53 +84195,44 @@
       "verdict_rationale": "The note does not promote a decisive physics theorem; it retains only the bounded claim that this prototype shows generated gap growth while the comparator leaves purity undefined or unusable. The runner source and helper source are complete in the restricted packet and compute the relevant graph, pruning, purity, and gap quantities without hard-coded contested values. There is a text/code inconsistency around whether the imposed control is random removal or a center-band control, but that weakens only any stronger baseline-fairness claim, which the note explicitly withholds."
     },
     "evolving_network_prototype_v2_note": {
-      "audit_date": "2026-05-10T17:30:17.043364+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 2.822,
-        "runner_hash": "343b9eae95d5b3b6651812ea1a99dcdeb5974e394041bdadd2bf629d55871cdd",
-        "transitive_descendants": 4
-      },
-      "audit_status": "audited_failed",
-      "auditor": "codex-audit-loop-019e12ee-b0af-72a2-896d-0a582b2e470e",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner stdout supports positive generated_gap, conv=0.00, and imposed_pur=nan, but it does not print or assert the baseline_gap needed for the claimed larger-than-baseline gap. The same-budget imposed-control premise is also not closed because the code caps imposed removals by candidate count while the reported removed counts exceed the available unique node/candidate budgets.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "evolving_network_prototype_v2_note",
-      "claim_scope": "Bounded prototype claim that the tested local pruning runs report a generated post-barrier gap while failing convergence and leaving the imposed-control detector comparison undefined.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T17:30:17.043364+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_failed",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/self_regulating_gap_3d.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_failed",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.822,
-      "load_bearing_step": "The self-regulating prune rule reliably opens a larger post-barrier gap than the unpruned baseline, but at the tested thresholds it does not converge to a fixed point and the same-budget imposed-band control still loses detector signal in this parameterization.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "d75d73bd9d71f02f8b80b33b99ea1db2a39ebbe516cdbd83fc3c5a07edf4fbb2",
+      "note_hash": "9eb0580e57237bde571e4a099e79f34f2ded408ecf849272b6d75379012f6a2b",
       "note_path": "docs/EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-check after a runner artifact explicitly asserts baseline_gap comparison and same-budget unique removal semantics.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -84379,21 +84369,62 @@
             "total_pass": 5
           },
           "verdict_rationale": "Issue: the result is a runner-dependent bounded prototype, but the runner imports the load-bearing graph generator, pruning rule, decoherence readout, and gap metric from an uncited helper module not present in the packet. Why this blocks: a hostile audit cannot verify that the printed gap, purity, and convergence quantities implement the claimed generated-vs-imposed comparison rather than inheriting an unchecked bridge. Repair target: include the helper module as a cited authority or inline a self-contained runner slice with assertions over the graph construction, pruning rule, and readouts. Claim boundary until fixed: the packet supports only that this runner printed a bounded negative/gap-signal summary, not an independently closed bounded theorem about the prototype dynamics."
+        },
+        {
+          "archived_at": "2026-05-23T15:53:13.017613+00:00",
+          "archived_for_note_hash": "d75d73bd9d71f02f8b80b33b99ea1db2a39ebbe516cdbd83fc3c5a07edf4fbb2",
+          "audit_date": "2026-05-10T17:30:17.043364+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 2.822,
+            "runner_hash": "343b9eae95d5b3b6651812ea1a99dcdeb5974e394041bdadd2bf629d55871cdd",
+            "transitive_descendants": 4
+          },
+          "audit_status": "audited_failed",
+          "auditor": "codex-audit-loop-019e12ee-b0af-72a2-896d-0a582b2e470e",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner stdout supports positive generated_gap, conv=0.00, and imposed_pur=nan, but it does not print or assert the baseline_gap needed for the claimed larger-than-baseline gap. The same-budget imposed-control premise is also not closed because the code caps imposed removals by candidate count while the reported removed counts exceed the available unique node/candidate budgets.",
+          "claim_scope": "Bounded prototype claim that the tested local pruning runs report a generated post-barrier gap while failing convergence and leaving the imposed-control detector comparison undefined.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T17:30:17.043364+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The self-regulating prune rule reliably opens a larger post-barrier gap than the unpruned baseline, but at the tested thresholds it does not converge to a fixed point and the same-budget imposed-band control still loses detector signal in this parameterization.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check after a runner artifact explicitly asserts baseline_gap comparison and same-budget unique removal semantics.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Issue: the note's load-bearing baseline-gap and same-budget imposed-band comparison is not established by the supplied runner artifact. Why this blocks: a hostile referee cannot verify the claimed generated-vs-baseline separation or same-budget comparator semantics from stdout/source, and the reported removal counts are inconsistent with a unique-node same-budget control. Repair target: print and assert baseline_gap/gap deltas, use an actual unique removal budget for both generated and imposed controls, and fix the band-vs-random/readout wording. Claim boundary until fixed: the runner may be cited only as reporting positive generated_gap, no convergence, and undefined imposed_pur in this parameter sweep, not as a closed same-budget generated-vs-imposed bounded theorem."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/evolving_network_prototype_v2.py",
       "title": "Evolving Network Prototype V2 Note",
       "transitive_descendants": 4,
-      "verdict_rationale": "Issue: the note's load-bearing baseline-gap and same-budget imposed-band comparison is not established by the supplied runner artifact. Why this blocks: a hostile referee cannot verify the claimed generated-vs-baseline separation or same-budget comparator semantics from stdout/source, and the reported removal counts are inconsistent with a unique-node same-budget control. Repair target: print and assert baseline_gap/gap deltas, use an actual unique removal budget for both generated and imposed controls, and fix the band-vs-random/readout wording. Claim boundary until fixed: the runner may be cited only as reporting positive generated_gap, no convergence, and undefined imposed_pur in this parameter sweep, not as a closed same-budget generated-vs-imposed bounded theorem."
+      "verdict_rationale": null
     },
     "evolving_network_prototype_v3_note": {
       "audit_date": "2026-04-30T19:25:34.471895+00:00",
@@ -288866,8 +288897,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2333,
-    "re_audit_required": 0,
+    "preserved_existing": 2332,
+    "re_audit_required": 1,
     "row_count": 2377,
     "seeded_new": 0
   }

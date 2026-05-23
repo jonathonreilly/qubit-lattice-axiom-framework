@@ -18710,10 +18710,6 @@
     },
     {
       "from": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
-      "to": "g_newton_mass_linear_poisson_composition_bounded_theorem_note_2026-05-10"
-    },
-    {
-      "from": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
       "to": "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
     },
     {
@@ -63469,11 +63465,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gravity_clean_derivation_note",
-        "g_newton_mass_linear_poisson_composition_bounded_theorem_note_2026-05-10",
         "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "458f3297df682767bb247e5c090defa24601521ecaac7a77788e751b480fd1ca",
+      "note_hash": "73a992fb9359cfbc40c28f698db99ad02a1bee1113e8bc48df2afca793cbeb2c",
       "path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Newton-Poisson \u2192 Flat First Friedmann Law \u2014 Named Non-Derivation Import"
@@ -81407,8 +81402,8 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9670,
-    "leaf_count": 759,
+    "edge_count": 9669,
+    "leaf_count": 760,
     "node_count": 2488,
     "root_count": 824,
     "runners_with_path": 2048

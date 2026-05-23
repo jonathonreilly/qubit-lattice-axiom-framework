@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -171667,7 +171666,6 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "gravity_clean_derivation_note",
-        "g_newton_mass_linear_poisson_composition_bounded_theorem_note_2026-05-10",
         "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
@@ -171681,7 +171679,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "458f3297df682767bb247e5c090defa24601521ecaac7a77788e751b480fd1ca",
+      "note_hash": "73a992fb9359cfbc40c28f698db99ad02a1bee1113e8bc48df2afca793cbeb2c",
       "note_path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

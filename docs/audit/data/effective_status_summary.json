@@ -50,7 +50,7 @@
       "dm_wilson_to_dweh_local_chain_path_algebra_target_note_2026-04-18"
     ]
   ],
-  "cycles_detected": 30,
+  "cycles_detected": 23,
   "effective_status_counts": {
     "audited_conditional": 98,
     "audited_failed": 24,

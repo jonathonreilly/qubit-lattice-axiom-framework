@@ -68,7 +68,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 ## Citation cycle break targets
 
-30 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
+23 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
 
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
@@ -78,24 +78,22 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 4 | `cycle-0004` | 8 | 391 | `dm_leptogenesis_exact_kernel_closure_note_2026-04-15` | critical | unaudited |
 | 5 | `cycle-0005` | 9 | 391 | `dm_leptogenesis_exact_kernel_closure_note_2026-04-15` | critical | unaudited |
 | 6 | `cycle-0006` | 2 | 298 | `a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5` | critical | unaudited |
-| 7 | `cycle-0007` | 10 | 287 | `axiom_first_stefan_boltzmann_theorem_note_2026-05-01` | critical | unaudited |
-| 8 | `cycle-0008` | 16 | 287 | `c3_symmetry_preserved_interpretation_note_2026-05-08` | critical | unaudited |
-| 9 | `cycle-0009` | 16 | 287 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | critical | unaudited |
-| 10 | `cycle-0010` | 17 | 287 | `a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1` | critical | unaudited |
-| 11 | `cycle-0011` | 17 | 287 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | critical | unaudited |
-| 12 | `cycle-0012` | 18 | 287 | `a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc` | critical | unaudited |
-| 13 | `cycle-0013` | 18 | 287 | `a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1` | critical | unaudited |
-| 14 | `cycle-0014` | 19 | 287 | `a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc` | critical | unaudited |
-| 15 | `cycle-0015` | 22 | 287 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | critical | unaudited |
-| 16 | `cycle-0016` | 23 | 287 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | critical | unaudited |
-| 17 | `cycle-0017` | 2 | 82 | `cosmological_constant_spectral_gap_identity_theorem_note` | critical | unaudited |
-| 18 | `cycle-0018` | 3 | 82 | `cosmological_constant_spectral_gap_identity_theorem_note` | critical | unaudited |
-| 19 | `cycle-0019` | 3 | 21 | `wave_direct_dm_h025_fam2_seed0_control_note` | high | unaudited |
-| 20 | `cycle-0020` | 4 | 16 | `wave_direct_dm_h025_fam1_seed0_control_note` | medium | unaudited |
-| 21 | `cycle-0021` | 2 | 14 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | medium | unaudited |
-| 22 | `cycle-0022` | 2 | 6 | `nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10` | medium | unaudited |
-| 23 | `cycle-0023` | 3 | 6 | `nn_lattice_rescaled_c2_derivation_note_2026-05-10` | medium | unaudited |
-| 24 | `cycle-0024` | 2 | 4 | `chiral_walk_synthesis_2026-04-09` | medium | unaudited |
-| 25 | `cycle-0025` | 2 | 3 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | leaf | unaudited |
+| 7 | `cycle-0007` | 8 | 287 | `koide_brannen_phase_reduction_theorem_note_2026-04-20` | critical | unaudited |
+| 8 | `cycle-0008` | 9 | 287 | `koide_brannen_phase_reduction_theorem_note_2026-04-20` | critical | unaudited |
+| 9 | `cycle-0009` | 10 | 287 | `axiom_first_stefan_boltzmann_theorem_note_2026-05-01` | critical | unaudited |
+| 10 | `cycle-0010` | 2 | 82 | `cosmological_constant_spectral_gap_identity_theorem_note` | critical | unaudited |
+| 11 | `cycle-0011` | 3 | 82 | `cosmological_constant_spectral_gap_identity_theorem_note` | critical | unaudited |
+| 12 | `cycle-0012` | 3 | 21 | `wave_direct_dm_h025_fam2_seed0_control_note` | high | unaudited |
+| 13 | `cycle-0013` | 4 | 16 | `wave_direct_dm_h025_fam1_seed0_control_note` | medium | unaudited |
+| 14 | `cycle-0014` | 2 | 14 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | medium | unaudited |
+| 15 | `cycle-0015` | 2 | 6 | `nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10` | medium | unaudited |
+| 16 | `cycle-0016` | 3 | 6 | `nn_lattice_rescaled_c2_derivation_note_2026-05-10` | medium | unaudited |
+| 17 | `cycle-0017` | 2 | 4 | `chiral_walk_synthesis_2026-04-09` | medium | unaudited |
+| 18 | `cycle-0018` | 2 | 3 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | leaf | unaudited |
+| 19 | `cycle-0019` | 2 | 3 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | leaf | unaudited |
+| 20 | `cycle-0020` | 2 | 3 | `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | leaf | unaudited |
+| 21 | `cycle-0021` | 2 | 2 | `dimension_selection_note` | medium | unaudited |
+| 22 | `cycle-0022` | 2 | 2 | `dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08` | leaf | unaudited |
+| 23 | `cycle-0023` | 2 | 2 | `teleportation_poisson_resource_sweep_note` | leaf | unaudited |
 
 Full queue lives in `data/audit_queue.json`.

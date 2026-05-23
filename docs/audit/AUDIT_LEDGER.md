@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 382 |
+| **retained_bounded** | 383 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1288 |
+| unaudited | 1287 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 635 |
+| `audited_clean` | 636 |
 | `audited_conditional` | 105 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1512 |
+| `unaudited` | 1511 |
 
 | claim_type | count |
 |---|---:|
@@ -454,6 +454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -7257,6 +7258,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The current runner cache timed out with no stdout, which is not a scientific verdict, but the archived completed log supplies the finite search result. The clean scope excludes the broader simple-classifier exhaustion theorem and all node-level metric no-go claims.
 - **rationale:** The archived log exactly supports the note's narrowed finite perimeter: local_z_asym does not improve the fixed 3-property classifier search, and cross-generator accuracy stays at 6/9. The original positive-theorem/exhaustion language is too broad, so the audited claim is retyped to bounded_theorem and limited to the registered finite search. Residual risk is the lack of a current completed cache and the absence of runner assertions; the completed archived artifact is sufficient for the narrow historical finite result only.
 - **auditor confidence:** medium
+
+### `localized_source_response_sweep_note`
+
+- **Note:** [`LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md`](../../docs/LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that, on the retained 3D ordered-lattice h=0.25 sweep with the stated support/capture floors, smaller source objects can remain admissible but do not outperform the broad topN 196 source-response control.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T000847Z-8e9dea0d-localized_source_respons-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The sweep result says the best smaller admissible row, topN 169, matches but does not improve on the broad topN 196 control, so no smaller family beats the broad frontier under the stated floors.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers instantiate the lattice propagation, source field, compression families, support/capture floors, score, and width-ratio comparison rather than merely printing constants. The runner output supports the note's bounded negative claim that smaller admissible rows do not beat the broad control, although ties are present among topN rows.
+- **rationale:** The cited upstream authorities are retained_bounded, and the restricted packet includes the primary runner source plus transitive helper sources needed to inspect the load-bearing compute path. The runner computes the h=0.25 lattice/source-response sweep from framework primitives and reports that topN 169 is the best smaller admissible row with the same displayed score/capture/width metrics as broad topN 196, not an improvement over it. This closes the bounded claim as stated: smaller source objects remain possible, but the sweep does not move the frontier past the broad control. A second auditor should note that the runner's printed SAFE READ branch appears logically mislabeled in code, but the numeric control/best-smaller comparison and the note's conclusion are still consistent.
+- **auditor confidence:** high
 
 ### `lorentz_violation_derived_note`
 

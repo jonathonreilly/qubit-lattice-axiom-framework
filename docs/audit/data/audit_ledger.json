@@ -155547,22 +155547,45 @@
       "verdict_rationale": "The archived log exactly supports the note's narrowed finite perimeter: local_z_asym does not improve the fixed 3-property classifier search, and cross-generator accuracy stays at 6/9. The original positive-theorem/exhaustion language is too broad, so the audited claim is retyped to bounded_theorem and limited to the registered finite search. Residual risk is the lack of a current completed cache and the absence of runner assertions; the completed archived artifact is sufficient for the narrow historical finite result only."
     },
     "localized_source_response_sweep_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T00:09:09.313646+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "mesoscopic_surrogate_backreaction_note": "A fixed 3D ordered-lattice valley-linear harness at h=0.5, W=8, segment_L=6, using the frozen topN=196 surrogate, numerically checks weak-field source additivity and one-step two-body symmetry.",
+          "mesoscopic_surrogate_multistage_note": "Bounded two-stage sourced-response survival of the topN=196 mesoscopic surrogate on the retained h=0.5, W=8, segment_L=6 3D ordered-lattice valley-linear family with source_z=3.0 and strength=5e-5."
+        },
+        "dep_claim_type": {
+          "mesoscopic_surrogate_backreaction_note": "bounded_theorem",
+          "mesoscopic_surrogate_multistage_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mesoscopic_surrogate_backreaction_note": "retained_bounded",
+          "mesoscopic_surrogate_multistage_note": "retained_bounded"
+        },
+        "deps": [
+          "mesoscopic_surrogate_backreaction_note",
+          "mesoscopic_surrogate_multistage_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3e9d9825672a7379cebda10bd924b9e82e06fe6b970070c3987151e288e2c6df",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T000847Z-8e9dea0d-localized_source_respons-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner and included helpers instantiate the lattice propagation, source field, compression families, support/capture floors, score, and width-ratio comparison rather than merely printing constants. The runner output supports the note's bounded negative claim that smaller admissible rows do not beat the broad control, although ties are present among topN rows.",
       "claim_id": "localized_source_response_sweep_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded claim that, on the retained 3D ordered-lattice h=0.25 sweep with the stated support/capture floors, smaller source objects can remain admissible but do not outperform the broad topN 196 source-response control.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T00:09:09.313646+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -155571,24 +155594,24 @@
         "mesoscopic_surrogate_multistage_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/mesoscopic_surrogate_annular_tapered_sweep.py",
         "scripts/mesoscopic_surrogate_localization_family_sweep.py",
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The sweep result says the best smaller admissible row, topN 169, matches but does not improve on the broad topN 196 control, so no smaller family beats the broad frontier under the stated floors.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f45264bfda3f0f0bf088595baff4bb047db4468719ab0592041524988401c43b",
       "note_path": "docs/LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check the rank_key tie behavior and the inverted-looking SAFE READ branch in the runner, since ties among admissible topN rows affect wording about whether broad uniquely owns the frontier.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -155644,18 +155667,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/localized_source_response_sweep.py",
       "title": "Localized Source-Response Sweep Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The cited upstream authorities are retained_bounded, and the restricted packet includes the primary runner source plus transitive helper sources needed to inspect the load-bearing compute path. The runner computes the h=0.25 lattice/source-response sweep from framework primitives and reports that topN 169 is the best smaller admissible row with the same displayed score/capture/width metrics as broad topN 196, not an improvement over it. This closes the bounded claim as stated: smaller source objects remain possible, but the sweep does not move the frontier past the broad control. A second auditor should note that the runner's printed SAFE READ branch appears logically mislabeled in code, but the numeric control/best-smaller comparison and the note's conclusion are still consistent."
     },
     "localized_source_response_sweep_note_2026-05-17": {
       "audit_date": null,

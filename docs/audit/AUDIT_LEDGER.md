@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 137 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 380 |
+| **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1295 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 637 |
-| `audited_conditional` | 101 |
+| `audited_clean` | 636 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
@@ -754,7 +754,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `work_history.yt.yt_unbounded_program_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | B | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -860,6 +859,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `work_history.yt.yt_unbounded_program_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yukawa_color_projection_theorem` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -12352,14 +12352,21 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 
 - **Note:** [`work_history/yt/YT_UNBOUNDED_PROGRAM_NOTE.md`](../../docs/work_history/yt/YT_UNBOUNDED_PROGRAM_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Historical-lane bounded-status compendium for the y_t lane: enumerates 18 already-closed structural pieces (lattice-scale ratio y_t/g_s = 1/sqrt(6), G_5 centrality, boundary selection at v, QFP insensitivity at the bounded level, exact Schur normal-form class uniqueness, stability gap, branch-scale microscopic admissibility, locality proxy, operator-closure proxy, constructive UV-localized bridge class, bridge-action invariant, rearrangement principle, moment closure, local-Hessian selector, higher-order correction audit, nonlocal correction audit, intrinsic endpoint-shift bound 1.215% / 0.755% support-tight, package-native exact-transport, broad-family uniqueness audit) and the explicit residual to make y_t unbounded (zero-input interacting bridge theorem). Excludes any unbounded y_t claim.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `claude-opus-4.7-1m:open-gates-2026-05-02-c1-07`  (claude-opus; independence=weak)
-- **load-bearing step:** The current y_t lane is bounded with explicit endpoint budget (1.2147511% conservative, 0.75500635% support-tight) on the forced UV window; the unbounded target is the zero-input interacting bridge theorem, which is not in hand and would require intrinsic remainder control plus endpoint negligibility plus zero-input crossover closure.  _(class `B`)_
-- **chain closes:** True — The note is a historical status compendium that cross-references existing closed bounded theorems (Schur class uniqueness, stability gap, microscopic admissibility, bridge bound notes) and explicitly enumerates the unbounded target as not closed. As a bounded-status synthesis with no novel claim of its own, its chain reduces to citation of existing rows; the bounded character matches the explicit y_t bounded status on main.
-- **rationale:** Within the bounded-status compendium scope (no novel theorem; citation-level synthesis of existing closed pieces and the residual to unbounded), the chain closes by reference to live authorities. The note's stated honesty 'historical planning/program note; not live authority' matches the bounded-status reading; no upgrade to unbounded y_t is implied.
-- **auditor confidence:** medium
+- **claim_scope:** Historical program note asserting that the y_t lane remains bounded by an explicit exact-bridge endpoint budget and listing the open pieces required for unbounded closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T180329Z-28da3afd-work_history.yt.yt_unbou-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The remaining work is to turn the package-native bridge budget, exact Schur class uniqueness, stability gap, and microscopic admissibility into a vanishing/negligibility theorem or final systematic strong enough to remove the remaining bridge qualifier.  _(class `B`)_
+- **chain closes:** False — The note imports the endpoint budget and several bridge-stack closure claims, but the restricted packet provides no one-hop authority bodies or runner artifacts for them. The admitted missing steps are intrinsic exact-bridge remainder control, endpoint-collapse/negligibility, and zero-input crossover closure.
+- **rationale:** The load-bearing step is cross-note/status aggregation, not a first-principles derivation from the axiom packet. The source note itself admits the residual bridge qualifier and names future theorem targets needed before the lane becomes unbounded. For the bounded/admission gate, N4 fails because the restricted packet provides no same-packet witness proving that the cited endpoint-budget residual exactly matches the residual under audit.
+- **open / conditional deps cited:**
+  - `work_history/yt/YT_BRIDGE_ENDPOINT_SHIFT_BOUND_NOTE.md`
+  - `work_history/yt/YT_EXACT_INTERACTING_BRIDGE_TRANSPORT_NOTE.md`
+  - `work_history/yt/YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md`
+  - `work_history/yt/YT_SCHUR_STABILITY_GAP_NOTE.md`
+  - `work_history/yt/YT_MICROSCOPIC_SCHUR_CLASS_ADMISSIBILITY_NOTE.md`
+  - `work_history/yt/YT_GAUGE_CROSSOVER_THEOREM.md`
+- **auditor confidence:** high
 
 ### `yt_color_projection_correction_note`
 

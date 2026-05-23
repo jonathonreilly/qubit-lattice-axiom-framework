@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 384 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1282 |
+| unaudited | 1281 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 12 |
 | ~~audited_conditional~~ | 114 |
-| ~~audited_failed~~ | 17 |
+| ~~audited_failed~~ | 18 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -51,19 +51,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 645 |
 | `audited_conditional` | 114 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 61 |
+| `audited_failed` | 62 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1508 |
+| `unaudited` | 1507 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1015 |
+| `bounded_theorem` | 1016 |
 | `decoration` | 31 |
 | `meta` | 229 |
 | `no_go` | 242 |
 | `open_gate` | 111 |
-| `positive_theorem` | 753 |
+| `positive_theorem` | 752 |
 
 | criticality | count |
 |---|---:|
@@ -967,6 +967,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `wave_direct_dm_h025_fam1_seed0_control_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed0_control_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
@@ -12277,6 +12278,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Holding seed=0, strength=0.004, H=0.5/0.35, and the matched direct-dM schedule fixed, all Fam1/Fam2/Fam3 rows keep the same negative R_hist sign and material magnitude.  _(class `C`)_
 - **chain closes:** True — The exact scoped runner invocation constructs the three retained families, two H values, and matched early/late schedules, then reproduces the six quoted R_hist and delta_hist rows. The chain closes only for the explicitly one-seed, one-strength scout boundary.
 - **rationale:** The exact all-family scout command reproduces the frozen result table: every family/H row has negative R_hist and a material magnitude in the stated -37.73% to -44.29% band. The note explicitly rejects portability, multi-seed, full control-stack, and continuum-stability interpretations, so the retained claim is only the bounded scout table. Residual risk is limited to future runner drift or downstream citations treating this scout as the full portability batch.
+- **auditor confidence:** high
+
+### `wave_direct_dm_h025_fam1_seed0_control_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that Fam1 seed 0 at H=0.25 has an exact S=0 null and a weak-field ladder S=0.002, 0.004, 0.008 with stable negative delta_hist and approximately linear scaling near R_hist ~ -20%.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T194908Z-f125b4b0-wave_direct_dm_h025_fam1-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `Fam1`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -20%`.  _(class `C`)_
+- **chain closes:** False — The supplied completed runner output is for `family=Fam2` and `seed=1`, with R_hist near -35%, not for the claimed `Fam1`, seed `0` row and not matching the note table. The runner source appears capable of first-principles computation, but the provided completed artifact does not compute the audited claim instance.
+- **rationale:** The load-bearing step is a numerical first-principles compute claim, and the included source path calls framework primitives rather than merely printing constants. However, the completed runner artifact in the restricted packet is a wrong-parameter run: Fam2 seed 1 rather than Fam1 seed 0. Because the note's asserted table and conclusion are not supported by the supplied completed run, the chain does not close on its own terms.
 - **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam1_seed1_control_note`

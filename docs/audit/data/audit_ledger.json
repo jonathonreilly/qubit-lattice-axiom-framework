@@ -184598,22 +184598,70 @@
       "verdict_rationale": "The runner genuinely instantiates Pauli matrices and computes the commutators, Casimir, S_z spectrum, and scalar commutant rather than merely printing constants. The cited Cl(3) authority is retained_bounded for the Pauli/chirality representation content, and the allowed k=1 qubit-per-site context supplies the physical per-site Hilbert identification. With that targeted premise admitted, the note is an algebraic closure over retained-grade inputs, not a numerical match or definition substitution."
     },
     "periodic_2d_wraparound_fix_note_2026-04-11": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T20:19:43.325957+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bmv_entanglement_note_2026-04-11": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "bmv_threebody_note_2026-04-11": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "born_rule_analysis_2026-04-11": null,
+          "boundary_law_robustness_note_2026-04-11": "Audited only the bounded finite-run numerical diagnostic that the provided runner reports high S-versus-counted-boundary R^2 on the stated fixed 2D periodic staggered-lattice envelope and small partition cross-check.",
+          "branch_entanglement_robustness_note_2026-04-11": "Bounded robustness replay on an externally imposed fixed-adjacency two-branch staggered-lattice protocol: 2-body branch-entanglement delta_S remains positive across the stated sweeps, and the 3-body surface is W-type rather than GHZ-type on the stated configurations.",
+          "holographic_probe_note_2026-04-11": "Within the fixed finite 2D periodic staggered-lattice Dirac-sea correlation-matrix probe for sides 8, 10, 12, and 14, entropy and Schmidt rank fit boundary size better than volume for G=0 and G=10, with the G=10 boundary coefficient about 12.0% lower than the free coefficient.",
+          "self_consistency_structured_null_note_2026-04-11": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "staggered_geometry_superposition_note_2026-04-11": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "bmv_entanglement_note_2026-04-11": "bounded_theorem",
+          "bmv_threebody_note_2026-04-11": "positive_theorem",
+          "born_rule_analysis_2026-04-11": "meta",
+          "boundary_law_robustness_note_2026-04-11": "bounded_theorem",
+          "branch_entanglement_robustness_note_2026-04-11": "bounded_theorem",
+          "holographic_probe_note_2026-04-11": "bounded_theorem",
+          "self_consistency_structured_null_note_2026-04-11": "bounded_theorem",
+          "staggered_geometry_superposition_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bmv_entanglement_note_2026-04-11": "retained_bounded",
+          "bmv_threebody_note_2026-04-11": "retained",
+          "born_rule_analysis_2026-04-11": "meta",
+          "boundary_law_robustness_note_2026-04-11": "retained_bounded",
+          "branch_entanglement_robustness_note_2026-04-11": "retained_bounded",
+          "holographic_probe_note_2026-04-11": "retained_bounded",
+          "self_consistency_structured_null_note_2026-04-11": "retained_bounded",
+          "staggered_geometry_superposition_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "bmv_entanglement_note_2026-04-11",
+          "bmv_threebody_note_2026-04-11",
+          "born_rule_analysis_2026-04-11",
+          "boundary_law_robustness_note_2026-04-11",
+          "branch_entanglement_robustness_note_2026-04-11",
+          "holographic_probe_note_2026-04-11",
+          "self_consistency_structured_null_note_2026-04-11",
+          "staggered_geometry_superposition_note_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "54aa2f36af37d4689108a88e8c32c56d1d4af8da964a004c74fc9ebc9fcca0c4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T201922Z-9fb6d759-periodic_2d_wraparound_f-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary self-consistency runner source genuinely implements minimum-image hopping and its stdout supports that one corrected surface, but the note's broader package-level recommendation depends on multiple companion authorities and at least one cited authority, the Born-rule note, is meta/conditional rather than retained-grade computational support. The restricted packet also does not include runner source or completed output for most listed corrected live surfaces.",
       "claim_id": "periodic_2d_wraparound_fix_note_2026-04-11",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded bug-fix entrypoint claim that the 2D periodic weighted package was rerun under the minimum-image torus correction and that downstream interpretations should use the listed corrected companion notes rather than pre-fix periodic numbers.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T20:19:43.325957+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -184628,20 +184676,22 @@
         "bmv_threebody_note_2026-04-11"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The corrected periodic weighted runners now use minimum-image separations consistent with the torus adjacency actually being evolved, and the listed corrected companion notes are the canonical current-main reruns after that fix.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "639575962bba10339dfd7c290f7e1c18e24a8a696e298078f651f1f0eaa67f14",
       "note_path": "docs/PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: replace or supplement docs/BORN_RULE_ANALYSIS_2026-04-11.md with a retained corrected Born-rule runner note/output, and include runner-source artifacts for the other listed corrected periodic surfaces if the package-level bug-fix entrypoint claim is to be upgraded.",
+      "open_dependency_paths": [
+        "docs/BORN_RULE_ANALYSIS_2026-04-11.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-30T18:17:51.106486+00:00",
@@ -184670,18 +184720,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 1,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 2
       },
       "runner_path": "scripts/frontier_self_consistency_test.py",
       "title": "Periodic 2D Wraparound Fix Note (2026-04-11)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The self-consistency portion closes on its own fixed-surface terms: the runner builds the periodic adjacency and computes hopping weights using minimum-image distances, with no hard-coded contested result. However, the source note is broader than that single runner and asks readers to treat a whole live periodic weighted package as corrected, including companion lanes whose runner sources are not included here. The Born-rule dependency is explicitly meta/conditional and not retained-grade for a rerun computation, so retained status cannot propagate through the whole package-level claim."
     },
     "persistent_inertial_object_probe_note": {
       "audit_date": "2026-04-27",

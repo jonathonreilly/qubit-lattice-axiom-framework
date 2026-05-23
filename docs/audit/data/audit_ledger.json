@@ -245608,24 +245608,42 @@
       "verdict_rationale": null
     },
     "su3_dabc_symmetric_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T15:35:09.533305+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) action on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the displayed fiber SU(2) and base-sector Y, and the resulting SU(3) Fierz/channel-count fraction 8/9 on that carrier only."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "6b37f7cdf2ecd218a1009ea0d0e60062f6412beeec8547d54904bec0830b3dae",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T153447Z-8d7e488c-su3_dabc_symmetric_theor-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted algebraic perimeter, the cited authority supplies the Gell-Mann generators and trace normalization, and the stated identities follow by trace projection, cyclicity of trace, and direct matrix algebra. The open physical-color bridge in the cited authority is explicitly outside this note's audited scope.",
       "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "The algebraic SU(3) Gell-Mann-basis identities (D1)-(D6) for d^{abc}, with physical identification of the carrier as SM color excluded.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T15:35:09.533305+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -245633,20 +245651,22 @@
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Define d^{abc} := 2 Tr[{T^a, T^b} T^c] and use trace projection in the Gell-Mann basis with Tr[T^a T^b] = (1/2)\u03b4^{ab} to obtain {T^a,T^b} = (1/3)\u03b4^{ab}I_3 + d^{abc}T^c.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "a5e59e56254563cda3187daa11cf8896b7ac1a7afc53380a1948cf666ed6da8b",
       "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained bridge theorem identifying the algebraic Gell-Mann carrier with physical SM color, or keep this note explicitly algebraic-only in downstream uses.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-11T08:32:51.400245+00:00",
@@ -245846,16 +245866,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/su3_dabc_symmetric_check.py",
       "title": "SU(3) Symmetric Structure Constants d^{abc} from Anticommutator",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The algebraic derivation itself is sound and the runner genuinely computes the Gell-Mann matrices, d-symbols, f-symbols, decompositions, symmetry, and listed table values rather than merely printing pass constants. However, the sole cited authority is retained_bounded and repeatedly flags the physical identification of the 3D carrier with SM color as an open bridge. Because the source note uses SU(3)_c language while excluding that physical bridge from scope, the appropriate terminal verdict is conditional on the algebraic-only perimeter."
     },
     "su3_fusion_engine_pr1_theorem_note_2026-05-03": {
       "audit_date": "2026-05-07T11:55:15.887650+00:00",

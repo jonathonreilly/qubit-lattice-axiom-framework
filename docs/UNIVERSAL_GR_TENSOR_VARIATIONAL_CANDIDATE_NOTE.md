@@ -128,4 +128,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [observable_principle_from_axiom_note](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
 - `UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)
-- [universal_gr_curvature_localization_blocker_note](UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md)
+- `UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)

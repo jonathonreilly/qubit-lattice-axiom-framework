@@ -18,16 +18,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 127 |
+| **retained** | 126 |
 | **retained_no_go** | 151 |
-| **retained_bounded** | 389 |
+| **retained_bounded** | 387 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1284 |
+| unaudited | 1289 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_renaming~~ | 18 |
+| ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 645 |
-| `audited_conditional` | 96 |
+| `audited_clean` | 642 |
+| `audited_conditional` | 95 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 19 |
-| `unaudited` | 1509 |
+| `audited_renaming` | 18 |
+| `unaudited` | 1514 |
 
 | claim_type | count |
 |---|---:|
@@ -67,8 +67,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 665 |
-| `high` | 239 |
-| `medium` | 559 |
+| `high` | 240 |
+| `medium` | 558 |
 | `leaf` | 913 |
 
 - **Retained pending chain closure:** 12
@@ -458,7 +458,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
-| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -554,11 +553,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
-| `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -804,7 +801,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
-| `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -980,7 +976,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
-| `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -5863,21 +5858,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The finite negative result closes on its own terms: the checked-in runner contains the nine generator constructors, the hard-coded prediction dictionary, the five-condition battery, and the frozen avg_deg/reach_frac rule, and live replay matches the source note's pass/fail and accuracy claims. The decisive rule failures R1, R3, and X1 all satisfy the frozen structural thresholds but fail the actual battery, while only the two Erdős-Rényi families pass the full package. This clean verdict is narrow: it certifies this deterministic nine-family held-out replay and the checked-in prediction table, not an exhaustive statistical theorem over all independent generator laws or independent timestamp proof beyond the artifact chain.
 - **auditor confidence:** high
 
-### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`
-
-- **Note:** [`INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional finite-region result: assuming PRR inner-unitary invariance on a finite qubit region A_Lambda ~= M_d(C), the density matrix is uniquely the normalized trace I_d/d.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124514Z-1b8afec7-inner_automorphism_invar-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** A density matrix invariant under conjugation by every unitary commutes with every unitary, so the commutant is scalar and trace normalization gives rho = I_d/d.  _(class `A`)_
-- **chain closes:** True — The finite-dimensional algebraic implication PRR on M_d(C) => rho = I_d/d closes from the stated conditional premise plus standard matrix-algebra facts. The PRR premise itself is not derived or approved by the restricted packet, so the result remains conditional.
-- **rationale:** The proof correctly establishes the finite-dimensional inner-unitary-invariance implication: full conjugation invariance forces rho into the scalar commutant, and trace one fixes I_d/d. The runner source performs relevant exact finite-dimensional checks and source-boundary checks rather than merely printing constants. However the claim explicitly imports PRR as an admitted premise requiring separate approval or derivation, and the note itself disclaims deriving PRR from A1+A2. Therefore the theorem is sound only as a conditional bridge, not as an unconditional retained derivation of the pre-record reference state.
-- **open / conditional deps cited:**
-  - `INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md`
-- **auditor confidence:** high
-
 ### `inverse_problem_note`
 
 - **Note:** [`INVERSE_PROBLEM_NOTE.md`](../../docs/INVERSE_PROBLEM_NOTE.md)
@@ -7238,19 +7218,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6).  _(class `C`)_
 - **chain closes:** True — The Planck spacing and standard finite-difference kinetic operator are explicit hypotheses of the bounded scope, not hidden dependencies. Under those hypotheses, the Taylor expansion fixes the a^2/12 coefficient and the cubic p_i^4 anisotropy, and the cached runner uses the corrected (4/a^2) normalization and reproduces the quoted Planck-scale ratios.
 - **rationale:** The second audit is right to phrase the result as conditional on a Planck-spaced Z^3 lattice and the standard nearest-neighbor finite-difference operator, but those conditions are already inside the audited bounded theorem scope and do not by themselves force audited_conditional. The clean verdict applies only to the scoped dispersion correction and arithmetic comparisons to the quoted bounds; broader note language about full sector-specific SME maps, taste-breaking phenomenology, or all-current experimental status is not ratified here.
-- **auditor confidence:** high
-
-### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
-
-- **Note:** [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the narrow canonical-frame statement that a projective measurement's canonical Naimark/Lüders dilation has outcome Kraus operator K_P = P and hence sequential effect PEP, not uniqueness among all instruments for the same POVM.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124617Z-0dd41b35-lsp_projective_derivatio-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Substituting the canonical dilation U_int |psi>|0> = sum_r P_r|psi>|r> into K_r = <r| U_int (I ⊗ |0>) gives K_r = P_r.  _(class `A`)_
-- **chain closes:** True — Given the stated canonical dilation formula and the standard Kraus extraction formula, the equality K_r = P_r follows by an orthonormal apparatus-basis contraction. The note explicitly limits the result to the canonical Lüders/Naimark frame and does not claim instrument uniqueness.
-- **rationale:** The load-bearing step is a straightforward algebraic contraction inside the explicitly stated canonical projective-measurement dilation. The cited axiom-premise authority supplies only the finite qubit-lattice setting and is covered by the axiom-premise carve-out; the measurement-theory content is used in the note's bounded, canonical-frame scope rather than as a uniqueness claim. No runner was needed because the claim is symbolic, not numerical or computational.
 - **auditor confidence:** high
 
 ### `luders_rule_from_composition_consistency_note_2026-05-20`
@@ -8899,19 +8866,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
 - **auditor confidence:** high
 
-### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`
-
-- **Note:** [`POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** The qubit-lattice quasi-local algebra ⊗_{x in Z^3} M_2(C), constructed as the UHF inductive limit of finite tensor-product matrix algebras with natural unital inclusions, has the unique tracial state whose finite-region restrictions are normalized traces.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124016Z-4a9fcc54-powers_uhf_tracial_uniqu-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Any tracial state on the inductive-limit algebra restricts on each finite region A_Λ ≅ M_{2^|Λ|}(C) to the unique normalized matrix trace, hence agrees with the compatible inductive-limit trace on the dense local subalgebra and therefore on A.  _(class `A`)_
-- **chain closes:** True — The supplied axiom premise gives the per-site M_2(C) algebra over Z^3, and the note correctly applies finite-dimensional trace uniqueness plus compatible inductive-limit extension/density to obtain uniqueness on the quasi-local UHF algebra. The identification with the finite-region density matrices is only scoped as the same expectation functional, not as closing the broader no-extra-structure philosophical premise.
-- **rationale:** The load-bearing mathematical step is an algebraic/operator-algebra closure from the accepted A1+A2 substrate and standard finite-region trace and inductive-limit facts. The only provided repository authority is explicitly flagged as an axiom premise, so it does not trigger the not-retained downgrade under the rubric carve-out. No runner is needed because the claim is a theorem-level structural statement rather than a numerical or computational claim.
-- **auditor confidence:** high
-
 ### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
 
 - **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
@@ -8964,32 +8918,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Net verdict: design-note records three candidate primitives; none is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.  _(class `A`)_
 - **chain closes:** True — The restricted packet supports the scoped open-gate claim: the note repeatedly disclaims theorem or primitive promotion, treats the three proposals as candidate imports, and states the same net no-closure conclusion in the comparative table, net design conclusion, and honest verdict. No direct ledger dependencies are listed, and the sibling probes are expressly contextual rather than load-bearing dependencies.
 - **rationale:** The audited claim is not that SM LH/RH content has been derived, but that the note honestly records three candidate substrate-side primitives and preserves the open-gate boundary. Within that scope the chain closes: P-LH-1 is conditional on importing NCG algebra/order-one structure, P-LH-2 is identified as circular/minimality-failing, and P-LH-3 is identified as insufficient alone. The runner output is consistent with this scoped status and reports 53 passing structural/procedural checks with no external comparator or numerical tuning.
-- **auditor confidence:** high
-
-### `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22`
-
-- **Note:** [`PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-window PRR-local invariance only: one-site maximally mixed marginals and invariance under translations preserving the chosen finite-window/boundary convention for qubit algebras over Z^3 with no record-side constraints.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125252Z-95d0a966-prr_local_derivation_fro-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** On a finite translation-covariant window with no further constraints, the Jaynes entropy maximizer on A_Λ is the normalized trace state I_{2^{|Λ|}}/2^{|Λ|}, whose one-site marginals are I_2/2 and which is invariant under the induced lattice-translation automorphisms.  _(class `C`)_
-- **chain closes:** True — The cited axiom premise supplies one M_2(C) qubit algebra per Z^3 site and standard finite tensor-product composition. Standard Jaynes/von Neumann entropy facts then give the unique finite-dimensional unconstrained maximizer as the normalized trace state, from which both local unitary invariance of marginals and finite-window translation invariance follow.
-- **rationale:** The proof does not depend on a missing runner; it is a finite-dimensional max-entropy argument from the accepted qubit-on-Z^3 axiom premise plus standard entropy properties. The claim is correctly narrowed to finite translation-covariant windows and does not assert infinite-volume uniqueness or full-state Jaynes closure beyond that finite scope. The axiom-premise carve-out applies to MINIMAL_AXIOMS_2026-05-20.md, and no non-retained load-bearing dependency is imported.
-- **auditor confidence:** high
-
-### `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`
-
-- **Note:** [`PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Commuting bounded finite-source observables on a finite-region one-qubit algebra A_Lambda with a given pre-record reference state rho_ref.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125354Z-41c15921-pwc_derivation_from_cumu-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The framework's W[J] is the right-hand side of the standard source functional Q1 with rho = rho_ref, hence is the standard cumulant generating functional on commuting source families.  _(class `F`)_
-- **chain closes:** True — The formula has the standard cumulant-generator derivatives on the stated commuting scope, assuming the quoted standard probability/statistical-mechanics definitions. The audit chain is an identification of the framework symbol with that standard object, not an independent derivation from A1+A2.
-- **rationale:** The note's load-bearing move is explicitly an identification: PWC is Q1 with rho replaced by rho_ref. That is mathematically coherent on the commuting-source scope, but under the rubric it is class F because it asserts identity between an existing framework symbol and a standard cumulant-generating functional rather than deriving a new result from the axiom premise. The axiom citation supplies the finite-region qubit algebra substrate only; it does not itself derive the source-functional form.
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

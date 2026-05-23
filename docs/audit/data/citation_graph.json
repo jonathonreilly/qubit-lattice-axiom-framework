@@ -21257,6 +21257,14 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
       "to": "minimal_axioms"
     },
@@ -61140,7 +61148,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1eb1fb3f8758e7935ba243a9bde9890f94566bb9daf1ab24d3d6b1c58f68ddd2",
+      "note_hash": "b35bc6b2e49b30724199b7bf653ac427e58260b19588204733a7cff6045608ed",
       "path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
       "runner_path": null,
       "title": "LSP-Projective Derivation from Naimark Dilation + Canonical Frame (Narrow)"
@@ -66775,7 +66783,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "507875b9097c5fde6d7b77d268bbd3af26b117ac7f0019e3a35e9a55cc4ff065",
+      "note_hash": "4d8d4f1c7702ee4e0992508f8aec376d96497fa42378a5e49cb57612b68f484c",
       "path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)"
@@ -66978,10 +66986,12 @@
       "claim_type_author_hint_raw": "bounded_theorem candidate",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms"
+        "minimal_axioms",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "403c54cc02985d16a2fdc02fe55689d7120d6a1e6a3fbff6f14f1b8281502d6f",
+      "note_hash": "4efd8abfde14350dcf4fd726f77cce29cea953bc94cdee1be73bc1d6ce3d52ed",
       "path": "docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md",
       "runner_path": null,
       "title": "PRR-Local Invariances from Jaynes Max-Entropy + Z^3 Lattice Symmetry (Narrow)"
@@ -69546,7 +69556,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "665f3688278696b9e44bb66b35b3e2e9ce1f12b2101ce94ae7b5a09bd0b73c42",
+      "note_hash": "8ae31e9a8a55498b7edd977402af1ce6aabf468ef08e9c49702800fe1c688dfb",
       "path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
       "runner_path": null,
       "title": "PWC Derivation from the Standard Cumulant Generating Functional (Narrow)"
@@ -81513,7 +81523,7 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9686,
+    "edge_count": 9688,
     "leaf_count": 757,
     "node_count": 2490,
     "root_count": 819,

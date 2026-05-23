@@ -51,47 +51,17 @@ import runner_cache as rc
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIT_DIR = REPO_ROOT / "docs" / "audit"
+
+# Centralized accepted-premise policy (axiom node + admitted external
+# imports). Shared with compute_effective_status / audit_lint /
+# compute_reaudit_candidates via docs/audit/scripts/premise_nodes.py so the
+# prompt and the deterministic pipeline cannot drift.
+sys.path.insert(0, str(AUDIT_DIR / "scripts"))
+import premise_nodes
+
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
 REAUDIT_CANDIDATES_PATH = AUDIT_DIR / "data" / "reaudit_candidates.json"
-AXIOM_PREMISE_NODES_PATH = AUDIT_DIR / "data" / "axiom_premise_nodes.json"
-EXTERNAL_IMPORT_NODES_PATH = AUDIT_DIR / "data" / "external_import_nodes.json"
-
-_AXIOM_PREMISE_IDS: set[str] | None = None
-_EXTERNAL_IMPORT_IDS: set[str] | None = None
-
-
-def axiom_premise_ids() -> set[str]:
-    """Canonical axiom-premise claim_ids (see axiom_premise_nodes.json).
-
-    These are accepted framework premises: citing one does not, by itself,
-    block a clean verdict (see AUDIT_AGENT_PROMPT_TEMPLATE.md). Empty when
-    the registry is absent.
-    """
-    global _AXIOM_PREMISE_IDS
-    if _AXIOM_PREMISE_IDS is None:
-        try:
-            data = json.loads(AXIOM_PREMISE_NODES_PATH.read_text(encoding="utf-8"))
-            _AXIOM_PREMISE_IDS = set(data.get("canonical_ids") or [])
-        except Exception:
-            _AXIOM_PREMISE_IDS = set()
-    return _AXIOM_PREMISE_IDS
-
-
-def external_import_ids() -> set[str]:
-    """Allowlisted admitted-external-import claim_ids (see
-    external_import_nodes.json). Citing one is accepted as retained-grade
-    upstream for its stated scope (AUDIT_AGENT_PROMPT_TEMPLATE.md). Empty
-    when the registry is absent.
-    """
-    global _EXTERNAL_IMPORT_IDS
-    if _EXTERNAL_IMPORT_IDS is None:
-        try:
-            data = json.loads(EXTERNAL_IMPORT_NODES_PATH.read_text(encoding="utf-8"))
-            _EXTERNAL_IMPORT_IDS = set((data.get("nodes") or {}).keys())
-        except Exception:
-            _EXTERNAL_IMPORT_IDS = set()
-    return _EXTERNAL_IMPORT_IDS
 PROMPT_TEMPLATE_PATH = AUDIT_DIR / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
 APPLY_AUDIT_SCRIPT = AUDIT_DIR / "scripts" / "apply_audit.py"
 ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
@@ -583,12 +553,12 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         eff = dep_row.get("effective_status") or "unaudited"
         ct = dep_row.get("claim_type") or "?"
         premise_line = ""
-        if dep_cid in axiom_premise_ids():
+        if premise_nodes.is_axiom_premise(dep_cid):
             premise_line = (
                 "=== Cited authority axiom_premise: true "
                 "(accepted framework premise; see rubric §4 carve-out) ===\n"
             )
-        elif dep_cid in external_import_ids():
+        elif premise_nodes.is_external_import(dep_cid):
             premise_line = (
                 "=== Cited authority admitted_external_import: true "
                 "(allowlisted textbook import, retained-grade for its stated "

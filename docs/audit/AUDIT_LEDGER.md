@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1270 |
+| unaudited | 1269 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
-| ~~audited_conditional~~ | 119 |
+| ~~audited_conditional~~ | 120 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 648 |
-| `audited_conditional` | 119 |
+| `audited_conditional` | 120 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1496 |
+| `unaudited` | 1495 |
 
 | claim_type | count |
 |---|---:|
@@ -793,6 +793,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3457,6 +3458,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** This note synthesises all derived results for dark matter candidates and  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 9 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C^16 bridge algebra for Y=P_R Γ_1 P_L, conditional on retained real-D observable-principle uniqueness and CPT real-D structure, plus the claimed admissibility selection of the 1/sqrt(2) Frobenius ratio over the active-space comparator.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T200706Z-1a7f852f-dm_neutrino_bosonic_norm-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By (C1) the raw bridge Y has zero admissible W-source-response while Γ_1 has the unique nontrivial admissible response, so sqrt(Tr(Y^†Y)/Tr(Γ_1^†Γ_1)) = 1/sqrt(2) is the unique observable-principle-admissible normalization and the active-space ratio 1 is excluded.  _(class `A`)_
+- **chain closes:** False — The finite matrix identities and the Frobenius ratio are verified, but the cited X1 uniqueness theorem is stated for real-symmetric sources J on an invertible real anti-Hermitian D block. The proof instead evaluates a scalar baseline mI+jY with non-Hermitian Y and does not supply a retained bridge showing that this lies in X1's source domain or that zero response there excludes the active-space comparator.
+- **rationale:** Both cited authorities are retained-grade, and the runner source genuinely computes the C^16 algebraic identities rather than merely printing constants. However, the load-bearing admissibility step imports an unclosed source-domain and readout bridge: X1 covers real-symmetric J around real anti-Hermitian D, while Y is non-Hermitian and the runner uses mI rather than the actual real-D block. The conclusion that y_ν^(0)/g_weak is uniquely selected as 1/sqrt(2) therefore does not follow from the restricted packet alone.
 - **auditor confidence:** high
 
 ### `dm_neutrino_cascade_geometry_note_2026-04-14`

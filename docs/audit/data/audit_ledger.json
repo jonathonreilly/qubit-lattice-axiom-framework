@@ -62254,22 +62254,46 @@
       "verdict_rationale": null
     },
     "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T20:10:13.272892+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "Block-family local uniqueness on a direct-sum-closed family B of invertible real anti-Hermitian blocks satisfying the strengthened universal continuous determinant-ratio admissibility class with dense realized ratios: every admissible F_D equals c W_D on U_0(D), with one shared real scale c."
+        },
+        "dep_claim_type": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9db312193949c234df5a655bd21c81d15fefdc3bdd8dd89a0472388cc8c30da1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T200706Z-1a7f852f-dm_neutrino_bosonic_norm-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix identities and the Frobenius ratio are verified, but the cited X1 uniqueness theorem is stated for real-symmetric sources J on an invertible real anti-Hermitian D block. The proof instead evaluates a scalar baseline mI+jY with non-Hermitian Y and does not supply a retained bridge showing that this lies in X1's source domain or that zero response there excludes the active-space comparator.",
       "claim_id": "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
+      "claim_scope": "Finite C^16 bridge algebra for Y=P_R \u0393_1 P_L, conditional on retained real-D observable-principle uniqueness and CPT real-D structure, plus the claimed admissibility selection of the 1/sqrt(2) Frobenius ratio over the active-space comparator.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T20:10:13.272892+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -62278,34 +62302,34 @@
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By (C1) the raw bridge Y has zero admissible W-source-response while \u0393_1 has the unique nontrivial admissible response, so sqrt(Tr(Y^\u2020Y)/Tr(\u0393_1^\u2020\u0393_1)) = 1/sqrt(2) is the unique observable-principle-admissible normalization and the active-space ratio 1 is excluded.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "fba9e9a38a107a6db49c4a6663461a03a4e12a21e624beaf882edf740f96084e",
       "note_path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained theorem extending or applying X1's real-symmetric real-D source domain to the raw chiral bridge Y on the actual block, and separately justify the y_\u03bd^(0)/g_weak Frobenius-ratio readout.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 42,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 42
       },
       "runner_path": "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py",
       "title": "DM Neutrino Bosonic Normalization \u2014 Observable-Principle Bridge Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Both cited authorities are retained-grade, and the runner source genuinely computes the C^16 algebraic identities rather than merely printing constants. However, the load-bearing admissibility step imports an unclosed source-domain and readout bridge: X1 covers real-symmetric J around real anti-Hermitian D, while Y is non-Hermitian and the runner uses mI rather than the actual real-D block. The conclusion that y_\u03bd^(0)/g_weak is uniquely selected as 1/sqrt(2) therefore does not follow from the restricted packet alone."
     },
     "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15": {
       "audit_date": null,

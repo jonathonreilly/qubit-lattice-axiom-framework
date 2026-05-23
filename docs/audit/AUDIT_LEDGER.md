@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 123 |
+| **retained** | 124 |
 | **retained_no_go** | 151 |
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 16 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 637 |
+| `audited_clean` | 638 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1523 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
@@ -549,6 +549,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -8773,6 +8774,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The qubit-lattice quasi-local algebra ⊗_{x in Z^3} M_2(C), constructed as the UHF inductive limit of finite tensor-product matrix algebras with natural unital inclusions, has the unique tracial state whose finite-region restrictions are normalized traces.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124016Z-4a9fcc54-powers_uhf_tracial_uniqu-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Any tracial state on the inductive-limit algebra restricts on each finite region A_Λ ≅ M_{2^|Λ|}(C) to the unique normalized matrix trace, hence agrees with the compatible inductive-limit trace on the dense local subalgebra and therefore on A.  _(class `A`)_
+- **chain closes:** True — The supplied axiom premise gives the per-site M_2(C) algebra over Z^3, and the note correctly applies finite-dimensional trace uniqueness plus compatible inductive-limit extension/density to obtain uniqueness on the quasi-local UHF algebra. The identification with the finite-region density matrices is only scoped as the same expectation functional, not as closing the broader no-extra-structure philosophical premise.
+- **rationale:** The load-bearing mathematical step is an algebraic/operator-algebra closure from the accepted A1+A2 substrate and standard finite-region trace and inductive-limit facts. The only provided repository authority is explicitly flagged as an axiom premise, so it does not trigger the not-retained downgrade under the rubric carve-out. No runner is needed because the claim is a theorem-level structural statement rather than a numerical or computational claim.
 - **auditor confidence:** high
 
 ### `pre_record_reference_state_tracial_derivation_note_2026-05-20`

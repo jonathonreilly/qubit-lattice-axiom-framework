@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 383 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1287 |
+| unaudited | 1286 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 112 |
+| ~~audited_conditional~~ | 113 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,21 +49,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 644 |
-| `audited_conditional` | 112 |
+| `audited_conditional` | 113 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1513 |
+| `unaudited` | 1512 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1014 |
+| `bounded_theorem` | 1015 |
 | `decoration` | 31 |
 | `meta` | 229 |
 | `no_go` | 242 |
 | `open_gate` | 111 |
-| `positive_theorem` | 754 |
+| `positive_theorem` | 753 |
 
 | criticality | count |
 |---|---:|
@@ -868,6 +868,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_fam2_two_point_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -12257,6 +12258,23 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The primary runner calls measure_dm over the stated strengths and prints values matching the note; the helper path shown instantiates the lattice growth, wave solve, beam propagation, and history comparison rather than importing the contested conclusion. Within the restricted packet, the stated null, sign pattern, and weak-field scaling summary follow from the completed runner output.
 - **rationale:** The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_two_point_synthesis_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the narrow Fam2 H=0.25 two-seed synthesis: both seeds are controlled at the fine-H setting, retain a seed-conditioned late-gain asymmetry, and do not support a refinement-stable amplitude law or portability extension.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T194020Z-d3d0b666-wave_direct_dm_h025_fam2-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is controlled rather than one-strength.  _(class `B`)_
+- **chain closes:** False — The packet supplies retained support for the seed1 control ladder, but the synthesis also relies on seed0 boundary/control and seed1 follow-up inputs that are not provided as cited authorities in the restricted packet. Without those upstream artifacts or an independent runner, the two-seed controlled-pair conclusion cannot be verified from the provided inputs alone.
+- **rationale:** The load-bearing step is a cross-note synthesis over specific seed0 and seed1 control results, not a first-principles computation. The only provided cited authority is retained and supports the seed1 ladder, but it does not by itself establish the seed0 controlled row or the full two-point family-pair comparison. No runner output or source is available to independently recompute the missing rows, so the chain remains conditional on missing upstream artifacts rather than failing on the science stated here.
+- **open / conditional deps cited:**
+  - `WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`
+  - `WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`
+  - `WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`
+- **auditor confidence:** high
 
 ### `wave_equation_gravity_note`
 

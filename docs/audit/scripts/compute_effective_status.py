@@ -101,10 +101,11 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
 
     for dep_id in sorted(row.get("deps", [])):
         dep_status = dep_effective.get(dep_id, "unaudited")
-        # Accepted premises (the canonical axiom node; allowlisted external
-        # textbook imports) satisfy chain closure without being retained-grade
-        # themselves — you do not audit an axiom, and a vetted textbook import
-        # is settled upstream. See premise_nodes / AUDIT_AGENT_PROMPT_TEMPLATE.md §4.
+        # The accepted premise carve-out is axiom-only: the canonical axiom
+        # node satisfies chain closure without being retained-grade itself
+        # because axioms are not audited. Textbook results must be proved or
+        # cited through ordinary retained-grade rows, not admitted here.
+        # See premise_nodes / AUDIT_AGENT_PROMPT_TEMPLATE.md §4.
         if is_retained_grade(dep_status) or premise_nodes.is_accepted_premise_dep(dep_id):
             continue
         return "retained_pending_chain", f"chain_waiting_on:{dep_id}"

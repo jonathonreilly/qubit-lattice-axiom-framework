@@ -107,9 +107,10 @@ def current_deps_are_ratified(row: dict, rows: dict[str, dict]) -> bool:
     deps = row.get("deps", [])
     if not deps:
         return False
-    # Accepted premises (canonical axiom node; allowlisted external textbook
-    # imports) count as satisfied without being retained-grade, matching
-    # compute_effective_status / audit_lint (all go through premise_nodes).
+    # Accepted premises are axiom-only: the canonical axiom node counts as
+    # satisfied without being retained-grade, matching compute_effective_status
+    # / audit_lint (all go through premise_nodes). Textbook results must be
+    # ordinary retained-grade rows, not accepted-premise deps.
     return all(
         dep_effective_status(dep_id, rows) in RATIFIED_DEP_STATUSES
         or premise_nodes.is_accepted_premise_dep(dep_id)

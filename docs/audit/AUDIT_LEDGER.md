@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 382 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1299 |
+| unaudited | 1298 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 9 |
-| ~~audited_conditional~~ | 105 |
+| ~~audited_conditional~~ | 106 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 640 |
-| `audited_conditional` | 105 |
+| `audited_conditional` | 106 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1525 |
+| `unaudited` | 1524 |
 
 | claim_type | count |
 |---|---:|
@@ -848,6 +848,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10687,6 +10688,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The wave-field hardening still closes the interaction, norm, and bounded-field story cleanly, but it does not close the full state-family battery and it does not give universal contraction on this operating point.  _(class `C`)_
 - **chain closes:** True — The runner directly computes the scalar wave field coupled to staggered matter and reproduces the note's hard scores of 4/5, 5/5, 4/5 plus width ratios 1.0047, 1.0019, and 0.9923. The note's bounded conclusion matches the current corrected output.
 - **rationale:** The claim is scoped to a bounded corrected wave-field prototype, not retained universal robustness. Current output confirms W1-W4 on all three families, W6 only on growing, and width response as a diagnostic rather than a gate. Residual risk is limited to the stated lack of universal contraction, full state-family robustness, larger-graph battery, and retarded-field closure.
+- **auditor confidence:** high
+
+### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`
+
+- **Note:** [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](../../docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded Wilson single-plaquette real-positive-measure slot and the staggered scalar-mass class: nonzero iθ Im Tr U_P is excluded from that class, non-real scalar phases fail determinant positivity, and positive real masses give arg det(M_u M_d)=0 by convention within the class.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T190934Z-6d2d5645-strong_cp_operator_basis-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Adding a nonzero iθ Q_lat factor makes the Boltzmann weight complex and violates the assumed real-positive surface, while the mass result is the intersection of determinant positivity with the assumed scalar-mass-only class.  _(class `A`)_
+- **chain closes:** False — The algebra closes after assuming the real-positive Wilson action surface and scalar-mass-only action class. The restricted packet does not derive those action-class boundaries from retained authorities; it uses them as premises.
+- **rationale:** The runner genuinely constructs SU(3) plaquettes and staggered operators and supports the bounded rejection claims without external comparators. However, the proof still relies on P4 real-positive admissibility and C-class scalar-mass admissibility as action-surface boundaries, while the provided R3 authority is only an abstract norm-square lemma and R2 only proves positivity for positive real mI. The No-Go Discipline check also blocks broader clean closure: the note itself admits clover, multi-plaquette, axion-coupled, and non-real-positive routes remain outside scope, and N4 says the parent residual is only partially matched.
+- **open / conditional deps cited:**
+  - `STRONG_CP_THETA_ZERO_NOTE.md`
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `strong_cp_theta_zero_note`

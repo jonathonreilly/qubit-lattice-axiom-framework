@@ -36,28 +36,50 @@ Any alternative `K_P^{twist} = U · P` for a unitary `U ∈ U(H_sys)` gives the 
 
 ## Proof
 
-### Step 1 — Naimark dilation of projective measurement
+### Step 1 — Explicit canonical dilation of a projective measurement
 
-The **Naimark dilation theorem** (Naimark 1940; Holevo *Probabilistic and Statistical Aspects of Quantum Theory* Ch. III; Watrous *The Theory of Quantum Information* §2.4):
+A projective measurement is a family of orthogonal projections `{P_r}`
+on `H_sys` with `P_r P_{r'} = δ_{r r'} P_r`, `P_r† = P_r`, and
+`Σ_r P_r = 𝟙_sys`. We **construct and verify** the canonical
+system–apparatus dilation explicitly, rather than importing Naimark's
+theorem as a black box. (Naimark 1940; Holevo *Probabilistic and
+Statistical Aspects of Quantum Theory* Ch. III; Watrous *The Theory of
+Quantum Information* §2.4 are cited as provenance for the general POVM
+case; the projective case used here is the explicit construction below.)
 
-For any POVM `{E_r}` on a system Hilbert space `H_sys`, there exist:
-- An apparatus Hilbert space `H_A` with orthonormal basis `{|r⟩_A}`
-- A unitary `U_int : H_sys ⊗ H_A → H_sys ⊗ H_A`
-- An initial apparatus state `|0⟩_A ∈ H_A`
-
-such that the Kraus operators of the instrument are
-
-```text
-K_r  =  ⟨r|_A · U_int · (𝟙_sys ⊗ |0⟩_A)                                  (N1)
-```
-
-For a projective measurement with `E_r = P_r` (orthogonal projections), one canonical choice of `U_int` (the **canonical dilation**) gives:
+The Kraus operators of a system–apparatus instrument with interaction
+unitary `U_int` and apparatus initialized in `|0⟩_A`, read out in the
+basis `{|r⟩_A}`, are
 
 ```text
-U_int |ψ⟩_sys ⊗ |0⟩_A  =  Σ_r (P_r |ψ⟩)_sys ⊗ |r⟩_A.                     (N2)
+K_r  =  ⟨r|_A · U_int · (𝟙_sys ⊗ |0⟩_A).                                 (N1)
 ```
 
-This unitary copies the outcome label `r` into the apparatus register conditional on the system landing in the `P_r`-subspace.
+Take `H_A` with orthonormal basis `{|r⟩_A}` indexed by the outcomes and
+a fixed unit vector `|0⟩_A`. Define `U_int` on the subspace
+`H_sys ⊗ |0⟩_A` by
+
+```text
+U_int (|ψ⟩_sys ⊗ |0⟩_A)  =  Σ_r (P_r |ψ⟩)_sys ⊗ |r⟩_A.                  (N2)
+```
+
+**This map is an isometry on that subspace.** For any `|ψ⟩`:
+
+```text
+‖U_int(|ψ⟩⊗|0⟩)‖²  =  Σ_{r,r'} ⟨P_r ψ | P_{r'} ψ⟩ ⟨r|r'⟩
+                   =  Σ_r ‖P_r |ψ⟩‖²              (⟨r|r'⟩ = δ_{r r'})
+                   =  Σ_r ⟨ψ| P_r† P_r |ψ⟩
+                   =  Σ_r ⟨ψ| P_r |ψ⟩             (P_r† P_r = P_r)
+                   =  ⟨ψ| (Σ_r P_r) |ψ⟩  =  ⟨ψ|ψ⟩. (Σ_r P_r = 𝟙)        (N2-iso)
+```
+
+So `U_int` preserves norm on `H_sys ⊗ |0⟩_A`. A linear isometry defined
+on a subspace of a finite-dimensional Hilbert space extends to a unitary
+on the whole space (the orthogonal complements of its domain and range
+both have dimension `dim H_sys · (dim H_A − 1)`, so any unitary between
+them completes the extension). That extension is the canonical dilation
+`U_int`. The only inputs were the defining properties of a projective
+measurement (`P_r† P_r = P_r`, `Σ_r P_r = 𝟙`); nothing is imported.
 
 ### Step 2 — Canonical-frame Kraus = P
 
@@ -123,11 +145,17 @@ Load-bearing markdown-link upstream:
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site axiom on the `Z^3` spatial substrate
 
-Named non-derivation imports (standard textbook content):
+Provenance citations (NOT load-bearing — the projective dilation is
+constructed and verified inline in Step 1; these are the standard literature
+for the general POVM case):
 
 - **Naimark 1940** dilation theorem (Holevo Ch. III; Watrous §2.4)
 - **Stinespring 1955** dilation theorem (standard)
-- Standard measurement-theory instrument structure
+
+The only inputs to the inline construction are the defining properties of a
+projective measurement (`P_r† P_r = P_r`, `Σ_r P_r = 𝟙`) and the elementary
+fact that an isometry on a subspace of a finite-dimensional space extends to
+a unitary — the framework's standard-math floor.
 
 Plain-text contextual pointers (not load-bearing deps):
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 277,
+    "critical": 276,
     "high": 349,
     "leaf": 341,
     "medium": 339
@@ -8,32 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-      "claim_scope": "Narrowed Block 4 L_s=3 PBC cube partition-function staging only: trivial sector, (1,1) coefficient, rank-8 V_(1,1)^4 singlet basis, stated plaquette tensor, and 81-plaquette/81-link scope estimate; no L_s=2 orientation or bridge-gap claim audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
-        "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
-        "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.472,
-      "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_wigner_l3_cube_partition.py",
-      "transitive_descendants": 1003
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -7792,6 +7766,30 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_cube_full_rho_perron_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.18,
+      "note_path": "docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py",
+      "transitive_descendants": 144
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -11724,30 +11722,6 @@
       "ready": false,
       "runner_path": "scripts/cl3_koide_a1_probe_gravity_phase_2026_05_08_probe3.py",
       "transitive_descendants": 145
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su3_cube_full_rho_perron_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.18,
-      "note_path": "docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py",
-      "transitive_descendants": 144
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -39076,5 +39050,5 @@
     }
   ],
   "ready_count": 39,
-  "total_pending": 1306
+  "total_pending": 1305
 }

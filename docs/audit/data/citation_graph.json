@@ -62376,16 +62376,16 @@
     },
     "lattice_keff_continuum_note": {
       "claim_id": "lattice_keff_continuum_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [
         "continuum_limit_note"
       ],
       "helper_runner_paths": [
         "scripts/lattice_continuum_limit.py"
       ],
-      "note_hash": "9a669d8f05cd99c92ace5d4ed4476006b32ea32b6cfbaad6455c6f83a5c21fd0",
+      "note_hash": "bddf2ea6b026639488be2da1d1cf2bd3a5f07c48c7fd6095e903d8ac19675fec",
       "path": "docs/LATTICE_KEFF_CONTINUUM_NOTE.md",
       "runner_path": "scripts/lattice_keff_continuum.py",
       "title": "k_eff = k\u00b7h Continuum Limit Note"
@@ -84410,8 +84410,8 @@
       "bounded_theorem": 521,
       "decoration": 1,
       "meta": 187,
-      "no_go": 65,
-      "none": 1495,
+      "no_go": 66,
+      "none": 1494,
       "open_gate": 46,
       "positive_theorem": 175
     },
@@ -84419,10 +84419,10 @@
       "bounded_theorem": 959,
       "decoration": 1,
       "meta": 187,
-      "no_go": 168,
+      "no_go": 169,
       "none": 443,
       "open_gate": 124,
-      "positive_theorem": 608
+      "positive_theorem": 607
     },
     "edge_count": 9688,
     "leaf_count": 757,

@@ -1,7 +1,22 @@
 # k_eff = k·h Continuum Limit Note
 
-**Date:** 2026-04-09
-**Status:** proposed_retained NEGATIVE — the remaining dense-continuum candidate `k_eff = k·h` does not produce a clean refinement lane. It gives finite rows at `h ∈ {2.0, 1.0, 0.5}` but the detector probability falls below the harness prune floor (1e-30) at `h = 0.25`, causing the measurement to report zero. The gravity channel is also unstable on the proposed_retained rows (`-1.69 → +0.14 → +0.58`). **Note:** the reported "zero" at h=0.25 is a harness-floor artifact — replaying without the 1e-30 amplitude prune gives P_free ≈ 7e-75 (nonzero on all detector nodes). The detector is not literally dead; it is ~75 orders of magnitude below unity, which is still a practical failure for the scheme.
+**Date:** 2026-04-09 (claim_type corrected 2026-05-23 per
+2026-05-22 audit verdict repair: positive_theorem → no_go; the
+note's substantive content was already negative.)
+**Type:** no_go
+**Claim scope:** The dense-continuum scheme `k_eff = k·h` is
+falsified as a refinement-lane candidate by the recorded harness
+output: detector probability collapses (~7e-75 at `h = 0.25`, 75
+orders of magnitude below unity), and the gravity channel does not
+exhibit a stable convergent trend on the surviving rows
+(`-1.6910 → +0.1374 → +0.5821` at `h = 2.0, 1.0, 0.5`).
+**Status authority:** independent audit lane only. This source note
+does not set or predict an audit outcome; later status is generated
+by the audit pipeline after independent review.
+**Falsification witness residual:** detector probability underflow
+at `h = 0.25` (P_free ≈ 7e-75 in the unpruned replay; reported as
+exactly 0 by the default-pruned harness). This is the named witness
+the no_go rests on.
 
 ## Artifact chain
 
@@ -80,6 +95,47 @@ So the dense-continuum candidate pool is now effectively exhausted:
 1. nearest-neighbor branch: retained through `h = 0.25`, but runtime-blocked finer
 2. fan-out normalization: falsified
 3. `k_eff = k·h`: detector-collapse negative
+
+## No-Go Discipline (N1-N4)
+
+Per the 2026-05-22 audit verdict, the following No-Go Discipline
+checks are surfaced explicitly for the negative finding:
+
+- **(N1) Alternative continuum-limit attack routes considered.**
+  The three dense-continuum schemes named in this lane are
+  exhausted by the rows of the "Honest boundary" section above:
+  (i) nearest-neighbor branch (retained through `h = 0.25`,
+  runtime-blocked finer), (ii) fan-out normalization (separately
+  falsified), and (iii) `k_eff = k·h` (this note). The negative
+  conclusion is limited to these three routes; an architecture
+  change (different lattice geometry, different measure factor,
+  different detector observable) is **not** ruled out by this note
+  and would constitute a new lane.
+
+- **(N2) The falsification is robust under default harness
+  configuration.** The harness reports detector probability = 0 at
+  `h = 0.25` under its default 1e-30 amplitude prune. Replaying
+  without the prune gives P_free ≈ 7e-75. Both readings agree on
+  the qualitative finding (75 orders of magnitude below unity is
+  not a usable continuum limit).
+
+- **(N3) Hidden walls / admissions surfaced.** The only admissions
+  are (a) the dense lattice geometry of the parent continuum-limit
+  program, (b) the `ea = exp(i · (k·h) · act) · w / L · h²`
+  measure factor inherited from the program (which is what is
+  being tested), and (c) the same detector observable used by
+  the comparator `CONTINUUM_LIMIT_NOTE.md`. None of these are new
+  to this note. No hidden free parameter was used to suppress the
+  detector at `h = 0.25` — the underflow is the harness's
+  unmodified output.
+
+- **(N4) Named witness residual.** Detector probability ≈ 7e-75
+  at `h = 0.25` (P_free), matching the runner's logged output
+  (cached SHA 9a42641; replay without prune reproduces the
+  underflow). The gravity-channel sequence
+  `-1.6910 → +0.1374 → +0.5821` at `h = 2.0, 1.0, 0.5` is the
+  secondary residual showing the surviving rows do not
+  monotonically approach a stable value.
 
 ## Bottom line
 

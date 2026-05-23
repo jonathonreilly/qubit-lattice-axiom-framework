@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 382 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1299 |
+| unaudited | 1300 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 9 |
@@ -55,11 +55,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1525 |
+| `unaudited` | 1526 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1013 |
+| `bounded_theorem` | 1014 |
 | `decoration` | 31 |
 | `meta` | 229 |
 | `no_go` | 242 |
@@ -71,16 +71,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 388 |
 | `high` | 483 |
 | `medium` | 572 |
-| `leaf` | 937 |
+| `leaf` | 938 |
 
 - **Retained pending chain closure:** 7
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1935
+- runners classified: 1936
 - runners with (C) first-principles compute hits: 952
-- runners with (D) external comparator hits: 548
+- runners with (D) external comparator hits: 549
 - decoration candidates (no C, no D): 313
 
 ## Top 25 by load-bearing score (topology only)
@@ -92,7 +92,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 710 | 53.47 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `minimal_axioms_2026-05-03` | meta | critical | 921 | 52.35 | `unaudited` | meta |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 891 | 47.80 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1089 | 44.09 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1090 | 44.59 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 923 | 39.85 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 176 | 38.97 | `unaudited` | unaudited |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 934 | 38.37 | `unaudited` | unaudited |

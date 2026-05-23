@@ -23193,6 +23193,22 @@
       "to": "anomaly_forces_time_theorem"
     },
     {
+      "from": "sm_identity_triangulation_convergence_note_2026-05-23",
+      "to": "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly"
+    },
+    {
+      "from": "sm_identity_triangulation_convergence_note_2026-05-23",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "sm_identity_triangulation_convergence_note_2026-05-23",
+      "to": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "sm_identity_triangulation_convergence_note_2026-05-23",
+      "to": "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26",
       "to": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
     },
@@ -75332,6 +75348,23 @@
       "runner_path": "scripts/frontier_sm_hypercharge_no_nu_r_derivation.py",
       "title": "SM Hypercharge Uniqueness Without \u03bd_R Input \u2014 Anomaly Cancellation Alone"
     },
+    "sm_identity_triangulation_convergence_note_2026-05-23": {
+      "claim_id": "sm_identity_triangulation_convergence_note_2026-05-23",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
+        "graph_first_su3_integration_note",
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+        "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c246c439ed56aea9fb00990ead81100e7f77453c0e9b151f5fd4cea541619062",
+      "path": "docs/SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_sm_identity_triangulation_convergence.py",
+      "title": "SM-Identity Triangulation Convergence"
+    },
     "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26": {
       "claim_id": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26",
       "claim_type_author_hint": null,
@@ -84294,7 +84327,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 524,
+      "bounded_theorem": 525,
       "decoration": 1,
       "meta": 188,
       "no_go": 68,
@@ -84303,7 +84336,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 960,
+      "bounded_theorem": 961,
       "decoration": 1,
       "meta": 188,
       "no_go": 171,
@@ -84311,10 +84344,10 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9655,
-    "leaf_count": 768,
-    "node_count": 2494,
+    "edge_count": 9659,
+    "leaf_count": 766,
+    "node_count": 2495,
     "root_count": 824,
-    "runners_with_path": 2055
+    "runners_with_path": 2056
   }
 }

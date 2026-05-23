@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 383 |
+| **retained_bounded** | 384 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 636 |
+| `audited_clean` | 637 |
 | `audited_conditional` | 106 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1510 |
+| `unaudited` | 1509 |
 
 | claim_type | count |
 |---|---:|
@@ -462,6 +462,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `mesoscopic_surrogate_annular_tapered_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_localization_frontier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_multistage_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7403,6 +7404,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note pins the Bogoliubov inequality and the Mermin-Wagner / Hohenberg / Coleman dimension-restriction theorems as accepted mathematical inputs for downstream one-hop citation.  _(class `E`)_
 - **chain closes:** False — The restricted packet provides no retained one-hop authorities or runner derivation for the imported textbook theorems. The missing step is an attached retained authority or independent derivation establishing the theorem statements and their hypotheses within the packet.
 - **rationale:** The source note openly presents a named non-derivation import, so the load-bearing move is a definitional registration rather than first-principles closure. Because the packet lists no cited authorities in full, the textbook theorem statements, short-range interaction hypothesis, operator-domain assumptions, and Coleman relativistic assumptions remain imported rather than closed. Applying the negative-claim gate, N3 flags these as hidden/explicit assumptions inside the bounded no-SSB boundary, preventing an audited_clean verdict.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_annular_tapered_sweep_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite retained 3D ordered-lattice sweep comparing topN, annular shells, hollow square shells, and tapered ellipsoidal shells at support >= 9 and capture >= 0.25 in both stages.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T001132Z-5505cc0e-mesoscopic_surrogate_ann-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** No non-degenerate annular / hollow / tapered family beat topN on the admissible score/capture frontier under the explicit support and capture floors.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers instantiate the lattice, source, surrogate field, relaunch, scoring, support, and capture tests rather than merely printing constants. The current runner supports the bounded negative conclusion, though it reports topN 121 as the best overall tie-resolved row rather than the note's topN 225 row.
+- **rationale:** The load-bearing claim is a bounded finite computational result over an explicitly enumerated source-family sweep. The supplied runner source performs the relevant framework computation using the retained 3D lattice helpers, and the cited authorities are retained_bounded rather than open or support-only. There is a numerical presentation mismatch in the note's named best topN row: the runner output says BEST OVERALL topN 121, while the note lists topN 225; this should be corrected, but it does not overturn the audited negative conclusion that no localized admissible family beats topN.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_backreaction_note`

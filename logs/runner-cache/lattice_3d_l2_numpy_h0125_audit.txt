@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_3d_l2_numpy_h0125_audit.py
-runner_sha256: a82a8d4b0f1f3a6e3c9ecb4baa9e4b5082633db24a01d990962882375bfc272c
-timeout_sec: 120
+runner_sha256: 4b9c6ad309cb6559952b59ea5f944a3fff250902727f8e207944dd949336c619
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 34.67
+elapsed_sec: 22.36
 status: ok
 ----- stdout -----
 ====================================================================================
 3D 1/L^2 + h^2 NUMPY H=0.125 AUDIT
   fixed family: phys_l=4, phys_w=1.5, max_d_phys=3
-  source strength=5e-05
+  source strength=5e-05, z_mass_active=1.0
   goal: freeze the narrowest safe continuum claim
 ====================================================================================
 
@@ -24,7 +24,7 @@ status: ok
   1. Born |I3|/P = nan  [FAIL] (0.0s)
   2. d_TV = 0.2605
   3. k=0 = 0.000000
-  5. Gravity z=3: +0.000000 (AWAY)
+  5. Gravity z=1.0: -0.009319 (AWAY)
   4. F~M: too few TOWARD points (0)
   6. Decoherence = 38.3%
   7. MI = 0.1248 bits
@@ -44,8 +44,8 @@ status: ok
   1. Born |I3|/P = 1.39e-15  [PASS] (0.0s)
   2. d_TV = 0.6586
   3. k=0 = 0.000000
-  5. Gravity z=3: +0.000000 (AWAY)
-  4. F~M: too few TOWARD points (0)
+  5. Gravity z=1.0: +0.003047 (TOWARD)
+  4. F~M alpha = 0.49
   6. Decoherence = 49.9%
   7. MI = 0.4985 bits
   10. Distance law (s=5e-05):
@@ -57,41 +57,41 @@ status: ok
 ======================================================================
 3D DENSE + 1/L^2 KERNEL (h=0.25)
   2873 nodes, 17 layers, 456976 edges
-  Generated in 0.2s
+  Generated in 0.1s
 ======================================================================
 
   Free propagation: 0.0s
-  1. Born |I3|/P = 2.50e-15  [PASS] (0.2s)
+  1. Born |I3|/P = 2.50e-15  [PASS] (0.1s)
   2. d_TV = 0.6994
   3. k=0 = 0.000000
-  5. Gravity z=3: +0.000000 (AWAY)
-  4. F~M: too few TOWARD points (0)
+  5. Gravity z=1.0: +0.005376 (TOWARD)
+  4. F~M alpha = 0.50
   6. Decoherence = 49.9%
   7. MI = 0.4699 bits
   10. Distance law (s=5e-05):
       Distance time: 0.0s
 
-  TOTAL TIME: 1s
+  TOTAL TIME: 0s
 
 
 ======================================================================
 3D DENSE + 1/L^2 KERNEL (h=0.125)
   20625 nodes, 33 layers, 12500000 edges
-  Generated in 5.2s
+  Generated in 3.9s
 ======================================================================
 
-  Free propagation: 2.2s
-  1. Born |I3|/P = 4.23e-15  [PASS] (9.3s)
+  Free propagation: 1.0s
+  1. Born |I3|/P = 4.23e-15  [PASS] (6.3s)
   2. d_TV = 0.6725
   3. k=0 = 0.000000
-  5. Gravity z=3: +0.000000 (AWAY)
-  4. F~M: too few TOWARD points (0)
+  5. Gravity z=1.0: +0.006997 (TOWARD)
+  4. F~M alpha = 0.50
   6. Decoherence = 49.0%
   7. MI = 0.3787 bits
   10. Distance law (s=5e-05):
       Distance time: 0.0s
 
-  TOTAL TIME: 34s
+  TOTAL TIME: 22s
 
 ----- stderr -----
 

@@ -18,6 +18,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import premise_nodes
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -99,8 +101,13 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
 
     for dep_id in sorted(row.get("deps", [])):
         dep_status = dep_effective.get(dep_id, "unaudited")
-        if not is_retained_grade(dep_status):
-            return "retained_pending_chain", f"chain_waiting_on:{dep_id}"
+        # Accepted premises (the canonical axiom node; allowlisted external
+        # textbook imports) satisfy chain closure without being retained-grade
+        # themselves — you do not audit an axiom, and a vetted textbook import
+        # is settled upstream. See premise_nodes / AUDIT_AGENT_PROMPT_TEMPLATE.md §4.
+        if is_retained_grade(dep_status) or premise_nodes.is_accepted_premise_dep(dep_id):
+            continue
+        return "retained_pending_chain", f"chain_waiting_on:{dep_id}"
     return retained_status, "self"
 
 

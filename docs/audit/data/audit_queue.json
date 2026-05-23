@@ -3,7 +3,7 @@
     "critical": 471,
     "high": 174,
     "leaf": 329,
-    "medium": 326
+    "medium": 325
   },
   "cycle_break_target_count": 131,
   "cycle_break_targets": [
@@ -22122,31 +22122,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "a1_qubit_interpretation_note_2026-05-20"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -40471,6 +40446,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 13,
-  "total_pending": 1300
+  "ready_count": 12,
+  "total_pending": 1299
 }

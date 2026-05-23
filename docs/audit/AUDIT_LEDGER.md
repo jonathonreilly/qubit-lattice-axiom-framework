@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1300 |
+| unaudited | 1299 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 93 |
+| ~~audited_conditional~~ | 94 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 636 |
-| `audited_conditional` | 93 |
+| `audited_conditional` | 94 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1525 |
+| `unaudited` | 1524 |
 
 | claim_type | count |
 |---|---:|
@@ -820,6 +820,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8758,6 +8759,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the claim that A1+A2 yield a unique tracial state on the qubit-lattice UHF algebra and that, under an admitted no-extra-structure principle, this state is the pre-record reference ρ_ref = ⊗_x I/2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T123811Z-8c404a03-pre_record_reference_sta-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The no-extra-structure principle identifies the unique tracial state τ on the A1+A2 quasi-local algebra with the pre-record reference state.  _(class `F`)_
+- **chain closes:** False — The standard tracial-state mathematics closes as quoted, but the physical identification of that state as the pre-record reference is an admitted no-extra-structure premise not derived in the restricted packet.
+- **rationale:** The note itself separates Steps 1-4 as standard operator-algebra mathematics from Step 5, which is explicitly admitted as a physical identification premise. That premise is a symbol-identity/identification move rather than a derivation from A1+A2 alone, so retained status cannot propagate through it. N3 also flags the phrase 'no-extra-structure principle' as hidden-wall language: it is necessary for the pre-record interpretation and is not closed by any cited authority.
+- **open / conditional deps cited:**
+  - `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

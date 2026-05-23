@@ -24029,10 +24029,6 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
-      "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-    },
-    {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "to": "left_handed_charge_matching_note"
     },
@@ -58989,7 +58985,7 @@
         "minimal_axioms_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c2fa702850268b2c9df4f38dabfdcfe762ea65e1c4bd0d3fc72b34b49cf30cda",
+      "note_hash": "893498d9a7d285e3ab09a76522e3c26f70e0e98e6fc6100e3999f2e4ee781aa2",
       "path": "docs/KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routea.md",
       "runner_path": "scripts/cl3_koide_a1_route_a_koide_nishiura_2026_05_08_routea.py",
       "title": "Koide A1 Route A \u2014 Koide-Nishiura U(3) Quartic Bounded Obstruction"
@@ -59046,7 +59042,7 @@
         "minimal_axioms_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2018171cdc7c1993c8865a42ba5cf8c674c4b63d7141df9b66cd8570dc587051",
+      "note_hash": "bd54b9253ade2a7a8531eb62ce08cac6740279431576fd1a454a5aec4c2f5a4e",
       "path": "docs/KOIDE_A1_ROUTE_E_KOSTANT_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routee.md",
       "runner_path": "scripts/cl3_koide_a1_route_e_kostant_weyl_2026_05_08_routee.py",
       "title": "Koide A1 Route E \u2014 Kostant Weyl-Vector / A_1 Root System Bounded Obstruction"
@@ -59071,7 +59067,7 @@
         "higher_order_structural_theorems_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fede4e6b5b1705c2dbbbc7a42dd7d7592b4861b0554dea41e9c6c431adbc0781",
+      "note_hash": "d15adb0903c5c18fe7aa8cdf9245ccc20f1627c258e29f177edebacf6f3fbac6",
       "path": "docs/KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md",
       "runner_path": "scripts/cl3_koide_a1_route_f_casimir_difference_2026_05_08_routef.py",
       "title": "Koide A1 Route F \u2014 Yukawa Casimir-Difference Bounded Obstruction"
@@ -76847,11 +76843,10 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "minimal_axioms_2026-04-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "908367e1e75df3b7b7d32f403fce914da8789d85e02ad0d9afc55aced7ee8391",
+      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
@@ -84424,7 +84419,7 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9688,
+    "edge_count": 9687,
     "leaf_count": 757,
     "node_count": 2490,
     "root_count": 819,

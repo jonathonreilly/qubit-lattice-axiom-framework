@@ -9,10 +9,6 @@
   },
   "cycle_examples": [
     [
-      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-    ],
-    [
       "anomaly_forces_time_theorem",
       "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
       "staggered_dirac_realization_gate_note_2026-05-03",
@@ -49,9 +45,18 @@
       "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
       "yt_ward_identity_derivation_theorem",
       "left_handed_charge_matching_note"
+    ],
+    [
+      "staggered_dirac_realization_gate_note_2026-05-03",
+      "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+      "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10",
+      "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
     ]
   ],
-  "cycles_detected": 131,
+  "cycles_detected": 130,
   "effective_status_counts": {
     "audited_conditional": 95,
     "audited_failed": 24,

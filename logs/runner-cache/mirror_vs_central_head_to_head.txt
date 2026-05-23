@@ -1,33 +1,56 @@
 ===== runner cache v1 =====
 runner: scripts/mirror_vs_central_head_to_head.py
-runner_sha256: 2723547030f328d6c3276e57295a0314cfdfaed9768b6bfd99a373c90c25885f
+runner_sha256: b431829587807205231f61842dbf39687475b2cb69e40431dcb6f8643d9a7c9c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
-MIRROR VS CENTRAL HEAD-TO-HEAD
+MIRROR VS CENTRAL HEAD-TO-HEAD (cache-reader)
 ============================================================================================
-1. Dense central-band + layer norm [retained]
-   Born: Corrected Born stays at machine precision on the retained dense pocket
-   Purity metric: pur_min
-   Retained row: Best retained high-N row: N=80, npl=80, Born-clean, pur_min=0.500, gravity +2.799±1.612
-   Range: retained through N=100 in a narrow density window, but thins by N=100
-   Why: Best joint coexistence: stronger decoherence and wider retained range than mirror
 
-2. Mirror chokepoint / Z2-protected transfer [retained bounded pocket]
-   Born: Corrected Born stays at machine precision through N=60 on the strict pocket
-   Purity metric: pur_cl
-   Retained row: Best retained mirror row: N=40, NPL_HALF=50, Born 1.01e-15, pur_cl=0.8764±0.03, gravity +4.6161±0.721
-   Range: retained through N=60, fails at N=80/100 on the strict pocket
-   Why: Strongest small-N gravity and symmetry protection, but not the best joint lane overall
+Lane 1: Dense central-band + layer norm
+  source cache: logs/runner-cache/central_band_dense_joint_highN.txt
+  authority   : docs/CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md
+  purity      : pur_min
+  retained row (verbatim cache line):
+    npl mode    Born            pur_min          gravity
+    80            LN+|y|     0.000±0.000       0.500±0.000    +2.799±1.612    +1.7    4
 
-Ranking
-1. Best joint coexistence: Dense central-band + layer norm
-2. Highest-upside but bounded challenger: Mirror chokepoint / Z2-protected transfer
+Lane 2a: Mirror strict default card (NPL_HALF=25, connect_radius=4.0)
+  source cache: logs/runner-cache/mirror_chokepoint_joint.txt
+  authority   : docs/MIRROR_CHOKEPOINT_NOTE.md
+  purity      : pur_cl
+  retained mirror p2=0 rows (verbatim cache lines):
+    15  mirror p2=0    0.9716   0.5769±0.02    1.0006  +1.2927±0.691    5.75e-16   +0.00e+00   11     1s
+    25  mirror p2=0    0.8014   0.7329±0.05    0.9986  +2.2748±0.525    6.92e-16   +0.00e+00   13     1s
+  same-card FAIL markers (also verbatim):
+    40  mirror p2=0  FAIL     1s
+    60  mirror p2=0  FAIL     1s
+    80  mirror p2=0  FAIL     2s
+    100  mirror p2=0  FAIL     2s
 
-Review-safe bottom line:
-Mirror is now a real retained bounded pocket with stronger small-N gravity, but the dense central-band lane still wins on joint coexistence and retained range. Mirror is the challenger, not the new best joint lane.
+Lane 2b: Mirror dense boundary card (NPL_HALF=60, connect_radius=5.0)
+  source cache: logs/runner-cache/mirror_chokepoint_boundary_fit_certificate.txt
+  authority   : docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md
+  purity      : pur_cl
+  pre-fit retention rows (verbatim cache lines):
+    40  mirror p2=0    0.6884   0.8608±0.03    0.9850  +4.7499±0.666    1.05e-15   +0.00e+00   16     9s
+    60  mirror p2=0    0.4791   0.8440±0.03    0.9953  +3.9733±0.473    1.54e-15   +0.00e+00   16    15s
+    80  mirror p2=0    0.4291   0.8182±0.03    1.0029  +3.0551±0.672    2.43e-15   +0.00e+00   16    22s
+    100  mirror p2=0    0.2308   0.9043±0.02    1.0058  +1.3089±0.570    1.13e-15   +0.00e+00   16    26s
+  gravity-wall row (verbatim cache line, excluded from the fit):
+    120  mirror p2=0    0.2517   0.8823±0.04    0.9984  +0.0000±0.000         nan   +0.00e+00   11    24s
+
+Ranking (structural reading of the cited registered rows above):
+  1. Dense central-band + layer norm
+  2. Mirror chokepoint (strict + dense-boundary bounded pockets)
+
+Fairness note: the central lane reports pur_min and the mirror lane
+reports pur_cl, so the ranking is a full-lane comparison, not a
+raw purity-to-purity contest.
+
+PASS: every printed row was read from a cited registered cache.
 
 ----- stderr -----
 

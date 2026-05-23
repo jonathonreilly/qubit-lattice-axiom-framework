@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1279 |
+| unaudited | 1280 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 103 |
-| ~~audited_failed~~ | 23 |
+| ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -51,10 +51,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 643 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 67 |
+| `audited_failed` | 66 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1504 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -80,7 +80,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 - runners classified: 1931
 - runners with (C) first-principles compute hits: 951
 - runners with (D) external comparator hits: 547
-- decoration candidates (no C, no D): 310
+- decoration candidates (no C, no D): 311
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -934,7 +934,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_keff_continuum_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | claude-opus | claim_type_observable_mismatch | - |
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
-| `mirror_vs_central_head_to_head_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -7698,19 +7697,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note declares that the canonical mirror MI artifact is now frozen in the chokepoint note, runner, and log, and that this file should only be treated as a pointer.  _(class `E`)_
 - **chain closes:** True — The restricted packet supports the metadata redirect: the source note makes no independent MI theorem claim, and the cited chokepoint/families notes provide the bounded canonical target it points to.
 - **rationale:** The source note's load-bearing move is a status/pointer declaration, not a derivation of a physics result. The included runner genuinely computes the bounded chokepoint MI table from generated DAGs and a linear propagator, but that computation belongs to the cited canonical artifact, not to this superseded note's own claim. Because the audited note reduces to declaring which artifact should be treated as canonical, the proper verdict is audited_renaming rather than audited_clean.
-- **auditor confidence:** high
-
-### `mirror_vs_central_head_to_head_note`
-
-- **Note:** [`MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md`](../../docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audited the head-to-head ranking comparing the dense central-band retained row against the mirror chokepoint retained pocket using only the cited one-hop authorities and the primary runner cache/source.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-mirror_vs_central_head_t-040`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Reading the registered runner cache directly, the structural ranking is Dense central-band + layer norm first and Mirror chokepoint / Z2-protected transfer second.  _(class `B`)_
-- **chain closes:** False — The dense central-band row is supported by the cited high-N note, but the mirror row used in the comparison is not supported by the cited mirror authorities. The cited mirror note explicitly excludes the NPL_HALF=50 scaling probe, and the boundary-fit note supports NPL_HALF=60 rows with different N=40 values, not the N=40, NPL_HALF=50 row quoted here.
-- **rationale:** The primary runner is a hard-coded summary printer, not a computation or cache-reader, so stdout does not independently verify the disputed row. The load-bearing comparison imports upstream rows, but the cited upstream mirror authorities do not contain the specific N=40, NPL_HALF=50 row or the through-N=60 strict-pocket range claim used by this note. Because the ranking depends on an unsupported mirror input, the chain does not close even as a registered-row structural summary.
 - **auditor confidence:** high
 
 ### `moonshot_other_testables_note`

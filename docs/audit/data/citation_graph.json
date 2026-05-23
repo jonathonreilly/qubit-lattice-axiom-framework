@@ -17310,11 +17310,11 @@
     },
     {
       "from": "mirror_vs_central_head_to_head_note",
-      "to": "mirror_chokepoint_note"
+      "to": "central_band_dense_joint_highn_note"
     },
     {
       "from": "mirror_vs_central_head_to_head_note",
-      "to": "central_band_dense_joint_highn_note"
+      "to": "mirror_chokepoint_note"
     },
     {
       "from": "mirror_vs_central_head_to_head_note",
@@ -64082,12 +64082,12 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "mirror_chokepoint_note",
         "central_band_dense_joint_highn_note",
+        "mirror_chokepoint_note",
         "mirror_chokepoint_boundary_fit_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bf88f399e991a0c4b63aa5fd3d2bbf3121da5485d3a1620a74c35527a30cbcdf",
+      "note_hash": "d55dbcaee4c0f444bd90ab16aaada09742a8d33c22ff20fb29904a0b2502152b",
       "path": "docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md",
       "runner_path": "scripts/mirror_vs_central_head_to_head.py",
       "title": "Mirror vs Central Head-To-Head Note"

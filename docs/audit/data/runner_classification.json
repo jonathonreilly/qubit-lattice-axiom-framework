@@ -14596,12 +14596,12 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 7,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/mirror_vs_central_head_to_head.py"
     },
     "momentum_charge_commute_theorem_note_2026-05-02": {
@@ -51226,12 +51226,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 7,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/momentum_charge_commute_check.py": {
@@ -53871,13 +53871,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 310,
+    "decoration_candidates": 311,
     "dominant_class_distribution": {
       "A": 202,
-      "B": 266,
+      "B": 267,
       "C": 735,
       "D": 295,
-      "none": 433
+      "none": 432
     },
     "runners_classified": 1931,
     "runners_with_C": 951,

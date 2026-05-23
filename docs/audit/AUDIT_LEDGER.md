@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 137 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 381 |
+| **retained_bounded** | 382 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1300 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 9 |
@@ -49,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 638 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 639 |
 | `audited_conditional` | 102 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
@@ -122,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
-| `g_bare_derivation_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -297,6 +295,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_bare_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -4132,6 +4131,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** At N_c = 3 on the explicit local Wilson surface beta = 2 N_c = 6, g_bare^2 = 2 N_c / beta = 6 / 6 = 1, hence g_bare = 1.  _(class `A`)_
 - **chain closes:** True — The stated bounded claim closes as an algebraic substitution from retained CN and WM inputs plus the explicitly admitted local beta=6 surface. The packet does not claim derivation of CN, WM, or beta=6 from deeper framework axioms.
 - **rationale:** The load-bearing step is a genuine class-A algebraic identity over the declared bounded surface. Both one-hop authorities are marked retained in the restricted packet, and the open physical-color bridge language in CL3 is outside this note's narrowed use of canonical SU(3) normalization and N_c=3 algebra. The runner source performs exact Fraction arithmetic and dependency-status checks rather than merely printing constants. The conclusion is clean only for the relative bounded surface; it does not promote the broader g_bare derivation.
+- **auditor confidence:** high
+
+### `g_bare_derivation_note`
+
+- **Note:** [`G_BARE_DERIVATION_NOTE.md`](../../docs/G_BARE_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T185700Z-4e23dc75-g_bare_derivation_note-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Relative to the admitted canonical normalization, `g_bare = 1` follows from `beta = 2 N_c / g_bare^2` with `N_c = 3` and `beta = 6`.  _(class `A`)_
+- **chain closes:** True — The chain closes on the bounded surface because the cited authorities are supplied as retained-grade and the final step is exact substitution. It does not close as an absolute derivation of canonical normalization or of the `beta=6` surface from `A1 + A2` alone.
+- **rationale:** The load-bearing step is class A algebra over retained-grade inputs, not a first-principles class C derivation. The runner does compute several operator and plaquette checks, but the decisive `g_bare=1` step uses the explicit bounded `beta=6` surface. No external comparator or tuned observational match is used. The clean verdict applies only to the bounded theorem scope stated above.
 - **auditor confidence:** high
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`

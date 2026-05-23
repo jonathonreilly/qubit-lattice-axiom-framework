@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 138 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 387 |
+| **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1267 |
+| unaudited | 1266 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 648 |
+| `audited_clean` | 649 |
 | `audited_conditional` | 122 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1493 |
+| `unaudited` | 1492 |
 
 | claim_type | count |
 |---|---:|
@@ -427,6 +427,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_l2_numpy_h0125_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_nyquist_diffraction_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_tapered_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -6873,6 +6874,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note asserts that the helper module declares the width-6 comparator constants and provides build_family, barrier_metrics, no_barrier_distance, and fit_power for downstream use.  _(class `E`)_
 - **chain closes:** True — The note closes only as a wrapper-level definition of an interface and constants, not as a derivation of any physics result. No upstream derivation or runner source is provided or needed to classify that wrapper function.
 - **rationale:** The load-bearing content is definitional: the note introduces a citeable wrapper authority for constants and helper-function names. It explicitly disclaims derivation of the inverse-square law, any asymptotic tail theorem, and downstream closure. Because no runner source is available, the actual implementation cannot be verified here, but the audited claim itself reduces to module-interface documentation rather than a first-principles computation.
+- **auditor confidence:** high
+
+### `lattice_3d_l2_numpy_h0125_audit_note`
+
+- **Note:** [`LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md`](../../docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical audit of the reduced dense 3D 1/L^2 + h^2 numpy family at h = 1.0, 0.5, 0.25, 0.125 with phys_l = 4, phys_w = 1.5, max_d_phys = 3, strength = 5e-5, and on-lattice active source z = 1.0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T201254Z-b3e07f43-lattice_3d_l2_numpy_h012-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The reduced 3D dense 1/L^2 + h^2 numpy family runs through h = 0.125 and, with z_mass_active = 1.0 on-lattice, preserves Born from h = 0.5 down plus TOWARD weak-field gravity and F~M alpha approximately 0.5 at the finer spacings.  _(class `C`)_
+- **chain closes:** True — The provided runner and helper source generate the lattice, field, slit setup, propagation, Born check, gravity response, F~M fit, decoherence, and MI directly from the fixed numerical family rather than printing cached target constants. The conclusion is explicitly bounded to that reduced family and excludes the empty distance-law sweep and full 3D closure.
+- **rationale:** The load-bearing evidence is a completed cached run whose source instantiates the dense lattice and 1/L^2 propagation path, including the repaired on-lattice active source. The helper code does not import a contested premise or hard-code the reported observables; it computes them from the fixed parameters. The note's claimed scope is narrow enough to match the runner output, including the h = 1.0 coarse-grid limitation and the absence of a distance-law fit.
 - **auditor confidence:** high
 
 ### `lattice_3d_l2_numpy_h0125_bridge_note`

@@ -251919,24 +251919,48 @@
       "verdict_rationale": null
     },
     "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T12:33:08.130039+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T123137Z-55f06369-u4_closes_under_qubit_re-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows only by identifying A1's one-qubit-per-site reading with U4's single faithful Cl(3) module condition; the M_2(C) unique-irrep fact supplies standard algebraic vocabulary after that identification.",
       "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Audited whether A1's qubit-per-site baseline plus the retained M_2(C) \u2245 Cl(3,0) algebraic identification closes the U4 k=1 per-site Hilbert-space bridge.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T12:33:08.130039+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -251945,19 +251969,19 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Under the qubit-per-site baseline, the conditional in C1 is no longer required because the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "80ec7d86edeaee37129356f86d3a7b96d8af1521b079272e92a7ffda6305bc6f",
       "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only whether the current canonical axiom packet treats k=1 as direct A1 meaning; under this packet the row is renaming, not decoration under cl3_complexification_split.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -252085,7 +252109,7 @@
       "runner_path": null,
       "title": "U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "This is not audited_decoration under cl3_complexification_split: the row does not reduce to that single retained algebraic parent, because the physical k=1 bridge is supplied by the qubit-per-site axiom reading. The decisive move is the identity between \u201cone qubit per site\u201d and \u201csingle faithful complex Cl(3) irrep per site,\u201d not an independent class A or class C derivation. No runner was provided, but the load-bearing step can be judged from the note text."
     },
     "unification_basin_failure_note": {
       "audit_date": null,

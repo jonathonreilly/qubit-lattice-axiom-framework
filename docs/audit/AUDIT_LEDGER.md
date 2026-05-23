@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
-| unaudited | 1303 |
+| unaudited | 1302 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 15 |
+| ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 93 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -51,8 +51,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 15 |
-| `unaudited` | 1528 |
+| `audited_renaming` | 16 |
+| `unaudited` | 1527 |
 
 | claim_type | count |
 |---|---:|
@@ -965,6 +965,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -11596,6 +11597,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The runner performs exact algebraic and symbolic checks, with no external numerical comparator or fitted input, and its source matches the stated class-A substitution role. The load-bearing inference from N_SU(2)=2 to the 1/2 prefactor is a genuine algebraic specialization of the admitted Lüscher convention. The conditional blocker is ledger/status hygiene: the packet labels the X2 cited authority as decoration_under the Cl(3) split note, not as retained, retained_no_go, or retained_bounded.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited whether A1's qubit-per-site baseline plus the retained M_2(C) ≅ Cl(3,0) algebraic identification closes the U4 k=1 per-site Hilbert-space bridge.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T123137Z-55f06369-u4_closes_under_qubit_re-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the qubit-per-site baseline, the conditional in C1 is no longer required because the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.  _(class `F`)_
+- **chain closes:** True — The conclusion follows only by identifying A1's one-qubit-per-site reading with U4's single faithful Cl(3) module condition; the M_2(C) unique-irrep fact supplies standard algebraic vocabulary after that identification.
+- **rationale:** This is not audited_decoration under cl3_complexification_split: the row does not reduce to that single retained algebraic parent, because the physical k=1 bridge is supplied by the qubit-per-site axiom reading. The decisive move is the identity between “one qubit per site” and “single faithful complex Cl(3) irrep per site,” not an independent class A or class C derivation. No runner was provided, but the load-bearing step can be judged from the note text.
 - **auditor confidence:** high
 
 ### `unified_basin_freeze_note`

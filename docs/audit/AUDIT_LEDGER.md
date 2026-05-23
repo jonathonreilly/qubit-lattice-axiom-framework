@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 633 |
-| `audited_conditional` | 90 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1536 |
+| `unaudited` | 1535 |
 
 | claim_type | count |
 |---|---:|
@@ -777,6 +777,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
+| `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | F | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -4511,6 +4512,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** But Theorem 1 gives P(beta) = beta / 18 + O(beta^2), so exact equality forces Gamma = 1; since Gamma_cand = 1.554921974442116 != 1, P(beta) = P_1plaq(Gamma_cand beta) cannot be true.  _(class `A`)_
 - **chain closes:** True — The note compares the same normalized plaquette observable on both sides and derives identical beta=0 slopes 1/18 for the full Wilson plaquette and local one-plaquette block. An exact constant rescaling would change the local slope to Gamma/18, so equality near beta=0 forces Gamma=1, contradicting the stated Gamma_cand.
 - **rationale:** The retained claim is a no-go, not support for the remaining beta-dependent program. The obstruction closes by exact small-beta algebra: equal analytic expansions of the same plaquette observable require equal first derivatives at beta=0, and the candidate constant lift has the wrong derivative. The runner hard-codes the elementary Haar slope rather than independently deriving Haar integration, but the source derivation is explicit enough and the runner checks the decisive slope mismatch for the scoped no-go. Residual risk is limited to normalization conventions for the plaquette/action; within the conventions stated in the note, the conclusion follows.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_distinct_shell_theorem_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the stipulated Wilson 3 spatial + 1 derived-time local plaquette patch, the minimal distinct connected shell containing a marked plaquette is the six-face elementary cube boundary, giving numerator order beta^5 and vacuum shell order beta^6.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T145942Z-91432a7f-gauge_vacuum_plaquette_d-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner exhaustively checks all 5^4 = 625 one-per-edge distinct choices on the accepted local 3+1 patch and finds no four-action shell closes the boundary of p0, while an explicit five-action cube shell does.  _(class `C`)_
+- **chain closes:** False — The finite local enumeration itself closes on the supplied runner source and output. The broader claim remains conditional on the accepted Wilson 3+1 surface and admitted open realization/normalization gates, which are named in the note but not closed in the restricted packet.
+- **rationale:** The primary runner genuinely constructs local plaquettes, computes mod-2 edge boundaries, enumerates all 625 four-action candidates, and verifies an explicit cube shell, so the local distinct-shell geometry is a first-principles finite computation rather than a printed constant. However, the source note explicitly scopes the result to the accepted Wilson 3 spatial + 1 derived-time surface and admits open upstream gates for the larger lane. N3 of the negative/bounded-claim gate flags the accepted-surface and gate language as hidden/open boundary assumptions outside this packet, so clean retention is not available for the broader bounded theorem.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `G_BARE_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10`

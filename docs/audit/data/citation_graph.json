@@ -5042,7 +5042,7 @@
     },
     {
       "from": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-      "to": "strong_cp_theta_zero_note"
+      "to": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
     },
     {
       "from": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
@@ -23374,31 +23374,19 @@
     },
     {
       "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
-      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-    },
-    {
-      "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
-      "to": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
-    },
-    {
-      "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
-      "to": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
-    },
-    {
-      "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
       "to": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
     },
     {
       "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
-      "to": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
-    },
-    {
-      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
       "to": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
     },
     {
       "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
       "to": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+    },
+    {
+      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
       "from": "spectral_symmetry_note",
@@ -24118,15 +24106,15 @@
     },
     {
       "from": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
-      "to": "strong_cp_theta_zero_note"
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
       "from": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
-      "to": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17"
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
     },
     {
       "from": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
@@ -45306,10 +45294,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "strong_cp_theta_zero_note"
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c4c9b3d43643c30df7c6d883e6953b51bce64b3cf31533ae3a9fe03313ee96a5",
+      "note_hash": "3f7b2dd13504c4e47300d2bfda811f5a1efb3295e78efa26024ddaf4129e5357",
       "path": "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
       "title": "Operator-Theoretic Delta_T > 0 Support on the Finite-Lambda SU(3) Transfer Operator"
@@ -75872,13 +75860,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bd4e478ce5f60648eb395bec2e098dd36ce26abfb04eacf6ccacc275133f67e0",
+      "note_hash": "e7b816fb559a549d754fdd1e61def6925a8ef393a5d42c2d06c3f7dc26e15fe9",
       "path": "docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py",
       "title": "Finite-\u039b Lieb-Robinson Bound and Conditional Cluster-Decomposition Support"
@@ -75889,12 +75874,12 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
         "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "07e8aa2707a5177188f8f16638cb27462cfc39d4f25a26fa3f8b6d7f6be45560",
+      "note_hash": "fc2925ceb1d65f75716e0fc86e73551be002e3004440bc02f7cc4de3fe5d3f48",
       "path": "docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py",
       "title": "Spatial-Slab Transfer-Operator Positivity and \u0394_x > 0 from Wilson Axis-Permutation Symmetry (Real)"
@@ -76872,12 +76857,12 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "strong_cp_theta_zero_note",
-        "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "805934e31c8afc0f0cc06cc8de47dadb3323b7a7b6c4e7c3fb6371597bfed421",
+      "note_hash": "55984cccf450eddd4887e5115963b3c882f115dcb91ec7ca947be412aa004a3e",
       "path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
       "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface"
@@ -84332,8 +84317,8 @@
       "open_gate": 124,
       "positive_theorem": 609
     },
-    "edge_count": 9667,
-    "leaf_count": 763,
+    "edge_count": 9664,
+    "leaf_count": 764,
     "node_count": 2491,
     "root_count": 820,
     "runners_with_path": 2052

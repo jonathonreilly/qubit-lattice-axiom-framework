@@ -5,12 +5,12 @@
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py`](../scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py)
 **Cached output:** [`logs/runner-cache/frontier_strong_cp_operator_basis_real_2026_05_19.txt`](../logs/runner-cache/frontier_strong_cp_operator_basis_real_2026_05_19.txt)
-**Parent repair target:** [`docs/STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) (currently `audited_conditional`, high criticality, 124 transitive descendants).
+**Parent repair target:** `docs/STRONG_CP_THETA_ZERO_NOTE.md` (currently `audited_conditional`, high criticality, 124 transitive descendants; demoted to backtick — this note is the *repair candidate clearing* that parent row, so the citation is parent-context, not a load-bearing dep on this proof's chain).
 **Status authority:** independent audit lane only. The `bounded_theorem` label is a source-side claim-boundary declaration, not an audit verdict.
 
 ## §0. Honest framing — what this note adds, and what it does not
 
-The parent [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) was returned `audited_conditional` (2026-04-28 verdict, lines 361-385) because two load-bearing pieces in its retained-action-surface closure were treated as **action-class definitions** rather than **derived theorems**:
+The parent `STRONG_CP_THETA_ZERO_NOTE.md` (backticked — parent context being cleared by this note; not a load-bearing dep on this proof's chain) was returned `audited_conditional` (2026-04-28 verdict, lines 361-385) because two load-bearing pieces in its retained-action-surface closure were treated as **action-class definitions** rather than **derived theorems**:
 
 1. "No bare θ slot" / `θ_bare = 0` was taken from the action-class definition.
 2. The positive real quark-mass surface `arg det(M_u M_d) = 0` was selected by definition.
@@ -19,10 +19,10 @@ The 13 theorem passes and 30 retained-surface compute passes verified internal c
 
 This note supplies a narrower repair artifact:
 
-- **Theorem 2.4 (single-plaquette CP-odd Wilson-slot rejection).** Under the retained canonical Wilson / reflection-positive action surface (P1)-(P5), a nonzero imaginary single-plaquette coupling `iθ Σ_P Im Tr U_P` is not admissible because it makes the Boltzmann weight complex configuration-wise. This is a bounded operator-slot rejection, not a proof that all lattice discretizations of continuum `F̃F` are impossible.
-- **Theorem 3.4 (quark-mass orientation support).** Under retained Dirac anti-Hermiticity plus the retained scalar-mass action class, complex scalar phases are rejected by the determinant phase condition; pseudoscalar and mixed masses are outside the scalar-mass class. The positive sign `m > 0` remains the repo's standard Euclidean positive-mass convention, not a new derived axiom.
+- **Theorem 2.4 (single-plaquette CP-odd Wilson-slot rejection).** Under the bounded canonical Wilson / real-positive action surface (P1)-(P5), a nonzero imaginary single-plaquette coupling `iθ Σ_P Im Tr U_P` is not admissible because it makes the Boltzmann weight complex configuration-wise. This is a bounded operator-slot rejection, not a proof that all lattice discretizations of continuum `F̃F` are impossible.
+- **Theorem 3.4 (quark-mass orientation support).** Under the retained staggered-only determinant-positivity / anti-Hermiticity authority plus the explicit scalar-mass action-class boundary, complex scalar phases are rejected by the determinant phase condition; pseudoscalar and mixed masses are outside the scalar-mass class. The positive sign `m > 0` remains the repo's standard Euclidean positive-mass convention, not a new derived axiom.
 
-Composing those two bounded statements gives candidate support for `θ_eff = 0` on the retained Cl(3)/Z³ Wilson+staggered surface (§4). It does not by itself promote the parent note; the independent audit lane must decide whether this repair closes the parent dependency.
+Composing those two bounded statements gives candidate support for `θ_eff = 0` on the bounded Cl(3)/Z³ Wilson+staggered surface (§4). It does not by itself promote the parent note; the independent audit lane must decide whether this repair closes the parent dependency.
 
 What this note does NOT claim:
 
@@ -35,13 +35,13 @@ What this note does NOT claim:
 
 ## §1. Setting
 
-The retained framework primitives composed in this note are:
+The framework baseline and explicit bounded premises composed in this note are:
 
 - (A1) **Cl(3) local algebra** (axiom). Generators `{γ₁, γ₂, γ₃}` satisfy `γᵢ² = +I` and `{γᵢ, γⱼ} = 2δᵢⱼ I`. The complexification of Cl(3)⊗C carries an SU(3) action used as the gauge group below.
 - (A2) **Z³ spatial substrate** (axiom). Sites `x ∈ Z³` and oriented links `e = (x, μ)` for `μ ∈ {1, 2, 3}`. Lattice spacing `a > 0`.
-- (R1) **Canonical normalization β = 6** (retained on the axiom-first surface; see [`G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md`](G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md)).
-- (R2) **Staggered Dirac anti-Hermiticity `D† = −D`** (retained on the axiom-first surface; established in [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) §"Leg A").
-- (R3) **Reflection positivity** (retained on the axiom-first surface; see [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md), Case A staggered-only sector or Case B symmetric-canonical sector).
+- (R1) **Canonical normalization β = 6** (retained on the axiom-first surface via [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) — the retained primitive for canonical-normalization rigidity. The narrower 2026-05-17 algebraic redo `G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md` is sibling-context only and is demoted to backtick here; it is not load-bearing on this proof).
+- (R2) **Staggered Dirac anti-Hermiticity / determinant positivity** from [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md), used here only for the staggered-only `D† = -D`, `det(D+mI)>0` structural input. This note does not claim the full staggered+Wilson reflection-positivity parent is retained.
+- (R3) **Real-positive measure boundary** as an explicit bounded action-surface premise. The abstract norm-square ingredient is retained-bounded in [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md), but the full parent `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` remains unaudited and is not cited as retained-grade authority here.
 
 The SU(3) gauge group acts on each link by `U_e ∈ SU(3)` with link transformation `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`. The Wilson plaquette holonomy is `U_P = U_{e₁} U_{e₂} U_{e₃}^† U_{e₄}^†` for a spatial plaquette with oriented boundary links `e₁, e₂, e₃, e₄`.
 
@@ -49,7 +49,7 @@ The SU(3) gauge group acts on each link by `U_e ∈ SU(3)` with link transformat
 
 ## §2. Theorem 1 — Single-plaquette CP-odd Wilson-slot rejection
 
-The retained **canonical-normalization Wilson / reflection-positive gauge surface** used by this note is bounded by the following constraints:
+The bounded **canonical-normalization Wilson / real-positive gauge surface** used by this note is bounded by the following constraints:
 
 - **(P1) Plaquette-locality.** The action is a sum over spatial plaquettes `P` (and time-link insertions in the 3+1 extension) of operator-local terms `f_P(U_P)`. No multi-plaquette nonlocality.
 - **(P2) Gauge invariance.** Each summand `f_P(U_P)` is invariant under `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`.
@@ -138,16 +138,16 @@ on the retained real-positive measure surface.
 
 ---
 
-## §3. Theorem 2 — Quark-mass orientation from retained primitives
+## §3. Theorem 2 — Quark-mass orientation from bounded premises
 
-The retained staggered Dirac operator on the Cl(3)⊗Z³ surface satisfies `D† = −D` (R2, retained per [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) §"Leg A", line 49). The candidate scalar mass operator on the sublattice is one of:
+The staggered Dirac operator on the Cl(3)⊗Z³ surface satisfies `D† = −D` by the retained staggered-only determinant-positivity authority [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md). The candidate scalar mass operator on the sublattice is one of:
 
 - **(M-real)**     `M = m · I`,    `m ∈ R`.
 - **(M-complex)**  `M = m e^{iα} · I`,    `m > 0`, `α ∈ (0, 2π)`.
 - **(M-pseudoscalar)** `M = m₅ · ε`,    `m₅ ∈ R`, `ε(x) = (−1)^{Σ x}` the sublattice generator.
 - **(M-mixed)**    `M = m · I + i m₅ · ε`,    `m, m₅ ∈ R`.
 
-We will show that under (R2) + (R3) plus the retained scalar-mass action class, the only determinant-phase-safe scalar candidate is real. The sign `m > 0` is the retained positive-mass convention inside that real scalar family.
+We will show that under (R2) + (R3) plus the explicit scalar-mass action-class boundary, the only determinant-phase-safe scalar candidate is real. The sign `m > 0` is the repo's positive-mass convention inside that real scalar family.
 
 ### Lemma 3.1 (Two-layered admissibility: determinant phase + scalar-mass action class)
 
@@ -320,14 +320,15 @@ Cached log: [`logs/runner-cache/frontier_strong_cp_operator_basis_real_2026_05_1
 
 ---
 
-## References (retained framework primitives only — no proof-input citations)
+## References and explicit premises
 
-The following are **retained framework primitives** that this note composes:
+The following are the framework baseline, retained one-hop authorities, and
+explicit bounded premises that this note composes:
 
 - (A1) Cl(3) local algebra — repository axiom.
 - (A2) Z³ spatial substrate — repository axiom.
-- (R1) Canonical normalization β = 6: [`docs/G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md`](G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md).
-- (R2) Staggered Dirac anti-Hermiticity: [`docs/STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) §"Leg A".
-- (R3) Reflection positivity: [`docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md), Case A staggered-only sector or Case B symmetric-canonical Wilson sector.
+- (R1) Canonical normalization β = 6: [`docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) (retained primitive — load-bearing one-hop authority). Sibling `G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md` (backticked, sibling/context).
+- (R2) Staggered Dirac anti-Hermiticity / determinant positivity: [`docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md).
+- (R3) Real-positive measure boundary: explicit bounded premise, with the abstract norm-square support in [`docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md). Full parent `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` is not treated as retained-grade authority here.
 
 **No external citations** (Vafa-Witten, Leutwyler-Smilga, Osterwalder-Schrader, etc.) are used as proof inputs. The arguments above are bounded compositions of the listed retained primitives and retained action-surface constraints. External literature may be cited in downstream / paper-level write-ups but is not load-bearing here.

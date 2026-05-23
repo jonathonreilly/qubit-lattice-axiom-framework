@@ -5,8 +5,8 @@
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py`](../scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py)
 **Cached output:** [`logs/runner-cache/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.txt`](../logs/runner-cache/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.txt)
-**Parent repair target:** [`docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md), the spatial cluster-decomposition / Lieb-Robinson half identified in the parent's `notes_for_re_audit_if_any`.
-**Companion (Δ_T > 0 half):** [`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md) (landed source-side via salvage commit `8369973af`; audit status remains audit-lane authority).
+**Parent repair target:** `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` (backticked — parent this note supports; not a load-bearing dep), the spatial cluster-decomposition / Lieb-Robinson half identified in the parent's `notes_for_re_audit_if_any`.
+**Companion (Δ_T > 0 half):** `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (sibling 2026-05-19 note, landed source-side via salvage commit `8369973af`; audit status remains audit-lane authority — backticked as sibling-evidence, not load-bearing dep).
 **Status authority:** independent audit lane only. The `bounded_theorem` label above is a source-side claim-boundary declaration, not an audit verdict.
 
 ## §0. Honest framing
@@ -15,7 +15,7 @@ The parent row `axiom_first_cluster_decomposition_theorem_note_2026-04-29` is re
 
 > "cheapest repair is a retained proof of Δ_T > 0 PLUS a retained spatial gap-plus-Lieb-Robinson or spatial transfer-matrix cluster-decomposition theorem for the canonical Cl(3)⊗Z³ Hamiltonian."
 
-This note supplies a source-side **finite-Λ Lieb-Robinson theorem** and bounded support for the spatial cluster-decomposition repair path. The companion `Δ_T > 0` half is a separate source theorem note on the pure-Wilson surface via PR #1577 (salvage commit `8369973af`); the staggered+Wilson extension `T_full = T_W · T_F` remains conditional on the separately landed strong-CP/operator-basis surface, [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md).
+This note supplies a source-side **finite-Λ Lieb-Robinson theorem** and bounded support for the spatial cluster-decomposition repair path. The companion `Δ_T > 0` half is a separate source theorem note on the pure-Wilson surface via PR #1577 (salvage commit `8369973af`); the staggered+Wilson extension `T_full = T_W · T_F` remains conditional on the separately landed strong-CP/operator-basis surface, `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note, Leg A composition for T_full only; backticked as sibling-only — the LR proof here is bosonic-side and structurally independent of the staggered+Wilson extension).
 
 The proof in this note develops the Lieb-Robinson bound from **operator-theoretic primitives** — Duhamel iteration, locality of the local Hamiltonian, triangle inequality on nested commutators, path counting on the interaction graph, factorial control via Stirling. **It does not cite Lieb-Robinson 1972, Hastings 2004, or Nachtergaele-Sims as black-box proof inputs.** Those works are the *technique source* — the inline development here is elementary and self-contained.
 
@@ -295,7 +295,7 @@ promotion and not a repo-wide axiom.
    - For the pure-gauge Wilson surface `T_W`, the companion note's V6 and Theorem 5.1 argue `Δ_T > 0` via Perron-Jentzsch / Krein-Rutman on the trace-class positivity-improving compact operator. That note landed source-side in salvage commit `8369973af` (PR #1577 salvage).
    - The Hamiltonian-form gap `Δ` is related to `Δ_T` by `Δ = -log(λ_1 / λ_0)` where `λ_0, λ_1` are the top two transfer-matrix eigenvalues. Since `Δ_T > 0` is exactly the statement `λ_0 > λ_1 > 0` (with `λ_0` simple), this gives `Δ > 0` on the Hamiltonian side.
 
-3. For the staggered+Wilson `T_full = T_W · T_F` extension, the gap is conditional on the separately reviewed strong-CP/operator-basis input, [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md). If the needed positivity input for `T_F = det(D[U] + m I) > 0` is retained by the independent audit lane, the same Perron-Jentzsch route can be inspected for the full physical Cl(3) local algebra on the `Z^3` spatial substrate.
+3. For the staggered+Wilson `T_full = T_W · T_F` extension, the gap is conditional on the separately reviewed strong-CP/operator-basis input, `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note; backticked as sibling-only — Leg A composition is for T_full only, the LR proof here is bosonic-side). If the needed positivity input for `T_F = det(D[U] + m I) > 0` is retained by the independent audit lane, the same Perron-Jentzsch route can be inspected for the full physical Cl(3) local algebra on the `Z^3` spatial substrate.
 
 4. **The Lieb-Robinson half (Lemma C) itself does NOT depend on `Δ_T > 0`.** It is proved unconditionally from primitives in §4.
 
@@ -374,7 +374,7 @@ All eight verifications use only NumPy/SciPy and complete in under one minute on
 
 ## §11. Cross-references
 
-- Parent row: [`docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
-- Companion Δ_T > 0 note: [`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
-- Mass-gap bridge: [`docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
-- Strong-CP/operator-basis input (conditional for staggered+Wilson): [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+- Parent row: `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` (backticked — parent this note supports; not a load-bearing dep on this proof's chain).
+- Companion Δ_T > 0 note: `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (sibling-evidence; the LR bound proved here stands structurally without needing the companion's retained status — they compose downstream, but neither is a load-bearing dep of the other).
+- Mass-gap bridge (retained_bounded, load-bearing one-hop authority for the gap-input dep used in §5/§6): [`docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+- Strong-CP/operator-basis input (conditional for staggered+Wilson): `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note; backticked as sibling-only — Leg A composition for T_full only, the LR proof is bosonic-side).

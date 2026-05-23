@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 642 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 640 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
@@ -68,10 +68,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 430 |
+| `critical` | 433 |
 | `high` | 439 |
-| `medium` | 576 |
-| `leaf` | 932 |
+| `medium` | 574 |
+| `leaf` | 931 |
 
 - **Retained pending chain closure:** 7
 - **Citation cycles detected:** 17
@@ -90,27 +90,27 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 711 | 53.48 | `audited_conditional` | ~~audited_conditional~~ |
-| 2 | `minimal_axioms_2026-05-03` | meta | critical | 922 | 52.35 | `unaudited` | meta |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 894 | 47.81 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1080 | 43.58 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms_2026-04-11` | meta | critical | 926 | 39.86 | `unaudited` | meta |
+| 2 | `minimal_axioms_2026-05-03` | meta | critical | 921 | 52.35 | `unaudited` | meta |
+| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 891 | 47.80 | `unaudited` | unaudited |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1086 | 43.59 | `audited_clean` | **retained** |
+| 5 | `minimal_axioms_2026-04-11` | meta | critical | 923 | 39.85 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 176 | 38.97 | `unaudited` | unaudited |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 934 | 38.37 | `unaudited` | unaudited |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 832 | 38.20 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 37.85 | `unaudited` | unaudited |
 | 10 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 214 | 34.75 | `unaudited` | unaudited |
 | 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 944 | 34.38 | `audited_conditional` | ~~audited_conditional~~ |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1060 | 33.55 | `audited_clean` | **retained** |
-| 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1016 | 33.49 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1066 | 33.56 | `audited_clean` | **retained** |
+| 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1022 | 33.50 | `audited_clean` | **retained** |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 555 | 32.12 | `unaudited` | unaudited |
-| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 996 | 31.46 | `unaudited` | unaudited |
+| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 993 | 31.46 | `unaudited` | unaudited |
 | 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 553 | 31.11 | `unaudited` | unaudited |
-| 17 | `three_generation_structure_note` | bounded_theorem | critical | 680 | 30.41 | `unaudited` | unaudited |
-| 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1009 | 29.98 | `unaudited` | unaudited |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 677 | 30.41 | `unaudited` | unaudited |
+| 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1006 | 29.98 | `unaudited` | unaudited |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 883 | 29.79 | `audited_clean` | **retained** |
 | 20 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 218 | 29.77 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 185 | 29.04 | `unaudited` | unaudited |
-| 22 | `minimal_axioms` | meta | critical | 1034 | 28.52 | `unaudited` | meta |
+| 22 | `minimal_axioms` | meta | critical | 1031 | 28.51 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | bounded_theorem | critical | 932 | 28.37 | `unaudited` | unaudited |
 | 24 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 595 | 27.72 | `unaudited` | unaudited |
 | 25 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 594 | 27.72 | `unaudited` | unaudited |
@@ -121,6 +121,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -573,7 +575,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -653,7 +654,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_layered_loop_threshold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_newton_reproduction_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -9176,19 +9176,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
 - **auditor confidence:** high
 
-### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional weighted-L2 norm-square and positive sesquilinear-form identity on a finite or compact measured space with measure-preserving involution, Θ-invariant real half-action, and reflection-Hermitian observable.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-019e14c0-c068-77f1-be6a-bca69388776a`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** By Θ-invariance of S_+ and reflection-Hermiticity of F, the reflected integrand becomes ψ²(x)ψ²(x) overline{F(x)}F(x)=|ψ²(x)F(x)|².  _(class `A`)_
-- **chain closes:** True — The scoped claim closes by pointwise substitution of the explicit symmetry hypotheses, reducing the reflected expectation to a non-negative L2 norm-square. No Wilson plaquette, fermion determinant, physical Hilbert-space bridge, or external dependency is used or needed for this bounded theorem.
-- **rationale:** The theorem is intentionally narrow and conditional, and its load-bearing identity is an elementary algebraic measure-theoretic reduction under the stated assumptions. The sesquilinear form and null quotient follow from the standard positive semidefinite Hermitian form G(F,F')=<ψ²F,ψ²F'>. The runner only supplies finite-model A-class confirmation, but the proof itself closes inside the packet.
-- **auditor confidence:** high
-
 ### `replay_environment_note`
 
 - **Note:** [`REPLAY_ENVIRONMENT_NOTE.md`](../../docs/REPLAY_ENVIRONMENT_NOTE.md)
@@ -10661,19 +10648,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The computed 2x2x2 blocked-centroid acceleration follows an approximately inverse-square distance law on the audited d=3..6 surface, with per-side exponents near -2 and global exponent -1.982.  _(class `C`)_
 - **chain closes:** True — The included runner builds the stated staggered Hamiltonian, potential, free and gravitating evolutions, raw and blocked centroids, and distance-law fits; its cached output matches the note. The closure is bounded to the stated external source, open boundaries, calibration window, and blocked observable.
 - **rationale:** The runner is not a print-only or hard-coded numerical-match artifact: it computes the finite staggered-lattice evolution and fitted blocked-trajectory exponent from the stated operators and parameters. The note's load-bearing numerical claims match the completed runner output. The result is clean only as a bounded finite-surface computation; it does not establish self-consistent two-body closure, both-masses scaling, irregular-graph transfer, or a general staggered trajectory theorem.
-- **auditor confidence:** high
-
-### `staggered_only_det_positivity_case_a_note_2026-05-17`
-
-- **Note:** [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** The staggered-only determinant det(M_KS + mI) is strictly positive for m > 0 on a balanced epsilon-graded lattice, assuming the stated anti-Hermiticity, epsilon-anticommutation/off-diagonal block form, and SU(3) link background.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-185505-41cdea85-staggered_only_det_posit-019`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** After SVD block reduction, det(M_KS + mI) = product_i (m^2 + sigma_i^2), so every factor is strictly positive for m > 0.  _(class `A`)_
-- **chain closes:** True — Given the stated block form M_KS = [[0,K],[-K^†,0]] and balanced epsilon grading, the SVD reduction and determinant sign cancellation are standard finite-dimensional linear algebra. No Wilson-sector bridge or external numerical input is needed.
-- **rationale:** The proof is an algebraic closure over the explicit structural inputs: anti-Hermiticity, epsilon off-diagonality, balanced sublattices, and positive scalar mass. The load-bearing determinant identity follows from SVD and the det(epsilon) sign reconciliation, not from a fitted value, comparator, or imported bridge theorem. The runner genuinely constructs staggered SU(3) matrices and numerically checks the same identities; it does not hard-code the target determinant beyond computing the formula being verified.
 - **auditor confidence:** high
 
 ### `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16`

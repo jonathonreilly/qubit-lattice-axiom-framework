@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 134 |
-| **retained_no_go** | 150 |
+| **retained_no_go** | 151 |
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1295 |
+| unaudited | 1294 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 637 |
+| `audited_clean` | 638 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1520 |
+| `unaudited` | 1519 |
 
 | claim_type | count |
 |---|---:|
@@ -752,6 +752,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `work_history.yt.yt_unbounded_program_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | B | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -12444,6 +12445,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **rationale:** The exact value F_adj=8/9 follows from the cited Fierz/channel-count authority, and the displayed K_EW(kappa_EW) formula is an algebraic specialization at N_c=3. However, the physical readout coefficient kappa_EW is explicitly not derived by the packet, and the cited no-go authority states that kappa_EW=0 is an additional matching premise. The Monte Carlo runner checks R_conn against 8/9 but does not compute the disconnected-current readout coefficient, so it cannot promote the conditional lane to an unconditional 9/8 theorem.
 - **open / conditional deps cited:**
   - `EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+
+### `yt_ew_m_residual_note_2026-05-02`
+
+- **Note:** [`YT_EW_M_RESIDUAL_NOTE_2026-05-02.md`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** CMT factorization U -> u_0 V, treated as an overall scalar factor on the propagator, scales the singlet and adjoint Fierz channels by the same u_0^2 factor and therefore cannot by itself select the adjoint channel.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T152710Z-1b3ef905-yt_ew_m_residual_note_20-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under scalar CMT factorization G_full = u_0 * G_V, both Fierz channels scale uniformly: S(G_full) = u_0^2 S(G_V) and C(G_full) = u_0^2 C(G_V).  _(class `A`)_
+- **chain closes:** True — The scoped no-go follows algebraically from the supplied Fierz definitions of S and C: both are quadratic in G, so multiplying G by u_0 multiplies both by u_0^2. The missing EW Wilson-line current construction remains open only for the broader matching rule M, not for this narrowed obstruction.
+- **rationale:** The load-bearing step is a direct algebraic consequence of the channel definitions in the cited authority, whose effective status is retained-grade decoration. The runner source genuinely computes the relevant identity in Test 5 rather than hard-coding the contested conclusion. No-Go Discipline does not defeat the narrowed claim: possible escape routes through current construction, renormalization convention, connected-subtraction framing, V-fluctuation dynamics, or non-scalar improvement would address the broader M residual, not the tested scalar CMT factorization statement.
 - **auditor confidence:** high
 
 ### `yt_pr230_consolidated_status_note_2026-05-22`

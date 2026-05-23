@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 192 |
 | high | `unaudited` | 171 |
-| medium | `unaudited` | 108 |
+| medium | `unaudited` | 107 |
 | critical | `audited_conditional` | 15 |
 | high | `audited_conditional` | 5 |
 | high | `audited_numerical_match` | 3 |
@@ -29,7 +29,7 @@ publication tables phrase it.
 | critical | `audited_renaming` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 503
+**Total non-retained-grade rows in publication tables:** 502
 
 ## Per-row breakdown
 
@@ -532,7 +532,6 @@ publication tables phrase it.
 | medium | `work_history.ckm.jarlskog_phase_bound_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_axiom_first_microscopic_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_bridge_variational_selector_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `yt_ew_m_residual_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_exact_hessian_selector_uniqueness_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_exact_interacting_bridge_transport_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_gauge_crossover_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

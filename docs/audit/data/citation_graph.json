@@ -77124,7 +77124,7 @@
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5da36d7e77bfaddf8a3f65f33483decdf3a4e886b10bc6e3b21414e89ee73001",
+      "note_hash": "896517c5d4fb5be17c4d6751891e10f44c695a3f4b3b0ebfec92953611a78461",
       "path": "docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py",
       "title": "SU(2)_L 1-Loop \u03b2-Function Coefficient Narrow Theorem"

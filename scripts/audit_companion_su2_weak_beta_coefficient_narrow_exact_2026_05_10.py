@@ -212,6 +212,29 @@ def main() -> int:
         detail="22/6 + (-24/6) + (-1/6) form: (44 - 24 - 1)/6 = 19/6",
     )
 
+    # (C2) Structural ratio b_2 : (-1/6) closed form.
+    # The auditor's 2026-05-22 verdict flagged the prior C2 formula
+    # (N_color (N_color + 1) - 11 N_pair) as numerically wrong at
+    # framework counts (gives -10 instead of the correct -19). The
+    # corrected identity is -6 * b_2 = 2 * (N_color + 1) * N_gen
+    # - 22 * N_pair + 1, which is the algebraic consequence of (P1)
+    # multiplied through by -6.
+    c2_lhs_sym = -6 * b_2_psv
+    c2_rhs_sym = 2 * (N_color + 1) * N_gen - 22 * N_pair + 1
+    c2_diff_sym = simplify(c2_lhs_sym - c2_rhs_sym)
+    check(
+        "(C2) symbolic identity: -6 * b_2 = 2 (N_color + 1) N_gen - 22 N_pair + 1",
+        c2_diff_sym == 0,
+        detail=f"sympy.simplify(-6*b_2 - (2(N_c+1)N_g - 22 N_p + 1)) = {c2_diff_sym}",
+    )
+    c2_lhs_fw = simplify(c2_lhs_sym.subs(framework))
+    c2_rhs_fw = simplify(c2_rhs_sym.subs(framework))
+    check(
+        "(C2) framework instance: ratio b_2 : (-1/6) = -19 at (2, 3, 3)",
+        c2_lhs_fw == Rational(-19) and c2_rhs_fw == Rational(-19),
+        detail=f"-6 * b_2 = {c2_lhs_fw}; 2(N_c+1)N_g - 22 N_p + 1 = {c2_rhs_fw}",
+    )
+
     # (C3) Matter sector alone at framework counts is -4.
     matter_alone = simplify(matter_contrib_sym.subs(framework))
     check(

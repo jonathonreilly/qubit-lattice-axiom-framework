@@ -204,8 +204,18 @@ contributions individually with their framework values. ∎
 ```text
 (C1) Per-sector decomposition: 22/3 + (-4) + (-1/6) = 19/6,
      verifiable by exact Rational arithmetic.
-(C2) The structural ratio b_2 : (-1/6) is N_color (N_color + 1) - 11 N_pair
-     for the matter+Higgs/Higgs split at unit Higgs scalar contribution.
+(C2) The structural ratio b_2 : (-1/6) (i.e., total b_2 over the Higgs
+     scalar contribution -1/6) has the closed form
+        -6 * b_2 = 2 * (N_color + 1) * N_gen - 22 * N_pair + 1,
+     obtained by multiplying b_2 = (11/3) N_pair - (1/3) (N_color + 1) N_gen
+     - 1/6 through by -6. At framework counts
+     (N_pair, N_color, N_gen) = (2, 3, 3) this evaluates to -19,
+     consistent with b_2 = 19/6 and 19/6 : (-1/6) = -19.
+     (2026-05-22 audit verdict repair: the earlier
+     N_color (N_color + 1) - 11 N_pair form was numerically incorrect
+     at framework counts; the corrected identity above is the
+     algebraic consequence of (P1'). Verified by the audit-companion
+     runner.)
 (C3) The matter-sector contribution alone evaluates to
      -(N_color + 1) * N_gen / 3 = -4 at framework counts.
 (C4) At the symmetric point N_color = N_gen, the closed form reduces to

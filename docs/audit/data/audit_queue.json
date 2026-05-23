@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 474,
+    "critical": 473,
     "high": 174,
     "leaf": 318,
     "medium": 325
@@ -3896,30 +3896,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Given one qubit/Cl(3) faithful complex irrep V ~= C^2 at each finite ordered site and H_Lambda = V^{otimes N}, the Jordan-Wigner operators satisfy finite-mode CAR, nilpotency, full CAR-algebra generation, and the stated number-operator/vacuum facts.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.514,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
-      "transitive_descendants": 1033
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -40267,6 +40243,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 3,
-  "total_pending": 1291
+  "ready_count": 2,
+  "total_pending": 1290
 }

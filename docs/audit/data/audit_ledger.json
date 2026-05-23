@@ -232262,9 +232262,9 @@
       "verdict_rationale": "The cited authorities are retained-grade: one retained and one retained_bounded. The runner source performs concrete symbolic checks of Pauli carrier dimension, Grassmann nilpotency, determinant-by-permutation equality, finite bosonic truncation growth, and a bosonic-vs-Grassmann trace distinction; it does not merely print constants or import an external comparator. The theorem is clean only in its narrow abstract two-candidate scope, not as a closure of the physical staggered-Dirac substep."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-22T22:23:38.230984+00:00",
+      "audit_date": "2026-05-23T01:58:24.536269+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_claim_scope": {
           "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
         },
@@ -232277,26 +232277,26 @@
         "deps": [
           "cl3_complexification_split_narrow_theorem_note_2026-05-10"
         ],
-        "load_bearing_score": 2.085,
+        "load_bearing_score": 10.514,
         "runner_hash": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3",
-        "transitive_descendants": 2
+        "transitive_descendants": 1033
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222313Z-5247d81f-staggered_dirac_substep1-01",
-      "auditor_confidence": "high",
+      "audit_status": "audited_decoration",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T015824Z-staggered_dirac_substep1_jw_bridge_narro-majority",
+      "auditor_confidence": "judicial_panel_majority",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited Cl(3) parent is retained and supplies the two-dimensional Pauli carrier; the added qubit k=1 ratification removes the prior physical per-site multiplicity blocker for this scoped bridge. The remaining result is standard finite Pauli tensor algebra with a fixed total ordering.",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The mathematical chain closes within the stated abstract tensor-product scope, and the runner source genuinely performs exact symbolic matrix checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream input. Under the stated tie-breaker, zero external comparator checks plus reduction to a single retained parent claim and standard mathematics requires audited_decoration rather than audited_clean. | The mathematical chain closes: the cited Cl(3) authority is retained and supplies the two-dimensional Pauli carrier, and the rest is exact finite-dimensional Pauli/Jordan-Wigner algebra. The runner source genuinely computes symbolic matrix identities and reports PASS=44 FAIL=0, all class A. Under the explicit tie-breaker, zero external comparator checks plus one retained parent claim and standard algebra classifies this as audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract scope: the retained upstream note supplies the two-dimensional Pauli carrier, and the rest is finite Pauli-tensor/Jordan-Wigner algebra. The load-bearing step is class A, the runner source genuinely performs exact symbolic checks, and the packet reports PASS=44 FAIL=0. Under the explicit clean-vs-decoration tie-breaker, zero D checks plus one retained parent claim plus standard mathematics classifies this as audited_decoration, not audited_clean. | The mathematical chain closes within the note's abstract scope: the retained upstream authority supplies the two-dimensional Pauli carrier, and the Jordan-Wigner CAR statements are finite tensor-product algebra. The runner source performs exact symbolic matrix checks rather than printing constants, and all checks are class A with no external comparator. Under the stated tie-breaker, a zero-D, pure class-A chain reducing to one retained parent plus standard finite-dimensional mathematics is audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract tensor-product scope, and the runner source performs real exact symbolic checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream Cl(3) carrier. Under the binding tie-breaker, zero D checks plus a chain reducing to one retained parent claim and standard mathematics is classified as audited_decoration, not audited_clean.",
       "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Given one qubit/Cl(3) faithful complex irrep V ~= C^2 at each finite ordered site and H_Lambda = V^{otimes N}, the Jordan-Wigner operators satisfy finite-mode CAR, nilpotency, full CAR-algebra generation, and the stated number-operator/vacuum facts.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Given the retained Cl(3) dim_C V = 2 Pauli carrier at each finite ordered site, the abstract Jordan-Wigner operators on H_Lambda = V^{otimes N} satisfy the stated finite-mode CAR, nilpotency, CAR-algebra dimension, and number-operator facts.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T01:44:27.956905+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-23T01:58:24.536269+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -232311,27 +232311,56 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-23T01:54:36.606951+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T015414Z-8eeaae13-staggered_dirac_substep1-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the finite-dimensional abstract Pauli-tensor Jordan-Wigner construction on H_Lambda = V^{tensor N}, conditional on the retained Cl(3) dim_C V = 2 readout, proving (J1)-(J4) within that abstract setting.",
+          "claim_type": "decoration",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_decoration"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-23T01:58:24.536269+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T015824Z-staggered_dirac_substep1_jw_bridge_narro-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained Cl(3) dim_C V = 2 Pauli carrier at each finite ordered site, the abstract Jordan-Wigner operators on H_Lambda = V^{otimes N} satisfy the stated finite-mode CAR, nilpotency, CAR-algebra dimension, and number-operator facts.",
+          "claim_type": "decoration",
+          "decoration_parent_claim_id": "CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10",
+          "first_auditor_error": "Did not apply the audited_clean vs audited_decoration tie-breaker for a purely class-A chain over one retained upstream parent and standard mathematics.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The mathematical chain closes within the stated abstract tensor-product scope, and the runner source genuinely performs exact symbolic matrix checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream input. Under the stated tie-breaker, zero external comparator checks plus reduction to a single retained parent claim and standard mathematics requires audited_decoration rather than audited_clean. | The mathematical chain closes: the cited Cl(3) authority is retained and supplies the two-dimensional Pauli carrier, and the rest is exact finite-dimensional Pauli/Jordan-Wigner algebra. The runner source genuinely computes symbolic matrix identities and reports PASS=44 FAIL=0, all class A. Under the explicit tie-breaker, zero external comparator checks plus one retained parent claim and standard algebra classifies this as audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract scope: the retained upstream note supplies the two-dimensional Pauli carrier, and the rest is finite Pauli-tensor/Jordan-Wigner algebra. The load-bearing step is class A, the runner source genuinely performs exact symbolic checks, and the packet reports PASS=44 FAIL=0. Under the explicit clean-vs-decoration tie-breaker, zero D checks plus one retained parent claim plus standard mathematics classifies this as audited_decoration, not audited_clean. | The mathematical chain closes within the note's abstract scope: the retained upstream authority supplies the two-dimensional Pauli carrier, and the Jordan-Wigner CAR statements are finite tensor-product algebra. The runner source performs exact symbolic matrix checks rather than printing constants, and all checks are class A with no external comparator. Under the stated tie-breaker, a zero-D, pure class-A chain reducing to one retained parent plus standard finite-dimensional mathematics is audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract tensor-product scope, and the runner source performs real exact symbolic checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream Cl(3) carrier. Under the binding tie-breaker, zero D checks plus a chain reducing to one retained parent claim and standard mathematics is classified as audited_decoration, not audited_clean.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_decoration"
+        }
       },
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10",
       "deps": [
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status": "retained_pending_chain",
+      "effective_status_reason": "decoration_waiting_on:CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 10.514,
-      "load_bearing_step": "For x != y, the factor sigma_3^(x) in the later JW string anticommutes with the same-site ladder sigma_+^(x), producing c_x c_y = - c_y c_x and likewise for c_y^dag.",
+      "load_bearing_step": "For pi(x) < pi(y), the factorization S_y = S_x sigma_3^(x) T_xy and the on-site anticommutation sigma_+^(x) sigma_3^(x) = -sigma_3^(x) sigma_+^(x) produce the cross-site JW sign cancellation.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "bdddd01505c68e93c8b89c1ae18f6aa39d3a9ee3c0b17af64fad23fdc4895c30",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-cli-gpt-5.5-per-site-k1-20260522T222313Z-5247d81f-staggered_dirac_substep1-01, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -232447,7 +232476,7 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem",
       "transitive_descendants": 1033,
-      "verdict_rationale": "The load-bearing claim is an exact algebraic Jordan-Wigner sign calculation on finite tensor products, and the runner source genuinely instantiates the Pauli and JW operators rather than printing constants. No external comparator, fitted value, or open upstream dependency is used for the audited scope. Under the allowed qubit-per-site k=1 ratification, the former U4 multiplicity admission is no longer a blocker for this bounded bridge, while downstream staggered-Dirac dynamics remain outside scope."
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The mathematical chain closes within the stated abstract tensor-product scope, and the runner source genuinely performs exact symbolic matrix checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream input. Under the stated tie-breaker, zero external comparator checks plus reduction to a single retained parent claim and standard mathematics requires audited_decoration rather than audited_clean. | The mathematical chain closes: the cited Cl(3) authority is retained and supplies the two-dimensional Pauli carrier, and the rest is exact finite-dimensional Pauli/Jordan-Wigner algebra. The runner source genuinely computes symbolic matrix identities and reports PASS=44 FAIL=0, all class A. Under the explicit tie-breaker, zero external comparator checks plus one retained parent claim and standard algebra classifies this as audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract scope: the retained upstream note supplies the two-dimensional Pauli carrier, and the rest is finite Pauli-tensor/Jordan-Wigner algebra. The load-bearing step is class A, the runner source genuinely performs exact symbolic checks, and the packet reports PASS=44 FAIL=0. Under the explicit clean-vs-decoration tie-breaker, zero D checks plus one retained parent claim plus standard mathematics classifies this as audited_decoration, not audited_clean. | The mathematical chain closes within the note's abstract scope: the retained upstream authority supplies the two-dimensional Pauli carrier, and the Jordan-Wigner CAR statements are finite tensor-product algebra. The runner source performs exact symbolic matrix checks rather than printing constants, and all checks are class A with no external comparator. Under the stated tie-breaker, a zero-D, pure class-A chain reducing to one retained parent plus standard finite-dimensional mathematics is audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract tensor-product scope, and the runner source performs real exact symbolic checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream Cl(3) carrier. Under the binding tie-breaker, zero D checks plus a chain reducing to one retained parent claim and standard mathematics is classified as audited_decoration, not audited_clean."
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
       "audit_date": "2026-05-22T22:21:12.803030+00:00",

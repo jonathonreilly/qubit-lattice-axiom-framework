@@ -1,53 +1,6 @@
 {
   "live": [
     {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 10,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_order": 1,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
       "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "unaudited",
@@ -85,7 +38,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_order": 2,
+      "queue_order": 1,
       "ready": false,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
@@ -133,7 +86,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 3,
+      "queue_order": 2,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:lsp_projective_direct_luders",
       "runner_path": null,
@@ -142,9 +95,9 @@
       "state": "live"
     }
   ],
-  "live_count": 3,
+  "live_count": 2,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 1,
+  "ready_count": 0,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "audited_clean",
@@ -608,7 +561,7 @@
         "prior audit rationales",
         "publication-facing retained summaries"
       ],
-      "generated_order": 11,
+      "generated_order": 10,
       "group_id": "su3_toolkit_algebra",
       "group_order": 4,
       "helper_runner_paths": [],
@@ -1069,6 +1022,21 @@
       "expected_current_effective_status": "retained_bounded",
       "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
       "retired_reason": "bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim.",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "retired"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
+      "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "retired_reason": "bounded_terminal_after_dispatch_audit; current source scope is a finite projection lemma and does not close the kappa_EW matching-rule identification. Positive-theorem promotion remains conditional on a future source repair that closes that identification.",
       "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "retired"

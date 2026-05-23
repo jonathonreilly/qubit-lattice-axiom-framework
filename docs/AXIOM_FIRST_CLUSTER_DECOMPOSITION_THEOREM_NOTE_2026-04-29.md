@@ -72,6 +72,37 @@ and a **no-gap counter-example** (E4) that confirms the gap is
 genuinely required (without it, connected correlators do not decay
 at all). All four exhibits PASS.
 
+## 2026-05-22 Dependency Wiring
+
+The unconditional L2 + spatial cluster-decomposition closure path requires
+separate retained-grade support for the temporal gap input, the
+staggered+Wilson transfer-operator extension, and at least one spatial
+cluster-decomposition branch.  The finite-Lambda temporal-gap support note is
+wired here as a one-hop candidate dependency so the audit graph can
+re-evaluate this parent after that row is audited:
+
+1. [`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
+   — finite-Lambda temporal transfer-gap support for `Delta_T > 0`.
+
+Plain-text pointers, not graph dependencies: the following source notes are
+relevant to the broader closure path, but each already has a direct or
+transitive path back to this parent.  Linking them here would create
+parent-child citation cycles, so they must stay out of this note's
+load-bearing markdown-link dependencies unless a future source split removes
+those reverse edges:
+
+- `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+  — operator-basis and mass-orientation repair relevant to the
+  staggered+Wilson `T_full` extension.
+- `SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md`
+  — spatial slab transfer-operator branch.
+- `SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md`
+  — Lieb-Robinson composition branch.
+
+This wiring is editorial audit-graph hygiene.  It does not promote this
+parent row, does not assert that any dependency is retained, and does not
+change the conditional/open boundary stated above.
+
 ## Finite-Lambda transfer-gap support update (2026-05-19)
 
 [`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)

@@ -41535,7 +41535,7 @@
         "strong_cp_theta_zero_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23a5a1b2174cd60030cef5245262c414bcd248b94178fca51aec424383127060",
+      "note_hash": "012eeae6b1ef8be77715d167a073394de9989430c820bc544b639715b01e395e",
       "path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3"

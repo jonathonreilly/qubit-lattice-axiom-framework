@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 140 |
-| **retained_no_go** | 153 |
+| **retained_no_go** | 154 |
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1252 |
+| unaudited | 1251 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 655 |
+| `audited_clean` | 656 |
 | `audited_conditional` | 128 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1478 |
+| `unaudited` | 1477 |
 
 | claim_type | count |
 |---|---:|
@@ -772,6 +772,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13169,6 +13170,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **load-bearing step:** A nonzero color-singlet one-Higgs Yukawa insertion has color matrix proportional to I_color, whose Hilbert-Schmidt singlet weight is 1, while kappa_Y = 0 under the direct projection diagnostic would require a nonzero traceless color insertion.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from SU(N) color-singlet invariance, trace algebra, and the retained kappa-family target in the cited color-projection correction. The note keeps alternative matching theorems and nonstandard scalar insertions out of scope rather than claiming a global impossibility theorem.
 - **rationale:** The load-bearing step is ordinary finite-dimensional color algebra, not a definition, numerical fit, or external comparator. The cited upstream authority is retained_no_go and supplies the conditional kappa_Y family that this note targets; the current note does not import the open kappa_Y selector as a premise. The restricted packet satisfies the no-go gate: it enumerates six routes, collapses independent walls, scans hidden assumptions, matches the cited residual, narrows rhetoric, leaves partial closure paths open, gives a steelman, and uses same-packet cross-cycle evidence.
+- **auditor confidence:** high
+
+### `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23`
+
+- **Note:** [`YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md`](../../docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Strict single-pole C_ss/C_sH/C_HH Gram-purity rows can certify common-pole support but cannot by themselves determine absolute scalar/source normalization or select kappa_Y = 0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T204108Z-ca660075-yt_source_higgs_pole_row-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under independent source/Higgs rescalings s -> mu s and H -> lambda H, Gram purity and effective mass are unchanged while absolute residues scale, so lambda^2 = 9/8 can absorb the K_Y(1)/K_Y(0) ambiguity.  _(class `A`)_
+- **chain closes:** True — The rescaling algebra gives an explicit invariance witness: pole mass, Gram determinant, and normalized rank-one residue ratios are unchanged while the absolute normalization moves. Since the retained K_Y family differs between kappa_Y = 0 and kappa_Y = 1 by a squared-normalization factor 9/8, pole-row purity alone cannot distinguish them.
+- **rationale:** The load-bearing step is elementary algebra over the single-pole row and the retained K_Y(kappa_Y) family, with no numerical comparator or fitted input. The runner source genuinely checks the Gram determinant, mass-ratio invariance, normalized-residue cancellation, and 9/8 absorption using exact rational arithmetic. The No-Go Discipline gate passes: the packet enumerates five attack routes, keeps the normalization wall narrow, and leaves canonical O_H/LSZ or physical-response routes explicitly open.
 - **auditor confidence:** high
 
 ### `yt_ssb_matching_gap_analysis_note_2026-04-18`

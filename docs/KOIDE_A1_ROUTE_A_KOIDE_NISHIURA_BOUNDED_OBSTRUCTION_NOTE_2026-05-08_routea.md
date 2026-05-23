@@ -184,7 +184,7 @@ the same circular-derivation trap.
 
 - NO PDG observed mass values used as derivation input (anchor-only at
   end, clearly marked per
-  [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)).
+  `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`).
 - NO PDG-extracted Q value (the empirical Q ≈ 2/3 to high precision is
   what makes Route A interesting but cannot be loaded as a derivation
   input).

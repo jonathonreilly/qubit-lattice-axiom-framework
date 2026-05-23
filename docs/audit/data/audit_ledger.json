@@ -199667,24 +199667,44 @@
       "verdict_rationale": null
     },
     "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T15:31:54.646113+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T153133Z-b5197611-powers_uhf_tracial_uniqu-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom premise supplies the per-site M_2(C) algebra and Z^3 lattice, and the note's finite-region uniqueness plus compatibility, density, and state-continuity argument proves uniqueness on the inductive-limit algebra. No open identification is needed for the unique-trace theorem itself.",
       "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "The qubit-lattice quasi-local C*-algebra \u2297_{x\u2208Z^3} M_2(C), formed as the norm closure of finite local tensor products, has a unique tracial state whose finite-region restrictions are normalized traces.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T15:31:54.646113+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -199692,19 +199712,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Any tracial state on A restricts to the normalized trace on every finite-region matrix algebra, so it agrees with \u03c4\u221e on the dense local subalgebra and norm-continuity extends the equality to all of A.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4d8d4f1c7702ee4e0992508f8aec376d96497fa42378a5e49cb57612b68f484c",
       "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the implicit use of the standard inductive-limit construction and norm-density of the local algebra, since no runner artifact is provided.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -199812,7 +199832,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -199823,7 +199843,7 @@
       "runner_path": null,
       "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a standard algebraic/operator-algebra closure: restrictions of an arbitrary tracial state to each finite matrix algebra are uniquely normalized traces, and equality on the dense local union extends by boundedness of states. The only upstream authority is explicitly flagged as an accepted axiom premise, so it does not trigger the non-retained downgrade. The later identification with \u03c1_ref is described as a connection and does not bear on the audited unique-tracial-state theorem."
     },
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
       "audit_date": "2026-05-23T12:38:34.132956+00:00",

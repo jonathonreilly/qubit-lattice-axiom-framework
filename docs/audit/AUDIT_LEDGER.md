@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 134 |
+| **retained** | 135 |
 | **retained_no_go** | 151 |
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1292 |
+| unaudited | 1291 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 638 |
+| `audited_clean` | 639 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1517 |
+| `unaudited` | 1516 |
 
 | claim_type | count |
 |---|---:|
@@ -552,6 +552,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -8884,6 +8885,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The qubit-lattice quasi-local C*-algebra ⊗_{x∈Z^3} M_2(C), formed as the norm closure of finite local tensor products, has a unique tracial state whose finite-region restrictions are normalized traces.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T153133Z-b5197611-powers_uhf_tracial_uniqu-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Any tracial state on A restricts to the normalized trace on every finite-region matrix algebra, so it agrees with τ∞ on the dense local subalgebra and norm-continuity extends the equality to all of A.  _(class `A`)_
+- **chain closes:** True — The cited axiom premise supplies the per-site M_2(C) algebra and Z^3 lattice, and the note's finite-region uniqueness plus compatibility, density, and state-continuity argument proves uniqueness on the inductive-limit algebra. No open identification is needed for the unique-trace theorem itself.
+- **rationale:** The load-bearing step is a standard algebraic/operator-algebra closure: restrictions of an arbitrary tracial state to each finite matrix algebra are uniquely normalized traces, and equality on the dense local union extends by boundedness of states. The only upstream authority is explicitly flagged as an accepted axiom premise, so it does not trigger the non-retained downgrade. The later identification with ρ_ref is described as a connection and does not bear on the audited unique-tracial-state theorem.
 - **auditor confidence:** high
 
 ### `pre_record_reference_state_tracial_derivation_note_2026-05-20`

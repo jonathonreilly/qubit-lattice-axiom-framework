@@ -19985,10 +19985,6 @@
       "to": "native_gauge_closure_note"
     },
     {
-      "from": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "to": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
-    },
-    {
       "from": "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
       "to": "plaquette_4d_mc_support_note_2026-05-04"
     },
@@ -65454,11 +65450,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "34a6e72ce86f09a118a43733f86479fd7df0276edc628686d5ddb41f63479073",
+      "note_hash": "559ee96609afc90f5f2742348ad17533a620b846cd60316b132aeea98ba1ae6e",
       "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_planck_target3_clifford_phase_bridge.py",
       "title": "Planck Target 3 Clifford Phase Bridge Theorem"
@@ -81245,6 +81239,7 @@
     "planck_boundary_orientation_incidence_no_go_note_2026-04-30",
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2_note_2026-05-17",
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
@@ -81523,10 +81518,10 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9688,
+    "edge_count": 9687,
     "leaf_count": 757,
     "node_count": 2490,
-    "root_count": 819,
+    "root_count": 820,
     "runners_with_path": 2051
   }
 }

@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -123686,7 +123685,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -184771,9 +184770,7 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
-      ],
+      "deps": [],
       "direct_in_degree": 17,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -184785,7 +184782,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "34a6e72ce86f09a118a43733f86479fd7df0276edc628686d5ddb41f63479073",
+      "note_hash": "559ee96609afc90f5f2742348ad17533a620b846cd60316b132aeea98ba1ae6e",
       "note_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -283437,8 +283434,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2328,
-    "re_audit_required": 4,
+    "preserved_existing": 2332,
+    "re_audit_required": 0,
     "row_count": 2376,
     "seeded_new": 0
   }

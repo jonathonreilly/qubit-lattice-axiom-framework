@@ -41199,14 +41199,14 @@
       "claim_id": "asymmetry_persistence_collapse_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [
         "scripts/asymmetry_persistence_pilot.py",
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "note_hash": "0dbb525ed31227ebba321a7baa2102fbd29ea97db5e48b895508830ab8194659",
+      "note_hash": "bf8a9cb815dbb98e76d885c7626eaf0a723516322c027b0029059f7d11d31036",
       "path": "docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_collapse_pilot.py",
       "title": "Asymmetry Persistence + Collapse Note"
@@ -84399,11 +84399,11 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 959,
+      "bounded_theorem": 958,
       "decoration": 1,
       "meta": 187,
       "no_go": 168,
-      "none": 443,
+      "none": 444,
       "open_gate": 124,
       "positive_theorem": 609
     },

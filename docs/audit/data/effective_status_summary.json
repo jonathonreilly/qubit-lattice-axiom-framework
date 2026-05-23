@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 1024,
-    "decoration": 31,
+    "decoration": 29,
     "meta": 229,
     "no_go": 239,
     "open_gate": 112,
-    "positive_theorem": 741
+    "positive_theorem": 743
   },
   "cycle_examples": [
     [
@@ -53,13 +53,13 @@
   ],
   "cycles_detected": 131,
   "effective_status_counts": {
-    "audited_conditional": 99,
+    "audited_conditional": 93,
     "audited_failed": 24,
     "audited_numerical_match": 10,
-    "audited_renaming": 17,
+    "audited_renaming": 15,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 5,
-    "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 4,
+    "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 3,
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
     "decoration_under_graph_first_su3_integration_note": 2,
@@ -76,26 +76,21 @@
     "retained": 122,
     "retained_bounded": 385,
     "retained_no_go": 150,
-    "retained_pending_chain": 16,
-    "unaudited": 1289
+    "retained_pending_chain": 11,
+    "unaudited": 1303
   },
-  "retained_pending_chain_count": 16,
+  "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [
-    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
     "complex_selectivity_compare_note",
     "complex_selectivity_predictor_note",
-    "gauge_wilson_isotropy_boundary_note_2026-05-04",
     "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
-    "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "lattice_3d_nyquist_diffraction_note",
     "lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10",
     "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17",
     "linear_response_second_order_kubo_note",
-    "luders_rule_from_composition_consistency_note_2026-05-20",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
     "yukawa_color_projection_theorem"
   ]
 }

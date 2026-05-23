@@ -120,14 +120,6 @@
           "note_path": "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
         },
         {
-          "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
-          "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
-          "current_audit_status": "audited_clean",
-          "current_claim_type": "bounded_theorem",
-          "current_effective_status": "retained_bounded",
-          "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md"
-        },
-        {
           "audit_question": "Does the conjugate-representation cubic-anomaly index identity qualify as positive_theorem without promoting matter-existence or chirality claims?",
           "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
           "current_audit_status": "audited_clean",
@@ -157,6 +149,15 @@
       "current_effective_status": "retained_bounded",
       "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
       "retired_reason": "bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim."
+    },
+    {
+      "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
+      "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "retired_reason": "bounded_terminal_after_dispatch_audit; fresh SU(3) algebra review found the finite Hilbert-Schmidt projection identity remains clean only as retained_bounded because the source does not select the physical EW vertex or prove kappa_EW equals the projection fraction."
     }
   ],
   "schema": "promotion_reaudit_queue.v1",

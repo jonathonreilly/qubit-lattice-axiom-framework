@@ -18,19 +18,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 122 |
+| **retained** | 125 |
 | **retained_no_go** | 150 |
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1280 |
+| unaudited | 1279 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 107 |
+| ~~audited_conditional~~ | 106 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 5 |
+| `decoration_under_cl3_color_automorphism_theorem` | 4 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -46,22 +46,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 639 |
-| `audited_conditional` | 107 |
-| `audited_decoration` | 29 |
+| `audited_clean` | 642 |
+| `audited_conditional` | 106 |
+| `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1505 |
+| `unaudited` | 1504 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1025 |
-| `decoration` | 30 |
+| `bounded_theorem` | 1024 |
+| `decoration` | 29 |
 | `meta` | 229 |
 | `no_go` | 238 |
 | `open_gate` | 113 |
-| `positive_theorem` | 740 |
+| `positive_theorem` | 742 |
 
 | criticality | count |
 |---|---:|
@@ -98,14 +98,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 287 | 35.17 | `unaudited` | unaudited |
 | 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 977 | 34.93 | `audited_conditional` | ~~audited_conditional~~ |
 | 12 | `native_gauge_closure_note` | bounded_theorem | critical | 1080 | 33.58 | `audited_clean` | **retained_bounded** |
-| 13 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 555 | 32.12 | `unaudited` | unaudited |
-| 14 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1016 | 31.49 | `unaudited` | unaudited |
-| 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 553 | 31.11 | `unaudited` | unaudited |
-| 16 | `three_generation_structure_note` | bounded_theorem | critical | 680 | 30.41 | `unaudited` | unaudited |
-| 17 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 291 | 30.19 | `unaudited` | unaudited |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 882 | 29.79 | `audited_clean` | **retained** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 305 | 29.76 | `unaudited` | unaudited |
-| 20 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1036 | 29.52 | `audited_clean` | **retained** |
+| 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1036 | 33.52 | `audited_clean` | **retained** |
+| 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 555 | 32.12 | `unaudited` | unaudited |
+| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1016 | 31.49 | `unaudited` | unaudited |
+| 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 553 | 31.11 | `unaudited` | unaudited |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 680 | 30.41 | `unaudited` | unaudited |
+| 18 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 291 | 30.19 | `unaudited` | unaudited |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 882 | 29.79 | `audited_clean` | **retained** |
+| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 305 | 29.76 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 959 | 29.41 | `audited_conditional` | ~~audited_conditional~~ |
 | 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 961 | 28.41 | `audited_conditional` | ~~audited_conditional~~ |
 | 23 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 595 | 27.72 | `unaudited` | unaudited |
@@ -573,6 +573,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -661,7 +662,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -846,7 +849,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -886,7 +888,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
-| `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | judicial_review | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -9361,6 +9362,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The current cache supports the note's bounded table exactly: the retarded field differs from the instantaneous field on both compact and refined families, but the sign/direction is row-dependent. The source already confines the claim to a causality/scheduling smoke probe and disclaims a full wave theory or universal law. Residual risk is limited to the small two-family sample and lack of assertion gates, which does not block the audited finite readout.
 - **auditor confidence:** high
 
+### `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact algebraic conjugate-representation cubic-anomaly index identity on the retained SU(3) carrier: Tbar^a=-(T^a)^* preserves the bracket and gives A(Rbar)=-A(R), including A(3bar)=-1 and the two-copy contribution -2. Right-handed matter existence, full anomaly cancellation, and physical chirality assignments are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-hypatia-019e527b-3296-70d2-be7f-d64f0c722fe3`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For the Gell-Mann-normalized SU(3) carrier with retained d^{abc}, the conjugate generators Tbar^a=-(T^a)^* are Hermitian, preserve [Tbar^a,Tbar^b]=i f^{abc}Tbar^c, and flip the cubic trace Tr(T^a{T^b,T^c}), giving A(Rbar)=-A(R).  _(class `A`)_
+- **chain closes:** True — The dependencies supply the retained algebraic SU(3) carrier and d-symbol normalization. The exact symbolic runner verifies the conjugate-representation bracket, A(3)=1, A(3bar)=-1, A(Rbar)=-A(R) across several triples, and counterfactual/cross-rep checks without proving matter existence or anomaly-complete spectra.
+- **rationale:** The scoped theorem is a positive algebraic identity, not a phenomenological anomaly-cancellation claim. The runner checks the cubic-index sign flip directly and also tests adjoint and symmetric representations as counterfactuals. Residual risk is only downstream misuse: this verdict does not prove RH field existence, chirality selection, or full SM anomaly cancellation.
+- **auditor confidence:** high
+
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`
 
 - **Note:** [`S1_REP_DIMENSION_READOFF_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/S1_REP_DIMENSION_READOFF_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -11033,15 +11047,14 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 ### `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`
 
 - **Note:** [`SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md)
-- **claim_type:** `decoration`
-- **claim_scope:** Algebraic SU(3) fundamental Casimir on the cited V_3: C_2 is central, Schur-scalar, and equals 4/3 under Tr[T^a T^b] = (1/2) delta^{ab}; no physical color readout audited.
-- **audit_status:** ~~audited_decoration~~
-- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T235844Z-42a98a84-su3_casimir_fundamental_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Using the cited Gell-Mann normalization, Schur gives C_2 = c_2(3) I_3 and the trace identity 3 c_2(3) = sum_a Tr[T^a T^a] = 8*(1/2) = 4 gives c_2(3) = 4/3.  _(class `A`)_
-- **chain closes:** True — The narrowed algebraic chain closes from the retained CL3 authority's Gell-Mann fundamental action on V_3 plus standard Schur/Casimir algebra. No physical SM color identification is used in the audited scope.
-- **rationale:** The proof is an exact algebraic corollary once the single upstream CL3 note supplies the 3D carrier, canonical Gell-Mann generators, and trace normalization. It does not derive that carrier or any physical color bridge, and it uses no external comparator. The runner verifies the 3x3 Gell-Mann normalization, closure, and Casimir value, so it supports the algebraic corollary but does not add an independent first-principles computation.
-- **decoration parent:** `cl3_color_automorphism_theorem`
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-dimensional SU(3) fundamental-carrier quadratic Casimir identity: for the Gell-Mann-normalized generators on the retained V_3 carrier, sum_a T^a T^a = (4/3) I_3. Physical quark-color readouts, continuum QCD dynamics, and downstream coupling normalizations are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-hypatia-019e527b-3296-70d2-be7f-d64f0c722fe3`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Direct matrix algebra over the retained SU(3) carrier: Hermitian Gell-Mann generators satisfy Tr(T^a T^b)=delta_ab/2 and the computed quadratic Casimir is exactly proportional to I_3 with eigenvalue 4/3.  _(class `A`)_
+- **chain closes:** True — The only load-bearing dependency is the retained cl3_color_automorphism_theorem supplying the SU(3) carrier. The runner recomputes the generator normalization, Lie closure, Schur proportionality, and C_2=4/3 identity without importing physical color readouts or phenomenological constants.
+- **rationale:** The scoped theorem is an exact finite-dimensional algebra result on a retained carrier. The runner checks the load-bearing Casimir identity directly from the matrices, not by fitting or by renaming a downstream quantity. Residual risk is only scope creep: the verdict does not certify physical quark-color coupling, continuum QCD, or any downstream normalization.
 - **auditor confidence:** high
 
 ### `su3_casimir_fundamental_theorem_note_2026-05-02`
@@ -11075,15 +11088,13 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md)
 - **claim_type:** `positive_theorem`
-- **claim_scope:** Algebraic SU(3) Gell-Mann-basis identities (D1)-(D6) for T^a=lambda^a/2 with Tr[T^aT^b]=(1/2)delta^{ab}; no physical SM-color identification audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T000608Z-e62d28a5-su3_dabc_symmetric_theor-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The anticommutator decomposes by trace projection as {T^a,T^b} = (1/3) δ^{ab} I_3 + d^{abc}T^c with d^{abc}=2Tr[{T^a,T^b}T^c].  _(class `A`)_
-- **chain closes:** True — The algebraic identities follow from the supplied Gell-Mann basis, trace normalization, trace projection, and direct matrix algebra. The physical identification of this carrier with Standard Model color is explicitly outside the audited scope.
-- **rationale:** The restricted packet closes the algebraic theorem: the runner instantiates the Gell-Mann matrices, computes d and f by trace projections, and verifies the anticommutator/product identities and symmetry properties. However, the cited authority and the note both explicitly defer the physical identification of this algebraic SU(3) carrier with SM color. The clean result is therefore conditional on the stated algebraic perimeter and cannot propagate to the physical-color bridge.
-- **open / conditional deps cited:**
-  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+- **claim_scope:** Exact finite-dimensional Gell-Mann-carrier d^{abc} algebra: defining d^{abc}=2 Tr({T^a,T^b}T^c), the anticommutator decomposition, total symmetry/reality, reference component table, and d/f product split hold on the retained SU(3) carrier. Physical gluon-sector, QCD-amplitude, and downstream color-toolkit phenomenology claims are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-hypatia-019e527b-3296-70d2-be7f-d64f0c722fe3`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Direct Gell-Mann-carrier computation of {T^a,T^b}=(1/3)delta_ab I_3+d^{abc}T^c, total symmetry and reality of d^{abc}, reference values, and T^aT^b=(1/6)delta_ab I_3+(1/2)(d^{abc}+i f^{abc})T^c.  _(class `A`)_
+- **chain closes:** True — The retained cl3_color_automorphism_theorem supplies the algebraic SU(3) carrier. The runner directly evaluates the anticommutator decomposition, d-symbol symmetry/reality, reference values, and d/f split, so the previous conditionality on physical color interpretation is outside the scoped theorem.
+- **rationale:** The load-bearing step closes as exact matrix algebra on the retained carrier. No physical gluon sector, QCD amplitude, cubic-Casimir phenomenology, or continuum gauge dynamics is used. Residual risk is source/prose scope creep around SU(3)_c wording; the applied claim scope is deliberately algebraic.
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

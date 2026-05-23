@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 214,
-    "leaf": 323,
+    "leaf": 322,
     "medium": 336
   },
   "cycle_break_target_count": 30,
@@ -35043,31 +35043,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "su3_dabc_symmetric_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36709,5 +36684,5 @@
     }
   ],
   "ready_count": 0,
-  "total_pending": 1280
+  "total_pending": 1279
 }

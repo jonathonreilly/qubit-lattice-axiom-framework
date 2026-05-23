@@ -1,0 +1,20 @@
+loop: yt-scalar-taste-selector
+branch: physics-loop/yt-scalar-taste-selector-20260523
+base: origin/main
+current_goal: "derive or rule out kappa_Y=0 from scalar/taste-condensate Yukawa operator"
+target_status: best-honest-status
+actual_current_surface_status: no-go
+active_route: "one-Higgs color-singlet scalar/taste-condensate selector"
+hard_residual: "Can a color-singlet scalar fluctuation insert a nonzero traceless color matrix?"
+files_touched:
+  - docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md
+  - scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py
+  - outputs/yt_scalar_taste_condensate_selector_no_go_2026-05-23.txt
+open_imports:
+  - "Any positive escape must supply a different matching theorem for kappa_Y, or a non-SM nonzero traceless scalar insertion."
+no_go_routes:
+  - "Color-singlet scalar/taste-condensate insertion: M_color proportional to I_color, so projection diagnostic gives kappa_Y=1, not 0."
+review_disposition: "self-review pass; audit_lint strict OK with pre-existing warnings only"
+pr_status: "blocked: GitHub GraphQL API rate limit exceeded during gh pr create"
+next_exact_action: "Open PR from pushed branch when GitHub API rate limit resets."
+stop_condition: "PR opened with honest no-go status or blocked by concrete tooling failure."

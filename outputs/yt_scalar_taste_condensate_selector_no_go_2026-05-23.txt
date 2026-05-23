@@ -1,0 +1,56 @@
+==============================================================================
+Y_T SCALAR/TASTE-CONDENSATE SELECTOR NO-GO
+==============================================================================
+
+Part 0: source anchors
+[PASS] source note exists: docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md
+[PASS] source note is typed no_go
+[PASS] source registers this runner
+[PASS] repaired color row has kappa family
+[PASS] source cites the exact target
+
+Part 1: color-singlet insertion uniqueness
+[PASS] SU(2) invariant color insertion is scalar identity
+[PASS] nonzero scalar identity cannot be traceless for N=2
+[PASS] SU(3) invariant color insertion is scalar identity
+[PASS] nonzero scalar identity cannot be traceless for N=3
+[PASS] SU(4) invariant color insertion is scalar identity
+[PASS] nonzero scalar identity cannot be traceless for N=4
+[PASS] SU(5) invariant color insertion is scalar identity
+[PASS] nonzero scalar identity cannot be traceless for N=5
+
+Part 2: Hilbert-Schmidt projection weights
+[PASS] N=2: rho_singlet(I)=1: 1
+[PASS] N=3: rho_singlet(I)=1: 1
+[PASS] SU(3): lambda3 is traceless: trace=0
+[PASS] SU(3): rho_singlet(lambda3)=0: 0
+[PASS] SU(3): lambda8_like is traceless: trace=0
+[PASS] SU(3): rho_singlet(lambda8_like)=0: 0
+[PASS] N=4: rho_singlet(I)=1: 1
+[PASS] N=5: rho_singlet(I)=1: 1
+
+Part 3: kappa diagnostic
+[PASS] kappa=0 gives K_Y=8/9
+[PASS] kappa=1 gives K_Y=1
+[PASS] identity insertion would diagnose kappa=1, not 0
+[PASS] traceless insertion would diagnose kappa=0
+
+Part 4: VEV subtraction guardrail
+[PASS] source shift leaves color insertion identity
+[PASS] shifted source derivative still has rho_singlet=1
+
+Part 5: source overclaim guards
+[PASS] source avoids overclaim phrase 'Therefore kappa_Y = 0'
+[PASS] source avoids overclaim phrase 'Therefore `kappa_Y = 0`'
+[PASS] source avoids overclaim phrase 'The framework derives `sqrt(8/9)`'
+[PASS] source avoids overclaim phrase 'proposed_retained'
+[PASS] source avoids overclaim phrase 'positive Y_T closure'
+[PASS] source contains boundary phrase 'cannot derive `kappa_Y = 0`'
+[PASS] source contains boundary phrase 'not a global impossibility theorem'
+[PASS] source contains boundary phrase 'color matrix proportional to `I_color`'
+[PASS] source contains boundary phrase 'nonzero traceless color insertion'
+[PASS] source contains boundary phrase 'actual_current_surface_status: no-go'
+
+==============================================================================
+RESULT: PASS=37 FAIL=0
+==============================================================================

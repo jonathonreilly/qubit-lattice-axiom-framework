@@ -277792,7 +277792,8 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23"
       ],
       "direct_in_degree": 10,
       "effective_status": "unaudited",
@@ -277805,7 +277806,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "32e448b3c067510f8a7150db198f3543e0e86cb8869bba563b152f9f285425d4",
+      "note_hash": "fbd5b47e0e7f4626afb2abd759c0b8b29f7c048ccfd2c54d2735a1404c0c7162",
       "note_path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -278001,7 +278002,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -284936,6 +284937,57 @@
       "transitive_descendants": 2,
       "verdict_rationale": null
     },
+    "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 9.753,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "d1b53e5113cd33bb585aa3db7d774ea3390e4406cfa8334fb68853e3b06e6ef4",
+      "note_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py",
+      "title": "Y_T Scalar/Taste-Condensate Selector No-Go",
+      "transitive_descendants": 609,
+      "verdict_rationale": null
+    },
     "yt_schur_stability_gap_note": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -287051,9 +287103,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2333,
+    "preserved_existing": 2334,
     "re_audit_required": 0,
-    "row_count": 2377,
+    "row_count": 2378,
     "seeded_new": 0
   }
 }

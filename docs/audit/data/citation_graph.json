@@ -27165,6 +27165,10 @@
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
     {
+      "from": "yt_color_projection_correction_note",
+      "to": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23"
+    },
+    {
       "from": "yt_constructive_uv_bridge_note",
       "to": "yt_interacting_bridge_locality_note"
     },
@@ -82345,10 +82349,11 @@
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23"
       ],
       "helper_runner_paths": [],
-      "note_hash": "32e448b3c067510f8a7150db198f3543e0e86cb8869bba563b152f9f285425d4",
+      "note_hash": "fbd5b47e0e7f4626afb2abd759c0b8b29f7c048ccfd2c54d2735a1404c0c7162",
       "path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
       "runner_path": "scripts/frontier_yt_color_projection_correction.py",
       "title": "Y_T Color Projection Matching No-Go and Conditional Family"
@@ -83275,6 +83280,18 @@
       "path": "docs/YT_RIGHT_HANDED_SPECIES_DEPENDENCE_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_yt_right_handed_species_dependence.py",
       "title": "Right-Handed Sector Species-Dependence Retention Analysis Note (Candidate Class #4)"
+    },
+    "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23": {
+      "claim_id": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "d1b53e5113cd33bb585aa3db7d774ea3390e4406cfa8334fb68853e3b06e6ef4",
+      "path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py",
+      "title": "Y_T Scalar/Taste-Condensate Selector No-Go"
     },
     "yt_schur_stability_gap_note": {
       "claim_id": "yt_schur_stability_gap_note",
@@ -84383,6 +84400,7 @@
     "yt_pr230_route_exhaustion_summary_note_2026-05-22",
     "yt_retention_landing_readiness_2026-04-18",
     "yt_retention_master_manifest_2026-04-18",
+    "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
     "yt_ssb_matching_gap_analysis_note_2026-04-18",
     "z2_hw1_mass_matrix_parametrization_note",
     "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
@@ -84393,7 +84411,7 @@
       "bounded_theorem": 522,
       "decoration": 1,
       "meta": 187,
-      "no_go": 65,
+      "no_go": 66,
       "none": 1494,
       "open_gate": 46,
       "positive_theorem": 176
@@ -84402,15 +84420,15 @@
       "bounded_theorem": 959,
       "decoration": 1,
       "meta": 187,
-      "no_go": 168,
+      "no_go": 169,
       "none": 443,
       "open_gate": 124,
       "positive_theorem": 609
     },
-    "edge_count": 9682,
+    "edge_count": 9683,
     "leaf_count": 759,
-    "node_count": 2491,
-    "root_count": 822,
-    "runners_with_path": 2052
+    "node_count": 2492,
+    "root_count": 823,
+    "runners_with_path": 2053
   }
 }

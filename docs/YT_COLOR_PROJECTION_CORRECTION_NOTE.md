@@ -259,6 +259,16 @@ lattice two-point function, canonical field normalization, and the physical
 Yukawa-side color insertion. If that theorem lands, this no-go must be
 re-audited rather than treated as permanent.
 
+Follow-up route test:
+[`YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md`](YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md)
+shows that the most direct one-Higgs scalar/taste-condensate selector route
+does **not** close this path: the color-singlet scalar insertion is
+proportional to `I_color`, while `kappa_Y = 0` would require a nonzero
+traceless color insertion. This narrows the legitimate closure path further:
+it must derive a different matching rule for `kappa_Y`, or a different
+framework-native scalar insertion, rather than silently equating connected
+scalar fluctuation with traceless color insertion.
+
 ### N7 - Steelman
 
 A hostile reviewer could argue that a color-singlet Higgs Yukawa vertex or a
@@ -295,9 +305,10 @@ old Class-F definition-as-derivation pattern from propagating and leaves a
 precise remaining target:
 
 ```text
-derive kappa_Y = 0 from the scalar/taste-condensate operator,
-the SU(3) lattice two-point function, canonical field normalization,
-and the physical color structure of the Higgs Yukawa vertex.
+derive kappa_Y = 0 from a matching theorem not already blocked by
+the color-singlet scalar/taste identity-insertion no-go, or replace
+the scalar insertion with a framework-native nonzero traceless color
+structure without leaving the physical one-Higgs top-Yukawa target.
 ```
 
 If that future theorem lands, this no-go should be re-audited against the

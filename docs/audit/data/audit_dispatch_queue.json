@@ -935,9 +935,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audit_in_progress",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audit_in_progress",
+      "actual_audit_status": "audited_decoration",
+      "actual_claim_type": "decoration",
+      "actual_effective_status": "decoration_under_graph_first_su3_integration_note",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

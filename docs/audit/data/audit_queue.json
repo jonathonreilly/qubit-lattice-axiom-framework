@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 264,
     "high": 338,
-    "leaf": 334,
+    "leaf": 333,
     "medium": 329
   },
   "cycle_break_target_count": 0,
@@ -28197,33 +28197,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mirror_mutual_information_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mirror_mutual_information_canonical_families_note",
-        "mirror_mutual_information_chokepoint_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/mirror_chokepoint_joint.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/MIRROR_MUTUAL_INFORMATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mirror_mutual_information_chokepoint.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "mirror_vs_central_head_to_head_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37996,6 +37969,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 14,
-  "total_pending": 1265
+  "ready_count": 13,
+  "total_pending": 1264
 }

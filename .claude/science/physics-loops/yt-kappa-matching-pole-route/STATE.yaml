@@ -1,0 +1,28 @@
+loop_slug: yt-kappa-matching-pole-route
+target: best-honest-status
+active_route: source_higgs_pole_row_normalization
+actual_current_surface_status: no-go
+conditional_surface_status: null
+hypothetical_axiom_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/yt-kappa-matching-pole-route-20260523
+runtime_mode: science_block
+cycle_count: 1
+files_touched:
+  - docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md
+  - scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py
+  - outputs/yt_source_higgs_pole_row_normalization_no_go_2026-05-23.txt
+  - .claude/science/physics-loops/yt-kappa-matching-pole-route/
+open_imports:
+  - accepted_same_surface_source_action_authority
+  - canonical_O_H
+  - canonical_scalar_LSZ_normalization
+  - strict_pole_rows_or_WZ_response_after_normalization
+no_go_routes:
+  - pole_row_gram_purity_alone_cannot_select_absolute_normalization_or_kappa_Y_zero
+review_disposition: local_self_review_pass
+pr_status: pending
+next_exact_action: commit, push, open PR
+stop_condition: coherent_science_block_packaged

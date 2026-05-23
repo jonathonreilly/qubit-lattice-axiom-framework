@@ -1,0 +1,69 @@
+==============================================================================
+Y_T SOURCE-HIGGS POLE-ROW NORMALIZATION NO-GO
+==============================================================================
+
+Part 0: source and context anchors
+[PASS] source note exists: docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md
+[PASS] PR230 consolidated status note exists: docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md
+[PASS] color-projection correction note exists: docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md
+[PASS] scale-invariant source-response note exists: docs/OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md
+[PASS] source note is typed no_go
+[PASS] source note registers this runner
+[PASS] PR230 status exposes canonical LSZ as an open gate
+[PASS] color note exposes kappa family
+[PASS] scale note supplies ratio-invariance analogy
+
+Part 1: exact pole-row Gram purity
+[PASS] base Gram determinant vanishes: 0
+[PASS] base effective-mass ratio is amplitude-blind q^-1: 7/5
+[PASS] single-pole residues are nonzero
+
+Part 2: source/Higgs rescaling invariance
+[PASS] Gram determinant invariant at mu=2, lambda=3
+[PASS] mass ratio invariant at mu=2, lambda=3: 7/5
+[PASS] C_ss scales by mu^2 at mu=2: 12500/3087
+[PASS] C_HH scales by lambda^2 at lambda=3: 1125/112
+[PASS] Gram determinant invariant at mu=3/5, lambda=11/7
+[PASS] mass ratio invariant at mu=3/5, lambda=11/7: 7/5
+[PASS] C_ss scales by mu^2 at mu=3/5: 125/343
+[PASS] C_HH scales by lambda^2 at lambda=11/7: 15125/5488
+[PASS] Gram determinant invariant at mu=13/17, lambda=19/23
+[PASS] mass ratio invariant at mu=13/17, lambda=19/23: 7/5
+[PASS] C_ss scales by mu^2 at mu=13/17: 528125/892143
+[PASS] C_HH scales by lambda^2 at lambda=19/23: 45125/59248
+[PASS] Gram determinant invariant at mu=9/8, lambda=8/9
+[PASS] mass ratio invariant at mu=9/8, lambda=8/9: 7/5
+[PASS] C_ss scales by mu^2 at mu=9/8: 28125/21952
+[PASS] C_HH scales by lambda^2 at lambda=8/9: 500/567
+
+Part 3: normalized residue ratios do not fix amplitudes
+[PASS] normalized rank-one residue ratio equals one: 1
+[PASS] normalized residue ratio stays one at mu=2, lambda=3: 1
+[PASS] normalized residue ratio stays one at mu=3/5, lambda=11/7: 1
+[PASS] normalized residue ratio stays one at mu=13/17, lambda=19/23: 1
+
+Part 4: kappa_Y ambiguity is absorbable by normalization
+[PASS] K_Y(kappa=0)=8/9: 8/9
+[PASS] K_Y(kappa=1)=1: 1
+[PASS] full/connected squared-normalization ratio is 9/8: 9/8
+[PASS] lambda^2=9/8 absorbs connected normalization into full-trace normalization: 8/9 * 9/8 = 1
+[PASS] pole-row equations do not contain kappa_Y: dict_keys(['a_s', 'a_h', 'q', 't'])
+
+Part 5: note claim-boundary guards
+[PASS] source contains boundary phrase 'common-pole support'
+[PASS] source contains boundary phrase 'cannot by themselves derive the Yukawa-side selector'
+[PASS] source contains boundary phrase 'canonical scalar LSZ normalization'
+[PASS] source contains boundary phrase 'not a global no-go for Y_T'
+[PASS] source contains boundary phrase 'does not mean positive Y_T closure has been obtained'
+[PASS] source contains boundary phrase 'does not use `H_unit`'
+[PASS] source avoids overclaim/import phrase 'This proves positive Y_T closure'
+[PASS] source avoids overclaim/import phrase 'Y_T is closed by pole rows'
+[PASS] source avoids overclaim/import phrase 'kappa_Y = 0 is derived'
+[PASS] source avoids overclaim/import phrase 'proposed_retained'
+[PASS] source avoids overclaim/import phrase 'PDG'
+[PASS] source avoids overclaim/import phrase 'm_t(pole)'
+[PASS] source avoids overclaim/import phrase 'y_t(v)'
+
+==============================================================================
+RESULT: PASS=50 FAIL=0
+==============================================================================

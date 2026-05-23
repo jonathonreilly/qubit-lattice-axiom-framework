@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py
-runner_sha256: 24a7693fd786e14e6b495ea0c02429be3cfaae09144bde6e46354ed2b95e2b33
+runner_sha256: ee687ab66eacdb8a45dc71387aeddb845f2ec1cba895c3d7c4726a32c9e44768
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.02
+elapsed_sec: 1.11
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -88,6 +88,22 @@ Part 11: cross-check — additivity (A) of W on no-bond split
   [PASS (A)] (A.b) W block-additive symbolically (via expand_log + simplify, force=True)  (symbolic diff = 0)
 
 ----------------------------------------------------------------------------------------
+Part 12: strengthened-(A) counterexample probe — (log r)^2 fails on a realized two-block direct sum
+----------------------------------------------------------------------------------------
+  [PASS (A)] (strA.a) (log r)^2 cross-term is symbolically 2 log(r_A) log(r_B)  (diff = 2*log(r_A_probe)*log(r_B_probe))
+  [PASS (A)] (strA.b) (log r)^2 fails strengthened (A) at (r_A, r_B) = (5/4, 9/4): cross-term nonzero  (cross-term at (5/4, 9/4) = log((9/4)**log(25/16)))
+
+----------------------------------------------------------------------------------------
+Part 13: direct-sum closure & dense-realized-ratio probe on B
+----------------------------------------------------------------------------------------
+  [PASS (A)] (dense.a) Branch 1: det(D_A(a) + j*I) = a^2 + j^2 symbolically  (det = a_probe**2 + j_probe**2)
+  [PASS (A)] (dense.b) Branch 2: det(D_A(a) + j*sigma_x) = a^2 - j^2 symbolically  (det = a_probe**2 - j_probe**2)
+  [PASS (A)] (dense.c) Branch 2 r_A at (a, j) = (2, 1/2) is in (0, 1)  (r at (2, 1/2) = 15/16)
+  [PASS (A)] (dense.d) Branch 1 r_A at (a, j) = (2, 1) is in (1, infty)  (r at (2, 1) = 5/4)
+  [PASS (A)] (dense.e) Branch 1 inverse: for rho > 1, j = a*sqrt(rho - 1) realizes r = rho  (reconstructed r = rho_hi)
+  [PASS (A)] (dense.f) Branch 2 inverse: for 0 < rho < 1, j = a*sqrt(1 - rho) realizes r = rho  (reconstructed r = rho_lo)
+
+----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
@@ -101,9 +117,16 @@ Summary
       non-log candidates fail; one real parameter c is allowed
     (A) W is block-additive on no-bond splits (Step 4 implication)
     Counterfactual: non-real anti-Hermitian D breaks Step 1 — (X1) is load-bearing
+    Strengthened-(A) probe: (log r)^2 fails strengthened (A) at realized
+      (r_A, r_B) with r_A, r_B != 1 (cross-term 2 log r_A log r_B nonzero);
+      this closes the audit-lane (log r)^2 counterexample to the original
+      per-block (A).
+    Direct-sum closure + dense realized ratio: the family B = { a sigma_y :
+      a in R_+ } with sources J in R*I and R*sigma_x has realized r_A sweeping
+      R_+; two independent factors realize R_+ × R_+.
 
 ========================================================================================
-TOTAL: PASS=30, FAIL=0
+TOTAL: PASS=38, FAIL=0
 ========================================================================================
 
 ----- stderr -----

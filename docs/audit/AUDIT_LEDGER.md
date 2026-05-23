@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1300 |
+| unaudited | 1301 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 101 |
-| ~~audited_failed~~ | 20 |
+| ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,10 +52,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 635 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 64 |
+| `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1526 |
+| `unaudited` | 1527 |
 
 | claim_type | count |
 |---|---:|
@@ -929,7 +929,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_vs_central_head_to_head_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
-| `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7930,19 +7929,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Leaf no_go with deps=[] is purely structural and self-contained. The load-bearing finding is structurally distinct from prior routes — non-trivial modular automorphism on the Gibbs state, with K = -log rho_beta = beta D + log Z_beta · I — but the load-bearing transport from single-state log to multi-state additivity packages the Cauchy classifier at the spectral level (log(p_i q_j) = log p_i + log q_j IS the Cauchy multiplicative-to-additive identity on (R_+, *)). The cached runner (frontier_observable_principle_p1_bridge_tomita_gibbs_modular.py) verifies T1-T6 at exact precision: 3-line derivation on 4x4 block-diagonal Hermitian H, Gibbs factorization rho_beta = rho_A ⊗ rho_B, modular Hamiltonian additivity K = K_A ⊗ I + I ⊗ K_B, Tr K additivity with weight factors, F_p comparison showing only p -> 0 log limit gives additivity, F_p alternative as modular Hamiltonian (positive demonstration that Tr rho^p is NOT a modular Hamiltonian — confirms (G.a) but not load-bearing (G.b.1)), and the tracial state special case (trivial modular automorphism). N1-N8 are present and pass: N1 implicitly enumerates 5+ routes (pure Tomita-Takesaki single-state, Gibbs alone, log-of-tensor-product alone, F_p alternative linear functional Tr rho^p, tracial state special case), N2 collapses to two load-bearing admissions (G.b.1 identification + G.b.2 spectral Cauchy step), N3 explicitly classifies 'structural', 'forced by KMS', 'canonical', N4 matches the structural-reframing residual exactly, N5 explicit route-scoping with 'does NOT claim P1 is false', N6 acknowledges convention-ratification as forward path, N7 steelman addresses the strongest objection — that the modular Hamiltonian's log form is FORCED by KMS not chosen — and correctly rebuts by showing the identification of W with K specifically (over Tr rho^p alternatives) IS the load-bearing step, N8 echoes structural-reframing, free-cumulant, locality, and prior tracial routes with no retirement mechanism applied.
 - **rationale:** Leaf no_go ships audited_clean: (a) the load-bearing decomposition (G.a) single-state Tomita-Takesaki vs (G.b.1)+(G.b.2) load-bearing identification + spectral Cauchy is honest — the Gibbs admission (G.0) is genuinely a NEW SMALLER scope admission (a single physical reference-state choice rather than a classification across functionals), but ALONE does not close P1, (b) the cached runner verifies the symbolic content including the F_p alternative positive-demonstration that Tr rho^p is structurally NOT a modular Hamiltonian (which confirms (G.a) but not (G.b.1)), (c) N1-N8 are present and pass with a particularly strong N7 steelman: the strongest possible objection — 'Tomita-Takesaki INHERENTLY forces K = -log rho not K = rho^p, so the log structure is NOT a selection' — is named explicitly and correctly rebutted by showing the load-bearing step is the IDENTIFICATION of physical W with K (over alternatives like Tr rho^p, Tr rho log rho, etc.), not the log form of K itself. The N7 also addresses the tensor-factorization objection ([H_A, H_B] = 0 forces Gibbs factorization) by correctly identifying that the commuting-subalgebra premise IS the framework's state-level definition of independent subsystems. Five distinct attack routes are individually closed (pure single-state Tomita-Takesaki has no independence content, Gibbs alone does not select W, log-of-tensor-product IS the spectral Cauchy step, Tr rho^p alternative is multiplicative not additive, tracial state limit gives trivial modular structure), walls collapse correctly, witness residuals match the structural-reframing route exactly, rhetoric stays route-scoped, convention-ratification documented as forward path, and prior similar walls (structural-reframing, locality, free-cumulant) have not been retired by mechanism applicable here. Residual risk: a future derivation that selects 'modular Hamiltonian trace' from primitive principles without admitting an additivity classifier would retire this wall.
 - **auditor confidence:** high
-
-### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-dimensional invertible real anti-Hermitian block with real-symmetric sources; claimed uniqueness up to scale of determinant-ratio scalar generators under the written admissibility criteria (X2).
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-125722-20260517T125000Z-576affc4-observable_principle_rea-judicial`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** Step 6, where block additivity is used to infer f(r_A r_B)=f(r_A)+f(r_B) for all positive determinant ratios and then Cauchy-Erdos is applied to force f(r)=c log r.  _(class `A`)_
-- **chain closes:** False — The determinant algebra and the log candidate checks are valid, but the universal uniqueness conclusion does not follow from the written admissibility class. Criteria (A) and (C) constrain actual no-bond decompositions of the given block; for an indecomposable block, such as a single 2x2 invertible real skew block, (A) is vacuous, so continuous normalized determinant-ratio functions like F=(log r)^2 satisfy the written criteria but are not cW. Step 6 also incorrectly promotes a local/image-level direct-sum equation to a global equation on all of R_+ by continuity alone. The runner verifies W and some non-log counterexamples against the functional equation, but it does not establish that every admissible F must satisfy that equation.
-- **rationale:** The determinant algebra and the log candidate checks are valid, but the universal uniqueness conclusion does not follow from the written admissibility class. Criteria (A) and (C) constrain actual no-bond decompositions of the given block; for an indecomposable block, such as a single 2x2 invertible real skew block, (A) is vacuous, so continuous normalized determinant-ratio functions like F=(log r)^2 satisfy the written criteria but are not cW. Step 6 also incorrectly promotes a local/image-level direct-sum equation to a global equation on all of R_+ by continuity alone. The runner verifies W and some non-log counterexamples against the functional equation, but it does not establish that every admissible F must satisfy that equation.
-- **auditor confidence:** judicial
 
 ### `oh_schur_boundary_action_note`
 

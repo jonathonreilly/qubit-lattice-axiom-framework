@@ -3,7 +3,7 @@
     "critical": 471,
     "high": 174,
     "leaf": 329,
-    "medium": 327
+    "medium": 326
   },
   "cycle_break_target_count": 131,
   "cycle_break_targets": [
@@ -22122,33 +22122,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_wilson_isotropy_boundary_note_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "qubit_axiom_hardening_note_2026-05-20",
-        "gauge_scalar_temporal_completion_theorem_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.085,
-      "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
-      "transitive_descendants": 11
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40498,6 +40471,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 14,
-  "total_pending": 1301
+  "ready_count": 13,
+  "total_pending": 1300
 }

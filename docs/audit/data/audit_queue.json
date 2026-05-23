@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 318,
+    "critical": 317,
     "high": 312,
     "leaf": 335,
     "medium": 344
@@ -380,32 +380,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yukawa_color_projection_theorem",
-      "claim_scope": "Only the SU(N_c) Fierz/Hilbert-space channel-counting identity F_adjoint = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; no physical Higgs-Z, Yukawa, or EW matching claim was audited.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.38,
-      "note_path": "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
-      "transitive_descendants": 941
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -39487,6 +39461,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 26,
-  "total_pending": 1309
+  "ready_count": 25,
+  "total_pending": 1308
 }

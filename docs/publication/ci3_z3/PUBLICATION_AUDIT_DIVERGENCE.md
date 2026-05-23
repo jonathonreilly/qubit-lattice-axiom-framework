@@ -20,13 +20,12 @@ publication tables phrase it.
 | critical | `unaudited` | 195 |
 | high | `unaudited` | 172 |
 | medium | `unaudited` | 110 |
-| critical | `audited_conditional` | 12 |
+| critical | `audited_conditional` | 13 |
 | high | `audited_conditional` | 5 |
 | high | `audited_numerical_match` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
 | medium | `audited_conditional` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
@@ -246,7 +245,7 @@ publication tables phrase it.
 | critical | `yt_vertex_power_derivation` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_ward_identity_derivation_theorem` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `yt_zero_import_authority_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `yukawa_color_projection_theorem` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `yukawa_color_projection_theorem` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, QUANTITATIVE_SUMMARY_TABLE.md |
 | high | `angular_kernel_underdetermination_no_go_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `area_law_coefficient_gap_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

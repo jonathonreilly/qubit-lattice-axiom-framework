@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1296 |
+| unaudited | 1295 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 9 |
+| ~~audited_renaming~~ | 10 |
 | ~~audited_conditional~~ | 108 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -53,8 +53,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 9 |
-| `unaudited` | 1522 |
+| `audited_renaming` | 10 |
+| `unaudited` | 1521 |
 
 | claim_type | count |
 |---|---:|
@@ -972,6 +972,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -6298,6 +6299,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The charged-lepton scalar lane observables factor through the SO(2) orbit of the doublet plane, so only r_1^2 + r_2^2 = 6 E_perp is carried and arg b is not.  _(class `A`)_
 - **chain closes:** False — The post-quotient algebra closes: the reduced log-volume extremum forces E_+ = E_perp and hence kappa = 2. The full chain does not close from the restricted packet because the physical SO(2)-quotient/readout is explicitly admitted rather than derived.
 - **rationale:** The note and runner correctly isolate the algebraic consequences of the SO(2)-quotient and explicitly record one admitted input. The runner source genuinely checks the stated algebraic identities and also demonstrates that generic Herm_circ(3) scalar observables can carry arg(b) dependence, so it does not derive the load-bearing quotient premise. Because that physical readout/factorization bridge is not closed by any cited authority in the restricted packet, the theorem remains conditional.
+- **auditor confidence:** high
+
+### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the claimed conversion of the unreduced (1,2) determinant obstruction into an equal-weight reduced two-slot carrier yielding kappa=2.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T192349Z-4bc7303b-koide_mru_weight_class_o-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The scalar charged-lepton lane quotients the internal SO(2) frame of the real doublet, replacing the ordered pair (r_1,r_2) by the single radius rho_perp=sqrt(r_1^2+r_2^2)/sqrt(6).  _(class `E`)_
+- **chain closes:** False — The symbolic algebra closes only after the SO(2)-quotient carrier is admitted. The restricted retained authority derives the cyclic three-channel compression (r0,r1,r2), not the physical replacement of the doublet plane by its radius.
+- **rationale:** The runner verifies the weighted stationary equations, determinant multiplicities, SO(2)-invariance of r_1^2+r_2^2, and the reduced-carrier extremum as algebraic identities. It does not derive the load-bearing physical carrier identification; its quotient step is asserted after checking invariance. The one-hop retained authority supplies only the cyclic compression to three real channels and explicitly leaves the selector principle open. Thus the positive conclusion depends on a locally introduced quotient carrier rather than a retained upstream derivation.
 - **auditor confidence:** high
 
 ### `koide_native_dimensionless_note_2026-04-24`

@@ -139257,24 +139257,42 @@
       "verdict_rationale": null
     },
     "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T19:24:51.067263+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "Exact algebraic cyclic compression of a given Hermitian charged block H_e in Herm(3) to the C-invariant three-real subspace span_R{I, C+C^2, i(C-C^2)}, including the response reconstruction formula."
+        },
+        "dep_claim_type": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 15.67,
+        "runner_hash": "1ed21f52547bf74065c93739703899aed60ef2e7b6c2a1b10390ab6fa224af51",
+        "transitive_descendants": 143
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T192349Z-4bc7303b-koide_mru_weight_class_o-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The symbolic algebra closes only after the SO(2)-quotient carrier is admitted. The restricted retained authority derives the cyclic three-channel compression (r0,r1,r2), not the physical replacement of the doublet plane by its radius.",
       "claim_id": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Audited the claimed conversion of the unreduced (1,2) determinant obstruction into an equal-weight reduced two-slot carrier yielding kappa=2.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T19:24:51.067263+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -139282,19 +139300,19 @@
         "koide_dweh_cyclic_compression_note_2026-04-18"
       ],
       "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 15.67,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The scalar charged-lepton lane quotients the internal SO(2) frame of the real doublet, replacing the ordered pair (r_1,r_2) by the single radius rho_perp=sqrt(r_1^2+r_2^2)/sqrt(6).",
+      "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "4d19a98dcea604e65063eed6bafde3329f57d14c879b6f1904151ad944363d1b",
       "note_path": "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if a retained upstream theorem derives the scalar-lane SO(2) quotient, or equivalently decouples the cos(3 arg b) channel, from the repository axioms rather than defining the two-slot carrier locally.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -139442,18 +139460,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 21,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 21
       },
       "runner_path": "scripts/frontier_koide_mru_weight_class_obstruction_theorem.py",
       "title": "Koide MRU Weight-Class Obstruction Theorem",
       "transitive_descendants": 143,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner verifies the weighted stationary equations, determinant multiplicities, SO(2)-invariance of r_1^2+r_2^2, and the reduced-carrier extremum as algebraic identities. It does not derive the load-bearing physical carrier identification; its quotient step is asserted after checking invariance. The one-hop retained authority supplies only the cyclic compression to three real channels and explicitly leaves the selector principle open. Thus the positive conclusion depends on a locally introduced quotient carrier rather than a retained upstream derivation."
     },
     "koide_native_dimensionless_note_2026-04-24": {
       "audit_date": "2026-05-05T10:47:43.137180+00:00",

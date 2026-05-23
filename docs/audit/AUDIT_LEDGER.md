@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 383 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 11 |
 | ~~audited_conditional~~ | 113 |
-| ~~audited_failed~~ | 16 |
+| ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -51,10 +51,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 644 |
 | `audited_conditional` | 113 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 60 |
+| `audited_failed` | 61 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1512 |
+| `unaudited` | 1511 |
 
 | claim_type | count |
 |---|---:|
@@ -965,6 +965,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `wave_direct_dm_h025_fam2_seed0_control_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -12245,6 +12246,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The supplied runner cache matches the table and summary in the note, and the primary runner fixes the claimed family, seed, H, and strength ladder before calling the shared compute path. Within the restricted packet, the claim remains bounded to this family/seed/H control replay and does not require a portability law.
 - **rationale:** The runner output reports an exact S=0 null, negative delta_hist at all three nonzero strengths, R_hist values from -29.02% to -30.37%, and a 5.22% scaled-magnitude spread, matching the source note. The runner source is not a constant printer: it delegates to measure_dm after pinning the CLI arguments to Fam1, seed 1, H=0.25, and the included helper path constructs the lattice, histories, wave field, and beam response rather than importing the contested table from another note. The note's conclusion is appropriately bounded and explicitly avoids promoting a portability law.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_seed0_control_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the claimed Fam2 seed0 H=0.25 direct-dM control ladder: exact S=0 null, negative weak-field sign pattern, low linearity spread, and R_hist near -23%, plus the limited claim that this combines with the retained Fam2 seed1 ladder to close the second-family pair.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T194118Z-595eed93-wave_direct_dm_h025_fam2-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `Fam2`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -23%`.  _(class `C`)_
+- **chain closes:** False — The supplied runner output is for family=Fam2 seed=1, not the audited family=Fam2 seed=0 row. The seed0 table values in the source note are therefore not verified by the completed runner output in this restricted packet.
+- **rationale:** The primary runner source appears capable of a genuine first-principles numerical computation through `measure_dm`, so the intended load-bearing step is class C rather than a definition or renaming. However, the completed runner certificate included in the packet ran the default seed=1 and reproduces the sibling seed1 authority, not the seed0 claim under audit. Because the source note's load-bearing seed0 numbers are not supported by the provided run, the chain does not close on its own evidence.
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam2_seed1_control_note`
 

@@ -3900,6 +3900,30 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "yt_color_projection_correction_note",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+      ],
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.02,
+      "note_path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_color_projection_correction.py",
+      "transitive_descendants": 1037
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -4227,15 +4251,15 @@
         "yukawa_color_projection_theorem",
         "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 15,
+      "direct_in_degree": 14,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.539,
+      "load_bearing_score": 17.032,
       "note_path": "docs/RCONN_DERIVED_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_color_projection_mc.py",
-      "transitive_descendants": 1051
+      "transitive_descendants": 1046
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4491,34 +4515,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_quark_projector_parameter_audit.py",
       "transitive_descendants": 1038
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_color_projection_correction_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_ew_color_projection_theorem",
-        "yukawa_color_projection_theorem",
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "rconn_derived_note"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.02,
-      "note_path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_color_projection_correction.py",
-      "transitive_descendants": 1037
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -40186,6 +40182,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 0,
+  "ready_count": 1,
   "total_pending": 1288
 }

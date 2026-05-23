@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1298 |
+| unaudited | 1299 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 102 |
-| ~~audited_failed~~ | 22 |
+| ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,10 +52,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 635 |
 | `audited_conditional` | 102 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 66 |
+| `audited_failed` | 65 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1523 |
+| `unaudited` | 1524 |
 
 | claim_type | count |
 |---|---:|
@@ -212,7 +212,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | claude-opus | C | - |
+| `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -926,7 +926,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `lattice_keff_continuum_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | claude-opus | claim_type_observable_mismatch | - |
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `mirror_vs_central_head_to_head_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2599,13 +2598,13 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 
 - **Note:** [`CONTINUUM_LIMIT_NOTE.md`](../../docs/CONTINUUM_LIMIT_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** On the cached size sweep h ∈ {1.0, 0.5, 0.25, 0.125} of the registered numpy runner scripts/lattice_h2_T_numpy_continuum.py, the framework's h^2+T-normalized 3D lattice propagator exhibits: transfer norm T in [4.27, 6.47] (logarithmic growth), F~M exponent values 0.979/0.991/0.998/1.018 bracketing 1.000, gravitational deflection consistently TOWARD with 2.7% change between h=0.25 and h=0.125 at s=0.004 weak field, and Born nonlinearity below 1e-15 where measurable. The h → 0 continuum-limit promotion is explicitly out of binding scope and demoted to diagnostic-only.
+- **claim_scope:** Finite-h cached h^2+T lattice trend table for h in {1.0, 0.5, 0.25, 0.125}, including transfer norms, TOWARD gravity rows, F~M exponents near 1, and 2.7% weak-field deflection change from h=0.25 to h=0.125; no audited h -> 0 convergence theorem.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `claude-audit-loop-2026-05-19-row3`  (claude-opus; independence=cross_family)
-- **load-bearing step:** On the cached size sweep h ∈ {1.0, 0.5, 0.25, 0.125} of the registered runner scripts/lattice_h2_T_numpy_continuum.py, the weak-field deflection changes by 2.7% between h=0.25 and h=0.125, and the F~M exponent table brackets 1.000 (0.979, 0.991, 0.998, 1.018) across the same range.  _(class `C`)_
-- **chain closes:** True — The note's narrowed binding scope is exactly the finite-h cached numerics. The registered runner is a class-(C) framework-primitive computation (Cl(3)-on-Z^3 lattice propagator with the explicit kernel = exp(ikS)*w*h^2/(L^2*T)) and produces the displayed table values byte-for-byte (transfer norm rows, weak-field deflection 2.7% delta, F~M sequence). No external import or contested bridge is required because deps is empty, no one-hop authorities are cited, and the h → 0 continuum-limit interpretation is explicitly demoted to diagnostic-only in the source note.
-- **rationale:** Bounded scope closes from the cited inputs. The runner cache reproduces the displayed finite-h trend tables exactly (T=4.27/5.08/5.80/6.47; weak-field deflection +2.63e-2/+1.07e-2/+1.37e-2/+1.41e-2 with the +2.7% delta between h=0.25 and h=0.125; F~M=0.979/0.991/0.998/1.018). Load-bearing step is a class-(C) framework-primitive lattice propagation; the runner does not hard-code the trend values, it computes them from the kernel definition. The note explicitly and repeatedly cordons the h → 0 promotion out of binding scope (diagnostic-only section flagged as such), with honest limitations enumerated (boundary leakage hitting machine zero around h~0.06; only tested down to h=0.125; non-monotonic strong-field gravity). Residual risk is limited to the finite-h cache itself: any extension beyond h=0.125 or to the strict continuum requires a separately retained convergence theorem or extended sliced computation, which the note correctly refuses to claim here.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T181334Z-742480ea-continuum_limit_note-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The binding evidence of this note is exactly the finite-h trend table on the cached size sweep h in {1.0, 0.5, 0.25, 0.125}, including the 2.7% weak-field deflection change between h=0.25 and h=0.125 and the F~M exponent table bracketing 1.000.  _(class `C`)_
+- **chain closes:** True — The narrowed finite-h claim follows from the completed cached runner output, and the runner source genuinely computes the reported lattice propagation quantities rather than printing constants or importing a contested premise. The strict h -> 0 continuum-limit statement is explicitly excluded from the audited scope.
+- **rationale:** The source note narrows the binding claim to a finite-resolution numerical trend, and the cached output matches the displayed h values, transfer norms, weak-field deflections, and F~M values. The runner source constructs offsets, fields, propagates amplitudes, computes centroids, Born ratios, and mass-scaling fits directly with fixed parameters; it does not hard-code the contested table. Because the h -> 0 convergence language is demoted to diagnostic-only, the missing convergence theorem does not block this bounded finite-h audit.
 - **auditor confidence:** high
 
 ### `coulomb_stability_upper_bound_support_note_2026-05-20`
@@ -6672,18 +6671,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** False — The packet provides no retained cited authority or derivation of the asymptotic. The missing step is the actual textbook proof or retained upstream authority establishing the lattice Green's function asymptotic under the stated normalization.
 - **rationale:** The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization.
 - **auditor confidence:** high
-
-### `lattice_keff_continuum_note`
-
-- **Note:** [`LATTICE_KEFF_CONTINUUM_NOTE.md`](../../docs/LATTICE_KEFF_CONTINUUM_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Whether the dense lattice continuum scheme k_eff = k*h with kernel exp(i*(k*h)*act)*w/L*h^2 produces a clean refinement lane via scripts/lattice_keff_continuum.py over h in {2.0, 1.0, 0.5, 0.25}.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `claude-audit-loop-2026-05-19-lattice-keff`  (claude-opus; independence=cross_family)
-- **load-bearing step:** None  _(class `claim_type_observable_mismatch`)_
-- **chain closes:** False — Source note self-declares 'candidate retained-grade NEGATIVE' in its Status line; runner output confirms detector probability collapses to ~0 (replay value ~7e-75) at h=0.25 and the gravity channel wanders -1.69 -> +0.14 -> +0.58 across the three finite rows. The note's Bottom line concludes the scheme is a 'practical failure' and 'does not rescue the lattice continuum program'. The ledger records claim_type=positive_theorem, but there is no positive theorem in the source note; the actual content is a falsification of the k_eff = k*h candidate. As a positive_theorem the derivation does not close on its own terms because the source note itself reports a negative conclusion.
-- **rationale:** Issue: claim_type=positive_theorem mismatches the actual claim content. Source note's Status line says 'candidate retained-grade NEGATIVE'; its Bottom line says the scheme is a 'practical failure'. The runner output (logs/runner-cache cached SHA 9a42641 elapsed 5.9s) confirms detector probability is 0.00e+00 at h=0.25 (replay reports ~7e-75 without 1e-30 prune) and the gravity sequence -1.6910 -> +0.1374 -> +0.5821 is not a stable convergent trend on the three surviving rows. Why this blocks: a positive_theorem audited_clean requires a positive theorem to close from cited inputs. No positive theorem is being asserted here; the substantive content is the negative finding that k_eff = k*h does not stabilize the dense kernel. Repair target: reclassify the ledger row as no_go (the scheme is falsified as a continuum-limit candidate) or as bounded_theorem with bounded-negative scope, then re-audit under the new claim_type with No-Go Discipline (N1-N8) applied to the named falsification scope. Alternatively, if a positive content is genuinely intended, rewrite the source note to state a positive theorem (e.g., 'finite-h gravity values for k_eff = k*h scheme: tabulated correctly by runner') and audit that narrower claim. Claim boundary until fixed: the finite-h tabulated runner output (gravity values -1.6910, +0.1374, +0.5821 at h=2.0, 1.0, 0.5 plus detector underflow at h=0.25) is a faithful record of the runner; the negative conclusion 'k_eff = k*h does not produce a clean refinement lane' is supported by the runner data on the displayed h-range only. No positive continuum-limit theorem is supported.
 
 ### `lattice_kernel_transfer_norm_note`
 

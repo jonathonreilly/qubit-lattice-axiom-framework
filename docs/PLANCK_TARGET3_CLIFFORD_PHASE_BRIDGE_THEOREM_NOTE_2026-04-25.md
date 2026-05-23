@@ -24,7 +24,7 @@ This note originally recorded the positive bridge under one explicit additional
 premise: the active primitive boundary response realizes the
 metric-compatible Clifford coframe response on the rank-four block. The
 2026-04-30 theorem
-[PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
+`PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md`
 was audited as `audited_renaming`: it constructs a valid `Cl_4(C)` / CAR
 carrier, but it does not force the retained substrate action to preserve
 `P_A H_cell` and induce that carrier.

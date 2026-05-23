@@ -65,7 +65,7 @@ The same `(F1)` is recovered as the symmetric limit of the
   the Newton constant `G`; those are separately documented (see e.g.
   [GRAVITY_CLEAN_DERIVATION_NOTE.md](GRAVITY_CLEAN_DERIVATION_NOTE.md)
   and the
-  [G_NEWTON_MASS_LINEAR_POISSON_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-05-10.md](G_NEWTON_MASS_LINEAR_POISSON_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-05-10.md)
+  `G_NEWTON_MASS_LINEAR_POISSON_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
   Born-source composition wrapper).
 - This wrapper does NOT close `k = 0` from `Cl(3)` on `Z^3`; the
   flatness premise is recorded as the separate

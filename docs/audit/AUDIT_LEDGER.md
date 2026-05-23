@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1280 |
+| unaudited | 1279 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 102 |
+| ~~audited_conditional~~ | 103 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 643 |
-| `audited_conditional` | 102 |
+| `audited_conditional` | 103 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1505 |
+| `unaudited` | 1504 |
 
 | claim_type | count |
 |---|---:|
@@ -848,6 +848,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -11086,6 +11087,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Peter-Weyl/Schur character orthogonality plus finite-dimensional diagonal-operator algebra on the SU(3) character truncation, reducing convolution by Z to eigenvalue multiplication by rho_(p,q).  _(class `A`)_
 - **chain closes:** True — The source has zero ledger dependencies and is scoped to textbook compact-Lie-group character algebra on an abstract finite truncation. The live runner reproduced PASS=13, FAIL=0, including Schur orthogonality checks, algebraic reduction, uniqueness, positivity, self-adjointness, swap symmetry, and abstract numerical sanity cases.
 - **rationale:** The theorem's conclusions are exactly the standard finite-dimensional character-convolution consequences of Schur orthogonality and diagonal linear algebra. The note explicitly forbids importing Wilson action, beta=6 data, or the parent plaquette environment identification, and the runner treats companion Wilson coefficients only as abstract positive symmetric input data. Within that boundary, no gap remains.
+- **auditor confidence:** high
+
+### `su3_dabc_symmetric_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic SU(3) Gell-Mann-basis identities (D1)-(D6) for T^a=λ^a/2 with Tr[T^aT^b]=(1/2)δ^{ab}; no audit of physical SM-color identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T161319Z-cdca5a10-su3_dabc_symmetric_theor-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Define d^{abc}=2 Tr[{T^a,T^b}T^c] and project {T^a,T^b} onto the trace-orthonormal basis {I_3,T^c} to obtain {T^a,T^b}=(1/3)δ^{ab}I_3+d^{abc}T^c.  _(class `A`)_
+- **chain closes:** True — The restricted packet supplies the Gell-Mann generators and trace normalization, and the claimed d-symbol identities follow by trace projection, cyclicity, and direct matrix algebra. The physical identification of this algebraic carrier with SM color is explicitly outside the audited scope.
+- **rationale:** Within the narrowed algebraic perimeter, the proof and runner close the anticommutator decomposition, realness, total symmetry, reference-table values, product identity, and symmetric/antisymmetric split. The runner source genuinely computes from explicit Gell-Mann matrices rather than merely printing pass results, though the reference-value check is confirmatory rather than load-bearing. The cited authority is retained for the algebraic embedding but repeatedly flags the physical SM-color identification as a deferred bridge, so any reading of SU(3)_c as physical color remains conditional.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

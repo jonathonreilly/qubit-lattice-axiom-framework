@@ -23,6 +23,7 @@ open_imports:
 no_go_routes:
   - pole_row_gram_purity_alone_cannot_select_absolute_normalization_or_kappa_Y_zero
 review_disposition: local_self_review_pass
-pr_status: pending
-next_exact_action: commit, push, open PR
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1742
+next_exact_action: audit/review PR #1742; then attack canonical O_H/scalar LSZ normalization
 stop_condition: coherent_science_block_packaged

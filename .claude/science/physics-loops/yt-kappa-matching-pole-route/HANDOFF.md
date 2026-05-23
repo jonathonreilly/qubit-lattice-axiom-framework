@@ -29,3 +29,7 @@ trying to get `kappa_Y = 0` from pole-row Gram purity alone.
 - Audit pipeline: complete.
 - Strict audit lint: OK, existing warnings only.
 - Whitespace check: OK.
+
+## Review PR
+
+Opened as https://github.com/jonathonreilly/cl3-lattice-framework/pull/1742.

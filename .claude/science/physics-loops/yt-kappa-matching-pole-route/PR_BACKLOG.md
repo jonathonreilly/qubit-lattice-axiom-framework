@@ -1,11 +1,11 @@
-# PR Backlog
+# PR Status
 
-PR not opened yet.
+Opened as https://github.com/jonathonreilly/cl3-lattice-framework/pull/1742.
 
-Planned title:
+Title:
 
 ```text
 [physics-loop] Y_T pole-row normalization no-go
 ```
 
-Planned base: `main`.
+Base: `main`.

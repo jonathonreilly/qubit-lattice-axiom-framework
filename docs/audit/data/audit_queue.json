@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 264,
     "high": 338,
-    "leaf": 343,
+    "leaf": 342,
     "medium": 329
   },
   "cycle_break_target_count": 0,
@@ -28197,31 +28197,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "teleportation_poisson_resource_sweep_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_bell_inequality.py",
-        "scripts/frontier_teleportation_resource_from_poisson.py"
-      ],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_teleportation_poisson_resource_sweep.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "h2t_h0125_narrow_bridge_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28265,6 +28240,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/retardation_discriminator.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "teleportation_resource_from_poisson_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "teleportation_poisson_resource_sweep_note",
+        "teleportation_resource_fidelity_note",
+        "teleportation_measurement_record_note",
+        "teleportation_apparatus_dynamics_closure_note",
+        "minimal_axioms_2026-05-03"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_bell_inequality.py"
+      ],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
       "transitive_descendants": 1
     },
     {
@@ -31627,36 +31632,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_substep4_ac_lambda_separate_closure_2026_05_10_aclambda.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "teleportation_resource_from_poisson_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "teleportation_poisson_resource_sweep_note",
-        "teleportation_resource_fidelity_note",
-        "teleportation_measurement_record_note",
-        "teleportation_apparatus_dynamics_closure_note",
-        "minimal_axioms_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_bell_inequality.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
       "transitive_descendants": 1
     },
     {
@@ -38225,5 +38200,5 @@
     }
   ],
   "ready_count": 22,
-  "total_pending": 1274
+  "total_pending": 1273
 }

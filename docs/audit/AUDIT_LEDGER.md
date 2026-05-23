@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 138 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 385 |
+| **retained_bounded** | 386 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1274 |
+| unaudited | 1273 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 646 |
+| `audited_clean` | 647 |
 | `audited_conditional` | 118 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1500 |
+| `unaudited` | 1499 |
 
 | claim_type | count |
 |---|---:|
@@ -702,6 +702,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_no_signaling_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `teleportation_noise_fault_controls_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_fidelity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -11663,6 +11664,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The source note keeps the claim inside the explicit supplied-resource, independent-fault qubit model, and the runner recomputes the channel, Choi average fidelities, threshold crossings, no-record Bob marginal diagnostics, and trace checks from that model. No one-hop dependencies are required, and the live runner output matches the note's reported numerics.
 - **rationale:** The bounded claim closes for the explicit model. The runner does not derive an apparatus noise law, Bell-resource preparation dynamics, spacetime propagation theorem, or matter/energy transport claim, but the note does not ask for those. Residual risk is only scope discipline: this clean audit applies to the independent-fault qubit-state harness and should not be promoted to a physical-noise derivation or apparatus-level teleportation claim.
 - **auditor confidence:** high
+
+### `teleportation_poisson_resource_sweep_note`
+
+- **Note:** [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](../../docs/TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T200222Z-9b320dba-teleportation_poisson_re-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** High coupling and low mass produce deterministic high-fidelity encoded Bell resources on the audited 1D N=8 and 2D 4x4 surfaces.  _(class `C`)_
+- **chain closes:** True — The runner constructs the Poisson-coupled two-species Hamiltonian, solves the ground state, traces to the logical taste qubits, and computes Bell overlap, fixed-protocol teleportation fidelity, CHSH, purity, and negativity rather than reading those quantities from another note. Within the explicitly bounded grid and ordinary quantum-state teleportation scope, the reported parameter-window conclusion follows.
+- **rationale:** The source note makes a bounded, non-uniform numerical claim and the supplied runner performs the load-bearing computation from instantiated lattice, Poisson, Hamiltonian, ground-state, partial-trace, and teleportation-resource calculations. The code does not merely print constants, import the contested result from another note, or tune against an external comparator. The clean verdict is limited to the stated small sweep and does not promote matter transport, FTL signaling, or a uniform theorem over all parameters.
+- **auditor confidence:** medium
 
 ### `teleportation_resource_fidelity_note`
 

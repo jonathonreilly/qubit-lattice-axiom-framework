@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 264,
-    "high": 344,
+    "high": 343,
     "leaf": 343,
     "medium": 339
   },
@@ -7410,30 +7410,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
-      "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hadron_lane1_confinement_to_mass_firewall_note_2026-04-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.333,
-      "note_path": "docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py",
       "transitive_descendants": 56
     },
     {
@@ -38676,6 +38652,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 34,
-  "total_pending": 1290
+  "ready_count": 33,
+  "total_pending": 1289
 }

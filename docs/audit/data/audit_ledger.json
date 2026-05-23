@@ -117549,22 +117549,42 @@
       "verdict_rationale": null
     },
     "hadron_lane1_confinement_to_mass_firewall_note_2026-04-27": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T19:37:32.198973+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_derivation_note"
+        ],
+        "load_bearing_score": 8.333,
+        "runner_hash": "5328b62e6d987b2fe5ad2030197572455890ba1397614ba72ce99988fb9710d9",
+        "transitive_descendants": 56
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T193551Z-d5939510-hadron_lane1_confinement-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet supports the firewall as dependency accounting, but retained-grade closure does not follow because the source itself declares open parent gates and missing hadron-mass bridges. The missing steps are retained Staggered-Dirac realization closure, g_bare parent-gate closure, Lane 3 light-quark masses, chiral inputs, and correlator or spectral-coefficient retention.",
       "claim_id": "hadron_lane1_confinement_to_mass_firewall_note_2026-04-27",
-      "claim_scope": null,
+      "claim_scope": "Audited the Lane 1 boundary that retained confinement plus bounded sqrt(sigma) is insufficient to retain pion, proton, neutron, or hadron-spectrum masses without additional retained chiral, quark-mass, running/matching, and spectral/correlator inputs.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T19:37:32.198973+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -117572,20 +117592,24 @@
         "g_bare_derivation_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 8.333,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "No retained hadron-mass closure follows from retained confinement plus bounded sqrt(sigma) unless the branch also supplies retained light-quark/chiral inputs, hadronic running and matching, and retained spectral coefficients or an ab-initio lattice-QCD-equivalent computation.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "84e85c001c8689998e573550a25cca278681ac20c4da95d4665495504a940301",
       "note_path": "docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or provide the Staggered-Dirac and g_bare parent gates plus the Lane 3 light-quark/chiral/correlator inputs before re-auditing for retained closure.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/G_BARE_DERIVATION_NOTE.md",
+        "docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-03T13:40:45.888381+00:00",
@@ -117620,18 +117644,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 2,
+        "B": 11,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 3,
+        "total_pass": 16
       },
       "runner_path": "scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py",
       "title": "Hadron Lane 1 Confinement-To-Mass Firewall",
       "transitive_descendants": 56,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner passes, but it mostly verifies repo-state guardrails and missing inputs by reading other notes, with three comparator checks using observed hadron masses; it is not a first-principles computation of the negative boundary. The cited G_BARE authority is marked retained_bounded in the packet header but explicitly says its main gate and parent re-audit remain open, and the source note also declares a Staggered-Dirac open gate. Applying the No-Go Discipline gate, N3 exposes admitted open/canonical/standard bridge language rather than closed retained inputs, so an audited_clean negative boundary is not available."
     },
     "hadron_lane1_sqrt_sigma_b2_gate_repair_audit_note_2026-04-30": {
       "audit_date": null,

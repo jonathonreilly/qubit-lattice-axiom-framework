@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 382 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1290 |
+| unaudited | 1289 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 111 |
+| ~~audited_conditional~~ | 112 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 642 |
-| `audited_conditional` | 111 |
+| `audited_conditional` | 112 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1516 |
+| `unaudited` | 1515 |
 
 | claim_type | count |
 |---|---:|
@@ -805,6 +805,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gellmann_completeness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `hadron_lane1_confinement_to_mass_firewall_note_2026-04-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -5427,6 +5428,23 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The source note is not deriving the physical value of the dynamical screening factor; it is proving an underdetermination/no-go claim. The load-bearing move is an algebraic/logical comparison between the pure-gauge payload and an added determinant-weighted measure, plus the explicit factor-family degeneracy showing non-uniqueness. The runner's PDG-like 440 MeV comparator is incidental to one supporting check and is not needed for the no-go conclusion, so class D is not the right class for the load-bearing step.
 - **rationale:** The source note is not deriving the physical value of the dynamical screening factor; it is proving an underdetermination/no-go claim. The load-bearing move is an algebraic/logical comparison between the pure-gauge payload and an added determinant-weighted measure, plus the explicit factor-family degeneracy showing non-uniqueness. The runner's PDG-like 440 MeV comparator is incidental to one supporting check and is not needed for the no-go conclusion, so class D is not the right class for the load-bearing step.
 - **auditor confidence:** judicial
+
+### `hadron_lane1_confinement_to_mass_firewall_note_2026-04-27`
+
+- **Note:** [`HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md`](../../docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the Lane 1 boundary that retained confinement plus bounded sqrt(sigma) is insufficient to retain pion, proton, neutron, or hadron-spectrum masses without additional retained chiral, quark-mass, running/matching, and spectral/correlator inputs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T193551Z-d5939510-hadron_lane1_confinement-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** No retained hadron-mass closure follows from retained confinement plus bounded sqrt(sigma) unless the branch also supplies retained light-quark/chiral inputs, hadronic running and matching, and retained spectral coefficients or an ab-initio lattice-QCD-equivalent computation.  _(class `B`)_
+- **chain closes:** False — The restricted packet supports the firewall as dependency accounting, but retained-grade closure does not follow because the source itself declares open parent gates and missing hadron-mass bridges. The missing steps are retained Staggered-Dirac realization closure, g_bare parent-gate closure, Lane 3 light-quark masses, chiral inputs, and correlator or spectral-coefficient retention.
+- **rationale:** The runner passes, but it mostly verifies repo-state guardrails and missing inputs by reading other notes, with three comparator checks using observed hadron masses; it is not a first-principles computation of the negative boundary. The cited G_BARE authority is marked retained_bounded in the packet header but explicitly says its main gate and parent re-audit remain open, and the source note also declares a Staggered-Dirac open gate. Applying the No-Go Discipline gate, N3 exposes admitted open/canonical/standard bridge language rather than closed retained inputs, so an audited_clean negative boundary is not available.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `G_BARE_DERIVATION_NOTE.md`
+  - `QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md`
+- **auditor confidence:** high
 
 ### `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30`
 

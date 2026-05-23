@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 135 |
 | **retained_no_go** | 151 |
-| **retained_bounded** | 382 |
+| **retained_bounded** | 383 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1280 |
+| unaudited | 1279 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 642 |
+| `audited_clean` | 643 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1505 |
+| `unaudited` | 1504 |
 
 | claim_type | count |
 |---|---:|
@@ -667,6 +667,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block3_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -11134,6 +11135,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 
 Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C'); 1x ('second', 'audited_conditional', 'bounded_theorem', 'C').
 - **auditor confidence:** 0.84
+
+### `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Seven bounded finite identities: Block 4 L_s=3 staging counts/coefficient/singlet/tensor facts and Block 5 L_s=2 plaquette orientation diagnostics, excluding any full 81-link contraction or bridge-gap/P-value claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T155025Z-3e873422-su3_wigner_block4_stagin-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The two runners directly compute the seven finite SU(3) coefficient, singlet-rank, tensor-shape, L_s=3 geometry, and L_s=2 orientation-enumeration identities without importing open-gate numerical constants.  _(class `A`)_
+- **chain closes:** True — The cited upstream authorities are retained-grade or retained_bounded, and the scoped conclusions are finite algebraic or enumeration checks over those inputs. The packet includes a successful cached primary run and source showing the wrapper delegates to the stated runners while checking absence of named open-gate imports.
+- **rationale:** The note is narrowly scoped to finite identities and explicitly excludes the open bridge-gap, P-value, and full L_s=3 contraction claims. The supplied runner output passes all wrapper checks, including both computational limbs and the import-screen against the named open-gate runners. The conclusions close as algebraic/enumerative checks over retained-grade Blocks 1-3 plus standard finite computations, not as an external numerical match or renaming.
+- **auditor confidence:** medium
 
 ### `su3_wigner_intertwiner_block1_theorem_note_2026-05-03`
 

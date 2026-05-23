@@ -187,7 +187,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_typeb_radian_readout_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
+| `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2106,13 +2106,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 - **Note:** [`CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md`](../../docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Exploratory 3+1D scan over coin-coupling parameter mix in {0.00, 0.125, ..., 1.00} on n=17 with gravity 5e-4 and theta0=0.3: cross-axis coupling materially improves both low-k dispersion isotropy (best R^2 = 0.4787 at mix=1.00 vs. 0.0627 at mix=0.00) and 3D loop/plaquette response (best visibility V = 0.9142 at mix=0.875 vs. 0.0000 at mix=0.00). Explicitly does NOT recover a clean isotropic 3D KG transport law: dispersion R^2 stays only moderate (~0.48) at the best point.
+- **claim_scope:** For the explicitly defined 3+1D six-component coupled-coin scan at n=17, theta0=0.3, strength=5e-4, and mix in {0,0.125,...,1}, the computed metrics show improved gauge-loop visibility and KG-fit R^2 relative to the factorized mix=0 baseline, but no clean isotropic 3D KG law.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `claude-opus-4.7-1m:open-gates-2026-05-02-c1-03`  (claude-opus; independence=weak)
-- **load-bearing step:** The factorized direct-sum coin (mix=0) gives V=0 loop response and R^2=0.063 dispersion fit; the coupled coin family lifts both observables monotonically with mix, reaching V=0.91 and R^2=0.48 near the coupled end.  _(class `C`)_
-- **chain closes:** True — The bounded claim is the measured monotone improvement of both observables under coin coupling on the named scan. The note correctly states this supports separability as a real blocker without claiming to recover a clean 3D KG law; the moderate dispersion R^2 caps any stronger interpretation.
-- **rationale:** Within the regime-finding scan scope, the chain closes by direct measurement on the runner. The note's interpretation 'coupling helps but not enough; better symmetry-matched generator still needed' matches the bounded measurement. No upgrade to a 3D transport theorem is implied.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T175755Z-ec176ca3-chiral_3plus1d_coupled_c-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Cross-axis coupling materially improves both observables relative to the factorized baseline, with loop response rising from zero at mix=0 to strong modulation near the coupled end while dispersion remains only moderate.  _(class `C`)_
+- **chain closes:** True — The runner source directly constructs the coin, shift, dispersion, and loop-response observables and produces the values reported in the note without importing another note or hard-coding the contested results. The closure is bounded to this scan family, parameter grid, and observable definitions.
+- **rationale:** The note is scoped as an exploratory bounded computational claim, not as a broad 3+1D transport theorem. Within that bounded scope, the completed runner output matches the note and the source computes the reported scan metrics from the locally defined lattice walk rather than printing constants or reading upstream results. The interpretation that coupling helps but is insufficient for a clean isotropic KG law follows from the reported improvement in R^2 and gauge visibility together with the still-moderate dispersion quality.
 - **auditor confidence:** high
 
 ### `chiral_3plus1d_mixing_period_note`

@@ -299,7 +299,7 @@ One-hop authority candidates cited:
   recording the current-stack zero law on the cited bank,
   consistent with the present note's `J_chi = 0` annihilation claim
   on all three listed cited routes.
-- [`DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md`](DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md)
+- `DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md`
   — currently `unaudited` (audit row:
   `dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21`).
   Downstream activation theorem constructing one explicit sole-axiom

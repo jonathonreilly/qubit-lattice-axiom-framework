@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 133 |
 | **retained_no_go** | 147 |
-| **retained_bounded** | 377 |
+| **retained_bounded** | 378 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1313 |
-| audit_in_progress | 1 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -47,8 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 631 |
+| `audited_clean` | 632 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 66 |
@@ -119,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -318,6 +315,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -4618,6 +4616,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The two analytic strictly increasing witnesses share beta_eff(beta)=beta+beta^5/26244+O(beta^6) but differ at beta=6, hence give different P_1plaq values.  _(class `A`)_
 - **chain closes:** True — The explicit witness pair satisfies the scoped hypotheses and has exact delta beta_eff(6)=0.0046656 with positive delta P, so the stated inputs cannot force a unique framework-point value.
 - **rationale:** Clean as a scoped no-go obstruction, not as analytic closure of canonical P(6). The runner confirms 5 theorem checks and 2 support checks with no failures; the load-bearing step is algebraic counterexample construction rather than support-class propagation. The safe conclusion is that the current onset jet plus analyticity/monotonicity does not force beta_eff(6) or analytic P(6).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_HIERARCHY_OBSTRUCTION_LEMMAS_BOUNDED_NOTE_2026-05-10.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_HIERARCHY_OBSTRUCTION_LEMMAS_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded claim that L1-L4 follow from the stated compact-Haar, compact-Laplace, entire-partition, and analytic-continuation admissions, not the derivation of those admissions from the framework baseline or the parent infinite-hierarchy obstruction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T145225Z-7c2a21a1-gauge_vacuum_plaquette_h-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The four endpoint, Taylor-support, and polynomial-growth lemmas close from the bounded admissions BA-1 through BA-4 plus elementary compactness, analyticity, and polynomial-growth arguments.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the arguments for L1-L4 follow from BA-1 through BA-4 and elementary analysis. The chain does not derive BA-1 through BA-4 themselves, but the note explicitly scopes them as admitted bounded inputs rather than claimed framework consequences.
+- **rationale:** The load-bearing work is not a first-principles Cl(3)/Z^3 computation; it is an algebraic and analytic closure over explicitly stated compact-analysis admissions. The runner source is consistent with that scope: it performs numerical sanity checks, structural checks, and text-boundary checks, and it does not hard-code a contested framework-derived constant as a derived result. The source note clearly excludes deriving BA-1 through BA-4 and excludes upgrading the parent obstruction theorem, so the audited claim closes only as a bounded theorem under those admissions.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_local_environment_factorization_theorem_note`

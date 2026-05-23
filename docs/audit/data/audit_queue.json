@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 323,
+    "critical": 322,
     "high": 312,
     "leaf": 335,
     "medium": 344
@@ -382,27 +382,32 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10",
-      "claim_scope": "Under the explicitly admitted compact-Lie-group facts BA-1 through BA-4, the note establishes the one-plaquette and finite-periodic Wilson endpoint identities, finite-Taylor-support iff global polynomiality, and the global polynomial-growth lemma for K(t).",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+        "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10"
       ],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.464,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_HIERARCHY_OBSTRUCTION_LEMMAS_BOUNDED_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py",
+        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
+      ],
+      "load_bearing_score": 12.963,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.py",
-      "transitive_descendants": 998
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.py",
+      "transitive_descendants": 997
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -704,35 +709,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
       "transitive_descendants": 1001
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-        "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
-      ],
-      "load_bearing_score": 12.963,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.py",
-      "transitive_descendants": 997
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -39616,5 +39592,5 @@
     }
   ],
   "ready_count": 29,
-  "total_pending": 1314
+  "total_pending": 1313
 }

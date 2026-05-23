@@ -103388,24 +103388,42 @@
       "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T14:52:46.676764+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "Exact finite-volume theorem: on every finite periodic SU(3) Wilson L^4 evaluation surface, the one-plaquette inverse defines a unique implicit beta_eff,L(beta), with analytic and strictly increasing behavior; physical beta=6 characterization and canonical plaquette support are excluded."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+        ],
+        "load_bearing_score": 10.464,
+        "runner_hash": "319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3",
+        "transitive_descendants": 998
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T145225Z-7c2a21a1-gauge_vacuum_plaquette_h-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the arguments for L1-L4 follow from BA-1 through BA-4 and elementary analysis. The chain does not derive BA-1 through BA-4 themselves, but the note explicitly scopes them as admitted bounded inputs rather than claimed framework consequences.",
       "claim_id": "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10",
-      "claim_scope": "Under the explicitly admitted compact-Lie-group facts BA-1 through BA-4, the note establishes the one-plaquette and finite-periodic Wilson endpoint identities, finite-Taylor-support iff global polynomiality, and the global polynomial-growth lemma for K(t).",
+      "claim_scope": "Audited only the bounded claim that L1-L4 follow from the stated compact-Haar, compact-Laplace, entire-partition, and analytic-continuation admissions, not the derivation of those admissions from the framework baseline or the parent infinite-hierarchy obstruction.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T14:51:55.843514+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-23T14:52:46.676764+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -103420,27 +103438,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-23T14:52:46.676764+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T145225Z-7c2a21a1-gauge_vacuum_plaquette_h-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the bounded claim that L1-L4 follow from the stated compact-Haar, compact-Laplace, entire-partition, and analytic-continuation admissions, not the derivation of those admissions from the framework baseline or the parent infinite-hierarchy obstruction.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_reduction_existence_theorem_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.464,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The four endpoint, Taylor-support, and polynomial-growth lemmas close from the bounded admissions BA-1 through BA-4 plus elementary compactness, analyticity, and polynomial-growth arguments.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "41ff95875b8c3f2158e2923cdcc8953b355d81fe16aec9f284ecc447e6ff460c",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_HIERARCHY_OBSTRUCTION_LEMMAS_BOUNDED_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that BA-1 through BA-4 remain acceptable bounded admissions for retained_bounded treatment rather than requiring separate upstream retained authority rows.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -103532,18 +103561,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 80,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 80
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.py",
       "title": "Gauge-Vacuum Plaquette Hierarchy Obstruction Lemmas \u2014 Bounded Note",
       "transitive_descendants": 998,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing work is not a first-principles Cl(3)/Z^3 computation; it is an algebraic and analytic closure over explicitly stated compact-analysis admissions. The runner source is consistent with that scope: it performs numerical sanity checks, structural checks, and text-boundary checks, and it does not hard-code a contested framework-derived constant as a derived result. The source note clearly excludes deriving BA-1 through BA-4 and excludes upgrading the parent obstruction theorem, so the audited claim closes only as a bounded theorem under those admissions."
     },
     "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": {
       "audit_date": null,

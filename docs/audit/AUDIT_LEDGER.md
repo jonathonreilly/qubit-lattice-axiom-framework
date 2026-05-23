@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 133 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 378 |
+| **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1301 |
+| unaudited | 1300 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 635 |
+| `audited_clean` | 636 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 27 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1526 |
+| `unaudited` | 1525 |
 
 | claim_type | count |
 |---|---:|
@@ -363,6 +363,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | claude-opus | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5406,6 +5407,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** If f has mass dimension d and C_M is dimensionless, then C_M f^alpha has mass dimension d alpha, so requiring mass dimension one gives d alpha = 1 and alpha = 1/d; at d = 4 this is 1/4.  _(class `A`)_
 - **chain closes:** True — The theorem follows directly from the dimensional identity [C_M f^alpha] = d alpha and the linear equation d alpha = 1. No physical density, hierarchy formula, determinant readout, scale bridge, or empirical comparator is used.
 - **rationale:** The source note cleanly restricts itself to exact dimensional algebra and explicitly excludes the downstream hierarchy/free-energy/determinant applications. The runner verifies the dimension count, alpha = 1/d solution, d=4 quarter exponent, uniqueness among checked positive integers plus monotonicity, and symbolic round trips at exact rational/sympy precision with PASS=8 and FAIL=0. Residual risk is only downstream scope drift: this theorem does not derive any physical order parameter or hierarchy formula.
+- **auditor confidence:** high
+
+### `hierarchy_effective_potential_endpoint_note`
+
+- **Note:** [`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](../../docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Class-A algebraic extraction of the small-m coefficient, endpoint sums A_2/A_4/A_inf, endpoint ratio, and dimension-4 endpoint factor from the cited Matsubara free-energy density formula; no audit of the physical electroweak insertion map.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T151724Z-b91d5ef8-hierarchy_effective_pote-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conditional on the Matsubara free-energy density formula, expand Delta f(L_t,m) at small m and evaluate the APBC sums to obtain A_2=1/(8u_0^2), A_4=1/(7u_0^2), A_inf=1/(4 sqrt(3)u_0^2), and C_inf^(4D)=(3/4)^(1/8).  _(class `A`)_
+- **chain closes:** True — Within the narrowed scope, the chain closes: the cited free-energy formula supplies the only load-bearing input, and the endpoint formulas follow by Taylor expansion and elementary APBC sums. The dimension-4 physical insertion theorem remains open but is explicitly outside the audited algebraic scope.
+- **rationale:** The load-bearing step is a genuine algebraic consequence of the cited Matsubara free-energy density formula, whose provided authority is marked as retained-grade decoration under a retained parent. The runner source actually computes the small-m coefficient and endpoint expressions rather than merely printing constants, though the Part 4 checks are external comparator checks against C_obs and are not used to close the in-scope algebra. Because the note explicitly excludes Bridge 2 from the theorem scope and does not claim physical insertion closure, that open bridge does not prevent the bounded algebraic claim from closing.
 - **auditor confidence:** high
 
 ### `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`

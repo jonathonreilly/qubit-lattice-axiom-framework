@@ -41965,24 +41965,45 @@
       "verdict_rationale": "The note is clean only as a bounded computational no-go. The runner does not hard-code the reported table; it constructs the fields over the generated families and computes the reduction check, sign survival, and fitted exponents, with no cited upstream dependency needed for the stated finite result. The source note accurately reports the runner output and keeps the safe conclusion to exact zero-source reduction, sign survival on sampled rows, and failure of clean linear scaling for this minimal architecture. Residual risk is scope control: it must not be cited as excluding unsampled architectures, parameters, DAG families, or a separately derived physical mass observable."
     },
     "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T00:08:13.358333+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "33853187c3347a81d1fe2ea8a19f96d0cfeab3935ec2189e13e40accc2f993a4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T000705Z-9f4aca68-cpt_c3_cp_squared_scalar-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note gives a direct parity computation showing (C_lat P_lat)^2 is scalar for both modular and mirror inversion conventions, and Pauli multiplication gives (G_C G_P)^2=I_int for the stated internal choices. Tensoring these two algebraic identities yields the claimed scalar square without needing an uncited parent result.",
       "claim_id": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "For the explicitly defined lattice operators C_lat, P_lat on (Z mod L)^3 with even L and internal matrices G_C,G_P=\u00b1\u03c3_3 on C^2, (CP)^2 is an exact scalar \u03b5I_V with \u03b5 fixed by the lattice-inversion convention.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T00:08:13.358333+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -41991,19 +42012,19 @@
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "(CP)^2 = (C_lat P_lat)^2 \u2297 (G_C G_P)^2 = (\u03b5_lat I_lat) \u2297 I_int = \u03b5_lat I_V.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "c10fbff05672b23d4af5099ee808303e80769c5b7ab23cc046c6c1dfb35a77c6",
       "note_path": "docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the terminology around calling \u03c3_3 a grading automorphism; the audited closure uses the explicit \u03c3_3 conjugation convention as stated.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -42183,18 +42204,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 44,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 44
       },
       "runner_path": "scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py",
       "title": "CPT C3 \u2014 (CP)\u00b2 = \u03b5\u00b7I Narrow Theorem on Explicit Cl(3) \u00d7 Z\u00b3 C, P",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over explicit operators and retained Cl(3) representation inputs. The runner source instantiates the Pauli matrices, lattice parity, and inversion permutations and checks the identities by exact symbolic matrix multiplication rather than print-only constants. The finite runner checks support the construction, while the note text supplies the general even-L parity argument. The verdict is clean within the bounded scope of the explicit C and P choices, not as a derivation of those choices from deeper framework axioms."
     },
     "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T21:19:08.934001+00:00",

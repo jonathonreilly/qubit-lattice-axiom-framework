@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 381 |
+| **retained_bounded** | 382 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1289 |
+| unaudited | 1288 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 634 |
+| `audited_clean` | 635 |
 | `audited_conditional` | 105 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1513 |
+| `unaudited` | 1512 |
 
 | claim_type | count |
 |---|---:|
@@ -208,6 +208,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | claude-opus | C | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2637,6 +2638,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within that finite scoped sweep, the runner source computes the instantaneous and source-driven fields, zero-source reduction, sign counts, mean shifts, and log-log exponents, and the stdout matches the source note. The result does not establish any broader no-go for other coupled-field architectures, families, gain rules, or source laws.
 - **rationale:** The note is clean only as a bounded computational no-go. The runner does not hard-code the reported table; it constructs the fields over the generated families and computes the reduction check, sign survival, and fitted exponents, with no cited upstream dependency needed for the stated finite result. The source note accurately reports the runner output and keeps the safe conclusion to exact zero-source reduction, sign survival on sampled rows, and failure of clean linear scaling for this minimal architecture. Residual risk is scope control: it must not be cited as excluding unsampled architectures, parameters, DAG families, or a separately derived physical mass observable.
 - **auditor confidence:** medium
+
+### `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the explicitly defined lattice operators C_lat, P_lat on (Z mod L)^3 with even L and internal matrices G_C,G_P=±σ_3 on C^2, (CP)^2 is an exact scalar εI_V with ε fixed by the lattice-inversion convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T000705Z-9f4aca68-cpt_c3_cp_squared_scalar-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** (CP)^2 = (C_lat P_lat)^2 ⊗ (G_C G_P)^2 = (ε_lat I_lat) ⊗ I_int = ε_lat I_V.  _(class `A`)_
+- **chain closes:** True — The note gives a direct parity computation showing (C_lat P_lat)^2 is scalar for both modular and mirror inversion conventions, and Pauli multiplication gives (G_C G_P)^2=I_int for the stated internal choices. Tensoring these two algebraic identities yields the claimed scalar square without needing an uncited parent result.
+- **rationale:** The load-bearing step is a genuine algebraic closure over explicit operators and retained Cl(3) representation inputs. The runner source instantiates the Pauli matrices, lattice parity, and inversion permutations and checks the identities by exact symbolic matrix multiplication rather than print-only constants. The finite runner checks support the construction, while the note text supplies the general even-L parity argument. The verdict is clean within the bounded scope of the explicit C and P choices, not as a derivation of those choices from deeper framework axioms.
+- **auditor confidence:** high
 
 ### `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17`
 

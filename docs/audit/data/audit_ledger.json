@@ -97880,85 +97880,26 @@
       "verdict_rationale": "The load-bearing step is the introduction of beta_eff as R_O^(-1)(P_Lambda(beta)), followed by immediate inverse-function substitution. The runner supports monotonicity, in-range inverse checks, and firewall claims, but it does not turn the coordinate identity into an independent derivation of the parent bridge quantity. Under the rubric, this is class E and therefore audited_renaming even though the bounded identity is internally valid."
     },
     "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": {
-      "audit_date": "2026-05-07T11:45:36.730110+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
-          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
-          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Audited the closed small-beta/onset theorem that the first nonlocal full-vacuum plaquette mixed-cumulant contribution is 4/18^5=1/472392 and hence beta_eff(beta)=beta+beta^5/26244+O(beta^6), with beta=6 continuation outside scope.",
-          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "Within the factorized beta=6 source-sector class T=M D6^loc R M with positive conjugation-symmetric diagonal residual R, the local Wilson factor plus Perron symmetry do not determine unique Perron moments or symmetry-reduced Jacobi coefficients for the fixed source operator J.",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
-        },
-        "dep_claim_type": {
-          "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "no_go",
-          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "no_go",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
-          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "retained_no_go",
-          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained_bounded",
-          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "retained_no_go",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
-        },
-        "deps": [
-          "gauge_scalar_temporal_completion_theorem_note",
-          "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-          "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
-        ],
-        "load_bearing_score": 11.268,
-        "runner_hash": "ae342d1744c06a72013336e999185d1f11b84597b24ede0a14d1bcd1ee532be4",
-        "transitive_descendants": 435
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-agent-019e023f-85b6-7da0-91f8-dd85c1fef888",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The retained dependencies supply the temporal kernel law, beta^5 onset, operator packet, and underdetermination of beta_eff(6)/Perron data. The note's two analytic increasing completions share those retained premises and produce distinct local-response readouts, so the current packet cannot entail a unique BRIDGE value.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-      "claim_scope": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added.",
+      "claim_scope": null,
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": "2026-05-07T11:45:36.730110+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "high",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-07T11:43:20.565290+00:00",
-          "auditor": "codex-audit-loop-agent-019e023c-f229-7d42-a2ba-dcce850ff685",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "The current retained Wilson packet does not entail the exact observable bridge <P>_full = R_O(beta_eff) at beta=6 without adding an independently selected nonperturbative completion object.",
-          "claim_type": "no_go",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-07T11:45:36.729840+00:00",
-          "auditor": "codex-audit-loop-agent-019e023f-85b6-7da0-91f8-dd85c1fef888",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added.",
-          "claim_type": "no_go",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_scalar_temporal_completion_theorem_note",
@@ -97968,24 +97909,24 @@
         "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "retained_no_go",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
         "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
         "scripts/frontier_scalar_3plus1_temporal_ratio.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_no_go",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 12.384,
-      "load_bearing_step": "The two completion witnesses agree on every retained premise, but BRIDGE evaluates them as R_O(beta_eff^-(6)) and R_O(beta_eff^+(6)), which are unequal because R_O is injective.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b66bb2c03e10b4d3d53f631836169a7fb28fc415d9f5d3b605eda7f58ef021a0",
       "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": "Re-check that the witnesses are used only for non-entailment from the current packet, not as asserted physical Wilson completions.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -98038,109 +97979,153 @@
             "total_pass": 13
           },
           "verdict_rationale": "The note proves a narrow formal no-go, not a positive plaquette bridge: current retained primitives plus the finite onset/regularity data do not select the missing beta-6 completion object. The proof uses a valid two-witness non-entailment argument and explicitly keeps fitted beta_eff, external plaquette values, and perturbative imports outside the derivation. Residual risk is only scope creep: this clean verdict applies to the current-packet non-entailment claim, not to any stronger claim that Wilson theory cannot determine the physical plaquette."
+        },
+        {
+          "archived_at": "2026-05-23T13:34:34.128077+00:00",
+          "audit_date": "2026-05-07T11:45:36.730110+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
+              "gauge_vacuum_plaquette_framework_point_underdetermination_note": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+              "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Audited the closed small-beta/onset theorem that the first nonlocal full-vacuum plaquette mixed-cumulant contribution is 4/18^5=1/472392 and hence beta_eff(beta)=beta+beta^5/26244+O(beta^6), with beta=6 continuation outside scope.",
+              "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "Within the factorized beta=6 source-sector class T=M D6^loc R M with positive conjugation-symmetric diagonal residual R, the local Wilson factor plus Perron symmetry do not determine unique Perron moments or symmetry-reduced Jacobi coefficients for the fixed source operator J.",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
+            },
+            "dep_claim_type": {
+              "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_framework_point_underdetermination_note": "no_go",
+              "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "no_go",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
+              "gauge_vacuum_plaquette_framework_point_underdetermination_note": "retained_no_go",
+              "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained_bounded",
+              "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "retained_no_go",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+            },
+            "deps": [
+              "gauge_scalar_temporal_completion_theorem_note",
+              "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+              "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+            ],
+            "load_bearing_score": 11.268,
+            "runner_hash": "ae342d1744c06a72013336e999185d1f11b84597b24ede0a14d1bcd1ee532be4",
+            "transitive_descendants": 435
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-agent-019e023f-85b6-7da0-91f8-dd85c1fef888",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The retained dependencies supply the temporal kernel law, beta^5 onset, operator packet, and underdetermination of beta_eff(6)/Perron data. The note's two analytic increasing completions share those retained premises and produce distinct local-response readouts, so the current packet cannot entail a unique BRIDGE value.",
+          "claim_scope": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-07T11:45:36.730110+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-07T11:43:20.565290+00:00",
+              "auditor": "codex-audit-loop-agent-019e023c-f229-7d42-a2ba-dcce850ff685",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "The current retained Wilson packet does not entail the exact observable bridge <P>_full = R_O(beta_eff) at beta=6 without adding an independently selected nonperturbative completion object.",
+              "claim_type": "no_go",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-07T11:45:36.729840+00:00",
+              "auditor": "codex-audit-loop-agent-019e023f-85b6-7da0-91f8-dd85c1fef888",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added.",
+              "claim_type": "no_go",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "The two completion witnesses agree on every retained premise, but BRIDGE evaluates them as R_O(beta_eff^-(6)) and R_O(beta_eff^+(6)), which are unequal because R_O is injective.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check that the witnesses are used only for non-entailment from the current packet, not as asserted physical Wilson completions.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 7,
+            "C": 3,
+            "D": 0,
+            "total_pass": 13
+          },
+          "verdict_rationale": "The no-go is a valid two-witness non-entailment argument over retained inputs: the witnesses share the retained onset and source/operator data but differ by an O(beta^6) term at beta=6. Since the local response is strictly increasing, the bridge readouts differ, so a derivation from the same packet cannot select one without importing the missing exact nonperturbative object. The runner supports this with input checks, exact witness arithmetic, and local-response computations, and it does not use a fitted beta_eff or external plaquette comparator. Residual risk is limited to witness admissibility resting on the supplied retained_no_go underdetermination dependencies."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 3,
-        "B": 7,
-        "C": 3,
+        "A": 0,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 13
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py",
       "title": "Gauge-Scalar Temporal Observable Bridge No-Go Theorem",
       "transitive_descendants": 166,
-      "verdict_rationale": "The no-go is a valid two-witness non-entailment argument over retained inputs: the witnesses share the retained onset and source/operator data but differ by an O(beta^6) term at beta=6. Since the local response is strictly increasing, the bridge readouts differ, so a derivation from the same packet cannot select one without importing the missing exact nonperturbative object. The runner supports this with input checks, exact witness arithmetic, and local-response computations, and it does not use a fitted beta_eff or external plaquette comparator. Residual risk is limited to witness admissibility resting on the supplied retained_no_go underdetermination dependencies."
+      "verdict_rationale": null
     },
     "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02": {
-      "audit_date": "2026-05-07T17:08:26.307418+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
-          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added."
-        },
-        "dep_claim_type": {
-          "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
-          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go"
-        },
-        "dep_effective_status": {
-          "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
-          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go"
-        },
-        "deps": [
-          "gauge_scalar_temporal_completion_theorem_note",
-          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
-        ],
-        "load_bearing_score": 9.752,
-        "runner_hash": "347ca689815582b62efdfd53aee8570e2a99dc6fafb474779405268eea3ed2cf",
-        "transitive_descendants": 430
-      },
-      "audit_status": "audited_clean",
-      "auditor": "fresh-context-gauge-scalar-temporal-observable-bridge-stretch-20260507-B",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The scoped claim is the gate/obstruction statement, not a derivation of the positive bridge. Given the retained_no_go companion theorem and retained_bounded temporal completion theorem, the note's current conclusion that the positive bridge is not derivable from the retained packet closes at gate level.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
-      "claim_scope": "Open-gate stretch note for the positive observable bridge <P>_full = R_O(beta_eff), now bounded by the retained no-go route rather than promoted as a positive bridge theorem.",
+      "claim_scope": null,
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": "2026-05-07T17:08:26.307418+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "high",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-07T17:08:09.302797+00:00",
-          "auditor": "codex-fresh-gauge-bridge-stretch-20260507-A",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Positive-bridge gate for <P>_full = R_O(beta_eff): audited only that the source note records non-derivability from A_min/current retained Wilson packet and bounds the route by the retained no-go, not that it derives a positive plaquette bridge.",
-          "claim_type": "open_gate",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-07T17:08:26.307165+00:00",
-          "auditor": "fresh-context-gauge-scalar-temporal-observable-bridge-stretch-20260507-B",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Open-gate stretch note for the positive observable bridge <P>_full = R_O(beta_eff), now bounded by the retained no-go route rather than promoted as a positive bridge theorem.",
-          "claim_type": "open_gate",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
         "gauge_scalar_temporal_completion_theorem_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "open_gate",
-      "effective_status_reason": "audited_open_gate",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "open_gate",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 8.248,
-      "load_bearing_step": "The no-go's two-witness argument shows that two admissible completions of the retained Wilson packet agree on every retained premise but produce distinct R_O(beta_eff(6)) readouts; therefore the bridge is not derivable from the current packet.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8991024dc76f93a92831b9eb96a435dcb8c0e2aef40bfca1ef9d3f3bb276c496",
       "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "Second auditor should verify only that the companion no-go and bounded completion dependencies remain retained-grade; older legacy status prose in the source note is not part of this scoped open-gate verdict.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
@@ -98329,21 +98314,100 @@
             "total_pass": 33
           },
           "verdict_rationale": "The source note explicitly refuses to promote <P>_full = R_O(beta_eff), names the missing nonperturbative beta_eff/effective-action/spectral primitive, and records forbidden imports. The runner is only class A text/structure verification, so it does not prove the bridge, but that is sufficient for the scoped open_gate claim. Residual risk is only that this note should not be cited as a no-go proof stronger than the retained no-go dependency or as a positive observable bridge."
+        },
+        {
+          "archived_at": "2026-05-23T13:34:34.128274+00:00",
+          "audit_date": "2026-05-07T17:08:26.307418+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
+              "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added."
+            },
+            "dep_claim_type": {
+              "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
+              "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go"
+            },
+            "dep_effective_status": {
+              "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
+              "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go"
+            },
+            "deps": [
+              "gauge_scalar_temporal_completion_theorem_note",
+              "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
+            ],
+            "load_bearing_score": 9.752,
+            "runner_hash": "347ca689815582b62efdfd53aee8570e2a99dc6fafb474779405268eea3ed2cf",
+            "transitive_descendants": 430
+          },
+          "audit_status": "audited_clean",
+          "auditor": "fresh-context-gauge-scalar-temporal-observable-bridge-stretch-20260507-B",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The scoped claim is the gate/obstruction statement, not a derivation of the positive bridge. Given the retained_no_go companion theorem and retained_bounded temporal completion theorem, the note's current conclusion that the positive bridge is not derivable from the retained packet closes at gate level.",
+          "claim_scope": "Open-gate stretch note for the positive observable bridge <P>_full = R_O(beta_eff), now bounded by the retained no-go route rather than promoted as a positive bridge theorem.",
+          "claim_type": "open_gate",
+          "claim_type_last_reviewed": "2026-05-07T17:08:26.307418+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-07T17:08:09.302797+00:00",
+              "auditor": "codex-fresh-gauge-bridge-stretch-20260507-A",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Positive-bridge gate for <P>_full = R_O(beta_eff): audited only that the source note records non-derivability from A_min/current retained Wilson packet and bounds the route by the retained no-go, not that it derives a positive plaquette bridge.",
+              "claim_type": "open_gate",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-07T17:08:26.307165+00:00",
+              "auditor": "fresh-context-gauge-scalar-temporal-observable-bridge-stretch-20260507-B",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Open-gate stretch note for the positive observable bridge <P>_full = R_O(beta_eff), now bounded by the retained no-go route rather than promoted as a positive bridge theorem.",
+              "claim_type": "open_gate",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03:retained_no_go->unaudited",
+          "load_bearing_step": "The no-go's two-witness argument shows that two admissible completions of the retained Wilson packet agree on every retained premise but produce distinct R_O(beta_eff(6)) readouts; therefore the bridge is not derivable from the current packet.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should verify only that the companion no-go and bounded completion dependencies remain retained-grade; older legacy status prose in the source note is not part of this scoped open-gate verdict.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 45,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 45
+          },
+          "verdict_rationale": "The note explicitly records A_min, forbidden imports, and non-closure of the positive observable bridge, and it does not claim to compute <P>_full. Its current closure step rests on the retained companion no-go theorem's two-witness underdetermination argument, so the only clean scope is the open gate bounded negatively. The runner is structural documentation checking only, but it is consistent with the source note and does not hard-code a positive comparator or fitted bridge."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 45,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 45
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
       "title": "Gauge-Scalar Temporal Observable Bridge Stretch Attempt",
       "transitive_descendants": 151,
-      "verdict_rationale": "The note explicitly records A_min, forbidden imports, and non-closure of the positive observable bridge, and it does not claim to compute <P>_full. Its current closure step rests on the retained companion no-go theorem's two-witness underdetermination argument, so the only clean scope is the open gate bounded negatively. The runner is structural documentation checking only, but it is consistent with the source note and does not hard-code a positive comparator or fitted bridge."
+      "verdict_rationale": null
     },
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-10T23:39:33.062002+00:00",
@@ -103431,45 +103495,24 @@
       "verdict_rationale": "The no-go claim closes from the two retained dependencies and elementary polynomial calculus. The hierarchy-lemma companion supplies the endpoint identities, finite-support-to-polynomial bridge, and global polynomial-growth lemma; the parent note applies those retained inputs to the separate finite-truncation question and derives the obstruction. That is a distinct no-go theorem about the diagonal connected hierarchy, not merely a restatement of the lemma row. The runner cache is status ok and records THEOREM PASS=4 SUPPORT=3 FAIL=0, including the finite-truncation-to-polynomial implication, the polynomial-derivative constant argument, and the local/finite-Wilson contradiction. Residual risk is limited to the stated bounded premises and does not promote analytic P(6), chi_L(beta), or an explicit nonpolynomial solution."
     },
     "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": {
-      "audit_date": "2026-05-10T13:40:01.143822+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
-        ],
-        "load_bearing_score": 12.757,
-        "runner_hash": "de8639c5622055bdf528b2085c4a1e1d376e1442e19783709f4e0f89c1d0cad8",
-        "transitive_descendants": 611
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e121c-0aca-7ab0-b5e4-6f569c4748f4",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebra from an independent product of normalized one-link Wilson convolution factors to a_(p,q)(beta)^4 is clear. The supplied one-hop authorities do not explicitly establish the load-bearing temporal-gauge mixed-kernel factorization into independent one-link convolutions on the marked source sector, and the runner hard-codes that structure rather than deriving it from the transfer kernel.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-      "claim_scope": "Bounded claim that the normalized Wilson mixed-kernel compression on the marked-plaquette character sector is exactly the four marked-link local factor a_(p,q)(beta)^4, with non-marked links contributing only trivial-channel scalars.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-10T13:40:01.143822+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -103478,19 +103521,19 @@
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.974,
-      "load_bearing_step": "Each marked-link factor contributes the normalized irrep eigenvalue a_(p,q)(beta), while every non-marked mixed-link factor contributes only a rep-independent scalar, hence D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "2302477e6ecfc7280dfb5d37239436fe1c315e9a0527b60a0afef7646855b700",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or audit an explicit theorem deriving temporal-gauge mixed-kernel factorization over spatial links and the marked/non-marked compression map from the exact Wilson transfer kernel.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -103691,21 +103734,74 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the decisive mixed-kernel-to-one-link-convolution bridge is asserted rather than derived in the restricted packet. Why this blocks: the runner constructs the diagonal local factor and sets the non-marked normalized scalar to c00/c00, so it witnesses consistency of the claimed factorization but does not derive it from the full transfer kernel. Repair target: add or cite a retained theorem constructing the temporal-gauge mixed-kernel factorization over spatial links and proving the marked/non-marked action on the marked plaquette character sector. Claim boundary until fixed: the note supports a conditional algebraic reduction of an already-factorized mixed kernel, not an independently closed bounded theorem from the provided authority."
+        },
+        {
+          "archived_at": "2026-05-23T13:34:34.128690+00:00",
+          "audit_date": "2026-05-10T13:40:01.143822+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+            ],
+            "load_bearing_score": 12.757,
+            "runner_hash": "de8639c5622055bdf528b2085c4a1e1d376e1442e19783709f4e0f89c1d0cad8",
+            "transitive_descendants": 611
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e121c-0aca-7ab0-b5e4-6f569c4748f4",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebra from an independent product of normalized one-link Wilson convolution factors to a_(p,q)(beta)^4 is clear. The supplied one-hop authorities do not explicitly establish the load-bearing temporal-gauge mixed-kernel factorization into independent one-link convolutions on the marked source sector, and the runner hard-codes that structure rather than deriving it from the transfer kernel.",
+          "claim_scope": "Bounded claim that the normalized Wilson mixed-kernel compression on the marked-plaquette character sector is exactly the four marked-link local factor a_(p,q)(beta)^4, with non-marked links contributing only trivial-channel scalars.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T13:40:01.143822+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "Each marked-link factor contributes the normalized irrep eigenvalue a_(p,q)(beta), while every non-marked mixed-link factor contributes only a rep-independent scalar, hence D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add or audit an explicit theorem deriving temporal-gauge mixed-kernel factorization over spatial links and the marked/non-marked compression map from the exact Wilson transfer kernel.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 2,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Issue: the note imports the temporal-gauge mixed-kernel linkwise factorization and its exact compression to one-link Wilson convolution eigenvalues without a supplied retained bridge theorem. Why this blocks: the cited transfer and source-sector notes establish the transfer setup and a central diagonal residual compression, but not the specific marked-link/non-marked-link decomposition that identifies the normalized diagonal sequence as a_(p,q)^4. Repair target: add or cite a retained theorem deriving the linkwise mixed-kernel factorization and compression map from the exact Wilson transfer kernel on the accepted 3+1 source surface. Claim boundary until fixed: conditional algebraic consequence that if the normalized mixed kernel is the stated product of one-link Wilson convolutions, then the marked sector factor is exactly a_(p,q)(beta)^4."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
+        "A": 0,
         "B": 0,
         "C": 0,
-        "D": 2,
-        "total_pass": 7
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
       "title": "Gauge-Vacuum Plaquette Local / Environment Factorization Theorem",
       "transitive_descendants": 1005,
-      "verdict_rationale": "Issue: the note imports the temporal-gauge mixed-kernel linkwise factorization and its exact compression to one-link Wilson convolution eigenvalues without a supplied retained bridge theorem. Why this blocks: the cited transfer and source-sector notes establish the transfer setup and a central diagonal residual compression, but not the specific marked-link/non-marked-link decomposition that identifies the normalized diagonal sequence as a_(p,q)^4. Repair target: add or cite a retained theorem deriving the linkwise mixed-kernel factorization and compression map from the exact Wilson transfer kernel on the accepted 3+1 source surface. Claim boundary until fixed: conditional algebraic consequence that if the normalized mixed kernel is the stated product of one-link Wilson convolutions, then the marked sector factor is exactly a_(p,q)(beta)^4."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note": {
       "audit_date": "2026-05-02T17:13:59.578131+00:00",
@@ -103904,61 +104000,44 @@
       "verdict_rationale": "The claim is negative and scoped to underdetermination inside the residual source-sector environment class, not to computing canonical beta=6 Jacobi data. The runner constructs two admissible residual environments, verifies positivity/symmetry/Perron properties, and obtains distinct moments and Jacobi coefficients for the same J. This is a direct counterexample to uniqueness within the scoped class."
     },
     "gauge_vacuum_plaquette_perron_reduction_theorem_note": {
-      "audit_date": "2026-05-09T14:55:54.165869+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
-        ],
-        "load_bearing_score": 11.431,
-        "runner_hash": "9a21307e4888c3f8e6002bb90d94f085b0312236542516a1b4418f8326f6ec36",
-        "transitive_descendants": 487
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-audit-loop-019e0d3b-7f49-71c3-9481-052d4fd60131",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Given the retained_bounded upstream transfer-operator theorem's positive symmetric kernel and explicit self-adjoint plaquette operator J, standard Perron-Jentzsch and spectral-theorem arguments close the finite-surface reduction. This does not construct psi_0(L_s,6), beta=6 Jacobi coefficients, infinite-volume control, or canonical P(6).",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_perron_reduction_theorem_note",
-      "claim_scope": "Finite Wilson L_s^3 x L_t source-surface reduction: for beta>0, bounded Borel functions of the explicit plaquette source J have a large-derived-time transfer-state limit given by the unique Perron vector state, equivalently by its Jacobi data.",
+      "claim_scope": null,
       "claim_type": "decoration",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-09T14:55:54.165869+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "critical",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+      "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 12.961,
-      "load_bearing_step": "By positivity improvement and the compact self-adjoint Perron-Jentzsch theorem, T has a simple spectral-radius eigenvalue with a unique strictly positive Perron vector, and spectral decomposition gives the large-L_t transfer state as <psi_0,f(J)psi_0>.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "fb7055adbf82f99386eecaab739819cefd9f12df8e4be35f29ad72eb23375420",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_PERRON_REDUCTION_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-check that the upstream strict-positivity and compactness hypotheses are retained explicitly; the included runner is a finite proxy and should not be credited as an exact Wilson-transfer computation.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -104073,6 +104152,55 @@
             "total_pass": 8
           },
           "verdict_rationale": "Issue: the note's exact theorem rests on the asserted pointwise strict positivity and symmetry of the finite Wilson transfer kernel, while the declared dependency set is empty and the runner checks only a finite truncated proxy built from a chosen matrix exponential. Why this blocks: the functional-analytic Perron reduction is standard after that premise, but the restricted audit packet does not establish that the actual gauge-invariant Wilson transfer operator satisfies the required kernel hypotheses. Repair target: cite and audit the exact transfer-operator/character-recurrence theorem proving the compact self-adjoint positivity-improving kernel, or extend the runner to construct/check the exact finite Wilson transfer object rather than a proxy. Claim boundary until fixed: the note may claim a conditional Perron/Jacobi reduction assuming the exact positive symmetric transfer kernel; it cannot be retained as an unconditional positive theorem from the supplied inputs."
+        },
+        {
+          "archived_at": "2026-05-23T13:34:34.128786+00:00",
+          "audit_date": "2026-05-09T14:55:54.165869+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+            ],
+            "load_bearing_score": 11.431,
+            "runner_hash": "9a21307e4888c3f8e6002bb90d94f085b0312236542516a1b4418f8326f6ec36",
+            "transitive_descendants": 487
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-audit-loop-019e0d3b-7f49-71c3-9481-052d4fd60131",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Given the retained_bounded upstream transfer-operator theorem's positive symmetric kernel and explicit self-adjoint plaquette operator J, standard Perron-Jentzsch and spectral-theorem arguments close the finite-surface reduction. This does not construct psi_0(L_s,6), beta=6 Jacobi coefficients, infinite-volume control, or canonical P(6).",
+          "claim_scope": "Finite Wilson L_s^3 x L_t source-surface reduction: for beta>0, bounded Borel functions of the explicit plaquette source J have a large-derived-time transfer-state limit given by the unique Perron vector state, equivalently by its Jacobi data.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-09T14:55:54.165869+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "By positivity improvement and the compact self-adjoint Perron-Jentzsch theorem, T has a simple spectral-radius eigenvalue with a unique strictly positive Perron vector, and spectral decomposition gives the large-L_t transfer state as <psi_0,f(J)psi_0>.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check that the upstream strict-positivity and compactness hypotheses are retained explicitly; the included runner is a finite proxy and should not be credited as an exact Wilson-transfer computation.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 8,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 8
+          },
+          "verdict_rationale": "Issue: the note's substantive work is a standard Perron-Jentzsch/spectral-theorem reduction once the single upstream transfer-operator theorem supplies a strictly positive symmetric kernel and explicit self-adjoint J. Why this blocks a clean verdict: with zero external comparator or independent framework computation, the claim is a mathematical corollary of one retained_bounded parent, and the runner only builds a truncated proxy rather than the actual Wilson transfer operator. Repair target: either box it explicitly as a corollary under the transfer-operator/character-recurrence theorem, or add an independent retained construction/computation of the actual Perron/Jacobi data. Claim boundary until fixed: finite-surface Perron/Jacobi reduction only, not explicit beta=6 coefficients, infinite-volume control, or canonical P(6)."
         }
       ],
       "prose_corrections": [],
@@ -104080,16 +104208,16 @@
       "relabel_date": "2026-05-06T17:45:26.976879+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 8,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
       "title": "Gauge-Vacuum Plaquette Perron-State Reduction Theorem",
       "transitive_descendants": 996,
-      "verdict_rationale": "Issue: the note's substantive work is a standard Perron-Jentzsch/spectral-theorem reduction once the single upstream transfer-operator theorem supplies a strictly positive symmetric kernel and explicit self-adjoint J. Why this blocks a clean verdict: with zero external comparator or independent framework computation, the claim is a mathematical corollary of one retained_bounded parent, and the runner only builds a truncated proxy rather than the actual Wilson transfer operator. Repair target: either box it explicitly as a corollary under the transfer-operator/character-recurrence theorem, or add an independent retained construction/computation of the actual Perron/Jacobi data. Claim boundary until fixed: finite-surface Perron/Jacobi reduction only, not explicit beta=6 coefficients, infinite-volume control, or canonical P(6)."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_reduction_existence_theorem_note": {
       "audit_date": "2026-05-11T23:05:32.069495+00:00",
@@ -104318,53 +104446,24 @@
       "verdict_rationale": "Under the bounded scope, the decisive existence and uniqueness claim is a direct analytic/algebraic consequence of compactness, nonconstant observables, strict positivity of the finite measures, and the inverse-function construction stated in the packet. The open g_bare and staggered-Dirac gates affect positive-theorem promotion and downstream quantitative interpretation, but they are explicitly not load-bearing for this finite-surface reduction-existence theorem. The canonical beta_eff number and old constant-lift comparison are support consequences outside the ratified clean scope."
     },
     "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T18:42:19.663959+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Standalone compact-group temporal-gauge Wilson mixed-kernel factorization over spatial links, per-link Peter-Weyl convolution diagonalization, trivial-channel normalization, and marked/non-marked compression on tensor-product Peter-Weyl marked-link basis functions, excluding SU(3), beta=6, source-sector, transfer-operator, and physical-framework claims.",
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded.",
-          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Abstract finite-truncation SU(3) character-algebra theorem only: for B_N={(p,q):0<=p,q<=N} and an abstract real nonnegative conjugation-symmetric normalized coefficient sequence rho_(p,q), the central class-function convolution operator built from Z=sum d_(p,q) rho_(p,q) chi_(p,q) acts diagonally as C chi_(p,q)=rho_(p,q) chi_(p,q), the coefficients are unique, and the diagonal operator is positive, self-adjoint, and swap-symmetric. This excludes any identification with Wilson action data, beta=6 framework-point coefficients, unmarked spatial environment compression, physical plaquette transfer, or parent residual-environment closure."
-        },
-        "dep_claim_type": {
-          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem",
-          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded",
-          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "32a77b30a1e69d6559b145427b551cd80089a2c94f2b7aabef102004cdfe104f",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_renaming",
-      "auditor": "codex-cli-gpt-5.5-20260517-183857-41cdea85-gauge_vacuum_plaquette_r-013",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The equality closes only by definition of Z_beta^env, not by an independent derivation that the coefficients come from the unmarked spatial Wilson environment. Also, applying I3 requires rho_(0,0)=1, while the packet gives rho_(0,0)=kappa_(0,0) and I1 only supplies kappa_(0,0)>0.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-      "claim_scope": "An abstract per-weight diagonal-to-convolution representation of the stripped residual operator after assigning the class-function coefficients from that same residual operator.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-17T18:42:19.663959+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -104375,34 +104474,96 @@
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_renaming",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_renaming",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The note defines Z_beta^env as the class function whose normalized convolution operator equals R_beta^env, with coefficients z_(p,q)^env = (kappa_(p,q)/a_(p,q)^4) z_(0,0)^env.",
-      "load_bearing_step_class": "E",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "cead0aee658d64992b4ee464b214d95a585a9e9f5324023c3b1e991a0feddfa7",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Re-check only after a revised note constructs Z_beta^env from the unmarked spatial Wilson integral and supplies the missing kappa_(0,0)=1 normalization or an equivalent rescaled statement.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T13:34:34.128856+00:00",
+          "audit_date": "2026-05-17T18:42:19.663959+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Standalone compact-group temporal-gauge Wilson mixed-kernel factorization over spatial links, per-link Peter-Weyl convolution diagonalization, trivial-channel normalization, and marked/non-marked compression on tensor-product Peter-Weyl marked-link basis functions, excluding SU(3), beta=6, source-sector, transfer-operator, and physical-framework claims.",
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded.",
+              "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Abstract finite-truncation SU(3) character-algebra theorem only: for B_N={(p,q):0<=p,q<=N} and an abstract real nonnegative conjugation-symmetric normalized coefficient sequence rho_(p,q), the central class-function convolution operator built from Z=sum d_(p,q) rho_(p,q) chi_(p,q) acts diagonally as C chi_(p,q)=rho_(p,q) chi_(p,q), the coefficients are unique, and the diagonal operator is positive, self-adjoint, and swap-symmetric. This excludes any identification with Wilson action data, beta=6 framework-point coefficients, unmarked spatial environment compression, physical plaquette transfer, or parent residual-environment closure."
+            },
+            "dep_claim_type": {
+              "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem",
+              "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded",
+              "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+              "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "32a77b30a1e69d6559b145427b551cd80089a2c94f2b7aabef102004cdfe104f",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_renaming",
+          "auditor": "codex-cli-gpt-5.5-20260517-183857-41cdea85-gauge_vacuum_plaquette_r-013",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The equality closes only by definition of Z_beta^env, not by an independent derivation that the coefficients come from the unmarked spatial Wilson environment. Also, applying I3 requires rho_(0,0)=1, while the packet gives rho_(0,0)=kappa_(0,0) and I1 only supplies kappa_(0,0)>0.",
+          "claim_scope": "An abstract per-weight diagonal-to-convolution representation of the stripped residual operator after assigning the class-function coefficients from that same residual operator.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-17T18:42:19.663959+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "The note defines Z_beta^env as the class function whose normalized convolution operator equals R_beta^env, with coefficients z_(p,q)^env = (kappa_(p,q)/a_(p,q)^4) z_(0,0)^env.",
+          "load_bearing_step_class": "E",
+          "notes_for_re_audit_if_any": "Re-check only after a revised note constructs Z_beta^env from the unmarked spatial Wilson integral and supplies the missing kappa_(0,0)=1 normalization or an equivalent rescaled statement.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 20,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 20
+          },
+          "verdict_rationale": "The runner mirrors the definitional step: it sets z_env = rho_env * z_00_env and then verifies the resulting diagonal matrices agree. It does not construct Z_beta^env from the unmarked Wilson environment integral or derive the disputed bridge. Its claimed rho_(0,0)=1 check also does not prove the needed normalization; it only reduces rho_(0,0) to kappa_(0,0)."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 20,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 20
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": "The runner mirrors the definitional step: it sets z_env = rho_env * z_00_env and then verifies the resulting diagonal matrices agree. It does not construct Z_beta^env from the unmarked Wilson environment integral or derive the disputed bridge. Its claimed rho_(0,0)=1 check also does not prove the needed normalization; it only reduces rho_(0,0) to kappa_(0,0)."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10": {
       "audit_date": "2026-05-10T23:42:59.130843+00:00",
@@ -106534,28 +106695,34 @@
       "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": {
-      "audit_date": "2026-05-02T17:26:05.797476+00:00",
+      "audit_date": "2026-05-23T13:34:13.703473+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 11.709,
-        "transitive_descendants": 295
+        "load_bearing_score": 19.996,
+        "runner_hash": "16014dbd75f2d84c242fcb369baf51ae06f7ef3e7cbf382a1ffe7bb46d834412",
+        "transitive_descendants": 1020
       },
       "audit_status": "audited_clean",
-      "auditor": "codex-restricted-popper-transfer-character-20260502",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T133413Z-gauge_vacuum_plaquette_transfer_operator-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The note gives the finite transfer-kernel factorization and the SU(3) tensor-product recurrence needed to identify the local plaquette source with J. The open beta=6 transfer-state/Perron data are explicitly outside scope.",
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input.",
       "claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-      "claim_scope": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-02T17:26:05.797476+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": "2026-05-23T13:34:13.703473+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "claim_type_reaudit": {
@@ -106577,46 +106744,53 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "mode": "legacy_confirmed_clean_claim_type_reaudit",
+        "mode": "judicial_third_pass",
         "second_audit": {
-          "audit_date": "2026-04-30T15:02:52.059914+00:00",
-          "auditor": "codex-audit-loop-second-20260430-gauge-transfer-character-drain2",
-          "auditor_family": "codex-gpt-5",
+          "audit_date": "2026-05-23T13:29:38.218684+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T132813Z-341c052c-gauge_vacuum_plaquette_t-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the finite periodic SU(3) Wilson 3+1 source surface, the plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented as its spectral measure in the transfer state; explicit beta=6 Perron/thermal data are not included.",
+          "claim_type": "positive_theorem",
           "independence": "fresh_context",
-          "load_bearing_step_class": "C",
+          "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "status": "third_confirmed_first",
+        "status": "third_confirmed_second",
         "third_audit": {
-          "audit_date": "2026-04-30T17:50:00.550576+00:00",
-          "auditor": "codex-judge-20260430-phase-a-transfer-character",
-          "auditor_family": "codex-gpt-5",
-          "first_auditor_error": null,
+          "audit_date": "2026-05-23T13:34:13.703473+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T133413Z-gauge_vacuum_plaquette_transfer_operator-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Incomplete for the judicial target: it records verdict and class but omits claim_type, claim_scope, and load-bearing-step detail.",
           "independence": "judicial_review",
-          "judgment_rationale": "Both auditors found the verdict clean, but disagreed on class. The runner verifies exact character identities and operator algebra; it is not producing a new numerical result from first principles, so the first auditor's A classification holds over the second's C classification.",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input.",
           "load_bearing_step_class": "A",
-          "previous_auditor_family": "codex-current",
-          "second_auditor_error": "The second auditor overclassified exact representation algebra as class C.",
-          "sided_with": "first",
+          "second_auditor_error": "none",
+          "sided_with": "second",
           "verdict": "audited_clean"
         }
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 12,
-      "effective_status": "retained_bounded",
+      "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained",
       "load_bearing_score": 19.996,
-      "load_bearing_step": "<f(X_p)>_(beta,L_s,L_t)=Tr[T_(L_s,beta)^(L_t) f(A_p)]/Tr[T_(L_s,beta)^(L_t)], with A_p identified with the character-recurrence multiplication operator J.",
+      "load_bearing_step": "The plaquette spectral measure is exactly the spectral measure of the explicit self-adjoint character-recurrence operator J in the positive transfer state induced by T_(L_s,beta).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
       "max_descendant_status_rank": 100,
       "note_hash": "7e2bca8c11159306b029fa2062d372f39ff5a511fd4f46b249ec4233ee7887a9",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-check the intended meaning of positive self-adjoint transfer operator if later scope requires operator positivity beyond positivity-preserving kernel/positive path-integral state.",
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [],
@@ -106632,7 +106806,7 @@
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py",
       "title": "Gauge-Vacuum Plaquette Transfer-Operator / Character-Recurrence Theorem",
       "transitive_descendants": 1020,
-      "verdict_rationale": "The scoped theorem is exact operator algebra on a finite Wilson source surface, not a numerical beta=6 plaquette prediction. The runner supports the character identity, recurrence, self-adjointness, slice counting, and scoped operator realization with THEOREM PASS=7 SUPPORT=2 FAIL=0. No support-class promotion is needed because the audited object is a bounded exact theorem with the remaining state-identification gap excluded."
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input."
     },
     "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17": {
       "audit_date": "2026-05-18T12:20:04.968891+00:00",

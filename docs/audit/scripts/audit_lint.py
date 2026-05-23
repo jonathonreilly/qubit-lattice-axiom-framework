@@ -47,6 +47,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+import premise_nodes
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -630,9 +632,15 @@ def main() -> int:
     # Effective-status propagation sanity. A retained-grade row's deps must
     # themselves be retained-grade. Open gates and retained_pending_chain are
     # explicit blockers, not support for downstream theorem retention.
+    # Accepted premises (canonical axiom node; allowlisted external textbook
+    # imports) are exempt: they satisfy chain closure without being retained-
+    # grade themselves. Must stay in sync with compute_effective_status.py's
+    # clean_status (both go through premise_nodes).
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:
             for d in row.get("deps", []):
+                if premise_nodes.is_accepted_premise_dep(d):
+                    continue
                 d_eff = rows.get(d, {}).get("effective_status")
                 if d_eff not in RETAINED_GRADES:
                     errors.append(

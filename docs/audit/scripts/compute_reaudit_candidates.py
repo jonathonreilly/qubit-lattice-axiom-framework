@@ -21,6 +21,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import premise_nodes
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -105,7 +107,14 @@ def current_deps_are_ratified(row: dict, rows: dict[str, dict]) -> bool:
     deps = row.get("deps", [])
     if not deps:
         return False
-    return all(dep_effective_status(dep_id, rows) in RATIFIED_DEP_STATUSES for dep_id in deps)
+    # Accepted premises (canonical axiom node; allowlisted external textbook
+    # imports) count as satisfied without being retained-grade, matching
+    # compute_effective_status / audit_lint (all go through premise_nodes).
+    return all(
+        dep_effective_status(dep_id, rows) in RATIFIED_DEP_STATUSES
+        or premise_nodes.is_accepted_premise_dep(dep_id)
+        for dep_id in deps
+    )
 
 
 def candidate_entry(cid: str, row: dict, rows: dict[str, dict], improved: list[dict]) -> dict:

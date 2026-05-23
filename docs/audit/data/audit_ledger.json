@@ -246003,22 +246003,46 @@
       "verdict_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The clean finite-rank SU(3) projector theorem can be typed as a positive_theorem because the audited scope is fully closed and does not depend on the broader cube tensor-network campaign. The derivation is best classified as A: an algebraic finite-dimensional representation-theory closure over retained Block 1 data and standard Schur/Peter-Weyl/Casimir facts, with the runner verifying the matrix construction. It is not decoration because it introduces a new explicit four-fold Haar projector primitive, not merely a restatement of Block 1. | The clean scope is the finite SU(3) projector theorem only, so reclassifying it as a positive_theorem does not promote the broader cube-closure campaign. The first audit was right that the closure is algebraic representation theory over retained Block 1 input, but overly conservative in keeping the bounded_theorem label for an exact finite object. The second audit was right on audited_clean and positive_theorem scope, but its class C label overstates the rubric fit because this is not a Cl(3)/Z^3 first-principles framework computation; it is class A algebraic closure plus finite validation. | The clean scoped result is an exact finite-dimensional SU(3) theorem, analogous in status to the retained Block 1 decomposition, so positive_theorem is the better claim type than bounded_theorem. The broader L>=3 cube tensor-network campaign remains outside the audited scope and is not promoted. The load-bearing step is best classified as A: standard representation-theoretic algebra plus retained Block 1 inputs, not a framework-axiom first-principles C computation from Cl(3) on Z^3."
     },
     "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "audit_date": "2026-05-23T14:41:45.319291+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "Self-contained finite-dimensional SU(3) adjoint tensor-product decomposition (1,1) tensor (1,1) = 1 + 8 + 8 + 10 + 10bar + 27, with explicit orthonormal CG blocks checked by the supplied runner.",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03": "Exact finite-dimensional SU(3) representation-theory construction of the Haar projector on V_(1,1)^4 = C^4096, including rank 8 and projector/equivariance identities; excludes downstream cube-closure claims."
+        },
+        "dep_claim_type": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "positive_theorem",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "retained",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 10.977,
+        "runner_hash": "27c42cf0cf93c8c26aa8ea56cf6cc7798346f5c3d2afdb7bb18a78a6c657e600",
+        "transitive_descendants": 1007
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T144145Z-su3_wigner_intertwiner_block3_theorem_no-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The bounded claim closes because the provided source performs deterministic finite enumeration rather than importing contested values or merely printing constants. The correct derivation class is A: this is algebraic/combinatorial closure over explicitly defined finite lattice objects, not class C first-principles framework computation of a new physical number. The only substantive upstream projector input is marked retained, and no external comparator, tuned numerical match, or open dependency is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The load-bearing work is finite algebraic/combinatorial closure over explicit definitions, so class A is the tighter rubric fit than class C, which is reserved for first-principles physics computation from the framework axiom. The only substantive upstream projector input is marked retained, and no non-retained dependency, external comparator, tuned numerical match, or definitional renaming is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to finite combinatorial geometry and bookkeeping, and the only substantive upstream projector input is marked retained in the packet. Class A is the tighter fit because the load-bearing work is algebraic/combinatorial closure over explicit finite definitions, not a class C first-principles physics computation from a framework axiom producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to combinatorial geometry and bookkeeping, and the only substantive upstream projector-rank primitive is marked retained. Class A is the tighter rubric fit because the load-bearing step is finite algebraic/combinatorial closure over explicit definitions, not a first-principles physics computation from an axiom node producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence maps rather than only printing expected constants. The claim closes as finite algebraic/combinatorial enumeration over explicit definitions, with the retained Block 2 rank-8 projector used only as an upstream tensor-network primitive. Class A is the tighter rubric fit than class C because this is not a first-principles physics computation from the framework axiom producing a new physical number.",
       "claim_id": "su3_wigner_intertwiner_block3_theorem_note_2026-05-03",
-      "claim_scope": "Finite L_s=3 PBC 3D cube geometry and tensor-network incidence/index structure: 27 sites, 81 directed links, 81 plaquettes, 4 plaquettes per link, 486 link-labeled adjacency edges with degree 12, and 324 plaquette-link tensor slots, using the retained Block 2 rank-8 projector only as an upstream primitive for the stated index/memory setup.",
+      "claim_scope": "Finite L_s=3 PBC 3D cube geometry and induced tensor-network incidence/index bookkeeping: site/link/plaquette counts, four-plaquette link incidence, link-labeled plaquette adjacency count/degree, and 324 tensor slots, with retained Block 2 rank-8 projector used only as an upstream primitive.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T14:36:56.059539+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-23T14:41:45.319291+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -246033,8 +246057,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-23T14:37:45.767141+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T143724Z-c9d9facd-su3_wigner_intertwiner_b-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite L_s=3 three-dimensional PBC cube geometry and the induced all-(1,1) tensor-network incidence/index bookkeeping, using the retained Block 2 rank-8 four-fold Haar projector only as an upstream primitive.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-23T14:41:45.319291+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T144145Z-su3_wigner_intertwiner_block3_theorem_no-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite L_s=3 PBC 3D cube geometry and induced tensor-network incidence/index bookkeeping: site/link/plaquette counts, four-plaquette link incidence, link-labeled plaquette adjacency count/degree, and 324 tensor slots, with retained Block 2 rank-8 projector used only as an upstream primitive.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The bounded claim closes because the provided source performs deterministic finite enumeration rather than importing contested values or merely printing constants. The correct derivation class is A: this is algebraic/combinatorial closure over explicitly defined finite lattice objects, not class C first-principles framework computation of a new physical number. The only substantive upstream projector input is marked retained, and no external comparator, tuned numerical match, or open dependency is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The load-bearing work is finite algebraic/combinatorial closure over explicit definitions, so class A is the tighter rubric fit than class C, which is reserved for first-principles physics computation from the framework axiom. The only substantive upstream projector input is marked retained, and no non-retained dependency, external comparator, tuned numerical match, or definitional renaming is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to finite combinatorial geometry and bookkeeping, and the only substantive upstream projector input is marked retained in the packet. Class A is the tighter fit because the load-bearing work is algebraic/combinatorial closure over explicit finite definitions, not a class C first-principles physics computation from a framework axiom producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to combinatorial geometry and bookkeeping, and the only substantive upstream projector-rank primitive is marked retained. Class A is the tighter rubric fit because the load-bearing step is finite algebraic/combinatorial closure over explicit definitions, not a first-principles physics computation from an axiom node producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence maps rather than only printing expected constants. The claim closes as finite algebraic/combinatorial enumeration over explicit definitions, with the retained Block 2 rank-8 projector used only as an upstream tensor-network primitive. Class A is the tighter rubric fit than class C because this is not a first-principles physics computation from the framework axiom producing a new physical number.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "Misclassified the finite combinatorial enumeration as class C rather than class A; the clean verdict and bounded scope were otherwise correct.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -246042,19 +246094,19 @@
         "su3_wigner_intertwiner_block2_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.977,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner exhaustively enumerates the finite L_s=3 PBC sites, directed links, plaquettes, link-plaquette incidences, plaquette adjacency edges, and tensor-network slot maps, then checks the stated finite counts.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "ca98526e0c8f14309685c206420546ac1f8209c3f4fe19d1ca4d273ccc6c354f",
       "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check adjacency wording only if downstream use requires a simple graph rather than the link-labeled plaquette-pair edge convention used by the runner.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -246164,7 +246216,7 @@
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_geometry.py",
       "title": "SU(3) Wigner Engine \u2014 Block 3: L_s=3 PBC Cube Geometry + Tensor-Network Setup",
       "transitive_descendants": 1007,
-      "verdict_rationale": null
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The bounded claim closes because the provided source performs deterministic finite enumeration rather than importing contested values or merely printing constants. The correct derivation class is A: this is algebraic/combinatorial closure over explicitly defined finite lattice objects, not class C first-principles framework computation of a new physical number. The only substantive upstream projector input is marked retained, and no external comparator, tuned numerical match, or open dependency is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The load-bearing work is finite algebraic/combinatorial closure over explicit definitions, so class A is the tighter rubric fit than class C, which is reserved for first-principles physics computation from the framework axiom. The only substantive upstream projector input is marked retained, and no non-retained dependency, external comparator, tuned numerical match, or definitional renaming is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to finite combinatorial geometry and bookkeeping, and the only substantive upstream projector input is marked retained in the packet. Class A is the tighter fit because the load-bearing work is algebraic/combinatorial closure over explicit finite definitions, not a class C first-principles physics computation from a framework axiom producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to combinatorial geometry and bookkeeping, and the only substantive upstream projector-rank primitive is marked retained. Class A is the tighter rubric fit because the load-bearing step is finite algebraic/combinatorial closure over explicit definitions, not a first-principles physics computation from an axiom node producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence maps rather than only printing expected constants. The claim closes as finite algebraic/combinatorial enumeration over explicit definitions, with the retained Block 2 rank-8 projector used only as an upstream tensor-network primitive. Class A is the tighter rubric fit than class C because this is not a first-principles physics computation from the framework axiom producing a new physical number."
     },
     "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": {
       "audit_date": null,

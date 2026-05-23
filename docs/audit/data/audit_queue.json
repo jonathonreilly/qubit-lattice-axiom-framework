@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 328,
+    "critical": 327,
     "high": 312,
     "leaf": 335,
     "medium": 344
@@ -382,31 +382,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "su3_wigner_intertwiner_block3_theorem_note_2026-05-03",
-      "claim_scope": "Finite L_s=3 PBC 3D cube geometry and tensor-network incidence/index structure: 27 sites, 81 directed links, 81 plaquettes, 4 plaquettes per link, 486 link-labeled adjacency edges with degree 12, and 324 plaquette-link tensor slots, using the retained Block 2 rank-8 projector only as an upstream primitive for the stated index/memory setup.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
-        "su3_wigner_intertwiner_block2_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.977,
-      "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_wigner_l3_cube_geometry.py",
-      "transitive_descendants": 1007
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
@@ -452,6 +427,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_g_bare_derivation.py",
+      "transitive_descendants": 1005
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
+        "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
+        "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 13.474,
+      "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_wigner_l3_cube_partition.py",
       "transitive_descendants": 1005
     },
     {
@@ -720,32 +721,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py",
-      "transitive_descendants": 1005
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
-        "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
-        "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.474,
-      "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_wigner_l3_cube_partition.py",
       "transitive_descendants": 1005
     },
     {
@@ -30206,6 +30181,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
+        "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
+        "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_wigner_block4_block5_narrow_split.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38707,32 +38708,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
-        "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
-        "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_wigner_block4_block5_narrow_split.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_wigner_l3_treewidth_infeasible_2026-05-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39739,6 +39714,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 32,
-  "total_pending": 1319
+  "ready_count": 33,
+  "total_pending": 1318
 }

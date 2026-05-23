@@ -43287,11 +43287,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 9.07,
+      "load_bearing_score": 12.07,
       "load_bearing_step": "Substituting the premises gives Theta D Theta^{-1}=C P (TDT) P C=C(PDP)C=C(-D)C=D, and on H=iD gives P K(iD)K P=-iPDP=iD.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "7f04a2c646c496184afe6b6857ccfca7e8a2994d2c3713bc56073c81984d185c",
       "note_path": "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Re-check only the non-load-bearing validation text: the runner's framework-shaped C3 sign/special-case description appears inconsistent with the note's +I wording, but C1/C2 do not depend on it.",
@@ -231007,24 +231007,52 @@
       "verdict_rationale": null
     },
     "single_axiom_hilbert_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T19:35:08.554825+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 10.65,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 70
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T193446Z-a7e6e451-single_axiom_hilbert_not-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner mechanically checks the four stated consequences after the admitted structures are supplied. It does not derive the local Hamiltonian, Hermiticity/locality restriction, Born readout, or graph-extraction rule from a smaller Hilbert-space axiom.",
       "claim_id": "single_axiom_hilbert_note",
-      "claim_scope": null,
+      "claim_scope": "Audited only the scope-narrowed claim that, after admitting local dimension, a local Hermitian Hamiltonian, Born readout, and the support-equals-edges extraction convention, the runner's four numerical demonstrations follow mechanically.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T19:35:08.554825+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -231034,20 +231062,23 @@
         "minimal_axioms_2026-05-03"
       ],
       "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 10.65,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The four admitted inputs `(local d, local H, Born readout, \"support = edges\" rule)` can be packaged together under the phrase \"a finite Hilbert space with local tensor product structure\".",
+      "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "235583c9061c495b234c361935ba499708fdae230f07e9307efb0be64e4eafca",
       "note_path": "docs/SINGLE_AXIOM_HILBERT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether runner_check_breakdown should classify the four small-system numerical demonstrations as D-style comparator checks or as non-rubric mechanical simulations, but this does not affect the class-E verdict.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-04T15:35:10.813526+00:00",
@@ -231240,18 +231271,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 4,
+        "total_pass": 4
       },
       "runner_path": "scripts/frontier_single_axiom_hilbert.py",
       "title": "Local Tensor Product Hilbert Space + Local Hamiltonian + Born Readout: Operational Reduction Note",
       "transitive_descendants": 70,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note correctly narrows the claim to a class-E definitional compression: the contested physical ingredients are admitted and then bundled under the label local tensor product Hilbert space. The runner does perform nontrivial numerical checks, but those checks operate after constructing local Hamiltonians, imposing Born probabilities, and using the support-extraction convention. Therefore the note is valid as a bounded operational demonstration under admitted inputs, not as a derivation of those inputs from a single axiom."
     },
     "single_axiom_information_note": {
       "audit_date": null,

@@ -18824,8 +18824,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "The robustness runner recomputes the fixed-adjacency two-branch staggered-lattice protocol and reports 2-body delta_S > 0 in 60/60 audited configurations plus 3-body tau_3 = 0 with W/W-asym classification in 25/25 configurations.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "cc83ac2e432051e3703c9e8333bed6cac922bbfe4a18573d934622ede48558fa",
       "note_path": "docs/BRANCH_ENTANGLEMENT_ROBUSTNESS_NOTE_2026-04-11.md",
       "notes_for_re_audit_if_any": "Keep the retained claim boundary bounded to the externally imposed two-branch protocol; do not promote this to a full BMV witness without separate LOCC/self-generated-branch proof.",
@@ -187218,24 +187218,48 @@
       "verdict_rationale": "The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome."
     },
     "persistent_record_as_kraus_operator_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T20:20:42.136190+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "persistent_record_overlap_kernel_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "persistent_record_overlap_kernel_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "persistent_record_overlap_kernel_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T202021Z-87390d2a-persistent_record_as_kra-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited persistent-record overlap-kernel note supplies a bounded pilot record model and overlap kernel, but it does not supply a closed linear system-to-system-plus-record instrument or the claimed all-input normalization identity. The Kraus structure follows once such an instrument is assumed, but that bridge is not established in the restricted packet.",
       "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Audited the proposed identification of persistent-record outcomes from the overlap-kernel pilot with Kraus operators satisfying selective update, identity resolution, and CPTP unconditional update.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T20:20:42.136190+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -187244,19 +187268,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The record-amplitude map K_r: |\u03c8\u27e9 \u2192 A_r |\u03c6_r\u27e9 is linear and normalized so that \u03a3_r K_r\u2020K_r = I_sys.",
+      "load_bearing_step_class": "E",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "64c8f71bf0ee9ab30a26e816678ec0cead387cc8b65f4d1aec12bc1f5897a83c",
       "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge proving that the persistent-record formation process defines a normalized linear measurement instrument with Kraus operators for all states in the scoped system algebra.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -187370,7 +187394,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -187381,7 +187405,7 @@
       "runner_path": null,
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Step 1 effectively defines K_r as the record-conditional amplitude map and then treats the needed linearity, boundedness, and exhaustive normalization as available. The only cited retained_bounded parent demonstrates a mesoscopic record overlap-kernel pilot, not a general Kraus instrument theorem for arbitrary system states. No-Go Discipline gate check for the residual admissions fails at N1/N3: the packet leaves several non-equivalent attack routes open, including missing instrument construction, input-state dependence of A_r and |\u03c6_r\u27e9, normalization over all records, mixed-state extension, and the \u03b3-to-POVM bridge."
     },
     "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
       "audit_date": "2026-05-23T12:52:12.797919+00:00",
@@ -225807,8 +225831,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "On the corrected 10x10 periodic staggered torus, iterative backreaction is distinguished from matched static structured nulls, with the cleanest surviving separation in width contraction.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "305244efb42c3333bf634df6c3727283c6c392b9d99b59ab7addfc6258515f60",
       "note_path": "docs/SELF_CONSISTENCY_STRUCTURED_NULL_NOTE_2026-04-11.md",
       "open_dependency_paths": [],
@@ -241348,8 +241372,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "For a fixed periodic 2D staggered lattice, comparing the flat branch against the screened-field branch gives detector-resolved coherent-vs-mixture differences at the documented operating points while leaving topology/adjacency fixed.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "62042775b41b0893f5df9ab74054ae12fb6545ce64f45884f33683fd907ebf3f",
       "note_path": "docs/STAGGERED_GEOMETRY_SUPERPOSITION_NOTE_2026-04-11.md",
       "open_dependency_paths": [],

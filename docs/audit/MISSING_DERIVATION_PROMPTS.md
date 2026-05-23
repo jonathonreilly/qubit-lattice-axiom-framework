@@ -2666,7 +2666,7 @@ drive.
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_40 rows in this category._
+_41 rows in this category._
 
 
 ### `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
@@ -3357,6 +3357,35 @@ Nature-grade closure requires retained-factor operator closure AND Bell-frame ca
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: prove or add retained-grade bridge theorems for native resource genesis, causal record carrier, apparatus-level Bell measurement/readout/correction, and scalable robustness, or split the finite bookkeeping claim from nature-grade closure.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `persistent_inertial_response_readiness_note`
+
+**Note:** [docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md](docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md)  |  **Descendants:** 25  |  **Class:** B
+
+```
+Use the physics-loop skill to close the conditional audit on docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: meta
+- load_bearing_step_class: B
+- claim_scope: A cross-note readiness summary that the provided retained-bounded surrogate, relaunch, localization, threshold, backreaction, and multistage controls do not yet amount to a persistent or quasi-persistent inertial-response object on the retained ordered-lattice family.
+
+Auditor's verdict_rationale:
+The load-bearing step is a cross-note synthesis over the cited bounded controls, not a first-principles computation or algebraic closure. The cited authorities are presented as retained_bounded, but the source note itself explicitly says the readiness summary cannot be tier-ratified, that no persistent-mass theorem is asserted, and that closure would require auditing or repairing each cited authority and re-deriving the ranking from a registered runner. Therefore the bounded meta-read is coherent, but the chain does not close as an independently ratifiable theorem.
+
+Auditor-quoted load-bearing step:
+The current retained ordered-lattice harnesses only close the test-particle regime and do not yet produce a localized pattern whose own persistence and response can both be measured on the same family.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: add a registered runner or explicit bridge theorem that asserts the readiness/frontier criteria from audit-clean dependency rows, or keep this note as a support/meta index only.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

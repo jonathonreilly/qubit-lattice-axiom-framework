@@ -245012,44 +245012,62 @@
       "verdict_rationale": "The load-bearing step is an algebraic consequence of the K-tube formula quoted in the note: subtracting the exponent-12 baseline leaves exactly (2/\u03c0) ln(c_R/c_0). This is sufficient for the bounded claim that PR #525's C_2 denominator was not the denominator implied by that ansatz. The note explicitly does not claim to derive 2/\u03c0 from a one-loop diagram or close the broader plaquette problem."
     },
     "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T16:12:35.278523+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 2.822,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T161055Z-d980d76e-su3_casimir_fundamental_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained upstream authority supplies the algebraic SU(3) fundamental action on V_3 with Tr[T^aT^b]=(1/2)\u03b4^{ab}. Standard Lie-algebra centrality, Schur's lemma, and trace arithmetic then establish K1-K3 without using the deferred physical-color bridge.",
       "claim_id": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "On the cited algebraic 3D symmetric base carrier V_3, the normalized Gell-Mann fundamental generators have C_2=\u03a3_a T^aT^a central, scalar, and equal to (4/3)I_3; no physical SM color readout was audited.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T16:12:35.278523+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_cl3_color_automorphism_theorem",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_cl3_color_automorphism_theorem",
       "load_bearing_score": 2.822,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "After Schur scalarity, equating Tr[C_2]=\u03a3_a Tr[T^aT^a]=8\u00b7(1/2)=4 with Tr[C_2]=3c_2(3) gives c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "e1881bb68985ed6e02752f5bce69958cd95f0abb3c8ca9abb2eef3a75a6edec8",
       "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Runner docstring contains broader physical-quark examples outside the audited source scope; the code and source proof only support the algebraic V_3 Casimir result.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -245250,16 +245268,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
       "title": "SU(3) Quadratic Casimir on V_3 \u2014 Algebraic K1-K3 Narrow Theorem",
       "transitive_descendants": 4,
-      "verdict_rationale": null
+      "verdict_rationale": "The derivation closes as exact algebra over a single retained upstream SU(3) embedding plus standard representation theory. The runner directly instantiates canonical Gell-Mann matrices and checks Hermiticity, normalization, closure, scalarity, and the 4/3 trace result, so it supports class A algebraic consistency rather than first-principles Cl(3) computation. Because the audited content is a standard Casimir corollary of the upstream algebraic carrier with no external comparator or physical bridge consumed, it is classified as algebraic decoration rather than a standalone positive theorem."
     },
     "su3_casimir_fundamental_theorem_note_2026-05-02": {
       "audit_date": "2026-05-23T16:02:38.927733+00:00",

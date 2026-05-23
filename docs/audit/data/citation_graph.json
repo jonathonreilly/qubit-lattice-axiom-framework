@@ -52446,15 +52446,15 @@
       "claim_id": "edge_deletion_boundary_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/inverse_problem_graph_requirements.py"
       ],
-      "note_hash": "5eb3ca8e3d6fba15d71ee37ad367e16a358b27daf0622c198f09a973073bbcc2",
+      "note_hash": "4ea117b5e8d95fdc24f80b08770f239bccd29e33a7dc097b7b53aecf5f3209cf",
       "path": "docs/EDGE_DELETION_BOUNDARY_NOTE.md",
       "runner_path": "scripts/edge_deletion_boundary_sweep.py",
-      "title": "Edge Deletion Boundary: Gravity Sign Flip"
+      "title": "Edge Deletion Boundary: TOWARD Stability on the 3D Valley-Linear Family"
     },
     "edge_deletion_boundary_sweep_note": {
       "claim_id": "edge_deletion_boundary_sweep_note",
@@ -84399,13 +84399,13 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 959,
+      "bounded_theorem": 960,
       "decoration": 1,
       "meta": 187,
       "no_go": 168,
       "none": 443,
       "open_gate": 124,
-      "positive_theorem": 609
+      "positive_theorem": 608
     },
     "edge_count": 9682,
     "leaf_count": 759,

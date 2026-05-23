@@ -57,52 +57,6 @@
         "docs/MINIMAL_AXIOMS_2026-05-20.md",
         "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
       ],
-      "audit_question": "With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it?",
-      "blocked_by_group_ids": [],
-      "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
-      "deps": [
-        "minimal_axioms",
-        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "unaudited",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "unaudited",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "LSP-projective re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 2,
-      "group_id": "lsp_projective_direct_luders",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_order": 2,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
-      "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
       "audit_question": "After the direct L\u00fcders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed?",
       "blocked_by_group_ids": [
         "lsp_projective_direct_luders"
@@ -131,7 +85,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 3,
+      "queue_order": 2,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:lsp_projective_direct_luders",
       "runner_path": null,
@@ -140,10 +94,53 @@
       "state": "live"
     }
   ],
-  "live_count": 3,
+  "live_count": 2,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 2,
+  "ready_count": 1,
   "resolved_or_invalid": [
+    {
+      "actual_audit_status": "audited_conditional",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "audited_conditional",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it?",
+      "blocked_by_group_ids": [],
+      "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+      "deps": [
+        "minimal_axioms",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "LSP-projective re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 2,
+      "group_id": "lsp_projective_direct_luders",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
+      "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
+      "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
     {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "positive_theorem",

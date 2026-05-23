@@ -5,13 +5,14 @@
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py`](../scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py)
 **Cached output:** [`logs/runner-cache/frontier_slab_bridge_spatial_Tx_real_2026_05_19.txt`](../logs/runner-cache/frontier_slab_bridge_spatial_Tx_real_2026_05_19.txt)
-**Parent row (targeted):** [`docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md) — source-side bounded discharge candidate for its two named hypotheses H1 (positive Hermitian `T_x`) and H2 (`Δ_x > 0`) on the finite-Λ Wilson / staggered+Wilson lattice-action surface.
+**Parent row (targeted):** `docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md` (hypothesis-discharge target, not a load-bearing dep — this note proposes to discharge that row's H1/H2; backticked because the cited row is `audited_conditional` and the relationship is "this discharges that", not "this depends on that") — source-side bounded discharge candidate for its two named hypotheses H1 (positive Hermitian `T_x`) and H2 (`Δ_x > 0`) on the finite-Λ Wilson / staggered+Wilson lattice-action surface.
 **Status authority:** independent audit lane only. The `bounded_theorem` label is a source-side claim-boundary declaration, not an audit verdict.
 
 ## §0. Honest framing — what this note discharges
 
 The 2026-05-17 spatial slab-bridge note
-[`CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+`CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`
+(hypothesis-discharge target; backticked, not a load-bearing dep — this note discharges H1/H2 for that row)
 proves a **conditional** exponential spatial clustering result on finite Λ. Its
 theorem (S) is conditional on two named open inputs:
 
@@ -23,7 +24,12 @@ This note gives a source-side bounded discharge candidate for **both**
 H1 and H2 on the finite-Λ Wilson+staggered lattice-action surface by
 exploiting the Euclidean cubic (axis-permutation) symmetry of the
 Wilson action to lift the source result of
-[`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
+`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+(sibling 2026-05-19 note; backticked as sibling-evidence — the axis-permutation
+lift uses Lemmas A-D of that sibling as a structural input, but the cited row is
+unaudited, so the staggered+Wilson half of this note is also unaudited until the
+sibling clears the audit lane. Queued cite-or-derive: a retained one-hop authority
+for the SU(3) heat-kernel positivity-improving transfer operator is queued.)
 (the operator-theoretic Δ_T > 0 theorem candidate for the temporal-slab
 transfer operator on `L²(SU(3)^E)`) into the spatial-slab direction.
 
@@ -37,7 +43,12 @@ The end result is:
   for H1 and H2 for the pure Wilson factor.
 - **(Staggered+Wilson, conditional on Leg A.)** With dynamical staggered
   fermions added via the symmetrized fermion-determinant multiplier of
-  [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+  `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+  (sibling 2026-05-19 note; backticked as sibling-only — Leg A composition is for
+  the staggered+Wilson T_x_full only; the pure-Wilson T_x_W branch above is
+  structurally independent of Leg A. Queued cite-or-derive: a retained one-hop
+  authority for the staggered-Dirac anti-Hermiticity / fermion-determinant
+  positivity is queued.)
   (the operator-basis + quark-mass-orientation "Leg A" salvage), the
   staggered+Wilson full spatial-slab transfer operator `T_x_full` is
   positive Hermitian trace-class with `Δ_x_full > 0`, **conditional on Leg
@@ -92,11 +103,14 @@ For background and notation: the relevant upstream source notes are
   `L²(SU(3)^E)` via the
   SU(3) heat-kernel character expansion + Perron-Jentzsch/Krein-Rutman
   positivity-improving compact-operator theorem (Lemmas A-D of
-  [`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)).
+  `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` —
+  sibling 2026-05-19 note, backticked as sibling-evidence/named-conditional-input,
+  not load-bearing markdown dep until that row clears the audit lane).
 - `5f6f0b87a` (PR #1582 salvage) — source-side candidate discharging
   the Leg A operator-basis and quark-mass-orientation theorems
   (Theorems 2.4 and
-  3.4 of [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)).
+  3.4 of `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` —
+  sibling 2026-05-19 note, backticked as sibling-only/named-conditional-input).
   This note treats it as a named conditional input and does not promote
   its audit status.
 
@@ -261,8 +275,8 @@ T_x_W(U, V) = T_τ(σ_{x↔τ}(U), σ_{x↔τ}(V))                              
 ```
 
 where `T_τ` is the temporal-slab kernel of
-[`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
-§1.
+`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+§1 (backticked sibling-evidence; see §1 reference above for chain status).
 
 **Proof.** Compare (3.1) with PR #1577 salvage equation in §1: both have
 the same functional form `exp(-β · plaquette-action-cross-slab) · Π_ℓ K_τ(U_ℓ V_ℓ^†)`.
@@ -355,8 +369,9 @@ each lattice direction, restricted to the two-slab subset
 "longitudinal" direction.
 
 Under Leg A's anti-Hermiticity theorem
-(see [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
-§3 Lemma 3.1, "Determinant-phase analysis (C-det)"),
+(see `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+§3 Lemma 3.1, "Determinant-phase analysis (C-det)" — sibling 2026-05-19 note,
+backticked as sibling-only/named-conditional-input for the staggered+Wilson half),
 
 ```
 D_x[U]† = -D_x[U]                                                       (4.1)
@@ -476,7 +491,8 @@ determinant positivity in the spatial-slab direction — and confirms
 ## §5. Discharge of slab-bridge hypotheses
 
 The parent slab-bridge note
-[`docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+`docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`
+(hypothesis-discharge target; backticked, not a load-bearing dep)
 §"Inputs and support artifacts" names two hypotheses:
 
 - **H1.** Existence of a positive Hermitian slab transfer operator
@@ -522,7 +538,8 @@ what Theorem D / Perron-Jentzsch gives.)
 ### Consequence for the parent slab-bridge note's theorem (S)
 
 The conditional theorem (S) of
-[`docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+`docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`
+(hypothesis-discharge target; backticked, not a load-bearing dep)
 takes the form:
 
 > conditional on H1 and H2, exponential spatial clustering
@@ -569,7 +586,8 @@ consequences.
 With dynamical staggered fermions added via the symmetrized full
 spatial-slab transfer operator `T_x_full := M_F^{1/2} T_x_W M_F^{1/2}`
 defined in (4.4), conditional on Leg A retention
-([`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)),
+(`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` —
+sibling 2026-05-19 note, backticked as sibling-only/named-conditional-input),
 the operator `T_x_full` is self-adjoint, trace-class, strictly
 positivity-preserving, with simple top eigenvalue, strictly positive top
 eigenfunction, and strict spectral gap
@@ -621,7 +639,8 @@ The (W-slab) and (SW-slab) theorems of §6 do NOT claim:
   baseline.** Leg A is treated as a named conditional input throughout
   §4 and §5. Its
   effective status is the audit lane's call on
-  [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md).
+  `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+  (sibling 2026-05-19 note; backticked as sibling-only/named-conditional-input).
 
 - (X7) **Audit-retained status.** The source-side label is
   `bounded_theorem`; effective status is the audit lane's call.
@@ -687,14 +706,17 @@ This bounded narrow theorem candidate uses:
 
 - **(B1)** one-qubit / `Cl(3)` local-algebra framework baseline.
 - **(B2)** `Z^3` spatial-substrate framework baseline.
-- **(R1)** Canonical normalization `β > 0` Wilson surface.
+- **(R1)** Canonical normalization `β > 0` Wilson surface
+  ([`docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) — retained one-hop authority for canonical-normalization rigidity).
 - **(R2)** Staggered Dirac anti-Hermiticity (`D† = -D`) — Leg A primitive,
-  used only in §4 as a named conditional input via Leg A.
+  used only in §4 as a named conditional input via Leg A (sibling, backticked above).
 - **(R3)** SU(3) heat-kernel character expansion + Perron-Jentzsch
-  theorem (PR #1577 salvage Lemmas A-D), used as an upstream source
-  theorem candidate.
+  theorem (PR #1577 salvage Lemmas A-D), used as a sibling-evidence upstream source
+  theorem candidate (sibling 2026-05-19, backticked above). Queued cite-or-derive:
+  a retained one-hop authority for the SU(3) heat-kernel positivity-improving
+  transfer operator is queued.
 - **(R4)** Leg A's mass-orientation theorem (Theorem 3.4 of PR #1582
-  salvage), used as a named conditional input.
+  salvage), used as a named conditional input (sibling 2026-05-19, backticked above).
 
 The proofs use no new repo axioms. All proof-input citations are listed
 above; no external literature (Vafa-Witten, Leutwyler-Smilga, OS, etc.)
@@ -724,12 +746,12 @@ suffices to lift the 2026-05-17 slab-bridge note's status.
 
 ## References
 
-- Parent slab-bridge note (this note discharges H1, H2):
-  [`docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
-- PR #1577 salvage (load-bearing for axis-permutation lift):
-  [`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
-- PR #1582 salvage (Leg A — named conditional input for staggered+Wilson):
-  [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+- Parent slab-bridge note (this note discharges H1, H2; hypothesis-discharge target):
+  `docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md` (backticked, not a load-bearing dep).
+- PR #1577 salvage (sibling 2026-05-19 note used for axis-permutation lift; sibling-evidence):
+  `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (backticked sibling).
+- PR #1582 salvage (Leg A — named conditional input for staggered+Wilson; sibling-only):
+  `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (backticked sibling).
 - Parent of the spatial slab-bridge (audit context):
   `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`
 - Companion 2026-05-09 temporal bridge note (context):

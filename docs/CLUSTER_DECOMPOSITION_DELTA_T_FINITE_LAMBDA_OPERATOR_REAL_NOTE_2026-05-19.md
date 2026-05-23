@@ -15,7 +15,7 @@
 - **No thermodynamic limit.** No claim that the gap survives `Λ → Z³`. In fact one expects the gap to close in the limit on a confining theory; this is not what is proved here.
 - **No uniform-in-Λ bound.** No quantitative claim on how the gap scales with `|Λ|`.
 - **NOT the Yang-Mills mass gap.** The Clay Millennium problem asks for a continuum, infinite-volume gap on the Yang-Mills functional integral. We address a finite-volume lattice transfer operator only.
-- **The fermion-determinant input is not promoted here.** Leg A `det(D[U] + m I) > 0` is cited from [`docs/STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) (§"Leg A: Fermion phase closure", lines 46-58). The current audit ledger marks that row `audited_conditional`, so the staggered+Wilson composition in §6 is conditional on that input becoming retained-grade. We do not re-derive or promote it here.
+- **The fermion-determinant input is not promoted here.** Leg A `det(D[U] + m I) > 0` is cited from `docs/STRONG_CP_THETA_ZERO_NOTE.md` (§"Leg A: Fermion phase closure", lines 46-58) — backticked because the T_full extension below is conditional on the *separately landed* Leg A salvage repair `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (PR #1582 salvage commit `5f6f0b87a`), not on the older unfixed `strong_cp_theta_zero_note` row itself. The conditional T_full extension is gated on the salvage candidate's audit retention, not on the parent's `audited_conditional` status.
 - **The new content is the finite-Lambda SU(3) transfer-operator support theorem (§5) and the conditional symmetrized composition with Leg A (§6).** The operator-theory step imports the standard Perron-Jentzsch/Krein-Rutman positivity-improving compact-operator theorem as bounded mathematical machinery; it is not a new repo axiom.
 
 ---
@@ -274,7 +274,7 @@ the same strict-gap structure on the two-site truncated character basis.
 
 ### Leg A statement (cited as a current conditional dependency)
 
-From [`docs/STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md), §"Leg A: Fermion phase closure" (lines 46-58), the staggered Dirac operator `D[U]` on the Cl(3)/Z³ retained surface is anti-Hermitian (`D† = -D`), and for real mass `m > 0`,
+From `docs/STRONG_CP_THETA_ZERO_NOTE.md`, §"Leg A: Fermion phase closure" (lines 46-58) — backticked, cited as parent-context only; the structural Leg A statement is taken from the salvage repair `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (PR #1582 salvage), not as a load-bearing dep on the unfixed parent row — the staggered Dirac operator `D[U]` on the Cl(3)/Z³ retained surface is anti-Hermitian (`D† = -D`), and for real mass `m > 0`,
 
 ```
 det(D[U] + m I) = Π_k (m² + λ_k²) > 0
@@ -371,7 +371,7 @@ Cached output: [`logs/runner-cache/frontier_cluster_decomp_delta_t_su3_operator_
 
 - **Parent row:** `AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` — candidate 2 (Perron-Frobenius for the positive transfer matrix), now supplied at finite Lambda for `T_W` and conditionally for the symmetrized staggered+Wilson transfer operator.
 - **Bridge note:** `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md` supplies the downstream bridge `Delta_T > 0` -> temporal connected-correlator clustering; it is downstream of this note, not a dependency of the operator-gap support theorem.
-- **Leg A:** [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) — `det(D + m I) > 0` is the named conditional dependency for the staggered+Wilson composition; it is cited but not re-derived or promoted here.
+- **Leg A:** `STRONG_CP_THETA_ZERO_NOTE.md` — `det(D + m I) > 0` is the named conditional dependency for the staggered+Wilson composition; cited as parent-context only (backticked). Load-bearing conditional is on the salvage repair `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note, PR #1582 salvage commit `5f6f0b87a`), not on the older unfixed parent row.
 - **Closed PR:** [#1531](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1531) — the rejected 4×4 toy version, replaced by this note.
 
 ---

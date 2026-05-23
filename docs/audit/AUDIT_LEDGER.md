@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 383 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1279 |
+| unaudited | 1280 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 103 |
-| ~~audited_failed~~ | 23 |
+| ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -51,10 +51,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 643 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 67 |
+| `audited_failed` | 66 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1504 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -898,7 +898,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `born_lane_comparison_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `born_rule_analysis_2026-04-11` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -1686,19 +1685,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note demotes the standalone GHZ-like runner and bases the support claim on the robustness harness: 25/25 configurations are W or W-asym with tau_3 = 0 for the fixed two-branch protocol.  _(class `C`)_
 - **chain closes:** True — The source is support-tier and explicitly bounded to externally imposed two-branch tripartite entanglement. The current robustness runner recomputes the source/coupling surface and prints tau_3 = 0, W/W-asym classification in 25/25 configurations, and positive bipartite entropies.
 - **rationale:** The load-bearing support claim closes because the note clearly makes the later robustness harness, not the historical standalone heuristic runner, the canonical interpretation surface. That canonical runner reproduces the stated W-type result and the note keeps the boundary narrow: fixed adjacency, externally imposed branch, not a full three-body BMV witness or topology-superposition claim. The historical runner's GHZ-like rows are not a contradiction because both the source note and that runner label them as non-canonical heuristic output.
-- **auditor confidence:** high
-
-### `born_lane_comparison_note`
-
-- **Note:** [`BORN_LANE_COMPARISON_NOTE.md`](../../docs/BORN_LANE_COMPARISON_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** A bounded seeded numerical comparison of modular gap+LN versus central-band |y|<2+LN on the corrected Sorkin |I3|/P harness for N=25,40,60 with npl=25, gap=2.0, and y_cut=2.0.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-151238-a5e2dcef-born_lane_comparison_not-006`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Both best LN lanes are Born-clean on the corrected harness at machine precision, with modular slightly more stable on the corrected Sorkin metric and central-band retaining a small finite-N decoherence advantage at N=40 and N=60.  _(class `C`)_
-- **chain closes:** False — The provided runner and helper sources genuinely generate the DAGs, propagate amplitudes, and compute the corrected Sorkin ratio rather than hard-coding the claimed values. However, the cached runner output does not match the note's retained rows, and it does not support the note's specific statement that modular maxima are lower overall.
-- **rationale:** The computational chain is class C in form: the primary runner uses included helper code to construct modular and central-band graphs and compute corrected I3 with -P(empty). But the source note is numerically stale relative to the supplied cache: for example modular N=25 reports mean 3.28e-16 and max 9.99e-16 in the note, while the runner gives mean 4.67e-16 and max 1.44e-15. The reduced claim that both lanes are Born-clean at machine precision is supported, but the exact table and the modular-stability comparison as written do not close from the packet.
 - **auditor confidence:** high
 
 ### `born_rule_analysis_2026-04-11`

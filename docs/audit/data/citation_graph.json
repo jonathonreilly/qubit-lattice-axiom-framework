@@ -42344,7 +42344,7 @@
         "scripts/generative_causal_dag_interference.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "36e8fd61bae9673405a917fdeb3a5cbc617320dff5fd502ab7a562cc9d1ad4aa",
+      "note_hash": "885f22eafa190e9e0f42766e9799e5334eaeb4b991dc07771e2c7649f08cb7ad",
       "path": "docs/BORN_LANE_COMPARISON_NOTE.md",
       "runner_path": "scripts/born_compare_modular_central_ln.py",
       "title": "Born Lane Comparison Note"

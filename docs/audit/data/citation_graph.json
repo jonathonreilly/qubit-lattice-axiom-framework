@@ -40467,7 +40467,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "182afc4a087b4966e87b7b9c7bf8de5f7dd6fa600a0cba3c7eff59f6f70519dd",
+      "note_hash": "0bf06d9f52ab5a69413bf8312963dd9664c61480ec0180aad336c40a2314c5c2",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"

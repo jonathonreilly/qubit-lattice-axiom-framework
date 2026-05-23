@@ -43886,12 +43886,12 @@
     },
     "chiral_split_mass_gravity_note": {
       "claim_id": "chiral_split_mass_gravity_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "03ad01043e59d5005c7ee01a16b266e6868033af6bbb09a963064b4a00f1de71",
+      "note_hash": "5d31d4cd6409c6631700ab5c601ad76d8512284ff773edc8c1087899e1df24cd",
       "path": "docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md",
       "runner_path": "scripts/frontier_chiral_split_mass_gravity.py",
       "title": "Chiral Split-Mass / Split-Gravity Note"
@@ -84394,8 +84394,8 @@
       "decoration": 1,
       "meta": 187,
       "no_go": 65,
-      "none": 1494,
-      "open_gate": 46,
+      "none": 1493,
+      "open_gate": 47,
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
@@ -84403,8 +84403,8 @@
       "decoration": 1,
       "meta": 187,
       "no_go": 168,
-      "none": 443,
-      "open_gate": 124,
+      "none": 442,
+      "open_gate": 125,
       "positive_theorem": 609
     },
     "edge_count": 9682,

@@ -11,6 +11,13 @@ selected charged-lepton line.
 
 **Primary reference:** `docs/KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`.
 
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this open-scalar wrapper is a non-chain-closing
+alias/decorative handle, the candidate parent is
+[`KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`](KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.
+
 ---
 
 ## 1. What was open

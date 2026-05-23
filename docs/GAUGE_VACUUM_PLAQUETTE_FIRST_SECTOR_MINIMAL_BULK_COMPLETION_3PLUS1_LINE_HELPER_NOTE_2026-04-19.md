@@ -9,6 +9,14 @@ branch.
 audit-lane infrastructure for the corresponding helper module.
 **Primary runner / module:** `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py`
 
+**Audit-dispatch parent candidate:** This row is a runner-module wrapper
+for helper code in
+`scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py`.
+If a future independent audit evaluates whether it is a
+non-chain-closing wrapper/decorative handle, the helper module is the
+candidate source object. This is source-side routing context only; it
+does not assert an `audit_status` or `effective_status`.
+
 ## Purpose
 
 This wrapper note documents the shared helper layer used by several

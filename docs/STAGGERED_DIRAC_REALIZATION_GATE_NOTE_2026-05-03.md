@@ -24,6 +24,13 @@ chain; it is not itself a retained theorem and does not supply a verdict.
 realization gate in the audit ledger. Pure-meta packaging note: the
 in-flight derivation work lives on the supporting notes listed below.
 
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this realization-gate wrapper is a non-chain-closing
+alias/decorative handle, the current framework parent candidate is
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.
+
 ## Why this note exists
 
 This note is META infrastructure. It does NOT close the gate. Its only

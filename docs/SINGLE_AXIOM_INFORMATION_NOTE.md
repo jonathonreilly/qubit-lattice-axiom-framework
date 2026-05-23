@@ -109,7 +109,7 @@ evaluated mechanically by the runner.
   load-bearing accepted-input ledger for the current paper package
   (physical `Cl(3)` local algebra on the `Z^3` spatial substrate).
   Cited as the non-superseded framework surface.
-- [`SINGLE_AXIOM_HILBERT_NOTE.md`](SINGLE_AXIOM_HILBERT_NOTE.md) — the
+- `SINGLE_AXIOM_HILBERT_NOTE.md` — the
   sibling `audited_renaming` operational note that records the same
   class of definitional-compression boundary on the local-tensor-
   product Hilbert space framing. Cited as a sibling renaming surface,

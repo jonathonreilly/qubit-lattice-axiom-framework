@@ -314,7 +314,7 @@ cross-check".
 - [`gauge_vacuum_plaquette_local_environment_factorization_theorem_note`](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md) — supplies `D_beta^loc chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q)`.
 - [`gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) — supplies `J = (chi_(1,0) + chi_(0,1)) / 6`.
 - [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — supplies the `rho_(p,q)(6)` coefficients on `B` for the (U5) cross-check.
-- [`gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md) — sister bounded companion. The narrow note here adds the algebraic uniqueness statement that companion does not prove.
+- `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` — sister bounded companion. The narrow note here adds the algebraic uniqueness statement that companion does not prove.
 
 ## Forbidden imports check
 

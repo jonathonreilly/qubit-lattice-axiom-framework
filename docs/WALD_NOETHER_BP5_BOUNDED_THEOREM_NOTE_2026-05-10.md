@@ -51,7 +51,7 @@ so this note's scope is unambiguous.
 
 ### (X1) Staggered-Dirac realization gate
 
-**Admitted authority:** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
+**Admitted authority:** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) (currently audited_renaming; substep retained theorems available at `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_*`, `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_*`, `STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_*`, `STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_*` — citer should be repointed to the relevant substep when this row's specific need is identified).
 
 **Live audit ledger status (verified 2026-05-10):** `effective_status = open_gate`,
 `claim_type = open_gate`.

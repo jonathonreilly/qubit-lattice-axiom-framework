@@ -32,6 +32,13 @@ for the current paper package remains `Cl(3)` on `Z^3` per
 `docs/MINIMAL_AXIOMS_2026-04-11.md`.
 **Runner:** `scripts/frontier_single_axiom_hilbert.py`
 
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this Hilbert-surface wrapper is a non-chain-closing
+alias/decorative handle, the current framework parent candidate is
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.
+
 **Scope note:** this is an operational support note for Hilbert-surface
 scoping. It is not the load-bearing accepted-input ledger for the current
 paper package, whose framework statement remains `Cl(3)` on `Z^3` with

@@ -11,3 +11,10 @@ The canonical mirror MI artifact is now frozen in:
 Use the chokepoint note for synthesis. This file is kept only as a pointer
 to the older multi-family MI discussion and should not be treated as the
 canonical mirror MI result.
+
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this mirror-MI pointer is a non-chain-closing
+alias/decorative handle, the candidate parent is
+[`MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md`](MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.

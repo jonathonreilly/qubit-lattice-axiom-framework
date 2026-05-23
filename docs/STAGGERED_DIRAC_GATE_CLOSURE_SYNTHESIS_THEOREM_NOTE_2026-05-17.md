@@ -27,7 +27,7 @@ substep-4 AC narrowing into a single citeable bounded source.
 are set only by the independent audit lane.
 **Primary runner:** [`scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py`](../scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py)
 **Cache:** [`logs/runner-cache/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.txt`](../logs/runner-cache/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.txt)
-**Parent gate:** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+**Parent gate:** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) (currently `audited_renaming`; downstream rows with substep-specific needs should cite the relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems directly rather than this gate alias)
 
 ## Authority disclaimer
 

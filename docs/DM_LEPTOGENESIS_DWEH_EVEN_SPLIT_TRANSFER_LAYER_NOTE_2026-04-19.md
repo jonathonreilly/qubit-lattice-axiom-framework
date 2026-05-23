@@ -8,6 +8,13 @@ even column split on the compressed charged projected-source codomain.
 audit-lane infrastructure for the corresponding theorem module.
 **Primary runner / module:** `scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py`
 
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this wrapper is a non-chain-closing alias/decorative
+handle, the candidate parent is
+[`KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md`](KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.
+
 ## Purpose
 
 This wrapper note documents the `dW_e^H` even-split transfer-layer theorem

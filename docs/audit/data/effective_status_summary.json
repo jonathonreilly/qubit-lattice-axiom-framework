@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1023,
-    "decoration": 30,
+    "bounded_theorem": 1025,
+    "decoration": 24,
     "meta": 229,
     "no_go": 239,
     "open_gate": 112,
-    "positive_theorem": 743
+    "positive_theorem": 748
   },
   "cycle_examples": [
     [
@@ -40,12 +40,11 @@
   ],
   "cycles_detected": 30,
   "effective_status_counts": {
-    "audited_conditional": 95,
-    "audited_failed": 24,
+    "audited_conditional": 88,
+    "audited_failed": 23,
     "audited_numerical_match": 10,
     "audited_renaming": 18,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
-    "decoration_under_cl3_color_automorphism_theorem": 5,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 3,
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
@@ -62,13 +61,13 @@
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "meta": 225,
     "open_gate": 14,
-    "retained": 126,
-    "retained_bounded": 389,
-    "retained_no_go": 151,
-    "retained_pending_chain": 9,
-    "unaudited": 1289
+    "retained": 124,
+    "retained_bounded": 387,
+    "retained_no_go": 148,
+    "retained_pending_chain": 8,
+    "unaudited": 1311
   },
-  "retained_pending_chain_count": 9,
+  "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
@@ -77,7 +76,6 @@
     "gauge_wilson_isotropy_boundary_note_2026-05-04",
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",
-    "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-    "yukawa_color_projection_theorem"
+    "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
   ]
 }

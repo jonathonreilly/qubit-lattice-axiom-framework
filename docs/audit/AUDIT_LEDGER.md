@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 137 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 382 |
+| **retained_bounded** | 383 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1289 |
+| unaudited | 1288 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 11 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 642 |
+| `audited_clean` | 643 |
 | `audited_conditional` | 112 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1515 |
+| `unaudited` | 1514 |
 
 | claim_type | count |
 |---|---:|
@@ -193,6 +193,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -2294,6 +2295,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substitute the four parametric input identities into the five Wolfenstein-leading squared-magnitude formulas and apply n_quark = n_pair * n_color.  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and all substitutions close from the stated hypotheses. No cited external authority, numerical alpha_s value, physical CKM identification, or comparator is needed.
 - **rationale:** The correct audited object is a bounded theorem: exact closed forms follow conditionally from explicitly supplied identities and the count constraint. The runner's own PASS labels identify the load-bearing operations as Pattern A algebraic substitution; the provided automated classifier breakdown conflicts with those labels but does not expose a failed algebraic step. Because the note disclaims derivation of the hypotheses and physical/comparator interpretation, there are no hidden dependencies within the scoped row.
+- **auditor confidence:** high
+
+### `ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26`
+
+- **Note:** [`CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md`](../../docs/CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact 3x3 algebraic statement that unitary squared moduli determine the common unitarity-triangle area and |J|, with a constructive strictly positive bistochastic converse from one closing row triangle.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T193822Z-6ddf7f97-ckm_moduli_only_unitarit-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For a 3x3 unitary matrix, row or column orthogonality makes the products V_ai V_bi^* close into a triangle whose Heron radicand equals 4J^2, and conversely one closing row-pair triangle in a strictly positive bistochastic table constructs a unitary lift.  _(class `A`)_
+- **chain closes:** True — The algebraic CKM certificate closes from standard finite-dimensional unitarity, Heron's formula, and the explicit cross-product construction. The broader lane remains bounded because the note declares open contextual gates, but those gates are not needed for the audited 3x3 matrix theorem itself.
+- **rationale:** The load-bearing step is a genuine algebraic closure: row and column orthogonality give closed complex triangles, Heron's side-square identity gives the radicand, and the imaginary quartet is the Jarlskog invariant. The runner source performs symbolic identity checks and a numeric constructive lift rather than importing external CKM values or hard-coding the contested result. The cited g_bare authority is retained_bounded, which is retained-grade under the rubric, and the declared open physics gates do not enter the scoped algebraic proof.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02`

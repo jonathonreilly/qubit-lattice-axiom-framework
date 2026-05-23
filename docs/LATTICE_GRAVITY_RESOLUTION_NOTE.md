@@ -1,80 +1,41 @@
-# Lattice Gravity Resolution: Ultra-Weak Field Gives Both Attraction AND 1/b
+# Lattice Gravity Resolution: 3D Dense Spent-Delay z = 2..5 Attractive Window
 
-**Date:** 2026-04-04
-**Status:** 2D resolved. 3D reopened on a bounded dense-lattice branch.
+**Date:** 2026-04-04 (original); narrowed 2026-05-23
+**Status:** bounded — the 3D dense spent-delay branch at ultra-weak field
+`strength = 5e-5` retains an attractive same-family barrier card on the
+runner-computed `z = 2, 3, 4, 5` window. Audit verdict and effective
+status are the independent audit lane's decision.
 
-## The breakthrough
+## 3D dense spent-delay card (runner-supported window)
 
-The gravity-toward vs distance-law "structural trade-off" was WRONG.
-The 2D dense lattice with the ORIGINAL spent-delay action achieves
-BOTH attraction AND distance law at ultra-weak field strength (0.0005).
+The retained surface of this note is the 3D dense spent-delay branch at
+ultra-weak field with the supplied 10-property card. On the runner's
+configured probe:
 
-The issue was always field strength:
-  - strength=0.1: beam depletion dominates → centroid AWAY
-  - strength=0.001: still depletion → AWAY
-  - strength=0.0005: linear response dominates → centroid TOWARD + 1/b
+- Born `7.39e-16`
+- `MI = 0.1414`
+- decoherence `13.5%`
+- centroid-side distance exponent `-1.62`, `R² = 0.976`
 
-## 2D dense lattice card (spent-delay, strength=0.0005)
+Under the gravity-observable hierarchy classifier, the runner-computed
+`z = 2, 3, 4, 5` window is genuinely attractive on this retained tested
+card.
 
-| b | centroid shift | direction |
-|---|---------------|-----------|
-| 4 | +0.141 | TOWARD |
-| 5 | +0.157 | TOWARD |
-| 6 | +0.168 | TOWARD (peak) |
-| 7 | +0.162 | TOWARD |
-| 8 | +0.141 | TOWARD |
-| 10 | +0.089 | TOWARD |
-| 13 | +0.074 | TOWARD |
-| 16 | +0.071 | TOWARD |
-| 19 | +0.063 | TOWARD |
+So the safe 3D read here is:
 
-Distance law: b^(-0.94), R²=0.939
+- **the dense spent-delay branch retains a real attractive window on the
+  current tested `z = 2..5` card**
+- **this is not a clean all-distances attraction theorem**
 
-ALL 9/9 tested b values show TOWARD. No axiom fork needed.
-
-Combined with prior results on the same lattice:
-  Born: machine precision (verified)
-  k=0: exactly zero (verified)
-  MI: 0.57 bits (verified)
-  d_TV: 0.79 (verified)
-  Decoherence: 44% (verified)
-
-## 3D status
-
-The old fully negative 3D read is no longer the whole story.
-
-What remains true:
-
-- 3D NN lattice (`9` edges/node) stayed away on the earlier tested slice
-- strong-field and action-power ordered 3D barrier rows can still be genuinely
-  away / depletion
-
-What is now reopened:
-
-- the 3D **dense** spent-delay branch at ultra-weak field (`5e-5`) has a
-  retained same-family barrier card with:
-  - Born `7.39e-16`
-  - `MI = 0.1414`
-  - decoherence `13.5%`
-  - centroid-side distance exponent `-1.62`, `R² = 0.976`
-- under the gravity-observable hierarchy:
-  - `z = 2, 3, 4, 5, 6` are genuinely attractive on the retained tested window
-
-So the safe 3D read is now:
-
-- **not fully negative anymore**
-- **retains a real attractive window on the current tested card**
-- **not yet a clean all-distances attraction theorem either**
-
-Important correction:
+Important correction (retained from the original note):
 
 - the corrected `h = 1.0` vs `h = 0.5` refinement comparison does **not**
-  preserve the older positive-refinement narrative
-- the attractive 3D dense card is real at the retained reference point, but it
-  is **not** a refinement theorem
+  preserve any older positive-refinement narrative
+- the attractive 3D dense card is real at the retained reference point,
+  but it is **not** a refinement theorem
 - the new reconciliation note freezes that failure explicitly
 
-## The mechanism
+## The mechanism (informational)
 
 At ultra-weak field, the phase perturbation per edge is tiny.
 The TOTAL perturbation over all paths is the coherent sum of
@@ -93,19 +54,68 @@ Above this, nonlinear disruption → depletion.
 
 ## Open question
 
-What still limits the 3D dense branch?
+The next question for the 3D dense spent-delay branch is whether the
+hierarchy-clean attractive window can be extended past `z = 5` while
+keeping the same same-family barrier card. That extension is **not**
+currently supported by the registered runner or the cited hierarchy
+authority.
 
-- the tested `z = 2..6` window is now attractive under the hierarchy
-- MI and decoherence are present but weaker than the stronger 2D dense rows
+## Audit verdict acknowledgment (2026-05-23)
 
-So the next question is no longer “can 3D ordered lattices ever turn toward?”
-The next question is:
+Audit verdict (`audited_failed`, leaf criticality, prior audit
+2026-05-10):
 
-- can the 3D dense spent-delay geometry extend the hierarchy-clean attractive
-  window beyond `z = 6` while keeping the same same-family barrier card?
+> Issue: the note overclaims beyond both its supplied runner and its
+> only cited authority, especially by retaining z = 6 and the 2D all-b
+> distance-law table without supporting restricted evidence. Why this
+> blocks: a bounded theorem cannot be audited clean when its stated
+> retained window includes points the runner does not compute and the
+> cited authority explicitly excludes from ratification. Repair target:
+> split the runner-supported 3D z = 2..5 card from the broader
+> narrative, add or cite audited artifacts for z = 6 and the 2D
+> b-window, and align the hierarchy dependency scope. Claim boundary
+> until fixed: only the raw supplied runner output for the h = 1.0,
+> L = 12, W = 6, max_d = 3, strength 5e-5 3D card is locally evidenced.
+
+This 2026-05-23 narrowing complies with the verdict's preferred repair
+target by splitting the runner-supported 3D `z = 2..5` card from the
+broader narrative. Concretely:
+
+- **Dropped:** the 2D dense-lattice all-b distance-law table (b ∈ {4,
+  5, 6, 7, 8, 10, 13, 16, 19}, distance law `b^(-0.94)`, `R² = 0.939`).
+  The supplied runner does not compute the 2D card, and no one-hop
+  audited authority closes it.
+- **Dropped:** the 3D `z = 6` row. The registered runner
+  `scripts/lattice_3d_dense_10prop.py` iterates `z_mass ∈ {2, 3, 4, 5}`
+  only, and the cited hierarchy authority's retained scope is
+  explicitly narrowed to dense `z = 3` and `z = 5`. The `z = 6` row had
+  no in-packet executable verification.
+- **Kept:** the 3D dense spent-delay attractive window on `z = 2..5`,
+  the same-family barrier card (Born, MI, decoherence, centroid-side
+  exponent on this card), the mechanism prose, and the refinement
+  correction.
+
+The hierarchy dependency scope is therefore aligned with the
+runner-supported `z = 2..5` window of this note (the hierarchy
+authority itself ratifies `z = 3` and `z = 5` directly; `z = 2` and
+`z = 4` are part of the runner-computed iteration but extend past the
+authority's explicit retained rows). The note does not claim a clean
+all-distances attraction theorem.
+
+## What this note does NOT claim
+
+- The 2D ultra-weak spent-delay 9/9 attraction or its
+  `b^(-0.94)` distance-law table (no supplied runner; no one-hop
+  audited authority).
+- Attraction at `z = 6` on the 3D dense spent-delay card (runner does
+  not compute it; cited hierarchy authority excludes it from
+  ratification).
+- A refinement theorem at `h = 1.0` vs `h = 0.5` (the corrected
+  comparison does not preserve the older positive-refinement
+  narrative).
+- An all-distances attraction theorem.
 
 ## Artifact chain
 
 - [`scripts/lattice_3d_dense_10prop.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_dense_10prop.py)
-- [`archive_unlanded/lattice-dense-spent-delay-window-salvage-2026-04-30/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/lattice-dense-spent-delay-window-salvage-2026-04-30/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md)
-- [`docs/GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md)
+- [`GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md`](GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md)

@@ -1,8 +1,8 @@
 {
   "by_criticality": {
     "critical": 313,
-    "high": 305,
-    "leaf": 323,
+    "high": 306,
+    "leaf": 324,
     "medium": 341
   },
   "cycle_break_target_count": 24,
@@ -9262,6 +9262,30 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 56
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su3_adjoint_casimir_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_color_automorphism_theorem"
+      ],
+      "direct_in_degree": 9,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.307,
+      "note_path": "docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/su3_adjoint_casimir_check.py",
+      "transitive_descendants": 13
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -29352,6 +29376,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lattice_gravity_resolution_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gravity_observable_hierarchy_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/LATTICE_GRAVITY_RESOLUTION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/lattice_3d_dense_10prop.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38810,6 +38858,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 3,
-  "total_pending": 1282
+  "ready_count": 5,
+  "total_pending": 1284
 }

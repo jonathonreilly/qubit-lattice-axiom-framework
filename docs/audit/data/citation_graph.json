@@ -62316,10 +62316,10 @@
         "gravity_observable_hierarchy_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf355a0381db6b665688e369715fe4860dd4131993f52af3526821c239c56dc1",
+      "note_hash": "b9dc6947e744f9357ea9edc32b893d4ce552100e3c4563ae4a65e52d723af471",
       "path": "docs/LATTICE_GRAVITY_RESOLUTION_NOTE.md",
       "runner_path": "scripts/lattice_3d_dense_10prop.py",
-      "title": "Lattice Gravity Resolution: Ultra-Weak Field Gives Both Attraction AND 1/b"
+      "title": "Lattice Gravity Resolution: 3D Dense Spent-Delay z = 2..5 Attractive Window"
     },
     "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17": {
       "claim_id": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",

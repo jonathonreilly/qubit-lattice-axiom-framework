@@ -75196,7 +75196,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "31bc9c14f41e8b771dbc0c0e8ce894a895da82f612135b9fd237c7ba35c3c8cd",
+      "note_hash": "fc42a3f0a6e9e2bae30d6db67d9e0f91647baae386f7b2117e6dd6accf44213c",
       "path": "docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_single_clock_stone_finite_dim_exact_2026_05_10.py",
       "title": "Single-Clock Stone Finite-Dim Uniqueness Narrow Theorem"

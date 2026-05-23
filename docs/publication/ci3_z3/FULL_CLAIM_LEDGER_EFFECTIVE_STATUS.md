@@ -109,7 +109,7 @@ These rows correspond to Section A of
 
 | Claim family | Current decision | Why it is retained | Primary authority |
 |---|---|---|---|
-| exact native `SU(2)` | promoted | exact weak algebra on the cubic Clifford surface | [NATIVE_GAUGE_CLOSURE_NOTE.md](../../NATIVE_GAUGE_CLOSURE_NOTE.md)&nbsp;[audit:unaudited] |
+| exact native `SU(2)` | promoted | exact weak algebra on the cubic Clifford surface | [NATIVE_GAUGE_CLOSURE_NOTE.md](../../NATIVE_GAUGE_CLOSURE_NOTE.md)&nbsp;[audit:audit_in_progress] |
 | graph-first structural `SU(3)` | promoted | selector + commutant closure now defines the safe `SU(3)` statement; selector is unique up to graph automorphism | [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](../../GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)&nbsp;[audit:retained] |
 | `SU(3)` confinement / `\sqrt{\sigma}` | promoted structural theorem + bounded quantitative prediction | graph-first `SU(3)` at structurally fixed canonical `g_bare^2 = 1` on the accepted Wilson surface gives Wilson `beta = 6`; `T = 0` confinement is structural on that gauge sector, and the bounded string-tension readout is `\sqrt{\sigma} \approx 465 MeV` through the retained `\alpha_s` lane plus the standard low-energy EFT bridge | [CONFINEMENT_STRING_TENSION_NOTE.md](../../CONFINEMENT_STRING_TENSION_NOTE.md)&nbsp;[audit:unaudited], [G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md](../../G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)&nbsp;[audit:unaudited] |
 | left-handed charge matching | promoted corollary | safe selected-axis charge surface on the retained graph-first package | [LEFT_HANDED_CHARGE_MATCHING_NOTE.md](../../LEFT_HANDED_CHARGE_MATCHING_NOTE.md)&nbsp;[audit:unaudited] |

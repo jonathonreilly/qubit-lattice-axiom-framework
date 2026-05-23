@@ -23,7 +23,7 @@ Source sidecars:
 
 | # | state | claim_id | current |
 |---:|---|---|---|
-| 1 | resolved_or_superseded | `native_gauge_closure_note` | positive_theorem / unaudited / unaudited |
+| 1 | resolved_or_superseded | `native_gauge_closure_note` | positive_theorem / audit_in_progress / audit_in_progress |
 | 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / audited_clean / retained |
 | 3 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
 | 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / audited_clean / retained |
@@ -64,7 +64,7 @@ Source sidecars:
 | 1 | `higgs_from_lattice_note` | bounded_theorem / audited_clean / retained_bounded | not_a_direct_promotion_candidate |
 | 2 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem / audited_clean / retained_bounded | not_a_direct_promotion_candidate |
 | 3 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |
-| 4 | `native_gauge_closure_note` | positive_theorem / unaudited / unaudited | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |
+| 4 | `native_gauge_closure_note` | positive_theorem / audit_in_progress / audit_in_progress | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |
 | 5 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited | bounded_terminal_after_dispatch_audit; current source scope is a finite projection lemma and does not close the kappa_EW matching-rule identification. Positive-theorem promotion remains conditional on a future source repair that closes that identification. |
 
 Full machine-readable queue lives in `data/audit_dispatch_queue.json`.

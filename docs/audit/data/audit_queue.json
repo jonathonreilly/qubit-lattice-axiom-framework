@@ -382,25 +382,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "native_gauge_closure_note",
-      "claim_scope": null,
+      "claim_scope": "Exact native cubic Cl(3), Clifford-bivector su(2), finite-block nearest-neighbor parity anticommutation, plus retained graph-first structural su(3), excluding all abelian/electroweak/matter/Wilson/phenomenology claims.",
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 39,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 29.55,
       "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_non_abelian_gauge.py",
       "transitive_descendants": 1059

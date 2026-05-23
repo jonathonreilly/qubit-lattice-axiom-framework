@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 374 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1324 |
+| unaudited | 1323 |
+| audit_in_progress | 1 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 17 |
@@ -46,13 +47,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
+| `audit_in_progress` | 1 |
 | `audited_clean` | 626 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1549 |
+| `unaudited` | 1548 |
 
 | claim_type | count |
 |---|---:|
@@ -104,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1008 | 29.98 | `unaudited` | unaudited |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 882 | 29.79 | `audited_clean` | **retained** |
 | 18 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 218 | 29.77 | `unaudited` | unaudited |
-| 19 | `native_gauge_closure_note` | positive_theorem | critical | 1059 | 29.55 | `unaudited` | unaudited |
+| 19 | `native_gauge_closure_note` | positive_theorem | critical | 1059 | 29.55 | `audit_in_progress` | audit_in_progress |
 | 20 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1015 | 29.49 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 185 | 29.04 | `unaudited` | unaudited |
 | 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 931 | 28.36 | `unaudited` | unaudited |
@@ -117,6 +119,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `native_gauge_closure_note` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |

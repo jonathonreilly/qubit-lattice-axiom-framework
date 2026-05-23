@@ -17,7 +17,7 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 206 |
+| critical | `unaudited` | 205 |
 | high | `unaudited` | 172 |
 | medium | `unaudited` | 110 |
 | critical | `audited_conditional` | 9 |
@@ -26,6 +26,7 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
 | medium | `audited_conditional` | 2 |
+| critical | `audit_in_progress` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 512
@@ -136,7 +137,7 @@ publication tables phrase it.
 | critical | `lorentz_kernel_positive_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `matter_radiation_equality_structural_identity_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `n_eff_from_three_generations_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
-| critical | `native_gauge_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `native_gauge_closure_note` | `audit_in_progress` | `audit_in_progress` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `neutrino_dirac_two_higgs_canonical_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `neutrino_dirac_z3_support_trichotomy_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `neutrino_majorana_adjacent_singlet_placement_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

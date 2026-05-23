@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 137 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 378 |
+| **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1303 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 9 |
@@ -49,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 635 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 636 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
@@ -122,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
-| `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -327,6 +325,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -4721,6 +4720,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The last coincidence is a definitional fact at finite-box scope: the decomposition stripping defines the finite-box residual factor's action on chi_(p,q) by a real diagonal scalar, and the bounded coefficient companion supplies the numerical values of that sequence on B.  _(class `F`)_
 - **chain closes:** False — The finite-box algebra and retained coefficient import close narrowly. The advertised coincidence with R_6^env does not close as a theorem because R_6^env is defined/identified with the diagonal rho(6) object rather than derived from an independent source-sector kernel or retained physical bridge.
 - **rationale:** N1 is immediate from defining a real nonnegative diagonal operator, and N2 is standard finite-box Peter-Weyl convolution algebra. The direct dependency is operationally retained_bounded, so the rho_(p,q)(6) table can be consumed as bounded numerical input. The load-bearing N3 residual-factor statement, however, is explicitly definitional: the runner builds K_6^src using R[rho(6)] and strips it back, so it verifies packaging rather than independently deriving the residual environment. Thus the safe result is a bounded algebraic core plus a definition, not a clean bounded residual-environment theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T184324Z-7a5e1d8c-gauge_vacuum_plaquette_r-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The runner computes rho_(p,q)(6) = c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) from the Schur-Weyl Bessel-determinant formula and inserts those computed values as the diagonal R_6^packet in exp(3J) D_6^loc R_6^packet exp(3J), replacing the prior witness.  _(class `C`)_
+- **chain closes:** True — For the narrowed finite packet, the runner source genuinely computes the coefficient table and then verifies the stated finite diagonal action, symmetry, positivity, and Perron-readout checks. The actual residual spatial-environment identification is not audited because the note explicitly excludes it from the claim scope.
+- **rationale:** Within the bounded scope, the load-bearing coefficient packet is computed in the runner rather than hard-coded or imported from the retired witness. The matrix checks then close over those computed coefficients and retained bounded upstream coefficient authority. The broader equality between the stripped residual source-sector operator and the compressed unmarked spatial Wilson environment remains open, but that equality is explicitly outside this narrowed claim.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`

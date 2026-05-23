@@ -105878,24 +105878,42 @@
       "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T18:45:04.078769+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 14.473,
+        "runner_hash": "3891f5f4af1f7b66d9bbc86e5f9cae0317e9062a27bbb7ddedc6f42623b8ba34",
+        "transitive_descendants": 1004
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T184324Z-7a5e1d8c-gauge_vacuum_plaquette_r-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the narrowed finite packet, the runner source genuinely computes the coefficient table and then verifies the stated finite diagonal action, symmetry, positivity, and Perron-readout checks. The actual residual spatial-environment identification is not audited because the note explicitly excludes it from the claim scope.",
       "claim_id": "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
-      "claim_scope": "Bounded audit of the finite source-sector coefficient packet built from computed normalized SU(3) Wilson character coefficients on the runner's finite dominant-weight box at beta=6 and MODE_MAX=80, plus the stated finite package symmetry, positivity, and Perron checks.",
+      "claim_scope": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T18:42:55.901790+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-23T18:45:04.078769+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -105910,27 +105928,38 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-23T18:45:04.078769+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T184324Z-7a5e1d8c-gauge_vacuum_plaquette_r-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "direct_in_degree": 9,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 14.473,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner computes rho_(p,q)(6) = c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) from the Schur-Weyl Bessel-determinant formula and inserts those computed values as the diagonal R_6^packet in exp(3J) D_6^loc R_6^packet exp(3J), replacing the prior witness.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "dea2dd0eef150cb225101d5170c7d8567fda5f20b2fdf3725b157d88048afd6a",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the minor scope detail that the companion note quotes a Weyl cross-check on 0 <= p,q <= 4 while this runner computes NMAX = 5; the clean verdict rests on the in-runner Bessel-determinant computation for the full audited box.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -106108,18 +106137,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 6,
+        "B": 1,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual Environment Finite Coefficient Packet",
       "transitive_descendants": 1004,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the bounded scope, the load-bearing coefficient packet is computed in the runner rather than hard-coded or imported from the retired witness. The matrix checks then close over those computed coefficients and retained bounded upstream coefficient authority. The broader equality between the stripped residual source-sector operator and the compressed unmarked spatial Wilson environment remains open, but that equality is explicitly outside this narrowed claim."
     },
     "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17": {
       "audit_date": null,

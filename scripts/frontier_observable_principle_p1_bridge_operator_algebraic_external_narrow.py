@@ -246,9 +246,9 @@ def test_T5_counterexample_family_F_p() -> None:
         f"cases (p, mult_diff, add_diff): {details}",
     )
     check(
-        "F_p additivity fails for all p != 0 (P3) - structurally non-additive",
+        "F_p additivity fails on the explicit witness (r_A=2, r_B=3) for tested p != 0 (P3) - existential non-additivity",
         ok_add_failure_all,
-        "F_p[J_A (+) J_B] != F_p[J_A] + F_p[J_B] for r_A=2, r_B=3, p != 0",
+        "F_p[J_A (+) J_B] != F_p[J_A] + F_p[J_B] verified on the off-coincidence-curve witness (r_A=2, r_B=3) for the tested p != 0 values; suffices for the existential non-additivity conclusion. The universal 'for all r_A, r_B' version is not checked and is not claimed (the coincidence curve r_A^p r_B^p = r_A^p + r_B^p contains nontrivial points such as r_A^p = r_B^p = 2)",
     )
 
 

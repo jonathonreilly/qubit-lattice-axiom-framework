@@ -66348,7 +66348,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "2c2108fedb9cb5744d792d68f9acc59fd2686afd86b01abcb2bf39d9cb36503b",
+      "note_hash": "b159a79044b421d3953c17457e11f8bb906113ef875620c6a0ce476abcaa6897",
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
       "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic External Narrow Bounded Note"

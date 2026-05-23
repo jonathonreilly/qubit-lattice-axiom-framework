@@ -4,6 +4,13 @@
 **Date:** 2026-04-11
 **Primary runner:** scripts/frontier_field_equation_uniqueness.py
 
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this variational wrapper is a non-chain-closing
+alias/decorative handle, the candidate parent is
+[`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.
+
 ## The Problem
 
 The screened Poisson equation (L + μ²)Φ = G·ρ was chosen by convention.

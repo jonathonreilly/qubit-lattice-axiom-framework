@@ -11,6 +11,13 @@ framing — is **directly given by the qubit-per-site baseline** of
 the qubit-reframe axiom set
 ([`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)).
 
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this U4 closure note is a non-chain-closing
+alias/decorative handle, the candidate parent is
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.
+
 Under the new axioms, U4 is no longer an open admission. The
 single-faithful-Cl(3)-module-per-site selection is what the
 qubit-per-site baseline *means*.

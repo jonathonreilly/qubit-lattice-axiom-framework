@@ -55,7 +55,7 @@ The 2026-05-02 cluster obstruction note proved each of (a)-(d) fails analyticall
 | Plaq-MC | `<P>_iso(β=6, isotropic) = 0.5934` (registered MC datum on the cited source stack) | [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) |
 | Plaq-Ham | `<P_σ>(g²=1, Hamilton-limit, anisotropic) = 0.4410 ± 0.0006_stat-vol ± 0.013_C-iso(ξ=4)` | [`EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness.md`](EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness.md) |
 | Cisos-NLO | `rel_shift_SU(3)(s_t) = (7/12)·s_t + O(s_t²)` (SU(3) NLO closed form C-iso) | [`C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md`](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md) |
-| GS-Bridge | gauge-scalar implicit-flow theorem: `<P>_full = R_O(β_eff)` exists uniquely on each finite Wilson surface | [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03.md) |
+| GS-Bridge | gauge-scalar implicit-flow theorem: `<P>_full = R_O(β_eff)` exists uniquely on each finite Wilson surface | [`GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md`](GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) (retained sibling; previously cited renaming-tier implicit-flow theorem) |
 | GS-NoGo | gauge-scalar companion no-go: `<P>_full(β=6)` and `β_eff(6)` are NOT analytically derivable from current primitives | [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md) |
 | Hier | `v = M_Pl · (7/8)^{1/4} · α_LM¹⁶ = 246.28 GeV` (bounded hierarchy-formula numerical match; closure open) | [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) |
 | StagDirac | staggered-Dirac realization gate (open: `MINIMAL_AXIOMS_2026-05-03.md` lists this as open derivation target) | [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) |
@@ -214,7 +214,7 @@ audit_required_before_effective_status_change: true
 ### Sister cluster notes (cycles 5, 9 — same-shape obstruction)
 
 - [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) — cycle 5
-- [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03.md) — cycle 9 (positive structural bounded result)
+- [`GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md`](GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) — cycle 9 (positive structural bounded result; retained sibling; previously cited renaming-tier implicit-flow theorem)
 - [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md) — cycle 9 (companion no-go)
 
 ### C-iso engineering frontier (used to prove T5)

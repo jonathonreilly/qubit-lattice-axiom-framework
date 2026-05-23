@@ -10,6 +10,13 @@ formally connecting the framework's persistent-record lane to the
 Kraus / CPTP operator structure used by measurement-update rules. The
 Born note is a downstream repair target, not an upstream dependency.
 
+**Audit-dispatch parent candidate:** If a future independent audit
+evaluates whether this Kraus-operator bridge is a non-chain-closing
+alias/decorative handle, the candidate parent is
+[`PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md`](PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md).
+This is source-side routing context only; it does not assert an
+`audit_status` or `effective_status`.
+
 ## Claim
 
 For each persistent record `r` produced by the

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1264 |
+| unaudited | 1263 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 122 |
+| ~~audited_conditional~~ | 123 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 650 |
-| `audited_conditional` | 122 |
+| `audited_conditional` | 123 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1490 |
+| `unaudited` | 1489 |
 
 | claim_type | count |
 |---|---:|
@@ -844,6 +844,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | G | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -7866,6 +7867,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The source note does not assert an independent physics theorem; it defines repository routing/status for this note. The cited retained_bounded authorities support the existence and bounded scope of the referenced canonical artifacts, but no new MI derivation is attempted here.
 - **rationale:** The load-bearing content is metadata: this note is a superseded pointer/alias and should not be treated as the canonical result. That is class E definition/routing rather than a first-principles derivation or algebraic closure. The runner genuinely computes the bounded chokepoint MI table, but that computation belongs to the cited chokepoint artifact, not to a new claim made by this pointer note.
 - **auditor confidence:** high
+
+### `mirror_vs_central_head_to_head_note`
+
+- **Note:** [`MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md`](../../docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A cache-reader head-to-head comparison of one retained dense central-band row against the cited strict-default and dense-boundary mirror retained rows.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T201549Z-d3ee6508-mirror_vs_central_head_t-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Reading the registered runner caches directly via the cache-reader, the note ranks the dense central-band retained row above the strict and dense-boundary mirror pockets.  _(class `B`)_
+- **chain closes:** False — The row transcription closes: the runner reads the three cited retained caches and recovers the advertised rows and FAIL markers. The asserted cross-lane ranking does not close as a theorem because the packet supplies no explicit criterion converting pur_min versus pur_cl plus gravity values into the stated lane ordering.
+- **rationale:** The runner source is a cache-reader, not a first-principles computation, and it correctly verifies the cited cache rows at class B. All three cited authorities are retained_bounded, so there is no dependency-status blocker for the rows themselves. The remaining blocker is the qualitative head-to-head ranking: it is printed after row recovery but is not derived from an assertion-gated cross-lane ranking rule, especially given the note's own fairness caveat that the purity observables differ.
+- **auditor confidence:** medium
 
 ### `moonshot_other_testables_note`
 

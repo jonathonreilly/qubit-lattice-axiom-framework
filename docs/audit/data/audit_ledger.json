@@ -168425,8 +168425,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "S4 mirror is the strongest scalable MI lane in this extension, while the exact chokepoint MI chain remains the synthesis-grade retained result.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "d91b7954ae3bba41814916d3325616d09e9fa5b0f674081c65621b05e15dc570",
       "note_path": "docs/MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md",
       "open_dependency_paths": [],
@@ -168978,24 +168978,50 @@
       "verdict_rationale": null
     },
     "mirror_vs_central_head_to_head_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T20:17:40.305121+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "central_band_dense_joint_highn_note": "Audited the bounded high-N dense central-band scan for N=80,100 over npl=60,70,80 using the provided same-graph Born, purity, and gravity runner chain.",
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
+          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+        },
+        "dep_claim_type": {
+          "central_band_dense_joint_highn_note": "bounded_theorem",
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
+          "mirror_chokepoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "central_band_dense_joint_highn_note": "retained_bounded",
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded",
+          "mirror_chokepoint_note": "retained_bounded"
+        },
+        "deps": [
+          "central_band_dense_joint_highn_note",
+          "mirror_chokepoint_boundary_fit_note",
+          "mirror_chokepoint_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b431829587807205231f61842dbf39687475b2cb69e40431dcb6f8643d9a7c9c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T201549Z-d3ee6508-mirror_vs_central_head_t-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The row transcription closes: the runner reads the three cited retained caches and recovers the advertised rows and FAIL markers. The asserted cross-lane ranking does not close as a theorem because the packet supplies no explicit criterion converting pur_min versus pur_cl plus gravity values into the stated lane ordering.",
       "claim_id": "mirror_vs_central_head_to_head_note",
-      "claim_scope": null,
+      "claim_scope": "A cache-reader head-to-head comparison of one retained dense central-band row against the cited strict-default and dense-boundary mirror retained rows.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T20:17:40.305121+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -169005,19 +169031,19 @@
         "mirror_chokepoint_boundary_fit_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Reading the registered runner caches directly via the cache-reader, the note ranks the dense central-band retained row above the strict and dense-boundary mirror pockets.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "2be17d816ddf00605320e57704ffa60b70635f980cd6d16642fa505603ce7ed4",
       "note_path": "docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: define and assertion-gate the cross-lane ranking criterion, or narrow the note to pure cache transcription without a retained-winner ranking.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -169194,18 +169220,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 3,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/mirror_vs_central_head_to_head.py",
       "title": "Mirror vs Central Head-To-Head Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source is a cache-reader, not a first-principles computation, and it correctly verifies the cited cache rows at class B. All three cited authorities are retained_bounded, so there is no dependency-status blocker for the rows themselves. The remaining blocker is the qualitative head-to-head ranking: it is printed after row recovery but is not derived from an assertion-gated cross-lane ranking rule, especially given the note's own fairness caveat that the purity observables differ."
     },
     "mirror_vs_lattice_program_note": {
       "audit_date": null,

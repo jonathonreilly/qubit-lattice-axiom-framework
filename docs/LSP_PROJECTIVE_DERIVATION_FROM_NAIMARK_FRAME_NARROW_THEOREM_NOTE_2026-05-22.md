@@ -121,9 +121,10 @@ The framework's choice of the canonical frame `K_P = P` is therefore a **standar
 
 Load-bearing markdown-link upstream:
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site axiom on the `Z^3` spatial substrate
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site axiom on the `Z^3` spatial substrate; canonical axiom-premise node
+- [`NAIMARK_DILATION_TEXTBOOK_IMPORT_NOTE_2026-05-23.md`](NAIMARK_DILATION_TEXTBOOK_IMPORT_NOTE_2026-05-23.md) — admitted-external-import supplying the canonical Naimark dilation and the projective Kraus form `K_r = P_r` (Naimark 1940; Holevo; Watrous; Stinespring), used in Steps 1–2
 
-Named non-derivation imports (standard textbook content):
+Named non-derivation imports (now carried by the admitted-external-import note linked above):
 
 - **Naimark 1940** dilation theorem (Holevo Ch. III; Watrous §2.4)
 - **Stinespring 1955** dilation theorem (standard)

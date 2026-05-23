@@ -88,12 +88,14 @@ W[J]  :=  log Tr(ρ · e^{-J})  -  log Tr(ρ).                              (Q1)
 
 The sign convention `e^{-J}` matches the partition-function convention `Z = Tr(e^{-βH})` of quantum statistical mechanics; the framework follows this convention.
 
+**Sign bookkeeping (made explicit).** With the `e^{-J}` convention, the order-`n` `J`-derivative at `J = 0` returns `(-1)^n` times the connected `n`-point cumulant `κ_n`: i.e. `κ_n = (-1)^n · ∂^n W / ∂J^n |_{J=0}`. Equivalently, define the framework's connected `n`-point function as the cumulant of `+J·O` and absorb the sign by reading derivatives of `W[-J]`. Either way the `(-1)^n` is a fixed bookkeeping factor of the chosen `e^{-J}` source convention, not an ambiguity: even-order cumulants (variance and up) come out with the textbook sign; odd-order ones carry the explicit `(-1)`. The list below states the raw `δW/δJ` derivatives (carrying the `e^{-J}` sign); the cumulants are these times `(-1)^n`.
+
 The functional `W[J]` satisfies:
 
 - `W[0] = log Tr(ρ) - log Tr(ρ) = 0` (normalization)
-- `δW / δJ_α |_{J=0} = - Tr(ρ O_α)` (one-point function, with `-` from `e^{-J}` sign)
-- `δ²W / δJ_α δJ_β |_{J=0} = Tr(ρ O_α O_β) - Tr(ρ O_α) Tr(ρ O_β)` for commuting `[O_α, O_β] = 0`; the connected two-point function (covariance)
-- Higher functional derivatives give higher connected `n`-point functions
+- `δW / δJ_α |_{J=0} = - Tr(ρ O_α)` (one-point function; the `-` is the `n=1` factor `(-1)^1` of the `e^{-J}` convention, so `κ_1 = Tr(ρ O_α)`)
+- `δ²W / δJ_α δJ_β |_{J=0} = Tr(ρ O_α O_β) - Tr(ρ O_α) Tr(ρ O_β)` for commuting `[O_α, O_β] = 0`; this is `(-1)^2 = +1` times the connected two-point function (covariance), i.e. the textbook sign
+- Higher functional derivatives give `(-1)^n` times the connected `n`-point functions
 
 For commuting observable families (`[O_α, O_β] = 0` for all `α, β`), the multivariate quantum cumulant generating functional reduces to the classical one applied to the joint spectral measure of the `{O_α}`. For non-commuting families, ordering issues require care; (Q1) is a standard Kubo/source convention, not a proof that all ordering choices are physically equivalent.
 

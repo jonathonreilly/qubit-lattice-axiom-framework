@@ -204,9 +204,10 @@ operator structure.
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate); canonical axiom-premise node
+- [`UHF_TRACIAL_UNIQUENESS_TEXTBOOK_IMPORT_NOTE_2026-05-23.md`](UHF_TRACIAL_UNIQUENESS_TEXTBOOK_IMPORT_NOTE_2026-05-23.md) — admitted-external-import supplying the standard UHF type-`2^∞` unique-trace theorem (Powers 1967) used in Step 4
 
-**Upstream standard-math imports** (named non-derivation):
+**Upstream standard-math imports** (named non-derivation; the UHF unique-trace import is now carried by the admitted-external-import note linked above):
 
 - Dixmier 1981 *Les algèbres d'opérateurs dans l'espace hilbertien*
 - Glimm 1960 *Trans. AMS* 95, 318

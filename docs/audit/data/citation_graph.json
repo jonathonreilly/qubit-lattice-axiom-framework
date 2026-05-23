@@ -46617,7 +46617,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "161d6d759136b133315dd92d43c2b20b858a61876790a58a53ade92557708496",
+      "note_hash": "1effb11272f71ba666dfe23d1ae0593ce7cdcc4201076f6e76647d6815c90864",
       "path": "docs/DIRAC_V4_CONVERGENCE_NOTE.md",
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py",
       "title": "Dirac v4 Convergence Note"

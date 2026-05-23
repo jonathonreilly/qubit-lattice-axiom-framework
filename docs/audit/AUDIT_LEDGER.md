@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 126 |
+| **retained** | 127 |
 | **retained_no_go** | 151 |
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 642 |
+| `audited_clean` | 643 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1511 |
+| `unaudited` | 1510 |
 
 | claim_type | count |
 |---|---:|
@@ -711,6 +711,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_count_corollary_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -11720,6 +11721,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Exact symbolic construction of projectors and matrix units from C and T_i, rank/spanning verification of M_3(C), invariant-subspace checks, and Burnside rank-one witness.  _(class `A`)_
 - **chain closes:** True — The theorem is explicitly abstract matrix algebra with zero ledger dependencies, and the live exact SymPy runner reproduced the cached PASS=50, FAIL=0 result without importing framework/audit/lattice modules.
 - **rationale:** All claimed algebraic conclusions follow constructively: the P_i project onto the three coordinate lines, P_i C^k P_j produces every matrix unit, the nine units span M_3(C), and irreducibility/no-proper-quotient follows. The note explicitly strips away the physical generation interpretation, so no open staggered-Dirac or physical-lattice gate is load-bearing here.
+- **auditor confidence:** high
+
+### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For disjoint finite qubit-lattice regions, the unique tracial state on A_{Λ_1 ∪ Λ_2} ≅ A_{Λ_1} ⊗ A_{Λ_2} factorizes on simple tensors as τ_{Λ_1}(A)τ_{Λ_2}(B).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125611Z-2405af6e-tomita_tensor_trace_on_f-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The unique normalized trace on M_{n_1 n_2}(C) satisfies Tr_{n_1 n_2}(A ⊗ B)/(n_1 n_2) = (Tr_{n_1} A/n_1)(Tr_{n_2} B/n_2), so the combined tracial state factorizes on simple tensors.  _(class `A`)_
+- **chain closes:** True — A1+A2 supply finite-region algebras as finite tensor products of M_2(C), hence simple matrix algebras. The finite-dimensional trace identity and uniqueness of the normalized trace on M_n(C) give the stated factorization without needing a runner.
+- **rationale:** The load-bearing step is an elementary finite-dimensional matrix-trace identity plus trace uniqueness on full matrix algebras, applied directly to the axiom-supplied qubit finite-region algebras. The only cited authority is the A1+A2 axiom node, explicitly flagged as axiom_premise, so it does not trigger the not-retained downgrade. The claim is narrow: it does not assert factorization for arbitrary C*-algebras or promote downstream pre-record-state identifications.
 - **auditor confidence:** high
 
 ### `triage_no_promotion_note`

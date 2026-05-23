@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 137 |
-| **retained_no_go** | 148 |
+| **retained_no_go** | 149 |
 | **retained_bounded** | 382 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1296 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 9 |
@@ -49,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 640 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 641 |
 | `audited_conditional` | 107 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
@@ -122,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
-| `yt_color_projection_correction_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -758,6 +756,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12434,6 +12433,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
   - `work_history/yt/YT_SCHUR_STABILITY_GAP_NOTE.md`
   - `work_history/yt/YT_MICROSCOPIC_SCHUR_CLASS_ADMISSIBILITY_NOTE.md`
   - `work_history/yt/YT_GAUGE_CROSSOVER_THEOREM.md`
+- **auditor confidence:** high
+
+### `yt_color_projection_correction_note`
+
+- **Note:** [`YT_COLOR_PROJECTION_CORRECTION_NOTE.md`](../../docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Packet-level no-go that the cited SU(3) Fierz/channel-count authority plus color-blind scaling do not derive the Yukawa-side selector kappa_Y = 0 or an unconditional sqrt(8/9) Y_T correction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T191533Z-c7a84e47-yt_color_projection_corr-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Two completions, kappa_Y = 0 with K_Y = 8/9 and kappa_Y = 1 with K_Y = 1, share the same retained Fierz channel fractions and color-blind scaling law, so those premises do not determine the connected-trace selector.  _(class `A`)_
+- **chain closes:** True — The cited authority supplies only the exact adjoint and singlet channel fractions, and it explicitly leaves matching/readout rules outside its derivation. The source note's two-completion witness is enough to show underdetermination on that restricted premise set.
+- **rationale:** The no-go is narrowly scoped to non-derivability from the restricted packet, not to impossibility across the full framework. Its load-bearing step is an algebraic independence witness over the cited channel fractions: the same retained primitive data permit kappa_Y = 0 and kappa_Y = 1 with different K_Y values. The cited Fierz authority is retained-grade decoration and does not contain a closed Yukawa readout theorem. The No-Go Discipline gate is satisfied in-packet: alternative routes are enumerated, the wall is collapsed to the missing selector theorem, hidden wording is scoped, and the steelman is left as future work rather than overruled.
 - **auditor confidence:** high
 
 ### `yt_ew_color_projection_theorem`

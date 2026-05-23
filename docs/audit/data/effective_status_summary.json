@@ -1,8 +1,8 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1012,
+    "bounded_theorem": 1011,
     "decoration": 31,
-    "meta": 228,
+    "meta": 229,
     "no_go": 241,
     "open_gate": 111,
     "positive_theorem": 756
@@ -11,7 +11,7 @@
   "cycles_detected": 0,
   "effective_status_counts": {
     "audited_conditional": 101,
-    "audited_failed": 21,
+    "audited_failed": 20,
     "audited_numerical_match": 11,
     "audited_renaming": 8,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
@@ -30,7 +30,7 @@
     "decoration_under_moving_source_retarded_portability_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
-    "meta": 225,
+    "meta": 226,
     "open_gate": 13,
     "retained": 137,
     "retained_bounded": 379,

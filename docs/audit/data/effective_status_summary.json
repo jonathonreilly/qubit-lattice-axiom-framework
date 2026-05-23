@@ -41,7 +41,7 @@
     "audited_conditional": 87,
     "audited_failed": 22,
     "audited_numerical_match": 10,
-    "audited_renaming": 17,
+    "audited_renaming": 18,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 3,
     "decoration_under_cpt_exact_note": 4,
@@ -62,7 +62,7 @@
     "retained_bounded": 375,
     "retained_no_go": 147,
     "retained_pending_chain": 7,
-    "unaudited": 1320
+    "unaudited": 1319
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

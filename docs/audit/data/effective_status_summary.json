@@ -3,7 +3,7 @@
     "bounded_theorem": 1012,
     "decoration": 31,
     "meta": 229,
-    "no_go": 241,
+    "no_go": 242,
     "open_gate": 111,
     "positive_theorem": 755
   },
@@ -37,7 +37,7 @@
     "retained_bounded": 379,
     "retained_no_go": 149,
     "retained_pending_chain": 7,
-    "unaudited": 1301
+    "unaudited": 1302
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

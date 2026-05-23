@@ -75,6 +75,17 @@ ALLOWED_CLAIM_TYPES = {
     None,
 }
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
+
+
+def is_retained_grade(status):
+    """Mirror compute_effective_status.is_retained_grade: literal retained-grade
+    keywords plus `decoration_under_<parent>` (which is only assigned when the
+    parent is itself retained-grade)."""
+    if status in RETAINED_GRADES:
+        return True
+    if isinstance(status, str) and status.startswith("decoration_under_"):
+        return True
+    return False
 ALLOWED_EFFECTIVE_STATUSES = {
     "retained",
     "retained_no_go",
@@ -552,7 +563,7 @@ def main() -> int:
                     errors.append(msg)
             else:
                 parent_eff = rows.get(parent, {}).get("effective_status")
-                if parent_eff not in RETAINED_GRADES:
+                if not is_retained_grade(parent_eff):
                     add_notice(
                         "decoration_parent_not_retained",
                         f"{cid}: decoration parent {parent!r} is not retained-grade "
@@ -635,15 +646,19 @@ def main() -> int:
     # Accepted premises are axiom-only. The canonical axiom node is exempt
     # because it satisfies chain closure without being retained-grade itself.
     # Textbook results must flow through ordinary retained-grade rows, not this
-    # carve-out. Must stay in sync with compute_effective_status.py's
-    # clean_status (both go through premise_nodes).
+    # carve-out.
+    # `decoration_under_<parent>` deps count as retained-grade because
+    # decoration_status() only assigns that status when the parent is itself
+    # retained-grade.
+    # Must stay in sync with compute_effective_status.py's clean_status
+    # (both go through premise_nodes / is_retained_grade).
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:
             for d in row.get("deps", []):
                 if premise_nodes.is_accepted_premise_dep(d):
                     continue
                 d_eff = rows.get(d, {}).get("effective_status")
-                if d_eff not in RETAINED_GRADES:
+                if not is_retained_grade(d_eff):
                     errors.append(
                         f"{cid}: effective_status={row.get('effective_status')!r} but dep {d!r} "
                         f"has effective_status={d_eff!r}"

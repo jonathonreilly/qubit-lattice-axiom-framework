@@ -253,6 +253,92 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertIsNone(row["blocker"])
 
 
+class BuildCitationGraphParserTest(unittest.TestCase):
+    """Parser behavior tests for _parse_script_imports — must detect bare
+    PYTHONPATH-style imports (`from X import ...`, `import X`) when
+    scripts/X.py exists, in addition to `from scripts.X import` and
+    relative-form imports."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.scripts_dir = self.tmp_root / "scripts"
+        self.scripts_dir.mkdir(parents=True, exist_ok=True)
+
+    def _write(self, name: str, body: str) -> Path:
+        p = self.scripts_dir / f"{name}.py"
+        p.write_text(body, encoding="utf-8")
+        return p
+
+    def test_bare_from_import_is_detected_when_scripts_file_exists(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("helper_one", "x = 1\n")
+            self._write("helper_two", "y = 2\n")
+            primary = self._write(
+                "primary",
+                "from helper_one import x\n"
+                "from helper_two import y\n"
+                "import numpy as np\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"helper_one", "helper_two"})
+
+    def test_bare_import_X_is_detected_when_scripts_file_exists(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("aliased_helper", "z = 3\n")
+            primary = self._write(
+                "primary",
+                "import aliased_helper as alias\n"
+                "import json\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"aliased_helper"})
+
+    def test_third_party_imports_excluded(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            primary = self._write(
+                "primary",
+                "import numpy\n"
+                "import scipy.linalg\n"
+                "from math import sqrt\n"
+                "from pathlib import Path\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, set())
+
+    def test_existing_scripts_dot_prefix_form_still_works(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("prefixed_helper", "w = 4\n")
+            primary = self._write(
+                "primary",
+                "from scripts.prefixed_helper import w\n"
+                "import scripts.prefixed_helper\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"prefixed_helper"})
+
+
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
@@ -528,6 +614,117 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         }
         new_rows, _ = m.compute_effective(rows)
         self.assertEqual(new_rows["born_critical"]["effective_status"], "audit_in_progress")
+
+    def test_decoration_under_retained_counts_as_retained_grade(self):
+        """A clean theorem whose only dep is a decoration_under_<retained_parent>
+        must promote to retained-grade. The decoration's effective_status is
+        only assigned when the parent is itself retained-grade, so it inherits
+        retention and is_retained_grade() must honor that for chain closure."""
+        m = _import("compute_effective_status")
+        rows = {
+            "root": {
+                "claim_id": "root",
+                "deps": [],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+            "decoration_child": {
+                "claim_id": "decoration_child",
+                "deps": ["root"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "root",
+            },
+            "downstream_theorem": {
+                "claim_id": "downstream_theorem",
+                "deps": ["decoration_child"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        new_rows, _ = m.compute_effective(rows)
+        self.assertEqual(new_rows["root"]["effective_status"], "retained")
+        self.assertEqual(
+            new_rows["decoration_child"]["effective_status"],
+            "decoration_under_root",
+        )
+        self.assertEqual(
+            new_rows["downstream_theorem"]["effective_status"],
+            "retained_bounded",
+        )
+
+    def test_chained_decoration_under_retained_resolves(self):
+        """A decoration whose parent is itself a decoration_under_<retained_root>
+        must resolve to decoration_under_<parent>, not retained_pending_chain.
+        Chained decorations preserve retention down the chain."""
+        m = _import("compute_effective_status")
+        rows = {
+            "root": {
+                "claim_id": "root",
+                "deps": [],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+            "decoration_mid": {
+                "claim_id": "decoration_mid",
+                "deps": ["root"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "root",
+            },
+            "decoration_leaf": {
+                "claim_id": "decoration_leaf",
+                "deps": ["decoration_mid"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "decoration_mid",
+            },
+        }
+        new_rows, _ = m.compute_effective(rows)
+        self.assertEqual(
+            new_rows["decoration_mid"]["effective_status"],
+            "decoration_under_root",
+        )
+        self.assertEqual(
+            new_rows["decoration_leaf"]["effective_status"],
+            "decoration_under_decoration_mid",
+        )
+
+    def test_decoration_under_non_retained_does_not_promote(self):
+        """If the decoration's parent is NOT retained-grade (e.g. unaudited),
+        the decoration row stays retained_pending_chain. The relaxation only
+        applies to decoration_under_<X> where X is itself retained-grade."""
+        m = _import("compute_effective_status")
+        rows = {
+            "unaudited_root": {
+                "claim_id": "unaudited_root",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "positive_theorem",
+            },
+            "decoration_child": {
+                "claim_id": "decoration_child",
+                "deps": ["unaudited_root"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "unaudited_root",
+            },
+            "downstream_theorem": {
+                "claim_id": "downstream_theorem",
+                "deps": ["decoration_child"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        new_rows, _ = m.compute_effective(rows)
+        self.assertEqual(
+            new_rows["decoration_child"]["effective_status"],
+            "retained_pending_chain",
+        )
+        self.assertEqual(
+            new_rows["downstream_theorem"]["effective_status"],
+            "retained_pending_chain",
+        )
 
     def test_main_drops_stale_top_level_timestamp_keys(self):
         m = _import("compute_effective_status")

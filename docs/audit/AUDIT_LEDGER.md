@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1279 |
+| unaudited | 1280 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 103 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 643 |
-| `audited_conditional` | 103 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1504 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -77,10 +77,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1931
+- runners classified: 1932
 - runners with (C) first-principles compute hits: 951
 - runners with (D) external comparator hits: 547
-- decoration candidates (no C, no D): 310
+- decoration candidates (no C, no D): 311
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -785,7 +785,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
@@ -4219,19 +4218,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The constraint-vs-convention status of g or beta is a function of the admission rank r: with r = 1 the remaining variables lie on a one-parameter convention curve, while with r = 2 the remaining variable is uniquely forced by beta*g^2 = K.  _(class `A`)_
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
-- **auditor confidence:** high
-
-### `g_bare_constraint_vs_convention_theorem_note_2026-05-03`
-
-- **Note:** [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional local algebraic result: given the canonical Cl(3) trace normalization, Wilson plaquette matching beta = 2 N_c / g_bare^2, N_c = 3, and beta = 6, g_bare = 1 is fixed relative to that normalization rather than being a second independent convention.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T160115Z-1514fac8-g_bare_constraint_vs_con-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under canonical normalization (CN) and Wilson matching beta = 2 N_c / g_bare^2, at N_c = 3 and beta = 6 the unique compatible value is g_bare^2 = 6/6 = 1.  _(class `A`)_
-- **chain closes:** False — The algebraic substitution closes, but beta = 6 as a canonical-normalization-forced input is not supplied by the cited retained authority; the Wilson action form and beta-pinning remain admitted premises in the packet.
-- **rationale:** The runner verifies the stated algebra and the CN rescaling check, but it also treats the canonical Wilson beta = 2 N_c = 6 and the Wilson plaquette action form as inputs rather than deriving them from the single cited authority. The cited CL3 authority carries the Gell-Mann trace normalization and N_c = 3 algebraically, but it does not close the Wilson matching or beta-pinning premise needed for the theorem's conclusion. Therefore the narrowed relative statement is plausible as algebra over admitted premises, but the restricted one-hop packet does not close the full cited-input chain.
 - **auditor confidence:** high
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`

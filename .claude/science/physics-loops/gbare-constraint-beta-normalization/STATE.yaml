@@ -1,0 +1,31 @@
+loop: gbare-constraint-beta-normalization
+status: bounded-support
+date: 2026-05-23
+base: origin/main
+branch: physics-loop/gbare-constraint-beta-normalization-block01-20260523
+current_goal: >
+  Repair the audited_conditional g_bare constraint-vs-convention row by
+  wiring the now-retained Wilson-matching authority and narrowing beta = 6
+  to an explicit local Wilson surface input.
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >
+  The row is a bounded theorem candidate that still requires independent
+  audit; beta = 6 is explicit input, not derived from A1 + A2.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md
+  - scripts/frontier_g_bare_constraint_surface_check.py
+open_imports:
+  - independent audit verdict on the repaired row
+  - no derivation of beta = 6 from A1 + A2
+  - no parent G_BARE_DERIVATION_NOTE promotion from this PR
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1741
+next_exact_action: independent review/audit
+stop_condition: one review PR opened for this coherent science block

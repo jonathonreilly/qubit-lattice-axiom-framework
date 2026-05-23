@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 276,
+    "critical": 275,
     "high": 349,
     "leaf": 341,
     "medium": 339
@@ -10,28 +10,28 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": "Audited only the local bounded algebraic result that retained CN plus retained Wilson matching beta = 2 N_c / g_bare^2 plus the explicit local Wilson surface N_c = 3, beta = 6 imply g_bare = 1, without deriving beta = 6 or CN.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_derivation_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "cl3_color_automorphism_theorem",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
-      "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 18,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.972,
-      "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 18.97,
+      "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_g_bare_constraint_surface_check.py",
-      "transitive_descendants": 1003
+      "runner_path": "scripts/frontier_g_bare_derivation.py",
+      "transitive_descendants": 1002
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -280,31 +280,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_mru_weight_class_obstruction_theorem.py",
       "transitive_descendants": 143
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_derivation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.97,
-      "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_g_bare_derivation.py",
-      "transitive_descendants": 1002
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -39050,5 +39025,5 @@
     }
   ],
   "ready_count": 39,
-  "total_pending": 1305
+  "total_pending": 1304
 }

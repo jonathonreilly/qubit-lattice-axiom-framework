@@ -91275,24 +91275,46 @@
       "verdict_rationale": null
     },
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T18:53:47.383105+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 11.972,
+        "runner_hash": "f19b5471f3ffb07048df94d338e4f47cdb0ee46fa7b2bff5810021894abc0073",
+        "transitive_descendants": 1003
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T185326Z-c266471a-g_bare_constraint_vs_con-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated bounded claim closes as an algebraic substitution from retained CN and WM inputs plus the explicitly admitted local beta=6 surface. The packet does not claim derivation of CN, WM, or beta=6 from deeper framework axioms.",
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": "Audited only the local bounded algebraic result that retained CN plus retained Wilson matching beta = 2 N_c / g_bare^2 plus the explicit local Wilson surface N_c = 3, beta = 6 imply g_bare = 1, without deriving beta = 6 or CN.",
+      "claim_scope": "Given canonical trace normalization Tr(T_a T_b)=delta_ab/2, retained Wilson matching beta=2 N_c/g_bare^2, and the explicit local Wilson surface N_c=3, beta=6, the compatible value is g_bare=1; beta=6 is not derived.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T18:52:57.093596+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-23T18:53:47.383105+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -91307,8 +91329,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-23T18:53:47.383105+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T185326Z-c266471a-g_bare_constraint_vs_con-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given canonical trace normalization Tr(T_a T_b)=delta_ab/2, retained Wilson matching beta=2 N_c/g_bare^2, and the explicit local Wilson surface N_c=3, beta=6, the compatible value is g_bare=1; beta=6 is not derived.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -91316,19 +91349,19 @@
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.972,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At N_c = 3 on the explicit local Wilson surface beta = 2 N_c = 6, g_bare^2 = 2 N_c / beta = 6 / 6 = 1, hence g_bare = 1.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "2f0c3e471ab0052b97a2e21e5e87144181ea66efa403baae9ae1d5db5eb07631",
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the ledger-level retained status for the rescaling-freedom authority is intended to override stale unaudited-candidate wording inside that cited note.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -91764,20 +91797,20 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.976865+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 8,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_g_bare_constraint_surface_check.py",
       "title": "g_bare Constraint vs Convention Disambiguation Theorem",
       "transitive_descendants": 1003,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity over the declared bounded surface. Both one-hop authorities are marked retained in the restricted packet, and the open physical-color bridge language in CL3 is outside this note's narrowed use of canonical SU(3) normalization and N_c=3 algebra. The runner source performs exact Fraction arithmetic and dependency-status checks rather than merely printing constants. The conclusion is clean only for the relative bounded surface; it does not promote the broader g_bare derivation."
     },
     "g_bare_derivation_note": {
       "audit_date": null,

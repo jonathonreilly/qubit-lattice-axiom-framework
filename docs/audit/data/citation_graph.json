@@ -17397,6 +17397,14 @@
       "to": "graph_first_su3_integration_note"
     },
     {
+      "from": "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23",
+      "to": "native_gauge_closure_note"
+    },
+    {
+      "from": "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
       "from": "neutrino_axiom3_reading_stuck_fanout_note_2026-04-28",
       "to": "minimal_axioms_2026-04-11"
     },
@@ -64362,6 +64370,21 @@
       "runner_path": "scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py",
       "title": "Native Gauge Left-Handed Abelian Surface Bounded Note"
     },
+    "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23": {
+      "claim_id": "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "native_gauge_closure_note",
+        "graph_first_su3_integration_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5df43ec923f5c4d13f2acfd31302df700f9a73a9e23f639d019c334916a60435",
+      "path": "docs/NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_holonomy_native_plaquette_discriminator.py",
+      "title": "Native-Holonomy Plaquette Center-Flux No-Go"
+    },
     "nature_discovery_directions_2026-04-11": {
       "claim_id": "nature_discovery_directions_2026-04-11",
       "claim_type_author_hint": null,
@@ -84274,7 +84297,7 @@
       "bounded_theorem": 524,
       "decoration": 1,
       "meta": 188,
-      "no_go": 67,
+      "no_go": 68,
       "none": 1492,
       "open_gate": 45,
       "positive_theorem": 176
@@ -84283,15 +84306,15 @@
       "bounded_theorem": 960,
       "decoration": 1,
       "meta": 188,
-      "no_go": 170,
+      "no_go": 171,
       "none": 443,
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9653,
-    "leaf_count": 767,
-    "node_count": 2493,
+    "edge_count": 9655,
+    "leaf_count": 768,
+    "node_count": 2494,
     "root_count": 824,
-    "runners_with_path": 2054
+    "runners_with_path": 2055
   }
 }

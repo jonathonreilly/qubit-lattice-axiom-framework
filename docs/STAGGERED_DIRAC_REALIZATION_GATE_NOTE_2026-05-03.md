@@ -321,5 +321,3 @@ This graph-bookkeeping section records explicit downstream-consequence pointers 
 
 - `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md` (named bounded closure candidate for the kinetic-and-algebra surface; downstream consequence of this open-gate parent)
 - `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md` (substep-4 species-labeling no-go audit-companion; downstream consequence of this open-gate parent)
-- [staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17](STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md)
-- [staggered_dirac_substep4_labeling_no_go_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)

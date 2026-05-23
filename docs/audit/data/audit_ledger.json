@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -235394,10 +235393,7 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
-        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
-      ],
+      "deps": [],
       "direct_in_degree": 40,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -235409,7 +235405,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "b7821485b637a1d9b4585322cd8b679b65b520e4c66f78ba1790327378ad0861",
+      "note_hash": "5ec9e48178c5f5d4b33be0ae4d0d359fd01c0a0c117529599ade2c553c6fe217",
       "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

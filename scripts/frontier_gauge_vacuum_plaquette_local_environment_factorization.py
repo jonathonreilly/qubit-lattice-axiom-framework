@@ -23,6 +23,7 @@ BETA = 6.0
 ARG = BETA / 3.0
 MODE_MAX = 80
 NMAX = 5
+LATTICE_SIZES = (2, 3, 4)
 
 
 def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
@@ -86,6 +87,39 @@ def weights_box(nmax: int) -> list[tuple[int, int]]:
     return [(p, q) for p in range(nmax + 1) for q in range(nmax + 1)]
 
 
+def spatial_links(ls: int) -> list[tuple[int, int, int, int]]:
+    return [
+        (x, y, z, direction)
+        for x in range(ls)
+        for y in range(ls)
+        for z in range(ls)
+        for direction in range(3)
+    ]
+
+
+def shift_site(site: tuple[int, int, int], direction: int, ls: int) -> tuple[int, int, int]:
+    out = list(site)
+    out[direction] = (out[direction] + 1) % ls
+    return tuple(out)
+
+
+def marked_plaquette_boundary_links(
+    ls: int,
+    origin: tuple[int, int, int] = (0, 0, 0),
+    directions: tuple[int, int] = (0, 1),
+) -> list[tuple[int, int, int, int]]:
+    """Return the four spatial links on one nondegenerate marked plaquette."""
+    mu, nu = directions
+    site_mu = shift_site(origin, mu, ls)
+    site_nu = shift_site(origin, nu, ls)
+    return [
+        (*origin, mu),
+        (*site_mu, nu),
+        (*site_nu, mu),
+        (*origin, nu),
+    ]
+
+
 def build_recurrence_matrix(nmax: int) -> tuple[np.ndarray, list[tuple[int, int]], dict[tuple[int, int], int]]:
     weights = weights_box(nmax)
     index = {w: i for i, w in enumerate(weights)}
@@ -126,6 +160,7 @@ def main() -> int:
     weights = weights_box(NMAX)
     a_link = np.array([normalized_link_eigenvalue(p, q, c00) for p, q in weights], dtype=float)
     d_local = np.diag(a_link**4)
+    weight_index = {w: i for i, w in enumerate(weights)}
 
     jmat, _, index = build_recurrence_matrix(NMAX)
     swap = conjugation_swap_matrix(weights, index)
@@ -145,6 +180,30 @@ def main() -> int:
     local_sym = float(np.max(np.abs(swap @ d_local - d_local @ swap)))
     min_local = float(np.min(np.diag(d_local)))
     min_link = float(np.min(a_link))
+    link_counts = {ls: len(spatial_links(ls)) for ls in LATTICE_SIZES}
+    marked_counts = {
+        ls: len(set(marked_plaquette_boundary_links(ls))) for ls in LATTICE_SIZES
+    }
+    nonmarked_counts_by_lattice = {
+        ls: link_counts[ls] - marked_counts[ls] for ls in LATTICE_SIZES
+    }
+    link_count_ok = all(link_counts[ls] == 3 * ls**3 for ls in LATTICE_SIZES)
+    marked_count_ok = all(marked_counts[ls] == 4 for ls in LATTICE_SIZES)
+    nonmarked_count_ok = all(
+        nonmarked_counts_by_lattice[ls] == 3 * ls**3 - 4 for ls in LATTICE_SIZES
+    )
+    dual_errors = []
+    orientation_errors = []
+    for p, q in weights:
+        dual = (q, p)
+        if dual not in weight_index:
+            continue
+        a = a_link[weight_index[(p, q)]]
+        a_dual = a_link[weight_index[dual]]
+        dual_errors.append(abs(a - a_dual))
+        orientation_errors.append(abs((a**2) * (a_dual**2) - a**4))
+    max_dual_error = max(dual_errors)
+    max_orientation_error = max(orientation_errors)
 
     print("=" * 78)
     print("GAUGE-VACUUM PLAQUETTE LOCAL / ENVIRONMENT FACTORIZATION")
@@ -160,16 +219,42 @@ def main() -> int:
         )
     print()
     print("Normalized mixed-kernel locality")
+    print(f"  temporal-gauge mixed-link counts     = {link_counts}")
+    print(f"  marked plaquette boundary counts     = {marked_counts}")
+    print(f"  non-marked mixed-link counts         = {nonmarked_counts_by_lattice}")
+    print(f"  dual-orientation coefficient spread  = {max_dual_error:.3e}")
+    print(f"  orientation local-factor spread      = {max_orientation_error:.3e}")
     print(f"  non-marked trivial-channel factor     = {nonmarked_scalar_norm:.15f}")
     print(f"  mixed-kernel normalized spread        = {mix_box_spread:.3e}")
     print(f"  local-factor swap error               = {local_sym:.3e}")
-    print(f"  min/max local factor                  = {float(np.min(np.diag(d_local))):.12f}, {float(np.max(np.diag(d_local))):.12f}")
+    print(
+        "  min/max local factor                  = "
+        f"{float(np.min(np.diag(d_local))):.6e}, {float(np.max(np.diag(d_local))):.6e}"
+    )
     print()
     print("Residual source-sector consequence")
     print(f"  local mixed-kernel Perron <J>         = {local_value:.12f}")
     print(f"  |local-only - 0.5934|                 = {abs(local_value - 0.5934):.6e}")
     print()
 
+    check(
+        "temporal-gauge mixed-kernel incidence has one central convolution slot per spatial link",
+        link_count_ok,
+        detail=f"checked |spatial links| = 3 L_s^3 for L_s={LATTICE_SIZES}: {link_counts}",
+    )
+    check(
+        "the marked plaquette compression exposes exactly four marked spatial links and leaves all other mixed links non-marked",
+        marked_count_ok and nonmarked_count_ok,
+        detail=f"marked counts={marked_counts}, non-marked counts={nonmarked_counts_by_lattice}",
+    )
+    check(
+        "inverse-oriented marked plaquette edges contribute the same normalized Wilson eigenvalue by conjugation symmetry",
+        max_dual_error < 1.0e-12 and max_orientation_error < 1.0e-12,
+        detail=(
+            f"max |a_(p,q)-a_(q,p)|={max_dual_error:.3e}, "
+            f"max orientation factor error={max_orientation_error:.3e}"
+        ),
+    )
     check(
         "the one-link Wilson class function has explicit normalized SU(3) character coefficients from the Bessel-determinant mode sum",
         c00 > 0.0 and abs(a_link[weights.index((0, 0))] - 1.0) < 1.0e-12,

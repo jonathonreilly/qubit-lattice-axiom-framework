@@ -1,0 +1,19 @@
+loop_slug: gauge-local-factorization-bridge
+branch: physics-loop/gauge-local-factorization-bridge-block01-20260523
+base_commit: 405365632
+target_claim_id: gauge_vacuum_plaquette_local_environment_factorization_theorem_note
+target_status: bounded-support
+started_at: 2026-05-23
+active_route: inline_temporal_gauge_bridge_repair
+runtime_mode: single_block
+cycle_count: 1
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py
+open_imports:
+  - independent audit must decide whether the repaired note clears the prior missing_bridge_theorem conditional
+no_new_axioms: true
+repo_wide_surfaces_updated: false
+current_state: source repair implemented and local review-loop checks passed
+next_exact_action: commit, push, and open one science PR
+stop_condition: PR opened for independent review/audit

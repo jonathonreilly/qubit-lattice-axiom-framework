@@ -1,6 +1,7 @@
 # Gauge-Vacuum Plaquette Local / Environment Factorization Theorem
 
-**Date:** 2026-04-17 (scope-tightening re-frame: 2026-05-02)
+**Date:** 2026-04-17 (scope-tightening re-frame: 2026-05-02;
+temporal-gauge bridge repair: 2026-05-23)
 **Type:** bounded_theorem
 **Claim scope:** mixed-kernel locality factorization on the marked-plaquette
 character sector at the accepted Wilson `3+1` source surface; explicitly
@@ -73,12 +74,76 @@ From the exact transfer-operator / source-sector factorization stack already on
 - the `beta = 6` source-sector transfer law factors through the exact marked
   half-slice multiplier `exp(3 J)` and one residual positive diagonal
   source-sector operator,
-- and the mixed one-step Wilson kernel factorizes exactly over spatial links in
-  temporal gauge.
+- and the bridge lemma below derives the temporal-gauge linkwise factorization
+  and marked/non-marked compression map for the mixed one-step Wilson kernel.
 
 The question is whether that mixed-kernel part already contains residual
 representation-dependent environment freedom after the exact local marked-link
 factor is stripped off.
+
+## Bridge lemma: temporal-gauge mixed-kernel convolution map
+
+This section makes explicit the operator-level bridge used below. It is a
+derivation inside the accepted finite Wilson `3 spatial + 1 derived-time`
+source surface, not a new axiom and not a new Wilson-surface assumption.
+
+Fix a nondegenerate marked spatial plaquette `P` in one time slice, with
+oriented boundary links
+
+`ell_1, ell_2, ell_3^{-1}, ell_4^{-1}`.
+
+In temporal gauge the mixed plaquettes between two adjacent time slices have
+holonomy
+
+`U'_ell U_ell^{-1}`
+
+for each spatial link `ell`. Therefore the mixed part of the one-step Wilson
+kernel is the product
+
+`K_beta^mix(U', U) = product_ell w_beta(U'_ell U_ell^{-1})`,
+
+where the product is over the spatial links of the time slice and
+
+`w_beta(g) = exp[(beta / 3) Re Tr g]`.
+
+Thus the mixed operator is a tensor product of one-link central convolution
+operators. No mixed plaquette contains two distinct spatial links after
+temporal gauge fixing, so there is no cross-link coupling in this part of the
+kernel.
+
+Let `C_ell^norm` denote the one-link convolution normalized by its trivial
+channel. For the character expansion in Theorem 1, `C_ell^norm` acts on an
+irreducible matrix coefficient of type `(p,q)` by `a_(p,q)(beta)`. If the link
+is traversed with inverse orientation, the coefficient is in the dual irrep
+`(q,p)`. Since the Wilson class function satisfies `w_beta(g) = w_beta(g^-1)`,
+the normalized coefficients obey
+
+`a_(p,q)(beta) = a_(q,p)(beta)`.
+
+So an inverse-oriented marked edge contributes the same scalar as a
+forward-oriented marked edge.
+
+Now restrict the tensor-product mixed operator to the marked-plaquette
+class-function sector, i.e. functions of
+
+`W_P = U_ell1 U_ell2 U_ell3^{-1} U_ell4^{-1}`.
+
+For `ell` not in the boundary of `P`, such a function is independent of
+`U_ell`; normalized convolution on that link therefore sees only the trivial
+irrep and acts as the identity. For the four boundary links, the Peter-Weyl
+matrix-coefficient contraction for `chi_(p,q)(W_P)` contains exactly one
+factor of the irrep or dual irrep on each boundary link. The tensor-product
+mixed operator therefore contributes
+
+`a_(p,q)(beta)^2 a_(q,p)(beta)^2 = a_(p,q)(beta)^4`.
+
+This is the marked/non-marked compression map used by the theorem:
+
+- non-marked spatial links collapse to normalized trivial-channel identity;
+- the four marked spatial links contribute four equal normalized Wilson
+  convolution eigenvalues;
+- the normalized mixed-kernel compression is diagonal in the marked plaquette
+  character basis.
 
 ## Theorem 1: exact one-link Wilson convolution coefficients
 
@@ -128,8 +193,9 @@ On the accepted Wilson `3+1` source surface, the marked plaquette loop contains
 exactly four spatial links.
 
 Each marked-link factor contributes the normalized irrep eigenvalue
-`a_(p,q)(beta)`, while every non-marked mixed-link factor contributes only a
-rep-independent scalar.
+`a_(p,q)(beta)` (or the equal dual coefficient for the two inverse-oriented
+edges), while every non-marked mixed-link factor contributes only a
+rep-independent scalar by the bridge lemma.
 
 Hence after trivial-channel normalization the full mixed-kernel compression on
 the marked plaquette character sector is exactly
@@ -185,6 +251,10 @@ This note's `claim_type` is `bounded_theorem`:
 
 ## What this closes
 
+- exact temporal-gauge factorization of the mixed Wilson kernel into one
+  independent central convolution factor per spatial link
+- exact marked/non-marked compression map on the marked-plaquette
+  class-function sector
 - exact normalized one-link Wilson convolution coefficients on the mixed kernel
 - exact proof that non-marked mixed-link factors act only by a trivial-channel
   scalar on the marked source sector
@@ -209,13 +279,20 @@ python3 scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.
 
 Expected summary:
 
-- `THEOREM PASS=4 SUPPORT=3 FAIL=0`
+- `THEOREM PASS=7 SUPPORT=3 FAIL=0`
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This graph-bookkeeping section records explicit dependency links named by a
+prior conditional audit so the audit citation graph can track them. It does not
+promote this note or change the audited claim scope.
 
-The conditional verdict flagged the asserted operator/surface premises (temporal-gauge mixed-kernel factorization over spatial links, accepted Wilson `3+1` source surface). Those premises are already established in:
+The conditional verdict flagged the asserted operator/surface premises
+(temporal-gauge mixed-kernel factorization over spatial links, accepted Wilson
+`3+1` source surface). The bridge lemma above now derives the mixed-kernel
+factorization and marked/non-marked compression map inside this note; the
+retained dependencies supply the Wilson source surface and source-sector
+operator setting:
 
 - [gauge_vacuum_plaquette_transfer_operator_character_recurrence_note](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) — establishes the one-clock Wilson transfer operator on the accepted `3 spatial + 1 derived-time` source surface and the `SU(3)` character recurrence on the marked-plaquette class-function sector.
 - [gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) — establishes the marked half-slice multiplier `exp[(beta/2) J]`, the residual source-sector compression `D_beta` on the marked-plaquette class-function sector, and the central-diagonal action that supplies the marked / non-marked compression map invoked here. This upstream is `audited_clean` / `retained_bounded`.

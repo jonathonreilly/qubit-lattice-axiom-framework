@@ -55375,7 +55375,7 @@
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2302477e6ecfc7280dfb5d37239436fe1c315e9a0527b60a0afef7646855b700",
+      "note_hash": "e0a4da40acb147b55e21d0dbe0071bbe80c2111aed074df99415aefd077bae11",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
       "title": "Gauge-Vacuum Plaquette Local / Environment Factorization Theorem"

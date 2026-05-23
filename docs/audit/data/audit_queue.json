@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 313,
-    "high": 310,
+    "high": 309,
     "leaf": 335,
     "medium": 344
   },
@@ -9267,39 +9267,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_scalar_temporal_completion_theorem_note",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-        "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
-      ],
-      "load_bearing_score": 12.384,
-      "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py",
-      "transitive_descendants": 166
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "hierarchy_effective_potential_endpoint_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -9321,6 +9288,31 @@
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_effective_potential_endpoint.py",
       "transitive_descendants": 153
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+        "gauge_scalar_temporal_completion_theorem_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.248,
+      "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
+      "transitive_descendants": 151
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -12045,31 +12037,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_a3_r1_hostile_review_2026_05_08_r1hr.py",
-      "transitive_descendants": 151
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_scalar_temporal_completion_theorem_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.248,
-      "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
       "transitive_descendants": 151
     },
     {
@@ -39318,5 +39285,5 @@
     }
   ],
   "ready_count": 20,
-  "total_pending": 1302
+  "total_pending": 1301
 }

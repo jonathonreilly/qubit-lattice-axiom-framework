@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 133 |
-| **retained_no_go** | 149 |
+| **retained_no_go** | 150 |
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1302 |
+| unaudited | 1301 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 634 |
+| `audited_clean` | 635 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 27 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1527 |
+| `unaudited` | 1526 |
 
 | claim_type | count |
 |---|---:|
@@ -312,6 +312,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -4523,6 +4524,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Define beta_eff,Lambda(beta) := R_O^(-1)(P_Lambda(beta)); substituting the definition gives P_Lambda(beta) = R_O(beta_eff,Lambda(beta)).  _(class `E`)_
 - **chain closes:** True — The bounded identity closes on its own terms because beta_eff is defined as the inverse image of P_Lambda under R_O after showing P_Lambda lies in the response range. The closure is definitional and does not derive an independently evaluated coupling or plaquette value.
 - **rationale:** The load-bearing step is the introduction of beta_eff as R_O^(-1)(P_Lambda(beta)), followed by immediate inverse-function substitution. The runner supports monotonicity, in-range inverse checks, and firewall claims, but it does not turn the coordinate identity into an independent derivation of the parent bridge quantity. Under the rubric, this is class E and therefore audited_renaming even though the bounded identity is internally valid.
+- **auditor confidence:** high
+
+### `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03`
+
+- **Note:** [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](../../docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The current Wilson packet, without an added exact beta-6 nonperturbative completion object or fitted beta_eff, does not derive the observable bridge <P>_full = R_O(beta_eff).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T151624Z-89520c44-gauge_scalar_temporal_ob-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two analytic strictly increasing completion laws share the retained beta^5 onset jet and current Wilson packet but give different R_O(beta_eff(6)) values, so the packet does not entail a unique BRIDGE readout.  _(class `A`)_
+- **chain closes:** True — The two-witness non-entailment argument closes over retained and retained_no_go authorities: same retained premises, distinct beta_eff(6), and injective local response imply distinct bridge outputs. The conclusion is only a no-go for derivability from the current packet, not a claim that the physical Wilson integral is unknowable.
+- **rationale:** The load-bearing step is an algebraic/model-witness non-entailment argument, not a fit, external comparator, or renamed definition. The cited authorities are retained-grade for the relevant packet boundary, and the runner source verifies the witness construction, monotonic sampled response, shared packet fingerprint, and distinct readouts rather than merely printing constants. No-Go Discipline passes: attack routes include inverse-definition escape, exact spectral measure, exact Perron/Jacobi data, exact effective action, exact independently selected beta_eff(6), and convention/ratification; these are either excluded from the current packet or explicitly named as future escape hatches, so the no-go is correctly narrowed to current-packet derivability.
 - **auditor confidence:** high
 
 ### `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10`

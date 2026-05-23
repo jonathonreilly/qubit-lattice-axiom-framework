@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1024,
+    "bounded_theorem": 1023,
     "decoration": 24,
     "meta": 229,
     "no_go": 239,
     "open_gate": 112,
-    "positive_theorem": 749
+    "positive_theorem": 750
   },
   "cycle_examples": [
     [
@@ -38,14 +38,13 @@
   ],
   "cycles_detected": 24,
   "effective_status_counts": {
-    "audited_conditional": 88,
+    "audited_conditional": 87,
     "audited_failed": 23,
     "audited_numerical_match": 10,
-    "audited_renaming": 18,
+    "audited_renaming": 17,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 3,
     "decoration_under_cpt_exact_note": 4,
-    "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
     "decoration_under_graph_first_su3_integration_note": 2,
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
     "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": 1,
@@ -58,12 +57,12 @@
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "meta": 225,
-    "open_gate": 14,
-    "retained": 124,
-    "retained_bounded": 387,
-    "retained_no_go": 148,
+    "open_gate": 13,
+    "retained": 125,
+    "retained_bounded": 386,
+    "retained_no_go": 147,
     "retained_pending_chain": 8,
-    "unaudited": 1311
+    "unaudited": 1316
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

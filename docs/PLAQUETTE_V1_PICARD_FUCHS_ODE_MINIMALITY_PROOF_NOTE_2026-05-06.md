@@ -1,20 +1,36 @@
-# Plaquette V=1 Picard-Fuchs ODE: Minimality Certificate Note
+# Plaquette V=1 Picard-Fuchs ODE: Finite-Window Certificate Note
 
-**Date:** 2026-05-06
+**Date:** 2026-05-06 (scope narrowed 2026-05-23 per the 2026-05-18 audit
+verdict repair target — minimal-annihilator interpretation explicitly
+excluded; finite-window certificates retained)
 **Claim type:** bounded_theorem
-**Status:** bounded support theorem; audit status is set only by the independent audit lane
+**Status authority:** independent audit lane only
 **Primary runner:** `scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py`
-**Companion:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) (the candidate ODE)
+**Companion:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md)
+(retained_bounded — the candidate order-3 ODE under a narrow
+finite-runner-certificate scope)
 
 ## Scope
 
-This note records a bounded, exact-arithmetic certificate packet for the
-V=1 single-plaquette Picard-Fuchs operator in
+This note records a bounded, exact-arithmetic finite-window certificate
+packet for the V=1 single-plaquette Picard-Fuchs candidate operator in
 [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md).
-It combines a finite Bessel-determinant Taylor/rank runner with standard
-external D-module and creative-telescoping inputs. It does not update the
-companion row's audit status or effective status; the independent audit lane
-must decide whether this packet closes that parent row.
+The finite Bessel-determinant Taylor/rank runner produces five certificates
+[A]-[E] at Taylor depth 40, all in exact rational arithmetic. The
+certificates are self-contained finite-window statements: annihilation
+through `β^36`, recurrence consistency on `N ∈ [2, 39]`, lower-order
+exclusion within the checked `(r, d)` window, kernel uniqueness at
+`(r=3, d=2)`, and higher-degree consistency through `d=6`.
+
+**Explicitly out of scope:** The all-order minimal-annihilator
+interpretation of `L`. That promotion would require importing the
+Bernstein/Aomoto-Gelfand holonomic-rank theory and the
+Wilf-Zeilberger / Saito-Sturmfels-Takayama creative-telescoping
+machinery as retained authorities. Those are external mathematics
+imports, not derived from the framework, so the all-order claim is
+left to a separate retained bridge theorem and is NOT part of this
+note's bounded claim. It does not update the companion row's audit
+status or effective status.
 
 ## Setup
 
@@ -53,24 +69,41 @@ The runner certifies, in exact rational arithmetic at Taylor depth 40:
 - the checked higher-degree windows `(order=3, degree=2..6)` are consistent
   with polynomial multiples of `L`.
 
-Conditioned on the cited external holonomicity/rank and
-creative-telescoping machinery being applicable to this exact integral and
-candidate, these certificates support the minimal-annihilator interpretation
-of `L` for the V=1 integral. The runner alone is a bounded certificate packet,
-not a repo-wide axiom or a thermodynamic-limit bridge.
+The bounded claim is exactly the finite-window content above. It does
+**not** assert that `L` is the all-order minimal annihilator of `J`;
+that promotion is left to a separate retained bridge theorem importing
+the Bernstein / Aomoto-Gelfand rank theory and the Wilf-Zeilberger /
+Saito-Sturmfels-Takayama creative-telescoping machinery (see
+[Background] section below). The runner alone is a bounded
+finite-window certificate packet, not a repo-wide axiom, not a
+thermodynamic-limit bridge, and not a minimal-annihilator proof.
 
-## Proof outline
+## Background — external machinery [OUT OF SCOPE]
 
-The support chain is:
+The candidate operator `L` was originally discovered by applying the
+following external D-module / creative-telescoping machinery. **These
+are not part of this note's bounded claim**; they are recorded here
+only so the reader can see where `L` came from. Treating these as a
+retained closure for the all-order minimal-annihilator interpretation
+of `L` would require a separate retained bridge theorem and is left to
+that bridge.
 
-  **Step 1 (existence).** Bernstein's theorem on holonomic D-modules
-  guarantees that `J(β)` is annihilated by a non-zero polynomial-coefficient
-  ODE.
+  **[OUT OF SCOPE] Existence — Bernstein 1972.** Bernstein's theorem
+  on holonomic D-modules guarantees that `J(β)` is annihilated by a
+  non-zero polynomial-coefficient ODE.
 
-  **Step 2 (algorithm).** Wilf-Zeilberger creative telescoping plus
-  the Saito-Sturmfels-Takayama Gröbner-deformation algorithm turn the
-  problem of finding `Ann(J)` into a finite linear-algebra problem at
-  bounded `(order, coefficient-degree)`.
+  **[OUT OF SCOPE] Algorithm — Wilf-Zeilberger 1990;
+  Saito-Sturmfels-Takayama 2000.** Creative telescoping plus the
+  Gröbner-deformation algorithm turn the problem of finding `Ann(J)`
+  into a finite linear-algebra problem at bounded
+  `(order, coefficient-degree)`.
+
+See the "Detailed proof" subsections "Step 1" and "Step 2" below for
+the full statements and references. They are retained in the note as
+context for `L`'s candidacy; they are not load-bearing for the
+finite-window certificates [A]-[E] proved below.
+
+## Proof outline — finite-window certificates only
 
   **Step 3 (verification).** The candidate operator `L` of order 3 and
   coefficient degree 2 is checked against the Bessel-determinant Taylor
@@ -78,9 +111,9 @@ The support chain is:
   runner output) and against the induced 4-term recurrence on the `a_n`
   series coefficients in the checked window (certificate `[D]`).
 
-  **Step 4 (lower-order exclusion).** A direct computational rank
-  certificate `[B]` (runner output) shows that for every
-  `(r, d)` in the **checked window**
+  **Step 4 (lower-order exclusion within the checked window).** A direct
+  computational rank certificate `[B]` (runner output) shows that for
+  every `(r, d)` in the **checked window**
   `{1} × {0, 1, …, 12} ∪ {2} × {0, 1, …, 11}` (at Taylor depth 40),
   the linear system "find a non-trivial polynomial-coefficient operator
   of order ≤ r and coefficient-degree ≤ d that annihilates `J(β)`"
@@ -91,25 +124,33 @@ The support chain is:
   audit verdict repair target. Extending the claim to `(r=2, d=12)`
   requires increasing Taylor depth so that `depth - r - 2 ≥ 39`, i.e.
   `depth ≥ 43`.) Within the narrowed window, no order ≤ 2 ODE with
-  coefficient-degree in the checked range annihilates `J(β)`.
+  coefficient-degree in the checked range annihilates `J(β)`. The
+  extension to "no annihilator of order ≤ 2 exists at any coefficient
+  degree" is **out of scope** here and requires the external
+  Bernstein/Aomoto-Gelfand rank machinery cited in Background.
 
-  **Step 5 (uniqueness at minimal order).** A second rank certificate
-  `[C]` shows the kernel at `(r=3, d=2)` is exactly one-dimensional,
-  with the kernel direction equal (up to a non-zero scalar) to the
-  PR #541 published operator `L`.
+  **Step 5 (uniqueness within the `(r=3, d=2)` window).** A second rank
+  certificate `[C]` shows the kernel at `(r=3, d=2)` is exactly
+  one-dimensional, with the kernel direction equal (up to a non-zero
+  scalar) to the PR #541 published operator `L`. The extension to
+  "`L` is the all-order minimal annihilator of `J`" is **out of scope**
+  here.
 
-  **Step 6 (higher-degree consistency).** Certificate `[E]` checks
-  that the kernel at `(r=3, d ≥ 3)` grows exactly as `d − 1`, the
-  expected dimension contributed by polynomial multiples of `L`. No
-  genuinely new generator appears at higher coefficient degree.
+  **Step 6 (higher-degree consistency, `d ∈ {3, …, 6}`).** Certificate
+  `[E]` checks that the kernel at `(r=3, d ≥ 3)` grows exactly as
+  `d − 1`, the expected dimension contributed by polynomial multiples
+  of `L`. No genuinely new generator appears at higher coefficient
+  degree within the checked window.
 
-These six steps define the bounded certificate surface. All-order promotion,
-including whether this discharges the companion row's missing bridge, remains
-audit-owned.
+These four finite-window steps (Step 3, Step 4, Step 5, Step 6)
+define the bounded certificate surface. All-order promotion to
+minimality, and whether such promotion would discharge the companion
+row's missing bridge, are **not** asserted by this note and remain
+audit-owned for a separate retained bridge theorem.
 
 ## Detailed proof
 
-### Step 1 (existence). Bernstein 1972.
+### Step 1 (existence). Bernstein 1972. [BACKGROUND — OUT OF SCOPE]
 
 **Theorem (Bernstein 1972 [1]; Sabbah; Hotta-Takeuchi).** If `f, g` are
 polynomial functions on a smooth affine algebraic variety `X` and `μ`
@@ -133,7 +174,7 @@ Aomoto-Gelfand rank for the Weyl-integral Vandermonde measure). For
 N = 3 we have `rank(J) ≤ 3`, immediately consistent with the order-3
 ODE we exhibit.
 
-### Step 2 (algorithm). Wilf-Zeilberger 1990; Saito-Sturmfels-Takayama 2000.
+### Step 2 (algorithm). Wilf-Zeilberger 1990; Saito-Sturmfels-Takayama 2000. [BACKGROUND — OUT OF SCOPE]
 
 **Theorem (Wilf-Zeilberger 1990 [2]).** For a definite-summation
 operand `T(n, β)` that is holonomic in both `n` and `β`, the
@@ -209,11 +250,13 @@ window above reflects only the actually-checked cases per the
 2026-05-18 audit verdict repair target.
 
 **Scope beyond the checked degree.** The runner directly excludes the
-listed finite degree window. Extension to all coefficient degrees is
-conditional on the cited Bernstein/Aomoto-Gelfand rank input and on the
+listed finite degree window. Extension to all coefficient degrees
+(i.e. "no order ≤ 2 ODE annihilates `J` at any degree") is **out of
+scope** for this note and is left to a separate retained bridge
+theorem importing the Bernstein/Aomoto-Gelfand rank input and the
 all-order identification of `L` as an annihilator. ∎
 
-### Step 5 (uniqueness at minimal order). Rank certificate [C].
+### Step 5 (uniqueness within the `(r=3, d=2)` window). Rank certificate [C].
 
 At `(r, d) = (3, 2)` the linear system (♦) has 12 unknowns. Runner
 output confirms the rank of the matching matrix is 11, so the kernel
@@ -221,41 +264,52 @@ is exactly 1-dimensional. The unique kernel direction (extracted via
 `sympy.Matrix.nullspace()`) is rationally proportional to the PR #541
 operator `L`, with proportionality scalar 6 (after primitive-integer
 normalization). This proves uniqueness of `L` among operators of order
-≤ 3 and coefficient degree ≤ 2. ∎
+≤ 3 and coefficient degree ≤ 2.
 
-### Step 6 (higher-degree consistency). Rank certificate [E].
+The extension to "`L` is the all-order minimal annihilator of `J`" is
+**out of scope** for this note and would require the external
+machinery in the Background section. ∎
+
+### Step 6 (higher-degree consistency within the checked window). Rank certificate [E].
 
 For `(r, d) = (3, d')` with `d' ∈ {2, 3, …, 6}`, the runner verifies
 that the kernel dimension is exactly `d' − 1`. This is the dimension
 of the subspace `{p(β) · L : deg(p) ≤ d' − 2}` of polynomial multiples
 of `L` (which trivially still annihilates `J`). No genuinely new
-operator generator appears at higher `d'`. ∎
+operator generator appears at higher `d'` within the checked window.
+The extension to "no new generator appears at any `d'`" is **out of
+scope**. ∎
 
 ## What this packet supports vs. what it does not close
 
-**Runner-backed:**
+**Runner-backed (in scope, bounded):**
 
 - `L · J(β) = 0` through the safe Taylor window `[β^0, …, β^36]`.
 - Among all polynomial-coefficient differential operators of order
-  ≤ 3 and coefficient degree ≤ 2, `L` is unique up to scalar.
+  `r ≤ 3` and coefficient degree `d ≤ 2`, `L` is the unique-up-to-scalar
+  element of the kernel (in the `(r=3, d=2)` window).
 - Among all polynomial-coefficient differential operators of order
-  ≤ 2 and coefficient degree ≤ 12, no checked-window annihilator of `J`
-  exists.
-- Higher-degree checked windows through degree 6 are consistent with
-  polynomial multiples of `L`.
+  `r ≤ 2` and coefficient degree `d` in the checked window
+  `{1} × {0,…,12} ∪ {2} × {0,…,11}`, no annihilator of `J` exists at
+  Taylor depth 40. (The `(r=2, d=12)` boundary is *skipped at depth 40*;
+  extending the claim to that cell requires depth ≥ 43.)
+- Higher-degree checked windows `(r=3, d ∈ {3,…,6})` are consistent with
+  polynomial multiples of `L` (kernel dim equals `d−1` as expected).
 
-**Bounded scope:**
+**Not closed by this packet — out of scope:**
 
-- This is V=1 only. The thermodynamic-limit Wilson plaquette value
-  `⟨P⟩(β=6, L→∞)` is NOT addressed by this note; it sits in
-  `PLAQUETTE_4D_MC_FSS_RETAINED_THEOREM_NOTE_2026-05-05.md`.
-- The Bernstein rank bound `rank(J) ≤ 3` is cited from the standard
-  Aomoto-Gelfand theory; the proof of that bound is mathematical
-  literature (not framework-internal).
-- Numerical certificates `[B]` and `[E]` test bounded coefficient
-  degrees `d ≤ 12` and `d ≤ 6`. Coupling these with the abstract
-  Bernstein/WZ machinery is an import-supported theorem path, not a new
-  repo-wide axiom.
+- "`L` is the all-order minimal annihilator of `J`." Would require the
+  external Bernstein/Aomoto-Gelfand rank-bound machinery and the
+  Wilf-Zeilberger / Saito-Sturmfels-Takayama creative-telescoping
+  apparatus to be retained as upstream authorities. Those are external
+  mathematics imports; this packet does not retain them.
+- "No order ≤ 2 ODE annihilates `J` at any coefficient degree."
+  Same external dependency.
+- Thermodynamic-limit Wilson plaquette value `⟨P⟩(β=6, L→∞)`.
+  Lives in `PLAQUETTE_4D_MC_FSS_RETAINED_THEOREM_NOTE_2026-05-05.md`,
+  not here.
+- Closure of the companion row's missing-bridge requirement.
+  Out of scope for this packet.
 
 ## Cited authorities
 
@@ -295,22 +349,30 @@ operator generator appears at higher `d'`. ∎
 
 ## Parent-row use
 
-This packet is intended as review-ready support for re-auditing the companion
-Picard-Fuchs ODE row. It can be used by that independent audit only as follows:
+This packet is review-ready bounded support for the companion
+Picard-Fuchs ODE row. **It does not close the companion row's
+missing-bridge requirement on its own.** What it does provide, in
+exact arithmetic, is the finite-window certificate surface:
 
-1. **Holonomic existence.** Bernstein/Aomoto-Gelfand theory supplies the
-   external finite-rank input.
+1. **Exact Taylor annihilation.** `L · J = 0` through `β^36`,
+   certificate `[A]`.
+2. **Recurrence consistency.** The 4-term P-recurrence (♢) holds
+   exactly for `N ∈ [2, 39]`, certificate `[D]`.
+3. **Lower-order exclusion within the checked window.** No annihilator
+   exists at `(r ≤ 2, d` in the checked range`)`, certificate `[B]`.
+4. **Uniqueness within the `(r=3, d=2)` window.** The kernel is
+   one-dimensional and proportional to `L`, certificate `[C]`.
+5. **Higher-degree consistency, `d ∈ {3, …, 6}`.** Kernel dimension
+   matches polynomial-multiple expectations, certificate `[E]`.
 
-2. **Algorithmic discovery.** Wilf-Zeilberger/Saito-Sturmfels-Takayama
-   machinery is the external route that identifies the candidate operator.
+Closure of "L is the all-order minimal annihilator" requires the
+external Bernstein/Aomoto-Gelfand and Wilf-Zeilberger / Saito-
+Sturmfels-Takayama machinery to be retained as upstream authorities;
+that is a separate bridge theorem and is **not** asserted here.
 
-3. **Exact certificates.** This runner supplies the finite Taylor/rank
-   checks listed above, all in exact arithmetic.
-
-The review loop does not prewrite the audit verdict. If the independent
-auditor accepts the external imports and the finite certificates as closing
-the missing bridge, the pipeline may update the companion row from that audit
-result and dependency closure.
+The independent audit lane owns the verdict on the companion row.
+This packet supplies finite-window evidence; whether it closes the
+companion row's missing bridge is the audit lane's call.
 
 ## Audit registration
 
@@ -321,10 +383,16 @@ runner_path: scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
 claim_type: bounded_theorem
 claim_scope: >
   Bounded V=1 single-plaquette SU(3) Wilson-integral Picard-Fuchs
-  exact-arithmetic certificate packet for the order-3 operator from
-  PR #541, conditioned on the listed external D-module/creative-telescoping
-  imports and excluding any thermodynamic-limit, multi-plaquette, or bridge
-  promotion.
+  finite-window exact-arithmetic certificate packet (Taylor depth 40)
+  for the order-3 candidate operator from PR #541. Certificates
+  [A]-[E] in scope: Taylor annihilation through β^36; recurrence
+  consistency on N in [2, 39]; lower-order exclusion within the
+  checked window {1} x {0..12} ∪ {2} x {0..11} (boundary (r=2, d=12)
+  *skipped* at depth 40); kernel uniqueness at (r=3, d=2);
+  higher-degree consistency for d in {3..6}. All-order minimal-
+  annihilator interpretation, thermodynamic-limit promotion,
+  multi-plaquette extension, and closure of the companion row's
+  missing-bridge requirement are explicitly OUT OF SCOPE.
 intrinsic_status: bounded_theorem
 companion_for_reaudit: plaquette_v1_picard_fuchs_ode_note_2026-05-05
 deps:

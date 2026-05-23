@@ -67974,10 +67974,10 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "769e210cc9d5f216940a2352384c49112025330d617e4581a7cbdd9b5dc3dc62",
+      "note_hash": "4bce4848666ea8d7038cd4d80c6047a0094fd018dcd6922cacce824370018096",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
-      "title": "Plaquette V=1 Picard-Fuchs ODE: Minimality Certificate Note"
+      "title": "Plaquette V=1 Picard-Fuchs ODE: Finite-Window Certificate Note"
     },
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05": {
       "claim_id": "plaquette_v1_picard_fuchs_ode_note_2026-05-05",

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 139 |
+| **retained** | 140 |
 | **retained_no_go** | 151 |
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1257 |
+| unaudited | 1256 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 652 |
+| `audited_clean` | 653 |
 | `audited_conditional` | 126 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1483 |
+| `unaudited` | 1482 |
 
 | claim_type | count |
 |---|---:|
@@ -609,6 +609,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
+| `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `sixth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
@@ -10177,6 +10178,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-04-11.md`
   - `MINIMAL_AXIOMS_2026-05-03.md`
+- **auditor confidence:** high
+
+### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional spectral-functional-calculus theorem: positive Hermitian T with trivial kernel uniquely determines H_gen=-(1/τ)log(T), its finite-dimensional unitary group U(t), and the identity T^n=U(-inτ).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T202713Z-cac37232-single_clock_stone_finit-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given finite-dimensional positive Hermitian T with spectrum 0 < λ_k ≤ 1, define H_gen = -(1/τ)log(T) by spectral functional calculus, so U(t)=exp(-itH_gen) and T^n=U(-inτ).  _(class `A`)_
+- **chain closes:** True — The statement follows from the finite-dimensional spectral theorem, functional calculus, and bounded matrix ODE uniqueness. No cited external authority or open bridge is needed for the narrowed N1-N4 scope.
+- **rationale:** The removed false condition U(τ)^*T=T is no longer part of the audited headline scope. The remaining N1-N4 claims are standard finite-dimensional algebraic consequences of positivity, Hermiticity, trivial kernel, and τ>0. The runner source performs exact symbolic checks for representative diagonal positive matrices and counterfactual hypotheses; it does not merely print constants or import a contested premise. The general proof in the note supplies the full finite-dimensional closure beyond the concrete runner examples.
 - **auditor confidence:** high
 
 ### `site_phase_cube_shift_intertwiner_note`

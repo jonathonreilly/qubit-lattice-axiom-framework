@@ -10,7 +10,7 @@
   "cycle_examples": [],
   "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 100,
+    "audited_conditional": 101,
     "audited_failed": 23,
     "audited_numerical_match": 11,
     "audited_renaming": 7,
@@ -33,7 +33,7 @@
     "meta": 225,
     "open_gate": 13,
     "retained": 137,
-    "retained_bounded": 381,
+    "retained_bounded": 380,
     "retained_no_go": 151,
     "retained_pending_chain": 7,
     "unaudited": 1295

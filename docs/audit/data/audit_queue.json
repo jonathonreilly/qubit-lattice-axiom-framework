@@ -3,7 +3,7 @@
     "critical": 264,
     "high": 338,
     "leaf": 343,
-    "medium": 330
+    "medium": 329
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -17972,32 +17972,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "quark_five_sixths_scale_selection_boundary_note_2026-04-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_five_sixths_scale_selection_boundary.py",
-      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",
@@ -38250,6 +38224,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 23,
-  "total_pending": 1275
+  "ready_count": 22,
+  "total_pending": 1274
 }

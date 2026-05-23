@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1275 |
+| unaudited | 1274 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
-| ~~audited_conditional~~ | 117 |
+| ~~audited_conditional~~ | 118 |
 | ~~audited_failed~~ | 18 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 646 |
-| `audited_conditional` | 117 |
+| `audited_conditional` | 118 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1501 |
+| `unaudited` | 1500 |
 
 | claim_type | count |
 |---|---:|
@@ -851,6 +851,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `quark_five_sixths_scale_selection_boundary_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -9271,6 +9272,25 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The three live endpoint ratios are nearest to the small rational candidates {5/6, -2, -8/9}, which then multiply to gamma_E(center)/gamma_E(shell)=15/8.  _(class `G`)_
 - **chain closes:** False — The algebra closes once the three rational legs are granted. The derivation does not close because the load-bearing identification of those legs, especially gamma_T(center)/gamma_E(center)=-8/9, is a nearest-rational match to live endpoint data rather than a first-principles Route-2 derivation.
 - **rationale:** The runner computes live endpoint ratios, scans a bounded low-rational grammar, and verifies that the nearest candidates are {5/6, -2, -8/9}; that is class G numerical matching, not a derivation from retained tensor machinery. The downstream multiplication to 15/8, r_E=21/4, and D_E=21/8 is exact conditional algebra. The cited retained no-go explicitly says the third leg -8/9 is equivalent to the missing E-center readout primitive and is not forced by the restricted Route-2 carrier class.
+- **auditor confidence:** high
+
+### `quark_five_sixths_scale_selection_boundary_note_2026-04-28`
+
+- **Note:** [`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`](../../docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the scale-selection boundary that exact C_F - T_F = 5/6 plus the CKM atlas value gives only bounded support unless an observation surface or RG-covariant transport theorem is independently supplied.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T195907Z-722f0f1e-quark_five_sixths_scale_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the one-loop transport factor between threshold-local and common-scale mass-ratio surfaces is nontrivial, the same fixed 5/6 exponent cannot be exact on both surfaces unless T^(5/6) = 1.  _(class `A`)_
+- **chain closes:** True — The narrow boundary closes algebraically from the packet's admitted transport relation: R_self = R_same * T with T != 1 implies a fixed nonzero exponent cannot be exact on both surfaces. It does not close as retained down-type mass-ratio closure, which the note explicitly does not claim.
+- **rationale:** The runner substantively computes the stated obstruction and comparator mismatch, but it is an algebraic/checking runner over inherited constants, not a first-principles class C derivation. The no-go discipline gate passes within the restricted packet: the Casimir, CKM-atlas, threshold-local, common-scale, and RG-covariant frames are distinct attack routes, and no convention or reframe in the packet supplies the missing scale selector. The verdict is conditional because the source note and cited g_bare authority explicitly retain open gate language, and the claimed bounded status depends on open exponentiation and scale-selection work not closed in this packet.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `G_BARE_DERIVATION_NOTE.md`
+  - `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`
+  - `QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md`
+  - `QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md`
 - **auditor confidence:** high
 
 ### `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28`

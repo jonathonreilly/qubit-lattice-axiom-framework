@@ -34952,11 +34952,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
-      "load_bearing_score": 5.822,
+      "load_bearing_score": 8.822,
       "load_bearing_step": "From the sibling split theorem Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), Artin-Wedderburn gives the two irreducible complex modules, each the natural 2-dimensional M_2(C)-module, and semisimplicity gives direct-sum decomposition.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e",
       "note_path": "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "box_under_parent: record as algebraic decoration under cl3_complexification_split_narrow_theorem_note_2026-05-10 unless later shown load-bearing for a non-decoration claim or given an independent comparator surface.",
@@ -207139,24 +207139,44 @@
       "verdict_rationale": null
     },
     "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T15:48:33.097543+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T154809Z-de17a3a9-pwc_derivation_from_cumu-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated commuting-source scope, the formula matches the standard cumulant-generating-functional form after applying the joint spectral measure and the explicit e^{-J} sign convention. The result is an identification of an existing framework symbol with an existing standard object, not an independent derivation from A1+A2.",
       "claim_id": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
-      "claim_scope": null,
+      "claim_scope": "Audited only the narrow commuting bounded-source identification W[J] = log Tr(rho_ref e^{-J}) - log Tr(rho_ref) as the cumulant generating functional over a finite-region qubit algebra.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T15:48:33.097543+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -207164,19 +207184,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On commuting source families, the framework's W[J] is the standard cumulant generating functional applied to the given pre-record reference state.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8ae31e9a8a55498b7edd977402af1ce6aabf468ef08e9c49702800fe1c688dfb",
       "note_path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only whether standard cumulant theory is being treated as ordinary mathematical infrastructure; that does not change the class F identification verdict.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -207282,7 +207302,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -207293,7 +207313,7 @@
       "runner_path": null,
       "title": "PWC Derivation from the Standard Cumulant Generating Functional (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The note's operative move is to assert that the already-stated framework functional W[J] is the standard cumulant generating functional on the commuting-source scope. That is a valid narrow identification given the formula and sign bookkeeping, but under the rubric it is class F rather than class A or C. The cited axiom premise supplies the qubit-on-Z^3 substrate only; it does not derive the cumulant-generating-functional form."
     },
     "q_integer_spectrum_theorem_note_2026-05-02": {
       "audit_date": "2026-05-22T22:40:46.574341+00:00",

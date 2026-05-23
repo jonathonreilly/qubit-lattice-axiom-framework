@@ -68,7 +68,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 ## Citation cycle break targets
 
-131 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
+129 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
 
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
@@ -91,11 +91,11 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 17 | `cycle-0017` | 6 | 1032 | `universal_gr_constraint_action_stationarity_note` | critical | unaudited |
 | 18 | `cycle-0018` | 7 | 1032 | `anomaly_forces_time_theorem` | critical | unaudited |
 | 19 | `cycle-0019` | 7 | 1032 | `observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10` | critical | unaudited |
-| 20 | `cycle-0020` | 8 | 1032 | `dm_leptogenesis_exact_kernel_closure_note_2026-04-15` | critical | unaudited |
-| 21 | `cycle-0021` | 9 | 1032 | `dm_leptogenesis_exact_kernel_closure_note_2026-04-15` | critical | unaudited |
-| 22 | `cycle-0022` | 10 | 1032 | `anomaly_forces_time_theorem` | critical | unaudited |
-| 23 | `cycle-0023` | 10 | 1032 | `anomaly_forces_time_theorem` | critical | unaudited |
-| 24 | `cycle-0024` | 10 | 1032 | `axiom_first_stefan_boltzmann_theorem_note_2026-05-01` | critical | unaudited |
+| 20 | `cycle-0020` | 10 | 1032 | `anomaly_forces_time_theorem` | critical | unaudited |
+| 21 | `cycle-0021` | 10 | 1032 | `anomaly_forces_time_theorem` | critical | unaudited |
+| 22 | `cycle-0022` | 10 | 1032 | `axiom_first_stefan_boltzmann_theorem_note_2026-05-01` | critical | unaudited |
+| 23 | `cycle-0023` | 10 | 1032 | `bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent` | critical | unaudited |
+| 24 | `cycle-0024` | 10 | 1032 | `bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent` | critical | unaudited |
 | 25 | `cycle-0025` | 10 | 1032 | `bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent` | critical | unaudited |
 
 Full queue lives in `data/audit_queue.json`.

@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -123686,7 +123685,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -187146,8 +187145,7 @@
         "pmns_c3_character_holonomy_closure_note",
         "pmns_c3_character_mode_reduction_note",
         "pmns_hw1_source_transfer_boundary_note",
-        "pmns_selector_current_stack_zero_law_note",
-        "dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21"
+        "pmns_selector_current_stack_zero_law_note"
       ],
       "direct_in_degree": 7,
       "effective_status": "unaudited",
@@ -187160,7 +187158,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "55981451722122026ae8fe64156a66d7ecb4d242a030785d266d4aa94fc0b68c",
+      "note_hash": "7f2fc0a2b0f80875b553e3cd60b60bf81599c2705c642cb8aaa315e800ece81c",
       "note_path": "docs/PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -283437,8 +283435,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2328,
-    "re_audit_required": 4,
+    "preserved_existing": 2332,
+    "re_audit_required": 0,
     "row_count": 2376,
     "seeded_new": 0
   }

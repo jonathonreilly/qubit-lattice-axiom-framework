@@ -20365,10 +20365,6 @@
       "to": "pmns_selector_current_stack_zero_law_note"
     },
     {
-      "from": "pmns_c3_nontrivial_current_boundary_note",
-      "to": "dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21"
-    },
-    {
       "from": "pmns_chart_constants_retention_note_2026-05-03",
       "to": "epsilon1_from_cp_chain_note_2026-05-03"
     },
@@ -65841,11 +65837,10 @@
         "pmns_c3_character_holonomy_closure_note",
         "pmns_c3_character_mode_reduction_note",
         "pmns_hw1_source_transfer_boundary_note",
-        "pmns_selector_current_stack_zero_law_note",
-        "dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21"
+        "pmns_selector_current_stack_zero_law_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "55981451722122026ae8fe64156a66d7ecb4d242a030785d266d4aa94fc0b68c",
+      "note_hash": "7f2fc0a2b0f80875b553e3cd60b60bf81599c2705c642cb8aaa315e800ece81c",
       "path": "docs/PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md",
       "runner_path": "scripts/frontier_pmns_c3_nontrivial_current_boundary.py",
       "title": "PMNS `C3` Nontrivial-Character Current Boundary"
@@ -81523,7 +81518,7 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9688,
+    "edge_count": 9687,
     "leaf_count": 757,
     "node_count": 2490,
     "root_count": 819,

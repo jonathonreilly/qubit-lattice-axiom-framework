@@ -1,0 +1,162 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/MINIMAL_AXIOMS_2026-05-20.md"
+  ],
+  "baseline": {
+    "branch": "origin/main",
+    "commit": "8e33d17fd",
+    "pipeline": "bash docs/audit/scripts/run_pipeline.sh"
+  },
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "this bounded-to-retained queue as evidence",
+    "prior assistant discussion",
+    "prior audit rationales",
+    "publication-facing retained summaries",
+    "PR 1648 source-coupled local-action convention as an assumed axiom"
+  ],
+  "generated_date": "2026-05-23",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "nonabelian_gauge_split_candidate",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Can the exact native cubic Cl(3)/SU(2) plus retained graph-first structural SU(3) closure in this aggregator be reclassified as positive_theorem if the abelian/hypercharge-like surface and downstream phenomenology remain explicitly excluded?",
+          "claim_id": "native_gauge_closure_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "wilson_exact_local_chain",
+      "order": 2,
+      "targets": [
+        {
+          "audit_question": "Can the exact transfer-operator / character-recurrence realization of the finite Wilson plaquette generating object be reclassified as positive_theorem while leaving explicit beta=6 transfer-state and Perron/thermal data closure open?",
+          "claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md"
+        },
+        {
+          "audit_question": "Can the exact universal temporal completion law for the accepted Wilson nearest-neighbor local bosonic scalar gauge-source class be reclassified as positive_theorem without claiming unrelated source classes or downstream phenomenology?",
+          "claim_id": "gauge_scalar_temporal_completion_theorem_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md"
+        },
+        {
+          "audit_question": "Can the exact first nonlinear coefficient / onset theorem for the Wilson plaquette reduction law be reclassified as positive_theorem while leaving full analytic beta=6 plaquette closure open?",
+          "claim_id": "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md"
+        },
+        {
+          "audit_question": "Can the exact existence and uniqueness of the implicit finite Wilson reduction law be reclassified as positive_theorem while leaving explicit nonperturbative beta=6 characterization open?",
+          "claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md"
+        },
+        {
+          "audit_question": "Can the exact scalar bridge endpoint ratio A_inf / A_2 = 2 / sqrt(3) on the minimal APBC 3+1 block be reclassified as positive_theorem while keeping dimension-4 observable insertion support-only?",
+          "claim_id": "scalar_3plus1_temporal_ratio_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md"
+        },
+        {
+          "audit_question": "Can the exact connected plaquette cumulant hierarchy on the finite Wilson source surface be reclassified as positive_theorem while leaving explicit nonperturbative beta_eff closure open?",
+          "claim_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md"
+        },
+        {
+          "audit_question": "Can the exact compact positive spectral-measure equivalence for the finite Wilson connected plaquette hierarchy be reclassified as positive_theorem while leaving explicit beta=6 spectral-measure identification open?",
+          "claim_id": "gauge_vacuum_plaquette_spectral_measure_theorem_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md"
+        },
+        {
+          "audit_question": "Can the exact minimal distinct-shell geometry around a marked plaquette on the accepted Wilson 3+1 surface be reclassified as positive_theorem while leaving full reduction-law and beta=6 continuation open?",
+          "claim_id": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "finite_representation_theory",
+      "order": 3,
+      "targets": [
+        {
+          "audit_question": "Can the exact finite-rank SU(3) projector construction for (1,1)^4 / C^4096 be reclassified as positive_theorem without promoting the broader cube-closure campaign?",
+          "claim_id": "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md"
+        },
+        {
+          "audit_question": "Can the abstract S3 representation theorem on C^8 = (C^2)^3 under tensor-position permutations be reclassified as positive_theorem while leaving the framework taste-cube carrier interpretation and physical flavor claims gated?",
+          "claim_id": "s3_taste_cube_decomposition_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "policy": {
+    "introduces_new_axioms": false,
+    "retags_ledger": false
+  },
+  "retired_targets": [
+    {
+      "audit_question": "High downstream reach, but explicitly bounded quantitative support only; needs separate Higgs authority-boundary rewrite before promotion re-audit.",
+      "claim_id": "higgs_from_lattice_note",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/HIGGS_FROM_LATTICE_NOTE.md",
+      "retired_reason": "not_a_direct_promotion_candidate"
+    },
+    {
+      "audit_question": "Useful finite coefficient table, but intentionally finite-box support; reconsider later only if finite tables are accepted as scoped positive theorems.",
+      "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md",
+      "retired_reason": "not_a_direct_promotion_candidate"
+    }
+  ],
+  "schema": "promotion_reaudit_queue.v1",
+  "selection_rule": "Already audited-clean retained_bounded rows with large transitive descendant counts and a plausible exact positive scope narrower than any still-open physical closure.",
+  "status": "dispatcher_only_not_audit_verdict"
+}

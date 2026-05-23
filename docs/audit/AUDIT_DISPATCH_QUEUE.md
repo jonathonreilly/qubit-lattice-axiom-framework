@@ -2,12 +2,13 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 2
-**Ready entries:** 1
+**Live entries:** 13
+**Ready entries:** 12
 **Resolved/invalid entries:** 21
-**Retired entries:** 3
+**Retired entries:** 5
 
 Source sidecars:
+- `docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json`
 - `docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json`
 - `docs/audit/data/promotion_reaudit_queue_2026-05-22.json`
 - `docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json`
@@ -16,8 +17,19 @@ Source sidecars:
 
 | # | ready | group | claim_id | current | source note | audit question |
 |---:|:---:|---|---|---|---|---|
-| 1 | Y | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? |
-| 2 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? |
+| 1 | Y | `nonabelian_gauge_split_candidate` | `native_gauge_closure_note` | bounded_theorem / audited_clean / retained_bounded | `docs/NATIVE_GAUGE_CLOSURE_NOTE.md` | Can the exact native cubic Cl(3)/SU(2) plus retained graph-first structural SU(3) closure in this aggregator be reclassified as positive_theorem if the abelian/hypercharge-like surface and downstream phenomenology remain explicitly excluded? |
+| 2 | Y | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? |
+| 3 | Y | `wilson_exact_local_chain` | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | bounded_theorem / audited_clean / retained_bounded | `docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md` | Can the exact transfer-operator / character-recurrence realization of the finite Wilson plaquette generating object be reclassified as positive_theorem while leaving explicit beta=6 transfer-state and Perron/thermal data closure open? |
+| 4 | Y | `wilson_exact_local_chain` | `gauge_scalar_temporal_completion_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md` | Can the exact universal temporal completion law for the accepted Wilson nearest-neighbor local bosonic scalar gauge-source class be reclassified as positive_theorem without claiming unrelated source classes or downstream phenomenology? |
+| 5 | Y | `wilson_exact_local_chain` | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | bounded_theorem / audited_clean / retained_bounded | `docs/GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md` | Can the exact first nonlinear coefficient / onset theorem for the Wilson plaquette reduction law be reclassified as positive_theorem while leaving full analytic beta=6 plaquette closure open? |
+| 6 | Y | `wilson_exact_local_chain` | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md` | Can the exact existence and uniqueness of the implicit finite Wilson reduction law be reclassified as positive_theorem while leaving explicit nonperturbative beta=6 characterization open? |
+| 7 | Y | `wilson_exact_local_chain` | `scalar_3plus1_temporal_ratio_note` | bounded_theorem / audited_clean / retained_bounded | `docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md` | Can the exact scalar bridge endpoint ratio A_inf / A_2 = 2 / sqrt(3) on the minimal APBC 3+1 block be reclassified as positive_theorem while keeping dimension-4 observable insertion support-only? |
+| 8 | Y | `wilson_exact_local_chain` | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md` | Can the exact connected plaquette cumulant hierarchy on the finite Wilson source surface be reclassified as positive_theorem while leaving explicit nonperturbative beta_eff closure open? |
+| 9 | Y | `wilson_exact_local_chain` | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `docs/GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md` | Can the exact compact positive spectral-measure equivalence for the finite Wilson connected plaquette hierarchy be reclassified as positive_theorem while leaving explicit beta=6 spectral-measure identification open? |
+| 10 | Y | `wilson_exact_local_chain` | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md` | Can the exact minimal distinct-shell geometry around a marked plaquette on the accepted Wilson 3+1 surface be reclassified as positive_theorem while leaving full reduction-law and beta=6 continuation open? |
+| 11 | Y | `finite_representation_theory` | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | bounded_theorem / audited_clean / retained_bounded | `docs/SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md` | Can the exact finite-rank SU(3) projector construction for (1,1)^4 / C^4096 be reclassified as positive_theorem without promoting the broader cube-closure campaign? |
+| 12 | Y | `finite_representation_theory` | `s3_taste_cube_decomposition_note` | bounded_theorem / audited_clean / retained_bounded | `docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md` | Can the abstract S3 representation theorem on C^8 = (C^2)^3 under tensor-position permutations be reclassified as positive_theorem while leaving the framework taste-cube carrier interpretation and physical flavor claims gated? |
+| 13 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? |
 
 ## Resolved Or Invalid
 
@@ -49,8 +61,10 @@ Source sidecars:
 
 | # | claim_id | current | reason |
 |---:|---|---|---|
-| 1 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |
-| 2 | `native_gauge_closure_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |
-| 3 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; current source scope is a finite projection lemma and does not close the kappa_EW matching-rule identification. Positive-theorem promotion remains conditional on a future source repair that closes that identification. |
+| 1 | `higgs_from_lattice_note` | bounded_theorem / audited_clean / retained_bounded | not_a_direct_promotion_candidate |
+| 2 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem / audited_clean / retained_bounded | not_a_direct_promotion_candidate |
+| 3 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |
+| 4 | `native_gauge_closure_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |
+| 5 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; current source scope is a finite projection lemma and does not close the kappa_EW matching-rule identification. Positive-theorem promotion remains conditional on a future source repair that closes that identification. |
 
 Full machine-readable queue lives in `data/audit_dispatch_queue.json`.

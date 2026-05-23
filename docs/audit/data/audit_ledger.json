@@ -90928,24 +90928,42 @@
       "verdict_rationale": null
     },
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T14:49:19.496148+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) action on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the displayed fiber SU(2) and base-sector Y, and the resulting SU(3) Fierz/channel-count fraction 8/9 on that carrier only."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 11.974,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 1005
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T144855Z-6ea222ae-g_bare_constraint_vs_con-02",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic substitution closes under the stated bounded assumptions, and the cited CL3 authority supplies the canonical T_F=1/2 normalization and N_c=3 algebraic carrier used by the note. The result remains relative to the Wilson action/matching and beta=6 normalization surface, which the note explicitly keeps within scope as an admitted bounded input rather than deriving absolutely from A1+A2 alone.",
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": "Local bounded algebraic result: relative to the canonical SU(3) trace normalization Tr(T_a T_b)=delta_ab/2 and the Wilson matching identity beta=2N_c/g_bare^2 with N_c=3 and beta=6, the compatible value is g_bare=1; the convention layer is the admitted canonical normalization, not an additional independent g_bare choice.",
+      "claim_scope": "Audited the local conditional algebraic claim that, assuming the canonical Cl(3) trace normalization, the Wilson small-a matching identity, N_c=3, and beta=6, the compatible value is g_bare=1, with the convention layer located at the canonical normalization rather than as an additional g_bare choice.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T14:48:27.897131+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-23T14:49:19.496148+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -90960,27 +90978,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-23T14:49:19.496148+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T144855Z-6ea222ae-g_bare_constraint_vs_con-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the local conditional algebraic claim that, assuming the canonical Cl(3) trace normalization, the Wilson small-a matching identity, N_c=3, and beta=6, the compatible value is g_bare=1, with the convention layer located at the canonical normalization rather than as an additional g_bare choice.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.974,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given canonical Tr(T_a T_b)=delta_ab/2 and Wilson matching beta=2N_c/g_bare^2, at N_c=3 and beta=6 the exact substitution gives g_bare^2=2N_c/beta=1.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "ea9dc4515b3d707874a7ca77bc64f7f215d45511baca83a962642dc931e6e3da",
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the audited scope remains the local conditional CN+WM+beta=6 identity and is not later promoted as an absolute derivation of CN or the Wilson action form from A1+A2 alone.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -91294,16 +91323,16 @@
       "relabel_date": "2026-05-06T17:45:26.976865+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 55,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 55
       },
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Constraint vs Convention Disambiguation Theorem",
       "transitive_descendants": 1005,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an exact algebraic identity over the retained-bounded CL3 normalization input plus the note's explicitly scoped Wilson matching/beta surface. The runner source does compute the Gell-Mann trace Gram, verifies the plaquette small-a coefficient numerically, and uses exact Fraction arithmetic for the decisive g_bare^2=1 substitution; it does not merely print the final value. The broader absolute derivation of CN or of the Wilson action form is expressly excluded from the claim scope, so those exclusions do not block this bounded theorem."
     },
     "g_bare_derivation_note": {
       "audit_date": null,

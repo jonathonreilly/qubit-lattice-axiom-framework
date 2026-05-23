@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 133 |
 | **retained_no_go** | 147 |
-| **retained_bounded** | 376 |
+| **retained_bounded** | 377 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1314 |
-| audit_in_progress | 1 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -47,8 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 630 |
+| `audited_clean` | 631 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 66 |
@@ -119,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -293,6 +290,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -4157,6 +4155,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
 - **auditor confidence:** high
+
+### `g_bare_constraint_vs_convention_theorem_note_2026-05-03`
+
+- **Note:** [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the local conditional algebraic claim that, assuming the canonical Cl(3) trace normalization, the Wilson small-a matching identity, N_c=3, and beta=6, the compatible value is g_bare=1, with the convention layer located at the canonical normalization rather than as an additional g_bare choice.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T144855Z-6ea222ae-g_bare_constraint_vs_con-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given canonical Tr(T_a T_b)=delta_ab/2 and Wilson matching beta=2N_c/g_bare^2, at N_c=3 and beta=6 the exact substitution gives g_bare^2=2N_c/beta=1.  _(class `A`)_
+- **chain closes:** True — The algebraic substitution closes under the stated bounded assumptions, and the cited CL3 authority supplies the canonical T_F=1/2 normalization and N_c=3 algebraic carrier used by the note. The result remains relative to the Wilson action/matching and beta=6 normalization surface, which the note explicitly keeps within scope as an admitted bounded input rather than deriving absolutely from A1+A2 alone.
+- **rationale:** The load-bearing step is an exact algebraic identity over the retained-bounded CL3 normalization input plus the note's explicitly scoped Wilson matching/beta surface. The runner source does compute the Gell-Mann trace Gram, verifies the plaquette small-a coefficient numerically, and uses exact Fraction arithmetic for the decisive g_bare^2=1 substitution; it does not merely print the final value. The broader absolute derivation of CN or of the Wilson action form is expressly excluded from the claim scope, so those exclusions do not block this bounded theorem.
+- **auditor confidence:** medium
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`
 

@@ -158613,22 +158613,49 @@
       "verdict_rationale": null
     },
     "mesoscopic_surrogate_h025_constrained_localization_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T00:14:56.324547+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "broad_surrogate_point_source_compare_note": "Fixed h=0.5, W=8, L=12 3D ordered-lattice valley-linear diagnostic comparing the runner-defined broad surrogate source against an equivalent-strength point source for probes z=0, \u00b11, \u00b12.",
+          "mesoscopic_surrogate_backreaction_note": "A fixed 3D ordered-lattice valley-linear harness at h=0.5, W=8, segment_L=6, using the frozen topN=196 surrogate, numerically checks weak-field source additivity and one-step two-body symmetry.",
+          "mesoscopic_surrogate_multistage_note": "Bounded two-stage sourced-response survival of the topN=196 mesoscopic surrogate on the retained h=0.5, W=8, segment_L=6 3D ordered-lattice valley-linear family with source_z=3.0 and strength=5e-5."
+        },
+        "dep_claim_type": {
+          "broad_surrogate_point_source_compare_note": "bounded_theorem",
+          "mesoscopic_surrogate_backreaction_note": "bounded_theorem",
+          "mesoscopic_surrogate_multistage_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "broad_surrogate_point_source_compare_note": "retained_bounded",
+          "mesoscopic_surrogate_backreaction_note": "retained_bounded",
+          "mesoscopic_surrogate_multistage_note": "retained_bounded"
+        },
+        "deps": [
+          "broad_surrogate_point_source_compare_note",
+          "mesoscopic_surrogate_backreaction_note",
+          "mesoscopic_surrogate_multistage_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "be6b904fd25b1d376ee60f5d53889077fa48359687f7810f9974ed6b6b945cc5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001328Z-cedf7dcf-mesoscopic_surrogate_h02-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner computes the base surrogate, source field, two relaunch stages, floor checks, and score/capture/width comparison from the included lattice propagation code, and the cached stdout matches the source note's load-bearing numbers. This closes the finite scripted sweep, not a universal theorem over all possible localization families.",
       "claim_id": "mesoscopic_surrogate_h025_constrained_localization_note",
-      "claim_scope": null,
+      "claim_scope": "For the scripted h=0.25, W=10, L=12 ordered-lattice surrogate setup with support and capture floors, the finite annular localization sweep does not beat the broad topN=196 control.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T00:14:56.324547+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -158638,23 +158665,23 @@
         "mesoscopic_surrogate_multistage_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/mesoscopic_surrogate_localization_family_sweep.py",
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The best admissible annulus 1:6 has score 0.9947 and capture2 0.916, so meaningful improvement over the broad topN 196 benchmark with score 1.0000 and capture2 1.000 is False.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "74ea352627403a8863ff663266437b8237a63ebd8b12a8d36a5c432a4fe235a5",
       "note_path": "docs/MESOSCOPIC_SURROGATE_H025_CONSTRAINED_LOCALIZATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean result scoped to the finite topN/annulus sweep and not read it as a universal localization no-go.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -158710,18 +158737,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/mesoscopic_surrogate_h025_constrained_localization.py",
       "title": "Mesoscopic Surrogate h=0.25 Constrained Localization Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner does not hard-code the contested outcome; it instantiates the lattice propagation and evaluates the candidate families directly. The helper sources are present and their load-bearing functions compute framework primitives rather than importing fitted result values. The cited authorities are retained_bounded and are used consistently as context for the mesoscopic surrogate lane, while the audited conclusion is the new finite h=0.25 comparison. The broad lane-closing language should remain scoped to this scripted annular attempt and stated floors."
     },
     "mesoscopic_surrogate_localization_frontier_note": {
       "audit_date": "2026-05-23T00:01:58.452035+00:00",

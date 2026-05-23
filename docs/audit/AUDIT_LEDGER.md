@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 385 |
+| **retained_bounded** | 386 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1284 |
+| unaudited | 1283 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 638 |
+| `audited_clean` | 639 |
 | `audited_conditional` | 106 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1508 |
+| `unaudited` | 1507 |
 
 | claim_type | count |
 |---|---:|
@@ -465,6 +465,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_annular_tapered_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_compact_floor_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mesoscopic_surrogate_h025_constrained_localization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_localization_frontier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_multistage_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7444,6 +7445,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the frozen retained 3D setup, compact Gaussian and tapered families pass the explicit support/capture floors, but the best compact survivor does not meaningfully improve over the broad top-N benchmark.  _(class `C`)_
 - **chain closes:** True — The provided runner instantiates the lattice, source field, candidate compressions, two propagation stages, floor tests, and top-N comparison directly from the included code. The conclusion is limited to this frozen surrogate setup and does not claim persistent mass or geometry-generic closure.
 - **rationale:** The runner output matches the note's load-bearing numerical claims and the source code shows actual computation rather than constant printing or a numerical equality assertion. The helper chain supplies the lattice propagation, detector projection, surrogate construction, and profile metrics used by the primary runner, and no cited authority in the restricted packet is below retained-grade. The clean verdict applies only to the bounded compact-floor sweep and comparison against top-N on the frozen retained family.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_h025_constrained_localization_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_H025_CONSTRAINED_LOCALIZATION_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_H025_CONSTRAINED_LOCALIZATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the scripted h=0.25, W=10, L=12 ordered-lattice surrogate setup with support and capture floors, the finite annular localization sweep does not beat the broad topN=196 control.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T001328Z-cedf7dcf-mesoscopic_surrogate_h02-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The best admissible annulus 1:6 has score 0.9947 and capture2 0.916, so meaningful improvement over the broad topN 196 benchmark with score 1.0000 and capture2 1.000 is False.  _(class `C`)_
+- **chain closes:** True — The primary runner computes the base surrogate, source field, two relaunch stages, floor checks, and score/capture/width comparison from the included lattice propagation code, and the cached stdout matches the source note's load-bearing numbers. This closes the finite scripted sweep, not a universal theorem over all possible localization families.
+- **rationale:** The runner does not hard-code the contested outcome; it instantiates the lattice propagation and evaluates the candidate families directly. The helper sources are present and their load-bearing functions compute framework primitives rather than importing fitted result values. The cited authorities are retained_bounded and are used consistently as context for the mesoscopic surrogate lane, while the audited conclusion is the new finite h=0.25 comparison. The broad lane-closing language should remain scoped to this scripted annular attempt and stated floors.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_localization_frontier_note`

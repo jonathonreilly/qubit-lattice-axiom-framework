@@ -1,0 +1,31 @@
+loop: gauge-residual-env-bounded-repair
+status: bounded-support
+date: 2026-05-23
+base: origin/main
+branch: physics-loop/gauge-residual-env-bounded-repair-block01-20260523
+current_goal: >
+  Repair the residual-environment identification row by narrowing it to the
+  finite computed coefficient packet and leaving the full stripped-residual
+  equals compressed unmarked-environment theorem open.
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >
+  This branch queues independent audit for a narrowed bounded packet; it does
+  not claim the full residual-environment identification theorem.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py
+open_imports:
+  - independent audit verdict on the repaired parent row
+  - full stripped-residual equals compressed unmarked spatial environment theorem
+  - all-weight residual coefficient law and full beta=6 Perron/boundary readout
+pr_status: open
+pr_url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1745
+next_exact_action: await reviewer/auditor handling on PR #1745
+stop_condition: one review PR opened for this coherent science block

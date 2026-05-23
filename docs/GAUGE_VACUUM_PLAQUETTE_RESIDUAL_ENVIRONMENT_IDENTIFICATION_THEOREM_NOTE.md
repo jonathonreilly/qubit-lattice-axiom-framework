@@ -1,296 +1,169 @@
-# Gauge-Vacuum Plaquette Residual Environment Identification Theorem
+# Gauge-Vacuum Plaquette Residual Environment Finite Coefficient Packet
 
 **Date:** 2026-04-17 (residual-env structural identification);
-2026-05-16 (witness replaced by computed Wilson coefficients on finite box)
-**Status:** structural source-sector identification theorem on the accepted
-Wilson `3 spatial + 1 derived-time` surface; after the marked half-slice
-multiplier and the exact normalized mixed-kernel local factor are stripped,
-the remaining factor is structurally a positive central diagonal
-conjugation-symmetric operator R_beta^env on the marked-plaquette
-class-function sector. The runner now derives the finite-box residual
-coefficients rho_(p,q)(6) directly from the canonical single-link SU(3)
-Wilson character integral by the Schur-Weyl Bessel-determinant identity,
-rather than injecting a witness sequence, on the finite 0<=p,q<=NMAX box.
-**Claim type:** open_gate (all-weight equality of the stripped residual with
-the unmarked spatial Wilson environment compression is *not* closed)
+2026-05-16 (witness replaced by computed Wilson coefficients on finite box);
+2026-05-23 (scope repaired to a bounded finite coefficient packet).
+**Type:** bounded_theorem
+**Claim scope (post-2026-05-23 narrowing):** the load-bearing claim is only
+the finite source-sector coefficient packet checked by
+`scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py`.
+On the finite dominant-weight box `0 <= p,q <= NMAX`, at `beta = 6` and
+`MODE_MAX = 80`, the runner constructs a diagonal finite coefficient factor
+from computed normalized single-link Wilson character coefficients
+`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`, verifies that the prior
+hand-picked witness has been replaced, and checks the corresponding finite
+source-sector packaging
+`exp(3J) D_6^loc R_6^packet exp(3J)` for self-adjointness,
+conjugation-swap symmetry, positivity improving entries, and positive
+truncated Perron readout.
+**Status authority:** source-note proposal only; audit verdict and effective
+status are set by the independent audit lane. The `bounded_theorem` label is a
+source-side claim-boundary declaration, not an audit verdict.
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py`
 **Bounded coefficient companion:**
 [`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-**Prior audit:** `audited_conditional` at fresh_context (codex-gpt-5.5); the
-auditor flagged that the runner verified algebraic properties for a generic
-positive symmetric witness rather than computing the actual residual
-environment. The runner has been updated to compute rho_(p,q)(6) from the
-canonical Wilson character integral on the finite box, so the structural
-identification at this scope is now paired with a derivation, not a witness
-injection. The all-weight equality remains the open gate.
+
+This note does **not** claim that the stripped residual source-sector operator
+equals the compressed unmarked spatial Wilson environment. It also does not
+claim all-weight closure, a full unmarked spatial-environment tensor-transfer
+operator, explicit `beta = 6` Perron/Jacobi data, analytic `P(6)`, or any
+repo-wide plaquette repinning.
 
 ## Question
 
-Once the marked half-slice factor and the normalized mixed-kernel local factor
-are both explicit, is the remaining plaquette object still just an abstract
-positive diagonal datum, or can its exact origin be identified more sharply?
+After the marked half-slice factor and the normalized mixed-kernel local factor
+are separated, can the finite coefficient slot used for the remaining
+source-sector package be computed rather than supplied as a generic positive
+witness?
 
 ## Answer
 
-It can be identified more sharply.
+Yes, on the bounded finite coefficient packet.
 
-The exact transfer/source-sector factorization theorem already closes
+The runner computes the finite coefficients from the canonical normalized
+single-link `SU(3)` Wilson character integral:
 
-`T_src(beta) = exp[(beta / 2) J] D_beta exp[(beta / 2) J]`.
+`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`,
 
-The exact local/environment factorization theorem already closes that the
-normalized mixed-kernel part is exactly the local Wilson four-link factor
+`c_(p,q)(6) = int_SU(3) chi_(p,q)(U) exp((6/3) Re tr U) dU`.
 
-`D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q)`.
+Those coefficients are the same finite-box Wilson coefficients checked by the
+retained bounded companion row. The current note uses them only as the finite
+diagonal packet `R_6^packet` inserted into the source-sector package
 
-Therefore the still-open factor is not hidden mixed-kernel freedom. It is
-exactly the residual source-sector operator obtained by compressing the
-unmarked spatial Wilson environment to the marked-plaquette class-function
-sector after the local mixed-kernel factor is removed.
+`exp(3J) D_6^loc R_6^packet exp(3J)`.
 
-So the remaining target may be written explicitly as
+This replaces the prior arbitrary witness sequence on the finite box. It does
+not prove that `R_6^packet` is the actual compressed unmarked spatial
+environment operator.
 
-`T_src(beta) = exp[(beta / 2) J] D_beta^loc R_beta^env exp[(beta / 2) J]`,
+## Bounded Ingredient 1: computed finite Wilson coefficients
 
-where `R_beta^env` is the compressed unmarked spatial environment operator.
+On the finite box used by the runner, the coefficients are computed in-runner
+by the Schur-Weyl Bessel-determinant identity. The retained bounded companion
+cross-checks the same coefficients against direct Weyl integration on the
+Cartan torus with Vandermonde-squared measure.
 
-At `beta = 6`, the remaining constructive problem is therefore:
+The finite packet therefore has a retained bounded source for:
 
-> explicitly identify the character coefficients or Perron data of
-> `R_6^env`, not the whole source-sector transfer law and not the already-fixed
-> mixed-kernel local factor.
+- positivity of the normalized finite coefficients,
+- conjugation symmetry `rho_(p,q)(6) = rho_(q,p)(6)`,
+- normalization `rho_(0,0)(6) = 1`,
+- replacement of the retired hand-picked witness sequence.
 
-## Setup
+## Bounded Ingredient 2: finite source-sector packaging
 
-From the exact transfer-operator / character-recurrence theorem already on
-`main`:
+The runner constructs the finite matrices:
 
-- the plaquette source sector carries the exact self-adjoint source operator
-  `J = (chi_(1,0) + chi_(0,1)) / 6`;
-- the one-clock Wilson transfer law is positive and self-adjoint on the
-  accepted source sector.
+- the source recurrence `J` on the finite dominant-weight box,
+- the marked half-slice multiplier `exp(3J)`,
+- the diagonal local factor `D_6^loc`,
+- the computed diagonal packet `R_6^packet`.
 
-From the exact source-sector matrix-element factorization theorem:
+It then checks the finite package
 
-- the exact marked half-slice multiplier is `exp[(beta / 2) J]`;
-- after stripping those two marked half-slice multipliers, the residual
-  source-sector compression is central and diagonal in the character basis.
+`K_6^packet = exp(3J) D_6^loc R_6^packet exp(3J)`
 
-From the exact local/environment factorization theorem:
+for:
 
-- in temporal gauge, the mixed one-step Wilson kernel factorizes over the
-  spatial links;
-- after trivial-channel normalization, every non-marked mixed-link factor acts
-  only by the identity on the marked class-function sector;
-- the full normalized mixed-kernel compression is therefore exactly the local
-  Wilson four-link factor `D_beta^loc`.
+- self-adjointness,
+- conjugation-swap symmetry,
+- positive matrix entries on the truncation,
+- a positive truncated Perron expectation.
 
-## Theorem 1: exact residual factor after local mixed-kernel stripping
+These are finite packet checks. They do not prove the all-weight operator
+identity named by the earlier parent theorem wording.
 
-Let `K_beta^src` denote the exact one-step Wilson source-sector kernel on the
-marked-plaquette class-function sector.
+## Open Target: actual residual environment identification
 
-Strip off:
+The remaining theorem-grade target is still:
 
-1. the incoming marked half-slice multiplier `exp[(beta / 2) J]`,
-2. the outgoing marked half-slice multiplier `exp[(beta / 2) J]`,
-3. the exact normalized mixed-kernel local factor `D_beta^loc`.
+`R_beta^actual = compressed unmarked spatial Wilson environment`,
 
-What remains is exactly the compression of the unmarked spatial Wilson
-environment on the marked source sector. Call this operator `R_beta^env`.
+after stripping the marked half-slice factors and the normalized local
+mixed-kernel factor from the source-sector transfer law.
 
-Then:
+To close that target, a future proof or runner must derive the equality for the
+actual stripped residual operator, not merely insert the finite Wilson
+coefficient packet. It must also handle all-weight support, the full
+spatial-environment tensor-transfer/Perron construction, and the boundary
+readout at `beta = 6`.
 
-`K_beta^src = exp[(beta / 2) J] D_beta^loc R_beta^env exp[(beta / 2) J]`.
+## What This Closes
 
-So the open operator is identified exactly as the residual unmarked spatial
-environment compression.
+- bounded replacement of the prior arbitrary positive witness on the finite
+  coefficient packet;
+- bounded construction of a finite diagonal source-sector packet from computed
+  Wilson coefficients;
+- bounded verification that the finite package remains self-adjoint,
+  conjugation-symmetric, positivity improving on the truncation, and Perron
+  positive.
 
-## Theorem 2: exact structural class of the residual environment operator
+## What This Does Not Close
 
-Because the unmarked spatial Wilson environment is real, positive, and
-invariant under simultaneous conjugation of the marked plaquette holonomy,
-`R_beta^env` is:
+- equality of the stripped residual source-sector operator with the compressed
+  unmarked spatial Wilson environment;
+- all-weight closure beyond the finite dominant-weight box;
+- full unmarked spatial Wilson environment tensor-transfer/Perron data;
+- explicit `beta = 6` Perron moments or Jacobi coefficients;
+- analytic closure of canonical `P(6)`;
+- repo-wide repinning of the canonical plaquette.
 
-- positive,
-- self-adjoint,
-- central on the marked-plaquette class-function sector,
-- diagonal in the `SU(3)` character basis,
-- conjugation-symmetric under `(p,q) <-> (q,p)`.
-
-Therefore
-
-`R_beta^env chi_(p,q) = rho_(p,q)(beta) chi_(p,q)`,
-
-with
-
-- `rho_(p,q)(beta) >= 0`,
-- `rho_(p,q)(beta) = rho_(q,p)(beta)`.
-
-## Corollary 1: the remaining plaquette target is no longer abstract
-
-The remaining framework-point target is no longer:
-
-- the full source-sector transfer operator,
-- the mixed-kernel coefficient stack,
-- the marked half-slice multiplier,
-- or the local Wilson four-link factor.
-
-It is exactly:
-
-- the compressed unmarked spatial environment operator `R_6^env`,
-- equivalently its character coefficients `rho_(p,q)(6)`,
-- or equivalently the Perron state / moments of
-  `exp(3 J) D_6^loc R_6^env exp(3 J)`.
-
-## What this closes
-
-- exact identification of the still-open plaquette operator as the compressed
-  unmarked spatial environment operator
-- exact separation between the already-fixed normalized mixed-kernel local
-  factor and the still-open environment factor
-- exact reformulation of the remaining plaquette problem as explicit
-  environment compression data at `beta = 6`
-
-## What this does not close
-
-- the all-weight or full tensor-transfer coefficients of the actual unmarked
-  spatial Wilson environment; the companion note computes only a bounded
-  finite single-link Wilson boundary table
-- explicit `beta = 6` Perron moments or Jacobi coefficients
-- analytic closure of canonical `P(6)`
-- repo-wide repinning of the canonical plaquette
-
-## Bounded companion: finite `rho_(p,q)(6)` Wilson coefficients
-
-The companion note
-[`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-and runner
-`scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py`
-compute bounded normalized single-link Wilson boundary coefficients
-
-`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6))`,
-`c_(p,q)(6) = int_{SU(3)} chi_(p,q)(U) exp((6/3) Re tr U) dU`,
-
-via two independent integrators:
-
-- the Schur-Weyl Bessel-determinant identity, and
-- direct Weyl integration on the SU(3) Cartan torus with Vandermonde squared.
-
-The two integrators agree to ~`1e-14` absolute on the finite `0 <= p,q <= 4`
-box. The runner then verifies diagonal action when these computed coefficients
-are inserted,
-`R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q)`, and checks that the factorized
-framework-point witness
-`exp(3 J) D_6^loc R_6^env exp(3 J)` remains self-adjoint, conjugation-symmetric,
-and Perron-positive on the finite truncation.
-
-This is bounded support for replacing the prior arbitrary witness on the
-computed finite box. It does not by itself close the parent residual-environment
-gate or promote this note.
-
-## Commands run
+## Commands Run
 
 ```bash
 python3 scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py
 ```
 
-Expected summary after the 2026-05-16 update (witness replaced by computed
-finite-box Wilson coefficients):
+Expected summary:
 
 - `THEOREM PASS=6 SUPPORT=3 FAIL=0`
 
-The new theorem-grade checks now include:
+The theorem-grade checks are bounded to the finite packet:
 
-- the residual coefficients `rho_(p,q)(6)` come from the canonical normalized
-  single-link Wilson character integral, computed by the Schur-Weyl
-  Bessel-determinant identity in-runner, not from a hand-picked witness;
-- `rho_(0,0)(6) = 1` exactly (normalization) and the computed sequence
-  differs from the retired witness sequence by `~4.2e-1` in max norm, so the
-  runner certifies that the previous witness has actually been replaced;
-- `R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q)` with the computed values
-  (eigen-action error `0.0` on the finite box);
-- the factorized framework-point law `exp(3 J) D_6^loc R_6^env exp(3 J)` is
-  self-adjoint, conjugation-symmetric, and positivity-improving on the
-  truncated source sector with the computed `rho_env`.
+- `J` is self-adjoint and conjugation-symmetric on the finite source sector;
+- `exp(3J)` is positive and self-adjoint;
+- `D_6^loc` is explicit, positive, diagonal, and conjugation-symmetric;
+- `R_6^packet` is built from computed normalized Wilson coefficients, not the
+  prior witness;
+- `R_6^packet` acts diagonally with eigenvalues `rho_(p,q)(6)` on the finite
+  class-function basis;
+- `exp(3J) D_6^loc R_6^packet exp(3J)` is self-adjoint,
+  conjugation-symmetric, and positivity improving on the finite source sector.
 
-## Scope and what remains open
+## Audit Dependency Repair Links
 
-This update closes the *witness-injection* defect on the finite computed
-box, but does **not** promote the parent claim to retained-grade. In
-particular it does not derive:
+This graph-bookkeeping section records the explicit retained bounded input for
+the finite packet. It does not promote this note, apply an audit verdict, or
+close the full residual-environment identification theorem.
 
-- that the stripped residual factor equals the compressed unmarked spatial
-  Wilson environment operator on *all* dominant weights (the all-weight
-  equality remains the open gate);
-- the full unmarked spatial Wilson environment tensor-transfer / Perron
-  closure;
-- analytic `P(6)`.
+- [gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
+  (`audited_clean` / `retained_bounded`) computes the bounded normalized
+  single-link Wilson coefficients on a finite weight box by two independent
+  methods. This is the load-bearing coefficient authority for the finite packet
+  used here.
 
-The residual factor's *structural* class (positive, self-adjoint, central,
-diagonal in the SU(3) character basis, conjugation-symmetric) follows from
-the cited source-sector and local/environment factorization notes; the
-*numerical* finite-box coefficients are now computed from the canonical
-Wilson character integral directly. The all-weight identification of those
-two objects (stripped residual vs. unmarked spatial environment compression)
-is the precise step the parent gate still needs.
-
-### Companion computation: bounded `rho_(p,q)(6)` from single-link Wilson data
-
-The runner above now computes `rho_(p,q)(6)` directly from the canonical
-single-link SU(3) Wilson character integral via the Schur-Weyl
-Bessel-determinant identity, replacing the previously injected witness
-sequence on the finite computed box.
-
-For independent cross-verification of those same coefficients by a
-different integrator (Weyl integration on the Cartan torus with
-Vandermonde-squared measure), the bounded companion note and runner
-
-```bash
-python3 scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py
-```
-
-evaluate the canonical normalized single-link boundary character coefficients
-
-`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6))`,
-
-`c_(p,q)(6) = int_{SU(3)} chi_(p,q)(U) exp((6/3) Re tr U) dU`,
-
-two independent ways on the finite `0 <= p,q <= 4` box:
-
-- **Method A (Schur-Weyl Bessel-determinant identity, closed form):** the
-  integer-mode Schur-Weyl reduction expresses the SU(3) character integral as
-  a sum of `3 x 3` determinants of modified Bessel functions
-  `I_{m + lambda_j + i - j}(beta/3)`, summed over the integer shift `m in Z`,
-  truncated at `|m| <= 80` for absolute convergence at `beta = 6`.
-
-- **Method B (Weyl integration formula on the Cartan torus, direct quadrature):**
-  the same integral computed by the Weyl integration formula
-  `int_{SU(3)} f dU = (1/|W|)(1/(2 pi)^2) int_{T^2} f(theta) |Delta(theta)|^2 d^2 theta`
-  with `|W| = 6`, `chi_(p,q)(theta)` evaluated by the Weyl character formula
-  on the maximal torus, and `|Delta(theta)|^2` the SU(3) Vandermonde squared.
-
-Reported computed coefficients at `beta = 6` (closed form, twelve digits):
-
-- `rho_(0,0)(6) = 1.000000000000`
-- `rho_(1,0)(6) = rho_(0,1)(6) = 4.225317396500e-01`
-- `rho_(1,1)(6) = 1.622597994799e-01`
-- `rho_(2,0)(6) = rho_(0,2)(6) = 1.359617273634e-01`
-- `rho_(2,1)(6) = rho_(1,2)(6) = 4.828805556745e-02`
-- `rho_(3,0)(6) = rho_(0,3)(6) = 3.505738045167e-02`
-- `rho_(2,2)(6) = 1.350507888830e-02`
-
-Method A and Method B agree to `~4e-15` absolute and `~8e-14` relative on the
-finite box. The companion runner then verifies that
-`R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q)` with these computed values, and
-that the factorized framework-point law
-`exp(3 J) D_6^loc R_6^env exp(3 J)` retains the self-adjoint /
-conjugation-symmetric / Perron-positive structural gates that the previous
-witness-injection runner required.
-
-The all-weight coefficient law and full unmarked spatial environment
-tensor-transfer/Perron closure remain outside this bounded companion.
-
-Expected summary for the companion runner:
-
-- `THEOREM PASS=7 SUPPORT=3 FAIL=0`
+The open bridge named by the prior conditional audit remains open at full
+theorem scope: prove, or runner-certify, that the stripped residual
+source-sector operator equals the compressed unmarked spatial Wilson
+environment beyond the finite inserted coefficient table.

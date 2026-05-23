@@ -55413,17 +55413,17 @@
     },
     "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": {
       "claim_id": "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
-      "claim_type_author_hint": "open_gate",
-      "claim_type_author_hint_raw": "open_gate (all-weight equality of the stripped residual with",
-      "claim_type_seed_hint": "open_gate",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a43ee0a8128fef9fdca6cc3118929648ed99f56257fed576c3f0311cdb39941d",
+      "note_hash": "6ce9fb4d540e294e78ccd66ec2c99f1c395ef48ed925352080de3b653f324958",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py",
-      "title": "Gauge-Vacuum Plaquette Residual Environment Identification Theorem"
+      "title": "Gauge-Vacuum Plaquette Residual Environment Finite Coefficient Packet"
     },
     "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17": {
       "claim_id": "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17",
@@ -84300,21 +84300,21 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 522,
+      "bounded_theorem": 523,
       "decoration": 1,
       "meta": 187,
       "no_go": 65,
       "none": 1494,
-      "open_gate": 46,
+      "open_gate": 45,
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 959,
+      "bounded_theorem": 960,
       "decoration": 1,
       "meta": 187,
       "no_go": 168,
       "none": 443,
-      "open_gate": 124,
+      "open_gate": 123,
       "positive_theorem": 609
     },
     "edge_count": 9664,

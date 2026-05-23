@@ -91196,62 +91196,45 @@
       "verdict_rationale": null
     },
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03": {
-      "audit_date": "2026-05-23T16:01:38.468806+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
-        },
-        "dep_claim_type": {
-          "cl3_color_automorphism_theorem": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_color_automorphism_theorem": "retained"
-        },
-        "deps": [
-          "cl3_color_automorphism_theorem"
-        ],
-        "load_bearing_score": 11.974,
-        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
-        "transitive_descendants": 1005
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T160115Z-1514fac8-g_bare_constraint_vs_con-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic substitution closes, but beta = 6 as a canonical-normalization-forced input is not supplied by the cited retained authority; the Wilson action form and beta-pinning remain admitted premises in the packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": "Conditional local algebraic result: given the canonical Cl(3) trace normalization, Wilson plaquette matching beta = 2 N_c / g_bare^2, N_c = 3, and beta = 6, g_bare = 1 is fixed relative to that normalization rather than being a second independent convention.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T16:01:38.468806+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "cl3_color_automorphism_theorem"
+        "cl3_color_automorphism_theorem",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 4,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.97,
-      "load_bearing_step": "Under canonical normalization (CN) and Wilson matching beta = 2 N_c / g_bare^2, at N_c = 3 and beta = 6 the unique compatible value is g_bare^2 = 6/6 = 1.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "ea9dc4515b3d707874a7ca77bc64f7f215d45511baca83a962642dc931e6e3da",
+      "note_hash": "2f0c3e471ab0052b97a2e21e5e87144181ea66efa403baae9ae1d5db5eb07631",
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained one-hop authority for the Wilson plaquette matching/beta = 2 N_c canonical normalization input, or narrow the claim text to make beta = 6 an explicit local assumption rather than a derived cited-input consequence.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -91634,23 +91617,73 @@
             "total_pass": 55
           },
           "verdict_rationale": "The load-bearing step is an exact algebraic identity over the retained-bounded CL3 normalization input plus the note's explicitly scoped Wilson matching/beta surface. The runner source does compute the Gell-Mann trace Gram, verifies the plaquette small-a coefficient numerically, and uses exact Fraction arithmetic for the decisive g_bare^2=1 substitution; it does not merely print the final value. The broader absolute derivation of CN or of the Wilson action form is expressly excluded from the claim scope, so those exclusions do not block this bounded theorem."
+        },
+        {
+          "archived_at": "2026-05-23T17:35:45.522065+00:00",
+          "archived_for_note_hash": "ea9dc4515b3d707874a7ca77bc64f7f215d45511baca83a962642dc931e6e3da",
+          "audit_date": "2026-05-23T16:01:38.468806+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+            },
+            "dep_claim_type": {
+              "cl3_color_automorphism_theorem": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_color_automorphism_theorem": "retained"
+            },
+            "deps": [
+              "cl3_color_automorphism_theorem"
+            ],
+            "load_bearing_score": 11.974,
+            "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+            "transitive_descendants": 1005
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T160115Z-1514fac8-g_bare_constraint_vs_con-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic substitution closes, but beta = 6 as a canonical-normalization-forced input is not supplied by the cited retained authority; the Wilson action form and beta-pinning remain admitted premises in the packet.",
+          "claim_scope": "Conditional local algebraic result: given the canonical Cl(3) trace normalization, Wilson plaquette matching beta = 2 N_c / g_bare^2, N_c = 3, and beta = 6, g_bare = 1 is fixed relative to that normalization rather than being a second independent convention.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-23T16:01:38.468806+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Under canonical normalization (CN) and Wilson matching beta = 2 N_c / g_bare^2, at N_c = 3 and beta = 6 the unique compatible value is g_bare^2 = 6/6 = 1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained one-hop authority for the Wilson plaquette matching/beta = 2 N_c canonical normalization input, or narrow the claim text to make beta = 6 an explicit local assumption rather than a derived cited-input consequence.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 51,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 55
+          },
+          "verdict_rationale": "The runner verifies the stated algebra and the CN rescaling check, but it also treats the canonical Wilson beta = 2 N_c = 6 and the Wilson plaquette action form as inputs rather than deriving them from the single cited authority. The cited CL3 authority carries the Gell-Mann trace normalization and N_c = 3 algebraically, but it does not close the Wilson matching or beta-pinning premise needed for the theorem's conclusion. Therefore the narrowed relative statement is plausible as algebra over admitted premises, but the restricted one-hop packet does not close the full cited-input chain."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "relabel_date": "2026-05-06T17:45:26.976865+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 51,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 55
+        "total_pass": 0
       },
-      "runner_path": "scripts/frontier_g_bare_derivation.py",
+      "runner_path": "scripts/frontier_g_bare_constraint_surface_check.py",
       "title": "g_bare Constraint vs Convention Disambiguation Theorem",
       "transitive_descendants": 1002,
-      "verdict_rationale": "The runner verifies the stated algebra and the CN rescaling check, but it also treats the canonical Wilson beta = 2 N_c = 6 and the Wilson plaquette action form as inputs rather than deriving them from the single cited authority. The cited CL3 authority carries the Gell-Mann trace normalization and N_c = 3 algebraically, but it does not close the Wilson matching or beta-pinning premise needed for the theorem's conclusion. Therefore the narrowed relative statement is plausible as algebra over admitted premises, but the restricted one-hop packet does not close the full cited-input chain."
+      "verdict_rationale": null
     },
     "g_bare_derivation_note": {
       "audit_date": null,
@@ -92435,13 +92468,13 @@
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
-      "direct_in_degree": 10,
+      "direct_in_degree": 11,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 14.983,
+      "load_bearing_score": 15.484,
       "load_bearing_step": "Given Tr(T_a T_b)=delta_ab/2 and beta=2N_c/g_bare^2, rescaling T_a -> c T_a gives Tr((cT_a)(cT_b))=c^2 delta_ab/2 and beta_new=c^2 beta_old while g_bare is unchanged.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -92699,7 +92732,7 @@
       },
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Rescaling-Freedom Removal Theorem (Cl(3) Canonical Normalization)",
-      "transitive_descendants": 1011,
+      "transitive_descendants": 1012,
       "verdict_rationale": "The load-bearing calculation is an algebraic identity over the retained canonical generator normalization plus the stated Wilson matching surface. The runner\u2019s Section D actually constructs scaled generators, recomputes the Gram matrix, and verifies beta_new=c^2 beta_old for several c values; it does not import an external comparator or tune a numerical input for this claim. The source note explicitly does not claim that the canonical normalization or Wilson action form is uniquely forced, so the audited scope remains narrow and closes."
     },
     "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17": {
@@ -289898,8 +289931,8 @@
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
     "preserved_existing": 2333,
-    "re_audit_required": 0,
+    "re_audit_required": 1,
     "row_count": 2378,
-    "seeded_new": 1
+    "seeded_new": 0
   }
 }

@@ -7973,12 +7973,12 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 22,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_g_bare_derivation.py"
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_g_bare_constraint_surface_check.py"
     },
     "g_bare_derivation_note": {
       "assert_count": 0,
@@ -36623,6 +36623,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_g_bare_constraint_surface_check.py": {
+      "assert_count": 0,
+      "claims": [
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -36656,7 +36671,6 @@
     "scripts/frontier_g_bare_derivation.py": {
       "assert_count": 0,
       "claims": [
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
         "g_bare_derivation_note",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
@@ -53898,15 +53912,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 310,
+    "decoration_candidates": 311,
     "dominant_class_distribution": {
       "A": 202,
-      "B": 267,
+      "B": 268,
       "C": 735,
       "D": 295,
       "none": 433
     },
-    "runners_classified": 1932,
+    "runners_classified": 1933,
     "runners_with_C": 951,
     "runners_with_D": 548
   }

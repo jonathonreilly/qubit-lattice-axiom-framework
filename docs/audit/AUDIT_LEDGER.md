@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 636 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 637 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
@@ -118,7 +118,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -190,6 +189,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2178,6 +2178,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
+- **auditor confidence:** high
+
+### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T015248Z-18603752-circulant_parity_cp_tens-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Using S_{01}=1 and (S^2)_{01}=0 gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2 c_even c_odd; similarly P_{23}SP_{23}=S^2 gives the parity split.  _(class `A`)_
+- **chain closes:** True — The claim closes from the explicit matrix definitions in the note. No cited authorities, external comparators, physical bridge premises, or hidden numerical inputs are needed.
+- **rationale:** The proof is an exact algebraic calculation over explicitly defined 3x3 matrices. The runner source constructs S, P_{23}, K symbolically in SymPy and verifies the stated identities directly; it does not import helper modules or hard-code the contested result as an input. Although the runner labels its passes as class C, substantively these checks are class A algebraic identity checks, which are sufficient here because there are no upstream dependencies.
 - **auditor confidence:** high
 
 ### `circulant_response_master_identity_narrow_theorem_note_2026-05-02`

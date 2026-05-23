@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1277 |
+| unaudited | 1276 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
-| ~~audited_conditional~~ | 115 |
+| ~~audited_conditional~~ | 116 |
 | ~~audited_failed~~ | 18 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 646 |
-| `audited_conditional` | 115 |
+| `audited_conditional` | 116 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1503 |
+| `unaudited` | 1502 |
 
 | claim_type | count |
 |---|---:|
@@ -867,6 +867,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11885,6 +11886,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The unique normalized trace on M_{n_1 n_2}(C) satisfies Tr_{n_1 n_2}(A ⊗ B)/(n_1 n_2) = (Tr_{n_1} A/n_1)(Tr_{n_2} B/n_2), so the combined tracial state factorizes on simple tensors.  _(class `A`)_
 - **chain closes:** True — A1+A2 supply finite-region algebras as finite tensor products of M_2(C), hence simple matrix algebras. The finite-dimensional trace identity and uniqueness of the normalized trace on M_n(C) give the stated factorization without needing a runner.
 - **rationale:** The load-bearing step is an elementary finite-dimensional matrix-trace identity plus trace uniqueness on full matrix algebras, applied directly to the axiom-supplied qubit finite-region algebras. The only cited authority is the A1+A2 axiom node, explicitly flagged as axiom_premise, so it does not trigger the not-retained downgrade. The claim is narrow: it does not assert factorization for arbitrary C*-algebras or promote downstream pre-record-state identifications.
+- **auditor confidence:** high
+
+### `topological_instanton_textbook_infrastructure_import_note_2026-05-17`
+
+- **Note:** [`TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md`](../../docs/TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded named-import wrapper for four external Yang-Mills topological-instanton textbook results, not independent derivations of those results.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T195705Z-6af4db4e-topological_instanton_te-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The wrapper documents four textbook Yang-Mills/gauge-topology results as named non-derivation imports for downstream notes.  _(class `E`)_
+- **chain closes:** False — The note explicitly imports four external textbook results, but the restricted packet provides no upstream cited authorities in full and no derivation from an accepted axiom. The missing step is verification of the Bogomolny/BPST, Atiyah-Singer, Luescher/flow, and twisted-T4 fractional-charge statements from retained upstream authorities.
+- **rationale:** The note is candidly a named non-derivation import wrapper, so the load-bearing step is definitional/import bookkeeping rather than a first-principles derivation. Because the restricted packet contains no full upstream authorities despite the physics content depending on external textbook/literature claims, the chain does not close from provided inputs. This is not a compute issue; it is a missing authority/import-closure issue.
+- **open / conditional deps cited:**
+  - `TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `triage_no_promotion_note`

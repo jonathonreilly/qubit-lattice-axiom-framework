@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 214,
-    "leaf": 335,
+    "leaf": 334,
     "medium": 336
   },
   "cycle_break_target_count": 30,
@@ -27443,32 +27443,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "mesoscopic_surrogate_localization_sweep_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37024,6 +36998,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 12,
-  "total_pending": 1292
+  "ready_count": 11,
+  "total_pending": 1291
 }

@@ -705,7 +705,7 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "audit_in_progress",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "retained_bounded",
       "allowed_context_paths": [
@@ -748,7 +748,7 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "audit_in_progress",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "retained_bounded",
       "allowed_context_paths": [

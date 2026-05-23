@@ -177,3 +177,10 @@ The current direct universal route is:
   exact discrete global closure
 
 That is the sharpest disciplined statement available on the current atlas.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [universal_gr_isotropic_glue_operator_note](UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md)
+- [universal_gr_discrete_global_closure_note](UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md)

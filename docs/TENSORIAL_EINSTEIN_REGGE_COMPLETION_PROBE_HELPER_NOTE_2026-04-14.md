@@ -68,3 +68,10 @@ Its only function is to provide a citeable one-hop authority for the
 probe families and Einstein-residual computation so downstream notes
 register the import cleanly instead of carrying it as a
 `_frontier_loader` runner import without a wrapper.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [coarse_grained_exterior_law_helper_note_2026-04-14](COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md)
+- [oh_schur_boundary_action_note](OH_SCHUR_BOUNDARY_ACTION_NOTE.md)

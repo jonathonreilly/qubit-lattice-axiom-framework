@@ -17,10 +17,10 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 195 |
+| critical | `unaudited` | 194 |
 | high | `unaudited` | 172 |
 | medium | `unaudited` | 110 |
-| critical | `audited_conditional` | 13 |
+| critical | `audited_conditional` | 14 |
 | high | `audited_conditional` | 5 |
 | high | `audited_numerical_match` | 3 |
 | critical | `audited_numerical_match` | 2 |
@@ -98,7 +98,7 @@ publication tables phrase it.
 | critical | `dm_z3_texture_factor_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `down_type_mass_ratio_ckm_dual_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |
 | critical | `emergent_lorentz_invariance_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `g_bare_rigidity_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
+| critical | `g_bare_rigidity_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `g_bare_structural_normalization_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | critical | `g_bare_two_ward_closure_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |

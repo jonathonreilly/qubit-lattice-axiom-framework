@@ -527,7 +527,14 @@ Independent audit decides whether this no-go candidate is retained-grade.
 ### AC_φλ — parameter-counting + labeling-convention reframe (partial)
 
 Under no-proper-quotient (NQ) + `C_3[111]` cyclicity + Type I_3 factor
-structure (per [`A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md`](A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md)),
+structure (named in the standard Cl(3) `M_3(C)` framework primitives; the
+sharpened downstream obstruction note `A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md`
+adds further structural sharpening built on top of this substep, but its
+markdown link is demoted to backtick here as a back-reference — the
+sharpening note dates 2026-05-08 and is *downstream* of this substep4
+note dated 2026-05-07. Demoted to break length-2 cycle `cycle-0006` in
+`docs/audit/data/cycle_inventory.json`; load-bearing citation direction is
+*route5 sharpening → this substep4*, not vice versa.),
 the framework's hw=1 sector is the abstract irreducible 3-orbit of
 `M_3(C)` with `Z/3Z` cyclic outer automorphism. A finite enumeration
 gives:

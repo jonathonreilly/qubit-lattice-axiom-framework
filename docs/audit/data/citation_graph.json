@@ -5390,14 +5390,6 @@
     },
     {
       "from": "cosmological_constant_spectral_gap_identity_theorem_note",
-      "to": "cosmology_scale_identification_and_reduction_note"
-    },
-    {
-      "from": "cosmological_constant_spectral_gap_identity_theorem_note",
-      "to": "dark_energy_eos_retained_corollary_theorem_note"
-    },
-    {
-      "from": "cosmological_constant_spectral_gap_identity_theorem_note",
       "to": "confinement_string_tension_note"
     },
     {
@@ -5714,10 +5706,6 @@
     },
     {
       "from": "dark_energy_eos_note",
-      "to": "cosmological_constant_spectral_gap_identity_theorem_note"
-    },
-    {
-      "from": "dark_energy_eos_note",
       "to": "universal_qg_smooth_gravitational_global_solution_class_note"
     },
     {
@@ -5871,10 +5859,6 @@
     {
       "from": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
       "to": "dimensional_gravity_table"
-    },
-    {
-      "from": "dimension_selection_note",
-      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
     },
     {
       "from": "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
@@ -7043,10 +7027,6 @@
     {
       "from": "dm_neutrino_observable_bank_exhaustion_theorem_note_2026-04-17",
       "to": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16"
-    },
-    {
-      "from": "dm_neutrino_observable_bank_exhaustion_theorem_note_2026-04-17",
-      "to": "dm_neutrino_transport_chamber_blindness_theorem_note_2026-04-17"
     },
     {
       "from": "dm_neutrino_observable_bank_exhaustion_theorem_note_2026-04-17",
@@ -9215,10 +9195,6 @@
     {
       "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "to": "anomaly_forces_time_admission_iii_note_2026-05-17"
-    },
-    {
-      "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
-      "to": "dt1_time_dimension_proof_walk_note_2026-05-17"
     },
     {
       "from": "dt1_time_dimension_proof_walk_note_2026-05-17",
@@ -15333,10 +15309,6 @@
       "to": "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25"
     },
     {
-      "from": "koide_q_delta_linking_relation_theorem_note_2026-04-20",
-      "to": "koide_circulant_character_derivation_note_2026-04-18"
-    },
-    {
       "from": "koide_q_delta_readout_retention_split_no_go_note_2026-04-24",
       "to": "observable_principle_from_axiom_note"
     },
@@ -16179,10 +16151,6 @@
     {
       "from": "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20",
       "to": "koide_berry_bundle_obstruction_theorem_note_2026-04-19"
-    },
-    {
-      "from": "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20",
-      "to": "koide_circulant_character_derivation_note_2026-04-18"
     },
     {
       "from": "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20",
@@ -18757,10 +18725,6 @@
       "to": "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
     },
     {
-      "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-      "to": "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
-    },
-    {
       "from": "nn_lattice_rescaled_c_arm_nlo_saddle_note_2026-05-10",
       "to": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
     },
@@ -18795,10 +18759,6 @@
     {
       "from": "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
       "to": "nn_lattice_rescaled_continuum_identification_note_2026-05-10"
-    },
-    {
-      "from": "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
-      "to": "nn_lattice_rescaled_c2_derivation_note_2026-05-10"
     },
     {
       "from": "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10",
@@ -18867,10 +18827,6 @@
     {
       "from": "n_eff_from_three_generations_theorem_note_2026-04-24",
       "to": "bminusl_anomaly_freedom_theorem_note_2026-04-24"
-    },
-    {
-      "from": "n_eff_from_three_generations_theorem_note_2026-04-24",
-      "to": "neutrino_mass_derived_note"
     },
     {
       "from": "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
@@ -23837,10 +23793,6 @@
       "to": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
     },
     {
-      "from": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
-      "to": "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5"
-    },
-    {
       "from": "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
       "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
     },
@@ -24989,18 +24941,6 @@
       "to": "minimal_axioms"
     },
     {
-      "from": "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
-      "to": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
-      "to": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
-      "to": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16"
-    },
-    {
       "from": "translation_abelian_composition_theorem_note_2026-05-02",
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
@@ -25215,10 +25155,6 @@
     {
       "from": "universal_gr_a1_invariant_section_note",
       "to": "universal_gr_tensor_quotient_uniqueness_note"
-    },
-    {
-      "from": "universal_gr_a1_invariant_section_note",
-      "to": "universal_gr_curvature_localization_blocker_note"
     },
     {
       "from": "universal_gr_a1_invariant_section_note",
@@ -26137,10 +26073,6 @@
       "to": "wave_3plus1d_promotions_note"
     },
     {
-      "from": "wave_direct_dm_h025_fam1_seed0_control_note",
-      "to": "wave_direct_dm_h025_high_band_boundary_note"
-    },
-    {
       "from": "wave_direct_dm_h025_fam2_seed0_boundary_note",
       "to": "wave_direct_dm_h025_fam2_seed0_control_note"
     },
@@ -26151,10 +26083,6 @@
     {
       "from": "wave_direct_dm_h025_fam2_seed0_control_note",
       "to": "wave_direct_dm_h025_fam2_seed1_control_note"
-    },
-    {
-      "from": "wave_direct_dm_h025_fam2_seed1_control_note",
-      "to": "wave_direct_dm_h025_fam2_two_point_synthesis_note"
     },
     {
       "from": "wave_direct_dm_h025_fam2_seed1_followup_note",
@@ -45740,12 +45668,10 @@
         "universal_qg_canonical_textbook_continuum_gr_closure_note",
         "s3_general_r_derivation_note",
         "s3_cap_uniqueness_note",
-        "cosmology_scale_identification_and_reduction_note",
-        "dark_energy_eos_retained_corollary_theorem_note",
         "confinement_string_tension_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "755ada660d907ee7435a5f13c6f736073d144276ff27ab60f45a00903dd97338",
+      "note_hash": "a3515efe9e6c92810749a77ee55871107e2db07a195c86d9114220e326954693",
       "path": "docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_cosmological_constant_spectral_gap_identity.py",
       "title": "Spectral-Gap Cosmological-Constant Identity Theorem"
@@ -46191,12 +46117,11 @@
       "claim_type_author_hint_raw": "decoration",
       "claim_type_seed_hint": "decoration",
       "deps": [
-        "cosmological_constant_spectral_gap_identity_theorem_note",
         "universal_qg_smooth_gravitational_global_solution_class_note",
         "universal_gr_discrete_global_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "79097303bdeee5eb05927a7cc39253ab4748b2ec5715e753550c8223808b3fd7",
+      "note_hash": "620730b42765201132b5af2d1b10265dbec26a3efe0dcb088c68e5cda77a2d6a",
       "path": "docs/DARK_ENERGY_EOS_NOTE.md",
       "runner_path": "scripts/frontier_dark_energy_eos.py",
       "title": "Decoration: Numerical / Lattice / Evolution-Model Companion to the Retained Dark-Energy EOS Corollary"
@@ -46427,11 +46352,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [
-        "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1f14511ba567c1be5239e93b716682fedbcdfcdc41483ac95793ac0aeb561b25",
+      "note_hash": "31133faae3905b03d27efc52392fcb8689f2eb9b7fafc175e0d1aca19a49ca8d",
       "path": "docs/DIMENSION_SELECTION_NOTE.md",
       "runner_path": "scripts/frontier_dimension_selection.py",
       "title": "Dimension Selection: Does Self-Consistency Require d = 3?"
@@ -48721,7 +48644,6 @@
         "g_bare_derivation_note",
         "omega_lambda_derivation_note",
         "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
-        "dm_neutrino_transport_chamber_blindness_theorem_note_2026-04-17",
         "dm_neutrino_source_surface_parity_mixing_selection_obstruction_note_2026-04-17"
       ],
       "helper_runner_paths": [
@@ -48737,7 +48659,7 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "note_hash": "90a4c8106f495f17f8264e9822c42525860feb88e2720aa9b5c063402a9d099b",
+      "note_hash": "5007b506a90a71b0858c1ff4051eb7e211449c996125bcb3864ce736f8cccd90",
       "path": "docs/DM_NEUTRINO_OBSERVABLE_BANK_EXHAUSTION_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_dm_neutrino_observable_bank_exhaustion_theorem.py",
       "title": "Observable-Bank Exhaustion \u2014 Atlas Exhaustion Theorem (Obstruction + New-Gap)"
@@ -52319,11 +52241,10 @@
         "anomaly_forces_time_fb_note_2026-05-17",
         "native_gauge_closure_note",
         "lh_anomaly_trace_catalog_theorem_note_2026-04-25",
-        "anomaly_forces_time_admission_iii_note_2026-05-17",
-        "dt1_time_dimension_proof_walk_note_2026-05-17"
+        "anomaly_forces_time_admission_iii_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e73ff187c6c48d1e29fa78afb9d3da29963729394654cc9f1b99f253ebfe4933",
+      "note_hash": "903a3e7a7f50a2a901d2c363fc4c0cb18a7da8cb4527dcdab8d3ef3b090b7319",
       "path": "docs/DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md",
       "runner_path": "scripts/frontier_dt1_time_dimension_proof_walk_lattice_independence.py",
       "title": "Time-Dimension d_t = 1 Proof-Walk Lattice-Independence Bounded Note"
@@ -60416,11 +60337,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "koide_circulant_character_derivation_note_2026-04-18"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "15a74cb40f6ad2138a1e53cc60fff5b91547991dc32c117ac254cd16f8930497",
+      "note_hash": "eea658b2be3f0a453b00e79aa339828f799b8f284be4f26859bdc8ea3d5afb51",
       "path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_koide_q_delta_linking_relation.py",
       "title": "Koide `Q` \u2194 `\u03b4` Linking Relation: Partial Closure and Named Residual Postulate"
@@ -61387,13 +61306,12 @@
         "koide_q_delta_linking_relation_theorem_note_2026-04-20",
         "koide_berry_phase_theorem_note_2026-04-19",
         "koide_berry_bundle_obstruction_theorem_note_2026-04-19",
-        "koide_circulant_character_derivation_note_2026-04-18",
         "koide_cyclic_wilson_descendant_law_note_2026-04-18",
         "koide_circulant_wilson_target_note_2026-04-18",
         "scalar_selector_cycle1_science_review_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "33026458a87687804e6e6a565ad8dd2b197c1510a74768f95b3721f090d9c4c9",
+      "note_hash": "4c6f64474d6b8fd86790d252f3604695e87aa810c2832be7699532223a644a0b",
       "path": "docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_koide_z3_qubit_radian_bridge_no_go.py",
       "title": "Koide Z_3-Qubit Radian-Bridge No-Go Note"
@@ -64304,11 +64222,10 @@
       "deps": [
         "three_generation_structure_note",
         "one_generation_matter_closure_note",
-        "bminusl_anomaly_freedom_theorem_note_2026-04-24",
-        "neutrino_mass_derived_note"
+        "bminusl_anomaly_freedom_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3a666b3d3f9c1de0fe8eabceafda185333745a035141c60ecbcf04fd66bd4d5d",
+      "note_hash": "c51473604b19dde24f0a64cdf09dc3e6f0ff4518f9f9afb9cbe1ee3d6a31f629",
       "path": "docs/N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_n_eff_from_three_generations.py",
       "title": "N_eff From Retained Three Generations"
@@ -65843,11 +65760,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lattice_nn_deterministic_rescale_note",
-        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
+        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e529e541262a075778f20175406b938b623f688381c06af868d5d87e75023917",
+      "note_hash": "27512017e7d5845baf6238c3694e8d9fc3f4ad1e7924c6253a00123d7edeb1db",
       "path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note"
@@ -65920,11 +65836,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
-        "nn_lattice_rescaled_continuum_identification_note_2026-05-10",
-        "nn_lattice_rescaled_c2_derivation_note_2026-05-10"
+        "nn_lattice_rescaled_continuum_identification_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9d229e8fb126416456b542a06505acbd2a364e66b28fd8de7363086871a7699a",
+      "note_hash": "72c7d30ee73f6ac152de10a735354298afc9c2f80b467f6d8db326e04d639d1c",
       "path": "docs/NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md",
       "runner_path": "scripts/lattice_nn_rescaled_full_kernel_identification.py",
       "title": "NN Lattice Rescaled-Lane Full Kernel Identification A(y_s -> y_d)"
@@ -76360,11 +76275,10 @@
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "staggered_dirac_realization_gate_note_2026-05-03",
         "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
-        "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5"
+        "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7b3cf9016a13589a54bf76ac8f5c37ffa4a7d6754aea33ba2a3ddb8e1156f257",
+      "note_hash": "d4cb5e323b47ccba769857c56ebc30bceee0f217812737c91950493b6755b2f1",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
       "runner_path": "scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py",
       "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)"
@@ -78754,13 +78668,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-        "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-        "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a7ab1314ff36ce6c884acb322c331f152608149b61ea1135a29fe33c89a8f90e",
+      "note_hash": "26e553dbcc9bcd6a478b19af57103c3021581affdf971674515448f99f4f051d",
       "path": "docs/TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Topological-Instanton Infrastructure \u2014 Named Non-Derivation Imports"
@@ -79033,11 +78943,10 @@
         "s3_anomaly_spacetime_lift_note",
         "universal_gr_tensor_variational_candidate_note",
         "universal_gr_tensor_quotient_uniqueness_note",
-        "universal_gr_curvature_localization_blocker_note",
         "universal_gr_polarization_frame_bundle_blocker_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a7e301b58e56d99c6ce0967d62b8792639a8f6198beb80dea4c330db09a6753c",
+      "note_hash": "95901bc27dfdd3b6aa569e58c17cbad260d56a448e97bcbca8c30beb1e5f2a12",
       "path": "docs/UNIVERSAL_GR_A1_INVARIANT_SECTION_NOTE.md",
       "runner_path": "scripts/frontier_universal_gr_a1_invariant_section.py",
       "title": "Universal GR A1 Invariant Section on `PL S^3 x R`"
@@ -80252,14 +80161,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "wave_direct_dm_h025_high_band_boundary_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "0d10e1df0bcb9b717500470d2c4bd5b4216d5c732d23d57f68017804e8311cca",
+      "note_hash": "2929ca26e873b96632c21f73f0d2de4aa7b0abfaa1b8a03f7046692f7def1cf7",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam1 Seed0 Control Note"
@@ -80356,14 +80263,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "3e4e1bde85873994cc80d38608a29b921f5f366794dac7111fad5cd2364960cb",
+      "note_hash": "bafb115dea1181af532de9669f501808175b022ecb996a43d1b79216dfbd02a5",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed1 Control Note"
@@ -83683,6 +83588,7 @@
     "decoherence_decision_note",
     "decoherence_failure_analysis",
     "dense_prune_guard_seed_note",
+    "dimension_selection_note",
     "dimensional_gravity_table",
     "dirac_core_card_note",
     "dirac_decoherence_probe_note",
@@ -83906,6 +83812,7 @@
     "koide_q23_oh_covariance_nogo_note_2026-04-22",
     "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25_note_2026-05-17",
     "koide_q_bridge_single_primitive_note_2026-04-22",
+    "koide_q_delta_linking_relation_theorem_note_2026-04-20",
     "koide_q_delta_linking_relation_theorem_note_2026-04-20_note_2026-05-17",
     "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
     "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
@@ -84215,6 +84122,7 @@
     "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
     "three_generation_observable_count_corollary_note_2026-05-03",
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+    "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
     "triple_stack_collapse_scaling_note",
     "two_field_retarded_family_closure_note_2026-04-10",
     "two_field_retarded_probe_note_2026-04-10",
@@ -84242,10 +84150,12 @@
     "wave_3plus1d_promotions_note",
     "wave_amplification_near_horizon_note",
     "wave_direct_dm_family_scout_note",
+    "wave_direct_dm_h025_fam1_seed0_control_note",
     "wave_direct_dm_h025_fam1_seed0_control_note_2026-05-17",
     "wave_direct_dm_h025_fam1_seed1_control_note",
     "wave_direct_dm_h025_fam1_seed1_control_note_2026-05-17",
     "wave_direct_dm_h025_fam2_seed0_boundary_note_2026-05-17",
+    "wave_direct_dm_h025_fam2_seed1_control_note",
     "wave_direct_dm_h025_fam2_seed1_followup_note_2026-05-17",
     "wave_equation_gravity_note",
     "wave_equation_self_field_note",
@@ -84317,10 +84227,10 @@
       "open_gate": 124,
       "positive_theorem": 609
     },
-    "edge_count": 9664,
-    "leaf_count": 764,
+    "edge_count": 9646,
+    "leaf_count": 767,
     "node_count": 2491,
-    "root_count": 820,
+    "root_count": 825,
     "runners_with_path": 2052
   }
 }

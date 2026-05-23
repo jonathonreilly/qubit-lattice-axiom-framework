@@ -14,7 +14,8 @@ admit them on citation, the framework proves them inline at framework rigor
 (e.g. the UHF tracial-uniqueness density argument in
 POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE..., and the explicit Naimark
 isometry construction in LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME...), so
-they reach retained-grade through the normal audit path and need no carve-out.
+they must earn retained-grade through the normal audit path and need no
+carve-out.
 
 Every consumer that asks "is this dep satisfied as upstream?" — the LLM
 prompt renderer, compute_effective_status, audit_lint, and

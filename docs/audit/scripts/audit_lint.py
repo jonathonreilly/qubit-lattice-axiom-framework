@@ -632,9 +632,10 @@ def main() -> int:
     # Effective-status propagation sanity. A retained-grade row's deps must
     # themselves be retained-grade. Open gates and retained_pending_chain are
     # explicit blockers, not support for downstream theorem retention.
-    # Accepted premises (canonical axiom node; allowlisted external textbook
-    # imports) are exempt: they satisfy chain closure without being retained-
-    # grade themselves. Must stay in sync with compute_effective_status.py's
+    # Accepted premises are axiom-only. The canonical axiom node is exempt
+    # because it satisfies chain closure without being retained-grade itself.
+    # Textbook results must flow through ordinary retained-grade rows, not this
+    # carve-out. Must stay in sync with compute_effective_status.py's
     # clean_status (both go through premise_nodes).
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:

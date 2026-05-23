@@ -3,22 +3,22 @@
 **Date:** 2026-05-20
 **Type:** positive_theorem candidate (narrow theorem)
 **Status:** source-side proposal — independent audit lane owns the verdict
-**Purpose:** Apply the standard UHF tracial-state uniqueness result
-(Dixmier; Glimm 1960; Powers 1967) to the qubit-lattice quasi-local
-C*-algebra `⊗_{x ∈ Z^3} M_2(ℂ)` (UHF type `2^∞`) as a
-framework-internal narrow theorem. Same pattern as the
-`GLEASON_ON_QUBIT_LATTICE_*` and `KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_*`
-companions: standard math applied to the framework's specific
-operator structure.
+**Purpose:** Prove the type-`2^∞` tracial-uniqueness instance needed
+by the qubit-lattice quasi-local C*-algebra `⊗_{x ∈ Z^3} M_2(ℂ)`:
+finite-region trace uniqueness fixes every local algebra, and
+norm-continuity extends equality from the dense local subalgebra to
+the quasi-local closure. Glimm/Powers/Bratteli–Robinson remain
+provenance for the standard general theorem, not load-bearing imports
+for this narrow proof.
 
 ## Honest scope
 
-This note **does not re-prove the UHF tracial uniqueness theorem
-from scratch.** It applies the standard finite-dim → UHF inductive
-construction (Glimm 1960; Powers 1967; Dixmier 1981) to the
-framework's specific UHF type-`2^∞` algebra, the qubit-lattice
-quasi-local algebra. Standard operator-algebra mathematics applied
-to the framework's substrate.
+This note **does not re-prove the general UHF tracial uniqueness
+theorem for arbitrary supernatural type.** It proves the specific
+type-`2^∞` instance needed here by combining finite-dimensional trace
+uniqueness, the directed finite-region construction, density of the
+local subalgebra, and norm-continuity of states. Standard
+operator-algebra mathematics is used at this elementary floor.
 
 If audit-retained, this gives downstream notes such as
 `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20` a
@@ -51,8 +51,8 @@ with the explicit finite-region form
 τ_Λ(O) = Tr_{A_Λ}(O) / 2^|Λ|   for O ∈ A_Λ                              (3)
 ```
 
-This is the **standard UHF tracial-state uniqueness theorem**
-applied to the qubit-lattice substrate. The unique tracial state
+This is the type-`2^∞` UHF tracial-state uniqueness statement needed
+on the qubit-lattice substrate. The unique tracial state
 corresponds to the density matrix `ρ_ref = ⊗_x I_2 / 2` of the
 downstream tracial-state derivation note.
 
@@ -198,25 +198,27 @@ mathematical languages: abstract C*-state vs density-matrix.
 - **Promotion of the tracial-state row** — the auditor still owns the
   verdict; this PR only supplies a candidate upstream support row.
 
-## Admitted inputs
+## Standard-math floor
 
 1. **Dixmier 1981 finite-dim simple C*-algebra trace uniqueness** —
-   standard finite-dim algebra (*Les algèbres d'opérateurs dans l'espace
-   hilbertien*).
-2. **Glimm 1960 / Powers 1967 UHF tracial uniqueness theorem** —
-   standard UHF C*-algebra content (*Trans. AMS* 95, 318; *Ann. Math.*
-   86, 138). Cited as named non-derivation; the framework's
-   contribution is the application to type-`2^∞`.
-3. **Bratteli–Robinson 1979/1981 inductive-limit construction** for
-   C*-algebras — standard math.
+   standard finite-dim algebra; the matrix-unit argument is repeated
+   in Step 1.
+2. **Directed finite-region / inductive-limit construction** of the
+   quasi-local C*-algebra and density of the local subalgebra —
+   standard C*-algebra setup for the lattice algebra.
+3. **State continuity:** a state on a unital C*-algebra has
+   `‖φ‖ = φ(𝟙) = 1`, hence is norm-continuous.
+
+Glimm 1960, Powers 1967, Dixmier, and Bratteli–Robinson are provenance
+citations for the broader standard theorem and background machinery.
+They are not used here as a named retained-grade import for the
+unique-trace step.
 
 ## Risk classification
 
-`positive_theorem` candidate at narrow-theorem granularity. Standard
-UHF tracial uniqueness applied to the framework's specific
-quasi-local algebra. The narrow contribution is the explicit
-application to the qubit-lattice type-`2^∞` structure plus the
-verification that the standard theorem's hypotheses hold there.
+`positive_theorem` candidate at narrow-theorem granularity. The narrow
+contribution is the explicit type-`2^∞` density/continuity proof on
+the framework's qubit-lattice quasi-local algebra.
 
 Granularity matches retained narrow theorems (positive_theorem,
 retained) that apply standard math to the framework's specific

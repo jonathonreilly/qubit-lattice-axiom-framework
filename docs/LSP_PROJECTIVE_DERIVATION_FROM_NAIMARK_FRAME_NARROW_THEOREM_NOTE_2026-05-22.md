@@ -13,7 +13,7 @@ The 2026-05-22 LSP-projective ratification (PR #1661 / commit `886ce7e`) added `
 
 This note **does not**:
 - Add a new framework rule
-- Re-derive Naimark's dilation theorem from scratch (cited as standard)
+- Re-derive the general Naimark/Stinespring dilation theorem for all POVMs
 - Address non-projective POVM instruments (still deferred, separate lane)
 - Resolve Gudder-style sequential-product non-uniqueness on the abstract effect algebra (the literature counterexamples remain mathematically valid and are outside this note's uniqueness scope)
 
@@ -174,7 +174,7 @@ The same `K_P = P` selection, now stated as a **canonical-frame choice in the Na
 
 ## Citation-graph note
 
-This is a bounded_theorem candidate at narrow-theorem granularity. Standard measurement theory (Naimark + Stinespring) applied to the framework's specific qubit-lattice substrate to identify the canonical projective-instrument frame.
+This is a bounded_theorem candidate at narrow-theorem granularity. The projective-measurement case is constructed explicitly on the framework's finite qubit-region Hilbert space; Naimark/Stinespring remain provenance for the broader measurement-theory background.
 
 Plain-text pointer references (NOT load-bearing deps):
 
@@ -184,7 +184,7 @@ Plain-text pointer references (NOT load-bearing deps):
 ## What this file is not
 
 - Not a new framework rule
-- Not a re-derivation of Naimark / Stinespring (cited as standard)
+- Not a re-derivation of general Naimark / Stinespring theory
 - Not a refutation of Gudder counterexamples (they exist mathematically; this note only identifies the canonical Lüders/Naimark construction)
 - Not a promotion of any downstream row (auditor-owned)
 - Not a numerical-prediction change

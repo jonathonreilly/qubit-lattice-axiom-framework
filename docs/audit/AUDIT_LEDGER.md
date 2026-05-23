@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1290 |
+| unaudited | 1289 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 17 |
@@ -38,6 +38,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
+| `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | 1 |
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
@@ -48,16 +49,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 641 |
 | `audited_conditional` | 97 |
-| `audited_decoration` | 28 |
+| `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1515 |
+| `unaudited` | 1514 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1024 |
-| `decoration` | 29 |
+| `bounded_theorem` | 1023 |
+| `decoration` | 30 |
 | `meta` | 229 |
 | `no_go` | 239 |
 | `open_gate` | 112 |
@@ -874,6 +875,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `multisite_pauli_group_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` |
+| `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10` |
@@ -8455,6 +8457,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The note asserts that the record-amplitude map K_r: |ψ⟩ → A_r |φ_r⟩ is linear in |ψ⟩ and therefore extends to a bounded operator satisfying the Kraus completeness relation Σ_r K_r†K_r = I_sys.  _(class `E`)_
 - **chain closes:** False — The cited persistent-record pilot supplies a mesoscopic overlap kernel and bounded numerical behavior, but it does not construct a linear system-to-system record instrument, an isometry/dilation, orthogonal outcome readout, or the normalization identity needed for Σ_r K_r†K_r = I_sys. The key Kraus operators are introduced by assertion/definition rather than derived from the cited record process.
 - **rationale:** The chain reduces to naming a record-conditional amplitude map as K_r and then invoking standard Kraus consequences once that structure is assumed. The upstream overlap-kernel note is retained_bounded, but it is only a bounded pilot for mesoscopic record overlap and does not provide the load-bearing operator construction or completeness proof. No runner is supplied, and the note text alone does not close the bridge from soft record overlap to a valid exhaustive quantum instrument.
+- **auditor confidence:** high
+
+### `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given a finite-region qubit-lattice Kraus family satisfying Σ_r K_r†K_r = 𝟙, the stacked block-column map V: H_sys -> H_sys ⊗ H_record is an isometry.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125152Z-e58b3a0c-persistent_record_instru-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For V formed by stacking the Kraus operators, V†V = Σ_r K_r†K_r = 𝟙_sys by direct block-matrix multiplication.  _(class `A`)_
+- **chain closes:** True — The algebraic computation is correct: stacking the K_r as row blocks makes V†V exactly the sum of K_r†K_r. The required resolution-of-identity input is supplied by the retained Kraus-Choi authority, with the axiom node only supplying the accepted finite qubit-lattice substrate.
+- **rationale:** The source note’s substantive step is a standard finite-dimensional block-matrix identity applied to the retained Kraus-family input. The runner source genuinely constructs matrices and verifies the identity across examples, but those checks are all algebraic sanity checks rather than first-principles framework computation. There are no external comparator checks and the chain reduces to the single Kraus-Choi parent plus standard matrix algebra, so the decoration tie-breaker applies rather than audited_clean.
+- **decoration parent:** `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`
 - **auditor confidence:** high
 
 ### `persistent_record_matched_compare_note`

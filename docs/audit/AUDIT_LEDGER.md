@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 383 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1287 |
+| unaudited | 1286 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 105 |
+| ~~audited_conditional~~ | 106 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 636 |
-| `audited_conditional` | 105 |
+| `audited_conditional` | 106 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1511 |
+| `unaudited` | 1510 |
 
 | claim_type | count |
 |---|---:|
@@ -811,6 +811,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `left_handed_charge_matching_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7283,6 +7284,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6).  _(class `C`)_
 - **chain closes:** True — The Planck spacing and standard finite-difference kinetic operator are explicit hypotheses of the bounded scope, not hidden dependencies. Under those hypotheses, the Taylor expansion fixes the a^2/12 coefficient and the cubic p_i^4 anisotropy, and the cached runner uses the corrected (4/a^2) normalization and reproduces the quoted Planck-scale ratios.
 - **rationale:** The second audit is right to phrase the result as conditional on a Planck-spaced Z^3 lattice and the standard nearest-neighbor finite-difference operator, but those conditions are already inside the audited bounded theorem scope and do not by themselves force audited_conditional. The clean verdict applies only to the scoped dispersion correction and arithmetic comparisons to the quoted bounds; broader note language about full sector-specific SME maps, taste-breaking phenomenology, or all-current experimental status is not ratified here.
+- **auditor confidence:** high
+
+### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** In the explicitly chosen canonical Naimark/Lueders dilation for a finite-region projective measurement, the outcome-r Kraus operator is P_r, while U P_r twists represent distinct instruments unless later effects are frame-rotated.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T000947Z-4d3c800e-lsp_projective_derivatio-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the canonical dilation U_int |psi> |0> = sum_r (P_r |psi>) |r> into K_r = <r| U_int (I_sys otimes |0>) gives K_r = P_r.  _(class `A`)_
+- **chain closes:** False — The algebraic substitution itself is correct, but the restricted packet does not supply retained-grade support for the imported canonical Naimark/Lueders construction; it is introduced as standard measurement theory rather than derived from the cited authority. The only provided upstream authority is meta and itself describes K_P = P as a framework-rule selection, not a theorem from A1+A2.
+- **rationale:** The load-bearing calculation is a valid algebraic identity once the canonical dilation formula and Kraus extraction formula are granted. However, those measurement-theory inputs are imported as standard textbook content and are not provided as retained-grade upstream authorities in the restricted packet. The supplied cited authority has effective_status meta and explicitly says the LSP-projective clause is a framework-rule selection, so it cannot by itself promote this note to clean theorem status.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `luders_rule_from_composition_consistency_note_2026-05-20`

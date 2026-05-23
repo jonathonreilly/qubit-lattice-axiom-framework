@@ -42233,15 +42233,15 @@
     },
     "born_rule_analysis_2026-04-11": {
       "claim_id": "born_rule_analysis_2026-04-11",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (interpretive conditional reading; the",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "2499b346c475a1b78b9e7d508011dea584137563290d4674a9912d2d18f5263b",
+      "note_hash": "255a0574d1cd61b28b932ed271086965a5f1ee3c8c7ccb6ed8dc9598bb1865cf",
       "path": "docs/BORN_RULE_ANALYSIS_2026-04-11.md",
       "runner_path": null,
-      "title": "Born Rule Negative \u2014 What It Teaches"
+      "title": "Born Rule Negative \u2014 Interpretive Conditional Reading"
     },
     "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
       "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
@@ -84273,16 +84273,16 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 523,
       "decoration": 1,
-      "meta": 187,
+      "meta": 188,
       "no_go": 67,
-      "none": 1493,
+      "none": 1492,
       "open_gate": 45,
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 960,
+      "bounded_theorem": 959,
       "decoration": 1,
-      "meta": 187,
+      "meta": 188,
       "no_go": 170,
       "none": 443,
       "open_gate": 123,

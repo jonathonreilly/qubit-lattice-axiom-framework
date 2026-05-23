@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1300 |
-| meta | 225 |
+| meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 101 |
-| ~~audited_failed~~ | 21 |
+| ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,16 +52,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 635 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 65 |
+| `audited_failed` | 64 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1525 |
+| `unaudited` | 1526 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1012 |
+| `bounded_theorem` | 1011 |
 | `decoration` | 31 |
-| `meta` | 228 |
+| `meta` | 229 |
 | `no_go` | 241 |
 | `open_gate` | 111 |
 | `positive_theorem` | 756 |
@@ -894,7 +894,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `born_lane_comparison_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
-| `born_rule_analysis_2026-04-11` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_collapse_strength_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -1682,19 +1681,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The provided runner and helper sources genuinely generate the DAGs, propagate amplitudes, and compute the corrected Sorkin ratio rather than hard-coding the claimed values. However, the cached runner output does not match the note's retained rows, and it does not support the note's specific statement that modular maxima are lower overall.
 - **rationale:** The computational chain is class C in form: the primary runner uses included helper code to construct modular and central-band graphs and compute corrected I3 with -P(empty). But the source note is numerically stale relative to the supplied cache: for example modular N=25 reports mean 3.28e-16 and max 9.99e-16 in the note, while the runner gives mean 4.67e-16 and max 1.44e-15. The reduced claim that both lanes are Born-clean at machine precision is supported, but the exact table and the modular-stability comparison as written do not close from the packet.
 - **auditor confidence:** high
-
-### `born_rule_analysis_2026-04-11`
-
-- **Note:** [`BORN_RULE_ANALYSIS_2026-04-11.md`](../../docs/BORN_RULE_ANALYSIS_2026-04-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded negative claim that Hartree self-consistency/convergence does not select the Born-rule exponent and only ranks α by fixed-point source regularity.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e12e3-d8db-7872-9500-39c494d2b015`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** "The contraction rate depends on the Lipschitz constant of |ψ|^α as a source term" and therefore lower α gives faster Hartree fixed-point convergence than α=2.  _(class `A`)_
-- **chain closes:** False — The note asserts the Banach-contraction/PDE result and the α-ranking but provides no proof, hypotheses, runner, or cited authority establishing the Lipschitz/contraction comparison. The broader measurement-vs-dynamics conclusion also depends on an unproved bridge from this Hartree iteration result to logical independence of gravity and quantum probability.
-- **rationale:** Issue: the load-bearing contraction-rate theorem is stated, not derived, and no one-hop authority or completed runner is supplied. Why this blocks: the negative conclusion that gravity does not select α=2 rests on that unverified fixed-point ranking plus a measurement/dynamics separation that is asserted rather than closed in the restricted packet. Repair target: supply a bounded theorem with explicit Banach-map hypotheses and proof, or a runner/log that computes the contraction ranking under stated norms, and separately scope the measurement-level independence claim. Claim boundary until fixed: this is only an interpretive note about what a prior Hartree convergence test would mean if the stated PDE comparison were established.
-- **auditor confidence:** medium
 
 ### `bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10`
 

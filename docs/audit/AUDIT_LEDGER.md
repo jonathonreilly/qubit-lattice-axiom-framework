@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 135 |
 | **retained_no_go** | 151 |
-| **retained_bounded** | 380 |
+| **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 18 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 640 |
+| `audited_clean` | 641 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1508 |
+| `unaudited` | 1507 |
 
 | claim_type | count |
 |---|---:|
@@ -557,6 +557,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -9042,6 +9043,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Net verdict: design-note records three candidate primitives; none is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.  _(class `A`)_
 - **chain closes:** True — The restricted packet supports the scoped open-gate claim: the note repeatedly disclaims theorem or primitive promotion, treats the three proposals as candidate imports, and states the same net no-closure conclusion in the comparative table, net design conclusion, and honest verdict. No direct ledger dependencies are listed, and the sibling probes are expressly contextual rather than load-bearing dependencies.
 - **rationale:** The audited claim is not that SM LH/RH content has been derived, but that the note honestly records three candidate substrate-side primitives and preserves the open-gate boundary. Within that scope the chain closes: P-LH-1 is conditional on importing NCG algebra/order-one structure, P-LH-2 is identified as circular/minimality-failing, and P-LH-3 is identified as insufficient alone. The runner output is consistent with this scoped status and reports 53 passing structural/procedural checks with no external comparator or numerical tuning.
+- **auditor confidence:** high
+
+### `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-window PRR-local invariance only: the unconstrained Jaynes maximizer on a finite qubit-lattice algebra has one-site marginals I/2 and is invariant under translations preserving the chosen finite-window boundary convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T154705Z-31a6022d-prr_local_derivation_fro-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On a finite translation-covariant window with no further constraints, the Jaynes maximum-entropy state is the normalized trace state rho_ref,Lambda = I_{2^{|Lambda|}} / 2^{|Lambda|}.  _(class `A`)_
+- **chain closes:** True — The cited axiom premise supplies M_2(C) per site on Z^3 and finite-region tensor-product algebras; standard finite-dimensional entropy theory then gives the unique unconstrained maximizer as the normalized trace state. Its one-site marginals and finite-window automorphism invariance follow directly.
+- **rationale:** No runner was provided, so the judgment is from the note text alone. The load-bearing step is a standard finite-dimensional max-entropy closure over the accepted qubit-lattice axiom content, not a definition, renaming, external comparator, or tuned numerical match. The claim is correctly bounded to finite windows and translations preserving the boundary convention; it does not assert infinite-volume uniqueness or full-state determination beyond that scope.
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

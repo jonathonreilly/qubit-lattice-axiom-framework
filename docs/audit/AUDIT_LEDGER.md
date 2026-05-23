@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 127 |
 | **retained_no_go** | 151 |
-| **retained_bounded** | 388 |
+| **retained_bounded** | 389 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
 | unaudited | 1284 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,8 +47,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 644 |
-| `audited_conditional` | 97 |
+| `audited_clean` | 645 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
@@ -459,6 +459,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -816,7 +817,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7257,13 +7257,13 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 
 - **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded claim that Lüders record-conditioning follows uniquely on finite qubit-lattice operator algebras from U1-U4 plus the standard sequential-effect composition and trace state/effect pairing.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124713Z-2a8cf4e7-luders_rule_from_composi-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Standard sequential-measurement composition gives M_{P,E_i} = P E_i P, so Bayes consistency for all effects forces sigma|_P = P sigma P / Tr(P sigma P).  _(class `A`)_
-- **chain closes:** False — The algebra from M_{P,E}=P E P to the Lüders posterior is sound, but the load-bearing sequential-effect composition, trace-pairing probability representation, and U1-U4 update-frame assumptions are explicit admitted inputs rather than closed by the restricted packet. The cited A1+A2 authority supplies the qubit-lattice algebra only, not the measurement-instrument composition theorem.
-- **rationale:** The proof reduces to a correct finite-dimensional trace-duality argument once M_{P,E}=P E P is granted. However, the source note itself admits that this standard sequential-effect composition is not derived here, and the only provided cited authority, MINIMAL_AXIOMS_2026-05-20.md, does not close that bridge from A1+A2. No-Go Discipline check N3 flags the repeated 'standard' and 'canonical' language as a hidden wall for a bounded theorem, and N7's steelman still depends on importing the projective instrument rule.
+- **claim_scope:** Ideal unrefined sharp-projective record conditioning with p(P)>0, using the ratified LSP-projective rule K_P=P so the sequential joint effect is P E P.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125847Z-26bc8652-luders_rule_from_composi-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given M_{P,E}=P E P, equality of Tr(sigma|_P E) with Tr(P sigma P E)/Tr(sigma P) for every POVM effect E forces sigma|_P=(P sigma P)/Tr(P sigma P).  _(class `A`)_
+- **chain closes:** True — Under the ratified projective sequential-composition rule, Bayes consistency over all subsequent effects fixes the post-record trace functional uniquely. Positivity, normalization, and sequential composition then follow algebraically for the scoped projective case.
+- **rationale:** The previous blocker, the import of M_{P,E}=P E P, is removed for the ideal unrefined sharp-projective scope by the allowed ratified LSP-projective rule. Within that scope, the remaining derivation is a trace-duality algebraic closure and does not require a numerical runner. The broader source-note wording about arbitrary Kraus operators or general instruments is not part of this audited scope.
 - **auditor confidence:** high
 
 ### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`

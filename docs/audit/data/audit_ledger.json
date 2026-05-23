@@ -156962,7 +156962,7 @@
       "verdict_rationale": null
     },
     "luders_rule_from_composition_consistency_note_2026-05-20": {
-      "audit_date": "2026-05-23T12:47:36.161300+00:00",
+      "audit_date": "2026-05-23T13:00:22.607966+00:00",
       "audit_state_snapshot": {
         "criticality": "leaf",
         "dep_axiom_premise_note_hash": {
@@ -156984,21 +156984,21 @@
         "runner_hash": null,
         "transitive_descendants": 0
       },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T124713Z-2a8cf4e7-luders_rule_from_composi-01",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T125847Z-26bc8652-luders_rule_from_composi-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebra from M_{P,E}=P E P to the L\u00fcders posterior is sound, but the load-bearing sequential-effect composition, trace-pairing probability representation, and U1-U4 update-frame assumptions are explicit admitted inputs rather than closed by the restricted packet. The cited A1+A2 authority supplies the qubit-lattice algebra only, not the measurement-instrument composition theorem.",
+      "chain_closes": true,
+      "chain_closure_explanation": "Under the ratified projective sequential-composition rule, Bayes consistency over all subsequent effects fixes the post-record trace functional uniquely. Positivity, normalization, and sequential composition then follow algebraically for the scoped projective case.",
       "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
-      "claim_scope": "Audited the bounded claim that L\u00fcders record-conditioning follows uniquely on finite qubit-lattice operator algebras from U1-U4 plus the standard sequential-effect composition and trace state/effect pairing.",
+      "claim_scope": "Ideal unrefined sharp-projective record conditioning with p(P)>0, using the ratified LSP-projective rule K_P=P so the sequential joint effect is P E P.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-23T12:47:36.161300+00:00",
+      "claim_type_last_reviewed": "2026-05-23T13:00:22.607966+00:00",
       "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
@@ -157007,19 +157007,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Standard sequential-measurement composition gives M_{P,E_i} = P E_i P, so Bayes consistency for all effects forces sigma|_P = P sigma P / Tr(P sigma P).",
+      "load_bearing_step": "Given M_{P,E}=P E P, equality of Tr(sigma|_P E) with Tr(P sigma P E)/Tr(sigma P) for every POVM effect E forces sigma|_P=(P sigma P)/Tr(P sigma P).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "ee8ae7a6a020099ff7c7e1973860b08dc0c739fffc5876e56d958cb515df4105",
       "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide and cite a retained-grade derivation of the projective sequential-effect composition M_{P,E}=P E P, plus the trace-pairing and update-frame assumptions, within the restricted packet.",
+      "notes_for_re_audit_if_any": "Second auditor should verify that ledger scope remains limited to nonzero-probability ideal sharp-projective records, not arbitrary Kraus instruments.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -157084,7 +157084,7 @@
       "runner_path": null,
       "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
       "transitive_descendants": 0,
-      "verdict_rationale": "The proof reduces to a correct finite-dimensional trace-duality argument once M_{P,E}=P E P is granted. However, the source note itself admits that this standard sequential-effect composition is not derived here, and the only provided cited authority, MINIMAL_AXIOMS_2026-05-20.md, does not close that bridge from A1+A2. No-Go Discipline check N3 flags the repeated 'standard' and 'canonical' language as a hidden wall for a bounded theorem, and N7's steelman still depends on importing the projective instrument rule."
+      "verdict_rationale": "The previous blocker, the import of M_{P,E}=P E P, is removed for the ideal unrefined sharp-projective scope by the allowed ratified LSP-projective rule. Within that scope, the remaining derivation is a trace-duality algebraic closure and does not require a numerical runner. The broader source-note wording about arbitrary Kraus operators or general instruments is not part of this audited scope."
     },
     "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": {
       "audit_date": "2026-05-23T12:50:14.139303+00:00",

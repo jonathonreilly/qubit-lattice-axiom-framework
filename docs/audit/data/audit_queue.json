@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 307,
-    "leaf": 323,
+    "leaf": 324,
     "medium": 341
   },
   "cycle_break_target_count": 24,
@@ -29401,6 +29401,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lattice_nn_rg_reconciliation_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_nn_continuum_note",
+        "lattice_nn_rg_gravity_note",
+        "lattice_nn_rg_alpha_sweep_note",
+        "lattice_nn_high_precision_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/LATTICE_NN_RG_RECONCILIATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38859,6 +38886,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 5,
-  "total_pending": 1284
+  "ready_count": 6,
+  "total_pending": 1285
 }

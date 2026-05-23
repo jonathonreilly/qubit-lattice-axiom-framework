@@ -62496,9 +62496,9 @@
         "lattice_nn_high_precision_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "19c9aa2330e154f271668b17b732f4d9e87b5efd40656e47acf4d4f2d513f650",
+      "note_hash": "0a1d3954ed2c5b2355297be79788540dd254a07bfcf30d11e966a88b7f862a41",
       "path": "docs/LATTICE_NN_RG_RECONCILIATION_NOTE.md",
-      "runner_path": "scripts/lattice_nn_continuum.py",
+      "runner_path": null,
       "title": "Lattice NN RG Reconciliation Note"
     },
     "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17": {
@@ -84411,6 +84411,6 @@
     "leaf_count": 759,
     "node_count": 2491,
     "root_count": 822,
-    "runners_with_path": 2052
+    "runners_with_path": 2051
   }
 }

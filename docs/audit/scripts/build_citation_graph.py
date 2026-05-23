@@ -178,9 +178,14 @@ def extract_section(body: str, start: int) -> str:
 def _parse_script_imports(script_path: Path) -> set[str]:
     """Return basenames of scripts/*.py that this script imports.
 
-    Handles `from scripts.X import ...`, `import scripts.X`, and relative
-    imports inside `scripts/` (`from .X import ...`, `from . import X`).
-    Filters to imports that exist as scripts/<name>.py.
+    Handles `from scripts.X import ...`, `import scripts.X`, relative
+    imports inside `scripts/` (`from .X import ...`, `from . import X`),
+    and bare PYTHONPATH-style imports (`from X import ...`, `import X`)
+    where `scripts/X.py` exists — common in this repo because runners are
+    invoked with `PYTHONPATH=scripts python3 scripts/X.py`.
+
+    Filters to imports that exist as scripts/<name>.py, so third-party
+    libraries (numpy, scipy, etc.) are excluded.
 
     Used to compute helper_runner_paths so the audit packet builder can
     include the full source chain. Without this, primary runners that
@@ -207,10 +212,14 @@ def _parse_script_imports(script_path: Path) -> set[str]:
             elif node.level >= 1 and not module:
                 for alias in node.names:
                     helpers.add(alias.name)
+            elif module and node.level == 0:
+                helpers.add(module.split(".")[0])
         elif isinstance(node, ast.Import):
             for alias in node.names:
                 if alias.name.startswith("scripts."):
                     helpers.add(alias.name.removeprefix("scripts."))
+                else:
+                    helpers.add(alias.name.split(".")[0])
     return {h for h in helpers if (scripts_dir / f"{h}.py").exists()}
 
 

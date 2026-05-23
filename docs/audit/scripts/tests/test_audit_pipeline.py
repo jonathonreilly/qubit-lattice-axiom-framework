@@ -253,6 +253,92 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertIsNone(row["blocker"])
 
 
+class BuildCitationGraphParserTest(unittest.TestCase):
+    """Parser behavior tests for _parse_script_imports — must detect bare
+    PYTHONPATH-style imports (`from X import ...`, `import X`) when
+    scripts/X.py exists, in addition to `from scripts.X import` and
+    relative-form imports."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.scripts_dir = self.tmp_root / "scripts"
+        self.scripts_dir.mkdir(parents=True, exist_ok=True)
+
+    def _write(self, name: str, body: str) -> Path:
+        p = self.scripts_dir / f"{name}.py"
+        p.write_text(body, encoding="utf-8")
+        return p
+
+    def test_bare_from_import_is_detected_when_scripts_file_exists(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("helper_one", "x = 1\n")
+            self._write("helper_two", "y = 2\n")
+            primary = self._write(
+                "primary",
+                "from helper_one import x\n"
+                "from helper_two import y\n"
+                "import numpy as np\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"helper_one", "helper_two"})
+
+    def test_bare_import_X_is_detected_when_scripts_file_exists(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("aliased_helper", "z = 3\n")
+            primary = self._write(
+                "primary",
+                "import aliased_helper as alias\n"
+                "import json\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"aliased_helper"})
+
+    def test_third_party_imports_excluded(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            primary = self._write(
+                "primary",
+                "import numpy\n"
+                "import scipy.linalg\n"
+                "from math import sqrt\n"
+                "from pathlib import Path\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, set())
+
+    def test_existing_scripts_dot_prefix_form_still_works(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("prefixed_helper", "w = 4\n")
+            primary = self._write(
+                "primary",
+                "from scripts.prefixed_helper import w\n"
+                "import scripts.prefixed_helper\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"prefixed_helper"})
+
+
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()

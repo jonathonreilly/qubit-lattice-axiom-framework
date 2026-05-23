@@ -49,8 +49,12 @@ def parse_script_imports(script_path: Path) -> set[str]:
       from scripts.X import Y, Z
       import scripts.X
       from .X import Y  (relative inside scripts/)
+      from X import Y, import X (bare PYTHONPATH-style — common because
+        runners in this repo are invoked with `PYTHONPATH=scripts ...`)
 
     Returns a set of script basenames (without .py) that exist in scripts/.
+    Third-party libraries are excluded by the final scripts/<name>.py
+    existence filter.
     """
     if not script_path.exists():
         return set()
@@ -73,10 +77,16 @@ def parse_script_imports(script_path: Path) -> set[str]:
                 # `from . import X`
                 for alias in node.names:
                     helpers.add(alias.name)
+            # from X import ...  (bare PYTHONPATH-style)
+            elif module and node.level == 0:
+                helpers.add(module.split(".")[0])
         elif isinstance(node, ast.Import):
             for alias in node.names:
                 if alias.name.startswith("scripts."):
                     helpers.add(alias.name.removeprefix("scripts."))
+                else:
+                    # import X [as Y]  (bare PYTHONPATH-style)
+                    helpers.add(alias.name.split(".")[0])
 
     # Keep only those that exist as scripts/<name>.py
     return {h for h in helpers if (SCRIPTS_DIR / f"{h}.py").exists()}

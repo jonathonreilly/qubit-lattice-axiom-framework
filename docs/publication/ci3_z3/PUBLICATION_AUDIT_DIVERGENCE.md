@@ -17,7 +17,7 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 193 |
+| critical | `unaudited` | 192 |
 | high | `unaudited` | 172 |
 | medium | `unaudited` | 110 |
 | critical | `audited_conditional` | 15 |
@@ -26,6 +26,7 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
 | medium | `audited_conditional` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
@@ -228,7 +229,7 @@ publication tables phrase it.
 | critical | `yt_bridge_nonlocal_corrections_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_bridge_rearrangement_principle_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_bridge_uv_class_uniqueness_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `yt_color_projection_correction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `yt_color_projection_correction_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `yt_constructive_uv_bridge_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_eft_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_ew_color_projection_theorem` | `audited_conditional` | `audited_conditional` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |

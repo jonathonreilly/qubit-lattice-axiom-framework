@@ -39,7 +39,7 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
       "queue_order": 1,
-      "ready": false,
+      "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
       "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
@@ -97,7 +97,7 @@
   ],
   "live_count": 2,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 0,
+  "ready_count": 1,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "unaudited",

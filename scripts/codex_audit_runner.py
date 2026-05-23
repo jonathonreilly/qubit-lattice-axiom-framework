@@ -54,6 +54,26 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
 REAUDIT_CANDIDATES_PATH = AUDIT_DIR / "data" / "reaudit_candidates.json"
+AXIOM_PREMISE_NODES_PATH = AUDIT_DIR / "data" / "axiom_premise_nodes.json"
+
+_AXIOM_PREMISE_IDS: set[str] | None = None
+
+
+def axiom_premise_ids() -> set[str]:
+    """Canonical axiom-premise claim_ids (see axiom_premise_nodes.json).
+
+    These are accepted framework premises: citing one does not, by itself,
+    block a clean verdict (see AUDIT_AGENT_PROMPT_TEMPLATE.md). Empty when
+    the registry is absent.
+    """
+    global _AXIOM_PREMISE_IDS
+    if _AXIOM_PREMISE_IDS is None:
+        try:
+            data = json.loads(AXIOM_PREMISE_NODES_PATH.read_text(encoding="utf-8"))
+            _AXIOM_PREMISE_IDS = set(data.get("canonical_ids") or [])
+        except Exception:
+            _AXIOM_PREMISE_IDS = set()
+    return _AXIOM_PREMISE_IDS
 PROMPT_TEMPLATE_PATH = AUDIT_DIR / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
 APPLY_AUDIT_SCRIPT = AUDIT_DIR / "scripts" / "apply_audit.py"
 ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
@@ -544,10 +564,17 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         dep_body = read_note_body(dep_path) or f"[dep note missing: {dep_path}]"
         eff = dep_row.get("effective_status") or "unaudited"
         ct = dep_row.get("claim_type") or "?"
+        premise_line = ""
+        if dep_cid in axiom_premise_ids():
+            premise_line = (
+                "=== Cited authority axiom_premise: true "
+                "(accepted framework premise; see rubric §4 carve-out) ===\n"
+            )
         cited_blocks.append(
             f"=== BEGIN CITED AUTHORITY: {dep_path} ===\n"
             f"=== Cited authority effective_status: {eff} ===\n"
             f"=== Cited authority claim_type: {ct} ===\n"
+            f"{premise_line}"
             f"{dep_body}\n"
             f"=== END CITED AUTHORITY: {dep_path} ==="
         )

@@ -160,7 +160,10 @@ Definitions you must use:
   - `(A)` algebraic identity check on existing inputs
   - `(B)` cross-note input verification (reads value from another note)
   - `(C)` first-principles compute from the axiom (`Cl(3)` on `Z^3` plus
-    accepted normalizations) producing a number not present in any input
+    accepted normalizations) producing a number not present in any input.
+    A cited authority flagged `axiom_premise: true` (the canonical A1+A2
+    axiom node) **is** the accepted axiom for this class — deriving from it
+    is class (C), not a downgrade.
   - `(D)` external comparator check against PDG / lattice QCD / observation
   - `(E)` definition (introduces a new symbol)
   - `(F)` renaming (asserts symbol identity between two existing concepts;
@@ -182,6 +185,24 @@ Definitions you must use:
     boundary condition, or asymptotic authority that is not closed by the
     restricted packet. Retained status does not propagate through an open
     identification.
+    **Axiom-premise carve-out.** A cited authority flagged
+    `axiom_premise: true` does **not** count toward the
+    "not-retained-grade authority" downgrade. The axiom node is an accepted
+    framework premise (you do not audit axioms), so a class (C) derivation
+    whose only non-retained-grade upstream is the `axiom_premise`, and whose
+    load-bearing step genuinely closes from the axiom content plus
+    retained-grade inputs, is eligible for `audited_clean` /
+    `retained_bounded`.
+    **This is not a free pass.** The carve-out removes only the automatic
+    downgrade; the load-bearing step must still correctly use the axiom
+    content. If the step merely re-reads the axiom's wording or asserts a
+    symbol identity, it is class (E)/(F) → `audited_renaming`. If it
+    misuses, overreaches, or misattributes the axiom content, the chain
+    does not close → `audited_conditional` / `audited_failed`. Citing the
+    axiom premise must be a *correct* citation, judged on its own terms.
+    The carve-out applies only to authorities the packet explicitly flags
+    `axiom_premise: true`; every other not-retained-grade authority still
+    downgrades as above.
   - `audited_decoration` — every load-bearing step is class (A), the
     note has zero (D) checks, and the chain reduces to a single upstream
     parent claim plus standard mathematics. (See

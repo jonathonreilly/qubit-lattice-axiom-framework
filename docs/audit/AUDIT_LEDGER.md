@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 384 |
+| **retained_bounded** | 385 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1285 |
+| unaudited | 1284 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 637 |
+| `audited_clean` | 638 |
 | `audited_conditional` | 106 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1509 |
+| `unaudited` | 1508 |
 
 | claim_type | count |
 |---|---:|
@@ -464,6 +464,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mesoscopic_surrogate_annular_tapered_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mesoscopic_surrogate_compact_floor_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_localization_frontier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_multistage_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7430,6 +7431,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The frozen topN=196 broad relaunch surrogate sources weak fields whose same-shape and disjoint additivity errors stay at 0.0005% and 0.0145% max, while one-step two-body symmetry violation stays below 0.3240%.  _(class `C`)_
 - **chain closes:** True — The provided runner and helper sources instantiate the fixed lattice, build the surrogate from propagation output, compute distributed source fields, and compute the reported additivity and symmetry metrics. The conclusion is bounded to that fixed numerical harness and does not require persistent-mass closure.
 - **rationale:** The runner output matches the note's frozen metrics, and the runner source performs the load-bearing numerical computation rather than printing constants or comparing against hard-coded expected values. The helper code supplies the lattice propagation, centroid, source, and detector machinery used on the load-bearing path, with no missing helper artifact in the restricted packet. The claim remains explicitly bounded to weak one-step behavior of a broad surrogate and does not promote itself to a persistent localized inertial-object theorem.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_compact_floor_sweep_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded compact-family floor sweep on the fixed 3D ordered-lattice valley-linear surrogate setup with support >= 5 and capture >= 0.25 floors in both sourced-response stages.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T001234Z-2c2c79ae-mesoscopic_surrogate_com-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the frozen retained 3D setup, compact Gaussian and tapered families pass the explicit support/capture floors, but the best compact survivor does not meaningfully improve over the broad top-N benchmark.  _(class `C`)_
+- **chain closes:** True — The provided runner instantiates the lattice, source field, candidate compressions, two propagation stages, floor tests, and top-N comparison directly from the included code. The conclusion is limited to this frozen surrogate setup and does not claim persistent mass or geometry-generic closure.
+- **rationale:** The runner output matches the note's load-bearing numerical claims and the source code shows actual computation rather than constant printing or a numerical equality assertion. The helper chain supplies the lattice propagation, detector projection, surrogate construction, and profile metrics used by the primary runner, and no cited authority in the restricted packet is below retained-grade. The clean verdict applies only to the bounded compact-floor sweep and comparison against top-N on the frozen retained family.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_localization_frontier_note`

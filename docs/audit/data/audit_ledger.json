@@ -158424,22 +158424,49 @@
       "verdict_rationale": "The runner output matches the note's frozen metrics, and the runner source performs the load-bearing numerical computation rather than printing constants or comparing against hard-coded expected values. The helper code supplies the lattice propagation, centroid, source, and detector machinery used on the load-bearing path, with no missing helper artifact in the restricted packet. The claim remains explicitly bounded to weak one-step behavior of a broad surrogate and does not promote itself to a persistent localized inertial-object theorem."
     },
     "mesoscopic_surrogate_compact_floor_sweep_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T00:12:53.835332+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "broad_surrogate_point_source_compare_note": "Fixed h=0.5, W=8, L=12 3D ordered-lattice valley-linear diagnostic comparing the runner-defined broad surrogate source against an equivalent-strength point source for probes z=0, \u00b11, \u00b12.",
+          "mesoscopic_surrogate_backreaction_note": "A fixed 3D ordered-lattice valley-linear harness at h=0.5, W=8, segment_L=6, using the frozen topN=196 surrogate, numerically checks weak-field source additivity and one-step two-body symmetry.",
+          "mesoscopic_surrogate_multistage_note": "Bounded two-stage sourced-response survival of the topN=196 mesoscopic surrogate on the retained h=0.5, W=8, segment_L=6 3D ordered-lattice valley-linear family with source_z=3.0 and strength=5e-5."
+        },
+        "dep_claim_type": {
+          "broad_surrogate_point_source_compare_note": "bounded_theorem",
+          "mesoscopic_surrogate_backreaction_note": "bounded_theorem",
+          "mesoscopic_surrogate_multistage_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "broad_surrogate_point_source_compare_note": "retained_bounded",
+          "mesoscopic_surrogate_backreaction_note": "retained_bounded",
+          "mesoscopic_surrogate_multistage_note": "retained_bounded"
+        },
+        "deps": [
+          "broad_surrogate_point_source_compare_note",
+          "mesoscopic_surrogate_backreaction_note",
+          "mesoscopic_surrogate_multistage_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "84d91a4a4000645ba2ae8aeaaca6141eb79d81fd6c1c7f699d7623e600c93c63",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001234Z-2c2c79ae-mesoscopic_surrogate_com-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner instantiates the lattice, source field, candidate compressions, two propagation stages, floor tests, and top-N comparison directly from the included code. The conclusion is limited to this frozen surrogate setup and does not claim persistent mass or geometry-generic closure.",
       "claim_id": "mesoscopic_surrogate_compact_floor_sweep_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded compact-family floor sweep on the fixed 3D ordered-lattice valley-linear surrogate setup with support >= 5 and capture >= 0.25 floors in both sourced-response stages.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T00:12:53.835332+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -158449,23 +158476,23 @@
         "broad_surrogate_point_source_compare_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/mesoscopic_surrogate_localization_family_sweep.py",
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the frozen retained 3D setup, compact Gaussian and tapered families pass the explicit support/capture floors, but the best compact survivor does not meaningfully improve over the broad top-N benchmark.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "c06504ea734f4e4844d137bf13abaf8b63c67ea4bb1ccb76756c8e146ae1ee55",
       "note_path": "docs/MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only whether future edits keep the claim scoped to the frozen compact-floor comparison rather than promoting it to persistent-mass or geometry-generic closure.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -158521,18 +158548,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/mesoscopic_surrogate_compact_floor_sweep.py",
       "title": "Mesoscopic Surrogate Compact Floor Sweep Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner output matches the note's load-bearing numerical claims and the source code shows actual computation rather than constant printing or a numerical equality assertion. The helper chain supplies the lattice propagation, detector projection, surrogate construction, and profile metrics used by the primary runner, and no cited authority in the restricted packet is below retained-grade. The clean verdict applies only to the bounded compact-floor sweep and comparison against top-N on the frozen retained family."
     },
     "mesoscopic_surrogate_compact_floor_sweep_note_2026-05-17": {
       "audit_date": null,
@@ -158762,11 +158789,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.585,
       "load_bearing_step": "On the retained h=0.5, W=8, segment L=6 3D ordered-lattice family, varying topN shows compact sources remain self-similar but weak while broader sources carry stronger two-stage response while remaining stable.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "735a2a3cb0cde26d1c67826c011382528a8ebb1567d695f65c40e0b8bf9ea2fc",
       "note_path": "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that the qualitative phrase 'no single sharp collapse threshold' is read only as a bounded statement over the sampled topN frontier, not as an exhaustive theorem over all possible localized source families.",
@@ -159440,11 +159467,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.585,
       "load_bearing_step": "Every scanned topN value stayed stable, with max relative stage-1/stage-2 ratio error 0.0066069 below 0.01 and support carry 1.000 across the scan.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "6d8fce11bdee32d7a2d921d318d0c470aaa87137eb351ea9dabd9534064d467f",
       "note_path": "docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that the hard-coded geometry, field strength, and stability thresholds are intended as the bounded setup rather than claimed universal assumptions.",

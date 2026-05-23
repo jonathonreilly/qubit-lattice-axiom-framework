@@ -1,11 +1,95 @@
 ===== runner cache v1 =====
 runner: scripts/retardation_discriminator.py
-runner_sha256: d273812c1b90e7919972bf4bea1b751560f221803ffe293db7ec295205c0a82c
-timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.02
-status: timeout
+runner_sha256: 373dbc8544832eadd58ba183848651365d0ac08aff9d671206fcbc8ae6149d06
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 227.53
+status: ok
 ----- stdout -----
+======================================================================
+RETARDATION DISCRIMINATOR: FINITE TOY-HARNESS ASSERTION CHECK
+delay=5, A=1.5, s=0.004, z0=3.0
+======================================================================
+
+1. FREQUENCY SWEEP (inst vs retarded)
+  freq       inst        ret       diff
+----------------------------------------
+ 0.010  +0.004916  +0.002772  -0.002144
+ 0.020  +0.008876  +0.005065  -0.003811
+ 0.030  +0.010980  +0.006932  -0.004048
+ 0.050  +0.010725  +0.008398  -0.002326
+ 0.070  +0.007250  +0.008048  +0.000798
+ 0.100  +0.000712  +0.006402  +0.005690
+ 0.150  -0.008190  +0.002832  +0.011022
+ 0.200  -0.001761  -0.000172  +0.001589
+  [PASS] delay=5 curve Fam1 f=0.02: computed=-0.003811 expected=-0.003770 tol=1e-03
+  [PASS] delay=5 curve Fam1 f=0.05: computed=-0.002326 expected=-0.002260 tol=1e-03
+  [PASS] delay=5 curve Fam1 f=0.10: computed=+0.005690 expected=+0.005540 tol=1e-03
+  [PASS] delay=5 curve Fam1 f=0.15: computed=+0.011022 expected=+0.010500 tol=1e-03
+  [PASS] delay=5 curve Fam1 f=0.20: computed=+0.001589 expected=+0.001720 tol=1e-03
+
+2. EXACT NULLS
+  f=0, d=0: +3.118275e-18
+  f=0, d=5: +3.118275e-18
+  [PASS] null: f=0, d=0: computed=+0.000000 expected=+0.000000 tol=1e-09
+  [PASS] null: f=0, d=5: computed=+0.000000 expected=+0.000000 tol=1e-09
+  [PASS] null: d=0, any f (diff=0 by definition): computed=+0.000000 expected=+0.000000 tol=1e-12
+
+3. DELAY LAW at f=0.15 (sign-split band) and f=0.02 (negative band)
+  d= 0: diff(f=0.02)=+0.000000, diff(f=0.15)=+0.000000 
+  d= 1: diff(f=0.02)=-0.000706, diff(f=0.15)=+0.002155 
+  d= 2: diff(f=0.02)=-0.001444, diff(f=0.15)=+0.004523 
+  d= 3: diff(f=0.02)=-0.002211, diff(f=0.15)=+0.007314 
+  d= 5: diff(f=0.02)=-0.003811, diff(f=0.15)=+0.011022 SPLIT
+  d= 7: diff(f=0.02)=-0.005150, diff(f=0.15)=+0.012492 SPLIT
+  d=10: diff(f=0.02)=-0.006856, diff(f=0.15)=+0.011401 SPLIT
+  [PASS] delay law: diff(f=0.15, d=5) positive: computed=+0.011022 expected sign=+1
+  [PASS] delay law: diff(f=0.15, d=7) positive: computed=+0.012492 expected sign=+1
+  [PASS] delay law: diff(f=0.15, d=10) positive: computed=+0.011401 expected sign=+1
+  [PASS] delay law: diff(f=0.02, d=5) negative: computed=-0.003811 expected sign=-1
+  [PASS] delay law: diff(f=0.02, d=10) negative: computed=-0.006856 expected sign=-1
+  [PASS] delay law: |diff(f=0.15, d=5)| in [0.005, 0.020]: computed=+0.011022 expected=+0.011000 tol=7e-03
+  [PASS] delay law: |diff(f=0.02, d=5)| in [0.001, 0.010]: computed=+0.003811 expected=+0.004000 tol=5e-03
+  [PASS] delay law: |diff| grows at f=0.15 from d=1 to d=5: computed=+0.008868 minimum=+0.005000
+
+4. GLOBAL-DELAY FIT TEST
+  best tau = -1, residual/RMS = 0.8325
+  FIT FAILS — different transfer function (not just a delay)
+  [PASS] global-delay fit residual/RMS > 0.3 (no global tau rescues retardation): computed=+0.832474 minimum=+0.300000
+
+5. FAMILY PORTABILITY (difference at f=0.15, d=5)
+  Fam1: diff = +0.010502
+  Fam2: diff = +0.010217
+  Fam3: diff = +0.010660
+  [PASS] family portability Fam1: diff sign +: computed=+0.010502 expected sign=+1
+  [PASS] family portability Fam1: |diff - frozen| within 30%: computed=+0.010502 expected=+0.010500 tol=3e-03
+  [PASS] family portability Fam2: diff sign +: computed=+0.010217 expected sign=+1
+  [PASS] family portability Fam2: |diff - frozen| within 30%: computed=+0.010217 expected=+0.010220 tol=3e-03
+  [PASS] family portability Fam3: diff sign +: computed=+0.010660 expected sign=+1
+  [PASS] family portability Fam3: |diff - frozen| within 30%: computed=+0.010660 expected=+0.010660 tol=3e-03
+  [PASS] family portability: cross-family spread < 30% of mean: computed=+0.042385 maximum=+0.300000
+
+6. SEED ROBUSTNESS (f=0.15, d=5)
+  seed 0: diff = +0.011022, ret_phase = +0.002832
+  seed 1: diff = +0.009982, ret_phase = +0.002826
+  seed 2: diff = +0.009589, ret_phase = +0.002504
+  seed 3: diff = +0.012680, ret_phase = +0.003173
+  [PASS] seed robustness seed=0: retarded phase positive: computed=+0.002832 expected sign=+1
+  [PASS] seed robustness seed=1: retarded phase positive: computed=+0.002826 expected sign=+1
+  [PASS] seed robustness seed=2: retarded phase positive: computed=+0.002504 expected sign=+1
+  [PASS] seed robustness seed=3: retarded phase positive: computed=+0.003173 expected sign=+1
+
+7. PHASE-SENSITIVITY SWEEP (f=0.15, d=5, phi_0 in {0.25, 0.75}*2π)
+  phi_0 = 0.25*2π: diff = -0.001451
+  phi_0 = 0.75*2π: diff = -0.000220
+  phase-shift product diff(0.25)·diff(0.75) = +3.198600e-07
+  [PASS] phase sensitivity: diff(phi_0=0.25*2π) differs from diff(phi_0=0): computed=+0.012473 minimum=+0.001000
+  [PASS] phase sensitivity: diff(phi_0=0.75*2π) differs from diff(phi_0=0): computed=+0.011243 minimum=+0.001000
+  [PASS] phase sensitivity: diff(phi_0=0.25) ≠ diff(phi_0=0.75): computed=+0.001230 minimum=+0.001000
+
+======================================================================
+RETARDATION DISCRIMINATOR: PASS=31  FAIL=0
+======================================================================
 
 ----- stderr -----
 

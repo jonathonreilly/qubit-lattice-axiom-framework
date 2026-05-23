@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 127 |
 | **retained_no_go** | 151 |
-| **retained_bounded** | 387 |
+| **retained_bounded** | 388 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1285 |
+| unaudited | 1284 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 643 |
+| `audited_clean` | 644 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1510 |
+| `unaudited` | 1509 |
 
 | claim_type | count |
 |---|---:|
@@ -758,6 +758,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `work_history.yt.yt_unbounded_program_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | B | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12583,6 +12584,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **load-bearing step:** Under G_full = u_0 · G_V, S(G_full) = u_0^2 S(G_V) and C(G_full) = u_0^2 C(G_V), so CMT factorization scales both Fierz channels uniformly.  _(class `A`)_
 - **chain closes:** True — The scoped negative claim follows algebraically from the provided Fierz decomposition and scalar multiplication G -> u_0 G. The remaining EW-current Wilson-line construction is correctly identified as outside this no-go scope, not used to prove the negative boundary.
 - **rationale:** The runner source genuinely computes the Fierz decomposition, diagonal-channel behavior, and u_0^2 scaling rather than merely printing constants; the load-bearing no-go is an algebraic closure over the cited Fierz identity. No-Go Discipline passes for the tested resolution: alternative routes A-C in the note are distinguished from CMT-only selection, the residual exactly matches the missing M closure, and possible convention or current-construction repairs do not defeat the narrow claim that CMT factorization alone is channel-blind. The cited authority is retained for the Fierz decomposition used here, while its open matching rule is not imported as a premise for this no-go.
+- **auditor confidence:** high
+
+### `yt_pr230_consolidated_status_note_2026-05-22`
+
+- **Note:** [`YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`](../../docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-support algebraic equivalence between a product RN source family on signed one-site records and a site-diagonal source-coupled local action, with no physical Y_T closure claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125721Z-e42b4824-yt_pr230_consolidated_st-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If S_h = S_0 - sum_x h_x epsilon_x, then exp(-S_h) / exp(-S_0) = exp(sum_x h_x epsilon_x), which is exactly the same RN family after normalization.  _(class `A`)_
+- **chain closes:** True — The bounded support identity follows by direct finite algebra from the displayed definitions of R_h, W_h, and S_h. The physical neutral EW/Higgs authority gate is explicitly outside the audited scope.
+- **rationale:** The load-bearing step is a direct algebraic identity over the finite signed-record definitions, and the runner source genuinely computes finite RN densities, composition, the origin score, and action equivalence rather than merely printing constants. The packet does not claim physical top-Yukawa closure or same-surface neutral EW/Higgs authority, so the listed unresolved physics gates do not block the bounded support theorem. No-Go Discipline check: the negative boundary is scoped to non-closure of Y_T rather than a broad impossibility claim; same-packet evidence lists multiple independent missing gates and the runner verifies absence of strict source-Higgs rows and W/Z bypass, so no N1-N8 blocker defeats the bounded verdict.
 - **auditor confidence:** high
 
 ### `yt_ssb_matching_gap_analysis_note_2026-04-18`

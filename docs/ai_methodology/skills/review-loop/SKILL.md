@@ -20,6 +20,13 @@ be explicit, and support-only results must not be promoted by prose.
 This skill is **review only**. It may make branch/package hygiene changes that
 allow the independent audit system to parse and queue claims, but it must not
 apply audit verdicts, write `audited_clean`, or run the audit worker.
+Audit results have a strict provenance boundary: review-loop must never land
+PR-submitted audit verdicts, audit-status promotions/demotions, effective-status
+changes, auditor transcripts, or `apply_audit.py` outputs as authority. Audits
+come only from the independent post-landing audit loop. PRs may land source
+repairs, runners, controlled-data dispatch sidecars, and explicit audit or
+re-audit targeting metadata when those are review-clean; they may not carry the
+answer to the audit they request.
 It must not create or open pull requests. When reviewing an existing PR or
 branch, review-loop either fixes/narrows that existing landing path and lands it
 when requested, or rejects/closes it with a clear reason. Salvage, dependency
@@ -438,9 +445,13 @@ lowering the review bar.
 7. For audit/process hygiene, preserve the durable repair rather than the
    generated symptom. Land source/tooling/pipeline/controlled-data changes when
    they strengthen the repo or unblock auditing without changing science.
-   Regenerate audit JSON/Markdown from the pipeline afterward. Do not land
-   hand-authored `effective_status`, `intrinsic_status`, `audit_status`, or
-   expected-verdict edits as the authority for the change.
+   Regenerate audit JSON/Markdown from the pipeline afterward only from the
+   reviewed source repair on current `main`. Do not land PR-authored
+   `effective_status`, `intrinsic_status`, `audit_status`, auditor-output,
+   previous-audit, or expected-verdict edits as the authority for the change.
+   Source repairs may intentionally invalidate a prior row hash and make a row
+   visible for re-audit; that is allowed. The independent audit loop must still
+   produce the verdict after landing.
 8. If no salvage is possible, leave a concise PR comment or review summary
    saying why, for example: "runner only rechecks assumed premise",
    "claim depends on closed sibling", "noncanonical stretch packet with no
@@ -514,6 +525,28 @@ claim tables, lane stubs, or publication/control-plane files.
 
 The review loop must enforce the audit lane's propose/ratify split without
 performing the independent audit:
+
+0. Before applying a PR, inventory any audit-status surface it touches:
+
+```bash
+git diff --name-only <pr-base>..refs/tmp/pr-<N> -- \
+  docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md docs/audit/data \
+  'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md'
+git diff <pr-base>..refs/tmp/pr-<N> -- docs/audit docs/publication/ci3_z3 \
+  | grep -E 'audit_status|effective_status|audited_clean|audited_conditional|audited_failed|audited_renaming|audited_decoration|audited_numerical_match|previous_audits|audit_result|verdict'
+```
+
+Treat this output as a provenance review, not as a merge recipe. Strip
+PR-submitted generated ledgers, queues, effective-status tables, auditor
+transcripts, and audit verdict payloads before landing. The only acceptable
+audit-lane changes from a PR are reviewed source/tooling repairs and
+machine-readable audit/re-audit targeting metadata, such as dispatcher
+sidecars, that do not assert a verdict. After applying the source repair, run
+the local pipeline to verify the row is queued or re-queued as intended. If the
+user requested source-only landing, restore generated audit outputs before
+committing; otherwise commit only pipeline-regenerated outputs from the current
+post-repair tree, and only when they contain no applied audit verdict supplied
+by the PR author.
 
 1. Source-note `Status:` prose is not an audit authority. New or touched claim
    notes should use `Type:` / `Claim type:` metadata for intended audit
@@ -605,6 +638,10 @@ The review loop must not run `docs/audit/scripts/apply_audit.py` and must not
 write `audit_status`, `audited_clean`, or other audit verdicts. If the branch
 introduces retained-grade `claim_type` rows, report those claim IDs in the
 final report as requiring the independent audit worker.
+When a source repair changes a note or runner for a previously audited row,
+the acceptable local result is hash drift plus queue/dispatch visibility for
+independent re-audit. Do not preserve, copy, or author a fresh `previous_audits`
+entry, `audit_status`, or verdict rationale from the PR branch.
 
 After the pipeline, inspect the changed claim rows in
 `docs/audit/data/audit_ledger.json`:

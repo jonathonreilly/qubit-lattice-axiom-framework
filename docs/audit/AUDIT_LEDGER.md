@@ -20,8 +20,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 126 |
 | **retained_no_go** | 151 |
-| **retained_bounded** | 387 |
-| _retained_pending_chain_ | 12 |
+| **retained_bounded** | 389 |
+| _retained_pending_chain_ | 9 |
 | open_gate | 14 |
 | unaudited | 1289 |
 | meta | 225 |
@@ -36,6 +36,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 2 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
+| `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | 1 |
@@ -71,7 +72,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 558 |
 | `leaf` | 913 |
 
-- **Retained pending chain closure:** 12
+- **Retained pending chain closure:** 9
 - **Citation cycles detected:** 131
 
 ### Runner classification (static heuristic)
@@ -447,8 +448,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | claude-opus | C | - |
@@ -868,7 +869,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | fresh_context | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
-| `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
+| `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
@@ -5553,7 +5554,7 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **claim_type:** `decoration`
 - **claim_scope:** Audited the algebraic derivation of the per-matrix-entry Matsubara free-energy density formula from the supplied determinant identity at L_s = 2 with mean-field factorization.
 - **audit_status:** ~~audited_decoration~~
-- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`)
+- **effective_status:** `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`  (reason: `decoration_parent_retained`)
 - **auditor:** `codex-cli-gpt-5.5-20260516-130436-3eff71a3-hierarchy_matsubara_free-001`  (codex-gpt-5.5; independence=cross_family)
 - **load-bearing step:** Apply the per-matrix-entry normalization to the retained determinant log difference, so 4/(8 L_t) times the Matsubara log sum reduces to (1/(2 L_t)) Sum_omega ln(1 + m^2/[u_0^2(3+sin^2 omega)]).  _(class `A`)_
 - **chain closes:** True — Within the restricted packet, the formula follows by substituting m=0 in the cited determinant identity, subtracting real logarithms, and applying n_matrix=8 L_t. No additional physical identification or external input is needed for this scoped algebraic statement.
@@ -7039,7 +7040,7 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **claim_type:** `bounded_theorem`
 - **claim_scope:** Exact structural eigenvalue ratio 1:(-3) on the 6-state Sym² and 2-state Anti² LH-doublet sub-decompositions, conditional only on the cited graph-first multiplicities and tracelessness.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`)
+- **effective_status:** **retained_bounded**  (reason: `self`)
 - **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T171801Z-1a7a2bd7-lh_doublet_eigenvalue_ra-01`  (codex-gpt-5.5; independence=cross_family)
 - **load-bearing step:** Tracelessness over the LH-doublet sector gives 6α + 2β = 0, so β = -3α and the Sym²:Anti² ratio is 1:(-3).  _(class `A`)_
 - **chain closes:** True — The ratio follows by algebra from the retained graph-first 6 and 2 multiplicities plus the stated tracelessness equation. No staggered-Dirac realization, lattice-action quantity, normalization choice, or SM hypercharge identification is load-bearing for this scoped ratio claim.
@@ -7052,7 +7053,7 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **claim_type:** `bounded_theorem`
 - **claim_scope:** For fixed positive integers N >= 2 and k >= 1, the ordered positive-integer partition m+n=N with traceless ratio beta/alpha=-k is unique when it exists, with n=N/(k+1) and m=kN/(k+1); at (N,k)=(8,3) this yields (6,2).
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`)
+- **effective_status:** **retained_bounded**  (reason: `self`)
 - **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T171902Z-021c6520-lh_doublet_partition_rat-01`  (codex-gpt-5.5; independence=cross_family)
 - **load-bearing step:** Setting beta/alpha = -k in beta/alpha = -m/n gives m = k n; combining with m + n = N gives n = N/(k+1), m = kN/(k+1), and any other admissible pair satisfies the same equations.  _(class `A`)_
 - **chain closes:** True — The inverse uniqueness statement follows by elementary algebra from the stated hypotheses and divisibility condition. The audit does not require deriving N=8 or k=3, since those are explicitly outside this note's load-bearing scope.

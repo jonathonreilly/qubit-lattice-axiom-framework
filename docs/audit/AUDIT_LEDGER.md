@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 138 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 384 |
+| **retained_bounded** | 385 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1279 |
+| unaudited | 1278 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 645 |
+| `audited_clean` | 646 |
 | `audited_conditional` | 114 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1505 |
+| `unaudited` | 1504 |
 
 | claim_type | count |
 |---|---:|
@@ -496,6 +496,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `nn_lattice_rescaled_continuum_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `nn_lattice_rescaled_full_kernel_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7948,6 +7949,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner directly computes the field-free one-arm detector distributions across h values, fits sigma_arm(h) = C_arm * h^alpha on h <= 0.25 with alpha = 0.5256 and R^2 = 0.9996, then uses that fitted Gaussian-arm model to predict MI and d_TV within 0.0005 for h <= 0.125.  _(class `C`)_
 - **chain closes:** True — The provided runner source actually constructs the lattice, propagates the field-free arms, measures centroids, widths, MI, d_TV, and Born residuals, then performs the fitted scaling and Gaussian-bin prediction checks. The conclusion is bounded to that finite fitted window and does not require a full continuum-operator identification.
 - **rationale:** The load-bearing evidence is a direct numerical computation from the stated NN harness rather than a definition, renaming, external comparator, or imported numerical match. The cited authorities are retained or retained_bounded, and the source note keeps the conclusion within the bounded finite-window diagnostic scope. The runner's guards pass for Born cleanliness, centroid drift, sqrt-h width scaling, and Gaussian-arm MI/d_TV prediction. The audit does not certify a full continuum operator, which the note explicitly excludes.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_full_kernel_identification_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite checked-grid, field-free, no-slit rescaled NN harness with BETA=0.8, K_PHYS=5.0, L=40, y_s in {-6,-3,0,+3,+6}, h in {0.25,0.125,0.0625}, and central window |u|<=6: translation-invariant Gaussian-magnitude and quadratic-phase fit within the runner tolerances.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T195237Z-bad75f67-nn_lattice_rescaled_full-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes A(y_s -> y_d) for y_s in {-6,-3,0,+3,+6} and h in {0.25,0.125,0.0625}, fits |A| and arg A in u=y_d-y_s, and finds zero displayed spread in sigma and c2 plus passing Gaussian/quadratic R^2 guards.  _(class `C`)_
+- **chain closes:** True — The runner source instantiates the lattice, propagates amplitudes from the specified sources, fits the resulting detector amplitudes in displacement coordinates, and applies the stated tolerance checks; it is not merely printing preloaded fit values. The provided one-hop cited authorities are retained-grade, and the PR #1007 c2 and slit-anchoring comparisons are non-load-bearing context for this scoped finite-grid fit.
+- **rationale:** The load-bearing finite-grid kernel-shape claim is supported by a genuine first-principles deterministic runner over the stated harness, with no helper imports and no hard-coded sigma/c2 pass values on the load-bearing path. The acceptance checks for sigma spread, c2 spread, centroid drift, and Gaussian/quadratic fit quality all pass in the supplied cache. The broader analytic c2 comparison and slit-anchored L1 interpretation should remain scoped as cross-checks rather than independent derivations.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_kernel_identification_note_2026-05-10`

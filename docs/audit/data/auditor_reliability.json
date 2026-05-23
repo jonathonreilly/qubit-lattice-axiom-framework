@@ -2,7 +2,7 @@
   "auditor_family_summary": {
     "claude-opus": {
       "audits_with_runner_class": {
-        "A": 5,
+        "A": 4,
         "C": 1,
         "algebraic_corollary_of_parent": 1,
         "exact_algebraic_identity_on_admitted_carrier": 1
@@ -11,7 +11,7 @@
       "criticality_counts": {
         "critical": 1,
         "high": 2,
-        "leaf": 3,
+        "leaf": 2,
         "medium": 2
       },
       "cross_confirmation_outcomes": {},
@@ -20,10 +20,10 @@
       "judicial_third_pass_count": 0,
       "overturned_by_third": 0,
       "ratified_by_third": 0,
-      "total_audits": 8,
+      "total_audits": 7,
       "verdict_changed_after_re_audit": 8,
       "verdict_counts": {
-        "audited_clean": 3,
+        "audited_clean": 2,
         "audited_conditional": 2,
         "audited_decoration": 3
       }
@@ -74,7 +74,7 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 279,
+        "A": 280,
         "B": 35,
         "C": 239,
         "D": 5,
@@ -90,7 +90,7 @@
       "criticality_counts": {
         "critical": 81,
         "high": 93,
-        "leaf": 247,
+        "leaf": 248,
         "medium": 169
       },
       "cross_confirmation_agreement_rate": 0.744,
@@ -110,10 +110,10 @@
       "third_pass_decisions_n": 88,
       "third_pass_overturn_rate": 0.489,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 590,
+      "total_audits": 591,
       "verdict_changed_after_re_audit": 252,
       "verdict_counts": {
-        "audited_clean": 430,
+        "audited_clean": 431,
         "audited_conditional": 95,
         "audited_decoration": 27,
         "audited_failed": 19,

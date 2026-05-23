@@ -8073,6 +8073,10 @@
       "to": "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15"
     },
     {
+      "from": "dm_neutrino_triplet_even_response_theorem_note_2026-04-15",
+      "to": "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15"
+    },
+    {
       "from": "dm_neutrino_triplet_normalization_target_note_2026-04-15",
       "to": "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16"
     },
@@ -50256,12 +50260,14 @@
     },
     "dm_neutrino_triplet_even_response_theorem_note_2026-04-15": {
       "claim_id": "dm_neutrino_triplet_even_response_theorem_note_2026-04-15",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "2e98a732a4733128ba5aa79817c0239ac87890cd0adfc30296db41717c75c7b9",
+      "note_hash": "59fde9c4c0d74497da69a7c492243ceca1e7d776a77a3dde17b9eda0ff4bc659",
       "path": "docs/DM_NEUTRINO_TRIPLET_EVEN_RESPONSE_THEOREM_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_neutrino_triplet_even_response_theorem.py",
       "title": "DM Neutrino Triplet Even-Response Theorem"
@@ -83689,7 +83695,6 @@
     "dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18_note_2026-05-17",
     "dm_neutrino_source_surface_global_dominance_completeness_obstruction_note_2026-04-17_note_2026-05-17",
     "dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem_note_2026-04-17_note_2026-05-17",
-    "dm_neutrino_triplet_even_response_theorem_note_2026-04-15",
     "dm_neutrino_two_higgs_closure_attacks_note_2026-04-15",
     "dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17",
     "dm_neutrino_weak_matching_obstruction_note_2026-04-15",
@@ -84270,9 +84275,9 @@
       "decoration": 1,
       "meta": 187,
       "no_go": 67,
-      "none": 1494,
+      "none": 1493,
       "open_gate": 45,
-      "positive_theorem": 176
+      "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 960,
@@ -84283,10 +84288,10 @@
       "open_gate": 123,
       "positive_theorem": 609
     },
-    "edge_count": 9652,
+    "edge_count": 9653,
     "leaf_count": 767,
     "node_count": 2493,
-    "root_count": 825,
+    "root_count": 824,
     "runners_with_path": 2054
   }
 }

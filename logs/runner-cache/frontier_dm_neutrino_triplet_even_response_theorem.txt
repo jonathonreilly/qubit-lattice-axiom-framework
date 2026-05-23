@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_triplet_even_response_theorem.py
-runner_sha256: 51250a2c39bc1d86ccfe9e41f6ff6a39bbeb5a534a654e8e323af79dc5907ea5
+runner_sha256: 6c41a00ff5d05d19adb6e7ea434633abf4f95566106f36884b6ba3504bbbfa11
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -27,9 +27,20 @@ PART 2: THE EVEN RESPONSE CHANNELS ARE INVARIANT UNDER CHARACTER CONJUGATION
 PART 3: THE BRANCH RECORDS THE EVEN RESPONSE FORM CLEANLY
 ========================================================================================
   [PASS] The CP theorem note records E1 and E2 explicitly
+  [PASS] The response theorem note links the breaking-triplet CP theorem dependency
 
 ========================================================================================
-SUMMARY: PASS=6 FAIL=0
+PART 4: SYMBOLIC-PARAMETER PROOF OF THE UNIVERSAL TWO-CHANNEL FACTORIZATION
+========================================================================================
+  [PASS] Symbolic H is Hermitian over the seven real parameters
+  [PASS] cp1 reduces identically to -2 gamma (delta + rho) / 3 over symbolic parameters  (cp1 - target = 0)
+  [PASS] cp2 reduces identically to  2 gamma (A + b - c - d) / 3 over symbolic parameters  (cp2 - target = 0)
+  [PASS] cp1 even-channel exclusivity: only the (delta + rho) combination enters  (d/dA=0, d/db=0, d/dc=0, d/dd=0, d/ddelta=-2*gamma/3, d/drho=-2*gamma/3)
+  [PASS] cp2 even-channel exclusivity: only the (A + b - c - d) combination enters  (d/dA=2*gamma/3, d/db=2*gamma/3, d/dc=-2*gamma/3, d/dd=-2*gamma/3, d/ddelta=0, d/drho=0)
+  [PASS] Combined: cp1 and cp2 each depend on a single even channel (no further even channel enters)
+
+========================================================================================
+SUMMARY: PASS=13 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -6195,13 +6195,13 @@
     "dm_neutrino_triplet_even_response_theorem_note_2026-04-15": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 22,
         "B": 1,
         "C": 0,
         "D": 0
       },
       "decoration_candidate": true,
-      "dominant_class": "B",
+      "dominant_class": "A",
       "runner": "scripts/frontier_dm_neutrino_triplet_even_response_theorem.py"
     },
     "dm_neutrino_triplet_normalization_target_note_2026-04-15": {
@@ -35060,13 +35060,13 @@
         "dm_neutrino_triplet_even_response_theorem_note_2026-04-15"
       ],
       "counts": {
-        "A": 0,
+        "A": 22,
         "B": 1,
         "C": 0,
         "D": 0
       },
       "decoration_candidate": true,
-      "dominant_class": "B",
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_dm_neutrino_triplet_normalization_target.py": {
@@ -53941,8 +53941,8 @@
   "stats": {
     "decoration_candidates": 312,
     "dominant_class_distribution": {
-      "A": 202,
-      "B": 269,
+      "A": 203,
+      "B": 268,
       "C": 735,
       "D": 295,
       "none": 433

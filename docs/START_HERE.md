@@ -38,4 +38,4 @@ For the accepted package inputs, use:
 For optional framework-compression / reduction context, use:
 
 - [SINGLE_AXIOM_INFORMATION_NOTE.md](SINGLE_AXIOM_INFORMATION_NOTE.md)
-- [SINGLE_AXIOM_HILBERT_NOTE.md](SINGLE_AXIOM_HILBERT_NOTE.md)
+- `SINGLE_AXIOM_HILBERT_NOTE.md`

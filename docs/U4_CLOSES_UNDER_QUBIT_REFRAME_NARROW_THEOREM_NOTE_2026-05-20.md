@@ -11,6 +11,14 @@ framing — is **directly given by the qubit-per-site baseline** of
 the qubit-reframe axiom set
 ([`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)).
 
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md). The audit lane
+may convert this row from `audited_renaming` to
+`decoration_under_cl3_complexification_split` on the next re-pass, which would correctly
+make this row a non-chain-closure handle. Source-side metadata only;
+audit lane owns the verdict.
+
 Under the new axioms, U4 is no longer an open admission. The
 single-faithful-Cl(3)-module-per-site selection is what the
 qubit-per-site baseline *means*.

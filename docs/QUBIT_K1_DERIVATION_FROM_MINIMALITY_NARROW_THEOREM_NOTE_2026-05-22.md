@@ -5,6 +5,14 @@
 **Status:** source-side proposal — independent audit lane owns the verdict
 **Purpose:** Derive the per-site `k = 1` selection (single faithful complex irrep, `H_x = ℂ²`) from the qubit-per-site axiom plus the standard quantum-information definition of "qubit" as the minimal faithful representation of `M_2(ℂ)`. Replaces the prior k=1 ratification clause (`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening II") with a proper derivation candidate.
 
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (retained, positive_theorem).
+The audit lane may convert this row from `audited_renaming` to
+`decoration_under_cl3_complexification_split` on the next re-pass, which would correctly
+make this row a non-chain-closure handle. Source-side metadata only;
+audit lane owns the verdict.
+
 ## Why this note exists
 
 The 2026-05-22 k=1 ratification (PR #1656 / commit `f471b5b`) added `k = 1` as a load-bearing axiom-content clause on the canonical axiom surface. Subsequent audit feedback ("the right process is not Option A; auditing axiom docs as positive_theorem would blur categories") suggests the cleaner path is a **derivation** that names standard QI machinery as an explicit input rather than promoting it to axiom-rule status.

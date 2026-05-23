@@ -61,8 +61,9 @@ reading):
   supplies the runner-computed `rho_(p,q)(6)` values on the finite box for
   the witness-source consistency check `(M5)` at the end of the proof;
 - the finite-box bounded-coefficient narrow note
-  [`gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md)
-  supplies the *forward-side* Peter-Weyl convolution-on-characters identity
+  [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
+  (retained parent; previously cited the renaming-tier finite-box bounded-coefficient
+  sibling) supplies the *forward-side* Peter-Weyl convolution-on-characters identity
   used inside the proof of `(M2)` and `(M3)` below.
 
 **Status authority:** independent audit lane only. This source note does not
@@ -442,9 +443,10 @@ Wilson data and uniquely determined at finite-box scope. ∎
 - [`gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17`](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md)
   — block 17 stripping-uniqueness; the *forward-side* uniqueness of
   `R_beta^env|_B` consumed in `(M3)` and `(M4)`.
-- [`gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md)
+- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
   — Peter-Weyl convolution-on-characters identity `(N2)`, used as the
-  forward direction inside the proof of `(M2)` and `(M3)`.
+  forward direction inside the proof of `(M2)` and `(M3)`. Retained parent;
+  previously cited renaming-tier finite-box bounded-coefficient sibling.
 - [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
   — bounded finite-box numerical coefficients `rho_(p,q)(6)` consumed
   as finite support input in `(M5)`.

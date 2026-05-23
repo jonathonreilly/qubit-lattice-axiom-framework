@@ -36,7 +36,7 @@ builder:
 - [`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`](KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
   — the demoted MRU theorem note whose closure status this note formally
   reclassifies to supplementary / alternative-framing support.
-- [`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- `KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
   — the companion MRU obstruction note co-demoted by this reclassification.
 
 These citations register the one-hop load-bearing dependency edges so the

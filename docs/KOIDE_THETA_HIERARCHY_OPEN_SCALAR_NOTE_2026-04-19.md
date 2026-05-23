@@ -11,6 +11,14 @@ selected charged-lepton line.
 
 **Primary reference:** `docs/KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`.
 
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`](KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md). The audit lane
+may convert this row from `audited_renaming` to
+`decoration_under_koide_berry_phase_theorem` on the next re-pass, which would correctly
+make this row a non-chain-closure handle. Source-side metadata only;
+audit lane owns the verdict.
+
 ---
 
 ## 1. What was open

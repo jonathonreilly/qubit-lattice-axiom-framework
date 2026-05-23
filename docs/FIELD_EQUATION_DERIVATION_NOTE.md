@@ -4,6 +4,14 @@
 **Date:** 2026-04-11
 **Primary runner:** scripts/frontier_field_equation_uniqueness.py
 
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md) (retained_bounded).
+The audit lane may convert this row from `audited_renaming` to
+`decoration_under_self_consistency_forces_poisson` on the next re-pass,
+which would correctly make this row a non-chain-closure handle.
+Source-side metadata only; audit lane owns the verdict.
+
 ## The Problem
 
 The screened Poisson equation (L + μ²)Φ = G·ρ was chosen by convention.

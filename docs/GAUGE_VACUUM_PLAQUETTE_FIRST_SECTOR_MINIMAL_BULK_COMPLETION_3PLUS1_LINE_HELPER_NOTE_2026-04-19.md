@@ -9,6 +9,14 @@ branch.
 audit-lane infrastructure for the corresponding helper module.
 **Primary runner / module:** `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py`
 
+**Suggested decoration parent (for audit-graph hygiene):** Wrapper-decoration
+pattern: this row is a runner-module wrapper that aliases helper-code in
+`scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py`.
+The audit lane may convert this row to
+`audited_decoration_under_runner_module` (or similar non-chain-closure
+decoration tier) on the next re-pass. Source-side metadata only; audit
+lane owns the verdict.
+
 ## Purpose
 
 This wrapper note documents the shared helper layer used by several

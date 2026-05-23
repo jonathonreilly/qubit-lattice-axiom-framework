@@ -24,6 +24,14 @@ chain; it is not itself a retained theorem and does not supply a verdict.
 realization gate in the audit ledger. Pure-meta packaging note: the
 in-flight derivation work lives on the supporting notes listed below.
 
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md). The audit lane
+may convert this row from `audited_renaming` to
+`decoration_under_minimal_axioms` on the next re-pass, which would correctly
+make this row a non-chain-closure handle. Source-side metadata only;
+audit lane owns the verdict.
+
 ## Why this note exists
 
 This note is META infrastructure. It does NOT close the gate. Its only

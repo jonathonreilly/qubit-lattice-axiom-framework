@@ -203,3 +203,21 @@ or whether the PMNS-assisted `N_e` branch closes from primitives) is
 - the constrained-opt closure asserted above is conditional on both the
   imported selector and the favored-column identification; neither is
   derived here
+
+## 2026-05-22 audit-graph hygiene: no-retained-parent science backlog
+
+The audit-renaming verdict reflects that the minimum-information source
+law is an explicit selector definition (a convention, not a derived
+primitive). No retained framework derivation of the selector currently
+exists.
+
+**9 downstream PMNS rows import this row as the `minlaw` selector
+comparator** for their constrained-optimization runners. Those chains
+stay conditional on the selector-law convention until it is derived from
+baseline.
+
+**Suggested decoration parent (for the audit lane's next re-pass):**
+[`DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)
+(retained_bounded). The renaming-tier source-law row is the explicit
+selector convention layered on top of the retained stationary
+classification.

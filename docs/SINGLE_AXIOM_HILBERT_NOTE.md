@@ -32,6 +32,14 @@ for the current paper package remains `Cl(3)` on `Z^3` per
 `docs/MINIMAL_AXIOMS_2026-04-11.md`.
 **Runner:** `scripts/frontier_single_axiom_hilbert.py`
 
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md). The audit lane
+may convert this row from `audited_renaming` to
+`decoration_under_minimal_axioms` on the next re-pass, which would correctly
+make this row a non-chain-closure handle. Source-side metadata only;
+audit lane owns the verdict.
+
 **Scope note:** this is an operational support note for Hilbert-surface
 scoping. It is not the load-bearing accepted-input ledger for the current
 paper package, whose framework statement remains `Cl(3)` on `Z^3` with

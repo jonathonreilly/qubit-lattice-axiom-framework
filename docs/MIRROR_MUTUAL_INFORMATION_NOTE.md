@@ -11,3 +11,11 @@ The canonical mirror MI artifact is now frozen in:
 Use the chokepoint note for synthesis. This file is kept only as a pointer
 to the older multi-family MI discussion and should not be treated as the
 canonical mirror MI result.
+
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md`](MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md) (retained_bounded).
+The audit lane may convert this row from `audited_renaming` to
+`decoration_under_mirror_mutual_information_chokepoint` on the next re-pass,
+which would correctly make this row a non-chain-closure handle.
+Source-side metadata only; audit lane owns the verdict.

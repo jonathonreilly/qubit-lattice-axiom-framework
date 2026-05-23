@@ -437,3 +437,24 @@ This note does **not**:
 The same audit-named missing bridge theorem also blocks the companion
 row `koide_moment_ratio_uniformity_theorem_note_2026-04-19`
 (`audited_conditional` for the same `SO(2)`-quotient carrier choice).
+
+## 2026-05-22 audit-graph hygiene: no-retained-parent science backlog
+
+The audit-renaming verdict on this row reflects that the load-bearing
+carrier-identification step (mapping the 3x3 charged-lepton block to the
+two-slot reduced carrier `(rho_+, rho_⊥)`) is a definitional reduction,
+not derived from retained primitives. No retained replacement currently
+exists for that primitive.
+
+**13-14 downstream rows have load-bearing dependence on the κ=2μ/ν formula
+proved here** (the BAE-probe family + the koide-A1-probe family). Those
+chains stay conditional until the carrier-identification primitive is
+derived as a retained theorem from `Cl(3)/Z³` axioms.
+
+**Suggested decoration parent (for the audit lane's next re-pass):**
+the nearest retained sibling is
+[`KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md`](KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md)
+if the κ=2μ/ν formula can be presented as a corollary of the cyclic
+compression theorem; otherwise this is a genuine science backlog item
+("derive the carrier-identification primitive that closes MRU") rather
+than a hygiene fix.

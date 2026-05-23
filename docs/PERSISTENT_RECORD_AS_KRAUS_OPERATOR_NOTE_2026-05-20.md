@@ -10,6 +10,14 @@ formally connecting the framework's persistent-record lane to the
 Kraus / CPTP operator structure used by measurement-update rules. The
 Born note is a downstream repair target, not an upstream dependency.
 
+**Suggested decoration parent (for audit-graph hygiene):** This row's
+canonical decoration parent in the retained graph is
+[`PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md`](PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md) (retained_bounded).
+The audit lane may convert this row from `audited_renaming` to
+`decoration_under_persistent_record_overlap_kernel` on the next re-pass,
+which would correctly make this row a non-chain-closure handle.
+Source-side metadata only; audit lane owns the verdict.
+
 ## Claim
 
 For each persistent record `r` produced by the

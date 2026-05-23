@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 126 |
+| **retained** | 127 |
 | **retained_no_go** | 147 |
-| **retained_bounded** | 385 |
+| **retained_bounded** | 383 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1317 |
+| unaudited | 1318 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 17 |
@@ -46,22 +46,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 632 |
+| `audited_clean` | 631 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1542 |
+| `unaudited` | 1543 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1022 |
+| `bounded_theorem` | 1021 |
 | `decoration` | 23 |
 | `meta` | 229 |
 | `no_go` | 239 |
 | `open_gate` | 112 |
-| `positive_theorem` | 752 |
+| `positive_theorem` | 753 |
 
 | criticality | count |
 |---|---:|
@@ -310,12 +310,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
-| `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4438,19 +4437,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The retained claim is a no-go, not support for the remaining beta-dependent program. The obstruction closes by exact small-beta algebra: equal analytic expansions of the same plaquette observable require equal first derivatives at beta=0, and the candidate constant lift has the wrong derivative. The runner hard-codes the elementary Haar slope rather than independently deriving Haar integration, but the source derivation is explicit enough and the runner checks the decisive slope mismatch for the scoped no-go. Residual risk is limited to normalization conventions for the plaquette/action; within the conventions stated in the note, the conclusion follows.
 - **auditor confidence:** high
 
-### `gauge_vacuum_plaquette_distinct_shell_theorem_note`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** On the accepted Wilson 3 spatial + 1 derived-time surface, the minimal distinct connected shell containing a marked plaquette is the six-face elementary cube boundary, giving distinct numerator onset beta^5 and vacuum shell onset beta^6.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-judicial-gpt-5.5-20260511-230648-gauge_vacuum_plaquette_d-003`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** The exhaustive check of all 5^4 one-per-observed-edge distinct choices finds no four-action shell closes the marked plaquette boundary, while the other five faces of an elementary cube do close it.  _(class `A`)_
-- **chain closes:** True — The restricted packet supports the claim as a finite combinatorial boundary calculation on the accepted Wilson cell complex. The runner actually enumerates candidate neighboring plaquettes, computes mod-2 edge boundaries, rules out the four-action case, and verifies the five-action cube witness; the beta^5 and beta^6 order statements follow within that bounded geometric scope. This is class A rather than class C because it is an algebraic/incidence check over accepted lattice inputs, not a first-principles Cl(3) computation producing an independent physical number.
-- **rationale:** The restricted packet supports the claim as a finite combinatorial boundary calculation on the accepted Wilson cell complex. The runner actually enumerates candidate neighboring plaquettes, computes mod-2 edge boundaries, rules out the four-action case, and verifies the five-action cube witness; the beta^5 and beta^6 order statements follow within that bounded geometric scope. This is class A rather than class C because it is an algebraic/incidence check over accepted lattice inputs, not a first-principles Cl(3) computation producing an independent physical number.
-- **auditor confidence:** high
-
 ### `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10`
 
 - **Note:** [`GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md)
@@ -4588,15 +4574,15 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 ### `gauge_vacuum_plaquette_mixed_cumulant_audit_note`
 
 - **Note:** [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the closed small-beta/onset theorem that the first nonlocal full-vacuum plaquette mixed-cumulant contribution is 4/18^5=1/472392 and hence beta_eff(beta)=beta+beta^5/26244+O(beta^6), with beta=6 continuation outside scope.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact small-beta first nonlocal Wilson plaquette onset coefficient on the accepted 3 spatial + 1 derived-time surface, excluding nonperturbative beta=6 plaquette closure.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop:fresh-2026-05-02-mixed-cumulant-herschel`  (codex-gpt-5; independence=fresh_context)
-- **load-bearing step:** A finite first-principles SU(3) link-balance search has no nonlocal survivor through beta^4 and exactly four elementary cube-shell survivors at beta^5, each contributing 1/18^5.  _(class `C`)_
-- **chain closes:** True — Within the stated onset scope, the chain closes from leaf-factorization/leafless reduction, exhaustive finite local support enumeration, exact cube-shell contraction, and algebraic conversion using P_1plaq'(0)=1/18. The prompt explicitly excludes the nonperturbative beta=6 beta_eff and canonical P(6), so those do not block closure.
-- **rationale:** The scoped claim is a bounded onset theorem, not a full retained-grade beta=6 result. The runner reports exact verification of finite candidate counts, the beta^4 null result, the beta^5 four-survivor result, the per-shell coefficient, the total coefficient, and the beta_eff coefficient, with no failures. No one-hop dependencies are listed and no external comparator or tuning is involved under the scoped claim.
-- **auditor confidence:** medium
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260523T134209Z-gauge_vacuum_plaquette_mixed_cumulant_au-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The leafless-support enumeration finds exactly four order-beta^5 cube-shell survivors, each contributing 1/18^5, so P_full(beta)-P_1plaq(beta)=beta^5/472392+O(beta^6).  _(class `C`)_
+- **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class C). Vote breakdown: J1: second / audited_clean / positive_theorem / class C; J2: second / audited_clean / positive_theorem / class C; J3: second / audited_clean / positive_theorem / class C; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The restricted packet contains a completed runner and source code that genuinely constructs the local plaquette supports, checks exact mod-3 link-balance assignments, and performs exact rational coefficient arithmetic. The result is a positive exact formal small-beta theorem within its stated Wilson-surface domain, not a beta=6 physical closure claim. The beta=6 exclusion narrows the claim scope but does not by itself force bounded_theorem classification for the audited onset coefficient. | The restricted packet supports a clean class C finite combinatorial/Haar-normalization computation for the stated small-beta onset coefficient. The open beta=6 analytic continuation is explicitly outside the audited scope, so it should not force the scoped onset theorem into bounded_theorem. The second audit correctly separates the positive formal theorem from the still-open nonperturbative continuation. | The first and second audits agree on audited_clean and class C; the real dispute is claim_type. The audited statement is a narrow formal perturbative onset theorem, not a claim of full beta=6 analytic plaquette closure, so leaving the nonperturbative continuation open does not by itself make the scoped theorem bounded. The provided runner and source note support a first-principles finite combinatorial/Haar-normalization computation rather than a definition, renaming, comparator, or tuned numerical match. | The restricted packet contains a completed runner and source code that actually constructs local plaquette supports, tests exact mod-3 link-balance assignments, classifies the beta^4 and beta^5 residual supports, and performs exact Fraction arithmetic. The claim is not a beta=6 physical plaquette-closure claim; it is a formal small-beta onset theorem inside the stated Wilson-surface setup. That makes the second audit's positive_theorem classification more precise than the first audit's bounded_theorem label, while preserving audited_clean and class C. | The restricted packet contains a completed runner and source code that performs a finite combinatorial enumeration plus exact Fraction arithmetic, so the load-bearing step is class C rather than a definition, renaming, comparator, or tuned numerical match. The audited claim is not the beta=6 physical plaquette closure or the derivation of the Wilson surface from deeper framework gates; it is the formal onset coefficient once that surface is fixed. That scope is exact and affirmative, so positive_theorem is the better classification than bounded_theorem, with the beta=6 caveat handled in the scope rather than by demoting the theorem type.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class C). Vote breakdown: J1: second / audited_clean / positive_theorem / class C; J2: second / audited_clean / positive_theorem / class C; J3: second / audited_clean / positive_theorem / class C; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The restricted packet contains a completed runner and source code that genuinely constructs the local plaquette supports, checks exact mod-3 link-balance assignments, and performs exact rational coefficient arithmetic. The result is a positive exact formal small-beta theorem within its stated Wilson-surface domain, not a beta=6 physical closure claim. The beta=6 exclusion narrows the claim scope but does not by itself force bounded_theorem classification for the audited onset coefficient. | The restricted packet supports a clean class C finite combinatorial/Haar-normalization computation for the stated small-beta onset coefficient. The open beta=6 analytic continuation is explicitly outside the audited scope, so it should not force the scoped onset theorem into bounded_theorem. The second audit correctly separates the positive formal theorem from the still-open nonperturbative continuation. | The first and second audits agree on audited_clean and class C; the real dispute is claim_type. The audited statement is a narrow formal perturbative onset theorem, not a claim of full beta=6 analytic plaquette closure, so leaving the nonperturbative continuation open does not by itself make the scoped theorem bounded. The provided runner and source note support a first-principles finite combinatorial/Haar-normalization computation rather than a definition, renaming, comparator, or tuned numerical match. | The restricted packet contains a completed runner and source code that actually constructs local plaquette supports, tests exact mod-3 link-balance assignments, classifies the beta^4 and beta^5 residual supports, and performs exact Fraction arithmetic. The claim is not a beta=6 physical plaquette-closure claim; it is a formal small-beta onset theorem inside the stated Wilson-surface setup. That makes the second audit's positive_theorem classification more precise than the first audit's bounded_theorem label, while preserving audited_clean and class C. | The restricted packet contains a completed runner and source code that performs a finite combinatorial enumeration plus exact Fraction arithmetic, so the load-bearing step is class C rather than a definition, renaming, comparator, or tuned numerical match. The audited claim is not the beta=6 physical plaquette closure or the derivation of the Wilson surface from deeper framework gates; it is the formal onset coefficient once that surface is fixed. That scope is exact and affirmative, so positive_theorem is the better classification than bounded_theorem, with the beta=6 caveat handled in the scope rather than by demoting the theorem type.
+- **auditor confidence:** judicial_panel_majority
 
 ### `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`
 

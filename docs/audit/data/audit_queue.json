@@ -3,7 +3,7 @@
     "critical": 264,
     "high": 339,
     "leaf": 343,
-    "medium": 335
+    "medium": 334
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -18002,30 +18002,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.407,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_observable_principle_scale_invariant_source_response_exact_2026_05_16.py",
-      "transitive_descendants": 14
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28895,6 +28871,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_color_projection_correction_note",
+        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38254,32 +38256,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_pr230_consolidated_status_note_2026-05-22",
-        "yt_color_projection_correction_note",
-        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38391,5 +38367,5 @@
     }
   ],
   "ready_count": 27,
-  "total_pending": 1281
+  "total_pending": 1280
 }

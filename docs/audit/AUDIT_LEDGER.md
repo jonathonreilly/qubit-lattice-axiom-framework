@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 126 |
 | **retained_no_go** | 151 |
-| **retained_bounded** | 385 |
+| **retained_bounded** | 386 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1294 |
+| unaudited | 1293 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 16 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 640 |
+| `audited_clean` | 641 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1519 |
+| `unaudited` | 1518 |
 
 | claim_type | count |
 |---|---:|
@@ -457,6 +457,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
+| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -7227,6 +7228,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6).  _(class `C`)_
 - **chain closes:** True — The Planck spacing and standard finite-difference kinetic operator are explicit hypotheses of the bounded scope, not hidden dependencies. Under those hypotheses, the Taylor expansion fixes the a^2/12 coefficient and the cubic p_i^4 anisotropy, and the cached runner uses the corrected (4/a^2) normalization and reproduces the quoted Planck-scale ratios.
 - **rationale:** The second audit is right to phrase the result as conditional on a Planck-spaced Z^3 lattice and the standard nearest-neighbor finite-difference operator, but those conditions are already inside the audited bounded theorem scope and do not by themselves force audited_conditional. The clean verdict applies only to the scoped dispersion correction and arithmetic comparisons to the quoted bounds; broader note language about full sector-specific SME maps, taste-breaking phenomenology, or all-current experimental status is not ratified here.
+- **auditor confidence:** high
+
+### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the narrow canonical-frame statement that a projective measurement's canonical Naimark/Lüders dilation has outcome Kraus operator K_P = P and hence sequential effect PEP, not uniqueness among all instruments for the same POVM.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124617Z-0dd41b35-lsp_projective_derivatio-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the canonical dilation U_int |psi>|0> = sum_r P_r|psi>|r> into K_r = <r| U_int (I ⊗ |0>) gives K_r = P_r.  _(class `A`)_
+- **chain closes:** True — Given the stated canonical dilation formula and the standard Kraus extraction formula, the equality K_r = P_r follows by an orthonormal apparatus-basis contraction. The note explicitly limits the result to the canonical Lüders/Naimark frame and does not claim instrument uniqueness.
+- **rationale:** The load-bearing step is a straightforward algebraic contraction inside the explicitly stated canonical projective-measurement dilation. The cited axiom-premise authority supplies only the finite qubit-lattice setting and is covered by the axiom-premise carve-out; the measurement-theory content is used in the note's bounded, canonical-frame scope rather than as a uniqueness claim. No runner was needed because the claim is symbolic, not numerical or computational.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

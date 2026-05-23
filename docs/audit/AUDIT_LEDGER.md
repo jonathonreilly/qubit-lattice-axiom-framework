@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1269 |
+| unaudited | 1268 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
-| ~~audited_conditional~~ | 120 |
+| ~~audited_conditional~~ | 121 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 648 |
-| `audited_conditional` | 120 |
+| `audited_conditional` | 121 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1495 |
+| `unaudited` | 1494 |
 
 | claim_type | count |
 |---|---:|
@@ -797,6 +797,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
@@ -3996,6 +3997,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given n̂_x=(I-σ_3^{(x)})/2 on H=⊗_{x=1}^N C², the tensor product F=⊗_x σ_3^{(x)} acts on each occupation basis state as (-1)^{∑_x ν_x}=exp(iπQ̂_total).  _(class `A`)_
 - **chain closes:** True — The stated results follow directly from per-site Pauli algebra, tensor-product factorization, and the elementary even/odd binary-string count. No Hamiltonian, Noether conservation, physical fermion realization, or external comparator is imported inside the audited scope.
 - **rationale:** The scoped theorem is a closed finite-dimensional Pauli-algebra identity. The runner checks the load-bearing identities exactly in the N=3 representative case and includes finite-N combinatorial spot checks; the general proof supplies the symbolic tensor-factor argument. Minor wording around deriving [F,n̂_x]=0 from the bilinear clause is harmless because the same Z_2-even conjugation applies directly to σ_-^{(x)}σ_+^{(x)}.
+- **auditor confidence:** high
+
+### `field_equation_derivation_note`
+
+- **Note:** [`FIELD_EQUATION_DERIVATION_NOTE.md`](../../docs/FIELD_EQUATION_DERIVATION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited whether the note derives screened Poisson as the Euler-Lagrange equation and uniquely selects it within the stated local quadratic graph-field-action class from the cited packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T201051Z-9f8146ee-field_equation_derivatio-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Extremizing the displayed local quadratic graph field action gives (L + mu^2 I) Phi = G rho.  _(class `A`)_
+- **chain closes:** False — The variation of the chosen action algebraically gives the screened Poisson equation, but the packet does not close the missing bridge that this chosen action is uniquely forced by the framework rather than assumed. The included runner also reports multiple passing field operators under the consistency battery, so it does not support uniqueness selection.
+- **rationale:** The displayed Euler-Lagrange calculation is a valid algebraic consequence of the displayed action, but the action itself supplies the screened-Poisson structure as an input. The cited authority is retained_bounded and explicitly says it is not a uniqueness theorem, while the primary runner finds screened Poisson, bare Laplacian, biharmonic, and heat-kernel variants all pass its stability/TOWARD/norm battery. Therefore the derivation supports a conditional variational representation, not a closed positive theorem that the field equation is uniquely selected.
 - **auditor confidence:** high
 
 ### `fifth_family_complex_boundary_note`

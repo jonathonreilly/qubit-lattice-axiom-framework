@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Residual-environment identification runner on the accepted Wilson 3+1 surface,
-finite-box derived form.
+Residual-environment finite coefficient packet on the accepted Wilson 3+1
+surface.
 
 Previously this runner injected a generic positive conjugation-symmetric
 diagonal witness rho_env(p,q) and verified packaging only. The auditor
@@ -17,14 +17,15 @@ same closed-form computation that the companion runner
 `frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py`
 performs and cross-checks against direct Weyl integration to machine precision.
 
-What this revised runner now does on the finite 0 <= p,q <= NMAX box:
+What this runner does on the finite 0 <= p,q <= NMAX box:
 
 - computes rho_(p,q)(6) directly from the canonical Wilson character integral
   rather than asserting a witness sequence;
-- verifies R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q) with the computed values;
+- verifies the finite diagonal packet action
+  R_6^packet chi_(p,q) = rho_(p,q)(6) chi_(p,q) with the computed values;
 - verifies the factorized framework-point law
-  exp(3 J) D_6^loc R_6^env exp(3 J) is self-adjoint, conjugation-symmetric and
-  Perron-positive with those computed values;
+  exp(3 J) D_6^loc R_6^packet exp(3 J) is self-adjoint,
+  conjugation-symmetric and Perron-positive with those computed values;
 - documents the explicit numerical distance from the prior witness so an
   auditor can confirm the witness has actually been replaced.
 
@@ -33,9 +34,8 @@ What this revised runner explicitly does NOT close (still open):
 - the all-weight closure beyond the computed finite box;
 - the full unmarked spatial Wilson environment tensor-transfer / Perron data;
 - analytic P(6);
-- the global theorem that the stripped residual factor equals the compressed
-  unmarked spatial Wilson environment for every weight (the parent note is
-  scoped accordingly).
+- the theorem that the stripped residual factor equals the compressed unmarked
+  spatial Wilson environment.
 """
 
 from __future__ import annotations
@@ -191,10 +191,10 @@ def main() -> int:
     rho_min = float(np.min(rho_env))
     rho_at_00 = float(rho_env[index[(0, 0)]])
 
-    # Direct eigen-action check on the marked class-function basis: the
-    # diagonal operator R_6^env, built from the computed Wilson coefficients,
-    # acts on each chi_(p,q) (here represented by the basis vector e_(p,q))
-    # with eigenvalue rho_(p,q)(6).
+    # Direct eigen-action check on the marked class-function basis: the finite
+    # diagonal packet, built from the computed Wilson coefficients, acts on
+    # each chi_(p,q) (here represented by e_(p,q)) with eigenvalue
+    # rho_(p,q)(6).
     eig_action_err = 0.0
     n = len(weights)
     for k in range(n):
@@ -208,7 +208,7 @@ def main() -> int:
     expectation = float(psi @ (jmat @ psi))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE RESIDUAL ENVIRONMENT IDENTIFICATION")
+    print("GAUGE-VACUUM PLAQUETTE RESIDUAL ENVIRONMENT FINITE COEFFICIENT PACKET")
     print("=" * 78)
     print()
     print("Exact already-fixed pieces")
@@ -216,15 +216,15 @@ def main() -> int:
     print(f"  half-slice multiplier min eig         = {float(np.min(np.linalg.eigvalsh(multiplier))):.12f}")
     print(f"  local-factor min/max                  = {float(np.min(np.diag(d_local))):.12e}, {float(np.max(np.diag(d_local))):.12f}")
     print()
-    print("Computed residual environment coefficients (Bessel-determinant, finite box)")
+    print("Computed finite packet coefficients (Bessel-determinant, finite box)")
     print(f"  rho_(0,0)(6)                          = {rho_at_00:.16f}")
     print(f"  rho coeff min/max                     = {rho_min:.12e}, {rho_env.max():.12f}")
     print(f"  rho swap error                        = {rho_sym:.3e}")
     print(f"  local/environment commutator          = {commute_err:.3e}")
-    print(f"  R_6^env chi_(p,q) = rho_(p,q) chi err = {eig_action_err:.3e}")
+    print(f"  R_6^packet chi_(p,q) = rho_(p,q) chi err = {eig_action_err:.3e}")
     print(f"  max |rho_computed - prior_witness|    = {witness_diff_abs:.3e}")
     print()
-    print("Resulting factorized transfer (computed rho, no witness injection)")
+    print("Resulting finite package (computed rho, no witness injection)")
     print(f"  transfer symmetry error               = {transfer_sym:.3e}")
     print(f"  transfer swap error                   = {transfer_swap:.3e}")
     print(f"  minimum transfer entry                = {transfer_min:.6e}")
@@ -247,29 +247,29 @@ def main() -> int:
         detail=f"min diagonal entry={float(np.min(np.diag(d_local))):.6e}",
     )
     check(
-        "the residual environment factor R_6^env is built from the computed normalized single-link Wilson character coefficients rho_(p,q)(6) (Bessel-determinant identity), not from a hand-picked witness sequence",
+        "the finite diagonal packet R_6^packet is built from the computed normalized single-link Wilson character coefficients rho_(p,q)(6) (Bessel-determinant identity), not from a hand-picked witness sequence",
         witness_diff_abs > 1.0e-2 and abs(rho_at_00 - 1.0) < 1.0e-12 and rho_min > 0.0,
         detail=f"rho_(0,0)(6)={rho_at_00:.12f}, min rho={rho_min:.6e}, max |rho - prior_witness|={witness_diff_abs:.3e}",
     )
     check(
-        "R_6^env acts diagonally on the marked-plaquette class-function basis with R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q) using the computed Wilson coefficients",
+        "R_6^packet acts diagonally on the marked-plaquette class-function basis with R_6^packet chi_(p,q) = rho_(p,q)(6) chi_(p,q) using the computed Wilson coefficients",
         eig_action_err < 1.0e-14,
         detail=f"eigen-action error = {eig_action_err:.3e}",
     )
     check(
-        "with the computed rho_env replacing the prior witness, the factorized framework-point law exp(3 J) D_6^loc R_6^env exp(3 J) is self-adjoint, conjugation-symmetric, and positivity-improving on the truncated source sector",
+        "with the computed rho_env replacing the prior witness, the finite package exp(3 J) D_6^loc R_6^packet exp(3 J) is self-adjoint, conjugation-symmetric, and positivity-improving on the truncated source sector",
         rho_sym < 1.0e-12 and commute_err < 1.0e-12 and transfer_sym < 1.0e-12 and transfer_swap < 1.0e-12 and transfer_min > 0.0,
         detail=f"rho_swap={rho_sym:.3e}, [D,R]={commute_err:.3e}, transfer_sym={transfer_sym:.3e}, transfer_swap={transfer_swap:.3e}, min entry={transfer_min:.3e}",
     )
 
     check(
-        "the residual environment operator R_6^env is structurally distinct from the local mixed-kernel factor D_6^loc and is isolated as its own source-sector object",
+        "the finite diagonal packet R_6^packet is structurally distinct from the local mixed-kernel factor D_6^loc and is isolated as its own source-sector object",
         float(np.max(np.abs(np.diag(r_env) - 1.0))) > 1.0e-3,
-        detail="the mixed kernel is fixed by D_6^loc; R_6^env supplies the still-open environment-compression coefficients",
+        detail="the mixed kernel is fixed by D_6^loc; R_6^packet supplies the computed finite coefficient slot",
         bucket="SUPPORT",
     )
     check(
-        "with the computed rho_env, the factorized transfer Perron expectation <J> is positive on the truncated source sector",
+        "with the computed rho_env, the finite package Perron expectation <J> is positive on the truncated source sector",
         expectation > 0.0,
         detail=f"Perron <J> = {expectation:.6f}",
         bucket="SUPPORT",

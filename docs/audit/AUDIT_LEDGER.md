@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1282 |
+| unaudited | 1281 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 15 |
+| ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 107 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -51,8 +51,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 15 |
-| `unaudited` | 1506 |
+| `audited_renaming` | 16 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -983,6 +983,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 
@@ -9014,6 +9015,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The mathematical load-bearing step is a standard finite-dimensional max-entropy closure: normalization alone on A_Lambda gives the unique trace state, whose one-site marginals are I/2 and whose automorphism translates are unchanged. No runner was needed for this non-numerical theorem. The audit cannot mark clean because the only provided load-bearing upstream authority, docs/MINIMAL_AXIOMS_2026-05-20.md, is labeled effective_status meta rather than retained, retained_bounded, or retained_no_go under the rubric.
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-05-20.md`
+- **auditor confidence:** high
+
+### `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Commuting bounded finite-source observables on a finite-region qubit algebra, with rho_ref taken as a given input state, and W[J]=log Tr(rho_ref e^{-J})-log Tr(rho_ref).
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T001713Z-d9ca5cbd-pwc_derivation_from_cumu-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the commuting-source scope, the framework's W[J] is exactly the standard source-coupled cumulant generating functional Q1 with rho = rho_ref.  _(class `F`)_
+- **chain closes:** False — The packet shows a valid standard-math identification once the PWC formula for W is already assumed, but it does not derive the framework's use of that W from the cited axiom note. The missing step is an independent retained source or theorem fixing the framework pre-record W rather than identifying it by definition.
+- **rationale:** The load-bearing move is an identification of the already-stated framework symbol W with the standard cumulant generating functional under the substitution rho = rho_ref. That is not a first-principles derivation from A1/A2 or an independent algebraic closure over retained inputs; it is a symbol/concept identity plus standard cumulant facts. The commuting-source cumulant statement is mathematically plausible on its own scope, but the presented chain reduces to naming the PWC expression as the standard CGF. A second auditor should also check the odd-derivative sign convention from e^{-J}, since derivatives give (-1)^n cumulants unless the sign convention is explicitly absorbed.
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

@@ -202069,22 +202069,41 @@
       "verdict_rationale": null
     },
     "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T00:18:46.007097+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001713Z-d9ca5cbd-pwc_derivation_from_cumu-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet shows a valid standard-math identification once the PWC formula for W is already assumed, but it does not derive the framework's use of that W from the cited axiom note. The missing step is an independent retained source or theorem fixing the framework pre-record W rather than identifying it by definition.",
       "claim_id": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
-      "claim_scope": null,
+      "claim_scope": "Commuting bounded finite-source observables on a finite-region qubit algebra, with rho_ref taken as a given input state, and W[J]=log Tr(rho_ref e^{-J})-log Tr(rho_ref).",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T00:18:46.007097+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -202092,23 +202111,23 @@
         "minimal_axioms_2026-05-20"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For the commuting-source scope, the framework's W[J] is exactly the standard source-coupled cumulant generating functional Q1 with rho = rho_ref.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "665f3688278696b9e44bb66b35b3e2e9ce1f12b2101ce94ae7b5a09bd0b73c42",
       "note_path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit only if a retained upstream theorem independently fixes the framework pre-record W[J] form, or if the claim is intentionally reclassified as a definition/terminology note rather than a bounded theorem.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -202119,7 +202138,7 @@
       "runner_path": null,
       "title": "PWC Derivation from the Standard Cumulant Generating Functional (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing move is an identification of the already-stated framework symbol W with the standard cumulant generating functional under the substitution rho = rho_ref. That is not a first-principles derivation from A1/A2 or an independent algebraic closure over retained inputs; it is a symbol/concept identity plus standard cumulant facts. The commuting-source cumulant statement is mathematically plausible on its own scope, but the presented chain reduces to naming the PWC expression as the standard CGF. A second auditor should also check the odd-derivative sign convention from e^{-J}, since derivatives give (-1)^n cumulants unless the sign convention is explicitly absorbed."
     },
     "q_integer_spectrum_theorem_note_2026-05-02": {
       "audit_date": "2026-05-22T22:40:46.574341+00:00",

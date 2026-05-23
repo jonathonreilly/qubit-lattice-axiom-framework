@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 378 |
+| **retained_bounded** | 379 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1294 |
+| unaudited | 1293 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 631 |
+| `audited_clean` | 632 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1518 |
+| `unaudited` | 1517 |
 
 | claim_type | count |
 |---|---:|
@@ -464,6 +464,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_multistage_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_2d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_chokepoint_boundary_fit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7406,6 +7407,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every scanned topN value stayed stable, with max relative stage-1/stage-2 ratio error 0.0066069 below 0.01 and support carry 1.000 across the scan.  _(class `C`)_
 - **chain closes:** True — The runner and helpers instantiate the stated 2D lattice, source compression, propagation, response metrics, and stability gates directly; the printed PASS checks are backed by computed rows rather than imported prior verdicts. The conclusion closes only for the finite scanned range and does not establish persistent mass or an inertial-response theorem.
 - **rationale:** The load-bearing step is a bounded finite computation: all listed topN values are recomputed and checked against explicit stability thresholds. The helper chain supplies the lattice generation, propagation, profiles, source fields, and overlap calculations, and no cited authority or prior contested premise is imported as the result. The clean verdict is limited to the note's finite-sweep claim that no sharp support-collapse threshold appears in the scanned retained 2D family.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_two_stage_2d_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_TWO_STAGE_2D_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_TWO_STAGE_2D_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Frozen 2D ordered-lattice companion run at h=0.5, W=12, L=20, source_y=5.0, testing whether topN-compressed broad surrogate sources remain stable over a second sourced-response stage.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T000044Z-1204190d-mesoscopic_surrogate_two-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the retained 2D family, the stage-2 broad surrogate built from the stage-1 sourced response reproduces the stage-1 surrogate rows at printed precision across the tested topN values.  _(class `C`)_
+- **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
+- **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
 - **auditor confidence:** high
 
 ### `minimal_source_driven_field_probe_note`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 214,
-    "leaf": 336,
+    "leaf": 335,
     "medium": 337
   },
   "cycle_break_target_count": 30,
@@ -18102,6 +18102,36 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "mesoscopic_surrogate_localization_frontier_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "mesoscopic_surrogate_multistage_note",
+        "mesoscopic_surrogate_backreaction_note",
+        "broad_surrogate_point_source_compare_note",
+        "mesoscopic_surrogate_two_stage_2d_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/quasi_persistent_relaunch_probe.py",
+        "scripts/two_body_momentum_harness.py"
+      ],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/mesoscopic_surrogate_localization_frontier.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -27117,36 +27147,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mesoscopic_surrogate_localization_frontier_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mesoscopic_surrogate_multistage_note",
-        "mesoscopic_surrogate_backreaction_note",
-        "broad_surrogate_point_source_compare_note",
-        "mesoscopic_surrogate_two_stage_2d_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/quasi_persistent_relaunch_probe.py",
-        "scripts/two_body_momentum_harness.py"
-      ],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/mesoscopic_surrogate_localization_frontier.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -27468,36 +27468,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_right_handed_species_dependence.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "mesoscopic_surrogate_two_stage_2d_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mesoscopic_surrogate_source_2d_note",
-        "ordered_lattice_packet_reidentification_note",
-        "ordered_lattice_quasi_persistent_relaunch_note",
-        "quasi_persistent_relaunch_probe_note",
-        "mesoscopic_surrogate_backreaction_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/lattice_2d_continuum_distance.py"
-      ],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/MESOSCOPIC_SURROGATE_TWO_STAGE_2D_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mesoscopic_surrogate_two_stage_2d.py",
-      "transitive_descendants": 3
     },
     {
       "audit_independence_required": "any_non_self",
@@ -37085,5 +37055,5 @@
     }
   ],
   "ready_count": 12,
-  "total_pending": 1294
+  "total_pending": 1293
 }

@@ -18,9 +18,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 128 |
+| **retained** | 129 |
 | **retained_no_go** | 146 |
-| **retained_bounded** | 380 |
+| **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1321 |
@@ -56,12 +56,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1019 |
+| `bounded_theorem` | 1018 |
 | `decoration` | 23 |
 | `meta` | 229 |
 | `no_go` | 238 |
 | `open_gate` | 113 |
-| `positive_theorem` | 755 |
+| `positive_theorem` | 756 |
 
 | criticality | count |
 |---|---:|
@@ -308,7 +308,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -4411,15 +4411,15 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 ### `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`
 
 - **Note:** [`GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite Wilson source-surface identity: d_beta C_n(p1,...,pn; beta)=sum_r C_{n+1}(p1,...,pn,r; beta), with no claimed beta=6 hierarchy closure.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and the resulting connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure is outside scope.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-fresh-hooke-connected-hierarchy-20260502`  (codex-gpt-5; independence=fresh_context)
-- **load-bearing step:** Because beta enters as one common source on every plaquette, d/d beta = sum_r d/d J_r on the source-shifted finite Wilson surface.  _(class `A`)_
-- **chain closes:** True — The finite-volume partition function depends on beta and J only through y_p=beta+J_p, so finite source derivatives commute to give the connected-cumulant hierarchy; the note explicitly leaves nonperturbative beta=6 closure open.
-- **rationale:** The scoped theorem is an exact finite-source algebraic identity for connected plaquette cumulants on the finite Wilson source surface. The runner checks the source-derivative hierarchy and the exact onset coefficients, while the note explicitly excludes nonperturbative hierarchy closure and analytic P(6) closure. No physical readout, comparator tuning, or support-class promotion is used inside this bounded scope.
-- **auditor confidence:** high
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260523T135941Z-gauge_vacuum_plaquette_connected_hierarc-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Because beta enters only as the common shifted source y_p = beta + J_p, d/d beta = sum_r d/d J_r on the finite Wilson source surface, hence d_beta C_n = sum_r C_{n+1}.  _(class `A`)_
+- **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The load-bearing statement is an algebraic consequence of the finite source-deformed Wilson partition function and commutation of finite source derivatives. It is not a definition-only renaming, a tuned numerical match, or dependent on an external comparator. The note's explicit admission that beta=6 nonperturbative hierarchy closure remains open limits the downstream application, but it does not block the exact finite-source hierarchy theorem itself. | The decisive step is the source-shift identity for the finite source-deformed Wilson partition function, followed by ordinary finite source differentiation. That is a class A algebraic identity, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves beta=6 nonperturbative closure open, and that open problem is not part of the ratified theorem scope. Helper-runner imports affect auxiliary onset arithmetic, not the load-bearing finite connected-hierarchy theorem. | The load-bearing step is the chain-rule identity for W_L[J; beta]=W_tilde(beta+J_p), so it is class A algebra rather than a definition-only renaming or numerical match. No cited authority is required for the finite Wilson source-surface identity, and the note's open beta=6 nonperturbative closure is explicitly outside the ratified scope. The helper-imported onset arithmetic is not needed to establish the exact connected hierarchy and should not widen the clean claim. | The finite-source hierarchy follows directly by algebra from Z_L[J; beta] depending on beta and J_p only through y_p=beta+J_p. This is not a definition substitution, numerical match, or external comparator check, and it does not require the still-open explicit beta=6 nonperturbative closure. The second audit supplies the applyable scoped tuple and correctly classifies the claim as a positive theorem at the finite hierarchy identity scope. | The restricted packet supports the exact hierarchy as an algebraic consequence of the source-deformed finite Wilson partition function depending on beta and J_p only through y_p = beta + J_p. That is class A algebraic closure, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves nonperturbative beta_eff closure at beta=6 open, so the correct retained scope is the finite-source identity and cumulant hierarchy, not analytic plaquette closure. The helper-imported onset arithmetic is ancillary to this scoped theorem and does not block the positive_theorem classification for the hierarchy itself.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The load-bearing statement is an algebraic consequence of the finite source-deformed Wilson partition function and commutation of finite source derivatives. It is not a definition-only renaming, a tuned numerical match, or dependent on an external comparator. The note's explicit admission that beta=6 nonperturbative hierarchy closure remains open limits the downstream application, but it does not block the exact finite-source hierarchy theorem itself. | The decisive step is the source-shift identity for the finite source-deformed Wilson partition function, followed by ordinary finite source differentiation. That is a class A algebraic identity, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves beta=6 nonperturbative closure open, and that open problem is not part of the ratified theorem scope. Helper-runner imports affect auxiliary onset arithmetic, not the load-bearing finite connected-hierarchy theorem. | The load-bearing step is the chain-rule identity for W_L[J; beta]=W_tilde(beta+J_p), so it is class A algebra rather than a definition-only renaming or numerical match. No cited authority is required for the finite Wilson source-surface identity, and the note's open beta=6 nonperturbative closure is explicitly outside the ratified scope. The helper-imported onset arithmetic is not needed to establish the exact connected hierarchy and should not widen the clean claim. | The finite-source hierarchy follows directly by algebra from Z_L[J; beta] depending on beta and J_p only through y_p=beta+J_p. This is not a definition substitution, numerical match, or external comparator check, and it does not require the still-open explicit beta=6 nonperturbative closure. The second audit supplies the applyable scoped tuple and correctly classifies the claim as a positive theorem at the finite hierarchy identity scope. | The restricted packet supports the exact hierarchy as an algebraic consequence of the source-deformed finite Wilson partition function depending on beta and J_p only through y_p = beta + J_p. That is class A algebraic closure, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves nonperturbative beta_eff closure at beta=6 open, so the correct retained scope is the finite-source identity and cumulant hierarchy, not analytic plaquette closure. The helper-imported onset arithmetic is ancillary to this scoped theorem and does not block the positive_theorem classification for the hierarchy itself.
+- **auditor confidence:** judicial_panel_majority
 
 ### `gauge_vacuum_plaquette_constant_lift_obstruction_note`
 

@@ -124993,22 +124993,42 @@
       "verdict_rationale": "The runner source genuinely constructs the 16-dimensional operators, verifies the Clifford relations, computes the P_A compressions, and exhaustively checks the 15 four-bilinear subsets; it is not merely printing expected constants. The load-bearing step is an algebraic operator/projection identity over the explicitly supplied constructions, not a definition, renaming, external comparator, or tuned numerical match. Within the natural-action scope stated in the theorem, the no-go follows from the provided inputs."
     },
     "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T19:48:27.040293+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_derivation_note"
+        ],
+        "load_bearing_score": 5.959,
+        "runner_hash": "51df6c191e8d2de45fe2be4997cf1a1751a4147ec8e98795358f8d4c0d355fbe",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T194659Z-cc090d7e-hubble_lane5_c1_a2_actio-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rescaling obstruction closes algebraically conditional on the admitted inputs. The retained-grade dependency chain does not close in this packet because the source note depends on the open Staggered-Dirac realization gate and the g_bare parent repair gate.",
       "claim_id": "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Audited the narrow obstruction that admitted dimensionless inputs g_bare=1, beta=6, plaquette/u0, APBC, and c_cell=1/4 do not by themselves determine a dimensional kappa on P_A H_cell.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T19:48:27.040293+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -125016,22 +125036,25 @@
         "g_bare_derivation_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 5.959,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For any positive scale lambda, the common replacement S_dim -> lambda S_dim and kappa -> lambda kappa leaves exp(i S_dim/kappa) and the dimensionless lattice weights unchanged, so the A2 inputs do not select an absolute action quantum.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "54a6ed25b9dde6b8204e07c0efbfcbd52c3696d7c42b1488a0c38f1241ad2e6d",
       "note_path": "docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: close and re-audit the Staggered-Dirac realization gate and the g_bare parent repair chain, then re-run this obstruction audit on the retained dependency surface.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/G_BARE_DERIVATION_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-03T13:40:45.888529+00:00",
@@ -125066,18 +125089,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 7,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py",
       "title": "Lane 5 `(C1)` A2 Action-Unit Metrology Obstruction Note",
       "transitive_descendants": 21,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic invariance check, and the runner substantively tests the relevant dimensionless rescaling claims rather than merely printing a pass count. The plaquette helper hard-codes the same-surface constants, but their exact numerical value is not the action-unit obstruction; the obstruction rests on dimensionlessness and common rescaling. The negative-claim gate does not defeat the narrow residual: beta, plaquette/u0, APBC, c_cell, projected phases, and finite-rank commutator routes all collapse to the same missing dimensional metrology map. However, the note explicitly remains bounded on open upstream gates, especially Staggered-Dirac realization and the g_bare repair chain, so it is not audited_clean."
     },
     "hubble_lane5_c1_a2_action_unit_no_go_note_2026-04-28": {
       "audit_date": null,

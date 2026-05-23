@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 384 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 12 |
-| ~~audited_conditional~~ | 113 |
+| ~~audited_conditional~~ | 114 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 645 |
-| `audited_conditional` | 113 |
+| `audited_conditional` | 114 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1509 |
+| `unaudited` | 1508 |
 
 | claim_type | count |
 |---|---:|
@@ -813,6 +813,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5790,6 +5791,22 @@ Five-judge panel breakdown: ('second', 'audited_conditional', 'bounded_theorem',
 - **load-bearing step:** The bulk Majoranas shift Hamming weight by exactly ±1, so γ_a P_A lies in P_0 ⊕ P_2 orthogonal to P_A and therefore P_A γ_a P_A = 0.  _(class `A`)_
 - **chain closes:** True — The restricted packet defines the two candidate bulk actions and the projector, and the algebraic weight-shift and compression checks establish the no-go for those actions. The only scope caveat is that the packet does not independently prove that these two constructions exhaust every conceivable axiom-3 implementation, so the closed scope is the stated natural-action A1 mechanism.
 - **rationale:** The runner source genuinely constructs the 16-dimensional operators, verifies the Clifford relations, computes the P_A compressions, and exhaustively checks the 15 four-bilinear subsets; it is not merely printing expected constants. The load-bearing step is an algebraic operator/projection identity over the explicitly supplied constructions, not a definition, renaming, external comparator, or tuned numerical match. Within the natural-action scope stated in the theorem, the no-go follows from the provided inputs.
+- **auditor confidence:** high
+
+### `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29`
+
+- **Note:** [`HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md`](../../docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the narrow obstruction that admitted dimensionless inputs g_bare=1, beta=6, plaquette/u0, APBC, and c_cell=1/4 do not by themselves determine a dimensional kappa on P_A H_cell.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T194659Z-cc090d7e-hubble_lane5_c1_a2_actio-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any positive scale lambda, the common replacement S_dim -> lambda S_dim and kappa -> lambda kappa leaves exp(i S_dim/kappa) and the dimensionless lattice weights unchanged, so the A2 inputs do not select an absolute action quantum.  _(class `A`)_
+- **chain closes:** False — The rescaling obstruction closes algebraically conditional on the admitted inputs. The retained-grade dependency chain does not close in this packet because the source note depends on the open Staggered-Dirac realization gate and the g_bare parent repair gate.
+- **rationale:** The load-bearing step is a genuine algebraic invariance check, and the runner substantively tests the relevant dimensionless rescaling claims rather than merely printing a pass count. The plaquette helper hard-codes the same-surface constants, but their exact numerical value is not the action-unit obstruction; the obstruction rests on dimensionlessness and common rescaling. The negative-claim gate does not defeat the narrow residual: beta, plaquette/u0, APBC, c_cell, projected phases, and finite-rank commutator routes all collapse to the same missing dimensional metrology map. However, the note explicitly remains bounded on open upstream gates, especially Staggered-Dirac realization and the g_bare repair chain, so it is not audited_clean.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `G_BARE_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29`

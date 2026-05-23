@@ -43381,7 +43381,7 @@
         "scripts/generative_causal_dag_interference.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "a20696695609dcbe04bfdd02c837a81ea9b5d3bee27ef4c9b557ce66adb874be",
+      "note_hash": "56985057fc5a73fe7766d181ca93c4b621661b16928085a4e1df51c27e0cae38",
       "path": "docs/CENTRAL_BAND_COLLAPSE_NOTE.md",
       "runner_path": "scripts/central_band_collapse_joint_card.py",
       "title": "Central Band Hard-Geometry + Collapse Note"

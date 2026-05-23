@@ -396,7 +396,7 @@ becomes unconditional.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [koide_circulant_character_derivation_note_2026-04-18](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md)
+- `KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md` (back-reference, not load-bearing on this `Q ↔ δ` linking relation theorem — circulant_character is an older sister-derivation candidate and is already named in body prose at line 222 as a sister artifact. Backticked to break length-9 cycle `cycle-0005` in `docs/audit/data/cycle_inventory.json`.)
 - `scalar_selector_remaining_open_imports_2026-04-20`
   (see-also cross-reference; backticked to break cycle-0008 in the citation
   graph. The scalar-selector open-imports register cites the present

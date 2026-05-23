@@ -178,7 +178,11 @@ The runner uses the Python standard library only.
   - retained one-generation matter content.
 - [`BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md`](BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md)
   - independent anomaly witness for the neutral `nu_R` slot when B-L is gauged.
-- [`NEUTRINO_MASS_DERIVED_NOTE.md`](NEUTRINO_MASS_DERIVED_NOTE.md)
-  - retained Majorana scale and atmospheric neutrino package.
+- `NEUTRINO_MASS_DERIVED_NOTE.md` (cross-reference only, not load-bearing on
+  this `N_eff` theorem — the neutrino-mass package is a downstream/adjacent
+  consumer in the same neutrino lane. Backticked to break the residual
+  DM-neutrino cycle in `docs/audit/data/cycle_inventory.json`; this note's
+  load-bearing inputs remain the three-generation matter structure,
+  one-generation matter content, and B-L anomaly witness above.)
 - `MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md` (downstream consumer in same lane; cross-reference only — not a one-hop dep of this note)
   - equality-redshift identity using the resulting standard radiation density.

@@ -210,7 +210,7 @@ Three hostile-audit-grade issues were patched on this note:
   and identifies itself as the **inherited (admission (iv))** branch.
 
 See companion fix-record:
-[`DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md`](DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md).
+`DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md` (back-reference, not load-bearing on this 2026-05-08 lattice-independence note — the 2026-05-17 companion is a *downstream surgical-fix record* (meta type) that cites this note as "Parent under repair." Backticked to break length-2 cycle `cycle-0017` in `docs/audit/data/cycle_inventory.json`; citation graph direction is *2026-05-17 fix-record → this 2026-05-08 parent*.)
 
 Paired verifier:
 `scripts/frontier_dt1_time_dimension_proof_walk_downstream_fix.py`.

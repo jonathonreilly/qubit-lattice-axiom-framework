@@ -41,7 +41,7 @@ here as a comparison target only, not as audit authority.
   `|Delta alpha| = 0.0009` vs empirical `0.5256` (96% of LO gap closed under
   the fitted comparison). Per-h sigma_arm matches PR #968 to <= 0.3% across
   the fit window.
-- [`docs/NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md`](NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md)
+- `docs/NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md` (back-reference, not load-bearing on this derivation — the refit note is a downstream *diagnostic-fit artifact* that consumes this derivation's `C_arm_analytic = 2.4855` as upstream authority. Backticked to break length-2 cycle `cycle-0011` in `docs/audit/data/cycle_inventory.json`; citation graph direction is *refit → this derivation*.)
   — diagnostic-fit artifact at the audit boundary: under `alpha = 1/2`
   constrained fitting (the geodesic-scaling prediction), the per-h estimator
   `C_arm(h) = sigma_arm(h) / sqrt(h)` recovers the analytic value

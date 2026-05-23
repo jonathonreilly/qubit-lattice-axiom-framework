@@ -921,7 +921,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
-| `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
+| `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -5696,15 +5696,17 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 
 - **Note:** [`archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md`](../../archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md)
 - **claim_type:** `no_go`
-- **claim_scope:** Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.
+- **claim_scope:** Audited only the archived wrapper no-go claiming global exhaustion of natural Cl_4(C)-derivation routes from five fan-out checks plus prior A1-A6/A5 context.
 - **audit_status:** ~~audited_failed~~
 - **effective_status:** **retained_no_go**  (reason: `archived_failed_no_go`)
-- **auditor:** `codex-audit-loop-stale-narrative-archive-2026-04-30`  (codex-gpt-5; independence=weak)
-- **load-bearing step:** The wrapper synthesizes five orthogonal routes into an exhaustion claim that no natural symmetry, topology, information, or operator-algebra route forces Cl_4(C) on P_A H_cell.  _(class `A`)_
-- **chain closes:** False — No. The global exhaustion wrapper failed audit; only the five route-specific no-go observations survive as narrow support boundaries.
-- **rationale:** Issue: the wrapper's overall exhaustion claim overstates what the five checks establish. Why this blocks: Thread 1 preserved the route-local alpha S_4, beta cobordism, gamma Holevo, delta Stinespring, and epsilon Reeh-Schlieder observations, but rejected the wrapper as an active global no-hidden-route proof. Repair target: keep the five narrow no-gos in one support-tier salvage note and archive the failed wrapper. Claim boundary until fixed: safe to cite docs/HUBBLE_LANE5_C1_NARROW_ROUTE_NOGO_CLUSTER_2026-04-30.md for route-local boundaries only; do not cite this wrapper as exhaustion or Axiom* minimality support.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T181126Z-623cf5b5-hubble_lane5_c1_stuck_fa-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The synthesis claims that none of the five orthogonal premises forces Cl_4(C) on P_A H_cell, so A_min-only derivation routes are exhausted and an explicit Cl_4(C) carrier axiom is the only on-package closure move.  _(class `B`)_
+- **chain closes:** False — The restricted packet does not provide the prior A1-A6 or A5 authorities that the wrapper uses to make the global exhaustion claim. The runner computes a few local algebraic checks but hard-codes the beta, delta, epsilon, and synthesis-level non-derivability conclusions rather than proving exhaustive closure.
+- **rationale:** The five named routes satisfy a minimal N1-style enumeration, but the no-go discipline gate fails at least N2/N3/N4: beta explicitly reduces to a prior A1 wall, the wrapper uses broad terms such as natural, retained surface, only route, and exhaustive without a closed hidden-wall scan, and the cited A1/A5 residual witnesses are not provided in the restricted packet. The runner's PASS count is not authoritative for the global no-go because several checks are asserted with passed=True and the synthesis imports prior-cycle conclusions. The row should remain archived/non-authority as a stale narrative wrapper; only separately audited route-local no-gos could be citeable.
 - **open / conditional deps cited:**
-  - `HUBBLE_LANE5_C1_NARROW_ROUTE_NOGO_CLUSTER_2026-04-30.md`
+  - `HUBBLE_LANE5_C1_A1_GRASSMANN_NO_GO_NOTE_2026-04-28.md`
+  - `HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md`
+  - `MINIMAL_AXIOMS_2026-04-11.md`
 - **auditor confidence:** high
 
 ### `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29`

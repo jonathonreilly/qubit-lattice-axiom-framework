@@ -135,7 +135,9 @@ So the obstruction stands for full-state uniqueness, and the present note is con
 
 Load-bearing markdown-link upstream:
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site axiom and `Z^3` spatial substrate with translation automorphism
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site axiom and `Z^3` spatial substrate with translation automorphism; canonical axiom-premise node
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — retained narrow theorem supplying the per-site `M_2(ℂ)` operator algebra used in Step 2
+- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md) — retained narrow theorem supplying `H_x = ℂ²` (the one-site factor on which `I/2` is the max-entropy state)
 
 Named non-derivation imports (standard textbook content):
 

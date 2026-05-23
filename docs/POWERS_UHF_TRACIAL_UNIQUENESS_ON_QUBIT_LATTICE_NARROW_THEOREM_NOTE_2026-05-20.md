@@ -23,9 +23,11 @@ to the framework's substrate.
 If audit-retained, this gives downstream notes such as
 `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20` a
 qubit-lattice-scoped theorem to cite for the UHF tracial uniqueness
-step. It does not eliminate the named standard-math imports, prove the
-no-extra-structure identification, or retag any downstream row by
-itself.
+step. The uniqueness step is now proved inline (Step 4) from
+finite-dim trace uniqueness + state-continuity + density, so Powers
+1967 is provenance rather than a load-bearing import. This note does
+not prove the no-extra-structure identification, or retag any
+downstream row by itself.
 
 ## Claim
 
@@ -122,20 +124,40 @@ extension preserves the tracial property:
 
 So `τ_∞` is a tracial state on `A = ⊗_{x ∈ Z^3} M_2(ℂ)`.
 
-## Step 4 — Uniqueness on `A` (Glimm / Powers)
+## Step 4 — Uniqueness on `A` (explicit density + continuity)
 
-**Glimm 1960 / Powers 1967 theorem**: every UHF C*-algebra of any
-type admits a **unique tracial state**, namely the inductive-limit
-extension of the per-region normalized traces.
+We prove uniqueness **directly**, without importing the UHF
+unique-trace theorem as a black box. The standard result (Glimm 1960;
+Powers 1967; Bratteli–Robinson) is cited only as provenance; the
+argument closes from Step 1 plus two elementary facts.
 
-**Proof sketch.** Suppose `τ'` is any tracial state on `A`. For
-each finite `Λ`, the restriction `τ'|_{A_Λ}` is a tracial state on
-`A_Λ ≅ M_{2^|Λ|}(ℂ)`. By Step 1, the unique tracial state on
-`M_{2^|Λ|}(ℂ)` is `Tr/2^|Λ|`, so `τ'|_{A_Λ} = τ_Λ`. The family
-`{τ'|_{A_Λ}}` is therefore equal to `{τ_Λ}`. By uniqueness of the
-inductive-limit extension, `τ' = τ_∞`.
+Let `τ'` be any tracial state on `A`.
 
-So `τ_∞` is the unique tracial state on `A`. ∎
+**(i) Agreement on the dense core.** For each finite `Λ`, the
+restriction `τ'|_{A_Λ}` is a tracial state on `A_Λ ≅ M_{2^|Λ|}(ℂ)`.
+By Step 1, the unique tracial state on a full matrix algebra is the
+normalized trace, so `τ'|_{A_Λ} = τ_Λ = τ_∞|_{A_Λ}`. Hence `τ'` and
+`τ_∞` agree on the local subalgebra `A_Λ` for every finite `Λ`, i.e.
+on the dense `*`-subalgebra `A_loc = ⋃_Λ A_Λ`.
+
+**(ii) Continuity extends agreement to the closure.** Any state `φ`
+on a unital C*-algebra is bounded with `‖φ‖ = φ(𝟙) = 1`, hence
+norm-continuous. By definition the quasi-local algebra `A` is the
+norm closure of `A_loc`. Two norm-continuous functionals that agree
+on a dense subset agree everywhere: for `a ∈ A` pick `a_n ∈ A_loc`
+with `a_n → a`; then
+
+```text
+τ'(a) = lim_n τ'(a_n) = lim_n τ_∞(a_n) = τ_∞(a).                       (6)
+```
+
+Therefore `τ' = τ_∞`, so `τ_∞` is the **unique** tracial state on `A`. ∎
+
+The only inputs are Step 1 (finite-dim trace uniqueness, proved
+above), `‖φ‖ = φ(𝟙) = 1` for states (elementary C*-algebra fact), and
+density of `A_loc` in `A` (the definition of the quasi-local algebra).
+No high-level UHF theorem enters as a load-bearing step; Powers 1967 is
+provenance, not an admitted import.
 
 ## Step 5 — Connection to `ρ_ref`
 
@@ -206,12 +228,18 @@ operator structure.
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
 
-**Upstream standard-math imports** (named non-derivation):
+**Provenance citations** (NOT load-bearing — the UHF unique-trace step is
+proved inline in Step 4 via density + state-continuity; these are the
+standard literature for the same result):
 
 - Dixmier 1981 *Les algèbres d'opérateurs dans l'espace hilbertien*
 - Glimm 1960 *Trans. AMS* 95, 318
 - Powers 1967 *Ann. Math.* 86, 138
 - Bratteli–Robinson 1979/1981 *Operator Algebras and Quantum Statistical Mechanics*
+
+The only genuinely external (un-reproved) inputs are elementary: finite-dim
+trace uniqueness (proved in Step 1), `‖φ‖ = φ(𝟙)` for states, and density of
+the local subalgebra — the framework's standard-math floor.
 
 **Plain-text pointer references** (NOT load-bearing deps):
 

@@ -66558,7 +66558,7 @@
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "02c4a58f8599b359ffdee2ce03fcd4e8a91fd11ef5c0756a16105ec53b2c7a84",
+      "note_hash": "3fe0bc559fce0a078ee1730bf9e1e22630111530b7330f4bb52268b6cc664b08",
       "path": "docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py",
       "title": "Observable Principle \u2014 Real-D-Block Generator Uniqueness Narrow Theorem"

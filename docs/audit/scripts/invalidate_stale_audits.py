@@ -57,6 +57,21 @@ DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 RUNNER_CLASSIFICATION_PATH = DATA_DIR / "runner_classification.json"
 SOURCE_PATH_ALIASES_PATH = DATA_DIR / "source_path_aliases.json"
+AXIOM_PREMISE_NODES_PATH = DATA_DIR / "axiom_premise_nodes.json"
+
+_AXIOM_PREMISE_IDS: set[str] | None = None
+
+
+def axiom_premise_ids() -> set[str]:
+    """Canonical axiom-premise claim_ids (see axiom_premise_nodes.json)."""
+    global _AXIOM_PREMISE_IDS
+    if _AXIOM_PREMISE_IDS is None:
+        try:
+            data = json.loads(AXIOM_PREMISE_NODES_PATH.read_text(encoding="utf-8"))
+            _AXIOM_PREMISE_IDS = set(data.get("canonical_ids") or [])
+        except Exception:
+            _AXIOM_PREMISE_IDS = set()
+    return _AXIOM_PREMISE_IDS
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import runner_cache as rc  # noqa: E402
 
@@ -280,6 +295,23 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             after = rows.get(d, {}).get("claim_scope")
             if before is not None and after != before:
                 return f"dep_claim_scope_changed:{d}"
+
+    # Axiom-premise content drift: an axiom-premise dep keeps
+    # effective_status=meta across edits to its prose, so the status /
+    # claim_type / claim_scope triggers above never fire when the axiom
+    # text changes. Compare the dep's note_hash at audit time against the
+    # current one and re-look the direct citer when the axiom actually
+    # changed. (Older snapshots predate this map; in that case skip.)
+    snap_axiom_hash = snap.get("dep_axiom_premise_note_hash") or {}
+    if snap_axiom_hash:
+        premise_ids = axiom_premise_ids()
+        for d in current_deps:
+            if d not in premise_ids:
+                continue
+            before = snap_axiom_hash.get(d)
+            after = rows.get(d, {}).get("note_hash")
+            if before is not None and after is not None and before != after:
+                return f"axiom_premise_changed:{d}:{before[:8]}->{after[:8]}"
 
     snap_crit = snap.get("criticality") or "leaf"
     cur_crit = row.get("criticality") or "leaf"

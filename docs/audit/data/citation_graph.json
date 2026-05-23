@@ -23773,14 +23773,6 @@
       "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
     {
-      "from": "staggered_dirac_realization_gate_note_2026-05-03",
-      "to": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
-    },
-    {
-      "from": "staggered_dirac_realization_gate_note_2026-05-03",
-      "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
-    },
-    {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
@@ -76318,12 +76310,9 @@
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
-      "deps": [
-        "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
-        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b7821485b637a1d9b4585322cd8b679b65b520e4c66f78ba1790327378ad0861",
+      "note_hash": "5ec9e48178c5f5d4b33be0ae4d0d359fd01c0a0c117529599ade2c553c6fe217",
       "path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note"
@@ -84238,6 +84227,7 @@
     "staggered_backreaction_note",
     "staggered_backreaction_shell_spectral_note",
     "staggered_dag_note_2026-04-10",
+    "staggered_dirac_realization_gate_note_2026-05-03",
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
     "staggered_fermion_card_2026-04-10",
@@ -84409,10 +84399,10 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9685,
+    "edge_count": 9683,
     "leaf_count": 758,
     "node_count": 2490,
-    "root_count": 820,
+    "root_count": 821,
     "runners_with_path": 2051
   }
 }

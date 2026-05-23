@@ -117198,24 +117198,42 @@
       "verdict_rationale": "The provided runner and helper sources do not hard-code the reported alpha values; they instantiate the dense h=0.125 lattice geometry, perform propagation, compute detector probabilities and centroids, and fit the power law from computed deltas. The cached stdout matches that load-bearing auxiliary probe result, with alpha near 0.5 in both reported windows. This clean verdict is limited to the cheap phys_l=2 width-4 scout; the note's separate statement about the retained phys_l=6 replay is not ratified by this packet."
     },
     "h2t_h0125_narrow_bridge_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T20:03:45.597948+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "Finite fixed-family 3D dense 1/L^2+h^2 bridge evidence at phys_l=6, phys_w=3 through h=0.125, with Born/k=0 clean, TOWARD bridge sign in the completed cache, and F~M near 0.50 rather than Newtonian closure."
+        },
+        "dep_claim_type": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "lattice_3d_l2_numpy_h0125_bridge_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "4b9c6ad309cb6559952b59ea5f944a3fff250902727f8e207944dd949336c619",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T200325Z-7ef1d610-h2t_h0125_narrow_bridge_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The negative F~M conclusion is supported by the runner and cited bridge note, but the source note's reduced-family replay table and prose claim AWAY gravity and too few TOWARD points while the provided primary runner output reports TOWARD gravity and F~M alpha \u2248 0.50 for h=0.5, 0.25, and 0.125. That completed-run mismatch means the presented note does not close cleanly as written.",
       "claim_id": "h2t_h0125_narrow_bridge_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded negative claim that the provided dense 3D 1/L^2 + h^2 h=0.125 replay chain does not support a retained Newtonian weak-field bridge with F~M \u2248 1.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T20:03:45.597948+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -117223,22 +117241,22 @@
         "lattice_3d_l2_numpy_h0125_bridge_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/lattice_3d_l2_numpy.py",
         "scripts/numpy_replay_bootstrap.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The bridge family also falls short of the narrow F~M \u2248 1 bar at h = 0.125, so the narrow h=0.125 bridge claim does not currently survive.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "44c0db1fa87421c2e185558665d5d0fcf744274bf384bc56eab2fc16f918b04c",
       "note_path": "docs/H2T_H0125_NARROW_BRIDGE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "other: update the source note's reduced-family table and prose to match the completed runner output, then re-audit the bounded negative F~M\u22481 claim on that corrected statement.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -117385,18 +117403,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 4,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/lattice_3d_l2_numpy_h0125_audit.py",
       "title": "3D `1/L^2 + h^2` Narrow `h=0.125` Bridge Note",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source genuinely instantiates the lattice and propagation calculation rather than printing hard-coded expected values, so the computational load-bearing readout is class C. However, the provided stdout contradicts the source note's decisive reduced-family summary on the gravity sign and availability of F~M points. Although both the stdout and cited bridge authority still support the narrower negative that F~M is about 0.50 rather than 1.00, the note's stated chain relies on stale or incorrect reduced-family facts."
     },
     "hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29": {
       "audit_date": "2026-05-16T21:41:29.107282+00:00",

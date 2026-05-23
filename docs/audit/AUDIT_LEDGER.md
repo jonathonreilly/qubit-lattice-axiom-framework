@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1273 |
+| unaudited | 1272 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
 | ~~audited_conditional~~ | 118 |
-| ~~audited_failed~~ | 18 |
+| ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,10 +52,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 647 |
 | `audited_conditional` | 118 |
 | `audited_decoration` | 31 |
-| `audited_failed` | 62 |
+| `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1499 |
+| `unaudited` | 1498 |
 
 | claim_type | count |
 |---|---:|
@@ -943,6 +943,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -5485,6 +5486,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The width-4 probe runner computes alpha = 0.500 on the full window and alpha = 0.499 on r<=1.5 for phys_l=2, phys_w=4, h=0.125, so the cheap wider-box scout still shows the weak-field exponent near 0.5.  _(class `C`)_
 - **chain closes:** True — For the auxiliary scout result, the chain closes: the primary runner builds the dense lattice family, propagates free and field amplitudes, computes centroids, and fits alpha from the generated deltas. The broader retained phys_l=6 closeout statement is outside the audited scope because its runner/logs are not included in the restricted packet.
 - **rationale:** The provided runner and helper sources do not hard-code the reported alpha values; they instantiate the dense h=0.125 lattice geometry, perform propagation, compute detector probabilities and centroids, and fit the power law from computed deltas. The cached stdout matches that load-bearing auxiliary probe result, with alpha near 0.5 in both reported windows. This clean verdict is limited to the cheap phys_l=2 width-4 scout; the note's separate statement about the retained phys_l=6 replay is not ratified by this packet.
+- **auditor confidence:** high
+
+### `h2t_h0125_narrow_bridge_note`
+
+- **Note:** [`H2T_H0125_NARROW_BRIDGE_NOTE.md`](../../docs/H2T_H0125_NARROW_BRIDGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded negative claim that the provided dense 3D 1/L^2 + h^2 h=0.125 replay chain does not support a retained Newtonian weak-field bridge with F~M ≈ 1.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T200325Z-7ef1d610-h2t_h0125_narrow_bridge_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bridge family also falls short of the narrow F~M ≈ 1 bar at h = 0.125, so the narrow h=0.125 bridge claim does not currently survive.  _(class `C`)_
+- **chain closes:** False — The negative F~M conclusion is supported by the runner and cited bridge note, but the source note's reduced-family replay table and prose claim AWAY gravity and too few TOWARD points while the provided primary runner output reports TOWARD gravity and F~M alpha ≈ 0.50 for h=0.5, 0.25, and 0.125. That completed-run mismatch means the presented note does not close cleanly as written.
+- **rationale:** The runner source genuinely instantiates the lattice and propagation calculation rather than printing hard-coded expected values, so the computational load-bearing readout is class C. However, the provided stdout contradicts the source note's decisive reduced-family summary on the gravity sign and availability of F~M points. Although both the stdout and cited bridge authority still support the narrower negative that F~M is about 0.50 rather than 1.00, the note's stated chain relies on stale or incorrect reduced-family facts.
 - **auditor confidence:** high
 
 ### `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29`

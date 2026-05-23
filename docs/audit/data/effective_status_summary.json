@@ -9,10 +9,6 @@
   },
   "cycle_examples": [
     [
-      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-    ],
-    [
       "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
       "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5"
     ],
@@ -29,14 +25,30 @@
       "universal_gr_isotropic_schur_localization_note"
     ],
     [
-      "universal_gr_a1_invariant_section_note",
-      "universal_gr_curvature_localization_blocker_note",
-      "universal_gr_discrete_global_closure_note",
-      "universal_gr_lorentzian_signature_extension_note",
-      "universal_gr_constraint_action_stationarity_note"
+      "dm_neutrino_observable_bank_exhaustion_theorem_note_2026-04-17",
+      "dm_neutrino_transport_chamber_blindness_theorem_note_2026-04-17",
+      "dm_neutrino_source_surface_z3_parity_split_theorem_note_2026-04-17",
+      "dm_leptogenesis_transport_status_note_2026-04-16",
+      "dm_leptogenesis_hrad_theorem_note_2026-04-16",
+      "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
+      "n_eff_from_three_generations_theorem_note_2026-04-24",
+      "neutrino_mass_derived_note",
+      "pmns_theta23_upper_octant_chamber_closure_prediction_note_2026-04-17",
+      "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
+    ],
+    [
+      "koide_circulant_character_derivation_note_2026-04-18",
+      "koide_positive_paths_first_principles_note_2026-04-18",
+      "koide_gamma_orbit_positive_one_clock_semigroup_note_2026-04-18",
+      "koide_gamma_orbit_observable_selector_generator_line_note_2026-04-18",
+      "koide_gamma_orbit_selected_line_closure_note_2026-04-18",
+      "koide_selected_line_cyclic_response_bridge_note_2026-04-18",
+      "koide_brannen_phase_reduction_theorem_note_2026-04-20",
+      "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20",
+      "koide_q_delta_linking_relation_theorem_note_2026-04-20"
     ]
   ],
-  "cycles_detected": 24,
+  "cycles_detected": 17,
   "effective_status_counts": {
     "audited_conditional": 103,
     "audited_failed": 23,

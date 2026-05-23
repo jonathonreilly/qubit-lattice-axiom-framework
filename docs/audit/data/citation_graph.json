@@ -27865,6 +27865,18 @@
       "to": "yt_exact_schur_normal_form_uniqueness_note"
     },
     {
+      "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
+      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+    },
+    {
+      "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
+      "to": "yt_color_projection_correction_note"
+    },
+    {
+      "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
+      "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17",
       "to": "yt_ward_identity_derivation_theorem"
     },
@@ -83114,6 +83126,22 @@
       "runner_path": "scripts/frontier_yt_schur_stability_gap.py",
       "title": "Schur Stability Gap Note"
     },
+    "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23": {
+      "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_color_projection_correction_note",
+        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "725ae1698fe776adde0c7a1bfe578cec35b8e4fb38ed064aae6d41ad1ffef3bb",
+      "path": "docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
+      "title": "Y_T Source-Higgs Pole-Row Normalization No-Go"
+    },
     "yt_ssb_matching_gap_analysis_note_2026-04-18": {
       "claim_id": "yt_ssb_matching_gap_analysis_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -84218,7 +84246,7 @@
       "bounded_theorem": 523,
       "decoration": 1,
       "meta": 187,
-      "no_go": 65,
+      "no_go": 66,
       "none": 1494,
       "open_gate": 45,
       "positive_theorem": 176
@@ -84227,15 +84255,15 @@
       "bounded_theorem": 960,
       "decoration": 1,
       "meta": 187,
-      "no_go": 168,
+      "no_go": 169,
       "none": 443,
       "open_gate": 123,
       "positive_theorem": 609
     },
-    "edge_count": 9647,
+    "edge_count": 9650,
     "leaf_count": 766,
-    "node_count": 2491,
+    "node_count": 2492,
     "root_count": 825,
-    "runners_with_path": 2052
+    "runners_with_path": 2053
   }
 }

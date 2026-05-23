@@ -72,6 +72,51 @@ and a **no-gap counter-example** (E4) that confirms the gap is
 genuinely required (without it, connected correlators do not decay
 at all). All four exhibits PASS.
 
+## 2026-05-22 dependency wiring: spatial-side + Δ_T > 0 + Leg A repair notes
+
+Per the parent's "Claim scope (post-2026-05-18 narrowing)" requirements,
+unconditional L2 + spatial cluster-decomposition need (i) a retained-grade
+`Δ_T > 0` first-principles derivation, (ii) the staggered+Wilson `T_full`
+extension cleared (Leg A), and (iii) a retained spatial cluster-decomposition
+theorem on canonical `Cl(3) ⊗ Z³`. The following four 2026-05-19 source notes,
+landed via reviewer salvages (`8369973af`, `5f6f0b87a`, `596637adb`,
+`a salvage of slab-bridge`), are wired here as one-hop dependencies for the
+audit lane to evaluate:
+
+1. **Δ_T > 0 for Wilson temporal transfer operator (finite-Λ):**
+   [`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
+   — operator-theoretic proof from primitives (SU(3) heat-kernel positivity +
+   abstract spectral-gap lemma + character-series trace-class). Staggered+Wilson
+   `T_full` extension conditional on Leg A (item 2).
+
+2. **Leg A operator-basis + mass orientation (clears `T_full` conditional):**
+   [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+   — F̃F slot exclusion from canonical Wilson normalization (P1–P5) + quark-mass
+   orientation from reflection positivity + retained Dirac anti-Hermiticity.
+
+3. **Spatial cluster-decomposition via Lieb-Robinson:**
+   [`SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md`](SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md)
+   — Lieb-Robinson bound proved from primitives (Duhamel iteration + locality +
+   path-counting + Stirling), composed with `Δ_T > 0` to give finite-Λ
+   exponential spatial clustering with `ξ_cluster = v_LR / Δ`.
+
+4. **Spatial slab transfer operator T_x + Δ_x > 0:**
+   [`SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md`](SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md)
+   — Wilson cubic axis-permutation symmetry lifts the temporal `Δ_T > 0` result
+   verbatim to the spatial slab transfer operator. Provides the alternative
+   OR-branch (spatial transfer-matrix cluster-decomposition theorem) to the
+   LR-composition path (item 3).
+
+Together (1)+(2) discharge the temporal half; (3) and (4) provide two
+independent OR-branches for the spatial half. All four are currently
+`unaudited` in the ledger and await audit-lane evaluation. The parent's
+unconditional L2 + spatial cluster-decomposition closure is conditional
+on at least one branch from each half retaining clean.
+
+This dependency wiring is editorial — it makes the cited audit relationships
+explicit in the citation graph. It does not by itself promote the parent;
+that promotion follows from the audit lane's verdicts on items (1)–(4).
+
 ## Finite-Lambda transfer-gap support update (2026-05-19)
 
 [`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)

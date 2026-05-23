@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1294 |
+| unaudited | 1293 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 109 |
+| ~~audited_conditional~~ | 110 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 641 |
-| `audited_conditional` | 109 |
+| `audited_conditional` | 110 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1520 |
+| `unaudited` | 1519 |
 
 | claim_type | count |
 |---|---:|
@@ -818,6 +818,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6398,6 +6399,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **rationale:** The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **auditor confidence:** judicial
+
+### `koide_q_delta_linking_relation_theorem_note_2026-04-20`
+
+- **Note:** [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional linking theorem: if equal-sector-norm gives Q = 2/d and the radian-bridge postulate P gives δ = 2/d² as a Berry holonomy in radians, then δ = Q/d.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T192630Z-5cf996e0-koide_q_delta_linking_re-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Dividing the two imported identities gives δ/Q = (2/d²)/(2/d) = 1/d, hence δ = Q/d.  _(class `A`)_
+- **chain closes:** False — The algebraic implication closes after I1 and I2 are assumed, but I2 contains the explicit unproved radian-bridge postulate P. The restricted packet does not derive the identification of the dimensionless DOF ratio 2/d² with a Berry holonomy measured in radians.
+- **rationale:** The runner verifies exact arithmetic consequences of Q = 2/d and δ = 2/d² and includes two external PDG-style comparator checks, but it does not compute the radian bridge from the stated framework. Its delta_dim_ratio function encodes the dimensional ratio and the note itself names the radian identification as Postulate P. Since P is explicit open bridge structure rather than a retained theorem in the restricted packet, the claimed collapse of the two imports is conditional.
+- **auditor confidence:** high
 
 ### `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`
 

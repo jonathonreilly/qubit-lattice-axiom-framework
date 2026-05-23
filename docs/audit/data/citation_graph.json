@@ -10330,6 +10330,10 @@
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+      "to": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
       "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
     },
     {
@@ -55434,13 +55438,14 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fa897f078135dd7f0e4fc65369aee3c55704d19dcc52d8a2ae66075070909fa5",
+      "note_hash": "ddbc077ac665bae6ad5053c3707ee3dabbf184951ac722fbdeec84e6669eed04",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
-      "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Theorem"
+      "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Bounded Packet"
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": {
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
@@ -84227,8 +84232,8 @@
       "open_gate": 123,
       "positive_theorem": 609
     },
-    "edge_count": 9646,
-    "leaf_count": 767,
+    "edge_count": 9647,
+    "leaf_count": 766,
     "node_count": 2491,
     "root_count": 825,
     "runners_with_path": 2052

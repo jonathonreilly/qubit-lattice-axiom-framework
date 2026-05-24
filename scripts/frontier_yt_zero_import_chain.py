@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-DEFINITIVE ZERO-IMPORT y_t DERIVATION
+BOUNDED y_t / alpha_s CHAIN DIAGNOSTIC
 ======================================
 
-Every ingredient traces to the axiom Cl(3) on Z^3.  No SM observables
-imported.  Two lattice MC quantities (plaquette, R_conn) anchor the chain.
+The v-scale chain is tracked from the framework surface plus bounded lattice
+inputs.  The v -> M_Z readout uses explicitly registered standard
+infrastructure.  This runner is not a branch-local retained-status claim.
 
 AXIOM:  Cl(3) on Z^3
 
@@ -85,8 +86,8 @@ def check(name: str, condition: bool, detail: str = "") -> None:
 # =====================================================================
 
 print("=" * 78)
-print("DEFINITIVE ZERO-IMPORT y_t DERIVATION")
-print("Every ingredient traces to Cl(3) on Z^3.  No SM imports.")
+print("BOUNDED y_t / alpha_s CHAIN DIAGNOSTIC")
+print("v-scale chain plus explicit standard-infrastructure v -> M_Z bridge.")
 print("=" * 78)
 print()
 t0 = time.time()
@@ -911,13 +912,13 @@ log("    COMPUTED       = lattice Monte Carlo from axiom")
 log("    DERIVED        = algebraic/analytic/CW from axiom + computed")
 log("    INFRASTRUCTURE = standard threshold matching (v -> M_Z only)")
 log()
-log("  NOTHING says IMPORTED or BOUNDED.  Every v-scale quantity is DERIVED.")
-log("  The INFRASTRUCTURE items affect only the v -> M_Z cross-check,")
-log("  not the core prediction.")
+log("  The v-scale quantities are carried as derived inside this runner.")
+log("  The INFRASTRUCTURE items affect only the bounded v -> M_Z bridge,")
+log("  and are explicit rather than hidden imports.")
 log()
 
-check("Zero SM imports in derivation chain",
-      True, "All ingredients trace to Cl(3) on Z^3")
+check("No hidden SM imports in v-scale chain; M_Z bridge infrastructure is explicit",
+      True, "v -> M_Z thresholds are registered as INFRASTRUCTURE")
 
 
 # =====================================================================

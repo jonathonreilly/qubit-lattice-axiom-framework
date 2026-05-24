@@ -40661,8 +40661,8 @@
     },
     "alpha_s_derived_note": {
       "claim_id": "alpha_s_derived_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "plaquette_self_consistency_note",
@@ -40672,7 +40672,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "49b47d2b93e49adca108e4d145e483684b90f483de1bd84b50919bf4f1271309",
+      "note_hash": "c423b77660ef2541023c8a686c80bf2276b9c347def02b1bd4e740c2a2eaa4c6",
       "path": "docs/ALPHA_S_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_yt_zero_import_chain.py",
       "title": "`alpha_s(M_Z)` Same-Surface-Derived Authority (bounded)"
@@ -84494,11 +84494,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 543,
+      "bounded_theorem": 544,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
-      "none": 1476,
+      "none": 1475,
       "open_gate": 45,
       "positive_theorem": 174
     },

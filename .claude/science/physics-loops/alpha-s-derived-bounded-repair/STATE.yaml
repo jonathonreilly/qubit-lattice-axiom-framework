@@ -1,0 +1,54 @@
+loop_slug: alpha-s-derived-bounded-repair
+date: 2026-05-24
+branch: physics-loop/alpha-s-derived-bounded-repair-block11-20260524
+base: physics-loop/qcd-running-bridge-bounded-repair-block10-20260524
+base_commit_after_rebase: a1fa5ce66
+base_pr: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1792
+mode: science-fix
+target_claim_id: alpha_s_derived_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: "PDG comparator and upstream standard-infrastructure bridge remain explicit bounded inputs."
+proposal_allowed: false
+proposal_allowed_reason: "This branch hardens an already bounded alpha_s lane; it does not assign an effective retained verdict."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms_introduced: false
+stacked_on_unmerged_block: qcd-running-bridge-bounded-repair
+files_touched:
+  - docs/ALPHA_S_DERIVED_NOTE.md
+  - scripts/canonical_plaquette_surface.py
+  - scripts/frontier_yt_zero_import_chain.py
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/alpha-s-derived-bounded-repair/
+retired_imports:
+  - migration-hint-only claim typing for the alpha_s row
+  - helper wording that described the bounded plaquette surface as retained
+  - "zero-input route" wording for a bounded lane with explicit imports
+  - primary-runner zero-import banner language for the bounded M_Z bridge
+current_queue_result:
+  rank: 5
+  ready: false
+  ready_reason: "Blocked until stacked QCD, plaquette, and Perron dependencies reach retained-grade audit on main."
+  descendants: 970
+verification:
+  helper_import: "python3 - <<'PY' import helper -> P=0.5934 u0=0.877681381199 alpha_s_v=0.103303816122"
+  runner: "python3 scripts/frontier_yt_zero_import_chain.py -> Total PASS: 14 Total FAIL: 0"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh on stacked branch -> complete, ready_count=12"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK (existing warning/notices only)"
+  diff_check: "git diff --check -> clean"
+  controlled_vocabulary: "python3 scripts/render_controlled_vocabulary.py --check -> clean"
+  vocab_lint: "python3 scripts/vocab_lint.py --report-only docs/ALPHA_S_DERIVED_NOTE.md scripts/canonical_plaquette_surface.py scripts/frontier_yt_zero_import_chain.py .claude/science/physics-loops/alpha-s-derived-bounded-repair -> 0 violations"
+review_loop:
+  disposition: pass
+  notes: "Local review-loop pass over the stacked diff found no retained-grade overclaim, no new axiom, explicit bounded bridge imports, and primary-runner wording aligned with the bounded v -> M_Z bridge."
+pr:
+  url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1795
+  status: open_stacked_on_pr_1792
+next_exact_action: "Wait for the Perron, plaquette, and QCD bridge repairs; if they land cleanly, rebase this stacked branch onto main and let independent audit process the alpha_s row."
+stop_condition: "Stacked PR opened; independent audit remains external."

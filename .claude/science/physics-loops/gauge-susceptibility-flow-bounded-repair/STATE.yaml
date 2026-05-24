@@ -1,0 +1,32 @@
+loop: gauge-susceptibility-flow-bounded-repair
+current_goal: "Repair gauge_vacuum_plaquette_susceptibility_flow_theorem_note for independent audit by removing stale open-gate imports and making the runner self-contained for its one-plaquette support."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+block_count: 1
+active_route: "Use retained reduction-existence and mixed-cumulant dependencies only; compute Bessel/inverse support locally."
+hard_residual: "Full connected susceptibility profile and analytic beta=6 plaquette closure remain open."
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/load_bearing_summary.json
+  - docs/audit/data/runner_classification.json
+open_imports: []
+no_go_routes:
+  - "Do not claim an explicit closed form for chi_L(beta)."
+  - "Do not claim analytic P(6) closure or repo-wide numeric repinning."
+  - "Do not import staggered-Dirac, g_bare, or bridge-support gates into this packet."
+review_findings: []
+pr_status: "opened: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1758"
+next_exact_action: "Independent review/audit should evaluate the finite susceptibility-flow packet."
+stop_condition: "PR opened with bounded-support wording and independent audit still required."

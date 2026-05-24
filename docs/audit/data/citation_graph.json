@@ -10382,11 +10382,11 @@
     },
     {
       "from": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
-      "to": "g_bare_derivation_note"
+      "to": "gauge_vacuum_plaquette_reduction_existence_theorem_note"
     },
     {
       "from": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+      "to": "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
     },
     {
       "from": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
@@ -55714,24 +55714,20 @@
     "gauge_vacuum_plaquette_susceptibility_flow_theorem_note": {
       "claim_id": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "g_bare_derivation_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+        "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
-        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
-        "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
+        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py"
       ],
-      "note_hash": "f6520930e236560d7f468aef6a1578a0cca9d315d8dd9f66f431486effdbd1ee",
+      "note_hash": "09452480f5e2c0b41693393aa18146692e09a46b1ebc790ea1a1742579e543f0",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py",
-      "title": "Gauge-Vacuum Plaquette Susceptibility-Flow Theorem"
+      "title": "Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet"
     },
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": {
       "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",

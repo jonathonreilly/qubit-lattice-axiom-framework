@@ -1,33 +1,45 @@
 #!/usr/bin/env python3
 """
-Exact susceptibility-flow theorem for the Wilson plaquette reduction law.
+Finite susceptibility-flow packet for the Wilson plaquette reduction law.
 
 This closes the exact nonperturbative transport law for the implicit reduction
 map beta_eff,L(beta) on finite periodic Wilson evaluation surfaces, while
-keeping the explicit closed form at beta = 6 open.
+keeping the explicit closed form at beta = 6 open. The one-plaquette Bessel
+sum and local inverse are computed in this runner rather than imported from
+the bridge-support stack.
 """
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from fractions import Fraction
 import sys
+
+import numpy as np
+from scipy.special import iv
 
 sys.path.insert(0, "scripts")
 
 from canonical_plaquette_surface import CANONICAL_PLAQUETTE  # noqa: E402
-from frontier_gauge_vacuum_plaquette_bridge_support import plaquette_from_bessel  # noqa: E402
-from frontier_gauge_vacuum_plaquette_constant_lift_obstruction import full_wilson_strong_coupling_slope  # noqa: E402
 from frontier_gauge_vacuum_plaquette_mixed_cumulant_audit import (  # noqa: E402
     beta_eff_beta5_coefficient,
     total_nonlocal_beta5_coefficient,
 )
-from frontier_gauge_vacuum_plaquette_reduction_existence_theorem import implicit_beta_eff  # noqa: E402
 
 
 THEOREM_PASS = 0
 SUPPORT_PASS = 0
 FAIL = 0
 FINITE_DIFF_STEP = 1.0e-5
+MODE_TOL = 1.0e-15
+MAX_MODE = 80
+
+
+@dataclass(frozen=True)
+class SumResult:
+    partition: float
+    derivative: float
+    max_mode_used: int
 
 
 def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
@@ -51,12 +63,85 @@ def local_susceptibility_numeric(beta: float, step: float = FINITE_DIFF_STEP) ->
     return (p_plus - p_minus) / (2.0 * step)
 
 
+def bessel_matrix(beta: float, mode: int) -> np.ndarray:
+    arg = beta / 3.0
+    return np.array(
+        [[iv(mode + i - j, arg) for j in range(3)] for i in range(3)],
+        dtype=float,
+    )
+
+
+def bessel_matrix_derivative(beta: float, mode: int) -> np.ndarray:
+    arg = beta / 3.0
+    return np.array(
+        [
+            [
+                (iv(mode + i - j - 1, arg) + iv(mode + i - j + 1, arg)) / 6.0
+                for j in range(3)
+            ]
+            for i in range(3)
+        ],
+        dtype=float,
+    )
+
+
+def su3_mode_terms(beta: float, mode: int) -> tuple[float, float]:
+    mat = bessel_matrix(beta, mode)
+    dmat = bessel_matrix_derivative(beta, mode)
+    det = float(np.linalg.det(mat))
+    derivative = det * float(np.trace(np.linalg.inv(mat) @ dmat))
+    return det, derivative
+
+
+def su3_partition_sum(beta: float, tol: float = MODE_TOL, max_mode: int = MAX_MODE) -> SumResult:
+    total_partition = 0.0
+    total_derivative = 0.0
+
+    for mode in range(max_mode + 1):
+        strip_partition = 0.0
+        strip_derivative = 0.0
+        modes = [0] if mode == 0 else [-mode, mode]
+        for signed_mode in modes:
+            part, deriv = su3_mode_terms(beta, signed_mode)
+            strip_partition += part
+            strip_derivative += deriv
+
+        total_partition += strip_partition
+        total_derivative += strip_derivative
+
+        if mode >= 3:
+            partition_small = abs(strip_partition) < tol * abs(total_partition)
+            derivative_small = abs(strip_derivative) < tol * abs(total_derivative)
+            if partition_small and derivative_small:
+                return SumResult(total_partition, total_derivative, mode)
+
+    raise RuntimeError(f"mode sum did not converge by m = {max_mode}")
+
+
+def plaquette_from_bessel(beta: float) -> tuple[float, int]:
+    result = su3_partition_sum(beta)
+    return result.derivative / result.partition, result.max_mode_used
+
+
+def implicit_beta_eff(target_plaquette: float) -> float:
+    lo = 0.0
+    hi = 40.0
+    for _ in range(120):
+        mid = 0.5 * (lo + hi)
+        p_mid, _ = plaquette_from_bessel(mid)
+        if p_mid < target_plaquette:
+            lo = mid
+        else:
+            hi = mid
+    return 0.5 * (lo + hi)
+
+
 def main() -> int:
     onset_plaquette_coeff = total_nonlocal_beta5_coefficient()
     onset_susceptibility_coeff = Fraction(5, 1) * onset_plaquette_coeff
     onset_beta_eff_coeff = beta_eff_beta5_coefficient()
     onset_beta_eff_prime_coeff = Fraction(5, 1) * onset_beta_eff_coeff
-    common_slope = Fraction(full_wilson_strong_coupling_slope()).limit_denominator()
+    common_slope = Fraction(1, 18)
     transported_coeff = common_slope * onset_beta_eff_prime_coeff
 
     sample_betas = [0.1, 0.5, 1.0, 2.0, 4.0, 6.0, 10.0]
@@ -66,7 +151,7 @@ def main() -> int:
     canonical_reconstructed, _ = plaquette_from_bessel(canonical_beta_eff)
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE SUSCEPTIBILITY-FLOW THEOREM")
+    print("GAUGE-VACUUM PLAQUETTE SUSCEPTIBILITY-FLOW FINITE PACKET")
     print("=" * 78)
     print()
     print("Exact onset coefficients")

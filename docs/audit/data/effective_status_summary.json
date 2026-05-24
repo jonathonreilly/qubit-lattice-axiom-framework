@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1016,
+    "bounded_theorem": 1017,
     "decoration": 32,
     "meta": 230,
     "no_go": 243,
     "open_gate": 112,
-    "positive_theorem": 748
+    "positive_theorem": 747
   },
   "cycle_examples": [
     [

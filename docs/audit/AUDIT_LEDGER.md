@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1016 |
+| `bounded_theorem` | 1017 |
 | `decoration` | 32 |
 | `meta` | 230 |
 | `no_go` | 243 |
 | `open_gate` | 112 |
-| `positive_theorem` | 748 |
+| `positive_theorem` | 747 |
 
 | criticality | count |
 |---|---:|
@@ -80,7 +80,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 1936
 - runners with (C) first-principles compute hits: 952
-- runners with (D) external comparator hits: 549
+- runners with (D) external comparator hits: 550
 - decoration candidates (no C, no D): 312
 
 ## Top 25 by load-bearing score (topology only)

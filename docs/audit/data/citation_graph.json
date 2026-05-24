@@ -10017,14 +10017,6 @@
       "to": "gauge_vacuum_plaquette_constant_lift_obstruction_note"
     },
     {
-      "from": "gauge_vacuum_plaquette_bridge_support_note",
-      "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
-    },
-    {
-      "from": "gauge_vacuum_plaquette_bridge_support_note",
-      "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-    },
-    {
       "from": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
       "to": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
     },
@@ -54594,24 +54586,22 @@
     },
     "gauge_vacuum_plaquette_bridge_support_note": {
       "claim_id": "gauge_vacuum_plaquette_bridge_support_note",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem (bridge-support stack)",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_scalar_temporal_completion_theorem_note",
         "scalar_3plus1_temporal_ratio_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/frontier_scalar_3plus1_temporal_ratio.py"
       ],
-      "note_hash": "a85d7eaf4c85f10e75a09ef5d1d5e535294728441521ed511f903c5322f5e6b1",
+      "note_hash": "40f8978ecf95b590d369276fa858baec19abd5a9ed47e7a0455bf8e7543df22d",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-      "title": "Gauge-Vacuum Plaquette Scalar-Bridge Support"
+      "title": "Gauge-Vacuum Plaquette Scalar-Bridge Finite Support Packet"
     },
     "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": {
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
@@ -84523,24 +84513,24 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 536,
+      "bounded_theorem": 537,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
       "none": 1481,
       "open_gate": 45,
-      "positive_theorem": 175
+      "positive_theorem": 174
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 970,
+      "bounded_theorem": 971,
       "decoration": 1,
       "meta": 188,
       "no_go": 172,
       "none": 437,
       "open_gate": 123,
-      "positive_theorem": 604
+      "positive_theorem": 603
     },
-    "edge_count": 9698,
+    "edge_count": 9696,
     "leaf_count": 762,
     "node_count": 2495,
     "root_count": 821,

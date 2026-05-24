@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Gauge-vacuum plaquette scalar-bridge support stack.
+Gauge-vacuum plaquette scalar-bridge finite support packet.
 
-This script records the exact local/source/coupling ingredients and the sharp
-current analytic plaquette candidate without promoting the full physical-vacuum
-bridge insertion as a theorem.
+This script records local/source/coupling support ingredients and the current
+candidate comparator without promoting the full physical-vacuum bridge
+insertion as a theorem.
 """
 
 from __future__ import annotations
@@ -227,7 +227,7 @@ def main() -> int:
     print(f"  max |P(u0 V)/u0^4 - P(V)|           = {max(scale_devs):.3e}")
     print(f"  max |P(u0 V)/u0^2 - P(V)|           = {max(wrong_devs):.3e}")
     print()
-    print("Support candidate output")
+    print("Support-only candidate comparator")
     print(f"  Gamma_coord                         = {fmt(coord)}")
     print(f"  beta_eff                            = {fmt(beta_eff)}")
     print(f"  P(6)                                = {fmt(p_eff)}   (mode cutoff m = {mode_eff})")

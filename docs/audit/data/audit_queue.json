@@ -172,7 +172,7 @@
       "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_bridge_support_note",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
@@ -180,9 +180,7 @@
       "deps": [
         "gauge_scalar_temporal_completion_theorem_note",
         "scalar_3plus1_temporal_ratio_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "direct_in_degree": 8,
       "effective_status": "unaudited",
@@ -193,7 +191,7 @@
       "load_bearing_score": 13.997,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md",
       "queue_reason": "unaudited",
-      "ready": false,
+      "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
       "transitive_descendants": 1021
     },
@@ -38013,6 +38011,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 2,
+  "ready_count": 3,
   "total_pending": 1259
 }

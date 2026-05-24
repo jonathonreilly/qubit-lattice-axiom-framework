@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 411 |
+| **retained_bounded** | 412 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1260 |
+| unaudited | 1259 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 681 |
+| `audited_clean` | 682 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1486 |
+| `unaudited` | 1485 |
 
 | claim_type | count |
 |---|---:|
@@ -576,6 +576,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_commutant_eigenoperator_selector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8949,6 +8950,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
   - `PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`
+- **auditor confidence:** high
+
+### `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact-rational finite-window rank exclusion for the V=1 SU(3) single-plaquette matching system at (r=2, d=12), with ORDER=48 primary check, ORDER=52 stability check, and neighbouring (r=2, d=10),(r=2, d=11) reconfirmation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T180848Z-4f71e255-plaquette_v1_picard_fuch-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner builds the Bessel-determinant Taylor coefficients exactly as rationals and exact Fraction Gaussian elimination returns rank 39 for the 44 x 39 matching matrix at (r=2, d=12), with the ORDER=52 cross-check also rank 39.  _(class `A`)_
+- **chain closes:** True — The included runner source genuinely constructs the Bessel-determinant Taylor series with Fraction arithmetic, builds the stated matching matrices, and computes exact ranks rather than printing constants. The only load-bearing upstream is retained_bounded and the conclusion is limited to the finite rank checks actually computed.
+- **rationale:** The runner output matches the note and the source code verifies the load-bearing arithmetic path: exact Bessel-series construction, exact matching matrix assembly, and exact Gaussian elimination over rationals. No forbidden external comparator, fitted value, or contested imported premise is used. The scope is narrow and bounded, avoiding the parent all-order minimality issue.
 - **auditor confidence:** high
 
 ### `pmns_commutant_eigenoperator_selector_note`

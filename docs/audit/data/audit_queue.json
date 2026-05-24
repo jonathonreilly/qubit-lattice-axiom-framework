@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 344,
-    "leaf": 314,
+    "leaf": 313,
     "medium": 331
   },
   "cycle_break_target_count": 10,
@@ -28765,30 +28765,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wave_static_matrixfree_shared_geometry_compare_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38037,6 +38013,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 3,
-  "total_pending": 1260
+  "ready_count": 2,
+  "total_pending": 1259
 }

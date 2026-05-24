@@ -260105,57 +260105,77 @@
       "verdict_rationale": "Issue: The note claims three families match on all 9 measurable properties, but the table explicitly has Family 3 Distance alpha marked '(not yet)' and the note provides no runner or log artifact to verify the cross-family card. Why this blocks: the load-bearing 9/9 statement is false on the face of the supplied table, and the broader inference that observables are geometry-independent cannot follow from a partial, hand-entered comparison. Repair target: add a runner that recomputes every listed property for all three families, including Family 3 Distance alpha, with explicit <5% assertions and at least one holdout check. Claim boundary until fixed: safe to cite this as a partial comparison of three selected drift/restore rows with eight populated properties and distance-alpha data only for Families 1 and 2; not safe to claim 9/9 three-family equality or geometry-independence."
     },
     "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T20:59:38.891406+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+        },
+        "dep_claim_type": {
+          "three_generation_observable_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_observable_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 3.322,
+        "runner_hash": "d22c2ef9f5949d2f57622676ede693af119715d986693cd4ce32357d3125c87d",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205917Z-2048b28b-three_gen_z3_fourier_dia-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by direct finite-dimensional linear algebra from the single retained_bounded upstream input that C3[111] is the cyclic shift on the X1,X2,X3 basis. No additional physics premise or external comparator is used.",
       "claim_id": "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Given the retained C^3 hw=1 triplet and cyclic C3[111] action, the standard Z3 Fourier basis diagonalizes C3[111] with eigenvalues 1, omega, omega^2 and yields the stated one-dimensional isotypic decomposition and cyclic-average projector.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-24T20:59:38.891406+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "three_generation_observable_theorem_note",
       "deps": [
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_three_generation_observable_theorem_note",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_three_generation_observable_theorem_note",
       "load_bearing_score": 3.322,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By the retained three-generation observable theorem, C3[111] acts on H_hw=1 as the cyclic permutation X1 -> X2 -> X3 -> X1, represented by the 3x3 cyclic shift matrix.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4b5c4b1bba0ea9a69cd0cf6d97c648f94407bbf80d6094ffcb195e74e22bc0aa",
       "note_path": "docs/THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that the parent cyclic-action claim remains retained_bounded; the present note's algebra is otherwise direct.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 9,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 9
       },
       "runner_path": "scripts/three_gen_z3_fourier_diagonalization_check.py",
       "title": "Z_3 Fourier Diagonalization of C3[111] on Framework hw=1 Triplet",
       "transitive_descendants": 4,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source hard-codes the cyclic-shift matrix supplied by the upstream note and verifies the Fourier diagonalization, orthonormality, inverse transform, eigenspace dimensions, diagonal form, and cyclic-average projector by direct matrix algebra. This is a sound algebraic extraction from the retained parent theorem, not a new first-principles computation of the C3[111] operator or the hw=1 triplet. Because the chain reduces to one retained parent claim plus standard Fourier mathematics with zero external checks, the conservative rubric classifies it as audited_decoration rather than audited_clean."
     },
     "three_generation_chirality_boundary_note": {
       "audit_date": null,

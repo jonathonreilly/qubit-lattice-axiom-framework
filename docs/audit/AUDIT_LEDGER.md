@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1246 |
+| unaudited | 1245 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -45,26 +45,27 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
+| `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
 
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 686 |
 | `audited_conditional` | 115 |
-| `audited_decoration` | 33 |
+| `audited_decoration` | 34 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1472 |
+| `unaudited` | 1471 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1018 |
-| `decoration` | 34 |
+| `decoration` | 35 |
 | `meta` | 231 |
 | `no_go` | 243 |
 | `open_gate` | 112 |
-| `positive_theorem` | 744 |
+| `positive_theorem` | 743 |
 
 | criticality | count |
 |---|---:|
@@ -953,6 +954,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12229,6 +12231,20 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Three independent grown families produce quantitatively identical physics on all 9 measurable properties to within 5%.  _(class `B`)_
 - **chain closes:** False — The source table itself leaves Family 3 Distance alpha as '(not yet)', and no runner is provided to recompute the 9-property comparison, so the headline 9/9 three-family match does not close.
 - **rationale:** Issue: The note claims three families match on all 9 measurable properties, but the table explicitly has Family 3 Distance alpha marked '(not yet)' and the note provides no runner or log artifact to verify the cross-family card. Why this blocks: the load-bearing 9/9 statement is false on the face of the supplied table, and the broader inference that observables are geometry-independent cannot follow from a partial, hand-entered comparison. Repair target: add a runner that recomputes every listed property for all three families, including Family 3 Distance alpha, with explicit <5% assertions and at least one holdout check. Claim boundary until fixed: safe to cite this as a partial comparison of three selected drift/restore rows with eight populated properties and distance-alpha data only for Families 1 and 2; not safe to claim 9/9 three-family equality or geometry-independence.
+- **auditor confidence:** high
+
+### `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03`
+
+- **Note:** [`THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md`](../../docs/THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given the retained C^3 hw=1 triplet and cyclic C3[111] action, the standard Z3 Fourier basis diagonalizes C3[111] with eigenvalues 1, omega, omega^2 and yields the stated one-dimensional isotypic decomposition and cyclic-average projector.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_three_generation_observable_theorem_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T205917Z-2048b28b-three_gen_z3_fourier_dia-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the retained three-generation observable theorem, C3[111] acts on H_hw=1 as the cyclic permutation X1 -> X2 -> X3 -> X1, represented by the 3x3 cyclic shift matrix.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by direct finite-dimensional linear algebra from the single retained_bounded upstream input that C3[111] is the cyclic shift on the X1,X2,X3 basis. No additional physics premise or external comparator is used.
+- **rationale:** The runner source hard-codes the cyclic-shift matrix supplied by the upstream note and verifies the Fourier diagonalization, orthonormality, inverse transform, eigenspace dimensions, diagonal form, and cyclic-average projector by direct matrix algebra. This is a sound algebraic extraction from the retained parent theorem, not a new first-principles computation of the C3[111] operator or the hw=1 triplet. Because the chain reduces to one retained parent claim plus standard Fourier mathematics with zero external checks, the conservative rubric classifies it as audited_decoration rather than audited_clean.
+- **decoration parent:** `three_generation_observable_theorem_note`
 - **auditor confidence:** high
 
 ### `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10`

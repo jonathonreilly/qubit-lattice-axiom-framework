@@ -1,0 +1,49 @@
+loop_slug: qcd-running-bridge-bounded-repair
+date: 2026-05-24
+branch: physics-loop/qcd-running-bridge-bounded-repair-block10-20260524
+base: physics-loop/plaquette-self-consistency-bounded-repair-block09-20260524
+base_commit_after_rebase: 7ff138c63
+base_pr: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1787
+mode: science-fix
+target_claim_id: qcd_low_energy_running_bridge_note_2026-05-01
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: "PDG thresholds, M_Z, and alpha_s(M_Z) comparator are standard-infrastructure/comparator inputs, not derived framework outputs."
+proposal_allowed: false
+proposal_allowed_reason: "This branch hardens an already bounded standard-infrastructure bridge; it does not assign an effective retained verdict."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms_introduced: false
+stacked_on_unmerged_block: plaquette-self-consistency-bounded-repair
+files_touched:
+  - docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md
+  - scripts/frontier_qcd_low_energy_running_bridge.py
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - .claude/science/physics-loops/qcd-running-bridge-bounded-repair/
+retired_imports:
+  - implicit claim-type inference from status prose alone
+  - runner output that omitted the bounded tag on default checks
+current_queue_result:
+  rank: 4
+  ready: false
+  ready_reason: "Blocked until stacked plaquette and Perron dependencies reach retained-grade audit on main."
+  descendants: 971
+verification:
+  runner: "python3 scripts/frontier_qcd_low_energy_running_bridge.py -> SUMMARY: PASS=18 FAIL=0"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh on stacked branch -> complete, ready_count=12"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK (existing warning/notices only)"
+  diff_check: "git diff --check -> clean"
+  controlled_vocabulary: "python3 scripts/render_controlled_vocabulary.py --check -> clean"
+  vocab_lint: "python3 scripts/vocab_lint.py --report-only docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md .claude/science/physics-loops/qcd-running-bridge-bounded-repair -> 0 violations"
+review_loop:
+  disposition: pass
+  notes: "Local review-loop pass over the stacked diff found no retained-grade overclaim, no new axiom, and explicit standard-infrastructure/comparator imports."
+pr:
+  url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1792
+  status: open_stacked_on_pr_1787
+next_exact_action: "Wait for the Perron and plaquette repairs; if they land cleanly, rebase this stacked branch onto main and let independent audit process the QCD bridge row."
+stop_condition: "Stacked PR opened; independent audit remains external."

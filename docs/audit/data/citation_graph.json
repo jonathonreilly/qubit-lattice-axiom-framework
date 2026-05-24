@@ -72011,15 +72011,15 @@
     },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "plaquette_self_consistency_note",
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ccfa8b663d779b07e94e7bdf5529578e1829a7bf00770087d4312b34b68a6917",
+      "note_hash": "de4b92472480093be07339ca58deb88ea3a4df8068361de1efe9609ec97628e5",
       "path": "docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md",
       "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
       "title": "QCD Low-Energy Running Bridge: `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note"
@@ -84494,11 +84494,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 542,
+      "bounded_theorem": 543,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
-      "none": 1477,
+      "none": 1476,
       "open_gate": 45,
       "positive_theorem": 174
     },

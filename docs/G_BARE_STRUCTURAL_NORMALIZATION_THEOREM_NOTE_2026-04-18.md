@@ -1,37 +1,43 @@
 # G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain
 
-**Date:** 2026-04-18
-**Branch:** `claude/quizzical-shockley-537438`
+**Date:** 2026-04-18 (bounded source hardening 2026-05-24)
+**Type:** bounded_theorem
 **Script:** `scripts/frontier_g_bare_structural_normalization.py`
-**Status:** CONDITIONAL CLOSURE (Claims 1, 2 proposed_retained; Claim 3 honestly partial)
+**Status:** bounded - structural-normalization support conditional on the
+            admitted Wilson plaquette action form and continuum kinetic
+            matching convention. This note does not assign an audit verdict;
+            independent audit owns `claim_type`, `audit_status`, and any
+            effective `retained_bounded` propagation.
 
 ---
 
 ## Executive summary
 
-This note attacks Path 1 of the `g_bare = 1` internal-fixation program: establish
-that the `Cl(3) -> End(V) -> su(3) -> Wilson action` chain forces the Wilson
-plaquette coefficient structurally, so that `g_bare = 1` is a normalization
-theorem rather than a dynamical fixation.
+This note records Path 1 of the `g_bare = 1` internal-fixation program:
+establishing bounded structural support that the
+`Cl(3) -> End(V) -> su(3) -> Wilson action` chain fixes the Wilson plaquette
+coefficient once the Wilson action form and continuum kinetic matching
+convention are supplied.
 
 **Verdict:**
 
-- **Claim 1 (Cl(3) -> End(V) canonicity)**: PROVED up to an explicit finite
+- **Claim 1 (Cl(3) -> End(V) canonicity)**: supported up to an explicit finite
   outer automorphism group. The Cl(3;C) -> End(C^8) chiral embedding is
   canonical up to Cl(3) chirality swap, axis permutation (S3), and axis
-  sign flips; the induced compact subalgebra su(3) on the retained triplet
+  sign flips; the induced compact subalgebra su(3) on the upstream triplet
   is unique up to inner automorphisms of End(V) and this explicit finite
   outer group. No continuous ambiguity.
 
-- **Claim 2 (trace form forced)**: PROVED exactly. On the retained triplet
+- **Claim 2 (trace form rigidity)**: supported exactly. On the upstream triplet
   block the Hilbert-Schmidt trace form induced from End(V) equals the
   Cl(3) pseudoscalar-adjoint form up to the overall positive scalar
   `dim(V)/dim(triplet) = 8/3 ~` (more precisely, up to a single explicit
   positive ratio determined by block dimensions). Both forms are diagonal
   in the canonical Gell-Mann basis with the *same* relative spectrum.
 
-- **Claim 3 (Wilson coefficient forced -> beta = 6)**: PARTIAL. The following
-  sub-claims close exactly:
+- **Claim 3 (Wilson coefficient rigidity -> beta = 6)**: bounded conditional
+  support. The following sub-claims close relative to the admitted Wilson
+  action-form and kinetic-matching inputs:
 
   - (3a) Given canonical orthonormal generators `T_a` satisfying
     `Tr(T_a T_b) = delta_ab / 2`, and an operator-valued connection
@@ -40,7 +46,7 @@ theorem rather than a dynamical fixation.
     `(1/g^2) F^2` kinetic term only if `beta = 2 N_c / g^2`.
   - (3b) In the *canonical Cl(3) basis*, `g = 1` corresponds to the absence
     of a scalar rescaling of the canonically-fixed generators (Claim 1 + 2
-    closure).
+    support).
   - (3c) Therefore `beta = 2 N_c = 6`.
 
   What does NOT close: the Wilson action `S = -beta Re Tr(U_plaq)` is not
@@ -52,12 +58,12 @@ theorem rather than a dynamical fixation.
   who contests the choice of Wilson plaquette action per se (vs. improved
   actions, or non-kinetic corrections) is not answered by this theorem.
 
-**Honest verdict**: Path 1 closes the structural-normalization objection
-("`g_bare = 1` is just absorbed convention") but does NOT close the
-action-choice objection ("why Wilson vs. Symanzik vs. an action from
-first principles?"). On the retained surface where the Wilson plaquette
-action is the accepted lattice kinetic term, `g_bare = 1 <=> beta = 6`
-is rigidly forced.
+**Honest verdict**: Path 1 gives bounded support against the
+structural-normalization objection ("`g_bare = 1` is just absorbed
+convention") but does NOT close the action-choice objection ("why Wilson vs.
+Symanzik vs. an action from first principles?"). On the current admitted
+Wilson-evaluation surface, `g_bare = 1 <=> beta = 6` is conditional on the
+supplied Wilson action form and kinetic matching convention.
 
 ---
 
@@ -66,7 +72,7 @@ is rigidly forced.
 This theorem builds on:
 
 - [G_BARE_RIGIDITY_THEOREM_NOTE.md](./G_BARE_RIGIDITY_THEOREM_NOTE.md) --
-  proved: given concrete `su(3) ⊂ End(V)` with canonical trace form, no
+  supports: given concrete `su(3) ⊂ End(V)` with canonical trace form, no
   scalar dilation `T_a -> lambda T_a` is allowed.
 - [G_BARE_DERIVATION_NOTE.md](./G_BARE_DERIVATION_NOTE.md) -- bounded
   Cl(3) normalization argument, flagged as convention-vs-constraint.
@@ -75,18 +81,19 @@ This theorem builds on:
 - [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](./GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
   -- su(3) closure on selected-axis fiber + complementary swap.
 - [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](./THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
-  -- retained `hw=1` triplet + exact induced `C_3[111]` cycle.
+  -- upstream `hw=1` triplet + exact induced `C_3[111]` cycle.
 - `.claude/science/derivations/native-gauge-scope-theorem-2026-04-17.md` --
-  retained native-gauge construction is literally "bivectors of Cl(n)".
+  upstream native-gauge construction is literally "bivectors of Cl(n)".
 - `.claude/science/derivations/native-gauge-family-uniqueness-2026-04-17.md`
   -- `Lambda^2(R^n)` is the unique `O(n)`-covariant admissible bivector
   subspace.
 - [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](./PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-  -- Wilson plaquette as uniquely-determined observable at `beta = 6`.
+  -- current Wilson plaquette `beta = 6` evaluation surface.
 
-The existing rigidity theorem settled step B (no scalar dilation of
-generators). The present note settles step A (canonicity of the Cl(3) ->
-End(V) embedding) and step C (propagation to the Wilson coefficient).
+The existing rigidity theorem supports step B (no scalar dilation of
+generators). The present note records bounded support for step A (canonicity
+of the Cl(3) -> End(V) embedding) and step C (propagation to the Wilson
+coefficient).
 
 ---
 
@@ -96,7 +103,7 @@ End(V) embedding) and step C (propagation to the Wilson coefficient).
 
 **Claim 1 (Cl(3) embedding canonicity).** Let `V = C^8` be the taste
 Hilbert space. The Cl(3) -> End(V) embedding via the canonical chiral
-chiral-matrix representation, plus the retained graph-first axis selector
+chiral-matrix representation, plus the upstream graph-first axis selector
 (Sec. 3 of `docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`), plus restriction
 to the `hw=1` triplet with the exact induced `C_3[111]` cycle
 (`docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`), determines a concrete
@@ -129,7 +136,7 @@ multiplicity action (inner automorphism of End(V)).
   Remaining discrete ambiguity: exchange of the two minimal ideals
   (chirality swap `P_R <-> P_L`). This is the explicit outer factor (ii-a).
 
-**(1.b) Graph axis selector is canonical up to `S_3`.** The retained
+**(1.b) Graph axis selector is canonical up to `S_3`.** The upstream
 weak-axis selector (`docs/NATIVE_GAUGE_CLOSURE_NOTE.md` Sec. 2,
 `docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` Step 1) minimizes
 `F(p) = sum_{i<j} p_i p_j` on the taste simplex, producing exactly three
@@ -155,11 +162,11 @@ this is the unique compact real form.
 
 - Wedderburn structure theorem for Cl(3;C) (classical).
 - Schur's lemma over C (classical).
-- Graph-first axis selector retention (retained: `NATIVE_GAUGE_CLOSURE_NOTE.md`
+- Graph-first axis selector row (`NATIVE_GAUGE_CLOSURE_NOTE.md`
   Sec. "Retained Positive: Graph-First Structural SU(3) Closure").
-- `hw=1` triplet + induced C_3 cycle retention (retained:
+- `hw=1` triplet + induced C_3 cycle row (
   `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`).
-- `M_3(C)` generation from projectors + C_3 powers (retained:
+- `M_3(C)` generation from projectors + C_3 powers (
   `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` Step 4).
 
 **Circularity audit for Claim 1.** None. Nothing in the proof refers to
@@ -167,11 +174,11 @@ Wilson action, β, or g. The Cl(3) generator anticommutator
 `{G_mu, G_nu} = 2 delta_{munu} I` is the Cl(3) axiom itself, not a
 g-dependent input.
 
-### Verdict for Claim 1: **PROVED** (up to explicit finite outer discrete group).
+### Verdict for Claim 1: **EXACT STRUCTURAL SUPPORT** (up to explicit finite outer discrete group).
 
 ---
 
-## Claim 2 — Trace form forced by Cl(3) structure
+## Claim 2 — Trace form rigidity from Cl(3) structure
 
 ### Precise statement
 
@@ -226,11 +233,11 @@ generators, so `k > 0`.
 
 **Circularity audit for Claim 2.** None. The proof nowhere uses β or g.
 
-### Verdict for Claim 2: **PROVED** (with explicit positive scalar `k` computed in runner).
+### Verdict for Claim 2: **EXACT STRUCTURAL SUPPORT** (with explicit positive scalar `k` computed in runner).
 
 ---
 
-## Claim 3 — Wilson action coefficient forced
+## Claim 3 — Wilson action coefficient rigidity
 
 ### Precise statement
 
@@ -300,14 +307,14 @@ determined by the Cl(3) bivector/derivation structure), `g = 1` is the
 unique assignment consistent with both generator normalization and
 coefficient interpretation.
 
-### What Claim 3 DOES close
+### What Claim 3 supplies
 
 - Given the Wilson action form `-beta Re Tr(U_p)` and canonical generators,
-  `beta = 2 N_c / g^2` is forced.
-- In the canonical Cl(3) basis, `g = 1` is forced by structural rigidity
+  `beta = 2 N_c / g^2` follows.
+- In the canonical Cl(3) basis, `g = 1` is supported by structural rigidity
   (Claims 1 + 2 + existing rigidity theorem).
-- Hence `beta = 6` is not an independent free parameter on the retained
-  Cl(3) surface.
+- Hence `beta = 6` is not an independent free parameter on the bounded
+  Cl(3) Wilson-evaluation surface.
 
 ### What Claim 3 DOES NOT close
 
@@ -350,8 +357,8 @@ reparametrization is a coordinate change on the same operator `A`, not
 a new physical parameter. This matches the existing rigidity theorem's
 response (Sec. 4 of `G_BARE_RIGIDITY_THEOREM_NOTE.md`).
 
-### Verdict for Claim 3: **PARTIAL-RETAINED**.
-Closes rigidity of the coefficient *given* the Wilson action form.
+### Verdict for Claim 3: **BOUNDED-CONDITIONAL SUPPORT**.
+Supplies rigidity support for the coefficient *given* the admitted Wilson action form.
 Does not close the action-choice question itself.
 
 ---
@@ -446,7 +453,7 @@ The runner performs explicit symbolic/numeric verification:
     beta by `lambda^2`, but is forbidden by Claim 2.
 
 - **Section D (end-to-end):** Confirm that `Cl(3) axioms` + `graph-first
-  selector retention` + `Wilson action form` => `beta = 6` with no
+  selector input` + `Wilson action form` => `beta = 6` with no
   circular step.
 
 **Runner results**: see final section.
@@ -455,30 +462,31 @@ The runner performs explicit symbolic/numeric verification:
 
 ## Premises table
 
-| Premise | Scope | Retained? |
+| Premise | Scope | Current role in this bounded source |
 |---|---|---|
-| Cl(3) anticommutator axiom | framework axiom | yes |
-| Cubic `Z^3` taste substrate | framework axiom | yes |
-| Wedderburn / Schur for Cl(3;C) | pure math | yes |
-| Graph-first axis selector | retained theorem | yes |
-| `hw=1` triplet + C_3 cycle | retained theorem | yes |
-| `M_3(C)` generation on triplet | retained theorem | yes |
-| Killing-form rigidity on simple Lie algebras | pure math | yes |
-| Standard Wilson plaquette action | lattice-QFT convention | **retained convention, not derived from Cl(3)** |
-| Standard small-a plaquette expansion | pure math | yes |
-| Canonical kinetic-term continuum limit `(1/g^2) F^2` | QFT convention | retained convention |
+| Cl(3) anticommutator axiom | framework axiom | current framework premise |
+| Cubic `Z^3` taste substrate | framework axiom | current framework premise |
+| Wedderburn / Schur for Cl(3;C) | pure math | standard math input |
+| Graph-first axis selector | upstream theorem row | dependency subject to audit status |
+| `hw=1` triplet + C_3 cycle | upstream theorem row | dependency subject to audit status |
+| `M_3(C)` generation on triplet | upstream theorem row | dependency subject to audit status |
+| Killing-form rigidity on simple Lie algebras | pure math | standard math input |
+| Standard Wilson plaquette action | lattice-QFT convention | admitted action-form input, not derived from Cl(3) |
+| Standard small-a plaquette expansion | pure math | standard expansion input |
+| Canonical kinetic-term continuum limit `(1/g^2) F^2` | QFT convention | admitted matching convention |
 
-**Weak link**: the Wilson plaquette action form is retained as the
-*standard* lattice gauge action on main, not derived from Cl(3) first
-principles. The framework uses it (e.g., `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`)
-but does not currently close the question of whether an alternative
-action (Symanzik, Cl(3)-native volume-form, etc.) would give the same
-structural answer.
+**Weak link**: the Wilson plaquette action form is admitted as the standard
+lattice gauge action on the current package surface, not derived from Cl(3)
+first principles. The framework uses it (e.g.,
+`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`) but does not currently close the
+question of whether an alternative action (Symanzik, Cl(3)-native volume-form,
+etc.) would give the same structural answer.
 
-**A weaker but cleaner retained reading**: given that the community-standard
-Wilson plaquette action is the accepted lattice kinetic term on the retained
-surface, the Cl(3) rigidity chain forces `g_bare = 1 <=> beta = 6` with no
-remaining freedom.
+**Bounded reading**: given that the community-standard Wilson plaquette action
+is the admitted lattice kinetic term on the current Wilson-evaluation surface,
+the Cl(3) rigidity chain supports `g_bare = 1 <=> beta = 6` with no remaining
+continuous scalar-normalization freedom. The action-form premise remains
+admitted.
 
 ---
 
@@ -493,13 +501,13 @@ remaining freedom.
 > canonical generator basis `Tr(T_a T_b) = delta_{ab}/2`, the Wilson
 > plaquette action's continuum-kinetic matching forces `beta = 2 N_c / g^2`,
 > and the canonical Cl(3) connection corresponds to `g = 1`, hence
-> `beta = 6` on the SU(3) retained surface. This is a structural
-> normalization theorem, not a dynamical fixation of g.
+> `beta = 6` on the admitted SU(3) Wilson-evaluation surface. This is a
+> bounded structural-normalization statement, not a dynamical fixation of g.
 >
-> The theorem does not derive the Wilson action form itself; that remains
-> a retained lattice-QFT convention. Given that convention, however,
-> `g_bare = 1` is rigidly forced by the Cl(3) generator structure, with
-> no residual scalar freedom.
+> The theorem does not derive the Wilson action form itself; that remains an
+> admitted lattice-QFT action-form input. Given that convention, however,
+> `g_bare = 1` is fixed by the Cl(3) generator structure up to the bounded
+> scope above, with no residual scalar freedom.
 
 ---
 
@@ -511,8 +519,9 @@ remaining freedom.
   once the Cl(3) generator structure is fixed.
 - The residual objection that the Cl(3) -> End(V) embedding might
   carry hidden continuous parameters.
-- The structural relationship `g = 1 <=> beta = 6` on the SU(3)
-  retained surface, with no circular input.
+- The structural relationship `g = 1 <=> beta = 6` on the admitted SU(3)
+  Wilson-evaluation surface, conditional on the admitted Wilson action form,
+  with no circular input.
 
 ### What it does not close
 
@@ -541,8 +550,8 @@ honestly (it is a status marker, not a failure).
 
 - Attempt to derive the Wilson plaquette action form from Cl(3) first
   principles (e.g., as the minimal gauge-invariant curvature square in
-  the Cl(3) volume-form induced measure). If that closes, Claim 3 would
-  promote from PARTIAL-RETAINED to RETAINED-CLOSURE.
+  the Cl(3) volume-form induced measure). If that closes, Claim 3 could move
+  beyond this bounded admitted-action-form scope after independent audit.
 - Alternatively, demonstrate robustness of `beta = 6` (equivalently
   `g = 1`) across the natural family of lattice gauge actions (Wilson,
   Symanzik, fermion-induced), showing the normalization is

@@ -30,7 +30,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 13 | `yt_vertex_power_derivation` | open_gate | unaudited | critical | 961 | 12.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
 | 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 958 | 37.91 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 15 | `rconn_derived_note` | bounded_theorem | unaudited | critical | 922 | 16.85 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_color_projection_mc.py` |
-| 16 | `g_bare_structural_normalization_theorem_note_2026-04-18` | positive_theorem | unaudited | critical | 910 | 18.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_structural_normalization.py` |
+| 16 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | unaudited | critical | 910 | 18.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_structural_normalization.py` |
 | 17 | `assumption_derivation_ledger` | bounded_theorem | unaudited | critical | 899 | 13.81 |  | fresh_context_or_stronger_with_cross_confirmation | - |
 | 18 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | positive_theorem | unaudited | critical | 897 | 13.81 |  | fresh_context_or_stronger_with_cross_confirmation | - |
 | 19 | `g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09` | bounded_theorem | unaudited | critical | 894 | 10.31 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_canonical_convention_narrow.py` |

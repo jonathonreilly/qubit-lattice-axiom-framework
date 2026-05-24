@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1018,
-    "decoration": 35,
+    "bounded_theorem": 1017,
+    "decoration": 36,
     "meta": 231,
     "no_go": 243,
     "open_gate": 112,
@@ -47,7 +47,7 @@
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 3,
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
-    "decoration_under_graph_first_su3_integration_note": 6,
+    "decoration_under_graph_first_su3_integration_note": 7,
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
     "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 1,
@@ -66,7 +66,7 @@
     "retained_bounded": 416,
     "retained_no_go": 154,
     "retained_pending_chain": 7,
-    "unaudited": 1244
+    "unaudited": 1243
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

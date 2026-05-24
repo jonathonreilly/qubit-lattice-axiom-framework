@@ -47,6 +47,8 @@ note_text = NOTE_PATH.read_text()
 required = [
     "Three-Generation Observable: No-Proper-Quotient Narrow Theorem",
     "Type:** bounded_theorem",
+    "Retained carrier boundary (2026-05-24)",
+    "Load-bearing context:",
     "M_3(ℂ)",
     "C₃[111]",
     "no proper quotient",
@@ -67,6 +69,13 @@ forbidden = [
     "load-bears on generation_axiom_boundary",
     "physical-species claim is hereby retained",
     "substrate physicality is established",
+    "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+    "staggered-Dirac realization derivation target",
+    "Admitted context inputs:",
+    "Admitted-import declaration",
+    "admitted carrier",
+    "admitted import",
+    "regular representation",
 ]
 for f in forbidden:
     check(f"narrow scope avoids forbidden claim: {f!r}",
@@ -217,6 +226,12 @@ if claim_row is not None:
     claim_deps = set(claim_row.get("deps", []))
     check(f"{CLAIM_ID} records all four declared dependencies",
           set(cited).issubset(claim_deps),
+          detail=f"deps={sorted(claim_deps)}")
+    check(f"{CLAIM_ID} records no extra direct dependencies after boundary repair",
+          claim_deps == set(cited),
+          detail=f"deps={sorted(claim_deps)}")
+    check("staggered realization gate is not a declared dependency",
+          "staggered_dirac_realization_gate_note_2026-05-03" not in claim_deps,
           detail=f"deps={sorted(claim_deps)}")
     check(f"{CLAIM_ID} remains effective-unaudited before independent audit",
           claim_row.get("effective_status") == "unaudited",

@@ -1,8 +1,11 @@
 # Three-Generation Observable: No-Proper-Quotient Narrow Theorem
 
-**Date:** 2026-05-02 (Tier B narrowing + C₃-carrier admission 2026-05-18)
+**Date:** 2026-05-02 (Tier B narrowing + C₃-carrier admission 2026-05-18; retained-carrier boundary repair 2026-05-24)
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`); explicit C₃-carrier admission declared in §"Admitted-import declaration (2026-05-18)" below.
+**Load-bearing context:** the finite-dimensional `C^3` `hw=1` operator
+surface supplied by the retained BZ-corner / taste-cube support packet. No
+full staggered-carrier realization gate is a premise of this narrowed
+matrix-algebra theorem.
 **Primary runner:** `scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py`
 
 ## Claim scope (proposed)
@@ -28,10 +31,10 @@ non-trivial direct sums). The narrow theorem **does not** claim:
   charged-lepton generations (separate downstream identification);
 - closure of the broader three-generation matter-content lane.
 
-The parent `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` currently has a
-conditional audit verdict because it cites both the algebra-generation
-result and the substrate-physicality bridge. This narrow theorem keeps
-**only the algebra-generation half** as a standalone retainable claim.
+The parent `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` historically mixed
+the algebra-generation result with substrate-physicality bridge language. This
+narrow theorem keeps **only the algebra-generation half** as a standalone
+bounded audit candidate.
 
 ## Declared audit dependencies (one-hop)
 
@@ -68,39 +71,31 @@ so S ∈ {∅, {1,2,3}}.
 
 This is class (A) — algebraic identity / closure on retained-grade inputs.
 
-## Admitted-import declaration (2026-05-18)
+## Retained carrier boundary (2026-05-24)
 
-The staggered-Dirac / C₃[111] carrier on which this theorem operates is
-**explicitly declared as an admitted import** of this note. Concretely:
+The `hw=1` carrier used here is the finite-dimensional algebraic carrier
+supplied by the four declared support authorities above. Concretely:
 
-- The `hw=1` triplet `H_{hw=1} ≅ ℂ³` with basis `(X_1, X_2, X_3)` is
-  an admitted carrier; its derivation lives in the staggered-Dirac
-  realization gate (canonical parent
-  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, currently
-  `open_gate`).
-- The cyclic generator `C₃[111]: X_1 → X_2 → X_3 → X_1` is an admitted
-  symmetry of the carrier; its group-theoretic identity is `C₃ ≅ ℤ/3ℤ`,
-  abstractly the cyclic group of order 3.
+- The `hw=1` triplet `H_{hw=1} ≅ ℂ³` with basis `(X_1, X_2, X_3)` is the
+  retained three-sector BZ-corner / taste-cube carrier for this algebraic
+  theorem.
+- The diagonal projectors `P_{X_i}` are the exact translation-character
+  projectors on that carrier.
+- The cyclic generator `C₃[111]: X_1 → X_2 → X_3 → X_1` is the retained
+  cyclic operator on the same finite carrier.
 
-Under this admission, the no-proper-quotient claim narrows to a pure
-finite-group / linear-algebra statement about `C₃`-equivariant
-subspaces of `ℂ³`. No new physical content is introduced beyond what
-the admitted carrier already provides.
+The theorem does not assert the full physical staggered-carrier realization,
+physical-species semantics, or substrate necessity. Those are separate lanes.
+The bounded claim here is only:
 
-The Tier B repair narrows the bounded claim as follows:
-
-> **Narrowed claim.** *Conditional on the admitted staggered-Dirac /
-> `C₃[111]` carrier import*, the three-generation observable on
-> `H_{hw=1} ≅ ℂ³` has no proper non-trivial sub-representation
-> invariant under both the diagonal projector algebra `D_3` and the
-> `C₃[111]` cycle. Equivalently, no proper quotient of `H_{hw=1}`
-> preserves both the translation-character separation and the
+> **Narrowed claim.** On the retained finite `C^3` carrier, no proper
+> non-trivial subspace is invariant under both the diagonal projector algebra
+> `D_3` and the `C₃[111]` cycle. Equivalently, no proper quotient of
+> `H_{hw=1}` preserves both the translation-character separation and the
 > `C₃[111]` cycle.
 
-This is strictly a narrowing — it does not strengthen the original
-algebra-generation argument; it only declares the carrier as admitted
-and isolates the part of the proof that is pure finite-group
-arithmetic on `C₃`.
+This is strictly a narrowing: it isolates the pure finite-dimensional
+linear-algebra statement and does not import a wider physical carrier claim.
 
 ## Finite-group arithmetic derivation (C₃ subgroup structure, 2026-05-18)
 
@@ -131,31 +126,28 @@ subgroups: `C₃ / {e} ≅ C₃` (trivial quotient) and `C₃ / C₃ ≅ {e}`
 (collapse to a point). By Step 3 these are the only quotients, so
 `C₃` has **no non-trivial proper quotients**.
 
-**Step 5 — Lift to the admitted carrier.**
-The admitted `H_{hw=1} ≅ ℂ³` carrier is the regular representation
-of `C₃` (up to the explicit basis identification with translation
-characters). A `C₃`-equivariant proper subspace `V ⊊ ℂ³` would give
-a non-trivial sub-representation, whose annihilator would give a
-non-trivial proper quotient of the carrier compatible with the `C₃`
-action. By Step 4 no such quotient exists at the group level; by
-linearity (Maschke / direct-sum decomposition for the regular
-representation of a finite cyclic group over `ℂ`), no `C₃`-invariant
-proper subspace of `ℂ³` exists that is also `D_3`-invariant, except
-`{0}` and `ℂ³` itself.
+**Step 5 — Lift to the retained `D_3 + C3` carrier.**
+Over `ℂ`, `C₃` alone has one-dimensional character eigenspaces, so this is not
+a `C₃`-only irreducibility theorem. The quotient must preserve both the exact
+translation-character separation and the `C₃[111]` cycle. Preserving the
+projector algebra `D_3` forces any invariant subspace to be a coordinate
+subspace `⊕_{i ∈ S} ℂ X_i`; preserving `C₃[111]` forces the subset `S` to be
+closed under the three-cycle. The only such subsets are `∅` and
+`{1,2,3}`, hence the only subspaces invariant under both retained structures
+are `{0}` and `ℂ³`.
 
 **Step 6 — Conclusion.**
-The three-generation observable structure on the admitted `C₃`
-carrier inherits the no-proper-quotient property of `C₃` itself.
-No proper quotient of `H_{hw=1}` preserves both the
-translation-character separation (= `D_3`-eigenspace structure) and
-the `C₃[111]` cycle.
+The three-generation observable structure on the retained finite carrier has
+no proper quotient that preserves both the translation-character separation
+(the `D_3` eigenspace structure) and the `C₃[111]` cycle.
 
-The derivation is **pure finite-group arithmetic** — Lagrange's
-theorem applied to a prime-order cyclic group — and depends on no
-input beyond the admitted carrier. Per
+The derivation is **pure finite-group arithmetic plus projector algebra**:
+Lagrange's theorem applies to the prime-order cyclic action, and the retained
+projectors force the coordinate-subspace boundary. Per
 `feedback_consistency_vs_derivation_below_w2`, this is a genuine
 derivation, not a numerical / dimensional coincidence: it follows
-from `|C₃| = 3` being prime.
+from `|C₃| = 3` being prime together with the retained coordinate-projector
+structure.
 
 ## Verification
 
@@ -189,8 +181,9 @@ audit_required_before_effective_retained: true
 ```
 
 Audit status is set only by the independent audit lane. This note is safe to
-land as an unaudited, graph-visible bounded-theorem candidate; retained-bounded
-effective status requires independent audit of this row and bounded admitted-input closure of its declared dependency chain.
+land as an unaudited, graph-visible bounded-theorem candidate; any later
+effective status requires independent audit of this row and retained-grade
+closure of its declared dependency chain.
 
 ## What this theorem closes
 
@@ -208,32 +201,11 @@ effective status requires independent audit of this row and bounded admitted-inp
 
 ## Cross-references
 
-- `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` — parent with a conditional
-  audit verdict; this narrow theorem keeps only the algebra-generation half.
+- `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` — parent surface; this narrow
+  theorem keeps only the algebra-generation half.
 - Declared primitives: [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md),
   [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md),
   [`S3_MASS_MATRIX_NO_GO_NOTE.md`](S3_MASS_MATRIX_NO_GO_NOTE.md), and
   [`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md).
 - Cycle 1 (PR #292), Cycle 2 (PR #293), Cycle 3 (PR #294) — sister
   narrow theorems on different lanes.
-
-
-## Hypothesis set used (axiom-reset 2026-05-03)
-
-Per `MINIMAL_AXIOMS_2026-05-03.md`, this note depends on the **staggered-Dirac realization derivation target**, which is currently an open gate. The note's load-bearing claim defines or relies on fermion fields, fermion-number operators, fermion correlators, fermion bilinears, the staggered Dirac action, the BZ-corner doubler structure, the `hw=1` triplet, charged-lepton sector content, neutrino sector content, quark / hadron content, the Koide / PMNS / CKM observable surfaces, or the Grassmann CAR boundary structure — all of which depend on the staggered-Dirac realization derivation target listed in `MINIMAL_AXIOMS_2026-05-03.md`.
-
-Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`claim_type: open_gate`). In-flight supporting work (see `MINIMAL_AXIOMS_2026-05-03.md`):
-
-- `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
-- `THREE_GENERATION_STRUCTURE_NOTE.md`
-- `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`
-- `scripts/frontier_generation_rooting_undefined.py`
-- `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
-
-Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

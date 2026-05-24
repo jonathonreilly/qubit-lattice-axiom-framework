@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1272 |
+| unaudited | 1284 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 109 |
-| ~~audited_failed~~ | 17 |
+| ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,19 +52,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 656 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
-| `audited_failed` | 61 |
+| `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1498 |
+| `unaudited` | 1510 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1015 |
+| `bounded_theorem` | 1016 |
 | `decoration` | 32 |
 | `meta` | 230 |
 | `no_go` | 243 |
 | `open_gate` | 113 |
-| `positive_theorem` | 748 |
+| `positive_theorem` | 747 |
 
 | criticality | count |
 |---|---:|
@@ -917,24 +917,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
-| `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `born_lane_comparison_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `central_band_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `central_band_collapse_strength_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `central_band_dense_boundary_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `central_band_dense_largen_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `central_band_mass_window_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `chiral_split_mass_gravity_note` | open_gate | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `dirac_v4_convergence_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | B | - |
-| `edge_deletion_boundary_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `evolving_network_prototype_v2_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_fm_transfer_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -949,7 +938,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -1388,19 +1376,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The no-go is scoped to exact finite-cell entropy constructions and a gapped two-level edge example, not to all possible entropy-carrier theorems. The note explicitly distinguishes the primitive trace Tr((I_16/16)P_A)=1/4 from von Neumann and binary entropy values, and the runner reproduces those finite arithmetic checks with current PASS=26 FAIL=0. No hidden physical identification is used to claim a positive entropy coefficient; the conclusion is negative and leaves positive routes open only if they add a selector or operational entropy theorem.
 - **auditor confidence:** high
 
-### `asymmetry_persistence_collapse_note`
-
-- **Note:** [`ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite computational sweep claim for dense generated 3D graphs at the stated N, thresholds, seeds, collapse probability, and normalization lanes, asserting unitary persistence benefit, no generic collapse rescue, and one narrow layernorm-assisted N=100 collapse pocket.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1300-e9d8-74b3-97f4-71752dd6c083`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The note's load-bearing step is that the Strongest retained rows tables are deterministic stdout of the registered runner and that the narrow conclusion is supported directly by those rows.  _(class `C`)_
-- **chain closes:** False — The supplied runner source/stdout do not match the note's stated configuration or tables: the runner defaults/stdout use 12 realizations while the note states 10, and completed N=80 collapse entries already differ numerically. The asserted N=100 threshold 0.10 pocket is not present in the supplied stdout because the run timed out, and the imported generator/propagator infrastructure is not supplied as a one-hop authority.
-- **rationale:** Issue: the note's bounded tables are stale relative to the supplied runner source/stdout, and the runner depends on unlisted imported infrastructure for graph generation, propagation, layernorm, and pruning. Why this blocks: the conclusion depends on exact finite rows, especially the N=100 layernorm collapse pocket, but the current packet neither reproduces those rows nor supplies the imported closure authority. Repair target: align the runner/note configuration, provide a completed cached log or sliced deterministic runner for the stated sweep, and cite/audit the imported infrastructure. Claim boundary until fixed: the packet only supports partial qualitative observations from the completed N=80 stdout, not the full bounded claim.
-- **auditor confidence:** high
-
 ### `asymmetry_persistence_joint_card_note`
 
 - **Note:** [`ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md)
@@ -1699,19 +1674,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing support claim closes because the note clearly makes the later robustness harness, not the historical standalone heuristic runner, the canonical interpretation surface. That canonical runner reproduces the stated W-type result and the note keeps the boundary narrow: fixed adjacency, externally imposed branch, not a full three-body BMV witness or topology-superposition claim. The historical runner's GHZ-like rows are not a contradiction because both the source note and that runner label them as non-canonical heuristic output.
 - **auditor confidence:** high
 
-### `born_lane_comparison_note`
-
-- **Note:** [`BORN_LANE_COMPARISON_NOTE.md`](../../docs/BORN_LANE_COMPARISON_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** A bounded seeded numerical comparison of modular gap+LN versus central-band |y|<2+LN on the corrected Sorkin |I3|/P harness for N=25,40,60 with npl=25, gap=2.0, and y_cut=2.0.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-151238-a5e2dcef-born_lane_comparison_not-006`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Both best LN lanes are Born-clean on the corrected harness at machine precision, with modular slightly more stable on the corrected Sorkin metric and central-band retaining a small finite-N decoherence advantage at N=40 and N=60.  _(class `C`)_
-- **chain closes:** False — The provided runner and helper sources genuinely generate the DAGs, propagate amplitudes, and compute the corrected Sorkin ratio rather than hard-coding the claimed values. However, the cached runner output does not match the note's retained rows, and it does not support the note's specific statement that modular maxima are lower overall.
-- **rationale:** The computational chain is class C in form: the primary runner uses included helper code to construct modular and central-band graphs and compute corrected I3 with -P(empty). But the source note is numerically stale relative to the supplied cache: for example modular N=25 reports mean 3.28e-16 and max 9.99e-16 in the note, while the runner gives mean 4.67e-16 and max 1.44e-15. The reduced claim that both lanes are Born-clean at machine precision is supported, but the exact table and the modular-stability comparison as written do not close from the packet.
-- **auditor confidence:** high
-
 ### `bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10`
 
 - **Note:** [`BOUGEROL_LACROIX_OSELEDETS_MET_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/BOUGEROL_LACROIX_OSELEDETS_MET_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -1890,45 +1852,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner source is substantive rather than a print-only or hard-coded expected-value check: it builds the graph, computes amplitudes for each slit subset, and forms |I3|/P directly. The completed runner output gives PASS for all four retained rows in the audited scope: N=80 and N=100 for LN+|y| and LN+|y|+collapse. The note's N=80 table values are stale relative to the supplied runner output, but the discrepancy does not change the load-bearing conclusion because all reported maxima remain far below the stated machine-precision gate of 1e-10. A second auditor should re-check whether the note should be updated to the current cached numbers and should note that only 3 seeds at N=80 and 1 seed at N=100 produced usable rows despite 4 attempted seeds.
 - **auditor confidence:** high
 
-### `central_band_collapse_note`
-
-- **Note:** [`CENTRAL_BAND_COLLAPSE_NOTE.md`](../../docs/CENTRAL_BAND_COLLAPSE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Parameter-fixed central-band graph computation for N=25,40,60 with npl=25, y_range=12.0, connect_radius=3.0, y_cut=2.0, and p_collapse=0.2.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1335-e2a0-7c92-b7fc-c865ba5fad5a`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The full matched-seed card is claimed to report decoherence and gravity deltas for linear, LN, collapse, LN+|y|, and LN+|y|+collapse at N=25,40,60 under y_cut=2.0 and p=0.2.  _(class `C`)_
-- **chain closes:** False — No. The supplied completed runner stdout disagrees with several source-note collapse rows, for example N=25 collapse is 0.607+/-0.053 and +1.607+/-1.011 in stdout versus 0.637+/-0.047 and +1.807+/-1.029 in the note.
-- **rationale:** Issue: the note's exact recorded joint card is stale relative to the supplied completed runner output. Why this blocks: the claim is the numerical card itself, so mismatched row values prevent the source note from closing even though several qualitative sign statements still survive. Repair target: update the note from a current completed run and include or cite the helper source that defines graph construction and gravity/decoherence metrics if a computed theorem is retained. Claim boundary until fixed: only the runner stdout supports a parameter-specific table, not the note as written.
-- **auditor confidence:** high
-
-### `central_band_collapse_strength_note`
-
-- **Note:** [`CENTRAL_BAND_COLLAPSE_STRENGTH_NOTE.md`](../../docs/CENTRAL_BAND_COLLAPSE_STRENGTH_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The source note's finite central-band collapse-strength sweep values and conclusions for N=40,60 and p=0.05,0.10,0.20.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1338-28a2-7e33-85f5-b093a266fded`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** All of the `LN + |y| + collapse` rows remain Born-clean at machine precision, with lower `p` marginally cleaner than `p = 0.2`.  _(class `C`)_
-- **chain closes:** False — The supplied stdout confirms machine-precision PASS for the six LN+|y|+collapse rows, but the note's table and p-ordering are stale relative to that stdout. In particular, N=60 p=0.20 has the smallest mean in stdout, not a worse value than p=0.05 or p=0.10, and N=40 reports ok=4 rather than six matched seeds.
-- **rationale:** Issue: the source table and qualitative lower-p trend disagree with the supplied completed runner stdout. Why this blocks: this bounded theorem is a runner-backed calibration, so the exact row values, seed accounting, and p-ordering are load-bearing evidence. Repair target: regenerate the note from the current runner artifact, update the table and seed accounting, and narrow the interpretation to what the stdout actually supports. Claim boundary until fixed: the supplied stdout supports only that all six LN+|y|+collapse rows are below the 1e-10 machine-precision threshold.
-- **auditor confidence:** high
-
-### `central_band_dense_boundary_note`
-
-- **Note:** [`CENTRAL_BAND_DENSE_BOUNDARY_NOTE.md`](../../docs/CENTRAL_BAND_DENSE_BOUNDARY_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite computational boundary sweep for the dense central-band pocket at N = 80,100, npl = 60, y_cut = 2.0, and connect_radius = 2.8..3.4.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e133f-3008-77d2-aad7-9a1646d328fa`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** "The boundary is sharp rather than smoothly extendable" based on the tabulated finite sweep over N = 80, 100 and connect_radius = 2.8..3.4.  _(class `C`)_
-- **chain closes:** False — The current completed runner stdout does not match the source note's stated sample sizes or several load-bearing numerical rows. The missing step is a synchronized or pinned run artifact plus explicit boundary criteria for the claimed sharp rollover.
-- **rationale:** Issue: the note is stale relative to the supplied runner stdout, including seeds/realizations and key gravity/purity values at N=80 r=3.0,3.2,3.4 and N=100 r=3.2,3.4. Why this blocks: the claimed sharp boundary and Born-stability conclusions rest on those numerical rows, so the source note does not close from the current artifact. Repair target: update the note from the completed runner or attach the exact cached old run, and add quantitative pass/fail criteria for boundary sharpness. Claim boundary until fixed: the packet supports only that the current runner produced a small finite exploratory sweep with mixed and noisy behavior, not the stated numerical claim.
-- **auditor confidence:** high
-
 ### `central_band_dense_joint_highn_note`
 
 - **Note:** [`CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md`](../../docs/CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md)
@@ -1955,19 +1878,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The note's current load-bearing claim is bounded to the runner's actual outputs: rounded Born mean±SE, same-graph purity, and gravity rows for the stated finite setup. The primary runner is not a constant printer and does not import the contested values from another note; it calls included helper code that constructs the graphs and computes the reported observables. The cached stdout matches the note's retained rows, including the repaired N=40 and N=60 collapse values. The open high-precision max-threshold assertion is explicitly excluded from the present claim.
 - **auditor confidence:** high
 
-### `central_band_dense_largen_note`
-
-- **Note:** [`CENTRAL_BAND_DENSE_LARGEN_NOTE.md`](../../docs/CENTRAL_BAND_DENSE_LARGEN_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Fixed-geometry dense central-band large-N computation for N = 80 and 100 with npl = 60, y_cut = 2.0, yz_range = 12.0, connect_radius = 3.0, four matched seeds, and collapse p = 0.2.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1342-89bc-71f2-b7f7-0a659861b2b5`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The clean large-N takeaway is that central-band hard geometry survives the corrected Born gate at N = 80, 100 while the same-graph gravity side rolls over, preserving only a Born-safe pocket.  _(class `C`)_
-- **chain closes:** False — The source note's retained-row table disagrees with the supplied completed runner stdout for the collapse rows, including the N = 100 collapse purity and gravity sign. The runner source also delegates the core graph, Born, purity, and gravity calculations to unprovided helper modules, so the restricted packet cannot independently certify those implementations.
-- **rationale:** Issue: completed runner stdout contradicts the source note table: N = 80 collapse gravity is -0.498+/-0.072, not -0.576+/-0.045, and N = 100 collapse is purity 0.732 and gravity -0.005, not 0.680 and +0.097. This blocks the current claim because the table is the load-bearing evidence for the bounded large-N row set, and a stale sign/value cannot be retained by narrative interpretation. Repair target: update the note from the actual run or provide the exact artifact that generated the note table, then re-audit with the helper implementations included; until fixed, only the narrower observation that the supplied run reports Born-zero rows with gravity non-positive or failed is supported.
-- **auditor confidence:** high
-
 ### `central_band_layernorm_note`
 
 - **Note:** [`CENTRAL_BAND_LAYERNORM_NOTE.md`](../../docs/CENTRAL_BAND_LAYERNORM_NOTE.md)
@@ -1979,19 +1889,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using the decoherence-optimal y_cut = 2 layernorm row, the central-band fit is (1 - pur_min) = 4.81 * N^(-0.813) and it is competitive with, but does not dominate, modular gap=2 + layernorm.  _(class `C`)_
 - **chain closes:** True — The primary runner and helper sources compute the central-band graph generation, pruning, propagation, purity, gravity, and standard-error summaries directly rather than printing constants. The modular-gap comparison row and fit are inlined, and the one-hop cited authority is retained_bounded.
 - **rationale:** The central-band numerical table is supported by completed runner stdout whose values match the note, and the runner source performs the graph construction, pruning rule, propagation, purity, and gravity computations without hard-coded expected outputs. The scaling fit and threshold comparisons are algebraic summaries over the computed row and the inlined modular-gap row. The conclusion is bounded and appropriately cautious: central-band removal is competitive through the finite sweep but not a universal winner.
-- **auditor confidence:** high
-
-### `central_band_mass_window_note`
-
-- **Note:** [`CENTRAL_BAND_MASS_WINDOW_NOTE.md`](../../docs/CENTRAL_BAND_MASS_WINDOW_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded computational comparison of baseline versus central-band pruned gravity mass-response fits for the supplied runner settings.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e12f5-d73f-77e2-8b8e-8a7755a890de`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** "the central-band hard-geometry row does improve the mass-response window relative to the plain baseline on the densest slice we tested"  _(class `C`)_
-- **chain closes:** False — The current runner stdout does support a qualitative N=100 R^2 improvement for pruned rows, but the source note's stated run configuration and fitted numerical values are stale relative to the supplied stdout. The audited note therefore does not close as written.
-- **rationale:** Issue: the note claims an 8-seed N=60/N=100 sweep over M=1,2,3,5,8 with specific fit coefficients and R^2 values, while the supplied runner stdout is a 16-seed N=60/80/100 sweep over M=1,2,3,5,8,12 with materially different fit results. Why this blocks: the load-bearing evidence in the note is the numerical summary, and it no longer matches the completed runner artifact. Repair target: update the note to the current runner configuration and stdout-derived fit table, or archive the old log that exactly produced the note's numbers. Claim boundary until fixed: at most the current stdout shows a bounded qualitative N=100 improvement for pruned rows, not the note's stated quantitative summary.
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10`
@@ -2163,19 +2060,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At n=15, theta0=0.3, strength 5e-4, mass offset +3, and periodic boundary conditions, the frozen runner observes both positive and negative shell-difference gravity-proxy signs across N = 12, 14, 16, 18, 20.  _(class `C`)_
 - **chain closes:** True — The provided runner source computes unperturbed and perturbed evolutions, forms rho1-rho0, sums toward and away shells, and verifies that the resulting signals include both signs. The cached run matches the note's stated finite operating slice.
 - **rationale:** The load-bearing claim is a bounded first-principles numerical computation over the stated chiral-walk update rule, not a definition, renaming, or tuned external comparator. The runner does not hard-code the asserted per-N signs; it computes them from evolve/probability_density and checks sign diversity across the N sweep. The note explicitly limits the mechanism hypothesis and universal-gravity implication, so the audited conclusion is only the finite sign-noninvariance diagnostic.
-- **auditor confidence:** high
-
-### `chiral_split_mass_gravity_note`
-
-- **Note:** [`CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited whether the supplied 1D split-parameter runner demonstrates that separating g from theta_m removes theta_m-dependent gravity response while preserving free KG and linear field-strength scaling.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e134b-0235-7930-a0b4-33ade150785d`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** If the split model flattens the theta_m sweep while preserving KG and F ∝ M, then overloading theta_m is a genuine bottleneck.  _(class `G`)_
-- **chain closes:** False — The runner shows only a modest theta_m sensitivity reduction, not a flattened sweep: split exponent is still 2.803 and split CV is still 0.9013. The same output also shows severe k chromaticity with identical baseline and split CV_k = 2.6580, while the source note names k-achromaticity as an early-warning test.
-- **rationale:** Issue: the claimed bottleneck conclusion is inferred from a tuned toy runner threshold rather than demonstrated flattening of theta_m response. Why this blocks: the completed stdout contradicts the note's own closure condition because split response remains strongly theta-dependent and equally chromatic in k. Repair target: define quantitative pass thresholds in the note, require the runner verdict to include k-achromaticity and observable-consistency checks, and show actual theta flattening rather than a small CV improvement. Claim boundary until fixed: this is at most an exploratory diagnostic suggesting g gives an independent linear control at fixed theta_m.
 - **auditor confidence:** high
 
 ### `chsh_structural_bound_narrow_theorem_note_2026-05-17`
@@ -3059,19 +2943,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The claim is narrowly bounded to a completed numerical scan, not a general no-go theorem for all smooth sources. The runner does not merely print constants: it builds gamma-projector shifts, evolves field and free states, computes density differences, and reports the sign/monotonicity summaries used by the note. No unlisted authority is needed for the bounded comparison as long as the claim boundary stays limited to these widths, offsets, layers, and readout definition.
 - **auditor confidence:** high
 
-### `dirac_v4_convergence_note`
-
-- **Note:** [`DIRAC_V4_CONVERGENCE_NOTE.md`](../../docs/DIRAC_V4_CONVERGENCE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite numerical convergence and boundary comparison for the Dirac v4 runner over the stated lattice sizes, layer counts, offsets, boundaries, and mass settings.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1359-7da9-7633-996c-49c75c2ca739`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** At the tuned mass point, the closure score improves from the weaker 6/10 case to 7/10, but the remaining gravity monotonicity and distance-law failures persist.  _(class `C`)_
-- **chain closes:** False — The supplied stdout is for mass0=0.300, while the note's load-bearing claims are about mass0=0.10. The stdout also contradicts the note's reported values: closure is 6/10 rather than 7/10, and the distance-law sweep is 0/5 TOWARD rather than mixed 3/5 TOWARD.
-- **rationale:** Issue: the note's headline numerical claims are stale or unsupported relative to the supplied completed runner output. Why this blocks: the claimed m0=0.10 improvement and distance-law pattern do not follow from the restricted packet, and the current stdout gives different results. Repair target: supply the completed --mass0 0.10 run artifact or update the note to the actual mass0=0.300 output. Claim boundary until fixed: the supplied runner only supports a default-mass finite diagnostic showing 6/10 closure and persistent monotonicity/distance failures.
-- **auditor confidence:** high
-
 ### `dirac_weak_coupling_note`
 
 - **Note:** [`DIRAC_WEAK_COUPLING_NOTE.md`](../../docs/DIRAC_WEAK_COUPLING_NOTE.md)
@@ -3648,19 +3519,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The finite-dimensional algebra closes under the note's explicit hypotheses: invertible F and L_e for the resolvent identity, and D_- = D_-^* > 0 for the variational and monotonicity statements. The runner is not a first-principles microscopic computation, but it consistently checks exact Schur/Feshbach/Dirichlet algebra and scope hygiene, with 46 PASS and 0 FAIL in the supplied live summary. Residual risk is limited to scope discipline: this clean verdict covers only the supplied-block theorem and does not certify any Wilson-native construction of D_-, charged support selection, or final DM closure.
 - **auditor confidence:** high
 
-### `edge_deletion_boundary_note`
-
-- **Note:** [`EDGE_DELETION_BOUNDARY_NOTE.md`](../../docs/EDGE_DELETION_BOUNDARY_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite edge-retention sweep on the tested 3D valley-linear lattice family with h=0.5, W=8, L=12, max_d=3, and seeds 20260404-20260415.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1370-e976-7a33-8ef5-1bea87a4557b`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The gravity sign flips between 90% and 80% edge retention, with 80% coin-flip and lower retention predominantly AWAY.  _(class `C`)_
-- **chain closes:** False — The supplied current runner stdout contradicts the note: it reports 12/12 TOWARD and positive mean deltas at every tested keep fraction from 1.00 through 0.75. Therefore the claimed 90%-80% sign flip and ~85% threshold do not follow from the restricted packet.
-- **rationale:** Issue: the note's table and headline claim are stale relative to the supplied runner stdout. Why this blocks: the current completed sweep shows no sign flip, no 80% coin-flip behavior, and no AWAY-dominated region down to 75% retention. Repair target: regenerate the note from the current runner or supply and reconcile the exact runner/log that produced the note's table. Claim boundary until fixed: the restricted packet supports only that this current sweep found TOWARD behavior for all listed keep fractions.
-- **auditor confidence:** high
-
 ### `edge_deletion_boundary_sweep_note`
 
 - **Note:** [`EDGE_DELETION_BOUNDARY_SWEEP_NOTE.md`](../../docs/EDGE_DELETION_BOUNDARY_SWEEP_NOTE.md)
@@ -3829,19 +3687,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The restricted packet includes the primary runner and its transitive helper, and the runner genuinely constructs random 3D DAGs, applies the pruning/control rules, and computes purity and gap metrics rather than printing fixed target constants. The note's cautious conclusion follows from the provided cached run, though the control is explicitly not a fair final discriminator.
 - **rationale:** The note does not promote a decisive physics theorem; it retains only the bounded claim that this prototype shows generated gap growth while the comparator leaves purity undefined or unusable. The runner source and helper source are complete in the restricted packet and compute the relevant graph, pruning, purity, and gap quantities without hard-coded contested values. There is a text/code inconsistency around whether the imposed control is random removal or a center-band control, but that weakens only any stronger baseline-fairness claim, which the note explicitly withholds.
 - **auditor confidence:** medium
-
-### `evolving_network_prototype_v2_note`
-
-- **Note:** [`EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md`](../../docs/EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded prototype claim that the tested local pruning runs report a generated post-barrier gap while failing convergence and leaving the imposed-control detector comparison undefined.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e12ee-b0af-72a2-896d-0a582b2e470e`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The self-regulating prune rule reliably opens a larger post-barrier gap than the unpruned baseline, but at the tested thresholds it does not converge to a fixed point and the same-budget imposed-band control still loses detector signal in this parameterization.  _(class `A`)_
-- **chain closes:** False — The runner stdout supports positive generated_gap, conv=0.00, and imposed_pur=nan, but it does not print or assert the baseline_gap needed for the claimed larger-than-baseline gap. The same-budget imposed-control premise is also not closed because the code caps imposed removals by candidate count while the reported removed counts exceed the available unique node/candidate budgets.
-- **rationale:** Issue: the note's load-bearing baseline-gap and same-budget imposed-band comparison is not established by the supplied runner artifact. Why this blocks: a hostile referee cannot verify the claimed generated-vs-baseline separation or same-budget comparator semantics from stdout/source, and the reported removal counts are inconsistent with a unique-node same-budget control. Repair target: print and assert baseline_gap/gap deltas, use an actual unique removal budget for both generated and imposed controls, and fix the band-vs-random/readout wording. Claim boundary until fixed: the runner may be cited only as reporting positive generated_gap, no convergence, and undefined imposed_pur in this parameter sweep, not as a closed same-budget generated-vs-imposed bounded theorem.
-- **auditor confidence:** high
 
 ### `evolving_network_prototype_v3_note`
 
@@ -7386,19 +7231,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The runner-computed best case at λ=1 reduces equivalence rel dev only to about 44%, while family portability is 163% and Newton linearity collapses with R²≈0.09–0.18, so the self-focusing route remains a failed matter closure.  _(class `C`)_
 - **chain closes:** True — The runner source actually constructs the grown DAG, Gaussian sources, two-pass density self-field propagator, slope fits, null test, and family portability checks, rather than printing fixed expected values. Its completed stdout supports the note's negative conclusion, with only small rounding differences.
 - **rationale:** The cited upstream authority is retained_no_go and is used only as the prior failed Gaussian-packet baseline. The new load-bearing result is produced by a completed first-principles numerical harness over the specified model and not by a definition, renaming, external comparator, or tuned numerical match. The conclusion is appropriately scoped as a no-go for this two-pass self-focusing Gaussian route, not as a proof that all matter closure is impossible.
-- **auditor confidence:** high
-
-### `memory_decay_diagnosis_2026-04-11`
-
-- **Note:** [`MEMORY_DECAY_DIAGNOSIS_2026-04-11.md`](../../docs/MEMORY_DECAY_DIAGNOSIS_2026-04-11.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audit of the claimed Yukawa-screening diagnosis for decay of the retained ring memory signal with increasing lattice size.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1315-b45b-7970-b9f4-2f542c90bbc2`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Memory is quadratic in Phi, so it decays as exp(-2 mu d), and the observed 7-order-of-magnitude drop from N=41 to N=101 matches this scaling.  _(class `G`)_
-- **chain closes:** False — The note's load-bearing numerical evidence is stale relative to the supplied runner: the runner has no N=41 case and reports N=81 and N=101 memories of 0.007071 and 0.002722 at mu2=0.22, not about 1e-5 and 1e-7. The note also treats 0.22 as mu with screening length 1/mu approximately 4.5, while the runner sweeps mu2=0.22 and uses ell=1/sqrt(mu2)=2.132.
-- **rationale:** Issue: the claimed exp(-2 mu d) numerical match is contradicted by the supplied runner stdout and by the runner's mu2 convention. Why this blocks: the core diagnosis depends on a 7-order decay and on mu=0 making memory N-independent, but the current runner shows no such 7-order drop and the massless relative-geometry slice still decays from 0.020854 at N=61 to 0.001767 at N=121. Repair target: reconcile the source note with a completed runner that includes the historical N=41 datum, uses a single mu versus mu2 convention, and explicitly tests the claimed scaling. Claim boundary until fixed: this packet supports only that this toy runner's measured memory depends strongly on geometry and lattice size, not that Yukawa screening is the established root cause.
 - **auditor confidence:** high
 
 ### `memory_mu2_geometry_sweep_note_2026-04-11`

@@ -41249,8 +41249,8 @@
     },
     "asymmetry_persistence_collapse_note": {
       "claim_id": "asymmetry_persistence_collapse_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
@@ -41258,7 +41258,7 @@
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "note_hash": "0dbb525ed31227ebba321a7baa2102fbd29ea97db5e48b895508830ab8194659",
+      "note_hash": "50ef2ed98da1ff4ce438224b1871e2183b0186d2d2cd9071edcacd605fcfaa46",
       "path": "docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_collapse_pilot.py",
       "title": "Asymmetry Persistence + Collapse Note"
@@ -42396,7 +42396,7 @@
         "scripts/generative_causal_dag_interference.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "36e8fd61bae9673405a917fdeb3a5cbc617320dff5fd502ab7a562cc9d1ad4aa",
+      "note_hash": "14c472534f533aa3ec06ec9648daad60941fad12a37f833c7e7148fd8af65079",
       "path": "docs/BORN_LANE_COMPARISON_NOTE.md",
       "runner_path": "scripts/born_compare_modular_central_ln.py",
       "title": "Born Lane Comparison Note"
@@ -43421,9 +43421,9 @@
     },
     "central_band_collapse_note": {
       "claim_id": "central_band_collapse_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/central_band_layernorm_combo.py",
@@ -43431,7 +43431,7 @@
         "scripts/generative_causal_dag_interference.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "a20696695609dcbe04bfdd02c837a81ea9b5d3bee27ef4c9b557ce66adb874be",
+      "note_hash": "a86a45c03e30abeca7c440efa96a9881330cd08a4bab3f75485c70169ed55555",
       "path": "docs/CENTRAL_BAND_COLLAPSE_NOTE.md",
       "runner_path": "scripts/central_band_collapse_joint_card.py",
       "title": "Central Band Hard-Geometry + Collapse Note"
@@ -43445,16 +43445,16 @@
       "helper_runner_paths": [
         "scripts/stochastic_collapse_born_calibration.py"
       ],
-      "note_hash": "10819ae9a60731cfe190c7ec1efa7e5c3076406aab090a9f5baca6ccb4622394",
+      "note_hash": "33e9b5e3d19ab1ff5dfb42d8aae9655763af4bb41147f1d872ad5d00282ac364",
       "path": "docs/CENTRAL_BAND_COLLAPSE_STRENGTH_NOTE.md",
       "runner_path": "scripts/central_band_born_collapse_strength_sweep.py",
       "title": "Central-Band Collapse-Strength Note"
     },
     "central_band_dense_boundary_note": {
       "claim_id": "central_band_dense_boundary_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/central_band_dense_joint_card.py",
@@ -43466,7 +43466,7 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "c041b01a5e024310cbd4615ac7e78b4abc23a6d67fedce9f789aa37cc3228181",
+      "note_hash": "450c60d9289d2094095419ed8a5b56c6ebe066f9f2c74c56e7b0dfa4bf66ae90",
       "path": "docs/CENTRAL_BAND_DENSE_BOUNDARY_NOTE.md",
       "runner_path": "scripts/central_band_dense_boundary_sweep.py",
       "title": "Central-Band Dense Boundary Note"
@@ -43514,9 +43514,9 @@
     },
     "central_band_dense_largen_note": {
       "claim_id": "central_band_dense_largen_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/central_band_dense_joint_card.py",
@@ -43528,7 +43528,7 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "0e4ab2d44ade16ea06ad8c5b91a6d41d10b11ea978ec3553a3b2413bced31262",
+      "note_hash": "b64894c412fcaa3658205e63ed1025aba4d3736d9384c6a099205fcc3cdb9634",
       "path": "docs/CENTRAL_BAND_DENSE_LARGEN_NOTE.md",
       "runner_path": "scripts/central_band_dense_joint_largeN.py",
       "title": "Central-Band Dense Large-N Joint Card Note"
@@ -43553,9 +43553,9 @@
     },
     "central_band_mass_window_note": {
       "claim_id": "central_band_mass_window_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/central_band_layernorm_combo.py",
@@ -43563,7 +43563,7 @@
         "scripts/generative_causal_dag_interference.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "7e7cd13b4a9ba5e33456846c80d29f9e0180df2ba4048257f2f91153b48c599f",
+      "note_hash": "801ecfefaab0db42fc4a51bd1e57acf9093f8071827c740f6c736cfd12eea8f4",
       "path": "docs/CENTRAL_BAND_MASS_WINDOW_NOTE.md",
       "runner_path": "scripts/central_band_mass_window_summary.py",
       "title": "Central-Band Mass Window Note"
@@ -43936,12 +43936,12 @@
     },
     "chiral_split_mass_gravity_note": {
       "claim_id": "chiral_split_mass_gravity_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "03ad01043e59d5005c7ee01a16b266e6868033af6bbb09a963064b4a00f1de71",
+      "note_hash": "938cd9a2cd0ce9bdf6b18cfa9f14b5b842c937b6a98d85ec1f7229143f9a8789",
       "path": "docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md",
       "runner_path": "scripts/frontier_chiral_split_mass_gravity.py",
       "title": "Chiral Split-Mass / Split-Gravity Note"
@@ -46656,12 +46656,12 @@
     },
     "dirac_v4_convergence_note": {
       "claim_id": "dirac_v4_convergence_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "161d6d759136b133315dd92d43c2b20b858a61876790a58a53ade92557708496",
+      "note_hash": "2fc2f0009c0613fe3974a7c8de15df1509ba664e61c4c83d5d224c2b3405203d",
       "path": "docs/DIRAC_V4_CONVERGENCE_NOTE.md",
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py",
       "title": "Dirac v4 Convergence Note"
@@ -52497,15 +52497,15 @@
       "claim_id": "edge_deletion_boundary_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/inverse_problem_graph_requirements.py"
       ],
-      "note_hash": "5eb3ca8e3d6fba15d71ee37ad367e16a358b27daf0622c198f09a973073bbcc2",
+      "note_hash": "4ea117b5e8d95fdc24f80b08770f239bccd29e33a7dc097b7b53aecf5f3209cf",
       "path": "docs/EDGE_DELETION_BOUNDARY_NOTE.md",
       "runner_path": "scripts/edge_deletion_boundary_sweep.py",
-      "title": "Edge Deletion Boundary: Gravity Sign Flip"
+      "title": "Edge Deletion Boundary: TOWARD Stability on the 3D Valley-Linear Family"
     },
     "edge_deletion_boundary_sweep_note": {
       "claim_id": "edge_deletion_boundary_sweep_note",
@@ -52799,7 +52799,7 @@
       "helper_runner_paths": [
         "scripts/self_regulating_gap_3d.py"
       ],
-      "note_hash": "d75d73bd9d71f02f8b80b33b99ea1db2a39ebbe516cdbd83fc3c5a07edf4fbb2",
+      "note_hash": "49b814cbeffd741a179c3eb4bee5312ebca6033fa99484a720829beaa841bbe1",
       "path": "docs/EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md",
       "runner_path": "scripts/evolving_network_prototype_v2.py",
       "title": "Evolving Network Prototype V2 Note"
@@ -63590,15 +63590,15 @@
     },
     "memory_decay_diagnosis_2026-04-11": {
       "claim_id": "memory_decay_diagnosis_2026-04-11",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f8f850dd2ff018193247eaaab42079f8c4c7f05c473075df9673cd91ce580d0f",
+      "note_hash": "a1feacefa429975bc1f817831ba48164a1d0e3086fd66526ebf1a5b8c545c87a",
       "path": "docs/MEMORY_DECAY_DIAGNOSIS_2026-04-11.md",
       "runner_path": "scripts/frontier_memory_mu2_size_sweep.py",
-      "title": "Memory Signal Decay \u2014 Root Cause: Yukawa Screening"
+      "title": "Memory Signal \u2014 Geometry and Lattice-Size Dependence"
     },
     "memory_mu2_geometry_sweep_note_2026-04-11": {
       "claim_id": "memory_mu2_geometry_sweep_note_2026-04-11",
@@ -84507,22 +84507,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 528,
+      "bounded_theorem": 535,
       "decoration": 1,
       "meta": 188,
       "no_go": 68,
-      "none": 1490,
-      "open_gate": 45,
+      "none": 1482,
+      "open_gate": 46,
       "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 962,
+      "bounded_theorem": 969,
       "decoration": 1,
       "meta": 188,
       "no_go": 171,
-      "none": 443,
-      "open_gate": 123,
-      "positive_theorem": 607
+      "none": 437,
+      "open_gate": 124,
+      "positive_theorem": 605
     },
     "edge_count": 9695,
     "leaf_count": 763,

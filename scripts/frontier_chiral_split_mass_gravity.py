@@ -4,8 +4,8 @@ Split-Mass / Split-Gravity Chiral Harness
 ==========================================
 
 Goal:
-  Test whether the chiral bottleneck is caused by overloading theta to do
-  two jobs at once:
+  Diagnose whether separating the field-response coefficient from theta gives
+  an independent control knob when theta otherwise does two jobs at once:
     1. set the free dispersion gap (inertial mass)
     2. set the gravity response to the local field
 
@@ -431,16 +431,18 @@ def main():
     kg_ok = all(row["r2"] > 0.999 for row in free_rows)
     m_ok = alpha_base_m > 0.8 and alpha_split_m > 0.8
     theta_reduction = cv_theta_split < cv_theta_base * 0.85
-    if theta_reduction and kg_ok and m_ok:
-        verdict = "OVERLOADING IS A REAL BLOCKER FOR THE theta DEPENDENCE"
+    g_linear = g_r2 > 0.98
+    if g_linear and kg_ok and m_ok:
+        verdict = "SPLIT g IS A LINEAR CONTROL AT FIXED theta; THETA/k RESIDUALS REMAIN OPEN"
     elif kg_ok and m_ok:
-        verdict = "OVERLOADING MATTERS, BUT IT IS NOT THE ONLY BLOCKER"
+        verdict = "SPLIT PARAMETERIZATION IS DIAGNOSTIC; THETA/k RESIDUALS REMAIN OPEN"
     else:
         verdict = "RESULTS ARE INCONCLUSIVE"
     print(f"Free KG fit OK:       {kg_ok}")
     print(f"F∝M scaling OK:       {m_ok}")
     print(f"Theta sensitivity reduced in split: {theta_reduction}")
-    print(f"g control is linear-ish: {g_r2 > 0.98}")
+    print(f"g control is linear-ish: {g_linear}")
+    print(f"k-achromatic closure OK: {False}")
     print(f"*** {verdict} ***")
     print()
     print(f"Total runtime: {time.time() - t0:.1f}s")

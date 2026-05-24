@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 397 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1276 |
+| unaudited | 1275 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 109 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,10 +52,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 665 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
-| `audited_failed` | 48 |
+| `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1502 |
+| `unaudited` | 1501 |
 
 | claim_type | count |
 |---|---:|
@@ -943,6 +943,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
+| `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -5451,6 +5452,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** On H_c, setting s = q - c + delta gives s >= 0, so r = sqrt(s^2 + 1/4) is >= 1/2 and sqrt(r^2 - 1/4) = sqrt(s^2) = s; conversely r >= 1/2 makes sqrt(r^2 - 1/4) >= 0, giving q >= c - delta.  _(class `A`)_
 - **chain closes:** True — The image, inverse, and boundary claims close directly from real arithmetic, nonnegativity of square roots, and the half-plane condition s >= 0. No external dependencies or parent theorem are needed.
 - **rationale:** The source theorem is independently proved as a bounded algebraic identity. The runner stdout supports the symbolic inverse and boundary checks, but the generated classifier collapses retained checks to B/D context-heavy items; those framework-instance and parent-row context checks are not load-bearing. The discrepancy does not undermine the source proof because the algebra closes without importing the parent DM-neutrino construction.
+- **auditor confidence:** high
+
+### `hard_geometry_gravity_window_note`
+
+- **Note:** [`HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md`](../../docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded comparison between dense central-band and generated asymmetry-persistence hard-geometry lanes using the supplied cited notes, runner output, and runner/helper source.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T174030Z-1450a5d0-hard_geometry_gravity_wi-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The strongest gravity pocket worth carrying forward is the generated-asymmetry family at dense N = 100 because it is Born-clean, has the stronger direct gravity signal, and gives the cleaner mass-response fit.  _(class `B`)_
+- **chain closes:** False — The direct Born-safe gravity-window part is supported by the supplied runner, but the mass-response comparison does not close. The source note's central-band mass fit quote is contradicted by its cited central-band mass authority, which reports the N=100 pruned LN row as R^2 = 0.994 rather than R^2 = 0.828.
+- **rationale:** The primary runner genuinely computes a Born-safe generated-asymmetry LN gravity pocket at dense N=100, so the direct gravity portion has in-packet support. However, the conclusion also relies on the generated side having the cleaner mass-response fit, and that is not supported by the cited central-band mass note. The cited authority reports central-band pruned LN at N=100 with delta ~= 0.2207 * M^0.638 and R^2 = 0.994, which is cleaner by R^2 than the generated threshold-0.10 LN fit at R^2 = 0.970. The chain therefore fails on its own cited inputs.
+- **open / conditional deps cited:**
+  - `ASYMMETRY_PERSISTENCE_PILOT_NOTE.md`
+  - `ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md`
 - **auditor confidence:** high
 
 ### `hard_geometry_local_note`

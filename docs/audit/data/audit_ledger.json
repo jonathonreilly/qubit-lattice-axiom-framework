@@ -294153,8 +294153,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2337,
-    "re_audit_required": 1,
+    "preserved_existing": 2338,
+    "re_audit_required": 0,
     "row_count": 2382,
     "seeded_new": 0
   }

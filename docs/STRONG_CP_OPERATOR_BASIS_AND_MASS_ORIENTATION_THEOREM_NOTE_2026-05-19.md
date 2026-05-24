@@ -332,3 +332,10 @@ explicit bounded premises that this note composes:
 - (R3) Real-positive measure boundary: explicit bounded premise, with the abstract norm-square support in [`docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md). Full parent `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` is not treated as retained-grade authority here.
 
 **No external citations** (Vafa-Witten, Leutwyler-Smilga, Osterwalder-Schrader, etc.) are used as proof inputs. The arguments above are bounded compositions of the listed retained primitives and retained action-surface constraints. External literature may be cited in downstream / paper-level write-ups but is not load-bearing here.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [strong_cp_theta_zero_note](STRONG_CP_THETA_ZERO_NOTE.md)
+- [axiom_first_reflection_positivity_theorem_note_2026-04-29](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)

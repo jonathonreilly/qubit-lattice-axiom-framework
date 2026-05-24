@@ -201,3 +201,14 @@ to turn that exact-bridge budget into either an intrinsic negligibility theorem
 or a fully enumerated final systematic.
 
 That is the path to unbounded `y_t`.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [yt_bridge_endpoint_shift_bound_note](../../YT_BRIDGE_ENDPOINT_SHIFT_BOUND_NOTE.md)
+- [yt_exact_interacting_bridge_transport_note](../../YT_EXACT_INTERACTING_BRIDGE_TRANSPORT_NOTE.md)
+- [yt_exact_schur_normal_form_uniqueness_note](../../YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md)
+- [yt_schur_stability_gap_note](../../YT_SCHUR_STABILITY_GAP_NOTE.md)
+- [yt_microscopic_schur_class_admissibility_note](../../YT_MICROSCOPIC_SCHUR_CLASS_ADMISSIBILITY_NOTE.md)
+- [yt_gauge_crossover_theorem](../../YT_GAUGE_CROSSOVER_THEOREM.md)

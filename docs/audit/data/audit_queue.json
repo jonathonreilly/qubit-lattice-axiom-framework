@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 344,
-    "leaf": 314,
+    "leaf": 313,
     "medium": 331
   },
   "cycle_break_target_count": 10,
@@ -32260,32 +32260,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "chsh_structural_bound_narrow_theorem_note_2026-05-17",
-        "minimal_axioms",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "ckm_down_type_scale_convention_audited_scope_narrow_bounded_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38040,5 +38014,5 @@
     }
   ],
   "ready_count": 2,
-  "total_pending": 1260
+  "total_pending": 1259
 }

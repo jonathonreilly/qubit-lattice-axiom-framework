@@ -3,10 +3,10 @@
 **Date:** 2026-04-03 (registered-dependency citation tightened 2026-05-10 per audit `missing_dependency_edge` repair target).
 **Status:** bounded review-safe exact 2D mirror coexistence pocket; no gravity-law promotion.
 **Claim type:** bounded_theorem
-**Primary runner (load-bearing):** [`scripts/mirror_2d_validation.py`](../scripts/mirror_2d_validation.py) (2D exact mirror linear propagator on three-slit Sorkin).
-**Primary runner cache (load-bearing):** [`logs/runner-cache/mirror_2d_validation.txt`](../logs/runner-cache/mirror_2d_validation.txt) — registered cached stdout (`exit_code=0`, `status=ok`) backing every row in the bounded table below.
-**Imported authority (load-bearing dependency):** [`scripts/mirror_born_audit.py`](../scripts/mirror_born_audit.py) — provides `gen_2d_mirror` (exact 2D mirror generator) and `propagate_LINEAR` (strictly linear propagator) imported by the primary runner.
-**Imported authority cache (load-bearing dependency):** [`logs/runner-cache/mirror_born_audit.txt`](../logs/runner-cache/mirror_born_audit.txt) — registered cached stdout (`exit_code=0`, `status=ok`) verifying the imported generator and propagator on the strict mirror Born family.
+**Primary runner:** [`scripts/mirror_2d_validation.py`](../scripts/mirror_2d_validation.py) — load-bearing 2D exact mirror linear propagator on three-slit Sorkin.
+**Primary runner cache:** [`logs/runner-cache/mirror_2d_validation.txt`](../logs/runner-cache/mirror_2d_validation.txt) — load-bearing registered cached stdout (`exit_code=0`, `status=ok`) backing every row in the bounded table below.
+**Imported authority:** [`scripts/mirror_born_audit.py`](../scripts/mirror_born_audit.py) — load-bearing dependency; provides `gen_2d_mirror` (exact 2D mirror generator) and `propagate_LINEAR` (strictly linear propagator) imported by the primary runner.
+**Imported authority cache:** [`logs/runner-cache/mirror_born_audit.txt`](../logs/runner-cache/mirror_born_audit.txt) — load-bearing dependency registered cached stdout (`exit_code=0`, `status=ok`) verifying the imported generator and propagator on the strict mirror Born family.
 
 This note freezes the exact 2D mirror validation lane. Both the primary
 runner and the imported `mirror_born_audit.py` authority are recorded as
@@ -253,7 +253,11 @@ propagator premise closes from the imported-authority cache.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [mirror_program_synthesis](MIRROR_PROGRAM_SYNTHESIS.md)
+- `MIRROR_PROGRAM_SYNTHESIS.md` (meta synthesis, bookkeeping-only — demoted from
+  markdown-link form per the 2026-05-23 `audited_conditional` verdict noting
+  that the cited authority was "a meta synthesis that expressly does not
+  establish retained claims"; the load-bearing closure runs through the
+  primary runner + cache + imported authority listed in the header).
 
 ---
 

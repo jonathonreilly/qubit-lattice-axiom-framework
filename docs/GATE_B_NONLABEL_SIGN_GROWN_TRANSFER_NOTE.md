@@ -7,6 +7,18 @@
 
 - [`scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py`](/Users/jonreilly/Projects/Physics/scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py)
 
+## Imported authority
+
+The retained grown-row construction this note replays on is the bounded
+distance-law transfer row taken from
+
+- [`GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+
+That note (`retained_bounded`) fixes the retained grown-geometry family with
+`drift = 0.2`, `restore = 0.7`, `h = 0.5`, and confirms that the far-field
+distance-law tail transfers on the same retained `h = 0.5` generated family.
+This note inherits that retained row as its grown-row construction.
+
 ## Question
 
 Can the old Gate B geometry-sector / non-label connectivity architecture carry
@@ -35,10 +47,32 @@ Seed `0` retained grown-row replay:
 | label-grown control | `+0.000000e+00` | `-1.594422e-04` | `+1.594790e-04` | `+0.000000e+00` | `-3.188474e-04` | `0.999833` |
 | geometry-sector candidate | `+0.000000e+00` | `-3.534838e-05` | `+3.533743e-05` | `+0.000000e+00` | `-7.070770e-05` | `1.000223` |
 
+## Transfer criteria (PASS/FAIL)
+
+The runner converts the replay into explicit PASS/FAIL checks against
+numerical tolerances, with module-level `_PASS` / `_FAIL` counters and a
+`PASS=<n> FAIL=0` summary line. Both the label-grown control family and the
+geometry-sector candidate family must satisfy all of the following on the
+retained grown row (`drift = 0.2`, `restore = 0.7`, seed `0`):
+
+- **zero-source delta_z** vanishes within `1e-12` (numerical zero)
+- **neutral `+1/-1` delta_z** vanishes within `1e-12` (cancellation)
+- **single `+1` / single `-1`** are antisymmetric within `5e-3` relative
+  tolerance, with `+1` producing negative `delta_z` and `-1` positive `delta_z`
+  (sign-law orientation)
+- **single-source signal magnitude** is above a `1e-6` floor (the response is
+  not a numerical zero)
+- **charge exponent** from `single +1 / double +2` lies within `5e-3` of `1.0`
+  (linearity)
+
+Each failing check increments `_FAIL`; a successful run exits with
+`PASS=<n> FAIL=0` and status `0`.
+
 ## Safe Read
 
-The old architecture does genuinely apply to the current grown-row fixed-field
-lane, but only in a narrowed form:
+Conditional on PASS=0 FAIL=0 on the retained grown row above, the old
+architecture does genuinely apply to the current grown-row fixed-field lane,
+but only in a narrowed form:
 
 - the position-based geometry-sector candidate preserves the exact zero-source
   baseline
@@ -51,4 +85,7 @@ lane, but only in a narrowed form:
 
 ## Final Verdict
 
-**retained narrow grown-row transfer positive**
+**retained narrow grown-row transfer positive** on the retained `drift = 0.2`,
+`restore = 0.7` grown-geometry family from
+[`GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](GATE_B_GROWN_DISTANCE_LAW_NOTE.md),
+witnessed by the PASS/FAIL transfer criteria above.

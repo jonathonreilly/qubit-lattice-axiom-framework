@@ -8,6 +8,7 @@ to the current retained grown row.
 
 Scope:
   - retained grown row only: drift=0.2, restore=0.7
+    (retained-bounded authority: docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
   - compare label-grown control vs position-based geometry-sector candidate
   - exact zero-source and neutral same-point cancellation checks
   - small source-charge linearity sanity pass
@@ -15,6 +16,10 @@ Scope:
 The result is intentionally narrow: it should tell us whether the old
 architecture genuinely applies here, not whether it becomes a geometry-generic
 field theory.
+
+This runner uses explicit PASS/FAIL checks with module-level _PASS / _FAIL
+counters rather than only printing replay values. A successful run prints
+``PASS=<n> FAIL=0`` and exits with status 0.
 """
 
 from __future__ import annotations
@@ -43,6 +48,17 @@ OFFSET = 1.0
 MIN_EDGES = 5
 SEEDS = [0]
 
+# Module-level PASS/FAIL counters (visible to importers / audit scrapers).
+_PASS = 0
+_FAIL = 0
+
+# Numerical pass criteria for the seed-0 retained grown-row replay.
+ZERO_NEUTRAL_TOL = 1e-12             # zero-source and neutral controls must vanish
+SIGN_ANTISYMMETRY_REL_TOL = 5e-3     # | (plus + minus) / max(|plus|, |minus|) |
+CHARGE_LINEARITY_TOL = 5e-3          # | charge_exponent - 1 |
+ORIENTATION_REQUIRES_PLUS_NEGATIVE = True  # plus delta_z < 0, minus delta_z > 0
+SIGNAL_MAGNITUDE_MIN = 1e-6          # geometry-sector response must be nonzero
+
 
 @dataclass(frozen=True)
 class Family:
@@ -51,8 +67,20 @@ class Family:
     adj: dict[int, list[int]]
 
 
-def _mean(values: list[float]) -> float:
-    return sum(values) / len(values) if values else math.nan
+def _check(name: str, ok: bool, detail: str = "") -> bool:
+    """Record a PASS/FAIL check at module scope and print it."""
+
+    global _PASS, _FAIL
+    status = "PASS" if ok else "FAIL"
+    if ok:
+        _PASS += 1
+    else:
+        _FAIL += 1
+    line = f"  [{status}] {name}"
+    if detail:
+        line += f"  ({detail})"
+    print(line)
+    return ok
 
 
 def _nearest_node_in_layer(
@@ -193,11 +221,68 @@ def _print_case(name: str, out: dict[str, float]) -> None:
     print(f"  charge exponent            {out['alpha']:.6f}")
 
 
-def main() -> None:
+def _check_zero_controls(label: str, out: dict[str, float]) -> None:
+    """Zero-source and neutral controls must vanish to numerical tolerance."""
+
+    _check(
+        f"{label}: zero-source delta_z vanishes",
+        abs(out["zero"]) <= ZERO_NEUTRAL_TOL,
+        f"|delta_z_zero|={abs(out['zero']):.3e}, tol={ZERO_NEUTRAL_TOL:.0e}",
+    )
+    _check(
+        f"{label}: neutral +1/-1 delta_z vanishes",
+        abs(out["neutral"]) <= ZERO_NEUTRAL_TOL,
+        f"|delta_z_neutral|={abs(out['neutral']):.3e}, tol={ZERO_NEUTRAL_TOL:.0e}",
+    )
+
+
+def _check_sign_response(label: str, out: dict[str, float]) -> None:
+    """Single-source sign response must be antisymmetric, oriented, and nonzero."""
+
+    mag = max(abs(out["plus"]), abs(out["minus"]))
+    asym = abs(out["plus"] + out["minus"]) / mag if mag > 0 else float("inf")
+    _check(
+        f"{label}: single +1 / single -1 are antisymmetric to relative tolerance",
+        asym <= SIGN_ANTISYMMETRY_REL_TOL,
+        f"|plus+minus|/max={asym:.3e}, tol={SIGN_ANTISYMMETRY_REL_TOL:.0e}",
+    )
+    if ORIENTATION_REQUIRES_PLUS_NEGATIVE:
+        _check(
+            f"{label}: single +1 produces negative delta_z (toward sign convention)",
+            out["plus"] < 0.0,
+            f"delta_z_plus={out['plus']:+.3e}",
+        )
+        _check(
+            f"{label}: single -1 produces positive delta_z (toward sign convention)",
+            out["minus"] > 0.0,
+            f"delta_z_minus={out['minus']:+.3e}",
+        )
+    _check(
+        f"{label}: single-source signal magnitude above numerical floor",
+        mag >= SIGNAL_MAGNITUDE_MIN,
+        f"max(|plus|,|minus|)={mag:.3e}, floor={SIGNAL_MAGNITUDE_MIN:.0e}",
+    )
+
+
+def _check_charge_linearity(label: str, out: dict[str, float]) -> None:
+    """Charge exponent should be near 1 for a linear sign-law response."""
+
+    if math.isnan(out["alpha"]):
+        _check(f"{label}: charge exponent is finite", False, "alpha=nan")
+        return
+    _check(
+        f"{label}: charge exponent within tolerance of 1.0",
+        abs(out["alpha"] - 1.0) <= CHARGE_LINEARITY_TOL,
+        f"|alpha-1|={abs(out['alpha']-1.0):.3e}, tol={CHARGE_LINEARITY_TOL:.0e}",
+    )
+
+
+def main() -> int:
     print("=" * 94)
     print("GROWN-ROW NON-LABEL SIGN-LAW TEST")
     print("  question: can the old geometry-sector architecture carry the fixed-field")
     print("  signed-source response on the retained grown row?")
+    print("  retained grown-row authority: docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md")
     print("=" * 94)
     print(f"h={H}, NL={NL}, drift={DRIFT}, restore={RESTORE}, seeds={SEEDS}")
     print(f"source_z={SOURCE_Z}, offset={OFFSET}, strength={SOURCE_STRENGTH:g}")
@@ -216,13 +301,31 @@ def main() -> None:
         _print_case("geometry-sector candidate", sector_out)
         print()
 
+        # Both families must satisfy the transfer criteria for the narrowed
+        # claim that the old geometry-sector architecture genuinely applies on
+        # the retained grown row.
+        print("Transfer checks (label-grown control):")
+        _check_zero_controls("label-grown control", label_out)
+        _check_sign_response("label-grown control", label_out)
+        _check_charge_linearity("label-grown control", label_out)
+
+        print("Transfer checks (geometry-sector candidate):")
+        _check_zero_controls("geometry-sector candidate", sector_out)
+        _check_sign_response("geometry-sector candidate", sector_out)
+        _check_charge_linearity("geometry-sector candidate", sector_out)
+
+    print()
     print("SAFE READ")
     print("  - If the geometry-sector candidate keeps the zero/neutral controls at zero")
     print("    and preserves the charge-linear sign response, then the old architecture")
     print("    genuinely applies to the current grown-row fixed-field lane.")
     print("  - If it collapses to zero or loses charge linearity, the old architecture")
     print("    was specific to the earlier Gate B families and does not transplant cleanly.")
+    print()
+    print(f"PASS={_PASS} FAIL={_FAIL}")
+    print(f"SUMMARY: PASS={_PASS} FAIL={_FAIL}")
+    return 0 if _FAIL == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

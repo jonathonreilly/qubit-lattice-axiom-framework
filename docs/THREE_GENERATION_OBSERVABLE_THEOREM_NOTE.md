@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-15
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
+**Admitted context inputs:** staggered-Dirac realization derivation target. The load-bearing operator-algebra surface used here (three pairwise-commuting translations with the `diag(-1,+1,+1)/(+1,-1,+1)/(+1,+1,-1)` joint-eigenvalue triples on `H_hw=1 = C^3`, plus the `C3[111]` corner-cycling map induced from the BZ-corner Hamming orbit) is supplied by the substep-3 and substep-4 narrow theorems below, which are independently `retained`. The historical parent-identity alias `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (currently `audited_renaming`) is retained as a navigational reference only; the load-bearing one-hop deps are the substep notes directly, per the explicit rewire endorsement in `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md` line 33.
 **Author-stated role:** exact support theorem on the (separately cited)
 three-generation surface; the safe content is the finite-dimensional
 matrix-algebra theorem on `H_hw=1 = C^3` (translation projectors plus
@@ -319,4 +319,37 @@ The substantive science content of this note is unchanged by this retag.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+The load-bearing operator-algebra premises used by this note are
+supplied directly by the two retained substep theorems below. The
+historical parent-identity alias `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+(currently `audited_renaming`) is no longer a load-bearing one-hop
+dep — it is backticked as a navigational reference per the explicit
+rewire endorsement in
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
+line 33 ("downstream rows with substep-specific needs should cite the
+relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems
+directly rather than this gate alias").
+
+Load-bearing one-hop deps (retained):
+
+- [staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — supplies the 3-dim `V_3` carrier with pairwise-commuting unitary
+  triple `(T_1, T_2, T_3)` having joint eigenvalue triples
+  `(-1,+1,+1)/(+1,-1,+1)/(+1,+1,-1)`, plus the
+  simultaneous-diagonalization corollary that any operator commuting
+  with all three is diagonal in the joint eigenbasis. This is the
+  load-bearing input for the translation-projector structure used in
+  this note's "Input surface" §.
+- [staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — supplies the `1+3+3+1` `hw`-orbit decomposition and the induced
+  `C3[111]` corner-cycling map on the `hw=1` triplet. This is the
+  load-bearing input for the `C3[111]` action on `H_hw=1 = C^3` used
+  here.
+
+Historical navigational reference (NOT a load-bearing dep):
+
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  (parent-identity alias; `audited_renaming`. Backticked to break the
+  unresolved-dep edge that previously blocked this note's first audit.
+  The substantive content has been moved to the two substep theorems
+  above.)

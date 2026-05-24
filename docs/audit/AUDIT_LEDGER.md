@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 388 |
+| **retained_bounded** | 389 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1292 |
+| unaudited | 1291 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 655 |
+| `audited_clean` | 656 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1518 |
+| `unaudited` | 1517 |
 
 | claim_type | count |
 |---|---:|
@@ -464,6 +464,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -7117,6 +7118,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given M_{P,E}=P E P, equality of Tr(sigma|_P E) with Tr(P sigma P E)/Tr(sigma P) for every POVM effect E forces sigma|_P=(P sigma P)/Tr(P sigma P).  _(class `A`)_
 - **chain closes:** True — Under the ratified projective sequential-composition rule, Bayes consistency over all subsequent effects fixes the post-record trace functional uniquely. Positivity, normalization, and sequential composition then follow algebraically for the scoped projective case.
 - **rationale:** The previous blocker, the import of M_{P,E}=P E P, is removed for the ideal unrefined sharp-projective scope by the allowed ratified LSP-projective rule. Within that scope, the remaining derivation is a trace-duality algebraic closure and does not require a numerical runner. The broader source-note wording about arbitrary Kraus operators or general instruments is not part of this audited scope.
+- **auditor confidence:** high
+
+### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite qubit-lattice projective measurements in the retained canonical Lüders/Naimark frame with K_P=P, the joint sequential effect satisfies M_{P,E}=K_P† E K_P=PEP and the normalized Lüders state update follows when Tr(PσP)>0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T170829Z-c768dd34-luders_sequential_produc-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The conclusion (1) follows by direct algebra: K_P† E K_P = P† E P = P E P, using P† = P.  _(class `A`)_
+- **chain closes:** True — The retained_bounded LSP-projective authority supplies the canonical-frame premise K_P=P for ideal unrefined projective measurements, and the remaining equality is direct matrix algebra. The runner checks the algebra symbolically and verifies that alternative Kraus choices are distinct rather than silently forced.
+- **rationale:** All load-bearing non-axiom dependencies in the restricted packet are retained-grade: Kraus-Choi is retained and LSP-projective is retained_bounded; the Minimal Axioms node is an axiom-premise carve-out. The theorem is clean only at bounded scope, namely the canonical projective Lüders/Naimark frame, not uniqueness of all sequential products. Same-packet negative-boundary checks do not defeat that scoped result because the alternative-Kraus routes are explicitly outside the canonical-frame claim.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

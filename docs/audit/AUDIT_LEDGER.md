@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1255 |
+| unaudited | 1254 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 109 |
-| ~~audited_failed~~ | 5 |
+| ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,10 +52,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 685 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 32 |
-| `audited_failed` | 49 |
+| `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1481 |
+| `unaudited` | 1480 |
 
 | claim_type | count |
 |---|---:|
@@ -947,6 +947,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
@@ -1523,6 +1524,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-05-03.md`
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The narrowed lattice reflection-positivity theorem (R1)-(R4) for Case A M=M_KS+mI and Case B symmetric-canonical M=M_KS+r d I+mI, excluding broader non-symmetric Wilson surfaces.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T204104Z-ad3f34ed-axiom_first_reflection_p-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The determinant-positivity step asserts that from {ε,M_KS}=0, if γ5 M v = λv for M=M_KS+mI then γ5 M(εv) = -λ(εv), so det(M_KS+mI)=∏pairs λ²≥0; Case B then imports the bridge formula det(M_KS+r d I+mI)=∏(α²+σ_i²)>0.  _(class `A`)_
+- **chain closes:** False — The Case A eigenvalue-pairing inference is false as written: for H=ε(M_KS+mI), {H,ε}=2mI, so εv is not generally a -λ eigenvector when m>0. Case B also relies on a bridge note that is named in the source but absent from the restricted cited-authority packet.
+- **rationale:** The load-bearing determinant positivity proof does not close on its own algebra for the staggered-only massive case, because the mass term destroys the specific ε-pairing claimed for γ5M. The runner's E5 verifies only the massless anticommutation of M_KS, and E6 is a finite toy/operator check rather than a proof of the stated configuration-by-configuration SU(3) determinant positivity. The symmetric-canonical Wilson case is additionally conditional on a bridge theorem not included as a retained one-hop authority.
+- **open / conditional deps cited:**
+  - `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`
 - **auditor confidence:** high
 
 ### `background_independence_note`

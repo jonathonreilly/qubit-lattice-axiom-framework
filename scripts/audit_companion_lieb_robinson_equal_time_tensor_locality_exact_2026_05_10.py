@@ -141,7 +141,11 @@ def main() -> int:
     )
 
     # ---------------------------------------------------------------------
-    section("Part 2: (L4) Pauli instance — distinct-site commutators")
+    section(
+        "Part 2: abstract M_2(C) Pauli illustration of (L1)-(L3) "
+        "— distinct-site commutators (illustration only; no per-site "
+        "physical Hilbert-realization claim)"
+    )
     # ---------------------------------------------------------------------
     sigma_3_at_1 = embed_2site(sigma_3, I2)
     sigma_3_at_2 = embed_2site(I2, sigma_3)
@@ -266,13 +270,15 @@ def main() -> int:
     print("  Verified at exact sympy precision:")
     print("    (L1) ungraded [O_x, O_y] = 0 over 8 free 2x2 entries at 2 sites")
     print("    (L3) tensor-factorization O_x · O_y = a ⊗ b")
-    print("    (L4) Pauli instance: [σ_3^{(1)}, σ_3^{(2)}] = 0, [σ_+, σ_-] = 0,")
+    print("    Abstract M_2(C) Pauli illustration of (L1)-(L3):")
+    print("         [σ_3^{(1)}, σ_3^{(2)}] = 0, [σ_+, σ_-] = 0,")
     print("         [σ_+, σ_3] = 0, [σ_-, σ_3] = 0 at distinct sites")
+    print("         (illustration only; no per-site physical Hilbert-realization claim)")
     print("    (L2) Pauli ladders on distinct raw tensor factors commute")
     print("    3-site extension: [O_1, O_3] = 0 with identity at site 2")
     print("    Counterfactual: same-site [σ_+, σ_3] ≠ 0 confirms non-trivial scope")
-    print("    Cited dep `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`")
-    print("    is graph-visible in audit_ledger.json")
+    print("    Ledger-row visibility check: `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`")
+    print("    is graph-visible in audit_ledger.json (not load-bearing on rescoped claim)")
 
     print()
     print("=" * 88)

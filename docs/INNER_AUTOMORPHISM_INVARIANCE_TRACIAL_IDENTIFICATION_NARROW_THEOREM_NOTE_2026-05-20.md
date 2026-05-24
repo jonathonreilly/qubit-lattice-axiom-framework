@@ -40,6 +40,46 @@ framework. The parent row
 needs audit/approval of the missing identification premise before it
 can use this theorem to change status.
 
+## Explicit Approved-Premise Record (PRR Admission)
+
+This block records PRR as an explicit external admitted premise for the
+purpose of this note's conditional theorem. It is not a framework axiom
+addition, not a rule derivation, and not a status promotion. The block
+exists so the conditional theorem below has a single named, scoped
+admission to point at.
+
+```text
+ADMITTED PREMISE (PRR), scoped to this note only:
+
+  For every finite region Lambda subset Z^3, the pre-record reference
+  state rho_ref|_Lambda satisfies
+
+      U rho_ref|_Lambda U^dagger = rho_ref|_Lambda
+
+  for every unitary U in U(A_Lambda), where
+  A_Lambda = tensor_{x in Lambda} M_2(C) ~= M_{2^|Lambda|}(C) is the
+  finite-region qubit operator algebra supplied by A1+A2.
+```
+
+Scope of admission:
+
+- PRR is admitted only as an explicit external premise of the
+  conditional theorem below. It is not added to A1+A2 and is not a
+  framework rule.
+- PRR is not derived in this note. The note does not show PRR follows
+  from A1+A2 or from any already retained authority.
+- PRR is not approved as a framework premise by this note. Any
+  framework-level adoption requires explicit user approval or a
+  separate retained-grade derivation, neither of which this note
+  supplies.
+- The conditional theorem stated below reads exactly as
+  "given the PRR admission and the finite-region qubit algebra
+  identification, the finite-region density matrix is the normalized
+  trace". Removing the PRR admission removes the conclusion.
+- Downstream rows (the tracial pre-record reference state row, Born /
+  measurement rows) cannot use this admission to change their own
+  status, because PRR remains an admitted external premise here.
+
 ## Setup
 
 By [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), for

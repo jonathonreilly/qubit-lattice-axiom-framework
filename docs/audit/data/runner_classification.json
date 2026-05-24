@@ -23557,7 +23557,7 @@
       "runner": "scripts/frontier_wilson_mu2_distance_sweep.py"
     },
     "wilson_two_body_open_note_2026-04-11": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
@@ -47722,7 +47722,7 @@
       "exists": true
     },
     "scripts/frontier_wilson_two_body_open.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "wilson_two_body_open_note_2026-04-11"
       ],

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1270 |
+| unaudited | 1271 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 111 |
+| ~~audited_conditional~~ | 110 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 656 |
-| `audited_conditional` | 111 |
+| `audited_conditional` | 110 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1496 |
+| `unaudited` | 1497 |
 
 | claim_type | count |
 |---|---:|
@@ -884,7 +884,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yukawa_color_projection_theorem` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -12690,19 +12689,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **rationale:** The narrowed scope correctly demotes the L -> infinity extrapolation to diagnostic-only, which repairs the prior scope problem in form. However, the binding finite-L table is not independently closed by the restricted packet: no runner output or source is provided, and the one directly relevant Wilson cited authority is effective_status meta rather than retained-grade. The retained staggered authorities are contextual cross-architecture companions, not evidence for the Wilson finite-L table itself.
 - **open / conditional deps cited:**
   - `WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`
-- **auditor confidence:** high
-
-### `wilson_two_body_open_note_2026-04-11`
-
-- **Note:** [`WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md`](../../docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The audited packet supports the open-boundary Wilson surface at side=11,13, G=5, mu^2=0.22, d=3..6, plus the inlined helper/cache distance and partner-source post-selected law characterizations; the screening-mass addendum is not independently backed in the supplied runner source/stdout.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-wilson_two_body_open_not-020`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Open-boundary Wilson two-orbital Hartree dynamics produces a robust mutual attraction channel on the audited G=5, mu^2=0.22 surface, with clean screened distance falloff |a_mut| ~ d^-3.4 and sublinear partner-source scaling |a_mut| ~ m_B^0.48.  _(class `C`)_
-- **chain closes:** False — The primary open-boundary attraction surface and the distance/partner-source fits close from runner source plus cached stdout. The broader retained wording also includes the screening-mass mu^2 sweep, but the supplied helper runner/cache excerpt does not compute or print those mu^2 sweep rows.
-- **rationale:** The primary runner genuinely constructs the open lattice, solves the screened Poisson problem, evolves Wilson Hamiltonians, and computes the mutual acceleration rather than printing constants. The law helper likewise computes post-selected distance and partner-source fits from the primary runner, and its cached stdout matches the note's quoted values. However, the screening-mass addendum is inside the stated retained scope but is not present in the supplied law-runner source or cache excerpt, so the full scoped conclusion does not close in this restricted packet.
 - **auditor confidence:** high
 
 ### `wilson_two_body_open_refined_note_2026-04-11`

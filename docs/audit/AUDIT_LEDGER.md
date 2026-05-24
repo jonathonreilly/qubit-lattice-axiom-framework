@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 408 |
+| **retained_bounded** | 409 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1264 |
+| unaudited | 1263 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 677 |
+| `audited_clean` | 678 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1490 |
+| `unaudited` | 1489 |
 
 | claim_type | count |
 |---|---:|
@@ -400,6 +400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_a1_physical_bridge_attempt_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -6056,6 +6057,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the specified h=0.5, W=8, L=12, max_d=3 harness, Born holds across all five variants while TOWARD holds for the four non-heavy-delete variants and fails for heavy_delete_70.  _(class `C`)_
 - **chain closes:** True — The runner constructs the five graph variants, computes Born, gravity sign, k=0, and no-field controls, and asserts the narrowed table stated in the note. The audited conclusion is explicitly bounded to this harness and does not claim universal graph-structure irrelevance.
 - **rationale:** The current cache reproduces the narrowed table exactly, including the heavy_delete_70 AWAY counterexample that retracts the older universal-robustness framing. The note's safe conclusion follows from the finite runner output and its assertions, with no hidden dependency needed for the bounded harness statement. Residual risk is the ordinary finite-sample limitation: different graph perturbations, strengths, phases, or lattice parameters are outside this audit.
+- **auditor confidence:** high
+
+### `k_dependence_review_safe_note`
+
+- **Note:** [`K_DEPENDENCE_REVIEW_SAFE_NOTE.md`](../../docs/K_DEPENDENCE_REVIEW_SAFE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the provided generative causal DAG runner family, for N=[25,30,40,60,80], 16 shared seeds, and k in [1,2,3,5,7,10,15], the audited result is that fitted k-dependent ceiling behavior is present but not a clean or window-robust universal alpha(k) claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T175957Z-7a52dc92-k_dependence_review_safe-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The fixed-window rerun shows negative per-seed exponents with strongly overlapping bootstrap confidence intervals across k, and a late-N window materially shifts the fitted seed_alpha values, so the evidence is fit-window-sensitive and does not support a universal alpha(k) law.  _(class `C`)_
+- **chain closes:** True — The primary runner computes pur_min values through the included helper chain, fits per-seed log-log slopes, bootstraps the mean slopes, and performs a second-window comparison. The conclusion is bounded to this runner-defined graph family and fit protocol, and the included code/output support that bounded statement.
+- **rationale:** The runner source is not a mere printout: it constructs the seed x k x N table from pur_min_single_k, computes per-seed slopes and bootstrap intervals, and then validates the frozen note values. The helper chain is included and contains the load-bearing graph generation, field propagation, density normalization, and purity calculation rather than importing the contested result from another note. The result is only a bounded computational theorem about this graph family and fit protocol, not a universal physical alpha(k) law.
 - **auditor confidence:** high
 
 ### `kernel_vs_gravity_note`

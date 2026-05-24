@@ -1,0 +1,18 @@
+loop: pr230-lsp-source-readout-support
+goal: close the PR230 signed-source measurement/readout carrier using current qubit/LSP substrate
+target_status: exact-support
+active_route: LSP signed-record carrier plus RN source-family uniqueness
+files_touched:
+  - docs/YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md
+  - scripts/frontier_yt_pr230_lsp_signed_record_source_readout_support.py
+  - outputs/yt_pr230_lsp_signed_record_source_readout_support_2026-05-24.json
+open_imports:
+  - same-surface source/action authority
+  - canonical O_H
+  - scalar LSZ normalization
+  - strict physical pole rows or W/Z bypass
+  - matching/running
+status: exact-support
+proposal_allowed: false
+bare_retained_allowed: false
+next_action: review/audit PR #1782, then attack same-surface source/action authority or canonical O_H/LSZ

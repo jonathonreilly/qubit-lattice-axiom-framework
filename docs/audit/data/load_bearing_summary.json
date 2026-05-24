@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 397,
     "high": 487,
-    "leaf": 1006,
-    "medium": 606
+    "leaf": 1005,
+    "medium": 608
   },
   "flagship_signal_used": false,
-  "node_count": 2496,
+  "node_count": 2497,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -143,16 +143,16 @@
       "transitive_descendants": 185
     },
     {
+      "claim_id": "minimal_axioms",
+      "criticality": "critical",
+      "load_bearing_score": 28.899,
+      "transitive_descendants": 954
+    },
+    {
       "claim_id": "left_handed_charge_matching_note",
       "criticality": "critical",
       "load_bearing_score": 28.42,
       "transitive_descendants": 968
-    },
-    {
-      "claim_id": "minimal_axioms",
-      "criticality": "critical",
-      "load_bearing_score": 28.398,
-      "transitive_descendants": 953
     },
     {
       "claim_id": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",

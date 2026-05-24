@@ -1,0 +1,11 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim": "PR230 primitive signed RN source record equals native LSP Pauli signed readout",
+  "fail_count": 0,
+  "generated_at": "2026-05-24T00:00:00Z",
+  "pass_count": 50,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Readout carrier support only; source/action authority, canonical O_H, scalar LSZ, strict pole rows or W/Z bypass, and matching/running remain open."
+}

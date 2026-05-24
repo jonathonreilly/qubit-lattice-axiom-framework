@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1251 |
+| unaudited | 1252 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -56,11 +56,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1477 |
+| `unaudited` | 1478 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1018 |
+| `bounded_theorem` | 1019 |
 | `decoration` | 36 |
 | `meta` | 232 |
 | `no_go` | 243 |
@@ -71,16 +71,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 395 |
 | `high` | 484 |
-| `medium` | 568 |
-| `leaf` | 935 |
+| `medium` | 570 |
+| `leaf` | 934 |
 
 - **Retained pending chain closure:** 7
 - **Citation cycles detected:** 3
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1939
-- runners with (C) first-principles compute hits: 955
+- runners classified: 1940
+- runners with (C) first-principles compute hits: 956
 - runners with (D) external comparator hits: 551
 - decoration candidates (no C, no D): 312
 
@@ -111,8 +111,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `cpt_exact_note` | positive_theorem | critical | 888 | 29.80 | `audited_clean` | **retained** |
 | 20 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 217 | 29.77 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 185 | 29.04 | `unaudited` | unaudited |
-| 22 | `left_handed_charge_matching_note` | decoration | critical | 968 | 28.42 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 23 | `minimal_axioms` | meta | critical | 953 | 28.40 | `unaudited` | meta |
+| 22 | `minimal_axioms` | meta | critical | 954 | 28.90 | `unaudited` | meta |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 968 | 28.42 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 598 | 27.73 | `unaudited` | unaudited |
 | 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 584 | 27.69 | `unaudited` | unaudited |
 

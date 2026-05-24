@@ -1,11 +1,17 @@
 # Higher-Symmetry Joint Validation Note — Cached N Range (Binding)
 
-**Date:** 2026-04-03 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is exactly the cached log range; the N=120 promotion claim requires the missing dense N=80/100/120 joint-validation log + registered joint-validator runner)
+**Date:** 2026-04-03 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is exactly the cached log range; the N=120 promotion claim requires the missing dense N=80/100/120 joint-validation log + registered joint-validator runner; SHA-pinned registered joint-validator cache attached 2026-05-24 per follow-up `runner_artifact_issue` repair)
 **Status:** bounded positive on the cached registered log range for
 `Z₂ × Z₂`; the `N = 120` proposed_retained promotion is **out of
 binding scope** until the missing dense N=80/100/120 joint-validation
 log is registered and the joint validator is registered as this row's
 primary runner.
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only
+**Primary runner (load-bearing):** [`scripts/higher_symmetry_joint_validation.py`](../scripts/higher_symmetry_joint_validation.py) (joint Born + gravity + decoherence on the higher-symmetry families on the sparse N=25,40,60,80 window).
+**Primary runner cache (load-bearing):** [`logs/runner-cache/higher_symmetry_joint_validation.txt`](../logs/runner-cache/higher_symmetry_joint_validation.txt) — SHA-pinned registered cached stdout (`exit_code=0`, `status=ok`, `elapsed_sec=53.94`, default argv `--families random z2z2 ring --n-layers 25 40 60 80 --n-seeds 16`) backing every row in the sparse Z₂ × Z₂ binding table below.
+**Imported authority (load-bearing dependency):** [`scripts/higher_symmetry_dag.py`](../scripts/higher_symmetry_dag.py) — provides `generate_random_dag`, `generate_z2z2_dag`, `generate_ring_dag`, and the module-level constants `K`, `CONNECT_RADIUS`, `XYZ_RANGE` imported by the primary runner.
+**Imported authority (load-bearing dependency):** [`scripts/mirror_chokepoint_joint.py`](../scripts/mirror_chokepoint_joint.py) — provides `measure_joint` (joint d_TV / `pur_cl` / gravity / Born readout), `compute_field_3d`, `propagate_3d`, and `_mean_se` imported by the primary runner.
 
 ## Scope narrowing (2026-05-17 audited_conditional repair)
 
@@ -391,7 +397,399 @@ if __name__ == "__main__":
     main()
 ```
 
-## Registered cache excerpt (load-bearing, 2026-05-18)
+## Helper-runner code excerpt (load-bearing for restricted packet, inlined 2026-05-24)
+
+The primary runner inlined above imports load-bearing helpers from two
+modules under `scripts/`. Both are inlined verbatim below so the
+restricted-packet review does not require external source navigation
+(per the `runner_artifact_issue` re-audit note "include the helper
+sources `scripts/higher_symmetry_dag.py` and
+`scripts/mirror_chokepoint_joint.py` in the packet").
+
+### Helper: `scripts/higher_symmetry_dag.py` — DAG generators + module-level constants
+
+This module provides the `generate_z2z2_dag`, `generate_random_dag`,
+and `generate_ring_dag` generators wired into `family_generators` in
+the primary runner, plus the module-level constants `K`,
+`CONNECT_RADIUS`, and `XYZ_RANGE` used as defaults. The
+load-bearing definitions inlined below are the three generators and the
+constants; the file also contains an exploratory `main()` for the
+decoherence-only comparison which is not load-bearing for the joint
+validator and is omitted.
+
+```python
+import math
+import cmath
+import sys
+import os
+import random
+from collections import defaultdict, deque
+
+BETA = 0.8
+K = 5.0
+N_SEEDS = 16
+XYZ_RANGE = 12.0
+CONNECT_RADIUS = 5.0
+N_YBINS = 8
+LAM = 10.0
+
+
+def _topo_order(adj, n):
+    in_deg = [0] * n
+    for nbs in adj.values():
+        for j in nbs: in_deg[j] += 1
+    q = deque(i for i in range(n) if in_deg[i] == 0); order = []
+    while q:
+        i = q.popleft(); order.append(i)
+        for j in adj.get(i, []):
+            in_deg[j] -= 1
+            if in_deg[j] == 0: q.append(j)
+    return order
+
+
+def generate_z2z2_dag(n_layers, npl_quarter, xyz_range, cr, rng_seed):
+    """Z₂×Z₂: y → -y AND z → -z. 4 copies per base node."""
+    rng = random.Random(rng_seed); positions = []; adj = defaultdict(list)
+    layer_indices = []; bl = n_layers // 3
+    for layer in range(n_layers):
+        x = float(layer); ln = []
+        if layer == 0:
+            positions.append((x, 0, 0)); ln.append(len(positions)-1)
+        else:
+            all_nodes = []
+            for _ in range(npl_quarter):
+                y = rng.uniform(0.5, xyz_range); z = rng.uniform(0.5, xyz_range)
+                for sy, sz in [(1,1), (1,-1), (-1,1), (-1,-1)]:
+                    idx = len(positions); positions.append((x, sy*y, sz*z))
+                    all_nodes.append(idx)
+            ln = all_nodes
+            lb = max(0, len(layer_indices) - (1 if layer == bl+1 else 2))
+            for ci in ln:
+                cx, cy, cz = positions[ci]
+                for pl in layer_indices[lb:]:
+                    for pi in pl:
+                        px, py, pz = positions[pi]
+                        if math.sqrt((cx-px)**2+(cy-py)**2+(cz-pz)**2) <= cr:
+                            adj[pi].append(ci)
+        layer_indices.append(ln)
+    return positions, dict(adj), bl
+
+
+def generate_random_dag(n_layers, npl, xyz_range, cr, rng_seed):
+    """Standard random (no symmetry)."""
+    rng = random.Random(rng_seed); positions = []; adj = defaultdict(list)
+    layer_indices = []; bl = n_layers // 3
+    for layer in range(n_layers):
+        x = float(layer); ln = []
+        if layer == 0:
+            positions.append((x, 0, 0)); ln.append(len(positions)-1)
+        else:
+            for _ in range(npl):
+                y = rng.uniform(-xyz_range, xyz_range); z = rng.uniform(-xyz_range, xyz_range)
+                idx = len(positions); positions.append((x, y, z)); ln.append(idx)
+                lb = max(0, len(layer_indices) - (1 if layer == bl+1 else 2))
+                for pl in layer_indices[lb:]:
+                    for pi in pl:
+                        px, py, pz = positions[pi]
+                        if math.sqrt((x-px)**2+(y-py)**2+(z-pz)**2) <= cr:
+                            adj[pi].append(idx)
+        layer_indices.append(ln)
+    return positions, dict(adj), bl
+
+
+def generate_ring_dag(n_layers, n_ring, xyz_range, cr, rng_seed):
+    """Approximate rotational symmetry: nodes placed on rings at random radii."""
+    rng = random.Random(rng_seed); positions = []; adj = defaultdict(list)
+    layer_indices = []; bl = n_layers // 3
+    for layer in range(n_layers):
+        x = float(layer); ln = []
+        if layer == 0:
+            positions.append((x, 0, 0)); ln.append(len(positions)-1)
+        else:
+            for _ in range(n_ring // 8 + 1):  # multiple radii
+                r = rng.uniform(1.0, xyz_range)
+                for i in range(8):  # 8 nodes per ring
+                    angle = 2 * math.pi * i / 8 + rng.uniform(-0.1, 0.1)
+                    y = r * math.cos(angle); z = r * math.sin(angle)
+                    idx = len(positions); positions.append((x, y, z)); ln.append(idx)
+                    if len(ln) >= n_ring: break
+                if len(ln) >= n_ring: break
+            ln = ln[:n_ring]
+            lb = max(0, len(layer_indices) - (1 if layer == bl+1 else 2))
+            for ci in ln:
+                cx, cy, cz = positions[ci]
+                for pl in layer_indices[lb:]:
+                    for pi in pl:
+                        px, py, pz = positions[pi]
+                        if math.sqrt((cx-px)**2+(cy-py)**2+(cz-pz)**2) <= cr:
+                            adj[pi].append(ci)
+        layer_indices.append(ln)
+    return positions, dict(adj), bl
+```
+
+Module-level constants used by the helper code: `BETA = 0.8`, `K = 5.0`,
+`N_SEEDS = 16`, `XYZ_RANGE = 12.0`, `CONNECT_RADIUS = 5.0`,
+`N_YBINS = 8`, `LAM = 10.0`. Only `K`, `CONNECT_RADIUS`, and `XYZ_RANGE`
+are imported by the joint validator (as `DEFAULT_K`,
+`DEFAULT_CONNECT_RADIUS`, `DEFAULT_XYZ_RANGE`); the others are local to
+this helper.
+
+### Helper: `scripts/mirror_chokepoint_joint.py` — `measure_joint`, `compute_field_3d`, `propagate_3d`, `_mean_se`
+
+This module provides the joint Born + gravity + decoherence readout
+(`measure_joint`), the 3D propagator (`propagate_3d`), the
+gravitational field source (`compute_field_3d`), the mean/SE helper
+(`_mean_se`), and the auxiliary functions used by `measure_joint`
+(`_topo_order`, `bin_amplitudes_3d`, `sorkin_born_test`). The
+load-bearing definitions inlined below are the full chain — note that
+the joint validator imports `_mean_se`, `compute_field_3d`,
+`measure_joint`, and `propagate_3d`; `measure_joint` in turn calls the
+remaining helpers via the closure inside this module.
+
+```python
+import math
+import cmath
+import sys
+import os
+import random
+from collections import defaultdict, deque
+
+BETA = 0.8
+K = 5.0
+N_SEEDS = 16
+NPL_HALF = 25
+XYZ_RANGE = 12.0
+CONNECT_RADIUS = 4.0
+N_YBINS = 8
+LAM = 10.0
+
+
+def _topo_order(adj, n):
+    in_deg = [0] * n
+    for nbs in adj.values():
+        for j in nbs:
+            in_deg[j] += 1
+    q = deque(i for i in range(n) if in_deg[i] == 0)
+    order = []
+    while q:
+        i = q.popleft()
+        order.append(i)
+        for j in adj.get(i, []):
+            in_deg[j] -= 1
+            if in_deg[j] == 0:
+                q.append(j)
+    return order
+
+
+def propagate_3d(positions, adj, field, src, k, blocked):
+    n = len(positions)
+    order = _topo_order(adj, n)
+    amps = [0j] * n
+    for s in src:
+        amps[s] = 1.0 / len(src)
+    for i in order:
+        if abs(amps[i]) < 1e-30 or i in blocked:
+            continue
+        for j in adj.get(i, []):
+            if j in blocked:
+                continue
+            x1, y1, z1 = positions[i]
+            x2, y2, z2 = positions[j]
+            dx, dy, dz = x2-x1, y2-y1, z2-z1
+            L = math.sqrt(dx*dx + dy*dy + dz*dz)
+            if L < 1e-10:
+                continue
+            lf = 0.5 * (field[i] + field[j])
+            dl = L * (1 + lf)
+            ret = math.sqrt(max(dl*dl - L*L, 0))
+            act = dl - ret
+            theta = math.atan2(math.sqrt(dy*dy + dz*dz), max(dx, 1e-10))
+            w = math.exp(-BETA * theta * theta)
+            ea = cmath.exp(1j * k * act) * w / L
+            amps[j] += amps[i] * ea
+    return amps
+
+
+def compute_field_3d(positions, mass_nodes):
+    n = len(positions)
+    field = [0.0] * n
+    for m in mass_nodes:
+        mx, my, mz = positions[m]
+        for i in range(n):
+            ix, iy, iz = positions[i]
+            r = math.sqrt((ix-mx)**2 + (iy-my)**2 + (iz-mz)**2) + 0.1
+            field[i] += 0.1 / r
+    return field
+
+
+def bin_amplitudes_3d(amps, positions, nodes):
+    bins = [0j] * N_YBINS
+    bw = 24.0 / N_YBINS
+    for m in nodes:
+        y = positions[m][1]
+        b = int((y + 12.0) / bw)
+        b = max(0, min(N_YBINS - 1, b))
+        bins[b] += amps[m]
+    return bins
+
+
+def sorkin_born_test(positions, adj, src, k, bi, slit_a, slit_b, slit_c, det_list, field):
+    """Three-slit Sorkin test for Born rule."""
+    all_slits = set(slit_a + slit_b + slit_c)
+    other = set(bi) - all_slits
+    combos = {
+        'abc': set(slit_a + slit_b + slit_c),
+        'ab': set(slit_a + slit_b), 'ac': set(slit_a + slit_c),
+        'bc': set(slit_b + slit_c),
+        'a': set(slit_a), 'b': set(slit_b), 'c': set(slit_c),
+    }
+    I3 = 0.0
+    P_abc = 0.0
+    for key, open_set in combos.items():
+        bl = other | (all_slits - open_set)
+        a = propagate_3d(positions, adj, field, src, k, bl)
+        for di, d in enumerate(det_list):
+            p = abs(a[d]) ** 2
+            if key == 'abc':
+                P_abc += p
+                I3 += p
+            elif key in ('ab', 'ac', 'bc'):
+                I3 -= p
+            else:
+                I3 += p
+    return abs(I3) / P_abc if P_abc > 1e-30 else math.nan
+
+
+def measure_joint(positions, adj, n_layers, k):
+    """Measure d_TV, CL purity, gravity, and Born."""
+    n = len(positions)
+    by_layer = defaultdict(list)
+    for idx, (x, y, z) in enumerate(positions):
+        by_layer[round(x)].append(idx)
+    layers = sorted(by_layer.keys())
+    if len(layers) < 7:
+        return None
+    src = by_layer[layers[0]]
+    det_list = list(by_layer[layers[-1]])
+    if not det_list:
+        return None
+    cy = sum(positions[i][1] for i in range(n)) / n
+    bl_idx = len(layers) // 3
+    bi = by_layer[layers[bl_idx]]
+    sa = [i for i in bi if positions[i][1] > cy + 3][:3]
+    sb = [i for i in bi if positions[i][1] < cy - 3][:3]
+    if not sa or not sb:
+        return None
+    blocked = set(bi) - set(sa + sb)
+
+    # Three slits for Born test
+    upper = sorted([i for i in bi if positions[i][1] > cy + 2], key=lambda i: positions[i][1])
+    lower = sorted([i for i in bi if positions[i][1] < cy - 2], key=lambda i: -positions[i][1])
+    middle = sorted([i for i in bi if abs(positions[i][1] - cy) <= 2],
+                    key=lambda i: abs(positions[i][1] - cy))
+
+    grav_layer = layers[2 * len(layers) // 3]
+    mass_nodes = [i for i in by_layer[grav_layer] if positions[i][1] > cy + 1]
+    if not mass_nodes:
+        return None
+    env_depth = max(1, round(n_layers / 6))
+    start = bl_idx + 1
+    stop = min(len(layers) - 1, start + env_depth)
+    mid = []
+    for layer in layers[start:stop]:
+        mid.extend(by_layer[layer])
+
+    field_m = compute_field_3d(positions, mass_nodes)
+    field_f = [0.0] * n
+
+    # Single-slit propagation
+    psi_a = propagate_3d(positions, adj, field_m, src, k, blocked | set(sb))
+    psi_b = propagate_3d(positions, adj, field_m, src, k, blocked | set(sa))
+
+    # d_TV
+    pa = {d: abs(psi_a[d])**2 for d in det_list}
+    pb = {d: abs(psi_b[d])**2 for d in det_list}
+    na_amp = sum(pa.values())
+    nb_amp = sum(pb.values())
+    if na_amp < 1e-30 or nb_amp < 1e-30:
+        return None
+    dtv = 0.5 * sum(abs(pa[d]/na_amp - pb[d]/nb_amp) for d in det_list)
+
+    # CL bath
+    ba = bin_amplitudes_3d(psi_a, positions, mid)
+    bb = bin_amplitudes_3d(psi_b, positions, mid)
+    S = sum(abs(a - b)**2 for a, b in zip(ba, bb))
+    NA = sum(abs(a)**2 for a in ba)
+    NB = sum(abs(b)**2 for b in bb)
+    Sn = S / (NA + NB) if (NA + NB) > 0 else 0.0
+    D_cl = math.exp(-LAM**2 * Sn)
+
+    rho = {}
+    for d1 in det_list:
+        for d2 in det_list:
+            rho[(d1, d2)] = (
+                psi_a[d1].conjugate() * psi_a[d2]
+                + psi_b[d1].conjugate() * psi_b[d2]
+                + D_cl * psi_a[d1].conjugate() * psi_b[d2]
+                + D_cl * psi_b[d1].conjugate() * psi_a[d2]
+            )
+    tr = sum(rho[(d, d)] for d in det_list).real
+    if tr < 1e-30:
+        return None
+    for key in rho:
+        rho[key] /= tr
+    pur_cl = sum(abs(v)**2 for v in rho.values()).real
+
+    # Gravity
+    am = propagate_3d(positions, adj, field_m, src, k, blocked)
+    af = propagate_3d(positions, adj, field_f, src, k, blocked)
+    pm = sum(abs(am[d])**2 for d in det_list)
+    pf = sum(abs(af[d])**2 for d in det_list)
+    grav = 0.0
+    if pm > 1e-30 and pf > 1e-30:
+        ym = sum(abs(am[d])**2 * positions[d][1] for d in det_list) / pm
+        yf = sum(abs(af[d])**2 * positions[d][1] for d in det_list) / pf
+        grav = ym - yf
+
+    # Born test
+    born = math.nan
+    if upper and lower and middle:
+        born = sorkin_born_test(positions, adj, src, k, bi,
+                                [upper[0]], [lower[0]], [middle[0]],
+                                det_list, field_f)
+
+    # k=0 gravity control
+    am0 = propagate_3d(positions, adj, field_m, src, 0.0, blocked)
+    af0 = propagate_3d(positions, adj, field_f, src, 0.0, blocked)
+    pm0 = sum(abs(am0[d])**2 for d in det_list)
+    pf0 = sum(abs(af0[d])**2 for d in det_list)
+    grav_k0 = 0.0
+    if pm0 > 1e-30 and pf0 > 1e-30:
+        ym0 = sum(abs(am0[d])**2 * positions[d][1] for d in det_list) / pm0
+        yf0 = sum(abs(af0[d])**2 * positions[d][1] for d in det_list) / pf0
+        grav_k0 = ym0 - yf0
+
+    return {
+        "dtv": dtv, "pur_cl": pur_cl, "s_norm": Sn,
+        "gravity": grav, "born": born, "grav_k0": grav_k0,
+    }
+
+
+def _mean_se(vals):
+    vals = [v for v in vals if v is not None and not math.isnan(v)]
+    if not vals: return float('nan'), float('nan')
+    m = sum(vals) / len(vals)
+    if len(vals) < 2: return m, 0.0
+    var = sum((v-m)**2 for v in vals) / (len(vals)-1)
+    return m, math.sqrt(var / len(vals))
+```
+
+Module-level constants used by `mirror_chokepoint_joint.py`:
+`BETA = 0.8`, `K = 5.0` (joint-validator default), `N_YBINS = 8`,
+`LAM = 10.0`. The joint validator passes its own `--k` argument to
+`measure_joint`, so the helper-local `K` is not load-bearing here.
+
+## Registered cache excerpt (load-bearing, 2026-05-24)
 
 The binding scope of this note is exactly the sparse N=25,40,60,80
 `Z₂ × Z₂` row from the joint-validator (see Scope narrowing section
@@ -401,20 +799,74 @@ attached, so its cache is **not inlined** here per the audit verdict
 ("include the dense N=80/100/120 cache only if N=120 is to be binding"
 — N=120 is explicitly NOT binding in this revision).
 
-**Note on missing registered runner-cache:** as of 2026-05-18 there is
-no `logs/runner-cache/higher_symmetry_joint_validation.txt` registered
-cache file for `scripts/higher_symmetry_joint_validation.py`. The
-binding evidence below is the existing raw log
-`logs/2026-04-03-higher-symmetry-joint-validation.txt`, which is the
-stdout output of the joint validator on the sparse N=25,40,60,80
-window. Registering this stdout as a SHA-pinned runner cache (in the
-`logs/runner-cache/` directory under the joint-validator's name) is the
-remaining `runner_artifact_issue` engineering step; until that lands,
-the joint validator is not the primary registered runner of this row
-in the runner classification ledger and the N=120 promotion remains
-out of binding scope.
+**Registered runner-cache status (2026-05-24 `runner_artifact_issue`
+repair):** the SHA-pinned registered cache
+[`logs/runner-cache/higher_symmetry_joint_validation.txt`](../logs/runner-cache/higher_symmetry_joint_validation.txt)
+is now attached for
+[`scripts/higher_symmetry_joint_validation.py`](../scripts/higher_symmetry_joint_validation.py),
+produced via the canonical `scripts/runner_cache.py` orchestrator
+(`runner_sha256: f6d580f54dc9c4070e977ea1ac989f47ff54d5edef5c802fe6e004e5841592df`,
+`exit_code: 0`, `status: ok`, `elapsed_sec: 53.94`, `timeout_sec: 120`)
+with default argv `--families random z2z2 ring --n-layers 25 40 60 80
+--n-seeds 16 --k 5.0 --k-band 3.0 5.0 7.0 --random-npl 50
+--z2z2-quarter 12 --ring-nodes 48 --connect-radius 5.0 --n-boot 1000
+--bootstrap-seed 12345`. The full cache header + stdout is reproduced
+below for restricted-packet visibility. The earlier raw log
+[`logs/2026-04-03-higher-symmetry-joint-validation.txt`](../logs/2026-04-03-higher-symmetry-joint-validation.txt)
+used 32 seeds rather than the default 16; the registered SHA-pinned
+cache below is the canonical-default 16-seed run and supersedes the raw
+log as the load-bearing artifact for this row.
 
-Raw joint-validator stdout (sparse N=25,40,60,80, binding):
+Registered joint-validator runner cache (full body, sparse N=25,40,60,80, binding):
+
+```
+===== runner cache v1 =====
+runner: scripts/higher_symmetry_joint_validation.py
+runner_sha256: f6d580f54dc9c4070e977ea1ac989f47ff54d5edef5c802fe6e004e5841592df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 53.94
+status: ok
+----- stdout -----
+====================================================================================================================================
+HIGHER-SYMMETRY JOINT VALIDATION
+  Born + gravity + decoherence on the higher-symmetry families
+  k=5.0, k_band=[3.0, 5.0, 7.0], seeds=16, random_npl=50, z2z2_quarter=12, ring_nodes=48, r=5.0
+====================================================================================================================================
+
+     N    family        d_TV      pur_cl        grav@k     grav_band    band+             Born         k=0   ok   time
+  ----------------------------------------------------------------------------------------------------------------------
+    25    random  0.798±0.040  0.731±0.046  +1.682±0.756  +0.305±0.454    10/16  5.95e-16±1.13e-16  0.00e+00±0.00e+00   16     2s
+    40    random  0.727±0.053  0.864±0.037  -0.244±0.811  -0.557±0.539     6/16  1.03e-15±2.43e-16  0.00e+00±0.00e+00   16     3s
+    60    random  0.534±0.064  0.901±0.026  +0.016±0.640  +0.356±0.394     9/16  1.42e-15±1.90e-16  0.00e+00±0.00e+00   16     5s
+    80    random  0.431±0.062  0.880±0.026  -0.164±0.803  +0.025±0.517     8/16  1.71e-15±4.28e-16  0.00e+00±0.00e+00   16     7s
+
+    25      z2z2  0.893±0.034  0.616±0.032  -0.079±0.680  +0.580±0.412    11/15  5.91e-16±1.53e-16  0.00e+00±0.00e+00   15     1s
+    40      z2z2  0.862±0.029  0.661±0.035  +0.905±0.809  +0.706±0.576    10/15  3.85e-16±1.75e-16  0.00e+00±0.00e+00   15     2s
+    60      z2z2  0.698±0.050  0.682±0.036  -0.690±0.868  +0.879±0.656     9/15  7.34e-16±2.10e-16  0.00e+00±0.00e+00   15     4s
+    80      z2z2  0.540±0.052  0.782±0.028  +2.218±0.983  +1.996±0.542    12/15  1.80e-15±4.68e-16  0.00e+00±0.00e+00   15     5s
+
+    25      ring  0.516±0.051  0.684±0.025  +0.773±0.412  +0.671±0.281    12/16  6.94e-16±1.98e-16  0.00e+00±0.00e+00   16     3s
+    40      ring  0.441±0.043  0.783±0.037  +1.110±0.451  +0.909±0.311    11/16  1.66e-15±8.80e-16  0.00e+00±0.00e+00   16     5s
+    60      ring  0.320±0.048  0.837±0.032  -0.103±0.375  +0.226±0.248    10/16  1.78e-15±3.80e-16  0.00e+00±0.00e+00   16     7s
+    80      ring  0.237±0.054  0.921±0.034  -0.060±0.462  +0.372±0.308    13/16  3.34e-15±1.58e-15  0.00e+00±0.00e+00   16    10s
+
+Exponent fits on family-mean decoherence depth: 1 - pur_cl ~= C * N^alpha
+    random: alpha=-0.750, C=2.5866, R^2=0.763, bootstrap alpha=-0.756 [-1.230, -0.280]
+      z2z2: alpha=-0.430, C=1.6099, R^2=0.796, bootstrap alpha=-0.437 [-0.678, -0.199]
+      ring: alpha=-1.103, C=11.9884, R^2=0.909, bootstrap alpha=-1.171 [-2.032, -0.652]
+
+Readout:
+  - Born safety means |I3|/P stays near machine precision.
+  - k=0 must remain zero if gravity stays purely phase-mediated.
+  - grav_band averages the same centroid shift across a small k window
+    to reduce sign flips from single-k phase oscillations.
+
+----- stderr -----
+
+```
+
+The earlier 32-seed raw log (preserved for historical comparison) is reproduced below:
 
 ```
 ====================================================================================================================================

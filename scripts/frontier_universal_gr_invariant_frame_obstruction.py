@@ -1,15 +1,25 @@
 #!/usr/bin/env python3
-"""Audit the universal invariant-frame obstruction from representation data.
+"""Bounded representation-theoretic checks on the universal complement.
 
-This checks whether the universal complement can be canonically framed from
-representation-theoretic invariants alone. The answer should be negative:
+Scope (narrowed 2026-05-24): the load-bearing claim of the source note
+docs/UNIVERSAL_GR_INVARIANT_FRAME_OBSTRUCTION_NOTE.md is restricted to the
+runner-verified algebraic facts on the canonical lapse/shift/trace/shear
+basis. This runner verifies:
 
-1. `Pi_A1` is exact and invariant.
-2. the complement carries nontrivial `SO(3)` action.
-3. the shared-axis decomposition has two weight-1 doublets plus a weight-2
-   sector, so the multiplicity space is not canonically split.
-4. the quotient-kernel spectrum is frame-invariant, so it cannot select a
-   preferred complement section.
+1. `Pi_A1` is exact rank-2 and commutes with the tested spatial rotations.
+2. the spatial-rotation generator algebra has rank 3 and acts nontrivially
+   on the complement.
+3. the shared-axis decomposition has multiplicities `{0: 4, 1: 4, 2: 2}`
+   (two weight-1 doublets and one weight-2 sector).
+4. the weight-1 multiplicity commutant of the canonical `SO(2)` doublet
+   model has dimension 8.
+5. the symmetric quotient-kernel spectrum is frame-invariant under the
+   tested rotations.
+
+This runner does not prove an atlas-exhaustion statement; the source note's
+2026-05-24 narrowing explicitly demotes the stronger "no representation-
+theoretic invariant in the current atlas selects a unique complement
+frame" claim to a non-load-bearing conditional corollary.
 """
 
 from __future__ import annotations
@@ -298,12 +308,18 @@ def main() -> int:
     n_pass = sum(ok for _, ok, _ in checks)
     n_fail = len(checks) - n_pass
     print(f"PASS={n_pass} FAIL={n_fail} TOTAL={len(checks)}")
+    print(f"SUMMARY: PASS={n_pass} FAIL={n_fail}")
     if n_fail == 0:
         print(
-            "Representation-theoretic invariants alone do not canonically fix the "
-            "universal complement frame. They determine the exact invariant A1 "
-            "section and the orbit bundle, but leave an SO(3) complement orbit "
-            "and a two-copy weight-1 multiplicity space unresolved."
+            "Bounded representation-theoretic facts on the canonical basis are "
+            "verified: Pi_A1 is exact rank-2 invariant, the complement carries "
+            "the rank-3 spatial-rotation generator algebra, the shared-axis "
+            "decomposition has two weight-1 doublets plus a weight-2 sector, "
+            "and the weight-1 multiplicity commutant of the canonical SO(2) "
+            "doublet model has dimension 8. On the canonical basis tested, the "
+            "complement is orbit-canonical, not section-canonical. The further "
+            "atlas-exhaustion statement is not asserted here and is non-load-"
+            "bearing per the source note's 2026-05-24 narrowing."
         )
         return 0
 

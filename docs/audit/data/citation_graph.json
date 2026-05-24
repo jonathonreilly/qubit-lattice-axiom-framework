@@ -9873,6 +9873,10 @@
       "to": "gate_b_weak_connectivity_note"
     },
     {
+      "from": "gate_b_nonlabel_sign_grown_transfer_note",
+      "to": "gate_b_grown_distance_law_note"
+    },
+    {
       "from": "gate_b_no_restore_farfield_note",
       "to": "gate_b_farfield_note"
     },
@@ -10875,6 +10879,14 @@
     {
       "from": "g_bare_derivation_status_correction_audit_note_2026-05-02",
       "to": "g_bare_derivation_note"
+    },
+    {
+      "from": "g_bare_derivation_status_correction_audit_note_2026-05-02",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
+      "from": "g_bare_derivation_status_correction_audit_note_2026-05-02",
+      "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
     },
     {
       "from": "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
@@ -17278,10 +17290,6 @@
     },
     {
       "from": "mirror_2d_gravity_law_note",
-      "to": "mirror_program_synthesis"
-    },
-    {
-      "from": "mirror_2d_validation_note",
       "to": "mirror_program_synthesis"
     },
     {
@@ -45445,7 +45453,7 @@
       "helper_runner_paths": [
         "scripts/_frontier_loader.py"
       ],
-      "note_hash": "971844bf43674ec70b8cbc665c6dd36f5f285d7f95d159f45b044ebe741a176d",
+      "note_hash": "80d40e2058e9ec979324f5a1900a1f472f60bea30990f5c308a4843fbe2d4e17",
       "path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
       "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
       "title": "Coarse-Grained Exterior Law Helper Module"
@@ -46603,7 +46611,7 @@
         "scripts/frontier_dirac_walk_3plus1d_v2.py",
         "scripts/frontier_dirac_walk_3plus1d_v3.py"
       ],
-      "note_hash": "815ee6c174097f2152ac6c47c471a3adf893aa2649ef0ffc57d144328a57b375",
+      "note_hash": "103c5a9fb9631fa943e2dd5e7b57e504c3a60b1ba978559127e15557dd4cf9ef",
       "path": "docs/DIRAC_OBSERVABLE_PANEL_NOTE.md",
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_observable_panel.py",
       "title": "Dirac Observable Panel Note"
@@ -53535,14 +53543,16 @@
     },
     "g_bare_derivation_status_correction_audit_note_2026-05-02": {
       "claim_id": "g_bare_derivation_status_correction_audit_note_2026-05-02",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "g_bare_derivation_note"
+        "g_bare_derivation_note",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b92c78e0e014fb7d3246e287ded47d1ad4899a141505990273e6abd86d46837f",
+      "note_hash": "f74ffe02c035538b29af80311cdf16ef4b5335d5632a396f465298e8e398efc5",
       "path": "docs/G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_g_bare_derivation_status_audit.py",
       "title": "g_bare Derivation Note \u2014 Status Correction Audit"
@@ -54312,11 +54322,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "gate_b_grown_distance_law_note"
+      ],
       "helper_runner_paths": [
         "scripts/gate_b_grown_joint_package.py"
       ],
-      "note_hash": "d3d7d66dd9b039e700e98d71c2902e209c5aca329b9476cd94aaaeb23ec65031",
+      "note_hash": "50da03c406a1b8ad18b275843751fcab0703f92b7cfd3816908f252ac9cfc857",
       "path": "docs/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER_NOTE.md",
       "runner_path": "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
       "title": "Gate B Non-Label Sign Grown Transfer Note"
@@ -54706,7 +54718,7 @@
         "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
         "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
       ],
-      "note_hash": "5a725424f88fdb080759417871c4845c8aaff57f9c4e725851e1f32ac03eecb8",
+      "note_hash": "c55264bc546aaf9b13218db2878d7f5957d1931b5ad0753f997858631aaedfde",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_2026_04_19.py",
       "title": "Gauge-Vacuum Plaquette First-Sector First-Hankel to DM Boundary"
@@ -57733,16 +57745,19 @@
     },
     "higher_symmetry_joint_validation_note": {
       "claim_id": "higher_symmetry_joint_validation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "mirror_chokepoint_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "d80a32c6feb12021edaf714fe41dd5e39c22839f9815048970709eb5ed2fdcf7",
+      "helper_runner_paths": [
+        "scripts/higher_symmetry_dag.py",
+        "scripts/mirror_chokepoint_joint.py"
+      ],
+      "note_hash": "1fe8df876b5ef7db3ff5e3ffbee4e866d3bbf6359d10d6ad1e4174b63c8bafd5",
       "path": "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/higher_symmetry_joint_validation.py",
       "title": "Higher-Symmetry Joint Validation Note \u2014 Cached N Range (Binding)"
     },
     "holographic_probe_note_2026-04-11": {
@@ -63958,10 +63973,12 @@
       "deps": [
         "mirror_program_synthesis"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "6881ac666a9c4db0608f193026e23b895b8e61accae9ab60bf27b2eacf68847f",
+      "helper_runner_paths": [
+        "scripts/mirror_born_audit.py"
+      ],
+      "note_hash": "81b066f09d0604239005d31648e20dccab294bfe62a0c05edc295a26bddcc7ce",
       "path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
-      "runner_path": "scripts/mirror_born_audit.py",
+      "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Gravity-Law Cleanup Note"
     },
     "mirror_2d_operator_cauchy_note_2026-05-10": {
@@ -63984,13 +64001,13 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "mirror_program_synthesis"
+      "deps": [],
+      "helper_runner_paths": [
+        "scripts/mirror_born_audit.py"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "5c93397cdd2e60cfda3cf5ec00a1d5890c41a7fecb0dfe5b502d5dc735f30332",
+      "note_hash": "af7101b4727e0c23322cf5ad78222bb49d6767de763aa16c5e4a031d47d2b718",
       "path": "docs/MIRROR_2D_VALIDATION_NOTE.md",
-      "runner_path": "scripts/mirror_born_audit.py",
+      "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Validation Note"
     },
     "mirror_chokepoint_boundary_fit_note": {
@@ -68449,7 +68466,7 @@
         "scripts/frontier_pmns_transfer_operator_dominant_mode.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "note_hash": "9973fc9e7b917989b3ba7136b408d71241284957c9650f2151a0ed93402b7f71",
+      "note_hash": "51157f011bf76f4dc3b60170a0e04285445cadf506b63882aa6ceae2d1aa1c43",
       "path": "docs/PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md",
       "runner_path": "scripts/frontier_pmns_hw1_source_transfer_boundary.py",
       "title": "PMNS HW1 Source-Transfer Boundary"
@@ -79357,9 +79374,9 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "eb421e8e1f97fcb6c46a1d200355b1539a419df8702c3c7282799e50329a67d2",
+      "note_hash": "ee8e1829abe154b5d39e705e849c30072449bc8bea2fb44ae499138fb64095d5",
       "path": "docs/UNIVERSAL_GR_INVARIANT_FRAME_OBSTRUCTION_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_universal_gr_invariant_frame_obstruction.py",
       "title": "Universal GR Invariant-Frame Obstruction Note"
     },
     "universal_gr_invariant_nonlinear_completion_note": {
@@ -83965,7 +83982,6 @@
     "gate_b_grown_trapping_transport_note",
     "gate_b_grown_wavefield_companion_note",
     "gate_b_no_restore_joint_package_note",
-    "gate_b_nonlabel_sign_grown_transfer_note",
     "gate_b_poisson_self_gravity_note",
     "gate_b_v6_nearfield_comparator_note",
     "gauge_scalar_temporal_completion_theorem_note",
@@ -84140,6 +84156,7 @@
     "minimal_axioms",
     "minimal_axioms_2026-04-11",
     "mirror_2d_operator_cauchy_note_2026-05-10",
+    "mirror_2d_validation_note",
     "mirror_chokepoint_boundary_fit_note",
     "mirror_grown_combined_note",
     "mirror_mutual_information_canonical_families_note",
@@ -84477,27 +84494,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 538,
+      "bounded_theorem": 540,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
-      "none": 1481,
+      "none": 1479,
       "open_gate": 45,
       "positive_theorem": 174
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 972,
+      "bounded_theorem": 973,
       "decoration": 1,
       "meta": 188,
       "no_go": 172,
-      "none": 437,
+      "none": 436,
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9687,
+    "edge_count": 9689,
     "leaf_count": 764,
     "node_count": 2496,
     "root_count": 823,
-    "runners_with_path": 2057
+    "runners_with_path": 2059
   }
 }

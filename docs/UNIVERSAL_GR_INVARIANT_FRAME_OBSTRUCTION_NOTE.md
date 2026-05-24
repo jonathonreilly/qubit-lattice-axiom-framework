@@ -1,148 +1,143 @@
 # Universal GR Invariant-Frame Obstruction Note
 
 **Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-14  
+**Date:** 2026-04-14 (load-bearing claim narrowed 2026-05-24 per audit verdict)
 **Branch:** `codex/review-active`  
 **Scope:** universal representation/invariant route only  
-**Purpose:** decide whether the universal complement admits a canonical frame
-from representation-theoretic invariants alone
+**Purpose:** record the bounded representation-theoretic obstruction
+information that is algorithmically verified inside the runner.
 
-## Verdict
+**Script:** `scripts/frontier_universal_gr_invariant_frame_obstruction.py`
 
-No canonical complement frame is forced by the current invariant data.
+## 2026-05-24 narrowing — load-bearing claim restricted
 
-The strongest invariant-frame candidate derivable from the present universal
-stack is not a full section of the complement bundle. It is the
+The previous audit on this row returned `audited_conditional` with re-audit
+guidance:
+
+> other: include or cite a retained theorem/runner over the current
+> checkout proving atlas exhaustion and absence of invariant section
+> selectors, and restore or register the weight-decomposition artifact.
+
+This revision narrows the **load-bearing claim** of this row to the
+algorithmically verified bounded facts about the representation-theoretic
+decomposition. Specifically, the load-bearing piece is restricted to the
+runner-verified statements about the `Pi_A1` invariant section, the
+spatial-rotation generator algebra, and the shared-axis weight
+decomposition / weight-1 multiplicity space. The stronger meta-statement
+that "no representation-theoretic invariant in the *current atlas* selects
+a unique universal complement frame" requires an atlas-exhaustion proof
+that this note does not derive from a retained authority and is **demoted
+to a non-load-bearing conditional corollary** for this row's audit scope.
+
+The weight-decomposition artifact is registered by being recomputed live by
+the runner on each invocation; the runner's PASS line "shared-axis
+complement weight decomposition has two weight-1 doublets and one weight-2
+sector" records the explicit weight multiplicities `{0: 4, 1: 4, 2: 2}` and
+doublet counts `{1: 2, 2: 1}` as a runner-attested artifact rather than as
+a file.
+
+## Bounded result (load-bearing, 2026-05-24)
+
+The runner verifies the following facts about the universal complement
+under the canonical lapse/shift/trace/shear basis on the symmetric `3+1`
+sector and the rank-2 invariant projector
+`Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0)`:
+
+1. `Pi_A1` is rank 2 and commutes with the tested spatial rotations to
+   machine precision (Frobenius norm `< 1e-12`).
+2. The full spatial-rotation generator algebra on the universal `3+1`
+   basis has rank 3 and acts nontrivially on the complement
+   (Frobenius norm `> 1e-6` on each axis).
+3. The shared-axis weight decomposition of the universal complement under
+   the residual `SO(2)` stabilizer has weight multiplicities
+   `{0: 4, 1: 4, 2: 2}` — i.e. four invariant directions, two weight-1
+   doublets, and one weight-2 sector.
+4. The two weight-1 doublets sit in a multiplicity space whose real
+   commutant has dimension 8, so the canonical `SO(2)` doublet model does
+   not single out a preferred basis within that block.
+5. The unique symmetric `3+1` quotient kernel has a frame-invariant
+   spectrum (maximum spectral delta under tested rotations is `0` to
+   machine precision).
+
+These are the load-bearing facts of this row. They are exact bounded
+representation-theoretic statements on the canonical basis used inside the
+runner and do not depend on an atlas-exhaustion proof.
+
+## Strongest invariant-frame candidate
+
+The strongest invariant-frame candidate currently supported is the
 `Pi_A1`-anchored orbit bundle:
 
 `P_curv^cand = (Pi_A1, O_{E \oplus T1}, \omega_MC)`
 
-with canonical invariant core
+with the exact residual gauge `SO(3)`.
 
-`Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0)`.
+This is an invariant core plus an orbit bundle. The complement is
+**orbit-canonical** under the verified spatial-rotation generator algebra
+(items 2-4 above) — i.e. on the canonical basis tested by the runner, no
+weight-1 doublet is selected by the canonical `SO(2)` doublet model. The
+runner does not, however, prove an atlas-exhaustion statement that would
+extend this to all representation-theoretic invariants.
 
-That candidate is exact, but it stops at the orbit bundle. The complement is
-still not canonically sectioned.
+## Non-load-bearing remarks (preserved for historical traceability)
 
-## What is exact
+The following remarks are **not** load-bearing for this row per the
+2026-05-24 narrowing. They depend on imports that are not closed here.
 
-The current universal stack already supplies:
+The previous framing of this row asserted as a no-go that
+"representation-theoretic invariants alone do not canonically fix the
+universal complement frame", treating the canonical-basis weight
+decomposition (items 3-4 above) as evidence for an atlas-exhaustion
+conclusion. Under the 2026-05-24 narrowing this stronger meta-statement is
+explicitly **non-load-bearing**: the bounded result this row supports is
+the runner-verified facts on the canonical basis, not an exhaustion claim
+over an unspecified atlas of invariants.
 
-- the exact scalar observable generator `W[J]`;
-- the exact `3+1` background `PL S^3 x R`;
-- the exact tensor-valued variational candidate
-  `S_GR^cand[h] := 1/2 * D^2 W[g_*](h, h)`;
-- the exact unique symmetric `3+1` quotient kernel on the finite prototype;
-- the exact invariant `A1` projector `Pi_A1`;
-- the exact shared-axis weight decomposition of the universal complement.
-
-The invariant section is the rank-2 projector onto:
-
-- lapse `h_00`;
-- spatial trace `tr(h_ij)`.
-
-Those two channels are canonical. The complement is not.
-
-## Weight decomposition
-
-After the shared bright axis is fixed, the universal complement decomposes
-under the residual `SO(2)` stabilizer into:
-
-- four invariant directions;
-- two exact weight-1 doublets;
-- one exact weight-2 sector.
-
-The weight-1 doublets are the crucial point. They are equivalent copies of
-the same `SO(2)` representation, so the multiplicity space is nontrivial.
-Representation-theoretic invariants can identify the isotypic block, but they
-cannot choose a preferred basis within that block.
-
-Equivalently, the normalized lift family
+The shared-axis decomposition's two equivalent weight-1 doublets remain
+the structural obstacle: representation-theoretic invariants on the
+canonical basis can identify the isotypic block but cannot choose a
+preferred basis within that block. Equivalently, the normalized lift
+family
 
 `L_lambda(D) = (cos(lambda) D, sin(lambda) D)`
 
-survives exactly because the weight-1 multiplicity space is not broken by the
-current invariant tensors.
+survives exactly because the weight-1 multiplicity space is not broken by
+the canonical-basis tensors the runner checks.
 
-## Generator algebra
+## What the runner checks
 
-The full spatial rotation algebra on the universal `3+1` basis acts
-nontrivially on the complement and has rank 3 at the Lie-algebra level.
+The runner `frontier_universal_gr_invariant_frame_obstruction.py` performs
+explicit `[PASS]/[FAIL]` checks and emits `PASS=<n> FAIL=<m>`:
 
-What matters is not that the action is small. It is that the action is
-homogeneous:
+- the scalar generator note records the observable-principle output
+  `det(D + J) - det D` (text presence in retained authority note);
+- the `3+1` lift note records the `PL S^3 x R` lift (text presence);
+- the symmetric quotient kernel uniqueness is recorded;
+- `Pi_A1` is exact rank-2, commutes with valid spatial rotations;
+- the complement carries the rank-3 spatial-rotation generator algebra;
+- the shared-axis weight decomposition has the multiplicities above;
+- the weight-1 multiplicity commutant has dimension 8;
+- the quotient-kernel spectrum is frame-invariant;
+- the A1 invariant section note is present and records the lapse / trace
+  identification;
+- the weight decomposition is recorded in this note (text presence) and
+  recomputed by the runner.
 
-- `Pi_A1` is invariant to machine precision;
-- the complement remains an `SO(3)` orbit bundle;
-- no invariant tensor in the current atlas selects a preferred complement
-  axis or a preferred complement section.
-
-So the generator algebra is rich enough to move the complement, but the
-current invariants are not strong enough to canonically pin it down.
-
-## Quotient-kernel spectrum
-
-The unique symmetric `3+1` quotient kernel is nondegenerate on the finite
-prototype.
-
-That is important but not decisive:
-
-- the quotient kernel has no hidden null directions;
-- its spectrum is invariant under valid frame rotations;
-- therefore the spectrum does not break the residual complement orbit.
-
-So quotient-kernel uniqueness does not produce a canonical complement frame.
-It only confirms that the tensor candidate is unique on the symmetric
-quotient.
-
-## Exact obstruction
-
-The exact obstruction is now sharp:
-
-> the current invariant tensors determine the `Pi_A1` core and the orbit
-> bundle on `E \oplus T1`, but they do not determine a canonical section of
-> that bundle.
-
-More explicitly:
-
-1. `Pi_A1` is canonical.
-2. the complement is an `SO(3)` orbit bundle.
-3. the weight-1 complement sectors appear with multiplicity two.
-4. the quotient-kernel spectrum is frame-invariant.
-5. therefore no representation-theoretic invariant in the current atlas
-   selects a unique universal complement frame.
-
-So the strongest exact statement is a no-go:
-
-> representation-theoretic invariants alone do not canonically fix the
-> universal complement frame.
-
-## Strongest candidate
-
-The strongest invariant-frame candidate currently supported is:
-
-`P_curv^cand = (Pi_A1, O_{E \oplus T1}, \omega_MC)`
-
-with the exact residual gauge
-
-`SO(3)`.
-
-This is the best covariant completion available today, but it is not a
-canonical frame. It is an invariant core plus an orbit bundle.
-
-On the shared-axis weight-1 sector, the residual real commutant is 8D, so
-the multiplicity space is large enough to support an entire circle of
-normalized lifts and therefore cannot be canonically sectioned by invariant
-tensors alone.
+A successful run prints `PASS=13 FAIL=0` and exits with status `0`.
 
 ## Honest status
 
-The current universal representation/invariant route is:
+The current universal representation/invariant route is, with respect to
+the runner-verified canonical basis:
 
-- exact at the scalar observable level;
-- exact at the `3+1` kinematic lift level;
-- exact at the symmetric quotient-kernel level;
-- exact at the invariant `A1` projector level;
-- blocked at the canonical complement-frame level.
+- exact at the scalar observable level (imported);
+- exact at the `3+1` kinematic lift level (imported);
+- exact at the symmetric quotient-kernel level (imported);
+- exact at the invariant `A1` projector level (verified by the runner);
+- on the canonical basis tested, the complement is **orbit-canonical**
+  under the tested rotation algebra, not section-canonical (verified by
+  the runner).
 
-The complement is orbit-canonical, not section-canonical.
+The complement is orbit-canonical, not section-canonical, in the bounded
+sense above. The further atlas-exhaustion statement is left explicitly
+open and is not a load-bearing claim of this row.

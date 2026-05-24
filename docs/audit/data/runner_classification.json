@@ -8557,7 +8557,7 @@
       "runner": "scripts/gate_b_nonlabel_connectivity_v3.py"
     },
     "gate_b_nonlabel_sign_grown_transfer_note": {
-      "assert_count": 0,
+      "assert_count": 3,
       "counts": {
         "A": 0,
         "B": 0,
@@ -8824,8 +8824,8 @@
       "assert_count": 2,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 6,
+        "B": 0,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -10703,6 +10703,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/higher_symmetry_gravity_probe.py"
+    },
+    "higher_symmetry_joint_validation_note": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/higher_symmetry_joint_validation.py"
     },
     "holographic_probe_note_2026-04-11": {
       "assert_count": 0,
@@ -14506,7 +14518,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/mirror_born_audit.py"
+      "runner": "scripts/mirror_2d_validation.py"
     },
     "mirror_2d_operator_cauchy_note_2026-05-10": {
       "assert_count": 0,
@@ -14530,7 +14542,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/mirror_born_audit.py"
+      "runner": "scripts/mirror_2d_validation.py"
     },
     "mirror_chokepoint_boundary_fit_note": {
       "assert_count": 1,
@@ -22584,6 +22596,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_universal_gr_discrete_global_closure.py"
     },
+    "universal_gr_invariant_frame_obstruction_note": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_gr_invariant_frame_obstruction.py"
+    },
     "universal_gr_invariant_nonlinear_completion_note": {
       "assert_count": 2,
       "counts": {
@@ -25192,7 +25216,7 @@
       "exists": true
     },
     "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py": {
-      "assert_count": 0,
+      "assert_count": 3,
       "claims": [
         "gate_b_nonlabel_sign_grown_transfer_note"
       ],
@@ -37024,8 +37048,8 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 6,
+        "B": 0,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -47281,6 +47305,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_universal_gr_invariant_frame_obstruction.py": {
+      "assert_count": 2,
+      "claims": [
+        "universal_gr_invariant_frame_obstruction_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_universal_gr_invariant_nonlinear_completion.py": {
       "assert_count": 2,
       "claims": [
@@ -49919,6 +49958,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/higher_symmetry_joint_validation.py": {
+      "assert_count": 0,
+      "claims": [
+        "higher_symmetry_joint_validation_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/hopping_bilinear_hermiticity_check.py": {
       "assert_count": 0,
       "claims": [
@@ -51278,7 +51332,9 @@
       "assert_count": 0,
       "claims": [
         "audited_symmetry_synthesis_note",
-        "lanes.mirror.readme"
+        "lanes.mirror.readme",
+        "mirror_2d_gravity_law_note",
+        "mirror_2d_validation_note"
       ],
       "counts": {
         "A": 0,
@@ -51293,8 +51349,6 @@
     "scripts/mirror_born_audit.py": {
       "assert_count": 0,
       "claims": [
-        "mirror_2d_gravity_law_note",
-        "mirror_2d_validation_note",
         "mirror_program_synthesis"
       ],
       "counts": {
@@ -54024,12 +54078,12 @@
     "dominant_class_distribution": {
       "A": 202,
       "B": 269,
-      "C": 737,
+      "C": 738,
       "D": 296,
-      "none": 433
+      "none": 434
     },
-    "runners_classified": 1937,
-    "runners_with_C": 954,
+    "runners_classified": 1939,
+    "runners_with_C": 955,
     "runners_with_D": 551
   }
 }

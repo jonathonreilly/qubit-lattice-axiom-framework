@@ -68,15 +68,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "three_generation_observable_theorem_note",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional C^3 theorem: for the specified distinct translation-character projectors and cyclic C3 action on H_hw=1, the generated algebra is M_3(C) and no proper quotient preserving that exact algebra exists.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
@@ -86,11 +86,11 @@
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
       ],
       "direct_in_degree": 76,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 47.842,
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "transitive_descendants": 917

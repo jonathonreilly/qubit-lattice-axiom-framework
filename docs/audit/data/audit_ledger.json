@@ -105332,24 +105332,50 @@
       "verdict_rationale": "The proof is class A algebra over retained-grade inputs: finite truncation implies polynomial K, bounded endpoint behavior makes K' constant, and the two endpoint values contradict constancy. The runner's four theorem checks are hard-coded algebraic assertions rather than independent theorem computation, and its three Bessel computations are only support, so the runner is not the source of closure. The no-go discipline gate passes only for the narrow diagonal finite-Taylor/polynomial-generator obstruction; nonpolynomial hierarchy solutions and broader generating representations remain explicitly outside the audited scope."
     },
     "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T17:12:07.909530+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 15.515,
+        "runner_hash": "23bc6ec06fcdfc0fc5083992c43a1daebc59816f8a0b9dff5371db3033f95e66",
+        "transitive_descendants": 1034
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171147Z-716c6853-gauge_vacuum_plaquette_l-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note is explicitly narrowed to the finite coefficient packet, and the provided runner computes the Wilson coefficients from the Bessel-determinant mode sum rather than importing or hard-coding the contested values. It does not claim the still-open actual mixed-kernel compression bridge.",
       "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-      "claim_scope": "Bounded finite packet on the runner's dominant-weight box at beta = 6 and MODE_MAX = 80: normalized SU(3) one-link coefficients, their fourth-power diagonal local packet, and finite algebraic checks for exp(3J)D_6^loc exp(3J).",
+      "claim_scope": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-24T17:11:19.546989+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-24T17:12:07.909530+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -105364,8 +105390,19 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-24T17:12:07.909530+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171147Z-716c6853-gauge_vacuum_plaquette_l-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -105374,19 +105411,19 @@
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "direct_in_degree": 11,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 15.515,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner computes normalized one-link Wilson coefficients a_(p,q)(6), builds D_6^loc = diag(a_(p,q)(6)^4), and checks the finite package K_6^loc = exp(3J) D_6^loc exp(3J) on the finite dominant-weight box.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "60320924a5f5df33740f40d79397ad5ce8a17d1ca55ab9e6754e60f5b2a98403",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the Bessel-determinant identity and truncation error assumptions if promoting beyond the finite packet scope.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -105697,18 +105734,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 3,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
       "title": "Gauge-Vacuum Plaquette Local Wilson Factor Finite Packet",
       "transitive_descendants": 1034,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the narrowed bounded scope, the load-bearing finite computation is directly implemented in the runner and the remaining checks are algebraic properties of the constructed finite matrices. The cited authorities are retained-grade or retained_bounded, and the note does not rely on their open stronger mixed-kernel claims. The runner includes no helper opacity and no hard-coded expected coefficient table."
     },
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note": {
       "audit_date": "2026-05-23T13:42:09.474185+00:00",

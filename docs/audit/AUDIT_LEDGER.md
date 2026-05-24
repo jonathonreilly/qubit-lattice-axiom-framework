@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 389 |
+| **retained_bounded** | 390 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1290 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -50,8 +49,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 656 |
+| `audited_clean` | 657 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 47 |
@@ -122,7 +120,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -326,6 +323,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -4620,6 +4618,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If the diagonal hierarchy truncated exactly at finite order, finite Taylor support would make K(t) a global polynomial, so P(t)=K'(t)/N_plaq would be a polynomial with a finite limit at infinity and hence constant, contradicting P(0)=0 and lim P(t)=1.  _(class `A`)_
 - **chain closes:** True — The cited retained_bounded lemma note supplies the endpoint identities, global finite-Taylor-support-to-polynomial implication, and polynomial-growth lemma; the retained reduction note is redundant context for the same endpoint behavior. Under that scoped notion of truncation, the contradiction is elementary and no beta=6 closure or external comparator is used.
 - **rationale:** The proof is class A algebra over retained-grade inputs: finite truncation implies polynomial K, bounded endpoint behavior makes K' constant, and the two endpoint values contradict constancy. The runner's four theorem checks are hard-coded algebraic assertions rather than independent theorem computation, and its three Bessel computations are only support, so the runner is not the source of closure. The no-go discipline gate passes only for the narrow diagonal finite-Taylor/polynomial-generator obstruction; nonpolynomial hierarchy solutions and broader generating representations remain explicitly outside the audited scope.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_local_environment_factorization_theorem_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T171147Z-716c6853-gauge_vacuum_plaquette_l-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The runner computes normalized one-link Wilson coefficients a_(p,q)(6), builds D_6^loc = diag(a_(p,q)(6)^4), and checks the finite package K_6^loc = exp(3J) D_6^loc exp(3J) on the finite dominant-weight box.  _(class `C`)_
+- **chain closes:** True — The source note is explicitly narrowed to the finite coefficient packet, and the provided runner computes the Wilson coefficients from the Bessel-determinant mode sum rather than importing or hard-coding the contested values. It does not claim the still-open actual mixed-kernel compression bridge.
+- **rationale:** Within the narrowed bounded scope, the load-bearing finite computation is directly implemented in the runner and the remaining checks are algebraic properties of the constructed finite matrices. The cited authorities are retained-grade or retained_bounded, and the note does not rely on their open stronger mixed-kernel claims. The runner includes no helper opacity and no hard-coded expected coefficient table.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_mixed_cumulant_audit_note`

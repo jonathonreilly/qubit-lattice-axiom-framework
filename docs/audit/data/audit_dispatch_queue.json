@@ -1015,11 +1015,7 @@
       "audit_question": "Can the exact minimal distinct-shell geometry around a marked plaquette on the accepted Wilson 3+1 surface be reclassified as positive_theorem while leaving full reduction-law and beta=6 continuation open?",
       "blocked_by_group_ids": [],
       "claim_id": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
-      "deps": [
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "g_bare_derivation_note"
-      ],
+      "deps": [],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
       "expected_current_audit_status": "audited_clean",

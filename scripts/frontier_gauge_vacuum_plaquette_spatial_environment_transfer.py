@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Finite class-sector witness for the spatial-environment transfer theorem on the
-plaquette route on the accepted Wilson 3+1 surface.
+Finite class-sector transfer witness for the plaquette route.
 
-This does not close analytic P(6), and it is not the fully explicit beta=6
-environment solve. It only witnesses the structural theorem that the boundary
-character data of the unmarked spatial Wilson environment arise from one
-positive spatial transfer law rather than an arbitrary positive sequence.
+This does not close analytic P(6), identify the actual unmarked spatial Wilson
+environment, or compute physical beta=6 boundary data. It only checks one
+bounded transfer-amplitude packet: a constructed positive self-adjoint
+class-sector transfer witness, a finite boundary vector, and the normalized
+boundary-amplitude sequence generated from them.
 """
 
 from __future__ import annotations
@@ -21,6 +21,7 @@ FAIL = 0
 NMAX = 5
 ETA = 0.32
 DEPTH = 3
+TOL = 1.0e-14
 
 
 def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
@@ -111,76 +112,79 @@ def main() -> int:
     boundary = matrix_exponential_symmetric(jmat, 0.5 * ETA) @ eta0
 
     amp = np.linalg.matrix_power(spatial_transfer, DEPTH) @ boundary
-    z_env = amp.copy()
-    rho_env = z_env / z_env[index[(0, 0)]]
+    z_packet = amp.copy()
+    rho_packet = z_packet / z_packet[index[(0, 0)]]
 
     transfer_sym = float(np.max(np.abs(spatial_transfer - spatial_transfer.T)))
     transfer_swap = float(np.max(np.abs(swap @ spatial_transfer - spatial_transfer @ swap)))
     boundary_swap = float(np.max(np.abs(swap @ boundary - boundary)))
-    z_swap = float(np.max(np.abs(swap @ z_env - z_env)))
-    z_min = float(np.min(z_env))
-    rho_min = float(np.min(rho_env))
+    boundary_min = float(np.min(boundary))
+    z_swap = float(np.max(np.abs(swap @ z_packet - z_packet)))
+    z_min = float(np.min(z_packet))
+    rho_min = float(np.min(rho_packet))
 
     _, psi = dominant_eigenpair(spatial_transfer)
     overlap = float(np.dot(psi, amp) / (np.linalg.norm(psi) * np.linalg.norm(amp)))
     expectation = float(psi @ (jmat @ psi))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE SPATIAL ENVIRONMENT TRANSFER")
+    print("GAUGE-VACUUM PLAQUETTE SPATIAL ENVIRONMENT TRANSFER WITNESS")
     print("=" * 78)
     print()
-    print("Exact class-sector pieces already fixed")
+    print("Finite class-sector witness pieces")
     print(f"  source-operator symmetry error        = {float(np.max(np.abs(jmat - jmat.T))):.3e}")
     print(f"  spatial transfer symmetry error       = {transfer_sym:.3e}")
     print(f"  spatial transfer swap error           = {transfer_swap:.3e}")
     print()
-    print("Boundary-amplitude realization")
-    print(f"  orthogonal spatial depth              = {DEPTH}")
+    print("Constructed boundary-amplitude packet")
+    print(f"  witness depth                         = {DEPTH}")
+    print(f"  positivity tolerance                  = {TOL:.1e}")
+    print(f"  boundary minimum entry                = {boundary_min:.3e}")
     print(f"  boundary swap error                   = {boundary_swap:.3e}")
-    print(f"  z_env min / max                       = {z_min:.12f}, {float(np.max(z_env)):.12f}")
-    print(f"  rho_env min / max                     = {rho_min:.12f}, {float(np.max(rho_env)):.12f}")
+    print(f"  z_packet min / max                    = {z_min:.12f}, {float(np.max(z_packet)):.12f}")
+    print(f"  rho_packet min / max                  = {rho_min:.12f}, {float(np.max(rho_packet)):.12f}")
     print(f"  coefficient swap error                = {z_swap:.3e}")
     print()
-    print("Spatial Perron witness")
+    print("Finite Perron witness")
     print(f"  Perron overlap with boundary amplitude= {overlap:.12f}")
     print(f"  Perron <J>                            = {expectation:.12f}")
     print()
 
     check(
-        "the unmarked spatial environment admits a positive self-adjoint conjugation-symmetric transfer operator on the class sector",
-        transfer_sym < 1.0e-12 and transfer_swap < 1.0e-12 and float(np.min(np.linalg.eigvalsh(spatial_transfer))) > 0.0,
-        detail="the orthogonal spatial split produces one explicit positive symmetric transfer witness",
+        "the finite packet has a positive self-adjoint conjugation-symmetric transfer witness on the class sector",
+        transfer_sym < TOL and transfer_swap < TOL and float(np.min(np.linalg.eigvalsh(spatial_transfer))) > 0.0,
+        detail="the constructed class-sector packet is one explicit positive symmetric transfer witness",
     )
     check(
-        "the marked-rim boundary state is positive and conjugation-symmetric",
-        boundary_swap < 1.0e-12 and float(np.min(boundary)) >= 0.0,
-        detail=f"minimum boundary amplitude={float(np.min(boundary)):.6e}",
+        "the finite boundary vector is nonnegative to roundoff tolerance and conjugation-symmetric",
+        boundary_swap < TOL and boundary_min >= -TOL,
+        detail=f"minimum boundary amplitude={boundary_min:.6e}, tolerance={TOL:.1e}",
     )
     check(
-        "the environment character coefficients are exact boundary amplitudes of the spatial transfer operator",
-        z_min > 0.0 and z_swap < 1.0e-12,
-        detail="z_(p,q)^env is realized as a matrix-element sequence of one explicit positive spatial transfer operator",
+        "the finite packet coefficients are boundary amplitudes of the constructed transfer witness",
+        z_min > 0.0 and z_swap < TOL,
+        detail="z_packet is realized as a matrix-element sequence of one explicit positive transfer witness",
     )
     check(
-        "the normalized boundary character data rho_(p,q)(6) are therefore not a generic free positive sequence",
-        rho_min > 0.0 and abs(rho_env[index[(0, 0)]] - 1.0) < 1.0e-12,
-        detail="once the spatial transfer law is fixed, rho_(p,q)(6) is a normalized boundary-amplitude sequence",
+        "the normalized finite packet rho_packet is not a generic free positive sequence",
+        rho_min > 0.0 and abs(rho_packet[index[(0, 0)]] - 1.0) < TOL,
+        detail="once the finite witness is fixed, rho_packet is a normalized boundary-amplitude sequence",
     )
 
     check(
-        "the explicit boundary-amplitude sequence remains positivity-compatible on the truncated class sector",
+        "the constructed boundary-amplitude sequence remains positivity-compatible on the truncated class sector",
         z_min > 0.0,
         detail=f"minimum boundary amplitude={z_min:.3e}",
         bucket="SUPPORT",
     )
     check(
-        "the same orthogonal spatial transfer law can be reused as an atlas tool distinct from the local mixed-kernel factor",
-        float(np.max(np.abs(rho_env - 1.0))) > 1.0e-3,
-        detail="the remaining datum lives in the spatial environment transfer amplitudes, not in D_6^loc",
+        "the finite transfer witness is distinct from a trivial all-ones coefficient packet",
+        float(np.max(np.abs(rho_packet - 1.0))) > 1.0e-3,
+        detail="the constructed packet has nontrivial boundary-amplitude structure",
         bucket="SUPPORT",
     )
     check(
-        "once the spatial transfer operator is explicit, the remaining framework-point target is its boundary-state / Perron data",
+        "the finite witness localizes the harder framework-point target to actual Wilson-environment boundary-state / Perron data",
         overlap > 0.0 and expectation > 0.0,
         detail=f"Perron overlap={overlap:.6f}, Perron <J>={expectation:.6f}",
         bucket="SUPPORT",

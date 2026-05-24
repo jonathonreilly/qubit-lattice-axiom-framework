@@ -192718,24 +192718,42 @@
       "verdict_rationale": null
     },
     "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T17:20:32.978474+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 10.219,
+        "runner_hash": "48ac95fca09d98a968eefee0465fb117ae4f76e88ad4aa3b4fe76c03ed64155c",
+        "transitive_descendants": 148
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T172008Z-120cbe1f-plaquette_v1_picard_fuch-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed finite-window scope, the runner source genuinely constructs the truncated Bessel-determinant series with exact rational arithmetic and performs exact residual, recurrence, and rank/nullspace checks. The note explicitly excludes the all-order minimality and unbounded lower-order-exclusion interpretations that would require external bridge machinery.",
       "claim_id": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-      "claim_scope": null,
+      "claim_scope": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-24T17:20:32.978474+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -192743,19 +192761,19 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.219,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner computes the Bessel-determinant Taylor coefficients exactly to depth 40 and verifies certificates [A]-[E]: Taylor annihilation through beta^36, recurrence consistency, checked lower-order exclusion, 1D kernel matching L at (r=3,d=2), and higher-degree kernel dimensions through d=6.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "e0c803319ef4557121b88993510ada53132694bffa040bfc16c0bf4121dbceab",
       "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that treating the Bars Bessel-determinant identity as an accepted input is consistent with the audit packet policy for this row.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -192862,18 +192880,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Finite-Window Certificate Note",
       "transitive_descendants": 148,
-      "verdict_rationale": null
+      "verdict_rationale": "The audited claim is bounded to the exact finite computations performed by the runner, and the supplied source code supports the stdout rather than merely printing expected constants. The only note-path cited authority is retained_bounded, and the load-bearing checks are algebraic finite-window verifications over exact rational data. The runner does rely on the Bessel-determinant representation as an input identity, but for the stated finite certificate it does not claim all-order Picard-Fuchs closure or minimality beyond the checked window."
     },
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05": {
       "audit_date": "2026-05-17T12:37:35.137551+00:00",

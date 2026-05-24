@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 410 |
+| **retained_bounded** | 411 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1261 |
+| unaudited | 1260 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 680 |
+| `audited_clean` | 681 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1487 |
+| `unaudited` | 1486 |
 
 | claim_type | count |
 |---|---:|
@@ -462,6 +462,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_light_cone_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_nn_rg_alpha_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_symmetry_unification_decision_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_weak_field_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_weak_field_purity_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -7129,6 +7130,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The runner-computed finite rows show Born errors below 1e-10 through h = 0.25 for all three schedules, while all schedules fail at h = 0.125 and the fitted exponents are only descriptive across sign-changing gravity rows.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the nearest-neighbor lattice, propagates amplitudes, computes gravity, MI, purity, d_TV, Born residuals, and descriptive power fits directly from the stated harness rather than printing hard-coded target values. The note's conclusion is bounded to the finite retained window and explicitly does not promote the continuum/RG claim.
 - **rationale:** The load-bearing evidence is a direct computation in the included runner, and the stdout matches the source note tables and caveats. No cited upstream dependency is required for the narrowed claim, and the runner does not hard-code the contested finite-row outcomes. The claim boundary is appropriately limited to a finite-resolution Born-clean refinement window plus a negative/inconclusive statement about simple RG-style scaling, not a finished continuum theorem.
+- **auditor confidence:** high
+
+### `lattice_nn_rg_reconciliation_note`
+
+- **Note:** [`LATTICE_NN_RG_RECONCILIATION_NOTE.md`](../../docs/LATTICE_NN_RG_RECONCILIATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the reconciliation note's bounded synthesis: raw NN refinement is Born-clean through h = 0.125, alpha = 1.5 is the best measured sweep value, and RG/continuum claims remain unsupported by the provided artifacts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T180740Z-45491bd2-lattice_nn_rg_reconcilia-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The canonical artifact-backed statement is that the raw nearest-neighbor lattice is Born-clean through h = 0.125 by the high-precision raw-kernel certificate, while the RG-style schedule and alpha-sweep evidence remains only suggestive and does not establish a continuum/RG result.  _(class `B`)_
+- **chain closes:** True — The cited retained-grade notes and included runner output support the bounded reconciliation exactly: the high-precision runner computes the raw h = 0.125 row, while the RG gravity and alpha-sweep notes preserve the open RG/continuum caveats. No unsupported alpha = 2.0 or continuum-complete claim is imported.
+- **rationale:** All cited authorities are retained-grade or retained-bounded, and the primary runner source genuinely computes the raw NN observables at h = 0.125 rather than merely printing constants. The note itself is a bounded cross-note reconciliation rather than a new first-principles theorem, but its conclusion follows from the provided retained inputs and the included successful raw-kernel certificate. The RG caveat is also supported by the cited RG gravity and alpha-sweep notes.
 - **auditor confidence:** high
 
 ### `lattice_symmetry_unification_decision_note`

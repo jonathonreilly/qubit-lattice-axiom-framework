@@ -1337,10 +1337,6 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
-      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "to": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-    },
-    {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
@@ -6687,10 +6683,6 @@
     {
       "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
-    },
-    {
-      "from": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
     },
     {
       "from": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
@@ -18805,14 +18797,6 @@
       "to": "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
     },
     {
-      "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-      "to": "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10"
-    },
-    {
-      "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-      "to": "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
-    },
-    {
       "from": "nn_lattice_rescaled_c_arm_nlo_saddle_note_2026-05-10",
       "to": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
     },
@@ -24069,10 +24053,6 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
-      "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-    },
-    {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "to": "left_handed_charge_matching_note"
     },
@@ -26258,15 +26238,7 @@
     },
     {
       "from": "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-      "to": "wave_direct_dm_h025_fam2_seed0_boundary_note"
-    },
-    {
-      "from": "wave_direct_dm_h025_fam2_two_point_synthesis_note",
       "to": "wave_direct_dm_h025_fam2_seed0_control_note"
-    },
-    {
-      "from": "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-      "to": "wave_direct_dm_h025_fam2_seed1_followup_note"
     },
     {
       "from": "wave_direct_dm_h025_fam3_seed0_control_note",
@@ -41777,11 +41749,9 @@
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "bdb76f3ccc308b983ffd5a1f3e64a06ecc85b152b304b30041bdee005dde5108",
+      "note_hash": "0b8dcf761a496990a238390d087172584c99181ac16066f0826f33c24e702327",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"
@@ -48321,7 +48291,6 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16",
         "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
         "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
         "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16"
@@ -48333,7 +48302,7 @@
         "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "note_hash": "ef9db5746dbfb9c696c9d0e4b491676d0ed963378c271ee7955502fbd26a30d7",
+      "note_hash": "776d5423579af9386090ae17e464196ee7e686f31439d4e90ab4cce7a71be4fe",
       "path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem"
@@ -66005,12 +65974,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lattice_nn_deterministic_rescale_note",
-        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
+        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "90227e83c00337818f48a918480a37a832495a6f3c0b486fa706070ff7d6bf4d",
+      "note_hash": "0cb68d60f12f72b5a0caabc89320a9f21ed4c9d29291a1bfcf7627ce0cf6d926",
       "path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note"
@@ -76933,11 +76900,10 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "minimal_axioms_2026-04-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "908367e1e75df3b7b7d32f403fce914da8789d85e02ad0d9afc55aced7ee8391",
+      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
@@ -80589,12 +80555,10 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_fam2_seed0_boundary_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed1_followup_note"
+        "wave_direct_dm_h025_fam2_seed0_control_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b89a7ae11c7e22381cc00dd99c90346e38a3c119497e7c6005659e5f071d686d",
+      "note_hash": "7421f5597882251be66eed2dd600273da117a262f7df1199fb2b1cf97250f363",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md",
       "runner_path": null,
       "title": "Wave Direct-dM H=0.25 Fam2 Two-Point Synthesis Note"
@@ -83819,6 +83783,7 @@
     "audit_structural_issues_snapshot_2026-05-17",
     "axiom_change_proposal_2026-04-10",
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
     "background_independence_note",
     "bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10",
@@ -84540,10 +84505,10 @@
       "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9698,
-    "leaf_count": 762,
+    "edge_count": 9691,
+    "leaf_count": 763,
     "node_count": 2495,
-    "root_count": 821,
+    "root_count": 822,
     "runners_with_path": 2056
   }
 }

@@ -13427,21 +13427,19 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-      ],
-      "direct_in_degree": 34,
+      "deps": [],
+      "direct_in_degree": 33,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 26.807,
+      "load_bearing_score": 26.306,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "bdb76f3ccc308b983ffd5a1f3e64a06ecc85b152b304b30041bdee005dde5108",
+      "note_hash": "0b8dcf761a496990a238390d087172584c99181ac16066f0826f33c24e702327",
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -13839,7 +13837,7 @@
       },
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action",
-      "transitive_descendants": 895,
+      "transitive_descendants": 894,
       "verdict_rationale": null
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
@@ -59583,7 +59581,7 @@
       "deps": [
         "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 8,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -59594,7 +59592,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.389,
+      "load_bearing_score": 11.877,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -59762,7 +59760,7 @@
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py",
       "title": "DM Leptogenesis PMNS Observable-Relative-Action Law",
-      "transitive_descendants": 236,
+      "transitive_descendants": 234,
       "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_note_2026-05-17": {
@@ -60737,7 +60735,6 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16",
         "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
         "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
         "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16"
@@ -60759,7 +60756,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "ef9db5746dbfb9c696c9d0e4b491676d0ed963378c271ee7955502fbd26a30d7",
+      "note_hash": "776d5423579af9386090ae17e464196ee7e686f31439d4e90ab4cce7a71be4fe",
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -167141,7 +167138,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 39.898,
+      "load_bearing_score": 39.881,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -167388,7 +167385,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Inputs (SUPERSEDED)",
-      "transitive_descendants": 953,
+      "transitive_descendants": 942,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-05-03": {
@@ -179765,14 +179762,14 @@
       "claim_type_author_hint_raw": "bounded_theorem (alpha-constrained residual-closure diagnostic",
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "author_hint",
-      "criticality": "medium",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "nn_lattice_rescaled_continuum_identification_note_2026-05-10",
         "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -179780,7 +179777,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 3.585,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -179801,7 +179798,7 @@
       },
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_alpha_constrained_refit.py",
       "title": "Rescaled NN Lattice C_arm Alpha-Constrained Refit Note",
-      "transitive_descendants": 5,
+      "transitive_descendants": 1,
       "verdict_rationale": null
     },
     "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10_note_2026-05-17": {
@@ -179879,9 +179876,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "lattice_nn_deterministic_rescale_note",
-        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
+        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
       "direct_in_degree": 5,
       "effective_status": "unaudited",
@@ -179894,7 +179889,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "90227e83c00337818f48a918480a37a832495a6f3c0b486fa706070ff7d6bf4d",
+      "note_hash": "0cb68d60f12f72b5a0caabc89320a9f21ed4c9d29291a1bfcf7627ce0cf6d926",
       "note_path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -180089,7 +180084,7 @@
       "claim_type_author_hint_raw": "bounded_theorem (NLO saddle correction predicts the right",
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "author_hint",
-      "criticality": "medium",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
@@ -180103,7 +180098,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 3.085,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -180124,7 +180119,7 @@
       },
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_NLO_saddle.py",
       "title": "Rescaled NN Lattice C_arm Next-to-Leading-Order Saddle Note",
-      "transitive_descendants": 5,
+      "transitive_descendants": 1,
       "verdict_rationale": null
     },
     "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10": {
@@ -180144,7 +180139,7 @@
       "claim_type_author_hint_raw": "bounded_theorem (finite-slit-aperture NNLO correction matches",
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "author_hint",
-      "criticality": "medium",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
@@ -180153,13 +180148,13 @@
         "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10",
         "nn_lattice_rescaled_c_arm_nlo_saddle_note_2026-05-10"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 0,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 3.085,
+      "load_bearing_score": 0.0,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -180180,7 +180175,7 @@
       },
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_NNLO_saddle.py",
       "title": "NN Lattice Rescaled-Lane C_arm NNLO Saddle Note (2026-05-10)",
-      "transitive_descendants": 5,
+      "transitive_descendants": 0,
       "verdict_rationale": null
     },
     "nn_lattice_rescaled_continuum_identification_note_2026-05-10": {
@@ -245359,21 +245354,20 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-04-11",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "minimal_axioms_2026-04-11"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.307,
+      "load_bearing_score": 10.785,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "908367e1e75df3b7b7d32f403fce914da8789d85e02ad0d9afc55aced7ee8391",
+      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
       "note_path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -245599,7 +245593,7 @@
       },
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note",
-      "transitive_descendants": 895,
+      "transitive_descendants": 881,
       "verdict_rationale": null
     },
     "stale_narrative_review_2026-05-03": {
@@ -273350,7 +273344,7 @@
         "wave_direct_dm_h025_fam2_seed0_control_note",
         "wave_direct_dm_h025_fam2_two_point_synthesis_note"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -273359,7 +273353,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 5.748,
+      "load_bearing_score": 4.585,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -273406,7 +273400,7 @@
       },
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Boundary Note",
-      "transitive_descendants": 18,
+      "transitive_descendants": 11,
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note_2026-05-17": {
@@ -273729,7 +273723,7 @@
         "wave_direct_dm_h025_fam2_seed0_control_note",
         "wave_direct_dm_h025_fam2_two_point_synthesis_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -273738,7 +273732,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 5.248,
+      "load_bearing_score": 3.959,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -273810,7 +273804,7 @@
       },
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed1 Follow-Up Note",
-      "transitive_descendants": 18,
+      "transitive_descendants": 10,
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_seed1_followup_note_2026-05-17": {
@@ -273888,9 +273882,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_fam2_seed0_boundary_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed1_followup_note"
+        "wave_direct_dm_h025_fam2_seed0_control_note"
       ],
       "direct_in_degree": 7,
       "effective_status": "unaudited",
@@ -273903,7 +273895,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "b89a7ae11c7e22381cc00dd99c90346e38a3c119497e7c6005659e5f071d686d",
+      "note_hash": "7421f5597882251be66eed2dd600273da117a262f7df1199fb2b1cf97250f363",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

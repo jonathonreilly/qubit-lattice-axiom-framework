@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 274,
+    "critical": 273,
     "high": 346,
     "leaf": 334,
     "medium": 336
@@ -166,30 +166,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-      "claim_scope": "A finite constructed class-sector transfer witness on the dominant-weight box 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment transfer theorem.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
-      ],
-      "direct_in_degree": 11,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.514,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py",
-      "transitive_descendants": 1033
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -18612,6 +18588,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.022,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+      "transitive_descendants": 64
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -19818,30 +19818,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_quark_up_amplitude_two_step_native_scan.py",
       "transitive_descendants": 65
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.022,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-      "transitive_descendants": 64
     },
     {
       "audit_independence_required": "any_non_self",
@@ -38816,5 +38792,5 @@
     }
   ],
   "ready_count": 24,
-  "total_pending": 1290
+  "total_pending": 1289
 }

@@ -108038,24 +108038,42 @@
       "verdict_rationale": "The claim has been narrowed to the exact finite tensor-word packet already retained upstream, and both cited authorities are retained_bounded. The primary runner is not a print-only certificate: it computes Bessel-determinant Wilson coefficients, builds SU(3) fundamental/anti-fundamental recurrence matrices, forms the tensor word, and checks the advertised finite properties. No external comparator or open full-environment identity is used as load-bearing for the bounded claim."
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T17:14:32.215497+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
+        ],
+        "load_bearing_score": 15.514,
+        "runner_hash": "e39b9c01562aa2854c181ec9f67bfb4f56985ccf8262d8479c07684ba8fee74e",
+        "transitive_descendants": 1033
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171337Z-fe3f8698-gauge_vacuum_plaquette_s-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed finite scope, the runner source genuinely constructs the recurrence matrix, transfer witness, boundary vector, and boundary-amplitude sequence, then checks the claimed finite properties. The full Wilson-environment transfer identity is explicitly outside the audited claim scope.",
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-      "claim_scope": "A finite constructed class-sector transfer witness on the dominant-weight box 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment transfer theorem.",
+      "claim_scope": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-24T17:13:10.159422+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-24T17:14:32.215497+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -108070,27 +108088,38 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-24T17:14:32.215497+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171337Z-fe3f8698-gauge_vacuum_plaquette_s-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
       ],
       "direct_in_degree": 11,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 15.514,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner constructs S_packet = exp(ETA J) D_packet exp(ETA J), eta_packet = exp(ETA J / 2) e_(0,0), and z_packet = S_packet^DEPTH eta_packet, then verifies the finite positivity, symmetry, normalization, and Perron-overlap properties.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "a98467d43625e81abfef947af2af0ca62213490d82bbb1431bfa5b7ff93c808b",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers do not treat this finite constructed witness as evidence for the actual unmarked spatial Wilson environment transfer operator.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -108224,18 +108253,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 7,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py",
       "title": "Gauge-Vacuum Plaquette Spatial Environment Transfer Finite Witness Packet",
       "transitive_descendants": 1033,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note\u2019s load-bearing claim is only the existence and verification of one finite constructed witness packet, and the provided runner actually computes that packet rather than importing or printing contested constants. The cited upstream authority is retained_bounded, and the open full Wilson-environment bridge is not used as a premise for this bounded claim. The conclusion therefore closes on its own finite terms while preserving the stated exclusions."
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": {
       "audit_date": null,

@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py
+runner_sha256: 8e20d34262b9c73113240f99bb045a5f3424e990044f24a68db9821e441598b6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+============================================================================
+UNITARY/ANTIUNITARY AXIS-PERMUTATION SPLIT: omega = qubit i
+============================================================================
+
+----------------------------------------------------------------------------
+Cl(3,0) generators and volume form omega = e1 e2 e3
+----------------------------------------------------------------------------
+  [PASS] e1^2 = I
+  [PASS] e2^2 = I
+  [PASS] e3^2 = I
+  [PASS] {e1,e2} = 0 (anticommute)
+  [PASS] {e1,e3} = 0 (anticommute)
+  [PASS] {e2,e3} = 0 (anticommute)
+  [PASS] omega = e1 e2 e3 = i*I  (spatial volume form IS the qubit complex unit)  (omega = +iI)
+  [PASS] omega^2 = -I
+  [PASS] omega is central (commutes with every generator)
+
+----------------------------------------------------------------------------
+Axis permutation sigma sends omega -> sgn(sigma) * omega
+----------------------------------------------------------------------------
+  [PASS] (0, 1, 2) (identity): e_s1 e_s2 e_s3 = +1*omega
+  [PASS] (0, 2, 1) (transposition): e_s1 e_s2 e_s3 = -1*omega
+  [PASS] (1, 0, 2) (transposition): e_s1 e_s2 e_s3 = -1*omega
+  [PASS] (1, 2, 0) (3-cycle): e_s1 e_s2 e_s3 = +1*omega
+  [PASS] (2, 0, 1) (3-cycle): e_s1 e_s2 e_s3 = +1*omega
+  [PASS] (2, 1, 0) (transposition): e_s1 e_s2 e_s3 = -1*omega
+
+----------------------------------------------------------------------------
+C_3 is unitary (preserves i); transpositions are not C-linear unitary
+----------------------------------------------------------------------------
+  [PASS] U is unitary
+  [PASS] explicit unitary U realizes the 3-cycle (U e_i U+ = e_{i+1})
+  [PASS] U preserves omega = i*I (unitary => C-linear => i fixed)
+
+----------------------------------------------------------------------------
+No-unitary lemma for transpositions (sgn = -1)
+----------------------------------------------------------------------------
+  [PASS] a C-linear unitary realizing a transposition would force iI = -iI (impossible)  (so odd permutations require an orientation-reversing/conjugate-linear step)
+  [PASS] complex conjugation (antiunitary) sends omega = iI -> -iI
+
+============================================================================
+VERDICT
+============================================================================
+  The spatial volume form e1 e2 e3 equals i*I: the orientation of the
+  three axes is the qubit complex unit on the fixed Pauli representation.
+  An axis permutation sigma conjugates it by sgn(sigma). Unitary
+  (C-linear) symmetries preserve i*I, so they realize only sgn=+1 = C_3;
+  the orientation-reversing transpositions (sgn=-1) send i -> -i and
+  cannot be C-linear unitary on this fixed generator triple.
+
+  Honest consequence: C_3 is the unitary axis-permutation subgroup.
+  Using this as the physical S_3 -> C_3 selector still requires the
+  separate bridge/premise that the relevant generation-sector symmetry
+  must be unitary rather than antiunitary/orientation-reversing.
+
+============================================================================
+PASS=20 FAIL=0
+
+----- stderr -----
+

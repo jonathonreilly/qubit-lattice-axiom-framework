@@ -1,10 +1,27 @@
-# Gauge-Vacuum Plaquette Susceptibility-Flow Theorem
+# Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet
 
 **Date:** 2026-04-16
-**Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** (1) staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`); (2) g_bare = 1 derivation target (canonical parent: [`G_BARE_DERIVATION_NOTE.md`](G_BARE_DERIVATION_NOTE.md)).
-**Status:** support - exact nonperturbative flow theorem for the implicit plaquette reduction law on finite Wilson evaluation surfaces; explicit closure at `beta = 6` still open
+**Type:** bounded_theorem
+**Status:** bounded support theorem for the implicit plaquette-reduction flow on finite Wilson evaluation surfaces; explicit closure at `beta = 6` still open
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py`
+
+## Load-bearing claim scope
+
+This packet proves the finite transport identity that follows once a finite
+Wilson plaquette reduction map exists:
+
+- [GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
+  supplies the retained finite implicit map
+  `P_L(beta) = P_1plaq(beta_eff,L(beta))`;
+- [GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
+  supplies the retained first nonlinear coefficient used for the onset
+  cross-check;
+- the runner computes the one-plaquette Bessel sum and the local inverse
+  parameter directly inside this packet.
+
+No staggered-Dirac realization, `g_bare` normalization, physical Wilson
+coupling derivation, bridge-support stack, or beta-6 closed-form plaquette
+value is a premise of this bounded theorem.
 
 ## Question
 
@@ -39,7 +56,7 @@ and therefore
 So the remaining open object is now even sharper:
 
 > derive the full connected Wilson plaquette susceptibility profile
-> `chi_L(beta)` on the accepted `3 spatial + 1 derived-time` surface.
+> `chi_L(beta)` on the finite Wilson evaluation surface.
 
 That would close the explicit nonperturbative reduction law.
 
@@ -83,7 +100,7 @@ finite Wilson evaluation surface.
 
 ## Theorem 2: exact nonperturbative flow law for `beta_eff,L`
 
-The previously closed exact implicit reduction law
+The retained exact implicit reduction law
 
 `P_L(beta) = P_1plaq(beta_eff,L(beta))`
 
@@ -176,21 +193,3 @@ python3 scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py
 Expected summary:
 
 - `THEOREM PASS=5 SUPPORT=3 FAIL=0`
-
-
-## Hypothesis set used (axiom-reset 2026-05-03)
-
-Per `MINIMAL_AXIOMS_2026-05-03.md`, this note depends on **both** open gates:
-
-1. **Staggered-Dirac realization derivation target** — canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`claim_type: open_gate`); in-flight supporting work: `PHYSICAL_LATTICE_NECESSITY_NOTE.md`, `THREE_GENERATION_STRUCTURE_NOTE.md`, `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`, `scripts/frontier_generation_rooting_undefined.py`, `GENERATION_AXIOM_BOUNDARY_NOTE.md`.
-2. **`g_bare = 1` derivation target** — canonical parent: [`G_BARE_DERIVATION_NOTE.md`](G_BARE_DERIVATION_NOTE.md) (`claim_type: positive_theorem`, `audit_status: audited_conditional`); in-flight supporting work: `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`, `G_BARE_RIGIDITY_THEOREM_NOTE.md`, `G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`, `G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`, `G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`, `G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`, `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`.
-
-The note produces (or directly supports) a quantitative gauge prediction (Wilson plaquette content, `α_s`, `v`, `sin²θ_W`, `m_t`, `m_H`, `g_1`, `g_2`, `β = 6`, CKM/quark/hadron mass hierarchy, action-unit metrology, etc.) by fixing `g_bare = 1` without independently deriving it — therefore both gates must close for the lane to upgrade.
-
-Therefore `claim_type: bounded_theorem` until both gates close. When both gates close, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

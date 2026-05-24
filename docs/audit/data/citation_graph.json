@@ -55690,9 +55690,9 @@
     },
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": {
       "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
         "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
@@ -55704,7 +55704,7 @@
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3e6a8bbacad28b40f4f0d587054433b6fd1534d8c85f3552893c4f1a3151b0d6",
+      "note_hash": "f937bd2cda2b57881d7eacdb1d36c8410330e51b912206e60a8cfacbd5f68c46",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
       "title": "Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve"
@@ -84494,22 +84494,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 540,
+      "bounded_theorem": 541,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
-      "none": 1479,
+      "none": 1478,
       "open_gate": 45,
       "positive_theorem": 174
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 973,
+      "bounded_theorem": 974,
       "decoration": 1,
       "meta": 188,
       "no_go": 172,
       "none": 436,
       "open_gate": 123,
-      "positive_theorem": 603
+      "positive_theorem": 602
     },
     "edge_count": 9689,
     "leaf_count": 764,

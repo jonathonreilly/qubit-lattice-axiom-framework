@@ -1,0 +1,57 @@
+loop_slug: gauge-perron-reference-solve-bounded-repair
+date: 2026-05-24
+branch: physics-loop/gauge-perron-reference-solve-bounded-repair-block08-20260524
+base: origin/main
+mode: science-fix
+target_claim_id: gauge_vacuum_plaquette_tensor_transfer_perron_solve_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This branch narrows a conditional source row to an unaudited bounded reference-solve packet; it does not assign an effective retained verdict."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms_introduced: false
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/gauge-perron-reference-solve-bounded-repair/
+retired_imports:
+  - physical 3D spatial Wilson environment rho identification
+  - untruncated tensor-transfer Perron solve
+  - canonical P(6) comparator as a claimed output
+current_queue_result:
+  rank: 1
+  ready: true
+  descendants: 1028
+  dependency_claim_ids:
+    - gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note
+    - gauge_vacuum_plaquette_local_environment_factorization_theorem_note
+    - gauge_vacuum_plaquette_residual_environment_identification_theorem_note
+    - gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note
+    - gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note
+    - gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note
+    - su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03
+    - gauge_vacuum_plaquette_constant_lift_obstruction_note
+verification:
+  runner: "python3 scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py -> THEOREM PASS=6 SUPPORT=3 FAIL=0"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh after rebase to origin/main 7c1c9d074 -> complete, ready_count=12"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK, no errors; existing repo warnings/notices only"
+  diff_check: "git diff --check -> clean"
+  controlled_vocabulary: "python3 scripts/render_controlled_vocabulary.py --check -> clean"
+  vocab_lint: "python3 scripts/vocab_lint.py --report-only docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md .claude/science/physics-loops/gauge-perron-reference-solve-bounded-repair -> 0 violations"
+pr:
+  url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1767
+  status: open
+next_exact_action: "Wait for independent review/audit; if accepted, audit can process the rank-1 ready row."
+stop_condition: "PR opened and verified clean against main; independent audit remains external."

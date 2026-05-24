@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 142 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 415 |
+| **retained_bounded** | 416 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1245 |
+| unaudited | 1244 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 686 |
+| `audited_clean` | 687 |
 | `audited_conditional` | 115 |
 | `audited_decoration` | 34 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1471 |
+| `unaudited` | 1470 |
 
 | claim_type | count |
 |---|---:|
@@ -476,6 +476,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | C | - |
@@ -7419,6 +7420,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The algebraic ratio follows immediately from the cited retained-grade 6 and 2 multiplicities plus tracelessness. No SM identification, normalization, external comparator, or phenomenological readout is needed for the audited narrow scope.
 - **rationale:** The load-bearing work is a class A algebraic identity over retained-grade inputs. The primary runner source confirms it checks note scope, hard-coded retained multiplicities, exact Fraction algebra, and retained-grade ledger status, with no external comparator or first-principles operator computation. Because the theorem reduces to a narrow algebraic corollary of the graph-first SU3 integration parent plus standard tracelessness arithmetic, it fits the decoration policy rather than a new independent theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** high
+
+### `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`LH_TEMPLATE_RETAINED_SUBSTRATE_I3_INDEPENDENCE_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/LH_TEMPLATE_RETAINED_SUBSTRATE_I3_INDEPENDENCE_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only that the LH block template (2,3) ⊕ (2,1) follows algebraically from the retained Sym²/Anti² split, su(3) action on Sym², singlet Anti² action, and weak/color product structure, without using the I3 eigenvalue ratio.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T210049Z-e9484733-lh_template_retained_sub-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By tensor distributivity, C² ⊗ (Sym² ⊕ Anti²) = (2,3) ⊕ (2,1), with dimensions 6 and 2, and no eigenvalue-ratio input is used in B1-B3.  _(class `A`)_
+- **chain closes:** True — The cited retained authorities supply the selected-axis surface, Sym²/Anti² split, gl(3)⊕gl(1) commutant with su(3) on the 3-block, and weak/color product structure. The claimed template and dimensions then follow by standard tensor-product distributivity, while the +1:(-3) traceless-U(1) ratio is only a separate corollary.
+- **rationale:** Both cited authorities in the restricted packet are marked retained, and no cited open or conditional dependency is needed for the audited scope. The runner source performs explicit finite-dimensional linear algebra checks for the tau split, embedded Gell-Mann su(3), Anti² singlet action, weak/color commutation, and block dimensions; it does not import PDG values, fitted inputs, or the contested I3 ratio for the template. The load-bearing step is a genuine algebraic closure over retained inputs rather than a definition or renaming.
 - **auditor confidence:** high
 
 ### `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`

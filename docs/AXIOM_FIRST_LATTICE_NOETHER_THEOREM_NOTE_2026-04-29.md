@@ -598,21 +598,109 @@ A1+A2+infrastructure".
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md) —
-  current public framework memo; sole upstream framework dependency
+  current public framework memo; framework-axiom dependency
   after the 2026-05-10 gate-recategorization repair.
+- [staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+  — retained-grade narrow theorem supplying the finite-Grassmann
+  partition with per-site `(χ_x, χ̄_x)` generators, per-site Fock
+  dim 2, and the Berezin determinant readout. Load-bearing for the
+  Step 1-3 variational derivation of (5). Added 2026-05-24 rewire
+  repair (replaces gate-alias dep per
+  `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
+  line 33 endorsement).
+- [staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — retained-grade narrow theorem supplying the cross-site canonical
+  anticommutation realization (`{c_x, c_y^†} = δ_{xy}`) on the
+  tensor-product Fock space `H_Λ = V^{⊗|Λ|}` with `V ≅ ℂ²`. Supports
+  corollary C1 (conserved fermion-number `Q` as a Hilbert-space
+  quantum number) and C3 (compatibility with reflection-positivity
+  superselection). Added 2026-05-24 rewire repair.
+
+The historical parent-identity alias
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (currently
+`audited_renaming`) is no longer cited as a load-bearing one-hop dep;
+it is backticked here as a navigational reference only, per the
+rewire endorsement in
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
+line 33. See the §"Admitted context inputs" block below for the
+explicit residual `KS-phase-form` structural admission that remains
+on the staggered carrier; this residual is not currently supplied by
+any retained substep narrow theorem and is named here rather than
+silently imported from the gate alias.
 
 ## Admitted context inputs
 
 Per the 2026-05-10 gate-recategorization repair, the following named
 admitted inputs are explicitly carried by this row in addition to its
-framework-axiom dependency on `minimal_axioms_2026-05-03`:
+framework-axiom dependency on `minimal_axioms_2026-05-03`. Per the
+2026-05-24 rewire repair, the load-bearing **finite-Grassmann partition
+content** of the gate (per-site `(χ_x, χ̄_x)` generators with
+anticommutation `(G1)-(G3)`, Berezin integration rules, per-site Fock
+dim 2 — the entire algebraic surface used by the Step 1-3 variational
+derivation of (5)) is supplied by the retained substep-1 narrow theorem
+listed below; the historical parent-identity gate alias
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (currently
+`audited_renaming`) is no longer cited as a load-bearing one-hop dep
+and is backticked below as a navigational reference only, per the
+explicit rewire endorsement in
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
+line 33 ("downstream rows with substep-specific needs should cite the
+relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems
+directly rather than this gate alias").
 
-- `staggered_dirac_realization_gate` — the Grassmann partition with
-  staggered Dirac action `M_KS`. Recategorized from prior axiom `A3`
-  to an open-gate derivation target by `MINIMAL_AXIOMS_2026-05-03.md`;
-  canonical parent note pending packaging. Closure of this gate makes
-  this row eligible for retagging from `bounded_theorem` to
-  `positive_theorem`.
+**Load-bearing one-hop deps (retained):**
+
+- [staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+  — supplies the finite-Grassmann partition with per-site `(χ_x, χ̄_x)`
+  generators, anticommutation `(G1)-(G3)`, per-site Fock dim 2, and the
+  Berezin determinant readout `Z_F[M] = det(M)`. This is the
+  load-bearing algebraic surface used by the Step 1-3 variational
+  derivation of the bilateral lattice current (5) and the on-shell
+  identity (10). The substep-1 narrow theorem isolates exactly this
+  per-site Grassmann-vs-bosonic algebraic content from the parent
+  staggered-Dirac realization gate and is independently `retained_bounded`.
+- [staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — supplies the cross-site canonical anticommutation realization
+  (`{c_x, c_y^†} = δ_{xy}`) on the tensor-product Fock space
+  `H_Λ = V^{⊗|Λ|}` with per-site `V ≅ ℂ²` (the Cl(3) faithful complex
+  irrep dim-2 readout). This certifies that the per-site Grassmann
+  generators of substep-1 admit an honest operator-side realization on a
+  finite-dim Hilbert space, supporting the corollary C1 (conserved
+  fermion-number `Q = Σ_x χ̄_x χ_x` as a Hilbert-space quantum number)
+  and C3 (compatibility with reflection-positivity superselection). The
+  substep-1 JW bridge is independently `retained_pending_chain`.
+
+**Historical navigational reference (NOT a load-bearing dep):**
+
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` —
+  parent-identity gate alias, currently `audited_renaming`. Backticked
+  to break the unresolved-dep edge that previously blocked this row's
+  audit retagging. The load-bearing finite-Grassmann content is supplied
+  by the two retained substep-1 narrow theorems above; the specific
+  Kawamoto-Smit phase form `η_μ(x)` (used in Step 2's bilateral
+  derivation and Step 4b's two-site-shift symmetry) remains an
+  explicit admitted-context structural input on the staggered carrier,
+  carried forward as the residual `KS-phase` structural admission below.
+
+**Residual structural admission (admitted context, not supplied by any
+current retained narrow theorem):**
+
+- `KS-phase-form` — the specific Kawamoto-Smit phase structure
+  `η_1(x) = +1`, `η_2(x) = (-1)^{x_1}`, `η_3(x) = (-1)^{x_1+x_2}` on the
+  nearest-neighbour hop `M_{x,x±μ̂} = ±(1/2) η_μ(x)`. Used in (a) Step 2
+  reindexing `η_μ(x' + μ̂) = η_μ(x')`, (b) Step 4b's two-site-shift
+  symmetry verification `η_ν(x + 2μ̂) = η_ν(x)`, (c) Step 5's
+  one-site-shift counterexample. The forcing of this specific phase
+  structure (substep-2 Kawamoto-Smit forcing) is currently `unaudited`
+  on the live ledger and is **not** supplied by the retained substep
+  theorems above; the Noether identities (N1)-(N3) close as stated on
+  the admitted KS-phase carrier, with this structural input named here
+  rather than imported silently from the gate alias.
+
+When the substep-2 Kawamoto-Smit phase forcing closes to retained-grade,
+the `KS-phase-form` residual admission discharges and the row becomes
+eligible for retagging from `bounded_theorem` to `positive_theorem` by
+the independent audit lane.
 
 **Removed (2026-05-10 g_bare-removal repair):**
 - `g_bare_canonical_normalization_gate` — formerly listed here as a

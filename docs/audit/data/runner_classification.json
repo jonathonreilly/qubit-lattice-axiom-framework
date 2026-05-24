@@ -17208,6 +17208,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_pmns_graph_first_cycle_frame_support.py"
     },
+    "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": {
+      "assert_count": 2,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py"
+    },
     "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
@@ -19007,6 +19019,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_s3_time_transfer_matrix_bridge.py"
+    },
+    "s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py"
     },
     "same_family_3d_closure_note": {
       "assert_count": 0,
@@ -26505,6 +26529,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py": {
+      "assert_count": 2,
+      "claims": [
+        "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py": {
@@ -44859,6 +44898,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py": {
+      "assert_count": 2,
+      "claims": [
+        "s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_scalar_3plus1_temporal_ratio.py": {
       "assert_count": 1,
       "claims": [
@@ -54252,14 +54306,14 @@
   "stats": {
     "decoration_candidates": 314,
     "dominant_class_distribution": {
-      "A": 203,
+      "A": 204,
       "B": 271,
-      "C": 742,
+      "C": 743,
       "D": 296,
       "none": 434
     },
-    "runners_classified": 1946,
-    "runners_with_C": 960,
-    "runners_with_D": 555
+    "runners_classified": 1948,
+    "runners_with_C": 961,
+    "runners_with_D": 557
   }
 }

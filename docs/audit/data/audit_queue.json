@@ -1,8 +1,8 @@
 {
   "by_criticality": {
-    "critical": 266,
+    "critical": 268,
     "high": 346,
-    "leaf": 338,
+    "leaf": 339,
     "medium": 342
   },
   "cycle_break_target_count": 3,
@@ -198,6 +198,32 @@
       "ready": true,
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
       "transitive_descendants": 884
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_selector_derivation_note",
+        "graph_first_su3_integration_note",
+        "pmns_graph_axis_to_active_lane_bridge_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.1,
+      "note_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py",
+      "transitive_descendants": 387
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4757,6 +4783,35 @@
       "ready": false,
       "runner_path": "scripts/frontier_pmns_sector_odd_bridge_reduction.py",
       "transitive_descendants": 387
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_graph_first_cycle_frame_support_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_selector_derivation_note",
+        "graph_first_su3_integration_note",
+        "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_graph_first_selector_derivation.py",
+        "scripts/frontier_graph_first_su3_integration.py"
+      ],
+      "load_bearing_score": 11.096,
+      "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
+      "transitive_descendants": 386
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -29266,6 +29321,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/S3C3_UNITARY_ANTIUNITARY_AXIS_PERMUTATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "sm_identity_triangulation_convergence_note_2026-05-23",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38717,6 +38796,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 51,
-  "total_pending": 1292
+  "ready_count": 53,
+  "total_pending": 1295
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1291 |
+| unaudited | 1294 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -52,16 +52,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 686 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 71 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1518 |
+| `unaudited` | 1521 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1026 |
+| `bounded_theorem` | 1028 |
 | `decoration` | 36 |
 | `meta` | 232 |
 | `no_go` | 243 |
@@ -70,19 +70,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 401 |
+| `critical` | 403 |
 | `high` | 482 |
-| `medium` | 568 |
-| `leaf` | 937 |
+| `medium` | 567 |
+| `leaf` | 938 |
 
 - **Retained pending chain closure:** 7
 - **Citation cycles detected:** 3
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1946
-- runners with (C) first-principles compute hits: 960
-- runners with (D) external comparator hits: 555
+- runners classified: 1948
+- runners with (C) first-principles compute hits: 961
+- runners with (D) external comparator hits: 557
 - decoration candidates (no C, no D): 314
 
 ## Top 25 by load-bearing score (topology only)
@@ -94,7 +94,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 714 | 53.48 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `minimal_axioms_2026-05-03` | meta | critical | 940 | 52.38 | `unaudited` | meta |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 917 | 51.84 | `audited_clean` | **retained_bounded** |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1081 | 45.08 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1082 | 45.58 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 942 | 39.88 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 176 | 38.97 | `unaudited` | unaudited |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 970 | 38.42 | `unaudited` | unaudited |
@@ -855,7 +855,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8670,19 +8669,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The permutation unitary T_tau_k realizing the residual Z_2 stabilizer on the selected cube axis restricts on V_1 to the same permutation matrix P_tau_k, so Z_2-invariance of H is exactly P_tau_k H P_tau_k = H, in particular P_23 H P_23 = H for k=1.  _(class `A`)_
 - **chain closes:** True — The source note derives the bridge by explicit tensor-factor permutation unitaries on C^8 and their restriction to the orthonormal hw=1 carrier. Given the retained selector and hw=1 carrier inputs, the claimed P_23 invariance law follows as an algebraic identity.
 - **rationale:** The load-bearing step is a direct finite-dimensional identity: T_sigma permutes the single-bit-flip basis vectors X_mu, and its V_1 block is exactly the corresponding 3 by 3 permutation matrix. The runner source genuinely constructs the shifts, basis vectors, factor-permutation matrices, restrictions, and invariant Hermitian projections; it does not merely print constants or import a contested premise. The cited authorities in the packet are marked retained, and the source remains within the bounded bridge scope rather than claiming active-sector assignment or numerical PMNS values.
-- **auditor confidence:** high
-
-### `pmns_graph_first_cycle_frame_support_note`
-
-- **Note:** [`PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md`](../../docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited whether the cited graph-first selector and SU(3) integration notes close the claimed canonical PMNS oriented-cycle frame E12, E23, E31 as support for a future value law.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T162153Z-e45995e0-pmns_graph_first_cycle_f-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Graph-first SU(3) integration canonically fixes the selected-axis fiber/base split so that diagonal projectors transported by the canonical forward cycle give the unique ordered oriented-cycle frame E12, E23, E31.  _(class `A`)_
-- **chain closes:** False — The cited authorities close the axis selector and selected-axis SU(3) commutant structure, but they do not derive the PMNS forward-cycle operator or its canonical identification with the ordered frame E12, E23, E31. The missing step is a bridge theorem from the graph-first SU(3) data to the hard-coded cycle transport/order.
-- **rationale:** The runner verifies exact matrix identities once E12, E23, E31, CYCLE, and P23 are already supplied, so its successful output is algebraic support over chosen matrices rather than a derivation of their canonical graph-first origin. The upstream notes establish the selector minima and selected-axis SU(3) integration, but the restricted packet does not close the additional PMNS cycle-frame bridge. Thus the support theorem is conditional on an unstated derivation of the forward-cycle carrier and ordering.
 - **auditor confidence:** high
 
 ### `pmns_oriented_cycle_channel_value_law_note`

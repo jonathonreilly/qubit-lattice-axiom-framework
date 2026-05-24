@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py
+runner_sha256: 774bf70f93c6698dce6142d08c50c8edfd68a89d5419f3f718dbb6207ec481c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+================================================================================
+PMNS GRAPH-FIRST FORWARD-CYCLE + RESIDUAL-SWAP BRIDGE
+================================================================================
+
+--- (B0) Setup: P_23 and CYCLE in the standard S_3 rep ---
+  PASS  P_23 has the canonical form [[1,0,0],[0,0,1],[0,1,0]]
+  PASS  CYCLE = P_{(1 3 2)} has the form [[0,1,0],[0,0,1],[1,0,0]]
+  PASS  P_23 is an involution: P_23^2 = I
+  PASS  P_23 is symmetric (real involutive unitary): P_23^T = P_23
+  PASS  P_23 is its own inverse: P_23 * P_23 = I (unitarity for real perm)
+  PASS  CYCLE^3 = I (3-cycle order three)
+  PASS  CYCLE^2 = CYCLE^T (so CYCLE^T = CYCLE^{-1})
+  PASS  CYCLE^T = CYCLE_inv (computed independently)
+  PASS  CYCLE * CYCLE_inv = I
+
+--- (B1) Forward-cycle operator from S_3 restriction ---
+  PASS  T_{(1 3 2)}|_{V_1} restriction equals CYCLE (forward 3-cycle)
+  PASS  T_{(1 2 3)}|_{V_1} restriction equals CYCLE^{-1}
+  PASS  T_{(2 3)}|_{V_1} restriction equals P_23
+
+--- S_3 group-product closure on the 3x3 permutation rep ---
+  PASS  S_3 closure: all 36 ordered product pairs match in the 3x3 permutation rep :: matched 36/36 pairs
+
+--- (B2) Cycle-channel basis via E_ii . CYCLE = E_{i, sigma^{-1}(i)} ---
+  PASS  E_11 . CYCLE = E_12 (forward 1 -> 2)
+  PASS  E_22 . CYCLE = E_23 (forward 2 -> 3)
+  PASS  E_33 . CYCLE = E_31 (forward 3 -> 1)
+  PASS  E_11 . CYCLE^{-1} = E_13 (backward 1 -> 3)
+  PASS  E_22 . CYCLE^{-1} = E_21 (backward 2 -> 1)
+  PASS  E_33 . CYCLE^{-1} = E_32 (backward 3 -> 2)
+
+--- (B3) P_23 . CYCLE . P_23 = CYCLE^{-1} (S_3 dihedral relation) ---
+  PASS  P_23 . CYCLE . P_23 = CYCLE^T
+  PASS  P_23 . CYCLE . P_23 = CYCLE^{-1}
+  PASS  P_23 . CYCLE^{-1} . P_23 = CYCLE
+
+--- (B4) Unitary residual swap: P_23 E_{ij} P_23 = E_{tau(i), tau(j)} ---
+  PASS  P_23 . E_11 . P_23 = E_11
+  PASS  P_23 . E_12 . P_23 = E_13
+  PASS  P_23 . E_13 . P_23 = E_12
+  PASS  P_23 . E_21 . P_23 = E_31
+  PASS  P_23 . E_22 . P_23 = E_33
+  PASS  P_23 . E_23 . P_23 = E_32
+  PASS  P_23 . E_31 . P_23 = E_21
+  PASS  P_23 . E_32 . P_23 = E_23
+  PASS  P_23 . E_33 . P_23 = E_22
+  PASS  P_23 . E_12 . P_23 = E_13 (forward E_12 maps to reverse E_13)
+  PASS  P_23 . E_23 . P_23 = E_32 (forward E_23 maps to reverse E_32)
+  PASS  P_23 . E_31 . P_23 = E_21 (forward E_31 maps to reverse E_21)
+  PASS  R-uni image of E_12 is NOT in span{E_12, E_23, E_31}
+
+--- (B5) Antiunitary residual swap: R[A] = P_23 A^dagger P_23 ---
+  PASS  R_anti(E_12) = E_31
+  PASS  R_anti(E_23) = E_23 (fixed)
+  PASS  R_anti(E_31) = E_12
+  PASS  R_anti(c_1 E_12 + c_2 E_23 + c_3 E_31) = conj(c_3) E_12 + conj(c_2) E_23 + conj(c_1) E_31
+
+--- (B6) R-anti preserves the forward-cycle channel ---
+  PASS  R_anti(forward-cycle vector) has zero leakage outside forward-cycle channel
+
+--- (B7) Involutions and S_3 generation by (CYCLE, P_23) ---
+  PASS  R_anti is an involution on the forward-cycle channel: R o R = id
+  PASS  <CYCLE, P_23> generates the full S_3 standard permutation rep :: |gen|=6, |S_3|=6
+
+--- (B8) Generic non-fixedness of R-anti ---
+  PASS  Generic forward-cycle vector is NOT fixed by R-anti
+  PASS  Fixed-locus point (c_1 = conj(c_3), c_2 real) IS fixed by R-anti
+
+--- (B9) Numerical cross-check vs primary runner's matrices ---
+  PASS  Primary-runner CYCLE matches the sympy-derived CYCLE = P_{(1 3 2)}
+  PASS  Primary-runner P23 matches the sympy-derived P_23
+  PASS  E_11 . np_CYCLE = E_12 (numerical agreement)
+  PASS  E_22 . np_CYCLE = E_23 (numerical agreement)
+  PASS  E_33 . np_CYCLE = E_31 (numerical agreement)
+  PASS  np_R(E_12) = E_31 (numerical residual antiunitary swap)
+  PASS  np_R(E_23) = E_23 (numerical, E_23 fixed)
+  PASS  np_R(E_31) = E_12 (numerical residual antiunitary swap)
+
+--- (B10) Negative control ---
+  PASS  A purely diagonal matrix is NOT in the forward-cycle channel
+  PASS  P_23 . diag(1,2,2) . P_23 = diag(1,2,2) (Z_2-invariant diagonal)
+  PASS  P_23 . diag(1,2,3) . P_23 != diag(1,2,3) (non-Z_2-invariant)
+
+================================================================================
+PASS=55 FAIL=0
+================================================================================
+
+----- stderr -----
+

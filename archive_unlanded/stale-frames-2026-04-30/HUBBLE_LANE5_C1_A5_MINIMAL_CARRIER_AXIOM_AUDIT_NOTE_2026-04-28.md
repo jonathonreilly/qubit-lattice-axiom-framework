@@ -1,7 +1,15 @@
 # Lane 5 `(C1)` Gate — A5 Minimal-Carrier-Axiom Audit
 
 **Date:** 2026-04-28
-**Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/stale-frames-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+**Status:** historical / diagnostic — superseded record of the stale
+forced/minimal Axiom* minimal-carrier-axiom audit narrative. The
+Axiom* / minimal-carrier narrative was `audited_failed` downstream and
+this audit note is the source of that failed wrapper frame. This note
+is **NOT** a live no-go authority and **NOT** active claim-surface; it
+is preserved for route history and reviewer handoff. Should **NOT** be
+cited as load-bearing in downstream derivations. Archived under
+`archive_unlanded/stale-frames-2026-04-30/`. See `## Retraction` and
+`## 2026-05-23 audit-graph hygiene` sections.
 **Lane:** 5 — Hubble constant `H_0` derivation
 **Loop:** `hubble-c1-absolute-scale-gate-20260428`
 **Runner:** `scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit.py`
@@ -257,3 +265,42 @@ identified carrier axiom; that is a science-level decision for the
 user. Per Deep Work Rules, Cycle 6 should run a stuck fan-out across
 orthogonal premises beyond the audit's primary frames before any
 honest stop.
+
+---
+
+## 2026-05-23 audit-graph hygiene: historical conversion
+
+This note's `audited_failed` verdict (`claim_type=no_go`,
+`effective_status=retained_no_go` on the ledger) reflects the audit
+lane's judgment that the load-bearing role of this note is to support
+the stale Axiom\* minimal-carrier narrative — *not* a neutral
+record of an honest open option. Per the audit verdict ("the note's
+load-bearing role is to support the stale Axiom\* minimal-carrier
+narrative that the later audit failed... keeping it active blocks"),
+the row is converted to explicit `historical / diagnostic` framing
+under the controlled vocabulary in
+`docs/repo/CONTROLLED_VOCABULARY.md`.
+
+The narrowing is honest:
+
+- This note is preserved for route history under
+  `archive_unlanded/stale-frames-2026-04-30/`.
+- It is **NOT** load-bearing on any active chain.
+- It is **NOT** a live no-go authority; the `no_go` verdict reflects
+  audit-inherited failure of the wrapper frame (exhaustion +
+  minimality on a stale carrier-axiom posture), not a terminal no-go
+  on the underlying Cl_4(C) algebraic content. The algebraic identifications
+  (e.g., `Cl_4(C) ≅ M_4(C)` via the canonical CAR realisation) are
+  standard math; they should be cited from fresh proof surfaces if
+  needed downstream, not from this archived audit frame.
+- Downstream cites should be backticked (per audit-graph hygiene
+  pattern PR #1712), not markdown-linked, since this row is no-longer-
+  active and adding a load-bearing edge would extend the failed
+  surface rather than contain it.
+- Promotion route remains open in principle, but only if a new
+  carrier-axiom narrative succeeds upstream — that is a substantive
+  science problem (rebuild any future carrier-axiom analysis from a
+  fresh proof surface that does not depend on the failed
+  exhaustion/minimality frame), not a hygiene fix. Per the
+  no-permanent-lock policy on no-go-with-historical-framing rows, the
+  promotion route is **not retired**.

@@ -3,6 +3,22 @@
 **Date:** 2026-04-06
 **Status:** proposed_retained positive for Tier A (memory), partial for Tier B (shape), Tier C open
 
+**Bounded-by-design watch trigger (not pending repair):** This row is
+**settled at `retained_bounded` honest tier** (audited_clean,
+bounded_theorem). The `notes_for_re_audit_if_any` field on this row
+records a **conditional watch-trigger** — re-audit is warranted only IF
+a downstream row cites this note as proof of "persistent localized
+DM-like objects" or as a Tier C (inertial response) closure, both of
+which exceed the audited Tier A positive / Tier B partial / Tier C open
+boundaries this note explicitly declares. No such misuse has been
+detected on current main. Promotion-dispatch re-emission against this
+row should be treated as bounded-by-design (skip) unless a specific
+downstream misuse is identified. Per the no-permanent-lock policy on
+bounded-tier rows, the promotion route is **not retired**: it is
+preserved as conditional on substantive future work that genuinely
+closes Tier C inertial-response or persistent-localized-object content
+beyond the detector-readable centroid result already proved here.
+
 ## Artifact chain
 
 - [`scripts/packet_memory.py`](../scripts/packet_memory.py)

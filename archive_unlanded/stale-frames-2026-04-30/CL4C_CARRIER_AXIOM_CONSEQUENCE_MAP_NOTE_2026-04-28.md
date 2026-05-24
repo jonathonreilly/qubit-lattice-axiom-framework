@@ -1,7 +1,14 @@
 # Cl_4(C) Carrier-Axiom Consequence Map (Cross-Lane)
 
 **Date:** 2026-04-28
-**Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/stale-frames-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+**Status:** historical / diagnostic — superseded record of the stale
+forced/minimal Axiom* carrier consequence-map narrative. The Axiom*
+narrative was `audited_failed` downstream and this consequence map
+inherits that failure. This note is **NOT** a live no-go authority and
+**NOT** active claim-surface; it is preserved for route history and
+reviewer handoff. Should **NOT** be cited as load-bearing in downstream
+derivations. Archived under `archive_unlanded/stale-frames-2026-04-30/`.
+See `## Retraction` and `## 2026-05-23 audit-graph hygiene` sections.
 **Lanes covered:** 1 (gravity/area-law), 4D (neutrino Dirac/Majorana),
 4F (Σm_ν), 5 (Hubble), Planck.
 **Loop:** `cl4c-carrier-axiom-consequence-map-20260428`
@@ -262,3 +269,35 @@ user's option-(i) decision can be made with full visibility.
 The map confirms that minimal-axiom-extension cosmology closure
 requires two structurally independent moves: Axiom\* (P_A H_cell
 Cl_4(C) carrier) AND a separate (C2) eta-retirement gate closure.
+
+---
+
+## 2026-05-23 audit-graph hygiene: historical conversion
+
+This note's `audited_failed` verdict (`claim_type=no_go`,
+`effective_status=retained_no_go` on the ledger) was inherited from
+the failed forced/minimal Axiom\* narrative upstream. Per the audit
+verdict ("the consequence map depends on the stale carrier-axiom
+wrapper frame and presents an active downstream cascade from that
+frame... keeping it active blocks"), the row is converted to explicit
+`historical / diagnostic` framing under the controlled vocabulary in
+`docs/repo/CONTROLLED_VOCABULARY.md`.
+
+The narrowing is honest:
+
+- This note is preserved for route history under
+  `archive_unlanded/stale-frames-2026-04-30/`.
+- It is **NOT** load-bearing on any active chain.
+- It is **NOT** a live no-go authority; the `no_go` verdict reflects
+  inherited failure of the upstream Axiom\* narrative rather than an
+  independent terminal no-go on its own scope.
+- Downstream cites should be backticked (per audit-graph hygiene
+  pattern PR #1712), not markdown-linked, since this row is no-longer-
+  active and adding a load-bearing edge would expand the failed
+  surface rather than contain it.
+- Promotion route remains open in principle, but only if a new
+  carrier-axiom narrative succeeds upstream — that is a substantive
+  science problem (rebuild a fresh proof surface independent of the
+  failed exhaustion/minimality frame), not a hygiene fix. Per the
+  no-permanent-lock policy on no-go-with-historical-framing rows, the
+  promotion route is **not retired**.

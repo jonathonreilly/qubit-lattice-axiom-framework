@@ -275,7 +275,7 @@ checks.
 **Upstream framework dependencies** (load-bearing for the derivation; markdown links so the citation graph records them as deps):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate)
-- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) — supplies `ρ_ref` as the unique tracial state on the quasi-local algebra (companion note)
+- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) — supplies `ρ_ref = ⊗_x I/2` as the unique tracial state on the quasi-local algebra (companion note). **Citation-narrowing note (2026-05-23 audit-graph hygiene):** the cited row is currently `audited_conditional`; the present derivation's chain rests on the **tracial-state-only retained portion** (Steps 1–4 of that companion note: unique tracial state on the A1+A2 UHF C\*-algebra via Powers' theorem and finite-dim trace uniqueness), **not** on the broader no-extra-structure / pre-record identification (Step 5 of that companion note). The pre-record label is downstream of the mathematical chain, not load-bearing on it; see `## 2026-05-23 audit-graph hygiene` below.
 
 **Upstream standard-math imports** (named non-derivation; not framework rows):
 
@@ -298,3 +298,48 @@ checks.
 
 - `LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_*` (to be written) — would internalize the Lüders import
 - `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_*` (to be written) — would internalize the record-as-Kraus admission
+
+## 2026-05-23 audit-graph hygiene: dep wiring on pre-record conditional
+
+The cited authority
+[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+is currently `audited_conditional`. Its `notes_for_re_audit_if_any`
+offers two repair paths:
+
+(a) supply an independently audited A1+A2 bridge for the
+    no-extra-structure / pre-record identification, or
+(b) **narrow that row's claim to the unique tracial-state theorem only.**
+
+The Born-rule derivation in the present note rests **on path (b)**:
+the chain through Step 1 (Gleason–Busch) and Step 2 (pin σ to
+`⊗_x I/2`) operates on the mathematical object — the **unique tracial
+state** of the A1+A2 quasi-local algebra — which is a standard
+operator-algebra theorem (Powers 1967 + finite-dim trace uniqueness,
+the Steps 1–4 retainable portion of the cited row). The phrase
+"pre-record reference state" in Step 2 is a **label** for that
+mathematical object; the probability calculations in Steps 2–4 of
+the present note depend on the maximally mixed state `⊗_x I/2`
+itself, not on the physical identification of that state as "the
+pre-record reference."
+
+This means the citation above is wired honestly: the Born-rule chain
+closes on the tracial-state-only retained portion of the cited row,
+which the cited row's audit-lane next pass can ratify by narrowing
+per path (b). The Born-rule note already lists the no-extra-structure
+identification as an **independent named admission** (see "Caveats"
+section, item on Lüders compositional consistency, and the explicit
+"This step is the load-bearing admitted input" framing on Step 3),
+so adopting path (b) at the cited row would not break this note —
+the no-extra-structure premise becomes an isolated, externally-named
+input that the present note already admits rather than a hidden
+dependency on a still-conditional companion row.
+
+The markdown link to the cited row is **kept** because the tracial-
+state-only retained portion is genuinely load-bearing on this
+derivation; demotion to backticks would erase a load-bearing edge
+that the audit graph should still see. The narrowing prose above
+performs the audit-graph hygiene function (per PR #1712/#1740
+pattern) without removing the legitimate dep edge.
+
+No retagging is performed by this hygiene edit; status changes
+remain the audit lane's prerogative via `apply_audit.py`.

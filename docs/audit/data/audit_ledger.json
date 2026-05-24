@@ -153625,24 +153625,42 @@
       "verdict_rationale": "Within the bounded claim scope, the note's numerical claims match the current completed runner output and the runner computes the weak-field sweep rather than setting the retained rows by fiat. The one-hop dependency supports the fixed-standard-strength contrast used for the reopening framing. Residual risk is only interpretive: causal language about the mechanism must remain bounded to this tested sweep."
     },
     "lattice_gravity_resolution_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T18:03:48.955593+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_observable_hierarchy_note": "Bounded sign-classification hierarchy for the supplied runner-computed rows: 2D ultra-weak, 2D strong-field depletion, 3D power-action barrier, and 3D dense spent-delay z=3 and z=5 only."
+        },
+        "dep_claim_type": {
+          "gravity_observable_hierarchy_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_observable_hierarchy_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_observable_hierarchy_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T180222Z-d8cf67f2-lattice_gravity_resoluti-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner constructs the lattice, field, propagation, detector probabilities, centroid shift, P_near, and channel bias directly, then computes all four z = 2..5 rows without importing or hard-coding the contested values. The cited hierarchy authority supplies the retained sign-interpretation rule, and the source note excludes the rows and broader claims that the authority does not retain.",
       "claim_id": "lattice_gravity_resolution_note",
-      "claim_scope": null,
+      "claim_scope": "3D dense spent-delay ordered lattice at strength = 5e-5, L = 12, W = 6, h = 1.0, max_d = 3, with z_mass = 2..5 only; no z = 6, refinement, 2D, or all-distances claim is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-24T18:03:48.955593+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -153650,19 +153668,19 @@
         "gravity_observable_hierarchy_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested 3D dense spent-delay card.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "df962ce867253a3038ae083f9408cce3118bb20f28eff65a11f9aaaa20a33ce9",
       "note_path": "docs/LATTICE_GRAVITY_RESOLUTION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only the minor Born display drift; it does not affect the z = 2..5 hierarchy-attraction conclusion.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -153755,18 +153773,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 10,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 10
       },
       "runner_path": "scripts/lattice_3d_dense_10prop.py",
       "title": "Lattice Gravity Resolution: 3D Dense Spent-Delay z = 2..5 Attractive Window",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing attractive-window claim is a bounded first-principles runner computation on the stated card. The runner source is not a constant printer or cross-note equality check; it generates the graph, propagates amplitudes, computes the observables, and classifies z = 2, 3, 4, 5 as attractive with positive centroid, P_near, and bias. The one-hop hierarchy authority is retained_bounded, and the note explicitly narrows away z = 6, 2D distance-law, refinement, and all-distances claims. A second auditor should note the minor non-load-bearing Born display drift between 7.39e-16 in the note and 7.37e-16 in the runner output."
     },
     "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

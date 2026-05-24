@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 409 |
+| **retained_bounded** | 410 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1263 |
+| unaudited | 1262 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 678 |
+| `audited_clean` | 679 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1489 |
+| `unaudited` | 1488 |
 
 | claim_type | count |
 |---|---:|
@@ -452,6 +452,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_family_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6970,6 +6971,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Across the full 3 x 3 x 8 = 72 rows, retained weak-field rows: 4/72.  _(class `C`)_
 - **chain closes:** True — The primary runner completed within the audit budget and reproduced the canonical row, retained-row count, positive/all-b-positive counts, Born-clean count, and standard-strength contrast. This audit is scoped only to the finite sweep and criteria, not to a blanket lattice unification theorem or an independently derived field-strength selection law.
 - **rationale:** Within the bounded claim scope, the note's numerical claims match the current completed runner output and the runner computes the weak-field sweep rather than setting the retained rows by fiat. The one-hop dependency supports the fixed-standard-strength contrast used for the reopening framing. Residual risk is only interpretive: causal language about the mechanism must remain bounded to this tested sweep.
+- **auditor confidence:** high
+
+### `lattice_gravity_resolution_note`
+
+- **Note:** [`LATTICE_GRAVITY_RESOLUTION_NOTE.md`](../../docs/LATTICE_GRAVITY_RESOLUTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** 3D dense spent-delay ordered lattice at strength = 5e-5, L = 12, W = 6, h = 1.0, max_d = 3, with z_mass = 2..5 only; no z = 6, refinement, 2D, or all-distances claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T180222Z-d8cf67f2-lattice_gravity_resoluti-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested 3D dense spent-delay card.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the lattice, field, propagation, detector probabilities, centroid shift, P_near, and channel bias directly, then computes all four z = 2..5 rows without importing or hard-coding the contested values. The cited hierarchy authority supplies the retained sign-interpretation rule, and the source note excludes the rows and broader claims that the authority does not retain.
+- **rationale:** The load-bearing attractive-window claim is a bounded first-principles runner computation on the stated card. The runner source is not a constant printer or cross-note equality check; it generates the graph, propagates amplitudes, computes the observables, and classifies z = 2, 3, 4, 5 as attractive with positive centroid, P_near, and bias. The one-hop hierarchy authority is retained_bounded, and the note explicitly narrows away z = 6, 2D distance-law, refinement, and all-distances claims. A second auditor should note the minor non-load-bearing Born display drift between 7.39e-16 in the note and 7.37e-16 in the runner output.
 - **auditor confidence:** high
 
 ### `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`

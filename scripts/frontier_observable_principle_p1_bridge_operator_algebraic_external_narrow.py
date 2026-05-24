@@ -8,9 +8,9 @@ trace-state factorization on tensor product) at exact ``Fraction`` /
 ``sympy`` precision, plus exhibits the explicit ``F_p = r^p`` counter-
 example family witnessing that operator-algebraic factorization is
 compatible with non-additive scalar functionals on ``|Z|``. Plus a live-
-ledger check that ``axiom_first_cluster_decomposition_theorem_note_2026-04-29``
-is currently ``audited_conditional`` (i.e., not consumable as a
-retained-grade primitive for closing P1).
+ledger check that the cluster-decomposition and Reeh-Schlieder rows are
+not currently retained-grade primitives for closing P1, while the mass-gap
+bridge is retained-grade but supplies only temporal-decay context.
 
 All numerical checks use exact ``fractions.Fraction`` arithmetic or
 SymPy symbolic verification.
@@ -246,9 +246,9 @@ def test_T5_counterexample_family_F_p() -> None:
         f"cases (p, mult_diff, add_diff): {details}",
     )
     check(
-        "F_p additivity fails for all p != 0 (P3) - structurally non-additive",
+        "F_p additivity fails on the explicit witness (r_A=2, r_B=3) for tested p != 0 (P3) - existential non-additivity",
         ok_add_failure_all,
-        "F_p[J_A (+) J_B] != F_p[J_A] + F_p[J_B] for r_A=2, r_B=3, p != 0",
+        "F_p[J_A (+) J_B] != F_p[J_A] + F_p[J_B] verified on the off-coincidence-curve witness (r_A=2, r_B=3) for the tested p != 0 values; suffices for the existential non-additivity conclusion. The universal 'for all r_A, r_B' version is not checked and is not claimed (the coincidence curve r_A^p r_B^p = r_A^p + r_B^p contains nontrivial points such as r_A^p = r_B^p = 2)",
     )
 
 
@@ -270,25 +270,25 @@ def test_T6_cluster_decomposition_ledger_status() -> None:
     status_cluster = rows.get(cid_cluster, {}).get("effective_status", "?")
     status_reeh = rows.get(cid_reeh, {}).get("effective_status", "?")
     status_bridge = rows.get(cid_bridge, {}).get("effective_status", "?")
+    retained_grade = {"retained", "retained_bounded", "retained_no_go"}
     # The operator-algebraic attempt cannot consume cluster decomposition as a
-    # retained-grade primitive for closing P1 positively, because it is
-    # audited_conditional.
+    # retained-grade primitive for closing P1 positively under the live ledger.
     check(
-        f"Cluster decomposition row is audited_conditional (not retained-grade)",
-        status_cluster == "audited_conditional",
+        f"Cluster decomposition row is not retained-grade",
+        status_cluster not in retained_grade,
         f"{cid_cluster}.effective_status = {status_cluster}",
     )
-    # Reeh-Schlieder is unaudited; also not consumable as retained primitive.
+    # Reeh-Schlieder is also not consumable as a retained primitive.
     check(
-        f"Reeh-Schlieder row is unaudited (not retained-grade)",
-        status_reeh == "unaudited",
+        f"Reeh-Schlieder row is not retained-grade",
+        status_reeh not in retained_grade,
         f"{cid_reeh}.effective_status = {status_reeh}",
     )
-    # Mass-gap bridge is retained_bounded; provides conditional temporal
-    # decay, not the additivity-of-generator step.
+    # The mass-gap bridge is retained-grade, but provides temporal decay,
+    # not the additivity-of-generator step.
     check(
-        f"Mass-gap bridge row is retained_bounded (conditional temporal bridge only)",
-        status_bridge == "retained_bounded",
+        f"Mass-gap bridge row is retained-grade (conditional temporal bridge only)",
+        status_bridge in retained_grade,
         f"{cid_bridge}.effective_status = {status_bridge}",
     )
 

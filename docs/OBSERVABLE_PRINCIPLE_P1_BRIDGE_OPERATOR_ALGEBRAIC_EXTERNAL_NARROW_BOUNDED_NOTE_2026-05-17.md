@@ -75,8 +75,12 @@ F_p[J_A ⊕ J_B]  =  r_A(J_A)^p · r_B(J_B)^p  =  F_p[J_A] · F_p[J_B],      (M5
 
 inherited directly from `r(J_A ⊕ J_B) = r_A(J_A) · r_B(J_B)` (which
 follows from (O2) plus absolute value). The functional `F_p` is
-**not additive** in the block-additive sense: `F_p[J_A ⊕ J_B] ≠ F_p[J_A] +
-F_p[J_B]` whenever `r_A ≠ 1` and `r_B ≠ 1` and `p ≠ 0`.
+**not additive** in the block-additive sense: there exist explicit
+witness pairs `(r_A, r_B)` with `r_A ≠ 1`, `r_B ≠ 1`, `p ≠ 0` for
+which `F_p[J_A ⊕ J_B] ≠ F_p[J_A] + F_p[J_B]`. (See (P3) below for the
+existential statement, the explicit coincidence locus where the
+multiplicative-vs-additive defect happens to vanish, and the
+rational witness pairs used by the runner.)
 
 (C5) is the explicit class of candidate scalar functionals that are
 compatible with operator-algebraic factorization (O1)-(O4) but lie
@@ -264,18 +268,31 @@ F_p[J_A ⊕ J_B]  =  F_p[J_A] · F_p[J_B].                                  (P2)
 This is immediate from (P1) and the algebraic identity
 `(ab)^p = a^p · b^p` for `a, b > 0`.
 
-**(P3) Failure of additivity for `F_p` with `p ≠ 0`.** For any
-`p ≠ 0` and any test pair with `r_A, r_B > 0` and `(r_A - 1)(r_B - 1)
-≠ 0`,
+**(P3) Failure of additivity for `F_p` with `p ≠ 0` (existential
+counterexample).** For any `p ≠ 0`, there exist witness pairs
+`r_A, r_B > 0` for which
 
 ```text
-F_p[J_A ⊕ J_B]  =  r_A^p · r_B^p   ≠   r_A^p + r_B^p  =  F_p[J_A] + F_p[J_B],   (P3)
+F_p[J_A ⊕ J_B]  =  r_A^p · r_B^p   ≠   r_A^p + r_B^p  =  F_p[J_A] + F_p[J_B].   (P3)
 ```
 
-unless `p = 0` (constant generator, trivial) or `r_A = 1` or `r_B = 1`
-(zero-source pair). The runner verifies (P3) at exact `Fraction` /
-`sympy` precision for several rational `p` values and rational
-`r_A, r_B`.
+That is, the multiplicative-vs-additive defect
+`F_p[J_A ⊕ J_B] − (F_p[J_A] + F_p[J_B]) = r_A^p · r_B^p − r_A^p − r_B^p`
+is nonzero on an open dense subset of `(r_A, r_B) ∈ R_+ × R_+`; the
+trivial coincidence locus where the defect vanishes is the codimension-1
+algebraic curve `r_A^p · r_B^p = r_A^p + r_B^p` (parametrized for
+`p ≠ 0` by `(r_A^p, r_B^p) = (s, s/(s−1))` for `s > 1`, equivalent to
+`(2, 2)` at the symmetric point and tracing a hyperbola in the
+`r^p`-plane). Exhibiting any witness pair off this curve — for example
+`(r_A, r_B) = (2, 3)` with `p = 1`, giving `6 ≠ 5` — suffices for the
+existential conclusion that `F_p` is not globally additive. The runner
+verifies (P3) at exact `Fraction` / `sympy` precision on a set of
+explicit rational witness pairs `(p, r_A, r_B)`, none of which lie on
+the coincidence curve. The universal "every pair off the trivial
+single-point fixings `r_A = 1` or `r_B = 1`" version of (P3) is **not**
+claimed here — the coincidence curve is exactly the additional locus
+the auditor's verdict flagged, and the existential framing is what is
+load-bearing for non-additivity.
 
 **(P4) Additivity for the unique log-class representative `F_0 := log r`.**
 The functional
@@ -463,11 +480,10 @@ verifies at exact `Fraction` / `sympy` precision:
   F_p[B]` (PASS the failure-of-additivity assertion).
 - **T6**: Cluster decomposition retained-status check — runner reads
   the live ledger row for `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
-  and asserts `effective_status` is `audited_conditional` (not
-  `retained_bounded` or `retained_pending_chain`), confirming that
-  the operator-algebraic attempt cannot consume cluster decomposition
-  as a retained primitive
-  for a positive closure.
+  and asserts it is not currently retained-grade, while the mass-gap
+  bridge is retained-grade but supplies only temporal-decay context.
+  This confirms that the operator-algebraic attempt cannot consume
+  cluster decomposition as a retained primitive for a positive closure.
 - **T7**: Alternative scalar functionals `r^p` — verify that the
   `p = 0` limit (via `log`) is the unique additive representative;
   the runner numerically scans `p ∈ {1/4, 1/2, 1, 2, 4}` and checks

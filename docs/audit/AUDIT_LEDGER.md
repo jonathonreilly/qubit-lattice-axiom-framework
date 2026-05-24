@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 403 |
+| **retained_bounded** | 404 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1269 |
+| unaudited | 1268 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 671 |
+| `audited_clean` | 672 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1495 |
+| `unaudited` | 1494 |
 
 | claim_type | count |
 |---|---:|
@@ -178,6 +178,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_highn_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `central_band_dense_largen_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1943,6 +1944,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The dense central-band pocket is Born-clean as a bounded mean±SE statement, and at N=60 the same graph family retains positive gravity while collapse lowers the purity floor.  _(class `C`)_
 - **chain closes:** True — The runner source and included helpers generate the graph family, propagate amplitudes, compute the corrected Born metric, purity, and gravity delta, and print values matching the note. The narrowed claim does not assert the high-precision per-row max |I3|/P threshold, so the missing threshold check is outside the audited scope.
 - **rationale:** The note's current load-bearing claim is bounded to the runner's actual outputs: rounded Born mean±SE, same-graph purity, and gravity rows for the stated finite setup. The primary runner is not a constant printer and does not import the contested values from another note; it calls included helper code that constructs the graphs and computes the reported observables. The cached stdout matches the note's retained rows, including the repaired N=40 and N=60 collapse values. The open high-precision max-threshold assertion is explicitly excluded from the present claim.
+- **auditor confidence:** high
+
+### `central_band_dense_largen_note`
+
+- **Note:** [`CENTRAL_BAND_DENSE_LARGEN_NOTE.md`](../../docs/CENTRAL_BAND_DENSE_LARGEN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the fixed-geometry large-N dense central-band same-graph runner at defaults: N=80,100; npl=60; y_cut=2.0; yz_range=12.0; connect_radius=3.0; four matched seeds; eight collapse realizations.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T175319Z-76bbad40-central_band_dense_large-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current runner stdout at declared defaults reports Born |I3|/P = 0.000±0.000 for the surviving N=80 and N=100 dense central-band rows, with gravity negative at N=80 and single-seed near-zero/small-negative at N=100.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers build the graphs, compute Born metrics, purity/decoherence readouts, and same-graph gravity deltas directly rather than importing or hard-coding the contested table values. The note's narrow bounded conclusion matches the cached stdout, including the one-seed limitation at N=100.
+- **rationale:** The runner source is present with transitive helper sources and performs actual graph generation, propagation, collapse-phase averaging, Born I3 calculation, purity, and gravity readout computation. The stdout matches the note's table and the note explicitly limits the N=100 gravity interpretation because only one seed survives. No upstream support note, external comparator, tuned empirical constant, or symbol renaming is used in the load-bearing step. The result is clean only as a bounded computational claim at the declared defaults, not as a universal large-N law.
 - **auditor confidence:** high
 
 ### `central_band_layernorm_note`

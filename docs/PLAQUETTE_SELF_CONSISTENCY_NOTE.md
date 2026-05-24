@@ -1,14 +1,15 @@
 # Plaquette Self-Consistency: `<P>` as a Derived Same-Surface Constant
 
-**Date:** 2026-04-15 (status amended 2026-05-01)
-**Status:** bounded - same-surface evaluation theorem on a bounded analytic
+**Date:** 2026-04-15 (status amended 2026-05-01; bounded scope hardening
+2026-05-24)
+**Type:** bounded_theorem
+**Status:** bounded - same-surface evaluation support on a bounded analytic
             scope: `<P>(beta=6, SU(3), 4D)` is a uniquely determined
-            partition-function observable (structural claim) and the
-            canonical numerical value `0.5934` is the MC-evaluated readout
-            on that surface (numerical claim). The exact analytic
-            framework-point insertion at `beta = 6` is **not** closed by
-            this note; the bridge-support stack documented below sharpens
-            the residual gap without removing it. Author tier on
+            partition-function observable, and the canonical numerical value
+            `0.5934` is the MC-evaluated readout reused on that surface. The
+            analytic framework-point insertion at `beta = 6` is **not**
+            closed by this note; the bridge-support stack documented below
+            sharpens the residual gap without removing it. Author tier on
             2026-05-01 amended from `proposed_retained` to `bounded`.
 **Script:** `scripts/frontier_plaquette_self_consistency.py`
 
@@ -131,76 +132,76 @@ The runner checks:
 4. perturbative-window sanity checks
 5. downstream consistency of `u_0` and `alpha_s(v)`
 
-## Exact bridge-support stack on `main`
+## Bounded bridge-support stack on `main`
 
-The live repo now also carries a materially stronger exact support stack:
+The live repo now also carries a materially stronger support stack. This
+section is a dependency map, not an upgrade of this parent row beyond bounded
+same-surface support. Phrases inherited from dependency titles or local claims
+must be read under each dependency row's effective audit status:
 
-- exact local `SU(3)` one-plaquette block
-- exact accepted Wilson gauge-source temporal completion theorem
-- exact distinct-shell theorem for connected plaquette shells on the accepted
+- local `SU(3)` one-plaquette block
+- accepted Wilson gauge-source temporal completion theorem
+- distinct-shell theorem for connected plaquette shells on the accepted
   `3 spatial + 1 derived-time` surface
-- exact mixed repeated-plaquette audit and exact first nonlinear coefficient
+- mixed repeated-plaquette audit and first nonlinear coefficient
   of the full-vacuum reduction law
-- exact implicit reduction-law existence/uniqueness theorem on the finite
+- implicit reduction-law existence/uniqueness theorem on the finite
   Wilson evaluation surface
-- exact nonperturbative susceptibility-flow theorem for the implicit reduction
+- nonperturbative susceptibility-flow theorem for the implicit reduction
   law
-- exact connected plaquette-hierarchy theorem for the implicit reduction law
-- exact obstruction to any finite-order connected-hierarchy truncation
-- exact compact plaquette spectral-measure generating object for the full
+- connected plaquette-hierarchy theorem for the implicit reduction law
+- obstruction to any finite-order connected-hierarchy truncation
+- compact plaquette spectral-measure generating object for the full
   finite Wilson hierarchy
-- exact framework-point underdetermination theorem showing that the current
+- framework-point underdetermination theorem showing that the current
   closed jet and structure theorems still do not force a unique analytic
   `P(6)`
-- exact transfer-operator / character-recurrence realization of the plaquette
+- transfer-operator / character-recurrence realization of the plaquette
   generating object on the accepted `3+1` source surface
-- exact Perron-state reduction theorem on the explicit transfer operator
-- exact source-sector matrix-element factorization theorem at `beta = 6`
+- Perron-state reduction theorem on the explicit transfer operator
+- source-sector matrix-element factorization theorem at `beta = 6`
   with a structural theorem note and a generic positive-diagonal witness
   runner rather than an explicit Wilson `D_6` evaluation
-- exact local/environment factorization theorem isolating the exact local
+- local/environment factorization theorem isolating the local
   Wilson marked-link factor on the source sector
-- exact spatial-environment character-measure theorem identifying the
+- spatial-environment character-measure theorem identifying the
   residual operator as the boundary character measure of the unmarked spatial
   Wilson environment
-- exact spatial-environment structural transfer theorem identifying that
+- spatial-environment structural transfer theorem identifying that
   boundary class function as a boundary-amplitude sequence of one explicit
   positive spatial transfer operator
-- exact spatial-environment tensor-transfer theorem identifying the remaining
+- spatial-environment tensor-transfer theorem identifying the remaining
   boundary amplitudes as explicit Wilson-coefficient / `SU(3)`-intertwiner
   tensor-transfer data, with the runner only a truncated support packet rather
   than a full `beta = 6` Perron solve
-- exact Perron/Jacobi underdetermination theorem showing that even the
+- Perron/Jacobi underdetermination theorem showing that even the
   sharpened factorized operator class still does not force unique `beta = 6`
   Perron moments or Jacobi coefficients until the explicit
   `beta = 6` tensor-transfer matrix elements generating the boundary
   character data are fixed
-- explicit source-sector reference Perron solve theorem with explicit
-  no-go on closed-form `rho_(p,q)(6)`: two structural reference choices
-  of the residual environment (input rho = 1 and input
+- bounded source-sector reference Perron solve packet with bounded no-go
+  over enumerated local-input `rho_(p,q)(6)` closures: two structural
+  reference choices of the residual environment (input rho = 1 and input
   rho = delta_{(p,q),(0,0)}) give explicit Perron data
   `P_loc(6) = 0.4524071590`, `P_triv(6) = 0.4225317396` from
   `c_lambda(6)` and `SU(3)` intertwiners alone, with super-polynomial
   NMAX truncation tail bound; three distinct admissible parametric
-  rho families produce strictly different `P(6)` and demonstrate the
-  no-go that local Wilson data does not fix `rho_(p,q)(6)`; the rho
-  values in the reference solves are structural input, NOT derived
-  from any physical 3D Wilson environment, and the note does not claim
-  either reference corresponds to the physical environment; the missing
-  object is the boundary character measure of the unmarked 3D spatial
-  Wilson environment with marked-plaquette boundary, equivalently the
-  Perron eigenvector of the explicit positive tensor-transfer operator
-  on a 3D `SU(3)` lattice gauge network with one boundary plaquette
-- exact scalar `3+1` bridge endpoint ratio
+  rho families produce strictly different `P(6)` and demonstrate only
+  the bounded no-go that the enumerated local-input closures do not
+  fix a unique `rho_(p,q)(6)`; the rho values in the reference solves
+  are structural input, NOT derived from any physical 3D Wilson
+  environment, and the note does not claim either reference corresponds
+  to the physical environment
+- scalar `3+1` bridge endpoint ratio
   `A_inf / A_2 = 2 / sqrt(3)`
-- exact plaquette four-link coupling map
+- plaquette four-link coupling map
   `P(U) = u_0^4 P(V)`
-- exact `3+1` plaquette/link incidence factor `6 / 4 = 3 / 2`
-- exact obstruction to the naive constant-lift law
+- `3+1` plaquette/link incidence factor `6 / 4 = 3 / 2`
+- obstruction to the naive constant-lift law
   `P(beta) = P_1plaq(beta * (3/2) * (2 / sqrt(3))^(1/4))`
 
 Those ingredients sharply narrow the last insertion bridge and give the current
-best analytic candidate
+best analytic diagnostic candidate
 
 `P(6) = 0.593530679977098`.
 
@@ -258,28 +259,28 @@ Current support runners:
 
 The honest live read is now sharper than before:
 
-- the exact class-level bridge ingredients are real
+- the class-level bridge ingredients are real
 - the simplest constant multiplicative effective-coupling lift is ruled out
-- the minimal distinct connected shell is fixed exactly by the cube boundary
+- the minimal distinct connected shell is fixed by the cube boundary
   theorem
-- the first nonlocal full-vacuum coefficient is now fixed exactly by the mixed
+- the first nonlocal full-vacuum coefficient is now fixed by the mixed
   cumulant audit:
   `P_full(beta) = P_1plaq(beta) + beta^5 / 472392 + O(beta^6)`
-- the exact implicit reduction law on the finite Wilson evaluation surface is
+- the implicit reduction law on the finite Wilson evaluation surface is
   now also closed and unique
-- the exact nonperturbative susceptibility-flow law for that implicit reduction
+- the nonperturbative susceptibility-flow law for that implicit reduction
   is now also closed
-- the exact connected plaquette hierarchy governing that susceptibility flow is
+- the connected plaquette hierarchy governing that susceptibility flow is
   now also closed
 - no exact finite-order connected-hierarchy truncation can close that object
-- the exact equivalent generating object is now also closed as one compact
+- the equivalent generating object is now also closed as one compact
   plaquette spectral measure on each finite Wilson surface
 - the current exact jet and structural theorems still do **not** determine a
   unique analytic framework-point value `P(6)`
 - the plaquette generating object is now also explicit at the operator level:
   one positive one-clock Wilson transfer operator plus one exact self-adjoint
   `SU(3)` character-recurrence source operator
-- the exact `beta = 6` source-sector transfer matrix elements are now also
+- the `beta = 6` source-sector transfer matrix elements are now also
   explicit in factorized form:
   `T_src(6) = exp(3 J) D_6 exp(3 J)`
 - the normalized mixed-kernel contribution is now also explicit and exactly
@@ -288,9 +289,9 @@ The honest live read is now sharper than before:
 - so the remaining analytic target is explicit identification of the
   `beta = 6` spatial-transfer matrix elements generating the boundary
   character data of `Z_6^env` in
-  `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`, equivalently the exact
-  Perron state of the factorized operator after the local mixed-kernel factor
-  is stripped off, and
+  `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`, equivalently the
+  physical Perron state of the factorized operator after the local
+  mixed-kernel factor is stripped off, and
   therefore the explicit nonperturbative form of the reduction law at
   `beta = 6`, not the old
   constant-lift ansatz, not the onset coefficient, and not reduction-law
@@ -329,10 +330,10 @@ as `bounded` and not as `proposed_retained`:
 
 > the plaquette is a uniquely determined observable of the retained theory,
 > Monte Carlo is same-surface evaluation of that observable rather than
-> parameter fitting, and the exact bridge-support stack materially narrows the
+> parameter fitting, and the bounded bridge-support stack materially narrows the
 > remaining analytic insertion gap without yet closing it.
 
-### Explicit window of the bounded analytic insertion
+### Diagnostic comparison interval for the bounded analytic insertion
 
 The bridge-support stack pins the analytic candidate at
 
@@ -342,19 +343,17 @@ P(6) = 0.593530679977098,
 
 `+0.022%` above the canonical same-surface value `0.5934`. That candidate
 is **not** the same-surface plaquette: it is the current best analytic
-upper-bound estimate from the closed implicit-reduction-law lane plus
-the explicit Perron reference solves. The honest analytic window is
-therefore
+diagnostic candidate from the support stack plus the explicit Perron reference
+solves. The useful comparison interval is therefore
 
 ```text
-0.5934 <= <P>(beta = 6) <= 0.59353,
+0.5934 ... 0.59353,
 ```
 
-bounded below by the canonical MC-evaluated readout and above by the
-analytic candidate from the support stack. Closure of this window
-(removal of the strict-inequality slack) is open work and is the
-target of the upstream support stack listed under "Exact bridge-support
-stack on `main`".
+with `0.5934` the canonical MC-evaluated readout and `0.59353` the analytic
+candidate from the support stack. This interval is not asserted here as a
+theorem-grade upper/lower bound. Closure of the comparison gap is open work and
+is the target of the upstream support stack listed above.
 
 ### Boundary against downstream lanes
 

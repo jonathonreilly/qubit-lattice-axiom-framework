@@ -1,0 +1,50 @@
+loop_slug: plaquette-self-consistency-bounded-repair
+date: 2026-05-24
+branch: physics-loop/plaquette-self-consistency-bounded-repair-block09-20260524
+base: physics-loop/gauge-perron-reference-solve-bounded-repair-block08-20260524
+base_commit_after_rebase: 60266ccff
+base_pr: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1767
+mode: science-fix
+target_claim_id: plaquette_self_consistency_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This branch hardens a bounded source/audit target; it does not assign an effective retained verdict."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms_introduced: false
+stacked_on_unmerged_block: gauge-perron-reference-solve-bounded-repair
+files_touched:
+  - docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md
+  - scripts/frontier_plaquette_self_consistency.py
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - .claude/science/physics-loops/plaquette-self-consistency-bounded-repair/
+retired_imports:
+  - retained evaluation theorem wording in the plaquette runner
+  - theorem-grade upper/lower-bound wording for the 0.5934 ... 0.59353 comparison interval
+  - broad exact-support-stack promotion language in the parent plaquette row
+current_queue_result:
+  rank: 3
+  ready: false
+  ready_reason: "Blocked until stacked Perron row reaches retained-grade audit on main."
+  descendants: 1020
+verification:
+  runner: "python3 scripts/frontier_plaquette_self_consistency.py -> SUMMARY: PASS=16 FAIL=0"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh on stacked branch after rebase onto #1767 commit 60266ccff -> complete, ready_count=12"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK (existing warning only)"
+  diff_check: "git diff --check -> clean"
+  controlled_vocabulary: "python3 scripts/render_controlled_vocabulary.py --check -> clean"
+  vocab_lint: "python3 scripts/vocab_lint.py --report-only docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md .claude/science/physics-loops/plaquette-self-consistency-bounded-repair -> 0 violations"
+review_loop:
+  disposition: pass
+  notes: "Local review-loop pass over the stacked PR diff found no retained-grade overclaim, no new axiom, and no hidden imported-value promotion; independent audit remains external."
+pr:
+  url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1787
+  status: open_stacked_on_pr_1767
+next_exact_action: "Wait for the Perron repair in #1767; if it lands cleanly, rebase this stacked branch onto main and let independent audit process the plaquette row."
+stop_condition: "Stacked PR opened; independent audit remains external."

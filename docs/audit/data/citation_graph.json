@@ -67924,8 +67924,8 @@
     },
     "plaquette_self_consistency_note": {
       "claim_id": "plaquette_self_consistency_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_bridge_support_note",
@@ -67953,7 +67953,7 @@
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "421caa11e2e3744072dd753ed2ac32bae27662a14093847652dbba2591a75d4f",
+      "note_hash": "7fdd666ee57454241fcb40a25a738506f939682d7699e7fc61095a649a401b21",
       "path": "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
       "runner_path": "scripts/frontier_plaquette_self_consistency.py",
       "title": "Plaquette Self-Consistency: `<P>` as a Derived Same-Surface Constant"
@@ -84494,11 +84494,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 541,
+      "bounded_theorem": 542,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
-      "none": 1478,
+      "none": 1477,
       "open_gate": 45,
       "positive_theorem": 174
     },

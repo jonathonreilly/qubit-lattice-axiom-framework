@@ -3,7 +3,7 @@
 Plaquette Self-Consistency: <P> as a Derived Same-Surface Constant
 ==================================================================
 
-STATUS: retained evaluation theorem (no free parameter)
+STATUS: bounded same-surface evaluation support (not a fit parameter)
 
 Purpose:
   Verify the narrow package claim needed by the quantitative stack:
@@ -35,14 +35,14 @@ N_C = 3
 PLAQ_REFERENCE = 0.5934
 
 
-def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> bool:
+def check(name: str, condition: bool, detail: str = "", kind: str = "BOUNDED") -> bool:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
-    tag = f" [{kind}]" if kind != "EXACT" else ""
+    tag = f" [{kind}]" if kind else ""
     msg = f"  [{status}]{tag} {name}"
     if detail:
         msg += f"  ({detail})"
@@ -297,7 +297,7 @@ def test_combined_conclusion() -> None:
         "the theory fixes the partition function; MC only evaluates the resulting observable",
     )
     check(
-        "the canonical downstream chain may reuse <P>, u_0, and alpha_s(v)",
+        "bounded downstream reuse may use <P>, u_0, and alpha_s(v)",
         True,
         "same-surface evaluation supports hierarchy, EW, CKM, confinement, Yukawa, and Higgs reuse",
     )
@@ -308,8 +308,8 @@ def main() -> None:
     print("Plaquette Self-Consistency: <P> as a Derived Same-Surface Constant")
     print("=" * 72)
     print()
-    print("THEOREM: <P>(beta=6, SU(3), 4D) ~= 0.5934 is a uniquely determined")
-    print("         observable of the retained partition function, not a free parameter.")
+    print("BOUNDED: <P>(beta=6, SU(3), 4D) ~= 0.5934 is treated here as a")
+    print("         same-surface evaluated observable, not a fit parameter.")
 
     test_uniqueness_logic()
     mc_results = test_multi_volume_mc()

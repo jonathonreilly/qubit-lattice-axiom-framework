@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 397 |
+| **retained_bounded** | 398 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1275 |
+| unaudited | 1274 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 665 |
+| `audited_clean` | 666 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1501 |
+| `unaudited` | 1500 |
 
 | claim_type | count |
 |---|---:|
@@ -475,6 +475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mesoscopic_surrogate_annular_tapered_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7343,6 +7344,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The runner-computed best case at λ=1 reduces equivalence rel dev only to about 44%, while family portability is 163% and Newton linearity collapses with R²≈0.09–0.18, so the self-focusing route remains a failed matter closure.  _(class `C`)_
 - **chain closes:** True — The runner source actually constructs the grown DAG, Gaussian sources, two-pass density self-field propagator, slope fits, null test, and family portability checks, rather than printing fixed expected values. Its completed stdout supports the note's negative conclusion, with only small rounding differences.
 - **rationale:** The cited upstream authority is retained_no_go and is used only as the prior failed Gaussian-packet baseline. The new load-bearing result is produced by a completed first-principles numerical harness over the specified model and not by a definition, renaming, external comparator, or tuned numerical match. The conclusion is appropriately scoped as a no-go for this two-pass self-focusing Gaussian route, not as a proof that all matter closure is impossible.
+- **auditor confidence:** high
+
+### `memory_decay_diagnosis_2026-04-11`
+
+- **Note:** [`MEMORY_DECAY_DIAGNOSIS_2026-04-11.md`](../../docs/MEMORY_DECAY_DIAGNOSIS_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** At the current parameters of scripts/frontier_memory_mu2_size_sweep.py, the toy runner's measured memory varies by more than 10x across N in both relative and fixed geometry slices, with fixed-vs-relative disagreement for N=81, 101, and 121.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T174300Z-02605cb9-memory_decay_diagnosis_2-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both slices vary by more than an order of magnitude as N changes, and the two slices disagree sharply for the same N; the measured memory is not geometry-invariant or N-invariant at this runner's parameters.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely computes the field/matter evolution and derives the memory values from simulated separations rather than hard-coding the table. The cached stdout matches the note's load-bearing values and supports the narrowed geometry- and N-sensitivity claim within the stated runner boundary.
+- **rationale:** The narrowed claim is only about this toy runner at specified parameters, not the historical Yukawa-screening interpretation. The provided source builds the ring operators, evolves the system, and computes memory values without importing prior note data or expected outputs. The output supports more-than-order-of-magnitude variation in both slices and strong fixed-vs-relative disagreement for N=81, 101, and 121; N=61 coincides because the fixed geometry matches the relative geometry there.
 - **auditor confidence:** high
 
 ### `memory_mu2_geometry_sweep_note_2026-04-11`

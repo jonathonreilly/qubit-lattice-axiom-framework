@@ -172,3 +172,10 @@ Expected runtime: ~15 seconds. Expected summary:
 ```text
 SUMMARY: THEOREM PASS=1 SUPPORT=1 FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [su3_cube_index_graph_shortcut_open_gate_note_2026-05-03](SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md)
+- [gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03](GAUGE_SCALAR_BRIDGE_3PLUS1_NATIVE_TUBE_STAGING_GATE_2026-05-03.md)

@@ -270,3 +270,9 @@ conditional algebra is exact and runner-verified.
   said this approach cannot remove the blocker)
 - Not an automatic promotion of any audited_conditional row
 - Not a numerical-prediction change
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)

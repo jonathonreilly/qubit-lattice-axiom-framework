@@ -378,3 +378,10 @@ All eight verifications use only NumPy/SciPy and complete in under one minute on
 - Companion Δ_T > 0 note: `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (sibling-evidence; the LR bound proved here stands structurally without needing the companion's retained status — they compose downstream, but neither is a load-bearing dep of the other).
 - Mass-gap bridge (retained_bounded, load-bearing one-hop authority for the gap-input dep used in §5/§6): [`docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
 - Strong-CP/operator-basis input (conditional for staggered+Wilson): `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note; backticked as sibling-only — Leg A composition for T_full only, the LR proof is bosonic-side).
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
+- [strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)

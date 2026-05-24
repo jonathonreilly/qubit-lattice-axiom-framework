@@ -477,3 +477,10 @@ not addressed by this addendum.
 This source note is a bounded closed-form derivation proposal. The audit
 lane sets the effective status after independent review of the runner,
 the derivation steps, and the slit-plane length identification.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10](NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md)
+- [nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10](NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md)

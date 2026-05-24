@@ -374,3 +374,9 @@ Current output:
 ```text
 Summary: PASS=34  FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30](PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)

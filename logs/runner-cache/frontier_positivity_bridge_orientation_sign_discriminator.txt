@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_positivity_bridge_orientation_sign_discriminator.py
+runner_sha256: d92af88cce7d0a97cbc91cde6bbd03e73d702c5548200098dbb6cbe106bc8ab3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+============================================================================
+WHICH POSITIVITY BREAKS S_3 -> C_3:  det-magnitude vs orientation-sign
+============================================================================
+
+----------------------------------------------------------------------------
+(A) staggered det(D+mI): identical & positive under id / transposition / 3-cycle
+----------------------------------------------------------------------------
+  [PASS] det > 0 for identity ordering  (sign=+1)
+  [PASS] det > 0 for transposition ordering  (sign=+1)
+  [PASS] det > 0 for 3-cycle ordering  (sign=+1)
+  [PASS] det identical under transposition (reflection-even)  (Δlogdet=0.00e+00)
+  [PASS] det identical under 3-cycle  (Δlogdet=0.00e+00)
+  [PASS] => det-magnitude positivity is S_3-INVARIANT (trivial rep): breaks nothing
+
+----------------------------------------------------------------------------
+(B) orientation sign sgn(sigma) = det(perm matrix): the sign representation
+----------------------------------------------------------------------------
+  [PASS] sgn = +1 on identity and the two 3-cycles
+  [PASS] sgn = -1 on the three transpositions
+  [PASS] orientation-positive subset {sgn=+1} is EXACTLY C_3 = A_3  ([(0, 1, 2), (1, 2, 0), (2, 0, 1)])
+  [PASS] trivial rep (det-magnitude 'is positive') is constant on S_3 -> selects all S_3
+
+============================================================================
+VERDICT
+============================================================================
+  THE DET-POSITIVITY BRIDGE DOES NOT CLOSE.
+  (A) The retained staggered determinant positivity det(D+mI) > 0 is
+      S_3-INVARIANT (reflection-even): identical and positive under a
+      transposition and a 3-cycle. It is a trivial-representation
+      constraint, so it CANNOT break S_3 -> C_3 -- it selects all of
+      S_3 and breaks nothing.
+  (B) A one-dimensional route to C_3 requires coupling to the SIGN
+      (orientation) representation: the {sgn=+1} subset is exactly C_3.
+      A handedness / orientation-sign positivity would be that route,
+      but deriving such a framework constraint remains separate.
+
+  Honest consequence: `staggered_only_det_positivity` is the wrong
+  positivity for this bridge. A one-dimensional route requires
+  independently identifying, in the framework, an ORIENTATION-SIGN
+  positivity (handedness selection).
+  That is the precise, corrected next target -- the det-positivity
+  route is closed.
+
+============================================================================
+PASS=10 FAIL=0
+
+----- stderr -----
+

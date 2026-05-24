@@ -1,19 +1,30 @@
 # Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem
 
-**Date:** 2026-05-17
+**Date:** 2026-05-17 (audit-conditional repair 2026-05-24: load-bearing
+surface restated as the **unnormalized** convolution identification
+`R_beta^env chi_(p,q) = (1 / z_(0,0)^env(beta)) C_(Z_beta^env) chi_(p,q)`
+at every weight, removing the `kappa_(0,0)(beta) = 1` normalization
+premise from the load-bearing conclusion. The previous normalized form
+`R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` is demoted to an
+explicit additional-normalization hypothesis for future work — see
+`## 2026-05-24 audit-conditional repair` below.)
 **Type:** positive_theorem
 **Claim scope:** the standalone per-weight-at-all-weights algebraic
 identification, on the marked-plaquette `SU(3)` class-function sector, of
 the residual source-sector operator `R_beta^env` — defined as the
 operator obtained by stripping `exp[(beta/2) J]` on both sides of the
 one-step Wilson source-sector kernel `K_beta^src` and then stripping the
-marked four-link mixed-kernel factor `D_beta^loc` — with the central
-convolution operator `C_(Z_beta^env / z_(0,0)^env(beta))` by the boundary
-class function `Z_beta^env(W)`, established as a per-weight diagonal
-action at every weight `(p,q) in P_+(SU(3))` (no finite-box truncation
-applied to the conclusion, no L^2-closure operator equality on the full
-infinite-dimensional Hilbert space asserted), under three cited retained
-authorities:
+marked four-link mixed-kernel factor `D_beta^loc` — with the
+**unnormalized** central convolution operator `C_(Z_beta^env)` by the
+boundary class function `Z_beta^env(W)`, divided by the positive scalar
+`z_(0,0)^env(beta)`, established as a per-weight diagonal action at
+every weight `(p,q) in P_+(SU(3))` (no finite-box truncation applied to
+the conclusion, no L^2-closure operator equality on the full
+infinite-dimensional Hilbert space asserted, and the normalized form
+`R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` is **not** asserted as
+load-bearing — that form requires the additional normalization
+hypothesis `kappa_(0,0)(beta) = 1` which is out-of-scope under this
+narrow), under three cited retained authorities:
 
 - (I1) the retained `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
   (retained_bounded, audited_clean) supplying the structural
@@ -152,26 +163,41 @@ Z_beta^env(W) = z_(0,0)^env(beta) sum_{(p,q) in P_+(SU(3))}
 with `z_(0,0)^env(beta) > 0`, `rho_(0,0)^env(beta) = 1`,
 `rho_(p,q)^env(beta) >= 0`, and `rho_(p,q)^env(beta) = rho_(q,p)^env(beta)`.
 
-**Conclusion (T3) (per-weight structural identification at all weights).**
-Under (I1), (I2), (I3), at every weight `(p, q) in P_+(SU(3))` the
-eigenvalue of `R_beta^env` on `chi_(p,q)` equals the eigenvalue of the
-normalized convolution operator `C_(Z_beta^env / z_(0,0)^env(beta))` on
-the same basis element:
+**Conclusion (T3) (per-weight structural identification at all weights,
+unnormalized form).** Under (I1), (I2), (I3), at every weight
+`(p, q) in P_+(SU(3))` the eigenvalue of `R_beta^env` on `chi_(p,q)`
+equals the eigenvalue of the **unnormalized** central convolution
+operator `C_(Z_beta^env)` on the same basis element, divided by the
+positive scalar `z_(0,0)^env(beta)`:
 
 ```text
 R_beta^env chi_(p,q)
    =  (kappa_(p,q)(beta) / a_(p,q)(beta)^4) chi_(p,q)
-   =  rho_(p,q)^env(beta) chi_(p,q)
-   =  C_(Z_beta^env / z_(0,0)^env(beta)) chi_(p,q)                           (T3)
+   =  (z_(p,q)^env(beta) / z_(0,0)^env(beta)) chi_(p,q)
+   =  (1 / z_(0,0)^env(beta)) C_(Z_beta^env) chi_(p,q)                       (T3)
 ```
 
 i.e. the two operators agree on every basis element of the
-marked-plaquette class-function sector at all weights. This is the
-**load-bearing per-weight structural identification at all weights**
-between the stripped residual factor and the compressed unmarked spatial
-Wilson environment. (No L^2-closure or convergence claim is made about
-the operator equality on the full infinite-dimensional Hilbert space `H`;
-the conclusion is the per-weight diagonal action.)
+marked-plaquette class-function sector at all weights, up to division by
+the positive scalar `z_(0,0)^env(beta)`. This is the **load-bearing
+per-weight structural identification at all weights** between the
+stripped residual factor and the unnormalized convolution by the
+boundary class function of the unmarked spatial Wilson environment
+compression. (No L^2-closure or convergence claim is made about the
+operator equality on the full infinite-dimensional Hilbert space `H`;
+the conclusion is the per-weight diagonal action of the unnormalized
+identity.)
+
+The **normalized** convolution form
+`R_beta^env chi_(p,q) = C_(Z_beta^env / z_(0,0)^env(beta)) chi_(p,q)` is
+algebraically equivalent to `(T3)` whenever the additional normalization
+hypothesis `kappa_(0,0)(beta) = 1` holds (so that
+`rho_(0,0)^env(beta) = 1`, making `Z_beta^env / z_(0,0)^env(beta)` a
+trivially-normalized central class function in the sense of (I3)). This
+normalization premise is **not** supplied by the three cited
+authorities (I1)+(I2)+(I3) and is **not** load-bearing under this narrow
+theorem; see `## 2026-05-24 audit-conditional repair` for the
+out-of-scope statement.
 
 **Conclusion (T4) (uniqueness of the per-weight eigenvalue sequence).**
 The per-weight sequence `(rho_(p,q)^env(beta))_{(p,q) in P_+(SU(3))}` is
@@ -229,38 +255,56 @@ The structural properties follow term by term from those of
 By `(T1)`, the eigenvalue of `R_beta^env` on `chi_(p,q)` is
 `rho_(p,q)^env(beta) = kappa_(p,q)(beta) / a_(p,q)(beta)^4`.
 
-By `(T2)`, the character coefficient of `Z_beta^env(W) / z_(0,0)^env(beta)`
-at weight `(p, q)` is `z_(p,q)^env(beta) / z_(0,0)^env(beta) =
-kappa_(p,q)(beta) / a_(p,q)(beta)^4` (by `(D2)`).
+By `(T2)`, the character coefficient of `Z_beta^env(W)` at weight
+`(p, q)` is
+`z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) z_(0,0)^env(beta)`
+(by `(D2)`).
 
-By (I3) applied to the finite truncation `B_N` containing `(p, q)`,
-normalized convolution by `Z_beta^env(W) / z_(0,0)^env(beta)` acts on
-`chi_(p,q)` diagonally with eigenvalue `kappa_(p,q)(beta) /
-a_(p,q)(beta)^4`. (The retained narrow theorem (I3) states the equivalence
-on any finite `B_N`; per-weight, applying it at any `N >= max(p, q)`
-gives the diagonal-action identity for `chi_(p,q)`.)
+The unnormalized central convolution operator `C_(Z_beta^env)` on the
+character basis is the diagonal operator
+`C_(Z_beta^env) chi_(p,q) = z_(p,q)^env(beta) chi_(p,q)` at every weight
+`(p, q) in P_+(SU(3))`, by Schur orthogonality on `SU(3)` applied to the
+Peter-Weyl expansion `(T2)` of `Z_beta^env(W)`. (This is the
+unnormalized form of the convolution-eigenvalue identity; it does not
+invoke (I3)'s `rho_(0,0) = 1` premise.) Substituting `(D2)`,
 
-Hence the eigenvalue of `R_beta^env` on `chi_(p,q)` and the eigenvalue of
-`C_(Z_beta^env / z_(0,0)^env(beta))` on `chi_(p,q)` are both
-`kappa_(p,q)(beta) / a_(p,q)(beta)^4`. Since this holds at every weight
-`(p, q) in P_+(SU(3))`, the two operators agree on every basis element
-of the marked-plaquette class-function sector at all weights, which is
-`(T3)`. ∎
+```text
+C_(Z_beta^env) chi_(p,q)
+   =  z_(p,q)^env(beta) chi_(p,q)
+   =  (kappa_(p,q)(beta) / a_(p,q)(beta)^4) z_(0,0)^env(beta) chi_(p,q).      (T3.U)
+```
 
-**Remark on the physical reading of `(T3)`.** The structural identification
-`(T3)` is independent of any specific analytic value of `kappa_(p,q)(beta)`
-or `a_(p,q)(beta)`. It identifies, at all weights, the operator
-`R_beta^env` defined by stripping `exp[(beta/2) J]` and `D_beta^loc` from
-`T_src(beta)` with central convolution by the central class function
-`Z_beta^env(W) / z_(0,0)^env(beta)`. By the construction in `(D2)`,
-`Z_beta^env` is the boundary class function of the unmarked spatial
-Wilson environment compression: it represents the contribution to
-`D_beta` from the unmarked-DOF integration after the marked four-link
-mixed-kernel factor (by (I2)) and the marked half-slice multipliers (by
-(I1)) are factored out. The audit-named "compression of the unmarked
-spatial Wilson environment on the marked source sector" is therefore
-exactly `C_(Z_beta^env / z_(0,0)^env(beta))`, and `(T3)` is the structural
-all-weight equality the parent gate names as the open derivation step.
+Dividing both sides of `(T3.U)` by the positive scalar `z_(0,0)^env(beta)`,
+
+```text
+(1 / z_(0,0)^env(beta)) C_(Z_beta^env) chi_(p,q)
+   =  (kappa_(p,q)(beta) / a_(p,q)(beta)^4) chi_(p,q)
+   =  R_beta^env chi_(p,q),
+```
+
+which is `(T3)` at the fixed weight `(p, q)`. Since this holds at every
+weight `(p, q) in P_+(SU(3))`, the unnormalized convolution identity
+`(T3)` holds on every basis element of the marked-plaquette
+class-function sector at all weights. ∎
+
+**Remark on the physical reading of `(T3)`.** The unnormalized structural
+identification `(T3)` is independent of any specific analytic value of
+`kappa_(p,q)(beta)` or `a_(p,q)(beta)`. It identifies, at all weights,
+the operator `R_beta^env` defined by stripping `exp[(beta/2) J]` and
+`D_beta^loc` from `T_src(beta)` with `1 / z_(0,0)^env(beta)` times the
+unnormalized central convolution by the central class function
+`Z_beta^env(W)`. By the construction in `(D2)`, `Z_beta^env` is the
+boundary class function of the unmarked spatial Wilson environment
+compression: it represents the contribution to `D_beta` from the
+unmarked-DOF integration after the marked four-link mixed-kernel factor
+(by (I2)) and the marked half-slice multipliers (by (I1)) are factored
+out. The audit-named "compression of the unmarked spatial Wilson
+environment on the marked source sector" is therefore exactly
+`(1 / z_(0,0)^env(beta)) C_(Z_beta^env)`, and `(T3)` is the structural
+all-weight unnormalized equality this narrow note isolates. The
+normalized form `R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` is
+algebraically equivalent under the additional normalization hypothesis
+`kappa_(0,0)(beta) = 1`, which is out-of-scope here.
 
 `(T4)`. The diagonal eigenvalues of `R_beta^env` on the orthonormal
 character basis uniquely determine the per-weight action of the operator
@@ -278,10 +322,11 @@ coincide at every weight. ∎
 - `(T2)`: per-weight Peter-Weyl character expansion of the boundary class
   function `Z_beta^env(W)` with coefficients `(D2)` at every weight.
 - `(T3)`: the **load-bearing per-weight structural identification at all
-  weights**: at every `(p, q) in P_+(SU(3))`, `R_beta^env chi_(p,q) =
-  C_(Z_beta^env / z_(0,0)^env(beta)) chi_(p,q)` as diagonal actions on
-  the orthonormal character basis of the marked-plaquette class-function
-  sector. No finite-box truncation applied to the conclusion.
+  weights, in unnormalized form**: at every `(p, q) in P_+(SU(3))`,
+  `R_beta^env chi_(p,q) = (1 / z_(0,0)^env(beta)) C_(Z_beta^env) chi_(p,q)`
+  as diagonal actions on the orthonormal character basis of the
+  marked-plaquette class-function sector. No finite-box truncation
+  applied to the conclusion.
 - `(T4)`: uniqueness of the diagonal eigenvalue sequence
   `rho_(p,q)^env(beta)`.
 
@@ -315,6 +360,16 @@ coincide at every weight. ∎
   per-weight-at-all-weights formulation `(T3)` is the conclusion; closure
   to an L^2 operator equality would require an asymptotic decay bound on
   `rho_(p,q)^env(beta)` in `(p,q)`, which is separately open work.
+- Does **not** assert the **normalized** convolution identity
+  `R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` as load-bearing.
+  That stronger identity requires the additional normalization
+  hypothesis `kappa_(0,0)(beta) = 1` (so that `rho_(0,0)^env(beta) = 1`
+  and `Z_beta^env / z_(0,0)^env(beta)` is a trivially-normalized central
+  class function in the sense of (I3)). The three cited authorities
+  (I1)+(I2)+(I3) do **not** supply `kappa_(0,0)(beta) = 1`: (I1)
+  guarantees only `kappa_(0,0)(beta) > 0`. The normalized form is
+  out-of-scope under this narrow; see
+  `## 2026-05-24 audit-conditional repair` below.
 - Does **not** close the framework-point `beta = 6` Perron data, the
   explicit `rho_(p,q)(6)` analytic formula, the full unmarked spatial
   Wilson tensor-transfer / Perron problem, or analytic `P(6)`.
@@ -399,9 +454,13 @@ verifies symbolically (sympy-based, class-A) that:
 2. `(T2)` Peter-Weyl character expansion of `Z_beta^env` with the
    coefficients given by `(D2)`.
 3. `(T3)` structural eigenvalue equality `kappa_(p,q) / a_(p,q)^4 =
-   z_(p,q)^env / z_(0,0)^env` symbolically, with `R_beta^env =
-   C_(Z_beta^env / z_(0,0)^env)` reduced to identity on every basis
-   character.
+   z_(p,q)^env / z_(0,0)^env` symbolically. (The same symbolic check
+   establishes the unnormalized load-bearing form
+   `R_beta^env chi_(p,q) = (1 / z_(0,0)^env) C_(Z_beta^env) chi_(p,q)`
+   on every basis character. The normalized form
+   `R_beta^env = C_(Z_beta^env / z_(0,0)^env)` is a downstream
+   reformulation under the additional normalization hypothesis
+   `kappa_(0,0)(beta) = 1`, not load-bearing on this narrow row.)
 4. `(T4)` uniqueness: two diagonal central operators with distinct
    eigenvalue sequences are unequal.
 5. Algebraic compatibility: the symbolic identity
@@ -419,6 +478,113 @@ verifies symbolically (sympy-based, class-A) that:
    sequences.
 
 Expected runner summary: `PASS=20 FAIL=0`.
+
+## 2026-05-24 audit-conditional repair
+
+This block is a source-only header narrow per the `audited_conditional`
+repair pattern. No PDG values, no fitted selectors, no new framework
+axioms, no new framework primitives, no manual audit verdict edits, no
+runner changes. The retained scope of this note is narrowed below;
+status authority remains with the independent audit lane.
+
+### Audit verdict addressed
+
+The 2026-05-23 audit (`audited_conditional`) flagged that I3's
+trivial-channel premise `rho_(0,0) = 1` requires
+`kappa_(0,0)(beta) / a_(0,0)(beta)^4 = 1`; with `a_(0,0)(beta) = 1` (by
+the trivial-irrep convolution-eigenvalue formula of I2), this reduces to
+the missing normalization `kappa_(0,0)(beta) = 1`. The cited authorities
+(I1)+(I2) supply only `kappa_(0,0)(beta) > 0`; they do not normalize
+`kappa_(0,0)(beta)` to `1`. The auditor's repair target was:
+
+> "prove or cite a retained normalization giving kappa_(0,0)(beta)=1 for
+> the stripped residual, or restate the claim as unnormalized
+> convolution."
+
+This repair takes the **second option**: the load-bearing per-weight
+identification `(T3)` is restated as the **unnormalized** convolution
+identity `R_beta^env chi_(p,q) = (1 / z_(0,0)^env(beta)) C_(Z_beta^env)
+chi_(p,q)` at every weight. This unnormalized identity follows from
+Schur orthogonality on `SU(3)` applied to the Peter-Weyl expansion `(T2)`
+of `Z_beta^env(W)`, **without** invoking the I3 normalization premise
+`rho_(0,0) = 1`. The normalization premise is therefore removed from the
+load-bearing surface of this row.
+
+### Retained scope (in-scope under this narrow)
+
+The retained class-A algebraic content of this note is the unnormalized
+per-weight identity `(T3)` as restated above:
+
+```text
+R_beta^env chi_(p,q)  =  (1 / z_(0,0)^env(beta)) C_(Z_beta^env) chi_(p,q)
+                      =  (kappa_(p,q)(beta) / a_(p,q)(beta)^4) chi_(p,q)
+                         at every weight (p, q) in P_+(SU(3)).
+```
+
+together with the structural diagonality `(T1)`, the per-weight
+Peter-Weyl expansion `(T2)`, and the per-weight uniqueness `(T4)`. The
+runner's symbolic checks of the eigenvalue equality
+`kappa_(p,q) / a_(p,q)^4 = z_(p,q)^env / z_(0,0)^env` continue to carry
+the load-bearing identity in its unnormalized form; no runner change is
+required.
+
+### Additional normalization hypothesis (out-of-scope under this narrow)
+
+The **normalized** convolution form
+
+```text
+R_beta^env  =  C_(Z_beta^env / z_(0,0)^env(beta))                     (NORM)
+```
+
+is algebraically equivalent to the unnormalized `(T3)` whenever the
+additional hypothesis
+
+```text
+kappa_(0,0)(beta)  =  1                                              (KN)
+```
+
+is supplied as a retained input (so that `rho_(0,0)^env(beta) = 1` and
+`Z_beta^env / z_(0,0)^env(beta)` is a trivially-normalized central
+class function in the sense of (I3)). Under this narrow, `(KN)` is
+**explicitly admitted-and-not-derived** and `(NORM)` is **not** asserted
+as a load-bearing conclusion. A future cite-or-derive follow-up is
+queued: a retained normalization theorem on this branch (or an existing
+retained authority) that proves or cites `kappa_(0,0)(beta) = 1` for
+the stripped residual-environment operator would, by purely algebraic
+substitution, promote `(T3)` to the normalized form `(NORM)`. Until
+that input is supplied, the load-bearing surface of this row is the
+unnormalized `(T3)` only.
+
+### What the narrow does **not** change
+
+- The companion runner
+  `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py`
+  is unchanged. Its symbolic check of the eigenvalue identity
+  `kappa_(p,q) / a_(p,q)^4 = z_(p,q)^env / z_(0,0)^env` carries the
+  unnormalized load-bearing `(T3)` directly: dividing `C_(Z_beta^env)`
+  by the positive scalar `z_(0,0)^env(beta)` is a class-A algebraic
+  operation that the runner's symbolic-eigenvalue check already
+  performs. No runner change required.
+- The three cited dependencies (I1)+(I2)+(I3) and the upstream
+  transfer-operator authority are not touched; their status authority
+  remains with the audit pipeline.
+- The parent gate
+  `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
+  is not touched; its parent-level closure remains outside this narrow
+  theorem's scope.
+- The "Relation to the parent residual-environment identification
+  note" section above continues to describe the structural identification
+  step; the narrow now isolates it in unnormalized form.
+
+### Status authority disclaimer
+
+This section is descriptive, not promotional. The independent audit
+lane retains sole authority over the effective status of this row.
+This repair does not promote, retain, or change any audit status; it
+only narrows the **source-side retained scope** of the load-bearing
+identification `(T3)` to the unnormalized form and elevates the
+normalized form `(NORM)` and the premise `kappa_(0,0)(beta) = 1` to
+explicit out-of-scope additional normalization hypothesis.
 
 ## Cross-references
 

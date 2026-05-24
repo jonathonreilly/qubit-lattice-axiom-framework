@@ -22,10 +22,13 @@ consequences under those premises; it does not derive them.
 This 2026-05-10 repair makes the conditional hypotheses explicit at the head
 of the note (rather than only restating them under "What is still assumed"
 near the tail), restates the load-bearing claim as a conditional bounded
-card, and points the staggered-Dirac structure at its `A_min` anchor in
-[`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) (A3) so that
-the card no longer reads as deriving Dirac structure from inside itself.
-Numeric content of the card is unchanged.
+card, and originally pointed the staggered-Dirac structure at its `A_min`
+anchor in [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+(A3) so that the card no longer reads as deriving Dirac structure from
+inside itself. The 2026-05-24 repair (see "2026-05-24 audit-conditional
+repair" below) replaces the meta-only `MINIMAL_AXIOMS` anchor with citations
+to the retained staggered-Dirac substep chain and acknowledges the retained
+H2 narrow theorem. Numeric content of the card is unchanged.
 
 ## Conditional Hypotheses (admitted_context_inputs)
 
@@ -41,7 +44,12 @@ this note from `A_min`:
   Newton-style screened gravity.
 - **(H2) Positive source.** The matter source is `rho = |psi|^2 >= 0` so
   that `Phi >= 0` follows mathematically from positivity of the resolvent
-  `(L + mu^2)^{-1}` against a non-negative source.
+  `(L + mu^2)^{-1}` against a non-negative source. The forward chain
+  `rho >= 0 ==> Phi >= 0` is derived as a retained Class-A theorem in
+  [`STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+  (Stieltjes / non-singular M-matrix). The H2 admission as stated in this
+  card is therefore conditional on H1 only; the resolvent-positivity half
+  is no longer a fresh import.
 - **(H3) Free positive coupling `G`.** `G` is a free positive parameter of
   the harness; the reported strengths `G in {8.0, 50.0, ...}` are operating
   points, not predicted couplings.
@@ -61,15 +69,26 @@ this note from `A_min`:
   positive `rho` give `Phi >= 0`. Inverting `Phi -> -Phi` inverts the
   measured force; the sign-test column below documents that this inversion
   has been exercised on the canonical cubic card.
-- **(H9) Staggered-Dirac structure cited from A_min surface.** The
-  Kogut–Susskind staggered Hamiltonian (the staggering phases `eta_mu(x)`,
-  `epsilon(x)`, and the diagonal mass term used in `H_diag`) is the same
-  staggered-Dirac structure carried by the framework's
-  `Cl(3) / Z^3` minimal stack as recorded in
-  [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) (item A3:
-  "the finite local Grassmann / staggered-Dirac partition and the lattice
-  operators built on that surface"). This card cites that staggered-Dirac
-  structure but does not itself derive or ratify it.
+- **(H9) Staggered-Dirac structure cited from retained substep chain.**
+  The Kogut–Susskind staggered Hamiltonian (the staggering phases
+  `eta_mu(x)`, `epsilon(x)`, and the diagonal mass term used in `H_diag`)
+  is the same staggered-Dirac structure carried by the retained
+  staggered-Dirac substep chain:
+  [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+  (substep 1, Grassmann forcing),
+  [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  (substep 2, Kähler–Dirac equivalence),
+  [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
+  (substep 3, BZ-corner Hamming orbit),
+  [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+  (substep 3, species reduction bridge), and
+  [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  (substep 4, AC-λ simultaneous diagonalization bridge). This card cites
+  the retained substep chain as the staggered-Dirac authority but does not
+  itself derive or ratify it; the legacy `A_min` / A3 surface label has
+  been superseded by the substep chain. The earlier
+  [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) anchor is
+  retained only as historical context (meta, superseded).
 
 The bounded claim of this card is therefore: **conditional on (H1)–(H9),
 the registered parity-coupled runner outputs reproduce the score surface
@@ -326,8 +345,10 @@ that downstream readers cross-checking the original tail catch the same set:
 5. **The specific graph families** — admitted as (H6); bipartite structure is
    required by the staggering, but which graph is not predicted
 6. **Staggered-Dirac structure** — admitted as (H9); cited from the
-   `Cl(3) / Z^3` `A_min` surface per `MINIMAL_AXIOMS_2026-04-11.md` (A3),
-   not derived inside this card
+   retained staggered-Dirac substep chain (substeps 1–4 as listed in
+   (H9) above), not derived inside this card. The earlier
+   `MINIMAL_AXIOMS_2026-04-11.md` A3 anchor is superseded by the substep
+   chain.
 
 ## Caveats
 
@@ -348,3 +369,64 @@ that downstream readers cross-checking the original tail catch the same set:
 5. **Emergent geometry** — force direction is mixed/measurement-dependent on
    grown graphs. Not included in this card until it passes a two-metric gate
    across seeds and sizes.
+
+## 2026-05-24 audit-conditional repair: cite retained substep chain + H2 narrow theorem
+
+Per the 2026-05-22 `audited_conditional` verdict, this card's only cited
+authority for the staggered-Dirac anchor was the superseded meta note
+[`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) (claim_type
+`meta`), and the H2 admission did not acknowledge the retained Class-A
+positivity theorem landed 2026-05-17. This repair re-anchors both
+citations against retained authorities. It does NOT promote the card; the
+audit posture remains conditional on the still-unresolved imports
+(`H1, H3, H4, H5, H6, H7, H8`) and continues to await independent re-audit.
+
+### Concrete edits
+
+1. **(H2) — Positive source.** Updated to cite the retained Class-A
+   theorem
+   [`STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+   (`retained`, `positive_theorem`). That note proves the forward chain
+   `rho >= 0 ==> Phi >= 0` from standard linear algebra (Stieltjes /
+   non-singular M-matrix). The H2 admission in this card now reads as
+   conditional on H1 only; the resolvent-positivity half is no longer a
+   fresh import.
+
+2. **(H9) — Staggered-Dirac structure.** Re-anchored from the superseded
+   meta `MINIMAL_AXIOMS_2026-04-11.md` (A3) to the retained
+   staggered-Dirac substep chain:
+   - [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) (`retained_bounded`)
+   - [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) (`retained_bounded`)
+   - [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) (`retained`)
+   - [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) (`retained_bounded`)
+   - [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md) (`retained`)
+
+   The card cites the retained substep chain as the staggered-Dirac
+   authority; H9 itself remains admitted (this card does not derive the
+   staggered-Dirac structure).
+
+### What this repair does NOT do
+
+- Does **not** derive H1 (the screened-Poisson bridge equation
+  `(L + mu^2 I) Phi = G rho`). H1 remains the missing physics bridge from
+  the framework surface to a graph-Laplacian screened-Poisson equation
+  and continues as an imported harness premise.
+- Does **not** prove the force-direction (sign-flip) half of H8.
+- Does **not** discharge H3, H4, H5, H6, or H7. Those remain
+  operating-point admissions.
+- Does **not** modify any numeric content of the card or any runner.
+- Does **not** introduce new mathematics; the H2 theorem and substep
+  chain were already retained before this repair.
+- Does **not** set a new audit verdict. Re-audit is required for the
+  effective_status to update.
+
+### Remaining admitted bundle after this repair
+
+After this repair the admitted bundle reads as: `{H1, H3, H4, H5, H6,
+H7, H8, H9}` with H9 now anchored at the retained substep chain rather
+than the superseded meta surface, and H2 represented by a retained
+Class-A theorem covering the forward positivity chain (H2 antecedent
+plus H1-shape resolvent positivity). Promotion to retained closure still
+requires retaining the screened-Poisson bridge H1 itself (or splitting
+the card scope explicitly to exclude H1-dependent rows), plus closing
+H8's sign-flip half.

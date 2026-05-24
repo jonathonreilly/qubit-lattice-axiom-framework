@@ -100296,9 +100296,9 @@
       "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_bridge_support_note",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem (bridge-support stack)",
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
@@ -100307,9 +100307,7 @@
       "deps": [
         "gauge_scalar_temporal_completion_theorem_note",
         "scalar_3plus1_temporal_ratio_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "direct_in_degree": 8,
       "effective_status": "unaudited",
@@ -100325,7 +100323,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "a85d7eaf4c85f10e75a09ef5d1d5e535294728441521ed511f903c5322f5e6b1",
+      "note_hash": "40f8978ecf95b590d369276fa858baec19abd5a9ed47e7a0455bf8e7543df22d",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -100456,7 +100454,7 @@
         "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-      "title": "Gauge-Vacuum Plaquette Scalar-Bridge Support",
+      "title": "Gauge-Vacuum Plaquette Scalar-Bridge Finite Support Packet",
       "transitive_descendants": 1021,
       "verdict_rationale": null
     },
@@ -101306,7 +101304,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.517,
+      "load_bearing_score": 13.515,
       "load_bearing_step": "Construct tensor_word = diag_c \u00b7 (N_f + N_fbar) \u00b7 diag_c \u00b7 (N_f + N_fbar)^T \u00b7 diag_c on the NMAX=4 box and directly verify (P1) min entries >= 0, (P2) swap commutation, and (P3) nonnegative boundary0 readout.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -101327,7 +101325,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
       "title": "Gauge-Vacuum Plaquette Finite Tensor-Word Packet \u2014 Bounded Note",
-      "transitive_descendants": 1035,
+      "transitive_descendants": 1034,
       "verdict_rationale": "The runner source genuinely constructs the finite coefficient vector from the Schur-Weyl Bessel determinant, builds the SU(3) fundamental and anti-fundamental fusion matrices, forms tensor_word, and checks P1-P3 directly. The one-hop Wilson coefficient authority is marked retained_bounded, and the remaining fusion multiplicity input is explicitly admitted as bounded textbook input on the finite box. The note's boundaries exclude the open parent matrix-element identity and untruncated transfer construction, so no broader claim is imported."
     },
     "gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19": {
@@ -105513,7 +105511,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 18.515,
+      "load_bearing_score": 18.514,
       "load_bearing_step": "The runner computes normalized one-link Wilson coefficients a_(p,q)(6), builds D_6^loc = diag(a_(p,q)(6)^4), and checks the finite package K_6^loc = exp(3J) D_6^loc exp(3J) on the finite dominant-weight box.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -105841,7 +105839,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
       "title": "Gauge-Vacuum Plaquette Local Wilson Factor Finite Packet",
-      "transitive_descendants": 1034,
+      "transitive_descendants": 1033,
       "verdict_rationale": "Within the narrowed bounded scope, the load-bearing finite computation is directly implemented in the runner and the remaining checks are algebraic properties of the constructed finite matrices. The cited authorities are retained-grade or retained_bounded, and the note does not rely on their open stronger mixed-kernel claims. The runner includes no helper opacity and no hard-coded expected coefficient table."
     },
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note": {
@@ -106910,7 +106908,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.014,
+      "load_bearing_score": 14.013,
       "load_bearing_step": "The runner computes rho_(p,q)(6) = c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) from the Schur-Weyl Bessel-determinant formula and inserts those computed values as the diagonal R_6^packet in exp(3J) D_6^loc R_6^packet exp(3J), replacing the prior witness.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -107105,7 +107103,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual Environment Finite Coefficient Packet",
-      "transitive_descendants": 1033,
+      "transitive_descendants": 1032,
       "verdict_rationale": "Within the bounded scope, the load-bearing coefficient packet is computed in the runner rather than hard-coded or imported from the retired witness. The matrix checks then close over those computed coefficients and retained bounded upstream coefficient authority. The broader equality between the stripped residual source-sector operator and the compressed unmarked spatial Wilson environment remains open, but that equality is explicitly outside this narrowed claim."
     },
     "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17": {
@@ -107221,13 +107219,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 12,
+      "direct_in_degree": 11,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 19.027,
+      "load_bearing_score": 18.525,
       "load_bearing_step": "The runner computes rho_(p,q)(6)=c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) on 0<=p,q<=4 by both a Bessel-determinant formula and direct SU(3) Weyl torus integration, with max absolute disagreement 4.136e-15.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -107248,7 +107246,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py",
       "title": "Gauge-Vacuum Plaquette Rho(p,q)(6) Wilson Environment Bounded Note",
-      "transitive_descendants": 1042,
+      "transitive_descendants": 1041,
       "verdict_rationale": "The load-bearing finite coefficient table is produced from the stated SU(3) Wilson integral by implemented Bessel-determinant and Weyl-integration computations, with no cited open dependency and no hard-coded expected rho values. The structural checks over the resulting finite diagonal operator are algebraic or numerical consequences of the computed table. The clean boundary is only the bounded single-link coefficient computation and finite-box structural gates, not the parent residual-environment identification, all-weight closure, or analytic P(6)."
     },
     "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": {
@@ -107327,7 +107325,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 20.018,
+      "load_bearing_score": 20.017,
       "load_bearing_step": "After stripping the two marked half-slice multipliers, the residual source-sector compression C_beta is central on class functions and therefore diagonal in the SU(3) character basis, giving T_src(beta)=exp[(beta/2)J] D_beta exp[(beta/2)J].",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -107349,7 +107347,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
       "title": "Gauge-Vacuum Plaquette Source-Sector Matrix-Element Factorization Theorem",
-      "transitive_descendants": 1036,
+      "transitive_descendants": 1035,
       "verdict_rationale": "The audited content is a bounded structural factorization, not a numerical evaluation of Wilson residual data. The runner supports this as a finite algebraic witness: it builds exp(3J), injects a generic positive conjugation-symmetric diagonal kappa, and verifies the factorized matrix formula. Because the claim explicitly excludes evaluation of D_6/kappa and Perron data, there is no hidden numerical closure being asserted."
     },
     "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17": {
@@ -107486,7 +107484,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 16.511,
+      "load_bearing_score": 16.51,
       "load_bearing_step": "The runner computes the finite normalized single-link Wilson coefficients rho_(p,q)(6) and packages them as the finite diagonal central character-measure packet C_(Z_6^packet).",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -107735,7 +107733,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
       "title": "Gauge-Vacuum Plaquette Spatial Environment Character-Measure Finite Packet",
-      "transitive_descendants": 1031,
+      "transitive_descendants": 1030,
       "verdict_rationale": "The cited upstream authorities are retained_bounded, and the source note narrows the claim to a finite packet rather than importing the open residual-environment theorem. The runner is not a print-only or hard-coded-value check: it computes the Wilson coefficients from the Schur-Weyl Bessel-determinant formula, checks normalization, positivity, conjugation symmetry, and verifies the finite factorized packet symmetries. The conclusion follows for the bounded packet only, with the actual full spatial-environment identification explicitly left open."
     },
     "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10": {
@@ -107880,7 +107878,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 18.015,
+      "load_bearing_score": 18.014,
       "load_bearing_step": "The runner constructs one explicit finite tensor-transfer matrix from the truncated Wilson coefficients and finite SU(3) fusion recurrences, then verifies nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -108214,7 +108212,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
       "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Bounded Packet",
-      "transitive_descendants": 1034,
+      "transitive_descendants": 1033,
       "verdict_rationale": "The claim has been narrowed to the exact finite tensor-word packet already retained upstream, and both cited authorities are retained_bounded. The primary runner is not a print-only certificate: it computes Bessel-determinant Wilson coefficients, builds SU(3) fundamental/anti-fundamental recurrence matrices, forms the tensor word, and checks the advertised finite properties. No external comparator or open full-environment identity is used as load-bearing for the bounded claim."
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": {
@@ -108292,7 +108290,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.514,
+      "load_bearing_score": 15.513,
       "load_bearing_step": "The runner constructs S_packet = exp(ETA J) D_packet exp(ETA J), eta_packet = exp(ETA J / 2) e_(0,0), and z_packet = S_packet^DEPTH eta_packet, then verifies the finite positivity, symmetry, normalization, and Perron-overlap properties.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -108443,7 +108441,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py",
       "title": "Gauge-Vacuum Plaquette Spatial Environment Transfer Finite Witness Packet",
-      "transitive_descendants": 1033,
+      "transitive_descendants": 1032,
       "verdict_rationale": "The source note\u2019s load-bearing claim is only the existence and verification of one finite constructed witness packet, and the provided runner actually computes that packet rather than importing or printing contested constants. The cited upstream authority is retained_bounded, and the open full Wilson-environment bridge is not used as a premise for this bounded claim. The conclusion therefore closes on its own finite terms while preserving the stated exclusions."
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": {
@@ -109180,13 +109178,13 @@
         "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
-      "direct_in_degree": 7,
+      "direct_in_degree": 6,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 13.508,
+      "load_bearing_score": 13.007,
       "load_bearing_step": "Given an explicit input rho, the source-sector operator T_src(6)=exp(3J) D_6^loc C_(Z_6^env) exp(3J) is solved by the runner for rho=1 and rho=delta, while varying admissible rho choices shows the local Wilson coefficients and SU(3) intertwiners do not uniquely fix rho.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -109338,7 +109336,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
       "title": "Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve",
-      "transitive_descendants": 1029,
+      "transitive_descendants": 1028,
       "verdict_rationale": "The primary runner is not a print-only artifact: it constructs the SU(3) dominant-weight recurrence, Bessel-determinant Wilson coefficients, diagonal rho choices, transfer matrices, Perron states, and convergence/sensitivity diagnostics. The two structural reference solves are therefore credible bounded finite computations given rho as input. The broader chain does not close as a positive theorem because multiple one-hop authorities are explicitly narrowed to finite packets and disclaim the actual operator-level residual-environment bridge that the source note still invokes. The no-go evidence also establishes non-uniqueness across enumerated parametric families, not a general impossibility of any 0-parameter or geometry-dependent derivation."
     },
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": {
@@ -109430,7 +109428,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 20.036,
+      "load_bearing_score": 20.035,
       "load_bearing_step": "The plaquette spectral measure is exactly the spectral measure of the explicit self-adjoint character-recurrence operator J in the positive transfer state induced by T_(L_s,beta).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -109452,7 +109450,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py",
       "title": "Gauge-Vacuum Plaquette Transfer-Operator / Character-Recurrence Theorem",
-      "transitive_descendants": 1049,
+      "transitive_descendants": 1048,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input."
     },
     "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17": {
@@ -251234,7 +251232,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 16.015,
+      "load_bearing_score": 16.014,
       "load_bearing_step": "The runner constructs the Gell-Mann-basis adjoint generators, total quadratic/cubic Casimirs and exchange operator on C^8 tensor C^8, then diagonalizes and checks the resulting six block dimensions, orthonormality, and equivariance identities.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -251258,7 +251256,7 @@
       },
       "runner_path": "scripts/frontier_su3_wigner_intertwiner_engine.py",
       "title": "SU(3) Wigner Intertwiner Engine \u2014 Block 1: (1,1) \u2297 (1,1) CG decomposition",
-      "transitive_descendants": 1034,
+      "transitive_descendants": 1033,
       "verdict_rationale": "The rubric defines C narrowly as a first-principles compute from the CL(3) on Z^3 axiom plus accepted normalizations producing a number not present in any input. This packet is pure SU(3) finite-dimensional representation theory: the runner performs exact linear-algebra checks from standard SU(3) inputs rather than a CL(3)/Z^3 physical compute. The scoped theorem closes as an algebraic representation-theory construction with no direct dependencies or hidden physical bridge, so the first audit's clean verdict and A classification are ratified."
     },
     "su3_wigner_intertwiner_block2_theorem_note_2026-05-03": {
@@ -251351,7 +251349,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 14.514,
+      "load_bearing_score": 14.513,
       "load_bearing_step": "Schur/Peter-Weyl identifies the four-fold Haar average of D^(1,1)(U) with the invariant-subspace projector, and Casimir-zero diagonalization plus fusion counting constructs it as a rank-8 projector on C^4096.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -251375,7 +251373,7 @@
       },
       "runner_path": "scripts/frontier_su3_wigner_4fold_haar_projector.py",
       "title": "SU(3) Wigner Intertwiner Engine \u2014 Block 2: 4-fold Haar Projector",
-      "transitive_descendants": 1033,
+      "transitive_descendants": 1032,
       "verdict_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The clean finite-rank SU(3) projector theorem can be typed as a positive_theorem because the audited scope is fully closed and does not depend on the broader cube tensor-network campaign. The derivation is best classified as A: an algebraic finite-dimensional representation-theory closure over retained Block 1 data and standard Schur/Peter-Weyl/Casimir facts, with the runner verifying the matrix construction. It is not decoration because it introduces a new explicit four-fold Haar projector primitive, not merely a restatement of Block 1. | The clean scope is the finite SU(3) projector theorem only, so reclassifying it as a positive_theorem does not promote the broader cube-closure campaign. The first audit was right that the closure is algebraic representation theory over retained Block 1 input, but overly conservative in keeping the bounded_theorem label for an exact finite object. The second audit was right on audited_clean and positive_theorem scope, but its class C label overstates the rubric fit because this is not a Cl(3)/Z^3 first-principles framework computation; it is class A algebraic closure plus finite validation. | The clean scoped result is an exact finite-dimensional SU(3) theorem, analogous in status to the retained Block 1 decomposition, so positive_theorem is the better claim type than bounded_theorem. The broader L>=3 cube tensor-network campaign remains outside the audited scope and is not promoted. The load-bearing step is best classified as A: standard representation-theoretic algebra plus retained Block 1 inputs, not a framework-axiom first-principles C computation from Cl(3) on Z^3."
     },
     "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": {
@@ -251475,7 +251473,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.013,
+      "load_bearing_score": 14.011,
       "load_bearing_step": "The runner exhaustively enumerates the finite L_s=3 PBC sites, directed links, plaquettes, link-plaquette incidences, plaquette adjacency edges, and tensor-network slot maps, then checks the stated finite counts.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -251591,7 +251589,7 @@
       },
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_geometry.py",
       "title": "SU(3) Wigner Engine \u2014 Block 3: L_s=3 PBC Cube Geometry + Tensor-Network Setup",
-      "transitive_descendants": 1032,
+      "transitive_descendants": 1031,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The bounded claim closes because the provided source performs deterministic finite enumeration rather than importing contested values or merely printing constants. The correct derivation class is A: this is algebraic/combinatorial closure over explicitly defined finite lattice objects, not class C first-principles framework computation of a new physical number. The only substantive upstream projector input is marked retained, and no external comparator, tuned numerical match, or open dependency is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The load-bearing work is finite algebraic/combinatorial closure over explicit definitions, so class A is the tighter rubric fit than class C, which is reserved for first-principles physics computation from the framework axiom. The only substantive upstream projector input is marked retained, and no non-retained dependency, external comparator, tuned numerical match, or definitional renaming is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to finite combinatorial geometry and bookkeeping, and the only substantive upstream projector input is marked retained in the packet. Class A is the tighter fit because the load-bearing work is algebraic/combinatorial closure over explicit finite definitions, not a class C first-principles physics computation from a framework axiom producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to combinatorial geometry and bookkeeping, and the only substantive upstream projector-rank primitive is marked retained. Class A is the tighter rubric fit because the load-bearing step is finite algebraic/combinatorial closure over explicit definitions, not a first-principles physics computation from an axiom node producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence maps rather than only printing expected constants. The claim closes as finite algebraic/combinatorial enumeration over explicit definitions, with the retained Block 2 rank-8 projector used only as an upstream tensor-network primitive. Class A is the tighter rubric fit than class C because this is not a first-principles physics computation from the framework axiom producing a new physical number."
     },
     "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": {
@@ -251679,7 +251677,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.51,
+      "load_bearing_score": 13.508,
       "load_bearing_step": "The narrowed Block 4 runner computes c_(0,0)(6)^81, c_(1,1)(6), the rank-8 V_(1,1)^4 singlet basis, the stated (8,8,8,8) plaquette tensor encoding, and the L_s=3 81-plaquette/81-link contraction-scope counts, while deferring the full contraction.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -251996,7 +251994,7 @@
       },
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_partition.py",
       "title": "SU(3) Wigner Engine Block 4: L_s=3 PBC Cube Partition-Function Staging",
-      "transitive_descendants": 1030,
+      "transitive_descendants": 1029,
       "verdict_rationale": "The supplied runner is source-visible and does more than print cached constants: it evaluates the SU(3) Bessel-determinant coefficient sum, diagonalizes the 4096 x 4096 total Casimir to recover the rank-8 singlet basis, constructs the stated plaquette tensor, and reports the finite storage/intermediate arithmetic. The repaired note no longer load-bears on the L_s=2 Block 5 diagnostics or on the unaudited bridge/open-gate constants. The full L_s=3 contraction is expressly outside the audited claim, so its absence is not a blocker for this staging theorem."
     },
     "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04": {

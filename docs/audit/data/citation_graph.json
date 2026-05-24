@@ -10053,18 +10053,6 @@
       "to": "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17"
     },
     {
-      "from": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
-      "to": "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
-    },
-    {
-      "from": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
-      "from": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
-      "to": "g_bare_derivation_note"
-    },
-    {
       "from": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
       "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
     },
@@ -54696,18 +54684,14 @@
     "gauge_vacuum_plaquette_distinct_shell_theorem_note": {
       "claim_id": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "g_bare_derivation_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "47c544f1417c467c3ee99447b5851b86403523cb8bd7a83dae377856754f8849",
+      "note_hash": "a6318bc0f90f27bee72a421d0118a97931a497d6139e17017d2d4930bc646c35",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
-      "title": "Gauge-Vacuum Plaquette Distinct-Shell Theorem"
+      "title": "Gauge-Vacuum Plaquette Distinct-Shell Finite Geometry Packet"
     },
     "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": {
       "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
@@ -84021,6 +84005,7 @@
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17",
     "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
     "gauge_vacuum_plaquette_constant_lift_obstruction_note",
+    "gauge_vacuum_plaquette_distinct_shell_theorem_note",
     "gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19",
     "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_note_2026-04-20_note_2026-05-17",
@@ -84540,10 +84525,10 @@
       "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9698,
+    "edge_count": 9695,
     "leaf_count": 762,
     "node_count": 2495,
-    "root_count": 821,
+    "root_count": 822,
     "runners_with_path": 2056
   }
 }

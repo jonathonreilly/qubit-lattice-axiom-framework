@@ -1,0 +1,31 @@
+loop: gauge-distinct-shell-bounded-repair
+current_goal: "Repair gauge_vacuum_plaquette_distinct_shell_theorem_note for independent audit by narrowing it to the finite cubical-shell geometry actually checked by its runner."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+block_count: 1
+active_route: "Remove stale axiom-reset gate dependencies and preserve the zero-input finite shell enumeration claim."
+hard_residual: "Full beta_eff continuation and physical plaquette reduction remain outside this packet."
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+open_imports: []
+no_go_routes:
+  - "Do not claim full nonperturbative beta_eff(beta) or P(6) closure from shell geometry alone."
+  - "Do not use staggered-Dirac or g_bare gates as premises for this finite packet."
+review_findings: []
+pr_status: "opened: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1757"
+next_exact_action: "Independent review/audit should evaluate the finite shell-geometry packet."
+stop_condition: "PR opened with bounded-support wording and independent audit still required."

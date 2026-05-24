@@ -72,8 +72,19 @@ In particular the SU(2) bivector subgroup of `Cl(3,0)` acts in its
 fundamental representation on `V ≅ C^2`, so the fundamental dimension of
 the SU(2) factor is `N_SU(2) = 2`.
 
-Source: [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-(effective_status: `retained`).
+Source: per the auditor's narrow-substitute boundary instruction
+(`dependency_not_retained` repair on 2026-05-24, "cite only the
+retained Cl(3) complexification split note if its K4 dimensional
+readout is intended to carry X2"), `(X2)` is now sourced from the
+retained `(X1)` parent's clause `(K4)` ("Each simple summand
+`e_± Cl(3,0) ⊗_R C ≅ M_2(C)` admits a unique irreducible left module,
+of complex dimension `dim_C V = 2`"). The sibling
+`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+(plain-text reader pointer; effective_status:
+`decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`)
+records the same dimensional readout but is no longer cited as a
+markdown-link load-bearing dependency of this row; the K4 clause of
+`(X1)` directly carries the `dim_C V = 2` readout for `(X2)`.
 
 **(X3) Lüscher–Mackenzie tadpole convention** (named external-mathematics
 admission, Lepage–Mackenzie 1993 / Lüscher–Weisz 1985 textbook lattice
@@ -270,14 +281,24 @@ external admission, with no broad-parent unaudited content load-bearing.
 
 ## Cited dependencies
 
-Markdown-link upstream (load-bearing):
+Markdown-link upstream (load-bearing; single retained-grade one-hop
+dependency per the live ledger on 2026-05-24, after the 2026-05-24
+narrowing):
 
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained; supplies `(X1)` the abstract
-  `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split.
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained; supplies `(X2)` `dim_C V = 2` for every faithful
-  finite-dim complex Cl(3,0)-irrep.
+  — retained; supplies both `(X1)` the abstract
+  `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split and (via its `(K4)` clause)
+  the `dim_C V = 2` dimensional readout that carries `(X2)`.
+
+Plain-text reader pointer (non-load-bearing for the citation graph):
+
+- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — sibling narrow theorem recording the same dimensional readout
+  (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
+  No longer a markdown-link load-bearing dependency of this row per
+  the auditor's 2026-05-24 narrow-substitute boundary instruction; the
+  `(X1)` parent's `(K4)` clause now carries `(X2)` directly.
 
 Named external admission (not a ledger dependency):
 

@@ -10,6 +10,8 @@ Replace the loose "absorbed coupling" rhetoric with a sharper statement:
   once the gauge algebra is derived as a concrete compact subalgebra of
   End(V), and the Hilbert-space metric on V is fixed, there is no
   independent scalar normalization freedom left in the gauge generators.
+  The holonomy form is an admitted upstream premise of the source note, not
+  something this runner derives.
 
 In standard notation one often writes:
 
@@ -25,10 +27,11 @@ and the holonomy is
 
     U = exp(i A_op a).
 
-The scalar "g" is therefore not a physical parameter.  It is only a
+Conditional on that admitted holonomy form, the scalar "g" is only a
 coordinate rescaling on the coefficients A^a once the generator basis is
-chosen.  In the canonical orthonormal basis inherited from the Hilbert-space
-trace form, this means g_bare = 1.
+chosen. In the canonical orthonormal basis inherited from the Hilbert-space
+trace form, standard notation rewrites this conditional coordinate statement
+as g_bare = 1.
 
 This script verifies the algebraic pieces numerically on the canonical SU(3)
 embedding already established by the SU(3) commutant theorem.
@@ -177,8 +180,10 @@ def main() -> int:
     print("Claim:")
     print("  once SU(3) is derived as a concrete compact subalgebra of End(V),")
     print("  the Hilbert-space trace form fixes the generator normalization up")
-    print("  to orthogonal basis rotation.  There is no independent scalar")
-    print("  gauge-coupling parameter left.  In canonical coordinates: g_bare = 1.")
+    print("  to orthogonal basis rotation. Conditional on the admitted holonomy")
+    print("  form U = exp(i A^a T_a a), there is no additional scalar-normalization")
+    print("  freedom inside that fixed trace form. In canonical coordinates this")
+    print("  is written g_bare = 1, but the holonomy form is not derived here.")
     print()
 
     full, triplet, constraints = build_canonical_generators()
@@ -250,19 +255,23 @@ def main() -> int:
 
     print()
     print("Interpretation:")
-    print("  - The physical object is the concrete operator A_op in the derived")
-    print("    gauge algebra, not a split into 'g' times coefficients.")
+    print("  - Given the admitted holonomy form, the concrete operator A_op in")
+    print("    the derived gauge algebra is not further split into an independent")
+    print("    scalar coupling times coefficients.")
     print("  - Changing basis by an orthogonal rotation is harmless.")
     print("  - Uniform scalar dilation changes the fixed trace form and Casimir,")
     print("    so it is not an admissible ambiguity of the canonical basis.")
-    print("  - Once the canonical basis is chosen, the holonomy is")
+    print("  - Conditional on the admitted upstream holonomy form, the canonical")
+    print("    basis expression is")
     print("        U = exp(i A^a T_a a)")
     print("    with no additional scalar coupling.")
     print()
     print("Conclusion:")
-    print("  The standard notation U = exp(i g A^a T_a a) contains no independent")
-    print("  physical bare coupling in this framework. In canonical normalization,")
-    print("  g_bare = 1.")
+    print("  Conditional on the admitted holonomy form, standard notation")
+    print("  U = exp(i g A^a T_a a) contains no additional scalar-normalization")
+    print("  freedom inside the fixed canonical generator basis. This is the")
+    print("  bounded coordinate statement written g_bare = 1; deriving the")
+    print("  holonomy form itself remains outside this runner.")
     print()
     print(f"PASS={PASS} FAIL={FAIL}")
 

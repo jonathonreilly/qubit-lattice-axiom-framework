@@ -337,5 +337,5 @@ explicit bounded premises that this note composes:
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [strong_cp_theta_zero_note](STRONG_CP_THETA_ZERO_NOTE.md)
-- [axiom_first_reflection_positivity_theorem_note_2026-04-29](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- `STRONG_CP_THETA_ZERO_NOTE.md` (effective_status: audited_conditional — demoted to backtick per dep-hygiene rule; this is the parent row this note is the repair candidate clearing, not a load-bearing dep)
+- `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` (effective_status: audited_failed — demoted to backtick per dep-hygiene rule; cited only as parent context for the retained narrow `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`)

@@ -149,7 +149,13 @@ normalization mistake.
 Use this note with:
 
 - [`scripts/frontier_newton_systematic.py`](scripts/frontier_newton_systematic.py)
-- [`docs/WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`](WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md)
+- `docs/WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`
+  (plain-text reader pointer; the reconciliation companion is a
+  meta-level cross-runner overview and is **not** a load-bearing
+  markdown-link dependency of this finite-L distance-law table — the
+  load-bearing binding evidence is the per-L `alpha(L)` table from the
+  same-convention runner stack listed in **What Was Run**, not the
+  reconciliation overview)
 
 and read that runner exactly as labeled: a same-convention sweep, not a global
 normalization adjudicator.

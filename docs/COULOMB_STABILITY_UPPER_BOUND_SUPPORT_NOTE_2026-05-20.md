@@ -12,41 +12,63 @@ the D=3 upper-bound route. It does not claim a repo-wide axiom change and it
 does not claim a complete framework-internal derivation of higher-dimensional
 atomic stability.
 
-The landable support claim is narrower:
+The landable support claim is narrower, and is stated explicitly conditional
+on the admitted external premises (P1)-(P3) recorded in the Inputs section
+below:
 
-> For the continuum d-dimensional Coulomb Hamiltonian
-> `H_d = -(hbar^2/2m) Delta_d - alpha/r^(d-2)`, scaling at the origin makes
-> `d = 4` the critical dimension: `d >= 5` is unbounded below, while `d = 3`
-> is the canonical case with the Rydberg accumulation spectrum.
+> **Conditional scaling lemma.** Given (P1) the d-dimensional continuum
+> Coulomb Hamiltonian `H_d = -(hbar^2/2m) Delta_d - alpha/r^(d-2)` as an
+> external admitted form, (P2) standard d-dimensional continuum quantum
+> mechanics (radial Schrödinger equation, scaled-trial-state expectations,
+> hydrogenic `d = 3` spectrum) as admitted background, and (P3) a
+> Coulomb/scalar potential-form sector identification (no gauge coupling or
+> electromagnetic sector derived from the framework), then the elementary
+> trial-state scaling argument exhibits `d = 4` as the critical dimension:
+> `d >= 5` is unbounded below, while `d = 3` is the canonical case with the
+> Rydberg accumulation spectrum.
 
-This supports the existing named-import wrapper by making the elementary
-scaling part explicit. The full spectral classification remains standard
-quantum mechanics unless separately derived and audited.
+The argument is purely algebraic once (P1)-(P3) are admitted. This note does
+not derive (P1), (P2), or (P3) from already retained framework authority. It
+supports the existing named-import wrapper by writing out the elementary
+scaling step explicitly, conditional on those admissions.
 
 ## Inputs
 
-1. **Framework-connected potential form.** The dimensional potential pattern
-   is linked to [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md).
-   Its audited binding scope is cache-backed `d = 3` and `d = 4` rows; use of
-   a general `d` continuum Coulomb law is an explicit bounded extrapolation.
-2. **Standard d-dimensional quantum mechanics.** The radial Schrödinger
-   equation, scaling of trial states, and hydrogenic `d = 3` spectrum are
-   admitted background. This note writes out the scaling argument but does not
-   re-derive the whole spectral theory.
-3. **Sector identification.** The note uses a Coulomb/scalar potential-form
-   analogy. It does not derive the full electromagnetic sector or a gauge
-   coupling from the framework.
+All three inputs below are explicitly admitted external premises. None is
+derived in the restricted packet of this note.
+
+1. **(P1) d-dimensional continuum Coulomb Hamiltonian (admitted external
+   premise).** The dimensional potential pattern is linked to
+   [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md), whose
+   audited binding scope is cache-backed `d = 3` and `d = 4` rows only. Use of
+   the general-`d` continuum Coulomb law
+   `H_d = -(hbar^2/2m) Delta_d - alpha/r^(d-2)` is an explicit external
+   admission and is not retained as a universal framework-internal law.
+2. **(P2) Standard d-dimensional continuum quantum mechanics (admitted
+   external premise).** The radial Schrödinger equation in `d` dimensions,
+   the scaled-trial-state expectations
+   `<T>_{psi_lambda} = lambda^2 T`, `<V>_{psi_lambda} = -lambda^(d-2) U`,
+   and the hydrogenic `d = 3` Rydberg spectrum are admitted as external
+   continuum-QM background. The corresponding spectral/domain classification
+   (self-adjoint extensions, accumulation at threshold) is admitted with
+   them and is not re-derived in the restricted packet.
+3. **(P3) Coulomb/scalar sector identification (admitted external premise).**
+   The note treats `H_d` as a Coulomb/scalar potential-form analogue. The
+   identification with a physical electromagnetic sector, a derived gauge
+   coupling, or a framework-internal `alpha` is not admitted by this note.
 
 ## Scaling Argument
 
-For the d-dimensional Coulomb Hamiltonian
+Given admissions (P1)-(P3) above, the algebraic step proceeds as follows.
+For the d-dimensional Coulomb Hamiltonian admitted in (P1),
 
 ```text
 H_d = -(hbar^2 / 2m) Delta_d - alpha / r^(d-2),
 ```
 
-take a normalized trial state `psi_lambda(r) = lambda^(d/2) psi(lambda r)`.
-The kinetic and potential expectations scale as
+take a normalized trial state `psi_lambda(r) = lambda^(d/2) psi(lambda r)`
+of the form admitted in (P2). The kinetic and potential expectations scale
+as
 
 ```text
 <T>_{psi_lambda} = lambda^2 T,
@@ -66,13 +88,15 @@ For `d = 4`, both terms scale as `lambda^2`; this is the marginal inverse-square
 case. Boundedness depends on the coupling and domain choice, so it does not
 give the canonical Coulomb spectrum by itself.
 
-For `d = 3`, the standard Coulomb problem has the hydrogenic spectrum
+For `d = 3`, the standard Coulomb problem admitted in (P2) has the
+hydrogenic spectrum
 
 ```text
 E_n = -m alpha^2 / (2 hbar^2 n^2),     n = 1, 2, 3, ...
 ```
 
-with bound states accumulating at threshold.
+with bound states accumulating at threshold. This spectrum is consumed as
+admitted external continuum-QM background and is not re-derived here.
 
 ## Relation To Dimension Selection
 
@@ -90,6 +114,12 @@ described in `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`.
 - It does not retire the higher-dimensional atomic-stability import completely.
 - It does not establish a retained universal dimensional Coulomb law for all
   integer `d`.
-- It does not derive the electromagnetic gauge sector or a coupling value.
+- It does not derive (P1) the d-dimensional continuum Coulomb Hamiltonian
+  from already retained framework authority.
+- It does not derive (P2) standard d-dimensional continuum quantum mechanics
+  or the hydrogenic `d = 3` spectrum from already retained framework
+  authority.
+- It does not derive (P3) the electromagnetic / gauge sector identification
+  or a coupling value from the framework.
 - It does not settle the lower-bound force-sign bridge.
 - It does not promote any parent row or audit status.

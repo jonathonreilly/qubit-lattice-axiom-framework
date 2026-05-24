@@ -45,8 +45,8 @@ It also computes the one-plaquette reference P_1plaq(6) directly from
 the SU(3) Bessel-determinant character expansion as a sanity check.
 
 It then performs three parametric sensitivity sweeps over admissible
-rho families to demonstrate the no-go that c_lambda(6) and SU(3)
-intertwiners alone do not fix rho_(p,q)(6):
+rho families to demonstrate the bounded no-go that the enumerated
+1-parameter local-input closures do not fix a unique rho_(p,q)(6):
   family 1: rho_(p,q) = exp(-tau (p+q)), tau in [0, 5];
   family 2: rho^(beta_env)_(p,q) = c_(p,q)(beta_env) / c_(0,0)(beta_env)
             (one-plaquette environment ansatz), beta_env in [0, 20];
@@ -59,10 +59,10 @@ truncation is justified by exponential decay of c_(p,q)(beta) at fixed
 beta with the rep size: at beta = 6, c_(p,q)(6) and a_(p,q)(6)^4 fall
 below 1e-6 for (p+q) >= 4 already on the audited box, so the Peter-Weyl
 tail is super-polynomially summable and contributes well below
-theorem-grade tolerance at NMAX = 7.
+branch-local tolerance at NMAX = 7.
 
-It performs an explicit no-go check that c_lambda(6) and SU(3)
-intertwiners alone do not fix rho_(p,q)(6) on the source sector.
+It performs an explicit bounded no-go check for the three enumerated
+rho-family closures on the source sector.
 
 It performs hostile-review checks confirming the result is:
   - not a constant-lift ansatz (a_(p,q) varies sharply with (p,q));
@@ -540,7 +540,7 @@ def main() -> int:
     check(
         "the NMAX truncation tail is super-polynomially summable: successive drifts "
         "decay geometrically and the dominant-weight band sum at the truncation edge is "
-        "below theorem-grade tolerance",
+        "below the branch-local tolerance",
         nmax_drift < 1.0e-6
         and nmax_drift_prior < 1.0e-3
         and nmax_drift_geom > 50.0
@@ -564,14 +564,14 @@ def main() -> int:
     )
     check(
         "the source-sector Perron value depends nontrivially on rho_(p,q)(6); "
-        "explicit Wilson character coefficients and SU(3) intertwiners do not, by "
-        "themselves, fix it (no-go: distinct admissible rho choices give distinct P(6))",
+        "the three tested 1-parameter local-input closures do not fix a unique "
+        "rho (bounded no-go: distinct admissible rho choices give distinct P(6))",
         sens_range > 1.0e-3 and one_plaq_range > 1.0e-3 and tube_range > 1.0e-2,
         detail=(
             f"family-1 spread = {sens_range:.6f}, family-2 spread = {one_plaq_range:.6f}, "
             f"family-3 spread = {tube_range:.6f}; full admissible spread >= {full_range:.6f}; "
-            "no choice of (tau, beta_env, k) is canonically picked out by local Wilson "
-            "data"
+            "no choice of (tau, beta_env, k) is canonically picked out by the "
+            "enumerated local-input closures"
         ),
     )
 
@@ -626,9 +626,10 @@ def main() -> int:
     print(f"  B: rho = delta_(0,0)  {P_triv:.10f}    {P_triv**0.25:.10f}  {1.0/P_triv**0.5:.10f}")
     print(f"  one-plaquette ref     {P_1plaq:.10f}    {P_1plaq**0.25:.10f}  {1.0/P_1plaq**0.5:.10f}")
     print()
-    print("No-go: c_lambda(6) and SU(3) intertwiners do not, by themselves, fix")
-    print("rho_(p,q)(6) on the source sector. Three distinct admissible parametric")
-    print("families (decreasing exp(-tau(p+q)), one-plaquette-environment ansatz")
+    print("Bounded no-go: the three tested 1-parameter local-input closures do")
+    print("not fix a unique rho_(p,q)(6) on the source sector. Three distinct")
+    print("admissible parametric families (decreasing exp(-tau(p+q)),")
+    print("one-plaquette-environment ansatz")
     print("rho^(beta_env), and tube-power ansatz rho^k) each use only c_lambda(6)")
     print("and SU(3) intertwiners plus a single exogenous parameter (tau, beta_env,")
     print("k), are each strictly admissible, and yet produce DIFFERENT P(6) values.")
@@ -640,9 +641,8 @@ def main() -> int:
     print("the unmarked 3D spatial Wilson environment with marked-plaquette")
     print("boundary, equivalently the Perron eigenvector of the explicit positive")
     print("tensor-transfer operator built from c_lambda(6) and SU(3) intertwiners")
-    print("on the full 3D environment lattice. That object is non-perturbative on")
-    print("a 3D SU(3) lattice gauge network with one boundary plaquette and is")
-    print("not derivable in closed form from the local character data above alone.")
+    print("on the full 3D environment lattice. That physical object is outside")
+    print("this finite reference-solve packet.")
     print()
     print("=" * 78)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")

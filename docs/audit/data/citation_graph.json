@@ -25070,7 +25070,11 @@
     },
     {
       "from": "three_generation_observable_theorem_note",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "three_generation_observable_theorem_note",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "three_generation_structure_note",
@@ -78894,10 +78898,11 @@
         "s3_taste_cube_decomposition_note",
         "s3_mass_matrix_no_go_note",
         "z2_hw1_mass_matrix_parametrization_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9bd4be42acebf1b5aaf08ae5384dde213410e6259fac1dea0242065119c755c8",
+      "note_hash": "fffc235dabc9aba48aa580f719f60cd20832166313829470e24a3703885949bf",
       "path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem Note"
@@ -84528,7 +84533,7 @@
       "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9693,
+    "edge_count": 9694,
     "leaf_count": 764,
     "node_count": 2496,
     "root_count": 822,

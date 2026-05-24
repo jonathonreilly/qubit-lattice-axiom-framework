@@ -125,6 +125,7 @@ new sprawling campaign.
 
 Runner: `scripts/frontier_dirac_walk_3plus1d_observable_panel.py`
 (sha256 `a83db713cce4556d432e324314a578e555c744898cc7b5dc56028d80e0ce834e`).
+Helper runner (load-bearing): [`scripts/frontier_dirac_walk_3plus1d_v3.py`](../scripts/frontier_dirac_walk_3plus1d_v3.py).
 Full stdout is cached at
 `logs/runner-cache/frontier_dirac_walk_3plus1d_observable_panel.txt`
 (exit_code=0, elapsed≈1.41s).
@@ -159,3 +160,157 @@ columns are populated, and the answer to "do all readouts agree on
 sign?" is recorded as a recurrence-driven `ALL/MIX` split, not as a
 sign-locked claim. Interpretation rules above are framing only; no
 gravity sign is asserted by this note.
+
+## Helper-runner code excerpt (load-bearing for restricted packet, inlined 2026-05-24)
+
+The panel runner `scripts/frontier_dirac_walk_3plus1d_observable_panel.py`
+imports its load-bearing Dirac evolution and lattice primitives from the
+helper runner [`scripts/frontier_dirac_walk_3plus1d_v3.py`](../scripts/frontier_dirac_walk_3plus1d_v3.py)
+via:
+
+```python
+from frontier_dirac_walk_3plus1d_v3 import (
+    gamma0,
+    gamma3,
+    min_image_dist,
+    prob,
+    step_zyx,
+)
+```
+
+The same import line is visible in the panel runner source (top of
+`scripts/frontier_dirac_walk_3plus1d_observable_panel.py`). The helper
+primitives `gamma0`, `gamma3`, `step_zyx`, `prob`, and `min_image_dist`
+are inlined verbatim below so the restricted-packet review can verify
+that the panel computation is built on genuine framework primitives
+(gamma matrices, split-step coin+shift Dirac evolution, probability
+density, torus min-image distance) rather than hard-coded panel premises.
+The load-bearing implementation lives in the helper file path above; the
+inlined code is exactly the source the panel runner imports and uses.
+
+Provenance: copied verbatim from
+`scripts/frontier_dirac_walk_3plus1d_v3.py` at branch
+`audit-repair/dirac-observable-panel-v3-runner-register-2026-05-24`,
+2026-05-24.
+
+### Gamma matrices and projectors
+
+```python
+import numpy as np
+
+# ============================================================================
+# Gamma matrices
+# ============================================================================
+gamma0 = np.diag([1, 1, -1, -1]).astype(complex)
+gamma1 = np.array([[0,0,0,1],[0,0,1,0],[0,-1,0,0],[-1,0,0,0]], dtype=complex)
+gamma2 = np.array([[0,0,0,-1j],[0,0,1j,0],[0,1j,0,0],[-1j,0,0,0]], dtype=complex)
+gamma3 = np.array([[0,0,1,0],[0,0,0,-1],[-1,0,0,0],[0,1,0,0]], dtype=complex)
+gammas_spatial = [gamma1, gamma2, gamma3]
+
+def get_projectors(gp):
+    evals, evecs = np.linalg.eigh(gp)
+    Pp = sum(np.outer(evecs[:,i], evecs[:,i].conj()) for i in range(4) if evals[i] > 0)
+    Pm = sum(np.outer(evecs[:,i], evecs[:,i].conj()) for i in range(4) if evals[i] < 0)
+    return Pp, Pm
+
+Px_p, Px_m = get_projectors(gamma0 @ gamma1)
+Py_p, Py_m = get_projectors(gamma0 @ gamma2)
+Pz_p, Pz_m = get_projectors(gamma0 @ gamma3)
+```
+
+The gamma matrices satisfy the standard Dirac anticommutation relations
+`{gamma^mu, gamma^nu} = 2 eta^{mu nu}` in the chiral / Dirac basis used
+throughout the v3 harness. The projectors `Px_p, Px_m, Py_p, Py_m, Pz_p,
+Pz_m` are the spectral projectors of `gamma0 @ gamma_j` onto the +1 and
+-1 eigenspaces; they govern the directional shift in `step_zyx`.
+
+### Coin + shift split-step Dirac walk
+
+```python
+def coin_step(psi, mass_field, n):
+    cm = np.cos(mass_field); sm = np.sin(mass_field)
+    out = np.zeros_like(psi)
+    out[0] = (cm + 1j*sm) * psi[0]
+    out[1] = (cm + 1j*sm) * psi[1]
+    out[2] = (cm - 1j*sm) * psi[2]
+    out[3] = (cm - 1j*sm) * psi[3]
+    return out
+
+def shift_dir(psi, n, Pp, Pm, axis):
+    out = np.zeros_like(psi)
+    for c in range(4):
+        pp = sum(Pp[c,d] * psi[d] for d in range(4))
+        pm = sum(Pm[c,d] * psi[d] for d in range(4))
+        out[c] += np.roll(pp, -1, axis=axis)
+        out[c] += np.roll(pm, +1, axis=axis)
+    return out
+
+def step_zyx(psi, mf, n):
+    psi = coin_step(psi, mf, n)
+    psi = shift_dir(psi, n, Px_p, Px_m, 0)
+    psi = shift_dir(psi, n, Py_p, Py_m, 1)
+    psi = shift_dir(psi, n, Pz_p, Pz_m, 2)
+    return psi
+```
+
+`step_zyx` is one full split-step Dirac evolution step at lattice site
+mass `mf[i,j,k]`. The coin step applies `exp(i * mf * gamma0)` per-site
+(the diagonal entries flip sign on the lower two components, matching
+the `gamma0 = diag(1,1,-1,-1)` convention). Each shift then applies the
+spectral projector decomposition of `gamma0 * gamma_j`: the `+`
+eigenspace moves one step in `-axis`, the `-` eigenspace moves one step
+in `+axis`. The composition of one coin and three directional shifts is
+the load-bearing time step the panel reuses six times per layer count.
+
+### Probability density and torus min-image distance
+
+```python
+def prob(psi):
+    return np.sum(np.abs(psi)**2, axis=0)
+
+def min_image_dist(n, mp):
+    c = np.arange(n)
+    dx = np.abs(c[:,None,None] - mp[0]); dx = np.minimum(dx, n-dx)
+    dy = np.abs(c[None,:,None] - mp[1]); dy = np.minimum(dy, n-dy)
+    dz = np.abs(c[None,None,:] - mp[2]); dz = np.minimum(dz, n-dz)
+    return np.sqrt(dx**2 + dy**2 + dz**2)
+```
+
+`prob` is the spinor probability density: sum over the 4 Dirac
+components of `|psi|^2` per lattice site. `min_image_dist` is the
+torus-aware Euclidean distance from a site `mp` on an `n^3` periodic
+lattice, used by the panel to build the gravity mass-field `m(1 + tf)`
+with `tf = strength / (min_image_dist + 0.1)`. Neither function carries
+panel-specific structure; both are generic framework primitives.
+
+### Panel-runner import wiring
+
+The panel runner uses exactly the inlined primitives plus one
+gamma-matrix product:
+
+```python
+from frontier_dirac_walk_3plus1d_v3 import (
+    gamma0,
+    gamma3,
+    min_image_dist,
+    prob,
+    step_zyx,
+)
+
+ALPHA_Z = gamma0 @ gamma3
+```
+
+`ALPHA_Z` is the z-direction alpha matrix used inside
+`current_density_z(psi)` to compute the directionally projected current
+`psi^dagger alpha_z psi` (real part). The panel-specific readouts
+(centroid, peak, first-arrival, early shell accumulation, current,
+shell imbalance) are then computed by the panel runner itself from
+`prob(psi)` and `current_density_z(psi)` at each layer step; the
+load-bearing Dirac evolution and lattice geometry come from the inlined
+v3 primitives above.
+
+This inlines the helper source the auditor flagged as absent in the
+restricted packet. No numerical claim or audit status is changed by this
+inline; the panel-cert content above is unchanged. The note remains
+`bounded_theorem` and `audited_conditional` until the audit lane
+re-evaluates.

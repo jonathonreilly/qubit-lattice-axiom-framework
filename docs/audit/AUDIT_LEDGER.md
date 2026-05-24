@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1252 |
+| unaudited | 1251 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -34,7 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
-| `decoration_under_graph_first_su3_integration_note` | 5 |
+| `decoration_under_graph_first_su3_integration_note` | 6 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
@@ -51,20 +51,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 685 |
 | `audited_conditional` | 111 |
-| `audited_decoration` | 32 |
+| `audited_decoration` | 33 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1478 |
+| `unaudited` | 1477 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1018 |
-| `decoration` | 33 |
+| `decoration` | 34 |
 | `meta` | 230 |
 | `no_go` | 243 |
 | `open_gate` | 112 |
-| `positive_theorem` | 746 |
+| `positive_theorem` | 745 |
 
 | criticality | count |
 |---|---:|
@@ -936,6 +936,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `multisite_pauli_group_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
@@ -7366,6 +7367,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** From the trace equation 2 n_color * a + 2 * b = 0, one gets b = -n_color * a, hence a : b = 1 : (-n_color); with b = -1 this gives a = 1/n_color and the stated Q(u_L), Q(d_L) denominators by gcd parity reduction.  _(class `A`)_
 - **chain closes:** True — The scoped claim closes as elementary algebra and integer gcd reduction under the assumptions stated in the note. No physical bridge to SM hypercharge, no derivation of n_color = 3, and no derivation of the LH state count is needed because those are explicitly excluded from this narrow theorem.
 - **rationale:** The theorem is narrow but correctly bounded: it assumes the trace equation, positive integer n_color, and the named conventions before deriving only algebraic consequences. The proof and runner agree, and the parity denominator rule follows from gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2), with the same result for Q(d_L). This is not an audit of the broader physical identification or of why n_color = 3; those are outside the stated claim boundary.
+- **auditor confidence:** high
+
+### `lhcm_matter_assignment_from_su3_representation_note_2026-05-02`
+
+- **Note:** [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](../../docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_graph_first_su3_integration_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T204628Z-01253e41-lhcm_matter_assignment_f-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained graph-first SU(3) integration gives a residual C^4 = Sym^2 ⊕ Anti^2 = C^3 ⊕ C^1 split with structural SU(3) acting as the 3-dimensional fundamental on Sym^2 and trivially on the 1-dimensional Anti^2 block, so the LH doublet sector is (2,3) ⊕ (2,1).  _(class `A`)_
+- **chain closes:** True — The representation split follows from the retained graph-first SU(3) integration authority plus standard finite-dimensional SU(3) representation facts. The quark/lepton labels are explicitly conventional and are not used as a derived physics step.
+- **rationale:** All load-bearing checks are class-A algebra over the already retained graph-first SU(3) selected-axis package: the runner verifies the swap decomposition, standard SU(3) fundamental matrices on the 3-block, triviality on the 1-block, and the tensor dimensions. The runner does not import external comparators or tuned numerical inputs. Because the claim reduces to a direct algebraic corollary of the graph-first SU(3) integration parent plus standard representation terminology, it is a decoration rather than an independent positive theorem.
+- **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
 
 ### `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17`

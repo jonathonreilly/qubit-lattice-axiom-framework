@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1252
-**Ready (all deps already at retained-grade or metadata tiers):** 10
+**Total pending:** 1251
+**Ready (all deps already at retained-grade or metadata tiers):** 11
 
 By criticality:
-- `critical`: 262
+- `critical`: 261
 - `high`: 344
 - `medium`: 328
 - `leaf`: 318
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | positive_theorem | unaudited | critical | 614 | 11.26 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_lhcm_matter_assignment.py` |
+| 1 | `hypercharge_identification_note` | bounded_theorem | unaudited | critical | 612 | 18.26 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification.py` |
 | 2 | `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | positive_theorem | unaudited | critical | 412 | 12.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_z3_charge_pmns_gauge_redundancy_theorem.py` |
 | 3 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | unaudited | critical | 276 | 14.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hw1_second_order_return_shape_theorem.py` |
 | 4 | `plaquette_self_consistency_note` | bounded_theorem | unaudited | critical | 1020 | 31.50 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_plaquette_self_consistency.py` |
@@ -58,13 +58,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 41 | `three_generation_structure_note` | bounded_theorem | unaudited | critical | 681 | 30.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_generation_fermi_point.py` |
 | 42 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 681 | 12.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
 | 43 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 644 | 25.83 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
-| 44 | `hypercharge_identification_note` | bounded_theorem | unaudited | critical | 612 | 18.26 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification.py` |
-| 45 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 607 | 13.75 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
-| 46 | `yt_boundary_theorem` | open_gate | unaudited | critical | 605 | 15.74 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_boundary_consistency.py` |
-| 47 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 598 | 27.73 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
-| 48 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 594 | 11.72 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
-| 49 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 591 | 14.21 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
-| 50 | `s3_time_bilinear_tensor_action_note` | open_gate | unaudited | critical | 585 | 10.20 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_action.py` |
+| 44 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 607 | 13.75 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
+| 45 | `yt_boundary_theorem` | open_gate | unaudited | critical | 605 | 15.74 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_boundary_consistency.py` |
+| 46 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 598 | 27.73 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
+| 47 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 594 | 11.72 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
+| 48 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 591 | 14.21 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
+| 49 | `s3_time_bilinear_tensor_action_note` | open_gate | unaudited | critical | 585 | 10.20 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_action.py` |
+| 50 | `ckm_atlas_axiom_closure_note` | positive_theorem | unaudited | critical | 584 | 27.69 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_atlas_axiom_closure.py` |
 
 ## Citation cycle break targets
 

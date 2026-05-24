@@ -1,7 +1,7 @@
 # Mirror vs Central Head-To-Head Note
 
-**Date:** 2026-04-03 (cache-reader rescope 2026-05-23 per audit `other` repair target on hard-coded cross-lane values; unsupported `N=40, NPL_HALF=50` row and through-`N=60` strict-pocket range claim dropped).
-**Status:** structural support note — records a fixed comparison summary read directly from the registered runner caches of the cited one-hop mirror and dense central-band authorities. The ranking is a structural reading of those frozen registered cache rows, not a re-derivation, and is not load-bearing for either lane's bounded status.
+**Date:** 2026-04-03 (cache-reader rescope 2026-05-23 per audit `other` repair target on hard-coded cross-lane values; unsupported `N=40, NPL_HALF=50` row and through-`N=60` strict-pocket range claim dropped. Further narrowed 2026-05-24 per audit `or-narrow` repair target: cross-lane ranking dropped, note narrowed to pure cache transcription without a retained-winner ranking.)
+**Status:** structural support note — pure cache transcription that opens the three cited registered runner caches and prints the retained rows side-by-side for reference. The note does not assert any cross-lane retained winner ranking, and the listed rows remain owned by their respective registered authorities.
 **Claim type:** bounded_theorem
 
 **Primary runner (load-bearing):** [`scripts/mirror_vs_central_head_to_head.py`](../scripts/mirror_vs_central_head_to_head.py) — registered cache-reader. It opens the three cited authority caches and prints the rows verbatim; exits zero on PASS and nonzero if any required cache file is missing or any required row cannot be parsed.
@@ -13,22 +13,24 @@
 - Mirror strict-default lane row source: [`docs/MIRROR_CHOKEPOINT_NOTE.md`](MIRROR_CHOKEPOINT_NOTE.md) — bounded mirror chokepoint authority on the strict default `NPL_HALF=25`, `connect_radius=4.0`, `layer2_prob=0.0` card; retained scope is `mirror p2=0` rows at `N=15` and `N=25` only, with same-card FAIL markers recorded at `N=40, 60, 80, 100`. The cache-reader pulls those rows directly from [`logs/runner-cache/mirror_chokepoint_joint.txt`](../logs/runner-cache/mirror_chokepoint_joint.txt).
 - Mirror dense boundary-card lane row source: [`docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md`](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md) — bounded dense-boundary mirror chokepoint authority on the `NPL_HALF=60`, `connect_radius=5.0`, `layer2_prob=0.0` card; retained pre-fit retention rows at `N=40, 60, 80, 100` and the `N=120` gravity-wall row excluded from the fit. The cache-reader pulls those rows directly from [`logs/runner-cache/mirror_chokepoint_boundary_fit_certificate.txt`](../logs/runner-cache/mirror_chokepoint_boundary_fit_certificate.txt).
 
-This note compares the registered dense central-band lane retained row
-against the two cited registered mirror chokepoint pockets (the strict
-default card and the dense boundary card) using the already-registered
-artifact chain. The 2026-05-23 cache-reader rescope replaces the previous
+This note transcribes the registered dense central-band lane retained row
+alongside the two cited registered mirror chokepoint pockets (the strict
+default card and the dense boundary card) from the already-registered
+artifact chain. The 2026-05-23 cache-reader rescope replaced the previous
 hard-coded summary printer with a runner that opens the cited authority
-caches and prints the rows verbatim, and drops the previously-quoted
+caches and prints the rows verbatim, and dropped the previously-quoted
 `N=40, NPL_HALF=50` mirror row and through-`N=60` strict-pocket range
 claim — neither was present in any cited retained mirror authority's
-cache or retained scope.
+cache or retained scope. The 2026-05-24 narrowing further drops the
+cross-lane ranking conclusion: the rows are transcribed side-by-side
+for reference only, with no asserted cross-lane retained winner.
 
-Fairness note:
+Observable-naming note (lane-by-lane, no cross-lane comparison):
 
-- the central-band lane reports `pur_min`
-- the mirror lane reports `pur_cl`
-- so the ranking below should be read as a full lane comparison, not a raw
-  purity-to-purity contest
+- the central-band lane authority reports `pur_min`
+- the mirror lane authorities report `pur_cl`
+- the observables are reported as named in each authority's own cache;
+  this note does not adjudicate any cross-lane purity-to-purity contest
 
 Script:
 [`scripts/mirror_vs_central_head_to_head.py`](../scripts/mirror_vs_central_head_to_head.py)
@@ -37,8 +39,8 @@ Script:
 
 ### Dense central-band + layer norm
 
-This is the best retained joint coexistence lane on the cited high-N dense
-central-band authority. The cache-reader prints this row verbatim from
+This is one retained pocket on the cited high-N dense central-band
+authority. The cache-reader prints this row verbatim from
 [`logs/runner-cache/central_band_dense_joint_highN.txt`](../logs/runner-cache/central_band_dense_joint_highN.txt).
 
 Retained row (from the cited cache):
@@ -49,11 +51,10 @@ Retained row (from the cited cache):
 - `pur_min = 0.500±0.000`
 - gravity `+2.799±1.612`
 
-Narrow read:
+Lane-local read (no cross-lane comparison):
 
-- stronger decoherence than the mirror strict default card
 - bounded retained pocket on the high-N dense central-band card
-- still Born-clean on the retained row
+- Born-clean on the retained row
 
 ### Mirror chokepoint / Z2-protected transfer (strict default card)
 
@@ -72,10 +73,9 @@ Same-card FAIL markers (recorded in the cited cache, not retained):
 
 - `N = 40, 60, 80, 100` all FAIL on the strict default card.
 
-Narrow read:
+Lane-local read (no cross-lane comparison):
 
-- strong small-`N` gravity in the retained `N=15`/`N=25` rows
-- decoherence-side advantage in the retained rows
+- the `N=15`/`N=25` retained rows on this card are Born-clean with positive gravity
 - bounded retained pocket — does **not** extend through `N=40` or higher
   on this card
 
@@ -99,36 +99,41 @@ Gravity-wall row (recorded in the cited cache, excluded from the fit):
 
 - `N = 120`, `mirror p2=0`, gravity `+0.0000±0.000`.
 
-Narrow read:
+Lane-local read (no cross-lane comparison):
 
 - bounded retained pocket through `N = 100` on the dense boundary card
-- strong gravity through `N = 80`, weakening by `N = 100`, and a wall at
-  `N = 120`
+- the `N = 120` row records a zero-gravity wall and is excluded from the
+  fit by the cited authority
 
-## Conclusion (structural, registered-row-backed)
+## Side-by-side transcription summary (no cross-lane ranking)
 
 Reading the registered runner caches directly via the cache-reader, the
-structural ranking from the cited registered rows is:
+side-by-side transcription from the cited registered rows is:
 
-1. Dense central-band + layer norm (`N=80, npl=80, LN+|y|` retained row).
-2. Mirror chokepoint pockets — strict default card retains `N=15`/`N=25`
-   only; dense boundary card retains `N=40..100` with an `N=120` gravity
-   wall.
+- Dense central-band + layer norm: `N=80, npl=80, LN+|y|` retained row
+  on the cited high-N dense central-band authority.
+- Mirror chokepoint strict default card: `N=15`/`N=25` retained rows
+  with same-card FAIL markers at `N=40, 60, 80, 100` on the cited
+  authority.
+- Mirror chokepoint dense boundary card: pre-fit retention rows at
+  `N=40, 60, 80, 100` with the `N=120` gravity-wall row excluded from
+  the fit by the cited authority.
 
-So the mirror lane is best described as a **bounded challenger with strong
-small-`N` gravity and symmetry protection on the strict default card, plus
-a separately-retained bounded dense-boundary pocket through `N=100`**, not
-the new retained joint winner.
-
-This ranking is a structural reading of the cited registered cache rows;
-it is not a re-derivation of either lane's status. The underlying
-row statuses are owned by their respective notes (mirror strict default via
+This note does **not** assert a cross-lane retained winner ranking
+among these rows. The transcribed rows are presented for reference
+side-by-side; their statuses remain owned by their respective registered
+authorities. The underlying row statuses are owned by their respective
+notes (mirror strict default via
 [`MIRROR_CHOKEPOINT_NOTE.md`](MIRROR_CHOKEPOINT_NOTE.md); dense boundary
 card via [`MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md`](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md);
 dense central-band high-N via [`CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md`](CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md)).
 
 ## What this note does NOT claim
 
+- A cross-lane retained winner ranking between the dense central-band
+  retained row and either mirror chokepoint pocket. The 2026-05-24
+  narrowing drops the previous "structural ranking" conclusion in favor
+  of pure side-by-side cache transcription.
 - An `N=40, NPL_HALF=50` mirror row. This row is not present in any cited
   retained mirror authority's cache or retained scope; it was previously
   quoted by the hard-coded runner and the 2026-05-23 rescope drops it.
@@ -138,6 +143,30 @@ dense central-band high-N via [`CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md`](CENTRAL
   explicitly out-of-scope of that authority.
 - A re-derivation of either lane's bounded status. The note reads cited
   caches; it does not recompute lane retention.
+- A cross-lane purity-to-purity contest. The central-band lane reports
+  `pur_min` and the mirror lane authorities report `pur_cl`; the note
+  prints the observables under their authority-native names without
+  asserting a cross-lane comparison criterion.
+
+## Audit boundary (2026-05-24 — narrowed to pure cache transcription)
+
+This revision addresses the generated-audit repair target:
+
+> missing_bridge_theorem: define and assertion-gate the cross-lane
+> ranking criterion, or narrow the note to pure cache transcription
+> without a retained-winner ranking.
+
+This revision takes the second branch of the repair target. The
+previous "Conclusion (structural, registered-row-backed)" section that
+asserted a cross-lane structural ranking is replaced with a "Side-by-side
+transcription summary (no cross-lane ranking)" that lists the same
+cited cache rows without asserting any cross-lane retained winner. The
+per-lane "Narrow read" subsections are also rescoped to lane-local
+observations only — the previous "stronger decoherence than the mirror
+strict default card" and "decoherence-side advantage" comparative
+phrasings are dropped. The runner, the cited cache file paths, the
+retained rows, and the registered one-hop dependencies are unchanged;
+no new mathematics or new assertion-gating runner is introduced.
 
 ## Audit boundary (2026-05-23 — cache-reader rescope)
 
@@ -157,8 +186,9 @@ retained mirror authority contains either. The mirror lane is now
 described by the two retained pockets that the cited authorities actually
 own: the strict default card (`N=15`/`N=25` only) and the dense boundary
 card (`N=40..100` plus the `N=120` wall row excluded from the fit). The
-structural ranking is unchanged in direction: dense central-band still
-ranks above the mirror pockets on joint coexistence.
+2026-05-23 pass left the structural ranking conclusion in place; the
+subsequent 2026-05-24 narrowing pass above drops that ranking entirely
+in favor of pure side-by-side cache transcription.
 
 ## Audit boundary (2026-05-10 — registered-dependency citation tightened)
 

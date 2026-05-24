@@ -1,6 +1,6 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1023,
+    "bounded_theorem": 1025,
     "decoration": 36,
     "meta": 232,
     "no_go": 243,
@@ -38,7 +38,7 @@
   ],
   "cycles_detected": 3,
   "effective_status_counts": {
-    "audited_conditional": 82,
+    "audited_conditional": 73,
     "audited_failed": 6,
     "audited_numerical_match": 11,
     "audited_renaming": 15,
@@ -60,13 +60,13 @@
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
-    "meta": 226,
+    "meta": 227,
     "open_gate": 14,
     "retained": 141,
     "retained_bounded": 417,
     "retained_no_go": 154,
     "retained_pending_chain": 7,
-    "unaudited": 1279
+    "unaudited": 1289
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

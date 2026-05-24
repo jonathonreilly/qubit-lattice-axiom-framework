@@ -20412,6 +20412,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_staggered_3d_self_gravity_sign.py"
     },
+    "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py"
+    },
     "staggered_backreaction_capture_closure_note": {
       "assert_count": 0,
       "counts": {
@@ -24647,6 +24659,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_yt_pr230_route_exhaustion_summary.py"
+    },
+    "yt_pr230_source_covariance_normalization_support_note_2026-05-24": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_yt_pr230_source_covariance_normalization_support.py"
     },
     "yt_qfp_insensitivity_support_note": {
       "assert_count": 0,
@@ -45323,6 +45347,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py": {
+      "assert_count": 2,
+      "claims": [
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_staggered_backreaction_capture_closure_harness.py": {
       "assert_count": 0,
       "claims": [
@@ -48982,6 +49021,21 @@
       "assert_count": 1,
       "claims": [
         "yt_pr230_route_exhaustion_summary_note_2026-05-22"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_yt_pr230_source_covariance_normalization_support.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_pr230_source_covariance_normalization_support_note_2026-05-24"
       ],
       "counts": {
         "A": 0,
@@ -54169,16 +54223,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 313,
+    "decoration_candidates": 314,
     "dominant_class_distribution": {
       "A": 203,
-      "B": 270,
-      "C": 740,
+      "B": 271,
+      "C": 741,
       "D": 296,
       "none": 434
     },
-    "runners_classified": 1943,
-    "runners_with_C": 958,
-    "runners_with_D": 553
+    "runners_classified": 1945,
+    "runners_with_C": 959,
+    "runners_with_D": 554
   }
 }

@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Mirror vs dense central-band head-to-head, read from registered caches.
+"""Mirror vs dense central-band side-by-side transcription, read from registered caches.
 
 This runner is a cache-reader: it opens the registered runner-cache files
 for the cited one-hop authorities and prints the rows that those caches
 already contain. It does not introduce any hard-coded row that is not
 present in a cited authority cache.
+
+The 2026-05-24 narrowing drops the previous "Ranking" stdout block in
+favor of pure side-by-side cache transcription, addressing the
+generated-audit repair target on the cross-lane ranking claim. The
+runner no longer asserts any cross-lane retained winner ranking.
 
 Sources (one-hop registered dependencies):
 
@@ -126,7 +131,7 @@ def main() -> int:
         print(f"FAIL: {exc}")
         return 1
 
-    print("MIRROR VS CENTRAL HEAD-TO-HEAD (cache-reader)")
+    print("MIRROR VS CENTRAL HEAD-TO-HEAD (cache-reader, side-by-side transcription only)")
     print("=" * 92)
     print()
     print("Lane 1: Dense central-band + layer norm")
@@ -161,13 +166,10 @@ def main() -> int:
     print(f"    {dense_wall}")
     print()
 
-    print("Ranking (structural reading of the cited registered rows above):")
-    print("  1. Dense central-band + layer norm")
-    print("  2. Mirror chokepoint (strict + dense-boundary bounded pockets)")
-    print()
-    print("Fairness note: the central lane reports pur_min and the mirror lane")
-    print("reports pur_cl, so the ranking is a full-lane comparison, not a")
-    print("raw purity-to-purity contest.")
+    print("Observable-naming note (lane-by-lane, no cross-lane comparison):")
+    print("  the central lane reports pur_min and the mirror lane reports pur_cl;")
+    print("  the observables are printed under their authority-native names without")
+    print("  any cross-lane retained winner ranking asserted by this runner.")
     print()
     print("PASS: every printed row was read from a cited registered cache.")
     return 0

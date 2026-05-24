@@ -23270,15 +23270,15 @@
     },
     {
       "from": "sm_identity_triangulation_convergence_note_2026-05-23",
+      "to": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "sm_identity_triangulation_convergence_note_2026-05-23",
       "to": "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly"
     },
     {
       "from": "sm_identity_triangulation_convergence_note_2026-05-23",
       "to": "graph_first_su3_integration_note"
-    },
-    {
-      "from": "sm_identity_triangulation_convergence_note_2026-05-23",
-      "to": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "sm_identity_triangulation_convergence_note_2026-05-23",
@@ -23995,6 +23995,30 @@
     {
       "from": "staggered_fermion_card_2026-04-11",
       "to": "minimal_axioms_2026-04-11"
+    },
+    {
+      "from": "staggered_fermion_card_2026-04-11",
+      "to": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_fermion_card_2026-04-11",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "staggered_fermion_card_2026-04-11",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_fermion_card_2026-04-11",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_fermion_card_2026-04-11",
+      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "staggered_fermion_card_2026-04-11",
+      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "staggered_graph_failure_map_note",
@@ -27943,6 +27967,14 @@
     {
       "from": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24",
       "to": "yt_pr230_consolidated_status_note_2026-05-22"
+    },
+    {
+      "from": "yt_pr230_source_covariance_normalization_support_note_2026-05-24",
+      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+    },
+    {
+      "from": "yt_pr230_source_covariance_normalization_support_note_2026-05-24",
+      "to": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
     },
     {
       "from": "yt_qfp_insensitivity_support_note",
@@ -55648,7 +55680,7 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8d7f8beb31a027c25a957a09260f1fe248ec8fc7fe236ce3290b171479098f8e",
+      "note_hash": "3e6d3d8a866e8deac31e377bc4e62558f25a218d7099ebfceb2ef0e727573265",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Spatial-Environment Transfer Underdetermination"
@@ -55782,7 +55814,7 @@
         "cl3_color_automorphism_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fc565b59ade4c11a9235c459c2532638673bb10ad41138b828cab9cda0313aa6",
+      "note_hash": "02165e6158041d556520af75ea412fc561f8d912c3271518109c9aef44572b30",
       "path": "docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/gellmann_completeness_check.py",
       "title": "Gell-Mann Completeness: {T^a} Is an R-Basis for su(3)"
@@ -64152,7 +64184,7 @@
         "mirror_chokepoint_boundary_fit_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2be17d816ddf00605320e57704ffa60b70635f980cd6d16642fa505603ce7ed4",
+      "note_hash": "4a0612869472cf9e976f680c5673dc8586ad4eecadc899fdb5ad2ff574664770",
       "path": "docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md",
       "runner_path": "scripts/mirror_vs_central_head_to_head.py",
       "title": "Mirror vs Central Head-To-Head Note"
@@ -66220,7 +66252,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9e0b358721f3f3670ff241f86de88c16fe65af6181cfebe1f9b853eea94098a8",
+      "note_hash": "3781c548f1ce0a365c1c6241d0db8490df747228f9c12b20be0663ea01208389",
       "path": "docs/NSPT_HIGH_ORDER_LATTICE_ALPHA_N_COEFFICIENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/frontier_nspt_high_order_lattice_alpha_N_coefficient_external_narrow.py",
       "title": "NSPT High-Order Lattice \u03b1^N Coefficient \u2014 External Narrow Theorem"
@@ -67045,9 +67077,9 @@
     },
     "persistent_inertial_response_readiness_note": {
       "claim_id": "persistent_inertial_response_readiness_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "mesoscopic_surrogate_threshold_2d_note",
         "localized_source_response_sweep_note",
@@ -67059,7 +67091,7 @@
         "mesoscopic_surrogate_multistage_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "699fd1305db5140eb48c63d839450273fcb446f3507f7df94ec88835c6d8f910",
+      "note_hash": "247bed71acf23a0c840541255ecdc1fcbfa5ea82c07a14b5c7c0383ceb780575",
       "path": "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
       "runner_path": null,
       "title": "Persistent Inertial-Response Readiness Note"
@@ -69259,17 +69291,17 @@
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the uniqueness",
+      "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms",
         "a1_qubit_interpretation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f32b79ddd3f06eaf5f596c6523f9ad4b85bd0aa5aaea6a771a003ea9a9b0f5a3",
+      "note_hash": "1cac345e0e888d788fb61cd39cbbe3019d8b1dd9da35444b78316a41b63b441f",
       "path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
       "runner_path": null,
-      "title": "Pre-Record Reference State as the Unique Tracial State on A1+A2"
+      "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra"
     },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "claim_id": "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
@@ -72039,15 +72071,15 @@
     },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "plaquette_self_consistency_note",
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ccfa8b663d779b07e94e7bdf5529578e1829a7bf00770087d4312b34b68a6917",
+      "note_hash": "de4b92472480093be07339ca58deb88ea3a4df8068361de1efe9609ec97628e5",
       "path": "docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md",
       "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
       "title": "QCD Low-Energy Running Bridge: `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note"
@@ -75537,13 +75569,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
         "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
         "graph_first_su3_integration_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
         "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c246c439ed56aea9fb00990ead81100e7f77453c0e9b151f5fd4cea541619062",
+      "note_hash": "9a82af274363d9130cb85117ca43831da35fb544da5d0277ec04a6f359700782",
       "path": "docs/SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md",
       "runner_path": "scripts/frontier_sm_identity_triangulation_convergence.py",
       "title": "SM-Identity Triangulation Convergence"
@@ -76220,6 +76252,18 @@
       "runner_path": "scripts/frontier_staggered_3d_self_gravity_sign.py",
       "title": "3D Staggered Self-Gravity Contraction / Sign Note"
     },
+    "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": {
+      "claim_id": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "64f6aa454c342816351b882869a4dfe0da5d8c7871fb155bfc2b4b61bce70a81",
+      "path": "docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py",
+      "title": "Physical Staggered Axis-Symmetry on the hw=1 Triplet is the Full S_3"
+    },
     "staggered_backreaction_note": {
       "claim_id": "staggered_backreaction_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -76633,10 +76677,16 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11"
+        "minimal_axioms_2026-04-11",
+        "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "be52f0c19e823671cd2f42e22a86e5dba4eaf157ec99531a770a88c45e9fbd54",
+      "note_hash": "6c9b6cc72832fc1387fb1763878e3daa95910f0c3874970eb0c93e63df2fff6e",
       "path": "docs/STAGGERED_FERMION_CARD_2026-04-11.md",
       "runner_path": "scripts/frontier_staggered_17card.py",
       "title": "Staggered Fermion + Parity-Coupled Gravity \u2014 Complete Card"
@@ -77424,7 +77474,7 @@
         "cl3_color_automorphism_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a5e59e56254563cda3187daa11cf8896b7ac1a7afc53380a1948cf666ed6da8b",
+      "note_hash": "56041908d59f86837419329de8a6f7f5f62fdd394616247c03ca831c2de32071",
       "path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/su3_dabc_symmetric_check.py",
       "title": "SU(3) Symmetric Structure Constants d^{abc} from Anticommutator"
@@ -83325,6 +83375,21 @@
       "runner_path": "scripts/frontier_yt_pr230_route_exhaustion_summary.py",
       "title": "PR230 Route-Exhaustion Summary"
     },
+    "yt_pr230_source_covariance_normalization_support_note_2026-05-24": {
+      "claim_id": "yt_pr230_source_covariance_normalization_support_note_2026-05-24",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "25605321fc4a8eade81919c6f6b00d0747095439bfab1e0c1050cf07c30791d4",
+      "path": "docs/YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
+      "runner_path": "scripts/frontier_yt_pr230_source_covariance_normalization_support.py",
+      "title": "PR230 Source-Covariance Normalization Support Theorem"
+    },
     "yt_qfp_insensitivity_support_note": {
       "claim_id": "yt_qfp_insensitivity_support_note",
       "claim_type_author_hint": null,
@@ -84372,6 +84437,7 @@
     "spectral_closure_2026-04-09",
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
     "staggered_3d_self_gravity_sign_note_2026-04-11",
+    "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
     "staggered_backreaction_note",
     "staggered_backreaction_shell_spectral_note",
     "staggered_dag_note_2026-04-10",
@@ -84533,27 +84599,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 549,
+      "bounded_theorem": 552,
       "decoration": 1,
-      "meta": 188,
+      "meta": 189,
       "no_go": 69,
-      "none": 1474,
+      "none": 1472,
       "open_gate": 45,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 979,
+      "bounded_theorem": 980,
       "decoration": 1,
-      "meta": 188,
+      "meta": 189,
       "no_go": 172,
       "none": 435,
       "open_gate": 123,
       "positive_theorem": 601
     },
-    "edge_count": 9689,
+    "edge_count": 9697,
     "leaf_count": 767,
-    "node_count": 2499,
-    "root_count": 823,
-    "runners_with_path": 2062
+    "node_count": 2501,
+    "root_count": 824,
+    "runners_with_path": 2064
   }
 }

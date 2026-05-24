@@ -50,14 +50,14 @@ ALPHA_S_V_FRAMEWORK = ALPHA_BARE / U0 ** 2  # = 0.1033... on the canonical chain
 G_S_V_FRAMEWORK = np.sqrt(4.0 * PI * ALPHA_S_V_FRAMEWORK)
 
 
-def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> bool:
+def check(name: str, condition: bool, detail: str = "", kind: str = "BOUNDED") -> bool:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
-    tag = f" [{kind}]" if kind != "EXACT" else ""
+    tag = f" [{kind}]" if kind else ""
     msg = f"  [{status}]{tag} {name}"
     if detail:
         msg += f"  ({detail})"

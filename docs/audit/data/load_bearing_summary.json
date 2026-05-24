@@ -101,12 +101,6 @@
       "transitive_descendants": 551
     },
     {
-      "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
-      "criticality": "critical",
-      "load_bearing_score": 31.499,
-      "transitive_descendants": 1022
-    },
-    {
       "claim_id": "plaquette_self_consistency_note",
       "criticality": "critical",
       "load_bearing_score": 31.496,
@@ -117,6 +111,12 @@
       "criticality": "critical",
       "load_bearing_score": 31.103,
       "transitive_descendants": 549
+    },
+    {
+      "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
+      "criticality": "critical",
+      "load_bearing_score": 30.884,
+      "transitive_descendants": 944
     },
     {
       "claim_id": "three_generation_structure_note",
@@ -145,8 +145,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 28.533,
-      "transitive_descendants": 1047
+      "load_bearing_score": 28.423,
+      "transitive_descendants": 970
     },
     {
       "claim_id": "left_handed_charge_matching_note",

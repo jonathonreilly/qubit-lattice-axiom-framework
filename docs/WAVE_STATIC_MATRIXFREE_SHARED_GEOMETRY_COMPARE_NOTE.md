@@ -3,15 +3,16 @@
 **Date:** 2026-04-08
 **Status:** bounded engine-equivalence probe on the shared geometries tested
 **Claim type:** bounded_theorem
+**Status authority:** independent audit lane only
 
-**Review repair perimeter (2026-04-27 generated-audit context):**
-Generated-audit context before this narrowing identified this chain-closure
-blocker: "The live runner reproduces the
+**Review repair perimeter:**
+Prior review of this narrowing identified this chain-closure blocker:
+"The live runner reproduces the
 two numerical comparison tables, but it does not define or pass a
 drop-in-replacement acceptance criterion; its own printed verdict
 says the matrix-free result is close but not yet proven identical."
 The repair target being addressed is `runner_artifact_issue`:
-"add an audited acceptance criterion for drop-in replacement, such
+"add an acceptance criterion for drop-in replacement, such
 as field and propagated-response tolerances tied to solver
 residuals, or prove both algorithms converge to the same finite-grid
 Poisson solution with a runner pass/fail threshold." This
@@ -36,9 +37,9 @@ The test is intentionally narrow:
 - exact discrete static field from the matrix-free probe
 - beam-side centroid shift through the same beam DAG
 
-## Retained result
+## Recorded bounded result
 
-The retained runs use the shared frozen source at `z_phys = 3.0`
+The recorded runs use the shared frozen source at `z_phys = 3.0`
 at two shared lattice spacings:
 
 | H | realized `z_src` | `max |direct-mf|` | `rel field mismatch` | `rel(dS)` | `rel_MS` |
@@ -130,9 +131,9 @@ The downstream `rel_MS` mismatch (`22.86%` and `62.09%`) between
 exact-static and `dM` is an independent comparator-science issue
 and is not reopened by this rigorization edit.
 
-## 2026-05-18 audit-conditional repair: narrowed drop-in-replacement to finite-table agreement
+## 2026-05-18 scope repair: narrowed drop-in-replacement to finite-table agreement
 
-Per the 2026-05-17 audit verdict, the runner's observed-mismatch table is
+The runner's observed-mismatch table is
 not tied to solver residuals by an asserted acceptance criterion or a
 convergence theorem. This revision narrows the bounded claim from
 "drop-in-replacement" / "identical algorithms" language to "close but not

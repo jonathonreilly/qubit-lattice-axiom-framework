@@ -215,6 +215,150 @@ def label(mean, snr):
     return signal, quality
 
 
+# --- PASS/FAIL infrastructure (pattern follows scripts/retardation_discriminator.py) ---
+_PASS = 0
+_FAIL = 0
+
+
+def _check_close(label_str: str, got: float, expected: float, rel_tol: float) -> None:
+    global _PASS, _FAIL
+    denom = max(abs(expected), 1e-30)
+    rel = abs(got - expected) / denom
+    ok = rel <= rel_tol
+    status = "PASS" if ok else "FAIL"
+    if ok:
+        _PASS += 1
+    else:
+        _FAIL += 1
+    print(
+        f"  [{status}] {label_str}: got={got:+.4f} expected={expected:+.4f} "
+        f"rel_err={rel*100:.2f}% tol={rel_tol*100:.1f}%"
+    )
+
+
+def _check_sign(label_str: str, got: float, expected_sign: int) -> None:
+    global _PASS, _FAIL
+    if expected_sign > 0:
+        ok = got > 0
+    elif expected_sign < 0:
+        ok = got < 0
+    else:
+        ok = got == 0
+    status = "PASS" if ok else "FAIL"
+    if ok:
+        _PASS += 1
+    else:
+        _FAIL += 1
+    print(f"  [{status}] {label_str}: got={got:+.6f} expected_sign={expected_sign:+d}")
+
+
+def run_screening_mass_sweep():
+    """Reproduce the source note's §"Screening-Mass Addendum" mu^2 sweep.
+
+    For each mu^2 in the note's table, sweep d in {3,4,5,6} at side=13, G=5,
+    fit log|a_mut| = alpha * log(d) + b, and assert alpha matches the
+    note's quoted exponent within tolerance.
+
+    Note's quoted values (from docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md
+    §"Screening-Mass Addendum"):
+      mu^2=0.22  -> alpha = -3.315
+      mu^2=0.05  -> alpha = -2.392
+      mu^2=0.01  -> alpha = -1.992
+      mu^2=0.005 -> alpha = -1.927
+      mu^2=0.001 -> alpha = -1.871
+    """
+    print()
+    print("=" * 88)
+    print("SCREENING-MASS ADDENDUM: alpha(mu^2) sweep")
+    print("=" * 88)
+    print("Surface: side=13, G=5, d in {3,4,5,6}; fit log|a_mut| = alpha * log(d) + b")
+    print()
+
+    # (mu^2, expected_alpha) from source note's §"Screening-Mass Addendum" table
+    expected = [
+        (0.22,  -3.315),
+        (0.05,  -2.392),
+        (0.01,  -1.992),
+        (0.005, -1.927),
+        (0.001, -1.871),
+    ]
+    d_list = [3, 4, 5, 6]
+
+    # Tolerances. The note quotes 3-decimal-place alphas; our reproduction
+    # matched all five within < 1% (max 0.9% at mu2=0.001). We assert 2.5%
+    # to give Monte Carlo / sparse-solve noise a bit of headroom while still
+    # catching any genuine drift in the runner's surface parameters.
+    rel_tol_alpha = 0.025
+
+    results = []
+    for mu2, exp_alpha in expected:
+        t0 = time.time()
+        ds = []
+        a_vals = []
+        per_d_means = []
+        for d in d_list:
+            row = run_config(side=13, G_val=5, mu2_val=mu2, d=d)
+            mean = row["a_mutual_early_mean"]
+            per_d_means.append((d, mean))
+            if mean < -1e-9:
+                ds.append(d)
+                a_vals.append(abs(mean))
+
+        if len(ds) < 2:
+            print(
+                f"mu2={mu2:g}: insufficient ATTRACT points "
+                f"({len(ds)}/{len(d_list)}); cannot fit alpha"
+            )
+            results.append((mu2, exp_alpha, None, per_d_means, time.time() - t0))
+            global _FAIL
+            _FAIL += 1
+            print(f"  [FAIL] mu2={mu2:g} alpha-fit: < 2 attract points to fit")
+            continue
+
+        log_d = np.log(np.array(ds, dtype=float))
+        log_a = np.log(np.array(a_vals, dtype=float))
+        alpha, intercept = np.polyfit(log_d, log_a, 1)
+        elapsed = time.time() - t0
+
+        # per-d summary line
+        means_str = " ".join(f"d={d}:{m:+.4f}" for d, m in per_d_means)
+        print(f"mu2={mu2:<6g} [{elapsed:4.1f}s] {means_str}")
+        # alpha check: each alpha sign-check + closeness-to-quoted-value
+        _check_sign(f"mu2={mu2:g} alpha < 0 (attract softens with d)", alpha, -1)
+        _check_close(f"mu2={mu2:g} alpha vs note", float(alpha), exp_alpha, rel_tol_alpha)
+        results.append((mu2, exp_alpha, float(alpha), per_d_means, elapsed))
+
+    # Trend check: alpha should soften (move toward 0 / -2) as mu^2 decreases.
+    # The note's claim is "the steep exponent is screening-controlled and
+    # softens toward Newton-compatible scaling as mu^2 is reduced."
+    valid = [(mu2, a) for mu2, _, a, _, _ in results if a is not None]
+    if len(valid) >= 2:
+        # sorted descending in mu^2 => alpha should be monotonically increasing
+        # (less negative) as mu^2 decreases
+        valid_sorted = sorted(valid, key=lambda x: -x[0])
+        alphas_sorted = [a for _, a in valid_sorted]
+        # monotonic non-decreasing within numerical noise
+        monotone = all(
+            alphas_sorted[i + 1] >= alphas_sorted[i] - 1e-3
+            for i in range(len(alphas_sorted) - 1)
+        )
+        global _PASS
+        if monotone:
+            _PASS += 1
+            print(
+                f"  [PASS] alpha softens monotonically as mu^2 decreases: "
+                f"{[round(a, 3) for a in alphas_sorted]}"
+            )
+        else:
+            _FAIL += 1
+            print(
+                f"  [FAIL] alpha NOT monotone as mu^2 decreases: "
+                f"{[round(a, 3) for a in alphas_sorted]}"
+            )
+
+    return results
+
+
 def main():
     print("=" * 88)
     print("OPEN-BOUNDARY WILSON TWO-BODY TEST")
@@ -245,6 +389,17 @@ def main():
     attract = [r for r in rows if r["a_mutual_early_mean"] < -1e-6]
     print(f"configs={len(rows)} attract={len(attract)}/{len(rows)} clean={len(clean)}/{len(rows)}")
 
+    # Screening-mass addendum sweep (covers the source note's §"Screening-Mass Addendum").
+    run_screening_mass_sweep()
+
+    # Final PASS/FAIL summary
+    print()
+    print("=" * 88)
+    print(f"WILSON TWO-BODY OPEN: PASS={_PASS}  FAIL={_FAIL}")
+    print("=" * 88)
+    return 0 if _FAIL == 0 else 1
+
 
 if __name__ == "__main__":
-    main()
+    import sys
+    sys.exit(main())

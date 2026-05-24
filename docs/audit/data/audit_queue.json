@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 344,
-    "leaf": 317,
+    "leaf": 316,
     "medium": 331
   },
   "cycle_break_target_count": 10,
@@ -28765,30 +28765,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_gravity_resolution_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_observable_hierarchy_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LATTICE_GRAVITY_RESOLUTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_3d_dense_10prop.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_keff_continuum_note",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -38116,6 +38092,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1263
+  "ready_count": 5,
+  "total_pending": 1262
 }

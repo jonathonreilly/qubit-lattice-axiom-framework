@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 396 |
+| **retained_bounded** | 397 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1278 |
+| unaudited | 1277 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 664 |
+| `audited_clean` | 665 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1504 |
+| `unaudited` | 1503 |
 
 | claim_type | count |
 |---|---:|
@@ -175,6 +175,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_joint_highn_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -1895,6 +1896,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using the decoherence-optimal y_cut = 2 layernorm row, the central-band fit is (1 - pur_min) = 4.81 * N^(-0.813) and it is competitive with, but does not dominate, modular gap=2 + layernorm.  _(class `C`)_
 - **chain closes:** True — The primary runner and helper sources compute the central-band graph generation, pruning, propagation, purity, gravity, and standard-error summaries directly rather than printing constants. The modular-gap comparison row and fit are inlined, and the one-hop cited authority is retained_bounded.
 - **rationale:** The central-band numerical table is supported by completed runner stdout whose values match the note, and the runner source performs the graph construction, pruning rule, propagation, purity, and gravity computations without hard-coded expected outputs. The scaling fit and threshold comparisons are algebraic summaries over the computed row and the inlined modular-gap row. The conclusion is bounded and appropriately cautious: central-band removal is competitive through the finite sweep but not a universal winner.
+- **auditor confidence:** high
+
+### `central_band_mass_window_note`
+
+- **Note:** [`CENTRAL_BAND_MASS_WINDOW_NOTE.md`](../../docs/CENTRAL_BAND_MASS_WINDOW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded runner-backed comparison of plain versus central-band-pruned gravity delta mass-window power-law fits at N = 60, 80, 100 with 16 matched seeds and fit window M in {2,3,5,8}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T173751Z-a3b3f0a3-central_band_mass_window-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the densest slice N = 100, both pruned rows fit cleaner power laws than either plain mode, with pruned LN R^2 = 0.994 and pruned linear R^2 = 0.825 versus plain linear R^2 = 0.634 and plain LN R^2 = 0.248.  _(class `C`)_
+- **chain closes:** True — The provided runner and helper sources actually generate matched graphs, compute gravity deltas for the declared modes and mass counts, and fit the declared positive window without hard-coded target values. The cached stdout matches the note's numerical claims and supports the bounded, mixed conclusion.
+- **rationale:** The source note makes a narrow bounded claim about the runner's computed mass-window fits, not a full gravity-law rescue. The runner source and helper chain compute the graph, pruning, propagation, deltas, and log-log fits directly from the declared simulation setup, and the reported R^2 comparisons are reproduced in the provided stdout. No cited non-retained authority, external comparator, renaming, or tuned imported value is load-bearing in this packet.
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10`

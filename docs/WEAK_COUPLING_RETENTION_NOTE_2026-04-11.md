@@ -1,8 +1,36 @@
-# Weak-Coupling Retention Note
+# Weak-Coupling Retention Note — Frozen 60-Run Shell-Margin / Norm-Conservation Audit Surface (Binding)
 
-**Date:** 2026-04-11 (status line narrowed 2026-04-28 per audit-lane verdict)
+**Date:** 2026-04-11 (status line narrowed 2026-04-28 per audit-lane verdict; scope narrowed 2026-05-24 per audited_conditional `scope_too_broad` repair)
 **Script:** `frontier_weak_coupling_retained.py`
-**Status:** bounded conditional sign-sensitive weak-coupling regime on the selected finite audit surface — the runner verifies shell-ordering 60/60 and shell margin 60/60, but the registered runner path is wrong, the secondary gap count is live-stale at 54/60, and the note's broader inference (theorem for admissible irregular bipartite graphs, coordinate-force closure, stable secondary spectral-gap row) is not closed by the current packet.
+**Status:** bounded finite audit-surface result — binding scope is the
+frozen 60-run shell-margin (`tw_a - tw_r >= 10`, `60/60`) and
+norm-conservation (`60/60`) record on the declared audit surface only;
+the registered runner path is wrong, the secondary gap count is
+live-stale at `54/60`, and the broader inference (theorem for
+admissible irregular bipartite graphs, coordinate-force closure,
+stable secondary spectral-gap row) is **out of binding scope** until
+the named missing pieces are repaired or supplied.
+**Status authority:** independent audit lane only
+
+## Scope narrowing (2026-05-24 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair instruction: *"retain only the frozen 60-run shell-margin /
+norm-conservation finite audit surface until the registered runner
+path, secondary gap row, and admissible-graph / shell-force theorem
+are repaired or supplied."*
+
+This revision implements the narrowing. The binding evidence of this
+note is exactly the **frozen 60-run shell-margin and norm-conservation
+counts on the declared finite audit surface** (graph families × sizes
+× seeds × couplings listed under "Audited Surface" below), as reported
+by the cached runner stdout. The wider readings — "theorem for
+admissible irregular bipartite graphs," coordinate-force closure,
+stable secondary spectral-gap row, and any graph-family universality
+language — are explicitly **out of binding scope** until the registered
+runner path is fixed, the secondary gap row is refreshed to a stable
+count, and an admissible-graph / shell-force theorem is supplied. Those
+items are listed under "Bounded out-of-scope / open future work" below.
 
 ## Question
 
@@ -117,15 +145,23 @@ Width asymmetry is stable but not universal enough to carry retention by
 itself. Spectral gap ratio is directionally useful, but its exact pass count is
 runner-sensitive and is therefore not frozen here.
 
-## Retained Claim
+## Binding Bounded Claim (narrowed 2026-05-24)
 
-The weak-coupling regime can now be frozen as a retained **sign-sensitive
-regime** on admissible irregular bipartite graphs, with this exact wording:
+The binding scope is the **frozen 60-run shell-margin /
+norm-conservation finite audit surface** only, with this exact wording:
 
-> At weak coupling (`G=5,10`), attractive parity coupling produces a uniformly
-> larger shell-force TOWARD count than repulsive parity coupling across the
-> audited irregular graph surface (`60/60` runs), with a minimum separation of
-> `10/40` steps and exact norm conservation.
+> At weak coupling (`G=5,10`), on the declared finite audit surface
+> (graph families × sizes × seeds listed above, total `60` runs),
+> attractive parity coupling produces a larger shell-force TOWARD
+> count than repulsive parity coupling on `60/60` audited runs, with a
+> minimum separation of `10/40` steps (`tw_a - tw_r >= 10` on `60/60`)
+> and exact norm conservation (`60/60`).
+
+This is a finite-surface tabulated count, not a graph-family theorem.
+Any extension to "admissible irregular bipartite graphs," to
+coordinate-force closure, or to a stable secondary spectral-gap row is
+out of binding scope (see "Bounded out-of-scope / open future work"
+below) and is conditional on the named missing pieces.
 
 ## What This Still Does NOT Claim
 
@@ -137,7 +173,8 @@ This does **not** establish:
 
 So the blocker is only partially resolved:
 
-- weak-coupling sign sensitivity is now retained
+- the frozen 60-run shell-margin / norm-conservation finite audit
+  surface is bounded
 - full irregular off-lattice directional closure outside this regime remains a
   separate question
 
@@ -145,12 +182,15 @@ So the blocker is only partially resolved:
 
 Use this result when the scientific claim is specifically about:
 
-- weak-coupling irregular-graph sign sensitivity
-- retained attractive-vs-repulsive separation at low `G`
-- graph-native sign selection without coordinate-force reconstruction
+- the frozen 60-run shell-margin / norm-conservation finite audit
+  surface at `G=5,10`
+- attractive-vs-repulsive separation on the declared finite audit
+  surface only
 
-Do **not** use it to replace the exact-force cubic card or to overstate the
-status of the broader irregular directional-observable blocker.
+Do **not** use it to replace the exact-force cubic card, to overstate
+the status of the broader irregular directional-observable blocker, or
+to assert a graph-family theorem on admissible irregular bipartite
+graphs.
 
 ## Audit boundary (2026-04-28)
 
@@ -167,22 +207,32 @@ descendants):
 > coordinate-force closure, or a stable secondary spectral-gap row
 > from the current packet.
 
-## What this note does NOT claim
+## Bounded out-of-scope / open future work
 
-- A theorem for admissible irregular bipartite graphs.
-- A coordinate-force closure.
-- A stable secondary spectral-gap row (current count is 54/60,
-  live-stale).
-- A correctly registered runner path; the registered path is wrong.
+Per the 2026-05-24 narrowing, the following are explicitly **not**
+part of this row's binding scope and are deferred to future work
+pending the named missing pieces:
 
-## What would close this lane (Path A future work)
+- **Theorem for admissible irregular bipartite graphs.** The finite
+  60-run table does not extend to a graph-family theorem; promoting
+  the row to a graph-family theorem requires a separately registered
+  admissible-graph / shell-force theorem.
+- **Coordinate-force closure.** Not closed by the finite runner table.
+- **Stable secondary spectral-gap row.** The secondary gap count is
+  live-stale at `54/60` and needs to be refreshed to `60/60` (or
+  re-frozen at a stable count) under a corrected runner.
+- **Correctly registered runner path.** The currently registered
+  runner path is wrong and must be fixed before any of the broader
+  inferences can be re-audited.
 
-Promoting from bounded conditional to retained would require:
+Promoting beyond the bounded finite audit surface would require:
 
 1. Fixing the registered runner path.
 2. Adding explicit hard PASS thresholds for shell-ordering, shell
    margin, secondary spectral-gap stability, and norm conservation.
-3. Refreshing the secondary gap count to 60/60 (currently 54/60).
-4. Either narrowing the claim to the finite shell-margin diagnostic
-   or registering separate audit-clean theorems for the broader
-   inferences.
+3. Refreshing the secondary gap count to `60/60` (currently `54/60`).
+4. Registering a separate audit-clean theorem for any broader
+   admissible-graph / shell-force inference.
+
+Until those land, the binding claim is the frozen 60-run shell-margin
+and norm-conservation finite audit surface only.

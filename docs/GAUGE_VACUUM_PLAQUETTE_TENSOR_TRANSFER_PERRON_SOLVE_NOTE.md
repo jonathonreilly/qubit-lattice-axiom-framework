@@ -1,13 +1,37 @@
-# Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve
+# Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve — Finite Reference-Solve Packet (Binding)
 
-**Date:** 2026-04-30
-**Status:** support — explicit source-sector Perron solves at two
-structural reference choices of the residual environment, plus a no-go
-on closed-form `rho_(p,q)(6)` from `c_lambda(6)` and `SU(3)`
+**Date:** 2026-04-30 (scope narrowed 2026-05-24 per audited_conditional `scope_too_broad` repair)
+**Status:** support — bounded finite reference-solve packet with `rho`
+supplied as input at two structural reference choices, plus a no-go on
+1-parameter closed-form `rho_(p,q)(6)` from `c_lambda(6)` and `SU(3)`
 intertwiners alone. The runner does NOT compute the physical
-`rho_(p,q)(6)` for the actual 3D spatial Wilson environment; that 3D
-Perron solve is the missing object.
+`rho_(p,q)(6)` for the actual 3D spatial Wilson environment; identifying
+the stripped residual source-sector operator with the physical 3D
+spatial environment is **out of binding scope** here.
+**Status authority:** independent audit lane only
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py`
+
+## Scope narrowing (2026-05-24 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair instruction: *"narrow the claim to a bounded finite
+reference-solve packet with rho supplied as input, or provide the
+missing bridge theorem identifying the actual stripped residual
+source-sector operator with the physical 3D spatial environment
+character measure."*
+
+This revision takes the narrowing option. The binding evidence of this
+note is exactly the **bounded finite reference-solve packet with `rho`
+supplied as input** at the two declared structural reference choices
+(`rho = 1` and `rho = delta_{(p,q),(0,0)}`), plus the 1-parameter
+no-go (Theorem 3) exhibited on the three enumerated parametric
+families, plus the NMAX truncation tail bound (Theorem 4). The
+identification of the stripped residual source-sector operator with
+the physical 3D spatial Wilson environment character measure is
+explicitly **demoted to out-of-binding-scope** and listed below under
+"Bounded out-of-scope / open future work." The missing-bridge-theorem
+alternative repair path is deferred to future work and is **not** part
+of this row's binding scope.
 
 ## Question
 
@@ -444,6 +468,33 @@ correctly seeded as `unaudited` and queued for fresh-context audit.
 - analytic closure of canonical `P(6) = 0.5934`
 - repo-wide repinning of the canonical plaquette
 - full-volume tensor-transfer Perron solve in 3D
+
+## Bounded out-of-scope / open future work
+
+Per the 2026-05-24 narrowing, the following are explicitly **not**
+part of this row's binding scope and are listed as open future work:
+
+- **Identification of the stripped residual source-sector operator
+  with the physical 3D spatial Wilson environment character measure.**
+  The two reference solves use `rho` as structural input; the runner
+  does not claim either reference choice corresponds to the physical
+  3D environment, and this row does not assert any such identification.
+- **The missing bridge theorem** identifying the actual stripped
+  residual source-sector operator with the physical 3D spatial
+  environment character measure (the alternative repair path the
+  auditor offered). This is deferred to future work.
+- **Theorem 3 broader interpretations.** The no-go is exactly that
+  the three enumerated 1-parameter families do not pick out
+  `rho_(p,q)(6)` from `c_lambda(6)` + `SU(3)` intertwiners alone;
+  any reading beyond that (e.g. impossibility of any 0-parameter or
+  geometry-augmented derivation) is out of binding scope here. The
+  in-note "Scope clarification (added 2026-05-04)" already documents
+  this narrowing and is retained verbatim.
+
+Until the missing bridge theorem lands, the binding claim is the
+finite reference-solve packet with `rho` supplied as input, the
+1-parameter no-go on the three enumerated families, and the NMAX
+truncation tail bound only.
 
 ## Commands run
 

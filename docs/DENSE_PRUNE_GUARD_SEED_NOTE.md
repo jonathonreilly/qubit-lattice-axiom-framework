@@ -1,17 +1,49 @@
-# Dense Prune Guard Seed Note
+# Dense Prune Guard Seed Note — Runner Seed-Range Aggregate (Binding)
 
 **Claim type:** bounded_theorem
+**Status authority:** independent audit lane only
 
-This note compares the historically flip-prone seed set from the replay work against the current channel-count guard path at the aggregate level supported by the cached runner output.
+## Scope narrowing (2026-05-24 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair instruction: *"either narrow the note to the runner's valid
+seed-range aggregate or add a cached sliced runner restricted to the
+listed historical flip-prone seeds."*
+
+This revision takes the narrowing option. The binding evidence of this
+note is exactly the **aggregate behavior over the runner's `seed in
+range(16)` loop** as reported by the cached stdout of
+`scripts/channel_count_guarded_prune.py` (with valid-aggregate counts
+`n` per row as printed). The historical flip-prone seed lists below are
+retained as reference context only; the bounded claim is now scoped to
+the runner's seed-range aggregate, not to those listed historical
+seeds. The alternative repair path (a cached sliced runner restricted
+to the historical seeds) is deferred to future work and is **not** part
+of this row's binding scope.
+
+## Bounded claim (narrowed)
+
+On the runner's `seed in range(16)` aggregate, the channel-count guard
+is not a no-op on this seed range: aggregate `eff_ch` and aggregate
+flip count both move under the guard relative to plain pruning, as
+reported in the cached stdout. The binding surface is the aggregate
+rows printed by the runner over the four `(n_layers, npl)` configs,
+with the valid-aggregate counts `n` per row as the explicit scope.
+
+This note compares the runner's seed-range aggregate against the
+channel-count guard path at the aggregate level supported by the
+cached runner output.
 
 The code path has evolved since the earlier replay logs, so treat any per-seed numbers in the historical reference tables below as legacy diagnostic snapshots, not as the cache-certified support for this note's bounded claim.
 
-Historical flip seeds from the replay set (reference only):
+Historical flip seeds from the replay set (reference only, **not** in
+binding scope after 2026-05-24 narrowing):
 - `N=80`: seeds `8, 12, 13`
 - `N=100`: seeds `2, 3, 13`
 
 Current guard path:
 - **Primary runner:** `scripts/channel_count_guarded_prune.py`
+- runner seed surface: `seed in range(16)` (loop variable; `n_seeds = 16`)
 - guard mode: channel-count preserving, `q=0.10`
 
 ## Per-seed comparison (legacy reference, not cache-certified)
@@ -50,10 +82,11 @@ Current guard path:
 
 ## Readout (aggregate-supported)
 
-At the aggregate level certified by the cached runner stdout, the channel-count
-guard shifts the bounded pruning behavior on the flip-prone seed set: aggregate
-gravity, aggregate purity, and aggregate `eff_ch` differ between plain and
-guarded modes, and the aggregate flip count is reduced under the guard.
+At the aggregate level certified by the cached runner stdout, the
+channel-count guard shifts the bounded pruning behavior on the
+runner's `seed in range(16)` loop: aggregate gravity, aggregate
+purity, and aggregate `eff_ch` differ between plain and guarded modes,
+and the aggregate flip count is reduced under the guard.
 
 The note no longer claims, on the basis of this cache, that the guard is a
 "seed-selective channel-preservation mechanism" or that specific named seeds
@@ -63,9 +96,30 @@ and a guard-triggered flag per seed under the same code hash. Such a runner
 output is queued as out-of-scope follow-up below.
 
 What the aggregate cache does support, as a bounded observation, is that the
-channel-count guard is not a no-op on this seed set: aggregate `eff_ch` and
-aggregate flip count both move under the guard relative to plain pruning. The
-detailed mechanism by which individual seeds respond is not certified here.
+channel-count guard is not a no-op on the runner's seed-range loop:
+aggregate `eff_ch` and aggregate flip count both move under the guard
+relative to plain pruning. The detailed mechanism by which individual
+seeds respond is not certified here.
+
+## Bounded out-of-scope / open future work
+
+Per the 2026-05-24 narrowing, the following are explicitly **not**
+part of this row's binding scope:
+
+- Any claim that the bounded observation is specifically on the
+  historical flip-prone seed set (`N=80`: seeds `8, 12, 13`; `N=100`:
+  seeds `2, 3, 13`). The runner loops over `seed in range(16)` and
+  reports aggregate rows; restricting to the historical seeds would
+  require a separately cached sliced runner output (the alternative
+  repair path the auditor offered).
+- Per-seed mechanism claims (rescue / non-rescue / seed-selective
+  channel preservation) and per-seed `grav`, `purity`, `eff_ch`,
+  `flip`, `removed_total`, guard-triggered diagnostics.
+
+The cached sliced runner restricted to the historical flip-prone
+seeds, and the per-seed diagnostic runner output described above, are
+both deferred to future work. Until they land, the binding claim is
+the seed-range aggregate only.
 
 ## 2026-05-18 audit-conditional repair: per-seed mechanism claim narrowed to aggregate
 

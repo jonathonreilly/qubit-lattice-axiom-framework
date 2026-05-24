@@ -1,10 +1,14 @@
 # Yukawa Color-Singlet Projection Theorem
 
-**Date:** 2026-04-14 (scope tightened 2026-05-02)
+**Date:** 2026-04-14 (scope tightened 2026-05-02; trace-ratio boundary repair 2026-05-24)
 **Type:** positive_theorem (proposed; audit-lane to ratify)
-**Claim scope:** the SU(N_c) Fierz channel decomposition giving channel
-fraction `F_adjoint = (N_c² − 1)/N_c² = 8/9` at `N_c = 3` from
-graph-visible primitives. The physical-Higgs-scalar
+**Claim scope:** the SU(N_c) Fierz channel decomposition and the associated
+representation-dimension fraction
+`f_adj,dim = dim(adj)/(dim(singlet)+dim(adj)) = (N_c² − 1)/N_c² = 8/9`
+at `N_c = 3` from graph-visible primitives. This row does **not** claim that
+the matrix-dependent dynamical trace ratio `F_adjoint(M)` or the lattice
+connected-trace observable `R_conn` equals that dimension fraction. The
+physical-Higgs-scalar
 wave-function renormalization identification `Z_phi^{phys}/Z_phi^{lattice}
 = R_conn` (and the resulting `sqrt(8/9)` y_t correction) is **explicitly
 out of scope** — that is a separate downstream physical-matching theorem
@@ -43,9 +47,11 @@ lattice-physical matching cluster obstruction synthesis (campaign cycle
 ```yaml
 proposed_claim_type: positive_theorem
 proposed_claim_scope: |
-  SU(N_c) Fierz channel decomposition giving F_adjoint = (N_c²−1)/N_c² at
-  N_c=3 = 8/9 from graph-first primitives. NOT the physical
-  y_t correction or Higgs-Z identification (out of scope).
+  SU(N_c) Fierz channel decomposition giving the adjoint representation-
+  dimension fraction f_adj,dim = (N_c²−1)/N_c² at N_c=3 = 8/9 from
+  graph-first primitives. NOT a claim that the dynamical trace ratio
+  F_adjoint(M), R_conn, the physical y_t correction, or Higgs-Z
+  identification is fixed by that dimension count.
 proposed_load_bearing_step_class: A
 status_authority: independent audit lane only
 ```
@@ -62,7 +68,13 @@ context and must not be read as part of this row's claim boundary.
 The scoped claim submitted by this row is only the SU(N_c) Fierz
 channel-counting result
 
-    R_conn = (N_c^2 - 1)/N_c^2 = 8/9   for  N_c = 3.
+    f_adj,dim = dim(adj) / dim(N_c x N_c-bar)
+              = (N_c^2 - 1)/N_c^2
+              = 8/9   for  N_c = 3.
+
+Here `f_adj,dim` is a representation-dimension fraction only. It is not the
+matrix-dependent trace ratio `F_adjoint(M)`, not the lattice connected-trace
+observable `R_conn`, and not a physical Higgs wave-function normalization.
 
 The excluded downstream physical-matching claim was that the physical
 Yukawa coupling y_t receives a multiplicative factor
@@ -158,7 +170,7 @@ The first term is the **singlet channel**: it depends only on the
 color trace of M. The second term is the **adjoint channel**: it
 depends on the traceless (adjoint) components of M.
 
-### 1.4 Channel fractions in the interacting theory
+### 1.4 Dimension fraction versus dynamical trace fraction
 
 In the free theory (U = I, G_{ab} = delta_{ab} G_0):
 
@@ -175,30 +187,32 @@ All the signal is in the singlet channel. This is expected: without
 gluons, quarks propagate independently and the color trace is
 diagonal.
 
-In the interacting theory, the gauge field generates off-diagonal
-components M_{ab} with a != b (color is exchanged via gluon lines).
-These contribute to the adjoint channel. The Fierz decomposition
-gives:
+For a general interacting propagator matrix `M`, the Fierz decomposition gives
+matrix-dependent trace fractions:
 
     F_singlet = (1/N_c) |Tr M|^2 / Tr[M M^dag]
     F_adjoint = 2 sum_A |Tr[M t^A]|^2 / Tr[M M^dag]
     F_singlet + F_adjoint = 1
 
-The scoped channel-counting statement is that the connected color trace
-(the part where color
-quantum numbers are exchanged between the two quark lines) saturates
-the adjoint channel, giving:
+These fractions are not fixed by representation dimension alone; the free
+case above has `F_adjoint(M) = 0`. Therefore this row does not claim a value
+for `F_adjoint(M)` in an actual gauge background and does not claim a value
+for the lattice connected-trace observable `R_conn`.
 
-    F_adjoint = (N_c^2 - 1) / N_c^2 = 8/9
+The scoped channel-counting theorem is instead the representation-dimension
+fraction:
 
-    F_singlet = 1 / N_c^2 = 1/9
+    f_adj,dim = dim(adj) / dim(N_c x N_c-bar)
+              = (N_c^2 - 1) / N_c^2
+              = 8/9  at N_c = 3
 
-This is the Fierz channel-counting result: the adjoint representation
-has dimension N_c^2 - 1 and the singlet has dimension 1, out of a
-total N_c^2-dimensional bilinear space. If the interacting dynamics
-populates all channels according to their dimensionality (i.e., the
-connected propagator is "ergodic" in color space), then R_conn =
-F_adjoint = (N_c^2 - 1)/N_c^2 exactly.
+and the complementary singlet dimension fraction:
+
+    f_singlet,dim = 1 / N_c^2 = 1/9  at N_c = 3.
+
+Promoting `f_adj,dim` to a dynamical trace fraction requires an independent
+equal-population, ergodicity, or matching theorem. That bridge is not proved
+in this row.
 
 ---
 

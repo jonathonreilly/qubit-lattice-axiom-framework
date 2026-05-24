@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 395 |
+| **retained_bounded** | 396 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1279 |
+| unaudited | 1278 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 663 |
+| `audited_clean` | 664 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1505 |
+| `unaudited` | 1504 |
 
 | claim_type | count |
 |---|---:|
@@ -274,6 +274,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `evolving_network_prototype_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `evolving_network_prototype_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `evolving_network_prototype_v4_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v5_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -3705,6 +3706,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The restricted packet includes the primary runner and its transitive helper, and the runner genuinely constructs random 3D DAGs, applies the pruning/control rules, and computes purity and gap metrics rather than printing fixed target constants. The note's cautious conclusion follows from the provided cached run, though the control is explicitly not a fair final discriminator.
 - **rationale:** The note does not promote a decisive physics theorem; it retains only the bounded claim that this prototype shows generated gap growth while the comparator leaves purity undefined or unusable. The runner source and helper source are complete in the restricted packet and compute the relevant graph, pruning, purity, and gap quantities without hard-coded contested values. There is a text/code inconsistency around whether the imposed control is random removal or a center-band control, but that weakens only any stronger baseline-fairness claim, which the note explicitly withholds.
 - **auditor confidence:** medium
+
+### `evolving_network_prototype_v2_note`
+
+- **Note:** [`EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md`](../../docs/EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The cached finite sweep reports positive generated_gap, conv=0.00, and imposed_pur=nan across the printed rows; same-budget generated-vs-imposed and baseline-gap conclusions are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T173506Z-bc1c240f-evolving_network_prototy-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within the tested parameter sweep, the runner reports a positive generated_gap, no convergence (conv = 0.00), and an undefined imposed_pur (nan).  _(class `C`)_
+- **chain closes:** True — The provided runner source genuinely generates DAG instances, applies the pruning/control procedures, and computes the printed metrics through the included helper, rather than hard-coding the table. The cached stdout directly supports the narrowed readout, while the unsupported same-budget and baseline-gap claims are explicitly withdrawn.
+- **rationale:** For the narrowed claim, every printed generated_gap is positive, every printed conv value is 0.00, and every printed imposed_pur is nan. The helper source is present, so the runner chain is not opaque, and no external comparator or tuned measured value is imported. The verdict does not ratify the withdrawn same-budget comparator, imposed-control purity comparison, or baseline-gap separation.
+- **auditor confidence:** high
 
 ### `evolving_network_prototype_v3_note`
 

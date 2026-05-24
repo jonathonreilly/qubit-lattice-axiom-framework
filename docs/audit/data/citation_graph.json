@@ -10282,6 +10282,10 @@
     },
     {
       "from": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+      "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
       "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
     },
     {
@@ -10358,7 +10362,7 @@
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-      "to": "gauge_vacuum_plaquette_residual_environment_identification_theorem_note"
+      "to": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
@@ -55435,14 +55439,15 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2302477e6ecfc7280dfb5d37239436fe1c315e9a0527b60a0afef7646855b700",
+      "note_hash": "60320924a5f5df33740f40d79397ad5ce8a17d1ca55ab9e6754e60f5b2a98403",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
-      "title": "Gauge-Vacuum Plaquette Local / Environment Factorization Theorem"
+      "title": "Gauge-Vacuum Plaquette Local Wilson Factor Finite Packet"
     },
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note": {
       "claim_id": "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
@@ -55619,18 +55624,18 @@
     },
     "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": {
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-      "claim_type_author_hint": "open_gate",
-      "claim_type_author_hint_raw": "open_gate",
-      "claim_type_seed_hint": "open_gate",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
-        "gauge_vacuum_plaquette_residual_environment_identification_theorem_note"
+        "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b4b203b0dd73cdb2dd28fdba36df8b266c93d2f71371eccc2c239a3f5ac346f5",
+      "note_hash": "93294bdd9730bbffea350451e17bd9fecfcd761733a0a5507d2902b4b1c79015",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
-      "title": "Gauge-Vacuum Plaquette Spatial Environment Character-Measure Theorem"
+      "title": "Gauge-Vacuum Plaquette Spatial Environment Character-Measure Finite Packet"
     },
     "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10": {
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10",
@@ -84518,24 +84523,24 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 535,
+      "bounded_theorem": 536,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
       "none": 1481,
-      "open_gate": 46,
+      "open_gate": 45,
       "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 969,
+      "bounded_theorem": 970,
       "decoration": 1,
       "meta": 188,
       "no_go": 172,
       "none": 437,
-      "open_gate": 124,
+      "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9697,
+    "edge_count": 9698,
     "leaf_count": 762,
     "node_count": 2495,
     "root_count": 821,

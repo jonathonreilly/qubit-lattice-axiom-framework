@@ -105332,67 +105332,46 @@
       "verdict_rationale": "The proof is class A algebra over retained-grade inputs: finite truncation implies polynomial K, bounded endpoint behavior makes K' constant, and the two endpoint values contradict constancy. The runner's four theorem checks are hard-coded algebraic assertions rather than independent theorem computation, and its three Bessel computations are only support, so the runner is not the source of closure. The no-go discipline gate passes only for the narrow diagonal finite-Taylor/polynomial-generator obstruction; nonpolynomial hierarchy solutions and broader generating representations remain explicitly outside the audited scope."
     },
     "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": {
-      "audit_date": "2026-05-23T14:42:49.514118+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
-        ],
-        "load_bearing_score": 14.974,
-        "runner_hash": "de8639c5622055bdf528b2085c4a1e1d376e1442e19783709f4e0f89c1d0cad8",
-        "transitive_descendants": 1005
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T144227Z-05b8ad00-gauge_vacuum_plaquette_l-01",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic step from linkwise factorization and trivial-link action to a_(p,q)^4 is coherent, but the restricted cited authorities do not explicitly close the required temporal-gauge mixed-kernel factorization over spatial links and the exact marked/non-marked compression map. Those premises are asserted in the note but not derived in the provided upstream text.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-      "claim_scope": "Normalized Wilson mixed-kernel compression on the marked-plaquette character sector factors as the four marked-link local Wilson convolution eigenvalue a_(p,q)(beta)^4, with residual source-sector environment data outside this bounded scope.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T14:42:49.514118+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
+        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
-      "direct_in_degree": 10,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "direct_in_degree": 11,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 15.014,
-      "load_bearing_step": "After trivial-channel normalization the full mixed-kernel compression on the marked plaquette character sector is exactly D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q), because only the four marked links carry nontrivial representation dependence and all non-marked mixed-link factors see only the trivial irrep.",
-      "load_bearing_step_class": "A",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 15.515,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "2302477e6ecfc7280dfb5d37239436fe1c315e9a0527b60a0afef7646855b700",
+      "note_hash": "60320924a5f5df33740f40d79397ad5ce8a17d1ca55ab9e6754e60f5b2a98403",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide the upstream theorem or explicit derivation showing temporal-gauge mixed-kernel linkwise convolution factorization and the marked/non-marked compression map on the marked-plaquette class-function sector.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -105646,21 +105625,75 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the note imports the temporal-gauge mixed-kernel linkwise factorization and its exact compression to one-link Wilson convolution eigenvalues without a supplied retained bridge theorem. Why this blocks: the cited transfer and source-sector notes establish the transfer setup and a central diagonal residual compression, but not the specific marked-link/non-marked-link decomposition that identifies the normalized diagonal sequence as a_(p,q)^4. Repair target: add or cite a retained theorem deriving the linkwise mixed-kernel factorization and compression map from the exact Wilson transfer kernel on the accepted 3+1 source surface. Claim boundary until fixed: conditional algebraic consequence that if the normalized mixed kernel is the stated product of one-link Wilson convolutions, then the marked sector factor is exactly a_(p,q)(beta)^4."
+        },
+        {
+          "archived_at": "2026-05-24T16:22:53.988842+00:00",
+          "archived_for_note_hash": "2302477e6ecfc7280dfb5d37239436fe1c315e9a0527b60a0afef7646855b700",
+          "audit_date": "2026-05-23T14:42:49.514118+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+            ],
+            "load_bearing_score": 14.974,
+            "runner_hash": "de8639c5622055bdf528b2085c4a1e1d376e1442e19783709f4e0f89c1d0cad8",
+            "transitive_descendants": 1005
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T144227Z-05b8ad00-gauge_vacuum_plaquette_l-01",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic step from linkwise factorization and trivial-link action to a_(p,q)^4 is coherent, but the restricted cited authorities do not explicitly close the required temporal-gauge mixed-kernel factorization over spatial links and the exact marked/non-marked compression map. Those premises are asserted in the note but not derived in the provided upstream text.",
+          "claim_scope": "Normalized Wilson mixed-kernel compression on the marked-plaquette character sector factors as the four marked-link local Wilson convolution eigenvalue a_(p,q)(beta)^4, with residual source-sector environment data outside this bounded scope.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-23T14:42:49.514118+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "After trivial-channel normalization the full mixed-kernel compression on the marked plaquette character sector is exactly D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q), because only the four marked links carry nontrivial representation dependence and all non-marked mixed-link factors see only the trivial irrep.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide the upstream theorem or explicit derivation showing temporal-gauge mixed-kernel linkwise convolution factorization and the marked/non-marked compression map on the marked-plaquette class-function sector.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Both cited authorities are retained-grade, and the runner performs a real finite algebraic/numerical witness for the Bessel determinant coefficients and normalized diagonal local factor rather than merely printing constants. However, the central load-bearing theorem depends on an operator-level bridge: that the temporal-gauge mixed kernel factorizes into independent spatial-link convolutions whose restriction to the marked plaquette sector leaves exactly four nontrivial links and only trivial-channel scalars elsewhere. That bridge is not explicitly established by the restricted cited authority text, so retained status cannot propagate to the bounded conclusion from this packet alone."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 4,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
-      "title": "Gauge-Vacuum Plaquette Local / Environment Factorization Theorem",
-      "transitive_descendants": 1033,
-      "verdict_rationale": "Both cited authorities are retained-grade, and the runner performs a real finite algebraic/numerical witness for the Bessel determinant coefficients and normalized diagonal local factor rather than merely printing constants. However, the central load-bearing theorem depends on an operator-level bridge: that the temporal-gauge mixed kernel factorizes into independent spatial-link convolutions whose restriction to the marked plaquette sector leaves exactly four nontrivial links and only trivial-channel scalars elsewhere. That bridge is not explicitly established by the restricted cited authority text, so retained status cannot propagate to the bounded conclusion from this packet alone."
+      "title": "Gauge-Vacuum Plaquette Local Wilson Factor Finite Packet",
+      "transitive_descendants": 1034,
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note": {
       "audit_date": "2026-05-23T13:42:09.474185+00:00",
@@ -106687,13 +106720,13 @@
       "deps": [
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 8,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.515,
+      "load_bearing_score": 14.014,
       "load_bearing_step": "The runner computes rho_(p,q)(6) = c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) from the Schur-Weyl Bessel-determinant formula and inserts those computed values as the diagonal R_6^packet in exp(3J) D_6^loc R_6^packet exp(3J), replacing the prior witness.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -106888,7 +106921,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual Environment Finite Coefficient Packet",
-      "transitive_descendants": 1034,
+      "transitive_descendants": 1033,
       "verdict_rationale": "Within the bounded scope, the load-bearing coefficient packet is computed in the runner rather than hard-coded or imported from the retired witness. The matrix checks then close over those computed coefficients and retained bounded upstream coefficient authority. The broader equality between the stripped residual source-sector operator and the compressed unmarked spatial Wilson environment remains open, but that equality is explicitly outside this narrowed claim."
     },
     "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17": {
@@ -107004,13 +107037,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 11,
+      "direct_in_degree": 12,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 18.525,
+      "load_bearing_score": 19.027,
       "load_bearing_step": "The runner computes rho_(p,q)(6)=c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) on 0<=p,q<=4 by both a Bessel-determinant formula and direct SU(3) Weyl torus integration, with max absolute disagreement 4.136e-15.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -107031,7 +107064,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py",
       "title": "Gauge-Vacuum Plaquette Rho(p,q)(6) Wilson Environment Bounded Note",
-      "transitive_descendants": 1041,
+      "transitive_descendants": 1042,
       "verdict_rationale": "The load-bearing finite coefficient table is produced from the stated SU(3) Wilson integral by implemented Bessel-determinant and Weyl-integration computations, with no cited open dependency and no hard-coded expected rho values. The structural checks over the resulting finite diagonal operator are algebraic or numerical consequences of the computed table. The clean boundary is only the bounded single-link coefficient computation and finite-box structural gates, not the parent residual-environment identification, all-weight closure, or analytic P(6)."
     },
     "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": {
@@ -107110,7 +107143,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 17.017,
+      "load_bearing_score": 17.018,
       "load_bearing_step": "After stripping the two marked half-slice multipliers, the residual source-sector compression C_beta is central on class functions and therefore diagonal in the SU(3) character basis, giving T_src(beta)=exp[(beta/2)J] D_beta exp[(beta/2)J].",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -107132,7 +107165,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
       "title": "Gauge-Vacuum Plaquette Source-Sector Matrix-Element Factorization Theorem",
-      "transitive_descendants": 1035,
+      "transitive_descendants": 1036,
       "verdict_rationale": "The audited content is a bounded structural factorization, not a numerical evaluation of Wilson residual data. The runner supports this as a finite algebraic witness: it builds exp(3J), injects a generic positive conjugation-symmetric diagonal kappa, and verifies the factorized matrix formula. Because the claim explicitly excludes evaluation of D_6/kappa and Perron data, there is no hidden numerical closure being asserted."
     },
     "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17": {
@@ -107190,70 +107223,46 @@
       "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": {
-      "audit_date": "2026-05-23T19:00:01.035480+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "retained_bounded",
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-        ],
-        "load_bearing_score": 16.469,
-        "runner_hash": "bbef1d4cbe15c1f3c6a8855da7ca059613f40649dadc2dd0a3360b2bad02d384",
-        "transitive_descendants": 1001
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T185940Z-b7ce7b70-gauge_vacuum_plaquette_s-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite runner verifies coefficient packaging and replacement of the prior generic witness by computed single-link Wilson coefficients. It does not close the missing bridge identifying the actual stripped residual source-sector operator with the compressed unmarked spatial Wilson environment.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-      "claim_scope": "Audited the open-gate claim that the residual source-sector environment can be packaged as normalized convolution by boundary character coefficients, with finite beta=6 single-link Wilson coefficients used as the bounded runner witness on NMAX=5.",
-      "claim_type": "open_gate",
-      "claim_type_author_hint": "open_gate",
-      "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": "2026-05-23T19:00:01.035480+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
-        "gauge_vacuum_plaquette_residual_environment_identification_theorem_note"
+        "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
       ],
       "direct_in_degree": 13,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 16.511,
-      "load_bearing_step": "The residual source-sector environment operator is exactly convolution by this normalized boundary class function: R_beta^env chi_(p,q) = rho_(p,q)(beta) chi_(p,q), so R_beta^env = C_(Z_beta^env).",
-      "load_bearing_step_class": "F",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "b4b203b0dd73cdb2dd28fdba36df8b266c93d2f71371eccc2c239a3f5ac346f5",
+      "note_hash": "93294bdd9730bbffea350451e17bd9fecfcd761733a0a5507d2902b4b1c79015",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or runner-certify that the stripped residual source-sector operator equals the actual compressed unmarked spatial Wilson environment, beyond insertion of the finite single-link coefficient packet.",
-      "open_dependency_paths": [
-        "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -107425,21 +107434,77 @@
             "total_pass": 9
           },
           "verdict_rationale": "The note honestly labels itself open_gate and repeatedly states that the operator-realization step depends on an unresolved parent residual-environment identification theorem. The runner improves the prior witness by computing canonical single-link Wilson coefficients, but its source sets rho_env from that same single-link calculation and then verifies packaging and symmetry on a finite box. That is useful bounded support, not a derivation of the full multi-link unmarked spatial environment operator."
+        },
+        {
+          "archived_at": "2026-05-24T16:22:54.254989+00:00",
+          "archived_for_note_hash": "b4b203b0dd73cdb2dd28fdba36df8b266c93d2f71371eccc2c239a3f5ac346f5",
+          "audit_date": "2026-05-23T19:00:01.035480+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "retained_bounded",
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+            ],
+            "load_bearing_score": 16.469,
+            "runner_hash": "bbef1d4cbe15c1f3c6a8855da7ca059613f40649dadc2dd0a3360b2bad02d384",
+            "transitive_descendants": 1001
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T185940Z-b7ce7b70-gauge_vacuum_plaquette_s-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite runner verifies coefficient packaging and replacement of the prior generic witness by computed single-link Wilson coefficients. It does not close the missing bridge identifying the actual stripped residual source-sector operator with the compressed unmarked spatial Wilson environment.",
+          "claim_scope": "Audited the open-gate claim that the residual source-sector environment can be packaged as normalized convolution by boundary character coefficients, with finite beta=6 single-link Wilson coefficients used as the bounded runner witness on NMAX=5.",
+          "claim_type": "open_gate",
+          "claim_type_last_reviewed": "2026-05-23T19:00:01.035480+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The residual source-sector environment operator is exactly convolution by this normalized boundary class function: R_beta^env chi_(p,q) = rho_(p,q)(beta) chi_(p,q), so R_beta^env = C_(Z_beta^env).",
+          "load_bearing_step_class": "F",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or runner-certify that the stripped residual source-sector operator equals the actual compressed unmarked spatial Wilson environment, beyond insertion of the finite single-link coefficient packet.",
+          "open_dependency_paths": [
+            "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 1,
+            "C": 1,
+            "D": 0,
+            "total_pass": 9
+          },
+          "verdict_rationale": "The note openly makes the operator-realization step conditional: R_beta^env = C_(Z_beta^env) depends on a parent residual-environment identification that is not proved in this packet. The cited parent has retained_bounded status only for a finite coefficient packet and explicitly disclaims equality with the actual compressed unmarked spatial Wilson environment. The runner genuinely computes single-link Wilson coefficients and checks finite packaging, but its load-bearing operator identity remains a symbol identification at the full residual-environment scope."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 4,
-        "B": 1,
-        "C": 1,
+        "A": 0,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 9
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
-      "title": "Gauge-Vacuum Plaquette Spatial Environment Character-Measure Theorem",
+      "title": "Gauge-Vacuum Plaquette Spatial Environment Character-Measure Finite Packet",
       "transitive_descendants": 1031,
-      "verdict_rationale": "The note openly makes the operator-realization step conditional: R_beta^env = C_(Z_beta^env) depends on a parent residual-environment identification that is not proved in this packet. The cited parent has retained_bounded status only for a finite coefficient packet and explicitly disclaims equality with the actual compressed unmarked spatial Wilson environment. The runner genuinely computes single-link Wilson coefficients and checks finite packaging, but its load-bearing operator identity remains a symbol identification at the full residual-environment scope."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T16:54:42.296723+00:00",
@@ -109015,7 +109080,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 20.035,
+      "load_bearing_score": 20.036,
       "load_bearing_step": "The plaquette spectral measure is exactly the spectral measure of the explicit self-adjoint character-recurrence operator J in the positive transfer state induced by T_(L_s,beta).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -109037,7 +109102,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py",
       "title": "Gauge-Vacuum Plaquette Transfer-Operator / Character-Recurrence Theorem",
-      "transitive_descendants": 1048,
+      "transitive_descendants": 1049,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input."
     },
     "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17": {
@@ -293324,8 +293389,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2336,
-    "re_audit_required": 1,
+    "preserved_existing": 2337,
+    "re_audit_required": 0,
     "row_count": 2381,
     "seeded_new": 0
   }

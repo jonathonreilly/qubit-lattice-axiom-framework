@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 141 |
+| **retained** | 142 |
 | **retained_no_go** | 154 |
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
 | unaudited | 1248 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -50,8 +49,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 685 |
+| `audited_clean` | 686 |
 | `audited_conditional` | 113 |
 | `audited_decoration` | 33 |
 | `audited_failed` | 50 |
@@ -122,7 +120,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `hw1_second_order_return_shape_theorem_note` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -402,6 +399,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6067,6 +6065,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** selector route; no `eta`, `Omega_Lambda`, or `H_0` numerical claim.  _(class `B`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified B-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `hw1_second_order_return_shape_theorem_note`
+
+- **Note:** [`HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md`](../../docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-dimensional Cl(3)⊗taste projector identity for the Gamma_1 second-order return on the hw=1 generation triplet, with arbitrary intermediate weights and no claimed derivation of the weight values.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T205321Z-7c288d9f-hw1_second_order_return_-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Direct matrix computation gives the four single-projector returns diag(1,0,0), diag(0,1,0), diag(0,0,1), and diag(0,0,0); linearity in the weights gives P_T1 Gamma_1 W Gamma_1 P_T1 = diag(w_O0,w_a,w_b).  _(class `A`)_
+- **chain closes:** True — The cited retained Gamma_1/T_1 surface plus the explicit Hamming-bit action close the projector calculation: Gamma_1 flips only axis 1, so the three T_1 species hit O_0, T_2(1,1,0), and T_2(1,0,1), while T_2(0,1,1) is absent at this order. Linearity then gives the affine diagonal form.
+- **rationale:** Both one-hop authorities are retained-grade under the rubric, and the load-bearing step is an exact algebraic projector decomposition rather than a fitted numerical comparison or renaming. The runner’s broader hierarchy survey ends underdetermined for charged-lepton mass values, but the audited source claim only asserts the structural affine shape and explicitly leaves the weights unfixed. The structural theorem therefore closes on the restricted packet.
 - **auditor confidence:** high
 
 ### `hypercharge_identification_note`

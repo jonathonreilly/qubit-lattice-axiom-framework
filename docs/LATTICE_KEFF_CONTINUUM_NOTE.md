@@ -1,7 +1,21 @@
 # k_eff = k·h Continuum Limit Note
 
-**Date:** 2026-04-09
-**Status:** proposed_retained NEGATIVE — the remaining dense-continuum candidate `k_eff = k·h` does not produce a clean refinement lane. It gives finite rows at `h ∈ {2.0, 1.0, 0.5}` but the detector probability falls below the harness prune floor (1e-30) at `h = 0.25`, causing the measurement to report zero. The gravity channel is also unstable on the proposed_retained rows (`-1.69 → +0.14 → +0.58`). **Note:** the reported "zero" at h=0.25 is a harness-floor artifact — replaying without the 1e-30 amplitude prune gives P_free ≈ 7e-75 (nonzero on all detector nodes). The detector is not literally dead; it is ~75 orders of magnitude below unity, which is still a practical failure for the scheme.
+**Date:** 2026-04-09 (claim type corrected 2026-05-23; the note's
+substantive content was already negative.)
+**Type:** no_go
+**Claim scope:** The dense-continuum scheme `k_eff = k·h` is
+falsified as a refinement-lane candidate by the recorded harness
+output: detector probability collapses (~7e-75 at `h = 0.25`, 75
+orders of magnitude below unity), and the gravity channel does not
+exhibit a stable convergent trend on the surviving rows
+(`-1.6910 → +0.1374 → +0.5821` at `h = 2.0, 1.0, 0.5`).
+**Status authority:** independent audit lane only. This source note
+does not set or predict an audit outcome; later status is generated
+by the audit pipeline after independent review.
+**Falsification witness residual:** detector probability underflow
+at `h = 0.25` (P_free ≈ 7e-75 in the unpruned replay; reported as
+exactly 0 by the default-pruned harness). This is the named witness
+the no_go rests on.
 
 ## Artifact chain
 
@@ -53,7 +67,7 @@ It does something qualitatively worse:
 
 So `k_eff = k·h` is not stabilizing the dense kernel. It is pushing the system
 from an over-coupled regime into a detector-starved regime without producing a
-retained window that looks convergent.
+usable window that looks convergent.
 
 The gravity channel reinforces that read:
 
@@ -71,15 +85,95 @@ This is weaker than the fan-out falsification in one sense:
 
 But it is still a real negative:
 
-- it never reaches a clean retained refinement lane
+- it never reaches a clean usable refinement lane
 - it loses the detector observable completely by `h = 0.25`
 - it does not preserve a stable gravity trend on the rows that do survive
 
 So the dense-continuum candidate pool is now effectively exhausted:
 
-1. nearest-neighbor branch: retained through `h = 0.25`, but runtime-blocked finer
+1. nearest-neighbor branch: bounded through `h = 0.25`, but runtime-blocked finer
 2. fan-out normalization: falsified
 3. `k_eff = k·h`: detector-collapse negative
+
+## No-Go Discipline (N1-N8)
+
+This is a narrow no-go: only the dense-continuum scheme `k_eff = k·h` is
+falsified as a refinement-lane candidate on this harness. Architecture changes
+and the already-bounded nearest-neighbor branch are explicitly out of scope.
+
+- **(N1) Alternative attack routes.**
+  1. **Prune-artifact route (ATTEMPTED).** Treat the `h = 0.25` zero as only
+     a 1e-30 prune artifact. Replaying without the prune gives
+     `P_free ≈ 7e-75`, so the detector is nonzero only at a practically
+     unusable scale.
+  2. **Gravity-only route (ATTEMPTED).** Ignore detector probability and rely
+     on gravity convergence. The surviving gravity rows
+     `-1.6910 → +0.1374 → +0.5821` change sign and do not show a stable
+     limiting trend.
+  3. **Nearest-neighbor comparison route (RULED OUT BY PRIOR).**
+     [`LATTICE_NN_CONTINUUM_NOTE.md`](LATTICE_NN_CONTINUUM_NOTE.md) is a
+     separate bounded route through `h = 0.25`; it does not rescue this dense
+     `k_eff = k·h` scheme.
+  4. **Fan-out normalization route (RULED OUT BY PRIOR).**
+     [`LATTICE_FANOUT_CONTINUUM_NOTE.md`](LATTICE_FANOUT_CONTINUUM_NOTE.md)
+     records a different dense scheme as falsified, so it does not rescue this
+     scheme.
+  5. **Architecture-change route (NOT CLOSED; EXCLUDED FROM CLAIM).** Change
+     architecture, geometry, measure factor, or detector observable. Those are
+     legitimate future lanes, so this note excludes them instead of pretending
+     this no-go closes them.
+
+- **(N2) Wall-independence audit.** There are two load-bearing walls:
+  detector starvation at `h = 0.25` and lack of stable gravity convergence on
+  the surviving rows.
+
+  | pair | closes automatically? | result |
+  |---|---|---|
+  | detector starvation → gravity convergence | no | a detector repair would still need a stable gravity trend |
+  | gravity convergence → detector starvation | no | a smoother gravity trend would still leave the detector unusable at `h = 0.25` |
+
+  The collapsed wall set is therefore the same two-wall set within the current
+  harness.
+
+- **(N3) Hidden-wall scan.** The assumptions are explicit: dense lattice
+  geometry from the parent continuum-limit program, the inherited
+  `ea = exp(i · (k·h) · act) · w / L · h²` measure factor being tested, and
+  the detector observable used by the comparator
+  [`CONTINUUM_LIMIT_NOTE.md`](CONTINUUM_LIMIT_NOTE.md). No hidden tuning or
+  free parameter is used to suppress the detector at `h = 0.25`.
+
+- **(N4) Residual matching.**
+
+  | witness | residual attacked | residual claimed here | match |
+  |---|---|---|---|
+  | [`scripts/lattice_keff_continuum.py`](../scripts/lattice_keff_continuum.py), default run | detector probability at `h = 0.25` reports zero | detector starvation blocks this scheme's usable refinement lane | yes |
+  | unpruned replay of the same propagation/readout | `P_free ≈ 7e-75` at `h = 0.25` | prune floor is not the only issue; the detector scale is still unusable | yes, support-only |
+  | [`scripts/lattice_keff_continuum.py`](../scripts/lattice_keff_continuum.py), surviving rows | gravity sequence `-1.6910 → +0.1374 → +0.5821` | surviving rows do not establish continuum closure | yes |
+
+- **(N5) Rhetoric audit.** The no-go is not phrased as "no continuum limit is
+  possible." It is only "this dense `k_eff = k·h` scheme does not rescue the
+  dense-continuum lane on this detector/harness." Per-site, per-mode, and
+  architecture-level alternatives are not ruled out.
+
+- **(N6) Partial-closure path scan.** A convention reframe cannot repair this
+  row because the blocker is numerical detector starvation plus unstable
+  gravity trend, not a naming or status-class issue. A future lane may still
+  change the architecture, measure, detector observable, or return to the
+  bounded nearest-neighbor branch.
+
+- **(N7) Steelman.** The strongest counterargument is that the detector floor
+  is a harness readout problem, not a physics problem: since the unpruned
+  replay is nonzero on detector nodes, a logarithmic observable, rescaled
+  amplitude representation, or different detector normalization might recover
+  usable data. This does not overturn the current claim because the note's
+  scope is the existing detector/readout scheme; it does define a valid future
+  architecture-change lane.
+
+- **(N8) Cross-cycle echo.** Similar prior failures in this repo often became
+  bounded rather than universal negatives when a branch changed geometry,
+  normalization, or detector observable. This note follows that pattern by
+  limiting the no-go to the current dense `k_eff = k·h` scheme and leaving
+  architecture changes outside the claim.
 
 ## Bottom line
 

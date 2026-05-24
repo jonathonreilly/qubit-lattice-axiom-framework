@@ -20,11 +20,14 @@ Under the current framework memo
 [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), the
 one-qubit operator algebra at each lattice site is equivalently
 `Cl(3,0)` with the pseudoscalar `ω = σ_1 σ_2 σ_3` carrying `ω² = −𝟙`
-and `ω` central in `Cl(3,0)`. The companion
-[`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`](QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md)
-records the same binding definition. Thus the ω-centrality calculation
-in §1 below is a calculation inside the framework's local algebra, not
-an extra Clifford-structure premise.
+and `ω` central in `Cl(3,0)`. The companion file
+`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` records the same binding
+definition as a non-load-bearing reader pointer (plain-text reference,
+not a markdown-link dependency: the ω-centrality calculation in §1
+below is the in-line algebraic content, sourced from the
+`MINIMAL_AXIOMS_2026-05-20.md` axiom node only). Thus the ω-centrality
+calculation in §1 below is a calculation inside the framework's local
+algebra, not an extra Clifford-structure premise.
 
 Specifically:
 - The three Pauli generators `σ_1, σ_2, σ_3` are the standard

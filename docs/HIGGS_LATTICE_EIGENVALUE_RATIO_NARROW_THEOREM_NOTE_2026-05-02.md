@@ -8,8 +8,12 @@
 
 > **Given** the declared graph-first SU(3) gauge surface
 > ([`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)), the
-> Wilson canonical convention `g_bare = 1` (admitted convention; see
-> [`G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`](G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md)),
+> Wilson canonical convention `g_bare = 1` (carried by the retained
+> rescaling-freedom-removal theorem
+> [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+> plus the retained constraint-vs-convention disambiguation theorem
+> [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md);
+> historical sister cycle 6 reader pointer: `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`),
 > and the Cl(3) Clifford identity `D_taste² = d · I` at
 > mean-field factorization with `N_taste = 16` taste eigenvalues, the
 > dimensionless lattice generating-functional curvature ratio is
@@ -36,8 +40,9 @@ audit verdict flagged and is excluded here.
 
 | Authority | Audit-lane status | Role |
 |---|---|---|
-| [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) | pipeline-derived | provides SU(N_c=3) gauge structure on Z³ taste surface |
-| [`G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`](G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md) | audit-pending; convention admitted by scope | β = 2 N_c / g_bare² = 6 |
+| [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) | retained | provides SU(N_c=3) gauge structure on Z³ taste surface |
+| [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | retained | removes the `A → A/g` rescaling freedom on the canonical Cl(3) normalization surface |
+| [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md) | retained_bounded | `g_bare = 1` on the canonical-normalization + Wilson-matching + local-`beta = 6` surface |
 | Cl(3) Clifford identity `D_taste² = d · I` | admitted standard staggered fermion algebra | gives `|λ_k| = sqrt(d) = 2` (in lattice units, d=4) per taste |
 | Mean-field factorization `U_{ab} → u_0 δ_{ab}` | admitted standard mean-field convention | scales eigenvalues by `u_0` |
 
@@ -139,8 +144,16 @@ the audit lane ratifies this row and its dependency chain.
 
 - `HIGGS_MASS_FROM_AXIOM_NOTE.md` — parent with a conditional audit verdict;
   this narrow theorem keeps only the lattice-side algebra clean.
-- [`G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`](G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md) —
-  cycle 6 sister narrow theorem.
+- [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) —
+  retained sister theorem: removes the `A → A/g` rescaling freedom.
+- [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md) —
+  retained_bounded sister theorem: `g_bare = 1` on canonical-normalization
+  + Wilson-matching + `beta = 6` surface.
+- `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md` —
+  historical cycle 6 sister narrow theorem (plain-text reader pointer,
+  not a markdown-link load-bearing dependency; the load-bearing g_bare
+  content is now carried by the two retained 2026-05-03 sister theorems
+  listed above).
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) —
   declared dependency.
 - Cycles 1-5 (PRs #292, #293, #294, #297, #299) — sister narrow theorems

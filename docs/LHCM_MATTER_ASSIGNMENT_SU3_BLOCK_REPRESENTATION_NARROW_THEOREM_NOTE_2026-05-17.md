@@ -7,9 +7,8 @@ retained graph-first SU(3) integration theorem (which supplies the
 canonical Sym²/Anti² eigendecomposition of the residual permutation τ on
 the 4-point base, the (3+1)-dimensional block split `C⁴ = Sym²(C²) ⊕
 Anti²(C²)`, and the joint commutant `gl(3) ⊕ gl(1)` whose compact
-semisimple part is `su(3)`), plus the retained graph-first selector
-derivation (axis selection) and the retained narrow ratio theorem on
-the (6+2) LH-doublet state count, the SU(3) representation content on
+semisimple part is `su(3)`) plus the retained graph-first selector
+derivation (axis selection), the SU(3) representation content on
 the LH-doublet sector decomposes — by standard finite-dimensional
 representation theory — as
 
@@ -63,25 +62,31 @@ Step 2) and the residual transposition τ on the remaining 4-point base
 [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)
 + Step 3 of the integration note).
 
-The four retained input identities are:
+The three load-bearing retained input identities (I1)-(I2)-(I4) are
+graph-first markdown-link dependencies; (I3) is recorded below as a
+structural-consistency cross-check sourced from a plain-text reader
+pointer (see **Cited dependencies** section), not as a load-bearing
+premise:
 
 ```text
 (I1)  C⁴ = Sym²(C²) ⊕ Anti²(C²) under τ, multiplicities 3 and 1.
-      (graph-first integration note Step 3)
+      (graph-first integration note Step 3; markdown-link load-bearing)
 
 (I2)  Joint commutant of {SU(2)_weak, τ} is gl(3) ⊕ gl(1), with
       compact semisimple part su(3) acting irreducibly on Sym² via
       embedded Gell-Mann generators.
-      (graph-first integration note Steps 4-5)
+      (graph-first integration note Steps 4-5; markdown-link load-bearing)
 
 (I3)  LH-doublet (6+2)-multiplicity tracelessness on the
       C² ⊗ (Sym² ⊕ Anti²) sector with structural ratio 1:(-3).
-      (LH-doublet traceless abelian eigenvalue ratio narrow theorem)
+      (plain-text reader pointer to the LH-doublet traceless abelian
+      eigenvalue ratio narrow theorem; non-load-bearing for (B1)-(B3),
+      used only as the (C2) consistency cross-check below)
 
 (I4)  Canonical axis selection: the graph-first selector picks
       exactly one taste-cube axis, so τ on the complementary two
       axes is canonical, not chosen.
-      (graph-first selector derivation note)
+      (graph-first selector derivation note; markdown-link load-bearing)
 ```
 
 Then:
@@ -176,8 +181,14 @@ dimension on the graph-first selected-axis surface.
 
 (C2) The dimension multiplicities `(6, 2)` are the SU(3)-charged and
 SU(3)-singlet block multiplicities on the LH-doublet sector. Combined
-with the retained narrow ratio theorem
-[`LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md),
+with the narrow ratio theorem
+`LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`
+(plain-text reader pointer; cited as structural-consistency cross-check
+only, not as a load-bearing premise of this corollary's algebraic
+content, which follows from (I3) of the **Cited dependencies** section's
+plain-text reference list — i.e. the citation-graph builder does not
+record this corollary as carrying a load-bearing dependency edge on the
+ratio note),
 the unique traceless U(1) direction in the commutant has eigenvalue
 ratio `+1 : (−3)` on the `(2, 3) : (2, 1)` sub-decomposition (the
 +1 eigenvalue lives on the 3-dim SU(3)-fundamental block; the −3
@@ -282,8 +293,8 @@ ratio theorem.
 
 ## Cited dependencies
 
-Load-bearing markdown-link upstream (three retained-grade one-hop
-dependencies per the live ledger on 2026-05-17):
+Load-bearing markdown-link upstream (two retained-grade one-hop
+dependencies per the live ledger on 2026-05-24):
 
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
   — currently `retained_bounded`, `audited_clean` per
@@ -296,15 +307,22 @@ dependencies per the live ledger on 2026-05-17):
   on row `graph_first_selector_derivation_note`. Supplies (I4) the
   canonical axis selection so that the residual transposition τ on the
   4-point base is not a chosen factorisation.
-- [`LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md)
-  — currently `retained_bounded`, `audited_clean` per the same ledger
-  on row
+
+Plain-text (non-load-bearing) reader pointers; (I3)/(C2) consistency
+check below is **not** in the load-bearing chain of (B1)-(B3) — the
+block-content identifications follow from (I1)-(I2)-(I4) plus standard
+finite-dim representation theory and `dim(C² ⊗ V) = 2 dim V`, and the
+LH-doublet ratio note is now consulted only as a reader pointer:
+
+- `LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`
+  — current `decoration_under_graph_first_su3_integration_note` per the
+  same ledger on row
   `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`.
-  Supplies (I3) the (6+2) tracelessness multiplicity count and the
-  scale-free ratio `+1 : (−3)` consistency check.
-
-Plain-text (non-load-bearing) reader pointers:
-
+  Records the (6+2) tracelessness multiplicity count and the scale-free
+  ratio `+1 : (−3)` consistency check — referenced from corollary (C2)
+  below as a structural-consistency cross-check, not as a load-bearing
+  premise of (B1), (B2), or (B3). Plain-text reference so the citation
+  graph does not record it as a load-bearing edge for this row's audit.
 - `HYPERCHARGE_IDENTIFICATION_NOTE.md` — parent chain-assembly note
   consuming the L2 step that this narrow theorem supplies.
 - `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`
@@ -388,12 +406,16 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 30`.
 
 ## Citation-graph note
 
-Three load-bearing markdown-link upstream dependencies (listed in
-**Cited dependencies** above), all retained-grade per the live audit
-ledger on 2026-05-17. The related-authority and parent cross-references
-are plain-text reader pointers (not markdown links), so the
-citation-graph builder does not pick them up as load-bearing
-dependencies on conditional or decoration content. This is the
-intentional citation-graph shape: a narrow theorem whose load-bearing
-inputs are exclusively retained authorities, providing a retained-grade
-L2 input for the parent `hypercharge_identification_note`'s chain.
+Two load-bearing markdown-link upstream dependencies (listed in
+**Cited dependencies** above), both retained-grade per the live audit
+ledger on 2026-05-24:
+`graph_first_su3_integration_note` (retained) and
+`graph_first_selector_derivation_note` (retained). The LH-doublet
+traceless abelian ratio note and the related-authority and parent
+cross-references are plain-text reader pointers (not markdown links),
+so the citation-graph builder does not pick them up as load-bearing
+dependencies on the audited-conditional ratio row or on decoration
+content. This is the intentional citation-graph shape after the
+2026-05-24 narrowing: a narrow theorem whose load-bearing inputs are
+exclusively retained-grade authorities, providing a retained-grade L2
+input for the parent `hypercharge_identification_note`'s chain.

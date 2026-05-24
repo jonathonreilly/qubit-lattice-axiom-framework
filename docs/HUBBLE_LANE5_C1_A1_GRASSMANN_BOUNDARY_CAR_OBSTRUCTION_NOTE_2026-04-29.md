@@ -146,3 +146,37 @@ Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`c
 - `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
 
 Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
+
+## Audit dependency repair links (2026-05-24)
+
+Repair pattern: the load-bearing finite-CAR algebra on `F(C^3)` (the
+three-mode bulk Fock representation with rank-four projections used in
+the obstruction witness) is supplied at retained-grade by the two
+retained `STAGGERED_DIRAC_SUBSTEP{3,4}_*_NARROW_THEOREM_NOTE_2026-05-17`
+narrow theorems, per the gate's own closure-synthesis instruction
+(plain-text reader pointer:
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`,
+line 33):
+
+> downstream rows with substep-specific needs should cite the relevant
+> `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems directly
+> rather than this gate alias.
+
+Per that instruction, the following retained substep theorems are the
+load-bearing supply for the finite-CAR-algebra obstruction:
+
+- [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — retained; supplies the 3-dim complex carrier `V_3` carrying a
+  pairwise-commuting unitary triple with pairwise-distinct joint
+  eigenvalue triples, structurally matching the three-mode finite Fock
+  representation `F(C^3)` used in the obstruction witness.
+- [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — retained; supplies the `1 + 3 + 3 + 1` Hamming-orbit decomposition
+  of `(Z_2)^3` underlying the rank-four boundary block carrier.
+
+The original plain-text references to
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (open_gate) and
+`MINIMAL_AXIOMS_2026-05-03.md` above are retained as historical reader
+pointers describing the broader open-gate context, but the load-bearing
+substrate for the finite-CAR-algebra obstruction is now carried by the
+two retained substep theorems linked here.

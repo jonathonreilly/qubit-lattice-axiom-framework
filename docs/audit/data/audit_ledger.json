@@ -260769,24 +260769,62 @@
       "verdict_rationale": null
     },
     "three_generation_observable_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T20:40:23.140785+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_mass_matrix_no_go_note": "Exact unbroken S_3-invariant Hermitian operators on the stated hw=1 triplet V = span(X_1, X_2, X_3) have at most two distinct eigenvalues; the residual axis-fixing Z_2 invariant space has real dimension 5.",
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6).",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "Audited only the abstract finite-dimensional algebra statement: on V_3 with the explicit diagonal commuting unitary triple having joint eigenvalue triples (-1,+1,+1), (+1,-1,+1), (+1,+1,-1), every operator commuting with all three T_mu is diagonal in the given joint eigenbasis.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "s3_mass_matrix_no_go_note": "no_go",
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "s3_mass_matrix_no_go_note": "retained_no_go",
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "retained",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "retained",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "s3_mass_matrix_no_go_note",
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 47.842,
+        "runner_hash": "62ebd44bdaf2638a9682e67fb32031013123dca283ff4bf5d81d828dd870f7d2",
+        "transitive_descendants": 917
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T203906Z-6a84a04c-three_generation_observa-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the specified operators, the projector construction, matrix-unit generation, observable-descent lemma, and irreducibility argument are standard finite-dimensional linear algebra. The cited retained inputs are sufficient for this narrowed operator-algebra surface, while physical-species and substrate claims are explicitly out of scope.",
       "claim_id": "three_generation_observable_theorem_note",
-      "claim_scope": "Finite-dimensional C^3 theorem: for the specified distinct translation-character projectors and cyclic C3 action on H_hw=1, the generated algebra is M_3(C) and no proper quotient preserving that exact algebra exists.",
+      "claim_scope": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": "2026-05-24T20:38:39.791409+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-24T20:40:23.140785+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -260801,8 +260839,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-24T20:40:23.140785+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T203906Z-6a84a04c-three_generation_observa-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -260814,19 +260863,19 @@
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
       ],
       "direct_in_degree": 76,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 47.842,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The translation projectors P_i together with powers of the cyclic C3[111] map generate every matrix unit E_ij, so the retained algebra is M_3(C), whose irreducibility leaves no nontrivial invariant quotient kernel.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "6d325d35f4da173d9af2e8eaf23c465f5c17adeaac400bd40af6874b11ae7ca7",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that later wording stays limited to the specified C^3 operator algebra and does not re-import physical-species or substrate identification.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -261036,18 +261085,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 47,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 47
       },
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem Note",
       "transitive_descendants": 917,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure over the supplied operator inputs, not a definition, renaming, numerical match, or external comparator check. The runner source hard-codes the specified finite matrices as inputs but then actually verifies the projector ranks, matrix-unit generation, commutant dimension, observable descent, and irreducibility checks. The negative no-proper-quotient boundary passes the restricted no-go gate because attack routes such as preserving only translations, dropping C3, approximate reduction, nonlinear quotienting, or physical reinterpretation all leave the stated exact full-algebra quotient scope."
     },
     "three_generation_structure_note": {
       "audit_date": null,

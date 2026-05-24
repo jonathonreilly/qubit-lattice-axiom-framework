@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1261 |
+| unaudited | 1262 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 109 |
+| ~~audited_conditional~~ | 108 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 680 |
-| `audited_conditional` | 109 |
+| `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1487 |
+| `unaudited` | 1488 |
 
 | claim_type | count |
 |---|---:|
@@ -908,7 +908,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `yukawa_color_projection_theorem` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -13020,19 +13019,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
 - **auditor confidence:** high
-
-### `yukawa_color_projection_theorem`
-
-- **Note:** [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** SU(N_c) Fierz decomposition and the proposed identification of the adjoint/connected channel fraction as (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3, excluding physical Higgs-Z, Yukawa, and EW matching claims.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-judicial-panel-per-site-k1-20260523T150700Z-yukawa_color_projection_theorem-majority`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** The note moves from the exact 1 ⊕ adj Fierz/Hilbert-space decomposition to the claim that the connected color-trace fraction is F_adjoint = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3.  _(class `A`)_
-- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / class A; J2: second / audited_conditional / positive_theorem / class A; J3: second / audited_conditional / positive_theorem / class A; J4: second / audited_conditional / positive_theorem / class A; J5: second / audited_conditional / positive_theorem / class A. Majority rationale: The exact representation-theory dimension fraction is closed by standard SU(N_c) algebra and retained N_c = 3 inputs. But the source note defines F_adjoint as a ratio depending on the propagator matrix M, and the note itself shows it is not fixed by dimension counting in the free case. The step equating the actual connected/interacting color-trace fraction with the adjoint dimension fraction requires an extra equal-population or ergodicity bridge that is not proved in the restricted packet. | The Fierz identity and representation dimension count are exact algebraic group theory, and the runner genuinely verifies those facts. However, the source note defines F_adjoint as a fraction of Tr[M M^dag] for an actual propagator matrix M, and that fraction is not fixed by dimension counting alone; the note itself gives the free-theory case where the adjoint fraction is zero. The missing bridge is the dynamical/equal-channel-population or connected-trace saturation step that turns an exact Hilbert-space dimension fraction into the actual connected color-trace fraction R_conn = 8/9. | The Fierz identity and representation dimension fraction are exact algebraic facts, and the runner genuinely verifies those. But the source note defines F_adjoint as a ratio depending on the actual matrix M, and it explicitly notes that the free theory has F_adjoint = 0, not 8/9. Therefore the step from dimension count to the actual connected color-trace fraction requires an additional equal-population, ergodicity, or dynamical projection bridge not closed by the restricted packet. | The Fierz identity and representation dimension count are exact algebraic facts, and the runner verifies those facts rather than merely printing constants. However, the source note defines F_adjoint as a matrix-dependent ratio of singlet and adjoint terms, and it explicitly shows that the free-theory value is zero, so the value is not fixed by Fierz algebra alone. The step from adjoint Hilbert-space dimension fraction to the interacting connected-trace fraction requires an additional equal-population/ergodicity or matching bridge that is not closed by the restricted packet. | The exact Fierz identity and representation dimension count are closed algebraic facts over the retained SU(3) input. However, the source note defines F_adjoint as a ratio depending on the propagator matrix M, and it explicitly notes that in the free theory this ratio is 0, not 8/9. The move from dimension fraction to the actual connected color-trace fraction requires an equal-channel-population or ergodicity bridge, which is named in the note but not derived in the restricted packet. Therefore the clean verdict is too strong for the claim as actually scoped.
-- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / class A; J2: second / audited_conditional / positive_theorem / class A; J3: second / audited_conditional / positive_theorem / class A; J4: second / audited_conditional / positive_theorem / class A; J5: second / audited_conditional / positive_theorem / class A. Majority rationale: The exact representation-theory dimension fraction is closed by standard SU(N_c) algebra and retained N_c = 3 inputs. But the source note defines F_adjoint as a ratio depending on the propagator matrix M, and the note itself shows it is not fixed by dimension counting in the free case. The step equating the actual connected/interacting color-trace fraction with the adjoint dimension fraction requires an extra equal-population or ergodicity bridge that is not proved in the restricted packet. | The Fierz identity and representation dimension count are exact algebraic group theory, and the runner genuinely verifies those facts. However, the source note defines F_adjoint as a fraction of Tr[M M^dag] for an actual propagator matrix M, and that fraction is not fixed by dimension counting alone; the note itself gives the free-theory case where the adjoint fraction is zero. The missing bridge is the dynamical/equal-channel-population or connected-trace saturation step that turns an exact Hilbert-space dimension fraction into the actual connected color-trace fraction R_conn = 8/9. | The Fierz identity and representation dimension fraction are exact algebraic facts, and the runner genuinely verifies those. But the source note defines F_adjoint as a ratio depending on the actual matrix M, and it explicitly notes that the free theory has F_adjoint = 0, not 8/9. Therefore the step from dimension count to the actual connected color-trace fraction requires an additional equal-population, ergodicity, or dynamical projection bridge not closed by the restricted packet. | The Fierz identity and representation dimension count are exact algebraic facts, and the runner verifies those facts rather than merely printing constants. However, the source note defines F_adjoint as a matrix-dependent ratio of singlet and adjoint terms, and it explicitly shows that the free-theory value is zero, so the value is not fixed by Fierz algebra alone. The step from adjoint Hilbert-space dimension fraction to the interacting connected-trace fraction requires an additional equal-population/ergodicity or matching bridge that is not closed by the restricted packet. | The exact Fierz identity and representation dimension count are closed algebraic facts over the retained SU(3) input. However, the source note defines F_adjoint as a ratio depending on the propagator matrix M, and it explicitly notes that in the free theory this ratio is 0, not 8/9. The move from dimension fraction to the actual connected color-trace fraction requires an equal-channel-population or ergodicity bridge, which is named in the note but not derived in the restricted packet. Therefore the clean verdict is too strong for the claim as actually scoped.
-- **auditor confidence:** judicial_panel_majority
 
 ### `z2_hw1_mass_matrix_parametrization_note`
 

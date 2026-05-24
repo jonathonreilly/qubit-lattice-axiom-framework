@@ -13546,7 +13546,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/lattice_nn_continuum.py"
+      "runner": "scripts/lattice_nn_high_precision_raw_certificate.py"
     },
     "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17": {
       "assert_count": 0,
@@ -50349,8 +50349,7 @@
     "scripts/lattice_nn_continuum.py": {
       "assert_count": 0,
       "claims": [
-        "lattice_nn_continuum_note",
-        "lattice_nn_rg_reconciliation_note"
+        "lattice_nn_continuum_note"
       ],
       "counts": {
         "A": 0,
@@ -50395,7 +50394,8 @@
     "scripts/lattice_nn_high_precision_raw_certificate.py": {
       "assert_count": 0,
       "claims": [
-        "lattice_nn_high_precision_note"
+        "lattice_nn_high_precision_note",
+        "lattice_nn_rg_reconciliation_note"
       ],
       "counts": {
         "A": 0,

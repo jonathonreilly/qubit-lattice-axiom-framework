@@ -62543,8 +62543,8 @@
     },
     "lattice_nn_rg_reconciliation_note": {
       "claim_id": "lattice_nn_rg_reconciliation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lattice_nn_continuum_note",
@@ -62553,9 +62553,9 @@
         "lattice_nn_high_precision_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "19c9aa2330e154f271668b17b732f4d9e87b5efd40656e47acf4d4f2d513f650",
+      "note_hash": "86b01757cb52f011e049489591686b1b5bcbb09323546cb2525f0ac5ade89d1d",
       "path": "docs/LATTICE_NN_RG_RECONCILIATION_NOTE.md",
-      "runner_path": "scripts/lattice_nn_continuum.py",
+      "runner_path": "scripts/lattice_nn_high_precision_raw_certificate.py",
       "title": "Lattice NN RG Reconciliation Note"
     },
     "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17": {
@@ -84507,11 +84507,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 526,
+      "bounded_theorem": 527,
       "decoration": 1,
       "meta": 188,
       "no_go": 68,
-      "none": 1491,
+      "none": 1490,
       "open_gate": 45,
       "positive_theorem": 176
     },

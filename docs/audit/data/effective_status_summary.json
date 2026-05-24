@@ -39,7 +39,7 @@
   "cycles_detected": 3,
   "effective_status_counts": {
     "audited_conditional": 109,
-    "audited_failed": 5,
+    "audited_failed": 6,
     "audited_numerical_match": 11,
     "audited_renaming": 15,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
@@ -65,7 +65,7 @@
     "retained_bounded": 415,
     "retained_no_go": 154,
     "retained_pending_chain": 7,
-    "unaudited": 1255
+    "unaudited": 1254
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

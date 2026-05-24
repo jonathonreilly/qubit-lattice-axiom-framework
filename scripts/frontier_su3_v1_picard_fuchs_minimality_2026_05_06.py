@@ -1,14 +1,14 @@
 """
-Minimality certificate for the V=1 SU(3) Wilson Picard-Fuchs ODE.
+Finite-window certificate for the V=1 SU(3) Wilson Picard-Fuchs ODE.
 
 Companion to: scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py
 Note:        docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md
 
-This runner provides exact finite certificates that can support the V=1 PF
-ODE minimality interpretation when paired with the external
-Bernstein/Aomoto-Gelfand and Wilf-Zeilberger/Saito-Sturmfels-Takayama inputs
-named in the note. It does not set an audit verdict or promote the companion
-row by itself:
+This runner provides exact finite certificates for the V=1 PF ODE candidate.
+The all-order minimal-annihilator interpretation is outside this runner's
+direct authority and would require external Bernstein/Aomoto-Gelfand and
+Wilf-Zeilberger/Saito-Sturmfels-Takayama inputs. This script does not set an
+audit verdict or companion-row status:
 
   (A) DEEP TAYLOR ANNIHILATION CERTIFICATE
       Generate Bessel-determinant Taylor series to high order (default N=60),
@@ -351,12 +351,14 @@ def certificate_B(coeffs, depth: int, r_max: int = 2, d_max: int = 12) -> tuple[
     """
     info = {}
     all_excluded = True
+    skipped = []
     for r in range(1, r_max + 1):
         for d in range(d_max + 1):
             num_unknowns = (r + 1) * (d + 1)
             num_eqs = min(num_unknowns + 8, depth - r - 2)
             if num_eqs < num_unknowns:
                 info[f"r={r},d={d}"] = "skipped (not enough Taylor coeffs)"
+                skipped.append(f"r={r},d={d}")
                 continue
             M, _ = matrix_for_ansatz(coeffs, r, d, num_eqs)
             rk = _rank_via_numeric(M, num_unknowns)
@@ -367,7 +369,18 @@ def certificate_B(coeffs, depth: int, r_max: int = 2, d_max: int = 12) -> tuple[
                 info[f"r={r},d={d}"]["status"] = "FAIL: non-trivial annihilator candidate"
             else:
                 info[f"r={r},d={d}"]["status"] = "OK: no annihilator"
-    msg = f"Lower-order exclusion certificate: {'ALL (r <= {}, d <= {}) EXCLUDED'.format(r_max, d_max) if all_excluded else 'EXCLUSION FAILED'}"
+    if all_excluded:
+        if skipped:
+            msg = (
+                "Lower-order exclusion certificate: ALL CHECKED CELLS EXCLUDED; "
+                + "SKIPPED "
+                + ", ".join(skipped)
+                + " (not enough Taylor coeffs)"
+            )
+        else:
+            msg = f"Lower-order exclusion certificate: ALL (r <= {r_max}, d <= {d_max}) EXCLUDED"
+    else:
+        msg = "Lower-order exclusion certificate: EXCLUSION FAILED"
     return all_excluded, msg, info
 
 
@@ -475,7 +488,7 @@ def certificate_E(coeffs, depth: int, d_max: int = 8) -> tuple[bool, str, dict]:
 
 def main():
     print("=" * 78)
-    print("V=1 SU(3) Wilson Picard-Fuchs ODE: Minimality Certificate")
+    print("V=1 SU(3) Wilson Picard-Fuchs ODE: Finite-Window Certificate")
     print("=" * 78)
     print()
     print("Candidate ODE (from PR #541):")
@@ -520,7 +533,7 @@ def main():
     print()
 
     # Certificate B (lower-order exclusion)
-    print("[B] Lower-order exclusion certificate (no order ≤ 2 ODE with deg ≤ 12):")
+    print("[B] Lower-order exclusion certificate (checked finite window):")
     okB, msgB, infoB = certificate_B(coeffs, ORDER, r_max=2, d_max=12)
     print(f"    {msgB}")
     # Print each (r, d) result
@@ -528,6 +541,8 @@ def main():
         if isinstance(val, dict):
             print(f"    {key}: unknowns={val['unknowns']}, equations={val['equations']}, "
                   f"rank={val['rank']}, kernel_dim={val['kernel_dim']} -> {val['status']}")
+        else:
+            print(f"    {key}: {val}")
     if okB:
         pass_count += 1
     else:
@@ -564,9 +579,9 @@ def main():
     print("=" * 78)
     print()
     if fail_count == 0:
-        print("Exact finite certificates passed. All-order minimality remains conditioned")
-        print("on the external holonomicity/rank and creative-telescoping inputs named")
-        print("in the companion note; audit status is set only by the independent lane.")
+        print("Exact finite certificates passed. All-order minimality remains out of")
+        print("scope without external holonomicity/rank and creative-telescoping")
+        print("inputs accepted by the independent audit lane.")
     else:
         print("FAIL: bounded certificate did not pass.")
 
@@ -577,7 +592,7 @@ def main():
         "candidate_ode": "6β² J''' + β(60-β) J'' + (-4β² - 2β + 120) J' - β(β+10) J = 0",
         "taylor_order": ORDER,
         "certificate_A": {"name": "deep Taylor annihilation", "pass": okA, "message": msgA},
-        "certificate_B": {"name": "lower-order exclusion", "pass": okB, "details": {k: v for k, v in infoB.items() if isinstance(v, dict)}},
+        "certificate_B": {"name": "lower-order exclusion", "pass": okB, "details": infoB},
         "certificate_C": {"name": "uniqueness at (r=3, d=2)", "pass": okC, "details": {k: str(v) for k, v in infoC.items()}},
         "certificate_D": {"name": "recurrence consistency", "pass": okD, "depth": ORDER},
         "certificate_E": {"name": "higher-degree consistency", "pass": okE, "details": {k: v for k, v in infoE.items() if isinstance(v, dict)}},

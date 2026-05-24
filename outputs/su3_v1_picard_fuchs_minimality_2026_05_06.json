@@ -184,7 +184,8 @@
         "rank": 36,
         "kernel_dim": 0,
         "status": "OK: no annihilator"
-      }
+      },
+      "r=2,d=12": "skipped (not enough Taylor coeffs)"
     }
   },
   "certificate_C": {

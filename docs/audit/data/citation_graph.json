@@ -66417,7 +66417,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "2c2108fedb9cb5744d792d68f9acc59fd2686afd86b01abcb2bf39d9cb36503b",
+      "note_hash": "89027778af652e78cb90d23f6661040fa42d1f9fe79bb327359b85919340f49c",
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
       "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic External Narrow Bounded Note"
@@ -68043,10 +68043,10 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "769e210cc9d5f216940a2352384c49112025330d617e4581a7cbdd9b5dc3dc62",
+      "note_hash": "e0c803319ef4557121b88993510ada53132694bffa040bfc16c0bf4121dbceab",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
-      "title": "Plaquette V=1 Picard-Fuchs ODE: Minimality Certificate Note"
+      "title": "Plaquette V=1 Picard-Fuchs ODE: Finite-Window Certificate Note"
     },
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05": {
       "claim_id": "plaquette_v1_picard_fuchs_ode_note_2026-05-05",

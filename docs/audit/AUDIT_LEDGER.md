@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1286 |
+| unaudited | 1288 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 109 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_conditional~~ | 108 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 655 |
-| `audited_conditional` | 109 |
+| `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
-| `audited_failed` | 48 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1512 |
+| `unaudited` | 1514 |
 
 | claim_type | count |
 |---|---:|
@@ -849,7 +849,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_inertial_response_readiness_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -938,7 +937,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
-| `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7948,19 +7946,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing step is a genuine class A calculus/algebra equivalence, not a definition, numerical match, or cross-note import. The no_go conclusion is narrow: imposing strict cross-block source-derivative locality is the same as imposing block additivity under the stated smoothness and normalization assumptions. The cited framework rows are context only, and no non-retained cited authority is needed for the equivalence claim.
 - **auditor confidence:** high
 
-### `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the stated finite-block algebraic counterexample that F_p=r^p factorizes multiplicatively while failing block additivity for nontrivial independent subsystems.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-145747-bc2044d8-observable_principle_p1_-011`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note asserts that for p != 0 and nontrivial r_A,r_B, F_p[J_A ⊕ J_B]=r_A^p r_B^p is never equal to F_p[J_A]+F_p[J_B]=r_A^p+r_B^p, so F_p is a non-additive counterexample compatible with multiplicative factorization.  _(class `A`)_
-- **chain closes:** False — The existential obstruction is plausible, but the stated universal P3 condition is false: r_A^p r_B^p = r_A^p + r_B^p can hold accidentally, e.g. r_A^p=r_B^p=2. The runner checks selected witnesses only and does not establish the note's 'whenever' claim.
-- **rationale:** The algebraic determinant and multiplicative F_p checks are real computations, and there are no external comparator or tuned numerical inputs. However the load-bearing non-additivity statement is over-quantified: the equation xy=x+y has positive nontrivial solutions, so the claimed inequality for every r_A,r_B != 1 is not true. A reduced claim saying F_p is not globally additive because explicit witness pairs have nonzero defect would likely close, but the source note as written does not.
-- **auditor confidence:** high
-
 ### `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`
 
 - **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
@@ -8573,21 +8558,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If a real polynomial p(t) has degree d >= 1, then p(t)/t^d tends to its nonzero leading coefficient, so |p(t)| diverges as t -> +infinity; hence finite limit or boundedness on [0,+infinity) forces p constant.  _(class `A`)_
 - **chain closes:** True — The proof is elementary polynomial algebra and the runner verifies the same leading-term, finite-limit, endpoint-obstruction, boundedness, and constant negative-control checks by exact SymPy algebra. The source explicitly excludes the parent Wilson/plaquette endpoint and hierarchy claims, so no external physical bridge is needed.
 - **rationale:** The audited claim is a standalone algebra theorem, not the parent plaquette obstruction. The note proves the leading-term asymptotic directly and derives the finite-limit, two-endpoint, and boundedness corollaries without importing any physical observable or comparator. The runner exits with PASS=52 FAIL=0 and checks the proof surface through exact symbolic limits, degree/leading-coefficient checks, endpoint obstruction examples, and constant negative controls. Residual risk is only misuse of this algebra fact by downstream physical notes, which is outside this claim scope.
-- **auditor confidence:** high
-
-### `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`
-
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Depth-40 exact-arithmetic V=1 SU(3) Bessel-determinant Taylor/rank certificate for the candidate order-3 operator, with lower-order exclusion only for r=1,d≤12 and r=2,d≤11, uniqueness at r=3,d=2, and higher-degree consistency through d=6.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-plaquette_v1_picard_fuch-008`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The runner's exact rational Taylor/rank matrices show that L·J vanishes through β^36, no checked lower-order ansatz has a kernel, and the (r=3,d=2) kernel is one-dimensional and proportional to L.  _(class `A`)_
-- **chain closes:** False — The finite checked-window certificate closes on its own terms, but the minimal-annihilator interpretation does not. It still requires an all-order bridge applying the cited Bernstein/Aomoto-Gelfand rank and WZ/SST creative-telescoping machinery to this exact integral and candidate.
-- **rationale:** The runner source genuinely constructs the Bessel-determinant Taylor series and computes exact residuals, ranks, and nullspaces; it is not merely printing expected constants. The note correctly narrows the lower-order exclusion to omit the skipped r=2,d=12 boundary, despite the runner's overbroad summary line. The all-order minimality claim remains conditional because the packet imports external holonomic-rank and creative-telescoping applicability, while the provided upstream ODE note is retained only as a finite-runner certificate and explicitly leaves the all-order Picard-Fuchs identification out of scope.
-- **open / conditional deps cited:**
-  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_note_2026-05-05`

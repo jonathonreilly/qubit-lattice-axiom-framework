@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-Exact mixed-kernel locality witness for the plaquette source-sector operator on
-the accepted Wilson 3+1 surface.
+Bounded local Wilson factor packet for the plaquette source-sector route.
 
-This does not close analytic P(6). It sharpens the remaining object:
-after trivial-channel normalization, the mixed-kernel source-sector action is
-exactly the local Wilson marked-link factor. The remaining open datum is
-residual source-sector environment data beyond that normalized mixed kernel.
+This does not close analytic P(6), the residual source-sector environment, or
+the operator-level mixed-kernel compression bridge. It computes the finite
+single-link Wilson coefficients on NMAX = 5 and packages their fourth powers as
+the finite local diagonal packet D_6^loc.
 """
 
 from __future__ import annotations
@@ -132,6 +131,8 @@ def main() -> int:
     multiplier = matrix_exponential_symmetric(jmat, BETA / 2.0)
 
     local_only = multiplier @ d_local @ multiplier
+    local_only_sym = float(np.max(np.abs(local_only - local_only.T)))
+    local_only_swap = float(np.max(np.abs(swap @ local_only - local_only @ swap)))
     _, psi_local = dominant_eigenpair(local_only)
     local_value = float(psi_local @ (jmat @ psi_local))
 
@@ -159,14 +160,16 @@ def main() -> int:
             f"a_link^4 = {a_link[idx]**4:.15f}"
         )
     print()
-    print("Normalized mixed-kernel locality")
+    print("Finite local Wilson packet")
     print(f"  non-marked trivial-channel factor     = {nonmarked_scalar_norm:.15f}")
-    print(f"  mixed-kernel normalized spread        = {mix_box_spread:.3e}")
+    print(f"  scalar-insertion normalized spread    = {mix_box_spread:.3e}")
     print(f"  local-factor swap error               = {local_sym:.3e}")
     print(f"  min/max local factor                  = {float(np.min(np.diag(d_local))):.12f}, {float(np.max(np.diag(d_local))):.12f}")
     print()
-    print("Residual source-sector consequence")
-    print(f"  local mixed-kernel Perron <J>         = {local_value:.12f}")
+    print("Finite source-sector package")
+    print(f"  local package symmetry error          = {local_only_sym:.3e}")
+    print(f"  local package swap error              = {local_only_swap:.3e}")
+    print(f"  local package Perron <J>              = {local_value:.12f}")
     print(f"  |local-only - 0.5934|                 = {abs(local_value - 0.5934):.6e}")
     print()
 
@@ -176,37 +179,37 @@ def main() -> int:
         detail=f"c_(0,0)={c00:.12f}, a_(0,0)={a_link[weights.index((0, 0))]:.12f}",
     )
     check(
-        "non-marked mixed-link factors act only through the trivial irrep on the marked source sector",
+        "trivial-channel scalar insertions do not alter the normalized finite local packet",
         abs(nonmarked_scalar_norm - 1.0) < 1.0e-15,
-        detail="after trivial-channel normalization, a non-marked mixed-link factor is the identity on marked-plaquette class functions",
+        detail="this is a finite packet normalization check, not the actual mixed-kernel compression bridge",
     )
     check(
-        "the four marked mixed-link convolutions contribute the exact local plaquette-loop factor a_(p,q)(beta)^4",
+        "the finite local plaquette-loop packet D_6^loc = diag(a_(p,q)(6)^4) is positive and conjugation-symmetric",
         local_sym < 1.0e-12 and min_local > 0.0 and min_link > 0.0,
         detail=f"local-factor symmetry={local_sym:.3e}, min local factor={min_local:.6e}",
     )
     check(
-        "the normalized mixed-kernel compression is therefore exactly the local Wilson marked-link factor with no further representation-dependent mixed-kernel environment sequence",
-        mix_box_spread < 1.0e-15,
-        detail="all non-marked mixed-link factors collapse to the same trivial-channel scalar, so normalized mixed-kernel coefficients are exactly a_(p,q)^4",
+        "the finite source-sector local package exp(3 J) D_6^loc exp(3 J) is self-adjoint and conjugation-symmetric",
+        local_only_sym < 1.0e-12 and local_only_swap < 1.0e-12,
+        detail=f"package symmetry={local_only_sym:.3e}, swap={local_only_swap:.3e}",
     )
 
     check(
-        "the local mixed-kernel factor alone does not already reproduce the full same-surface plaquette value",
+        "the finite local packet alone does not already reproduce the full same-surface plaquette value",
         abs(local_value - 0.5934) > 1.0e-2,
         detail=f"|local-only - 0.5934| = {abs(local_value - 0.5934):.6e}",
         bucket="SUPPORT",
     )
     check(
-        "the remaining framework-point ambiguity is therefore residual source-sector environment data beyond the normalized mixed kernel",
+        "the remaining framework-point ambiguity is outside the finite local Wilson packet",
         abs(local_value - 0.5934) > 1.0e-2,
-        detail="the mixed kernel is exact-local after normalization; what remains open cannot be hidden mixed-kernel coefficient freedom",
+        detail="this packet supplies D_6^loc only; it does not solve the residual environment or actual compression bridge",
         bucket="SUPPORT",
     )
     check(
-        "the exact local Wilson link factor is explicit and reusable as an atlas tool even though full analytic P(6) remains open",
+        "the finite local Wilson link factor is explicit and reusable as an atlas tool even though full analytic P(6) remains open",
         min_local > 0.0,
-        detail="this exact factor can now be reused independently of the still-open residual source-sector environment solve",
+        detail="this finite factor can now be reused independently of the still-open residual source-sector environment solve",
         bucket="SUPPORT",
     )
 

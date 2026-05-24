@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1284 |
+| unaudited | 1285 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 109 |
+| ~~audited_conditional~~ | 108 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 656 |
-| `audited_conditional` | 109 |
+| `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1510 |
+| `unaudited` | 1511 |
 
 | claim_type | count |
 |---|---:|
@@ -812,7 +812,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | F | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4625,19 +4624,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cited retained_bounded lemma note supplies the endpoint identities, global finite-Taylor-support-to-polynomial implication, and polynomial-growth lemma; the retained reduction note is redundant context for the same endpoint behavior. Under that scoped notion of truncation, the contradiction is elementary and no beta=6 closure or external comparator is used.
 - **rationale:** The proof is class A algebra over retained-grade inputs: finite truncation implies polynomial K, bounded endpoint behavior makes K' constant, and the two endpoint values contradict constancy. The runner's four theorem checks are hard-coded algebraic assertions rather than independent theorem computation, and its three Bessel computations are only support, so the runner is not the source of closure. The no-go discipline gate passes only for the narrow diagonal finite-Taylor/polynomial-generator obstruction; nonpolynomial hierarchy solutions and broader generating representations remain explicitly outside the audited scope.
 - **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_local_environment_factorization_theorem_note`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Normalized Wilson mixed-kernel compression on the marked-plaquette character sector factors as the four marked-link local Wilson convolution eigenvalue a_(p,q)(beta)^4, with residual source-sector environment data outside this bounded scope.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T144227Z-05b8ad00-gauge_vacuum_plaquette_l-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** After trivial-channel normalization the full mixed-kernel compression on the marked plaquette character sector is exactly D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q), because only the four marked links carry nontrivial representation dependence and all non-marked mixed-link factors see only the trivial irrep.  _(class `A`)_
-- **chain closes:** False — The algebraic step from linkwise factorization and trivial-link action to a_(p,q)^4 is coherent, but the restricted cited authorities do not explicitly close the required temporal-gauge mixed-kernel factorization over spatial links and the exact marked/non-marked compression map. Those premises are asserted in the note but not derived in the provided upstream text.
-- **rationale:** Both cited authorities are retained-grade, and the runner performs a real finite algebraic/numerical witness for the Bessel determinant coefficients and normalized diagonal local factor rather than merely printing constants. However, the central load-bearing theorem depends on an operator-level bridge: that the temporal-gauge mixed kernel factorizes into independent spatial-link convolutions whose restriction to the marked plaquette sector leaves exactly four nontrivial links and only trivial-channel scalars elsewhere. That bridge is not explicitly established by the restricted cited authority text, so retained status cannot propagate to the bounded conclusion from this packet alone.
-- **auditor confidence:** medium
 
 ### `gauge_vacuum_plaquette_mixed_cumulant_audit_note`
 

@@ -10282,6 +10282,10 @@
     },
     {
       "from": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+      "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
       "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
     },
     {
@@ -43528,7 +43532,7 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "b64894c412fcaa3658205e63ed1025aba4d3736d9384c6a099205fcc3cdb9634",
+      "note_hash": "370d68a169f406e20ae152479523ecb9e28060907147467fca38742728bce990",
       "path": "docs/CENTRAL_BAND_DENSE_LARGEN_NOTE.md",
       "runner_path": "scripts/central_band_dense_joint_largeN.py",
       "title": "Central-Band Dense Large-N Joint Card Note"
@@ -55427,14 +55431,15 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2302477e6ecfc7280dfb5d37239436fe1c315e9a0527b60a0afef7646855b700",
+      "note_hash": "b7a3164c70737d11e8c39cf30e62d7ef7d30718535f67c7b340783d1e14d2f0f",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
-      "title": "Gauge-Vacuum Plaquette Local / Environment Factorization Theorem"
+      "title": "Gauge-Vacuum Plaquette Local Wilson Factor Finite Packet"
     },
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note": {
       "claim_id": "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
@@ -84524,7 +84529,7 @@
       "open_gate": 124,
       "positive_theorem": 605
     },
-    "edge_count": 9695,
+    "edge_count": 9696,
     "leaf_count": 763,
     "node_count": 2495,
     "root_count": 821,

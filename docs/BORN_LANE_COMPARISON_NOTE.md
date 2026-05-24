@@ -10,7 +10,7 @@ Sorkin harness:
 - central-band `|y|` removal + layer normalization
 
 Script:
-[scripts/born_compare_modular_central_ln.py](/Users/jonreilly/Projects/Physics/scripts/born_compare_modular_central_ln.py)
+[`scripts/born_compare_modular_central_ln.py`](../scripts/born_compare_modular_central_ln.py)
 
 ## Setup
 
@@ -21,7 +21,10 @@ Script:
 - `gap = 2.0`
 - `y_cut = 2.0`
 
-## Strongest retained rows
+## Strongest supported rows
+
+Numbers below are synced to the current runner stdout (runner hash
+`c95402c8307b...`).
 
 ### Modular gap + LN
 
@@ -42,15 +45,18 @@ Script:
 ## Readout
 
 Both best LN lanes are Born-clean on the corrected harness at machine
-precision. The modular lane is slightly more stable on the Born metric in
-this sample because its `|I3|/P` maxima are a bit lower overall, while the
-central-band lane keeps a small finite-`N` decoherence advantage at `N=40`
-and `N=60`.
+precision. All `|I3|/P` entries above are at order `1e-16` to `1e-15`, which
+is the floating-point noise floor for double-precision sums of order-1
+probabilities, so neither lane carries a physical Born-violation signal at
+the sample sizes here.
 
 The safe summary is:
 
-- Born cleanliness is retained for both lanes
-- modular is marginally more stable on the corrected Sorkin metric here
+- Born cleanliness is preserved for both lanes at machine precision
+- the per-row `|I3|/P` ordering between modular and central-band is not
+  monotone in `N` on this seed set (e.g. modular has the higher max at
+  `N=25` and the lower max at `N=60`), so this comparison does not pin a
+  qualitative stability winner
 - central-band remains the simpler hard-geometry lever and keeps the better
   bounded joint-decoherence story
 
@@ -60,9 +66,9 @@ The result is an apples-to-apples tie in the main sense: both lanes survive
 the corrected Born harness cleanly. The distinction is not Born compliance
 but which bounded trade-off they prefer:
 
-- modular gap + LN: slightly cleaner Born stability
-- central-band `|y|` + LN: slightly stronger hard-geometry decoherence at
-  the larger `N` rows
+- modular gap + LN: Born-clean at machine precision on this seed set
+- central-band `|y|` + LN: Born-clean at machine precision, with a small
+  finite-`N` decoherence advantage at `N=40` and `N=60`
 
 ---
 

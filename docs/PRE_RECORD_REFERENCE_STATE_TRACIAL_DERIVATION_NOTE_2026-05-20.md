@@ -1,51 +1,73 @@
-# Pre-Record Reference State as the Unique Tracial State on A1+A2
+# Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra
 
 **Date:** 2026-05-20
 **Status:** proposal — pre-audit derivation note
-**Type:** bounded_theorem candidate (positive_theorem on the uniqueness
-half; bounded by a "no-extra-structure" identification premise on the
-pre-record half)
+**Type:** bounded_theorem candidate (positive_theorem on the
+unique-tracial-state characterization; the pre-record identification
+half is demoted to a separate open admission, not part of this row's
+audited claim — see `## Narrowed claim` and `## Open admission` below)
 **Supersedes (in part):** `archive_unlanded/a3-prime-pre-record-state-superseded-2026-05-20/A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`
 
-## What this note proves
+## Narrowed claim
 
-This note derives the pre-record reference state on the framework's
-quasi-local operator algebra **as a consequence of A1+A2 plus a single
-mild identification premise**, eliminating the need to adopt the
-reference state as a separate axiom.
+Per auditor repair target (notes_for_re_audit_if_any on the 2026-05-23
+audit verdict: "narrow the claim to the unique tracial-state theorem
+only"), this row's audited claim is restricted to the unique
+tracial-state characterization on the one-qubit operator algebra over the
+`Z^3` spatial substrate. The
+physical identification of that unique tracial state as the pre-record
+reference is **demoted to a separate open admission** (see
+`## Open admission` below) and is *not* part of the audited claim of
+this row.
 
-The framework's current axiom set is recorded in
-`MINIMAL_AXIOMS_2026-05-20.md` — two axioms in qubit form (A1: qubit
-per site, `M_2(ℂ) ≅ Cl(3,0)`; A2: `Z^3` substrate with tensor
-composition).
+The narrowed audited claim:
 
-The result:
-
-> On the qubit-lattice operator algebra defined by A1+A2 (`A1`: per-site
-> `M_2(ℂ) ≅ Cl(3,0)`; `A2`: `Z^3` substrate with tensor composition),
+> On the qubit-lattice operator algebra defined by the repo baseline
+> (one-qubit operator algebra `M_2(ℂ) ≅ Cl(3,0)` at each site, on the
+> `Z^3` spatial substrate with tensor composition),
 > there is a **unique tracial state** `τ`, characterized equivalently
 > by: `τ(AB) = τ(BA)` for all `A, B`; invariance under all inner
 > automorphisms; vanishing one-point Pauli expectation
 > `τ(σ_a^x) = 0`; or maximum von Neumann entropy on every finite
-> region. The density-matrix form of `τ` is `ρ_ref = ⊗_x I/2`.
->
-> Identification (admitted): this unique tracial state is the
-> pre-record reference. Any other choice would pick out preferred-basis
-> / preferred-direction / preferred-eigenstate structure not present
-> in A1+A2.
+> region. The density-matrix form of `τ` is `ρ = ⊗_x I/2`.
 
-This supersedes the earlier proposal to adopt the reference state as
-a third axiom (A3'). With the qubit framing of A1 in place (see
-`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`), `ρ_ref` becomes a
-*derived theorem* on A1+A2 plus the identification premise, not a new
-axiom. The framework stays at two axioms.
+The Steps 1-4 operator-algebra mathematics below (finite-dim trace
+uniqueness, tensor traciality, Powers' UHF type `2^∞` theorem) close
+this narrowed claim as a standard-math import composition. Step 5
+below is retained as the open admission and is no longer load-bearing
+on this row.
+
+## Open admission (demoted; not part of the narrowed claim)
+
+The further identification of the unique tracial state `τ` with a
+pre-record reference state `ρ_ref` rests on the no-extra-structure
+principle recorded in Step 5 below. This identification is **not**
+part of this row's audited claim and is **not** closed by the
+operator-algebra mathematics of Steps 1-4. It is recorded here as an
+open admission for separate independent treatment (either an
+independently audited bridge theorem from the one-qubit `Z^3` operator
+algebra to the no-extra-structure identification, or an independent
+forward derivation of a pre-record reference state). Until that separate
+treatment lands, this note does
+not claim that the unique tracial state has been identified with the
+pre-record reference.
+
+This narrowing supersedes the earlier proposal to adopt the reference
+state as a third axiom (A3') only for the uniqueness half; the
+pre-record identification half remains an open admission as noted
+above. With the qubit-per-site baseline in place (see
+`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` for the historical
+language), the unique tracial state becomes a *derived theorem* on the
+one-qubit `Z^3` operator algebra alone; identification with the
+pre-record reference remains the separate open admission. The framework
+stays at two axioms regardless.
 
 ## Setup
 
-By A1 (qubit form), the per-site operator algebra at each site
+By the one-qubit-per-site baseline, the per-site operator algebra at each site
 `x ∈ Z^3` is `A_x = M_2(ℂ)`, the algebra of bounded operators on
-`H_x = ℂ²`. By A2, the substrate is `Z^3` with sites composing via
-tensor product. For a finite region `Λ ⊂ Z^3`:
+`H_x = ℂ²`. The substrate is `Z^3` with sites composing via tensor product.
+For a finite region `Λ ⊂ Z^3`:
 
 - Hilbert space: `H_Λ = ⊗_{x ∈ Λ} ℂ²`, dimension `2^|Λ|`
 - Operator algebra: `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ)`, dimension `4^|Λ|` over `ℂ`
@@ -116,7 +138,9 @@ is the **hyperfinite type II_1 factor** `R`.
 
 **Conclusion.** There is a unique tracial state `τ` on the quasi-local
 algebra `A = ⊗_{x ∈ Z^3} M_2(ℂ)`, with finite-region density-matrix
-form `ρ_ref|_Λ = ⊗_{x ∈ Λ} I_2/2`.
+form `ρ|_Λ = ⊗_{x ∈ Λ} I_2/2`. (Identification of this `ρ` with a
+pre-record reference state `ρ_ref` is the demoted open admission of
+`## Open admission` above and is not closed in this step.)
 
 This is a closed-form positive theorem: **the math gives a unique
 answer**. No additional input needed for this step.
@@ -145,42 +169,52 @@ These are all equivalent for the finite-dim case; in the
 thermodynamic limit (C1), (C2), and (C5) extend cleanly, and (C4)
 becomes a "maximum entropy per site" condition.
 
-## Step 5 — Identification with the pre-record reference (admitted)
+## Step 5 — Identification with the pre-record reference (demoted to open admission; not part of the narrowed claim)
 
-To this point, the derivation is closed: there is a unique tracial
-state on the A1+A2 algebra, with density-matrix form `⊗_x I/2`. The
-remaining step is the *physical identification* of this unique state
-as the pre-record reference.
+**Scope.** Per the `## Narrowed claim` and `## Open admission` blocks
+above, the identification of `τ` with a pre-record reference state is
+**not** part of this row's audited claim. The material below is
+retained for context describing the still-open identification but is
+explicitly **not** load-bearing on the narrowed claim.
+
+To this point (Steps 1-4), the derivation is closed: there is a unique
+tracial state on the one-qubit `Z^3` algebra, with density-matrix form
+`⊗_x I/2`.
+The further (no-longer-audited-on-this-row) step is the *physical
+identification* of this unique state as the pre-record reference.
 
 The identification rests on the following principle:
 
-> **No-extra-structure principle.** A1+A2 specify the operator
-> algebra and the lattice substrate. Any pre-record state that breaks
+> **No-extra-structure principle.** The one-qubit-per-site algebra and
+> `Z^3` substrate specify the operator algebra and spatial substrate.
+> Any pre-record state that breaks
 > the algebra's natural symmetries (inner-automorphism invariance,
 > per-site unitary equivalence) introduces structure — a preferred
-> basis, direction, eigenstate, or polarization — not present in
-> A1+A2. The pre-record reference should therefore be the unique
+> basis, direction, eigenstate, or polarization — not present in that
+> baseline. The pre-record reference should therefore be the unique
 > state that introduces no such structure.
 
 By Step 4, that unique state is the tracial state `τ`.
 
 This principle is mild but admitted: it is a meta-principle about
 the relationship between axioms and derived structure. Once accepted,
-the identification of `τ` with `ρ_ref` is forced.
+the identification of `τ` with `ρ_ref` would follow.
 
-**Bounded-theorem status.** The Step 1–Step 4 mathematics is a
-positive theorem on A1+A2 alone. Step 5's identification is admitted
-under the no-extra-structure principle. The overall claim therefore
-reads as a `bounded_theorem` with the principle listed in
-`admitted_context_inputs`. If a reviewer accepts the principle, the
-identification follows; if a reviewer rejects the principle, the
-unique tracial state is still derived but its physical identification
-as "pre-record reference" is open.
+**Narrowed-claim status.** The Step 1-Step 4 mathematics is the
+narrowed audited positive theorem on the one-qubit `Z^3` operator algebra
+alone (the
+unique-tracial-state characterization). Step 5's identification is
+the demoted open admission and is **not** part of the audited claim.
+Closing it requires the separate independent treatment named in
+`## Open admission` above.
 
-## What this derivation enables
+## What this derivation enables (contingent on the demoted open admission)
 
-With `ρ_ref` derived (not posited), the Born-rule derivation pipeline
-proceeds without an axiom inflation:
+The downstream enablements below all assume the demoted open admission
+in `## Open admission` (identification of `τ` with the pre-record
+reference). Within the narrowed audited claim alone they are *not*
+enabled; they re-enter as enabled only once the open admission is
+closed by independent treatment.
 
 1. **Born derivation via Gleason–Busch on `ρ_ref`.** The pinned
    reference state combined with the Gleason–Busch theorem on the
@@ -189,44 +223,53 @@ proceeds without an axiom inflation:
    rule then gives the standard `|⟨ψ|φ⟩|²` form for post-record
    measurements. See sketched derivation in
    `archive_unlanded/a3-prime-pre-record-state-superseded-2026-05-20/A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`
-   §"Born derivation attempt" (the sketch is unchanged; only `ρ_ref`'s
-   provenance changes from posited to derived).
+   §"Born derivation attempt". Within this row's narrowed claim this
+   downstream chain is not enabled.
 
-2. **Vacuum-energy reframe.** Zero-point sums `Σ ℏω/2` are
+2. **Vacuum-energy reframe.** Zero-point sums `Σ ℏω/2` would be
    reinterpreted as relative entropies / free energies with respect
-   to `ρ_ref`, finite by construction. (Same content as the previous
-   proposal; only the reference state's status changes.)
+   to `ρ_ref`, finite by construction. Contingent on the open
+   admission.
 
 3. **Cosmological initial condition.** The universe's pre-record
-   reference is `ρ_ref` (now derived). Records accumulate from this
-   reference; the arrow of time is structural.
+   reference would be `ρ_ref`. Records would accumulate from this
+   reference. Contingent on the open admission.
 
-4. **Persistent-record kernel grounding.** The kernel acts as a CPTP
-   update on `ρ_ref` and its record-conditioned descendants.
+4. **Persistent-record kernel grounding.** The kernel would act as a
+   CPTP update on `ρ_ref` and its record-conditioned descendants.
+   Contingent on the open admission.
 
 ## What this derivation does not do
 
-- **Does not introduce a new axiom.** A3' is withdrawn; `ρ_ref` is now
-  derived from A1+A2 + the no-extra-structure identification.
-- **Does not change A1+A2.** They are unaffected. (See companion
-  proposal `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` for a
-  separate presentational sharpening of A1.)
+- **Does not, within the narrowed claim, identify the unique tracial
+  state `τ` with a pre-record reference state.** That identification
+  is the demoted open admission of `## Open admission` above and is
+  not part of this row's audited content.
+- **Does not introduce a new axiom.** A3' is withdrawn for the
+  uniqueness half (now a derived theorem); the pre-record
+  identification half remains the separate open admission above.
+- **Does not change the minimal axiom surface.** The one-qubit-per-site and
+  `Z^3` substrate commitments are unaffected. (See companion
+  proposal `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` for historical
+  presentational context.)
 - **Does not close any prior audit-conditional row** (e.g.,
   `observable_principle_from_axiom_note`'s scalar-additivity
   premise). Those conditions are observable-side or factorization-side
   and remain open under this derivation.
-- **Does not bypass the dim-2 caveat for Born derivation.**
-  Gleason's original theorem requires Hilbert dim ≥ 3; the
-  single-site dim-2 case needs Busch's POVM extension. This caveat is
-  unchanged by `ρ_ref` being derived rather than posited.
+- **Does not bypass the dim-2 caveat for any downstream Born
+  derivation.** Gleason's original theorem requires Hilbert dim ≥ 3;
+  the single-site dim-2 case needs Busch's POVM extension. This caveat
+  is unchanged by the narrowing.
 - **Does not close the Wilson-measure / `ρ_ref` Radon-Nikodym
-  compatibility check.** That is a separate pending derivation.
+  compatibility check.** That is a separate pending derivation,
+  unaffected by the narrowing.
 
 ## Relation to the BAE_MAX_ENTROPY obstruction
 
 `BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md`
 established that the *Jaynes max-entropy* route — deriving `ρ = I/2`
-from A1+A2 + Born + Jaynes principle + physical-lattice — does not
+from the one-qubit `Z^3` algebra plus Born, Jaynes principle, and
+physical-lattice inputs — does not
 have a unique answer without additional input.
 
 The present note uses a *different* route: the **unique tracial
@@ -242,26 +285,31 @@ the *tracial / unitarily-invariant* derivation route positively.
 
 ## What this file is not
 
-- Not a closure of the dim-2 Busch caveat for downstream Born
+- Not a closure of the dim-2 Busch caveat for any downstream Born
   derivation.
 - Not a derivation that bypasses operator-algebra standard
   mathematics; it cites Powers' theorem and standard finite-dim
   tracial-state uniqueness.
-- Not a unilateral retagging. The bounded-theorem candidacy depends
-  on independent audit acceptance of the no-extra-structure
-  identification premise.
+- Not a unilateral retagging. The narrowed positive-theorem candidacy
+  depends on independent audit acceptance of Steps 1-4 only; the
+  pre-record identification (Step 5) is the demoted open admission
+  and is not part of the audited claim.
+- Not a closure of the pre-record identification. That remains the
+  separate open admission in `## Open admission` above.
 - Not a numerical-prediction change.
 
 ## Citation-graph note
 
-The mathematical content (Steps 1–4) is standard operator algebra
-(finite-dim trace uniqueness, tensor traciality, Powers' UHF type
-`2^∞` theorem) — named non-derivation imports. The identification
-premise (Step 5) admits the no-extra-structure principle as input.
+The mathematical content (Steps 1–4), which constitutes the entire
+narrowed audited claim, is standard operator algebra (finite-dim
+trace uniqueness, tensor traciality, Powers' UHF type `2^∞`
+theorem) — named non-derivation imports. Step 5's identification
+premise is no longer load-bearing on the narrowed claim and is
+recorded as the demoted open admission only.
 
 **Upstream framework dependencies** (load-bearing; markdown links so the citation graph records them as deps):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — canonical axiom set; supplies A1+A2 on which the quasi-local algebra is built
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — canonical axiom set; supplies the one-qubit-per-site and `Z^3` substrate commitments on which the quasi-local algebra is built
 - [`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`](A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md) — companion meta on the qubit identification
 
 **Upstream standard-math imports** (named non-derivation; not framework rows):

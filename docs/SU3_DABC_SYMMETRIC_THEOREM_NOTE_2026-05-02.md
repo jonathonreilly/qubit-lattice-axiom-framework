@@ -19,7 +19,7 @@ audit pipeline after independent review.
 **Runner:** `scripts/su3_dabc_symmetric_check.py`
 **Log:** `outputs/su3_dabc_symmetric_check_2026-05-02.txt`
 
-**Audit-conditional perimeter (2026-05-05):**
+**Audit-conditional perimeter (2026-05-05, corollary scoping tightened 2026-05-24):**
 The current generated audit ledger records this row `audited_conditional` with
 `auditor_confidence = high`, `chain_closes = true`, and `claim_type =
 positive_theorem`. The audit chain-closure explanation is exact: "The
@@ -39,6 +39,12 @@ out of scope and is the chain_closure conditional gap. That bridge
 is the responsibility of upstream gauge-closure / graph-first SU(3)
 notes (currently retained_bounded), not of this algebraic-identity
 note.
+
+The 2026-05-24 tightening narrows the corollaries below so that any
+reading involving "QCD amplitudes", "four-gluon vertex", "physical
+gluon Hilbert space", or "Casimir on physical color reps" is
+explicitly listed as bounded out-of-scope / open future work
+dependent on the same physical-color bridge.
 
 ## Cited authorities (one hop)
 
@@ -201,30 +207,62 @@ antisym splitting — establishing (D6). ∎
 No fitted parameters. No observed values. No physics conventions admitted
 beyond the cited color automorphism theorem.
 
-## Corollaries
+## Corollaries (within the audited algebraic perimeter)
 
-C1. **Complete SU(3) tensor toolkit.** With f^{abc} (antisymmetric, R8
-Block 02 / R6 Block 03 derivation) and d^{abc} (symmetric, this block),
-every product T^a T^b decomposes uniquely as δ^{ab} I + (real symmetric)
-+ (real antisymmetric × i) T^c. Higher-order products reduce to combinations
-of these via repeated application.
+C1. **Complete algebraic SU(3) tensor toolkit on the 3D-symmetric-base
+carrier.** With f^{abc} from the companion antisymmetric-structure-constant
+derivation and d^{abc} from this symmetric-structure-constant theorem,
+every algebraic product `T^a T^b` decomposes uniquely as δ^{ab} I +
+(real symmetric) + (real antisymmetric × i) T^c on the abstract
+carrier. Higher-order algebraic products reduce to combinations of
+these via repeated application. No physical-color identification of the carrier is
+asserted here.
 
-C2. **Casimirs from d.** The cubic Casimir C_3 := d^{abc} T^a T^b T^c is
-a third-order generator of Z(U(g)) (universal enveloping center). On the
-fundamental V_3 it evaluates to a specific scalar (related to (N²-1)(N²-4)/(4N²)
-for SU(N), giving 5/12 for N=3 in standard normalization).
+C2. **Algebraic cubic Casimir from d.** The cubic Casimir
+C_3 := d^{abc} T^a T^b T^c is a third-order generator of Z(U(g)) for
+the abstract algebraic carrier. On the abstract fundamental V_3 it
+evaluates to a specific scalar (related to (N²−1)(N²−4)/(4N²) for
+SU(N), giving 5/12 for N=3 in standard normalization). Whether this
+algebraic carrier's V_3 coincides with physical SM color fundamentals
+is the responsibility of the physical-color bridge (out of scope; see
+below).
 
-C3. **Symmetry-protected vertex factors.** Any symmetric color tensor
-appearing in QCD amplitudes (e.g. four-gluon vertex symmetric channel)
-factorizes through d^{abc} — providing a basis for separating channels.
+C3. **No d for SU(2).** SU(2)'s 3 Pauli generators have only
+antisymmetric ε^{abc}, no analog of d^{abc}. The existence of d^{abc}
+is a feature specific to SU(N≥3) at the algebraic level.
 
-C4. **No d for SU(2).** SU(2)'s 3 Pauli generators have only antisymmetric
-ε^{abc}, no analog of d^{abc}. The existence of d^{abc} is a feature
-specific to SU(N≥3).
+C4. **Companion to f^{abc} on the algebraic carrier.** Together with
+the companion f^{abc} closure on the same algebraic carrier, this
+completes the full structure-constant toolkit there:
+T^a T^b ∈ I + R-span{T^c} + i R-span{T^c} with explicit symmetric /
+antisymmetric coefficients.
 
-C5. **Companion to f^{abc}.** Together with R8 Block 02 (f^{abc} closure),
-this completes the full structure-constant toolkit: T^a T^b ∈ I + R-span{T^c}
-+ i R-span{T^c} with explicit symmetric / antisymmetric coefficients.
+## Bounded out-of-scope / open future work
+
+The following readings of the algebraic d^{abc} content above lie
+outside this row's audited perimeter and are not supported by its
+load-bearing chain:
+
+- **Physical SM color identification.** Treating the algebraic
+  3D-symmetric-base SU(3) carrier of this packet as the gauge-connection
+  of the Standard Model gluon sector requires an unretained physical-color
+  bridge theorem. The cited authority explicitly defers this bridge.
+- **"Higher-order products" applied to physical gluon amplitudes.** The
+  algebraic reduction in C1 holds on the abstract carrier; reading it
+  as a statement about physical QCD n-point gluon amplitudes depends on
+  the same unretained bridge.
+- **Symmetry-protected vertex factors in physical QCD amplitudes
+  (e.g. four-gluon vertex symmetric channel).** Channel separation by
+  d^{abc} is algebraically valid on the carrier, but the physical
+  four-gluon vertex identification is out of scope.
+- **Cubic Casimir on physical SM fundamental color.** C2's scalar value
+  refers to the abstract carrier's fundamental representation; whether
+  that scalar equals the physical SM quark-color cubic Casimir reading
+  depends on the same unretained bridge.
+
+These items are listed as future-work targets for the physical-color
+bridge program; this row does not attempt their derivation and does
+not consume any of their content.
 
 ## Review classification
 
@@ -237,10 +275,15 @@ d-sym orthogonality — all at machine precision.
 
 ```yaml
 claim_type_author_hint: positive_theorem
-claim_scope: "{T^a, T^b} = (1/3) δ^{ab} I + d^{abc} T^c with d^{abc} real, totally symmetric, matching SU(3) reference table."
+claim_scope: "On the abstract algebraic 3D-symmetric-base SU(3) carrier supplied by the cited cl3_color_automorphism authority: {T^a, T^b} = (1/3) δ^{ab} I + d^{abc} T^c with d^{abc} real, totally symmetric, matching SU(3) reference table. Does NOT claim physical SM color / gluon / four-gluon-vertex / physical-Casimir-on-quark-color identification — that bridge is explicit future work."
 upstream_dependencies:
   - cl3_color_automorphism_theorem
 admitted_context_inputs:
   - anticommutator–commutator decomposition (algebraic identity)
   - trace inner-product orthogonality (mathematical)
+out_of_scope:
+  - physical SM SU(3)_c color identification (requires unretained bridge theorem)
+  - physical QCD higher-n-gluon amplitude reductions
+  - four-gluon-vertex symmetric channel identification in physical QCD
+  - cubic Casimir on physical SM quark color fundamentals
 ```

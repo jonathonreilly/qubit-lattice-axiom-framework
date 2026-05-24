@@ -1,32 +1,50 @@
 #!/usr/bin/env python3
-"""SM-identity triangulation convergence discriminator.
+"""SM-identity triangulation convergence discriminator (narrowed).
 
-The dimensionless positive-side complement to the native-holonomy no-go. Four
-independent retained-grade upstream rows (all deps=[] in the ledger) constrain
-the one-generation Standard Model carrier sector by distinct mechanisms:
+The dimensionless positive-side complement to the native-holonomy no-go.
+Per the 2026-05-23 auditor repair target ("narrow this row to the N_c = 3
+hypercharge convergence without the generation-count conclusion"), the
+audited claim of this runner's source note is restricted to the
+**N_c = 3 hypercharge convergence**; the `n_gen = 3` import from the
+Burnside row is computed and printed for context only, and is **not**
+load-bearing on the narrowed claim.
+
+Three retained-grade upstream rows (all deps=[] in the ledger) constrain
+the one-generation Standard Model carrier-sector hypercharge identity by
+distinct mechanisms:
 
   graph_first_su3_integration_note            (retained)
         -> color rank N_c = 3   [graph topology / commutant algebra]
-  three_generation_observable_m3c_burnside    (retained)
-        -> generation count n_gen = 3   [finite matrix algebra on C^3]
   koide_y_substrate_anomaly_forcing           (retained_bounded)
         -> anomaly + Witten allow only an N_c-parameterized family,
-           leaving N_c (odd), n_gen, and the absolute normalization free
+           leaving N_c (odd) and the absolute normalization free
   sm_hypercharge_uniqueness_algebraic_solution (retained_bounded)
         -> given the LH template + Q = T_3 + Y/2, the hypercharges are the
            unique rational tuple
 
-Claim under test (the triangulation):
+A fourth row,
+  three_generation_observable_m3c_burnside    (retained)
+        -> abstract M_3(C) Burnside result; supplies an `n_gen = 3`
+           imported value that, under the narrowed claim, is context-only
+           and not part of the audited claim (the cited Burnside row
+           explicitly disclaims identifying abstract C^3 with physical
+           generations).
+
+Narrowed claim under test:
   The anomaly-family row alone is loose (it explicitly does NOT select N_c,
-  n_gen, or the absolute scale). Intersecting its anomaly-allowed family with
-  the independent structural selectors N_c=3 and n_gen=3 lands exactly on the
-  hypercharge-enumeration row's unique SM hypercharge tuple, with left-Weyl
-  carrier electric charges {0, +/-1/3, +/-2/3, +/-1}.
+  n_gen, or the absolute scale). Intersecting its anomaly-allowed family
+  with the independent structural color-rank selector N_c=3 lands exactly
+  on the hypercharge-enumeration row's unique SM hypercharge tuple, with
+  left-Weyl carrier electric charges {0, +/-1/3, +/-2/3, +/-1}.
 
   The two residual genuine inputs are isolated and reported:
     template residual: the LH matter template (which fields exist);
     normalization residual: the absolute hypercharge normalization.
-  The triangulation fixes everything except those two residuals.
+  The narrowed hypercharge claim is fixed up to those two residuals.
+
+  The Burnside `n_gen = 3` import is printed for context only and is not
+  load-bearing on the narrowed audited claim. Physical generation-count
+  identification is demoted to future work in the source note.
 
 Exact rational arithmetic via fractions. No PDG / fitted / scale input.
 This script asserts no audit status; it is a convergence discriminator.
@@ -163,14 +181,20 @@ def main() -> int:
         )
     print("        -> anomaly cancellation alone does not pin N_c.")
 
-    # --- Independent structural selectors collapse the freedom ---
+    # --- Independent structural color-rank selector collapses the freedom ---
     print("\n" + "-" * 76)
-    print("Independent selectors fix N_c=3 (graph) and n_gen=3 (Burnside)")
+    print("Independent color-rank selector fixes N_c=3 (graph)")
+    print("(Burnside n_gen=3 import shown for context only; not load-bearing")
+    print(" on the narrowed claim — see source note ## Demoted to future work)")
     print("-" * 76)
     nc = F(3)   # imported from graph_first_su3_integration (deps=[])
-    ngen = 3    # imported from three_generation_observable_m3c_burnside (deps=[])
+    ngen = 3    # abstract M_3(C) Burnside import; context-only under the narrowed claim
     check("N_c fixed to 3 by independent graph-first selector (deps=[])", nc == 3)
-    check("n_gen fixed to 3 by independent Burnside selector (deps=[])", ngen == 3)
+    check(
+        "n_gen=3 abstract import from Burnside row recorded (context only; not part of narrowed claim)",
+        ngen == 3,
+        detail="abstract M_3(C) Burnside import; physical-generation identification is demoted to future work in the source note",
+    )
 
     # --- Convergence: family at N_c=3 == unique SM tuple ---
     print("\n" + "-" * 76)
@@ -241,17 +265,20 @@ def main() -> int:
 
     # --- Verdict ---
     print("\n" + "=" * 76)
-    print("VERDICT")
+    print("VERDICT (narrowed)")
     print("=" * 76)
     if FAIL == 0:
         print(
-            "  CONVERGENCE CONFIRMED.\n"
-            "  Four retained-grade upstream rows triangulate: anomaly (loose)\n"
-            "  intersect N_c=3 (graph) intersect n_gen=3 (Burnside) lands exactly\n"
+            "  NARROWED HYPERCHARGE CONVERGENCE CONFIRMED.\n"
+            "  Three retained-grade upstream rows triangulate the hypercharge\n"
+            "  identity: anomaly (loose) intersect N_c=3 (graph) lands exactly\n"
             "  on the unique SM hypercharge tuple and left-Weyl charge spectrum.\n"
             "  Residual inputs are the LH template and absolute normalization.\n"
             "  The dimensionless carrier-charge identity is pinned up to those\n"
             "  residuals; no scale input is consumed here.\n"
+            "  The Burnside n_gen=3 import is context-only under the narrowed\n"
+            "  claim; physical generation-count identification is demoted to\n"
+            "  future work in the source note.\n"
         )
     print("=" * 76)
     if FAIL:

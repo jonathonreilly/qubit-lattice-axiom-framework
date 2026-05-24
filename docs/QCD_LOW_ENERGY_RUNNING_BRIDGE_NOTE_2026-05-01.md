@@ -1,6 +1,7 @@
 # QCD Low-Energy Running Bridge: `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note
 
-**Date:** 2026-05-01
+**Date:** 2026-05-01 (bounded source hint added 2026-05-24)
+**Type:** bounded_theorem
 **Status:** bounded - bounded-scope same-surface running bridge using standard SM infrastructure (Machacek-Vaughn 2-loop RGE plus quark-mass threshold matching). Not framework-native; scoped explicitly to acknowledge external physics inputs.
 **Primary runner:** `scripts/frontier_qcd_low_energy_running_bridge.py`
 
@@ -22,7 +23,9 @@ framework-native theorem; it is the standard QCD running of the strong
 coupling, which the framework reuses as standard infrastructure on the same
 footing as PDG quark-mass thresholds and the standard MSbar 2-loop SM RGE
 beta functions. The author tier is therefore `bounded`, not
-`proposed_retained`.
+`proposed_retained`. The `Type: bounded_theorem` source hint is an authoring
+queue hint only; independent audit still owns `claim_type`, `audit_status`,
+and any effective `retained_bounded` propagation.
 
 ## Claim
 

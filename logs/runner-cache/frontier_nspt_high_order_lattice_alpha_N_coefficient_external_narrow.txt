@@ -3,7 +3,7 @@ runner: scripts/frontier_nspt_high_order_lattice_alpha_N_coefficient_external_na
 runner_sha256: b5970d633ff10cce1ff59bc85d394b84a0c367366662a93dc7d4a10bf6a9f904
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 # NSPT high-order lattice alpha^N coefficient external theorem runner

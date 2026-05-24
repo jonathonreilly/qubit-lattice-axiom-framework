@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_identity_triangulation_convergence.py
-runner_sha256: 76ad4e16493be5ba31a5263913e3b561528b02592476ad3297664f4d39c3d1af
+runner_sha256: d5aec57ba58851eb090c45ca691940aad5def75f9652641a7dc99d1d75275a93
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ============================================================================
@@ -27,10 +27,12 @@ Anomaly family is LOOSE: cancels for multiple odd N_c (no selection)
         -> anomaly cancellation alone does not pin N_c.
 
 ----------------------------------------------------------------------------
-Independent selectors fix N_c=3 (graph) and n_gen=3 (Burnside)
+Independent color-rank selector fixes N_c=3 (graph)
+(Burnside n_gen=3 import shown for context only; not load-bearing
+ on the narrowed claim — see source note ## Demoted to future work)
 ----------------------------------------------------------------------------
   [PASS] N_c fixed to 3 by independent graph-first selector (deps=[])
-  [PASS] n_gen fixed to 3 by independent Burnside selector (deps=[])
+  [PASS] n_gen=3 abstract import from Burnside row recorded (context only; not part of narrowed claim)  (abstract M_3(C) Burnside import; physical-generation identification is demoted to future work in the source note)
 
 ----------------------------------------------------------------------------
 CONVERGENCE  family(N_c=3) lands on unique SM hypercharges
@@ -51,15 +53,18 @@ RESIDUAL INPUTS (not fixed by the triangulation)
         Absolute normalization remains outside this claim.
 
 ============================================================================
-VERDICT
+VERDICT (narrowed)
 ============================================================================
-  CONVERGENCE CONFIRMED.
-  Four retained-grade upstream rows triangulate: anomaly (loose)
-  intersect N_c=3 (graph) intersect n_gen=3 (Burnside) lands exactly
+  NARROWED HYPERCHARGE CONVERGENCE CONFIRMED.
+  Three retained-grade upstream rows triangulate the hypercharge
+  identity: anomaly (loose) intersect N_c=3 (graph) lands exactly
   on the unique SM hypercharge tuple and left-Weyl charge spectrum.
   Residual inputs are the LH template and absolute normalization.
   The dimensionless carrier-charge identity is pinned up to those
   residuals; no scale input is consumed here.
+  The Burnside n_gen=3 import is context-only under the narrowed
+  claim; physical generation-count identification is demoted to
+  future work in the source note.
 
 ============================================================================
 PASS=17 FAIL=0

@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/mirror_vs_central_head_to_head.py
-runner_sha256: b431829587807205231f61842dbf39687475b2cb69e40431dcb6f8643d9a7c9c
+runner_sha256: 29818b3ed52e5494db69c14c2eedd112534307f482d6a676176a50a65101f4f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
-MIRROR VS CENTRAL HEAD-TO-HEAD (cache-reader)
+MIRROR VS CENTRAL HEAD-TO-HEAD (cache-reader, side-by-side transcription only)
 ============================================================================================
 
 Lane 1: Dense central-band + layer norm
@@ -42,13 +42,10 @@ Lane 2b: Mirror dense boundary card (NPL_HALF=60, connect_radius=5.0)
   gravity-wall row (verbatim cache line, excluded from the fit):
     120  mirror p2=0    0.2517   0.8823±0.04    0.9984  +0.0000±0.000         nan   +0.00e+00   11    24s
 
-Ranking (structural reading of the cited registered rows above):
-  1. Dense central-band + layer norm
-  2. Mirror chokepoint (strict + dense-boundary bounded pockets)
-
-Fairness note: the central lane reports pur_min and the mirror lane
-reports pur_cl, so the ranking is a full-lane comparison, not a
-raw purity-to-purity contest.
+Observable-naming note (lane-by-lane, no cross-lane comparison):
+  the central lane reports pur_min and the mirror lane reports pur_cl;
+  the observables are printed under their authority-native names without
+  any cross-lane retained winner ranking asserted by this runner.
 
 PASS: every printed row was read from a cited registered cache.
 

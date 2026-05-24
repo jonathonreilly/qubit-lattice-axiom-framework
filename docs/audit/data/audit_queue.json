@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 261,
+    "critical": 260,
     "high": 344,
     "leaf": 318,
     "medium": 328
@@ -66,32 +66,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hypercharge_identification_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.26,
-      "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hypercharge_identification.py",
-      "transitive_descendants": 612
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -37684,6 +37658,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 11,
-  "total_pending": 1251
+  "ready_count": 10,
+  "total_pending": 1250
 }

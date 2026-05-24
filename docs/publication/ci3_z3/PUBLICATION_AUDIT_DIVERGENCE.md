@@ -18,9 +18,9 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | high | `unaudited` | 190 |
-| critical | `unaudited` | 164 |
+| critical | `unaudited` | 163 |
 | medium | `unaudited` | 107 |
-| critical | `audited_conditional` | 10 |
+| critical | `audited_conditional` | 11 |
 | high | `audited_conditional` | 6 |
 | medium | `audited_conditional` | 4 |
 | high | `audited_numerical_match` | 3 |
@@ -100,7 +100,7 @@ publication tables phrase it.
 | critical | `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | critical | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `hw1_second_order_return_shape_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
-| critical | `hypercharge_identification_note` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md |
+| critical | `hypercharge_identification_note` | `audited_conditional` | `audited_conditional` | DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_circulant_character_derivation_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

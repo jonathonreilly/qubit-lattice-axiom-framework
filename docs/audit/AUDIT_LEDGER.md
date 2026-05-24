@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1251 |
+| unaudited | 1250 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 111 |
+| ~~audited_conditional~~ | 112 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 685 |
-| `audited_conditional` | 111 |
+| `audited_conditional` | 112 |
 | `audited_decoration` | 33 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1477 |
+| `unaudited` | 1476 |
 
 | claim_type | count |
 |---|---:|
@@ -852,6 +852,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6046,6 +6047,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** selector route; no `eta`, `Omega_Lambda`, or `H_0` numerical claim.  _(class `B`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified B-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `hypercharge_identification_note`
+
+- **Note:** [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the conditional chain assembly on the LH-doublet C^8 surface: retained structural ratio plus imported matter assignment plus admitted α = 1/3/GMN conventions reproduce the SM LH hypercharge and charge table.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T204833Z-82a77225-hypercharge_identificati-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under L1's +1:(-3) ratio, L2's Sym²/Anti² to Q_L/L_L matter assignment, and the admitted α = 1/3 SM normalization, Y_α has eigenvalues (+1/3, -1) on the LH-doublet sectors.  _(class `A`)_
+- **chain closes:** True — The algebraic chain closes once L2 and the admitted L3 normalization/readout are accepted as inputs. It does not close as an internal derivation of α = 1/3 or of the electric-charge bridge.
+- **rationale:** The runner genuinely computes the projector algebra, traceless ratio, uniqueness up to scale, and commutation checks rather than merely printing constants. However, the SM-value match depends on the explicitly admitted α = 1/3 normalization and the admitted Gell-Mann--Nishijima readout, neither of which is closed by the restricted packet. The rewrite removes the prior hidden renaming from the internal proof, but the retained theorem remains conditional on those imported bridges.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

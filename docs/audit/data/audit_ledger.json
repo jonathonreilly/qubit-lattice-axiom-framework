@@ -94362,11 +94362,11 @@
       "chain_closure_explanation": null,
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -94389,7 +94389,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "cd51da92405d58ce5b0f2bfda05e9b388fde66d828b7183062507fcb8d666ebe",
+      "note_hash": "276020cdff9b737d0556f16ea09d53f3801022708330ee2f1e3cad73919a54ca",
       "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -296736,9 +296736,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2343,
-    "re_audit_required": 1,
+    "preserved_existing": 2346,
+    "re_audit_required": 0,
     "row_count": 2390,
-    "seeded_new": 2
+    "seeded_new": 0
   }
 }

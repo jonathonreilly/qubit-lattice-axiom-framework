@@ -8125,11 +8125,11 @@
       "runner": "scripts/frontier_g_bare_rigidity_theorem.py"
     },
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
-      "assert_count": 1,
+      "assert_count": 0,
       "counts": {
-        "A": 1,
+        "A": 0,
         "B": 0,
-        "C": 35,
+        "C": 37,
         "D": 0
       },
       "decoration_candidate": false,
@@ -36912,14 +36912,14 @@
       "exists": true
     },
     "scripts/frontier_g_bare_structural_normalization.py": {
-      "assert_count": 1,
+      "assert_count": 0,
       "claims": [
         "g_bare_structural_normalization_theorem_note_2026-04-18"
       ],
       "counts": {
-        "A": 1,
+        "A": 0,
         "B": 0,
-        "C": 35,
+        "C": 37,
         "D": 0
       },
       "decoration_candidate": false,

@@ -3,7 +3,7 @@
     "critical": 271,
     "high": 344,
     "leaf": 334,
-    "medium": 334
+    "medium": 333
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -18486,23 +18486,27 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wilson_two_body_open_note_2026-04-11",
+      "claim_id": "wilson_mu2_distance_sweep_note_2026-04-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
+      "deps": [
+        "wilson_two_body_open_note_2026-04-11"
+      ],
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.307,
-      "note_path": "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
+      "helper_runner_paths": [
+        "scripts/frontier_wilson_two_body_open.py"
+      ],
+      "load_bearing_score": 4.085,
+      "note_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_wilson_two_body_open.py",
-      "transitive_descendants": 13
+      "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
+      "transitive_descendants": 11
     },
     {
       "audit_independence_required": "any_non_self",
@@ -26435,32 +26439,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_su3_4d_plaquette_fss_verify_2026_05_05.py",
-      "transitive_descendants": 11
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wilson_mu2_distance_sweep_note_2026-04-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_two_body_open_note_2026-04-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_wilson_two_body_open.py"
-      ],
-      "load_bearing_score": 4.085,
-      "note_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
       "transitive_descendants": 11
     },
     {
@@ -38639,5 +38617,5 @@
     }
   ],
   "ready_count": 22,
-  "total_pending": 1283
+  "total_pending": 1282
 }

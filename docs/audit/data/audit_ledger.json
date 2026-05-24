@@ -180218,24 +180218,46 @@
       "verdict_rationale": null
     },
     "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T20:58:34.825683+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_nn_deterministic_rescale_note": "Finite computational claim only: for the exact supplied runner, constants, lattice geometry, slit construction, propagation rule, and tested spacings down to h=0.0625, the deterministic geometry-only rescale schedule keeps the Born diagnostic machine-clean and yields the printed observable rows. It does not establish a continuum theory or physical interpretation beyond this finite tested surface.",
+          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "Finite checked-grid, field-free, no-slit rescaled NN harness with BETA=0.8, K_PHYS=5.0, L=40, y_s in {-6,-3,0,+3,+6}, h in {0.25,0.125,0.0625}, and central window |u|<=6: translation-invariant Gaussian-magnitude and quadratic-phase fit within the runner tolerances."
+        },
+        "dep_claim_type": {
+          "lattice_nn_deterministic_rescale_note": "bounded_theorem",
+          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_nn_deterministic_rescale_note": "retained_bounded",
+          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "lattice_nn_deterministic_rescale_note",
+          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
+        ],
+        "load_bearing_score": 5.085,
+        "runner_hash": "68552e317149ed9aa83358fef7d0f9a1f472f220cd379c0ae7dac0610e7da2fc",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205812Z-12a64b30-nn_lattice_rescaled_c_ar-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic saddle formula is internally computed by the runner, but the load-bearing slit-length identification does not close: the note itself later says the original L_2 anchoring is the wrong interpretation and that the closer L_1 selection-filter reading is only a numerical-fit identification, not a derived theorem.",
       "claim_id": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded coherent-saddle support note for the rescaled NN harness C_arm constant, including the closed-form L_2 saddle formula, its runner-backed residuals against C_arm_numeric = 2.7107, and the supplied full-kernel L_1/L_2 anchoring comparison.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (leading coherent-saddle support for the",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-24T20:58:34.825683+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -180244,20 +180266,23 @@
         "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 5.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The post-slit propagation length is identified as L_eff = L_2 = 2 L_total / 3, so C_arm_analytic^2 = L_2 / (sqrt(2)/c + 2).",
+      "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0cb68d60f12f72b5a0caabc89320a9f21ed4c9d29291a1bfcf7627ce0cf6d926",
       "note_path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge theorem or deterministic blocked-slit runner deriving the arm width and anchoring length directly from the actual slit propagation, rather than selecting L_1 or L_2 by fit residual.",
+      "open_dependency_paths": [
+        "docs/NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md",
+        "docs/NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-15T13:13:59.044357+00:00",
@@ -180368,18 +180393,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note",
       "transitive_descendants": 5,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner really computes the displayed coherent-saddle constants and per-h residuals, but it also hard-codes the contested L_2 physical interpretation rather than deriving it from blocked-slit propagation. The supplied retained_bounded full-kernel authority contradicts the L_2 interpretation as the closer slit-arm anchoring, reporting L_1 residual -1.85% versus L_2 residual +38.81%, and explicitly says the selection-filter reading is not first-principles derived. Thus the claim remains bounded support/numerical comparison, not a closed derivation from the cited inputs."
     },
     "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10_note_2026-05-17": {
       "audit_date": null,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 397 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1277 |
+| unaudited | 1276 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 108 |
+| ~~audited_conditional~~ | 109 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 665 |
-| `audited_conditional` | 108 |
+| `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1503 |
+| `unaudited` | 1502 |
 
 | claim_type | count |
 |---|---:|
@@ -859,6 +859,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8721,6 +8722,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner verifies at finite truncation order that the displayed third-order ODE annihilates the truncated Taylor series of J(beta), and numerically agrees with direct Weyl integration at beta in {2,4,6,8,10}.  _(class `C`)_
 - **chain closes:** True — The narrowed claim is exactly the finite computation performed by the included runner. The runner constructs a truncated series from the Bessel-determinant representation, checks the ODE residual to degree 21, integrates the ODE numerically, and independently compares the readout with Weyl quadrature at the stated sample points.
 - **rationale:** The note has been narrowed to a bounded finite-runner certificate and no longer asserts the all-order Picard-Fuchs or Frobenius-branch theorem. The included source is not a pure printout: it symbolically builds the truncated series, computes the residual, numerically evolves the ODE, and compares against direct Weyl integration at the specified points. Within that bounded scope, the runner output matches the note's stated PASS=4 FAIL=0 and the beta=6 value. This does not audit or imply the separate all-order companion claim.
+- **auditor confidence:** high
+
+### `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`
+
+- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the documentation-only rank-bound citation note as a bounded assessment of the gap between finite-window certificates and an all-degree SU(3) Picard-Fuchs minimality/rank claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T173852Z-8ce7a1e6-plaquette_v1_picard_fuch-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's conclusion rests on the assertion that the rank-≤3/all-degree lower-order exclusion is not closed by a textbook Bernstein/Aomoto-Gelfand theorem and would require either an explicit SU(3) citation or an algorithmic creative-telescoping certificate.  _(class `B`)_
+- **chain closes:** False — The restricted packet supplies retained bounded finite-window companion notes, but not a closed bridge proving rank/order ≤ 3 or excluding order ≤ 2 annihilators at arbitrary coefficient degree. The source note itself identifies that missing bridge as open work.
+- **rationale:** No primary runner stdout or source is available for this row, and the note is documentation-only. More importantly, the load-bearing all-degree rank/minimality bridge is not established by the supplied cited authorities: the companion minimality note is explicitly finite-window and excludes the all-order minimal-annihilator interpretation. The note is honest about this gap, so the bounded gap-assessment is useful, but the chain does not close as a theorem from the restricted packet.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
+  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`
 - **auditor confidence:** high
 
 ### `pmns_commutant_eigenoperator_selector_note`

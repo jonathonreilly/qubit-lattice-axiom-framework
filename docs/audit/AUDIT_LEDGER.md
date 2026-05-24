@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1254 |
+| unaudited | 1253 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 109 |
+| ~~audited_conditional~~ | 110 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 685 |
-| `audited_conditional` | 109 |
+| `audited_conditional` | 110 |
 | `audited_decoration` | 32 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1480 |
+| `unaudited` | 1479 |
 
 | claim_type | count |
 |---|---:|
@@ -897,6 +897,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11231,6 +11232,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The wave-field hardening still closes the interaction, norm, and bounded-field story cleanly, but it does not close the full state-family battery and it does not give universal contraction on this operating point.  _(class `C`)_
 - **chain closes:** True — The runner directly computes the scalar wave field coupled to staggered matter and reproduces the note's hard scores of 4/5, 5/5, 4/5 plus width ratios 1.0047, 1.0019, and 0.9923. The note's bounded conclusion matches the current corrected output.
 - **rationale:** The claim is scoped to a bounded corrected wave-field prototype, not retained universal robustness. Current output confirms W1-W4 on all three families, W6 only on growing, and width response as a diagnostic rather than a gate. Residual risk is limited to the stated lack of universal contraction, full state-family robustness, larger-graph battery, and retarded-field closure.
+- **auditor confidence:** high
+
+### `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05`
+
+- **Note:** [`STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`](../../docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Determinant positivity for M = M_KS + M_W + mI on the symmetric-canonical finite staggered surface with balanced sublattices, anti-Hermitian off-diagonal M_KS, mass mI with m>0, and restricted Wilson term M_W = r d I.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T204417Z-a0806ce6-staggered_wilson_det_pos-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After eps-blocking with M_KS = [[0,K],[-K^†,0]] and M_W + mI = αI on both sublattices, SVD reduces γ5 M to 2x2 blocks whose determinants give det(M)=∏(α²+σ_i²)>0.  _(class `A`)_
+- **chain closes:** False — The algebraic block determinant step closes once D1-D4 are assumed. The restricted packet does not close the imported parent conventions/A_min carrier, and the only provided cited authority is explicitly superseded meta rather than retained-grade.
+- **rationale:** The presented determinant factorisation is a genuine algebraic closure over the stated symmetric-canonical hypotheses, and the runner source actually constructs finite SU(3) staggered operators and verifies the block factorisation rather than printing constants. However, the proof explicitly depends on admitted inputs D1-D4, including parent-note conventions and the symmetric Wilson restriction, while the restricted upstream authority provided here is `docs/MINIMAL_AXIOMS_2026-04-11.md`, marked superseded/meta. Under the rubric, that non-retained upstream and the imported unclosed conventions force a conditional verdict even though the local algebra is sound on its assumed surface.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-04-11.md`
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`

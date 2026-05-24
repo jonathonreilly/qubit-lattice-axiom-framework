@@ -1,0 +1,18 @@
+loop: pr230-source-covariance-normalization-support
+goal: close PR230 source-side connected covariance normalization support
+target_status: exact-support
+active_route: finite RN source covariance identity
+files_touched:
+  - docs/YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md
+  - scripts/frontier_yt_pr230_source_covariance_normalization_support.py
+  - outputs/yt_pr230_source_covariance_normalization_support_2026-05-24.json
+open_imports:
+  - same-surface source/action authority
+  - canonical O_H
+  - scalar LSZ normalization
+  - strict physical pole rows or W/Z bypass
+status: exact-support
+proposal_allowed: false
+bare_retained_allowed: false
+next_action: run verification, commit, push, open review PR
+

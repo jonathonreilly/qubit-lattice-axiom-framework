@@ -1,0 +1,12 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "bare_retained_allowed": false,
+  "claim": "PR230 product RN source coordinate fixes source-side connected covariance row",
+  "fail_count": 0,
+  "generated_at": "2026-05-24T00:00:00Z",
+  "grad_error": 2.089284301121097e-11,
+  "hessian_error": 1.4090756672580085e-08,
+  "pass_count": 33,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Source-side covariance support only; same-surface source/action authority, canonical O_H, scalar LSZ, strict pole rows or W/Z bypass, and matching/running remain open."
+}

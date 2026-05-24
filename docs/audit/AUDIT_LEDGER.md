@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1251 |
+| unaudited | 1252 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -56,11 +56,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1477 |
+| `unaudited` | 1478 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1018 |
+| `bounded_theorem` | 1019 |
 | `decoration` | 36 |
 | `meta` | 232 |
 | `no_go` | 243 |
@@ -71,7 +71,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 395 |
 | `high` | 484 |
-| `medium` | 568 |
+| `medium` | 569 |
 | `leaf` | 935 |
 
 - **Retained pending chain closure:** 7
@@ -79,10 +79,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1939
+- runners classified: 1940
 - runners with (C) first-principles compute hits: 955
 - runners with (D) external comparator hits: 551
-- decoration candidates (no C, no D): 312
+- decoration candidates (no C, no D): 313
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -93,14 +93,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 714 | 53.48 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `minimal_axioms_2026-05-03` | meta | critical | 940 | 52.38 | `unaudited` | meta |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 917 | 51.84 | `audited_clean` | **retained_bounded** |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1081 | 45.08 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1082 | 45.08 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 942 | 39.88 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 176 | 38.97 | `unaudited` | unaudited |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 970 | 38.42 | `unaudited` | unaudited |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 877 | 38.28 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 958 | 37.91 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 979 | 34.44 | `audited_conditional` | ~~audited_conditional~~ |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1054 | 34.04 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1055 | 34.04 | `audited_clean` | **retained** |
 | 12 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 172 | 33.44 | `unaudited` | unaudited |
 | 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 935 | 33.37 | `audited_clean` | **retained** |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 551 | 32.11 | `unaudited` | unaudited |

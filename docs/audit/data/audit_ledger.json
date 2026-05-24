@@ -278965,22 +278965,42 @@
       "verdict_rationale": null
     },
     "wilson_mu2_distance_sweep_note_2026-04-11": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T17:30:24.838139+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wilson_two_body_open_note_2026-04-11": "Finite open-boundary Wilson two-orbital Hartree simulations at side=11,13, G=5, mu^2=0.22, d=3..6, plus the in-packet post-selected distance/partner-source law fits and side=13 screening-mass alpha sweep; periodic and both-masses Newton-closure rows are excluded."
+        },
+        "dep_claim_type": {
+          "wilson_two_body_open_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wilson_two_body_open_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "wilson_two_body_open_note_2026-04-11"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "cac50444e3d13a6e5e0a34bfc890f5f8288b20eb57dff8228a37327d6548d85b",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T173002Z-75f4fa29-wilson_mu2_distance_swee-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner and helper source genuinely compute the Wilson open-lattice rows and the cached output supports the monotone softening claim on the runner's five-value mu^2 grid. The full source-note table does not close because it claims mu^2=0.10 and mu^2=0.0 results, but the supplied primary runner source and cache omit those values and instead include mu^2=0.005.",
       "claim_id": "wilson_mu2_distance_sweep_note_2026-04-11",
-      "claim_scope": null,
+      "claim_scope": "Open-boundary Wilson lattice sweep on sides 11, 13, 15 with G=5 and d=3..6, verifying clean attractive rows and monotone exponent softening for the completed runner's mu^2 values 0.22, 0.05, 0.01, 0.005, and 0.001.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-24T17:30:24.838139+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -278988,21 +279008,21 @@
         "wilson_two_body_open_note_2026-04-11"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/frontier_wilson_two_body_open.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 4.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "As screening is reduced, the clean open-boundary Wilson distance-law exponent softens monotonically toward Newton-compatible d^-2 behavior while the mutual-attraction channel remains present.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "9435a6f423055edba1e5a5937cbbd5ed046e8e5a0057e52c99d076fbcd840f71",
       "note_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide a completed runner/cache whose MU2_VALUES match the source note table, including mu^2=0.10 and mu^2=0.0, or narrow the note text to the five-value grid actually computed.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -279067,18 +279087,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 5,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
       "title": "Wilson `mu^2` Distance Sweep Note",
       "transitive_descendants": 11,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing computation is class C: the primary runner calls the included open Wilson lattice implementation, solves the screened Poisson problem, evolves the Wilson Hamiltonian, computes shared-minus-self mutual acceleration, and fits log |a_mut| versus log d. The completed cache supports clean attractive rows and monotone exponent softening for the runner's actual sampled grid. However, the source note's stated sweep includes mu^2=0.10 and mu^2=0.0, neither of which is present in the supplied runner source or cache, so the note's full table and exact stated scope are not closed by the restricted packet."
     },
     "wilson_normalization_reconciliation_note_2026-04-11": {
       "audit_date": null,

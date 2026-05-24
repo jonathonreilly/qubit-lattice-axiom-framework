@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 395 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1282 |
+| unaudited | 1281 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 106 |
+| ~~audited_conditional~~ | 107 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 662 |
-| `audited_conditional` | 106 |
+| `audited_conditional` | 107 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1508 |
+| `unaudited` | 1507 |
 
 | claim_type | count |
 |---|---:|
@@ -885,6 +885,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
+| `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yukawa_color_projection_theorem` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -12512,6 +12513,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **chain closes:** True — The note's parent target is already retained-bounded, and the completed replay log supports the stated finite-lattice caution. The note adds no independent observable, runner evidence, or new physical theorem beyond the parent result's scoped interpretation.
 - **rationale:** Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law.
 - **decoration parent:** `wide_lattice_h2t_distance_law_note`
+- **auditor confidence:** high
+
+### `wilson_mu2_distance_sweep_note_2026-04-11`
+
+- **Note:** [`WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md`](../../docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Open-boundary Wilson lattice sweep on sides 11, 13, 15 with G=5 and d=3..6, verifying clean attractive rows and monotone exponent softening for the completed runner's mu^2 values 0.22, 0.05, 0.01, 0.005, and 0.001.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T173002Z-75f4fa29-wilson_mu2_distance_swee-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** As screening is reduced, the clean open-boundary Wilson distance-law exponent softens monotonically toward Newton-compatible d^-2 behavior while the mutual-attraction channel remains present.  _(class `C`)_
+- **chain closes:** False — The runner and helper source genuinely compute the Wilson open-lattice rows and the cached output supports the monotone softening claim on the runner's five-value mu^2 grid. The full source-note table does not close because it claims mu^2=0.10 and mu^2=0.0 results, but the supplied primary runner source and cache omit those values and instead include mu^2=0.005.
+- **rationale:** The load-bearing computation is class C: the primary runner calls the included open Wilson lattice implementation, solves the screened Poisson problem, evolves the Wilson Hamiltonian, computes shared-minus-self mutual acceleration, and fits log |a_mut| versus log d. The completed cache supports clean attractive rows and monotone exponent softening for the runner's actual sampled grid. However, the source note's stated sweep includes mu^2=0.10 and mu^2=0.0, neither of which is present in the supplied runner source or cache, so the note's full table and exact stated scope are not closed by the restricted packet.
 - **auditor confidence:** high
 
 ### `wilson_test_mass_continuum_note_2026-04-11`

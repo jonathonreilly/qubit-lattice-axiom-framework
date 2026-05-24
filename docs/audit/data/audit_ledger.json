@@ -293535,24 +293535,50 @@
       "verdict_rationale": null
     },
     "yukawa_color_projection_theorem": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T20:32:56.145698+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 16.435,
+        "runner_hash": "c3ff0f82219906a3522e385cc48ef3527808a647728b0fc843d40aa3a308d4ef",
+        "transitive_descendants": 978
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T203129Z-c8d0c083-yukawa_color_projection_-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion is only the representation-dimension fraction, which follows algebraically from the SU(N_c) channel decomposition plus retained N_c = 3 input. The note explicitly excludes the dynamical trace fraction and physical-matching bridges, so those open downstream steps are not load-bearing.",
       "claim_id": "yukawa_color_projection_theorem",
-      "claim_scope": "Only the SU(N_c) Fierz/channel-counting identity that the adjoint representation-dimension fraction in N_c \u2297 N_c-bar is (N_c^2-1)/N_c^2, giving 8/9 at N_c=3; no dynamical trace ratio, R_conn, Higgs-Z, or y_t matching claim was audited.",
+      "claim_scope": "Only the SU(N_c) Fierz channel decomposition and representation-dimension fraction f_adj,dim = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; not F_adjoint(M), R_conn, Higgs-Z matching, or a Yukawa correction.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem (proposed; audit-lane to ratify)",
-      "claim_type_last_reviewed": "2026-05-24T20:31:03.337160+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-24T20:32:56.145698+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -293567,8 +293593,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-24T20:32:56.145698+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T203129Z-c8d0c083-yukawa_color_projection_-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Only the SU(N_c) Fierz channel decomposition and representation-dimension fraction f_adj,dim = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; not F_adjoint(M), R_conn, Higgs-Z matching, or a Yukawa correction.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -293577,19 +293614,19 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 13,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained",
       "load_bearing_score": 16.435,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The q-qbar color space decomposes as singlet plus adjoint, so f_adj,dim = dim(adj)/dim(N_c x N_c-bar) = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d179312270414063524041427d2c4495872c4aa7c99fb2bb8b37ef411c0526ce",
       "note_path": "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream rows do not promote f_adj,dim to F_adjoint(M), R_conn, or a Higgs-Z/Yukawa matching coefficient without a separate bridge theorem.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -293950,18 +293987,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 16,
+        "B": 15,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 31
       },
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "Yukawa Color-Singlet Projection Theorem",
       "transitive_descendants": 978,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic dimension-count identity, not a numerical comparator or tuned match. The cited inputs needed for SU(3)/N_c = 3 are retained-grade, and the Fierz identity is standard math proved and checked inline. The runner source constructs normalized SU(N) generators, checks the Fierz identity for random matrices, and verifies the exact rational 8/9 count; it does not import R_conn or a physical Yukawa correction. The open matching rules in the historical context are explicitly outside the audited scope."
     },
     "z2_hw1_mass_matrix_parametrization_note": {
       "audit_date": "2026-05-02T15:40:33.711314+00:00",

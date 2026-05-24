@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 269,
+    "critical": 268,
     "high": 344,
     "leaf": 318,
     "medium": 328
@@ -68,32 +68,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yukawa_color_projection_theorem",
-      "claim_scope": "Only the SU(N_c) Fierz/channel-counting identity that the adjoint representation-dimension fraction in N_c \u2297 N_c-bar is (N_c^2-1)/N_c^2, giving 8/9 at N_c=3; no dynamical trace ratio, R_conn, Higgs-Z, or y_t matching claim was audited.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.435,
-      "note_path": "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
-      "transitive_descendants": 978
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "left_handed_charge_matching_note",
@@ -117,6 +91,34 @@
       "ready": true,
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "transitive_descendants": 968
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "rconn_derived_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "yukawa_color_projection_theorem",
+        "ew_current_matching_rule_open_gate_note_2026-05-03"
+      ],
+      "direct_in_degree": 14,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 16.85,
+      "note_path": "docs/RCONN_DERIVED_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_color_projection_mc.py",
+      "transitive_descendants": 922
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -374,34 +376,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "transitive_descendants": 958
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "rconn_derived_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "yukawa_color_projection_theorem",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 16.85,
-      "note_path": "docs/RCONN_DERIVED_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "transitive_descendants": 922
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -37893,5 +37867,5 @@
     }
   ],
   "ready_count": 10,
-  "total_pending": 1259
+  "total_pending": 1258
 }

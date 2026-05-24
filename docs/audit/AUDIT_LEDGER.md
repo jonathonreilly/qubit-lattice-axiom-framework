@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 140 |
+| **retained** | 141 |
 | **retained_no_go** | 154 |
 | **retained_bounded** | 414 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
 | unaudited | 1258 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -50,8 +49,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 683 |
+| `audited_clean` | 684 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
@@ -122,7 +120,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `yukawa_color_projection_theorem` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -804,6 +801,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yukawa_color_projection_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
@@ -13063,6 +13061,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yukawa_color_projection_theorem`
+
+- **Note:** [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Only the SU(N_c) Fierz channel decomposition and representation-dimension fraction f_adj,dim = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; not F_adjoint(M), R_conn, Higgs-Z matching, or a Yukawa correction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T203129Z-c8d0c083-yukawa_color_projection_-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The q-qbar color space decomposes as singlet plus adjoint, so f_adj,dim = dim(adj)/dim(N_c x N_c-bar) = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3.  _(class `A`)_
+- **chain closes:** True — The scoped conclusion is only the representation-dimension fraction, which follows algebraically from the SU(N_c) channel decomposition plus retained N_c = 3 input. The note explicitly excludes the dynamical trace fraction and physical-matching bridges, so those open downstream steps are not load-bearing.
+- **rationale:** The load-bearing step is an algebraic dimension-count identity, not a numerical comparator or tuned match. The cited inputs needed for SU(3)/N_c = 3 are retained-grade, and the Fierz identity is standard math proved and checked inline. The runner source constructs normalized SU(N) generators, checks the Fierz identity for random matrices, and verifies the exact rational 8/9 count; it does not import R_conn or a physical Yukawa correction. The open matching rules in the historical context are explicitly outside the audited scope.
 - **auditor confidence:** high
 
 ### `z2_hw1_mass_matrix_parametrization_note`

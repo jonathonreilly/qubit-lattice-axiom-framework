@@ -167090,7 +167090,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 28.615,
+      "load_bearing_score": 28.599,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
@@ -167111,7 +167111,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)",
-      "transitive_descendants": 1108,
+      "transitive_descendants": 1096,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-04-11": {
@@ -241105,13 +241105,13 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 46,
+      "direct_in_degree": 45,
       "effective_status": "audited_renaming",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_renaming",
-      "load_bearing_score": 33.082,
+      "load_bearing_score": 32.566,
       "load_bearing_step": "This note's load-bearing content is identity assignment only: it names the framework baseline, the four substeps the closure must discharge, and the supporting notes.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
@@ -241329,7 +241329,7 @@
       },
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note",
-      "transitive_descendants": 1083,
+      "transitive_descendants": 1071,
       "verdict_rationale": "The source note is candidly an identity/package note: it introduces a canonical parent handle for an open gate and points to downstream supporting attempts. Its only load-bearing step is definitional rather than an algebraic or first-principles derivation from the cited axiom premise. The substantive staggered-Dirac realization remains explicitly open in the restricted packet."
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
@@ -260346,8 +260346,7 @@
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
         "s3_mass_matrix_no_go_note",
-        "z2_hw1_mass_matrix_parametrization_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "z2_hw1_mass_matrix_parametrization_note"
       ],
       "direct_in_degree": 19,
       "effective_status": "unaudited",
@@ -260360,7 +260359,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "325d2c86db993c75584a3d6b6fc6376fd4516f752727a4762fb1d105bbb90353",
+      "note_hash": "469d962029dae7256fe9da079fb667eb5f080750d54ee48eff36632cb05248d5",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

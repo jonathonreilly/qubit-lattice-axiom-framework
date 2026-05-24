@@ -167141,7 +167141,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 28.615,
+      "load_bearing_score": 28.607,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
@@ -167162,7 +167162,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)",
-      "transitive_descendants": 1108,
+      "transitive_descendants": 1102,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-04-11": {
@@ -241154,13 +241154,13 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 46,
+      "direct_in_degree": 45,
       "effective_status": "audited_renaming",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_renaming",
-      "load_bearing_score": 33.082,
+      "load_bearing_score": 32.574,
       "load_bearing_step": "This note's load-bearing content is identity assignment only: it names the framework baseline, the four substeps the closure must discharge, and the supporting notes.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
@@ -241378,7 +241378,7 @@
       },
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note",
-      "transitive_descendants": 1083,
+      "transitive_descendants": 1077,
       "verdict_rationale": "The source note is candidly an identity/package note: it introduces a canonical parent handle for an open gate and points to downstream supporting attempts. Its only load-bearing step is definitional rather than an algebraic or first-principles derivation from the cited axiom premise. The substantive staggered-Dirac realization remains explicitly open in the restricted packet."
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
@@ -242232,7 +242232,7 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_last_reviewed": "2026-05-22T16:51:27.168474+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "medium",
+      "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
           "audit_date": "2026-05-17T15:52:03.474830+00:00",
@@ -242262,17 +242262,17 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 3.0,
+      "load_bearing_score": 11.344,
       "load_bearing_step": "By S_3-invariance of Hamming weight and transitivity on each L_k, the S_3-orbits on (Z_2)^3 are exactly L_0, L_1, L_2, L_3 with sizes (1, 3, 3, 1).",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "8fa106e931925f399e95762be1360d31ffe5958e29e8c1e46bd5c0420b680911",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "Second auditor should keep the retained scope narrow: this ratifies only the abstract {0,1}^3/S_3 orbit theorem, not any downstream physical BZ-corner or generation identification.",
@@ -242289,7 +242289,7 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
       "title": "Staggered-Dirac Substep 3 \u2014 BZ-Corner Hamming-Orbit Narrow Theorem",
-      "transitive_descendants": 3,
+      "transitive_descendants": 918,
       "verdict_rationale": "The load-bearing step is a genuine class (A) combinatorial closure over admitted mathematical infrastructure. There are no load-bearing cited authorities, no external comparators, no numerical tuning, and no imported physics premise. The note explicitly scopes out the BZ-corner identification and generation bridge, so the audited claim closes only as the bare finite-set theorem."
     },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
@@ -242477,7 +242477,7 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_last_reviewed": "2026-05-22T16:40:20.463525+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "medium",
+      "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
           "audit_date": "2026-05-17T15:09:13.482767+00:00",
@@ -242507,17 +242507,17 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 3.822,
+      "load_bearing_score": 11.844,
       "load_bearing_step": "For any off-diagonal pair, a distinguishing T_mu gives <e_alpha|[K,T_mu]|e_beta> = (tau_mu^(beta)-tau_mu^(alpha))<e_alpha|K|e_beta>, so [K,T_mu]=0 forces that matrix element to vanish.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "4d959b6ebb89b1c6bdac4650b94e7b7e60f3e558b5801669c27423ce21ac3155",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "Second auditor may note the runner's symbolic solve uses a Hermitian K parameterization, while the written proof covers arbitrary linear K; this is not a closure blocker for the source proof.",
@@ -242534,7 +242534,7 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03bb Simultaneous-Diagonalization Bridge Narrow Theorem",
-      "transitive_descendants": 4,
+      "transitive_descendants": 918,
       "verdict_rationale": "The load-bearing step is a standard finite-dimensional algebraic identity over the explicit matrices supplied in the note, with no upstream retained-status dependency and no external comparator. The runner genuinely constructs the diagonal T_mu, checks pairwise distinctness, verifies commutator identities, solves the commuting constraints in the Hermitian parameterization, and reports PASS=41 FAIL=0. The theorem is clean only in its declared abstract scope; it does not close the separate physical-substrate AC_lambda bridge."
     },
     "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac": {
@@ -260614,7 +260614,8 @@
         "s3_taste_cube_decomposition_note",
         "s3_mass_matrix_no_go_note",
         "z2_hw1_mass_matrix_parametrization_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
       ],
       "direct_in_degree": 76,
       "effective_status": "unaudited",
@@ -260627,7 +260628,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "9bd4be42acebf1b5aaf08ae5384dde213410e6259fac1dea0242065119c755c8",
+      "note_hash": "fffc235dabc9aba48aa580f719f60cd20832166313829470e24a3703885949bf",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -294132,9 +294133,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2337,
+    "preserved_existing": 2338,
     "re_audit_required": 0,
     "row_count": 2382,
-    "seeded_new": 1
+    "seeded_new": 0
   }
 }

@@ -18,9 +18,9 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | high | `unaudited` | 190 |
-| critical | `unaudited` | 163 |
+| critical | `unaudited` | 162 |
 | medium | `unaudited` | 107 |
-| critical | `audited_conditional` | 11 |
+| critical | `audited_conditional` | 12 |
 | high | `audited_conditional` | 6 |
 | medium | `audited_conditional` | 4 |
 | high | `audited_numerical_match` | 3 |
@@ -97,7 +97,7 @@ publication tables phrase it.
 | critical | `higgs_mass_derived_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `higgs_mechanism_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `higgs_vacuum_explicit_systematic_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
-| critical | `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
+| critical | `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | `audited_conditional` | `audited_conditional` | RESULTS_INDEX.md |
 | critical | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `hw1_second_order_return_shape_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | critical | `hypercharge_identification_note` | `audited_conditional` | `audited_conditional` | DERIVATION_VALIDATION_MAP.md |

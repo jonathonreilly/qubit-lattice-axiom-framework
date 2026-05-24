@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 260,
+    "critical": 259,
     "high": 344,
     "leaf": 318,
     "medium": 328
@@ -66,30 +66,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.19,
-      "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_higgs_z3_charge_pmns_gauge_redundancy_theorem.py",
-      "transitive_descendants": 412
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -37658,6 +37634,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 10,
-  "total_pending": 1250
+  "ready_count": 9,
+  "total_pending": 1249
 }

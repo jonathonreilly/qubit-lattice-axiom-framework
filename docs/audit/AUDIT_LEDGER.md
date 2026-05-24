@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1250 |
+| unaudited | 1249 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 112 |
+| ~~audited_conditional~~ | 113 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 685 |
-| `audited_conditional` | 112 |
+| `audited_conditional` | 113 |
 | `audited_decoration` | 33 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1476 |
+| `unaudited` | 1475 |
 
 | claim_type | count |
 |---|---:|
@@ -850,6 +850,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5854,6 +5855,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The lattice admits a scalar order-parameter surface relevant to EWSB, and lattice Coleman-Weinberg electroweak symmetry breaking occurs naturally for O(1) comparison inputs on the current bounded runner.  _(class `F`)_
 - **chain closes:** False — The restricted packet does not derive the scalar order parameter, the Coleman-Weinberg potential bridge, or the EWSB-from-Cl(3)/Z^3 chain. The runner assumes the Higgs-field variable and imports comparison inputs such as g, g', y_t, lambda, and m^2.
 - **rationale:** The note's narrowed scope correctly excludes exact m_H closure and admits that theorem-grade derivations of the scalar order parameter, CW bridge, and EWSB chain remain open. The runner performs a bounded consistency computation, but it does not instantiate Cl(3) on Z^3 to derive the Higgs carrier or the bare parameters from the axiom. No-Go Discipline gate check for the bounded exclusions blocks audited_clean: N1/N2 collapse the named residuals to the same missing scalar/CW/bare-parameter bridge rather than five independent closed walls.
+- **auditor confidence:** high
+
+### `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17`
+
+- **Note:** [`HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md`](../../docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the algebraic claim that, assuming the stated Z_3 charge triplets, support rule, and PMNS convention, the three definite-Higgs-charge branches are right-handed basis relabelings with identical Y_e Y_e† on L_L axes.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T205130Z-876e41a3-higgs_z3_charge_pmns_gau-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The branches q_H = ±1 satisfy Y_e[±1] = Y_e[0] · P_± with P_± acting only on right-handed e_R axes, so Y_e Y_e† and hence the left-handed PMNS observable are q_H-invariant.  _(class `A`)_
+- **chain closes:** False — The linear-algebra step itself closes from the stated charge/support data, and the runner genuinely checks those identities. The restricted packet does not provide the one-hop authorities for the Z_3 support trichotomy or the charged-lepton PMNS convention, so the cited-input chain is incomplete.
+- **rationale:** The runner source is not a print-only certificate: it constructs the support masks from Q_L, Q_R, and q_H, builds Y_e, verifies Y_e Y_e† invariance, and checks the right-handed permutation identities. Those checks are class A algebra over imported retained inputs, not first-principles computation. However, two load-bearing upstream inputs named in the note are not present in the restricted cited-authority packet, so the audit cannot verify that the support rule and PMNS convention are retained-grade within this chain.
+- **open / conditional deps cited:**
+  - `NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md`
+  - `CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `higher_symmetry_gravity_probe_note`

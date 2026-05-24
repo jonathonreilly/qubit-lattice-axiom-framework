@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 141 |
-| **retained_no_go** | 153 |
+| **retained_no_go** | 154 |
 | **retained_bounded** | 410 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1262 |
+| unaudited | 1261 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 679 |
+| `audited_clean` | 680 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1488 |
+| `unaudited` | 1487 |
 
 | claim_type | count |
 |---|---:|
@@ -453,6 +453,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6997,6 +6998,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The cubic-lattice Green's function satisfies G(r) -> 1 / (4 pi |r|) as |r| -> infinity, asserted as the Maradudin-Montroll-Weiss asymptotic.  _(class `B`)_
 - **chain closes:** False — The packet provides no retained cited authority or derivation of the asymptotic. The missing step is the actual textbook proof or retained upstream authority establishing the lattice Green's function asymptotic under the stated normalization.
 - **rationale:** The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization.
+- **auditor confidence:** high
+
+### `lattice_keff_continuum_note`
+
+- **Note:** [`LATTICE_KEFF_CONTINUUM_NOTE.md`](../../docs/LATTICE_KEFF_CONTINUUM_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audited scope is only the dense lattice scheme with kernel exp(i*(k*h)*act)*w/L*h^2 on the inherited detector/readout harness through h = 0.25.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T180443Z-091594ef-lattice_keff_continuum_n-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current dense k_eff = k*h runner gives finite rows at h = 2.0, 1.0, and 0.5, but the detector readout fails at h = 0.25 while the surviving gravity values -1.6910 -> +0.1374 -> +0.5821 do not establish a stable refinement trend.  _(class `C`)_
+- **chain closes:** True — The supplied runner source computes the lattice/readout path and changes only the propagator phase to k*h; the completed stdout matches the note's finite rows and h = 0.25 detector failure. This closes a narrow harness-level no-go, not a universal continuum impossibility or an architecture-change exclusion.
+- **rationale:** The load-bearing step is a first-principles runner computation within the provided lattice harness, not a definition, renaming, or tuned external comparator. All cited authorities are retained-grade, and the no-go is explicitly scoped away from nearest-neighbor and architecture-change lanes. The N1-N8 negative-claim gate passes for that narrowed scope: attack routes are enumerated, the two walls are kept independent, the h = 0.25 detector residual matches the default runner witness, and the steelman is left as a future readout/architecture lane rather than overclaimed as closed.
 - **auditor confidence:** high
 
 ### `lattice_kernel_transfer_norm_note`

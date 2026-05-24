@@ -115219,11 +115219,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.585,
       "load_bearing_step": "The second row is the only case where a negative centroid should be treated as something other than ordinary \"away\" behavior, with the current retained 3D dense scope narrowed to runner-computed z=3 and z=5 rows.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "24d7bd89b335de8d99ff5176cde229837b79de362d5a7f64e0a2b68e21b80164",
       "note_path": "docs/GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md",
       "notes_for_re_audit_if_any": "Second auditor should verify downstream consumers cite only the narrowed z=3 and z=5 dense scope, not the excluded z=2, z=4, z=6, or z=7 rows.",
@@ -153930,24 +153930,50 @@
       "verdict_rationale": "The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization."
     },
     "lattice_keff_continuum_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T18:06:56.796632+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "continuum_limit_note": "Finite-h cached h^2+T lattice trend table for h in {1.0, 0.5, 0.25, 0.125}, including transfer norms, TOWARD gravity rows, F~M exponents near 1, and 2.7% weak-field deflection change from h=0.25 to h=0.125; no audited h -> 0 convergence theorem.",
+          "lattice_fanout_continuum_note": "The audited note rules out the specific fan-out normalized kernel exp(i\u00b7k\u00b7act)\u00b7w/(L\u00b7sqrt(fan_out)) as a continuum-limit recipe for the provided lattice runner family over the tested refinements h = 2, 1, 0.5, 0.25.",
+          "lattice_nn_continuum_note": "Bounded finite-spacing computational claim for the raw nearest-neighbor harness on H_finite = {2.0, 1.0, 0.5, 0.25}: finite gravity, k=0, MI, classical purity, total-variation, and Born rows, with Born residual < 1e-10 and h = 0.125/continuum explicitly outside the claimed window."
+        },
+        "dep_claim_type": {
+          "continuum_limit_note": "bounded_theorem",
+          "lattice_fanout_continuum_note": "no_go",
+          "lattice_nn_continuum_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "continuum_limit_note": "retained_bounded",
+          "lattice_fanout_continuum_note": "retained_no_go",
+          "lattice_nn_continuum_note": "retained_bounded"
+        },
+        "deps": [
+          "continuum_limit_note",
+          "lattice_fanout_continuum_note",
+          "lattice_nn_continuum_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e5a86fa866a16a5b083a25c7638975e08217e75aa0322421554252ba84efc387",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T180443Z-091594ef-lattice_keff_continuum_n-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner source computes the lattice/readout path and changes only the propagator phase to k*h; the completed stdout matches the note's finite rows and h = 0.25 detector failure. This closes a narrow harness-level no-go, not a universal continuum impossibility or an architecture-change exclusion.",
       "claim_id": "lattice_keff_continuum_note",
-      "claim_scope": null,
+      "claim_scope": "The audited scope is only the dense lattice scheme with kernel exp(i*(k*h)*act)*w/L*h^2 on the inherited detector/readout harness through h = 0.25.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-24T18:06:56.796632+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -153957,21 +153983,21 @@
         "lattice_fanout_continuum_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/lattice_continuum_limit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The current dense k_eff = k*h runner gives finite rows at h = 2.0, 1.0, and 0.5, but the detector readout fails at h = 0.25 while the surviving gravity values -1.6910 -> +0.1374 -> +0.5821 do not establish a stable refinement trend.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0cb871252ce3d7794865c0e37843f8bb2979918cd8c0546bc67eb4082fcd427e",
       "note_path": "docs/LATTICE_KEFF_CONTINUUM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the support-only unpruned P_free ~= 7e-75 replay if promoting prose that depends on that exact number; the clean no-go here rests on the supplied default harness failure and surviving-row gravity trend.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -154100,18 +154126,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 1,
+        "B": 1,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/lattice_keff_continuum.py",
       "title": "k_eff = k\u00b7h Continuum Limit Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a first-principles runner computation within the provided lattice harness, not a definition, renaming, or tuned external comparator. All cited authorities are retained-grade, and the no-go is explicitly scoped away from nearest-neighbor and architecture-change lanes. The N1-N8 negative-claim gate passes for that narrowed scope: attack routes are enumerated, the two walls are kept independent, the h = 0.25 detector residual matches the default runner witness, and the steelman is left as a future readout/architecture lane rather than overclaimed as closed."
     },
     "lattice_kernel_transfer_norm_note": {
       "audit_date": "2026-05-03T19:32:05.252731+00:00",

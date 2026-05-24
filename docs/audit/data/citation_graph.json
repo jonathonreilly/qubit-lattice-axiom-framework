@@ -83650,7 +83650,7 @@
         "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3ab25bfad27854537a8b4fa9ed5bb1e9d5b0410e8e007d5db123824289a88da7",
+      "note_hash": "d179312270414063524041427d2c4495872c4aa7c99fb2bb8b37ef411c0526ce",
       "path": "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "Yukawa Color-Singlet Projection Theorem"

@@ -1,0 +1,52 @@
+loop_slug: yukawa-color-projection-narrow-repair
+date: 2026-05-24
+branch: physics-loop/yukawa-color-projection-narrow-repair-block07-20260524
+base: origin/main
+mode: science-fix
+target_claim_id: yukawa_color_projection_theorem
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This branch narrows an audited-conditional source row back to an unaudited audit candidate; it does not assign an effective retained verdict."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms_introduced: false
+files_touched:
+  - docs/YUKAWA_COLOR_PROJECTION_THEOREM.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+  - docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md
+  - .claude/science/physics-loops/yukawa-color-projection-narrow-repair/
+retired_imports:
+  - dynamical trace-ratio identification from representation-dimension counting
+  - implicit equal-population/ergodicity bridge for F_adjoint(M) or R_conn
+current_queue_result:
+  rank: 1
+  ready: true
+  descendants: 978
+  dependency_claim_ids:
+    - ew_current_fierz_channel_decomposition_note_2026-05-01
+    - native_gauge_closure_note
+    - graph_first_su3_integration_note
+verification:
+  primary_runner: "python3 scripts/frontier_ew_current_fierz_channel_decomposition.py -> PASS=31 FAIL=0"
+  companion_runner: "python3 scripts/audit_companion_ew_fierz_general_n_c_exact.py -> PASS=42 FAIL=0"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh -> complete, ready_count=3"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK, no errors"
+  vocabulary: "render_controlled_vocabulary --check and vocab_lint --report-only -> clean"
+  diff_check: "git diff --check -> clean"
+pr:
+  url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1764
+  status: open
+next_exact_action: "Codex reviewer/audit loop reviews PR #1764 and audits the queued row if the source repair is accepted."
+stop_condition: "PR opened and verified clean against main; independent audit remains external."

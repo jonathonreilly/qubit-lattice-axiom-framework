@@ -16913,6 +16913,14 @@
       "to": "graph_first_selector_derivation_note"
     },
     {
+      "from": "lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23",
+      "to": "graph_first_selector_derivation_note"
+    },
+    {
       "from": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
       "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
     },
@@ -63063,6 +63071,21 @@
       "runner_path": "scripts/frontier_lh_doublet_traceless_abelian_ratio.py",
       "title": "LH-Doublet Traceless Abelian Eigenvalue Ratio (Narrow Theorem)"
     },
+    "lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23": {
+      "claim_id": "lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "graph_first_su3_integration_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9574a9c9a829695c767fa0a9285fa4d6a0c3a4e0faf1a12af25ede9d83224958",
+      "path": "docs/LH_TEMPLATE_RETAINED_SUBSTRATE_I3_INDEPENDENCE_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_lh_template_i3_independence_discriminator.py",
+      "title": "LH Matter-Template Retained-Substrate I3-Independence Narrow Theorem"
+    },
     "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": {
       "claim_id": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -84488,7 +84511,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 536,
+      "bounded_theorem": 537,
       "decoration": 1,
       "meta": 188,
       "no_go": 69,
@@ -84497,7 +84520,7 @@
       "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 970,
+      "bounded_theorem": 971,
       "decoration": 1,
       "meta": 188,
       "no_go": 172,
@@ -84505,10 +84528,10 @@
       "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9691,
-    "leaf_count": 763,
-    "node_count": 2495,
+    "edge_count": 9693,
+    "leaf_count": 764,
+    "node_count": 2496,
     "root_count": 822,
-    "runners_with_path": 2056
+    "runners_with_path": 2057
   }
 }

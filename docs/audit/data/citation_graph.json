@@ -16637,10 +16637,6 @@
       "to": "graph_first_su3_integration_note"
     },
     {
-      "from": "left_handed_charge_matching_note",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
       "from": "legacy_exploratory_drivers_note",
       "to": "start_here"
     },
@@ -62722,11 +62718,10 @@
       "deps": [
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "291b0691e9e5f04139925a6a439bea6ea7c8f7fbb9d2c2be7acfa3da1c67de0d",
+      "note_hash": "606a2ec8e8178a4dad64a5f9feb247f36d649c024306954b96ba4c291d5b036e",
       "path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Left-Handed Charge Matching on the Selected-Axis Surface"
@@ -84540,7 +84535,7 @@
       "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9698,
+    "edge_count": 9697,
     "leaf_count": 762,
     "node_count": 2495,
     "root_count": 821,

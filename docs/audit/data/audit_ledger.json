@@ -156896,8 +156896,7 @@
       "deps": [
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 37,
       "effective_status": "unaudited",
@@ -156910,7 +156909,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "291b0691e9e5f04139925a6a439bea6ea7c8f7fbb9d2c2be7acfa3da1c67de0d",
+      "note_hash": "606a2ec8e8178a4dad64a5f9feb247f36d649c024306954b96ba4c291d5b036e",
       "note_path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -167117,7 +167116,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 28.615,
+      "load_bearing_score": 28.605,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
@@ -167138,7 +167137,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)",
-      "transitive_descendants": 1108,
+      "transitive_descendants": 1100,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-04-11": {
@@ -193135,11 +193134,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.219,
+      "load_bearing_score": 13.219,
       "load_bearing_step": "The runner computes the Bessel-determinant Taylor coefficients exactly to depth 40 and verifies certificates [A]-[E]: Taylor annihilation through beta^36, recurrence consistency, checked lower-order exclusion, 1D kernel matching L at (r=3,d=2), and higher-degree kernel dimensions through d=6.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "e0c803319ef4557121b88993510ada53132694bffa040bfc16c0bf4121dbceab",
       "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that treating the Bars Bessel-determinant identity as an accepted input is consistent with the audit packet policy for this row.",
@@ -241132,13 +241131,13 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 46,
+      "direct_in_degree": 45,
       "effective_status": "audited_renaming",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_renaming",
-      "load_bearing_score": 33.082,
+      "load_bearing_score": 32.571,
       "load_bearing_step": "This note's load-bearing content is identity assignment only: it names the framework baseline, the four substeps the closure must discharge, and the supporting notes.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
@@ -241356,7 +241355,7 @@
       },
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note",
-      "transitive_descendants": 1083,
+      "transitive_descendants": 1075,
       "verdict_rationale": "The source note is candidly an identity/package note: it introduces a canonical parent handle for an open gate and points to downstream supporting attempts. Its only load-bearing step is definitional rather than an algebraic or first-principles derivation from the cited axiom premise. The substantive staggered-Dirac realization remains explicitly open in the restricted packet."
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {

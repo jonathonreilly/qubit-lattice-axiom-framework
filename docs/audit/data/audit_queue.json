@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 344,
-    "leaf": 320,
+    "leaf": 319,
     "medium": 331
   },
   "cycle_break_target_count": 10,
@@ -28765,31 +28765,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gravitational_memory_note_2026-04-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "memory_decay_diagnosis_2026-04-11",
-        "memory_mu2_geometry_sweep_note_2026-04-11"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GRAVITATIONAL_MEMORY_NOTE_2026-04-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gravitational_memory.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "k_dependence_review_safe_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38192,6 +38167,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 8,
-  "total_pending": 1266
+  "ready_count": 7,
+  "total_pending": 1265
 }

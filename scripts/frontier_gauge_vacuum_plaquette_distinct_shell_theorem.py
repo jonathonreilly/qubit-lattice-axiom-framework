@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Exact distinct-shell theorem for the Wilson gauge-vacuum plaquette.
+Finite distinct-shell geometry packet for the Wilson gauge-vacuum plaquette.
 
-This runner proves the exact minimal connected shell geometry built from
-distinct plaquettes around a marked plaquette on the accepted `3 spatial + 1
-derived-time` surface.
+This runner verifies the minimal connected shell geometry built from distinct
+plaquettes around a marked plaquette on the finite four-coordinate Wilson
+cubical surface. It does not use a staggered-Dirac gate, a g_bare
+normalization theorem, or a beta-effective reduction law.
 """
 
 from __future__ import annotations
@@ -126,7 +127,7 @@ def main() -> int:
     cube_boundary = xor_boundary(cube_shell)
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE DISTINCT-SHELL THEOREM")
+    print("GAUGE-VACUUM PLAQUETTE DISTINCT-SHELL FINITE GEOMETRY PACKET")
     print("=" * 78)
     print()
     print("Observed plaquette")

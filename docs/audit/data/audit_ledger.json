@@ -260584,24 +260584,54 @@
       "verdict_rationale": "All claimed algebraic conclusions follow constructively: the P_i project onto the three coordinate lines, P_i C^k P_j produces every matrix unit, the nine units span M_3(C), and irreducibility/no-proper-quotient follows. The note explicitly strips away the physical generation interpretation, so no open staggered-Dirac or physical-lattice gate is load-bearing here."
     },
     "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T20:45:46.386707+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_mass_matrix_no_go_note": "Exact unbroken S_3-invariant Hermitian operators on the stated hw=1 triplet V = span(X_1, X_2, X_3) have at most two distinct eigenvalues; the residual axis-fixing Z_2 invariant space has real dimension 5.",
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "s3_mass_matrix_no_go_note": "no_go",
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "s3_mass_matrix_no_go_note": "retained_no_go",
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "s3_mass_matrix_no_go_note",
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 18.918,
+        "runner_hash": "5c4d8d26cb7cdea0a7291d0482dd310cde508a8079f578df7df6a7166dc28e2f",
+        "transitive_descendants": 683
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T204524Z-b0d3d08c-three_generation_observa-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional linear algebra closes on its stated carrier. The restricted packet does not independently close the identification of that retained C^3 carrier with exact translation-character projectors and the C\u2083[111] operator without relying on upstream framework-carrier language that is explicitly open or admitted in cited authorities.",
       "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "On an already-retained finite C^3 carrier with rank-one translation-character projectors P_X_i and a three-cycle C\u2083[111], the common invariant subspaces are only {0} and C^3, equivalently the generators produce M_3(C).",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-24T20:45:46.386707+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -260612,20 +260642,24 @@
         "z2_hw1_mass_matrix_parametrization_note"
       ],
       "direct_in_degree": 19,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 18.918,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Preserving the projector algebra D_3 forces any invariant subspace to be a coordinate subspace, and preserving C\u2083[111] forces the coordinate subset to be either empty or all three sectors.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "469d962029dae7256fe9da079fb667eb5f080750d54ee48eff36632cb05248d5",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade bridge theorem establishing the finite hw=1 C^3 carrier, exact translation-character projectors, and C\u2083[111] cycle as closed inputs independent of the open staggered-Dirac/framework-carrier identification.",
+      "open_dependency_paths": [
+        "docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
+        "docs/S3_MASS_MATRIX_NO_GO_NOTE.md",
+        "docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-03T13:40:45.897458+00:00",
@@ -260788,18 +260822,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 44,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 44
       },
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "title": "Three-Generation Observable: No-Proper-Quotient Narrow Theorem",
       "transitive_descendants": 683,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely verifies the algebraic matrix-unit generation and invariant-subspace claim, so the load-bearing step is class A. However, the note's premise is not just abstract C^3 linear algebra; it imports a retained hw=1 BZ-corner / taste-cube carrier with exact translation-character projectors and a C\u2083[111] cycle. The cited S3 taste-cube authority explicitly says the framework-carrier identification depends on an open staggered-Dirac realization gate, and retained status does not propagate through that open identification. Under the negative-claim gate, N3 fails because the packet\u2019s retained-carrier language hides an unclosed carrier-identification wall, so a clean no-proper-quotient boundary cannot be ratified from this restricted packet alone."
     },
     "three_generation_observable_theorem_note": {
       "audit_date": "2026-05-24T20:40:23.140785+00:00",

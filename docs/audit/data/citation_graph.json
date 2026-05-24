@@ -55653,17 +55653,17 @@
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": {
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0f57d70cbe31067ea2a4ab28eed8ad365b0481390fa485ffadff09247644b807",
+      "note_hash": "a98467d43625e81abfef947af2af0ca62213490d82bbb1431bfa5b7ff93c808b",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py",
-      "title": "Gauge-Vacuum Plaquette Spatial Environment Transfer Theorem"
+      "title": "Gauge-Vacuum Plaquette Spatial Environment Transfer Finite Witness Packet"
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": {
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
@@ -84507,22 +84507,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 527,
+      "bounded_theorem": 528,
       "decoration": 1,
       "meta": 188,
       "no_go": 68,
       "none": 1490,
       "open_gate": 45,
-      "positive_theorem": 176
+      "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 961,
+      "bounded_theorem": 962,
       "decoration": 1,
       "meta": 188,
       "no_go": 171,
       "none": 443,
       "open_gate": 123,
-      "positive_theorem": 608
+      "positive_theorem": 607
     },
     "edge_count": 9695,
     "leaf_count": 763,

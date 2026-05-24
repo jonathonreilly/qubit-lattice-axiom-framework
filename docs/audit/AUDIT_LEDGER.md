@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1271 |
+| unaudited | 1272 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 110 |
+| ~~audited_conditional~~ | 109 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,21 +50,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 656 |
-| `audited_conditional` | 110 |
+| `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1497 |
+| `unaudited` | 1498 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1014 |
+| `bounded_theorem` | 1015 |
 | `decoration` | 32 |
 | `meta` | 230 |
 | `no_go` | 243 |
 | `open_gate` | 113 |
-| `positive_theorem` | 749 |
+| `positive_theorem` | 748 |
 
 | criticality | count |
 |---|---:|
@@ -815,7 +815,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
-| `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gellmann_completeness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4952,21 +4951,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner constructs one explicit finite tensor-transfer matrix from the truncated Wilson coefficients and finite SU(3) fusion recurrences, then verifies nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout.  _(class `A`)_
 - **chain closes:** True — Within the narrowed finite-packet scope, the cited retained_bounded tensor-word note and the included runner close the three stated matrix properties by direct finite computation. The source note explicitly excludes the full untruncated tensor-transfer operator, Perron solve, and boundary-character identity.
 - **rationale:** The claim has been narrowed to the exact finite tensor-word packet already retained upstream, and both cited authorities are retained_bounded. The primary runner is not a print-only certificate: it computes Bessel-determinant Wilson coefficients, builds SU(3) fundamental/anti-fundamental recurrence matrices, forms the tensor word, and checks the advertised finite properties. No external comparator or open full-environment identity is used as load-bearing for the bounded claim.
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Structural existence of a positive self-adjoint spatial environment transfer operator and the exact boundary-amplitude / character-coefficient realization of Z_beta^env, conditional on the cited tensor-transfer authority.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T184540Z-a91aad3f-gauge_vacuum_plaquette_s-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The full unmarked spatial environment with fixed marked holonomy W reduces exactly to a boundary amplitude: Z_beta^env(W) = <eta_beta(W), (S_beta^env)^(L_perp-1) eta_beta(e)>.  _(class `A`)_
-- **chain closes:** False — The restricted packet does not close the bridge from an abstract or toy spatial transfer slicing to the actual unmarked Wilson environment boundary amplitudes. The sole cited authority is retained only as a bounded finite tensor-word packet and explicitly leaves the full boundary-character identity and untruncated tensor-transfer operator open.
-- **rationale:** The source note's conclusion depends on the exact boundary-amplitude identity for the actual spatial Wilson environment. The one-hop authority explicitly says it does not claim that full boundary-character identity and retains only a finite NMAX=4, MODE_MAX=80 tensor-word packet. The runner is also only a constructed finite class-sector witness, not a computation of the actual environment, and its cached run has one theorem failure for boundary positivity. Therefore the claimed positive theorem remains conditional on the missing full transfer-identity bridge.
-- **open / conditional deps cited:**
-  - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_spectral_measure_theorem_note`

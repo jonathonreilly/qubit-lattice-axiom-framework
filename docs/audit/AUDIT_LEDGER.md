@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 402 |
+| **retained_bounded** | 403 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1270 |
+| unaudited | 1269 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 670 |
+| `audited_clean` | 671 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1496 |
+| `unaudited` | 1495 |
 
 | claim_type | count |
 |---|---:|
@@ -175,6 +175,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_collapse_strength_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `central_band_dense_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_highn_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1903,6 +1904,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** All six `LN + |y| + collapse` rows in the swept `p in {0.05, 0.10, 0.20}` by `N in {40, 60}` grid sit below the `1e-10` machine-precision threshold on the corrected `I3 / P` metric.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helper construct the graph, apply the stated central-band removal, propagate amplitudes, generate collapse phases, and compute corrected `I3 = P_abc - P_ab - P_ac - P_bc + P_a + P_b + P_c - P_empty`. The cached stdout matches the note's retained rows and there is no hard-coded expected value, imported contested premise, or external comparator in the load-bearing path.
 - **rationale:** The note's conclusion is narrow and bounded to the completed finite sweep, not a broader mechanism or monotone optimization claim. The supplied runner source genuinely computes the stated metric through the helper chain, and the cached output supports every numeric row quoted in the note. Seed accounting and the non-monotone p-ordering are explicitly scoped and do not create an unclosed dependency.
+- **auditor confidence:** high
+
+### `central_band_dense_boundary_note`
+
+- **Note:** [`CENTRAL_BAND_DENSE_BOUNDARY_NOTE.md`](../../docs/CENTRAL_BAND_DENSE_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-backed sweep at N = 80, 100 with npl = 60, y_cut = 2.0, connect_radius = 2.8..3.4, seeds [3, 10, 17, 24], 8 realizations, evaluating only the stated P1/P2 operational sharp-boundary predicates.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T175048Z-61b88ef0-central_band_dense_bound-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At N = 100, LN+|y| gravity changes from -0.044 at r = 3.0 to +5.210 at r = 3.2, and purity drops from 1.000 to 0.750, so P1 and P2 both fire at r = 3.2 while N = 80 has no mean-gravity sign flip.  _(class `C`)_
+- **chain closes:** True — The cached runner output matches the note's tables, and the supplied primary and helper sources compute graph construction, Born metric, purity, and gravity from deterministic seeded procedures rather than hard-coded expected values. The conclusion follows only for the stated finite configuration and operational mean-sign/purity-drop predicates.
+- **rationale:** The runner and helper chain is complete in the packet and performs the load-bearing computation instead of importing a contested result from another note or external comparator. The P1/P2 evaluations are numerically consistent with the cached stdout: N = 100 passes both predicates at r = 3.2, while N = 80 has no mean-gravity sign flip in the swept window. The note also preserves the necessary finite-scope limitation and does not generalize the boundary claim beyond the stated sweep.
 - **auditor confidence:** high
 
 ### `central_band_dense_joint_highn_note`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 142 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 416 |
+| **retained_bounded** | 417 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1242 |
+| unaudited | 1241 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 687 |
+| `audited_clean` | 688 |
 | `audited_conditional` | 116 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1468 |
+| `unaudited` | 1467 |
 
 | claim_type | count |
 |---|---:|
@@ -792,6 +792,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_fixed_beam_boundary_sensitivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_moving_source_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -13038,6 +13039,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The live runner reproduces both source-note comparisons: field PW 6.0 -> 9.0 and 9.0 -> 12.0. The note keeps the conclusion mixed and bounded, explicitly withholding continuum-quality promotion.
 - **rationale:** The note accurately preserves both sides of the runner output. The 6.0 -> 9.0 comparison is still materially box-dependent, with dS move 20.84% and rel_MS move 86.21%, while dM is stable; the 9.0 -> 12.0 comparison improves to dS move 5.52% and rel_MS 3.18% -> 2.42% but still does not pass a strict stability criterion. This closes only the stated mixed diagnostic: no boundary-stable moving-source comparator is retained yet, but the medium-H large-box branch remains a plausible stabilization candidate.
 - **auditor confidence:** high
+
+### `wave_static_matrixfree_shared_geometry_compare_note`
+
+- **Note:** [`WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md`](../../docs/WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded finite-table engine comparison between the direct static Poisson solver and the matrix-free static solver at H=0.35 and H=0.25 with z_phys=3.0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T210853Z-107330f9-wave_static_matrixfree_s-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes direct and matrix-free finite-grid static fields on the same shared geometries and reports max field mismatch and propagated beam-response mismatch showing close finite-table agreement, while explicitly not asserting identity or residual-tied equivalence.  _(class `C`)_
+- **chain closes:** True — The primary runner genuinely computes both static fields and the beam-side propagated responses, then validates the quoted frozen rows within explicit tolerances. The note's narrowed conclusion is only close finite-table agreement, not a formal drop-in replacement theorem.
+- **rationale:** The source note no longer overclaims algorithmic identity or a residual-tied drop-in replacement theorem. The runner source instantiates the finite grid, solves the direct and matrix-free static Poisson problems, propagates both through the same beam setup, and checks the recorded H=0.35 and H=0.25 rows against frozen expected values. The remaining large rel_MS mismatch is correctly scoped as comparator science rather than engine equivalence.
+- **auditor confidence:** medium
 
 ### `wave_static_single_source_compare_note`
 

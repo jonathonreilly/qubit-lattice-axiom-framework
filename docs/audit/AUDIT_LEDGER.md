@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 394 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1284 |
+| unaudited | 1283 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 106 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -52,10 +52,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 661 |
 | `audited_conditional` | 106 |
 | `audited_decoration` | 31 |
-| `audited_failed` | 47 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1510 |
+| `unaudited` | 1509 |
 
 | claim_type | count |
 |---|---:|
@@ -932,6 +932,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -4716,6 +4717,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The last coincidence is a definitional fact at finite-box scope: the decomposition stripping defines the finite-box residual factor's action on chi_(p,q) by a real diagonal scalar, and the bounded coefficient companion supplies the numerical values of that sequence on B.  _(class `F`)_
 - **chain closes:** False — The finite-box algebra and retained coefficient import close narrowly. The advertised coincidence with R_6^env does not close as a theorem because R_6^env is defined/identified with the diagonal rho(6) object rather than derived from an independent source-sector kernel or retained physical bridge.
 - **rationale:** N1 is immediate from defining a real nonnegative diagonal operator, and N2 is standard finite-box Peter-Weyl convolution algebra. The direct dependency is operationally retained_bounded, so the rho_(p,q)(6) table can be consumed as bounded numerical input. The load-bearing N3 residual-factor statement, however, is explicitly definitional: the runner builds K_6^src using R[rho(6)] and strips it back, so it verifies packaging rather than independently deriving the residual environment. Thus the safe result is a bounded algebraic core plus a definition, not a clean bounded residual-environment theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-box algebraic stripping uniqueness on 0 <= p,q <= 3 from the assumed decomposition K = M D R M, plus the stated beta=6 round-trip coefficient check.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T172436Z-5d2e8b0d-gauge_vacuum_plaquette_r-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since exp[(beta/2)J|_B] and D_beta^loc|_B are invertible, K = M D R M algebraically inverts to R = D^{-1} M^{-1} K M^{-1}, giving a unique finite-box stripped residual.  _(class `A`)_
+- **chain closes:** False — The U1-U3 uniqueness step closes as a finite-dimensional algebraic identity. The full U1-U5 claim does not close because U4's structural-class transport is false as stated: D^{-1} M^{-1} K M^{-1} need not be self-adjoint for arbitrary self-adjoint K unless D^{-1} commutes with M^{-1} K M^{-1}, and the runner only tests K constructed from an already diagonal symmetric residual.
+- **rationale:** The core stripping uniqueness claim is a valid algebraic inverse once the finite-box decomposition and invertibility of M and D are granted. However, the note also claims structural-class transport from K to R, and its proof incorrectly treats left multiplication by D^{-1} after a symmetric congruence as preserving symmetry without a commutation hypothesis. The runner does not repair this, since its U4 test reconstructs K from a residual already having the desired structural class. The U5 coefficient check is also only a round-trip from an inserted rho packet, not an independent computation from an explicit source-sector kernel.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`

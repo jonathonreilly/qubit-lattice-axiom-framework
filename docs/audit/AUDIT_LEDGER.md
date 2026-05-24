@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 153 |
 | **retained_bounded** | 395 |
 | _retained_pending_chain_ | 7 |
-| open_gate | 13 |
-| unaudited | 1280 |
+| open_gate | 14 |
+| unaudited | 1279 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 662 |
+| `audited_clean` | 663 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1506 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -187,6 +187,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2064,6 +2065,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At n=15, theta0=0.3, strength 5e-4, mass offset +3, and periodic boundary conditions, the frozen runner observes both positive and negative shell-difference gravity-proxy signs across N = 12, 14, 16, 18, 20.  _(class `C`)_
 - **chain closes:** True — The provided runner source computes unperturbed and perturbed evolutions, forms rho1-rho0, sums toward and away shells, and verifies that the resulting signals include both signs. The cached run matches the note's stated finite operating slice.
 - **rationale:** The load-bearing claim is a bounded first-principles numerical computation over the stated chiral-walk update rule, not a definition, renaming, or tuned external comparator. The runner does not hard-code the asserted per-N signs; it computes them from evolve/probability_density and checks sign diversity across the N sweep. The note explicitly limits the mechanism hypothesis and universal-gravity implication, so the audited conclusion is only the finite sign-noninvariance diagnostic.
+- **auditor confidence:** high
+
+### `chiral_split_mass_gravity_note`
+
+- **Note:** [`CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Exploratory diagnostic that the supplied 1D chiral-walk toy runner computes an independent linear g-control of centroid shift at fixed theta_m, without claiming theta_m flattening, k-achromaticity, or bottleneck closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T173404Z-705ed5c1-chiral_split_mass_gravit-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At theta_m = 0.30, k0 = 0.60, strength = 5e-4, sweeping g from 0.0 to 0.5 gives a centroid-shift response linear in g with R^2 approximately 1.0000.  _(class `C`)_
+- **chain closes:** True — The runner source directly constructs the split theta_eff = theta_m * (1 - g * f) walk, evolves wave packets, computes centroid differences, sweeps g, and fits a line. Within the narrowed toy-harness scope, the reported stdout matches a genuine computation rather than a hard-coded verdict.
+- **rationale:** The note no longer claims closure of the earlier theta_m/k residual problems; it claims only an exploratory fixed-theta g-linearity diagnostic. The provided source computes the dispersion, field scaling, k sweep, g sweep, and theta sweep from explicit local-unitary walk operations, with the load-bearing g sweep passing at R^2 = 1.0000. Because the claim is explicitly bounded to that runner-supported observation and does not import an external comparator or upstream open authority, the narrowed chain closes on its own terms.
 - **auditor confidence:** high
 
 ### `chsh_structural_bound_narrow_theorem_note_2026-05-17`

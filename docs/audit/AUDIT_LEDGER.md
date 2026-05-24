@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 393 |
+| **retained_bounded** | 394 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 660 |
+| `audited_clean` | 661 |
 | `audited_conditional` | 105 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1512 |
+| `unaudited` | 1511 |
 
 | claim_type | count |
 |---|---:|
@@ -515,6 +515,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7976,6 +7977,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On smooth W with W[0] = 0, cross-block second-source-derivative vanishing is logically equivalent to block-additivity W[J_A ⊕ J_B] = W[J_A] + W[J_B].  _(class `A`)_
 - **chain closes:** True — The equivalence lemma closes by elementary multivariable calculus on the stated smooth convex-domain hypotheses with W(0)=0. The runner provides supporting symbolic checks and does not import the contested premise as a retained theorem.
 - **rationale:** The load-bearing step is a genuine class A calculus/algebra equivalence, not a definition, numerical match, or cross-note import. The no_go conclusion is narrow: imposing strict cross-block source-derivative locality is the same as imposing block additivity under the stated smoothness and normalization assumptions. The cited framework rows are context only, and no non-retained cited authority is needed for the equivalence claim.
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic claim that operator-algebraic/tensor-product factorization yields multiplicative factorization of Z or r, while explicit continuous scalar functionals r^p show this does not by itself force additive scalar-generator P1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T172121Z-31f3baf1-observable_principle_p1_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The counterexample family F_p[J]=r(J)^p inherits multiplicative factorization from r(J_A⊕J_B)=r_A(J_A)r_B(J_B) but, for p≠0, is not block-additive on explicit witness pairs such as r_A=2, r_B=3.  _(class `A`)_
+- **chain closes:** True — The scoped conclusion follows from elementary determinant/product algebra and the explicit off-coincidence witness for failure of additivity. The note does not claim positive closure of P1, and the residual additivity selection is kept out of scope.
+- **rationale:** The load-bearing step is an algebraic counterexample: multiplicativity of r^p follows from product factorization, while additivity fails on explicit positive witnesses off the coincidence curve. The runner source actually computes symbolic determinant factorization, trace-product analogues, exact r^p multiplicativity, and nonzero additivity defects rather than merely printing constants. Applying the negative-claim gate, the packet tests distinct routes through tensor factorization, determinant factorization, trace state, cluster/correlator factorization, Reeh-Schlieder/GNS vocabulary, and log/Cauchy selection; the walls collapse to one stated residual, namely additivity selection, and the claim is narrowed to that tested resolution.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`

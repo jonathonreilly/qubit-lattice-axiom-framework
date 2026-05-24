@@ -1,6 +1,8 @@
 # `alpha_s(M_Z)` Same-Surface-Derived Authority (bounded)
 
-**Date:** 2026-04-15 (status amended 2026-05-01)
+**Date:** 2026-04-15 (status amended 2026-05-01; bounded source hint added
+2026-05-24)
+**Type:** bounded_theorem
 **Status:** bounded - same-surface quantitative lane on `main`. The
             framework-side carrier is `alpha_s(v)` from the canonical
             plaquette/`u_0` chain; the `M_Z` readout is then the standard
@@ -50,7 +52,9 @@ This note responds to both repair targets:
 The honest author tier for this note is therefore `bounded`, not
 `proposed_retained`. The numerical lane `alpha_s(M_Z) = 0.1181` remains
 in place as the bounded same-surface readout under the documented
-one-hop bridge.
+one-hop bridge. The `Type: bounded_theorem` source hint is an authoring
+queue hint only; independent audit still owns `claim_type`, `audit_status`,
+and any effective `retained_bounded` propagation.
 
 ## Authority Role
 
@@ -147,7 +151,7 @@ It remains distinct from:
 
 ## Validation Snapshot
 
-- current zero-input route:
+- current bounded route:
   `alpha_s(M_Z) = 0.1181`
 - comparison value:
   `0.1179`

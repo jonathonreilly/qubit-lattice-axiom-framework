@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1289 |
+| unaudited | 1291 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 73 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -52,16 +52,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 686 |
-| `audited_conditional` | 73 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1516 |
+| `unaudited` | 1518 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1025 |
+| `bounded_theorem` | 1026 |
 | `decoration` | 36 |
 | `meta` | 232 |
 | `no_go` | 243 |
@@ -73,16 +73,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 401 |
 | `high` | 482 |
 | `medium` | 568 |
-| `leaf` | 936 |
+| `leaf` | 937 |
 
 - **Retained pending chain closure:** 7
 - **Citation cycles detected:** 3
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1945
-- runners with (C) first-principles compute hits: 959
-- runners with (D) external comparator hits: 554
+- runners classified: 1946
+- runners with (C) first-principles compute hits: 960
+- runners with (D) external comparator hits: 555
 - decoration candidates (no C, no D): 314
 
 ## Top 25 by load-bearing score (topology only)
@@ -810,7 +810,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1470,21 +1469,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The complexification splits as Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C), with the two summands distinguished by ω → ±i, so each summand has the unique 2-dimensional M_2(C) irreducible module and finite-dimensional representations decompose into copies of the two chiral irreps.  _(class `A`)_
 - **chain closes:** True — The in-scope U1-U3 claim follows from retained upstream narrow theorems establishing the Cl(3) complexification split and Pauli irrep uniqueness, plus standard finite-dimensional semisimple algebra representation theory. The former U4 physical per-site Hilbert-space bridge is explicitly out of scope.
 - **rationale:** The load-bearing step is an algebraic Clifford-algebra classification and representation-theory decomposition, not a numerical fit, definition, or external comparator. Both cited one-hop authorities are retained-grade and directly cover the split, chirality labels, two-dimensional irreps, and uniqueness within chirality. The runner source performs concrete Pauli-matrix and chirality checks, with one weak random-search exhibit for 3D nonexistence, but the proof of odd-dimensional exclusion is supplied by the retained algebraic decomposition rather than by that search.
-- **auditor confidence:** high
-
-### `axiom_first_lattice_noether_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-judicial-gpt-5.5-20260511-230510-axiom_first_lattice_noet-001`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** Promoting the symmetry parameter to a site-dependent lattice field yields a current-divergence Ward identity whose on-shell arbitrariness forces ∂^L_μ J^μ_x = 0, with the discrete translation case handled by the analogous finite-difference Ward identity and direct E6 check for P^μ_x.  _(class `A`)_
-- **chain closes:** False — The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.
-- **rationale:** The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`

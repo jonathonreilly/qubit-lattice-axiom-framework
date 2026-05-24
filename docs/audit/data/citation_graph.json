@@ -1293,6 +1293,10 @@
       "to": "minimal_axioms_2026-05-03"
     },
     {
+      "from": "axiom_first_lattice_noether_theorem_note_2026-04-29",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
@@ -21093,6 +21097,18 @@
       "to": "complex_selectivity_compare_note"
     },
     {
+      "from": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
+      "from": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "to": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
       "from": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms"
     },
@@ -40695,8 +40711,8 @@
     },
     "alpha_s_derived_note": {
       "claim_id": "alpha_s_derived_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "plaquette_self_consistency_note",
@@ -40706,7 +40722,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "49b47d2b93e49adca108e4d145e483684b90f483de1bd84b50919bf4f1271309",
+      "note_hash": "c423b77660ef2541023c8a686c80bf2276b9c347def02b1bd4e740c2a2eaa4c6",
       "path": "docs/ALPHA_S_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_yt_zero_import_chain.py",
       "title": "`alpha_s(M_Z)` Same-Surface-Derived Authority (bounded)"
@@ -41712,10 +41728,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms_2026-05-03"
+        "minimal_axioms_2026-05-03",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e29e4eb163fbfcab5bd193e3d504019fc1457564eeb522ead9fd4c8e6158e293",
+      "note_hash": "a412faf2b10685654f5fae8f7563bce0dc6e12917f78f84618cb875bbbe5a351",
       "path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3"
@@ -69262,6 +69279,22 @@
       "runner_path": "scripts/portable_package_hierarchy_classifier.py",
       "title": "Portable Package Hierarchy Classifier"
     },
+    "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": {
+      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "no_per_site_chirality_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a69b18c71788362dae4db0c933428c593a03557c96c9ccd5f1ff8e7b0f190501",
+      "path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
+      "title": "Det-Magnitude Positivity Does Not Break S_3; Orientation-Sign Is the C_3 Route"
+    },
     "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": {
       "claim_id": "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
       "claim_type_author_hint": "bounded_theorem",
@@ -84599,16 +84632,16 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 552,
+      "bounded_theorem": 554,
       "decoration": 1,
       "meta": 189,
       "no_go": 69,
-      "none": 1472,
+      "none": 1471,
       "open_gate": 45,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 980,
+      "bounded_theorem": 981,
       "decoration": 1,
       "meta": 189,
       "no_go": 172,
@@ -84616,10 +84649,10 @@
       "open_gate": 123,
       "positive_theorem": 601
     },
-    "edge_count": 9697,
+    "edge_count": 9701,
     "leaf_count": 767,
-    "node_count": 2501,
+    "node_count": 2502,
     "root_count": 824,
-    "runners_with_path": 2064
+    "runners_with_path": 2065
   }
 }

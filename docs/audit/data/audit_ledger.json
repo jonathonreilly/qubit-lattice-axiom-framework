@@ -4402,10 +4402,10 @@
       "claim_id": "alpha_s_derived_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -4427,7 +4427,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "49b47d2b93e49adca108e4d145e483684b90f483de1bd84b50919bf4f1271309",
+      "note_hash": "c423b77660ef2541023c8a686c80bf2276b9c347def02b1bd4e740c2a2eaa4c6",
       "note_path": "docs/ALPHA_S_DERIVED_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -11193,7 +11193,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 23.33,
+      "load_bearing_score": 23.331,
       "load_bearing_step": "The complexification splits as Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands distinguished by \u03c9 \u2192 \u00b1i, so each summand has the unique 2-dimensional M_2(C) irreducible module and finite-dimensional representations decompose into copies of the two chiral irreps.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -11708,7 +11708,7 @@
       },
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
-      "transitive_descendants": 909,
+      "transitive_descendants": 910,
       "verdict_rationale": "The load-bearing step is an algebraic Clifford-algebra classification and representation-theory decomposition, not a numerical fit, definition, or external comparator. Both cited one-hop authorities are retained-grade and directly cover the split, chirality labels, two-dimensional irreps, and uniqueness within chirality. The runner source performs concrete Pauli-matrix and chirality checks, with one weak random-search exhibit for 3D nonexistence, but the proof of odd-dimensional exclusion is supplied by the retained algebraic decomposition rather than by that search."
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
@@ -12756,114 +12756,46 @@
       "verdict_rationale": null
     },
     "axiom_first_lattice_noether_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-11T23:05:10.393534+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-03": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-03": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-03": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-03"
-        ],
-        "load_bearing_score": 17.092,
-        "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
-        "transitive_descendants": 771
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-judicial-gpt-5.5-20260511-230510-axiom_first_lattice_noet-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T23:05:10.393534+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-11T13:01:23.833595+00:00",
-          "auditor": "codex-audit-loop-20260511-axiom-first-lattice-noether-first",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded lattice Noether identity on the explicitly admitted staggered/Grassmann carrier only: U(1) fermion-number current and (2Z)^3 sublattice momentum current for the pure staggered action, with the translation case handled by a discrete Ward identity and direct divergence check. This does not audit a derivation of the staggered-Dirac carrier from A1+A2, a positive theorem after gate closure, anomaly cancellation, one-site taste-shift currents, full energy-momentum tensor conservation, or any g_bare-dependent quantitative gauge result.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-11T22:45:41.220497+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-axiom_first_lattice_noet-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-11T23:05:10.393534+00:00",
-          "auditor": "codex-judicial-gpt-5.5-20260511-230510-axiom_first_lattice_noet-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "It treated closure on the admitted carrier as audited_clean, despite the rubric's audited_conditional rule for explicit unclosed carrier/open-gate imports.",
-          "independence": "judicial_review",
-          "judgment_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": {
-            "A": 6,
-            "B": 0,
-            "C": 0,
-            "D": 0,
-            "total_pass": 6
-          },
-          "second_auditor_error": "",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-03"
+        "minimal_axioms_2026-05-03",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 17,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 18.312,
-      "load_bearing_step": "Promoting the symmetry parameter to a site-dependent lattice field yields a current-divergence Ward identity whose on-shell arbitrariness forces \u2202^L_\u03bc J^\u03bc_x = 0, with the discrete translation case handled by the analogous finite-difference Ward identity and direct E6 check for P^\u03bc_x.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "e29e4eb163fbfcab5bd193e3d504019fc1457564eeb522ead9fd4c8e6158e293",
+      "note_hash": "a412faf2b10685654f5fae8f7563bce0dc6e12917f78f84618cb875bbbe5a351",
       "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: package and audit the staggered-Dirac realization derivation target, then re-audit whether this bounded theorem can be retagged clean on closed inputs.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-03.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T19:40:05.753720+00:00",
@@ -13187,21 +13119,122 @@
             "total_pass": 6
           },
           "verdict_rationale": "Issue: the N1 bridge from two-site discrete translation symmetry to the specific local momentum density (3) is asserted, not proved. Why this blocks: the claim advertises N1-N3 as a bounded theorem, but the only direct support for N1 is a numerical free-block expectation check rather than a derivation of the local Ward current for arbitrary on-shell fields on the admitted carrier. Repair target: add a discrete Ward theorem deriving (3) from localized two-site translation on the admitted staggered action, or narrow the clean claim to N2/N3 plus an E6 free-block exhibit. Claim boundary until fixed: U(1) current and bilateral infinitesimal Noether identity on the admitted staggered carrier."
+        },
+        {
+          "archived_at": "2026-05-24T22:38:38.910870+00:00",
+          "archived_for_note_hash": "e29e4eb163fbfcab5bd193e3d504019fc1457564eeb522ead9fd4c8e6158e293",
+          "audit_date": "2026-05-11T23:05:10.393534+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-03": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-03": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-03": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-03"
+            ],
+            "load_bearing_score": 17.092,
+            "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
+            "transitive_descendants": 771
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-judicial-gpt-5.5-20260511-230510-axiom_first_lattice_noet-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.",
+          "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T23:05:10.393534+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-11T13:01:23.833595+00:00",
+              "auditor": "codex-audit-loop-20260511-axiom-first-lattice-noether-first",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded lattice Noether identity on the explicitly admitted staggered/Grassmann carrier only: U(1) fermion-number current and (2Z)^3 sublattice momentum current for the pure staggered action, with the translation case handled by a discrete Ward identity and direct divergence check. This does not audit a derivation of the staggered-Dirac carrier from A1+A2, a positive theorem after gate closure, anomaly cancellation, one-site taste-shift currents, full energy-momentum tensor conservation, or any g_bare-dependent quantitative gauge result.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-11T22:45:41.220497+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-axiom_first_lattice_noet-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-11T23:05:10.393534+00:00",
+              "auditor": "codex-judicial-gpt-5.5-20260511-230510-axiom_first_lattice_noet-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "It treated closure on the admitted carrier as audited_clean, despite the rubric's audited_conditional rule for explicit unclosed carrier/open-gate imports.",
+              "independence": "judicial_review",
+              "judgment_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": {
+                "A": 6,
+                "B": 0,
+                "C": 0,
+                "D": 0,
+                "total_pass": 6
+              },
+              "second_auditor_error": "",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "Promoting the symmetry parameter to a site-dependent lattice field yields a current-divergence Ward identity whose on-shell arbitrariness forces \u2202^L_\u03bc J^\u03bc_x = 0, with the discrete translation case handled by the analogous finite-difference Ward identity and direct E6 check for P^\u03bc_x.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: package and audit the staggered-Dirac realization derivation target, then re-audit whether this bounded theorem can be retagged clean on closed inputs.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-03.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 6
+          },
+          "verdict_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 6,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 6
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3",
       "transitive_descendants": 898,
-      "verdict_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier."
+      "verdict_rationale": null
     },
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17": {
       "audit_date": null,
@@ -35430,7 +35463,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 22.873,
+      "load_bearing_score": 22.896,
       "load_bearing_step": "Cl(3,0) is real-isomorphic to M_2(C), and after complexification the central idempotents e_\u00b1 split it as M_2(C) \u2295 M_2(C), whose irreducible modules have complex dimension 2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -35451,7 +35484,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
-      "transitive_descendants": 937,
+      "transitive_descendants": 952,
       "verdict_rationale": "The load-bearing content is a standard class-(A) algebraic closure: centrality and square of the pseudoscalar, the real-algebra isomorphism Cl(3,0) \u2245 M_2(C), the complexified idempotent split, and the 2-dimensional simple-module readout. The runner source genuinely performs exact symbolic Pauli-matrix and abstract idempotent checks rather than importing external constants or fitted premises. The proof stays within the stated abstract algebra scope and explicitly excludes the open physical per-site Hilbert-space bridge."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -35780,7 +35813,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 17.833,
+      "load_bearing_score": 17.834,
       "load_bearing_step": "The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with summands distinguished by omega = +/- i, yields exactly the two faithful irreducible complex 2-dimensional representations.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -35801,7 +35834,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
       "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
-      "transitive_descendants": 911,
+      "transitive_descendants": 912,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem."
     },
     "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": {
@@ -182340,13 +182373,13 @@
       "deps": [
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 11.781,
+      "load_bearing_score": 12.283,
       "load_bearing_step": "For M = aI + \u03a3_k b_k \u03c3_k, {M, \u03c3_j} = 2a \u03c3_j + 2b_j I, so vanishing for all j forces a = b_1 = b_2 = b_3 = 0.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -182419,7 +182452,7 @@
       },
       "runner_path": "scripts/no_per_site_chirality_check.py",
       "title": "No Per-Site \u03b3_5 Chirality Operator on Cl(3) Pauli Rep",
-      "transitive_descendants": 879,
+      "transitive_descendants": 880,
       "verdict_rationale": "The direct retained_bounded per-site uniqueness authority plus the allowed k=1 qubit-per-site context close the physical-Hilbert-to-Pauli identification for this targeted audit. The runner genuinely computes the Pauli products, commutators, constraint nullspace, and even/odd complex-span ranks, all as algebraic checks. No-Go Discipline gate passes: k>1 or mixed-chirality modules, negative chirality, larger Clifford algebras, real-vs-complex grading language, and projector-only escape routes are either closed by the stated k=1 scope, sign-invariant, or outside the audited M_2(C) claim."
     },
     "nonlabel_grown_basin_note": {
@@ -204809,6 +204842,61 @@
       },
       "runner_path": "scripts/portable_package_hierarchy_classifier.py",
       "title": "Portable Package Hierarchy Classifier",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
+    "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "no_per_site_chirality_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "a69b18c71788362dae4db0c933428c593a03557c96c9ccd5f1ff8e7b0f190501",
+      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
+      "title": "Det-Magnitude Positivity Does Not Break S_3; Orientation-Sign Is the C_3 Route",
       "transitive_descendants": 0,
       "verdict_rationale": null
     },
@@ -240977,7 +241065,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 12.134,
+      "load_bearing_score": 13.838,
       "load_bearing_step": "Reordering via (G1)-(G3), Berezin top-term selection gives sum over permutations sign(pi) prod_x M_{x,pi(x)} = det(M), and homogeneous odd Grassmann operators anticommute under exchange.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -240998,7 +241086,7 @@
       },
       "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
       "title": "Spin-Statistics \u2014 Berezin Determinant Narrow Theorem",
-      "transitive_descendants": 280,
+      "transitive_descendants": 914,
       "verdict_rationale": "The load-bearing step is class A: coefficient extraction in a finite exterior algebra reduces the Gaussian Grassmann integral to the Leibniz determinant formula. The odd-odd antisymmetry also follows directly from the homogeneous Grassmann grading and linearity of the Berezin integral. The runner source checks the relevant algebra symbolically for small N and does not import calibrated data, upstream notes, or contested physical premises. The result is clean for the explicitly bounded abstract-Grassmann scope, not for the out-of-scope physical identification claims."
     },
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {
@@ -241487,13 +241575,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -241514,7 +241602,7 @@
       },
       "runner_path": "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py",
       "title": "Physical Staggered Axis-Symmetry on the hw=1 Triplet is the Full S_3",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": null
     },
     "staggered_backreaction_capture_closure_note": {
@@ -243222,13 +243310,13 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 11,
+      "direct_in_degree": 12,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 16.629,
+      "load_bearing_score": 18.836,
       "load_bearing_step": "Within the explicit two-candidate framing, bosonic per-site Fock dimension is infinite while Grassmann per-site Fock dimension is 2, so only the Grassmann candidate matches the retained Cl(3) faithful-irrep dim_C V = 2 readout, and its Berezin partition gives det(M).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -243413,7 +243501,7 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
-      "transitive_descendants": 279,
+      "transitive_descendants": 913,
       "verdict_rationale": "The cited authorities are retained-grade: one retained and one retained_bounded. The runner source performs concrete symbolic checks of Pauli carrier dimension, Grassmann nilpotency, determinant-by-permutation equality, finite bosonic truncation growth, and a bosonic-vs-Grassmann trace distinction; it does not merely print constants or import an external comparator. The theorem is clean only in its narrow abstract two-candidate scope, not as a closure of the physical staggered-Dirac substep."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
@@ -246773,13 +246861,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 10.291,
+      "load_bearing_score": 10.793,
       "load_bearing_step": "Equation (16) and (18): det(M)=\u220f_{i=1}^{n/2}(m\u00b2+\u03c3_i\u00b2)>0 after the det(\u03b3\u2085)=(-1)^{n/2} sign cancels the sign in det(\u03b3\u2085M).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -246800,7 +246888,7 @@
       },
       "runner_path": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py",
       "title": "Staggered-Only det(M_KS + m\u00b7I) > 0 \u2014 Sub-Theorem Note (Case A standalone)",
-      "transitive_descendants": 885,
+      "transitive_descendants": 886,
       "verdict_rationale": "The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, \u03b3\u2085-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument."
     },
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": {
@@ -296507,9 +296595,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2343,
+    "preserved_existing": 2344,
     "re_audit_required": 0,
-    "row_count": 2387,
+    "row_count": 2388,
     "seeded_new": 0
   }
 }

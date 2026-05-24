@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_zero_import_chain.py
-runner_sha256: 6cdb72fa1b2d9d88479ed106603a786b113d345c6e820ddc5fdd184d1fc1765e
+runner_sha256: 21edd61bef97f369083bf205ad7e0bef82035c1b0c10b7761c8969835c6f73bc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.14
+elapsed_sec: 4.69
 status: ok
 ----- stdout -----
 ==============================================================================
-DEFINITIVE ZERO-IMPORT y_t DERIVATION
-Every ingredient traces to Cl(3) on Z^3.  No SM imports.
+BOUNDED y_t / alpha_s CHAIN DIAGNOSTIC
+v-scale chain plus explicit standard-infrastructure v -> M_Z bridge.
 ==============================================================================
 
 ==============================================================================
@@ -224,12 +224,12 @@ PART 5: COMPLETE IMPORT AUDIT TABLE
     DERIVED        = algebraic/analytic/CW from axiom + computed
     INFRASTRUCTURE = standard threshold matching (v -> M_Z only)
 
-  NOTHING says IMPORTED or BOUNDED.  Every v-scale quantity is DERIVED.
-  The INFRASTRUCTURE items affect only the v -> M_Z cross-check,
-  not the core prediction.
+  The v-scale quantities are carried as derived inside this runner.
+  The INFRASTRUCTURE items affect only the bounded v -> M_Z bridge,
+  and are explicit rather than hidden imports.
 
-  [PASS] Zero SM imports in derivation chain
-         All ingredients trace to Cl(3) on Z^3
+  [PASS] No hidden SM imports in v-scale chain; M_Z bridge infrastructure is explicit
+         v -> M_Z thresholds are registered as INFRASTRUCTURE
 
 ==============================================================================
 PART 6: FINAL SUMMARY
@@ -260,7 +260,7 @@ PART 6: FINAL SUMMARY
 
 ==============================================================================
   Total PASS: 14   Total FAIL: 0
-  Elapsed: 11.6s
+  Elapsed: 4.1s
 ==============================================================================
 
 ----- stderr -----

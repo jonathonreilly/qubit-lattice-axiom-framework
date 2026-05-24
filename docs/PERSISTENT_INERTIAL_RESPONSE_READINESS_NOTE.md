@@ -1,16 +1,21 @@
 # Persistent Inertial-Response Readiness Note
 
-**Date:** 2026-04-04 (status line rephrased + claim narrowed 2026-04-28 per audit-lane verdict)
-**Status:** support / bounded readiness audit pointing to other notes; multiple cited authorities are unaudited / conditional / failed, so this readiness summary cannot itself be tier-ratified. No persistent-mass theorem is asserted by this note.
+**Date:** 2026-04-04 (status line rephrased + claim narrowed 2026-04-28 per audit-lane verdict; further narrowed 2026-05-24 per audit `or-keep-as-support` repair target to a non-derivational support/meta index only).
+**Status:** non-derivational support / meta index only. This note is a cross-note pointer summary over the cited surrogate, relaunch, localization, threshold, backreaction, and multistage controls; it is not a theorem-grade closure, not a registered-runner readiness frontier, and not a tier-ratifiable readiness ranking. No persistent-mass theorem is asserted; no readiness theorem is asserted; no frontier ranking is asserted as a closure. The note's role is purely to index the cited authorities and record where they sit in this lane.
 
-## Purpose
+## Purpose (support/meta index only)
 
-This note answers a narrow question:
+This note is a non-derivational support/meta index. It collects pointers
+to the cited surrogate, relaunch, localization, threshold, backreaction,
+and multistage controls so that a downstream reader can find them in
+one place. It does not answer any closure question and does not assert
+any readiness theorem.
 
-- is the current ordered-lattice codebase ready for a real persistent or
-  quasi-persistent inertial-response experiment?
-
-The honest answer is: **not yet**.
+The pointer-level observation that motivates the index is that the
+listed authorities do not, on their own faces, present a persistent or
+quasi-persistent inertial-response object on the retained ordered-lattice
+family; this observation is descriptive, not derivational, and is owned
+by the cited authorities themselves rather than by this index.
 
 ## What is already available
 
@@ -86,21 +91,31 @@ The nearest reusable pieces are:
     every scanned `topN` remains stable, so shrinking support is not the lever
     that breaks two-stage sourced-response stability there
 
-## Minimal blocker
+## Pointer-level open list (descriptive, not a closure)
 
-What is still missing is a reusable object on the **retained ordered-lattice
-family** that satisfies all three of these at once:
+For reader orientation only, the cited authorities individually describe
+test-particle-regime controls (amplitude-level invariance, packet
+re-identification, weak-field additivity, surrogate-source diagnostics,
+support/threshold sweeps, and so on). None of the cited authorities, on
+its own face, currently presents a single retained object on the
+ordered-lattice family that simultaneously:
 
-1. it remains localized enough to be treated as a persistent or quasi-persistent pattern
-2. it can source a field with a well-defined strength parameter
-3. it has an inertial response that can be measured separately from ordinary
+1. remains localized enough to be treated as a persistent or quasi-persistent pattern
+2. sources a field with a well-defined strength parameter
+3. has an inertial response that can be measured separately from ordinary
    test-particle steering
 
-The current retained ordered-lattice harnesses only close the test-particle
-regime. They do not yet produce a localized pattern whose own persistence and
-response can both be measured on the same family.
+This is an index-level reading of the cited authorities, not a theorem
+or closure: the absence of a single such object inside the indexed set
+is owned at the level of the cited authority statuses, not at this
+note's level.
 
-## Safe read
+## Per-authority pointer summary (descriptive, not a closure)
+
+The bulleted summary below is reader-orientation-only commentary on the
+cited authorities' own stated scopes; it is not a re-derivation, not a
+readiness frontier, and not a tier-promotable ranking. Each bullet only
+restates what the cited authority itself records:
 
 The current Newton-selection lane is now strong enough to say:
 
@@ -204,41 +219,35 @@ The constrained 3D annular / hollow / tapered sweep sharpens it one more time:
 - so that family now looks closed as a broad-source control lane rather than a
   hidden sharp-localization lane
 
-The localization frontier now looks like this:
+The cited authorities individually record, as their own stated scopes:
 
-- there is no single sharp collapse threshold in the retained 2D family
-- on the retained 3D `h = 0.5` family, broad `topN` still owns the admissible
-  frontier even after compact-floor and annular/hollow sweeps
-- on the retained 3D `h = 0.25` family, the final constrained replay keeps the
-  same conclusion under explicit support/capture floors: broad `topN 196`
-  remains the best admissible row
-- the new localized source-response sweep adds a narrower comparison: smaller
-  source objects can remain admissible, but they still do not beat the broad
-  `topN 196` frontier on the retained `h = 0.25` family
-- very compact sources can stay extremely self-similar while becoming weak
-- broader sources can carry much stronger response while remaining stable
-- so the open question is no longer “is there a hidden 3D `h = 0.5` winner?”
-- the localization lane is now frozen as a bounded broad-source control result,
-  not an open hidden-winner search
+- on the retained 2D family, no sharp support-collapse threshold appears
+  across the scanned `topN` range (per the cited 2D threshold authority)
+- on the retained 3D `h = 0.5` family, the cited compact-floor and
+  annular/hollow sweep authorities individually report that no admissible
+  non-degenerate family beats the broad `topN` control on those cards
+- on the retained 3D `h = 0.25` family, the cited constrained-localization
+  authority individually reports that the broad `topN 196` control is
+  not beaten under its support/capture floors
+- the cited localized source-response sweep authority individually reports
+  that smaller source objects can remain admissible without beating the
+  broad `topN 196` control on its retained card
+- the cited surrogate authorities individually note the breadth/strength
+  trade for compact versus broad sources
 
-## Best next experiment
+This is a per-authority pointer summary; it does not assert a
+cross-authority frontier theorem and does not assert any closure of the
+localization lane at this note's level.
 
-The smallest viable next move is:
+## Pointer to follow-on work (descriptive only, no priority ranking)
 
-- do **not** keep treating the retained 2D support threshold as the next
-  lever; the frozen sweep shows that family has no sharp support cutoff in the
-  scanned range
-- do **not** keep sweeping the retained 3D `h = 0.5` family for compact or
-  annular winners; the new bounded negatives close that branch
-- do **not** reopen the retained 3D `h = 0.25` lane without a genuinely new
-  object family or mechanism; the constrained replay already closes the last
-  cheap localization shot
-- do **not** reopen the smaller-source comparison unless a new family is
-  introduced; the latest sweep already shows that smaller sources stay
-  admissible without beating the broad control
-- the next honest escalation is now a true persistent/quasi-persistent
-  inertial-response probe beyond the broad mesoscopic surrogate, or a bounded
-  negative explaining why the current codebase still cannot realize it
+For reader orientation, the cited authorities individually leave open the
+construction of a retained object that simultaneously satisfies the three
+test-particle-versus-pattern conditions enumerated above. This note does
+not prioritize, sequence, or rank any candidate follow-on experiment, and
+does not assert which (if any) of the cited lanes is the right next step;
+those judgments are owned at the level of the cited authorities, not
+this index.
 
 ## Audit boundary (2026-04-28)
 
@@ -258,19 +267,49 @@ Audit verdict (`audited_failed`, leaf criticality):
 
 The note has been re-tiered to `support` (cross-note readiness index).
 
+## Audit boundary (2026-05-24 — narrowed to support/meta index only)
+
+This revision addresses the generated-audit repair target:
+
+> missing_bridge_theorem: add a registered runner or explicit bridge
+> theorem that asserts the readiness/frontier criteria from audit-clean
+> dependency rows, or keep this note as a support/meta index only.
+
+This revision takes the second branch of the repair target. The status
+line, Purpose section, Minimal blocker → "Pointer-level open list"
+section, the Safe read → "Per-authority pointer summary" rephrasing, the
+former "localization frontier" / "Best next experiment" sections
+(replaced by a non-prioritizing "Pointer to follow-on work" section),
+and the "What this note does NOT claim" list are rescoped so that this
+note is explicitly a non-derivational support/meta index only. The note
+no longer asserts a readiness frontier, a structural ranking among the
+cited authorities, a "best next experiment" prioritization, or any
+theorem-grade closure on the persistent / quasi-persistent
+inertial-response lane. No registered runner is added, no bridge
+theorem is added, no new mathematics is introduced, and the audit
+dependency repair links section is unchanged.
+
 ## What this note does NOT claim
 
 - A persistent-mass theorem.
+- A readiness theorem of any tier.
+- A theorem-grade closure on the persistent / quasi-persistent
+  inertial-response lane.
+- A frontier ranking, ratifiable comparison, or priority ordering among
+  the cited authorities.
+- A registered-runner readiness criterion.
 - That any of the cited surrogate / relaunch / localization /
-  threshold notes are audit-clean.
-- That the readiness ranking is a tier-ratifiable claim independent
-  of the cited authorities.
+  threshold notes are audit-clean, individually or jointly.
+- That this note's status can be promoted on the back of the cited
+  authorities' statuses.
 
 ## What would close this lane (Path A future work)
 
-A tier-promotable readiness frontier would require auditing or
-repairing each cited authority first, then re-deriving the ranking
-from a registered runner that asserts the summary criteria.
+A tier-promotable readiness frontier would require, at minimum, both:
+(a) auditing or repairing each cited authority first, and (b) a
+registered runner or explicit bridge theorem that asserts the readiness
+criteria from audit-clean dependency rows. This note is not that runner
+and is not that bridge theorem; it remains a support/meta index only.
 
 ## Audit dependency repair links
 

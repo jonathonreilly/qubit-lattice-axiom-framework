@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 413 |
+| **retained_bounded** | 414 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
 | unaudited | 1259 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -50,8 +49,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 682 |
+| `audited_clean` | 683 |
 | `audited_conditional` | 108 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
@@ -122,7 +120,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -350,6 +347,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5036,6 +5034,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The scoped theorem is a standard compactness, pushforward-measure, Laplace-transform, and cumulant-identity argument on a finite Wilson source surface. It does not require the open staggered-Dirac or g_bare=1 gates unless the claim is broadened to the accepted physical beta=6 surface or quantitative gauge predictions. The first audit correctly identified the clean class-A closure but retained an over-broad bounded label from the source note's live-package dependency prose. The second audit supplies the applyable tuple: audited_clean positive_theorem at the finite Wilson spectral-measure-equivalence scope, with beta=6 identification left open outside scope. | The scoped statement is a finite-volume measure-theoretic and algebraic theorem: compactness, continuity, pushforward, Laplace transform, cumulants, and compact moment determinacy close without the open beta=6 spectral-measure identification. The source note's broader prose about quantitative gauge predictions and open gates supports bounded governance for downstream physical predictions, but it is not load-bearing for this finite Wilson equivalence theorem. Therefore the second audit correctly narrows the audited scope and reclassifies the finite-surface equivalence as a positive_theorem while preserving the beta=6 identification as outside scope. | The scoped finite Wilson spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the stated finite source surface, compactness, continuity, pushforward measure, and compact moment determinacy. The explicit beta=6 spectral-measure identification and the framework embedding through open gates remain outside this ratified scope, so they do not force the finite-surface equivalence itself to stay bounded. The runner supports witnesses and consistency checks but the proof-level closure is class A standard mathematics, not class C computation or a numerical match. | The scoped finite-volume spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the finite Wilson source surface, not a quantitative beta=6 physical prediction. The open staggered-Dirac and g_bare gates are only relevant to downstream physical-surface or beta=6 identification claims, which are explicitly excluded from the ratified scope. The runner's load-bearing checks are class A consistency and proof-structure checks, with no external comparator or tuned numerical input. | The finite-volume spectral-measure equivalence closes by standard compactness, pushforward measure, Laplace-transform, and cumulant identities, with no load-bearing use of the open staggered-Dirac or g_bare gates. The explicit beta=6 spectral-measure identification remains open, but that is not part of the ratified scope. The source note's broader live-package consequence may remain bounded if it is used for physical gauge predictions, but the scoped mathematical finite Wilson theorem is a positive theorem.
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The scoped theorem is a standard compactness, pushforward-measure, Laplace-transform, and cumulant-identity argument on a finite Wilson source surface. It does not require the open staggered-Dirac or g_bare=1 gates unless the claim is broadened to the accepted physical beta=6 surface or quantitative gauge predictions. The first audit correctly identified the clean class-A closure but retained an over-broad bounded label from the source note's live-package dependency prose. The second audit supplies the applyable tuple: audited_clean positive_theorem at the finite Wilson spectral-measure-equivalence scope, with beta=6 identification left open outside scope. | The scoped statement is a finite-volume measure-theoretic and algebraic theorem: compactness, continuity, pushforward, Laplace transform, cumulants, and compact moment determinacy close without the open beta=6 spectral-measure identification. The source note's broader prose about quantitative gauge predictions and open gates supports bounded governance for downstream physical predictions, but it is not load-bearing for this finite Wilson equivalence theorem. Therefore the second audit correctly narrows the audited scope and reclassifies the finite-surface equivalence as a positive_theorem while preserving the beta=6 identification as outside scope. | The scoped finite Wilson spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the stated finite source surface, compactness, continuity, pushforward measure, and compact moment determinacy. The explicit beta=6 spectral-measure identification and the framework embedding through open gates remain outside this ratified scope, so they do not force the finite-surface equivalence itself to stay bounded. The runner supports witnesses and consistency checks but the proof-level closure is class A standard mathematics, not class C computation or a numerical match. | The scoped finite-volume spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the finite Wilson source surface, not a quantitative beta=6 physical prediction. The open staggered-Dirac and g_bare gates are only relevant to downstream physical-surface or beta=6 identification claims, which are explicitly excluded from the ratified scope. The runner's load-bearing checks are class A consistency and proof-structure checks, with no external comparator or tuned numerical input. | The finite-volume spectral-measure equivalence closes by standard compactness, pushforward measure, Laplace-transform, and cumulant identities, with no load-bearing use of the open staggered-Dirac or g_bare gates. The explicit beta=6 spectral-measure identification remains open, but that is not part of the ratified scope. The source note's broader live-package consequence may remain bounded if it is used for physical gauge predictions, but the scoped mathematical finite Wilson theorem is a positive theorem.
 - **auditor confidence:** judicial_panel_majority
+
+### `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite periodic Wilson L^4 surfaces: assuming the retained implicit plaquette reduction law and retained onset coefficient, the packet derives the susceptibility transport equation, integral representation, and first nonlocal susceptibility coefficient while leaving the full chi_L(beta) profile open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T202901Z-971fd84f-gauge_vacuum_plaquette_s-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Differentiating the retained implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).  _(class `A`)_
+- **chain closes:** True — The scoped theorem follows by algebraic differentiation and integration of retained inputs plus the susceptibility definitions. The explicit closed form for chi_L(beta) and beta=6 closure are explicitly outside the audited claim scope.
+- **rationale:** The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem.
+- **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`
 

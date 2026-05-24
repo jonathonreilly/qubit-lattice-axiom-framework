@@ -108963,24 +108963,46 @@
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The scoped theorem is a standard compactness, pushforward-measure, Laplace-transform, and cumulant-identity argument on a finite Wilson source surface. It does not require the open staggered-Dirac or g_bare=1 gates unless the claim is broadened to the accepted physical beta=6 surface or quantitative gauge predictions. The first audit correctly identified the clean class-A closure but retained an over-broad bounded label from the source note's live-package dependency prose. The second audit supplies the applyable tuple: audited_clean positive_theorem at the finite Wilson spectral-measure-equivalence scope, with beta=6 identification left open outside scope. | The scoped statement is a finite-volume measure-theoretic and algebraic theorem: compactness, continuity, pushforward, Laplace transform, cumulants, and compact moment determinacy close without the open beta=6 spectral-measure identification. The source note's broader prose about quantitative gauge predictions and open gates supports bounded governance for downstream physical predictions, but it is not load-bearing for this finite Wilson equivalence theorem. Therefore the second audit correctly narrows the audited scope and reclassifies the finite-surface equivalence as a positive_theorem while preserving the beta=6 identification as outside scope. | The scoped finite Wilson spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the stated finite source surface, compactness, continuity, pushforward measure, and compact moment determinacy. The explicit beta=6 spectral-measure identification and the framework embedding through open gates remain outside this ratified scope, so they do not force the finite-surface equivalence itself to stay bounded. The runner supports witnesses and consistency checks but the proof-level closure is class A standard mathematics, not class C computation or a numerical match. | The scoped finite-volume spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the finite Wilson source surface, not a quantitative beta=6 physical prediction. The open staggered-Dirac and g_bare gates are only relevant to downstream physical-surface or beta=6 identification claims, which are explicitly excluded from the ratified scope. The runner's load-bearing checks are class A consistency and proof-structure checks, with no external comparator or tuned numerical input. | The finite-volume spectral-measure equivalence closes by standard compactness, pushforward measure, Laplace-transform, and cumulant identities, with no load-bearing use of the open staggered-Dirac or g_bare gates. The explicit beta=6 spectral-measure identification remains open, but that is not part of the ratified scope. The source note's broader live-package consequence may remain bounded if it is used for physical gauge predictions, but the scoped mathematical finite Wilson theorem is a positive theorem."
     },
     "gauge_vacuum_plaquette_susceptibility_flow_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-24T20:29:59.903207+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Exact small-beta first nonlocal Wilson plaquette onset coefficient on the accepted 3 spatial + 1 derived-time surface, excluding nonperturbative beta=6 plaquette closure.",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "Exact finite-volume theorem: on every finite periodic SU(3) Wilson L^4 evaluation surface, the one-plaquette inverse defines a unique implicit beta_eff,L(beta), with analytic and strictly increasing behavior; physical beta=6 characterization and canonical plaquette support are excluded."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "positive_theorem",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+        ],
+        "load_bearing_score": 12.497,
+        "runner_hash": "47da743bce4ae95270725444de5329e9b1398d9998221dbc015e314e522a56dd",
+        "transitive_descendants": 1021
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202901Z-971fd84f-gauge_vacuum_plaquette_s-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped theorem follows by algebraic differentiation and integration of retained inputs plus the susceptibility definitions. The explicit closed form for chi_L(beta) and beta=6 closure are explicitly outside the audited claim scope.",
       "claim_id": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
-      "claim_scope": "Given the retained finite implicit reduction law and retained onset coefficient, the finite Wilson reduction map satisfies the susceptibility transport equation and integral representation, with first nonlocal susceptibility correction 5 beta^4/472392 + O(beta^5).",
+      "claim_scope": "Finite periodic Wilson L^4 surfaces: assuming the retained implicit plaquette reduction law and retained onset coefficient, the packet derives the susceptibility transport equation, integral representation, and first nonlocal susceptibility coefficient while leaving the full chi_L(beta) profile open.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-24T20:28:34.439461+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-24T20:29:59.903207+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -108995,8 +109017,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-24T20:29:59.903207+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202901Z-971fd84f-gauge_vacuum_plaquette_s-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite periodic Wilson L^4 surfaces: assuming the retained implicit plaquette reduction law and retained onset coefficient, the packet derives the susceptibility transport equation, integral representation, and first nonlocal susceptibility coefficient while leaving the full chi_L(beta) profile open.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -109004,22 +109037,22 @@
         "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 12.497,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Differentiating the retained implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "09452480f5e2c0b41693393aa18146692e09a46b1ebc790ea1a1742579e543f0",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if upstream retained statuses change; the canonical plaquette inverse computation is support-only, not part of the theorem closure.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -109184,18 +109217,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 5,
+        "B": 2,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py",
       "title": "Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet",
       "transitive_descendants": 1021,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem."
     },
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": {
       "audit_date": "2026-05-24T17:19:19.307727+00:00",

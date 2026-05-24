@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 414 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1258 |
+| unaudited | 1257 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -34,7 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
-| `decoration_under_graph_first_su3_integration_note` | 4 |
+| `decoration_under_graph_first_su3_integration_note` | 5 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
@@ -51,16 +51,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 684 |
 | `audited_conditional` | 108 |
-| `audited_decoration` | 31 |
+| `audited_decoration` | 32 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1484 |
+| `unaudited` | 1483 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1019 |
-| `decoration` | 32 |
+| `bounded_theorem` | 1018 |
+| `decoration` | 33 |
 | `meta` | 230 |
 | `no_go` | 243 |
 | `open_gate` | 112 |
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `cpt_exact_note` | positive_theorem | critical | 888 | 29.80 | `audited_clean` | **retained** |
 | 20 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 217 | 29.77 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 185 | 29.04 | `unaudited` | unaudited |
-| 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 968 | 28.42 | `unaudited` | unaudited |
+| 22 | `left_handed_charge_matching_note` | decoration | critical | 968 | 28.42 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 23 | `minimal_axioms` | meta | critical | 953 | 28.40 | `unaudited` | meta |
 | 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 598 | 27.73 | `unaudited` | unaudited |
 | 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 584 | 27.69 | `unaudited` | unaudited |
@@ -930,6 +930,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
+| `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `multisite_pauli_group_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -7211,6 +7212,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the retained rows only, the purity complement fits: 1 - pur_cl ~= 1.0467 * N^(-0.222), R^2 = 0.9683.  _(class `C`)_
 - **chain closes:** True — The cited dependency supplies the retained weak-field ordered-lattice pocket, and the runner independently recomputes the N-sweep, retention predicates, and power-law fit. The completed runner output matches the note's canonical rows and retained-row fit.
 - **rationale:** The claim is bounded to the tested weak-field lattice pocket and does not assert an asymptotic or universal lattice theorem. The runner does not hard-code the exponent or fit; it computes the observables, applies the stated retention criteria, and fits the retained rows, reproducing 1.0467 * N^(-0.222) with R^2 = 0.9683. Residual risk is model-level and finite-window only, which is already part of the scoped bounded claim.
+- **auditor confidence:** high
+
+### `left_handed_charge_matching_note`
+
+- **Note:** [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Scale-free eigenvalue ratio α : β = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_graph_first_su3_integration_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T203338Z-005ca289-left_handed_charge_match-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Tracelessness on the LH-doublet multiplicities gives 6α + 2β = 0, hence β = -3α and α : β = 1 : (-3).  _(class `A`)_
+- **chain closes:** True — The retained graph-first SU(3) integration authority supplies the selected-axis weak-fiber/base decomposition and the 6 and 2 block multiplicities. The stated ratio then follows by the displayed tracelessness equation, while the +1/3,-1 normalization and SM-Y labeling are explicitly outside the load-bearing claim.
+- **rationale:** The audited load-bearing content is a class-A algebraic corollary of the graph-first selected-axis commutant decomposition: once the 6-state and 2-state blocks are supplied, tracelessness uniquely fixes the scale-free ratio. The runner substantively verifies the graph-first decomposition and related finite-dimensional algebra, with no external comparator checks. The note does not close a new physical identification beyond the upstream graph-first SU(3) parent and explicitly demotes the absolute hypercharge-like pattern to a convention-fixed, non-load-bearing corollary.
+- **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
 
 ### `lensing_adjoint_kernel_reduced_model_note`

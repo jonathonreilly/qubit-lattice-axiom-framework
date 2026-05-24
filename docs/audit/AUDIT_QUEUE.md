@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1258
-**Ready (all deps already at retained-grade or metadata tiers):** 10
+**Total pending:** 1257
+**Ready (all deps already at retained-grade or metadata tiers):** 11
 
 By criticality:
-- `critical`: 268
+- `critical`: 267
 - `high`: 344
 - `medium`: 328
 - `leaf`: 318
@@ -15,12 +15,12 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `left_handed_charge_matching_note` | bounded_theorem | unaudited | critical | 968 | 28.42 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_graph_first_su3_integration.py` |
-| 2 | `rconn_derived_note` | bounded_theorem | unaudited | critical | 922 | 16.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_color_projection_mc.py` |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | unaudited | critical | 917 | 47.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_generation_observable_theorem.py` |
-| 4 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | unaudited | critical | 894 | 26.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_reflection_positivity_check.py` |
-| 5 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | unaudited | critical | 881 | 10.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py` |
-| 6 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 683 | 18.92 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py` |
+| 1 | `rconn_derived_note` | bounded_theorem | unaudited | critical | 922 | 16.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_color_projection_mc.py` |
+| 2 | `three_generation_observable_theorem_note` | bounded_theorem | unaudited | critical | 917 | 47.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_generation_observable_theorem.py` |
+| 3 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | unaudited | critical | 894 | 26.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_reflection_positivity_check.py` |
+| 4 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | unaudited | critical | 881 | 10.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py` |
+| 5 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 683 | 18.92 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py` |
+| 6 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | positive_theorem | unaudited | critical | 614 | 11.26 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_lhcm_matter_assignment.py` |
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | unaudited | critical | 1020 | 31.50 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_plaquette_self_consistency.py` |
 | 8 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | unaudited | critical | 971 | 13.93 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_qcd_low_energy_running_bridge.py` |
 | 9 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 970 | 38.42 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_zero_import_chain.py` |
@@ -61,10 +61,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 44 | `three_generation_structure_note` | bounded_theorem | unaudited | critical | 681 | 30.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_generation_fermi_point.py` |
 | 45 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 681 | 12.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
 | 46 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 644 | 25.83 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
-| 47 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | positive_theorem | unaudited | critical | 614 | 11.26 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_lhcm_matter_assignment.py` |
-| 48 | `hypercharge_identification_note` | bounded_theorem | unaudited | critical | 612 | 18.26 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification.py` |
-| 49 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 607 | 13.75 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
-| 50 | `yt_boundary_theorem` | open_gate | unaudited | critical | 605 | 15.74 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_boundary_consistency.py` |
+| 47 | `hypercharge_identification_note` | bounded_theorem | unaudited | critical | 612 | 18.26 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification.py` |
+| 48 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 607 | 13.75 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
+| 49 | `yt_boundary_theorem` | open_gate | unaudited | critical | 605 | 15.74 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_boundary_consistency.py` |
+| 50 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 598 | 27.73 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
 
 ## Citation cycle break targets
 

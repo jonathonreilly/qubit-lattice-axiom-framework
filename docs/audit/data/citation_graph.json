@@ -78867,7 +78867,7 @@
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fffc235dabc9aba48aa580f719f60cd20832166313829470e24a3703885949bf",
+      "note_hash": "6d325d35f4da173d9af2e8eaf23c465f5c17adeaac400bd40af6874b11ae7ca7",
       "path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem Note"

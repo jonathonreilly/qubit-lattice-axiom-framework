@@ -53775,9 +53775,9 @@
     },
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "g_bare_rigidity_theorem_note",
         "g_bare_derivation_note",
@@ -53787,7 +53787,7 @@
         "plaquette_self_consistency_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cd51da92405d58ce5b0f2bfda05e9b388fde66d828b7183062507fcb8d666ebe",
+      "note_hash": "17e85d2bffcab27e59583be67ffa07b10a077129970078e4cf261832e9da88bb",
       "path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
       "title": "G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain"
@@ -84632,22 +84632,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 554,
+      "bounded_theorem": 555,
       "decoration": 1,
       "meta": 189,
       "no_go": 69,
-      "none": 1471,
+      "none": 1470,
       "open_gate": 45,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 981,
+      "bounded_theorem": 982,
       "decoration": 1,
       "meta": 189,
       "no_go": 172,
       "none": 435,
       "open_gate": 123,
-      "positive_theorem": 601
+      "positive_theorem": 600
     },
     "edge_count": 9701,
     "leaf_count": 767,

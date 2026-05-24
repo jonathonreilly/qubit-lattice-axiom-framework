@@ -8,23 +8,24 @@ Companion runner for
 
 Goal
 ----
-Verify the full Cl(3) -> End(V) -> su(3) -> Wilson action rigidity chain
+Verify the bounded Cl(3) -> End(V) -> su(3) -> Wilson action rigidity chain
 for three concrete claims:
 
   Claim 1: Cl(3) -> End(V) canonicity (unique up to inner automorphism
            of End(V) + explicit finite outer discrete group).
   Claim 2: Induced Hilbert-Schmidt trace form equals Cl(3) pseudoscalar-
            adjoint form up to a single positive scalar, Ad-invariantly.
-  Claim 3: Given canonical orthonormal generators Tr(T_a T_b) = delta/2,
-           the Wilson plaquette kinetic matching forces
+  Claim 3: Given canonical orthonormal generators Tr(T_a T_b) = delta/2
+           and the admitted Wilson plaquette action form, kinetic matching forces
                beta = 2 N_c / g^2.
-           The canonical Cl(3) basis has g = 1, hence beta = 6.
+           The canonical Cl(3) basis has g = 1, hence beta = 6 within that
+           bounded action-form scope.
 
 Honest scoping
 --------------
-- Claims 1 and 2 are exact structural theorems. They require no
+- Claims 1 and 2 are exact structural-support checks. They require no
   β or g input.
-- Claim 3 is exact given the Wilson plaquette action form. It does
+- Claim 3 is bounded support given the Wilson plaquette action form. It does
   not derive the Wilson action itself.
 
 Self-contained: numpy only.
@@ -187,7 +188,7 @@ def section_A_cl3_canonicity():
 
 
 # ---------------------------------------------------------------------------
-# Graph-first selector + hw=1 triplet (retained retained surface)
+# Graph-first selector + hw=1 triplet (upstream input surface)
 # ---------------------------------------------------------------------------
 
 def graph_selector_check():
@@ -219,7 +220,7 @@ def graph_selector_check():
 def build_canonical_su3_triplet():
     """Reuse the existing canonical construction from the rigidity theorem.
 
-    Build canonical SU(3) generators on the retained triplet block (C^3)
+    Build canonical SU(3) generators on the upstream triplet block (C^3)
     as the standard Gell-Mann matrices / 2, which have
         Tr(T_a T_b) = delta_{ab} / 2.
     """
@@ -473,10 +474,10 @@ def section_C_wilson_coefficient(T_triplet):
     # C7. Bounded: alternative-action sensitivity check
     print("\n  [BOUNDED] Alternative action forms (Symanzik, improved, etc.)")
     print("  would change the leading a^4 coefficient by a known factor.")
-    print("  The canonical Wilson action is retained as the standard; alternative")
-    print("  actions are outside the scope of this theorem.")
-    check("Wilson action form is retained (not derived from Cl(3))",
-          True, "retained lattice-QFT convention",
+    print("  The canonical Wilson action is used here as an admitted")
+    print("  action-form input; alternatives are outside the scope of this runner.")
+    check("Wilson action form is admitted here (not derived from Cl(3))",
+          True, "admitted lattice-QFT action-form input",
           kind="BOUNDED")
 
 
@@ -499,7 +500,7 @@ def section_D_end_to_end(T_triplet):
     # Step 2: Graph-first selector + hw=1 triplet + M_3(C) algebra
     # -> canonical su(3) on triplet block
     check("Step 2: Graph selector + triplet + C_3 -> su(3) on triplet",
-          True, "retained theorems on main")
+          True, "upstream theorem rows on main")
 
     # Step 3: Killing-form rigidity -> canonical Tr(T_a T_b) = delta_ab/2
     N_c = 3
@@ -524,11 +525,11 @@ def section_D_end_to_end(T_triplet):
 
     # Circularity audit
     print("\n  Circularity audit:")
-    print("  - Steps 1-3 use only Cl(3) axioms, graph retention, Lie-algebra rigidity.")
-    print("  - Step 4 is the existing retained rigidity theorem.")
+    print("  - Steps 1-3 use only Cl(3) axioms, graph-selector inputs, Lie-algebra rigidity.")
+    print("  - Step 4 uses the existing rigidity theorem row.")
     print("  - Step 5 uses canonical generator normalization from step 3; no β input.")
     print("  - Step 6 derives g = 1 from Claims 1 + 2 + step 4 rigidity, not as input.")
-    print("  - Final beta = 6 is derived, not asserted.")
+    print("  - Final beta = 6 is derived inside the admitted Wilson-action scope, not asserted.")
     check("No circular usage of beta = 6 or g = 1 as input", True,
           "all derivation steps are forward-only")
 
@@ -539,8 +540,8 @@ def section_D_end_to_end(T_triplet):
 
 def main() -> int:
     print("=" * 78)
-    print("G_BARE STRUCTURAL NORMALIZATION THEOREM")
-    print("Cl(3) -> End(V) -> su(3) -> Wilson action rigidity chain")
+    print("G_BARE STRUCTURAL NORMALIZATION BOUNDED SUPPORT")
+    print("Cl(3) -> End(V) -> su(3) -> admitted Wilson action rigidity chain")
     print("=" * 78)
 
     # Section A: Claim 1 (Cl(3) -> End(V) canonicity)
@@ -571,15 +572,15 @@ def main() -> int:
     print()
     if FAIL == 0:
         print("  All exact checks passed.")
-        print("  Claims 1, 2 retained as exact structural theorems.")
-        print("  Claim 3 retained conditional on Wilson plaquette action form.")
+        print("  Claims 1, 2 pass as exact structural-support checks.")
+        print("  Claim 3 passes only within the admitted Wilson plaquette action form.")
         print()
-        print("  Conclusion: g_bare = 1 <=> beta = 6 is a structural normalization")
-        print("  theorem, not a dynamical fixation. The residual freedom is the")
-        print("  choice of Wilson action form itself, not a hidden continuous")
-        print("  coupling parameter.")
+        print("  Conclusion: g_bare = 1 <=> beta = 6 is bounded structural")
+        print("  normalization support, not a dynamical fixation. The residual")
+        print("  open premise is the choice of Wilson action form itself, not a")
+        print("  hidden continuous coupling parameter.")
     else:
-        print(f"  {FAIL} exact check(s) failed. Investigate before claiming closure.")
+        print(f"  {FAIL} exact check(s) failed. Investigate before claiming support.")
 
     return 0 if FAIL == 0 else 1
 

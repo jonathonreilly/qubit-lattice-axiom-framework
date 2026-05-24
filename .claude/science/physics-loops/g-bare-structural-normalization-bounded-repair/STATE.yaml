@@ -1,0 +1,55 @@
+loop_slug: g-bare-structural-normalization-bounded-repair
+date: 2026-05-24
+branch: physics-loop/g-bare-structural-normalization-bounded-repair-block12-20260524
+base: origin/main
+base_commit: a54fddfe4
+mode: science-fix
+target_claim_id: g_bare_structural_normalization_theorem_note_2026-04-18
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This branch hardens an admitted-Wilson-action-form normalization support row; it does not assign an effective retained verdict."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms_introduced: false
+files_touched:
+  - docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md
+  - scripts/frontier_g_bare_structural_normalization.py
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/g-bare-structural-normalization-bounded-repair/
+retired_imports:
+  - stale audit-ratification proposal / conditional-closure source language
+  - audit-ratified convention wording for the Wilson action-form premise
+  - runner summary that stated audit-ratified closure branch-locally
+current_queue_result:
+  rank: 15
+  ready: false
+  ready_reason: "Blocked until upstream g_bare_rigidity, plaquette, and gauge dependencies reach retained-grade audit on main."
+  descendants: 910
+  claim_type: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+verification:
+  runner: "PASS: EXACT 60/0, BOUNDED 1/0, TOTAL 61/0"
+  pipeline: "PASS: docs/audit/scripts/run_pipeline.sh completed after rebase; pending queue total 1292, ready 51"
+  strict_lint: "PASS: audit_lint --strict returned OK with pre-existing warning/notices only"
+  diff_check: "PASS"
+  controlled_vocabulary: "PASS"
+  vocab_lint: "PASS"
+review_loop:
+  disposition: local_review_pass_after_fixes
+  notes: "Local review-loop ran without subagents; narrowed stale audit-ratified/proved/closure wording and confirmed no audit verdicts were applied."
+pr:
+  url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1800
+  status: open
+next_exact_action: "Reviewer/auditor review of PR #1800; do not apply audit verdicts from this branch."
+stop_condition: "Review PR opened; independent audit remains external."

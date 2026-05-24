@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 404 |
+| **retained_bounded** | 405 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1268 |
+| unaudited | 1267 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 672 |
+| `audited_clean` | 673 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1494 |
+| `unaudited` | 1493 |
 
 | claim_type | count |
 |---|---:|
@@ -237,6 +237,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `dirac_v4_convergence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3048,6 +3049,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The measured scan shows a partial trade-off only: sigma=1.25 gives the best N-growth sign count (4/5 TOWARD), but still fails monotonicity, and none of the Gaussian widths repair the mixed-sign distance-law offsets.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the stated periodic 3+1D Dirac walk, Gaussian or point initial state, mass field, and signed sideband readouts, and the stdout matches the note's tabulated signs and values. Within the explicitly bounded parameter grid, the conclusion that tested Gaussian smoothing does not repair both stated failure modes follows.
 - **rationale:** The claim is narrowly bounded to a completed numerical scan, not a general no-go theorem for all smooth sources. The runner does not merely print constants: it builds gamma-projector shifts, evolves field and free states, computes density differences, and reports the sign/monotonicity summaries used by the note. No unlisted authority is needed for the bounded comparison as long as the claim boundary stays limited to these widths, offsets, layers, and readout definition.
+- **auditor confidence:** high
+
+### `dirac_v4_convergence_note`
+
+- **Note:** [`DIRAC_V4_CONVERGENCE_NOTE.md`](../../docs/DIRAC_V4_CONVERGENCE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the default cached invocation of scripts/frontier_dirac_walk_3plus1d_v4_convergence.py with mass0 = 0.300 and strength = 5e-4, including the n = 17..29 closure sweep, n = 29 N-sweep, and n = 29 offset sweep.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T175425Z-da65b64a-dirac_v4_convergence_not-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At default mass0 = 0.300 and strength = 5e-4, the larger-lattice Dirac walk keeps closure flat at 6/10 for n = 17..29 and fails both gravity-monotonicity and distance-law tests on periodic and open boundaries.  _(class `C`)_
+- **chain closes:** True — The runner source directly instantiates the 4-component Dirac walk, mass field, boundary choices, evolution, readout, closure card, monotonicity sweep, and distance-law sweep. Its computed stdout matches the source note's load-bearing default-mass tables.
+- **rationale:** The note's claim is bounded to a specific cached default-mass diagnostic, not to an asymptotic or all-parameter theorem. The included runner source performs numerical evolution and metric computation rather than printing hard-coded contested values or importing them from another note. The runner output supports the note's stated closure score, N-oscillation, and offset-law failure at the audited settings.
 - **auditor confidence:** high
 
 ### `dirac_weak_coupling_note`

@@ -25081,10 +25081,6 @@
       "to": "z2_hw1_mass_matrix_parametrization_note"
     },
     {
-      "from": "three_generation_observable_theorem_note",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
       "from": "three_generation_structure_note",
       "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
     },
@@ -78904,11 +78900,10 @@
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
         "s3_mass_matrix_no_go_note",
-        "z2_hw1_mass_matrix_parametrization_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "z2_hw1_mass_matrix_parametrization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9bd4be42acebf1b5aaf08ae5384dde213410e6259fac1dea0242065119c755c8",
+      "note_hash": "d65f6570d9980c90151e4b8b6c8e3c39c64500b6d41b7231028df035c84d66fd",
       "path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem Note"
@@ -84540,7 +84535,7 @@
       "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9698,
+    "edge_count": 9697,
     "leaf_count": 762,
     "node_count": 2495,
     "root_count": 821,

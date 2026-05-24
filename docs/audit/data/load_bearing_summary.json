@@ -97,8 +97,8 @@
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "criticality": "critical",
-      "load_bearing_score": 33.082,
-      "transitive_descendants": 1083
+      "load_bearing_score": 32.574,
+      "transitive_descendants": 1077
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
@@ -145,8 +145,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 28.615,
-      "transitive_descendants": 1108
+      "load_bearing_score": 28.607,
+      "transitive_descendants": 1102
     },
     {
       "claim_id": "left_handed_charge_matching_note",

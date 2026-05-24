@@ -1,0 +1,53 @@
+loop_slug: three-generation-observable-bounded-repair
+date: 2026-05-24
+branch: physics-loop/three-generation-observable-bounded-repair-block05-20260524
+base: origin/main
+mode: science-fix
+target_claim_id: three_generation_observable_theorem_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This branch only queues an unaudited bounded theorem for independent audit; it does not propose an effective retained verdict."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms_introduced: false
+files_touched:
+  - docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/load_bearing_summary.json
+  - .claude/science/physics-loops/three-generation-observable-bounded-repair/
+open_imports:
+  - physical species semantics
+  - substrate-level physical-lattice necessity
+  - flavor mass hierarchy
+  - CKM/PMNS closure
+  - Grassmann/full staggered-carrier realization
+retired_imports:
+  - stale source dependency from the narrowed C^3 algebra theorem to the open staggered-carrier realization gate
+current_queue_result:
+  rank: 1
+  ready: true
+  descendants: 917
+  dependency_claim_ids:
+    - site_phase_cube_shift_intertwiner_note
+    - s3_taste_cube_decomposition_note
+    - s3_mass_matrix_no_go_note
+    - z2_hw1_mass_matrix_parametrization_note
+verification:
+  runner: "python3 scripts/frontier_three_generation_observable_theorem.py -> PASS=47 FAIL=0"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh -> complete, ready_count=3"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK, no errors"
+  vocabulary: "render_controlled_vocabulary --check and vocab_lint --report-only -> clean"
+  diff_check: "git diff --check -> clean"
+pr:
+  url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1762
+  status: open
+next_exact_action: "Codex reviewer/audit loop reviews PR #1762 and audits the queued row if the source repair is accepted."
+stop_condition: "PR opened and verified clean against main, with independent audit left to the codex reviewer/audit loop."

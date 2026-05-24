@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1091 | 34.09 | `audited_clean` | **retained** |
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1044 | 33.53 | `audited_clean` | **retained** |
 | 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 172 | 33.44 | `unaudited` | unaudited |
-| 14 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1083 | 33.08 | `audited_renaming` | ~~audited_renaming~~ |
+| 14 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1077 | 32.57 | `audited_renaming` | ~~audited_renaming~~ |
 | 15 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 551 | 32.11 | `unaudited` | unaudited |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1020 | 31.50 | `unaudited` | unaudited |
 | 17 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 549 | 31.10 | `unaudited` | unaudited |
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `cpt_exact_note` | positive_theorem | critical | 888 | 29.80 | `audited_clean` | **retained** |
 | 20 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 217 | 29.77 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 185 | 29.04 | `unaudited` | unaudited |
-| 22 | `minimal_axioms` | meta | critical | 1108 | 28.61 | `unaudited` | meta |
+| 22 | `minimal_axioms` | meta | critical | 1102 | 28.61 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | bounded_theorem | critical | 968 | 28.42 | `unaudited` | unaudited |
 | 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 598 | 27.73 | `unaudited` | unaudited |
 | 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 584 | 27.69 | `unaudited` | unaudited |

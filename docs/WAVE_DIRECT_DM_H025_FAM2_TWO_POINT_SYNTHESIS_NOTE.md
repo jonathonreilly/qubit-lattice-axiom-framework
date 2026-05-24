@@ -104,6 +104,14 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   this_synthesis*, with the followup note citing this synthesis as
   the downstream consumer)
 - [wave_direct_dm_h025_fam2_seed1_control_note](WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)
-- [wave_direct_dm_h025_fam2_seed0_boundary_note](WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md)
+- `wave_direct_dm_h025_fam2_seed0_boundary_note`
+  (see-also; backticked to break length-2 cycle. Citation direction is
+  *seed0_boundary → this_synthesis*; the duplicate markdown-link form
+  was leftover from a prior cycle-break attempt — see backtick form at
+  line 69/94 above.)
 - [wave_direct_dm_h025_fam2_seed0_control_note](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
-- [wave_direct_dm_h025_fam2_seed1_followup_note](WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
+- `wave_direct_dm_h025_fam2_seed1_followup_note`
+  (see-also; backticked to break length-2 cycle. Citation direction is
+  *seed1_followup → this_synthesis*; the duplicate markdown-link form
+  was leftover from a prior cycle-break attempt — see backtick form at
+  line 71/100 above.)

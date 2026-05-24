@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 400 |
+| **retained_bounded** | 401 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1272 |
+| unaudited | 1271 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 668 |
+| `audited_clean` | 669 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1498 |
+| `unaudited` | 1497 |
 
 | claim_type | count |
 |---|---:|
@@ -173,6 +173,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `central_band_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_highn_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1875,6 +1876,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The dense central-band Born pocket survives at N = 80 and N = 100 for both LN + |y| and LN + |y| + collapse, with corrected |I3|/P at machine precision.  _(class `C`)_
 - **chain closes:** True — The primary runner calls helper code that constructs random 3D chokepoint DAGs, applies post-barrier central-band removal, propagates amplitudes exactly, and evaluates the corrected Sorkin metric with the -P(empty) term. No cited upstream authority is required beyond the provided computation, and the completed run supports the qualitative survival/PASS claim.
 - **rationale:** The runner source is substantive rather than a print-only or hard-coded expected-value check: it builds the graph, computes amplitudes for each slit subset, and forms |I3|/P directly. The completed runner output gives PASS for all four retained rows in the audited scope: N=80 and N=100 for LN+|y| and LN+|y|+collapse. The note's N=80 table values are stale relative to the supplied runner output, but the discrepancy does not change the load-bearing conclusion because all reported maxima remain far below the stated machine-precision gate of 1e-10. A second auditor should re-check whether the note should be updated to the current cached numbers and should note that only 3 seeds at N=80 and 1 seed at N=100 produced usable rows despite 4 attempted seeds.
+- **auditor confidence:** high
+
+### `central_band_collapse_note`
+
+- **Note:** [`CENTRAL_BAND_COLLAPSE_NOTE.md`](../../docs/CENTRAL_BAND_COLLAPSE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded matched-seed computational card for N = 25, 40, 60 central-band removal with p = 0.2 stochastic collapse, using the provided primary runner and helper sources.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T174804Z-5d888ef6-central_band_collapse_no-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The best supported joint row on this card is N = 60, LN + |y| + collapse, which keeps positive gravity and the lowest purity on the N = 60 rows.  _(class `C`)_
+- **chain closes:** True — The provided runner constructs the graphs, applies central-band pruning, computes deterministic purity/gravity and Monte Carlo collapse purity/gravity, and its cached stdout matches the note's reported rows. The conclusion is bounded to this finite runner configuration and does not claim asymptotic closure.
+- **rationale:** The primary runner and helpers do not simply print constants or import the contested numbers; they generate matched random DAG instances and compute the reported metrics from the implemented propagation, pruning, field, and collapse rules. The note's numerical rows match the cached successful runner output. The clean verdict is limited to the bounded computational claim at the stated seeds, graph parameters, and collapse settings, not to a general asymptotic gravity law.
 - **auditor confidence:** high
 
 ### `central_band_dense_joint_highn_note`

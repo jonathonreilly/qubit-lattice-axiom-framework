@@ -2,7 +2,7 @@
 """Continuum limit via k_eff = k*h coupling renormalization (Approach 2).
 
 This is the remaining open scheme from the dense continuum-limit plan after:
-  - Approach 1 (nearest-neighbor only): retained through h=0.25, runtime-blocked finer
+  - Approach 1 (nearest-neighbor only): bounded through h=0.25, runtime-blocked finer
   - Approach 3 (fan-out normalization): falsified
 
 The dense baseline `lattice_continuum_limit.py` keeps the phase coupling `k`
@@ -18,7 +18,7 @@ changing only the propagator:
 
     ea = exp(i * (k*h) * act) * w / L * h^2
 
-This keeps the comparison to the retained dense baseline as tight as possible.
+This keeps the comparison to the dense baseline as tight as possible.
 """
 
 from __future__ import annotations
@@ -128,6 +128,7 @@ def main():
         print(f"  {'-' * 97}")
 
         results = []
+        failed_spacings = []
         for sp in spacings:
             t0 = time.time()
             try:
@@ -145,6 +146,7 @@ def main():
                     flush=True,
                 )
             else:
+                failed_spacings.append(sp)
                 d = detector_diagnostics(sp)
                 print(
                     f"  {sp:6.3f}  {d['n_nodes']:8d}  {d['nodes_per_layer']:5d}  "
@@ -181,10 +183,18 @@ def main():
         print(f"  1-pur values:{['%.4f' % p for p in one_minus_purs]}")
         print(f"  d_TV values:{['%.4f' % d for d in dtvs]}")
 
+        if failed_spacings:
+            print(
+                "  Detector failure blocks continuum closure at: "
+                + ", ".join(f"h={sp:g}" for sp in failed_spacings)
+            )
+
         if len(results) >= 3:
             g_deltas = [abs(gravs[i + 1] - gravs[i]) for i in range(len(gravs) - 1)]
             print(f"  Gravity step deltas: {['%.4f' % d for d in g_deltas]}")
-            if g_deltas[-1] < g_deltas[0] * 0.5:
+            if failed_spacings:
+                print("    -> surviving-row gravity trend is not a continuum closure")
+            elif g_deltas[-1] < g_deltas[0] * 0.5:
                 print("    -> gravity appears to be CONVERGING")
             elif g_deltas[-1] > g_deltas[0] * 2:
                 print("    -> gravity appears to be DIVERGING")

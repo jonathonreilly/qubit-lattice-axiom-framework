@@ -23567,7 +23567,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "b64894c412fcaa3658205e63ed1025aba4d3736d9384c6a099205fcc3cdb9634",
+      "note_hash": "370d68a169f406e20ae152479523ecb9e28060907147467fca38742728bce990",
       "note_path": "docs/CENTRAL_BAND_DENSE_LARGEN_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -41272,11 +41272,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.585,
+      "load_bearing_score": 2.585,
       "load_bearing_step": "The binding evidence of this note is exactly the finite-h trend table on the cached size sweep h in {1.0, 0.5, 0.25, 0.125}, including the 2.7% weak-field deflection change between h=0.25 and h=0.125 and the F~M exponent table bracketing 1.000.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_no_go",
-      "max_descendant_status_rank": 100,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "b642993ba043e7b7c5328db7ab5ed2a571f6fbc5f1f690551785858f20e5f09d",
       "note_path": "docs/CONTINUUM_LIMIT_NOTE.md",
       "notes_for_re_audit_if_any": "Second auditor should re-check that the runner_check_breakdown count convention accepts these four numerical compute surfaces as C-class checks rather than requiring line-level PASS markers.",
@@ -152916,13 +152916,13 @@
       "deps": [
         "lattice_nn_high_precision_note"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": "The fan-out normalized kernel has per-edge scaling approximately 1/(L\u00b7sqrt(fan_out)) \u2248 1/(h\u00b7sqrt(1/h)) = 1/sqrt(h), so it diverges under refinement and the completed runner shows non-conserved detector probability and h=0.25 amplitude blowup.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -152969,7 +152969,7 @@
       },
       "runner_path": "scripts/lattice_fanout_continuum.py",
       "title": "Fan-Out Normalized Kernel Continuum Limit \u2014 FALSIFIED",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": "The chain closes for the negative claim actually made: the runner implements the stated kernel and returns the reported probability collapse/blowup behavior, including h=0.25 max amplitude about 2.4e11 and P_total about 4.6e23. The algebraic scaling argument is consistent with the implementation: fan_out grows like 1/h, so sqrt(fan_out) only cancels half of the 1/L ~ 1/h factor. The note over-describes the h=0.5 failure mechanism as likely zero division or overflow, while the runner only establishes a failed measurement row, but that is not load-bearing for the broader no-go because the h=0.25 blowup and probability nonconservation already close it. The cited NN note is retained and is only background for the remaining candidate pool, not a necessary premise for the fan-out falsification."
     },
     "lattice_field_strength_unification_note": {
@@ -153364,64 +153364,48 @@
       "verdict_rationale": "The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization."
     },
     "lattice_keff_continuum_note": {
-      "audit_date": "2026-05-23T20:14:16.134581+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "continuum_limit_note": "Finite-h cached h^2+T lattice trend table for h in {1.0, 0.5, 0.25, 0.125}, including transfer norms, TOWARD gravity rows, F~M exponents near 1, and 2.7% weak-field deflection change from h=0.25 to h=0.125; no audited h -> 0 convergence theorem."
-        },
-        "dep_claim_type": {
-          "continuum_limit_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "continuum_limit_note": "retained_bounded"
-        },
-        "deps": [
-          "continuum_limit_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "9a42641695997677945c85a6302adf41ed7a033c1f27c618bc55678b3bb8afae",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T201353Z-9f778d7c-lattice_keff_continuum_n-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The included runner genuinely modifies the propagation kernel to use k_eff = k\u00b7h, calls the shared lattice measurement stack, and produces the reported finite rows plus detector failure at h = 0.25. The note\u2019s stronger wording about exhaustion of the dense candidate pool is contextual, but the audited negative for this scheme closes on the packet evidence.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lattice_keff_continuum_note",
-      "claim_scope": "Audited the bounded negative claim that the dense k_eff = k\u00b7h refinement scheme fails on the provided finite sweep h \u2208 {2.0, 1.0, 0.5, 0.25} using the included runner and helper source.",
+      "claim_scope": null,
       "claim_type": "no_go",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-23T20:14:16.134581+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "continuum_limit_note"
+        "continuum_limit_note",
+        "lattice_nn_continuum_note",
+        "lattice_fanout_continuum_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_no_go",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/lattice_continuum_limit.py"
       ],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_no_go",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The remaining open dense continuum scheme k_eff = k\u00b7h gives finite rows at h = 2.0, 1.0, 0.5 but detector probability collapses by h = 0.25, so it does not produce a clean retained refinement lane.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "9a669d8f05cd99c92ace5d4ed4476006b32ea32b6cfbaad6455c6f83a5c21fd0",
+      "note_hash": "0cb871252ce3d7794865c0e37843f8bb2979918cd8c0546bc67eb4082fcd427e",
       "note_path": "docs/LATTICE_KEFF_CONTINUUM_NOTE.md",
-      "notes_for_re_audit_if_any": "A second auditor should re-check the unpruned h=0.25 P_free \u2248 7e-75 statement, since that replay source is described in the note but not included as a separate runner here; it is not needed for the finite-sweep negative because the pruned runner already establishes practical detector collapse.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -153497,21 +153481,71 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: claim_type=positive_theorem mismatches the actual claim content. Source note's Status line says 'candidate retained-grade NEGATIVE'; its Bottom line says the scheme is a 'practical failure'. The runner output (logs/runner-cache cached SHA 9a42641 elapsed 5.9s) confirms detector probability is 0.00e+00 at h=0.25 (replay reports ~7e-75 without 1e-30 prune) and the gravity sequence -1.6910 -> +0.1374 -> +0.5821 is not a stable convergent trend on the three surviving rows. Why this blocks: a positive_theorem audited_clean requires a positive theorem to close from cited inputs. No positive theorem is being asserted here; the substantive content is the negative finding that k_eff = k*h does not stabilize the dense kernel. Repair target: reclassify the ledger row as no_go (the scheme is falsified as a continuum-limit candidate) or as bounded_theorem with bounded-negative scope, then re-audit under the new claim_type with No-Go Discipline (N1-N8) applied to the named falsification scope. Alternatively, if a positive content is genuinely intended, rewrite the source note to state a positive theorem (e.g., 'finite-h gravity values for k_eff = k*h scheme: tabulated correctly by runner') and audit that narrower claim. Claim boundary until fixed: the finite-h tabulated runner output (gravity values -1.6910, +0.1374, +0.5821 at h=2.0, 1.0, 0.5 plus detector underflow at h=0.25) is a faithful record of the runner; the negative conclusion 'k_eff = k*h does not produce a clean refinement lane' is supported by the runner data on the displayed h-range only. No positive continuum-limit theorem is supported."
+        },
+        {
+          "archived_at": "2026-05-24T16:04:15.525027+00:00",
+          "archived_for_note_hash": "9a669d8f05cd99c92ace5d4ed4476006b32ea32b6cfbaad6455c6f83a5c21fd0",
+          "audit_date": "2026-05-23T20:14:16.134581+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "continuum_limit_note": "Finite-h cached h^2+T lattice trend table for h in {1.0, 0.5, 0.25, 0.125}, including transfer norms, TOWARD gravity rows, F~M exponents near 1, and 2.7% weak-field deflection change from h=0.25 to h=0.125; no audited h -> 0 convergence theorem."
+            },
+            "dep_claim_type": {
+              "continuum_limit_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "continuum_limit_note": "retained_bounded"
+            },
+            "deps": [
+              "continuum_limit_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "9a42641695997677945c85a6302adf41ed7a033c1f27c618bc55678b3bb8afae",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T201353Z-9f778d7c-lattice_keff_continuum_n-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The included runner genuinely modifies the propagation kernel to use k_eff = k\u00b7h, calls the shared lattice measurement stack, and produces the reported finite rows plus detector failure at h = 0.25. The note\u2019s stronger wording about exhaustion of the dense candidate pool is contextual, but the audited negative for this scheme closes on the packet evidence.",
+          "claim_scope": "Audited the bounded negative claim that the dense k_eff = k\u00b7h refinement scheme fails on the provided finite sweep h \u2208 {2.0, 1.0, 0.5, 0.25} using the included runner and helper source.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-23T20:14:16.134581+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The remaining open dense continuum scheme k_eff = k\u00b7h gives finite rows at h = 2.0, 1.0, 0.5 but detector probability collapses by h = 0.25, so it does not produce a clean retained refinement lane.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "A second auditor should re-check the unpruned h=0.25 P_free \u2248 7e-75 statement, since that replay source is described in the note but not included as a separate runner here; it is not needed for the finite-sweep negative because the pruned runner already establishes practical detector collapse.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "The source note\u2019s load-bearing negative is supported by a completed runner cache and by runner source that actually computes the lattice propagation rather than printing constants or importing the contested result. The cited upstream authority is retained_bounded and is used only as comparator/background for the continuum-limit measurement stack, not as an open premise needed to rescue the k_eff result. The runner stdout contains an over-optimistic printed line that gravity appears to be converging, but the note does not rely on that line; it correctly treats the detector collapse and unstable finite rows as a negative for a clean refinement lane."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
       "runner_path": "scripts/lattice_keff_continuum.py",
       "title": "k_eff = k\u00b7h Continuum Limit Note",
       "transitive_descendants": 0,
-      "verdict_rationale": "The source note\u2019s load-bearing negative is supported by a completed runner cache and by runner source that actually computes the lattice propagation rather than printing constants or importing the contested result. The cited upstream authority is retained_bounded and is used only as comparator/background for the continuum-limit measurement stack, not as an open premise needed to rescue the k_eff result. The runner stdout contains an over-optimistic printed line that gravity appears to be converging, but the note does not rely on that line; it correctly treats the detector collapse and unstable finite rows as a negative for a clean refinement lane."
+      "verdict_rationale": null
     },
     "lattice_kernel_transfer_norm_note": {
       "audit_date": "2026-05-03T19:32:05.252731+00:00",
@@ -153698,13 +153732,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.644,
+      "load_bearing_score": 12.2,
       "load_bearing_step": "The supplied raw nearest-neighbor runner defines the finite lattice family and measurement harness, prints finite rows for h = 2.0, 1.0, 0.5, and 0.25 with Born residuals below 1e-10 and k=0 equal to 0, then prints FAIL for h = 0.125; the note scopes its conclusion exactly to that completed finite window and excludes the finer-spacing/continuum question.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_no_go",
@@ -153829,7 +153863,7 @@
       },
       "runner_path": "scripts/lattice_nn_continuum.py",
       "title": "Nearest-Neighbor Lattice Refinement Note",
-      "transitive_descendants": 24,
+      "transitive_descendants": 25,
       "verdict_rationale": "The scoped claim is narrow enough for the supplied completed runner output: all four finite-window rows are present and finite, k=0 is reported as +0.00e+00, the worst Born residual is 6.02e-16 below the 1e-10 tolerance, and h = 0.125 is treated only as an unresolved gate. There is no cited authority, external physical identification, tuned observed target, or continuum extrapolation required for the bounded statement."
     },
     "lattice_nn_deterministic_rescale_note": {
@@ -154242,7 +154276,7 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 10.307,
+      "load_bearing_score": 10.407,
       "load_bearing_step": "The primary runner directly evaluates the raw NN kernel at h = 0.125 in mpmath and returns a Born-clean observable row matching the deterministic-rescale row to displayed precision.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_no_go",
@@ -154469,7 +154503,7 @@
       },
       "runner_path": "scripts/lattice_nn_high_precision_raw_certificate.py",
       "title": "Lattice NN High-Precision Note",
-      "transitive_descendants": 13,
+      "transitive_descendants": 14,
       "verdict_rationale": "The load-bearing step is an actual first-principles numerical computation of the raw kernel row from the supplied lattice algorithm, not merely a printed constant or a definition substitution. The runner does hard-code deterministic-rescale comparison values, but the audited positive core is the raw mpmath h = 0.125 row and Born-clean result, which is computed directly. The deterministic-rescale match is checked only to rounded/displayed precision for the main observables, with Born differing at about float64 roundoff scale, so the clean verdict is limited to the note's narrow numerical gate and not a broader exact-invariance theorem."
     },
     "lattice_nn_light_cone_note": {
@@ -246851,58 +246885,24 @@
       "verdict_rationale": "The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed."
     },
     "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": {
-      "audit_date": "2026-05-23T15:34:06.885498+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
-          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
-          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
-          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
-          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
-        },
-        "dep_claim_type": {
-          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
-          "graph_first_su3_integration_note": "positive_theorem",
-          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
-          "native_gauge_closure_note": "positive_theorem",
-          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
-          "graph_first_su3_integration_note": "retained",
-          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
-          "native_gauge_closure_note": "retained",
-          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
-        },
-        "deps": [
-          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-          "graph_first_su3_integration_note",
-          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-          "native_gauge_closure_note",
-          "three_generation_observable_count_corollary_note_2026-05-03"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": "a14f105bbf105df07ba3f6a4263f229ca64ac509be549784b7b545fc1463225d",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_failed",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T153237Z-8266ec84-su2_weak_beta_coefficien-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The main P1/P2/P3 substitution closes, but C2 does not follow as stated. From P1, b_2/(-1/6)=-22*N_pair+2*(N_color+1)*N_gen+1, which at N_gen=N_color is 2*N_color*(N_color+1)-22*N_pair+1, not N_color*(N_color+1)-11*N_pair.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Audited the bounded algebraic substitution from X0-X4 to the claimed b_2 closed form, framework value 19/6, per-sector decomposition, and advertised C1-C4 corollaries.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-23T15:34:06.885498+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -246914,19 +246914,19 @@
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_failed",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_failed",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "Substitute N_W=(N_color+1)*N_gen, n_S^complex_components=2, C_2(adj SU(2))=N_pair, and T(F)=1/2 into the admitted Peskin-Schroeder formula to obtain b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "5da36d7e77bfaddf8a3f65f33483decdf3a4e886b10bc6e3b21414e89ee73001",
+      "note_hash": "bcba9841d3e915a14ae609db00b1cd1f0eead299ae93c32cd88b33350c2b4eb3",
       "note_path": "docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "Repair or remove C2, or restate it with a precise normalization that algebraically follows from P1; also update the runner so C2 is actually checked.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -247055,21 +247055,87 @@
             "total_pass": 16
           },
           "verdict_rationale": "The runner performs real exact Sympy/Rational checks for P1-P3 plus C1, C3, and C4. However, the source note explicitly claims C2 and says validation covers C1-C4, while the runner source never checks C2. Independently, the stated ratio b_2 : (-1/6) is not N_color*(N_color + 1) - 11*N_pair under P1; at framework counts it is -19, not -10. Therefore the full scoped claim does not close on its own terms."
+        },
+        {
+          "archived_at": "2026-05-24T16:04:16.405051+00:00",
+          "archived_for_note_hash": "5da36d7e77bfaddf8a3f65f33483decdf3a4e886b10bc6e3b21414e89ee73001",
+          "audit_date": "2026-05-23T15:34:06.885498+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+              "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+              "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
+              "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+              "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+            },
+            "dep_claim_type": {
+              "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+              "graph_first_su3_integration_note": "positive_theorem",
+              "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+              "native_gauge_closure_note": "positive_theorem",
+              "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+              "graph_first_su3_integration_note": "retained",
+              "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+              "native_gauge_closure_note": "retained",
+              "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+            },
+            "deps": [
+              "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+              "graph_first_su3_integration_note",
+              "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+              "native_gauge_closure_note",
+              "three_generation_observable_count_corollary_note_2026-05-03"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": "a14f105bbf105df07ba3f6a4263f229ca64ac509be549784b7b545fc1463225d",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_failed",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T153237Z-8266ec84-su2_weak_beta_coefficien-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The main P1/P2/P3 substitution closes, but C2 does not follow as stated. From P1, b_2/(-1/6)=-22*N_pair+2*(N_color+1)*N_gen+1, which at N_gen=N_color is 2*N_color*(N_color+1)-22*N_pair+1, not N_color*(N_color+1)-11*N_pair.",
+          "claim_scope": "Audited the bounded algebraic substitution from X0-X4 to the claimed b_2 closed form, framework value 19/6, per-sector decomposition, and advertised C1-C4 corollaries.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-23T15:34:06.885498+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Substitute N_W=(N_color+1)*N_gen, n_S^complex_components=2, C_2(adj SU(2))=N_pair, and T(F)=1/2 into the admitted Peskin-Schroeder formula to obtain b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Repair or remove C2, or restate it with a precise normalization that algebraically follows from P1; also update the runner so C2 is actually checked.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 16,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 16
+          },
+          "verdict_rationale": "The runner source genuinely performs exact symbolic and Rational arithmetic for P1, P1', P2, P3, C1, C3, C4, and counterfactual checks. However, despite the source note claiming validation of C1-C4, the runner does not check C2. Direct algebra from the claimed P1 contradicts C2 as written: at framework counts b_2:(-1/6) is -19, while N_color*(N_color+1)-11*N_pair is -10. Because C2 is included among the note's claimed derivable corollaries, the full bounded claim does not close on its own terms."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 16,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 16
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py",
       "title": "SU(2)_L 1-Loop \u03b2-Function Coefficient Narrow Theorem",
       "transitive_descendants": 1,
-      "verdict_rationale": "The runner source genuinely performs exact symbolic and Rational arithmetic for P1, P1', P2, P3, C1, C3, C4, and counterfactual checks. However, despite the source note claiming validation of C1-C4, the runner does not check C2. Direct algebra from the claimed P1 contradicts C2 as written: at framework counts b_2:(-1/6) is -19, while N_color*(N_color+1)-11*N_pair is -10. Because C2 is included among the note's claimed derivable corollaries, the full bounded claim does not close on its own terms."
+      "verdict_rationale": null
     },
     "su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26": {
       "audit_date": null,

@@ -19,16 +19,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 140 |
-| **retained_no_go** | 154 |
+| **retained_no_go** | 153 |
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1284 |
+| unaudited | 1286 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 109 |
-| ~~audited_failed~~ | 5 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 656 |
+| `audited_clean` | 655 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
-| `audited_failed` | 49 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1510 |
+| `unaudited` | 1512 |
 
 | claim_type | count |
 |---|---:|
@@ -436,7 +436,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_family_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
-| `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -957,7 +956,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_nonlocal_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_results_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_scale_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -6731,19 +6729,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization.
 - **auditor confidence:** high
 
-### `lattice_keff_continuum_note`
-
-- **Note:** [`LATTICE_KEFF_CONTINUUM_NOTE.md`](../../docs/LATTICE_KEFF_CONTINUUM_NOTE.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Audited the bounded negative claim that the dense k_eff = k·h refinement scheme fails on the provided finite sweep h ∈ {2.0, 1.0, 0.5, 0.25} using the included runner and helper source.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T201353Z-9f778d7c-lattice_keff_continuum_n-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The remaining open dense continuum scheme k_eff = k·h gives finite rows at h = 2.0, 1.0, 0.5 but detector probability collapses by h = 0.25, so it does not produce a clean retained refinement lane.  _(class `C`)_
-- **chain closes:** True — The included runner genuinely modifies the propagation kernel to use k_eff = k·h, calls the shared lattice measurement stack, and produces the reported finite rows plus detector failure at h = 0.25. The note’s stronger wording about exhaustion of the dense candidate pool is contextual, but the audited negative for this scheme closes on the packet evidence.
-- **rationale:** The source note’s load-bearing negative is supported by a completed runner cache and by runner source that actually computes the lattice propagation rather than printing constants or importing the contested result. The cited upstream authority is retained_bounded and is used only as comparator/background for the continuum-limit measurement stack, not as an open premise needed to rescue the k_eff result. The runner stdout contains an over-optimistic printed line that gravity appears to be converging, but the note does not rely on that line; it correctly treats the detector collapse and unstable finite rows as a negative for a clean refinement lane.
-- **auditor confidence:** high
-
 ### `lattice_kernel_transfer_norm_note`
 
 - **Note:** [`LATTICE_KERNEL_TRANSFER_NORM_NOTE.md`](../../docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md)
@@ -10908,19 +10893,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe read is that structureless causal DAGs can show TOWARD rows, and when they do the source-strength response stays close to linear on this pocket.  _(class `C`)_
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
-- **auditor confidence:** high
-
-### `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded algebraic substitution from X0-X4 to the claimed b_2 closed form, framework value 19/6, per-sector decomposition, and advertised C1-C4 corollaries.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T153237Z-8266ec84-su2_weak_beta_coefficien-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Substitute N_W=(N_color+1)*N_gen, n_S^complex_components=2, C_2(adj SU(2))=N_pair, and T(F)=1/2 into the admitted Peskin-Schroeder formula to obtain b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.  _(class `A`)_
-- **chain closes:** False — The main P1/P2/P3 substitution closes, but C2 does not follow as stated. From P1, b_2/(-1/6)=-22*N_pair+2*(N_color+1)*N_gen+1, which at N_gen=N_color is 2*N_color*(N_color+1)-22*N_pair+1, not N_color*(N_color+1)-11*N_pair.
-- **rationale:** The runner source genuinely performs exact symbolic and Rational arithmetic for P1, P1', P2, P3, C1, C3, C4, and counterfactual checks. However, despite the source note claiming validation of C1-C4, the runner does not check C2. Direct algebra from the claimed P1 contradicts C2 as written: at framework counts b_2:(-1/6) is -19, while N_color*(N_color+1)-11*N_pair is -10. Because C2 is included among the note's claimed derivable corollaries, the full bounded claim does not close on its own terms.
 - **auditor confidence:** high
 
 ### `su3_adjoint_casimir_theorem_note_2026-05-02`

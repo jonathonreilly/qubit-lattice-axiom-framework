@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 416 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1243 |
+| unaudited | 1242 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 115 |
+| ~~audited_conditional~~ | 116 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -51,21 +51,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 687 |
-| `audited_conditional` | 115 |
+| `audited_conditional` | 116 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1469 |
+| `unaudited` | 1468 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1017 |
 | `decoration` | 36 |
-| `meta` | 231 |
+| `meta` | 232 |
 | `no_go` | 243 |
 | `open_gate` | 112 |
-| `positive_theorem` | 743 |
+| `positive_theorem` | 742 |
 
 | criticality | count |
 |---|---:|
@@ -911,6 +911,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `three_generation_observable_dep_chain_audit_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12314,6 +12315,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the restricted packet, the runner explicitly enumerates the eight BZ corners, constructs the retained 3x3 generators, builds matrix units spanning M_3(C), and applies the standard kernel-invariance quotient argument. The conclusion follows as an algebraic closure of those finite checks and stated nonzero-quotient condition.
 - **rationale:** The load-bearing quotient step is a genuine finite-dimensional algebraic closure: algebra preservation makes ker(Q) invariant, and the constructed M_3(C) action has no proper invariant subspaces. The runner does not merely print constants; it enumerates corners and constructs projectors and matrix units from explicit matrices. The upstream retained authorities are not provided in full despite being named in the note, but the supplied runner independently checks the finite claims needed for this narrow corollary.
 - **auditor confidence:** medium
+
+### `three_generation_observable_dep_chain_audit_note_2026-05-02`
+
+- **Note:** [`THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md`](../../docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the dep-chain/status assertion that the observable theorem was blocked by `GENERATION_AXIOM_BOUNDARY_NOTE.md` and could lift once that dependency was repaired.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T210430Z-d8e51045-three_generation_observa-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Only `generation_axiom_boundary_note` is conditional, blocking the parent's effective retention; if it lifts, `three_generation_observable_theorem_note` becomes eligible for retained certification.  _(class `B`)_
+- **chain closes:** False — The restricted packet does not provide the claimed audit records, the `GENERATION_AXIOM_BOUNDARY_NOTE.md` source, or the cycle 7 authority needed to verify the dep-chain status. The provided parent authority also states that `GENERATION_AXIOM_BOUNDARY_NOTE.md` is no longer load-bearing for the narrowed theorem, so the source note's retention-path claim is not closed by the packet.
+- **rationale:** The runner verifies the finite-dimensional `C^3` operator-algebra theorem, but that is not the source note's load-bearing dep-chain/status claim. The audited note relies on external audit-ledger status facts and undeclared authorities about `generation_axiom_boundary_note` and cycle 7 that are not included in the packet. Because the one provided parent authority is retained-grade but has since narrowed away the allegedly blocking dependency, the dep-chain audit note cannot be certified clean from these inputs.
+- **open / conditional deps cited:**
+  - `GENERATION_AXIOM_BOUNDARY_NOTE.md`
+- **auditor confidence:** high
 
 ### `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`
 

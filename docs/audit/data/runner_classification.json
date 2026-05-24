@@ -22349,7 +22349,7 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 1
       },
       "decoration_candidate": false,
@@ -47048,7 +47048,7 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 1
       },
       "decoration_candidate": false,
@@ -54029,7 +54029,7 @@
       "none": 433
     },
     "runners_classified": 1937,
-    "runners_with_C": 953,
+    "runners_with_C": 954,
     "runners_with_D": 551
   }
 }

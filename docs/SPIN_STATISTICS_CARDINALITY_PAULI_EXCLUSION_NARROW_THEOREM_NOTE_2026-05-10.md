@@ -73,10 +73,20 @@ gate or any physical Hilbert-space carrier.
 
 ## Cited authorities (one hop)
 
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained-grade parent narrow theorem (effective_status: `retained`
+  per the live ledger on 2026-05-24); supplies the dim-2 readout
+  directly via its (K4) clause ("Each simple summand
+  `e_± Cl(3,0) ⊗_R C ≅ M_2(C)` admits a unique irreducible left module,
+  of complex dimension `dim_C V = 2`"). This narrow theorem's
+  corollary-match step ("abstract Cl(3) irrep dim = 2, irreducible CAR
+  Fock dim = 2") consumes (K4) at retained-grade.
 - [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — sibling narrow theorem supplying the abstract-algebra dimensional
-  readout (the Cl(3) faithful complex irrep has dim 2). Status
-  authority: independent audit lane only.
+  — sibling narrow theorem supplying the same abstract-algebra
+  dimensional readout (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`
+  per the live ledger on 2026-05-24, retained-grade for chain closure).
+  Status authority: independent audit lane only.
 
 No other note's effective status is consumed.
 
@@ -258,12 +268,19 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 18`.
 
 ## Cross-references
 
-Load-bearing markdown-link upstream (single one-hop dependency):
+Load-bearing markdown-link upstream (two one-hop dependencies; both
+retained-grade per the live ledger on 2026-05-24):
 
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained-grade parent narrow theorem (effective_status: `retained`);
+  supplies the dim-2 readout via its (K4) clause as the retained
+  primary source of the "abstract Cl(3) irrep dim = 2" corollary-match
+  step.
 - [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — sibling narrow theorem supplying the abstract Cl(3) faithful
-  complex irrep dim = 2 (the "match" target on the 2-dim per-mode
-  Hilbert space).
+  — sibling narrow theorem supplying the same dimensional readout
+  (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`,
+  retained-grade for chain closure).
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the
@@ -286,8 +303,13 @@ edges:
 
 ## Citation-graph note
 
-Load-bearing markdown-link upstream is the sibling narrow theorem
+Two load-bearing markdown-link upstream dependencies, both retained-grade
+per the live ledger on 2026-05-24:
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+(retained-grade parent supplying the dim-2 readout via (K4)) and
 [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-only. Cross-references to the parent notes and the open-gate note
-are plain-text reader pointers (not markdown links); (C1)-(P2) do
-not consume their effective statuses.
+(decoration_under that parent, retained-grade for chain closure).
+Cross-references to the parent spin-statistics / Pauli-exclusion notes
+and the open staggered-Dirac realization gate are plain-text reader
+pointers (not markdown links); (C1)-(P2) do not consume their effective
+statuses.

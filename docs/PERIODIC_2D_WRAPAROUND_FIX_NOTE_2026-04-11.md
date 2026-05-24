@@ -75,9 +75,16 @@ Corrected interpretation on the fixed `10x10` torus:
 - `alpha = 2.0` remains non-unique on the corrected surface
 - the lane stays a corrected negative / boundary-of-validity result
 
-Canonical current-main interpretation:
+Canonical current-main interpretation (plain-text reader pointer; the
+`BORN_RULE_ANALYSIS_2026-04-11.md` companion note is a meta-level
+interpretation summary and is **not** a load-bearing markdown-link
+dependency of this bug-fix entrypoint — the minimum-image bug fix
+itself is the load-bearing content here, supplied by
+[`scripts/periodic_geometry.py`](../scripts/periodic_geometry.py) and
+the fixed-surface runner reruns; the Born-rule companion lives at the
+separate meta-interpretation surface):
 
-- [`docs/BORN_RULE_ANALYSIS_2026-04-11.md`](BORN_RULE_ANALYSIS_2026-04-11.md)
+- `docs/BORN_RULE_ANALYSIS_2026-04-11.md`
 
 ### Corrected bounded companion package
 

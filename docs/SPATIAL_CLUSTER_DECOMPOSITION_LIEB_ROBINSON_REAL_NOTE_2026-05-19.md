@@ -383,5 +383,5 @@ All eight verifications use only NumPy/SciPy and complete in under one minute on
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
-- [strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+- `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (effective_status: unaudited — demoted to backtick per dep-hygiene rule; sibling 2026-05-19 note, composition source for §6 staggered+Wilson conditional extension, not load-bearing on the pure Lieb-Robinson proof of §4)
+- `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (effective_status: unaudited — demoted to backtick per dep-hygiene rule; sibling 2026-05-19 note, named conditional input for §6 staggered+Wilson extension only)

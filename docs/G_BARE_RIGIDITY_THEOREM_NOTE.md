@@ -4,7 +4,14 @@
 identification step + SU3_CASIMIR decoration cite both explicitly demoted
 to admitted-context; retained scope restricted to canonical-normalization
 class-A algebra over the supplied generator embedding — see
-`## 2026-05-19 audit-conditional repair` below).
+`## 2026-05-19 audit-conditional repair` below). (Audit-conditional
+repair 2026-05-24: Theorem statement clause 5 and Paper-Safe Claim
+restated so the lattice holonomy `U = exp(i A_op a)` appears as an
+**explicit admitted-and-not-derived premise** on the surface of the
+theorem statement, not as a derived conclusion. The retained
+class-A surface is the conditional rigidity statement *given* the
+admitted holonomy form — see `## 2026-05-24 audit-conditional repair`
+below.)
 **Claim type:** bounded_theorem
 **Branch:** `codex/dm-across-the-line`  
 **Script:** `scripts/frontier_g_bare_rigidity_theorem.py`
@@ -82,11 +89,26 @@ the framework already claims to derive.
 
 ## Theorem
 
-**Theorem (Gauge-normalization rigidity).**
+**Theorem (Gauge-normalization rigidity, conditional on the admitted
+holonomy form).**
 
 Let `g_conc = su(3) subset End(V)` be the concrete compact semisimple gauge
 algebra derived on the taste Hilbert space `V`, with `V` carrying its fixed
-Hilbert-space inner product. Then:
+Hilbert-space inner product. **Assume as an explicit upstream input**
+the lattice-gauge-dictionary holonomy form
+
+```text
+   A_op  =  sum_a A^a T_a                       (operator-valued connection)
+   U     =  exp(i A_op a)  =  exp(i A^a T_a a)  (lattice holonomy)        (HF)
+```
+
+(This assumption `(HF)` is **not derived** in this note; it is admitted as
+an upstream input. See `## 2026-05-19 audit-conditional repair` item 1
+and `## 2026-05-24 audit-conditional repair` below. A future
+cite-or-derive follow-up is queued: a retained theorem on this branch
+that derives `(HF)` from the framework's discrete gauge primitives.)
+
+Then:
 
 1. The Hilbert-space inner product induces a fixed Hilbert-Schmidt trace form
    on `End(V)`, hence on `g_conc`.
@@ -100,6 +122,10 @@ Hilbert-space inner product. Then:
 
    `sum_a T_a T_a = (4/3) I_3`.
 
+   (The Casimir value `C_2 = 4/3` is imported as a decoration cite from
+   `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md` per the 2026-05-19
+   repair item 2; it is not re-derived here.)
+
 3. The allowed ambiguity in `{T_a}` is orthogonal basis rotation inside the
    fixed trace form. Such rotations preserve both the trace Gram matrix and
    the Casimir.
@@ -108,16 +134,15 @@ Hilbert-space inner product. Then:
    an allowed ambiguity of the canonical normalization, because it changes the
    fixed trace form and the fixed Casimir.
 
-5. Therefore the physical gauge connection is the operator-valued one-form
-
-   `A_op = sum_a A^a T_a`
-
-   and the holonomy is
-
-   `U = exp(i A_op a) = exp(i A^a T_a a)`.
-
-   In the canonical normalized basis there is no independent multiplicative
-   bare coupling. Standard notation rewrites this as `g_bare = 1`.
+5. **Conditional on the admitted holonomy form `(HF)`**, the lattice
+   holonomy admits the coefficient-vector expression
+   `U = exp(i A^a T_a a)`. By clauses 1–4, the operator basis `{T_a}` in
+   `(HF)` carries no further scalar-normalization freedom within the
+   fixed trace form. Therefore, in the canonical normalized basis the
+   admitted holonomy `(HF)` carries no independent multiplicative bare
+   coupling — standard notation rewrites this as `g_bare = 1` — **but
+   only relative to the admitted form `(HF)`**, which this note does
+   not derive.
 
 ---
 
@@ -143,11 +168,17 @@ The correct reply is now:
    parameter of the theory.
 
 So the theorem does not say "dynamics selected the magical number `1`."
-It says something stronger and cleaner:
+It says something narrower and cleaner:
 
-> the framework has **no independent bare coupling parameter** at this stage.
+> **given** the admitted upstream lattice-gauge-dictionary holonomy form
+> `U = exp(i A^a T_a a)`, the canonical generator basis carries no
+> independent scalar-normalization freedom, so `g_bare = 1` is a
+> coordinate-redundancy statement (not a dynamical selection).
 
-That is why `g_bare = 1` is the correct canonical statement.
+That is why `g_bare = 1` is the correct **conditional** canonical
+statement: conditional on the admitted upstream holonomy form, which
+this note does not derive from the framework's discrete gauge
+primitives.
 
 ---
 
@@ -190,13 +221,18 @@ This is a gauge-normalization theorem, not the whole DM closure.
 
 ## Paper-Safe Claim
 
-> The framework does not contain a free bare gauge-coupling parameter at the
-> Hamiltonian level. Once the `su(3)` gauge algebra is derived as a concrete
-> compact subalgebra of the taste-space operator algebra, the Hilbert-space
-> trace form fixes the canonical generator normalization up to orthogonal
-> basis rotation. In that canonical basis, the lattice holonomy is
-> `U = exp(i A^a T_a a)`, so the standard notation corresponds to
-> `g_bare = 1`.
+> The framework's canonical `su(3)` generator basis on the taste-space
+> operator algebra carries no independent scalar-normalization freedom:
+> once the Hilbert-space trace form is fixed, the canonical generator
+> normalization is fixed up to orthogonal basis rotation. **Given the
+> admitted upstream lattice-gauge-dictionary form of the lattice
+> holonomy `U = exp(i A^a T_a a)`** (admitted, not derived in this
+> note), the standard notation corresponds to `g_bare = 1` — but only
+> relative to that admitted holonomy form, which is queued for a
+> separate cite-or-derive follow-up. The claim that the framework
+> "does not contain a free bare gauge-coupling parameter at the
+> Hamiltonian level" is therefore conditional on the admitted holonomy
+> form, not a free-standing free-coupling-removal closure.
 
 ---
 
@@ -298,6 +334,145 @@ only narrows the **source-side retained scope** of the note to the
 canonical-normalization class-A algebra over the supplied generator
 embedding, and elevates the holonomy identification step and the
 SU3_CASIMIR decoration cite to explicit admitted-context.
+
+---
+
+## 2026-05-24 audit-conditional repair
+
+This block is a source-only header narrow per the `audited_conditional`
+repair pattern. No PDG values, no fitted selectors, no new framework
+axioms, no new framework primitives, no manual audit verdict edits, no
+runner changes. The retained scope of this note is narrowed below;
+status authority remains with the independent audit lane.
+
+### Audit verdict addressed
+
+The 2026-05-23 audit (`audited_conditional`) flagged that the source's
+free-coupling-removal conclusion implicitly depends on the lattice
+holonomy form `U = exp(i A_op a)`, which the 2026-05-19 repair already
+admitted in the trailing `### Admissions` block but which the **Theorem
+statement clause 5 still asserted as a derived output**. The auditor's
+repair target was:
+
+> "missing_bridge_theorem: add a retained derivation or retained cite for
+> U=exp(i A_op a) from the framework's discrete gauge primitives, or
+> narrow the claim text to the purely algebraic canonical-normalization
+> statement."
+
+This repair takes the **second option** ("narrow the claim text"): the
+Theorem statement clause 5 and the Paper-Safe Claim are restated so the
+lattice holonomy form `U = exp(i A_op a)` appears as an **explicit
+admitted-and-not-derived premise `(HF)`** on the surface of the
+theorem, not as a derived conclusion. The retained class-A surface is
+thereby the conditional rigidity statement *given* the admitted
+holonomy form: under `(HF)`, the canonical generator basis carries no
+independent scalar-normalization freedom.
+
+### Why a retained cite was not adopted
+
+The candidate retained 2026-05-03 g_bare authorities
+(`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`,
+`g_bare_constraint_vs_convention_theorem_note_2026-05-03`) do **not**
+cover the holonomy-from-discrete-primitives derivation. Both 2026-05-03
+notes take `A_op = sum_a A^a T_a` as a given operator-valued connection
+and address the orthogonal questions of rescaling-freedom routing into
+`beta` (rescaling-freedom-removal note) and of `g_bare = 1`
+compatibility under fixed canonical normalization and Wilson matching
+(constraint-vs-convention note). Neither derives the lattice holonomy
+form `U = exp(i A_op a)` from the framework's discrete gauge
+primitives. Citing those notes as the missing bridge would mislabel
+their scope. The cite-or-derive follow-up is therefore queued (see
+"Forward queue" below) and the present repair is narrowed-only.
+
+### Retained scope (in-scope under this narrow)
+
+The retained class-A algebraic content of this note is the conditional
+rigidity statement:
+
+```text
+   Given (HF):
+     A_op  =  sum_a A^a T_a,
+     U     =  exp(i A_op a)  =  exp(i A^a T_a a),
+   and given the fixed Hilbert-space inner product on V,
+   the canonical Hermitian traceless basis {T_a} satisfies
+     Tr(T_a T_b)  =  delta_ab / 2
+   with allowed ambiguity only orthogonal basis rotation inside the
+   fixed trace form; scalar dilation T_a -> lambda T_a with lambda != 1
+   is not an allowed ambiguity.
+
+   Therefore: under (HF), the admitted holonomy carries no independent
+   multiplicative bare coupling, and standard notation rewrites this
+   as g_bare = 1.
+```
+
+This is the narrowed *trace-form rigidity over the supplied embedding
+plus the admitted holonomy form*. The runner
+`scripts/frontier_g_bare_rigidity_theorem.py` is unchanged; its
+trace-form rigidity, basis-rotation invariance, and scalar-dilation
+change checks carry the load-bearing class-A algebra of clauses 1–4 and
+the conditional reading of clause 5.
+
+### Admissions (out-of-scope under this narrow)
+
+Two upstream inputs are **explicitly admitted-and-not-derived** at
+header level on this row:
+
+1. **Lattice holonomy form `(HF)`.** The identification of the lattice
+   holonomy with `U = exp(i A_op a) = exp(i A^a T_a a)` is admitted as
+   the upstream input `(HF)` of Theorem clause 5. This subsumes and
+   makes load-bearing-explicit the 2026-05-19 repair item 1: no
+   retained framework theorem on this branch derives the lattice
+   holonomy from the framework's discrete gauge primitives (A1–A2 +
+   retained). The form is imported from the standard lattice-gauge
+   dictionary and held as a premise of clause 5, not as a derived
+   conclusion. The cite-or-derive follow-up queued in the 2026-05-19
+   repair item 1 remains the path to a future broader closure.
+
+2. **SU3_CASIMIR decoration cite.** Unchanged from the 2026-05-19
+   repair item 2: the Casimir value `sum_a T_a T_a = (4/3) I_3` in
+   Theorem clause 2 is an imported decoration cite from
+   `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`, not re-derived
+   here.
+
+### Forward queue
+
+The auditor's preferred first option ("add a retained derivation or
+retained cite for U=exp(i A_op a) from the framework's discrete gauge
+primitives") remains the path to lifting the `(HF)` admission. A
+retained narrow theorem on this branch deriving the lattice holonomy
+from the framework's discrete gauge primitives would, by purely
+algebraic substitution into Theorem clause 5 of this row, lift `(HF)`
+from admitted-premise to derived-input and convert the conditional
+`g_bare = 1` rewrite into an unconditional one.
+
+### What the narrow does **not** change
+
+- The companion runner `scripts/frontier_g_bare_rigidity_theorem.py` is
+  unchanged. It continues to verify the trace-form rigidity, the
+  basis-rotation invariance of the trace Gram matrix, and the
+  scalar-dilation change of the trace form on the supplied embedding.
+  These checks load-bear clauses 1–4 and the conditional reading of
+  clause 5.
+- The 2026-05-19 audit-conditional repair block is not contradicted;
+  it is subsumed and made surface-explicit on the Theorem statement.
+- The retained-bounded sister notes
+  `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` and
+  `NATIVE_GAUGE_CLOSURE_NOTE.md` are not touched; their status
+  authority remains with the audit pipeline.
+- `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md` is not touched
+  by this repair; the Casimir cite remains as set by the 2026-05-19
+  repair.
+
+### Status authority disclaimer
+
+This section is descriptive, not promotional. The independent audit
+lane retains sole authority over the effective status of this row.
+This repair does not promote, retain, or change any audit status; it
+only narrows the **source-side retained scope** of the Theorem
+statement clause 5 and the Paper-Safe Claim so that the lattice
+holonomy form `U = exp(i A_op a)` appears as an explicit
+admitted-and-not-derived premise `(HF)` on the surface, rather than as
+a derived conclusion.
 
 ---
 

@@ -371,7 +371,7 @@ Cached output: [`logs/runner-cache/frontier_cluster_decomp_delta_t_su3_operator_
 
 - **Parent row:** `AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` — candidate 2 (Perron-Frobenius for the positive transfer matrix), now supplied at finite Lambda for `T_W` and conditionally for the symmetrized staggered+Wilson transfer operator.
 - **Bridge note:** `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md` supplies the downstream bridge `Delta_T > 0` -> temporal connected-correlator clustering; it is downstream of this note, not a dependency of the operator-gap support theorem.
-- **Leg A:** `STRONG_CP_THETA_ZERO_NOTE.md` — `det(D + m I) > 0` is the named conditional dependency for the staggered+Wilson composition; cited as parent-context only. The load-bearing conditional edge is to the salvage repair [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md) (sibling 2026-05-19 note, PR #1582 salvage commit `5f6f0b87a`), not to the older unfixed parent row.
+- **Leg A:** `STRONG_CP_THETA_ZERO_NOTE.md` — `det(D + m I) > 0` is the named conditional dependency for the staggered+Wilson composition; cited as parent-context only. The load-bearing conditional edge is to the salvage repair `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note, effective_status: unaudited — demoted to backtick per dep-hygiene rule, PR #1582 salvage commit `5f6f0b87a`), not to the older unfixed parent row.
 - **Closed PR:** [#1531](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1531) — the rejected 4×4 toy version, replaced by this note.
 
 ---

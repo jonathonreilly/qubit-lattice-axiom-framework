@@ -708,9 +708,9 @@ This bounded narrow theorem candidate uses:
   used only in §4 as a named conditional input via Leg A (sibling, markdown-linked above).
 - **(R3)** SU(3) heat-kernel character expansion + Perron-Jentzsch
   theorem (PR #1577 salvage Lemmas A-D), used as a named conditional upstream
-  source theorem candidate (sibling 2026-05-19, markdown-linked above).
+  source theorem candidate (sibling 2026-05-19, backticked below — `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`, effective_status: unaudited).
 - **(R4)** Leg A's mass-orientation theorem (Theorem 3.4 of PR #1582
-  salvage), used as a named conditional input (sibling 2026-05-19, markdown-linked above).
+  salvage), used as a named conditional input (sibling 2026-05-19, backticked below — `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`, effective_status: unaudited).
 
 The proofs use no new repo axioms. All proof-input citations are listed
 above; no external literature (Vafa-Witten, Leutwyler-Smilga, OS, etc.)
@@ -725,12 +725,11 @@ Leg A parent note. The audit citation graph carries:
 - An edge from this note to the 2026-05-17 slab-bridge note (as a
   discharge of its named hypotheses).
 - An edge from this note to PR #1577 salvage's
-  [`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
-  (load-bearing for Theorem A, since the axis-permutation lift uses
-  Lemmas A-D of that note).
+  `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+  (effective_status: unaudited — demoted to backtick per dep-hygiene rule; conditional upstream input for Theorem A, since the axis-permutation lift uses Lemmas A-D of that note).
 - An edge from this note to PR #1582 salvage's
-  [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
-  (Leg A) as a named conditional input for §4 Theorem B and §5
+  `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+  (effective_status: unaudited — demoted to backtick per dep-hygiene rule; Leg A) as a named conditional input for §4 Theorem B and §5
   discharge of H1/H2 for staggered+Wilson.
 
 The independent audit lane decides whether the discharge of H1 and H2
@@ -743,9 +742,9 @@ suffices to lift the 2026-05-17 slab-bridge note's status.
 - Parent slab-bridge note (this note discharges H1, H2; hypothesis-discharge target):
   `docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md` (backticked, not a load-bearing dep).
 - PR #1577 salvage (sibling 2026-05-19 note used for axis-permutation lift; named conditional dependency):
-  [`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md).
+  `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (effective_status: unaudited — demoted to backtick per dep-hygiene rule).
 - PR #1582 salvage (Leg A — named conditional input for staggered+Wilson):
-  [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md).
+  `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (effective_status: unaudited — demoted to backtick per dep-hygiene rule).
 - Parent of the spatial slab-bridge (audit context):
   `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`
 - Companion 2026-05-09 temporal bridge note (context):

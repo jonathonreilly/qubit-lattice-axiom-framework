@@ -11113,16 +11113,16 @@
       "runner": "scripts/frontier_irregular_sign_core_packet_gate.py"
     },
     "k_dependence_review_safe_note": {
-      "assert_count": 5,
+      "assert_count": 2,
       "counts": {
-        "A": 3,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "runner": "scripts/k_dependence_ceiling.py"
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/k_dependence_fixed_window_review.py"
     },
     "kernel_vs_gravity_note": {
       "assert_count": 0,
@@ -23389,7 +23389,7 @@
       "runner": "scripts/wave_static_matrixfree_moving_source_fixed_beam_boundary.py"
     },
     "wave_static_matrixfree_shared_geometry_compare_note": {
-      "assert_count": 0,
+      "assert_count": 2,
       "counts": {
         "A": 0,
         "B": 0,
@@ -49983,19 +49983,19 @@
       "dominant_class": "A",
       "exists": true
     },
-    "scripts/k_dependence_ceiling.py": {
-      "assert_count": 5,
+    "scripts/k_dependence_fixed_window_review.py": {
+      "assert_count": 2,
       "claims": [
         "k_dependence_review_safe_note"
       ],
       "counts": {
-        "A": 3,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "A",
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/kubo_continuum_limit.py": {
@@ -53900,7 +53900,7 @@
       "exists": true
     },
     "scripts/wave_static_matrixfree_shared_geometry_compare.py": {
-      "assert_count": 0,
+      "assert_count": 2,
       "claims": [
         "wave_static_matrixfree_shared_geometry_compare_note"
       ],
@@ -53993,13 +53993,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 313,
+    "decoration_candidates": 312,
     "dominant_class_distribution": {
-      "A": 203,
+      "A": 202,
       "B": 269,
       "C": 736,
       "D": 296,
-      "none": 432
+      "none": 433
     },
     "runners_classified": 1936,
     "runners_with_C": 952,

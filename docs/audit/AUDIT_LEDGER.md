@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1288 |
+| unaudited | 1290 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 108 |
+| ~~audited_conditional~~ | 106 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 655 |
-| `audited_conditional` | 108 |
+| `audited_conditional` | 106 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1514 |
+| `unaudited` | 1516 |
 
 | claim_type | count |
 |---|---:|
@@ -81,7 +81,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 - runners classified: 1936
 - runners with (C) first-principles compute hits: 952
 - runners with (D) external comparator hits: 549
-- decoration candidates (no C, no D): 313
+- decoration candidates (no C, no D): 312
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -823,7 +823,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -878,7 +877,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5799,19 +5797,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the specified h=0.5, W=8, L=12, max_d=3 harness, Born holds across all five variants while TOWARD holds for the four non-heavy-delete variants and fails for heavy_delete_70.  _(class `C`)_
 - **chain closes:** True — The runner constructs the five graph variants, computes Born, gravity sign, k=0, and no-field controls, and asserts the narrowed table stated in the note. The audited conclusion is explicitly bounded to this harness and does not claim universal graph-structure irrelevance.
 - **rationale:** The current cache reproduces the narrowed table exactly, including the heavy_delete_70 AWAY counterexample that retracts the older universal-robustness framing. The note's safe conclusion follows from the finite runner output and its assertions, with no hidden dependency needed for the bounded harness statement. Residual risk is the ordinary finite-sample limitation: different graph perturbations, strengths, phases, or lattice parameters are outside this audit.
-- **auditor confidence:** high
-
-### `k_dependence_review_safe_note`
-
-- **Note:** [`K_DEPENDENCE_REVIEW_SAFE_NOTE.md`](../../docs/K_DEPENDENCE_REVIEW_SAFE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Fixed-window k-dependence evidence for the generated-DAG ceiling calculation over N=[25,30,40,60,80] and k values [1,2,3,5,7,10,15], limited to the weak claim that fitted behavior varies with k but does not support a universal alpha(k) law.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-k_dependence_review_safe-059`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The fixed-window rerun's per-seed exponents are all negative, but their bootstrap confidence intervals overlap strongly and their ordering is not monotonic in k, so only the weaker bounded wording is supported.  _(class `C`)_
-- **chain closes:** False — The helper runner is a genuine computation and its cache qualitatively shows k-varying pooled slopes, but the seed-level alpha/bootstrap-CI stdout cited in the Result block is not retained. The fit-window-sensitive wording also lacks a retained window-comparison artifact.
-- **rationale:** The available runner source computes from generated DAGs rather than hard-coding the contested alpha values, and the cached pooled-alpha output supports qualitative k variation. However, the note's load-bearing seed_alpha values and bootstrap intervals come from a missing historical primary-run log, so the restricted packet cannot verify those numerical claims. The statement that the evidence is fit-window-sensitive is also not closed by the packet because no window-comparison artifact is retained.
 - **auditor confidence:** high
 
 ### `kernel_vs_gravity_note`
@@ -12349,19 +12334,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** At H = 0.35 with fixed beam geometry, the moving-source exact static comparator remains field-box sensitive, but the 9.0 -> 12.0 large-box branch shows low rel_MS and smaller dS movement without meeting the strict stability bar.  _(class `C`)_
 - **chain closes:** True — The live runner reproduces both source-note comparisons: field PW 6.0 -> 9.0 and 9.0 -> 12.0. The note keeps the conclusion mixed and bounded, explicitly withholding continuum-quality promotion.
 - **rationale:** The note accurately preserves both sides of the runner output. The 6.0 -> 9.0 comparison is still materially box-dependent, with dS move 20.84% and rel_MS move 86.21%, while dM is stable; the 9.0 -> 12.0 comparison improves to dS move 5.52% and rel_MS 3.18% -> 2.42% but still does not pass a strict stability criterion. This closes only the stated mixed diagnostic: no boundary-stable moving-source comparator is retained yet, but the medium-H large-box branch remains a plausible stabilization candidate.
-- **auditor confidence:** high
-
-### `wave_static_matrixfree_shared_geometry_compare_note`
-
-- **Note:** [`WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md`](../../docs/WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded finite-table engine-equivalence claim for direct vs matrix-free static solves on the stated shared geometries, not a formal drop-in-replacement theorem.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-wave_static_matrixfree_s-066`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The direct and matrix-free static solvers agree extremely closely on the finite static field and propagated beam response at the two shared tested H values, while the result is explicitly not tied to a residual-based identity proof.  _(class `C`)_
-- **chain closes:** False — The packet includes a completed default runner for H=0.35 that supports the narrowed close-agreement claim there, but the H=0.25 frozen log is cited only in the note and is not provided as runner output. The runner source also imports load-bearing helper modules whose source is absent from the restricted packet, so the computation cannot be fully verified from the supplied code.
-- **rationale:** The narrowed claim avoids the earlier overbroad drop-in-replacement theorem and the supplied stdout supports close finite-table agreement for H=0.35. However, the note's retained two-row conclusion also depends on the H=0.25 frozen output, which is not included as a completed runner artifact in the packet. In addition, the primary runner's load-bearing path calls imported helpers such as wave_retardation_continuum_limit and wave_static_direct_probe, but their source is not provided despite being needed to verify the computation rather than just the printed stdout.
 - **auditor confidence:** high
 
 ### `wave_static_single_source_compare_note`

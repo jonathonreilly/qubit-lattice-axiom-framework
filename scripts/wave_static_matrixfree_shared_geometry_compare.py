@@ -145,19 +145,37 @@ def compare_at_h(h_val: float, source_z_phys: float):
     }
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--h", type=float, default=0.35, help="Shared lattice spacing. Default: 0.35")
-    parser.add_argument("--source-z-phys", type=float, default=3.0, help="Frozen source z in physical units. Default: 3.0")
-    args = parser.parse_args()
+# Frozen H={0.35, 0.25} expected values from
+# docs/WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md (z_phys=3.0).
+# Asserting both rows in one runner invocation keeps the note's quoted table
+# reproducible from source.
+_FROZEN_TABLE = {
+    0.35: {
+        "field_diff": 1.203e-08,
+        "field_rel": 4.481e-06,
+        "rel_S": 2.825e-06,
+        "rel_MS": 2.286e-01,
+        "resid_direct": 1.997e-10,
+        "resid_mf": 2.292e-10,
+        "iters_mf": 86,
+        "dS_direct": 0.010863,
+    },
+    0.25: {
+        "field_diff": 2.327e-08,
+        "field_rel": 7.940e-06,
+        "rel_S": 1.863e-06,
+        "rel_MS": 6.209e-01,
+        "resid_direct": 1.992e-10,
+        "resid_mf": 1.830e-10,
+        "iters_mf": 115,
+        "dS_direct": 0.015456,
+    },
+}
 
-    r = compare_at_h(args.h, args.source_z_phys)
 
-    print("=" * 108)
-    print("WAVE STATIC MATRIX-FREE SHARED-GEOMETRY COMPARE")
-    print("=" * 108)
+def _print_row(r, source_z_phys: float) -> None:
     print(f"Shared H = {r['H']:.3f}")
-    print(f"Frozen source z_phys = {args.source_z_phys:.3f} (realized z = {r['source_z_real']:.3f})")
+    print(f"Frozen source z_phys = {source_z_phys:.3f} (realized z = {r['source_z_real']:.3f})")
     print(f"NL={r['NL']}  PW={r['PW']:.3f}  src_layer={r['src_layer']}")
     print()
     print("Static solve comparison:")
@@ -174,14 +192,114 @@ def main() -> int:
     print(f"  rel(dS)    = {r['rel_S']:.3e}")
     print(f"  rel_MS dir = {r['rel_MS_direct']:.3e}")
     print(f"  rel_MS mf  = {r['rel_MS_mf']:.3e}")
-
     print()
     if r["field_rel"] < 1e-8 and r["rel_S"] < 1e-8:
         print("Verdict: matrix-free is a drop-in replacement for the direct static comparator at this geometry.")
     else:
         print("Verdict: matrix-free is close, but not yet proven identical to the direct static comparator.")
 
-    return 0
+
+_PASS = 0
+_FAIL = 0
+_FAILED_LABELS: list[str] = []
+
+
+def _check_rel(label: str, computed: float, expected: float, rel_tol: float) -> bool:
+    global _PASS, _FAIL
+    if not math.isfinite(computed) or not math.isfinite(expected):
+        ok = False
+        rel = math.nan
+    elif expected == 0:
+        ok = abs(computed) <= rel_tol
+        rel = abs(computed)
+    else:
+        rel = abs(computed - expected) / abs(expected)
+        ok = rel <= rel_tol
+    tag = "PASS" if ok else "FAIL"
+    print(f"  [{tag}] {label}: computed={computed:.4e} expected={expected:.4e} rel_diff={rel:.2e} (tol {rel_tol:.0e})")
+    if ok:
+        _PASS += 1
+    else:
+        _FAIL += 1
+        _FAILED_LABELS.append(label)
+    return ok
+
+
+def _check_int_eq(label: str, computed: int, expected: int, slack: int = 0) -> bool:
+    global _PASS, _FAIL
+    ok = abs(computed - expected) <= slack
+    tag = "PASS" if ok else "FAIL"
+    print(f"  [{tag}] {label}: computed={computed} expected={expected} slack={slack}")
+    if ok:
+        _PASS += 1
+    else:
+        _FAIL += 1
+        _FAILED_LABELS.append(label)
+    return ok
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--h", type=float, default=None,
+                        help="Run a single lattice spacing instead of the H={0.35, 0.25} sweep. "
+                             "If omitted, both rows are run and asserted against the note's frozen values.")
+    parser.add_argument("--source-z-phys", type=float, default=3.0,
+                        help="Frozen source z in physical units. Default: 3.0")
+    parser.add_argument("--skip-validation", action="store_true",
+                        help="Skip the PASS/FAIL frozen-value asserts (forces single-row mode if --h is also omitted, in which case both rows are still run).")
+    args = parser.parse_args()
+
+    print("=" * 108)
+    print("WAVE STATIC MATRIX-FREE SHARED-GEOMETRY COMPARE")
+    print("=" * 108)
+
+    if args.h is not None:
+        r = compare_at_h(args.h, args.source_z_phys)
+        _print_row(r, args.source_z_phys)
+        return 0
+
+    rows = {}
+    for h_val in (0.35, 0.25):
+        rows[h_val] = compare_at_h(h_val, args.source_z_phys)
+        print()
+        print("-" * 108)
+        _print_row(rows[h_val], args.source_z_phys)
+
+    if args.skip_validation or args.source_z_phys != 3.0:
+        if args.source_z_phys != 3.0:
+            print()
+            print("[VALIDATION SKIPPED: non-canonical source z; frozen values only apply to z_phys=3.0]")
+        return 0
+
+    print()
+    print("=" * 108)
+    print("VALIDATION (frozen-row asserts vs WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md)")
+    print("=" * 108)
+    for h_val in (0.35, 0.25):
+        r = rows[h_val]
+        fz = _FROZEN_TABLE[h_val]
+        print(f"H={h_val}:")
+        # Generous relative tolerances: residuals are solver-tolerance-bounded
+        # at ~1e-10 so small variation is expected; field/rel/dS values pin
+        # to ~1% to allow for tiny floating-point drift across machines.
+        _check_rel(f"H={h_val} field_diff", r["field_diff"], fz["field_diff"], 5e-2)
+        _check_rel(f"H={h_val} field_rel", r["field_rel"], fz["field_rel"], 5e-2)
+        _check_rel(f"H={h_val} rel_S", r["rel_S"], fz["rel_S"], 5e-2)
+        _check_rel(f"H={h_val} rel_MS", r["rel_MS_direct"], fz["rel_MS"], 5e-3)
+        _check_rel(f"H={h_val} dS_direct", r["dS_direct"], fz["dS_direct"], 1e-3)
+        _check_int_eq(f"H={h_val} iters_mf", r["iters_mf"], fz["iters_mf"], slack=3)
+
+    print()
+    print("=" * 108)
+    if _FAIL == 0:
+        print(f"WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE: PASS={_PASS}  FAIL=0")
+    else:
+        print(f"WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE: PASS={_PASS}  FAIL={_FAIL}")
+        print("Failed checks:")
+        for lbl in _FAILED_LABELS:
+            print(f"  - {lbl}")
+    print("=" * 108)
+    return 0 if _FAIL == 0 else 1
 
 
 if __name__ == "__main__":

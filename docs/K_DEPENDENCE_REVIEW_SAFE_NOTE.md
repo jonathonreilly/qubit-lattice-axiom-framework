@@ -2,10 +2,15 @@
 
 **Claim type:** bounded_theorem
 **Status:** support - structural or confirmatory support note
+**Primary runner:** `scripts/k_dependence_fixed_window_review.py`
+**Helper runner:** `scripts/k_dependence_ceiling.py`
+**Status authority:** independent audit lane only
 This note captures the hardened rerun for the k-dependence claim from
 `scripts/k_dependence_ceiling.py`.
 
-**Audit-lane runner update (2026-05-09):** The primary runner `scripts/k_dependence_ceiling.py` now carries explicit assertion checks (`assert math.isclose(...)`, `assert abs(...) < EPS`, etc.) mirroring its existing PASS-condition booleans. This makes the runner's class-A invariants visible to `docs/audit/scripts/classify_runner_passes.py`. The runner output and pass/fail semantics are unchanged.
+**Runner wiring update:** The load-bearing fixed-window/bootstrap runner is
+`scripts/k_dependence_fixed_window_review.py`; `scripts/k_dependence_ceiling.py`
+is its helper for the per-`(N, k, seed)` purity-minimum computation.
 
 ## Method
 
@@ -139,7 +144,7 @@ def pur_min_single_k(nl, k, seed):
     return sum(abs(v) ** 2 for v in rho.values()).real
 ```
 
-### Primary runner: `scripts/k_dependence_fixed_window_review.py` — load-bearing fit + bootstrap
+### Primary runner excerpt: `scripts/k_dependence_fixed_window_review.py` — load-bearing fit + bootstrap
 
 ```python
 import argparse

@@ -58421,11 +58421,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
-        "scripts/generative_causal_dag_interference.py"
+        "scripts/generative_causal_dag_interference.py",
+        "scripts/k_dependence_ceiling.py"
       ],
-      "note_hash": "fd516b4cf8df8546b5682d4c9fef6a6d791cda7895a1979b6fd753e2423d2616",
+      "note_hash": "2c60d3a5642119191133febf360758532cc705de67aa5b890b48a8006da9a824",
       "path": "docs/K_DEPENDENCE_REVIEW_SAFE_NOTE.md",
-      "runner_path": "scripts/k_dependence_ceiling.py",
+      "runner_path": "scripts/k_dependence_fixed_window_review.py",
       "title": "K Dependence Review-Safe Note"
     },
     "key_terminology": {
@@ -81055,7 +81056,7 @@
         "scripts/wave_retardation_continuum_limit.py",
         "scripts/wave_static_direct_probe.py"
       ],
-      "note_hash": "464b8726c3ad68471dd65515d7cbaa706f6e6d697d5385d646aed2673079d355",
+      "note_hash": "183125dd98ce3ee42328990a18545f90a3e0eaa354576e72e543cd5502ace9c7",
       "path": "docs/WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md",
       "runner_path": "scripts/wave_static_matrixfree_shared_geometry_compare.py",
       "title": "Wave Static Matrix-Free Shared Geometry Compare"

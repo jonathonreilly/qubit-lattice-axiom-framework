@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 140 |
 | **retained_no_go** | 153 |
-| **retained_bounded** | 399 |
+| **retained_bounded** | 400 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1273 |
+| unaudited | 1272 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 667 |
+| `audited_clean` | 668 |
 | `audited_conditional` | 109 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1499 |
+| `unaudited` | 1498 |
 
 | claim_type | count |
 |---|---:|
@@ -161,6 +161,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bmv_bounded_negative_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_entanglement_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `bmv_threebody_note_2026-04-11` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `born_lane_comparison_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | B | - |
 | `bound_state_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1684,6 +1685,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source is support-tier and explicitly bounded to externally imposed two-branch tripartite entanglement. The current robustness runner recomputes the source/coupling surface and prints tau_3 = 0, W/W-asym classification in 25/25 configurations, and positive bipartite entropies.
 - **rationale:** The load-bearing support claim closes because the note clearly makes the later robustness harness, not the historical standalone heuristic runner, the canonical interpretation surface. That canonical runner reproduces the stated W-type result and the note keeps the boundary narrow: fixed adjacency, externally imposed branch, not a full three-body BMV witness or topology-superposition claim. The historical runner's GHZ-like rows are not a contradiction because both the source note and that runner label them as non-canonical heuristic output.
 - **auditor confidence:** high
+
+### `born_lane_comparison_note`
+
+- **Note:** [`BORN_LANE_COMPARISON_NOTE.md`](../../docs/BORN_LANE_COMPARISON_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded comparison that the modular gap + LN and central-band |y| removal + LN lanes are Born-clean on the corrected Sorkin harness for N=25,40,60 with the stated seeds and parameters.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T174655Z-7e9951db-born_lane_comparison_not-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both best LN lanes are Born-clean on the corrected harness at machine precision, with all |I3|/P entries at order 1e-16 to 1e-15.  _(class `C`)_
+- **chain closes:** True — The runner constructs the two graph families, applies the layer-normalized propagator, computes corrected Sorkin I3 including -P(empty), and reports machine-precision ratios. The helper sources are present and implement graph generation, field computation, and propagation rather than importing or hard-coding the contested result.
+- **rationale:** The source note's qualitative claims are bounded to the displayed runner configuration and are supported by a completed cached run. The runner source genuinely computes the amplitudes and corrected Born ratios from generated DAGs and helper primitives; it does not merely print constants or compare against an imported target. The note's table values are stale relative to the included stdout, but the mismatch does not change the audited conclusion because the current stdout still places both lanes at 1e-16 to 1e-15 and preserves the stated non-monotone ordering/no-winner summary.
+- **auditor confidence:** medium
 
 ### `bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10`
 

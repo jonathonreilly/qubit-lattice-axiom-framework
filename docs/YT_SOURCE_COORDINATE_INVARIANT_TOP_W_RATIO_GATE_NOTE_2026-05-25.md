@@ -67,12 +67,13 @@ The route does **not** need:
 After the carrier-ray bridge in
 [`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md),
 the signed-record source is aligned with the neutral `P_-` Higgs ray up to an
-affine source reparameterization.  The route still needs:
+affine source reparameterization.  After
+[`YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md`](YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md),
+the W/Z denominator response is also support-closed.  The route still needs:
 
-1. an accepted same-surface EW transfer-response theorem saying the neutral
-   carrier-ray source is the physical radial coordinate on the top and W
-   transfer surfaces;
-2. top and W isolated-pole response rows on that same source;
+1. an accepted same-surface top transfer-response theorem saying the neutral
+   carrier-ray source is the physical radial coordinate in the top sector;
+2. a top isolated-pole response row on that same source;
 3. retained `g_2` authority, or a deliberately scoped `y_t/g_2` result;
 4. matching/running if the claim is a physical-scale `y_t`.
 
@@ -88,7 +89,7 @@ authority remains outside this note.
 
 This note does not:
 
-- derive full same-surface EW transfer response from signed records;
+- derive strict same-source top transfer response from signed records;
 - derive `y_t`;
 - derive `m_t`;
 - derive `g_2`;

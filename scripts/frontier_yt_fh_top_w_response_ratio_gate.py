@@ -32,7 +32,7 @@ EW_COUPLING = DOCS / "EW_COUPLING_DERIVATION_NOTE.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 STRICT_TOP_W_ROWS = OUTPUT.parent / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
-STRICT_WZ_PACKET = OUTPUT.parent / "yt_strict_same_source_wz_physical_response_packet_2026-05-22.json"
+STRICT_WZ_PACKET = OUTPUT.parent / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -144,7 +144,7 @@ def part5_current_blockers() -> dict[str, Any]:
     strict_top_w_present = STRICT_TOP_W_ROWS.exists()
     strict_wz_present = STRICT_WZ_PACKET.exists()
     check("strict same-source top/W FH rows absent", not strict_top_w_present, STRICT_TOP_W_ROWS.relative_to(ROOT).as_posix())
-    check("strict same-source W/Z physical-response packet absent", not strict_wz_present, STRICT_WZ_PACKET.relative_to(ROOT).as_posix())
+    check("strict W/Z denominator-response packet present", strict_wz_present, STRICT_WZ_PACKET.relative_to(ROOT).as_posix())
 
     source_action_text = read(SOURCE_ACTION_STATUS)
     check(
@@ -211,8 +211,9 @@ def main() -> int:
         "route_algebra_closed": True,
         "proposal_allowed": proposal_allowed,
         "proposal_allowed_reason": (
-            "Blocked: the source-action support packet is retained_bounded only, strict same-source "
-            "top/W FH rows are absent, and v-scale g_2 authority is not retained."
+            "Blocked: W/Z denominator response is present, but the source-action support "
+            "packet is retained_bounded only, strict same-source top FH rows are absent, "
+            "and v-scale g_2 authority is not retained."
         ),
         "current_blockers": blockers,
         "upstream_statuses": statuses,

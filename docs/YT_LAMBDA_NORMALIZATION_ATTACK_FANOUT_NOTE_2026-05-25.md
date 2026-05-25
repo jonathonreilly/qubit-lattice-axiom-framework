@@ -83,7 +83,9 @@ What physical or same-surface theorem fixes the unit of O_H?
 This reduces the field of attack to three live mechanisms:
 
 1. break the scale using an absolute same-source W/Z response with gauge
-   normalization held fixed;
+   normalization held fixed.  `YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25`
+   now supplies the W/Z denominator response; the top numerator response and
+   physical-scale `g_2` authority remain open;
 2. break the scale using a same-surface canonical `O_H` plus OS/LSZ or an
    equal-time/contact sum rule;
 3. avoid the scale by taking a same-source response ratio, for example
@@ -137,8 +139,9 @@ Six xhigh probes were run, one per lambda attack.
 
 1. **Same-source W/Z absolute response plus FH top/W ratio.**
    This is the cleanest way to avoid the scalar-field normalization import.
-   It must derive or accept the same-source W/Z response on the Y_T source-action surface,
-   hold `g_2`/`g_Y` authority fixed, and keep observed W/Z masses comparator-only.
+   The strict W/Z denominator response is now support-closed; the next version
+   must derive or accept strict same-source top response, hold `g_2`/`g_Y`
+   authority fixed, and keep observed W/Z/top masses comparator-only.
 
 2. **Same-surface canonical `O_H` plus OS/LSZ/contact sum rule.**
    This is the direct retained-closure target.  It must prove both unit source
@@ -182,9 +185,9 @@ same Y_T source h
 
 This block still needs:
 
-1. accepted same-source EW/Higgs action authority or a note making the W/Z
-   source surface exact-support only;
-2. a top and W transfer-matrix FH derivative theorem on the same source;
+1. strict same-source top response on the neutral carrier-ray source;
+2. retained top-carrier / hypercharge authority, or a self-contained
+   replacement theorem;
 3. a proof that no observed mass or fitted target enters the response
    normalization;
 4. matching/running after the local readout is established.

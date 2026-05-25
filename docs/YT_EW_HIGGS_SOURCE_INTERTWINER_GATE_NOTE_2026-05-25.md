@@ -24,7 +24,7 @@ The result is useful but not yet retained closure.  The neutral carrier ray is
 now bridged from the signed-record source by
 [`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md).
 What remains open is stronger: the repo still does not supply full
-same-surface EW transfer-response authority for the top and W rows.
+same-surface top transfer-response authority for the top numerator row.
 
 ## Candidate Intertwiner
 
@@ -78,9 +78,11 @@ signed-record scalar source h
 The retained bounded source-action support packet gives an exact finite
 Radon-Nikodym/source-action identity for signed records, and the carrier-ray
 bridge identifies that source with the neutral `P_-` ray of the retained
-one-Higgs doublet up to affine source reparameterization.  That is still not
-the same thing as proving full same-surface EW transfer response, covariant
-kinetic normalization, and top/W isolated-pole response on one surface.
+one-Higgs doublet up to affine source reparameterization.  The W/Z denominator
+response is now support-closed in
+`YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25`.  That is still
+not the same thing as proving strict same-source top isolated-pole response on
+one surface.
 
 The relevant carrier facts are currently split:
 
@@ -90,8 +92,9 @@ The relevant carrier facts are currently split:
   bookkeeping, but that row is still unaudited in the ledger;
 - the Standard Model hypercharge uniqueness note is also unaudited in the
   ledger;
-- the new carrier-ray bridge closes the neutral-ray identification but not the
-  full same-surface transfer-response theorem.
+- the new carrier-ray bridge closes the neutral-ray identification, and the
+  strict W/Z response packet closes the denominator side, but the top response
+  row remains open.
 
 Therefore this note records support for the best route, not a status upgrade.
 
@@ -101,8 +104,8 @@ A closure theorem would need to prove all of the following without observed mass
 targets, fitted selectors, `H_unit`, Ward identity reuse, plaquette/u0, or
 `alpha_LM`:
 
-1. **Transfer-response theorem:** the neutral carrier-ray source is accepted as
-   the physical radial coordinate on the same top and W transfer surfaces.
+1. **Top transfer-response theorem:** the neutral carrier-ray source is
+   accepted as the physical radial coordinate in the top transfer surface.
 2. **Same-source theorem:** the same source coordinate enters the top and W
    transfer surfaces.
 3. **Top carrier theorem:** the top numerator is the up-type one-Higgs carrier
@@ -124,7 +127,7 @@ This note does not:
 - derive `m_t`;
 - derive `v = 246 GeV`;
 - derive `g_2`;
-- derive full same-surface EW transfer response from the signed-record source;
+- derive strict same-source top transfer response from the signed-record source;
 - promote the Y_T lane beyond bounded/open-gate support.
 
 ## Verification

@@ -1,12 +1,14 @@
 # PR Backlog
 
-This packet is suitable as one support PR if desired.
+This packet is suitable as one support branch update.
 
-Follow-on PR candidates:
+Follow-on science candidates:
 
-1. W/Z physical response scalar-normalization bypass packet.
-2. FH same-source top/W response-ratio packet.
-3. Same-surface canonical `O_H` and OS/LSZ packet.
-4. BRST/FMS scalar-source boundary packet.
+1. Strict top response/coefficient theorem on the neutral carrier source.
+2. Direct strict top correlator/response measurement packet if the coefficient
+   theorem does not close.
+3. Retained same-scale `g_2` authority after a top numerator row exists.
+4. Same-surface canonical `O_H` and OS/LSZ packet.
+5. BRST/FMS scalar-source boundary packet.
 
 Do not open parallel side PRs unless each has a real new theorem or no-go.

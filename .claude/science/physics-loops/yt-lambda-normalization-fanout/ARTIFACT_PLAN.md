@@ -17,10 +17,20 @@ Landed in this packet:
 - `docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`
 - `scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py`
 - `outputs/yt_source_coordinate_invariant_top_w_ratio_gate_2026-05-25.json`
+- `docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py`
+- `outputs/yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json`
+- `docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py`
+- `outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json`
+- `docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_top_response_coefficient_underdetermination_no_go.py`
+- `outputs/yt_top_response_coefficient_underdetermination_no_go_2026-05-25.json`
 
 Candidate follow-on artifacts:
 
-- W/Z absolute-response scalar-normalization bypass theorem note and runner.
+- Strict top response/coefficient theorem note and runner.
+- Direct strict top correlator/response measurement packet.
 - Same-surface canonical scalar kinetic/LSZ theorem note and runner.
 - BRST/FMS scalar-normalization boundary note and runner.
 

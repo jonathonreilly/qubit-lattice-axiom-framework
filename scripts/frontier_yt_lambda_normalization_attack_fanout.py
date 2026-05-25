@@ -234,8 +234,8 @@ def main() -> int:
         "proposal_allowed": False,
         "proposal_allowed_reason": (
             "The packet identifies scale-breaking and scale-canceling routes, "
-            "but it does not supply accepted same-source W/Z response, canonical "
-            "O_H, scalar LSZ, strict top/W FH rows, or matching/running closure."
+            "but it does not supply strict same-source top response, canonical "
+            "top-carrier authority, physical-scale g_2, or matching/running closure."
         ),
         "best_next_routes": [
             "same-source W/Z absolute response plus FH top/W ratio",

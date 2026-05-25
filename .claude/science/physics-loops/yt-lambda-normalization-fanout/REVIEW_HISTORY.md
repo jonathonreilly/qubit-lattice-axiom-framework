@@ -6,5 +6,7 @@
   spectral, and BRST/FMS.
 - Rechecked audited boundaries for Y_T source-action lane bounded status, pole-row no-go,
   color-projection correction no-go, and color-projection decoration.
-- Added one support-only synthesis note and one runner.
+- Added support-only synthesis/fanout gates, the neutral carrier-ray bridge,
+  strict W/Z denominator response support, and the narrow top-response
+  coefficient underdetermination no-go.
 - No retained or proposed-retained wording allowed by this packet.

@@ -161,8 +161,7 @@ closed support:
   + source-coordinate scale cancels in same-source top/W ratio
 
 still open:
-  accepted same-surface EW transfer response
-  + strict top/W rows
+  strict same-source top transfer response
   + retained top carrier / hypercharge support
   + retained or bounded physical-scale g_2 bridge
 ```

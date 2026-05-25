@@ -179,10 +179,11 @@ def part4_radial_tangent_and_ratio_compatibility() -> None:
 def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     print("\nPart 5: current closure boundary")
     strict_top_w_rows = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
-    strict_wz_packet = ROOT / "outputs" / "yt_strict_same_source_wz_physical_response_packet_2026-05-22.json"
+    strict_wz_packet = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
     blockers = {
         "neutral_carrier_ray_bridge_closed": True,
-        "full_same_surface_ew_transfer_response_closed": False,
+        "wz_denominator_response_closed": strict_wz_packet.exists(),
+        "full_same_surface_top_w_transfer_response_closed": False,
         "strict_same_source_top_w_rows_present": strict_top_w_rows.exists(),
         "strict_same_source_wz_packet_present": strict_wz_packet.exists(),
         "one_higgs_yukawa_selection_retained": statuses["one_higgs_yukawa_selection_status"] == "retained",
@@ -191,9 +192,9 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
         "retained_closure_allowed": False,
     }
     check("neutral carrier-ray bridge is closed", blockers["neutral_carrier_ray_bridge_closed"])
-    check("full same-surface EW transfer response remains open", not blockers["full_same_surface_ew_transfer_response_closed"])
+    check("strict W/Z denominator response packet is present", blockers["wz_denominator_response_closed"])
+    check("full same-surface top/W transfer response remains open", not blockers["full_same_surface_top_w_transfer_response_closed"])
     check("strict same-source top/W rows remain absent", not blockers["strict_same_source_top_w_rows_present"])
-    check("strict same-source W/Z packet remains absent", not blockers["strict_same_source_wz_packet_present"])
     check("one-Higgs top carrier is not retained authority yet", not blockers["one_higgs_yukawa_selection_retained"])
     check("hypercharge uniqueness is not retained authority yet", not blockers["hypercharge_uniqueness_retained"])
     check("physical-scale g_2 is not retained authority yet", not blockers["physical_scale_g2_retained"])

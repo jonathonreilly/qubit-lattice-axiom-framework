@@ -30,6 +30,7 @@ NOTE = DOCS / "YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md"
 SOURCE_ACTION_STATUS = DOCS / ("YT_" + "PR" + "230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md")
 FH_GATE = DOCS / "YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md"
 NEUTRAL_RAY_BRIDGE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
+STRICT_WZ_PACKET = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
@@ -156,6 +157,7 @@ def part4_intertwiner_missing_witness() -> dict[str, Any]:
     source_action_text = read(SOURCE_ACTION_STATUS)
     ew_text = read(EW_MASS)
     check("neutral carrier-ray bridge is present", NEUTRAL_RAY_BRIDGE.exists())
+    check("strict W/Z denominator response is present", STRICT_WZ_PACKET.exists())
     check(
         "source-action support says it is not full physical neutral EW/Higgs authority",
         "not same-surface neutral EW/Higgs authority" in source_action_text
@@ -175,7 +177,8 @@ def part4_intertwiner_missing_witness() -> dict[str, Any]:
     return {
         "same_source_ew_higgs_authority_present": False,
         "neutral_carrier_ray_bridge_present": NEUTRAL_RAY_BRIDGE.exists(),
-        "full_same_surface_ew_transfer_response_present": False,
+        "strict_wz_denominator_response_present": STRICT_WZ_PACKET.exists(),
+        "full_same_surface_top_w_transfer_response_present": False,
         "strict_top_w_rows_present": False,
     }
 
@@ -223,7 +226,7 @@ def main() -> int:
         "proposal_allowed_reason": (
             "The neutral carrier ray is now bridged, but the source-action support "
             "packet is retained_bounded only and no retained theorem supplies the "
-            "full same-surface EW transfer response needed by the top/W route."
+            "strict top response needed to complete the top/W route."
         ),
         "current_blockers": blockers,
         "upstream_statuses": statuses,

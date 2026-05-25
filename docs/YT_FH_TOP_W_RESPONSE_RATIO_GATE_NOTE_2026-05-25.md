@@ -44,8 +44,9 @@ It cannot treat the following as already closed:
   EW/Higgs surface.
 - `ew_coupling_derivation_note` is not retained authority for the v-scale
   numerical value of `g_2`.
-- No strict Y_T lane file currently supplies same-source top and W
-  Feynman-Hellmann response rows.
+- `YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25` now supplies
+  the W/Z denominator response rows on the neutral carrier ray.  No strict
+  Y_T lane file currently supplies the same-source top numerator response row.
 
 ## Theorem: Same-Source Top/W Response Ratio
 
@@ -137,9 +138,10 @@ remaining premises:
 1. **Same-source physical EW/Higgs action authority.**  The Y_T source-action lane currently gives
    finite signed-record source/action support, not physical neutral EW/Higgs
    authority.
-2. **Strict top and W response rows.**  The route needs transfer-matrix
-   responses `dM_t/dh` and `dM_W/dh` on the same source surface, with contact
-   subtraction, finite-volume/IR control, and model-class checks.
+2. **Strict top response row.**  The W/Z denominator response is now support-
+   closed; the route still needs the same-source top transfer-matrix response
+   `dM_t/dh`, with contact subtraction, finite-volume/IR control, and
+   model-class checks.
 3. **Gauge-coupling authority.**  The retained EW mass theorem supplies the
    W denominator algebra.  A retained same-scale `g_2` value or a lattice-scale
    version of the route is still required for a numerical `y_t`.

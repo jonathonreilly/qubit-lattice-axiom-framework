@@ -12,7 +12,7 @@
   "fail_count": 0,
   "pass_count": 55,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The packet identifies scale-breaking and scale-canceling routes, but it does not supply accepted same-source W/Z response, canonical O_H, scalar LSZ, strict top/W FH rows, or matching/running closure.",
+  "proposal_allowed_reason": "The packet identifies scale-breaking and scale-canceling routes, but it does not supply strict same-source top response, canonical top-carrier authority, physical-scale g_2, or matching/running closure.",
   "review_surface": [
     "docs/YT_LAMBDA_NORMALIZATION_ATTACK_FANOUT_NOTE_2026-05-25.md",
     "scripts/frontier_yt_lambda_normalization_attack_fanout.py",

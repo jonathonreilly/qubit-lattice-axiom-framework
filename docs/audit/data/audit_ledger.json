@@ -12756,24 +12756,46 @@
       "verdict_rationale": null
     },
     "axiom_first_lattice_noether_theorem_note_2026-04-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T10:27:42.627006+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 18.315,
+        "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
+        "transitive_descendants": 900
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T102442Z-f77f585c-axiom_first_lattice_noet-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The U(1) and bilateral infinitesimal-current portions close algebraically on the admitted staggered matrix. The full N1 translation-current claim does not close from the provided authorities because Step 4b does not derive the finite-shift Ward rearrangement to (3), and E6 is only a finite-block expectation-value check rather than an arbitrary on-shell symbolic derivation.",
       "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Bounded lattice Noether identities for the U(1) current, the infinitesimal bilateral current, and the (2Z)^3 sublattice-momentum density on the admitted nearest-neighbour KS-phase staggered/Grassmann carrier; no derivation of that carrier from A1+A2 was audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T10:27:42.627006+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -12782,20 +12804,22 @@
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 18.315,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "From the two-site shift symmetry [M,S^(2mu)]=0, promoting the finite shift to a site-dependent envelope is asserted to yield sum_x omega_x d^L_mu P^mu_x=0 on shell, with P^mu_x the canonical staggered sublattice-momentum density (3).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "a412faf2b10685654f5fae8f7563bce0dc6e12917f78f84618cb875bbbe5a351",
       "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained symbolic Step 4b proof deriving (3) from the site-dependent two-shift Ward identity for arbitrary on-shell fields, and cite or close the KS-phase-form source if seeking stronger retention.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T19:40:05.753720+00:00",
@@ -13223,18 +13247,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3",
       "transitive_descendants": 900,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs six non-external identity checks on the hard-coded staggered matrix and supports the scoped algebraic claims over that admitted carrier. However, the packet still relies on the residual KS-phase-form carrier and on the Step 4b site-dependent finite-shift Ward bridge to identify the conserved translation current as (3). Neither item is supplied by a retained authority in the restricted packet. No-Go discipline N3/N6 leaves those as hidden or unratified admissions, so audited_clean is not available."
     },
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17": {
       "audit_date": null,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 108 |
+| ~~audited_conditional~~ | 109 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 740 |
-| `audited_conditional` | 108 |
+| `audited_conditional` | 109 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -970,6 +970,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_physical_top_intervention_identification_candidate_note_2026-05-25` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -13986,6 +13987,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The lambda-scaled tangent normalizes to the same democratic ray and preserves the signed/projective data while y_33 varies as lambda/sqrt(6). Within the restricted packet, the baseline supplies no physical source coordinate that selects lambda=1.
 - **rationale:** The load-bearing step is an algebraic counterfamily, not a tuned numerical match or a definition of lambda=1. The runner source performs symbolic normalization, probability, coefficient, and signed-score checks, plus text/status/firewall checks; it does not hard-code the contested primitive-unit premise as a positive closure. The no-go gate passes on the restricted packet: at least five routes are enumerated, the residual collapses to the physical source/action unit, hidden premise language is explicit, and future theorem or direct-measurement routes remain live.
 - **auditor confidence:** medium
+
+### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite-dimensional democratic-source statement: an S_6-invariant unit vector on a six-component Q_L carrier has component amplitude 1/sqrt(6), not its identification with y_33 or y_t.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201356Z-14601ab0-yt_qubit_democratic_top_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The unique unit vector in C^6 invariant under all S_6 permutations is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).  _(class `A`)_
+- **chain closes:** True — The finite-dimensional invariant-vector result follows by standard linear algebra once the six-component carrier and full S_6 democracy are taken as the scoped setup. The physical bridge identifying this amplitude with the top Yukawa coefficient remains explicitly outside the claimed closure.
+- **rationale:** The mathematical component-amplitude result is a clean algebraic consequence of S_6 invariance and unit normalization, and the runner source genuinely checks that finite-dimensional computation rather than merely printing PASS. However, the note's physical relevance depends on an explicitly open bridge: strict top coefficient equals democratic Q_L component amplitude. Under the no-go discipline gate for a bounded residual admission, N1 cannot enumerate five same-packet attack routes that close or independently test that bridge; the restricted packet only states the bridge is future work.
+- **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`
 

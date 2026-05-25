@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1284 |
+| unaudited | 1283 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 691 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1511 |
+| `unaudited` | 1510 |
 
 | claim_type | count |
 |---|---:|
@@ -847,6 +847,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | exact_algebraic_identity_on_admitted_carrier | - |
+| `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6135,6 +6136,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** H_e -> H_cyc := P_cyc(H_e), with P_cyc(X)=(1/3) sum_{k=0}^2 C^k X C^{-k}, has image span_R{B0,B1,B2} and is reconstructed from r0,r1,r2 by H_cyc=(r0/3)B0+(r1/6)B1+(r2/6)B2.  _(class `A`)_
 - **chain closes:** True — The audited scope is a finite-dimensional linear-algebra theorem: cyclic group averaging is a canonical projector, its image is the stated circulant Hermitian basis, and the trace responses reconstruct the projected component. This does not audit the upstream microscopic source law, Koide selector principle, or charged-lepton readout, which the note explicitly leaves open.
 - **rationale:** Within the bounded algebraic scope, the load-bearing step closes: the note states the projector, the basis-level action, the generic coefficient formula, and the response reconstruction, and the cached runner confirms all algebraic identities with PASS=11 FAIL=0. The two D-class checks are only witness/comparator checks for the observed amplitude target and are not needed to prove the compression theorem. This clean verdict must not be read as closing the microscopic source law for (r0,r1,r2), the selector principle, or the final charged-lepton readout, all of which remain explicitly outside this claim scope.
+- **auditor confidence:** high
+
+### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
+
+- **Note:** [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](../../docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic AM-GM result on Herm_circ(3): assuming the trace-Frobenius scalar/traceless normalization beta=0, the extremum gives kappa=2 and Q=2/3; no uniqueness of the normalization or physical source-law bridge is audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T110309Z-3abf159a-koide_frobenius_isotype_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the admitted Frobenius normalization, E_+=(tr M)^2/3=3a^2 and E_perp=Tr(M^2)-E_+=6|b|^2, so AM-GM with E_+ + E_perp=N gives E_+=E_perp, hence kappa=2 and Q=2/3.  _(class `A`)_
+- **chain closes:** True — The algebraic chain closes after the explicit A_Frob normalization is admitted. The unrestricted derivation of A_Frob/beta=0 remains missing and is correctly outside the binding scope.
+- **rationale:** The load-bearing step is an exact algebraic AM-GM closure over the admitted Frobenius energies, and the runner source genuinely computes the symbolic identities and the beta != 0 counterexample rather than only printing constants. The single PDG numerical check is only an interior sanity check and is not load-bearing. Because the trace-Frobenius normalization beta=0 is an explicit admitted normalization not derived from a cited retained authority, the result cannot be audited_clean. The no-go discipline gate does not upgrade the row: the packet preserves beta-freedom and the physical bridge as open dependencies rather than closing them as negative boundaries.
 - **auditor confidence:** high
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`

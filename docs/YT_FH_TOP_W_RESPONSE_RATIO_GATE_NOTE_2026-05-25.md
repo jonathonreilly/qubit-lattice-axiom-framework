@@ -7,7 +7,8 @@ direct_effective_status_change_allowed_from_this_note: false
 
 # Y_T Feynman-Hellmann Top/W Response-Ratio Gate
 
-**Claim type:** bounded_theorem / open-gate support.
+**Claim type:** bounded_theorem
+**Role:** open-gate support.
 **Status:** exact conditional route theorem; current Y_T source-action surface does not
 yet close positive Y_T.
 **Primary runner:** `scripts/frontier_yt_fh_top_w_response_ratio_gate.py`
@@ -44,8 +45,11 @@ It cannot treat the following as already closed:
   EW/Higgs surface.
 - `ew_coupling_derivation_note` is not retained authority for the v-scale
   numerical value of `g_2`.
-- No strict Y_T lane file currently supplies same-source top and W
-  Feynman-Hellmann response rows.
+- `YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25` now supplies
+  the W/Z denominator response rows on the neutral carrier ray.
+- `YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25` supplies the
+  same-source symbolic top numerator row shape, but leaves the top coefficient
+  free.
 
 ## Theorem: Same-Source Top/W Response Ratio
 
@@ -137,9 +141,11 @@ remaining premises:
 1. **Same-source physical EW/Higgs action authority.**  The Y_T source-action lane currently gives
    finite signed-record source/action support, not physical neutral EW/Higgs
    authority.
-2. **Strict top and W response rows.**  The route needs transfer-matrix
-   responses `dM_t/dh` and `dM_W/dh` on the same source surface, with contact
-   subtraction, finite-volume/IR control, and model-class checks.
+2. **Top coefficient theorem or measurement.**  The W/Z denominator response
+   and symbolic top-response row are now support-closed; the route still needs
+   a retained theorem or direct response measurement fixing the top coefficient,
+   with contact subtraction, finite-volume/IR control, and model-class checks
+   if measured.
 3. **Gauge-coupling authority.**  The retained EW mass theorem supplies the
    W denominator algebra.  A retained same-scale `g_2` value or a lattice-scale
    version of the route is still required for a numerical `y_t`.

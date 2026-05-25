@@ -28145,6 +28145,10 @@
       "to": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
     },
     {
+      "from": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
+      "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+    },
+    {
       "from": "yt_qfp_insensitivity_support_note",
       "to": "yt_ward_identity_derivation_theorem"
     },
@@ -28213,6 +28217,18 @@
       "to": "yt_exact_schur_normal_form_uniqueness_note"
     },
     {
+      "from": "yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25",
+      "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+    },
+    {
+      "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+    },
+    {
+      "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+      "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+    },
+    {
       "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
       "to": "yt_pr230_consolidated_status_note_2026-05-22"
     },
@@ -28223,6 +28239,42 @@
     {
       "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
       "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "yt_strict_symbolic_top_response_row_packet_note_2026-05-25",
+      "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
+    },
+    {
+      "from": "yt_strict_symbolic_top_response_row_packet_note_2026-05-25",
+      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+    },
+    {
+      "from": "yt_strict_symbolic_top_response_row_packet_note_2026-05-25",
+      "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+    },
+    {
+      "from": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+      "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    },
+    {
+      "from": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+    },
+    {
+      "from": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+      "to": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+    },
+    {
+      "from": "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25",
+      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+    },
+    {
+      "from": "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25",
+      "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+    },
+    {
+      "from": "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25",
+      "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
     },
     {
       "from": "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17",
@@ -82987,14 +83039,14 @@
     },
     "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
       "claim_id": "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25",
-      "claim_type_author_hint": "open_gate",
-      "claim_type_author_hint_raw": "open_gate / bounded algebraic support.",
-      "claim_type_seed_hint": "open_gate",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f22f9445597d3953309b1454baceae0df667ac7ab77ad1b194bc790e3e331201",
+      "note_hash": "05b9b8853437ec7f4ece44b891aff22737624ab26568da6f03eea8a46b3784b2",
       "path": "docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py",
       "title": "Y_T EW/Higgs Source-Intertwiner Gate"
@@ -83131,14 +83183,26 @@
       "runner_path": "scripts/frontier_yt_explicit_systematic_budget.py",
       "title": "`y_t` Residual-Budget and Bridge Cross-Check Note"
     },
-    "yt_fh_top_w_response_ratio_gate_note_2026-05-25": {
-      "claim_id": "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
+    "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25": {
+      "claim_id": "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem / open-gate support.",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "3dc9f07758fe07b542058967cd7264d0bea7dc25a0d7b168befd38bb52326e21",
+      "note_hash": "1ce00f1a1611b58e742a2efb4c99f538f677211e9f21920b619e9ae4c3d5b2e4",
+      "path": "docs/YT_FH_TOP_MASS_RESPONSE_PHYSICAL_INTERVENTION_BRIDGE_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py",
+      "title": "Y_T FH Top Mass-Response Physical-Intervention Bridge"
+    },
+    "yt_fh_top_w_response_ratio_gate_note_2026-05-25": {
+      "claim_id": "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "3c58fbc6706269ff3901683f528dedb39b17b5bc302cbcf3a9e6986a28ab6ccc",
       "path": "docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_fh_top_w_response_ratio_gate.py",
       "title": "Y_T Feynman-Hellmann Top/W Response-Ratio Gate"
@@ -83256,7 +83320,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "480ad48e6952a12768cb9a5d8869e6a71d281d3d271a78950e7f338da6b8d328",
+      "note_hash": "54ee93d24d50c04dcce628d8e368cd2f8e5b2c70680064daa055bfb7f606c4f0",
       "path": "docs/YT_LAMBDA_NORMALIZATION_ATTACK_FANOUT_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_lambda_normalization_attack_fanout.py",
       "title": "Y_T Lambda-Normalization Attack Fanout Note"
@@ -83278,6 +83342,18 @@
       "path": "docs/YT_MICROSCOPIC_SCHUR_CLASS_ADMISSIBILITY_NOTE.md",
       "runner_path": "scripts/frontier_yt_microscopic_schur_class_admissibility.py",
       "title": "Microscopic Schur-Class Admissibility Note"
+    },
+    "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25": {
+      "claim_id": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "07a71f3a27f98df0bd04f1c3817b6ce85363cedfe958dbe3493510faf2d7cb17",
+      "path": "docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_operational_source_action_bridge_theorem_attempt.py",
+      "title": "Y_T Operational Source/Action Bridge Theorem Attempt"
     },
     "yt_p1_bz_quadrature_2_loop_full_staggered_pt_note_2026-04-18": {
       "claim_id": "yt_p1_bz_quadrature_2_loop_full_staggered_pt_note_2026-04-18",
@@ -83774,6 +83850,18 @@
       "runner_path": "scripts/frontier_yt_p3_msbar_to_pole_k3.py",
       "title": "P3 MSbar-to-Pole K_3 Color-Tensor Retention Theorem (3-loop structural skeleton)"
     },
+    "yt_physical_top_intervention_identification_candidate_note_2026-05-25": {
+      "claim_id": "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "967ae4550bec9a43c535daf2a004bf106df1c5bfc2f8433e0f5f539799834902",
+      "path": "docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_physical_top_intervention_identification_candidate.py",
+      "title": "Y_T Physical Top Intervention Identification Candidate"
+    },
     "yt_pr230_consolidated_status_note_2026-05-22": {
       "claim_id": "yt_pr230_consolidated_status_note_2026-05-22",
       "claim_type_author_hint": "bounded_theorem",
@@ -83829,6 +83917,32 @@
       "runner_path": "scripts/frontier_yt_pr230_source_covariance_normalization_support.py",
       "title": "PR230 Source-Covariance Normalization Support Theorem"
     },
+    "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25": {
+      "claim_id": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "3c38d2fc7f86e49cb29ec881acd2f946f32c076c11d4081ac37d1f491ba07671",
+      "path": "docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_primitive_source_unit_fisher_normalization.py",
+      "title": "Y_T Primitive Source-Unit Fisher Normalization Support"
+    },
+    "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25": {
+      "claim_id": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "dd3db4d10a4e0df0a3bd2cf101259562a6b38f6f643ba7d7e4eb11abf48053b3",
+      "path": "docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py",
+      "title": "Y_T Primitive-Unit Source/Action Physical-Premise No-Go"
+    },
     "yt_qfp_insensitivity_support_note": {
       "claim_id": "yt_qfp_insensitivity_support_note",
       "claim_type_author_hint": null,
@@ -83847,6 +83961,18 @@
       "runner_path": "scripts/frontier_yt_qfp_insensitivity.py",
       "title": "y_t Quasi-Fixed-Point Insensitivity Support Note"
     },
+    "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25": {
+      "claim_id": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "f68373ee60eb16ec56df495a23e862308fdd72c73116a572e88f34e842a5f296",
+      "path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py",
+      "title": "Y_T Qubit Democratic Top-Coefficient Candidate"
+    },
     "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": {
       "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
       "claim_type_author_hint": "bounded_theorem",
@@ -83859,10 +83985,22 @@
         "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "db03745a112b6d83bddba87f14b401c670a0cc4097299dc5445d67802410e1fa",
+      "note_hash": "08f9c14d903c60e95891e4193961755d7e2e4eb83338ff1f3c711cdc9e89ec52",
       "path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
       "title": "Y_T Qubit Neutral-Higgs Carrier-Ray Bridge"
+    },
+    "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25": {
+      "claim_id": "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "49511525b9ba33e0d699172a3d38699d3ad7f644fcad69c2eff394ba44ef0972",
+      "path": "docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py",
+      "title": "Y_T Qubit Signed-Linear Source Response Bridge Candidate"
     },
     "yt_retention_landing_readiness_2026-04-18": {
       "claim_id": "yt_retention_landing_readiness_2026-04-18",
@@ -83911,12 +84049,12 @@
     },
     "yt_same_source_ew_higgs_authority_gate_note_2026-05-25": {
       "claim_id": "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
-      "claim_type_author_hint": "open_gate",
-      "claim_type_author_hint_raw": "open_gate / current-surface obstruction.",
-      "claim_type_seed_hint": "open_gate",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "03a56910e87e06c9bd96ad1e780d81b36adf40fc373d83bfafd681e1e49e4aef",
+      "note_hash": "32f0bafa134f52191df3501bfce2174d8007507999395958f71b8dca2f594a7b",
       "path": "docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_same_source_ew_higgs_authority_gate.py",
       "title": "Y_T Same-Source EW/Higgs Authority Gate"
@@ -83951,14 +84089,31 @@
       "runner_path": "scripts/frontier_yt_schur_stability_gap.py",
       "title": "Schur Stability Gap Note"
     },
+    "yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25": {
+      "claim_id": "yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "508e76c540953af89f6b1fedcd70888cdbd19815a9ea47a9dd5e5cbb5ed445f2",
+      "path": "docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py",
+      "title": "Y_T Signed-Linear Democratic Tangent Physical-Bridge Attempt"
+    },
     "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": {
       "claim_id": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+        "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "8f353f7ef0046c64c156db956508f40300fd06be84b724e202bd742272890068",
+      "note_hash": "83cbe835cdb23a0fd3247414fffb8bc994d19e4951b97c1a6c24461011d42846",
       "path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",
       "title": "Y_T Source-Coordinate Invariant Top/W Ratio Gate"
@@ -83990,6 +84145,66 @@
       "path": "docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_yt_ssb_matching_gap.py",
       "title": "Yukawa SSB Matching-Gap Arithmetic Boundary Note"
+    },
+    "yt_strict_symbolic_top_response_row_packet_note_2026-05-25": {
+      "claim_id": "yt_strict_symbolic_top_response_row_packet_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26",
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+        "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2628408ccd9c1890339e19b746021e629fed5b12ed89b2942222c8222cfcb445",
+      "path": "docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_strict_symbolic_top_response_row_packet.py",
+      "title": "Y_T Strict Symbolic Top-Response Row Packet"
+    },
+    "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25": {
+      "claim_id": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c3cfde332da28fae64376e578385028d1273383497e861f17160de14ef85063e",
+      "path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
+      "title": "Y_T Strict W/Z Neutral-Carrier Response Packet"
+    },
+    "yt_top_coefficient_full_court_press_note_2026-05-25": {
+      "claim_id": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "0c70ff7181295c66d805df15d8d42e6edc2ad8adf12c649e6d1f61c07c4d87e8",
+      "path": "docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_top_coefficient_full_court_press.py",
+      "title": "Y_T Top-Coefficient Full-Court-Press Note"
+    },
+    "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25": {
+      "claim_id": "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+        "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+        "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "3c6d6da50ffd61f5529368917ce989f5db094797d4673e0ec75b73e7c80e7d62",
+      "path": "docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_yt_top_response_coefficient_underdetermination_no_go.py",
+      "title": "Y_T Top-Response Coefficient Underdetermination No-Go"
     },
     "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17": {
       "claim_id": "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17",
@@ -85070,42 +85285,48 @@
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
     "yt_ew_coupling_bridge_note_2026-05-17",
+    "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
     "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
+    "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+    "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
     "yt_pr230_consolidated_status_note_2026-05-22",
     "yt_pr230_route_exhaustion_summary_note_2026-05-22",
+    "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+    "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+    "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25",
     "yt_retention_landing_readiness_2026-04-18",
     "yt_retention_master_manifest_2026-04-18",
     "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
-    "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
     "yt_ssb_matching_gap_analysis_note_2026-04-18",
+    "yt_top_coefficient_full_court_press_note_2026-05-25",
     "z2_hw1_mass_matrix_parametrization_note",
     "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
   ],
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 574,
+      "bounded_theorem": 584,
       "decoration": 1,
       "meta": 191,
-      "no_go": 70,
+      "no_go": 73,
       "none": 1465,
-      "open_gate": 48,
+      "open_gate": 47,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1001,
+      "bounded_theorem": 1011,
       "decoration": 1,
       "meta": 191,
-      "no_go": 173,
+      "no_go": 176,
       "none": 434,
-      "open_gate": 126,
+      "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9740,
-    "leaf_count": 778,
-    "node_count": 2522,
-    "root_count": 833,
-    "runners_with_path": 2083
+    "edge_count": 9753,
+    "leaf_count": 788,
+    "node_count": 2534,
+    "root_count": 839,
+    "runners_with_path": 2095
   }
 }

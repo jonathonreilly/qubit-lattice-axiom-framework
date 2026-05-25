@@ -1,0 +1,37 @@
+{
+  "action_bridge": {
+    "lambda_selected_if_source_action_gate_accepted": 1,
+    "scaled_action_source": "S_h=S_0-h lambda O",
+    "source_action_gate_closed": false,
+    "unit_action_source": "S_h=S_0-h O"
+  },
+  "actual_remaining_bridge": "derive/accept source-coupled local action convention strongly enough to identify the physical top Yukawa deformation with the primitive source unit, or measure the top response directly",
+  "binary_source_unit": {
+    "primitive_fisher": "1",
+    "primitive_score": "epsilon",
+    "scaled_fisher": "lambda^2",
+    "scaled_score": "lambda epsilon"
+  },
+  "claim": "primitive signed-record Fisher source unit selects lambda=1",
+  "conditional_closure": "if source/action gate accepted, y_33=1/sqrt(6)",
+  "fail_count": 0,
+  "pass_count": 56,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The source-unit theorem selects lambda=1 only inside the canonical RN/source-action branch. The source-coupled local action convention is still an open gate on the current surface.",
+  "review_surface": [
+    "docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_primitive_source_unit_fisher_normalization.py",
+    "outputs/yt_primitive_source_unit_fisher_normalization_2026-05-25.json"
+  ],
+  "status": "conditional / bounded support",
+  "top_source_unit": {
+    "lambda_selected_by_unit_fisher": "1",
+    "top_unit_vector": "(1,1,1,1,1,1)/sqrt(6)",
+    "unit_component": "1/sqrt(6)"
+  },
+  "upstream_statuses": {
+    "lsp_source": "retained_bounded",
+    "source_action_gate": "unaudited",
+    "yt_source_action_support": "retained_bounded"
+  }
+}

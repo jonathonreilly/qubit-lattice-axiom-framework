@@ -1,0 +1,32 @@
+{
+  "claim": "If the physical top Yukawa deformation is the operational primitive RN source intervention for O_top, then y_33=1/sqrt(6).",
+  "claim_status": {
+    "actual_current_surface_status": "open_gate / final bridge candidate",
+    "bare_retained_allowed": false,
+    "conditional_positive_branch": "criterion accepted -> y_33=1/sqrt(6)",
+    "proposal_allowed": false,
+    "upstream_statuses": {
+      "one_higgs": "unaudited",
+      "source_action_gate": "unaudited",
+      "yt_source_action_support": "retained_bounded"
+    }
+  },
+  "counterfamily_boundary": {
+    "counterfamily": "y_33(lambda)=lambda/sqrt(6)",
+    "current_surface_forces_criterion": "false"
+  },
+  "fail_count": 0,
+  "implication": {
+    "conditional_if_criterion_accepted": "y_33=1/sqrt(6)",
+    "lambda_selected": "1",
+    "top_component": "1/sqrt(6)"
+  },
+  "pass_count": 50,
+  "remaining_bridge": "audit/derive physical top Yukawa deformation = operational primitive RN source intervention for normalized O_top",
+  "review_surface": [
+    "docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_physical_top_intervention_identification_candidate.py",
+    "outputs/yt_physical_top_intervention_identification_candidate_2026-05-25.json"
+  ],
+  "status": "open_gate / final bridge candidate"
+}

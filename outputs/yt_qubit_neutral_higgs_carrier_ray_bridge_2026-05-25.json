@@ -1,19 +1,21 @@
 {
   "carrier_ray_bridge_closed": true,
   "current_blockers": {
-    "full_same_surface_ew_transfer_response_closed": false,
+    "coefficient_certified_top_w_rows_present": false,
+    "full_same_surface_top_w_transfer_response_closed": false,
     "hypercharge_uniqueness_retained": false,
     "neutral_carrier_ray_bridge_closed": true,
     "one_higgs_yukawa_selection_retained": false,
     "physical_scale_g2_retained": false,
     "retained_closure_allowed": false,
-    "strict_same_source_top_w_rows_present": false,
-    "strict_same_source_wz_packet_present": false
+    "strict_same_source_wz_packet_present": true,
+    "symbolic_top_response_row_present": true,
+    "wz_denominator_response_closed": true
   },
   "fail_count": 0,
-  "pass_count": 55,
+  "pass_count": 56,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "Carrier-ray alignment is closed, but full same-surface EW transfer response, strict top/W rows, retained one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open.",
+  "proposal_allowed_reason": "Carrier-ray alignment is closed and a symbolic top row is present, but the top coefficient, retained one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open.",
   "review_surface": [
     "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
     "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 450 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1253 |
+| unaudited | 1267 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 81 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,37 +52,37 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 730 |
-| `audited_conditional` | 81 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1482 |
+| `unaudited` | 1496 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1042 |
+| `bounded_theorem` | 1052 |
 | `decoration` | 42 |
 | `meta` | 234 |
-| `no_go` | 245 |
-| `open_gate` | 113 |
+| `no_go` | 248 |
+| `open_gate` | 112 |
 | `positive_theorem` | 732 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 399 |
-| `high` | 486 |
-| `medium` | 572 |
-| `leaf` | 951 |
+| `high` | 487 |
+| `medium` | 575 |
+| `leaf` | 959 |
 
 - **Retained pending chain closure:** 8
-- **Citation cycles detected:** 0
+- **Citation cycles detected:** 3
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1966
-- runners with (C) first-principles compute hits: 966
-- runners with (D) external comparator hits: 570
+- runners classified: 1978
+- runners with (C) first-principles compute hits: 968
+- runners with (D) external comparator hits: 582
 - decoration candidates (no C, no D): 314
 
 ## Top 25 by load-bearing score (topology only)
@@ -92,28 +92,28 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 719 | 53.49 | `audited_conditional` | ~~audited_conditional~~ |
-| 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 899 | 52.31 | `audited_clean` | **retained_bounded** |
-| 3 | `minimal_axioms_2026-05-03` | meta | critical | 901 | 51.82 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1072 | 45.57 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms_2026-04-11` | meta | critical | 932 | 39.87 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 901 | 52.32 | `audited_clean` | **retained_bounded** |
+| 3 | `minimal_axioms_2026-05-03` | meta | critical | 903 | 51.82 | `unaudited` | meta |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1074 | 45.57 | `audited_clean` | **retained** |
+| 5 | `minimal_axioms_2026-04-11` | meta | critical | 934 | 39.87 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 177 | 38.98 | `unaudited` | unaudited |
-| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 841 | 38.22 | `unaudited` | unaudited |
+| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 843 | 38.22 | `unaudited` | unaudited |
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 707 | 37.97 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 932 | 37.87 | `audited_clean` | **retained_bounded** |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 934 | 37.87 | `audited_clean` | **retained_bounded** |
 | 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 550 | 34.11 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1045 | 34.03 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1047 | 34.03 | `audited_clean` | **retained** |
 | 12 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 175 | 33.46 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 923 | 33.35 | `audited_clean` | **retained** |
+| 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 925 | 33.35 | `audited_clean` | **retained** |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 561 | 32.13 | `unaudited` | unaudited |
 | 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 559 | 31.13 | `unaudited` | unaudited |
-| 16 | `minimal_axioms` | meta | critical | 1029 | 31.01 | `unaudited` | meta |
+| 16 | `minimal_axioms` | meta | critical | 1033 | 31.01 | `unaudited` | meta |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 745 | 30.54 | `audited_conditional` | ~~audited_conditional~~ |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 686 | 30.42 | `unaudited` | unaudited |
-| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 901 | 30.32 | `audited_renaming` | ~~audited_renaming~~ |
-| 20 | `cpt_exact_note` | positive_theorem | critical | 895 | 30.31 | `audited_clean` | **retained** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 688 | 30.43 | `unaudited` | unaudited |
+| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 903 | 30.32 | `audited_renaming` | ~~audited_renaming~~ |
+| 20 | `cpt_exact_note` | positive_theorem | critical | 897 | 30.31 | `audited_clean` | **retained** |
 | 21 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 220 | 29.79 | `unaudited` | unaudited |
 | 22 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 186 | 29.05 | `unaudited` | unaudited |
-| 23 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 608 | 27.75 | `unaudited` | unaudited |
+| 23 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 610 | 27.75 | `unaudited` | unaudited |
 | 24 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 594 | 27.72 | `unaudited` | unaudited |
 | 25 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 549 | 27.60 | `unaudited` | unaudited |
 
@@ -931,8 +931,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `yt_fh_top_w_response_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `yt_same_source_ew_higgs_authority_gate_note_2026-05-25` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -13331,24 +13329,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The load-bearing step is a direct algebraic consequence of the channel definitions in the cited authority, whose effective status is retained-grade decoration. The runner source genuinely computes the relevant identity in Test 5 rather than hard-coding the contested conclusion. No-Go Discipline does not defeat the narrowed claim: possible escape routes through current construction, renormalization convention, connected-subtraction framing, V-fluctuation dynamics, or non-scalar improvement would address the broader M residual, not the tested scalar CMT factorization statement.
 - **auditor confidence:** high
 
-### `yt_fh_top_w_response_ratio_gate_note_2026-05-25`
-
-- **Note:** [`YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md`](../../docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the conditional same-source top/W Feynman-Hellmann response-ratio algebra and the note's statement that positive Y_T closure remains blocked.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T145308Z-adf37922-yt_fh_top_w_response_rat-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** If both top and W masses depend on the same scalar background v(h), then (dM_t/dh)/(dM_W/dh) = sqrt(2) y_t / g_2 and y_t = (g_2/sqrt(2))(dM_t/dh)/(dM_W/dh).  _(class `A`)_
-- **chain closes:** False — The algebraic ratio closes under the stated assumptions, but the restricted packet does not supply same-source physical EW/Higgs authority, strict top/W response rows, or retained same-scale g_2 authority. Those premises are explicitly listed as current blockers.
-- **rationale:** The load-bearing calculation is a valid class A algebraic identity, and the runner source genuinely checks the symbolic derivative and response-ratio identities rather than merely printing constants. However, the note's own conclusion depends on open premises: an accepted same-source physical EW/Higgs surface, strict top/W response rows, and retained g_2 authority. No-Go Discipline check does not support upgrading the bounded boundary to clean because the packet names multiple residual admissions and no in-packet route closes them.
-- **open / conditional deps cited:**
-  - `YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`
-  - `EW_COUPLING_DERIVATION_NOTE.md`
-  - `outputs/yt_fh_top_w_strict_response_rows_2026-05-25.json`
-  - `outputs/yt_strict_same_source_wz_physical_response_packet_2026-05-22.json`
-- **auditor confidence:** high
-
 ### `yt_pr230_consolidated_status_note_2026-05-22`
 
 - **Note:** [`YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`](../../docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
@@ -13386,23 +13366,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For the finite RN source family, differentiating log Z with respect to h_x gives <epsilon_x>_h and differentiating again gives Cov_h(epsilon_x, epsilon_y).  _(class `A`)_
 - **chain closes:** True — The derivative and Hessian identities follow by finite-sum differentiation of the RN partition function, and the cited PR230 packet supplies the fixed signed-record source coordinate. The conclusion is bounded to the source-side row and does not import scalar/Higgs normalization.
 - **rationale:** The load-bearing step is a genuine algebraic closure over a finite positive-support RN source family, and the runner independently checks the finite-gradient/Hessian covariance identity plus the fixed-coordinate rescaling boundary. Both cited authorities are retained-grade under the rubric: the PR230 packet is retained_bounded and the pole-row boundary is retained_no_go. No-Go Discipline check for the residual scalar/Higgs walls passes: the packet enumerates alternate routes, keeps source-side and scalar-side normalization independent, scans hidden canonical/LSZ language, matches the cited pole-row residual, narrows the non-closure wording, preserves a convention/redefinition distinction, states the strongest future-theorem escape, and uses only same-packet boundary evidence.
-- **auditor confidence:** high
-
-### `yt_same_source_ew_higgs_authority_gate_note_2026-05-25`
-
-- **Note:** [`YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md`](../../docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited the claim that the current Y_T source-action surface remains an open same-source EW/Higgs authority gate: carrier-ray alignment is present, but full physical EW/Higgs transfer response for the top/W FH route is not supplied.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T145433Z-62c48046-yt_same_source_ew_higgs_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The carrier-ray bridge selects the neutral doublet ray, but it does not select the slope a of the Higgs radial background or prove that the top and W transfer surfaces share the same v(h).  _(class `A`)_
-- **chain closes:** True — The open-gate conclusion follows on its own terms: the packet shows only a one-component signed-record source plus carrier-ray alignment, while the needed theorem mapping that source to a normalized covariant Higgs radial background shared by top and W sectors is explicitly absent.
-- **rationale:** The runner performs real algebraic checks for the signed-record RN score, Higgs doublet structure, neutrality, and scalar-slope non-identifiability, and it does not use observed W/top inputs. However, the audited note is deliberately an open gate and depends on support-status/context from upstream repo documents that are not provided as full cited authorities in this restricted packet. The result should therefore remain conditional/open rather than clean retained closure.
-- **open / conditional deps cited:**
-  - `YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`
-  - `YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`
-  - `YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

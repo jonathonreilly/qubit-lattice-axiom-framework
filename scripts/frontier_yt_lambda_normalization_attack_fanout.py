@@ -234,13 +234,14 @@ def main() -> int:
         "proposal_allowed": False,
         "proposal_allowed_reason": (
             "The packet identifies scale-breaking and scale-canceling routes, "
-            "but it does not supply accepted same-source W/Z response, canonical "
-            "O_H, scalar LSZ, strict top/W FH rows, or matching/running closure."
+            "and later packets supply W/Z denominator response plus a symbolic top "
+            "response row, but they do not supply a derived top coefficient, retained "
+            "top-carrier authority, physical-scale g_2, or matching/running closure."
         ),
         "best_next_routes": [
-            "same-source W/Z absolute response plus FH top/W ratio",
+            "strict top coefficient theorem or direct top response measurement",
+            "retained same-scale g_2 after the top numerator is supplied",
             "same-surface canonical O_H plus OS/LSZ/contact sum rule",
-            "BRST/FMS support for gauge-invariant scalar operator class",
         ],
         "current_no_gos_apply_narrowly": {
             "pole_row_normalization": "applies to pole rows/Gram purity without a new canonical scalar-source theorem",

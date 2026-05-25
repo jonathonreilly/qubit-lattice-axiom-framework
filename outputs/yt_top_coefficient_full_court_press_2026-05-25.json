@@ -1,0 +1,24 @@
+{
+  "fail_count": 0,
+  "pass_count": 59,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The assumptions, first-principles, literature, and mathematics exercises all separate row-shape support from coefficient selection. Current carrier/WZ/one-Higgs algebra leaves y_33 continuous.",
+  "review_surface": [
+    "docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_top_coefficient_full_court_press.py",
+    "outputs/yt_top_coefficient_full_court_press_2026-05-25.json"
+  ],
+  "route_decision": {
+    "direct_measurement_route_live": true,
+    "new_dynamical_flavor_theorem_route_live": true,
+    "structural_derivation_from_current_stack_allowed": false
+  },
+  "status": "exact negative boundary: current structural route does not determine y_33",
+  "upstream_statuses": {
+    "color_projection_correction": "retained_no_go",
+    "hypercharge": "unaudited",
+    "one_higgs": "unaudited",
+    "source_action": "retained_bounded",
+    "yukawa_color_projection_audit": "audited_decoration"
+  }
+}

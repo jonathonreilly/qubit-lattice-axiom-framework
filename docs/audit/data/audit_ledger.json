@@ -185729,24 +185729,42 @@
       "verdict_rationale": null
     },
     "observable_principle_from_axiom_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T23:33:53.087095+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23"
+        ],
+        "load_bearing_score": 53.5,
+        "runner_hash": "a357e44de644977d882f595a2874fbcbf9fa1d38acd06f78e792c6e7f8bf370c",
+        "transitive_descendants": 723
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T232931Z-e2fb0f59-observable_principle_fro-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite determinant algebra closes for the chosen candidate W. The packet does not close the bridge from P1 plus real anti-Hermitian D to the full phase-blind determinant-amplitude generator selection; Part 7 verifies sign evenness of the chosen log|det| functional, not uniqueness among admissible additive CPT-even scalar functionals.",
       "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Finite log|det(D+J)| source-response algebra on the runner APBC staggered block, including determinant factorization, source derivatives, Matsubara curvature, and the Klein-four Lt=4 selector; the v readout is out of scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (finite-algebra `log|det(D+J)|` generator on",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T23:33:53.087095+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -185754,21 +185772,21 @@
         "admitted_input_registry_tier_a_note_2026-05-23"
       ],
       "direct_in_degree": 88,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 53.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For scalar bosonic observables the generator is taken to depend only on |Z|, so additivity over independent subsystems gives W(r1 r2)=W(r1)+W(r2) and hence W=log|det(D+J)| up to normalization.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "be7c74a63ad502579b09e3a2d9e093096ea4a47c767b2aadb9b6aabf80f2ccb1",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the full phase-blind determinant-amplitude scalar-generator classification from the provided staggered/CPT structure, or narrow the theorem back to explicit P1+P2 conditional scope.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -185974,18 +185992,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 26,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "total_pass": 27
       },
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note",
       "transitive_descendants": 723,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs real finite-algebra checks, and the out-of-scope Part 5 numerical comparator should not drive the verdict. The remaining blocker is the over-narrowed P1-only premise surface: the source still needs the selection premise that a scalar bosonic generator is a continuous function of |Z| alone. The claimed runner-local P2 derivation establishes determinant/source sign symmetry for the candidate, but not that broader phase-blind generator-classification bridge."
     },
     "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

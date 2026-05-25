@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 419 |
+| **retained_bounded** | 420 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
 | unaudited | 1289 |
-| audit_in_progress | 1 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -51,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 688 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 689 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
@@ -123,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -588,6 +586,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_commutant_eigenoperator_selector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8714,6 +8713,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The source note derives the bridge by explicit tensor-factor permutation unitaries on C^8 and their restriction to the orthonormal hw=1 carrier. Given the retained selector and hw=1 carrier inputs, the claimed P_23 invariance law follows as an algebraic identity.
 - **rationale:** The load-bearing step is a direct finite-dimensional identity: T_sigma permutes the single-bit-flip basis vectors X_mu, and its V_1 block is exactly the corresponding 3 by 3 permutation matrix. The runner source genuinely constructs the shifts, basis vectors, factor-permutation matrices, restrictions, and invariant Hermitian projections; it does not merely print constants or import a contested premise. The cited authorities in the packet are marked retained, and the source remains within the bounded bridge scope rather than claiming active-sector assignment or numerical PMNS values.
 - **auditor confidence:** high
+
+### `pmns_graph_first_cycle_frame_support_note`
+
+- **Note:** [`PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md`](../../docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded support claim that, on the graph-first hw=1 route with the retained selector/SU3 inputs and retained_bounded forward-cycle bridge, the forward oriented cycle-channel basis (E12,E23,E31) and residual antiunitary swap action are algebraically fixed enough to state later coefficient laws; no coefficient or orientation-selection law was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T104507Z-880230ac-pmns_graph_first_cycle_f-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The diagonal projectors transported by the canonical forward cycle give the unique ordered oriented-cycle frame E12, E23, E31 via E11 C = E12, E22 C = E23, E33 C = E31.  _(class `A`)_
+- **chain closes:** True — The selector minima and selected-axis fiber/base split come from retained authorities, and the narrow bridge supplies the missing S3-restriction derivation of CYCLE and P23/R-anti on V1. Given the forward oriented-cycle convention, the Eii CYCLE identities and residual action are elementary matrix-unit algebra.
+- **rationale:** All one-hop cited authorities in the packet are retained-grade, and the load-bearing frame step is an exact finite-dimensional algebraic closure over those inputs. The primary runner hard-codes CYCLE and P23 rather than deriving them, so it is only an algebraic consistency check; closure comes from the retained_bounded bridge authority, not from treating the runner as first-principles compute. The source correctly remains bounded: it supports a future value law but does not select cycle coefficients.
+- **auditor confidence:** medium
 
 ### `pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24`
 

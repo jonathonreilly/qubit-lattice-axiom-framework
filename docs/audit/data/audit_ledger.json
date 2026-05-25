@@ -197876,24 +197876,50 @@
       "verdict_rationale": null
     },
     "pmns_graph_first_cycle_frame_support_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T10:47:12.467992+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": "Exact finite-dimensional algebra on V_1 showing that the chosen forward 3-cycle and residual P_23 action induce the stated cycle-channel and antiunitary residual-swap identities."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24"
+        ],
+        "load_bearing_score": 11.096,
+        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+        "transitive_descendants": 386
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104507Z-880230ac-pmns_graph_first_cycle_f-02",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The selector minima and selected-axis fiber/base split come from retained authorities, and the narrow bridge supplies the missing S3-restriction derivation of CYCLE and P23/R-anti on V1. Given the forward oriented-cycle convention, the Eii CYCLE identities and residual action are elementary matrix-unit algebra.",
       "claim_id": "pmns_graph_first_cycle_frame_support_note",
-      "claim_scope": "Bounded algebraic support that, given the retained graph-first selector, SU(3) integration, and retained forward-cycle/residual-swap bridge on V1, the oriented cycle frame can be fixed as E12,E23,E31 for stating future coefficient laws; no coefficient values are selected.",
+      "claim_scope": "Audited the bounded support claim that, on the graph-first hw=1 route with the retained selector/SU3 inputs and retained_bounded forward-cycle bridge, the forward oriented cycle-channel basis (E12,E23,E31) and residual antiunitary swap action are algebraically fixed enough to state later coefficient laws; no coefficient or orientation-selection law was audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-25T10:44:40.450638+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-25T10:47:12.467992+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -197908,8 +197934,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-25T10:47:12.467992+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104507Z-880230ac-pmns_graph_first_cycle_f-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded support claim that, on the graph-first hw=1 route with the retained selector/SU3 inputs and retained_bounded forward-cycle bridge, the forward oriented cycle-channel basis (E12,E23,E31) and residual antiunitary swap action are algebraically fixed enough to state later coefficient laws; no coefficient or orientation-selection law was audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -197918,22 +197955,22 @@
         "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24"
       ],
       "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/frontier_graph_first_selector_derivation.py",
         "scripts/frontier_graph_first_su3_integration.py"
       ],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.096,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The diagonal projectors transported by the canonical forward cycle give the unique ordered oriented-cycle frame E12, E23, E31 via E11 C = E12, E22 C = E23, E33 C = E31.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "6f979bceffa51c01c5d9f8e1d7a689bdbf39e1a208d45015884fe2f7dae483b7",
       "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that \"canonical\" is read in the bounded oriented-frame sense and not as a derivation selecting the forward orientation over the reverse cycle.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -198225,18 +198262,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 18,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 18
       },
       "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
       "title": "PMNS Graph-First Cycle Frame Support",
       "transitive_descendants": 386,
-      "verdict_rationale": null
+      "verdict_rationale": "All one-hop cited authorities in the packet are retained-grade, and the load-bearing frame step is an exact finite-dimensional algebraic closure over those inputs. The primary runner hard-codes CYCLE and P23 rather than deriving them, so it is only an algebraic consistency check; closure comes from the retained_bounded bridge authority, not from treating the runner as first-principles compute. The source correctly remains bounded: it supports a future value law but does not select cycle coefficients."
     },
     "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": {
       "audit_date": "2026-05-25T10:42:27.175326+00:00",

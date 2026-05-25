@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 263,
+    "critical": 262,
     "high": 346,
     "leaf": 337,
     "medium": 345
@@ -124,35 +124,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "pmns_graph_first_cycle_frame_support_note",
-      "claim_scope": "Bounded algebraic support that, given the retained graph-first selector, SU(3) integration, and retained forward-cycle/residual-swap bridge on V1, the oriented cycle frame can be fixed as E12,E23,E31 for stating future coefficient laws; no coefficient values are selected.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note",
-        "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/frontier_graph_first_selector_derivation.py",
-        "scripts/frontier_graph_first_su3_integration.py"
-      ],
-      "load_bearing_score": 11.096,
-      "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
-      "transitive_descendants": 386
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -18319,6 +18290,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "pmns_graph_first_axis_alignment_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pmns_graph_axis_to_active_lane_bridge_note",
+        "z2_hw1_mass_matrix_parametrization_note",
+        "site_phase_cube_shift_intertwiner_note",
+        "graph_first_selector_derivation_note",
+        "pmns_graph_first_cycle_frame_support_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.807,
+      "note_path": "docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_pmns_graph_first_axis_alignment.py",
+      "transitive_descendants": 55
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gellmann_completeness_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -20954,34 +20953,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "pmns_graph_first_axis_alignment_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "pmns_graph_axis_to_active_lane_bridge_note",
-        "z2_hw1_mass_matrix_parametrization_note",
-        "site_phase_cube_shift_intertwiner_note",
-        "graph_first_selector_derivation_note",
-        "pmns_graph_first_cycle_frame_support_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.807,
-      "note_path": "docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_pmns_graph_first_axis_alignment.py",
       "transitive_descendants": 55
     },
     {
@@ -38725,5 +38696,5 @@
     }
   ],
   "ready_count": 50,
-  "total_pending": 1291
+  "total_pending": 1290
 }

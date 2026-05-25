@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 421 |
+| **retained_bounded** | 422 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1282 |
+| unaudited | 1281 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 691 |
+| `audited_clean` | 692 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1509 |
+| `unaudited` | 1508 |
 
 | claim_type | count |
 |---|---:|
@@ -213,6 +213,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2547,6 +2548,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.
 - **rationale:** The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive Δ_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering.
 - **auditor confidence:** high
+
+### `coarse_grained_exterior_law_helper_note_2026-04-14`
+
+- **Note:** [`COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T110839Z-17c98626-coarse_grained_exterior_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The module applies shell-averaging to the exact finite-rank exterior field and fits the unique radial-harmonic projection phi_eff(r)=a/r, then verifies the coarse-grained exterior metric residual across scan radii.  _(class `C`)_
+- **chain closes:** True — Within the restricted packet, the runner source and inlined load-bearing helper code instantiate the lattice operators, finite-rank support construction, shell averaging, least-squares harmonic projection, and finite-difference metric residual checks. The conclusion is bounded to this numerical helper workflow and does not claim a physical derivation of the projection map or full GR closure.
+- **rationale:** The load-bearing computation is not just a printed constant: the runner constructs phi grids from the supplied finite-rank/O_h machinery, fits a/r from shell averages, evaluates finite-difference Einstein-tensor residuals, and records three passing bounded checks. The upstream finite-rank helper authority is retained_bounded, and the source note explicitly limits the claim to a helper-module residual result rather than a full physical theorem. The numerical parameters in the helper are selected inputs, but the audited claim is only that this bounded module performs and reports the stated coarse-graining/residual calculation on that finite family.
+- **auditor confidence:** medium
 
 ### `complex_action_note`
 

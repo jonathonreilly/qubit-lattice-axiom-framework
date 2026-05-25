@@ -38656,24 +38656,42 @@
       "verdict_rationale": null
     },
     "coarse_grained_exterior_law_helper_note_2026-04-14": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T11:09:01.163891+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Given an invertible bare lattice Hamiltonian H_0, finite support projector P, finite-rank support matrix W, and invertible I - W G_S, the helper computes the exact finite-rank Woodbury/Dyson renormalized support source and exterior field."
+        },
+        "dep_claim_type": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_gravity_residual_helper_note_2026-04-14"
+        ],
+        "load_bearing_score": 8.629,
+        "runner_hash": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "transitive_descendants": 98
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T110839Z-17c98626-coarse_grained_exterior_-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted packet, the runner source and inlined load-bearing helper code instantiate the lattice operators, finite-rank support construction, shell averaging, least-squares harmonic projection, and finite-difference metric residual checks. The conclusion is bounded to this numerical helper workflow and does not claim a physical derivation of the projection map or full GR closure.",
       "claim_id": "coarse_grained_exterior_law_helper_note_2026-04-14",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T11:09:01.163891+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -38681,21 +38699,21 @@
         "finite_rank_gravity_residual_helper_note_2026-04-14"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 8.629,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The module applies shell-averaging to the exact finite-rank exterior field and fits the unique radial-harmonic projection phi_eff(r)=a/r, then verifies the coarse-grained exterior metric residual across scan radii.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "80d40e2058e9ec979324f5a1900a1f472f60bea30990f5c308a4843fbe2d4e17",
       "note_path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the inlined helper slices exactly match the full dynamic-import files used by the cached runner.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -38749,18 +38767,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
       "title": "Coarse-Grained Exterior Law Helper Module",
       "transitive_descendants": 98,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing computation is not just a printed constant: the runner constructs phi grids from the supplied finite-rank/O_h machinery, fits a/r from shell averages, evaluates finite-difference Einstein-tensor residuals, and records three passing bounded checks. The upstream finite-rank helper authority is retained_bounded, and the source note explicitly limits the claim to a helper-module residual result rather than a full physical theorem. The numerical parameters in the helper are selected inputs, but the audited claim is only that this bounded module performs and reports the stated coarse-graining/residual calculation on that finite family."
     },
     "complete_prediction_chain_2026_04_15": {
       "audit_date": null,

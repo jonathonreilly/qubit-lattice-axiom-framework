@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 255,
     "high": 341,
-    "leaf": 309,
+    "leaf": 308,
     "medium": 328
   },
   "cycle_break_target_count": 8,
@@ -28165,31 +28165,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yukawa_color_projection_theorem",
-        "yt_ward_identity_derivation_theorem"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lepton_block_d12_prime_matching.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -37258,6 +37233,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 5,
-  "total_pending": 1233
+  "ready_count": 4,
+  "total_pending": 1232
 }

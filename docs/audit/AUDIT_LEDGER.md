@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 157 |
 | **retained_bounded** | 450 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 14 |
-| unaudited | 1233 |
+| open_gate | 15 |
+| unaudited | 1232 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 728 |
+| `audited_clean` | 729 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1462 |
+| `unaudited` | 1461 |
 
 | claim_type | count |
 |---|---:|
@@ -491,6 +491,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7500,6 +7501,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The current cache is SHA-pinned to the runner, completed with exit_code=0, and its stdout reproduces the source slope table and kH=5.0 fit failures. The runner computes the finite DAG propagation/Kubo values and log-log fits over the enumerated grid rather than importing the reported slopes; closure is only for that bounded internal numerical sweep.
 - **rationale:** The finite numerical artifact closes: the source table matches the completed cache, and the runner source constructs the Fam1 DAGs, sweeps kH/seeds/b, computes Kubo responses, and fits slopes without hard-coding the table values. I count the runner as a C-style bounded computation rather than the mechanical D label because the scoped claim is internal runner output, not an external comparator match. Clean status is granted only under the narrowed scope; the source's mechanism, periodicity, eikonal, and physical gravitational-response language remains outside the audited claim.
 - **auditor confidence:** high
+
+### `lepton_block_d12_prime_matching_no_go_note_2026-05-10`
+
+- **Note:** [`LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the narrow current-surface claim that the provided quark YT authorities define only a quark/Q_L scalar-singlet operator and do not supply a lepton-composite scalar bridge needed to reuse the matching as a lepton Ward identity.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T144809Z-e71ad499-lepton_block_d12_prime_m-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current cited sources do not provide a theorem identifying a physical lepton composite/operator surface equivalent to the scalar used in the YT matching.  _(class `A`)_
+- **chain closes:** True — The restricted packet supports the open-gate conclusion: the cited YT authority defines H_unit on the Q_L=(2,3) quark block, while no cited authority defines an analogous physical lepton scalar bridge. The formal hypercharge algebra therefore remains conditional rather than a closed lepton Yukawa identity.
+- **rationale:** The load-bearing step is an algebraic/source-surface absence check over the provided authorities, not a new physics derivation. The conclusion is deliberately limited to an open gate and does not overclaim a no-go, lepton mass prediction, or permanent exclusion of the lane. One caveat is that the included runner source appears to use brittle text searches and the quoted YUKAWA authority in this packet does not visibly contain the exact quark-bilinear string the runner checks, but the broader cited YT authority still only defines the scalar on Q_L and not on a lepton block.
+- **auditor confidence:** medium
 
 ### `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`
 

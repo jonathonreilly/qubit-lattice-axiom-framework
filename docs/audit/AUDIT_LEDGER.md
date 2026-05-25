@@ -106,11 +106,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 548 | 33.10 | `audited_conditional` | ~~audited_conditional~~ |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 561 | 32.13 | `unaudited` | unaudited |
 | 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 559 | 31.13 | `unaudited` | unaudited |
-| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1017 | 30.99 | `audited_conditional` | ~~audited_conditional~~ |
-| 17 | `minimal_axioms` | meta | critical | 1032 | 30.51 | `unaudited` | meta |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 686 | 30.42 | `unaudited` | unaudited |
-| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 932 | 30.37 | `audited_renaming` | ~~audited_renaming~~ |
-| 20 | `cpt_exact_note` | positive_theorem | critical | 896 | 30.31 | `audited_clean` | **retained** |
+| 16 | `minimal_axioms` | meta | critical | 1032 | 30.51 | `unaudited` | meta |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 686 | 30.42 | `unaudited` | unaudited |
+| 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 932 | 30.37 | `audited_renaming` | ~~audited_renaming~~ |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 896 | 30.31 | `audited_clean` | **retained** |
+| 20 | `plaquette_self_consistency_note` | bounded_theorem | critical | 744 | 30.04 | `audited_conditional` | ~~audited_conditional~~ |
 | 21 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 220 | 29.79 | `unaudited` | unaudited |
 | 22 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 186 | 29.05 | `unaudited` | unaudited |
 | 23 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 608 | 27.75 | `unaudited` | unaudited |

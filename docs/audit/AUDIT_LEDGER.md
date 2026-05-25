@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 143 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 435 |
+| **retained_bounded** | 436 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1253 |
+| unaudited | 1252 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 709 |
+| `audited_clean` | 710 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1480 |
+| `unaudited` | 1479 |
 
 | claim_type | count |
 |---|---:|
@@ -312,6 +312,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_bare_derivation_status_correction_audit_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -4325,6 +4326,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Relative to the admitted canonical normalization, `g_bare = 1` follows from `beta = 2 N_c / g_bare^2` with `N_c = 3` and `beta = 6`.  _(class `A`)_
 - **chain closes:** True — The chain closes on the bounded surface because the cited authorities are supplied as retained-grade and the final step is exact substitution. It does not close as an absolute derivation of canonical normalization or of the `beta=6` surface from `A1 + A2` alone.
 - **rationale:** The load-bearing step is class A algebra over retained-grade inputs, not a first-principles class C derivation. The runner does compute several operator and plaquette checks, but the decisive `g_bare=1` step uses the explicit bounded `beta=6` surface. No external comparator or tuned observational match is used. The clean verdict applies only to the bounded theorem scope stated above.
+- **auditor confidence:** high
+
+### `g_bare_derivation_status_correction_audit_note_2026-05-02`
+
+- **Note:** [`G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](../../docs/G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded status-correction only: the packet documents that the original runner/dependency/status-scope blockers have been refreshed, without promoting the parent beyond its audited bounded status.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T120523Z-53c1ed38-g_bare_derivation_status-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The 2026-05-24 refresh supersedes the missing-runner finding and wires the retained 2026-05-03 rescaling-freedom and constraint-vs-convention rows as one-hop authorities while keeping proposal_allowed false for the parent.  _(class `A`)_
+- **chain closes:** True — For the packet's bounded infrastructure scope, the cited repair authorities are retained-grade in the provided headers and the runner verifies the packet-structure predicates. The packet explicitly does not claim an absolute parent-promotion result.
+- **rationale:** The load-bearing step is a narrow class-A closure check over existing retained inputs: runner presence, declared retained dependencies, and explicit no-promotion scope. The primary runner is structural rather than a first-principles physics computation, but that matches this packet's status-correction role and its completed output is PASS=35, FAIL=0. Within that bounded scope, the conclusion follows from the provided packet and cited effective statuses without an external comparator or tuned numerical match.
 - **auditor confidence:** high
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`

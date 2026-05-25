@@ -48558,11 +48558,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 1.5,
+      "load_bearing_score": 4.5,
       "load_bearing_step": "The integrated DIR-3D core-card runner reports a bounded 12/16 result, with twelve retained positives and four named failures that remain the gravity/isotropy/k-achromaticity blockers.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "872d4f1a36ed57b93a89d95aaafccf786eb53902c6d30826e33b33f5ca87f3e4",
       "note_path": "docs/DIRAC_CORE_CARD_NOTE.md",
       "open_dependency_paths": [],
@@ -93190,24 +93190,50 @@
       "verdict_rationale": "The load-bearing step is class A algebra over retained-grade inputs, not a first-principles class C derivation. The runner does compute several operator and plaquette checks, but the decisive `g_bare=1` step uses the explicit bounded `beta=6` surface. No external comparator or tuned observational match is used. The clean verdict applies only to the bounded theorem scope stated above."
     },
     "g_bare_derivation_status_correction_audit_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T12:08:35.499753+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Given canonical trace normalization Tr(T_a T_b)=delta_ab/2, retained Wilson matching beta=2 N_c/g_bare^2, and the explicit local Wilson surface N_c=3, beta=6, the compatible value is g_bare=1; beta=6 is not derived.",
+          "g_bare_derivation_note": "Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom."
+        },
+        "dep_claim_type": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_derivation_note": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_derivation_note": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_derivation_note",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7f601ea57809be3ea6e92a39b6e94afbafcd0415dd8c64b91933350b7f8a61d6",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T120523Z-53c1ed38-g_bare_derivation_status-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the packet's bounded infrastructure scope, the cited repair authorities are retained-grade in the provided headers and the runner verifies the packet-structure predicates. The packet explicitly does not claim an absolute parent-promotion result.",
       "claim_id": "g_bare_derivation_status_correction_audit_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Bounded status-correction only: the packet documents that the original runner/dependency/status-scope blockers have been refreshed, without promoting the parent beyond its audited bounded status.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T12:08:35.499753+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -93217,19 +93243,19 @@
         "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The 2026-05-24 refresh supersedes the missing-runner finding and wires the retained 2026-05-03 rescaling-freedom and constraint-vs-convention rows as one-hop authorities while keeping proposal_allowed false for the parent.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f74ffe02c035538b29af80311cdf16ef4b5335d5632a396f465298e8e398efc5",
       "note_path": "docs/G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -93316,18 +93342,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 35,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 35
       },
       "runner_path": "scripts/frontier_g_bare_derivation_status_audit.py",
       "title": "g_bare Derivation Note \u2014 Status Correction Audit",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a narrow class-A closure check over existing retained inputs: runner presence, declared retained dependencies, and explicit no-promotion scope. The primary runner is structural rather than a first-principles physics computation, but that matches this packet's status-correction role and its completed output is PASS=35, FAIL=0. Within that bounded scope, the conclusion follows from the provided packet and cited effective statuses without an external comparator or tuned numerical match."
     },
     "g_bare_dynamical_fixation_obstruction_note_2026-04-18": {
       "audit_date": null,

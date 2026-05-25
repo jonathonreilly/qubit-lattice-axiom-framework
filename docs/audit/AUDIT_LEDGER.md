@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 141 |
-| **retained_no_go** | 155 |
+| **retained_no_go** | 156 |
 | **retained_bounded** | 429 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1269 |
+| unaudited | 1268 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 700 |
+| `audited_clean` | 701 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1496 |
+| `unaudited` | 1495 |
 
 | claim_type | count |
 |---|---:|
@@ -356,6 +356,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5045,6 +5046,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Riccati recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k, together with induction, proves every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The recurrence follows algebraically from the stated Bessel derivative identities and the Riccati equation, and the sign induction is valid because all summands in the convolution share the same nonzero sign. The cited parent is retained_no_go, and no open upstream premise is needed for the narrow U(1) coefficient theorem beyond the stated U(1) normalization and standard Bessel calculus.
 - **rationale:** The proof is a genuine algebraic closure: parity follows from evenness of I_0, while density and sign alternation follow from the explicit Riccati coefficient recurrence and a correct strong induction. The runner source performs exact symbolic and rational checks rather than merely printing constants, though its finite-order checks are only corroborative because the note supplies the all-order induction. The cached runner summary line reports THEOREM PASS=7 while the note expected PASS=8, but the source and stdout show no failing theorem check and this count mismatch is not load-bearing.
+- **auditor confidence:** high
+
+### `gauge_wilson_isotropy_boundary_note_2026-05-04`
+
+- **Note:** [`GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md`](../../docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-specific negative boundary: on the accepted isotropic Wilson nearest-neighbor plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive orientation-dependent plaquette coefficients.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T113857Z-f6ec5220-gauge_wilson_isotropy_bo-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Cl(3) pseudoscalar commutes with all three spatial generators, and the staggered eta plaquette product equals -1 on every plaquette orientation, so neither checked mechanism derives unequal Wilson orientation weights.  _(class `A`)_
+- **chain closes:** True — The source note proves the two scoped algebraic checks directly, and the runner source genuinely computes the Pauli commutators/anticommutators and eta products rather than merely printing constants. The accepted isotropic Wilson surface is supplied by a retained authority, while the axiom-premise citation correctly supplies the local Cl(3,0) algebra.
+- **rationale:** The load-bearing steps are class A algebraic identity checks over the provided axiom content and retained upstream Wilson-surface authority. The claim is narrowly scoped to two PR #528 mechanisms and does not assert a global no-go against every possible anisotropy derivation. The no-go discipline gate passes at that scoped resolution: alternative attacks through pseudoscalar-as-time-generator, eta orientation signs, qubit-reframe centrality, accepted-Wilson anisotropy, and constant bridge/coupling-lift reuse are either directly checked or blocked by same-packet retained authorities; nonmatching residual witness material is not load-bearing.
 - **auditor confidence:** high
 
 ### `gellmann_completeness_theorem_note_2026-05-02`

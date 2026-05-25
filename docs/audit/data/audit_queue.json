@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 259,
     "high": 341,
-    "leaf": 333,
+    "leaf": 332,
     "medium": 324
   },
   "cycle_break_target_count": 7,
@@ -28114,28 +28114,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -28542,6 +28520,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "no_per_site_chirality_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
       "transitive_descendants": 0
     },
     {
@@ -35892,32 +35896,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-        "no_per_site_chirality_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "primitive_p_heavyq_casimir_closure_note_2026-05-10_ppheavyq_closure",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -37862,5 +37840,5 @@
     }
   ],
   "ready_count": 29,
-  "total_pending": 1257
+  "total_pending": 1256
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 143 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 432 |
+| **retained_bounded** | 433 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1257 |
+| unaudited | 1256 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 706 |
+| `audited_clean` | 707 |
 | `audited_conditional` | 84 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1484 |
+| `unaudited` | 1483 |
 
 | claim_type | count |
 |---|---:|
@@ -683,6 +683,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -10677,6 +10678,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner constructs the finite staggered lattice Hamiltonian, solves the screened self-field from the evolving packet density, evolves the packet, and computes the stated blocked width, core, drift, and shell-gradient diagnostics without hard-coded output values. The conclusion closes only as this bounded finite-parameter computational statement, not as a broader physical self-gravity or asymptotic theorem.
 - **rationale:** Clean for the bounded runner-defined claim: the code computes the six sign/size cases and the stdout matches the note's contraction, core-excess, and shell-gradient sign claims. There are no cited dependencies and no external comparator or imported target value. The clean boundary is narrow: it does not establish sign-selective trajectory closure, a continuum limit, parameter robustness beyond the listed sweep, or a physical gravity bridge outside the specified parity-coupled scalar law.
 - **auditor confidence:** medium
+
+### `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On an even periodic finite L^3 lattice, with the standard staggered η phases treated as a Z2 lattice gauge field, all six axis orderings are gauge-equivalent and the η convention does not physically break S3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T115953Z-f79414e8-staggered_axis_symmetry_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each of the six axis orderings σ ∈ S3, there exists a site-local s: Λ → {±1} with η^σ_μ(n) = s(n) η_μ(n) s(n+μ̂).  _(class `C`)_
+- **chain closes:** True — The packet computes the plaquette field strength, Polyakov holonomies, and explicit Z2 coboundary solution for all six axis orderings, with no external comparator or fitted input. Within the stated even-periodic finite-lattice Z2 gauge-field scope, equal invariants plus the explicit gauge solve close the physical S3 symmetry claim.
+- **rationale:** The runner source genuinely constructs the staggered η fields, computes the gauge-invariant plaquette and Polyakov data, and solves the site-local Z2 gauge equations rather than printing or importing the contested conclusion. The only assumptions used are the stated finite even periodic lattice, the standard staggered convention, and standard finite Z2 gauge bookkeeping. The broader positivity-to-C3 bridge is explicitly excluded from the claim scope, so it does not block this bounded theorem.
+- **auditor confidence:** high
 
 ### `staggered_backreaction_capture_closure_note`
 

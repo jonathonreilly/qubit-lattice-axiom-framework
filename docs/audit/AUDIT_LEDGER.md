@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 145 |
+| **retained** | 146 |
 | **retained_no_go** | 157 |
 | **retained_bounded** | 447 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
 | unaudited | 1237 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 17 |
@@ -52,8 +51,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 724 |
+| `audited_clean` | 725 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
@@ -124,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -300,6 +297,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4034,6 +4032,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given n̂_x=(I-σ_3^{(x)})/2 on H=⊗_{x=1}^N C², the tensor product F=⊗_x σ_3^{(x)} acts on each occupation basis state as (-1)^{∑_x ν_x}=exp(iπQ̂_total).  _(class `A`)_
 - **chain closes:** True — The stated results follow directly from per-site Pauli algebra, tensor-product factorization, and the elementary even/odd binary-string count. No Hamiltonian, Noether conservation, physical fermion realization, or external comparator is imported inside the audited scope.
 - **rationale:** The scoped theorem is a closed finite-dimensional Pauli-algebra identity. The runner checks the load-bearing identities exactly in the N=3 representative case and includes finite-N combinatorial spot checks; the general proof supplies the symbolic tensor-factor argument. Minor wording around deriving [F,n̂_x]=0 from the bilinear clause is harmless because the same Z_2-even conjugation applies directly to σ_-^{(x)}σ_+^{(x)}.
+- **auditor confidence:** high
+
+### `fermion_parity_z2_grading_theorem_note_2026-05-02`
+
+- **Note:** [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T143835Z-51c5e857-fermion_parity_z2_gradin-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Because n_x has eigenvalues 0 and 1 on each tensor factor, F = exp(i pi sum_x n_x) acts as (-1)^{sum_x nu_x} = tensor_x sigma_{3,x}, which yields the parity eigenspaces and odd/even commutation rules.  _(class `A`)_
+- **chain closes:** True — The proof closes from the admitted finite-dimensional spectral calculus, per-site Pauli ladder construction, and tensor-product Fock basis. The runner source actually constructs the matrices for N=4 and verifies the relevant algebraic identities rather than merely printing constants.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the admitted finite-dimensional occupation basis and Pauli definitions. No cross-note authority, external comparator, fitted input, or physical fermion-statistics/superselection premise is imported. The proof appropriately keeps the dynamical conservation and physical selector claims conditional, so the audited algebraic scope follows.
 - **auditor confidence:** high
 
 ### `field_equation_derivation_note`

@@ -1,0 +1,29 @@
+{
+  "current_blockers": {
+    "coefficient_certified_top_response_present": false,
+    "hypercharge_uniqueness_retained": false,
+    "one_higgs_yukawa_selection_retained": false,
+    "physical_scale_g2_retained": false,
+    "retained_closure_allowed": false,
+    "strict_wz_denominator_response_closed": true,
+    "symbolic_top_response_row_present": true
+  },
+  "fail_count": 0,
+  "pass_count": 47,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The W/Z denominator response closes and the symbolic top row is present, but the top coefficient, retained one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open.",
+  "review_surface": [
+    "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
+    "outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
+  ],
+  "status": "exact support: strict W/Z denominator response rows on neutral carrier ray",
+  "strict_wz_denominator_response_closed": true,
+  "upstream_statuses": {
+    "ew_coupling_status": "unaudited",
+    "ew_mass_status": "retained",
+    "hypercharge_uniqueness_status": "unaudited",
+    "one_higgs_yukawa_selection_status": "unaudited",
+    "source_action_status": "retained_bounded"
+  }
+}

@@ -1,7 +1,135 @@
 {
-  "cycle_count": 0,
-  "cycles": [],
-  "length_counts": {},
+  "cycle_count": 3,
+  "cycles": [
+    {
+      "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "to": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        },
+        {
+          "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 5,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+          "title": "Y_T Qubit Neutral-Higgs Carrier-Ray Bridge",
+          "transitive_descendants": 5
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
+          "title": "Y_T Source-Coordinate Invariant Top/W Ratio Gate",
+          "transitive_descendants": 5
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0002",
+      "decision": null,
+      "edges": [
+        {
+          "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+        },
+        {
+          "from": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+          "to": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 5,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
+          "title": "Y_T Source-Coordinate Invariant Top/W Ratio Gate",
+          "transitive_descendants": 5
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
+          "title": "Y_T Strict W/Z Neutral-Carrier Response Packet",
+          "transitive_descendants": 5
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0003",
+      "decision": null,
+      "edges": [
+        {
+          "from": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "to": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        },
+        {
+          "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+        },
+        {
+          "from": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+          "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 5,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+          "title": "Y_T Qubit Neutral-Higgs Carrier-Ray Bridge",
+          "transitive_descendants": 5
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
+          "title": "Y_T Source-Coordinate Invariant Top/W Ratio Gate",
+          "transitive_descendants": 5
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
+          "title": "Y_T Strict W/Z Neutral-Carrier Response Packet",
+          "transitive_descendants": 5
+        }
+      ],
+      "requires_lemma_extraction": false
+    }
+  ],
+  "length_counts": {
+    "2": 2,
+    "3": 1
+  },
   "sort": [
     "max_transitive_descendants descending",
     "length ascending",

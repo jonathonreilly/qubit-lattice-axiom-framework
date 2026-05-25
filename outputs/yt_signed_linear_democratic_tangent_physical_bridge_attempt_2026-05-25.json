@@ -1,0 +1,36 @@
+{
+  "bare_retained_allowed": false,
+  "fail_count": 0,
+  "lambda_obstruction": {
+    "lambda_family": "y_33(lambda)=lambda/sqrt(6)",
+    "structural_shortcut_closed": "false"
+  },
+  "pass_count": 52,
+  "primitive_unit_branch": {
+    "conditional_if_primitive_physical_source": "y_33=1/sqrt(6)",
+    "physical_source_premise_closed": false
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The primitive-unit branch proves y_33=1/sqrt(6) only if the physical top Yukawa deformation is accepted as the primitive signed-linear source/action tangent. Without that premise, lambda remains free.",
+  "remaining_bridge": "derive physical top Yukawa deformation = primitive unit signed-linear source/action tangent on the normalized top trilinear",
+  "review_surface": [
+    "docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py",
+    "outputs/yt_signed_linear_democratic_tangent_physical_bridge_attempt_2026-05-25.json"
+  ],
+  "signed_linear_tangent": {
+    "primitive_unit_tangent_component": "1/sqrt(6)"
+  },
+  "status": "conditional support plus exact obstruction",
+  "trilinear": {
+    "color": "1/sqrt(3)",
+    "combined": "1/sqrt(6)",
+    "isospin": "1/sqrt(2)"
+  },
+  "upstream_statuses": {
+    "ew_mass": "retained",
+    "lsp_source": "retained_bounded",
+    "one_higgs": "unaudited",
+    "source_action": "retained_bounded"
+  }
+}

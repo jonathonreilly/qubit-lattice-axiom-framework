@@ -1,0 +1,22 @@
+{
+  "fail_count": 0,
+  "fork": {
+    "linear_source_tangent": "sqrt(6)/6",
+    "projective_probability": "1/6",
+    "signed_linear_amplitude": "1/sqrt(6)"
+  },
+  "pass_count": 47,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The finite-dimensional signed-linear source tangent is exact, but the packet does not prove that the physical top Yukawa coefficient is this tangent.",
+  "remaining_bridge": "strict top Yukawa coefficient equals signed linear action-tangent component of democratic Q_L source",
+  "review_surface": [
+    "docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py",
+    "outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json"
+  ],
+  "status": "exact support: signed-linear democratic source tangent gives 1/sqrt(6); physical top-response bridge remains open",
+  "upstream_statuses": {
+    "ew_mass": "retained",
+    "source_action": "retained_bounded"
+  }
+}

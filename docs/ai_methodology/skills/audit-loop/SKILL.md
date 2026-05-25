@@ -226,6 +226,35 @@ for e in q:
 PY
 ```
 
+### Dispatch Queue
+
+`docs/audit/data/audit_dispatch_queue.json` carries provenance and
+promotion re-audit targets, processed only when explicitly selected
+by the user or surfaced by an external dispatcher — not automatically
+pulled by the default selection above.
+
+**Same-status confirmation rule:** if a fresh-context re-audit on a
+dispatch target confirms the same `{claim_type, audit_status,
+effective_status}` as the manifest guard, do not re-attempt. The
+producer (`docs/audit/scripts/compute_audit_dispatch_queue.py`) auto-
+retires such targets to `resolved_targets` with one of two resolution
+reasons:
+
+- `same_status_fresh_context_reaudit_after_manifest` (general provenance
+  resolution: `audit_date ≥ manifest.generated_date` and `independence
+  != weak`)
+- `bounded_terminal_after_reaudit` (promotion dispatch where the post-
+  manifest verdict confirms `bounded_theorem` — retain as bounded-terminal
+  unless future source work changes the claim hash)
+
+Re-auditing a row already in `resolved_targets` is wasted work; only
+re-attempt if the source note's `note_hash` has changed or the user
+explicitly requests a fresh independence pass.
+
+For `ready=false` dispatch rows, check the `ready_blocker` field —
+it names the blocking dep as `blocked_by_dependency:<claim_id>:<effective_status>`. Do not attempt the audit until that dep reaches
+retained-grade.
+
 ## Context To Read
 
 For the selected claim, read only:

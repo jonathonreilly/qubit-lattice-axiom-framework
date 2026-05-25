@@ -78,3 +78,9 @@ upstream_dependencies:
   - axiom_first_lattice_noether_theorem_note_2026-04-29
 source_sets_audit_outcome: false
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)

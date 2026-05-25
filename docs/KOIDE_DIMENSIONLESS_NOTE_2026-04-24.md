@@ -1,29 +1,18 @@
 # Koide Dimensionless Objection-Closure Review Packet
 
-**Date:** 2026-04-24 (2026-05-18: claim_scope formalized as conditional
-obstruction tests, not closed retained no-go, per audit verdict
-boundary instruction).
+**Date:** 2026-04-24 (2026-05-25: claim-boundary phrasing adopted
+verbatim from auditor's `notes_for_re_audit_if_any`; supersedes
+prior 2026-05-18 / 2026-05-19 narrowing prose).
 **Claim type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
-of this packet is **conditional obstruction tests** on the
-admitted-source-response-carrier-plus-endpoint-domain surface. The
-algebraic obstruction tests (residuals inside the chosen model)
-hold as exact algebraic checks on that admitted surface. This
-packet **does NOT** prove a closed retained no-go from the axiom
-alone — the admitted source-response carrier with surviving `Z`,
-and the endpoint source/readout/basepoint domain, are not derived
-from the framework axioms here. The audit verdict's repair
-sub-target ("supply retained bridge theorems deriving the admitted
-source-response carrier with surviving Z and the endpoint
-source/readout/basepoint domain from the axiom, OR split the packet")
-remains separate open work. Until those bridges land, this packet
-may be cited as **conditional obstruction support** only, not as a
-retained no-go on the dimensionless charged-lepton Koide lane.
-**Status authority:** independent audit lane only. The
-`proposed_retained` label below is a source-side proposal
-placeholder, not an audit verdict.
-**Status:** proposed_retained support / no-go packet. This packet does **not** close the
-dimensionless charged-lepton Koide lane.
+**Claim:** exact-Fraction conditional obstruction support inside the
+admitted two-channel/endpoint carrier, namely (R1) Q=2/3 at zero
+background, (R2) z=-1/3, (R3) η_APS=2/9 transfers to δ=2/9.
+**Admitted input:** two-channel/endpoint carrier (the two-channel
+source-response carrier of OA-1 below together with the endpoint
+source/readout/basepoint domain of OA-2 below). The R1/R2/R3 results
+are conditional on this admission and do **not** constitute axiom-native
+closure of Q=2/3, z=-1/3, or δ=2/9.
+**Status authority:** independent audit lane only.
 **Runner:** `scripts/frontier_koide_dimensionless_objection_closure_review.py`
 
 ## Decision

@@ -179,3 +179,10 @@ SUMMARY: PASS=... FAIL=0
 The green result means the top/W response-ratio route is algebraically valid
 and that the current repo blockers are narrow.  It does not mean positive Y_T
 closure has been obtained.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [yt_pr230_consolidated_status_note_2026-05-22](YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
+- [ew_coupling_derivation_note](EW_COUPLING_DERIVATION_NOTE.md)

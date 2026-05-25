@@ -151,3 +151,10 @@ SUMMARY: PASS=... FAIL=0
 
 The green result means the authority gate was checked and remains honestly
 open.  It does not establish a positive Y_T derivation.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [yt_pr230_consolidated_status_note_2026-05-22](YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
+- [yt_fh_top_w_response_ratio_gate_note_2026-05-25](YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md)

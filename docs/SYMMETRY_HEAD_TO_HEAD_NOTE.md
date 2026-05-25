@@ -55,3 +55,9 @@ law and is not directly paired with a `Z2 x Z2` MI artifact.
 
 Use exact mirror when the priority is joint coexistence with stronger gravity.
 Use `Z2 x Z2` when the priority is decoherence depth and retained range.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [mirror_chokepoint_boundary_fit_note](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md)

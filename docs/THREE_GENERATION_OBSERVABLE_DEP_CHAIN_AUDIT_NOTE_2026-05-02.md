@@ -105,3 +105,8 @@ recommended dep cleanup):
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [generation_axiom_boundary_note](GENERATION_AXIOM_BOUNDARY_NOTE.md)
+- [site_phase_cube_shift_intertwiner_note](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md)
+- [s3_taste_cube_decomposition_note](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md)
+- [s3_mass_matrix_no_go_note](S3_MASS_MATRIX_NO_GO_NOTE.md)
+- [z2_hw1_mass_matrix_parametrization_note](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md)
+- [physical_lattice_necessity_note](PHYSICAL_LATTICE_NECESSITY_NOTE.md)

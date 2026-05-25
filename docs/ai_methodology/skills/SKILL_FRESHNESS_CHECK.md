@@ -3,6 +3,12 @@
 Before using any repo methodology skill, make a best-effort check for a newer
 skill body.
 
+Every repo methodology `SKILL.md` must include a `## Skill Freshness` section
+that points to this file before its workflow-specific instructions. This applies
+to review-loop, audit-loop, physics-loop, no-go-discipline, reviewer skills,
+and any future repo skill. A skill that cannot safely complete this check must
+state that freshness could not be verified before continuing.
+
 1. If `origin/main` is reachable, run `git fetch origin main`.
 2. If the current worktree is clean and can be safely fast-forwarded, update it
    before continuing.

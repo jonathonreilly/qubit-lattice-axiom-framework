@@ -5,12 +5,28 @@ conditional exact-algebra statement per
 `OBSERVABLE_PRINCIPLE_AUDIT_NOTE_2026-05-02` finding;
 2026-05-09 runner-local derivation of P2/P3/P4 from registered
 staggered-block algebra narrows the non-algebraic premise set, without
-promoting any cited upstream row.
-**Type:** bounded_theorem (exact lattice algebra given four explicitly
-admitted physical-principle / regularity premises).
-**Claim scope (post-2026-05-07 scope narrowing):** the load-bearing claim
-of this note is the **conditional exact-algebra statement** on the exact
-minimal hierarchy block:
+promoting any cited upstream row;
+2026-05-25 headline narrowed to the **finite-algebra `log|det(D+J)|`
+generator step on the runner block, conditional on the P1 Tier-A
+admission**, per audit-lane verdict that unconditional
+axiom-to-observable closure is not supported. P1 stays admitted; the
+Tier-A portfolio is not extended.
+**Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
+the runner block, conditional on the P1 Tier-A admission; runner-local
+algebraic corollaries P2, P3, P4 are checked in §"Runner-local
+derivation of P2/P3/P4").
+**Headline (post-2026-05-25 narrowing):** *Given the P1 Tier-A admission
+(scalar observables additive over independent subsystems), the unique
+finite-algebra additive CPT-even scalar generator on the runner
+staggered block is `W = log|det(D+J)|`, and its exact local
+source-derivative algebra is the in-scope theorem-grade content of this
+note.* Unconditional axiom-to-observable closure (i.e. derivation of P1
+itself from retained primitives) is explicitly **out of scope** and is
+not asserted here.
+**Claim scope (post-2026-05-07 scope narrowing; further narrowed
+2026-05-25):** the load-bearing claim of this note is the **conditional
+exact-algebra statement** on the exact minimal hierarchy block,
+conditional on the P1 Tier-A admission:
 
 > **Given** the four explicitly-admitted premises P1 (scalar additivity on
 > independent subsystems), P2 (CPT-even phase blindness), P3 (continuity /
@@ -54,6 +70,38 @@ a source-side claim-boundary declaration, not an audit verdict; the
 conditional repair path (see §"Audit-named conditional scope" below).
 **Script:** `scripts/frontier_hierarchy_observable_principle_from_axiom.py`
 
+## Admissions
+
+This note is the canonical parent row for the **P1** Tier-A admitted
+input per the central registry
+[ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+and its machine-readable sidecar `docs/audit/data/tier_a_admissions.json`
+(canonical id `observable_principle_from_axiom_note`, leverage 88).
+
+- **P1 (admitted, this row's parent):** scalar observables are
+  additive over independent subsystems
+  (`W[J_1 ⊕ J_2] = W[J_1] + W[J_2]`). The Tier-A registry records the
+  retained `retained_no_go` portfolio (six P1-bridge no-go rows) and
+  the rigor-pass classification of P1 as a *principle-grade
+  (extensivity)* admission. Under the Tier-A propagation policy, P1 is
+  chain-satisfying only at `retained_bounded`, so dependents of this
+  note resolve cleanly as bounded rather than blocked.
+- **Out-of-scope of this note's load-bearing theorem:** the
+  derivation of P1 itself from retained primitives. The conditional
+  load-bearing theorem of this note is the finite-algebra
+  `log|det(D+J)|` generator step on the runner block **given P1**, not
+  the unconditional axiom-to-observable closure.
+- **Runner-local corollaries (not separate admissions):** P2 (CPT-even
+  phase blindness), P3 (continuity / minimal regularity), and P4
+  (normalization choice) are checked in §"Runner-local derivation of
+  P2/P3/P4" as algebraic consequences of the registered
+  staggered-block / `CPT_EXACT_NOTE` structure plus finite-block
+  polynomial regularity and zero-source baseline convention.
+
+This note does **not** extend the Tier-A portfolio; it only narrows
+its own theorem-grade content to what the P1 admission actually
+delivers, per the audit-lane verdict.
+
 ## Question
 
 Can the last hierarchy gap be closed by deriving the scalar observable
@@ -62,7 +110,13 @@ language about effective actions and order parameters?
 
 ## Answer
 
-Yes, conditionally, on the exact minimal hierarchy block.
+**Conditionally on the P1 Tier-A admission** (scalar additivity on
+independent subsystems), the finite-algebra `log|det(D+J)|` generator
+step on the exact minimal hierarchy block closes the axiom-to-observable
+map for that selected generator. Unconditional axiom-to-observable
+closure (deriving P1 itself from retained primitives) is **not**
+claimed by this note and remains the open path per the Tier-A
+registry.
 
 The key step is not another determinant fit. It is the additive structure of
 the exact Grassmann Gaussian.

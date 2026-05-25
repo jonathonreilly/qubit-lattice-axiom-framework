@@ -1,21 +1,40 @@
-# Native Teleportation Axioms And Theory Note
+# Native Teleportation Axioms And Theory Note (Planning / Open-Gate Consistency Artifact)
 
-**Date:** 2026-04-26
-**Status:** planning / candidate theory artifact; not retained framework
-promotion
+**Date:** 2026-04-26 (audit-repair reframe: 2026-05-25)
+**Status authority:** independent audit lane only
+**Claim type:** open_gate
+**Type:** planning / open-gate consistency artifact
 **Companion runner:** `scripts/frontier_teleportation_axiom_closure_checks.py`
+
+## Abstract
+
+The note is valid as a planning / open-gate consistency artifact, not as
+unconditional native teleportation closure. The candidate lane-principle
+bundle describes what would have to hold if the taste-qubit teleportation
+lane were later promoted; it does not, on its own, promote the lane or add
+framework axioms. Native teleportation closure is explicitly left open per
+the native-resource-genesis admission (scaling, apparatus,
+bath/leakage/noise, and physical-control derivations are missing).
+
+The note also contains, as an inline narrow bounded fact subsection, the
+finite Bell-frame `Z2 x Z2` XOR correction law together with the Manhattan
+speed-one record-delivery bound on the audited `3D side=2` surface. That
+subsection is the only part of this note that is intended to support narrow
+bounded use; it does not by itself close the lane.
 
 ## Scope
 
-This note proposes a first native axiom bundle for the taste-qubit
-teleportation lane. These are not replacements for the framework's retained
-`Cl(3)` on `Z^3` axiom surface. They are candidate lane-level closure
-principles: if the teleportation lane is later promoted, these principles say
-what must be derived, measured, or rejected.
+This note proposes a first native principle bundle for the taste-qubit
+teleportation lane. These are not replacements for the framework's
+one-qubit-at-each-`Z^3`-site baseline. They are candidate lane-level
+closure principles: if the teleportation lane is later promoted, these
+principles say what must be derived, measured, or rejected.
 
 The theory remains ordinary quantum state teleportation only. It does not
 claim matter teleportation, mass transfer, charge transfer, energy transfer,
-object transport, or faster-than-light signaling.
+object transport, or faster-than-light signaling. The note is a planning /
+open-gate consistency artifact; it is not an unconditional native
+teleportation closure.
 
 ## Native Teleportation Object
 
@@ -63,9 +82,9 @@ ledgers are not transported by the protocol.
 This is a guardrail, not a physics result. Any future script that reports a
 teleportation success must keep this boundary explicit.
 
-## Candidate Lane Axioms
+## Candidate Lane Principles (Not Framework Axioms)
 
-### A1. Retained-Factor Observability
+### Retained-Factor Observability Principle
 
 If the protocol traces over cells and spectator taste bits, then a deterministic
 logical readout or correction operator must live in
@@ -91,7 +110,7 @@ notation warning into a selection rule: raw `xi_5` is rejected for
 deterministic traced 3D teleportation unless the spectator branch becomes an
 explicit record.
 
-### A2. Bell-Frame Connection
+### Bell-Frame Connection Principle
 
 A Poisson-produced Bell resource may land in any of the four Bell sectors. The
 sector is a discrete Pauli-frame connection, not automatically a failure and
@@ -122,7 +141,7 @@ The `3D side=2, G=1000` resource currently lands in the `Psi+` frame, so
 Phi+` frame is expected to pass. This is exactly what the 3D operator-consistent
 end-to-end audit reports.
 
-### A3. 3D+1 Causal Record Separability
+### 3D+1 Causal Record Separability Principle
 
 The entangled quantum resource and the classical Bell record are separate
 sectors. The resource can be nonlocal in the ordinary entanglement sense, but
@@ -136,11 +155,11 @@ t_delivery >= t_A + |dx| + |dy| + |dz|.
 ```
 
 Before that event, Bob's accessible reduced state may contain resource bias,
-but it must be independent of Alice's unknown input state. This axiom is the
-lane-level no-signaling firewall: the correction is a causal feed-forward
+but it must be independent of Alice's unknown input state. This principle is
+the lane-level no-signaling firewall: the correction is a causal feed-forward
 operation, not a hidden superluminal control.
 
-### A4. Native Resource Genesis
+### Native Resource Genesis Principle
 
 A resource is native only if it is supplied with a preparation certificate, not
 just an offline diagonalized state. The certificate must include:
@@ -157,7 +176,7 @@ starts from a unique, gapped, separable `G=0` state and reaches a high-fidelity
 it lacks scaling, apparatus, bath/leakage/noise, and physical control
 derivations.
 
-### A5. Exhaustive Branch Accounting
+### Exhaustive Branch Accounting Principle
 
 No hidden conditioning is allowed. Every branch-sensitive datum must be in one
 of three states:
@@ -169,15 +188,42 @@ or rejected as an invalid deterministic protocol ingredient.
 ```
 
 This applies to Bell outcomes, Bell-frame labels, spectator taste branches,
-record drops/delays/flips, and preparation-path outcomes. The axiom is what
-prevents fixed-spectator algebra from being silently promoted into a traced
-operational readout.
+record drops/delays/flips, and preparation-path outcomes. This principle is
+what prevents fixed-spectator algebra from being silently promoted into a
+traced operational readout.
 
-## Derived Theory
+## Narrow Bounded Fact Subsection: Bell-Frame XOR Plus Manhattan Record Bound
 
-### Theorem 1: Raw `xi_5` No-Go For Traced 3D Retained-Z
+This subsection collects the only material in the note that is intended to
+support narrow bounded use on the audited finite surface. It is inline here
+for the planning / open-gate consistency framing; a separate narrow proof-walk
+companion is a follow-on PR target, not part of this note's status.
 
-Assume A1 and a 3D retained axis `r`. Since
+The finite content is:
+
+- the discrete Bell-frame correction law
+  ```text
+  c_total = c xor h
+  C_B(c, h) = Z^(z xor h_z) X^(x xor h_x)
+  ```
+  over `Z2 x Z2` with the labelling convention of the Bell-frame
+  connection principle; and
+- the speed-one Manhattan record-delivery bound
+  ```text
+  t_delivery >= t_A + |dx| + |dy| + |dz|
+  ```
+  with Bob's reduced state independent of the unknown input before
+  `t_delivery`, on the audited `3D side=2` surface.
+
+These two facts are finite, audited, and do not, on their own, close native
+teleportation; they are bounded ingredients of the open lane, not a closure.
+
+## Candidate Consequences
+
+### Candidate Consequence 1: Raw `xi_5` No-Go For Traced 3D Retained-Z
+
+Assume the retained-factor observability principle and a 3D retained
+axis `r`. Since
 
 ```text
 xi_5 = Z_r S_env,  S_env = product_{a != r} Z_a,
@@ -196,29 +242,31 @@ raw xi_5 as traced Z: FAIL
 raw xi_5 Bell projectors: FAIL
 ```
 
-### Theorem 2: Bell-Frame Covariant Teleportation
+### Candidate Consequence 2: Bell-Frame Covariant Teleportation
 
-Assume A2 and an ideal Bell-sector resource with frame `h`. Standard
-teleportation with Alice outcome `c` reconstructs Bob's state after applying
-the composed correction `c xor h`, up to Pauli phase convention. Thus the
-protocol is covariant under the discrete `Z2 x Z2` Bell-frame group.
+Assume the Bell-frame connection principle and an ideal Bell-sector resource
+with frame `h`. Standard teleportation with Alice outcome `c` reconstructs
+Bob's state after applying the composed correction `c xor h`, up to Pauli
+phase convention. Thus the protocol is covariant under the discrete
+`Z2 x Z2` Bell-frame group.
 
 Practical consequence: a known `Psi+` resource is a valid framed resource; an
 unknown or untracked `Psi+` resource is a fixed-`Phi+` protocol failure.
 
-### Theorem 3: Pre-Delivery Input Independence
+### Candidate Consequence 3: Pre-Delivery Input Independence
 
-Assume A3 and that Bob has not received the record. Alice's local measurement,
-averaged over the inaccessible Bell record, is a trace-preserving operation on
-the Alice side. Therefore Bob's reduced state before record delivery is the
-Bob marginal of the resource and is independent of the unknown input state.
+Assume the 3D+1 causal record separability principle and that Bob has not
+received the record. Alice's local measurement, averaged over the
+inaccessible Bell record, is a trace-preserving operation on the Alice side.
+Therefore Bob's reduced state before record delivery is the Bob marginal of
+the resource and is independent of the unknown input state.
 
 For imperfect resources this marginal need not be exactly `I/2`; the required
 condition is pairwise input independence. The 3D resource probe records exactly
 this distinction: Bob's marginal has a resource bias, while pairwise
 pre-message input distance remains at numerical zero.
 
-### Theorem 4: Closure Is A Product, Not A Fidelity Number
+### Candidate Consequence 4: Closure Is A Product, Not A Fidelity Number
 
 High framed teleportation fidelity is necessary but not sufficient for native
 closure. Nature-grade closure requires the product:
@@ -237,14 +285,14 @@ even when a small-surface fidelity number is excellent.
 
 ## Current Evidence Map
 
-| axiom/theorem | current support | status |
+| principle / candidate consequence | current support | status |
 | --- | --- | --- |
 | B0 state-only boundary | protocol notes and causal notes reject matter, mass, charge, energy, object, and FTL language | supported guardrail |
-| A1 retained-factor observability | 3D readout audit accepts `Z_r/X_r` and rejects raw `xi_5` traced readout | supported on audited finite surfaces |
-| A2 Bell-frame connection | 3D resource lands in `Psi+`; fixed `Phi+` fails; tracked frame passes | supported on `3D side=2` |
-| A3 3D+1 causal record separability | Manhattan speed-one channel delivers at tick 11 and blocks outside-cone use | supported as explicit channel |
-| A4 native resource genesis | finite-time 3D ramp reaches high `Psi+` resource from a simple `G=0` state | candidate only |
-| A5 exhaustive branch accounting | Bell outcome, frame, record faults, and raw-`xi_5` branch issues are explicit | partially supported |
+| retained-factor observability principle | 3D readout audit accepts `Z_r/X_r` and rejects raw `xi_5` traced readout | supported on audited finite surfaces |
+| Bell-frame connection principle | 3D resource lands in `Psi+`; fixed `Phi+` fails; tracked frame passes | supported on `3D side=2` |
+| 3D+1 causal record separability principle | Manhattan speed-one channel delivers at tick 11 and blocks outside-cone use | supported as explicit channel |
+| native resource genesis principle | finite-time 3D ramp reaches high `Psi+` resource from a simple `G=0` state | candidate only |
+| exhaustive branch accounting principle | Bell outcome, frame, record faults, and raw-`xi_5` branch issues are explicit | partially supported |
 
 ## Nature-Grade Closure Blockers
 
@@ -265,7 +313,7 @@ The following blockers remain open and are not solved by this note:
 
 ## Falsifiable Next Tests
 
-The axiom bundle makes concrete near-term tests:
+The principle bundle makes concrete near-term tests:
 
 1. A spectator-branch-recorded raw-`xi_5` protocol should pass only when the
    branch record is causally delivered and used in correction.
@@ -274,16 +322,25 @@ The axiom bundle makes concrete near-term tests:
 3. A 3D+1 record-channel replacement should reproduce the same no-signaling
    result while deriving the record carrier from native dynamics.
 4. Larger 3D resource probes should preserve a calibratable Bell frame and a
-   useful gap/preparation path, or the resource-genesis axiom fails to scale.
+   useful gap/preparation path, or the resource-genesis principle fails to
+   scale.
 5. Any attempted deterministic protocol using raw `xi_5` as traced 3D `Z`
    without spectator records should fail the retained-factor guard.
 
 ## Status
 
 This theory pass narrows the lane by making the missing structure explicit. It
-does not promote the teleportation lane beyond planning / candidate theory
-artifact. The strongest current statement remains:
+does not promote the teleportation lane beyond a planning / open-gate
+consistency artifact. Native teleportation closure is explicitly left open per
+the native-resource-genesis admission: the resource-genesis principle is a
+candidate only, lacking scaling, apparatus, bath/leakage/noise, and
+physical-control derivations.
+
+The strongest current statement remains:
 
 > Standard quantum state teleportation can be represented on native retained
 > taste-qubit factors with explicit Bell-frame accounting and a causal 3D+1
 > two-bit record channel, on the audited finite surfaces.
+
+This is a consistency statement on the audited finite surface, not an
+unconditional native teleportation closure.

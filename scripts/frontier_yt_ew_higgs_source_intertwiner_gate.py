@@ -21,6 +21,7 @@ DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_ew_higgs_source_intertwiner_gate_2026-05-25.json"
 
 NOTE = DOCS / "YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md"
+NEUTRAL_RAY_BRIDGE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
 ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
 HYPERCHARGE = DOCS / "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
@@ -68,7 +69,7 @@ def matrix_is_zero(matrix: sp.Matrix) -> bool:
 
 def part1_anchors() -> dict[str, Any]:
     print("\nPart 1: anchors and current authority")
-    for path in (NOTE, EW_MASS, ONE_HIGGS, HYPERCHARGE, LEDGER):
+    for path in (NOTE, NEUTRAL_RAY_BRIDGE, EW_MASS, ONE_HIGGS, HYPERCHARGE, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
@@ -149,13 +150,15 @@ def part5_current_blockers(statuses: dict[str, Any]) -> dict[str, Any]:
     print("\nPart 5: current closure blockers")
     strict_rows = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
     blockers = {
-        "source_to_ew_doublet_intertwiner_derived": False,
+        "neutral_carrier_ray_bridge_present": NEUTRAL_RAY_BRIDGE.exists(),
+        "full_same_surface_ew_transfer_response_present": False,
         "one_higgs_yukawa_selection_retained": statuses["one_higgs_yukawa_selection_status"] == "retained",
         "hypercharge_uniqueness_retained": statuses["hypercharge_uniqueness_status"] == "retained",
         "strict_same_source_top_w_rows_present": strict_rows.exists(),
         "numerical_g2_retained_authority_present": False,
     }
-    check("source-to-EW-doublet intertwiner remains unproved", not blockers["source_to_ew_doublet_intertwiner_derived"])
+    check("neutral carrier-ray bridge is present", blockers["neutral_carrier_ray_bridge_present"])
+    check("full same-surface EW transfer response remains unproved", not blockers["full_same_surface_ew_transfer_response_present"])
     check("strict same-source top/W rows remain absent", not blockers["strict_same_source_top_w_rows_present"])
     check("one-Higgs carrier is not retained authority yet", not blockers["one_higgs_yukawa_selection_retained"])
     check("hypercharge uniqueness is not retained authority yet", not blockers["hypercharge_uniqueness_retained"])
@@ -201,7 +204,8 @@ def main() -> int:
     retained_closure_allowed = (
         statuses["source_action_status"] == "retained"
         and statuses["ew_mass_status"] == "retained"
-        and blockers["source_to_ew_doublet_intertwiner_derived"]
+        and blockers["neutral_carrier_ray_bridge_present"]
+        and blockers["full_same_surface_ew_transfer_response_present"]
         and blockers["one_higgs_yukawa_selection_retained"]
         and blockers["hypercharge_uniqueness_retained"]
         and blockers["strict_same_source_top_w_rows_present"]
@@ -212,8 +216,8 @@ def main() -> int:
         "candidate_intertwiner_algebra_closed": candidate_intertwiner_algebra_closed,
         "retained_closure_allowed": retained_closure_allowed,
         "retained_closure_blocker": (
-            "The neutral EW radial carrier map has the correct algebra, but the repo "
-            "does not yet derive the signed-record source as that carrier, and the "
+            "The neutral EW carrier ray is now bridged from the signed-record source, "
+            "but the repo still lacks full same-surface EW transfer response, and the "
             "top one-Higgs carrier plus hypercharge rows are not retained authority."
         ),
         "current_blockers": blockers,

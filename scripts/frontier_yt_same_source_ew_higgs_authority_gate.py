@@ -29,6 +29,7 @@ OUTPUT = ROOT / "outputs" / "yt_same_source_ew_higgs_authority_gate_2026-05-25.j
 NOTE = DOCS / "YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md"
 SOURCE_ACTION_STATUS = DOCS / ("YT_" + "PR" + "230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md")
 FH_GATE = DOCS / "YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md"
+NEUTRAL_RAY_BRIDGE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
@@ -86,7 +87,7 @@ def matrix_is_zero(matrix: sp.Matrix) -> bool:
 
 def part1_anchors() -> dict[str, Any]:
     print("\nPart 1: anchors and audit status")
-    for path in (NOTE, SOURCE_ACTION_STATUS, FH_GATE, EW_MASS, LEDGER):
+    for path in (NOTE, SOURCE_ACTION_STATUS, FH_GATE, NEUTRAL_RAY_BRIDGE, EW_MASS, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
@@ -151,11 +152,12 @@ def part3_ew_higgs_required_structure() -> None:
 
 
 def part4_intertwiner_missing_witness() -> dict[str, Any]:
-    print("\nPart 4: same-source EW/Higgs intertwiner is not present")
+    print("\nPart 4: carrier ray is present; full EW transfer response is not")
     source_action_text = read(SOURCE_ACTION_STATUS)
     ew_text = read(EW_MASS)
+    check("neutral carrier-ray bridge is present", NEUTRAL_RAY_BRIDGE.exists())
     check(
-        "source-action support says it is not physical neutral EW/Higgs authority",
+        "source-action support says it is not full physical neutral EW/Higgs authority",
         "not same-surface neutral EW/Higgs authority" in source_action_text
         or "not yet accepted as current neutral EW/Higgs authority" in source_action_text,
     )
@@ -172,7 +174,8 @@ def part4_intertwiner_missing_witness() -> dict[str, Any]:
     check("no strict top/W FH row certificate exists", not (ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json").exists())
     return {
         "same_source_ew_higgs_authority_present": False,
-        "ew_carrier_intertwiner_present": False,
+        "neutral_carrier_ray_bridge_present": NEUTRAL_RAY_BRIDGE.exists(),
+        "full_same_surface_ew_transfer_response_present": False,
         "strict_top_w_rows_present": False,
     }
 
@@ -218,9 +221,9 @@ def main() -> int:
         "status": "current-surface authority gate remains open",
         "proposal_allowed": False,
         "proposal_allowed_reason": (
-            "The source-action support packet is retained_bounded only, "
-            "but no retained theorem identifies that source with the neutral "
-            "EW Higgs doublet radial background used by the retained EW mass theorem."
+            "The neutral carrier ray is now bridged, but the source-action support "
+            "packet is retained_bounded only and no retained theorem supplies the "
+            "full same-surface EW transfer response needed by the top/W route."
         ),
         "current_blockers": blockers,
         "upstream_statuses": statuses,

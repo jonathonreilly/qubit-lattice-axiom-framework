@@ -28,8 +28,9 @@ source.
 
 ## Result
 
-The current Y_T source-action surface does not yet supply same-source EW/Higgs
-action authority.
+The current Y_T source-action surface now supplies an exact neutral
+carrier-ray bridge, but it does not yet supply same-source EW/Higgs transfer
+response authority.
 
 The retained bounded Y_T source-action packet proves an exact finite identity:
 
@@ -38,8 +39,10 @@ product RN source on signed records
   <-> site-diagonal source-coupled local action.
 ```
 
-That source is a one-component signed-record source.  The retained EW Higgs
-gauge-mass theorem assumes a different physical object:
+That source is a one-component signed-record source.  The neutral carrier-ray
+bridge identifies it, up to affine source reparameterization, with the `P_-`
+occupation ray used by the retained EW Higgs neutral vacuum.  The retained EW
+Higgs gauge-mass theorem still assumes the stronger physical object:
 
 ```text
 one SU(2)_L Higgs doublet,
@@ -48,8 +51,9 @@ neutral vacuum H_0 = (0, v/sqrt(2)),
 standard covariant kinetic term |D_mu H|^2.
 ```
 
-The Y_T source can be a coordinate used in a future EW/Higgs source theorem, but
-the current repo does not yet provide the required intertwiner:
+The Y_T source can be a coordinate used in a future EW/Higgs source theorem, and
+the carrier ray is now fixed.  The current repo still does not yet provide the
+required transfer-response theorem:
 
 ```text
 I_EW : Y_T signed-record source h
@@ -66,8 +70,8 @@ of the following on one surface:
 
 1. **Source identity.** The same scalar source coordinate `h` appears in the
    top-sector and W-sector transfer matrices.
-2. **EW carrier identity.** The source moves the radial neutral Higgs-doublet
-   background, not merely a gauge-singlet signed-record observable.
+2. **EW transfer-response identity.** The neutral carrier-ray source moves the
+   physical radial Higgs-doublet background on the top and W transfer surfaces.
 3. **Kinetic identity.** The same action contains the covariant kinetic term
    that gives `M_W = g_2 v/2`.
 4. **Response identity.** `M_t(h)` and `M_W(h)` are differentiable isolated-pole
@@ -76,8 +80,8 @@ of the following on one surface:
    H-unit overlap is used to choose the map.
 
 The current Y_T source-action surface closes item 1 only as a finite
-signed-record support identity, not as physical EW/Higgs authority.  Items 2-4
-remain open.
+signed-record support identity and now closes the carrier-ray alignment.  Items
+2-4 remain open as physical EW/Higgs transfer authority.
 
 ## Why The Qubit / Signed-Record Axiom Helps But Does Not Finish
 
@@ -85,11 +89,11 @@ The qubit framing makes the primitive record unit cleaner: a local Pauli
 observable has two outcomes, and the Y_T source couples to a signed record with
 a fixed finite-algebra normalization.  That is useful support.
 
-It still does not derive the EW Higgs source.  A single signed record is a
-scalar source coordinate.  The EW Higgs theorem needs a complex doublet
-representation, a hypercharge assignment, a neutral vacuum direction, and a
-covariant derivative.  These are not consequences of the one-component Y_T
-source identity alone.
+It still does not derive the full EW Higgs transfer surface.  A single signed
+record is a scalar source coordinate.  The carrier-ray bridge aligns it with
+the neutral ray, but the EW Higgs theorem also needs the physical covariant
+kinetic term and shared top/W transfer response.  These are not consequences
+of the one-component Y_T source identity alone.
 
 ## Exact Obstruction Witness
 
@@ -101,10 +105,11 @@ v(h) = a h + O(h^2),       a > 0.
 ```
 
 The Y_T source-action lane's product RN source identity fixes the source
-derivative of the signed record.  It does not select the EW carrier, the neutral doublet direction, or
-the slope `a` of the Higgs radial background.  The top/W response ratio can
-cancel `a` if both sectors share the same `v(h)`, but the current surface does
-not prove they do.
+derivative of the signed record.  The carrier-ray bridge selects the neutral
+doublet ray, but it does not select the slope `a` of the Higgs radial
+background or prove that the top and W transfer surfaces share the same
+`v(h)`.  The top/W response ratio can cancel `a` if both sectors share the
+same `v(h)`, but the current surface does not prove they do.
 
 ## What This Adds
 
@@ -112,10 +117,10 @@ This gate is narrower than the earlier route inventory:
 
 - It accepts the retained EW mass theorem as the W denominator algebra.
 - It accepts the top/W FH ratio algebra as closed conditional support.
-- It pinpoints the first missing premise: the same-source EW/Higgs action
-  authority theorem.
-- It rejects the tempting shortcut where the Y_T signed-record source is
-  simply renamed as the Higgs radial source.
+- It pinpoints the first missing premise after carrier-ray alignment: the
+  same-source EW/Higgs transfer-response theorem.
+- It rejects the tempting shortcut where carrier-ray alignment is treated as
+  full Higgs transfer response.
 
 ## Non-Claims
 
@@ -125,8 +130,8 @@ This note does not:
 - derive `m_t`;
 - derive `v = 246 GeV`;
 - derive a numerical `g_2`;
-- derive the Higgs doublet, hypercharge, or kinetic term from the Y_T
-  source-action lane alone;
+- derive the full Higgs transfer response, hypercharge, or kinetic term from
+  the Y_T source-action lane alone;
 - use `H_unit`, `yt_ward_identity`, `y_t_bare`, `alpha_LM`, plaquette/u0,
   PDG values, or observed W/Z/top masses as proof inputs;
 - promote the Y_T source-action lane beyond bounded/open-gate support.

@@ -32,11 +32,14 @@ primary_artifacts:
   - docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md
   - scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py
   - outputs/yt_source_coordinate_invariant_top_w_ratio_gate_2026-05-25.json
+  - docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
+  - scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py
+  - outputs/yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json
 current_sharp_blocker: >
-  The neutral EW radial carrier map, top/W response-ratio algebra, and local
-  source-coordinate invariance close conditionally, but the repo still lacks a
-  retained theorem deriving the signed-record scalar source as the physical
-  neutral EW Higgs radial source.
+  The neutral carrier-ray bridge, top/W response-ratio algebra, and local
+  source-coordinate invariance now close as exact support. The repo still
+  lacks full same-surface EW transfer response, strict same-source top/W rows,
+  retained top-carrier/hypercharge authority, and physical-scale g_2 authority.
 agent_probes:
   A_same_surface_kinetic_lsz: 019e5eb1-41d5-7aa3-8471-e4d31770757d
   B_wz_response_bypass: 019e5eb1-426c-7ea0-8664-918bf4468c74

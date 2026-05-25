@@ -1,16 +1,17 @@
 {
   "candidate_intertwiner_algebra_closed": true,
   "current_blockers": {
+    "full_same_surface_ew_transfer_response_present": false,
     "hypercharge_uniqueness_retained": false,
+    "neutral_carrier_ray_bridge_present": true,
     "numerical_g2_retained_authority_present": false,
     "one_higgs_yukawa_selection_retained": false,
-    "source_to_ew_doublet_intertwiner_derived": false,
     "strict_same_source_top_w_rows_present": false
   },
   "fail_count": 0,
-  "pass_count": 39,
+  "pass_count": 41,
   "retained_closure_allowed": false,
-  "retained_closure_blocker": "The neutral EW radial carrier map has the correct algebra, but the repo does not yet derive the signed-record source as that carrier, and the top one-Higgs carrier plus hypercharge rows are not retained authority.",
+  "retained_closure_blocker": "The neutral EW carrier ray is now bridged from the signed-record source, but the repo still lacks full same-surface EW transfer response, and the top one-Higgs carrier plus hypercharge rows are not retained authority.",
   "review_surface": [
     "docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md",
     "scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py",

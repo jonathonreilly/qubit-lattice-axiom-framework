@@ -1,13 +1,14 @@
 {
   "current_blockers": {
-    "ew_carrier_intertwiner_present": false,
+    "full_same_surface_ew_transfer_response_present": false,
+    "neutral_carrier_ray_bridge_present": true,
     "same_source_ew_higgs_authority_present": false,
     "strict_top_w_rows_present": false
   },
   "fail_count": 0,
-  "pass_count": 37,
+  "pass_count": 39,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The source-action support packet is retained_bounded only, but no retained theorem identifies that source with the neutral EW Higgs doublet radial background used by the retained EW mass theorem.",
+  "proposal_allowed_reason": "The neutral carrier ray is now bridged, but the source-action support packet is retained_bounded only and no retained theorem supplies the full same-surface EW transfer response needed by the top/W route.",
   "review_surface": [
     "docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md",
     "scripts/frontier_yt_same_source_ew_higgs_authority_gate.py",

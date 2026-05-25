@@ -20,10 +20,11 @@ signed-record scalar source h
   -> common source for M_t(h) and M_W(h).
 ```
 
-The result is useful but not yet retained closure.  The algebraic carrier map
-has a clean form, but the repo does not yet supply retained authority that this
-map is forced by the substrate rather than chosen as the Standard Model Higgs
-surface.
+The result is useful but not yet retained closure.  The neutral carrier ray is
+now bridged from the signed-record source by
+[`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md).
+What remains open is stronger: the repo still does not supply full
+same-surface EW transfer-response authority for the top and W rows.
 
 ## Candidate Intertwiner
 
@@ -67,7 +68,7 @@ the right shape.
 
 ## Why This Still Does Not Close
 
-The current repo does not yet prove the first arrow:
+The current repo now supports the carrier-ray part of the first arrow:
 
 ```text
 signed-record scalar source h
@@ -75,9 +76,11 @@ signed-record scalar source h
 ```
 
 The retained bounded source-action support packet gives an exact finite
-Radon-Nikodym/source-action identity for signed records.  That is not the same
-thing as deriving an `SU(2)_L` doublet carrier with hypercharge `1/2`, neutral
-vacuum direction, and covariant kinetic term.
+Radon-Nikodym/source-action identity for signed records, and the carrier-ray
+bridge identifies that source with the neutral `P_-` ray of the retained
+one-Higgs doublet up to affine source reparameterization.  That is still not
+the same thing as proving full same-surface EW transfer response, covariant
+kinetic normalization, and top/W isolated-pole response on one surface.
 
 The relevant carrier facts are currently split:
 
@@ -87,8 +90,8 @@ The relevant carrier facts are currently split:
   bookkeeping, but that row is still unaudited in the ledger;
 - the Standard Model hypercharge uniqueness note is also unaudited in the
   ledger;
-- no retained theorem yet proves that the signed-record source is the physical
-  neutral EW Higgs radial source.
+- the new carrier-ray bridge closes the neutral-ray identification but not the
+  full same-surface transfer-response theorem.
 
 Therefore this note records support for the best route, not a status upgrade.
 
@@ -98,8 +101,8 @@ A closure theorem would need to prove all of the following without observed mass
 targets, fitted selectors, `H_unit`, Ward identity reuse, plaquette/u0, or
 `alpha_LM`:
 
-1. **Carrier theorem:** the scalar source acts on the neutral radial coordinate
-   of a one-Higgs `SU(2)_L` doublet with `Y_H = 1/2`.
+1. **Transfer-response theorem:** the neutral carrier-ray source is accepted as
+   the physical radial coordinate on the same top and W transfer surfaces.
 2. **Same-source theorem:** the same source coordinate enters the top and W
    transfer surfaces.
 3. **Top carrier theorem:** the top numerator is the up-type one-Higgs carrier
@@ -121,7 +124,7 @@ This note does not:
 - derive `m_t`;
 - derive `v = 246 GeV`;
 - derive `g_2`;
-- derive the EW Higgs carrier from the signed-record source;
+- derive full same-surface EW transfer response from the signed-record source;
 - promote the Y_T lane beyond bounded/open-gate support.
 
 ## Verification

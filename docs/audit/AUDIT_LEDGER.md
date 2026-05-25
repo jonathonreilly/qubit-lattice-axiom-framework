@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 162 |
-| **retained_bounded** | 460 |
+| **retained_bounded** | 461 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 744 |
+| `audited_clean` | 745 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1461 |
+| `unaudited` | 1460 |
 
 | claim_type | count |
 |---|---:|
@@ -348,6 +348,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4943,6 +4944,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The narrowed claim is not an independent physics bridge to the DM boundary; it is the first-step Lanczos/Hankel identity applied to the selected packet produced by the upstream packet construction. The runner source performs real finite linear-algebra computations and does not merely print constants or substring-check the contested premise. Because the only load-bearing content is algebraic equivalence over a single upstream selected-packet claim, the appropriate retained status is decoration rather than a standalone clean theorem.
 - **decoration parent:** `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19`
 - **auditor confidence:** medium
+
+### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the empirical dense-search certificate: 3660 seeded solves on the selected bounded positive-angle chart find two observed root clusters with small residuals and nondegenerate finite-difference Jacobians; global symbolic exhaustiveness is not claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T234713Z-d6cd597c-gauge_vacuum_plaquette_f-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Dense Monte-Carlo plus structured-grid seeding over the bounded positive-angle chart runs least_squares from 3660 seeds and every converged seed clusters onto exactly the same two observed roots, with no additional cluster emerging.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely computes the live residual from the retained transfer/block helpers, launches the documented structured plus random seed bath, clusters converged roots, and reports two nondegenerate clusters. The note has narrowed the conclusion to that empirical dense-search observation rather than a global exact root-count theorem.
+- **rationale:** The scoped claim matches the runner output and source: two distinct observed clusters, all converged seeds assigned to them, well-separated projective lines, and local nondegeneracy. The code is not a print-only certificate or hard-coded count; it recomputes least-squares roots from the live residual equation. The open global exhaustiveness theorem is explicitly deferred, so it does not block this bounded empirical claim.
+- **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 142 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 431 |
+| **retained_bounded** | 432 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1259 |
+| unaudited | 1258 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 704 |
+| `audited_clean` | 705 |
 | `audited_conditional` | 84 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1486 |
+| `unaudited` | 1485 |
 
 | claim_type | count |
 |---|---:|
@@ -234,6 +234,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2951,6 +2952,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Substituting f_bar = 0 into the explicit definitions gives spent_delay(L,0)=L and valley_linear(L,0)=L, so exp(i k spent_delay(L,0)) = exp(i k valley_linear(L,0)) = exp(i k L).  _(class `A`)_
 - **chain closes:** True — The proof needs only direct substitution into the stated definitions: dl(L,0)=L, ret(L,0)=0, and L(1-0)=L. The claimed phase equality then follows from equality of the phase arguments, without invoking propagation, detector readout, or decoherence observables.
 - **rationale:** The load-bearing step is a genuine algebraic identity within the bounded scope of the note. The runner source performs symbolic substitution and simplification rather than merely printing constants, and its zero-field use of the Max-protected expression is harmless because the argument is exactly zero at f_bar=0. The note explicitly does not claim the broader propagated-amplitude or observable equality, so no missing physical bridge is needed for the audited scope.
+- **auditor confidence:** high
+
+### `dense_prune_guard_seed_note`
+
+- **Note:** [`DENSE_PRUNE_GUARD_SEED_NOTE.md`](../../docs/DENSE_PRUNE_GUARD_SEED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Aggregate behavior of scripts/channel_count_guarded_prune.py over seed in range(16), across the four printed (n_layers, npl) configurations with valid n as printed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T115618Z-bd4287f9-dense_prune_guard_seed_n-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The channel-count guard is not a no-op on the runner's seed-range loop: aggregate eff_ch and aggregate flip count both move under the guard relative to plain pruning.  _(class `C`)_
+- **chain closes:** True — The provided runner source and helper sources compute the graph generation, pruning, guarded pruning, gravity, purity, effective channel count, and flip aggregation directly rather than printing hard-coded expected values. The cached stdout supports the narrowed aggregate claim: eff_p changes under the guard in every printed configuration and total flips drop from 7 unguarded to 3 guarded across the four aggregate rows.
+- **rationale:** The source note has been narrowed to exactly the cached runner's aggregate seed-range surface, and the runner output is present with exit_code 0. The primary runner imports helpers that are included in the packet and uses them in the load-bearing path; no helper appears to import the contested conclusion, hard-code the printed aggregate values, or substitute a definition for the claim. The aggregate flip reduction is true in the summed printed rows, although not in every individual configuration, which is acceptable under the narrowed aggregate scope.
 - **auditor confidence:** high
 
 ### `diamond_signal_budget_hardening_note`

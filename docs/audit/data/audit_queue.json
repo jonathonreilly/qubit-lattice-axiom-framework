@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 259,
     "high": 341,
-    "leaf": 335,
+    "leaf": 334,
     "medium": 324
   },
   "cycle_break_target_count": 7,
@@ -28114,33 +28114,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dense_prune_guard_seed_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/causal_field_mass_scaling.py",
-        "scripts/dense_prune_q003_joint_strict.py",
-        "scripts/three_d_joint_test.py",
-        "scripts/three_d_modular_gravity_mass_scaling.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/DENSE_PRUNE_GUARD_SEED_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/channel_count_guarded_prune.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fixed_field_family_unification_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -28374,6 +28347,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "guard_reconciliation_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "dense_prune_guard_seed_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GUARD_RECONCILIATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
       "transitive_descendants": 0
     },
     {
@@ -33581,30 +33578,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "guard_reconciliation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dense_prune_guard_seed_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GUARD_RECONCILIATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "hadron_lane1_sqrt_sigma_b2_static_energy_bridge_scout_note_2026-04-30",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -37918,5 +37891,5 @@
     }
   ],
   "ready_count": 29,
-  "total_pending": 1259
+  "total_pending": 1258
 }

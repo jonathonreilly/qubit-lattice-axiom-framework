@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 161 |
-| **retained_bounded** | 459 |
+| **retained_bounded** | 460 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 742 |
+| `audited_clean` | 743 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1465 |
+| `unaudited` | 1464 |
 
 | claim_type | count |
 |---|---:|
@@ -159,6 +159,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_bounded_negative_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1695,6 +1696,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The linearity of the graph path-sum is asserted to force I_3 = 0 as a mathematical identity, making the Born rule a theorem rather than a postulate, while the same graph structure is asserted to supply gravity through S = L(1-f).  _(class `A`)_
 - **chain closes:** False — The runner verifies finite algebraic/numerical behavior of the chosen model, but it computes detector probabilities as np.abs(psi)**2 and therefore assumes the Born readout it claims to derive. No one-hop authority or theorem closes the graph-to-gravity physical bridge or the claim that lattice QCD lacks any analogous construction.
 - **rationale:** Issue: the note promotes a finite toy-model computation and an I_3 identity into a Born-rule derivation and a lattice-QCD no-analog claim. Why this blocks: the Sorkin test uses P = |psi|^2 in the runner, and the graph-gravity and lattice-QCD comparison bridges are not derived or supported by any cited authority. Repair target: provide a retained bridge theorem deriving the probability/readout rule without imposing |psi|^2, plus a retained authority or theorem for the lattice-QCD comparison. Claim boundary until fixed: the runner supports only that the specified numerical model changes its propagated profile when the Poisson field is included and that its Born-probability three-slit calculation has negligible I_3.
+- **auditor confidence:** high
+
+### `bh_entropy_rt_ratio_widom_no_go_note`
+
+- **Note:** [`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](../../docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-L <= 64 numerical-fit evidence for the OBC half-filled NN-hopping square-lattice RT ratio, plus the direct 2D diamond Widom coefficient evaluation c_Widom = 1/6; no all-L asymptotic no-go is retained.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T234113Z-94928f17-bh_entropy_rt_ratio_wido-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained claim is that the exact 2D diamond Widom coefficient is 1/6 and the in-packet finite-L <= 64 runner gives numerical-fit evidence inconsistent with an exact 1/4 ratio under the stated OBC carrier and chi_eff threshold.  _(class `C`)_
+- **chain closes:** True — For the narrowed finite claim, the runner source genuinely builds the OBC free-fermion Hamiltonian, computes the correlation matrix, entropy, transfer-rank threshold, r(L), and the L>=32 fit from first principles. The all-L Widom/OBC and threshold-rank bridges are explicitly moved to OA-1/OA-2 and are not load-bearing for the audited finite-L scope.
+- **rationale:** The narrowed retained scope avoids the prior overclaim: it does not assert lim_L r(L)=1/6 as a retained theorem and defers the L<=96 probe as cache-not-in-packet. The runner source is substantive rather than a print-only certificate: it constructs the lattice Hamiltonian, diagonalizes it, computes entropy and chi_eff, and fits the reported finite-L data. The No-Go Discipline gate passes for this bounded evidence boundary because the packet names alternate carriers, all-L asymptotics, threshold-rank saturation, physical BH normalization, and the L<=96 probe as outside or open rather than foreclosed. The runner stdout still contains stale overbroad THEOREM wording, but the note explicitly narrows the retained claim so that label is not treated as load-bearing.
 - **auditor confidence:** high
 
 ### `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`

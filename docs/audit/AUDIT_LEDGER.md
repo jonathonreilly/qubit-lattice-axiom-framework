@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 145 |
 | **retained_no_go** | 157 |
-| **retained_bounded** | 445 |
+| **retained_bounded** | 446 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 722 |
+| `audited_clean` | 723 |
 | `audited_conditional` | 91 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -839,6 +839,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_pr230_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13542,6 +13543,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** At h = 0, d log R_h / d h_x = epsilon_x, and under the sigma_z sharp-projective readout this is the signed spectral outcome in {-1,+1}.  _(class `A`)_
 - **chain closes:** True — Within the stated readout-carrier scope, the chain closes from the supplied retained-grade LSP projective rule, the qubit axiom premise, and the retained_bounded PR230 source packet. It does not close or rely on source/action authority, Higgs-operator identification, LSZ normalization, pole rows, or Yukawa matching.
 - **rationale:** The load-bearing work is algebraic: Pauli spectral projections give the signed observable sigma_z with spectrum {-1,+1}, and the product RN source score at the origin is epsilon_x. The uniqueness corollary follows from normalized multiplication giving additive smooth log-odds with coefficients fixed by the origin score. The non-axiom cited authorities are retained_bounded, the axiom node is explicitly flagged as an axiom premise, and the runner performs actual matrix, RN, composition, and boundary checks without external comparators or tuned numerical inputs.
+- **auditor confidence:** high
+
+### `yt_pr230_source_covariance_normalization_support_note_2026-05-24`
+
+- **Note:** [`YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-support source-side covariance normalization in the fixed PR230 RN signed-record source coordinate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T125132Z-dd10b518-yt_pr230_source_covarian-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the finite RN source family, differentiating log Z with respect to h_x gives <epsilon_x>_h and differentiating again gives Cov_h(epsilon_x, epsilon_y).  _(class `A`)_
+- **chain closes:** True — The derivative and Hessian identities follow by finite-sum differentiation of the RN partition function, and the cited PR230 packet supplies the fixed signed-record source coordinate. The conclusion is bounded to the source-side row and does not import scalar/Higgs normalization.
+- **rationale:** The load-bearing step is a genuine algebraic closure over a finite positive-support RN source family, and the runner independently checks the finite-gradient/Hessian covariance identity plus the fixed-coordinate rescaling boundary. Both cited authorities are retained-grade under the rubric: the PR230 packet is retained_bounded and the pole-row boundary is retained_no_go. No-Go Discipline check for the residual scalar/Higgs walls passes: the packet enumerates alternate routes, keeps source-side and scalar-side normalization independent, scans hidden canonical/LSZ language, matches the cited pole-row residual, narrows the non-closure wording, preserves a convention/redefinition distinction, states the strongest future-theorem escape, and uses only same-packet boundary evidence.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

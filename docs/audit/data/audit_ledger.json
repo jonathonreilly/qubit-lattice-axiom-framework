@@ -295903,22 +295903,46 @@
       "verdict_rationale": null
     },
     "yt_pr230_source_covariance_normalization_support_note_2026-05-24": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T12:51:53.707863+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_pr230_consolidated_status_note_2026-05-22": "Exact finite-support algebraic equivalence between a product RN source family on signed one-site records and a site-diagonal source-coupled local action, with no physical Y_T closure claimed.",
+          "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23": "Strict single-pole C_ss/C_sH/C_HH Gram-purity rows can certify common-pole support but cannot by themselves determine absolute scalar/source normalization or select kappa_Y = 0."
+        },
+        "dep_claim_type": {
+          "yt_pr230_consolidated_status_note_2026-05-22": "bounded_theorem",
+          "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_pr230_consolidated_status_note_2026-05-22": "retained_bounded",
+          "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23": "retained_no_go"
+        },
+        "deps": [
+          "yt_pr230_consolidated_status_note_2026-05-22",
+          "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "442eeaa8519a7c8d23c3daf29bf9718cc8a8d8b668ed96693ed5401b3eb62032",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T125132Z-dd10b518-yt_pr230_source_covarian-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The derivative and Hessian identities follow by finite-sum differentiation of the RN partition function, and the cited PR230 packet supplies the fixed signed-record source coordinate. The conclusion is bounded to the source-side row and does not import scalar/Higgs normalization.",
       "claim_id": "yt_pr230_source_covariance_normalization_support_note_2026-05-24",
-      "claim_scope": null,
+      "claim_scope": "Exact finite-support source-side covariance normalization in the fixed PR230 RN signed-record source coordinate.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T12:51:53.707863+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -295927,34 +295951,34 @@
         "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For the finite RN source family, differentiating log Z with respect to h_x gives <epsilon_x>_h and differentiating again gives Cov_h(epsilon_x, epsilon_y).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "25605321fc4a8eade81919c6f6b00d0747095439bfab1e0c1050cf07c30791d4",
       "note_path": "docs/YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the clean-versus-decoration boundary, since the theorem is a short algebraic consequence of the retained PR230 RN source packet but has an independent fixed-coordinate normalization consequence.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 26,
+        "B": 7,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 33
       },
       "runner_path": "scripts/frontier_yt_pr230_source_covariance_normalization_support.py",
       "title": "PR230 Source-Covariance Normalization Support Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over a finite positive-support RN source family, and the runner independently checks the finite-gradient/Hessian covariance identity plus the fixed-coordinate rescaling boundary. Both cited authorities are retained-grade under the rubric: the PR230 packet is retained_bounded and the pole-row boundary is retained_no_go. No-Go Discipline check for the residual scalar/Higgs walls passes: the packet enumerates alternate routes, keeps source-side and scalar-side normalization independent, scans hidden canonical/LSZ language, matches the cited pole-row residual, narrows the non-closure wording, preserves a convention/redefinition distinction, states the strongest future-theorem escape, and uses only same-packet boundary evidence."
     },
     "yt_qfp_insensitivity_support_note": {
       "audit_date": null,

@@ -27,8 +27,7 @@ The narrowed audited claim:
 > `Z^3` spatial substrate with tensor composition),
 > there is a **unique tracial state** `τ`, characterized equivalently
 > by: `τ(AB) = τ(BA)` for all `A, B`; invariance under all inner
-> automorphisms; vanishing one-point Pauli expectation
-> `τ(σ_a^x) = 0`; or maximum von Neumann entropy on every finite
+> automorphisms; or maximum von Neumann entropy on every finite
 > region. The density-matrix form of `τ` is `ρ = ⊗_x I/2`.
 
 The Steps 1-4 operator-algebra mathematics below (finite-dim trace
@@ -155,18 +154,14 @@ all standard:
 (C2) **Inner-automorphism invariance:** `τ(U A U*) = τ(A)` for every
      unitary `U ∈ A`.
 
-(C3) **One-point Pauli expectation vanishing:** `τ(σ_a^x) = 0` for
-     every `a ∈ {1,2,3}` and `x ∈ Z^3`. (Equivalently: the per-site
-     Bloch vector is zero in the tracial state.)
-
-(C4) **Maximum von Neumann entropy:** `S(ρ_Λ) = |Λ| log 2` is the
+(C3) **Maximum von Neumann entropy:** `S(ρ_Λ) = |Λ| log 2` is the
      maximum value for any state on `A_Λ`.
 
-(C5) **Maximal symmetry:** `τ` is the unique state invariant under
+(C4) **Maximal symmetry:** `τ` is the unique state invariant under
      the full unitary group `U(H_Λ)` action by inner automorphisms.
 
 These are all equivalent for the finite-dim case; in the
-thermodynamic limit (C1), (C2), and (C5) extend cleanly, and (C4)
+thermodynamic limit (C1), (C2), and (C4) extend cleanly, and (C3)
 becomes a "maximum entropy per site" condition.
 
 ## Step 5 — Identification with the pre-record reference (demoted to open admission; not part of the narrowed claim)

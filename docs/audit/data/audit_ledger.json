@@ -222799,24 +222799,50 @@
       "verdict_rationale": null
     },
     "rconn_derived_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T18:51:47.782015+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+          "yukawa_color_projection_theorem": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "yukawa_color_projection_theorem": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "yukawa_color_projection_theorem": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "yukawa_color_projection_theorem"
+        ],
+        "load_bearing_score": 16.811,
+        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+        "transitive_descendants": 897
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T184949Z-6f3c2210-rconn_derived_note-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Fierz channel-count fraction closes only as an imported algebraic dimension fact. The missing step is the dynamical/readout bridge matching the lattice connected-trace observable to the adjoint-channel fraction, equivalently fixing kappa_EW = 0.",
       "claim_id": "rconn_derived_note",
-      "claim_scope": null,
+      "claim_scope": "Exact imported SU(N_c) adjoint representation-dimension fraction 8/9 at N_c=3 plus a conditional R_conn/MC consistency statement gated on matching rule (M).",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (conditional on admitted premise (M))",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T18:51:47.782015+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -222826,22 +222852,25 @@
         "yukawa_color_projection_theorem"
       ],
       "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 16.811,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Assuming matching rule (M), the lattice connected color trace projects onto the adjoint channel, giving R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4).",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "c4c44671aea333635999bbcb333209c60851630aad23371df5e116cb89d47ded",
       "note_path": "docs/RCONN_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or retire matching rule (M), equivalently the kappa_EW = 0 connected-trace selector, from retained lattice-current primitives; otherwise keep downstream R_conn use explicitly conditional.",
+      "open_dependency_paths": [
+        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
+        "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -223285,18 +223314,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 1,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate (conditional on admitted matching rule (M))",
       "transitive_descendants": 897,
-      "verdict_rationale": null
+      "verdict_rationale": "The exact 8/9 dimension fraction is supported as an imported Fierz algebra fact, but the observable identification is the named matching rule (M), explicitly admitted as open. The retained no-go authority shows kappa_EW is not fixed by the retained packet because kappa_EW = 0 and kappa_EW = 1 completions share the same Fierz arithmetic and CMT scaling. The runner performs a real SU(3) lattice MC consistency check, but hard-codes the analytic 8/9 target and cannot independently derive M. No-Go Discipline N1-N8 does not justify clean closure: same-packet routes through Fierz projection, CMT, OZI, disconnected vanishing, scheme assignment, Wilson-line projection, and numerical ratification remain ruled out or admitted."
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-23T15:49:39.572743+00:00",

@@ -169701,24 +169701,42 @@
       "verdict_rationale": "The runner is not a constant-printing artifact: it computes the frozen table and fitted exponents from the declared lattice, field rule, source strengths, propagation rule, and centroid readout. The source note has narrowed the claim to exactly that declared computation and explicitly excludes derivation of the telegraph dynamics and calibration values. The cited companion authority is retained_bounded and consistent with the same boundary, so no non-retained upstream dependency blocks the narrowed claim."
     },
     "mirror_2d_gravity_law_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T11:44:09.558033+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "mirror_program_synthesis": null
+        },
+        "dep_claim_type": {
+          "mirror_program_synthesis": "meta"
+        },
+        "dep_effective_status": {
+          "mirror_program_synthesis": "meta"
+        },
+        "deps": [
+          "mirror_program_synthesis"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T114348Z-f9b3d319-mirror_2d_gravity_law_no-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source genuinely computes the exact 2D mirror family, linear propagation, Sorkin/Born checks, and the reported weak power-law fits, so the internal null-result evidence closes. However the packet includes docs/MIRROR_PROGRAM_SYNTHESIS.md as a cited authority with meta/support status, so retained-grade closure does not propagate under the rubric.",
       "claim_id": "mirror_2d_gravity_law_note",
-      "claim_scope": null,
+      "claim_scope": "Audited only the bounded null-result that the exact 2D mirror primary runner does not support a clean mass law or distance law on the searched windows.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T11:44:09.558033+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -169726,22 +169744,24 @@
         "mirror_program_synthesis"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/mirror_born_audit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 3.822,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The primary-runner cache reports weak gravity-side fits, specifically gravity scaling R^2=0.015, fixed-anchor mass-window R^2=0.167, and distance-tail R^2=0.075, so no clean promoted 2D mirror mass or distance law is supported on the searched windows.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "81b066f09d0604239005d31648e20dccab294bfe62a0c05edc295a26bddcc7ce",
       "note_path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: remove the non-load-bearing synthesis citation from the restricted cited-authority set or replace it with retained-grade per-claim dependencies, then re-audit the same runner-backed bounded null-result.",
+      "open_dependency_paths": [
+        "docs/MIRROR_PROGRAM_SYNTHESIS.md"
+      ],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
         {
@@ -170241,18 +170261,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 2
       },
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Gravity-Law Cleanup Note",
       "transitive_descendants": 9,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner and helper source are present, and the cached stdout matches the note's load-bearing weak-fit rows. The helper runner also provides the imported exact 2D mirror generator and strictly linear propagator, with a registered cache showing Born-clean behavior on the relevant mirror family. The scientific bounded null-result follows from the primary runner's computed weak R^2 values, but the cited synthesis authority is explicitly meta/support and not retained-grade, which forces a conditional verdict by the supplied rubric."
     },
     "mirror_2d_operator_cauchy_note_2026-05-10": {
       "audit_date": "2026-05-11T17:29:39.814354+00:00",

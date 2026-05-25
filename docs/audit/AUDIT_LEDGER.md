@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 430 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1266 |
+| unaudited | 1265 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 702 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 81 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1493 |
+| `unaudited` | 1492 |
 
 | claim_type | count |
 |---|---:|
@@ -869,6 +869,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7697,6 +7698,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the declared exact 3D lattice with fixed telegraph-style parameters and TARGET_FIELD_MAX = 0.08, the runner computes zero-source dynamic shift exactly zero, TOWARD in 4/4 rows, and a source-driven F~M exponent of about 0.64.  _(class `C`)_
 - **chain closes:** True — Within the narrowed declared-run scope, the runner source self-containedly constructs the lattice, evolves the field, propagates amplitudes, computes centroid shifts, and fits the reported exponents. It does not close a framework derivation of the telegraph rule, c_field/damp values, or calibration ladder, but those are explicitly outside the audited load-bearing scope.
 - **rationale:** The runner is not a constant-printing artifact: it computes the frozen table and fitted exponents from the declared lattice, field rule, source strengths, propagation rule, and centroid readout. The source note has narrowed the claim to exactly that declared computation and explicitly excludes derivation of the telegraph dynamics and calibration values. The cited companion authority is retained_bounded and consistent with the same boundary, so no non-retained upstream dependency blocks the narrowed claim.
+- **auditor confidence:** high
+
+### `mirror_2d_gravity_law_note`
+
+- **Note:** [`MIRROR_2D_GRAVITY_LAW_NOTE.md`](../../docs/MIRROR_2D_GRAVITY_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded null-result that the exact 2D mirror primary runner does not support a clean mass law or distance law on the searched windows.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T114348Z-f9b3d319-mirror_2d_gravity_law_no-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary-runner cache reports weak gravity-side fits, specifically gravity scaling R^2=0.015, fixed-anchor mass-window R^2=0.167, and distance-tail R^2=0.075, so no clean promoted 2D mirror mass or distance law is supported on the searched windows.  _(class `C`)_
+- **chain closes:** False — The runner source genuinely computes the exact 2D mirror family, linear propagation, Sorkin/Born checks, and the reported weak power-law fits, so the internal null-result evidence closes. However the packet includes docs/MIRROR_PROGRAM_SYNTHESIS.md as a cited authority with meta/support status, so retained-grade closure does not propagate under the rubric.
+- **rationale:** The primary runner and helper source are present, and the cached stdout matches the note's load-bearing weak-fit rows. The helper runner also provides the imported exact 2D mirror generator and strictly linear propagator, with a registered cache showing Born-clean behavior on the relevant mirror family. The scientific bounded null-result follows from the primary runner's computed weak R^2 values, but the cited synthesis authority is explicitly meta/support and not retained-grade, which forces a conditional verdict by the supplied rubric.
+- **open / conditional deps cited:**
+  - `MIRROR_PROGRAM_SYNTHESIS.md`
 - **auditor confidence:** high
 
 ### `mirror_2d_operator_cauchy_note_2026-05-10`

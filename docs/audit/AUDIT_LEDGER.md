@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 155 |
-| **retained_bounded** | 427 |
+| **retained_bounded** | 428 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1271 |
+| unaudited | 1270 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 698 |
+| `audited_clean` | 699 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1498 |
+| `unaudited` | 1497 |
 
 | claim_type | count |
 |---|---:|
@@ -805,6 +805,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_matrixfree_moving_source_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12738,6 +12739,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The frozen-source probe says the moving-source mismatch is not caused purely by source motion; it is already visible for the frozen off-center source at z_phys = 3.0.  _(class `C`)_
 - **chain closes:** True — The completed runner stdout matches the source note's two H = 0.5 tables and directly supports the bounded smoke-test conclusion. The closure is only for the implemented finite-grid comparators and does not establish a continuum theorem or an independently derived physical c-infinity comparator.
 - **rationale:** Clean for the stated bounded smoke-test scope: the note's numerical claims are current with the supplied runner stdout, and the runner source constructs frozen-source histories, comparator fields, a direct finite-grid static solve, and beam readouts rather than printing the table as constants. The cited authority is retained_bounded for the imported wave-retardation primitives, and the source note explicitly avoids a continuum claim. Residual risk is interpretive: dS is audited only as the implemented direct finite-grid Poisson solve, not as a closed theorem for the unique physical static comparator.
+- **auditor confidence:** high
+
+### `weak_coupling_retention_note_2026-04-11`
+
+- **Note:** [`WEAK_COUPLING_RETENTION_NOTE_2026-04-11.md`](../../docs/WEAK_COUPLING_RETENTION_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Frozen finite 60-run audit surface over random geometric, growing, and layered cycle graph families at the listed sizes, seeds 42..46, and G=5,10, checking shell-margin and norm-conservation counts only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T113653Z-566a2aee-weak_coupling_retention_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At weak coupling (G=5,10), on the declared finite audit surface, attractive parity coupling has tw_a - tw_r >= 10 on 60/60 audited runs and exact norm conservation on 60/60 runs.  _(class `C`)_
+- **chain closes:** True — The supplied runner source genuinely constructs the declared graph instances, evolves attractive, repulsive, and free cases, computes shell TOWARD counts and norms, and the cached stdout reports shell margin >= 10 and norm conserved on 60/60 runs. The note explicitly excludes broader graph-family, coordinate-force, and stable spectral-gap inferences from binding scope.
+- **rationale:** For the narrowed claim, the load-bearing evidence is a bounded finite computation, not a theorem over all admissible irregular graphs. The runner source does not hard-code the retained counts or import them from another note; it computes the graph instances, evolution, shell-force counts, and norm checks directly on the declared surface. The live-stale spectral-gap row and wrong registered runner path are acknowledged as out of scope, so they do not block the narrowed shell-margin/norm finite-surface claim.
 - **auditor confidence:** high
 
 ### `weak_coupling_sign_sensitivity_note_2026-04-11`

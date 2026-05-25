@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 161 |
-| **retained_bounded** | 458 |
+| **retained_bounded** | 459 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1241 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -52,8 +51,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 741 |
+| `audited_clean` | 742 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 47 |
@@ -124,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -218,6 +215,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
@@ -2590,6 +2588,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the explicitly defined reduced model, the saddle, Hessian ratio, Beta normalizations, exact moments, dimensionless discriminators, and KL positivity follow by elementary calculus and Beta-distribution formulas. The non-discriminator conclusion is bounded to the stated current scope: one realization and no independent fluctuation-scale calibration.
 - **rationale:** The note does not ask the audit lane to choose M1 or M2; it only records what can and cannot distinguish them inside the reduced measure model. The exact Beta-distribution calculations and the factor-two Gaussian rescaling close from the definitions, and the runner reproduces the saddle, Hessian, partition-function, moment, KL, and disclaimer checks without importing a load-bearing PDG comparator. Residual risk is scope creep: the result should remain a bounded diagnostic, not a theorem that no future observable could distinguish the measures or that BAE itself is closed.
 - **auditor confidence:** high
+
+### `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](../../docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite spatial lattice Lambda only: the pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, Haar) has a simple positive top eigenvalue and a strict finite-volume spectral gap; no thermodynamic, continuum, or uniform-in-Lambda conclusion is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T232731Z-9c26ad5c-cluster_decomposition_de-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Lemma B gives strict positivity of the finite-Lambda SU(3) Wilson heat-kernel transfer kernel, Lemma C gives trace-class compactness, self-adjointness follows from the real symmetric kernel, and Perron-Jentzsch/Krein-Rutman then gives a simple top eigenvalue with a strict spectral gap.  _(class `C`)_
+- **chain closes:** True — For fixed finite Lambda, the packet derives strict positivity of the SU(3) heat kernel, bounded positive Wilson weighting on a compact configuration space, smooth trace-class compactness, and positivity improvement. Those hypotheses are enough for the stated Perron-Jentzsch spectral-gap conclusion for T_W.
+- **rationale:** The core pure-Wilson claim is not a definition, renaming, external comparison, or tuned numerical match; it is an operator-theoretic finite-volume derivation on SU(3)^E. The runner source performs genuine SU(3) character-series, Haar-quadrature, heat-equation, and sampled positivity checks, with V4 and V6 mainly algebraic spectrum checks. The staggered+Wilson T_full material is explicitly presented only as conditional on Leg A and is not promoted as an unconditional result in this audit scope.
+- **auditor confidence:** medium
 
 ### `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`
 

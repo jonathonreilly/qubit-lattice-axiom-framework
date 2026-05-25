@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 430 |
+| **retained_bounded** | 431 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1262 |
+| unaudited | 1261 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 702 |
+| `audited_clean` | 703 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1489 |
+| `unaudited` | 1488 |
 
 | claim_type | count |
 |---|---:|
@@ -486,6 +486,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -7337,6 +7338,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The representation split follows from the retained graph-first SU(3) integration authority plus standard finite-dimensional SU(3) representation facts. The quark/lepton labels are explicitly conventional and are not used as a derived physics step.
 - **rationale:** All load-bearing checks are class-A algebra over the already retained graph-first SU(3) selected-axis package: the runner verifies the swap decomposition, standard SU(3) fundamental matrices on the 3-block, triviality on the 1-block, and the tensor dimensions. The runner does not import external comparators or tuned numerical inputs. Because the claim reduces to a direct algebraic corollary of the graph-first SU(3) integration parent plus standard representation terminology, it is a decoration rather than an independent positive theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** high
+
+### `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a finite tensor-product Hilbert space H = tensor_x H_x with finite-dimensional complex site factors, raw ungraded operators supported on distinct sites commute exactly, including the Pauli-ladder illustration and expectation-order corollary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T115125Z-67940408-lieb_robinson_equal_time-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Embedded operators acting nontrivially on distinct tensor factors have products O_x O_y and O_y O_x equal to the same tensor, hence [O_x,O_y]=0.  _(class `A`)_
+- **chain closes:** True — The conclusions follow directly from standard tensor-product algebra with no cited upstream authority or physical realization bridge. The Pauli statements are substitutions into the same raw tensor-product identity, not fermionic or graded claims.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the stated tensor-product construction. The runner source actually constructs symbolic matrices and Kronecker products, verifies the distinct-site commutator and factorization exactly, and checks same-site counterexamples. No external comparator, tuned numerical input, open bridge, or non-retained cited authority is used load-bearingly.
 - **auditor confidence:** high
 
 ### `linear_response_derivation_note`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 157 |
-| **retained_bounded** | 448 |
+| **retained_bounded** | 449 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1235 |
+| unaudited | 1234 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 726 |
+| `audited_clean` | 727 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1464 |
+| `unaudited` | 1463 |
 
 | claim_type | count |
 |---|---:|
@@ -540,6 +540,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `nn_lattice_rescaled_continuum_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8288,6 +8289,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The scalar two-point expressions have no mu input, so the same scalar two-point signature is compatible with both mu = 0 and mu != 0 while the Pfaffian sector differs.  _(class `C`)_
 - **chain closes:** True — The runner reproduces the same-current-data witness: scalar two-point and normal source-response signatures are mu-blind, Pfaffian signatures vary with mu, and charge-sector checks show normal sources are charge zero while the pairing seed carries charge -2. That directly blocks the implication that scalar two-point closure alone forces mu = 0.
 - **rationale:** The note claims a negative boundary, not a Dirac-global or numerical neutrino result: SR-2 cannot close C2-X from free-scalar two-point data alone. The runner checks the relevant current surface by verifying the cited authority text and constructing nonzero-mu witnesses with identical scalar and normal signatures but distinct Pfaffian sectors. Residual risk is limited to future typed scalar-to-Pfaffian coupling theorems, which the note explicitly leaves open.
+- **auditor confidence:** high
+
+### `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-linear-algebra claim that the phase delta in H(a,b)=aI+bC+conj(b)C^2 is the within-triplet axis-exchange reflection order parameter: C3 is preserved for all delta, transpositions send delta to -delta, and generic nonzero sin(delta) lifts the S3 degeneracy while preserving C3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T144456Z-c03f5ff7-new_parity_is_circulant_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A transposition sends C to C^2 and therefore conjugates b, so tau H(delta) tau† = H(-delta), with H transposition-invariant iff sin(delta)=0.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs supply the C3-circulant carrier and the S3/C3 generation-symmetry context. The load-bearing claims then follow by direct matrix algebra and the standard circulant eigenvalue formula, with no external numerical or fitted input.
+- **rationale:** The runner source directly constructs C, a transposition tau, and H(a,b), then verifies C-invariance, tau conjugation of b, reflection fixed loci, eigenvalue formula, and mirror spectra by explicit finite-dimensional computation. It does not hard-code a contested physical value, consume PDG/comparator data, or import an open selector. The source note also keeps the conclusion bounded: it identifies delta's role if the retained circulant form is used, but does not claim delta is forced or numerically fixed.
 - **auditor confidence:** high
 
 ### `newton_derivation_top4_bridge_note`

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 439 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1241 |
+| unaudited | 1240 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -44,6 +44,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
@@ -52,20 +53,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 715 |
 | `audited_conditional` | 90 |
-| `audited_decoration` | 38 |
+| `audited_decoration` | 39 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1468 |
+| `unaudited` | 1467 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1029 |
-| `decoration` | 39 |
+| `decoration` | 40 |
 | `meta` | 231 |
 | `no_go` | 243 |
 | `open_gate` | 110 |
-| `positive_theorem` | 738 |
+| `positive_theorem` | 737 |
 
 | criticality | count |
 |---|---:|
@@ -954,6 +955,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` |
+| `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10` |
@@ -9279,6 +9281,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Direct multiplication gives P_23 E_21 P_23 = E_31, P_23 E_32 P_23 = E_23, and P_23 E_13 P_23 = E_12, hence R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).  _(class `A`)_
 - **chain closes:** True — The narrow algebraic claim closes from the provided P_23 matrix and matrix-unit definitions by direct finite-dimensional algebra. Carrier identification and the graph-first derivation of P_23 are explicitly out of scope and are cited to retained-grade upstream authorities.
 - **rationale:** The source proof and runner both perform explicit 3x3 matrix algebra rather than importing a numerical fit or merely renaming symbols. The runner source constructs P_23, the matrix units, R, and the cycle block, then checks the coordinate action, channel preservation, conjugate-linearity, involution, and fixed-locus characterization. The cited upstream authorities are marked retained-grade or retained_bounded, and no external comparator or tuned numerical input is used. The clean verdict applies only to the stated narrow algebraic bridge, not to downstream point selection or carrier derivation.
+- **auditor confidence:** high
+
+### `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`PMNS_HW1_RESPONSE_COLUMN_SCHUR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/PMNS_HW1_RESPONSE_COLUMN_SCHUR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Exact matrix-algebra round trip: for a supplied sector operator M with invertible F and invertible response kernel, response-column inversion recovers the Schur complement delta_S in both passive and active conventions.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_pmns_hw1_source_transfer_boundary_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T122845Z-0002a190-pmns_hw1_response_column-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From K = (I_d - lam * delta)^(-1), K^(-1) = I_d - lam * delta, so (I_d - K^(-1)) / lam = delta; in the active convention delta = delta_S - I_d and adding I_d recovers delta_S.  _(class `A`)_
+- **chain closes:** True — The passive proof is the direct inverse identity for K = (I - lam * delta_S)^(-1); the active proof is the same identity applied to delta_S - I. The supplied runner source checks the actual symbolic/rational identities and Schur round trips without external comparators or missing helper imports.
+- **rationale:** The algebra is correct under the stated invertibility and nonzero-lam hypotheses, and the one cited authority is retained-grade as retained_bounded. The runner computes the load-bearing inverse identities and Schur complement round trips rather than hard-coding a contested premise. However, the audited content is only the standard linear-algebra core isolated from the single upstream parent boundary theorem, with no independent physical closure beyond that parent.
+- **decoration parent:** `pmns_hw1_source_transfer_boundary_note`
 - **auditor confidence:** high
 
 ### `pmns_hw1_source_transfer_boundary_note`

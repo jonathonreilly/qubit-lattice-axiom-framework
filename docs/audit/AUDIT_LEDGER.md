@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 143 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 434 |
+| **retained_bounded** | 435 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1254 |
+| unaudited | 1253 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 708 |
+| `audited_clean` | 709 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1481 |
+| `unaudited` | 1480 |
 
 | claim_type | count |
 |---|---:|
@@ -240,6 +240,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dirac_observable_panel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3076,6 +3077,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the finite m0 = 0.10 scan grid, the Gaussian profile has 5/5 TOWARD offset biases with an offset-law fit alpha = 3.053 and R^2 = 0.8098, while all profiles fail N-monotonicity.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly constructs the 4-component Dirac walk, mass-field kernels, density readout, N sweep, offset sweep, and power-law fit rather than printing hard-coded contested constants. The note's in-scope numerical statements match the completed runner output.
 - **rationale:** The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim.
+- **auditor confidence:** high
+
+### `dirac_observable_panel_note`
+
+- **Note:** [`DIRAC_OBSERVABLE_PANEL_NOTE.md`](../../docs/DIRAC_OBSERVABLE_PANEL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded methodological panel claim that the Dirac 3+1D observable runner computes centroid, peak, first-arrival, early shell accumulation, current, and shell imbalance on the default sweep and records the resulting readout split without asserting a locked gravity sign.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T120421Z-5fc3513c-dirac_observable_panel_n-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The panel runner was executed on the stated default sweep, produced all six readouts for each layer count, and records an ALL/MIX readout split rather than a sign-locked gravity claim.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely evolves free and gravity Dirac states using imported gamma/projector split-step primitives, computes the listed observables, and the cached stdout matches the note's excerpt and summary. The only cited authority is retained_bounded, and the note does not rely on it to assert a stronger sign claim.
+- **rationale:** The restricted packet includes the primary runner source, cached successful stdout, and the load-bearing helper source used for gamma matrices, split-step evolution, probability density, and torus distance. The primary runner does not merely print constants or import the contested panel conclusion; it computes the panel rows from the framework primitives and reports the mixed observable signs. The note's conclusion is bounded to methodological registration and reproducibility, and it explicitly avoids promoting a sign-locked gravity claim.
 - **auditor confidence:** high
 
 ### `dirac_source_smoothing_note`

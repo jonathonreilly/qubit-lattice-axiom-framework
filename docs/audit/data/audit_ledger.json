@@ -27973,11 +27973,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 1.5,
+      "load_bearing_score": 4.5,
       "load_bearing_step": "The Landau identity S_op^2 = 4I - [\u00c3_0, \u00c3_1][B\u0303_0, B\u0303_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2\u221a2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "66c47193803706d20e4590d7abd81baceb0de9ba98c58cf19e48b2c850de50c0",
       "note_path": "docs/CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that downstream users do not overread the product-state corollary as a derivation that the actual framework Hamiltonian at G=0 preserves separability; that dynamical premise is outside this theorem's algebraic closure.",
@@ -48901,24 +48901,42 @@
       "verdict_rationale": "The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim."
     },
     "dirac_observable_panel_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T12:04:42.559964+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dirac_core_card_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "dirac_core_card_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dirac_core_card_note": "retained_bounded"
+        },
+        "deps": [
+          "dirac_core_card_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a83db713cce4556d432e324314a578e555c744898cc7b5dc56028d80e0ce834e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T120421Z-5fc3513c-dirac_observable_panel_n-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source genuinely evolves free and gravity Dirac states using imported gamma/projector split-step primitives, computes the listed observables, and the cached stdout matches the note's excerpt and summary. The only cited authority is retained_bounded, and the note does not rely on it to assert a stronger sign claim.",
       "claim_id": "dirac_observable_panel_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded methodological panel claim that the Dirac 3+1D observable runner computes centroid, peak, first-arrival, early shell accumulation, current, and shell imbalance on the default sweep and records the resulting readout split without asserting a locked gravity sign.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T12:04:42.559964+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -48926,22 +48944,22 @@
         "dirac_core_card_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/frontier_dirac_walk_3plus1d_v2.py",
         "scripts/frontier_dirac_walk_3plus1d_v3.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The panel runner was executed on the stated default sweep, produced all six readouts for each layer count, and records an ALL/MIX readout split rather than a sign-locked gravity claim.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "103c5a9fb9631fa943e2dd5e7b57e504c3a60b1ba978559127e15557dd4cf9ef",
       "note_path": "docs/DIRAC_OBSERVABLE_PANEL_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the primary runner's sign convention for peak_delta and first_arrival is intended, since those are readout-definition choices rather than independent physics closures.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -49112,18 +49130,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "total_pass": 4
       },
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_observable_panel.py",
       "title": "Dirac Observable Panel Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The restricted packet includes the primary runner source, cached successful stdout, and the load-bearing helper source used for gamma matrices, split-step evolution, probability density, and torus distance. The primary runner does not merely print constants or import the contested panel conclusion; it computes the panel rows from the framework primitives and reports the mixed observable signs. The note's conclusion is bounded to methodological registration and reproducibility, and it explicitly avoids promoting a sign-locked gravity claim."
     },
     "dirac_source_smoothing_note": {
       "audit_date": "2026-05-10T19:24:26.377861+00:00",
@@ -163036,11 +163054,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.585,
       "load_bearing_step": "Embedded operators acting nontrivially on distinct tensor factors have products O_x O_y and O_y O_x equal to the same tensor, hence [O_x,O_y]=0.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "68cb15adb860fe770dde490f85bcead59283ff2587d0bd7dd14cf3952ffce1a3",
       "note_path": "docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check only the convention that the tensor ordering over a finite site set is fixed before writing embedded operators; this is standard and does not affect the verdict.",

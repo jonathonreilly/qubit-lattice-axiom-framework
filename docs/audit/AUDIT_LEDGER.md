@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 454 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1245 |
+| unaudited | 1244 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 97 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -54,10 +54,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 734 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 41 |
-| `audited_failed` | 45 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1474 |
+| `unaudited` | 1473 |
 
 | claim_type | count |
 |---|---:|
@@ -1015,6 +1015,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `mirror_2d_validation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -8021,6 +8022,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the current gen_2d_mirror harness and N in {25,40,60,80,100,150,200}, the seed-mean five-observable vector fails the joint operator-Cauchy gate, zero of five components pass the component gate, and four of five components are non-monotone in N.  _(class `C`)_
 - **chain closes:** True — The runner computes the stated harness sweep directly, verifies the Born floor and seed coverage guards, fits the joint and per-component Cauchy decay rates, and exits successfully only when the bounded no-go conditions hold. The imported generator confirms that varying N adds layers at fixed spacing/density rather than refining a fixed physical domain.
 - **rationale:** The claim is narrowly bounded to the current mirror harness and the listed layer-count grid, and the live runner reproduces the cached null result. The no-go does not depend on a timeout, a stale log, or an unsupported universal mirror claim; it is an executable failure of the specified operator-Cauchy gate. Residual risk is only extrapolating beyond this harness or grid, which the note explicitly excludes.
+- **auditor confidence:** high
+
+### `mirror_2d_validation_note`
+
+- **Note:** [`MIRROR_2D_VALIDATION_NOTE.md`](../../docs/MIRROR_2D_VALIDATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded exact 2D mirror coexistence pocket for N in {25,40,60,80,100} at npl_half=12, yr=10.0, connect_radius=2.5, 8 seeds, k-band [3,5,7], with no promoted gravity mass or distance law.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T193907Z-3f6d2d0d-mirror_2d_validation_not-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bounded table rows close from the primary runner cache, while the exact 2D mirror linear-propagator premise closes from the imported-authority cache.  _(class `C`)_
+- **chain closes:** False — The runner source genuinely computes the mirror and random rows using the imported exact 2D mirror generator and strictly linear propagator. However, the note's retained table does not exactly close from the supplied primary runner cache: the Born entries for N=40, N=80, and N=100 differ from stdout.
+- **rationale:** The primary runner and helper runner are present, and their code is computational rather than a definition, renaming, or hard-coded printout. The helper source verifies that propagate_LINEAR has no normalization and gen_2d_mirror is generated procedurally, so the intended computational class is C. But the source note asserts that the cached stdout backs every retained table row, and the supplied stdout disagrees with several Born values in that table. A completed runner mismatch is audit evidence, so the chain does not close as written.
 - **auditor confidence:** high
 
 ### `mirror_chokepoint_boundary_fit_note`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 77 |
+| ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 691 |
-| `audited_conditional` | 77 |
+| `audited_conditional` | 78 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1510 |
+| `unaudited` | 1509 |
 
 | claim_type | count |
 |---|---:|
@@ -812,6 +812,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `action_normalization_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1030,6 +1031,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The supplied runner source actually generates the DAGs, propagates both actions, and computes the reported table rather than printing fixed constants. The source note's safe interpretation is limited to the tested scripted slice and matches the completed stdout.
 - **rationale:** Clean for the bounded computational claim only: the note freezes the parameters, the runner computes the finite replay, and the stdout supports a mixed, non-monotonic shift in the scripted readout. The result does not rely on unlisted dependencies or external comparators, and the note explicitly does not claim a universal action unification or continuum theorem. Residual risk is scope creep if later citations treat this as a physical bridge beyond the frozen generated-DAG experiment.
 - **auditor confidence:** medium
+
+### `action_normalization_note`
+
+- **Note:** [`ACTION_NORMALIZATION_NOTE.md`](../../docs/ACTION_NORMALIZATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the conditional claim that, inside the runner's propagator-Poisson model and assuming A1 f/Phi identification, A2 weak-field Schwarzschild readout, and A3 Poisson normalization, c is not convention-free selected and is algebraically convention-locked.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T110510Z-18a4403d-action_normalization_not-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Once A1, A2, and A3 are granted, matching g_tt = -(1 - c*f) to g_tt = -(1 - 2*Phi) via Phi = (c/2)*f is an algebraic identity, with c fixed only by the chosen f/Phi and Poisson-normalization convention.  _(class `A`)_
+- **chain closes:** False — The algebraic matching closes after A1-A3 are admitted, but the restricted packet provides no retained bridge deriving or licensing those physical identifications, readouts, and source normalizations. The runner computes convergence/rescaling behavior but does not derive A1, A2, or A3.
+- **rationale:** The source has correctly narrowed away the earlier convention-free c-fixing claim and states A1-A3 as explicit admissions. The load-bearing c=2 versus c=1 statements are algebraic consequences of those admissions, while the numerical runner only checks convergence, rescaling, and massive-probe sanity behavior inside the chosen model. No-Go Discipline blocks clean ratification of the negative boundary at N1/N6: the packet does not close five independent non-selection routes from retained authority and itself leaves the convention/bridge route as open future work.
+- **auditor confidence:** high
 
 ### `action_power_3d_gravity_sign_closure_note`
 

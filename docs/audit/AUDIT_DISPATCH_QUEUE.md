@@ -61,7 +61,7 @@ Source sidecars:
 | 20 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
 | 21 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
 | 22 | resolved_or_superseded | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
-| 23 | resolved_or_superseded | `action_normalization_note` | bounded_theorem / unaudited / unaudited |
+| 23 | resolved_or_superseded | `action_normalization_note` | bounded_theorem / audited_conditional / audited_conditional |
 | 24 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / audited_conditional / audited_conditional |
 | 25 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
 | 26 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / audited_renaming / audited_renaming |

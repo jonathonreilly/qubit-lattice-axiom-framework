@@ -127742,22 +127742,42 @@
       "verdict_rationale": "The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement."
     },
     "hopping_bilinear_hermiticity_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:02:58.669728+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 11.271,
+        "runner_hash": "fdc06cbf93d09194af7056d95872d53720555f68421e5bd08bf7fa9e349ed13b",
+        "transitive_descendants": 873
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T190235Z-ee6c8b2a-hopping_bilinear_hermiti-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic Hermiticity and number-conservation parts close on the admitted tensor-product single-mode operators, but the cited Noether authority does not supply the claimed full Z^3 Hilbert-space translation operators T_a on H_phys or one-site translation covariance for local creation/annihilation operators. Its translation branch is explicitly narrowed to a (2Z)^3 two-step Ward identity on an admitted staggered/Grassmann carrier.",
       "claim_id": "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "The symmetric two-site hopping operator H_{xy}=a_x^\u2020a_y+a_y^\u2020a_x is Hermitian, number-conserving, and covariant under an assumed tensor-factor translation action; translation-invariant sums inherit these properties and have real spectrum.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:02:58.669728+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -127765,34 +127785,36 @@
         "axiom_first_lattice_noether_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.271,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By translation covariance of local operators, T_a a_x T_a^\u2020 = a_{x+a}, hence T_a H_{xy} T_a^\u2020 = H_{x+a,y+a}; and [Q_total,a_x]=-a_x, [Q_total,a_x^\u2020]=a_x^\u2020 gives [H_{xy},Q_total]=0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "1108053b695457640373966ff1e77b1385a67a76e5d1d167476246de36b6c8ef",
       "note_path": "docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop bridge proving tensor-product Hilbert-space translation operators T_a satisfy T_a a_x T_a^\u2020=a_{x+a} and defining Q_total on the same operator algebra, or narrow the claim to the explicitly assumed toy tensor-product setting.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/hopping_bilinear_hermiticity_check.py",
       "title": "Hopping Bilinear H_{xy} = a_x^\u2020 a_y + h.c. Is Hermitian and Translation-Covariant",
       "transitive_descendants": 873,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely constructs finite tensor-product matrices and checks the stated algebraic properties in a 1D toy model, so its checks are class A sanity checks rather than mere printed constants. However, the proof imports a stronger translation structure than the one-hop cited authority provides: the authority is retained_bounded but explicitly limits translation to the (2Z)^3 Ward identity on a staggered carrier, not arbitrary Z^3 tensor-factor covariance on H_phys. The broad \u201cfor every a in Z^3\u201d and \u201cvalid framework Hamiltonian\u201d conclusions therefore require an additional retained bridge theorem for Hilbert-space translations and local operator covariance."
     },
     "hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29": {
       "audit_date": "2026-05-25T11:36:08.945827+00:00",

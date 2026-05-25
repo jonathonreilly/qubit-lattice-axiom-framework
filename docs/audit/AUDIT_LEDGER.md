@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 451 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1262 |
+| unaudited | 1261 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 83 |
+| ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 731 |
-| `audited_conditional` | 83 |
+| `audited_conditional` | 84 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1491 |
+| `unaudited` | 1490 |
 
 | claim_type | count |
 |---|---:|
@@ -890,6 +890,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `guard_reconciliation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5968,6 +5969,21 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current runner computes the stated correlation-matrix entropies/ranks and reports boundary-fit R^2 exceeding volume-fit R^2 for both G=0 and G=10 globally and per side, with boundary slopes 0.186053 and 0.211399 giving ratio 0.8801.  _(class `C`)_
 - **chain closes:** True — The finite-model computation directly evaluates the claimed observable and fit comparison under the stated parameters; the conclusion is only the bounded numerical boundary-preference statement and coefficient shift.
 - **rationale:** The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement.
+- **auditor confidence:** high
+
+### `hopping_bilinear_hermiticity_theorem_note_2026-05-02`
+
+- **Note:** [`HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`](../../docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The symmetric two-site hopping operator H_{xy}=a_x^†a_y+a_y^†a_x is Hermitian, number-conserving, and covariant under an assumed tensor-factor translation action; translation-invariant sums inherit these properties and have real spectrum.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T190235Z-ee6c8b2a-hopping_bilinear_hermiti-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By translation covariance of local operators, T_a a_x T_a^† = a_{x+a}, hence T_a H_{xy} T_a^† = H_{x+a,y+a}; and [Q_total,a_x]=-a_x, [Q_total,a_x^†]=a_x^† gives [H_{xy},Q_total]=0.  _(class `A`)_
+- **chain closes:** False — The algebraic Hermiticity and number-conservation parts close on the admitted tensor-product single-mode operators, but the cited Noether authority does not supply the claimed full Z^3 Hilbert-space translation operators T_a on H_phys or one-site translation covariance for local creation/annihilation operators. Its translation branch is explicitly narrowed to a (2Z)^3 two-step Ward identity on an admitted staggered/Grassmann carrier.
+- **rationale:** The runner genuinely constructs finite tensor-product matrices and checks the stated algebraic properties in a 1D toy model, so its checks are class A sanity checks rather than mere printed constants. However, the proof imports a stronger translation structure than the one-hop cited authority provides: the authority is retained_bounded but explicitly limits translation to the (2Z)^3 Ward identity on a staggered carrier, not arbitrary Z^3 tensor-factor covariance on H_phys. The broad “for every a in Z^3” and “valid framework Hamiltonian” conclusions therefore require an additional retained bridge theorem for Hilbert-space translations and local operator covariance.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29`

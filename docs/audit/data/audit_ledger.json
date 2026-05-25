@@ -267046,22 +267046,42 @@
       "verdict_rationale": "The runner genuinely constructs finite periodic permutation matrices and verifies seven algebraic group-representation properties, all class A. Those checks support the regular-representation statement on the toy (Z/L)^3 basis, but they do not establish that the framework authority provides pure one-site Z^3 translations on H_phys. The one-hop authority is narrower: its translation branch is the (2Z)^3 two-step Ward identity on an admitted staggered carrier, with one-site shifts requiring extra taste/staggered structure outside scope."
     },
     "translation_covariance_local_op_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:33:19.016879+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "577ed60846f34871eaf5606368237a52c9db85bdafa15e30f6be653fe77a5ba0",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193210Z-0e5f45cb-translation_covariance_l-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic conjugation identities close if the regular representation T_a |x;\u03b1\u27e9 = |x+a;\u03b1\u27e9 is admitted. The cited Noether authority supplied here only supports a bounded (2Z)^3 two-step translation/Ward statement on an admitted staggered carrier, not a unitary H_phys regular representation for all a \u2208 Z^3.",
       "claim_id": "translation_covariance_local_op_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Algebraic covariance of site projectors, hopping operators, translated local copies, translation-invariant sums, and supports under an assumed regular lattice translation representation.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:33:19.016879+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -267069,34 +267089,36 @@
         "axiom_first_lattice_noether_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By N1, T_a acts unitarily on H_phys by T_a |x; \u03b1\u27e9 = |x + a; \u03b1\u27e9, so conjugation relabels the site indices of local matrix units.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "5f49fd3c06e7f0570e625004584156d594906b9ef068198e750af5416c1b1c67",
       "note_path": "docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to retained two-step translations or add a retained bridge theorem supplying the H_phys regular representation for all claimed translations and defining O(x+a) as the translated local copy.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/translation_covariance_local_op_check.py",
       "title": "Translation Covariance of Local Operators: T_a O(x) T_a^\u2020 = O(x + a)",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely computes finite-dimensional permutation-matrix conjugation identities, so it supports the elementary algebra once the translation representation is assumed. It does not verify that the cited N1 authority supplies that representation, and the cited authority explicitly narrows pure translation symmetry to the (2Z)^3 sublattice with bounded admitted carrier inputs. The source note therefore overstates both the upstream dependency and the scope all a \u2208 Z^3."
     },
     "triage_no_promotion_note": {
       "audit_date": "2026-04-27",

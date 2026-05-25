@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | unaudited | critical | 386 | 11.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_cycle_frame_support.py` |
+| 1 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | critical | 386 | 11.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_cycle_frame_support.py` |
 | 2 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | unaudited | critical | 381 | 11.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_hw1_source_transfer_boundary.py` |
 | 3 | `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | critical | 276 | 8.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py` |
 | 4 | `staggered_fermion_card_2026-04-11` | bounded_theorem | unaudited | critical | 275 | 11.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_17card.py` |

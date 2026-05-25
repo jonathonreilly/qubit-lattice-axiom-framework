@@ -1,0 +1,29 @@
+slug: yt-physical-top-intervention-bridge
+date: 2026-05-25
+branch: codex/yt-physical-intervention-bridge-20260525
+base_branch: codex/pr230-lambda-normalization-fanout-20260525
+status: open_gate_final_bridge_candidate
+objective: >
+  Package the remaining PR230 Y_T closure work as a stacked PR: audit/derive
+  the physical-intervention identification that the top Yukawa deformation is
+  the operational primitive RN source intervention for normalized O_top.
+claim_firewall:
+  retained_allowed: false
+  proposed_retained_allowed: false
+  forbidden_inputs:
+    - H_unit
+    - yt_ward_identity
+    - y_t_bare
+    - observed top/W/Z/Yukawa targets
+    - alpha_LM
+    - plaquette/u0
+    - fitted selector
+artifacts:
+  - docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md
+  - scripts/frontier_yt_physical_top_intervention_identification_candidate.py
+  - outputs/yt_physical_top_intervention_identification_candidate_2026-05-25.json
+current_result: >
+  Conditional implication is exact: if the operational physical-intervention
+  criterion is accepted, primitive Fisher/RN unit plus normalized O_top gives
+  y_33=1/sqrt(6). Current surface still does not force the criterion without
+  audit acceptance or a direct top-response measurement.

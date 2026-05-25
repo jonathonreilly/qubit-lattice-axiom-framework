@@ -1,0 +1,25 @@
+{
+  "current_blockers": {
+    "numerical_g2_retained_authority_present": false,
+    "same_source_ew_higgs_authority_present": false,
+    "strict_top_w_rows_present": false,
+    "strict_wz_packet_present": false
+  },
+  "fail_count": 0,
+  "pass_count": 37,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Blocked: the source-action support packet is retained_bounded only, strict same-source top/W FH rows are absent, and v-scale g_2 authority is not retained.",
+  "review_surface": [
+    "docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_fh_top_w_response_ratio_gate.py",
+    "outputs/yt_fh_top_w_response_ratio_gate_2026-05-25.json"
+  ],
+  "route_algebra_closed": true,
+  "status": "exact conditional top/W response-ratio theorem; current repo remains open-gate",
+  "upstream_statuses": {
+    "ew_coupling_status": "unaudited",
+    "ew_mass_status": "retained",
+    "pole_no_go_status": "retained_no_go",
+    "source_action_status": "retained_bounded"
+  }
+}

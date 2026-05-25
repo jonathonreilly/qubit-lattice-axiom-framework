@@ -1,0 +1,42 @@
+slug: yt-lambda-normalization-fanout
+date: 2026-05-25
+branch: physics-loop/yt-lambda-normalization-fanout-20260525
+status: open_support_only
+objective: >
+  Fan out the Y_T source-action lane lambda-normalization blocker across independent physics
+  attacks, run assumptions/first-principles/literature/math exercises, and
+  leave the narrowest honest next-action packet.
+claim_firewall:
+  proposed_retained_allowed: false
+  retained_allowed: false
+  forbidden_inputs:
+    - H_unit
+    - yt_ward_identity
+    - y_t_bare
+    - observed top/Yukawa/W/Z targets as proof inputs
+    - alpha_LM
+    - plaquette/u0
+primary_artifacts:
+  - docs/YT_LAMBDA_NORMALIZATION_ATTACK_FANOUT_NOTE_2026-05-25.md
+  - scripts/frontier_yt_lambda_normalization_attack_fanout.py
+  - outputs/yt_lambda_normalization_attack_fanout_2026-05-25.json
+  - docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md
+  - scripts/frontier_yt_fh_top_w_response_ratio_gate.py
+  - outputs/yt_fh_top_w_response_ratio_gate_2026-05-25.json
+  - docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md
+  - scripts/frontier_yt_same_source_ew_higgs_authority_gate.py
+  - outputs/yt_same_source_ew_higgs_authority_gate_2026-05-25.json
+  - docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md
+  - scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py
+  - outputs/yt_ew_higgs_source_intertwiner_gate_2026-05-25.json
+current_sharp_blocker: >
+  The neutral EW radial carrier map and top/W response-ratio algebra close
+  conditionally, but the repo still lacks a retained theorem deriving the
+  signed-record scalar source as the physical neutral EW Higgs radial source.
+agent_probes:
+  A_same_surface_kinetic_lsz: 019e5eb1-41d5-7aa3-8471-e4d31770757d
+  B_wz_response_bypass: 019e5eb1-426c-7ea0-8664-918bf4468c74
+  C_fh_top_w_ratio: 019e5eb1-4319-7a40-8058-b7893ef7cc78
+  D_symplectic_commutator: 019e5eb1-43bc-7a80-b9d8-6ca42d8532c3
+  E_spectral_sum_rule: 019e5eb1-4463-7bf0-8adc-a4c1332d9c41
+  F_brst_fms: 019e5eb1-4523-7801-b956-0a809318a56a

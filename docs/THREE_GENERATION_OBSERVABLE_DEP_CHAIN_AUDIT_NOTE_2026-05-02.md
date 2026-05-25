@@ -99,3 +99,9 @@ recommended dep cleanup):
 - Parent: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 - Bottleneck dep: `GENERATION_AXIOM_BOUNDARY_NOTE.md` (audited_conditional)
 - Sister cycle: PR [#264](https://github.com/jonathonreilly/cl3-lattice-framework/pull/264) (cycle 7) — same-shape dep-declaration repair for `physical_lattice_necessity_note`
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [generation_axiom_boundary_note](GENERATION_AXIOM_BOUNDARY_NOTE.md)

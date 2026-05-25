@@ -81,13 +81,10 @@ finite-box scope:
   `a_(p,q)(beta) > 0` for `(p,q)` in `B`, beta > 0).
 - (U3) the stripped residual `R_beta^env|_B` is uniquely determined by `(S)`
   from `K_beta^src|_B`, `D_beta^loc|_B`, `exp[(beta/2) J|_B]`.
-- (U4) the unique stripped residual satisfies the parent's structural
-  class iff `K_beta^src|_B` does (forward direction: equality of
-  algebraic conjugates).
 - (U5) the unique stripped residual agrees on `B` with the bounded
   companion's `rho_(p,q)(6)` coefficients from the canonical single-link
   Wilson character integral, to machine precision (consistency
-  cross-check).
+  cross-check; explicitly circular round-trip).
 
 These together upgrade the parent's class-F renaming, *within finite-box
 scope*, from "the residual factor is named `R_beta^env`" to "the residual
@@ -153,24 +150,6 @@ beta` must equal `R_beta^env|_B` by left-multiplying both sides of `(D|_B)`
 by `(D_beta^loc|_B)^{-1} exp[-(beta/2) J|_B]` and right-multiplying both
 sides by `exp[-(beta/2) J|_B]`.
 
-**Conclusion (U4) (structural-class transport).** The parent's structural
-class (positive, self-adjoint, central, diagonal in the character basis,
-conjugation-symmetric on `H_B`) is *transported* by `(S)`:
-
-- self-adjointness: `R_beta^env|_B` is self-adjoint on `H_B` iff
-  `K_beta^src|_B` is self-adjoint on `H_B`, because `D_beta^loc|_B` and
-  `exp[(beta/2) J|_B]` are self-adjoint and invertible (`(M^{-1} K M^{-1})^T
-  = M^{-1} K^T M^{-1}` for symmetric invertible `M`);
-- conjugation symmetry: `R_beta^env|_B` commutes with the swap involution
-  `S : chi_(p,q) <-> chi_(q,p)` on `H_B` iff `K_beta^src|_B` does, because
-  `S` commutes with `D_beta^loc|_B` (`a_(p,q) = a_(q,p)` by the
-  conjugation symmetry of single-link Wilson character integrals) and with
-  `exp[(beta/2) J|_B]` (because `J` itself is `(chi_(1,0) + chi_(0,1))/6 =
-  S J S`, i.e. `J` is `S`-invariant).
-
-These are forward implications: if `K_beta^src|_B` has the structural
-class, the unique stripped residual inherits it.
-
 **Conclusion (U5) (finite-box agreement with the bounded companion).**
 Build `K_beta^src|_B` at `beta = 6` from the factored form `(D|_B)` using
 the bounded companion's runner-computed `rho_(p,q)(6) = c_(p,q)(6) /
@@ -221,32 +200,6 @@ D^{-1} M^{-1} K M^{-1} = R,
 which is exactly `(S)`. Any second solution `R'` must satisfy the same
 equation, hence `R' = R`.
 
-**(U4).** Suppose `K_beta^src|_B` is self-adjoint on `H_B`. Then by `(S)`,
-
-```text
-R_beta^env|_B^T = (M^{-1} K M^{-1})^T D^{-1,T} = M^{-T} K^T M^{-T} D^{-T},
-```
-
-where `M = exp[(beta/2) J|_B]`. Since `M` is symmetric and `D` is
-diagonal,
-`M^T = M`, `D^T = D`, and the product `M^{-1} D^{-1} K M^{-1} M^{-1} M
-= D^{-1} M^{-1} K M^{-1}` after careful regrouping; the relevant
-self-adjointness statement is that `R_beta^env|_B` itself is symmetric
-when both `K_beta^src|_B` and the stripping factors are symmetric.
-Equivalently, `D^{-1} M^{-1} K M^{-1}` is symmetric whenever `K` is and
-`D, M` are symmetric and commute with their own inverses; this follows
-because diagonal `D` commutes with itself and the conjugation
-`M^{-1} K M^{-1}` of a symmetric `K` by a symmetric `M^{-1}` is
-symmetric.
-
-For the swap involution `S`: `S commutes with D` because
-`a_(p,q) = a_(q,p)` (real central class function under conjugation
-`U -> U^*`). `S` commutes with `J` because `J = (chi_(1,0) +
-chi_(0,1))/6` is itself `S`-symmetric (the two fundamental characters
-swap under conjugation, but their sum is `S`-invariant). Hence `S`
-commutes with `M = exp[(beta/2) J|_B]` and with `D`, so `S` commutes with
-`D^{-1} M^{-1} K M^{-1}` iff `S` commutes with `K`.
-
 **(U5).** Construct `K_6^src|_B` at `beta = 6` from the factored form
 `(D|_B)` with `R_beta^env|_B = R[rho(6)]` from the bounded companion's
 coefficients. Invert via `(S)` to recover `R_beta^env|_B`. The recovery
@@ -262,14 +215,18 @@ Wilson single-link boundary character coefficients on `B`. ∎
 - (U3): the *unique* finite-box residual factor as the algebraic solution
   of `(S)`. No admissibility freedom within the positive diagonal central
   conjugation-symmetric class beyond `(S)`.
-- (U4): structural-class transport from `K_beta^src|_B` to the unique
-  stripped residual.
-- (U5): finite-box consistency cross-check that the unique stripped
-  residual factor equals the canonical Wilson single-link boundary
-  character coefficient sequence to machine precision.
+- (U5): finite-box consistency cross-check (explicitly circular round-trip)
+  that the unique stripped residual factor equals the canonical Wilson
+  single-link boundary character coefficient sequence to machine precision.
 
 ## What this does NOT claim
 
+- Does **not** claim structural-class transport from `K_beta^src|_B` to the
+  unique stripped residual. The scope of this narrow note is the (U1)-(U3)
+  uniqueness statement plus the (U5) explicitly circular round-trip check;
+  transport of the parent's structural class (positive, self-adjoint,
+  central, diagonal, conjugation-symmetric) is left to the parent note
+  and any future companion.
 - Does **not** claim the all-weight equality of the stripped residual with
   the compressed unmarked spatial Wilson environment outside the finite
   box `B` (the parent's explicit open gate).
@@ -341,13 +298,11 @@ verifies on the finite box `0 <= p,q <= 3`:
    candidate residuals and confirms that `(S)` returns each candidate
    exactly (round-trip identity), establishing the uniqueness of the
    algebraic inverse.
-4. (U4) when `K_beta^src|_B` is constructed self-adjoint and conjugation-
-   symmetric, the recovered `R_beta^env|_B` is also self-adjoint and
-   conjugation-symmetric to mpmath precision (`< 1e-30`).
-5. (U5) when `K_beta^src|_B` is constructed from the bounded companion's
+4. (U5) when `K_beta^src|_B` is constructed from the bounded companion's
    `rho_(p,q)(6)` coefficients, `(S)` recovers a diagonal operator on the
    character basis with diagonal entries equal to `rho_(p,q)(6)` to
-   mpmath precision (`< 1e-30`).
+   mpmath precision (`< 1e-30`). This is the explicitly circular round-
+   trip cross-check.
 
 ### Numerical conditioning note
 
@@ -357,12 +312,13 @@ orders of magnitude even on the modest finite box `NMAX = 3` at `beta = 6`
 Naive float64 inversion of `D` therefore loses precision and the round-trip
 error `||R - strip(reconstruct(R))||` blows up to `~10^-5`. The runner
 therefore uses mpmath (`dps = 60` decimal digits) for the algebraic
-stripping checks `(U1)`-`(U5)`. Float64 numbers (Wilson character integrals
-from `scipy.special.iv`, eigendecomposition seeds) are promoted to mpmath,
-with `J|_B` reconstructed as an exact rational `1/6` matrix and the local
-Wilson coefficient sequence enforced to be exactly swap-symmetric at
-float64 precision before promotion, so the structural-class transport
-check `(U4)` is not contaminated by float64 noise on the *input* matrices.
+stripping checks `(U1)`-`(U3)` and the `(U5)` round-trip. Float64 numbers
+(Wilson character integrals from `scipy.special.iv`, eigendecomposition
+seeds) are promoted to mpmath, with `J|_B` reconstructed as an exact
+rational `1/6` matrix and the local Wilson coefficient sequence enforced to
+be exactly swap-symmetric at float64 precision before promotion, so the
+algebraic stripping is not contaminated by float64 noise on the *input*
+matrices.
 
 This is a numerical-implementation detail, not a load-bearing
 mathematical assumption: the uniqueness theorem `(U3)` is a purely

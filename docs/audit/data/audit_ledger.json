@@ -35620,11 +35620,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
-      "load_bearing_score": 8.17,
+      "load_bearing_score": 9.17,
       "load_bearing_step": "From the sibling split theorem Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), Artin-Wedderburn gives the two irreducible complex modules, each the natural 2-dimensional M_2(C)-module, and semisimplicity gives direct-sum decomposition.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e",
       "note_path": "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "box_under_parent: record as algebraic decoration under cl3_complexification_split_narrow_theorem_note_2026-05-10 unless later shown load-bearing for a non-decoration claim or given an independent comparator surface.",
@@ -42918,24 +42918,42 @@
       "verdict_rationale": null
     },
     "coulomb_stability_upper_bound_support_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T11:55:40.706111+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T115413Z-eda813d7-coulomb_stability_upper_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic scaling step follows from the admitted Hamiltonian and trial-state expectations, but those are explicit external premises rather than retained results in the restricted packet. The missing closures are the general-d Coulomb Hamiltonian, standard d-dimensional continuum QM/domain facts, and the Coulomb/scalar or electromagnetic-sector identification.",
       "claim_id": "coulomb_stability_upper_bound_support_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Conditional on admitted external premises P1-P3, the trial-state scaling argument identifies d=4 as the Coulomb critical dimension, with d>=5 unbounded below and d=3 hydrogenic behavior imported from standard continuum QM.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T11:55:40.706111+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -42943,20 +42961,22 @@
         "dimensional_gravity_table"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For the scaled trial state, <H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U, so for d >= 5 the attractive potential term outgrows the kinetic term as lambda -> infinity.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "meta",
       "max_descendant_status_rank": 25,
       "note_hash": "6a731cf7fd039ca4feaca666db8f29150833ea455ff82b80092f855c3389ee55",
       "note_path": "docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained bridge theorems or cited retained dependencies deriving P1, P2, and P3, or keep the claim explicitly conditional on those external admissions.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-24T22:11:53.353553+00:00",
@@ -43011,7 +43031,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -43022,7 +43042,7 @@
       "runner_path": null,
       "title": "Coulomb Stability Upper-Bound Support",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic scaling once P1-P3 are admitted. However, the cited Dimensional Gravity Table is retained_bounded only for cache-backed d=3/d=4 rows and does not retain the universal general-d Coulomb law needed for P1; P2 and P3 are also external admissions with no retained derivation in the packet. No-Go Discipline check N3/N4 keeps these admissions explicit and prevents treating the bounded support note as retained closure. The note is valid as conditional support, not as a clean framework-internal theorem."
     },
     "coupled_field_generated_family_probe_note": {
       "audit_date": "2026-05-10T19:11:44.287151+00:00",

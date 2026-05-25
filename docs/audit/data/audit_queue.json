@@ -3,7 +3,7 @@
     "critical": 259,
     "high": 341,
     "leaf": 337,
-    "medium": 338
+    "medium": 337
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -18011,33 +18011,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "coarse_grained_exterior_law_helper_note_2026-04-14",
-        "oh_schur_boundary_action_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py"
-      ],
-      "load_bearing_score": 6.2,
-      "note_path": "docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_tensorial_einstein_regge_completion.py",
-      "transitive_descendants": 51
     },
     {
       "audit_independence_required": "any_non_self",
@@ -38318,6 +38291,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 41,
-  "total_pending": 1275
+  "ready_count": 40,
+  "total_pending": 1274
 }

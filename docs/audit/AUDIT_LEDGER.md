@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 161 |
+| **retained_no_go** | 162 |
 | **retained_bounded** | 460 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 743 |
+| `audited_clean` | 744 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1462 |
+| `unaudited` | 1461 |
 
 | claim_type | count |
 |---|---:|
@@ -275,6 +275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3698,6 +3699,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Every exact Z_3-covariant circulant kernel is diagonalized by U_Z3 with a real diagonal spectrum, and the remaining heavy-neutrino mass-basis change is real orthogonal, so K_mass stays real symmetric and Im[(K_mass)_{1j}^2] = 0 for all j.  _(class `A`)_
 - **chain closes:** True — The no-go is an exact linear-algebra statement: the Z_3 Fourier basis makes the stated circulant kernel real diagonal, and the stated Majorana doublet diagonalization is a real orthogonal rotation, which cannot generate imaginary squared off-diagonal entries. Within the stated current-stack assumptions, no extra physical bridge is needed to conclude the CP tensor vanishes.
 - **rationale:** The load-bearing step is an algebraic no-go over the kernel family and mass matrix stated in the note, not a numerical fit or renaming. The cached runner output reports PASS=4 FAIL=0 and checks the same three algebraic pieces: Z_3 diagonalization, real doublet rotation, and vanishing Im[(K_mass)_{1j}^2]. Residual risk is that the runner uses representative numeric d,r samples rather than symbolic quantification over all real d,r, but the note's closed-form Fourier/circulant argument supplies the exact family closure.
+- **auditor confidence:** high
+
+### `dm_pmns_asymptotic_source_no_go_note_2026-04-20`
+
+- **Note:** [`DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md`](../../docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For target angles (0.307, 0.0218, 0.545), no nonzero pure-source limit J=m T_M+delta T_DELTA+q_+ T_Q exists in the twelve enumerated representatives: six row permutations times delta_CP in {0, pi}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T234438Z-3790cbd8-dm_pmns_asymptotic_sourc-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each of the twelve enumerated real-orthogonal PMNS representatives, the pure-source family constraints give a 3x3 homogeneous system A lambda = 0, and A has full rank, so lambda=0 is the only solution.  _(class `A`)_
+- **chain closes:** True — The runner constructs each real PMNS representative, applies the three stated pure-source constraints to the three rank-one eigenprojectors, and finds strictly positive minimum singular values for all twelve 3x3 systems. Full rank makes the homogeneous eigenvalue vector zero, so the scoped nonzero asymptotic source direction is excluded.
+- **rationale:** The load-bearing step is a finite linear-algebra rank check over the stated target angles and pure-source constraints, not a definition or symbol renaming. The runner source actually constructs the PMNS matrices and constraint matrices and computes rank/SVD values; it is not merely printing cached pass constants. The no-go gate passes for the narrowed boundary: row permutations, both real CP branches, degenerate eigenvalue escape, compact bounded basins, numerical-floor corroboration, and generic affine directions are separated, with the generic bridge explicitly out of scope. The audited clean result is therefore limited to the enumerated-representative no-go and does not certify the deferred universal affine-direction extension.
 - **auditor confidence:** high
 
 ### `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16`

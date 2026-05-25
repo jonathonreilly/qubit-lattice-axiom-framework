@@ -379,5 +379,4 @@ Summary: PASS=34  FAIL=0
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- `PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md`
-- [planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30](PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
+- `PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md` (downstream consumer; backticked to avoid length-3 cycle through `planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30` — citation graph direction is *downstream → upstream*. The 2026-05-25 mechanical repair tool re-added a markdown-link version here that the cycle inventory then flagged; this entry retains only the backticked plain-text reference so the citation graph stays acyclic.)

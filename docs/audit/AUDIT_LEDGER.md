@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 106 |
+| ~~audited_conditional~~ | 107 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 740 |
-| `audited_conditional` | 106 |
+| `audited_conditional` | 107 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1458 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -968,6 +968,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_fh_top_w_response_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_physical_top_intervention_identification_candidate_note_2026-05-25` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -13896,6 +13897,25 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The RN source density R_h = exp(h O) / E_0[exp(h O)] implies S_h = S_0 - h O + c(h) I, hence -dS_h/dh = O modulo identity.  _(class `A`)_
 - **chain closes:** False — The RN-to-action identity closes once the operational RN source family is assumed. The restricted packet does not derive or cite retained authority for identifying the physical top Yukawa deformation with the primitive RN source intervention for O_top.
 - **rationale:** The finite-dimensional RN/log-density step is valid algebra, and the runner's substantive computations are SymPy checks of that algebra plus the six-component normalization. The runner does not derive the operational source premise or the top Yukawa intervention identification from the baseline; its boundary checks acknowledge that gap. Because the restricted packet imports an unclosed physical bridge, the result is conditional support rather than audited clean closure.
+- **auditor confidence:** high
+
+### `yt_physical_top_intervention_identification_candidate_note_2026-05-25`
+
+- **Note:** [`YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the proposed identification of the physical top Yukawa deformation with the operational primitive RN/Fisher source for normalized O_top, and the conditional consequence y_33=1/sqrt(6).
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201211Z-0c59e891-yt_physical_top_interven-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The physical top Yukawa deformation is the primitive Fisher/RN source intervention for the unique normalized local one-Higgs up-type top trilinear operator O_top.  _(class `F`)_
+- **chain closes:** False — The algebra after accepting the criterion closes conditionally, but the restricted packet does not derive the physical identification itself. The missing step is an independent bridge showing that the physical top Yukawa deformation is exactly the primitive RN/Fisher source intervention.
+- **rationale:** The runner verifies note structure, upstream status boundaries, simple normalization algebra, and the lambda counterfamily, but it does not derive the contested physical identification. The note itself explicitly marks the criterion as an open gate and states that without it the lambda family remains underdetermined. The load-bearing move is a symbol/concept identification between physical top deformation and primitive operational RN source, not a first-principles derivation from the restricted packet.
+- **open / conditional deps cited:**
+  - `YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md`
+  - `YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md`
+  - `YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`
+  - `YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md`
+  - `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md`
 - **auditor confidence:** high
 
 ### `yt_pr230_consolidated_status_note_2026-05-22`

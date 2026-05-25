@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 453 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1248 |
+| unaudited | 1247 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 95 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,21 +52,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 733 |
-| `audited_conditional` | 95 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1477 |
+| `unaudited` | 1476 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1053 |
+| `bounded_theorem` | 1054 |
 | `decoration` | 42 |
 | `meta` | 234 |
 | `no_go` | 248 |
 | `open_gate` | 112 |
-| `positive_theorem` | 731 |
+| `positive_theorem` | 730 |
 
 | criticality | count |
 |---|---:|
@@ -944,6 +944,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `translation_covariance_local_op_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `u1_fermion_number_conservation_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -12859,6 +12860,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u1_fermion_number_conservation_theorem_note_2026-05-02`
+
+- **Note:** [`U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On-shell U(1) time-slice charge conservation from the cited lattice Noether N2, together with the asserted Hilbert-space commutator and integer-spectrum upgrades.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T193350Z-5dd58ebd-u1_fermion_number_conser-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Cited N2 gives ∂^L_μ J^μ_x=0 on shell; summing over a periodic spatial slice telescopes the spatial terms and identifies the temporal remainder with Q_total(t)-Q_total(t-1)=0, then the note asserts the corresponding [Q̂_total,H]=0 and integer number-operator spectrum.  _(class `A`)_
+- **chain closes:** False — The classical slice-telescoping step follows from N2 plus the periodic discrete divergence theorem on the admitted carrier. The quantum upgrades to [Q̂_total,H]=0 on H_phys and an integer spectrum require a closed Hilbert-space/Hamiltonian reconstruction and charge-operator bridge that is not supplied in the restricted packet.
+- **rationale:** The runner checks a toy finite Fock-space Q̂ and an H chosen to be block-diagonal in total occupation, so its passes are algebraic consistency checks, not a first-principles computation of the cited lattice Noether current or Hamiltonian reconstruction. The cited Noether authority is retained_bounded and supports the classical U(1) current on the admitted staggered carrier, but it explicitly does not close all quantum-current/anomaly/Hilbert-space identifications. The source note therefore overstates the chain by treating the classical on-shell current conservation as automatically equivalent to [Q̂_total,H]=0 and integer fermion-number sectors on H_phys.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`

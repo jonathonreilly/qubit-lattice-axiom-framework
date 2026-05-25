@@ -267868,22 +267868,42 @@
       "verdict_rationale": "The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem."
     },
     "u1_fermion_number_conservation_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:35:27.342941+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "3ca1e84bfca6a993908ac13d87d1d636775aff42e654119f43d673e691f62fb5",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193350Z-5dd58ebd-u1_fermion_number_conser-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The classical slice-telescoping step follows from N2 plus the periodic discrete divergence theorem on the admitted carrier. The quantum upgrades to [Q\u0302_total,H]=0 on H_phys and an integer spectrum require a closed Hilbert-space/Hamiltonian reconstruction and charge-operator bridge that is not supplied in the restricted packet.",
       "claim_id": "u1_fermion_number_conservation_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "On-shell U(1) time-slice charge conservation from the cited lattice Noether N2, together with the asserted Hilbert-space commutator and integer-spectrum upgrades.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:35:27.342941+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -267891,34 +267911,36 @@
         "axiom_first_lattice_noether_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Cited N2 gives \u2202^L_\u03bc J^\u03bc_x=0 on shell; summing over a periodic spatial slice telescopes the spatial terms and identifies the temporal remainder with Q_total(t)-Q_total(t-1)=0, then the note asserts the corresponding [Q\u0302_total,H]=0 and integer number-operator spectrum.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "007912e193e28d7f8386814a956883c5cd0e619d02aa24794cfdc22af3acf4de",
       "note_path": "docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite or prove the Hilbert-space/Hamiltonian reconstruction bridge identifying the lattice U(1) Noether charge with Q\u0302_total, proving its integer spectrum and [Q\u0302_total,H]=0, or narrow the note to the classical on-shell slice-conservation result.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 4,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/u1_fermion_number_conservation_check.py",
       "title": "U(1) Fermion-Number Conservation from Cited Lattice Noether N2",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner checks a toy finite Fock-space Q\u0302 and an H chosen to be block-diagonal in total occupation, so its passes are algebraic consistency checks, not a first-principles computation of the cited lattice Noether current or Hamiltonian reconstruction. The cited Noether authority is retained_bounded and supports the classical U(1) current on the admitted staggered carrier, but it explicitly does not close all quantum-current/anomaly/Hilbert-space identifications. The source note therefore overstates the chain by treating the classical on-shell current conservation as automatically equivalent to [Q\u0302_total,H]=0 and integer fermion-number sectors on H_phys."
     },
     "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {
       "audit_date": "2026-05-23T17:57:09.233401+00:00",

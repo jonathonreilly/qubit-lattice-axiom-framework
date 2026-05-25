@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 160 |
-| **retained_bounded** | 457 |
+| **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 739 |
+| `audited_clean` | 740 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1462 |
+| `unaudited` | 1461 |
 
 | claim_type | count |
 |---|---:|
@@ -842,6 +842,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -13650,6 +13651,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The runner source genuinely constructs the graph families, Laplacian, parity-coupled Hamiltonian, Crank-Nicolson evolution, width, gap, and shell-force observables, and the cached output matches the note's reported counts and caveats. The audited scope is bounded to this explicit computational battery and does not close the broader off-lattice blocker.
 - **rationale:** Within the bounded computational scope, the claim follows from the completed runner output and the runner source does not hard-code the contested result or import it from another note. The note accurately preserves the non-universality caveats: 14/15 rather than 15/15 width separation and nonzero repulsive shell-force counts in some random-geometric runs. No external comparator or open cited dependency is used for the bounded claim.
 - **auditor confidence:** high
+
+### `wide_family_h0125_bridge_reopen_audit`
+
+- **Note:** [`WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md`](../../docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed/reduced-family h=0.125 bounded negative for weak-field F~M closure, inherited from the cited retained_bounded h=0.125 bridge notes; the wider phys_w=4 continuation is out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T200542Z-3e91bb8b-wide_family_h0125_bridge-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The binding evidence of this note is exactly the fixed/reduced-family h=0.125 bounded negatives already carried by its retained one-hop dependencies.  _(class `B`)_
+- **chain closes:** True — The cited authorities are retained_bounded and support the narrowed conclusion that the h=0.125 rows remain Born-clean with TOWARD gravity but F~M about 0.50 rather than near 1. The source note explicitly excludes the wider phys_w=4 continuation from binding scope, so the missing runner for that wider narrative is not load-bearing.
+- **rationale:** No primary runner source or stdout is present, so the audit falls back to the note text and one-hop cited authorities. Within the narrowed scope, the conclusion follows from retained_bounded dependencies and does not require the out-of-scope wider-family phys_w=4 claims. The load-bearing step is cross-note inheritance rather than a fresh first-principles computation, but the source note does not present it as a new computation.
+- **auditor confidence:** medium
 
 ### `wide_lattice_h2t_distance_law_note`
 

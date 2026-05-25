@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 145 |
 | **retained_no_go** | 157 |
-| **retained_bounded** | 443 |
+| **retained_bounded** | 444 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 720 |
+| `audited_clean` | 721 |
 | `audited_conditional` | 91 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1458 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -795,6 +795,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_lambda_bypass_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_attempt` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -12837,6 +12838,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The universal data are enough to isolate the invariant core and the complement orbit, but not enough to choose a canonical complement section.  _(class `E`)_
 - **chain closes:** False — The note asserts that the available universal data do not define a canonical complement section, but the restricted packet contains no cited authority, proof of nonexistence, runner output, or runner source establishing that exhaustiveness claim. The missing step is an axiom-native no-section or invariant-exhaustion argument for the SO(3) complement orbit.
 - **rationale:** The load-bearing step is presented as a bounded canonicalization result, but within the restricted packet it functions as an introduced status assertion about what the universal atlas can and cannot fix. No upstream authorities are provided and no runner output or source is available to verify the four advertised checks. The conclusion may be true under the intended universal data, but that data set and the no-canonical-section argument are imported rather than closed inside this packet.
+- **auditor confidence:** high
+
+### `universal_gr_invariant_frame_obstruction_note`
+
+- **Note:** [`UNIVERSAL_GR_INVARIANT_FRAME_OBSTRUCTION_NOTE.md`](../../docs/UNIVERSAL_GR_INVARIANT_FRAME_OBSTRUCTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional algebraic checks for the canonical basis/projector/rotation matrices implemented in the runner; atlas exhaustion and a universal invariant section selector are outside the audited scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T124402Z-7c197fcf-universal_gr_invariant_f-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the runner's canonical lapse/shift/trace/shear basis with Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0), Pi_A1 is rank-2 invariant, the complement carries rank-3 spatial rotations, the shared-axis weights are {0:4,1:4,2:2}, the weight-1 block has commutant dimension 8, and the tested quotient spectrum is invariant.  _(class `A`)_
+- **chain closes:** True — The runner source constructs the finite matrices and computes the ranks, commutators, generator action, eigenweight multiplicities, commutant dimension, and spectrum delta directly. The broader atlas-exhaustion/no-section-selector statement is explicitly non-load-bearing and is not needed for this bounded scope.
+- **rationale:** Within the narrowed finite algebraic scope, the source and runner agree and the runner is not merely printing constants: it constructs the representation matrices and computes the stated invariants. The text-presence checks against other notes are cross-note bookkeeping, but the load-bearing bounded representation facts are the direct matrix computations. The negative boundary is not audited as a global no-go; the packet only supports the canonical-basis statement and explicitly excludes atlas exhaustion.
 - **auditor confidence:** high
 
 ### `universal_gr_lambda_bypass_note`

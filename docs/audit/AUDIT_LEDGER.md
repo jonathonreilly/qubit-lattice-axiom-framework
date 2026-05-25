@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 157 |
-| **retained_bounded** | 447 |
+| **retained_bounded** | 448 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 725 |
+| `audited_clean` | 726 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1465 |
+| `unaudited` | 1464 |
 
 | claim_type | count |
 |---|---:|
@@ -569,6 +569,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
+| `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -8735,6 +8736,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** None  _(class `A`)_
 - **chain closes:** None — Chain does not close: load-bearing step in Step 2 applies continuum 4-component Dirac parity P_Dirac = gamma^0 to operators that the framework's single-component staggered substrate cannot host without a separate SME-bilinear-operator-basis-on-staggered-substrate bridge. The same bridge is the explicit missing-bridge demotion in the parent cpt_exact_note (2026-05-19 narrowing) and in PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30. N1, N3, N4, N7, N8 fail under no-go-discipline.
 - **rationale:** Issue: The note's load-bearing 'no dim-5 LV operator can be added' conclusion identifies four 4-component-Dirac SME-style structures (gamma^mu partial_nu partial_rho, partial_mu partial_nu, gamma_5 gamma^mu partial_nu, sigma^{mu nu} partial_rho with P_Dirac = gamma^0) with admissible single-flavor, single-component staggered-fermion bilinears on Z^3, then computes parity weights using continuum 4x4 Dirac structure (Step 2, runner Tests 2-3). The staggered substrate of the framework is single-component (note line 60: 'single-component staggered fermions'), but the parity argument is executed on the 'standard 4-dimensional Dirac algebra in the chiral (Weyl) basis with P_Dirac = gamma^0' (line 82). The map from single-component staggered psi(x) on Z^3 to a 4-component Dirac field whose parity is P_Dirac = gamma^0 — together with the assertion that the listed four structures exhaust the SME-style dim-5 basis — is the SME bilinear-operator-basis-on-staggered-substrate bridge that the parent CPT_EXACT_NOTE (2026-05-19 narrowing) explicitly demoted to admitted: 'the identification of these vanishing Hamiltonian-sector residuals with the canonical SME coefficients ... requires a retained SME bilinear-operator-basis-on-staggered-substrate derivation proving canonical normalization and basis completeness, which this note does not supply.' The PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30 retained scope is also explicitly conditional on the same missing bridge (audited_clean as bounded_theorem with the SME bilinear basis-completeness deferred). N1-N8 outcomes: N1 FAIL (note enumerates exactly 4 operators and claims basis-completeness 'the four ... structures covered are exactly' without proof; alternative-route R5 = lattice-operator-basis enumeration completeness is not closed); N2 PASS (the three explicit scope bounds are independent); N3 FAIL (prose 'standard 4-dimensional Dirac algebra' / 'canonical SME-style basis' on lines 82, 103, 253 conceals an admitted bridge as 'standard/canonical'); N4 FAIL (cited witness cpt_exact_note residual is the Hamiltonian-sector identity epsilon H_0 epsilon = -H_0 on single-component fermions; claim residual is P-odd parity weights on 4-component Dirac-structured operators — residuals differ); N5 PASS-narrow (operator-level statements hold for the four explicit Dirac structures at the algebra level); N6 PASS (not load-bearing); N7 FAIL — convincing steelman: 'the parity-odd weight of e.g. gamma^1 partial_2 partial_2 is a fact about continuum 4-component Dirac structure under continuum parity; the framework is single-component staggered, and the staggered-to-Dirac dictionary produces taste structures so the 4x4 Dirac parity weight does not mechanically transfer to staggered lattice parity P = P_inv * epsilon without the canonical-normalization and basis-completeness bridge that the parent CPT note explicitly admits is missing'; N8 FAIL (the same SME-basis bridge gap was used to narrow CPT_EXACT_NOTE's all-SME corollary in 2026-05-19 via the import-retirement / scope-narrow mechanism; the same mechanism applies here and was not used). Runner closes only what it computes: epsilon H_0 epsilon + H_0 = 0 at L=4,6,8 (single-component, OK) and abstract parity-weight identities on 4x4 Dirac matrices with P_Dirac = gamma^0 (matrix algebra, OK); it does NOT verify that the listed 4-component Dirac structures correspond to admissible single-flavor staggered-lattice bilinears or that the basis is complete. Why this blocks: the no-go conclusion 'no additional dim-5 fermion-bilinear LV operator in the SME-style basis can be added to the staggered lattice action' is over-broad until the SME-bilinear-operator-basis-on-staggered-substrate bridge that the parent CPT note explicitly admits is supplied. The narrow retained content (per-operator P-weight identities on 4x4 Dirac structures, plus epsilon H_0 epsilon = -H_0 on the single-component lattice) is fine; the bridge to a lattice no-go statement is not. Repair target: either (a) wire a retained dependency edge to a future SME-bilinear-operator-basis-on-staggered-substrate-derivation note proving canonical normalization and basis completeness for dim-5 staggered bilinears, then re-audit, or (b) narrow the note's claim scope to the per-operator algebraic parity-weight identity on the four named 4x4 Dirac structures plus the lattice identity epsilon H_0 epsilon = -H_0, dropping the 'no dim-5 LV operator in the SME basis can be added to the lattice action' lattice-level no-go conclusion until the bridge is supplied. Claim boundary until fixed: the algebraic identities (per-candidate Dirac-structure P-weights = -1 and P-symmetric projection = 0 on the four named 4x4 structures, plus epsilon H_0 epsilon = -H_0 on the single-component lattice) may be safely said as bounded algebraic facts; the lattice-action no-go conclusion may not.
+
+### `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-corner audit that the retained epsilon/chiral shift and spatial-inversion parity operations do not themselves supply a within-hw=1 `S_3`-breaking operator for the generation triplet.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T144139Z-6525cd98-parity_violation_does_no-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `epsilon` maps the hw=1 triplet entirely onto the hw=2 triplet with image disjoint from hw=1, while spatial inversion fixes hw=1, so neither retained C/P operation is a nontrivial within-generation-triplet operator; the nontrivial within-triplet action is the separate axis-permutation `S_3`.  _(class `A`)_
+- **chain closes:** True — From the cited retained C/P definitions, epsilon is the `(pi,pi,pi)` shift and `P` is spatial inversion; on `{0,pi}^3` these have the set actions checked by the runner. Combined with the retained `S_3` mass-degeneracy theorem on the hw=1 carrier, the scoped route-exclusion follows without external numerical or fitted input.
+- **rationale:** The runner source performs the finite set-map and axis-permutation checks directly; it does not import a fitted value or merely print constants. All load-bearing upstream claims are retained-grade for this use, and the open SME-coefficient bridge in `CPT_EXACT_NOTE.md` is not used. The No-Go Discipline gate passes at the route-local resolution: epsilon, inversion, CP-type composition, axis permutation, and epsilon plus an added hw2-to-hw1 return map either fail by the corner maps or require new structure, while flavor `C_3`-breaking routes remain explicitly outside the claim.
+- **auditor confidence:** high
 
 ### `pauli_group_order_theorem_note_2026-05-02`
 

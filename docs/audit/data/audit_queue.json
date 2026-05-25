@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 255,
     "high": 341,
-    "leaf": 312,
+    "leaf": 311,
     "medium": 328
   },
   "cycle_break_target_count": 8,
@@ -28165,7 +28165,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+      "claim_id": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -28173,19 +28173,20 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
-        "cpt_exact_note",
-        "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
-        "s3_mass_matrix_no_go_note"
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23"
       ],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "load_bearing_score": 2.085,
+      "note_path": "docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py",
-      "transitive_descendants": 3
+      "runner_path": "scripts/frontier_new_parity_is_circulant_phase_discriminator.py",
+      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",
@@ -28946,33 +28947,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_tensor_variational_transplant_obstruction.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_new_parity_is_circulant_phase_discriminator.py",
       "transitive_descendants": 2
     },
     {
@@ -37337,5 +37311,5 @@
     }
   ],
   "ready_count": 7,
-  "total_pending": 1236
+  "total_pending": 1235
 }

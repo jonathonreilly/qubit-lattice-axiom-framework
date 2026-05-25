@@ -66,6 +66,42 @@ So the unique positive solution is
 g_bare = 1.
 ```
 
+The `g_bare = 1` closure is **conditional on admission A1 below**
+(the H_unit-residue is the complete same-projected 1PI
+`Gamma_S^(4)` coefficient). The canonical-surface consistency
+check that this row already supplies — Rep A and Rep B agree on
+the canonical surface, matching the W1 Rep-B-independence
+authority — does not depend on A1 and is preserved unconditionally.
+
+---
+
+## Admissions (load-bearing, not yet derived)
+
+**A1 (H_unit-residue identification).** The tree-level matrix
+element `F_Htt^(0)(g_bare) = <0|H_unit|tbar t>_tree`, evaluated on
+both scalar insertions, is taken to give the **complete**
+same-projected 1PI `Gamma_S^(4)` coefficient on the retained block:
+
+```
+Gamma_S^(4)(q^2; g_bare) = - F_Htt^(0)(g_bare)^2 / q^2 * O_S       (B, admitted-as-complete)
+```
+
+with no additional retained scalar-singlet residue contributing to
+the same projected coefficient. The Step-3 / Step-4 argument
+above motivates this identification via D17 uniqueness of the
+unit-normalized scalar-singlet composite on `Q_L`, but a direct
+derivation that the constant `H_unit` matrix element exhausts the
+1PI residue on the same projected channel is not given here.
+
+The 2026-04-30 auditor verdict
+(`codex-audit-loop-critical-sweep-20260430`) flags this as: *the
+constant `H_unit` matrix element is treated as a complete
+representation.* That treatment is admission A1.
+
+The `g_bare = 1` closure follows from A1 plus the retained-grade W1
+Rep-B-independence authority. The canonical-surface consistency
+check between Rep A and Rep B does not require A1.
+
 ---
 
 ## Proof

@@ -12817,70 +12817,46 @@
       "verdict_rationale": null
     },
     "axiom_first_lattice_noether_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-25T10:27:42.627006+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-03": null,
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-03",
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
-        ],
-        "load_bearing_score": 18.315,
-        "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
-        "transitive_descendants": 900
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T102442Z-f77f585c-axiom_first_lattice_noet-01",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The U(1) and bilateral infinitesimal-current portions close algebraically on the admitted staggered matrix. The full N1 translation-current claim does not close from the provided authorities because Step 4b does not derive the finite-shift Ward rearrangement to (3), and E6 is only a finite-block expectation-value check rather than an arbitrary on-shell symbolic derivation.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "claim_scope": "Bounded lattice Noether identities for the U(1) current, the infinitesimal bilateral current, and the (2Z)^3 sublattice-momentum density on the admitted nearest-neighbour KS-phase staggered/Grassmann carrier; no derivation of that carrier from A1+A2 was audited.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-25T10:27:42.627006+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-03",
+        "minimal_axioms",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 16,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 17.783,
-      "load_bearing_step": "From the two-site shift symmetry [M,S^(2mu)]=0, promoting the finite shift to a site-dependent envelope is asserted to yield sum_x omega_x d^L_mu P^mu_x=0 on shell, with P^mu_x the canonical staggered sublattice-momentum density (3).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "a412faf2b10685654f5fae8f7563bce0dc6e12917f78f84618cb875bbbe5a351",
+      "note_hash": "a30fd6532a3fa61a5a83654a52f965cad74c0aa0a6ba48ee30801465578423c2",
       "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained symbolic Step 4b proof deriving (3) from the site-dependent two-shift Ward identity for arbitrary on-shell fields, and cite or close the KS-phase-form source if seeking stronger retention.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-03.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T19:40:05.753720+00:00",
@@ -13305,21 +13281,77 @@
             "total_pass": 6
           },
           "verdict_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier."
+        },
+        {
+          "archived_at": "2026-05-25T16:13:15.654933+00:00",
+          "archived_for_note_hash": "a412faf2b10685654f5fae8f7563bce0dc6e12917f78f84618cb875bbbe5a351",
+          "audit_date": "2026-05-25T10:27:42.627006+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-03": null,
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-03",
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+            ],
+            "load_bearing_score": 18.315,
+            "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
+            "transitive_descendants": 900
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T102442Z-f77f585c-axiom_first_lattice_noet-01",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The U(1) and bilateral infinitesimal-current portions close algebraically on the admitted staggered matrix. The full N1 translation-current claim does not close from the provided authorities because Step 4b does not derive the finite-shift Ward rearrangement to (3), and E6 is only a finite-block expectation-value check rather than an arbitrary on-shell symbolic derivation.",
+          "claim_scope": "Bounded lattice Noether identities for the U(1) current, the infinitesimal bilateral current, and the (2Z)^3 sublattice-momentum density on the admitted nearest-neighbour KS-phase staggered/Grassmann carrier; no derivation of that carrier from A1+A2 was audited.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T10:27:42.627006+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "From the two-site shift symmetry [M,S^(2mu)]=0, promoting the finite shift to a site-dependent envelope is asserted to yield sum_x omega_x d^L_mu P^mu_x=0 on shell, with P^mu_x the canonical staggered sublattice-momentum density (3).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained symbolic Step 4b proof deriving (3) from the site-dependent two-shift Ward identity for arbitrary on-shell fields, and cite or close the KS-phase-form source if seeking stronger retention.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-03.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 6
+          },
+          "verdict_rationale": "The runner performs six non-external identity checks on the hard-coded staggered matrix and supports the scoped algebraic claims over that admitted carrier. However, the packet still relies on the residual KS-phase-form carrier and on the Step 4b site-dependent finite-shift Ward bridge to identify the conserved translation current as (3). Neither item is supplied by a retained authority in the restricted packet. No-Go discipline N3/N6 leaves those as hidden or unratified admissions, so audited_clean is not available."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 6,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 6
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3",
       "transitive_descendants": 880,
-      "verdict_rationale": "The runner performs six non-external identity checks on the hard-coded staggered matrix and supports the scoped algebraic claims over that admitted carrier. However, the packet still relies on the residual KS-phase-form carrier and on the Step 4b site-dependent finite-shift Ward bridge to identify the conserved translation current as (3). Neither item is supplied by a retained authority in the restricted packet. No-Go discipline N3/N6 leaves those as hidden or unratified admissions, so audited_clean is not available."
+      "verdict_rationale": null
     },
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17": {
       "audit_date": null,
@@ -132391,7 +132423,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 13.387,
+      "load_bearing_score": 13.344,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -132412,7 +132444,7 @@
       },
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology",
-      "transitive_descendants": 946,
+      "transitive_descendants": 918,
       "verdict_rationale": null
     },
     "kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11": {
@@ -169889,13 +169921,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 33,
+      "direct_in_degree": 34,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 30.469,
+      "load_bearing_score": 31.008,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
@@ -169916,7 +169948,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)",
-      "transitive_descendants": 1001,
+      "transitive_descendants": 1029,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-04-11": {
@@ -170219,13 +170251,13 @@
       "deps": [
         "key_terminology"
       ],
-      "direct_in_degree": 85,
+      "direct_in_degree": 84,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 52.361,
+      "load_bearing_score": 51.817,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -170246,7 +170278,7 @@
       },
       "runner_path": "scripts/frontier_generation_rooting_undefined.py",
       "title": "Minimal Framework Axioms (Restored)",
-      "transitive_descendants": 929,
+      "transitive_descendants": 901,
       "verdict_rationale": null
     },
     "minimal_bidirectional_trapping_probe_note": {
@@ -300660,8 +300692,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2364,
-    "re_audit_required": 0,
+    "preserved_existing": 2363,
+    "re_audit_required": 1,
     "row_count": 2408,
     "seeded_new": 0
   }

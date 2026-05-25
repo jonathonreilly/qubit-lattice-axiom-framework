@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 462 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 100 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
+| `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -53,16 +54,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 746 |
 | `audited_conditional` | 100 |
-| `audited_decoration` | 41 |
+| `audited_decoration` | 42 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1458 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1058 |
-| `decoration` | 42 |
+| `bounded_theorem` | 1057 |
+| `decoration` | 43 |
 | `meta` | 233 |
 | `no_go` | 247 |
 | `open_gate` | 112 |
@@ -988,6 +989,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
+| `lattice_total_momentum_conservation_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_lattice_noether_theorem_note_2026-04-29` |
 | `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -7514,6 +7516,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The 36-row standard-strength tradeoff sweep has 36/36 Born-clean coexistence rows, 0/36 positive-gravity rows, and 0/36 retained one-family rows.  _(class `C`)_
 - **chain closes:** True — The current runner output matches the note's canonical table, distance-law read, tradeoff counts, beam-depletion diagnostic, and NEGATIVE decision. The conclusion is bounded to the tested dense symmetry window and standard-strength slice.
 - **rationale:** The runner computes the finite sweep and decision summary from the specified lattice setup rather than hard-coding a promoted result. The note keeps the claim bounded: it rules out promotion on the tested standard-strength slice, while preserving the two-harness status and later weak-field reopening as outside scope. Residual risk is limited to untested families outside the stated sweep.
+- **auditor confidence:** high
+
+### `lattice_total_momentum_conservation_theorem_note_2026-05-02`
+
+- **Note:** [`LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md`](../../docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite even periodic two-step translation-sector conservation: for H satisfying [H,T_{2rho}]=0, the T_{2rho} cyclic spectral projectors commute with H, sector weights are conserved, and one-site momenta are identified modulo pi.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T235045Z-59739f88-lattice_total_momentum_c-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since each Pi_{rho,k} is a polynomial in T_{2 rho}, [H, Pi_{rho,k}] = 0.  _(class `A`)_
+- **chain closes:** True — The cited Noether authority is retained_bounded for the two-step translation surface, and the remaining result is finite cyclic-group projector algebra under the explicit hypothesis [H,T_2]=0. The repaired note does not rely on the unsupported canonical density, local divergence, one-site momentum, or H_phys reconstruction claims.
+- **rationale:** The load-bearing step is a standard algebraic consequence of a single upstream retained_bounded two-step translation statement plus the explicit commutation hypothesis. The runner actually constructs finite shift matrices, projectors, and a two-step-invariant Hamiltonian, and all five checks are algebraic finite-matrix checks with no external comparator or tuned numerical input. Because the chain reduces to one parent claim plus standard finite cyclic-group mathematics, the conservative classification is decoration rather than an independent bounded theorem.
+- **decoration parent:** `axiom_first_lattice_noether_theorem_note_2026-04-29`
 - **auditor confidence:** high
 
 ### `lattice_weak_field_mass_scaling_note`

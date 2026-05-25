@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 459 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1240 |
+| unaudited | 1239 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 94 |
+| ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 742 |
-| `audited_conditional` | 94 |
+| `audited_conditional` | 95 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1469 |
+| `unaudited` | 1468 |
 
 | claim_type | count |
 |---|---:|
@@ -899,6 +899,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `guard_reconciliation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5996,6 +5997,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Given |lambda_full| = 2 u_0, W(J) = (N_tot/2) log(J^2 + 4 u_0^2), so W''(0)/N_tot = 1/(4 u_0^2), matching R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16.  _(class `A`)_
 - **chain closes:** False — The symbolic curvature calculation and simplification close locally. The retained-grade chain does not close because the Clifford identity, N_taste = 16 minimal APBC block, and mean-field factorization are admitted inputs rather than retained authorities supplied in the restricted packet.
 - **rationale:** The runner performs exact class-A algebra and confirms the note avoids the physical matching claim R_lattice = (m_H/v)^2. It does not instantiate the staggered operator or derive the taste count and mean-field spectrum; those are hard-coded or admitted as standard inputs. The cited SU(3) and g_bare authorities are retained-grade, but the lattice/taste/mean-field bridge needed for retained-grade closure is not provided in this packet.
+- **auditor confidence:** high
+
+### `higgs_mechanism_note`
+
+- **Note:** [`HIGGS_MECHANISM_NOTE.md`](../../docs/HIGGS_MECHANISM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional mechanism-level consistency of the lattice CW EWSB runner with imported lambda and m^2 comparison inputs; no derivation of the scalar bridge, bare parameters, or exact Higgs mass.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T233426Z-146125ec-higgs_mechanism_note-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assuming the single admitted scalar potential/Coleman-Weinberg/bare-parameter bridge, the bounded runner supports lattice CW electroweak symmetry breaking for O(1) imported comparison inputs.  _(class `C`)_
+- **chain closes:** False — The runner performs a substantive finite lattice CW potential computation once the Higgs field, particle content/couplings, lambda, and m^2 are supplied. The restricted packet does not derive the admitted scalar/CW/bare-parameter substrate from Cl(3)/Z^3.
+- **rationale:** The source note correctly narrows itself to mechanism-level support and explicitly disclaims exact Higgs-mass closure or derivation of lambda and m^2. The runner is not a trivial printout: it builds a lattice Brillouin-zone CW potential and extracts VEV/mass ratios, but its load-bearing path assumes the scalar carrier, CW substrate, and bare parameters. Applying the No-Go Discipline gate, N2 collapses the named residuals to the single admitted bridge already stated in the note, so the proper verdict is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `higher_symmetry_gravity_probe_note`

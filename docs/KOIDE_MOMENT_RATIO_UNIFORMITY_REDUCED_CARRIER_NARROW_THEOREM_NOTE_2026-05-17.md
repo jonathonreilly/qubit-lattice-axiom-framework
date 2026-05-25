@@ -2,8 +2,30 @@
 
 **Date:** 2026-05-17
 **Type:** bounded_theorem
-**Claim scope:** the standalone algebraic-substitution implication that,
-given (i) an admitted SO(2) frame-quotient carrier
+**Admitted boundary (load-bearing premise, not derived here):** the
+SO(2) frame-quotient on the charged-lepton scalar lane, i.e. the
+existence of the reduced two-slot carrier
+`(rho_+, rho_perp) in R_{>0} x R_{>0}` with the definitional relation
+`rho_+^2 = E_+`, `rho_perp^2 = E_perp` against the retained block-total
+Frobenius coordinates of `H = a I + b C + bbar C^2 in Herm_circ(3)`.
+This admission enters as imported context from the parent target row's
+§2.2 admission (`koide_moment_ratio_uniformity_theorem_note_2026-04-19`,
+currently non-retained in the generated audit ledger) and from the
+companion failure proof recording the open derivation gap
+(`koide_mru_demotion_note_2026-04-20`). The SO(2)-quotient itself is
+**not** derived here; deriving it on the charged-lepton scalar lane
+from retained framework theorems is deferred to future work and is
+explicitly named in the "Bounded out-of-scope" block below.
+**Claim scope (conditional on the SO(2)-quotient admission above):**
+the standalone algebraic-substitution implication that,
+**given the SO(2)-quotient admission named in "Admitted boundary"
+above and the retained block-total Frobenius identities cited below**,
+the constrained log-extremum of the reduced-carrier log-volume
+functional `S_rho := log rho_+ + log rho_perp` on
+`{rho_+^2 + rho_perp^2 = E_tot > 0, rho_+ > 0, rho_perp > 0}` lands at
+`rho_+^2 = rho_perp^2 = E_tot/2`, equivalently
+`E_+ = E_perp = E_tot/2`, equivalently `kappa := a^2/|b|^2 = 2`. More
+precisely, given (i) the admitted SO(2) frame-quotient carrier
 `(rho_+, rho_perp) in R_{>0} x R_{>0}` on the charged-lepton scalar lane
 with the definitional relation `rho_+^2 = E_+, rho_perp^2 = E_perp`,
 (ii) the retained block-total Frobenius identities `E_+(H) = 3 a^2` and
@@ -56,11 +78,42 @@ not derived." This narrow theorem isolates exactly the post-quotient
 algebra named in that verdict, with the SO(2)-quotient itself admitted
 as imported context and not derived.
 
+## Scope clarification (2026-05-25 SO(2)-quotient admission scoping)
+
+The binding scope of this narrow theorem is the **post-quotient
+algebraic-substitution implication** named in the parent target row's
+audit verdict, conditional on the SO(2) frame-quotient admission named
+in the "Admitted boundary" frontmatter block above. To make this
+explicit for the independent audit lane, the theorem statement below
+is read as:
+
+  **Given the SO(2)-quotient admission on the charged-lepton scalar
+  lane** (i.e. given inputs `(I3)` and the existence of the reduced
+  two-slot carrier `(rho_+, rho_perp)` as a physical reduction), and
+  given the retained block-total Frobenius identities `(I2)` and the
+  positive total-power constraint `(I4)`, **then** the constrained
+  extremum identities `(P1)`-`(P3)` hold.
+
+The structurally-sound proof body below verifies the conditional
+implication exactly. It does **not** derive the SO(2)-quotient itself
+on the charged-lepton scalar lane; the SO(2)-quotient enters as an
+imported admission, identical in scope to the parent target row's
+§2.2 admission. The open derivation gap on the SO(2)-quotient is
+inherited verbatim from `koide_mru_demotion_note_2026-04-20` (the Path
+A failure proof) and is named explicitly in the "Bounded out-of-scope"
+block below.
+
 ## Statement
+
+**Conditional form (binding scope).** Given the SO(2) frame-quotient
+admission on the charged-lepton scalar lane (per "Admitted boundary"
+frontmatter and "Scope clarification" block above), the following
+constrained-extremum identities hold.
 
 Let `rho_+, rho_perp` be positive real symbols (the admitted SO(2)
 frame-quotient carrier on the charged-lepton scalar lane, per parent
-§2.2 admission). Let `a in R, b in C` be the circulant coordinates of
+§2.2 admission; **imported as input, not derived**). Let
+`a in R, b in C` be the circulant coordinates of
 `H = a I + b C + bbar C^2 in Herm_circ(3)`, with `C` the standard
 3 x 3 cyclic shift. Let `E_+, E_perp` be the canonical block-total
 Frobenius coordinates defined by the retained narrow theorem
@@ -206,6 +259,52 @@ All follow algebraically from `(P1)`-`(P3)` and the cited inputs `(I2)`-`(I4)`.
   `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`.
 - Five derivable corollary identities that follow algebraically from
   `(P1)`-`(P3)` plus the cited inputs.
+
+## Bounded out-of-scope / open future work (SO(2)-quotient admission)
+
+The following items are explicitly **not** part of this narrow
+theorem's binding scope; they are inherited as imported admissions or
+deferred as future work, mirroring the parent target row's
+audit-verdict perimeter:
+
+- **The SO(2)-quotient derivation itself** on the charged-lepton
+  scalar lane. The reduced two-slot carrier `(rho_+, rho_perp)` enters
+  via input `(I3)` as an admitted physical reduction; this narrow
+  theorem does **not** derive the SO(2)-quotient from any retained
+  framework theorem. The Path A failure proof
+  (`koide_mru_demotion_note_2026-04-20`) records the open derivation
+  gap: spectrum-native scalar observables `tr(H^3)`, `det(H)` carry
+  an explicit `cos(3 arg b)` dependence under `b -> e^{i theta} b`,
+  so the SO(2)-quotient is **not** a corollary of the retained
+  observable principle on `Herm_circ(3)`. A retained derivation of
+  the SO(2)-quotient on the charged-lepton scalar lane is deferred
+  to future work and is the load-bearing missing piece for closing
+  the parent target row
+  `koide_moment_ratio_uniformity_theorem_note_2026-04-19`.
+- **Any closure of the parent target row.** The parent row remains
+  non-retained until the SO(2)-quotient itself is derived; this
+  narrow theorem isolates the post-quotient algebraic implication
+  and does not by itself close the parent row.
+- **Any operator-side `kappa = 2` reading that depends on the
+  SO(2)-quotient admission.** Two independent retained closure routes
+  for the operator-side `kappa = 2` gate that do **not** route
+  through the SO(2)-quotient admission are named in the parent
+  target row's header (the spectrum-operator bridge theorem note and
+  the block-total Frobenius algebraic narrow theorem note). Those
+  alternative routes are out of binding scope of this narrow theorem;
+  this note speaks only to the post-quotient algebra on the admitted
+  SO(2)-quotient carrier.
+- **Any physical / Standard-Model identification** of
+  `(a, b)`, `(rho_+, rho_perp)`, `(E_+, E_perp)`, or `kappa` with
+  charged-lepton operator parameters, masses, or amplitudes. The
+  identities `(P1)`-`(P3)` are statements in two positive real
+  variables on the admitted carrier, nothing more.
+
+The narrow theorem's structurally-sound proof of the conditional
+implication (`(P1)`-`(P3)` given the SO(2)-quotient admission and the
+retained Frobenius identities) is the binding evidence; the bounded
+out-of-scope items above are deferred or imported per the auditor's
+narrowing perimeter.
 
 ## What this does NOT claim
 

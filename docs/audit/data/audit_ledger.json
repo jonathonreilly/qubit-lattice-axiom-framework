@@ -172507,24 +172507,50 @@
       "verdict_rationale": null
     },
     "mirror_vs_central_head_to_head_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T12:23:42.771451+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "central_band_dense_joint_highn_note": "Audited the bounded high-N dense central-band scan for N=80,100 over npl=60,70,80 using the provided same-graph Born, purity, and gravity runner chain.",
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
+          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+        },
+        "dep_claim_type": {
+          "central_band_dense_joint_highn_note": "bounded_theorem",
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
+          "mirror_chokepoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "central_band_dense_joint_highn_note": "retained_bounded",
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded",
+          "mirror_chokepoint_note": "retained_bounded"
+        },
+        "deps": [
+          "central_band_dense_joint_highn_note",
+          "mirror_chokepoint_boundary_fit_note",
+          "mirror_chokepoint_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "29818b3ed52e5494db69c14c2eedd112534307f482d6a676176a50a65101f4f3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T122322Z-febc8b89-mirror_vs_central_head_t-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet includes retained-grade cited authorities and runner source showing the primary runner reads the cited caches and fails if required rows or FAIL markers are missing. The narrowed claim is only cache transcription, so no missing cross-lane bridge theorem is needed.",
       "claim_id": "mirror_vs_central_head_to_head_note",
-      "claim_scope": null,
+      "claim_scope": "Pure side-by-side transcription of the cited retained central-band row, mirror strict-default retained rows plus FAIL markers, and mirror dense-boundary retained rows plus N=120 wall row from registered runner caches.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T12:23:42.771451+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -172534,19 +172560,19 @@
         "mirror_chokepoint_boundary_fit_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The cache-reader opens the three cited authority caches and prints the retained rows side-by-side without asserting any cross-lane retained winner ranking.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4a0612869472cf9e976f680c5673dc8586ad4eecadc899fdb5ad2ff574664770",
       "note_path": "docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the cached central N=80 row parser cannot accidentally select a neighboring row if cache formatting changes.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -172781,18 +172807,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 3,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/mirror_vs_central_head_to_head.py",
       "title": "Mirror vs Central Head-To-Head Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "All cited authorities are retained_bounded, and the source note no longer asserts the earlier cross-lane ranking or purity-to-purity comparison. The runner source is a cache-reader rather than a first-principles computation, but that matches the narrowed load-bearing claim: it verifies rows against one-hop registered caches and exits nonzero if required rows are absent. The conclusion follows from the cited retained inputs as a bounded transcription note."
     },
     "mirror_vs_lattice_program_note": {
       "audit_date": null,

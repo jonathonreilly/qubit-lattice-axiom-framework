@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 143 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 438 |
+| **retained_bounded** | 439 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1245 |
+| unaudited | 1244 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 712 |
+| `audited_clean` | 713 |
 | `audited_conditional` | 89 |
 | `audited_decoration` | 38 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1472 |
+| `unaudited` | 1471 |
 
 | claim_type | count |
 |---|---:|
@@ -528,6 +528,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_grown_combined_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_mutual_information_canonical_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mirror_mutual_information_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -8048,6 +8049,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note says it is superseded and kept only as a pointer to the canonical mirror mutual-information artifacts, not as the canonical mirror MI result itself.  _(class `E`)_
 - **chain closes:** True — The source note does not assert an independent physics theorem; it defines repository routing/status for this note. The cited retained_bounded authorities support the existence and bounded scope of the referenced canonical artifacts, but no new MI derivation is attempted here.
 - **rationale:** The load-bearing content is metadata: this note is a superseded pointer/alias and should not be treated as the canonical result. That is class E definition/routing rather than a first-principles derivation or algebraic closure. The runner genuinely computes the bounded chokepoint MI table, but that computation belongs to the cited chokepoint artifact, not to a new claim made by this pointer note.
+- **auditor confidence:** high
+
+### `mirror_vs_central_head_to_head_note`
+
+- **Note:** [`MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md`](../../docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure side-by-side transcription of the cited retained central-band row, mirror strict-default retained rows plus FAIL markers, and mirror dense-boundary retained rows plus N=120 wall row from registered runner caches.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T122322Z-febc8b89-mirror_vs_central_head_t-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cache-reader opens the three cited authority caches and prints the retained rows side-by-side without asserting any cross-lane retained winner ranking.  _(class `B`)_
+- **chain closes:** True — The restricted packet includes retained-grade cited authorities and runner source showing the primary runner reads the cited caches and fails if required rows or FAIL markers are missing. The narrowed claim is only cache transcription, so no missing cross-lane bridge theorem is needed.
+- **rationale:** All cited authorities are retained_bounded, and the source note no longer asserts the earlier cross-lane ranking or purity-to-purity comparison. The runner source is a cache-reader rather than a first-principles computation, but that matches the narrowed load-bearing claim: it verifies rows against one-hop registered caches and exits nonzero if required rows are absent. The conclusion follows from the cited retained inputs as a bounded transcription note.
 - **auditor confidence:** high
 
 ### `moonshot_other_testables_note`

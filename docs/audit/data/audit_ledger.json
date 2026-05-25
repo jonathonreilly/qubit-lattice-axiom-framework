@@ -245401,24 +245401,66 @@
       "verdict_rationale": "The load-bearing claim is bounded to a fixed finite runner and operating point, not a repo-wide centroid-gravity claim or a universal physical theorem. The runner computes the card rows and reproduces the note's listed values for 1D n=61 and 3D n=9/11/13, including the documented C17 limitation at n=11 and n=13. Residual risk is scope leakage: this clean verdict should not be read as validating centroid-based card semantics, dynamic/cosmological extensions, or full six-family 3D coverage above n=9."
     },
     "staggered_fermion_card_2026-04-11": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T10:55:42.525375+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements.",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6).",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "The audited scope is the narrow algebraic bridge: d=4 naive corner cardinality 16, exact factorization 16=4*4, and the Cl(3) chirality-pair module dimension 2+2=4 matching the spinor-count factor, without claiming framework-specific staggered realization.",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "Audited only the abstract finite-dimensional algebra statement: on V_3 with the explicit diagonal commuting unitary triple having joint eigenvalue triples (-1,+1,+1), (+1,-1,+1), (+1,+1,-1), every operator commuting with all three T_mu is diagonal in the given joint eigenbasis.",
+          "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": "Conditional finite-graph linear-algebra theorem: for a finite simple undirected graph with mu^2>0, G>0, and the screened-Poisson equation assumed, non-negative rho implies non-negative Phi via the Stieltjes positivity of (L+mu^2 I)^{-1}."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "retained",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "retained",
+          "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+          "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 11.609,
+        "runner_hash": "a8e24820b59d208ad9e7bd8daf6e594259cb5c0dedb3fe2580bae2dde19bfeda",
+        "transitive_descendants": 275
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T105516Z-2e14613d-staggered_fermion_card_2-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports the finite-card score surface under the imported model and operating-point assumptions, but the note explicitly leaves H1, H3, H4, H5, H6, H7, H8, and H9 admitted. H9 is cited to retained substep notes, but those notes preserve open physical-identification gaps and do not derive the full staggered-Dirac realization used by this card.",
       "claim_id": "staggered_fermion_card_2026-04-11",
-      "claim_scope": null,
+      "claim_scope": "A conditional finite-harness audit of the parity-coupled staggered-fermion runner outputs on the listed finite graph/card families, assuming the stated screened-Poisson bridge, positive/free parameters, static/enumerated graphs, eigensolve gate, sign convention, and staggered-Dirac structure.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-25T10:55:42.525375+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -245432,20 +245474,26 @@
         "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
       ],
       "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.609,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Conditional on (H1)\u2013(H9), the registered parity-coupled runner outputs reproduce the score surface tabulated on the enumerated finite cards.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "6c9b6cc72832fc1387fb1763878e3daa95910f0c3874970eb0c93e63df2fff6e",
       "note_path": "docs/STAGGERED_FERMION_CARD_2026-04-11.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained bridge theorem deriving H1 and the physical staggered-Dirac/sign-convention realization used by the runner, or a narrower card scope that explicitly reports only finite harness behavior under those admissions.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
       "previous_auditor_family": "codex-fresh",
       "previous_audits": [
         {
@@ -245682,18 +245730,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 4,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 68
       },
       "runner_path": "scripts/frontier_staggered_17card.py",
       "title": "Staggered Fermion + Parity-Coupled Gravity \u2014 Complete Card",
       "transitive_descendants": 275,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner genuinely computes the reported 1D and 3D finite-card rows rather than merely printing constants, and the cached output matches the source note for the canonical 17-card surface, including the n=11/n=13 C17 family-coverage qualifier. However, the scientific claim is expressly conditional on imported premises, most importantly the screened-Poisson bridge H1, the free parameter/graph/eigensolve assumptions, H8's sign-flip interpretation, and H9's staggered-Dirac realization. The cited H2 theorem cleanly narrows the positivity subchain, but the cited staggered-Dirac substep notes are retained only for narrow algebraic/combinatorial atoms and repeatedly disclaim the physical realization bridge needed for this parent card."
     },
     "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-25T10:54:17.568002+00:00",

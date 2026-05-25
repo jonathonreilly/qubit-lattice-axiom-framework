@@ -1,5 +1,17 @@
 # SU(3) Symmetric Structure Constants d^{abc} from Anticommutator
 
+> **Scope disclaimer — algebraic SU(3) carrier, not physical color.**
+> This theorem is about the **algebraic SU(3) carrier** (Gell-Mann
+> d^{abc} symmetric tensor construction on T^a = λ^a/2). Identification
+> of this carrier with **physical SM color** (the gauge connection of
+> the Standard Model gluon sector, physical QCD amplitudes, physical
+> Casimir on quark color reps) requires a **separate physical-color
+> bridge theorem**, which is not provided here. Per the auditor's
+> notes_for_re_audit_if_any: "retain a separate physical-color bridge
+> theorem if any downstream row wants to read this... as physical SM
+> color." See §"Bounded out-of-scope / open future work" for the
+> enumerated readings that fall outside the audited algebraic perimeter.
+
 **Date:** 2026-05-02
 **Type:** positive_theorem
 **Claim scope:** the framework's SU(3)_c Gell-Mann generators T^a = λ^a/2

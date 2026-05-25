@@ -1686,5 +1686,625 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         self.assertEqual(down["previous_audits"], [])
 
 
+class ComputeAuditDispatchQueueTest(unittest.TestCase):
+    """Behavior tests for compute_audit_dispatch_queue.py — the new
+    resolution semantics (post-manifest fresh-context re-audit retires a
+    dispatch target even when its status tuple is unchanged) and the
+    dependency-blocker detail on `ready_blocker`."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.fx = CleanLedgerFixture(self.tmp_root)
+
+    def _patch_dispatch_module(self, module) -> None:
+        _patch_repo_root(module, self.tmp_root)
+        module.AUDIT_DIR = self.tmp_root / "docs" / "audit"
+        module.OUT_JSON = module.DATA_DIR / "audit_dispatch_queue.json"
+        module.OUT_MD = module.AUDIT_DIR / "AUDIT_DISPATCH_QUEUE.md"
+
+    def _write_sidecar(self, name: str, manifest: dict) -> Path:
+        path = self.fx.data_dir / name
+        path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        return path
+
+    def _basic_manifest(self, *, generated_date: str, group_id: str,
+                        targets: list[dict], retired_targets: list[dict] | None = None,
+                        blocked_by_group_ids: list[str] | None = None) -> dict:
+        manifest = {
+            "schema": "promotion_reaudit_queue.v1",
+            "generated_date": generated_date,
+            "allowed_context_paths": [],
+            "forbidden_context": [],
+            "groups": [
+                {
+                    "group_id": group_id,
+                    "order": 1,
+                    "blocked_by_group_ids": blocked_by_group_ids or [],
+                    "targets": targets,
+                }
+            ],
+        }
+        if retired_targets is not None:
+            manifest["retired_targets"] = retired_targets
+        return manifest
+
+    def _row(self, cid: str, *, audit_status: str, claim_type: str,
+             effective_status: str, audit_date: str | None = None,
+             independence: str | None = None, deps: list[str] | None = None,
+             auditor: str | None = None, auditor_family: str | None = None) -> dict:
+        return {
+            "claim_id": cid,
+            "audit_status": audit_status,
+            "claim_type": claim_type,
+            "effective_status": effective_status,
+            "audit_date": audit_date,
+            "independence": independence,
+            "deps": list(deps or []),
+            "auditor": auditor,
+            "auditor_family": auditor_family,
+        }
+
+    def _read_output(self) -> dict:
+        return json.loads(
+            (self.fx.data_dir / "audit_dispatch_queue.json").read_text(encoding="utf-8")
+        )
+
+    def test_same_status_fresh_context_reaudit_resolves_to_resolved_targets(self):
+        """A row whose audit_date is on/after the manifest's generated_date
+        AND whose independence is no longer 'weak' resolves out of the live
+        queue, even when its {claim_type, audit_status, effective_status}
+        tuple is unchanged from the manifest guard.
+
+        The resolved entry must record the resolution reason and the
+        post-manifest audit's date + independence + auditor for provenance.
+        """
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "no_go_row": self._row(
+                "no_go_row",
+                audit_status="audited_failed",
+                claim_type="no_go",
+                effective_status="retained_no_go",
+                audit_date="2026-05-23T18:12:00+00:00",
+                independence="fresh_context",
+                auditor="codex-test-fresh",
+                auditor_family="codex-gpt-5.5",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        self._write_sidecar(
+            "provenance_reaudit_queue_2026-05-22.json",
+            self._basic_manifest(
+                generated_date="2026-05-22",
+                group_id="legacy_weak_independence_terminal_no_go_rows",
+                targets=[
+                    {
+                        "claim_id": "no_go_row",
+                        "note_path": "docs/NO_GO_ROW.md",
+                        "audit_question": "Re-audit weak no-go boundary.",
+                        "current_audit_status": "audited_failed",
+                        "current_claim_type": "no_go",
+                        "current_effective_status": "retained_no_go",
+                    }
+                ],
+            ),
+        )
+
+        m.main()
+        out = self._read_output()
+
+        self.assertEqual(out["live_count"], 0)
+        live_ids = [e["claim_id"] for e in out["live"]]
+        self.assertNotIn("no_go_row", live_ids)
+        resolved_ids = [e["claim_id"] for e in out["resolved_targets"]]
+        self.assertEqual(resolved_ids, ["no_go_row"])
+
+        resolved = out["resolved_targets"][0]
+        self.assertEqual(
+            resolved["resolution_reason"],
+            m.RESOLUTION_REASON_FRESH_CONTEXT,
+        )
+        evidence = resolved["resolution_evidence"]
+        self.assertEqual(evidence["audit_date"], "2026-05-23T18:12:00+00:00")
+        self.assertEqual(evidence["independence"], "fresh_context")
+        self.assertEqual(evidence["auditor"], "codex-test-fresh")
+        self.assertEqual(evidence["auditor_family"], "codex-gpt-5.5")
+        self.assertEqual(resolved["resolution_manifest_date"], "2026-05-22")
+
+    def test_bounded_terminal_resolution_for_promotion_reaudit(self):
+        """A bounded-to-retained promotion dispatch whose post-manifest
+        re-audit confirms the row is still bounded_theorem records the
+        resolution reason as `bounded_terminal_after_reaudit`, distinct from
+        the generic fresh-context resolution. This signals the operator may
+        elevate the entry to `retired_targets` if bounded should be treated
+        as terminal until the source note changes."""
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "bounded_row": self._row(
+                "bounded_row",
+                audit_status="audited_clean",
+                claim_type="bounded_theorem",
+                effective_status="retained_bounded",
+                audit_date="2026-05-24T10:00:00+00:00",
+                independence="fresh_context",
+                auditor="codex-bounded",
+                auditor_family="codex-gpt-5.5",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        self._write_sidecar(
+            "bounded_to_retained_reaudit_queue_2026-05-23.json",
+            self._basic_manifest(
+                generated_date="2026-05-23",
+                group_id="bounded_to_retained_chain",
+                targets=[
+                    {
+                        "claim_id": "bounded_row",
+                        "note_path": "docs/BOUNDED_ROW.md",
+                        "audit_question": "Can this row promote from bounded to positive?",
+                        "current_audit_status": "audited_clean",
+                        "current_claim_type": "bounded_theorem",
+                        "current_effective_status": "retained_bounded",
+                    }
+                ],
+            ),
+        )
+
+        m.main()
+        out = self._read_output()
+
+        self.assertEqual(out["live_count"], 0)
+        self.assertEqual(len(out["resolved_targets"]), 1)
+        resolved = out["resolved_targets"][0]
+        self.assertEqual(resolved["claim_id"], "bounded_row")
+        self.assertEqual(
+            resolved["resolution_reason"],
+            m.RESOLUTION_REASON_BOUNDED_TERMINAL,
+        )
+
+    def test_weak_independence_row_stays_live_after_resolution_check(self):
+        """A row whose post-manifest re-audit kept independence=weak must
+        NOT resolve — weak independence cannot retire a dispatch that
+        explicitly asked for stronger independence."""
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "weak_row": self._row(
+                "weak_row",
+                audit_status="audited_clean",
+                claim_type="bounded_theorem",
+                effective_status="retained_bounded",
+                audit_date="2026-05-23T18:00:00+00:00",
+                independence="weak",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        self._write_sidecar(
+            "provenance_reaudit_queue_2026-05-22.json",
+            self._basic_manifest(
+                generated_date="2026-05-22",
+                group_id="legacy_weak_independence_clean_rows",
+                targets=[
+                    {
+                        "claim_id": "weak_row",
+                        "note_path": "docs/WEAK_ROW.md",
+                        "audit_question": "Re-audit with stronger independence.",
+                        "current_audit_status": "audited_clean",
+                        "current_claim_type": "bounded_theorem",
+                        "current_effective_status": "retained_bounded",
+                    }
+                ],
+            ),
+        )
+
+        m.main()
+        out = self._read_output()
+
+        self.assertEqual(out["live_count"], 1)
+        self.assertEqual(out["live"][0]["claim_id"], "weak_row")
+        self.assertEqual(out["resolved_targets"], [])
+
+    def test_audit_date_before_manifest_stays_live(self):
+        """A row whose audit_date is BEFORE the manifest's generated_date
+        is not yet considered resolved — the dispatch asked for a NEW
+        re-audit after the manifest was generated."""
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "old_audit": self._row(
+                "old_audit",
+                audit_status="audited_clean",
+                claim_type="bounded_theorem",
+                effective_status="retained_bounded",
+                audit_date="2026-05-01T10:00:00+00:00",
+                independence="fresh_context",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        self._write_sidecar(
+            "provenance_reaudit_queue_2026-05-22.json",
+            self._basic_manifest(
+                generated_date="2026-05-22",
+                group_id="legacy_weak_independence_clean_rows",
+                targets=[
+                    {
+                        "claim_id": "old_audit",
+                        "note_path": "docs/OLD_AUDIT.md",
+                        "audit_question": "Re-audit pre-manifest verdict.",
+                        "current_audit_status": "audited_clean",
+                        "current_claim_type": "bounded_theorem",
+                        "current_effective_status": "retained_bounded",
+                    }
+                ],
+            ),
+        )
+
+        m.main()
+        out = self._read_output()
+
+        self.assertEqual(out["live_count"], 1)
+        self.assertEqual(out["resolved_targets"], [])
+
+    def test_ready_blocker_reports_specific_dependency_when_blocked(self):
+        """A live dispatch row whose dependency is non-retained-grade must
+        report the specific dep claim_id + dep status in `ready_blocker`,
+        not a blank field. This was the born_rule bug: deps blocked the
+        row but the blocker was opaque."""
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "child_row": self._row(
+                "child_row",
+                audit_status="unaudited",
+                claim_type="bounded_theorem",
+                effective_status="unaudited",
+                deps=["bad_dep_one", "ok_dep"],
+            ),
+            "bad_dep_one": self._row(
+                "bad_dep_one",
+                audit_status="audited_failed",
+                claim_type="no_go",
+                effective_status="audited_failed",
+            ),
+            "ok_dep": self._row(
+                "ok_dep",
+                audit_status="audited_clean",
+                claim_type="positive_theorem",
+                effective_status="retained",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        self._write_sidecar(
+            "promotion_reaudit_queue_2026-05-22.json",
+            self._basic_manifest(
+                generated_date="2026-05-22",
+                group_id="downstream_chain",
+                targets=[
+                    {
+                        "claim_id": "child_row",
+                        "note_path": "docs/CHILD_ROW.md",
+                        "audit_question": "Audit child row.",
+                        "current_audit_status": "unaudited",
+                        "current_claim_type": "bounded_theorem",
+                        "current_effective_status": "unaudited",
+                    }
+                ],
+            ),
+        )
+
+        m.main()
+        out = self._read_output()
+
+        self.assertEqual(out["live_count"], 1)
+        live = out["live"][0]
+        self.assertEqual(live["claim_id"], "child_row")
+        self.assertFalse(live["ready"])
+        blocker = live["ready_blocker"]
+        self.assertIsNotNone(blocker)
+        self.assertTrue(blocker.startswith("blocked_by_dependency:"))
+        self.assertIn("bad_dep_one:audited_failed", blocker)
+        # Healthy dep should not appear in blocker.
+        self.assertNotIn("ok_dep", blocker)
+
+    def test_ready_blocker_reports_multiple_dep_blockers(self):
+        """Multiple non-retained-grade deps are reported comma-separated."""
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "child": self._row(
+                "child",
+                audit_status="unaudited",
+                claim_type="bounded_theorem",
+                effective_status="unaudited",
+                deps=["dep_a", "dep_b"],
+            ),
+            "dep_a": self._row(
+                "dep_a",
+                audit_status="audited_conditional",
+                claim_type="bounded_theorem",
+                effective_status="audited_conditional",
+            ),
+            "dep_b": self._row(
+                "dep_b",
+                audit_status="audited_failed",
+                claim_type="no_go",
+                effective_status="audited_failed",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        self._write_sidecar(
+            "promotion_reaudit_queue_2026-05-22.json",
+            self._basic_manifest(
+                generated_date="2026-05-22",
+                group_id="downstream_chain",
+                targets=[
+                    {
+                        "claim_id": "child",
+                        "note_path": "docs/CHILD.md",
+                        "audit_question": "Audit child.",
+                        "current_audit_status": "unaudited",
+                        "current_claim_type": "bounded_theorem",
+                        "current_effective_status": "unaudited",
+                    }
+                ],
+            ),
+        )
+
+        m.main()
+        out = self._read_output()
+
+        live = out["live"][0]
+        blocker = live["ready_blocker"]
+        self.assertIn("dep_a:audited_conditional", blocker)
+        self.assertIn("dep_b:audited_failed", blocker)
+
+    def test_group_blocker_still_uses_existing_format(self):
+        """When a group is blocked by another live group, the ready_blocker
+        uses the existing `blocked_by_live_group:` prefix (not the new
+        dep format). Existing behavior must not regress."""
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "blocking_row": self._row(
+                "blocking_row",
+                audit_status="audited_clean",
+                claim_type="bounded_theorem",
+                effective_status="retained_bounded",
+                audit_date="2026-04-01T00:00:00+00:00",
+                independence="weak",
+            ),
+            "blocked_row": self._row(
+                "blocked_row",
+                audit_status="audited_clean",
+                claim_type="bounded_theorem",
+                effective_status="retained_bounded",
+                audit_date="2026-04-01T00:00:00+00:00",
+                independence="weak",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        manifest = {
+            "schema": "promotion_reaudit_queue.v1",
+            "generated_date": "2026-05-22",
+            "allowed_context_paths": [],
+            "forbidden_context": ["this manifest as evidence"],
+            "groups": [
+                {
+                    "group_id": "first_group",
+                    "order": 1,
+                    "blocked_by_group_ids": [],
+                    "targets": [{
+                        "claim_id": "blocking_row",
+                        "note_path": "docs/BLOCKING_ROW.md",
+                        "audit_question": "Audit blocker.",
+                        "current_audit_status": "audited_clean",
+                        "current_claim_type": "bounded_theorem",
+                        "current_effective_status": "retained_bounded",
+                    }],
+                },
+                {
+                    "group_id": "second_group",
+                    "order": 2,
+                    "blocked_by_group_ids": ["first_group"],
+                    "targets": [{
+                        "claim_id": "blocked_row",
+                        "note_path": "docs/BLOCKED_ROW.md",
+                        "audit_question": "Audit blocked.",
+                        "current_audit_status": "audited_clean",
+                        "current_claim_type": "bounded_theorem",
+                        "current_effective_status": "retained_bounded",
+                    }],
+                },
+            ],
+        }
+        self._write_sidecar("promotion_reaudit_queue_2026-05-22.json", manifest)
+
+        m.main()
+        out = self._read_output()
+
+        blocked_entries = [e for e in out["live"] if e["claim_id"] == "blocked_row"]
+        self.assertEqual(len(blocked_entries), 1)
+        blocker = blocked_entries[0]["ready_blocker"]
+        self.assertEqual(blocker, "blocked_by_live_group:first_group")
+
+    def test_retired_targets_path_still_works(self):
+        """Manual retired_targets sidecar entries continue to land in the
+        retired bucket (not resolved_targets). The new resolution mechanism
+        is additive."""
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+
+        rows = {
+            "retired_row": self._row(
+                "retired_row",
+                audit_status="audited_clean",
+                claim_type="bounded_theorem",
+                effective_status="retained_bounded",
+            ),
+        }
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        manifest = self._basic_manifest(
+            generated_date="2026-05-22",
+            group_id="legacy_group",
+            targets=[],
+            retired_targets=[{
+                "claim_id": "retired_row",
+                "note_path": "docs/RETIRED_ROW.md",
+                "audit_question": "Originally targeted, now retired.",
+                "retired_reason": "operator_marked_bounded_terminal",
+                "current_audit_status": "audited_clean",
+                "current_claim_type": "bounded_theorem",
+                "current_effective_status": "retained_bounded",
+            }],
+        )
+        self._write_sidecar("promotion_reaudit_queue_2026-05-22.json", manifest)
+
+        m.main()
+        out = self._read_output()
+
+        self.assertEqual(out["live_count"], 0)
+        self.assertEqual(out["resolved_targets"], [])
+        self.assertEqual(len(out["retired"]), 1)
+        retired = out["retired"][0]
+        self.assertEqual(retired["claim_id"], "retired_row")
+        self.assertEqual(retired["retired_reason"], "operator_marked_bounded_terminal")
+
+
+class AuditLintDispatchQueueTest(unittest.TestCase):
+    """Sidecar-lint regression coverage: audit_lint.py must still flag
+    live dispatch targets missing from audit_dispatch_queue.json, AND it
+    must accept resolved_targets / retired / resolved_or_invalid as
+    'known to the dispatch queue' so the new resolution mechanism does
+    not trigger spurious stale-target warnings."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.fx = CleanLedgerFixture(self.tmp_root)
+
+    def _write_minimal_ledger(self, rows: dict) -> None:
+        graph_nodes = {
+            cid: {"deps": list(row.get("deps") or [])}
+            for cid, row in rows.items()
+        }
+        self.fx.write_graph({"nodes": graph_nodes, "edges": []})
+        import hashlib
+        for cid, row in rows.items():
+            np = row.get("note_path") or f"docs/{cid}.md"
+            row["note_path"] = np
+            body = row.get("_body", f"# {cid}\n")
+            row.pop("_body", None)
+            (self.tmp_root / np).parent.mkdir(parents=True, exist_ok=True)
+            (self.tmp_root / np).write_text(body, encoding="utf-8")
+            row["note_hash"] = hashlib.sha256(body.encode("utf-8")).hexdigest()
+            row.setdefault("deps", [])
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+
+    def _write_sidecar_and_queue(self, *, target_cid: str, in_queue_bucket: str | None):
+        sidecar = {
+            "schema": "promotion_reaudit_queue.v1",
+            "generated_date": "2026-05-22",
+            "allowed_context_paths": [],
+            "forbidden_context": [],
+            "groups": [{
+                "group_id": "g",
+                "order": 1,
+                "blocked_by_group_ids": [],
+                "targets": [{
+                    "claim_id": target_cid,
+                    "note_path": f"docs/{target_cid}.md",
+                    "audit_question": "test",
+                    "current_audit_status": "audited_clean",
+                    "current_claim_type": "bounded_theorem",
+                    "current_effective_status": "retained_bounded",
+                }],
+            }],
+        }
+        (self.fx.data_dir / "promotion_reaudit_queue_2026-05-22.json").write_text(
+            json.dumps(sidecar) + "\n", encoding="utf-8"
+        )
+
+        # Build dispatch queue with the target placed in the chosen bucket
+        # (or omitted entirely when in_queue_bucket is None).
+        queue: dict = {
+            "schema": "audit_dispatch_queue.v1",
+            "live": [],
+            "resolved_targets": [],
+            "retired": [],
+            "resolved_or_invalid": [],
+            "live_count": 0,
+            "ready_count": 0,
+        }
+        if in_queue_bucket is not None:
+            queue[in_queue_bucket].append({"claim_id": target_cid})
+        if in_queue_bucket == "live":
+            queue["live_count"] = 1
+        (self.fx.data_dir / "audit_dispatch_queue.json").write_text(
+            json.dumps(queue) + "\n", encoding="utf-8"
+        )
+
+    def _run_lint(self, rows: dict, target_cid: str, *, in_queue_bucket: str | None) -> str:
+        self._write_minimal_ledger(rows)
+        self._write_sidecar_and_queue(target_cid=target_cid, in_queue_bucket=in_queue_bucket)
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        m.AUDIT_DISPATCH_QUEUE_PATH = m.DATA_DIR / "audit_dispatch_queue.json"
+        m.TIER_A_ADMISSIONS_PATH = m.DATA_DIR / "tier_a_admissions.json"
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            m.main()
+        return buf.getvalue()
+
+    def _live_row(self, cid: str) -> dict:
+        return {
+            "claim_id": cid,
+            "audit_status": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "effective_status": "retained_bounded",
+            "auditor": "x",
+            "auditor_family": "codex-gpt-5.5",
+            "criticality": "leaf",
+            "claim_scope": "real scope",
+            "load_bearing_step_class": "C",
+        }
+
+    def test_live_target_missing_from_queue_warns(self):
+        rows = {"my_live_target": self._live_row("my_live_target")}
+        out = self._run_lint(rows, "my_live_target", in_queue_bucket=None)
+        self.assertIn("audit_dispatch_queue_stale", out)
+        self.assertIn("my_live_target", out)
+
+    def test_live_target_in_live_bucket_passes(self):
+        rows = {"in_live": self._live_row("in_live")}
+        out = self._run_lint(rows, "in_live", in_queue_bucket="live")
+        self.assertNotIn("audit_dispatch_queue_stale", out)
+
+    def test_live_target_in_resolved_targets_passes(self):
+        """A target in resolved_targets is 'known to the dispatch queue'
+        and must not trigger the stale-target warning. This is the
+        regression coverage for the new resolution mechanism."""
+        rows = {"in_resolved": self._live_row("in_resolved")}
+        out = self._run_lint(rows, "in_resolved", in_queue_bucket="resolved_targets")
+        self.assertNotIn("audit_dispatch_queue_stale", out)
+
+    def test_live_target_in_retired_bucket_passes(self):
+        rows = {"in_retired": self._live_row("in_retired")}
+        out = self._run_lint(rows, "in_retired", in_queue_bucket="retired")
+        self.assertNotIn("audit_dispatch_queue_stale", out)
+
+
 if __name__ == "__main__":
     unittest.main()

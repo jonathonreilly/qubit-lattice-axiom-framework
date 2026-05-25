@@ -728,15 +728,20 @@ def main() -> int:
     # queue omits them, the process has silently dropped a re-audit request.
     sidecars = dispatch_sidecars()
     if sidecars:
-        dispatch_live_ids: set[str] = set()
+        dispatch_known_ids: set[str] = set()
         if AUDIT_DISPATCH_QUEUE_PATH.exists():
             try:
                 dispatch = load_json(AUDIT_DISPATCH_QUEUE_PATH)
-                dispatch_live_ids = {
-                    entry.get("claim_id")
-                    for entry in dispatch.get("live", [])
-                    if entry.get("claim_id")
-                }
+                # A target is "known to the dispatch queue" if it appears in
+                # live OR resolved_targets OR retired OR resolved_or_invalid.
+                # All four buckets represent the dispatch producer having seen
+                # and classified the target; only targets that don't appear in
+                # any bucket are silently dropped.
+                for bucket in ("live", "resolved_targets", "retired", "resolved_or_invalid"):
+                    for entry in dispatch.get(bucket, []):
+                        cid = entry.get("claim_id")
+                        if cid:
+                            dispatch_known_ids.add(cid)
             except Exception as exc:  # pragma: no cover - defensive lint path
                 add_warning(
                     "audit_dispatch_queue_invalid",
@@ -768,11 +773,13 @@ def main() -> int:
             for group in manifest.get("groups") or []:
                 for target in group.get("targets") or []:
                     cid = target.get("claim_id")
-                    if dispatch_target_live(target, rows) and cid not in dispatch_live_ids:
+                    if dispatch_target_live(target, rows) and cid not in dispatch_known_ids:
                         add_warning(
                             "audit_dispatch_queue_stale",
                             f"{path.relative_to(REPO_ROOT)} live target {cid!r} is missing from "
-                            "audit_dispatch_queue.json; rerun the full pipeline before relying on audit-loop selection"
+                            "audit_dispatch_queue.json (not present in live, resolved_targets, "
+                            "retired, or resolved_or_invalid); rerun the full pipeline before "
+                            "relying on audit-loop selection"
                         )
 
     # Graph health: cycles (informational).

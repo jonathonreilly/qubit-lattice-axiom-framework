@@ -49,7 +49,6 @@ context, but the algorithmic check itself is self-contained).
 from __future__ import annotations
 
 import json
-import sys
 import time
 from fractions import Fraction
 from pathlib import Path
@@ -58,23 +57,283 @@ import sympy as sp
 from sympy import Rational, Symbol
 
 
-# Import the Bessel-determinant Taylor builder, ansatz matrix, rank
-# routine, and certificate-A/D logic from the PR #596 runner.
-SCRIPT_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPT_DIR))
-from frontier_su3_v1_picard_fuchs_minimality_2026_05_06 import (  # noqa: E402
-    P_COEFFS,
-    P_k_eval,
-    build_J_series,
-    taylor_coeffs,
-    matrix_for_ansatz,
-    _rank_via_numeric,
-    certificate_A,
-    certificate_D,
-)
-
-
 beta = Symbol('beta')
+
+
+# -------------------------- Inlined helpers (formerly imported from --------------------------
+# -------------------------- frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py) --------------------------
+# Inlined for runner self-containment per audit verdict
+# (runner_artifact_issue tag on plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06).
+# Source-of-truth definitions remain in the PR #596 runner; this copy is
+# kept in lockstep with that source. If you change one, change the other.
+
+# Candidate ODE coefficients (PR #541)
+# L = sum_{k=0..3} P_k(beta) d^k, where P_k(beta) is integer-polynomial:
+#   P_0 = -beta^2 - 10*beta
+#   P_1 = -4*beta^2 - 2*beta + 120
+#   P_2 = 60*beta - beta^2
+#   P_3 = 6*beta^2
+P_COEFFS = {
+    0: {1: -10, 2: -1},
+    1: {0: 120, 1: -2, 2: -4},
+    2: {1: 60, 2: -1},
+    3: {2: 6},
+}
+
+
+def P_k_eval(k: int) -> sp.Expr:
+    coeffs = P_COEFFS[k]
+    return sp.expand(sum(c * beta**p for p, c in coeffs.items()))
+
+
+# -------------------------- Bessel-determinant series --------------------------
+
+def I_series_dict(n: int, order: int) -> dict:
+    """Return the modified Bessel I_n(beta/3) Taylor series in beta truncated at order
+    as a {power: Rational coefficient} dict (omit zero coefficients).
+    I_n(z) = sum_{m>=0} (z/2)^(n + 2m) / (m! (n+m)!)
+    With z = beta/3:
+      I_n(beta/3) = sum_{m>=0} beta^(n + 2m) / (3^(n + 2m) * 2^(n + 2m) * m! * (n+m)!)
+                  = sum_{m>=0} beta^(n + 2m) / (6^(n + 2m) * m! * (n+m)!)
+    """
+    n = abs(n)
+    out = {}
+    m = 0
+    while n + 2 * m <= order:
+        denom = 6 ** (n + 2 * m)
+        denom *= 1
+        for x in range(1, m + 1):
+            denom *= x
+        for x in range(1, n + m + 1):
+            denom *= x
+        out[n + 2 * m] = Fraction(1, denom)
+        m += 1
+    return out
+
+
+def poly_add(a: dict, b: dict, order: int) -> dict:
+    out = {k: v for k, v in a.items()}
+    for k, v in b.items():
+        if k > order:
+            continue
+        if k in out:
+            new = out[k] + v
+            if new == 0:
+                del out[k]
+            else:
+                out[k] = new
+        else:
+            out[k] = v
+    return out
+
+
+def poly_sub(a: dict, b: dict, order: int) -> dict:
+    out = {k: v for k, v in a.items()}
+    for k, v in b.items():
+        if k > order:
+            continue
+        if k in out:
+            new = out[k] - v
+            if new == 0:
+                del out[k]
+            else:
+                out[k] = new
+        else:
+            out[k] = -v
+    return out
+
+
+def poly_mul(a: dict, b: dict, order: int) -> dict:
+    out = {}
+    for ka, va in a.items():
+        for kb, vb in b.items():
+            kk = ka + kb
+            if kk > order:
+                continue
+            term = va * vb
+            if kk in out:
+                new = out[kk] + term
+                if new == 0:
+                    del out[kk]
+                else:
+                    out[kk] = new
+            else:
+                out[kk] = term
+    return out
+
+
+def det3x3_dict(M, order: int) -> dict:
+    """3x3 determinant where each entry is a {power: Rational} dict."""
+    a, b, c = M[0]
+    d, e, f = M[1]
+    g, h, i = M[2]
+    ei = poly_mul(e, i, order)
+    fh = poly_mul(f, h, order)
+    ei_fh = poly_sub(ei, fh, order)
+    a_ei_fh = poly_mul(a, ei_fh, order)
+
+    di = poly_mul(d, i, order)
+    fg = poly_mul(f, g, order)
+    di_fg = poly_sub(di, fg, order)
+    b_di_fg = poly_mul(b, di_fg, order)
+
+    dh = poly_mul(d, h, order)
+    eg = poly_mul(e, g, order)
+    dh_eg = poly_sub(dh, eg, order)
+    c_dh_eg = poly_mul(c, dh_eg, order)
+
+    res = poly_sub(a_ei_fh, b_di_fg, order)
+    res = poly_add(res, c_dh_eg, order)
+    return res
+
+
+def build_J_series(order: int) -> sp.Expr:
+    """J(beta) = sum_{k in Z} det[I_{i-j+k}(beta/3)]_{i,j=0,1,2}, truncated to deg=order."""
+    k_max = order // 3 + 2
+    J_total = {}
+    for k in range(-k_max, k_max + 1):
+        rows = [[I_series_dict(i - j + k, order) for j in range(3)] for i in range(3)]
+        d = det3x3_dict(rows, order)
+        J_total = poly_add(J_total, d, order)
+    out = sp.S(0)
+    for p, c in J_total.items():
+        out += Rational(c.numerator, c.denominator) * beta ** p
+    return out
+
+
+def taylor_coeffs(J_poly: sp.Expr, depth: int):
+    """Extract a_0, ..., a_{depth} as Rational from J_poly."""
+    p = sp.Poly(J_poly, beta)
+    coeffs = [Rational(0)] * (depth + 1)
+    for monom, c in p.terms():
+        if monom[0] <= depth:
+            coeffs[monom[0]] = Rational(c)
+    return coeffs
+
+
+# -------------------------- Certificate (A): deep Taylor annihilation --------------------------
+
+def certificate_A(J_poly: sp.Expr, order: int) -> tuple[bool, str]:
+    L = (P_k_eval(0) * J_poly
+         + P_k_eval(1) * sp.diff(J_poly, beta)
+         + P_k_eval(2) * sp.diff(J_poly, beta, 2)
+         + P_k_eval(3) * sp.diff(J_poly, beta, 3))
+    L = sp.expand(L)
+    safe_deg = order - 4
+    p = sp.Poly(L, beta)
+    res_low = sp.S(0)
+    for monom, c in p.terms():
+        if monom[0] <= safe_deg:
+            res_low += c * beta**monom[0]
+    is_zero = sp.simplify(res_low) == 0
+    return is_zero, f"L * J truncated to degree {safe_deg}: {'IDENTICALLY ZERO' if is_zero else 'NONZERO'}"
+
+
+# -------------------------- Certificate (D): recurrence consistency --------------------------
+
+def certificate_D(coeffs, depth: int) -> tuple[bool, str, list]:
+    """Verify the recurrence
+       6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2}
+    for N = 2, 3, ..., depth - 1, using a_n from the Bessel-determinant series.
+    """
+    failures = []
+    for N in range(2, depth):
+        lhs = 6 * (N + 1) * (N + 4) * (N + 5) * coeffs[N + 1]
+        rhs = N * (N + 1) * coeffs[N] + 2 * (2 * N + 3) * coeffs[N - 1] + coeffs[N - 2]
+        if lhs != rhs:
+            failures.append((N, lhs, rhs))
+    return len(failures) == 0, f"Recurrence verified for N = 2 to {depth - 1}: {'ALL HOLD EXACTLY' if not failures else f'{len(failures)} failures'}", failures
+
+
+# -------------------------- Ansatz matrix + rank --------------------------
+
+def _to_fraction(c) -> Fraction:
+    if isinstance(c, Fraction):
+        return c
+    if hasattr(c, 'p') and hasattr(c, 'q'):
+        return Fraction(int(c.p), int(c.q))
+    return Fraction(c)
+
+
+def matrix_for_ansatz(coeffs, r: int, d: int, num_eqs: int):
+    """Build the matching matrix for the ansatz
+       sum_{k=0..r} sum_{m=0..d} p_{k,m} beta^m J^{(k)}(beta) = 0
+    matched against [beta^N] for N = 0, 1, ..., num_eqs - 1.
+
+    Returns (rows, num_unknowns) where each row is a list of Fraction.
+    """
+    num_unknowns = (r + 1) * (d + 1)
+    coeffs_frac = [_to_fraction(c) for c in coeffs]
+    M_rows = []
+    for N in range(num_eqs):
+        row = [Fraction(0)] * num_unknowns
+        skip = False
+        for k in range(r + 1):
+            for m in range(d + 1):
+                if N - m < 0:
+                    continue
+                j = N - m
+                if j + k >= len(coeffs_frac):
+                    skip = True
+                    break
+                factor = 1
+                for ell in range(k):
+                    factor *= (j + k - ell)
+                idx = k * (d + 1) + m
+                row[idx] = Fraction(factor) * coeffs_frac[j + k]
+            if skip:
+                break
+        if not skip:
+            M_rows.append(row)
+    return M_rows, num_unknowns
+
+
+def _rank_via_numeric(M_rows, num_unknowns) -> int:
+    """Compute rank via exact-arithmetic Gaussian elimination over Fractions.
+
+    Floating-point rank is unreliable here because matrix entries span many orders
+    of magnitude (terms like 1/(6^k * k!) become tiny). Using Fraction arithmetic
+    gives an exact rank determination.
+    """
+    if not M_rows:
+        return 0
+    rows = []
+    for r in M_rows:
+        new_row = []
+        for c in r:
+            if isinstance(c, Fraction):
+                new_row.append(c)
+            else:
+                new_row.append(Fraction(int(c.p), int(c.q)))
+        rows.append(new_row)
+    nrows = len(rows)
+    ncols = len(rows[0]) if rows else 0
+    rk = 0
+    pivot_col = 0
+    r_idx = 0
+    while r_idx < nrows and pivot_col < ncols:
+        sel = -1
+        for i in range(r_idx, nrows):
+            if rows[i][pivot_col] != 0:
+                sel = i
+                break
+        if sel == -1:
+            pivot_col += 1
+            continue
+        rows[r_idx], rows[sel] = rows[sel], rows[r_idx]
+        piv = rows[r_idx][pivot_col]
+        for i in range(r_idx + 1, nrows):
+            if rows[i][pivot_col] != 0:
+                factor = rows[i][pivot_col] / piv
+                for j in range(pivot_col, ncols):
+                    rows[i][j] -= factor * rows[r_idx][j]
+        rk += 1
+        pivot_col += 1
+        r_idx += 1
+    return rk
+
+
+# -------------------------- End of inlined helpers --------------------------
 
 
 # -------------------------- Certificate (B-EXT): lower-order exclusion to d=30 --------------------------

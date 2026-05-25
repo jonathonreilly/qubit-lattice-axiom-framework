@@ -1,6 +1,6 @@
 # Koide `Q` ↔ `δ` Linking Relation: Partial Closure and Named Residual Postulate
 
-**Date:** 2026-04-20 (conditional-on-P tightening: 2026-05-24)
+**Date:** 2026-04-20 (conditional-on-P tightening: 2026-05-24; period-2π admission: 2026-05-25)
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Lane:** Scalar-selector cycle 1 — joint Koide-program import consolidation.
@@ -36,14 +36,43 @@ that appear in Theorem of §2:
 
 - **(I1)** equal-sector-norm input on the `C_d` Plancherel split
   (retained at `d = 3` via the Koide-cone algebraic equivalence note `R2`);
-- **(P)** the radian-bridge postulate of §4 — the identification of
-  the dimensionless character-algebra ratio
+- **(P)** the radian-bridge postulate of §4 — the period-2π / U(1)
+  Berry-holonomy convention identifying the dimensionless
+  character-algebra ratio
   `rho_delta = 2/d²` with the Berry-holonomy Brannen offset
-  `δ = θ − 2π/d` measured in **radians**.
+  `δ = θ − 2π/d` measured in **radians**. Postulate `P` names the
+  period-2π / U(1) convention under which holonomy is read in radians;
+  the dimensionless identity `δ = 2/d²` (as a ratio of real DOF counts)
+  does not require `P` and is unconditional on the retained side.
 
 Under `I1 ∧ P`, the runner verifies the arithmetic chain
 `δ/Q = (2/d²)/(2/d) = 1/d` symbolically for
 `d ∈ {2, 3, 4, 5, 7, 11}` (9/9 PASS).
+
+**Admissions list (2026-05-25 audit-repair).** This note's binding
+claims have the following explicit admissions:
+
+- **`I1`** — equal-sector-norm input on the `C_d` Plancherel split
+  (retained at `d = 3` via `R2`).
+- **`P`** — the period-2π / U(1) Berry-holonomy radian-bridge
+  convention. `P` is the U(1) period-2π convention under which Berry
+  holonomy is read out in radians; the framework algebraic substrate
+  remains `ℚ̄(π)`, and `P` names the single convention by which the
+  dimensionless character-algebra ratio `2/d²` is interpreted as a
+  Berry-holonomy reading in radians.
+
+Conditional vs. unconditional split:
+
+- `δ = 2/d²` as a **dimensionless** ratio of real-DOF counts on
+  `(b ∈ ℂ) / Herm_d` (§3.2) is **unconditional** on the retained
+  Cl(3)/Z³ + `R3` ingredients (algebraic identity, class-A retainable).
+- `δ = 2/d² rad` as a **radian reading** of the Berry holonomy is
+  **conditional on `P`**: the radian interpretation is the
+  period-2π / U(1) convention bridge, not derivable from the retained
+  side alone.
+- Consequently `δ = Q/d` at general `d` is conditional on `I1 ∧ P`;
+  at `d = 3` the radian value `δ = 2/9 rad` carries the same `P`
+  admission.
 
 Explicitly **out of binding scope** of this note (the alternative
 "derive or cite a retained theorem identifying the character-algebra
@@ -293,15 +322,19 @@ radian-bridge postulate **P** of §4.
 
 ## 4. The residual radian-bridge postulate
 
-> **Postulate P (radian-bridge for `δ`).**
-> The dimensionless character-algebra ratio
+> **Postulate P (period-2π / U(1) Berry-holonomy radian-bridge for
+> `δ`).**
+> Under the period-2π / U(1) convention for the tautological Berry
+> connection on the projective doublet ray (R1), the dimensionless
+> character-algebra ratio
 >
 > ```text
 > ρ_δ := (real DOF of b) / (real dim of Herm_d) = 2/d²
 > ```
 >
 > equals the Berry-holonomy Brannen offset `δ = θ − 2π/d` measured in
-> **radians**.
+> **radians**. The dimensionless equality `ρ_δ = 2/d²` itself does
+> **not** require `P`; only the radian reading does.
 
 **What P says.** It is a **single** real-number identification between
 (i) the retained dimensionless character-count ratio and (ii) the

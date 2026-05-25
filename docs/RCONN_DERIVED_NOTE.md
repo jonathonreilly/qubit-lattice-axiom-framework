@@ -1,13 +1,40 @@
-# R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate
+# R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate (conditional on admitted matching rule (M))
 
 **Date:** 2026-04-14 (originally); 2026-05-10 (audit-narrowing refresh);
 2026-05-18 (claim_scope formalized as exact imported Fierz channel-count
 fraction plus conditional MC consistency framing only per audit verdict
 boundary instruction; physics-loop Tier B attempt logged as NARROWED —
 matching rule (M) closure from retained primitives shown obstructed by
-already-recorded no-go authority).
-**Claim type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+already-recorded no-go authority); 2026-05-25 (audit-repair narrow-rescope:
+matching rule (M) admitted as a named open premise per the audit verdict;
+algebraic content unconditional, physical-readout claim explicitly
+conditional on (M); cites the retained no-go
+[`ew_current_matching_rule_open_gate_note_2026-05-03`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+for the foreclosure on derivation from current retained primitives;
+parallel to the `yt_ew_color_projection_theorem` rescope, same matching
+rule (M)).
+**Claim type:** bounded_theorem (conditional on admitted premise (M))
+**Admitted open premise (M).** The matching rule (M) — that the lattice
+connected color trace `<Tr_color[G(0,x) G(x,0)]_connected>` projects onto
+the adjoint channel of the Fierz decomposition (equivalently, the
+disconnected/singlet readout coefficient `kappa_EW = 0` selector) — is
+**admitted here as a named open premise**, not derived from current
+retained primitives. The retained packet `{ N_c = 3, Fierz identity, CMT
+mean-field factorization, OZI bounded suppression }` is shown to be
+**insufficient** to fix `kappa_EW` by the retained no-go
+[`ew_current_matching_rule_open_gate_note_2026-05-03`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+(at least two completions — `K_EW(0) = 9/8` connected-trace selector and
+`K_EW(1) = 1` full-trace selector — share identical Fierz arithmetic and
+CMT scaling). The algebraic Hilbert-space dimension fraction
+`(N_c^2 − 1)/N_c^2 = 8/9` is unconditional (group-theory invariant
+imported from the cited Fierz authority); the physical-readout
+identification of `R_conn` with that fraction is gated on (M). This note
+does **not** propose retention of `kappa_EW = 0`; admission of (M) is
+the open premise that downstream readout-grade consumers inherit.
+**Parallel rescope.** The companion note `YT_EW_COLOR_PROJECTION_THEOREM.md`
+admits the same matching rule (M) as a named open premise. The two rescopes
+share authority and admission language.
+**Claim scope (post-2026-05-25 audit-repair):** the load-bearing content
 of this note is **exactly two pieces**: (i) the **exact imported
 Fierz channel-count fraction** `(N_c^2 − 1) / N_c^2` from the
 already-retained Fierz authority, with no re-derivation in this

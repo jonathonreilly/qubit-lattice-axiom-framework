@@ -384,8 +384,21 @@ The bounded null-result claim closes from the primary runner's cached stdout
 plus the imported-authority cache (for the exact-mirror generator and linear
 propagator); the companion cleanup table remains diagnostic context.
 
-## Audit dependency repair links
+## Audit dependency repair links (2026-05-25 — non-load-bearing synthesis citation removed)
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+The 2026-05-25 audit verdict on this row was `audited_conditional`
+(`dependency_not_retained`), with the repair target:
 
-- [mirror_program_synthesis](MIRROR_PROGRAM_SYNTHESIS.md)
+> remove the non-load-bearing synthesis citation from the restricted
+> cited-authority set or replace it with retained-grade per-claim
+> dependencies, then re-audit the same runner-backed bounded null-result.
+
+The prior synthesis-note citation (canonical id
+`mirror_program_synthesis`) in this section was recorded for
+graph-bookkeeping only and was not load-bearing for the bounded
+null-result claim, which closes from the primary runner and
+imported-authority caches above. Per the verdict that synthesis
+citation has been removed from the restricted cited-authority set
+(the markdown link target has been dropped so the citation graph no
+longer emits an edge here). The runner, cache, claim scope, and
+conclusion are unchanged.

@@ -1,7 +1,7 @@
-"""Total fermion parity (-1)^Q̂ on framework Fock space.
+"""Total occupation parity (-1)^Q_hat on framework Fock space.
 
-By axiom_first_lattice_noether (cited), N2 supplies the conserved
-fermion-number current with total Q̂. Define the fermion parity operator
+Define the total occupation-number operator directly on the finite
+occupation/Fock space and define the occupation-parity operator
 
     (-1)^Q̂  :=  exp(i π Q̂)
 
@@ -9,14 +9,14 @@ acting on the framework's N-site Fock space H = ⊗_{x=1}^N C².
 
 Then:
   (P1) (-1)^Q̂ is unitary and Hermitian (its own inverse): ((-1)^Q̂)² = I
-  (P2) (-1)^Q̂ commutes with H (since [H, Q̂] = 0)
+  (P2) (-1)^Q̂ commutes with any Z_2-even Hamiltonian (conditional dynamics)
   (P3) Spec((-1)^Q̂) = {+1, -1}
   (P4) Z_2 grading: H = H_even ⊕ H_odd with dim H_even = dim H_odd = 2^{N-1}
-  (P5) Local fermion operator a_x is Z_2-odd: (-1)^Q̂ a_x (-1)^Q̂ = -a_x
-  (P6) Local fermion bilinear a_x^† a_y is Z_2-even: invariant under (-1)^Q̂
+  (P5) Local ladder operator a_x is Z_2-odd: (-1)^Q̂ a_x (-1)^Q̂ = -a_x
+  (P6) Local bilinear a_x^† a_y is Z_2-even: invariant under (-1)^Q̂
 
-This is the framework's *fermion parity superselection rule*: only Z_2-even
-operators (bilinears, currents, energy density) connect physical states.
+This is the framework's algebraic occupation-parity grading: Z_2-even
+operators (bilinears, currents, energy density) preserve parity sectors.
 
 Tests:
   (T1) (-1)^Q̂ is Hermitian
@@ -41,7 +41,7 @@ def kron_chain(matrices: list[np.ndarray]) -> np.ndarray:
 
 def main() -> None:
     print("=" * 72)
-    print("FRAMEWORK FERMION PARITY (-1)^Q̂ AND Z_2 GRADING")
+    print("FRAMEWORK OCCUPATION PARITY (-1)^Q̂ AND Z_2 GRADING")
     print("=" * 72)
     print()
 
@@ -150,13 +150,13 @@ def main() -> None:
 
     # ----- Test 6: {F, a_x} = 0 (a_x is Z_2-odd) -----
     print("-" * 72)
-    print("TEST 6: {(-1)^Q̂, a_x} = 0  for all x  (a_x is Z_2-odd)")
+    print("TEST 6: {(-1)^Q̂, a_x} = 0  for all x  (ladder operator is Z_2-odd)")
     print("-" * 72)
     max_anti = 0.0
     for x in range(N):
         # On a tensor product, a_x acting at site x might need Jordan-Wigner-like
         # phases for a true CAR. But the σ_+ at site x without JW string is what
-        # we use here (matches the per-site fermion convention; Q̂ is built from
+        # we use here (matches the per-site occupation convention; Q̂ is built from
         # n̂_x = a_x^† a_x without JW).
         a_x_op = at_site(a_op, x)
         anti = F @ a_x_op + a_x_op @ F
@@ -191,7 +191,7 @@ def main() -> None:
     print(f"  Test 3 ([F, n̂_x] = 0):                            {'PASS' if t3_ok else 'FAIL'}")
     print(f"  Test 4 (Spec = {{+1, -1}}):                         {'PASS' if t4_ok else 'FAIL'}")
     print(f"  Test 5 (Z_2 grading dim balance):                 {'PASS' if t5_ok else 'FAIL'}")
-    print(f"  Test 6 (a_x is Z_2-odd: {{F, a_x}} = 0):            {'PASS' if t6_ok else 'FAIL'}")
+    print(f"  Test 6 (ladder operator is Z_2-odd: {{F, a_x}} = 0): {'PASS' if t6_ok else 'FAIL'}")
     print(f"  Test 7 (bilinear a_x^† a_y is Z_2-even):           {'PASS' if t7_ok else 'FAIL'}")
     all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")

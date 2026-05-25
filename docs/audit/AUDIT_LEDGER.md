@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 450 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1229 |
+| unaudited | 1230 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 94 |
+| ~~audited_conditional~~ | 93 |
 | ~~audited_failed~~ | 9 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 730 |
-| `audited_conditional` | 94 |
+| `audited_conditional` | 93 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1458 |
+| `unaudited` | 1459 |
 
 | claim_type | count |
 |---|---:|
@@ -92,8 +92,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 719 | 53.49 | `audited_conditional` | ~~audited_conditional~~ |
-| 2 | `minimal_axioms_2026-05-03` | meta | critical | 944 | 52.38 | `unaudited` | meta |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 921 | 52.35 | `audited_clean` | **retained_bounded** |
+| 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 921 | 52.35 | `audited_clean` | **retained_bounded** |
+| 3 | `minimal_axioms_2026-05-03` | meta | critical | 932 | 51.87 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1087 | 45.59 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 947 | 39.89 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 177 | 38.98 | `unaudited` | unaudited |
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 548 | 33.10 | `audited_conditional` | ~~audited_conditional~~ |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 561 | 32.13 | `unaudited` | unaudited |
 | 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 559 | 31.13 | `unaudited` | unaudited |
-| 16 | `minimal_axioms` | meta | critical | 1032 | 30.51 | `unaudited` | meta |
+| 16 | `minimal_axioms` | meta | critical | 1045 | 31.03 | `unaudited` | meta |
 | 17 | `three_generation_structure_note` | bounded_theorem | critical | 686 | 30.42 | `unaudited` | unaudited |
 | 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 932 | 30.37 | `audited_renaming` | ~~audited_renaming~~ |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 896 | 30.31 | `audited_clean` | **retained** |
@@ -854,7 +854,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1560,21 +1559,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The in-scope U1-U3 claim follows from retained upstream narrow theorems establishing the Cl(3) complexification split and Pauli irrep uniqueness, plus standard finite-dimensional semisimple algebra representation theory. The former U4 physical per-site Hilbert-space bridge is explicitly out of scope.
 - **rationale:** The load-bearing step is an algebraic Clifford-algebra classification and representation-theory decomposition, not a numerical fit, definition, or external comparator. Both cited one-hop authorities are retained-grade and directly cover the split, chirality labels, two-dimensional irreps, and uniqueness within chirality. The runner source performs concrete Pauli-matrix and chirality checks, with one weak random-search exhibit for 3D nonexistence, but the proof of odd-dimensional exclusion is supplied by the retained algebraic decomposition rather than by that search.
 - **auditor confidence:** high
-
-### `axiom_first_lattice_noether_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded lattice Noether identities for the U(1) current, the infinitesimal bilateral current, and the (2Z)^3 sublattice-momentum density on the admitted nearest-neighbour KS-phase staggered/Grassmann carrier; no derivation of that carrier from A1+A2 was audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T102442Z-f77f585c-axiom_first_lattice_noet-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** From the two-site shift symmetry [M,S^(2mu)]=0, promoting the finite shift to a site-dependent envelope is asserted to yield sum_x omega_x d^L_mu P^mu_x=0 on shell, with P^mu_x the canonical staggered sublattice-momentum density (3).  _(class `A`)_
-- **chain closes:** False — The U(1) and bilateral infinitesimal-current portions close algebraically on the admitted staggered matrix. The full N1 translation-current claim does not close from the provided authorities because Step 4b does not derive the finite-shift Ward rearrangement to (3), and E6 is only a finite-block expectation-value check rather than an arbitrary on-shell symbolic derivation.
-- **rationale:** The runner performs six non-external identity checks on the hard-coded staggered matrix and supports the scoped algebraic claims over that admitted carrier. However, the packet still relies on the residual KS-phase-form carrier and on the Step 4b site-dependent finite-shift Ward bridge to identify the conserved translation current as (3). Neither item is supplied by a retained authority in the restricted packet. No-Go discipline N3/N6 leaves those as hidden or unratified admissions, so audited_clean is not available.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-05-03.md`
-- **auditor confidence:** medium
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
 

@@ -1290,7 +1290,7 @@
     },
     {
       "from": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "to": "minimal_axioms_2026-05-03"
+      "to": "minimal_axioms"
     },
     {
       "from": "axiom_first_lattice_noether_theorem_note_2026-04-29",
@@ -40583,7 +40583,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "690dfa6d39ce0d3f52c5633934ba176f4d040d9791e1b2566a3f6390588f2f74",
+      "note_hash": "6babe1bfdf6f69fd291fca45f4e20f9dfaeefd5aab63ad36eeff6706f7cadf48",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -41880,11 +41880,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms_2026-05-03",
+        "minimal_axioms",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a412faf2b10685654f5fae8f7563bce0dc6e12917f78f84618cb875bbbe5a351",
+      "note_hash": "a30fd6532a3fa61a5a83654a52f965cad74c0aa0a6ba48ee30801465578423c2",
       "path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3"

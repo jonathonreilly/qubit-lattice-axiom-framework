@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 430 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1265 |
+| unaudited | 1264 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 81 |
+| ~~audited_conditional~~ | 82 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 702 |
-| `audited_conditional` | 81 |
+| `audited_conditional` | 82 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1492 |
+| `unaudited` | 1491 |
 
 | claim_type | count |
 |---|---:|
@@ -892,6 +892,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `symmetry_head_to_head_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -11461,6 +11462,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** At the density optimum, the generated paired scaffold is still Born-clean where it runs and recovers a modest subset of the mirror gap at N=25 and N=40, but it loses retention by N=60.  _(class `C`)_
 - **chain closes:** True — Running the registered script with the note's density-optimum parameters reproduces the saved log and the note's key table: paired-generated noise values have Born=0 where they run at N=25/40 and all paired-generated N=60 rows fail. The note keeps the conclusion bounded and does not promote the generated scaffold.
 - **rationale:** The load-bearing bounded negative conclusion matches the current runner when invoked with the note's explicit density-optimum parameters and is consistent with the archived log. The note states the correct boundary: the generated scaffold has a small viable pocket, does not consistently beat exact mirror, and does not survive to N=60. Residual process risk is that the runner defaults now run a different all-FAIL window, so future readers need the note/log command rather than the default invocation.
+- **auditor confidence:** high
+
+### `symmetry_head_to_head_note`
+
+- **Note:** [`SYMMETRY_HEAD_TO_HEAD_NOTE.md`](../../docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the stated head-to-head comparison table and retained-range readout for exact mirror versus Z2 x Z2 at shared N=80 and N=100 using the provided one-hop cited authorities and hard-coded comparison runner.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T114451Z-8f15c8b6-symmetry_head_to_head_no-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Exact mirror is the stronger gravity-weighted joint lane on the shared N=80/100 rows, while Z2 x Z2 is stronger on decoherence depth and retained range.  _(class `B`)_
+- **chain closes:** False — The comparison runner only hard-codes the contested row values. The provided mirror authority explicitly narrows its retained scope to N=15/25 and delegates the dense N=80/100 boundary-card evidence to MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md, which is not included as a cited authority in this packet.
+- **rationale:** All named cited authorities are retained_bounded, but the exact mirror N=80/100 gravity-weighted rows used by the source note are not closed by the provided mirror note. The primary runner is not an independent computation; it prints constants from the proposed comparison, so it can verify formatting/consistency only as a cross-note input check. The Z2 x Z2 dense extension values are present in the higher-symmetry joint note text, but that same note says the N=120 promotion is out of binding scope for joint-validation evidence, further weakening the retained-range statement.
+- **open / conditional deps cited:**
+  - `MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md`
 - **auditor confidence:** high
 
 ### `symmetry_spectrum_mirror_compare_note`

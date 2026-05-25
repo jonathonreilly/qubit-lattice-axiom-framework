@@ -30,6 +30,29 @@ counter-example matches the auditor's specific objection on positive
 combinations with `Tr(AB)` and `(tr A)(tr B)` and is the executable
 backing of the open-derivation-gap statement below.
 
+## Admissions (named open premises)
+
+The AM-GM closure to `kappa = 2`, `Q = 2/3` in this note is conditional
+on the following explicit named admission, treated as an open premise
+and not derived here:
+
+- **(A_Frob) `w_scalar / w_traceless = 1` (equivalently `beta = 0`).**
+  On the Frobenius-orthogonal isotype decomposition
+  `Herm(3) = span(I) ⊕ Herm(3)_traceless`, the scalar/traceless
+  isotype-weight ratio of the Ad-invariant family
+  `B_{alpha, beta}(A, B) = alpha · Tr(AB) + beta · (tr A)(tr B)` is
+  `w_scalar / w_traceless = (alpha + 3 beta) / alpha`. The admission is
+  that this ratio equals `1`, equivalently `beta = 0`, on the PD region
+  `{alpha > 0, alpha + 3 beta > 0}`. No retained authority in the
+  restricted packet derives this; the cheapest plausible one-step
+  bridge (isotype Frobenius-orthogonality alone) is shown insufficient
+  in the 2026-05-18 subsection below.
+
+The AM-GM closure to `kappa = 2`, `Q = 2/3` stated in "Statement
+(conditional)" below holds **conditional on (A_Frob)**. Closing
+(A_Frob) from retained authorities is left as an open derivation gap
+(see "Open derivation gap" below).
+
 ## Scope narrowing (2026-05-24 audited_conditional repair)
 
 The 2026-05-19 audit verdict on this row

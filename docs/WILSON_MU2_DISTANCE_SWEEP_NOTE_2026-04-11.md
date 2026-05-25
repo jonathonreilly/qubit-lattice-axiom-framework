@@ -3,7 +3,7 @@
 **Date:** 2026-04-11  
 **Status:** bounded companion calibration note
 
-**Script:** `scripts/frontier_wilson_mu2_distance_sweep.py` (current main reproduces the table to within ~0.5% drift in the 3rd-decimal exponent: `-3.315` vs noted `-3.290` at `mu^2=0.22`, `-1.992` vs `-1.996` at `mu^2=0.01`, `-1.871` vs `-1.872` at `mu^2=0.001` — qualitative monotone softening preserved)
+**Script:** `scripts/frontier_wilson_mu2_distance_sweep.py` (runner-cache values cited below; note narrowed 2026-05-25 to the 5-value `mu^2` grid actually computed: `0.22, 0.05, 0.01, 0.005, 0.001`)
 
 **Anchor notes/scripts:**
 - `docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md`
@@ -21,7 +21,7 @@ or does it soften toward Newton-compatible `d^-2` behavior?
 - `G = 5`
 - sides `11, 13, 15`
 - separations `d = 3, 4, 5, 6`
-- `mu^2 = 0.22, 0.10, 0.05, 0.01, 0.001, 0.0`
+- `mu^2 = 0.22, 0.05, 0.01, 0.005, 0.001`
 
 Only clean attractive rows were used in the distance-law fit, matching the
 retained open-lattice Wilson convention.
@@ -30,26 +30,19 @@ retained open-lattice Wilson convention.
 
 All sampled points remained attractive and clean across the mu-scan surface.
 
-Clean distance-law fits:
+Clean distance-law fits (runner cache `logs/runner-cache/frontier_wilson_mu2_distance_sweep.txt`):
 
-- `mu^2 = 0.22`: exponent `-3.290` (`R^2 = 0.9957`)
-- `mu^2 = 0.10`: exponent `-2.732` (`R^2 = 0.9969`)
-- `mu^2 = 0.05`: exponent `-2.394` (`R^2 = 0.9975`)
-- `mu^2 = 0.01`: exponent `-1.996` (`R^2 = 0.9981`)
-- `mu^2 = 0.001`: exponent `-1.872` (`R^2 = 0.9984`)
-- `mu^2 = 0.0`: exponent `-1.857` (`R^2 = 0.9985`)
-
-Per-side fits at low screening are consistent with the global trend:
-
-- at `mu^2 = 0.01`, `side=13` gives `-1.978`
-- at `mu^2 = 0.001`, `side=15` gives `-1.885`
-- at `mu^2 = 0.0`, `side=15` gives `-1.869`
+- `mu^2 = 0.22`: exponent `-3.315` (`R^2 = 0.9960`)
+- `mu^2 = 0.05`: exponent `-2.392` (`R^2 = 0.9978`)
+- `mu^2 = 0.01`: exponent `-1.992` (`R^2 = 0.9984`)
+- `mu^2 = 0.005`: exponent `-1.927` (`R^2 = 0.9985`)
+- `mu^2 = 0.001`: exponent `-1.871` (`R^2 = 0.9986`)
 
 ## Interpretation
 
 The steep open-lattice exponent at `mu^2 = 0.22` is **screening-controlled**.
 
-As screening is reduced:
+As screening is reduced across the 5-value `mu^2` grid (`0.22, 0.05, 0.01, 0.005, 0.001`):
 
 - the exponent softens monotonically
 - the law approaches Newton-compatible `d^-2`

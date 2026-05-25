@@ -17019,25 +17019,25 @@
     "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
-        "C": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "A",
       "runner": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py"
     },
     "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
-        "C": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "A",
       "runner": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py"
     },
     "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": {
@@ -46486,13 +46486,13 @@
         "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06"
       ],
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
-        "C": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py": {
@@ -54766,9 +54766,9 @@
   "stats": {
     "decoration_candidates": 314,
     "dominant_class_distribution": {
-      "A": 210,
+      "A": 211,
       "B": 272,
-      "C": 747,
+      "C": 746,
       "D": 299,
       "none": 438
     },

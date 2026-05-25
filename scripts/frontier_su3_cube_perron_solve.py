@@ -1,11 +1,11 @@
-"""SU(3) tensor-network engine + L_s=2 APBC cube Perron solve (combined).
+"""SU(3) tensor-network engine + L_s=2 PBC cube Perron solve (narrowed).
 
 This is the **combined deliverable** of the planned 5-PR engine roadmap
 (see docs/SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md), unified
 into one PR per user direction.
 
 It targets explicit computation of rho_(p,q)(6) for the unmarked spatial
-Wilson environment on the V-invariant L_s=2 APBC spatial cube, then plugs
+Wilson environment on the V-invariant L_s=2 PBC spatial cube, then plugs
 the result into the framework's source-sector factorization
 
     T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)
@@ -625,8 +625,8 @@ def cube_perron_p6(rho: Dict[Tuple[int, int], float],
 
 def driver() -> int:
     print("=" * 78)
-    print("SU(3) Tensor-Network Engine + L_s=2 APBC Cube Perron Solve")
-    print("(combined deliverable; supersedes the 5-PR roadmap)")
+    print("SU(3) Tensor-Network Engine + L_s=2 PBC Cube Perron Solve")
+    print("(narrowed scope: PBC geometry + bipartite adjacency + trivial-sector Reference B recovery)")
     print("=" * 78)
     print()
 
@@ -798,10 +798,10 @@ def driver() -> int:
     print()
 
     # ========== Section H: honest verdict ==========
-    print("--- Section H: honest verdict (combined PR scope) ---")
+    print("--- Section H: honest verdict (narrowed note scope) ---")
     print()
     print("  STRUCTURAL FINDINGS (all PASS):")
-    print("    1. L_s=2 APBC cube has 12 unique unoriented spatial plaquettes,")
+    print("    1. L_s=2 PBC cube has 12 unique unoriented spatial plaquettes,")
     print("       24 directed links, 8 sites.")
     print("    2. Each directed link is in exactly 2 plaquettes.")
     print("    3. All 48 link-plaquette incidences are FORWARD orientation.")
@@ -827,7 +827,7 @@ def driver() -> int:
     print(f"    Distance from upper bound:           {abs(0.5935 - P_trivial):.6f}")
     print()
     print("  HONEST PATH A: gap from upper bound is 0.171, not closer to")
-    print("  epsilon_witness = 3e-4. The combined PR establishes the structural")
+    print("  epsilon_witness = 3e-4. The narrowed note establishes the structural")
     print("  skeleton (geometry + bipartite finding + trivial-sector computation)")
     print("  but does NOT close the no-go quantitatively. The intertwiner traces")
     print("  for non-trivial self-conjugate and bipartite-alternating sectors")
@@ -844,7 +844,7 @@ def driver() -> int:
     print("=" * 78)
     print()
     print("Headline:")
-    print(f"  Combined SU(3) tensor-network engine + L_s=2 cube structural analysis.")
+    print(f"  Narrowed SU(3) tensor-network engine + L_s=2 cube structural analysis.")
     print(f"  Cube geometry: 12 plaquettes, 24 directed links, all forward.")
     print(f"  Plaquette graph BIPARTITE (NEW finding; admits alternating lambda).")
     print(f"  Trivial-sector P(6) = {P_trivial:.6f} (recovers Reference B).")

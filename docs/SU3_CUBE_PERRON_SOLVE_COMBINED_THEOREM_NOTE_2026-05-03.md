@@ -2,10 +2,12 @@
 
 **Date:** 2026-05-03
 **Claim type:** bounded_theorem
-**Status:** retained_bounded — combined deliverable of the planned 5-PR
-engine roadmap (per user direction to ship in one PR), with NEW
-structural findings on the L_s=2 cube and the trivial-sector P(6)
-recovery, plus an explicit gap to closure.
+**Status authority:** independent audit lane only
+**Type:** bounded_theorem — narrowed (per auditor `scope_too_broad`
+verdict) to: PBC geometry on the L_s=2 spatial cube, bipartite
+plaquette adjacency, and trivial-sector Reference B recovery. The
+full `P_cube(6) >= P_trivial(6)` claim is dropped as out-of-scope
+for this note.
 **Primary runner:** `scripts/frontier_su3_cube_perron_solve.py`
 **Companion:** [`SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md`](SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md)
 (fusion engine, PR 1, audited by Codex as bounded_theorem)
@@ -13,29 +15,26 @@ recovery, plus an explicit gap to closure.
 
 ## 0. Headline
 
-Combined PR per user direction. Delivers, in one shipment:
+Narrowed (per auditor `scope_too_broad` verdict) to the three items
+the auditor named as in-scope:
 
-1. **Re-bundle of the SU(3) fusion engine** (PR 1 from the original
-   roadmap; downgraded to `bounded_theorem` by Codex audit on the
-   bounded NMAX=4 finite-box scope).
-2. **L_s=2 PBC spatial cube geometry encoder** (8 sites, 24 directed
-   links, 12 unique unoriented plaquettes).
-3. **Link-orientation analysis**: each of the 24 directed links is in
-   exactly 2 plaquettes, both using it in FORWARD orientation. This
-   forces, via the 2-link Haar selection rule, adjacent plaquettes
-   to have CONJUGATE irreps `lambda_B = bar(lambda_A)`.
-4. **NEW STRUCTURAL FINDING**: the plaquette adjacency graph IS
-   bipartite (color partition 6:6). This admits BOTH all-self-conjugate
-   AND bipartite-alternating `(lambda, bar(lambda))` configurations
-   as valid. Previously unrecognized in the framework.
-5. **Trivial-sector Perron recovery**: with `rho = delta_(0,0)` (only
-   the trivial irrep contributing), the source-sector Perron solve
-   gives `P(6) = 0.422532`, exactly recovering Reference B of the
-   existing tensor-transfer Perron solve note.
-6. **Honest gap report**: the non-trivial self-conjugate and
-   bipartite-alternating sector contributions to `rho_(p,q)(6)`
-   require explicit Wigner intertwiner traces on the cube graph, which
-   remain the out-of-scope item even in this combined PR.
+1. **L_s=2 PBC spatial cube geometry encoder** (8 sites, 24 directed
+   links, 12 unique unoriented plaquettes; each directed link is in
+   exactly 2 plaquettes, all 48 link-plaquette incidences forward).
+2. **Bipartite plaquette adjacency**: the 12-vertex plaquette adjacency
+   graph is bipartite with color partition `6 vs 6`, verified by BFS
+   2-coloring.
+3. **Trivial-sector Reference B recovery**: with `rho = delta_(0,0)`
+   arising naturally as the trivial-irrep cube-character contribution,
+   the source-sector Perron solve gives `P_trivial(6) = 0.422532`,
+   exactly recovering Reference B of the existing tensor-transfer
+   Perron solve note.
+
+The full `P_cube(6) >= P_trivial(6)` quantitative-bound claim and the
+non-trivial self-conjugate / bipartite-alternating sector
+contributions to `rho_(p,q)(6)` are **out of scope** for this note.
+They depend on explicit SU(3) Wigner intertwiner traces on the cube
+graph that this note does not derive.
 
 ## 1. Algorithm
 
@@ -143,58 +142,39 @@ input choice needed for this sector.
 
 ### 1.6 Non-trivial sector — explicit out-of-scope
 
-The non-trivial-irrep contributions to `rho_(p,q)(6)` are:
+The non-trivial-irrep contributions to `rho_(p,q)(6)` (all-same
+self-conjugate `(n, n)` for `n >= 1`, and bipartite-alternating
+`(lambda, bar(lambda))`) require explicit SU(3) Wigner intertwiner
+traces on the cube graph. They are **explicitly out of scope** in
+this narrowed note. No `P_cube` number beyond the trivial sector is
+reported here, and no quantitative bound of the form
+`P_cube(6) >= P_trivial(6)` is asserted.
 
-1. **All-same-self-conjugate `(n, n)` for n >= 1**: contribution
-   `[d_(n,n) c_(n,n)(6)]^12 × T_(n,n)(cube)` where `T_(n,n)(cube)` is
-   the topological intertwiner trace on the cube graph with all 24
-   directed links carrying `D^(n,n)` representation matrices.
-2. **Bipartite-alternating `(lambda, bar(lambda))`**: contribution
-   `[d_lambda c_lambda(6) × d_bar(lambda) c_bar(lambda)(6)]^6 ×
-   T_(lambda, bar(lambda))(cube)`. Note the factor of 6 (not 12)
-   because each color class has 6 plaquettes.
+## 2. Theorem statement (narrowed)
 
-Both topological traces `T_(n,n)(cube)` and
-`T_(lambda, bar(lambda))(cube)` require the explicit SU(3) Wigner
-intertwiner machinery (originally PR 2 of the 5-PR roadmap), which
-is **not implemented in this combined PR**. The runner explicitly
-flags this gap.
-
-A naive `T_cube ~ 1` estimate (used in an earlier draft of this
-runner) gives `P_cube ≈ 0.711`, which is ABOVE the bridge-support
-upper bound `0.5935` — clearly an overestimate caused by ignoring the
-`(1/d_lambda)^24` factors from link integrations and the actual
-intertwiner contraction reducing the traces. The combined PR
-therefore **does not report a P_cube number** beyond the trivial
-sector.
-
-## 2. Theorem statement
-
-**Bounded Theorem (combined cube structural analysis).** On the
+**Bounded Theorem (narrowed cube structural analysis).** On the
 V-invariant minimal block of the Wilson `3 spatial + 1 derived-time`
-surface at `beta = 6`:
+surface at `beta = 6`, in the narrowed scope (PBC geometry +
+bipartite adjacency + trivial-sector Reference B recovery):
 
-1. The L_s=2 PBC spatial cube has exactly 12 unique unoriented
-   spatial plaquettes, 24 directed links, with each link in exactly 2
-   plaquettes. (verified)
-2. All 48 link-plaquette incidences are forward orientation, so the
-   2-link Haar selection rule forces adjacent plaquettes to have
-   conjugate irreps. (verified)
-3. The plaquette adjacency graph is bipartite with color partition
-   `6 vs 6`, admitting both all-same-self-conjugate and
-   bipartite-alternating valid irrep configurations. (verified)
-4. The trivial-sector contribution `lambda = (0,0)` for all 12
-   plaquettes gives `Z_singlet = c_(0,0)(6)^12 ≈ 2.76e6` and
-   corresponding `rho = delta_(0,0)`, yielding `P_trivial(6) = 0.4225`
-   in exact agreement with the existing Reference B. (verified)
-5. The full `rho_(p,q)(6)` requires explicit topological intertwiner
-   traces for non-trivial self-conjugate and bipartite-alternating
-   sectors. (out of scope for this PR)
+1. **PBC geometry.** The L_s=2 PBC spatial cube has exactly 12 unique
+   unoriented spatial plaquettes, 24 directed links, with each link
+   in exactly 2 plaquettes, and all 48 link-plaquette incidences in
+   forward orientation. (verified)
+2. **Bipartite adjacency.** The plaquette adjacency graph is bipartite
+   with color partition `6 vs 6`, verified by BFS 2-coloring.
+   (verified)
+3. **Trivial-sector Reference B recovery.** The trivial-sector
+   contribution `lambda = (0,0)` for all 12 plaquettes gives
+   `Z_singlet = c_(0,0)(6)^12 ≈ 2.76e6` and corresponding
+   `rho = delta_(0,0)`, yielding `P_trivial(6) = 0.4225` in exact
+   agreement with the existing Reference B. (verified)
 
-The theorem's STATUS is `retained_bounded` because it carries a
-quantitative bound: `P_cube(6) >= P_trivial(6) = 0.4225`, with the
-non-trivial sectors expected to lift `P_cube` toward the bridge-support
-upper bound `0.5935`.
+The full `rho_(p,q)(6)` and any quantitative bound of the form
+`P_cube(6) >= P_trivial(6)` is **explicitly out of scope** for this
+narrowed note. Those claims depend on explicit topological intertwiner
+traces for non-trivial self-conjugate and bipartite-alternating
+sectors which this note does not derive.
 
 ## 3. Validation suite
 
@@ -216,33 +196,24 @@ The runner verifies:
 
 ## 4. Honest scope statement
 
-### What this combined PR establishes
+### What this narrowed note establishes (in scope)
 
-- **Cube geometry encoder** (correct, exhaustively verified)
-- **Link-orientation analysis** (all forward at L=2 PBC, verified)
-- **Bipartite plaquette graph** (NEW finding, opens additional valid configurations)
-- **Trivial-sector recovery** of Reference B (`P = 0.4225`) from
-  framework-internal computation, no structural input choice
-- **Explicit closure path**: identifies WHICH topological traces need
-  computing for the full `rho_(p,q)(6)`
+- **PBC cube geometry** (12 unique unoriented plaquettes, 24 directed
+  links, each link in exactly 2 plaquettes, all 48 incidences forward;
+  exhaustively verified)
+- **Bipartite plaquette adjacency** (color partition 6:6, BFS-verified)
+- **Trivial-sector Reference B recovery** (`P_trivial(6) = 0.4225`)
+  from framework-internal cube character expansion, matching the
+  existing Reference B without any structural input choice
 
-### What this combined PR does NOT establish
+### What this narrowed note does NOT establish (out of scope)
 
+- **Quantitative bound `P_cube(6) >= P_trivial(6)`** — explicitly
+  dropped per auditor `scope_too_broad` verdict.
 - **Full `rho_(p,q)(6)`** for non-trivial irreps (requires explicit
-  Wigner intertwiner traces; the originally-planned PR 2 work)
-- **Quantitative bypass of the no-go** (`P_trivial = 0.4225` is far
-  from the bridge-support upper bound `0.5935`; gap `0.171 >> epsilon_witness ≈ 3e-4`)
-- **Promotion of the parent gauge_scalar_temporal_completion** beyond
-  PR #484's `retained_bounded` status
-
-### Honest path
-
-This PR achieves **HONEST PATH A**: real structural progress (cube
-geometry, bipartite finding, trivial-sector recovery) but does not
-close the no-go quantitatively. The full closure path is now better
-structured than before (explicit intertwiner traces are the named
-remaining computation), but completing them is a substantial
-implementation task not finished in this combined PR.
+  Wigner intertwiner traces; deferred).
+- **Quantitative bypass of any no-go** or **promotion of any parent
+  claim** — none asserted here.
 
 ## 5. Comparison to existing references
 
@@ -273,16 +244,15 @@ deps:
   - gauge_scalar_bridge_kz_external_lift_theorem_note_2026-05-03
   - gauge_scalar_bridge_3plus1_native_lower_bound_staging_note_2026-05-03
 verdict_rationale_template: |
-  Combined deliverable of the planned 5-PR engine roadmap per user
-  direction. Cube geometry encoder + link-orientation analysis +
-  bipartite plaquette graph (new finding) + trivial-sector Perron
-  recovery (P_trivial = 0.4225 from cube character expansion, matches
-  existing Reference B). Honest about gap: non-trivial sector
-  contributions to rho_(p,q)(6) require explicit Wigner intertwiner
-  traces (originally PR 2, deferred). Does NOT close the no-go
-  quantitatively (gap from upper bound 0.171 >> epsilon_witness 3e-4).
-  Honest Path A: real structural progress, full closure deferred.
-  Status retained_bounded with bound P_cube(6) >= 0.4225.
+  Narrowed per auditor `scope_too_broad` verdict to exactly the three
+  in-scope items: (i) L_s=2 PBC spatial cube geometry (12 plaquettes,
+  24 directed links, all 48 incidences forward); (ii) bipartite
+  plaquette adjacency (color partition 6:6, BFS-verified); (iii)
+  trivial-sector Reference B recovery (rho = delta_(0,0) arises
+  naturally from the cube character expansion and yields P_trivial(6)
+  = 0.4225, matching the existing Reference B). The quantitative
+  bound `P_cube(6) >= P_trivial(6)` and non-trivial-sector rho_(p,q)
+  contributions are out of scope for this narrowed note.
 ```
 
 ## 7. Cross-references

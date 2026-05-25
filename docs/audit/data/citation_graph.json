@@ -17369,10 +17369,6 @@
       "to": "source_driven_field_recovery_sweep_note"
     },
     {
-      "from": "mirror_2d_gravity_law_note",
-      "to": "mirror_program_synthesis"
-    },
-    {
       "from": "mirror_chokepoint_note",
       "to": "mirror_chokepoint_boundary_fit_note"
     },
@@ -22198,15 +22194,15 @@
     },
     {
       "from": "rconn_derived_note",
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
+    },
+    {
+      "from": "rconn_derived_note",
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
     {
       "from": "rconn_derived_note",
       "to": "yukawa_color_projection_theorem"
-    },
-    {
-      "from": "rconn_derived_note",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
       "from": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
@@ -53995,15 +53991,15 @@
     },
     "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": {
       "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
         "yt_ward_identity_derivation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "be7aa24ac3ce6aa0b50afb14e16b6804eb15b36cf8f7d42520e3eab46212db79",
+      "note_hash": "1c52b0fa35564689d1275ca312f378a7eae310c1b4e0184865ac819b6650d0ea",
       "path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
       "runner_path": null,
       "title": "Off-Surface Same-1PI Pinning Theorem for the Two-Ward `g_bare` Route"
@@ -55711,7 +55707,7 @@
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f3b8d3b014c311cc53527b601335c02504499a064d62810f3b121bc3dbfc384b",
+      "note_hash": "c614a038f611c641085ca73fb5eaa4672252e463e5117fe56f354a4a9bd3e57d",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem"
@@ -60246,7 +60242,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "df01e10a7da8d460370614fa4e90076ed4a815ca3abe25676963d98140b4deba",
+      "note_hash": "0d7030e4bb2180e1fc27cd6c8a462e9930a1d3d9dc6190421d97c29dc5137c08",
       "path": "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
       "runner_path": "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
       "title": "Koide AM-GM Result Conditional on a Fixed Frobenius Normalization"
@@ -60536,12 +60532,12 @@
     },
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19": {
       "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "000f3b45c88593ca33ffe63acc77f8bd11fa21754344ed98ad1b9d8a18f0746c",
+      "note_hash": "a4a1043bb2270a10bd91aca70256ce68fcbf39d8eeb3c1a603e97831e607df1a",
       "path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_moment_ratio_uniformity_theorem.py",
       "title": "Moment-Ratio Uniformity (MRU) on Cl(d)/Z_d \u2014 conditional support note"
@@ -60830,7 +60826,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "787e7d0e6747191d6f4c8946e8dc222488aaee35dc63c833674ce23c4c01cb54",
+      "note_hash": "691e119efa3b4a28d2ad87811df46c2997c1a6c5d61401cd887651437ee319e8",
       "path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_koide_q_delta_linking_relation.py",
       "title": "Koide `Q` \u2194 `\u03b4` Linking Relation: Partial Closure and Named Residual Postulate"
@@ -64288,13 +64284,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "mirror_program_synthesis"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/mirror_born_audit.py"
       ],
-      "note_hash": "81b066f09d0604239005d31648e20dccab294bfe62a0c05edc295a26bddcc7ce",
+      "note_hash": "a043e02b415db149daafd1d8d517e4bfef21f0056dfded963b11f24997a9582e",
       "path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Gravity-Law Cleanup Note"
@@ -68353,9 +68347,7 @@
         "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
         "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06"
       ],
-      "helper_runner_paths": [
-        "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py"
-      ],
+      "helper_runner_paths": [],
       "note_hash": "9276acadc79421e73428a803491d30eb5d5a8e4caafe6bdafe06ca4a9fac492d",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
@@ -68370,9 +68362,7 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
         "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
       ],
-      "helper_runner_paths": [
-        "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py"
-      ],
+      "helper_runner_paths": [],
       "note_hash": "5e8e67a016ec5fae3d60fb6c8e2ae013e81dcf12827d48c2f5b71b10b3f87959",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
@@ -73622,20 +73612,20 @@
     "rconn_derived_note": {
       "claim_id": "rconn_derived_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (conditional on admitted premise (M))",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "yukawa_color_projection_theorem",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
+        "yukawa_color_projection_theorem"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "1afdba960c9ac0063796c197510ce4cb798defd2c01152df4faa491894bdb278",
+      "note_hash": "c4c44671aea333635999bbcb333209c60851630aad23371df5e116cb89d47ded",
       "path": "docs/RCONN_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_color_projection_mc.py",
-      "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate"
+      "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate (conditional on admitted matching rule (M))"
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
@@ -77819,7 +77809,7 @@
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "246d5640038b68d5ccbe4f672d1d72eb4276c53ac66c8038ac7ab298172c8fa1",
+      "note_hash": "12eddda0eff83a56174db5586a583737ffed6db2a6514b37867ecfe28c759d8d",
       "path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
       "title": "SU(3) Tensor-Network Engine + L_s=2 Cube Perron Solve (Combined PR)"
@@ -77851,7 +77841,7 @@
         "cl3_color_automorphism_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "56041908d59f86837419329de8a6f7f5f62fdd394616247c03ca831c2de32071",
+      "note_hash": "54372b216bbcf8fc0528b8150c746e927ac23f6695da2d5a6b5403c55280a7cb",
       "path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/su3_dabc_symmetric_check.py",
       "title": "SU(3) Symmetric Structure Constants d^{abc} from Anticommutator"
@@ -81701,7 +81691,7 @@
       "helper_runner_paths": [
         "scripts/frontier_wilson_two_body_open.py"
       ],
-      "note_hash": "9435a6f423055edba1e5a5937cbbd5ed046e8e5a0057e52c99d076fbcd840f71",
+      "note_hash": "73bc79ddfaab8f348a9ba67835fa18f410bc4b9c65a2918d7755f2bd33051d4c",
       "path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
       "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
       "title": "Wilson `mu^2` Distance Sweep Note"
@@ -82913,9 +82903,9 @@
     },
     "yt_ew_color_projection_theorem": {
       "claim_id": "yt_ew_color_projection_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "bounded EW-normalization-lane support theorem.",
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "ew_current_matching_rule_open_gate_note_2026-05-03"
@@ -82923,7 +82913,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "e3ecee12b787a29e8cb12a3efb9c7d327dccc1314b1e9f5b55ddd91477d2bd5c",
+      "note_hash": "77da6f51bc39f1ee4bdae464dbd255c3cc1c923f6d060bb8f4ec24a4ccd00d2b",
       "path": "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "Color-Singlet Projection Theorem for EW Couplings"
@@ -84747,6 +84737,7 @@
     "mesoscopic_surrogate_threshold_2d_note",
     "minimal_axioms",
     "minimal_axioms_2026-04-11",
+    "mirror_2d_gravity_law_note",
     "mirror_2d_operator_cauchy_note_2026-05-10",
     "mirror_2d_validation_note",
     "mirror_chokepoint_boundary_fit_note",
@@ -85094,27 +85085,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 571,
+      "bounded_theorem": 574,
       "decoration": 1,
       "meta": 191,
       "no_go": 70,
-      "none": 1468,
+      "none": 1465,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 998,
+      "bounded_theorem": 1001,
       "decoration": 1,
       "meta": 191,
       "no_go": 173,
-      "none": 435,
+      "none": 434,
       "open_gate": 126,
-      "positive_theorem": 598
+      "positive_theorem": 596
     },
-    "edge_count": 9741,
+    "edge_count": 9740,
     "leaf_count": 778,
     "node_count": 2522,
-    "root_count": 832,
+    "root_count": 833,
     "runners_with_path": 2083
   }
 }

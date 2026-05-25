@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 450 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1266 |
+| unaudited | 1265 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 730 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 81 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1495 |
+| `unaudited` | 1494 |
 
 | claim_type | count |
 |---|---:|
@@ -904,6 +904,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9005,6 +9006,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the fiber parent=(c_cell,delta), C(parent)=c_cell is constant while p_Schur(parent)=c_cell+delta and p_event(parent)=c_cell, so p_Schur=p_event iff delta=0.  _(class `A`)_
 - **chain closes:** True — The chain closes on its own scoped terms as an algebraic counterexample to carrier-only promotion. The runner confirms the nontrivial kernel, same carrier/different scalar pair, impossibility of carrier-only recovery on the fiber, equivalence of equality to delta=0, and normalization sensitivity.
 - **rationale:** The audited claim is a negative carrier-only no-go, not a positive Planck derivation. Within the supplied packet, the obstruction closes algebraically: two parents with identical carrier data can have different Schur scalars, so no function of carrier data alone can force the Schur/event equality without the extra no-hidden-character law delta=0. The Planck-normalization discussion is used only to show non-harmlessness of the hidden scalar if promoted as a coefficient, not to derive a physical coefficient from hidden assumptions.
+- **auditor confidence:** high
+
+### `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`
+
+- **Note:** [`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`](../../docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional on a metric-compatible Clifford coframe response on P_A H_cell, the rank-four active block realizes the irreducible complex Cl_4 module, equivalently two CAR modes, yielding c_Widom=c_cell=1/4; the claimed G_Newton,lat=1 and a/l_P=1 also rely on an unprovided source-unit normalization theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T185237Z-5f0fd5d2-planck_target3_clifford_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assume the active primitive boundary response is the metric-compatible Clifford coframe response, D:E_C -> End(K) with D(v)^2=||v||^2 I_K, so polarization gives the Cl_4 relations on the rank-four block.  _(class `A`)_
+- **chain closes:** False — The Clifford-to-CAR portion closes algebraically under the stated response premise. The full package conclusion does not close from this restricted packet because the response premise and the source-unit normalization theorem are imported rather than derived or provided.
+- **rationale:** The runner genuinely constructs Cl_4 generators, checks anticommutators, irreducibility, CAR reconstruction, and the 1/4 arithmetic, so the conditional algebraic bridge is well supported. However, the metric-compatible coframe response is explicitly a bridge premise, and the note also uses a source-unit normalization support theorem that is not included as a cited authority. Under the rubric, an open premise or unprovided normalization authority prevents audited_clean even though the internal algebra is consistent.
+- **open / conditional deps cited:**
+  - `PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md`
 - **auditor confidence:** high
 
 ### `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`

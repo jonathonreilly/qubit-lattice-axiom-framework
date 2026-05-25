@@ -23973,6 +23973,10 @@
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
@@ -76844,6 +76848,20 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem"
     },
+    "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": {
+      "claim_id": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e60868ac13a46b18d4578e93142a8fcf148f9fcf534421497e9ea41872e5efea",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
+      "title": "Staggered-Dirac Substep 1 \u2014 Statistics-Agnostic: Grassmann is Compatible, Not Forced"
+    },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -85028,7 +85046,7 @@
       "bounded_theorem": 566,
       "decoration": 1,
       "meta": 191,
-      "no_go": 69,
+      "no_go": 70,
       "none": 1470,
       "open_gate": 48,
       "positive_theorem": 173
@@ -85037,15 +85055,15 @@
       "bounded_theorem": 993,
       "decoration": 1,
       "meta": 191,
-      "no_go": 172,
+      "no_go": 173,
       "none": 435,
       "open_gate": 126,
       "positive_theorem": 600
     },
-    "edge_count": 9738,
-    "leaf_count": 773,
-    "node_count": 2518,
+    "edge_count": 9739,
+    "leaf_count": 774,
+    "node_count": 2519,
     "root_count": 829,
-    "runners_with_path": 2079
+    "runners_with_path": 2080
   }
 }

@@ -20736,6 +20736,18 @@
       "dominant_class": null,
       "runner": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py"
     },
+    "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py"
+    },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
       "assert_count": 1,
       "counts": {
@@ -45887,6 +45899,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py": {
+      "assert_count": 2,
+      "claims": [
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_staggered_dirac_substep4_positive_ratchet.py": {
       "assert_count": 1,
       "claims": [
@@ -54632,12 +54659,12 @@
     "dominant_class_distribution": {
       "A": 210,
       "B": 272,
-      "C": 745,
+      "C": 746,
       "D": 299,
       "none": 434
     },
-    "runners_classified": 1960,
-    "runners_with_C": 964,
-    "runners_with_D": 569
+    "runners_classified": 1961,
+    "runners_with_C": 965,
+    "runners_with_D": 570
   }
 }

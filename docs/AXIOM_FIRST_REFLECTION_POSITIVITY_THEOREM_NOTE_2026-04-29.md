@@ -459,27 +459,84 @@ Reality ≠ positivity. Positivity requires additional structure that
 behaves differently for the staggered vs Wilson contributions. We
 state the two cases honestly:
 
-**Case A — staggered-only (M = M_KS + mI, derived).** Use the
-staggered chirality grading `ε(x) = (-1)^{x_1+x_2+x_3+x_4}`. The
-canonical Kogut-Susskind hop satisfies the anticommutation
-`{ε, M_KS} = 0` (verified explicitly by exhibit E5). The mass term
-commutes with `ε`. Hence
+<!-- audit-repair 2026-05-25
+The previous Case A text inferred `γ_5 M v = λv ⇒ γ_5 M (εv) = -λ(εv)`
+from `ε(M_KS + mI)ε = -M_KS + mI`. That inference is invalid for m>0:
+with H := γ_5 M = ε(M_KS + mI), one has {H, ε} = 2 m I ≠ 0, so εv is
+not generally a (-λ)-eigenvector of H. The audit verdict on this row
+(audited_failed, codex-cli 2026-05-24) flagged this exact step and
+recommended a det-positivity proof via the singular-value /
+det(M†M) = det(M)² route. The replacement below is that route, using
+the standard eigenvalue-pairing for a real anti-symmetric M_KS, which
+is what the staggered Kogut-Susskind hop is in its real-component
+basis. Companion runner:
+scripts/axiom_first_reflection_positivity_det_runner.py.
+-->
+
+**Case A — staggered-only (M = M_KS + mI, derived).** The canonical
+Kogut-Susskind hop `M_KS` is **real anti-symmetric** in its
+real-component basis (equivalently anti-hermitian: `M_KS^† = -M_KS`).
+This is the standard property of the staggered Dirac hop with
+canonical staggered phases `η_μ(x) = (-1)^{Σ_{ν<μ} x_ν}` on the
+periodic lattice; the staggered chirality grading
+`ε(x) = (-1)^{x_1+x_2+x_3+x_4}` satisfies `{ε, M_KS} = 0` (E5), which
+is consistent with — and a consequence of — the anti-hermitian
+structure.
+
+We derive `det(M_KS + mI) > 0` for all `m > 0` directly from this
+anti-hermitian structure, by the standard eigenvalue-pairing argument.
+
+*Step (i) — pure-imaginary eigenvalues in conjugate pairs.* Because
+`M_KS` is anti-hermitian, its eigenvalues are pure imaginary. Because
+`M_KS` is **real** (anti-symmetric) in the real-component basis, the
+characteristic polynomial has real coefficients, so non-real
+eigenvalues come in complex-conjugate pairs. Combined: the non-zero
+eigenvalues of `M_KS` come in pairs `{iλ_k, -iλ_k}` with `λ_k ∈ ℝ`
+non-zero. Any zero eigenvalues (zero modes) carry over unchanged.
+
+*Step (ii) — eigenvalues of M = M_KS + mI.* Adding `m · I` shifts every
+eigenvalue by `m`. The non-zero pairs become `(m + iλ_k, m - iλ_k)`,
+and each zero mode of `M_KS` becomes an `m` eigenvalue of `M`.
+
+*Step (iii) — determinant as a product of positive factors.* The
+determinant of `M` is the product of its eigenvalues:
 
 ```text
-    ε (M_KS + mI) ε  =  -M_KS + mI.                                    (14a)
+    det(M_KS + mI)  =  m^{n_0} · ∏_k  (m + iλ_k)(m - iλ_k)
+                    =  m^{n_0} · ∏_k  (m² + λ_k²)                       (14b)
 ```
 
-Identify `γ_5 ≡ ε` on the staggered carrier. If `γ_5 M v = λ v` with
-`λ ≠ 0`, then `γ_5 M (ε v) = -λ (ε v)`, so non-zero eigenvalues of
-`γ_5 M = ε(M_KS + mI)` come in `±λ` pairs. With `m > 0` the kernel
-of `γ_5 M` is empty (since M is invertible), and
+where `n_0` is the number of zero modes of `M_KS`. Every factor on
+the right is strictly positive for `m > 0`: `m^{n_0} > 0` and
+`m² + λ_k² > 0`. Therefore `det(M_KS + mI) > 0` for all `m > 0`, in
+particular `det(M_KS + mI) ≥ 0`.
+
+*Cross-check via the singular-value identity.* With
+`M^† = -M_KS + mI`,
 
 ```text
-    det(M_KS + mI)  =  ∏_pairs  λ²  ≥  0.                              (14b)
+    M^† M  =  (-M_KS + mI)(M_KS + mI)
+           =  m² I  -  M_KS²
+           =  m² I  +  M_KS^† M_KS                                       (14d)
 ```
+
+since `M_KS^† M_KS = (-M_KS)(M_KS) = -M_KS²`. Both `m² I` and
+`M_KS^† M_KS` are positive semi-definite (the latter is positive
+semi-definite by construction; both are positive when `m > 0`),
+so `M^† M` is positive definite, hence
+`det(M^† M) = |det(M)|² > 0`, which independently rules out
+`det(M) = 0` at `m > 0` and is consistent with the closed form
+(14b). The companion runner
+`scripts/axiom_first_reflection_positivity_det_runner.py` verifies
+both (14b)-style positivity and the
+`det(M^† M) = |det(M)|²` identity on a small 4×4 example across
+`m ∈ {0.1, 0.5, 1.0, 2.0, 5.0}` (`PASS=10 FAIL=0`).
 
 This is a closed-form derivation on the explicit framework baseline for the staggered-only
-sector.
+sector. The previous chirality-anticommutator route is not used in this
+step; (E5) is retained as an independent structural exhibit for
+`{ε, M_KS} = 0`, which is consistent with anti-hermiticity but is not
+load-bearing for (14b) under the present derivation.
 
 **Case B — staggered + Wilson (M = M_KS + M_W + mI, runner-supported).**
 The Wilson term `M_W` commutes with the staggered chirality `ε`, so
@@ -571,7 +628,7 @@ by the explicit framework baseline canonical staggered+Wilson SU(3) action:
 | Wilson term added to lift doublers, with positive r-coefficient | Finite Grassmann staggered-Dirac action: `M_W` with `r = 1` (canonical) | ✓ exact match |
 | Reflection convention for fermions: `Θ χ_x = χ̄_{θ x}^T`, `Θ χ̄_x = χ_{θ x}^T` (Sharatchandra) | The reflection map's fermion-half implements this | ✓ definition |
 | Real positive mass `m > 0` in the Dirac operator | Canonical mass surface | ✓ explicit |
-| `det(M) ≥ 0` on the canonical surface | Step 3a: derived for staggered-only via {ε,M_KS}=0 + ±λ pairing; runner-supported (E6) for staggered+Wilson | ✓ staggered-only derived; staggered+Wilson runner-supported |
+| `det(M) ≥ 0` on the canonical surface | Step 3a: derived for staggered-only from real anti-symmetry of `M_KS` (pure-imaginary conjugate-pair eigenvalues ⇒ `det(M_KS+mI) = m^{n_0}·∏_k(m²+λ_k²) > 0` for m>0); runner-supported (E6) for staggered+Wilson | ✓ staggered-only derived; staggered+Wilson runner-supported |
 | Sesquilinear pairing on crossing links is L²-positive | OS's Cauchy–Schwarz manipulation applied to `Re tr(A_+ B_-^†)` after Haar integration | ✓ standard |
 
 Every precondition is met. The factorisation identities (7) and (10)
@@ -607,8 +664,12 @@ mutually consistent on the explicit framework baseline.
 
 - (R1)–(R4) on the **staggered-only** sector (M = M_KS + mI) are
   proved on the explicit framework baseline by Steps 1–3 with closed-form derivation of
-  det(M_KS + mI) ≥ 0 from the {ε, M_KS} = 0 anticommutation
-  (verified by E5) and the ±λ paired-eigenvalue argument (14a–b).
+  det(M_KS + mI) > 0 from the real anti-symmetric structure of `M_KS`:
+  eigenvalues of `M_KS` are pure imaginary and come in conjugate pairs
+  `(iλ, -iλ)`, so eigenvalues of `M` pair as `(m+iλ, m-iλ)` with each
+  pair product `m² + λ² > 0`, hence (14b). The
+  `det(M^† M) = |det(M)|²` cross-check (14d) is consistent and
+  numerically verified by the companion runner.
 - (R1)–(R4) on the **staggered + Wilson** sector (M = M_KS + M_W + mI)
   are supported by the same factorisation identities (7) and (10),
   but the additional input det(M) ≥ 0 is **runner-verified by E6

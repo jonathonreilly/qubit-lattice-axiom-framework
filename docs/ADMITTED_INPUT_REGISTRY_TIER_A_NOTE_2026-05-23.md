@@ -24,8 +24,11 @@ needs a yet-to-be-found mechanism). This is deliberately **separate** from:
 Survey basis (live ledger, 2026-05-23): of 720 retained-grade rows, 703 have
 all-retained dependencies; only 6 non-retained inputs touch retained rows
 directly. The genuine admitted inputs gating the *bounded* corpus number ~118;
-curated to those that are irreducible (no-go portfolio), Tier A is **six** items
-below, of which **four** are derivation-targets and **two** are conventions.
+curated to those that are irreducible (no-go portfolio) **and not vacuous**, the
+genuine admitted inputs are the **four** derivation-targets below (P1, AC_φλ, S,
+θ). Two further rows (Y₀, g₀) are **vacuous rescaling conventions** — listed for
+completeness but, like the AC_φλ naming, explicitly **not** counted as admitted
+inputs (see "Rigor-pass refinement" below).
 
 ## Tier A-1 — Admitted derivation-targets (irreducible; have no-go portfolios)
 
@@ -33,7 +36,7 @@ below, of which **four** are derivation-targets and **two** are conventions.
 |---|---|---|---|
 | **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source, tomita_gibbs_modular, structural_reframing}` (6) |
 | **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
-| **S** | the single dimensionful input fixing physical units (`a` ↔ Planck/Sommer scale) | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
+| **S** | one **empirical scale-setting** number (match a single observable to fix `a`); the unit *choice* itself (e.g. meters vs Planck units) is vacuous and **not** an input | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go` (1); also unsolved in the Standard Model |
 
 Notes:
@@ -56,20 +59,48 @@ Notes:
   attempts (`unaudited`, not retained no-gos, listed as *attempts*) target the
   **pattern**, not the names. Net: AC_φλ is *not* a discrete 6-way labeling
   choice; the irreducible content is "the δ-pattern + the species bridge."
-- **S** is the only Tier-A input of the *same type* as a Standard-Model
-  dimensionful parameter (a unit-setting number).
+- **S** — the *unit choice* is vacuous (a pure convention, like the AC_φλ
+  naming and like choosing meters vs Planck units); the genuine admission is the
+  **scale-setting**: matching one observable to experiment to fix the physical
+  value of `a`. That is a single empirical number, the *same type* as a
+  Standard-Model dimensionful parameter — not the vacuous unit choice.
 - **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
   problem); not a framework-specific deficit.
 
-## Tier A-2 — Conventions (NOT derivation-targets; flagged for reclassification)
+## Conventions — NOT admitted inputs (vacuous rescaling freedoms)
 
-| id | statement | leverage | basis |
+These two are **vacuous rescaling conventions** with zero physical content
+(exactly parallel to the AC_φλ *naming*): a convention is not an input. They are
+listed only so the survey is complete; they are **excluded from the
+admitted-input count**.
+
+| id | statement | leverage | why vacuous |
 |---|---|---|---|
-| **Y₀** | absolute hypercharge normalization (the `α=1/3` step) | ~18 | not a no-go; the `(2,3)+(2,1)` *structure* is retained-derived (#1755), and `koide_y_substrate_anomaly_forcing` (retained_bounded) shows anomaly fixes *ratios*, leaving the overall normalization a free convention |
-| **g₀** | bare coupling `g_bare = 1` | ~8 | not a no-go; `beta_gbare_rescaling_abstract_identity` (retained) shows it is a *rescaling convention* (gauge choice), not a number to derive |
+| **Y₀** | absolute hypercharge normalization (the `α=1/3` step) | ~18 | the `(2,3)+(2,1)` *structure* and the hypercharge *ratios* are retained-derived (#1755, `koide_y_substrate_anomaly_forcing`); the overall `Y`-scale is a rescaling `Y ↔ g'` that leaves physics invariant — a gauge/normalization choice, not a number |
+| **g₀** | bare coupling `g_bare = 1` | ~8 | `beta_gbare_rescaling_abstract_identity` (retained) shows `g_bare` is rescaling-invariant (`g ↔ β`) — a gauge choice, not a number to derive |
 
-These two should be **reclassified as conventions**, not carried as
-"derivation-targets" — admitting a convention costs nothing physical.
+**They are distinct, not mergeable:** Y₀ is the U(1) hypercharge normalization,
+g₀ is the SU(3) color bare coupling (`β = 2N_c/g_bare²`, N_c=3) — different gauge
+factors. (An earlier draft suggested merging them; that was wrong. The correct
+move is to drop *both* as vacuous conventions, not merge them.)
+
+## Rigor-pass refinement (2026-05-23)
+
+Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
+- **P1, θ, AC_φλ:** stand as genuine admitted inputs (P1 principle-grade; θ
+  shared with the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
+- **S:** the *unit choice* is vacuous; the genuine admission is the one empirical
+  *scale-setting* number — restated above.
+- **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the admitted-input
+  count (a convention is not an input, just as a name is not).
+- **θ rigor check:** verified NOT derivable from the retained real/anti-Hermitian
+  `D` structure — `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go`
+  (retained_no_go) explicitly shows the real/RP-half structure cannot forbid the
+  CP-odd term, so θ=0 remains a genuine admission (shared with the SM).
+
+Net genuine admitted inputs: **four** — and stratified by character, exactly one
+(AC_φλ) is framework-specific physics; P1 is a mild principle, θ is an
+SM-shared problem, S is a single empirical scale number.
 
 ## Proposed propagation wiring (recommendation for the audit lane — NOT executed here)
 

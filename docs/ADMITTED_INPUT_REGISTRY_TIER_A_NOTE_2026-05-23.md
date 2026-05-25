@@ -26,16 +26,32 @@ Survey basis (live ledger, 2026-05-23): of 720 retained-grade rows, 703 have
 all-retained dependencies; only 6 non-retained inputs touch retained rows
 directly. The genuine admitted inputs gating the *bounded* corpus number ~118;
 curated to those that are irreducible (no-go portfolio) **and not vacuous**, the
-genuine admitted inputs are the **four** derivation-targets below (P1, AC_φλ, S,
-θ). Two further rows (Y₀, g₀) are **vacuous rescaling conventions** — listed for
-completeness but, like the AC_φλ naming, explicitly **not** counted as admitted
-inputs (see "Rigor-pass refinement" below).
+genuine admitted inputs are the **five** derivation-targets below (P1, AC_φλ,
+FS, S, θ). Two further rows (Y₀, g₀) are **vacuous rescaling conventions** —
+listed for completeness but, like the AC_φλ naming, explicitly **not** counted
+as admitted inputs (see "Rigor-pass refinement" below).
+
+**Note (2026-05-25): the staggered-Dirac gate carries TWO distinct residuals.**
+The single critical gate `staggered_dirac_realization_gate_note_2026-05-03`
+(932 transitive descendants — the entire matter sector) admits two independent
+physical inputs, not one: (a) **FS** — the fermionic-**statistics** selection
+(substep 1: is the matter sector Grassmann/CAR vs the hard-core boson the qubit
+substrate equally admits — see new row), the *most upstream* residual, and (b)
+**AC_φλ** — the **flavor/species** pattern (substep 4). They are genuinely
+different physics (statistics ≠ flavor) and are listed as separate rows below,
+but they share **one** machine premise node (the gate's canonical_id), so this
+adds **no** new node to `tier_a_admissions.json`; folding FS into the machine
+registry's accounting is a recommendation for the audit lane. Substeps 2
+(Kawamoto-Smit kinetic) and 3 (BZ-corner 1+1+3+3) are *conditionally forced*
+given FS + the retained per-site dim-2 readout, so they are **not** separate
+admissions.
 
 ## Tier A-1 — Admitted derivation-targets (irreducible; have no-go portfolios)
 
 | id | statement | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
 | **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source_derivatives, tomita_gibbs_modular, structural_reframing}_..._2026-05-21` (6) |
+| **FS** | the **fermionic-statistics selection** of the staggered-Dirac matter sector (substep 1): A1+A2 (qubit-per-site Cl(3) on Z³) **admit** Grassmann/CAR statistics but do **not** force it — the *hard-core boson* is the equal-footing alternative (same operator algebra, JW is a frame change; per-site dim 2 excludes only the *free* boson; the fermionic frame is non-local in 3D). A statistics selection, distinct from FS's sibling AC_φλ. | pervasive (matter sector; shares the staggered-Dirac gate node, 932 transitive descendants) | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` (1) |
 | **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **S** | one **empirical scale-setting** number (match a single observable to fix `a`); the unit *choice* itself (e.g. meters vs Planck units) is vacuous and **not** an input | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
@@ -45,6 +61,20 @@ Notes:
   an extensive observable; its no-go portfolio shows additivity⟺log is circular,
   so it is a candidate to be **admitted as a stated principle** (not necessarily
   ever "derived").
+- **FS — fermionic statistics is admitted, not forced (substep 1).** The
+  retained narrows close only half-truths: the dimensional narrow excludes the
+  *free* boson (∞-dim per site), the JW narrow *constructs* a fermionic frame.
+  But the qubit-ladder algebra and the JW-fermion algebra are the **same** full
+  matrix algebra `M_{2^N}` (JW is an invertible change of generators), so
+  "fermion" vs "hard-core boson" is a *frame choice* A1+A2 cannot make; per-site
+  dim 2 holds for both; and the fermionic frame is non-local in 3D. So the
+  Grassmann content is an admitted **statistics selection**, structurally the
+  same *kind* of framework-specific physical input as AC_φλ but more upstream
+  (it gates the existence of the fermion fields, hence the whole matter sector).
+  The unaudited broad `staggered_dirac_grassmann_forcing_theorem` overclaims a
+  forcing on a Grassmann-vs-*free*-boson false binary; FS records the honest
+  residual. The named no-go is
+  `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`.
 - **AC_φλ — de-named (the labeling itself is not an input).** The gate states
   this as a labeling bijection `π:{c₁,c₂,c₃}→L₃`, but a bijection between two
   *bare* 3-element sets is pure relabeling with **zero physical content** — the
@@ -89,8 +119,10 @@ correct move is to drop *both* as vacuous conventions, not merge them.)
 
 Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 
-- **P1, θ, AC_φλ:** stand as genuine admitted inputs (P1 principle-grade; θ
-  shared with the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
+- **P1, θ, AC_φλ, FS:** stand as genuine admitted inputs (P1 principle-grade; θ
+  shared with the SM; AC_φλ = δ-pattern + species bridge, naming excluded; FS =
+  the fermionic-statistics selection of the matter sector, substep 1 of the
+  staggered-Dirac gate, naming/frame-choice excluded — see the FS row and note).
 - **S:** the *unit choice* is vacuous; the genuine admission is the one
   empirical *scale-setting* number — restated above.
 - **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the
@@ -101,9 +133,13 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   explicitly shows the real/RP-half structure cannot forbid the CP-odd term, so
   θ=0 remains a genuine admission (shared with the SM).
 
-Net genuine admitted inputs: **four** — and stratified by character, exactly
-one (AC_φλ) is framework-specific physics; P1 is a mild principle, θ is an
-SM-shared problem, S is a single empirical scale number.
+Net genuine admitted inputs: **five** — and stratified by character, exactly
+**two** (AC_φλ and FS) are framework-specific physics, both residuals of the one
+critical staggered-Dirac gate (FS = statistics, substep 1; AC_φλ = flavor,
+substep 4); P1 is a mild principle, θ is an SM-shared problem, S is a single
+empirical scale number. (Machine-registry note: FS shares the gate's existing
+canonical_id, so this is a recommendation to update the *accounting* in
+`tier_a_admissions.json`, not to add a premise node.)
 
 ## Propagation wiring (audit-lane sidecar)
 

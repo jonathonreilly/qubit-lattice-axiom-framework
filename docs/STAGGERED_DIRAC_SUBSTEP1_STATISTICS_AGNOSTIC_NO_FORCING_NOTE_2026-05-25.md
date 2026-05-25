@@ -168,18 +168,24 @@ matrices, each verified by the runner (`PASS=34 FAIL=0`):
 - Sets, promotes, or changes **no** row's effective status; proposes no edit to
   audit-lane-owned data.
 
-## 7. Registry implication (recommendation, not enacted)
+## 7. Registry implication (human index updated; machine file deferred)
 
-This identifies a genuine **admitted input** not yet in the Tier-A registry
-(`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`): the **fermionic-statistics
+This identifies a genuine **admitted input**: the **fermionic-statistics
 selection** of the staggered-Dirac matter sector (substep 1). It is the same
 *type* of admission as `AC_φλ` (substep-4 species identification) — a discrete,
 well-named, framework-specific physical choice with a no-go portfolio (this note)
-showing the pure-axiom route is closed. **Recommendation** (for the audit lane,
-not enacted here): consider listing a substep-1 "statistics selection" admission
-alongside `AC_φλ`, or recording that substeps 1 and 4 of the staggered-Dirac
-gate share a single "fermionic-realization admission". This note does **not**
-edit the registry or its data file; the classification is the audit lane's call.
+showing the pure-axiom route is closed — but **more upstream** (it gates the
+existence of the fermion fields, hence the whole matter sector: the gate has
+932 transitive descendants). The two are distinct physics (statistics ≠ flavor),
+so the staggered-Dirac gate carries **two** residuals, not one.
+
+The human-readable index `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+has been updated to record this as a fifth genuine admitted input (`FS`),
+flagged as a second residual of the same critical gate. Because `FS` shares the
+gate's existing canonical_id, **no** new machine premise node is created; folding
+`FS` into the accounting in the audit-lane-owned `tier_a_admissions.json` is left
+as a recommendation for the audit lane. This note edits **no** audit-lane-owned
+data file and changes no row's status.
 
 ## 8. Forbidden imports check / cross-references
 

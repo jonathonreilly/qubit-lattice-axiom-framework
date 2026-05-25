@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 158 |
-| **retained_bounded** | 455 |
+| **retained_bounded** | 456 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1242 |
+| unaudited | 1241 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 735 |
+| `audited_clean` | 736 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1471 |
+| `unaudited` | 1470 |
 
 | claim_type | count |
 |---|---:|
@@ -606,6 +606,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_parent_source_hidden_character_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9293,6 +9294,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md`
   - `GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`
   - `GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
+- **auditor confidence:** high
+
+### `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06`
+
+- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-window exact-rational certificate for the V=1 SU(3) single-plaquette J(beta): L annihilates through beta^96, the recurrence holds for N=2..99, no order <=2 degree <=30 ansatz survives, the first shortlex scan hit in r,d<=4 is r=3,d=2 matching L, and checked r=3 higher-degree kernels through d=12 are polynomial multiples.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T194339Z-c403bfee-plaquette_v1_picard_fuch-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At Taylor depth 100, the runner builds exact Bessel-determinant coefficients and verifies the finite matching systems: no r<=2,d<=30 kernel, a one-dimensional r=3,d=2 kernel matching L, and r=3,d=2..12 kernels of dimension d-1.  _(class `A`)_
+- **chain closes:** True — For the bounded scope, the chain closes by exact rational construction of the Taylor coefficients and exact rank/nullspace computations. The result does not require treating the external D-module or Koutschan literature as proving an all-order minimal-annihilator statement.
+- **rationale:** The provided runner source is not a print-only artifact: it constructs the Bessel-determinant Taylor series, builds matching matrices over exact Fractions, computes exact ranks, extracts the nullspace, and compares the primitive integer kernel to the published operator. The hard-coded operator coefficients are used for candidate verification and signature comparison, while the finite lower-order exclusions and minimal scan hit are computed from the generated coefficient sequence. The one-hop cited note dependencies are retained_bounded, and the audited conclusion is limited to the stated bounded finite windows.
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`

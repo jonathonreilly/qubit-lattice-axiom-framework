@@ -196903,24 +196903,46 @@
       "verdict_rationale": null
     },
     "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:45:35.128103+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "be9b2d9c265237827b61c68469414ed94591cc1bd475aae37e5bcd2ed62d2595",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T194339Z-c403bfee-plaquette_v1_picard_fuch-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded scope, the chain closes by exact rational construction of the Taylor coefficients and exact rank/nullspace computations. The result does not require treating the external D-module or Koutschan literature as proving an all-order minimal-annihilator statement.",
       "claim_id": "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite-window exact-rational certificate for the V=1 SU(3) single-plaquette J(beta): L annihilates through beta^96, the recurrence holds for N=2..99, no order <=2 degree <=30 ansatz survives, the first shortlex scan hit in r,d<=4 is r=3,d=2 matching L, and checked r=3 higher-degree kernels through d=12 are polynomial multiples.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:45:35.128103+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -196929,19 +196951,19 @@
         "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 2.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At Taylor depth 100, the runner builds exact Bessel-determinant coefficients and verifies the finite matching systems: no r<=2,d<=30 kernel, a one-dimensional r=3,d=2 kernel matching L, and r=3,d=2..12 kernels of dimension d-1.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5e8e67a016ec5fae3d60fb6c8e2ae013e81dcf12827d48c2f5b71b10b3f87959",
       "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers keep this as a bounded finite-window certificate, not an all-order minimal-annihilator theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -197002,16 +197024,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Extended (Koutschan-style) Minimality Note",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The provided runner source is not a print-only artifact: it constructs the Bessel-determinant Taylor series, builds matching matrices over exact Fractions, computes exact ranks, extracts the nullspace, and compares the primitive integer kernel to the published operator. The hard-coded operator coefficients are used for candidate verification and signature comparison, while the finite lower-order exclusions and minimal scan hit are computed from the generated coefficient sequence. The one-hop cited note dependencies are retained_bounded, and the audited conclusion is limited to the stated bounded finite windows."
     },
     "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": {
       "audit_date": "2026-05-24T17:20:32.978474+00:00",

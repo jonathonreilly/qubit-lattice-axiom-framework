@@ -33,6 +33,25 @@ primitives) is **not** closed by this note and the certificate does
 **Status authority:** independent audit lane only.
 **Script:** [`scripts/gate_b_farfield_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_farfield_harness.py) (PASS=4, all C-class)
 
+## Admitted bridge inputs
+
+This note's load-bearing claim is a **conditional numerical certificate
+over admitted bridge inputs**. The four admitted bridges, surfaced here
+at the headline per the audit verdict, are:
+
+- *source law:* `1/r` field perturbation from each test mass located at
+  the declared z-mass position
+- *propagation kernel:* `1/L^2` two-slit kernel with `h^2` measure
+- *valley-linear action:* `S(path) = L_path (1 - f_path)` with `L_path`
+  the bounded valley length and `f_path` the path-fraction-on-valley
+  score
+- *readout criterion:* z-centroid shift TOWARD the test mass plus a
+  linear `F ~ M` slope across `M = 1, 2, 3` at the declared z-rows
+
+None of these is derived from accepted primitives within this note. The
+certificate is conditional on these admitted bridge inputs; it does
+**not** propagate past them.
+
 ## Audit boundary (2026-05-10)
 
 The prior independent audit verdict on this row was `audited_conditional`. The

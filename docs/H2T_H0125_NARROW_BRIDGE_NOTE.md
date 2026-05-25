@@ -37,16 +37,18 @@ reaches `h = 0.125` cleanly and directly tests the weak-field observables.
 | `h` | Born `|I3|/P` | gravity sign | `F~M` | note |
 | --- | ---: | --- | ---: | --- |
 | `1.0` | `nan` | `AWAY` | n/a | too few `TOWARD` points |
-| `0.5` | `1.39e-15` | `AWAY` | n/a | too few `TOWARD` points |
-| `0.25` | `2.50e-15` | `AWAY` | n/a | too few `TOWARD` points |
-| `0.125` | `4.23e-15` | `AWAY` | n/a | too few `TOWARD` points |
+| `0.5` | `1.39e-15` | `TOWARD` | `0.49` | `F~M` short of the `\approx 1` bar |
+| `0.25` | `2.50e-15` | `TOWARD` | `0.50` | `F~M` short of the `\approx 1` bar |
+| `0.125` | `4.23e-15` | `TOWARD` | `0.50` | `F~M` short of the `\approx 1` bar |
 
 The narrowest safe reading from that replay is:
 
 - Born stays machine-clean where it is measurable
 - the reduced family reaches `h = 0.125`
-- the weak-field gravity lane does **not** recover on this family
-- there are not enough `TOWARD` points to form a retained `F~M` bridge
+- the weak-field gravity sign turns `TOWARD` for `h \leq 0.5` but the
+  fitted `F~M` exponent sits at about `0.50` rather than the Newtonian
+  `\approx 1` bar
+- this is not enough to form a retained `F~M` bridge on this family
 
 ### Bridge family
 
@@ -56,7 +58,7 @@ The larger fixed bridge family is now fully resolved on its focused
 - `h = 1.0`: Born `6.65e-16`, gravity `AWAY`, `F~M` too few `TOWARD` points
 - `h = 0.5`: Born `1.66e-15`, gravity `TOWARD`, `F~M = 0.50`
 - `h = 0.25`: Born `3.48e-15`, gravity `TOWARD`, `F~M = 0.50`
-- `h = 0.125`: Born `6.59e-15`, `k = 0` clean, gravity `TOWARD`,
+- `h = 0.125`: Born `6.18e-15`, `k = 0` clean, gravity `TOWARD`,
   `F~M = 0.50`
 
 That is still not a retained weak-field bridge to `F~M \approx 1`, even

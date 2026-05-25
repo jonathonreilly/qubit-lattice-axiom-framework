@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 154 |
-| **retained_bounded** | 417 |
+| **retained_bounded** | 418 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
 | unaudited | 1297 |
-| audit_in_progress | 1 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -51,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 686 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 687 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 50 |
@@ -123,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -353,6 +351,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4856,6 +4855,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Differentiating the retained implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).  _(class `A`)_
 - **chain closes:** True — The scoped theorem follows by algebraic differentiation and integration of retained inputs plus the susceptibility definitions. The explicit closed form for chi_L(beta) and beta=6 closure are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite NMAX=7, MODE_MAX=200 source-sector Perron reference solves for the two specified input rho choices, plus finite non-uniqueness evidence only for the three enumerated one-parameter rho families; no physical 3D residual environment rho or untruncated tensor-transfer solve is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T100420Z-fbc22059-gauge_vacuum_plaquette_t-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given an explicit diagonal input rho, construct T_src(6)=exp(3J) D_6^loc C_rho exp(3J), solve the finite Perron problem for rho=1 and rho=delta, and sweep three enumerated one-parameter rho families to show distinct P(6) values.  _(class `C`)_
+- **chain closes:** True — Within the stated finite packet, the runner genuinely computes Wilson coefficients by the Bessel-determinant sum, builds J and exp(3J), inserts the declared rho inputs, and performs finite eigensolves and rho-family sweeps. The missing physical 3D spatial Wilson environment is explicitly outside the audited scope.
+- **rationale:** The load-bearing reference-solve numbers are computed from the finite local coefficient packet and SU(3) recurrence, not read from prior notes or tuned to the canonical comparator. The comparator appears only in a hostile-review diagnostic, while the Perron solves and rho sweeps do not use it as input. The no-go boundary passes only at the narrowed resolution: the three enumerated one-parameter families fail to determine a unique rho; broader wording about any possible one-parameter ansatz is not part of this clean audited scope.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`

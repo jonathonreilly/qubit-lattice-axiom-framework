@@ -109722,24 +109722,70 @@
       "verdict_rationale": "The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem."
     },
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T10:06:04.998325+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "Rules out the exact constant-lift Wilson plaquette reduction P(beta)=P_1plaq(Gamma_cand beta) with Gamma_cand=(3/2)(2/sqrt(3))^(1/4), using the beta=0 strong-coupling slope.",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J).",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "Block 4 L_s=3 PBC cube partition-function staging only: Bessel-determinant coefficients, trivial-sector partition identity, rank-8 four-fold Haar singlet basis, stated plaquette-tensor encoding, and storage/intermediate-size scope arithmetic; no L_s=2 orientation diagnostics, bridge-gap claim, or full 81-link contraction."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "no_go",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "retained_no_go",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 13.01,
+        "runner_hash": "4a0b0ca568ef39a002b06085aec95b9c8dd1cb85821f81f24ce1829b581b1134",
+        "transitive_descendants": 1030
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T100420Z-fbc22059-gauge_vacuum_plaquette_t-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated finite packet, the runner genuinely computes Wilson coefficients by the Bessel-determinant sum, builds J and exp(3J), inserts the declared rho inputs, and performs finite eigensolves and rho-family sweeps. The missing physical 3D spatial Wilson environment is explicitly outside the audited scope.",
       "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-      "claim_scope": "Finite NMAX=7, MODE_MAX=200 source-sector Perron solves for the two structural input choices rho=1 and rho=delta, plus finite non-uniqueness evidence over the three explicitly enumerated one-parameter rho families; no physical 3D spatial Wilson environment rho is audited as computed.",
+      "claim_scope": "Finite NMAX=7, MODE_MAX=200 source-sector Perron reference solves for the two specified input rho choices, plus finite non-uniqueness evidence only for the three enumerated one-parameter rho families; no physical 3D residual environment rho or untruncated tensor-transfer solve is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-25T10:03:48.306120+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-25T10:06:04.998325+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -109754,8 +109800,19 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-25T10:06:04.998325+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T100420Z-fbc22059-gauge_vacuum_plaquette_t-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite NMAX=7, MODE_MAX=200 source-sector Perron reference solves for the two specified input rho choices, plus finite non-uniqueness evidence only for the three enumerated one-parameter rho families; no physical 3D residual environment rho or untruncated tensor-transfer solve is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -109769,19 +109826,19 @@
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 13.01,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given an explicit diagonal input rho, construct T_src(6)=exp(3J) D_6^loc C_rho exp(3J), solve the finite Perron problem for rho=1 and rho=delta, and sweep three enumerated one-parameter rho families to show distinct P(6) values.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "6abf07c0eb7509174c01bd4493884328f0ed809fb7db5c94e18c4ced50dfe3be",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream ledger wording keeps the no-go limited to the three enumerated families and does not make the L_s=2 Schur/open-gate side value load-bearing.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -109994,18 +110051,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 2,
         "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "C": 6,
+        "D": 1,
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
       "title": "Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve",
       "transitive_descendants": 1030,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing reference-solve numbers are computed from the finite local coefficient packet and SU(3) recurrence, not read from prior notes or tuned to the canonical comparator. The comparator appears only in a hostile-review diagnostic, while the Perron solves and rho sweeps do not use it as input. The no-go boundary passes only at the narrowed resolution: the three enumerated one-parameter families fail to determine a unique rho; broader wording about any possible one-parameter ansatz is not part of this clean audited scope."
     },
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": {
       "audit_date": "2026-05-23T13:34:13.703473+00:00",

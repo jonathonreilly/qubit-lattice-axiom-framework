@@ -50,11 +50,11 @@
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "meta": 229,
     "open_gate": 15,
-    "retained": 146,
+    "retained": 147,
     "retained_bounded": 462,
     "retained_no_go": 162,
     "retained_pending_chain": 8,
-    "unaudited": 1227
+    "unaudited": 1226
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

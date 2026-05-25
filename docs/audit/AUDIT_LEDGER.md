@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 141 |
+| **retained** | 142 |
 | **retained_no_go** | 156 |
 | **retained_bounded** | 431 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1261 |
+| unaudited | 1260 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 703 |
+| `audited_clean` | 704 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1488 |
+| `unaudited` | 1487 |
 
 | claim_type | count |
 |---|---:|
@@ -679,6 +679,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -10605,6 +10606,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Reordering via (G1)-(G3), Berezin top-term selection gives sum over permutations sign(pi) prod_x M_{x,pi(x)} = det(M), and homogeneous odd Grassmann operators anticommute under exchange.  _(class `A`)_
 - **chain closes:** True — The scoped theorem is a standard algebraic closure from the stated Grassmann relations and integration rules, with no cited upstream authorities required. The runner performs exact symbolic class-A checks and contains no detected helper imports or hard-coded external comparator values.
 - **rationale:** The load-bearing step is class A: coefficient extraction in a finite exterior algebra reduces the Gaussian Grassmann integral to the Leibniz determinant formula. The odd-odd antisymmetry also follows directly from the homogeneous Grassmann grading and linearity of the Berezin integral. The runner source checks the relevant algebra symbolically for small N and does not import calibrated data, upstream notes, or contested physical premises. The result is clean for the explicitly bounded abstract-Grassmann scope, not for the out-of-scope physical identification claims.
+- **auditor confidence:** high
+
+### `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a†)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T115231Z-ce11d038-spin_statistics_cardinal-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-dimensional identities Tr([a,a†]) = 0 while Tr(I_H) = D rule out CCR for D >= 1, and the CAR relations give {a†,a†} = 2(a†)^2 = 0 plus n^2 = a†aa†a = n.  _(class `A`)_
+- **chain closes:** True — The algebraic statements follow from cyclic trace, explicit 2x2 CAR matrices, and same-mode CAR identities. The abstract Cl(3) dimension match is supplied by retained-grade one-hop authorities, and no physical per-site Hilbert-space identification is used.
+- **rationale:** (C1)-(P2) are finite-dimensional trace, matrix, and CAR algebra identities, and the runner source genuinely instantiates symbolic matrices and the concrete CAR carrier. The only load-bearing upstream use is the abstract Cl(3) dimension-2 readout; the supplied authorities are retained-grade, including the decoration-under retained parent. The source explicitly excludes the physical lattice identification and open staggered-Dirac bridge, so the audited narrow scope closes.
 - **auditor confidence:** high
 
 ### `staggered_3d_self_gravity_sign_note_2026-04-11`

@@ -1,0 +1,24 @@
+loop: yt-fh-mass-response-bridge
+mode: science_block
+started_utc: "2026-05-25"
+target_status: best-honest-status
+actual_current_surface_status: conditional-support
+conditional_surface_status: "physical top deformation = primitive RN/Fisher O_top source -> y_33=1/sqrt(6)"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "Feynman-Hellmann top pole mass-response bridge"
+hard_residual: "physical top Yukawa deformation must be identified with the primitive RN/Fisher source, or replaced by strict same-source pole-response measurement"
+files_touched:
+  - docs/YT_FH_TOP_MASS_RESPONSE_PHYSICAL_INTERVENTION_BRIDGE_NOTE_2026-05-25.md
+  - scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py
+  - outputs/yt_fh_top_mass_response_physical_intervention_bridge_2026-05-25.json
+open_imports:
+  - physical top deformation as primitive RN/Fisher O_top source
+  - strict same-source top/W pole-response evidence
+  - same-scale g_2 numerical authority for final numerical y_t
+  - matching/running bridge
+stop_condition: "open stacked PR with exact support and no closure overclaim"
+next_exact_action: "review artifact and either pursue physical-intervention proof or strict response measurement"

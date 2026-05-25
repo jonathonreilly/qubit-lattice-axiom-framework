@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1222 |
+| unaudited | 1223 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -57,7 +57,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1451 |
+| `unaudited` | 1452 |
 
 | claim_type | count |
 |---|---:|
@@ -66,23 +66,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `meta` | 234 |
 | `no_go` | 248 |
 | `open_gate` | 112 |
-| `positive_theorem` | 728 |
+| `positive_theorem` | 729 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 399 |
 | `high` | 487 |
 | `medium` | 575 |
-| `leaf` | 959 |
+| `leaf` | 960 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 3
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1978
+- runners classified: 1979
 - runners with (C) first-principles compute hits: 968
-- runners with (D) external comparator hits: 582
+- runners with (D) external comparator hits: 583
 - decoration candidates (no C, no D): 314
 
 ## Top 25 by load-bearing score (topology only)
@@ -105,8 +105,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 175 | 33.46 | `unaudited` | unaudited |
 | 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 925 | 33.35 | `audited_clean` | **retained** |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 561 | 32.13 | `unaudited` | unaudited |
-| 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 559 | 31.13 | `unaudited` | unaudited |
-| 16 | `minimal_axioms` | meta | critical | 1033 | 31.01 | `unaudited` | meta |
+| 15 | `minimal_axioms` | meta | critical | 1034 | 31.52 | `unaudited` | meta |
+| 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 559 | 31.13 | `unaudited` | unaudited |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 745 | 30.54 | `audited_conditional` | ~~audited_conditional~~ |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 688 | 30.43 | `unaudited` | unaudited |
 | 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 903 | 30.32 | `audited_renaming` | ~~audited_renaming~~ |

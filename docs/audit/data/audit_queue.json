@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 250,
     "high": 344,
-    "leaf": 308,
+    "leaf": 309,
     "medium": 320
   },
   "cycle_break_target_count": 3,
@@ -27827,6 +27827,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36912,6 +36936,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 1,
-  "total_pending": 1222
+  "ready_count": 2,
+  "total_pending": 1223
 }

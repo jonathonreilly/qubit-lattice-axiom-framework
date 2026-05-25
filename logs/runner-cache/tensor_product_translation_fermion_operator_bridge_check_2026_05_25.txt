@@ -1,0 +1,167 @@
+===== runner cache v1 =====
+runner: scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py
+runner_sha256: b4f5eb03f7d56284a8d52acb6e261d0b9cd6140d91c5aa986123719b470750cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.93
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
+Goal: sympy verification of (T1)-(T4) on small finite blocks of H_Λ = ⊗_x C²_x
+========================================================================================
+
+----------------------------------------------------------------------------------------
+1D N=2: T_a unitarity, fermion covariance, charge conservation
+----------------------------------------------------------------------------------------
+  [PASS (C)] (T1) T_0 T_0^† = I  [N=2]
+  [PASS (C)] (T1) T_0^† T_0 = I  [N=2]
+  [PASS (C)] (T1) T_1 T_1^† = I  [N=2]
+  [PASS (C)] (T1) T_1^† T_1 = I  [N=2]
+  [PASS (C)] (T2) T_0 T_0 = T_0  [N=2]
+  [PASS (C)] (T2) T_0 T_1 = T_1  [N=2]
+  [PASS (C)] (T2) T_1 T_0 = T_1  [N=2]
+  [PASS (C)] (T2) T_1 T_1 = T_0  [N=2]
+  [PASS (C)] (T2) T_0 = I  [N=2]
+  [PASS (C)] (T3) T_0 a_0 T_0^† = a_0  [N=2]
+  [PASS (C)] (T3) T_0 a_0^† T_0^† = a_0^†  [N=2]
+  [PASS (C)] (T3) T_0 a_1 T_0^† = a_1  [N=2]
+  [PASS (C)] (T3) T_0 a_1^† T_0^† = a_1^†  [N=2]
+  [PASS (C)] (T3) T_1 a_0 T_1^† = a_1  [N=2]
+  [PASS (C)] (T3) T_1 a_0^† T_1^† = a_1^†  [N=2]
+  [PASS (C)] (T3) T_1 a_1 T_1^† = a_0  [N=2]
+  [PASS (C)] (T3) T_1 a_1^† T_1^† = a_0^†  [N=2]
+  [PASS (C)] (T4) [T_0, Q_total] = 0  [N=2]
+  [PASS (C)] (T4) [T_1, Q_total] = 0  [N=2]
+
+----------------------------------------------------------------------------------------
+1D N=3: T_a unitarity, fermion covariance, charge conservation
+----------------------------------------------------------------------------------------
+  [PASS (C)] (T1) T_0 T_0^† = I  [N=3]
+  [PASS (C)] (T1) T_0^† T_0 = I  [N=3]
+  [PASS (C)] (T1) T_1 T_1^† = I  [N=3]
+  [PASS (C)] (T1) T_1^† T_1 = I  [N=3]
+  [PASS (C)] (T1) T_2 T_2^† = I  [N=3]
+  [PASS (C)] (T1) T_2^† T_2 = I  [N=3]
+  [PASS (C)] (T2) T_0 T_0 = T_0  [N=3]
+  [PASS (C)] (T2) T_0 T_1 = T_1  [N=3]
+  [PASS (C)] (T2) T_0 T_2 = T_2  [N=3]
+  [PASS (C)] (T2) T_1 T_0 = T_1  [N=3]
+  [PASS (C)] (T2) T_1 T_1 = T_2  [N=3]
+  [PASS (C)] (T2) T_1 T_2 = T_0  [N=3]
+  [PASS (C)] (T2) T_2 T_0 = T_2  [N=3]
+  [PASS (C)] (T2) T_2 T_1 = T_0  [N=3]
+  [PASS (C)] (T2) T_2 T_2 = T_1  [N=3]
+  [PASS (C)] (T2) T_0 = I  [N=3]
+  [PASS (C)] (T3) T_0 a_0 T_0^† = a_0  [N=3]
+  [PASS (C)] (T3) T_0 a_0^† T_0^† = a_0^†  [N=3]
+  [PASS (C)] (T3) T_0 a_1 T_0^† = a_1  [N=3]
+  [PASS (C)] (T3) T_0 a_1^† T_0^† = a_1^†  [N=3]
+  [PASS (C)] (T3) T_0 a_2 T_0^† = a_2  [N=3]
+  [PASS (C)] (T3) T_0 a_2^† T_0^† = a_2^†  [N=3]
+  [PASS (C)] (T3) T_1 a_0 T_1^† = a_1  [N=3]
+  [PASS (C)] (T3) T_1 a_0^† T_1^† = a_1^†  [N=3]
+  [PASS (C)] (T3) T_1 a_1 T_1^† = a_2  [N=3]
+  [PASS (C)] (T3) T_1 a_1^† T_1^† = a_2^†  [N=3]
+  [PASS (C)] (T3) T_1 a_2 T_1^† = a_0  [N=3]
+  [PASS (C)] (T3) T_1 a_2^† T_1^† = a_0^†  [N=3]
+  [PASS (C)] (T3) T_2 a_0 T_2^† = a_2  [N=3]
+  [PASS (C)] (T3) T_2 a_0^† T_2^† = a_2^†  [N=3]
+  [PASS (C)] (T3) T_2 a_1 T_2^† = a_0  [N=3]
+  [PASS (C)] (T3) T_2 a_1^† T_2^† = a_0^†  [N=3]
+  [PASS (C)] (T3) T_2 a_2 T_2^† = a_1  [N=3]
+  [PASS (C)] (T3) T_2 a_2^† T_2^† = a_1^†  [N=3]
+  [PASS (C)] (T4) [T_0, Q_total] = 0  [N=3]
+  [PASS (C)] (T4) [T_1, Q_total] = 0  [N=3]
+  [PASS (C)] (T4) [T_2, Q_total] = 0  [N=3]
+
+----------------------------------------------------------------------------------------
+1D N=4: T_a unitarity, fermion covariance, charge conservation
+----------------------------------------------------------------------------------------
+  [PASS (C)] (T1) T_0 T_0^† = I  [N=4]
+  [PASS (C)] (T1) T_0^† T_0 = I  [N=4]
+  [PASS (C)] (T1) T_1 T_1^† = I  [N=4]
+  [PASS (C)] (T1) T_1^† T_1 = I  [N=4]
+  [PASS (C)] (T1) T_2 T_2^† = I  [N=4]
+  [PASS (C)] (T1) T_2^† T_2 = I  [N=4]
+  [PASS (C)] (T1) T_3 T_3^† = I  [N=4]
+  [PASS (C)] (T1) T_3^† T_3 = I  [N=4]
+  [PASS (C)] (T2) T_0 T_0 = T_0  [N=4]
+  [PASS (C)] (T2) T_0 T_1 = T_1  [N=4]
+  [PASS (C)] (T2) T_0 T_2 = T_2  [N=4]
+  [PASS (C)] (T2) T_0 T_3 = T_3  [N=4]
+  [PASS (C)] (T2) T_1 T_0 = T_1  [N=4]
+  [PASS (C)] (T2) T_1 T_1 = T_2  [N=4]
+  [PASS (C)] (T2) T_1 T_2 = T_3  [N=4]
+  [PASS (C)] (T2) T_1 T_3 = T_0  [N=4]
+  [PASS (C)] (T2) T_2 T_0 = T_2  [N=4]
+  [PASS (C)] (T2) T_2 T_1 = T_3  [N=4]
+  [PASS (C)] (T2) T_2 T_2 = T_0  [N=4]
+  [PASS (C)] (T2) T_2 T_3 = T_1  [N=4]
+  [PASS (C)] (T2) T_3 T_0 = T_3  [N=4]
+  [PASS (C)] (T2) T_3 T_1 = T_0  [N=4]
+  [PASS (C)] (T2) T_3 T_2 = T_1  [N=4]
+  [PASS (C)] (T2) T_3 T_3 = T_2  [N=4]
+  [PASS (C)] (T2) T_0 = I  [N=4]
+  [PASS (C)] (T3) T_0 a_0 T_0^† = a_0  [N=4]
+  [PASS (C)] (T3) T_0 a_0^† T_0^† = a_0^†  [N=4]
+  [PASS (C)] (T3) T_0 a_1 T_0^† = a_1  [N=4]
+  [PASS (C)] (T3) T_0 a_1^† T_0^† = a_1^†  [N=4]
+  [PASS (C)] (T3) T_0 a_2 T_0^† = a_2  [N=4]
+  [PASS (C)] (T3) T_0 a_2^† T_0^† = a_2^†  [N=4]
+  [PASS (C)] (T3) T_0 a_3 T_0^† = a_3  [N=4]
+  [PASS (C)] (T3) T_0 a_3^† T_0^† = a_3^†  [N=4]
+  [PASS (C)] (T3) T_1 a_0 T_1^† = a_1  [N=4]
+  [PASS (C)] (T3) T_1 a_0^† T_1^† = a_1^†  [N=4]
+  [PASS (C)] (T3) T_1 a_1 T_1^† = a_2  [N=4]
+  [PASS (C)] (T3) T_1 a_1^† T_1^† = a_2^†  [N=4]
+  [PASS (C)] (T3) T_1 a_2 T_1^† = a_3  [N=4]
+  [PASS (C)] (T3) T_1 a_2^† T_1^† = a_3^†  [N=4]
+  [PASS (C)] (T3) T_1 a_3 T_1^† = a_0  [N=4]
+  [PASS (C)] (T3) T_1 a_3^† T_1^† = a_0^†  [N=4]
+  [PASS (C)] (T3) T_2 a_0 T_2^† = a_2  [N=4]
+  [PASS (C)] (T3) T_2 a_0^† T_2^† = a_2^†  [N=4]
+  [PASS (C)] (T3) T_2 a_1 T_2^† = a_3  [N=4]
+  [PASS (C)] (T3) T_2 a_1^† T_2^† = a_3^†  [N=4]
+  [PASS (C)] (T3) T_2 a_2 T_2^† = a_0  [N=4]
+  [PASS (C)] (T3) T_2 a_2^† T_2^† = a_0^†  [N=4]
+  [PASS (C)] (T3) T_2 a_3 T_2^† = a_1  [N=4]
+  [PASS (C)] (T3) T_2 a_3^† T_2^† = a_1^†  [N=4]
+  [PASS (C)] (T3) T_3 a_0 T_3^† = a_3  [N=4]
+  [PASS (C)] (T3) T_3 a_0^† T_3^† = a_3^†  [N=4]
+  [PASS (C)] (T3) T_3 a_1 T_3^† = a_0  [N=4]
+  [PASS (C)] (T3) T_3 a_1^† T_3^† = a_0^†  [N=4]
+  [PASS (C)] (T3) T_3 a_2 T_3^† = a_1  [N=4]
+  [PASS (C)] (T3) T_3 a_2^† T_3^† = a_1^†  [N=4]
+  [PASS (C)] (T3) T_3 a_3 T_3^† = a_2  [N=4]
+  [PASS (C)] (T3) T_3 a_3^† T_3^† = a_2^†  [N=4]
+  [PASS (C)] (T4) [T_0, Q_total] = 0  [N=4]
+  [PASS (C)] (T4) [T_1, Q_total] = 0  [N=4]
+  [PASS (C)] (T4) [T_2, Q_total] = 0  [N=4]
+  [PASS (C)] (T4) [T_3, Q_total] = 0  [N=4]
+
+----------------------------------------------------------------------------------------
+2D 2×2: independent axis translations and joint covariance
+----------------------------------------------------------------------------------------
+  [PASS (C)] (T1) T_x T_x^† = I  [Lx=2,Ly=2]
+  [PASS (C)] (T1) T_y T_y^† = I  [Lx=2,Ly=2]
+  [PASS (C)] (T2) T_x T_y = T_y T_x  [Lx=2,Ly=2]
+  [PASS (C)] (T2) T_x T_y = T_{(1,1)}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_x a_{0,0} T_x^† = a_{1,0}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_y a_{0,0} T_y^† = a_{0,1}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_x a_{0,1} T_x^† = a_{1,1}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_y a_{0,1} T_y^† = a_{0,0}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_x a_{1,0} T_x^† = a_{0,0}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_y a_{1,0} T_y^† = a_{1,1}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_x a_{1,1} T_x^† = a_{0,1}  [Lx=2,Ly=2]
+  [PASS (C)] (T3) T_y a_{1,1} T_y^† = a_{1,0}  [Lx=2,Ly=2]
+  [PASS (C)] (T4) [T_x, Q_total] = 0  [Lx=2,Ly=2]
+  [PASS (C)] (T4) [T_y, Q_total] = 0  [Lx=2,Ly=2]
+
+========================================================================================
+PASS=131 FAIL=0
+========================================================================================
+
+----- stderr -----
+

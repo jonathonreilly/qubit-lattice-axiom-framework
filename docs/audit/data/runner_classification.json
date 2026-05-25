@@ -22296,6 +22296,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_tensor_network_connection.py"
     },
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py"
+    },
     "tensor_scalar_ratio_consolidation_theorem_note_2026-04-22": {
       "assert_count": 0,
       "counts": {
@@ -54337,6 +54349,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py": {
+      "assert_count": 1,
+      "claims": [
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/three_gen_z3_fourier_diagonalization_check.py": {
       "assert_count": 0,
       "claims": [
@@ -55090,14 +55117,14 @@
   "stats": {
     "decoration_candidates": 314,
     "dominant_class_distribution": {
-      "A": 223,
+      "A": 224,
       "B": 272,
       "C": 746,
       "D": 299,
       "none": 438
     },
-    "runners_classified": 1978,
+    "runners_classified": 1979,
     "runners_with_C": 968,
-    "runners_with_D": 582
+    "runners_with_D": 583
   }
 }

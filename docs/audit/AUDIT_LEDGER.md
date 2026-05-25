@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 142 |
+| **retained** | 143 |
 | **retained_no_go** | 156 |
 | **retained_bounded** | 432 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1258 |
+| unaudited | 1257 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 705 |
+| `audited_clean` | 706 |
 | `audited_conditional` | 84 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1485 |
+| `unaudited` | 1484 |
 
 | claim_type | count |
 |---|---:|
@@ -300,6 +300,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4130,6 +4131,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The row-table runner shows the center row remains clean and the immediate neighbor at drift=0.20, restore=0.60 keeps TOWARD at gamma=0.1, AWAY at gamma=0.5, and weak-field F~M=1.000.  _(class `C`)_
 - **chain closes:** True — The cited companion authority is retained-bounded for the center row, and the provided runner computes the neighbor row directly using the grown-geometry propagation machinery rather than printing fixed constants. Within the stated seed-0, two-row scope, the row table supports the selective tiny-basin positive claim.
 - **rationale:** The load-bearing neighbor result is a direct runner computation from the framework functions, with selected rows and seed fixed in advance by the note. The center-row exact reduction is explicitly delegated to a retained-bounded cited authority, while the current runner verifies the center Born/F~M checks and the nearby crossover/F~M survival. The claim is narrow and does not assert family-wide transfer, continuum closure, or self-gravity.
+- **auditor confidence:** high
+
+### `fixed_field_family_unification_note`
+
+- **Note:** [`FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md`](../../docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Seed-0 fixed-field comparison on the retained grown row drift=0.2, restore=0.7, h=0.5: signed-source zero/neutral/linear sign response and complex-action gamma=0, gamma=0.2, and gamma=0.5 metrics on the same connectivity family, with no geometry-generic or continuum claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T115723Z-a7653ed2-fixed_field_family_unifi-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same retained grown row supports both the signed-source companion and the exact gamma=0 complex-action companion under the same fixed-field connectivity slice.  _(class `C`)_
+- **chain closes:** True — Both cited authorities are retained-grade, and the included runner source recomputes both branches from the same grow(drift=0.2, restore=0.7, seed=0) geometry rather than hard-coding the reported values. The cached runner output matches the source note's frozen table and stays within the note's stated narrow scope.
+- **rationale:** The primary runner instantiates the grown geometry and propagation rules, then computes the signed-source and complex-action summaries on the same row. The helper sources are included and do not import contested numeric conclusions or print constants as proof. The conclusion is only the compact same-row unification of two retained narrow companions, not a geometry-generic theorem.
 - **auditor confidence:** high
 
 ### `fixed_field_grown_transfer_scout_note`

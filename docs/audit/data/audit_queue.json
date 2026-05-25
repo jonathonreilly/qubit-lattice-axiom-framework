@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 259,
     "high": 341,
-    "leaf": 334,
+    "leaf": 333,
     "medium": 324
   },
   "cycle_break_target_count": 7,
@@ -28114,35 +28114,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "fixed_field_family_unification_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_nonlabel_sign_grown_transfer_note",
-        "claude_complex_action_grown_companion_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
-        "scripts/complex_action_grown_companion.py",
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28743,6 +28714,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "unification_basin_failure_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "nonlabel_grown_basin_note",
+        "fixed_field_complex_grown_basin_v2_note",
+        "fixed_field_family_unification_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+        "scripts/complex_action_grown_companion.py",
+        "scripts/gate_b_grown_joint_package.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/UNIFICATION_BASIN_FAILURE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py",
       "transitive_descendants": 0
     },
     {
@@ -37221,36 +37222,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "unification_basin_failure_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "nonlabel_grown_basin_note",
-        "fixed_field_complex_grown_basin_v2_note",
-        "fixed_field_family_unification_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
-        "scripts/complex_action_grown_companion.py",
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/UNIFICATION_BASIN_FAILURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "universal_gr_axiom_first_route_memo",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -37891,5 +37862,5 @@
     }
   ],
   "ready_count": 29,
-  "total_pending": 1258
+  "total_pending": 1257
 }

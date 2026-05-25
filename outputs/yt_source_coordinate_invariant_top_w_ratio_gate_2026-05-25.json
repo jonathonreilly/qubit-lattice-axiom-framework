@@ -1,0 +1,24 @@
+{
+  "coordinate_invariance_closed": true,
+  "current_blockers": {
+    "numerical_g2_retained_authority_present": false,
+    "retained_closure_allowed": false,
+    "signed_record_to_ew_radial_carrier_theorem_present": false,
+    "source_coordinate_normalization_blocker_retired_for_ratio": true,
+    "strict_same_source_top_w_rows_present": false
+  },
+  "fail_count": 0,
+  "pass_count": 35,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The ratio is coordinate-invariant, but the repo still lacks a retained signed-record to EW radial carrier/source theorem, strict same-source top/W response rows, and retained numerical g_2 authority.",
+  "review_surface": [
+    "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",
+    "outputs/yt_source_coordinate_invariant_top_w_ratio_gate_2026-05-25.json"
+  ],
+  "status": "exact support: source-coordinate normalization is not a blocker for same-source top/W ratio",
+  "upstream_statuses": {
+    "ew_mass_status": "retained",
+    "source_action_status": "retained_bounded"
+  }
+}

@@ -14,6 +14,9 @@ Landed in this packet:
 - `docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md`
 - `scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py`
 - `outputs/yt_ew_higgs_source_intertwiner_gate_2026-05-25.json`
+- `docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py`
+- `outputs/yt_source_coordinate_invariant_top_w_ratio_gate_2026-05-25.json`
 
 Candidate follow-on artifacts:
 

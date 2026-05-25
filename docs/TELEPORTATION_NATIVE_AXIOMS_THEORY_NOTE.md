@@ -1,9 +1,25 @@
-# Native Teleportation Axioms And Theory Note
+# Native Teleportation Axioms And Theory Note (Planning / Open-Gate Consistency Artifact)
 
-**Date:** 2026-04-26
-**Status:** planning / candidate theory artifact; not retained framework
-promotion
+**Date:** 2026-04-26 (audit-repair reframe: 2026-05-25)
+**Status authority:** independent audit lane only
+**Type:** planning / open-gate consistency artifact
 **Companion runner:** `scripts/frontier_teleportation_axiom_closure_checks.py`
+
+## Abstract
+
+The note is valid as a planning / open-gate consistency artifact, not as
+unconditional native teleportation closure. The axiom bundle (A1-A5) and the
+derived theorems describe what would have to hold if the taste-qubit
+teleportation lane were later promoted; they do not, on their own, promote it.
+Native teleportation closure is explicitly left open per the A4 admission
+(native resource genesis lacks scaling, apparatus, bath/leakage/noise, and
+physical-control derivations).
+
+The note also contains, as an inline narrow bounded fact subsection, the
+finite Bell-frame `Z2 x Z2` XOR correction law together with the Manhattan
+speed-one record-delivery bound on the audited `3D side=2` surface. That
+subsection is the only part of this note that is intended to support narrow
+bounded use; it does not by itself close the lane.
 
 ## Scope
 
@@ -15,7 +31,9 @@ what must be derived, measured, or rejected.
 
 The theory remains ordinary quantum state teleportation only. It does not
 claim matter teleportation, mass transfer, charge transfer, energy transfer,
-object transport, or faster-than-light signaling.
+object transport, or faster-than-light signaling. The note is a planning /
+open-gate consistency artifact; it is not an unconditional native
+teleportation closure.
 
 ## Native Teleportation Object
 
@@ -173,6 +191,31 @@ record drops/delays/flips, and preparation-path outcomes. The axiom is what
 prevents fixed-spectator algebra from being silently promoted into a traced
 operational readout.
 
+## Narrow Bounded Fact Subsection: Bell-Frame XOR Plus Manhattan Record Bound
+
+This subsection collects the only material in the note that is intended to
+support narrow bounded use on the audited finite surface. It is inline here
+for the planning / open-gate consistency framing; a separate narrow proof-walk
+companion is a follow-on PR target, not part of this note's status.
+
+The finite content is:
+
+- the discrete Bell-frame correction law
+  ```text
+  c_total = c xor h
+  C_B(c, h) = Z^(z xor h_z) X^(x xor h_x)
+  ```
+  over `Z2 x Z2` with the labelling convention of A2; and
+- the speed-one Manhattan record-delivery bound
+  ```text
+  t_delivery >= t_A + |dx| + |dy| + |dz|
+  ```
+  with Bob's reduced state independent of the unknown input before
+  `t_delivery`, on the audited `3D side=2` surface.
+
+These two facts are finite, audited, and do not, on their own, close native
+teleportation; they are bounded ingredients of the open lane, not a closure.
+
 ## Derived Theory
 
 ### Theorem 1: Raw `xi_5` No-Go For Traced 3D Retained-Z
@@ -281,9 +324,16 @@ The axiom bundle makes concrete near-term tests:
 ## Status
 
 This theory pass narrows the lane by making the missing structure explicit. It
-does not promote the teleportation lane beyond planning / candidate theory
-artifact. The strongest current statement remains:
+does not promote the teleportation lane beyond a planning / open-gate
+consistency artifact. Native teleportation closure is explicitly left open per
+the A4 admission: the resource-genesis axiom is a candidate only, lacking
+scaling, apparatus, bath/leakage/noise, and physical-control derivations.
+
+The strongest current statement remains:
 
 > Standard quantum state teleportation can be represented on native retained
 > taste-qubit factors with explicit Bell-frame accounting and a causal 3D+1
 > two-bit record channel, on the audited finite surfaces.
+
+This is a consistency statement on the audited finite surface, not an
+unconditional native teleportation closure.

@@ -16804,22 +16804,42 @@
       "verdict_rationale": "Issue: the note promotes a finite toy-model computation and an I_3 identity into a Born-rule derivation and a lattice-QCD no-analog claim. Why this blocks: the Sorkin test uses P = |psi|^2 in the runner, and the graph-gravity and lattice-QCD comparison bridges are not derived or supported by any cited authority. Repair target: provide a retained bridge theorem deriving the probability/readout rule without imposing |psi|^2, plus a retained authority or theorem for the lattice-QCD comparison. Claim boundary until fixed: the runner supports only that the specified numerical model changes its propagated profile when the Poisson field is included and that its Born-probability three-slit calculation has negligible I_3."
     },
     "bh_entropy_derived_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T23:43:15.874438+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bh_entropy_rt_ratio_widom_no_go_note": "Finite-L <= 64 numerical-fit evidence for the OBC half-filled NN-hopping square-lattice RT ratio, plus the direct 2D diamond Widom coefficient evaluation c_Widom = 1/6; no all-L asymptotic no-go is retained."
+        },
+        "dep_claim_type": {
+          "bh_entropy_rt_ratio_widom_no_go_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bh_entropy_rt_ratio_widom_no_go_note": "retained_bounded"
+        },
+        "deps": [
+          "bh_entropy_rt_ratio_widom_no_go_note"
+        ],
+        "load_bearing_score": 10.17,
+        "runner_hash": "f776f27da35b42219d2f74133a9884093a759b60e09639ffb43f850cfc5165e7",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T234207Z-9df1e0be-bh_entropy_derived_note-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-L runner computations are substantive, but the asymptotic statement that the 0.24 value is a finite-L artifact converging to 1/6 depends on the cited Widom no-go's OA-1/OA-2 bridges, which are explicitly open. The L<=96 probe used in the prose is also deferred as cache-not-in-packet by the cited authority.",
       "claim_id": "bh_entropy_derived_note",
-      "claim_scope": null,
+      "claim_scope": "Finite-L lattice-entanglement RT-ratio observations for the OBC half-filled NN free-fermion carrier, plus the note's reliance on the cited Widom no-go for the asymptotic 1/6-vs-1/4 interpretation.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T23:43:15.874438+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -16827,20 +16847,22 @@
         "bh_entropy_rt_ratio_widom_no_go_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.17,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The finite-L RT ratio near 0.24 is only a bounded companion number because the same carrier has asymptotic RT ratio r(L) -> c_Widom = 1/6, not 1/4.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "51dea579896de1b86472f746bc43ae3dd0437004975e001d1f19679666d63bc9",
       "note_path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: close OA-1/OA-2 with a retained OBC-lattice Widom specialization and threshold-rank proof, or narrow this note to finite-L<=64 evidence and remove the asymptotic and L<=96 retained-scope language.",
+      "open_dependency_paths": [
+        "docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md"
+      ],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -17020,20 +17042,20 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.976765+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 1,
+        "B": 1,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
       "title": "Bekenstein-Hawking Entropy Derived from Lattice Entanglement",
       "transitive_descendants": 71,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely builds the lattice Hamiltonians, correlation matrices, entropies, SVD ranks, and finite-L ratios; it is not a print-only or pure renaming runner. However, the load-bearing asymptotic interpretation is imported from docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md, which retained only finite-L<=64 evidence and the exact 2D Widom integral while explicitly leaving the all-L Widom/OBC and threshold-rank bridges open. No-Go gate N7 defeats a clean negative boundary: the strongest objection, accepted inside the cited packet, is that finite-L fits do not prove lim_L r(L) != 1/4. The runner's 6a PASS wording also overstates its own output because rt_inf=0.2108 is within 35% of 1/6 but is not closer to 1/6 than to 1/4."
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "audit_date": "2026-05-25T23:41:35.720573+00:00",

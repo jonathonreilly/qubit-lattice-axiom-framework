@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 261,
+    "critical": 260,
     "high": 346,
     "leaf": 337,
     "medium": 345
@@ -124,28 +124,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
-      "claim_scope": "For finite simple undirected graphs with mu^2 > 0, G > 0, rho >= 0, and the screened-Poisson equation M Phi = G rho, the theorem proves Phi >= 0 entrywise, with strict positivity on connected graphs when rho is nonzero.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.614,
-      "note_path": "docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py",
-      "transitive_descendants": 276
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -38668,6 +38646,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 50,
-  "total_pending": 1289
+  "ready_count": 49,
+  "total_pending": 1288
 }

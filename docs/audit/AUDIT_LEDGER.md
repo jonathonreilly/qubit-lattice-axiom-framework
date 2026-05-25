@@ -50,8 +50,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 690 |
+| `audited_clean` | 691 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
@@ -122,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -683,6 +681,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_geometry_superposition_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_graph_failure_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_graph_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10593,6 +10592,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The current retained harness reproduces the force-based staggered card surface: 1D n=61 and 3D n=9/11/13 all score 17/17, with the documented n>9 C17 family-coverage gate.  _(class `C`)_
 - **chain closes:** True — The source note scopes the result to the force-based card and states the weaker row semantics and family-coverage caveats. The repo-local runner completed and reproduced the stated 17/17 outputs without external imports or stale numerical mismatch.
 - **rationale:** The load-bearing claim is bounded to a fixed finite runner and operating point, not a repo-wide centroid-gravity claim or a universal physical theorem. The runner computes the card rows and reproduces the note's listed values for 1D n=61 and 3D n=9/11/13, including the documented C17 limitation at n=11 and n=13. Residual risk is scope leakage: this clean verdict should not be read as validating centroid-based card semantics, dynamic/cosmological extensions, or full six-family 3D coverage above n=9.
+- **auditor confidence:** high
+
+### `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional finite-graph linear-algebra theorem: for a finite simple undirected graph with mu^2>0, G>0, and the screened-Poisson equation assumed, non-negative rho implies non-negative Phi via the Stieltjes positivity of (L+mu^2 I)^{-1}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T105213Z-a322d617-staggered_fermion_card_h-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** M=L+mu^2 I is a non-singular symmetric M-matrix/Stieltjes matrix, so M^{-1} is entrywise non-negative and Phi=G M^{-1} rho is entrywise non-negative for rho>=0 and G>0.  _(class `A`)_
+- **chain closes:** True — The note derives the Z-matrix pattern, positive diagonal, strict row diagonal dominance with excess mu^2, and symmetry directly from L=D-A and mu^2>0. The Stieltjes/M-matrix criterion then gives M^{-1}>=0 entrywise, so multiplying by G rho>=0 yields Phi>=0 within the stated conditional scope.
+- **rationale:** The load-bearing step is genuine class-A algebra over standard graph-Laplacian and matrix-analysis primitives, not a renaming, tuned numerical match, or external comparator. The runner source performs actual symbolic and numerical checks rather than merely printing constants, and its 47 A-class passes are consistent with the proof. The audit does not ratify the screened-Poisson bridge H1 itself; it ratifies the narrow positivity/resolvent sub-chain conditional on that premise.
 - **auditor confidence:** high
 
 ### `staggered_geometry_superposition_note_2026-04-11`

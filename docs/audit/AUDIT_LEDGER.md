@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 451 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1261 |
+| unaudited | 1260 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 731 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1490 |
+| `unaudited` | 1489 |
 
 | claim_type | count |
 |---|---:|
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 843 | 38.22 | `unaudited` | unaudited |
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 707 | 37.97 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 934 | 37.87 | `audited_clean` | **retained_bounded** |
-| 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 550 | 34.11 | `unaudited` | unaudited |
+| 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 550 | 34.11 | `audited_conditional` | ~~audited_conditional~~ |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1047 | 34.03 | `audited_clean` | **retained** |
 | 12 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 175 | 33.46 | `unaudited` | unaudited |
 | 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 925 | 33.35 | `audited_clean` | **retained** |
@@ -937,6 +937,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -13407,6 +13408,22 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Two completions, kappa_Y = 0 with K_Y = 8/9 and kappa_Y = 1 with K_Y = 1, share the same retained Fierz channel fractions and color-blind scaling law, so those premises do not determine the connected-trace selector.  _(class `A`)_
 - **chain closes:** True — The cited authority supplies only the exact adjoint and singlet channel fractions, and it explicitly leaves matching/readout rules outside its derivation. The source note's two-completion witness is enough to show underdetermination on that restricted premise set.
 - **rationale:** The no-go is narrowly scoped to non-derivability from the restricted packet, not to impossibility across the full framework. Its load-bearing step is an algebraic independence witness over the cited channel fractions: the same retained primitive data permit kappa_Y = 0 and kappa_Y = 1 with different K_Y values. The cited Fierz authority is retained-grade decoration and does not contain a closed Yukawa readout theorem. The No-Go Discipline gate is satisfied in-packet: alternative routes are enumerated, the wall is collapsed to the missing selector theorem, hidden wording is scoped, and the steelman is left as future work rather than overruled.
+- **auditor confidence:** high
+
+### `yt_ew_color_projection_theorem`
+
+- **Note:** [`YT_EW_COLOR_PROJECTION_THEOREM.md`](../../docs/YT_EW_COLOR_PROJECTION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** At N_c = 3, the source establishes the algebraic family K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9) from F_adj = 8/9, while leaving kappa_EW and the K_EW = 9/8 specialization conditional.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T190341Z-e6d44300-yt_ew_color_projection_t-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the cited exact adjoint fraction F_adj = 8/9 into K_EW(kappa_EW) = 1 / (F_adj + kappa_EW (1 - F_adj)) gives K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9) at N_c = 3, with K_EW = 9/8 only after the separate kappa_EW = 0 admission.  _(class `A`)_
+- **chain closes:** False — The rational substitution from F_adj = 8/9 to the displayed K_EW(kappa_EW) family closes. The full physical matching relation does not close because the packet explicitly leaves kappa_EW, including the kappa_EW = 0 selector needed for 9/8, as an admitted readout coefficient.
+- **rationale:** The load-bearing algebra is class A over the Fierz ratio and the no-go parameterization, but the physical EW normalization lane imports an unclosed readout bridge. The cited open-gate/no-go authority proves the retained packet underdetermines kappa_EW; the source note correctly labels 9/8 as conditional, but that is still a named admission rather than a closed theorem. The runner substantively computes an R_conn check and passes, but it verifies the adjoint fraction and numerical consistency, not the disconnected-current readout coefficient. The No-Go Discipline gate leaves a single collapsed residual: kappa_EW.
+- **open / conditional deps cited:**
+  - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+  - `EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `yt_ew_m_residual_note_2026-05-02`

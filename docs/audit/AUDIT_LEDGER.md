@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 143 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 436 |
+| **retained_bounded** | 437 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1250 |
+| unaudited | 1249 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 710 |
+| `audited_clean` | 711 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 38 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1477 |
+| `unaudited` | 1476 |
 
 | claim_type | count |
 |---|---:|
@@ -363,6 +363,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -5211,6 +5212,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The supplied translation-character projectors and C3 cycle generator generate the full nine-dimensional M_3(C) observable algebra on H_hw=1 and have scalar commutant.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the runner constructs the stated 3x3 generators, computes the generated algebra dimension, and computes the commutant dimension. The conclusion follows for those supplied generators without using the out-of-scope physical bridges.
 - **rationale:** The runner performs actual finite-dimensional linear algebra rather than printing constants: it constructs the translation-sign matrices, the C3 permutation, projectors, algebra span, and commutant constraints. All four checks are algebraic identity/closure checks on the supplied local generators. Because the source note already bounds the claim to this local H_hw=1 M_3(C) reconstruction and explicitly excludes physical-species and substrate conclusions, no split is needed before audit; it should remain a bounded_theorem, not a positive_theorem.
+- **auditor confidence:** high
+
+### `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-group representation-theoretic characterization of G-invariant Hermitian operators on V=C^3 under the permutation S3 action: only full S3 forces a generation mass degeneracy; every proper subgroup permits a generic three-way split.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T121539Z-9cd08316-generation_degeneracy_mi-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For G <= S3, dim_C Comm(G)=(1/|G|) sum_g |Tr rho(g)|^2 and the restrictions S3:A1⊕E, C3:1⊕ω⊕ω², Z2:(triv)^2⊕sign, and trivial:triv^3 give generic distinct-eigenvalue counts 2,3,3,3.  _(class `A`)_
+- **chain closes:** True — The cited S3 and Z2 anchors are retained-grade and are reproduced. The C3 and trivial rows follow from standard subgroup-lattice and character/multiplicity algebra, with no external mass, fit, scale, or labeling input needed for the scoped obstruction statement.
+- **rationale:** Both cited anchors are retained-grade and the new work is standard finite-group representation algebra on the same permutation carrier: the subgroup list is complete up to conjugacy, the character formula gives 2/3/5/9, and the irreducible decompositions give generic counts 2/3/3/3. The runner computes the character/Reynolds checks rather than only printing constants; its hard-coded expectations are used as assertions, with no external numerical or fitted input. For the bounded residual language, the no-go discipline scan finds no same-scope blocker: subgroup completeness, Z2 conjugacy, C3 splitting, generic-versus-forced wording, runner hard-coding, and gate-overreach attacks do not defeat the theorem. The admitted lack of derived breaking, mass values, or generation labels is outside the audited claim scope.
 - **auditor confidence:** high
 
 ### `geometry_lane_head_to_head_note`

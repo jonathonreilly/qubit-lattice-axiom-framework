@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1243 |
+| unaudited | 1242 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 93 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -54,10 +54,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 741 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 41 |
-| `audited_failed` | 46 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1472 |
+| `unaudited` | 1471 |
 
 | claim_type | count |
 |---|---:|
@@ -1020,6 +1020,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -8755,6 +8756,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At detector NL=30, overlap(origin, z=2) = 0.42 (distinguishable), and gravitational deflections range from +0.0085 to +0.0296 across packets z in {-2,0,1,2,3}, demonstrating that packet identity carries physics; width converges toward propagator natural mode with 17% residual.  _(class `C`)_
 - **chain closes:** True — The bounded Tier A claim closes by direct numerical measurement on packet_memory.py: overlap matrix, NL-scaling of overlap, and per-packet gravitational deflection. Tier B is honestly reported as partial; Tier C is honestly reported as open. No tier is over-promoted.
 - **rationale:** Within the 'detector-readable packet memory' bounded scope (Tier A positive, Tier B partial, Tier C open), the chain closes by direct measurement. The note correctly disclaims persistent localized objects beyond the centroid-memory regime, matching the bounded interpretation.
+- **auditor confidence:** high
+
+### `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02`
+
+- **Note:** [`PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md`](../../docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the per-operator algebraic P-weight identities for the four stated dimension-5 SME-style fermion-bilinear structures on the even periodic staggered Cl(3)/Z^3 framework, together with the epsilon H_0 epsilon = -H_0 lattice check.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T232011Z-73a99b1d-parity_operator_basis_di-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Step 2 asserts that each candidate's net P-weight, computed as Dirac-structure parity weight times derivative-side parity weight, is -1 for every covered dimension-5 SME-style LV bilinear with at least one unpaired spatial index.  _(class `A`)_
+- **chain closes:** False — The sign-count argument does not cover all index assignments allowed by the stated premise, and it gives wrong signs for named mixed time-spatial variants. For example gamma_5 gamma^0 partial_i has Dirac parity -1 and derivative parity -1, giving net P-weight +1, not -1; sigma^{0i} partial_j is likewise P-even unless an extra spatial factor is added outside the stated operator.
+- **rationale:** The runner genuinely constructs H_0 and checks epsilon H_0 epsilon = -H_0 on L = 4, 6, 8, but its operator-basis checks use only one representative index assignment per structure. The P-symmetric projection test also hard-codes P_full = -full_op instead of applying the full parity action to all allowed variants. The universal claim that every covered candidate is P-odd fails on the packet's own parity table for allowed mixed time-spatial cases, so the chain does not close.
 - **auditor confidence:** high
 
 ### `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23`

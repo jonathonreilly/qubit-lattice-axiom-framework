@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 146 |
+| **retained** | 147 |
 | **retained_no_go** | 162 |
 | **retained_bounded** | 462 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
@@ -52,13 +52,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 746 |
+| `audited_clean` | 747 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 42 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -792,6 +792,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -12684,6 +12685,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **open / conditional deps cited:**
   - `missing bridge from finite transfer-matrix diagnostics to AdS/CFT/RT/holographic-principle interpretation`
   - `missing derivation of an RT S=Area/(4G) or S~1/g law; runner favors a linear S~g fit on the tested sweep`
+- **auditor confidence:** high
+
+### `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+
+- **Note:** [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a finite periodic block Λ ⊂ Z^3 with H_Λ = ⊗_x C^2_x, the tensor-permutation translations T_a are unitary, obey T_a T_b = T_{a+b}, conjugate the local per-site ladder operators as T_a a_x T_a^† = a_{x+a} and T_a a_x^† T_a^† = a_{x+a}^†, and commute with Q_total = Σ_x a_x^† a_x.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T235316Z-0a7b7bbc-tensor_product_translati-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying the tensor-permutation definition of T_a to a_x on a basis state gives T_a a_x T_a^† |b⟩ = a_{x+a} |b⟩, and relabelling the finite torus sum gives T_a Q_total T_a^† = Q_total.  _(class `A`)_
+- **chain closes:** True — The cited axiom premise supplies the per-site qubit algebra and Z^3 translation structure, and the remaining constructions are standard finite tensor products, local ladder matrices, and periodic relabelling. The proof establishes the identities directly on the tensor-product basis without importing any open fermion, Noether, gauge, or numerical premise.
+- **rationale:** The source note's load-bearing argument is a direct algebraic closure from the accepted A1/A2 framework premise plus ordinary finite-dimensional tensor-product mathematics. The runner source explicitly constructs the ladder operators, permutation matrices, and total charge operator with exact sympy matrices, then verifies the stated identities entrywise; it does not hard-code contested outputs or import external comparators. The absence of Jordan-Wigner anticommutation is acknowledged and kept out of scope, so it does not block the stated per-site Pauli convention claim.
 - **auditor confidence:** high
 
 ### `tensor_support_center_excess_law_note`

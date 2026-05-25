@@ -3,7 +3,7 @@
     "critical": 249,
     "high": 343,
     "leaf": 316,
-    "medium": 323
+    "medium": 322
   },
   "cycle_break_target_count": 3,
   "cycle_break_targets": [
@@ -17734,34 +17734,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "symmetry_head_to_head_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mirror_chokepoint_note",
-        "mirror_mutual_information_chokepoint_note",
-        "higher_symmetry_joint_validation_note",
-        "higher_symmetry_gravity_probe_note",
-        "mirror_chokepoint_boundary_fit_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/symmetry_head_to_head.py",
-      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -37147,6 +37119,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 7,
-  "total_pending": 1231
+  "ready_count": 6,
+  "total_pending": 1230
 }

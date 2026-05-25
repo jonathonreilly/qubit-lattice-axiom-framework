@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 155 |
-| **retained_bounded** | 422 |
+| **retained_bounded** | 423 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1277 |
+| unaudited | 1276 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 693 |
+| `audited_clean` | 694 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1504 |
+| `unaudited` | 1503 |
 
 | claim_type | count |
 |---|---:|
@@ -255,6 +255,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3320,6 +3321,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class B). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class B; J2: second / audited_conditional / bounded_theorem / class B; J3: second / audited_conditional / bounded_theorem / class B; J4: second / audited_conditional / bounded_theorem / class B; J5: second / audited_conditional / bounded_theorem / class B. Majority rationale: The closed-form H_e formula and delta -> -delta conjugation parity are algebraic and close from the supplied definitions. The selector conclusion, however, relies on an imported reduced N_e surface, seed averages, favored-column closure functional, and relative-action machinery embedded in helper runners rather than cited retained authorities in the restricted packet. The primary runner computes nontrivial KKT and branch-gap checks, but those checks verify the imported setup rather than deriving the whole theorem from Cl(3) on Z^3 alone. Conditional is therefore the correct terminal status. | The closed-form H_e formula and conjugation parity are genuine algebraic checks over the supplied definitions. The selector classification, however, relies on imported helper machinery for the fixed N_e seed surface, favored closure column, eta closure functional, and relative-action selector, while the packet lists no cited authorities. The runner performs nontrivial numerical optimization rather than merely printing constants, but that does not close the missing premise chain from Cl(3) on Z^3. The conditional verdict is therefore the applyable result. | The algebraic closed-form H_e and conjugation-even delta reduction are supported by the packet. The selector classification, however, imports the fixed N_e seed surface, seed averages, favored closure column, eta normalization, and relative-action selector machinery through helper modules rather than deriving them from the axiom in this restricted packet. Because the note lists no cited authorities while relying on those upstream structures, the chain is conditional, not clean. | The closed-form H_e formula and delta -> -delta conjugation parity are algebraic and close from the displayed definitions. The selector classification, however, relies on imported helper machinery for the fixed N_e seed surface, favored column, closure eta map, transport normalizations, and relative-action selector, while the packet lists no cited authorities. The runner performs real numerical constrained solves, but this verifies a branch classification conditional on those imported structures rather than deriving the whole claim from the axiom in the restricted packet. | The closed-form H_e expression and delta-conjugation parity are algebraic and close from the supplied definitions. The selector classification, however, depends on imported helper machinery fixing the reduced N_e surface, seed values, favored closure column, eta normalization, and effective-action selector, while the note declares no cited authorities. The runner performs real numerical constrained solves, but it does not close those bridge premises from Cl(3) on Z^3 inside the restricted packet, so the result is conditional rather than clean.
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class B). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class B; J2: second / audited_conditional / bounded_theorem / class B; J3: second / audited_conditional / bounded_theorem / class B; J4: second / audited_conditional / bounded_theorem / class B; J5: second / audited_conditional / bounded_theorem / class B. Majority rationale: The closed-form H_e formula and delta -> -delta conjugation parity are algebraic and close from the supplied definitions. The selector conclusion, however, relies on an imported reduced N_e surface, seed averages, favored-column closure functional, and relative-action machinery embedded in helper runners rather than cited retained authorities in the restricted packet. The primary runner computes nontrivial KKT and branch-gap checks, but those checks verify the imported setup rather than deriving the whole theorem from Cl(3) on Z^3 alone. Conditional is therefore the correct terminal status. | The closed-form H_e formula and conjugation parity are genuine algebraic checks over the supplied definitions. The selector classification, however, relies on imported helper machinery for the fixed N_e seed surface, favored closure column, eta closure functional, and relative-action selector, while the packet lists no cited authorities. The runner performs nontrivial numerical optimization rather than merely printing constants, but that does not close the missing premise chain from Cl(3) on Z^3. The conditional verdict is therefore the applyable result. | The algebraic closed-form H_e and conjugation-even delta reduction are supported by the packet. The selector classification, however, imports the fixed N_e seed surface, seed averages, favored closure column, eta normalization, and relative-action selector machinery through helper modules rather than deriving them from the axiom in this restricted packet. Because the note lists no cited authorities while relying on those upstream structures, the chain is conditional, not clean. | The closed-form H_e formula and delta -> -delta conjugation parity are algebraic and close from the displayed definitions. The selector classification, however, relies on imported helper machinery for the fixed N_e seed surface, favored column, closure eta map, transport normalizations, and relative-action selector, while the packet lists no cited authorities. The runner performs real numerical constrained solves, but this verifies a branch classification conditional on those imported structures rather than deriving the whole claim from the axiom in the restricted packet. | The closed-form H_e expression and delta-conjugation parity are algebraic and close from the supplied definitions. The selector classification, however, depends on imported helper machinery fixing the reduced N_e surface, seed values, favored closure column, eta normalization, and effective-action selector, while the note declares no cited authorities. The runner performs real numerical constrained solves, but it does not close those bridge premises from Cl(3) on Z^3 inside the restricted packet, so the result is conditional rather than clean.
 - **auditor confidence:** judicial_panel_majority
+
+### `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Sampled multistart runner diagnostic on the fixed N_e seed closure surface: the cached run resolves two dominant stationary branches among the tested starts, with low-branch S_rel=0.240906701390, gap ΔS=0.869750837948, and imposed favored-column closure eta/eta_obs=1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T112001Z-d6706af0-dm_leptogenesis_pmns_mul-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the sampled multistart starts, the constrained scan recovers one favored low-action PMNS-assisted N_e branch separated from a high-action branch by a finite action gap.  _(class `C`)_
+- **chain closes:** True — Within the narrowed sampled-runner scope, the primary runner constructs feasible closure starts, runs constrained stationary solves, clusters converged solutions, and computes the branch actions and eta readouts rather than printing the branch table as constants. The packet does not close, and the note no longer claims, certified-global branch enumeration or theorem-grade global selector authority.
+- **rationale:** The source note has been narrowed to the exact finite diagnostic supported by the cached runner output. The load-bearing branch enumeration and action-gap computation are produced by actual constrained optimization and clustering through the included helper chain, with no hard-coded branch representatives in the primary runner. The eta/eta_obs=1 statements are observation-normalized closure readouts on the imposed closure surface, not an independent global prediction. The note explicitly excludes branch completeness, branch uniqueness beyond the sampled starts, and certified-global selector content.
+- **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
 

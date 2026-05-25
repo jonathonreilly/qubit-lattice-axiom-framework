@@ -38706,11 +38706,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 8.629,
+      "load_bearing_score": 11.629,
       "load_bearing_step": "The module applies shell-averaging to the exact finite-rank exterior field and fits the unique radial-harmonic projection phi_eff(r)=a/r, then verifies the coarse-grained exterior metric residual across scan radii.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "80d40e2058e9ec979324f5a1900a1f472f60bea30990f5c308a4843fbe2d4e17",
       "note_path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check whether the inlined helper slices exactly match the full dynamic-import files used by the cached runner.",
@@ -110965,44 +110965,62 @@
       "verdict_rationale": null
     },
     "gellmann_completeness_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T11:28:13.049008+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T112752Z-c7562151-gellmann_completeness_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained authority supplies Hermitian traceless Gell-Mann generators with trace orthonormality, and the admitted standard dimension count gives an 8-dimensional target space. Linear independence plus equal dimension proves spanning, decomposition, closure, and no extra algebraic generators.",
       "claim_id": "gellmann_completeness_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Algebraic basis/completeness of the eight cited Gell-Mann generators for 3x3 traceless Hermitian matrices, equivalently iT^a spanning mathematical su(3), with commutator closure; no physical SU(3)_c or gluon interpretation audited.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T11:28:13.049008+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_cl3_color_automorphism_theorem",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_cl3_color_automorphism_theorem",
       "load_bearing_score": 6.615,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The R-span of 8 linearly independent traceless Hermitian generators in the 8-dimensional real space of traceless Hermitian 3x3 matrices is the full space.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "02165e6158041d556520af75ea412fc561f8d912c3271518109c9aef44572b30",
       "note_path": "docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream ledgers preserve the narrowed algebraic scope and do not promote this decoration into a physical SU(3)_c/gluon completeness claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -111258,18 +111276,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/gellmann_completeness_check.py",
       "title": "Gell-Mann Completeness: {T^a} Is an R-Basis for su(3)",
       "transitive_descendants": 48,
-      "verdict_rationale": null
+      "verdict_rationale": "The proof is valid elementary linear algebra over the single retained algebraic parent plus admitted standard facts about su(3). The runner genuinely constructs the Gell-Mann matrices and checks Hermiticity, tracelessness, trace orthogonality, real rank, reconstruction, and commutator closure, but these are all algebraic identity checks rather than first-principles framework computation. Because the audited content is explicitly limited to the algebraic carrier and physical color/gluon/QCD identification is out of scope, no open physical bridge is load-bearing for this row."
     },
     "generated_geometry_synthesis_note": {
       "audit_date": null,
@@ -185567,11 +185585,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 18.949,
+      "load_bearing_score": 21.949,
       "load_bearing_step": "Eliminating the harmonic bulk by exact Schur complement gives Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, and E_R(f)=1/2 f^T Lambda_R f has gradient Lambda_R f equal to the microscopic trace flux.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "442809dcfb6350bf6c12658bd11b3259afff840932d45f5f12058fa1263cab0f",
       "note_path": "docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check the imported frontier modules if available, since their implementations are referenced by the runner but not included in this restricted packet.",

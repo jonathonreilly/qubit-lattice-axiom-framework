@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 425 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1274 |
+| unaudited | 1273 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 80 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 5 |
+| `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -52,20 +52,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 696 |
 | `audited_conditional` | 80 |
-| `audited_decoration` | 36 |
+| `audited_decoration` | 37 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1501 |
+| `unaudited` | 1500 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1029 |
-| `decoration` | 37 |
+| `decoration` | 38 |
 | `meta` | 231 |
 | `no_go` | 243 |
 | `open_gate` | 110 |
-| `positive_theorem` | 740 |
+| `positive_theorem` | 739 |
 
 | criticality | count |
 |---|---:|
@@ -910,6 +910,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
+| `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
@@ -5027,6 +5028,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Riccati recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k, together with induction, proves every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The recurrence follows algebraically from the stated Bessel derivative identities and the Riccati equation, and the sign induction is valid because all summands in the convolution share the same nonzero sign. The cited parent is retained_no_go, and no open upstream premise is needed for the narrow U(1) coefficient theorem beyond the stated U(1) normalization and standard Bessel calculus.
 - **rationale:** The proof is a genuine algebraic closure: parity follows from evenness of I_0, while density and sign alternation follow from the explicit Riccati coefficient recurrence and a correct strong induction. The runner source performs exact symbolic and rational checks rather than merely printing constants, though its finite-order checks are only corroborative because the note supplies the all-order induction. The cached runner summary line reports THEOREM PASS=7 while the note expected PASS=8, but the source and stdout show no failing theorem check and this count mismatch is not load-bearing.
+- **auditor confidence:** high
+
+### `gellmann_completeness_theorem_note_2026-05-02`
+
+- **Note:** [`GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic basis/completeness of the eight cited Gell-Mann generators for 3x3 traceless Hermitian matrices, equivalently iT^a spanning mathematical su(3), with commutator closure; no physical SU(3)_c or gluon interpretation audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T112752Z-c7562151-gellmann_completeness_th-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The R-span of 8 linearly independent traceless Hermitian generators in the 8-dimensional real space of traceless Hermitian 3x3 matrices is the full space.  _(class `A`)_
+- **chain closes:** True — The cited retained authority supplies Hermitian traceless Gell-Mann generators with trace orthonormality, and the admitted standard dimension count gives an 8-dimensional target space. Linear independence plus equal dimension proves spanning, decomposition, closure, and no extra algebraic generators.
+- **rationale:** The proof is valid elementary linear algebra over the single retained algebraic parent plus admitted standard facts about su(3). The runner genuinely constructs the Gell-Mann matrices and checks Hermiticity, tracelessness, trace orthogonality, real rank, reconstruction, and commutator closure, but these are all algebraic identity checks rather than first-principles framework computation. Because the audited content is explicitly limited to the algebraic carrier and physical color/gluon/QCD identification is out of scope, no open physical bridge is load-bearing for this row.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `generation_axiom_boundary_note`

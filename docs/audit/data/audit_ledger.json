@@ -255100,24 +255100,58 @@
       "verdict_rationale": null
     },
     "su3_cube_perron_solve_combined_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:10:56.799200+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "The current Wilson packet, without an added exact beta-6 nonperturbative completion object or fitted beta_eff, does not derive the observable bridge <P>_full = R_O(beta_eff).",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Finite NMAX=7, MODE_MAX=200 source-sector Perron reference solves for the two specified input rho choices, plus finite non-uniqueness evidence only for the three enumerated one-parameter rho families; no physical 3D residual environment rho or untruncated tensor-transfer solve is audited.",
+          "su3_fusion_engine_pr1_theorem_note_2026-05-03": "Finite default run of scripts/frontier_su3_fusion_engine.py at NMAX=4,n_grid=80 computing SU(3) fusion multiplicities on the 25-weight box 0<=p,q<=4 and checking V1-V9 plus integer residual.",
+          "su3_tensor_network_engine_roadmap_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "su3_fusion_engine_pr1_theorem_note_2026-05-03": "bounded_theorem",
+          "su3_tensor_network_engine_roadmap_note_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "su3_fusion_engine_pr1_theorem_note_2026-05-03": "retained_bounded",
+          "su3_tensor_network_engine_roadmap_note_2026-05-03": "meta"
+        },
+        "deps": [
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "su3_fusion_engine_pr1_theorem_note_2026-05-03",
+          "su3_tensor_network_engine_roadmap_note_2026-05-03"
+        ],
+        "load_bearing_score": 7.709,
+        "runner_hash": "3e78cab89a567099453df3c7d1b69983496f250ffaa115988cd013438994aba4",
+        "transitive_descendants": 147
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T191034Z-a04bd683-su3_cube_perron_solve_co-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The three narrowed computations are internally supported by the runner and retained Reference B packet. However the restricted packet includes a non-retained roadmap authority and explicitly leaves non-trivial intertwiner traces/open cube rho work outside the closed chain.",
       "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
-      "claim_scope": null,
+      "claim_scope": "Narrow audit of the L_s=2 PBC cube structural packet: 12 plaquettes/24 directed links/all-forward incidences, bipartite 6:6 plaquette adjacency, and trivial-sector rho = delta Reference B recovery only.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:10:56.799200+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -255129,20 +255163,22 @@
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.709,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The L_s=2 PBC cube geometry and bipartite plaquette graph are enumerated directly, and with rho = delta_(0,0) the source-sector Perron solve gives P_trivial(6) = 0.4225317396, matching Reference B.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "12eddda0eff83a56174db5586a583737ffed6db2a6514b37867ecfe28c759d8d",
       "note_path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: remove the roadmap as a cited authority for this narrowed theorem or replace it with retained-grade engine/interface dependencies, then re-audit only the three narrowed claims.",
+      "open_dependency_paths": [
+        "docs/SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-25T16:06:47.029310+00:00",
@@ -255214,18 +255250,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "A": 1,
+        "B": 1,
+        "C": 5,
+        "D": 2,
+        "total_pass": 7
       },
       "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
       "title": "SU(3) Tensor-Network Engine + L_s=2 Cube Perron Solve (Combined PR)",
       "transitive_descendants": 147,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely enumerates the finite cube geometry, link incidences, and bipartite adjacency rather than merely printing the claimed facts, and it recomputes the trivial-sector Perron value from rho = delta. The narrowed positive result is not a renaming or numerical comparator match. Still, the packet cites the unaudited/meta roadmap and repeatedly states that the non-trivial cube rho/intertwiner trace calculation remains open, so retained status cannot propagate cleanly through this row."
     },
     "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24": {
       "audit_date": null,

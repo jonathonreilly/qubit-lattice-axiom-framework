@@ -109093,24 +109093,42 @@
       "verdict_rationale": "The source note\u2019s load-bearing claim is only the existence and verification of one finite constructed witness packet, and the provided runner actually computes that packet rather than importing or printing contested constants. The cited upstream authority is retained_bounded, and the open full Wilson-environment bridge is not used as a premise for this bounded claim. The conclusion therefore closes on its own finite terms while preserving the stated exclusions."
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T11:17:57.171636+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 7.022,
+        "runner_hash": "12efb8d9811a8650411775a972521c25a942671762e4197e7bc319ba498b7a6b",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T111532Z-4cfa3a50-gauge_vacuum_plaquette_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs two finite transfer/boundary witnesses satisfying the listed structural conditions and computes a nonzero rho gap and nonzero induced three-sample gap. Because the note explicitly narrows away from full Wilson-parent/factorization admissibility, those open constraints are not needed for this scoped counterexample.",
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Finite structural-surface underdetermination for the listed positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization witness packet; not the full beta = 6 Wilson-parent/factorization admissibility stack.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T11:17:57.171636+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -109118,19 +109136,19 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 7.022,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner exhibits admissible choices on the listed structural surface with rho_A != rho_B, and the same universal left operator sends them to different normalized three-sample triples.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3e6d3d8a866e8deac31e377bc4e62558f25a218d7099ebfceb2ef0e727573265",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the support-only note-string checks remain non-load-bearing after the 2026-05-24 narrowing.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -109324,18 +109342,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 2,
+        "B": 5,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 10
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Spatial-Environment Transfer Underdetermination",
       "transitive_descendants": 64,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing path is a constructive finite computation, not a definition substitution or an imported numerical match: the code builds the recurrence, transfer witnesses, boundary amplitudes, normalized rho vectors, and sample operator, then checks the gaps. The cited upstream authority is retained_bounded and is used consistently with the narrowed finite-witness scope rather than as authority for the actual untruncated Wilson environment. The No-Go Discipline gate passes only under that narrowed scope: attacks via full-stack collapse, actual Wilson-environment identity, stronger admissibility constraints, finite-to-infinite extension, and witness-condition failure are either explicitly outside scope or answered by the computed two-witness counterexample on the tested surface."
     },
     "gauge_vacuum_plaquette_spectral_measure_theorem_note": {
       "audit_date": "2026-05-23T14:03:36.154406+00:00",

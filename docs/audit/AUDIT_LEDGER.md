@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 141 |
-| **retained_no_go** | 154 |
+| **retained_no_go** | 155 |
 | **retained_bounded** | 422 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1279 |
+| unaudited | 1278 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 692 |
+| `audited_clean` | 693 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1506 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -348,6 +348,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4916,6 +4917,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner constructs S_packet = exp(ETA J) D_packet exp(ETA J), eta_packet = exp(ETA J / 2) e_(0,0), and z_packet = S_packet^DEPTH eta_packet, then verifies the finite positivity, symmetry, normalization, and Perron-overlap properties.  _(class `C`)_
 - **chain closes:** True — Within the narrowed finite scope, the runner source genuinely constructs the recurrence matrix, transfer witness, boundary vector, and boundary-amplitude sequence, then checks the claimed finite properties. The full Wilson-environment transfer identity is explicitly outside the audited claim scope.
 - **rationale:** The source note’s load-bearing claim is only the existence and verification of one finite constructed witness packet, and the provided runner actually computes that packet rather than importing or printing contested constants. The cited upstream authority is retained_bounded, and the open full Wilson-environment bridge is not used as a premise for this bounded claim. The conclusion therefore closes on its own finite terms while preserving the stated exclusions.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite structural-surface underdetermination for the listed positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization witness packet; not the full beta = 6 Wilson-parent/factorization admissibility stack.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T111532Z-4cfa3a50-gauge_vacuum_plaquette_s-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner exhibits admissible choices on the listed structural surface with rho_A != rho_B, and the same universal left operator sends them to different normalized three-sample triples.  _(class `C`)_
+- **chain closes:** True — The runner constructs two finite transfer/boundary witnesses satisfying the listed structural conditions and computes a nonzero rho gap and nonzero induced three-sample gap. Because the note explicitly narrows away from full Wilson-parent/factorization admissibility, those open constraints are not needed for this scoped counterexample.
+- **rationale:** The load-bearing path is a constructive finite computation, not a definition substitution or an imported numerical match: the code builds the recurrence, transfer witnesses, boundary amplitudes, normalized rho vectors, and sample operator, then checks the gaps. The cited upstream authority is retained_bounded and is used consistently with the narrowed finite-witness scope rather than as authority for the actual untruncated Wilson environment. The No-Go Discipline gate passes only under that narrowed scope: attacks via full-stack collapse, actual Wilson-environment identity, stronger admissibility constraints, finite-to-infinite extension, and witness-condition failure are either explicitly outside scope or answered by the computed two-witness counterexample on the tested surface.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_spectral_measure_theorem_note`

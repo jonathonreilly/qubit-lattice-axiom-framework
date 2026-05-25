@@ -47,13 +47,17 @@ Landed in this packet:
 - `docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md`
 - `scripts/frontier_yt_primitive_source_unit_fisher_normalization.py`
 - `outputs/yt_primitive_source_unit_fisher_normalization_2026-05-25.json`
+- `docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_operational_source_action_bridge_theorem_attempt.py`
+- `outputs/yt_operational_source_action_bridge_theorem_attempt_2026-05-25.json`
 
 Candidate follow-on artifacts:
 
-- Source/action convention closure theorem: derive physical top Yukawa
-  deformation as the primitive unit signed-record action source, or demote the
-  remaining convention as an explicit admission. The Fisher/RN packet now
-  proves `lambda=1` inside that convention.
+- Physical-intervention closure theorem: prove the physical top Yukawa
+  deformation is the operational primitive RN source intervention for
+  `O_top`, or demote that final physical identification as an explicit
+  admission. The operational source/action packet now derives the action-source
+  form from RN/log-density algebra once the intervention premise is accepted.
 - Broader top coefficient theorem note and runner if a different
   axiom-native dynamical flavor principle can select `lambda=1`.
 - Direct strict top correlator/response measurement packet.

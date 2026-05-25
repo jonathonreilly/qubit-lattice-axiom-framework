@@ -30,4 +30,9 @@
   scaled signed-record source has score `lambda epsilon` and Fisher norm
   `lambda^2`, so primitive unit source normalization selects `lambda=1` once
   the source/action branch applies to the physical top deformation.
+- Added the operational source/action bridge theorem attempt. It derives
+  `S_h=S_0-hO+c(h)I` from finite-volume RN density and action-as-log-density
+  algebra once a physical source intervention is supplied. The final open
+  premise is now the physical identification of top Yukawa deformation with
+  that operational source for `O_top`.
 - No retained or proposed-retained wording allowed by this packet.

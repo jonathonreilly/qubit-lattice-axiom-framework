@@ -62,6 +62,9 @@ primary_artifacts:
   - docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md
   - scripts/frontier_yt_primitive_source_unit_fisher_normalization.py
   - outputs/yt_primitive_source_unit_fisher_normalization_2026-05-25.json
+  - docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md
+  - scripts/frontier_yt_operational_source_action_bridge_theorem_attempt.py
+  - outputs/yt_operational_source_action_bridge_theorem_attempt_2026-05-25.json
 current_sharp_blocker: >
   The neutral carrier-ray bridge, W/Z denominator response, symbolic top
   response row shape, top/W response-ratio algebra, and local source-coordinate
@@ -78,7 +81,11 @@ current_sharp_blocker: >
   y_33(lambda)=lambda/sqrt(6). The Fisher/RN source-unit packet proves that
   once the source/action branch applies, lambda=1 is forced by primitive unit
   source normalization because the scaled family has Fisher norm lambda^2. The
-  repo still lacks a retained top-coefficient theorem or direct top response measurement,
+  operational source/action bridge derives the action-source form from RN
+  source density plus action-as-log-density algebra once a physical source
+  intervention is supplied. The repo still lacks a theorem identifying the
+  physical top Yukawa deformation as that operational primitive RN source for
+  O_top, a retained top-coefficient theorem or direct top response measurement,
   retained top-carrier/hypercharge authority, physical-scale g_2 authority,
   and matching/running closure.
 agent_probes:

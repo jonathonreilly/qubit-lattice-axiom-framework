@@ -76,15 +76,31 @@ source/action convention accepted for the physical top Yukawa deformation
   -> y_33 = 1/sqrt(6)
 ```
 
-The remaining blocker is now only the source/action convention gate:
+Latest bridge reduction:
+
+```text
+RN source density R_h=exp(hO)/E exp(hO)
+  + action as negative log density
+  -> S_h=S_0-hO+c(h)I
+```
+
+So the source/action form is now derived inside the operational source
+framework, not merely asserted as a convention.
+
+Axioms-as-reality reading: A1/A2 make the signed qubit records physical. The
+remaining open premise is not whether records are real; it is whether the
+physical top Yukawa deformation is the operational primitive RN source
+intervention for `O_top`.
+
+The remaining blocker is now the physical-intervention identification:
 
 ```text
 physical top Yukawa deformation
-  = primitive unit signed-record action source on normalized top trilinear
+  = operational primitive RN source intervention for normalized top trilinear
 ```
 
 If this is not derived, do not keep polishing W/Z or carrier rows for positive
 closure. Pivot to a direct top response/correlator measurement or mark the
-source/action unit as an explicit admitted convention.
+physical-intervention identification as an explicit admitted convention.
 
 Keep observed W/Z/top masses comparator-only.

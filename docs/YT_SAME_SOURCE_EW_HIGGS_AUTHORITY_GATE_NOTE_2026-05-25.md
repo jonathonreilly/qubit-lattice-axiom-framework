@@ -92,9 +92,9 @@ a fixed finite-algebra normalization.  That is useful support.
 It still does not derive the top transfer surface.  A single signed record is
 a scalar source coordinate.  The carrier-ray bridge aligns it with the neutral
 ray, and the W/Z packet differentiates the retained covariant kinetic
-denominator.  The top numerator still needs a strict transfer response on the
-same source.  That is not a consequence of the one-component Y_T source
-identity alone.
+denominator, and the symbolic top-response packet supplies the top row shape.
+The top numerator still needs a coefficient theorem or direct measurement.
+That is not a consequence of the one-component Y_T source identity alone.
 
 ## Exact Obstruction Witness
 
@@ -117,8 +117,8 @@ This gate is narrower than the earlier route inventory:
 
 - It accepts the retained EW mass theorem as the W denominator algebra.
 - It accepts the top/W FH ratio algebra as closed conditional support.
-- It pinpoints the first missing premise after carrier-ray and W/Z response
-  support: the same-source top transfer-response theorem.
+- It pinpoints the first missing premise after carrier-ray, W/Z response, and
+  symbolic top-row support: the top coefficient theorem or direct measurement.
 - It rejects the tempting shortcut where carrier-ray alignment plus W/Z
   denominator response is treated as a top response row.
 

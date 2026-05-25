@@ -7,18 +7,20 @@ Proposed-retained allowed: no.
 Direct effective status change allowed: no.
 
 Reason: the packet now supplies exact support for the neutral carrier-ray
-bridge and strict W/Z denominator response, and it narrows the top-side wall
-with an exact underdetermination no-go.  The current support rows do not supply
-strict top response rows or a retained top-coefficient theorem.  They also do
-not supply retained one-Higgs/top-carrier authority, retained hypercharge
-authority, physical-scale `g_2(v)`, direct production correlator evidence, or
+bridge, strict W/Z denominator response, and a symbolic top-response row shape,
+and it narrows the top-side wall with an exact underdetermination no-go.  The
+current support rows do not supply a retained top-coefficient theorem or direct
+top response measurement.  They also do not supply retained
+one-Higgs/top-carrier authority, retained hypercharge authority,
+physical-scale `g_2(v)`, direct production correlator evidence, or
 matching/running closure.
 
 Best positive route after this packet:
 
 ```text
-strict top response/coefficient row on the neutral carrier source
+top coefficient theorem or direct top response measurement on the neutral carrier source
   + W/Z denominator response
+  + symbolic top response row shape
   + retained same-scale g_2
 ```
 

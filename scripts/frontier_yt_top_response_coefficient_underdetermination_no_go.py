@@ -20,6 +20,7 @@ STRICT_WZ = DOCS / "YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25
 ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
 COLOR_NOGO = DOCS / "YT_COLOR_PROJECTION_CORRECTION_NOTE.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
+SYMBOLIC_TOP_PACKET = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -143,13 +144,15 @@ def part5_current_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     strict_top_rows = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
     blockers = {
         "wz_denominator_response_closed": True,
+        "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "top_coefficient_underdetermined_by_current_support": True,
-        "strict_top_response_rows_present": strict_top_rows.exists(),
+        "coefficient_certified_top_response_rows_present": strict_top_rows.exists(),
         "retained_closure_allowed": False,
     }
     check("W/Z denominator response is already support-closed", blockers["wz_denominator_response_closed"])
+    check("symbolic top response row is present", blockers["symbolic_top_response_row_present"])
     check("top coefficient is underdetermined by current support", blockers["top_coefficient_underdetermined_by_current_support"])
-    check("strict top response rows remain absent", not blockers["strict_top_response_rows_present"])
+    check("coefficient-certified top response rows remain absent", not blockers["coefficient_certified_top_response_rows_present"])
     check("retained Y_T closure is not allowed", not blockers["retained_closure_allowed"], statuses)
     return blockers
 

@@ -5,9 +5,10 @@ The fanout found one strongest path and several guardrails.
 Strongest path after this block:
 
 ```text
-strict same-source top response/coefficient theorem
+top coefficient theorem or direct top response measurement
   + already closed neutral carrier-ray source
   + already closed W/Z denominator response
+  + already closed symbolic top response row shape
   -> y_t/g_2 or y_t if same-scale g_2 is retained
 ```
 
@@ -17,9 +18,10 @@ normalization theorem.
 
 The top/W FH algebra, neutral EW radial carrier algebra, local
 source-coordinate invariance, signed-record-to-neutral-ray carrier bridge, and
-strict W/Z denominator response now close as exact support.  The unknown source
-slope or source-coordinate convention is not a blocker for the same-source
-top/W ratio.
+strict W/Z denominator response now close as exact support.  The symbolic top
+response row shape also closes, but with a free coefficient.  The unknown
+source slope or source-coordinate convention is not a blocker for the
+same-source top/W ratio.
 
 The remaining hard positive target is not W/Z normalization.  A narrow no-go
 now proves that carrier alignment plus W/Z response cannot determine the top
@@ -28,7 +30,7 @@ positive theorem must supply the numerator:
 
 ```text
 neutral carrier-ray source
-  -> strict top response/coefficient row on the same surface
+  -> top coefficient theorem or direct top response measurement
 ```
 
 Keep observed W/Z/top masses comparator-only.

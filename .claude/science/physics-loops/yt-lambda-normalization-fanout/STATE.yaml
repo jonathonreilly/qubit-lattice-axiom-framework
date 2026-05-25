@@ -41,14 +41,18 @@ primary_artifacts:
   - docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md
   - scripts/frontier_yt_top_response_coefficient_underdetermination_no_go.py
   - outputs/yt_top_response_coefficient_underdetermination_no_go_2026-05-25.json
+  - docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md
+  - scripts/frontier_yt_strict_symbolic_top_response_row_packet.py
+  - outputs/yt_strict_symbolic_top_response_row_packet_2026-05-25.json
 current_sharp_blocker: >
-  The neutral carrier-ray bridge, W/Z denominator response, top/W response-ratio
-  algebra, and local source-coordinate invariance now close as exact support.
-  A narrow no-go shows those rows still do not determine the top numerator
-  coefficient: completions with different y_t share the same carrier and W/Z
-  response. The repo still lacks strict same-source top response rows or a
-  retained top-coefficient theorem, retained top-carrier/hypercharge authority,
-  physical-scale g_2 authority, and matching/running closure.
+  The neutral carrier-ray bridge, W/Z denominator response, symbolic top
+  response row shape, top/W response-ratio algebra, and local source-coordinate
+  invariance now close as support. A narrow no-go shows these rows still do not
+  determine the top coefficient: completions with different y_t share the same
+  carrier, W/Z response, and symbolic top-row form. The repo still lacks a
+  retained top-coefficient theorem or direct top response measurement, retained
+  top-carrier/hypercharge authority, physical-scale g_2 authority, and
+  matching/running closure.
 agent_probes:
   A_same_surface_kinetic_lsz: 019e5eb1-41d5-7aa3-8471-e4d31770757d
   B_wz_response_bypass: 019e5eb1-426c-7ea0-8664-918bf4468c74

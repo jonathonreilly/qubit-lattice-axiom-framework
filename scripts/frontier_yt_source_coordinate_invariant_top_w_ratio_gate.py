@@ -24,6 +24,7 @@ FH_GATE = DOCS / "YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md"
 INTERTWINER_GATE = DOCS / "YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md"
 NEUTRAL_RAY_BRIDGE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
 STRICT_WZ_PACKET = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
+SYMBOLIC_TOP_PACKET = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
@@ -148,16 +149,18 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
         "source_coordinate_normalization_blocker_retired_for_ratio": True,
         "neutral_carrier_ray_bridge_present": NEUTRAL_RAY_BRIDGE.exists(),
         "strict_wz_denominator_response_present": STRICT_WZ_PACKET.exists(),
+        "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "full_same_surface_top_w_transfer_response_present": False,
-        "strict_same_source_top_w_rows_present": False,
+        "coefficient_certified_top_w_rows_present": False,
         "numerical_g2_retained_authority_present": False,
         "retained_closure_allowed": False,
     }
     check("source-coordinate normalization is not a blocker for the ratio", blockers["source_coordinate_normalization_blocker_retired_for_ratio"])
     check("neutral carrier-ray bridge is present", blockers["neutral_carrier_ray_bridge_present"])
     check("strict W/Z denominator response is present", blockers["strict_wz_denominator_response_present"])
+    check("symbolic top response row is present", blockers["symbolic_top_response_row_present"])
     check("full same-surface top/W transfer response remains absent", not blockers["full_same_surface_top_w_transfer_response_present"])
-    check("strict same-source top/W rows remain absent", not blockers["strict_same_source_top_w_rows_present"])
+    check("coefficient-certified top/W rows remain absent", not blockers["coefficient_certified_top_w_rows_present"])
     check("numerical g_2 authority remains absent", not blockers["numerical_g2_retained_authority_present"])
     check("status remains support/open gate", not blockers["retained_closure_allowed"], statuses)
     return blockers
@@ -204,8 +207,9 @@ def main() -> int:
         "proposal_allowed": False,
         "proposal_allowed_reason": (
             "The ratio is coordinate-invariant, the neutral carrier ray is bridged, "
-            "and W/Z denominator response is present, but the repo still lacks strict "
-            "same-source top response rows and retained numerical g_2 authority."
+            "W/Z denominator response is present, and the symbolic top response row "
+            "is present, but the repo still lacks a derived top coefficient and "
+            "retained numerical g_2 authority."
         ),
         "coordinate_invariance_closed": True,
         "current_blockers": blockers,

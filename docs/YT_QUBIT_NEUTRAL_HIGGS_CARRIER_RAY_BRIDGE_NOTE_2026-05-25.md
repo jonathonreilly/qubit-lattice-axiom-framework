@@ -145,7 +145,7 @@ This note does not derive positive retained `Y_T` closure.  It does not claim:
 
 - the source-action support packet is now a full physical neutral EW/Higgs
   transfer surface;
-- strict same-source top/W Feynman-Hellmann response rows;
+- a coefficient-fixed top/W Feynman-Hellmann response row;
 - strict `C_ss/C_sH/C_HH` source-Higgs pole rows;
 - canonical scalar LSZ normalization;
 - retained physical-scale `g_2(v)`;
@@ -159,9 +159,10 @@ The current positive route is now narrower:
 closed support:
   signed record -> P_- occupation -> neutral Higgs carrier ray
   + source-coordinate scale cancels in same-source top/W ratio
+  + symbolic top-response row shape
 
 still open:
-  strict same-source top transfer response
+  top coefficient theorem or direct top response measurement
   + retained top carrier / hypercharge support
   + retained or bounded physical-scale g_2 bridge
 ```
@@ -199,8 +200,8 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
 proposal_allowed_reason: |
-  The carrier-ray bridge is closed, but strict same-source top/W response
-  rows, retained one-Higgs/top carrier authority, retained hypercharge
+  The carrier-ray bridge is closed and the symbolic top row shape is present,
+  but the top coefficient, retained one-Higgs/top carrier authority, retained hypercharge
   authority, and physical-scale g_2 authority remain open.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

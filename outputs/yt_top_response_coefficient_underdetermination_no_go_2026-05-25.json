@@ -1,12 +1,13 @@
 {
   "current_blockers": {
+    "coefficient_certified_top_response_rows_present": false,
     "retained_closure_allowed": false,
-    "strict_top_response_rows_present": false,
+    "symbolic_top_response_row_present": true,
     "top_coefficient_underdetermined_by_current_support": true,
     "wz_denominator_response_closed": true
   },
   "fail_count": 0,
-  "pass_count": 42,
+  "pass_count": 43,
   "proposal_allowed": false,
   "proposal_allowed_reason": "This is a negative boundary. It proves the next missing input is a strict top response/coefficient theorem, not more W/Z or carrier algebra.",
   "review_surface": [

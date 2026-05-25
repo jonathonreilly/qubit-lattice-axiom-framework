@@ -27,6 +27,7 @@ ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.
 HYPERCHARGE = DOCS / "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
 EW_COUPLING = DOCS / "EW_COUPLING_DERIVATION_NOTE.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
+SYMBOLIC_TOP_PACKET = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -155,14 +156,16 @@ def part5_current_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     strict_top_w_rows = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
     blockers = {
         "strict_wz_denominator_response_closed": True,
-        "strict_same_source_top_response_present": strict_top_w_rows.exists(),
+        "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
+        "coefficient_certified_top_response_present": strict_top_w_rows.exists(),
         "one_higgs_yukawa_selection_retained": statuses["one_higgs_yukawa_selection_status"] == "retained",
         "hypercharge_uniqueness_retained": statuses["hypercharge_uniqueness_status"] == "retained",
         "physical_scale_g2_retained": statuses["ew_coupling_status"] == "retained",
         "retained_closure_allowed": False,
     }
     check("strict W/Z denominator response is closed", blockers["strict_wz_denominator_response_closed"])
-    check("strict same-source top response remains absent", not blockers["strict_same_source_top_response_present"])
+    check("symbolic top response row is present", blockers["symbolic_top_response_row_present"])
+    check("coefficient-certified top response remains absent", not blockers["coefficient_certified_top_response_present"])
     check("one-Higgs top carrier is not retained authority yet", not blockers["one_higgs_yukawa_selection_retained"])
     check("hypercharge uniqueness is not retained authority yet", not blockers["hypercharge_uniqueness_retained"])
     check("physical-scale g_2 is not retained authority yet", not blockers["physical_scale_g2_retained"])
@@ -190,7 +193,7 @@ def part6_firewalls() -> None:
         "proposed_retained",
         "This packet derives `y_t`",
         "positive Y_T closure has been obtained",
-        "strict same-source top response rows are present",
+        "coefficient-certified top response rows are present",
         "physical-scale `g_2(v)` is retained",
     ):
         check(f"forbidden overclaim absent: {phrase}", phrase not in note)
@@ -212,8 +215,9 @@ def main() -> int:
         "status": "exact support: strict W/Z denominator response rows on neutral carrier ray",
         "proposal_allowed": False,
         "proposal_allowed_reason": (
-            "The W/Z denominator response closes, but strict same-source top response, "
-            "retained one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open."
+            "The W/Z denominator response closes and the symbolic top row is present, "
+            "but the top coefficient, retained one-Higgs/hypercharge authority, and "
+            "physical-scale g_2 authority remain open."
         ),
         "strict_wz_denominator_response_closed": True,
         "current_blockers": blockers,

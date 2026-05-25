@@ -33,6 +33,7 @@ LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 STRICT_TOP_W_ROWS = OUTPUT.parent / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_WZ_PACKET = OUTPUT.parent / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
+SYMBOLIC_TOP_PACKET = OUTPUT.parent / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -143,7 +144,9 @@ def part5_current_blockers() -> dict[str, Any]:
     print("\nPart 5: current closure blockers")
     strict_top_w_present = STRICT_TOP_W_ROWS.exists()
     strict_wz_present = STRICT_WZ_PACKET.exists()
-    check("strict same-source top/W FH rows absent", not strict_top_w_present, STRICT_TOP_W_ROWS.relative_to(ROOT).as_posix())
+    symbolic_top_present = SYMBOLIC_TOP_PACKET.exists()
+    check("symbolic top response row packet present", symbolic_top_present, SYMBOLIC_TOP_PACKET.relative_to(ROOT).as_posix())
+    check("coefficient-certified top/W FH rows absent", not strict_top_w_present, STRICT_TOP_W_ROWS.relative_to(ROOT).as_posix())
     check("strict W/Z denominator-response packet present", strict_wz_present, STRICT_WZ_PACKET.relative_to(ROOT).as_posix())
 
     source_action_text = read(SOURCE_ACTION_STATUS)
@@ -157,6 +160,7 @@ def part5_current_blockers() -> dict[str, Any]:
     return {
         "strict_top_w_rows_present": strict_top_w_present,
         "strict_wz_packet_present": strict_wz_present,
+        "symbolic_top_response_row_present": symbolic_top_present,
         "same_source_ew_higgs_authority_present": False,
         "numerical_g2_retained_authority_present": False,
     }
@@ -212,8 +216,9 @@ def main() -> int:
         "proposal_allowed": proposal_allowed,
         "proposal_allowed_reason": (
             "Blocked: W/Z denominator response is present, but the source-action support "
-            "packet is retained_bounded only, strict same-source top FH rows are absent, "
-            "and v-scale g_2 authority is not retained."
+            "packet is retained_bounded only, the symbolic top response row still has "
+            "a free coefficient, coefficient-certified top FH rows are absent, and "
+            "v-scale g_2 authority is not retained."
         ),
         "current_blockers": blockers,
         "upstream_statuses": statuses,

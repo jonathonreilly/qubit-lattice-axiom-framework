@@ -29,6 +29,7 @@ SOURCE_COORD = DOCS / "YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026
 ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
 HYPERCHARGE = DOCS / "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
+SYMBOLIC_TOP_PACKET = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -183,8 +184,9 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     blockers = {
         "neutral_carrier_ray_bridge_closed": True,
         "wz_denominator_response_closed": strict_wz_packet.exists(),
+        "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "full_same_surface_top_w_transfer_response_closed": False,
-        "strict_same_source_top_w_rows_present": strict_top_w_rows.exists(),
+        "coefficient_certified_top_w_rows_present": strict_top_w_rows.exists(),
         "strict_same_source_wz_packet_present": strict_wz_packet.exists(),
         "one_higgs_yukawa_selection_retained": statuses["one_higgs_yukawa_selection_status"] == "retained",
         "hypercharge_uniqueness_retained": statuses["hypercharge_uniqueness_status"] == "retained",
@@ -193,8 +195,9 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     }
     check("neutral carrier-ray bridge is closed", blockers["neutral_carrier_ray_bridge_closed"])
     check("strict W/Z denominator response packet is present", blockers["wz_denominator_response_closed"])
+    check("symbolic top response row packet is present", blockers["symbolic_top_response_row_present"])
     check("full same-surface top/W transfer response remains open", not blockers["full_same_surface_top_w_transfer_response_closed"])
-    check("strict same-source top/W rows remain absent", not blockers["strict_same_source_top_w_rows_present"])
+    check("coefficient-certified top/W rows remain absent", not blockers["coefficient_certified_top_w_rows_present"])
     check("one-Higgs top carrier is not retained authority yet", not blockers["one_higgs_yukawa_selection_retained"])
     check("hypercharge uniqueness is not retained authority yet", not blockers["hypercharge_uniqueness_retained"])
     check("physical-scale g_2 is not retained authority yet", not blockers["physical_scale_g2_retained"])
@@ -222,7 +225,7 @@ def part6_firewalls() -> None:
         "This note derives `y_t`",
         "retained Y_T closure has been obtained",
         "full physical neutral EW/Higgs transfer surface",
-        "strict top/W response rows are present",
+        "coefficient-certified top/W response rows are present",
     ):
         check(f"forbidden overclaim absent: {phrase}", phrase not in note)
 
@@ -243,9 +246,9 @@ def main() -> int:
         "status": "exact support: signed-record source is the neutral Higgs carrier ray up to affine source reparameterization",
         "proposal_allowed": False,
         "proposal_allowed_reason": (
-            "Carrier-ray alignment is closed, but full same-surface EW transfer response, "
-            "strict top/W rows, retained one-Higgs/hypercharge authority, and physical-scale "
-            "g_2 authority remain open."
+            "Carrier-ray alignment is closed and a symbolic top row is present, but "
+            "the top coefficient, retained one-Higgs/hypercharge authority, and "
+            "physical-scale g_2 authority remain open."
         ),
         "carrier_ray_bridge_closed": True,
         "current_blockers": blockers,

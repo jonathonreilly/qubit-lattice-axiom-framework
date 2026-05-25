@@ -1,18 +1,19 @@
 {
   "coordinate_invariance_closed": true,
   "current_blockers": {
+    "coefficient_certified_top_w_rows_present": false,
     "full_same_surface_top_w_transfer_response_present": false,
     "neutral_carrier_ray_bridge_present": true,
     "numerical_g2_retained_authority_present": false,
     "retained_closure_allowed": false,
     "source_coordinate_normalization_blocker_retired_for_ratio": true,
-    "strict_same_source_top_w_rows_present": false,
-    "strict_wz_denominator_response_present": true
+    "strict_wz_denominator_response_present": true,
+    "symbolic_top_response_row_present": true
   },
   "fail_count": 0,
-  "pass_count": 38,
+  "pass_count": 39,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The ratio is coordinate-invariant, the neutral carrier ray is bridged, and W/Z denominator response is present, but the repo still lacks strict same-source top response rows and retained numerical g_2 authority.",
+  "proposal_allowed_reason": "The ratio is coordinate-invariant, the neutral carrier ray is bridged, W/Z denominator response is present, and the symbolic top response row is present, but the repo still lacks a derived top coefficient and retained numerical g_2 authority.",
   "review_surface": [
     "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
     "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",

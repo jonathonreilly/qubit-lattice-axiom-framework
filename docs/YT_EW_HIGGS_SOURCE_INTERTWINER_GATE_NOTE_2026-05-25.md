@@ -93,8 +93,9 @@ The relevant carrier facts are currently split:
 - the Standard Model hypercharge uniqueness note is also unaudited in the
   ledger;
 - the new carrier-ray bridge closes the neutral-ray identification, and the
-  strict W/Z response packet closes the denominator side, but the top response
-  row remains open.
+  strict W/Z response packet closes the denominator side;
+- the symbolic top-response row packet closes the row shape but leaves the top
+  coefficient free.
 
 Therefore this note records support for the best route, not a status upgrade.
 
@@ -104,8 +105,8 @@ A closure theorem would need to prove all of the following without observed mass
 targets, fitted selectors, `H_unit`, Ward identity reuse, plaquette/u0, or
 `alpha_LM`:
 
-1. **Top transfer-response theorem:** the neutral carrier-ray source is
-   accepted as the physical radial coordinate in the top transfer surface.
+1. **Top coefficient theorem or measurement:** the neutral carrier-ray top
+   response has a derived or measured coefficient, not a free `Y_u33` entry.
 2. **Same-source theorem:** the same source coordinate enters the top and W
    transfer surfaces.
 3. **Top carrier theorem:** the top numerator is the up-type one-Higgs carrier
@@ -127,7 +128,7 @@ This note does not:
 - derive `m_t`;
 - derive `v = 246 GeV`;
 - derive `g_2`;
-- derive strict same-source top transfer response from the signed-record source;
+- derive the top coefficient from the signed-record source;
 - promote the Y_T lane beyond bounded/open-gate support.
 
 ## Verification

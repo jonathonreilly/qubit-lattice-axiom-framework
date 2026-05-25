@@ -26,10 +26,13 @@ Landed in this packet:
 - `docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md`
 - `scripts/frontier_yt_top_response_coefficient_underdetermination_no_go.py`
 - `outputs/yt_top_response_coefficient_underdetermination_no_go_2026-05-25.json`
+- `docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_strict_symbolic_top_response_row_packet.py`
+- `outputs/yt_strict_symbolic_top_response_row_packet_2026-05-25.json`
 
 Candidate follow-on artifacts:
 
-- Strict top response/coefficient theorem note and runner.
+- Top coefficient theorem note and runner.
 - Direct strict top correlator/response measurement packet.
 - Same-surface canonical scalar kinetic/LSZ theorem note and runner.
 - BRST/FMS scalar-normalization boundary note and runner.

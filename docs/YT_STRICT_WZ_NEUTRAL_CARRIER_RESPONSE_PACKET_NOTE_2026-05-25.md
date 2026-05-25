@@ -93,7 +93,7 @@ source reparameterization, W/Z ratio, and radial-Jacobian recovery algebra.
 This packet does not derive positive retained `Y_T` closure.  It does not
 claim:
 
-- strict same-source top response rows;
+- a derived or measured top coefficient;
 - the one-Higgs up-type top carrier as retained authority;
 - hypercharge uniqueness as retained authority;
 - retained physical-scale `g_2(v)`;
@@ -107,9 +107,10 @@ closed support:
   neutral carrier ray
   + W/Z denominator response
   + source-coordinate invariance
+  + symbolic top-response row shape
 
 still open:
-  strict top numerator response
+  top coefficient value
   + retained top carrier / hypercharge authority
   + physical-scale g_2 authority
 ```
@@ -131,7 +132,7 @@ admitted_observation_status: null
 proposal_allowed: false
 proposal_allowed_reason: |
   The W/Z denominator response rows close as exact support, but the top
-  numerator response row, retained top carrier/hypercharge authority, and
+  coefficient value, retained top carrier/hypercharge authority, and
   physical-scale g_2 authority remain open.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

@@ -84,8 +84,10 @@ This reduces the field of attack to three live mechanisms:
 
 1. break the scale using an absolute same-source W/Z response with gauge
    normalization held fixed.  `YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25`
-   now supplies the W/Z denominator response; the top numerator response and
-   physical-scale `g_2` authority remain open;
+   now supplies the W/Z denominator response, and
+   `YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25` supplies the
+   symbolic top-response row shape; the top coefficient and physical-scale
+   `g_2` authority remain open;
 2. break the scale using a same-surface canonical `O_H` plus OS/LSZ or an
    equal-time/contact sum rule;
 3. avoid the scale by taking a same-source response ratio, for example
@@ -185,7 +187,8 @@ same Y_T source h
 
 This block still needs:
 
-1. strict same-source top response on the neutral carrier-ray source;
+1. a top coefficient theorem or direct top response measurement on the neutral
+   carrier-ray source;
 2. retained top-carrier / hypercharge authority, or a self-contained
    replacement theorem;
 3. a proof that no observed mass or fitted target enters the response

@@ -3,12 +3,13 @@
     "numerical_g2_retained_authority_present": false,
     "same_source_ew_higgs_authority_present": false,
     "strict_top_w_rows_present": false,
-    "strict_wz_packet_present": true
+    "strict_wz_packet_present": true,
+    "symbolic_top_response_row_present": true
   },
   "fail_count": 0,
-  "pass_count": 37,
+  "pass_count": 38,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "Blocked: W/Z denominator response is present, but the source-action support packet is retained_bounded only, strict same-source top FH rows are absent, and v-scale g_2 authority is not retained.",
+  "proposal_allowed_reason": "Blocked: W/Z denominator response is present, but the source-action support packet is retained_bounded only, the symbolic top response row still has a free coefficient, coefficient-certified top FH rows are absent, and v-scale g_2 authority is not retained.",
   "review_surface": [
     "docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md",
     "scripts/frontier_yt_fh_top_w_response_ratio_gate.py",

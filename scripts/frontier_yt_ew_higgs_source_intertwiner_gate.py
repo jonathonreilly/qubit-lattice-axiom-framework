@@ -23,6 +23,7 @@ OUTPUT = ROOT / "outputs" / "yt_ew_higgs_source_intertwiner_gate_2026-05-25.json
 NOTE = DOCS / "YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md"
 NEUTRAL_RAY_BRIDGE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
 STRICT_WZ_PACKET = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
+SYMBOLIC_TOP_PACKET = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
 ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
 HYPERCHARGE = DOCS / "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
@@ -153,16 +154,18 @@ def part5_current_blockers(statuses: dict[str, Any]) -> dict[str, Any]:
     blockers = {
         "neutral_carrier_ray_bridge_present": NEUTRAL_RAY_BRIDGE.exists(),
         "strict_wz_denominator_response_present": STRICT_WZ_PACKET.exists(),
+        "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "full_same_surface_top_w_transfer_response_present": False,
         "one_higgs_yukawa_selection_retained": statuses["one_higgs_yukawa_selection_status"] == "retained",
         "hypercharge_uniqueness_retained": statuses["hypercharge_uniqueness_status"] == "retained",
-        "strict_same_source_top_w_rows_present": strict_rows.exists(),
+        "coefficient_certified_top_w_rows_present": strict_rows.exists(),
         "numerical_g2_retained_authority_present": False,
     }
     check("neutral carrier-ray bridge is present", blockers["neutral_carrier_ray_bridge_present"])
     check("strict W/Z denominator response is present", blockers["strict_wz_denominator_response_present"])
+    check("symbolic top response row is present", blockers["symbolic_top_response_row_present"])
     check("full same-surface top/W transfer response remains unproved", not blockers["full_same_surface_top_w_transfer_response_present"])
-    check("strict same-source top/W rows remain absent", not blockers["strict_same_source_top_w_rows_present"])
+    check("coefficient-certified top/W rows remain absent", not blockers["coefficient_certified_top_w_rows_present"])
     check("one-Higgs carrier is not retained authority yet", not blockers["one_higgs_yukawa_selection_retained"])
     check("hypercharge uniqueness is not retained authority yet", not blockers["hypercharge_uniqueness_retained"])
     return blockers
@@ -209,10 +212,11 @@ def main() -> int:
         and statuses["ew_mass_status"] == "retained"
         and blockers["neutral_carrier_ray_bridge_present"]
         and blockers["strict_wz_denominator_response_present"]
+        and blockers["symbolic_top_response_row_present"]
         and blockers["full_same_surface_top_w_transfer_response_present"]
         and blockers["one_higgs_yukawa_selection_retained"]
         and blockers["hypercharge_uniqueness_retained"]
-        and blockers["strict_same_source_top_w_rows_present"]
+        and blockers["coefficient_certified_top_w_rows_present"]
         and blockers["numerical_g2_retained_authority_present"]
     )
     result = {
@@ -221,9 +225,9 @@ def main() -> int:
         "retained_closure_allowed": retained_closure_allowed,
         "retained_closure_blocker": (
             "The neutral EW carrier ray is now bridged from the signed-record source, "
-            "and W/Z denominator response is present, but the repo still lacks strict "
-            "top response on the same surface, and the top one-Higgs carrier plus "
-            "hypercharge rows are not retained authority."
+            "W/Z denominator response is present, and the symbolic top response row "
+            "is present, but the repo still lacks a derived top coefficient and the "
+            "top one-Higgs carrier plus hypercharge rows are not retained authority."
         ),
         "current_blockers": blockers,
         "upstream_statuses": statuses,

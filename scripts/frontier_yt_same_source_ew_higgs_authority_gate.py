@@ -31,6 +31,7 @@ SOURCE_ACTION_STATUS = DOCS / ("YT_" + "PR" + "230_CONSOLIDATED_STATUS_NOTE_2026
 FH_GATE = DOCS / "YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md"
 NEUTRAL_RAY_BRIDGE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
 STRICT_WZ_PACKET = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
+SYMBOLIC_TOP_PACKET = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
@@ -158,6 +159,7 @@ def part4_intertwiner_missing_witness() -> dict[str, Any]:
     ew_text = read(EW_MASS)
     check("neutral carrier-ray bridge is present", NEUTRAL_RAY_BRIDGE.exists())
     check("strict W/Z denominator response is present", STRICT_WZ_PACKET.exists())
+    check("symbolic top response row is present", SYMBOLIC_TOP_PACKET.exists())
     check(
         "source-action support says it is not full physical neutral EW/Higgs authority",
         "not same-surface neutral EW/Higgs authority" in source_action_text
@@ -173,11 +175,12 @@ def part4_intertwiner_missing_witness() -> dict[str, Any]:
     v2 = a2 * h
     slopes_equal_only_if = sp.solve(sp.Eq(sp.diff(v1, h), sp.diff(v2, h)), a2)
     check("two radial embeddings differ unless slope is separately fixed", slopes_equal_only_if == [a1], slopes_equal_only_if)
-    check("no strict top/W FH row certificate exists", not (ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json").exists())
+    check("no coefficient-certified top/W FH row certificate exists", not (ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json").exists())
     return {
         "same_source_ew_higgs_authority_present": False,
         "neutral_carrier_ray_bridge_present": NEUTRAL_RAY_BRIDGE.exists(),
         "strict_wz_denominator_response_present": STRICT_WZ_PACKET.exists(),
+        "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "full_same_surface_top_w_transfer_response_present": False,
         "strict_top_w_rows_present": False,
     }
@@ -226,7 +229,7 @@ def main() -> int:
         "proposal_allowed_reason": (
             "The neutral carrier ray is now bridged, but the source-action support "
             "packet is retained_bounded only and no retained theorem supplies the "
-            "strict top response needed to complete the top/W route."
+            "top coefficient needed to complete the top/W route."
         ),
         "current_blockers": blockers,
         "upstream_statuses": statuses,

@@ -89,12 +89,12 @@ authority remains outside this note.
 
 This note does not:
 
-- derive strict same-source top transfer response from signed records;
+- derive the top coefficient from signed records;
 - derive `y_t`;
 - derive `m_t`;
 - derive `g_2`;
 - derive `v = 246 GeV`;
-- certify strict top/W response rows;
+- certify coefficient-fixed top/W response rows;
 - use observed W/Z/top masses, fitted selectors, `H_unit`, `yt_ward_identity`,
   `y_t_bare`, `alpha_LM`, or plaquette/u0 as proof inputs.
 

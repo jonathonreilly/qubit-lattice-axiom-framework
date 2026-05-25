@@ -1,10 +1,10 @@
 # Opportunity Queue
 
 1. Close the source/action convention gate: prove that the physical top
-   Yukawa deformation is the primitive unit signed-record action source on
-   the normalized top trilinear. The full-court pass proved this is exactly
-   the missing scalar `lambda`; current A1+A2 plus support packets do not
-   force it.
+   Yukawa deformation is governed by the primitive Fisher/RN signed-record
+   action source on the normalized top trilinear. The Fisher/RN packet now
+   proves `lambda=1` inside that branch; current A1+A2 plus support packets do
+   not force the branch itself.
 2. If that gate does not close, build the top coefficient theorem by a
    different axiom-native dynamical flavor principle. It must derive the value
    of the free `Y_u33`/`y_33` coefficient, not infer it from W/Z denominator

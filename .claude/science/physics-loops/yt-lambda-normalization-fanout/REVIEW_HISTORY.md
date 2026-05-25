@@ -26,4 +26,8 @@
   A1+A2 plus the current support packets do not force `lambda=1`; the
   source-action convention remains an open gate or must be replaced by direct
   top-response evidence.
+- Added the primitive Fisher/RN source-unit support theorem. It proves that a
+  scaled signed-record source has score `lambda epsilon` and Fisher norm
+  `lambda^2`, so primitive unit source normalization selects `lambda=1` once
+  the source/action branch applies to the physical top deformation.
 - No retained or proposed-retained wording allowed by this packet.

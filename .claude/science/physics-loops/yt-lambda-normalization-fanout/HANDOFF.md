@@ -59,6 +59,23 @@ A1+A2 + current support only
   -> y_33(lambda) = lambda/sqrt(6), lambda free
 ```
 
+Latest positive support:
+
+```text
+primitive Fisher/RN signed-record source unit
+  -> scaled source has Fisher norm lambda^2
+  -> unit source coordinate forces lambda=1
+```
+
+Combined with the source/action convention this gives the desired branch:
+
+```text
+source/action convention accepted for the physical top Yukawa deformation
+  + primitive Fisher/RN source unit
+  + normalized top trilinear
+  -> y_33 = 1/sqrt(6)
+```
+
 The remaining blocker is now only the source/action convention gate:
 
 ```text

@@ -16,8 +16,12 @@ fork: projective probability gives `1/6`, while signed linear response gives
 primitive unit physical source/action tangent implies `y_33=1/sqrt(6)`.  The
 paired no-go proves the current A1+A2/support surface does not force that
 primitive unit premise; a positive `lambda` family preserves the current tests
-while changing `y_33(lambda)=lambda/sqrt(6)`.  The current support rows do not
-supply a direct top response measurement.  They also do not supply retained
+while changing `y_33(lambda)=lambda/sqrt(6)`.  The Fisher/RN source-unit
+packet proves `lambda=1` inside the canonical primitive source-family and
+source/action branch: the scaled family has score `lambda epsilon` and Fisher
+norm `lambda^2`, so unit Fisher/source normalization selects `lambda=1`.
+The current support rows do not supply a direct top response measurement. They
+also do not supply retained
 one-Higgs/top-carrier authority, retained hypercharge authority,
 physical-scale `g_2(v)`, direct production correlator evidence, or
 matching/running closure.
@@ -25,8 +29,9 @@ matching/running closure.
 Best positive route after this packet:
 
 ```text
-source/action theorem proving the physical top Yukawa deformation is the
-  primitive unit signed-linear action source on the normalized top trilinear
+source/action theorem proving the physical top Yukawa deformation is governed
+  by the primitive Fisher/RN signed-record action source on the normalized top
+  trilinear
   OR direct top response measurement on the neutral carrier source
   + W/Z denominator response
   + symbolic top response row shape

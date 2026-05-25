@@ -126,26 +126,26 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
-      "claim_scope": null,
+      "claim_scope": "Exact algebraic bridge on V_1 showing that the chosen forward 3-cycle and residual-swap presentations on span(E_12,E_23,E_31) follow from the retained S_3 permutation restriction package.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note",
         "pmns_graph_axis_to_active_lane_bridge_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 9.1,
       "note_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py",
       "transitive_descendants": 387

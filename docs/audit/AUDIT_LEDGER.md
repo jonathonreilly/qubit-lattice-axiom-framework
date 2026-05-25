@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 157 |
-| **retained_bounded** | 449 |
+| **retained_bounded** | 450 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 727 |
+| `audited_clean` | 728 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1463 |
+| `unaudited` | 1462 |
 
 | claim_type | count |
 |---|---:|
@@ -433,6 +433,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cyclic_wilson_descendant_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6548,6 +6549,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Each identity (T1)-(T9) is conditional on admissions (A1)-(A5) and reduces, under the relevant subset, to direct rational arithmetic in Q.  _(class `A`)_
 - **chain closes:** True — The algebraic identities close on their own conditional terms from the stated admissions by exact rational arithmetic. The admissions (A1)-(A5) themselves are not derived or retained-grade in this packet.
 - **rationale:** The runner source genuinely computes the listed conditional identities with Python Fraction arithmetic and does not assert retained-grade closure. However, the load-bearing inputs are explicit admissions: the toy carrier, central Z grammar, endpoint algebra, based endpoint section, and eta_APS = 2/9 are not derived from retained authorities in the restricted packet. No-Go Discipline gate N1/N2 also prevents a clean negative-boundary reading: the packet names admission walls but does not supply independent retained closures or five independent attack-route eliminations.
+- **auditor confidence:** high
+
+### `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`
+
+- **Note:** [`KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the six explicitly listed nonzero alpha_i = q_i*pi values, the pure rational 2/9 is not in Q.alpha_i; no closure of P or exhaustive native-unit enumeration is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T144610Z-aa578827-koide_dimensionless_radi-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If c_i * alpha_i = 2/9 with c_i,q_i in Q\{0}, then t_i*pi = 2/9 for t_i in Q\{0}, forcing pi = 2/(9*t_i) in Q, contradicting transcendence/irrationality of pi.  _(class `A`)_
+- **chain closes:** True — The restricted separation follows directly from exact rational arithmetic plus irrationality/transcendence of pi: Q*pi intersects Q only at 0, while 2/9 is nonzero. The result does not depend on closing the radian-bridge postulate P or on proving that the six listed units are exhaustive.
+- **rationale:** The load-bearing step is a genuine class-A algebraic identity over the six stated q_i inputs and the admitted standard fact that pi is irrational/transcendental. The cited authorities are retained-grade, and the open radian-bridge primitive is explicitly excluded from the audited scope rather than imported. The runner source hard-codes the six listed q_i values and checks the exact symbolic separation; it does not pretend to derive P or use external comparator data. The No-Go Discipline gate does not block clean because the negative boundary is narrowly limited to these six alpha_i and rational coefficients.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

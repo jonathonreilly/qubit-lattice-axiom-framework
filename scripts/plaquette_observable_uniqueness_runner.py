@@ -1,8 +1,8 @@
 """Sympy companion runner for PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.
 
-Verifies the structural-uniqueness identity
+Verifies the structural-uniqueness relation
 
-    <P>(beta) = (1 / N_plaq) * d ln Z(beta) / d beta
+    <P>(beta) = 1 + (1 / N_plaq) * d ln Z(beta) / d beta
 
 symbolically on a finite-dimensional compact-Haar toy partition function
 that models the SU(3) Wilson-plaquette evaluation surface in a way that
@@ -43,7 +43,7 @@ def main() -> int:
     # absolutely convergent integral over a compact manifold; this toy
     # preserves the algebraic structure under d/d beta.
     K = 4
-    N_plaq = sp.Integer(K)
+    N_plaq = sp.Integer(1)
     theta = [sp.cos(sp.Rational(i + 1, K + 1) * sp.pi) for i in range(K)]
     # Wilson-like action S = beta * sum_i (1 - theta_i), bounded on the
     # finite compact spectrum so dominated convergence applies trivially.
@@ -58,33 +58,28 @@ def main() -> int:
     dlnZ_dbeta = sp.diff(lnZ, beta)
     check("d ln Z / d beta exists symbolically", dlnZ_dbeta is not None)
 
-    # The structural identity: <P> defined as (1/N_plaq) d ln Z / d beta
-    # equals the Boltzmann average of (1 - (1 - theta_i)) = theta_i, i.e.
-    # the average of the "plaquette" observable under the partition.
-    P_def = dlnZ_dbeta / N_plaq
+    # The structural relation under S = beta * (1 - theta):
+    # d ln Z / d beta = -<1 - theta>, so the normalized plaquette
+    # observable <theta> is 1 + d ln Z / d beta.
+    P_from_Z = 1 + dlnZ_dbeta / N_plaq
     weights = [sp.exp(-beta * (1 - t)) for t in theta]
     Z_unnorm = sum(weights)
-    avg_one_minus_theta = sum((1 - t) * w for t, w in zip(theta, weights)) / Z_unnorm
-    # d ln Z / d beta = - <1 - theta>, so (1/N_plaq) d ln Z / d beta
-    # = - (1/N_plaq) <1 - theta>. The structural claim is that this is
-    # a single-valued real-valued function of beta determined by Z(beta).
-    expected = -avg_one_minus_theta / N_plaq
-    diff_expr = sp.simplify(P_def - expected)
-    check("structural identity (1/N_plaq) d ln Z / d beta = -<(1-theta)>/N_plaq", diff_expr == 0)
+    avg_theta = sum(t * w for t, w in zip(theta, weights)) / Z_unnorm
+    diff_expr = sp.simplify(P_from_Z - avg_theta)
+    check("affine derivative relation <P> = 1 + (1/N_plaq) d ln Z / d beta", diff_expr == 0)
 
     # Single-valuedness: evaluate at beta = 6 and beta = 1; both must be
     # finite real numbers (no branch ambiguity, no multi-valued output).
-    P_at_6 = sp.nsimplify(sp.N(P_def.subs(beta, 6)))
-    P_at_1 = sp.nsimplify(sp.N(P_def.subs(beta, 1)))
+    P_at_6 = sp.nsimplify(sp.N(P_from_Z.subs(beta, 6)))
+    P_at_1 = sp.nsimplify(sp.N(P_from_Z.subs(beta, 1)))
     check("<P>(beta=6) is single-valued real on the toy", sp.N(P_at_6).is_real)
     check("<P>(beta=1) is single-valued real on the toy", sp.N(P_at_1).is_real)
 
-    # Bounded-ness: |1 - theta_i| <= 2 on the compact toy spectrum, so
-    # | (1/N_plaq) d ln Z / d beta | <= 2 / N_plaq * 1 = 2 / K for all
-    # real beta. This mirrors the SU(3) bound |Re Tr U_p / N_c| <= 1.
-    bound = sp.Rational(2, K)
-    check("toy bound |<P>| <= 2/K at beta=6", abs(sp.N(P_at_6)) <= sp.N(bound))
-    check("toy bound |<P>| <= 2/K at beta=1", abs(sp.N(P_at_1)) <= sp.N(bound))
+    # Bounded-ness: theta_i lies in [-1, 1] on the compact toy spectrum.
+    # This mirrors the SU(3) bound |Re Tr U_p / N_c| <= 1.
+    bound = sp.Integer(1)
+    check("toy bound |<P>| <= 1 at beta=6", abs(sp.N(P_at_6)) <= sp.N(bound))
+    check("toy bound |<P>| <= 1 at beta=1", abs(sp.N(P_at_1)) <= sp.N(bound))
 
     # Dominated-convergence sanity: the derivative of each Boltzmann
     # weight is bounded uniformly on any compact beta interval, so
@@ -95,7 +90,7 @@ def main() -> int:
     # No-bulk-transition surrogate: on the symmetric toy, <P>(beta) is
     # analytic (rational function of exp(-beta) terms) and has no real
     # singularities for beta > 0. We check it's smooth at beta = 6.
-    P_at_6_check = sp.simplify(P_def.subs(beta, 6))
+    P_at_6_check = sp.simplify(P_from_Z.subs(beta, 6))
     check("<P>(beta=6) is smooth (no real singularity)", P_at_6_check.is_finite is not False)
 
     # No numeric-value claim: the runner does NOT compare <P> to any
@@ -108,8 +103,8 @@ def main() -> int:
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded proof-walk passes; <P> = (1/N_plaq) d ln Z / d "
-            "beta is a single-valued real observable of the cited finite "
+            "VERDICT: bounded proof-walk passes; <P> is an affine derivative "
+            "observable of the cited finite "
             "compact-Haar partition function, with no numeric-value claim."
         )
         return 0

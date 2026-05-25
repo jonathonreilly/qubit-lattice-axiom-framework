@@ -10,13 +10,21 @@ effective status are set by the independent audit lane.
 
 Given the existing retained graph-first SU(3) Wilson-plaquette evaluation
 surface at `beta = 2 N_c / g_bare^2 = 6` and the finite compact Haar
-measure of the cited partition function, the average plaquette
+measure of the cited partition function, the average plaquette is uniquely
+determined by the partition-function derivative. With the Wilson action
+convention used here,
 
 ```text
-<P> = (1 / N_plaq) * d ln Z / d beta
+S_W[U] = (beta / N_c) * sum_p Re Tr[1 - U_p],
 ```
 
-is a uniquely determined observable of `Z(beta = 6)`. The proof-walk uses
+the relation is the affine identity
+
+```text
+<P> = 1 + (1 / N_plaq) * d ln Z / d beta.
+```
+
+The proof-walk uses
 only:
 
 - finiteness of the Haar product on compact SU(3) over a finite periodic
@@ -41,7 +49,7 @@ status claim.
 | Haar product finiteness on compact SU(3), finite periodic L^4 | retained gauge-source temporal completion authority | no |
 | `Z(beta) = integral DU exp(-S_W[U])` finite, well-defined | finite compact Haar product, bounded Wilson action | no |
 | Dominated-convergence differentiation `d ln Z / d beta` | bounded integrand `-S_W[U]/N_plaq` on a compact domain | no |
-| Identity `<P> = (1/N_plaq) d ln Z / d beta` | algebraic differentiation of `exp(-S_W)` | no |
+| Affine identity `<P> = 1 + (1/N_plaq) d ln Z / d beta` under the stated Wilson-action sign convention | algebraic differentiation of `exp(-S_W)` | no |
 | No bulk transition on symmetric L^4 at `beta = 6` | retained framework-point underdetermination + spectral-measure authorities | no |
 | Observable is single-valued real | sum of the above | no |
 
@@ -58,8 +66,7 @@ action
 S_W[U] = (beta / N_c) * sum_p Re Tr[1 - U_p],
 ```
 
-differentiation under the absolutely convergent compact-Haar integral
-gives
+differentiation under the absolutely convergent compact-Haar integral gives
 
 ```text
 d ln Z / d beta = - <d S_W / d beta>
@@ -71,22 +78,20 @@ so the standard normalized plaquette `<P> = (1/N_c) <Re Tr U_p>` reduces
 to
 
 ```text
-<P> = 1 - (1/N_plaq) * (1/N_c^2) * (- d ln Z / d beta) * N_c
-    = 1 - (1 / (N_c * N_plaq)) * < sum_p Re Tr[1 - U_p] >.
+<P> = 1 + (1 / N_plaq) * d ln Z / d beta.
 ```
 
-Equivalently, the unique-observable identity
+Equivalently, the unique-observable relation
 
 ```text
-<P>(beta) = (1 / N_plaq) * d ln Z(beta) / d beta
+<P>(beta) = 1 + (1 / N_plaq) * d ln Z(beta) / d beta
 ```
 
-(after the standard same-sign convention on the action) holds at every
-finite `beta > 0` where `Z(beta)` is absolutely convergent. At `N_c = 3`
-and `beta = 6` the right-hand side is a single real number determined by
-`Z`. The runner repeats this differentiation symbolically on a finite-
-dimensional compact toy Haar measure and confirms `d ln Z / d beta` is
-single-valued and real.
+holds at every finite `beta > 0` where `Z(beta)` is absolutely
+convergent. At `N_c = 3` and `beta = 6` the right-hand side is a single
+real number determined by `Z`. The runner repeats this differentiation
+symbolically on a finite-dimensional compact toy Haar measure and
+confirms the affine derivative relation is single-valued and real.
 
 ## Dependencies
 
@@ -130,9 +135,9 @@ This note does not close:
   structural-uniqueness premise alone.
 
 Downstream rows that need only the structural-uniqueness premise of
-`<P>` as a uniquely defined observable of `Z(beta = 6)` may cite this
-note. Downstream rows that need the numeric value continue to cite the
-parent.
+`<P>` as a uniquely defined observable of `Z(beta = 6)` through the
+affine derivative relation may cite this note. Downstream rows that need
+the numeric value continue to cite the parent.
 
 ## Verification
 
@@ -146,7 +151,7 @@ Expected:
 
 ```text
 TOTAL: PASS=... FAIL=0
-VERDICT: bounded proof-walk passes; <P> = (1/N_plaq) d ln Z / d beta is
-a single-valued real observable of the cited finite compact-Haar
-partition function, with no numeric-value claim.
+VERDICT: bounded proof-walk passes; <P> is an affine derivative observable
+of the cited finite compact-Haar partition function, with no numeric-value
+claim.
 ```

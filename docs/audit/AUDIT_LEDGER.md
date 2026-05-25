@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 447 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1240 |
+| unaudited | 1239 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 16 |
+| ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 9 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -56,8 +56,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 16 |
-| `unaudited` | 1469 |
+| `audited_renaming` | 17 |
+| `unaudited` | 1468 |
 
 | claim_type | count |
 |---|---:|
@@ -1043,6 +1043,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
@@ -4404,6 +4405,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given the admitted holonomy form (HF), the fixed Hilbert-space trace form fixes the canonical generator normalization up to orthogonal rotations, while scalar dilations T_a -> lambda T_a change the trace Gram matrix and Casimir and therefore are not allowed ambiguities.  _(class `A`)_
 - **chain closes:** False — The algebraic normalization-rigidity step closes on the supplied embedding, but the free-coupling-removal conclusion depends on the explicitly admitted holonomy form (HF). No cited authority in the restricted packet derives that holonomy form from the framework primitives.
 - **rationale:** The runner genuinely checks finite-dimensional algebra: commutant membership, trace normalization, Casimir behavior, orthogonal rotations, scalar dilations, and coefficient rescaling. However, the note itself makes the lattice holonomy form an admitted upstream premise, and retained status does not propagate through that open identification. No-Go Discipline gate check: N3/N6 identify the hidden-wall language around 'standard notation' and the convention/reframe path does not close the missing holonomy bridge inside this packet.
+- **auditor confidence:** high
+
+### `g_bare_structural_normalization_theorem_note_2026-04-18`
+
+- **Note:** [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](../../docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Wilson-surface normalization claim: fixed Cl(3)/su(3) generator normalization plus the admitted Wilson plaquette action and kinetic matching convention are used to identify g = 1 and beta = 6.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T143323Z-1e963f49-g_bare_structural_normal-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the canonical Cl(3)-normalized basis where scalar dilation of the generators is forbidden, the canonical connection has g = 1, hence beta = 2 N_c = 6 for SU(3).  _(class `F`)_
+- **chain closes:** False — The packet closes the algebraic Wilson relation beta = 2 N_c/g^2 and shows that scalar generator rescaling changes the chosen trace Gram. It does not independently derive the identification of the physical bare coupling with the unrescaled Cl(3)-native connection; that identification is the missing bridge.
+- **rationale:** The runner performs real finite-dimensional checks for Clifford relations, standard Gell-Mann trace normalization, Gram scaling under T -> lambda T, and the standard small-a Wilson coefficient. But the load-bearing step canonical g = 1 is not computed from those checks: the code sets g2_canonical = 1.0 and then evaluates beta, while the note equates absence of generator rescaling with the physical coupling convention. The Wilson action form is also explicitly admitted rather than derived, and docs/G_BARE_DERIVATION_NOTE.md contains open-gate language about this identification. Thus the result is a bounded normalization/notation identification, not a derivation of g_bare from the cited inputs.
+- **open / conditional deps cited:**
+  - `G_BARE_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19`

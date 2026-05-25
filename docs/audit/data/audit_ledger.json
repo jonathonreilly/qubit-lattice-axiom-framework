@@ -94639,22 +94639,54 @@
       "verdict_rationale": "The runner genuinely checks finite-dimensional algebra: commutant membership, trace normalization, Casimir behavior, orthogonal rotations, scalar dilations, and coefficient rescaling. However, the note itself makes the lattice holonomy form an admitted upstream premise, and retained status does not propagate through that open identification. No-Go Discipline gate check: N3/N6 identify the hidden-wall language around 'standard notation' and the convention/reframe path does not close the missing holonomy bridge inside this packet."
     },
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T14:35:38.457072+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_derivation_note",
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 18.339,
+        "runner_hash": "012c6d47f31c15f41c45a91f34a0d6c6df2060bc5ef193068249174bba4cb3f9",
+        "transitive_descendants": 915
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T143323Z-1e963f49-g_bare_structural_normal-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet closes the algebraic Wilson relation beta = 2 N_c/g^2 and shows that scalar generator rescaling changes the chosen trace Gram. It does not independently derive the identification of the physical bare coupling with the unrescaled Cl(3)-native connection; that identification is the missing bridge.",
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "claim_scope": null,
+      "claim_scope": "Bounded Wilson-surface normalization claim: fixed Cl(3)/su(3) generator normalization plus the admitted Wilson plaquette action and kinetic matching convention are used to identify g = 1 and beta = 6.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T14:35:38.457072+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -94665,20 +94697,22 @@
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 18.339,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "In the canonical Cl(3)-normalized basis where scalar dilation of the generators is forbidden, the canonical connection has g = 1, hence beta = 2 N_c = 6 for SU(3).",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "6bd0697450b63318460df822ee56000aaaaf781701c4cbb497598342b5a36747",
       "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "Re-audit should look for an independent bridge theorem deriving the Wilson kinetic coupling coefficient from the Cl(3)-native connection, plus a runner that computes it rather than setting g2_canonical = 1.0.",
+      "open_dependency_paths": [
+        "docs/G_BARE_DERIVATION_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.368354+00:00",
@@ -94765,18 +94799,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "A": 29,
+        "B": 12,
+        "C": 13,
+        "D": 7,
+        "total_pass": 61
       },
       "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
       "title": "G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain",
       "transitive_descendants": 915,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs real finite-dimensional checks for Clifford relations, standard Gell-Mann trace normalization, Gram scaling under T -> lambda T, and the standard small-a Wilson coefficient. But the load-bearing step canonical g = 1 is not computed from those checks: the code sets g2_canonical = 1.0 and then evaluates beta, while the note equates absence of generator rescaling with the physical coupling convention. The Wilson action form is also explicitly admitted rather than derived, and docs/G_BARE_DERIVATION_NOTE.md contains open-gate language about this identification. Thus the result is a bounded normalization/notation identification, not a derivation of g_bare from the cited inputs."
     },
     "g_bare_two_ward_closure_note_2026-04-18": {
       "audit_date": null,

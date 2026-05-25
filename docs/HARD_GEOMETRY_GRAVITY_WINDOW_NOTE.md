@@ -32,7 +32,7 @@ The central-band gravity-side mass follow-up is also useful:
 
 On the densest slice we tested, the pruned LN row has the cleaner mass fit:
 
-- `delta ~= 0.4704 * M^0.595`, `R^2 = 0.828`
+- `delta ~= 0.2207 * M^0.638`, `R^2 = 0.994`
 
 ### Generated asymmetry-persistence
 

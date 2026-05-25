@@ -1,0 +1,22 @@
+{
+  "current_blockers": {
+    "full_same_surface_ew_transfer_response_present": false,
+    "neutral_carrier_ray_bridge_present": true,
+    "same_source_ew_higgs_authority_present": false,
+    "strict_top_w_rows_present": false
+  },
+  "fail_count": 0,
+  "pass_count": 39,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The neutral carrier ray is now bridged, but the source-action support packet is retained_bounded only and no retained theorem supplies the full same-surface EW transfer response needed by the top/W route.",
+  "review_surface": [
+    "docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_same_source_ew_higgs_authority_gate.py",
+    "outputs/yt_same_source_ew_higgs_authority_gate_2026-05-25.json"
+  ],
+  "status": "current-surface authority gate remains open",
+  "upstream_statuses": {
+    "ew_mass_status": "retained",
+    "source_action_status": "retained_bounded"
+  }
+}

@@ -5,7 +5,9 @@ Scope-aware rule:
   - `claim_type` is auditor-owned and determines which retained-grade bucket
     a clean audit may enter.
   - clean theorem/no-go/bounded rows become retained-grade only when every
-    one-hop dependency is already retained-grade.
+    one-hop dependency is already retained-grade or an accepted premise.
+    Tier-A derivation-target premises bound otherwise clean dependents to
+    retained_bounded until the target is retired.
   - open gates, decorations, metadata, and terminal non-clean audit verdicts
     have explicit effective statuses and never become retained by author tier.
 
@@ -108,16 +110,19 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
     if retained_status is None:
         return "retained_pending_chain", "missing_or_unknown_claim_type"
 
+    has_tier_a_derivation_target = False
     for dep_id in sorted(row.get("deps", [])):
         dep_status = dep_effective.get(dep_id, "unaudited")
-        # The accepted premise carve-out is axiom-only: the canonical axiom
-        # node satisfies chain closure without being retained-grade itself
-        # because axioms are not audited. Textbook results must be proved or
-        # cited through ordinary retained-grade rows, not admitted here.
-        # See premise_nodes / AUDIT_AGENT_PROMPT_TEMPLATE.md §4.
-        if is_retained_grade(dep_status) or premise_nodes.is_accepted_premise_dep(dep_id):
+        if is_retained_grade(dep_status):
+            continue
+        if premise_nodes.is_axiom_premise(dep_id):
+            continue
+        if premise_nodes.is_admitted_derivation_target(dep_id):
+            has_tier_a_derivation_target = True
             continue
         return "retained_pending_chain", f"chain_waiting_on:{dep_id}"
+    if has_tier_a_derivation_target and retained_status != "retained_bounded":
+        return "retained_bounded", "bounded_by_tier_a_admitted_derivation_target"
     return retained_status, "self"
 
 

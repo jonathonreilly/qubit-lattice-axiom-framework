@@ -1,0 +1,22 @@
+{
+  "best_next_routes": [
+    "same-source W/Z absolute response plus FH top/W ratio",
+    "same-surface canonical O_H plus OS/LSZ/contact sum rule",
+    "BRST/FMS support for gauge-invariant scalar operator class"
+  ],
+  "current_no_gos_apply_narrowly": {
+    "color_projection_correction": "applies to deriving kappa_Y=0 from the cited SU(3) channel-count packet",
+    "pole_row_normalization": "applies to pole rows/Gram purity without a new canonical scalar-source theorem",
+    "yukawa_color_projection": "decoration only; representation arithmetic, not physical Yukawa matching"
+  },
+  "fail_count": 0,
+  "pass_count": 55,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The packet identifies scale-breaking and scale-canceling routes, but it does not supply accepted same-source W/Z response, canonical O_H, scalar LSZ, strict top/W FH rows, or matching/running closure.",
+  "review_surface": [
+    "docs/YT_LAMBDA_NORMALIZATION_ATTACK_FANOUT_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_lambda_normalization_attack_fanout.py",
+    "outputs/yt_lambda_normalization_attack_fanout_2026-05-25.json"
+  ],
+  "status": "open / support-only route synthesis"
+}

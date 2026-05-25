@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted inputs are four: P1, AC_phi_lambda, S, and theta. Only three are machine premise nodes here because S is pervasive and has no single claim_id; it is tracked under not_a_node. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
+  "genuine_admitted_input_count": 4,
+  "canonical_ids": [
+    "observable_principle_from_axiom_note",
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "strong_cp_theta_zero_note"
+  ],
+  "derivation_targets": {
+    "observable_principle_from_axiom_note": {
+      "label": "P1",
+      "statement": "scalar observables are additive over independent subsystems; forces W = log|det(D+J)|",
+      "class": "extensivity principle (mild)",
+      "leverage": 88,
+      "no_go_portfolio": [
+        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
+      ]
+    },
+    "staggered_dirac_realization_gate_note_2026-05-03": {
+      "label": "AC_phi_lambda",
+      "statement": "generation mass-pattern input: the C_3-breaking phase/orientation plus the abstract-sector to physical-species bridge; bare e/mu/tau naming is a convention, not a derivation target",
+      "class": "discrete flavor input with labeling convention stripped",
+      "leverage": 41,
+      "no_go_portfolio": [
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24"
+      ]
+    },
+    "strong_cp_theta_zero_note": {
+      "label": "theta",
+      "statement": "the QCD vacuum angle theta = 0 (strong-CP); also unsolved in the Standard Model",
+      "class": "naturalness admission",
+      "leverage": 20,
+      "no_go_portfolio": [
+        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+      ]
+    }
+  },
+  "conventions": {
+    "hypercharge_identification_note": {
+      "label": "Y0",
+      "statement": "absolute hypercharge normalization (alpha=1/3); the retained structure fixes ratios, while the overall Y-scale is a Y <-> g' rescaling convention with no physical content by itself",
+      "class": "vacuous normalization convention",
+      "leverage": 18,
+      "basis": "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly (retained_bounded): anomaly fixes ratios not absolute normalization"
+    },
+    "g_bare_rigidity_theorem_note": {
+      "label": "g0",
+      "statement": "bare coupling g_bare = 1",
+      "class": "vacuous rescaling convention (g <-> beta gauge choice)",
+      "leverage": 8,
+      "basis": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10 (retained): g_bare is rescaling-invariant convention, not a number to derive"
+    }
+  },
+  "not_a_node": {
+    "S": {
+      "label": "absolute scale",
+      "statement": "one empirical scale-setting number (match a single observable to fix a); the unit choice itself is vacuous, and S is pervasive with no single citeable parent row, so it is tracked descriptively in the registry note and is NOT a premise-node here",
+      "no_go_portfolio": [
+        "planck_finite_response_no_go_note_2026-04-24",
+        "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+        "planck_boundary_orientation_incidence_no_go_note_2026-04-30"
+      ]
+    }
+  }
+}

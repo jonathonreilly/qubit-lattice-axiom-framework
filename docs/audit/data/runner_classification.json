@@ -8616,6 +8616,18 @@
       "dominant_class": "D",
       "runner": "scripts/gate_b_weak_connectivity_harness.py"
     },
+    "gate_rp_reground_staggered_only_narrow_theorem_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_gate_rp_reground_staggered_only_discriminator.py"
+    },
     "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03": {
       "assert_count": 1,
       "counts": {
@@ -11952,6 +11964,18 @@
       "dominant_class": null,
       "runner": "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py"
     },
+    "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25": {
+      "assert_count": 2,
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py"
+    },
     "koide_dweh_cyclic_compression_note_2026-04-18": {
       "assert_count": 1,
       "counts": {
@@ -12299,6 +12323,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_koide_p_one_clock_3plus1_transport_reduction_2026_04_20.py"
+    },
+    "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py"
     },
     "koide_pointed_origin_exhaustion_theorem_note_2026-04-24": {
       "assert_count": 0,
@@ -12815,6 +12851,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_koide_transport_gap_constant_no_go.py"
+    },
+    "koide_two_29_routes_distinct_narrow_theorem_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_koide_two_29_routes_distinct_discriminator.py"
     },
     "koide_u_bae_ncg_spectral_triple_note_2026-05-08_probeu_bae_ncg": {
       "assert_count": 1,
@@ -15456,6 +15504,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_neutrino_two_amplitude_last_mile.py"
     },
+    "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_new_parity_is_circulant_phase_discriminator.py"
+    },
     "newphysics_np_ckm_wolfenstein_note_2026-05-10_npckm": {
       "assert_count": 2,
       "counts": {
@@ -16283,6 +16343,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py"
+    },
+    "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py"
     },
     "patched_stationary_system_pl_s3_theorem_note_2026-05-03": {
       "assert_count": 2,
@@ -24192,6 +24264,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_yt_ew_delta_r_retention.py"
     },
+    "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 3,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py"
+    },
     "yt_ew_m_residual_note_2026-05-02": {
       "assert_count": 0,
       "counts": {
@@ -24276,6 +24360,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_yt_explicit_systematic_budget.py"
     },
+    "yt_fh_top_w_response_ratio_gate_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_fh_top_w_response_ratio_gate.py"
+    },
     "yt_fierz_projection_defense_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -24335,6 +24431,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_yt_interacting_bridge_locality.py"
+    },
+    "yt_lambda_normalization_attack_fanout_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_yt_lambda_normalization_attack_fanout.py"
     },
     "yt_microscopic_schur_class_admissibility_note": {
       "assert_count": 0,
@@ -24720,6 +24828,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_yt_qfp_insensitivity.py"
     },
+    "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 2,
+        "B": 2,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py"
+    },
     "yt_right_handed_species_dependence_note_2026-04-18": {
       "assert_count": 0,
       "counts": {
@@ -24731,6 +24851,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_yt_right_handed_species_dependence.py"
+    },
+    "yt_same_source_ew_higgs_authority_gate_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_same_source_ew_higgs_authority_gate.py"
     },
     "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23": {
       "assert_count": 1,
@@ -24755,6 +24887,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_yt_schur_stability_gap.py"
+    },
+    "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py"
     },
     "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23": {
       "assert_count": 1,
@@ -26349,6 +26493,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py": {
@@ -36971,6 +37130,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_gate_rp_reground_staggered_only_discriminator.py": {
+      "assert_count": 2,
+      "claims": [
+        "gate_rp_reground_staggered_only_narrow_theorem_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_gauge_scalar_bridge_3plus1_native_tube_staging.py": {
       "assert_count": 1,
       "claims": [
@@ -40159,6 +40333,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_koide_pointed_origin_exhaustion_theorem.py": {
       "assert_count": 0,
       "claims": [
@@ -40684,6 +40873,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/frontier_koide_two_29_routes_distinct_discriminator.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_two_29_routes_distinct_narrow_theorem_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_koide_weighted_character_source_axis_theorem.py": {
@@ -42130,6 +42334,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_new_parity_is_circulant_phase_discriminator.py": {
+      "assert_count": 2,
+      "claims": [
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_newton_derivation_note_hostile_audit_findings.py": {
       "assert_count": 0,
       "claims": [
@@ -42668,6 +42887,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py": {
+      "assert_count": 2,
+      "claims": [
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_patched_stationary_system_pl_s3.py": {
@@ -48498,6 +48732,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 3,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_yt_ew_matching_rule_m_stretch.py": {
       "assert_count": 1,
       "claims": [
@@ -48588,6 +48837,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_yt_fh_top_w_response_ratio_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_fh_top_w_response_ratio_gate_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_yt_fierz_projection_defense_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -48661,6 +48925,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/frontier_yt_lambda_normalization_attack_fanout.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_lambda_normalization_attack_fanout_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_yt_microscopic_schur_class_admissibility.py": {
@@ -49143,6 +49422,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 2,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_yt_right_handed_species_dependence.py": {
       "assert_count": 0,
       "claims": [
@@ -49156,6 +49450,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_yt_same_source_ew_higgs_authority_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_same_source_ew_higgs_authority_gate_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py": {
@@ -49186,6 +49495,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py": {
@@ -54306,14 +54630,14 @@
   "stats": {
     "decoration_candidates": 314,
     "dominant_class_distribution": {
-      "A": 204,
-      "B": 271,
-      "C": 743,
-      "D": 296,
+      "A": 210,
+      "B": 272,
+      "C": 745,
+      "D": 299,
       "none": 434
     },
-    "runners_classified": 1948,
-    "runners_with_C": 961,
-    "runners_with_D": 557
+    "runners_classified": 1960,
+    "runners_with_C": 965,
+    "runners_with_D": 569
   }
 }

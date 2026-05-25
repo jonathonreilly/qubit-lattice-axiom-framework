@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 143 |
+| **retained** | 144 |
 | **retained_no_go** | 156 |
 | **retained_bounded** | 439 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1244 |
+| unaudited | 1243 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 713 |
+| `audited_clean` | 714 |
 | `audited_conditional` | 89 |
 | `audited_decoration` | 38 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1471 |
+| `unaudited` | 1470 |
 
 | claim_type | count |
 |---|---:|
@@ -550,6 +550,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8396,6 +8397,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the two specific pointwise nonlinearities tested on this chosen 2D lattice/kernel/coupling, |I_3|/P is far from zero and the deflection centroid-shift sign is opposite to the linear baseline.  _(class `C`)_
 - **chain closes:** True — The demoted note's non-load-bearing nonlinear claim is exactly bounded to the runner's finite menu, and the supplied source code computes those I_3 and centroid-shift quantities rather than merely printing constants. The algebraic linear I_3 statement is separately supported by the retained cited theorem.
 - **rationale:** The current note no longer claims a universal nonlinear implication, mass-law failure, or model-independent experimental certification. Its bounded nonlinear statement is supported by a concrete runner that instantiates the specified lattice, kernels, nonlinearities, normalization choices, and field coupling, then computes nonzero I_3 values and opposite centroid signs. The cited upstream I_3 theorem is retained and algebraic, so the linear half also closes within the restricted packet.
+- **auditor confidence:** high
+
+### `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`NSPT_HIGH_ORDER_LATTICE_ALPHA_N_COEFFICIENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/NSPT_HIGH_ORDER_LATTICE_ALPHA_N_COEFFICIENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure toy formal-series algebra over Fraction rationals, including finite partial sums, α=1/10 scalar powers, Cauchy products, a geometric surrogate truncation, and Fraction-preserving truncated update structure; no physical NSPT or SU(3) Wilson-plaquette claim was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T122426Z-b7063501-nspt_high_order_lattice_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On Fraction-coefficient formal power series, finite partial sums, scalar powers, Cauchy products, geometric truncation errors, and the toy truncated Langevin update close order-by-order in Fraction arithmetic.  _(class `A`)_
+- **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
+- **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
 - **auditor confidence:** high
 
 ### `observable_principle_from_axiom_note`

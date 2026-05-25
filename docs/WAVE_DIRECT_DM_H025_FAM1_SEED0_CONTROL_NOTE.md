@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-08
 **Status:** proposed_retained control-ladder hardening on the Fam1/seed0 fine-H boundary replay
+**Primary runner:** [`scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py)
 
 This note upgrades the earlier one-strength `Fam1`, seed `0`,
 `H = 0.25` boundary replay by adding the same-resolution control stack:
@@ -74,6 +75,7 @@ So the exact retained claim is:
 
 ## Artifact chain
 
+- [`scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py)
 - [`scripts/wave_direct_dm_h025_control_batch.py`](../scripts/wave_direct_dm_h025_control_batch.py)
 - [`logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt)
 - `docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md`

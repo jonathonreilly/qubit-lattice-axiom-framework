@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 145 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 441 |
+| **retained_bounded** | 442 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1237 |
+| unaudited | 1236 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 717 |
+| `audited_clean` | 718 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 40 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1464 |
+| `unaudited` | 1463 |
 
 | claim_type | count |
 |---|---:|
@@ -670,6 +670,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10560,6 +10561,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With y_4 = 0 and y_1 + y_2 = 2/3, (A1) forces y_3 = -2, and (A3) reduces to the quadratic 9 t^2 - 6 t - 8 = 0 whose roots are 4/3 and -2/3.  _(class `A`)_
 - **chain closes:** True — The scoped theorem is explicitly conditional on the anomaly equations, neutral-singlet identification, and Q-labelling convention. From those retained hypotheses the algebraic enumeration, swap ambiguity, Q-selected singleton, and stated charge denominators close without any required external comparator or upstream physics derivation.
 - **rationale:** The load-bearing result is an exact algebraic consequence of the equations stated inside the note. The runner independently checks the reductions, quadratic discriminant, full rational solution set, Q-labelling selection, charge arithmetic, and no-N counterfactual at exact symbolic precision. The note also keeps the upstream derivation of the anomaly coefficients and y_4 = 0 outside the claim boundary, so those are not blockers for this bounded theorem.
+- **auditor confidence:** high
+
+### `sm_identity_triangulation_convergence_note_2026-05-23`
+
+- **Note:** [`SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md`](../../docs/SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional N_c=3 hypercharge convergence from the loose anomaly family to the retained hypercharge-enumeration tuple, excluding any physical generation-count claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T123424Z-9f7c652e-sm_identity_triangulatio-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting N_c = 3 into the anomaly-allowed family yields the SM hypercharge tuple and left-Weyl charge spectrum {0, ±1/3, ±2/3, ±1}.  _(class `A`)_
+- **chain closes:** True — The narrowed hypercharge statement follows by exact rational substitution from retained-grade cited inputs. The source correctly demotes the Burnside generation-count import and does not use it load-bearing for the audited claim.
+- **rationale:** The load-bearing step is a straightforward algebraic closure: take the retained anomaly family, insert the independently retained graph-first N_c = 3 selector, and compare the resulting rational tuple to the retained hypercharge-enumeration tuple. The runner source performs exact rational arithmetic rather than merely printing constants, and its ledger checks are cross-note status checks rather than external numerical comparators. The two residuals are explicitly scoped as hypotheses/residual freedoms, and the generation-count bridge is excluded from the narrowed claim.
 - **auditor confidence:** high
 
 ### `sm_relativistic_dof_count_import_note_2026-05-17`

@@ -1012,7 +1012,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
+| `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -6131,13 +6131,13 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 
 - **Note:** [`archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md`](../../archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md)
 - **claim_type:** `no_go`
-- **claim_scope:** Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.
+- **claim_scope:** Archived A5 no-go boundary asserting that A_min alone does not close (G1)/(C1) and that an explicit Cl_4(C) carrier axiom would have to be added for closure.
 - **audit_status:** ~~audited_failed~~
 - **effective_status:** **retained_no_go**  (reason: `archived_failed_no_go`)
-- **auditor:** `codex-audit-loop-stale-narrative-archive-2026-04-30`  (codex-gpt-5; independence=weak)
-- **load-bearing step:** The wrapper identifies the irreducible Cl_4(C) module on P_A H_cell as the minimal carrier axiom required for (G1) closure after the earlier A1/A2/A4 attacks.  _(class `A`)_
-- **chain closes:** False — No. The wrapper belongs to the stale Axiom* minimality/exhaustion frame; Thread 1's failed verdict rejects the assembled forced-carrier narrative, so this source note cannot remain as an active support surface.
-- **rationale:** Issue: the note's load-bearing role is to support the stale Axiom* minimal-carrier narrative that the later audit failed, not merely to record a neutral open option. Why this blocks: keeping it active would preserve a failed wrapper frame as if it were still live support for (G1)/(C1) closure. Repair target: rebuild any future carrier-axiom analysis from a fresh proof surface that does not depend on the failed exhaustion/minimality frame. Claim boundary until fixed: the source note is retained only in archive recovery history, not as an active docs claim.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T231643Z-abb4e2b9-hubble_lane5_c1_a5_minim-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** “Hence the Cl_4(C) axiom is non-derivable from A_min via any of the audit's primary direct-derivation frames,” leading to the conclusion that (G1)/(C1) require an added carrier axiom or remain open.  _(class `B`)_
+- **chain closes:** False — The algebraic Cl_n matrix checks close only for the four enumerated candidate presentations. The no-go/minimality boundary imports Cycle 1-4 residuals, the conditional bridge, A_min comparison, and no-go selector inventory without retained one-hop authorities, and the runner hard-codes those steps as True.
+- **rationale:** The restricted packet supports only the local Clifford-algebra equivalence/inclusion checks, not the archived no-go boundary. No-Go Discipline fails at N1/N4/N8: the packet does not establish an exhaustive independent attack set for the no-go, verify the cited witness residuals, or validate structurally similar retired walls from same-packet evidence. The current source note is explicitly retracted and archived, so it should remain non-authority rather than be retained as a clean no-go.
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29`

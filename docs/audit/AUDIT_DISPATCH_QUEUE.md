@@ -2,9 +2,9 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 4
-**Ready entries:** 3
-**Resolved (post-manifest re-audit) entries:** 12
+**Live entries:** 3
+**Ready entries:** 2
+**Resolved (post-manifest re-audit) entries:** 13
 **Resolved/invalid entries:** 35
 **Retired entries:** 5
 
@@ -21,8 +21,7 @@ Source sidecars:
 |---:|:---:|---|---|---|---|---|---|
 | 1 | Y | `legacy_weak_independence_clean_rows` | `packet_memory_note` | bounded_theorem / audited_clean / retained_bounded | `docs/PACKET_MEMORY_NOTE.md` | Fresh-context provenance re-audit: the current clean verdict has independence=weak. Re-audit the bounded claim under current independence and reasoning-effort requirements. |  |
 | 2 | Y | `legacy_weak_independence_terminal_no_go_rows` | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go / audited_failed / retained_no_go | `archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md` | Fresh-context provenance re-audit: this archived no-go row has a terminal verdict recorded with independence=weak. Re-audit the no-go boundary under current independence and no-go-discipline requirements, or confirm it should remain archived/non-authority. |  |
-| 3 | Y | `legacy_weak_independence_terminal_no_go_rows` | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go / audited_failed / retained_no_go | `archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md` | Fresh-context provenance re-audit: this archived no-go row has a terminal verdict recorded with independence=weak. Re-audit the no-go boundary under current independence and no-go-discipline requirements, or confirm it should remain archived/non-authority. |  |
-| 4 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? | blocked_by_dependency:pre_record_reference_state_tracial_derivation_note_2026-05-20:audited_conditional |
+| 3 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? | blocked_by_dependency:pre_record_reference_state_tracial_derivation_note_2026-05-20:audited_conditional |
 
 ## Resolved By Post-Manifest Re-Audit
 
@@ -33,15 +32,16 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 1 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T17:58:15.439009+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T175755Z-ec176ca3-chiral_3plus1d_coupled_c-01 |
 | 2 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:02:48.474160+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T180225Z-2f0c69c0-weak_coupling_sign_sensi-01 |
 | 3 | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-24T20:26:55.357946+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260524T202502Z-b2d2be46-gauge_vacuum_plaquette_d-02 |
-| 4 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go / audited_failed / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:12:47.204219+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181126Z-623cf5b5-hubble_lane5_c1_stuck_fa-01 |
-| 5 | `continuum_limit_note` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:13:56.019683+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181334Z-742480ea-continuum_limit_note-01 |
-| 6 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:16:42.496617+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181535Z-d414d33e-hermitian_lift_theta_h_p-01 |
-| 7 | `linear_response_second_order_kubo_note` | bounded_theorem / audited_clean / retained_pending_chain | `bounded_terminal_after_reaudit` | 2026-05-23T18:20:01.804656+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181743Z-fb17a8f8-linear_response_second_o-01 |
-| 8 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:23:17.872453+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182224Z-af104ef5-observable_principle_p1_-01 |
-| 9 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:27:21.287498+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182555Z-1ec5390a-observable_principle_p1_-01 |
-| 10 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:29:20.227225+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182816Z-85745dea-observable_principle_p1_-01 |
-| 11 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:32:39.949021+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183104Z-20b5e4cf-observable_principle_p1_-01 |
-| 12 | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:36:40.690502+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183621Z-944d0bf3-staggered_hamiltonian_di-01 |
+| 4 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go / audited_failed / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-25T23:18:17.990826+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260525T231643Z-abb4e2b9-hubble_lane5_c1_a5_minim-01 |
+| 5 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go / audited_failed / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:12:47.204219+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181126Z-623cf5b5-hubble_lane5_c1_stuck_fa-01 |
+| 6 | `continuum_limit_note` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:13:56.019683+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181334Z-742480ea-continuum_limit_note-01 |
+| 7 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:16:42.496617+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181535Z-d414d33e-hermitian_lift_theta_h_p-01 |
+| 8 | `linear_response_second_order_kubo_note` | bounded_theorem / audited_clean / retained_pending_chain | `bounded_terminal_after_reaudit` | 2026-05-23T18:20:01.804656+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181743Z-fb17a8f8-linear_response_second_o-01 |
+| 9 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:23:17.872453+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182224Z-af104ef5-observable_principle_p1_-01 |
+| 10 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:27:21.287498+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182555Z-1ec5390a-observable_principle_p1_-01 |
+| 11 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:29:20.227225+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182816Z-85745dea-observable_principle_p1_-01 |
+| 12 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:32:39.949021+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183104Z-20b5e4cf-observable_principle_p1_-01 |
+| 13 | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:36:40.690502+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183621Z-944d0bf3-staggered_hamiltonian_di-01 |
 
 ## Resolved Or Invalid
 

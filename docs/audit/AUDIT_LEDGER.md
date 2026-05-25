@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 460 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
-| ~~audited_renaming~~ | 17 |
+| ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -56,8 +56,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 41 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
-| `audited_renaming` | 17 |
-| `unaudited` | 1463 |
+| `audited_renaming` | 18 |
+| `unaudited` | 1462 |
 
 | claim_type | count |
 |---|---:|
@@ -1080,6 +1080,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
@@ -12443,6 +12444,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The load-bearing step is a genuine class A structural/bookkeeping closure over the restricted claim scope, not a first-principles physics derivation. The runner source performs text-boundary checks plus simple algebraic identities and explicitly does not promote the teleportation lane or close nature-grade blockers. Because the claim is only the scope split and HOLD boundary, the conclusion follows within that planning-grade scope.
 - **open / conditional deps cited:**
   - `TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md`
+- **auditor confidence:** high
+
+### `teleportation_native_axioms_theory_note`
+
+- **Note:** [`TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md`](../../docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Planning/open-gate consistency artifact for native taste-qubit state teleportation, including Bell-frame XOR accounting and a supplied speed-one Manhattan classical record bound on the audited 3D side=2 surface, without claiming native resource-genesis closure.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T234347Z-fafa1a0e-teleportation_native_axi-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Native teleportation closure is explicitly left open because scaling, apparatus, bath/leakage/noise, and physical-control derivations are missing.  _(class `E`)_
+- **chain closes:** True — The note closes only as an open-gate status statement: it explicitly withholds nature-grade closure and lists the missing resource-genesis, apparatus, noise, scaling, and control derivations. It does not close an unconditional teleportation theorem.
+- **rationale:** The load-bearing move is a status definition/admission rather than a first-principles derivation. The runner verifies simple XOR and Manhattan arithmetic and hard-coded finite evidence thresholds, while explicitly stating it is not a physics simulation and holding native resource genesis open. Because the audited claim is an open-gate planning artifact, this does not fail the note, but it is not clean theorem closure.
 - **auditor confidence:** high
 
 ### `teleportation_native_transport_theory_note`

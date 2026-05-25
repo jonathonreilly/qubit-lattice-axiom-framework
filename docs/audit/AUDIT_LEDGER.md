@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 430 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1263 |
+| unaudited | 1262 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 83 |
-| ~~audited_failed~~ | 7 |
+| ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -53,10 +53,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 702 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 37 |
-| `audited_failed` | 51 |
+| `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1490 |
+| `unaudited` | 1489 |
 
 | claim_type | count |
 |---|---:|
@@ -972,6 +972,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -9242,6 +9243,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Any tracial state on A restricts to the normalized trace on every finite-region matrix algebra, so it agrees with τ∞ on the dense local subalgebra and norm-continuity extends the equality to all of A.  _(class `A`)_
 - **chain closes:** True — The cited axiom premise supplies the per-site M_2(C) algebra and Z^3 lattice, and the note's finite-region uniqueness plus compatibility, density, and state-continuity argument proves uniqueness on the inductive-limit algebra. No open identification is needed for the unique-trace theorem itself.
 - **rationale:** The load-bearing step is a standard algebraic/operator-algebra closure: restrictions of an arbitrary tracial state to each finite matrix algebra are uniquely normalized traces, and equality on the dense local union extends by boundedness of states. The only upstream authority is explicitly flagged as an accepted axiom premise, so it does not trigger the non-retained downgrade. The later identification with ρ_ref is described as a connection and does not bear on the audited unique-tracial-state theorem.
+- **auditor confidence:** high
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrowed claim that the one-qubit-per-site Z^3 quasi-local algebra has a unique tracial state with finite-region density matrices ⊗_x I/2 and the stated equivalent characterizations, excluding the demoted pre-record identification.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T114919Z-6c6217bd-pre_record_reference_sta-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Step 4 asserts that traciality, inner-automorphism invariance, vanishing one-point Pauli expectations, and maximum finite-region entropy are equivalent characterizations of the unique tracial state on the qubit UHF algebra.  _(class `A`)_
+- **chain closes:** False — The unique-trace part follows from the stated UHF/matrix-algebra standard mathematics, but the full stated characterization does not close: vanishing one-point Pauli expectations alone do not characterize the tracial state on multi-site regions or the quasi-local algebra. A nontracial state can have zero one-site Bloch vector at every site while retaining correlations.
+- **rationale:** The narrowed note successfully demotes the pre-record identification, so Step 5 is not load-bearing. The operator-algebra uniqueness claim is plausible from the restricted packet’s standard-math imports, but the audited claim also asserts equivalence with one-point Pauli vanishing. That equivalence is too weak on a lattice algebra and is false as stated, so the claim does not close on its own terms.
+- **open / conditional deps cited:**
+  - `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

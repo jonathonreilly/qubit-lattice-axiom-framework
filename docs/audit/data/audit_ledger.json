@@ -206032,24 +206032,48 @@
       "verdict_rationale": "The load-bearing step is a standard algebraic/operator-algebra closure: restrictions of an arbitrary tracial state to each finite matrix algebra are uniquely normalized traces, and equality on the dense local union extends by boundedness of states. The only upstream authority is explicitly flagged as an accepted axiom premise, so it does not trigger the non-retained downgrade. The later identification with \u03c1_ref is described as a connection and does not bear on the audited unique-tracial-state theorem."
     },
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T11:50:17.529669+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "a1_qubit_interpretation_note_2026-05-20": null,
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "a1_qubit_interpretation_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": null,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T114919Z-6c6217bd-pre_record_reference_sta-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The unique-trace part follows from the stated UHF/matrix-algebra standard mathematics, but the full stated characterization does not close: vanishing one-point Pauli expectations alone do not characterize the tracial state on multi-site regions or the quasi-local algebra. A nontracial state can have zero one-site Bloch vector at every site while retaining correlations.",
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Narrowed claim that the one-qubit-per-site Z^3 quasi-local algebra has a unique tracial state with finite-region density matrices \u2297_x I/2 and the stated equivalent characterizations, excluding the demoted pre-record identification.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T11:50:17.529669+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -206058,20 +206082,22 @@
         "a1_qubit_interpretation_note_2026-05-20"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 3.822,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Step 4 asserts that traciality, inner-automorphism invariance, vanishing one-point Pauli expectations, and maximum finite-region entropy are equivalent characterizations of the unique tracial state on the qubit UHF algebra.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1cac345e0e888d788fb61cd39cbbe3019d8b1dd9da35444b78316a41b63b441f",
       "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "Re-audit after removing the one-point Pauli equivalence or replacing it with full finite-region Pauli-string vanishing / full local density-matrix maximal mixing.",
+      "open_dependency_paths": [
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-23T12:01:21.827177+00:00",
@@ -206189,7 +206215,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -206200,7 +206226,7 @@
       "runner_path": null,
       "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra",
       "transitive_descendants": 4,
-      "verdict_rationale": null
+      "verdict_rationale": "The narrowed note successfully demotes the pre-record identification, so Step 5 is not load-bearing. The operator-algebra uniqueness claim is plausible from the restricted packet\u2019s standard-math imports, but the audited claim also asserts equivalence with one-point Pauli vanishing. That equivalence is too weak on a lattice algebra and is false as stated, so the claim does not close on its own terms."
     },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "audit_date": "2026-05-11T17:49:51.246420+00:00",

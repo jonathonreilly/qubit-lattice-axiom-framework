@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 155 |
-| **retained_bounded** | 426 |
+| **retained_bounded** | 427 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1272 |
+| unaudited | 1271 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 697 |
+| `audited_clean` | 698 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1499 |
+| `unaudited` | 1498 |
 
 | claim_type | count |
 |---|---:|
@@ -400,6 +400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
@@ -5776,6 +5777,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current runner computes the stated correlation-matrix entropies/ranks and reports boundary-fit R^2 exceeding volume-fit R^2 for both G=0 and G=10 globally and per side, with boundary slopes 0.186053 and 0.211399 giving ratio 0.8801.  _(class `C`)_
 - **chain closes:** True — The finite-model computation directly evaluates the claimed observable and fit comparison under the stated parameters; the conclusion is only the bounded numerical boundary-preference statement and coefficient shift.
 - **rationale:** The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement.
+- **auditor confidence:** high
+
+### `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29`
+
+- **Note:** [`HUBBLE_LANE5_C1_A1_GRASSMANN_BOUNDARY_CAR_OBSTRUCTION_NOTE_2026-04-29.md`](../../docs/HUBBLE_LANE5_C1_A1_GRASSMANN_BOUNDARY_CAR_OBSTRUCTION_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-algebra obstruction that bulk three-mode CAR plus rank-four support alone does not force CAR semantics on the projected boundary block.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T113228Z-050637f6-hubble_lane5_c1_a1_grass-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Without a projection-compatibility/reducing-module condition, there are rank-four projections with the same trace/rank data for which the compressed operators P c_i P fail the CAR relations.  _(class `A`)_
+- **chain closes:** True — The restricted packet closes the narrow rank-only obstruction by explicit finite-matrix CAR computation and counterexample. It does not claim C1 is impossible; it only blocks the direct A1 shortcut absent a P_A reducing-module theorem.
+- **rationale:** The runner genuinely constructs Jordan-Wigner finite CAR operators, a reducing rank-four projection, a nonreducing rank-four projection, and a same-rank non-CAR two-qubit semantics check; it is not just printing expected constants. The load-bearing step is class-A finite algebra, with no PDG, fitted scale, or external comparator. No-Go Discipline does not defeat the verdict because the note is explicitly bounded to the direct rank-only A1 implication and leaves surviving routes open rather than asserting a global no-go.
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28`

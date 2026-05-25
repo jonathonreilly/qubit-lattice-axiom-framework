@@ -1,0 +1,22 @@
+loop: dimension-finite-k-centroid-sign
+mode: science_block
+started_utc: "2026-05-25"
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "independent finite-k centroid-sign proof for dimension lower bound"
+hard_residual: "replace WKB/eikonal sign import with exact derivative of the runner's normalized finite propagator"
+files_touched:
+  - docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md
+  - scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+  - outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+open_imports:
+  - all-d potential/Coulomb law authority
+  - upper-bound Bertrand/Coulomb conditional dependencies
+  - uniform parameter/lattice-size generalization if audit requires it
+stop_condition: "open review PR with finite-k lower-bound support and no axiom rewrite claim"

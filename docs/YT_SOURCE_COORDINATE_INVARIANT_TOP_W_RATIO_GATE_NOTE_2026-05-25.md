@@ -65,7 +65,7 @@ The route does **not** need:
 - the old Ward identity.
 
 After the carrier-ray bridge in
-[`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md),
+`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`,
 the signed-record source is aligned with the neutral `P_-` Higgs ray up to an
 affine source reparameterization.  The route still needs:
 

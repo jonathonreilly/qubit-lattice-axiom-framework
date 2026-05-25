@@ -180,3 +180,12 @@ Expected result:
 ```text
 SUMMARY: PASS=... FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25](YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md)
+- [yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25](YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md)
+- [yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25](YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md)
+- [sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26](SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md)

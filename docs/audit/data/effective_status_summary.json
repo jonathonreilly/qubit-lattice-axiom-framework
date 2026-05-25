@@ -1,30 +1,52 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1056,
+    "bounded_theorem": 1055,
     "decoration": 42,
-    "meta": 234,
+    "meta": 233,
     "no_go": 248,
     "open_gate": 112,
-    "positive_theorem": 728
+    "positive_theorem": 730
   },
   "cycle_examples": [
     [
+      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+    ],
+    [
+      "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+      "lorentz_kernel_positive_closure_note",
+      "emergent_lorentz_invariance_note",
+      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
+      "anomaly_forces_time_theorem",
+      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    ],
+    [
+      "emergent_lorentz_invariance_note",
+      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
+      "anomaly_forces_time_theorem",
+      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    ],
+    [
+      "lorentz_kernel_positive_closure_note",
+      "emergent_lorentz_invariance_note",
+      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
+      "anomaly_forces_time_theorem",
+      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    ],
+    [
       "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
       "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
-    ],
-    [
-      "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
-    ],
-    [
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
     ]
   ],
-  "cycles_detected": 3,
+  "cycles_detected": 7,
   "effective_status_counts": {
-    "audited_conditional": 112,
+    "audited_conditional": 102,
     "audited_failed": 2,
     "audited_numerical_match": 12,
     "audited_renaming": 17,
@@ -53,7 +75,7 @@
     "retained_bounded": 458,
     "retained_no_go": 161,
     "retained_pending_chain": 8,
-    "unaudited": 1222
+    "unaudited": 1232
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

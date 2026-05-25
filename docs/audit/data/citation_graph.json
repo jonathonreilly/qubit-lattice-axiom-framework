@@ -1345,6 +1345,10 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
+      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "to": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+    },
+    {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
@@ -20085,6 +20089,10 @@
       "to": "native_gauge_closure_note"
     },
     {
+      "from": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "to": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
+    },
+    {
       "from": "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
       "to": "plaquette_4d_mc_support_note_2026-05-04"
     },
@@ -24789,6 +24797,10 @@
       "to": "higher_symmetry_gravity_probe_note"
     },
     {
+      "from": "symmetry_head_to_head_note",
+      "to": "mirror_chokepoint_boundary_fit_note"
+    },
+    {
       "from": "synthesis_note",
       "to": "gravity_law_cleanup_note"
     },
@@ -25181,6 +25193,26 @@
       "to": "generation_axiom_boundary_note"
     },
     {
+      "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+      "to": "site_phase_cube_shift_intertwiner_note"
+    },
+    {
+      "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+      "to": "s3_taste_cube_decomposition_note"
+    },
+    {
+      "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+      "to": "s3_mass_matrix_no_go_note"
+    },
+    {
+      "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+      "to": "z2_hw1_mass_matrix_parametrization_note"
+    },
+    {
+      "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+      "to": "physical_lattice_necessity_note"
+    },
+    {
       "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
       "to": "site_phase_cube_shift_intertwiner_note"
     },
@@ -25275,6 +25307,10 @@
     {
       "from": "u1_fermion_number_conservation_theorem_note_2026-05-02",
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+    },
+    {
+      "from": "u1_fermion_number_conservation_theorem_note_2026-05-02",
+      "to": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
@@ -27513,6 +27549,38 @@
       "to": "yt_exact_schur_normal_form_uniqueness_note"
     },
     {
+      "from": "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
+      "to": "yt_physical_top_intervention_identification_candidate_note_2026-05-25"
+    },
+    {
+      "from": "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
+      "to": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25"
+    },
+    {
+      "from": "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
+      "to": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25"
+    },
+    {
+      "from": "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
+      "to": "yt_fh_top_w_response_ratio_gate_note_2026-05-25"
+    },
+    {
+      "from": "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
+      "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+    },
+    {
+      "from": "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
+      "to": "yt_strict_symbolic_top_response_row_packet_note_2026-05-25"
+    },
+    {
+      "from": "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
+      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+    },
+    {
+      "from": "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
+      "to": "ew_coupling_derivation_note"
+    },
+    {
       "from": "yt_fierz_projection_defense_narrow_theorem_note_2026-05-10",
       "to": "yt_ew_color_projection_theorem"
     },
@@ -28125,6 +28193,22 @@
       "to": "charged_lepton_mass_hierarchy_review_note_2026-04-17"
     },
     {
+      "from": "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
+      "to": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25"
+    },
+    {
+      "from": "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
+      "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+    },
+    {
+      "from": "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
+      "to": "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25"
+    },
+    {
+      "from": "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
+      "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
+    },
+    {
       "from": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24",
       "to": "minimal_axioms"
     },
@@ -28147,6 +28231,14 @@
     {
       "from": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
       "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+    },
+    {
+      "from": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
+      "to": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"
+    },
+    {
+      "from": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
+      "to": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24"
     },
     {
       "from": "yt_qfp_insensitivity_support_note",
@@ -28207,6 +28299,14 @@
     {
       "from": "yt_right_handed_species_dependence_note_2026-04-18",
       "to": "yukawa_color_projection_theorem"
+    },
+    {
+      "from": "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
+      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+    },
+    {
+      "from": "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
+      "to": "yt_fh_top_w_response_ratio_gate_note_2026-05-25"
     },
     {
       "from": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
@@ -42012,9 +42112,11 @@
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "466faf0618a2faf91fa10ae2ed4b49423abfec7ba398701cff9204c2d7d9b33c",
+      "note_hash": "5c741a1d97291dc222880fd3602f9940a7ca62f223a43ed4a8e02b96c9017c2e",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"
@@ -68189,9 +68291,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "25e3545bd398c137dc70e2ee59286bf5123d5d7858208ddce3576198166f8ff1",
+      "note_hash": "9c072935df78959a6e0c39089a752737f0fe42da2e6c5e3db10f0eb2e8d8ae6c",
       "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_planck_target3_clifford_phase_bridge.py",
       "title": "Planck Target 3 Clifford Phase Bridge Theorem"
@@ -78199,10 +78303,11 @@
         "mirror_chokepoint_note",
         "mirror_mutual_information_chokepoint_note",
         "higher_symmetry_joint_validation_note",
-        "higher_symmetry_gravity_probe_note"
+        "higher_symmetry_gravity_probe_note",
+        "mirror_chokepoint_boundary_fit_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "995dc67669d77542f8e86c2fc83f6bc88cb9a5f9a146eed12396dd5d08f3b4e7",
+      "note_hash": "5e815662ccd349fd1455dd62ad4013e1afe0985ac0acd8f50684d99d69d6b169",
       "path": "docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md",
       "runner_path": "scripts/symmetry_head_to_head.py",
       "title": "Symmetry Head-To-Head Note"
@@ -79323,10 +79428,15 @@
       "claim_type_seed_hint": null,
       "deps": [
         "three_generation_observable_theorem_note",
-        "generation_axiom_boundary_note"
+        "generation_axiom_boundary_note",
+        "site_phase_cube_shift_intertwiner_note",
+        "s3_taste_cube_decomposition_note",
+        "s3_mass_matrix_no_go_note",
+        "z2_hw1_mass_matrix_parametrization_note",
+        "physical_lattice_necessity_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a7aed87a00e940c9a438ea6f45ff4aed4feaf5050417f7da6910c74d3ec425cb",
+      "note_hash": "68e659b7bab0f16154fae11e6afd3646a65d205065f446ff398481be3d6a316c",
       "path": "docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem \u2014 Dep-Chain Audit"
@@ -79553,10 +79663,11 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
+        "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "007912e193e28d7f8386814a956883c5cd0e619d02aa24794cfdc22af3acf4de",
+      "note_hash": "998a63b9073970f8e0efe8b661bb897144525c6792936d4322471eb5e1a5f054",
       "path": "docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/u1_fermion_number_conservation_check.py",
       "title": "U(1) Fermion-Number Conservation from Cited Lattice Noether N2"
@@ -83188,9 +83299,16 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
+        "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+        "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
+        "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
+        "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+        "yt_strict_symbolic_top_response_row_packet_note_2026-05-25"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "1ce00f1a1611b58e742a2efb4c99f538f677211e9f21920b619e9ae4c3d5b2e4",
+      "note_hash": "a9a3dcf25b1d19ba543eda2e45376b788a59b299f3643e9c73471b435a83cfab",
       "path": "docs/YT_FH_TOP_MASS_RESPONSE_PHYSICAL_INTERVENTION_BRIDGE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py",
       "title": "Y_T FH Top Mass-Response Physical-Intervention Bridge"
@@ -83200,9 +83318,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "yt_pr230_consolidated_status_note_2026-05-22",
+        "ew_coupling_derivation_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "3c58fbc6706269ff3901683f528dedb39b17b5bc302cbcf3a9e6986a28ab6ccc",
+      "note_hash": "8489321fba4ec996b354e06a294e555a2b07fac9f9ddbdc131f211d5a550f9f3",
       "path": "docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_fh_top_w_response_ratio_gate.py",
       "title": "Y_T Feynman-Hellmann Top/W Response-Ratio Gate"
@@ -83855,9 +83976,14 @@
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
+      "deps": [
+        "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+        "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25",
+        "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "967ae4550bec9a43c535daf2a004bf106df1c5bfc2f8433e0f5f539799834902",
+      "note_hash": "7e0560c16b9127d9a961e20550abcf201982cc44e3d0b207acb220c05cef94ce",
       "path": "docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_physical_top_intervention_identification_candidate.py",
       "title": "Y_T Physical Top Intervention Identification Candidate"
@@ -83923,10 +84049,12 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+        "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+        "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3c38d2fc7f86e49cb29ec881acd2f946f32c076c11d4081ac37d1f491ba07671",
+      "note_hash": "05e51f5d8a241daf99f93e150f29f028fd958e10fcca597c7174c49d8e89ff76",
       "path": "docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_primitive_source_unit_fisher_normalization.py",
       "title": "Y_T Primitive Source-Unit Fisher Normalization Support"
@@ -84052,9 +84180,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_fh_top_w_response_ratio_gate_note_2026-05-25"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "32f0bafa134f52191df3501bfce2174d8007507999395958f71b8dca2f594a7b",
+      "note_hash": "89f0aaefa8027b3f73b2952737fd701ec500913b5601ece2a5f1c8d901d08cd0",
       "path": "docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_same_source_ew_higgs_authority_gate.py",
       "title": "Y_T Same-Source EW/Higgs Authority Gate"
@@ -84584,7 +84715,6 @@
     "audit_structural_issues_snapshot_2026-05-17",
     "axiom_change_proposal_2026-04-10",
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
-    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
     "background_independence_note",
     "bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10",
@@ -85027,7 +85157,6 @@
     "planck_boundary_orientation_incidence_no_go_note_2026-04-30",
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2_note_2026-05-17",
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
-    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
@@ -85285,11 +85414,8 @@
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
     "yt_ew_coupling_bridge_note_2026-05-17",
-    "yt_fh_top_mass_response_physical_intervention_bridge_note_2026-05-25",
-    "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
     "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
-    "yt_physical_top_intervention_identification_candidate_note_2026-05-25",
     "yt_pr230_consolidated_status_note_2026-05-22",
     "yt_pr230_route_exhaustion_summary_note_2026-05-22",
     "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
@@ -85297,7 +85423,6 @@
     "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25",
     "yt_retention_landing_readiness_2026-04-18",
     "yt_retention_master_manifest_2026-04-18",
-    "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
     "yt_ssb_matching_gap_analysis_note_2026-04-18",
     "yt_top_coefficient_full_court_press_note_2026-05-25",
     "z2_hw1_mass_matrix_parametrization_note",
@@ -85323,10 +85448,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9753,
-    "leaf_count": 788,
+    "edge_count": 9778,
+    "leaf_count": 780,
     "node_count": 2534,
-    "root_count": 839,
+    "root_count": 833,
     "runners_with_path": 2095
   }
 }

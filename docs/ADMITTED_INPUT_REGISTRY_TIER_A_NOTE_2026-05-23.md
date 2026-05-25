@@ -32,7 +32,7 @@ below, of which **four** are derivation-targets and **two** are conventions.
 | id | statement | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
 | **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source, tomita_gibbs_modular, structural_reframing}` (6) |
-| **AC_φλ** | a bijection identifies the three C₃-orbit hw=1 sectors with the physical generations (S₃→C₃ orientation + species labeling) | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
+| **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **S** | the single dimensionful input fixing physical units (`a` ↔ Planck/Sommer scale) | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go` (1); also unsolved in the Standard Model |
 
@@ -41,10 +41,21 @@ Notes:
   an extensive observable; its no-go portfolio shows additivity⟺log is circular,
   so it is a candidate to be **admitted as a stated principle** (not necessarily
   ever "derived").
-- **AC_φλ** is the genuine framework-specific flavor input; the gate's own
-  classification names three external closers (labeling-convention / C₃-breaking
-  dynamics / PDG). Its A3-route attempts (`a3_route1..5`) are `unaudited`, not
-  retained no-gos, and are listed as *attempts*, not portfolio members.
+- **AC_φλ — de-named (the labeling itself is not an input).** The gate states
+  this as a labeling bijection `π:{c₁,c₂,c₃}→L₃`, but a bijection between two
+  *bare* 3-element sets is pure relabeling with **zero physical content** — the
+  *names* (which sector is electron/muon/tau) are **not** an admitted input and
+  must not be banked as one. Stripped of naming, the genuine admission is two
+  physical things: (i) the **mass pattern** — the C₃-breaking phase δ, which
+  collapses into the *same* δ tracked as the Koide phase; and (ii) the
+  **abstract-sector → physical-species** identification (an interpretive bridge,
+  akin to the abstract-su(3) → physical-color gap). A third non-naming residual,
+  *across* fermion types, is the relative alignment of the up/down/lepton mass
+  bases (the mixing/CKM-PMNS structure). The gate's three closers
+  (labeling-convention / C₃-breaking dynamics / PDG) and its `a3_route1..5`
+  attempts (`unaudited`, not retained no-gos, listed as *attempts*) target the
+  **pattern**, not the names. Net: AC_φλ is *not* a discrete 6-way labeling
+  choice; the irreducible content is "the δ-pattern + the species bridge."
 - **S** is the only Tier-A input of the *same type* as a Standard-Model
   dimensionful parameter (a unit-setting number).
 - **θ** is admitted here exactly as the Standard Model admits it (the strong-CP

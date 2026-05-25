@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1223 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 111 |
+| ~~audited_conditional~~ | 112 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 740 |
-| `audited_conditional` | 111 |
+| `audited_conditional` | 112 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1453 |
+| `unaudited` | 1452 |
 
 | claim_type | count |
 |---|---:|
@@ -973,6 +973,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_same_source_ew_higgs_authority_gate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -14043,6 +14044,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** A nonzero color-singlet one-Higgs Yukawa insertion has color matrix proportional to I_color, whose Hilbert-Schmidt singlet weight is 1, while kappa_Y = 0 under the direct projection diagnostic would require a nonzero traceless color insertion.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from SU(N) color-singlet invariance, trace algebra, and the retained kappa-family target in the cited color-projection correction. The note keeps alternative matching theorems and nonstandard scalar insertions out of scope rather than claiming a global impossibility theorem.
 - **rationale:** The load-bearing step is ordinary finite-dimensional color algebra, not a definition, numerical fit, or external comparator. The cited upstream authority is retained_no_go and supplies the conditional kappa_Y family that this note targets; the current note does not import the open kappa_Y selector as a premise. The restricted packet satisfies the no-go gate: it enumerates six routes, collapses independent walls, scans hidden assumptions, matches the cited residual, narrows rhetoric, leaves partial closure paths open, gives a steelman, and uses same-packet cross-cycle evidence.
+- **auditor confidence:** high
+
+### `yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25`
+
+- **Note:** [`YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md`](../../docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that the normalized democratic signed-linear tangent gives y_33=1/sqrt(6) only under an explicit primitive-unit physical source/action premise, and otherwise leaves an exact lambda obstruction.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201844Z-5afc4927-yt_signed_linear_democra-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Without the primitive-unit physical-source premise, the family dS_lambda/ds|0 = lambda * sum_i u_dem(i) O_i preserves the cited structural supports while giving y_33(lambda)=lambda/sqrt(6).  _(class `A`)_
+- **chain closes:** False — The bounded obstruction closes algebraically, but the positive physical Yukawa bridge does not close. The missing step is a retained derivation or accepted theorem that the physical top Yukawa deformation is the primitive unit signed-record source/action tangent.
+- **rationale:** The runner verifies algebraic normalization, the democratic tangent component, and the lambda counterfamily; it does not derive the primitive physical source unit from the restricted inputs. The cited no-go authority is retained_no_go and directly matches the residual, but the source note itself keeps the key identification open. No-Go Discipline is satisfied within the packet: multiple routes are enumerated, the wall collapses to the source-unit premise, hidden premise language is explicit, the residual matches, the negative scope is narrow, convention/direct-response closure paths remain open, the steelman does not defeat the current-surface obstruction, and the analogy to prior scale-blind walls is same-packet only.
 - **auditor confidence:** high
 
 ### `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23`

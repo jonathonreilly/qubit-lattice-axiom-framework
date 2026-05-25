@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 157 |
+| **retained_no_go** | 158 |
 | **retained_bounded** | 450 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 729 |
+| `audited_clean` | 730 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1461 |
+| `unaudited` | 1460 |
 
 | claim_type | count |
 |---|---:|
@@ -706,6 +706,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11308,6 +11309,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The mathematical chain closes within the stated abstract tensor-product scope, and the runner source genuinely performs exact symbolic matrix checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream input. Under the stated tie-breaker, zero external comparator checks plus reduction to a single retained parent claim and standard mathematics requires audited_decoration rather than audited_clean. | The mathematical chain closes: the cited Cl(3) authority is retained and supplies the two-dimensional Pauli carrier, and the rest is exact finite-dimensional Pauli/Jordan-Wigner algebra. The runner source genuinely computes symbolic matrix identities and reports PASS=44 FAIL=0, all class A. Under the explicit tie-breaker, zero external comparator checks plus one retained parent claim and standard algebra classifies this as audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract scope: the retained upstream note supplies the two-dimensional Pauli carrier, and the rest is finite Pauli-tensor/Jordan-Wigner algebra. The load-bearing step is class A, the runner source genuinely performs exact symbolic checks, and the packet reports PASS=44 FAIL=0. Under the explicit clean-vs-decoration tie-breaker, zero D checks plus one retained parent claim plus standard mathematics classifies this as audited_decoration, not audited_clean. | The mathematical chain closes within the note's abstract scope: the retained upstream authority supplies the two-dimensional Pauli carrier, and the Jordan-Wigner CAR statements are finite tensor-product algebra. The runner source performs exact symbolic matrix checks rather than printing constants, and all checks are class A with no external comparator. Under the stated tie-breaker, a zero-D, pure class-A chain reducing to one retained parent plus standard finite-dimensional mathematics is audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract tensor-product scope, and the runner source performs real exact symbolic checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream Cl(3) carrier. Under the binding tie-breaker, zero D checks plus a chain reducing to one retained parent claim and standard mathematics is classified as audited_decoration, not audited_clean.
 - **decoration parent:** `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10`
 - **auditor confidence:** judicial_panel_majority
+
+### `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
+- **claim_type:** `no_go`
+- **claim_scope:** A1/A2 qubits on Z^3 plus the tested ungraded operator-algebra, per-site dimension, and finite local-ordering facts do not force Grassmann/CAR statistics over the hard-core-boson reading.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T144935Z-a5277593-staggered_dirac_substep1-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The qubit-ladder algebra and the JW-fermion algebra each generate the same full matrix algebra M_{2^N}(C), so JW is an invertible change of generators and ungraded operator-algebra/dimension data do not prefer the fermionic frame.  _(class `C`)_
+- **chain closes:** True — From the axiom-premise qubit algebra, the finite tensor product admits bare commuting hard-core ladders and also JW-dressed CAR generators. The runner verifies the decisive finite matrix facts and no additional retained selector for fermionic grading/locality is present in the restricted packet.
+- **rationale:** The runner source genuinely constructs Pauli/tensor-product/JW operators, computes commutators, anticommutators, algebra ranks, per-site truncation behavior, and the finite bandwidth obstruction; it does not hard-code a contested premise or import an external comparator. The only cited authority is the A1/A2 axiom premise, which is covered by the accepted-premise carve-out, and the proof uses standard finite-dimensional algebra from that baseline. The negative-claim gate passes within the packet: five forcing routes are considered, collapsed to the single missing statistics/graded-locality selector, and the steelman requires an extra principle absent from A1/A2.
+- **auditor confidence:** high
 
 ### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
 

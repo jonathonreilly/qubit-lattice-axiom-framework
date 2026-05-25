@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 255,
     "high": 341,
-    "leaf": 308,
+    "leaf": 307,
     "medium": 328
   },
   "cycle_break_target_count": 8,
@@ -28165,30 +28165,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37233,6 +37209,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 4,
-  "total_pending": 1232
+  "ready_count": 3,
+  "total_pending": 1231
 }

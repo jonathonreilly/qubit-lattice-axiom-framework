@@ -279210,24 +279210,42 @@
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_seed0_control_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:16:34.740598+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed1_control_note"
+        ],
+        "load_bearing_score": 8.322,
+        "runner_hash": "1536d13264143ef396b546e3570a01a3a0a5d1555ea9fc48839f2ccc001be9d4",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T191613Z-d2e53f1a-wave_direct_dm_h025_fam2-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The reported runner output matches the note numerically and the visible runner path genuinely calls framework computation rather than printing constants. However, the packet truncates the transitive helper source for scripts/wave_retardation_continuum_limit.py, including load-bearing functions needed to verify the computation chain from source.",
       "claim_id": "wave_direct_dm_h025_fam2_seed0_control_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded Fam2 seed-0 H=0.25 direct-dM control ladder and its limited use with the retained Fam2 seed-1 control ladder to close the second-family fine-H pair only.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:16:34.740598+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -279235,23 +279253,23 @@
         "wave_direct_dm_h025_fam2_seed1_control_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/wave_direct_dm_h025_control_batch.py",
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 8.322,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The Fam2, seed 0, H = 0.25 ladder has exact S=0 null, common negative sign over S=0.002, 0.004, 0.008, and approximately linear weak-field scaling near R_hist ~ -23%.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0774786b889814ce4069628f913948a44b8172574ec09a19a69f18aa23527ed5",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: rerun the audit with the complete untruncated source for scripts/wave_retardation_continuum_limit.py, especially the load-bearing prop_beam and cz implementations.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -279356,18 +279374,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Control Note",
       "transitive_descendants": 19,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner is a parameter wrapper over the shared H=0.25 control batch, and the visible shared code computes the null and weak-field ladder by calling measure_dm rather than hard-coding the table. The completed cached stdout agrees with the note's values, sign pattern, null, and spread. The cited Fam2 seed-1 authority is retained-grade, so it does not create an upstream retention downgrade. The remaining blocker is packet completeness: the wave_retardation_continuum_limit.py helper is truncated while its grow, solve_wave, prop_beam, and cz functions are load-bearing for measure_dm, so the restricted packet does not fully prove the class-C chain."
     },
     "wave_direct_dm_h025_fam2_seed1_control_note": {
       "audit_date": "2026-05-23T19:39:42.325205+00:00",

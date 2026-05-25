@@ -266971,22 +266971,42 @@
       "verdict_rationale": "The note is candidly a named non-derivation import wrapper, so the load-bearing step is definitional/import bookkeeping rather than a first-principles derivation. Because the restricted packet contains no full upstream authorities despite the physics content depending on external textbook/literature claims, the chain does not close from provided inputs. This is not a compute issue; it is a missing authority/import-closure issue."
     },
     "translation_abelian_composition_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:31:39.172534+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "07385ca8038000bd42b56336dd11bfa149c51649f96f696c5a5e9ea59ec2be17",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193031Z-c608de6f-translation_abelian_comp-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The regular-representation algebra closes for any translation subgroup that is actually supplied. The cited Noether authority only supports exact pure translations on the (2Z)^3 two-step sublattice and explicitly says one-site shifts are not pure symmetries, so the full Z^3 physical-translation claim is missing a retained bridge.",
       "claim_id": "translation_abelian_composition_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Algebraic composition, commutativity, unitarity, identity, and faithfulness of permutation translations T_a|x> = |x+a> on a lattice-site basis; not the unsupported upgrade to full pure Z^3 physical translation symmetry from the cited Noether authority.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:31:39.172534+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -266994,34 +267014,36 @@
         "axiom_first_lattice_noether_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Direct computation on basis states: T_a T_b |x> = T_a |x+b> = |x+b+a> = |x+(a+b)> = T_{a+b}|x>.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "950c7679b545ee7c194a4b21f36b864f8c6e161d81e1f1e82deb9bca7011656a",
       "note_path": "docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to the exact (2Z)^3 two-step translation subgroup supplied by the Noether authority, or add a retained bridge theorem establishing pure one-site Z^3 translations on H_phys.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/translation_abelian_composition_check.py",
       "title": "Translation Group Composition T_a T_b = T_{a+b} on Z^3 Lattice",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely constructs finite periodic permutation matrices and verifies seven algebraic group-representation properties, all class A. Those checks support the regular-representation statement on the toy (Z/L)^3 basis, but they do not establish that the framework authority provides pure one-site Z^3 translations on H_phys. The one-hop authority is narrower: its translation branch is the (2Z)^3 two-step Ward identity on an admitted staggered carrier, with one-site shifts requiring extra taste/staggered structure outside scope."
     },
     "translation_covariance_local_op_theorem_note_2026-05-02": {
       "audit_date": null,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 462 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -53,12 +53,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 746 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 101 |
 | `audited_decoration` | 42 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1457 |
+| `unaudited` | 1456 |
 
 | claim_type | count |
 |---|---:|
@@ -944,6 +944,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -11217,6 +11218,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
   - `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+- **auditor confidence:** high
+
+### `spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19`
+
+- **Note:** [`SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md`](../../docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-volume Wilson spatial-slab transfer-operator positivity, trace-class compactness, and strict positive spectral gap, with the staggered+Wilson extension conditional on Leg A determinant positivity.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T235223Z-1b055b3d-spatial_slab_transfer_op-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Lemma 3.1 reduces the spatial-slab operator statement to the corresponding PR #1577 temporal-slab transfer-operator statement, after which Perron-Jentzsch is applied to obtain the simple top eigenvalue and strict gap.  _(class `B`)_
+- **chain closes:** False — The argument explicitly imports the PR #1577 temporal-transfer theorem/Lemmas A-D and the Leg A determinant-positivity input, but those authorities are not retained-grade in the restricted packet. The pure Wilson branch also depends on the unprovided temporal-transfer theorem candidate rather than closing solely from the retained G_BARE authority and standard mathematics shown here.
+- **rationale:** The source note’s own dependency note names the PR #1577 temporal-transfer theorem candidate as a conditional upstream input for Theorem A and Leg A as a conditional input for Theorem B. The runner performs useful internal checks, but several checks are axis-relabel/spectral-model confirmations and V7 uses a fixed two-site determinant model that does not independently close the full staggered slab determinant claim. Since the load-bearing imported transfer-operator theorem and Leg A are not retained-grade within the packet, the result is conditional, not clean.
+- **open / conditional deps cited:**
+  - `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+  - `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+  - `CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `spectral_closure_2026-04-09`

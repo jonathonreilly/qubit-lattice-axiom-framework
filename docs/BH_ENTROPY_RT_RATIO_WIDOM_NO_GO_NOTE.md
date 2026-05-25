@@ -2,27 +2,32 @@
 
 **Date:** 2026-04-17 (last rigorization 2026-05-10; 2026-05-18:
 claim_scope narrowed per audit verdict "Claim boundary until fixed"
-instruction).
+instruction; 2026-05-25: claim further narrowed to finite-`L ≤ 64`
+numerical-fit evidence per audit verdict "the runner's THEOREM check
+is only a numerical fit check and does not prove the asymptotic
+statement.").
 **Claim type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+**Claim scope (post-2026-05-25 narrowing):** the load-bearing content
 of this note is **the Widom entropy coefficient `1/6` on the
 self-contained free-fermion carrier defined intrinsically in
-§"Self-contained carrier definition"** plus the **finite-L (`L ≤ 64`)
-numerical evidence against the exact `1/4` ratio** under the stated
-`10^-6` relative singular-value threshold on the OBC half-filled
-square-lattice carrier. This note **does NOT** establish the full
-asymptotic `ln χ_eff(L) = ln L + o(ln L)` for the non-standard C-7
-thresholded cross-layer matrix; that proof (preferably by
-diagonalizing transverse modes and bounding the singular values)
-remains the named open work item in the audit verdict. As a
-consequence, the no-go statement is **not closed at retained grade
-across all L**; it is supported as a bounded numerical no-go
-through `L = 64` plus the Widom `1/6` constant from the cited
-classical Widom-Sobolev theorems. The `d = 3` normalization wording
-will be corrected or split in a separate revision before any future
-retained-grade promotion attempt.
+§"Self-contained carrier definition"** plus the **finite-`L ≤ 64`
+numerical-fit evidence against the exact `1/4` ratio** under the
+stated `10^-6` relative singular-value threshold on the OBC
+half-filled square-lattice carrier. The runner is a **numerical fit
+check** at finite `L ≤ 64`; it does **not** prove any asymptotic
+statement. Consistent with the audit verdict
+("the runner's THEOREM check is only a numerical fit check and
+does not prove the asymptotic statement"), the asymptotic
+`lim_L r(L) = c_Widom != 1/4` is **moved out** of the retained
+no-go and into open admission OA-1 below. The L ≤ 96 probe claim
+(via `scripts/probe_bh_rt_ratio_asymptotic.py`) is **explicitly
+deferred** as cache-not-in-packet, pending a future runner extension
+that ships the probe cache alongside the note. The `d = 3`
+normalization wording will be corrected or split in a separate
+revision before any future retained-grade promotion attempt.
 **Status authority:** independent audit lane only.
-**Status:** narrow no-go theorem on a self-contained free-fermion carrier
+**Status:** narrow finite-`L ≤ 64` numerical-fit-evidence no-go on a
+self-contained free-fermion carrier
 **Runner:** `scripts/frontier_bh_entropy_rt_ratio_widom.py`
 **Authority role:** canonical closure of the "is RT ratio = 1/4 exact?" question
 on the self-contained carrier defined intrinsically below. The existing
@@ -130,26 +135,37 @@ of this note is restricted to:
   Euclidean geometry of the diamond and the explicit formula
   `(1/(12 (2 pi)^{d-1}))` from (W-1) and is independent of
   admissions OA-1, OA-2.
-- **R2.** The **finite-`L` numerical no-go** through `L = 64`
-  (`L = 8, 12, ..., 64`, OBC, half filling, straight cut, threshold
-  `10^{-6}`): `r(64) = 0.2112`, the two-parameter fit
-  `r(L) = c_inf + a / ln L` over `L >= 32` gives `c_inf = 0.1601`
-  (3.94% from `1/6`, 35.96% from `1/4`); extended `L <= 96` probe
-  gives `c_inf = 0.163` (2.1% from `1/6`, 34.7% from `1/4`). This is
-  finite-`L` evidence inconsistent with the `1/4` value within the
-  stated lattice range, and is retained as a bounded numerical no-go
-  on `L <= 96`.
+- **R2.** The **finite-`L ≤ 64` numerical-fit evidence** for the
+  no-go (`L = 8, 12, ..., 64`, OBC, half filling, straight cut,
+  threshold `10^{-6}`, runner cache in packet): `r(64) = 0.2112`, the
+  two-parameter fit `r(L) = c_inf + a / ln L` over `L >= 32` gives
+  `c_inf = 0.1601` (3.94% from `1/6`, 35.96% from `1/4`). This is
+  finite-`L` numerical-fit evidence (not a theorem) inconsistent with
+  the `1/4` value within the stated lattice range, and is retained as
+  bounded numerical-fit evidence on `L <= 64`. The runner's `THEOREM`
+  label denotes the numerical fit-form check at finite `L`; it is
+  **not** a proof of the asymptotic statement.
 
 The retained statement reads:
 
 > On the OBC half-filled NN-hopping square lattice (C-1)-(C-8) with
 > threshold `10^{-6}`, the dimensionless RT ratio `r(L)` is bounded
-> through `L = 96` by `r(L) <= 0.224`, decreases monotonically for
-> `L >= 28`, and a two-parameter Widom-form fit on `L >= 48` gives
-> `c_inf = 0.163` (2.1% from the 2D diamond-integral value `1/6` and
-> 34.7% from `1/4`). The exact 2D diamond-integral Widom coefficient
-> is `c_Widom(2D, diamond, straight cut) = 1/6` by direct evaluation
-> of the cited Widom-Gioev-Klich integral.
+> through `L = 64` by `r(L) <= 0.224`, decreases monotonically for
+> `L >= 28`, and a two-parameter Widom-form fit on `L >= 32` gives
+> `c_inf = 0.1601` (3.94% from the 2D diamond-integral value `1/6`
+> and 35.96% from `1/4`). The exact 2D diamond-integral Widom
+> coefficient is `c_Widom(2D, diamond, straight cut) = 1/6` by
+> direct evaluation of the cited Widom-Gioev-Klich integral.
+
+**Deferred (cache-not-in-packet):** the extended `L <= 96` probe
+(via `scripts/probe_bh_rt_ratio_asymptotic.py`) reporting
+`c_inf = 0.163` (2.1% from `1/6`, 34.7% from `1/4`) is **explicitly
+deferred** from the retained scope of this note: the L ≤ 96 cache
+is not bundled in the current audit packet, so any claim sourced
+from that probe is pending a future runner extension that ships
+the probe cache alongside the note. Until then, the retained
+finite-L numerical-fit evidence is the `L <= 64` runner cache
+only.
 
 ### No-go discipline notes
 
@@ -164,7 +180,9 @@ broadening, in conformance with the N1-N8 no-go discipline:
   **smaller**, not larger
 - the only retained claims (R1, R2) are weaker than the prior
   asymptotic statement: R1 is an exact evaluation of a classical
-  integral, R2 is a finite-`L` numerical bound through `L = 96`
+  integral, R2 is a finite-`L` numerical-fit evidence bound through
+  `L = 64` (the L ≤ 96 probe is explicitly deferred as cache-not-in-
+  packet, per the 2026-05-25 narrowing)
 - no new asymptotic conclusion, no new universal reach, and no new
   class of carriers is added; the carrier class (C-1)-(C-8) is left
   intact and the open-admissions OA-1, OA-2 are explicitly named
@@ -173,10 +191,11 @@ broadening, in conformance with the N1-N8 no-go discipline:
 Consequently, every prior consumer of this note (the bounded BH-entropy
 companion `BH_ENTROPY_DERIVED_NOTE.md` chief among them) inherits a
 **narrower** obstacle than before, not a broader one: the narrowed no-go
-forbids the `1/4` value only on `L <= 96` in the OBC half-filled NN-
-hopping carrier and only at the level of the diamond-integral Widom
-coefficient `1/6`, leaving the all-`L` and threshold-bridge questions
-explicitly open for future packets to close.
+forbids the `1/4` value only on `L <= 64` (the runner cache in packet)
+in the OBC half-filled NN-hopping carrier and only at the level of the
+diamond-integral Widom coefficient `1/6`, leaving the all-`L`, the
+threshold-bridge, and the `L <= 96` probe questions explicitly open
+for future packets to close.
 
 ## Self-contained carrier definition
 
@@ -446,15 +465,19 @@ Exact, on the self-contained carrier (C-1)-(C-8):
        r(L)  =  c_Widom + a / ln L + b / L + ...
              ->  c_Widom  =  1 / 6    as L -> inf.
 
-4. Numerical verification on `L = 8, 12, ..., 64` (dense `eigh`, OBC, half
-   filling, straight cut) shows `r(L)` decreasing monotonically for
-   `L >= 28` from `r(28) = 0.2232` to `r(64) = 0.2112`, with the
-   two-parameter fit `r(L) = c_inf + a / ln L` over `L >= 32` giving
-   `c_inf = 0.1601`, which agrees with `1 / 6 = 0.1667` to `3.94%` and
-   disagrees with `1 / 4` by `35.96%`. At the extended range `L <= 96`
-   (see `scripts/probe_bh_rt_ratio_asymptotic.py`), `r(L=96) = 0.2059`,
-   and the `L >= 48` fit gives `c_inf = 0.163`, agreeing with `1/6`
-   to `2.1%` and disagreeing with `1/4` by `35%`.
+4. Numerical-fit evidence on `L = 8, 12, ..., 64` (dense `eigh`, OBC,
+   half filling, straight cut; runner cache in packet) shows `r(L)`
+   decreasing monotonically for `L >= 28` from `r(28) = 0.2232` to
+   `r(64) = 0.2112`, with the two-parameter fit
+   `r(L) = c_inf + a / ln L` over `L >= 32` giving `c_inf = 0.1601`,
+   which agrees with `1 / 6 = 0.1667` to `3.94%` and disagrees with
+   `1 / 4` by `35.96%`. This is a finite-`L` numerical fit check at
+   `L ≤ 64`, not a proof of the asymptotic statement. The extended
+   `L <= 96` probe (via `scripts/probe_bh_rt_ratio_asymptotic.py`)
+   is **explicitly deferred** as cache-not-in-packet (see "Deferred
+   (cache-not-in-packet)" above); any L ≤ 96 numerical claim is
+   pending a future runner extension that bundles the probe cache
+   into this packet.
 
 5. On the 3D analogue of the carrier (C-1)-(C-8) (cubic lattice
    `Lambda_L^{(3)}`, `L = 4, 6, 8, 10`) the RT ratio is further from
@@ -577,14 +600,15 @@ import from `BH_ENTROPY_DERIVED_NOTE.md` or any other lane note), and:
 Current runner output: `PASS = 11, FAIL = 0`, with `c_inf(L>=32) = 0.1601`
 (3.94% below 1/6, 35.96% below 1/4).
 
-Extended L-range confirmation is available via
-`scripts/probe_bh_rt_ratio_asymptotic.py` (L up to 96, ~3 min), which
-runs the same two-parameter fit `RT(L) = c_inf + a / ln L` on its
-`L >= 48` tail window and exits `0` (verdict PASS) with
-`c_inf = 0.163` (2.1% below 1/6, 34.7% below 1/4).  The probe also
-prints alternative three-parameter fits over shorter tail windows
-for transparency; those are higher-variance on this L range and are
-not used as the verdict.
+Extended `L <= 96` probe via
+`scripts/probe_bh_rt_ratio_asymptotic.py` (L up to 96, ~3 min) is
+available but its cache is **not bundled** in the current audit
+packet, so any claim sourced from the probe is **explicitly
+deferred** from the retained scope of this note per the 2026-05-25
+narrowing. The retained finite-`L` numerical-fit evidence is the
+in-packet runner cache (`L <= 64`) only. Re-shipping the probe cache
+inside this packet (a future runner extension) is the named
+condition for any L ≤ 96 claim to re-enter the retained scope.
 
 ## Relation to the current BH entropy lane
 

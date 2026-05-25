@@ -35,6 +35,34 @@ does not derive the quotient itself).
 
 ---
 
+## Admissions
+
+This note carries one formally named, load-bearing admission. It is
+already documented in Section 2.2 and in the 2026-05-18 header-level
+admission contract; this block formalizes it per the audit verdict's
+`notes_for_re_audit_if_any` request.
+
+- **(A_SO2) SO(2)-quotient factorization on the charged-lepton scalar lane
+  (admitted input, not derived).** The charged-lepton scalar lane
+  observables factor through the SO(2) orbit of the doublet plane on
+  `Herm_circ(3)`; equivalently, only the doublet radius
+  `r_1^2 + r_2^2 = 6 E_perp` is carried by the scalar lane, and the angle
+  `arg b` is not. This is strictly stronger than "scalar observables are
+  spectrum-native": the demotion note
+  `KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md` Section 1.2 proves
+  `tr(H^3)` and `det(H)` carry an explicit `cos(3 arg b)` dependence
+  under `b -> e^{i theta} b` on `Herm_circ(3)`, so the naive derivation
+  from the retained observable principle alone fails. No currently
+  retained framework theorem on this branch supplies `(A_SO2)`. The
+  cite-or-derive follow-up is out of scope for this row and is
+  catalogued in the Section 2.2 acknowledgment and in the 2026-05-18
+  header-level admission contract below.
+
+The runner certifies only the post-quotient algebra under `(A_SO2)`; it
+does not certify `(A_SO2)` itself.
+
+---
+
 ## Scope narrowing (2026-05-24 audited_conditional repair)
 
 The 2026-05-23 audit verdict on this row

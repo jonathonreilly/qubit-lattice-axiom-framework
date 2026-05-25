@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 144 |
+| **retained** | 145 |
 | **retained_no_go** | 156 |
 | **retained_bounded** | 439 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1242 |
+| unaudited | 1241 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 714 |
+| `audited_clean` | 715 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 38 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1469 |
+| `unaudited` | 1468 |
 
 | claim_type | count |
 |---|---:|
@@ -604,6 +604,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9265,6 +9266,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using the retained identity T_sigma|_{V_1}=P_sigma, take sigma=(1 3 2) so CYCLE=T_{(1 3 2)}|_{V_1}=P_{(1 3 2)}, and then apply the matrix-unit identities to derive the forward-cycle basis and residual-swap actions.  _(class `A`)_
 - **chain closes:** True — The cited axis-to-active-lane bridge supplies the full S_3 restriction T_sigma|_{V_1}=P_sigma, including P_23, and the remaining claims are elementary permutation-matrix and matrix-unit identities. The forward orientation is a stated convention, not an intrinsic uniqueness claim.
 - **rationale:** All cited authorities are retained-grade under the rubric, including the retained_bounded active-lane bridge. The runner source performs direct finite-dimensional sympy/numpy algebra over the stated permutation matrices and matrix units; aside from one informational negative-control check that is trivially true, the load-bearing checks compute the claimed identities. No external comparator, fitted value, or non-retained dependency is used.
+- **auditor confidence:** high
+
+### `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Given the specified P_23 residual swap and oriented forward-cycle channel A_fwd, the audit checks that R[A]=P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive there, and has fixed locus c_1=conj(c_3), c_2 real.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T122628Z-6042eced-pmns_graph_first_residua-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Direct multiplication gives P_23 E_21 P_23 = E_31, P_23 E_32 P_23 = E_23, and P_23 E_13 P_23 = E_12, hence R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).  _(class `A`)_
+- **chain closes:** True — The narrow algebraic claim closes from the provided P_23 matrix and matrix-unit definitions by direct finite-dimensional algebra. Carrier identification and the graph-first derivation of P_23 are explicitly out of scope and are cited to retained-grade upstream authorities.
+- **rationale:** The source proof and runner both perform explicit 3x3 matrix algebra rather than importing a numerical fit or merely renaming symbols. The runner source constructs P_23, the matrix units, R, and the cycle block, then checks the coordinate action, channel preservation, conjugate-linearity, involution, and fixed-locus characterization. The cited upstream authorities are marked retained-grade or retained_bounded, and no external comparator or tuned numerical input is used. The clean verdict applies only to the stated narrow algebraic bridge, not to downstream point selection or carrier derivation.
 - **auditor confidence:** high
 
 ### `pmns_hw1_source_transfer_boundary_note`

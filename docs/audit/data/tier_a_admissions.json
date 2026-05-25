@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "description": "PROPOSAL (audit-lane owned). Registry of Tier-A admitted non-axiom inputs accepted as chain-satisfying premises, so that a row depending on one resolves to retained_bounded (cleanly bounded) rather than retained_pending_chain (blocked). DISTINCT from axioms (axiom_premise_nodes.json, never to be derived) and from standard textbook theorems (which must earn retained-grade inline, not via carve-out). Adopting this WIDENS the accepted-premise set beyond pure axioms and will move downstream rows from pending/conditional toward retained_bounded on the next compute_effective_status run -- a deliberate governance decision. 'derivation_targets' are admitted-for-now and each carries a verified retained_no_go portfolio (to be derived via a yet-to-be-found mechanism; on derivation, land a retained theorem and remove the entry, after which compute_effective_status auto-cascades dependents toward retained). 'conventions' are gauge/normalization choices not intended for derivation. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md. Safe-by-default: premise_nodes.py treats Tier-A as inert unless this file is present.",
+  "canonical_ids": [
+    "observable_principle_from_axiom_note",
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "strong_cp_theta_zero_note",
+    "hypercharge_identification_note",
+    "g_bare_rigidity_theorem_note"
+  ],
+  "derivation_targets": {
+    "observable_principle_from_axiom_note": {
+      "label": "P1",
+      "statement": "scalar observables are additive over independent subsystems; forces W = log|det(D+J)|",
+      "class": "extensivity principle (mild)",
+      "leverage": 88,
+      "no_go_portfolio": [
+        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note",
+        "observable_principle_p1_bridge_jones_index_subfactor_narrow_note",
+        "observable_principle_p1_bridge_locality_of_source_derivation_narrow_note",
+        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note"
+      ]
+    },
+    "staggered_dirac_realization_gate_note_2026-05-03": {
+      "label": "AC_phi_lambda",
+      "statement": "a bijection identifies the three C_3-orbit hw=1 sectors with the physical generations (S_3->C_3 orientation + species labeling)",
+      "class": "discrete flavor input",
+      "leverage": 41,
+      "no_go_portfolio": [
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24"
+      ]
+    },
+    "strong_cp_theta_zero_note": {
+      "label": "theta",
+      "statement": "the QCD vacuum angle theta = 0 (strong-CP); also unsolved in the Standard Model",
+      "class": "naturalness admission",
+      "leverage": 20,
+      "no_go_portfolio": [
+        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go"
+      ]
+    }
+  },
+  "conventions": {
+    "hypercharge_identification_note": {
+      "label": "Y0",
+      "statement": "absolute hypercharge normalization (alpha=1/3); the (2,3)+(2,1) structure is retained-derived, only the overall normalization is admitted",
+      "class": "normalization convention (scale-tied)",
+      "leverage": 18,
+      "basis": "koide_y_substrate_anomaly_forcing (retained_bounded): anomaly fixes ratios not absolute normalization"
+    },
+    "g_bare_rigidity_theorem_note": {
+      "label": "g0",
+      "statement": "bare coupling g_bare = 1",
+      "class": "rescaling convention (gauge choice)",
+      "leverage": 8,
+      "basis": "beta_gbare_rescaling_abstract_identity (retained): g_bare is rescaling-invariant convention, not a number to derive"
+    }
+  },
+  "not_a_node": {
+    "S": {
+      "label": "absolute scale",
+      "statement": "the single dimensionful unit-setting input (a <-> Planck/Sommer); pervasive, has no single citeable parent row, so it is tracked descriptively in the registry note and is NOT a premise-node here",
+      "no_go_portfolio": [
+        "planck_finite_response_no_go_note_2026-04-24",
+        "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+        "planck_boundary_orientation_incidence_no_go_note_2026-04-30"
+      ]
+    }
+  }
+}

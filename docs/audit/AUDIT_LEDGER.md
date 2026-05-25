@@ -24,7 +24,6 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
 | unaudited | 1295 |
-| audit_in_progress | 1 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -35,7 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
-| `decoration_under_graph_first_su3_integration_note` | 7 |
+| `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
@@ -51,10 +50,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
+| `audit_in_progress` | 1 |
 | `audited_clean` | 687 |
 | `audited_conditional` | 68 |
-| `audited_decoration` | 35 |
+| `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
@@ -63,11 +62,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1029 |
-| `decoration` | 36 |
+| `decoration` | 37 |
 | `meta` | 231 |
 | `no_go` | 243 |
 | `open_gate` | 110 |
-| `positive_theorem` | 741 |
+| `positive_theorem` | 740 |
 
 | criticality | count |
 |---|---:|
@@ -124,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `yukawa_color_projection_theorem` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -915,6 +913,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
+| `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -12602,6 +12601,20 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
 - **auditor confidence:** high
+
+### `yukawa_color_projection_theorem`
+
+- **Note:** [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_graph_first_su3_integration_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260525T101849Z-yukawa_color_projection_theorem-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The color bilinear representation decomposes as N_c tensor N_c-bar = 1 plus adj, so the adjoint representation-dimension fraction is (N_c^2 - 1)/N_c^2 and equals 8/9 at N_c = 3.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem.
+- **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** judicial_panel_majority
 
 ### `z2_hw1_mass_matrix_parametrization_note`
 

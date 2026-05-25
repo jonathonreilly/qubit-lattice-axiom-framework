@@ -3,7 +3,7 @@
     "critical": 259,
     "high": 341,
     "leaf": 337,
-    "medium": 339
+    "medium": 338
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -18016,34 +18016,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pmns_graph_first_axis_alignment_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "pmns_graph_axis_to_active_lane_bridge_note",
-        "z2_hw1_mass_matrix_parametrization_note",
-        "site_phase_cube_shift_intertwiner_note",
-        "graph_first_selector_derivation_note",
-        "pmns_graph_first_cycle_frame_support_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.807,
-      "note_path": "docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_graph_first_axis_alignment.py",
-      "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28904,6 +28876,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pmns_graph_first_axis_alignment_note",
+        "z2_hw1_mass_matrix_parametrization_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -36243,32 +36241,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "pmns_graph_first_axis_alignment_note",
-        "z2_hw1_mass_matrix_parametrization_note",
-        "graph_first_selector_derivation_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pmns_selector_three_identity_support_proposal_readme_2026-04-21",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38347,5 +38319,5 @@
     }
   ],
   "ready_count": 41,
-  "total_pending": 1276
+  "total_pending": 1275
 }

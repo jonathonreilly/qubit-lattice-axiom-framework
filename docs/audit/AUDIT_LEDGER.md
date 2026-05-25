@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 155 |
-| **retained_bounded** | 423 |
+| **retained_bounded** | 424 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1276 |
+| unaudited | 1275 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 694 |
+| `audited_clean` | 695 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1503 |
+| `unaudited` | 1502 |
 
 | claim_type | count |
 |---|---:|
@@ -587,6 +587,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_commutant_eigenoperator_selector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8861,6 +8862,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The permutation unitary T_tau_k realizing the residual Z_2 stabilizer on the selected cube axis restricts on V_1 to the same permutation matrix P_tau_k, so Z_2-invariance of H is exactly P_tau_k H P_tau_k = H, in particular P_23 H P_23 = H for k=1.  _(class `A`)_
 - **chain closes:** True — The source note derives the bridge by explicit tensor-factor permutation unitaries on C^8 and their restriction to the orthonormal hw=1 carrier. Given the retained selector and hw=1 carrier inputs, the claimed P_23 invariance law follows as an algebraic identity.
 - **rationale:** The load-bearing step is a direct finite-dimensional identity: T_sigma permutes the single-bit-flip basis vectors X_mu, and its V_1 block is exactly the corresponding 3 by 3 permutation matrix. The runner source genuinely constructs the shifts, basis vectors, factor-permutation matrices, restrictions, and invariant Hermitian projections; it does not merely print constants or import a contested premise. The cited authorities in the packet are marked retained, and the source remains within the bounded bridge scope rather than claiming active-sector assignment or numerical PMNS values.
+- **auditor confidence:** high
+
+### `pmns_graph_first_axis_alignment_note`
+
+- **Note:** [`PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the hw=1 cube-shift triplet route, the audited claim is axis-minimum selection with residual Z2 and the algebraic consequence that residual P23 invariance forces the aligned Hermitian core form.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T112313Z-c0234708-pmns_graph_first_axis_al-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Pushing the selected graph axis and its residual Z2 stabilizer onto the active Hermitian triplet lane gives the residual law P_23 H P_23 = H, hence the aligned core form.  _(class `A`)_
+- **chain closes:** True — The previously missing axis-to-active-lane bridge is supplied in the retained_bounded bridge authority, and the Z2-invariant Hermitian normal form is supplied by a retained upstream theorem. Within the bounded scope, the conclusion follows as finite-dimensional algebra over retained-grade inputs.
+- **rationale:** The load-bearing step is not a first-principles value computation; it is an algebraic identification and invariant-subspace normal-form consequence. All cited authorities used for the bridge and normal form are retained-grade or retained_bounded in the restricted packet. The primary runner checks finite-dimensional algebraic consistency, though some exactness is better supported by the cited theorems than by the runner's sampled/grid portions alone. The audited result remains bounded: it gives alignment, not values or active-sector selection.
 - **auditor confidence:** high
 
 ### `pmns_graph_first_cycle_frame_support_note`

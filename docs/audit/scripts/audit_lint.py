@@ -17,7 +17,9 @@ Checks (all hard rules from FRESH_LOOK_REQUIREMENTS.md and README.md):
        already retained-grade.
      - effective_status in a retained-grade bucket requires audit_status =
        audited_clean (or archived audited_failed for legacy retained_no_go)
-       AND every dep's effective_status is retained-grade.
+       AND every dep's effective_status is retained-grade or an accepted
+       premise. Tier-A derivation-target premises bound dependents to
+       retained_bounded until retired.
      - effective_status = retained_no_go has two paths:
        (a) claim_type = no_go and audit_status = audited_clean ratifies it.
        (b) audit_status = audited_failed AND the note has been moved to
@@ -54,6 +56,7 @@ DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
 AUDIT_DISPATCH_QUEUE_PATH = DATA_DIR / "audit_dispatch_queue.json"
+TIER_A_ADMISSIONS_PATH = DATA_DIR / "tier_a_admissions.json"
 
 ALLOWED_AUDIT_STATUSES = {
     "unaudited",
@@ -251,6 +254,53 @@ def main() -> int:
 
     def add_notice(category: str, message: str) -> None:
         notices[category].append(message)
+
+    if TIER_A_ADMISSIONS_PATH.exists():
+        try:
+            tier_a = load_json(TIER_A_ADMISSIONS_PATH)
+        except Exception as exc:
+            errors.append(f"tier_a_admissions.json could not be parsed: {exc}")
+            tier_a = {}
+        derivation_targets = tier_a.get("derivation_targets") or {}
+        conventions = tier_a.get("conventions") or {}
+        not_a_node = tier_a.get("not_a_node") or {}
+        expected_ids = set(derivation_targets)
+        listed_ids = set(tier_a.get("canonical_ids") or [])
+        if listed_ids != expected_ids:
+            errors.append(
+                "tier_a_admissions.json canonical_ids must equal "
+                "derivation_targets; conventions are survey metadata, not "
+                "accepted premises"
+            )
+        admitted_count = tier_a.get("genuine_admitted_input_count")
+        if admitted_count is not None and admitted_count != len(derivation_targets) + len(not_a_node):
+            errors.append(
+                "tier_a_admissions.json genuine_admitted_input_count must equal "
+                "derivation_targets + not_a_node entries; conventions are not "
+                "admitted inputs"
+            )
+        for dep_id, entry in sorted(derivation_targets.items()):
+            if dep_id not in rows:
+                errors.append(f"tier_a_admissions.json derivation target {dep_id!r} has no ledger row")
+            portfolio = entry.get("no_go_portfolio") or []
+            if not portfolio:
+                errors.append(f"tier_a_admissions.json derivation target {dep_id!r} lacks no_go_portfolio")
+            for witness_id in portfolio:
+                witness = rows.get(witness_id)
+                if witness is None:
+                    errors.append(
+                        f"tier_a_admissions.json witness {witness_id!r} for {dep_id!r} "
+                        "has no ledger row"
+                    )
+                elif witness.get("effective_status") != "retained_no_go":
+                    errors.append(
+                        f"tier_a_admissions.json witness {witness_id!r} for {dep_id!r} "
+                        f"has effective_status={witness.get('effective_status')!r}, "
+                        "expected 'retained_no_go'"
+                    )
+        for dep_id in sorted(conventions):
+            if dep_id not in rows:
+                errors.append(f"tier_a_admissions.json convention {dep_id!r} has no ledger row")
 
     # Top-level stale timestamp keys cause PR drift-gate noise and were
     # removed by f383ded3d. compute_effective_status now drops them
@@ -641,12 +691,12 @@ def main() -> int:
                 )
 
     # Effective-status propagation sanity. A retained-grade row's deps must
-    # themselves be retained-grade. Open gates and retained_pending_chain are
-    # explicit blockers, not support for downstream theorem retention.
-    # Accepted premises are axiom-only. The canonical axiom node is exempt
-    # because it satisfies chain closure without being retained-grade itself.
-    # Textbook results must flow through ordinary retained-grade rows, not this
-    # carve-out.
+    # themselves be retained-grade or accepted premises. Open gates and
+    # retained_pending_chain are explicit blockers, not support for downstream
+    # theorem retention. Axioms can satisfy a dep without bounding the row.
+    # Tier-A derivation targets can satisfy a dep only at the bounded tier until
+    # the target is retired by a retained derivation. Convention rows listed in
+    # the Tier-A registry are not accepted premises.
     # `decoration_under_<parent>` deps count as retained-grade because
     # decoration_status() only assigns that status when the parent is itself
     # retained-grade.
@@ -655,6 +705,15 @@ def main() -> int:
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:
             for d in row.get("deps", []):
+                if (
+                    row.get("effective_status") != "retained_bounded"
+                    and premise_nodes.is_admitted_derivation_target(d)
+                ):
+                    errors.append(
+                        f"{cid}: effective_status={row.get('effective_status')!r} "
+                        f"depends on Tier-A admitted derivation target {d!r}; "
+                        "expected retained_bounded until the admission is retired"
+                    )
                 if premise_nodes.is_accepted_premise_dep(d):
                     continue
                 d_eff = rows.get(d, {}).get("effective_status")

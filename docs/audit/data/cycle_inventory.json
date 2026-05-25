@@ -1,5 +1,5 @@
 {
-  "cycle_count": 7,
+  "cycle_count": 8,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -31,7 +31,7 @@
         }
       ],
       "length": 6,
-      "max_transitive_descendants": 879,
+      "max_transitive_descendants": 882,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -40,7 +40,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -49,7 +49,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
           "title": "Planck Target 3 Clifford Phase Bridge Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -58,7 +58,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Primitive Clifford-Majorana Edge Derivation Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -67,7 +67,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Link-Local First-Variation P_A Forcing Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -76,7 +76,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
           "title": "Anomaly Cancellation Forces 3+1 Spacetime",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -85,7 +85,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         }
       ],
       "requires_lemma_extraction": false
@@ -124,7 +124,7 @@
         }
       ],
       "length": 7,
-      "max_transitive_descendants": 879,
+      "max_transitive_descendants": 882,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -133,7 +133,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -142,7 +142,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -151,7 +151,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
           "title": "Planck Target 3 Clifford Phase Bridge Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -160,7 +160,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Primitive Clifford-Majorana Edge Derivation Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -169,7 +169,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Link-Local First-Variation P_A Forcing Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -178,7 +178,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
           "title": "Anomaly Cancellation Forces 3+1 Spacetime",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -187,7 +187,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         }
       ],
       "requires_lemma_extraction": false
@@ -230,7 +230,7 @@
         }
       ],
       "length": 8,
-      "max_transitive_descendants": 879,
+      "max_transitive_descendants": 882,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -239,7 +239,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -248,7 +248,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -257,7 +257,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -266,7 +266,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
           "title": "Planck Target 3 Clifford Phase Bridge Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -275,7 +275,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Primitive Clifford-Majorana Edge Derivation Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -284,7 +284,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Link-Local First-Variation P_A Forcing Theorem",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -293,7 +293,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
           "title": "Anomaly Cancellation Forces 3+1 Spacetime",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         },
         {
           "audit_status": "unaudited",
@@ -302,7 +302,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3",
-          "transitive_descendants": 879
+          "transitive_descendants": 882
         }
       ],
       "requires_lemma_extraction": false
@@ -321,7 +321,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 412,
+      "max_transitive_descendants": 415,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -330,7 +330,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
           "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
-          "transitive_descendants": 412
+          "transitive_descendants": 415
         },
         {
           "audit_status": "unaudited",
@@ -339,7 +339,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md",
           "title": "`U_e = I` via `Z_3` Trichotomy (Charged-Lepton Lane)",
-          "transitive_descendants": 412
+          "transitive_descendants": 415
         }
       ],
       "requires_lemma_extraction": false
@@ -480,10 +480,47 @@
         }
       ],
       "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0008",
+      "decision": null,
+      "edges": [
+        {
+          "from": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "to": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        },
+        {
+          "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+          "title": "Y_T Qubit Neutral-Higgs Carrier-Ray Bridge",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
+          "title": "Y_T Source-Coordinate Invariant Top/W Ratio Gate",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
     }
   ],
   "length_counts": {
-    "2": 2,
+    "2": 3,
     "3": 2,
     "6": 1,
     "7": 1,

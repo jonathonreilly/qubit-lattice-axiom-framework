@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 433 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1256 |
+| unaudited | 1255 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 707 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1483 |
+| `unaudited` | 1482 |
 
 | claim_type | count |
 |---|---:|
@@ -899,6 +899,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `symmetry_head_to_head_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -11457,6 +11458,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The runner genuinely computes the PBC cube incidence graph and a trivial rho=delta Perron replay, but the only quantitative Perron value is the retained Reference B input case rather than a full cube environment computation. The runner itself falls back to a self-conjugate subset and labels the bipartite rho extraction and all non-trivial Wigner traces as deferred. No-Go Discipline N1/N4 leave independent attack routes open: missing trace contractions, missing alternating-sector rho extraction, missing Perron lower-bound monotonicity, PBC/APBC scope tension with the roadmap, and cross-note Reference B replay.
 - **open / conditional deps cited:**
   - `SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+
+### `su3_dabc_symmetric_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic SU(3) Gell-Mann-basis identities D1-D6 on the abstract 3D symmetric-base carrier with Tr[T^aT^b]=(1/2)δ^{ab}; no physical SM color, QCD amplitude, four-gluon vertex, or physical Casimir identification is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T120208Z-7854d68a-su3_dabc_symmetric_theor-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Trace projection of {T^a,T^b} onto I_3 and the trace-orthonormal Gell-Mann basis gives {T^a,T^b}=(1/3)δ^{ab}I_3+d^{abc}T^c with d^{abc}=2Tr[{T^a,T^b}T^c].  _(class `A`)_
+- **chain closes:** True — Within the explicitly algebraic perimeter, the identities follow from the supplied Gell-Mann basis, trace normalization, trace projection, and standard commutator/anticommutator splitting. The physical identification of this carrier with SM color remains an explicit upstream bridge outside this claim.
+- **rationale:** The runner genuinely constructs the Gell-Mann matrices, projects d^{abc}, verifies the anticommutator decomposition, total symmetry, realness, reference entries, combined product identity, and d/f symmetry split. These checks are algebraic class-A closures over the supplied basis rather than external comparator or tuned numerical checks. The verdict remains conditional because the one-hop cited authority explicitly defers the physical SM color identification, and the source note correctly bounds all physical readings out of scope.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

@@ -295767,22 +295767,52 @@
       "verdict_rationale": "The load-bearing step is a direct algebraic identity over the finite signed-record definitions, and the runner source genuinely computes finite RN densities, composition, the origin score, and action equivalence rather than merely printing constants. The packet does not claim physical top-Yukawa closure or same-surface neutral EW/Higgs authority, so the listed unresolved physics gates do not block the bounded support theorem. No-Go Discipline check: the negative boundary is scoped to non-closure of Y_T rather than a broad impossibility claim; same-packet evidence lists multiple independent missing gates and the runner verifies absence of strict source-Higgs rows and W/Z bypass, so no N1-N8 blocker defeats the bounded verdict."
     },
     "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T12:48:36.833508+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited.",
+          "minimal_axioms": null,
+          "yt_pr230_consolidated_status_note_2026-05-22": "Exact finite-support algebraic equivalence between a product RN source family on signed one-site records and a site-diagonal source-coupled local action, with no physical Y_T closure claimed."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_pr230_consolidated_status_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_pr230_consolidated_status_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms",
+          "yt_pr230_consolidated_status_note_2026-05-22"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "725f822a31606b3a4345488e4438253133d4a412997714142292b92a9e4c6f12",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T124703Z-b1dc7602-yt_pr230_lsp_signed_reco-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated readout-carrier scope, the chain closes from the supplied retained-grade LSP projective rule, the qubit axiom premise, and the retained_bounded PR230 source packet. It does not close or rely on source/action authority, Higgs-operator identification, LSZ normalization, pole rows, or Yukawa matching.",
       "claim_id": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24",
-      "claim_scope": null,
+      "claim_scope": "Narrow algebraic support that the PR230 primitive signed RN source record has a native one-site Pauli sharp-projective signed readout carrier, with the exponential RN family fixed by smooth normalized source composition and origin score.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T12:48:36.833508+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -295792,34 +295822,34 @@
         "yt_pr230_consolidated_status_note_2026-05-22"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At h = 0, d log R_h / d h_x = epsilon_x, and under the sigma_z sharp-projective readout this is the signed spectral outcome in {-1,+1}.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "15a9620dd3e95969957d0edaa0aec3cba0bc8955df1cce2e5e46b1ebb04eb4b4",
       "note_path": "docs/YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the accepted scope is only readout-carrier support and not physical source/action or Higgs-operator authority.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 16,
+        "B": 34,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 50
       },
       "runner_path": "scripts/frontier_yt_pr230_lsp_signed_record_source_readout_support.py",
       "title": "PR230 LSP Signed-Record Source-Readout Support Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing work is algebraic: Pauli spectral projections give the signed observable sigma_z with spectrum {-1,+1}, and the product RN source score at the origin is epsilon_x. The uniqueness corollary follows from normalized multiplication giving additive smooth log-odds with coefficients fixed by the origin score. The non-axiom cited authorities are retained_bounded, the axiom node is explicitly flagged as an axiom premise, and the runner performs actual matrix, RN, composition, and boundary checks without external comparators or tuned numerical inputs."
     },
     "yt_pr230_route_exhaustion_summary_note_2026-05-22": {
       "audit_date": null,

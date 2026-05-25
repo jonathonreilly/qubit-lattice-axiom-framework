@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 145 |
 | **retained_no_go** | 157 |
-| **retained_bounded** | 444 |
+| **retained_bounded** | 445 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 721 |
+| `audited_clean` | 722 |
 | `audited_conditional` | 91 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1457 |
+| `unaudited` | 1456 |
 
 | claim_type | count |
 |---|---:|
@@ -838,6 +838,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13528,6 +13529,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** If S_h = S_0 - sum_x h_x epsilon_x, then exp(-S_h) / exp(-S_0) = exp(sum_x h_x epsilon_x), which is exactly the same RN family after normalization.  _(class `A`)_
 - **chain closes:** True — The bounded support identity follows by direct finite algebra from the displayed definitions of R_h, W_h, and S_h. The physical neutral EW/Higgs authority gate is explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic identity over the finite signed-record definitions, and the runner source genuinely computes finite RN densities, composition, the origin score, and action equivalence rather than merely printing constants. The packet does not claim physical top-Yukawa closure or same-surface neutral EW/Higgs authority, so the listed unresolved physics gates do not block the bounded support theorem. No-Go Discipline check: the negative boundary is scoped to non-closure of Y_T rather than a broad impossibility claim; same-packet evidence lists multiple independent missing gates and the runner verifies absence of strict source-Higgs rows and W/Z bypass, so no N1-N8 blocker defeats the bounded verdict.
+- **auditor confidence:** high
+
+### `yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow algebraic support that the PR230 primitive signed RN source record has a native one-site Pauli sharp-projective signed readout carrier, with the exponential RN family fixed by smooth normalized source composition and origin score.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T124703Z-b1dc7602-yt_pr230_lsp_signed_reco-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At h = 0, d log R_h / d h_x = epsilon_x, and under the sigma_z sharp-projective readout this is the signed spectral outcome in {-1,+1}.  _(class `A`)_
+- **chain closes:** True — Within the stated readout-carrier scope, the chain closes from the supplied retained-grade LSP projective rule, the qubit axiom premise, and the retained_bounded PR230 source packet. It does not close or rely on source/action authority, Higgs-operator identification, LSZ normalization, pole rows, or Yukawa matching.
+- **rationale:** The load-bearing work is algebraic: Pauli spectral projections give the signed observable sigma_z with spectrum {-1,+1}, and the product RN source score at the origin is epsilon_x. The uniqueness corollary follows from normalized multiplication giving additive smooth log-odds with coefficients fixed by the origin score. The non-axiom cited authorities are retained_bounded, the axiom node is explicitly flagged as an axiom premise, and the runner performs actual matrix, RN, composition, and boundary checks without external comparators or tuned numerical inputs.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

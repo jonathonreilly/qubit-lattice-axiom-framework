@@ -1,0 +1,33 @@
+{
+  "claim": "A1+A2 plus current support packets do not force the primitive-unit physical source/action premise; lambda remains free.",
+  "counterfamily": {
+    "family": "y_33(lambda)=lambda/sqrt(6)",
+    "preserved_ray": "u_dem",
+    "projective_probability": "1/6"
+  },
+  "fail_count": 0,
+  "pass_count": 51,
+  "remaining_bridge": "derive or accept physical top Yukawa deformation = primitive unit signed-linear source/action tangent, or measure top response directly",
+  "review_surface": [
+    "docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py",
+    "outputs/yt_primitive_unit_source_action_physical_premise_no_go_2026-05-25.json"
+  ],
+  "route_boundary": {
+    "actual_current_surface_status": "support no-go / exact obstruction",
+    "direct_closure_allowed": false,
+    "positive_if_added_premise": "primitive unit source/action premise -> y_33=1/sqrt(6)",
+    "proposal_allowed": false,
+    "proposal_allowed_reason": "The current surface has not derived the physical source/action unit. The source-action convention is an open gate and lambda remains free.",
+    "upstream_statuses": {
+      "lsp_source": "unaudited",
+      "source_action_gate": "unaudited",
+      "yt_source_action_support": "retained_bounded"
+    }
+  },
+  "signed_record_boundary": {
+    "lambda_selected_if_condition_added": 1,
+    "primitive_unit_condition": "physical source score equals primitive signed-record score"
+  },
+  "status": "support no-go / exact obstruction"
+}

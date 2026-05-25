@@ -1,10 +1,11 @@
 # Opportunity Queue
 
-1. Prove the signed-linear democratic Q_L source tangent is the physical top
-   Yukawa coefficient.  The finite-dimensional number is now exact support:
-   A1+A2 plus S6 democracy gives amplitude `1/sqrt(6)`, and signed-linear
-   source response reads amplitude rather than LSP probability `1/6`.
-2. If that bridge does not close, build the top coefficient theorem by a
+1. Close the source/action convention gate: prove that the physical top
+   Yukawa deformation is the primitive unit signed-record action source on
+   the normalized top trilinear. The full-court pass proved this is exactly
+   the missing scalar `lambda`; current A1+A2 plus support packets do not
+   force it.
+2. If that gate does not close, build the top coefficient theorem by a
    different axiom-native dynamical flavor principle. It must derive the value
    of the free `Y_u33`/`y_33` coefficient, not infer it from W/Z denominator
    rows.

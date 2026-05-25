@@ -53,6 +53,12 @@ primary_artifacts:
   - docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md
   - scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py
   - outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json
+  - docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md
+  - scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py
+  - outputs/yt_signed_linear_democratic_tangent_physical_bridge_attempt_2026-05-25.json
+  - docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md
+  - scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py
+  - outputs/yt_primitive_unit_source_action_physical_premise_no_go_2026-05-25.json
 current_sharp_blocker: >
   The neutral carrier-ray bridge, W/Z denominator response, symbolic top
   response row shape, top/W response-ratio algebra, and local source-coordinate
@@ -62,9 +68,12 @@ current_sharp_blocker: >
   pass adds a new exact-support candidate: A1+A2 plus S6-democratic Q_L
   source gives component amplitude 1/sqrt(6), and signed-linear source/action
   response reads that amplitude rather than the LSP projective probability
-  1/6. The remaining bridge is to prove that the physical top Yukawa
-  coefficient is this signed-linear democratic source tangent. The repo still
-  lacks a retained top-coefficient theorem or direct top response measurement,
+  1/6. The signed-linear democratic tangent bridge now proves the conditional
+  theorem: primitive unit physical source/action tangent implies
+  y_33=1/sqrt(6). The paired no-go proves A1+A2 plus current support do not
+  force that primitive unit premise; lambda remains free as
+  y_33(lambda)=lambda/sqrt(6). The repo still lacks a retained
+  top-coefficient theorem or direct top response measurement,
   retained top-carrier/hypercharge authority, physical-scale g_2 authority,
   and matching/running closure.
 agent_probes:

@@ -49,4 +49,25 @@ candidate from the axiom-native source geometry.  The bridge is "why the
 Yukawa coefficient reads the signed linear tangent rather than projective
 probability or an arbitrary source vector."
 
+Latest full-court result:
+
+```text
+primitive unit physical source/action tangent accepted
+  -> y_33 = 1/sqrt(6)
+
+A1+A2 + current support only
+  -> y_33(lambda) = lambda/sqrt(6), lambda free
+```
+
+The remaining blocker is now only the source/action convention gate:
+
+```text
+physical top Yukawa deformation
+  = primitive unit signed-record action source on normalized top trilinear
+```
+
+If this is not derived, do not keep polishing W/Z or carrier rows for positive
+closure. Pivot to a direct top response/correlator measurement or mark the
+source/action unit as an explicit admitted convention.
+
 Keep observed W/Z/top masses comparator-only.

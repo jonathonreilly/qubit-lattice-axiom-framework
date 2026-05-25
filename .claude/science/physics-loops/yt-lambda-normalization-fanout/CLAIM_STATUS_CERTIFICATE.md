@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Current status: `open / support-only route synthesis`.
+Current status: `open / conditional support plus exact obstruction`.
 
 Retained allowed: no.
 Proposed-retained allowed: no.
@@ -12,9 +12,12 @@ and it narrows the top-side wall with an exact underdetermination no-go.  The
 axiom-native pass adds exact support for the democratic six-component Q_L
 source amplitude `1/sqrt(6)` and for the signed-linear source/action tangent
 fork: projective probability gives `1/6`, while signed linear response gives
-`1/sqrt(6)`.  The current support rows still do not prove that the physical
-top Yukawa coefficient is that signed-linear tangent, and they do not supply a
-direct top response measurement.  They also do not supply retained
+`1/sqrt(6)`.  The full-court bridge attempt proves the conditional theorem:
+primitive unit physical source/action tangent implies `y_33=1/sqrt(6)`.  The
+paired no-go proves the current A1+A2/support surface does not force that
+primitive unit premise; a positive `lambda` family preserves the current tests
+while changing `y_33(lambda)=lambda/sqrt(6)`.  The current support rows do not
+supply a direct top response measurement.  They also do not supply retained
 one-Higgs/top-carrier authority, retained hypercharge authority,
 physical-scale `g_2(v)`, direct production correlator evidence, or
 matching/running closure.
@@ -22,8 +25,8 @@ matching/running closure.
 Best positive route after this packet:
 
 ```text
-top coefficient theorem proving the signed-linear democratic Q_L tangent
-  is the physical top Yukawa coefficient
+source/action theorem proving the physical top Yukawa deformation is the
+  primitive unit signed-linear action source on the normalized top trilinear
   OR direct top response measurement on the neutral carrier source
   + W/Z denominator response
   + symbolic top response row shape

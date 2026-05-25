@@ -18,4 +18,12 @@
 - Added the signed-linear source-response fork: projective probability reads
   `1/6`, signed linear action/source tangent reads `1/sqrt(6)`. The physical
   bridge to the top Yukawa coefficient remains open.
+- Added the signed-linear democratic tangent bridge attempt. Positive branch:
+  if the physical Yukawa deformation is the primitive unit source/action
+  tangent, `y_33 = 1/sqrt(6)`. Exact obstruction: without that premise
+  `y_33(lambda)=lambda/sqrt(6)`.
+- Added the primitive-unit source/action physical-premise no-go. It proves
+  A1+A2 plus the current support packets do not force `lambda=1`; the
+  source-action convention remains an open gate or must be replaced by direct
+  top-response evidence.
 - No retained or proposed-retained wording allowed by this packet.

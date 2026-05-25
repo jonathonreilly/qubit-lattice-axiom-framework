@@ -38,11 +38,20 @@ Landed in this packet:
 - `docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md`
 - `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
 - `outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json`
+- `docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py`
+- `outputs/yt_signed_linear_democratic_tangent_physical_bridge_attempt_2026-05-25.json`
+- `docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py`
+- `outputs/yt_primitive_unit_source_action_physical_premise_no_go_2026-05-25.json`
 
 Candidate follow-on artifacts:
 
-- Signed-linear democratic Q_L source tangent -> physical top coefficient theorem note and runner.
-- Broader top coefficient theorem note and runner if the signed-linear bridge fails.
+- Source/action convention closure theorem: derive physical top Yukawa
+  deformation as the primitive unit signed-record action source, or demote it
+  as an explicit admission.
+- Broader top coefficient theorem note and runner if a different
+  axiom-native dynamical flavor principle can select `lambda=1`.
 - Direct strict top correlator/response measurement packet.
 - Same-surface canonical scalar kinetic/LSZ theorem note and runner.
 - BRST/FMS scalar-normalization boundary note and runner.

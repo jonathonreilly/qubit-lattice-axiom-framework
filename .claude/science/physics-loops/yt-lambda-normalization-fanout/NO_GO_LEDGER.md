@@ -7,6 +7,7 @@
 | Top-response coefficient underdetermination | Yes | Carrier alignment plus W/Z denominator response leaves the top numerator coefficient free. |
 | A1+A2-alone coefficient selection | Yes | Bare qubit-on-`Z^3` locality permits a continuous family of normalized Q_L source vectors; the `1/sqrt(6)` candidate requires S6 democracy plus signed-linear source response. |
 | LSP projective probability as Yukawa coefficient | Yes | The projective component probability of the democratic ray is `1/6`, not `1/sqrt(6)`; LSP helps readout but does not by itself close the Yukawa coefficient. |
+| Primitive-unit source/action physical premise from A1+A2 | Yes | A positive lambda family preserves qubit records, locality, democratic ray, LSP probability, one-Higgs tensor, and W/Z rows while changing `y_33(lambda)=lambda/sqrt(6)`. |
 | Finite per-site bosonic CCR obstruction | Yes | A literal per-site bosonic canonical commutator cannot hold on finite qubit blocks. |
 | BRST/ST lambda non-selection | Boundary | Gauge identity does not select every allowed scalar invariant coefficient. |
 

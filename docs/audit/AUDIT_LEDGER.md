@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 145 |
-| **retained_no_go** | 156 |
+| **retained_no_go** | 157 |
 | **retained_bounded** | 443 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -51,22 +51,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 719 |
+| `audited_clean` | 720 |
 | `audited_conditional` | 91 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1459 |
+| `unaudited` | 1458 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1027 |
 | `decoration` | 42 |
 | `meta` | 232 |
-| `no_go` | 243 |
+| `no_go` | 244 |
 | `open_gate` | 110 |
-| `positive_theorem` | 736 |
+| `positive_theorem` | 735 |
 
 | criticality | count |
 |---|---:|
@@ -791,6 +791,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `unification_basin_failure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -12741,6 +12742,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Under the qubit-per-site baseline, the conditional in (C1) is no longer required: the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.  _(class `F`)_
 - **chain closes:** True — Given the accepted axiom premise that a site carries one qubit, the U4 identification follows by unpacking that wording plus standard M_2(C) module uniqueness. The closure is an identity/unpacking of the axiom-surface qubit clause, not an independent derivation.
 - **rationale:** The row is not audited_decoration under cl3_complexification_split: that parent explicitly stops before the physical-Hilbert U4 bridge, and the note also depends on the A1 qubit premise. The load-bearing move identifies A1's 'qubit at every site' with H_x = C^2 and k=1, then restates that as the U4 bridge. That is a concept identity/unpacking, not a class-A algebraic corollary of a single retained parent and not a class-C first-principles computation. No runner was supplied, so the judgment is from the note text and cited authorities.
+- **auditor confidence:** high
+
+### `unification_basin_failure_note`
+
+- **Note:** [`UNIFICATION_BASIN_FAILURE_NOTE.md`](../../docs/UNIFICATION_BASIN_FAILURE_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-runner boundary diagnosis for the two shared overlap rows drift=0.20 with restore=0.60 and 0.70, checking signed-source survival and complex-action crossover survival on the same geometry-sector family.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T124300Z-865faedc-unification_basin_failur-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The shared off-center rows preserve the signed-source package but do not preserve the complex-action crossover, so unified survivors are 0/2.  _(class `C`)_
+- **chain closes:** True — The cited retained-grade basin notes define the two retained narrow neighborhoods and the primary runner computes the shared-row sign and complex-action quantities directly. The runner output supports the note's scoped negative conclusion that the shared off-center basin has zero unified survivors.
+- **rationale:** All cited authorities in the restricted packet are retained-grade or retained_bounded. The primary runner and included helpers instantiate the grown geometry, sector stencil, source fields, propagators, centroid and weak-field checks rather than replaying hard-coded expected values. Its completed output shows sign-law survivors 2/2, complex-action survivors 0/2, and unified survivors 0/2, which closes the scoped boundary diagnosis on its own terms.
 - **auditor confidence:** high
 
 ### `unified_basin_freeze_note`

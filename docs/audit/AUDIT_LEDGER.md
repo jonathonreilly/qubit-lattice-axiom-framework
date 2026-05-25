@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 74 |
+| ~~audited_conditional~~ | 75 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 691 |
-| `audited_conditional` | 74 |
+| `audited_conditional` | 75 |
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1513 |
+| `unaudited` | 1512 |
 
 | claim_type | count |
 |---|---:|
@@ -874,6 +874,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -11075,6 +11076,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Peter-Weyl/Schur character orthogonality plus finite-dimensional diagonal-operator algebra on the SU(3) character truncation, reducing convolution by Z to eigenvalue multiplication by rho_(p,q).  _(class `A`)_
 - **chain closes:** True — The source has zero ledger dependencies and is scoped to textbook compact-Lie-group character algebra on an abstract finite truncation. The live runner reproduced PASS=13, FAIL=0, including Schur orthogonality checks, algebraic reduction, uniqueness, positivity, self-adjointness, swap symmetry, and abstract numerical sanity cases.
 - **rationale:** The theorem's conclusions are exactly the standard finite-dimensional character-convolution consequences of Schur orthogonality and diagonal linear algebra. The note explicitly forbids importing Wilson action, beta=6 data, or the parent plaquette environment identification, and the runner treats companion Wilson coefficients only as abstract positive symmetric input data. Within that boundary, no gap remains.
+- **auditor confidence:** high
+
+### `su3_cube_perron_solve_combined_theorem_note_2026-05-03`
+
+- **Note:** [`SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the L_s=2 PBC cube enumeration, the bipartite 6:6 plaquette-adjacency finding, and the trivial-sector rho=delta Perron replay; not the full physical/APBC cube rho or non-trivial-sector P_cube bound.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T105817Z-dd4592a0-su3_cube_perron_solve_co-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's quantitative conclusion is that the exact all-trivial plaquette sector gives rho = delta_(0,0), so the source-sector Perron operator reduces to the already-cited Reference B solve with P_trivial(6) = 0.4225317396.  _(class `B`)_
+- **chain closes:** False — The structural PBC enumeration and trivial-sector recovery are supported. The full cube claim does not close because the non-trivial self-conjugate and bipartite-alternating Wigner intertwiner traces are absent, and no proof is given that the full P_cube(6) is bounded below by the trivial-sector Perron value.
+- **rationale:** The runner genuinely computes the PBC cube incidence graph and a trivial rho=delta Perron replay, but the only quantitative Perron value is the retained Reference B input case rather than a full cube environment computation. The runner itself falls back to a self-conjugate subset and labels the bipartite rho extraction and all non-trivial Wigner traces as deferred. No-Go Discipline N1/N4 leave independent attack routes open: missing trace contractions, missing alternating-sector rho extraction, missing Perron lower-bound monotonicity, PBC/APBC scope tension with the roadmap, and cross-note Reference B replay.
+- **open / conditional deps cited:**
+  - `SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

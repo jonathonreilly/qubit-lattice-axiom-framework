@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 437 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1249 |
+| unaudited | 1248 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 711 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 38 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1476 |
+| `unaudited` | 1475 |
 
 | claim_type | count |
 |---|---:|
@@ -866,6 +866,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `guard_reconciliation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5583,6 +5584,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The source note's numerical table matches the completed runner stdout, and the runner source computes the phase-ramp metrics and zero-source reduction rather than printing hard-coded verdict constants. The closure is only for the stated finite replay configuration and does not imply a geometry-generic no-go.
 - **rationale:** Clean for the bounded no-go scope: the runner computes the fixed-field replay, reports exact zero-source spans of zero, and returns low phase-ramp R2 values around 0.30, which supports the note's refusal to promote a grown-row transfer claim. No cited authorities are required for the limited negative conclusion as written. Residual risk is confined to the unprovided grow helper and the qualitative threshold for 'review-safe,' so the claim must remain bounded to the printed finite configuration.
 - **auditor confidence:** medium
+
+### `guard_reconciliation_note`
+
+- **Note:** [`GUARD_RECONCILIATION_NOTE.md`](../../docs/GUARD_RECONCILIATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the reconciliation note's bounded guard claim from the provided source note and the single cited authority docs/DENSE_PRUNE_GUARD_SEED_NOTE.md, without runner stdout or runner source for the canonical dense guard script.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T121747Z-977aae4e-guard_reconciliation_not-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Channel-count preservation gives the first principled gravity-preserving pruning workaround, with the strongest retained same-graph pocket at N=100, q=0.03, and the fix bounded rather than asymptotic.  _(class `B`)_
+- **chain closes:** False — The canonical N=100, q=0.03 dense-script result is asserted from an unprovided script/run, and the cited seed note supports only aggregate seed-range movement, not the source note's per-seed rescue mechanism language. The missing step is a retained/cached authority or runner certificate for the dense same-graph guard pocket and any per-seed mechanism claims.
+- **rationale:** The only provided cited authority is retained_bounded, but it explicitly narrows its support to aggregate runner behavior and withdraws seed-selective mechanism claims. The source note still states seed-level rescue/non-rescue examples and treats dense_prune_channel_count_guard.py as canonical, yet no stdout, source, or cited retained authority for that dense-script numeric pocket is included. The chain is therefore conditional on missing runner/certificate evidence rather than closed from the restricted packet.
+- **auditor confidence:** high
 
 ### `h0125_failure_derivation`
 

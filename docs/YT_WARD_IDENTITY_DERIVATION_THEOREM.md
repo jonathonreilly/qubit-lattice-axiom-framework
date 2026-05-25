@@ -1,11 +1,12 @@
-# Top-Yukawa Structural Identification: y_t(M_Pl) = g_s(M_Pl) / sqrt(6)
+# H_unit Scalar-Singlet Matrix Element Core: y_t_bare = g_bare / sqrt(6)
 
-**Date:** 2026-04-17 (audit-prep refresh: 2026-05-06)
-**Status:** bounded structural identification on the canonical evaluation
-surface. This note records the structural identification of the unit-normalized
-H_unit-to-top matrix element with the framework's top-Yukawa readout on the
-canonical Wilson-staggered surface within `A_min = {Cl(3), Z^3}`. It is **not**
-a first-principles derivation of the Standard Model top Yukawa value.
+**Date:** 2026-04-17 (audit-prep refresh: 2026-05-25)
+**Status:** bounded support for the core unit-normalized `H_unit` matrix
+element on the canonical bare-action surface. This note records the exact
+`1/sqrt(6)` scalar-singlet matrix element on the Q_L block within
+`A_min = {Cl(3), Z^3}`. It is **not** a derivation of the Standard Model top
+Yukawa value, a Planck-surface ratio theorem, or a shared tadpole-transport
+closure.
 **Claim type:** bounded_theorem author hint; independent audit lane sets the
 actual `claim_type`, `audit_status`, and pipeline-derived `effective_status`.
 **Admitted context inputs (open-gate dependencies under
@@ -16,7 +17,7 @@ actual `claim_type`, `audit_status`, and pipeline-derived `effective_status`.
 The note conditions on closure of these two derivation targets; they are
 explicitly listed as `admitted_context_inputs`, not derived here.
 **Primary runner:** `scripts/frontier_yt_ward_identity_derivation.py`
-(45 PASS / 0 FAIL on current source).
+(44 PASS / 0 FAIL on current source).
 **Support (NOT part of the authority chain):**
 `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`
 documents the perturbative 1-loop vertex correction, which is OPEN
@@ -26,20 +27,16 @@ for quantitative lane reuse (not part of this support-tier identification).
 
 ## Audit boundary
 
-This note identifies the unit-normalized `H_unit` matrix element on the
-Q_L scalar-singlet channel within `A_min = {Cl(3), Z^3}`, including the
-`1/sqrt(6)` Clebsch-Gordan overlap and the canonical-surface ratio
-calculation.
+This note identifies only the unit-normalized `H_unit` matrix element on
+the Q_L scalar-singlet channel within `A_min = {Cl(3), Z^3}`. The
+auditable core is the `1/sqrt(6)` Clebsch-Gordan / normalization result.
 
-**The identification map: framework readout, not SM Yukawa derivation.**
-The framework's top-Yukawa readout is *defined* by the unit-normalized
-H_unit matrix element on the canonical evaluation surface. The note proves
-that this defined readout equals `g_bare / sqrt(6)` on the canonical
-surface, and that the ratio `y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6)` is exact
-and tadpole-invariant. The note does **not** prove that the framework's
-defined readout equals the Standard Model top-Yukawa observable; that
-identification is a separate question handled downstream (RG running,
-matching, threshold corrections).
+**The identification map is not part of the audited core.** In this note
+`y_t_bare` is local shorthand for the unit-normalized `H_unit`-to-top-basis
+matrix element on the stated Q_L scalar-singlet channel. It is not asserted
+here to be the Standard Model Yukawa coupling, and the note does not prove
+that the defined matrix element is transported to `y_t(M_Pl)` with the same
+tadpole factor as `g_s(M_Pl)`.
 
 This note does **not** claim to derive the numerical Standard Model top
 Yukawa value from first principles, to derive the existence of the SM
@@ -47,8 +44,9 @@ Yukawa construct independent of this identification, or to supply a
 precision prediction after RG running and matching.
 
 **Conditional on the named open gates (g_bare, staggered-Dirac), the
-exact algebraic claims `(T1)` and `(T2)` below are runner-verified at
-machine precision.**
+exact algebraic core claim `(T1)` below is runner-verified at machine
+precision.** Any Planck-surface tadpole ratio is conditional context, not
+the auditable claim of this note.
 
 Prior audit history: the audit lane previously recorded
 `audit_status=audited_renaming` for `yt_ward_identity_derivation_theorem`,
@@ -56,8 +54,8 @@ cross-confirmed as class E by `codex-fresh-context-20260430-01-yt-ward`
 (2026-04-30) and `fresh-agent-popper-019ded72` (2026-05-03). The repeat
 finding identifies the load-bearing step as the *definition* of `y_t_bare`
 as the H_unit matrix element. This refresh:
-1. Tightens scope language so the claim boundary is the framework readout
-   identity, not the SM Yukawa map;
+1. Tightens scope language so the claim boundary is the core matrix-element
+   identity, not the SM Yukawa map or Planck-surface tadpole transport;
 2. Replaces the stale `MINIMAL_AXIOMS_2026-04-11.md` citation (now
    superseded) with `MINIMAL_AXIOMS_2026-05-03.md`;
 3. Lists `g_bare = 1` and the staggered-Dirac realization as
@@ -72,39 +70,32 @@ as the H_unit matrix element. This refresh:
 ## Structural identification (tree-level algebraic support)
 
 On the Cl(3) × Z³ Wilson-staggered lattice with the canonical
-plaquette / u_0 evaluation surface (C1 + C2, `g_bare = 1` at
-`β = 2 N_c / g_bare² = 6`), the bare Yukawa of the unit-norm (1,1)
-scalar composite `H_unit` on the Q_L = (2,3) block satisfies the
-exact tree-level 1PI matching identity
+bare-action normalization (C1 + C2, `g_bare = 1` at
+`β = 2 N_c / g_bare² = 6`), the unit-norm (1,1) scalar composite
+`H_unit` on the Q_L = (2,3) block satisfies the exact matrix-element
+identity
 
 ```
     y_t_bare = g_bare / sqrt(2 N_c) = g_bare / sqrt(6)                 (T1)
 ```
 
-as an algebraic consequence of D16 (tree-level Feynman diagram
-completeness of the bare action), D17 (composite-Higgs scalar
-uniqueness on the Q_L block, Block 5 verified), the exact SU(N_c)
-color Fierz identity D12 (Block 4), and the exact Lorentz Clifford
-Fierz identity S2 (Block 8).
+where `y_t_bare` denotes the `H_unit` matrix element defined in Eq. (3.7).
+The equality to `g_bare/sqrt(6)` uses the canonical bare gauge unit
+`g_bare = 1`; no physical Yukawa readout is asserted by this notation.
 
-On the same canonical evaluation surface, the tadpole factor
-`1/sqrt(u_0)` is common to both `g_s(M_Pl)` and `y_t(M_Pl)` via D15
-(`n_link = 1` per single vertex) and cancels in the ratio, giving
-the exact tree-level identity
-
-```
-    y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)                               (T2)
-```
-
-on the same surface.
+The older Planck-surface ratio statement
+`y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6)` is not part of this note's auditable
+core. It requires a separate retained tadpole-transport bridge and a
+separate retained physical readout map.
 
 **Scope of this support note:**
-- It is the exact tree-level 1PI matching identity only.
+- It is the exact tree-level scalar-singlet matrix-element identity only.
 - It makes NO quantitative precision claim (no `±%`, no NLO bound,
   no lane budget).
 - Perturbative 1-loop corrections, higher-order topology corrections,
-  and any quantitative lane reuse are OUT OF SCOPE of this note
-  and are discussed in the support note (see above).
+  physical Yukawa readout, shared tadpole transport, and any quantitative
+  lane reuse are OUT OF SCOPE of this note and are discussed only as
+  non-load-bearing context.
 - Downstream quantitative reuse of this identity inherits whatever
   systematic the downstream package carries independently. This
   note does not narrow or claim such systematics.
@@ -124,20 +115,20 @@ on the same surface.
 | D5 | Cl(3) ⊃ su(2) → SU(2) weak gauge symmetry | DERIVED from D4 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):18 |
 | D6 | Graph-first axis selector on taste cube {0,1}³ | DERIVED from D3 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):52-66 |
 | D7 | Residual swap on complementary axes → `su(3)` closure | DERIVED from D6 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):69-75 |
-| D8 | Left-handed quark block `Q_L : (2,3)_{+1/3}`, dim 6 | DERIVED from D7 + graph-first selector | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):93-95; [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md):13 |
-| D9 | Composite Higgs `phi = (1/N_c) psi-bar_a psi_a` (taste condensate of quark bilinear, no independent Higgs field) | DERIVED from D3 + D8 | [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md):33-40 |
-| D10 | Composite 2-point function `<phi^† phi> = (1/N_c²) Tr_color[G G]` | DERIVED from D9 | [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md):46-56 |
-| D11 | Free-theory singlet `Tr[M M^†]_singlet = N_c |G_0|²` | DERIVED from D10 | [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md):105-114 |
-| D12 | Exact SU(N_c) Fierz identity on fundamental generators | DERIVED structural | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md):169-172 (proof at :78-94) |
+| D8 | Selected nonabelian `(2,3)` block, dim `N_iso N_c = 6` | DERIVED from D5 + D7 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):93-95 |
+| D9 | Local scalar-singlet bilinear operator on the Q_L block, `phi = Z^{-1} sum_{alpha,a} psi-bar_{alpha,a} psi_{alpha,a}` | DEFINED in this note from D8 + canonical state normalization | Eq. (1.1), runner Block 2 |
+| D10 | Composite 2-point residue `<phi phi>_free = (N_c N_iso / Z²) G_0²` | DERIVED from D9 by explicit index contraction | Eq. (1.2), runner Block 2 |
+| D11 | Unit-residue normalization `Z² = N_c N_iso = 6` | DERIVED from D10 | Eq. (1.3), runner Block 2 |
+| D12 | Exact SU(N_c) Fierz identity on fundamental generators | STANDARD finite-dimensional Lie-algebra identity | Eq. (3.3), runner Block 4 |
 | D13 | Wilson plaquette coupling `β = 2 N_c/g_bare²` at canonical surface | DERIVED from D5 + D7 + standard Wilson action | standard lattice QFT applied to D5, D7 |
-| D14 | CMT exact identity `<O(U)> = u_0^{n_link} <O_V(V)>_eff` (change-of-variables `U = u_0 V`) | DERIVED structural | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md):213-221 |
-| D15 | `n_link = 1` per single vertex, `n_link = 2` per vacuum polarization | DERIVED structural | [`YT_VERTEX_POWER_DERIVATION.md`](YT_VERTEX_POWER_DERIVATION.md):29-38 |
+| D14 | CMT change-of-variables tadpole identity | NON-LOAD-BEARING CONTEXT for the older Planck-ratio statement | not used in `(T1)` |
+| D15 | `n_link` power counting for shared tadpole transport | NON-LOAD-BEARING CONTEXT for the older Planck-ratio statement | not used in `(T1)` |
 | C1 | Canonical plaquette / `u_0 = ⟨P⟩^{1/4}` evaluation surface | ADMITTED context input (canonical-surface choice; closure target = staggered-Dirac realization derivation, see `MINIMAL_AXIOMS_2026-05-03.md`:56-93) | `MINIMAL_AXIOMS_2026-05-03.md`:182-191 |
 | C2 | `g_bare = 1` on canonical surface | ADMITTED context input (open-gate derivation target; canonical parent: `G_BARE_DERIVATION_NOTE.md`) | `MINIMAL_AXIOMS_2026-05-03.md`:95-136 |
 | S1 | SU(3) fundamental Casimir `C_F = (N_c²-1)/(2N_c) = 4/3` | STANDARD Lie-algebra fact | applied to D7 |
 | S2 | Lorentz-group Fierz: `(γ^μ)(γ_μ) = c_S(1)(1) + c_P(iγ_5)(iγ_5) + c_V(γ^μ)(γ_μ) + c_A(γ^μγ_5)(γ_μγ_5) + 0·σσ`, with `|c_S| = 1` | STANDARD Clifford-algebra identity | Itzykson-Zuber §2-5; verified by Block 8 of runner |
-| D16 | Tree-level Feynman-rule completeness of the bare action on the scalar-singlet channel: at O(α_LM), the bare Cl(3) × Z³ action (Wilson plaquette + staggered Dirac, C1-C2) yields exactly ONE tree diagram contributing to `Γ⁽⁴⁾(q²)` on the color-singlet × iso-singlet × Dirac-scalar channel — the single-gluon-exchange diagram, projected via D12 + S2 with coefficient (3.5) | DERIVED from tree-level Feynman rules of the cited action + the absence of any fundamental scalar field or bare contact 4-fermion vertex in the bare action (D9 composite-Higgs) | framework-native; follows from `MINIMAL_AXIOMS_2026-05-03.md`:32-43 + D9 |
-| D17 | Scalar-singlet composite uniqueness on the Q_L block: the unique unit-normalized (Z² = 6) color-singlet × iso-singlet × Dirac-scalar composite operator on Q_L = (2,3) is `H_unit = (1/√(N_c · N_iso)) Σ ψ̄ψ`. Other (1,8), (3,1), (8,3) irreps give `Z² = 8, 9/2, 24` respectively (Block 5 verified) — each distinct from `Z² = 6`, hence none are the framework's scalar singlet on this block | DERIVED and numerically verified (Block 5) | [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md):33-40 (D9); Block 5 of runner |
+| D16 | Tree-level Feynman-rule completeness of the bare action on the scalar-singlet channel: at O(α_LM), the bare Cl(3) × Z³ action (Wilson plaquette + staggered Dirac, C1-C2) yields exactly ONE tree diagram contributing to `Γ⁽⁴⁾(q²)` on the color-singlet × iso-singlet × Dirac-scalar channel — the single-gluon-exchange diagram, projected via D12 + S2 with coefficient (3.5) | DERIVED from tree-level Feynman rules of the cited action + the absence of any fundamental scalar field or bare contact 4-fermion vertex in the bare action | framework-native; follows from `MINIMAL_AXIOMS_2026-05-03.md`:32-43 + D9 |
+| D17 | Scalar-singlet operator uniqueness on the Q_L block: the unique unit-normalized (Z² = 6) color-singlet × iso-singlet × Dirac-scalar operator on Q_L = (2,3) is `H_unit = (1/√(N_c · N_iso)) Σ ψ̄ψ`. Other (1,8), (3,1), (8,3) irreps give `Z² = 8, 9/2, 24` respectively (Block 5 verified) — each distinct from `Z² = 6`, hence none are the scalar singlet on this block | DERIVED and numerically verified (Block 5) | D9-D11 plus runner Block 5 |
 
 The only AXIOMS are AX1 (Cl(3)) and AX2 (Z³). The remaining inputs are
 the framework chain (D1-D17), a CANONICAL NORM CHOICE (C1, C2), or a
@@ -154,36 +145,18 @@ that algebraic identity gives `y_t_bare² = g_bare²/(2 N_c)`.
 
 ---
 
-## Structural identification fact: no independent Yukawa parameter
+## Structural identification fact: no physical Yukawa map is claimed
 
-The identification uses one piece of structural content that
-deserves explicit attention: **the Cl(3) × Z³ lattice action has NO
-independent Yukawa parameter**. This follows framework-natively from D9:
+The core claim uses `y_t_bare` only as a local label for the matrix
+element of the unit-normalized scalar-singlet operator `H_unit` on the
+specified top-basis component of Q_L. It does not require, and does not
+assert, an independent derivation of the Standard Model Yukawa readout.
 
-**D9 ([`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md):33-40)**: the framework's
-Higgs is the composite taste condensate `phi = (1/N_c) psi-bar_a psi_a`,
-NOT an independent fundamental scalar field.
-
-**Structural consequence**: because the framework has no independent
-Higgs field, there is no separate `L_Y = y_t · phi · (psi-bar_L psi_R)`
-vertex with an independent coefficient `y_t` in the bare Cl(3) × Z³
-lattice action. The bare Lagrangian contains only:
-- Wilson plaquette (D13): gauge kinetic term, coefficient β at canonical surface
-- Staggered Dirac operator (D2-D4): fermion kinetic term
-- No separate Higgs or Yukawa terms
-
-The "Yukawa coupling" `y_t` in the SM sense is therefore an **identified
-emergent observable**, not a bare parameter. It is extracted from:
-- The composite `phi` (defined by D9)
-- The composite's VEV after EWSB
-- The top-channel projection (Clebsch-Gordan on the Q_L block, D8)
-
-There is **no free parameter** `c_Y` to "identify with g_bare" because
-no such parameter exists in the bare Cl(3) × Z³ action. The earlier
-reviews' objection to an "unsupported vertex-identification" step is
-resolved by observing that no such identification step is needed — the
-Yukawa is not a vertex in the bare action, it is an identified observable
-of the composite structure.
+The bare-action context still contains only the Wilson plaquette and
+staggered Dirac operator. That observation is used here only to motivate
+the same-1PI scalar-singlet consistency check in Step 3. The auditable
+core remains the direct operator normalization and matrix element in
+Steps 1-2 and Eq. (3.8).
 
 ---
 
@@ -288,11 +261,11 @@ This is the COMPLETE tree-order value of `Γ⁽⁴⁾` from the bare
 action: no other tree diagram contributes (D16 = Feynman-rule
 completeness of the cited Wilson-staggered + plaquette action).
 
-**Representation B — direct matrix-element computation of y_t_bare
-from the H_unit operator content.**
+**Representation B — direct matrix-element computation of the local
+`y_t_bare` shorthand from the H_unit operator content.**
 
-The composite-Higgs structural input (D9) defines `H_unit`
-as a composite local operator on the Q_L block:
+The local scalar-singlet operator definition (D9) defines `H_unit`
+on the Q_L block:
 
 ```
     H_unit(x) := (1/√(N_c · N_iso)) · Σ_{α,a} ψ̄_{α,a}(x) ψ_{α,a}(x)
@@ -304,31 +277,24 @@ shown UNIQUE in Step 2 / Block 5 (D17): `H_unit` is the only
 unit-normalized scalar bilinear operator on the Q_L block with
 `Z² = N_c · N_iso = 6`.
 
-**Definition of y_t_bare via the H_unit-to-top matrix element.**
-On the canonical surface (g_bare = 1) the framework's bare Yukawa
-coupling y_t_bare is DEFINED as the unit-norm-state matrix element
-of the H_unit operator between the vacuum and a single top-pair
-state in the (color = top-color, iso = up) component of the Q_L
-block:
+**Local definition of y_t_bare via the H_unit-to-top-basis matrix element.**
+On the canonical surface (`g_bare = 1`) this note uses `y_t_bare` as
+local shorthand for the unit-norm-state matrix element of the H_unit
+operator between the vacuum and a single top-pair basis state in the
+(color = top-color, iso = up) component of the Q_L block:
 
 ```
     y_t_bare := ⟨0 | H_unit(0) | t̄_{top,up} t_{top,up}⟩            (3.7)
 ```
 
-> **Identification-map boundary (audit-prep clarification, 2026-05-06).**
-> Equation (3.7) is the **framework's definition** of `y_t_bare`. The
-> claim boundary of this note is that this defined readout satisfies the
-> exact algebraic identities `(T1)` and `(T2)`. Whether this defined
-> readout coincides with the Standard Model top-Yukawa observable as
-> measured at low energy is a **separate, downstream question** that
-> requires (a) an RG running map from `M_Pl` to the matching scale, and
-> (b) a matching prescription connecting the framework's composite-Higgs
-> readout to the SM bare-Yukawa vertex. Neither (a) nor (b) is in scope
-> for this note; both are explicitly named as out-of-scope in the audit
-> boundary above. The prior `audited_renaming` verdicts correctly
-> identified that (3.7) is a definition, not a derivation, of the SM
-> map; this refresh clarifies that the **audited scope is only the
-> framework readout identity**, not the SM map.
+> **Identification-map boundary (audit-prep clarification, 2026-05-25).**
+> Equation (3.7) is a local notation definition for this source note. The
+> claim boundary is only that the defined matrix element satisfies `(T1)`.
+> Whether this matrix element coincides with the Standard Model top-Yukawa
+> observable, or transports to `M_Pl` with the same tadpole factor as the
+> gauge vertex, is a separate downstream question. The prior
+> `audited_renaming` verdicts correctly identified that the SM map was
+> not derived; this refresh removes that map from the auditable core.
 
 Computing this matrix element directly from (3.6):
 
@@ -366,9 +332,8 @@ H_unit Yukawa vertices given by (3.8) on each side:
                          = -1 / (6 · q²) · O_S                      (3.9)
 ```
 
-at `q² ≫ m_{H_unit}²` (the physical IR scale `m_{H_unit} ∼ v ≪ M_Pl`
-is many orders below the cutoff; this scale separation is a
-physical fact about the IR spectrum, not a convention).
+in the tree-level scalar-singlet residue normalization used by this
+source note.
 
 **The same-1PI-function consistency identity.**
 
@@ -392,12 +357,12 @@ Each is computed WITHOUT reference to the other. Comparing:
 The two values agree at the canonical surface (g_bare = 1). This
 agreement is a non-trivial consistency check of the cited framework surface:
 the bare action's gauge dynamics (Representation A) and the
-operator content of the composite Higgs (Representation B) give
+operator content of `H_unit` (Representation B) give
 the same Green's function on the load-bearing scalar-singlet
 channel.
 
-**The Yukawa coupling y_t_bare = 1/√6 is therefore defined and evaluated**
-from H_unit operator content (3.7-3.8). The
+**The local matrix element y_t_bare = 1/√6 is therefore defined and
+evaluated** from H_unit operator content (3.7-3.8). The
 agreement (3.10 = 3.11) confirms internal consistency of the
 framework but is not the source of the value.
 
@@ -406,8 +371,9 @@ framework but is not the source of the value.
 1. The bare Cl(3) × Z³ lattice action
    (`MINIMAL_AXIOMS_2026-05-03.md`:32-43; conditional on staggered-Dirac and `g_bare = 1` derivation gates) — contains exactly Wilson plaquette and
    staggered Dirac, no fundamental scalar, no contact 4-fermion.
-2. D9: composite-Higgs structural axiom, no independent fundamental
-   Yukawa parameter ([`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md):33-40).
+2. D9-D11: local scalar-singlet operator definition and unit-residue
+   normalization on the Q_L block, derived in Steps 1-2 and runner
+   Block 2.
 3. D16: Feynman-rule completeness of the bare action — at O(α_LM)
    only the OGE diagram contributes to `Γ⁽⁴⁾`.
 4. D17: scalar-uniqueness of `H_unit` on the Q_L block (Z² = 6 is
@@ -417,31 +383,34 @@ framework but is not the source of the value.
    exact SU(N_c) identity, Block 4 verified to machine precision).
 6. Lorentz-Clifford scalar projection coefficient `|c_S| = 1`
    (S2, exact Clifford-algebra identity, Block 8 verified).
-7. Physical IR scale separation `m_{H_unit} ≪ M_Pl` (electroweak
-   scale `v ∼ 246 GeV` gives `m_H/M_Pl ∼ 10^{-17}`). This is a
-   physical fact about the IR spectrum of the theory, not a
-   matching convention at the cutoff.
+7. No physical IR scale separation or Standard Model matching statement
+   is load-bearing for `(T1)`.
 
 There is no second theory, no matching rule, no auxiliary mass
 freedom, no spectral assumption. The note records only that one
 1PI Green's function on the Q_L scalar-singlet channel equals
 itself when computed two algebraically equivalent ways.
 
-### Step 4: Canonical-surface ratio
+### Step 4: Non-load-bearing canonical-surface ratio context
 
-The Wilson gauge coupling on the canonical surface (D13 + D14 + D15):
+This section records the historical tadpole-ratio context only. It is
+not part of the auditable `(T1)` claim and does not import the older
+tadpole-transport rows as one-hop dependencies for this core matrix-element
+repair.
+
+If a later retained tadpole-transport bridge supplies the shared
+single-link dressing for both the scalar-singlet matrix element and the
+gauge vertex, then the Wilson gauge coupling on the canonical surface
+would be written:
 
 ```
     g_s(M_Pl) = sqrt(4 pi alpha_LM) = g_bare / sqrt(u_0)              (4.1)
 ```
 
-with `alpha_LM = alpha_bare / u_0` (CMT at n_link = 1 per vertex).
+with `alpha_LM = alpha_bare / u_0`.
 
-The bare Yukawa (3.8) also inherits a `1/sqrt(u_0)` tadpole factor at
-canonical-surface matching: the Yukawa vertex on the composite surface
-involves one fermion-bilinear hopping link (D15, `n_link = 1`), and
-`H_unit` itself is a local composite with the same tadpole dressing as
-the gauge link:
+Under that additional, non-load-bearing premise, the matrix element
+(3.8) would inherit the same `1/sqrt(u_0)` factor:
 
 ```
     y_t(M_Pl) = y_t_bare / sqrt(u_0)
@@ -449,25 +418,25 @@ the gauge link:
               = g_s(M_Pl) / sqrt(6)                                   (4.2)
 ```
 
-Taking the ratio, the `1/sqrt(u_0)` cancels:
+and the ratio would be:
 
 ```
     y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)                               (4.3)
 ```
 
-This is the support-tier structural identification recorded by the note.
+Equation (4.3) is conditional context only in this revision. It is not
+claimed as audited support by this note.
 
 ### Boundary of the identification
 
 ```
-    y_t_bare = g_bare / sqrt(6)              (T1, exact tree-level algebra)
-    y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)      (T2, exact on canonical surface)
+    y_t_bare = g_bare / sqrt(6)              (T1, exact matrix-element algebra)
 ```
 
-These are exact algebraic identities on the stated canonical evaluation
-surface. `y_t_bare` here is the framework's defined readout (Eq. 3.7),
-not the SM observable; see the identification-map boundary clarification
-following Eq. (3.7).
+This is the exact algebraic identity on the stated canonical bare-action
+surface. `y_t_bare` here is the source-note shorthand for the matrix
+element in Eq. (3.7), not the SM observable; see the identification-map
+boundary clarification following Eq. (3.7).
 
 No precision bound, no NLO claim, no systematic is attached to this
 identification. Perturbative and higher-order corrections are out of scope
@@ -477,13 +446,12 @@ Downstream quantitative reuse carries whatever systematic the
 downstream package carries independently; the note does not
 narrow that.
 
-This is a framework-native structural identification within
+This is a framework-native scalar-singlet matrix-element calculation within
 `A_min = {Cl(3), Z^3}` plus the named open-gate `admitted_context_inputs`
-(staggered-Dirac realization, `g_bare = 1`), using the chain (D1-D15)
-and canonical-surface normalization choices (C1-C2 — both admitted as
-open-gate context inputs per `MINIMAL_AXIOMS_2026-05-03.md`). No new
-axioms. No framework conventions beyond canonical normalization. No
-package-status-doc imports.
+(staggered-Dirac realization, `g_bare = 1`), using the chain D1-D13,
+D16-D17, exact SU(N_c) / Clifford algebra, and canonical normalization
+choices C1-C2. No new axioms. No framework conventions beyond canonical
+normalization. No package-status-doc imports.
 
 ---
 
@@ -491,15 +459,16 @@ package-status-doc imports.
 
 What is identified where:
 
-1. **At M_Pl on the canonical surface**: the RATIO `y_t/g_s = 1/sqrt(6)`
-   is the structural identification within A_min via D1-D15 + C1-C2 as
-   above. UV boundary condition.
+1. **On the canonical bare-action surface**: the source-note matrix
+   element `y_t_bare := <0 | H_unit | t-bar t>` equals
+   `g_bare/sqrt(6)` when `g_bare = 1` is used as the canonical bare gauge
+   unit.
 
-2. **At v on the matching surface**: `y_t(v)` is obtained by backward
-   RGE from `y_t(M_Pl)`. The `sqrt(8/9)` color-projection correction
-   from YUKAWA_COLOR_PROJECTION_THEOREM:265-299 is applied at this
-   matching step, not at the UV BC. The two operations are on different
-   scales and do not compete.
+2. **At M_Pl or v**: no physical Yukawa value, RGE bridge, color-readout
+   correction, or shared tadpole transport is claimed by this note. The
+   retained no-go row for `yt_color_projection_correction_note` remains
+   compatible with this boundary because no `sqrt(8/9)` Yukawa correction
+   is imported here.
 
-3. **No blanket equality** is claimed across M_Pl and v schemes; only
-   the M_Pl ratio is identified here.
+3. **No blanket equality** is claimed across bare, Planck, and matching
+   schemes; only the bare scalar-singlet matrix element is identified.

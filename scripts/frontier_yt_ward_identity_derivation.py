@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
-Top-Yukawa Structural Identification Verifier: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6)
+H_unit Scalar-Singlet Matrix Element Core Verifier: y_t_bare = g_bare/sqrt(6)
 ================================================================================
 
 Independently reconstructs every load-bearing coefficient of the support /
 open-gate note YT_WARD_IDENTITY_DERIVATION_THEOREM.md via direct computation.
-No hard-coded y_t/g_s = 1/sqrt(6) assumptions anywhere; every pass is an
-arithmetic check of a computed quantity against a predicted value.
+No hard-coded physical y_t/g_s bridge assumptions appear in the load-bearing
+checks; every core pass is an arithmetic check of a computed quantity against
+a predicted value.
 
 STRUCTURE:
 
-  Block 1:  Q_L block dimensions (cited rep content from
-            LEFT_HANDED_CHARGE_MATCHING_NOTE.md:13, CKM_ATLAS:56).
+  Block 1:  Selected (2,3) block dimensions from the retained native
+            nonabelian SU(2) x SU(3) surface.
   Block 2:  Canonical Higgs Z = sqrt(6) from unit-residue 2-point function.
             Computes the 2-point function residue by enumerating all
             (alpha, a, beta, b) index contractions on the Q_L block.
@@ -22,8 +23,8 @@ STRUCTURE:
             Fierz prediction (YCP_EW:169-172).  Color-singlet coefficient
             extracted: -1/(2 N_c).
   Block 5:  Direction uniqueness -- other irreps ((1,8), (3,1), ...) give
-            different Fierz coefficients.  Verifies the singlet is selected
-            uniquely by the composite-Higgs quantum numbers.
+            different Fierz coefficients.  Verifies the scalar singlet is
+            selected uniquely by the stated operator quantum numbers.
   Block 6:  Q_L singlet composite: unit-normalized state construction;
             Clebsch-Gordan on basis components (all six components give
             1/sqrt(6) by singlet uniformity).
@@ -38,13 +39,15 @@ STRUCTURE:
   Block 9:  Tadpole-improved NLO systematic:
             compute alpha_LM, C_F from inputs, derive NLO = alpha_LM*C_F/(2pi).
             No hard-coded y_t.
-  Block 10: Numerical prediction on canonical surface.  Final value
-            y_t(M_Pl) = g_s(M_Pl)/sqrt(6) computed from inputs only, compared
-            to the downstream-chain-consistent number 0.4358.
+  Block 10: Conditional canonical-surface tadpole context.  Computes the
+            OGE-side coefficient and shows what the older Planck-ratio
+            statement would require, but does not certify that bridge as
+            load-bearing for this source note.
+  Block 11: Direct H_unit matrix-element computation of y_t_bare = 1/sqrt(6).
 
 Every algebraic coefficient checked by this support runner is COMPUTED, not
-assumed. The runner does not certify the physical top-Yukawa readout map as a
-first-principles closure.
+assumed. The runner does not certify the physical top-Yukawa readout map or
+shared tadpole transport as first-principles closures.
 """
 
 from __future__ import annotations
@@ -96,8 +99,8 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
 log("=" * 72)
 log("BLOCK 1: Q_L = (2,3) rep dimension (cited framework input)")
 log("=" * 72)
-check("N_c = 3 (SU(3) color fundamental)", N_c == 3, f"LEFT_HANDED_CHARGE_MATCHING:13")
-check("N_iso = 2 (SU(2)_L doublet)", N_iso == 2, f"CKM_ATLAS:56 n_pair = 2")
+check("N_c = 3 (SU(3) color fundamental)", N_c == 3, "native nonabelian SU(3) surface")
+check("N_iso = 2 (SU(2) fundamental)", N_iso == 2, "native nonabelian SU(2) surface")
 check(
     "dim(Q_L) = N_c * N_iso = 6",
     DIM_Q_L == 6,
@@ -149,11 +152,11 @@ check(
 # ============================================================
 log()
 log("=" * 72)
-log("BLOCK 3: Cross-check vs YUKAWA_COLOR_PROJECTION_THEOREM.md:112")
+log("BLOCK 3: Color-only singlet-residue cross-check")
 log("=" * 72)
 log()
-log("  YCP:112 free-theory singlet channel: Tr[M M^dag]_singlet = N_c * |G_0|^2")
-log("  With YCP:36 projector-normalized phi = (1/N_c) psi-bar_a psi_a,")
+log("  Color-only free-theory singlet channel: Tr[M M^dag]_singlet = N_c * |G_0|^2")
+log("  With projector-normalized phi = (1/N_c) psi-bar_a psi_a,")
 log("  the composite propagator residue is <phi phi>_free = N_c|G_0|^2 / N_c^2 = |G_0|^2/N_c.")
 log("  Our formula on the color-only subblock with Z = N_c gives:")
 log("    N_c / Z^2 = N_c / N_c^2 = 1/N_c.  Match.")
@@ -162,7 +165,7 @@ log()
 # Compute on color-only subblock
 residue_color_only_projector = float(N_c) / (float(N_c) ** 2)  # = 1/N_c
 check(
-    "Color-only projector-form residue matches YCP:112 (= 1/N_c)",
+    "Color-only projector-form residue matches the direct singlet contraction (= 1/N_c)",
     abs(residue_color_only_projector - 1.0 / N_c) < 1e-14,
     f"computed = {residue_color_only_projector}, YCP = {1.0/N_c:.10f}",
 )
@@ -522,16 +525,17 @@ check(
 
 
 # ============================================================
-# BLOCK 10: Ratio-level closure via framework-native derivation chain
+# BLOCK 10: Conditional canonical-surface context
 # ============================================================
 log()
 log("=" * 72)
-log("BLOCK 10: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) via framework-native chain")
+log("BLOCK 10: Conditional tadpole-ratio context (NON-LOAD-BEARING)")
 log("=" * 72)
 log()
-log("  The source note checks the exact tree-level algebraic identity via a")
-log("  same-1PI-function residue calculation in the same cited framework surface")
-log("  (no UV-vs-EFT matching, no second theory).")
+log("  The source note's load-bearing claim is the bare H_unit matrix element")
+log("  y_t_bare = g_bare/sqrt(6), verified directly in Block 11.")
+log("  This block keeps the older canonical-surface tadpole arithmetic as")
+log("  context only; it does not certify the shared tadpole transport bridge.")
 log()
 log("  Step 3 (same-1PI-function residue identity, scalar-singlet only):")
 log("    Define Gamma^(4)(q^2) := P_{S,(1,1)} <psi-bar psi(q) psi-bar psi(-q)>_1PI,amp")
@@ -550,17 +554,18 @@ log()
 log("    Same Green's function in same theory => coefficients agree:")
 log("      y_t_bare^2 = g_bare^2 / (2 N_c) = 1/6  (Block 11)")
 log()
-log("  Step 4: tadpole 1/sqrt(u_0) inherited by both (D15, n_link=1)")
-log("  Ratio:  y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(2 N_c) = 1/sqrt(6)")
+log("  Conditional context: if a later retained bridge supplies the same")
+log("  1/sqrt(u_0) dressing for both the scalar-singlet matrix element and")
+log("  the gauge vertex, the ratio would remain 1/sqrt(2 N_c) = 1/sqrt(6).")
 log()
 
 # === Block 10 computes only the OGE coefficient (Representation A side) ===
 # It does NOT derive y_t_bare here.  y_t_bare is derived independently in
 # Block 11 from the H_unit matrix element (Representation B).  Block 10
-# computes the OGE Green's-function coefficient and propagates the value
-# through the canonical-surface tadpole to give g_s(M_Pl).  The y_t_bare
-# value used downstream comes from Block 11 (Representation B), and Block
-# 11 verifies it numerically agrees with the OGE coefficient computed here.
+# computes the OGE Green's-function coefficient and records the conditional
+# canonical-surface tadpole arithmetic.  The y_t_bare value used in the
+# consistency check comes from Block 11 (Representation B), and Block 11
+# verifies it numerically agrees with the OGE coefficient computed here.
 
 # C_pert (color-singlet Fierz coefficient from Block 7/D12) = 1/(2 N_c) = 1/6
 C_pert_from_block7 = 1.0 / (2.0 * N_c)
@@ -636,7 +641,7 @@ log(f"    y_t(M_Pl)  = y_t(bare) * tadpole = {y_t_MPl:.6f}")
 # === Two independent routes to g_s(M_Pl) agree ===
 g_s_alpha = math.sqrt(4.0 * PI * ALPHA_LM)
 check(
-    "g_s(M_Pl) = 1/sqrt(u_0) = sqrt(4 pi alpha_LM) (two routes agree)",
+    "CONTEXT: g_s(M_Pl) = 1/sqrt(u_0) = sqrt(4 pi alpha_LM) if tadpole bridge is admitted",
     abs(g_s_MPl - g_s_alpha) < 1e-14,
     f"both = {g_s_MPl:.10f}",
 )
@@ -644,16 +649,13 @@ check(
 # === Ratio is tadpole-invariant (as the framework-native derivation predicts) ===
 ratio_MPl = y_t_MPl / g_s_MPl
 check(
-    "y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) [tadpole cancels in ratio]",
+    "CONTEXT: y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) if shared tadpole bridge is admitted",
     abs(ratio_MPl - 1.0 / math.sqrt(6.0)) < 1e-14,
     f"ratio = {ratio_MPl:.10f}",
 )
 
-check(
-    "y_t(M_Pl) = 0.4358 matches downstream-chain value",
-    abs(y_t_MPl - 0.4358) < 5e-4,
-    f"y_t(M_Pl) = {y_t_MPl:.6f}",
-)
+log("  Downstream numerical top-Yukawa values are intentionally not checked here.")
+log("  This runner does not import the old 0.4358 comparison as authority.")
 
 # === Dependency trace: Block 10 traces through Blocks 2 and 6 ===
 # If the Clebsch-Gordan overlap (Block 6) were different, y_t_bare would change,
@@ -662,7 +664,7 @@ check(
 counterfactual_overlap = cg_overlap_top * 1.1  # hypothetical 10% shift
 counterfactual_y_t = counterfactual_overlap * g_bare * tadpole_factor
 check(
-    "Non-tautology: y_t(M_Pl) tracks Clebsch-Gordan overlap (Block 6)",
+    "CONTEXT: conditional y_t(M_Pl) tracks Clebsch-Gordan overlap (Block 6)",
     abs(counterfactual_y_t - y_t_MPl) > 0.01,
     f"counterfactual (10% shift in overlap): y_t -> {counterfactual_y_t:.6f}, "
     f"differs from derived {y_t_MPl:.6f}",
@@ -690,7 +692,8 @@ log("       gives y_t_bare = 1/sqrt(6) INDEPENDENTLY (no OGE input)")
 log("       => q^2 |Gamma^(4)|_H = y_t_bare^2 = 1/6")
 log()
 log("    Both A and B independently give 1/6; consistency confirmed in Block 11.")
-log("    Canonical tadpole [D15]: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) (exact)")
+log("    Conditional tadpole context: if both vertices share the same dressing,")
+log("       y_t(M_Pl)/g_s(M_Pl) remains 1/sqrt(6). This is not load-bearing.")
 log()
 log("  Quantitative NLO / precision / systematic discussion is SUPPORT-ONLY")
 log("  (see Block 9 and docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md).")
@@ -938,9 +941,9 @@ log("             core support chain.")
 log("  - Block 10: computes the OGE-side coefficient (Representation A) of")
 log("             the same-1PI-function identity using D12 + S2; uses the")
 log("             y_t_bare value derived independently in Block 11 to drive")
-log("             the canonical-surface tadpole continuum;")
-log("             gives y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6).  Block 10 does NOT")
-log("             derive y_t_bare itself (that lives in Block 11).")
+log("             a conditional canonical-surface tadpole context check.")
+log("             This context is NON-LOAD-BEARING and does not certify")
+log("             y_t(M_Pl)/g_s(M_Pl) as a retained bridge.")
 log("  - Block 11: evaluates y_t_bare = 1/sqrt(6) INDEPENDENTLY from the")
 log("             H_unit operator matrix element (Clebsch-Gordan + canonical")
 log("             normalization, no OGE input); then verifies the value")
@@ -952,10 +955,12 @@ log("             core support chain. Documented in the bridge note.")
 log()
 log("  Support result (exact tree-level algebraic identity on the stated surface):")
 log("    y_t_bare = g_bare / sqrt(6)")
-log("    y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) on canonical surface")
+log("    Conditional context only: a later retained shared-tadpole bridge would")
+log("      preserve y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6), but this runner does not")
+log("      certify that bridge.")
 log()
 log("  No precision bound is attached to this support note.")
-log("  Quantitative corrections are out of scope (support note).")
+log("  Quantitative corrections and physical top-Yukawa readout are out of scope.")
 log("  See docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md for the source note.")
 
 if COUNTS["FAIL"] > 0:

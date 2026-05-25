@@ -96,15 +96,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1084 | 45.58 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 944 | 39.88 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 176 | 38.97 | `unaudited` | unaudited |
-| 7 | `alpha_s_derived_note` | bounded_theorem | critical | 972 | 38.43 | `unaudited` | unaudited |
-| 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 879 | 38.28 | `unaudited` | unaudited |
+| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 879 | 38.28 | `unaudited` | unaudited |
+| 8 | `alpha_s_derived_note` | bounded_theorem | critical | 704 | 37.96 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 960 | 37.91 | `unaudited` | unaudited |
-| 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 981 | 34.44 | `audited_conditional` | ~~audited_conditional~~ |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1057 | 34.05 | `audited_clean` | **retained** |
-| 12 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 172 | 33.44 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 937 | 33.37 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1057 | 34.05 | `audited_clean` | **retained** |
+| 11 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 172 | 33.44 | `unaudited` | unaudited |
+| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 937 | 33.37 | `audited_clean` | **retained** |
+| 13 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 545 | 33.09 | `audited_conditional` | ~~audited_conditional~~ |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 558 | 32.13 | `unaudited` | unaudited |
-| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1022 | 31.50 | `audited_conditional` | ~~audited_conditional~~ |
+| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1015 | 31.49 | `audited_conditional` | ~~audited_conditional~~ |
 | 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 556 | 31.12 | `unaudited` | unaudited |
 | 17 | `three_generation_structure_note` | bounded_theorem | critical | 683 | 30.42 | `unaudited` | unaudited |
 | 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 929 | 30.36 | `audited_renaming` | ~~audited_renaming~~ |
@@ -112,9 +112,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 217 | 29.77 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 185 | 29.04 | `unaudited` | unaudited |
 | 22 | `minimal_axioms` | meta | critical | 956 | 28.90 | `unaudited` | meta |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 970 | 28.42 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 605 | 27.74 | `unaudited` | unaudited |
-| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 591 | 27.71 | `unaudited` | unaudited |
+| 23 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 605 | 27.74 | `unaudited` | unaudited |
+| 24 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 591 | 27.71 | `unaudited` | unaudited |
+| 25 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 546 | 27.59 | `unaudited` | unaudited |
 
 
 ## Applied audits

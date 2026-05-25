@@ -28225,22 +28225,6 @@
       "to": "native_gauge_closure_note"
     },
     {
-      "from": "yt_ward_identity_derivation_theorem",
-      "to": "left_handed_charge_matching_note"
-    },
-    {
-      "from": "yt_ward_identity_derivation_theorem",
-      "to": "yukawa_color_projection_theorem"
-    },
-    {
-      "from": "yt_ward_identity_derivation_theorem",
-      "to": "yt_ew_color_projection_theorem"
-    },
-    {
-      "from": "yt_ward_identity_derivation_theorem",
-      "to": "yt_vertex_power_derivation"
-    },
-    {
       "from": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
       "to": "yt_ew_color_projection_theorem"
     },
@@ -83704,19 +83688,15 @@
       "claim_type_author_hint_raw": "bounded_theorem author hint; independent audit lane sets the",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "native_gauge_closure_note",
-        "left_handed_charge_matching_note",
-        "yukawa_color_projection_theorem",
-        "yt_ew_color_projection_theorem",
-        "yt_vertex_power_derivation"
+        "native_gauge_closure_note"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "580c70ef410be77d3d9604ecaff5808f409bad3c88077f2552eb19dd79e07cd6",
+      "note_hash": "56872ec037ed7832e34acdb23e576245218f2f94e833a457148e9387dffeaf99",
       "path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
-      "title": "Top-Yukawa Structural Identification: y_t(M_Pl) = g_s(M_Pl) / sqrt(6)"
+      "title": "H_unit Scalar-Singlet Matrix Element Core: y_t_bare = g_bare / sqrt(6)"
     },
     "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17": {
       "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
@@ -84730,7 +84710,7 @@
       "open_gate": 123,
       "positive_theorem": 600
     },
-    "edge_count": 9712,
+    "edge_count": 9708,
     "leaf_count": 767,
     "node_count": 2504,
     "root_count": 824,

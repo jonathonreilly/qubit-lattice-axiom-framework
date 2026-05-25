@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `yukawa_color_projection_theorem` | positive_theorem | unaudited | critical | 980 | 16.44 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yukawa_color_projection_boundary.py` |
+| 1 | `yukawa_color_projection_theorem` | positive_theorem | audit_in_progress | critical | 980 | 16.44 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yukawa_color_projection_boundary.py` |
 | 2 | `g_bare_rigidity_theorem_note` | bounded_theorem | unaudited | critical | 913 | 13.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rigidity_theorem.py` |
 | 3 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 900 | 18.32 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |
 | 4 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | unaudited | critical | 886 | 10.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py` |

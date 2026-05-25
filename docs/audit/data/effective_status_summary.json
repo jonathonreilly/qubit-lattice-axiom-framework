@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 1029,
-    "decoration": 38,
+    "decoration": 39,
     "meta": 231,
     "no_go": 243,
     "open_gate": 110,
-    "positive_theorem": 739
+    "positive_theorem": 738
   },
   "cycle_examples": [
     [
@@ -73,15 +73,16 @@
     "retained": 143,
     "retained_bounded": 436,
     "retained_no_go": 156,
-    "retained_pending_chain": 7,
-    "unaudited": 1252
+    "retained_pending_chain": 8,
+    "unaudited": 1251
   },
-  "retained_pending_chain_count": 7,
+  "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
     "complex_selectivity_compare_note",
     "complex_selectivity_predictor_note",
+    "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"

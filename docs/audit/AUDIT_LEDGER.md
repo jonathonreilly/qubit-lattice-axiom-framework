@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 141 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 429 |
+| **retained_bounded** | 430 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1268 |
+| unaudited | 1267 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 701 |
+| `audited_clean` | 702 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1495 |
+| `unaudited` | 1494 |
 
 | claim_type | count |
 |---|---:|
@@ -810,6 +810,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -12834,6 +12835,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** False — The runner and helper source genuinely compute the Wilson open-lattice rows and the cached output supports the monotone softening claim on the runner's five-value mu^2 grid. The full source-note table does not close because it claims mu^2=0.10 and mu^2=0.0 results, but the supplied primary runner source and cache omit those values and instead include mu^2=0.005.
 - **rationale:** The load-bearing computation is class C: the primary runner calls the included open Wilson lattice implementation, solves the screened Poisson problem, evolves the Wilson Hamiltonian, computes shared-minus-self mutual acceleration, and fits log |a_mut| versus log d. The completed cache supports clean attractive rows and monotone exponent softening for the runner's actual sampled grid. However, the source note's stated sweep includes mu^2=0.10 and mu^2=0.0, neither of which is present in the supplied runner source or cache, so the note's full table and exact stated scope are not closed by the restricted packet.
 - **auditor confidence:** high
+
+### `wilson_test_mass_continuum_note_2026-04-11`
+
+- **Note:** [`WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md`](../../docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded finite-L open-Wilson test-mass, perturbative mass-law, and finite-L distance-law table as stated in the note; the continuum extrapolation is out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T114037Z-e0a93d0c-wilson_test_mass_continu-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-L open-Wilson size sweep reports per-L fitted distance exponents alpha(L) from L=12 to L=25, with the largest accessible L giving alpha=-2.002 and high R^2, while the L->infinity extrapolation is diagnostic-only.  _(class `C`)_
+- **chain closes:** True — On the narrowed finite-L scope, the note’s conclusion follows from the reported same-convention Wilson numerical table and explicitly avoids promoting the unsupported continuum extrapolation. Runner source and stdout were unavailable, so this is judged from the note text alone rather than an independently verified run artifact.
+- **rationale:** The repaired note no longer asks the audit to retain the L->infinity continuum extrapolation; it makes the finite-L distance-law table the binding evidence and labels the extrapolated alpha_inf as diagnostic-only. The load-bearing step is a same-convention first-principles numerical Wilson computation as presented, not a definition, renaming, or external numerical match. The cited staggered authorities are retained_bounded and used only for contextual cross-architecture boundaries, not as open dependencies for the finite-L Wilson table. The missing runner artifacts limit independent verification but, under the prompt’s fallback rule, do not by themselves force a terminal downgrade.
+- **auditor confidence:** medium
 
 ### `wilson_two_body_open_note_2026-04-11`
 

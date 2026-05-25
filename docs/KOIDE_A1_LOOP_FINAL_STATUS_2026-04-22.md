@@ -1,12 +1,25 @@
 # Koide A1 Investigation — Final Theoretical Status
 
+**Headline admission (2026-05-25):** the `V(Φ)` quartic potential is
+taken as an **input premise** at this note; derivation from the
+`Cl(3)/Z³` substrate is **not provided** in this packet. The
+trace-reduction identity and the squared-potential zero-locus
+identity are retained only as a **conditional algebraic route** to
+the Koide A1 relation, conditioned on that `V(Φ)` admission. See the
+2026-05-19 audit-conditional repair block below for the detailed
+narrowing.
+
 **Status:** bounded - bounded or caveated result note
 **Date:** 2026-04-22 (2026-05-18: claim_scope formalized as conditional
 variational route to A1, not an axiom-native derivation, per audit
 verdict boundary instruction; 2026-05-19: audited-conditional repair
 narrows retained scope to the trace reduction + A1 zero-locus identity
 the runner verifies, and marks `V(Φ) = 81(a² − 2|b|²)²` as an
-assumed ansatz — see audit block below).
+assumed ansatz — see audit block below; 2026-05-25: headline-level
+`V(Φ)` input-premise admission added per audit verdict that the
+retained theorem-grade content is the algebraic facts only, with the
+quartic potential admitted as input rather than derived from
+`Cl(3)/Z³`).
 **Claim type:** bounded_theorem
 
 ## 2026-05-19 audit-conditional repair

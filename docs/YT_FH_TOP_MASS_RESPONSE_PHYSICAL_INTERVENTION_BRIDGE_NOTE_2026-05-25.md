@@ -201,3 +201,14 @@ SUMMARY: PASS=... FAIL=0
 The green result means the FH observable-response bridge is algebraically
 consistent and the remaining blocker is sharply exposed.  It does not mean
 the Y_T lane is closed.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [yt_physical_top_intervention_identification_candidate_note_2026-05-25](YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md)
+- [yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25](YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md)
+- [yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25](YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md)
+- [yt_fh_top_w_response_ratio_gate_note_2026-05-25](YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md)
+- [yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25](YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md)
+- [yt_strict_symbolic_top_response_row_packet_note_2026-05-25](YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md)

@@ -23,14 +23,22 @@ theorem (S) is conditional on two named open inputs:
 This note gives a source-side bounded discharge candidate for **both**
 H1 and H2 on the finite-Λ Wilson+staggered lattice-action surface by
 exploiting the Euclidean cubic (axis-permutation) symmetry of the
-Wilson action to lift the source result of
-[`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
-(sibling 2026-05-19 note; markdown-linked as a conditional dependency because
-the axis-permutation lift uses Lemmas A-D of that sibling as a structural input.
-The cited row remains unaudited, so this note remains conditional until that
-sibling clears the audit lane.)
-(the operator-theoretic Δ_T > 0 theorem candidate for the temporal-slab
-transfer operator on `L²(SU(3)^E)`) into the spatial-slab direction.
+Wilson action. The core pure-Wilson `T_x_W` construction is structurally
+independent of any sibling-row retention: it instantiates the standard
+Perron-Jentzsch/Krein-Rutman positivity-improving compact-operator
+machinery directly on the spatial-slab kernel via Wilson axis-permutation
+symmetry, which is a property of the Wilson action itself (Lemma 2.1
+below) — not a property imported from any sibling note. The
+sibling note `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+(effective_status: `unaudited` — backticked per dep-hygiene rule;
+non-load-bearing on the core pure-Wilson `T_x_W` claim) supplies the
+same structural lemma cluster (SU(3) heat-kernel positivity,
+Perron-Jentzsch trace-class, positivity-improvement) under the
+*temporal*-slab axis convention; this slab note re-derives the
+analogous lemmas in §2-§3 under the *spatial*-slab axis convention
+using the same standard mathematical machinery, so the sibling is
+parallel-evidence, not a load-bearing dependency. The lift formally
+maps the temporal-direction result to the spatial-slab direction.
 
 The end result is:
 
@@ -42,11 +50,12 @@ The end result is:
   for H1 and H2 for the pure Wilson factor.
 - **(Staggered+Wilson, conditional on Leg A.)** With dynamical staggered
   fermions added via the symmetrized fermion-determinant multiplier of
-  [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
-  (sibling 2026-05-19 note; markdown-linked as a named conditional input for
-  the staggered+Wilson `T_x_full` branch. The pure-Wilson `T_x_W` branch above is
-  structurally independent of Leg A.)
-  (the operator-basis + quark-mass-orientation "Leg A" salvage), the
+  the sibling salvage `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+  (effective_status: `audited_conditional` — backticked per dep-hygiene
+  rule; named-conditional input for the staggered+Wilson `T_x_full`
+  branch only. The pure-Wilson `T_x_W` branch above is structurally
+  independent of Leg A and is the core load-bearing claim of this note.)
+  — the operator-basis + quark-mass-orientation "Leg A" salvage — the
   staggered+Wilson full spatial-slab transfer operator `T_x_full` is
   positive Hermitian trace-class with `Δ_x_full > 0`, **conditional on Leg
   A's audit retention** at retained-grade. We do not promote Leg A here.
@@ -99,14 +108,18 @@ For background and notation: the relevant upstream source notes are
   `Δ_T > 0` for the **temporal**-slab transfer operator `T_τ` on
   `L²(SU(3)^E)` via the
   SU(3) heat-kernel character expansion + Perron-Jentzsch/Krein-Rutman
-  positivity-improving compact-operator theorem (Lemmas A-D of
-  [`docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md) —
-  sibling 2026-05-19 note, markdown-linked as a named conditional dependency).
+  positivity-improving compact-operator theorem (Lemmas A-D of the
+  sibling note `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` —
+  effective_status: `unaudited`, backticked per dep-hygiene rule;
+  parallel-evidence under the temporal-slab axis convention, non-load-bearing on this note's pure-Wilson `T_x_W` core claim, which re-derives the same standard mathematical machinery under the spatial-slab axis convention in §2-§3).
 - `5f6f0b87a` (PR #1582 salvage) — source-side candidate discharging
   the Leg A operator-basis and quark-mass-orientation theorems
-  (Theorems 2.4 and
-  3.4 of [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md) —
-  sibling 2026-05-19 note, markdown-linked as a named conditional input).
+  (Theorems 2.4 and 3.4 of the sibling note
+  `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` —
+  effective_status: `audited_conditional`, backticked per dep-hygiene
+  rule; named-conditional input for the §4 staggered+Wilson `T_x_full`
+  branch only, non-load-bearing on this note's pure-Wilson `T_x_W` core
+  claim of §3).
   This note treats it as a named conditional input and does not promote
   its audit status.
 
@@ -365,9 +378,12 @@ each lattice direction, restricted to the two-slab subset
 "longitudinal" direction.
 
 Under Leg A's anti-Hermiticity theorem
-(see [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
-§3 Lemma 3.1, "Determinant-phase analysis (C-det)" — sibling 2026-05-19 note,
-markdown-linked as a named conditional input for the staggered+Wilson half),
+(see the sibling note `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+§3 Lemma 3.1, "Determinant-phase analysis (C-det)" —
+effective_status: `audited_conditional`, backticked per dep-hygiene
+rule; named-conditional input for the staggered+Wilson `T_x_full` half
+of this note only, non-load-bearing on the pure-Wilson `T_x_W` core
+claim of §3),
 
 ```
 D_x[U]† = -D_x[U]                                                       (4.1)
@@ -582,8 +598,10 @@ consequences.
 With dynamical staggered fermions added via the symmetrized full
 spatial-slab transfer operator `T_x_full := M_F^{1/2} T_x_W M_F^{1/2}`
 defined in (4.4), conditional on Leg A retention
-([`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md) —
-sibling 2026-05-19 note, markdown-linked as a named conditional input),
+(sibling note `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` —
+effective_status: `audited_conditional`, backticked per dep-hygiene
+rule; named-conditional input for this SW-slab extension only,
+non-load-bearing on the (W-slab) core claim above),
 the operator `T_x_full` is self-adjoint, trace-class, strictly
 positivity-preserving, with simple top eigenvalue, strictly positive top
 eigenfunction, and strict spectral gap
@@ -634,9 +652,11 @@ The (W-slab) and (SW-slab) theorems of §6 do NOT claim:
 - (X6) **First-principles derivation of Leg A from the framework
   baseline.** Leg A is treated as a named conditional input throughout
   §4 and §5. Its
-  effective status is the audit lane's call on
-  [`docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
-  (sibling 2026-05-19 note; markdown-linked as a named conditional input).
+  effective status is the audit lane's call on the sibling note
+  `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+  (effective_status: `audited_conditional`, backticked per dep-hygiene
+  rule; named-conditional input for the SW-slab branch only,
+  non-load-bearing on the (W-slab) core claim).
 
 - (X7) **Audit-retained status.** The source-side label is
   `bounded_theorem`; effective status is the audit lane's call.

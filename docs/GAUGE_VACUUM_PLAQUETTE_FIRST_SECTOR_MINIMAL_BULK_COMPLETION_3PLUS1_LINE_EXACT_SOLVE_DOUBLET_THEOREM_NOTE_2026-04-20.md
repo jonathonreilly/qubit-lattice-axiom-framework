@@ -1,8 +1,20 @@
-# Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Exact-Solve Doublet Theorem
+# Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Empirical Dense-Search Doublet Note
 
 **Status:** bounded - bounded or caveated result note
 **Claim type:** bounded_theorem
-**Date:** 2026-04-20 (originally); 2026-05-03 (review-loop repair); 2026-05-08 (certificate-source repair)
+**Date:** 2026-04-20 (originally); 2026-05-03 (review-loop repair); 2026-05-08 (certificate-source repair); 2026-05-25 (audit-repair: narrow to empirical dense-search)
+
+## Audit-repair (2026-05-25)
+
+Per auditor verdict, this note retains only the **empirical dense-search
+claim for the two observed root clusters on the selected positive-angle
+chart**. The global exact-solve theorem phrasing is dropped from the
+headline claim and **deferred pending an interval-arithmetic (or
+resultant) certificate** of global exhaustiveness on the bounded chart.
+The "exactly two roots globally" statement is therefore not asserted
+here; what is asserted is that dense Monte-Carlo + structured-grid
+seeding (3660 seeds, ~20× the original) finds exactly two observed
+clusters with no additional cluster emerging.
 
 ## Review-loop repair (2026-05-03; certificate-source repair 2026-05-08)
 
@@ -61,19 +73,28 @@ chart**. The "exactly two" claim is empirically certified at much
 higher confidence than the original sparse seeding, but is not yet
 rigorously closed.
 
-## Statement
+## Statement (narrowed 2026-05-25)
 
-On the selected least-positive-bulk Wilson branch, the retained `3d+1`
-complement-line problem is solved on the bounded positive-angle chart by a
-specified exact target equation whose isolated solution set contains exactly two
-nondegenerate retained-line roots.
+On the selected least-positive-bulk Wilson branch, dense Monte-Carlo +
+structured-grid search of the bounded positive-angle chart finds exactly
+**two observed root clusters** of the specified target equation. Both
+clusters reduce to nondegenerate roots (small residuals, well-conditioned
+finite-difference Jacobians) via local `least_squares` polish.
 
-Those two chart solutions form the concrete orientation doublet later used by
-the selector law. This replaces the old named-witness import by a bounded
-exact-solve theorem on the selected retained ambient.
+Those two observed chart clusters form the concrete orientation doublet
+later used by the selector law. This replaces the old named-witness
+import by an empirically dense-searched two-cluster result on the
+selected retained ambient.
 
-No closed-form symbolic classification beyond this bounded chart is claimed
-here.
+**Deferred.** A global exact-solve theorem — i.e., a rigorous certificate
+that the bounded chart contains exactly two roots and no others — is
+**not claimed here**. Such a certificate would require interval-arithmetic
+root enclosure (or symbolic resultant reduction) on the target equation
+and is deferred to subsequent work. The current dense-search evidence is
+empirical, not symbolic.
+
+No closed-form symbolic classification beyond the bounded chart is
+claimed.
 
 ## Authority
 

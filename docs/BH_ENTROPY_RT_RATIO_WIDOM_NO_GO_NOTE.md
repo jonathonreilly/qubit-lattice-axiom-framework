@@ -2,27 +2,32 @@
 
 **Date:** 2026-04-17 (last rigorization 2026-05-10; 2026-05-18:
 claim_scope narrowed per audit verdict "Claim boundary until fixed"
-instruction).
+instruction; 2026-05-25: claim further narrowed to finite-`L ≤ 64`
+numerical-fit evidence per audit verdict "the runner's THEOREM check
+is only a numerical fit check and does not prove the asymptotic
+statement.").
 **Claim type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+**Claim scope (post-2026-05-25 narrowing):** the load-bearing content
 of this note is **the Widom entropy coefficient `1/6` on the
 self-contained free-fermion carrier defined intrinsically in
-§"Self-contained carrier definition"** plus the **finite-L (`L ≤ 64`)
-numerical evidence against the exact `1/4` ratio** under the stated
-`10^-6` relative singular-value threshold on the OBC half-filled
-square-lattice carrier. This note **does NOT** establish the full
-asymptotic `ln χ_eff(L) = ln L + o(ln L)` for the non-standard C-7
-thresholded cross-layer matrix; that proof (preferably by
-diagonalizing transverse modes and bounding the singular values)
-remains the named open work item in the audit verdict. As a
-consequence, the no-go statement is **not closed at retained grade
-across all L**; it is supported as a bounded numerical no-go
-through `L = 64` plus the Widom `1/6` constant from the cited
-classical Widom-Sobolev theorems. The `d = 3` normalization wording
-will be corrected or split in a separate revision before any future
-retained-grade promotion attempt.
+§"Self-contained carrier definition"** plus the **finite-`L ≤ 64`
+numerical-fit evidence against the exact `1/4` ratio** under the
+stated `10^-6` relative singular-value threshold on the OBC
+half-filled square-lattice carrier. The runner is a **numerical fit
+check** at finite `L ≤ 64`; it does **not** prove any asymptotic
+statement. Consistent with the audit verdict
+("the runner's THEOREM check is only a numerical fit check and
+does not prove the asymptotic statement"), the asymptotic
+`lim_L r(L) = c_Widom != 1/4` is **moved out** of the retained
+no-go and into open admission OA-1 below. The L ≤ 96 probe claim
+(via `scripts/probe_bh_rt_ratio_asymptotic.py`) is **explicitly
+deferred** as cache-not-in-packet, pending a future runner extension
+that ships the probe cache alongside the note. The `d = 3`
+normalization wording will be corrected or split in a separate
+revision before any future retained-grade promotion attempt.
 **Status authority:** independent audit lane only.
-**Status:** narrow no-go theorem on a self-contained free-fermion carrier
+**Status:** narrow finite-`L ≤ 64` numerical-fit-evidence no-go on a
+self-contained free-fermion carrier
 **Runner:** `scripts/frontier_bh_entropy_rt_ratio_widom.py`
 **Authority role:** canonical closure of the "is RT ratio = 1/4 exact?" question
 on the self-contained carrier defined intrinsically below. The existing
@@ -130,26 +135,37 @@ of this note is restricted to:
   Euclidean geometry of the diamond and the explicit formula
   `(1/(12 (2 pi)^{d-1}))` from (W-1) and is independent of
   admissions OA-1, OA-2.
-- **R2.** The **finite-`L` numerical no-go** through `L = 64`
-  (`L = 8, 12, ..., 64`, OBC, half filling, straight cut, threshold
-  `10^{-6}`): `r(64) = 0.2112`, the two-parameter fit
-  `r(L) = c_inf + a / ln L` over `L >= 32` gives `c_inf = 0.1601`
-  (3.94% from `1/6`, 35.96% from `1/4`); extended `L <= 96` probe
-  gives `c_inf = 0.163` (2.1% from `1/6`, 34.7% from `1/4`). This is
-  finite-`L` evidence inconsistent with the `1/4` value within the
-  stated lattice range, and is retained as a bounded numerical no-go
-  on `L <= 96`.
+- **R2.** The **finite-`L ≤ 64` numerical-fit evidence** for the
+  no-go (`L = 8, 12, ..., 64`, OBC, half filling, straight cut,
+  threshold `10^{-6}`, runner cache in packet): `r(64) = 0.2112`, the
+  two-parameter fit `r(L) = c_inf + a / ln L` over `L >= 32` gives
+  `c_inf = 0.1601` (3.94% from `1/6`, 35.96% from `1/4`). This is
+  finite-`L` numerical-fit evidence (not a theorem) inconsistent with
+  the `1/4` value within the stated lattice range, and is retained as
+  bounded numerical-fit evidence on `L <= 64`. The runner's `THEOREM`
+  label denotes the numerical fit-form check at finite `L`; it is
+  **not** a proof of the asymptotic statement.
 
 The retained statement reads:
 
 > On the OBC half-filled NN-hopping square lattice (C-1)-(C-8) with
 > threshold `10^{-6}`, the dimensionless RT ratio `r(L)` is bounded
-> through `L = 96` by `r(L) <= 0.224`, decreases monotonically for
-> `L >= 28`, and a two-parameter Widom-form fit on `L >= 48` gives
-> `c_inf = 0.163` (2.1% from the 2D diamond-integral value `1/6` and
-> 34.7% from `1/4`). The exact 2D diamond-integral Widom coefficient
-> is `c_Widom(2D, diamond, straight cut) = 1/6` by direct evaluation
-> of the cited Widom-Gioev-Klich integral.
+> through `L = 64` by `r(L) <= 0.224`, decreases monotonically for
+> `L >= 28`, and a two-parameter Widom-form fit on `L >= 32` gives
+> `c_inf = 0.1601` (3.94% from the 2D diamond-integral value `1/6`
+> and 35.96% from `1/4`). The exact 2D diamond-integral Widom
+> coefficient is `c_Widom(2D, diamond, straight cut) = 1/6` by
+> direct evaluation of the cited Widom-Gioev-Klich integral.
+
+**Deferred (cache-not-in-packet):** the extended `L <= 96` probe
+(via `scripts/probe_bh_rt_ratio_asymptotic.py`) reporting
+`c_inf = 0.163` (2.1% from `1/6`, 34.7% from `1/4`) is **explicitly
+deferred** from the retained scope of this note: the L ≤ 96 cache
+is not bundled in the current audit packet, so any claim sourced
+from that probe is pending a future runner extension that ships
+the probe cache alongside the note. Until then, the retained
+finite-L numerical-fit evidence is the `L <= 64` runner cache
+only.
 
 ### No-go discipline notes
 
@@ -164,7 +180,9 @@ broadening, in conformance with the N1-N8 no-go discipline:
   **smaller**, not larger
 - the only retained claims (R1, R2) are weaker than the prior
   asymptotic statement: R1 is an exact evaluation of a classical
-  integral, R2 is a finite-`L` numerical bound through `L = 96`
+  integral, R2 is a finite-`L` numerical-fit evidence bound through
+  `L = 64` (the L ≤ 96 probe is explicitly deferred as cache-not-in-
+  packet, per the 2026-05-25 narrowing)
 - no new asymptotic conclusion, no new universal reach, and no new
   class of carriers is added; the carrier class (C-1)-(C-8) is left
   intact and the open-admissions OA-1, OA-2 are explicitly named
@@ -173,10 +191,45 @@ broadening, in conformance with the N1-N8 no-go discipline:
 Consequently, every prior consumer of this note (the bounded BH-entropy
 companion `BH_ENTROPY_DERIVED_NOTE.md` chief among them) inherits a
 **narrower** obstacle than before, not a broader one: the narrowed no-go
-forbids the `1/4` value only on `L <= 96` in the OBC half-filled NN-
-hopping carrier and only at the level of the diamond-integral Widom
-coefficient `1/6`, leaving the all-`L` and threshold-bridge questions
-explicitly open for future packets to close.
+forbids the `1/4` value only on `L <= 64` (the runner cache in packet)
+in the OBC half-filled NN-hopping carrier and only at the level of the
+diamond-integral Widom coefficient `1/6`, leaving the all-`L`, the
+threshold-bridge, and the `L <= 96` probe questions explicitly open
+for future packets to close.
+
+**N1-N8 review-loop gate (2026-05-25).** PASS for the narrowed
+finite-`L <= 64` evidence boundary only.
+
+- **N1 alternative routes considered.** (1) all-`L` Widom/OBC
+  asymptotic bridge: not closed, moved to OA-1; (2) thresholded
+  `chi_eff` rank saturation: not closed, moved to OA-2; (3) extended
+  `L <= 96` probe: not in packet, deferred as cache-not-in-packet; (4)
+  alternate carriers / fillings / cuts that could hit `1/4`: explicitly
+  outside this carrier-specific packet; (5) physical Einstein-Hilbert
+  `1/4` route: outside scope; (6) in-packet finite-`L <= 64` runner
+  evidence: retained as bounded numerical-fit evidence only.
+- **N2 wall independence.** OA-1 and OA-2 are distinct missing bridges;
+  the `L <= 96` issue is an artifact-packet/cache gap, not an independent
+  physics wall.
+- **N3 hidden-wall scan.** Prior "standard free-fermion area-law" and
+  "direct lattice specialization" language is no longer hidden
+  authority; those steps are explicitly assigned to OA-1/OA-2.
+- **N4 residual matching.** The retained residual is finite
+  `L <= 64` inconsistency with exact `1/4` under the runner's declared
+  fit/readout. The note no longer uses that residual as proof of an
+  all-`L` asymptotic no-go.
+- **N5 rhetoric audit.** Publication wording is narrowed away from
+  "hard obstacle" and all-`L` "asymptotic value is..." phrasing.
+- **N6 partial-closure path scan.** No new axiom is requested. The repair
+  path is mathematical: supply uniform OBC-lattice Widom specialization
+  and threshold-rank bounds, or change the carrier/readout.
+- **N7 steelman.** A hostile reviewer can object that finite `L <= 64`
+  fits do not prove `lim_L r(L) != 1/4`; this objection is accepted and
+  the asymptotic statement is moved out of the retained scope.
+- **N8 cross-cycle echo.** Prior area-law/no-go packets overclosed
+  selector/carrier claims from finite numerics. This narrowed packet
+  preserves the finite evidence without using it to foreclose future
+  asymptotic or alternate-carrier work.
 
 ## Self-contained carrier definition
 
@@ -240,8 +293,10 @@ chi_eff(L)  =  #{ singular values sigma_k(T)
 ```
 
 For the free-fermion ground state above this is the boundary-layer
-rank, and bridge step (B-3) below proves `chi_eff(L) = L` (resp.
-`L^{d-1}` in 3D) exactly to leading order.
+rank. The runner verifies the finite-`L <= 64` 2D saturation used by
+the numerical-fit evidence; the all-`L` leading-order statement
+`chi_eff(L) = L` (resp. `L^{d-1}` in 3D) is part of open admission
+OA-2, not retained by this packet.
 
 **(C-8)** The dimensionless RT-ratio:
 
@@ -250,23 +305,22 @@ r(L)  =  S_ent(L) / (L * ln chi_eff(L))            (in 2D)     (C-8.1)
 r(L)  =  S_ent(L) / (L^{d-1} * ln chi_eff(L))    (in d dims).  (C-8.2)
 ```
 
-This is the **only** dimensionless number this no-go is about. It is
-fully determined by the data (C-2)-(C-7); no external lane authority
-is needed to specify any of the seven inputs.
+This is the **only** dimensionless number this narrowed packet is about.
+It is fully determined by the data (C-2)-(C-7); no external lane
+authority is needed to specify any of the seven inputs.
 
 ## Safe statement (narrowed)
 
-Let `r(L)` be defined exactly by (C-1)-(C-8) above. Then
+Let `r(L)` be defined exactly by (C-1)-(C-8) above. The retained
+safe statement in this packet is finite:
 
-```
-                                              1      integral over
-        lim  r(L)  =  c_Widom  =  -----------------  * Fermi surface of
-       L->inf                     12 (2 pi)^{d-1}    |n_x . n_k| dS_k
-```
-
-by the Widom-Gioev-Klich theorem for free fermions (Gioev-Klich 2006;
-Helling-Leschke-Spitzer 2011), where `n_x = (1, 0, ..., 0)` is the
-straight-cut normal in the (C-5) bipartition.
+- the 2D diamond Widom coefficient evaluates exactly to `1/6` for the
+  half-filled square-lattice Fermi surface and straight cut;
+- the paired runner gives finite-`L <= 64` numerical-fit evidence
+  against the exact `1/4` ratio on the stated OBC carrier and threshold;
+- the all-`L` bridge from the carrier and thresholded `chi_eff` readout
+  to `lim_L r(L) = c_Widom` is open admission OA-1/OA-2, not retained
+  by this packet.
 
 On the 2D square-lattice half-filled Fermi surface (the diamond
 `|k_x| + |k_y| = pi`):
@@ -275,33 +329,23 @@ On the 2D square-lattice half-filled Fermi surface (the diamond
         c_Widom(2D, diamond, straight cut) = 1 / 6
 ```
 
-exactly (see Section "What is proved", Step 2). The 3D cubic half-
-filled analogue gives `c_Widom(3D) ~ 0.105`. In particular, on every
-geometry that the carrier (C-1)-(C-8) presents,
+exactly (see Section "What is proved", Step 2). The 3D cubic
+half-filled analogue gives `c_Widom(3D) ~ 0.105` as a numerical
+consistency check, but no 3D all-`L` no-go is retained here.
 
-```
-        c_Widom  !=  1 / 4.
-```
+**Finite conclusion.** On the self-contained carrier (C-1)-(C-8), the
+in-packet runner supports the statement that the tested finite range
+`L <= 64` is inconsistent with an exact `1/4` RT ratio under the stated
+fit/readout protocol. The stronger asymptotic statement is deferred to
+future work that supplies OA-1 and OA-2.
 
-**Conclusion of the no-go.** On the self-contained carrier (C-1)-(C-8),
-the asymptotic value of `r(L)` is `c_Widom` (`= 1/6` in 2D), not
-`1/4`. The finite-`L` agreement `r(L) ~ 0.24` at `L <= 32` is therefore
-a finite-`L` artifact of the descending `a / ln L` correction, not
-an exact RT identification.
+## Open self-contained carrier bridge
 
-This statement is **independent of any downstream lane**. Any
-publication-surface claim that a downstream lane "derives `1/4`" via the
-RT bond-dimension ratio on a carrier matching (C-1)-(C-8) is false;
-the asymptotic is `c_Widom`.
-
-## Self-contained carrier bridge
-
-The audit-driven repair of 2026-05-10 demands that the carrier
-(C-1)-(C-8) be matched to the Widom-Gioev-Klich asymptotic theorem
-*without* importing any specification from another note. The bridge
-below uses only Bloch theory of free fermions on `Z^d` and the
-classical Widom-Sobolev-Gioev-Klich-Helling-Leschke-Spitzer theorem
-already cited in this packet.
+The audit-driven repair of 2026-05-10 demanded a self-contained
+carrier-to-Widom asymptotic bridge. The following subsections record the
+proposed route and identify which pieces are exact versus open. They are
+not retained as an all-`L` asymptotic proof by this packet; OA-1 and OA-2
+above name the missing uniform OBC-lattice and threshold-rank work.
 
 **Bridge step B-1 (carrier symbol identification).** The
 nearest-neighbor tight-binding Hamiltonian of (C-2) on the infinite-
@@ -344,13 +388,11 @@ S_Omega(L; F) = (1 / (12 (2 pi)^{d-1}))
 ```
 
 uniformly in the volume `L^d` and over Lipschitz domains `Omega`.
-This is Theorem 1.1 of Helling-Leschke-Spitzer 2011 (the rigorous
-proof of the Widom 1982 / Gioev-Klich 2006 conjecture on `R^d`); the
-specialization to the lattice setup (C-1)-(C-6) is direct via
-restriction of the Bloch correlation kernel to the integer lattice
-and the bilinear nature of `C` in the half-filled Slater determinant.
-No additional carrier-specific hypothesis is required beyond
-(C-1)-(C-6).
+This is Theorem 1.1 of Helling-Leschke-Spitzer 2011 (the rigorous proof
+of the Widom 1982 / Gioev-Klich 2006 conjecture on `R^d`). The
+specialization to the OBC lattice setup (C-1)-(C-6) with explicit
+uniform error bounds is the open OA-1 bridge, not a retained conclusion
+of this packet.
 
 **Bridge step B-3 (chi_eff = L scaling, intrinsic).** The transfer
 rank (C-7) on a half-filled free-fermion ground state is determined
@@ -371,7 +413,8 @@ chi_eff(L) = L^{d-1} (1 + o(1))                                (B-3.1)
 ln chi_eff(L) = (d-1) ln L (1 + o(1)).                         (B-3.2)
 ```
 
-This is intrinsic to the carrier (C-1)-(C-7); no lane import.
+This would be intrinsic to the carrier (C-1)-(C-7) once proved, but the
+uniform threshold-rank bridge is OA-2 and remains open in this packet.
 
 **Bridge step B-4 (carrier-Widom match).** Combining (W-1), (B-1.2),
 (C-5), and (B-3) on the carrier (C-1)-(C-8):
@@ -397,18 +440,17 @@ In `d = 3` the analogous combination gives `r(L) -> c_Widom(3D) /
 (numerator `L^{d-1} ln L = L^2 ln L`, denominator `L^{d-1} *
 ln chi_eff = L^2 * (d-1) ln L = 2 L^2 ln L`). With `c_Widom(3D)
 ~ 0.105`, this gives `r_inf(3D) ~ 0.053`, comfortably distinct
-from `1/4 = 0.25`. The 2D verdict (B-4.4) is load-bearing for this
-no-go; 3D numerics serve as consistency checks.
+from `1/4 = 0.25`. These are open asymptotic consequences conditional
+on OA-1/OA-2, not retained no-go statements in this packet.
 
-**The bridge (B-1)-(B-4) closes the carrier-Widom match using only
-material that is intrinsic to (C-1)-(C-8) plus the cited classical
-Widom-Sobolev-Gioev-Klich-Helling-Leschke-Spitzer theorem.** No
-import from `BH_ENTROPY_DERIVED_NOTE.md` (or any other lane note) is
-load-bearing.
+The proposed bridge (B-1)-(B-4) no longer imports from
+`BH_ENTROPY_DERIVED_NOTE.md` (or any other lane note), but the
+carrier-Widom all-`L` match still requires the missing OA-1/OA-2 proof
+work before it can become retained-grade.
 
 ## What is proved
 
-Exact, on the self-contained carrier (C-1)-(C-8):
+Retained within this packet, on the self-contained carrier (C-1)-(C-8):
 
 1. The Widom-Gioev-Klich theorem for free fermions in `d >= 1` gives
 
@@ -437,24 +479,30 @@ Exact, on the self-contained carrier (C-1)-(C-8):
 
        c_Widom(2D) = (1 / (12 * 2 pi)) * 4 pi = 1 / 6.
 
-3. In the ratio
+3. Deferred from retained scope: in the ratio
    `r(L) = S_ent(L) / (L * ln chi_eff(L))` (definition (C-8)) with
-   `chi_eff = L` (the boundary-layer rank derived intrinsically in
-   bridge step (B-3)), both `S_ent` and `L * ln chi_eff = L * ln L`
-   scale as `L * ln L` to leading order, so
+   `chi_eff = L`, both `S_ent` and `L * ln chi_eff = L * ln L`
+   would scale as `L * ln L` to leading order if OA-1/OA-2 were
+   supplied, so
 
        r(L)  =  c_Widom + a / ln L + b / L + ...
              ->  c_Widom  =  1 / 6    as L -> inf.
 
-4. Numerical verification on `L = 8, 12, ..., 64` (dense `eigh`, OBC, half
-   filling, straight cut) shows `r(L)` decreasing monotonically for
-   `L >= 28` from `r(28) = 0.2232` to `r(64) = 0.2112`, with the
-   two-parameter fit `r(L) = c_inf + a / ln L` over `L >= 32` giving
-   `c_inf = 0.1601`, which agrees with `1 / 6 = 0.1667` to `3.94%` and
-   disagrees with `1 / 4` by `35.96%`. At the extended range `L <= 96`
-   (see `scripts/probe_bh_rt_ratio_asymptotic.py`), `r(L=96) = 0.2059`,
-   and the `L >= 48` fit gives `c_inf = 0.163`, agreeing with `1/6`
-   to `2.1%` and disagreeing with `1/4` by `35%`.
+   This asymptotic conclusion is not retained by the current packet.
+
+4. Numerical-fit evidence on `L = 8, 12, ..., 64` (dense `eigh`, OBC,
+   half filling, straight cut; runner cache in packet) shows `r(L)`
+   decreasing monotonically for `L >= 28` from `r(28) = 0.2232` to
+   `r(64) = 0.2112`, with the two-parameter fit
+   `r(L) = c_inf + a / ln L` over `L >= 32` giving `c_inf = 0.1601`,
+   which agrees with `1 / 6 = 0.1667` to `3.94%` and disagrees with
+   `1 / 4` by `35.96%`. This is a finite-`L` numerical fit check at
+   `L ≤ 64`, not a proof of the asymptotic statement. The extended
+   `L <= 96` probe (via `scripts/probe_bh_rt_ratio_asymptotic.py`)
+   is **explicitly deferred** as cache-not-in-packet (see "Deferred
+   (cache-not-in-packet)" above); any L ≤ 96 numerical claim is
+   pending a future runner extension that bundles the probe cache
+   into this packet.
 
 5. On the 3D analogue of the carrier (C-1)-(C-8) (cubic lattice
    `Lambda_L^{(3)}`, `L = 4, 6, 8, 10`) the RT ratio is further from
@@ -490,12 +538,12 @@ This note does **not** claim:
   preclude such alternative carriers; it precludes only the specific
   RT-bond-dimension route inside the carrier class (C-1)-(C-8).
 - that the bridge (B-1)-(B-4) closes the *physical* identification
-  `S_lat = S_BH` for any specific lane. It closes only the
+  `S_lat = S_BH` for any specific lane, or even the all-`L`
   asymptotic value of the dimensionless RT ratio (C-8) on
   (C-1)-(C-8). Any lane that wishes to identify `S_lat` with `S_BH`
-  must supply its own lane-specific identification step; this no-go
-  blocks the specific identification "RT ratio asymptote = `1/4`"
-  inside (C-1)-(C-8).
+  must supply its own lane-specific identification step; any lane that
+  wants to use this carrier as an all-`L` obstacle to exact `1/4` must
+  first close OA-1/OA-2.
 
 ## Why it matters on `main`
 
@@ -503,26 +551,25 @@ The BH entropy lane is currently carried as a **bounded companion** in
 `PUBLICATION_MATRIX.md` and
 `CLAIMS_TABLE.md` on the basis of an
 observed numerical RT ratio `~0.24` on lattices up to `L = 32`, explained as
-"expected regulator dependence". This note closes the question properly: the
-actual asymptotic value *is* regulator-determined, and it is `c_Widom = 1/6`
-on the self-contained carrier (C-1)-(C-8), not `1/4`. Any downstream lane
-whose carrier coincides with (C-1)-(C-8) inherits this conclusion as a
-matter of mathematical fact.
+"expected regulator dependence". This narrowed note does not close the
+all-`L` question. It records the exact 2D Widom coefficient and the
+finite-`L <= 64` numerical-fit evidence showing that the current
+in-packet carrier/readout does not establish an exact `1/4` ratio.
+Any downstream lane whose carrier coincides with (C-1)-(C-8) inherits
+this bounded obstacle, while the all-`L` no-go awaits OA-1/OA-2.
 
 Concrete consequences for the publication surface:
 
-- the existing bounded companion row remains bounded, with this no-go
-  cited as the reason it cannot be promoted while its carrier coincides
-  with (C-1)-(C-8)
+- the existing bounded companion row remains bounded, with this finite
+  evidence and the open OA-1/OA-2 bridge cited as the reason it cannot
+  be promoted while its carrier coincides with (C-1)-(C-8)
 - the row's "5.4% deviation" framing on `L <= 32` is replaced by the
-  sharper statement "asymptotic value is `c_Widom = 1/6`, which is
-  `~33%` below `1/4`; the current lattice numbers are finite-`L` artifacts"
+  narrower statement "the `L <= 64` in-packet runner fits toward
+  `c_inf = 0.1601`, which is 35.96% from `1/4`; the all-`L` bridge
+  remains open"
 - any future attempt to promote a free-fermion BH-entropy-from-RT lane
-  needs to change either the carrier (a different Fermi surface,
-  dispersion, or filling that yields a *different* `c_Widom`) or the
-  readout (not the bond-dimension RT ratio); the no-go is a hard
-  obstacle inside the carrier class (C-1)-(C-8) and is not weakened by
-  any change downstream of it
+  needs either to close OA-1/OA-2 on this carrier/readout or change the
+  carrier/readout and re-evaluate the coefficient.
 
 ## Classical results applied
 
@@ -540,17 +587,19 @@ Concrete consequences for the publication surface:
   packet: open-boundary square (or cubic) lattice, NN-hopping
   Hamiltonian, half-filled Slater determinant, straight cut, transfer
   rank from the layer-coupling submatrix of `C`, RT ratio (C-8)
-- self-contained carrier-Widom bridge (B-1)-(B-4): Bloch
+- proposed self-contained carrier-Widom bridge (B-1)-(B-4): Bloch
   diagonalization of (C-2) gives the diamond (2D) / hyperplane (3D)
   Fermi surface (B-1.2); free-fermion entanglement entropy reduces to
   the truncated Wiener-Hopf operator whose asymptotic spectrum is
-  governed by Widom-Gioev-Klich (B-2); transfer rank saturates the
-  boundary layer dimension (B-3); their combination yields (B-4.4)
+  governed by Widom-Gioev-Klich (B-2); transfer rank saturation of the
+  boundary layer dimension is open (B-3 / OA-2); their combination
+  would yield (B-4.4) after OA-1/OA-2 are supplied
 - explicit evaluation of the Widom integral for the diamond
   (`2D`, exact `1/6`) and its 3D analogue (Monte Carlo `~0.105`)
-- explicit statement that on the self-contained carrier (C-1)-(C-8),
-  `lim_L r(L) = c_Widom != 1/4`; conclusion is intrinsic, not
-  imported
+- explicit statement that the all-`L` conclusion
+  `lim_L r(L) = c_Widom != 1/4` is deferred pending OA-1/OA-2; the
+  retained content is finite-`L <= 64` numerical-fit evidence plus the
+  exact 2D Widom coefficient calculation
 
 ## Verification
 
@@ -569,37 +618,40 @@ import from `BH_ENTROPY_DERIVED_NOTE.md` or any other lane note), and:
 3. measures `r(L)` on the OBC `L x L` lattice for `L` up to `64`
    (about 13 s on a laptop)
 4. fits `r(L) = c_inf + a / ln L` on `L >= 32` and reports `c_inf`
-5. compares `c_inf` against `1/6` (predicted by (B-4.4)) and `1/4` (the
-   hypothesized lane-claim asymptote that this no-go is rejecting)
+5. compares `c_inf` against `1/6` (the exact 2D Widom coefficient) and
+   `1/4` (the hypothesized lane-claim coefficient)
 6. passes iff `|c_inf - 1/6| / (1/6) < 0.10` and
-   `|c_inf - 1/4| / (1/4) > 0.20` (asymptote is Widom, not 1/4)
+   `|c_inf - 1/4| / (1/4) > 0.20` for the finite-`L <= 64` fit
 
 Current runner output: `PASS = 11, FAIL = 0`, with `c_inf(L>=32) = 0.1601`
 (3.94% below 1/6, 35.96% below 1/4).
 
-Extended L-range confirmation is available via
-`scripts/probe_bh_rt_ratio_asymptotic.py` (L up to 96, ~3 min), which
-runs the same two-parameter fit `RT(L) = c_inf + a / ln L` on its
-`L >= 48` tail window and exits `0` (verdict PASS) with
-`c_inf = 0.163` (2.1% below 1/6, 34.7% below 1/4).  The probe also
-prints alternative three-parameter fits over shorter tail windows
-for transparency; those are higher-variance on this L range and are
-not used as the verdict.
+Extended `L <= 96` probe via
+`scripts/probe_bh_rt_ratio_asymptotic.py` (L up to 96, ~3 min) is
+available but its cache is **not bundled** in the current audit
+packet, so any claim sourced from the probe is **explicitly
+deferred** from the retained scope of this note per the 2026-05-25
+narrowing. The retained finite-`L` numerical-fit evidence is the
+in-packet runner cache (`L <= 64`) only. Re-shipping the probe cache
+inside this packet (a future runner extension) is the named
+condition for any L ≤ 96 claim to re-enter the retained scope.
 
 ## Relation to the current BH entropy lane
 
 The dependency direction between this no-go and the bounded BH entropy
 companion is now explicit and one-directional, **upstream-to-downstream**:
 
-- this no-go is logically prior. Its mathematical content (the carrier
-  (C-1)-(C-8), the bridge (B-1)-(B-4), the Widom-coefficient
-  evaluations) is fully contained inside this packet. It does not
-  depend on `BH_ENTROPY_DERIVED_NOTE.md` for any load-bearing input.
+- this narrowed packet is logically prior for its finite content. Its
+  mathematical content (the carrier (C-1)-(C-8), the exact
+  Widom-coefficient evaluation, and finite-`L <= 64` runner evidence)
+  is fully contained inside this packet. It does not depend on
+  `BH_ENTROPY_DERIVED_NOTE.md` for any load-bearing input.
 - the bounded companion authority
   `BH_ENTROPY_DERIVED_NOTE.md` is
-  downstream: its carrier coincides with (C-1)-(C-8), so the no-go's
-  conclusion `lim_L r(L) = c_Widom != 1/4` *applies to it*. The
-  bounded lane therefore stays bounded because of this no-go.
+  downstream: its carrier coincides with (C-1)-(C-8), so this packet's
+  finite evidence and open OA-1/OA-2 all-`L` bridge are blockers to
+  promotion. The bounded lane therefore stays bounded unless OA-1/OA-2
+  close or the carrier/readout changes.
 - the bounded companion cites this no-go in its prose. **This no-go
   does not cite the bounded companion as authority.** The 2026-05-10
   rigorization removed the load-bearing carrier import and replaced
@@ -617,12 +669,13 @@ Safe manuscript wording (if the no-go is referenced):
 > On the half-filled NN-hopping free-fermion carrier on the open-boundary
 > square lattice with a straight cut and bond-rank `chi_eff = L` (the
 > carrier (C-1)-(C-8) of `BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`),
-> the RT bond-dimension ratio has asymptotic value `c_Widom = 1/6` by
-> the Widom-Gioev-Klich theorem, not `1/4`. The earlier finite-lattice
-> value `~0.24` is a small-`L` artifact. The framework therefore does
-> not derive the coefficient `1/4` in `S_BH = A / (4 l_P^2)` from
-> free-fermion entanglement on this carrier; any lane whose carrier
-> coincides with (C-1)-(C-8) inherits this no-go and remains bounded.
+> the in-packet `L <= 64` RT bond-dimension fit gives
+> `c_inf = 0.1601`, close to the exact 2D diamond Widom coefficient
+> `1/6` and far from `1/4`. The all-`L` bridge from this OBC carrier
+> and thresholded `chi_eff` readout to `lim_L r(L) = c_Widom` remains
+> open pending a uniform lattice/Widom and threshold-rank proof. The
+> framework therefore has not derived the coefficient `1/4` in
+> `S_BH = A / (4 l_P^2)` from free-fermion entanglement on this carrier.
 
 Explicitly unsafe wording:
 

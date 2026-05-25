@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 160 |
+| **retained_no_go** | 161 |
 | **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 740 |
+| `audited_clean` | 741 |
 | `audited_conditional` | 112 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1452 |
+| `unaudited` | 1451 |
 
 | claim_type | count |
 |---|---:|
@@ -859,6 +859,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_top_coefficient_full_court_press_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14083,6 +14084,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_top_coefficient_full_court_press_note_2026-05-25`
+
+- **Note:** [`YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md`](../../docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audited claim is the narrow negative boundary that carrier, W/Z denominator response, and one-Higgs gauge/operator selection do not determine the top Yukawa coefficient y_33.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201939Z-716bec50-yt_top_coefficient_full_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A one-dimensional gauge intertwiner fixes the up-type Yukawa operator only up to an arbitrary scalar, and for three generations gauge symmetry leaves the entries of Y_u, including y_33, as continuous moduli.  _(class `A`)_
+- **chain closes:** True — The algebra in the packet shows the top/W response ratio retains an arbitrary numerator coefficient and the gauge/operator constraints do not contain y_33. The closure is only for the current structural route, while direct response, signed-linear tangent, democratic source-response, and new flavor-principle routes remain live.
+- **rationale:** The runner source does not hard-code a top Yukawa value or import an observed mass; its load-bearing computation is the symbolic underdetermination check that y_33 remains arbitrary under the displayed constraints. The note's negative wording is scoped to carrier + W/Z + one-Higgs gauge-selection algebra and explicitly preserves the live measurement and new-principle routes. The No-Go Discipline gate passes within the restricted packet: N1 names more than five attack routes, N2 collapses the walls to the single top-coefficient residual, N3-N6 keep live bridges explicit, and N7-N8 do not defeat the narrow no-go.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_derivation_theorem`

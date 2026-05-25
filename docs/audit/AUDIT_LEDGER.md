@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 145 |
 | **retained_no_go** | 156 |
-| **retained_bounded** | 440 |
+| **retained_bounded** | 441 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1239 |
+| unaudited | 1238 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 716 |
+| `audited_clean` | 717 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 39 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1466 |
+| `unaudited` | 1465 |
 
 | claim_type | count |
 |---|---:|
@@ -616,6 +616,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -9518,6 +9519,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Determinant-magnitude positivity is constant on S_3 (trivial representation) and selects all of S_3, while sgn(σ)=+1 has level set A_3=C_3.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from retained determinant positivity, retained S_3 axis-symmetry/gauge-equivalence, and elementary finite S_3 sign/trivial representation theory. The note correctly leaves the physical derivation of any orientation-sign positivity as open and outside this claim.
 - **rationale:** The load-bearing step is algebraic group/linear-algebra closure over retained-grade cited inputs, not a numerical match, external comparator, or renaming. The runner genuinely constructs the free staggered operator for representative S_3 orderings and separately checks the permutation determinant sign representation; it does not merely print constants. No-Go gate passes for the bounded negative boundary: the packet distinguishes determinant magnitude, determinant sign/phase on a positive determinant surface, axis relabeling, per-site chirality, and the still-open global orientation-sign bridge, so the residual is narrowed to the determinant-magnitude route only.
+- **auditor confidence:** high
+
+### `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`POSITIVITY_ORIENTATION_SELECTS_C3_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/POSITIVITY_ORIENTATION_SELECTS_C3_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded group-theory claim that an assumed orientation-preserving subgroup criterion on the S_3 action on C^3 selects C_3 = A_3 and that generic C_3-invariant Hermitian operators can have three distinct eigenvalues.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T123217Z-be8df3a5-positivity_orientation_s-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The det=+1 elements of the S_3 permutation representation are exactly A_3 = C_3 = {id, (012), (021)}, while the transpositions have det=-1.  _(class `A`)_
+- **chain closes:** True — The determinant signs, subgroup closure, and generic degeneracy lift are standard finite-group and linear-algebra facts and are directly checked by the runner. The physical bridge from the framework's positivity principle to this orientation criterion is explicitly excluded from the audited claim.
+- **rationale:** The runner genuinely computes permutation matrices, restricted E-block determinants, subgroup closure, and a C_3-averaged Hermitian example rather than merely printing constants. The audited claim is conditional and bounded: it proves selection by an admitted determinant-orientation criterion, not that the framework's positivity principle supplies that criterion. Within that stated scope, the chain closes by algebraic identity checks and contains no external numerical comparator, fitted input, or hidden upstream authority.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

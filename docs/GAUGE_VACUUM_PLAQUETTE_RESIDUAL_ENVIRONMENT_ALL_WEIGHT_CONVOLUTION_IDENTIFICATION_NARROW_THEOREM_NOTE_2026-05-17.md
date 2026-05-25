@@ -160,15 +160,31 @@ Z_beta^env(W) = z_(0,0)^env(beta) sum_{(p,q) in P_+(SU(3))}
                 d_(p,q) rho_(p,q)^env(beta) chi_(p,q)(W)                     (T2)
 ```
 
-with `z_(0,0)^env(beta) > 0`, `rho_(0,0)^env(beta) = 1`,
+with `z_(0,0)^env(beta) > 0` an **arbitrary positive normalization
+scale** (the overall positive normalization left free by `(D2)`, not
+fixed by (I1)+(I2)+(I3)), `rho_(0,0)^env(beta) = 1`,
 `rho_(p,q)^env(beta) >= 0`, and `rho_(p,q)^env(beta) = rho_(q,p)^env(beta)`.
+The scale `z_(0,0)^env(beta)` is **distinct from** the Peter-Weyl
+trivial-rep eigenvalue `kappa_(0,0)(beta)` of `D_beta` (cf. (I1)); the
+two coincide only when the additional normalization hypothesis
+`kappa_(0,0)(beta) = 1` (out-of-scope here; see `(KN)` below) is
+supplied.
 
 **Conclusion (T3) (per-weight structural identification at all weights,
 unnormalized form).** Under (I1), (I2), (I3), at every weight
 `(p, q) in P_+(SU(3))` the eigenvalue of `R_beta^env` on `chi_(p,q)`
 equals the eigenvalue of the **unnormalized** central convolution
 operator `C_(Z_beta^env)` on the same basis element, divided by the
-positive scalar `z_(0,0)^env(beta)`:
+positive scalar `z_(0,0)^env(beta)`. The divisor `z_(0,0)^env(beta)`
+appearing in `(T3)` is an **arbitrary positive normalization scale** for
+the boundary class function `Z_beta^env(W)` (the overall positive
+normalization left free by `(D2)`); it is **distinct** from the
+Peter-Weyl trivial-rep eigenvalue `kappa_(0,0)(beta)` of `D_beta`.
+Dividing by the actual Peter-Weyl trivial coefficient `kappa_(0,0)(beta)`
+would normalize the convolution eigenvalue at the trivial weight
+`(0, 0)` to `1` (i.e. would supply `(KN)` below); the divisor in `(T3)`
+does **not** do this — it is a separate normalization choice for
+`Z_beta^env` that leaves `kappa_(0,0)(beta)` unfixed:
 
 ```text
 R_beta^env chi_(p,q)

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 455 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1243 |
+| unaudited | 1242 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 98 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 735 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 98 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1472 |
+| `unaudited` | 1471 |
 
 | claim_type | count |
 |---|---:|
@@ -923,6 +923,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `rconn_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9687,6 +9688,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Any tracial state on A restricts to the normalized trace on every finite-region matrix algebra, so it agrees with τ∞ on the dense local subalgebra and norm-continuity extends the equality to all of A.  _(class `A`)_
 - **chain closes:** True — The cited axiom premise supplies the per-site M_2(C) algebra and Z^3 lattice, and the note's finite-region uniqueness plus compatibility, density, and state-continuity argument proves uniqueness on the inductive-limit algebra. No open identification is needed for the unique-trace theorem itself.
 - **rationale:** The load-bearing step is a standard algebraic/operator-algebra closure: restrictions of an arbitrary tracial state to each finite matrix algebra are uniquely normalized traces, and equality on the dense local union extends by boundedness of states. The only upstream authority is explicitly flagged as an accepted axiom premise, so it does not trigger the non-retained downgrade. The later identification with ρ_ref is described as a connection and does not bear on the audited unique-tracial-state theorem.
+- **auditor confidence:** high
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Unique tracial-state characterization on the one-qubit M_2(C) algebra over the Z^3 quasi-local UHF type 2^∞ substrate; the pre-record reference-state identification is excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T194049Z-7d852ff0-pre_record_reference_sta-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The UHF C*-algebra of type 2^∞ admits a unique tracial state, obtained as the inductive limit of the finite normalized traces, with finite-region density matrices ⊗_x I/2.  _(class `A`)_
+- **chain closes:** False — The operator-algebra theorem itself closes from the one-qubit Z^3 substrate plus standard finite-dimensional and UHF trace uniqueness. Audit-level closure is blocked because the packet lists A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md as a load-bearing cited authority with effective_status meta, not retained-grade or axiom_premise.
+- **rationale:** Steps 1-4 are standard operator-algebra mathematics and are not a definition substitution or numerical match. The demoted Step 5 pre-record identification was not credited as part of the scoped claim. However, one cited load-bearing authority is non-retained-grade and lacks the axiom_premise carve-out, so the restricted packet does not meet the rubric for audited_clean.
+- **open / conditional deps cited:**
+  - `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

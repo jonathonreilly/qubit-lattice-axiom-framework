@@ -1,20 +1,22 @@
 # Higgs Mechanism Note
 
 **Date:** 2026-04-15 (2026-05-18: claim_scope narrowed to conditional
-mechanism-level consistency per audit verdict boundary instruction).
+mechanism-level consistency per audit verdict boundary instruction;
+2026-05-25: previously-enumerated residuals collapsed to a single
+admitted scalar/CW/bare-parameter bridge per the per-site audit N1/N2
+verdict).
 **Status:** mechanism-level support only
 **Claim type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
-of this note is **conditional mechanism-level consistency only** — the
-lattice admits a scalar order-parameter surface relevant to EWSB, and
-lattice Coleman-Weinberg electroweak symmetry breaking occurs
-naturally for `O(1)` comparison inputs on the current bounded runner.
+**Claim scope (post-2026-05-25 consolidation):** the load-bearing
+content of this note is **conditional mechanism-level consistency
+only** — assuming the single admitted scalar/CW/bare-parameter bridge
+(see "Single Admitted Bridge" section below), the bounded runner
+supports lattice Coleman-Weinberg electroweak symmetry breaking for
+`O(1)` comparison inputs. The bounded-consistency claim is restricted
+to comparison of imported `lambda` and `m^2` values against runner
+output; it is **not** a derivation of those values from Cl(3)/Z^3.
 This note **does NOT** claim that the Higgs mechanism is derived as an
-audited theorem from the framework axioms; the audit verdict's repair
-target ("provide retained-grade derivations of the scalar
-order-parameter, the Coleman-Weinberg potential bridge, and the
-EWSB-from-Cl(3)/Z^3 chain") remains a separate open work item not in
-the load-bearing scope of this note. Authority for any specific
+audited theorem from the framework axioms. Authority for any specific
 Higgs-mass numerical readout is delegated to
 `HIGGS_MASS_DERIVED_NOTE.md` (see-also delegation pointer; backticked to
 break cycle-0030 in the citation graph — load-bearing citation direction is
@@ -35,38 +37,59 @@ claim.
 
 ## Safe Statement
 
-The current package supports the following mechanism-level claims:
+The current package supports the following mechanism-level claims,
+conditional on the single admitted bridge enumerated below:
 
 - the lattice admits a scalar order-parameter surface relevant to EWSB
+  (carrier identification admitted, not derived in this packet)
 - lattice Coleman-Weinberg electroweak symmetry breaking occurs naturally for
   `O(1)` comparison inputs on the current bounded runner
 - the physical lattice cutoff removes the continuum quadratic-divergence
   naturalness story as the organizing Higgs problem
 
+## Single Admitted Bridge
+
+Per the 2026-05-22 per-site audit verdict (N1/N2 No-Go Discipline
+gate), the previously-enumerated residual obstructions
+(scalar-order-parameter derivation; Coleman-Weinberg potential bridge;
+EWSB-from-Cl(3)/Z^3 chain; framework-native derivation of
+`lambda(M_Pl) = 0`; exact `m_H = 125 GeV` closure) are **not**
+independent walls. They collapse to a single admitted bridge:
+
+- **scalar potential / Coleman-Weinberg / bare-parameter substrate
+  (Cl(3)/Z^3 derivation not provided in this packet).** The runner
+  assumes the Higgs-field variable and imports comparison inputs
+  including `lambda` and `m^2` as bare values. Until this single
+  bridge is derived as a retained-grade theorem, every named residual
+  above remains open by construction, and the mechanism-level claim
+  is conditional on the bridge.
+
+This consolidation is bookkeeping only; it does not promote any claim
+or change the audited scope.
+
 ## Boundary
 
-This note does **not** claim exact Higgs-mass closure.
+This note does **not** claim exact Higgs-mass closure, and the
+bounded-consistency claim is **restricted to comparison** of imported
+`lambda` and `m^2` against runner output (not a derivation of those
+values from Cl(3)/Z^3).
 
-It supports:
+It supports, conditional on the single admitted bridge above:
 
-- Higgs mechanism derived
-- hierarchy problem structurally ameliorated
+- a mechanism-level Higgs route consistent with bounded CW EWSB
+- hierarchy problem structurally ameliorated by the physical lattice cutoff
 
-It does not support:
+It does not support (all collapsing to the single admitted bridge):
 
 - exact `m_H = 125 GeV`
-- one final theorem-grade Higgs route
-- a framework-native derivation of `lambda(M_Pl) = 0` (Gap #7
-  clarification, 2026-05-10): the earlier "composite-Higgs /
-  no-elementary-scalar" slogan is not theorem-grade; the cycle-20
-  stretch attempt (`docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md`;
-  file-pointer context, not a dependency edge)
-  remains open with three named residual obstructions, including the
-  NJL/BHL composite-scalar obstruction. The
-  boundary-condition derivation is OPEN; downstream notes consume
-  `lambda(M_Pl) = 0` as admitted-context literature-standard input
-  on equal footing with Buttazzo / Degrassi SM analyses. File pointer:
-  `docs/VACUUM_CRITICAL_STABILITY_NOTE.md` records the open-gate audit.
+- a theorem-grade closure of the Higgs route from the framework axioms
+- a framework-native derivation of `lambda(M_Pl) = 0`. File pointers
+  for the open-gate context (not dependency edges): the cycle-20
+  stretch attempt at `docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md`,
+  and the open-gate audit recorded at
+  `docs/VACUUM_CRITICAL_STABILITY_NOTE.md`. Downstream notes consume
+  `lambda(M_Pl) = 0` as admitted-context literature-standard input on
+  equal footing with Buttazzo / Degrassi SM analyses.
 
 <!--
 Cycle-break (2026-05-06): the "Audit dependency repair links" back-edge

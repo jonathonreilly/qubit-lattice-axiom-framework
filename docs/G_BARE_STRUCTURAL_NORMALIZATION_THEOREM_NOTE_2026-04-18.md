@@ -3,11 +3,12 @@
 **Date:** 2026-04-18 (bounded source hardening 2026-05-24)
 **Type:** bounded_theorem
 **Script:** `scripts/frontier_g_bare_structural_normalization.py`
-**Status:** bounded - structural-normalization support conditional on the
-            admitted Wilson plaquette action form and continuum kinetic
-            matching convention. This note does not assign an audit verdict;
-            independent audit owns `claim_type`, `audit_status`, and any
-            effective `retained_bounded` propagation.
+**Status:** bounded - self-contained structural-normalization support
+            conditional on the admitted Wilson plaquette action form and
+            continuum kinetic matching convention. This note does not assign
+            an audit verdict; independent audit owns `claim_type`,
+            `audit_status`, and any effective `retained_bounded`
+            propagation.
 
 ---
 
@@ -46,7 +47,7 @@ convention are supplied.
     `(1/g^2) F^2` kinetic term only if `beta = 2 N_c / g^2`.
   - (3b) In the *canonical Cl(3) basis*, `g = 1` corresponds to the absence
     of a scalar rescaling of the canonically-fixed generators (Claim 1 + 2
-    support).
+    support plus the direct trace-Gram scalar-dilation check below).
   - (3c) Therefore `beta = 2 N_c = 6`.
 
   What does NOT close: the Wilson action `S = -beta Re Tr(U_plaq)` is not
@@ -71,9 +72,6 @@ supplied Wilson action form and kinetic matching convention.
 
 This theorem builds on:
 
-- [G_BARE_RIGIDITY_THEOREM_NOTE.md](./G_BARE_RIGIDITY_THEOREM_NOTE.md) --
-  supports: given concrete `su(3) ⊂ End(V)` with canonical trace form, no
-  scalar dilation `T_a -> lambda T_a` is allowed.
 - [G_BARE_DERIVATION_NOTE.md](./G_BARE_DERIVATION_NOTE.md) -- bounded
   Cl(3) normalization argument, flagged as convention-vs-constraint.
 - [NATIVE_GAUGE_CLOSURE_NOTE.md](./NATIVE_GAUGE_CLOSURE_NOTE.md) -- native
@@ -87,13 +85,13 @@ This theorem builds on:
 - `.claude/science/derivations/native-gauge-family-uniqueness-2026-04-17.md`
   -- `Lambda^2(R^n)` is the unique `O(n)`-covariant admissible bivector
   subspace.
-- [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](./PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-  -- current Wilson plaquette `beta = 6` evaluation surface.
 
-The existing rigidity theorem supports step B (no scalar dilation of
-generators). The present note records bounded support for step A (canonicity
-of the Cl(3) -> End(V) embedding) and step C (propagation to the Wilson
-coefficient).
+The no-scalar-dilation step is checked directly in this note and runner:
+`T_a -> lambda T_a` changes the fixed trace Gram matrix by `lambda^2` and is
+therefore not an automorphism of the canonical normalized generator basis.
+The downstream plaquette-observable evaluation row is not load-bearing here;
+it consumes the `beta = 6` boundary after this structural-normalization
+argument, rather than supplying it.
 
 ---
 
@@ -296,8 +294,9 @@ the connection as `A = sum_a A^a T_a` with *no additional `g` factor*
 is the direct Cl(3)-native description. Any alternative convention
 `A = g sum_a A^a T_a` with `g != 1` either:
 
-- rescales the generators `T_a -> g T_a` (forbidden by Claim 2 / existing
-  rigidity theorem), or
+- rescales the generators `T_a -> g T_a` (forbidden by the fixed trace form in
+  Claim 2; the runner explicitly checks that scalar dilation changes the
+  canonical Gram matrix), or
 - rescales the coefficients `A^a -> g A^a` (a change of coordinates on
   the *same* operator `A`, not a new physical parameter).
 
@@ -312,7 +311,7 @@ coefficient interpretation.
 - Given the Wilson action form `-beta Re Tr(U_p)` and canonical generators,
   `beta = 2 N_c / g^2` follows.
 - In the canonical Cl(3) basis, `g = 1` is supported by structural rigidity
-  (Claims 1 + 2 + existing rigidity theorem).
+  (Claims 1 + 2 plus the direct scalar-dilation exclusion).
 - Hence `beta = 6` is not an independent free parameter on the bounded
   Cl(3) Wilson-evaluation surface.
 
@@ -340,13 +339,13 @@ coefficient interpretation.
 
 **Circularity audit for Claim 3.**
 
-- Step (3.a) uses only `Tr(T_a T_b) = delta_{ab}/2` (Claim 2 + existing
-  rigidity), no β or g input.
+- Step (3.a) uses only `Tr(T_a T_b) = delta_{ab}/2` (Claim 2 and the direct
+  scalar-dilation exclusion), no β or g input.
 - Step (3.b) is the canonical QFT matching; uses no β or g input beyond
   the definitional identity being derived.
-- Step (3.c) uses Claims 1 + 2 + existing rigidity. It does NOT assume
-  g = 1 as input; it derives g = 1 from the absence of any admissible
-  rescaling.
+- Step (3.c) uses Claims 1 + 2 plus the direct trace-Gram scalar-dilation
+  check. It does NOT assume g = 1 as input; it derives g = 1 from the absence
+  of any admissible rescaling.
 
 **However**: the claim that `A` *is* the Cl(3)-native connection with
 unit coefficient — vs. `A = g A_raw` for some `A_raw` identified by an
@@ -354,8 +353,9 @@ independent Cl(3) criterion — is a *definitional* choice. A skeptic can
 object: "I will call the Cl(3)-native connection `A_Cl`, and define
 `A_raw = A_Cl / g` for any `g`, then `g` is free." The answer: any such
 reparametrization is a coordinate change on the same operator `A`, not
-a new physical parameter. This matches the existing rigidity theorem's
-response (Sec. 4 of `G_BARE_RIGIDITY_THEOREM_NOTE.md`).
+a new physical parameter. The direct trace-Gram check below isolates the
+non-coordinate part: changing the generators themselves changes the fixed
+canonical trace form.
 
 ### Verdict for Claim 3: **BOUNDED-CONDITIONAL SUPPORT**.
 Supplies rigidity support for the coefficient *given* the admitted Wilson action form.
@@ -382,7 +382,7 @@ su(3) ⊂ End(V)                            (canonical compact semisimple, Claim
    v
 Hilbert-Schmidt = k · Cl(3) pseudoscalar-adjoint form   (Claim 2)
    |
-   | existing G_BARE_RIGIDITY_THEOREM: no scalar T_a -> lambda T_a
+   | direct trace-Gram check: no scalar T_a -> lambda T_a
    v
 Canonical orthonormal basis {T_a}, Tr(T_a T_b) = delta_ab / 2
    |
@@ -406,7 +406,7 @@ The full chain was re-inspected for places where `g_bare = 1` or
 |------|------------------|-------------------|------------------|
 | Claim 1 (Cl(3) -> End(V)) | No | No | Neither directly |
 | Claim 2 (trace form) | No | No | Neither directly |
-| Existing rigidity theorem | No | No | Derives "no scalar dilation" |
+| Scalar-dilation exclusion | No | No | Derives "no scalar dilation" |
 | Claim 3a (plaquette expansion) | No (symbolic g) | No (symbolic β) | Relation β = 2N_c/g² |
 | Claim 3b (matching) | No | No | β = 2N_c/g² |
 | Claim 3c (canonical g=1) | Derives g=1 from rigidity | No | g = 1 |
@@ -414,11 +414,11 @@ The full chain was re-inspected for places where `g_bare = 1` or
 **No circular usage detected.** The final line "β = 6" follows from
 combining derived relations, not from asserting β = 6 anywhere.
 
-**Important caveat**: `PLAQUETTE_SELF_CONSISTENCY_NOTE.md` uses `β = 6`
-as an *evaluation input* to compute the plaquette observable. That use
-of `β = 6` is downstream of this theorem, not upstream. This theorem
-is what upgrades that input from a "convention" to a "structural
-consequence."
+**Important caveat**: the downstream plaquette-observable evaluation row uses
+`β = 6` as an *evaluation input*. That use of `β = 6` is downstream of this
+theorem, not upstream. This theorem is what upgrades that input from a
+"convention" to a "structural consequence" within the admitted Wilson-action
+scope.
 
 ---
 
@@ -434,8 +434,8 @@ The runner performs explicit symbolic/numeric verification:
   - Pseudoscalar `omega = G_1 G_2 G_3` squares to `-I` verified.
   - Chirality projectors commute with Cl(3)-even subalgebra.
   - Graph-first selector (trace invariant) minima at three axis vertices.
-  - Canonical su(3) embedding on triplet block (reusing existing machinery
-    from `frontier_g_bare_rigidity_theorem.py`).
+  - Canonical su(3) embedding on the triplet block by the inline Gell-Mann
+    construction.
 
 - **Section B (Claim 2):** Explicit computation of:
   - `Tr_V(T_a T_b)` for a, b ∈ {1,...,8} Gell-Mann indices.
@@ -477,10 +477,10 @@ The runner performs explicit symbolic/numeric verification:
 
 **Weak link**: the Wilson plaquette action form is admitted as the standard
 lattice gauge action on the current package surface, not derived from Cl(3)
-first principles. The framework uses it (e.g.,
-`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`) but does not currently close the
-question of whether an alternative action (Symanzik, Cl(3)-native volume-form,
-etc.) would give the same structural answer.
+first principles. The framework uses it for downstream plaquette evaluation,
+but this note does not close the question of whether an alternative action
+(Symanzik, Cl(3)-native volume-form, etc.) would give the same structural
+answer.
 
 **Bounded reading**: given that the community-standard Wilson plaquette action
 is the admitted lattice kinetic term on the current Wilson-evaluation surface,
@@ -530,7 +530,7 @@ admitted.
 - Dynamical running of `g`: this is a bare-coupling / UV normalization
   statement, not a flow claim.
 - The downstream phenomenology using `beta = 6` as an evaluation input
-  (that is `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`'s job, not this note's).
+  (that belongs to the plaquette-observable evaluation lane, not this note).
 
 ---
 
@@ -555,6 +555,4 @@ honestly (it is a status marker, not a failure).
 - Alternatively, demonstrate robustness of `beta = 6` (equivalently
   `g = 1`) across the natural family of lattice gauge actions (Wilson,
   Symanzik, fermion-induced), showing the normalization is
-  action-choice-independent at leading order. A partial result on this
-  (via the existing `PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION` theorem) is
-  already on main.
+  action-choice-independent at leading order.

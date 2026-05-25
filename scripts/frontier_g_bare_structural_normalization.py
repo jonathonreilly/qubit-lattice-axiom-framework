@@ -218,7 +218,7 @@ def graph_selector_check():
 
 
 def build_canonical_su3_triplet():
-    """Reuse the existing canonical construction from the rigidity theorem.
+    """Build the canonical SU(3) triplet construction inline.
 
     Build canonical SU(3) generators on the upstream triplet block (C^3)
     as the standard Gell-Mann matrices / 2, which have
@@ -326,7 +326,7 @@ def section_B_trace_form(T_triplet):
     check("Uniqueness of Ad-invariant bilinear form on simple su(3) (verified via ad-matrix)",
           True, "dim(Inv^2(su(3))) = 1 by classical Lie theory")
 
-    # B5. Scalar dilation changes the form (forbidden by Claim 2 + existing rigidity)
+    # B5. Scalar dilation changes the fixed canonical trace form.
     for lam in [0.5, 1.5, 2.0]:
         T_scaled = [lam * T for T in T_triplet]
         G_scaled = np.array([[np.trace(Ta @ Tb) for Tb in T_scaled]
@@ -455,12 +455,12 @@ def section_C_wilson_coefficient(T_triplet):
           f"beta = {beta_canonical}")
 
     # C6. Rescaling test: T_a -> lambda T_a would shift beta by lambda^2
-    # (this is exactly what's forbidden by Claim 2 + existing rigidity theorem)
+    # (this is exactly what the fixed canonical trace form excludes)
     for lam in [0.5, 2.0]:
         # If we *did* rescale generators, plaquette at same a would give
         # coefficient (lambda^2 * F^2) / (2 N_c), which requires beta' = beta / lambda^2
-        # to recover the same physical action. This is the "scalar dilation"
-        # that the rigidity theorem forbids.
+        # to recover the same physical action. This is the scalar dilation
+        # excluded by the fixed trace form.
         T_scaled = [lam * T for T in T_triplet]
         A_scaled_mu = sum(rng.normal() * T for T in T_scaled)  # new basis
         # The full point: Tr(T_scaled_a T_scaled_b) = lambda^2 / 2, violating
@@ -517,10 +517,13 @@ def section_D_end_to_end(T_triplet):
     check("Step 3: Killing-form rigidity forces Tr(T_a T_b) = delta_ab/2",
           is_close(G, 0.5 * np.eye(8)))
 
-    # Step 4: Existing rigidity theorem -> no scalar T_a -> lambda T_a
-    check("Step 4: Existing rigidity forbids scalar dilation of T_a",
-          True, "imported G_BARE_RIGIDITY_THEOREM_NOTE.md support",
-          kind="BOUNDED")
+    # Step 4: direct scalar-dilation exclusion from the fixed trace Gram.
+    lam = 1.25
+    G_scaled = np.array([[np.trace((lam * Ta) @ (lam * Tb)).real for Tb in T_triplet]
+                         for Ta in T_triplet])
+    check("Step 4: scalar dilation violates the canonical trace Gram",
+          is_close(G_scaled, lam**2 * G) and not is_close(G_scaled, G),
+          "checked directly from the Claim 2 trace form")
 
     # Step 5: Wilson plaquette small-a expansion -> beta/(2 N_c) = coefficient
     # of Tr(F F) a^4 in -Re Tr(U_p)/N_c
@@ -535,9 +538,9 @@ def section_D_end_to_end(T_triplet):
     # Circularity audit
     print("\n  Circularity audit:")
     print("  - Steps 1-3 use only Cl(3) axioms, graph-selector inputs, Lie-algebra rigidity.")
-    print("  - Step 4 uses the existing rigidity theorem row.")
+    print("  - Step 4 directly checks that scalar dilation changes the fixed trace Gram.")
     print("  - Step 5 uses canonical generator normalization from step 3; no β input.")
-    print("  - Step 6 derives g = 1 from Claims 1 + 2 + step 4 rigidity, not as input.")
+    print("  - Step 6 derives g = 1 from Claims 1 + 2 + step 4, not as input.")
     print("  - Final beta = 6 is derived inside the admitted Wilson-action scope, not asserted.")
     check("No circular usage of beta = 6 or g = 1 as input",
           cl3_ok and is_close(G, 0.5 * np.eye(8)) and abs(beta_final - 6) < 1e-12,

@@ -1,0 +1,53 @@
+loop: g-bare-structural-normalization-boundary-repair
+date: 2026-05-25
+branch: physics-loop/g-bare-structural-normalization-boundary-repair-block15-20260525
+base: origin/main@d653ca15f
+mode: run
+target: bounded-support
+cycle: 1
+active_route: remove_conditional_rigidity_and_plaquette_load_bearing_edges
+hard_residual: Wilson action form remains admitted standard lattice-QFT infrastructure
+files_touched:
+  - docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md
+  - scripts/frontier_g_bare_structural_normalization.py
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/audit_ledger.json
+claim_status:
+  claim_id: g_bare_structural_normalization_theorem_note_2026-04-18
+  actual_current_surface_status: bounded-support
+  conditional_surface_status: null
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  admitted_infrastructure_status: Wilson plaquette action form and kinetic matching convention
+  claim_type_author_hint_after_repair: bounded_theorem
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  audit_queue_rank_after_pipeline: 2
+  ready_after_pipeline: true
+  proposal_allowed: false
+  proposal_allowed_reason: bounded admitted-action-form scope; independent audit still required
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+dependency_delta:
+  before:
+    - g_bare_rigidity_theorem_note
+    - g_bare_derivation_note
+    - native_gauge_closure_note
+    - graph_first_su3_integration_note
+    - three_generation_observable_theorem_note
+    - plaquette_self_consistency_note
+  after:
+    - g_bare_derivation_note
+    - native_gauge_closure_note
+    - graph_first_su3_integration_note
+    - three_generation_observable_theorem_note
+verification_completed:
+  - python3 -m py_compile scripts/frontier_g_bare_structural_normalization.py
+  - python3 scripts/frontier_g_bare_structural_normalization.py
+  - bash docs/audit/scripts/run_pipeline.sh
+verification_notes:
+  - runner result EXACT 59 / 0, BOUNDED 2 / 0, TOTAL 61 / 0
+  - generated audit queue gives deps without the conditional rigidity or plaquette rows
+  - generated audit queue rank 2, ready true, 915 transitive descendants
+next_exact_action: run strict checks, commit, push, and open PR
+stop_condition: coherent bounded-support structural-normalization repair packaged for independent audit

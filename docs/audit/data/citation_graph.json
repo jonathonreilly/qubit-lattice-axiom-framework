@@ -11058,10 +11058,6 @@
     },
     {
       "from": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "to": "g_bare_rigidity_theorem_note"
-    },
-    {
-      "from": "g_bare_structural_normalization_theorem_note_2026-04-18",
       "to": "g_bare_derivation_note"
     },
     {
@@ -11075,10 +11071,6 @@
     {
       "from": "g_bare_structural_normalization_theorem_note_2026-04-18",
       "to": "three_generation_observable_theorem_note"
-    },
-    {
-      "from": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "to": "plaquette_self_consistency_note"
     },
     {
       "from": "g_bare_two_ward_closure_note_2026-04-18",
@@ -53939,15 +53931,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "g_bare_rigidity_theorem_note",
         "g_bare_derivation_note",
         "native_gauge_closure_note",
         "graph_first_su3_integration_note",
-        "three_generation_observable_theorem_note",
-        "plaquette_self_consistency_note"
+        "three_generation_observable_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "276020cdff9b737d0556f16ea09d53f3801022708330ee2f1e3cad73919a54ca",
+      "note_hash": "6bd0697450b63318460df822ee56000aaaaf781701c4cbb497598342b5a36747",
       "path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
       "title": "G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain"
@@ -85042,7 +85032,7 @@
       "open_gate": 126,
       "positive_theorem": 600
     },
-    "edge_count": 9738,
+    "edge_count": 9736,
     "leaf_count": 773,
     "node_count": 2518,
     "root_count": 829,

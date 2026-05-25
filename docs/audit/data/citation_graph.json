@@ -12393,10 +12393,6 @@
       "to": "neutrino_dirac_z3_support_trichotomy_note"
     },
     {
-      "from": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
-      "to": "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17"
-    },
-    {
       "from": "higher_order_structural_theorems_note",
       "to": "hw1_second_order_return_shape_theorem_note"
     },
@@ -18889,14 +18885,6 @@
       "to": "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
     },
     {
-      "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-      "to": "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10"
-    },
-    {
-      "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-      "to": "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
-    },
-    {
       "from": "nn_lattice_rescaled_c_arm_nlo_saddle_note_2026-05-10",
       "to": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
     },
@@ -20101,10 +20089,6 @@
       "to": "native_gauge_closure_note"
     },
     {
-      "from": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "to": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
-    },
-    {
       "from": "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
       "to": "plaquette_4d_mc_support_note_2026-05-04"
     },
@@ -20227,6 +20211,26 @@
     {
       "from": "plaquette_bootstrap_framework_specific_positivity_note_2026-05-03",
       "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+    },
+    {
+      "from": "plaquette_observable_uniqueness_bounded_note_2026-05-25",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "plaquette_observable_uniqueness_bounded_note_2026-05-25",
+      "to": "gauge_scalar_temporal_completion_theorem_note"
+    },
+    {
+      "from": "plaquette_observable_uniqueness_bounded_note_2026-05-25",
+      "to": "gauge_vacuum_plaquette_spectral_measure_theorem_note"
+    },
+    {
+      "from": "plaquette_observable_uniqueness_bounded_note_2026-05-25",
+      "to": "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+    },
+    {
+      "from": "plaquette_observable_uniqueness_bounded_note_2026-05-25",
+      "to": "gauge_vacuum_plaquette_framework_point_underdetermination_note"
     },
     {
       "from": "plaquette_self_consistency_note",
@@ -27397,6 +27401,14 @@
       "to": "plaquette_self_consistency_note"
     },
     {
+      "from": "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25",
+      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
+    },
+    {
+      "from": "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25",
+      "to": "yt_ew_color_projection_theorem"
+    },
+    {
       "from": "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25",
       "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
     },
@@ -27411,6 +27423,18 @@
     {
       "from": "yt_ew_m_residual_note_2026-05-02",
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
+    },
+    {
+      "from": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25",
+      "to": "yt_ew_color_projection_theorem"
+    },
+    {
+      "from": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25",
+      "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    },
+    {
+      "from": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25",
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
       "from": "yt_exact_coarse_grained_bridge_operator_note",
@@ -28191,10 +28215,6 @@
     {
       "from": "yt_schur_stability_gap_note",
       "to": "yt_exact_schur_normal_form_uniqueness_note"
-    },
-    {
-      "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
     },
     {
       "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
@@ -40583,7 +40603,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "690dfa6d39ce0d3f52c5633934ba176f4d040d9791e1b2566a3f6390588f2f74",
+      "note_hash": "6babe1bfdf6f69fd291fca45f4e20f9dfaeefd5aab63ad36eeff6706f7cadf48",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -41946,7 +41966,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0b8dcf761a496990a238390d087172584c99181ac16066f0826f33c24e702327",
+      "note_hash": "466faf0618a2faf91fa10ae2ed4b49423abfec7ba398701cff9204c2d7d9b33c",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"
@@ -55722,7 +55742,7 @@
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "073e0bdd7d2e527737e5ba32ccdc4d32602cb0bef550efa9c842d3c54236e0a6",
+      "note_hash": "329b681eb77f3920d58558998f2a587ed245acae3fbf0c18867f0d1c5e2f575f",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow.py",
       "title": "Gauge-Vacuum Plaquette Residual Environment Finite-Box Stripping-Uniqueness Narrow Note"
@@ -56799,7 +56819,7 @@
         "scripts/lattice_3d_l2_numpy.py",
         "scripts/numpy_replay_bootstrap.py"
       ],
-      "note_hash": "44c0db1fa87421c2e185558665d5d0fcf744274bf384bc56eab2fc16f918b04c",
+      "note_hash": "19657c97c7aff2de5f47ce1925910f5e0cf8c1e6b1055d5bdfc13fc6c608d0bb",
       "path": "docs/H2T_H0125_NARROW_BRIDGE_NOTE.md",
       "runner_path": "scripts/lattice_3d_l2_numpy_h0125_audit.py",
       "title": "3D `1/L^2 + h^2` Narrow `h=0.125` Bridge Note"
@@ -57022,7 +57042,7 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "ad72a0e6069d0ef9fc4111ce10c037d4a8e65fc1b7a7ee48fb3f87f18d4b86be",
+      "note_hash": "ece5264d847d7614f924a0bf6d102bf3e91a07df9c03c0fa848fbfd8d6c13fdf",
       "path": "docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md",
       "runner_path": "scripts/hard_geometry_gravity_window.py",
       "title": "Hard-Geometry Gravity Window Note"
@@ -57909,11 +57929,10 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "three_generation_observable_theorem_note",
-        "neutrino_dirac_z3_support_trichotomy_note",
-        "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17"
+        "neutrino_dirac_z3_support_trichotomy_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "61dc236866a698115016a00b57012a71a2ae9c27df8ee2ef2833dfc1c2f276e9",
+      "note_hash": "bfaaa0e65b82c8e6112b9e0bc92983d8e02efc31a61373ef7674bff39f4a7b59",
       "path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_higgs_z3_charge_pmns_gauge_redundancy_theorem.py",
       "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS"
@@ -64304,7 +64323,7 @@
       "helper_runner_paths": [
         "scripts/mirror_born_audit.py"
       ],
-      "note_hash": "af7101b4727e0c23322cf5ad78222bb49d6767de763aa16c5e4a031d47d2b718",
+      "note_hash": "d23c08fa1e203848b006440656518c70f10cc127ded98acb6fcd6b93bb544372",
       "path": "docs/MIRROR_2D_VALIDATION_NOTE.md",
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Validation Note"
@@ -66295,12 +66314,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lattice_nn_deterministic_rescale_note",
-        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
+        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5079217b58f55548a1dd3e1c5d042d9610d19452814a3326a0292a7af852ed93",
+      "note_hash": "1b12e7d94ade1dee3a4b8bb3edc53908ce0793da525aba12f7cf8b911a228198",
       "path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note"
@@ -68126,11 +68143,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "72c865e60074a31af2d8b1e8ddd9890fe73e5cb556c681ab778250149bb616e1",
+      "note_hash": "25e3545bd398c137dc70e2ee59286bf5123d5d7858208ddce3576198166f8ff1",
       "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_planck_target3_clifford_phase_bridge.py",
       "title": "Planck Target 3 Clifford Phase Bridge Theorem"
@@ -68254,6 +68269,24 @@
       "path": "docs/PLAQUETTE_HIERARCHY_POLYNOMIAL_BOUNDEDNESS_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py",
       "title": "Plaquette-Hierarchy Polynomial-Boundedness Narrow Theorem"
+    },
+    "plaquette_observable_uniqueness_bounded_note_2026-05-25": {
+      "claim_id": "plaquette_observable_uniqueness_bounded_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "plaquette_self_consistency_note",
+        "gauge_scalar_temporal_completion_theorem_note",
+        "gauge_vacuum_plaquette_spectral_measure_theorem_note",
+        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+        "gauge_vacuum_plaquette_framework_point_underdetermination_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "987f97b3e9578eb67a0ea9c8b283686ef043b95081f2cbbe9c2a1f0ba84c8d38",
+      "path": "docs/PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md",
+      "runner_path": "scripts/plaquette_observable_uniqueness_runner.py",
+      "title": "Plaquette Observable Uniqueness Bounded Note"
     },
     "plaquette_self_consistency_note": {
       "claim_id": "plaquette_self_consistency_note",
@@ -69616,7 +69649,7 @@
         "a1_qubit_interpretation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1cac345e0e888d788fb61cd39cbbe3019d8b1dd9da35444b78316a41b63b441f",
+      "note_hash": "f9450bfd90b6cf731bc71b7f2eba55c6224a9bb0a69b74cb2df216c123fe7b23",
       "path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra"
@@ -80826,17 +80859,18 @@
     },
     "wave_direct_dm_h025_fam1_seed0_control_note": {
       "claim_id": "wave_direct_dm_h025_fam1_seed0_control_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
+        "scripts/wave_direct_dm_h025_control_batch.py",
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "2929ca26e873b96632c21f73f0d2de4aa7b0abfaa1b8a03f7046692f7def1cf7",
+      "note_hash": "5d0dd5398a9d9a15d1258c509230edfd71fe1ed24901c83ad9b7b13007f7c100",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
-      "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
+      "runner_path": "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam1 Seed0 Control Note"
     },
     "wave_direct_dm_h025_fam1_seed0_control_note_2026-05-17": {
@@ -80911,19 +80945,20 @@
     },
     "wave_direct_dm_h025_fam2_seed0_control_note": {
       "claim_id": "wave_direct_dm_h025_fam2_seed0_control_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "wave_direct_dm_h025_fam2_seed1_control_note"
       ],
       "helper_runner_paths": [
+        "scripts/wave_direct_dm_h025_control_batch.py",
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "b5988e5a4063f8f0241a252db8f2ca983109214d89a05e0d0b7e4c79965c5f60",
+      "note_hash": "0774786b889814ce4069628f913948a44b8172574ec09a19a69f18aa23527ed5",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
-      "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
+      "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Control Note"
     },
     "wave_direct_dm_h025_fam2_seed1_control_note": {
@@ -82945,6 +82980,21 @@
       "runner_path": "scripts/frontier_yt_ew_delta_r_retention.py",
       "title": "YT EW \u0394_R Retention Analysis Note (Lattice-to-MSbar Matching for g_1(v), g_2(v))"
     },
+    "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25": {
+      "claim_id": "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "yt_ew_color_projection_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8154e599ba1847fecb06a5cabb1e0da69b4419b926f7c0d0566baab3c9046793",
+      "path": "docs/YT_EW_F_ADJ_FIERZ_FRACTION_BOUNDED_NOTE_2026-05-25.md",
+      "runner_path": "scripts/yt_ew_f_adj_fierz_runner.py",
+      "title": "y_t EW F_adj Fierz-Fraction Bounded Note"
+    },
     "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
       "claim_id": "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25",
       "claim_type_author_hint": "open_gate",
@@ -82987,6 +83037,22 @@
       "path": "docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_yt_ew_matching_rule_m_stretch.py",
       "title": "yt_ew Matching Rule M Stretch Attempt: Named Obstruction"
+    },
+    "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25": {
+      "claim_id": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "yt_ew_color_projection_theorem",
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "ew_current_matching_rule_open_gate_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "42ef31260e602d1fb743c7fe58864e3a75085110f788f56152e18afe1a33b9c4",
+      "path": "docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md",
+      "runner_path": "scripts/yt_ew_sin_sq_theta_w_preservation_runner.py",
+      "title": "Weinberg Angle Preservation Under K_EW Bounded Note"
     },
     "yt_exact_coarse_grained_bridge_operator_note": {
       "claim_id": "yt_exact_coarse_grained_bridge_operator_note",
@@ -83900,11 +83966,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "8abc5e7dadc4ef51d042c55aaebfcf86b3c903f9f7cbfded8a79eb2ff173c728",
+      "note_hash": "8f353f7ef0046c64c156db956508f40300fd06be84b724e202bd742272890068",
       "path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",
       "title": "Y_T Source-Coordinate Invariant Top/W Ratio Gate"
@@ -84757,6 +84821,7 @@
     "planck_boundary_orientation_incidence_no_go_note_2026-04-30",
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2_note_2026-05-17",
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
@@ -85021,6 +85086,7 @@
     "yt_retention_landing_readiness_2026-04-18",
     "yt_retention_master_manifest_2026-04-18",
     "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
+    "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
     "yt_ssb_matching_gap_analysis_note_2026-04-18",
     "z2_hw1_mass_matrix_parametrization_note",
     "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
@@ -85028,27 +85094,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 566,
+      "bounded_theorem": 571,
       "decoration": 1,
       "meta": 191,
       "no_go": 70,
-      "none": 1470,
+      "none": 1468,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 993,
+      "bounded_theorem": 998,
       "decoration": 1,
       "meta": 191,
       "no_go": 173,
       "none": 435,
       "open_gate": 126,
-      "positive_theorem": 600
+      "positive_theorem": 598
     },
-    "edge_count": 9736,
-    "leaf_count": 774,
-    "node_count": 2519,
-    "root_count": 830,
-    "runners_with_path": 2080
+    "edge_count": 9741,
+    "leaf_count": 778,
+    "node_count": 2522,
+    "root_count": 832,
+    "runners_with_path": 2083
   }
 }

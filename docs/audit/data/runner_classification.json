@@ -16980,6 +16980,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py"
     },
+    "plaquette_observable_uniqueness_bounded_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/plaquette_observable_uniqueness_runner.py"
+    },
     "plaquette_self_consistency_note": {
       "assert_count": 1,
       "counts": {
@@ -23206,7 +23218,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/wave_direct_dm_h025_control_batch.py"
+      "runner": "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py"
     },
     "wave_direct_dm_h025_fam1_seed0_control_note_2026-05-17": {
       "assert_count": 0,
@@ -23278,7 +23290,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/wave_direct_dm_h025_control_batch.py"
+      "runner": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py"
     },
     "wave_direct_dm_h025_fam2_seed1_control_note": {
       "assert_count": 0,
@@ -24276,6 +24288,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_yt_ew_delta_r_retention.py"
     },
+    "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/yt_ew_f_adj_fierz_runner.py"
+    },
     "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
       "assert_count": 1,
       "counts": {
@@ -24311,6 +24335,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_yt_ew_matching_rule_m_stretch.py"
+    },
+    "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/yt_ew_sin_sq_theta_w_preservation_runner.py"
     },
     "yt_exact_coarse_grained_bridge_operator_note": {
       "assert_count": 0,
@@ -52516,6 +52552,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/plaquette_observable_uniqueness_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "plaquette_observable_uniqueness_bounded_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/poisson_3d_self_field.py": {
       "assert_count": 0,
       "claims": [
@@ -54270,11 +54321,24 @@
     "scripts/wave_direct_dm_h025_control_batch.py": {
       "assert_count": 0,
       "claims": [
-        "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
         "wave_direct_dm_h025_fam2_seed1_control_note",
         "wave_direct_dm_h025_fam3_seed0_control_note",
         "wave_direct_dm_h025_fam3_seed1_control_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py": {
+      "assert_count": 0,
+      "claims": [
+        "wave_direct_dm_h025_fam1_seed0_control_note"
       ],
       "counts": {
         "A": 0,
@@ -54290,6 +54354,21 @@
       "assert_count": 0,
       "claims": [
         "wave_direct_dm_h025_fam1_seed1_control_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py": {
+      "assert_count": 0,
+      "claims": [
+        "wave_direct_dm_h025_fam2_seed0_control_note"
       ],
       "counts": {
         "A": 0,
@@ -54622,10 +54701,40 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/yt_ew_f_adj_fierz_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/yt_ew_m_residual_channel_check.py": {
       "assert_count": 0,
       "claims": [
         "yt_ew_m_residual_note_2026-05-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/yt_ew_sin_sq_theta_w_preservation_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25"
       ],
       "counts": {
         "A": 0,
@@ -54659,12 +54768,12 @@
     "dominant_class_distribution": {
       "A": 210,
       "B": 272,
-      "C": 746,
+      "C": 747,
       "D": 299,
-      "none": 434
+      "none": 438
     },
-    "runners_classified": 1961,
-    "runners_with_C": 965,
+    "runners_classified": 1966,
+    "runners_with_C": 966,
     "runners_with_D": 570
   }
 }

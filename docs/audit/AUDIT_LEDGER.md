@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 450 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 92 |
+| ~~audited_conditional~~ | 93 |
 | ~~audited_failed~~ | 9 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 730 |
-| `audited_conditional` | 92 |
+| `audited_conditional` | 93 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1460 |
+| `unaudited` | 1459 |
 
 | claim_type | count |
 |---|---:|
@@ -944,6 +944,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_fh_top_w_response_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -13646,6 +13647,24 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Under scalar CMT factorization G_full = u_0 * G_V, both Fierz channels scale uniformly: S(G_full) = u_0^2 S(G_V) and C(G_full) = u_0^2 C(G_V).  _(class `A`)_
 - **chain closes:** True — The scoped no-go follows algebraically from the supplied Fierz definitions of S and C: both are quadratic in G, so multiplying G by u_0 multiplies both by u_0^2. The missing EW Wilson-line current construction remains open only for the broader matching rule M, not for this narrowed obstruction.
 - **rationale:** The load-bearing step is a direct algebraic consequence of the channel definitions in the cited authority, whose effective status is retained-grade decoration. The runner source genuinely computes the relevant identity in Test 5 rather than hard-coding the contested conclusion. No-Go Discipline does not defeat the narrowed claim: possible escape routes through current construction, renormalization convention, connected-subtraction framing, V-fluctuation dynamics, or non-scalar improvement would address the broader M residual, not the tested scalar CMT factorization statement.
+- **auditor confidence:** high
+
+### `yt_fh_top_w_response_ratio_gate_note_2026-05-25`
+
+- **Note:** [`YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md`](../../docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the conditional same-source top/W Feynman-Hellmann response-ratio algebra and the note's statement that positive Y_T closure remains blocked.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T145308Z-adf37922-yt_fh_top_w_response_rat-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If both top and W masses depend on the same scalar background v(h), then (dM_t/dh)/(dM_W/dh) = sqrt(2) y_t / g_2 and y_t = (g_2/sqrt(2))(dM_t/dh)/(dM_W/dh).  _(class `A`)_
+- **chain closes:** False — The algebraic ratio closes under the stated assumptions, but the restricted packet does not supply same-source physical EW/Higgs authority, strict top/W response rows, or retained same-scale g_2 authority. Those premises are explicitly listed as current blockers.
+- **rationale:** The load-bearing calculation is a valid class A algebraic identity, and the runner source genuinely checks the symbolic derivative and response-ratio identities rather than merely printing constants. However, the note's own conclusion depends on open premises: an accepted same-source physical EW/Higgs surface, strict top/W response rows, and retained g_2 authority. No-Go Discipline check does not support upgrading the bounded boundary to clean because the packet names multiple residual admissions and no in-packet route closes them.
+- **open / conditional deps cited:**
+  - `YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`
+  - `EW_COUPLING_DERIVATION_NOTE.md`
+  - `outputs/yt_fh_top_w_strict_response_rows_2026-05-25.json`
+  - `outputs/yt_strict_same_source_wz_physical_response_packet_2026-05-22.json`
 - **auditor confidence:** high
 
 ### `yt_pr230_consolidated_status_note_2026-05-22`

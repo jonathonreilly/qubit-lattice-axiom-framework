@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 143 |
 | **retained_no_go** | 156 |
 | **retained_bounded** | 436 |
-| _retained_pending_chain_ | 7 |
+| _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1252 |
+| unaudited | 1251 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -52,20 +52,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 710 |
 | `audited_conditional` | 85 |
-| `audited_decoration` | 37 |
+| `audited_decoration` | 38 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1479 |
+| `unaudited` | 1478 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1029 |
-| `decoration` | 38 |
+| `decoration` | 39 |
 | `meta` | 231 |
 | `no_go` | 243 |
 | `open_gate` | 110 |
-| `positive_theorem` | 739 |
+| `positive_theorem` | 738 |
 
 | criticality | count |
 |---|---:|
@@ -74,7 +74,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 570 |
 | `leaf` | 935 |
 
-- **Retained pending chain closure:** 7
+- **Retained pending chain closure:** 8
 - **Citation cycles detected:** 7
 
 ### Runner classification (static heuristic)
@@ -928,6 +928,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
@@ -4784,6 +4785,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** False — The finite sampled-grid statement closes against the provided runner output. The continuous-family no-go does not close because the global Lipschitz constants are empirical finite-difference bounds rather than analytic or interval-certified upper bounds over the whole box.
 - **rationale:** Issue: the continuous-box lower bound relies on empirical 2.5x sampled-gradient Lipschitz constants. Why this blocks: a finite gradient sweep does not certify the global Lipschitz bound needed to turn the adaptive subdivision into a formal continuous no-go. Repair target: provide analytic operator-norm/subspace Lipschitz bounds or an interval-arithmetic certificate for gap_at over the full box. Claim boundary until fixed: retain the 1440-point sampled-grid no-go and treat the continuous-box positivity as conditional support only.
 - **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md)
+- **claim_type:** `decoration`
+- **claim_scope:** The narrowed algebraic equivalence on the finite packet returned by selected_transfer_and_packet; not the historical earliest Wilson-side packet feeding the DM boundary.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T120928Z-1ea6ee92-gauge_vacuum_plaquette_f-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the canonical Wilson-side packet selected by the minimal-bulk-completion branch, the first Jacobi layer and first Hankel packet satisfy alpha0 = m1 and beta1^2 = m2 - m1^2 with beta1 > 0.  _(class `A`)_
+- **chain closes:** True — The primary runner computes alpha0,beta1 by Lanczos and m1,m2 as moments of the same jmat,psi, and the reported gaps are at roundoff. The runner no longer checks or imports the demoted earliest-boundary premise.
+- **rationale:** The narrowed claim is not an independent physics bridge to the DM boundary; it is the first-step Lanczos/Hankel identity applied to the selected packet produced by the upstream packet construction. The runner source performs real finite linear-algebra computations and does not merely print constants or substring-check the contested premise. Because the only load-bearing content is algebraic equivalence over a single upstream selected-packet claim, the appropriate retained status is decoration rather than a standalone clean theorem.
+- **decoration parent:** `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19`
+- **auditor confidence:** medium
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`
 

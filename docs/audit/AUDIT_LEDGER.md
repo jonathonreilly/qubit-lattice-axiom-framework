@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 430 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1264 |
+| unaudited | 1263 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 82 |
+| ~~audited_conditional~~ | 83 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 702 |
-| `audited_conditional` | 82 |
+| `audited_conditional` | 83 |
 | `audited_decoration` | 37 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1491 |
+| `unaudited` | 1490 |
 
 | claim_type | count |
 |---|---:|
@@ -855,6 +855,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5758,6 +5759,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
+- **auditor confidence:** high
+
+### `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional lattice-side mean-field algebra: given the SU(3) graph surface, the Wilson g_bare = 1 surface, D_taste^2 = d I with d = 4, N_taste = 16, and U_ab -> u_0 delta_ab, the per-total curvature and R_lattice equal 1/(4 u_0^2), with no physical Higgs-mass identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T114550Z-8ca27e14-higgs_lattice_eigenvalue-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given |lambda_full| = 2 u_0, W(J) = (N_tot/2) log(J^2 + 4 u_0^2), so W''(0)/N_tot = 1/(4 u_0^2), matching R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16.  _(class `A`)_
+- **chain closes:** False — The symbolic curvature calculation and simplification close locally. The retained-grade chain does not close because the Clifford identity, N_taste = 16 minimal APBC block, and mean-field factorization are admitted inputs rather than retained authorities supplied in the restricted packet.
+- **rationale:** The runner performs exact class-A algebra and confirms the note avoids the physical matching claim R_lattice = (m_H/v)^2. It does not instantiate the staggered operator or derive the taste count and mean-field spectrum; those are hard-coded or admitted as standard inputs. The cited SU(3) and g_bare authorities are retained-grade, but the lattice/taste/mean-field bridge needed for retained-grade closure is not provided in this packet.
 - **auditor confidence:** high
 
 ### `higgs_mechanism_note`

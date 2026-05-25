@@ -12389,6 +12389,14 @@
       "to": "three_generation_observable_theorem_note"
     },
     {
+      "from": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+      "to": "neutrino_dirac_z3_support_trichotomy_note"
+    },
+    {
+      "from": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+      "to": "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17"
+    },
+    {
       "from": "higher_order_structural_theorems_note",
       "to": "hw1_second_order_return_shape_theorem_note"
     },
@@ -18805,6 +18813,14 @@
       "to": "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
     },
     {
+      "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
+      "to": "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10"
+    },
+    {
+      "from": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
+      "to": "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
+    },
+    {
       "from": "nn_lattice_rescaled_c_arm_nlo_saddle_note_2026-05-10",
       "to": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
     },
@@ -24109,6 +24125,10 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
+      "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "to": "left_handed_charge_matching_note"
     },
@@ -25071,6 +25091,10 @@
     {
       "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
       "to": "three_generation_observable_theorem_note"
+    },
+    {
+      "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+      "to": "generation_axiom_boundary_note"
     },
     {
       "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
@@ -57764,10 +57788,12 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "three_generation_observable_theorem_note"
+        "three_generation_observable_theorem_note",
+        "neutrino_dirac_z3_support_trichotomy_note",
+        "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dab0b4e17461affc88e9780e4c7d03c44b85b24d9fafc7e83b4c2d033515f449",
+      "note_hash": "61dc236866a698115016a00b57012a71a2ae9c27df8ee2ef2833dfc1c2f276e9",
       "path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_higgs_z3_charge_pmns_gauge_redundancy_theorem.py",
       "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS"
@@ -66065,10 +66091,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lattice_nn_deterministic_rescale_note",
-        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
+        "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
+        "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10",
+        "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0cb68d60f12f72b5a0caabc89320a9f21ed4c9d29291a1bfcf7627ce0cf6d926",
+      "note_hash": "5079217b58f55548a1dd3e1c5d042d9610d19452814a3326a0292a7af852ed93",
       "path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note"
@@ -77066,10 +77094,11 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11"
+        "minimal_axioms_2026-04-11",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "note_hash": "908367e1e75df3b7b7d32f403fce914da8789d85e02ad0d9afc55aced7ee8391",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
@@ -78987,10 +79016,11 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "three_generation_observable_theorem_note"
+        "three_generation_observable_theorem_note",
+        "generation_axiom_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f5edf24c73e6dfb26de3d0c21c81fe705feb877f131f4d98f975b865c07bbe3e",
+      "note_hash": "a7aed87a00e940c9a438ea6f45ff4aed4feaf5050417f7da6910c74d3ec425cb",
       "path": "docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem \u2014 Dep-Chain Audit"
@@ -84700,8 +84730,8 @@
       "open_gate": 123,
       "positive_theorem": 600
     },
-    "edge_count": 9706,
-    "leaf_count": 768,
+    "edge_count": 9712,
+    "leaf_count": 767,
     "node_count": 2504,
     "root_count": 824,
     "runners_with_path": 2067

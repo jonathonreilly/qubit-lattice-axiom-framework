@@ -2,10 +2,10 @@
   "claim_type_counts": {
     "bounded_theorem": 1029,
     "decoration": 36,
-    "meta": 232,
+    "meta": 231,
     "no_go": 243,
     "open_gate": 110,
-    "positive_theorem": 740
+    "positive_theorem": 741
   },
   "cycle_examples": [
     [
@@ -34,11 +34,19 @@
       "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
       "anomaly_forces_time_theorem",
       "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    ],
+    [
+      "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+      "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17"
+    ],
+    [
+      "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
+      "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10"
     ]
   ],
-  "cycles_detected": 3,
+  "cycles_detected": 7,
   "effective_status_counts": {
-    "audited_conditional": 71,
+    "audited_conditional": 67,
     "audited_failed": 6,
     "audited_numerical_match": 11,
     "audited_renaming": 15,
@@ -66,7 +74,7 @@
     "retained_bounded": 417,
     "retained_no_go": 154,
     "retained_pending_chain": 7,
-    "unaudited": 1294
+    "unaudited": 1298
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

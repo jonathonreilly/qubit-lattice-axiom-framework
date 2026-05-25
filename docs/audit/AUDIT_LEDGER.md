@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 451 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1255 |
+| unaudited | 1254 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 731 |
-| `audited_conditional` | 90 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1484 |
+| `unaudited` | 1483 |
 
 | claim_type | count |
 |---|---:|
@@ -906,6 +906,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8289,6 +8290,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe wording is that the widened W = 12, h = 0.25 replay gives a far-tail fit of b^(-1.17) on the tested z >= 5 window, is a strong finite-lattice replay, and is not a universal theorem.  _(class `B`)_
 - **chain closes:** True — The source note explicitly narrows the historical headline to the retained bounded wide-tail replay note. The completed replay log matches the dependency note's frozen values; the live short-budget run timed out just before completion and is not used as negative evidence.
 - **rationale:** The audited claim is the bounded finite-window replay statement, not the broader historical headline. The one-hop dependency is retained_bounded, and the completed runner log reports Born=4.82e-15, k=0=+0.000000, 9/9 TOWARD rows, peak-tail b^(-1.07) with R^2=0.990, and far-tail b^(-1.17) with R^2=0.997, matching the source and dependency notes. Residual risk is only asymptotic/generalization risk, which the source note explicitly excludes.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Harness-fixed bounded coherent-saddle support for the rescaled NN slit-arm width constant, including the closed-form C_arm residuals against the diagnostic fit and the disputed slit-length anchoring.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T191715Z-f110da5f-nn_lattice_rescaled_c_ar-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note sets the effective propagation length in the coherent-saddle formula to the slit-anchored arm length, originally `L_eff = L_2 = 2 L_total / 3`, so that `C_arm^2 = L_eff / (sqrt(2)/c + 2)` gives the claimed comparison constant.  _(class `A`)_
+- **chain closes:** False — The algebraic saddle calculation and runner reproduce the stated numbers, but the bridge from the closed-form no-slit/per-step saddle to the actual blocked-slit arm width is not derived. The packet itself says the original L_2 anchoring was the wrong interpretation and that the sharper L_1 selection-filter reading is only a numerical/open identification, not a first-principles closure.
+- **rationale:** The primary runner genuinely computes the closed-form coherent-saddle quantities from the hard-coded harness constants and prints residual checks; it is not a dummy PASS printer. However, it does not propagate the actual blocked-slit lattice or derive the arm-width observable from that propagation; it selects an effective length and compares to a diagnostic fit. The cited full-kernel authority is retained_bounded for its no-slit kernel shape, but its slit-arm L_1 reading is explicitly described as a closer numerical comparison whose physical interpretation remains open. Therefore the bounded algebra is useful support, but the claim does not close as an audited theorem from the restricted packet.
+- **open / conditional deps cited:**
+  - `NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_continuum_identification_note_2026-05-10`

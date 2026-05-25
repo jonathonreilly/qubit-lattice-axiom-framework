@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 159 |
+| **retained_no_go** | 160 |
 | **retained_bounded** | 457 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1237 |
+| unaudited | 1236 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 738 |
+| `audited_clean` | 739 |
 | `audited_conditional` | 100 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1466 |
+| `unaudited` | 1465 |
 
 | claim_type | count |
 |---|---:|
@@ -296,6 +296,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `evolving_network_prototype_v5_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v6_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `ew_current_traceless_generator_selector_no_go_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4006,6 +4007,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Completion A with kappa_EW=0 and Completion B with kappa_EW=1 share the retained Fierz ratio, color-blind CMT scaling, and O(1/N_c^2) disconnected size, but give different EW matching factors 9/8 and 1.  _(class `A`)_
 - **chain closes:** True — The chain closes as an algebraic independence witness over the stated restricted packet: the two completions agree on all listed retained primitive data while disagreeing on K_EW. The cited Fierz authority supplies the exact 8/9 channel fraction and explicitly does not derive the matching selector.
 - **rationale:** The load-bearing step is class A rather than a numerical match: the runner recomputes rational channel fractions, CMT cancellation, OZI boundedness, and the two-completion witness. The cited authority is retained-grade for the Fierz/channel ratio, and the source does not import the open matching rule as a premise; it shows that the listed premises do not select it. The no-go gate passes on the restricted packet: attack routes through Fierz arithmetic, CMT scaling, bounded OZI, excluding full-trace readout, and convention or structural-input ratification all require adding a selector not present in the packet.
+- **auditor confidence:** high
+
+### `ew_current_traceless_generator_selector_no_go_note_2026-05-03`
+
+- **Note:** [`EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md`](../../docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go that EW-generator tracelessness alone cannot derive the connected-trace selector kappa_EW=0 for the EW current matching gate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T195549Z-dda9c63e-ew_current_traceless_gen-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Tr_internal(Q_EW)=0 kills ordinary Wick-disconnected one-current loops, but the connected color-Fierz singlet channel is weighted by Tr_internal(Q_EW^2), which is nonzero in the T3, M=I_color counterexample.  _(class `A`)_
+- **chain closes:** True — The cited gate and Fierz authority define kappa_EW as the coefficient of the color singlet channel S, and the T3/M=I_color witness gives Tr(T3)=0 but Tr(T3^2)S=3/2. This refutes the proposed implication without needing a broader positive EW-current theorem.
+- **rationale:** The load-bearing work is an exact algebraic counterexample: T3 has zero linear trace but nonzero quadratic trace, and M=I_color is purely Fierz-singlet. The runner computes these rational identities and also verifies that kappa_EW remains distinct at kappa=0 and kappa=1. No-Go Discipline passes for the narrow boundary: packet-based attacks via ordinary Wick loops, quadratic trace collapse, singlet-channel vanishing, color-adjoint vertex insertion, and kappa-readout equivalence are each blocked, while broader positive selector routes are explicitly out of scope.
 - **auditor confidence:** high
 
 ### `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`

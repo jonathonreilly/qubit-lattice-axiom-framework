@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 158 |
-| **retained_bounded** | 452 |
+| **retained_bounded** | 453 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1253 |
+| unaudited | 1252 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 732 |
+| `audited_clean` | 733 |
 | `audited_conditional` | 91 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1482 |
+| `unaudited` | 1481 |
 
 | claim_type | count |
 |---|---:|
@@ -355,6 +355,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5090,6 +5091,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** After stripping the two marked half-slice multipliers, the residual source-sector compression C_beta is central on class functions and therefore diagonal in the SU(3) character basis, giving T_src(beta)=exp[(beta/2)J] D_beta exp[(beta/2)J].  _(class `A`)_
 - **chain closes:** True — Within this boundary, the construction closes: once the residual compression is the positive central diagonal operator D_beta, the factorized matrix law follows algebraically. The chain does not compute or identify the Wilson beta=6 kappa sequence, and the note explicitly leaves that datum open.
 - **rationale:** The audited content is a bounded structural factorization, not a numerical evaluation of Wilson residual data. The runner supports this as a finite algebraic witness: it builds exp(3J), injects a generic positive conjugation-symmetric diagonal kappa, and verifies the factorized matrix formula. Because the claim explicitly excludes evaluation of D_6/kappa and Perron data, there is no hidden numerical closure being asserted.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-box B={0<=p,q<=4} inverse Peter-Weyl uniqueness of the normalized truncated SU(3) central character expansion realizing the diagonal residual operator on H_B, with beta=6 witness consistency only at bounded scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T192240Z-b3ed75e0-gauge_vacuum_plaquette_s-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the finite-box convolution-on-characters identity, equality C_(Z'|_B)=R_beta^env|_B implies rho'_(p,q) chi_(p,q)=rho_(p,q) chi_(p,q), hence rho'_(p,q)=rho_(p,q) for every weight in B and the normalized truncated class function is unique.  _(class `A`)_
+- **chain closes:** True — Within the finite box, the cited retained_bounded convolution identity gives a one-to-one map from normalized Peter-Weyl coefficients to convolution eigenvalues on the orthonormal character basis. Equality with the uniquely stripped diagonal residual therefore forces coefficient equality; the note does not need or claim all-weight spatial-environment closure.
+- **rationale:** The load-bearing inverse step is a genuine finite-dimensional algebraic closure over retained_bounded inputs: block 17 supplies uniqueness of R_beta^env|_B, and the bounded companion supplies the convolution-on-characters identity and rho(6) witness data. The runner source mostly checks coefficient/eigenvalue inversion and perturbation behavior; the beta=6 witness check imports the companion coefficients, so it is cross-note consistency rather than first-principles computation. No non-retained load-bearing dependency is required for the stated finite-box uniqueness claim.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note`

@@ -1,7 +1,10 @@
 # Wave Direct-dM H=0.25 Fam1 Seed0 Control Note
 
 **Date:** 2026-04-08
-**Status:** proposed_retained control-ladder hardening on the Fam1/seed0 fine-H boundary replay
+**Status:** bounded control-ladder hardening on the Fam1/seed0 fine-H boundary replay
+**Claim type:** bounded_theorem
+**Status authority:** source-note proposal only; audit verdict and effective
+status are set by the independent audit lane.
 **Primary runner:** [`scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py)
 
 This note upgrades the earlier one-strength `Fam1`, seed `0`,
@@ -65,7 +68,7 @@ What remains open:
 - the result still supports a bounded fine-`H` family-pair surface, not a full
   `H = 0.25` portability law
 
-So the exact retained claim is:
+So the exact bounded claim is:
 
 > `Fam1`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact
 > null, stable sign, and approximately linear weak-field scaling at

@@ -81,7 +81,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 1960
-- runners with (C) first-principles compute hits: 965
+- runners with (C) first-principles compute hits: 964
 - runners with (D) external comparator hits: 569
 - decoration candidates (no C, no D): 314
 
@@ -105,8 +105,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 940 | 33.38 | `audited_clean` | **retained** |
 | 13 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 548 | 33.10 | `audited_conditional` | ~~audited_conditional~~ |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 561 | 32.13 | `unaudited` | unaudited |
-| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1018 | 31.49 | `audited_conditional` | ~~audited_conditional~~ |
-| 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 559 | 31.13 | `unaudited` | unaudited |
+| 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 559 | 31.13 | `unaudited` | unaudited |
+| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1017 | 30.99 | `audited_conditional` | ~~audited_conditional~~ |
 | 17 | `three_generation_structure_note` | bounded_theorem | critical | 686 | 30.42 | `unaudited` | unaudited |
 | 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 932 | 30.37 | `audited_renaming` | ~~audited_renaming~~ |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 896 | 30.31 | `audited_clean` | **retained** |

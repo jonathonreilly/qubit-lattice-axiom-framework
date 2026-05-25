@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 262,
+    "critical": 261,
     "high": 346,
     "leaf": 337,
     "medium": 345
@@ -124,33 +124,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "pmns_hw1_source_transfer_boundary_note",
-      "claim_scope": "Conditional supplied-fixture interface identity: response-column inversion equals the Schur-complement retained block, and equal retained pairs produce equal downstream Hermitian, mass, PMNS-modulus, branch, and sheet outputs.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/frontier_pmns_corner_transport_active_block.py",
-        "scripts/frontier_pmns_lower_level_end_to_end_closure.py",
-        "scripts/frontier_pmns_transfer_operator_dominant_mode.py",
-        "scripts/pmns_lower_level_utils.py"
-      ],
-      "load_bearing_score": 11.077,
-      "note_path": "docs/PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_hw1_source_transfer_boundary.py",
-      "transitive_descendants": 381
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -29253,6 +29226,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pmns_hw1_source_transfer_boundary_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/PMNS_HW1_RESPONSE_COLUMN_SCHUR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36594,30 +36591,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "pmns_hw1_source_transfer_boundary_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/PMNS_HW1_RESPONSE_COLUMN_SCHUR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pmns_selector_three_identity_support_proposal_readme_2026-04-21",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38696,5 +38669,5 @@
     }
   ],
   "ready_count": 50,
-  "total_pending": 1290
+  "total_pending": 1289
 }

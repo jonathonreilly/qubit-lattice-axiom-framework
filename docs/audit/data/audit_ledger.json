@@ -126526,24 +126526,42 @@
       "verdict_rationale": "The clean result is limited to the exact finite runner surface and the explicitly narrowed positive-row subfit/distance-sweep facts. Residual risk is that the fit window and positive-row filter are analysis choices and do not by themselves imply a physical gravity law, rowwise positivity, Born safety, or upstream coexistence closure; those broader readings are outside the audited scope."
     },
     "higher_symmetry_joint_validation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T11:38:14.883785+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_note"
+        ],
+        "load_bearing_score": 5.7,
+        "runner_hash": "f6d580f54dc9c4070e977ea1ac989f47ff54d5edef5c802fe6e004e5841592df",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T113753Z-887fd6cb-higher_symmetry_joint_va-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The packet includes the primary runner, both helper sources, and a SHA-pinned cache whose stdout matches the narrowed sparse-window claim. The dense N=80/100/120 material is explicitly excluded from binding scope despite stale historical text later in the note.",
       "claim_id": "higher_symmetry_joint_validation_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T11:38:14.883785+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -126551,22 +126569,22 @@
         "mirror_chokepoint_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/higher_symmetry_dag.py",
         "scripts/mirror_chokepoint_joint.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 5.7,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The registered SHA-pinned joint-validator cache for scripts/higher_symmetry_joint_validation.py, on default argv with N=25,40,60,80 and 16 seeds, directly supports the bounded Z2 x Z2 Born-clean, k=0-zero, and positive band-averaged gravity rows in the sparse window.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1fe8df876b5ef7db3ff5e3ffbee4e866d3bbf6359d10d6ad1e4174b63c8bafd5",
       "note_path": "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream tooling preserves the narrowed scope and does not promote the stale dense N=120 conclusion text as retained.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -126787,18 +126805,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/higher_symmetry_joint_validation.py",
       "title": "Higher-Symmetry Joint Validation Note \u2014 Cached N Range (Binding)",
       "transitive_descendants": 12,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the narrowed binding scope, the runner genuinely generates the DAG families, calls the joint measurement code, computes Born, gravity, k=0, purity, gravity-band, and exponent summaries, and reports values not hard-coded from the note. The helper sources are present and do not import the contested result as an input. The cited mirror authority is retained_bounded, and no non-retained cited authority is needed for the narrowed cache-backed claim. The note still contains stale 32-seed and N=120 promotional prose, but its binding-scope language cleanly demotes those statements out of the audited claim."
     },
     "holographic_probe_note_2026-04-11": {
       "audit_date": "2026-05-03T12:20:53.876502+00:00",

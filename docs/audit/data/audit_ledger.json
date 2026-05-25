@@ -9276,8 +9276,8 @@
       "load_bearing_score": 2.585,
       "load_bearing_step": "The threshold-0.10 and threshold-0.20 LN power-law fits and R^2 values are reproducible from the cited runner cache as direct stdout of scripts/asymmetry_persistence_mass_scaling.py, supporting a bounded mass-response window on the generated family.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "meta",
+      "max_descendant_status_rank": 25,
       "note_hash": "fcb5283f007bdedf0e1e33ae4eafa20fe9fb2cf2a02c8b6c4b87a931e18f973e",
       "note_path": "docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that treating the layernorm propagator and generated-family construction as in-packet helper code is sufficient for this row rather than requiring separate native runner registration against the source note.",
@@ -23801,8 +23801,8 @@
       "load_bearing_score": 2.085,
       "load_bearing_step": "The dense central-band pocket is Born-clean as a bounded mean\u00b1SE statement, and at N=60 the same graph family retains positive gravity while collapse lowers the purity floor.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "meta",
+      "max_descendant_status_rank": 25,
       "note_hash": "6afbf1c8fe8852104a5d7101a32c3f684092f16aa17c76994e33b6b14ae2b905",
       "note_path": "docs/CENTRAL_BAND_DENSE_JOINT_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check whether the finite graph-family parameters and propagation normalizations are accepted as part of the bounded runner setup rather than an unclosed physical bridge; the high-precision max |I3|/P check remains a separate follow-up, not part of this verdict.",
@@ -24351,8 +24351,8 @@
       "load_bearing_score": 2.085,
       "load_bearing_step": "On the densest slice N = 100, both pruned rows fit cleaner power laws than either plain mode, with pruned LN R^2 = 0.994 and pruned linear R^2 = 0.825 versus plain linear R^2 = 0.634 and plain LN R^2 = 0.248.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "meta",
+      "max_descendant_status_rank": 25,
       "note_hash": "801ecfefaab0db42fc4a51bd1e57acf9093f8071827c740f6c736cfd12eea8f4",
       "note_path": "docs/CENTRAL_BAND_MASS_WINDOW_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that the project accepts these DAG and propagator routines as the intended framework primitives for this bounded gravity-side lane.",
@@ -255784,24 +255784,42 @@
       "verdict_rationale": null
     },
     "su3_dabc_symmetric_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-25T19:55:18.461552+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "6b37f7cdf2ecd218a1009ea0d0e60062f6412beeec8547d54904bec0830b3dae",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T195456Z-4ff88cf0-su3_dabc_symmetric_theor-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the algebraic Gell-Mann-basis perimeter, the result follows by trace projection and direct finite-dimensional matrix algebra from the cited normalization. The physical identification of this carrier with SM color is explicitly outside the audited claim scope.",
       "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Algebraic SU(3) Gell-Mann generators T^a=\u03bb^a/2 with Tr[T^aT^b]=(1/2)\u03b4^{ab} satisfy the stated anticommutator decomposition, real totally symmetric d^{abc}, reference table, and combined product identity, without physical SM color identification.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-25T19:55:18.461552+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -255809,20 +255827,22 @@
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Define d^{abc}=2 Tr[{T^a,T^b}T^c] and project the Hermitian anticommutator onto the identity plus the trace-orthonormal Gell-Mann basis to obtain {T^a,T^b}=(1/3)\u03b4^{ab}I_3+d^{abc}T^c.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "54372b216bbcf8fc0528b8150c746e927ac23f6695da2d5a6b5403c55280a7cb",
       "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retain a separate physical-color bridge theorem before using this algebraic SU(3) carrier as physical SM color, QCD amplitudes, four-gluon vertices, or physical quark-color Casimirs.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-11T08:32:51.400245+00:00",
@@ -256176,18 +256196,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/su3_dabc_symmetric_check.py",
       "title": "SU(3) Symmetric Structure Constants d^{abc} from Anticommutator",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The algebraic identities themselves are correctly established from the restricted inputs, and the runner genuinely constructs the Gell-Mann matrices and computes the d and f tensors rather than merely printing constants. However, the sole cited authority repeatedly states that identifying the algebraic carrier with physical SM color remains an open bridge, and the source note also preserves that boundary. The audited content is therefore retained only as an algebraic-carrier theorem, conditional against any downstream physical-color reading."
     },
     "su3_fusion_engine_pr1_theorem_note_2026-05-03": {
       "audit_date": "2026-05-07T11:55:15.887650+00:00",

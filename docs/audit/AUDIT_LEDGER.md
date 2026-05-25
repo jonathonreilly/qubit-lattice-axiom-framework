@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 441 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 14 |
-| unaudited | 1238 |
+| unaudited | 1237 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 16 |
@@ -31,7 +31,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
-| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
+| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
@@ -53,16 +53,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 717 |
 | `audited_conditional` | 90 |
-| `audited_decoration` | 39 |
+| `audited_decoration` | 40 |
 | `audited_failed` | 52 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1465 |
+| `unaudited` | 1464 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1029 |
-| `decoration` | 40 |
+| `bounded_theorem` | 1028 |
+| `decoration` | 41 |
 | `meta` | 231 |
 | `no_go` | 243 |
 | `open_gate` | 110 |
@@ -959,6 +959,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
@@ -10063,6 +10064,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The new readout/time block pins the remaining Route-2 gap to the unresolved readout map entry beta_E / alpha_E, so the branch has only an exact conditional readout-to-slice family rather than a unique exact time-coupling theorem.  _(class `A`)_
 - **chain closes:** True — The conclusion follows as an algebraic synthesis of the two cited retained-grade upstream notes: one supplies the reduced readout obstruction and the other supplies the conditional time-coupling family induced by any chosen readout map.
 - **rationale:** The memo does not close the full positive tensor/time theorem; it narrows the target and states the obstruction. Its load-bearing step is an algebraic consequence of the cited readout-map no-go and time-coupling bounded theorem, both marked retained-grade in the restricted packet. No runner source or stdout is available, so this audit is limited to the note text and cited authorities, but the bounded conclusion itself does not require a missing compute run.
+- **auditor confidence:** high
+
+### `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`S3C3_UNITARY_ANTIUNITARY_AXIS_PERMUTATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/S3C3_UNITARY_ANTIUNITARY_AXIS_PERMUTATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited the finite-dimensional Pauli/Cl(3,0) algebra claim that even axis permutations are unitarily realizable while odd permutations reverse the central volume form and cannot be complex-linear unitary on the fixed generator triple.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T123324Z-272ee90a-s3c3_unitary_antiunitary-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since omega = e1 e2 e3 = iI, an odd axis permutation sends omega to -omega, while any C-linear unitary conjugation preserves iI, so no unitary realizes a transposition on the fixed Pauli generator triple.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the retained Cl(3,0) Pauli realization, omega = iI, permutation parity, and the elementary fact that complex-linear unitary conjugation fixes scalar iI. The note explicitly excludes the downstream physical premise that generation-sector symmetries must be unitary.
+- **rationale:** The runner genuinely computes the Pauli matrix identities, permutation signs, the explicit 3-cycle unitary, and the no-unitary contradiction for transpositions; it does not import fitted values, observational comparators, or hidden helper code. The load-bearing content is a class A algebraic closure over one retained upstream Cl(3,0) authority plus standard finite linear algebra. Because the packet has zero external comparator checks and reduces to a single retained parent claim with standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean.
+- **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `same_family_3d_closure_note`

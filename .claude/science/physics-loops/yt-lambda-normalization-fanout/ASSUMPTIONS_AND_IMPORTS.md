@@ -12,6 +12,9 @@
 | W/Z absolute response | candidate | can fix scale only if same-source and gauge-normalized |
 | FH top/W ratio | candidate | cancels source scale if common source is proved |
 | BRST/FMS operator class | literature support | useful for gauge invariance, not value selection |
+| S6-democratic Q_L source | exact support candidate | selects `1/sqrt(6)` component amplitude on the six color-isospin carrier |
+| Signed-linear source/action tangent | exact support candidate | reads `1/sqrt(6)` amplitude; physical top-coefficient identification remains open |
+| LSP projective probability | exact support boundary | reads `1/6` on the same ray, so it cannot be the Yukawa coefficient by itself |
 
 Forbidden proof imports: `H_unit`, `yt_ward_identity`, `y_t_bare`, observed
 top/Yukawa/W/Z values, `alpha_LM`, plaquette/u0, fitted selectors.

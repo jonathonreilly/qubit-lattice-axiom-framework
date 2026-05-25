@@ -11,3 +11,5 @@ Literature is used for bridge patterns only, not as hidden proof input.
 | Kallen-Lehmann spectral representation | Kallen 1952, https://inspirehep.net/literature/2451 |
 | FH lattice response methods | Example FH lattice QCD transition paper, https://arxiv.org/abs/2305.05491 |
 | EW ST identity/renormalization | Algebraic EW renormalization, https://arxiv.org/abs/hep-th/9809069 |
+| Flavor/Yukawa underdetermination context | Feruglio review, https://link.springer.com/article/10.1140/epjc/s10052-015-3576-5 |
+| Direct top Yukawa measurement pattern | CMS top-Yukawa extraction from `t tbar` kinematics, https://arxiv.org/abs/1907.01590 |

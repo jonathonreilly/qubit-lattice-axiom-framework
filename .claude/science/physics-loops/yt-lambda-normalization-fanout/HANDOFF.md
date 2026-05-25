@@ -5,7 +5,8 @@ The fanout found one strongest path and several guardrails.
 Strongest path after this block:
 
 ```text
-top coefficient theorem or direct top response measurement
+signed-linear democratic Q_L source tangent theorem
+  -> top coefficient theorem or direct top response measurement
   + already closed neutral carrier-ray source
   + already closed W/Z denominator response
   + already closed symbolic top response row shape
@@ -30,7 +31,22 @@ positive theorem must supply the numerator:
 
 ```text
 neutral carrier-ray source
-  -> top coefficient theorem or direct top response measurement
+  -> prove physical top coefficient is the signed-linear democratic Q_L tangent
+  -> or direct top response measurement
 ```
+
+The best new-science candidate from the axiom-only pass is precise:
+
+```text
+A1+A2 alone: coefficient underdetermined
+S6-democratic Q_L source: component amplitude = 1/sqrt(6)
+LSP projective readout: component probability = 1/6
+signed linear action/source tangent: component coefficient = 1/sqrt(6)
+```
+
+So the next bridge is not "find the number."  The number is now an exact
+candidate from the axiom-native source geometry.  The bridge is "why the
+Yukawa coefficient reads the signed linear tangent rather than projective
+probability or an arbitrary source vector."
 
 Keep observed W/Z/top masses comparator-only.

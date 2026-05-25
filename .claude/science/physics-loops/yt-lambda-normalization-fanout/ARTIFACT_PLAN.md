@@ -29,10 +29,20 @@ Landed in this packet:
 - `docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md`
 - `scripts/frontier_yt_strict_symbolic_top_response_row_packet.py`
 - `outputs/yt_strict_symbolic_top_response_row_packet_2026-05-25.json`
+- `docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_top_coefficient_full_court_press.py`
+- `outputs/yt_top_coefficient_full_court_press_2026-05-25.json`
+- `docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py`
+- `outputs/yt_qubit_democratic_top_coefficient_candidate_2026-05-25.json`
+- `docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md`
+- `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
+- `outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json`
 
 Candidate follow-on artifacts:
 
-- Top coefficient theorem note and runner.
+- Signed-linear democratic Q_L source tangent -> physical top coefficient theorem note and runner.
+- Broader top coefficient theorem note and runner if the signed-linear bridge fails.
 - Direct strict top correlator/response measurement packet.
 - Same-surface canonical scalar kinetic/LSZ theorem note and runner.
 - BRST/FMS scalar-normalization boundary note and runner.

@@ -1,0 +1,21 @@
+{
+  "boundary": {
+    "candidate_available": true,
+    "democratic_component_amplitude": "1/sqrt(6)",
+    "physical_top_coefficient_bridge_closed": false
+  },
+  "fail_count": 0,
+  "pass_count": 42,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The democratic component amplitude is derived, but the physical bridge identifying it with y_33 remains open.",
+  "review_surface": [
+    "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py",
+    "outputs/yt_qubit_democratic_top_coefficient_candidate_2026-05-25.json"
+  ],
+  "status": "exact support candidate: democratic Q_L component amplitude is 1/sqrt(6)",
+  "upstream_statuses": {
+    "ew_mass": "retained",
+    "source_action": "retained_bounded"
+  }
+}

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 451 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1258 |
+| unaudited | 1257 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 87 |
+| ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 731 |
-| `audited_conditional` | 87 |
+| `audited_conditional` | 88 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1487 |
+| `unaudited` | 1486 |
 
 | claim_type | count |
 |---|---:|
@@ -898,6 +898,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | exact_algebraic_identity_on_admitted_carrier | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6624,6 +6625,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional d=3 post-quotient MRU algebra on the reduced carrier (rho_+, rho_perp) under the explicit A_SO2 factor-through admission; not a derivation of A_SO2 itself.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T191144Z-59907c29-koide_moment_ratio_unifo-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the SO(2) frame-quotient on the charged-lepton scalar lane, the reduced two-slot carrier D_red = diag(rho_+, rho_perp) has log-volume extremum rho_+ = rho_perp, hence E_+ = E_perp <=> kappa = 2.  _(class `A`)_
+- **chain closes:** True — Within the explicitly conditional scope, the algebra closes: after assuming A_SO2, the runner verifies the reduced log-volume extremum and pullback to kappa = 2. The SO(2) factor-through premise remains an unclosed import, so closure is not unconditional.
+- **rationale:** The runner genuinely computes the linear algebra and Lagrange multiplier steps, and it also exhibits tr(H^3) angle dependence as evidence that generic Herm_circ(3) scalar observables do not factor through the SO(2) radius. However, the physical step that makes the two-slot carrier applicable is the named A_SO2 admission, and the restricted packet contains no retained theorem deriving it. No-Go Discipline N1-N8 were applied as a guard against overclaiming the residual: the packet supports only the collapsed A_SO2 wall and the failure of the naive observable-principle route, not a clean negative boundary against all possible future bridge routes. Therefore the result is valid only as conditional post-quotient algebra.
 - **auditor confidence:** high
 
 ### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`

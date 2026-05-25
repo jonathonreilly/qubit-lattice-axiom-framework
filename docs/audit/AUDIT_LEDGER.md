@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 422 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 14 |
-| unaudited | 1281 |
+| unaudited | 1280 |
 | meta | 227 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 15 |
+| ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -55,8 +55,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 36 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 15 |
-| `unaudited` | 1508 |
+| `audited_renaming` | 16 |
+| `unaudited` | 1507 |
 
 | claim_type | count |
 |---|---:|
@@ -996,6 +996,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -8183,6 +8184,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The dependency supplies b=-n_color a and b=-1 as retained-bounded inputs, and the source note explicitly treats SHIFT and NEUTRAL_BRANCH as hypotheses/conventions rather than derived physics. Within that narrowed scope, the anomaly cancellations are exact algebraic identities.
 - **rationale:** The theorem is narrow enough to avoid claiming a derivation of the branch, n_color=3, chirality, or SM identification. The runner hard-codes the SHIFT completion, but that is not a defect for this scoped claim because the note states it is checking a fixed algebraic completion under imposed SHIFT/branch assumptions. No external comparator or first-principles physics bridge is needed for the bounded theorem as written.
 - **auditor confidence:** high
+
+### `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`
+
+- **Note:** [`ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the umbrella note only as a named-import wrapper for five frontier helper modules, with the provided one-hop authority for the coarse-grained exterior helper.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T110953Z-2df54087-one_parameter_reduced_sh-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The wrapper's only function is to provide a citeable one-hop authority for the five helper modules used by the parent runner.  _(class `E`)_
+- **chain closes:** False — The note establishes an administrative wrapper/definition rather than deriving or independently validating the five helper modules. The restricted packet provides a retained authority for the coarse-grained exterior helper but not comparable one-hop authorities or source evidence for the other named helpers.
+- **rationale:** The load-bearing move is the creation of a citeable umbrella handle for existing helper-module imports, which is class E definition rather than a derivation. The note explicitly disclaims framework derivations, stronger upstream status, and closure of the parent theorem's tensorial blocker. No runner or helper sources are provided for this umbrella itself, and the single cited retained authority only covers one of the five helper roles.
+- **auditor confidence:** medium
 
 ### `ordered_lattice_packet_reidentification_note`
 

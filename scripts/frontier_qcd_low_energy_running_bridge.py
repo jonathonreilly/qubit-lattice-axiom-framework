@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""QCD Low-Energy Running Bridge: alpha_s(v) -> alpha_s(M_Z) on standard infrastructure.
+"""QCD Running-Kernel Bridge: admitted alpha_s(v) -> alpha_s(M_Z).
 
-Status: bounded same-surface running bridge using standard SM 2-loop RGE
+Status: bounded running-kernel support using standard SM 2-loop RGE
         (Machacek-Vaughn 1984; Arason et al 1992) with quark-mass threshold
-        matching.  Not framework-native; this runner verifies the bridge
-        as registered standard infrastructure consistent with PDG 2025.
+        matching. Not framework-native; this runner verifies the transfer
+        kernel at an admitted alpha_s(v) boundary value.
 
 Verifies the claims of QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md:
 
   1. 1-loop QCD beta coefficient b_3(n_f) sanity.
   2. Threshold continuity at m_t, m_b, m_c (LO continuity).
   3. One-decade transfer alpha_s(v=246.28) -> alpha_s(M_Z=91.19).
-  4. Bridge independence from the upstream plaquette analytic insertion
-     (a varied alpha_s(v) propagates through the same RGE structure).
+  4. Kernel independence from boundary provenance
+     (a varied admitted alpha_s(v) propagates through the same RGE structure).
   5. Truncation envelope: 1-loop vs 2-loop residual.
   6. Cross-check against PDG world average.
 
@@ -34,7 +34,7 @@ M_T_POLE = 172.69      # GeV
 M_B_MSBAR = 4.18       # GeV
 M_C_MSBAR = 1.27       # GeV
 M_Z = 91.1876          # GeV
-V_FRAMEWORK = 246.282818290129  # GeV (framework hierarchy theorem, for boundary)
+V_BOUNDARY = 246.282818290129  # GeV, admitted electroweak boundary scale
 
 # -- PDG 2025 reference values used as comparator only --
 ALPHA_S_MZ_PDG = 0.1180
@@ -42,12 +42,9 @@ ALPHA_S_MZ_PDG_SIGMA = 0.0009
 ALPHA_S_MZ_RESTRICTED = 0.1179
 ALPHA_S_MZ_RESTRICTED_SIGMA = 0.0008
 
-# -- Framework boundary inputs (see ALPHA_S_DERIVED_NOTE.md and PLAQUETTE_SELF_CONSISTENCY_NOTE.md) --
-PLAQ = 0.5934
-U0 = PLAQ ** 0.25
-ALPHA_BARE = 1.0 / (4.0 * PI)
-ALPHA_S_V_FRAMEWORK = ALPHA_BARE / U0 ** 2  # = 0.1033... on the canonical chain
-G_S_V_FRAMEWORK = np.sqrt(4.0 * PI * ALPHA_S_V_FRAMEWORK)
+# -- Admitted running-kernel boundary input --
+ALPHA_S_V_ADMITTED = 0.103304
+G_S_V_ADMITTED = np.sqrt(4.0 * PI * ALPHA_S_V_ADMITTED)
 
 
 def check(name: str, condition: bool, detail: str = "", kind: str = "BOUNDED") -> bool:
@@ -197,7 +194,7 @@ def run_2loop_v_to_mz(g3_at_v, g1_at_v=None, g2_at_v=None, yt_at_v=None, lam_at_
     if lam_at_v is None:
         lam_at_v = 0.13
 
-    t_v = np.log(V_FRAMEWORK)
+    t_v = np.log(V_BOUNDARY)
     t_mz = np.log(M_Z)
     y_cur = [g1_at_v, g2_at_v, g3_at_v, yt_at_v, lam_at_v]
     for t_s, t_e, nfa in threshold_segments(t_v, t_mz):
@@ -210,7 +207,7 @@ def run_2loop_v_to_mz(g3_at_v, g1_at_v=None, g2_at_v=None, yt_at_v=None, lam_at_
 
 def run_1loop_v_to_mz(g3_at_v):
     """Run a 1-loop QCD-only bridge from v to M_Z and return alpha_s(M_Z)."""
-    t_v = np.log(V_FRAMEWORK)
+    t_v = np.log(V_BOUNDARY)
     t_mz = np.log(M_Z)
     g3_cur = g3_at_v
     for t_s, t_e, nfa in threshold_segments(t_v, t_mz):
@@ -240,8 +237,8 @@ def part_1_beta_sanity():
 
 def part_2_threshold_continuity():
     print("\n=== Part 2: threshold-matching continuity ===\n")
-    t_v = np.log(V_FRAMEWORK)
-    g3_v = G_S_V_FRAMEWORK
+    t_v = np.log(V_BOUNDARY)
+    g3_v = G_S_V_ADMITTED
     t_mt = np.log(M_T_POLE)
     g3_at_mt_from_above = run_g3_segment_1loop(g3_v, t_v, t_mt, n_f_active=6)
     g3_at_mt_alt = run_g3_segment_1loop(g3_v, t_v, t_mt, n_f_active=5)
@@ -258,9 +255,9 @@ def part_2_threshold_continuity():
 
 def part_3_one_decade_transfer():
     print("\n=== Part 3: one-decade transfer v -> M_Z ===\n")
-    g3_v = G_S_V_FRAMEWORK
+    g3_v = G_S_V_ADMITTED
     alpha_s_mz_2loop = run_2loop_v_to_mz(g3_v)
-    print(f"  Boundary: alpha_s(v={V_FRAMEWORK:.2f} GeV) = {ALPHA_S_V_FRAMEWORK:.6f}")
+    print(f"  Boundary: alpha_s(v={V_BOUNDARY:.2f} GeV) = {ALPHA_S_V_ADMITTED:.6f} (admitted)")
     print(f"  Result:   alpha_s(M_Z={M_Z:.4f} GeV) = {alpha_s_mz_2loop:.6f}")
     print(f"  PDG ref:  0.1180 +/- 0.0009")
     rel_pdg = abs(alpha_s_mz_2loop - ALPHA_S_MZ_PDG) / ALPHA_S_MZ_PDG
@@ -279,9 +276,9 @@ def part_3_one_decade_transfer():
     return alpha_s_mz_2loop
 
 
-def part_4_bridge_independence():
-    print("\n=== Part 4: bridge structural independence from plaquette insertion ===\n")
-    print("  Varying alpha_s(v) in [0.0950, 0.1100] (a 7% window around 0.1033):")
+def part_4_boundary_provenance_independence():
+    print("\n=== Part 4: kernel independence from boundary provenance ===\n")
+    print("  Varying admitted alpha_s(v) in [0.0950, 0.1100] (a 7% window around 0.1033):")
     print(f"  {'alpha_s(v)':>12s} {'g_3(v)':>10s} {'alpha_s(M_Z)':>14s}")
     print("  " + "-" * 44)
     rows = []
@@ -295,20 +292,20 @@ def part_4_bridge_independence():
         if last is not None and amz <= last:
             monotone = False
         last = amz
-    check("alpha_s(M_Z) monotonically tracks alpha_s(v) (bridge has no hidden discontinuity)",
+    check("alpha_s(M_Z) monotonically tracks alpha_s(v) (kernel has no hidden discontinuity)",
           monotone,
           "monotone propagation across the full 7% window")
     spread_v = rows[-1][0] - rows[0][0]
     spread_mz = rows[-1][2] - rows[0][2]
     transfer_jacobian = spread_mz / spread_v
-    check("bridge transfer Jacobian d(alpha_s(M_Z)) / d(alpha_s(v)) is structurally consistent",
+    check("kernel transfer Jacobian d(alpha_s(M_Z)) / d(alpha_s(v)) is structurally consistent",
           1.0 < transfer_jacobian < 1.5,
           f"d(alpha_s(M_Z))/d(alpha_s(v)) = {transfer_jacobian:.4f} (compressive RGE flow)")
 
 
 def part_5_truncation_envelope():
     print("\n=== Part 5: 1-loop vs 2-loop truncation envelope ===\n")
-    g3_v = G_S_V_FRAMEWORK
+    g3_v = G_S_V_ADMITTED
     a_2l = run_2loop_v_to_mz(g3_v)
     a_1l = run_1loop_v_to_mz(g3_v)
     delta = abs(a_2l - a_1l)
@@ -327,7 +324,7 @@ def part_5_truncation_envelope():
 
 def part_6_pdg_envelope():
     print("\n=== Part 6: PDG envelope cross-check ===\n")
-    g3_v = G_S_V_FRAMEWORK
+    g3_v = G_S_V_ADMITTED
     a_2l = run_2loop_v_to_mz(g3_v)
     in_pdg = abs(a_2l - ALPHA_S_MZ_PDG) <= ALPHA_S_MZ_PDG_SIGMA
     in_restricted = abs(a_2l - ALPHA_S_MZ_RESTRICTED) <= 2.0 * ALPHA_S_MZ_RESTRICTED_SIGMA
@@ -359,19 +356,19 @@ def part_7_scope_assertions():
 
 def main() -> None:
     print("=" * 78)
-    print("QCD Low-Energy Running Bridge: alpha_s(v) -> alpha_s(M_Z)")
+    print("QCD Running-Kernel Bridge: admitted alpha_s(v) -> alpha_s(M_Z)")
     print("=" * 78)
     print()
-    print("Bounded-scope same-surface running bridge using standard SM 2-loop")
+    print("Bounded-scope running kernel using standard SM 2-loop")
     print("RGE plus quark-mass threshold matching at m_t, m_b, m_c.")
-    print(f"Boundary: alpha_s(v={V_FRAMEWORK:.2f}) = {ALPHA_S_V_FRAMEWORK:.6f}")
+    print(f"Boundary: alpha_s(v={V_BOUNDARY:.2f}) = {ALPHA_S_V_ADMITTED:.6f} (admitted)")
     print(f"Target:   alpha_s(M_Z={M_Z:.4f}) ~ 0.1180 +/- 0.0009 (PDG)")
     print()
 
     part_1_beta_sanity()
     part_2_threshold_continuity()
     part_3_one_decade_transfer()
-    part_4_bridge_independence()
+    part_4_boundary_provenance_independence()
     part_5_truncation_envelope()
     part_6_pdg_envelope()
     part_7_scope_assertions()

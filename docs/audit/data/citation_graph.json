@@ -21441,14 +21441,6 @@
       "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
     {
-      "from": "qcd_low_energy_running_bridge_note_2026-05-01",
-      "to": "plaquette_self_consistency_note"
-    },
-    {
-      "from": "qcd_low_energy_running_bridge_note_2026-05-01",
-      "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-    },
-    {
       "from": "qnm_hardening_feasibility_note",
       "to": "poisson_self_gravity_loop_note"
     },
@@ -72412,15 +72404,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "de4b92472480093be07339ca58deb88ea3a4df8068361de1efe9609ec97628e5",
+      "note_hash": "82ec39f152cea4749d81e8b93f3d95754939726bf8935d500004df0374b9f0f1",
       "path": "docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md",
       "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
-      "title": "QCD Low-Energy Running Bridge: `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note"
+      "title": "QCD Running-Kernel Bridge: admitted `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note"
     },
     "qnm_control_hardening_note": {
       "claim_id": "qnm_control_hardening_note",
@@ -84785,6 +84774,7 @@
     "publication.ci3_z3.release_environment",
     "publication.ci3_z3.reproducibility_freeze_2026-04-14",
     "publication_ci3_z3_claims_table_note_2026-05-17",
+    "qcd_low_energy_running_bridge_note_2026-05-01",
     "qnm_control_hardening_note",
     "quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28",
     "quark_c3_circulant_source_law_boundary_note_2026-04-28",
@@ -85052,10 +85042,10 @@
       "open_gate": 126,
       "positive_theorem": 600
     },
-    "edge_count": 9740,
+    "edge_count": 9738,
     "leaf_count": 773,
     "node_count": 2518,
-    "root_count": 828,
+    "root_count": 829,
     "runners_with_path": 2079
   }
 }

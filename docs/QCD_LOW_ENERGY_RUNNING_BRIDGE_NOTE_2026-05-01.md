@@ -1,8 +1,14 @@
-# QCD Low-Energy Running Bridge: `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note
+# QCD Running-Kernel Bridge: admitted `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note
 
-**Date:** 2026-05-01 (bounded source hint added 2026-05-24)
+**Date:** 2026-05-01 (bounded source hint added 2026-05-24; boundary
+narrowed 2026-05-25)
 **Type:** bounded_theorem
-**Status:** bounded - bounded-scope same-surface running bridge using standard SM infrastructure (Machacek-Vaughn 2-loop RGE plus quark-mass threshold matching). Not framework-native; scoped explicitly to acknowledge external physics inputs.
+**Status:** bounded support for the standard running kernel only. Given an
+admitted input value `alpha_s(v)`, this note verifies the standard
+SM/QCD running transfer to `M_Z` using external infrastructure
+(Machacek-Vaughn 2-loop RGE plus quark-mass threshold matching). It does
+not derive `alpha_s(v)` from the framework plaquette chain and does not
+promote the PDG comparator into a framework-native prediction.
 **Primary runner:** `scripts/frontier_qcd_low_energy_running_bridge.py`
 
 ## Why this note exists
@@ -18,21 +24,23 @@ one-hop authority. The Codex audit verdict on `alpha_s_derived_note`
 > Repair target: cite and audit the running-bridge theorem/threshold map and
 > close or explicitly scope the plaquette beta=6 insertion status.
 
-This note registers the bridge explicitly. The bridge itself is not a
-framework-native theorem; it is the standard QCD running of the strong
+This note registers the running kernel explicitly. The kernel itself is not
+a framework-native theorem; it is the standard QCD running of the strong
 coupling, which the framework reuses as standard infrastructure on the same
 footing as PDG quark-mass thresholds and the standard MSbar 2-loop SM RGE
-beta functions. The author tier is therefore `bounded`, not
+beta functions. The source note does not make the upstream plaquette value
+a one-hop premise of this row; `alpha_s(v)` is an admitted numerical
+boundary input for the kernel check. The author tier is therefore `bounded`, not
 `proposed_retained`. The `Type: bounded_theorem` source hint is an authoring
 queue hint only; independent audit still owns `claim_type`, `audit_status`,
 and any effective `retained_bounded` propagation.
 
 ## Claim
 
-On a same-surface initial condition
+On an admitted initial condition
 
 ```text
-alpha_s(v) = alpha_bare / u_0^2 = 0.1033        (framework input)
+alpha_s(v) = 0.103304                           (admitted boundary input)
 v          = 246.282818290129 GeV               (framework hierarchy theorem)
 ```
 
@@ -47,15 +55,15 @@ alpha_s(M_Z) = 0.1181 +/- 0.0009              (PDG one-sigma envelope)
 reproducing the PDG 2025 world-average central value
 `alpha_s(M_Z) = 0.1180 +/- 0.0009` within stated uncertainty.
 
-This note treats that bridge as a numerical transfer of a same-surface
-running observable, not as a derivation of `alpha_s(M_Z)` from first
-principles. It is bounded by:
+This note treats that bridge as a numerical transfer of an admitted running
+observable, not as a derivation of `alpha_s(M_Z)` from first principles.
+It is bounded by:
 
 1. the truncation order of the SM RGE (2-loop here; 4-loop QCD is the PDG
    reference);
 2. the chosen quark-mass thresholds (`m_t = 172.69 GeV` pole,
    `m_b = 4.18 GeV` MSbar, `m_c = 1.27 GeV` MSbar);
-3. the assumed boundary value `alpha_s(v)` from the plaquette/u_0 chain.
+3. the admitted boundary value `alpha_s(v)`.
 
 Each of those inputs is documented and held fixed; the bridge is not
 adjusted to fit `alpha_s(M_Z)`.
@@ -68,8 +76,10 @@ This note **does not** claim:
 - a framework-native derivation of the quark-mass thresholds `m_t`, `m_b`,
   `m_c` (these are imported from PDG as standard infrastructure);
 - a framework-native derivation of `M_Z` (also PDG-imported);
-- audit-clean closure of `alpha_s(M_Z) = 0.1181` independent of the upstream
+- a framework-native derivation of `alpha_s(v)` from the upstream
   plaquette dependency;
+- audit-clean closure of `alpha_s(M_Z) = 0.1181` independent of the admitted
+  input and PDG infrastructure;
 - precision better than the 2-loop SM RGE truncation envelope.
 
 This note **does** claim, on the bounded same-surface running scope:
@@ -77,13 +87,12 @@ This note **does** claim, on the bounded same-surface running scope:
 - the existing `frontier_yt_zero_import_chain.py` 2-loop RGE block is the
   standard Machacek-Vaughn (1984) / Arason et al. (1992) two-loop SM RGE
   with explicit threshold matching;
-- when fed the framework boundary values
+- when fed the admitted boundary values
   `(g_1(v), g_2(v), g_3(v), y_t(v), lambda(v))`, the run from `v` to
   `M_Z` reproduces `alpha_s(M_Z) = 0.1181` to within the runner's
   `2%`-of-observed tolerance;
-- the bridge is independent of the analytic `beta = 6` insertion status of
-  the upstream plaquette (any plaquette evaluation that gives a fixed
-  `alpha_s(v)` propagates the same way).
+- the kernel is independent of the source of the admitted boundary value
+  (any accepted `alpha_s(v)` propagates through the same running map).
 
 ## Standard infrastructure references
 
@@ -125,8 +134,8 @@ Three structural facts force the `bounded` tier here:
 A `proposed_retained` claim would assert that this bridge is derivable
 from `Cl(3)` on `Z^3` axioms alone. That claim is not in scope here. The
 honest claim is the narrower one: given standard QCD running infrastructure
-plus the framework's `alpha_s(v)`, the v -> M_Z transfer is consistent with
-the PDG world average within the 2-loop truncation envelope.
+plus an admitted `alpha_s(v)`, the v -> M_Z transfer is consistent with the
+PDG world average within the 2-loop truncation envelope.
 
 ## Verification surface
 
@@ -144,12 +153,11 @@ The runner `scripts/frontier_qcd_low_energy_running_bridge.py` checks:
    boundary
    `alpha_s(v) = 0.1033` at `v = 246.28 GeV`, the 2-loop SM RGE running
    downward to `M_Z = 91.1876 GeV` with the threshold map above gives
-   `alpha_s(M_Z) ≈ 0.1181`, within 2% of the PDG world average.
-4. **Bridge independence from plaquette analytic insertion.** A varied
-   `alpha_s(v)` (representing different evaluations of the upstream
-   plaquette) propagates monotonically through the bridge without
-   changing the bridge's structural form. This isolates the bridge from
-   the plaquette-side insertion gap.
+  `alpha_s(M_Z) ≈ 0.1181`, within 2% of the PDG world average.
+4. **Kernel independence from boundary provenance.** A varied
+   `alpha_s(v)` propagates monotonically through the bridge without
+   changing the bridge's structural form. This isolates the running kernel
+   from the plaquette-side derivation problem.
 5. **Truncation envelope.** A 1-loop-only re-run gives a different
    `alpha_s(M_Z)` value, and the 1-loop -> 2-loop shift bounds the
    higher-loop residual envelope, which is then conservatively quoted.
@@ -159,23 +167,20 @@ The runner `scripts/frontier_qcd_low_energy_running_bridge.py` checks:
 
 ## Cited authorities (one hop)
 
-- [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-  — provides the boundary `<P> = 0.5934`, hence `alpha_s(v) = 0.1033`.
-  This dependency is read as a value transfer (class `B` in the audit
-  rubric); the running bridge does not require the analytic `beta = 6`
-  insertion to be closed.
+No repository source note is load-bearing for this narrowed running-kernel
+claim. The bridge takes `alpha_s(v)` as an admitted boundary input and
+uses external standard-infrastructure references listed above. Upstream
+framework derivation of that boundary value remains the responsibility of
+the plaquette / `alpha_s` source rows, not this kernel row.
 
 The runner reuses the same 2-loop SM RGE block that appears in
 `scripts/frontier_yt_zero_import_chain.py`; that runner is referenced by
 file path (not by markdown link to a sibling note) to avoid creating a
 citation back-edge into a downstream consumer.
 
-The framework boundary inputs (`g_bare^2 = 1`, `Cl(3)` graph-first gauge
-surface) are referenced by name only, since the inventory note that
-catalogs them (`MINIMAL_AXIOMS_2026-04-11.md`) currently sits at terminal
-`audited_conditional` due to a renaming-class load-bearing step in that
-inventory; making it a one-hop dep would propagate that conditional
-verdict downstream without adding any new bridge content.
+The framework boundary inputs are referenced by name only as provenance for
+downstream consumers. They are not load-bearing for this narrowed kernel
+row because the kernel is defined for any admitted `alpha_s(v)` value.
 
 ## Explicit non-claims
 
@@ -191,45 +196,31 @@ verdict downstream without adding any new bridge content.
 ## Reuse rule
 
 Downstream lanes may cite this note as the registered one-hop authority
-for the v -> M_Z transfer of `alpha_s` provided they explicitly read the
-result as `bounded` (PDG-truncation-envelope), not as a first-principles
-derivation. In particular, `ALPHA_S_DERIVED_NOTE.md` is the primary
-downstream consumer; that note cites this one as its registered
-v -> M_Z bridge so that its quoted `alpha_s(M_Z) = 0.1181` has a
-documented one-hop running-bridge dependency.
+for the v -> M_Z transfer kernel of `alpha_s` provided they explicitly
+read the result as `bounded` (PDG-truncation-envelope), not as a
+first-principles derivation. Any downstream claim that the admitted input
+`alpha_s(v)` is framework-derived must cite a separate retained-grade
+boundary authority.
 
-## Bridge-support progress 2026-05-09 (upstream plaquette boundary)
+## Historical context: upstream plaquette boundary
 
 The 2026-05-05 audit pass on this row recorded the explicit repair
 target:
 
-> dependency_not_retained: retain or replace
-> docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md with a retained-grade
-> boundary authority for alpha_s(v), and separately register the
+> dependency_not_retained: retain or replace the plaquette
+> self-consistency source with a retained-grade boundary authority for
+> alpha_s(v), and separately register the
 > imported SM RGE/threshold infrastructure as an explicit bounded
 > retained dependency.
 
-A first concrete piece of the upstream plaquette boundary repair
-target landed audited_clean on 2026-05-09 in
-[`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md).
-That delivery is a bounded finite-box computation of the normalized
-single-link SU(3) Wilson boundary character coefficients
-`rho_(p,q)(6)` for `0 <= p,q <= 4` by two independent methods.
+That target now belongs to the upstream plaquette / alpha_s boundary rows.
+This narrowed row does not cite those rows as one-hop authorities and does
+not request audit credit for their progress. The honest read remains:
 
-That audited_clean coefficient table does not by itself close either
-the upstream analytic `beta = 6` insertion or the SM RGE / threshold
-infrastructure imports of this bridge note. The honest read remains:
-
-- this row is correctly carried as `bounded`;
-- the load-bearing step is class `(G)` (numerical match at an
-  imported `alpha_s(v)`); that classification is not affected by the
-  rho_(p,q)(6) audited_clean delivery, which is upstream of the
-  plaquette evaluation rather than at the bridge step;
+- this row is bounded running-kernel support;
+- the load-bearing step is the implemented RGE/threshold transfer at an
+  admitted `alpha_s(v)` boundary;
 - the SM RGE / quark-mass threshold imports remain explicit
   standard-infrastructure references that this note does not derive;
-- retained-grade propagation remains blocked until both the upstream
-  plaquette analytic insertion gap is closed and the SM RGE / threshold
-  infrastructure is registered with retained-grade audit cover.
-
-This subsection is informational reuse-discipline only; it does not
-request a clean audit verdict and does not amend the load-bearing step.
+- retained-grade propagation of a framework-derived `alpha_s(M_Z)` remains
+  blocked until a separate boundary authority derives `alpha_s(v)`.

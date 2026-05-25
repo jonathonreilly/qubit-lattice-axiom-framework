@@ -1,0 +1,47 @@
+loop: qcd-running-bridge-boundary-repair
+date: 2026-05-25
+branch: physics-loop/qcd-running-bridge-boundary-repair-block14-20260525
+base: origin/main@d576be499
+mode: run
+target: bounded-support
+cycle: 1
+active_route: narrow_qcd_bridge_to_running_kernel
+hard_residual: framework_derivation_of_alpha_s_v_remains_upstream_plaquette_alpha_s_work
+files_touched:
+  - docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md
+  - scripts/frontier_qcd_low_energy_running_bridge.py
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/audit_ledger.json
+claim_status:
+  claim_id: qcd_low_energy_running_bridge_note_2026-05-01
+  actual_current_surface_status: bounded-support
+  conditional_surface_status: framework-derived alpha_s(M_Z) only after separate retained alpha_s(v) boundary
+  hypothetical_axiom_status: null
+  admitted_observation_status: alpha_s(v), M_Z, quark thresholds, PDG comparator
+  claim_type_author_hint_after_repair: bounded_theorem
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  audit_queue_rank_after_pipeline: 2
+  ready_after_pipeline: true
+  proposal_allowed: false
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+dependency_delta:
+  before:
+    - plaquette_self_consistency_note
+    - gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09
+  after: []
+verification_completed:
+  - python3 -m py_compile scripts/frontier_qcd_low_energy_running_bridge.py
+  - python3 scripts/frontier_qcd_low_energy_running_bridge.py
+  - bash docs/audit/scripts/run_pipeline.sh
+  - python3 docs/audit/scripts/audit_lint.py --strict
+  - git diff --check
+  - python3 scripts/render_controlled_vocabulary.py --check
+  - python3 scripts/vocab_lint.py --report-only docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md scripts/frontier_qcd_low_energy_running_bridge.py .claude/science/physics-loops/qcd-running-bridge-boundary-repair
+verification_notes:
+  - audit_lint strict returned OK with existing legacy warnings/notices only
+  - runner result PASS 18 / FAIL 0
+  - repaired row deps after pipeline: []
+next_exact_action: commit, push, and open PR
+stop_condition: coherent bounded-support kernel repair packaged for independent audit

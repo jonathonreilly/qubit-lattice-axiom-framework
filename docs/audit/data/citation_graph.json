@@ -62995,14 +62995,14 @@
     },
     "lattice_total_momentum_conservation_theorem_note_2026-05-02": {
       "claim_id": "lattice_total_momentum_conservation_theorem_note_2026-05-02",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "axiom_first_lattice_noether_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bef9915c435817f41dd6c9801ba8339e77012f17fbf052b0a150b9503109a63",
+      "note_hash": "3ba627049673f1a7d6140ec2b20c759c02cdcce7389047435ff1002aafd6f700",
       "path": "docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/lattice_total_momentum_conservation_check.py",
       "title": "Lattice Total Momentum Conservation from Retained Lattice Noether"
@@ -85306,22 +85306,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 584,
+      "bounded_theorem": 585,
       "decoration": 1,
       "meta": 191,
       "no_go": 73,
       "none": 1465,
       "open_gate": 47,
-      "positive_theorem": 173
+      "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1011,
+      "bounded_theorem": 1012,
       "decoration": 1,
       "meta": 191,
       "no_go": 176,
       "none": 434,
       "open_gate": 125,
-      "positive_theorem": 596
+      "positive_theorem": 595
     },
     "edge_count": 9753,
     "leaf_count": 788,

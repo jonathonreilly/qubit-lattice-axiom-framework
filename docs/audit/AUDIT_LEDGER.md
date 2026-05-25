@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 458 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 110 |
+| ~~audited_conditional~~ | 111 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -52,12 +52,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 740 |
-| `audited_conditional` | 110 |
+| `audited_conditional` | 111 |
 | `audited_decoration` | 41 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1454 |
+| `unaudited` | 1453 |
 
 | claim_type | count |
 |---|---:|
@@ -972,6 +972,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `yt_same_source_ew_higgs_authority_gate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -14013,6 +14014,22 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The physical Yukawa coefficient is the signed linear action-tangent component of the democratic Q_L source.  _(class `F`)_
 - **chain closes:** False — The finite-dimensional democratic-source calculation closes, but the claimed bridge to the strict top Yukawa coefficient is explicitly left open. The missing step is a retained source/action theorem identifying the physical top Yukawa coefficient with the signed linear action-tangent component.
 - **rationale:** The runner verifies algebraic facts about normalized vectors, S6 democracy, projective weights, and linear source tangents, and it checks retained-grade ledger statuses for upstream support. It does not derive the physical Yukawa identification; the note itself states that this bridge remains open. No-Go gate N1 fails for a clean bounded negative boundary because the packet does not enumerate five independent attack routes to exclude alternative bridge closures.
+- **auditor confidence:** high
+
+### `yt_same_source_ew_higgs_authority_gate_note_2026-05-25`
+
+- **Note:** [`YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md`](../../docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Current-surface authority gate for the Y_T same-source top/W FH route: signed-record source, carrier-ray alignment, and W/Z denominator support are insufficient to certify same-source top transfer.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201540Z-50248cdf-yt_same_source_ew_higgs_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The top/W response ratio can cancel that Jacobian if the top sector shares the same v(h), but the current surface does not prove it does.  _(class `A`)_
+- **chain closes:** False — The algebraic non-identifiability witness supports the conditional obstruction, but the restricted packet does not provide a retained theorem mapping the Y_T source h into the neutral Higgs radial background on the top transfer surface. The runner checks artifact/status presence and absence of a specific certificate, not a closed same-source top response derivation.
+- **rationale:** The runner contains genuine algebraic checks of the signed-record RN score, EW doublet action, and arbitrary radial-slope witness, so the load-bearing obstruction is class A rather than a numerical match or external comparator. However, the note's conclusion still depends on open same-source top transfer authority: carrier-ray/WZ support and a symbolic top row do not certify Mt(h) and MW(h) on one transfer surface. Under the No-Go Discipline scan, N1/N7 do not support a clean negative boundary because the packet itself leaves the top transfer-response route open rather than closing all attack routes. The runner's missing-certificate check is useful repository hygiene but is not a first-principles proof that no alternate retained top-response authority exists.
+- **open / conditional deps cited:**
+  - `YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`
+  - `YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

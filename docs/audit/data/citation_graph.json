@@ -9553,10 +9553,6 @@
       "to": "alt_connectivity_family_fm_transfer_note"
     },
     {
-      "from": "fermion_parity_z2_grading_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
-    },
-    {
       "from": "field_equation_derivation_note",
       "to": "self_consistency_forces_poisson_note"
     },
@@ -53276,11 +53272,9 @@
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "59d2538cb2deaa2101b48926a32d136a544f25694720cb426cc72d4b3886d5c7",
+      "note_hash": "91c75b267ac053856bfc6457eefadc5265129689288e7264316fe0260bc6a385",
       "path": "docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/fermion_parity_z2_grading_check.py",
       "title": "Fermion Parity (-1)^Q\u0302 and Z_2 Grading on Framework Fock Space"
@@ -84480,6 +84474,7 @@
     "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
     "experiment_backmatch_query_pack_note",
     "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+    "fermion_parity_z2_grading_theorem_note_2026-05-02",
     "fifth_family_complex_boundary_note",
     "fifth_family_radial_boundary_note",
     "fine_h_family_universality_note",
@@ -85042,10 +85037,10 @@
       "open_gate": 126,
       "positive_theorem": 600
     },
-    "edge_count": 9738,
+    "edge_count": 9737,
     "leaf_count": 773,
     "node_count": 2518,
-    "root_count": 829,
+    "root_count": 830,
     "runners_with_path": 2079
   }
 }

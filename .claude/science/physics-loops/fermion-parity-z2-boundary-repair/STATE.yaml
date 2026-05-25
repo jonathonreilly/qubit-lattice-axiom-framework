@@ -1,0 +1,43 @@
+loop: fermion-parity-z2-boundary-repair
+date: 2026-05-25
+branch: physics-loop/fermion-parity-z2-boundary-repair-block16-20260525
+base: origin/main@d653ca15f
+mode: run
+target: proposed_retained
+cycle: 1
+active_route: narrow_to_algebraic_fock_space_z2_grading
+hard_residual: dynamical conservation by a Hamiltonian remains conditional on Z2-even dynamics or a separate current theorem
+files_touched:
+  - docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md
+  - scripts/fermion_parity_z2_grading_check.py
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/audit_ledger.json
+claim_status:
+  claim_id: fermion_parity_z2_grading_theorem_note_2026-05-02
+  actual_current_surface_status: proposed_retained
+  conditional_surface_status: conditional conservation by Z2-even dynamics
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  claim_type_author_hint_after_repair: positive_theorem
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  audit_queue_rank_after_pipeline: 2
+  ready_after_pipeline: true
+  proposal_allowed: true
+  proposal_allowed_reason: algebraic finite-Fock theorem has no repo dependencies after repair; independent audit still required
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+dependency_delta:
+  before:
+    - axiom_first_lattice_noether_theorem_note_2026-04-29
+  after: []
+verification_completed:
+  - python3 -m py_compile scripts/fermion_parity_z2_grading_check.py
+  - python3 scripts/fermion_parity_z2_grading_check.py
+  - bash docs/audit/scripts/run_pipeline.sh
+verification_notes:
+  - runner result PASS 7 / FAIL 0
+  - generated audit queue gives deps []
+  - generated audit queue rank 2, ready true, 890 transitive descendants
+next_exact_action: run strict checks, commit, push, and open PR
+stop_condition: coherent algebraic Z2-grading repair packaged for independent audit

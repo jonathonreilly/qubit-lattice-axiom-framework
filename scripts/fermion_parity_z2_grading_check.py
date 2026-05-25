@@ -1,7 +1,7 @@
-"""Total fermion parity (-1)^Q̂ on framework Fock space.
+"""Total fermion parity (-1)^Q_hat on framework Fock space.
 
-By axiom_first_lattice_noether (cited), N2 supplies the conserved
-fermion-number current with total Q̂. Define the fermion parity operator
+Define the total occupation-number operator directly on the finite
+occupation/Fock space and define the fermion parity operator
 
     (-1)^Q̂  :=  exp(i π Q̂)
 
@@ -9,14 +9,14 @@ acting on the framework's N-site Fock space H = ⊗_{x=1}^N C².
 
 Then:
   (P1) (-1)^Q̂ is unitary and Hermitian (its own inverse): ((-1)^Q̂)² = I
-  (P2) (-1)^Q̂ commutes with H (since [H, Q̂] = 0)
+  (P2) (-1)^Q̂ commutes with any Z_2-even Hamiltonian (conditional dynamics)
   (P3) Spec((-1)^Q̂) = {+1, -1}
   (P4) Z_2 grading: H = H_even ⊕ H_odd with dim H_even = dim H_odd = 2^{N-1}
   (P5) Local fermion operator a_x is Z_2-odd: (-1)^Q̂ a_x (-1)^Q̂ = -a_x
   (P6) Local fermion bilinear a_x^† a_y is Z_2-even: invariant under (-1)^Q̂
 
-This is the framework's *fermion parity superselection rule*: only Z_2-even
-operators (bilinears, currents, energy density) connect physical states.
+This is the framework's algebraic fermion-parity grading: Z_2-even operators
+(bilinears, currents, energy density) preserve parity sectors.
 
 Tests:
   (T1) (-1)^Q̂ is Hermitian

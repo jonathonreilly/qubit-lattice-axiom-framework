@@ -957,7 +957,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
+| `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2408,13 +2408,16 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 
 - **Note:** [`archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md`](../../archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md)
 - **claim_type:** `no_go`
-- **claim_scope:** Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.
+- **claim_scope:** The original 2026-04-28 Cl4(C) carrier-axiom consequence-map cascade is not retained authority under the current A1+A2 framework; its archive/non-authority treatment is preserved because the cascade depends on unadopted Axiom* and unsupported conditional bridges.
 - **audit_status:** ~~audited_failed~~
 - **effective_status:** **retained_no_go**  (reason: `archived_failed_no_go`)
-- **auditor:** `codex-audit-loop-stale-narrative-archive-2026-04-30`  (codex-gpt-5; independence=weak)
-- **load-bearing step:** The map treats Axiom* adoption as the central conditional closure surface and propagates its claimed downstream Lane 5, Planck, Lane 1, and Sigma m_nu consequences.  _(class `A`)_
-- **chain closes:** False — No. The active map is tied to the stale Axiom* carrier-axiom narrative and should not remain in docs after the failed wrapper frame is retired.
-- **rationale:** Issue: the consequence map depends on the stale carrier-axiom wrapper frame and presents an active downstream cascade from that frame. Why this blocks: after the forced/minimal Axiom* narrative failed audit, leaving this map in active docs would keep a failed closure story available as support. Repair target: if Axiom* is later adopted or reintroduced, rebuild a new consequence map from the audited extension decision and current dependencies. Claim boundary until fixed: the 2026-04-28 map is archive-only recovery material, not an active claim note.
+- **auditor:** `codex-gpt-5.5-fresh-context-cl4c-archive-boundary-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Adopting Axiom* discharges the metric-compatible Clifford coframe response conditional and supplies an Axiom*-extension closure cascade to Lane 5 C1, Lane 1/Planck Targets 1-3, and h-closed-conditional Sigma m_nu.  _(class `B`)_
+- **chain closes:** False — The original cascade does not close from the restricted packet: Axiom* is not part of the current minimal axioms, and the runner asserts conditional closure values rather than deriving the carrier axiom or the cross-lane bridge. The archive/non-authority boundary is therefore preserved as a failed original cascade, not promoted as a clean no-go theorem.
+- **rationale:** Failure handoff: the exact failing step is the import of Axiom* as if it can discharge the Clifford/coframe and downstream Planck/Hubble closures, but the current minimal-axiom packet contains only A1/A2 and supplies no adopted or accepted Cl4(C) carrier axiom. This blocks the original consequence-map claim because every substantive positive closure is conditional on that missing premise, and the runner's PASS lines mostly verify hard-coded conditional consequences rather than constructing the missing bridge. Repair target: rebuild a new consequence map only after Axiom* is adopted or explicitly accepted by a retained/accepted-premise row, include retained one-hop dependencies for the bridge theorems, and replace assertion-style runner checks with construction or dependency verification. Safe reduced claim: this archived note remains non-authority recovery material and should not be cited as a live closed cascade.
+- **open / conditional deps cited:**
+  - `archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md`
+  - `HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`
 - **auditor confidence:** high
 
 ### `claude_complex_action_carryover_note`

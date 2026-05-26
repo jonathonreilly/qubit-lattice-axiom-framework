@@ -1,0 +1,30 @@
+loop_slug: pmns-cycle-raw-matrix-rescope
+started_at: "2026-05-26T09:25:00Z"
+mode: campaign_block
+target_claim_id: pmns_oriented_cycle_selection_structure_note
+target_note: docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md
+target_runner: scripts/frontier_pmns_oriented_cycle_selection_structure.py
+branch: physics-loop/pmns-cycle-raw-matrix-rescope-20260526
+base: origin/main@c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "Raw matrix rescope queued for independent audit; no effective-status claim."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: raw_matrix_rescope
+hard_residual_attacked: "Prior verdict blocked sole-axiom free-point and graph-first antiunitary readings; branch excludes those readings from binding scope."
+files_touched:
+  - docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md
+  - scripts/frontier_pmns_oriented_cycle_selection_structure.py
+  - outputs/pmns_oriented_cycle_raw_matrix_rescope_certificate_2026-05-26.txt
+open_imports:
+  - "Independent audit must decide whether the raw matrix identities close at bounded scope."
+no_go_routes:
+  - "No sole-axiom free-point active-block identification."
+  - "No graph-first selected-axis antiunitary derivation."
+  - "No PMNS value-selection law."
+next_exact_action: "Run pipeline/lints, then open PR."
+stop_condition: "Block PR opened or verification fails."

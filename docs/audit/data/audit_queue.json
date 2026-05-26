@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 250,
+    "critical": 251,
     "high": 342,
     "leaf": 310,
     "medium": 322
@@ -52,6 +52,33 @@
     }
   ],
   "queue": [
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_oriented_cycle_selection_structure_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pmns_oriented_cycle_channel_value_law_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
+        "scripts/pmns_lower_level_utils.py"
+      ],
+      "load_bearing_score": 10.615,
+      "note_path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
+      "transitive_descendants": 391
+    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36966,6 +36993,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 1,
-  "total_pending": 1224
+  "ready_count": 2,
+  "total_pending": 1225
 }

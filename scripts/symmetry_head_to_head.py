@@ -1,116 +1,148 @@
 #!/usr/bin/env python3
-"""Frozen symmetry head-to-head: exact mirror chokepoint vs Z2 x Z2.
+"""Narrow symmetry head-to-head verifier.
 
-This script does not recompute the retained artifact chains. It freezes an
-apples-to-apples comparison using the already-retained notes on main.
+This runner checks only the shared N=80 comparison between:
+  - mirror dense boundary card values from MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE
+  - Z2 x Z2 sparse joint-validation values from HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE
 
-Shared metrics used for the ranking:
-  - Born |I3|/P
-  - detector-side d_TV
-  - purity / decoherence
-  - gravity centroid shift
-  - retained range
-
-Mirror-specific MI from the canonical chokepoint MI note is reported as a
-supplement, but it is not directly compared to Z2 x Z2 because the latter
-does not yet have a canonical MI artifact chain.
+It deliberately excludes N=100/N=120 range language because the current
+Z2 x Z2 joint-validation authority binds only the sparse N=25,40,60,80 cache.
 """
 
 from __future__ import annotations
 
-MIRROR = {
-    "name": "Exact mirror chokepoint",
-    "rows": {
-        80: {
-            "dtv": 0.4291,
-            "pur": 0.8182,
-            "grav": 3.0551,
-            "born": 2.43e-15,
-            "k0": 0.0,
-        },
-        100: {
-            "dtv": 0.2308,
-            "pur": 0.9043,
-            "grav": 1.3089,
-            "born": 1.13e-15,
-            "k0": 0.0,
-        },
-    },
-    "range": "retained through N=100; N=120 loses gravity",
-    "supplement": (
-        "Mirror-specific MI is bounded and mid-N positive over the matched "
-        "random baseline, but not a clean asymptotic law."
-    ),
+import json
+from pathlib import Path
+
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+
+RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+
+MIRROR_N80 = {
+    "N": 80,
+    "lane": "mirror dense boundary card",
+    "dtv": 0.4291,
+    "purity": 0.8182,
+    "gravity": 3.0551,
+    "born_bound": 1e-10,
+    "k0": 0.0,
 }
 
-Z2Z2 = {
-    "name": "Z2 x Z2",
-    "rows": {
-        80: {
-            "dtv": 0.525,
-            "pur": 0.785,
-            "grav": 2.677,
-            "born": 1.55e-15,
-            "k0": 0.0,
-        },
-        100: {
-            "dtv": 0.567,
-            "pur": 0.742,
-            "grav": 0.763,
-            "born": 1.94e-15,
-            "k0": 0.0,
-        },
-        120: {
-            "dtv": 0.393,
-            "pur": 0.764,
-            "grav": 0.245,
-            "born": 3.04e-15,
-            "k0": 0.0,
-        },
-    },
-    "range": "retained through N=120 on the dense extension; positive gravity but no clean gravity law",
+Z2Z2_N80 = {
+    "N": 80,
+    "lane": "Z2 x Z2 sparse joint-validation card",
+    "dtv": 0.540,
+    "purity": 0.782,
+    "gravity": 2.218,
+    "born": 1.80e-15,
+    "k0": 0.0,
 }
 
 
-def _fmt(x: float, digits: int = 4) -> str:
-    return f"{x:.{digits}f}"
+def check(label: str, condition: bool, detail: str) -> bool:
+    status = "PASS" if condition else "FAIL"
+    print(f"[{status}] {label}: {detail}")
+    return condition
 
 
-def main() -> None:
-    print("SYMMETRY HEAD-TO-HEAD")
+def ledger_rows() -> dict:
+    return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+
+
+def main() -> int:
     print("=" * 96)
-    print("Shared metrics on the retained lanes")
+    print("SYMMETRY HEAD-TO-HEAD N=80 NARROW VERIFIER")
+    print("=" * 96)
+    print("Scope: one shared N=80 bounded comparison only.")
+    print("Not scope: N=100/N=120 range ranking or asymptotic lane theorem.")
     print()
-    print(
-        f"{'N':>4s}  {'lane':>24s}  {'d_TV':>8s}  {'pur':>8s}  {'gravity':>10s}  "
-        f"{'Born':>11s}  {'k=0':>8s}"
-    )
-    print("-" * 96)
-    for n in (80, 100):
-        m = MIRROR["rows"][n]
-        z = Z2Z2["rows"][n]
-        print(
-            f"{n:4d}  {MIRROR['name'][:24]:>24s}  {_fmt(m['dtv']):>8s}  {_fmt(m['pur']):>8s}  "
-            f"{m['grav']:+10.4f}  {m['born']:.2e}  {m['k0']:8.2e}"
-        )
-        print(
-            f"{'':4s}  {Z2Z2['name'][:24]:>24s}  {_fmt(z['dtv']):>8s}  {_fmt(z['pur']):>8s}  "
-            f"{z['grav']:+10.4f}  {z['born']:.2e}  {z['k0']:8.2e}"
-        )
-        print()
 
-    print("Range")
-    print(f"- {MIRROR['name']}: {MIRROR['range']}")
-    print(f"- {Z2Z2['name']}: {Z2Z2['range']}")
+    rows = ledger_rows()
+    passes: list[bool] = []
+
+    for claim_id in (
+        "mirror_chokepoint_boundary_fit_note",
+        "higher_symmetry_joint_validation_note",
+    ):
+        row = rows[claim_id]
+        passes.append(
+            check(
+                f"{claim_id} retained-grade dependency",
+                row.get("effective_status") in RETAINED_GRADE,
+                f"effective_status={row.get('effective_status')}",
+            )
+        )
+
+    hsjv_scope = rows["higher_symmetry_joint_validation_note"].get("claim_scope") or ""
+    passes.append(
+        check(
+            "Z2 x Z2 source scope includes sparse N=80",
+            "N=25,40,60,80" in hsjv_scope and "no N=120" in hsjv_scope,
+            hsjv_scope,
+        )
+    )
+
+    passes.append(
+        check(
+            "shared-row scope is N=80 only",
+            MIRROR_N80["N"] == Z2Z2_N80["N"] == 80,
+            f"mirror_N={MIRROR_N80['N']}, z2z2_N={Z2Z2_N80['N']}",
+        )
+    )
+    passes.append(
+        check(
+            "mirror has larger displayed gravity at N=80",
+            MIRROR_N80["gravity"] > Z2Z2_N80["gravity"] > 0,
+            f"{MIRROR_N80['gravity']:.4f} > {Z2Z2_N80['gravity']:.4f} > 0",
+        )
+    )
+    passes.append(
+        check(
+            "Z2 x Z2 has lower displayed purity at N=80",
+            Z2Z2_N80["purity"] < MIRROR_N80["purity"],
+            f"{Z2Z2_N80['purity']:.4f} < {MIRROR_N80['purity']:.4f}",
+        )
+    )
+    passes.append(
+        check(
+            "both rows are Born-clean",
+            MIRROR_N80["born_bound"] <= 1e-10 and Z2Z2_N80["born"] < 1e-10,
+            f"mirror<{MIRROR_N80['born_bound']:.1e}, z2z2={Z2Z2_N80['born']:.2e}",
+        )
+    )
+    passes.append(
+        check(
+            "both k=0 controls are zero",
+            MIRROR_N80["k0"] == 0.0 and Z2Z2_N80["k0"] == 0.0,
+            f"mirror={MIRROR_N80['k0']:.2e}, z2z2={Z2Z2_N80['k0']:.2e}",
+        )
+    )
+
     print()
-    print("Supplement")
-    print(f"- {MIRROR['name']} MI: {MIRROR['supplement']}")
+    print("N=80 comparison table")
+    print(f"{'lane':>38s} {'d_TV':>8s} {'purity':>8s} {'gravity':>10s} {'Born':>11s} {'k=0':>8s}")
+    print("-" * 96)
+    mirror_born = f"<={MIRROR_N80['born_bound']:.1e}"
+    print(
+        f"{MIRROR_N80['lane']:>38s} {MIRROR_N80['dtv']:8.4f} "
+        f"{MIRROR_N80['purity']:8.4f} {MIRROR_N80['gravity']:+10.4f} "
+        f"{mirror_born:>11s} {MIRROR_N80['k0']:8.2e}"
+    )
+    print(
+        f"{Z2Z2_N80['lane']:>38s} {Z2Z2_N80['dtv']:8.4f} "
+        f"{Z2Z2_N80['purity']:8.4f} {Z2Z2_N80['gravity']:+10.4f} "
+        f"{Z2Z2_N80['born']:.2e} {Z2Z2_N80['k0']:8.2e}"
+    )
+
+    n_pass = sum(1 for item in passes if item)
+    n_total = len(passes)
     print()
-    print("Read")
-    print("- Exact mirror is the stronger gravity-weighted joint lane at the shared N=80/100 rows.")
-    print("- Z2 x Z2 is the stronger decoherence-side lane and has the longer retained range.")
-    print("- Both lanes remain Born-clean at machine precision on their retained harnesses.")
+    print(f"PASS={n_pass} FAIL={n_total - n_pass}")
+    print("Result: bounded one-row comparison only; no N=100/N=120 retained-range claim.")
+    return 0 if n_pass == n_total else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

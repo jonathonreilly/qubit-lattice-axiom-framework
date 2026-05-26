@@ -127704,11 +127704,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": "2026-05-07T01:57:07.762061+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "medium",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -127717,7 +127717,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 4.585,
+      "load_bearing_score": 2.085,
       "load_bearing_step": "Inside the declared fit window M in {2,3,5,8}, the dense Z2 x Z2 extension shows a positive-row mass-bump fit, with in-window negative rows disclosed and excluded by the runner's delta > 0 guard.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -127856,7 +127856,7 @@
       },
       "runner_path": "scripts/higher_symmetry_gravity_probe.py",
       "title": "Higher-Symmetry Gravity Probe Note",
-      "transitive_descendants": 11,
+      "transitive_descendants": 2,
       "verdict_rationale": "The clean result is limited to the exact finite runner surface and the explicitly narrowed positive-row subfit/distance-sweep facts. Residual risk is that the fit window and positive-row filter are analysis choices and do not by themselves imply a physical gravity law, rowwise positivity, Born safety, or upstream coexistence closure; those broader readings are outside the audited scope."
     },
     "higher_symmetry_joint_validation_note": {
@@ -173300,13 +173300,13 @@
       "deps": [
         "mirror_chokepoint_boundary_fit_note"
       ],
-      "direct_in_degree": 8,
+      "direct_in_degree": 7,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.248,
+      "load_bearing_score": 10.748,
       "load_bearing_step": "The strict default runner/cache and assertion certificate verify only the N=15 and N=25 mirror p2=0 retained rows, while the same card records FAIL for N=40,60,80,100.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -174056,7 +174056,7 @@
         "mirror_chokepoint_note",
         "mirror_chokepoint_boundary_fit_note"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 5,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -174064,7 +174064,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.807,
+      "load_bearing_score": 6.2,
       "load_bearing_step": "On the single parameter card npl_half=60, connect_radius=5.0, k=5.0, layer2_prob=0.0, 16 seeds, mirror MI exceeds matched random MI at N=40, 60, 80 and falls below matched random MI at N=100; the power-law fits are descriptive only.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -174191,7 +174191,7 @@
       },
       "runner_path": "scripts/mirror_mutual_information_chokepoint.py",
       "title": "Mirror Mutual Information Chokepoint Note",
-      "transitive_descendants": 13,
+      "transitive_descendants": 12,
       "verdict_rationale": "The load-bearing MI table is produced by an actual first-principles runner path using the supplied graph generators and propagator, not by hard-coded expected values or a cross-note copied table. Both cited one-hop authorities in the restricted packet are retained_bounded. Because the note narrows the conclusion to the finite N=40/60/80 advantage and explicit N=100 reversal, the bounded claim follows without importing an unclosed asymptotic law."
     },
     "mirror_mutual_information_note": {
@@ -259512,85 +259512,46 @@
       "verdict_rationale": "The load-bearing bounded negative conclusion matches the current runner when invoked with the note's explicit density-optimum parameters and is consistent with the archived log. The note states the correct boundary: the generated scaffold has a small viable pocket, does not consistently beat exact mirror, and does not survive to N=60. Residual process risk is that the runner defaults now run a different all-FAIL window, so future readers need the note/log command rather than the default invocation."
     },
     "symmetry_head_to_head_note": {
-      "audit_date": "2026-05-25T23:49:07.132094+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "higher_symmetry_gravity_probe_note": "On the default dense Z2xZ2 runner surface N={80,100,120}, 16 seeds, z2z2_quarter=16, connect_radius=5.2, anchor_b=5.0, mass_count=4, the SHA-matched completed runner produces the stated finite mass-window rows, positive-row subfits inside M={2,3,5,8}, and positive but weak fixed-distance sweep rows; it does not establish rowwise/global gravity positivity, Born safety, or a gravity law.",
-          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
-          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
-          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency.",
-          "mirror_mutual_information_chokepoint_note": "Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed."
-        },
-        "dep_claim_type": {
-          "higher_symmetry_gravity_probe_note": "bounded_theorem",
-          "higher_symmetry_joint_validation_note": "bounded_theorem",
-          "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
-          "mirror_chokepoint_note": "bounded_theorem",
-          "mirror_mutual_information_chokepoint_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "higher_symmetry_gravity_probe_note": "retained_bounded",
-          "higher_symmetry_joint_validation_note": "retained_bounded",
-          "mirror_chokepoint_boundary_fit_note": "retained_bounded",
-          "mirror_chokepoint_note": "retained_bounded",
-          "mirror_mutual_information_chokepoint_note": "retained_bounded"
-        },
-        "deps": [
-          "higher_symmetry_gravity_probe_note",
-          "higher_symmetry_joint_validation_note",
-          "mirror_chokepoint_boundary_fit_note",
-          "mirror_chokepoint_note",
-          "mirror_mutual_information_chokepoint_note"
-        ],
-        "load_bearing_score": 3.822,
-        "runner_hash": "9dbe78f33ea8056cec15ad5c273ed57ffcde3cd2cc3af582d51177cd991b25ee",
-        "transitive_descendants": 9
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T234843Z-87994b39-symmetry_head_to_head_no-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The table comparison itself follows from cited retained-bounded inputs, but the Z2 x Z2 through-N=120 retained-range/Born-clean framing imports a dense joint-validation claim that its own cited joint-validation authority explicitly marks out of binding scope.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "symmetry_head_to_head_note",
-      "claim_scope": "A bounded head-to-head comparison of exact mirror chokepoint and Z2 x Z2 on the shared N=80 and N=100 rows, plus retained-range and MI-supplement statements taken from the cited notes.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-25T23:49:07.132094+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "mirror_chokepoint_note",
-        "mirror_mutual_information_chokepoint_note",
-        "higher_symmetry_joint_validation_note",
-        "higher_symmetry_gravity_probe_note",
-        "mirror_chokepoint_boundary_fit_note"
+        "mirror_chokepoint_boundary_fit_note",
+        "higher_symmetry_joint_validation_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 3.822,
-      "load_bearing_step": "Exact mirror is the stronger gravity-weighted joint lane on the shared N=80/100 rows, while Z2 x Z2 is stronger on decoherence-side depth and retained range.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "5e815662ccd349fd1455dd62ad4013e1afe0985ac0acd8f50684d99d69d6b169",
+      "note_hash": "8ddc979b8af9ce95e19196bfe78b8207ee989d5e1e6a0cda85eedf32fea4579c",
       "note_path": "docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: register the dense N=80/100/120 joint-validation runner/cache or narrow this note to the shared N=80/100 comparison without claiming Z2 x Z2 retained through N=120 from the joint-validation authority.",
-      "open_dependency_paths": [
-        "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.369911+00:00",
@@ -259726,21 +259687,89 @@
             "total_pass": 1
           },
           "verdict_rationale": "All named cited authorities are retained_bounded, but the exact mirror N=80/100 gravity-weighted rows used by the source note are not closed by the provided mirror note. The primary runner is not an independent computation; it prints constants from the proposed comparison, so it can verify formatting/consistency only as a cross-note input check. The Z2 x Z2 dense extension values are present in the higher-symmetry joint note text, but that same note says the N=120 promotion is out of binding scope for joint-validation evidence, further weakening the retained-range statement."
+        },
+        {
+          "archived_at": "2026-05-26T09:21:12.608599+00:00",
+          "archived_for_note_hash": "5e815662ccd349fd1455dd62ad4013e1afe0985ac0acd8f50684d99d69d6b169",
+          "audit_date": "2026-05-25T23:49:07.132094+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "higher_symmetry_gravity_probe_note": "On the default dense Z2xZ2 runner surface N={80,100,120}, 16 seeds, z2z2_quarter=16, connect_radius=5.2, anchor_b=5.0, mass_count=4, the SHA-matched completed runner produces the stated finite mass-window rows, positive-row subfits inside M={2,3,5,8}, and positive but weak fixed-distance sweep rows; it does not establish rowwise/global gravity positivity, Born safety, or a gravity law.",
+              "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
+              "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
+              "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency.",
+              "mirror_mutual_information_chokepoint_note": "Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed."
+            },
+            "dep_claim_type": {
+              "higher_symmetry_gravity_probe_note": "bounded_theorem",
+              "higher_symmetry_joint_validation_note": "bounded_theorem",
+              "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
+              "mirror_chokepoint_note": "bounded_theorem",
+              "mirror_mutual_information_chokepoint_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "higher_symmetry_gravity_probe_note": "retained_bounded",
+              "higher_symmetry_joint_validation_note": "retained_bounded",
+              "mirror_chokepoint_boundary_fit_note": "retained_bounded",
+              "mirror_chokepoint_note": "retained_bounded",
+              "mirror_mutual_information_chokepoint_note": "retained_bounded"
+            },
+            "deps": [
+              "higher_symmetry_gravity_probe_note",
+              "higher_symmetry_joint_validation_note",
+              "mirror_chokepoint_boundary_fit_note",
+              "mirror_chokepoint_note",
+              "mirror_mutual_information_chokepoint_note"
+            ],
+            "load_bearing_score": 3.822,
+            "runner_hash": "9dbe78f33ea8056cec15ad5c273ed57ffcde3cd2cc3af582d51177cd991b25ee",
+            "transitive_descendants": 9
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T234843Z-87994b39-symmetry_head_to_head_no-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The table comparison itself follows from cited retained-bounded inputs, but the Z2 x Z2 through-N=120 retained-range/Born-clean framing imports a dense joint-validation claim that its own cited joint-validation authority explicitly marks out of binding scope.",
+          "claim_scope": "A bounded head-to-head comparison of exact mirror chokepoint and Z2 x Z2 on the shared N=80 and N=100 rows, plus retained-range and MI-supplement statements taken from the cited notes.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T23:49:07.132094+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Exact mirror is the stronger gravity-weighted joint lane on the shared N=80/100 rows, while Z2 x Z2 is stronger on decoherence-side depth and retained range.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "dependency_not_retained: register the dense N=80/100/120 joint-validation runner/cache or narrow this note to the shared N=80/100 comparison without claiming Z2 x Z2 retained through N=120 from the joint-validation authority.",
+          "open_dependency_paths": [
+            "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "The primary runner is a frozen comparison script that prints hard-coded values rather than recomputing either lane, so it is cross-note input verification, not first-principles compute. The exact mirror N=80/100 values are supported by the retained-bounded boundary-fit authority, and the Z2 x Z2 N=80/100 values appear in the cited dense extension table. However, the cited higher-symmetry joint-validation note explicitly narrows its binding scope to sparse N=25/40/60/80 and says the N=120 promotion is out of binding scope until missing dense joint-validation evidence is registered. Therefore the head-to-head note overreaches when it treats Z2 x Z2 as retained through N=120 and Born-clean on the retained harness as a closed dependency."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 1,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
       "runner_path": "scripts/symmetry_head_to_head.py",
       "title": "Symmetry Head-To-Head Note",
       "transitive_descendants": 9,
-      "verdict_rationale": "The primary runner is a frozen comparison script that prints hard-coded values rather than recomputing either lane, so it is cross-note input verification, not first-principles compute. The exact mirror N=80/100 values are supported by the retained-bounded boundary-fit authority, and the Z2 x Z2 N=80/100 values appear in the cited dense extension table. However, the cited higher-symmetry joint-validation note explicitly narrows its binding scope to sparse N=25/40/60/80 and says the N=120 promotion is out of binding scope until missing dense joint-validation evidence is registered. Therefore the head-to-head note overreaches when it treats Z2 x Z2 as retained through N=120 and Born-clean on the retained harness as a closed dependency."
+      "verdict_rationale": null
     },
     "symmetry_spectrum_mirror_compare_note": {
       "audit_date": "2026-05-02T00:59:30.186654+00:00",

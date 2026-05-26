@@ -21685,15 +21685,15 @@
       "runner": "scripts/symmetry_generated_paired_chokepoint.py"
     },
     "symmetry_head_to_head_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/symmetry_head_to_head.py"
     },
     "symmetry_spectrum_mirror_compare_note": {
@@ -54401,18 +54401,18 @@
       "exists": true
     },
     "scripts/symmetry_head_to_head.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "symmetry_head_to_head_note"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/symmetry_spectrum_mirror_compare.py": {
@@ -55196,13 +55196,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 315,
+    "decoration_candidates": 316,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
-      "none": 439
+      "none": 438
     },
     "runners_classified": 1982,
     "runners_with_C": 969,

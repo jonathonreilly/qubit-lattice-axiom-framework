@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/symmetry_head_to_head.py
-runner_sha256: f9bffe0e14a17b67a9a7612fbe61cc57ebf683e5173ddf690d572697e43538a9
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.08
-status: ok
------ stdout -----
 ================================================================================================
 SYMMETRY HEAD-TO-HEAD N=80 NARROW VERIFIER
 ================================================================================================
@@ -29,6 +21,3 @@ N=80 comparison table
 
 PASS=8 FAIL=0
 Result: bounded one-row comparison only; no N=100/N=120 retained-range claim.
-
------ stderr -----
-

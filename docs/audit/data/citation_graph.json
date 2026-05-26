@@ -54971,16 +54971,16 @@
     },
     "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": {
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
         "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
         "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f6c5fd5414a3919c7a492971967109d7aa3d621a433cb33ce14c30ed15d34a40",
+      "note_hash": "c0371aedea307e48971402f53e4ac13acbd488c3b45cd27227bcdb16819cc780",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Compressed Rim-Evaluation Theorem"
@@ -85483,22 +85483,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 590,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
       "none": 1464,
       "open_gate": 48,
-      "positive_theorem": 173
+      "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1017,
       "decoration": 1,
       "meta": 191,
       "no_go": 175,
       "none": 434,
       "open_gate": 125,
-      "positive_theorem": 596
+      "positive_theorem": 595
     },
     "edge_count": 9778,
     "leaf_count": 783,

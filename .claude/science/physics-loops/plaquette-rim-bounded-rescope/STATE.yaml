@@ -1,0 +1,28 @@
+loop_slug: plaquette-rim-bounded-rescope
+started_at: "2026-05-26T09:10:00Z"
+mode: campaign_block
+target_claim_id: gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17
+target_note: docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md
+target_runner: scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py
+branch: physics-loop/plaquette-rim-bounded-rescope-20260526
+base: origin/main@c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "Source-side rescope only; independent audit still owns effective status."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: scope_too_broad_rescope
+hard_residual_attacked: "Prior audit rejected positive_theorem scope because only finite retained/finite-box packet is supported."
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md
+  - outputs/plaquette_compressed_rim_bounded_rescope_certificate_2026-05-26.txt
+open_imports:
+  - "Full untruncated physical Wilson-environment coefficient vector remains outside this row."
+  - "Full local rim functional remains outside this row."
+no_go_routes:
+  - "Do not claim full physical rim theorem or framework-point plaquette PF data."
+next_exact_action: "Run pipeline/lints, then open PR."
+stop_condition: "Block PR opened or verification fails."

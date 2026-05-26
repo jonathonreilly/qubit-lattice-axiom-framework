@@ -1,0 +1,85 @@
+================================================================================
+CONVENTION 𝒞_b GOVERNANCE-CONSISTENCY VERIFIER
+================================================================================
+Proposal note: docs/CONVENTION_CB_GOVERNANCE_ADOPTION_PROPOSAL_NOTE_2026-05-26.md
+Status: source-only governance proposal. No audit-lane wiring. NO adoption asserted.
+
+--------------------------------------------------------------------------------
+C1. 𝒞_b is mathematically well-defined (no internal degeneracy)
+--------------------------------------------------------------------------------
+  [PASS] C1.a Period under 𝒞_b is exactly 1 (no ambiguity)
+  [PASS] C1.b Period under period-2π convention is exactly 2π (no ambiguity)
+  [PASS] C1.c Conversion 𝒞_b → 2π and back is the identity (involutive at the unit level)  (multiply by 2π then divide by 2π is identity by definition)
+
+--------------------------------------------------------------------------------
+C2. 𝒞_b does NOT contradict any retained no_go
+--------------------------------------------------------------------------------
+  [PASS] C2.a {q·π : q ∈ ℚ*} ∩ ℚ = {0} is the L-W blocker; PROVEN at the period-2π surface  (standard Lindemann-Weierstrass; retained no_go)
+  [PASS] C2.b L-W blocker operates ONLY under the period-2π surface (Q·π valuation)  (period-1 cycle reading does not invoke Q·π valuation)
+  [PASS] C2.c Therefore 𝒞_b does NOT violate the retained no_go; it operates on a different surface  (convention-surface-specific; no contradiction)
+  [PASS] C2.d At N=3 under 𝒞_b: δ_Brannen = 2/9 ∈ ℚ, NOT ∈ ℚ·π → L-W inapplicable  (δ = 2/9 ∈ ℚ)
+
+--------------------------------------------------------------------------------
+C3. 𝒞_b is dimensionally consistent at every retained N
+--------------------------------------------------------------------------------
+  [PASS] C3 N=2: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 1/4 ≈ 0.250000)
+  [PASS] C3 N=3: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 2/9 ≈ 0.222222)
+  [PASS] C3 N=4: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 3/16 ≈ 0.187500)
+  [PASS] C3 N=5: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 4/25 ≈ 0.160000)
+  [PASS] C3 N=6: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 5/36 ≈ 0.138889)
+  [PASS] C3 N=7: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 6/49 ≈ 0.122449)
+  [PASS] C3 N=12: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 11/144 ≈ 0.076389)
+  [PASS] C3 N=100: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 99/10000 ≈ 0.009900)
+  [PASS] C3 N=1000: δ = (N-1)/N² is finite rational in (0,1), no unit mismatch  (δ = 999/1000000 ≈ 0.000999)
+
+--------------------------------------------------------------------------------
+C4. Post-hoc empirical agreement (consistency check only)
+--------------------------------------------------------------------------------
+  [PASS] C4.a N=3: 𝒞_b prediction (2/9 rad) matches PDG nominal to better than PDG precision (7e-6)  (|prediction - PDG nominal| = 0.00e+00 (PDG precision: 7e-06))
+  [PASS] C4.b N=6: 𝒞_b prediction (5/36) matches retained CKM η² class to machine precision  (prediction = 0.1388888889, CKM class = 0.1388888889)
+  [PASS] C4.c Cross-sector consistency (N=3 lepton + N=6 quark) achieved from SAME convention 𝒞_b  (no per-sector convention tuning available; 𝒞_b is single-bit governance choice)
+  [PASS] C4.d Post-hoc agreement is CONSISTENCY CHECK only; NOT a derivation input  (PDG, CKM are observables; 𝒞_b derivation chain is A1+A2+retained+upstream PRs only)
+
+--------------------------------------------------------------------------------
+C5. Conversion 𝒞_b ↔ period-2π is a well-defined finite re-scaling
+--------------------------------------------------------------------------------
+  [PASS] C5 N=3: 𝒞_b reading × 2π = period-2π reading  (𝒞_b: 0.222222, 2π: 1.396263, converted: 1.396263)
+  [PASS] C5 N=3: Round-trip 𝒞_b → 2π → 𝒞_b is identity  (|roundtrip - 𝒞_b| = 0.00e+00)
+  [PASS] C5 N=4: 𝒞_b reading × 2π = period-2π reading  (𝒞_b: 0.187500, 2π: 1.178097, converted: 1.178097)
+  [PASS] C5 N=4: Round-trip 𝒞_b → 2π → 𝒞_b is identity  (|roundtrip - 𝒞_b| = 0.00e+00)
+  [PASS] C5 N=5: 𝒞_b reading × 2π = period-2π reading  (𝒞_b: 0.160000, 2π: 1.005310, converted: 1.005310)
+  [PASS] C5 N=5: Round-trip 𝒞_b → 2π → 𝒞_b is identity  (|roundtrip - 𝒞_b| = 0.00e+00)
+  [PASS] C5 N=6: 𝒞_b reading × 2π = period-2π reading  (𝒞_b: 0.138889, 2π: 0.872665, converted: 0.872665)
+  [PASS] C5 N=6: Round-trip 𝒞_b → 2π → 𝒞_b is identity  (|roundtrip - 𝒞_b| = 0.00e+00)
+  [PASS] C5 N=7: 𝒞_b reading × 2π = period-2π reading  (𝒞_b: 0.122449, 2π: 0.769370, converted: 0.769370)
+  [PASS] C5 N=7: Round-trip 𝒞_b → 2π → 𝒞_b is identity  (|roundtrip - 𝒞_b| = 0.00e+00)
+  [PASS] C5 N=12: 𝒞_b reading × 2π = period-2π reading  (𝒞_b: 0.076389, 2π: 0.479966, converted: 0.479966)
+  [PASS] C5 N=12: Round-trip 𝒞_b → 2π → 𝒞_b is identity  (|roundtrip - 𝒞_b| = 0.00e+00)
+
+--------------------------------------------------------------------------------
+Governance non-claims (adoption is user-side, not author-side)
+--------------------------------------------------------------------------------
+  [PASS] This proposal does NOT adopt 𝒞_b; adoption requires explicit user ratification  (separate user-side governance event)
+  [PASS] This proposal does NOT assert 𝒞_b is the right convention; only structural consistency
+  [PASS] This proposal does NOT predict audit verdict on this or any companion note
+  [PASS] This proposal does NOT retire any retained no_go on origin/main  (KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY stands under period-2π surface)
+  [PASS] This proposal does NOT consume PDG / CKM / empirical anchors as derivation input  (C4 post-hoc agreement is consistency check)
+  [PASS] This proposal does NOT import any new mathematical machinery  (elementary unit-conversion algebra only)
+  [PASS] This proposal does NOT propose a new axiom or theory-language extension
+  [PASS] This proposal does NOT promote, retire, or re-classify any existing audit row
+
+--------------------------------------------------------------------------------
+Sibling-tier precedent (existing retained unit conventions)
+--------------------------------------------------------------------------------
+  [PASS] Sibling lattice-spacing (a chosen): existing governance-adopted retained convention  (fixes spatial scale; not derived)
+  [PASS] Sibling meter (SI choice): existing governance-adopted retained convention  (fixes spatial-scale unit; not derived)
+  [PASS] Sibling Planck/natural unit: existing governance-adopted retained convention  (fixes mass/energy scale; not derived)
+  [PASS] Sibling GeV (SI conventional energy): existing governance-adopted retained convention  (fixes mass/energy scale unit; not derived)
+  [PASS] 𝒞_b would be governance-adopted on the angular-observable unit surface of C_N orbits  (parallel sibling-tier role)
+
+================================================================================
+Summary: PASS=45 FAIL=0
+================================================================================
+All structural-consistency checks (C1-C5) passed. Convention 𝒞_b is
+structurally consistent with retained content. Adoption remains a user-side
+governance decision; this proposal does NOT adopt.

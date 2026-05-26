@@ -5117,14 +5117,6 @@
       "to": "yt_p2_taste_staircase_beta_functions_note_2026-04-17"
     },
     {
-      "from": "complex_action_note",
-      "to": "minimal_axioms_2026-04-11"
-    },
-    {
-      "from": "complex_action_note",
-      "to": "claude_complex_action_grown_companion_note"
-    },
-    {
       "from": "complex_selectivity_compare_note",
       "to": "second_grown_family_complex_note"
     },
@@ -45858,18 +45850,15 @@
     },
     "complex_action_note": {
       "claim_id": "complex_action_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (one-parameter complex-kernel model under a",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "minimal_axioms_2026-04-11",
-        "claude_complex_action_grown_companion_note"
-      ],
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "129ef8fe0b8bd4e8c6c43a150348bc5e41c9613662d5e1a55a1aabb237c64903",
+      "note_hash": "dd08cb1ff5cc08bc237233a808912136db8e3dd6dffc4f6f61f4dedf24ba3756",
       "path": "docs/COMPLEX_ACTION_NOTE.md",
       "runner_path": "scripts/complex_action_harness.py",
-      "title": "Complex Action: Conditional One-Parameter Complex-Kernel Model"
+      "title": "Complex Action Free-Gamma No-Go Certificate"
     },
     "complex_selectivity_compare_note": {
       "claim_id": "complex_selectivity_compare_note",
@@ -84832,6 +84821,7 @@
     "closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2",
     "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
     "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+    "complex_action_note",
     "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10",
     "continuum_bridge_note",
     "continuum_limit_note",
@@ -85483,27 +85473,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 588,
       "decoration": 1,
       "meta": 191,
-      "no_go": 72,
+      "no_go": 73,
       "none": 1464,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1015,
       "decoration": 1,
       "meta": 191,
-      "no_go": 175,
+      "no_go": 176,
       "none": 434,
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9776,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

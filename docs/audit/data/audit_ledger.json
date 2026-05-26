@@ -37499,7 +37499,7 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 10,
+      "direct_in_degree": 9,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -37507,7 +37507,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.741,
+      "load_bearing_score": 15.228,
       "load_bearing_step": "The live runner computes the retained grown-row replay at drift=0.2, restore=0.7, seeds 0 and 1, preserving exact gamma=0 reduction, machine-clean Born proxy, F~M=1.000, and a gamma crossover from TOWARD to AWAY.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_no_go",
@@ -37672,7 +37672,7 @@
       },
       "runner_path": "scripts/complex_action_grown_companion.py",
       "title": "Claude Complex-Action Grown Companion Note",
-      "transitive_descendants": 106,
+      "transitive_descendants": 105,
       "verdict_rationale": "The claim is narrow enough to match the evidence: it asserts only survival on the runner-defined grown row at fixed drift, restore, and seeds. The runner code computes the reported quantities from generated geometry and propagation rules, and the completed runner output supports exact gamma=0 reduction, machine-clean Born proxy, weak-field F~M near 1, and the TOWARD-to-AWAY crossover. No external comparator, cross-note input, or definitional renaming is load-bearing for the scoped conclusion."
     },
     "claude_complex_action_grown_companion_note_2026-05-10": {
@@ -39320,69 +39320,43 @@
       "verdict_rationale": null
     },
     "complex_action_note": {
-      "audit_date": "2026-05-22T03:03:37.117295+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "claude_complex_action_grown_companion_note": "Runner-defined grown row only: drift=0.2, restore=0.7, seeds 0 and 1, with the listed gamma sweep and no geometry-generic, continuum, or self-gravity extension.",
-          "minimal_axioms_2026-04-11": null
-        },
-        "dep_claim_type": {
-          "claude_complex_action_grown_companion_note": "bounded_theorem",
-          "minimal_axioms_2026-04-11": "meta"
-        },
-        "dep_effective_status": {
-          "claude_complex_action_grown_companion_note": "retained_bounded",
-          "minimal_axioms_2026-04-11": "meta"
-        },
-        "deps": [
-          "claude_complex_action_grown_companion_note",
-          "minimal_axioms_2026-04-11"
-        ],
-        "load_bearing_score": 12.95,
-        "runner_hash": "4467478f347fc6d0090aaf8253f976c8a8498b893822ed2f406f2971ba5ee5ee",
-        "transitive_descendants": 988
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-030039-6656c1a8-complex_action_note-003",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner does compute the stated finite-setup numerical consequences from the imposed complex kernel, but the load-bearing imaginary-action term and free gamma are introduced by definition. The missing step is a retained derivation of gamma or the imaginary action term from the cited framework inputs, plus any separate horizon-observable bridge for physical horizon claims.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "complex_action_note",
-      "claim_scope": "Conditional one-parameter complex-kernel behavior in the registered finite setup (h=0.5, W=6, L=30, s=0.1, z_src=3.0): gamma=0 reduction, three sampled Born proxies, and the emitted gamma sweep escape/centroid table.",
-      "claim_type": "bounded_theorem",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (one-parameter complex-kernel model under a",
-      "claim_type_last_reviewed": "2026-05-22T03:03:37.117295+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "minimal_axioms_2026-04-11",
-        "claude_complex_action_grown_companion_note"
-      ],
+      "deps": [],
       "direct_in_degree": 6,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 9.17,
-      "load_bearing_step": "The action is defined by the hand-added complex ansatz S = L(1 - f) + i * gamma * L * f with free real gamma.",
-      "load_bearing_step_class": "E",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "129ef8fe0b8bd4e8c6c43a150348bc5e41c9613662d5e1a55a1aabb237c64903",
+      "note_hash": "dd08cb1ff5cc08bc237233a808912136db8e3dd6dffc4f6f61f4dedf24ba3756",
       "note_path": "docs/COMPLEX_ACTION_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the imaginary action term or gamma from retained primitives, then re-audit with a runner or proof that also separates centroid-shift absorption proxies from horizon-specific observables.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-04-11.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh",
       "previous_audits": [
         {
@@ -39654,21 +39628,76 @@
             "total_pass": 4
           },
           "verdict_rationale": "The scoped numerical statements are supported by the runner source and cached stdout: the code actually propagates amplitudes on the lattice, checks gamma=0 against the real propagator, evaluates the three sampled Born proxies, and prints the gamma sweep. However, the load-bearing complex-action term is a free ansatz, not a retained derivation from Cl(3)/Z^3 or the gravity chain. The note also correctly narrows the AWAY/escape behavior to an absorption-biased centroid effect rather than horizon physics, so the safe status is conditional rather than clean or retained."
+        },
+        {
+          "archived_at": "2026-05-26T06:51:51.336602+00:00",
+          "archived_for_note_hash": "129ef8fe0b8bd4e8c6c43a150348bc5e41c9613662d5e1a55a1aabb237c64903",
+          "audit_date": "2026-05-22T03:03:37.117295+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "claude_complex_action_grown_companion_note": "Runner-defined grown row only: drift=0.2, restore=0.7, seeds 0 and 1, with the listed gamma sweep and no geometry-generic, continuum, or self-gravity extension.",
+              "minimal_axioms_2026-04-11": null
+            },
+            "dep_claim_type": {
+              "claude_complex_action_grown_companion_note": "bounded_theorem",
+              "minimal_axioms_2026-04-11": "meta"
+            },
+            "dep_effective_status": {
+              "claude_complex_action_grown_companion_note": "retained_bounded",
+              "minimal_axioms_2026-04-11": "meta"
+            },
+            "deps": [
+              "claude_complex_action_grown_companion_note",
+              "minimal_axioms_2026-04-11"
+            ],
+            "load_bearing_score": 12.95,
+            "runner_hash": "4467478f347fc6d0090aaf8253f976c8a8498b893822ed2f406f2971ba5ee5ee",
+            "transitive_descendants": 988
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260522-030039-6656c1a8-complex_action_note-003",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner does compute the stated finite-setup numerical consequences from the imposed complex kernel, but the load-bearing imaginary-action term and free gamma are introduced by definition. The missing step is a retained derivation of gamma or the imaginary action term from the cited framework inputs, plus any separate horizon-observable bridge for physical horizon claims.",
+          "claim_scope": "Conditional one-parameter complex-kernel behavior in the registered finite setup (h=0.5, W=6, L=30, s=0.1, z_src=3.0): gamma=0 reduction, three sampled Born proxies, and the emitted gamma sweep escape/centroid table.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-22T03:03:37.117295+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The action is defined by the hand-added complex ansatz S = L(1 - f) + i * gamma * L * f with free real gamma.",
+          "load_bearing_step_class": "E",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the imaginary action term or gamma from retained primitives, then re-audit with a runner or proof that also separates centroid-shift absorption proxies from horizon-specific observables.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-04-11.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 1,
+            "B": 0,
+            "C": 3,
+            "D": 0,
+            "total_pass": 4
+          },
+          "verdict_rationale": "The restricted packet supports the runner-level finite-lattice observations: gamma=0 matches the real-action propagator, the sampled Born proxy is at machine precision, and positive gamma produces absorption-biased AWAY centroid/escape behavior in the printed sweep. However, the complex action itself is explicitly admitted as a free ansatz import, not derived from Cl(3)/Z^3 or retained upstream authority. The runner source computes consequences of that imposed kernel; it does not derive the kernel, gamma, or horizon physics. The cited MINIMAL_AXIOMS_2026-04-11.md is also marked superseded/meta, so it cannot close the premise."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 1,
+        "A": 0,
         "B": 0,
-        "C": 3,
+        "C": 0,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 0
       },
       "runner_path": "scripts/complex_action_harness.py",
-      "title": "Complex Action: Conditional One-Parameter Complex-Kernel Model",
+      "title": "Complex Action Free-Gamma No-Go Certificate",
       "transitive_descendants": 71,
-      "verdict_rationale": "The restricted packet supports the runner-level finite-lattice observations: gamma=0 matches the real-action propagator, the sampled Born proxy is at machine precision, and positive gamma produces absorption-biased AWAY centroid/escape behavior in the printed sweep. However, the complex action itself is explicitly admitted as a free ansatz import, not derived from Cl(3)/Z^3 or retained upstream authority. The runner source computes consequences of that imposed kernel; it does not derive the kernel, gamma, or horizon physics. The cited MINIMAL_AXIOMS_2026-04-11.md is also marked superseded/meta, so it cannot close the premise."
+      "verdict_rationale": null
     },
     "complex_selectivity_compare_note": {
       "audit_date": "2026-05-19T14:52:22.324595+00:00",
@@ -171067,13 +171096,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 60,
+      "direct_in_degree": 59,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 39.877,
+      "load_bearing_score": 39.373,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -171320,7 +171349,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Inputs (SUPERSEDED)",
-      "transitive_descendants": 939,
+      "transitive_descendants": 937,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-05-03": {

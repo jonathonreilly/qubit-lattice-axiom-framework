@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,19 +54,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1059 |
+| `bounded_theorem` | 1058 |
 | `decoration` | 47 |
 | `meta` | 234 |
-| `no_go` | 247 |
+| `no_go` | 248 |
 | `open_gate` | 112 |
 | `positive_theorem` | 725 |
 
@@ -85,7 +85,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 - runners classified: 1982
 - runners with (C) first-principles compute hits: 969
 - runners with (D) external comparator hits: 583
-- decoration candidates (no C, no D): 315
+- decoration candidates (no C, no D): 316
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -97,7 +97,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 906 | 52.33 | `audited_clean` | **retained_bounded** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 908 | 51.83 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1074 | 46.07 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms_2026-04-11` | meta | critical | 939 | 39.88 | `unaudited` | meta |
+| 5 | `minimal_axioms_2026-04-11` | meta | critical | 937 | 39.37 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 179 | 38.99 | `unaudited` | unaudited |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 711 | 37.98 | `unaudited` | unaudited |
@@ -883,7 +883,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2702,21 +2701,6 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the restricted packet, the runner source and inlined load-bearing helper code instantiate the lattice operators, finite-rank support construction, shell averaging, least-squares harmonic projection, and finite-difference metric residual checks. The conclusion is bounded to this numerical helper workflow and does not claim a physical derivation of the projection map or full GR closure.
 - **rationale:** The load-bearing computation is not just a printed constant: the runner constructs phi grids from the supplied finite-rank/O_h machinery, fits a/r from shell averages, evaluates finite-difference Einstein-tensor residuals, and records three passing bounded checks. The upstream finite-rank helper authority is retained_bounded, and the source note explicitly limits the claim to a helper-module residual result rather than a full physical theorem. The numerical parameters in the helper are selected inputs, but the audited claim is only that this bounded module performs and reports the stated coarse-graining/residual calculation on that finite family.
 - **auditor confidence:** medium
-
-### `complex_action_note`
-
-- **Note:** [`COMPLEX_ACTION_NOTE.md`](../../docs/COMPLEX_ACTION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional one-parameter complex-kernel behavior in the registered finite setup (h=0.5, W=6, L=30, s=0.1, z_src=3.0): gamma=0 reduction, three sampled Born proxies, and the emitted gamma sweep escape/centroid table.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260522-030039-6656c1a8-complex_action_note-003`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The action is defined by the hand-added complex ansatz S = L(1 - f) + i * gamma * L * f with free real gamma.  _(class `E`)_
-- **chain closes:** False — The runner does compute the stated finite-setup numerical consequences from the imposed complex kernel, but the load-bearing imaginary-action term and free gamma are introduced by definition. The missing step is a retained derivation of gamma or the imaginary action term from the cited framework inputs, plus any separate horizon-observable bridge for physical horizon claims.
-- **rationale:** The restricted packet supports the runner-level finite-lattice observations: gamma=0 matches the real-action propagator, the sampled Born proxy is at machine precision, and positive gamma produces absorption-biased AWAY centroid/escape behavior in the printed sweep. However, the complex action itself is explicitly admitted as a free ansatz import, not derived from Cl(3)/Z^3 or retained upstream authority. The runner source computes consequences of that imposed kernel; it does not derive the kernel, gamma, or horizon physics. The cited MINIMAL_AXIOMS_2026-04-11.md is also marked superseded/meta, so it cannot close the premise.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-04-11.md`
-- **auditor confidence:** high
 
 ### `complex_selectivity_compare_note`
 

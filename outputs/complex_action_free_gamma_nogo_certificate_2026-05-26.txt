@@ -1,0 +1,50 @@
+[PASS] [A] note contains: **Claim type:** no_go
+[PASS] [A] note contains: exact negative boundary
+[PASS] [A] note contains: free real `gamma`
+[PASS] [A] note contains: cannot derive a gravity-horizon unification theorem
+[PASS] [A] note contains: Those are valid finite-model facts about the imposed kernel
+[PASS] [A] note contains: any new axiom or audit verdict
+[PASS] [A] note omits stale phrase: bounded conditional one-parameter
+[PASS] [A] note omits stale phrase: retained scope
+[PASS] [A] note omits stale phrase: gravity and horizons coexist
+[PASS] [A] note omits stale phrase: horizon-like
+[PASS] [A] note omits stale phrase: superradiance-like
+[PASS] [A] note omits stale phrase: tier-ratifiable gravity-horizon unification theorem
+COMPLEX ACTION FREE-GAMMA NO-GO
+========================================================================
+[PASS] [A] cache contains: runner: scripts/complex_action_harness.py
+[PASS] [A] cache contains: exit_code: 0
+[PASS] [A] cache contains: status: ok
+[PASS] [A] cache contains: h=0.5, W=6, L=30, s=0.1, z_src=3.0
+[PASS] [A] cache contains: match: True
+[PASS] [C] gamma sweep has 10 rows (10)
+[PASS] [C] gamma=-0.50 is TOWARD with amplification ((0.5378225, 'TOWARD', 43.5943))
+[PASS] [C] gamma=0.00 is real-action TOWARD baseline ((0.09339748, 'TOWARD', 2.7311))
+[PASS] [C] gamma=0.10 crosses to AWAY ((-0.01791678, 'AWAY', 1.6119))
+[PASS] [C] gamma=2.00 is deep absorption ((-2.18852, 'AWAY', 0.0002))
+[PASS] [C] escape is monotonically decreasing across gamma sweep ([43.5943, 7.9427, 2.7311, 2.097, 1.6119, 1.2405, 0.9558, 0.2056, 0.0177, 0.0002])
+[PASS] [C] three Born proxy samples parsed ([2.38e-15, 1.13e-15, 1.03e-16])
+[PASS] [C] Born proxy samples are machine small ([2.38e-15, 1.13e-15, 1.03e-16])
+[PASS] [C] gamma=0 reduction is exact in cache (delta=0.000e+00)
+
+FREE-GAMMA ALGEBRA
+========================================================================
+[PASS] [A] gamma=0 equals the real-action phase factor
+[PASS] [A] positive gamma suppresses amplitude by definition (|g0|=1.000e+00, |g1|=3.679e-01, |g2|=1.353e-01)
+[PASS] [A] gamma ratio is exactly the imposed exponential weight (3.678794e-01)
+[PASS] [A] zero field makes gamma unobservable in the kernel
+
+AUDIT METADATA
+========================================================================
+[PASS] [M] claim type is no_go (no_go)
+[PASS] [M] audit status reset for re-audit (unaudited)
+[PASS] [M] effective status reset for re-audit (unaudited)
+[PASS] [M] runner path is registered (scripts/complex_action_harness.py)
+[PASS] [M] direct dependency list is empty ([])
+[PASS] [M] helper runner paths are empty ([])
+[PASS] [M] open dependency paths are empty ([])
+[PASS] [M] queue entry is ready ({'audit_independence_required': 'fresh_context_or_stronger', 'audit_status': 'unaudited', 'blocker': None, 'claim_id': 'complex_action_note', 'claim_scope': None, 'claim_type': 'no_go', 'claim_type_provenance': 'author_hint', 'criticality': 'high', 'criticality_rank': 2, 'cross_confirmation_status': None, 'deps': [], 'direct_in_degree': 6, 'effective_status': 'unaudited', 'helper_runner_paths': [], 'load_bearing_score': 9.17, 'note_path': 'docs/COMPLEX_ACTION_NOTE.md', 'queue_reason': 'unaudited', 'ready': True, 'runner_path': 'scripts/complex_action_harness.py', 'transitive_descendants': 71})
+
+SUMMARY
+========================================================================
+PASS=38 FAIL=0

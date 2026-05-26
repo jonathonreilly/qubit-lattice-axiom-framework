@@ -24,7 +24,6 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1233 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
@@ -48,15 +47,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
+| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 1 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
 | `audited_clean` | 747 |
 | `audited_conditional` | 96 |
-| `audited_decoration` | 42 |
+| `audited_decoration` | 43 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
@@ -65,11 +64,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1058 |
-| `decoration` | 43 |
+| `decoration` | 44 |
 | `meta` | 234 |
 | `no_go` | 247 |
 | `open_gate` | 112 |
-| `positive_theorem` | 730 |
+| `positive_theorem` | 729 |
 
 | criticality | count |
 |---|---:|
@@ -125,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -986,6 +984,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
+| `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | judicial_review | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
@@ -6141,6 +6140,20 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The finite-model computation directly evaluates the claimed observable and fit comparison under the stated parameters; the conclusion is only the bounded numerical boundary-preference statement and coefficient shift.
 - **rationale:** The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement.
 - **auditor confidence:** high
+
+### `hopping_bilinear_hermiticity_theorem_note_2026-05-02`
+
+- **Note:** [`HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`](../../docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** On the retained finite tensor-product bridge, H_{xy}=a_x^dag a_y+a_y^dag a_x is Hermitian, translation-covariant, Q_total-conserving, and translation-invariant sums commute with translations and have real spectrum.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260526T015209Z-hopping_bilinear_hermiticity_theorem_not-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Using the retained bridge identities T_a a_x T_a^dag = a_{x+a} and T_a a_x^dag T_a^dag = a_{x+a}^dag gives T_a H_{xy} T_a^dag = H_{x+a,y+a}, with the remaining claims following by adjoints, local ladder commutators, linearity, and the finite spectral theorem.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing work is class-A algebra over a single retained upstream bridge plus standard finite-dimensional linear algebra. There are no external comparator checks, numerical-match steps, fitted inputs, or additional open dependencies. Under the explicit tie-break rule, clean versus decoration must resolve to audited_decoration when the chain reduces to one parent claim and zero class-D checks. | The chain closes as class-A algebra over the single retained tensor-product bridge plus standard finite-dimensional linear algebra. There are no external comparator checks, tuned numerical inputs, or independent first-principles computations producing new framework numbers. Under the explicit tie-break rule, clean versus decoration resolves to audited_decoration when the chain reduces to one parent claim with zero class-D checks. | The derivation is a genuine class-A algebraic closure over the single retained tensor-product translation/fermion bridge plus standard finite-dimensional algebra. There are no external comparator checks, no numerical-match dependence, and no open dependency in the restricted packet. Under the rubric tie-breaker, clean versus decoration must be resolved as audited_decoration when the chain reduces to one parent claim and zero D checks. | Both audits correctly classify the load-bearing step as class A and find that the chain closes over the retained bridge. The rubric's clean-versus-decoration tie-break is decisive here: there are zero external comparator checks, the proof is algebraic, and the chain reduces to one upstream retained parent plus standard finite-dimensional mathematics. Therefore the applyable tuple is audited_decoration with claim_type decoration. | The derivation is class-A algebraic closure over a single retained upstream bridge plus standard finite-dimensional linear algebra. There are zero external comparator checks and no unclosed dependency in the restricted packet. Under the explicit tie-break rule, a clean algebraic consequence of one retained parent should be classified as audited_decoration rather than audited_clean.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing work is class-A algebra over a single retained upstream bridge plus standard finite-dimensional linear algebra. There are no external comparator checks, numerical-match steps, fitted inputs, or additional open dependencies. Under the explicit tie-break rule, clean versus decoration must resolve to audited_decoration when the chain reduces to one parent claim and zero class-D checks. | The chain closes as class-A algebra over the single retained tensor-product bridge plus standard finite-dimensional linear algebra. There are no external comparator checks, tuned numerical inputs, or independent first-principles computations producing new framework numbers. Under the explicit tie-break rule, clean versus decoration resolves to audited_decoration when the chain reduces to one parent claim with zero class-D checks. | The derivation is a genuine class-A algebraic closure over the single retained tensor-product translation/fermion bridge plus standard finite-dimensional algebra. There are no external comparator checks, no numerical-match dependence, and no open dependency in the restricted packet. Under the rubric tie-breaker, clean versus decoration must be resolved as audited_decoration when the chain reduces to one parent claim and zero D checks. | Both audits correctly classify the load-bearing step as class A and find that the chain closes over the retained bridge. The rubric's clean-versus-decoration tie-break is decisive here: there are zero external comparator checks, the proof is algebraic, and the chain reduces to one upstream retained parent plus standard finite-dimensional mathematics. Therefore the applyable tuple is audited_decoration with claim_type decoration. | The derivation is class-A algebraic closure over a single retained upstream bridge plus standard finite-dimensional linear algebra. There are zero external comparator checks and no unclosed dependency in the restricted packet. Under the explicit tie-break rule, a clean algebraic consequence of one retained parent should be classified as audited_decoration rather than audited_clean.
+- **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+- **auditor confidence:** judicial_panel_majority
 
 ### `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29`
 

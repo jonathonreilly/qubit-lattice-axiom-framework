@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 235,
-    "high": 359,
+    "high": 358,
     "leaf": 327,
     "medium": 334
   },
@@ -6658,25 +6658,27 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
+      "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "migration_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        "sm_relativistic_dof_count_import_note_2026-05-17"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.96,
-      "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
+      "helper_runner_paths": [
+        "scripts/dm_leptogenesis_exact_common.py"
+      ],
+      "load_bearing_score": 10.448,
+      "note_path": "docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
-      "transitive_descendants": 248
+      "runner_path": "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py",
+      "transitive_descendants": 246
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -7268,32 +7270,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 247
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sm_relativistic_dof_count_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "load_bearing_score": 10.448,
-      "note_path": "docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py",
-      "transitive_descendants": 246
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -37707,5 +37683,5 @@
     }
   ],
   "ready_count": 70,
-  "total_pending": 1255
+  "total_pending": 1254
 }

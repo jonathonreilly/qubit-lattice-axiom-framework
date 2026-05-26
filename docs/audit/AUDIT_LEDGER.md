@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 165 |
-| **retained_bounded** | 483 |
+| **retained_bounded** | 484 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 17 |
-| unaudited | 1255 |
+| unaudited | 1254 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 772 |
+| `audited_clean` | 773 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1484 |
+| `unaudited` | 1483 |
 
 | claim_type | count |
 |---|---:|
@@ -710,6 +710,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10581,6 +10582,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting N_c = 3 into the anomaly-allowed family yields the SM hypercharge tuple and left-Weyl charge spectrum {0, ±1/3, ±2/3, ±1}.  _(class `A`)_
 - **chain closes:** True — The narrowed hypercharge statement follows by exact rational substitution from retained-grade cited inputs. The source correctly demotes the Burnside generation-count import and does not use it load-bearing for the audited claim.
 - **rationale:** The load-bearing step is a straightforward algebraic closure: take the retained anomaly family, insert the independently retained graph-first N_c = 3 selector, and compare the resulting rational tuple to the retained hypercharge-enumeration tuple. The runner source performs exact rational arithmetic rather than merely printing constants, and its ledger checks are cross-note status checks rather than external numerical comparators. The two residuals are explicitly scoped as hypotheses/residual freedoms, and the generation-count bridge is excluded from the narrowed claim.
+- **auditor confidence:** high
+
+### `sm_relativistic_dof_count_import_note_2026-05-17`
+
+- **Note:** [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](../../docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-sm-relativistic-dof-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given the declared inventory, g_bosonic = 28 and g_fermionic = 90, so g_* = g_bosonic + (7/8) g_fermionic = 28 + (7/8) * 90 = 427/4 = 106.75.  _(class `A`)_
+- **chain closes:** True — The chain closes as class-A arithmetic over explicitly stated bounded inputs: the listed component multiplicities multiply and sum to 28 and 90, and Fraction(7,8) gives 427/4. The external Standard Model inventory is declared as the bounded input and required to be carried downstream, so it is not a hidden wall inside a claimed framework derivation.
+- **rationale:** This is a clean bounded arithmetic/import certificate, not a numerical match: the target value follows exactly from the declared inventory table and the 7/8 weight. The runner computes component products, sums bosonic and fermionic totals, applies Fraction(7,8), checks 427/4 and 106.75, and verifies note-boundary statements; it does not merely print the target. The dependency closes the exact retained 7/8 rational identity within this bounded scope, while the source explicitly does not ratify a framework derivation of Standard Model particle content, the fermion thermal factor, electroweak equilibrium, cosmology, downstream DM-leptogenesis, or a new audit verdict. Under the no-go/admission discipline, the named external inventory assumption is surfaced as the bounded input and downstream obligation, not hidden as an unacknowledged closure claim.
 - **auditor confidence:** high
 
 ### `source_driven_field_recovery_h025_pocket_note`

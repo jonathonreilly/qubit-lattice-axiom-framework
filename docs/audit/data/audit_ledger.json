@@ -126118,11 +126118,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 9.472,
+      "load_bearing_score": 12.472,
       "load_bearing_step": "The equality R_lat(d-1)=eta(d)/zeta(d) is equivalent to 1/(2d)=2^(1-d), hence to 2^(d-2)=d, whose unique integer solution for d>=2 is d=4.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "abd5c2c381daf2cf26c42ae4611beff791bee6132635e41c2c712daf3799940c",
       "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "A second auditor may re-check that relational runner checks T1-T6 are not treated as load-bearing for the narrow theorem.",
@@ -243867,24 +243867,42 @@
       "verdict_rationale": null
     },
     "sm_relativistic_dof_count_import_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T00:00:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2."
+        },
+        "dep_claim_type": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 8.96,
+        "runner_hash": "714decb544f077fe780563f30351a64ae5f86709f1df5579e8640bccbb025fb5",
+        "transitive_descendants": 248
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-sm-relativistic-dof-pass1-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes as class-A arithmetic over explicitly stated bounded inputs: the listed component multiplicities multiply and sum to 28 and 90, and Fraction(7,8) gives 427/4. The external Standard Model inventory is declared as the bounded input and required to be carried downstream, so it is not a hidden wall inside a claimed framework derivation.",
       "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -243892,19 +243910,19 @@
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 8.96,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given the declared inventory, g_bosonic = 28 and g_fermionic = 90, so g_* = g_bosonic + (7/8) g_fermionic = 28 + (7/8) * 90 = 427/4 = 106.75.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "14ca250db8402f5bab238354f8c653bd7f58f3a88086e74374940081c031cb23",
       "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream users preserve the stated inventory-assumption boundary; this audit does not license using g_* = 106.75 as a framework-derived physical inventory.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -243960,18 +243978,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 28,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 28
       },
       "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
       "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Finite Inventory Arithmetic",
       "transitive_descendants": 248,
-      "verdict_rationale": null
+      "verdict_rationale": "This is a clean bounded arithmetic/import certificate, not a numerical match: the target value follows exactly from the declared inventory table and the 7/8 weight. The runner computes component products, sums bosonic and fermionic totals, applies Fraction(7,8), checks 427/4 and 106.75, and verifies note-boundary statements; it does not merely print the target. The dependency closes the exact retained 7/8 rational identity within this bounded scope, while the source explicitly does not ratify a framework derivation of Standard Model particle content, the fermion thermal factor, electroweak equilibrium, cosmology, downstream DM-leptogenesis, or a new audit verdict. Under the no-go/admission discipline, the named external inventory assumption is surfaced as the bounded input and downstream obligation, not hidden as an unacknowledged closure claim."
     },
     "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
       "audit_date": null,

@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 """
-Strong CP / θ = 0 Retained Action-Surface Closure
-=================================================
+Strong CP / θ = 0 Bounded Selected-Surface Closure
+==================================================
 
-STATUS: retained-framework action-surface closure on the retained
-Wilson-plus-staggered action surface
+STATUS: bounded selected-surface closure on the explicitly θ-free
+Wilson-plus-staggered scalar-mass action surface
 
 TARGET CLAIM:
-  On the retained Wilson-plus-staggered Cl(3)/Z³ action surface,
+  On the explicitly θ-free Wilson-plus-staggered scalar-mass surface on the
+  Z^3 spatial substrate,
   θ_eff = 0 with no surviving loophole from:
 
     (A) fermion determinant / effective-action phase,
-    (B) axial / chiral basis rephasing inside the retained action class,
+    (B) axial / chiral basis rephasing inside the selected scalar-mass class,
     (C) strong-sector phase generation when the fermions are integrated out,
     (D) positive-weight topological-sector weighting away from θ = 0.
 
 SCOPE:
-  This is a retained action-surface closure package, not a universal
-  all-formulations strong-CP theorem.
+  This is a bounded selected-surface closure package, not a universal
+  all-formulations strong-CP theorem and not a retained-status claim.
 """
 
 from __future__ import annotations
@@ -32,8 +33,8 @@ np.set_printoptions(precision=10, linewidth=120, suppress=True)
 COUNTS = {
     "THEOREM PASS": 0,
     "THEOREM FAIL": 0,
-    "RETAINED-SURFACE COMPUTE PASS": 0,
-    "RETAINED-SURFACE COMPUTE FAIL": 0,
+    "SELECTED-SURFACE COMPUTE PASS": 0,
+    "SELECTED-SURFACE COMPUTE FAIL": 0,
     "SUPPORT": 0,
 }
 
@@ -45,8 +46,8 @@ def safe_slogdet(M):
 
 
 def check(name, condition, detail="", bucket="THEOREM"):
-    pass_key = "THEOREM PASS" if bucket == "THEOREM" else "RETAINED-SURFACE COMPUTE PASS"
-    fail_key = "THEOREM FAIL" if bucket == "THEOREM" else "RETAINED-SURFACE COMPUTE FAIL"
+    pass_key = "THEOREM PASS" if bucket == "THEOREM" else "SELECTED-SURFACE COMPUTE PASS"
+    fail_key = "THEOREM FAIL" if bucket == "THEOREM" else "SELECTED-SURFACE COMPUTE FAIL"
     status = "PASS" if condition else "FAIL"
     COUNTS[pass_key if condition else fail_key] += 1
     print(f"  [{status}] [{bucket}] {name}" + (f"  ({detail})" if detail else ""))
@@ -292,7 +293,7 @@ def rotated_mass_operator(mass, alpha, eps_mat):
 
 
 def effective_action_3p1(U_links, L_s, L_t, mass, beta=None):
-    """Exact retained fermion integration plus Wilson gauge action."""
+    """Exact selected-surface fermion integration plus Wilson gauge action."""
     if beta is None:
         beta = 6.0 / (4.0 * np.pi * CANONICAL_ALPHA_BARE)
 
@@ -387,7 +388,7 @@ def test_leg_a_fermion_phase_closure():
     D_test = build_staggered_dirac_3p1(L_s, L_t, U_test)
     anticomm = eps_mat @ D_test + D_test @ eps_mat
     max_anticomm = np.max(np.abs(anticomm))
-    check("εD + Dε = 0 on the retained 3+1 APBC surface", max_anticomm < 1e-12, f"max |εD + Dε| = {max_anticomm:.2e}", bucket="COMPUTE")
+    check("εD + Dε = 0 on the selected 3+1 APBC surface", max_anticomm < 1e-12, f"max |εD + Dε| = {max_anticomm:.2e}", bucket="COMPUTE")
 
     max_pair_residual = 0.0
     max_im_gamma = 0.0
@@ -454,7 +455,7 @@ def test_leg_b_chiral_basis_non_generation():
         if np.max(np.abs(M_formula.imag)) < 1e-12:
             real_preserving.append(alpha)
 
-    check("Axial rotation leaves the retained kinetic operator invariant", max(kinetic_residuals) < 1e-12, f"max |U_α D U_α - D| = {max(kinetic_residuals):.2e}")
+    check("Axial rotation leaves the selected kinetic operator invariant", max(kinetic_residuals) < 1e-12, f"max |U_α D U_α - D| = {max(kinetic_residuals):.2e}")
     check("Rotated mass operator is exactly m(cos α I + i sin α ε)", max(mass_formula_residuals) < 1e-12, f"max residual = {max(mass_formula_residuals):.2e}")
 
     expected_real = [0.0, np.pi]
@@ -474,7 +475,7 @@ def test_leg_b_chiral_basis_non_generation():
     phase_probe = abs(float(np.angle(sign_probe)))
     scalar_residual = np.max(np.abs(M_probe - mass * np.cos(alpha_probe) * I))
     check(
-        "Nontrivial axial rotation exits the retained scalar-mass action class",
+        "Nontrivial axial rotation exits the selected scalar-mass action class",
         scalar_residual > 1e-3,
         f"max |M_α - m cos(α) I| = {scalar_residual:.3e}; |arg det| = {phase_probe:.2e}",
         bucket="COMPUTE",
@@ -485,7 +486,7 @@ def test_leg_b_chiral_basis_non_generation():
         M_alpha = rotated_mass_operator(mass, alpha, eps_mat)
         sign, _ = safe_slogdet(D + M_alpha)
         phase_endpoints.append(abs(float(np.angle(sign))))
-    check("The only admissible retained-surface axial endpoints keep the determinant phase zero", max(phase_endpoints) < 1e-10, f"max endpoint |phase| = {max(phase_endpoints):.2e}", bucket="COMPUTE")
+    check("The only admissible selected-surface axial endpoints keep the determinant phase zero", max(phase_endpoints) < 1e-10, f"max endpoint |phase| = {max(phase_endpoints):.2e}", bucket="COMPUTE")
 
 
 def test_weak_sector_separation():
@@ -563,7 +564,7 @@ def test_weak_sector_separation():
     check("|det(V_CKM)| = 1", abs(abs(det_V) - 1.0) < 1e-10, f"|det V| = {abs(det_V):.12f}")
 
     y_t = 0.9176
-    check("Retained Yukawa/top lane keeps the quark masses real and positive", y_t > 0 and np.isreal(y_t), f"y_t = {y_t}", bucket="COMPUTE")
+    check("Selected Yukawa/top lane keeps the quark masses real and positive", y_t > 0 and np.isreal(y_t), f"y_t = {y_t}", bucket="COMPUTE")
     M_u = np.diag([2.2e-3, 1.27, 173.10])
     M_d = np.diag([4.7e-3, 9.6e-2, 4.18])
     arg_det_md = abs(float(np.angle(np.linalg.det(M_u @ M_d))))
@@ -574,8 +575,8 @@ def test_leg_c_effective_action_cp_even():
     print("\n=== LEG C: Gauge-sector radiative non-generation ===\n")
 
     axioms = [
-        "Cl(3) local algebra",
-        "Z³ spatial substrate",
+        "one-qubit operator algebra",
+        "Z^3 spatial substrate",
         "finite Grassmann / staggered-Dirac partition",
         "physical lattice reading",
         "canonical normalization: g_bare = 1, plaquette / u₀ surface",
@@ -583,9 +584,9 @@ def test_leg_c_effective_action_cp_even():
     beta = 6.0 / (4.0 * np.pi * CANONICAL_ALPHA_BARE)
     action_slots = {"gauge": "Wilson plaquette", "fermion": "staggered Dirac", "beta": beta, "mass": "real"}
 
-    check(f"Retained action surface has {len(axioms)} accepted inputs", len(axioms) == 5, "; ".join(f"({i+1}) {a}" for i, a in enumerate(axioms)))
+    check(f"Selected action surface has {len(axioms)} explicit inputs", len(axioms) == 5, "; ".join(f"({i+1}) {a}" for i, a in enumerate(axioms)))
     check("Canonical normalization fixes Wilson β = 6", abs(beta - 6.0) < 1e-12, f"β = {beta:.12f}")
-    support("No bare θ slot is present in the retained action-class definition", f"slots = {sorted(action_slots)}")
+    support("No bare θ slot is present in the selected action-class definition", f"slots = {sorted(action_slots)}")
 
     L_s = 4
     L_t = 4
@@ -618,11 +619,11 @@ def test_leg_c_effective_action_cp_even():
                 f"S_eff(U)-S_eff(U*) = {abs(eff['S_eff'] - eff_cp['S_eff']):.2e}"
             )
 
-    check("Wilson gauge action is real on sampled retained 3+1 configurations", max_im_sg < 1e-12, f"max |Im S_gauge| = {max_im_sg:.2e}", bucket="COMPUTE")
-    check("Exact retained effective action is real on sampled retained 3+1 configurations", max_im_seff < 1e-10, f"max |Im S_eff| = {max_im_seff:.2e}", bucket="COMPUTE")
+    check("Wilson gauge action is real on sampled selected 3+1 configurations", max_im_sg < 1e-12, f"max |Im S_gauge| = {max_im_sg:.2e}", bucket="COMPUTE")
+    check("Exact selected effective action is real on sampled selected 3+1 configurations", max_im_seff < 1e-10, f"max |Im S_eff| = {max_im_seff:.2e}", bucket="COMPUTE")
     check("Linkwise complex conjugation preserves the Wilson gauge action", max_sg_cp < 1e-12, f"max |S_gauge(U)-S_gauge(U*)| = {max_sg_cp:.2e}", bucket="COMPUTE")
     check("Linkwise complex conjugation preserves the exact fermion effective action", max_logdet_cp < 1e-10, f"max |log|det|(U)-log|det|(U*)| = {max_logdet_cp:.2e}", bucket="COMPUTE")
-    check("Linkwise complex conjugation preserves the full retained effective action", max_seff_cp < 1e-10, f"max |S_eff(U)-S_eff(U*)| = {max_seff_cp:.2e}", bucket="COMPUTE")
+    check("Linkwise complex conjugation preserves the full selected effective action", max_seff_cp < 1e-10, f"max |S_eff(U)-S_eff(U*)| = {max_seff_cp:.2e}", bucket="COMPUTE")
 
 
 def test_leg_d_topological_sector_positivity():
@@ -677,18 +678,18 @@ def test_combined_theta_eff():
     theta_eff = theta_bare + arg_det_M
     theta_exp_bound = 1e-10
 
-    support("θ_bare = 0 is taken from the retained action-class definition", "no bare θ slot appears in the retained Wilson-plus-staggered action")
+    support("θ_bare = 0 is taken from the selected action-class definition", "no bare θ slot appears in the selected Wilson-plus-staggered scalar-mass action")
     check("Explicit positive-mass quark surface gives arg det(M_u M_d) = 0", abs(arg_det_M) < 1e-12, f"|arg det| = {abs(arg_det_M):.2e}", bucket="COMPUTE")
-    check("Combined retained-surface synthesis gives θ_eff = 0", abs(theta_eff) < 1e-12, f"{theta_bare} + {arg_det_M} = {theta_eff}", bucket="COMPUTE")
-    check("Retained-framework closure is consistent with the neutron-EDM bound", abs(theta_eff) < theta_exp_bound, f"|θ_eff| = {abs(theta_eff):.1e} < {theta_exp_bound:.1e}", bucket="COMPUTE")
+    check("Combined selected-surface synthesis gives θ_eff = 0", abs(theta_eff) < 1e-12, f"{theta_bare} + {arg_det_M} = {theta_eff}", bucket="COMPUTE")
+    check("Selected-surface closure is consistent with the neutron-EDM bound", abs(theta_eff) < theta_exp_bound, f"|θ_eff| = {abs(theta_eff):.1e} < {theta_exp_bound:.1e}", bucket="COMPUTE")
 
 
 def main():
     print("=" * 78)
-    print("Strong CP / θ = 0 Retained Action-Surface Closure")
+    print("Strong CP / θ = 0 Bounded Selected-Surface Closure")
     print("=" * 78)
     print()
-    print("CLAIM: On the retained Wilson-plus-staggered Cl(3)/Z³ action surface,")
+    print("CLAIM: On the explicitly θ-free Wilson-plus-staggered scalar-mass surface,")
     print("       θ_eff = 0 with no surviving loophole from axial rephasing,")
     print("       exact fermion integration, or positive-weight topological sectors.")
 
@@ -700,28 +701,28 @@ def main():
     test_combined_theta_eff()
 
     print("\n=== SUPPORT CONTEXT ===\n")
-    support("Vafa-Witten sign discipline is consistent with the retained positive-weight closure", "external consistency only; not counted as theorem-grade")
-    support("A detailed closed-form lattice measure Z_Q is not required for the retained θ = 0 minimum theorem", "the closure uses positive weights and the θ-sum bound, not a closed-form instanton measure")
+    support("Vafa-Witten sign discipline is consistent with the selected positive-weight closure", "external consistency only; not counted as theorem-grade")
+    support("A detailed closed-form lattice measure Z_Q is not required for the selected θ = 0 minimum theorem", "the closure uses positive weights and the θ-sum bound, not a closed-form instanton measure")
 
     print()
     print("=" * 78)
     print(f"THEOREM PASS={COUNTS['THEOREM PASS']}  FAIL={COUNTS['THEOREM FAIL']}")
     print(
-        "RETAINED-SURFACE COMPUTE PASS="
-        f"{COUNTS['RETAINED-SURFACE COMPUTE PASS']}  "
-        f"FAIL={COUNTS['RETAINED-SURFACE COMPUTE FAIL']}"
+        "SELECTED-SURFACE COMPUTE PASS="
+        f"{COUNTS['SELECTED-SURFACE COMPUTE PASS']}  "
+        f"FAIL={COUNTS['SELECTED-SURFACE COMPUTE FAIL']}"
     )
     print(f"SUPPORT={COUNTS['SUPPORT']}")
     print("=" * 78)
 
-    total_fail = COUNTS["THEOREM FAIL"] + COUNTS["RETAINED-SURFACE COMPUTE FAIL"]
+    total_fail = COUNTS["THEOREM FAIL"] + COUNTS["SELECTED-SURFACE COMPUTE FAIL"]
     if total_fail != 0:
-        print("\nOne or more retained strong-CP closure checks failed.")
+        print("\nOne or more selected-surface strong-CP closure checks failed.")
         return 1
 
     print()
-    print("All retained action-surface closure checks passed. The strong sector closes at")
-    print("θ_eff = 0 on the retained Wilson-plus-staggered action surface, while")
+    print("All selected action-surface closure checks passed. The strong sector closes at")
+    print("θ_eff = 0 on the selected Wilson-plus-staggered scalar-mass surface, while")
     print("CKM CP remains weak-sector only and the surviving neutron-EDM signal")
     print("stays in the separate bounded CKM lane.")
     return 0

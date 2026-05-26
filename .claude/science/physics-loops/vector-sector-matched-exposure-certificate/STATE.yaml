@@ -33,6 +33,6 @@ no_go_routes:
   - "Do not restore proposed_retained wording."
   - "Do not treat the single matched-exposure case as a universal DC vector force."
 review_findings: []
-pr_status: pending
-next_exact_action: "Run final gates, commit, push, open PR, verify mergeability, then continue if runtime remains."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1950"
+next_exact_action: "Verify mergeability, then continue if runtime remains."
 stop_condition: "Continue campaign until the 12-hour budget expires or the refreshed opportunity queue has no viable independent science block."

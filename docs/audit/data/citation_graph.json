@@ -40677,7 +40677,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "16e40df8e5080bc4414e903fbb99eb41eac79aeb3cacb4e59511f2ef7bcf9e21",
+      "note_hash": "2a75c872db3a0c4f1899d4de9c709b4db969f12d863f4331cbfc30e1e3a230da",
       "path": "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md",
       "runner_path": "scripts/automation_lock.py",
       "title": "Long-Running Execution"
@@ -40689,7 +40689,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "753f52a10707d2c5b8b1b4d9da7baa93f872c0cfca746869e3216b01ffce7b47",
+      "note_hash": "7afede7381fe5c9bed4128fe716cd9443151e3628beb4a96582620253356fe0a",
       "path": "docs/ai_methodology/skills/physics-loop/references/route-patterns.md",
       "runner_path": null,
       "title": "Route Patterns"
@@ -40710,7 +40710,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "95acc1e7cdc88d9011d1e14f1395a72913eabc0842c9fc337155d0fd507b544b",
+      "note_hash": "8222ccb7cefb77d13126b34c6cb995ce854b4a7d708f3cab5b2064b7921b0772",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -54710,7 +54710,7 @@
         "gauge_scalar_temporal_completion_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8991024dc76f93a92831b9eb96a435dcb8c0e2aef40bfca1ef9d3f3bb276c496",
+      "note_hash": "c287ce481e3483dc954488964311f265d99a2d6faedaec3ef4591769a679acbb",
       "path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
       "title": "Gauge-Scalar Temporal Observable Bridge Stretch Attempt"

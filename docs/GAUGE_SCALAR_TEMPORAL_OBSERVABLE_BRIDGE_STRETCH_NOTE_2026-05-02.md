@@ -1,6 +1,6 @@
 # Gauge-Scalar Temporal Observable Bridge Stretch Attempt
 
-**Date:** 2026-05-02
+**Date:** 2026-05-02 (current-surface boundary firewall 2026-05-26)
 **Claim type:** open_gate
 **Status:** stretch-attempt note + named obstruction packet on the
 observable-level reduction residual flagged in the audit verdict for
@@ -11,6 +11,58 @@ and isolates the named obstruction.
 **Primary runner:** `scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py`
 **Authority role:** stretch attempt deliverable + named obstruction on the
 interacting-plaquette → local-response observable bridge.
+
+## Current-surface boundary firewall (2026-05-26)
+
+actual_current_surface_status: open_gate / surveyed-route obstruction packet
+conditional_surface_status: a positive bridge would require one exact
+escape-hatch primitive, such as the beta=6 Wilson plaquette spectral
+measure, exact beta=6 Perron/Jacobi data, a nonperturbative effective
+action, or an independently selected beta_eff(6).
+proposal_allowed: false
+proposal_allowed_reason: this row does not derive `<P>_full =
+R_O(beta_eff)` and does not supply any exact escape-hatch primitive.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+This row is not a positive observable-bridge theorem. Its binding
+current-surface content is the named obstruction: from the current Wilson
+primitive packet and the surveyed routes below, the attempted positive bridge
+remains open unless one of the explicit nonperturbative escape hatches is
+supplied. Downstream rows may cite this note as an obstruction/open-gate
+packet, not as retained positive support for `<P>_full = R_O(beta_eff)`.
+
+## No-go discipline boundary (2026-05-26)
+
+This row does **not** ship a universal no-go for the observable bridge.
+
+- **N1 alternative routes:** only three routes are surveyed here:
+  Schwinger-Dyson, effective action, and renormalization-group/effective
+  coupling. Because this is fewer than five, the source claim is deliberately
+  kept at `open_gate` / surveyed-route obstruction, not `no_go`.
+- **N2 wall independence:** the collapsed wall is one missing exact
+  nonperturbative bridge primitive. The named escape hatches are alternative
+  ways to close that same wall, not independent walls.
+- **N3 hidden-wall scan:** `standard QFT`, `beta = 6`, Wilson action,
+  topological expansion, and forbidden MC/fitted inputs are explicit premises
+  or forbidden imports, not hidden retained framework outputs.
+- **N4 residual matching:** the companion no-go route, where cited, matches
+  only the residual `<P>_full = R_O(beta_eff)`. It is not evidence against
+  unrelated gauge-scalar or plaquette claims.
+- **N5 rhetoric audit:** negative wording is limited to the surveyed
+  observable-level bridge route. It does not claim all per-plaquette,
+  per-volume, lattice-wide, or continuum bridge routes fail.
+- **N6 partial-closure scan:** an exact spectral measure, exact Perron/Jacobi
+  data, exact nonperturbative effective action, or independently selected
+  `beta_eff(6)` could close the gate through the normal
+  import-to-bounded-theorem-to-audit path; this is not classified as a new
+  axiom by default.
+- **N7 steelman:** a future exact Ward identity or structural transfer theorem
+  could identify the local completed response with the full Wilson plaquette
+  expectation without fitting `<P>`.
+- **N8 cross-cycle echo:** similar import-retirement gates in this repo have
+  closed by turning an import into a bounded theorem and then sending it to
+  independent audit. This row leaves that route open.
 
 ## 0. The named residual
 
@@ -143,8 +195,8 @@ with the observable-level bridge open.
 - A_min and forbidden imports explicitly recorded
 - Three obstruction routes (O1 Schwinger-Dyson, O2 effective-action, O3
   RG) identified with concrete failure modes
-- The bridge `<P>_full = R_O(β_eff)` is sharpened from "open" to
-  "non-analytically-derivable from A_min within standard QFT"
+- The bridge `<P>_full = R_O(β_eff)` is sharpened from a vague open bridge to
+  a surveyed-route obstruction with named escape hatches.
 - The honest tier for the parent theorem remains support / audited_conditional
 
 ## 5. What this stretch attempt does NOT close
@@ -238,6 +290,6 @@ None is currently a retained Wilson primitive. The "no new axioms"
 rule applies: an "import → bounded → retire import" path is the only
 legitimate route to a positive bridge.
 
-**Bounded status (final):** the attempted positive bridge is bounded by the
-negative-theorem route. No further action on this stretch note's residual is
-available without an escape-hatch primitive.
+**Bounded status (final):** the attempted positive bridge is not supplied by
+this stretch note or by the surveyed routes. No further action on this stretch
+note's residual is available without an escape-hatch primitive.

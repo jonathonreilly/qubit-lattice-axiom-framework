@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py
-runner_sha256: 347ca689815582b62efdfd53aee8570e2a99dc6fafb474779405268eea3ed2cf
+runner_sha256: bf3a3db7548b284f9562e990a312c49216a2f335496e20bf8231bb871907e6a0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -23,8 +23,12 @@ Part 1: stretch-attempt note structure
   [PASS (A)] note contains: 'Schwinger-Dyson'  ()
   [PASS (A)] note contains: 'effective-action'  ()
   [PASS (A)] note contains: 'Renormalization-group'  ()
-  [PASS (A)] note contains: 'non-analytically-derivable'  ()
+  [PASS (A)] note contains: 'surveyed-route obstruction'  ()
   [PASS (A)] note contains: 'does not set an'  ()
+  [PASS (A)] note contains: 'Current-surface boundary firewall (2026-05-26)'  ()
+  [PASS (A)] note contains: 'No-go discipline boundary (2026-05-26)'  ()
+  [PASS (A)] note contains: 'not a positive observable-bridge theorem'  ()
+  [PASS (A)] note contains: 'not as retained positive support'  ()
 
 ----------------------------------------------------------------------------------------
 Part 2: 3 obstruction routes documented
@@ -47,7 +51,7 @@ Part 3: forbidden imports listed
 ----------------------------------------------------------------------------------------
 Part 4: explicit non-closure
 ----------------------------------------------------------------------------------------
-  [PASS (A)] non-closure: not analytically derived from `A_min`  ()
+  [PASS (A)] non-closure: surveyed-route obstruction  ()
   [PASS (A)] non-closure: honest tier  ()
   [PASS (A)] non-closure: still open  ()
   [PASS (A)] non-closure: still conditional  ()
@@ -74,10 +78,10 @@ Part 6: 2026-05-07 stretch-attempt bounded verdict (no-go route)
   [PASS (A)] closure section item: 'Escape hatches'  (§9 closure verdict)
   [PASS (A)] closure section item: 'no new axioms'  (§9 closure verdict)
   [PASS (A)] closure section item: 'import → bounded → retire import'  (§9 closure verdict)
-  [PASS (A)] closure section item: 'attempted positive bridge is bounded'  (§9 closure verdict)
+  [PASS (A)] closure section item: 'attempted positive bridge is not supplied'  (§9 closure verdict)
 
 ========================================================================================
-  TOTAL: PASS=45, FAIL=0
+  TOTAL: PASS=49, FAIL=0
 ========================================================================================
 
 ----- stderr -----

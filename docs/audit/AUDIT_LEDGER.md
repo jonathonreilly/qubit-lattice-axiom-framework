@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,21 +54,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1059 |
+| `bounded_theorem` | 1060 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 247 |
 | `open_gate` | 112 |
-| `positive_theorem` | 725 |
+| `positive_theorem` | 724 |
 
 | criticality | count |
 |---|---:|
@@ -951,7 +951,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -12070,21 +12069,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the all-trivial plaquette assignment lambda=(0,0), the cube contribution is constant so rho=delta_(0,0), and inserting that rho into the retained source-sector operator gives P_trivial(6)=0.4225317396, while the L_s=2 PBC geometry and bipartite adjacency are verified by finite enumeration.  _(class `C`)_
 - **chain closes:** True — Within the narrowed scope, the runner constructs the finite cube, checks link incidence/orientation and BFS bipartiteness, then computes the rho=delta Perron solve from the displayed source-sector operator. The non-trivial rho and any P_cube bound are explicitly outside the audited claim.
 - **rationale:** All cited authorities needed for the narrowed claim are retained-grade, and the runner source performs real finite enumeration and a Perron computation rather than merely printing the target value. The hard-coded Reference B tolerance is only a comparison check; the reported P_trivial value is recomputed from rho=delta in the source-sector matrix. No physical full-cube rho, non-trivial intertwiner trace, or P_cube >= P_trivial bound is audited or needed for this narrowed theorem.
-- **auditor confidence:** high
-
-### `su3_dabc_symmetric_theorem_note_2026-05-02`
-
-- **Note:** [`SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Algebraic SU(3) Gell-Mann generators T^a=λ^a/2 with Tr[T^aT^b]=(1/2)δ^{ab} satisfy the stated anticommutator decomposition, real totally symmetric d^{abc}, reference table, and combined product identity, without physical SM color identification.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T195456Z-4ff88cf0-su3_dabc_symmetric_theor-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Define d^{abc}=2 Tr[{T^a,T^b}T^c] and project the Hermitian anticommutator onto the identity plus the trace-orthonormal Gell-Mann basis to obtain {T^a,T^b}=(1/3)δ^{ab}I_3+d^{abc}T^c.  _(class `A`)_
-- **chain closes:** True — Within the algebraic Gell-Mann-basis perimeter, the result follows by trace projection and direct finite-dimensional matrix algebra from the cited normalization. The physical identification of this carrier with SM color is explicitly outside the audited claim scope.
-- **rationale:** The algebraic identities themselves are correctly established from the restricted inputs, and the runner genuinely constructs the Gell-Mann matrices and computes the d and f tensors rather than merely printing constants. However, the sole cited authority repeatedly states that identifying the algebraic carrier with physical SM color remains an open bridge, and the source note also preserves that boundary. The audited content is therefore retained only as an algebraic-carrier theorem, conditional against any downstream physical-color reading.
-- **open / conditional deps cited:**
-  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

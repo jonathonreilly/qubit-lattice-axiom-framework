@@ -1,0 +1,21 @@
+loop: su3-dabc-algebraic-only
+date: 2026-05-26
+target_claim_id: su3_dabc_symmetric_theorem_note_2026-05-02
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: algebraic-only source narrowing
+files_touched:
+  - docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md
+open_imports: []
+out_of_scope:
+  - physical SM color bridge
+  - QCD amplitude or gluon-sector readings
+pr_status: pending
+next_exact_action: run audit pipeline and open review PR
+stop_condition: PR opened and verified, then continue campaign

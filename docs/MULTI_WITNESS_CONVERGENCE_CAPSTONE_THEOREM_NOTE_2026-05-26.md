@@ -10,10 +10,12 @@ set, predict, or estimate any audit verdict. Effective status is
 **Retained status:** **none claimed**. This is a source-only proposal.
 No existing audit row, claim_type, or `effective_status` is touched.
 **Proposed claim type:** `positive_theorem` (capstone closure of the
-dynamics-lane chain; conditional on the six upstream PRs auditing
-and on user-side adoption of `𝒞_b`).
-**Companion (upstream) PRs (all `unaudited bounded_theorem` or
-`governance_proposal` on date of this note):**
+dynamics-lane chain; conditional on the five upstream PRs auditing
+clean, including PR #1964 which proposes `𝒞_b` via the framework's
+standard audit-decided convention-adoption pipeline).
+**Companion (upstream) PRs (all `unaudited` on date of this note;
+`#1964` is `claim_type=meta` per precedent, the rest are
+`bounded_theorem`):**
 - [PR #1959](#) lattice WZ-Fujikawa narrow theorem — supplies `C-int`.
 - [PR #1960](#) AFT v2 conditional (3,1)-signature bridge — supplies
   `H_AFT`.
@@ -21,8 +23,11 @@ and on user-side adoption of `𝒞_b`).
   the APS-η formula on Cl(3)/Z³ (Witness W1).
 - [PR #1963](#) anomaly-inheritance translation lemma — supplies
   the conditional inheritance rule under (H_AFT) ∧ (H_𝒞_b).
-- [PR #1964](#) convention `𝒞_b` governance-adoption proposal —
-  proposes (does not adopt) `𝒞_b`. Adoption is user-side.
+- [PR #1964](#) convention `𝒞_b` reclassification companion (`meta`)
+  — proposes `𝒞_b` via the audit-decided pipeline that admitted
+  lattice-spacing, meter, GeV, and the prior radian reclassification.
+  No separate user-ratification morphism required (per panel review
+  2026-05-26 + categorical consistency with precedent).
 
 **Runner:**
 [`scripts/frontier_multi_witness_convergence_capstone_verifier.py`](../scripts/frontier_multi_witness_convergence_capstone_verifier.py)
@@ -67,11 +72,12 @@ witnesses make in a single audit-row: that the value `(N - 1)/N²`
 is **one structural invariant** in six independent algebraic frames,
 not a numerical coincidence across unrelated mathematical spaces.
 
-Combined with the translation lemma (PR #1963) and user-side
-adoption of `𝒞_b` (PR #1964 proposal + governance event), the
-result is `δ_Brannen = (N - 1)/N² rad` literally — at both
-`N = 3` (lepton, PDG to 7×10⁻⁶) and `N = 6` (quark, retained CKM
-`η²`).
+Combined with the translation lemma (PR #1963) and the audit-decided
+adoption of `𝒞_b` via PR #1964 (following the precedent pipeline
+that admitted lattice-spacing, meter, GeV, natural-unit, and the
+prior radian-unit reclassification), the result is
+`δ_Brannen = (N - 1)/N² rad` literally — at both `N = 3` (lepton,
+PDG to 7×10⁻⁶) and `N = 6` (quark, retained CKM `η²`).
 
 The capstone is **conditional** on the upstream audits and the
 governance adoption. It does **not** retire the
@@ -270,8 +276,14 @@ formal statement that resolves the dynamics-lane initial
 - **(H_PR1961)** PR #1961 (Z_N equivariant spectral-asymmetry)
   audits to retained.
 - **(H_PR1963)** PR #1963 (translation lemma) audits to retained.
-- **(H_𝒞_b)** User adopts `𝒞_b` as a `convention_retained` row
-  via the governance event documented separately from PR #1964.
+- **(H_𝒞_b)** PR #1964 audits clean: `𝒞_b` is admitted to the
+  framework's `convention_retained` inventory via the audit-decided
+  pipeline (source-note + paired-runner + independent audit),
+  matching the morphism that admitted
+  `CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08` and
+  `RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv`.
+  No separate user-side governance event is required (per panel
+  review 2026-05-26 + categorical consistency with precedent).
 
 **Claim.** Under these five hypotheses, on every C_N orbit where
 the Brannen circulant character derivation applies (currently
@@ -323,12 +335,15 @@ N = 6: δ_Brannen = 5/36 rad  matches retained CKM η² class.
   (`retained_no_go`). That no-go operates under the period-2π
   surface; the capstone uses `𝒞_b` (period-1), a different
   convention surface. The no-go is not violated.
-- Does **not** adopt `𝒞_b`. Adoption is documented separately via
-  the governance event (referenced PR #1964 proposes the structure;
-  the user ratifies adoption separately).
-- Does **not** assert that the six upstream PRs WILL audit clean.
+- Does **not** adopt `𝒞_b` directly. Adoption is handled by PR #1964
+  via the framework's audit-decided convention-adoption pipeline
+  (same as the precedent companions `CONVENTIONS_UNIFICATION_..._
+  2026-05-08` and `RADIAN_UNIT_CONVENTION_RECLASSIFICATION_..._
+  2026-05-10_radianconv`). No separate user-side governance event.
+- Does **not** assert that the five upstream PRs WILL audit clean.
   The capstone is **conditional** on (H_PR1959) ∧ (H_PR1960) ∧
-  (H_PR1961) ∧ (H_PR1963) ∧ (H_𝒞_b).
+  (H_PR1961) ∧ (H_PR1963) ∧ (H_𝒞_b), where each H is "the
+  corresponding PR audits clean."
 - Does **not** re-derive the six witnesses individually. Each
   witness's derivation is documented in retained content or in
   PR #1961. The capstone's content is the convergence claim itself
@@ -400,8 +415,12 @@ audit_handoff_status: |
   The capstone is the dynamics-lane's bookkeeping reflection of
   the structural identity established by the lane's
   FINAL_CLOSURE_2026-05-26 ("one invariant in six frames, not
-  coincidence"). Adoption of 𝒞_b is user-side; the capstone is
-  conditional, not assertive.
+  coincidence"). Adoption of 𝒞_b is audit-decided via PR #1964's
+  source-note + paired-runner + independent-audit pipeline (per
+  precedent of meter / GeV / lattice-spacing / radian
+  reclassification 2026-05-10). No separate user-side governance
+  event required. The capstone itself remains conditional on the
+  five upstream audits.
 
   Independent audit lane decides verdict.
 
@@ -414,7 +433,9 @@ new_audit_row:
       - audit ratification of PR #1960 (AFT v2)
       - audit ratification of PR #1961 (Z_N equivariant spectral asymmetry)
       - audit ratification of PR #1963 (translation lemma)
-      - user-side governance adoption of 𝒞_b (PR #1964 proposes structure)
+      - audit ratification of PR #1964 (𝒞_b reclassification companion,
+        adopted via the standard audit-decided pipeline per precedent;
+        no separate user-side event)
     routing:
       foundations: A1, A2 (retained axioms)
       retained_consumed:

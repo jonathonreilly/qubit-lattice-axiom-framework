@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/dm_thermal_average_sommerfeld_normalization.py
+runner_sha256: 6f0cdf06535212b7eff5609cd5c1143a14f8b2690b91b68c52aa27c4e25d17b8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+========================================================================================
+DM THERMAL AVERAGE / SOMMERFELD NORMALIZATION CERTIFICATE
+========================================================================================
+x_f = 25
+a = x_f / 4 = 6.25
+
+PASS: MB denominator: Integral v^2 exp(-a v^2) dv = 0.02835926161448826
+PASS: <1/v>: 2.820947917738781 = 2 sqrt(a)/sqrt(pi)
+PASS: <1/v^2>: 12.5 = 2a
+PASS: x_f=25 moments: <1/v>=2.820947917738781, <1/v^2>=12.5
+PASS: Sommerfeld argument normalization: alpha/v = 0.2358417340705664 = alpha sqrt(a/t)
+PASS: thermal-average t-prefactor: 1/Gamma(3/2) = 1.128379167095513
+
+BOUNDARY
+  This certifies only the finite normalization algebra at the explicit
+  benchmark slice x_f=25. It does not derive x_f, the MB distribution,
+  or the Sommerfeld enhancement law from framework axioms.
+
+----- stderr -----
+

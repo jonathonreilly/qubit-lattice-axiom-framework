@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_nn_rescaled_C_arm_derivation.py
-runner_sha256: 68552e317149ed9aa83358fef7d0f9a1f472f220cd379c0ae7dac0610e7da2fc
+runner_sha256: 6fb6be9f58fe11e45c1b395af31eeeff972cd2a0c45ea6049270686d5ffed4cf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 8.46
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -102,9 +102,24 @@ VERDICT
 
   All four points agree with the diagnostic fit to within 2.5%.
 
+  Direct blocked-slit check against actual propagation:
+  This imports measure_arm_distribution(...) from the continuum
+  identification runner and measures sigma_arm(h) directly. The
+  diagnostic fit constants are not inputs to this check.
+         h       nodes   sigma_meas   sigma_pred   reldiff        Born
+   0.25000       25921       1.3147       1.2889    -1.96%    4.62e-16
+   0.12500      103041       0.8984       0.8867    -1.30%    3.21e-16
+   0.06250      410881       0.6282       0.6228    -0.87%    2.06e-15
+   0.03125     1640961       0.4416       0.4396    -0.44%    1.21e-15
+
+  Direct blocked-slit max residual = 1.96%
+  Direct blocked-slit max Born residual = 2.06e-15
+
   Bounded-support guards:
     PASS: post-slit coherent residual <= 10%
     PASS: per-h phase-corrected residual <= 2.5%
+    PASS: direct blocked-slit sigma residual <= 3%
+    PASS: direct blocked-slit Born residual <= 1e-10
     PASS: post-slit length improves on full-length estimate
     PASS: coherent estimate improves on incoherent estimate
     PASS: h->0 post-slit value is stable

@@ -191508,24 +191508,34 @@
       "verdict_rationale": "The bounded Tier A result is supported by the finite runner and completed log: detector overlap falls for offset packets at NL=30, and the imposed-field centroid shift varies by packet identity. The script does not hard-code the reported overlaps or deflections; it computes them from fixed harness parameters and source offsets. The clean verdict applies only to detector-readable packet memory and packet-dependent response inside this fixed harness. Broader readings of gravitational response as physical gravity, plus persistent localized objects, asymptotic survival, inertial response, and Tier B shape closure, must be excluded from the audited claim."
     },
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T17:30:05.579432+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.298,
+        "runner_hash": "b849c8188a702ef4ed3d08dd0914a3de7cc501eb3334781fb8cbe3ac94c5b018",
+        "transitive_descendants": 889
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-parity-dim5-formal-sign-second-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the bounded formal-sign scope because the derivative sign character is an explicit formal input and the remaining result is finite Dirac-matrix/index algebra. There are no one-hop dependencies, and the note explicitly excludes the stronger lattice-action and representative-level claims.",
       "claim_id": "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-      "claim_scope": "Formal 4x4 Dirac parity conjugation, combined with the stipulated abstract derivative sign character, on the four named dimension-5 SME-style bilinear structures; proves the (-1)^(total spatial index count) parity weights and the corresponding formal projection vanishings only.",
+      "claim_scope": "Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named dimension-5 SME-style bilinear structures have formal parity weight (-1)^(total spatial index count), with the corresponding formal symmetric/antisymmetric projection vanishings. This does not audit any lattice-action Lorentz-violation no-go, concrete staggered derivative representative, CPT theorem, or new axiom.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T17:26:09.218608+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T17:30:05.579432+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -191540,25 +191550,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T17:30:05.579142+00:00",
+          "auditor": "codex-gpt-5.5-fresh-parity-dim5-formal-sign-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named dimension-5 SME-style bilinear structures have formal parity weight (-1)^(total spatial index count), with the corresponding formal symmetric/antisymmetric projection vanishings. This does not audit any lattice-action Lorentz-violation no-go, concrete staggered derivative representative, CPT theorem, or new axiom.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.298,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Combining the formal Dirac parity table with the abstract derivative sign character gives total weight (-1)^N for every enumerated index assignment in the four named structures, with odd-N/even-N projection vanishings accordingly.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d6f41f417ae0e0e992195fb1f6d66b46babee337070ce02e01f98b4e70f89d02",
       "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Future re-audit should preserve the formal-sign-only scope and require a separate retained bridge theorem before reopening any action-level SME/LV no-go or actual lattice derivative representative claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -191763,18 +191784,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 164,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 164
       },
       "runner_path": "scripts/frontier_parity_dim5_formal_sign_repair.py",
       "title": "Parity Dimension-5 Formal Sign Identities on the SME-Style Basis",
       "transitive_descendants": 889,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner hash matches the cache and the completed output reports PASS=164 FAIL=0; it computes the formal gamma^0 conjugation, derivative sign product, 144 enumerated structure weights, and odd/even projection vanishings rather than merely checking prose scope. The source firewall checks are not the load-bearing theorem, but they confirm the note excludes action-level LV, concrete lattice derivative representatives, CPT import, and new-axiom claims. No-go discipline N1-N8 passes only after this strict collapse of scope: the retained content is the finite formal sign identity, not a lattice-action no-go or exclusion theorem. No hidden dependency, stale runner number, external comparator, or definition-as-physical-derivation remains inside that bounded scope."
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
       "audit_date": "2026-05-25T14:43:46.051946+00:00",

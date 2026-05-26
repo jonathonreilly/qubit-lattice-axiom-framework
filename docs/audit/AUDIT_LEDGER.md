@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 163 |
-| **retained_bounded** | 464 |
+| **retained_bounded** | 465 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1287 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 749 |
+| `audited_clean` | 750 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -588,6 +585,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8422,6 +8420,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The model supports detector-readable packet memory but not persistent localized objects; packets separated by >= 2 lattice units are distinguishable at the detector and packet identity carries physics through different imposed-field deflections.  _(class `C`)_
 - **chain closes:** True — For the bounded finite-harness scope, the chain closes: the runner builds the lattice/adjacency, propagates amplitudes from different source offsets, computes normalized detector overlaps, and computes centroid-shift differences under its imposed field; the completed log matches the note's numbers. The closure is not a theorem of real gravity, asymptotic memory, inertial response, or persistent localized objects.
 - **rationale:** The bounded Tier A result is supported by the finite runner and completed log: detector overlap falls for offset packets at NL=30, and the imposed-field centroid shift varies by packet identity. The script does not hard-code the reported overlaps or deflections; it computes them from fixed harness parameters and source offsets. The clean verdict applies only to detector-readable packet memory and packet-dependent response inside this fixed harness. Broader readings of gravitational response as physical gravity, plus persistent localized objects, asymptotic survival, inertial response, and Tier B shape closure, must be excluded from the audited claim.
+- **auditor confidence:** high
+
+### `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02`
+
+- **Note:** [`PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md`](../../docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named dimension-5 SME-style bilinear structures have formal parity weight (-1)^(total spatial index count), with the corresponding formal symmetric/antisymmetric projection vanishings. This does not audit any lattice-action Lorentz-violation no-go, concrete staggered derivative representative, CPT theorem, or new axiom.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-parity-dim5-formal-sign-second-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Combining the formal Dirac parity table with the abstract derivative sign character gives total weight (-1)^N for every enumerated index assignment in the four named structures, with odd-N/even-N projection vanishings accordingly.  _(class `A`)_
+- **chain closes:** True — The chain closes for the bounded formal-sign scope because the derivative sign character is an explicit formal input and the remaining result is finite Dirac-matrix/index algebra. There are no one-hop dependencies, and the note explicitly excludes the stronger lattice-action and representative-level claims.
+- **rationale:** The runner hash matches the cache and the completed output reports PASS=164 FAIL=0; it computes the formal gamma^0 conjugation, derivative sign product, 144 enumerated structure weights, and odd/even projection vanishings rather than merely checking prose scope. The source firewall checks are not the load-bearing theorem, but they confirm the note excludes action-level LV, concrete lattice derivative representatives, CPT import, and new-axiom claims. No-go discipline N1-N8 passes only after this strict collapse of scope: the retained content is the finite formal sign identity, not a lattice-action no-go or exclusion theorem. No hidden dependency, stale runner number, external comparator, or definition-as-physical-derivation remains inside that bounded scope.
 - **auditor confidence:** high
 
 ### `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23`

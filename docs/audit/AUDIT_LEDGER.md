@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 462 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 747 |
-| `audited_conditional` | 96 |
+| `audited_conditional` | 97 |
 | `audited_decoration` | 43 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1462 |
+| `unaudited` | 1461 |
 
 | claim_type | count |
 |---|---:|
@@ -909,6 +909,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6314,6 +6315,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Direct matrix computation gives the four single-projector returns diag(1,0,0), diag(0,1,0), diag(0,0,1), and diag(0,0,0); linearity in the weights gives P_T1 Gamma_1 W Gamma_1 P_T1 = diag(w_O0,w_a,w_b).  _(class `A`)_
 - **chain closes:** True — The cited retained Gamma_1/T_1 surface plus the explicit Hamming-bit action close the projector calculation: Gamma_1 flips only axis 1, so the three T_1 species hit O_0, T_2(1,1,0), and T_2(1,0,1), while T_2(0,1,1) is absent at this order. Linearity then gives the affine diagonal form.
 - **rationale:** Both one-hop authorities are retained-grade under the rubric, and the load-bearing step is an exact algebraic projector decomposition rather than a fitted numerical comparison or renaming. The runner’s broader hierarchy survey ends underdetermined for charged-lepton mass values, but the audited source claim only asserts the structural affine shape and explicitly leaves the weights unfixed. The structural theorem therefore closes on the restricted packet.
+- **auditor confidence:** high
+
+### `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the bounded arithmetic bridge fixing alpha = 1/3 from the retained 6+2 traceless ratio beta = -3 alpha plus the admitted Anti^2 = L_L readout, GMN relation, T_3(e_L) = -1/2, and Q(electron) = -1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260526T015241Z-e86a6cc9-hypercharge_alpha_third_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting Q(e_L) = -1, T_3(e_L) = -1/2, and Y(L_L) = -3 alpha into Q = T_3 + Y/2 gives -1 = -1/2 + (-3 alpha)/2, hence alpha = 1/3.  _(class `A`)_
+- **chain closes:** False — The rational arithmetic closes once the stated admissions are granted. The restricted packet does not itself close the Anti^2-to-L_L readout, GMN relation, weak-isospin electron assignment, or empirical electron-charge premise as retained or accepted-premise authorities.
+- **rationale:** The load-bearing computation is a valid class A algebraic identity, and the runner genuinely performs exact rational arithmetic rather than merely printing constants. However, the conclusion depends on explicit admitted premises and readout conventions not supplied as retained or accepted-premise authorities in the restricted packet. The u_L and d_L checks are non-load-bearing consistency comparisons to standard charge values, not first-principles closure. No-Go Discipline does not convert these admissions into closed inputs; N6 instead supports treating the note as a convention/ratification bridge rather than a new-axiom derivation.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 163 |
-| **retained_bounded** | 473 |
+| **retained_bounded** | 474 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1274 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 758 |
+| `audited_clean` | 759 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -819,6 +816,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_count_corollary_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -12301,6 +12299,18 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The theorem is explicitly abstract matrix algebra with zero ledger dependencies, and the live exact SymPy runner reproduced the cached PASS=50, FAIL=0 result without importing framework/audit/lattice modules.
 - **rationale:** All claimed algebraic conclusions follow constructively: the P_i project onto the three coordinate lines, P_i C^k P_j produces every matrix unit, the nine units span M_3(C), and irreducibility/no-proper-quotient follows. The note explicitly strips away the physical generation interpretation, so no open staggered-Dirac or physical-lattice gate is load-bearing here.
 - **auditor confidence:** high
+
+### `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-three-gen-no-proper-quotient-C75Ktt-2026-05-26-pass2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Preserving the projector algebra D_3 forces any invariant subspace to be a coordinate-subset span, and preserving C3[111] forces that subset to be closed under the three-cycle, leaving only 0 and C^3.  _(class `A`)_
+- **chain closes:** True — The provided retained one-hop scopes supply the finite hw=1 triplet/cube carrier, the S3 tensor-position action whose 3-cycle gives the C3 carrier action, and the projector/character separation needed for the narrowed algebraic theorem. The remaining proof is finite-dimensional linear algebra: rank-one coordinate projectors plus a transitive 3-cycle generate all matrix units, so there is no common nontrivial invariant subspace.
+- **rationale:** The narrowed theorem closes as a class-A algebraic identity over retained finite carrier inputs; it does not rely on the broader physical carrier or species interpretation. No-go discipline gate passes within the restricted packet because the exclusion is only the finite invariant-subspace statement: the C3-only eigenspace attack is explicitly ruled out by requiring D3 plus C3, there is no independent wall set or residual witness, and N8 repo-wide searching was intentionally not performed under the packet restriction. Runner evidence is supportive: 9 PASS lines are exact matrix/subspace computations, while 25 note-structure and 11 ledger/dependency PASS lines are non-load-bearing scope/status checks.
 
 ### `three_generation_observable_theorem_note`
 

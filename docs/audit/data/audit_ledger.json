@@ -270497,24 +270497,54 @@
       "verdict_rationale": "All claimed algebraic conclusions follow constructively: the P_i project onto the three coordinate lines, P_i C^k P_j produces every matrix unit, the nine units span M_3(C), and irreducibility/no-proper-quotient follows. The note explicitly strips away the physical generation interpretation, so no open staggered-Dirac or physical-lattice gate is load-bearing here."
     },
     "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
+      "audit_date": "2026-05-26T19:43:52.977427+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_mass_matrix_no_go_note": "Exact unbroken S_3-invariant Hermitian operators on the stated hw=1 triplet V = span(X_1, X_2, X_3) have at most two distinct eigenvalues; the residual axis-fixing Z_2 invariant space has real dimension 5.",
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "s3_mass_matrix_no_go_note": "no_go",
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "s3_mass_matrix_no_go_note": "retained_no_go",
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "s3_mass_matrix_no_go_note",
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 19.445,
+        "runner_hash": "76d05c81bc345d10c7de250d7ee740365388fab2dca759fdb71d67fb359e1001",
+        "transitive_descendants": 696
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-three-gen-no-proper-quotient-C75Ktt-2026-05-26-pass2",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided retained one-hop scopes supply the finite hw=1 triplet/cube carrier, the S3 tensor-position action whose 3-cycle gives the C3 carrier action, and the projector/character separation needed for the narrowed algebraic theorem. The remaining proof is finite-dimensional linear algebra: rank-one coordinate projectors plus a transitive 3-cycle generate all matrix units, so there is no common nontrivial invariant subspace.",
       "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "claim_scope": "On the retained finite hw=1 triplet H_hw=1 ~= C^3 with basis X_1, X_2, X_3, the diagonal projector algebra D_3 together with the C3[111] cycle generates M_3(C), so no nonzero proper subspace or proper quotient preserves both structures. Physical-species interpretation, SM-generation identification, and full matter-content closure are out of scope.",
+      "claim_scope": "On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": "2026-05-26T19:38:26.244043+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T19:43:52.977427+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -270529,8 +270559,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T19:43:52.977252+00:00",
+          "auditor": "codex-gpt-5.5-fresh-three-gen-no-proper-quotient-C75Ktt-2026-05-26-pass2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -270540,14 +270581,14 @@
         "z2_hw1_mass_matrix_parametrization_note"
       ],
       "direct_in_degree": 20,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 19.445,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Preserving the projector algebra D_3 forces any invariant subspace to be a coordinate-subset span, and preserving C3[111] forces that subset to be closed under the three-cycle, leaving only 0 and C^3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "ecc3386078b1401209aeca659957c594acc0ae989fcffccffacd11f7ee8845e4",
@@ -270782,18 +270823,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 9,
+        "B": 36,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 45
       },
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "title": "Three-Generation Observable: No-Proper-Quotient Narrow Theorem",
       "transitive_descendants": 696,
-      "verdict_rationale": null
+      "verdict_rationale": "The narrowed theorem closes as a class-A algebraic identity over retained finite carrier inputs; it does not rely on the broader physical carrier or species interpretation. No-go discipline gate passes within the restricted packet because the exclusion is only the finite invariant-subspace statement: the C3-only eigenspace attack is explicitly ruled out by requiring D3 plus C3, there is no independent wall set or residual witness, and N8 repo-wide searching was intentionally not performed under the packet restriction. Runner evidence is supportive: 9 PASS lines are exact matrix/subspace computations, while 25 note-structure and 11 ledger/dependency PASS lines are non-load-bearing scope/status checks."
     },
     "three_generation_observable_theorem_note": {
       "audit_date": "2026-05-24T20:40:23.140785+00:00",

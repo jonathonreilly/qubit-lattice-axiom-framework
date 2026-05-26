@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -82,7 +82,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1982
+- runners classified: 1983
 - runners with (C) first-principles compute hits: 969
 - runners with (D) external comparator hits: 583
 - decoration candidates (no C, no D): 315
@@ -947,7 +947,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10897,21 +10896,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting N_c = 3 into the anomaly-allowed family yields the SM hypercharge tuple and left-Weyl charge spectrum {0, ±1/3, ±2/3, ±1}.  _(class `A`)_
 - **chain closes:** True — The narrowed hypercharge statement follows by exact rational substitution from retained-grade cited inputs. The source correctly demotes the Burnside generation-count import and does not use it load-bearing for the audited claim.
 - **rationale:** The load-bearing step is a straightforward algebraic closure: take the retained anomaly family, insert the independently retained graph-first N_c = 3 selector, and compare the resulting rational tuple to the retained hypercharge-enumeration tuple. The runner source performs exact rational arithmetic rather than merely printing constants, and its ledger checks are cross-note status checks rather than external numerical comparators. The two residuals are explicitly scoped as hypotheses/residual freedoms, and the generation-count bridge is excluded from the narrowed claim.
-- **auditor confidence:** high
-
-### `sm_relativistic_dof_count_import_note_2026-05-17`
-
-- **Note:** [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](../../docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** A named non-derivation import wrapper for the Standard-Model relativistic effective degree-of-freedom count g_* = 106.75 at electroweak-scale relativistic temperatures.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T232602Z-4332cd86-sm_relativistic_dof_coun-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** At temperatures above the electroweak scale, the Standard Model has g_*(T) = 28 + (7/8) * 90 = 106.75, with 28 bosonic and 90 fermionic relativistic degrees of freedom.  _(class `B`)_
-- **chain closes:** False — The arithmetic 28 + (7/8)*90 = 106.75 is straightforward, and the cited retained authority supports the 7/8 ratio. The restricted packet does not include a retained authority deriving or auditing the SM particle-content bookkeeping that supplies the 28 bosonic and 90 fermionic counts.
-- **rationale:** The note is explicit that it is a named non-derivation import, not a framework derivation of the Standard Model content or of the 28 + 90 count. The only provided one-hop retained authority supports the 7/8 fermion/boson factor, not the SM degrees-of-freedom inventory. Textbook references are named but not provided as retained-grade audit inputs in the restricted packet, so the imported count remains an open dependency rather than a closed theorem from the supplied authorities.
-- **open / conditional deps cited:**
-  - `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `source_driven_field_recovery_h025_pocket_note`

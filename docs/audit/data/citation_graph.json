@@ -76136,9 +76136,9 @@
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bdd6146b189aa9646e8a4a119527fb050659963915114e400347540ba30cdf13",
+      "note_hash": "2a842207d7e81785287d7e870d586e46369e24a43975f1c08a0bfdab562442f9",
       "path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_sm_relativistic_dof_count_import.py",
       "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Named Non-Derivation Import"
     },
     "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
@@ -85504,6 +85504,6 @@
     "leaf_count": 783,
     "node_count": 2538,
     "root_count": 836,
-    "runners_with_path": 2099
+    "runners_with_path": 2100
   }
 }

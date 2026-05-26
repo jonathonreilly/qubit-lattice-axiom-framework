@@ -1,0 +1,29 @@
+loop_slug: sm-dof-bounded-import-runner
+started_at: "2026-05-26T09:18:00Z"
+mode: campaign_block
+target_claim_id: sm_relativistic_dof_count_import_note_2026-05-17
+target_note: docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+target_runner: scripts/frontier_sm_relativistic_dof_count_import.py
+branch: physics-loop/sm-dof-bounded-import-runner-20260526
+base: origin/main@c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: "Standard Model particle-content list remains an admitted bounded import."
+proposal_allowed: false
+proposal_allowed_reason: "Independent audit must review the bounded import runner."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: bounded_import_bookkeeping_runner
+hard_residual_attacked: "Prior verdict lacked a one-hop authority for the 28 bosonic and 90 fermionic SM bookkeeping."
+files_touched:
+  - docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  - scripts/frontier_sm_relativistic_dof_count_import.py
+  - outputs/sm_relativistic_dof_count_import_certificate_2026-05-26.txt
+open_imports:
+  - "SM particle-content list is imported textbook content, not CL3-derived."
+no_go_routes:
+  - "No framework derivation of the SM spectrum."
+  - "No new axiom for SM content."
+next_exact_action: "Run audit pipeline and lints, then open PR if clean."
+stop_condition: "Block PR opened or verification fails."

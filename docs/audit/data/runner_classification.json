@@ -20064,6 +20064,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_sm_one_higgs_yukawa_gauge_selection.py"
     },
+    "sm_relativistic_dof_count_import_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/frontier_sm_relativistic_dof_count_import.py"
+    },
     "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
       "assert_count": 1,
       "counts": {
@@ -45824,6 +45836,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_sm_relativistic_dof_count_import.py": {
+      "assert_count": 1,
+      "claims": [
+        "sm_relativistic_dof_count_import_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/frontier_source_resolved_exact_green_h025_pocket_note_hostile_audit_findings.py": {
       "assert_count": 0,
       "claims": [
@@ -55202,9 +55229,9 @@
       "B": 273,
       "C": 747,
       "D": 299,
-      "none": 439
+      "none": 440
     },
-    "runners_classified": 1982,
+    "runners_classified": 1983,
     "runners_with_C": 969,
     "runners_with_D": 583
   }

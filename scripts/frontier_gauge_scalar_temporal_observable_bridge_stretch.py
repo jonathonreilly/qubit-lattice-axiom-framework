@@ -45,8 +45,12 @@ required = [
     "Schwinger-Dyson",
     "effective-action",
     "Renormalization-group",
-    "non-analytically-derivable",
+    "surveyed-route obstruction",
     "does not set an",
+    "Current-surface boundary firewall (2026-05-26)",
+    "No-go discipline boundary (2026-05-26)",
+    "not a positive observable-bridge theorem",
+    "not as retained positive support",
 ]
 for s in required:
     check(f"note contains: {s!r}", s in note_text)
@@ -86,7 +90,7 @@ for f in forbidden:
 section("Part 4: explicit non-closure")
 
 non_closures = [
-    "not analytically derived from `A_min`",
+    "surveyed-route obstruction",
     "honest tier",
     "still open",
     "still conditional",
@@ -121,7 +125,7 @@ closure_section_items = [
     "Escape hatches",
     "no new axioms",
     "import → bounded → retire import",
-    "attempted positive bridge is bounded",
+    "attempted positive bridge is not supplied",
 ]
 for item in closure_section_items:
     check(f"closure section item: {item!r}",

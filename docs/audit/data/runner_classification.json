@@ -12061,14 +12061,14 @@
       "runner": "scripts/frontier_koide_eta_lefschetz_spectral_flow.py"
     },
     "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 47,
-        "B": 0,
+        "A": 14,
+        "B": 1,
         "C": 0,
-        "D": 5
+        "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py"
     },
@@ -40347,17 +40347,17 @@
       "exists": true
     },
     "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
       ],
       "counts": {
-        "A": 47,
-        "B": 0,
+        "A": 14,
+        "B": 1,
         "C": 0,
-        "D": 5
+        "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "A",
       "exists": true
     },
@@ -55481,7 +55481,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 326,
+    "decoration_candidates": 327,
     "dominant_class_distribution": {
       "A": 232,
       "B": 275,
@@ -55491,6 +55491,6 @@
     },
     "runners_classified": 1994,
     "runners_with_C": 972,
-    "runners_with_D": 584
+    "runners_with_D": 583
   }
 }

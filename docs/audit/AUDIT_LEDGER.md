@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1267 |
+| unaudited | 1268 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,19 +54,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1496 |
+| `unaudited` | 1497 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1058 |
+| `bounded_theorem` | 1057 |
 | `decoration` | 47 |
 | `meta` | 234 |
-| `no_go` | 253 |
+| `no_go` | 254 |
 | `open_gate` | 111 |
 | `positive_theorem` | 723 |
 
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 1994
 - runners with (C) first-principles compute hits: 972
-- runners with (D) external comparator hits: 584
-- decoration candidates (no C, no D): 326
+- runners with (D) external comparator hits: 583
+- decoration candidates (no C, no D): 327
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -902,7 +902,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6423,19 +6422,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** H_e -> H_cyc := P_cyc(H_e), with P_cyc(X)=(1/3) sum_{k=0}^2 C^k X C^{-k}, has image span_R{B0,B1,B2} and is reconstructed from r0,r1,r2 by H_cyc=(r0/3)B0+(r1/6)B1+(r2/6)B2.  _(class `A`)_
 - **chain closes:** True — The audited scope is a finite-dimensional linear-algebra theorem: cyclic group averaging is a canonical projector, its image is the stated circulant Hermitian basis, and the trace responses reconstruct the projected component. This does not audit the upstream microscopic source law, Koide selector principle, or charged-lepton readout, which the note explicitly leaves open.
 - **rationale:** Within the bounded algebraic scope, the load-bearing step closes: the note states the projector, the basis-level action, the generic coefficient formula, and the response reconstruction, and the cached runner confirms all algebraic identities with PASS=11 FAIL=0. The two D-class checks are only witness/comparator checks for the observed amplitude target and are not needed to prove the compression theorem. This clean verdict must not be read as closing the microscopic source law for (r0,r1,r2), the selector principle, or the final charged-lepton readout, all of which remain explicitly outside this claim scope.
-- **auditor confidence:** high
-
-### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
-
-- **Note:** [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](../../docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional AM-GM identity on Herm_circ(3) under the explicit A_Frob trace-Frobenius normalization beta = 0, yielding kappa = 2 and Q = 2/3; no derivation of A_Frob, Frobenius uniqueness, or physical charged-lepton bridge is audited as closed.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T191423Z-d04b6c70-koide_frobenius_isotype_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under the admitted Frobenius normalization, maximizing log(E_+) + log(E_perp) with E_+ + E_perp = N gives E_+ = E_perp = N/2, hence 3a^2 = 6|b|^2, kappa = 2, and Q = 2/3.  _(class `A`)_
-- **chain closes:** True — Given the admitted Frobenius normalization, the symbolic identities E_+ = 3a^2, E_perp = 6|b|^2, and E_+ + E_perp = Tr(M^2) close the AM-GM step to kappa = 2 and Q = 2/3. The missing step is only the out-of-scope derivation of A_Frob itself.
-- **rationale:** The runner source performs real symbolic SymPy checks for the Frobenius-conditional algebraic chain, and its single PDG mass check is only a non-load-bearing interior-positivity comparator. The note explicitly admits A_Frob, equivalently beta = 0 or w_scalar/w_traceless = 1, and its own counterexample shows PD plus Ad-invariance alone does not force that normalization. The No-Go Discipline gate does not upgrade the open-gap statement to a clean no-go: this packet shows the cheapest PD/Ad-invariance and isotype-orthogonality routes fail, but it does not close all future retained-authority or convention-retirement paths.
 - **auditor confidence:** high
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`

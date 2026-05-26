@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 262,
+    "critical": 261,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -52,33 +52,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_rigidity_theorem_note",
-      "claim_scope": "Bounded finite-link SU(3) coordinate-rigidity: given the retained concrete su(3) embedding in End(V), the fixed Hilbert trace form, and a selected finite-link logarithm branch, the canonical trace-normalized generator basis has no continuous scalar dilation ambiguity. The g_bare = 1 wording is only this coordinate-normalization statement, not a continuum, dynamical, Wilson-action, or phenomenological coupling claim.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "graph_first_su3_integration_note",
-        "native_gauge_closure_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/frontier_su3_holonomy_exponential_bridge.py"
-      ],
-      "load_bearing_score": 13.275,
-      "note_path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
-      "transitive_descendants": 875
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -38383,6 +38356,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 66,
-  "total_pending": 1282
+  "ready_count": 65,
+  "total_pending": 1281
 }

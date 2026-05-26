@@ -10,8 +10,9 @@ Replace the loose "absorbed coupling" rhetoric with a sharper statement:
   once the gauge algebra is derived as a concrete compact subalgebra of
   End(V), and the Hilbert-space metric on V is fixed, there is no
   independent scalar normalization freedom left in the gauge generators.
-  The holonomy form is an admitted upstream premise of the source note, not
-  something this runner derives.
+  The finite-link holonomy form is now checked by the imported SU(3)
+  exponential bridge helper.  The runner still does not derive a continuum
+  gauge field or a unique global logarithm branch.
 
 In standard notation one often writes:
 
@@ -27,11 +28,10 @@ and the holonomy is
 
     U = exp(i A_op a).
 
-Conditional on that admitted holonomy form, the scalar "g" is only a
-coordinate rescaling on the coefficients A^a once the generator basis is
-chosen. In the canonical orthonormal basis inherited from the Hilbert-space
-trace form, standard notation rewrites this conditional coordinate statement
-as g_bare = 1.
+On that finite-link bridge, the scalar "g" is only a coordinate rescaling
+on the coefficients A^a once the generator basis is chosen. In the canonical
+orthonormal basis inherited from the Hilbert-space trace form, standard
+notation rewrites this coordinate statement as g_bare = 1.
 
 This script verifies the algebraic pieces numerically on the canonical SU(3)
 embedding already established by the SU(3) commutant theorem.
@@ -42,6 +42,13 @@ Self-contained: numpy only.
 from __future__ import annotations
 
 import numpy as np
+
+from frontier_su3_holonomy_exponential_bridge import (
+    algebra_to_coeffs,
+    canonical_su3_log,
+    coeffs_to_algebra,
+    expm_hermitian,
+)
 
 np.set_printoptions(precision=8, linewidth=120, suppress=True)
 
@@ -180,10 +187,10 @@ def main() -> int:
     print("Claim:")
     print("  once SU(3) is derived as a concrete compact subalgebra of End(V),")
     print("  the Hilbert-space trace form fixes the generator normalization up")
-    print("  to orthogonal basis rotation. Conditional on the admitted holonomy")
-    print("  form U = exp(i A^a T_a a), there is no additional scalar-normalization")
-    print("  freedom inside that fixed trace form. In canonical coordinates this")
-    print("  is written g_bare = 1, but the holonomy form is not derived here.")
+    print("  to orthogonal basis rotation. The finite-link SU(3) bridge supplies")
+    print("  U = exp(i A^a T_a a) on a selected logarithm branch; there is no")
+    print("  additional scalar-normalization freedom inside that fixed trace form.")
+    print("  In canonical finite-link coordinates this is written g_bare = 1.")
     print()
 
     full, triplet, constraints = build_canonical_generators()
@@ -239,7 +246,32 @@ def main() -> int:
         )
 
     print()
-    print("SECTION 4: g is coordinate redundancy, not a physical parameter")
+    print("SECTION 4: Finite SU(3) holonomy exponential bridge")
+    print("-" * 78)
+    bridge_coeffs = np.array([0.18, -0.07, 0.11, 0.05, -0.03, 0.09, -0.04, 0.13])
+    bridge_h = coeffs_to_algebra(bridge_coeffs, triplet)
+    bridge_u = expm_hermitian(bridge_h)
+    bridge_log = canonical_su3_log(bridge_u)
+    bridge_recoeffs = algebra_to_coeffs(bridge_log, triplet)
+    bridge_h_back = coeffs_to_algebra(bridge_recoeffs, triplet)
+    check(
+        "finite SU(3) link admits a traceless-Hermitian logarithm",
+        is_close(bridge_log, bridge_log.conj().T) and abs(np.trace(bridge_log)) < 1e-10,
+        "A_op = (-i/a) Log U lies in su(3) on the selected branch",
+    )
+    check(
+        "logarithm lies in the fixed canonical generator span",
+        is_close(bridge_log, bridge_h_back),
+        f"coeff max dev = {np.max(np.abs(bridge_log - bridge_h_back)):.2e}",
+    )
+    check(
+        "U = exp(i A^a T_a a) reconstructs the finite link",
+        is_close(bridge_u, expm_hermitian(bridge_log)),
+        f"reconstruction err = {np.linalg.norm(bridge_u - expm_hermitian(bridge_log)):.2e}",
+    )
+
+    print()
+    print("SECTION 5: g is coordinate redundancy, not a physical parameter")
     print("-" * 78)
     rng = np.random.default_rng(7)
     coeffs = rng.normal(size=8)
@@ -255,23 +287,24 @@ def main() -> int:
 
     print()
     print("Interpretation:")
-    print("  - Given the admitted holonomy form, the concrete operator A_op in")
-    print("    the derived gauge algebra is not further split into an independent")
-    print("    scalar coupling times coefficients.")
+    print("  - Given a finite SU(3) link holonomy, the bridge reconstructs a")
+    print("    traceless-Hermitian A_op in the derived gauge algebra.")
+    print("  - That operator is not further split into an independent scalar")
+    print("    coupling times coefficients.")
     print("  - Changing basis by an orthogonal rotation is harmless.")
     print("  - Uniform scalar dilation changes the fixed trace form and Casimir,")
     print("    so it is not an admissible ambiguity of the canonical basis.")
-    print("  - Conditional on the admitted upstream holonomy form, the canonical")
-    print("    basis expression is")
+    print("  - On the selected finite-link branch, the canonical basis expression is")
     print("        U = exp(i A^a T_a a)")
     print("    with no additional scalar coupling.")
     print()
     print("Conclusion:")
-    print("  Conditional on the admitted holonomy form, standard notation")
+    print("  For finite SU(3) link holonomies, standard notation")
     print("  U = exp(i g A^a T_a a) contains no additional scalar-normalization")
     print("  freedom inside the fixed canonical generator basis. This is the")
-    print("  bounded coordinate statement written g_bare = 1; deriving the")
-    print("  holonomy form itself remains outside this runner.")
+    print("  bounded finite-link coordinate statement written g_bare = 1; global")
+    print("  branch selection and continuum gauge-field limits remain outside this")
+    print("  runner.")
     print()
     print(f"PASS={PASS} FAIL={FAIL}")
 

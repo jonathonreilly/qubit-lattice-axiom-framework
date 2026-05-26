@@ -128,7 +128,7 @@
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
       "queue_order": 3,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:pre_record_reference_state_tracial_derivation_note_2026-05-20:audited_conditional",
+      "ready_blocker": "blocked_by_dependency:pre_record_reference_state_tracial_derivation_note_2026-05-20:unaudited",
       "runner_path": null,
       "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
@@ -937,9 +937,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

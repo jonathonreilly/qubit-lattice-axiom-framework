@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis PMNS transport-extremal off-seed source candidate.
+DM leptogenesis PMNS transport interval witness.
 
 Framework convention:
   "axiom" means only the single framework axiom Cl(3) on Z^3.
 
 Purpose:
-  Construct the strongest positive candidate for the remaining PMNS-assisted
-  last mile beyond the sole-axiom boundary.
+  Record the bounded interval witness supported by the imported PMNS-assisted
+  transport functional beyond the sole-axiom boundary.
 
   On the charged-lepton-active N_e route:
     - the aligned seed pair (xbar, ybar) is already fixed natively
     - the unresolved object is the off-seed 5-real source
       (xi1, xi2, eta1, eta2, delta)
 
-  This runner tests the minimal constructive law:
-    choose the off-seed source on the fixed native seed surface that extremizes
-    the exact flavored transport functional.
+  This runner does not claim a physical selector law.  It only checks that the
+  imported transport functional has a seed endpoint below eta/eta_obs = 1, a
+  sampled off-seed endpoint above 1, and therefore an interpolated closure
+  witness on that parameterized family.
 """
 
 from __future__ import annotations
@@ -114,9 +115,9 @@ def format_vec(v: np.ndarray) -> str:
     return np.array2string(np.round(np.asarray(v, dtype=float), 6), separator=", ")
 
 
-def part1_the_transport_objective_is_exact_on_the_fixed_native_seed_surface() -> None:
+def part1_the_transport_objective_is_evaluable_on_the_imported_seed_surface() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: THE TRANSPORT OBJECTIVE IS EXACT ON THE FIXED NATIVE SEED SURFACE")
+    print("PART 1: THE IMPORTED TRANSPORT OBJECTIVE IS EVALUABLE ON THE SEED SURFACE")
     print("=" * 88)
 
     x_seed = np.full(3, XBAR_NE, dtype=float)
@@ -124,17 +125,17 @@ def part1_the_transport_objective_is_exact_on_the_fixed_native_seed_surface() ->
     packet_seed, etas_seed = eta_columns_from_active(x_seed, y_seed, 0.0)
 
     check(
-        "The aligned seed point lies on the exact fixed-seed surface",
+        "The aligned seed point lies on the imported fixed-seed surface",
         abs(np.mean(x_seed) - XBAR_NE) < 1e-12 and abs(np.mean(y_seed) - YBAR_NE) < 1e-12,
         f"(xbar,ybar)=({np.mean(x_seed):.6f},{np.mean(y_seed):.6f})",
     )
     check(
-        "The exact flavored transport functional is evaluable directly on that surface",
+        "The imported flavored transport functional is evaluable directly on that surface",
         np.all(etas_seed > 0.0),
         f"etas={np.round(etas_seed, 6)}",
     )
     check(
-        "The aligned seed benchmark on the canonical N_e seed pair is the exact 0.719082536061 lift",
+        "The aligned seed benchmark on the canonical N_e seed pair is the 0.719082536061 lift",
         abs(np.max(etas_seed) - 0.7190825360613422) < 2e-7,
         f"packet={np.round(packet_seed, 6)}",
     )
@@ -144,9 +145,9 @@ def part1_the_transport_objective_is_exact_on_the_fixed_native_seed_surface() ->
     print(f"  aligned seed eta/eta_obs = {np.round(etas_seed, 6)}")
 
 
-def part2_transport_extremality_selects_a_positive_off_seed_candidate() -> tuple[np.ndarray, np.ndarray, float, np.ndarray, np.ndarray]:
+def part2_transport_search_finds_an_off_seed_overshoot_witness() -> tuple[np.ndarray, np.ndarray, float, np.ndarray, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 2: TRANSPORT EXTREMALITY SELECTS A POSITIVE OFF-SEED CANDIDATE")
+    print("PART 2: TRANSPORT SEARCH FINDS AN OFF-SEED OVERSHOOT WITNESS")
     print("=" * 88)
 
     bounds = [
@@ -172,17 +173,17 @@ def part2_transport_extremality_selects_a_positive_off_seed_candidate() -> tuple
     xi_opt, eta_opt, _ = source_coordinates(x_opt, y_opt, delta_opt)
 
     check(
-        "The transport-extremal candidate stays on the exact fixed native seed surface",
+        "The sampled overshoot witness stays on the imported fixed seed surface",
         abs(np.mean(x_opt) - XBAR_NE) < 1e-12 and abs(np.mean(y_opt) - YBAR_NE) < 1e-12,
         f"(xbar,ybar)=({np.mean(x_opt):.6f},{np.mean(y_opt):.6f})",
     )
     check(
-        "Transport extremality produces a genuinely off-seed active source",
+        "The sampled overshoot witness is genuinely off-seed",
         np.linalg.norm(xi_opt) > 1e-6 and np.linalg.norm(eta_opt) > 1e-6 and abs(delta_opt) > 1e-6,
         f"xi={format_vec(xi_opt)}, eta={format_vec(eta_opt)}, delta={delta_opt:.6f}",
     )
     check(
-        "The extremal candidate beats the canonical near-closing N_e sample",
+        "The sampled witness beats the canonical near-closing N_e sample",
         np.max(etas_opt) > 1.04,
         f"etas={np.round(etas_opt, 6)}, best column={best_idx}",
     )
@@ -197,11 +198,11 @@ def part2_transport_extremality_selects_a_positive_off_seed_candidate() -> tuple
     return x_opt, y_opt, delta_opt, packet_opt, etas_opt
 
 
-def part3_continuity_gives_an_exact_full_closure_point(
+def part3_continuity_gives_an_interpolated_closure_witness(
     x_opt: np.ndarray, y_opt: np.ndarray, delta_opt: float
 ) -> tuple[np.ndarray, np.ndarray, float, np.ndarray, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 3: CONTINUITY GIVES AN EXACT FULL-CLOSURE POINT")
+    print("PART 3: CONTINUITY GIVES AN INTERPOLATED CLOSURE WITNESS")
     print("=" * 88)
 
     x_seed = np.full(3, XBAR_NE, dtype=float)
@@ -222,12 +223,12 @@ def part3_continuity_gives_an_exact_full_closure_point(
     best_idx = int(np.argmax(etas_root))
 
     check(
-        "The exact best-eta map is continuous on the interpolating seed-preserving family",
+        "The computed best-eta map crosses 1 on the interpolating seed-preserving family",
         best_eta_along(0.0) < 1.0 < best_eta_along(1.0),
         f"(seed,opt)=({best_eta_along(0.0):.12f},{best_eta_along(1.0):.12f})",
     )
     check(
-        "Therefore there exists an exact closure point with eta/eta_obs = 1 on the same native seed surface",
+        "The interpolated witness has eta/eta_obs = 1 on the same parameterized family",
         abs(np.max(etas_root) - 1.0) < 1e-10,
         f"etas={np.round(etas_root, 12)}, best column={best_idx}",
     )
@@ -254,52 +255,48 @@ def part4_bottom_line() -> None:
     print("=" * 88)
 
     check(
-        "A minimal positive full-stack route now exists beyond the sole-axiom boundary",
+        "The imported transport functional has a constructive interval witness",
         True,
-        "use exact transport extremality on the fixed off-seed source class",
+        "seed endpoint below 1, sampled endpoint above 1",
     )
     check(
-        "Once that selector law is admitted, the 5-real off-seed source is no longer a free placeholder",
+        "The witness does not select a physical off-seed source law",
         True,
-        "it is fixed by a concrete exact objective on the DM branch",
+        "selector status remains out of scope",
     )
     check(
-        "So the remaining issue is no longer existence but whether this transport selector is the right derived dynamical law inside the framework",
+        "The remaining issue is the unproven selector/authority bridge",
         True,
-        "closure point exists on the exact fixed-seed surface",
+        "bounded interval witness only",
     )
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS PMNS TRANSPORT-EXTREMAL SOURCE CANDIDATE")
+    print("DM LEPTOGENESIS PMNS TRANSPORT INTERVAL WITNESS")
     print("=" * 88)
     print()
     print("Framework convention:")
     print('  "axiom" means only Cl(3) on Z^3.')
     print()
     print("Question:")
-    print("  If the sole axiom does not itself fix the off-seed 5-real source on the")
-    print("  PMNS-assisted N_e route, what is the strongest positive derived selector")
-    print("  candidate for full-stack closure?")
+    print("  Does the imported PMNS-assisted transport functional contain a")
+    print("  seed-to-overshoot interval witness without claiming a selector law?")
 
-    part1_the_transport_objective_is_exact_on_the_fixed_native_seed_surface()
-    x_opt, y_opt, delta_opt, _packet_opt, _etas_opt = part2_transport_extremality_selects_a_positive_off_seed_candidate()
-    part3_continuity_gives_an_exact_full_closure_point(x_opt, y_opt, delta_opt)
+    part1_the_transport_objective_is_evaluable_on_the_imported_seed_surface()
+    x_opt, y_opt, delta_opt, _packet_opt, _etas_opt = part2_transport_search_finds_an_off_seed_overshoot_witness()
+    part3_continuity_gives_an_interpolated_closure_witness(x_opt, y_opt, delta_opt)
     part4_bottom_line()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Positive construction:")
-    print("    - transport extremality on the fixed native seed surface selects a")
-    print("      concrete off-seed source candidate")
-    print("    - that candidate beats the canonical near-closing N_e sample")
-    print("    - by continuity, an exact eta/eta_obs = 1 closure point exists on the")
-    print("      same fixed-seed source class")
+    print("  Bounded construction:")
+    print("    - the imported fixed seed endpoint is below eta/eta_obs = 1")
+    print("    - the sampled off-seed endpoint is above eta/eta_obs = 1")
+    print("    - interpolation gives an eta/eta_obs = 1 witness on that family")
     print()
-    print("  So full-stack closure is now constructive once the off-seed source is")
-    print("  selected by an exact transport-side dynamical law.")
+    print("  No physical selector law or full-stack closure is claimed.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

@@ -4,15 +4,17 @@ Bekenstein-Hawking Entropy Bounded Companion from Lattice Entanglement
 ======================================================================
 
 STATUS: BOUNDED COMPANION -- the finite-L RT ratio is near ~0.24 on the
-        small reviewed surface, but the asymptotic carrier coefficient is
-        controlled by the Widom-Gioev-Klich value 1/6, not 1/4.
+        small reviewed surface. The linked Widom row gives retained-bounded
+        finite-L evidence and an exact 2D diamond coefficient, but this runner
+        does not prove an all-L OBC asymptotic carrier theorem.
         This runner is therefore a bounded companion / comparison lane,
         not a retained derivation of S = A / (4 l_P^2).
 
-DERIVATION CHAIN:
+COMPUTATION CHAIN:
 
   Step 1 (Area Law): Entanglement entropy across a bipartition satisfies
-    S = c * |dA| + subleading, verified numerically (R^2 > 0.999).
+    S = c * |dA| + subleading on the reviewed finite sizes, verified
+    numerically (R^2 > 0.998).
 
   Step 2 (Transfer Matrix Bond Dimension): The propagator on the lattice
     defines a transfer matrix T between adjacent layers.  SVD gives
@@ -22,8 +24,8 @@ DERIVATION CHAIN:
 
   Step 3 (Ryu-Takayanagi Ratio, bounded finite-L comparison):
     On the reviewed small-L surface the measured ratio is ~0.24, which is
-    numerically close to 1/4. The current-main bounded note explains why
-    this is not the asymptotic value on this carrier.
+    numerically close to 1/4. The current-main bounded note keeps that as a
+    finite comparison, not an all-L statement.
 
   Step 4 (bounded BH comparison only): On a Planck lattice, a spherical boundary
     of area A has |dA| = A/l_P^2 boundary sites.  The transfer matrix
@@ -35,12 +37,12 @@ DERIVATION CHAIN:
     comparison target, not a retained framework derivation.
 
 CHECKS:
-  1. Area law R^2 > 0.999 (2D and 3D)
-  2. RT ratio finite-L comparison to 1/4 across multiple lattice sizes
+  1. Area law R^2 > 0.998 (2D and 3D)
+  2. RT ratio finite-L observation across multiple lattice sizes
   3. Gravity modulates entropy monotonically
-  4. Frozen star entropy scales correctly with mass
+  4. Frozen-star table is a comparison identity, not an independent test
   5. Species counting: RT ratio stable under Hilbert-space dimension change
-  6. Finite-size trend of RT ratio
+  6. Finite-size trend diagnostics, observation only
 
 Current-main interpretation:
   use BH_ENTROPY_DERIVED_NOTE.md and BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md
@@ -234,9 +236,9 @@ def check_1_area_law() -> dict:
         "entropies": ent_3d,
     }
 
-    pass_2d = r2_2d > 0.999
+    pass_2d = r2_2d > 0.998
     pass_3d = r2_3d > 0.998
-    print(f"\n  PASS 2D area law (R^2 > 0.999): {pass_2d}  (R^2 = {r2_2d:.6f})")
+    print(f"\n  PASS 2D area law (R^2 > 0.998): {pass_2d}  (R^2 = {r2_2d:.6f})")
     print(f"  PASS 3D area law (R^2 > 0.998): {pass_3d}  (R^2 = {r2_3d:.6f})")
 
     results["pass_2d"] = pass_2d
@@ -392,8 +394,8 @@ def check_2_rt_ratio() -> dict:
     # Finite-L comparison check against the 1/4 target.
     pass_2d = dev_mean_2d < 15
     pass_3d = dev_mean_3d < 15
-    print(f"\n  2D finite-L comparison within 15% of 1/4: {pass_2d}")
-    print(f"  3D finite-L comparison within 15% of 1/4: {pass_3d}")
+    print(f"\n  Diagnostic only: 2D finite-L comparison within 15% of 1/4: {pass_2d}")
+    print(f"  Diagnostic only: 3D finite-L comparison within 15% of 1/4: {pass_3d}")
 
     results["pass_2d"] = pass_2d
     results["pass_3d"] = pass_3d
@@ -471,7 +473,7 @@ def check_3_gravity_modulation() -> dict:
 # ============================================================================
 
 def check_4_frozen_star() -> dict:
-    """Verify S_BH = A/(4 l_P^2) for astrophysical black holes."""
+    """Report the BH comparison identity when the RT ratio is set to 1/4."""
     print("\n" + "=" * 72)
     print("CHECK 4: FROZEN STAR ENTROPY SCALING")
     print("=" * 72)
@@ -508,9 +510,9 @@ def check_4_frozen_star() -> dict:
             "S_BH": float(S_BH), "ratio": float(ratio),
         }
 
-    print(f"\n  S_lat = S_BH exactly when the RT ratio = 1/4.")
-    print(f"  The non-trivial content: the lattice computation (Check 2)")
-    print(f"  gives RT ratio ~ 0.24 numerically.")
+    print(f"\n  This table is a comparison identity when RT ratio = 1/4.")
+    print(f"  It is not an independent pass/fail test. Check 2 reports")
+    print(f"  finite-L lattice RT ratios as observations.")
 
     return results
 
@@ -598,7 +600,7 @@ def check_5_species_scan() -> dict:
 # ============================================================================
 
 def check_6_finite_size() -> dict:
-    """Track the RT ratio as lattice size increases."""
+    """Track finite-size RT-ratio diagnostics on the reviewed surface."""
     print("\n" + "=" * 72)
     print("CHECK 6: FINITE-SIZE TREND OF RT RATIO")
     print("=" * 72)
@@ -641,14 +643,15 @@ def check_6_finite_size() -> dict:
         print(f"  {L:>4d} {chi_eff:>8d} {s_exact:>10.4f} "
               f"{s_max:>10.4f} {rt:>10.4f}")
 
-    # Extrapolate RT ratio vs 1/L
+    # Fit a finite tail intercept versus 1/L. This is a diagnostic only, not an
+    # asymptotic theorem for the OBC carrier.
     inv_L = np.array([1.0 / l for l in L_list_2d])
     rt_arr = np.array(rt_list_2d)
     fit_2d = np.polyfit(inv_L, rt_arr, 1)
     rt_inf_2d = fit_2d[1]
     dev_2d = abs(rt_inf_2d - 0.25) / 0.25 * 100
 
-    print(f"\n  Extrapolated RT ratio (2D, L->inf): {rt_inf_2d:.4f}")
+    print(f"\n  2D linear-in-1/L tail-fit intercept (diagnostic): {rt_inf_2d:.4f}")
     print(f"  Deviation from 1/4: {dev_2d:.1f}%")
 
     results["2d"] = {
@@ -703,7 +706,7 @@ def check_6_finite_size() -> dict:
     rt_inf_3d = fit_3d[1]
     dev_3d = abs(rt_inf_3d - 0.25) / 0.25 * 100
 
-    print(f"\n  Extrapolated RT ratio (3D, L->inf): {rt_inf_3d:.4f}")
+    print(f"\n  3D linear-in-1/L tail-fit intercept (diagnostic): {rt_inf_3d:.4f}")
     print(f"  Deviation from 1/4: {dev_3d:.1f}%")
 
     results["3d"] = {
@@ -722,11 +725,15 @@ def check_6_finite_size() -> dict:
 
 def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
               c5: dict, c6: dict) -> dict:
-    """Assemble the derivation and report pass/fail."""
+    """Assemble the finite-packet report and pass/fail summary."""
     print("\n" + "=" * 72)
     print("SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM LATTICE ENTANGLEMENT")
     print("=" * 72)
 
+    # 2026-05-26 finite-packet rescope: keep pass/fail only for finite
+    # computations this runner recomputes directly. RT-ratio comparisons and
+    # tail-fit intercepts are observations, not retained asymptotic claims.
+    #
     # 2026-05-03 review-loop repair: split each subcheck into explicit
     # 2D and 3D parts with explicit thresholds, drop the OR-based
     # aggregation that was masking 3D failures, and report the honest
@@ -738,15 +745,12 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     #   - RT ratio (finite-L) is the OBSERVED finite-L value (~0.21-0.24
     #     in 2D, ~0.06-0.16 in 3D). Comparison to 1/4 is reported as a
     #     bounded numerical observation; it is NOT used as a pass/fail
-    #     criterion any more, because the retained Widom no-go says the
-    #     asymptote is 1/6, not 1/4. Aggregation now reports the observed
-    #     finite-L numbers without a "PASS within 15% of 1/4" verdict.
+    #     criterion any more. Aggregation reports the observed finite-L
+    #     numbers without a "PASS within 15% of 1/4" verdict.
     #   - Gravity modulation monotone for g >= 0.5
     #   - Species universality: RT ratio spread < 1e-12
-    #   - Finite-size extrapolation toward Widom (1/6 = 0.1667) NOT 1/4:
-    #     2D RT(inf) within 25% of c_Widom(2D) = 1/6
-    #     3D extrapolation reported as observation only (the Widom 3D
-    #     value c_Widom(3D) ~ 0.105 is Monte-Carlo, not closed form)
+    #   - Finite-size tail-fit intercepts are diagnostics only. They do not
+    #     close an all-L OBC Widom theorem.
     verdicts = {}
 
     # 1. Area law (split 2D vs 3D, threshold R^2 > 0.998 per the note's
@@ -772,7 +776,7 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     print(f"\n  2. RT RATIO finite-L observation (NOT a pass/fail vs 1/4):")
     print(f"     2D mean: {mean_2d:.4f}  (dev from 1/4: {dev_2d:.1f}%)")
     print(f"     3D mean: {mean_3d:.4f}  (dev from 1/4: {dev_3d:.1f}%)")
-    print(f"     OBSERVATION ONLY — see Widom no-go for asymptotic interpretation.")
+    print(f"     OBSERVATION ONLY — finite comparison, not a BH derivation.")
     # No verdict entry; this is reported as observation.
 
     # 3. Gravity modulation
@@ -793,33 +797,31 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     print(f"     {'PASS' if species_pass else 'FAIL'}")
     verdicts["species_universality"] = species_pass
 
-    # 6. Finite-size extrapolation toward Widom (1/6 = 0.1667), NOT 1/4.
-    #    The review-relevant question is whether the extrapolated value
-    #    is consistent with the retained Widom no-go.
+    # 6. Finite-size tail-fit diagnostics. These are reported without a
+    #    pass/fail verdict because the all-L OBC asymptotic bridge is outside
+    #    this row's retained-bounded dependency.
     rt_inf_2d = c6.get("2d", {}).get("rt_inf", 0)
     rt_inf_3d = c6.get("3d", {}).get("rt_inf", 0)
     dev_inf_2d = c6.get("2d", {}).get("deviation_pct", 100)
     dev_inf_3d = c6.get("3d", {}).get("deviation_pct", 100)
     c_widom_2d = 1.0 / 6.0
     dev_widom_2d = abs(rt_inf_2d - c_widom_2d) / c_widom_2d * 100
-    pass_widom_2d = dev_widom_2d < 35  # generous: small-L extrapolation
-    print(f"\n  6a. FINITE-SIZE EXTRAPOLATION 2D toward Widom c=1/6:")
-    print(f"     RT(inf) = {rt_inf_2d:.4f}, c_Widom(2D) = {c_widom_2d:.4f}")
+    print(f"\n  6a. FINITE-SIZE TAIL-FIT 2D (observation):")
+    print(f"     intercept = {rt_inf_2d:.4f}, c_Widom(2D) = {c_widom_2d:.4f}")
     print(f"     dev from c_Widom(2D) = {dev_widom_2d:.1f}%   (dev from 1/4 = {dev_inf_2d:.1f}%)")
-    print(f"     {'PASS' if pass_widom_2d else 'FAIL'}: extrapolation is closer to Widom 1/6 than to 1/4")
-    verdicts["extrapolation_2d_consistent_with_widom"] = pass_widom_2d
-    print(f"\n  6b. FINITE-SIZE EXTRAPOLATION 3D (observation):")
-    print(f"     RT(inf) = {rt_inf_3d:.4f}  (dev from 1/4: {dev_inf_3d:.1f}%)")
-    print(f"     OBSERVATION ONLY — Widom 3D coefficient is Monte-Carlo only.")
+    print(f"     OBSERVATION ONLY — no all-L OBC asymptotic theorem is claimed.")
+    print(f"\n  6b. FINITE-SIZE TAIL-FIT 3D (observation):")
+    print(f"     intercept = {rt_inf_3d:.4f}  (dev from 1/4: {dev_inf_3d:.1f}%)")
+    print(f"     OBSERVATION ONLY — no 3D asymptotic theorem is claimed.")
 
     # Overall
     n_pass = sum(1 for v in verdicts.values() if v)
     n_total = len(verdicts)
 
     print(f"\n  " + "=" * 60)
-    print(f"  CHECKS PASSED: {n_pass}/{n_total}  (2026-05-03 repaired accounting)")
+    print(f"  CHECKS PASSED: {n_pass}/{n_total}  (2026-05-26 finite-packet accounting)")
     print(f"  Subchecks split into 2D vs 3D; RT-ratio-vs-1/4 reported as")
-    print(f"  observation only; finite-size extrapolation tested against Widom 1/6.")
+    print(f"  observation only; finite-size tail fits are diagnostic only.")
     print(f"  " + "=" * 60)
 
     print(f"\n  COMPANION SUMMARY:")
@@ -832,8 +834,8 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     print(f"                                          =  {mean_3d:.4f} (3D)")
     print(f"            comparison target: 1/4 = 0.2500")
     print(f"    (iv)  On current main, this is a bounded BH-comparison lane only.")
-    print(f"          The retained Widom no-go says the asymptotic coefficient on")
-    print(f"          this free-fermion carrier is 1/6, not 1/4.")
+    print(f"          The linked Widom row is retained-bounded for finite-L evidence")
+    print(f"          and an exact 2D coefficient, not for an all-L OBC theorem.")
     print(f"    (v)   Therefore the script does not derive the Bekenstein-Hawking")
     print(f"          coefficient as a retained framework theorem.")
     print()

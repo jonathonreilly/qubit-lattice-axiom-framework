@@ -1,0 +1,26 @@
+================================================================================
+SM RELATIVISTIC DOF COUNT BOUNDED IMPORT
+================================================================================
+Scope: verify the admitted SM bookkeeping table and 7/8 weighting.
+Not scope: derive the SM particle spectrum from CL3 primitives.
+
+Bosonic inventory
+[PASS] gluons: 8 color adjoint states * 2 transverse pol: 16
+[PASS] SU(2)_L gauge bosons: 3 weak states * 2 transverse pol: 6
+[PASS] U(1)_Y gauge boson: 1 state * 2 transverse pol: 2
+[PASS] complex Higgs doublet: 4 real scalar components: 4
+
+Fermionic inventory
+[PASS] quarks: 6 flavors * 3 colors * 4 Dirac particle/anti states: 72
+[PASS] charged leptons: 3 flavors * 4 Dirac particle/anti states: 12
+[PASS] active neutrinos: 3 flavors * 2 chiral particle/anti states: 6
+
+Totals
+[PASS] bosonic total: g_bosonic=28
+[PASS] fermionic total: g_fermionic=90
+[PASS] 7/8 weighting: 7/8
+[PASS] g_* exact rational: g_*=427/4
+[PASS] g_* decimal: g_*=106.75
+
+PASS=12 FAIL=0
+Result: bounded SM-content import bookkeeping closes on its stated table.

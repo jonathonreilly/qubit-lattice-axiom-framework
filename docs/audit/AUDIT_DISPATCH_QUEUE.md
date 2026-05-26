@@ -21,7 +21,7 @@ Source sidecars:
 |---:|:---:|---|---|---|---|---|---|
 | 1 | Y | `legacy_weak_independence_clean_rows` | `packet_memory_note` | bounded_theorem / audited_clean / retained_bounded | `docs/PACKET_MEMORY_NOTE.md` | Fresh-context provenance re-audit: the current clean verdict has independence=weak. Re-audit the bounded claim under current independence and reasoning-effort requirements. |  |
 | 2 | Y | `legacy_weak_independence_terminal_no_go_rows` | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go / audited_failed / retained_no_go | `archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md` | Fresh-context provenance re-audit: this archived no-go row has a terminal verdict recorded with independence=weak. Re-audit the no-go boundary under current independence and no-go-discipline requirements, or confirm it should remain archived/non-authority. |  |
-| 3 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? | blocked_by_dependency:pre_record_reference_state_tracial_derivation_note_2026-05-20:audited_conditional |
+| 3 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? | blocked_by_dependency:pre_record_reference_state_tracial_derivation_note_2026-05-20:unaudited |
 
 ## Resolved By Post-Manifest Re-Audit
 
@@ -66,7 +66,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 17 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
 | 18 | resolved_or_superseded | `cl3_color_automorphism_theorem` | positive_theorem / audited_clean / retained |
 | 19 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
-| 20 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional |
+| 20 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem / unaudited / unaudited |
 | 21 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
 | 22 | resolved_or_superseded | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
 | 23 | resolved_or_superseded | `action_normalization_note` | bounded_theorem / audited_conditional / audited_conditional |

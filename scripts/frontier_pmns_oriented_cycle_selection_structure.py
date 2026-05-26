@@ -6,15 +6,13 @@ Question:
   what exact selection structure remains on that channel?
 
 Answer:
-  Two exact statements survive:
+  Three raw matrix identities survive:
 
     1. under exact C3 covariance on the hw=1 triplet, the cycle coefficients
        collapse to the one-complex slot sigma * (1,1,1), i.e. sigma C
-    2. at the sole-axiom free point, sigma = 0, so the sole axiom selects the
-       trivial cycle law
+    2. on the specified identity block I3, sigma = 0
 
-  On the graph-first selected-axis route, the strongest exact residual
-  antiunitary reduction on the cycle channel is
+  For the prescribed residual antiunitary map on the cycle channel,
 
       A_fwd = P23 A_fwd^dag P23
 
@@ -22,7 +20,7 @@ Answer:
 
       c1 = conjugate(c3),  c2 real
 
-  so the graph-first route reduces the cycle channel to a 3-real subfamily,
+  so the prescribed map reduces the cycle channel to a 3-real subfamily,
   but still does not fix the values.
 """
 
@@ -102,24 +100,24 @@ def part1_exact_c3_covariance_collapses_the_cycle_channel_to_one_complex_slot() 
     check("So the C3-covariant cycle law is exactly one complex slot sigma C", np.linalg.norm(sigma_block - sigma * CYCLE) < 1e-12)
 
 
-def part2_the_sole_axiom_free_point_selects_sigma_zero() -> None:
+def part2_the_specified_identity_block_has_sigma_zero() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE SOLE-AXIOM FREE POINT SELECTS SIGMA = 0")
+    print("PART 2: THE SPECIFIED IDENTITY BLOCK HAS SIGMA = 0")
     print("=" * 88)
 
-    free_block = I3.copy()
-    coeffs = oriented_cycle_coeffs_from_block(free_block)
+    identity_block = I3.copy()
+    coeffs = oriented_cycle_coeffs_from_block(identity_block)
     sigma = np.mean(coeffs)
 
-    check("The free active block has zero oriented-cycle coefficients", np.linalg.norm(coeffs) < 1e-12,
+    check("The specified identity block has zero oriented-cycle coefficients", np.linalg.norm(coeffs) < 1e-12,
           f"coeffs={np.round(coeffs, 6)}")
-    check("Therefore the sole-axiom free point has sigma = 0", abs(sigma) < 1e-12, f"sigma={sigma}")
-    print("  [INFO] Exact sole-axiom C3 covariance selects only the trivial cycle law at the free point")
+    check("Therefore the specified identity block has sigma = 0", abs(sigma) < 1e-12, f"sigma={sigma}")
+    print("  [INFO] This is a raw matrix identity on I3, not a free-point identification")
 
 
-def part3_graph_first_selected_axis_reduces_the_cycle_channel_to_a_3_real_subfamily() -> None:
+def part3_prescribed_swap_conjugation_has_a_3_real_fixed_subfamily() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: GRAPH-FIRST SELECTED AXIS REDUCES THE CYCLE CHANNEL TO A 3-REAL SUBFAMILY")
+    print("PART 3: PRESCRIBED SWAP-CONJUGATION MAP HAS A 3-REAL FIXED SUBFAMILY")
     print("=" * 88)
 
     coeffs_good = np.array([0.41 + 0.32j, 0.28 + 0.0j, 0.41 - 0.32j], dtype=complex)
@@ -134,7 +132,7 @@ def part3_graph_first_selected_axis_reduces_the_cycle_channel_to_a_3_real_subfam
     check("A generic cycle triple is not fixed by that residual antiunitary symmetry",
           np.linalg.norm(residual_swap_conjugate(a_bad) - a_bad) > 1e-6,
           f"coeffs={np.round(coeffs_bad, 6)}")
-    print("  [INFO] The graph-first selected-axis route reduces the cycle channel to 3 real parameters  ((Re c1, Im c1, c2))")
+    print("  [INFO] The prescribed map reduces the cycle channel to 3 real parameters  ((Re c1, Im c1, c2))")
 
 
 def part4_result() -> None:
@@ -143,12 +141,12 @@ def part4_result() -> None:
     print("=" * 88)
     print("  Exact selection structure on the oriented cycle channel:")
     print("    - exact C3 covariance collapses it to sigma C")
-    print("    - the sole-axiom free point sets sigma = 0")
-    print("    - graph-first selected-axis symmetry reduces the channel further to")
+    print("    - the specified identity block sets sigma = 0")
+    print("    - prescribed swap-conjugation symmetry reduces the channel further to")
     print("      c1 = conjugate(c3), c2 real")
     print()
-    print("  So the cycle carrier and its observable law are closed, and the")
-    print("  remaining gap is only a value-selection law for that reduced channel.")
+    print("  So the raw matrix identities on the oriented-cycle channel are closed.")
+    print("  Any sole-axiom or graph-first interpretation is outside this runner.")
 
 
 def main() -> int:
@@ -161,8 +159,8 @@ def main() -> int:
     print("  exact selection structure remains on that channel?")
 
     part1_exact_c3_covariance_collapses_the_cycle_channel_to_one_complex_slot()
-    part2_the_sole_axiom_free_point_selects_sigma_zero()
-    part3_graph_first_selected_axis_reduces_the_cycle_channel_to_a_3_real_subfamily()
+    part2_the_specified_identity_block_has_sigma_zero()
+    part3_prescribed_swap_conjugation_has_a_3_real_fixed_subfamily()
     part4_result()
 
     print()

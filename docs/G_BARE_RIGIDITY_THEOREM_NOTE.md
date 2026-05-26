@@ -10,8 +10,12 @@ restated so the lattice holonomy `U = exp(i A_op a)` appears as an
 **explicit admitted-and-not-derived premise** on the surface of the
 theorem statement, not as a derived conclusion. The retained
 class-A surface is the conditional rigidity statement *given* the
-admitted holonomy form — see `## 2026-05-24 audit-conditional repair`
-below.)
+then-admitted holonomy form — see `## 2026-05-24 audit-conditional repair`
+below. Science repair 2026-05-26: the finite-link `SU(3)`
+exponential/logarithm bridge is now derived and runner-checked inside this
+packet, so `(HF)` is no longer an untested admission for finite link
+holonomies. The repair does not derive a unique continuum gauge field or a
+global logarithm branch.)
 **Claim type:** bounded_theorem
 **Branch:** `codex/dm-across-the-line`  
 **Script:** `scripts/frontier_g_bare_rigidity_theorem.py`
@@ -34,19 +38,24 @@ relative to three cited upstream inputs:
    `NATIVE_GAUGE_CLOSURE_NOTE.md`);
 2. the Hilbert-space inner product on the taste space `V`, fixed by the
    framework axioms;
-3. the identification of the physical gauge connection with the
-   operator-valued one-form `A_op = sum_a A^a T_a` in the canonical
-   normalized basis (the holonomy identification step) — **explicitly
-   admitted, not derived in this note**; see
-   `## 2026-05-19 audit-conditional repair` below.
+3. the finite-link `SU(3)` holonomy exponential bridge: for every finite
+   `SU(3)` link holonomy `U` and lattice spacing `a > 0`, the spectral
+   theorem plus `det(U)=1` gives a traceless-Hermitian logarithm
+   `A_op in su(3)` on a selected branch, hence
+   `U = exp(i A_op a) = exp(i A^a T_a a)` in the canonical normalized
+   basis. This bridge is finite-link algebra only; it does not derive a
+   unique continuum gauge field or remove the usual discrete logarithm
+   branch ambiguity.
 
 The fundamental SU(3) Casimir value `C_2 = 4/3` cited in clause 2 of the
 theorem is similarly imported as a decoration from
 `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md` and **not
 re-derived here**; see the same repair block.
 
-**Conditional on those three upstream inputs**, the present note proves
-that there is no independent scalar gauge-normalization freedom left.
+**Conditional on the retained upstream `SU(3)` embedding and fixed
+Hilbert-space inner product, and using the finite-link bridge above**, the
+present note proves that there is no independent scalar gauge-normalization
+freedom left.
 It does **not** claim a dynamical fixed-point derivation of `g = 1`,
 and it does **not** independently derive the upstream SU(3) embedding,
 trace normalization, or physical holonomy identification.
@@ -89,24 +98,26 @@ the framework already claims to derive.
 
 ## Theorem
 
-**Theorem (Gauge-normalization rigidity, conditional on the admitted
-holonomy form).**
+**Theorem (Gauge-normalization rigidity, with finite-link holonomy
+bridge).**
 
 Let `g_conc = su(3) subset End(V)` be the concrete compact semisimple gauge
 algebra derived on the taste Hilbert space `V`, with `V` carrying its fixed
-Hilbert-space inner product. **Assume as an explicit upstream input**
-the lattice-gauge-dictionary holonomy form
+Hilbert-space inner product. For each finite link holonomy
+`U in SU(3)` and each lattice spacing `a > 0`, choose eigenphases
+`theta_j` for `U` with `sum_j theta_j = 0` after integer `2pi` shifts
+allowed by `det(U)=1`, and set
 
 ```text
-   A_op  =  sum_a A^a T_a                       (operator-valued connection)
-   U     =  exp(i A_op a)  =  exp(i A^a T_a a)  (lattice holonomy)        (HF)
+   A_op  =  (1/a) V diag(theta_j) V^dagger  in su(3),
+   A_op  =  sum_a A^a T_a,
+   U     =  exp(i A_op a)  =  exp(i A^a T_a a).                         (HF)
 ```
 
-(This assumption `(HF)` is **not derived** in this note; it is admitted as
-an upstream input. See `## 2026-05-19 audit-conditional repair` item 1
-and `## 2026-05-24 audit-conditional repair` below. A future
-cite-or-derive follow-up is queued: a retained theorem on this branch
-that derives `(HF)` from the framework's discrete gauge primitives.)
+This is a finite-link logarithm bridge. It proves existence of the
+operator-valued link generator in the fixed `su(3)` span. It does not
+select a unique global logarithm branch and does not assert a continuum
+gauge-field limit.
 
 Then:
 
@@ -134,15 +145,15 @@ Then:
    an allowed ambiguity of the canonical normalization, because it changes the
    fixed trace form and the fixed Casimir.
 
-5. **Conditional on the admitted holonomy form `(HF)`**, the lattice
-   holonomy admits the coefficient-vector expression
-   `U = exp(i A^a T_a a)`. By clauses 1–4, the operator basis `{T_a}` in
-   `(HF)` carries no further scalar-normalization freedom within the
-   fixed trace form. Therefore, in the canonical normalized basis the
-   admitted holonomy `(HF)` carries no independent multiplicative bare
-   coupling — standard notation rewrites this as `g_bare = 1` — **but
-   only relative to the admitted form `(HF)`**, which this note does
-   not derive.
+5. By the finite-link bridge `(HF)`, each finite `SU(3)` link holonomy
+   admits the coefficient-vector expression `U = exp(i A^a T_a a)` in the
+   fixed canonical generator basis. By clauses 1–4, the operator basis
+   `{T_a}` in `(HF)` carries no further scalar-normalization freedom within
+   the fixed trace form. Therefore, in the canonical normalized basis the
+   link-holonomy expression carries no independent multiplicative bare
+   coupling; standard notation rewrites this as `g_bare = 1`. The remaining
+   logarithm ambiguity is discrete branch choice, not a continuous scalar
+   generator-normalization freedom.
 
 ---
 
@@ -170,15 +181,15 @@ The correct reply is now:
 So the theorem does not say "dynamics selected the magical number `1`."
 It says something narrower and cleaner:
 
-> **given** the admitted upstream lattice-gauge-dictionary holonomy form
-> `U = exp(i A^a T_a a)`, the canonical generator basis carries no
-> independent scalar-normalization freedom, so `g_bare = 1` is a
-> coordinate-redundancy statement (not a dynamical selection).
+> **given** a finite `SU(3)` link holonomy, the finite-link logarithm bridge
+> writes it as `U = exp(i A^a T_a a)` in the canonical generator basis; that
+> basis carries no independent scalar-normalization freedom, so `g_bare = 1`
+> is a coordinate-redundancy statement (not a dynamical selection).
 
-That is why `g_bare = 1` is the correct **conditional** canonical
-statement: conditional on the admitted upstream holonomy form, which
-this note does not derive from the framework's discrete gauge
-primitives.
+That is why `g_bare = 1` is the correct finite-link canonical statement on
+the supplied `SU(3)` surface. The remaining caveat is not the existence of
+`U = exp(i A_op a)`, but the narrower fact that a global logarithm branch and
+continuum gauge-field limit are not selected by this row.
 
 ---
 
@@ -193,7 +204,9 @@ The companion script verifies:
    - `sum_a T_a T_a = (4/3) I_3`
 4. orthogonal basis rotations preserve these invariants
 5. scalar dilations change these invariants
-6. the scalar `g` can always be absorbed into the coefficient vector of the
+6. finite `SU(3)` link holonomies admit traceless-Hermitian logarithms in the
+   fixed generator span
+7. the scalar `g` can always be absorbed into the coefficient vector of the
    operator `A_op`, showing it is coordinate redundancy rather than a new
    physical parameter
 
@@ -224,15 +237,14 @@ This is a gauge-normalization theorem, not the whole DM closure.
 > The framework's canonical `su(3)` generator basis on the taste-space
 > operator algebra carries no independent scalar-normalization freedom:
 > once the Hilbert-space trace form is fixed, the canonical generator
-> normalization is fixed up to orthogonal basis rotation. **Given the
-> admitted upstream lattice-gauge-dictionary form of the lattice
-> holonomy `U = exp(i A^a T_a a)`** (admitted, not derived in this
-> note), the standard notation corresponds to `g_bare = 1` — but only
-> relative to that admitted holonomy form, which is queued for a
-> separate cite-or-derive follow-up. The claim that the framework
-> "does not contain a free bare gauge-coupling parameter at the
-> Hamiltonian level" is therefore conditional on the admitted holonomy
-> form, not a free-standing free-coupling-removal closure.
+> normalization is fixed up to orthogonal basis rotation. For any finite
+> `SU(3)` link holonomy, the finite-link logarithm bridge supplies
+> `U = exp(i A^a T_a a)` on a selected branch, so the standard notation
+> corresponds to `g_bare = 1` at the finite-link level. The claim that the
+> framework "does not contain a free bare gauge-coupling parameter at the
+> Hamiltonian level" is therefore a finite-link generator-normalization
+> statement; it does not select a unique global logarithm branch or derive a
+> continuum gauge-field limit.
 
 ---
 
@@ -263,12 +275,15 @@ the script-check list, restricted to *normalization rigidity over the
 admitted embedding*. It is verified by the companion runner
 `scripts/frontier_g_bare_rigidity_theorem.py`.
 
-### Admissions (out-of-scope under this narrow)
+### Historical admissions before the 2026-05-26 finite-link bridge
 
-The following two steps are now **explicitly admitted-and-not-derived**
-at header level on this row:
+The following two steps were made **explicitly admitted-and-not-derived**
+at header level by the 2026-05-19 repair. The first item is superseded by
+the 2026-05-26 finite-link bridge for finite `SU(3)` holonomies; the second
+item remains a decoration cite.
 
-1. **Holonomy identification step (Theorem clause 5).** The
+1. **Holonomy identification step (Theorem clause 5; superseded for finite
+   links on 2026-05-26).** The
    identification of the physical gauge connection with the
    operator-valued one-form
 
@@ -278,15 +293,11 @@ at header level on this row:
 
    `U = exp(i A_op a) = exp(i A^a T_a a)`
 
-   is **admitted as an upstream input** of this note. It is the third
-   item in the Conditional scope list of the Status section. No
-   retained framework theorem on this branch derives the physical
-   holonomy form from the bare framework primitives (A1–A2 +
-   retained); the lattice-holonomy form is imported from the standard
-   lattice-gauge dictionary. A future cite-or-derive follow-up is
-   queued: a retained theorem on this branch that derives the lattice
-   holonomy `U = exp(i A_op a)` from the framework's discrete gauge
-   primitives, rather than importing it as a convention.
+   was admitted as an upstream input of this note in the 2026-05-19
+   repair. The 2026-05-26 repair replaces that finite-link admission with
+   the spectral-theorem bridge in the current Theorem statement and the
+   companion runner. The remaining caveat is global branch/continuum-field
+   selection, not finite-link existence of `U = exp(i A_op a)`.
 
 2. **SU3_CASIMIR decoration cite (Theorem clause 2 second equation).**
    The canonical-fundamental Casimir value
@@ -384,10 +395,11 @@ primitives. Citing those notes as the missing bridge would mislabel
 their scope. The cite-or-derive follow-up is therefore queued (see
 "Forward queue" below) and the present repair is narrowed-only.
 
-### Retained scope (in-scope under this narrow)
+### Historical retained scope before the 2026-05-26 finite-link bridge
 
-The retained class-A algebraic content of this note is the conditional
-rigidity statement:
+The 2026-05-24 retained class-A algebraic content was the conditional
+rigidity statement below. The 2026-05-26 bridge supersedes the admitted
+finite-link premise while preserving the same trace-form rigidity content:
 
 ```text
    Given (HF):
@@ -400,33 +412,33 @@ rigidity statement:
    fixed trace form; scalar dilation T_a -> lambda T_a with lambda != 1
    is not an allowed ambiguity.
 
-   Therefore: under (HF), the admitted holonomy carries no independent
+   Therefore: under (HF), the finite-link holonomy carries no independent
    multiplicative bare coupling, and standard notation rewrites this
    as g_bare = 1.
 ```
 
 This is the narrowed *trace-form rigidity over the supplied embedding
-plus the admitted holonomy form*. The runner
-`scripts/frontier_g_bare_rigidity_theorem.py` is unchanged; its
+plus the finite-link holonomy form*. The runner
+`scripts/frontier_g_bare_rigidity_theorem.py` now includes the finite-link
+bridge check; its
 trace-form rigidity, basis-rotation invariance, and scalar-dilation
 change checks carry the load-bearing class-A algebra of clauses 1–4 and
-the conditional reading of clause 5.
+the finite-link reading of clause 5.
 
-### Admissions (out-of-scope under this narrow)
+### Historical admissions before the 2026-05-26 finite-link bridge
 
-Two upstream inputs are **explicitly admitted-and-not-derived** at
-header level on this row:
+Two upstream inputs were **explicitly admitted-and-not-derived** at header
+level by the 2026-05-24 repair. The first item is superseded by the
+2026-05-26 finite-link bridge for finite `SU(3)` holonomies; the second item
+remains a decoration cite.
 
-1. **Lattice holonomy form `(HF)`.** The identification of the lattice
-   holonomy with `U = exp(i A_op a) = exp(i A^a T_a a)` is admitted as
-   the upstream input `(HF)` of Theorem clause 5. This subsumes and
-   makes load-bearing-explicit the 2026-05-19 repair item 1: no
-   retained framework theorem on this branch derives the lattice
-   holonomy from the framework's discrete gauge primitives (A1–A2 +
-   retained). The form is imported from the standard lattice-gauge
-   dictionary and held as a premise of clause 5, not as a derived
-   conclusion. The cite-or-derive follow-up queued in the 2026-05-19
-   repair item 1 remains the path to a future broader closure.
+1. **Lattice holonomy form `(HF)` (superseded for finite links on
+   2026-05-26).** The 2026-05-24 repair admitted the identification of the
+   lattice holonomy with `U = exp(i A_op a) = exp(i A^a T_a a)` as the
+   upstream input `(HF)` of Theorem clause 5. The 2026-05-26 repair now
+   derives this finite-link exponential form from the spectral theorem for
+   `SU(3)` matrices and the fixed canonical generator basis. A unique global
+   logarithm branch and continuum gauge-field limit remain outside this row.
 
 2. **SU3_CASIMIR decoration cite.** Unchanged from the 2026-05-19
    repair item 2: the Casimir value `sum_a T_a T_a = (4/3) I_3` in
@@ -438,12 +450,11 @@ header level on this row:
 
 The auditor's preferred first option ("add a retained derivation or
 retained cite for U=exp(i A_op a) from the framework's discrete gauge
-primitives") remains the path to lifting the `(HF)` admission. A
-retained narrow theorem on this branch deriving the lattice holonomy
-from the framework's discrete gauge primitives would, by purely
-algebraic substitution into Theorem clause 5 of this row, lift `(HF)`
-from admitted-premise to derived-input and convert the conditional
-`g_bare = 1` rewrite into an unconditional one.
+primitives") is addressed here at the finite-link algebra level by the
+2026-05-26 spectral-theorem bridge. Follow-up work, if needed, is narrower:
+selecting a global logarithm branch or proving a continuum gauge-field limit
+from the discrete surface. Those are not required for the finite-link
+normalization statement checked by this packet.
 
 ### What the narrow does **not** change
 
@@ -476,10 +487,68 @@ a derived conclusion.
 
 ---
 
+## 2026-05-26 finite-link holonomy bridge repair
+
+This block addresses the 2026-05-25 audit blocker without adding a new axiom.
+The blocker was the missing bridge from finite `SU(3)` lattice link holonomy
+to the operator expression `U = exp(i A_op a)` in the fixed canonical
+generator span. The repair is the finite-dimensional `SU(3)` spectral theorem:
+
+1. Any finite `SU(3)` link holonomy is unitary and diagonalizable:
+   `U = V diag(exp(i theta_j)) V^dagger`.
+2. Because `det(U)=1`, the principal phase sum is an integer multiple of
+   `2pi`. Integer `2pi` shifts can choose representatives with
+   `sum_j theta_j = 0`.
+3. Therefore `A_op = (1/a) V diag(theta_j) V^dagger` is Hermitian and
+   traceless, hence lies in `su(3)`.
+4. Since the canonical generators `{T_a}` form a trace-orthonormal basis of
+   this `su(3)` block, `A_op = sum_a A^a T_a` with
+   `A^a = 2 Tr(A_op T_a)`.
+5. Consequently `U = exp(i A_op a) = exp(i A^a T_a a)`.
+
+This is exactly the finite-link bridge needed by clause 5. It is not a
+continuum gauge-field construction and it does not select a unique global
+logarithm branch. The branch ambiguity is a discrete integer co-root shift;
+the runner checks that this is not a continuous scalar dilation of the
+canonical generator basis.
+
+### Runner changes
+
+The primary runner now imports the finite-link bridge helper and includes a
+dedicated section that:
+
+- constructs a finite `SU(3)` link from canonical generator coefficients;
+- reconstructs a traceless-Hermitian logarithm from the link;
+- expands the logarithm back in the fixed `{T_a}` basis;
+- verifies `U = exp(i A^a T_a a)`;
+- keeps the coordinate-redundancy check separate from the logarithm branch
+  check.
+
+The helper runner `scripts/frontier_su3_holonomy_exponential_bridge.py`
+also checks identity, generic diagonal, center-sector, and random exponential
+links, plus the discrete-branch/non-scalar distinction.
+
+### Current source-scope after this repair
+
+The source-side claim is now:
+
+> On the retained `SU(3)` finite-link surface and fixed Hilbert-space trace
+> form, every finite link holonomy has an `su(3)` logarithm in the canonical
+> generator span, and scalar dilation of the canonical generators is not an
+> allowed ambiguity of that fixed trace form. Thus `g_bare = 1` is the
+> finite-link canonical normalization convention, not a separate physical
+> parameter.
+
+Independent audit still owns the effective status. This source note does not
+manually retag itself or claim audit-ratified retention.
+
+---
+
 ## Commands
 
 ```bash
 python3 scripts/frontier_g_bare_rigidity_theorem.py
+python3 scripts/frontier_su3_holonomy_exponential_bridge.py
 ```
 
 Expected result: all checks pass.

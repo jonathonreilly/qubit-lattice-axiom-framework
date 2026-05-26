@@ -1,6 +1,6 @@
 # Three-Generation Observable: No-Proper-Quotient Narrow Theorem
 
-**Date:** 2026-05-02 (Tier B narrowing + C₃-carrier admission 2026-05-18; retained-carrier boundary repair 2026-05-24)
+**Date:** 2026-05-02 (Tier B narrowing + C₃-carrier admission 2026-05-18; retained-carrier boundary repair 2026-05-24; dependency-status refresh 2026-05-26)
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
 **Load-bearing context:** the finite-dimensional `C^3` `hw=1` operator
 surface supplied by the retained BZ-corner / taste-cube support packet. No
@@ -40,10 +40,10 @@ bounded audit candidate.
 
 | Authority | Audit-lane status | Role |
 |---|---|---|
-| [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact BZ-corner / taste-cube bridge |
-| [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact full-cube `S₃` carrier `ℂ⁸ ≅ 4 A₁ + 2 E` |
-| [`S3_MASS_MATRIX_NO_GO_NOTE.md`](S3_MASS_MATRIX_NO_GO_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact unbroken-`S₃` mass-class obstruction on `hw=1` |
-| [`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact retained-surface `hw=1` triplet structure |
+| [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) | `audited_clean` / `retained` | exact BZ-corner / taste-cube bridge |
+| [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) | `audited_clean` / `retained` | exact full-cube `S₃` carrier `ℂ⁸ ≅ 4 A₁ + 2 E` |
+| [`S3_MASS_MATRIX_NO_GO_NOTE.md`](S3_MASS_MATRIX_NO_GO_NOTE.md) | `audited_clean` / `retained_no_go` | exact unbroken-`S₃` mass-class obstruction on `hw=1` |
+| [`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) | `audited_clean` / `retained` | exact retained-surface `hw=1` triplet structure |
 
 All four cited authorities are graph-visible. The conditional dep
 `generation_axiom_boundary_note` is **not** cited here — that is the
@@ -96,6 +96,27 @@ The bounded claim here is only:
 
 This is strictly a narrowing: it isolates the pure finite-dimensional
 linear-algebra statement and does not import a wider physical carrier claim.
+
+## Dependency-status refresh (2026-05-26)
+
+The prior conditional audit verdict named an unclosed carrier-identification
+wall in the one-hop support packet. On current `main`, the four declared
+one-hop authorities above are now all audit-ratified at retained-grade
+effective statuses (`retained` or `retained_no_go`) on their narrowed scopes,
+and this note still does **not** cite the staggered-Dirac realization gate or
+`generation_axiom_boundary_note` as load-bearing dependencies.
+
+This refresh does not manually change the ledger verdict. It only makes the
+source packet and runner reflect the current dependency state so the
+independent audit lane can re-audit the row on its actual narrowed surface:
+
+```text
+retained-grade deps + exact D_3/C_3 matrix algebra
+=> re-auditable no-proper-quotient bounded theorem candidate
+```
+
+Residual boundary unchanged: any physical-species interpretation remains out
+of scope and must be supplied, if at all, by separate downstream rows.
 
 ## Finite-group arithmetic derivation (C₃ subgroup structure, 2026-05-18)
 

@@ -1,152 +1,126 @@
-# DM Leptogenesis PMNS Analytic Stationary Classification Theorem
+# DM Leptogenesis PMNS Algebraic Stationary Diagnostic
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-16  
-**Script:** `scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py`  
-**Framework convention:** “axiom” means only `Cl(3)` on `Z^3`
+**Status:** bounded - sampled algebraic/KKT diagnostic only
+**Status authority:** independent audit lane only
+**Date:** 2026-04-16 (scope narrowed 2026-05-26)
+**Script:** `scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py`
+**Framework convention:** "axiom" means only `Cl(3)` on `Z^3`
+
+## Scope narrowing (2026-05-26)
+
+The prior audit row was `audited_conditional` because the note claimed more
+than the restricted packet closed: a fixed `N_e` reduced surface, a
+seed-relative effective-action selector, favored-column closure, and a
+branch-count/uniqueness statement were treated as theorem-grade inputs even
+though they entered through helper runners and unaudited support notes.
+
+This revision takes the bounded repair path.  The binding claim is now only:
+
+1. the charged Hermitian block used by the imported fixed `N_e` chart has the
+   displayed closed form;
+2. the `delta -> -delta` conjugation symmetry makes the sampled quantities
+   even on the tested real slice;
+3. the two sampled stationary representatives reported by the audit-scoped
+   multistart diagnostic satisfy the runner's KKT residual check; and
+4. those two sampled representatives have the recorded finite action gap.
+
+The note does **not** claim a certified-global branch enumeration, a unique
+physical selector, a derivation of the fixed `N_e` surface from the sole axiom,
+or a physical off-seed source law.
 
 ## Question
 
-Can the PMNS-assisted selector problem on the exact fixed native `N_e` seed
-surface be pushed beyond a branch-scan description into a genuinely analytic
-stationary classification?
-
-More precisely:
-
-- can the charged Hermitian block be written in closed form on the exact
-  reduced surface?
-- does the stationary problem admit a clean symmetry reduction?
-- can the existing exact stationary components then be classified on that
-  reduced real slice with an exact branch gap and a unique physical selector?
+What algebraic content remains audit-ready after removing the unsupported
+global-selector surface from the original stationary-classification note?
 
 ## Bottom line
 
-Yes, as far as the current exact branch honestly supports.
+The current packet supports a bounded diagnostic:
 
-The new theorem does three things:
+- the closed-form `H_e = Y Y^dagger` expression is exact for the imported chart;
+- `H_e(delta)` and `H_e(-delta)` are conjugate, so the sampled action and PMNS
+  packet checks are even under `delta -> -delta`;
+- the two sampled closure representatives from the multistart support runner
+  satisfy the KKT residual check used by the diagnostic; and
+- within that sampled pair, the lower-action representative closes the tested
+  favored column and is separated from the second representative by a finite
+  action gap.
 
-1. it writes the exact charged Hermitian block on the fixed native `N_e`
-   surface in closed form:
-
-   \[
-   H_e = Y Y^\dagger
-   \]
-
-   with
-
-   \[
-   Y = \begin{pmatrix}
-   x_1 & y_1 & 0 \\
-   0 & x_2 & y_2 \\
-   y_3 e^{i\delta} & 0 & x_3
-   \end{pmatrix},
-   \qquad
-   H_{13} = x_1 y_3 e^{-i\delta}.
-   \]
-
-2. it proves the selector problem is even under \(\delta \to -\delta\),
-   so the stationary classification reduces to the real slice on the physical
-   branch;
-
-3. it rewrites the selector as the exact KKT system for the seed-relative
-   effective action on the reduced surface and classifies the already-proved
-   stationary components there.
+This is useful support for the DM/PMNS lane, but it is not retained selector
+authority and not full-stack closure.
 
 ## Closed-form reduction
 
-The exact Hermitian block on the `N_e` chart is
+On the imported `N_e` chart,
 
-\[
-H_e =
-\begin{pmatrix}
-x_1^2+y_1^2 & x_2 y_1 & x_1 y_3 e^{-i\delta} \\
-x_2 y_1 & x_2^2+y_2^2 & x_3 y_2 \\
-x_1 y_3 e^{i\delta} & x_3 y_2 & x_3^2+y_3^2
-\end{pmatrix}.
-\]
+```text
+Y = [[x_1, y_1, 0],
+     [0, x_2, y_2],
+     [y_3 exp(i delta), 0, x_3]]
+```
 
-So \(H_e(\delta)\) and \(H_e(-\delta)\) are conjugate, which implies:
+so
 
-- the seed-relative effective action is even in \(\delta\)
-- the PMNS packet \(|U_e|^2{}^T\) is even in \(\delta\)
-- the selector problem can be classified on the real slice of the reduced
-  domain
+```text
+H_e = Y Y^dagger
 
-That is the main closed-form reduction.
+H_11 = x_1^2 + y_1^2
+H_22 = x_2^2 + y_2^2
+H_33 = x_3^2 + y_3^2
+H_12 = x_2 y_1
+H_23 = x_3 y_2
+H_13 = x_1 y_3 exp(-i delta)
+```
 
-## Reduced stationary system
+Thus `H_e(delta)` and `H_e(-delta)` are conjugate.  This is the exact algebraic
+parity content retained by this narrowed row.
 
-On the fixed native `N_e` seed surface, the selector is the KKT system for the
-exact seed-relative effective action subject to the exact closure constraint:
+## Sampled KKT Diagnostic
 
-\[
-\delta \bigl(S_{\rm rel}(H_e \| H_{\rm seed}) - \lambda C\bigr)=0,
-\qquad
-C = \eta_{i_*}/\eta_{\rm obs} - 1.
-\]
+The runner reuses the sampled branch representatives from the multistart
+support runner included in the restricted packet.  This use is scoped as a
+sampled multistart diagnostic rather than a global selector theorem.
 
-Because the action and the closure map are even under \(\delta\to-\delta\),
-the relevant physical classification lives on the real slice \(\delta=0\).
-That is the analytic reduction: one phase variable is removed exactly, leaving
-a real KKT problem on the exact reduced surface.
+For each sampled representative, the runner checks:
 
-## Branch classification
+- closure compatibility on the imported fixed chart;
+- `delta -> -delta` parity of the sampled action and closure value; and
+- numerical smallness of the KKT residual for the imported seed-relative action
+  objective and closure constraint.
 
-The existing exact reduced-surface theorem already proves that the admissible
-PMNS-assisted `N_e` closure domain is exactly the fixed native seed surface.
-On that reduced domain, the broad multistart stationary classification used in
-this theorem resolves:
+These checks are residual diagnostics on the sampled representatives.  They do
+not prove that no other stationary component exists.
 
-- one low-action branch
-- one higher-action branch
-- a finite action gap between them
-- the low-action branch gives exact closure on the favored column
+## Sampled Branch Pair
 
-So the selector is now classified analytically as:
+The diagnostic records the following sampled pair:
 
-> choose the unique lowest-action stationary branch of the exact seed-relative
-> effective action on the reduced `N_e` surface.
-
-The explicit branch representatives on the current exact branch are:
-
-- low-action branch:
+- lower-action sampled representative:
   - `x = (0.471675, 0.553810, 0.664515)`
   - `y = (0.208063, 0.464382, 0.247555)`
   - `delta ~ 0`
-  - `eta / eta_obs = 1`
-- high-action branch:
+  - `eta / eta_obs = 1` on the tested favored column
+- second sampled representative:
   - `x = (0.790189, 0.406763, 0.493049)`
   - `y = (0.586185, 0.167566, 0.166248)`
   - `delta ~ 0`
   - `eta / eta_obs = (1.0, 0.94763529, 0.95876001)`
 
-The action gap in this broad multistart pair remains finite:
+The sampled-pair action gap remains finite:
 
-- `ΔS > 0.5`
+```text
+Delta S = 0.869750837948
+```
 
-Later certified-global work on the same reduced surface sharpens the total
-stationary branch count to `3`, while preserving the same physical low-action
-selector branch as the unique global minimum. That stronger theorem does not
-change the analytic reductions proved here; it only strengthens the global
-counting/minimality statement.
+## Out Of Scope
 
-## What this theorem does and does not claim
+This row explicitly does not claim:
 
-This theorem does claim:
-
-- a closed-form reduction of the selector problem to the exact real KKT
-  system on the reduced surface
-- exact analytic parity reduction in \(\delta\)
-- exact broad multistart classification of the dominant stationary components
-  on the reduced surface
-
-This theorem does **not** separately claim:
-
-- a symbolic elimination of every stationary point in the abstract over every
-  conceivable disconnected component outside the reduced surface
-
-That stronger ask would be a different theorem. For the current PMNS-assisted
-`N_e` closure claim, it is not the live hole.
+- global reduced-surface branch enumeration;
+- unique global minimum or unique physical selector status;
+- derivation of the fixed `N_e` surface from `Cl(3)` on `Z^3`;
+- derivation of the physical off-seed source law; or
+- promotion of any unaudited PMNS/relative-action helper row.
 
 ## Command
 

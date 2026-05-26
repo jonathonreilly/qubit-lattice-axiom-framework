@@ -1,6 +1,7 @@
 # Standard-Model Relativistic Degrees-of-Freedom Count — Named Non-Derivation Import
 
-**Date:** 2026-05-17
+**Date:** 2026-05-17 (2026-05-26: self-contained bounded-import
+bookkeeping runner added for audit requeue)
 **Claim type:** bounded_theorem
 **Status:** bounded named-import wrapper. The Standard-Model relativistic
 degree-of-freedom count `g_* = 28 + (7/8) * 90 = 106.75` (28 bosonic, 90
@@ -8,7 +9,31 @@ fermionic at electroweak-scale relativistic temperatures) is a textbook
 import from standard SM phenomenology; this note records it as a named
 non-derivation import so downstream rows that consume `g_*` can register
 this wrapper as their one-hop dependency.
+**Runner:** `scripts/frontier_sm_relativistic_dof_count_import.py`
 **Status authority:** independent audit lane only.
+
+## 2026-05-26 bounded-import repair
+
+The audit blocker was not the arithmetic `28 + (7/8) * 90 = 106.75`;
+it was that the one-hop packet did not include a self-contained authority for
+the Standard-Model particle-content bookkeeping that produces the numbers
+`28` and `90`.
+
+This repair keeps the same honest status: **named non-derivation import**.
+It does not derive the Standard Model spectrum from `Cl(3)` on `Z^3`.
+It does add a local runner that verifies the bounded import table below:
+
+- bosons: `8` gluons with two transverse polarizations, `3` weak gauge
+  bosons with two transverse polarizations, `1` hypercharge gauge boson with
+  two transverse polarizations, and `4` real Higgs-doublet components;
+- fermions: `6` quark flavors with `3` colors and `4` Dirac particle /
+  antiparticle spin states, `3` charged leptons with `4` Dirac particle /
+  antiparticle spin states, and `3` active neutrinos with `2` chiral particle /
+  antiparticle states.
+
+The runner checks only this bounded SM-bookkeeping import and the retained
+`7/8` fermion/boson weighting. It is not a framework derivation of the SM
+particle spectrum.
 
 ## Purpose
 
@@ -30,8 +55,10 @@ g_*(T) = g_bosonic + (7/8) * g_fermionic
 
 with bosonic count, in unbroken electroweak bookkeeping,
 ```
-g_bosonic = 8 gluons(16) + SU(2)_L gauge bosons(6)
-           + U(1)_Y gauge boson(2) + complex Higgs doublet(4)
+g_bosonic = 8 gluons * 2 transverse polarizations
+           + 3 SU(2)_L gauge bosons * 2 transverse polarizations
+           + 1 U(1)_Y gauge boson * 2 transverse polarizations
+           + 4 real Higgs-doublet components
            = 28.
 ```
 
@@ -41,7 +68,9 @@ count but is only a bookkeeping equivalence at these temperatures.
 The fermionic count is (3 generations, 2 helicities, particle +
 antiparticle):
 ```
-g_fermionic = 6 quarks × 12 + 3 charged leptons × 4 + 3 neutrinos × 2
+g_fermionic = 6 quark flavors * 3 colors * 4 Dirac states
+            + 3 charged leptons * 4 Dirac states
+            + 3 active neutrinos * 2 chiral particle/antiparticle states
             = 72 + 12 + 6
             = 90.
 ```
@@ -57,6 +86,8 @@ as η(4)/ζ(4)).
 - This count is NOT derived from `Cl(3)` on `Z^3` axioms.
 - The 28 bosonic + 90 fermionic breakdown rests on the SM particle
   content as separately admitted.
+- The runner verifies the bounded bookkeeping table and arithmetic, not the
+  physical correctness of the imported Standard Model spectrum.
 - The named non-derivation import is the bounded scope.
 
 ## Standard textbook references

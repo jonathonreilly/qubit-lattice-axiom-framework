@@ -24486,10 +24486,6 @@
     },
     {
       "from": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
-      "to": "su3_tensor_network_engine_roadmap_note_2026-05-03"
-    },
-    {
-      "from": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
       "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
     },
     {
@@ -77953,13 +77949,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "su3_fusion_engine_pr1_theorem_note_2026-05-03",
-        "su3_tensor_network_engine_roadmap_note_2026-05-03",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "12eddda0eff83a56174db5586a583737ffed6db2a6514b37867ecfe28c759d8d",
+      "note_hash": "c5474c07b527a97bce10674c2b793810e27eb3d492e57b3813c89aa77a005e5a",
       "path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
       "title": "SU(3) Tensor-Network Engine + L_s=2 Cube Perron Solve (Combined PR)"
@@ -85459,8 +85454,8 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9775,
-    "leaf_count": 782,
+    "edge_count": 9774,
+    "leaf_count": 783,
     "node_count": 2536,
     "root_count": 836,
     "runners_with_path": 2097

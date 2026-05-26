@@ -1,8 +1,9 @@
 """SU(3) tensor-network engine + L_s=2 PBC cube Perron solve (narrowed).
 
-This is the **combined deliverable** of the planned 5-PR engine roadmap
-(see docs/SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md), unified
-into one PR per user direction.
+This is the narrowed L_s=2 PBC cube structural runner.  Earlier planning
+called this part of a multi-PR engine roadmap, but the roadmap is
+historical context only and is not a load-bearing authority for this
+bounded theorem.
 
 It targets explicit computation of rho_(p,q)(6) for the unmarked spatial
 Wilson environment on the V-invariant L_s=2 PBC spatial cube, then plugs
@@ -769,7 +770,7 @@ def driver() -> int:
     print("  (lambda = (n,n) with n >= 1), this trace is the contraction of")
     print("  D^lambda representation matrices on the cube tensor network and")
     print("  REQUIRES the SU(3) Wigner intertwiner machinery (originally")
-    print("  PR 2 of the 5-PR roadmap). Without it, the (d_lambda c_lambda)^12")
+    print("  a separate future intertwiner-trace computation). Without it, the (d_lambda c_lambda)^12")
     print("  factor over-counts massively (it ignores the (1/d_lambda) factors")
     print("  from each link integration plus the actual intertwiner contractions).")
     print()

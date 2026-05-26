@@ -1,0 +1,11 @@
+[PASS] CN dependency is retained (cl3_color_automorphism_theorem: retained)
+[PASS] local Wilson surface beta = 2 N_c = 6 for SU(3) (explicit bounded input) (beta = 6)
+[PASS] given CN + scoped WM + local beta = 6, g_bare^2 = 1 (exact) (g_bare^2 = 2 N_c / beta = 1)
+[PASS] alternative g^2 = 1/2 requires beta = 12 != 6 (changes the declared local Wilson beta = 6 surface)
+[PASS] alternative g^2 = 2 requires beta = 3 != 6 (changes the declared local Wilson beta = 6 surface)
+[PASS] alternative g^2 = 4 requires beta = 3/2 != 6 (changes the declared local Wilson beta = 6 surface)
+[PASS] target row declares CN as its retained direct dependency (deps = ['cl3_color_automorphism_theorem'])
+[PASS] WM is scoped text, not a load-bearing dependency edge (deps = ['cl3_color_automorphism_theorem'])
+INFO target audit routing: audit_status = unaudited; effective_status = unaudited
+SUMMARY: PASS = 8, FAIL = 0
+Bounded-surface check passed; no retained status is asserted by this runner.

@@ -8,11 +8,12 @@ frontier_g_bare_derivation.py runner used by retained upstream rows. It checks
 only the repaired constraint-vs-convention surface:
 
   CN: retained canonical trace normalization.
-  WM: retained Wilson matching beta = 2 N_c / g_bare^2.
+  WM: scoped Wilson matching relation beta = 2 N_c / g_bare^2.
   B6: explicit local Wilson surface N_c = 3, beta = 2 N_c = 6.
 
 It does not derive beta = 6 from the one-qubit operator algebra plus Z^3
-spatial substrate and does not apply an audit verdict.
+spatial substrate, does not prove the Wilson matching relation from retained
+dependencies, and does not apply an audit verdict.
 """
 
 from __future__ import annotations
@@ -57,7 +58,6 @@ def main() -> int:
     rows = ledger_rows()
 
     cl3_id = "cl3_color_automorphism_theorem"
-    wm_id = "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     target_id = "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
 
     check(
@@ -65,12 +65,6 @@ def main() -> int:
         rows.get(cl3_id, {}).get("effective_status") == "retained",
         f"{cl3_id}: {rows.get(cl3_id, {}).get('effective_status', 'missing')}",
     )
-    check(
-        "WM dependency is retained",
-        rows.get(wm_id, {}).get("effective_status") == "retained",
-        f"{wm_id}: {rows.get(wm_id, {}).get('effective_status', 'missing')}",
-    )
-
     N_c = Fraction(3)
     beta_local = Fraction(2) * N_c
     check(
@@ -81,7 +75,7 @@ def main() -> int:
 
     g_bare_sq = Fraction(2) * N_c / beta_local
     check(
-        "given CN + WM + local beta = 6, g_bare^2 = 1 forced (exact)",
+        "given CN + scoped WM + local beta = 6, g_bare^2 = 1 (exact)",
         g_bare_sq == Fraction(1),
         f"g_bare^2 = 2 N_c / beta = {g_bare_sq}",
     )
@@ -97,8 +91,13 @@ def main() -> int:
     target = rows.get(target_id, {})
     deps = set(target.get("deps", []))
     check(
-        "target row declares CN and WM as direct dependencies",
-        {cl3_id, wm_id}.issubset(deps),
+        "target row declares CN as its retained direct dependency",
+        cl3_id in deps,
+        f"deps = {sorted(deps)}",
+    )
+    check(
+        "WM is scoped text, not a load-bearing dependency edge",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03" not in deps,
         f"deps = {sorted(deps)}",
     )
     print(

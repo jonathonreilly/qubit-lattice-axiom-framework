@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -926,7 +926,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8070,19 +8069,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained h=0.5, W=8, segment L=6 3D ordered-lattice family, varying topN shows compact sources remain self-similar but weak while broader sources carry stronger two-stage response while remaining stable.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, source supports, weak surrogate field, two sourced-response stages, and printed metrics directly from the included framework code. The conclusion is bounded to the sampled retained family and does not require a persistent-mass or geometry-generic bridge.
 - **rationale:** The runner source is present and its load-bearing path computes the frontier metrics rather than printing hard-coded expected values. The helper code supplies the lattice propagation, detector indexing, and point-source construction used by the primary runner, with no imported external comparator or tuned empirical constant. All one-hop cited authorities are marked retained_bounded, and the audited conclusion stays within the bounded mesoscopic-source scope rather than claiming persistent mass.
-- **auditor confidence:** high
-
-### `mesoscopic_surrogate_localization_sweep_note`
-
-- **Note:** [`MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The audited packet supports the reproduced localization-family sweep table for the listed retained 3D ordered-lattice valley-linear setup, including the reported score, width-ratio, support, and capture rows.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T000508Z-47ae3b1a-mesoscopic_surrogate_loc-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The sweep found that point-like localized cases can score best but have very low capture, while meaningfully localized rows do not beat the broad top-N control in the score/capture tradeoff.  _(class `C`)_
-- **chain closes:** False — The runner computes the displayed sweep rows from the included lattice/proagation helpers, but the broader least-bad mesoscopic-source conclusion does not close without an explicit dominance criterion over score, width ratio, support, and capture. The packet also imports the retained 3D source-control setup without an upstream retained authority in the restricted inputs.
-- **rationale:** The primary runner is not just printing constants: it constructs the lattice, propagates profiles, compresses by top-N/square/Gaussian families, and computes the table values through the included helper code. That is adequate support for the narrow table-level observation reproduced in the note. However, the interpretive claim that broad top-N is the least-bad mesoscopic source requires a stated dominance rule and authority for the imported retained 3D ordered-lattice source-control setup, neither of which is present in this restricted packet.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_multistage_note`

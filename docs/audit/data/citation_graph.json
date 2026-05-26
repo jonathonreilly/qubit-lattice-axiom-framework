@@ -64297,7 +64297,7 @@
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "1fb1770440de2d710622c95a21a63272d32d8ed79c425c17dbf7e27c58aa7a27",
+      "note_hash": "85a794f976eff357486d3372f21dd2c307fb95480c2cccaecbc1efaa9c395b78",
       "path": "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_localization_family_sweep.py",
       "title": "Mesoscopic Surrogate Localization Sweep"

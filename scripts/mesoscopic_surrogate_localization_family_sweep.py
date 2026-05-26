@@ -9,8 +9,9 @@ Families compared:
 2. symmetric square window around the peak bin
 3. compact Gaussian ansatz centered at the peak bin
 
-The setup is intentionally the same retained 3D ordered-lattice family as the
-other mesoscopic surrogate controls.
+The setup is intentionally the same fixed 3D ordered-lattice family used by
+the other mesoscopic surrogate controls. This runner does not certify that
+family as a retained source-control authority.
 """
 
 from __future__ import annotations
@@ -42,6 +43,13 @@ MAX_SHIFT = 8
 TOPN_SWEEP = (9, 25, 49, 81, 121, 144, 169, 196, 225)
 SQUARE_SWEEP = tuple(range(0, 9))
 GAUSSIAN_SWEEP = (0.5, 1.0, 1.5, 2.0, 2.5, 3.0)
+
+# Branch-local benchmark, not a new axiom: it makes the note's
+# "mesoscopic, not point-like" reading executable for this finite sweep.
+MIN_MESOSCOPIC_SUPPORT = 25
+MIN_CAPTURE = 0.95
+MIN_SCORE = 0.999
+WIDTH_RATIO_TOL = 0.05
 
 
 def z_profile(amps: np.ndarray, det: list[int], pos: np.ndarray, h: float) -> dict[int, float]:
@@ -236,6 +244,16 @@ def evaluate_family(
     }
 
 
+def passes_mesoscopic_benchmark(row: dict[str, float | int | str]) -> bool:
+    return (
+        int(row["support2"]) >= MIN_MESOSCOPIC_SUPPORT
+        and float(row["capture1"]) >= MIN_CAPTURE
+        and float(row["capture2"]) >= MIN_CAPTURE
+        and float(row["score"]) >= MIN_SCORE
+        and abs(float(row["width_ratio"]) - 1.0) <= WIDTH_RATIO_TOL
+    )
+
+
 def main() -> None:
     lat = Lattice3D(SEGMENT_L, PHYS_W, H)
     det = detector_indices(lat)
@@ -255,7 +273,7 @@ def main() -> None:
 
     print("=" * 96)
     print("MESOSCOPIC SURROGATE LOCALIZATION FAMILY SWEEP")
-    print("  Retained 3D ordered-lattice valley-linear family")
+    print("  Fixed 3D ordered-lattice valley-linear family")
     print(f"  h={H}, W={PHYS_W}, segment_L={SEGMENT_L}, base_topN={TOPN_BASE}, source_z={SOURCE_Z}, strength={SOURCE_STRENGTH:g}")
     print("  Goal: can a more localized source family preserve two-stage sourced-response")
     print("        stability as well as, or better than, the broad top-N control?")
@@ -282,19 +300,53 @@ def main() -> None:
         )
 
     best = min(rows, key=rank_key)
+    accepted = [row for row in rows if passes_mesoscopic_benchmark(row)]
+    non_topn_accepted = [row for row in accepted if row["family"] != "topN"]
+    pointlike_high_score = [
+        row
+        for row in rows
+        if row["family"] != "topN"
+        and float(row["score"]) >= MIN_SCORE
+        and (
+            int(row["support2"]) < MIN_MESOSCOPIC_SUPPORT
+            or float(row["capture1"]) < MIN_CAPTURE
+            or float(row["capture2"]) < MIN_CAPTURE
+        )
+    ]
     print()
-    print("BEST ROW")
+    print("RAW BEST SCORE/WIDTH ROW")
     print(
         f"  {best['family']} {best['param']} with support2={best['support2']}, "
         f"score={float(best['score']):.4f}, width_ratio={float(best['width_ratio']):.4f}, "
         f"capture2={float(best['capture2']):.3f}"
     )
+    print()
+    print("MESOSCOPIC BENCHMARK RULE")
+    print(
+        f"  support2 >= {MIN_MESOSCOPIC_SUPPORT}, capture1/capture2 >= {MIN_CAPTURE:.2f}, "
+        f"score >= {MIN_SCORE:.3f}, |width_ratio - 1| <= {WIDTH_RATIO_TOL:.2f}"
+    )
+    print("BENCHMARK ACCEPTED ROWS")
+    for row in accepted:
+        print(
+            f"  PASS: {row['family']} {row['param']} support2={row['support2']} "
+            f"capture1={float(row['capture1']):.3f} capture2={float(row['capture2']):.3f} "
+            f"score={float(row['score']):.4f} width_ratio={float(row['width_ratio']):.4f}"
+        )
+
+    assert accepted, "at least one row must satisfy the explicit mesoscopic benchmark"
+    print("PASS: at least one finite-sweep row satisfies the explicit mesoscopic benchmark")
+    assert not non_topn_accepted, "no square/Gaussian row should satisfy the benchmark in this sweep"
+    print("PASS: no square/Gaussian row satisfies the mesoscopic benchmark")
+    assert pointlike_high_score, "high-score localized rows should fail by capture/support"
+    print("PASS: high-score localized rows fail by capture/support rather than score")
+    assert any(row["family"] == "topN" and int(row["support2"]) >= 25 for row in accepted)
+    print("PASS: the benchmark-supported rows are broad top-N controls in this finite sweep")
 
     print("\nSAFE READ")
-    print("  - The more localized families can be stable, but the best score/width tradeoff")
-    print("    still favors a fairly broad surrogate support.")
-    print("  - If a narrower family wins on support, it should show up above with only a")
-    print("    modest score penalty; otherwise, top-N remains the least-bad mesoscopic control.")
+    print("  - The raw score/width winner is point-like and is not a mesoscopic source.")
+    print("  - Under the explicit finite-sweep benchmark above, only broad top-N rows pass.")
+    print("  - This is a bounded benchmark result, not a retained source-control theorem.")
 
 
 if __name__ == "__main__":

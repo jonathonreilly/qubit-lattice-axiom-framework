@@ -14473,7 +14473,7 @@
       "runner": "scripts/mesoscopic_surrogate_localization_frontier.py"
     },
     "mesoscopic_surrogate_localization_sweep_note": {
-      "assert_count": 0,
+      "assert_count": 4,
       "counts": {
         "A": 0,
         "B": 0,
@@ -52198,7 +52198,7 @@
       "exists": true
     },
     "scripts/mesoscopic_surrogate_localization_family_sweep.py": {
-      "assert_count": 0,
+      "assert_count": 4,
       "claims": [
         "mesoscopic_surrogate_localization_sweep_note"
       ],

@@ -22,9 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 165 |
 | **retained_bounded** | 480 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 16 |
+| open_gate | 17 |
 | unaudited | 1260 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 768 |
+| `audited_clean` | 769 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `charged_lepton_koide_note_2026-04-18` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -192,6 +189,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `charged_lepton_radiative_tau_selector_firewall_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
@@ -2061,6 +2059,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using Plancherel and v_1+v_2+v_3=sqrt(3)a_0, Q(v)=(a_0^2+2|z|^2)/(3a_0^2), hence Q(v)=2/3 iff a_0^2=2|z|^2.  _(class `A`)_
 - **chain closes:** True — The packet supplies the definitions of a_0, z, and Q(v), and the equivalence follows by unitary Fourier Parseval plus one substitution. No physical charged-lepton bridge, observed mass input, or retained-framework dependency is within the scoped claim.
 - **rationale:** The narrow theorem closes as a pure algebraic identity on the stated positive-vector domain. The runner checks the load-bearing Parseval identity, denominator relation, closed form for Q, both implications of P1, and the geometric corollary symbolically, with no external comparator or hidden physical import needed for the scoped statement.
+- **auditor confidence:** high
+
+### `charged_lepton_koide_note_2026-04-18`
+
+- **Note:** [`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`](../../docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite open-gate map for charged-lepton Koide: the formal identities Q = 1/3 + c^2/6, Q = 2/3 iff c^2 = 2 and r^2/a^2 = 1/2, and delta = Q/3 gives delta = 2/9, while physical Koide surface selection and Brannen phase identification remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-charged-lepton-koide-open-gate-pass2-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The charged-lepton package is not closed on the current surface because two bridges remain open: Koide surface selection and Brannen phase identification; the formal identities make the missing bridges small and checkable but do not supply those bridges.  _(class `A`)_
+- **chain closes:** True — The chain closes only for the scoped open-gate certificate: the finite algebra is explicit and the note states that the physical bridge theorems are not supplied. It does not close, or claim to close, a physical Koide derivation, charged-lepton mass theorem, scale theorem, or Yukawa theorem.
+- **rationale:** The source note is correctly scoped as an open_gate row rather than a positive charged-lepton theorem. The runner completes with PASS=21 FAIL=0 and checks the boundary language plus the finite algebraic identities. The clean verdict certifies only this open-gate map and its algebra; it does not ratify a physical derivation of Koide Q = 2/3, delta = 2/9, charged-lepton masses, or the overall charged-lepton scale.
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27`

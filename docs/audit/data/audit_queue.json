@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 241,
+    "critical": 240,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -52,28 +52,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "charged_lepton_koide_note_2026-04-18",
-      "claim_scope": "Finite open-gate map for the two named charged-lepton Koide bridges: the formal Q-target algebra, the conditional delta=Q/3 algebra, and the boundary that physical Q=2/3 and delta=2/9 are not derived.",
-      "claim_type": "open_gate",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 14,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.15,
-      "note_path": "docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py",
-      "transitive_descendants": 283
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -37851,6 +37829,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1261
+  "ready_count": 70,
+  "total_pending": 1260
 }

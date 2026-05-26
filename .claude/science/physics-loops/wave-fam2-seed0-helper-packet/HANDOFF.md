@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1933
 
 ## What Changed
 
@@ -19,4 +19,3 @@ re-audit without relying on a truncated helper excerpt.
 - `python3 -m py_compile scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py`
 - `python3 scripts/precompute_audit_runners.py --runners scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py --allow-non-main --check-only`
 - `git diff --check`
-

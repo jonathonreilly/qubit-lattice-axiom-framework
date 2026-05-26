@@ -199691,24 +199691,34 @@
       "verdict_rationale": null
     },
     "plaquette_self_consistency_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T19:11:00.203958+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 30.551,
+        "runner_hash": "37344fb91b19020e08adbc1319a6f69aa451e1d9f1fc832dc9f16230677fca7e",
+        "transitive_descendants": 749
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-plaquette-self-consistency-second-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped finite theorem closes from compact finite configuration space, finite continuous Wilson action, positive finite partition function, and bounded P_bar. The canonical 0.5934 number is explicitly outside the claim as an admitted comparison/reuse value, so no physical plaquette certificate is being certified.",
       "claim_id": "plaquette_self_consistency_note",
-      "claim_scope": "Bounded finite-volume diagnostic only: for a selected finite periodic L^4 SU(3) Wilson surface, P_bar is a bounded observable with a unique finite expectation, and the runner checks finite diagnostics without deriving 0.5934.",
+      "claim_scope": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T19:06:22.444090+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T19:11:00.203958+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -199723,25 +199733,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T19:11:00.203768+00:00",
+          "auditor": "codex-gpt-5.5-fresh-plaquette-self-consistency-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 42,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 30.551,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Then the finite expectation <P>_L(beta) = Z_L(beta)^(-1) integral P_bar(U) exp(-S_W[U; beta]) dU is a unique mathematical number for the selected finite surface.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d91882625a2cc37c1c5c6dad80c13f62d90d1d9bfb6f6ebbc91ea532ec01b73c",
       "note_path": "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "No-go discipline gate applied to the boundary language: N1-N8 do not expose a shipped no-route/no-go claim, because the named items are scope exclusions and alternative repair paths rather than asserted impossibility walls. Re-audit if a future source edit promotes the admitted 0.5934 comparison to a same-surface MC certificate, physical infinite-volume certificate, or analytic beta=6 closure.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -200096,18 +200117,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 21,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 24
       },
       "runner_path": "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py",
       "title": "Plaquette Self-Consistency Finite MC Diagnostic",
       "transitive_descendants": 749,
-      "verdict_rationale": null
+      "verdict_rationale": "With the claim boundary enforced, the note is not deriving or certifying 0.5934; that value is explicitly an admitted comparison/reuse number and is outside the audited claim. The bounded finite result follows from the selected compact SU(3) finite lattice surface and the defined Wilson observable/measure, without hidden physical readout or tuned comparator matching. The runner supports implementation and boundary diagnostics only, with no D-class physical comparator and no same-surface MC certificate for the canonical value."
     },
     "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09": {
       "audit_date": null,

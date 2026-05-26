@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 163 |
-| **retained_bounded** | 471 |
+| **retained_bounded** | 472 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1278 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 756 |
+| `audited_clean` | 757 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -111,7 +109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 32.35 | `audited_clean` | **retained** |
 | 15 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
 | 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 563 | 31.14 | `unaudited` | unaudited |
-| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 30.55 | `audit_in_progress` | audit_in_progress |
+| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 30.55 | `audited_clean` | **retained_bounded** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `unaudited` | unaudited |
 | 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 908 | 30.33 | `audited_renaming` | ~~audited_renaming~~ |
 | 20 | `cpt_exact_note` | positive_theorem | critical | 901 | 29.82 | `audited_clean` | **retained** |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `plaquette_self_consistency_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -624,6 +621,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_parent_source_hidden_character_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8952,6 +8950,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If a real polynomial p(t) has degree d >= 1, then p(t)/t^d tends to its nonzero leading coefficient, so |p(t)| diverges as t -> +infinity; hence finite limit or boundedness on [0,+infinity) forces p constant.  _(class `A`)_
 - **chain closes:** True — The proof is elementary polynomial algebra and the runner verifies the same leading-term, finite-limit, endpoint-obstruction, boundedness, and constant negative-control checks by exact SymPy algebra. The source explicitly excludes the parent Wilson/plaquette endpoint and hierarchy claims, so no external physical bridge is needed.
 - **rationale:** The audited claim is a standalone algebra theorem, not the parent plaquette obstruction. The note proves the leading-term asymptotic directly and derives the finite-limit, two-endpoint, and boundedness corollaries without importing any physical observable or comparator. The runner exits with PASS=52 FAIL=0 and checks the proof surface through exact symbolic limits, degree/leading-coefficient checks, endpoint obstruction examples, and constant negative controls. Residual risk is only misuse of this algebra fact by downstream physical notes, which is outside this claim scope.
+- **auditor confidence:** high
+
+### `plaquette_self_consistency_note`
+
+- **Note:** [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](../../docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-plaquette-self-consistency-second-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Then the finite expectation <P>_L(beta) = Z_L(beta)^(-1) integral P_bar(U) exp(-S_W[U; beta]) dU is a unique mathematical number for the selected finite surface.  _(class `A`)_
+- **chain closes:** True — The scoped finite theorem closes from compact finite configuration space, finite continuous Wilson action, positive finite partition function, and bounded P_bar. The canonical 0.5934 number is explicitly outside the claim as an admitted comparison/reuse value, so no physical plaquette certificate is being certified.
+- **rationale:** With the claim boundary enforced, the note is not deriving or certifying 0.5934; that value is explicitly an admitted comparison/reuse number and is outside the audited claim. The bounded finite result follows from the selected compact SU(3) finite lattice surface and the defined Wilson observable/measure, without hidden physical readout or tuned comparator matching. The runner supports implementation and boundary diagnostics only, with no D-class physical comparator and no same-surface MC certificate for the canonical value.
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06`

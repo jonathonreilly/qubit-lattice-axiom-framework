@@ -3,6 +3,8 @@
 This branch repairs the critical reflection-positivity row by narrowing its
 source theorem to the staggered-only action surface.
 
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1918
+
 Key outcome:
 
 - `axiom_first_reflection_positivity_theorem_note_2026-04-29`

@@ -1,0 +1,25 @@
+loop: wave-fam1-seed0-helper-packet
+date: 2026-05-26
+target_claim_id: wave_direct_dm_h025_fam1_seed0_control_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: self-contained runner packet repair
+files_touched:
+  - docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md
+  - scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py
+  - logs/runner-cache/wave_direct_dm_h025_fam1_seed0_control_batch.txt
+open_imports: []
+out_of_scope:
+  - Fam2 seed-0 closure
+  - seed-0 cross-family synthesis
+  - full H=0.25 portability law
+  - Fam1 seed-1 control ladder
+pr_status: pending
+next_exact_action: open review PR, verify checks, then continue campaign with the next audited-conditional row
+stop_condition: PR opened and verified, then continue campaign

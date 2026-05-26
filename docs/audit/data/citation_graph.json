@@ -81078,12 +81078,8 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_h025_control_batch.py",
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "note_hash": "5d0dd5398a9d9a15d1258c509230edfd71fe1ed24901c83ad9b7b13007f7c100",
+      "helper_runner_paths": [],
+      "note_hash": "ffdd7f892c26f05b0fb0a410e447ee52e4523aeb89daaa73f028cee52261cb69",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam1 Seed0 Control Note"

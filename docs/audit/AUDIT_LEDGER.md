@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -962,7 +962,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `wave_direct_dm_h025_fam1_seed0_control_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13445,19 +13444,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The exact scoped runner invocation constructs the three retained families, two H values, and matched early/late schedules, then reproduces the six quoted R_hist and delta_hist rows. The chain closes only for the explicitly one-seed, one-strength scout boundary.
 - **rationale:** The exact all-family scout command reproduces the frozen result table: every family/H row has negative R_hist and a material magnitude in the stated -37.73% to -44.29% band. The note explicitly rejects portability, multi-seed, full control-stack, and continuum-stability interpretations, so the retained claim is only the bounded scout table. Residual risk is limited to future runner drift or downstream citations treating this scout as the full portability batch.
 - **auditor confidence:** high
-
-### `wave_direct_dm_h025_fam1_seed0_control_note`
-
-- **Note:** [`WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Fam1 seed 0 H=0.25 direct-dM weak-field control ladder, plus the stated seed-0 cross-family closure against an existing Fam2 seed-0 ladder.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T193559Z-4128608d-wave_direct_dm_h025_fam1-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** `Fam1`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -20%`, together with the existing `Fam2`, seed `0` control ladder closing the seed-`0` cross-family surface.  _(class `C`)_
-- **chain closes:** False — The provided runner output supports the Fam1 seed-0 ladder numerics, but the packet does not fully close the stated claim. The helper source for `scripts/wave_retardation_continuum_limit.py` is truncated before load-bearing beam/readout functions can be inspected, and the asserted existing Fam2 seed-0 ladder is not supplied as a cited authority.
-- **rationale:** The primary wrapper and batch source visibly call a framework-style computation rather than printing the table directly, and the completed stdout matches the Fam1 table. However, stdout is not authoritative, and the restricted packet omits part of the transitive helper source needed to verify `prop_beam`/`cz` and the full load-bearing computation. The note also uses an existing Fam2 seed-0 ladder to claim cross-family closure, but that authority is not included in the restricted packet.
-- **auditor confidence:** medium
 
 ### `wave_direct_dm_h025_fam1_seed1_control_note`
 

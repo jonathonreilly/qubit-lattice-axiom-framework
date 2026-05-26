@@ -8,6 +8,7 @@ audit pipeline after independent review.
 **Status:** conditional Path-2 support theorem. The canonical-surface
 agreement check is preserved, while the off-surface `g_bare = 1`
 closure is conditional on the named H_unit-residue admission below.
+**Primary runner:** `scripts/frontier_gbare_same_1pi_admitted_residue_repair.py`
 **Role:** records the final Path-2 coefficient identity as conditional
 support rather than an unconditional retained closure, and blocks downstream
 use of the off-surface `g_bare = 1` closure without the same named admission.
@@ -101,8 +102,8 @@ g_bare = 1.
 ```
 
 The `g_bare = 1` closure is **conditional on the H_unit-residue
-admission below** (the H_unit-residue is the complete same-projected 1PI
-`Gamma_S^(4)` coefficient). The canonical-surface consistency
+admission below**. That admission identifies the H_unit-residue with the
+complete same-projected 1PI `Gamma_S^(4)` coefficient. The canonical-surface consistency
 check that this row already supplies — Rep A and Rep B agree on
 the canonical surface, matching the W1 Rep-B-independence
 authority — does not depend on this admission and is preserved
@@ -221,11 +222,12 @@ On the present off-surface family:
   residue on the same block.
 
 Because D17 leaves only one retained scalar-singlet coefficient on `Q_L`,
-these two formulas cannot represent different quantities once Representation
-B has been admitted as a complete same-projected 1PI coefficient. Under that
-condition, they are two representations of the same coefficient of the same
-projected Green's function. Their coefficients must therefore agree for every
-`g_bare` in the family.
+the H_unit-residue admission is precisely the condition under which
+Representation B is allowed to be read as the same complete projected
+coefficient as Representation A. Under that condition, the two displayed
+formulas are representations of the same coefficient of the same projected
+Green's function. Their coefficients must therefore agree for every `g_bare`
+in the family.
 
 Equating (A) and (B) gives
 

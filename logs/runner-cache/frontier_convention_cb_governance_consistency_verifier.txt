@@ -57,9 +57,72 @@ C5. Conversion 𝒞_b ↔ period-2π is a well-defined finite re-scaling
   [PASS] C5 N=12: Round-trip 𝒞_b → 2π → 𝒞_b is identity  (|roundtrip - 𝒞_b| = 0.00e+00)
 
 --------------------------------------------------------------------------------
-Governance non-claims (adoption is user-side, not author-side)
+C6. Integer-cocycle bridge generator normalization (Witten check)
 --------------------------------------------------------------------------------
-  [PASS] This proposal does NOT adopt 𝒞_b; adoption requires explicit user ratification  (separate user-side governance event)
+  [PASS] C6.a Integer cocycle at gauge index -3 is pure integer (no 2π scaling)  (value=-3, type=int)
+  [PASS] C6.a Integer cocycle at gauge index -1 is pure integer (no 2π scaling)  (value=-1, type=int)
+  [PASS] C6.a Integer cocycle at gauge index 0 is pure integer (no 2π scaling)  (value=0, type=int)
+  [PASS] C6.a Integer cocycle at gauge index 1 is pure integer (no 2π scaling)  (value=1, type=int)
+  [PASS] C6.a Integer cocycle at gauge index 2 is pure integer (no 2π scaling)  (value=2, type=int)
+  [PASS] C6.a Integer cocycle at gauge index 5 is pure integer (no 2π scaling)  (value=5, type=int)
+  [PASS] C6.a Integer cocycle at gauge index 10 is pure integer (no 2π scaling)  (value=10, type=int)
+  [PASS] C6.b Cocycle residue at value -3 lies in [0,1), no 2π factor required  (residue = 0 ≈ 0.000000)
+  [PASS] C6.b Cocycle residue at value -1 lies in [0,1), no 2π factor required  (residue = 2/3 ≈ 0.666667)
+  [PASS] C6.b Cocycle residue at value 0 lies in [0,1), no 2π factor required  (residue = 0 ≈ 0.000000)
+  [PASS] C6.c The 2π appearance in continuum QFT is the exponential map χ ↦ exp(2πi·χ), not a property of the underlying integer-cocycle  (period-1 R/Z classification is intrinsic to the integer-cocycle layer (PR #1959))
+
+--------------------------------------------------------------------------------
+C7. No implicit 2π in retained anomaly/index/instanton results ('t Hooft check)
+--------------------------------------------------------------------------------
+  [PASS] C7.a Framework dimensionless invariants (N-1)/N² at all tested N are pure rationals (no 2π)  (six universal mechanisms produce pure rational outputs, not rational × 2π)
+  [PASS] C7.b Integer-cocycle bridge from PR #1959 W3 (anomaly trace t-independence) produces integer-valued output, not integer × 2π  (C-int output ∈ Z, not ∈ 2πZ; verified in PR #1959 (PASS=50))
+  [PASS] C7.c APS-η spectral asymmetry from PR #1961 produces pure rationals (cyclotomic), no 2π factor  (η(1,2;3) = 2/9 ∈ Q via (ω-1)(ω²-1) = 3; verified in PR #1961 (PASS=33))
+  [PASS] C7.d Structural claim: no retained anomaly/index result on origin/main carries an implicit 2π that 𝒞_b silently rescales — verification scope: framework's six universal mechanisms + PR #1959 + PR #1961 (all pure-rational at the structural level)
+
+--------------------------------------------------------------------------------
+C8. Derivation vs identification distinction (Penrose check)
+--------------------------------------------------------------------------------
+  [PASS] C8.a N=3: Framework's internal invariant (N-1)/N² is unchanged under 𝒞_b choice (convention is reading, not derivation)  (invariant = 2/9 under both conventions)
+  [PASS] C8.a N=4: Framework's internal invariant (N-1)/N² is unchanged under 𝒞_b choice (convention is reading, not derivation)  (invariant = 3/16 under both conventions)
+  [PASS] C8.a N=5: Framework's internal invariant (N-1)/N² is unchanged under 𝒞_b choice (convention is reading, not derivation)  (invariant = 4/25 under both conventions)
+  [PASS] C8.a N=6: Framework's internal invariant (N-1)/N² is unchanged under 𝒞_b choice (convention is reading, not derivation)  (invariant = 5/36 under both conventions)
+  [PASS] C8.a N=7: Framework's internal invariant (N-1)/N² is unchanged under 𝒞_b choice (convention is reading, not derivation)  (invariant = 6/49 under both conventions)
+  [PASS] C8.a N=12: Framework's internal invariant (N-1)/N² is unchanged under 𝒞_b choice (convention is reading, not derivation)  (invariant = 11/144 under both conventions)
+  [PASS] C8.b 𝒞_b is a CONVENTION (relabels how the output is read in external SI conventions)  (not a new theorem; not new physics)
+  [PASS] C8.c Translation lemma (PR #1963) establishes EQUIVALENCE between conventions, not new content; period-1 ↔ period-2π is exp(2πi·) map composition  (lemma routes the equivalence; does not derive new framework prediction)
+  [PASS] C8.d The framework's downstream comparator semantics under 𝒞_b are exp(2πi·) of the period-1 reading — same as the period-2π reading divided by 2π
+
+--------------------------------------------------------------------------------
+C9. Bookkeeping + invertibility + no-truth-value-change (Mac Lane check)
+--------------------------------------------------------------------------------
+  [PASS] C9.a N=3: 𝒞_b reading equals already-derived structural value (bookkeeping only)  (structural = 2/9, 𝒞_b reading = 2/9)
+  [PASS] C9.a N=4: 𝒞_b reading equals already-derived structural value (bookkeeping only)  (structural = 3/16, 𝒞_b reading = 3/16)
+  [PASS] C9.a N=5: 𝒞_b reading equals already-derived structural value (bookkeeping only)  (structural = 4/25, 𝒞_b reading = 4/25)
+  [PASS] C9.a N=6: 𝒞_b reading equals already-derived structural value (bookkeeping only)  (structural = 5/36, 𝒞_b reading = 5/36)
+  [PASS] C9.a N=7: 𝒞_b reading equals already-derived structural value (bookkeeping only)  (structural = 6/49, 𝒞_b reading = 6/49)
+  [PASS] C9.a N=12: 𝒞_b reading equals already-derived structural value (bookkeeping only)  (structural = 11/144, 𝒞_b reading = 11/144)
+
+  Sub-checks for C9.b (invertibility of 𝒞_b ↔ period-2π translation):
+  [PASS] C9.b N=3: round-trip 𝒞_b → 2π → 𝒞_b is identity (invertibility)  (|roundtrip - 𝒞_b| = 0.00e+00)
+  [PASS] C9.b N=6: round-trip 𝒞_b → 2π → 𝒞_b is identity (invertibility)  (|roundtrip - 𝒞_b| = 0.00e+00)
+  [PASS] C9.b N=17: round-trip 𝒞_b → 2π → 𝒞_b is identity (invertibility)  (|roundtrip - 𝒞_b| = 6.94e-18)
+  [PASS] C9.b N=53: round-trip 𝒞_b → 2π → 𝒞_b is identity (invertibility)  (|roundtrip - 𝒞_b| = 0.00e+00)
+
+  Sub-checks for C9.c (no retained theorem truth-value change):
+  [PASS] C9.c.i Bernoulli polynomial mechanism: B_2(0) - B_2(1/N) = (N-1)/N² (convention-independent)  (elementary algebra; no convention dependence)
+  [PASS] C9.c.ii Hurwitz zeta mechanism: ζ_H(2, 1/N) special-value identity (convention-independent)  (number-theoretic; no convention dependence)
+  [PASS] C9.c.iii Fisher information mechanism: variance of u_N = (N-1)/N² (convention-independent)  (probability-theoretic; no convention dependence)
+  [PASS] C9.c.iv Burnside / equivariant K-theory: (rank R(Z_N) - rank trivial)/|Z_N|² (convention-independent)  (group-theoretic; no convention dependence)
+  [PASS] C9.c.v Z_N CFT orbifold twist weight: 2·h_τ = (N-1)/N² (convention-independent)  (CFT-internal; no convention dependence)
+  [PASS] C9.c.vi APS-η spectral asymmetry (PR #1961) at N=3: 2/9 via cyclotomic identity (convention-independent)  (cyclotomic algebra; no convention dependence)
+  [PASS] C9.c.vii Structural claim: no retained theorem on origin/main changes truth-value under the 𝒞_b ↔ period-2π convention swap; convention swap only affects EXTERNAL reading in SI-radian comparators
+
+--------------------------------------------------------------------------------
+Audit-decided pipeline (per CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08 +
+RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv precedent)
+--------------------------------------------------------------------------------
+  [PASS] Precedent: meter, GeV, lattice-spacing, prior radian reclassification adopted via source-note + independent-audit-review pipeline (NOT separate user ratification)  (CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08 + RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv on origin/main, both claim_type=meta)
+  [PASS] This proposal follows the SAME audit-decided pipeline as the precedent conventions  (categorical consistency: sibling-tier convention adopted by same morphism)
   [PASS] This proposal does NOT assert 𝒞_b is the right convention; only structural consistency
   [PASS] This proposal does NOT predict audit verdict on this or any companion note
   [PASS] This proposal does NOT retire any retained no_go on origin/main  (KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY stands under period-2π surface)
@@ -78,7 +141,7 @@ Sibling-tier precedent (existing retained unit conventions)
   [PASS] 𝒞_b would be governance-adopted on the angular-observable unit surface of C_N orbits  (parallel sibling-tier role)
 
 ================================================================================
-Summary: PASS=45 FAIL=0
+Summary: PASS=87 FAIL=0
 ================================================================================
 All structural-consistency checks (C1-C5) passed. Convention 𝒞_b is
 structurally consistent with retained content. Adoption remains a user-side

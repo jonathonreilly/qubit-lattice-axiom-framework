@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -963,7 +963,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam1_seed0_control_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13470,19 +13469,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** `Fam1`, seed `1`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -30%`.  _(class `C`)_
 - **chain closes:** True — The supplied runner cache matches the table and summary in the note, and the primary runner fixes the claimed family, seed, H, and strength ladder before calling the shared compute path. Within the restricted packet, the claim remains bounded to this family/seed/H control replay and does not require a portability law.
 - **rationale:** The runner output reports an exact S=0 null, negative delta_hist at all three nonzero strengths, R_hist values from -29.02% to -30.37%, and a 5.22% scaled-magnitude spread, matching the source note. The runner source is not a constant printer: it delegates to measure_dm after pinning the CLI arguments to Fam1, seed 1, H=0.25, and the included helper path constructs the lattice, histories, wave field, and beam response rather than importing the contested table from another note. The note's conclusion is appropriately bounded and explicitly avoids promoting a portability law.
-- **auditor confidence:** medium
-
-### `wave_direct_dm_h025_fam2_seed0_control_note`
-
-- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded Fam2 seed-0 H=0.25 direct-dM control ladder and its limited use with the retained Fam2 seed-1 control ladder to close the second-family fine-H pair only.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T191613Z-d2e53f1a-wave_direct_dm_h025_fam2-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The Fam2, seed 0, H = 0.25 ladder has exact S=0 null, common negative sign over S=0.002, 0.004, 0.008, and approximately linear weak-field scaling near R_hist ~ -23%.  _(class `C`)_
-- **chain closes:** False — The reported runner output matches the note numerically and the visible runner path genuinely calls framework computation rather than printing constants. However, the packet truncates the transitive helper source for scripts/wave_retardation_continuum_limit.py, including load-bearing functions needed to verify the computation chain from source.
-- **rationale:** The primary runner is a parameter wrapper over the shared H=0.25 control batch, and the visible shared code computes the null and weak-field ladder by calling measure_dm rather than hard-coding the table. The completed cached stdout agrees with the note's values, sign pattern, null, and spread. The cited Fam2 seed-1 authority is retained-grade, so it does not create an upstream retention downgrade. The remaining blocker is packet completeness: the wave_retardation_continuum_limit.py helper is truncated while its grow, solve_wave, prop_beam, and cz functions are load-bearing for measure_dm, so the restricted packet does not fully prove the class-C chain.
 - **auditor confidence:** medium
 
 ### `wave_direct_dm_h025_fam2_seed1_control_note`

@@ -6,6 +6,10 @@
 **Status authority:** source-note proposal only; audit verdict and effective
 status are set by the independent audit lane.
 **Primary runner:** [`scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py)
+**Audit packet repair (2026-05-26):** the primary runner is now a
+self-contained Fam2/seed0 audit runner.  It includes the load-bearing growth,
+wave, `prop_beam`, and `cz` implementations directly so the restricted audit
+packet does not depend on a truncated helper excerpt.
 
 This note upgrades the earlier one-strength `Fam2`, seed `0`,
 `H = 0.25` boundary replay by adding the same-resolution control stack:
@@ -82,7 +86,6 @@ So the exact bounded claim is:
 ## Artifact chain
 
 - [`scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py)
-- [`scripts/wave_direct_dm_h025_control_batch.py`](../scripts/wave_direct_dm_h025_control_batch.py)
 - [`logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt)
 - `docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)

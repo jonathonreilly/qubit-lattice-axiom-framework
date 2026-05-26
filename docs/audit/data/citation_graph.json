@@ -81166,12 +81166,8 @@
       "deps": [
         "wave_direct_dm_h025_fam2_seed1_control_note"
       ],
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_h025_control_batch.py",
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "note_hash": "0774786b889814ce4069628f913948a44b8172574ec09a19a69f18aa23527ed5",
+      "helper_runner_paths": [],
+      "note_hash": "294c340bcf1b159b10ff1f6c29085b5f93ca08eeb4617e5bd32c335707a4906d",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Control Note"

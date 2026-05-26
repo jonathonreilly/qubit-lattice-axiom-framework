@@ -54,25 +54,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Bounded conditional Path-2 theorem: assuming the H_unit-residue admission identifies the H_unit tree-level matrix element with the complete same-projected 1PI Gamma_S^(4) coefficient, Rep-B independence and exact coefficient algebra force the positive-branch solution g_bare = 1; no complete same-projected 1PI exhaustion bridge is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
         "yt_ward_identity_derivation_theorem"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 13.78,
       "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
       "transitive_descendants": 878

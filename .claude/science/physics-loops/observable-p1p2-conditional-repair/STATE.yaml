@@ -1,0 +1,27 @@
+loop_slug: observable-p1p2-conditional-repair
+started_at: 2026-05-26
+campaign: 12h-science-loop
+target_claim_id: observable_principle_from_axiom_note
+target_note: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+target_runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: "given P1 scalar additivity and P2 phase-blind scalar-generator selection"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The source row is audit-ready after narrowing, but independent audit has not ratified the branch."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+claim_type_author_hint: bounded_theorem
+active_route: narrow-p2-classification-to-conditional-premise
+hard_residual: "Derive P1/P2 scalar-generator classification from retained primitives, or keep them as admitted selection premises."
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  - scripts/frontier_hierarchy_observable_principle_from_axiom.py
+  - outputs/observable_principle_p1p2_conditional_certificate_2026-05-26.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/AUDIT_QUEUE.md
+review_findings: "Self-review plus audit pipeline pass; independent audit still required."
+pr_status: pending
+next_exact_action: "Commit, push, open PR, verify CI, then pivot to the next audited conditional row."
+stop_condition: "Runtime exhaustion, global tooling block, or user interruption."

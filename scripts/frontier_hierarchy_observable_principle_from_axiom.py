@@ -506,8 +506,8 @@ def test_conditional_scope_shape():
     )
     print(
         "  Note: this part verifies the CONDITIONAL SHAPE only "
-        "(premises P1-P4 hold on the candidate W). It does NOT derive "
-        "P1-P4 from retained-grade primitives; that path is explicitly out of "
+        "(premises P1/P2 hold for the selected class, with P3/P4 local). "
+        "It does NOT derive P1/P2 from retained-grade primitives; that path is explicitly out of "
         "scope per the audit-named conditional scope (see "
         "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named "
         "conditional scope')."
@@ -515,21 +515,20 @@ def test_conditional_scope_shape():
 
 
 def test_premise_internal_derivations():
-    """Part 7 -- runner-local derivations of P2, P3, P4.
+    """Part 7 -- P2 candidate consistency plus runner-local P3/P4 derivations.
 
     Per the 2026-05-09 narrowing recorded in
-    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` §"Runner-local
-    derivation of P2/P3/P4", three of the
-    four admitted bridge premises in Part 6 retire to runner-internal
-    consequences once the registered `CPT_EXACT_NOTE` construction is
-    admitted:
+    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the runner checks
+    the selected candidate against P2 and derives P3/P4 locally. It does
+    not derive the full P2 scalar-generator classification bridge.
 
-      * P2 (CPT-even phase blindness) follows from D being real
-        anti-Hermitian (a retained property of the staggered axiom): for
-        any real-Hermitian source `J`, `det(D + J)` and `det(D - J)`
-        are complex conjugates, so `|det(D + J)| = |det(D - J)|` is
-        forced. Thus `W` is automatically even in `J` without needing a
-        separate physical-principle premise.
+      * P2 (CPT-even phase blindness) remains an admitted selection
+        premise. The runner verifies candidate consistency: for the
+        chosen W = log|det(D+J)| and real-Hermitian source `J`,
+        `det(D + J)` and `det(D - J)` are complex conjugates, so
+        `|det(D + J)| = |det(D - J)|` is forced on the runner block.
+        This is a candidate check, not a classification theorem for all
+        scalar generators.
 
       * P3 (continuity / minimal regularity) follows from the finite
         Grassmann-block structure: `j -> det(D + jI)` is a polynomial
@@ -546,26 +545,22 @@ def test_premise_internal_derivations():
         differs from this one by an additive constant only and so does
         not change the source-derivative observables.
 
-    P1 (scalar additivity on independent subsystems) remains an admitted
-    physical-principle premise: it is the criterion that selects the
-    additive class of generators for "physical scalar bosonic
-    observable" in the first place. The runner checks the conditional
-    shape: P1 + (now-derived) P2/P3/P4 jointly force `W = log|det(D+J)|`
-    up to the conventional constant.
+    P1 (scalar additivity on independent subsystems) and P2 (phase-blind
+    scalar-generator selection) remain admitted physical-selection
+    premises. The runner checks the conditional shape: P1/P2 plus local
+    P3/P4 force `W = log|det(D+J)|` up to the conventional constant.
 
-    This part therefore reduces the admitted-premise set on the
-    physical-premise surface from {P1, P2, P3, P4} to P1 plus the cited
-    staggered-block/CPT structure. It does NOT derive P1, and it does not
-    promote `CPT_EXACT_NOTE`; those remain audit-governed inputs.
+    This part therefore does NOT derive P1 or P2, and it does not
+    promote any cited upstream row; those remain audit-governed inputs.
     """
     print("\n" + "=" * 78)
-    print("PART 7: RUNNER-LOCAL DERIVATIONS OF P2, P3, P4")
+    print("PART 7: P2 CANDIDATE CONSISTENCY + RUNNER-LOCAL P3/P4")
     print("=" * 78)
 
     u0 = 0.9
 
-    # P2 derivation: D is real anti-Hermitian on the staggered block.
-    print("\n  P2 derivation: D is real anti-Hermitian on the runner block.")
+    # P2 candidate consistency: D is real anti-Hermitian on the staggered block.
+    print("\n  P2 consistency: D is real anti-Hermitian on the runner block.")
     real_d_imag_norm_max = 0.0
     anti_herm_residual_max = 0.0
     re_eig_max = 0.0
@@ -594,7 +589,7 @@ def test_premise_internal_derivations():
         f"max |Re(eigenvalue(D))| = {re_eig_max:.2e}",
     )
 
-    # P2 derivation step: |det(D+J)| = |det(D-J)| forced by realness of D.
+    # P2 consistency step: |det(D+J)| = |det(D-J)| for the chosen candidate.
     p2_derived_err = 0.0
     for ls, lt in [(2, 2), (2, 4)]:
         d = build_dirac_4d_apbc(ls, lt, u0)
@@ -606,7 +601,7 @@ def test_premise_internal_derivations():
             p2_derived_err = max(p2_derived_err, abs(zp - zm))
 
     check(
-        "P2 derived: |det(D + jI)| = |det(D - jI)| from real anti-Hermitian D",
+        "P2 consistency: candidate W is phase-blind, |det(D + jI)| = |det(D - jI)|",
         p2_derived_err < 1e-12,
         f"max |zp - zm| = {p2_derived_err:.2e}",
     )
@@ -628,7 +623,7 @@ def test_premise_internal_derivations():
             p2_conj_err = max(p2_conj_err, abs(det_p - det_m.conjugate()))
 
     check(
-        "P2 derived (stronger): det(D + jI) = conj(det(D - jI)) on even-dim staggered block",
+        "P2 consistency (stronger): det(D + jI) = conj(det(D - jI)) on even-dim staggered block",
         p2_conj_err < 1e-9,
         f"max |det(D+J) - conj(det(D-J))| = {p2_conj_err:.2e}",
     )
@@ -725,14 +720,13 @@ def test_premise_internal_derivations():
         f"max |dW_native - dW_alt| = {p4_constant_invariance_err:.2e}",
     )
 
-    # Summary: with P2, P3, P4 derived, the only remaining admitted premise
-    # is P1 (additivity on independent subsystems). The runner already
-    # verifies P1 in Part 6.
+    # Summary: P1 and P2 remain admitted. The runner verifies P1/P2
+    # conditional shape and derives/checks P3/P4 locally.
     print(
-        "\n  Summary: P2 follows from real anti-Hermitian D in the registered CPT_EXACT_NOTE construction,\n"
+        "\n  Summary: P2 remains an admitted scalar-generator classification premise;\n"
+        "  the runner only checks that the selected W is phase-blind on this block.\n"
         "  P3 follows from finite-block polynomial analyticity + D invertibility,\n"
-        "  P4 follows from the zero-source baseline convention. This narrows the\n"
-        "  physical-premise list but does not promote the cited upstream row."
+        "  and P4 follows from the zero-source baseline convention."
     )
 
 

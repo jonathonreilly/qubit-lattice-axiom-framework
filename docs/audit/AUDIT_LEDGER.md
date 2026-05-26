@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -93,7 +93,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 723 | 53.50 | `audited_conditional` | ~~audited_conditional~~ |
+| 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 723 | 53.50 | `unaudited` | unaudited |
 | 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 906 | 52.33 | `audited_clean` | **retained_bounded** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 908 | 51.83 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1074 | 46.07 | `audited_clean` | **retained** |
@@ -929,7 +929,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -8698,19 +8697,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On Fraction-coefficient formal power series, finite partial sums, scalar powers, Cauchy products, geometric truncation errors, and the toy truncated Langevin update close order-by-order in Fraction arithmetic.  _(class `A`)_
 - **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
 - **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
-- **auditor confidence:** high
-
-### `observable_principle_from_axiom_note`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite log|det(D+J)| source-response algebra on the runner APBC staggered block, including determinant factorization, source derivatives, Matsubara curvature, and the Klein-four Lt=4 selector; the v readout is out of scope.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T232931Z-e2fb0f59-observable_principle_fro-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For scalar bosonic observables the generator is taken to depend only on |Z|, so additivity over independent subsystems gives W(r1 r2)=W(r1)+W(r2) and hence W=log|det(D+J)| up to normalization.  _(class `A`)_
-- **chain closes:** False — The finite determinant algebra closes for the chosen candidate W. The packet does not close the bridge from P1 plus real anti-Hermitian D to the full phase-blind determinant-amplitude generator selection; Part 7 verifies sign evenness of the chosen log|det| functional, not uniqueness among admissible additive CPT-even scalar functionals.
-- **rationale:** The runner performs real finite-algebra checks, and the out-of-scope Part 5 numerical comparator should not drive the verdict. The remaining blocker is the over-narrowed P1-only premise surface: the source still needs the selection premise that a scalar bosonic generator is a continuous function of |Z| alone. The claimed runner-local P2 derivation establishes determinant/source sign symmetry for the candidate, but not that broader phase-blind generator-classification bridge.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21`

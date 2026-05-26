@@ -10657,16 +10657,16 @@
       "runner": "scripts/cl3_higgs_mass_wilson_loop_spectroscopy_2026_05_10_higgsH3.py"
     },
     "higgs_mechanism_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 1,
-        "D": 16
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/frontier_higgs_mass_derived.py"
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_higgs_quartic_mechanism_algebra_repair.py"
     },
     "higgs_taste_singlet_projection_bounded_note_2026-05-09": {
       "assert_count": 1,
@@ -39301,8 +39301,7 @@
     "scripts/frontier_higgs_mass_derived.py": {
       "assert_count": 0,
       "claims": [
-        "higgs_from_lattice_note",
-        "higgs_mechanism_note"
+        "higgs_from_lattice_note"
       ],
       "counts": {
         "A": 0,
@@ -39374,6 +39373,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_higgs_quartic_mechanism_algebra_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "higgs_mechanism_note"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_higgs_taste_singlet_projection.py": {
@@ -55549,15 +55563,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 331,
+    "decoration_candidates": 332,
     "dominant_class_distribution": {
-      "A": 234,
+      "A": 235,
       "B": 278,
       "C": 750,
       "D": 299,
       "none": 436
     },
-    "runners_classified": 1997,
+    "runners_classified": 1998,
     "runners_with_C": 972,
     "runners_with_D": 583
   }

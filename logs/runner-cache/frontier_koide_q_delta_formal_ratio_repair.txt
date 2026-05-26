@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_q_delta_formal_ratio_repair.py
+runner_sha256: 1a7accd0bd0b519872c2331580b3152f803378cf7d21eb6f186e683a7c4aec4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Koide Q-delta formal ratio repair
+
+========================================================================================
+Source-note boundary
+========================================================================================
+  [PASS] note contains required boundary: 'bounded-support formal algebra'
+  [PASS] note contains required boundary: 'No Berry-holonomy radian bridge'
+  [PASS] note contains required boundary: 'That exact rational identity is the entire repaired theorem.'
+  [PASS] note contains required boundary: 'This repair withdraws both from the binding claim.'
+  [PASS] note contains required boundary: 'The bridge from this formal algebra to physical Koide/Brannen geometry remains a separate open science problem.'
+  [PASS] note avoids overclaim/token: 'uses PDG'
+  [PASS] note avoids overclaim/token: 'matches observed'
+  [PASS] note avoids overclaim/token: 'observed charged-lepton'
+  [PASS] note avoids overclaim/token: 'retained selected-line'
+  [PASS] note avoids overclaim/token: 'Berry holonomy in radians is derived'
+  [PASS] note avoids overclaim/token: 'equal-sector-norm input is retained'
+
+========================================================================================
+Exact rational identity
+========================================================================================
+  [PASS] d=1: Delta_d = Q_d/d (Delta=2, Q/d=2)
+  [PASS] d=1: Delta_d/Q_d = 1/d (ratio=1)
+  [PASS] d=2: Delta_d = Q_d/d (Delta=1/2, Q/d=1/2)
+  [PASS] d=2: Delta_d/Q_d = 1/d (ratio=1/2)
+  [PASS] d=3: Delta_d = Q_d/d (Delta=2/9, Q/d=2/9)
+  [PASS] d=3: Delta_d/Q_d = 1/d (ratio=1/3)
+  [PASS] d=4: Delta_d = Q_d/d (Delta=1/8, Q/d=1/8)
+  [PASS] d=4: Delta_d/Q_d = 1/d (ratio=1/4)
+  [PASS] d=5: Delta_d = Q_d/d (Delta=2/25, Q/d=2/25)
+  [PASS] d=5: Delta_d/Q_d = 1/d (ratio=1/5)
+  [PASS] d=7: Delta_d = Q_d/d (Delta=2/49, Q/d=2/49)
+  [PASS] d=7: Delta_d/Q_d = 1/d (ratio=1/7)
+  [PASS] d=11: Delta_d = Q_d/d (Delta=2/121, Q/d=2/121)
+  [PASS] d=11: Delta_d/Q_d = 1/d (ratio=1/11)
+  [PASS] d=17: Delta_d = Q_d/d (Delta=2/289, Q/d=2/289)
+  [PASS] d=17: Delta_d/Q_d = 1/d (ratio=1/17)
+  [PASS] d=32: Delta_d = Q_d/d (Delta=1/512, Q/d=1/512)
+  [PASS] d=32: Delta_d/Q_d = 1/d (ratio=1/32)
+
+========================================================================================
+d=3 exact values
+========================================================================================
+  [PASS] Q_3 = 2/3 (2/3)
+  [PASS] Delta_3 = 2/9 (2/9)
+  [PASS] Delta_3 / Q_3 = 1/3 (1/3)
+
+========================================================================================
+Negative control: alternative Q'_d=(d-1)/d
+========================================================================================
+  [PASS] d=2: alternative Q'_d/d does not equal Delta_d (Delta=1/2, Q_alt/d=1/4)
+  [PASS] d=4: alternative Q'_d/d does not equal Delta_d (Delta=1/8, Q_alt/d=3/16)
+  [PASS] d=5: alternative Q'_d/d does not equal Delta_d (Delta=2/25, Q_alt/d=4/25)
+  [PASS] d=7: alternative Q'_d/d does not equal Delta_d (Delta=2/49, Q_alt/d=6/49)
+  [PASS] d=11: alternative Q'_d/d does not equal Delta_d (Delta=2/121, Q_alt/d=10/121)
+  [PASS] d=17: alternative Q'_d/d does not equal Delta_d (Delta=2/289, Q_alt/d=16/289)
+  [PASS] d=3 is the unique tested coincidence for Q'_d=2/d (Q_alt(3)=2/3)
+
+========================================================================================
+TOTAL: PASS=39 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 164 |
+| **retained_no_go** | 165 |
 | **retained_bounded** | 476 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1268 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 763 |
+| `audited_clean` | 764 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -104,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 711 | 37.98 | `unaudited` | unaudited |
 | 9 | `minimal_axioms` | meta | critical | 1039 | 36.52 | `unaudited` | meta |
-| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 34.12 | `audit_in_progress` | audit_in_progress |
+| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 34.12 | `audited_clean` | **retained_no_go** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1020 | 34.00 | `audited_clean` | **retained** |
 | 12 | `minimal_axioms_2026-04-11` | meta | critical | 932 | 33.87 | `unaudited` | meta |
 | 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 177 | 33.48 | `unaudited` | unaudited |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `yt_ew_color_projection_theorem` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -878,6 +875,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13258,6 +13256,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Two completions, kappa_Y = 0 with K_Y = 8/9 and kappa_Y = 1 with K_Y = 1, share the same retained Fierz channel fractions and color-blind scaling law, so those premises do not determine the connected-trace selector.  _(class `A`)_
 - **chain closes:** True — The cited authority supplies only the exact adjoint and singlet channel fractions, and it explicitly leaves matching/readout rules outside its derivation. The source note's two-completion witness is enough to show underdetermination on that restricted premise set.
 - **rationale:** The no-go is narrowly scoped to non-derivability from the restricted packet, not to impossibility across the full framework. Its load-bearing step is an algebraic independence witness over the cited channel fractions: the same retained primitive data permit kappa_Y = 0 and kappa_Y = 1 with different K_Y values. The cited Fierz authority is retained-grade decoration and does not contain a closed Yukawa readout theorem. The No-Go Discipline gate is satisfied in-packet: alternative routes are enumerated, the wall is collapsed to the missing selector theorem, hidden wording is scoped, and the steelman is left as future work rather than overruled.
+- **auditor confidence:** high
+
+### `yt_ew_color_projection_theorem`
+
+- **Note:** [`YT_EW_COLOR_PROJECTION_THEOREM.md`](../../docs/YT_EW_COLOR_PROJECTION_THEOREM.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-yt-ew-kappa-nogo-pass2-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The value kappa_EW = 0 is not selected by the Fierz fraction, by common rescaling, by the weak-angle preservation property, or by the historical numerical agreement after choosing that value.  _(class `A`)_
+- **chain closes:** True — The restricted packet gives exact algebra for F_adj = 8/9 and K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9), while kappa_EW = 0 and kappa_EW = 1 remain distinct admissible completions under the same algebraic inputs. No selector theorem or exact disconnected-current coefficient is present in the packet, so the stated no-go boundary closes.
+- **rationale:** The runner passes with exact Fraction-based checks for the kappa family, two-completion witness, weak-angle preservation, coupling-ratio preservation, and common-scale invariance. The five B-class checks are source-note hygiene/text-presence checks, not retained dependency imports. The clean verdict is limited to the packet-scoped no-go and does not promote K_EW = 9/8 or a physical connected-trace selector as unconditionally derived.
 - **auditor confidence:** high
 
 ### `yt_ew_m_residual_note_2026-05-02`

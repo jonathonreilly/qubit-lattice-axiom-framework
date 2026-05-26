@@ -15577,6 +15577,18 @@
       "to": "koide_dimensionless_note_2026-04-24"
     },
     {
+      "from": "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_reviewer_stress_test_note_2026-04-21",
       "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
     },
@@ -61062,6 +61074,22 @@
       "runner_path": "scripts/frontier_koide_q_source_domain_canonical_descent.py",
       "title": "Koide Q Source-Domain Canonical Descent Theorem"
     },
+    "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25": {
+      "claim_id": "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9db9fd5915295e6f06f2087f42c57d1cebc83bca1a69dcd4b1c5b614ee35eb85",
+      "path": "docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "runner_path": "scripts/koide_q_two_thirds_frobenius_extremum_runner.py",
+      "title": "Koide Q = 2/3 Frobenius-Extremum Algebraic Bridge"
+    },
     "koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10": {
       "claim_id": "koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -85282,7 +85310,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 601,
+      "bounded_theorem": 602,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
@@ -85291,7 +85319,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1020,
+      "bounded_theorem": 1021,
       "decoration": 1,
       "meta": 191,
       "no_go": 183,
@@ -85299,10 +85327,10 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9732,
+    "edge_count": 9735,
     "leaf_count": 788,
-    "node_count": 2541,
+    "node_count": 2542,
     "root_count": 848,
-    "runners_with_path": 2112
+    "runners_with_path": 2113
   }
 }

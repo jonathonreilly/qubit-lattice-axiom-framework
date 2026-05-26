@@ -12253,16 +12253,16 @@
       "runner": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py"
     },
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 45,
-        "B": 1,
+        "A": 9,
+        "B": 2,
         "C": 0,
         "D": 0
       },
       "decoration_candidate": true,
       "dominant_class": "A",
-      "runner": "scripts/frontier_koide_moment_ratio_uniformity_theorem.py"
+      "runner": "scripts/frontier_koide_mru_reduced_log_volume_repair.py"
     },
     "koide_mru_demotion_note_2026-04-20": {
       "assert_count": 1,
@@ -40500,12 +40500,26 @@
     "scripts/frontier_koide_moment_ratio_uniformity_theorem.py": {
       "assert_count": 0,
       "claims": [
-        "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
         "scalar_selector_cycle1_science_review_note_2026-04-19"
       ],
       "counts": {
         "A": 45,
         "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_koide_mru_reduced_log_volume_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -55196,15 +55210,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 315,
+    "decoration_candidates": 316,
     "dominant_class_distribution": {
-      "A": 224,
+      "A": 225,
       "B": 273,
       "C": 747,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
+    "runners_classified": 1983,
     "runners_with_C": 969,
     "runners_with_D": 583
   }

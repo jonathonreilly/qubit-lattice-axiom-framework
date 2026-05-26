@@ -1,0 +1,55 @@
+Koide MRU reduced log-volume repair
+
+========================================================================================
+Source-note boundary
+========================================================================================
+  [PASS] note contains required boundary: 'bounded-support formal reduced-carrier algebra'
+  [PASS] note contains required boundary: 'That formal reduced-carrier identity is the entire repaired theorem.'
+  [PASS] note contains required boundary: 'This repair withdraws the physical quotient from the binding claim.'
+  [PASS] note contains required boundary: 'The physical bridge from this formal reduced-carrier identity to the charged-lepton scalar lane remains a separate open science problem.'
+  [PASS] note avoids overclaim phrase: 'physical SO(2)-quotient is derived'
+  [PASS] note avoids overclaim phrase: 'charged-lepton scalar observables therefore factor through'
+  [PASS] note avoids overclaim phrase: 'operator-side `kappa = 2` is derived in the framework'
+  [PASS] note avoids overclaim phrase: 'observational matching is derived'
+
+========================================================================================
+Symbolic Lagrange solution
+========================================================================================
+  [PASS] stationarity equation for rho_plus
+  [PASS] stationarity equation for rho_perp
+  [PASS] stationarity forces 1/rho_plus^2 = 1/rho_perp^2
+  [PASS] constraint gives rho_plus^2 = rho_perp^2 = E_tot/2
+  [PASS] kappa = 2 at the reduced extremum (2)
+
+========================================================================================
+Numeric concavity / uniqueness samples
+========================================================================================
+  [PASS] sample t=0.05: log-volume below symmetric point (delta=0.830366)
+  [PASS] sample t=0.10: log-volume below symmetric point (delta=0.510826)
+  [PASS] sample t=0.20: log-volume below symmetric point (delta=0.223144)
+  [PASS] sample t=0.35: log-volume below symmetric point (delta=0.047155)
+  [PASS] sample t=0.65: log-volume below symmetric point (delta=0.047155)
+  [PASS] sample t=0.80: log-volume below symmetric point (delta=0.223144)
+  [PASS] sample t=0.90: log-volume below symmetric point (delta=0.510826)
+  [PASS] sample t=0.95: log-volume below symmetric point (delta=0.830366)
+
+========================================================================================
+Negative controls
+========================================================================================
+  [PASS] weighted unreduced log-volume gives kappa != 2 (kappa=1)
+  [PASS] weighted unreduced log-volume gives kappa = 1 (kappa=1)
+
+========================================================================================
+Audit metadata after pipeline regeneration
+========================================================================================
+  [PASS] koide_moment_ratio_uniformity_theorem_note_2026-04-19 row exists
+  [PASS] claim_type is bounded_theorem (bounded_theorem)
+  [PASS] audit_status reset to unaudited (unaudited)
+  [PASS] effective_status reset to unaudited (unaudited)
+  [PASS] runner path is reduced-log-volume repair runner (scripts/frontier_koide_mru_reduced_log_volume_repair.py)
+  [PASS] direct deps are empty for formal reduced theorem ([])
+  [PASS] open dependency paths are empty ([])
+
+========================================================================================
+TOTAL: PASS=30 FAIL=0
+========================================================================================

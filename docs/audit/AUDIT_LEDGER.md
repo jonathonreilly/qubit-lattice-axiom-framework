@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 162 |
-| **retained_bounded** | 463 |
+| **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 748 |
+| `audited_clean` | 749 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -539,6 +539,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `mirror_2d_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_chokepoint_boundary_fit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8176,6 +8177,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the current gen_2d_mirror harness and N in {25,40,60,80,100,150,200}, the seed-mean five-observable vector fails the joint operator-Cauchy gate, zero of five components pass the component gate, and four of five components are non-monotone in N.  _(class `C`)_
 - **chain closes:** True — The runner computes the stated harness sweep directly, verifies the Born floor and seed coverage guards, fits the joint and per-component Cauchy decay rates, and exits successfully only when the bounded no-go conditions hold. The imported generator confirms that varying N adds layers at fixed spacing/density rather than refining a fixed physical domain.
 - **rationale:** The claim is narrowly bounded to the current mirror harness and the listed layer-count grid, and the live runner reproduces the cached null result. The no-go does not depend on a timeout, a stale log, or an unsupported universal mirror claim; it is an executable failure of the specified operator-Cauchy gate. Residual risk is only extrapolating beyond this harness or grid, which the note explicitly excludes.
+- **auditor confidence:** high
+
+### `mirror_2d_validation_note`
+
+- **Note:** [`MIRROR_2D_VALIDATION_NOTE.md`](../../docs/MIRROR_2D_VALIDATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded exact 2D mirror coexistence pocket for N in {25,40,60,80,100}, npl_half=12, yr=10.0, connect_radius=2.5, 8 seeds, and k-band [3,5,7], with no promoted mass-law or distance-law claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260526T020122Z-7b7b8c26-mirror_2d_validation_not-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact 2D mirror family, using the registered linear propagator and stated parameter sweep, yields the retained Born, MI, decoherence, d_TV, and positive gravity rows, strongest at N = 60.  _(class `C`)_
+- **chain closes:** True — The primary runner source computes the mirror and random-family rows from the supplied generator, linear propagator, slit selection, field model, and summary statistics rather than printing hard-coded constants. The helper source containing gen_2d_mirror and propagate_LINEAR is included, so the imported load-bearing functions are inspectable in the restricted packet.
+- **rationale:** The retained table values in the note match the cached stdout from scripts/mirror_2d_validation.py, and the runner source genuinely computes those quantities over the stated finite sweep. The transitive helper scripts/mirror_born_audit.py is present and supplies an inspectable strictly linear propagator and exact 2D mirror generator, with no normalization or hard-coded contested result in the load-bearing path. The note also correctly limits the gravity follow-up to weak fits and does not promote a mass or distance law.
 - **auditor confidence:** high
 
 ### `mirror_chokepoint_boundary_fit_note`

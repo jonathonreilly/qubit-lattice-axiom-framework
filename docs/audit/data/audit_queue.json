@@ -3,7 +3,7 @@
     "critical": 250,
     "high": 342,
     "leaf": 312,
-    "medium": 323
+    "medium": 322
   },
   "cycle_break_target_count": 3,
   "cycle_break_targets": [
@@ -17740,30 +17740,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mirror_2d_validation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/mirror_born_audit.py"
-      ],
-      "load_bearing_score": 4.959,
-      "note_path": "docs/MIRROR_2D_VALIDATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mirror_2d_validation.py",
-      "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "asymmetry_persistence_collapse_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -27854,6 +27830,36 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "audited_symmetry_synthesis_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "mirror_chokepoint_note",
+        "higher_symmetry_joint_validation_note",
+        "higher_symmetry_gravity_probe_note",
+        "mirror_2d_validation_note",
+        "mirror_mutual_information_chokepoint_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/mirror_born_audit.py"
+      ],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/mirror_2d_validation.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28950,36 +28956,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "audited_symmetry_synthesis_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mirror_chokepoint_note",
-        "higher_symmetry_joint_validation_note",
-        "higher_symmetry_gravity_probe_note",
-        "mirror_2d_validation_note",
-        "mirror_mutual_information_chokepoint_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/mirror_born_audit.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/mirror_2d_validation.py",
       "transitive_descendants": 1
     },
     {
@@ -37045,5 +37021,5 @@
     }
   ],
   "ready_count": 3,
-  "total_pending": 1227
+  "total_pending": 1226
 }

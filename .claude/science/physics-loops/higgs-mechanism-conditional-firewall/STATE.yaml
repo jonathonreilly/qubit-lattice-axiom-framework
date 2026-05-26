@@ -1,0 +1,34 @@
+loop_slug: higgs-mechanism-conditional-firewall
+started_at: 2026-05-26
+mode: campaign
+target_claim_id: higgs_mechanism_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This branch makes the scalar/CW/bare-parameter bridge explicit; it does not derive the bridge from A1/A2."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/higgs-mechanism-conditional-firewall-20260526
+base: origin/main
+active_route: conditional-use-firewall
+hard_residual: "Audit requested a scalar potential/Coleman-Weinberg/bare-parameter substrate derivation or explicit conditional downstream use."
+files_touched:
+  - docs/HIGGS_MECHANISM_NOTE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+open_imports:
+  - "Scalar potential / Coleman-Weinberg / bare-parameter substrate remains an admitted bridge."
+no_go_routes:
+  - "Do not claim the Higgs mechanism is derived from framework axioms in this packet."
+review_findings: []
+pr_status: pending
+next_exact_action: "Commit, push, open PR, verify mergeability, then continue if runtime remains."
+stop_condition: "Continue campaign until the 12-hour budget expires or queue exhaustion."

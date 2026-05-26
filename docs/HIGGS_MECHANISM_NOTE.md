@@ -29,6 +29,30 @@ support surface.
 **Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_higgs_mass_derived.py`
 
+## 2026-05-26 conditional-use firewall
+
+This row is a bounded mechanism-consistency note, not a retained derivation of
+the Higgs mechanism. The single load-bearing bridge remains:
+
+> scalar potential / Coleman-Weinberg / bare-parameter substrate
+> (Cl(3)/Z^3 derivation not provided in this packet).
+
+The runner is therefore a diagnostic consistency artifact only. Any runner
+phrasing such as "derived", "fully derived", or "hierarchy problem resolved"
+is scoped here to the admitted scalar/CW/bare-parameter substrate and must not
+be read as an audit-ratified derivation from A1/A2 alone. Downstream rows may
+use this note only under that explicit bridge premise.
+
+Safe downstream wording:
+
+> Conditional on the admitted scalar/CW/bare-parameter substrate, the bounded
+> runner supports mechanism-level lattice Coleman-Weinberg EWSB consistency for
+> `O(1)` comparison inputs.
+
+Unsafe downstream wording:
+
+> The Higgs mechanism is derived from the framework axioms.
+
 ## Authority Rule
 
 Use `HIGGS_MASS_DERIVED_NOTE.md` for the current

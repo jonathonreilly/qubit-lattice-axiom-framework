@@ -57923,7 +57923,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "e2d8370bbc0e683ff44647fa992bf3b4db392a28200a2370ed7cbeb3ee7e5c1b",
+      "note_hash": "1b186836844580ffb14a4150e6734778a7f597ef1ac3566f0be23c59385bb171",
       "path": "docs/HIGGS_MECHANISM_NOTE.md",
       "runner_path": "scripts/frontier_higgs_mass_derived.py",
       "title": "Higgs Mechanism Note"

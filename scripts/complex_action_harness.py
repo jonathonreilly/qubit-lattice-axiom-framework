@@ -2,8 +2,8 @@
 """Complex action harness: S = L(1-f) + i*gamma*L*f.
 
 Question:
-  Does adding an imaginary component to the action unify gravity and horizons
-  in a single propagator kernel?
+  What finite behavior appears after adding an admitted imaginary component to
+  the action?
 
   Real part: S_real = L(1-f) -- standard valley-linear gravity
   Imag part: S_imag = gamma*L*f -- absorption/amplification from field
@@ -11,7 +11,7 @@ Question:
   The kernel becomes:
     exp(i*k*S) = exp(i*k*L*(1-f)) * exp(-k*gamma*L*f)
 
-  gamma > 0: exponential suppression near source -> horizon
+  gamma > 0: exponential suppression near source in this finite ansatz
   gamma < 0: exponential amplification near source -> instability
   gamma = 0: standard real valley-linear action
 
@@ -274,9 +274,9 @@ def main() -> None:
     print(f"  complex(gamma=0) delta:    {cx0_delta:+.6e}")
     print(f"  match: {abs(std_delta - cx0_delta) < 1e-12}")
 
-    # Phase 4: Mass scaling at gamma=0.5 (horizon regime)
+    # Phase 4: Source-strength scaling at gamma=0.5 (free-gamma ansatz)
     print()
-    print("MASS SCALING at gamma=0.5 (horizon regime)")
+    print("SOURCE-STRENGTH SCALING at gamma=0.5 (free-gamma ansatz)")
     gamma_test = 0.5
     strengths = [0.025, 0.05, 0.1, 0.2]
     for s in strengths:
@@ -290,10 +290,10 @@ def main() -> None:
     print("  gamma=0 must recover standard valley-linear (check reduction above)")
     print("  Born |I3|/P should be ~0 for ALL gamma (propagator is linear in psi)")
     print("  complex action is non-unitary but still linear: Born holds structurally")
-    print("  TOWARD->AWAY transition marks the exceptional point")
-    print("  escape < 1 means net absorption (horizon-like)")
-    print("  escape > 1 means net amplification (superradiance-like)")
-    print("  if Born holds AND gravity+horizons coexist, this is a genuine unification")
+    print("  TOWARD->AWAY transition is a finite free-gamma ansatz feature")
+    print("  escape < 1 means net absorption in this packet, not horizon physics")
+    print("  escape > 1 means net amplification in this packet")
+    print("  no gamma law, horizon observable, or unification theorem is derived here")
 
 
 if __name__ == "__main__":

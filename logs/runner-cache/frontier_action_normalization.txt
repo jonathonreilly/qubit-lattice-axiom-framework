@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_action_normalization.py
-runner_sha256: 328523dde25966195f644b4ef62fc980774a48d06578f84377605680a03295f5
-timeout_sec: 600
+runner_sha256: a846e7a4794c0d6503117c9a074272b47f048f41823ef6edeb46e97f0870f5f6
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 78.20
+elapsed_sec: 47.08
 status: ok
 ----- stdout -----
 ================================================================================
-ACTION NORMALIZATION: CONVENTION-LOCKED COUPLING COEFFICIENT
+ACTION NORMALIZATION: CONVENTION-FREE SELECTION NO-GO
 ================================================================================
 
 Question: Is the coefficient c in S = L(1 - c*f) arbitrary?
@@ -89,10 +89,9 @@ It does NOT pick out c = 1 as a convention-free observable.
 The earlier 'verification' table that read 'YES' only at c = 1 was
 circular: it just printed 1 + c and tested whether 1 + c = 2.
 
-The honest read: c is fixed by the convention identifying f with the
-standard Newtonian potential Phi and by the chosen Poisson source
-normalization. See TEST 5 / SYNTHESIS for the convention-locked
-statement.
+The honest read: c is fixed only after an external convention
+identifies f with the physical potential Phi and chooses the Poisson
+source normalization. The finite runner does not make that selection.
 
 ================================================================================
 TEST 4: CONVERGENCE BASIN IN (c, G) PLANE
@@ -163,11 +162,11 @@ HONEST READ: PPN gamma=1 holds for any c > 0 once we accept the
 identification Phi = c*f/2. This means gamma alone does NOT fix c.
 The deflection ratio is (1+gamma) = 2 in PHI units, independent of c.
 
-WHAT FIXES c IS THE CONVENTION FOR f ITSELF:
+A CHOSEN f CONVENTION CAN NAME A REPRESENTATIVE c:
   Convention A (f = Phi):    requires c = 2 to match Schwarzschild
                               under the standard Newtonian Poisson source
-  Convention B (S = L(1-f)): the framework's choice (c = 1) absorbs the
-                              factor of 2 into the lattice Poisson source
+  Convention B (S = L(1-f)): uses c = 1 and absorbs the factor of 2
+                              into the lattice Poisson source
                               normalization
   Convention C (raw lattice f, no Phi identification): c is undetermined
 
@@ -209,46 +208,39 @@ ARGUMENT STRUCTURE:
    The metric g_tt = -(1 - c*f), g_rr = 1 + c*f gives gamma = 1
    for any positive c. Thus PPN gamma alone does NOT fix c.
 
-4. WHAT FIXES c IS THE FRAMEWORK CONVENTION ON f:
-   The framework's natural convention is Phi = f (the lattice scalar
-   f IS the Newtonian potential). Under that convention with the
-   standard Newtonian Poisson source nabla^2 f = -4*pi*G*rho, matching
-   g_tt = -(1 - 2*Phi) to -(1 - c*f) forces c = 2.
-   Alternatively, the framework's S = L(1-f) corresponds to c = 1
-   together with a Poisson source rescaled by a factor of 2.
+4. WHAT CAN NAME c IS AN EXTERNAL CONVENTION ON f:
+   If a later retained bridge chooses Phi = f and the standard
+   Newtonian source nabla^2 f = -4*pi*G*rho, matching
+   g_tt = -(1 - 2*Phi) to -(1 - c*f) names the representative c = 2.
+   If a later retained bridge instead chooses S = L(1-f), it names
+   c = 1 together with a Poisson source rescaled by a factor of 2.
 
 5. NARROW HONEST CLAIM:
-   * The action coefficient c is NOT a free parameter once we fix the
-     identification between the lattice scalar f and the Newtonian
-     potential Phi.
-   * The choice c = 1 corresponds to the convention f = Phi WITH a
-     Poisson source rescaled by a factor of 2 relative to textbook
-     Newtonian, so that S = L(1-f) reproduces Schwarzschild.
-   * The choice c = 2 corresponds to the convention f = Phi WITH the
-     textbook Newtonian Poisson source nabla^2 f = -4*pi*G*rho.
-   * Both choices reproduce Schwarzschild and PPN gamma = 1; the
-     difference is an overall convention choice, not new physics.
+   * The finite packet does not select c convention-free.
+   * A representative c can be named only after choosing the
+     lattice-scalar/physical-potential map and source normalization.
+   * c = 1 and c = 2 are different representatives of such choices;
+     neither is derived by this runner as a convention-free observable.
 
-This is a NARROWED claim: c is fixed by convention (not by light
-bending). The framework's natural convention does pick out a specific
-c value once we name what f is in terms of Phi and what source
-normalization the Poisson equation uses.
+This is a NARROWED no-go claim: c is not selected by light bending,
+self-consistency, or the finite scans here. A later retained bridge
+could choose a convention and then name a representative c.
 
 ================================================================================
 VERDICT
 ================================================================================
 
-NARROWED: The coefficient c in S = L(1 - c*f) is determined by the
-convention used to identify the lattice scalar f with the physical
-Newtonian potential Phi and by the chosen Poisson source normalization.
+NARROWED: The coefficient c in S = L(1 - c*f) is not determined
+convention-free by this packet. It becomes a convention representative
+only after a separate f/Phi map and source normalization are chosen.
 
 The reviewer's objection is partially correct: the coefficient is
 convention-dependent, not convention-free. There is a one-parameter
 rescaling family (c, G) -> (c/a, a*G) of equivalent theories.
 
-Once a convention is named, c is determined. With f = Phi and the
-textbook Newtonian source, c = 2. With S = L(1 - f) (i.e., c = 1),
-the Poisson normalization absorbs the missing factor of 2.
+Once a convention is named, c can be named inside that convention.
+For example, f = Phi plus the textbook Newtonian source gives c = 2;
+S = L(1 - f) gives c = 1 with a rescaled Poisson normalization.
 
 EARLIER INTERPRETATION RETRACTED:
 The earlier 'convention-free light bending' argument was incorrect.
@@ -258,6 +250,7 @@ table previously printed in this runner (defl(k)/defl(5k)) compared two
 massive probe momenta and had no analytical relation to the (1+c)
 null-vs-massive ratio. That table has been removed.
 
-Total runtime: 77.8s
+Total runtime: 46.7s
+
 ----- stderr -----
 

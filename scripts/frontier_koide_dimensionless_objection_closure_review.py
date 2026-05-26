@@ -1,30 +1,39 @@
 #!/usr/bin/env python3
-"""
-Koide dimensionless objection-closure review packet.
+"""Exact countermodel no-go for full dimensionless Koide closure.
 
-This runner lands the useful science from the objection-closure branch without
-promoting the branch's full closure language. It verifies:
+This runner verifies the finite two-channel and endpoint algebra without
+promoting the broader physical source/readout closure language. It checks:
 
   - zero-background source-response conditionally gives Q = 2/3,
   - a traceless background source Z changes Q and remains the residual,
   - selected-line local endpoint support conditionally gives delta = eta_APS,
   - ambient endpoint support leaves a spectator/free-source residual,
-  - retained observable completeness does not by itself erase those residuals.
+  - observable completeness does not by itself erase those residuals.
 """
 
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 from fractions import Fraction
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE = REPO_ROOT / "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md"
+LEDGER = REPO_ROOT / "docs/audit/data/audit_ledger.json"
+QUEUE = REPO_ROOT / "docs/audit/data/audit_queue.json"
+
+CLAIM_ID = "koide_dimensionless_note_2026-04-24"
+RUNNER_PATH = "scripts/frontier_koide_dimensionless_objection_closure_review.py"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
 
-def check(name: str, condition: bool, detail: str = "") -> bool:
+def check(name: str, condition: bool, detail: str = "", kind: str = "A") -> bool:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
-    line = f"  [{status}] {name}"
+    line = f"  [{status}] [{kind}] {name}"
     if detail:
         line += f"  ({detail})"
     print(line)
@@ -54,6 +63,29 @@ def z_expectation(weight_plus: Fraction) -> Fraction:
 
 
 ETA_APS = Fraction(2, 9)
+
+
+def note_boundary_checks() -> None:
+    banner("Part 0: note boundary and claim-status checks")
+    text = " ".join(NOTE.read_text(encoding="utf-8").split())
+    required = [
+        "Claim type:** no_go",
+        "Status:** exact countermodel no-go",
+        "not a physical source/readout closure theorem",
+        "does not force full dimensionless closure",
+        "does not claim",
+        "any new axiom or audit verdict",
+    ]
+    for phrase in required:
+        check(f"note boundary contains: {phrase}", phrase in text)
+
+    forbidden = [
+        "KOIDE_DIMENSIONLESS_RETAINED_CLOSURE",
+        "Admitted input",
+        "promoted to an open admission",
+    ]
+    for phrase in forbidden:
+        check(f"note omits stale closure phrase: {phrase}", phrase not in text)
 
 
 def delta_open(spectator: Fraction, endpoint_shift: Fraction) -> Fraction:
@@ -96,8 +128,8 @@ def part1_q_background_zero() -> None:
     )
 
 
-def part2_retained_z_observable() -> None:
-    banner("Part 2: retained Z label survives observable completeness")
+def part2_z_observable() -> None:
+    banner("Part 2: Z label survives observable completeness")
 
     # In the reduced two-channel basis, Z = diag(1,-1). It is central for the
     # diagonal C3 source action and obeys Z^2 = I.
@@ -162,30 +194,52 @@ def part4_delta_ambient_countermodels() -> None:
 
 
 def part5_verdict() -> None:
-    banner("Part 5: retained closure verdict")
+    banner("Part 5: closure no-go verdict")
 
     q_counterexample = q_from_background(Fraction(0), Fraction(1, 4))
     delta_counterexample = delta_open(Fraction(1, 2), Fraction(0))
 
-    q_closed_retained = q_counterexample == Fraction(2, 3)
-    delta_closed_retained = delta_counterexample == ETA_APS
-    full_closed_retained = q_closed_retained and delta_closed_retained
+    q_forced = q_counterexample == Fraction(2, 3)
+    delta_forced = delta_counterexample == ETA_APS
+    full_forced = q_forced and delta_forced
 
-    check("Q retained-only closure is blocked by traceless Z background", not q_closed_retained)
-    check("delta retained-only closure is blocked by ambient spectator source", not delta_closed_retained)
-    check("full dimensionless retained closure is not established", not full_closed_retained)
+    check("Q closure is blocked by traceless Z background", not q_forced)
+    check("delta closure is blocked by ambient spectator source", not delta_forced)
+    check("full dimensionless closure is not forced by the finite algebra", not full_forced)
+
+
+def audit_metadata_checks() -> None:
+    banner("Part 6: regenerated audit metadata")
+    if not LEDGER.exists() or not QUEUE.exists():
+        print("  audit metadata unavailable before pipeline")
+        return
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
+    row = ledger["rows"][CLAIM_ID]
+    queue = json.loads(QUEUE.read_text(encoding="utf-8"))["queue"]
+    queue_entry = next(e for e in queue if e["claim_id"] == CLAIM_ID)
+
+    check("ledger claim_type is no_go", row.get("claim_type") == "no_go", str(row.get("claim_type")))
+    check("ledger audit_status reset to unaudited", row.get("audit_status") == "unaudited")
+    check("ledger effective_status reset to unaudited", row.get("effective_status") == "unaudited")
+    check("ledger runner_path registered", row.get("runner_path") == RUNNER_PATH, str(row.get("runner_path")))
+    check("ledger has no direct deps", row.get("deps") == [], str(row.get("deps")))
+    check("no open dependency paths remain", row.get("open_dependency_paths") == [], str(row.get("open_dependency_paths")))
+    check("queue marks row ready", queue_entry.get("ready") is True, str(queue_entry.get("ready")))
+    check("descendant chain remains material", int(row.get("transitive_descendants") or 0) >= 70, str(row.get("transitive_descendants")), kind="B")
 
 
 def main() -> int:
     print("=" * 88)
-    print("Koide dimensionless objection-closure review packet")
+    print("Koide dimensionless countermodel no-go")
     print("=" * 88)
 
+    note_boundary_checks()
     part1_q_background_zero()
-    part2_retained_z_observable()
+    part2_z_observable()
     part3_delta_selected_line_conditional()
     part4_delta_ambient_countermodels()
     part5_verdict()
+    audit_metadata_checks()
 
     print()
     print("=" * 88)
@@ -194,18 +248,17 @@ def main() -> int:
     print("=" * 88)
 
     if FAIL_COUNT == 0:
-        print("KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW=TRUE")
-        print("KOIDE_DIMENSIONLESS_RETAINED_CLOSURE=FALSE")
-        print("Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE")
-        print("DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE")
-        print("FULL_DIMENSIONLESS_OBJECTION_CLOSES_LANE=FALSE")
-        print("CONDITIONAL_Q_CLOSES_IF_BACKGROUND_Z_ZERO=TRUE")
-        print("CONDITIONAL_DELTA_CLOSES_IF_SELECTED_LINE_LOCAL_AND_BASED=TRUE")
-        print("RESIDUAL_Q=derive_physical_background_source_zero_equiv_Z_erasure")
+        print("KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=TRUE")
+        print("FULL_DIMENSIONLESS_CLOSURE_FORCED_BY_FINITE_ALGEBRA=FALSE")
+        print("Q_FORCED_WITHOUT_Z_ZERO_LAW=FALSE")
+        print("DELTA_FORCED_WITHOUT_LINE_LOCAL_BASEPOINT_LAW=FALSE")
+        print("CONDITIONAL_Q_IF_BACKGROUND_Z_ZERO=TRUE")
+        print("CONDITIONAL_DELTA_IF_SELECTED_LINE_LOCAL_AND_BASED=TRUE")
+        print("RESIDUAL_Q=derive_physical_background_source_zero_or_Z_erasure")
         print("RESIDUAL_DELTA=derive_selected_line_local_boundary_source_and_based_endpoint")
         return 0
 
-    print("KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW=FALSE")
+    print("KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=FALSE")
     return 1
 
 

@@ -9565,18 +9565,6 @@
       "to": "self_consistency_forces_poisson_note"
     },
     {
-      "from": "finite_rank_source_to_metric_theorem_note",
-      "to": "oh_schur_boundary_action_note"
-    },
-    {
-      "from": "finite_rank_source_to_metric_theorem_note",
-      "to": "finite_rank_gravity_residual_helper_note_2026-04-14"
-    },
-    {
-      "from": "finite_rank_source_to_metric_theorem_note",
-      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
-    },
-    {
       "from": "fixed_field_complex_grown_basin_v2_note",
       "to": "claude_complex_action_grown_companion_note"
     },
@@ -42591,7 +42579,7 @@
         "bh_entropy_rt_ratio_widom_no_go_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a09128dafd5c549b21fb581d4fdede4d5e829f184395ca419bf98e0266f71afa",
+      "note_hash": "bbb3b3c0a96e43eaf842ef283e892aa4105f9524db41113a36e25091556217ca",
       "path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
       "title": "Bekenstein-Hawking Entropy Bounded Lattice Companion"
@@ -53526,16 +53514,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "oh_schur_boundary_action_note",
-        "finite_rank_gravity_residual_helper_note_2026-04-14",
-        "coarse_grained_exterior_law_helper_note_2026-04-14"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b4031c56b945a91835da345f7bcb5efbef8313a4b72c7bd7eb18bf714e832eb1",
+      "note_hash": "04d49f8729b06015e07fdec6aadd89254ea3273ef8392026d8dc783ed8f67e06",
       "path": "docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_finite_rank_source_to_metric_theorem.py",
-      "title": "Finite-Rank Source-to-Metric Theorem Path via Exact Boundary Action and Coarse-Grained Exterior Law"
+      "title": "Finite-Rank Source-to-Metric Self-Contained Finite-Lattice Certificate"
     },
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
       "claim_id": "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30",
@@ -60321,15 +60305,15 @@
     },
     "koide_dimensionless_note_2026-04-24": {
       "claim_id": "koide_dimensionless_note_2026-04-24",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "868da47184659d5156ec84b699a76be33c0a1979bc46e557d4132ee6a71c1c32",
+      "note_hash": "f7c86c107d52f87023be49dc86ea1027ca238a976cfd93339f329aa6823043b6",
       "path": "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_dimensionless_objection_closure_review.py",
-      "title": "Koide Dimensionless Objection-Closure Review Packet"
+      "title": "Koide Dimensionless Countermodel No-Go"
     },
     "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16": {
       "claim_id": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
@@ -77489,10 +77473,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c8e1f1a398089f5b35169eb28a545fa76b9b73cd57d720b99dfed17b3459a7d2",
+      "note_hash": "0c4276c1ffd33b5fe51641eb4af5dc2a4385acc0226514dea1d920f9c9c8baa7",
       "path": "docs/STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py",
-      "title": "Staggered Scalar Parity / Lapse Coupling \u2014 External Narrow Theorem"
+      "title": "Staggered Scalar Parity / Lapse Coupling Algebra Certificate"
     },
     "staggered_self_consistent_two_body_note_2026-04-11": {
       "claim_id": "staggered_self_consistent_two_body_note_2026-04-11",
@@ -84947,6 +84931,7 @@
     "fifth_family_radial_boundary_note",
     "fine_h_family_universality_note",
     "finite_rank_gravity_residual_helper_note_2026-04-14",
+    "finite_rank_source_to_metric_theorem_note",
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30",
     "flagship_paper_contribution_statement_note",
     "fm_transfer_note",
@@ -85496,27 +85481,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 597,
+      "bounded_theorem": 596,
       "decoration": 1,
       "meta": 191,
-      "no_go": 74,
+      "no_go": 75,
       "none": 1458,
       "open_gate": 48,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1021,
+      "bounded_theorem": 1020,
       "decoration": 1,
       "meta": 191,
-      "no_go": 177,
+      "no_go": 178,
       "none": 432,
       "open_gate": 125,
       "positive_theorem": 593
     },
-    "edge_count": 9776,
+    "edge_count": 9773,
     "leaf_count": 785,
     "node_count": 2540,
-    "root_count": 839,
+    "root_count": 840,
     "runners_with_path": 2106
   }
 }

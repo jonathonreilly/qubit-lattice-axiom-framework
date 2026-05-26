@@ -54,10 +54,10 @@ the runner computes:
    `S_max = |dA| * log(chi_eff)`.
 
 3. **Finite-L RT ratios.** On the reviewed small 2D surface the mean ratio
-   `S_ent / (|dA| * log(chi_eff))` is about `0.2364`; individual values for
+   `S_ent / (|dA| * log(chi_eff))` is about `0.2353`; individual values for
    `L = 8, 10, 12, 16, 20, 24, 32` are approximately
-   `0.241, 0.247, 0.245, 0.236, 0.236, 0.231, 0.220`. On the reviewed 3D
-   sizes `L = 4, 6, 8, 10`, the mean is about `0.1222`.
+   `0.2436, 0.2336, 0.2528, 0.2436, 0.2246, 0.2285, 0.2205`. On the reviewed
+   3D sizes `L = 4, 6, 8, 10`, the mean is about `0.1224`.
 
 4. **BH comparison boundary.** The finite 2D mean is numerically close to
    `1/4`, but that is only a bounded comparison number. It is not a retained

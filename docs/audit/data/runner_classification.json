@@ -7732,12 +7732,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 2,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "C",
       "runner": "scripts/frontier_finite_rank_source_to_metric_theorem.py"
     },
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
@@ -11992,12 +11992,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 3,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/frontier_koide_dimensionless_objection_closure_review.py"
     },
     "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16": {
@@ -21172,11 +21172,11 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 1,
+        "B": 4,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py"
     },
@@ -37170,12 +37170,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 2,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_first_order_coframe_unconditionality_no_go.py": {
@@ -40269,12 +40269,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 3,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_koide_dweh_cyclic_compression.py": {
@@ -46488,11 +46488,11 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 1,
+        "B": 4,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "exists": true
     },
@@ -55413,13 +55413,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 321,
+    "decoration_candidates": 323,
     "dominant_class_distribution": {
       "A": 229,
-      "B": 274,
-      "C": 748,
+      "B": 275,
+      "C": 749,
       "D": 299,
-      "none": 441
+      "none": 439
     },
     "runners_classified": 1991,
     "runners_with_C": 970,

@@ -8008,12 +8008,12 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": null,
       "runner": "scripts/frontier_g_bare_constraint_surface_check.py"
     },
     "g_bare_derivation_note": {
@@ -37398,12 +37398,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.py": {
@@ -55618,13 +55618,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 335,
+    "decoration_candidates": 334,
     "dominant_class_distribution": {
       "A": 236,
-      "B": 281,
+      "B": 280,
       "C": 750,
       "D": 299,
-      "none": 435
+      "none": 436
     },
     "runners_classified": 2001,
     "runners_with_C": 973,

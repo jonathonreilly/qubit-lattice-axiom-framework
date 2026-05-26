@@ -93337,8 +93337,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "cl3_color_automorphism_theorem",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 6,
       "effective_status": "unaudited",
@@ -93351,7 +93350,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "2f0c3e471ab0052b97a2e21e5e87144181ea66efa403baae9ae1d5db5eb07631",
+      "note_hash": "0826315a516f2b7ddbe283c9d2adce6eb11e6558941dab82d3e7b7c796b75673",
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -93869,7 +93868,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "relabel_date": "2026-05-06T17:45:26.976865+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
@@ -93880,7 +93879,7 @@
         "total_pass": 0
       },
       "runner_path": "scripts/frontier_g_bare_constraint_surface_check.py",
-      "title": "g_bare Constraint vs Convention Disambiguation Theorem",
+      "title": "g_bare Conditional Algebra Corollary",
       "transitive_descendants": 910,
       "verdict_rationale": null
     },
@@ -94819,13 +94818,13 @@
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
-      "direct_in_degree": 14,
+      "direct_in_degree": 13,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 16.838,
+      "load_bearing_score": 16.336,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -95159,7 +95158,7 @@
       },
       "runner_path": "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py",
       "title": "g_bare Rescaling Conditional Algebra Lemma",
-      "transitive_descendants": 914,
+      "transitive_descendants": 913,
       "verdict_rationale": null
     },
     "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17": {

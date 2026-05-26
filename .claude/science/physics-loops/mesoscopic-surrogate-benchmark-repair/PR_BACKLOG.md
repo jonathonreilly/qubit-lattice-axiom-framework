@@ -1,6 +1,8 @@
 # PR Backlog
 
-PR not opened yet. Expected title:
+PR opened: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1937
+
+Title:
 
 ```text
 [physics-loop] mesoscopic-surrogate-benchmark-repair bounded-support

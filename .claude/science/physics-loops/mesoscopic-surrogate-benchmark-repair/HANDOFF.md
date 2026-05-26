@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1937
 
 This block repairs `mesoscopic_surrogate_localization_sweep_note` by replacing
 the old prose dominance judgment with an explicit finite benchmark asserted in

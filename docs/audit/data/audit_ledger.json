@@ -271167,22 +271167,42 @@
       "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure over the supplied operator inputs, not a definition, renaming, numerical match, or external comparator check. The runner source hard-codes the specified finite matrices as inputs but then actually verifies the projector ranks, matrix-unit generation, commutant dimension, observable descent, and irreducibility checks. The negative no-proper-quotient boundary passes the restricted no-go gate because attack routes such as preserving only translations, dropping C3, approximate reduction, nonlinear quotienting, or physical reinterpretation all leave the stated exact full-algebra quotient scope."
     },
     "three_generation_structure_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
+      "audit_date": "2026-05-26T19:49:58.548017+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope."
+        },
+        "dep_claim_type": {
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 30.439,
+        "runner_hash": "367b0322a27634056aa9017864859e2b4f9e1ea5ddcbeea9b01577c01fda04fb",
+        "transitive_descendants": 693
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-fresh-three-generation-structure-C75Ktt-2026-05-26-pass1",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained direct dependency is authoritative for item (4) only. The primary runner closes the finite corner/Wilson/Hamming-weight side for items (1)-(2) and prints a bounded physical-identification assumption, but it does not prove item (3), and the source admits no standalone retained no-rooting theorem packet currently exists.",
       "claim_id": "three_generation_structure_note",
-      "claim_scope": null,
+      "claim_scope": "Attempted bounded theorem for the four local structural items on the admitted staggered-Dirac/Z^3 surface: corner/Hamming-weight spectrum, hw=1 lightest nonzero-mass triplet, Hamiltonian Cl(3) no-rooting, and retained M_3(C)/no-proper-quotient; physical-species, SM-generation, substrate, CKM, and full matter-content claims are excluded.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-26T19:49:58.548017+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -271190,19 +271210,19 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 42,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 30.439,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The in-scope statement bundles four local structural items: exact corner/orbit algebra 8=1+1+3+3, hw=1 as the lightest nonzero-mass triplet on Z^3, rooting not well-defined in Hamiltonian Cl(3) on Z^3, and exact M_3(C)/no proper exact quotient on the hw=1 triplet.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3f3a8dea51481ac17608afe42072d0eab1788669c9d886e9019aec60f1facab7",
       "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: either narrow this row to the runner-backed spectral structure plus retained M_3(C)/no-proper-quotient dependency, or add a retained-grade no-rooting narrow theorem as a one-hop dependency before re-auditing the full four-item scope.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -271404,18 +271424,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 1,
+        "B": 1,
+        "C": 6,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_generation_fermi_point.py",
       "title": "Three-Generation Matter Structure Note",
       "transitive_descendants": 693,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source scope bundles four items, but the restricted packet closes only the spectral/Wilson/Hamming items and the M_3(C)/no-proper-quotient item. Why this blocks: the negative rooting-not-well-defined subclaim has no retained one-hop theorem in the packet, the primary runner does not test it, and under no-go discipline the packet cannot support a clean exclusion result for that subclaim. Repair target: add and audit a no-rooting narrow theorem as a direct retained-grade dependency, or narrow this row to the spectral plus M_3(C)/no-quotient content. Claim boundary until fixed: no rooting-exclusion, physical-species, SM-generation, substrate, CKM, or full matter-content closure is retained from this row."
     },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
       "audit_date": "2026-05-23T12:56:41.423657+00:00",

@@ -12445,16 +12445,16 @@
       "runner": "scripts/frontier_koide_Q_eq_3delta_identity.py"
     },
     "koide_q_delta_linking_relation_theorem_note_2026-04-20": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 3,
-        "B": 0,
+        "A": 0,
+        "B": 2,
         "C": 0,
-        "D": 9
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "D",
-      "runner": "scripts/frontier_koide_q_delta_linking_relation.py"
+      "runner": "scripts/frontier_koide_q_delta_formal_ratio_repair.py"
     },
     "koide_q_delta_linking_relation_theorem_note_2026-04-20_note_2026-05-17": {
       "assert_count": 0,
@@ -40694,16 +40694,16 @@
       "dominant_class": "A",
       "exists": true
     },
-    "scripts/frontier_koide_q_delta_linking_relation.py": {
-      "assert_count": 0,
+    "scripts/frontier_koide_q_delta_formal_ratio_repair.py": {
+      "assert_count": 1,
       "claims": [
         "koide_q_delta_linking_relation_theorem_note_2026-04-20"
       ],
       "counts": {
-        "A": 3,
-        "B": 0,
+        "A": 0,
+        "B": 2,
         "C": 0,
-        "D": 9
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "D",

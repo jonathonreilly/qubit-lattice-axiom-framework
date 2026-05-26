@@ -54345,10 +54345,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1ce03c8aad36aded0e3b1e9e3dcfd399ea2ac8be488c846659433143e7057184",
+      "note_hash": "6e9733998c8a79e5a7f3be30d1c0fd3ad48a435448b06e6cfb40f2edd2392a49",
       "path": "docs/GATE_B_FARFIELD_NOTE.md",
       "runner_path": "scripts/gate_b_farfield_harness.py",
-      "title": "Gate B Far-Field: Grown Geometry at h=0.5"
+      "title": "Gate B Far-Field Bounded Harness Certificate"
     },
     "gate_b_grown_distance_law_note": {
       "claim_id": "gate_b_grown_distance_law_note",

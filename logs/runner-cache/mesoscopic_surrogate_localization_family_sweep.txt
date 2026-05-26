@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/mesoscopic_surrogate_localization_family_sweep.py
-runner_sha256: b6ffa87e25f0f510f8ca6939f36a82100f118c46702bcf7af96f6d0a4fcc20f3
+runner_sha256: a4010d8a324d5fafaa4a366ded41e1df1882710981765206b0b122598497f219
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.0
+elapsed_sec: 6.01
 status: ok
 ----- stdout -----
 ================================================================================================
 MESOSCOPIC SURROGATE LOCALIZATION FAMILY SWEEP
-  Retained 3D ordered-lattice valley-linear family
+  Fixed 3D ordered-lattice valley-linear family
   h=0.5, W=8, segment_L=6, base_topN=196, source_z=3.0, strength=5e-05
   Goal: can a more localized source family preserve two-stage sourced-response
         stability as well as, or better than, the broad top-N control?
@@ -43,11 +43,29 @@ gaussian     2.0     13     13   0.357   0.666  0.9982  0.9487  +0.0000116  +0.0
 gaussian     2.5     17     17   0.428   0.703  0.9942  0.8868  +0.0000237  +0.0000105
 gaussian     3.0     19     19   0.492   0.735  0.9936  0.8598  +0.0000343  +0.0000189
 
-BEST ROW
+RAW BEST SCORE/WIDTH ROW
   square 0 with support2=1, score=1.0000, width_ratio=1.0000, capture2=0.107
 
+MESOSCOPIC BENCHMARK RULE
+  support2 >= 25, capture1/capture2 >= 0.95, score >= 0.999, |width_ratio - 1| <= 0.05
+BENCHMARK ACCEPTED ROWS
+  PASS: topN 25 support2=25 capture1=0.988 capture2=0.993 score=0.9993 width_ratio=0.9876
+  PASS: topN 49 support2=33 capture1=1.000 capture2=1.000 score=0.9994 width_ratio=1.0205
+  PASS: topN 81 support2=33 capture1=1.000 capture2=1.000 score=0.9994 width_ratio=1.0205
+  PASS: topN 121 support2=33 capture1=1.000 capture2=1.000 score=0.9994 width_ratio=1.0205
+  PASS: topN 144 support2=33 capture1=1.000 capture2=1.000 score=0.9994 width_ratio=1.0205
+  PASS: topN 169 support2=33 capture1=1.000 capture2=1.000 score=0.9994 width_ratio=1.0205
+  PASS: topN 196 support2=33 capture1=1.000 capture2=1.000 score=0.9994 width_ratio=1.0205
+  PASS: topN 225 support2=33 capture1=1.000 capture2=1.000 score=0.9994 width_ratio=1.0205
+PASS: at least one finite-sweep row satisfies the explicit mesoscopic benchmark
+PASS: no square/Gaussian row satisfies the mesoscopic benchmark
+PASS: high-score localized rows fail by capture/support rather than score
+PASS: the benchmark-supported rows are broad top-N controls in this finite sweep
+
 SAFE READ
-  - The more localized families can be stable, but the best score/width tradeoff
-    still favors a fairly broad surrogate support.
-  - If a narrower family wins on support, it should show up above with only a
-    modest score penalty; otherwise, top-N remains the least-bad mesoscopic control.
+  - The raw score/width winner is point-like and is not a mesoscopic source.
+  - Under the explicit finite-sweep benchmark above, only broad top-N rows pass.
+  - This is a bounded benchmark result, not a retained source-control theorem.
+
+----- stderr -----
+

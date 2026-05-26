@@ -1350,7 +1350,11 @@
     },
     {
       "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "to": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
+      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
@@ -19561,10 +19565,6 @@
       "to": "ordered_lattice_quasi_persistent_relaunch_2d_note"
     },
     {
-      "from": "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-      "to": "cpt_exact_note"
-    },
-    {
       "from": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
       "to": "cpt_exact_note"
     },
@@ -22195,18 +22195,6 @@
     {
       "from": "radian_unit_convention_reclassification_note_2026-05-10_radianconv",
       "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
-    },
-    {
-      "from": "rconn_derived_note",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
-    },
-    {
-      "from": "rconn_derived_note",
-      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
-    },
-    {
-      "from": "rconn_derived_note",
-      "to": "yukawa_color_projection_theorem"
     },
     {
       "from": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
@@ -25173,6 +25161,18 @@
       "to": "site_phase_cube_shift_intertwiner_note"
     },
     {
+      "from": "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26",
+      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26",
+      "to": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26",
+      "to": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "three_generation_observable_dep_chain_audit_note_2026-05-02",
       "to": "three_generation_observable_theorem_note"
     },
@@ -27375,14 +27375,6 @@
     {
       "from": "yt_eft_bridge_theorem",
       "to": "yt_boundary_theorem"
-    },
-    {
-      "from": "yt_ew_color_projection_theorem",
-      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
-    },
-    {
-      "from": "yt_ew_color_projection_theorem",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
       "from": "yt_ew_coupling_bridge_note",
@@ -42106,13 +42098,14 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5c741a1d97291dc222880fd3602f9940a7ca62f223a43ed4a8e02b96c9017c2e",
+      "note_hash": "b29f65b2935cb0835a7cb3de1a8f6c68fd27bbac019c02a4c87c62e574bdfcd4",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
-      "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"
+      "title": "Axiom-First Reflection Positivity: Staggered-Only Sector"
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
@@ -64267,7 +64260,7 @@
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "1fb1770440de2d710622c95a21a63272d32d8ed79c425c17dbf7e27c58aa7a27",
+      "note_hash": "85a794f976eff357486d3372f21dd2c307fb95480c2cccaecbc1efaa9c395b78",
       "path": "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_localization_family_sweep.py",
       "title": "Mesoscopic Surrogate Localization Sweep"
@@ -66747,7 +66740,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "be7c74a63ad502579b09e3a2d9e093096ea4a47c767b2aadb9b6aabf80f2ccb1",
+      "note_hash": "1acedf08210e81331c2ba2f5d78de91d0f1418ec21f398decd8821e9861606a7",
       "path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
@@ -67391,14 +67384,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "cpt_exact_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "70c5ef098312c15ca3034fc6f55d12b30936e484854a8999b9a4412a2bcbb75b",
+      "note_hash": "b85c6879cb84439eae95f8eef56acc7a27beaf7e42bc300553636475a15050cb",
       "path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
-      "title": "Parity-Operator Basis: Dimension-5 LV Algebraic P-Weight Identities on the Staggered SME-Style Basis (Odd Total Spatial-Index Parity Sector)"
+      "title": "Parity-Operator Basis: Formal Dimension-5 P-Weight Identities"
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
       "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
@@ -73784,21 +73775,15 @@
     },
     "rconn_derived_note": {
       "claim_id": "rconn_derived_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (conditional on admitted premise (M))",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "yukawa_color_projection_theorem"
-      ],
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "note_hash": "c4c44671aea333635999bbcb333209c60851630aad23371df5e116cb89d47ded",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a16e4d22dcd6f4fa2d7f082424876b30635bdb09c01f16e50891e16ae34d2443",
       "path": "docs/RCONN_DERIVED_NOTE.md",
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate (conditional on admitted matching rule (M))"
+      "runner_path": "scripts/rconn_matching_rule_nogo_certificate.py",
+      "title": "R_conn Matching-Rule No-Go With Exact Fierz Support"
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
@@ -79437,6 +79422,22 @@
       "runner_path": "scripts/audit_companion_three_generation_local_algebra_exact_2026_05_10.py",
       "title": "Three-Generation Local Binomial Count Narrow Theorem"
     },
+    "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26": {
+      "claim_id": "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "918f90ef71f58f416b9310adcc1f9b2dc998cfda7fdb16aaf9f61a2e5ebf40cf",
+      "path": "docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py",
+      "title": "Three-Generation No-Proper-Quotient via Burnside + Characters Bridge"
+    },
     "three_generation_observable_count_corollary_note_2026-05-03": {
       "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
       "claim_type_author_hint": "positive_theorem",
@@ -81044,12 +81045,8 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_h025_control_batch.py",
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "note_hash": "5d0dd5398a9d9a15d1258c509230edfd71fe1ed24901c83ad9b7b13007f7c100",
+      "helper_runner_paths": [],
+      "note_hash": "ffdd7f892c26f05b0fb0a410e447ee52e4523aeb89daaa73f028cee52261cb69",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam1 Seed0 Control Note"
@@ -83104,20 +83101,15 @@
     },
     "yt_ew_color_projection_theorem": {
       "claim_id": "yt_ew_color_projection_theorem",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
-      ],
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "note_hash": "77da6f51bc39f1ee4bdae464dbd255c3cc1c923f6d060bb8f4ec24a4ccd00d2b",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "022edcd031e5ab176496b512925223b6841c50741c43ab62e3a9b98458af188e",
       "path": "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "title": "Color-Singlet Projection Theorem for EW Couplings"
+      "runner_path": "scripts/yt_ew_kappa_family_nogo_certificate.py",
+      "title": "EW Color Projection Kappa-Family No-Go"
     },
     "yt_ew_coupling_bridge_note": {
       "claim_id": "yt_ew_coupling_bridge_note",
@@ -85173,6 +85165,7 @@
     "ordered_lattice_quasi_persistent_relaunch_2d_note",
     "packet_memory_note",
     "paper_outline_2026-04-12",
+    "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
     "persistent_inertial_object_probe_note",
     "persistent_object_adaptive_readout_note",
     "persistent_object_adaptive_readout_v2_note",
@@ -85231,6 +85224,7 @@
     "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28",
     "qubit_axiom_hardening_note_2026-05-20",
     "radial_scaling_protected_angle_narrow_theorem_note_2026-05-02",
+    "rconn_derived_note",
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
     "reopened_lane_checklist",
     "replay_environment_note",
@@ -85453,6 +85447,7 @@
     "yt_bridge_hessian_selector_note_2026-05-17",
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
+    "yt_ew_color_projection_theorem",
     "yt_ew_coupling_bridge_note_2026-05-17",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
     "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
@@ -85471,27 +85466,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 596,
+      "bounded_theorem": 595,
       "decoration": 1,
       "meta": 191,
-      "no_go": 72,
+      "no_go": 74,
       "none": 1459,
       "open_gate": 48,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1021,
+      "bounded_theorem": 1020,
       "decoration": 1,
       "meta": 191,
-      "no_go": 175,
+      "no_go": 177,
       "none": 432,
       "open_gate": 125,
       "positive_theorem": 593
     },
-    "edge_count": 9776,
-    "leaf_count": 784,
-    "node_count": 2538,
-    "root_count": 835,
-    "runners_with_path": 2102
+    "edge_count": 9774,
+    "leaf_count": 785,
+    "node_count": 2539,
+    "root_count": 838,
+    "runners_with_path": 2103
   }
 }

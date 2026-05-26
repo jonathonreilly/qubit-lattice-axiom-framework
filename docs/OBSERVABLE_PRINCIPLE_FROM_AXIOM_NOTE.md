@@ -10,29 +10,36 @@ promoting any cited upstream row;
 generator step on the runner block, conditional on the P1 Tier-A
 admission**, per audit-lane verdict that unconditional
 axiom-to-observable closure is not supported. P1 stays admitted; the
-Tier-A portfolio is not extended.
+Tier-A portfolio is not extended;
+2026-05-26 audit repair restores P2 phase-blind scalar-generator
+selection as an explicit conditional premise. The runner checks that
+the selected candidate is phase-blind on the finite block, but it does
+not derive the full generator-classification bridge.
 **Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
-the runner block, conditional on the P1 Tier-A admission; runner-local
-algebraic corollaries P2, P3, P4 are checked in §"Runner-local
-derivation of P2/P3/P4").
+the runner block, conditional on the P1 Tier-A admission and the P2
+phase-blind scalar-generator selection premise; runner-local algebraic
+corollaries P3 and P4 are checked in §"P2 consistency checks and
+runner-local derivation of P3/P4").
 **Headline (post-2026-05-25 narrowing):** *Given the P1 Tier-A admission
-(scalar observables additive over independent subsystems), the unique
-finite-algebra additive CPT-even scalar generator on the runner
-staggered block is `W = log|det(D+J)|`, and its exact local
-source-derivative algebra is the in-scope theorem-grade content of this
-note.* Unconditional axiom-to-observable closure (i.e. derivation of P1
-itself from retained primitives) is explicitly **out of scope** and is
-not asserted here.
+(scalar observables additive over independent subsystems) and P2
+(scalar bosonic generators are phase-blind functions of the determinant
+amplitude), the unique finite-algebra additive CPT-even scalar
+generator on the runner staggered block is `W = log|det(D+J)|`, and its
+exact local source-derivative algebra is the in-scope theorem-grade
+content of this note.* Unconditional axiom-to-observable closure (i.e.
+derivation of P1 or P2 from retained primitives) is explicitly **out of
+scope** and is not asserted here.
 **Claim scope (post-2026-05-07 scope narrowing; further narrowed
 2026-05-25):** the load-bearing claim of this note is the **conditional
 exact-algebra statement** on the exact minimal hierarchy block,
-conditional on the P1 Tier-A admission:
+conditional on the P1 Tier-A admission and the P2 phase-blind
+scalar-generator selection premise:
 
-> **Given** the four explicitly-admitted premises P1 (scalar additivity on
-> independent subsystems), P2 (CPT-even phase blindness), P3 (continuity /
-> minimal regularity), and P4 (normalization choice up to overall constant),
-> the following exact lattice-algebra identities hold on the exact minimal
-> hierarchy block: (1) the unique additive CPT-even scalar generator is
+> **Given** P1 (scalar additivity on independent subsystems), P2
+> (CPT-even phase-blind scalar-generator selection), finite-block
+> continuity/regularity, and the zero-source normalization convention,
+> the following exact lattice-algebra identities hold on the exact
+> minimal hierarchy block: (1) the unique additive CPT-even scalar generator is
 > `W = log|det(D+J)|`; (2) local scalar observables are exact source
 > derivatives of `W`; (3) the closed-form Matsubara identity matches
 > `W(j)` to the exact hierarchy curvature kernel; (4) that kernel is
@@ -45,15 +52,15 @@ admitted selection premises with the role classifications recorded in
 closure GIVEN those premises is the load-bearing content; that is what
 the runner verifies.
 
-As of the 2026-05-09 update (see §"Runner-local derivation of P2/P3/P4"
-below), three of the four premises (P2 CPT-even phase blindness, P3
-continuity / minimal regularity, P4 normalization choice) are treated as
-runner-local algebraic consequences once the registered `CPT_EXACT_NOTE`
-structure and finite-block regularity are admitted. P1 (scalar additivity
-on independent subsystems) remains admitted as a physical-principle premise.
-The conditional load-bearing statement is unchanged in form, and the audit row
-remains `audited_conditional`; this note does **not** promote
-`CPT_EXACT_NOTE` or any upstream row.
+As of the 2026-05-26 update (see §"P2 consistency checks and
+runner-local derivation of P3/P4" below), P2 is no longer represented as
+derived by the runner. The runner verifies that the selected candidate
+`W = log|det(D+J)|` is phase-blind/even on the finite staggered block,
+but the broader classification step selecting phase-blind determinant
+amplitude functionals as the physical scalar bosonic class remains an
+explicit conditional premise. P3 (continuity / minimal regularity) and
+P4 (normalization choice) remain runner-local finite-block consequences
+and conventions. P1 and P2 are the admitted physical-selection premises.
 
 The `v = 246.28 GeV` **numerical readout** in §"Consequence for v"
 depends on the canonical hierarchy baseline
@@ -87,16 +94,20 @@ and its machine-readable sidecar `docs/audit/data/tier_a_admissions.json`
   chain-satisfying only at `retained_bounded`, so dependents of this
   note resolve cleanly as bounded rather than blocked.
 - **Out-of-scope of this note's load-bearing theorem:** the
-  derivation of P1 itself from retained primitives. The conditional
+  derivation of P1 or P2 from retained primitives. The conditional
   load-bearing theorem of this note is the finite-algebra
-  `log|det(D+J)|` generator step on the runner block **given P1**, not
-  the unconditional axiom-to-observable closure.
-- **Runner-local corollaries (not separate admissions):** P2 (CPT-even
-  phase blindness), P3 (continuity / minimal regularity), and P4
-  (normalization choice) are checked in §"Runner-local derivation of
-  P2/P3/P4" as algebraic consequences of the registered
-  staggered-block / `CPT_EXACT_NOTE` structure plus finite-block
-  polynomial regularity and zero-source baseline convention.
+  `log|det(D+J)|` generator step on the runner block **given P1 and
+  P2**, not the unconditional axiom-to-observable closure.
+- **P2 (admitted in this row's conditional theorem):** scalar bosonic
+  observable generators are phase-blind at the determinant level, i.e.
+  they depend on the amplitude class `|Z|` rather than on the fermionic
+  phase of `Z`. The runner checks candidate consistency with this
+  premise; it does not derive the full scalar-generator classification.
+- **Runner-local corollaries (not separate admissions):** P3
+  (continuity / minimal regularity) and P4 (normalization choice) are
+  checked in §"P2 consistency checks and runner-local derivation of
+  P3/P4" as finite-block polynomial regularity and zero-source baseline
+  convention.
 
 This note does **not** extend the Tier-A portfolio; it only narrows
 its own theorem-grade content to what the P1 admission actually
@@ -110,13 +121,13 @@ language about effective actions and order parameters?
 
 ## Answer
 
-**Conditionally on the P1 Tier-A admission** (scalar additivity on
-independent subsystems), the finite-algebra `log|det(D+J)|` generator
-step on the exact minimal hierarchy block closes the axiom-to-observable
-map for that selected generator. Unconditional axiom-to-observable
-closure (deriving P1 itself from retained primitives) is **not**
-claimed by this note and remains the open path per the Tier-A
-registry.
+**Conditionally on P1 and P2** (scalar additivity on independent
+subsystems, and phase-blind scalar-generator selection), the
+finite-algebra `log|det(D+J)|` generator step on the exact minimal
+hierarchy block closes the axiom-to-observable map for that selected
+generator. Unconditional axiom-to-observable closure (deriving P1 or
+P2 from retained primitives) is **not** claimed by this note and
+remains the open path per the Tier-A registry and the audit verdict.
 
 The key step is not another determinant fit. It is the additive structure of
 the exact Grassmann Gaussian.
@@ -299,9 +310,9 @@ premises remain admitted; this note does not derive them.
 
 ## Honest status
 
-Under the **conditional scope** (P1 admitted; P2/P3/P4 checked as
-runner-local consequences once the registered staggered-block/CPT structure is
-admitted — see §"Runner-local derivation of P2/P3/P4" below), the hierarchy
+Under the **conditional scope** (P1 and P2 admitted; P3/P4 checked as
+runner-local finite-block consequences — see §"P2 consistency checks and
+runner-local derivation of P3/P4" below), the hierarchy
 closure is as clean as the current framework can make it on the in-scope
 axiom-to-observable map.
 
@@ -311,14 +322,15 @@ same-surface plaquette evaluation and its downstream normalization chain
 rather than in the axiom-to-observable algebra itself.
 
 The unconditional retention question — whether P1 (scalar additivity on
-independent subsystems) and the cited upstream structure can be ratified
-enough for this row to move beyond the current bounded conditional surface —
+independent subsystems), P2 (phase-blind scalar-generator selection), and
+the cited upstream structure can be ratified enough for this row to move
+beyond the current bounded conditional surface —
 is recorded in
 `OBSERVABLE_PRINCIPLE_AUDIT_NOTE_2026-05-02.md` §4 ("Path to retention")
 and is **not** in scope for this note. This revision narrows the physical
 selection-premise list, but it does not change audit status; the audit lane
 must still independently decide whether the cited upstream structure and the
-remaining P1 premise close cleanly.
+remaining P1/P2 premises close cleanly.
 
 ## Audit-named conditional scope (2026-05-07 scope narrowing)
 
@@ -348,29 +360,31 @@ reasons:
   narrowing makes that admission part of the load-bearing
   **statement**, not just a footnote, so downstream rows that cite
   this note inherit the conditional shape directly.
-- The unconditional path (deriving P1-P4 from retained primitives) is
+- The unconditional path (deriving P1/P2 from retained primitives) is
   itself research-grade. P1 (additivity-on-independent-subsystems) is
   a defining property of physical scalar observables and is not
   derivable from the lattice axiom alone without an additional
-  "physical scalar observable" classification axiom. P2 chains on
-  `cpt_exact_note`, which is itself `audited_conditional`. That
+  "physical scalar observable" classification axiom. P2 needs a
+  phase-blind determinant-amplitude generator classification theorem
+  beyond the finite candidate-evenness check. That
   unconditional path remains the open route to retention but is not
   undertaken here.
 
 **Conditional load-bearing statement (this note):**
 
-> Conditional on premises P1-P4, the four exact-algebra identities (1-4)
-> in the Claim Scope hold verbatim on the exact minimal hierarchy block.
+> Conditional on premises P1/P2, with P3/P4 supplied by finite-block
+> regularity and zero-source convention, the four exact-algebra identities
+> (1-4) in the Claim Scope hold verbatim on the exact minimal hierarchy block.
 
 **Out-of-scope for this note (cited only):**
 
-> Derivation of P1-P4 from retained primitives. Numerical `v` readout.
+> Derivation of P1/P2 from retained primitives. Numerical `v` readout.
 > Hierarchy baseline `M_Pl * alpha_LM^16`. Measurement comparator
 > `v_meas`.
 
 Downstream rows that cite this note as authority must therefore cite it
 in conditional form: *"…follows from `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE`
-**given P1-P4**…"*. This is the same citation discipline already
+**given P1/P2**…"*. This is the same citation discipline already
 required by §"Out of scope" below; the 2026-05-07 scope narrowing
 elevates it from convention to declared load-bearing shape.
 
@@ -384,18 +398,22 @@ This note implements the second branch; the audit row may now be
 re-evaluated against the conditional load-bearing statement above
 rather than the unconditional 2026-04-13 framing.
 
-## Runner-local derivation of P2/P3/P4 (2026-05-09)
+## P2 consistency checks and runner-local derivation of P3/P4 (2026-05-26)
 
-The 2026-05-07 conditional scope above admits four bridge premises
-P1-P4. Three of those premises are not independent of the registered
-staggered-block algebra:
-they reduce to runner-local consequences of `CPT_EXACT_NOTE`
-content plus finite-block algebraic regularity, conditional on that
-upstream content being admitted. This section records the derivation;
-the runner verifies it as Part 7
+The 2026-05-07 conditional scope admitted four bridge premises P1-P4.
+The 2026-05-09 repair tried to retire P2 as a runner-local consequence.
+The 2026-05-25 audit rejected that step: the runner proves
+phase-blindness for the chosen candidate on the finite block, but not
+the broader classification theorem that physical scalar bosonic
+generators must be determinant-amplitude functionals.
+
+This section therefore records the narrower, audit-compatible surface:
+P2 remains an admitted selection premise; the runner checks candidate
+consistency with P2 and derives only P3/P4 locally. The runner verifies
+this as Part 7
 (`test_premise_internal_derivations`).
 
-### P2 (CPT-even phase blindness) — derived from real anti-Hermitian `D`
+### P2 (CPT-even phase blindness) — candidate consistency, not classification
 
 The staggered Cl(3) framework's lattice Dirac operator `D` on the exact
 minimal hierarchy block is **real anti-Hermitian** in the registered
@@ -416,8 +434,12 @@ exactly. (For odd `n`, the equality becomes `det(D + jI) = -det(D - jI)`,
 which still implies `|det(D + jI)| = |det(D - jI)|`, so `W` is even
 regardless of dimension parity.)
 
-This is a **structural** consequence of the staggered axiom, not an
-admitted physical-principle premise. The runner's Part 7 verifies:
+This is a structural check on the selected candidate
+`W = log|det(D+J)|`. It shows that the candidate is compatible with the
+P2 phase-blindness premise on the finite runner block. It does **not**
+prove that every admissible physical scalar bosonic generator must be a
+function of `|det(D+J)|`, and it does **not** retire P2 as a selection
+premise. The runner's Part 7 verifies:
 
 - `||Im(D)||_F = 0` and `D + D^dagger = 0` on the runner blocks
   (so `D` is real anti-Hermitian);
@@ -431,9 +453,9 @@ admitted physical-principle premise. The runner's Part 7 verifies:
   `D`, so the conjugation form `det(D + jI) = conj(det(D - jI))`
   follows trivially from realness).
 
-P2 therefore retires from "admitted physical-principle premise" to
-"runner-local corollary of the registered `CPT_EXACT_NOTE` construction
-applied to the source-deformed Dirac operator on the staggered block".
+P2 therefore remains an explicit conditional premise of this note. The
+runner-local result is only a consistency check for the chosen
+phase-blind candidate.
 
 ### P3 (continuity / minimal regularity) — derived from finite-block polynomial structure
 
@@ -486,7 +508,7 @@ zero-source-baseline convention and for an arbitrary additive shift.
 P4 therefore retires from "admitted normalization premise" to
 "convention only, with no propagation to physical observables".
 
-### What remains admitted: P1 (scalar additivity) only
+### What remains admitted: P1 and P2
 
 P1 — that `W` must satisfy `W[J_1 (+) J_2] = W[J_1] + W[J_2]` on
 independent subsystems — remains an admitted physical-principle
@@ -499,19 +521,25 @@ attempt that derivation; the route to retiring P1 (e.g., by deriving
 "physical scalar bosonic observable" from a retained primitive) is
 explicitly out of scope.
 
+P2 — that physical scalar bosonic generators are phase-blind functions
+of the determinant amplitude class — also remains admitted. The finite
+runner can show the chosen generator is even and phase-blind on the
+runner block; it cannot by itself classify the whole admissible
+generator family.
+
 ### Updated conditional load-bearing statement
 
-> **Given P1 (scalar additivity on independent subsystems)**, and given the
-> registered staggered-block/CPT structure consumed by the runner, with P2,
-> P3, P4 checked as finite-block algebraic consequences plus zero-source
-> baseline convention, the four exact-algebra identities in §"Claim scope"
-> hold verbatim on the exact minimal hierarchy block.
+> **Given P1 (scalar additivity on independent subsystems) and P2
+> (phase-blind scalar-generator selection)**, and given the finite
+> staggered-block structure consumed by the runner, with P3/P4 checked
+> as finite-block algebraic consequences plus zero-source baseline
+> convention, the four exact-algebra identities in §"Claim scope" hold
+> verbatim on the exact minimal hierarchy block.
 
 Downstream rows that cite this note may now do so as
-*"…follows from `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE` **given P1
-(scalar additivity) and the cited staggered-block/CPT structure**…"*, with
-the understanding that P2, P3, P4 are runner-local algebraic consequences,
-not separate physical-principle premises.
+*"...follows from `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE` **given P1 and
+P2**..."*. They must not cite this row as an unconditional derivation of
+the observable principle from the axiom alone.
 
 This narrowing does **not** promote audit status. The audit row remains
 `audited_conditional` until the conditional surface is independently
@@ -520,10 +548,10 @@ issues a verdict. The `notes_for_re_audit_if_any` re-audit trigger
 (missing bridge theorem deriving scalar additivity, CPT-even phase
 blindness, continuity/minimal regularity, normalization selection from
 retained primitives) is partially addressed at runner-local scope:
-CPT-even phase blindness, continuity/minimal regularity, and
-normalization selection are now checked as algebraic consequences given the
-cited structure; bridge derivation for scalar additivity is **not** provided
-and remains the open path.
+continuity/minimal regularity and normalization selection are now checked
+as algebraic consequences/conventions given the finite block; bridge
+derivations for scalar additivity and phase-blind generator
+classification are **not** provided and remain open paths.
 
 ## Out of scope (admitted-context to this note)
 

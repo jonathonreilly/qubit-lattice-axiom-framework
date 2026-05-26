@@ -1085,7 +1085,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 22,
+        "C": 20,
         "D": 0
       },
       "decoration_candidate": false,
@@ -14473,7 +14473,7 @@
       "runner": "scripts/mesoscopic_surrogate_localization_frontier.py"
     },
     "mesoscopic_surrogate_localization_sweep_note": {
-      "assert_count": 0,
+      "assert_count": 4,
       "counts": {
         "A": 0,
         "B": 0,
@@ -18793,16 +18793,16 @@
       "runner": "scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py"
     },
     "rconn_derived_note": {
-      "assert_count": 0,
+      "assert_count": 3,
       "counts": {
-        "A": 0,
+        "A": 2,
         "B": 0,
-        "C": 28,
-        "D": 2
+        "C": 0,
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_color_projection_mc.py"
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/rconn_matching_rule_nogo_certificate.py"
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
@@ -22548,6 +22548,18 @@
       "dominant_class": null,
       "runner": "scripts/audit_companion_three_generation_local_algebra_exact_2026_05_10.py"
     },
+    "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py"
+    },
     "three_generation_observable_count_corollary_note_2026-05-03": {
       "assert_count": 0,
       "counts": {
@@ -24325,16 +24337,16 @@
       "runner": "scripts/frontier_yt_eft_bridge.py"
     },
     "yt_ew_color_projection_theorem": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 2,
         "B": 0,
-        "C": 28,
-        "D": 2
+        "C": 0,
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_color_projection_mc.py"
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/yt_ew_kappa_family_nogo_certificate.py"
     },
     "yt_ew_coupling_bridge_note": {
       "assert_count": 1,
@@ -27619,7 +27631,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 22,
+        "C": 20,
         "D": 0
       },
       "decoration_candidate": false,
@@ -32773,9 +32785,7 @@
     "scripts/frontier_color_projection_mc.py": {
       "assert_count": 0,
       "claims": [
-        "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
-        "rconn_derived_note",
-        "yt_ew_color_projection_theorem"
+        "ew_current_matching_ozi_suppression_theorem_note_2026-04-27"
       ],
       "counts": {
         "A": 0,
@@ -52279,7 +52289,7 @@
       "exists": true
     },
     "scripts/mesoscopic_surrogate_localization_family_sweep.py": {
-      "assert_count": 0,
+      "assert_count": 4,
       "claims": [
         "mesoscopic_surrogate_localization_sweep_note"
       ],
@@ -53336,6 +53346,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/rconn_matching_rule_nogo_certificate.py": {
+      "assert_count": 3,
+      "claims": [
+        "rconn_derived_note"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/render_controlled_vocabulary.py": {
@@ -54526,6 +54551,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/three_gen_z3_fourier_diagonalization_check.py": {
       "assert_count": 0,
       "claims": [
@@ -55229,6 +55269,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/yt_ew_kappa_family_nogo_certificate.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_ew_color_projection_theorem"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/yt_ew_m_residual_channel_check.py": {
       "assert_count": 0,
       "claims": [
@@ -55277,15 +55332,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 317,
+    "decoration_candidates": 319,
     "dominant_class_distribution": {
-      "A": 225,
+      "A": 227,
       "B": 274,
       "C": 748,
       "D": 299,
-      "none": 439
+      "none": 440
     },
-    "runners_classified": 1985,
+    "runners_classified": 1988,
     "runners_with_C": 970,
     "runners_with_D": 583
   }

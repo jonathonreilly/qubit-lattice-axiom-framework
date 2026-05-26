@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py
-runner_sha256: d6630aea47bde542efe781ec32cb012b6e80ed9e553dd890a8d8044e6863d778
+runner_sha256: ad4671d0c347b6ec9c6c7602e83e262986425306bf7b6018893f653bf3f7b183
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 334.60
+elapsed_sec: 331.35
 status: ok
 ----- stdout -----
 ============================================================================================================

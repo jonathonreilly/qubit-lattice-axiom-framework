@@ -68036,10 +68036,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "be39b40f09856ae657233002ef538a7a99456b08138ada8dd10f61743fa71a78",
+      "note_hash": "ac4f15df7dc202121efe58dbc51cfdf32d92a61f9d780e60af6fef0db5baa904",
       "path": "docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "runner_path": null,
-      "title": "PL-Topology Infrastructure \u2014 Named Non-Derivation Imports"
+      "runner_path": "scripts/frontier_pl_topology_finite_cone_cap_certificate.py",
+      "title": "PL-Topology Infrastructure \u2014 Finite Cone-Cap Boundary Certificate"
     },
     "planck_boundary_density_extension_theorem_note_2026-04-24": {
       "claim_id": "planck_boundary_density_extension_theorem_note_2026-04-24",
@@ -85504,6 +85504,6 @@
     "leaf_count": 783,
     "node_count": 2538,
     "root_count": 836,
-    "runners_with_path": 2099
+    "runners_with_path": 2100
   }
 }

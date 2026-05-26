@@ -16740,6 +16740,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_pl_s3_atlas_refinement_compatibility.py"
     },
+    "pl_topology_infrastructure_textbook_import_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_pl_topology_finite_cone_cap_certificate.py"
+    },
     "planck_boundary_density_extension_theorem_note_2026-04-24": {
       "assert_count": 0,
       "counts": {
@@ -43264,6 +43276,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_pl_topology_finite_cone_cap_certificate.py": {
+      "assert_count": 1,
+      "claims": [
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_planck_boundary_density_extension.py": {
       "assert_count": 0,
       "claims": [
@@ -55196,15 +55223,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 315,
+    "decoration_candidates": 316,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
+    "runners_classified": 1983,
     "runners_with_C": 969,
     "runners_with_D": 583
   }

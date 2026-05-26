@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 482 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 17 |
-| unaudited | 1257 |
+| unaudited | 1256 |
+| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
@@ -53,22 +54,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
+| `audit_in_progress` | 1 |
 | `audited_clean` | 771 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1486 |
+| `unaudited` | 1485 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1063 |
+| `bounded_theorem` | 1064 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 255 |
 | `open_gate` | 110 |
-| `positive_theorem` | 719 |
+| `positive_theorem` | 718 |
 
 | criticality | count |
 |---|---:|
@@ -124,6 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |

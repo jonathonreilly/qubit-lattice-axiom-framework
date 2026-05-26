@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 484 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1249 |
+| unaudited | 1248 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 774 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1478 |
+| `unaudited` | 1477 |
 
 | claim_type | count |
 |---|---:|
@@ -898,6 +898,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `assumption_derivation_ledger` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -1249,6 +1250,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², α_LM² = (α_bare/u_0)² = α_bare·(α_bare/u_0²) = α_bare·α_s(v).  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and follows immediately from the two definitional equations plus positivity for the logarithm. No physical plaquette value, running bridge, PDG comparator, or retained dependency is needed for the theorem as stated.
 - **rationale:** The theorem closes inside its explicitly narrow scope: once α_LM and α_s(v) are defined as α_bare/u_0 and α_bare/u_0² over positive scalars, T1-T3 are forced by algebra. The runner's numeric retained-value checks are not load-bearing for the abstract theorem, and the source note explicitly excludes physical derivation or external comparator claims.
+- **auditor confidence:** high
+
+### `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`
+
+- **Note:** [`ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`](../../docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the direct Wilson-loop/static-potential certificate at beta=6, g_bare=1: the packet supports strict JSON gate validation of the certificate surface, not a closed retained derivation of alpha_s(M_Z).
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-alpha-s-direct-wilson-loop-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the Cl(3)/Z^3 graph-first SU(3) Wilson gauge surface with g_bare = 1 and beta = 6, the Wilson-loop/static-potential certificate is asserted to give alpha_s(M_Z) = 0.1181 +/- total_direct_Wilson_loop_uncertainty.  _(class `B`)_
+- **chain closes:** False — The certificate-only surface closes only as an internal gate over supplied JSON fields. The full alpha_s(M_Z) candidate still imports g_bare=1, physical Sommer scale setting, continuum QCD running with threshold matching, and the pure-gauge-to-full-QCD bridge.
+- **rationale:** Issue: The source's alpha_s(M_Z)=0.1181 theorem relies on a JSON certificate plus imported g_bare=1, external Sommer r0=0.5 fm scale setting, standard QCD running/threshold matching, and a pure-gauge-to-full-QCD bridge; the runner validates certificate fields and PDG/target windows but does not recompute the production Wilson loops, static-potential fit, scheme conversion, or bridge from retained inputs. Why this blocks: Those imports are not closed by the retained direct dependencies, and the PDG/target checks are comparator gates, with numerical-match risk if used as support rather than as posture checks. Repair target: Split the certificate-only gate from the alpha_s(M_Z) theorem and provide retained-grade bridge theorems or an auditable raw-data-to-M_Z production runner for g_bare, scale setting, running/threshold matching, and sea-quark/full-QCD conversion. Claim boundary until fixed: downstream rows may cite only the existence of a strict-passing Wilson-loop/static-potential certificate on the beta=6, g_bare=1 surface that avoids alpha_LM/u0 authority; they may not cite a retained framework derivation of alpha_s(M_Z).
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-03.md`
+  - `MINIMAL_AXIOMS_2026-04-11.md`
 - **auditor confidence:** high
 
 ### `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`

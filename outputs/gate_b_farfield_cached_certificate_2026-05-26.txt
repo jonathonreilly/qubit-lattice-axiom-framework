@@ -1,0 +1,35 @@
+[PASS] [A] note boundary contains: Claim type:** bounded_theorem
+[PASS] [A] note boundary contains: Status:** bounded cached-output certificate
+[PASS] [A] note boundary contains: not a physical Gate B bridge theorem
+[PASS] [A] note boundary contains: 36/36
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale bridge phrase: /Users/jonreilly/Projects/Physics
+[PASS] [A] note omits stale bridge phrase: conditional numerical certificate over the admitted bridge inputs
+[PASS] [A] note omits stale bridge phrase: clean Gate B far-field propagation
+[PASS] [A] note omits stale bridge phrase: audited_conditional
+[PASS] [A] note omits stale bridge phrase: primitive-to-physical-gravity bridge is recorded as the upstream D-class
+
+=== Gate B far-field cached harness ===
+[PASS] [A] cache runner path matches harness
+[PASS] [A] cache exit code is zero
+[PASS] [A] cache status is ok
+[PASS] [A] cache declares h=0.5 family
+[PASS] [A] all four declared rows parsed (['drift=0.3,rest=0.5', 'drift=0.2,rest=0.7', 'drift=0.1,rest=0.9', 'exact grid'])
+[PASS] [A] each row has 36 tests (['36', '36', '36', '36'])
+[PASS] [C] each row is 36/36 TOWARD (['36', '36', '36', '36'])
+[PASS] [C] each row reports 100 percent TOWARD (['100', '100', '100', '100'])
+[PASS] [C] each row reports F~M=1.00 (['1.00', '1.00', '1.00', '1.00'])
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type remains bounded_theorem
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/gate_b_farfield_harness.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] no open dependency paths remain ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (122)
+
+Gate B far-field cached certificate: PASS
+PASS=28 FAIL=0

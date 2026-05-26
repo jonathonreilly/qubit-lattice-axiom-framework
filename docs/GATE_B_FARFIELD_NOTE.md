@@ -1,257 +1,64 @@
-# Gate B Far-Field: Grown Geometry at h=0.5
+# Gate B Far-Field Cached Harness Certificate
 
-**Date:** 2026-04-05 (audit-narrowing refresh: 2026-05-10; 2026-05-18:
-claim_scope formalized as runner-defined conditional numerical scenario
-per audit verdict boundary instruction; 2026-05-19: claim language
-tightened to **conditional numerical certificate over admitted bridge
-inputs** per audited_conditional repair campaign).
-**Type:** bounded_theorem
-**Claim scope (post-2026-05-19 tightening):** the load-bearing content
-of this note is **a conditional numerical certificate over the
-admitted bridge inputs (growth rule, source law, propagation kernel,
-valley-linear action, readout criterion)** — the frozen 36/36 TOWARD
-result with mean `F~M = 1.00` across the four drift/restore rows on
-`z ∈ {3, 4, 5}` with twelve seeds per row at `h = 0.5`, executed by
-`scripts/gate_b_farfield_harness.py` (PASS=4, all C-class). The
-runner's primitive-to-observable ingredients (the source law, the
-propagation/readout map, the TOWARD/F~M criterion) are **admitted
-bridge inputs to this certificate**, not derived from accepted axioms
-within this note. The certificate is conditional on those admitted
-bridge inputs; it does **not** propagate to a clean Gate B far-field
-closure. The audit verdict's repair sub-target ("split the completed
-bounded-run certificate from a separate primitive-to-observable bridge
-theorem") is therefore answered by **explicit scope tightening** here:
-the certificate row is load-bearing as a conditional numerical
-statement; the primitive-to-observable bridge is a separate open
-work item.
-**Status:** conditional numerical certificate over the admitted bridge
-inputs on the declared far-field rows for the runner-defined h=0.5 family.
-Clean Gate B far-field propagation (deriving the source law,
-propagation/readout map, and TOWARD/F~M criterion from accepted
-primitives) is **not** closed by this note and the certificate does
-**not** propagate past the admitted bridge inputs.
-**Status authority:** independent audit lane only.
-**Script:** [`scripts/gate_b_farfield_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_farfield_harness.py) (PASS=4, all C-class)
+**Date:** 2026-04-05; narrowed 2026-05-26
+**Claim type:** bounded_theorem
+**Status:** bounded cached-output certificate for the runner-defined h=0.5
+far-field rows. This is not a physical Gate B bridge theorem.
+**Runner:** [`scripts/gate_b_farfield_harness.py`](../scripts/gate_b_farfield_harness.py)
 
-## Admitted bridge inputs
+## Purpose
 
-This note's load-bearing claim is a **conditional numerical certificate
-over admitted bridge inputs**. The four admitted bridges, surfaced here
-at the headline per the audit verdict, are:
+The prior row mixed a valid long-run numerical harness result with bridge
+language about physical gravity. This repair keeps only the finite auditable
+certificate:
 
-- *source law:* `1/r` field perturbation from each test mass located at
-  the declared z-mass position
-- *propagation kernel:* `1/L^2` two-slit kernel with `h^2` measure
-- *valley-linear action:* `S(path) = L_path (1 - f_path)` with `L_path`
-  the bounded valley length and `f_path` the path-fraction-on-valley
-  score
-- *readout criterion:* z-centroid shift TOWARD the test mass plus a
-  linear `F ~ M` slope across `M = 1, 2, 3` at the declared z-rows
+```text
+h = 0.5
+W = 8
+NL = 25
+seeds = 12
+z_masses = [3, 4, 5]
+drift/restore rows = (0.3,0.5), (0.2,0.7), (0.1,0.9), exact grid
+```
 
-None of these is derived from accepted primitives within this note. The
-certificate is conditional on these admitted bridge inputs; it does
-**not** propagate past them.
+The cached harness output reports `36/36` TOWARD and `F~M = 1.00` on every
+declared row.
 
-## Audit boundary (2026-05-10)
+## Bounded Claim
 
-The prior independent audit verdict on this row was `audited_conditional`. The
-substantive runner output (36/36 TOWARD with mean F~M=1.00 across all four
-drift/restore rows on z={3,4,5}, twelve seeds per row) is supported by a
-non-print-only harness that genuinely constructs the geometry, propagates
-amplitudes, computes valley-linear actions, and aggregates centroid shifts.
+In the committed cache
+`logs/runner-cache/gate_b_farfield_harness.txt`, the far-field harness reports:
 
-What is **not** closed in this note is the bridge from accepted primitives to
-the physical "Gate B far-field gravity" reading. The harness assumes:
+| Row | TOWARD | F~M |
+|---|---:|---:|
+| `drift=0.3,rest=0.5` | `36/36` | `1.00` |
+| `drift=0.2,rest=0.7` | `36/36` | `1.00` |
+| `drift=0.1,rest=0.9` | `36/36` | `1.00` |
+| `exact grid` | `36/36` | `1.00` |
 
-- a specific *growth rule* (template previous layer + Gaussian drift +
-  restoring force toward grid + NN connectivity from grid labels);
-- a specific *source law* (1/r field perturbation from each test mass);
-- a specific *propagation kernel* (1/L^2 with `h^2` measure);
-- a specific *valley-linear action* `S = L (1 - f)`; and
-- a specific *readout criterion* (z-centroid shift TOWARD test mass plus
-  linear `F ~ M` scaling at the tested z-rows)
+The runner for this row parses that cache and verifies the declared scope,
+row count, TOWARD counts, and slope values.
 
-as the operational gravity observable on this lattice family. None of those
-ingredients is derived from the framework's accepted primitives in this
-note's source packet. The harness verifies a bounded numerical statement
-*assuming* that ingredient list is the right physical-gravity readout.
+## Boundary
 
-This note's load-bearing claim is therefore narrowed to the bounded numerical
-harness-output statement on the declared scope, with the physical-gravity
-bridge recorded as an admitted-context input that has to close upstream
-before "Gate B far-field" closure can propagate.
+This row does not claim:
 
-## Artifact chain
+- that the growth rule is derived from accepted primitives;
+- that the source law is derived from accepted primitives;
+- that the propagation kernel or valley-linear action is derived from
+  accepted primitives;
+- that TOWARD/F~M is the physical gravity readout;
+- clean Gate B far-field closure;
+- a physical gravity or attraction theorem;
+- any new axiom or audit verdict.
 
-- [`scripts/gate_b_farfield_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_farfield_harness.py)
-- [`logs/2026-04-05-gate-b-farfield-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-farfield-harness.txt)
-- [`scripts/gate_b_grown_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_distance_law.py)
-- [`logs/2026-04-05-gate-b-grown-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-distance-law.txt)
-- `docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md` (sibling artifact in same Gate B
-  lane; cross-reference only — not a one-hop dep of this note)
-- [`scripts/gate_b_grown_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_joint_package.py)
-- [`logs/2026-04-05-gate-b-grown-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-joint-package.txt)
-- `docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md` (sibling artifact in same Gate B
-  lane; cross-reference only — not a one-hop dep of this note)
+The primitive-to-physical-gravity bridge is separate science work. This row is
+only a bounded cached numerical certificate for the runner-defined scenario.
 
-## Admitted-context inputs (not closed by this note)
+## Verification
 
-These are operational ingredients used by the runner that have to close
-upstream before the "Gate B far-field gravity" reading can propagate:
+Run:
 
-- *growth rule:* template previous layer + Gaussian drift + restoring force
-  toward grid + NN connectivity from grid labels (parametrized by
-  `(drift, restore)`)
-- *source law:* `1/r` field perturbation from each test mass located at the
-  declared z-mass position
-- *propagation kernel:* `1/L^2` two-slit kernel with `h^2` measure
-- *valley-linear action:* `S(path) = L_path (1 - f_path)` with `L_path` the
-  bounded valley length and `f_path` the path-fraction-on-valley score
-- *readout criterion:* z-centroid shift TOWARD the test mass plus a linear
-  `F ~ M` slope across `M = 1, 2, 3` at the declared z-rows
-
-The bounded-positive harness numbers reported below assume that ingredient
-list as the physical-gravity readout.
-
-## Result
-
-| drift | restore | TOWARD | F∝M |
-|-------|---------|--------|-----|
-| 0.3 | 0.5 | 36/36 (100%) | 1.00 |
-| 0.2 | 0.7 | 36/36 (100%) | 1.00 |
-| 0.1 | 0.9 | 36/36 (100%) | 1.00 |
-| 0.0 | 1.0 | 36/36 (100%) | 1.00 |
-
-12 seeds × 3 z-masses (z=3,4,5) = 36 tests per row.
-
-## Growth rule
-
-Template previous layer + Gaussian drift + restoring force toward grid +
-NN connectivity from grid labels. Valley-linear action S=L(1-f), 1/L^2
-kernel with h^2 measure.
-
-## Bounded interpretation (scope-narrowed)
-
-On the runner-defined h=0.5 family with the admitted-context ingredients
-listed above, the harness reports `100%` TOWARD-z-centroid plus linear
-`F ~ M = 1.00` at all four tested drift/restore levels for `z = 3, 4, 5`,
-twelve seeds per row, including the noisiest (`drift = 0.3, restore = 0.5`).
-That is the bounded numerical statement this note supports.
-
-This does NOT close Gate B for the full parameter space: the v6
-frozen replay at near-field parameters (z=1.0-2.0) remains mixed
-(67-92%). The far-field rows are clean; the near-field rows are not.
-
-It also does NOT close the physical-gravity reading even on the far-field
-rows. The harness verifies that under the chosen growth rule, source law,
-kernel, action, and readout, the lattice produces the harness-defined
-TOWARD/F~M signature. Whether those ingredients are the framework's
-retained physical gravity observable is the open Gate B question, not a
-conclusion of this note's bounded numerical replay.
-
-## What this says about Gate B
-
-The growth rule, under the admitted-context source law and readout, produces
-the harness-defined TOWARD/F~M signature in the declared far-field window.
-The near-field mixing is a property of the beam optics at close mass
-positions, not a growth-rule failure — the same mixing appears on the fixed
-lattice at near-field z-values.
-
-The honest Gate B read on this row: **bounded harness-defined far-field
-positive on the declared rows, near-field mixed (same as the fixed lattice),
-and the missing primitive-to-physical-gravity bridge keeps full Gate B open
-upstream.**
-
-## Companion transfer read (2026-04-05)
-
-The dedicated companion replays now support a stronger but still bounded read
-on the retained moderate-drift row (`drift = 0.2`, `restore = 0.7`):
-
-- far-field sign remains `20/20` TOWARD on the bounded distance-law replay
-- far-field `F∝M = 1.00` is frozen in the main far-field harness
-- the distance-law companion keeps a positive declining tail close to the exact
-  grid on the tested `z = 3..7` window:
-  - exact grid: `b^(-0.90)`, `R^2 = 0.855`
-  - grown geometry: `b^(-0.83)`, `R^2 = 0.884`
-- the joint Born / interference / decoherence companion stays extremely close
-  to the exact grid:
-  - exact grid: Born `2.12e-15`, `d_TV = 0.787`, `MI = 0.568`,
-    decoherence `49.4%`
-  - grown geometry: Born `2.19e-15`, `d_TV = 0.811`, `MI = 0.569`,
-    decoherence `49.4%`
-
-The safe combined statement is:
-
-- on the retained moderate-drift `h = 0.5` generated-geometry family, the
-  fixed-lattice far-field harness signature transfers well enough to count
-  as a real bounded numerical positive on the declared rows
-- near-field rows, the broader generated-geometry parameter space, and the
-  primitive-to-physical-gravity bridge all remain open, so this still does
-  **not** close full Gate B
-
-## One-step h = 0.25 scaling companion
-
-A bounded moderate-drift replay on the same generated-geometry family now
-survives one refinement step to `h = 0.25`.
-
-Read it through:
-
-- `docs/GATE_B_H025_FARFIELD_NOTE.md` (sibling refinement artifact;
-  cross-reference only — not a one-hop dep of this note)
-- `docs/GATE_B_H025_DISTANCE_LAW_NOTE.md` (sibling refinement artifact;
-  cross-reference only — not a one-hop dep of this note)
-- `docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md` (sibling refinement artifact;
-  cross-reference only — not a one-hop dep of this note)
-
-Safe read:
-
-- this upgrades the bounded numerical result from a coarse-family far-field
-  positive to a one-step refinement-stable positive on the same moderate-drift
-  family, under the same admitted-context ingredients
-- it still does **not** close full Gate B (the primitive-to-physical-gravity
-  bridge remains the upstream blocker)
-
-## Repair target for full Gate B closure (D-class gap, deferred)
-
-To promote this row past `audited_conditional`, an upstream theorem is
-needed that derives the source law, the propagation/readout map, and the
-far-field Gate B criterion from accepted primitives — with a runner that
-*constructs* rather than *assumes* that bridge. That theorem does not exist
-on `main` today; it is recorded here as a real D-class derivation gap, not
-an import-redirect. Until it lands, this row remains a conditional
-numerical certificate over the admitted bridge inputs on the runner-defined
-family.
-
-## 2026-05-19 audit-conditional repair
-
-This pass executes the audited_conditional repair campaign 2026-05-19
-scope-narrow on this note. The repair:
-
-- **Removes clean-Gate-B propagation language.** The frontmatter and
-  Status block previously framed the load-bearing content as a "runner-
-  defined conditional numerical scenario" and as a "frozen bounded
-  numerical harness positive" on the declared rows. The 2026-05-18
-  narrowing already separated the certificate from the bridge, but
-  the phrasing still left room to read the harness output as a
-  free-standing bounded positive that could propagate toward Gate B
-  far-field closure on its own. The tightened phrasing now reads the
-  load-bearing content as a **conditional numerical certificate over
-  the admitted bridge inputs** (growth rule, source law, propagation
-  kernel, valley-linear action, readout criterion) and explicitly
-  states that the certificate does **not** propagate past those
-  admitted bridge inputs.
-- **Aligns Status with the certificate framing.** The Status line is
-  updated to say "conditional numerical certificate over the admitted
-  bridge inputs on the declared far-field rows" and to call out that
-  clean Gate B far-field propagation is not closed by this note.
-- **Preserves the artifact chain and the bounded numerical table.**
-  No runner, log, or cached result is altered. The repair is a
-  scope/claim-language tightening on top of the existing audit
-  narrowing.
-
-The repair does **not** hand-author any audit verdict and does not touch
-repo-wide authority surfaces. The note remains source-side
-`bounded_theorem` whose load-bearing content is a conditional numerical
-certificate over the admitted bridge inputs, with the
-primitive-to-physical-gravity bridge recorded as the upstream D-class
-derivation gap. Generated audit data is pipeline-owned after landing.
+```bash
+PYTHONPATH=scripts python3 scripts/gate_b_farfield_harness.py
+```

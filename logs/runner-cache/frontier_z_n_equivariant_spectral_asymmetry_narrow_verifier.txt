@@ -1,0 +1,81 @@
+================================================================================
+Z_N EQUIVARIANT SPECTRAL ASYMMETRY (NARROW) VERIFIER
+================================================================================
+Theorem note: docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md
+Status: source-only research-lane proposal. No audit-lane wiring.
+
+Imports: cmath, math, fractions (stdlib); sympy (symbolic, optional).
+NO PDG. NO fitted selectors. NO new axioms or theory-language imports.
+
+--------------------------------------------------------------------------------
+E1. eta_g(T) is well-defined, in Z[zeta_N], perturbation-stable
+--------------------------------------------------------------------------------
+  [PASS] E1.a eta_g(T) computed directly from finite-dim definition matches by-hand value  (eta = 0.000000+1.732051j, expected (omega - omega^2) = 0.000000+1.732051j)
+  [PASS] E1.b eta lies in Z[omega] (real part rational, imag part rational multiple of sqrt(3))  (Re(eta) = 3.89e-16, Im(eta) = 1.732051, sqrt(3) = 1.732051)
+  [PASS] E1.c eta_g is invariant under continuous g-equivariant perturbation (no zero-crossing)  (eta(T+P) - eta(T) = 0.00e+00)
+
+--------------------------------------------------------------------------------
+E2. Lefschetz closed form (derived here from finite-dim algebra)
+--------------------------------------------------------------------------------
+    eta_g(T)_x = (1/N) sum_{k=1..N-1} prod_j 1/(zeta^{k*a_j} - 1)
+
+  [PASS] E2.a geometric-series identity sum_{k=0..2} zeta^{km} = N*delta_{m=0}  (N=3, all m in [0, 3) verified)
+  [PASS] E2.a geometric-series identity sum_{k=0..3} zeta^{km} = N*delta_{m=0}  (N=4, all m in [0, 4) verified)
+  [PASS] E2.a geometric-series identity sum_{k=0..4} zeta^{km} = N*delta_{m=0}  (N=5, all m in [0, 5) verified)
+  [PASS] E2.a geometric-series identity sum_{k=0..5} zeta^{km} = N*delta_{m=0}  (N=6, all m in [0, 6) verified)
+  [PASS] E2.b equivariant trace identity sum_{k=1..2} tr(g^k | V) = -(N-1) at N=3  (sum = -2.000000, expected = -2)
+  [PASS] E2.b equivariant trace identity sum_{k=1..3} tr(g^k | V) = -(N-1) at N=4  (sum = -3.000000, expected = -3)
+
+    Step 3: 1/(zeta^{k*a_j} - 1) is the (g^k - id)^{-1} eigenvalue on the
+    j-th transverse eigenspace; product over j gives the local fixed-point trace.
+
+  [PASS] E2.c local-contrib closed form at N=3, weights=(1, 2) = 2/9  (eta = 0.2222222222 + 7.40e-17i)
+  [PASS] E2.c local-contrib closed form at N=3, weights=(1, 1) = 1/9  (eta = 0.1111111111 + 5.55e-17i)
+  [PASS] E2.c local-contrib closed form at N=3, weights=(2, 2) = 1/9  (eta = 0.1111111111 + 9.25e-17i)
+  [PASS] E2.d closed form is real-valued for self-conjugate weight pairs at p=3 (1,2)  (Im(eta(1,2;3)) = 7.40e-17)
+
+--------------------------------------------------------------------------------
+E3. Z_3 specialization: eta(1, 2; 3) = 2/9 via cyclotomic algebra
+--------------------------------------------------------------------------------
+  [PASS] E3.a cyclotomic identity (omega - 1)(omega^2 - 1) = 3 numerically  (prod = 3.0000000000 + -8.58e-16i)
+  [PASS] E3.b algebraic proof: 1 + omega + omega^2 = 0
+  [PASS] E3.c (omega-1)(omega^2-1) = omega^3 - omega - omega^2 + 1 = 2 - (omega + omega^2) = 3
+  [PASS] E3.d eta(1, 2; 3) = 2/9 exactly via E2 closed form  (eta(1,2;3) = 0.2222222222 + 7.40e-17i; 2/9 = 0.2222222222)
+  [PASS] E3.e eta(1, 1; 3) = 1/9 (alternative; not 2/9)  (eta(1,1;3) = 0.111111)
+  [PASS] E3.f eta(2, 2; 3) = 1/9 (alternative; not 2/9)  (eta(2,2;3) = 0.111111)
+  [PASS] E3.g Only the C_3-consistent transverse weights (1, 2)~(2, 1) give 2/9
+
+--------------------------------------------------------------------------------
+Sidecar (NOT load-bearing): Hirzebruch-Zagier formula on L(p;1)
+--------------------------------------------------------------------------------
+    eta_0(L(p;1)) = -(1/p) sum_{k=1..p-1} cot^2(pi*k/p) = -(p-1)(p-2)/(3p)
+    At p=3 this gives -2/9, matching |eta(1,2;3)| up to APS sign convention.
+
+  [PASS] Sidecar.a sum_{k=1..p-1} cot^2(pi*k/p) = (p-1)(p-2)/3 at p=3
+  [PASS] Sidecar.b eta_0(L(3;1)) = -(p-1)(p-2)/(3p) = -2/9 at p=3  (|eta_0| = 0.2222222222)
+  [PASS] Sidecar.c Hirzebruch-Zagier 1974 / APS 1975 lens-space formula is consistent with the framework's finite-dim derivation (sign convention modulo)
+
+--------------------------------------------------------------------------------
+Symbolic (sympy) verification
+--------------------------------------------------------------------------------
+  [PASS] sympy: (omega - 1)(omega^2 - 1) = 3 to 25 decimal places  (sympy: 3.0000000000)
+  [PASS] sympy: eta(1, 2; 3) = 2/9 to 25 decimal places  (sympy: 0.2222222222)
+  [PASS] sympy: (w-1)(w^2-1) reduces to 3 in Q[w]/Phi_3(w)  (reduced = 3)
+  [PASS] sympy: eta(1, 2; 3) = (1/3)(1/3 + 1/3) = 2/9 exactly in Q[w]/Phi_3
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT prove delta_Brannen = eta_APS (the bridge identification is honest open residual)
+  [PASS] Does NOT consume PDG, fitted selectors, mass inputs, or unit-convention choices
+  [PASS] Does NOT propose a new axiom or new theory-language extension
+  [PASS] Does NOT promote, retire, or re-classify any existing audit row
+  [PASS] Does NOT predict the audit verdict on this note or any companion note
+  [PASS] Does NOT import the APS 1975 fixed-point formula as load-bearing; it is sidecar context
+
+================================================================================
+Summary: PASS=33 FAIL=0
+================================================================================
+All narrow-claim checks passed. eta(1, 2; 3) = 2/9 is internally derived from
+A1+A2 + retained C_3[111] + finite-dim spectral algebra + cyclotomic identity.
+APS 1975 / Donnelly 1978 / Hirzebruch-Zagier 1974 are sidecar context only.

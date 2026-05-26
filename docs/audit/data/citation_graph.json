@@ -10813,10 +10813,6 @@
       "to": "universal_gr_tensor_quotient_uniqueness_note"
     },
     {
-      "from": "guard_reconciliation_note",
-      "to": "dense_prune_guard_seed_note"
-    },
-    {
       "from": "gw_echo_null_result_note",
       "to": "evanescent_barrier_amplitude_suppression_theorem_note"
     },
@@ -56882,16 +56878,19 @@
     },
     "guard_reconciliation_note": {
       "claim_id": "guard_reconciliation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "dense_prune_guard_seed_note"
+      "deps": [],
+      "helper_runner_paths": [
+        "scripts/dense_prune_channel_count_guard.py",
+        "scripts/dense_prune_q003_joint_strict.py",
+        "scripts/three_d_joint_test.py",
+        "scripts/three_d_modular_gravity_mass_scaling.py"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "7a7d4a9c6b1071f65cc4e87acea157afeb0884d9e328e37a5db91feca014c5f6",
+      "note_hash": "8afc08542e6c441dfd429dcf9847cbc44593b81d38f97c0a9f1d37a7db8a3119",
       "path": "docs/GUARD_RECONCILIATION_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/guard_reconciliation_n100_q003_certificate.py",
       "title": "Channel-Count Guard Canonical Note"
     },
     "gw_echo_null_result_note": {
@@ -85018,6 +85017,7 @@
     "growing_graph_frontier_expansion_proxy_note",
     "growing_graph_static_control_audit_note",
     "grown_wavefield_companion_note",
+    "guard_reconciliation_note",
     "h0125_scalable_scout_note",
     "h0125_wider_w4_note",
     "h0125_wider_w4_probe_note",
@@ -85496,11 +85496,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 596,
+      "bounded_theorem": 597,
       "decoration": 1,
       "meta": 191,
       "no_go": 74,
-      "none": 1459,
+      "none": 1458,
       "open_gate": 48,
       "positive_theorem": 171
     },
@@ -85513,10 +85513,10 @@
       "open_gate": 125,
       "positive_theorem": 593
     },
-    "edge_count": 9777,
-    "leaf_count": 784,
+    "edge_count": 9776,
+    "leaf_count": 785,
     "node_count": 2540,
-    "root_count": 838,
-    "runners_with_path": 2105
+    "root_count": 839,
+    "runners_with_path": 2106
   }
 }

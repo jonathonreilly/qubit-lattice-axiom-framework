@@ -9936,6 +9936,18 @@
       "dominant_class": null,
       "runner": "scripts/gate_b_grown_wavefield_companion.py"
     },
+    "guard_reconciliation_note": {
+      "assert_count": 10,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/guard_reconciliation_n100_q003_certificate.py"
+    },
     "gw_echo_null_result_note": {
       "assert_count": 0,
       "counts": {
@@ -51017,6 +51029,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/guard_reconciliation_n100_q003_certificate.py": {
+      "assert_count": 10,
+      "claims": [
+        "guard_reconciliation_note"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/hard_geometry_gravity_window.py": {
       "assert_count": 0,
       "claims": [
@@ -55386,15 +55413,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 320,
+    "decoration_candidates": 321,
     "dominant_class_distribution": {
-      "A": 228,
+      "A": 229,
       "B": 274,
       "C": 748,
       "D": 299,
       "none": 441
     },
-    "runners_classified": 1990,
+    "runners_classified": 1991,
     "runners_with_C": 970,
     "runners_with_D": 584
   }

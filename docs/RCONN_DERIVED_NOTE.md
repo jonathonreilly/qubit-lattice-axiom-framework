@@ -1,794 +1,106 @@
-# R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate (conditional on admitted matching rule (M))
-
-**Date:** 2026-04-14 (originally); 2026-05-10 (audit-narrowing refresh);
-2026-05-18 (claim_scope formalized as exact imported Fierz channel-count
-fraction plus conditional MC consistency framing only per audit verdict
-boundary instruction; physics-loop Tier B attempt logged as NARROWED —
-matching rule (M) closure from retained primitives shown obstructed by
-already-recorded no-go authority); 2026-05-25 (audit-repair narrow-rescope:
-matching rule (M) admitted as a named open premise per the audit verdict;
-algebraic content unconditional, physical-readout claim explicitly
-conditional on (M); cites the retained no-go
-[`ew_current_matching_rule_open_gate_note_2026-05-03`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
-for the foreclosure on derivation from current retained primitives;
-parallel to the `yt_ew_color_projection_theorem` rescope, same matching
-rule (M)).
-**Claim type:** bounded_theorem (conditional on admitted premise (M))
-**Admitted open premise (M).** The matching rule (M) — that the lattice
-connected color trace `<Tr_color[G(0,x) G(x,0)]_connected>` projects onto
-the adjoint channel of the Fierz decomposition (equivalently, the
-disconnected/singlet readout coefficient `kappa_EW = 0` selector) — is
-**admitted here as a named open premise**, not derived from current
-retained primitives. The retained packet `{ N_c = 3, Fierz identity, CMT
-mean-field factorization, OZI bounded suppression }` is shown to be
-**insufficient** to fix `kappa_EW` by the retained no-go
-[`ew_current_matching_rule_open_gate_note_2026-05-03`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
-(at least two completions — `K_EW(0) = 9/8` connected-trace selector and
-`K_EW(1) = 1` full-trace selector — share identical Fierz arithmetic and
-CMT scaling). The algebraic Hilbert-space dimension fraction
-`(N_c^2 − 1)/N_c^2 = 8/9` is unconditional (group-theory invariant
-imported from the cited Fierz authority); the physical-readout
-identification of `R_conn` with that fraction is gated on (M). This note
-does **not** propose retention of `kappa_EW = 0`; admission of (M) is
-the open premise that downstream readout-grade consumers inherit.
-**Parallel rescope.** The companion note `YT_EW_COLOR_PROJECTION_THEOREM.md`
-admits the same matching rule (M) as a named open premise. The two rescopes
-share authority and admission language.
-**Claim scope (post-2026-05-25 audit-repair):** the load-bearing content
-of this note is **exactly two pieces**: (i) the **exact imported
-Fierz channel-count fraction** `(N_c^2 − 1) / N_c^2` from the
-already-retained Fierz authority, with no re-derivation in this
-note; and (ii) the **conditional MC consistency framing** of the
-1/N_c-expansion estimate for the channel-population dynamics, recorded
-as a numerical cross-check on the imported fraction at the chosen
-operating point. The promotion of the channel-count fraction to the
-connected-trace dynamical observable is **explicitly NOT** derived in
-this note; the matching-rule + dynamical channel-population +
-correction-estimate derivation from retained primitives remains the
-named open work item per the audit verdict's repair sub-target. The
-2026-05-18 physics-loop Tier B attempt to close the bridge via a
-one-step Fierz channel-count projection from retained Cl(3)
-primitives **failed by NARROWING**: the existing
-`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03` no-go and
-`YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02` named-
-obstruction packets prove the disconnected/singlet coefficient
-`kappa_EW` is not fixed by the retained packet (`N_c = 3`, Fierz
-identity, CMT mean-field factorization, OZI bounded suppression).
-The Fierz channel-count fraction is a Hilbert-space dimension count;
-its identification with the physical EW readout requires a non-
-perturbative input that is not available in retained primitives.
-See §8 (this note) for the 2026-05-18 Tier B narrowing log.
-**Status:** scope-narrowed bounded note. The exact `(N_c^2 − 1)/N_c^2`
-adjoint-channel **representation-dimension fraction** is **imported**
-from the already-retained Fierz authority below; this note adds a
-1/N_c-expansion **estimate** for the channel-population dynamics and
-records an MC cross-check. The promotion of the channel-count fraction
-to the connected-trace dynamical observable is **not** derived in this
-note; it inherits the named matching gap from the Fierz authority.
-**Type:** bounded_theorem (estimate + MC cross-check), open dynamical
-bridge.
-**Status authority:** independent audit lane only.
-**Authority role:** records, but does not close, the dynamical bridge
-from the exact Fierz channel-count fraction to the lattice connected-
-trace ratio. Names that bridge as a real upstream gap inherited from
-the Fierz authority's matching rule.
-**Depends on:** baseline `Cl(3)` framework setting (`N_c = 3`), SU(N_c) gauge theory.
-
-**Primary authority for the exact `(N_c^2 − 1)/N_c^2` ratio (one-hop dep,
-cited here, not closed in this note):**
-
-- [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
-  (`claim_type: bounded_theorem`, `audit_status: audited_clean`,
-  `effective_status: retained_bounded`) — exact group-theory derivation
-  of the q-qbar Hilbert-space adjoint-channel dimension fraction
-  `(N_c^2 − 1)/N_c^2` from the SU(N_c) Fierz completeness identity
-  applied to the q-qbar two-point function, valid at every gauge
-  configuration and at any finite N_c (no expansion). This is the
-  cycle-breaking authority on `main`. **This note imports the channel-
-  count fraction from there**; it does **not** re-derive it.
-
-**Other cross-refs (cited as related, not as authority closure):**
-`YT_EW_COLOR_PROJECTION_THEOREM.md` (plain text),
-[YUKAWA_COLOR_PROJECTION_THEOREM.md](YUKAWA_COLOR_PROJECTION_THEOREM.md)
-(`claim_type: decoration` under the Fierz authority),
-`EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md`
-(plain text).
-
-**Primary runner:** `scripts/frontier_color_projection_mc.py` (MC
-cross-check; the runner computes the analytic 8/9 explicitly as its
-expected target — the MC value is a numerical agreement check, not an
-independent derivation of the dynamical-bridge identification).
-
----
-
-## Audit boundary
-
-The 2026-05-10 audit verdict was `audited_renaming`: the load-bearing
-in-note step "the connected/adjoint propagator fraction equals the
-representation-dimension fraction" was classified as a definitional
-substitution from group-theory channel counts to a dynamical observable.
-That substitution is the **dynamical-population bridge** between the
-exact Fierz channel-count and the lattice connected-trace ratio.
-
-This note does **not** derive that bridge. It does the following four
-things, all explicitly under their cited or admitted-context authority:
-
-1. **Imports** the exact `(N_c^2 − 1)/N_c^2` adjoint-channel
-   representation-dimension fraction from the cited Fierz authority
-   (no in-note re-derivation; the Fierz note is `audited_clean`,
-   retained-bounded).
-2. **Records** a standard 't Hooft-1974 1/N_c topological argument for
-   why planar diagrams dominate non-planar diagrams by `1/N_c^2` at
-   leading order. This argument is a textbook large-N_c structural
-   estimate cited as admitted-context literature input ('t Hooft 1974,
-   Witten 1979, Coleman 1985, Manohar 1998); it is **not** an in-atlas
-   theorem.
-3. **States** the **assumption** (from the cited Fierz note's matching
-   rule (M)) that the lattice connected-trace observable inherits the
-   adjoint-channel projection coefficient. This is the dynamical-
-   population bridge; it is the renaming step flagged by the audit
-   verdict and is **not** derived here.
-4. **Reports** an MC cross-check on a 4^4 lattice that the measured
-   `R_conn(MC) = 0.887 ± 0.008` agrees with the analytic target 8/9 to
-   0.2%. The runner's "expected" value is hard-coded as 8/9 from the
-   imported Fierz fraction; the MC is a numerical consistency test, not
-   an independent derivation.
-
-**Admitted-context derivation gap (real, not import-redirect):**
-
-The promotion from the imported Fierz channel-count fraction
-`(N_c^2 − 1)/N_c^2` to the lattice connected-trace ratio `R_conn`
-requires a structural matching rule: that the lattice connected color
-trace `<Tr_color[G(0,x) G(x,0)]_connected>` projects onto the adjoint
-channel `C(x,y)` of the Fierz decomposition rather than onto the total
-`Tr_color[G(x,y) G(y,x)]`. The cited Fierz note records this matching
-rule as a **named structural input from the framework's lattice gauge
-surface, not derived in that note** (see Fierz note section 5,
-"matching rule (M)"). This row inherits that gap without bypass; no
-retained, bounded, or proposed theorem on the current atlas closes the
-matching rule.
-
-This is a **real derivation gap**, not a dependency-citation issue.
-
-## Statement (scope-bounded)
-
-**Imported representation-theoretic fact (from the cited Fierz
-authority, not re-derived here).** In SU(N_c) gauge theory, the
-adjoint-channel dimension fraction of the q-qbar Hilbert space is
-exactly:
-
-    dim(adj) / dim(N_c ⊗ N_c-bar) = (N_c^2 − 1) / N_c^2,
-
-which equals 8/9 at N_c = 3 (fixed by Cl(3)). This is a pure group-
-theory invariant; it carries no expansion correction. Source:
-[`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md).
-
-**1/N_c estimate (this note, conditional on the named matching rule).**
-*Assuming* the matching rule (M) of the cited Fierz authority — that
-the lattice connected color trace projects onto the adjoint channel —
-the leading-order 't Hooft topological dominance of planar over non-
-planar diagrams gives the estimate
-
-    R_conn = (N_c^2 − 1) / N_c^2 + O(1/N_c^4),
-
-with the `O(1/N_c^4) ~ 1.2%` correction at `N_c = 3` bounded by genus-2
-contributions in the standard topological expansion. The matching rule
-(M) is a named structural input, not derived in this note or in the
-cited Fierz note.
-
-For `N_c = 3`:
-
-    R_conn ~ 8/9 + O(1/81)  conditional on (M)
-
-with the MC cross-check `R_conn(MC) = 0.887 ± 0.008` agreeing to 0.2%
-under the same assumption.
-
----
-
-## Part 1: The 1/N_c Expansion -- Setup
-
-### 1.1 Origin of N_c = 3
-
-The framework begins with Cl(3), the rank-3 Clifford algebra over Z^3.
-The gauge group SU(3) arises from the Z_3 clock-shift symmetry of the
-lattice. The number of colors N_c = 3 is not a parameter -- it is fixed
-by the spatial dimension d = 3 of the Z^3 lattice. This is the single
-axiom from which N_c descends.
-
-### 1.2 The 't Hooft expansion
-
-For SU(N_c) gauge theory with quarks in the fundamental representation,
-'t Hooft (1974) showed that Feynman diagrams can be organized by their
-topology. The key insight: rewrite the gauge coupling as
-
-    g^2 = lambda / N_c
-
-where lambda = g^2 N_c is the 't Hooft coupling, held fixed as N_c
-varies. Each Feynman diagram can be drawn on a compact orientable
-surface of genus g (number of handles). The amplitude of a diagram
-drawn on a genus-g surface scales as:
-
-    A_g ~ N_c^{chi}  where  chi = 2 - 2g - B
-
-Here chi is the Euler characteristic of the surface, and B is the
-number of quark-loop boundaries.
-
-For the quark-antiquark propagator (B = 1 external quark boundary):
-
-    chi = 2 - 2g - 1 = 1 - 2g
-
-Therefore:
-- Planar diagrams (g = 0): A_0 ~ N_c^{1}
-- First non-planar correction (g = 1): A_1 ~ N_c^{1-2} = N_c^{-1}
-- Higher genus (g >= 2): A_g ~ N_c^{1-2g}
-
-The ratio of non-planar to planar contributions is suppressed by
-1/N_c^{2g}, with the leading correction at g = 1 suppressed by
-1/N_c^2.
-
-### 1.3 Standard references
-
-This topological classification of diagrams is a textbook result:
-
-- 't Hooft, Nucl. Phys. B72, 461 (1974): original large-N_c paper
-- Witten, Nucl. Phys. B160, 57 (1979): baryons in large N_c
-- Coleman, "Aspects of Symmetry" (1985), Ch. 8: pedagogical treatment
-- Manohar, "Large N QCD" (1998), hep-ph/9802419: modern review
-
-The expansion is exact as a topological classification. No approximation
-is involved in assigning genus g to a diagram. The approximation enters
-only when truncating the sum over genera.
-
----
-
-## Part 2: Derivation of R_conn
-
-### 2.1 Color decomposition of the q-qbar propagator
-
-The quark-antiquark bilinear psi-bar_a psi_b transforms under
-SU(N_c) as:
-
-    N_c (x) N_c-bar = 1 (singlet) + (N_c^2 - 1) (adjoint)
-
-The full q-qbar propagator Pi(p) receives contributions from both
-channels:
-
-    Pi(p) = Pi_singlet(p) + Pi_adjoint(p)
-
-The connected color trace ratio is defined as:
-
-    R_conn = Pi_adjoint / Pi_total = Pi_adjoint / (Pi_singlet + Pi_adjoint)
-
-### 2.2 Topological identification of channels
-
-The critical step: the singlet and adjoint channels correspond to
-distinct diagram topologies.
-
-**Adjoint channel (connected, planar).**
-Diagrams where the quark and antiquark exchange gluons without their
-color lines crossing. These are PLANAR diagrams: they can be drawn
-on a sphere (genus 0) with the quark boundary on one side. The color
-quantum numbers flow continuously between the quark and antiquark
-lines via gluon exchange.
-
-At leading order in 1/N_c, the planar diagrams dominate. Each planar
-diagram carries an implicit factor of N_c from the color trace around
-the quark loop, plus factors of lambda (the 't Hooft coupling) from
-each vertex pair. The total planar contribution scales as:
-
-    Pi_planar ~ N_c * f(lambda)
-
-where f(lambda) is a function of the 't Hooft coupling that encodes
-all planar dynamics.
-
-**Singlet channel (disconnected, non-planar).**
-Diagrams where the quark and antiquark annihilate into a pure-glue
-intermediate state (the quark lines form a closed loop, connected to
-the rest only through gluons). These correspond to the singlet channel:
-the q-qbar pair has total color charge zero, and the intermediate state
-is a colorless glueball.
-
-Such diagrams are NON-PLANAR: the quark loop is a separate boundary
-from the external operator insertion, requiring the surface to have
-at least one handle (genus >= 1). The leading non-planar contribution
-scales as:
-
-    Pi_non-planar ~ N_c^{-1} * h(lambda)
-
-The key topological fact: cutting open a planar diagram along the
-quark boundary, the quark and antiquark color indices are connected
-by gluon lines -- this is the adjoint (connected) channel. Cutting
-open a non-planar diagram, the quark color index is traced internally
--- this is the singlet (disconnected) channel.
-
-### 2.3 The ratio at leading order
-
-The total propagator is:
-
-    Pi_total = Pi_planar + Pi_non-planar + O(N_c^{-3})
-             = N_c f(lambda) + N_c^{-1} h(lambda) + O(N_c^{-3})
-
-The connected (adjoint) fraction is:
-
-    R_conn = Pi_planar / Pi_total
-           = N_c f / (N_c f + N_c^{-1} h + ...)
-           = 1 / (1 + h/(N_c^2 f) + ...)
-           = 1 - h/(N_c^2 f) + O(1/N_c^4)
-
-Now invoke the completeness relation. The singlet and adjoint channels
-span the full N_c x N_c-bar space. By the Fierz identity (proved in
-YUKAWA_COLOR_PROJECTION_THEOREM.md, Section 1.3), the N_c^2-dimensional
-bilinear space decomposes into:
-
-    dim(singlet) = 1
-    dim(adjoint) = N_c^2 - 1
-
-If the dynamics populates the color channels according to their
-dimensionality (which is guaranteed at leading order in 1/N_c by
-the dominance of planar diagrams, since planar diagrams explore all
-N_c^2 - 1 adjoint generators democratically), then:
-
-    Pi_singlet / Pi_total = 1/N_c^2
-    Pi_adjoint / Pi_total = (N_c^2 - 1)/N_c^2
-
-This gives:
-
-    h/(N_c^2 f) = 1/N_c^2
-
-    R_conn = 1 - 1/N_c^2 + O(1/N_c^4) = (N_c^2 - 1)/N_c^2 + O(1/N_c^4)
-
-### 2.4 What is "exact" and what is conditional (audit-narrowed 2026-05-10)
-
-The exact-at-finite-N_c content is the **representation-dimension
-fraction** `(N_c^2 − 1)/N_c^2`, imported from the cited Fierz authority.
-That fraction is a pure SU(N_c) group-theory invariant; it carries no
-expansion correction.
-
-The leading-order **dynamical** statement that the lattice connected-
-trace observable saturates that fraction is **conditional**:
-
-1. The Fierz identity is an algebraic identity of SU(N_c) — that part
-   is exact and imported; this note does not re-derive it.
-
-2. The assertion that *planar dynamics populates all `N_c^2 − 1` adjoint
-   generators uniformly* at leading order in 1/N_c is **not derived in
-   this note**. It is the standard textbook large-N_c heuristic
-   ('t Hooft 1974) and is part of the admitted-context literature
-   input. It is also the renaming step flagged by the audit verdict.
-
-3. The assertion that *the singlet channel receives contributions ONLY
-   from non-planar diagrams (genus >= 1)* uses the same 't Hooft
-   topological classification under the same heuristic.
-
-4. Under (2)-(3), the leading-order channel decomposition matches the
-   imported representation-dimension fraction with corrections of
-   `O(1/N_c^4)` from genus-2 surfaces.
-
-The leading-order match is therefore "leading-order in the 't Hooft
-topological-dominance heuristic plus the matching rule (M) of the
-cited Fierz note". Calling it "exact" overstates the in-atlas
-derivation status; the previous version of this section did exactly
-that and is corrected here.
-
----
-
-## Part 3: Validity at beta = 6
-
-### 3.1 The topological argument is beta-independent
-
-The 1/N_c expansion classifies diagrams by their TOPOLOGY (genus of
-the surface on which they can be drawn). This classification is
-independent of:
-
-- The bare coupling g^2 (or equivalently beta = 2N_c/g^2)
-- The lattice spacing a
-- The quark mass m
-- The lattice volume L
-
-The genus of a Feynman diagram is a combinatorial property of its
-graph structure. It does not depend on the numerical values of the
-propagators or vertices. A planar diagram remains planar at any beta.
-
-Therefore, the statement "planar diagrams dominate over non-planar
-diagrams by a factor of N_c^2" holds at ALL beta, including beta = 6.
-
-### 3.2 What DOES depend on beta
-
-The 't Hooft coupling lambda = g^2 N_c determines the WEIGHT of each
-diagram within a given genus class. At beta = 6 (g^2 = 1), the
-'t Hooft coupling is lambda = 3. This is O(1), meaning:
-
-- Individual diagrams are not perturbatively small
-- The full non-perturbative sum over planar diagrams gives f(lambda=3)
-- The full non-perturbative sum over genus-1 diagrams gives h(lambda=3)
-
-But the RATIO h/(N_c^2 f) is still 1/N_c^2 = 1/9, because:
-
-1. Both f and h receive contributions from all orders in lambda
-2. The relative suppression factor N_c^{-2} between genus 0 and
-   genus 1 is a property of the COLOR TRACE, not the coupling
-3. At strong coupling, each genus class is resummed non-perturbatively,
-   but the genus-dependent N_c scaling is preserved
-
-This is the power of the topological expansion: it separates the
-N_c-counting (which is exact) from the dynamical content (which is
-non-perturbative but genus-by-genus).
-
-### 3.3 Higher-genus corrections at N_c = 3
-
-For N_c = 3, the formal expansion parameter is 1/N_c^2 = 1/9 ~ 11%.
-However, the PHYSICAL correction at genus 2 is:
-
-    delta R_conn^{(g=2)} ~ c_2 / N_c^4 = c_2 / 81
-
-where c_2 is an O(1) coefficient. Even if c_2 ~ 1, the correction
-is ~1.2%.
-
-The MC measurement confirms this: R_conn(MC) agrees with 8/9 to 0.2%
-(see Part 5), consistent with c_2 being O(1) or smaller.
-
-### 3.4 Strong coupling and the topological expansion
-
-One might worry that at strong coupling (g^2 = 1), the 1/N_c expansion
-breaks down. This does NOT happen. The reason:
-
-The 1/N_c expansion is not a weak-coupling expansion. It is a
-TOPOLOGICAL expansion that works at ANY coupling. 't Hooft's original
-proof holds for arbitrary lambda. The expansion parameter is 1/N_c^2,
-not g^2 or alpha_s.
-
-At strong coupling, the individual diagrams are large, but the
-topological suppression of non-planar diagrams is maintained because
-it arises from COLOR COMBINATORICS (the number of independent color
-traces), not from the magnitude of individual diagrams.
-
-This is confirmed by lattice Monte Carlo studies of large-N_c gauge
-theories, which verify the 1/N_c^2 scaling of non-planar observables
-at strong coupling (see Lucini, Teper, Wenger, JHEP 0401:061, 2004).
-
----
-
-## Part 4: Correction Bound
-
-### 4.1 Genus-2 bound
-
-The leading correction to R_conn = (N_c^2 - 1)/N_c^2 comes from
-genus-2 diagrams:
-
-    R_conn = (N_c^2 - 1)/N_c^2 + c_2/N_c^4 + O(1/N_c^6)
-
-For N_c = 3:
-
-    R_conn = 8/9 + c_2/81 + O(1/729)
-
-The coefficient c_2 depends on the full non-perturbative dynamics.
-From the MC measurement (Part 5):
-
-    R_conn(MC) = 0.887 +/- 0.008
-    8/9 = 0.88889
-
-    Residual: |R_conn(MC) - 8/9| = 0.002 +/- 0.008
-
-This gives |c_2| < 0.8 (2-sigma), consistent with c_2 = O(1).
-
-### 4.2 Parametric bound from large-N_c scaling
-
-In general, the 1/N_c expansion coefficients satisfy:
-
-    c_g ~ (lambda/4pi)^{n_g}
-
-where n_g is the number of vertices in the minimal genus-g diagram.
-For genus 2, the minimal diagram has n_2 >= 4 vertices, giving
-c_2 ~ (3/4pi)^4 ~ 0.03 if perturbative counting applies.
-
-However, at strong coupling (lambda = 3), this perturbative estimate
-is unreliable. The MC bound |c_2| < 0.8 is the reliable constraint.
-
-### 4.3 Impact on observables
-
-The O(1/N_c^4) correction to R_conn propagates to observables as:
-
-    delta(y_t) / y_t = (1/2) * delta(R_conn) / R_conn
-                     ~ c_2 / (2 * 81 * 8/9) ~ c_2 * 0.007
-
-For |c_2| < 0.8: delta(y_t)/y_t < 0.5%. This is within the
-perturbative matching uncertainty (Delta ~ 2%) and does not affect
-the prediction at the current precision.
-
-    delta(g_EW) / g_EW = (1/2) * delta(R_conn) / R_conn ~ 0.5%
-
-Similarly negligible compared to the 0.17% agreement of the EW
-couplings (which probes the LEADING term, not the correction).
-
----
-
-## Part 5: MC Verification
-
-### 5.1 Setup
-
-The script `scripts/frontier_color_projection_mc.py` measures R_conn
-directly on SU(3) gauge configurations at beta = 6 (g^2 = 1) using
-the color-decomposed quark propagator.
-
-Framework inputs (zero imports):
-- SU(3) gauge group from Cl(3)
-- Lattice Z^4 (d+1 = 4 from anomaly-forced time)
-- beta = 6 from g^2 = 1 (Cl(3) canonical)
-- Staggered fermion operator from Cl(3) taste structure
-
-### 5.2 Measurement
-
-The MC computes:
-
-    R_conn = <Tr_color[G(0,x) G(x,0)]_adj> / <Tr_color[G(0,x) G(x,0)]_total>
-
-where G_{ab}(x,y) is the staggered quark propagator in the SU(3)
-gauge background, and the subscripts denote the Fierz decomposition
-into adjoint and total channels.
-
-Result (4^4 lattice, 100 configurations, Cabibbo-Marinari heat bath):
-
-    R_conn(MC) = 0.887 +/- 0.008
-
-### 5.3 Comparison with derivation
-
-    R_conn(derived) = 8/9 = 0.88889
-    R_conn(MC) = 0.887 +/- 0.008
-    Deviation: |0.887 - 0.889| / 0.889 = 0.2%
-
-The MC value agrees with the analytical prediction to 0.2%, well
-within the statistical error (0.9%) and consistent with the
-O(1/N_c^4 ~ 1.2%) correction being small.
-
-### 5.4 Cross-check: observable predictions
-
-The Fierz/channel result `R_conn = 8/9` enters one direct observable
-prediction and one matching-rule conditional EW package:
-
-1. **EW couplings:** g_1(v), g_2(v) match observed values to 0.17%
-   average deviation only on the connected-trace specialization
-   `kappa_EW=0`, where `sqrt(K_EW(0)) = sqrt(9/8)`. The exact Fierz
-   fraction alone does not derive that physical readout coefficient.
-
-2. **Top mass:** m_t(pole) = 172.57 GeV vs observed 172.69 GeV
-   (-0.07%) when y_t is corrected by sqrt(8/9) = sqrt(R_conn).
-
-Three independent observables (g_1, g_2, m_t) agree with a single
-group-theory factor to sub-percent precision.
-
----
-
-## Part 6: Axiom and Authority Trace
-
-The dependency chain has two parts: an axiom trace for `N_c = 3`, and a
-mixed in-atlas / admitted-context literature trace for the
-`(N_c^2 − 1)/N_c^2` channel-count value:
-
-    Cl(3) --> Z_3 clock-shift --> SU(3) gauge group --> N_c = 3       (in-atlas axiom trace)
-          |
-          +--> SU(N_c) gauge theory on Z^4 lattice                    (in-atlas axiom trace)
-
-    SU(N_c) gauge theory                                              (in-atlas)
-          |
-          +--> Fierz completeness identity                            (cited Fierz authority, audited_clean)
-          |
-          +--> Hilbert-space dimension fraction (N_c^2 - 1)/N_c^2     (cited Fierz authority, audited_clean)
-          |
-          +--> matching rule (M): connected-trace projects on adjoint (open structural input
-          |                                                            inherited from Fierz note;
-          |                                                            not derived on `main`)
-          |
-          +--> conditional 8/9 R_conn estimate at N_c = 3              (this note, conditional on (M))
-
-    't Hooft 1/N_c topological classification                         (admitted-context literature input)
-          |
-          +--> O(1/N_c^4) correction estimate                          (admitted-context literature input)
-
-This note's in-note content is a class-A read of the imported Fierz
-fraction (no re-derivation), conditional on the matching rule (M),
-plus an admitted-context literature input from 't Hooft for the
-correction-size estimate, plus an MC numerical cross-check.
-
----
-
-## Part 7: Status Assessment (audit-narrowed 2026-05-10)
-
-### 7.1 Scope of the in-note claim
-
-This note's in-note content is restricted to:
-
-1. an **import** of the exact `(N_c^2 − 1)/N_c^2` adjoint-channel
-   dimension fraction from the cited
-   [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
-   authority (`audited_clean`, retained-bounded);
-2. a **conditional** 1/N_c-expansion estimate that, *assuming the
-   matching rule (M) of the Fierz note*, gives `R_conn = (N_c^2 − 1)/N_c^2
-   + O(1/N_c^4)`;
-3. an **MC cross-check** on a 4^4 lattice that agrees with the
-   target 8/9 to 0.2%, under the same assumption (the runner uses 8/9
-   as its expected target).
-
-### 7.2 What is **not** derived in this note
-
-The dynamical-population bridge — i.e. the structural assertion that the
-lattice connected color trace projects onto the adjoint channel of the
-Fierz decomposition — is **not** derived in this note. It inherits the
-matching rule (M) from the cited Fierz authority, where it is itself
-recorded as a named structural input that is not derived inside the
-Fierz note either. This is the renaming step flagged by the
-2026-05-10 audit verdict.
-
-The 't Hooft 1974 topological dominance argument is admitted-context
-literature input; it is **not** an in-atlas theorem on `main`.
-
-### 7.3 Status table for downstream consumers
-
-The downstream observables that depend on `R_conn = 8/9` (`sqrt(Z_phi)`,
-`y_t(phys)`, `g_EW(phys)`, `m_t(pole)`) inherit the same status as the
-matching rule (M): conditional on the named structural input. This row
-explicitly **does not** propose retained or positive-theorem promotion
-for those downstream observables.
-
----
-
-## Import Status Table (audit-narrowed 2026-05-10)
-
-| Element                          | Value      | Status      | Source                                                                                              |
-|----------------------------------|------------|-------------|-----------------------------------------------------------------------------------------------------|
-| N_c = 3                          | 3          | AXIOM       | Cl(3) Z_3 clock-shift (axiom)                                                                       |
-| SU(N_c) gauge theory             | --         | AXIOM       | Cl(3) framework (axiom)                                                                             |
-| 1/N_c topological classification | --         | LITERATURE  | 't Hooft 1974 (admitted-context literature input; not in-atlas theorem)                             |
-| Planar dominance (genus 0)       | N_c^{chi}  | LITERATURE  | Topological classification (admitted-context literature input)                                      |
-| Fierz identity                   | exact      | IMPORTED    | Cited Fierz note (`audited_clean`, retained_bounded)                                                |
-| `(N_c^2-1)/N_c^2`                | 8/9        | IMPORTED    | Cited Fierz note (representation-dimension fraction; not re-derived here)                           |
-| Matching rule (M)                | --         | OPEN GAP    | Inherited from cited Fierz note as a named structural input; not derived on the current atlas      |
-| R_conn estimate                  | 8/9 + O(1/81) | CONDITIONAL | This note, conditional on matching rule (M) and 't Hooft topological-dominance literature input |
-| R_conn(MC) = 0.887 +/- 0.008     | 0.887(8)   | NUMERICAL   | `scripts/frontier_color_projection_mc.py`; runner uses 8/9 as the explicit target value              |
-
----
-
-## 8. 2026-05-18 Tier B bridge-theorem attempt (NARROWED — no closure)
-
-### 8.1 What was attempted
-
-Per the audit verdict's repair sub-target, the 2026-05-18 physics-loop
-dispatched a Tier B algebraic bridge attempt: derive the matching rule
-(M) — the framework's lattice connected color trace projects onto the
-adjoint channel of the Fierz decomposition — as a one-step Fierz
-channel-count projection identity from retained Cl(3) primitives. The
-target derivation would identify the lattice connected-trace observable
-with the SU(N_c) adjoint trace fraction `(N_c^2 − 1)/N_c^2 = 8/9` at
-N_c = 3, closing the dynamical-population bridge inherited from
-[`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md).
-
-### 8.2 Verdict: NARROWED (closure refused)
-
-The bridge **does not close** from retained primitives. The attempt is
-recorded here as a narrowing because the framework already contains
-two named-obstruction artifacts that prove the bridge requires non-
-retained, non-perturbative inputs. The 2026-05-18 attempt did not find a
-route around either obstruction; forcing a closure would silently
-elevate the named obstruction to retained status, in violation of the
-[`feedback_consistency_vs_derivation_below_w2`](#) policy that
-arithmetic equalities cannot load-bear closure.
-
-### 8.3 Named obstructions blocking the Tier B route
-
-**(O-OPEN-GATE)** [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
-records the matching-rule underdetermination as a **no-go theorem** on
-the retained packet `{ N_c = 3, Fierz identity, CMT mean-field
-factorization, OZI bounded suppression }`. Concretely, parametrize the
-post-CMT channel sum as
+# R_conn Matching-Rule No-Go With Exact Fierz Support
+
+**Date:** 2026-04-14; matching-rule no-go repair 2026-05-26
+**Runner:** `scripts/rconn_matching_rule_nogo_certificate.py`
+**Claim type:** no_go
+**Status:** exact Fierz/channel-count support plus a bounded no-go for
+deriving the physical connected-trace selector from the current packet.
+
+## Scope
+
+Earlier versions of this note used the symbol `R_conn` for the physical
+lattice connected-trace readout and then identified it with the exact
+SU(3) adjoint channel fraction `8/9`. Audit correctly found that the
+identification is not derived by the packet. The exact algebra is real:
+for SU(`N_c`),
 
 ```text
-Pi_EW^phys(kappa_EW) = F_adj + kappa_EW (1 − F_adj)
-                     = (N_c^2 − 1)/N_c^2 + kappa_EW / N_c^2
+F_adj = dim(adj) / dim(N_c x N_c-bar) = (N_c^2 - 1) / N_c^2.
 ```
 
-The retained primitives normalize the total channel sum but **do not
-fix** the disconnected/singlet readout coefficient `kappa_EW`. The
-package-level 9/8 factor is the special case `K_EW(0) = 9/8` (connected-
-trace selector), but the full-trace readout `K_EW(1) = 1` is equally
-compatible with the retained Fierz arithmetic and identical CMT
-scaling. Distinct completions exist with the **same Fierz channel
-counts**, demonstrating that the channel-count identity alone cannot
-determine the physical observable. Therefore no one-step Fierz
-projection from retained primitives selects `kappa_EW = 0`.
+At `N_c = 3`, `F_adj = 8/9`. What does not follow from that algebra is the
+physical readout rule that discards or absorbs the singlet/disconnected
+channel in the EW-current observable.
 
-**(O-STRETCH)** `YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`
-enumerates the three structural routes that would close (M) exactly
-and demonstrates each fails on the retained packet:
+This repair retires the unconditional physical-readout claim. It preserves
+the exact Fierz support and states the current no-go boundary:
 
-- **(O1)** Disconnected-piece identical vanishing: **false** —
-  glueball intermediate states exist at any N_c ≥ 2 with non-zero
-  amplitude.
-- **(O2)** Disconnected piece contributes only to v: **scheme choice,
-  not derivation** — the decomposition `Σ^full = Σ^conn + Σ^disc` is
-  algebraic; the assignment of `Σ^disc` exclusively to v is a
-  renormalization-scheme choice, not a derived statement of the
-  retained primitives.
-- **(O3)** Exact OZI-vanishing theorem at all genus orders: **not
-  available** — standard OZI is phenomenological and the rule has
-  corrections even at N_c = ∞.
+```text
+R_phys(kappa_EW) = F_adj + kappa_EW (1 - F_adj)
+K_EW(kappa_EW) = 1 / R_phys(kappa_EW)
+```
 
-The sharpest honest statement on the retained packet is the bounded-
-support tier `R_conn^phys = (N_c^2 − 1)/N_c^2 + O(1/N_c^4)`, which is
-exactly the existing bounded-theorem status of this note.
+The connected-trace specialization is `kappa_EW = 0`, giving
+`K_EW(0) = 9/8`. The full-trace specialization is `kappa_EW = 1`, giving
+`K_EW(1) = 1`. Both completions satisfy the exact Fierz arithmetic and the
+same color-blind CMT scaling. Therefore the current packet does not derive
+the selector `kappa_EW = 0`.
 
-### 8.4 Why a one-step Fierz projection cannot close (M)
+No new axiom, fitted selector, or audit verdict is introduced.
 
-Both the cited Fierz authority and this note's Hilbert-space dimension
-count derive the **representation-dimension fraction** of the q-qbar
-tensor product. That fraction is a pure SU(N_c) group-theory invariant.
-The matching rule (M), by contrast, asserts that the **lattice
-connected color trace** `<Tr_color[G(0,x) G(x,0)]_connected>` projects
-onto the same adjoint channel after the framework's specific Wilson-
-line construction of the EW current and after CMT mean-field
-factorization. This is a statement about a dynamical observable, not a
-statement about a Hilbert-space dimension count. The two coincide only
-when an additional structural premise selects the disconnected readout
-coefficient `kappa_EW = 0`. The retained primitives do not supply that
-premise. Per the hostile-review semantics policy
-([`feedback_hostile_review_semantics`](#)), the arithmetic
-identification `dim(adj)/dim(N_c ⊗ N_c-bar) = (N_c^2 − 1)/N_c^2 = 8/9`
-cannot mask the action-level admission that the lattice connected-
-trace observable is identified with this fraction by convention.
+## Binding Claim
 
-### 8.5 Yang-Mills exclusion boundary check (caveat)
+On the current retained/support surface available to this row:
 
-A potential one-step closure route would invoke the Wilson-line
-structure of the EW current at the lattice level to **mechanically**
-project onto the adjoint channel after CMT factorization absorbs the
-singlet piece into `u_0`. This route is **not available** to a retained-
-primitive derivation: the Wilson-line construction of the gauge
-connection is an admitted import from continuum Yang-Mills, not a
-retained theorem (cf.
-[`project_bridge_gap_resolution_c_locked`](#) — the 10-agent attack
-established Wilson is an admitted import, not derived from Cl(3)/Z^3).
-Forcing a Wilson-line projection here would re-import a known open
-admission and silently elevate it under a different label. The Tier B
-attempt therefore stops short of invoking Wilson-line structure beyond
-what the cited Fierz authority already records as a named open
-primitive.
+1. The SU(`N_c`) Fierz completeness identity is exact.
+2. The Hilbert-space adjoint fraction is exactly
+   `(N_c^2 - 1) / N_c^2`; at `N_c = 3` this is `8/9`.
+3. The physical EW-current readout has a free disconnected-channel
+   coefficient `kappa_EW`.
+4. CMT mean-field scaling multiplies connected and singlet channels by the
+   same factor, so it cannot select `kappa_EW`.
+5. OZI-style bounded suppression supplies a size class for the singlet
+   channel, not an exact coefficient.
+6. The two completions `kappa_EW = 0` and `kappa_EW = 1` agree on the
+   Fierz algebra and CMT scaling but disagree on `K_EW`. The selector is
+   therefore underdetermined by the current packet.
 
-### 8.6 Outcome of the 2026-05-18 attempt
+This is a no-go for unconditional `R_conn = 8/9` as a physical readout
+claim. The exact `8/9` support remains available as `F_adj`, not as a
+derived connected-trace observable.
 
-- **Bridge derivation:** NOT complete; NARROWED.
-- **Admissions used (counterfactual to closure):** retained Cl(3)
-  (N_c = 3) + SU(N_c) Fierz identity (retained via cited authority)
-  alone are **insufficient**; closure additionally requires either
-  (O1) an exact disconnected-piece-vanishing theorem, (O2) a scheme-
-  level assignment of `Σ^disc` to v (not derived), or (O3) an exact
-  all-genus OZI theorem.
-- **Honest tier:** the note remains a `bounded_theorem` with the
-  exact channel-count fraction imported from the cited Fierz
-  authority, the matching rule (M) recorded as a named open structural
-  input shared with that authority, and the dynamical-population
-  bridge open via the two named-obstruction artifacts above.
-- **No promotion of `kappa_EW = 0` is performed** by this narrowing.
-  The connected-trace selector remains an extra premise outside the
-  retained packet, as established by the open-gate no-go authority.
+## What The Old MC Check Means
 
-### 8.7 What this narrowing changes vs the 2026-05-10 audit-refresh
+The legacy MC runner `scripts/frontier_color_projection_mc.py` compared a
+Monte Carlo connected-trace estimate with the analytic `8/9` target. That is
+a consistency check after choosing the connected-trace target; it is not a
+derivation of the target or of `kappa_EW = 0`.
 
-The 2026-05-10 refresh already documented that the matching rule (M)
-is not derived in this note. The 2026-05-18 narrowing adds:
+This repaired row uses the dedicated runner above as the binding artifact.
+The old MC check is retained only as diagnostic context.
 
-1. An explicit cross-reference to the
-   [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
-   no-go theorem, which proves that the retained packet admits at
-   least two `kappa_EW` completions (the `K_EW(0) = 9/8` connected-
-   trace selector and the `K_EW(1) = 1` full-trace selector) with
-   identical Fierz arithmetic and identical CMT scaling.
-2. An explicit cross-reference to the
-   `YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`
-   named-obstruction packet, which enumerates the three failure modes
-   (O1, O2, O3) blocking a retained-primitive derivation of (M).
-3. A documented Tier B bridge-theorem attempt verdict (NARROWED) for
-   audit-trail integrity: future re-audits do not need to re-discover
-   that the one-step Fierz channel-count projection from retained
-   Cl(3) primitives does not close the dynamical-population bridge.
+## What This Note Does Not Claim
 
-The intrinsic load-bearing claim and authority role of the note are
-unchanged. The 2026-05-18 narrowing strengthens the boundary against
-silent matching-rule promotion in downstream consumers.
+- It does not claim that the physical connected-trace readout is derived.
+- It does not claim an unconditional package coefficient `K_EW = 9/8`.
+- It does not use numerical agreement to fit or ratify `kappa_EW = 0`.
+- It does not add a new axiom or select a new convention.
+- It does not apply an audit verdict.
+
+## Runner Certificate
+
+The runner verifies:
+
+- normalized SU(`N`) generators and the Fierz completeness identity for
+  `N = 2, 3, 4, 5`;
+- the exact adjoint fractions, including `F_adj = 8/9` at `N_c = 3`;
+- `K_EW(0) = 9/8`, `K_EW(1) = 1`, and the fact that the two completions
+  share the same Fierz/CMT premises;
+- CMT scaling invariance for several nonzero scale factors and multiple
+  `kappa_EW` values;
+- bounded OZI-size behavior without coefficient selection; and
+- source-note hygiene for this no-go boundary.
+
+Expected local certificate:
+
+```text
+RUNNER STATUS: PASS (PASS=30 FAIL=0)
+```
+
+## Reopen Conditions
+
+Reopen the physical `R_conn = 8/9` readout only with a retained-grade
+lattice-current selector theorem or an exact disconnected-current
+coefficient computation that fixes `kappa_EW = 0` from accepted primitives.
+Until then, downstream uses of `9/8` must be written as the conditional
+connected-trace specialization `K_EW(0)`.

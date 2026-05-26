@@ -1,0 +1,106 @@
+========================================================================
+ axiom_first_reflection_positivity_check.py
+ Loop: axiom-first-foundations, Cycle 2 / Route R2
+ Exhibits structural content of reflection positivity for the
+ staggered-only CL3-on-Z3 action plus Wilson-plaquette gauge half.
+ 2026-05-26 repair: E1-E5 are binding; E6 is Wilson diagnostic only
+========================================================================
+
+--- Exhibit E1: free staggered-only transfer matrix T = exp(-a_τ H_lat) ---
+  L_s = 4, dim = 16, mass = 0.3, r_W = 0.0, a_τ = 1.0
+  E1a Hermiticity: ||T - T†||_max = 5.551e-16
+  E1b spectrum of T:  min = 2.608e-01,  max = 3.834e+00,  #neg = 0
+  spectrum of H_lat:  min = -1.3440,  max = 1.3440
+  (note: T ≤ 1 bound requires ground-state subtraction; max(T) = 3.834e+00 reflects unsubtracted H_lat)
+  E1 verdict: PASS
+
+--- Exhibit E2: U(1) Wilson plaquette transfer matrix (single plaquette) ---
+  single plaquette, N_links = 4, dim_total = 2401, β = 1.0, m_trunc = ±3, a_τ = 1.0
+  E2a Hermiticity: ||T_G - T_G†||_max = 5.551e-17
+  E2b spectrum T_G: min = 1.485e-08,  max = 1.256e+00,  #neg = 0
+  spectrum H_E: min = -0.2276  (ground-state energy bound),  max = 18.0250
+  E2 verdict: PASS
+
+--- Exhibit E3: RP inequality on staggered-fermion observables ---
+  using ground state of H_lat as vacuum, E_0 = -1.344031
+  τ  observable                G(F,F)      Im G       OK
+  0  c_0^†                   +8.2184e-01  +0.00e+00  PASS
+  0  c_1^†                   +1.7816e-01  +0.00e+00  PASS
+  0  c_2^†                   +8.2184e-01  +0.00e+00  PASS
+  0  c_3^†                   +1.7816e-01  +0.00e+00  PASS
+  0  c_0^† c_1^†             +8.9082e-02  +0.00e+00  PASS
+  0  c_0^† c_2^†             +6.4367e-01  +0.00e+00  PASS
+  0  c_0^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  0  c_1^† c_2^†             +8.9082e-02  +0.00e+00  PASS
+  0  c_1^† c_3^†             +8.1508e-32  +0.00e+00  PASS
+  0  c_2^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  1  c_0^†                   +1.8548e+00  +0.00e+00  PASS
+  1  c_1^†                   +2.4049e-01  +0.00e+00  PASS
+  1  c_2^†                   +1.8548e+00  +6.94e-18  PASS
+  1  c_3^†                   +2.4049e-01  +3.47e-18  PASS
+  1  c_0^† c_1^†             +8.9082e-02  +0.00e+00  PASS
+  1  c_0^† c_2^†             +6.4367e-01  +0.00e+00  PASS
+  1  c_0^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  1  c_1^† c_2^†             +8.9082e-02  +0.00e+00  PASS
+  1  c_1^† c_3^†             +8.1625e-32  +0.00e+00  PASS
+  1  c_2^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  2  c_0^†                   +4.6211e+00  +0.00e+00  PASS
+  2  c_1^†                   +3.2463e-01  +0.00e+00  PASS
+  2  c_2^†                   +4.6211e+00  -4.16e-17  PASS
+  2  c_3^†                   +3.2463e-01  -6.94e-18  PASS
+  2  c_0^† c_1^†             +8.9082e-02  +0.00e+00  PASS
+  2  c_0^† c_2^†             +6.4367e-01  +0.00e+00  PASS
+  2  c_0^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  2  c_1^† c_2^†             +8.9082e-02  +0.00e+00  PASS
+  2  c_1^† c_3^†             +8.2026e-32  +0.00e+00  PASS
+  2  c_2^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  3  c_0^†                   +1.2253e+01  +1.11e-16  PASS
+  3  c_1^†                   +4.3821e-01  +6.94e-18  PASS
+  3  c_2^†                   +1.2253e+01  +1.11e-16  PASS
+  3  c_3^†                   +4.3821e-01  -3.47e-18  PASS
+  3  c_0^† c_1^†             +8.9082e-02  +0.00e+00  PASS
+  3  c_0^† c_2^†             +6.4367e-01  +0.00e+00  PASS
+  3  c_0^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  3  c_1^† c_2^†             +8.9082e-02  +0.00e+00  PASS
+  3  c_1^† c_3^†             +8.3190e-32  +0.00e+00  PASS
+  3  c_2^† c_3^†             +8.9082e-02  +0.00e+00  PASS
+  E3 verdict: PASS
+
+--- Exhibit E4: half-action factorisation gives positive Gram matrix ---
+  L_s = 3, basis size = 8
+  Gram-matrix spectrum: min = 3.709e-01,  max = 2.696e+00
+  E4 verdict: PASS
+
+--- Exhibit E5: staggered chirality anticommutation eps M_KS = -M_KS eps ---
+  (requires both L_t and L_s even so the staggered chirality wraps cleanly)
+  All 6 checks passed (max diff < 1e-10) across L_t in (4,6,8), L_s in (4,6)
+  This is the +/-lambda paired-eigenvalue identity for det(M_KS):
+  if M_KS v = lambda v, then M_KS (eps v) = -lambda (eps v).
+  E5 verdict: PASS
+
+--- Exhibit E6 (diagnostic only): Wilson-fermion det(M) finite checks ---
+  Well-conditioned configurations checked: 24
+    L_t=4, L_s=3, m=0.5: det(M) = +2.5280e+01 + -2.76e-16i  (Im/|det|=1.09e-17)  PASS
+    L_t=4, L_s=3, m=0.8: det(M) = +1.3134e+01 + -1.12e-15i  (Im/|det|=8.53e-17)  PASS
+    L_t=4, L_s=3, m=1.5: det(M) = +1.0018e+02 + +2.83e-14i  (Im/|det|=2.83e-16)  PASS
+    L_t=4, L_s=3, m=2.0: det(M) = +2.7844e+02 + +7.64e-16i  (Im/|det|=2.74e-18)  PASS
+    L_t=4, L_s=4, m=0.5: det(M) = +1.4997e+02 + +1.08e-14i  (Im/|det|=7.17e-17)  PASS
+    L_t=4, L_s=4, m=0.8: det(M) = +3.6905e+01 + -2.90e-16i  (Im/|det|=7.86e-18)  PASS
+    ... (18 more cases checked)
+  E6 verdict: PASS
+
+========================================================================
+ SUMMARY
+========================================================================
+   E1: PASS
+   E2: PASS
+   E3: PASS
+   E4: PASS
+   E5 (staggered chirality anticommutation eps M_KS = -M_KS eps): PASS
+
+   BINDING PASSED: 5/5
+
+   diagnostic E6 (Wilson-fermion det diagnostic, non-load-bearing): PASS
+
+ verdict: binding staggered-only RP exhibits (R1)-(R4) reproduced numerically.
+ note: Wilson-fermion determinant output is diagnostic only.

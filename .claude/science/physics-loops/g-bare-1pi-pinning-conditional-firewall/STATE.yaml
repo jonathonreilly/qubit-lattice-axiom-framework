@@ -1,0 +1,48 @@
+loop: g-bare-1pi-pinning-conditional-firewall
+date: 2026-05-26
+branch: physics-loop/g-bare-1pi-pinning-conditional-firewall-20260526
+base: origin/main
+mode: campaign
+target: best-honest-status
+cycle: 4
+active_route: conditional_use_firewall_for_same_1pi_pinning
+hard_residual: >
+  Directly derive that the H_unit tree-level matrix element exhausts the
+  complete same-projected 1PI Gamma_S^(4) residue for arbitrary g_bare on Q_L.
+files_touched:
+  - docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+  - docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md
+claim_status:
+  claim_id: g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19
+  actual_current_surface_status: bounded-support / conditional-support
+  conditional_surface_status: g_bare = 1 under H_unit-residue exhaustion
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  ready_after_pipeline: true
+  criticality_after_pipeline: critical
+  load_bearing_score_after_pipeline: 13.83
+  bare_retained_allowed: false
+review_findings:
+  - The prior note already named the H_unit-residue admission.
+  - The proof body still used unconditional closure language.
+  - This block firewalls downstream use of g_bare = 1 behind the same named admission.
+verification_completed:
+  - bash docs/audit/scripts/run_pipeline.sh
+  - python3 docs/audit/scripts/audit_lint.py --strict
+  - python3 scripts/vocab_lint.py --report-only docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md .claude/science/physics-loops/g-bare-1pi-pinning-conditional-firewall
+  - python3 scripts/render_controlled_vocabulary.py --check
+  - python3 docs/audit/scripts/repair_missing_dependency_edges.py
+  - git diff --check
+verification_pending: []
+next_exact_action: commit, push, and open review PR
+stop_condition: coherent repair block packaged for independent audit

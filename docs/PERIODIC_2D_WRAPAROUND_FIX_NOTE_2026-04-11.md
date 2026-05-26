@@ -1,6 +1,10 @@
 # Periodic 2D Wraparound Fix Note (2026-04-11)
 
 **Status:** bounded - bounded or caveated result note
+**Claim type:** bounded_theorem
+**Primary runner:** [`scripts/periodic_2d_wraparound_package_certificate.py`](../scripts/periodic_2d_wraparound_package_certificate.py)
+**Runner cache:** [`logs/runner-cache/periodic_2d_wraparound_package_certificate.txt`](../logs/runner-cache/periodic_2d_wraparound_package_certificate.txt)
+
 ## Scope
 
 This note records the validated periodic-lattice minimum-image bug and the
@@ -19,6 +23,23 @@ Current-main fix:
 - shared helper: [`scripts/periodic_geometry.py`](../scripts/periodic_geometry.py)
 - periodic weighted runners now use minimum-image separations consistent with
   the torus adjacency actually being evolved
+
+The 2026-05-26 audit-packet certificate directly checks:
+
+- the shared helper's wraparound displacements, including `(0,0) -> (9,0)` on
+  a `10x10` torus;
+- the corrected wrap-edge Hamiltonian weight in
+  [`scripts/frontier_self_consistency_test.py`](../scripts/frontier_self_consistency_test.py),
+  [`scripts/frontier_eigenvalue_stats_and_anderson_phase.py`](../scripts/frontier_eigenvalue_stats_and_anderson_phase.py),
+  and [`scripts/frontier_born_rule_alpha.py`](../scripts/frontier_born_rule_alpha.py);
+- cached successful rerun evidence for those three corrected core surfaces:
+  [`logs/runner-cache/frontier_self_consistency_test.txt`](../logs/runner-cache/frontier_self_consistency_test.txt),
+  [`logs/runner-cache/frontier_eigenvalue_stats_and_anderson_phase.txt`](../logs/runner-cache/frontier_eigenvalue_stats_and_anderson_phase.txt),
+  and [`logs/runner-cache/frontier_born_rule_alpha.txt`](../logs/runner-cache/frontier_born_rule_alpha.txt).
+
+This repair keeps the claim bounded to corrected periodic-torus package
+evidence. It does not turn any downstream Born-rule, holography, or continuum
+claim into a theorem.
 
 ## Corrected live surfaces on `main`
 

@@ -9,6 +9,8 @@ named non-derivation import so downstream rows that consume the
 asymptotic `G(r) -> 1 / (4 pi |r|)` can register a one-hop
 dependency.
 **Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/lattice_greens_z3_asymptotic_normalization_certificate.py`](../scripts/lattice_greens_z3_asymptotic_normalization_certificate.py)
+**Runner cache:** [`logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt`](../logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt)
 
 ## Purpose
 
@@ -39,6 +41,24 @@ The leading `1 / (4 pi |r|)` continuum-limit form is the standard
 3D Newton-Poisson Green's function with the natural lattice unit
 spacing. Subleading corrections decay faster than `1 / |r|` and are
 not load-bearing for the asymptotic statement.
+
+## Included normalization certificate
+
+The primary runner supplies the packet-local normalization check that was
+missing from the prior audit packet. It verifies three facts for the stated
+graph-Laplacian convention:
+
+1. The nearest-neighbor graph-Laplacian symbol
+   `lambda(k) = 6 - 2(cos k_x + cos k_y + cos k_z)` has the small-`k`
+   normalization `lambda(k) = |k|^2 + O(|k|^4)`.
+2. With the Fourier / Poisson convention used here, the continuum kernel
+   `1/(4 pi r)` carries unit flux.
+3. Applying `(-Delta_lat)` to `1/(4 pi r)` on axis points away from the source
+   gives an `O(r^-5)` lattice-harmonic residual with stable scaled coefficient.
+
+This certificate does not replace the standard lattice-potential theorem
+itself; it fixes the load-bearing normalization and sign convention for the
+bounded named import.
 
 ## Standard textbook references
 
@@ -83,6 +103,7 @@ claim:
 - closure of any downstream Newton-law or gravity theorem.
 
 Its only function is to pin the textbook Maradudin / Montroll-Weiss
-lattice Green's function asymptotic as an accepted mathematical input
+lattice Green's function asymptotic as a named textbook input candidate
 so downstream notes can cite it cleanly via a one-hop edge in the
-audit citation graph.
+audit citation graph. Independent audit decides whether the bounded
+wrapper is retained-grade support.

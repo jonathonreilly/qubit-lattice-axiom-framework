@@ -4,8 +4,8 @@ Frontier runner - Koide Q ↔ δ linking relation.
 Companion to
   docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md
 
-This runner verifies the partial closure of the linking relation
-`δ = Q/d` as a consequence of two retained structural identities:
+This runner verifies the conditional linking relation `δ = Q/d` as a
+consequence of two named structural inputs:
 
   I1  (equal-sector-norm)        →  Q = 2/d
   I2  (dimensional-ratio for δ)   →  δ = 2/d^2
@@ -23,7 +23,7 @@ Checks:
   T7  Alternative generalization Q = (d-1)/d FAILS δ = Q/d off d=3, so
       sector-norm reading is the correct structural one.
   T8  Against PDG charged-lepton masses, Q=2/3 and δ=2/9 reproduce
-      observation at the retained precision.
+      observation at the documented comparator precision.
   T9  Residual radian-bridge postulate P is single-real-valued and does
       not reintroduce any blocked bundle-topology data.
 
@@ -82,7 +82,7 @@ def delta_dim_ratio(d: int) -> Fraction:
     """δ = 2/d^2 from (DOF of b) / dim(Herm_d).
 
     b ∈ ℂ carries 2 real DOFs; Herm_d has d^2 real DOFs. This is the
-    retained dimensional-ratio identity from the circulant-character note
+    documented dimensional-ratio identity from the circulant-character note
     A.2 (with postulate P supplying the radian-bridge).
     """
     return Fraction(2, d * d)
@@ -266,7 +266,7 @@ def test_T8_pdg_masses() -> None:
     m_tau = 1776.86
     sqrt_m = [math.sqrt(m_e), math.sqrt(m_mu), math.sqrt(m_tau)]
     Q_obs = (m_e + m_mu + m_tau) / (sum(sqrt_m)) ** 2
-    # Retained precision (Koide-cone note): sub-percent match to 2/3.
+    # Documented comparator precision (Koide-cone note): sub-percent match to 2/3.
     Q_target = 2.0 / 3.0
     check(
         "PDG Q within 5 × 10^-5 of 2/3",

@@ -1,0 +1,50 @@
+loop: koide-q-delta-conditional-firewall
+date: 2026-05-26
+branch: physics-loop/koide-q-delta-conditional-firewall-20260526
+base: origin/main
+mode: campaign
+target: best-honest-status
+cycle: 5
+active_route: conditional_authority_firewall_for_q_delta_linking
+hard_residual: >
+  Derive or cite audited retained authority identifying rho_delta = 2/d^2
+  with the selected-line CP1 Berry holonomy in radians, and separately
+  audit any one-hop authority used for I1 if the row is to be used beyond
+  a conditional implication.
+files_touched:
+  - docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md
+  - scripts/frontier_koide_q_delta_linking_relation.py
+  - logs/runner-cache/frontier_koide_q_delta_linking_relation.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+  - docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+claim_status:
+  claim_id: koide_q_delta_linking_relation_theorem_note_2026-04-20
+  actual_current_surface_status: conditional-support
+  conditional_surface_status: "I1 and P imply delta = Q/d"
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  ready_after_pipeline: true
+  criticality_after_pipeline: high
+  load_bearing_score_after_pipeline: 12.288
+  bare_retained_allowed: false
+verification_completed:
+  - python3 scripts/frontier_koide_q_delta_linking_relation.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_q_delta_linking_relation.py --allow-non-main
+  - bash docs/audit/scripts/run_pipeline.sh
+  - python3 docs/audit/scripts/audit_lint.py --strict
+  - python3 scripts/vocab_lint.py --report-only docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md .claude/science/physics-loops/koide-q-delta-conditional-firewall
+  - python3 scripts/render_controlled_vocabulary.py --check
+  - python3 docs/audit/scripts/repair_missing_dependency_edges.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_q_delta_linking_relation.py --allow-non-main --check-only
+  - git diff --check
+verification_pending: []
+next_exact_action: commit, push, and open review PR
+stop_condition: coherent repair block packaged for independent audit

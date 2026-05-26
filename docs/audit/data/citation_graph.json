@@ -60914,7 +60914,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "691e119efa3b4a28d2ad87811df46c2997c1a6c5d61401cd887651437ee319e8",
+      "note_hash": "a69150fabb45a2d143c353a70b41569d86390bdfcfaff82491b35bb43fe0511b",
       "path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_koide_q_delta_linking_relation.py",
       "title": "Koide `Q` \u2194 `\u03b4` Linking Relation: Partial Closure and Named Residual Postulate"

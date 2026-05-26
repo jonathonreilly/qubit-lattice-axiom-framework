@@ -1,6 +1,6 @@
 # Koide `Q` ↔ `δ` Linking Relation: Partial Closure and Named Residual Postulate
 
-**Date:** 2026-04-20 (conditional-on-P tightening: 2026-05-24; period-2π admission: 2026-05-25)
+**Date:** 2026-04-20 (conditional-on-P tightening: 2026-05-24; period-2π admission: 2026-05-25; current-surface firewall: 2026-05-26)
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Lane:** Scalar-selector cycle 1 — joint Koide-program import consolidation.
@@ -14,9 +14,32 @@ gives `δ = Q/d` at general `d` and `δ = Q/d = 2/9` at `d = 3`. The
 postulate `P` — the identification of the dimensionless character-algebra
 ratio `2/d²` with the selected-line CP¹ Berry holonomy in **radians** —
 is an admitted residual; it is not derivable from Cl(3)/Z³ + the
-retained selected-line CP¹ Berry structure alone (see §4 and the
+selected-line CP¹ Berry structure alone (see §4 and the
 "Scope narrowing" section below).
 **Primary runner:** `scripts/frontier_koide_q_delta_linking_relation.py`
+
+## Current-surface status firewall (2026-05-26)
+
+actual_current_surface_status: conditional-support
+conditional_surface_status: the exact algebraic implication
+`I1 ∧ P => δ = Q/d`.
+proposal_allowed: false
+proposal_allowed_reason: the row does not derive the equal-sector-norm
+input `I1`, does not derive the radian bridge `P`, and does not provide
+a retained theorem identifying `rho_delta = 2/d²` with the selected-line
+CP1 Berry holonomy in radians.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+The binding current-surface claim is the exact linking implication under
+the two named inputs `I1` and `P`. This row does not assert retained
+closure of `Q = 2/d`, `δ = 2/d²`, `δ = 2/9 rad`, or the period-2π /
+U(1) radian bridge. Mentions of R1--R5 below are source and context
+labels; they do not by themselves promote those authorities or make this
+row retained-grade. If a future audit treats any of R1--R5 as
+load-bearing retained authorities for this row, the corresponding
+one-hop dependency must be audited on its own merits before this row can
+be used unconditionally downstream.
 
 ## Scope narrowing (2026-05-24 audited_conditional repair)
 
@@ -35,7 +58,8 @@ linking identity `δ = Q/d`** under the two explicit named admissions
 that appear in Theorem of §2:
 
 - **(I1)** equal-sector-norm input on the `C_d` Plancherel split
-  (retained at `d = 3` via the Koide-cone algebraic equivalence note `R2`);
+  (documented at `d = 3` via the Koide-cone algebraic equivalence note
+  `R2`, but not promoted by this row);
 - **(P)** the radian-bridge postulate of §4 — the period-2π / U(1)
   Berry-holonomy convention identifying the dimensionless
   character-algebra ratio
@@ -43,7 +67,7 @@ that appear in Theorem of §2:
   `δ = θ − 2π/d` measured in **radians**. Postulate `P` names the
   period-2π / U(1) convention under which holonomy is read in radians;
   the dimensionless identity `δ = 2/d²` (as a ratio of real DOF counts)
-  does not require `P` and is unconditional on the retained side.
+  does not require `P`; the radian reading does.
 
 Under `I1 ∧ P`, the runner verifies the arithmetic chain
 `δ/Q = (2/d²)/(2/d) = 1/d` symbolically for
@@ -53,7 +77,7 @@ Under `I1 ∧ P`, the runner verifies the arithmetic chain
 claims have the following explicit admissions:
 
 - **`I1`** — equal-sector-norm input on the `C_d` Plancherel split
-  (retained at `d = 3` via `R2`).
+  (a named input here, not retained by this row).
 - **`P`** — the period-2π / U(1) Berry-holonomy radian-bridge
   convention. `P` is the U(1) period-2π convention under which Berry
   holonomy is read out in radians; the framework algebraic substrate
@@ -64,12 +88,12 @@ claims have the following explicit admissions:
 Conditional vs. unconditional split:
 
 - `δ = 2/d²` as a **dimensionless** ratio of real-DOF counts on
-  `(b ∈ ℂ) / Herm_d` (§3.2) is **unconditional** on the retained
-  Cl(3)/Z³ + `R3` ingredients (algebraic identity, class-A retainable).
+  `(b ∈ ℂ) / Herm_d` (§3.2) is an algebraic count on the stated
+  source surface. This row does not promote that count to a retained
+  radian-valued Berry reading.
 - `δ = 2/d² rad` as a **radian reading** of the Berry holonomy is
   **conditional on `P`**: the radian interpretation is the
-  period-2π / U(1) convention bridge, not derivable from the retained
-  side alone.
+  period-2π / U(1) convention bridge, not derived here.
 - Consequently `δ = Q/d` at general `d` is conditional on `I1 ∧ P`;
   at `d = 3` the radian value `δ = 2/9 rad` carries the same `P`
   admission.
@@ -86,11 +110,11 @@ path):
   `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20`),
   i.e. retained authority is currently against the existence of such
   a derivation rather than for it. The natural alternative (ambient-`S²`
-  completion) is independently blocked by the retained bundle
-  obstruction theorem `R5`. No currently-retained framework theorem
+  completion) is independently blocked by the bundle-obstruction theorem
+  `R5`. No currently-retained framework theorem
   delivers `P`;
 - any unconditional reading of `δ = 2/9` (or `δ = 2/d²` at general `d`)
-  in radians from the retained side alone;
+  in radians from the unconditional side alone;
 - any retained closure of either `Q = 2/d` or `δ = 2/d²` from this
   note. The linking relation is precisely the joint-collapse statement
   "closing either `I1` or `P` closes the other modulo the radian-bridge,"
@@ -105,8 +129,8 @@ deferred to future work as a separate bridge note.
 
 ## 0. Executive summary
 
-The two retained observational constants on the Koide charged-lepton
-program stand in the numerical relation
+The two Koide charged-lepton constants tracked by the program stand in
+the numerical relation
 
 ```text
 Q = 2/3
@@ -114,8 +138,8 @@ Q = 2/3
 ⇒   δ = Q / d          at d = 3.
 ```
 
-This note asks whether the relation `δ = Q/d` can be proved from
-retained Cl(3)/Z³ ingredients **without** invoking the ambient-`S^2`
+This note asks whether the relation `δ = Q/d` can be proved from the
+named Cl(3)/Z³ source ingredients **without** invoking the ambient-`S^2`
 completion blocked by the bundle-obstruction theorem
 (`docs/KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`). A
 positive answer would collapse two open imports into one: closing
@@ -136,15 +160,15 @@ The result is **partial**:
    `δ = Q/d` is a genuine structural identity, not a `d = 3` arithmetic
    coincidence.
 
-2. **Retained:** `Q = 2/d` is the equal-sector-norm condition on the
-   real `C_d` Plancherel split of the mass-square-root vector — this is
-   retained exactly on the Koide-cone algebraic equivalence note.
+2. **Named input:** `Q = 2/d` is the equal-sector-norm condition on the
+   real `C_d` Plancherel split of the mass-square-root vector. This row
+   uses it as `I1`; it does not retain or promote `I1`.
 
 3. **Not yet retained (honest residual):** `δ = 2/d²` in **radians**
    is the "2 real DOFs of the circulant phase `b` / `d²` real dim of
    `Herm_d`" dimensional ratio, but the identification of that pure
    dimensionless ratio with a Berry holonomy measured in radians is
-   **not forced by Cl(3)/Z³ + the retained selected-line CP¹ Berry
+   **not forced by Cl(3)/Z³ + the selected-line CP¹ Berry
    identification alone.** This is the same "radian-bridge" gap already
    isolated in the A.2 appendix of the circulant character derivation
    note, and it is precisely the residual postulate that must be supplied.
@@ -152,8 +176,8 @@ The result is **partial**:
 4. **Differentiation from the blocked ambient-`S^2` postulate.** The
    residual radian-bridge is named explicitly (§4) and is NOT equivalent
    to the blocked "ambient-`S^2` completion is natural" postulate. The
-   radian-bridge is a one-real-number identification of a retained
-   dimensionless character-algebra ratio with a retained Berry-phase
+   radian-bridge is a one-real-number identification of a
+   dimensionless character-algebra ratio with a Berry-phase
    radian; the ambient-`S^2` postulate is a two-dimensional bundle
    enlargement that the obstruction theorem kills topologically. These
    are different pieces of missing structure.
@@ -167,9 +191,11 @@ The result is **partial**:
 
 ---
 
-## 1. Retained ingredients
+## 1. Named inputs and source context
 
-Inputs used below. Each is explicitly retained on the current surface.
+Inputs used below. This section names the source context; it does not set
+or imply the current audit status of these rows. The binding theorem in
+this note remains conditional on `I1 ∧ P`.
 
 ### R1. Selected-line CP¹ Pancharatnam-Berry identification
 From `docs/KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md` §4–5: on the
@@ -193,7 +219,7 @@ point.
 
 ### R2. Koide-cone algebraic equivalence (main)
 From `docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`: on
-the retained `C_3[111]` orbit,
+the `C_3[111]` orbit recorded there,
 
 ```text
 Q = 2/3          ⟺          a_0² = 2|z|²,
@@ -209,9 +235,9 @@ the 9-real-dim Hermitian algebra `Herm_3` splits under `C_3[111]`
 conjugation as `3·trivial ⊕ 3·ω ⊕ 3·ω̄`; the trivial-isotypic
 Hermitian subalgebra is exactly the circulants
 `H = aI + bC + b̄C²`, and `b ∈ ℂ` carries the only phase-DOF of the
-retained circulant family.
+stated circulant family.
 
-### R4. `d = 3` retained
+### R4. `d = 3` background
 Three generations, one physical `C_d` cycle; `d = 3` is fixed on main.
 
 ### R5. Bundle-obstruction theorem
@@ -292,14 +318,15 @@ Sector-norm equality reads `a_0² = |v|²_non_sing`, giving
 `|v|² = 2 a_0²`, and since `(Σv)² = d a_0²` always (a_0 is the
 singlet Plancherel coefficient), `Q = 2/d`.
 
-At `d = 3` this is exactly the retained R2 statement. At general `d`
-it is the natural sector-norm generalization.
+At `d = 3` this is exactly the R2 sector-norm statement. At general `d`
+it is the natural sector-norm generalization used by the conditional
+linking theorem.
 
 ### 3.2 `δ = 2/d²` dimensional ratio
 
-From R3, the retained `C_3[111]`-circulant Hermitian family on `Herm_3`
+From R3, the `C_3[111]`-circulant Hermitian family on `Herm_3`
 is the 3-real-parameter family `(a ∈ ℝ, b ∈ ℂ)`. The phase of `b`
-is the **only** `C_3`-covariant phase DOF on the circulant moduli, and
+is the **only** `C_3`-covariant phase DOF on the stated circulant moduli, and
 `δ` is precisely `arg(b)` in the Brannen/Rivero form
 `λ_k = a + 2|b| cos(arg(b) + 2πk/d)`.
 
@@ -310,7 +337,7 @@ The dimensional ratio
 ```
 
 holds numerically at `d = 3` (`2/9`) and matches the observed Brannen
-phase offset exactly. The identity `δ_numerical = 2/d²` is retained
+phase offset exactly. The identity `δ_numerical = 2/d²` is recorded
 as an exact dimensional-ratio observation in appendix A.2 of
 `KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`.
 
@@ -337,8 +364,8 @@ radian-bridge postulate **P** of §4.
 > **not** require `P`; only the radian reading does.
 
 **What P says.** It is a **single** real-number identification between
-(i) the retained dimensionless character-count ratio and (ii) the
-retained Berry holonomy in radians.
+(i) the dimensionless character-count ratio and (ii) the Berry holonomy
+in radians.
 
 **What P is not.**
 
@@ -351,23 +378,23 @@ retained Berry holonomy in radians.
   `K_norm^+`; no 2D enlargement is posited.
 - P is not a new axiom about the Berry connection itself. The
   tautological connection `A = dθ` on the projective doublet ray is
-  already retained (R1); P only fixes which θ-value is realized on
+  supplied by R1; P only fixes which θ-value is realized on
   the physical branch.
 - P is not equivalent to "postulate `δ = 2/9` directly". At general `d`
   P asserts `δ = 2/d²`, a functionally generic identification — it
   names a principle, not a numerical coincidence.
 
 **What P does.** It supplies exactly the single real-number bridge
-missing from the retained side: how many radians of the tautological
+missing from the unconditional side: how many radians of the tautological
 Berry connection does the physical first branch sweep between the
 unphased reference point `m_0` and the physical charged-lepton point
 `m_*`.
 
 **Strict-reviewer phrasing.** A Nature reviewer gets the following
-precise disclosure: "on the retained Cl(3)/Z³ surface plus the retained
-selected-line CP¹ Berry identification, one structural postulate
-remains — the identification of a specific retained dimensionless
-character-algebra ratio with a specific retained Berry holonomy in
+precise disclosure: "on the named Cl(3)/Z³ surface plus the selected-line
+CP¹ Berry identification, one structural postulate remains — the
+identification of a specific dimensionless character-algebra ratio with
+a specific Berry holonomy in
 radians. That postulate is a single real-number identification on
 already-derived structure; it is **not** the blocked ambient-`S^2`
 completion, nor a bundle-topology claim. Under that postulate, the
@@ -411,10 +438,10 @@ themselves:
 Every step in §2 and §3 uses only:
 
 - real `C_d` Plancherel on `ℝ^d` (R2, elementary);
-- the retained `C_3[111]` circulant-Hermitian family on `Herm_3` (R3);
-- the retained selected-line CP¹ Berry identification on the physical
+- the `C_3[111]` circulant-Hermitian family on `Herm_3` (R3);
+- the selected-line CP¹ Berry identification on the physical
   one-dimensional base (R1);
-- the retained `d = 3` (R4).
+- the `d = 3` background (R4).
 
 It does not use a 2D base, a Dirac-monopole ansatz, an integer Chern
 class, or any wedge flux. The bundle-obstruction theorem (R5) is
@@ -442,8 +469,9 @@ The companion runner verifies:
   correct structural reading.
 - (T8) Against PDG charged-lepton masses, the sector-norm
   identification `Q = 2/3` and Berry-phase `δ = 2/9` reproduce the
-  observed values at the precision already retained on the Koide-cone
-  and Berry-phase theorem notes.
+  observed values at the documented precision of the Koide-cone and
+  Berry-phase notes. This is a diagnostic comparator, not a retained
+  proof input for this row.
 - (T9) The residual radian-bridge postulate **P** is single-real-valued
   and does not reintroduce any blocked bundle-topology data.
 
@@ -457,26 +485,27 @@ Target: `PASS ≥ 6` (achieved: `PASS = 9`). See
 **Verdict: partial closure.**
 
 1. The linking relation `δ = Q/d` is proved at general `d` from
-   retained ingredients (R1, R2, R3, R4) **plus one named residual
+   named ingredients (R1, R2, R3, R4) **plus one named residual
    postulate** P, the radian-bridge for the dimensional-ratio identity
    `δ = 2/d²`.
 2. The postulate P is precisely named, single-real-valued, and
    **differentiated** from the blocked ambient-`S^2` completion. It is
-   a radian-bridge on the retained selected-line CP¹ base, not a
+   a radian-bridge on the selected-line CP¹ base, not a
    bundle enlargement.
 3. Under P, the two Koide-program imports (`Q = 2/3`, `δ = 2/9`)
    collapse to one: a single structural identity that closing either
    route will realize.
 4. Without P, the relation is a conditional theorem: `δ = Q/d` given
-   `I1 ∧ I2`, where `I1` is retained and `I2` is the radian-bridge.
+   `I1 ∧ I2`, where `I1` is a named sector-norm input and `I2` is the
+   radian bridge.
 
 This is honorable for a Nature submission: the residual is not
 "ambient-`S^2` is natural" (blocked), but a clean, single, named,
 radian-bridge postulate that any strict reviewer can evaluate on its
-own merits. If P is itself derivable from further retained structure
+own merits. If P is itself derivable from further audited structure
 (e.g. a future equivariant-index / anomaly identification of the
 phase-DOF ratio with Berry curvature quantum), the linking relation
-becomes unconditional.
+would have a path to unconditional audit.
 
 ---
 

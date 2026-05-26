@@ -2,6 +2,9 @@
 
 **Status:** bounded - bounded or caveated result note
 Date: 2026-04-02
+**Claim type:** bounded_theorem
+**Primary runner:** [`scripts/guard_reconciliation_n100_q003_certificate.py`](../scripts/guard_reconciliation_n100_q003_certificate.py)
+**Runner cache:** [`logs/runner-cache/guard_reconciliation_n100_q003_certificate.txt`](../logs/runner-cache/guard_reconciliation_n100_q003_certificate.txt)
 
 This note is the canonical writeup for the dense-prune gravity-repair guard.
 It folds together:
@@ -11,16 +14,23 @@ It folds together:
 - seed-level replay behavior
 - the current safe claim
 
+**2026-05-26 audit-packet repair:** the load-bearing scope is narrowed to the
+aggregate `N=100, q=0.03` dense same-graph pocket reproduced by the primary
+runner above. The runner executes the canonical dense guard script with
+`DENSE_GUARD_LAYERS=100` and `DENSE_GUARD_QS=0.03`, producing the cached stdout
+needed for re-audit. Seed-selective examples are context only and are not
+load-bearing in this repaired packet.
+
 Primary scripts:
 
-- [`scripts/dense_prune_channel_count_guard.py`](/Users/jonreilly/Projects/Physics/scripts/dense_prune_channel_count_guard.py)
-- [`scripts/channel_count_guarded_prune.py`](/Users/jonreilly/Projects/Physics/scripts/channel_count_guarded_prune.py)
-- [`scripts/channel_count_threshold_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/channel_count_threshold_sweep.py)
+- [`scripts/dense_prune_channel_count_guard.py`](../scripts/dense_prune_channel_count_guard.py)
+- [`scripts/channel_count_guarded_prune.py`](../scripts/channel_count_guarded_prune.py)
+- [`scripts/channel_count_threshold_sweep.py`](../scripts/channel_count_threshold_sweep.py)
 
 Supporting diagnostics:
 
-- [`scripts/dense_prune_path_cancellation_audit.py`](/Users/jonreilly/Projects/Physics/scripts/dense_prune_path_cancellation_audit.py)
-- [`scripts/dense_prune_flip_seed_replay.py`](/Users/jonreilly/Projects/Physics/scripts/dense_prune_flip_seed_replay.py)
+- [`scripts/dense_prune_path_cancellation_audit.py`](../scripts/dense_prune_path_cancellation_audit.py)
+- [`scripts/dense_prune_flip_seed_replay.py`](../scripts/dense_prune_flip_seed_replay.py)
 
 ## Mechanism Summary
 
@@ -40,7 +50,7 @@ So the guard story is now:
 
 They are not the same experiment.
 
-[`scripts/channel_count_guarded_prune.py`](/Users/jonreilly/Projects/Physics/scripts/channel_count_guarded_prune.py) is a narrow fixed-`q=0.10` pilot:
+[`scripts/channel_count_guarded_prune.py`](../scripts/channel_count_guarded_prune.py) is a narrow fixed-`q=0.10` pilot:
 
 - `N = 80, 100, 120`
 - fixed `q = 0.10`
@@ -48,7 +58,7 @@ They are not the same experiment.
 - unguarded arm: one-step `_prune_graph(..., q=0.10, n_iters=1)`
 - guarded arm: custom iterative loop with `max_iter=3`
 
-[`scripts/dense_prune_channel_count_guard.py`](/Users/jonreilly/Projects/Physics/scripts/dense_prune_channel_count_guard.py) is the broader dense same-graph study:
+[`scripts/dense_prune_channel_count_guard.py`](../scripts/dense_prune_channel_count_guard.py) is the broader dense same-graph study:
 
 - `N = 80, 100, 120`
 - `q` sweep: `0.03, 0.05, 0.10`
@@ -63,7 +73,7 @@ So the disagreement is methodological, not a bug:
 
 ## Canonical Guard Read
 
-Treat [`scripts/dense_prune_channel_count_guard.py`](/Users/jonreilly/Projects/Physics/scripts/dense_prune_channel_count_guard.py) as the canonical same-graph guard study.
+Treat [`scripts/dense_prune_channel_count_guard.py`](../scripts/dense_prune_channel_count_guard.py) as the canonical same-graph guard study.
 
 Current safe read from that script:
 
@@ -89,7 +99,7 @@ At `N=120`, the dense script is not interpretable as a positive extension under 
 
 ## Narrow Fixed-q Pilot Read
 
-[`scripts/channel_count_guarded_prune.py`](/Users/jonreilly/Projects/Physics/scripts/channel_count_guarded_prune.py) is still useful, but only as a regression pilot for the strict fixed-`q=0.10` case.
+[`scripts/channel_count_guarded_prune.py`](../scripts/channel_count_guarded_prune.py) is still useful, but only as a regression pilot for the strict fixed-`q=0.10` case.
 
 Its current read is:
 
@@ -102,14 +112,16 @@ This is consistent with a bounded mechanism:
 - the guard helps most while `eff_ch` is still recoverable
 - once baseline `eff_ch` is already too low, the guard becomes a “do not touch” detector rather than a repair tool
 
-## Seed-Level Read
+## Seed-Level Read (context only)
 
-The guard is not merely improving the mean by averaging.
+The seed-level examples below are not load-bearing for this repaired packet.
+The prior seed note is retained as a context pointer, but the current audit
+target is the aggregate `N=100, q=0.03` runner certificate above.
 
 Supporting note:
-- [`docs/DENSE_PRUNE_GUARD_SEED_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DENSE_PRUNE_GUARD_SEED_NOTE.md)
+- [`DENSE_PRUNE_GUARD_SEED_NOTE.md`](DENSE_PRUNE_GUARD_SEED_NOTE.md)
 
-Seed-level replay says:
+Seed-level replay says, as contextual diagnostics:
 
 - some historically flip-prone seeds are rescued by the guard
 - some are not
@@ -124,14 +136,14 @@ Clean non-rescue example:
 
 - `N=100`, seed `3`
 
-So the mechanism is:
+So the contextual mechanism read is:
 
 - **seed-selective channel preservation**
 - not a pure averaging artifact
 
 ## Threshold Sweep Status
 
-[`scripts/channel_count_threshold_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/channel_count_threshold_sweep.py) is the right next map:
+[`scripts/channel_count_threshold_sweep.py`](../scripts/channel_count_threshold_sweep.py) is the right next map:
 
 - thresholds: `0.70, 0.75, 0.80, 0.85, 0.90`
 - `q`: `0.03, 0.05, 0.10`
@@ -150,9 +162,27 @@ The canonical guard story is:
 
 - coarse reach/core guards are too blunt
 - `eff_ch` is the right diagnostic family
-- channel-count preservation gives the first principled gravity-preserving pruning workaround
-- the strongest retained pocket is `N=100, q=0.03`
+- in the aggregate `N=100, q=0.03` certificate, channel-count preservation
+  reduces gravity damage and removes flips relative to plain pruning
+- the strongest bounded pocket is `N=100, q=0.03`
 - the fix is bounded, not asymptotic
+
+## Runner-backed N=100, q=0.03 certificate
+
+The primary runner reports:
+
+```text
+100 plain   q=0.03 valid=4 pur_b=0.9080 pur_p=0.9174 d_pur=+0.0094
+                         grav_b=+1.5462 grav_p=-1.6894 d_grav=-3.2356
+                         eff_b=5.005 eff_p=2.447 removed=115.0 flips=3
+100 guarded q=0.03 valid=6 pur_b=0.9138 pur_p=0.9098 d_pur=-0.0039
+                         grav_b=+1.5963 grav_p=+1.4691 d_grav=-0.1272
+                         eff_b=5.159 eff_p=5.056 removed=14.5 flips=0
+```
+
+This supports only the narrow aggregate read: the channel-count guard preserves
+`eff_ch` in the `N=100, q=0.03` pocket and eliminates the plain-prune flip
+count in that aggregate comparison. It does not prove a seed-level rescue law.
 
 ## Avoid
 

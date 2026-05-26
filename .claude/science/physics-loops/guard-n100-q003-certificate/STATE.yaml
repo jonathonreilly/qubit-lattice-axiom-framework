@@ -1,0 +1,35 @@
+loop: guard-n100-q003-certificate
+branch: physics-loop/guard-n100-q003-certificate-20260526
+base: origin/main@3e7ec0ce5
+target_row: guard_reconciliation_note
+target_note: docs/GUARD_RECONCILIATION_NOTE.md
+target_runner: scripts/guard_reconciliation_n100_q003_certificate.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+runtime_request: 12h campaign
+cycle_block: N100 q003 guard certificate
+pr_status: pending
+open_imports:
+  - "Independent audit must review the narrowed aggregate guard certificate."
+no_go_routes:
+  - "Do not claim a seed-level rescue law."
+  - "Do not claim uniform N=80/100/120 guard success."
+files_touched:
+  - docs/GUARD_RECONCILIATION_NOTE.md
+  - scripts/guard_reconciliation_n100_q003_certificate.py
+  - logs/runner-cache/guard_reconciliation_n100_q003_certificate.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+next_exact_action: "Commit, push, open PR, then continue campaign if runtime remains."
+stop_condition: "Only stop this campaign when the 12h budget is exhausted, the user stops it, or a global tooling blocker prevents safe continuation."

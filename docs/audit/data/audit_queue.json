@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 262,
     "high": 345,
-    "leaf": 317,
+    "leaf": 318,
     "medium": 328
   },
   "cycle_break_target_count": 6,
@@ -28525,6 +28525,35 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "guard_reconciliation_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "dense_prune_guard_seed_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/dense_prune_channel_count_guard.py",
+        "scripts/dense_prune_q003_joint_strict.py",
+        "scripts/three_d_joint_test.py",
+        "scripts/three_d_modular_gravity_mass_scaling.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GUARD_RECONCILIATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/guard_reconciliation_n100_q003_certificate.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37740,6 +37769,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 26,
-  "total_pending": 1252
+  "ready_count": 27,
+  "total_pending": 1253
 }

@@ -60914,10 +60914,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "691e119efa3b4a28d2ad87811df46c2997c1a6c5d61401cd887651437ee319e8",
+      "note_hash": "a1289bb607f9ebdce6d6fd41e3137c7ea422f5a929d728a686c8976bd50a3372",
       "path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
-      "runner_path": "scripts/frontier_koide_q_delta_linking_relation.py",
-      "title": "Koide `Q` \u2194 `\u03b4` Linking Relation: Partial Closure and Named Residual Postulate"
+      "runner_path": "scripts/frontier_koide_q_delta_formal_ratio_repair.py",
+      "title": "Koide Q-Delta Formal Ratio Identity"
     },
     "koide_q_delta_linking_relation_theorem_note_2026-04-20_note_2026-05-17": {
       "claim_id": "koide_q_delta_linking_relation_theorem_note_2026-04-20_note_2026-05-17",

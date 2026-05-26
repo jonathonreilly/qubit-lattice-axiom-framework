@@ -21249,10 +21249,6 @@
       "to": "minimal_axioms"
     },
     {
-      "from": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-      "to": "a1_qubit_interpretation_note_2026-05-20"
-    },
-    {
       "from": "primitive_p_heavyq_casimir_closure_note_2026-05-10_ppheavyq_closure",
       "to": "primitive_p_heavyq_species_proposal_note_2026-05-10_ppheavyq"
     },
@@ -69815,13 +69811,12 @@
       "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms",
-        "a1_qubit_interpretation_note_2026-05-20"
+        "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f9450bfd90b6cf731bc71b7f2eba55c6224a9bb0a69b74cb2df216c123fe7b23",
+      "note_hash": "6a131ecfbaebfc288b9bdcb2ff202464a7b91651846641cb936786d468b688b1",
       "path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
       "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra"
     },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
@@ -85500,10 +85495,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
-    "leaf_count": 783,
+    "edge_count": 9777,
+    "leaf_count": 784,
     "node_count": 2538,
     "root_count": 836,
-    "runners_with_path": 2099
+    "runners_with_path": 2100
   }
 }

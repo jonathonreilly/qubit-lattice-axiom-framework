@@ -3,7 +3,7 @@
     "critical": 250,
     "high": 342,
     "leaf": 310,
-    "medium": 322
+    "medium": 323
   },
   "cycle_break_target_count": 3,
   "cycle_break_targets": [
@@ -17735,6 +17735,30 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.822,
+      "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+      "transitive_descendants": 4
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36966,6 +36990,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 1,
-  "total_pending": 1224
+  "ready_count": 2,
+  "total_pending": 1225
 }

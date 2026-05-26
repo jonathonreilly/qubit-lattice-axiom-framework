@@ -17928,6 +17928,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_positivity_orientation_selects_c3_discriminator.py"
     },
+    "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_pre_record_reference_state_tracial_derivation.py"
+    },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "assert_count": 1,
       "counts": {
@@ -44376,6 +44388,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_pre_record_reference_state_tracial_derivation.py": {
+      "assert_count": 1,
+      "claims": [
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_primordial_spectrum.py": {
       "assert_count": 0,
       "claims": [
@@ -55200,12 +55227,12 @@
     "dominant_class_distribution": {
       "A": 224,
       "B": 273,
-      "C": 747,
+      "C": 748,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
-    "runners_with_C": 969,
+    "runners_classified": 1983,
+    "runners_with_C": 970,
     "runners_with_D": 583
   }
 }

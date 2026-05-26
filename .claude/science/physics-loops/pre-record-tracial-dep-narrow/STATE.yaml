@@ -1,0 +1,25 @@
+loop: pre-record-tracial-dep-narrow
+date: 2026-05-26
+target_claim_id: pre_record_reference_state_tracial_derivation_note_2026-05-20
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: dependency narrowing plus finite-region runner support
+files_touched:
+  - docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
+  - scripts/frontier_pre_record_reference_state_tracial_derivation.py
+  - outputs/pre_record_reference_state_tracial_derivation_certificate_2026-05-26.txt
+open_imports:
+  - Powers/UHF type 2^infty standard tracial-state uniqueness
+open_identifications:
+  - physical pre-record reference-state identification
+review_findings:
+  - one-point Pauli vanishing excluded as an equivalence
+pr_status: pending
+next_exact_action: run audit pipeline and open review PR
+stop_condition: PR opened and verified, then continue campaign

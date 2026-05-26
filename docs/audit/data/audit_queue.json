@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 244,
+    "critical": 243,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -52,28 +52,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
-      "claim_scope": "Finite supplied-Hermitian-pair algebra only: for chosen 3x3 Hermitian diagonalizers U_nu and U_e, U_pair = U_e^dagger U_nu is unitary, P = |U_pair|^2 is doubly stochastic, and P is invariant under independent eigenvector column rephasings.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 16,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.555,
-      "note_path": "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
-      "transitive_descendants": 375
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -37924,6 +37902,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 73,
-  "total_pending": 1264
+  "ready_count": 72,
+  "total_pending": 1263
 }

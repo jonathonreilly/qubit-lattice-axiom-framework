@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 165 |
-| **retained_bounded** | 478 |
+| **retained_bounded** | 479 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1263 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 766 |
+| `audited_clean` | 767 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -269,6 +266,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3401,6 +3399,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the sampled multistart starts, the constrained scan recovers one favored low-action PMNS-assisted N_e branch separated from a high-action branch by a finite action gap.  _(class `C`)_
 - **chain closes:** True — Within the narrowed sampled-runner scope, the primary runner constructs feasible closure starts, runs constrained stationary solves, clusters converged solutions, and computes the branch actions and eta readouts rather than printing the branch table as constants. The packet does not close, and the note no longer claims, certified-global branch enumeration or theorem-grade global selector authority.
 - **rationale:** The source note has been narrowed to the exact finite diagnostic supported by the cached runner output. The load-bearing branch enumeration and action-gap computation are produced by actual constrained optimization and clustering through the included helper chain, with no hard-coded branch representatives in the primary runner. The eta/eta_obs=1 statements are observation-normalized closure readouts on the imposed closure surface, not an independent global prediction. The note explicitly excludes branch completeness, branch uniqueness beyond the sampled starts, and certified-global selector content.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Raw Hermitian-pair projector algebra only: for a supplied 3 x 3 positive-definite Hermitian pair together with chosen unitary eigendiagonalizers U_nu and U_e, U_pair = U_e^dagger U_nu is unitary, |U_pair|^2 is doubly stochastic, and |U_pair|^2 is invariant under independent eigenvector column rephasings.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-dm-pmns-projector-pass2-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** U_pair = U_e^dagger U_nu is unitary because it is a product of unitaries, and the entrywise squared magnitudes of a unitary matrix form a doubly stochastic matrix; independent phase choices multiply entries by unit-modulus factors and do not change squared magnitudes.  _(class `A`)_
+- **chain closes:** True — The scoped claim closes as finite-dimensional linear algebra: products of unitaries are unitary, unitary row and column norms give row and column sums equal to one, and diagonal unitary rephasings preserve entrywise magnitudes. No direct dependencies or physical bridge inputs are needed for this narrowed algebraic statement.
+- **rationale:** The source note's retained-candidate content is confined to three raw algebraic facts, and those facts follow directly from standard Hermitian diagonalization and unitary-matrix identities. The runner corroborates the identities on deterministic examples and verifies that the repaired runner does not import the transport helper or compute eta diagnostics. This clean verdict does not ratify carrier authority, physical N1 column selection, eta/eta_obs diagnostics, a transport theorem, a PMNS pair law, a selected-column theorem, or physical leptogenesis prediction.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`

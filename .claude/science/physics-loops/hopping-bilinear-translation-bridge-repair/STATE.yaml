@@ -1,0 +1,23 @@
+loop: hopping-bilinear-translation-bridge-repair
+branch: physics-loop/hopping-bilinear-translation-bridge-repair-20260525
+base_ref: origin/main
+started_at: "2026-05-25"
+target_claim: hopping_bilinear_hermiticity_theorem_note_2026-05-02
+actual_current_surface_status: proposed_retained
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: true
+proposal_allowed_reason: "The exact missing bridge named by the audit is now retained and is a one-hop dependency."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "Replace stale lattice-Noether translation dependency with retained tensor-product translation bridge."
+files_touched:
+  - docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md
+  - scripts/hopping_bilinear_hermiticity_check.py
+  - outputs/hopping_bilinear_hermiticity_check_2026-05-25.txt
+open_imports: []
+no_go_routes:
+  - "Do not claim this follows from the staggered-carrier Noether translation branch."
+next_exact_action: "Run audit pipeline, local review checks, commit, push, open PR."
+stop_condition: "One review PR opened for this repair block."

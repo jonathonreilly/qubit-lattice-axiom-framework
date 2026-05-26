@@ -12892,13 +12892,13 @@
         "minimal_axioms",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
-      "direct_in_degree": 16,
+      "direct_in_degree": 15,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 21.794,
+      "load_bearing_score": 19.314,
       "load_bearing_step": "The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -13400,7 +13400,7 @@
       },
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 887,
+      "transitive_descendants": 224,
       "verdict_rationale": "The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes."
     },
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17": {
@@ -35766,7 +35766,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 23.392,
+      "load_bearing_score": 23.38,
       "load_bearing_step": "Cl(3,0) is real-isomorphic to M_2(C), and after complexification the central idempotents e_\u00b1 split it as M_2(C) \u2295 M_2(C), whose irreducible modules have complex dimension 2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -35787,7 +35787,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
-      "transitive_descendants": 949,
+      "transitive_descendants": 941,
       "verdict_rationale": "The load-bearing content is a standard class-(A) algebraic closure: centrality and square of the pseudoscalar, the real-algebra isomorphism Cl(3,0) \u2245 M_2(C), the complexified idempotent split, and the 2-dimensional simple-module readout. The runner source genuinely performs exact symbolic Pauli-matrix and abstract idempotent checks rather than importing external constants or fitted premises. The proof stays within the stated abstract algebra scope and explicitly excludes the open physical per-site Hilbert-space bridge."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -128268,79 +128268,112 @@
       "verdict_rationale": "The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement."
     },
     "hopping_bilinear_hermiticity_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-25T19:02:58.669728+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
-        },
-        "dep_claim_type": {
-          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
-        },
-        "deps": [
-          "axiom_first_lattice_noether_theorem_note_2026-04-29"
-        ],
-        "load_bearing_score": 11.271,
-        "runner_hash": "fdc06cbf93d09194af7056d95872d53720555f68421e5bd08bf7fa9e349ed13b",
-        "transitive_descendants": 873
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T190235Z-ee6c8b2a-hopping_bilinear_hermiti-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic Hermiticity and number-conservation parts close on the admitted tensor-product single-mode operators, but the cited Noether authority does not supply the claimed full Z^3 Hilbert-space translation operators T_a on H_phys or one-site translation covariance for local creation/annihilation operators. Its translation branch is explicitly narrowed to a (2Z)^3 two-step Ward identity on an admitted staggered/Grassmann carrier.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-      "claim_scope": "The symmetric two-site hopping operator H_{xy}=a_x^\u2020a_y+a_y^\u2020a_x is Hermitian, number-conserving, and covariant under an assumed tensor-factor translation action; translation-invariant sums inherit these properties and have real spectrum.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-25T19:02:58.669728+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.28,
-      "load_bearing_step": "By translation covariance of local operators, T_a a_x T_a^\u2020 = a_{x+a}, hence T_a H_{xy} T_a^\u2020 = H_{x+a,y+a}; and [Q_total,a_x]=-a_x, [Q_total,a_x^\u2020]=a_x^\u2020 gives [H_{xy},Q_total]=0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "1108053b695457640373966ff1e77b1385a67a76e5d1d167476246de36b6c8ef",
+      "note_hash": "b2ffdad13a1093d8291af0377976d2eb0421acfd4bed6a9824bee24e980fff50",
       "note_path": "docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop bridge proving tensor-product Hilbert-space translation operators T_a satisfy T_a a_x T_a^\u2020=a_{x+a} and defining Q_total on the same operator algebra, or narrow the claim to the explicitly assumed toy tensor-product setting.",
-      "open_dependency_paths": [
-        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-26T00:03:55.461657+00:00",
+          "archived_for_note_hash": "1108053b695457640373966ff1e77b1385a67a76e5d1d167476246de36b6c8ef",
+          "audit_date": "2026-05-25T19:02:58.669728+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+            },
+            "dep_claim_type": {
+              "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+            },
+            "deps": [
+              "axiom_first_lattice_noether_theorem_note_2026-04-29"
+            ],
+            "load_bearing_score": 11.271,
+            "runner_hash": "fdc06cbf93d09194af7056d95872d53720555f68421e5bd08bf7fa9e349ed13b",
+            "transitive_descendants": 873
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T190235Z-ee6c8b2a-hopping_bilinear_hermiti-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic Hermiticity and number-conservation parts close on the admitted tensor-product single-mode operators, but the cited Noether authority does not supply the claimed full Z^3 Hilbert-space translation operators T_a on H_phys or one-site translation covariance for local creation/annihilation operators. Its translation branch is explicitly narrowed to a (2Z)^3 two-step Ward identity on an admitted staggered/Grassmann carrier.",
+          "claim_scope": "The symmetric two-site hopping operator H_{xy}=a_x^\u2020a_y+a_y^\u2020a_x is Hermitian, number-conserving, and covariant under an assumed tensor-factor translation action; translation-invariant sums inherit these properties and have real spectrum.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-25T19:02:58.669728+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "By translation covariance of local operators, T_a a_x T_a^\u2020 = a_{x+a}, hence T_a H_{xy} T_a^\u2020 = H_{x+a,y+a}; and [Q_total,a_x]=-a_x, [Q_total,a_x^\u2020]=a_x^\u2020 gives [H_{xy},Q_total]=0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop bridge proving tensor-product Hilbert-space translation operators T_a satisfy T_a a_x T_a^\u2020=a_{x+a} and defining Q_total on the same operator algebra, or narrow the claim to the explicitly assumed toy tensor-product setting.",
+          "open_dependency_paths": [
+            "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "The runner genuinely constructs finite tensor-product matrices and checks the stated algebraic properties in a 1D toy model, so its checks are class A sanity checks rather than mere printed constants. However, the proof imports a stronger translation structure than the one-hop cited authority provides: the authority is retained_bounded but explicitly limits translation to the (2Z)^3 Ward identity on a staggered carrier, not arbitrary Z^3 tensor-factor covariance on H_phys. The broad \u201cfor every a in Z^3\u201d and \u201cvalid framework Hamiltonian\u201d conclusions therefore require an additional retained bridge theorem for Hilbert-space translations and local operator covariance."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/hopping_bilinear_hermiticity_check.py",
-      "title": "Hopping Bilinear H_{xy} = a_x^\u2020 a_y + h.c. Is Hermitian and Translation-Covariant",
+      "title": "Hopping Bilinear H_{xy} = a_x^dag a_y + h.c. Is Hermitian and Translation-Covariant",
       "transitive_descendants": 878,
-      "verdict_rationale": "The runner genuinely constructs finite tensor-product matrices and checks the stated algebraic properties in a 1D toy model, so its checks are class A sanity checks rather than mere printed constants. However, the proof imports a stronger translation structure than the one-hop cited authority provides: the authority is retained_bounded but explicitly limits translation to the (2Z)^3 Ward identity on a staggered carrier, not arbitrary Z^3 tensor-factor covariance on H_phys. The broad \u201cfor every a in Z^3\u201d and \u201cvalid framework Hamiltonian\u201d conclusions therefore require an additional retained bridge theorem for Hilbert-space translations and local operator covariance."
+      "verdict_rationale": null
     },
     "hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29": {
       "audit_date": "2026-05-25T11:36:08.945827+00:00",
@@ -244963,7 +244996,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.82,
+      "load_bearing_score": 13.375,
       "load_bearing_step": "Reordering via (G1)-(G3), Berezin top-term selection gives sum over permutations sign(pi) prod_x M_{x,pi(x)} = det(M), and homogeneous odd Grassmann operators anticommute under exchange.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -244984,7 +245017,7 @@
       },
       "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
       "title": "Spin-Statistics \u2014 Berezin Determinant Narrow Theorem",
-      "transitive_descendants": 903,
+      "transitive_descendants": 331,
       "verdict_rationale": "The load-bearing step is class A: coefficient extraction in a finite exterior algebra reduces the Gaussian Grassmann integral to the Leibniz determinant formula. The odd-odd antisymmetry also follows directly from the homogeneous Grassmann grading and linearity of the Berezin integral. The runner source checks the relevant algebra symbolically for small N and does not import calibrated data, upstream notes, or contested physical premises. The result is clean for the explicitly bounded abstract-Grassmann scope, not for the out-of-scope physical identification claims."
     },
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {
@@ -247248,7 +247281,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 19.819,
+      "load_bearing_score": 18.371,
       "load_bearing_step": "Within the explicit two-candidate framing, bosonic per-site Fock dimension is infinite while Grassmann per-site Fock dimension is 2, so only the Grassmann candidate matches the retained Cl(3) faithful-irrep dim_C V = 2 readout, and its Berezin partition gives det(M).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -247433,7 +247466,7 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
-      "transitive_descendants": 902,
+      "transitive_descendants": 330,
       "verdict_rationale": "The cited authorities are retained-grade: one retained and one retained_bounded. The runner source performs concrete symbolic checks of Pauli carrier dimension, Grassmann nilpotency, determinant-by-permutation equality, finite bosonic truncation growth, and a bosonic-vs-Grassmann trace distinction; it does not merely print constants or import an external comparator. The theorem is clean only in its narrow abstract two-candidate scope, not as a closure of the physical staggered-Dirac substep."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
@@ -264536,13 +264569,13 @@
         "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
         "transitive_descendants": 0
       },
-      "audit_status": "audited_clean",
+      "audit_status": "audit_in_progress",
       "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T235316Z-0a7b7bbc-tensor_product_translati-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": null,
+      "blocker": "awaiting_cross_confirmation",
       "chain_closes": true,
       "chain_closure_explanation": "The cited axiom premise supplies the per-site qubit algebra and Z^3 translation structure, and the remaining constructions are standard finite tensor products, local ladder matrices, and periodic relabelling. The proof establishes the identities directly on the tensor-product basis without importing any open fermion, Noether, gauge, or numerical premise.",
       "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
@@ -264550,28 +264583,43 @@
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-25T23:53:39.238817+00:00",
-      "claim_type_provenance": "audited",
-      "criticality": "leaf",
-      "cross_confirmation": null,
+      "claim_type_last_reviewed": "2026-05-26T00:04:00.429211+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T23:53:39.238817+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T235316Z-0a7b7bbc-tensor_product_translati-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a finite periodic block \u039b \u2282 Z^3 with H_\u039b = \u2297_x C^2_x, the tensor-permutation translations T_a are unitary, obey T_a T_b = T_{a+b}, conjugate the local per-site ladder operators as T_a a_x T_a^\u2020 = a_{x+a} and T_a a_x^\u2020 T_a^\u2020 = a_{x+a}^\u2020, and commute with Q_total = \u03a3_x a_x^\u2020 a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained",
-      "effective_status_reason": "self",
+      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 10.281,
       "load_bearing_step": "Applying the tensor-permutation definition of T_a to a_x on a basis state gives T_a a_x T_a^\u2020 |b\u27e9 = a_{x+a} |b\u27e9, and relabelling the finite torus sum gives T_a Q_total T_a^\u2020 = Q_total.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "e3f4ce0a0b208757225d718d12be839c1f2fbf3e67e072db64935025da37fd0a",
       "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": "",
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-cli-gpt-5.5-per-site-k1-20260525T235316Z-0a7b7bbc-tensor_product_translati-01, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -264585,7 +264633,7 @@
       },
       "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
       "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 879,
       "verdict_rationale": "The source note's load-bearing argument is a direct algebraic closure from the accepted A1/A2 framework premise plus ordinary finite-dimensional tensor-product mathematics. The runner source explicitly constructs the ladder operators, permutation matrices, and total charge operator with exact sympy matrices, then verifies the stated identities entrywise; it does not hard-code contested outputs or import external comparators. The absence of Jordan-Wigner anticommutation is acknowledged and kept out of scope, so it does not block the stated per-site Pauli convention claim."
     },
     "tensor_scalar_ratio_consolidation_theorem_note_2026-04-22": {
@@ -303432,8 +303480,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2378,
-    "re_audit_required": 0,
+    "preserved_existing": 2377,
+    "re_audit_required": 1,
     "row_count": 2422,
     "seeded_new": 0
   }

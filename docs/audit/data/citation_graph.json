@@ -1345,6 +1345,10 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
+      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "to": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+    },
+    {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
@@ -20097,6 +20101,10 @@
       "to": "native_gauge_closure_note"
     },
     {
+      "from": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "to": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
+    },
+    {
       "from": "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
       "to": "plaquette_4d_mc_support_note_2026-05-04"
     },
@@ -23591,6 +23599,18 @@
     {
       "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
       "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
+      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "to": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+    },
+    {
+      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "to": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+    },
+    {
+      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "to": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
     },
     {
       "from": "spectral_symmetry_note",
@@ -42112,9 +42132,11 @@
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "466faf0618a2faf91fa10ae2ed4b49423abfec7ba398701cff9204c2d7d9b33c",
+      "note_hash": "5c741a1d97291dc222880fd3602f9940a7ca62f223a43ed4a8e02b96c9017c2e",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"
@@ -68317,9 +68339,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "4665fb5f0f4417c530df9752d4aaa71b3c9c4c6625ed9ea2da93c3e2ec7c758e",
+      "note_hash": "44fa6e8e87a4854de83bbb11cc5cdc9e4af1719962de3cf7cd7ebf16e892bca1",
       "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_planck_target3_clifford_phase_bridge.py",
       "title": "Planck Target 3 Clifford Phase Bridge Theorem"
@@ -76624,10 +76648,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e3d7767e2b5643587d444a2637d2808137f281fd0e9d66fb72067d24b9553099",
+      "note_hash": "d6039de0c26e8cbb25b42e48caf9e427b1a514bd59817c5abd5820724d0b980f",
       "path": "docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py",
       "title": "Spatial-Slab Transfer-Operator Positivity and \u0394_x > 0 from Wilson Axis-Permutation Symmetry (Real)"
@@ -84764,7 +84791,6 @@
     "audit_structural_issues_snapshot_2026-05-17",
     "axiom_change_proposal_2026-04-10",
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
-    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
     "background_independence_note",
     "bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10",
@@ -85208,7 +85234,6 @@
     "planck_boundary_orientation_incidence_no_go_note_2026-04-30",
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2_note_2026-05-17",
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
-    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
@@ -85500,10 +85525,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
-    "leaf_count": 783,
+    "edge_count": 9783,
+    "leaf_count": 781,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 834,
     "runners_with_path": 2099
   }
 }

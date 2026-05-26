@@ -24,11 +24,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 8 |
 | open_gate | 17 |
 | unaudited | 1256 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,9 +53,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
 | `audited_clean` | 771 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -913,6 +910,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4373,6 +4371,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — A five-judge panel produced a 3-of-5 majority for the first audit tuple. The direct same-1PI pinning dependency was retained_bounded at selection time, which is retained-grade for this bounded downstream theorem. The target row does not re-derive or broaden the H_unit-residue same-1PI bridge; it uses the already retained_bounded W2 identity as a bounded premise and performs exact class-A algebra with the retained_bounded W1 identity. The older canonical convention row is decoration/background only, and the runner's 54 A-labelled passes corroborate note structure and the substitution without carrying the proof. Clean status is therefore restricted to this downstream bounded algebra, and must be rechecked if the W2 dependency status or admitted bounded premise changes.
 - **rationale:** A five-judge panel produced a 3-of-5 majority for the first audit tuple. The direct same-1PI pinning dependency was retained_bounded at selection time, which is retained-grade for this bounded downstream theorem. The target row does not re-derive or broaden the H_unit-residue same-1PI bridge; it uses the already retained_bounded W2 identity as a bounded premise and performs exact class-A algebra with the retained_bounded W1 identity. The older canonical convention row is decoration/background only, and the runner's 54 A-labelled passes corroborate note structure and the substitution without carrying the proof. Clean status is therefore restricted to this downstream bounded algebra, and must be rechecked if the W2 dependency status or admitted bounded premise changes.
 - **auditor confidence:** high
+
+### `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07`
+
+- **Note:** [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](../../docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Current source scope includes R1-R3 Hilbert-Schmidt trace-Casimir scalar-dilation rigidity plus R4 connection-rescaling equivalence and R5 Wilson-coefficient routing. R1-R3 close as bounded class-A algebra, but R4/R5 remain conditional on a retained physical connection-equivalence bridge and Wilson action-routing premise.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-five-judge-panel-majority-g-bare-hs-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** For c^2 != 1, both invariants change by the same factor c^2; the canonical pair (N_F, C_F) = (1/2, 4/3) is preserved only at c^2 = 1, so T_a -> c T_a with c != +/-1 is not an automorphism of the canonical inner-product structure on g_conc.  _(class `A`)_
+- **chain closes:** False — Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.
+- **rationale:** Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.
+- **auditor confidence:** judicial_majority_3_to_2
 
 ### `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`
 

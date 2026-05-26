@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1932
 
 ## What Changed
 
@@ -19,4 +19,3 @@ witness.  Physical selector and full-stack closure language was removed.
 - `python3 scripts/vocab_lint.py --report-only docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md .claude/science/physics-loops/dm-pmns-transport-witness-narrow/*.md`
 - `python3 -m py_compile scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py`
 - `git diff --check`
-

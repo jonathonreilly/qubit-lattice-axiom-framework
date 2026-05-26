@@ -19,7 +19,6 @@ out_of_scope:
   - physical off-seed source selector
   - full-stack DM/PMNS closure
   - sole-axiom derivation of fixed N_e source surface
-pr_status: pending
-next_exact_action: run local gates and open review PR
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1932
+next_exact_action: verify PR checks and continue campaign with the next audited-conditional row
 stop_condition: PR opened and verified, then continue campaign
-

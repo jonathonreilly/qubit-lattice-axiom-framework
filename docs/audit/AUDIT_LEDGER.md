@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -876,7 +876,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_normalization_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1611,21 +1610,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
-- **auditor confidence:** high
-
-### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Reflection positivity (R1)-(R4) for the canonical action restricted to Case A staggered-only and Case B symmetric-canonical Wilson subsurface, as stated in the narrowed source note.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T185342Z-3e36cf37-axiom_first_reflection_p-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For the combined gauge+fermion RP proof, Step 3 requires configuration-by-configuration det(M) >= 0; the note derives this for M_KS+mI and makes the symmetric-canonical Wilson case conditional on a bridge note.  _(class `A`)_
-- **chain closes:** False — The staggered-only determinant-positivity step closes algebraically from the stated real anti-symmetric/anti-hermitian M_KS structure. The Case B Wilson subsurface does not close inside this packet because it explicitly depends on STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md, which is not provided as a retained-grade cited authority.
-- **rationale:** The runner performs genuine finite structural checks and determinant tests, but E6 is finite numerical support and filters well-conditioned cases; it is not a closed-form proof of configuration-by-configuration determinant positivity for the Wilson sector. The note itself makes Case B conditional on a bridge note and later records staggered+Wilson support as runner-supported rather than derived. Therefore the full narrowed claim over both Cases A and B remains conditional, even though the staggered-only subcase appears algebraically closed on the packet's stated premises.
-- **open / conditional deps cited:**
-  - `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`
 - **auditor confidence:** high
 
 ### `background_independence_note`

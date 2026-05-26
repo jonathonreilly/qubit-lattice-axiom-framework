@@ -1,0 +1,27 @@
+loop: reflection-positivity-staggered-only-repair
+branch: physics-loop/reflection-positivity-staggered-only-repair-20260525
+base: origin/main
+target_claim_id: axiom_first_reflection_positivity_theorem_note_2026-04-29
+target_note: docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+runner: scripts/axiom_first_reflection_positivity_check.py
+actual_current_surface_status: proposed_retained
+conditional_surface_status: null
+audit_effective_status_after_pipeline: unaudited
+audit_queue_position: 1
+audit_queue_ready: true
+criticality: critical
+transitive_descendants: 887
+direct_in_degree: 34
+active_route: "narrow source to staggered-only reflection positivity"
+files_touched:
+  - docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_reflection_positivity_check.py
+  - outputs/axiom_first_reflection_positivity_staggered_only_repair_2026-05-25.txt
+open_imports:
+  - "Fermion Wilson determinant-positivity bridge is out of scope."
+no_go_routes:
+  - "Do not use E6 finite checks as theorem-grade Wilson determinant positivity."
+review_findings: "pass; proposed_retained author proposal, no audit verdict applied"
+pr_status: pending
+next_exact_action: "run review-loop checks, commit, push, and open PR"
+stop_condition: "PR opened and verified, then campaign pivots"

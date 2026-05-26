@@ -1,7 +1,9 @@
 # Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action
 
 **Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair);
-2026-05-17 (load-bearing claim narrowed per audit verdict)
+2026-05-17 (load-bearing claim narrowed per audit verdict);
+2026-05-25 (further narrowed to the staggered-only fermion sector per
+latest audit repair target)
 **Status:** support — branch-local theorem note on the explicit framework baseline; runner passing; queued for independent audit after review repair.
 **Claim type:** positive_theorem
 **Loop:** `axiom-first-foundations`
@@ -10,68 +12,46 @@
 **Log:** `outputs/axiom_first_reflection_positivity_check_2026-04-29.txt`
 **Status authority:** independent audit lane only.
 
-## 2026-05-17 narrowing — load-bearing claim restricted
+## 2026-05-25 narrowing — load-bearing claim restricted to staggered-only
 
-The 2026-05-05 audit verdict on this row returned `audited_conditional`
-with the explicit guidance:
+The latest audit verdict on this row returned `audited_conditional` with
+the explicit repair target:
 
-> The cited bridge authority is marked unaudited and itself states that
-> it proves only the symmetric-canonical `M_W = r*d*I` case, leaving
-> broader Wilson-term cases open. The parent note's own honest-status
-> section also concedes that the full staggered+Wilson extension is
-> runner-supported rather than closed-form. The runner performs finite
-> structural/toy checks and selected determinant tests, but it does not
-> establish configuration-by-configuration SU(3) determinant positivity
-> for the broader claimed surface.
+> missing_bridge_theorem: provide the full retained-grade bridge note for
+> the symmetric-canonical Wilson determinant-positivity theorem, or narrow
+> this row to the staggered-only sector.
 
-with explicit repair guidance:
+This repair takes the second route. The load-bearing theorem content is
+restricted to:
 
-> scope_too_broad: **narrow the retained claim to the staggered-only
-> theorem plus the symmetric-canonical M_W = r*d*I Wilson subsurface**,
-> or supply a retained bridge proving det(M) ≥ 0 for the full canonical
-> Wilson term.
+**Case A only** — the staggered-only fermion sector
+`M = M_KS + m·I`, where the real anti-symmetric / anti-Hermitian
+structure of the Kogut-Susskind hop gives a closed-form conjugate-pair
+determinant proof
 
-This revision takes the **first explicit option**: the load-bearing
-theorem content is **restricted to two sub-cases**:
+```text
+det(M_KS + mI) = m^{n_0} prod_k (m^2 + lambda_k^2) > 0
+```
 
-1. **Case A** — the staggered-only sector `M = M_KS + m·I`, where the
-   `{ε, M_KS} = 0` anticommutation plus the staggered chirality
-   grading delivers a closed-form ±λ paired-eigenvalue proof of
-   `det(M) ≥ 0` and therefore of (R1)-(R4). Closed-form on the explicit framework baseline.
-2. **Case B (symmetric-canonical)** — the staggered+Wilson sector with
-   the **symmetric-canonical specialization** `M_W = r · d · I` (the
-   sublattice-uniform diagonal projection of the canonical Wilson
-   Laplacian at `r = 1`), conditional on the cited bridge note
-   `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`
-   reaching retained-grade status. Inside that subsurface the BdG-like
-   block argument gives the explicit closed-form
-   `det(M_KS + r·d·I + m·I) = ∏ (α² + σ_i²) > 0`.
+for `m > 0`. Together with the Wilson plaquette gauge half, this is the
+in-scope reflection-positivity theorem for (R1)-(R4).
 
-The **broader staggered+Wilson surface** (non-symmetric `ε`-commuting
-`M_W`, where the two sublattice diagonal blocks are unitarily
-equivalent but not equal) is **explicitly outside the narrowed
-load-bearing claim**. The note continues to record E6 numerical
-support for that broader surface as a runner-supported extension, but
-the broader surface is not a load-bearing theorem conclusion of this
-row. Downstream rows that need RP outside Cases A and B must either
-(a) cite a separate retained-grade authority for the broader Wilson
-surface, or (b) accept the runner-supported (non-derived) status of
-the extension.
-
-This narrowing does not modify Steps 1, 2, 3, or 3a's existing
-algebraic content; it only narrows the headline retained-claim scope
-to the two subsurfaces that the audit verdict accepts as closed-form
-(or near-closed-form, contingent on the bridge note's audit) on
-the explicit framework baseline.
+The fermion Wilson-term surfaces, including the symmetric-canonical
+`M_W = r*d*I` subsurface and the broader canonical staggered+Wilson
+surface, are explicitly outside this row's load-bearing claim. The old E6
+checks remain historical/diagnostic support only and are no longer counted
+by the primary runner or used by the proof.
 
 ## Review-loop repair (2026-05-03)
 
-The 2026-05-03 review follow-up identified three substantive gaps:
+The 2026-05-03 review follow-up, before the later staggered-only narrowing,
+identified three substantive gaps:
 
 1. **Citation-vs-derivation.** The original proof cited
    Osterwalder–Seiler / Sharatchandra–Thun–Weisz / Menotti–Pelissetto
-   without explicitly verifying that the explicit framework baseline canonical staggered+Wilson
-   SU(3) action satisfies their hypotheses. The repair adds an explicit
+   without explicitly verifying that the then-claimed explicit framework
+   baseline canonical staggered+Wilson SU(3) action satisfies their
+   hypotheses. The repair adds an explicit
    **hypothesis-match table** (§ "OS hypothesis match for the explicit framework baseline") that
    lists each OS/STW/Menotti precondition and shows it holds on the explicit framework baseline.
 2. **Combined-sector determinant positivity.** Step 3's reliance on
@@ -98,7 +78,9 @@ transfer matrix. Imports of OS/STW/Menotti remain at the level of "the
 factorisation identities themselves are due to those authors" — which
 is a literature credit, not a hidden hypothesis.
 
-The runner adds two new exhibits:
+That repair added two exhibits. After the 2026-05-25 staggered-only
+narrowing, only E5 remains in the primary runner's in-scope summary; E6 is
+historical support for the excluded fermion Wilson surface.
 
   E5  Staggered chirality anticommutation `{ε, M_KS} = 0` verified
       explicitly on (1+1)D staggered Dirac for L_t in {4, 6, 8} and
@@ -106,31 +88,32 @@ The runner adds two new exhibits:
       cleanly under PBC). This is the load-bearing identity for the
       ±λ paired-eigenvalue structure used in the Step 3a derivation
       of `det(M) ≥ 0`.
-  E6  `det(M) ≥ 0` verified across multiple lattice sizes and mass
-      values on the canonical staggered+Wilson surface (well-
-      conditioned cases only, |det(M)| > 1e-10), confirming the
-      Step 3a derivation operationally.
+  E6  Historical only after this repair: `det(M) ≥ 0` verified across
+      multiple lattice sizes and mass values on the canonical
+      staggered+Wilson surface (well-conditioned cases only,
+      |det(M)| > 1e-10).
 
-## Scope (narrowed 2026-05-17)
+## Scope (narrowed 2026-05-25)
 
 This note records, on the current explicit framework baseline
 (`docs/MINIMAL_AXIOMS_2026-04-11.md`), an axiom-first proof that the
-canonical staggered-Dirac fermion action plus Wilson plaquette gauge
-action at `g_bare = 1` is reflection-positive (RP) on temporal-link
-reflection, **restricted to two sub-cases:**
+canonical staggered-only fermion action plus Wilson plaquette gauge action
+at `g_bare = 1` is reflection-positive (RP) on temporal-link reflection.
 
-- **(Case A) staggered-only sector** `M = M_KS + m·I` — closed-form
-  derivation on the explicit framework baseline via the `{ε, M_KS} = 0` anticommutation and
-  ±λ paired eigenvalues.
-- **(Case B) symmetric-canonical Wilson subsurface**
-  `M = M_KS + r·d·I + m·I` — closed-form derivation on the explicit framework baseline
-  *conditional* on the cited bridge note's audit retention, via the
-  BdG-like block factorisation
-  `det(M) = ∏ (α² + σ_i²) > 0`.
+The in-scope fermion operator is
 
-The **broader staggered+Wilson surface** (non-symmetric `ε`-commuting
-`M_W`) is outside the narrowed load-bearing scope and is recorded
-elsewhere as a runner-supported extension only.
+```text
+M = M_KS + m·I,   m > 0,
+```
+
+with no fermion Wilson term. The determinant-positivity input is derived
+in closed form from the real anti-symmetric / anti-Hermitian structure of
+`M_KS`.
+
+Fermion Wilson-term surfaces are outside the load-bearing scope. Downstream
+rows that need RP for `M_KS + M_W + mI` must cite a separate retained-grade
+Wilson determinant-positivity authority or keep the Wilson extension
+explicitly conditional.
 
 RP is the lattice-level positivity that lets one reconstruct a
 positive Hermitian transfer matrix `T` on a finite physical Hilbert
@@ -139,10 +122,9 @@ bounded below.
 
 After this note, the package's transfer-matrix and
 Hilbert-reconstruction language can quote a branch-local RP theorem
-on the explicit framework baseline *within the narrowed scope of Cases A and B* instead of
-treating RP as a background assumption. Outside Cases A and B the
-extension remains runner-supported and is not load-bearing for this
-row.
+on the explicit framework baseline *within the staggered-only fermion
+sector* instead of treating RP as a background assumption. The fermion
+Wilson extension remains outside this row.
 
 ## Explicit framework baseline objects in use
 
@@ -160,8 +142,8 @@ row.
       S_F = sum_{x,y in Λ}  χ̄_x  M_xy  χ_y                            (1)
   ```
 
-  with `M = M_KS + M_W + m·I`, where `M_KS` is the canonical
-  Kogut–Susskind staggered hop and `M_W` the Wilson term.
+  with `M = M_KS + m·I`, where `M_KS` is the canonical
+  Kogut–Susskind staggered hop and `m > 0`.
 
 - **Canonical normalization and compact `SU(3)` gauge surface.** Used
   in the form
@@ -232,10 +214,11 @@ so that `S = S_+ + S_- + S_∂` with `S_-` being the `Θ`-image of `S_+`.
 
 ## Statement
 
-**Narrowed load-bearing claim (2026-05-17).** Let `F` be a polynomial
+**Narrowed load-bearing claim (2026-05-25).** Let `F` be a polynomial
 in the lattice fields restricted to `Λ_+` (i.e. all field arguments
-lie in `Λ_+`). Then on the explicit framework baseline, **on the action surface restricted to
-Case A or Case B above**:
+lie in `Λ_+`). Then on the explicit framework baseline, **on the
+staggered-only fermion action surface `M = M_KS + mI`, `m > 0`, together
+with the Wilson plaquette gauge action**:
 
 **(R1) Reflection positivity.** The reflected expectation
 
@@ -272,7 +255,7 @@ Define the **vacuum-energy-subtracted** transfer matrix and Hamiltonian:
 
 Then `||T̃|| = 1` is automatic and `H̃ ≥ 0` is the lattice analogue of
 the spectrum condition. (The original ||T|| ≤ 1 statement was implicit
-in the canonical staggered-Wilson normalisation; the explicit
+in the canonical staggered-only normalisation; the explicit
 subtraction here makes the vacuum-energy choice load-bearing rather
 than implicit.)
 
@@ -283,10 +266,9 @@ spectrum is bounded below by `-log(λ_max(T))/a_τ`, and (R4) is the
 vacuum-subtracted version of the lattice spectrum condition.
 
 Statements (R1)–(R4) constitute reflection positivity for the
-canonical CL3-on-Z3 action on the explicit framework baseline **on the narrowed action
-surface (Cases A and B above)**. Extension to non-symmetric Wilson
-subsurfaces is recorded as runner-supported only and is not part of
-the load-bearing claim of this row.
+canonical CL3-on-Z3 action on the explicit framework baseline **on the
+staggered-only fermion surface**. Fermion Wilson-term extensions are not
+part of the load-bearing claim of this row.
 
 ## Proof
 
@@ -362,10 +344,9 @@ reflection (3) and the Sharatchandra fermion-reflection convention,
 
 (staggered phases pick up a sign on temporal links; this is exactly
 absorbed by `Θ`). The crossing bilinear `M_∂` couples
-`χ̄_{(0, x⃗)} χ_{(-1, x⃗)}` with the temporal hop coefficient,
-plus the Wilson-term contribution `r/2`. Both contributions remain
-real after `Θ` and combine with the gauge-link variable on the
-crossing temporal link as a sesquilinear pairing.
+`χ̄_{(0, x⃗)} χ_{(-1, x⃗)}` with the temporal hop coefficient. This
+contribution remains real after `Θ` and combines with the gauge-link
+variable on the crossing temporal link as a sesquilinear pairing.
 
 Integrating out the `Λ_+` Grassmann variables gives a determinant
 factor `det(M_+)`; integrating out `Λ_-` gives `det(M_-) = det(Θ(M_+))`.
@@ -388,19 +369,18 @@ is integrated against a positive Haar measure and the fermion sector
 gives a real determinant on the canonical surface (γ_5-Hermiticity).
 For positivity of the combined measure, the fermion determinant must
 also be non-negative configuration-by-configuration; Step 3a below
-gives the derivation for the staggered-only sector and the
-runner-supported extension for the full staggered+Wilson sector. The
+gives the derivation for the in-scope staggered-only sector. The
 product of two positive measures is a positive measure, and the
 sesquilinear-pairing rewriting applies term by term.
 
-### Step 3a — det(M) ≥ 0: closed-form bridge for the symmetric-canonical surface
+### Historical Wilson bridge note (not load-bearing here)
 
-**Update 2026-05-05.** The closed-form bridge that the original Step 3a
-left as a runner-supported gap (E6 only) is now supplied by the dedicated
-bridge note
+The previous 2026-05-17 surface included a conditional symmetric-canonical
+fermion Wilson subsurface. That route is no longer in the load-bearing
+claim of this row. The dedicated bridge note
 `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`
-(downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*).
-The bridge takes this note's own asserted conventions as input
+(plain text, not a load-bearing dependency here) takes this note's own
+asserted conventions as input
 (`ε M_W ε = M_W`, mass `m · I`, balanced sublattices `n_+ = n_-`) and
 adds one further structural specification — symmetric-canonical
 `M_W = r · d · I` (the sublattice-uniform diagonal projection of the
@@ -423,24 +403,15 @@ lattice to yield the displayed strictly-positive product. The bridge
 note's companion runner
 (`scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py`)
 verifies the factorisation numerically across multiple lattice sizes,
-gauge-coupling scales, and mass values, matching the closed-form formula
-to floating-point precision in every case.
+gauge-coupling scales, and mass values.
 
-This closed-form bridge supplies the load-bearing input of Step 3 for
-the symmetric-canonical surface only. It is strictly additive on the
-original argument and on the existing Exhibits E5 and E6, which remain
-in force as additional numerical evidence at a smaller lattice size and
-under a different `M_W` discretisation choice in the runner. The
-generalisation to non-symmetric `ε`-commuting `M_W` (where the two
-sublattice diagonal blocks are unitarily equivalent but not equal) is
-recorded as the open frontier of the bridge note, and the independent
-audit lane owns any decision about whether this dependency repairs the
-parent row or leaves it conditional on that broader surface.
+This branch does not use that bridge to support the present row. Any
+Wilson-fermion RP claim remains a separate audit target.
 
-### Step 3a — historical staggered-only derivation
+### Step 3a — det(M_KS + mI) > 0: staggered-only derivation
 
-γ_5-Hermiticity for the staggered+Wilson Dirac operator on the
-canonical real-mass surface states
+Gamma5-Hermiticity for the staggered Dirac operator on the canonical
+real-mass surface states
 
 ```text
     γ_5 M γ_5  =  M^†                                                  (12)
@@ -538,7 +509,7 @@ step; (E5) is retained as an independent structural exhibit for
 `{ε, M_KS} = 0`, which is consistent with anti-hermiticity but is not
 load-bearing for (14b) under the present derivation.
 
-**Case B — staggered + Wilson (M = M_KS + M_W + mI, runner-supported).**
+**Historical Case B — staggered + Wilson (out of scope for this row).**
 The Wilson term `M_W` commutes with the staggered chirality `ε`, so
 adding `M_W` to `M_KS` breaks the `{ε, M}` anticommutation:
 
@@ -553,26 +524,18 @@ plus an upper bound on the Wilson coefficient is the standard
 sufficient condition for positivity, but neither γ_5-Hermiticity nor
 the canonical r=1 choice gives det(M) ≥ 0 by an axiom-first identity.
 
-The runner exhibit E6 instead verifies det(M) ≥ 0 **operationally**
+The historical runner exhibit E6 verified det(M) ≥ 0 **operationally**
 across the canonical parameter range (multiple lattice sizes, multiple
-mass values, well-conditioned cases only). This is a finite-evidence
-positivity certificate, not a closed-form derivation, and it is the
-honest support level for det(M_KS + M_W + mI) ≥ 0 on the explicit framework baseline.
+mass values, well-conditioned cases only). That remains finite-evidence
+support only. It is no longer counted by this row's primary runner and is
+not load-bearing for the present staggered-only theorem.
 
 **Consequence for the load-bearing claim.** The combined-sector RP
-proof in Step 3 quotes `det(M) ≥ 0 on the canonical surface` as
-input. With the scope above:
-
-- For the staggered-only canonical action, the input is **derived**
-  from (14b).
-- For the staggered+Wilson canonical action at `r = 1`, the input is
-  **runner-supported via E6** across the audited parameter range,
-  not derived.
-
-The note's RP statement (R1)–(R4) for the full explicit framework baseline action is
-therefore a theorem on the staggered-only sector and a runner-supported
-extension on the full staggered+Wilson sector — not a single closed-form
-derivation across both. The honest-status section below records this.
+proof in Step 3 quotes `det(M) ≥ 0` as input. With the 2026-05-25 scope,
+that input is the staggered-only determinant identity (14b). The note's
+RP statement (R1)–(R4) is therefore a theorem for the staggered-only
+fermion sector plus the Wilson plaquette gauge half, and says nothing
+load-bearing about fermion Wilson terms.
 
 Hence
 
@@ -588,9 +551,9 @@ and (R1)–(R4) follow by the standard reconstruction:
   invariance of the action. Positivity of `T` is what (10) records.
 - `H = -log(T) / a_τ` is bounded below because `T ≤ 1` in operator
   norm on the canonical surface (the operator norm of the
-  staggered-Wilson transfer matrix is bounded by `1` after the
-  canonical mass + Wilson term renormalises the Brillouin zone;
-  this is exhibited numerically in the runner).
+  staggered-only transfer matrix is bounded by `1` after the standard
+  vacuum-energy subtraction; this is exhibited numerically in the
+  runner).
 
 This completes the proof of (R1)–(R4). ∎
 
@@ -599,7 +562,7 @@ This completes the proof of (R1)–(R4). ∎
 The proof uses the physical `Cl(3)` local algebra only via the Cl(3)
 C-matrix and staggered phases `η_μ`, `ε`; the `Z^3` spatial substrate
 only as a finite block with periodic boundary in space; the finite
-Grassmann staggered-Dirac action with mass plus Wilson term in the
+Grassmann staggered-Dirac action with positive mass in the
 canonical convention; and the compact `SU(3)` gauge surface only via
 compactness, Haar invariance, and the fact that
 `β = 2 N_c / g_bare² > 0` is fixed and positive. No imports from the
@@ -616,7 +579,8 @@ numerical, observed, or fitted value.
 The review-loop repair adds an explicit hypothesis-match table that
 verifies each precondition of the Osterwalder–Seiler / Sharatchandra–
 Thun–Weisz / Menotti–Pelissetto factorisation theorems is satisfied
-by the explicit framework baseline canonical staggered+Wilson SU(3) action:
+by the explicit framework baseline canonical staggered-only fermion plus
+Wilson plaquette SU(3) gauge action:
 
 | OS / STW / MP precondition | the explicit framework baseline carrier | Verified |
 |---|---|---|
@@ -625,10 +589,9 @@ by the explicit framework baseline canonical staggered+Wilson SU(3) action:
 | No improved-action negative-coefficient rectangles | The accepted plaquette surface forbids them | ✓ explicit |
 | Temporal-link reflection convention with `Θ U_t = U_t^†` (image-link) | The reflection map (3) implements this | ✓ definition |
 | Staggered fermion action of Kogut–Susskind form, with staggered phases `η_μ(x) = (-1)^{Σ_{ν<μ} x_ν}` | Finite Grassmann staggered-Dirac action: `M_KS` uses exactly these phases | ✓ exact match |
-| Wilson term added to lift doublers, with positive r-coefficient | Finite Grassmann staggered-Dirac action: `M_W` with `r = 1` (canonical) | ✓ exact match |
 | Reflection convention for fermions: `Θ χ_x = χ̄_{θ x}^T`, `Θ χ̄_x = χ_{θ x}^T` (Sharatchandra) | The reflection map's fermion-half implements this | ✓ definition |
 | Real positive mass `m > 0` in the Dirac operator | Canonical mass surface | ✓ explicit |
-| `det(M) ≥ 0` on the canonical surface | Step 3a: derived for staggered-only from real anti-symmetry of `M_KS` (pure-imaginary conjugate-pair eigenvalues ⇒ `det(M_KS+mI) = m^{n_0}·∏_k(m²+λ_k²) > 0` for m>0); runner-supported (E6) for staggered+Wilson | ✓ staggered-only derived; staggered+Wilson runner-supported |
+| `det(M) ≥ 0` on the canonical staggered-only surface | Step 3a: derived from real anti-symmetry of `M_KS` (pure-imaginary conjugate-pair eigenvalues => `det(M_KS+mI) = m^{n_0}*prod_k(m^2+lambda_k^2) > 0` for m>0) | ✓ derived |
 | Sesquilinear pairing on crossing links is L²-positive | OS's Cauchy–Schwarz manipulation applied to `Re tr(A_+ B_-^†)` after Haar integration | ✓ standard |
 
 Every precondition is met. The factorisation identities (7) and (10)
@@ -639,7 +602,7 @@ hypotheses smuggled in.
 ## Corollaries (downstream tools)
 
 C1. *Hermitian transfer matrix on the explicit framework baseline.* Any package note that
-quotes "the staggered transfer matrix is Hermitian and bounded
+quotes "the staggered-only transfer matrix is Hermitian and bounded
 below" can cite this note instead of treating it as background.
 
 C2. *Reconstructed Hilbert space `H_phys`.* The OS-style
@@ -660,7 +623,7 @@ mutually consistent on the explicit framework baseline.
 
 ## Honest status
 
-**Branch-local theorem with sector-dependent support level.**
+**Branch-local theorem on the staggered-only fermion sector.**
 
 - (R1)–(R4) on the **staggered-only** sector (M = M_KS + mI) are
   proved on the explicit framework baseline by Steps 1–3 with closed-form derivation of
@@ -670,22 +633,15 @@ mutually consistent on the explicit framework baseline.
   pair product `m² + λ² > 0`, hence (14b). The
   `det(M^† M) = |det(M)|²` cross-check (14d) is consistent and
   numerically verified by the companion runner.
-- (R1)–(R4) on the **staggered + Wilson** sector (M = M_KS + M_W + mI)
-  are supported by the same factorisation identities (7) and (10),
-  but the additional input det(M) ≥ 0 is **runner-verified by E6
-  across the audited parameter range**, not derived in closed form.
-  Adding the Wilson term breaks the {ε, M} anticommutation (14c),
-  so the staggered ±λ pairing argument does not extend.
 
 **What this rules out.**
 
 - The note no longer claims a single closed-form derivation of
   det(M) ≥ 0 for the full canonical staggered+Wilson operator on
   the explicit framework baseline. That gap is honest and recorded.
-- Downstream notes that quote "RP holds on the explicit framework baseline" can cite this
-  note for the staggered-only sector with full theorem support;
-  the staggered+Wilson extension carries the runner-supported (not
-  derived) qualifier.
+- Downstream notes that quote "RP holds on the explicit framework baseline"
+  can cite this note only for the staggered-only fermion sector with full
+  theorem support.
 
 **Not in scope.**
 
@@ -717,6 +673,6 @@ mutually consistent on the explicit framework baseline.
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*, see §"Step 3a — det(M) ≥ 0: closed-form bridge for the symmetric-canonical surface")
+No fermion Wilson determinant-positivity bridge is load-bearing after the
+2026-05-25 narrowing. The Wilson bridge note remains a separate historical
+or downstream target, not a dependency of this staggered-only row.

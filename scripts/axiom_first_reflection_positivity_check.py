@@ -10,13 +10,13 @@ Cycle 2 / Route R2).
 Theorem note:
   docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
 
-The full canonical action is staggered Dirac–Wilson + Wilson SU(3)
+The in-scope canonical action is staggered-only fermion + Wilson SU(3)
 plaquette at g_bare = 1. The full numerical exhibit at SU(3) on a
 3+1D block is heavy; here we exhibit the *structural* content of
 RP on simpler representatives of the same factorisation that
 A_min admits:
 
-  E1.  Free staggered fermion + mass + Wilson term in 1+1D:
+  E1.  Free staggered fermion + mass in 1+1D:
        construct the canonical transfer matrix T = exp(-a_τ H_lat)
        in canonical Fock space; verify
          (E1a) T = T†                            (Hermiticity);
@@ -39,7 +39,7 @@ A_min admits:
        check that the half-action exponential gives a real,
        non-negative reconstructed inner-product matrix.
 
-If all four exhibits pass, the structural content of RP on
+If all in-scope exhibits pass, the structural content of RP on
 A_min is reproduced numerically on these representatives. The
 theorem-note proof is the load-bearing argument; the runner is
 verification of the load-bearing facts.
@@ -63,7 +63,7 @@ def staggered_phase_1d(x):
     return (-1) ** x
 
 
-def free_staggered_1plus1d_hamiltonian(L_s, mass=0.3, r_wilson=1.0):
+def free_staggered_1plus1d_hamiltonian(L_s, mass=0.3, r_wilson=0.0):
     """
     Build the spatial-slice Hamiltonian H_lat of a free staggered
     fermion on an L_s-site periodic 1D ring.
@@ -71,7 +71,7 @@ def free_staggered_1plus1d_hamiltonian(L_s, mass=0.3, r_wilson=1.0):
     H_lat = Σ_x [ m · ε(x) · (c_x^† c_x - 1/2)                    (mass term)
                  + (i/2) (c_x^† c_{x+1} - c_{x+1}^† c_x)          (sym. hop)
                  - r/2  (c_x^† c_{x+1} + c_{x+1}^† c_x - 2 c_x^† c_x) ]
-                                                                   (Wilson)
+                                                                   (optional Wilson diagnostic)
 
     Returns (H_lat as a 2^L_s × 2^L_s Hermitian matrix, the underlying
     1-particle Hermitian matrix h, and lists c, c†).
@@ -82,7 +82,8 @@ def free_staggered_1plus1d_hamiltonian(L_s, mass=0.3, r_wilson=1.0):
         eps = staggered_phase_1d(x)
         # mass term contributes m·ε(x) on diagonal of 1-particle h
         h[x, x] += mass * eps
-        # Wilson term: -r/2 (forward + backward - 2 diag) → +r diag, -r/2 hops
+        # Optional historical Wilson diagnostic. The in-scope staggered-only
+        # runner leaves r_wilson = 0.
         h[x, x] += r_wilson
         # symmetric hop: +i/2 forward, -i/2 backward (η = 1 in 1D x-direction)
         xp = (x + 1) % L_s
@@ -140,8 +141,8 @@ def build_fermion_fock_ops(N):
 # Exhibit E1: Hermiticity + positivity of the staggered-fermion transfer matrix
 # ---------------------------------------------------------------------------
 
-def exhibit_E1(L_s=4, a_tau=1.0, mass=0.3, r_wilson=1.0, tol=1e-10):
-    print("\n--- Exhibit E1: free staggered transfer matrix T = exp(-a_τ H_lat) ---")
+def exhibit_E1(L_s=4, a_tau=1.0, mass=0.3, r_wilson=0.0, tol=1e-10):
+    print("\n--- Exhibit E1: free staggered-only transfer matrix T = exp(-a_tau H_lat) ---")
     H, h, c, cdag = free_staggered_1plus1d_hamiltonian(L_s, mass=mass, r_wilson=r_wilson)
     # T = exp(-a_τ H)
     # use scipy.linalg.expm if available; numpy alternative:
@@ -152,7 +153,7 @@ def exhibit_E1(L_s=4, a_tau=1.0, mass=0.3, r_wilson=1.0, tol=1e-10):
     evals_T = eigvalsh(0.5 * (T + T.conj().T))  # numerically Hermitian projection
     evals_H = eigvalsh(H)
     print(f"  L_s = {L_s}, dim = {2**L_s}, mass = {mass}, r_W = {r_wilson},"
-          f" a_τ = {a_tau}")
+          f" a_tau = {a_tau}")
     print(f"  E1a Hermiticity: ||T - T†||_max = {herm_err:.3e}")
     print(f"  E1b spectrum of T:  min = {evals_T.min():.3e},"
           f"  max = {evals_T.max():.3e},"
@@ -392,7 +393,7 @@ def exhibit_E5(tol=1e-10):
                 print(f"    L_t={L_t}, L_s={L_s}: ||{{eps, M_KS}}||_max = {diff:.3e}  FAIL")
                 e5_pass = False
     if e5_pass:
-        print(f"  All {n_checked} checks passed (max diff < {tol:.0e}) across L_t in (4,6,8), L_s in (3,4)")
+        print(f"  All {n_checked} checks passed (max diff < {tol:.0e}) across L_t in (4,6,8), L_s in (4,6)")
         print(f"  This is the +/-lambda paired-eigenvalue identity for det(M_KS):")
         print(f"  if M_KS v = lambda v, then M_KS (eps v) = -lambda (eps v).")
     verdict = "PASS" if e5_pass else "FAIL"
@@ -401,8 +402,9 @@ def exhibit_E5(tol=1e-10):
 
 
 # ---------------------------------------------------------------------------
-# Exhibit E6: det(M) >= 0 across mass/lattice values, the canonical
-#             surface positivity load-bearing in Step 3a.
+# Historical diagnostic E6: det(M) >= 0 across mass/lattice values on the
+# excluded fermion Wilson surface. This is not called by main() and is not
+# load-bearing after the 2026-05-25 staggered-only narrowing.
 # ---------------------------------------------------------------------------
 def exhibit_E6(tol=1e-9):
     print("\n--- Exhibit E6: det(M) >= 0 on the canonical staggered+Wilson surface ---")
@@ -476,9 +478,9 @@ def main():
     print(" axiom_first_reflection_positivity_check.py")
     print(" Loop: axiom-first-foundations, Cycle 2 / Route R2")
     print(" Exhibits structural content of reflection positivity for the")
-    print(" canonical CL3-on-Z3 staggered + Wilson + canonical-beta action.")
+    print(" canonical CL3-on-Z3 staggered-only fermion + Wilson plaquette gauge action.")
     print(" 2026-05-03 review-loop repair: + E5 reflection-image identity")
-    print("                          + E6 det(M) >= 0 on canonical surface")
+    print(" 2026-05-25 repair: E6 Wilson-fermion diagnostic removed from in-scope summary")
     print("=" * 72)
 
     e1_pass, T, H, c, cdag = exhibit_E1(L_s=4)
@@ -486,11 +488,9 @@ def main():
     e3_pass = exhibit_E3(T, H, c, cdag, L_s=4)
     e4_pass = exhibit_E4(L_s=3)
     e5_pass = exhibit_E5()
-    e6_pass = exhibit_E6()
 
     results = {"E1": e1_pass, "E2": e2_pass, "E3": e3_pass, "E4": e4_pass,
-               "E5 (staggered chirality anticommutation eps M_KS = -M_KS eps)": e5_pass,
-               "E6 (det(M) >= 0 on canonical surface, well-conditioned)": e6_pass}
+               "E5 (staggered chirality anticommutation eps M_KS = -M_KS eps)": e5_pass}
     print()
     print("=" * 72)
     print(" SUMMARY")
@@ -502,7 +502,7 @@ def main():
     print(f"\n   PASSED: {n_pass}/{n_total}")
     print()
     if n_pass == n_total:
-        print(" verdict: structural RP exhibits (R1)–(R4) reproduced numerically.")
+        print(" verdict: in-scope staggered-only RP exhibits (R1)-(R4) reproduced numerically.")
         return 0
     else:
         print(" verdict: at least one structural exhibit failed.")

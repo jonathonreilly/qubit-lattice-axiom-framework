@@ -42114,7 +42114,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "466faf0618a2faf91fa10ae2ed4b49423abfec7ba398701cff9204c2d7d9b33c",
+      "note_hash": "39c33eb0bf41c68153b2f15035de2df346ba0aa842925c1b364ac1f26ff3594e",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"

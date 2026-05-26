@@ -22,9 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 164 |
 | **retained_bounded** | 474 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 15 |
+| open_gate | 16 |
 | unaudited | 1271 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 760 |
+| `audited_clean` | 761 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `s3_time_theta_to_slice_coupling_note` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -680,6 +677,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_time_tensor_build_memo` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `s3_time_theta_to_slice_coupling_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_kg_rerun_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `schur_covariance_inheritance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9899,6 +9897,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows as an algebraic synthesis of the two cited retained-grade upstream notes: one supplies the reduced readout obstruction and the other supplies the conditional time-coupling family induced by any chosen readout map.
 - **rationale:** The memo does not close the full positive tensor/time theorem; it narrows the target and states the obstruction. Its load-bearing step is an algebraic consequence of the cited readout-map no-go and time-coupling bounded theorem, both marked retained-grade in the restricted packet. No runner source or stdout is available, so this audit is limited to the note text and cited authorities, but the bounded conclusion itself does not require a missing compute run.
 - **auditor confidence:** high
+
+### `s3_time_theta_to_slice_coupling_note`
+
+- **Note:** [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](../../docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** On the restricted Route-2 s3-time arm, retained Route-2 time/readout authorities give the exact conditional family Xi_P(t ; c) = (P_R c) tensor exp(-t Lambda_R)u_* for any admissible P_R, while a unique exact Theta_R -> Lambda_R coupling remains open because the endpoint triple is not derived upstream.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-fresh-s3-time-theta-to-slice-coupling-C75Ktt-2026-05-26-pass2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Conditional on the cited upstream authorities, the note records the exact conditional family Xi_P(t ; c) = (P_R c) tensor V_R(t) and the explicit absence of any retained-grade derivation of the readout-map endpoint triple, hence no unique exact Theta_R -> Lambda_R coupling theorem on this arm.  _(class `A`)_
+- **chain closes:** True — The chain closes as an open gate: the retained_bounded time-coupling authority supplies Lambda_R, V_R(t), and the conditional Xi_P family, while the retained_no_go readout and source-domain bridge authorities leave the endpoint triple and bypass route unresolved. No primary runner is needed because the load-bearing step is algebraic composition over retained one-hop dependencies, not a new compute claim.
+- **rationale:** This is clean only as an open_gate: it records an exact conditional coupling family from retained Route-2 authorities and preserves the missing endpoint triple as the blocker to uniqueness. It does not promote a unique exact coupling theorem, endpoint triple derivation, physical connected-trace selector, quark masses, CKM/Yukawa data, or untyped color endpoint identification. The inherited no-go content is bounded to the current restricted Route-2/readout bank and the provided current operational dependency metadata, not stale source-note status prose.
 
 ### `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23`
 

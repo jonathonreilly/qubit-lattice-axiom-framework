@@ -232567,22 +232567,50 @@
       "verdict_rationale": null
     },
     "s3_time_theta_to_slice_coupling_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
+      "audit_date": "2026-05-26T20:10:59.848803+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction.",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "Scoped finite-bank no-go: over the explicit CURRENT_TYPED_EDGES inventory, the retained Route-2 readout scopes, the SU(3) adjoint-fraction scalar F_adj=8/9 rather than a physical connected-trace selector, and granted T-side candidates, no typed path derives gamma_T(center)/gamma_E(center)=-R_conn; adjoining that bridge gives beta_E/alpha_E=21/4 by endpoint algebra."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 10.937,
+        "runner_hash": null,
+        "transitive_descendants": 692
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-s3-time-theta-to-slice-coupling-C75Ktt-2026-05-26-pass2",
       "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes as an open gate: the retained_bounded time-coupling authority supplies Lambda_R, V_R(t), and the conditional Xi_P family, while the retained_no_go readout and source-domain bridge authorities leave the endpoint triple and bypass route unresolved. No primary runner is needed because the load-bearing step is algebraic composition over retained one-hop dependencies, not a new compute claim.",
       "claim_id": "s3_time_theta_to_slice_coupling_note",
-      "claim_scope": "Records the exact conditional Route-2 s3-time coupling family Xi_P(t;c)=(P_R c) tensor exp(-t Lambda_R)u_* from retained Route-2 time/readout authorities, while leaving the unique exact Theta_R -> Lambda_R coupling theorem open because the upstream readout endpoint triple remains under retained no-go boundaries.",
+      "claim_scope": "On the restricted Route-2 s3-time arm, retained Route-2 time/readout authorities give the exact conditional family Xi_P(t ; c) = (P_R c) tensor exp(-t Lambda_R)u_* for any admissible P_R, while a unique exact Theta_R -> Lambda_R coupling remains open because the endpoint triple is not derived upstream.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": "2026-05-26T20:06:55.826444+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T20:10:59.848803+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -232597,8 +232625,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T20:10:59.848612+00:00",
+          "auditor": "codex-gpt-5.5-fresh-s3-time-theta-to-slice-coupling-C75Ktt-2026-05-26-pass2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the restricted Route-2 s3-time arm, retained Route-2 time/readout authorities give the exact conditional family Xi_P(t ; c) = (P_R c) tensor exp(-t Lambda_R)u_* for any admissible P_R, while a unique exact Theta_R -> Lambda_R coupling remains open because the endpoint triple is not derived upstream.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -232607,14 +232646,14 @@
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 10.937,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Conditional on the cited upstream authorities, the note records the exact conditional family Xi_P(t ; c) = (P_R c) tensor V_R(t) and the explicit absence of any retained-grade derivation of the readout-map endpoint triple, hence no unique exact Theta_R -> Lambda_R coupling theorem on this arm.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d6765984d39e7d2553a6b30f4c09dfd62f9f94524651bb4cb944712cffc5bfa8",
@@ -232752,7 +232791,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -232763,7 +232802,7 @@
       "runner_path": null,
       "title": "Route 2 Readout to Slice Coupling",
       "transitive_descendants": 692,
-      "verdict_rationale": null
+      "verdict_rationale": "This is clean only as an open_gate: it records an exact conditional coupling family from retained Route-2 authorities and preserves the missing endpoint triple as the blocker to uniqueness. It does not promote a unique exact coupling theorem, endpoint triple derivation, physical connected-trace selector, quark masses, CKM/Yukawa data, or untyped color endpoint identification. The inherited no-go content is bounded to the current restricted Route-2/readout bank and the provided current operational dependency metadata, not stale source-note status prose."
     },
     "s3_time_transfer_matrix_bridge_note": {
       "audit_date": null,

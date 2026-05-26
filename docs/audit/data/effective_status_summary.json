@@ -24,7 +24,6 @@
   ],
   "cycles_detected": 3,
   "effective_status_counts": {
-    "audit_in_progress": 1,
     "audited_conditional": 46,
     "audited_failed": 2,
     "audited_numerical_match": 12,
@@ -51,7 +50,7 @@
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "meta": 229,
-    "open_gate": 15,
+    "open_gate": 16,
     "retained": 146,
     "retained_bounded": 474,
     "retained_no_go": 164,

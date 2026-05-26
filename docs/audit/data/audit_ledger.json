@@ -10805,84 +10805,51 @@
       "verdict_rationale": null
     },
     "audited_symmetry_synthesis_note": {
-      "audit_date": "2026-05-26T02:02:48.840876+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "higher_symmetry_gravity_probe_note": "On the default dense Z2xZ2 runner surface N={80,100,120}, 16 seeds, z2z2_quarter=16, connect_radius=5.2, anchor_b=5.0, mass_count=4, the SHA-matched completed runner produces the stated finite mass-window rows, positive-row subfits inside M={2,3,5,8}, and positive but weak fixed-distance sweep rows; it does not establish rowwise/global gravity positivity, Born safety, or a gravity law.",
-          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
-          "mirror_2d_validation_note": "Bounded exact 2D mirror coexistence pocket for N in {25,40,60,80,100}, npl_half=12, yr=10.0, connect_radius=2.5, 8 seeds, and k-band [3,5,7], with no promoted mass-law or distance-law claim.",
-          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency.",
-          "mirror_mutual_information_chokepoint_note": "Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed."
-        },
-        "dep_claim_type": {
-          "higher_symmetry_gravity_probe_note": "bounded_theorem",
-          "higher_symmetry_joint_validation_note": "bounded_theorem",
-          "mirror_2d_validation_note": "bounded_theorem",
-          "mirror_chokepoint_note": "bounded_theorem",
-          "mirror_mutual_information_chokepoint_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "higher_symmetry_gravity_probe_note": "retained_bounded",
-          "higher_symmetry_joint_validation_note": "retained_bounded",
-          "mirror_2d_validation_note": "retained_bounded",
-          "mirror_chokepoint_note": "retained_bounded",
-          "mirror_mutual_information_chokepoint_note": "retained_bounded"
-        },
-        "deps": [
-          "higher_symmetry_gravity_probe_note",
-          "higher_symmetry_joint_validation_note",
-          "mirror_2d_validation_note",
-          "mirror_chokepoint_note",
-          "mirror_mutual_information_chokepoint_note"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T020226Z-f19e4291-audited_symmetry_synthes-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The qualitative synthesis mostly follows from retained-bounded cited authorities, but the Z2 x Z2 table and exponent in the source note use the older 32-seed raw log, while the cited authority says the binding registered cache is the 16-seed run with different values and alpha. The note also presents the mirror chokepoint headline more broadly than the narrowed parent authority, whose retained strict-card scope is only N=15 and N=25 with larger-N strict rows failing.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "audited_symmetry_synthesis_note",
-      "claim_scope": "Synthesis audit of the bounded symmetry-program summary: exact 2D mirror, exact mirror chokepoint, Z2 x Z2 joint validation, higher-symmetry gravity limitations, structured-growth Born failure, and bounded mirror MI diagnostics as supported by the supplied one-hop notes and runner packet.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-26T02:02:48.840876+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "mirror_chokepoint_note",
-        "higher_symmetry_joint_validation_note",
-        "higher_symmetry_gravity_probe_note",
+        "mirror_chokepoint_boundary_fit_note",
+        "mirror_mutual_information_chokepoint_note",
         "mirror_2d_validation_note",
-        "mirror_mutual_information_chokepoint_note"
+        "higher_symmetry_joint_validation_note",
+        "higher_symmetry_gravity_probe_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/mirror_born_audit.py"
       ],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "The strongest audited story is that exact 2D mirror, exact mirror, and Z2 x Z2 provide mature bounded symmetry-protected coexistence lanes while structured mirror growth remains only a geometry result until its propagator is Born-safe.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "8e78b634b1790db98cf69ccc87de6177fa4d25e083a82d45538131816207b7cb",
+      "note_hash": "1212d9044c23a30482423df07b16c22d88e1ef9bd6ec15565f2ad3068ee36bb7",
       "note_path": "docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: update the synthesis note to use the registered 16-seed Z2 x Z2 cache values and explicitly narrow exact mirror chokepoint language to the retained N=15/N=25 strict-card pocket plus separately scoped dense boundary/MI authorities.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -10925,21 +10892,87 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-26T10:13:30.079675+00:00",
+          "archived_for_note_hash": "8e78b634b1790db98cf69ccc87de6177fa4d25e083a82d45538131816207b7cb",
+          "audit_date": "2026-05-26T02:02:48.840876+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "higher_symmetry_gravity_probe_note": "On the default dense Z2xZ2 runner surface N={80,100,120}, 16 seeds, z2z2_quarter=16, connect_radius=5.2, anchor_b=5.0, mass_count=4, the SHA-matched completed runner produces the stated finite mass-window rows, positive-row subfits inside M={2,3,5,8}, and positive but weak fixed-distance sweep rows; it does not establish rowwise/global gravity positivity, Born safety, or a gravity law.",
+              "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
+              "mirror_2d_validation_note": "Bounded exact 2D mirror coexistence pocket for N in {25,40,60,80,100}, npl_half=12, yr=10.0, connect_radius=2.5, 8 seeds, and k-band [3,5,7], with no promoted mass-law or distance-law claim.",
+              "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency.",
+              "mirror_mutual_information_chokepoint_note": "Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed."
+            },
+            "dep_claim_type": {
+              "higher_symmetry_gravity_probe_note": "bounded_theorem",
+              "higher_symmetry_joint_validation_note": "bounded_theorem",
+              "mirror_2d_validation_note": "bounded_theorem",
+              "mirror_chokepoint_note": "bounded_theorem",
+              "mirror_mutual_information_chokepoint_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "higher_symmetry_gravity_probe_note": "retained_bounded",
+              "higher_symmetry_joint_validation_note": "retained_bounded",
+              "mirror_2d_validation_note": "retained_bounded",
+              "mirror_chokepoint_note": "retained_bounded",
+              "mirror_mutual_information_chokepoint_note": "retained_bounded"
+            },
+            "deps": [
+              "higher_symmetry_gravity_probe_note",
+              "higher_symmetry_joint_validation_note",
+              "mirror_2d_validation_note",
+              "mirror_chokepoint_note",
+              "mirror_mutual_information_chokepoint_note"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T020226Z-f19e4291-audited_symmetry_synthes-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The qualitative synthesis mostly follows from retained-bounded cited authorities, but the Z2 x Z2 table and exponent in the source note use the older 32-seed raw log, while the cited authority says the binding registered cache is the 16-seed run with different values and alpha. The note also presents the mirror chokepoint headline more broadly than the narrowed parent authority, whose retained strict-card scope is only N=15 and N=25 with larger-N strict rows failing.",
+          "claim_scope": "Synthesis audit of the bounded symmetry-program summary: exact 2D mirror, exact mirror chokepoint, Z2 x Z2 joint validation, higher-symmetry gravity limitations, structured-growth Born failure, and bounded mirror MI diagnostics as supported by the supplied one-hop notes and runner packet.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T02:02:48.840876+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The strongest audited story is that exact 2D mirror, exact mirror, and Z2 x Z2 provide mature bounded symmetry-protected coexistence lanes while structured mirror growth remains only a geometry result until its propagator is Born-safe.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "scope_too_broad: update the synthesis note to use the registered 16-seed Z2 x Z2 cache values and explicitly narrow exact mirror chokepoint language to the retained N=15/N=25 strict-card pocket plus separately scoped dense boundary/MI authorities.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0,
+            "total_pass": 2
+          },
+          "verdict_rationale": "The primary runner source for the exact 2D mirror lane genuinely computes MI, purity, dTV, Born, k=0, and gravity from the exact 2D mirror generator and linear propagator, and its cached output matches the exact 2D mirror authority. However, the synthesis note is not a first-principles derivation; its load-bearing move is cross-note aggregation. That aggregation does not fully close because at least one load-bearing numerical Z2 x Z2 claim is tied to a historical raw log rather than the registered binding cache, and the exact mirror summary needs to inherit the narrowed retained scope of its cited parent."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 1,
-        "C": 1,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 2
+        "total_pass": 0
       },
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Audited Symmetry Synthesis Note",
       "transitive_descendants": 1,
-      "verdict_rationale": "The primary runner source for the exact 2D mirror lane genuinely computes MI, purity, dTV, Born, k=0, and gravity from the exact 2D mirror generator and linear propagator, and its cached output matches the exact 2D mirror authority. However, the synthesis note is not a first-principles derivation; its load-bearing move is cross-note aggregation. That aggregation does not fully close because at least one load-bearing numerical Z2 x Z2 claim is tied to a historical raw log rather than the registered binding cache, and the exact mirror summary needs to inherit the narrowed retained scope of its cited parent."
+      "verdict_rationale": null
     },
     "axiom_change_proposal_2026-04-10": {
       "audit_date": null,
@@ -38956,8 +38989,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "The connected term expands as \u03a3_{k\u22651}(\u03bb_k/M_x)^d\u27e80_x|A_p|k\u27e9\u27e8k|B_q|0_x\u27e9 and Cauchy-Schwarz bounds it by \u2016A_p\u2016\u2016B_q\u2016exp(-d\u0394_x).",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "fa0582483cd13222dba2bdcf86b0d28f16067f64cf8243b3729029535f44be35",
       "note_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator for the canonical Hamiltonian and proving \u0394_x>0, then re-audit any unconditional promotion.",
@@ -173164,13 +173197,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.392,
+      "load_bearing_score": 10.892,
       "load_bearing_step": "The certificate replays the fixed dense-boundary command, verifies the pre-fit gates for mirror rows N=40,60,80,100, excludes N=120 as a zero-gravity wall, and only then fits log(1 - pur_cl) versus log(N) on the four retained rows.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -252850,8 +252883,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "A nonzero i theta Q_lat term gives a complex Boltzmann phase on a real-positive measure surface, and intersecting det(D+M)>0 with the stipulated scalar-mass class leaves M = mI with the positive sign fixed by convention.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "8678d839eedcf55a36784534e74218ba3032b54a86f9aeb01316249f5fee7ce4",
       "note_path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
       "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained derivations of the real-positive Wilson action-surface selector and scalar-mass-only/positive-orientation boundary, or keep downstream use explicitly conditional on those premises.",
@@ -304211,8 +304244,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2377,
-    "re_audit_required": 3,
+    "preserved_existing": 2380,
+    "re_audit_required": 0,
     "row_count": 2424,
     "seeded_new": 0
   }

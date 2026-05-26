@@ -1,0 +1,30 @@
+loop: audited-symmetry-synthesis-narrow
+date: 2026-05-26
+target_claim_id: audited_symmetry_synthesis_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: scope narrowing and registered-cache replacement
+files_touched:
+  - docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+open_imports: []
+out_of_scope:
+  - dense Z2 x Z2 N=120 promotion
+  - whole-window mirror MI advantage
+  - single-surface mirror-family theorem
+  - asymptotic symmetry law
+pr_status: pending
+next_exact_action: open review PR, verify checks, then continue campaign with the next audited-conditional row
+stop_condition: PR opened and verified, then continue campaign

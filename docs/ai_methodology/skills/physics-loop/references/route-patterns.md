@@ -26,6 +26,8 @@ state.
 Score each route from 0 to 3 on:
 
 - claim-state upgrade potential;
+- trace reachability: exact blocker/import closure, upstream support,
+  route-pruning value, or honest frontier discovery;
 - import retirement potential;
 - ability to close a review blocker;
 - artifactability within the runtime;

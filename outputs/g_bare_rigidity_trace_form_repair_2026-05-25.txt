@@ -1,0 +1,15 @@
+[PASS] dependency graph_first_su3_integration_note is retained (effective_status = retained)
+[PASS] dependency native_gauge_closure_note is retained (effective_status = retained)
+[PASS] canonical Gram is delta_ab / 2 (max deviation = 1.11e-16)
+[PASS] orthogonal basis rotation preserves Gram (max deviation = 2.22e-16)
+[PASS] scalar dilation 0.5 gives lambda^2 Gram (lambda^2 = 0.25)
+[PASS] scalar dilation 0.5 does not preserve canonical Gram (canonical Gram would require lambda^2 = 1)
+[PASS] scalar dilation 1.2 gives lambda^2 Gram (lambda^2 = 1.44)
+[PASS] scalar dilation 1.2 does not preserve canonical Gram (canonical Gram would require lambda^2 = 1)
+[PASS] scalar dilation 2 gives lambda^2 Gram (lambda^2 = 4)
+[PASS] scalar dilation 2 does not preserve canonical Gram (canonical Gram would require lambda^2 = 1)
+[PASS] target row declares both retained structural SU(3) dependencies (deps = ['graph_first_su3_integration_note', 'native_gauge_closure_note'])
+[PASS] target row has no holonomy/g_bare dependency edge (deps = ['graph_first_su3_integration_note', 'native_gauge_closure_note'])
+INFO target audit routing: audit_status = unaudited; effective_status = unaudited
+SUMMARY: PASS = 12, FAIL = 0
+Trace-form rigidity check passed; no retained status is asserted.

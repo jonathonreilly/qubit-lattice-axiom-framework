@@ -54089,17 +54089,17 @@
     "g_bare_rigidity_theorem_note": {
       "claim_id": "g_bare_rigidity_theorem_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "graph_first_su3_integration_note",
         "native_gauge_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0d039e1648730e44d104838535bea63fe9b89e203c5915b5a5281ea7bc3606f1",
+      "note_hash": "3ded539528fe31ae093090f505fc65593c830d40a3a01a56ad1464f6d3284e11",
       "path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
-      "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
-      "title": "Gauge-Normalization Rigidity Theorem"
+      "runner_path": "scripts/frontier_g_bare_rigidity_trace_form_check.py",
+      "title": "Gauge-Normalization Trace-Form Rigidity Lemma"
     },
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",

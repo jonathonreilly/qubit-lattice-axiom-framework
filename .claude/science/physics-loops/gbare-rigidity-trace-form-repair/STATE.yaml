@@ -1,0 +1,18 @@
+claim_id: g_bare_rigidity_theorem_note
+branch: physics-loop/gbare-rigidity-trace-form-repair-20260525
+base: origin/main
+status: ready_for_review
+audit_verdict_applied: false
+repair_type: scope_narrowing
+target_claim_type: bounded_theorem
+post_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  criticality: critical
+  criticality_rank: 1
+  ready: true
+  transitive_descendants: 875
+  deps:
+    - graph_first_su3_integration_note
+    - native_gauge_closure_note

@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1269
-**Ready (all deps already at retained-grade or metadata tiers):** 70
+**Total pending:** 1268
+**Ready (all deps already at retained-grade or metadata tiers):** 77
 
 By criticality:
-- `critical`: 249
+- `critical`: 248
 - `high`: 359
 - `medium`: 334
 - `leaf`: 327
@@ -15,8 +15,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `yt_ew_color_projection_theorem` | no_go | audit_in_progress | critical | 554 | 34.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/yt_ew_kappa_family_nogo_certificate.py` |
-| 2 | `yt_zero_import_chain_note` | positive_theorem | unaudited | critical | 516 | 14.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_zero_import_chain.py` |
+| 1 | `yt_zero_import_chain_note` | positive_theorem | unaudited | critical | 516 | 14.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_zero_import_chain.py` |
+| 2 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | positive_theorem | unaudited | critical | 513 | 12.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 3 | `higgs_mechanism_note` | bounded_theorem | unaudited | critical | 470 | 11.88 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_quartic_mechanism_algebra_repair.py` |
 | 4 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | unaudited | critical | 391 | 10.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_oriented_cycle_selection_structure.py` |
 | 5 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | unaudited | critical | 375 | 16.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` |

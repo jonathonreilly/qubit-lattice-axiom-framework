@@ -54,15 +54,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "hypercharge_identification_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded chain-assembly theorem only: given the retained graph-first selected-axis SU(3) commutant surface, the retained/decorated Sym^2/Anti^2 eigenvalue ratio 1:(-3), the imported LHCM Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with quark/lepton labels only under the stated SM-definition convention, and the audited bounded alpha=1/3 normalization bridge with its admitted GMN/electron-charge readout premises, the LH-doublet surface has Y(Q_L)=+1/3 and Y(L_L)=-1 and the displayed GMN charge table follows. This does not internally derive matter assignment, physical hypercharge, alpha=1/3, GMN Q=T3+Y/2, electroweak matching beyond the LH-doublet surface, anomaly cancellation, or a full SM spectrum.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
         "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
@@ -70,11 +70,11 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 18,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 18.299,
       "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_hypercharge_identification.py",
       "transitive_descendants": 629

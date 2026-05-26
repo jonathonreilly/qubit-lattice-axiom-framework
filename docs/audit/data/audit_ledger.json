@@ -189842,24 +189842,42 @@
       "verdict_rationale": "Within the 'detector-readable packet memory' bounded scope (Tier A positive, Tier B partial, Tier C open), the chain closes by direct measurement. The note correctly disclaims persistent localized objects beyond the centroid-memory regime, matching the bounded interpretation."
     },
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T01:47:21.826213+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 10.298,
+        "runner_hash": "e274474894c25cfd7d707eecbf0d1b8f984f0c4044e33179d1ccdeda1ac02d64",
+        "transitive_descendants": 889
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T014445Z-617d81b9-parity_operator_basis_di-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the 4x4 Dirac-matrix enumeration and the formal derivative-sign bookkeeping, but it does not derive the derivative-side sign character from the actual combined staggered parity P = P_inv * epsilon on lattice derivative representatives. The missing step is a bridge showing that epsilon contributes no extra sign to the dim-5 lattice derivative factors, despite the cited epsilon H0 epsilon = -H0 anticommutation for the hopping operator.",
       "claim_id": "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Audited the formal algebraic P-weight identities for the four enumerated dim-5 SME-style bilinear structures in the odd total spatial-index sector, together with the finite-lattice epsilon H0 epsilon = -H0 check on L=4,6,8.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-26T01:47:21.826213+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -189867,19 +189885,19 @@
         "cpt_exact_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.298,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Sublattice parity epsilon is asserted not to change the derivative-side parity weight, so the combined parity action factorizes into the standard Dirac parity sign times the spatial-derivative sign, giving net P-weight (-1)^N.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "70c5ef098312c15ca3034fc6f55d12b30936e484854a8999b9a4412a2bcbb75b",
       "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation or runner check for how P_inv * epsilon conjugates the actual lattice derivative representatives in the four SME-style bilinears, or explicitly narrow the claim to a formal Dirac-algebra sign convention independent of lattice derivative action.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -190034,18 +190052,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 234,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 237
       },
       "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
       "title": "Parity-Operator Basis: Dimension-5 LV Algebraic P-Weight Identities on the Staggered SME-Style Basis (Odd Total Spatial-Index Parity Sector)",
       "transitive_descendants": 889,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely constructs the staggered H0 matrix and the chiral-basis gamma algebra; it is not a print-only or tuned numerical-match runner. However, the operator-basis parity conclusion relies on a derivative-action premise that is asserted as sign bookkeeping rather than checked on lattice derivative operators. No-Go Discipline N3 flags this as a hidden bridge premise in the bounded theorem, and N6 finds no same-packet convention or ratification path that retires it."
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
       "audit_date": "2026-05-25T14:43:46.051946+00:00",

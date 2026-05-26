@@ -1,27 +1,51 @@
 # Strong CP / θ = 0 Conditional Action-Surface Closure
 
-**Date:** 2026-04-16 (status line narrowed 2026-04-28 per audit-lane verdict)
-**Status:** bounded conditional `θ_eff = 0` closure on the **explicitly θ-free Wilson-plus-staggered scalar-mass surface** that the runner restricts to. The decisive step is action-surface selection (no bare θ slot, real positive mass orientation), not a derived dynamical θ = 0 result. Not a tier-ratifiable strong-CP solution beyond that selected surface.
+**Date:** 2026-04-16 (status line narrowed 2026-04-28 per audit-lane verdict; action-surface firewall clarified 2026-05-26)
+**Status:** `bounded_theorem` source-side boundary: conditional `θ_eff = 0` closure on the **explicitly θ-free Wilson-plus-staggered scalar-mass surface** that the runner restricts to. The decisive step is action-surface selection (no bare θ slot, real positive mass orientation), not a derived dynamical θ = 0 result. Not a retained or tier-ratifiable strong-CP solution beyond that selected surface.
+**Claim type:** bounded_theorem
 **Script:** `scripts/frontier_strong_cp_theta_zero.py`
+
+## 2026-05-26 action-surface firewall
+
+This row is a bounded selected-surface theorem, not an unconditional strong-CP
+solution. Its load-bearing premises are:
+
+1. the Wilson-plus-staggered action is restricted to the explicitly
+   `θ`-free real-positive scalar-mass surface used by the runner,
+2. the positive real quark-mass orientation is part of that selected surface,
+   and
+3. the topological-weight argument is only applied after those two premises
+   have already removed the bare `θ` slot and determinant phase.
+
+The note therefore licenses only the statement
+
+    θ_eff = 0 on the explicitly θ-free Wilson-plus-staggered scalar-mass surface.
+
+It does not derive from the minimal axiom surface that every gauge action on
+the `Z^3` spatial substrate forbids all CP-odd topological discretizations,
+nor does it derive the scalar positive mass orientation from primitives.
+Downstream use must inherit those selected surface premises explicitly.
 
 ## Theorem
 
-**Theorem (retained-framework action-surface `θ_eff = 0` closure).**
-On the retained Wilson-plus-staggered action surface of the `Cl(3)/Z^3`
-framework,
+**Theorem (bounded selected-surface `θ_eff = 0` closure).**
+On the explicitly `θ`-free Wilson-plus-staggered scalar-mass surface tested by
+the runner,
 
     θ_eff = θ_QCD + arg det(M_u M_d) = 0
 
 with no surviving loophole from:
 
 1. fermion determinant / exact fermion-effective-action phase,
-2. admissible axial or chiral basis rephasing inside the retained action class,
+2. admissible axial or chiral basis rephasing inside the selected scalar-mass
+   action class,
 3. strong-sector phase generation when the fermions are integrated out, or
 4. positive-weight topological-sector weighting away from `θ = 0`.
 
-This is a **retained-action-surface** closure theorem. It is not a claim about
-every continuum formulation, every regulator, or axion-model exclusion beyond
-that retained surface.
+This is a **bounded selected-action-surface** closure theorem. It is not a
+claim about every continuum formulation, every regulator, every possible
+CP-odd discretization on the `Z^3` spatial substrate, or axion-model exclusion
+beyond that selected surface.
 
 ## The Standard Strong CP Problem
 
@@ -37,15 +61,15 @@ independent free parameters, generically `O(1)`, while experiment requires
 
 from the neutron electric dipole moment bound.
 
-The question here is narrower and sharper: on the retained
-Wilson-plus-staggered `Cl(3)/Z^3` action surface, does any strong-sector CP
-phase survive at all?
+The question here is narrower and sharper: on the selected
+Wilson-plus-staggered action surface on the `Z^3` spatial substrate, does any
+strong-sector CP phase survive at all?
 
 ## Four Closure Legs
 
 ### Leg A: Fermion phase closure
 
-The staggered Dirac operator `D[U]` on the retained lattice surface is
+The staggered Dirac operator `D[U]` on the selected lattice surface is
 anti-Hermitian:
 
     D† = -D.
@@ -55,11 +79,11 @@ For real mass `m > 0`, the eigenvalues of `D+mI` occur as conjugate pairs
 
     det(D+mI) = Π_k (m^2 + λ_k^2) > 0.
 
-This already removes the usual fermion-determinant phase. The retained package
-now closes the fermion side more strongly than before:
+This already removes the usual fermion-determinant phase on the selected
+surface. The runner checks the fermion side more strongly than before:
 
 1. the `3+1` APBC staggered operator remains anti-Hermitian on sampled
-   retained `SU(3)` configurations,
+   selected-surface `SU(3)` configurations,
 2. `det(D+mI)` remains real positive there,
 3. the exact fermion effective action is Gaussian,
 
@@ -71,14 +95,14 @@ now closes the fermion side more strongly than before:
 
        Im Γ_f = -Σ_k arctan(λ_k / m) = 0.
 
-So the fermion phase is not merely small or sampled away. On the retained
+So the fermion phase is not merely small or sampled away. On the selected
 surface it closes exactly, with the `3+1` APBC spectral audit serving as the
 explicit verification layer.
 
 ### Leg B: Axial / chiral non-generation
 
 The usual continuum loophole is an axial rotation that shifts phase between the
-mass term and `θ_QCD`. On the retained staggered surface, the candidate axial
+mass term and `θ_QCD`. On the selected staggered surface, the candidate axial
 generator is the sublattice operator `ε`, and the admissible unitary transform
 is
 
@@ -98,17 +122,17 @@ Therefore:
 2. any nontrivial continuous axial rotation introduces an imaginary
    pseudoscalar mass component,
 3. that rotated mass operator is no longer a real scalar mass term, so it
-   exits the retained Wilson-plus-staggered action class.
+   exits the selected Wilson-plus-staggered scalar-mass action class.
 
-This closes the chiral/basis loophole on the retained surface. The framework
+This closes the chiral/basis loophole on the selected surface. The framework
 does not have a continuous admissible axial freedom that can move phase between
 the mass term and a strong-sector `θ`.
 
 ### Leg C: Gauge-sector radiative non-generation
 
-The retained action surface is fixed by the accepted package boundary:
+The selected action surface used here is fixed by the bounded package boundary:
 
-1. `Cl(3)` local algebra,
+1. one-qubit operator algebra,
 2. `Z^3` spatial substrate,
 3. finite Grassmann / staggered-Dirac partition,
 4. physical-lattice reading,
@@ -118,9 +142,9 @@ Canonical normalization fixes the Wilson gauge coupling at
 
     β = 6.
 
-So the retained action class is exactly:
+So the selected action class is exactly:
 
-    S_ret[U, ψ, ψ̄] = S_Wilson[U] + ψ̄(D[U] + m)ψ
+    S_sel[U, ψ, ψ̄] = S_Wilson[U] + ψ̄(D[U] + m)ψ
 
 with no bare `θ` slot.
 
@@ -135,22 +159,24 @@ where
 
 Leg A already gives `det(D[U]+m) > 0`, so `ln det(D[U]+m)` is real. The
 Wilson action is real and CP-even. Therefore `S_eff[U]` remains real and
-strong-sector CP-even on the retained action surface.
+strong-sector CP-even on the selected action surface.
 
-The runner now checks this directly on sampled retained `3+1` configurations:
+The runner now checks this directly on sampled selected-surface `3+1`
+configurations:
 
 - `S_Wilson[U]` is real,
 - the exact fermion effective action is real,
-- the full retained effective action is real,
-- linkwise complex conjugation preserves the full retained effective action.
+- the full selected-surface effective action is real,
+- linkwise complex conjugation preserves the full selected-surface effective
+  action.
 
-This is the retained-framework version of radiative non-generation: exact
+This is the selected-surface version of radiative non-generation: exact
 fermion integration does not generate a CP-odd strong-sector phase inside the
-retained Wilson-plus-staggered action class.
+selected Wilson-plus-staggered action class.
 
 ### Leg D: Topological-sector positivity and the `θ = 0` minimum
 
-The topological charge exists on the retained `3+1` surface, and the retained
+The topological charge exists on the selected `3+1` surface, and the selected
 partition function can be written formally as
 
     Z = Σ_Q Z_Q
@@ -159,7 +185,8 @@ with sector weights
 
     Z_Q = ∫_{Q[U]=Q} DU det(D[U] + m) e^{-S_Wilson[U]}.
 
-Leg A and Leg C imply every retained integrand factor is real and positive, so
+Leg A and Leg C imply every selected-surface integrand factor is real and
+positive, so
 
     Z_Q >= 0.
 
@@ -171,7 +198,7 @@ By the triangle inequality,
 
     |Z(θ)| <= Σ_Q Z_Q = Z(0),
 
-so the retained free energy
+so the selected-surface free energy
 
     F(θ) = -ln |Z(θ)|
 
@@ -181,11 +208,11 @@ This is the exact topological closure needed here. It does **not** require a
 closed-form first-principles expression for the detailed lattice measure
 `Z_Q`. Positivity of the sector weights is enough.
 
-The runner mirrors this mechanism with a sampled retained `3+1`
+The runner mirrors this mechanism with a sampled selected-surface `3+1`
 positive-weight `Q`-weighted family rather than a literal computed exact
 sector decomposition:
 
-- sampled retained positive weights are strictly positive,
+- sampled selected-surface positive weights are strictly positive,
 - the sampled `θ`-sum obeys `|Z(θ)| <= Z(0)`,
 - the sampled free energy is minimized at `θ = 0`.
 
@@ -215,127 +242,130 @@ The four legs now close together:
 
 1. no fermion phase survives,
 2. no admissible axial rephasing can move phase into a strong-sector `θ`,
-3. exact fermion integration leaves the retained effective action real and
+3. exact fermion integration leaves the selected-surface effective action real and
    CP-even,
 4. positive topological-sector weights force the free-energy minimum to
    `θ = 0`.
 
-Therefore, on the retained Wilson-plus-staggered action surface,
+Therefore, on the explicitly `θ`-free Wilson-plus-staggered scalar-mass
+surface,
 
     θ_bare = 0,
     arg det(M_u M_d) = 0,
     θ_eff = 0.
 
-This is now a **retained action-surface strong-CP closure package**.
+This is a **bounded selected-surface strong-CP closure package**.
 
 ## What Is Actually Proved
 
 ### Exact theorem-grade statements
 
-1. the retained action class has 5 accepted inputs,
+1. the selected action class has 5 explicit inputs,
 2. canonical normalization fixes the Wilson gauge coupling at `β = 6`,
 3. `ε^2 = I`,
 4. `U_α = exp(i α ε/2)` is unitary,
 5. `U_α D U_α = D`,
 6. `U_α (mI) U_α = m(cos α I + i sin α ε)`,
-7. only `α ∈ πZ` preserves a real mass operator on the retained action class,
+7. only `α ∈ πZ` preserves a real mass operator on the selected action class,
 8. the selected-axis weak `su(2)` closes exactly,
 9. the joint commutant has dimension `10 = gl(3) ⊕ gl(1)`,
 10. the `Z_3` weak-sector source does not commute with the selected-axis
     `SU(2)`,
 11. `Z_3` has only discrete cube-root eigenvalues,
 12. `|det V_CKM| = 1`,
-13. positive retained sector weights imply `|Z(θ)| <= Z(0)`, hence
+13. positive selected-surface sector weights imply `|Z(θ)| <= Z(0)`, hence
     `F(θ)` is minimized at `θ = 0`.
 
 ### Accepted-surface definitions used by the closure
 
-1. no bare `θ` slot appears in the retained Wilson-plus-staggered action
+1. no bare `θ` slot appears in the selected Wilson-plus-staggered action
    class,
-2. therefore `θ_bare = 0` on that retained action surface.
+2. therefore `θ_bare = 0` on that selected action surface.
 
 These are part of the accepted action-surface definition. They are load-bearing
 for the closure claim, but the runner counts them as support/definition items
 rather than standalone theorem passes.
 
-### Retained-surface compute checks
+### Selected-surface compute checks
 
 1. free-field and gauged `Z^3` staggered determinant positivity,
-2. `3+1` APBC determinant positivity on sampled retained `SU(3)` configurations,
+2. `3+1` APBC determinant positivity on sampled selected-surface `SU(3)`
+   configurations,
 3. sampled nontrivial topological charge without determinant phase generation,
-4. `εD + Dε = 0` on the retained `3+1` APBC surface,
+4. `εD + Dε = 0` on the selected `3+1` APBC surface,
 5. sampled exact `±λ` pairing of `iD`,
 6. sampled `Im Γ_f = 0`,
 7. sampled agreement between the spectral phase and the determinant phase,
 8. sampled axial-grid audit matches the exact statement that only `α ∈ πZ`
    preserves a real mass operator,
-9. explicit nontrivial axial rotation exits the retained scalar-mass action
+9. explicit nontrivial axial rotation exits the selected scalar-mass action
    class,
-10. the only admissible retained-surface axial endpoints keep zero determinant
+10. the only admissible selected-surface axial endpoints keep zero determinant
     phase,
 11. explicit positive-mass quark-surface audit gives `arg det(M_u M_d)=0`,
-12. sampled retained effective action is real,
-13. linkwise complex conjugation preserves the full retained effective action,
-14. sampled retained positive-weight `Q`-weighted family obeys
+12. sampled selected-surface effective action is real,
+13. linkwise complex conjugation preserves the full selected-surface effective
+    action,
+14. sampled selected-surface positive-weight `Q`-weighted family obeys
     `|Z(θ)| <= Z(0)`,
-15. the sampled retained free energy is minimized at `θ = 0`.
+15. the sampled selected-surface free energy is minimized at `θ = 0`.
 
 ### Support only
 
 1. Vafa-Witten sign-discipline consistency,
 2. the statement that a detailed closed-form `Z_Q` measure is unnecessary for
-   the retained `θ = 0` minimum theorem.
+   the selected-surface `θ = 0` minimum theorem.
 
 These support items are not counted as theorem-grade closure.
 
 ## What Is Not Claimed
 
 1. **Unrestricted all-formulations closure.**
-   The theorem is only about the retained Wilson-plus-staggered
-   `Cl(3)/Z^3` action surface.
+   The theorem is only about the explicitly selected Wilson-plus-staggered
+   action surface on the `Z^3` spatial substrate.
 
-2. **Closed-form `Z_Q` measure on the physical `S^3` lattice.**
+2. **Closed-form `Z_Q` measure on the selected lattice surface.**
    The closure uses positivity and the `θ`-sum bound, not a closed-form
    instanton measure.
 
-3. **Axion exclusion beyond the retained action surface.**
-   The theorem says the retained action surface already closes strong CP.
-   Broader axion-model exclusion is a separate question.
+3. **Axion exclusion beyond the selected action surface.**
+   The theorem does not exclude axion models or other regulators outside the
+   selected surface.
 
 4. **Observable neutron-EDM matrix elements.**
    The surviving observable lane is the separate CKM neutron-EDM corollary /
    bounded-prediction note: the exact corollary `d_n(QCD) = 0` and
-   CKM-only structure follow from this theorem plus the promoted CKM
-   atlas/axiom package, while
+   CKM-only structure are bounded consequences only when this selected-surface
+   theorem and the relevant CKM package premises are both admitted, while
    the numerical `d_n(CKM)` scale remains EFT-bridged.
 
 ## How This Changes The Paper
 
-The strong-CP lane is no longer merely an exact structural theorem plus a
-fermion-side support stack. It is now a retained-framework full closure package
-on the retained action surface:
+The strong-CP lane has a bounded selected-surface closure package:
 
 - fermion phase closure,
 - axial/chiral non-generation,
-- gauge-sector radiative non-generation inside the retained action class,
+- gauge-sector radiative non-generation inside the selected action class,
 - topological-sector positivity with the `θ = 0` minimum.
 
 The safe paper sentence is:
 
-> On the retained Wilson-plus-staggered `Cl(3)/Z^3` action surface, strong CP
-> closes completely: no bare `θ` appears, no admissible axial rephasing
-> survives inside the retained action class, exact fermion integration does not
-> generate a strong-sector CP phase, and positive topological-sector weights
-> force the free-energy minimum to `θ = 0`.
+> On the explicitly `θ`-free Wilson-plus-staggered scalar-mass surface tested by
+> the runner, no additional strong-sector phase is generated: the determinant
+> phase vanishes, axial rotations preserving the scalar-mass surface do not move
+> phase into `θ`, exact fermion integration stays real, and positive sampled
+> topological weights place the selected-surface free-energy minimum at
+> `θ = 0`.
 
 ## Experimental Predictions
 
-1. **`θ_eff = 0` exactly on the retained action surface.**
-2. **`d_n(QCD) = 0` on that retained surface.**
+1. **`θ_eff = 0` exactly on the selected action surface.**
+2. **`d_n(QCD) = 0` on that selected surface, conditional on the same surface
+   premises.**
    The surviving observable neutron-EDM estimate is the separate CKM-only
    corollary / bounded quantitative lane, currently
    `d_n(CKM) ~ 8 x 10^-33 e cm`.
-3. **Any observed strong-sector CP phase requires structure beyond the retained
+3. **Any observed strong-sector CP phase requires structure beyond the selected
    action surface.**
 
 ## References
@@ -354,7 +384,7 @@ The safe paper sentence is:
 python3 scripts/frontier_strong_cp_theta_zero.py
 # Exit code: 0
 # THEOREM PASS=13  FAIL=0
-# RETAINED-SURFACE COMPUTE PASS=30  FAIL=0
+# SELECTED-SURFACE COMPUTE PASS=30  FAIL=0
 # SUPPORT=4
 ```
 
@@ -385,7 +415,7 @@ descendants):
 
 ## What this note does NOT claim
 
-- A derivation that the Cl(3)/Z^3 action forbids the CP-odd `F̃F`
+- A derivation that the framework action surface forbids the CP-odd `F̃F`
   term.
 - A derivation of the positive real quark-mass orientation
   (`arg det(M_u M_d) = 0`) from the framework primitives.
@@ -395,10 +425,10 @@ descendants):
 
 ## What would close this lane (Path A future work)
 
-Promoting from bounded conditional to retained would require:
+Promoting from bounded conditional to a retained-grade proposal would require:
 
 1. A retained operator-basis / action-surface theorem deriving from
-   Cl(3)/Z^3 primitives and canonical normalization that no
+   framework primitives and canonical normalization that no
    gauge-invariant CP-odd θ term is an admissible slot.
 2. A registered positive real quark-mass orientation /
    `arg det(M_u M_d) = 0` theorem as a dependency.

@@ -131527,7 +131527,6 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
         "graph_first_su3_integration_note",
         "graph_first_selector_derivation_note"
       ],
@@ -131542,7 +131541,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "62aef7cb81e6914140e3cfa7dc4c000bdfd15f9e0361a05ee9afd5d9a889066f",
+      "note_hash": "8f765fdeb725fa953fc57c9aba04e939fff506a76f6a021205feb239ffd891bb",
       "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -161441,7 +161440,7 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-      "load_bearing_score": 27.405,
+      "load_bearing_score": 27.403,
       "load_bearing_step": "Tracelessness on the LH-doublet multiplicities gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -161908,7 +161907,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Left-Handed Charge Matching on the Selected-Axis Surface",
-      "transitive_descendants": 677,
+      "transitive_descendants": 676,
       "verdict_rationale": "The audited load-bearing content is a class-A algebraic corollary of the graph-first selected-axis commutant decomposition: once the 6-state and 2-state blocks are supplied, tracelessness uniquely fixes the scale-free ratio. The runner substantively verifies the graph-first decomposition and related finite-dimensional algebra, with no external comparator checks. The note does not close a new physical identification beyond the upstream graph-first SU(3) parent and explicitly demotes the absolute hypercharge-like pattern to a convention-fixed, non-load-bearing corollary."
     },
     "legacy_exploratory_drivers_note": {
@@ -164841,7 +164840,7 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-      "load_bearing_score": 14.912,
+      "load_bearing_score": 14.909,
       "load_bearing_step": "Using the retained 6-state Sym\u00b2 and 2-state Anti\u00b2 multiplicities, tracelessness gives 6\u00b7\u03b1 + 2\u00b7\u03b2 = 0, hence \u03b2 = -3\u03b1 and the Sym\u00b2:Anti\u00b2 eigenvalue ratio is 1:(-3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -165114,7 +165113,7 @@
       },
       "runner_path": "scripts/frontier_lh_doublet_traceless_abelian_ratio.py",
       "title": "LH-Doublet Traceless Abelian Eigenvalue Ratio (Narrow Theorem)",
-      "transitive_descendants": 680,
+      "transitive_descendants": 679,
       "verdict_rationale": "The load-bearing work is a class A algebraic identity over retained-grade inputs. The primary runner source confirms it checks note scope, hard-coded retained multiplicities, exact Fraction algebra, and retained-grade ledger status, with no external comparator or first-principles operator computation. Because the theorem reduces to a narrow algebraic corollary of the graph-first SU3 integration parent plus standard tracelessness arithmetic, it fits the decoration policy rather than a new independent theorem."
     },
     "lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23": {
@@ -165510,13 +165509,13 @@
         "graph_first_su3_integration_note",
         "left_handed_charge_matching_note"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 4,
       "effective_status": "decoration_under_graph_first_su3_integration_note",
       "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-      "load_bearing_score": 11.806,
+      "load_bearing_score": 11.304,
       "load_bearing_step": "The retained graph-first SU(3) integration gives a residual C^4 = Sym^2 \u2295 Anti^2 = C^3 \u2295 C^1 split with structural SU(3) acting as the 3-dimensional fundamental on Sym^2 and trivially on the 1-dimensional Anti^2 block, so the LH doublet sector is (2,3) \u2295 (2,1).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -165595,7 +165594,7 @@
       },
       "runner_path": "scripts/frontier_lhcm_matter_assignment.py",
       "title": "LHCM Matter Assignment from SU(3) Representation Content",
-      "transitive_descendants": 632,
+      "transitive_descendants": 631,
       "verdict_rationale": "All load-bearing checks are class-A algebra over the already retained graph-first SU(3) selected-axis package: the runner verifies the swap decomposition, standard SU(3) fundamental matrices on the 3-block, triviality on the 1-block, and the tensor dimensions. The runner does not import external comparators or tuned numerical inputs. Because the claim reduces to a direct algebraic corollary of the graph-first SU(3) integration parent plus standard representation terminology, it is a decoration rather than an independent positive theorem."
     },
     "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17": {
@@ -306012,8 +306011,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2381,
-    "re_audit_required": 1,
+    "preserved_existing": 2382,
+    "re_audit_required": 0,
     "row_count": 2426,
     "seeded_new": 0
   }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 484 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1247 |
+| unaudited | 1246 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,21 +54,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 775 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1476 |
+| `unaudited` | 1475 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1065 |
 | `decoration` | 47 |
 | `meta` | 234 |
-| `no_go` | 255 |
+| `no_go` | 256 |
 | `open_gate` | 110 |
-| `positive_theorem` | 717 |
+| `positive_theorem` | 716 |
 
 | criticality | count |
 |---|---:|
@@ -948,6 +948,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -13579,6 +13580,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Under scalar CMT factorization G_full = u_0 * G_V, both Fierz channels scale uniformly: S(G_full) = u_0^2 S(G_V) and C(G_full) = u_0^2 C(G_V).  _(class `A`)_
 - **chain closes:** True — The scoped no-go follows algebraically from the supplied Fierz definitions of S and C: both are quadratic in G, so multiplying G by u_0 multiplies both by u_0^2. The missing EW Wilson-line current construction remains open only for the broader matching rule M, not for this narrowed obstruction.
 - **rationale:** The load-bearing step is a direct algebraic consequence of the channel definitions in the cited authority, whose effective status is retained-grade decoration. The runner source genuinely computes the relevant identity in Test 5 rather than hard-coding the contested conclusion. No-Go Discipline does not defeat the narrowed claim: possible escape routes through current construction, renormalization convention, connected-subtraction framing, V-fluctuation dynamics, or non-scalar improvement would address the broader M residual, not the tested scalar CMT factorization statement.
+- **auditor confidence:** high
+
+### `yt_ew_matching_rule_m_note_2026-05-02`
+
+- **Note:** [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Stretch-attempt/no-go surface for exact EW matching rule M: the restricted packet supports F_adj = 8/9 and a kappa/selector residual, but does not close an exact physical R_conn = 8/9 or prove matching rule M non-exact at every finite N_c.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-yt-ew-matching-rule-m-2026-05-26-fresh`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The exact matching coefficient (N_c^2 - 1)/N_c^2 for the physical EW current renormalization requires fixing the disconnected coefficient at non-perturbative level.  _(class `B`)_
+- **chain closes:** False — The supplied dependencies close the algebraic channel fraction and the kappa-family no-selector boundary, but they do not prove the source note's stronger finite-Nc non-exactness claim. The note's obstruction list and standard-QFT premises are not enough, under no-go discipline, to turn absence of a retained selector into an exhaustive no-go.
+- **rationale:** Issue: The queue hint positive_theorem is incorrect; this is a no-go/obstruction attempt, but the note's obstruction list does not exhaust the exact matching-rule routes under N1-N8. Why this blocks: N1 names only three routes, N2 does not establish independence of O1/O3, N3 leaves standard-QFT/OZI/glueball premises as unsupplied hidden walls, N5/N7 show that 'NOT exact at finite N_c' is broader than 'not derived by this packet', and N8 cannot be completed from the restricted inputs. Repair target: Narrow the source to the current-packet no-selector boundary already supported by the kappa-family dependency, or add a retained selector/no-go proof with a full N1-N8 checklist, at least five distinct route closures, collapsed wall independence, and explicit authority for the non-perturbative disconnected-current/OZI claims. Claim boundary until fixed: downstream rows may cite only the algebraic F_adj = 8/9 support and the current-packet kappa/selector residual; they may not cite an exact physical R_conn = 8/9 derivation or an exhaustive finite-Nc no-go.
 - **auditor confidence:** high
 
 ### `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25`

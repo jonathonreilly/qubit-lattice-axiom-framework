@@ -1,0 +1,127 @@
+# STATE.yaml — Native-Only Dynamics Lane (research)
+# Resume surface for /physics-loop --mode resume.
+
+loop_slug: dynamics-lane-native-axioms-only-20260526
+type: research_lane  # not a main-landing campaign
+goal: |
+  Build the FULL dynamics-lane program natively from A1+A2 + retained inventory ONLY.
+  No D1-D3, no FRG, no Eichhorn-Held, no Wetterich, no mode-locking, no KH, no
+  "dynamics lane" as a registered category, no M-labels. See where 12h of native
+  work gets us. Side project; not for main landing as a lane wrapper; individual
+  clean import-free science pieces may spawn small PRs along the way.
+
+target_status: research_artifact_accumulation_then_synthesis
+mode: campaign  # 12h research campaign
+runtime_budget: 12h
+checkpoint_interval: 30m
+deep_block_interval: 90m
+parent_lane: null  # standalone research lane, not a child of dynamics-lane-completion (which was paused due to import rejection)
+
+cycles_completed: 1  # turn-5 cycle: foundation laid (charter + dependency map + chain5 verification)
+active_block: null
+last_completed_block: lane_foundation_2026-05-26
+files_touched:
+  - .claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CHARTER.md
+  - .claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/DEPENDENCY_MAP.md
+  - .claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CHAIN5_VERIFICATION_2026-05-26.md
+  - .claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/STATE.yaml
+  - .claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/HANDOFF.md  # to be written
+
+import_inventory:
+  forbidden:
+    - D1 (dynamical flavon with kinetic + RG flow)
+    - D2 (IR fixed point fixes couplings)
+    - D3 (phase-locking)
+    - Eichhorn-Held asymptotic-safety literature
+    - Wetterich-equation / FRG machinery
+    - Mode-locking / Arnold-tongue
+    - KH (kinematic-reformulation hypothesis)
+    - "Dynamics lane" as a registered lane category
+    - M0-M4 milestone labels
+    - "Positive relocation" theorem label
+    - "Kinematic vs dynamical residual" reframe vocabulary
+    - Wilson plaquette action as derivation input (it is itself an admitted import)
+  permitted:
+    - A1: M_2(C) = Cl(3,0) per site
+    - A2: Z^3 locality
+    - Retained inventory on origin/main (each citation must point to actual main note)
+    - Standard mathematics: L-W theorem, group representation theory, character algebra
+  verified_retained_chain5:
+    - decoherence_action_independence_note (retained_bounded)
+    - decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17 (retained_bounded)
+    - koide_a1_physical_bridge_attempt_2026-04-22 (retained_no_go)
+    - koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24 (retained_no_go)
+  unverified_chain5_pending:
+    - corrected_propagator_1_L_p
+    - brannen_ch_three_gap_closure_2026-04-22
+    - lattice_growth_with_decoherence
+    - mirror_symmetry_Z2_DAGs
+    - anomaly_forces_time_theorem (currently unaudited on main)
+    - koide_a1_brannen_plancherel_identity_support (currently unaudited on main)
+
+salvageable_from_m_work:
+  - Chain 1 (kinematic shape via Brannen circulant) — fully retained
+  - Chain 2 (Bernoulli identities) — native + retained-bounded
+  - Chain 3 (PDG comparator only)
+  - Chain 4a (V(3)=2/9 algebraic identity)
+  - Chain 4c (pi-bridge primitive P as named obstruction; retained no-gos)
+demoted_from_m_work:
+  - Chain 4b (3*delta = Q bridge claim from PR #1940)
+  - Chain 4d (FRG attempt with D1-D3)
+
+next_block_candidate: direction_alpha_native_dynamics_test_constrained
+next_exact_action: |
+  RESUME: launch Direction alpha (native dynamics test of delta=V(3)) constrained
+  to the VERIFIED retained chain5 subset.
+
+  Specifically:
+    1. Start from A1+A2 + the kinematic surface (Brannen circulant retained).
+    2. Use ONLY the decoherence_action_independence + decoherence_zero_field_phase_equality
+       results as the native dynamics input. (Other Chain 5 pieces remain unverified.)
+    3. Test whether the decoherence-dynamics constraint determines delta as a function
+       of the C3 + Cl(3) substrate, or leaves it free.
+    4. If decoherence dynamics is too restricted to constrain delta, explicitly
+       state the gap; do NOT import additional dynamics machinery.
+    5. Output: a research-grade analysis note + (if a clean algebraic piece falls
+       out) a candidate small-PR.
+
+  Alternative if Direction alpha hits a wall in this cycle:
+    - Direction gamma (native isolation of the pi-bridge gap): characterize the
+      EXACT structural input that would close the pi-bridge primitive P, using
+      only the retained no-go inventory + standard math (L-W). This is a
+      sharpened-residual statement, not a closure attempt.
+
+  Branch: stay on research/dynamics-lane-native-axioms-only-20260526.
+  No PR for the lane wrapper. Small PRs (off origin/main, separately) only if a
+  clean import-free piece emerges.
+
+opportunity_queue:
+  - direction_alpha_native_dynamics_test_constrained (decoherence-only attack on delta)
+  - direction_gamma_native_isolation_of_pi_bridge_gap
+  - direction_beta_native_kinematic_re_expression (K1-K4 substrates, no KH framing)
+  - resolve_unverified_chain5_pieces (locate corrected-propagator, Brannen-CH, etc. on main)
+
+pr_status:
+  PR_1940: CLOSED (rejected; M-work)
+  PR_1942: CLOSED (rejected; M-work)
+  PR_1946: CLOSED (rejected; M-work)
+  research/dynamics-lane-import-inventory-2026-05-26: BRANCH ONLY, NO PR (lane proposal artifact, on hold pending user response to that document if ever)
+  research/dynamics-lane-native-axioms-only-20260526: BRANCH (this lane); NO lane-wrapper PR
+
+resume_command: "/physics-loop --mode resume --loop dynamics-lane-native-axioms-only-20260526"
+
+stop_condition_for_this_session: |
+  Foundation cycle complete (charter + dependency map + chain5 verification).
+  Calibration finding: native dynamics surface on main is narrower than memory
+  suggested. Decoherence-bounded results are solid; the broader native dynamics
+  chain (Brannen-CH, corrected-propagator, anomaly-forces-time) is unverified or
+  not yet retained.
+
+  Next resume cycle attempts Direction alpha constrained to the verified surface.
+
+last_checkpoint: 2026-05-26  # end of campaign turn 5
+last_checkpoint_note: |
+  Foundation laid: charter, dependency map, chain5 verification.
+  All three artifacts under .claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/.
+  Three explicit non-claims: no main landing, no source PRs without import-free
+  certification, no further dependency on M-work content.

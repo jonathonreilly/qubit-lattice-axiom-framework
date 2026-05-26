@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/koide_q_two_thirds_frobenius_extremum_runner.py
+runner_sha256: 100dda444c3728e83950f4947a9e8ef3facd102b9fa496afb5ff25af5889c7bf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+[PASS] at equal-weight Frobenius extremum, Q_alg(lambda) = 2/3 (a^2 = 2; |b|^2 = 1; Q = 2/3)
+[PASS] at equal-weight Frobenius extremum, Q_alg(lambda) = 2/3 (a^2 = 4; |b|^2 = 2; Q = 2/3)
+[PASS] at equal-weight Frobenius extremum, Q_alg(lambda) = 2/3 (a^2 = 10; |b|^2 = 5; Q = 2/3)
+[PASS] at equal-weight Frobenius extremum, Q_alg(lambda) = 2/3 (a^2 = 9/2; |b|^2 = 9/4; Q = 2/3)
+[PASS] non-extremal control does not masquerade as the 2/3 bridge (a^2 = 1; |b|^2 = 1; Q = 1)
+[PASS] non-extremal control does not masquerade as the 2/3 bridge (a^2 = 4; |b|^2 = 1; Q = 1/2)
+[PASS] non-extremal control does not masquerade as the 2/3 bridge (a^2 = 1; |b|^2 = 2; Q = 5/3)
+[PASS] positive chamber exists at delta = 0 (lambda_min = (sqrt(2) - 1) |b| > 0)
+[PASS] not every phase lies in the positive chamber (lambda_min = (sqrt(2) - 2) |b| < 0)
+INFO boundary: the global claim is the signed algebraic ratio; positive-vector Koide interpretation requires a separate positive spectrum/readout bridge.
+SUMMARY: PASS = 9, FAIL = 0
+Koide Frobenius-extremum algebraic bridge passed.
+
+----- stderr -----
+

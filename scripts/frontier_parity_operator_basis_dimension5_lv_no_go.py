@@ -1,100 +1,26 @@
 #!/usr/bin/env python3
-"""
-Parity-Operator Basis: Dimension-5 LV Operator Bounded Theorem (runner)
-========================================================================
+"""Verify the repaired formal parity-operator basis sign identities.
 
-Companion runner for
-  docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md
-
-This runner verifies the algebraic content of the bounded theorem on the
-staggered Cl(3)/Z^3 framework, narrowed to operators with odd total
-spatial-index parity:
-
-  1. The free staggered Hamiltonian H_0 satisfies the sublattice-parity
-     anti-symmetry  epsilon H_0 epsilon + H_0 = 0  to machine precision
-     on L = 4, 6, 8.
-
-  2. For each of the four named dim-5 SME-style fermion-bilinear Dirac
-     structures, an EXHAUSTIVE enumeration over all allowed index
-     assignments (mu, nu, rho in {0,1,2,3}) is performed:
-       (i) If the total spatial-index parity is odd, the operator
-           carries P-weight = -1 (i.e. P O P^{-1} = -O).
-       (ii) If even (the residual mixed/time-only cases excluded from
-            the narrowed theorem scope), the operator carries
-            P-weight = +1 (i.e. P O P^{-1} = +O).
-     In both cases the full parity action  P_Dirac M P_Dirac^{-1}
-     combined with the derivative-side sign character is applied
-     directly to the operator on every index assignment; no
-     representative-only shortcut and no "P_full = -full_op" hardcode.
-
-  3. The P-symmetric projection  (O + P O P^{-1}) / 2  vanishes
-     exactly when the total spatial-index parity is odd; symmetrically,
-     the P-antisymmetric projection vanishes when even.
-
-The runner counts ALL allowed index assignments per Dirac structure;
-the PASS count therefore reports the number of index combinations
-checked, not a representative count.
-
-Status: PASS=N FAIL=0 indicates all algebraic identities verified.
+The repaired theorem surface is intentionally formal: it checks the
+4x4 Dirac-algebra parity action together with an abstract derivative sign
+character. It does not construct lattice derivative representatives, does not
+admit the missing lattice-action bridge, and does not claim a physical
+dimension-5 LV coefficient no-go.
 """
 
 from __future__ import annotations
 
 import itertools
+import json
 import sys
+from pathlib import Path
 
 import numpy as np
 
 
-# ---------------------------------------------------------------------------
-# Staggered framework primitives
-# ---------------------------------------------------------------------------
-
-def lattice_sites(L: int) -> np.ndarray:
-    """All sites of an L^3 periodic lattice as integer triples."""
-    coords = np.indices((L, L, L)).reshape(3, -1).T
-    return coords  # shape (L^3, 3)
-
-
-def staggered_epsilon(L: int) -> np.ndarray:
-    """Sublattice parity epsilon(x) = (-1)^{x1+x2+x3} on Z^3."""
-    coords = lattice_sites(L)
-    parities = (-1) ** np.sum(coords, axis=1)
-    return parities.astype(np.float64)
-
-
-def staggered_hopping_hamiltonian(L: int) -> np.ndarray:
-    """Free staggered fermion Hamiltonian on L^3 periodic lattice with
-    standard staggered phases eta_mu(x) (a single-component formulation
-    sufficient for the parity check on H_0).
-
-    H_{xy} = (1/2) * sum_mu eta_mu(x) * [delta_{y, x+e_mu} - delta_{y, x-e_mu}]
-    """
-    coords = lattice_sites(L)
-    n_sites = coords.shape[0]
-    # Map x -> linear index
-    site_index = {tuple(c): i for i, c in enumerate(coords)}
-
-    H = np.zeros((n_sites, n_sites), dtype=np.float64)
-
-    for i, x in enumerate(coords):
-        for mu in range(3):
-            # Standard staggered phase: eta_1 = 1, eta_2 = (-1)^{x1},
-            # eta_3 = (-1)^{x1 + x2}.
-            if mu == 0:
-                eta = 1.0
-            elif mu == 1:
-                eta = (-1.0) ** x[0]
-            else:
-                eta = (-1.0) ** (x[0] + x[1])
-
-            for sign in (+1, -1):
-                y = x.copy()
-                y[mu] = (y[mu] + sign) % L
-                j = site_index[tuple(y)]
-                H[i, j] += sign * 0.5 * eta
-
-    return H
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md"
+CLAIM_ID = "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02"
 
 
 # ---------------------------------------------------------------------------
@@ -166,20 +92,6 @@ def derivative_parity_sign(deriv_indices) -> int:
 def spatial_index_count(*indices) -> int:
     """Count spatial indices (1,2,3) in a tuple of mu-labels."""
     return sum(1 for mu in indices if mu != 0)
-
-
-# ---------------------------------------------------------------------------
-# Test 1: epsilon H_0 epsilon = -H_0 on staggered free Hamiltonian
-# ---------------------------------------------------------------------------
-
-def test_sublattice_parity_anti_commutes_with_H0(L: int):
-    H = staggered_hopping_hamiltonian(L)
-    eps = staggered_epsilon(L)
-    Eps = np.diag(eps)
-    lhs = Eps @ H @ Eps
-    rhs = -H
-    norm_diff = np.linalg.norm(lhs - rhs) / max(np.linalg.norm(H), 1e-12)
-    return norm_diff
 
 
 # ---------------------------------------------------------------------------
@@ -362,21 +274,49 @@ def main() -> int:
     fail_count = 0
 
     print("=" * 72)
-    print("Parity-Operator Basis: Dim-5 LV Bounded-Theorem Runner")
-    print("(narrowed: odd-total-spatial-index-parity sector)")
+    print("Parity-Operator Basis: Formal Dim-5 LV Sign-Identity Runner")
+    print("(formal derivative sign character; no lattice-action no-go)")
     print("=" * 72)
 
-    # ---- Test 1: lattice identity epsilon H_0 epsilon + H_0 = 0 ----
-    print("\n[1] epsilon H_0 epsilon + H_0 = 0  on L = 4, 6, 8")
-    for L in (4, 6, 8):
-        err = test_sublattice_parity_anti_commutes_with_H0(L)
-        ok = err < 1e-12
-        status = "PASS" if ok else "FAIL"
+    def check(label: str, ok: bool, detail: str = "") -> None:
+        nonlocal pass_count, fail_count
         if ok:
             pass_count += 1
         else:
             fail_count += 1
-        print(f"    L = {L}:  || epsilon H epsilon + H || / || H || = {err:.3e}   [{status}]")
+        status = "PASS" if ok else "FAIL"
+        suffix = f" ({detail})" if detail else ""
+        print(f"    [{status}] {label}{suffix}")
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+
+    print("\n[1] Source-note scope firewall")
+    required = [
+        "Formal Dimension-5 LV P-Weight Identities",
+        "formal derivative sign character",
+        "does not construct or certify lattice derivative representatives",
+        "not a lattice-action coefficient no-go",
+        "no load-bearing dependency edge",
+    ]
+    for needle in required:
+        check(f"contains {needle!r}", needle in note_text)
+
+    forbidden = [
+        "[CPT_EXACT_NOTE](CPT_EXACT_NOTE.md)",
+        "staggered Cl(3)/Z^3 framework with sublattice",
+        "combined staggered parity P = P_inv * epsilon",
+        "epsilon H_0 epsilon = -H_0",
+        "lattice-action coefficient no-go corollary stating",
+    ]
+    for needle in forbidden:
+        check(f"avoids unrepaired lattice/no-go scope {needle!r}", needle not in note_text)
+
+    ledger = json.loads((ROOT / "docs" / "audit" / "data" / "audit_ledger.json").read_text())
+    row = ledger["rows"].get(CLAIM_ID)
+    check(f"{CLAIM_ID} seeded", row is not None)
+    if row is not None:
+        check("claim type remains bounded_theorem", row.get("claim_type") == "bounded_theorem", str(row.get("claim_type")))
+        check("repaired row has no load-bearing markdown deps", set(row.get("deps", [])) == set(), str(row.get("deps", [])))
 
     # ---- Test 2: exhaustive P-weight per index assignment ----
     print("\n[2] Exhaustive P-weight per allowed index assignment")

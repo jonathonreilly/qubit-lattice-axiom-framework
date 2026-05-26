@@ -1,0 +1,32 @@
+========================================================================
+Parity-Operator Basis: Formal Dim-5 LV Sign-Identity Runner
+(formal derivative sign character; no lattice-action no-go)
+========================================================================
+
+[1] Source-note scope firewall
+    [PASS] contains 'Formal Dimension-5 LV P-Weight Identities'
+    [PASS] contains 'formal derivative sign character'
+    [PASS] contains 'does not construct or certify lattice derivative representatives'
+    [PASS] contains 'not a lattice-action coefficient no-go'
+    [PASS] contains 'no load-bearing dependency edge'
+    [PASS] avoids unrepaired lattice/no-go scope '[CPT_EXACT_NOTE](CPT_EXACT_NOTE.md)'
+    [PASS] avoids unrepaired lattice/no-go scope 'staggered Cl(3)/Z^3 framework with sublattice'
+    [PASS] avoids unrepaired lattice/no-go scope 'combined staggered parity P = P_inv * epsilon'
+    [PASS] avoids unrepaired lattice/no-go scope 'epsilon H_0 epsilon = -H_0'
+    [PASS] avoids unrepaired lattice/no-go scope 'lattice-action coefficient no-go corollary stating'
+    [PASS] parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02 seeded
+    [PASS] claim type remains bounded_theorem (bounded_theorem)
+    [PASS] repaired row has no load-bearing markdown deps ([])
+
+[2] Exhaustive P-weight per allowed index assignment
+    (odd spatial-index parity -> P-weight = -1;
+     even spatial-index parity -> P-weight = +1)
+    enumeration totals -- class (a): 63, (b): 15, (c): 15, (d): 24
+    odd-spatial-parity (theorem sector): 63 ops; even-spatial-parity (excluded sector): 54 ops
+
+[3] Exhaustive P-symmetric projection per allowed index assignment
+    (P_sym(O) = (O + P O P^{-1})/2; vanishes iff odd-spatial-parity)
+
+========================================================================
+PASS=247  FAIL=0
+========================================================================

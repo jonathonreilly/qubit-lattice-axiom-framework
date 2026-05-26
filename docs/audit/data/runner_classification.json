@@ -16357,15 +16357,15 @@
       "runner": "scripts/packet_memory.py"
     },
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": {
-      "assert_count": 2,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 4,
+        "B": 2,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "B",
       "runner": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py"
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
@@ -43130,18 +43130,18 @@
       "exists": true
     },
     "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py": {
-      "assert_count": 2,
+      "assert_count": 1,
       "claims": [
         "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02"
       ],
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 4,
+        "B": 2,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py": {
@@ -55199,8 +55199,8 @@
     "decoration_candidates": 315,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
-      "C": 747,
+      "B": 274,
+      "C": 746,
       "D": 299,
       "none": 439
     },

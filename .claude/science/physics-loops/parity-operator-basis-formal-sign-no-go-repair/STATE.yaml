@@ -1,0 +1,40 @@
+loop_slug: parity-operator-basis-formal-sign-no-go-repair
+date: 2026-05-25
+mode: campaign_block
+base_ref: origin/main
+base_commit: c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+branch: physics-loop/parity-operator-basis-formal-sign-no-go-repair-20260525
+target_claim:
+  claim_id: parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02
+  note_path: docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md
+  prior_audit_status: audited_conditional
+  prior_effective_status: audited_conditional
+  criticality: critical
+  transitive_descendants: 889
+repair_summary:
+  old_blocker: unproved lattice derivative representative conjugation by P_inv * epsilon
+  new_scope: formal Dirac-algebra P-weight identities with abstract derivative sign character
+  runner: scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py
+  no_new_axioms: true
+  audit_verdict_applied: false
+status_firewall:
+  actual_current_surface_status: bounded-support
+  conditional_surface_status: null
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: physical lattice-action coefficient no-go remains out of theorem scope
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+pipeline_after_repair:
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  audit_queue_position: 1
+  ready: true
+verification:
+  runner: outputs/parity_operator_basis_formal_sign_repair_2026-05-25.txt
+  runner_result: "PASS=247 FAIL=0"
+  pipeline: docs/audit/scripts/run_pipeline.sh
+  pipeline_result: completed with only pre-existing Maradudin warning
+next_action: open review PR; independent auditor decides effective status

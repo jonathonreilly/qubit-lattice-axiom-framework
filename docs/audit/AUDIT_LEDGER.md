@@ -580,7 +580,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
+| `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8351,13 +8351,13 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`PACKET_MEMORY_NOTE.md`](../../docs/PACKET_MEMORY_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Tier A (memory survives propagation to detector): at NL=30, packets at z-offsets 0,1,2,3,8 give detector-overlap (0.99, 0.83, 0.42, 0.18, 0.12); packets separated by >=2 lattice units are distinguishable; gravitational deflection varies 3.5x across packets (origin +0.0296 vs z=+3 +0.0085). Tier B (shape convergence): partial; centroid survives strongly but width converges toward propagator natural mode (~3.0) with 17% residual at NL=30. Tier C (inertial response): explicitly NOT TESTED. The note's bounded scope is 'detector-readable packet memory', NOT 'persistent localized objects'.
+- **claim_scope:** Finite fixed-harness Tier A only: scripts/packet_memory.py at the listed constants/seed supports detector-readable packet memory at finite NL, especially NL=30, and packet-dependent centroid response to the script's imposed field. This excludes persistent localized objects, asymptotic survival, physical-gravity closure, inertial response, and treating Tier B shape convergence as retained.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `claude-opus-4.7-1m:open-gates-2026-05-02-c1-05`  (claude-opus; independence=weak)
-- **load-bearing step:** At detector NL=30, overlap(origin, z=2) = 0.42 (distinguishable), and gravitational deflections range from +0.0085 to +0.0296 across packets z in {-2,0,1,2,3}, demonstrating that packet identity carries physics; width converges toward propagator natural mode with 17% residual.  _(class `C`)_
-- **chain closes:** True — The bounded Tier A claim closes by direct numerical measurement on packet_memory.py: overlap matrix, NL-scaling of overlap, and per-packet gravitational deflection. Tier B is honestly reported as partial; Tier C is honestly reported as open. No tier is over-promoted.
-- **rationale:** Within the 'detector-readable packet memory' bounded scope (Tier A positive, Tier B partial, Tier C open), the chain closes by direct measurement. The note correctly disclaims persistent localized objects beyond the centroid-memory regime, matching the bounded interpretation.
+- **auditor:** `codex-gpt-5.5-packet-memory-fresh-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The model supports detector-readable packet memory but not persistent localized objects; packets separated by >= 2 lattice units are distinguishable at the detector and packet identity carries physics through different imposed-field deflections.  _(class `C`)_
+- **chain closes:** True — For the bounded finite-harness scope, the chain closes: the runner builds the lattice/adjacency, propagates amplitudes from different source offsets, computes normalized detector overlaps, and computes centroid-shift differences under its imposed field; the completed log matches the note's numbers. The closure is not a theorem of real gravity, asymptotic memory, inertial response, or persistent localized objects.
+- **rationale:** The bounded Tier A result is supported by the finite runner and completed log: detector overlap falls for offset packets at NL=30, and the imposed-field centroid shift varies by packet identity. The script does not hard-code the reported overlaps or deflections; it computes them from fixed harness parameters and source offsets. The clean verdict applies only to detector-readable packet memory and packet-dependent response inside this fixed harness. Broader readings of gravitational response as physical gravity, plus persistent localized objects, asymptotic survival, inertial response, and Tier B shape closure, must be excluded from the audited claim.
 - **auditor confidence:** high
 
 ### `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23`

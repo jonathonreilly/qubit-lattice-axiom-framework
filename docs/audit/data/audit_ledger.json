@@ -191217,27 +191217,33 @@
       "verdict_rationale": null
     },
     "packet_memory_note": {
-      "audit_date": "2026-05-02T18:00:00+00:00",
+      "audit_date": "2026-05-26T16:06:08.359261+00:00",
       "audit_state_snapshot": {
         "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
         "load_bearing_score": 0.0,
+        "runner_hash": "206a2ddbdb4288be863a61016962f3914f1f7f49595262ed1f3b7e2389391a61",
         "transitive_descendants": 0
       },
       "audit_status": "audited_clean",
-      "auditor": "claude-opus-4.7-1m:open-gates-2026-05-02-c1-05",
+      "auditor": "codex-gpt-5.5-packet-memory-fresh-2026-05-26",
       "auditor_confidence": "high",
-      "auditor_family": "claude-opus",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The bounded Tier A claim closes by direct numerical measurement on packet_memory.py: overlap matrix, NL-scaling of overlap, and per-packet gravitational deflection. Tier B is honestly reported as partial; Tier C is honestly reported as open. No tier is over-promoted.",
+      "chain_closure_explanation": "For the bounded finite-harness scope, the chain closes: the runner builds the lattice/adjacency, propagates amplitudes from different source offsets, computes normalized detector overlaps, and computes centroid-shift differences under its imposed field; the completed log matches the note's numbers. The closure is not a theorem of real gravity, asymptotic memory, inertial response, or persistent localized objects.",
       "claim_id": "packet_memory_note",
-      "claim_scope": "Tier A (memory survives propagation to detector): at NL=30, packets at z-offsets 0,1,2,3,8 give detector-overlap (0.99, 0.83, 0.42, 0.18, 0.12); packets separated by >=2 lattice units are distinguishable; gravitational deflection varies 3.5x across packets (origin +0.0296 vs z=+3 +0.0085). Tier B (shape convergence): partial; centroid survives strongly but width converges toward propagator natural mode (~3.0) with 17% residual at NL=30. Tier C (inertial response): explicitly NOT TESTED. The note's bounded scope is 'detector-readable packet memory', NOT 'persistent localized objects'.",
+      "claim_scope": "Finite fixed-harness Tier A only: scripts/packet_memory.py at the listed constants/seed supports detector-readable packet memory at finite NL, especially NL=30, and packet-dependent centroid response to the script's imposed field. This excludes persistent localized objects, asymptotic survival, physical-gravity closure, inertial response, and treating Tier B shape convergence as retained.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-02T18:00:00+00:00",
+      "claim_type_last_reviewed": "2026-05-26T16:06:08.359261+00:00",
       "claim_type_provenance": "audited",
       "criticality": "leaf",
       "decoration_parent_claim_id": null,
@@ -191246,16 +191252,16 @@
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "weak",
+      "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "At detector NL=30, overlap(origin, z=2) = 0.42 (distinguishable), and gravitational deflections range from +0.0085 to +0.0296 across packets z in {-2,0,1,2,3}, demonstrating that packet identity carries physics; width converges toward propagator natural mode with 17% residual.",
+      "load_bearing_step": "The model supports detector-readable packet memory but not persistent localized objects; packets separated by >= 2 lattice units are distinguishable at the detector and packet identity carries physics through different imposed-field deflections.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "cc3aee2a54f8bb8a466601a7df94793a7c63f687dc567b570eff79f0f136e7b8",
       "note_path": "docs/PACKET_MEMORY_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-audit if downstream cites this as proof of persistent localized DM-like objects or as Tier C (inertial response) closure; both exceed the bounded scope.",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the bounded scope: do not promote the imposed-field centroid response to physical-gravity or inertial-response closure without a separate bridge theorem and runner.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -191285,18 +191291,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 4,
+        "C": 3,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 3
       },
       "runner_path": "scripts/packet_memory.py",
       "title": "Packet Memory: Initial Conditions Survive to Detector",
       "transitive_descendants": 0,
-      "verdict_rationale": "Within the 'detector-readable packet memory' bounded scope (Tier A positive, Tier B partial, Tier C open), the chain closes by direct measurement. The note correctly disclaims persistent localized objects beyond the centroid-memory regime, matching the bounded interpretation."
+      "verdict_rationale": "The bounded Tier A result is supported by the finite runner and completed log: detector overlap falls for offset packets at NL=30, and the imposed-field centroid shift varies by packet identity. The script does not hard-code the reported overlaps or deflections; it computes them from fixed harness parameters and source offsets. The clean verdict applies only to detector-readable packet memory and packet-dependent response inside this fixed harness. Broader readings of gravitational response as physical gravity, plus persistent localized objects, asymptotic survival, inertial response, and Tier B shape closure, must be excluded from the audited claim."
     },
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": {
       "audit_date": null,

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 485 |
+| **retained_bounded** | 486 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1244 |
+| unaudited | 1243 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 777 |
+| `audited_clean` | 778 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1473 |
+| `unaudited` | 1472 |
 
 | claim_type | count |
 |---|---:|
@@ -466,6 +466,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -6713,6 +6714,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal positive two-slot constrained log-volume extremum under rho_plus^2 + rho_perp^2 = E_tot, with kappa defined as 2*rho_plus^2/rho_perp^2 and evaluated only at that extremum.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-koide-mru-reduced-log-volume-fresh-audit-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Stationarity gives 1/rho_plus = 2 lambda rho_plus and 1/rho_perp = 2 lambda rho_perp; since both variables are positive this forces rho_plus^2 = rho_perp^2, so the constraint gives both equal to E_tot/2 and the defined kappa evaluates to 2.  _(class `A`)_
+- **chain closes:** True — The Lagrange equations force rho_plus^2 = rho_perp^2 on positive coordinates; the constraint then fixes both to E_tot/2, and substituting into the explicitly defined kappa gives 2. Uniqueness is supported by the boundary divergence of the log-volume on the fixed-energy arc.
+- **rationale:** The audited statement is a bounded formal theorem, not a physical identification. Within that scope, the constrained optimization and defined kappa readout are class-A closure, and the cached runner reports 23 PASS/0 FAIL with no external comparator or observational check. Because the note expressly excludes SO(2), charged-lepton, operator-side, and observational claims, those exclusions limit downstream citation scope rather than blocking the bounded theorem.
 - **auditor confidence:** high
 
 ### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`

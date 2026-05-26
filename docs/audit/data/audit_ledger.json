@@ -281622,22 +281622,50 @@
       "verdict_rationale": null
     },
     "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T21:12:25.605110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "yt_ew_color_projection_theorem": "no_go",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "yt_ew_color_projection_theorem",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.006,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 513
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-uv-gauge-yukawa-pass1-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic coefficient comparison closes, but the surface-selection step does not. The restricted packet computes C_pert, C_strong, alpha_LM, and n_opt, but does not derive the claimed perturbative-domain selector or the strong-coupling character-ratio nonconvergence criterion from a retained direct authority.",
       "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Subordinate coefficient-selection support only: on the canonical tadpole-improved surface, compare the perturbative scalar-singlet coefficient C_pert = 1/(2 N_c) = 1/6 with the strong-coupling one-link coefficient C_strong = 1/N_c^2 = 1/9, without ratifying physical top-Yukawa readout, shared tadpole transport, or an unconditional y_t(M_Pl)/g_s(M_Pl) bridge.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-26T21:12:25.605110+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -281647,22 +281675,25 @@
         "minimal_axioms_2026-04-11"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 12.006,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the tadpole-improved canonical surface alpha_LM = alpha_bare / u_0 = 0.0907 is small, so the perturbative coefficient 1/(2 N_c) = 1/6 is the dominant 4-fermion structure and the strong-coupling 1/N_c^2 = 1/9 coefficient is not the correct coefficient on that surface.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d34460eb9aae8d0bb5710aa08322f75581b8da83b7b522b1ee86dc205e3dbe1c",
       "note_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and directly cite a retained canonical-surface expansion-selector theorem, with runner coverage for the u_0/alpha_LM input and the strong-coupling character-ratio comparison, then re-audit the same subordinate coefficient-selection scope.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.370019+00:00",
@@ -281691,18 +281722,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 44,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 44
       },
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "UV Gauge-to-Yukawa Bridge: Subordinate Support Note",
       "transitive_descendants": 513,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the note's load-bearing selection says the canonical tadpole-improved surface makes the perturbative coefficient govern over the strong-coupling coefficient. Why this blocks: the runner genuinely computes the SU(3) Fierz coefficient, Haar one-link coefficient, Clifford projection, and canonical alpha arithmetic, but the expansion-domain selector is asserted from small alpha_LM and an uncomputed c1/c0 claim rather than derived in the restricted dependency packet. Repair target: add or derive a retained canonical-surface perturbative-regime selector, including the u_0/alpha_LM authority and the strong-coupling character-ratio comparison, and wire it as a direct dependency. Claim boundary until fixed: the clean bounded core is the algebraic comparison C_pert = 1/6 versus C_strong = 1/9 plus support-only NLO arithmetic; no physical y_t readout, shared tadpole transport, or unconditional Planck-ratio bridge is ratified."
     },
     "v_eff_total_njl_style_bounded_theorem_note_2026-05-10": {
       "audit_date": null,

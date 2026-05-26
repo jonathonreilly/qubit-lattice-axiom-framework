@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 476 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1267 |
+| unaudited | 1266 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,21 +54,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 764 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1496 |
+| `unaudited` | 1495 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1062 |
+| `bounded_theorem` | 1063 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 255 |
 | `open_gate` | 110 |
-| `positive_theorem` | 720 |
+| `positive_theorem` | 719 |
 
 | criticality | count |
 |---|---:|
@@ -930,6 +930,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -12755,6 +12756,22 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
 - **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
+- **auditor confidence:** high
+
+### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`
+
+- **Note:** [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](../../docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Subordinate coefficient-selection support only: on the canonical tadpole-improved surface, compare the perturbative scalar-singlet coefficient C_pert = 1/(2 N_c) = 1/6 with the strong-coupling one-link coefficient C_strong = 1/N_c^2 = 1/9, without ratifying physical top-Yukawa readout, shared tadpole transport, or an unconditional y_t(M_Pl)/g_s(M_Pl) bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-uv-gauge-yukawa-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the tadpole-improved canonical surface alpha_LM = alpha_bare / u_0 = 0.0907 is small, so the perturbative coefficient 1/(2 N_c) = 1/6 is the dominant 4-fermion structure and the strong-coupling 1/N_c^2 = 1/9 coefficient is not the correct coefficient on that surface.  _(class `B`)_
+- **chain closes:** False — The algebraic coefficient comparison closes, but the surface-selection step does not. The restricted packet computes C_pert, C_strong, alpha_LM, and n_opt, but does not derive the claimed perturbative-domain selector or the strong-coupling character-ratio nonconvergence criterion from a retained direct authority.
+- **rationale:** Issue: the note's load-bearing selection says the canonical tadpole-improved surface makes the perturbative coefficient govern over the strong-coupling coefficient. Why this blocks: the runner genuinely computes the SU(3) Fierz coefficient, Haar one-link coefficient, Clifford projection, and canonical alpha arithmetic, but the expansion-domain selector is asserted from small alpha_LM and an uncomputed c1/c0 claim rather than derived in the restricted dependency packet. Repair target: add or derive a retained canonical-surface perturbative-regime selector, including the u_0/alpha_LM authority and the strong-coupling character-ratio comparison, and wire it as a direct dependency. Claim boundary until fixed: the clean bounded core is the algebraic comparison C_pert = 1/6 versus C_strong = 1/9 plus support-only NLO arithmetic; no physical y_t readout, shared tadpole transport, or unconditional Planck-ratio bridge is ratified.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-04-11.md`
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `valley_linear_action_note`

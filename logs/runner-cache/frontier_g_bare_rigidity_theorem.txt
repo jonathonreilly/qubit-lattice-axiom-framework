@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_rigidity_theorem.py
-runner_sha256: 190446792af723b7514d38d6f0efcefbca4320926d71b62b07ca697075ff5264
+runner_sha256: db2d18436d13b2cce202c7b80aab4e72ae8d8a2ff6e6fb3ca42c3f4e8d1cd0e2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,8 +13,10 @@ GAUGE-NORMALIZATION RIGIDITY THEOREM
 Claim:
   once SU(3) is derived as a concrete compact subalgebra of End(V),
   the Hilbert-space trace form fixes the generator normalization up
-  to orthogonal basis rotation.  There is no independent scalar
-  gauge-coupling parameter left.  In canonical coordinates: g_bare = 1.
+  to orthogonal basis rotation. The finite-link SU(3) bridge supplies
+  U = exp(i A^a T_a a) on a selected logarithm branch; there is no
+  additional scalar-normalization freedom inside that fixed trace form.
+  In canonical finite-link coordinates this is written g_bare = 1.
 
 SECTION 1: Canonical SU(3) generators live in the derived commutant
 ------------------------------------------------------------------------------
@@ -67,28 +69,39 @@ SECTION 3: Allowed basis ambiguity is orthogonal rotation, not scalar dilation
   [PASS] Scalar dilation 2 changes trace normalization  (Tr(T_a T_b) -> 4.00 * delta_ab / 2)
   [PASS] Scalar dilation 2 changes Casimir  (C_F -> 5.333333)
 
-SECTION 4: g is coordinate redundancy, not a physical parameter
+SECTION 4: Finite SU(3) holonomy exponential bridge
+------------------------------------------------------------------------------
+  [PASS] finite SU(3) link admits a traceless-Hermitian logarithm  (A_op = (-i/a) Log U lies in su(3) on the selected branch)
+  [PASS] logarithm lies in the fixed canonical generator span  (coeff max dev = 1.73e-17)
+  [PASS] U = exp(i A^a T_a a) reconstructs the finite link  (reconstruction err = 6.24e-16)
+
+SECTION 5: g is coordinate redundancy, not a physical parameter
 ------------------------------------------------------------------------------
   [PASS] Operator coefficients absorb scalar g = 0.3  (A_op' = sum (g A^a) T_a = g * A_op)
   [PASS] Operator coefficients absorb scalar g = 0.8  (A_op' = sum (g A^a) T_a = g * A_op)
   [PASS] Operator coefficients absorb scalar g = 1.7  (A_op' = sum (g A^a) T_a = g * A_op)
 
 Interpretation:
-  - The physical object is the concrete operator A_op in the derived
-    gauge algebra, not a split into 'g' times coefficients.
+  - Given a finite SU(3) link holonomy, the bridge reconstructs a
+    traceless-Hermitian A_op in the derived gauge algebra.
+  - That operator is not further split into an independent scalar
+    coupling times coefficients.
   - Changing basis by an orthogonal rotation is harmless.
   - Uniform scalar dilation changes the fixed trace form and Casimir,
     so it is not an admissible ambiguity of the canonical basis.
-  - Once the canonical basis is chosen, the holonomy is
+  - On the selected finite-link branch, the canonical basis expression is
         U = exp(i A^a T_a a)
     with no additional scalar coupling.
 
 Conclusion:
-  The standard notation U = exp(i g A^a T_a a) contains no independent
-  physical bare coupling in this framework. In canonical normalization,
-  g_bare = 1.
+  For finite SU(3) link holonomies, standard notation
+  U = exp(i g A^a T_a a) contains no additional scalar-normalization
+  freedom inside the fixed canonical generator basis. This is the
+  bounded finite-link coordinate statement written g_bare = 1; global
+  branch selection and continuum gauge-field limits remain outside this
+  runner.
 
-PASS=45 FAIL=0
+PASS=48 FAIL=0
 
 ----- stderr -----
 

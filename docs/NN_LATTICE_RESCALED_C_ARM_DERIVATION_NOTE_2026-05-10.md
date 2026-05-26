@@ -2,9 +2,9 @@
 
 **Date:** 2026-05-10
 **Claim type:** bounded_theorem (leading coherent-saddle support for the
-slit-detector arm-width constant; residual 8.3% in the h -> 0 saddle and
-< 2.5% per-point against the diagnostic fit when the leading phase
-correction is retained)
+slit-detector arm-width constant; direct deterministic blocked-slit sigma
+check now included in the primary runner, with max residual 1.96% against
+the phase-corrected L2 saddle on the checked grid)
 **Status authority:** source-note proposal only; audit verdict and effective
 status are set by the independent audit lane.
 **Primary runner:** [`scripts/lattice_nn_rescaled_C_arm_derivation.py`](../scripts/lattice_nn_rescaled_C_arm_derivation.py)
@@ -22,12 +22,17 @@ here as a comparison target only, not as audit authority.
 - [`docs/NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md`](NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md)
   — runner-backed identification of the field-free no-slit kernel
   `A(y_s -> y_d; h)`. Translation invariance is verified to machine
-  precision on the checked refinement window. As an anchoring comparison
-  to the slit-arm diagnostic, the `L_1 = L_total/3` source-to-slit reading
-  matches PR #968's `C_arm = 2.7107` to residual `-1.85%`, while the
-  `L_2 = 2 L_total/3` Huygens reading gives `+38.81%`. This is
-  bounded numerical support for the selection-filter interpretation, not
-  a retained derivation.
+  precision on the checked refinement window. Its L1/L2 anchoring comparison
+  is context only in this note; the repaired load-bearing bridge is the
+  primary runner's direct blocked-slit sigma check below.
+- **2026-05-26 direct blocked-slit check in the primary runner** —
+  `scripts/lattice_nn_rescaled_C_arm_derivation.py` now imports the actual
+  field-free blocked-slit propagation function
+  `measure_arm_distribution(...)`, measures `sigma_arm(h)` directly at
+  `h = 0.25, 0.125, 0.0625, 0.03125`, and verifies the phase-corrected L2
+  saddle against those measured widths without using the diagnostic fit as a
+  premise. The max residual is `1.96%`; all checked Born residuals are
+  below `1e-10`.
 - `docs/NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md`
   (see-also cross-reference; backticked to break cycle-0205 in the
   citation graph. The NNLO-saddle companion's own §"Companion work"
@@ -314,9 +319,35 @@ All four points agree with the diagnostic fit to within 2.5%. The fitted
 inflates `sigma_arm` faster than `sqrt(h)`. The geodesic exponent
 `alpha = 1/2` is exact only in the strict `h -> 0` limit.
 
+### 9. Direct blocked-slit sigma check (2026-05-26)
+
+The primary runner now checks the closed-form phase-corrected L2 saddle
+against the actual deterministic blocked-slit propagation rather than only
+against the historical diagnostic fit. It imports
+`measure_arm_distribution(...)` from
+`scripts/lattice_nn_rescaled_continuum_identification.py`, which constructs
+the field-free two-slit geometry, blocks the opposite slit for each arm, and
+computes the detector arm widths directly.
+
+The direct propagation check gives:
+
+| h | nodes | measured sigma | phase-corrected L2 prediction | reldiff | Born |
+|---:|---:|---:|---:|---:|---:|
+| 0.25000 | 25,921 | 1.3147 | 1.2889 | -1.96% | 4.62e-16 |
+| 0.12500 | 103,041 | 0.8984 | 0.8867 | -1.30% | 3.21e-16 |
+| 0.06250 | 410,881 | 0.6282 | 0.6228 | -0.87% | 2.06e-15 |
+| 0.03125 | 1,640,961 | 0.4416 | 0.4396 | -0.44% | 1.21e-15 |
+
+The max direct blocked-slit residual is `1.96%`, and the max Born residual
+is `2.06e-15`. This is the load-bearing audit repair for the blocked-slit
+width bridge: the runner now measures `sigma_arm(h)` from the actual
+blocked-slit propagation and compares it to the phase-corrected L2 saddle.
+The diagnostic fit constants remain historical comparators, not premises of
+the direct check.
+
 ## Cross-validation table
 
-Closed-form residuals at the harness-fixed parameters (no Monte Carlo):
+Closed-form and direct-check residuals at the harness-fixed parameters:
 
 | Estimate | Formula | Value | Residual vs 2.7107 |
 |---|---|---:|---:|
@@ -324,6 +355,7 @@ Closed-form residuals at the harness-fixed parameters (no Monte Carlo):
 | Coherent, `L = L_total` | `sqrt(L_total / (sqrt(2)/c + 2))` | 3.0441 | +12.30% |
 | **Coherent, `L = L_2`** | `sqrt((2/3) L_total / (sqrt(2)/c + 2))` | **2.4855** | **-8.31%** |
 | Coherent, `L = L_2`, with phase correction | per-h table above | matches each h to <= 2.5% | bounded comparison |
+| Direct blocked-slit propagation | measured `sigma_arm(h)` vs phase-corrected L2 prediction | max residual 1.96% | bounded bridge check |
 
 The incoherent estimate is a sharp upper bound: it ignores phase interference
 between paths with different total `Sigma diy_i`, which destructively interfere
@@ -345,11 +377,13 @@ python3 scripts/lattice_nn_rescaled_C_arm_derivation.py
 ```
 
 to print all stages: incoherent estimate, phase-coherence diagnostic,
-saddle-point coherent formula, h -> 0 limit, and per-h cross-check. The
-runner is closed-form (no Monte Carlo, no lattice propagation); it depends
+saddle-point coherent formula, h -> 0 limit, per-h cross-check, and the
+direct deterministic blocked-slit sigma check. The closed-form stages depend
 only on `BETA`, `K_PHYS`, `PHYS_L`, `FANOUT` taken from the upstream harness
 script, and the slit-plane fraction `1/3` taken from `bl = nl // 3` in
-`measure_full(...)`.
+`measure_full(...)`. The direct check then calls the actual field-free
+blocked-slit propagation function `measure_arm_distribution(...)` from
+`scripts/lattice_nn_rescaled_continuum_identification.py`.
 
 ## Bounded scope
 
@@ -378,74 +412,43 @@ following load-bearing concern, quoted from the auditor's `repair_target`:
 > width from the actual blocked-slit propagation, and supply/audit the
 > diagnostic fit artifact as a direct dependency.
 
-The "retained bridge theorem" branch of the auditor's `or` is not met by
-this addendum — the cited dependencies are themselves source-note
-`bounded_theorem` proposals, not retained-grade theorems. The
-"deterministic runner deriving the arm width from the actual blocked-slit
-propagation" branch is not claimed closed by the no-slit full-kernel runner
-alone. Instead, the full-kernel runner supplies the no-slit Gaussian kernel
-and the source-to-slit length-anchoring comparison; the NNLO saddle note
-supplies finite-slit-aperture support; and the alpha-constrained refit note
-supplies the named diagnostic-fit artifact. Together these are audit
-candidates for repairing the conditional row, not an automatic status
-promotion.
+The retained-bridge-theorem branch of the auditor's `or` is still not claimed
+by this source note. The repair is the other branch: the primary runner now
+performs the deterministic blocked-slit measurement directly. The no-slit
+full-kernel comparison, NNLO saddle note, and alpha-constrained refit note
+remain useful context, but they are not load-bearing substitutes for the
+direct check.
 
-**1. No-slit kernel and anchoring comparison.** The
+**1. Direct deterministic blocked-slit check.** The primary runner now calls
+the actual field-free blocked-slit propagation function
+`measure_arm_distribution(...)` and checks the measured arm width against the
+phase-corrected L2 saddle:
+
+| h | measured sigma | L2 prediction | residual |
+|---:|---:|---:|---:|
+| 0.25000 | 1.3147 | 1.2889 | -1.96% |
+| 0.12500 | 0.8984 | 0.8867 | -1.30% |
+| 0.06250 | 0.6282 | 0.6228 | -0.87% |
+| 0.03125 | 0.4416 | 0.4396 | -0.44% |
+
+This is the repair for the audit-stated blocker: `sigma_arm(h)` is now derived
+from actual blocked-slit propagation inside the primary runner, and the
+diagnostic fit is not an input to that direct comparison.
+
+**2. No-slit kernel and L1/L2 comparison demoted to context.** The
 full-kernel identification note
 (`NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10`)
-numerically identifies the field-free no-slit kernel `A(y_s -> y_d; h)`
-on the checked grid. Translation invariance under shifts of `y_s` is
-verified to machine precision (`sigma` and `c_2` spread across the `y_s`
-grid both exactly zero on the checked window).
-The fitted kernel structure is
+still numerically identifies the field-free no-slit kernel
+`A(y_s -> y_d; h)` on its checked grid. Its L1/L2 comparison remains a
+useful diagnostic of possible slit interpretations, but this note no longer
+treats that comparison as the load-bearing length-anchoring proof. The
+load-bearing bridge is the direct blocked-slit table above, which checks the
+L2 phase-corrected saddle against the actual slit geometry.
 
-```text
-A(y_s -> y_d; h)  =  C_amp(h)  *  exp[-(y_d - y_s)^2 / (2 sigma(h)^2)]
-                                *  exp[i (c_0 + c_2_infinity (y_d - y_s)^2)]
-```
-
-with `sigma(h) ~ 4.61 sqrt(h)` and `c_2_infinity ~ 0.02999` (the latter
-matching the c_2 derivation note `NN_LATTICE_RESCALED_C2_DERIVATION_NOTE_2026-05-10`
-to 0.33%) on the checked grid.
-
-**2. Length-anchoring numerical correction.** The original step 8 of
-this note asserted that the slit "re-anchors the per-arm centroid"
-(Huygens secondary-point-source reading) and used `L_eff = L_2 = 2 L_total / 3`.
-The full-kernel note's empirical cross-check finds that PR #968's
-`C_arm = 2.7107` is matched by **`L_1 = L_total / 3` source-to-slit
-anchoring** to residual `-1.85%`, while the `L_2 = 2 L_total / 3` Huygens
-anchoring gives residual `+38.81%`. Under the runner-backed reading:
-
-> The narrow slit acts as a **selection filter** on the source's natural
-> angular spread at distance `L_1 = L_total/3`, rather than as a Huygens
-> secondary point-source. The per-arm width on the detector inherits the
-> source-side propagation length `L_1`, not the post-slit length `L_2`.
-> This is a numerical-fit identification, not a derived theorem.
-
-Numerically, the `L_2` formula in this note's step 7 collapses to a value
-4x sharper under the `L_1` reading because `sqrt(L_1 / L_total) = sqrt(1/3)`
-multiplies the no-slit `C_amp = 4.61` to give `2.660` instead of the `L_2`
-formula's `2.4855`. Both readings agree on a `sqrt(1/3)` or equivalent
-suppression factor; they differ in physical interpretation, and the
-selection-filter reading is sharper by ~4x in residual.
-
-The `8.3%` residual reported in this note (step "Cross-validation table",
-row "Coherent, L = L_2") is therefore an artefact of the wrong-interpretation
-length identification. The correct identification gives `-1.85%`.
-
-**3. Finite-slit-aperture correction.** The NNLO saddle note
-(`NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10`) supplies the
-closed-form finite-slit truncated-convolution correction that this note
-listed as "not closed analytically". The NNLO prediction `alpha_eff = 0.5247`
-matches the empirical `alpha = 0.5256` to `|Delta alpha| = 0.0009`,
-inside the positive 0.005 acceptance band. The remaining ~4% reflects
-higher-order phase or aperture effects not captured at NNLO, bounded above.
-
-**4. Diagnostic-fit artifact.** The alpha-constrained refit note
-(`NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10`)
-provides the per-`h` diagnostic-fit artefact the auditor named. Under
-geodesic `alpha = 1/2` constrained fitting, the per-`h` estimator
-`C_arm(h) = sigma_arm(h) / sqrt(h)` recovers the analytic value pointwise:
+**3. Diagnostic-fit artifact kept as comparator only.** The alpha-constrained
+refit note (`NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10`)
+provides a useful view of the same measured widths under the geodesic
+`alpha = 1/2` estimator:
 
 | h | C_arm(h) | residual vs `2.4855` |
 |---|---:|---:|
@@ -461,22 +464,20 @@ two-parameter `(C, alpha)` fit lets `alpha` drift to `0.5256` to absorb
 the cosine phase correction, which then over-inflates `C` by the
 observed factor `2.7107 / 2.4855 = 1.0906`.
 
-**Net effect on this row's claim.** With the above three pieces, the
-load-bearing length-anchoring step has bounded source-note support from
-the no-slit kernel comparison, the finite-slit-aperture residual has a
-closed-form bounded support note (NNLO saddle), and the diagnostic fit
-artefact is supplied (alpha-constrained refit). This addendum therefore
-records a repair package for independent audit; it does not mark the
-conditional verdict resolved and does not promote the row's status. The
-remaining bounded-scope caveats (harness-fixed `BETA, k, L_total, FANOUT,
-SLIT_Y`, observable subspace, field-free single-source) are intrinsic and
-not addressed by this addendum.
+**Net effect on this row's claim.** The load-bearing repair is now a primary
+runner check: direct blocked-slit widths match the phase-corrected L2 saddle
+within `1.96%` on the checked grid. This addendum records a packet for
+independent audit; it does not mark the conditional verdict resolved and does
+not promote the row's status. The remaining bounded-scope caveats
+(harness-fixed `BETA, k, L_total, FANOUT, SLIT_Y`, observable subspace,
+field-free single-source) are intrinsic and not addressed by this addendum.
 
 ## Status
 
-This source note is a bounded closed-form derivation proposal. The audit
-lane sets the effective status after independent review of the runner,
-the derivation steps, and the slit-plane length identification.
+This source note is a bounded closed-form derivation plus direct blocked-slit
+runner proposal. The audit lane sets the effective status after independent
+review of the runner, the derivation steps, and the slit-plane length
+identification.
 
 ## Audit dependency repair links
 
@@ -489,5 +490,3 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - `nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10`
   (downstream consumer; backticked to break cycle-0012. Citation direction
   is *refit → this derivation*, see line 44 above.)
-- `NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md`
-- `NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md`

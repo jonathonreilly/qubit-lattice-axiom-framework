@@ -79448,55 +79448,88 @@
       "verdict_rationale": null
     },
     "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": {
-      "audit_date": "2026-05-22T23:40:44.595408+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 7.255,
-        "runner_hash": null,
-        "transitive_descendants": 53
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T234025Z-a2391488-dm_thermal_average_somme-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The restricted packet provides no cited authorities in full, while the claim explicitly depends on external textbook/literature inputs. The missing step is retained-grade support for the imported Maxwell-Boltzmann normalization, freeze-out benchmark, and Sommerfeld normalization within the packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17",
-      "claim_scope": "A bounded named-import wrapper for standard DM relic-abundance thermal averaging, x_f = 25, and Sommerfeld argument normalization.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T23:40:44.595408+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.255,
-      "load_bearing_step": "The note imports the Maxwell-Boltzmann thermal-velocity average, the freeze-out slice x_f = 25, and the Sommerfeld argument normalization as textbook ingredients for downstream use.",
-      "load_bearing_step_class": "D",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "4d34d0b265f8e4cca818d46a67d135722f9ae1be9aef4da93a3382077539638f",
+      "note_hash": "ec46d1ba15c5052cb63318e6df0aedb73f823b32b78737e79f62cad401d0d765",
       "note_path": "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the cited textbook/literature authority excerpts or retained bounded import notes for the Maxwell-Boltzmann average, x_f = 25 benchmark, and Sommerfeld argument normalization.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-26T11:04:26.010816+00:00",
+          "archived_for_note_hash": "4d34d0b265f8e4cca818d46a67d135722f9ae1be9aef4da93a3382077539638f",
+          "audit_date": "2026-05-22T23:40:44.595408+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 7.255,
+            "runner_hash": null,
+            "transitive_descendants": 53
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T234025Z-a2391488-dm_thermal_average_somme-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The restricted packet provides no cited authorities in full, while the claim explicitly depends on external textbook/literature inputs. The missing step is retained-grade support for the imported Maxwell-Boltzmann normalization, freeze-out benchmark, and Sommerfeld normalization within the packet.",
+          "claim_scope": "A bounded named-import wrapper for standard DM relic-abundance thermal averaging, x_f = 25, and Sommerfeld argument normalization.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-22T23:40:44.595408+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The note imports the Maxwell-Boltzmann thermal-velocity average, the freeze-out slice x_f = 25, and the Sommerfeld argument normalization as textbook ingredients for downstream use.",
+          "load_bearing_step_class": "D",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: provide the cited textbook/literature authority excerpts or retained bounded import notes for the Maxwell-Boltzmann average, x_f = 25 benchmark, and Sommerfeld argument normalization.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The source note is candidly scoped as a named non-derivation import, not a first-principles derivation. However, the restricted audit packet contains no upstream authorities despite the claim depending on textbook and literature inputs. Under the rubric, importing explicit normalizations and benchmark values not closed by the packet makes the claim conditional rather than clean."
+        }
+      ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -79504,10 +79537,10 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/dm_thermal_average_sommerfeld_normalization.py",
       "title": "DM Thermal Average + Sommerfeld Argument Normalization \u2014 Named Non-Derivation Import",
       "transitive_descendants": 53,
-      "verdict_rationale": "The source note is candidly scoped as a named non-derivation import, not a first-principles derivation. However, the restricted audit packet contains no upstream authorities despite the claim depending on textbook and literature inputs. Under the rubric, importing explicit normalizations and benchmark values not closed by the packet makes the claim conditional rather than clean."
+      "verdict_rationale": null
     },
     "dm_wilson_direct_descendant_batch_authority_note_2026-05-03": {
       "audit_date": null,
@@ -114678,7 +114711,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 23.554,
+      "load_bearing_score": 23.555,
       "load_bearing_step": "For H(phi) = sum_i phi_i S_i, V_sel(phi) = Tr H(phi)^4 - (1/8)(Tr H(phi)^2)^2 = 32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to the pairwise-overlap potential with axis minima.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -114915,7 +114948,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
       "title": "Graph-First Weak-Axis Selector Derivation",
-      "transitive_descendants": 1062,
+      "transitive_descendants": 1063,
       "verdict_rationale": "The runner constructs the canonical Pauli-x cube shifts directly and verifies their algebraic properties, trace identities, normalized overlap form, axis minima, and residual stabilizers. Its checks are internal algebra over the stated graph-shift surface, with no external comparator, tuned numerical scale, or imported physical bridge. The cited SU(3) integration note is not load-bearing for this selector derivation, and the source note explicitly bounds away downstream abelian or phenomenological claims."
     },
     "graph_first_su3_integration_note": {
@@ -115006,7 +115039,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 46.065,
+      "load_bearing_score": 46.066,
       "load_bearing_step": "Imposing the residual complementary-axis swap on the weak-su(2) commutant restricts the base algebra to the 3+1 split, giving Comm(su(2)_weak, tau) isomorphic to gl(3) plus gl(1) with compact semisimple part su(3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -115079,7 +115112,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Graph-First `SU(3)` Integration Theorem",
-      "transitive_descendants": 1070,
+      "transitive_descendants": 1071,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet supports the narrowed selected-axis finite-cube theorem by explicit finite-dimensional linear algebra, and the runner constructs and checks the relevant operators rather than printing constants. The load-bearing step is an algebraic commutant calculation over the defined cube operators, so class A is more accurate than class C. The result is clean as a positive structural theorem only at this narrowed scope; selector derivation, color-carrier interpretation, anomaly completion, and electroweak matching are outside the ratified claim. | The second audit gives the applyable scoped tuple: the restricted packet supports a finite-dimensional algebraic commutant theorem once a selected axis is given. The runner source constructs the cube shift, parity, residual swap, commutant basis, projectors, and embedded su(3) generators directly, with no external comparator, tuned numerical input, or physical hypercharge promotion. The first audit\u2019s clean verdict is compatible, but its class C overstates the step as first-principles framework computation rather than an algebraic closure on explicitly defined finite-cube operators. | The restricted packet supports a clean finite-dimensional algebra theorem once the selected axis is taken as the scoped input. The runner constructs the cube shift, parity, swap, commutant, projectors, and embedded su(3) generators and checks the identities for all three axes, so the load-bearing step is an algebraic closure check rather than a first-principles physical computation. The second audit correctly narrows away the upstream selector derivation and any physical hypercharge or electroweak identification. | The restricted packet supports a clean finite-dimensional algebraic theorem on the selected-axis cube surface. The runner constructs the cube shift, parity, residual swap, commutant, projectors, and embedded su(3) generators for all three axes, so this is an algebraic closure check rather than a first-principles numerical compute from the full Cl(3) on Z^3 axiom surface. The clean verdict applies only to the structural selected-axis commutant statement and does not promote hypercharge, anomaly completion, electroweak matching, or the upstream selector derivation. | The restricted packet supports the narrowed finite-cube structural theorem by explicit finite-dimensional linear algebra for all three selected axes. The load-bearing step is an algebraic commutant calculation, so class A is more accurate than class C because no new first-principles physical number is computed from Cl(3) on Z^3. The second audit correctly scopes out the upstream selector derivation and any physical color, hypercharge, anomaly-completion, or EW matching interpretation."
     },
     "graph_laplacian_core_card_note": {
@@ -184516,46 +184549,24 @@
       "verdict_rationale": null
     },
     "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": {
-      "audit_date": "2026-05-25T19:18:51.949266+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "lattice_nn_deterministic_rescale_note": "Finite computational claim only: for the exact supplied runner, constants, lattice geometry, slit construction, propagation rule, and tested spacings down to h=0.0625, the deterministic geometry-only rescale schedule keeps the Born diagnostic machine-clean and yields the printed observable rows. It does not establish a continuum theory or physical interpretation beyond this finite tested surface.",
-          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "Finite checked-grid, field-free, no-slit rescaled NN harness with BETA=0.8, K_PHYS=5.0, L=40, y_s in {-6,-3,0,+3,+6}, h in {0.25,0.125,0.0625}, and central window |u|<=6: translation-invariant Gaussian-magnitude and quadratic-phase fit within the runner tolerances."
-        },
-        "dep_claim_type": {
-          "lattice_nn_deterministic_rescale_note": "bounded_theorem",
-          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "lattice_nn_deterministic_rescale_note": "retained_bounded",
-          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "retained_bounded"
-        },
-        "deps": [
-          "lattice_nn_deterministic_rescale_note",
-          "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
-        ],
-        "load_bearing_score": 5.085,
-        "runner_hash": "68552e317149ed9aa83358fef7d0f9a1f472f220cd379c0ae7dac0610e7da2fc",
-        "transitive_descendants": 5
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T191715Z-f110da5f-nn_lattice_rescaled_c_ar-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic saddle calculation and runner reproduce the stated numbers, but the bridge from the closed-form no-slit/per-step saddle to the actual blocked-slit arm width is not derived. The packet itself says the original L_2 anchoring was the wrong interpretation and that the sharper L_1 selection-filter reading is only a numerical/open identification, not a first-principles closure.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-      "claim_scope": "Harness-fixed bounded coherent-saddle support for the rescaled NN slit-arm width constant, including the closed-form C_arm residuals against the diagnostic fit and the disputed slit-length anchoring.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (leading coherent-saddle support for the",
-      "claim_type_last_reviewed": "2026-05-25T19:18:51.949266+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -184564,22 +184575,22 @@
         "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
       "direct_in_degree": 5,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [
+        "scripts/lattice_nn_rescaled_continuum_identification.py"
+      ],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 5.085,
-      "load_bearing_step": "The note sets the effective propagation length in the coherent-saddle formula to the slit-anchored arm length, originally `L_eff = L_2 = 2 L_total / 3`, so that `C_arm^2 = L_eff / (sqrt(2)/c + 2)` gives the claimed comparison constant.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "1b12e7d94ade1dee3a4b8bb3edc53908ce0793da525aba12f7cf8b911a228198",
+      "note_hash": "3e58a6fd32cf280ad2e11aa9dba0ba924add6a51fc40a1323f8d53eaece95d48",
       "note_path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge theorem or deterministic blocked-slit runner deriving sigma_arm from the actual blocked-slit propagation and fixing the L_eff/L1/L2 anchoring without importing the diagnostic fit as the premise.",
-      "open_dependency_paths": [
-        "docs/NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-15T13:13:59.044357+00:00",
@@ -184744,21 +184755,77 @@
             "total_pass": 1
           },
           "verdict_rationale": "The primary runner really computes the displayed coherent-saddle constants and per-h residuals, but it also hard-codes the contested L_2 physical interpretation rather than deriving it from blocked-slit propagation. The supplied retained_bounded full-kernel authority contradicts the L_2 interpretation as the closer slit-arm anchoring, reporting L_1 residual -1.85% versus L_2 residual +38.81%, and explicitly says the selection-filter reading is not first-principles derived. Thus the claim remains bounded support/numerical comparison, not a closed derivation from the cited inputs."
+        },
+        {
+          "archived_at": "2026-05-26T11:04:26.606946+00:00",
+          "archived_for_note_hash": "1b12e7d94ade1dee3a4b8bb3edc53908ce0793da525aba12f7cf8b911a228198",
+          "audit_date": "2026-05-25T19:18:51.949266+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "lattice_nn_deterministic_rescale_note": "Finite computational claim only: for the exact supplied runner, constants, lattice geometry, slit construction, propagation rule, and tested spacings down to h=0.0625, the deterministic geometry-only rescale schedule keeps the Born diagnostic machine-clean and yields the printed observable rows. It does not establish a continuum theory or physical interpretation beyond this finite tested surface.",
+              "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "Finite checked-grid, field-free, no-slit rescaled NN harness with BETA=0.8, K_PHYS=5.0, L=40, y_s in {-6,-3,0,+3,+6}, h in {0.25,0.125,0.0625}, and central window |u|<=6: translation-invariant Gaussian-magnitude and quadratic-phase fit within the runner tolerances."
+            },
+            "dep_claim_type": {
+              "lattice_nn_deterministic_rescale_note": "bounded_theorem",
+              "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "lattice_nn_deterministic_rescale_note": "retained_bounded",
+              "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10": "retained_bounded"
+            },
+            "deps": [
+              "lattice_nn_deterministic_rescale_note",
+              "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
+            ],
+            "load_bearing_score": 5.085,
+            "runner_hash": "68552e317149ed9aa83358fef7d0f9a1f472f220cd379c0ae7dac0610e7da2fc",
+            "transitive_descendants": 5
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T191715Z-f110da5f-nn_lattice_rescaled_c_ar-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic saddle calculation and runner reproduce the stated numbers, but the bridge from the closed-form no-slit/per-step saddle to the actual blocked-slit arm width is not derived. The packet itself says the original L_2 anchoring was the wrong interpretation and that the sharper L_1 selection-filter reading is only a numerical/open identification, not a first-principles closure.",
+          "claim_scope": "Harness-fixed bounded coherent-saddle support for the rescaled NN slit-arm width constant, including the closed-form C_arm residuals against the diagnostic fit and the disputed slit-length anchoring.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T19:18:51.949266+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The note sets the effective propagation length in the coherent-saddle formula to the slit-anchored arm length, originally `L_eff = L_2 = 2 L_total / 3`, so that `C_arm^2 = L_eff / (sqrt(2)/c + 2)` gives the claimed comparison constant.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge theorem or deterministic blocked-slit runner deriving sigma_arm from the actual blocked-slit propagation and fixing the L_eff/L1/L2 anchoring without importing the diagnostic fit as the premise.",
+          "open_dependency_paths": [
+            "docs/NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 5
+          },
+          "verdict_rationale": "The primary runner genuinely computes the closed-form coherent-saddle quantities from the hard-coded harness constants and prints residual checks; it is not a dummy PASS printer. However, it does not propagate the actual blocked-slit lattice or derive the arm-width observable from that propagation; it selects an effective length and compares to a diagnostic fit. The cited full-kernel authority is retained_bounded for its no-slit kernel shape, but its slit-arm L_1 reading is explicitly described as a closer numerical comparison whose physical interpretation remains open. Therefore the bounded algebra is useful support, but the claim does not close as an audited theorem from the restricted packet."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 5
+        "total_pass": 0
       },
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note",
       "transitive_descendants": 5,
-      "verdict_rationale": "The primary runner genuinely computes the closed-form coherent-saddle quantities from the hard-coded harness constants and prints residual checks; it is not a dummy PASS printer. However, it does not propagate the actual blocked-slit lattice or derive the arm-width observable from that propagation; it selects an effective length and compares to a diagnostic fit. The cited full-kernel authority is retained_bounded for its no-slit kernel shape, but its slit-arm L_1 reading is explicitly described as a closer numerical comparison whose physical interpretation remains open. Therefore the bounded algebra is useful support, but the claim does not close as an audited theorem from the restricted packet."
+      "verdict_rationale": null
     },
     "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10_note_2026-05-17": {
       "audit_date": null,
@@ -201138,7 +201205,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.622,
+      "load_bearing_score": 13.626,
       "load_bearing_step": "The permutation unitary T_tau_k realizing the residual Z_2 stabilizer on the selected cube axis restricts on V_1 to the same permutation matrix P_tau_k, so Z_2-invariance of H is exactly P_tau_k H P_tau_k = H, in particular P_23 H P_23 = H for k=1.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -201243,7 +201310,7 @@
       },
       "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
       "title": "PMNS Graph-Axis -> Active Hermitian Lane Bridge",
-      "transitive_descendants": 393,
+      "transitive_descendants": 394,
       "verdict_rationale": "The load-bearing step is a direct finite-dimensional identity: T_sigma permutes the single-bit-flip basis vectors X_mu, and its V_1 block is exactly the corresponding 3 by 3 permutation matrix. The runner source genuinely constructs the shifts, basis vectors, factor-permutation matrices, restrictions, and invariant Hermitian projections; it does not merely print constants or import a contested premise. The cited authorities in the packet are marked retained, and the source remains within the bounded bridge scope rather than claiming active-sector assignment or numerical PMNS values."
     },
     "pmns_graph_commutant_cycle_value_boundary_note": {
@@ -201436,7 +201503,7 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.807,
+      "load_bearing_score": 11.833,
       "load_bearing_step": "Pushing the selected graph axis and its residual Z2 stabilizer onto the active Hermitian triplet lane gives the residual law P_23 H P_23 = H, hence the aligned core form.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -201563,7 +201630,7 @@
       },
       "runner_path": "scripts/frontier_pmns_graph_first_axis_alignment.py",
       "title": "PMNS Graph-First Axis Alignment",
-      "transitive_descendants": 55,
+      "transitive_descendants": 56,
       "verdict_rationale": "The load-bearing step is not a first-principles value computation; it is an algebraic identification and invariant-subspace normal-form consequence. All cited authorities used for the bridge and normal form are retained-grade or retained_bounded in the restricted packet. The primary runner checks finite-dimensional algebraic consistency, though some exactness is better supported by the cited theorems than by the runner's sampled/grid portions alone. The audited result remains bounded: it gives alignment, not values or active-sector selection."
     },
     "pmns_graph_first_cycle_frame_support_note": {
@@ -201654,7 +201721,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.115,
+      "load_bearing_score": 15.118,
       "load_bearing_step": "The diagonal projectors transported by the canonical forward cycle give the unique ordered oriented-cycle frame E12, E23, E31 via E11 C = E12, E22 C = E23, E33 C = E31.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -201963,7 +202030,7 @@
       },
       "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
       "title": "PMNS Graph-First Cycle Frame Support",
-      "transitive_descendants": 391,
+      "transitive_descendants": 392,
       "verdict_rationale": "All one-hop cited authorities in the packet are retained-grade, and the load-bearing frame step is an exact finite-dimensional algebraic closure over those inputs. The primary runner hard-codes CYCLE and P23 rather than deriving them, so it is only an algebraic consistency check; closure comes from the retained_bounded bridge authority, not from treating the runner as first-principles compute. The source correctly remains bounded: it supports a future value law but does not select cycle coefficients."
     },
     "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": {
@@ -202051,7 +202118,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.118,
+      "load_bearing_score": 13.122,
       "load_bearing_step": "Using the retained identity T_sigma|_{V_1}=P_sigma, take sigma=(1 3 2) so CYCLE=T_{(1 3 2)}|_{V_1}=P_{(1 3 2)}, and then apply the matrix-unit identities to derive the forward-cycle basis and residual-swap actions.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -202072,7 +202139,7 @@
       },
       "runner_path": "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py",
       "title": "PMNS Graph-First Forward-Cycle + Residual-Swap Bridge \u2014 Narrow Theorem",
-      "transitive_descendants": 392,
+      "transitive_descendants": 393,
       "verdict_rationale": "All cited authorities are retained-grade under the rubric, including the retained_bounded active-lane bridge. The runner source performs direct finite-dimensional sympy/numpy algebra over the stated permutation matrices and matrix units; aside from one informational negative-control check that is trivially true, the load-bearing checks compute the claimed identities. No external comparator, fitted value, or non-retained dependency is used."
     },
     "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16": {
@@ -202128,13 +202195,13 @@
         "z2_hw1_mass_matrix_parametrization_note",
         "graph_first_selector_derivation_note"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": "Direct multiplication gives P_23 E_21 P_23 = E_31, P_23 E_32 P_23 = E_23, and P_23 E_13 P_23 = E_12, hence R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -202155,7 +202222,7 @@
       },
       "runner_path": "scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py",
       "title": "PMNS Graph-First Residual Antiunitary on the Oriented Cycle Channel \u2014 Narrow Bridge Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": "The source proof and runner both perform explicit 3x3 matrix algebra rather than importing a numerical fit or merely renaming symbols. The runner source constructs P_23, the matrix units, R, and the cycle block, then checks the coordinate action, channel preservation, conjugate-linearity, involution, and fixed-locus characterization. The cited upstream authorities are marked retained-grade or retained_bounded, and no external comparator or tuned numerical input is used. The clean verdict applies only to the stated narrow algebraic bridge, not to downstream point selection or carrier derivation."
     },
     "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17": {
@@ -202996,7 +203063,7 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 17,
+      "direct_in_degree": 18,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -203004,7 +203071,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 17.129,
+      "load_bearing_score": 17.633,
       "load_bearing_step": "Therefore any canonical active block has the exact native oriented-cycle decomposition A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31 with coefficient law (c_1, c_2, c_3) = diag(A C^dagger).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -203092,7 +203159,7 @@
       },
       "runner_path": "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
       "title": "PMNS Oriented Cycle Channel Value Law",
-      "transitive_descendants": 395,
+      "transitive_descendants": 396,
       "verdict_rationale": "The load-bearing step is a class-A matrix identity over the projected forward-cycle basis, not a numerical fit or definition-as-derivation. The cached runner for SHA 531e8147f7aa2e6e9c13b9f5ddf6b03ae7862a18e968627d815d5f748b7f79ec exits 0 with PASS=10 FAIL=0 and checks the projected cycle, projected scalar projectors, edge basis, coefficient extraction, reconstruction, mean identity, and response-profile round trip. Residual risk is only scope creep: this audit does not certify sole-axiom selection of the canonical active block or of the coefficient values."
     },
     "pmns_oriented_cycle_reduced_channel_nonselection_note": {
@@ -203571,6 +203638,61 @@
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure",
       "transitive_descendants": 391,
+      "verdict_rationale": null
+    },
+    "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
+        "pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16",
+        "pmns_oriented_cycle_channel_value_law_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "227ce63592f31e67c5960b0c40e554a7a6a63633db78b9035c3e2d85ddc69c7d",
+      "note_path": "docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/pmns_oriented_cycle_two_prong_composition_runner.py",
+      "title": "PMNS Oriented-Cycle Two-Prong Composition Bridge",
+      "transitive_descendants": 0,
       "verdict_rationale": null
     },
     "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17": {
@@ -205731,7 +205853,7 @@
       "deps": [
         "pmns_oriented_cycle_channel_value_law_note"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "decoration_under_pmns_oriented_cycle_channel_value_law_note",
       "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [
@@ -205739,7 +205861,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "decoration_under_pmns_oriented_cycle_channel_value_law_note",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": "Substituting x = (1,1,1) and y = (0,0,0) into A_act(x,y,delta) makes the deformation term vanish, so A_act = I_3 for all delta.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -205760,7 +205882,7 @@
       },
       "runner_path": "scripts/frontier_pmns_sole_axiom_free_point_identity_block_2026-05-16.py",
       "title": "PMNS Sole-Axiom Free-Point Identity-Block \u2014 Narrow Bridge Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": "The load-bearing step is a valid class A algebraic substitution in the supplied construction, and the cited coefficient law is marked retained. However, the audit packet contains no first-principles derivation and no external comparator checks; it reduces to one retained parent law plus standard finite-dimensional matrix algebra. Under the tie-breaking rule, a zero-D purely algebraic bridge of this kind is classified as audited_decoration rather than audited_clean."
     },
     "pmns_sole_axiom_hw1_source_transfer_boundary_note": {
@@ -240305,7 +240427,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 26.908,
+      "load_bearing_score": 26.91,
       "load_bearing_step": "On the eight BZ-corner basis with Phi|alpha>=|X_alpha>, lattice site phases P_mu act as alpha -> alpha xor e_mu, so Phi^dagger P_mu Phi is the cube-shift S_mu and the joint eigensystem is the Z_2^3 Hadamard character basis.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -240353,7 +240475,7 @@
       },
       "runner_path": "scripts/frontier_site_phase_cube_shift_intertwiner.py",
       "title": "Site-Phase / Cube-Shift Intertwiner Note",
-      "transitive_descendants": 960,
+      "transitive_descendants": 961,
       "verdict_rationale": "Issue checked: whether the lattice site-phase operators and abstract cube shifts are exactly intertwined on the restricted BZ-corner support. The runner directly checks the bit-flip law, the isometry, pulled-back operators, and all joint eigenstates with zero reported discrepancies. The note explicitly avoids identifying the support with physical generations, so the scoped theorem closes as exact algebra rather than an unratified physical bridge."
     },
     "sixth_family_complex_boundary_note": {
@@ -304635,7 +304757,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 23.408,
+      "load_bearing_score": 23.41,
       "load_bearing_step": "Every Z2-invariant Hermitian operator on the axis-selected hw=1 carrier has the five-real-parameter normal form M(a,b,c,d)=[[a,d,d],[d*,b,c],[d*,c,b]].",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -304687,7 +304809,7 @@
       },
       "runner_path": "scripts/frontier_z2_hw1_mass_matrix_parametrization.py",
       "title": "Z_2 `hw=1` Mass-Matrix Parametrization Note",
-      "transitive_descendants": 960,
+      "transitive_descendants": 961,
       "verdict_rationale": "Issue checked: whether the residual Z2 normal form is an exact theorem rather than a mass-hierarchy claim. The load-bearing statement is a finite-dimensional Hermitian invariant-space parametrization for an explicitly given Z2 action, and the runner checks the dimension count, sign eigenvector, block reduction, closed-form spectrum, generic distinctness, and S3-locus degeneracy. The carrier/residual-subgroup identification is part of the scoped theorem, not an independently derived physical hierarchy."
     },
     "z3_character_isomorphism_color_generation_open_gate_note_2026-05-10": {
@@ -304913,9 +305035,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2374,
-    "re_audit_required": 6,
-    "row_count": 2425,
-    "seeded_new": 1
+    "preserved_existing": 2382,
+    "re_audit_required": 0,
+    "row_count": 2426,
+    "seeded_new": 0
   }
 }

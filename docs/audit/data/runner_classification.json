@@ -6720,6 +6720,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_dm_su3_gauge_loop_derivation_attempt.py"
     },
+    "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": {
+      "assert_count": 0,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/dm_thermal_average_sommerfeld_normalization.py"
+    },
     "dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19": {
       "assert_count": 1,
       "counts": {
@@ -15702,7 +15714,7 @@
         "A": 1,
         "B": 0,
         "C": 1,
-        "D": 0
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -17435,6 +17447,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_pmns_oriented_cycle_selection_structure.py"
+    },
+    "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/pmns_oriented_cycle_two_prong_composition_runner.py"
     },
     "pmns_right_conjugacy_invariant_no_go_note": {
       "assert_count": 1,
@@ -30371,6 +30395,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/dm_thermal_average_sommerfeld_normalization.py": {
+      "assert_count": 0,
+      "claims": [
+        "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/edge_deletion_boundary_sweep.py": {
@@ -51682,7 +51721,7 @@
         "A": 1,
         "B": 0,
         "C": 1,
-        "D": 0
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -53073,6 +53112,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/pmns_oriented_cycle_two_prong_composition_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/poisson_3d_self_field.py": {
@@ -55332,16 +55386,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 319,
+    "decoration_candidates": 320,
     "dominant_class_distribution": {
-      "A": 227,
+      "A": 228,
       "B": 274,
       "C": 748,
       "D": 299,
-      "none": 440
+      "none": 441
     },
-    "runners_classified": 1988,
+    "runners_classified": 1990,
     "runners_with_C": 970,
-    "runners_with_D": 583
+    "runners_with_D": 584
   }
 }

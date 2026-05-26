@@ -20789,6 +20789,18 @@
       "to": "pmns_oriented_cycle_channel_value_law_note"
     },
     {
+      "from": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
+      "to": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
+      "to": "pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
+      "to": "pmns_oriented_cycle_channel_value_law_note"
+    },
+    {
       "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
       "to": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
     },
@@ -51852,9 +51864,9 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4d34d0b265f8e4cca818d46a67d135722f9ae1be9aef4da93a3382077539638f",
+      "note_hash": "ec46d1ba15c5052cb63318e6df0aedb73f823b32b78737e79f62cad401d0d765",
       "path": "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "runner_path": null,
+      "runner_path": "scripts/dm_thermal_average_sommerfeld_normalization.py",
       "title": "DM Thermal Average + Sommerfeld Argument Normalization \u2014 Named Non-Derivation Import"
     },
     "dm_wilson_direct_descendant_batch_authority_note_2026-05-03": {
@@ -66473,8 +66485,10 @@
         "lattice_nn_deterministic_rescale_note",
         "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "1b12e7d94ade1dee3a4b8bb3edc53908ce0793da525aba12f7cf8b911a228198",
+      "helper_runner_paths": [
+        "scripts/lattice_nn_rescaled_continuum_identification.py"
+      ],
+      "note_hash": "3e58a6fd32cf280ad2e11aa9dba0ba924add6a51fc40a1323f8d53eaece95d48",
       "path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note"
@@ -69114,6 +69128,22 @@
       "path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure"
+    },
+    "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26": {
+      "claim_id": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
+        "pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16",
+        "pmns_oriented_cycle_channel_value_law_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "227ce63592f31e67c5960b0c40e554a7a6a63633db78b9035c3e2d85ddc69c7d",
+      "path": "docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/pmns_oriented_cycle_two_prong_composition_runner.py",
+      "title": "PMNS Oriented-Cycle Two-Prong Composition Bridge"
     },
     "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17": {
       "claim_id": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
@@ -85466,7 +85496,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 595,
+      "bounded_theorem": 596,
       "decoration": 1,
       "meta": 191,
       "no_go": 74,
@@ -85475,7 +85505,7 @@
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1020,
+      "bounded_theorem": 1021,
       "decoration": 1,
       "meta": 191,
       "no_go": 177,
@@ -85483,10 +85513,10 @@
       "open_gate": 125,
       "positive_theorem": 593
     },
-    "edge_count": 9774,
-    "leaf_count": 785,
-    "node_count": 2539,
+    "edge_count": 9777,
+    "leaf_count": 784,
+    "node_count": 2540,
     "root_count": 838,
-    "runners_with_path": 2103
+    "runners_with_path": 2105
   }
 }

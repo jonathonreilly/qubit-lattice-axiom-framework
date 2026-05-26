@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -959,7 +959,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12942,23 +12941,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Exact symbolic construction of projectors and matrix units from C and T_i, rank/spanning verification of M_3(C), invariant-subspace checks, and Burnside rank-one witness.  _(class `A`)_
 - **chain closes:** True — The theorem is explicitly abstract matrix algebra with zero ledger dependencies, and the live exact SymPy runner reproduced the cached PASS=50, FAIL=0 result without importing framework/audit/lattice modules.
 - **rationale:** All claimed algebraic conclusions follow constructively: the P_i project onto the three coordinate lines, P_i C^k P_j produces every matrix unit, the nine units span M_3(C), and irreducibility/no-proper-quotient follows. The note explicitly strips away the physical generation interpretation, so no open staggered-Dirac or physical-lattice gate is load-bearing here.
-- **auditor confidence:** high
-
-### `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02`
-
-- **Note:** [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** On an already-retained finite C^3 carrier with rank-one translation-character projectors P_X_i and a three-cycle C₃[111], the common invariant subspaces are only {0} and C^3, equivalently the generators produce M_3(C).
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T204524Z-b0d3d08c-three_generation_observa-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Preserving the projector algebra D_3 forces any invariant subspace to be a coordinate subspace, and preserving C₃[111] forces the coordinate subset to be either empty or all three sectors.  _(class `A`)_
-- **chain closes:** False — The finite-dimensional linear algebra closes on its stated carrier. The restricted packet does not independently close the identification of that retained C^3 carrier with exact translation-character projectors and the C₃[111] operator without relying on upstream framework-carrier language that is explicitly open or admitted in cited authorities.
-- **rationale:** The runner genuinely verifies the algebraic matrix-unit generation and invariant-subspace claim, so the load-bearing step is class A. However, the note's premise is not just abstract C^3 linear algebra; it imports a retained hw=1 BZ-corner / taste-cube carrier with exact translation-character projectors and a C₃[111] cycle. The cited S3 taste-cube authority explicitly says the framework-carrier identification depends on an open staggered-Dirac realization gate, and retained status does not propagate through that open identification. Under the negative-claim gate, N3 fails because the packet’s retained-carrier language hides an unclosed carrier-identification wall, so a clean no-proper-quotient boundary cannot be ratified from this restricted packet alone.
-- **open / conditional deps cited:**
-  - `S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`
-  - `S3_MASS_MATRIX_NO_GO_NOTE.md`
-  - `Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `three_generation_observable_theorem_note`

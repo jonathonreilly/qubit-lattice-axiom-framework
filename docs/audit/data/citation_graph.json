@@ -79500,7 +79500,7 @@
         "z2_hw1_mass_matrix_parametrization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "469d962029dae7256fe9da079fb667eb5f080750d54ee48eff36632cb05248d5",
+      "note_hash": "ecc3386078b1401209aeca659957c594acc0ae989fcffccffacd11f7ee8845e4",
       "path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "title": "Three-Generation Observable: No-Proper-Quotient Narrow Theorem"

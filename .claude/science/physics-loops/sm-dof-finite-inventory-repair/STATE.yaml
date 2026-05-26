@@ -1,0 +1,47 @@
+loop: sm-dof-finite-inventory-repair
+branch: physics-loop/sm-dof-finite-inventory-repair-20260526
+target_claim_id: sm_relativistic_dof_count_import_note_2026-05-17
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: finite declared-inventory arithmetic certificate only
+hypothetical_axiom_status: null
+admitted_observation_status: declared Standard Model particle inventory only
+proposal_allowed: false
+proposal_allowed_reason: "This is bounded inventory arithmetic; independent audit is required."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle: 1
+active_route: finite unbroken-SM inventory count with retained 7/8 factor
+files_touched:
+  - docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  - scripts/frontier_sm_relativistic_dof_finite_inventory.py
+  - outputs/sm_relativistic_dof_finite_inventory_2026-05-26.txt
+verification:
+  audit_pipeline: pass_pre_existing_maradudin_warning_only
+  runner: PASS=37 FAIL=0
+  py_compile: pass
+  audit_lint_strict: pass_pre_existing_warning_only
+  controlled_vocabulary_check: pass
+  vocab_lint_report_only: pass
+  diff_check: pass
+audit_queue:
+  claim_type: bounded_theorem
+  audit_status: unaudited
+  effective_status: unaudited
+  deps:
+    - hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10
+  open_dependency_paths: []
+  transitive_descendants: 248
+  load_bearing_score: 8.96
+  position: 251
+  ready: true
+  criticality: high
+runner_classification_hint:
+  A: 0
+  B: 3
+  C: 0
+  D: 0
+  dominant: B
+review_loop_disposition: PASS_WITH_BOUNDED_CLAIMS
+next_exact_action: commit, push, and open review PR
+stop_condition: review PR opened for independent audit, then continue campaign to next ranked row

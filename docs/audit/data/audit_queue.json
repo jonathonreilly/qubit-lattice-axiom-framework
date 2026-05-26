@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 250,
-    "high": 344,
+    "high": 343,
     "leaf": 312,
     "medium": 326
   },
@@ -7060,28 +7060,27 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
+      "claim_id": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "su3_fusion_engine_pr1_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+        "su3_cube_perron_solve_combined_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.729,
-      "note_path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
+      "load_bearing_score": 7.719,
+      "note_path": "docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
-      "transitive_descendants": 149
+      "runner_path": "scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py",
+      "transitive_descendants": 148
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -10957,32 +10956,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_koide_a1_probe_gravity_phase_2026_05_08_probe3.py",
-      "transitive_descendants": 148
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "su3_cube_perron_solve_combined_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.719,
-      "note_path": "docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py",
       "transitive_descendants": 148
     },
     {
@@ -37170,5 +37143,5 @@
     }
   ],
   "ready_count": 7,
-  "total_pending": 1232
+  "total_pending": 1231
 }

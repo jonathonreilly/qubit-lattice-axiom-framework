@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 162 |
-| **retained_bounded** | 462 |
+| **retained_bounded** | 463 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 747 |
+| `audited_clean` | 748 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 43 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1461 |
+| `unaudited` | 1460 |
 
 | claim_type | count |
 |---|---:|
@@ -755,6 +755,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12047,6 +12048,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Peter-Weyl/Schur character orthogonality plus finite-dimensional diagonal-operator algebra on the SU(3) character truncation, reducing convolution by Z to eigenvalue multiplication by rho_(p,q).  _(class `A`)_
 - **chain closes:** True — The source has zero ledger dependencies and is scoped to textbook compact-Lie-group character algebra on an abstract finite truncation. The live runner reproduced PASS=13, FAIL=0, including Schur orthogonality checks, algebraic reduction, uniqueness, positivity, self-adjointness, swap symmetry, and abstract numerical sanity cases.
 - **rationale:** The theorem's conclusions are exactly the standard finite-dimensional character-convolution consequences of Schur orthogonality and diagonal linear algebra. The note explicitly forbids importing Wilson action, beta=6 data, or the parent plaquette environment identification, and the runner treats companion Wilson coefficients only as abstract positive symmetric input data. Within that boundary, no gap remains.
+- **auditor confidence:** high
+
+### `su3_cube_perron_solve_combined_theorem_note_2026-05-03`
+
+- **Note:** [`SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrowed L_s=2 PBC cube structural audit: 12 plaquettes, 24 directed links, all incidences forward, bipartite plaquette graph with 6:6 coloring, and trivial-sector Reference B recovery only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260526T015439Z-c7adf735-su3_cube_perron_solve_co-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the all-trivial plaquette assignment lambda=(0,0), the cube contribution is constant so rho=delta_(0,0), and inserting that rho into the retained source-sector operator gives P_trivial(6)=0.4225317396, while the L_s=2 PBC geometry and bipartite adjacency are verified by finite enumeration.  _(class `C`)_
+- **chain closes:** True — Within the narrowed scope, the runner constructs the finite cube, checks link incidence/orientation and BFS bipartiteness, then computes the rho=delta Perron solve from the displayed source-sector operator. The non-trivial rho and any P_cube bound are explicitly outside the audited claim.
+- **rationale:** All cited authorities needed for the narrowed claim are retained-grade, and the runner source performs real finite enumeration and a Perron computation rather than merely printing the target value. The hard-coded Reference B tolerance is only a comparison check; the reported P_trivial value is recomputed from rho=delta in the source-sector matrix. No physical full-cube rho, non-trivial intertwiner trace, or P_cube >= P_trivial bound is audited or needed for this narrowed theorem.
 - **auditor confidence:** high
 
 ### `su3_dabc_symmetric_theorem_note_2026-05-02`

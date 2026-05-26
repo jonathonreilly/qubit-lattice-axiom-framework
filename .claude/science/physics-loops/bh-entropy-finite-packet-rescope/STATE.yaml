@@ -26,5 +26,6 @@ no_go_routes:
   - "No Bekenstein-Hawking coefficient derivation."
   - "No all-L OBC Widom asymptotic theorem."
   - "No L<=96 cache import in binding scope."
-next_exact_action: "Run audit pipeline and lints, then open PR if clean."
-stop_condition: "Block PR opened or verification fails."
+pr_url: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1924"
+next_exact_action: "Await independent audit/review; campaign pivots to next audited-conditional row."
+stop_condition: "Block PR opened and verified."

@@ -1869,10 +1869,6 @@
       "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
-      "from": "bh_entropy_derived_note",
-      "to": "bh_entropy_rt_ratio_widom_no_go_note"
-    },
-    {
       "from": "bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29",
       "to": "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25"
     },
@@ -42591,14 +42587,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "bh_entropy_rt_ratio_widom_no_go_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "51dea579896de1b86472f746bc43ae3dd0437004975e001d1f19679666d63bc9",
+      "note_hash": "c7d9ae71013967f24efc421677925da1040f21526dc3ae4a75c259cf06fb0840",
       "path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
-      "title": "Bekenstein-Hawking Entropy Derived from Lattice Entanglement"
+      "title": "Bekenstein-Hawking Entropy Finite-Lattice Cache Certificate"
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "claim_id": "bh_entropy_rt_ratio_widom_no_go_note",
@@ -84771,6 +84765,7 @@
     "bell_inequality_derived_note",
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
     "beyond_lattice_qcd_note",
+    "bh_entropy_derived_note",
     "bh_entropy_rt_ratio_widom_no_go_note",
     "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10",
     "block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02",
@@ -85500,10 +85495,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9777,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

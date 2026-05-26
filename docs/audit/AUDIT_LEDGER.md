@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -83,9 +83,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 1982
-- runners with (C) first-principles compute hits: 969
-- runners with (D) external comparator hits: 583
-- decoration candidates (no C, no D): 315
+- runners with (C) first-principles compute hits: 968
+- runners with (D) external comparator hits: 582
+- decoration candidates (no C, no D): 316
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -879,7 +879,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
-| `bh_entropy_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1724,21 +1723,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The linearity of the graph path-sum is asserted to force I_3 = 0 as a mathematical identity, making the Born rule a theorem rather than a postulate, while the same graph structure is asserted to supply gravity through S = L(1-f).  _(class `A`)_
 - **chain closes:** False — The runner verifies finite algebraic/numerical behavior of the chosen model, but it computes detector probabilities as np.abs(psi)**2 and therefore assumes the Born readout it claims to derive. No one-hop authority or theorem closes the graph-to-gravity physical bridge or the claim that lattice QCD lacks any analogous construction.
 - **rationale:** Issue: the note promotes a finite toy-model computation and an I_3 identity into a Born-rule derivation and a lattice-QCD no-analog claim. Why this blocks: the Sorkin test uses P = |psi|^2 in the runner, and the graph-gravity and lattice-QCD comparison bridges are not derived or supported by any cited authority. Repair target: provide a retained bridge theorem deriving the probability/readout rule without imposing |psi|^2, plus a retained authority or theorem for the lattice-QCD comparison. Claim boundary until fixed: the runner supports only that the specified numerical model changes its propagated profile when the Poisson field is included and that its Born-probability three-slit calculation has negligible I_3.
-- **auditor confidence:** high
-
-### `bh_entropy_derived_note`
-
-- **Note:** [`BH_ENTROPY_DERIVED_NOTE.md`](../../docs/BH_ENTROPY_DERIVED_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-L lattice-entanglement RT-ratio observations for the OBC half-filled NN free-fermion carrier, plus the note's reliance on the cited Widom no-go for the asymptotic 1/6-vs-1/4 interpretation.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T234207Z-9df1e0be-bh_entropy_derived_note-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The finite-L RT ratio near 0.24 is only a bounded companion number because the same carrier has asymptotic RT ratio r(L) -> c_Widom = 1/6, not 1/4.  _(class `B`)_
-- **chain closes:** False — The finite-L runner computations are substantive, but the asymptotic statement that the 0.24 value is a finite-L artifact converging to 1/6 depends on the cited Widom no-go's OA-1/OA-2 bridges, which are explicitly open. The L<=96 probe used in the prose is also deferred as cache-not-in-packet by the cited authority.
-- **rationale:** The runner genuinely builds the lattice Hamiltonians, correlation matrices, entropies, SVD ranks, and finite-L ratios; it is not a print-only or pure renaming runner. However, the load-bearing asymptotic interpretation is imported from docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md, which retained only finite-L<=64 evidence and the exact 2D Widom integral while explicitly leaving the all-L Widom/OBC and threshold-rank bridges open. No-Go gate N7 defeats a clean negative boundary: the strongest objection, accepted inside the cited packet, is that finite-L fits do not prove lim_L r(L) != 1/4. The runner's 6a PASS wording also overstates its own output because rt_inf=0.2108 is within 35% of 1/6 but is not closer to 1/6 than to 1/4.
-- **open / conditional deps cited:**
-  - `BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`
 - **auditor confidence:** high
 
 ### `bh_entropy_rt_ratio_widom_no_go_note`

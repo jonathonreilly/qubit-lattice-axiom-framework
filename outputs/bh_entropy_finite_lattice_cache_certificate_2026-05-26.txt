@@ -1,0 +1,51 @@
+[PASS] [A] note boundary contains: Claim type:** bounded_theorem
+[PASS] [A] note boundary contains: Status:** bounded finite-lattice cache certificate
+[PASS] [A] note boundary contains: not a derivation of the Bekenstein-Hawking coefficient
+[PASS] [A] note boundary contains: finite observations
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits broad-scope phrase: BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE
+[PASS] [A] note omits broad-scope phrase: retained
+[PASS] [A] note omits broad-scope phrase: L = 64
+[PASS] [A] note omits broad-scope phrase: L = 96
+[PASS] [A] note omits broad-scope phrase: c_Widom
+[PASS] [A] note omits broad-scope phrase: asymptote
+
+=== finite-lattice BH entropy cache ===
+[PASS] [A] cache contains: runner: scripts/frontier_bh_entropy_derived.py
+[PASS] [A] cache contains: exit_code: 0
+[PASS] [A] cache contains: status: ok
+[PASS] [A] cache contains: CHECKS PASSED: 5/5
+[PASS] [A] 2D area-law row parsed
+[PASS] [A] 3D area-law row parsed
+[PASS] [C] 2D finite fit R^2 exceeds 0.999 (0.999664)
+[PASS] [C] 2D finite fit R^2 matches certificate (0.999664)
+[PASS] [C] 3D finite fit R^2 exceeds 0.998 (0.998952)
+[PASS] [C] 3D finite fit R^2 matches certificate (0.998952)
+[PASS] [A] 2D finite RT mean parsed
+[PASS] [A] 3D finite RT mean parsed
+[PASS] [C] 2D finite comparison is near 1/4
+[PASS] [C] 3D finite comparison is not near 1/4
+[PASS] [C] 2D finite RT mean is 0.2364 (0.2364)
+[PASS] [C] 2D finite RT deviation is 5.4 percent (5.4)
+[PASS] [C] 3D finite RT mean is 0.1222 (0.1222)
+[PASS] [C] 3D finite RT deviation is 51.1 percent (51.1)
+[PASS] [A] gravity monotonicity row parsed
+[PASS] [A] species spread row parsed
+[PASS] [A] summary species spread row parsed
+[PASS] [C] gravity modulation is monotone for g >= 0.5
+[PASS] [C] printed species spread rounds to zero (0.000000)
+[PASS] [C] summary species spread is below 1e-12 (2.78e-17)
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type remains bounded_theorem
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/frontier_bh_entropy_derived.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] no open dependency paths remain ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (71)
+
+BH entropy finite-lattice cache certificate: PASS
+PASS=44 FAIL=0

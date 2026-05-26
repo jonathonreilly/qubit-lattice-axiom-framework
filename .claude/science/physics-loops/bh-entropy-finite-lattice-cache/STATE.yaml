@@ -1,0 +1,38 @@
+loop: bh-entropy-finite-lattice-cache
+date: 2026-05-26
+branch: physics-loop/bh-entropy-finite-lattice-cache-repair-20260526
+base: origin/main
+mode: campaign
+target: bounded-support
+cycle: 1
+active_route: finite_lattice_cache_scope_repair
+hard_residual: infinite_size_entropy_coefficient_and_horizon_carrier
+files_touched:
+  - docs/BH_ENTROPY_DERIVED_NOTE.md
+  - scripts/frontier_bh_entropy_derived.py
+  - outputs/bh_entropy_finite_lattice_cache_certificate_2026-05-26.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+claim_status:
+  claim_id: bh_entropy_derived_note
+  actual_current_surface_status: bounded-support
+  claim_type_author_hint_after_repair: bounded_theorem
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  bare_retained_allowed: false
+verification_completed:
+  - python3 -m py_compile scripts/frontier_bh_entropy_derived.py
+  - bash docs/audit/scripts/run_pipeline.sh
+  - PYTHONPATH=scripts python3 scripts/frontier_bh_entropy_derived.py
+  - python3 docs/audit/scripts/audit_lint.py --strict
+  - python3 scripts/render_controlled_vocabulary.py --check
+  - python3 scripts/vocab_lint.py --report-only docs/BH_ENTROPY_DERIVED_NOTE.md
+  - git diff --check
+next_exact_action: commit, push, and open PR
+stop_condition: coherent block packaged for review

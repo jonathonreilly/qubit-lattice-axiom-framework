@@ -26,5 +26,6 @@ no_go_routes:
   - "No sole-axiom free-point active-block identification."
   - "No graph-first selected-axis antiunitary derivation."
   - "No PMNS value-selection law."
-next_exact_action: "Run pipeline/lints, then open PR."
-stop_condition: "Block PR opened or verification fails."
+pr_url: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1923"
+next_exact_action: "Await independent audit/review; campaign pivots to next audited-conditional row."
+stop_condition: "Block PR opened and verified."

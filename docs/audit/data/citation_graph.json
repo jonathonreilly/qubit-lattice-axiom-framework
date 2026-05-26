@@ -42595,10 +42595,10 @@
         "bh_entropy_rt_ratio_widom_no_go_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "51dea579896de1b86472f746bc43ae3dd0437004975e001d1f19679666d63bc9",
+      "note_hash": "a09128dafd5c549b21fb581d4fdede4d5e829f184395ca419bf98e0266f71afa",
       "path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
-      "title": "Bekenstein-Hawking Entropy Derived from Lattice Entanglement"
+      "title": "Bekenstein-Hawking Entropy Bounded Lattice Companion"
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "claim_id": "bh_entropy_rt_ratio_widom_no_go_note",

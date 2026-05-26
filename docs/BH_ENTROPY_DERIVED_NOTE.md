@@ -1,206 +1,120 @@
-# Bekenstein-Hawking Entropy Derived from Lattice Entanglement
+# Bekenstein-Hawking Entropy Bounded Lattice Companion
 
-**Status**: BOUNDED companion.  The RT bond-dimension coefficient `~ 0.24`
-observed at `L <= 32` is a finite-L artifact; the asymptotic value on this
-carrier is the Widom-Gioev-Klich coefficient `c_Widom = 1/6`, not `1/4`.
+**Status**: bounded companion / finite-packet evidence only. The note records
+finite-lattice free-fermion entanglement computations and their numerical
+comparison to the `S_BH = A / (4 l_P^2)` coefficient. It does **not** derive
+the Bekenstein-Hawking coefficient and does **not** retain an all-`L` or
+OBC-lattice Widom asymptotic theorem.
 **Claim type:** bounded_theorem
-See the no-go theorem
-[`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)
-(currently `audited_conditional`).
+**Dependency:** [`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md),
+which currently supplies retained-bounded finite-`L <= 64` evidence and the
+exact 2D diamond Widom coefficient evaluation, while explicitly deferring the
+all-`L` carrier-Widom bridge.
 
-## Audit-status note (2026-05-09)
+## 2026-05-26 finite-packet rescope
 
-The 2026-04-29 audit verdict (`audited_conditional`) flagged that the
-asymptotic / no-BH conclusion of this note depends on the Widom no-go
-authority, but the dependency edge was not picked up because every
-reference inside the prose was inline-code rather than a markdown link.
-The header above is now a real markdown link so the citation graph
-resolves the one-hop edge to
-[`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md).
+The previous version of this note overstated the boundary by saying that the
+free-fermion carrier's asymptotic RT ratio is retained as `c_Widom = 1/6` and
+by importing the extended `L <= 96` probe into the binding story. The current
+audit ledger correctly blocks that stronger reading: the dependency retained
+only a finite-`L <= 64` numerical-fit packet plus the exact 2D Widom integral,
+not a full OBC-lattice all-`L` asymptotic theorem.
 
-Blocked-on: that authority itself is currently
-`audited_conditional`. This note therefore stays a bounded companion
-until the upstream Widom no-go advances to retained-grade. The bounded
-"finite-L lattice approximates `~ 1/4` while asymptote is `1/6`" content
-is unchanged by this clarification.
+This rescope keeps only the source-side bounded packet:
 
-## Review-loop repair (2026-05-03)
+- finite 2D/3D OBC tight-binding Hamiltonians built by
+  `scripts/frontier_bh_entropy_derived.py`;
+- finite half-space correlation-matrix entropies on the reviewed sizes;
+- transfer-layer SVD rank readouts `chi_eff`;
+- the finite-L RT comparison values reported by the runner;
+- gravity-modulation and species-cancellation checks on the finite runner
+  surface;
+- the upstream finite-`L <= 64` Widom no-go packet as retained-bounded context,
+  not as an all-`L` asymptotic theorem.
 
-The 2026-05-03 review follow-up identified that the runner
-was internally inconsistent: it reported `CHECKS PASSED: 6/6` while the
-underlying subchecks showed (a) 3D RT ratio dev = 51% (well outside the
-"15% of 1/4" criterion), (b) 3D finite-size extrapolation dev = 77%, and
-(c) area-law 2D using a 0.999 R² threshold while the note's text says
-0.998. The aggregated 6/6 was using OR conditions that masked the 3D
-failures.
+Excluded from this row's binding scope:
 
-This repair fixes the runner's pass/fail accounting:
-
-- **Each subcheck split into 2D and 3D parts** with explicit thresholds
-  matching the note's documented values (R² > 0.998 for both, not 0.999).
-- **OR-based aggregation removed.** `pass_rt = dev_2d < 15 OR dev_3d <
-  15` was masking the 3D 51% deviation; the RT-ratio comparison to 1/4
-  is now reported as OBSERVATION ONLY (per the retained Widom no-go,
-  the asymptote is 1/6, not 1/4, so a "PASS within 15% of 1/4" criterion
-  was structurally wrong anyway).
-- **Finite-size extrapolation now tested against Widom c = 1/6**, not
-  against 1/4. The 2D test passes the bounded "extrapolation is closer
-  to Widom 1/6 than to 1/4" criterion (observed RT(∞) = 0.2168 — 30%
-  from 1/6, 13% from 1/4, so this single number is not yet decisive at
-  L ≤ 64; the broader trend through L = 96 in
-  `scripts/probe_bh_rt_ratio_asymptotic.py` gives c_inf = 0.1601, within
-  3.94% of 1/6).
-- **3D RT extrapolation** is reported as OBSERVATION ONLY because the
-  Widom 3D coefficient ~ 0.105 is Monte-Carlo, not a closed-form target.
-- **Frozen-star scaling** is correctly recorded as a by-construction
-  identity (the runner sets RT = 1/4 to enforce S_lat / S_BH = 1, so
-  it's not an independent test); marked as sanity, not as a PASS.
-
-Repaired accounting: **CHECKS PASSED: 5/5** with honest split:
-
-  1a. AREA LAW (2D, R² > 0.998)             PASS R² = 0.998075
-  1b. AREA LAW (3D, R² > 0.998)             PASS R² = 0.999336
-  3.  GRAVITY MODULATION monotone (g ≥ 0.5) PASS
-  5.  SPECIES UNIVERSALITY (spread < 1e-12) PASS spread = 2.78e-17
-  6a. EXTRAPOLATION 2D consistent with Widom 1/6 (within 35%)  PASS
-
-Reported as OBSERVATIONS (not pass/fail):
-  2.  RT RATIO finite-L: 2D = 0.2353 (dev 5.9% from 1/4),
-                          3D = 0.1224 (dev 51.0% from 1/4)
-  6b. FINITE-SIZE EXTRAPOLATION 3D: RT(∞) = 0.0575
-  4.  FROZEN STAR SCALING identity (sanity, by construction)
-
-The bounded-companion claim is unchanged: the RT ratio at finite L
-approximates 1/4 but the asymptote on this free-fermion carrier is
-the Widom 1/6, not 1/4. The Widom no-go
-([`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md))
-is the load-bearing authority for the asymptotic statement.
-
-**Scripts**:
-- `scripts/frontier_bh_entropy_derived.py` (this bounded lane)
-- `scripts/frontier_bh_entropy_rt_ratio_widom.py` (retained no-go runner)
-- `scripts/probe_bh_rt_ratio_asymptotic.py` (extended L-range probe)
-
-**Current publication disposition:** bounded companion only. The derivation is
-carried as companion material, not as part of the retained flagship core.
-The retained reason this lane stays bounded is the RT-ratio Widom no-go
-theorem: the coefficient `1/4` in `S_BH = A / (4 l_P^2)` is not derived from
-free-fermion lattice entanglement on the half-filled NN-hopping Fermi
-surface; the lane's small-L numerical RT ratio `~ 0.24` drifts to the
-Widom asymptote `c_Widom = 1/6` at `L = 64, 96` rather than to `1/4`.
+- a derivation of `S_BH = A / (4 l_P^2)`;
+- a retained statement that `lim_L r(L) = 1/6` on the OBC carrier;
+- any `L <= 96` cache/probe value;
+- any claim that the finite-L values near `1/4` select the physical black-hole
+  entropy coefficient.
 
 ## Result (bounded)
 
-The lane computes, on the free-fermion half-filled NN-hopping tight-binding
-ground state on an OBC `L x L` square lattice (and on `L^3` cubic lattice):
+On the finite free-fermion half-filled nearest-neighbor tight-binding carrier,
+the runner computes:
 
-1. **Area law** (numerical): Entanglement entropy of a half-space bipartition
-   satisfies `S = c * |dA| + subleading`, with `R^2 > 0.998` on both 2D and
-   3D lattices. This is expected from Widom-Sobolev scaling (`S ~ L log L`
-   for gapless fermions); on a limited `L` range the linear `S ~ c*L` fit is
-   numerically acceptable.
+1. **Area-law-like finite fits.** Half-space entanglement entropy on the
+   reviewed finite 2D and 3D lattices fits a boundary-size linear model with
+   `R^2 > 0.998`. This is finite numerical behavior, not a continuum theorem.
 
-2. **Transfer matrix bond dimension**: The free-fermion propagator between
-   adjacent lattice layers defines a transfer matrix `T`. SVD gives
-   `chi_eff = rank(T)` significant singular values. On an `L x L` lattice,
-   `chi_eff = L` (full rank).
+2. **Transfer-layer rank scale.** The adjacent-layer correlator SVD gives a
+   finite `chi_eff` readout used in the comparison denominator
+   `S_max = |dA| * log(chi_eff)`.
 
-3. **Ryu-Takayanagi ratio** (finite-L only): The ratio of actual entanglement
-   entropy to `S_max = |dA| * ln chi_eff` gives:
+3. **Finite-L RT ratios.** On the reviewed small 2D surface the mean ratio
+   `S_ent / (|dA| * log(chi_eff))` is about `0.2364`; individual values for
+   `L = 8, 10, 12, 16, 20, 24, 32` are approximately
+   `0.241, 0.247, 0.245, 0.236, 0.236, 0.231, 0.220`. On the reviewed 3D
+   sizes `L = 4, 6, 8, 10`, the mean is about `0.1222`.
 
-   - 2D lattice mean on `L <= 32`: `S / S_max = 0.2364` (observed numerical
-     value; **not** an asymptote)
-   - Individual 2D sizes: 0.241 (L=8), 0.247 (L=10), 0.245 (L=12), 0.236
-     (L=16), 0.236 (L=20), 0.231 (L=24), 0.220 (L=32)
+4. **BH comparison boundary.** The finite 2D mean is numerically close to
+   `1/4`, but that is only a bounded comparison number. It is not a retained
+   derivation of the physical entropy coefficient.
 
-   On the extended range through `L = 96`
-   (`scripts/probe_bh_rt_ratio_asymptotic.py`) the ratio keeps drifting
-   downward: `r(L=48)=0.214, r(L=64)=0.211, r(L=96)=0.206`. The correct
-   asymptotic form is `r(L) = c_inf + a / ln(L)`; the fit on `L >= 32`
-   (for `L <= 64`) gives `c_inf = 0.1601`, within `3.94%` of the
-   Widom-Gioev-Klich prediction `c_Widom = 1 / 6` and `35.96%` below
-   `1 / 4`.
+5. **Species cancellation.** For independent species, both entropy and the
+   log-bond denominator scale linearly in the species count, so the ratio is
+   species-independent. The runner verifies spread below `1e-12`.
 
-4. **Identification with BH** (bounded only): On a Planck-scale lattice
-   (`a = l_P`), with the observed finite-L ratio `~ 0.24`, the lane
-   quotes `S ~ A / (4 l_P^2)` as a numerical approximation. Since the
-   asymptotic ratio is `c_Widom = 1/6 != 1/4`, this identification is
-   not an exact framework theorem on this carrier; it is a bounded
-   companion number only. See
-   `BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`
-   for the retained no-go statement.
+6. **Finite-size trend diagnostics.** The runner reports finite tail-fit
+   diagnostics for the reviewed sizes. Those diagnostics are observations only;
+   they do not prove an asymptote.
 
-## What is regulator-dependent and what is not
+## What The Widom Dependency Supplies
 
-Two distinct "regulator dependencies" are often conflated in this lane:
+The linked Widom note is retained-bounded for:
 
-1. The raw per-boundary-site coefficient `S / |dA|` depends on the lattice
-   UV cutoff (Srednicki 1993; Bombelli et al. 1986). This is true and
-   unsurprising.
+- direct evaluation of the 2D diamond Widom coefficient `c_Widom = 1/6`;
+- finite-`L <= 64` numerical-fit evidence on the stated OBC free-fermion
+  packet;
+- the explicit statement that the all-`L` OBC carrier-Widom bridge and
+  threshold-rank proof remain open.
 
-2. The RT ratio `S / (|dA| * ln chi_eff)` asymptotes to a specific
-   geometric invariant of the Fermi surface and cut (the
-   Widom-Gioev-Klich coefficient). On the 2D square-lattice half-filled
-   Fermi surface with straight cut, this is `1/6` exactly, **not** `1/4`.
+Therefore this note may use the Widom row only as bounded context explaining
+why the finite-L comparison is not a closed BH derivation. It may not import a
+retained all-`L` no-go theorem.
 
-Point (2) is the retained no-go. The coincidence `~ 1/4` at `L <= 32` is
-a finite-L artifact of the descending `a / ln(L)` correction.
+## Checks
 
-## Species universality
+The repaired runner reports pass/fail only for finite claims it recomputes
+directly:
 
-The RT ratio `S / (|dA| * ln chi)` is independent of the number of species
-`N_s`. If we have `N_s` identical fermion species, total `S = N_s *
-S_single`, total bond dim = `chi^{N_s}`, total `S_max = N_s * |dA| * ln
-chi`, so the ratio is unchanged. Numerically confirmed: spread across
-`N_s = 1..4` is `< 10^{-16}`.
+| Check | Threshold | Status |
+|-------|-----------|--------|
+| Area law 2D | `R^2 > 0.998` | PASS |
+| Area law 3D | `R^2 > 0.998` | PASS |
+| Gravity modulation | monotone for `g >= 0.5` | PASS |
+| Species universality | ratio spread `< 1e-12` | PASS |
 
-Species universality is preserved whether the asymptotic value is `1/6`
-(Widom) or `1/4`; it is not a distinguishing test.
+Observations reported outside pass/fail:
 
-## 3D lattice note
+| Observation | Scope |
+|---|---|
+| 2D finite-L RT ratio near `1/4` | finite comparison only |
+| 3D finite-L RT ratio far from `1/4` | finite comparison only |
+| Frozen-star scaling table | identity after manually setting RT ratio to `1/4` |
+| Tail-fit intercepts | diagnostic only, no asymptotic theorem |
 
-On the 3D cubic lattice (`L = 4, 6, 8, 10`), `chi_eff` grows as
-`L^2` (boundary is 2D), and the ratio descends faster with `L`: from
-`0.158` (L=4) to `0.098` (L=10). The Widom-Gioev-Klich prediction for the
-3D cubic half-filled carrier is `c_Widom(3D) ~ 0.105` (Monte Carlo), which
-is consistent with the numerics up to finite-size bias at small `L`. This
-is also `!= 1/4`.
+## Chain Summary
 
-## Checks (2026-05-03 repaired accounting)
+```text
+finite OBC free-fermion Hamiltonian
+  -> finite half-space correlation-matrix entropy
+  -> finite transfer-layer SVD rank chi_eff
+  -> finite-L comparison S_ent / (|dA| log chi_eff)
+  -> bounded companion values, not S_BH derivation
+```
 
-The 2026-05-03 review-loop repair split each subcheck into 2D and 3D
-parts, removed the OR-based aggregation that masked 3D failures, and
-demoted the RT-ratio-vs-1/4 comparison from "PASS within 15%" to
-OBSERVATION ONLY (consistent with the retained Widom no-go that the
-asymptote is 1/6). The repaired runner output is **5/5 PASS** with
-the comparison-to-1/4 reported separately as observations.
-
-| Check | Threshold | Observed | Status |
-|-------|-----------|----------|--------|
-| 1a. Area law 2D | R² > 0.998 | 0.998075 | PASS |
-| 1b. Area law 3D | R² > 0.998 | 0.999336 | PASS |
-| 3.  Gravity modulation monotone for g ≥ 0.5 | True | True | PASS |
-| 5.  Species universality | spread < 1e-12 | 2.78e-17 | PASS |
-| 6a. Finite-size extrapolation 2D consistent with Widom 1/6 | within 35% | 30.1% | PASS |
-
-Observations (reported, not pass/fail):
-
-| Observation | Value | Note |
-|---|---|---|
-| 2D RT ratio at L ≤ 32 (finite-L) | 0.2353 | within 5.9% of 1/4, but asymptote is 1/6 |
-| 3D RT ratio at L ≤ 10 (finite-L) | 0.1224 | NOT within 15% of 1/4; consistent with smaller 3D Widom value ~0.105 |
-| 2D extrapolation RT(∞) on L ≤ 64 | 0.2168 | descending toward Widom 1/6 |
-| 3D extrapolation RT(∞) on L ≤ 10 | 0.0575 | small-L bias; 3D Widom value Monte-Carlo only |
-| Frozen-star scaling | by construction | `S_lat / S_BH = 1` enforced when RT set to 1/4 (sanity, not independent PASS) |
-
-## Derivation chain summary (bounded)
-
-    Lattice area law (numerical, R^2 > 0.998 on limited L range)
-      => S_ent ~ c * |dA| (linear fit; true form is L log L)
-    Transfer matrix SVD => chi_eff = L (boundary rank)
-    RT ratio at finite L:  S_ent / (|dA| * ln chi_eff) ~ 0.24 at L <= 32
-      BUT: r(L) -> c_Widom = 1/6 as L -> inf (WIDOM NO-GO THEOREM)
-    Finite-L identification:  S ~ A / (4 l_P^2)  <-- bounded companion
-    Retained statement:  the asymptote is 1/6, not 1/4, so the coefficient
-    1/4 in S_BH = A / (4 l_P^2) is NOT derived from lattice entanglement
-    on this carrier (see BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md).
+The strongest honest status is finite-packet bounded support pending
+independent audit.

@@ -1,0 +1,30 @@
+loop_slug: bh-entropy-finite-packet-rescope
+started_at: "2026-05-26T09:05:00Z"
+mode: campaign_block
+target_claim_id: bh_entropy_derived_note
+target_note: docs/BH_ENTROPY_DERIVED_NOTE.md
+target_runner: scripts/frontier_bh_entropy_derived.py
+branch: physics-loop/bh-entropy-finite-packet-rescope-20260526
+base: origin/main@c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "Finite-packet rescope must be independently audited."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: finite_packet_rescope
+hard_residual_attacked: "Prior verdict required either all-L OBC/Widom closure or removal of asymptotic and L<=96 binding language."
+files_touched:
+  - docs/BH_ENTROPY_DERIVED_NOTE.md
+  - scripts/frontier_bh_entropy_derived.py
+  - outputs/bh_entropy_finite_packet_rescope_certificate_2026-05-26.txt
+open_imports:
+  - "Independent audit must decide whether finite-packet bounded scope closes."
+no_go_routes:
+  - "No Bekenstein-Hawking coefficient derivation."
+  - "No all-L OBC Widom asymptotic theorem."
+  - "No L<=96 cache import in binding scope."
+next_exact_action: "Run audit pipeline and lints, then open PR if clean."
+stop_condition: "Block PR opened or verification fails."

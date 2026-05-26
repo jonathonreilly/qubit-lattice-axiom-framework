@@ -20789,10 +20789,6 @@
       "to": "pmns_active_four_real_source_from_transport_note"
     },
     {
-      "from": "pmns_oriented_cycle_selection_structure_note",
-      "to": "pmns_oriented_cycle_channel_value_law_note"
-    },
-    {
       "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
       "to": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
     },
@@ -69118,14 +69114,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "pmns_oriented_cycle_channel_value_law_note"
-      ],
-      "helper_runner_paths": [
-        "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
-        "scripts/pmns_lower_level_utils.py"
-      ],
-      "note_hash": "b04105b74a6e97f0bd6681d1507ac625123301b51a1e1a4c63cf279e9b8d7011",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "fe7f1985ad4842833bebc93d2b9330faf6d406ec329fe62fd6935d495a73eb32",
       "path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure"
@@ -85217,6 +85208,7 @@
     "pmns_commutant_eigenoperator_selector_note",
     "pmns_hw1_source_transfer_boundary_note",
     "pmns_oriented_cycle_channel_value_law_note",
+    "pmns_oriented_cycle_selection_structure_note",
     "pmns_selector_three_identity_support_note_2026-04-21_note_2026-05-17",
     "pmns_uniform_scalar_deformation_boundary_note",
     "poisson_self_gravity_loop_v3_note",
@@ -85500,10 +85492,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9777,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

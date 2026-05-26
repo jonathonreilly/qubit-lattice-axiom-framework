@@ -18,9 +18,9 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | high | `unaudited` | 191 |
-| critical | `unaudited` | 156 |
+| critical | `unaudited` | 157 |
 | medium | `unaudited` | 101 |
-| critical | `audited_conditional` | 12 |
+| critical | `audited_conditional` | 11 |
 | high | `audited_conditional` | 6 |
 | high | `audited_numerical_match` | 3 |
 | critical | `audited_numerical_match` | 2 |
@@ -142,7 +142,7 @@ publication tables phrase it.
 | critical | `pmns_lower_level_end_to_end_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_minimal_branch_nonselection_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `pmns_oriented_cycle_reduced_channel_nonselection_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `pmns_oriented_cycle_selection_structure_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
+| critical | `pmns_oriented_cycle_selection_structure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_scalar_bridge_nonrealization_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `pmns_sector_exchange_nonforcing_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `pmns_sector_orientation_orbit_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

@@ -1,0 +1,66 @@
+========================================================================================
+PMNS ORIENTED CYCLE RAW MATRIX REPAIR
+========================================================================================
+
+Question:
+  What finite matrix identities follow for the displayed cycle subspace
+  and prescribed swap-conjugation map?
+
+========================================================================================
+PART 0: SOURCE AND AUDIT METADATA FIREWALL
+========================================================================================
+  [PASS] source note states boundary phrase: Raw Matrix Identities
+  [PASS] source note states boundary phrase: raw-matrix repair
+  [PASS] source note states boundary phrase: does not claim the carrier or native observable/value law
+  [PASS] source note states boundary phrase: does not claim that the specified identity block is the physical sole-axiom free-point block
+  [PASS] source note states boundary phrase: does not claim that graph-first induces the prescribed swap-conjugation map
+  [PASS] source note states boundary phrase: The carrier and observable law remain outside this repaired row
+  [PASS] source corpus excludes stale overclaim phrase: carrier and observable law are closed
+  [PASS] source corpus excludes stale overclaim phrase: sole axiom selects
+  [PASS] source corpus excludes stale overclaim phrase: graph-first selected-axis route
+  [PASS] source corpus excludes stale overclaim phrase: [PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md]
+  [PASS] audit ledger row exists
+  [PASS] audit ledger keeps source claim type bounded_theorem  (bounded_theorem)
+  [PASS] audit ledger row reset to unaudited for re-audit  (unaudited)
+  [PASS] effective status reset to unaudited for re-audit  (unaudited)
+  [PASS] raw-matrix repair has no ledger dependencies  ([])
+  [PASS] citation graph node exists
+  [PASS] citation graph node has no dependencies  ([])
+  [PASS] citation graph has no outgoing dependency edge  ([])
+  [PASS] raw-matrix repair is queued for audit  (position=1)
+  [PASS] queued row is ready because deps are empty  (True)
+  [PASS] queued row has empty dependency list  ([])
+
+========================================================================================
+PART 1: EXACT C3 COVARIANCE COLLAPSES TO ONE COMPLEX SLOT
+========================================================================================
+  [PASS] C3 conjugation cyclically permutes forward-cycle coefficients  (rotated=[-0.3+0.7j  0.5-0.4j  1. +0.2j])
+  [PASS] The exact C3 fixed locus contains sigma*(1,1,1)  (sigma=(0.37+0.11j))
+  [PASS] The C3-fixed block is exactly sigma C
+
+========================================================================================
+PART 2: SPECIFIED IDENTITY INPUT HAS ZERO CYCLE COEFFICIENTS
+========================================================================================
+  [PASS] I3 has zero forward-cycle coefficients  (coeffs=[0.+0.j 0.+0.j 0.+0.j])
+  [PASS] Therefore the specified identity input has sigma = 0  (sigma=0j)
+  [INFO] This is only a matrix identity on I3, not a physical free-point bridge.
+
+========================================================================================
+PART 3: PRESCRIBED SWAP-CONJUGATION FIXED LOCUS
+========================================================================================
+  [PASS] The prescribed swap-conjugation map preserves the displayed cycle support
+  [PASS] Its fixed locus contains c1 = conjugate(c3), c2 real  (coeffs=[0.41+0.32j 0.28+0.j   0.41-0.32j])
+  [PASS] A generic cycle triple is not fixed by the prescribed map  (coeffs=[0.41+0.32j 0.28+0.07j 0.33-0.11j])
+  [INFO] The prescribed map leaves a 3-real fixed family: (Re c1, Im c1, c2).
+
+========================================================================================
+RESULT
+========================================================================================
+  Raw finite matrix identities:
+    - exact C3 covariance collapses the displayed cycle subspace to sigma C
+    - the specified identity input sets sigma = 0
+    - the prescribed swap-conjugation map fixes c1 = conjugate(c3), c2 real
+
+  The carrier and observable law remain outside this repaired row.
+
+PASS=29 FAIL=0

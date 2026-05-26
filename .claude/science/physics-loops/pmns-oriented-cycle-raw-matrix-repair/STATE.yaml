@@ -1,0 +1,43 @@
+loop_slug: pmns-oriented-cycle-raw-matrix-repair
+campaign: 12h-science-loop-2026-05-25
+date: 2026-05-25
+branch: physics-loop/pmns-oriented-cycle-raw-matrix-repair-20260525
+goal: |
+  Repair pmns_oriented_cycle_selection_structure_note by taking the audit
+  verdict's alternate path: re-audit only the raw finite matrix identities
+  and exclude the carrier/value-law, physical identity-block, and
+  graph-first bridge readings.
+target_status: bounded-support
+runtime_used: active campaign continuation
+cycles_completed: 1
+active_route: raw-matrix rescope
+hard_residual_attacked: |
+  audited_conditional blocker: the raw matrix identities close, but the
+  source prose had also claimed/imported physical readings requiring
+  bridge theorems. The repair removes those readings from this row.
+files_touched:
+  - docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md
+  - scripts/frontier_pmns_oriented_cycle_selection_structure.py
+  - outputs/pmns_oriented_cycle_raw_matrix_repair_2026-05-25.txt
+  - docs/audit/*
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+  - .claude/science/physics-loops/pmns-oriented-cycle-raw-matrix-repair/*
+open_imports: []
+no_go_routes:
+  - direct physical bridge derivation for graph-first to swap-conjugation
+  - direct physical bridge derivation for the free-point identity block
+review_findings: pending external reviewer
+pr_status: pending
+next_exact_action: |
+  Commit, push, and open a review PR. The independent audit lane can then
+  re-audit the dependency-free bounded matrix theorem.
+stop_condition: |
+  PR opened and audit-lane checks pass.
+status_fields:
+  actual_current_surface_status: unaudited
+  target_claim_type: bounded_theorem
+  conditional_surface_status: bounded-support
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

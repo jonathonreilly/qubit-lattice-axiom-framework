@@ -15708,15 +15708,9 @@
     "primary_runner": "scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py"
   },
   "pmns_oriented_cycle_selection_structure_note": {
-    "helper_runner_paths": [
-      "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
-      "scripts/pmns_lower_level_utils.py"
-    ],
-    "helper_runners": [
-      "frontier_pmns_oriented_cycle_channel_value_law",
-      "pmns_lower_level_utils"
-    ],
-    "is_pending": false,
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
     "primary_basename": "frontier_pmns_oriented_cycle_selection_structure",
     "primary_runner": "scripts/frontier_pmns_oriented_cycle_selection_structure.py"
   },

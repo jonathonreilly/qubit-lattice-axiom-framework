@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -937,7 +937,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9635,19 +9634,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Therefore any canonical active block has the exact native oriented-cycle decomposition A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31 with coefficient law (c_1, c_2, c_3) = diag(A C^dagger).  _(class `A`)_
 - **chain closes:** True — Within the audited scope, the projected projectors give P_i C = E12,E23,E31, so multiplying A by C^dagger extracts exactly A12,A23,A31 on the diagonal. The note explicitly excludes deriving or selecting those values from the sole axiom, so the scoped algebraic theorem closes without dependencies.
 - **rationale:** The load-bearing step is a class-A matrix identity over the projected forward-cycle basis, not a numerical fit or definition-as-derivation. The cached runner for SHA 531e8147f7aa2e6e9c13b9f5ddf6b03ae7862a18e968627d815d5f748b7f79ec exits 0 with PASS=10 FAIL=0 and checks the projected cycle, projected scalar projectors, edge basis, coefficient extraction, reconstruction, mean identity, and response-profile round trip. Residual risk is only scope creep: this audit does not certify sole-axiom selection of the canonical active block or of the coefficient values.
-- **auditor confidence:** high
-
-### `pmns_oriented_cycle_selection_structure_note`
-
-- **Note:** [`PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md`](../../docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded conditional finite algebra on M3(C): CA-1 C3 fixed locus, CA-2 I3 cycle-coefficient vanishing, and CA-3 fixed locus of the prescribed P23 swap-conjugation map; not the carrier, channel-value law, or physical bridge identifications.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260522-030039-6656c1a8-pmns_oriented_cycle_sele-004`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The retained content is exactly the three class-A finite algebraic identities: the C3 fixed locus is c1=c2=c3=sigma, I3 has zero oriented-cycle coefficients, and the prescribed P23 swap-conjugation map fixes exactly c1=conjugate(c3) with c2 real.  _(class `A`)_
-- **chain closes:** False — The raw finite algebra identities close on their own terms. The chain to the source note's sole-axiom and graph-first selection-structure readings still needs retained bridges proving the free-point active block is I3 and the graph-first route induces A_fwd = P23 A_fwd^dagger P23.
-- **rationale:** The retained algebraic content is class A: the runner performs finite 3x3 matrix checks for cyclic covariance, zero cycle coefficients on I3, and the prescribed swap-conjugation fixed-family/nonfixed examples, with no external comparator. The one-hop channel-value-law authority is marked retained, but the source note explicitly imports the sole-axiom free-point = I3 identification and the graph-first => swap-conjugation reduction as admitted premises/open class-D bridge targets. Under the rubric, that explicit bridge dependence prevents a clean verdict even though the raw matrix identities are correct.
 - **auditor confidence:** high
 
 ### `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16`

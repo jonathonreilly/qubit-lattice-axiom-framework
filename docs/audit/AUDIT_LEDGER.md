@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 484 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 17 |
-| unaudited | 1251 |
+| unaudited | 1250 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
-| ~~audited_renaming~~ | 17 |
+| ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -58,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
-| `audited_renaming` | 17 |
-| `unaudited` | 1480 |
+| `audited_renaming` | 18 |
+| `unaudited` | 1479 |
 
 | claim_type | count |
 |---|---:|
@@ -1060,6 +1060,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -6743,6 +6744,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **rationale:** The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **auditor confidence:** judicial
+
+### `koide_q_delta_linking_relation_theorem_note_2026-04-20`
+
+- **Note:** [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal identity only: for integer d >= 1 with Q_d = 2/d and Delta_d = 2/d^2, Delta_d = Q_d/d, including the d = 3 rational values; no Koide selector, Berry/radian, charged-lepton, PDG, or audit-status bridge.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-koide-q-delta-formal-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Q_d / d = (2 / d) / d = 2 / d^2 = Delta_d.  _(class `A`)_
+- **chain closes:** False — The formal equality is exact after substituting the two definitions, and the runner checks the arithmetic plus boundary text. The step is definition-level algebra with no independent framework derivation, comparator, or compression.
+- **rationale:** Issue: the note's true content is an exact algebraic restatement of the definitions Q_d = 2/d and Delta_d = 2/d^2. Why this blocks: a retained bounded theorem row would overstate the claim surface, because the proof supplies no Koide selector, Berry/radian bridge, physical charged-lepton offset, independent comparator, or compression beyond the definitions. Repair target: derive either Q_d or Delta_d from retained framework inputs, attach an independent comparator/compression, or box this as formal algebra under a real retained parent claim. Claim boundary until fixed: cite only the exact formal identity Delta_d = Q_d/d and the d = 3 rational values; the withdrawn/open bridges remain out of scope, not disproven.
+- **auditor confidence:** high
 
 ### `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`
 

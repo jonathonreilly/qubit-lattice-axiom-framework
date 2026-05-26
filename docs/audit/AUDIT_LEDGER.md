@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1271 |
+| unaudited | 1272 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1500 |
+| `unaudited` | 1501 |
 
 | claim_type | count |
 |---|---:|
@@ -82,10 +82,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1994
+- runners classified: 1995
 - runners with (C) first-principles compute hits: 972
 - runners with (D) external comparator hits: 583
-- decoration candidates (no C, no D): 327
+- decoration candidates (no C, no D): 328
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -876,7 +876,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
-| `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
@@ -2007,21 +2006,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using Plancherel and v_1+v_2+v_3=sqrt(3)a_0, Q(v)=(a_0^2+2|z|^2)/(3a_0^2), hence Q(v)=2/3 iff a_0^2=2|z|^2.  _(class `A`)_
 - **chain closes:** True — The packet supplies the definitions of a_0, z, and Q(v), and the equivalence follows by unitary Fourier Parseval plus one substitution. No physical charged-lepton bridge, observed mass input, or retained-framework dependency is within the scoped claim.
 - **rationale:** The narrow theorem closes as a pure algebraic identity on the stated positive-vector domain. The runner checks the load-bearing Parseval identity, denominator relation, closed form for Q, both implications of P1, and the geometric corollary symbolically, with no external comparator or hidden physical import needed for the scoped statement.
-- **auditor confidence:** high
-
-### `charged_lepton_koide_note_2026-04-18`
-
-- **Note:** [`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`](../../docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited whether the provided review packet closes a retained charged-lepton Koide/Brannen derivation from the restricted packet alone.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260515-145520-773586f3-charged_lepton_koide_rev-001`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note itself states that retained promotion for charged-lepton ratios is still conditional on the open Q = 2/3 extremal-principle bridge and the open delta = 2/9 physical Brannen-phase bridge.  _(class `B`)_
-- **chain closes:** False — The chain does not close because the source note explicitly leaves two physical identification bridges open: the Frobenius extremal-principle bridge for Q = 2/3 and the selected-line Brannen-phase/APS bridge for delta = 2/9.
-- **rationale:** No runner or cited authority is provided, so the audit rests on the source text alone. The source note repeatedly says the April 21-24 support stack is stronger but still does not give retained closure for either Q = 2/3 or delta = 2/9. Its own final classification says charged-lepton promotion remains conditional on the two bridges, so retained status cannot be assigned from this restricted packet.
-- **open / conditional deps cited:**
-  - `CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27`

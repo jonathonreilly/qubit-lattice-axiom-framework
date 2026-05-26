@@ -2004,6 +2004,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_charged_lepton_observable_curvature.py"
     },
+    "charged_lepton_koide_note_2026-04-18": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py"
+    },
     "charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27": {
       "assert_count": 1,
       "counts": {
@@ -31771,6 +31783,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py": {
+      "assert_count": 1,
+      "claims": [
+        "charged_lepton_koide_note_2026-04-18"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_charged_lepton_mass_hierarchy_review_note_2026-04-17_hostile_audit_findings.py": {
       "assert_count": 0,
       "claims": [
@@ -55481,15 +55508,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 327,
+    "decoration_candidates": 328,
     "dominant_class_distribution": {
-      "A": 232,
+      "A": 233,
       "B": 275,
       "C": 751,
       "D": 299,
       "none": 437
     },
-    "runners_classified": 1994,
+    "runners_classified": 1995,
     "runners_with_C": 972,
     "runners_with_D": 583
   }

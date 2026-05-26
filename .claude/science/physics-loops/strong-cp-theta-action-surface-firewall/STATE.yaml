@@ -33,6 +33,7 @@ open_imports:
 no_go_routes:
   - "Do not claim a retained or all-formulations strong-CP solution from the runner."
 review_findings: []
-pr_status: pending
-next_exact_action: "Run final gates, commit, push, open PR, verify mergeability, then continue if runtime remains."
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1952
+next_exact_action: "Verify PR mergeability, then continue if runtime remains."
 stop_condition: "Continue campaign until the 12-hour budget expires or queue exhaustion."

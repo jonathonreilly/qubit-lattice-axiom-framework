@@ -10,7 +10,7 @@
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1952
 
 ## Claim movement
 
@@ -27,3 +27,7 @@ selected-surface `theta_eff = 0` support. The row is reopened for audit:
 
 A retained-grade strong-CP closure would still need a proof of the selected
 action surface and positive mass orientation from accepted primitives.
+
+## Next action
+
+Verify PR mergeability, then continue the campaign if runtime remains.

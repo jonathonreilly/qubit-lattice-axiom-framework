@@ -1,0 +1,52 @@
+
+----------------------------------------------------------------------------------------
+Part 1: source-note scope firewall
+----------------------------------------------------------------------------------------
+  [PASS (A)] contains: 'R_conn Diagnostic from the SU(N_c) Fierz Channel-Count Identity'  ()
+  [PASS (A)] contains: 'parameterized-diagnostic repair'  ()
+  [PASS (A)] contains: 'does not admit matching rule'  ()
+  [PASS (A)] contains: 'does not admit `kappa_EW = 0`'  ()
+  [PASS (A)] contains: 'MC result is diagnostic only'  ()
+  [PASS (A)] contains: 'Primary runner:** `scripts/frontier_rconn_parameterized_diagnostic.py`'  ()
+  [PASS (A)] contains: 'not a load-bearing dependency edge'  ()
+  [PASS (A)] contains: 'derive or admit that bridge'  ()
+  [PASS (A)] contains: 'physical readout out of scope'  ()
+  [PASS (A)] contains: 'must not cite this repaired row as a'  ()
+  [PASS (A)] avoids old dependency/admission wording: 'Admitted open premise (M)'  ()
+  [PASS (A)] avoids old dependency/admission wording: 'admitted here as a named open premise'  ()
+  [PASS (A)] avoids old dependency/admission wording: '[`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`]'  ()
+  [PASS (A)] avoids old dependency/admission wording: '[`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`]'  ()
+  [PASS (A)] avoids old dependency/admission wording: '[YUKAWA_COLOR_PROJECTION_THEOREM.md]'  ()
+  [PASS (A)] avoids old dependency/admission wording: '## Part 2: Derivation of R_conn'  ()
+  [PASS (A)] avoids old dependency/admission wording: 'R_conn(derived)'  ()
+  [PASS (A)] avoids old dependency/admission wording: 'holds at ALL beta'  ()
+  [PASS (A)] avoids old dependency/admission wording: 'guaranteed at leading order'  ()
+  [PASS (A)] avoids old dependency/admission wording: 'Three independent observables'  ()
+  [PASS (A)] avoids old dependency/admission wording: 'admitted-context'  ()
+
+----------------------------------------------------------------------------------------
+Part 2: exact adjoint channel fraction
+----------------------------------------------------------------------------------------
+  [PASS (A)] F_adj(2) = (N_c^2 - 1)/N_c^2  (3/4)
+  [PASS (A)] F_adj(3) = (N_c^2 - 1)/N_c^2  (8/9)
+  [PASS (A)] F_adj(4) = (N_c^2 - 1)/N_c^2  (15/16)
+  [PASS (A)] F_adj(5) = (N_c^2 - 1)/N_c^2  (24/25)
+  [PASS (A)] F_adj(10) = (N_c^2 - 1)/N_c^2  (99/100)
+  [PASS (A)] F_adj(3) = 8/9  (8/9)
+
+----------------------------------------------------------------------------------------
+Part 3: diagnostic MC consistency
+----------------------------------------------------------------------------------------
+  [PASS (A)] MC central value is within one sigma of 8/9  (residual=0.001889, sigma=0.008000)
+  [PASS (A)] MC diagnostic is not promoted to exact theorem  ()
+
+----------------------------------------------------------------------------------------
+Part 4: live audit row after pipeline
+----------------------------------------------------------------------------------------
+  [PASS (A)] rconn_derived_note seeded  ()
+  [PASS (A)] claim type remains bounded_theorem  (bounded_theorem)
+  [PASS (A)] repaired row has no load-bearing markdown deps  (deps=[])
+
+========================================================================================
+  TOTAL: PASS=32, FAIL=0
+========================================================================================

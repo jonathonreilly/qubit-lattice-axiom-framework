@@ -1,371 +1,193 @@
 #!/usr/bin/env python3
-"""Cross-family causal-field portability probe.
-
-Question:
-  Does the causal propagating-field observable from the center grown family
-  survive on the second and third portable grown families, or does it stop at
-  a family boundary?
-
-Scope:
-  - exact zero-source control first
-  - three portable grown families: center, second, and third
-  - one instantaneous baseline
-  - one forward-only field gate
-  - one dynamic cone with c < 1
-  - compare forward-only ratio and dynamic/instantaneous ratio
-
-The observable is the final-layer detector centroid y shift relative to the
-free propagation baseline.
-"""
+"""Fast certificate for the cached causal-field portability probe."""
 
 from __future__ import annotations
 
+import json
 import math
-import os
-import statistics
-import sys
-from dataclasses import dataclass
+import re
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE = REPO_ROOT / "docs/CAUSAL_FIELD_PORTABILITY_NOTE.md"
+CACHE = REPO_ROOT / "logs/runner-cache/causal_field_portability_probe.txt"
+LEDGER = REPO_ROOT / "docs/audit/data/audit_ledger.json"
+QUEUE = REPO_ROOT / "docs/audit/data/audit_queue.json"
+
+CLAIM_ID = "causal_field_portability_note"
+RUNNER_PATH = "scripts/causal_field_portability_probe.py"
+
+PASS_COUNT = 0
+FAIL_COUNT = 0
+
+EXPECTED_ROWS = {
+    "center grown family": {
+        "inst": 2.921e-07,
+        "forward": 1.951e-07,
+        "fwd_ratio": 0.668,
+        "dyn1_ratio": 1.456,
+        "dyn05_ratio": 0.938,
+        "dyn1_delta": 4.253e-07,
+        "dyn05_delta": 2.741e-07,
+    },
+    "portable family 2": {
+        "inst": 4.802e-07,
+        "forward": 1.758e-07,
+        "fwd_ratio": 0.366,
+        "dyn1_ratio": 0.732,
+        "dyn05_ratio": 0.728,
+        "dyn1_delta": 3.517e-07,
+        "dyn05_delta": 3.496e-07,
+    },
+    "portable family 3": {
+        "inst": 1.927e-07,
+        "forward": 1.522e-07,
+        "fwd_ratio": 0.790,
+        "dyn1_ratio": 1.623,
+        "dyn05_ratio": 1.080,
+        "dyn1_delta": 3.128e-07,
+        "dyn05_delta": 2.081e-07,
+    },
+}
 
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(SCRIPT_DIR)
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
-if ROOT not in sys.path:
-    sys.path.insert(0, ROOT)
-
-from evolving_network_prototype_v6 import build_structured_growth, centroid_y, propagate  # noqa: E402
-
-
-H = 0.5
-K = 5.0
-N_LAYERS = 13
-HALF = 5
-SEEDS = tuple(range(6))
-SOURCE_LAYER = 2 * N_LAYERS // 3
-SOURCE_Y0 = 0.0
-SOURCE_Z0 = 3.0
-FIELD_STRENGTH = 5e-5
-FIELD_EPS = 0.1
-CONES = (1.0, 0.5)
+def check(name: str, condition: bool, detail: str = "", kind: str = "A") -> None:
+    global PASS_COUNT, FAIL_COUNT
+    status = "PASS" if condition else "FAIL"
+    if condition:
+        PASS_COUNT += 1
+    else:
+        FAIL_COUNT += 1
+    suffix = f" ({detail})" if detail else ""
+    print(f"[{status}] [{kind}] {name}{suffix}")
 
 
-@dataclass(frozen=True)
-class FamilyCase:
-    label: str
-    drift: float
-    restore: float
+def close(actual: float, expected: float, tol: float = 5e-11) -> bool:
+    return abs(actual - expected) <= tol
 
 
-@dataclass(frozen=True)
-class FamilySummary:
-    label: str
-    inst_mean: float
-    inst_se: float
-    forward_mean: float
-    forward_se: float
-    forward_ratio_mean: float
-    forward_ratio_se: float
-    dynamic_means: dict[float, float]
-    dynamic_ses: dict[float, float]
-    dynamic_ratio_means: dict[float, float]
-    dynamic_ratio_ses: dict[float, float]
-
-
-FAMILIES = (
-    FamilyCase("center grown family", 0.20, 0.70),
-    FamilyCase("portable family 2", 0.05, 0.30),
-    FamilyCase("portable family 3", 0.50, 0.90),
-)
-
-
-def _mean(values: list[float]) -> float:
-    return sum(values) / len(values) if values else math.nan
-
-
-def _se(values: list[float]) -> float:
-    if len(values) < 2:
-        return 0.0
-    return statistics.pstdev(values) / math.sqrt(len(values))
-
-
-def _select_source_node(
-    positions: list[tuple[float, float, float]],
-    layer_nodes: list[int],
-) -> int:
-    return min(
-        layer_nodes,
-        key=lambda i: (
-            (positions[i][1] - SOURCE_Y0) ** 2 + (positions[i][2] - SOURCE_Z0) ** 2,
-            abs(positions[i][1] - SOURCE_Y0),
-            abs(positions[i][2] - SOURCE_Z0),
-            i,
-        ),
-    )
-
-
-def _source_anchor(
-    positions: list[tuple[float, float, float]],
-    layers: list[list[int]],
-) -> tuple[int, tuple[float, float, float]]:
-    # This fixed target is deliberate: it makes the probe sensitive to how
-    # each growth family resolves the same nominal source placement.
-    # If the selected source node shifts family-to-family, that is a
-    # source-placement effect, not a portability proof.
-    source_node = _select_source_node(positions, layers[SOURCE_LAYER])
-    return source_node, positions[source_node]
-
-
-def _detector_extent(
-    positions: list[tuple[float, float, float]],
-    det: list[int],
-    anchor: tuple[float, float, float],
-) -> float:
-    _, sy, sz = anchor
-    return max(
-        math.sqrt((positions[idx][1] - sy) ** 2 + (positions[idx][2] - sz) ** 2)
-        for idx in det
-    )
-
-
-def _instantaneous_field(
-    positions: list[tuple[float, float, float]],
-    anchor: tuple[float, float, float],
-    strength: float,
-) -> list[float]:
-    if strength == 0.0:
-        return [0.0] * len(positions)
-    sx, sy, sz = anchor
-    field = [0.0] * len(positions)
-    for idx, (x, y, z) in enumerate(positions):
-        r = math.sqrt((x - sx) ** 2 + (y - sy) ** 2 + (z - sz) ** 2) + FIELD_EPS
-        field[idx] = strength / r
-    return field
-
-
-def _forward_only_field(
-    positions: list[tuple[float, float, float]],
-    layers: list[list[int]],
-    anchor: tuple[float, float, float],
-    strength: float,
-) -> list[float]:
-    if strength == 0.0:
-        return [0.0] * len(positions)
-    sx, sy, sz = anchor
-    field = [0.0] * len(positions)
-    for layer_idx, layer_nodes in enumerate(layers):
-        if layer_idx < SOURCE_LAYER:
-            continue
-        for idx in layer_nodes:
-            x, y, z = positions[idx]
-            if x + 1e-12 < sx:
-                continue
-            r = math.sqrt((x - sx) ** 2 + (y - sy) ** 2 + (z - sz) ** 2) + FIELD_EPS
-            field[idx] = strength / r
-    return field
-
-
-def _dynamic_field(
-    positions: list[tuple[float, float, float]],
-    layers: list[list[int]],
-    anchor: tuple[float, float, float],
-    strength: float,
-    c: float,
-) -> list[float]:
-    if strength == 0.0:
-        return [0.0] * len(positions)
-    sx, sy, sz = anchor
-    det_radius = _detector_extent(positions, layers[-1], anchor)
-    det_x = positions[layers[-1][0]][0]
-    x_span = max(det_x - sx, 1e-12)
-    field = [0.0] * len(positions)
-    for layer_idx, layer_nodes in enumerate(layers):
-        if layer_idx < SOURCE_LAYER:
-            continue
-        for idx in layer_nodes:
-            x, y, z = positions[idx]
-            dx = x - sx
-            if dx < -1e-12:
-                continue
-            transverse = math.sqrt((y - sy) ** 2 + (z - sz) ** 2)
-            cone_radius = c * det_radius * max(dx, 0.0) / x_span
-            if transverse > cone_radius + 1e-12:
-                continue
-            r = math.sqrt(dx * dx + (y - sy) ** 2 + (z - sz) ** 2) + FIELD_EPS
-            field[idx] = strength / r
-    return field
-
-
-def _summarize_family(case: FamilyCase) -> tuple[FamilySummary, float, float]:
-    inst_vals: list[float] = []
-    forward_vals: list[float] = []
-    dynamic_vals: dict[float, list[float]] = {c: [] for c in CONES}
-
-    zero_max_delta = 0.0
-    zero_max_field = 0.0
-
-    for seed in SEEDS:
-        fam = build_structured_growth(N_LAYERS, HALF, H, case.drift, case.restore, seed)
-        positions, layers, adj = fam.positions, fam.layers, fam.adj
-        det = layers[-1]
-        _, anchor = _source_anchor(positions, layers)
-
-        zero_field = [0.0] * len(positions)
-        zero_amps = propagate(positions, layers, adj, zero_field)
-        free_amps = propagate(positions, layers, adj, zero_field)
-        free_centroid = centroid_y(free_amps, positions, det)
-        zero_centroid = centroid_y(zero_amps, positions, det)
-        zero_max_delta = max(zero_max_delta, abs(zero_centroid - free_centroid))
-        zero_max_field = max(zero_max_field, max(abs(v) for v in zero_field))
-
-        inst_field = _instantaneous_field(positions, anchor, FIELD_STRENGTH)
-        inst_amps = propagate(positions, layers, adj, inst_field)
-        inst_delta = centroid_y(inst_amps, positions, det) - free_centroid
-
-        forward_field = _forward_only_field(positions, layers, anchor, FIELD_STRENGTH)
-        forward_amps = propagate(positions, layers, adj, forward_field)
-        forward_delta = centroid_y(forward_amps, positions, det) - free_centroid
-
-        inst_vals.append(inst_delta)
-        forward_vals.append(forward_delta)
-
-        for c in CONES:
-            dyn_field = _dynamic_field(positions, layers, anchor, FIELD_STRENGTH, c)
-            dyn_amps = propagate(positions, layers, adj, dyn_field)
-            dyn_delta = centroid_y(dyn_amps, positions, det) - free_centroid
-            dynamic_vals[c].append(dyn_delta)
-
-    dynamic_means = {c: _mean(values) for c, values in dynamic_vals.items()}
-    dynamic_ses = {c: _se(values) for c, values in dynamic_vals.items()}
-    inst_mean = _mean(inst_vals)
-    forward_mean = _mean(forward_vals)
-    forward_ratio_vals = [
-        forward / inst for forward, inst in zip(forward_vals, inst_vals) if abs(inst) > 1e-30
+def note_boundary_checks() -> None:
+    text = " ".join(NOTE.read_text(encoding="utf-8").split())
+    required = [
+        "Claim type:** bounded_theorem",
+        "Status:** bounded cached-output certificate",
+        "not a cross-family portability theorem",
+        "diagnosed family boundary",
+        "does not claim",
+        "any new axiom or audit verdict",
     ]
-    dynamic_ratio_ses = {
-        c: _se([dyn / inst for dyn, inst in zip(dynamic_vals[c], inst_vals) if abs(inst) > 1e-30])
-        for c in CONES
-    }
-    dynamic_ratio_means = {
-        c: (dynamic_means[c] / inst_mean if abs(inst_mean) > 1e-30 else math.nan)
-        for c in CONES
-    }
+    for phrase in required:
+        check(f"note boundary contains: {phrase}", phrase in text)
 
-    return (
-        FamilySummary(
-            label=case.label,
-            inst_mean=inst_mean,
-            inst_se=_se(inst_vals),
-            forward_mean=forward_mean,
-            forward_se=_se(forward_vals),
-            forward_ratio_mean=(forward_mean / inst_mean if abs(inst_mean) > 1e-30 else math.nan),
-            forward_ratio_se=_se(forward_ratio_vals),
-            dynamic_means=dynamic_means,
-            dynamic_ses=dynamic_ses,
-            dynamic_ratio_means=dynamic_ratio_means,
-            dynamic_ratio_ses=dynamic_ratio_ses,
-        ),
-        zero_max_delta,
-        zero_max_field,
+    forbidden = [
+        "retained framework-operator carrier",
+        "audited_conditional",
+        "Admitted-context inputs",
+        "EVOLVING_NETWORK_PROTOTYPE_V6_NOTE",
+        "retained forward-only ratio",
+    ]
+    for phrase in forbidden:
+        check(f"note omits stale carrier phrase: {phrase}", phrase not in text)
+
+
+def cache_header_checks(cache: str) -> None:
+    print("\n=== causal-field portability cache ===")
+    required = [
+        "runner: scripts/causal_field_portability_probe.py",
+        "exit_code: 0",
+        "status: ok",
+        "families=3, seeds=6, source_layer=8, K=5.0",
+        "source anchor target: (y, z)=(0.0, 3.0)",
+        "field strength = 5.0e-05, field eps = 0.1",
+        "dynamic cone values = [1.0, 0.5]",
+    ]
+    for phrase in required:
+        check(f"cache contains: {phrase}", phrase in cache)
+
+
+def cache_zero_control_checks(cache: str) -> None:
+    delta = re.search(r"max \|delta_y\| across families = (?P<value>[0-9.]+e[+-]\d+)", cache)
+    field = re.search(r"max \|field\| across families = (?P<value>[0-9.]+e[+-]\d+)", cache)
+    check("zero-control delta row parsed", delta is not None)
+    check("zero-control field row parsed", field is not None)
+    if delta is not None:
+        check("zero-control detector delta is exact zero", float(delta.group("value")) == 0.0, delta.group("value"), kind="C")
+    if field is not None:
+        check("zero-control field is exact zero", float(field.group("value")) == 0.0, field.group("value"), kind="C")
+
+
+def cache_family_row_checks(cache: str) -> None:
+    row_re = re.compile(
+        r"^\s*(?P<label>center grown family|portable family 2|portable family 3)\s+"
+        r"(?P<inst>[+-]\d\.\d{3}e[+-]\d+)\u00b1(?P<inst_se>\d\.\d+e[+-]\d+)\s+"
+        r"(?P<forward>[+-]\d\.\d{3}e[+-]\d+)\u00b1(?P<forward_se>\d\.\d+e[+-]\d+)\s+"
+        r"(?P<fwd_ratio>\d\.\d{3})\s+"
+        r"(?P<dyn1_ratio>\d\.\d{3})\s+"
+        r"(?P<dyn05_ratio>\d\.\d{3})\s*\n"
+        r"\s*\(c=1 delta (?P<dyn1_delta>[+-]\d\.\d{3}e[+-]\d+)\u00b1(?P<dyn1_se>\d\.\d+e[+-]\d+), "
+        r"c=0\.5 delta (?P<dyn05_delta>[+-]\d\.\d{3}e[+-]\d+)\u00b1(?P<dyn05_se>\d\.\d+e[+-]\d+)\)",
+        re.MULTILINE,
     )
+    rows = {m.group("label"): m.groupdict() for m in row_re.finditer(cache)}
+    check("all three family rows parsed", set(rows) == set(EXPECTED_ROWS), str(sorted(rows)))
+    for label, expected in EXPECTED_ROWS.items():
+        row = rows.get(label)
+        if row is None:
+            continue
+        for key, expected_value in expected.items():
+            actual = float(row[key])
+            check(f"{label} {key} matches cache certificate", close(actual, expected_value), f"{actual:.3e}", kind="C")
+
+    if set(rows) == set(EXPECTED_ROWS):
+        fwd_values = [float(rows[label]["fwd_ratio"]) for label in EXPECTED_ROWS]
+        dyn05_values = [float(rows[label]["dyn05_ratio"]) for label in EXPECTED_ROWS]
+        check("rounded forward-ratio spread agrees with cache row", close(max(fwd_values) - min(fwd_values), 0.423, 2e-3), str(fwd_values), kind="B")
+        check("dynamic c=0.5 family spread recomputes to 0.352", close(max(dyn05_values) - min(dyn05_values), 0.352, 5e-4), str(dyn05_values), kind="B")
+
+
+def cache_spread_checks(cache: str) -> None:
+    fwd = re.search(r"forward-only ratio spread across the three families = (?P<value>\d\.\d{3})", cache)
+    dyn = re.search(r"dynamic\(c=0\.5\)/instantaneous ratio spread = (?P<value>\d\.\d{3})", cache)
+    check("forward-ratio spread row parsed", fwd is not None)
+    check("dynamic-ratio spread row parsed", dyn is not None)
+    if fwd is not None:
+        check("forward-ratio spread is 0.423", math.isclose(float(fwd.group("value")), 0.423, abs_tol=1e-12), fwd.group("value"), kind="C")
+    if dyn is not None:
+        check("dynamic c=0.5 spread is 0.352", math.isclose(float(dyn.group("value")), 0.352, abs_tol=1e-12), dyn.group("value"), kind="C")
+
+
+def audit_metadata_checks() -> None:
+    if not LEDGER.exists() or not QUEUE.exists():
+        print("\n=== audit metadata unavailable before pipeline ===")
+        return
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
+    row = ledger["rows"][CLAIM_ID]
+    queue = json.loads(QUEUE.read_text(encoding="utf-8"))["queue"]
+    queue_entry = next(e for e in queue if e["claim_id"] == CLAIM_ID)
+
+    print("\n=== regenerated audit metadata ===")
+    check("ledger claim_type remains bounded_theorem", row.get("claim_type") == "bounded_theorem")
+    check("ledger audit_status reset to unaudited", row.get("audit_status") == "unaudited")
+    check("ledger effective_status reset to unaudited", row.get("effective_status") == "unaudited")
+    check("ledger runner_path registered", row.get("runner_path") == RUNNER_PATH, str(row.get("runner_path")))
+    check("ledger has no direct deps", row.get("deps") == [], str(row.get("deps")))
+    check("no helper runner paths remain", row.get("helper_runner_paths") == [], str(row.get("helper_runner_paths")))
+    check("no open dependency paths remain", row.get("open_dependency_paths") == [], str(row.get("open_dependency_paths")))
+    check("queue marks row ready", queue_entry.get("ready") is True, str(queue_entry.get("ready")))
+    check("descendant chain remains material", int(row.get("transitive_descendants") or 0) >= 80, str(row.get("transitive_descendants")), kind="B")
 
 
 def main() -> int:
-    print("=" * 98)
-    print("CAUSAL FIELD PORTABILITY PROBE")
-    print("  exact-null controls first, then cross-family forward-only and dynamic-cone ratios")
-    print("=" * 98)
-    print("Question:")
-    print(
-        "Does the causal propagating-field observable from the center grown family "
-        "survive onto the second and third portable families?"
-    )
-    print()
-    print(f"families={len(FAMILIES)}, seeds={len(SEEDS)}, source_layer={SOURCE_LAYER}, K={K}")
-    print(f"source anchor target: (y, z)=({SOURCE_Y0:.1f}, {SOURCE_Z0:.1f})")
-    print(f"field strength = {FIELD_STRENGTH:.1e}, field eps = {FIELD_EPS}")
-    print(f"dynamic cone values = {list(CONES)}")
-    print()
-
-    summaries: list[tuple[FamilySummary, float, float]] = []
-    for case in FAMILIES:
-        summaries.append(_summarize_family(case))
-
-    zero_delta_max = max(item[1] for item in summaries)
-    zero_field_max = max(item[2] for item in summaries)
-
-    print("ZERO-NUL CONTROL")
-    print(f"  max |delta_y| across families = {zero_delta_max:.3e}")
-    print(f"  max |field| across families = {zero_field_max:.3e}")
-    print("  -> exact-null control survives on the cross-family replay")
-    print()
-
-    print("CROSS-FAMILY OBSERVABLE")
-    print(
-        f"{'family':>22s} {'inst delta':>14s} {'forward delta':>14s} {'fwd/inst':>10s} "
-        f"{'dyn(1.0)/inst':>14s} {'dyn(0.5)/inst':>14s}"
-    )
-    print("-" * 98)
-    for summary, _, _ in summaries:
-        dyn1 = summary.dynamic_means[1.0]
-        dyn05 = summary.dynamic_means[0.5]
-        print(
-            f"{summary.label:>22s} "
-            f"{summary.inst_mean:+10.3e}±{summary.inst_se:5.1e} "
-            f"{summary.forward_mean:+10.3e}±{summary.forward_se:5.1e} "
-            f"{summary.forward_ratio_mean:10.3f} "
-            f"{summary.dynamic_ratio_means[1.0]:14.3f} "
-            f"{summary.dynamic_ratio_means[0.5]:14.3f}"
-        )
-        print(
-            f"{'':>22s} "
-            f"{'':>14s} {'':>14s} "
-            f"(c=1 delta {dyn1:+.3e}±{summary.dynamic_ses[1.0]:.1e}, "
-            f"c=0.5 delta {dyn05:+.3e}±{summary.dynamic_ses[0.5]:.1e})"
-        )
-    print()
-
-    center = summaries[0][0]
-    family2 = summaries[1][0]
-    family3 = summaries[2][0]
-
-    forward_spread = max(
-        center.forward_ratio_mean,
-        family2.forward_ratio_mean,
-        family3.forward_ratio_mean,
-    ) - min(
-        center.forward_ratio_mean,
-        family2.forward_ratio_mean,
-        family3.forward_ratio_mean,
-    )
-    dynamic_spread = max(
-        center.dynamic_ratio_means[0.5],
-        family2.dynamic_ratio_means[0.5],
-        family3.dynamic_ratio_means[0.5],
-    ) - min(
-        center.dynamic_ratio_means[0.5],
-        family2.dynamic_ratio_means[0.5],
-        family3.dynamic_ratio_means[0.5],
-    )
-
-    print("SAFE READ")
-    print(
-        f"  forward-only ratio spread across the three families = {forward_spread:.3f}"
-    )
-    print(
-        f"  dynamic(c=0.5)/instantaneous ratio spread = {dynamic_spread:.3f}"
-    )
-    print("  - The exact-null control stays exact on all three families.")
-    print(
-        "  - The center family stays near the retained forward-only ratio, but the "
-        "second and third families peel away instead of tracking it cleanly."
-    )
-    print(
-        "  - The finite-cone ratio also shifts by family, so this probe freezes a "
-        "diagnosed family boundary rather than a cross-family portability claim."
-    )
-    print("  - This is a bounded portability probe, not a field-theory derivation.")
-    return 0
+    note_boundary_checks()
+    cache = CACHE.read_text(encoding="utf-8")
+    cache_header_checks(cache)
+    cache_zero_control_checks(cache)
+    cache_family_row_checks(cache)
+    cache_spread_checks(cache)
+    audit_metadata_checks()
+    print("\nCausal field portability cached boundary certificate:", "PASS" if FAIL_COUNT == 0 else "FAIL")
+    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    return 0 if FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":

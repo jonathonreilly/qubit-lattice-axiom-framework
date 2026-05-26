@@ -3561,10 +3561,6 @@
       "to": "causal_escape_window_note"
     },
     {
-      "from": "causal_field_portability_note",
-      "to": "evolving_network_prototype_v6_note"
-    },
-    {
       "from": "causal_field_reconciliation_note",
       "to": "causal_field_portability_note"
     },
@@ -43658,16 +43654,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "evolving_network_prototype_v6_note"
-      ],
-      "helper_runner_paths": [
-        "scripts/evolving_network_prototype_v6.py"
-      ],
-      "note_hash": "2352b17971430f95df8104d745f190c85a2b83ae731a1b41a8e1a245797f8f13",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "be99feb488df1dc337903e5fde43e1f6938106af6d9eb645dbfd74fe64c02b3e",
       "path": "docs/CAUSAL_FIELD_PORTABILITY_NOTE.md",
       "runner_path": "scripts/causal_field_portability_probe.py",
-      "title": "Causal Field Portability Note"
+      "title": "Causal Field Portability Cached Boundary Certificate"
     },
     "causal_field_reconciliation_note": {
       "claim_id": "causal_field_reconciliation_note",
@@ -43677,9 +43669,7 @@
       "deps": [
         "causal_field_portability_note"
       ],
-      "helper_runner_paths": [
-        "scripts/evolving_network_prototype_v6.py"
-      ],
+      "helper_runner_paths": [],
       "note_hash": "e501df9710c1e0ba7e9bc760642013c75809fec05eccc6705a0ee39321fa88b1",
       "path": "docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md",
       "runner_path": "scripts/causal_field_portability_probe.py",
@@ -84786,6 +84776,7 @@
     "c3_symmetry_preserved_interpretation_note_2026-05-17",
     "carrier_orbit_invariance_note_2026-05-03",
     "causal_escape_window_note",
+    "causal_field_portability_note",
     "central_band_born_dense_sweep_note",
     "central_band_born_largen_note",
     "central_band_collapse_note",
@@ -85500,10 +85491,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9777,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

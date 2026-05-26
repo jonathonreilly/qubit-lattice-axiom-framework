@@ -1,0 +1,39 @@
+loop: causal-field-portability-cached-boundary
+date: 2026-05-26
+branch: physics-loop/causal-field-portability-cached-boundary-20260526
+base: origin/main
+mode: campaign
+target: bounded-support
+cycle: 1
+active_route: cached_cross_family_boundary_certificate
+hard_residual: carrier_and_portability_criterion_derivation
+files_touched:
+  - docs/CAUSAL_FIELD_PORTABILITY_NOTE.md
+  - scripts/causal_field_portability_probe.py
+  - outputs/causal_field_portability_cached_boundary_certificate_2026-05-26.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/load_bearing_summary.json
+  - docs/audit/data/runner_classification.json
+claim_status:
+  claim_id: causal_field_portability_note
+  actual_current_surface_status: bounded-support
+  claim_type_author_hint_after_repair: bounded_theorem
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  bare_retained_allowed: false
+verification_completed:
+  - python3 -m py_compile scripts/causal_field_portability_probe.py
+  - bash docs/audit/scripts/run_pipeline.sh
+  - PYTHONPATH=scripts python3 scripts/causal_field_portability_probe.py
+  - python3 docs/audit/scripts/audit_lint.py --strict
+  - python3 scripts/render_controlled_vocabulary.py --check
+  - python3 scripts/vocab_lint.py --report-only docs/CAUSAL_FIELD_PORTABILITY_NOTE.md
+  - git diff --check
+next_exact_action: commit, push, and open PR
+stop_condition: coherent block packaged for review

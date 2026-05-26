@@ -1789,27 +1789,27 @@
       "runner": "scripts/causal_escape_window.py"
     },
     "causal_field_portability_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 0,
-        "B": 0,
+        "A": 2,
+        "B": 4,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/causal_field_portability_probe.py"
     },
     "causal_field_reconciliation_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 0,
-        "B": 0,
+        "A": 2,
+        "B": 4,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/causal_field_portability_probe.py"
     },
     "causal_impact_parameter_note": {
@@ -27801,19 +27801,19 @@
       "exists": true
     },
     "scripts/causal_field_portability_probe.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "causal_field_portability_note",
         "causal_field_reconciliation_note"
       ],
       "counts": {
-        "A": 0,
-        "B": 0,
+        "A": 2,
+        "B": 4,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/causal_impact_parameter_probe.py": {
@@ -55196,13 +55196,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 315,
+    "decoration_candidates": 316,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
-      "none": 439
+      "none": 438
     },
     "runners_classified": 1982,
     "runners_with_C": 969,

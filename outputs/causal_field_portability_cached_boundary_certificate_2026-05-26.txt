@@ -1,0 +1,66 @@
+[PASS] [A] note boundary contains: Claim type:** bounded_theorem
+[PASS] [A] note boundary contains: Status:** bounded cached-output certificate
+[PASS] [A] note boundary contains: not a cross-family portability theorem
+[PASS] [A] note boundary contains: diagnosed family boundary
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale carrier phrase: retained framework-operator carrier
+[PASS] [A] note omits stale carrier phrase: audited_conditional
+[PASS] [A] note omits stale carrier phrase: Admitted-context inputs
+[PASS] [A] note omits stale carrier phrase: EVOLVING_NETWORK_PROTOTYPE_V6_NOTE
+[PASS] [A] note omits stale carrier phrase: retained forward-only ratio
+
+=== causal-field portability cache ===
+[PASS] [A] cache contains: runner: scripts/causal_field_portability_probe.py
+[PASS] [A] cache contains: exit_code: 0
+[PASS] [A] cache contains: status: ok
+[PASS] [A] cache contains: families=3, seeds=6, source_layer=8, K=5.0
+[PASS] [A] cache contains: source anchor target: (y, z)=(0.0, 3.0)
+[PASS] [A] cache contains: field strength = 5.0e-05, field eps = 0.1
+[PASS] [A] cache contains: dynamic cone values = [1.0, 0.5]
+[PASS] [A] zero-control delta row parsed
+[PASS] [A] zero-control field row parsed
+[PASS] [C] zero-control detector delta is exact zero (0.000e+00)
+[PASS] [C] zero-control field is exact zero (0.000e+00)
+[PASS] [A] all three family rows parsed (['center grown family', 'portable family 2', 'portable family 3'])
+[PASS] [C] center grown family inst matches cache certificate (2.921e-07)
+[PASS] [C] center grown family forward matches cache certificate (1.951e-07)
+[PASS] [C] center grown family fwd_ratio matches cache certificate (6.680e-01)
+[PASS] [C] center grown family dyn1_ratio matches cache certificate (1.456e+00)
+[PASS] [C] center grown family dyn05_ratio matches cache certificate (9.380e-01)
+[PASS] [C] center grown family dyn1_delta matches cache certificate (4.253e-07)
+[PASS] [C] center grown family dyn05_delta matches cache certificate (2.741e-07)
+[PASS] [C] portable family 2 inst matches cache certificate (4.802e-07)
+[PASS] [C] portable family 2 forward matches cache certificate (1.758e-07)
+[PASS] [C] portable family 2 fwd_ratio matches cache certificate (3.660e-01)
+[PASS] [C] portable family 2 dyn1_ratio matches cache certificate (7.320e-01)
+[PASS] [C] portable family 2 dyn05_ratio matches cache certificate (7.280e-01)
+[PASS] [C] portable family 2 dyn1_delta matches cache certificate (3.517e-07)
+[PASS] [C] portable family 2 dyn05_delta matches cache certificate (3.496e-07)
+[PASS] [C] portable family 3 inst matches cache certificate (1.927e-07)
+[PASS] [C] portable family 3 forward matches cache certificate (1.522e-07)
+[PASS] [C] portable family 3 fwd_ratio matches cache certificate (7.900e-01)
+[PASS] [C] portable family 3 dyn1_ratio matches cache certificate (1.623e+00)
+[PASS] [C] portable family 3 dyn05_ratio matches cache certificate (1.080e+00)
+[PASS] [C] portable family 3 dyn1_delta matches cache certificate (3.128e-07)
+[PASS] [C] portable family 3 dyn05_delta matches cache certificate (2.081e-07)
+[PASS] [B] rounded forward-ratio spread agrees with cache row ([0.668, 0.366, 0.79])
+[PASS] [B] dynamic c=0.5 family spread recomputes to 0.352 ([0.938, 0.728, 1.08])
+[PASS] [A] forward-ratio spread row parsed
+[PASS] [A] dynamic-ratio spread row parsed
+[PASS] [C] forward-ratio spread is 0.423 (0.423)
+[PASS] [C] dynamic c=0.5 spread is 0.352 (0.352)
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type remains bounded_theorem
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/causal_field_portability_probe.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] no helper runner paths remain ([])
+[PASS] [A] no open dependency paths remain ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (84)
+
+Causal field portability cached boundary certificate: PASS
+PASS=59 FAIL=0

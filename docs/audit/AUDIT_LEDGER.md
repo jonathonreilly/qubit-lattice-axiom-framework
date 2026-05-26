@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 99 |
+| ~~audited_conditional~~ | 100 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 99 |
+| `audited_conditional` | 100 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1454 |
+| `unaudited` | 1453 |
 
 | claim_type | count |
 |---|---:|
@@ -967,6 +967,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam1_seed0_control_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13768,6 +13769,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The note's parent target is already retained-bounded, and the completed replay log supports the stated finite-lattice caution. The note adds no independent observable, runner evidence, or new physical theorem beyond the parent result's scoped interpretation.
 - **rationale:** Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law.
 - **decoration parent:** `wide_lattice_h2t_distance_law_note`
+- **auditor confidence:** high
+
+### `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25`
+
+- **Note:** [`WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md`](../../docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the explicitly stipulated real-positive, bounded-below, canonical leading-β single-trace plaquette ansatz, and using the retained β = 6 normalization authority, the Wilson plaquette action is selected and the iθ Im Tr U_P slot is excluded by the real-action convention.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260526T020321Z-3a71ba99-wilson_action_surface_se-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under (P4), the term iθ Σ_P Im Tr U_P gives a generically non-real action for θ != 0, while remaining real v(y) terms are excluded only by the stipulated canonical leading-β ansatz, leaving (β/N_c)Σ_P(N_c − Re Tr U_P).  _(class `A`)_
+- **chain closes:** False — The algebraic exclusion of the imaginary slot closes once (P4) and the canonical leading-β ansatz are admitted, and the β coefficient follows from the retained cited authority. The packet does not close or flag as accepted the P4/P5 real-positive convention or the canonical-ansatz boundary, and it acknowledges real v(y) improvements are excluded by ansatz rather than by P1-P5 alone.
+- **rationale:** The load-bearing step is a genuine class-A algebraic check on the admitted real-action surface: iθQ with real Q makes S complex for generic SU(3) configurations. The runner substantively samples SU(3), checks the small-a expansion, and reuses the retained β relation rather than relying only on printed constants. However, the uniqueness claim depends on the stipulated canonical leading-β ansatz and on P4/P5 as admitted conventions; under the no-go discipline gate, N6 remains an unclosed convention/ratification wall. The claim is therefore conditionally sound inside that surface, not a failed derivation.
 - **auditor confidence:** high
 
 ### `wilson_mu2_distance_sweep_note_2026-04-11`

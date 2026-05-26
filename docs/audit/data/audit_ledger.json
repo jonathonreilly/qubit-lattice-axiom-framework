@@ -286859,22 +286859,42 @@
       "verdict_rationale": null
     },
     "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T02:05:27.488835+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom."
+        },
+        "dep_claim_type": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c3143bdf8250c3951a82ff66c744d21bfd578f0af6549d9b90ac20dac3101600",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T020321Z-3a71ba99-wilson_action_surface_se-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic exclusion of the imaginary slot closes once (P4) and the canonical leading-\u03b2 ansatz are admitted, and the \u03b2 coefficient follows from the retained cited authority. The packet does not close or flag as accepted the P4/P5 real-positive convention or the canonical-ansatz boundary, and it acknowledges real v(y) improvements are excluded by ansatz rather than by P1-P5 alone.",
       "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
-      "claim_scope": null,
+      "claim_scope": "Within the explicitly stipulated real-positive, bounded-below, canonical leading-\u03b2 single-trace plaquette ansatz, and using the retained \u03b2 = 6 normalization authority, the Wilson plaquette action is selected and the i\u03b8 Im Tr U_P slot is excluded by the real-action convention.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-26T02:05:27.488835+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -286882,34 +286902,34 @@
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Under (P4), the term i\u03b8 \u03a3_P Im Tr U_P gives a generically non-real action for \u03b8 != 0, while remaining real v(y) terms are excluded only by the stipulated canonical leading-\u03b2 ansatz, leaving (\u03b2/N_c)\u03a3_P(N_c \u2212 Re Tr U_P).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "88ac4b1fca7bfe1aa7f775cc17ed5531c9dec455852d8a29d9d2f5be33b064e3",
       "note_path": "docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "other: add retained or accepted-premise authority for the P4/P5 real-positive measure convention and a precise canonical leading-\u03b2 ansatz definition, or keep downstream use explicitly conditional on those boundaries.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 6,
+        "B": 1,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py",
       "title": "Wilson Action-Surface Selector \u2014 Real-Positive Canonical Single-Plaquette Surface",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic check on the admitted real-action surface: i\u03b8Q with real Q makes S complex for generic SU(3) configurations. The runner substantively samples SU(3), checks the small-a expansion, and reuses the retained \u03b2 relation rather than relying only on printed constants. However, the uniqueness claim depends on the stipulated canonical leading-\u03b2 ansatz and on P4/P5 as admitted conventions; under the no-go discipline gate, N6 remains an unclosed convention/ratification wall. The claim is therefore conditionally sound inside that surface, not a failed derivation."
     },
     "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": {
       "audit_date": null,

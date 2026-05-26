@@ -15593,6 +15593,10 @@
       "to": "koide_q_delta_closure_package_readme_2026-04-21"
     },
     {
+      "from": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
       "from": "koide_scale_selector_reparameterization_theorem_note_2026-04-20",
       "to": "koide_selected_line_cyclic_response_bridge_note_2026-04-18"
     },
@@ -61131,6 +61135,20 @@
       "runner_path": "scripts/frontier_koide_reviewer_stress_test.py",
       "title": "Reviewer Stress-Test for the Koide Q and Delta Support Routes"
     },
+    "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25": {
+      "claim_id": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "521ae31cf9f1a6a98444c119daeaa40bbedc19d82d46f017e40d98c1f504cb3e",
+      "path": "docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "runner_path": "scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py",
+      "title": "Koide rho_delta = 2/9 C_3 DOF-Ratio Bridge"
+    },
     "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological": {
       "claim_id": "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological",
       "claim_type_author_hint": "bounded_theorem",
@@ -85264,7 +85282,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 600,
+      "bounded_theorem": 601,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
@@ -85273,7 +85291,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1019,
+      "bounded_theorem": 1020,
       "decoration": 1,
       "meta": 191,
       "no_go": 183,
@@ -85281,10 +85299,10 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9731,
-    "leaf_count": 787,
-    "node_count": 2540,
+    "edge_count": 9732,
+    "leaf_count": 788,
+    "node_count": 2541,
     "root_count": 848,
-    "runners_with_path": 2111
+    "runners_with_path": 2112
   }
 }

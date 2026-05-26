@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py
+runner_sha256: 77445108ae4caecd6e02a102fbafb057ff0c8a879a3753ce8facb8707afe34f8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+[PASS] dim_R Herm_3 = 9 (dim_R Herm_3 = 9)
+[PASS] selected complex coordinate b has 2 real DOF (dim_R C = 2)
+[PASS] rho_delta_C3 = 2 / 9 exactly (rho_delta_C3 = 2/9)
+[PASS] d = 2 is not the retained C_3 ratio (2 / 2^2 = 1/2)
+[PASS] d = 4 is not the retained C_3 ratio (2 / 4^2 = 1/8)
+[PASS] d = 5 is not the retained C_3 ratio (2 / 5^2 = 2/25)
+[PASS] d = 7 is not the retained C_3 ratio (2 / 7^2 = 2/49)
+[PASS] d = 11 is not the retained C_3 ratio (2 / 11^2 = 2/121)
+INFO boundary: this runner checks only dimensionless rational arithmetic on the C_3 coordinate surface; it does not inspect audit status and does not assert a radian bridge.
+SUMMARY: PASS = 8, FAIL = 0
+C_3 rho_delta dimensionless DOF-ratio check passed.
+
+----- stderr -----
+

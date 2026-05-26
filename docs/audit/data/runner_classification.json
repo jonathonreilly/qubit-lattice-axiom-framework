@@ -12768,6 +12768,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_reviewer_stress_test.py"
     },
+    "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py"
+    },
     "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological": {
       "assert_count": 5,
       "counts": {
@@ -51430,6 +51442,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/kubo_continuum_limit.py": {
       "assert_count": 0,
       "claims": [
@@ -55624,9 +55651,9 @@
       "B": 280,
       "C": 750,
       "D": 299,
-      "none": 436
+      "none": 437
     },
-    "runners_classified": 2001,
+    "runners_classified": 2002,
     "runners_with_C": 973,
     "runners_with_D": 583
   }

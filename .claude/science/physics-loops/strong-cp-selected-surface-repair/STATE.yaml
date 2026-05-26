@@ -1,0 +1,40 @@
+loop_slug: strong-cp-selected-surface-repair
+date: 2026-05-25
+mode: campaign_block
+base_ref: origin/main
+base_commit: c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+branch: physics-loop/strong-cp-selected-surface-repair-20260525
+target_claim:
+  claim_id: strong_cp_theta_zero_note
+  note_path: docs/STRONG_CP_THETA_ZERO_NOTE.md
+  prior_audit_status: audited_conditional
+  prior_effective_status: audited_conditional
+  criticality: critical
+  transitive_descendants: 879
+repair_summary:
+  old_blocker: theta-free action surface and positive real mass orientation were selected premises, not derived
+  new_scope: internal consistency of the explicitly theta-free Wilson-plus-staggered scalar-mass surface
+  runner: scripts/frontier_strong_cp_theta_zero.py
+  no_new_axioms: true
+  audit_verdict_applied: false
+status_firewall:
+  actual_current_surface_status: bounded-support
+  conditional_surface_status: selected theta-free scalar-mass surface only
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: physical FtildeF exclusion and real-positive mass orientation remain unproved
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+pipeline_after_repair:
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  audit_queue_position: 1
+  ready: true
+verification:
+  runner: outputs/strong_cp_selected_surface_repair_2026-05-25.txt
+  runner_result: "THEOREM PASS=26 FAIL=0; SELECTED-SURFACE COMPUTE PASS=30 FAIL=0"
+  pipeline: docs/audit/scripts/run_pipeline.sh
+  pipeline_result: completed with only pre-existing Maradudin warning
+next_action: open review PR; independent auditor decides effective status

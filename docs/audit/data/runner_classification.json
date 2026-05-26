@@ -21232,9 +21232,9 @@
       "assert_count": 2,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 52,
-        "D": 0
+        "B": 2,
+        "C": 48,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -21244,9 +21244,9 @@
       "assert_count": 2,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 52,
-        "D": 0
+        "B": 2,
+        "C": 48,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -46482,9 +46482,9 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 52,
-        "D": 0
+        "B": 2,
+        "C": 48,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -55206,6 +55206,6 @@
     },
     "runners_classified": 1982,
     "runners_with_C": 969,
-    "runners_with_D": 583
+    "runners_with_D": 584
   }
 }

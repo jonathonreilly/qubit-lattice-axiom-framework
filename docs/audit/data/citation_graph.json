@@ -77687,7 +77687,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "ec1dbd767b1a8511d6e59bb9383f33a0be3b5d8482e7d955d5225efb77c0b925",
+      "note_hash": "81947d54aaec212affe6b7874e1f811d2f71944e8ed8dd4258cc7bd7a44157b6",
       "path": "docs/STRONG_CP_THETA_ZERO_NOTE.md",
       "runner_path": "scripts/frontier_strong_cp_theta_zero.py",
       "title": "Strong CP / \u03b8 = 0 Conditional Action-Surface Closure"

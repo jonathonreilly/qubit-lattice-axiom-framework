@@ -25209,22 +25209,6 @@
       "to": "physical_lattice_necessity_note"
     },
     {
-      "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "to": "site_phase_cube_shift_intertwiner_note"
-    },
-    {
-      "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "to": "s3_taste_cube_decomposition_note"
-    },
-    {
-      "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "to": "s3_mass_matrix_no_go_note"
-    },
-    {
-      "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "to": "z2_hw1_mass_matrix_parametrization_note"
-    },
-    {
       "from": "three_generation_observable_theorem_note",
       "to": "site_phase_cube_shift_intertwiner_note"
     },
@@ -79491,16 +79475,11 @@
     "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": {
       "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+      "claim_type_author_hint_raw": "bounded_theorem (conditional finite-algebra lemma; axiom-reset retag 2026-05-03; was positive_theorem)",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "site_phase_cube_shift_intertwiner_note",
-        "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
-        "z2_hw1_mass_matrix_parametrization_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "469d962029dae7256fe9da079fb667eb5f080750d54ee48eff36632cb05248d5",
+      "note_hash": "11935177ecb1f9c056fd9f69e89429380d8b511b40b61ecda93b8d1a9b8dd503",
       "path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "title": "Three-Generation Observable: No-Proper-Quotient Narrow Theorem"
@@ -85389,6 +85368,7 @@
     "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
     "three_generation_observable_count_corollary_note_2026-05-03",
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+    "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
     "triple_stack_collapse_scaling_note",
     "two_field_retarded_family_closure_note_2026-04-10",
@@ -85500,10 +85480,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9774,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

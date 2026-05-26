@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Verify the narrow three-generation-observable no-proper-quotient theorem
-at exact rational precision via sympy.
+"""Verify the conditional finite-algebra no-proper-quotient theorem.
 
-Claim scope: on the retained hw=1 triplet, the diagonal projectors plus
-C_3 cycle generate M_3(C) and no proper subspace is invariant under both.
-Class (A) algebraic identity on declared graph-visible inputs.
+Claim scope: for a supplied C^3 basis, rank-one projectors, and C_3 cycle,
+the diagonal projectors plus C_3 generate M_3(C) and no proper subspace is
+invariant under both. This runner also checks that the note no longer hides a
+retained-grade framework-to-carrier bridge.
 """
 
 from pathlib import Path
@@ -47,35 +47,40 @@ note_text = NOTE_PATH.read_text()
 required = [
     "Three-Generation Observable: No-Proper-Quotient Narrow Theorem",
     "Type:** bounded_theorem",
-    "Retained carrier boundary (2026-05-24)",
+    "conditional finite-algebra lemma",
+    "Conditional carrier boundary (2026-05-25)",
     "Load-bearing context:",
+    "supplied finite-dimensional `C^3` carrier",
+    "interpret these as translation-character projectors; this note does not claim",
+    "derived, retained-grade",
     "M_3(ℂ)",
     "C₃[111]",
     "no proper quotient",
-    "SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md",
-    "S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
-    "S3_MASS_MATRIX_NO_GO_NOTE.md",
-    "Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md",
+    "not asserted here as load-bearing",
+    "bounded support theorem for the supplied finite",
     "physical-species interpretation",
     "out of scope",
     "class (A)",
     "target_claim_type: bounded_theorem",
+    "audit_required_before_effective_status_change: true",
 ]
 for s in required:
     check(f"contains: {s!r}", s in note_text)
 
-# Scope discipline: must NOT load-bear on generation_axiom_boundary
+# Scope discipline: must NOT load-bear on retained-carrier or physical-species
+# claims. Negative mentions are allowed only when they state exclusion.
 forbidden = [
     "load-bears on generation_axiom_boundary",
     "physical-species claim is hereby retained",
     "substrate physicality is established",
     "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
     "staggered-Dirac realization derivation target",
-    "Admitted context inputs:",
-    "Admitted-import declaration",
-    "admitted carrier",
-    "admitted import",
-    "regular representation",
+    "On the retained `hw=1` triplet",
+    "retained finite `C^3` carrier",
+    "retained three-sector BZ-corner / taste-cube carrier",
+    "retained cyclic operator",
+    "retained coordinate-projector structure",
+    "retained BZ-corner / taste-cube support packet",
 ]
 for f in forbidden:
     check(f"narrow scope avoids forbidden claim: {f!r}",
@@ -200,19 +205,19 @@ check("therefore no PROPER subspace is invariant under both D_3 and C_3",
 
 
 # ============================================================================
-section("Part 5: declared authorities are graph-visible")
+section("Part 5: repaired note does not seed hidden carrier dependencies")
 # ============================================================================
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 ledger = json.loads(LEDGER.read_text())
 rows = ledger['rows']
 
-cited = {
+old_carrier_authorities = {
     "site_phase_cube_shift_intertwiner_note": "SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md",
     "s3_taste_cube_decomposition_note": "S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
     "s3_mass_matrix_no_go_note": "S3_MASS_MATRIX_NO_GO_NOTE.md",
     "z2_hw1_mass_matrix_parametrization_note": "Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md",
 }
-for cid, filename in cited.items():
+for cid, filename in old_carrier_authorities.items():
     row = rows.get(cid)
     check(f"{cid} exists in audit ledger",
           row is not None,
@@ -224,25 +229,20 @@ check(f"{CLAIM_ID} seeded by audit pipeline",
       detail="run docs/audit/scripts/run_pipeline.sh after editing the note")
 if claim_row is not None:
     claim_deps = set(claim_row.get("deps", []))
-    check(f"{CLAIM_ID} records all four declared dependencies",
-          set(cited).issubset(claim_deps),
-          detail=f"deps={sorted(claim_deps)}")
-    check(f"{CLAIM_ID} records no extra direct dependencies after boundary repair",
-          claim_deps == set(cited),
+    check(f"{CLAIM_ID} does not declare old carrier packets as load-bearing deps",
+          claim_deps.isdisjoint(old_carrier_authorities),
           detail=f"deps={sorted(claim_deps)}")
     check("staggered realization gate is not a declared dependency",
           "staggered_dirac_realization_gate_note_2026-05-03" not in claim_deps,
           detail=f"deps={sorted(claim_deps)}")
-    check(f"{CLAIM_ID} remains effective-unaudited before independent audit",
-          claim_row.get("effective_status") == "unaudited",
-          detail=f"effective_status={claim_row.get('effective_status')!r}")
+    check(f"{CLAIM_ID} source remains a bounded theorem row",
+          claim_row.get("claim_type") == "bounded_theorem",
+          detail=f"claim_type={claim_row.get('claim_type')!r}")
 
-# Verify generation_axiom_boundary_note is NOT cited
-check("generation_axiom_boundary_note NOT cited as declared dependency (correctly excluded)",
+check("generation_axiom_boundary_note appears only as out-of-scope context",
       "generation_axiom_boundary_note" in note_text and
-      "audited_conditional" in note_text and
-      ("not** cited" in note_text or "not cited" in note_text or "is **not** cited" in note_text or
-       "explicit narrowing" in note_text))
+      "out\n  of scope here" in note_text and
+      "audited_conditional" not in note_text)
 
 
 print(f"\n{'='*88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'='*88}")

@@ -1,0 +1,41 @@
+loop_slug: three-gen-no-proper-quotient-conditional-repair
+date: 2026-05-25
+mode: campaign_block
+base_ref: origin/main
+base_commit: c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+branch: physics-loop/three-gen-no-proper-quotient-conditional-repair-20260525
+target_claim:
+  claim_id: three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02
+  note_path: docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md
+  runner_path: scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py
+  prior_audit_status: audited_conditional
+  prior_effective_status: audited_conditional
+  criticality: critical
+  transitive_descendants: 695
+repair_summary:
+  old_blocker: hidden retained-grade hw=1 carrier/projector/cycle premise
+  new_scope: conditional finite-algebra theorem for supplied C^3 basis/projector/three-cycle data
+  old_carrier_dependency_edges_removed: true
+  no_new_axioms: true
+  audit_verdict_applied: false
+status_firewall:
+  actual_current_surface_status: conditional-support
+  conditional_surface_status: bounded-support after independent audit of the narrowed theorem
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: carrier/projector/cycle derivation is explicitly out of scope
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+pipeline_after_repair:
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  audit_queue_position: 1
+  ready: true
+verification:
+  runner: outputs/three_gen_no_proper_quotient_conditional_repair_2026-05-25.txt
+  runner_result: "PASS=47 FAIL=0"
+  pipeline: docs/audit/scripts/run_pipeline.sh
+  pipeline_result: "completed; only pre-existing Maradudin conditional_repair_prefix warning"
+next_action: open review PR; independent auditor decides effective status

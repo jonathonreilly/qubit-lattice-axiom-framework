@@ -1,21 +1,25 @@
 # Three-Generation Observable: No-Proper-Quotient Narrow Theorem
 
-**Date:** 2026-05-02 (Tier B narrowing + C₃-carrier admission 2026-05-18; retained-carrier boundary repair 2026-05-24)
-**Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Load-bearing context:** the finite-dimensional `C^3` `hw=1` operator
-surface supplied by the retained BZ-corner / taste-cube support packet. No
-full staggered-carrier realization gate is a premise of this narrowed
-matrix-algebra theorem.
+**Date:** 2026-05-02 (Tier B narrowing + C₃-carrier admission 2026-05-18;
+prior carrier-boundary repair 2026-05-24; conditional carrier repair
+2026-05-25)
+**Type:** bounded_theorem (conditional finite-algebra lemma; axiom-reset retag 2026-05-03; was positive_theorem)
+**Load-bearing context:** a supplied finite-dimensional `C^3` carrier with
+basis `(X_1, X_2, X_3)`, rank-one coordinate projectors `P_{X_i}`, and a
+three-cycle `C₃[111]` permuting the basis. Downstream carrier notes may
+interpret these as translation-character projectors; this note does not claim
+that those carrier data are derived, retained-grade, or independent of the
+open staggered-Dirac/framework-carrier identification gate.
 **Primary runner:** `scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py`
 
 ## Claim scope (proposed)
 
-> On the retained `hw=1` triplet of the Cl(3)/Z³ taste-cube structure, the
-> exact joint translation projectors `(P_{X_1}, P_{X_2}, P_{X_3})` together
-> with the induced `C₃[111]` cycle map generate the full operator algebra
-> `M_3(ℂ)` on `H_{hw=1} ≅ ℂ³`. **Therefore no proper quotient of
-> `H_{hw=1}` preserves both the translation-character separation and the
-> `C₃[111]` cycle.**
+> Given a finite `C^3` carrier with basis `(X_1, X_2, X_3)`, the rank-one
+> projectors `(P_{X_1}, P_{X_2}, P_{X_3})`, and the three-cycle `C₃[111]`
+> sending `X_1 -> X_2 -> X_3 -> X_1`, the generators produce the full
+> operator algebra `M_3(ℂ)`. Therefore the only common invariant subspaces
+> are `{0}` and `C^3`, so no non-trivial proper quotient preserves both the
+> projector separation and the `C₃[111]` cycle.
 
 The narrow scope is purely **algebraic / observable-algebra**:
 the no-proper-quotient consequence follows from the algebra-generation
@@ -24,9 +28,11 @@ under a generating set of a full matrix algebra unless it is a direct
 sum decomposition, but the irreducibility of the generators excludes
 non-trivial direct sums). The narrow theorem **does not** claim:
 
+- retained-grade derivation of the finite `C^3` carrier, the projectors, or
+  the `C₃[111]` cycle from the current framework surface;
 - physical-species interpretation of the three sectors (requires
-  substrate-physicality from `generation_axiom_boundary_note` which is
-  currently `audited_conditional` — out of scope here);
+  substrate-physicality from `generation_axiom_boundary_note`, which is out
+  of scope here);
 - that the three sectors correspond to the three Standard Model
   charged-lepton generations (separate downstream identification);
 - closure of the broader three-generation matter-content lane.
@@ -36,62 +42,56 @@ the algebra-generation result with substrate-physicality bridge language. This
 narrow theorem keeps **only the algebra-generation half** as a standalone
 bounded audit candidate.
 
-## Declared audit dependencies (one-hop)
+## Conditional carrier boundary (2026-05-25)
 
-| Authority | Audit-lane status | Role |
-|---|---|---|
-| [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact BZ-corner / taste-cube bridge |
-| [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact full-cube `S₃` carrier `ℂ⁸ ≅ 4 A₁ + 2 E` |
-| [`S3_MASS_MATRIX_NO_GO_NOTE.md`](S3_MASS_MATRIX_NO_GO_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact unbroken-`S₃` mass-class obstruction on `hw=1` |
-| [`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) | pipeline-derived; may be audit-pending after dependency-graph strengthening | exact retained-surface `hw=1` triplet structure |
+The load-bearing input is an abstract finite data package:
 
-All four cited authorities are graph-visible. The conditional dep
-`generation_axiom_boundary_note` is **not** cited here — that is the
-explicit narrowing.
+- a three-dimensional complex vector space `V = C^3`;
+- a labelled basis `(X_1, X_2, X_3)`;
+- the coordinate projectors `P_{X_i}` onto the basis lines;
+- the cyclic linear map `C₃[111]` with `X_1 -> X_2 -> X_3 -> X_1`.
+
+The former support notes `SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`,
+`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`, `S3_MASS_MATRIX_NO_GO_NOTE.md`, and
+`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md` remain useful context for why
+this algebraic lemma matters, but they are not asserted here as load-bearing
+retained carrier authorities. This repair deliberately removes the hidden
+claim that the carrier/projector/cycle data are already closed on the current
+framework surface.
+
+The result is therefore a bounded support theorem for the supplied finite
+data, not a retained-grade bridge from the current framework axioms to the
+`hw=1` carrier.
 
 ## Load-bearing step (class A)
 
 ```text
-H_{hw=1} ≅ ℂ³ with basis (X_1, X_2, X_3)             [retained]
-P_{X_i} = projector onto sector X_i; sum to I_3      [translation characters]
-C₃[111] cyclically permutes: X_1 → X_2 → X_3 → X_1   [retained]
+V = C^3 with supplied basis (X_1, X_2, X_3)          [hypothesis]
+P_{X_i} = projector onto basis line X_i; sum to I_3  [hypothesis]
+C₃[111] cyclically permutes: X_1 -> X_2 -> X_3 -> X_1 [hypothesis]
 
-Algebra generated by {P_{X_1}, P_{X_2}, P_{X_3}, C₃} on ℂ³:
+Algebra generated by {P_{X_1}, P_{X_2}, P_{X_3}, C₃} on C^3:
    - the diagonal projectors generate the diagonal subalgebra D_3 ≅ ℂ ⊕ ℂ ⊕ ℂ
    - C₃ generates a cyclic permutation, which together with diagonal D_3
      generates the full M_3(ℂ) (this is a standard fact: D_n + cyclic
      permutation matrix = full M_n(ℂ))
 
-No-proper-quotient: a proper subspace V ⊂ ℂ³ invariant under both D_3
-and C₃ must be either {0} or ℂ³ — because (a) V is a direct sum of
-D_3-eigenspaces (each {ℂ X_i}), so V = ⊕_{i ∈ S} ℂ X_i for some
-S ⊂ {1,2,3}; (b) V invariant under C₃ forces S to be C₃-invariant,
+No-proper-quotient: a proper subspace W ⊂ C^3 invariant under both D_3
+and C₃ must be either {0} or C^3 because (a) W is a direct sum of
+D_3-eigenspaces (each {ℂ X_i}), so W = ⊕_{i ∈ S} ℂ X_i for some
+S ⊂ {1,2,3}; (b) W invariant under C₃ forces S to be C₃-invariant,
 so S ∈ {∅, {1,2,3}}.
 ```
 
-This is class (A) — algebraic identity / closure on retained-grade inputs.
+This is class (A) as a finite-dimensional algebraic identity on explicitly
+supplied data. It is not class (A) closure of the framework-to-carrier bridge.
 
-## Retained carrier boundary (2026-05-24)
-
-The `hw=1` carrier used here is the finite-dimensional algebraic carrier
-supplied by the four declared support authorities above. Concretely:
-
-- The `hw=1` triplet `H_{hw=1} ≅ ℂ³` with basis `(X_1, X_2, X_3)` is the
-  retained three-sector BZ-corner / taste-cube carrier for this algebraic
-  theorem.
-- The diagonal projectors `P_{X_i}` are the exact translation-character
-  projectors on that carrier.
-- The cyclic generator `C₃[111]: X_1 → X_2 → X_3 → X_1` is the retained
-  cyclic operator on the same finite carrier.
-
-The theorem does not assert the full physical staggered-carrier realization,
-physical-species semantics, or substrate necessity. Those are separate lanes.
 The bounded claim here is only:
 
-> **Narrowed claim.** On the retained finite `C^3` carrier, no proper
+> **Narrowed claim.** On the supplied finite `C^3` carrier, no proper
 > non-trivial subspace is invariant under both the diagonal projector algebra
 > `D_3` and the `C₃[111]` cycle. Equivalently, no proper quotient of
-> `H_{hw=1}` preserves both the translation-character separation and the
+> `V` preserves both the coordinate/projector separation and the
 > `C₃[111]` cycle.
 
 This is strictly a narrowing: it isolates the pure finite-dimensional
@@ -126,27 +126,27 @@ subgroups: `C₃ / {e} ≅ C₃` (trivial quotient) and `C₃ / C₃ ≅ {e}`
 (collapse to a point). By Step 3 these are the only quotients, so
 `C₃` has **no non-trivial proper quotients**.
 
-**Step 5 — Lift to the retained `D_3 + C3` carrier.**
+**Step 5 — Lift to the supplied `D_3 + C3` carrier.**
 Over `ℂ`, `C₃` alone has one-dimensional character eigenspaces, so this is not
-a `C₃`-only irreducibility theorem. The quotient must preserve both the exact
-translation-character separation and the `C₃[111]` cycle. Preserving the
+a `C₃`-only irreducibility theorem. The quotient must preserve both the
+coordinate/projector separation and the `C₃[111]` cycle. Preserving the
 projector algebra `D_3` forces any invariant subspace to be a coordinate
 subspace `⊕_{i ∈ S} ℂ X_i`; preserving `C₃[111]` forces the subset `S` to be
 closed under the three-cycle. The only such subsets are `∅` and
-`{1,2,3}`, hence the only subspaces invariant under both retained structures
+`{1,2,3}`, hence the only subspaces invariant under both supplied structures
 are `{0}` and `ℂ³`.
 
 **Step 6 — Conclusion.**
-The three-generation observable structure on the retained finite carrier has
-no proper quotient that preserves both the translation-character separation
-(the `D_3` eigenspace structure) and the `C₃[111]` cycle.
+The supplied finite carrier has no proper quotient that preserves both the
+projector separation (the `D_3` eigenspace structure) and the `C₃[111]`
+cycle.
 
 The derivation is **pure finite-group arithmetic plus projector algebra**:
-Lagrange's theorem applies to the prime-order cyclic action, and the retained
+Lagrange's theorem applies to the prime-order cyclic action, and the supplied
 projectors force the coordinate-subspace boundary. Per
 `feedback_consistency_vs_derivation_below_w2`, this is a genuine
 derivation, not a numerical / dimensional coincidence: it follows
-from `|C₃| = 3` being prime together with the retained coordinate-projector
+from `|C₃| = 3` being prime together with the supplied coordinate-projector
 structure.
 
 ## Verification
@@ -159,43 +159,46 @@ Verifies, at exact rational precision via sympy:
 
 1. Diagonal projectors `(P_{X_1}, P_{X_2}, P_{X_3})` are mutually orthogonal,
    sum to `I_3`, and span the diagonal subalgebra `D_3`.
-2. `C₃ = ` cyclic permutation matrix has `C₃³ = I_3`.
+2. The `C₃` cyclic permutation matrix has `C₃³ = I_3`.
 3. `D_3 + C₃` generates `M_3(ℂ)` as algebra (verified by showing
-   `C₃ · diag(1,0,0) = ` off-diagonal element `E_{21}`, plus closure).
+   `P_{X_2} C₃ P_{X_1} = E_{21}`, plus closure).
 4. No proper subspace `V ⊊ ℂ³` is invariant under both `D_3` and `C₃`
    (by direct enumeration: 7 non-trivial subspace classes, each fails
    either D_3-invariance or C₃-invariance).
-5. Declared authorities verified graph-visible via live ledger lookup.
+5. Scope discipline checked against the live ledger: this repaired note does
+   not seed graph dependencies on the old carrier-authority packets.
 
 ## Audit-lane disposition (proposed)
 
 ```yaml
 target_claim_type: bounded_theorem
 proposed_claim_scope: |
-  algebra-generation no-proper-quotient on hw=1 triplet: translation
-  projectors + C₃[111] cycle generate M_3(ℂ); no proper subspace is
-  invariant under both. Physical-species interpretation explicitly out
-  of scope.
+  conditional finite-algebra no-proper-quotient theorem: for supplied
+  C^3 basis/projector/three-cycle data, the projectors + C₃[111] cycle
+  generate M_3(ℂ); no proper subspace is invariant under both.
+  Framework derivation of those supplied data and physical-species
+  interpretation are explicitly out of scope.
 proposed_load_bearing_step_class: A
-audit_required_before_effective_retained: true
+audit_required_before_effective_status_change: true
 ```
 
 Audit status is set only by the independent audit lane. This note is safe to
 land as an unaudited, graph-visible bounded-theorem candidate; any later
-effective status requires independent audit of this row and retained-grade
-closure of its declared dependency chain.
+effective status requires independent audit of this repaired row. The repair
+does not request or apply an audit verdict.
 
 ## What this theorem closes
 
 - Algebra-generation half of the parent `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE`.
-- A graph-visible audit-pending primitive that downstream notes can cite for the
-  no-proper-quotient claim without needing the substrate-physicality
-  conditional dep.
+- A bounded finite-algebra support theorem that downstream notes can cite for
+  the no-proper-quotient claim when they separately supply the carrier,
+  projector, and cycle data.
 
 ## What this theorem does NOT close
 
+- Retained-grade derivation of the `hw=1` carrier/projector/cycle data.
 - Physical-species interpretation (requires substrate-physicality from
-  `generation_axiom_boundary_note` — `audited_conditional`).
+  `generation_axiom_boundary_note`).
 - Identification with SM charged-lepton generations (separate downstream).
 - Three-generation matter-content closure (separate sister theorems).
 
@@ -203,9 +206,10 @@ closure of its declared dependency chain.
 
 - `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` — parent surface; this narrow
   theorem keeps only the algebra-generation half.
-- Declared primitives: [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md),
-  [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md),
-  [`S3_MASS_MATRIX_NO_GO_NOTE.md`](S3_MASS_MATRIX_NO_GO_NOTE.md), and
-  [`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md).
+- Context primitives, not load-bearing carrier authorities in this repaired
+  note: `SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`,
+  `S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`,
+  `S3_MASS_MATRIX_NO_GO_NOTE.md`, and
+  `Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`.
 - Cycle 1 (PR #292), Cycle 2 (PR #293), Cycle 3 (PR #294) — sister
   narrow theorems on different lanes.

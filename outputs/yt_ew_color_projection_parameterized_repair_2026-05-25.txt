@@ -1,0 +1,58 @@
+
+----------------------------------------------------------------------------------------
+Part 1: source-note scope firewall
+----------------------------------------------------------------------------------------
+  [PASS (A)] contains: 'parameterized-algebra audit repair 2026-05-25'  ()
+  [PASS (A)] contains: 'bounded parameterized EW-normalization algebra support theorem'  ()
+  [PASS (A)] contains: 'kappa_EW` is a formal parameter here, not an admitted value'  ()
+  [PASS (A)] contains: 'The specialization `kappa_EW = 0`, and hence `K_EW = 9/8`, is recorded'  ()
+  [PASS (A)] contains: 'only as a diagnostic specialization outside the theorem scope'  ()
+  [PASS (A)] contains: 'Primary runner:** `scripts/frontier_yt_ew_color_projection_parameterized.py`'  ()
+  [PASS (A)] contains: 'Context authorities (not load-bearing one-hop deps for this repaired row)'  ()
+  [PASS (A)] contains: 'Formal parameter boundary (not an admission)'  ()
+  [PASS (A)] contains: 'The repaired theorem does not derive or admit'  ()
+  [PASS (A)] contains: 'Physical EW readout claims require an additional selector theorem'  ()
+  [PASS (A)] avoids old load-bearing/admission wording: 'kappa_EW = 0   (admission)'  ()
+  [PASS (A)] avoids old load-bearing/admission wording: 'conditional on the admission'  ()
+  [PASS (A)] avoids old load-bearing/admission wording: 'not an unconditional theorem of this note'  ()
+  [PASS (A)] avoids old load-bearing/admission wording: '[EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md]'  ()
+  [PASS (A)] avoids old load-bearing/admission wording: '[EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md]'  ()
+
+----------------------------------------------------------------------------------------
+Part 2: exact SU(N_c) dimension arithmetic
+----------------------------------------------------------------------------------------
+  [PASS (A)] F_adj(2) = (N_c^2 - 1)/N_c^2  (3/4)
+  [PASS (A)] F_adj(3) = (N_c^2 - 1)/N_c^2  (8/9)
+  [PASS (A)] F_adj(4) = (N_c^2 - 1)/N_c^2  (15/16)
+  [PASS (A)] F_adj(5) = (N_c^2 - 1)/N_c^2  (24/25)
+  [PASS (A)] F_adj(10) = (N_c^2 - 1)/N_c^2  (99/100)
+  [PASS (A)] F_adj(3) = 8/9  (8/9)
+
+----------------------------------------------------------------------------------------
+Part 3: exact K_EW(kappa) family
+----------------------------------------------------------------------------------------
+  [PASS (A)] K_EW(kappa=0) exact  (observed=9/8, expected=9/8)
+  [PASS (A)] K_EW(kappa=1) exact  (observed=1, expected=1)
+  [PASS (A)] K_EW(kappa=1/2) exact  (observed=18/17, expected=18/17)
+  [PASS (A)] K_EW(kappa=2) exact  (observed=9/10, expected=9/10)
+  [PASS (A)] K_EW(kappa) is positive for kappa >= 0 over sampled range  ()
+  [PASS (A)] K_EW(kappa) is strictly decreasing over sampled nonnegative range  ()
+
+----------------------------------------------------------------------------------------
+Part 4: universal factor preserves sin^2(theta_W)
+----------------------------------------------------------------------------------------
+  [PASS (A)] sin^2 invariant at kappa=0  (baseline=4/9, shifted=4/9)
+  [PASS (A)] sin^2 invariant at kappa=1/2  (baseline=4/9, shifted=4/9)
+  [PASS (A)] sin^2 invariant at kappa=1  (baseline=4/9, shifted=4/9)
+  [PASS (A)] sin^2 invariant at kappa=2  (baseline=4/9, shifted=4/9)
+
+----------------------------------------------------------------------------------------
+Part 5: live audit row after pipeline
+----------------------------------------------------------------------------------------
+  [PASS (A)] yt_ew_color_projection_theorem seeded  ()
+  [PASS (A)] claim type remains bounded_theorem  (bounded_theorem)
+  [PASS (A)] repaired row has no load-bearing markdown deps  (deps=[])
+
+========================================================================================
+  TOTAL: PASS=34, FAIL=0
+========================================================================================

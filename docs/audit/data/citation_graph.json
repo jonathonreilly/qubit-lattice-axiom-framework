@@ -27385,14 +27385,6 @@
       "to": "yt_boundary_theorem"
     },
     {
-      "from": "yt_ew_color_projection_theorem",
-      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
-    },
-    {
-      "from": "yt_ew_color_projection_theorem",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
-    },
-    {
       "from": "yt_ew_coupling_bridge_note",
       "to": "yt_boundary_theorem"
     },
@@ -83118,16 +83110,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
-      ],
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "note_hash": "77da6f51bc39f1ee4bdae464dbd255c3cc1c923f6d060bb8f4ec24a4ccd00d2b",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "1b28a50da82e1f1cc6752d0b9fa4670e769c093ec4467883065465317e940214",
       "path": "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
-      "runner_path": "scripts/frontier_color_projection_mc.py",
+      "runner_path": "scripts/frontier_yt_ew_color_projection_parameterized.py",
       "title": "Color-Singlet Projection Theorem for EW Couplings"
     },
     "yt_ew_coupling_bridge_note": {
@@ -85465,6 +85452,7 @@
     "yt_bridge_hessian_selector_note_2026-05-17",
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
+    "yt_ew_color_projection_theorem",
     "yt_ew_coupling_bridge_note_2026-05-17",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
     "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
@@ -85500,10 +85488,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9776,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

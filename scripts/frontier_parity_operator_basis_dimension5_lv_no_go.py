@@ -1,35 +1,34 @@
 #!/usr/bin/env python3
 """
-Parity-Operator Basis: Dimension-5 LV Operator Bounded Theorem (runner)
-========================================================================
+Parity-Operator Basis: Dimension-5 LV Formal Dirac-Signature Runner
+===================================================================
 
 Companion runner for
   docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md
 
-This runner verifies the algebraic content of the bounded theorem on the
-staggered Cl(3)/Z^3 framework, narrowed to operators with odd total
-spatial-index parity:
+This runner verifies the bounded formal-signature theorem, narrowed to
+templates with odd total spatial-index parity:
 
   1. The free staggered Hamiltonian H_0 satisfies the sublattice-parity
      anti-symmetry  epsilon H_0 epsilon + H_0 = 0  to machine precision
      on L = 4, 6, 8.
 
-  2. For each of the four named dim-5 SME-style fermion-bilinear Dirac
-     structures, an EXHAUSTIVE enumeration over all allowed index
-     assignments (mu, nu, rho in {0,1,2,3}) is performed:
-       (i) If the total spatial-index parity is odd, the operator
-           carries P-weight = -1 (i.e. P O P^{-1} = -O).
+  2. For each of the four named dim-5 SME-style formal Dirac templates,
+     an EXHAUSTIVE enumeration over all allowed index assignments
+     (mu, nu, rho in {0,1,2,3}) is performed:
+       (i) If the total spatial-index parity is odd, the template has
+           formal P-sign = -1.
        (ii) If even (the residual mixed/time-only cases excluded from
-            the narrowed theorem scope), the operator carries
-            P-weight = +1 (i.e. P O P^{-1} = +O).
-     In both cases the full parity action  P_Dirac M P_Dirac^{-1}
-     combined with the derivative-side sign character is applied
-     directly to the operator on every index assignment; no
-     representative-only shortcut and no "P_full = -full_op" hardcode.
+            the narrowed theorem scope), the template has formal
+            P-sign = +1.
+     In both cases the Dirac action P_Dirac M P_Dirac^{-1} is combined
+     with the explicit formal derivative-label convention
+     chi(partial_0)=+1, chi(partial_i)=-1. The runner does not construct
+     or claim any actual staggered-lattice derivative representative.
 
-  3. The P-symmetric projection  (O + P O P^{-1}) / 2  vanishes
-     exactly when the total spatial-index parity is odd; symmetrically,
-     the P-antisymmetric projection vanishes when even.
+  3. The formal P-symmetric projection vanishes exactly when the total
+     spatial-index parity is odd; symmetrically, the formal
+     P-antisymmetric projection vanishes when even.
 
 The runner counts ALL allowed index assignments per Dirac structure;
 the PASS count therefore reports the number of index combinations
@@ -40,7 +39,6 @@ Status: PASS=N FAIL=0 indicates all algebraic identities verified.
 
 from __future__ import annotations
 
-import itertools
 import sys
 
 import numpy as np
@@ -98,7 +96,7 @@ def staggered_hopping_hamiltonian(L: int) -> np.ndarray:
 
 
 # ---------------------------------------------------------------------------
-# Parity-weight computation on the SME-style operator basis
+# Formal P-sign computation on the SME-style template basis
 # ---------------------------------------------------------------------------
 
 # 4x4 Dirac gammas in the chiral (Weyl) basis
@@ -151,8 +149,10 @@ def parity_conjugate_gamma(M: np.ndarray) -> np.ndarray:
 
 
 def derivative_parity_sign(deriv_indices) -> int:
-    """Combined parity sign of a product of partial-mu factors.
+    """Formal parity sign of a product of partial-mu labels.
 
+    This is a bookkeeping convention for the formal template theorem,
+    not a construction of a staggered-lattice derivative operator.
     Each partial_0 contributes +1; each partial_i (i in {1,2,3})
     contributes -1.
     """
@@ -183,63 +183,42 @@ def test_sublattice_parity_anti_commutes_with_H0(L: int):
 
 
 # ---------------------------------------------------------------------------
-# Operator construction (Dirac structure tensored with derivative sign).
+# Formal template construction.
 #
-# An LV bilinear  O = bar(psi) Gamma psi  with derivatives  partial_{nu1}
-# ... partial_{nuk} acts under P as
-#   P O P^{-1} = (P_Dirac Gamma P_Dirac^{-1}) * prod_j (sign(partial_{nuj})) * O
-# We build the "operator" as the 4x4 Dirac matrix Gamma scaled by the
-# product of derivative signs; the full P-action is then
-#   parity_conjugate_gamma(Gamma) * prod_j sign(partial_{nuj}^P)
-# applied to the same scalar-decorated matrix. The full action factor is
-# computed directly from the index assignment, NOT hardcoded.
+# A template carries a 4x4 Dirac matrix Gamma and formal derivative labels.
+# Its formal parity image is
+#
+#   P_formal(T) = (P_Dirac Gamma P_Dirac^{-1}) * chi(derivative labels),
+#
+# where chi(partial_0)=+1 and chi(partial_i)=-1. This is deliberately a
+# formal sign convention, not a lattice derivative-representative theorem.
 # ---------------------------------------------------------------------------
 
 def full_op_from_structure(Gamma: np.ndarray, deriv_indices) -> np.ndarray:
-    """Return the LV operator's Dirac-side matrix scaled by the
-    product of derivative-side parity factors. The scalar derivative
-    factors do NOT enter the Dirac matrix algebra in P-conjugation;
-    they enter the full P-weight as a separate multiplicative sign.
-    Here we return Gamma itself; the derivative sign is carried
-    separately by `derivative_parity_sign` and applied where needed.
+    """Return the template's Dirac-side matrix.
+
+    The formal derivative sign is carried separately by
+    `derivative_parity_sign` and applied in `formal_parity_image`.
     """
-    # The operator's Dirac-matrix value is just Gamma; the derivative-side
-    # contribution to the operator's value at a fixed kinematic point is a
-    # scalar (a product of c-number partials), which under P picks up a
-    # sign equal to derivative_parity_sign(deriv_indices^P) =
-    # derivative_parity_sign(deriv_indices).
-    return Gamma  # the deriv-side scalar is tracked separately
+    return Gamma
 
 
-def apply_full_parity(Gamma: np.ndarray, deriv_indices) -> np.ndarray:
-    """Apply the full parity action  P_Dirac Gamma P_Dirac^{-1}
-    multiplied by the derivative-side parity sign,
-    yielding the parity image of the full operator (as a 4x4 matrix
-    decorated by the deriv sign). This is the explicit, non-hardcoded
-    full parity action used in the symmetric-projection test.
-    """
+def formal_parity_image(Gamma: np.ndarray, deriv_indices) -> np.ndarray:
+    """Apply the formal parity action to a template."""
     Gamma_P = parity_conjugate_gamma(Gamma)
     deriv_sign = derivative_parity_sign(deriv_indices)
     return Gamma_P * deriv_sign
 
 
-def operator_p_weight(Gamma: np.ndarray, deriv_indices):
-    """Return (+1, -1, 0) according to whether the full operator
-    (Gamma decorated by deriv-side scalar) satisfies P O P^{-1} = +O,
-    -O, or neither. The Dirac matrix Gamma is compared against
-    parity_conjugate_gamma(Gamma); the deriv-side scalar is compared
-    against derivative_parity_sign(deriv_indices).
+def formal_p_sign(Gamma: np.ndarray, deriv_indices):
+    """Return (+1, -1, 0) for the formal P-sign of a template.
+
+    +1 means P_formal(T)=+T, -1 means P_formal(T)=-T.
     """
-    Gamma_P = parity_conjugate_gamma(Gamma)
-    deriv_sign = derivative_parity_sign(deriv_indices)
-    # The full operator carries Dirac matrix Gamma and a deriv-side
-    # scalar that is purely a sign under P. So we compare
-    #   apply_full_parity == +Gamma  (full P-even)
-    #   apply_full_parity == -Gamma  (full P-odd)
-    full_P = Gamma_P * deriv_sign
-    if np.allclose(full_P, Gamma, atol=1e-10):
+    image = formal_parity_image(Gamma, deriv_indices)
+    if np.allclose(image, Gamma, atol=1e-10):
         return +1
-    if np.allclose(full_P, -Gamma, atol=1e-10):
+    if np.allclose(image, -Gamma, atol=1e-10):
         return -1
     return 0
 
@@ -253,12 +232,10 @@ INDEX_RANGE = (0, 1, 2, 3)
 
 
 def is_dispersion_modifying(*all_indices) -> bool:
-    """Premise of the theorem: at least one unpaired spatial index in
-    the dispersion-modifying piece. We exclude the pure-time-only
-    case (all indices equal to 0). The theorem covers operators that
-    are genuinely LV in the spatial sense, i.e. carry at least one
-    spatial-index occurrence among the combined gamma + derivative
-    indices.
+    """Template filter: at least one spatial index.
+
+    This excludes the pure-time-only case. It is a formal template
+    filter and does not assert a physical lattice LV operator.
     """
     return any(mu != 0 for mu in all_indices)
 
@@ -267,7 +244,7 @@ def enumerate_dim5_structures():
     """Yield (structure_label, Gamma_matrix, deriv_indices_tuple,
               all_indices_tuple, spatial_count, structure_class)
     over all allowed index assignments for the four named SME-style
-    dim-5 Dirac structures.
+    formal Dirac templates.
 
     The four classes (per the theorem's exact basis):
       (a) gamma^mu partial_nu partial_rho     -- one gamma index, two derivs
@@ -325,7 +302,7 @@ def enumerate_dim5_structures():
                 continue
             # sigma^{nu mu} = -sigma^{mu nu}; keep mu < nu to avoid
             # redundant double-counting (the sign on the algebraic side
-            # cancels in the P-weight identity).
+            # cancels in the formal P-sign identity).
             if mu > nu:
                 continue
             for rho in INDEX_RANGE:
@@ -341,14 +318,14 @@ def enumerate_dim5_structures():
 
 def expected_p_weight_from_spatial_parity(spatial_count: int) -> int:
     """The bounded theorem (post-narrowing) claims:
-       odd total spatial-index parity  =>  P-weight = -1
-       even total spatial-index parity =>  P-weight = +1
+       odd total spatial-index parity  =>  formal P-sign = -1
+       even total spatial-index parity =>  formal P-sign = +1
     """
     return -1 if (spatial_count % 2 == 1) else +1
 
 
 def expected_sym_norm_is_zero(spatial_count: int) -> bool:
-    """The P-symmetric projection vanishes iff the operator is P-odd,
+    """The P-symmetric projection vanishes iff the template is P-odd,
     i.e. iff spatial_count is odd."""
     return (spatial_count % 2 == 1)
 
@@ -362,8 +339,8 @@ def main() -> int:
     fail_count = 0
 
     print("=" * 72)
-    print("Parity-Operator Basis: Dim-5 LV Bounded-Theorem Runner")
-    print("(narrowed: odd-total-spatial-index-parity sector)")
+    print("Parity-Operator Basis: Dim-5 LV Formal Dirac-Signature Runner")
+    print("(formal templates; odd-total-spatial-index-parity sector)")
     print("=" * 72)
 
     # ---- Test 1: lattice identity epsilon H_0 epsilon + H_0 = 0 ----
@@ -378,16 +355,16 @@ def main() -> int:
             fail_count += 1
         print(f"    L = {L}:  || epsilon H epsilon + H || / || H || = {err:.3e}   [{status}]")
 
-    # ---- Test 2: exhaustive P-weight per index assignment ----
-    print("\n[2] Exhaustive P-weight per allowed index assignment")
-    print("    (odd spatial-index parity -> P-weight = -1;")
-    print("     even spatial-index parity -> P-weight = +1)")
+    # ---- Test 2: exhaustive formal P-sign per index assignment ----
+    print("\n[2] Exhaustive formal P-sign per allowed index assignment")
+    print("    (odd spatial-index parity -> formal P-sign = -1;")
+    print("     even spatial-index parity -> formal P-sign = +1)")
     odd_count = 0
     even_count = 0
     by_class = {"a": 0, "b": 0, "c": 0, "d": 0}
     for label, Gamma, deriv, all_idx, s, cls in enumerate_dim5_structures():
         expected = expected_p_weight_from_spatial_parity(s)
-        w = operator_p_weight(Gamma, deriv)
+        w = formal_p_sign(Gamma, deriv)
         ok = (w == expected)
         if ok:
             pass_count += 1
@@ -398,50 +375,21 @@ def main() -> int:
                 even_count += 1
         else:
             fail_count += 1
-            print(f"    [FAIL] {label}: spatial_count={s}, expected P-weight={expected:+d}, got {w:+d}")
+            print(f"    [FAIL] {label}: spatial_count={s}, expected formal P-sign={expected:+d}, got {w:+d}")
     print(f"    enumeration totals -- class (a): {by_class['a']}, (b): {by_class['b']}, "
           f"(c): {by_class['c']}, (d): {by_class['d']}")
-    print(f"    odd-spatial-parity (theorem sector): {odd_count} ops; "
-          f"even-spatial-parity (excluded sector): {even_count} ops")
+    print(f"    odd-spatial-parity (theorem sector): {odd_count} templates; "
+          f"even-spatial-parity (excluded sector): {even_count} templates")
 
-    # ---- Test 3: exhaustive P-symmetric projection per index assignment ----
-    print("\n[3] Exhaustive P-symmetric projection per allowed index assignment")
-    print("    (P_sym(O) = (O + P O P^{-1})/2; vanishes iff odd-spatial-parity)")
+    # ---- Test 3: exhaustive formal P-symmetric projection per assignment ----
+    print("\n[3] Exhaustive formal P-symmetric projection per allowed index assignment")
+    print("    (P_sym(T) = (T + P_formal(T))/2; vanishes iff odd-spatial-parity)")
     for label, Gamma, deriv, all_idx, s, cls in enumerate_dim5_structures():
-        # Build full operator as the 4x4 Dirac matrix Gamma decorated by
-        # the derivative-side scalar (a sign). P acts on the Dirac side
-        # via P_Dirac Gamma P_Dirac^{-1} and on the derivative scalar by
-        # multiplying by derivative_parity_sign(deriv).
-        deriv_sign = derivative_parity_sign(deriv)
-        full_op = deriv_sign * Gamma  # full operator value (a 4x4 matrix)
+        template = full_op_from_structure(Gamma, deriv)
+        image = formal_parity_image(Gamma, deriv)
 
-        # Full parity-conjugate of the full operator, computed by applying
-        # the parity action to each factor independently, NOT hardcoded:
-        Gamma_P = parity_conjugate_gamma(Gamma)
-        deriv_sign_P = deriv_sign  # derivative_parity_sign is invariant under P
-        # because partials change sign under P, which means the *value of
-        # the partial product* flips by an additional factor of
-        # derivative_parity_sign(deriv). The product of two such flips is
-        # derivative_parity_sign(deriv)^2 = +1; the relevant transformed
-        # scalar is +derivative_parity_sign(deriv) * (sign-of-Pmu-on-each-mu).
-        # The combined scalar after P-action is:
-        deriv_sign_after_P = derivative_parity_sign(deriv) * derivative_parity_sign(deriv)
-        # = +1 (each partial picks up its own sign, scalar product gets
-        #       sign^2 = +1 from the two factors), but the *operator value*
-        # transforms multiplicatively, so:
-        # P (Gamma * deriv_scalar) P^{-1}
-        #   = (P_Dirac Gamma P_Dirac^{-1}) * (deriv_sign * deriv_scalar)
-        #   = Gamma_P * deriv_sign * deriv_scalar
-        # Concretely, P-conjugate of (deriv_sign * Gamma) (where deriv_sign
-        # is the scalar we attached to encode the deriv-side parity) is
-        #   deriv_sign * Gamma_P   (Dirac side)
-        # times the extra P sign from each partial:
-        #   prod_mu sign(partial_mu^P) = derivative_parity_sign(deriv)
-        # So:
-        P_full_op = derivative_parity_sign(deriv) * deriv_sign * Gamma_P
-
-        sym = 0.5 * (full_op + P_full_op)
-        asym = 0.5 * (full_op - P_full_op)
+        sym = 0.5 * (template + image)
+        asym = 0.5 * (template - image)
         sym_norm = float(np.linalg.norm(sym))
         asym_norm = float(np.linalg.norm(asym))
 

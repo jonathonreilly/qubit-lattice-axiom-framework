@@ -1,0 +1,22 @@
+========================================================================
+Parity-Operator Basis: Dim-5 LV Formal Dirac-Signature Runner
+(formal templates; odd-total-spatial-index-parity sector)
+========================================================================
+
+[1] epsilon H_0 epsilon + H_0 = 0  on L = 4, 6, 8
+    L = 4:  || epsilon H epsilon + H || / || H || = 0.000e+00   [PASS]
+    L = 6:  || epsilon H epsilon + H || / || H || = 0.000e+00   [PASS]
+    L = 8:  || epsilon H epsilon + H || / || H || = 0.000e+00   [PASS]
+
+[2] Exhaustive formal P-sign per allowed index assignment
+    (odd spatial-index parity -> formal P-sign = -1;
+     even spatial-index parity -> formal P-sign = +1)
+    enumeration totals -- class (a): 63, (b): 15, (c): 15, (d): 24
+    odd-spatial-parity (theorem sector): 63 templates; even-spatial-parity (excluded sector): 54 templates
+
+[3] Exhaustive formal P-symmetric projection per allowed index assignment
+    (P_sym(T) = (T + P_formal(T))/2; vanishes iff odd-spatial-parity)
+
+========================================================================
+PASS=237  FAIL=0
+========================================================================

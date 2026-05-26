@@ -1,0 +1,22 @@
+claim_id: parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02
+branch: physics-loop/parity-formal-signature-repair-20260525
+base: origin/main
+status: ready_for_review
+audit_verdict_applied: false
+repair_type: scope_narrowing
+target_claim_type: bounded_theorem
+post_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  criticality: critical
+  criticality_rank: 1
+  ready: true
+  transitive_descendants: 889
+  deps:
+    - cpt_exact_note
+runner:
+  path: scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py
+  output: outputs/parity_formal_signature_repair_2026-05-25.txt
+  pass: 237
+  fail: 0

@@ -67403,10 +67403,10 @@
         "cpt_exact_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "70c5ef098312c15ca3034fc6f55d12b30936e484854a8999b9a4412a2bcbb75b",
+      "note_hash": "425f3d5b3b30dee6842858aa37c0e57d430fe502f9326849784ccbbf2b65cf8f",
       "path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
-      "title": "Parity-Operator Basis: Dimension-5 LV Algebraic P-Weight Identities on the Staggered SME-Style Basis (Odd Total Spatial-Index Parity Sector)"
+      "title": "Parity-Operator Basis: Dimension-5 LV Formal Dirac-Signature Identities (Odd Total Spatial-Index Parity Sector)"
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
       "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",

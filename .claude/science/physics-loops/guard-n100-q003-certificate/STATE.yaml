@@ -13,7 +13,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 runtime_request: 12h campaign
 cycle_block: N100 q003 guard certificate
-pr_status: pending
+pr_status: "open: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1943"
 open_imports:
   - "Independent audit must review the narrowed aggregate guard certificate."
 no_go_routes:
@@ -31,5 +31,5 @@ files_touched:
   - docs/audit/data/citation_graph.json
   - docs/audit/data/effective_status_summary.json
   - docs/audit/data/runner_classification.json
-next_exact_action: "Commit, push, open PR, then continue campaign if runtime remains."
+next_exact_action: "Verify PR merge state, then continue campaign if runtime remains."
 stop_condition: "Only stop this campaign when the 12h budget is exhausted, the user stops it, or a global tooling blocker prevents safe continuation."

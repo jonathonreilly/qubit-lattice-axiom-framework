@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1943
 
 This block repairs `guard_reconciliation_note` with a narrow aggregate runner
 certificate for `N=100, q=0.03`.

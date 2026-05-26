@@ -1,0 +1,67 @@
+R_conn admitted-selector channel-fraction repair
+Claim: rconn_derived_note
+Runner: scripts/frontier_rconn_admitted_selector_channel_fraction_repair.py
+
+========================================================================================
+PART 0: SOURCE FIREWALL
+========================================================================================
+  [PASS] source note contains boundary phrase: admitted-selector rescope
+  [PASS] source note contains boundary phrase: conditional-support - finite channel-fraction algebra
+  [PASS] source note contains boundary phrase: This row does not derive the connected-trace selector `(M0)`
+  [PASS] source note contains boundary phrase: This row does not prove `kappa_EW = 0`
+  [PASS] source note contains boundary phrase: This row does not depend on a Yukawa color-projection theorem
+  [PASS] source note contains boundary phrase: This row does not add a new axiom
+  [PASS] source note contains boundary phrase: scripts/frontier_rconn_admitted_selector_channel_fraction_repair.py
+  [PASS] source note excludes old dependency phrase: R_conn(MC)
+  [PASS] source note excludes old dependency phrase: canonical_plaquette_surface
+  [PASS] source note excludes old dependency phrase: YUKAWA_COLOR_PROJECTION_THEOREM.md
+  [PASS] source note excludes old dependency phrase: EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md
+  [PASS] source note excludes old dependency phrase: beta = 6 (g_bare
+  [PASS] source note excludes old dependency phrase: large-N_c structural estimate
+  [PASS] source note excludes old dependency phrase: retained lattice-current primitives derive
+  [PASS] runner source excludes old dependency phrase: canonical_plaquette_surface
+  [PASS] runner source excludes old dependency phrase: frontier_color_projection_mc
+  [PASS] runner source excludes old dependency phrase: YUKAWA_COLOR_PROJECTION
+  [PASS] runner source excludes old dependency phrase: observed alpha
+
+========================================================================================
+PART 1: EXACT CHANNEL-FRACTION ALGEBRA
+========================================================================================
+  [PASS] M_3(C) has dimension 9  (dim=9)
+  [PASS] scalar channel has dimension 1  (dim=1)
+  [PASS] traceless channel has dimension 8  (dim=8)
+  [PASS] channel dimensions sum to the total
+  [PASS] adjoint/traceless channel fraction is 8/9  (F_adj=8/9)
+  [PASS] singlet/scalar channel fraction is 1/9  (F_singlet=1/9)
+  [PASS] P(kappa_EW=0) = 8/9  (P=8/9)
+  [PASS] P(kappa_EW=1) = 1  (P=1)
+  [PASS] P(kappa_EW=1/2) = 17/18  (P=17/18)
+  [PASS] inverse package factor at selector kappa=0 is 9/8  (K=9/8)
+  [PASS] inverse package factor at full trace kappa=1 is 1  (K=1)
+  [PASS] finite algebra admits at least two distinct selector completions  (K0=9/8, K1=1)
+
+========================================================================================
+PART 2: AUDIT METADATA AFTER PIPELINE
+========================================================================================
+  [PASS] claim ledger row exists
+  [PASS] claim type remains bounded_theorem  (bounded_theorem)
+  [PASS] audit status reset to unaudited for re-audit  (unaudited)
+  [PASS] effective status reset to unaudited for re-audit  (unaudited)
+  [PASS] primary runner is registered  (scripts/frontier_rconn_admitted_selector_channel_fraction_repair.py)
+  [PASS] no helper runners are imported  ([])
+  [PASS] narrowed row has no ledger dependencies  ([])
+  [PASS] no open dependency paths remain  ([])
+  [PASS] citation graph node exists
+  [PASS] citation graph node has no dependencies  ([])
+  [PASS] citation graph node has registered runner  (scripts/frontier_rconn_admitted_selector_channel_fraction_repair.py)
+  [PASS] citation graph node has no helper runners  ([])
+  [PASS] citation graph has no outgoing dependency edges  ([])
+  [PASS] claim is queued for audit  (position=1)
+  [PASS] queued claim is ready  (True)
+  [PASS] queue item has no open dependency paths  (None)
+
+========================================================================================
+SUMMARY
+========================================================================================
+PASS=46 FAIL=0
+RESULT: PASS

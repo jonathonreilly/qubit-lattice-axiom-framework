@@ -86966,13 +86966,13 @@
         "native_gauge_closure_note",
         "graph_first_su3_integration_note"
       ],
-      "direct_in_degree": 16,
+      "direct_in_degree": 15,
       "effective_status": "decoration_under_graph_first_su3_integration_note",
       "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-      "load_bearing_score": 22.01,
+      "load_bearing_score": 21.493,
       "load_bearing_step": "The adjoint-channel dimension fraction of the q-qbar Hilbert space is dim(adj)/dim(N_c tensor N_c-bar) = (N_c^2 - 1)/N_c^2, giving 8/9 at N_c = 3.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -87187,7 +87187,7 @@
       },
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "EW Current Fierz-Channel Decomposition: Exact Group-Theory Derivation of `(N_c^2 - 1)/N_c^2`",
-      "transitive_descendants": 1030,
+      "transitive_descendants": 1018,
       "verdict_rationale": "Five-judge panel majority 4/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is exact class-A representation algebra over the retained SU(3)/N_c = 3 input, with no external comparator and no tuned numerical input. The runner checks real SU(N) generator normalization, Fierz completeness, dimension counting, and citation hygiene, but it does not turn the algebraic corollary into an independent physical theorem. Under the rubric's clean-vs-decoration tie-break, the closed content is decoration of the retained SU(3) parent, while the matching rule (M) remains explicitly outside the audit scope. | The scoped claim is exact class-A algebra: Fierz completeness and the 1 plus adjoint decomposition over the retained SU(3) color structure. There are no external comparators or tuned inputs, and the note explicitly excludes the matching rule (M), so the physical 9/8 EW correction is not closed here. Under the tie-break rule, because the closed content reduces to standard mathematics applied to a single retained SU(3) parent, the proper terminal tuple is decoration rather than an independent positive-theorem clean result. | The load-bearing step is a standard algebraic representation-dimension identity over the retained SU(3) parent, with no external comparator and no tuned numerical input. The runner checks real SU(N) algebra, Fierz completeness, and the exact Fraction(8,9), but it does not make this an independent physical theorem. Because the note explicitly excludes deriving matching rule (M) and the closed content is only the algebraic channel fraction, the decoration verdict is the applicable tuple. | Both audits correctly identify the load-bearing step as class A and agree that the scoped channel-fraction claim closes while matching rule (M) remains outside the result. Under the rubric's tie-breaker, a zero-comparator algebraic corollary that reduces to retained SU(3) structure plus standard Fierz/representation algebra is decoration rather than a new positive theorem. The runner supports the algebra and citation hygiene but does not turn the standard dimension-count corollary into an independent first-principles computation."
     },
     "ew_current_matching_ozi_suppression_theorem_note_2026-04-27": {
@@ -87371,13 +87371,13 @@
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
-      "direct_in_degree": 14,
+      "direct_in_degree": 13,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 20.95,
+      "load_bearing_score": 20.417,
       "load_bearing_step": "Completion A with kappa_EW=0 and Completion B with kappa_EW=1 share the retained Fierz ratio, color-blind CMT scaling, and O(1/N_c^2) disconnected size, but give different EW matching factors 9/8 and 1.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -87613,7 +87613,7 @@
       },
       "runner_path": "scripts/frontier_ew_current_matching_rule_no_go.py",
       "title": "EW Current Matching Rule No-Go Proposal Note",
-      "transitive_descendants": 988,
+      "transitive_descendants": 966,
       "verdict_rationale": "The load-bearing step is class A rather than a numerical match: the runner recomputes rational channel fractions, CMT cancellation, OZI boundedness, and the two-completion witness. The cited authority is retained-grade for the Fierz/channel ratio, and the source does not import the open matching rule as a premise; it shows that the listed premises do not select it. The no-go gate passes on the restricted packet: attack routes through Fierz arithmetic, CMT scaling, bounded OZI, excluding full-trace readout, and convention or structural-input ratification all require adding a selector not present in the packet."
     },
     "ew_current_traceless_generator_selector_no_go_note_2026-05-03": {
@@ -114448,7 +114448,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 23.559,
+      "load_bearing_score": 23.543,
       "load_bearing_step": "For H(phi) = sum_i phi_i S_i, V_sel(phi) = Tr H(phi)^4 - (1/8)(Tr H(phi)^2)^2 = 32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to the pairwise-overlap potential with axis minima.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -114685,7 +114685,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
       "title": "Graph-First Weak-Axis Selector Derivation",
-      "transitive_descendants": 1066,
+      "transitive_descendants": 1054,
       "verdict_rationale": "The runner constructs the canonical Pauli-x cube shifts directly and verifies their algebraic properties, trace identities, normalized overlap form, axis minima, and residual stabilizers. Its checks are internal algebra over the stated graph-shift surface, with no external comparator, tuned numerical scale, or imported physical bridge. The cited SU(3) integration note is not load-bearing for this selector derivation, and the source note explicitly bounds away downstream abelian or phenomenological claims."
     },
     "graph_first_su3_integration_note": {
@@ -114776,7 +114776,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 46.07,
+      "load_bearing_score": 46.054,
       "load_bearing_step": "Imposing the residual complementary-axis swap on the weak-su(2) commutant restricts the base algebra to the 3+1 split, giving Comm(su(2)_weak, tau) isomorphic to gl(3) plus gl(1) with compact semisimple part su(3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -114849,7 +114849,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Graph-First `SU(3)` Integration Theorem",
-      "transitive_descendants": 1074,
+      "transitive_descendants": 1062,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet supports the narrowed selected-axis finite-cube theorem by explicit finite-dimensional linear algebra, and the runner constructs and checks the relevant operators rather than printing constants. The load-bearing step is an algebraic commutant calculation over the defined cube operators, so class A is more accurate than class C. The result is clean as a positive structural theorem only at this narrowed scope; selector derivation, color-carrier interpretation, anomaly completion, and electroweak matching are outside the ratified claim. | The second audit gives the applyable scoped tuple: the restricted packet supports a finite-dimensional algebraic commutant theorem once a selected axis is given. The runner source constructs the cube shift, parity, residual swap, commutant basis, projectors, and embedded su(3) generators directly, with no external comparator, tuned numerical input, or physical hypercharge promotion. The first audit\u2019s clean verdict is compatible, but its class C overstates the step as first-principles framework computation rather than an algebraic closure on explicitly defined finite-cube operators. | The restricted packet supports a clean finite-dimensional algebra theorem once the selected axis is taken as the scoped input. The runner constructs the cube shift, parity, swap, commutant, projectors, and embedded su(3) generators and checks the identities for all three axes, so the load-bearing step is an algebraic closure check rather than a first-principles physical computation. The second audit correctly narrows away the upstream selector derivation and any physical hypercharge or electroweak identification. | The restricted packet supports a clean finite-dimensional algebraic theorem on the selected-axis cube surface. The runner constructs the cube shift, parity, residual swap, commutant, projectors, and embedded su(3) generators for all three axes, so this is an algebraic closure check rather than a first-principles numerical compute from the full Cl(3) on Z^3 axiom surface. The clean verdict applies only to the structural selected-axis commutant statement and does not promote hypercharge, anomaly completion, electroweak matching, or the upstream selector derivation. | The restricted packet supports the narrowed finite-cube structural theorem by explicit finite-dimensional linear algebra for all three selected axes. The load-bearing step is an algebraic commutant calculation, so class A is more accurate than class C because no new first-principles physical number is computed from Cl(3) on Z^3. The second audit correctly scopes out the upstream selector derivation and any physical color, hypercharge, anomaly-completion, or EW matching interpretation."
     },
     "graph_laplacian_core_card_note": {
@@ -176603,7 +176603,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 34.032,
+      "load_bearing_score": 34.015,
       "load_bearing_step": "Combining the directly checked native Cl(3), Clifford-bivector su(2), and cubic parity anticommutation with the two retained graph-first selector/SU(3) inputs gives the claimed nonabelian gauge-structure surface, excluding the abelian and phenomenological surfaces.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -177012,7 +177012,7 @@
       },
       "runner_path": "scripts/frontier_non_abelian_gauge.py",
       "title": "Native Gauge Closure Note: Nonabelian Graph-First Gauge Closure on Z^3",
-      "transitive_descendants": 1046,
+      "transitive_descendants": 1034,
       "verdict_rationale": "The runner source genuinely constructs the displayed Clifford generators, bivectors, finite-block hopping operator, and parity matrix, then checks the stated identities rather than printing constants. The remaining nonabelian SU(3) component is imported only through two cited authorities that are explicitly marked retained positive-theorem inputs in the packet. No external comparator, tuned numerical value, or symbol-renaming step is load-bearing, and the abelian surface is expressly outside scope."
     },
     "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": {
@@ -224310,78 +224310,43 @@
       "verdict_rationale": null
     },
     "rconn_derived_note": {
-      "audit_date": "2026-05-25T18:51:47.782015+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
-          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
-          "yukawa_color_projection_theorem": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim."
-        },
-        "dep_claim_type": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
-          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
-          "yukawa_color_projection_theorem": "decoration"
-        },
-        "dep_effective_status": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
-          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
-          "yukawa_color_projection_theorem": "decoration_under_graph_first_su3_integration_note"
-        },
-        "deps": [
-          "ew_current_fierz_channel_decomposition_note_2026-05-01",
-          "ew_current_matching_rule_open_gate_note_2026-05-03",
-          "yukawa_color_projection_theorem"
-        ],
-        "load_bearing_score": 16.811,
-        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
-        "transitive_descendants": 897
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T184949Z-6f3c2210-rconn_derived_note-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The Fierz channel-count fraction closes only as an imported algebraic dimension fact. The missing step is the dynamical/readout bridge matching the lattice connected-trace observable to the adjoint-channel fraction, equivalently fixing kappa_EW = 0.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "rconn_derived_note",
-      "claim_scope": "Exact imported SU(N_c) adjoint representation-dimension fraction 8/9 at N_c=3 plus a conditional R_conn/MC consistency statement gated on matching rule (M).",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (conditional on admitted premise (M))",
-      "claim_type_last_reviewed": "2026-05-25T18:51:47.782015+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "yukawa_color_projection_theorem"
-      ],
+      "deps": [],
       "direct_in_degree": 14,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 16.819,
-      "load_bearing_step": "Assuming matching rule (M), the lattice connected color trace projects onto the adjoint channel, giving R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4).",
-      "load_bearing_step_class": "F",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "c4c44671aea333635999bbcb333209c60851630aad23371df5e116cb89d47ded",
+      "note_hash": "1186500d14f8aa67300e2594d35e3528dc1d7b9b440840c75fda93c1f3eb7d66",
       "note_path": "docs/RCONN_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or retire matching rule (M), equivalently the kappa_EW = 0 connected-trace selector, from retained lattice-current primitives; otherwise keep downstream R_conn use explicitly conditional.",
-      "open_dependency_paths": [
-        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
-        "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -224822,21 +224787,82 @@
             "total_pass": 3
           },
           "verdict_rationale": "The exact 8/9 channel-count fraction is retained-grade through the Fierz/channel authority, but this note's use of it as `R_conn` depends on matching rule (M), which both the source and the supplied no-go authority leave as an open readout/selector premise. The runner genuinely simulates a 4^4 SU(3) lattice and measures `C/T`, but it hard-codes the expected value `(NC**2-1)/NC**2`; therefore it is an MC consistency check, not an independent derivation of the bridge. The negative-claim gate does not upgrade the boundary: the tested routes (Fierz count, CMT, OZI, disconnected vanishing, scheme assignment, Wilson-line projection) collapse to the same unresolved `kappa_EW`/matching-rule residual."
+        },
+        {
+          "archived_at": "2026-05-26T04:19:12.463382+00:00",
+          "archived_for_note_hash": "c4c44671aea333635999bbcb333209c60851630aad23371df5e116cb89d47ded",
+          "audit_date": "2026-05-25T18:51:47.782015+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+              "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+              "yukawa_color_projection_theorem": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim."
+            },
+            "dep_claim_type": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+              "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+              "yukawa_color_projection_theorem": "decoration"
+            },
+            "dep_effective_status": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+              "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+              "yukawa_color_projection_theorem": "decoration_under_graph_first_su3_integration_note"
+            },
+            "deps": [
+              "ew_current_fierz_channel_decomposition_note_2026-05-01",
+              "ew_current_matching_rule_open_gate_note_2026-05-03",
+              "yukawa_color_projection_theorem"
+            ],
+            "load_bearing_score": 16.811,
+            "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+            "transitive_descendants": 897
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T184949Z-6f3c2210-rconn_derived_note-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The Fierz channel-count fraction closes only as an imported algebraic dimension fact. The missing step is the dynamical/readout bridge matching the lattice connected-trace observable to the adjoint-channel fraction, equivalently fixing kappa_EW = 0.",
+          "claim_scope": "Exact imported SU(N_c) adjoint representation-dimension fraction 8/9 at N_c=3 plus a conditional R_conn/MC consistency statement gated on matching rule (M).",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T18:51:47.782015+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Assuming matching rule (M), the lattice connected color trace projects onto the adjoint channel, giving R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4).",
+          "load_bearing_step_class": "F",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or retire matching rule (M), equivalently the kappa_EW = 0 connected-trace selector, from retained lattice-current primitives; otherwise keep downstream R_conn use explicitly conditional.",
+          "open_dependency_paths": [
+            "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
+            "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 2,
+            "D": 0,
+            "total_pass": 3
+          },
+          "verdict_rationale": "The exact 8/9 dimension fraction is supported as an imported Fierz algebra fact, but the observable identification is the named matching rule (M), explicitly admitted as open. The retained no-go authority shows kappa_EW is not fixed by the retained packet because kappa_EW = 0 and kappa_EW = 1 completions share the same Fierz arithmetic and CMT scaling. The runner performs a real SU(3) lattice MC consistency check, but hard-codes the analytic 8/9 target and cannot independently derive M. No-Go Discipline N1-N8 does not justify clean closure: same-packet routes through Fierz projection, CMT, OZI, disconnected vanishing, scheme assignment, Wilson-line projection, and numerical ratification remain ruled out or admitted."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 1,
-        "C": 2,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 3
+        "total_pass": 0
       },
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate (conditional on admitted matching rule (M))",
+      "runner_path": "scripts/frontier_rconn_admitted_selector_channel_fraction_repair.py",
+      "title": "R_conn Channel-Fraction Algebra with Explicit Selector Premise",
       "transitive_descendants": 902,
-      "verdict_rationale": "The exact 8/9 dimension fraction is supported as an imported Fierz algebra fact, but the observable identification is the named matching rule (M), explicitly admitted as open. The retained no-go authority shows kappa_EW is not fixed by the retained packet because kappa_EW = 0 and kappa_EW = 1 completions share the same Fierz arithmetic and CMT scaling. The runner performs a real SU(3) lattice MC consistency check, but hard-codes the analytic 8/9 target and cannot independently derive M. No-Go Discipline N1-N8 does not justify clean closure: same-packet routes through Fierz projection, CMT, OZI, disconnected vanishing, scheme assignment, Wilson-line projection, and numerical ratification remain ruled out or admitted."
+      "verdict_rationale": null
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-23T15:49:39.572743+00:00",
@@ -303293,13 +303319,13 @@
         "native_gauge_closure_note",
         "graph_first_su3_integration_note"
       ],
-      "direct_in_degree": 12,
+      "direct_in_degree": 11,
       "effective_status": "decoration_under_graph_first_su3_integration_note",
       "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-      "load_bearing_score": 15.831,
+      "load_bearing_score": 14.503,
       "load_bearing_step": "The color bilinear representation decomposes as N_c tensor N_c-bar = 1 plus adj, so the adjoint representation-dimension fraction is (N_c^2 - 1)/N_c^2 and equals 8/9 at N_c = 3.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -303761,7 +303787,7 @@
       },
       "runner_path": "scripts/frontier_yukawa_color_projection_boundary.py",
       "title": "Yukawa Color-Projection Channel-Fraction Theorem",
-      "transitive_descendants": 910,
+      "transitive_descendants": 512,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem."
     },
     "z2_hw1_mass_matrix_parametrization_note": {

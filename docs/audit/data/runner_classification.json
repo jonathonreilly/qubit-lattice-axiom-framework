@@ -18781,16 +18781,16 @@
       "runner": "scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py"
     },
     "rconn_derived_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 28,
-        "D": 2
+        "B": 3,
+        "C": 2,
+        "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_color_projection_mc.py"
+      "dominant_class": "B",
+      "runner": "scripts/frontier_rconn_admitted_selector_channel_fraction_repair.py"
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
@@ -32738,7 +32738,6 @@
       "assert_count": 0,
       "claims": [
         "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
-        "rconn_derived_note",
         "yt_ew_color_projection_theorem"
       ],
       "counts": {
@@ -45161,6 +45160,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_rconn_admitted_selector_channel_fraction_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "rconn_derived_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_restricted_strong_field_closure_packet.py": {
       "assert_count": 3,
       "claims": [
@@ -55199,13 +55213,13 @@
     "decoration_candidates": 315,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
-    "runners_with_C": 969,
+    "runners_classified": 1983,
+    "runners_with_C": 970,
     "runners_with_D": 583
   }
 }

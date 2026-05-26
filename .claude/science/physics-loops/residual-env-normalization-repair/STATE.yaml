@@ -1,0 +1,21 @@
+loop_slug: residual-env-normalization-repair
+date: 2026-05-26
+branch: physics-loop/conditional-science-fix-20260526
+base: origin/main
+active_route: gauge residual-environment all-weight convolution normalization repair
+target_claim_id: gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17
+target_note: docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md
+target_runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
+actual_current_surface_status: proposed_promoted
+effective_audit_status_after_pipeline: unaudited
+effective_status_after_pipeline: unaudited
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+blocker_attacked: "drop the hidden rho_(0,0)=1 / kappa_(0,0)=1 normalization premise from the load-bearing theorem"
+repair_summary: "Introduce lambda_env as an independent positive scale; actual z_(0,0)^env is lambda_env*kappa_(0,0), so (1/lambda_env) C_Z equals R_env without requiring kappa_(0,0)=1."
+verification:
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+next_exact_action: "Open PR for reviewer/auditor to re-audit the reset ready row."
+stop_condition: "PR opened; no audit verdict applied by this branch."

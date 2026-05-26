@@ -1,7 +1,26 @@
 # Three-Generation Observable Theorem — Dep-Chain Audit
 
-**Date:** 2026-05-02
-**Status:** dep-chain audit packet for
+**Date:** 2026-05-02 (retired 2026-05-25 per audit-loop verdict)
+**Status:** superseded / stale dep-chain status snapshot. Do **not** cite
+this note for current dep-chain or effective-status information about
+[`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md).
+**Superseded:** the parent row `three_generation_observable_theorem_note`
+was rewired in PR
+[#1760](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1760)
+(merged 2026-05-24), so the dependency boundary and per-dep effective
+statuses recorded below are out of date. Audit-loop verdict at
+2026-05-25 is `audited_failed` with auditor's repair hint:
+*"other: refresh or retire this stale dep-chain audit note against the
+current dependency boundary and effective-status table."* Following the
+retire path. For the live dep boundary and effective statuses, consult
+`docs/audit/data/audit_ledger.json` rows for
+`three_generation_observable_theorem_note` and its current declared
+dependencies, not this note.
+
+---
+
+**Date (original):** 2026-05-02
+**Status (original):** dep-chain audit packet for
 [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 (currently `proposed_retained / audited_conditional`, td=302).
 

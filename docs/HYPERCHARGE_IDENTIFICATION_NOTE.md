@@ -18,7 +18,14 @@ identification implicit. This rewrite removes that identification from the
 internal load-bearing step and replaces it with a citation to the
 matter-assignment representation theorem below. The absolute normalization
 choice (`a = 1/3`) is also moved out of the load-bearing chain and explicitly
-admitted as SM convention.
+kept behind an explicit normalization boundary.
+
+**Normalization repair candidate (2026-05-25).** The source note
+[`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+records a bounded bridge that derives `a = 1/3` from the retained
+graph-first 6+2 split plus admitted GMN / electron-charge readout. This
+parent remains conditional until that bridge and the remaining chain inputs
+are independently audited and dependency-closed.
 
 ## Claim boundary
 
@@ -40,8 +47,10 @@ as a one-hop authority.
 This note does **not** claim to:
 
 - derive the (Sym², Anti²) ↔ (triplet, singlet) assignment internally;
-- derive the absolute normalization `a = 1/3` from the framework
-  (admitted SM convention; this is the still-open LHCM repair item 2);
+- derive the absolute normalization `a = 1/3` internally. The 2026-05-25
+  normalization bridge linked above is now the candidate upstream repair;
+  until it is independently retained, the scale remains an admitted
+  convention for this parent;
 - complete the full anomaly-canceling Standard Model spectrum.
 
 ## Statement
@@ -62,10 +71,14 @@ gl(1))-commutant of {SU(2)_weak, SWAP_{23}}, parameterized by α ∈ ℝ. Then:
    lepton`, the (2, 3) sector is the LH quark doublet Q_L and the
    (2, 1) sector is the LH lepton doublet L_L. *Source:*
    [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md).
-3. *(Normalization is admitted SM convention)* Setting α = +1/3
+3. *(Normalization bridge / admission boundary)* Setting α = +1/3
    produces eigenvalues (+1/3, −1) on (Q_L, L_L), matching the SM
    hypercharge values. The absolute scale `α = 1/3` is **not derived**
-   in this note and is imported as the SM convention `Y(L_L) = −1`.
+   internally in this note. It is either supplied by the bounded
+   normalization bridge
+   [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+   after independent audit, or remains an admitted SM convention until
+   that bridge is retained.
 
 The combined SM-Y matching follows from (1) + (2) once the convention
 in (3) is fixed. This note is the chain assembly point for these three
@@ -135,12 +148,12 @@ called" is naming, not physics derivation.
 
 ## Structural consequences (downstream of the chain)
 
-Each consequence below follows from the chain (1) + (2) + the admitted
-SM-convention normalization (3) of the **Statement** section. None is
+Each consequence below follows from the chain (1) + (2) + the
+normalization boundary (3) of the **Statement** section. None is
 load-bearing for this note's theorem; all are downstream consistency
 checks under the chained inputs.
 
-### 1. Eigenvalue Pattern at α = 1/3 (SM-convention scale)
+### 1. Eigenvalue Pattern at α = 1/3 (normalization-boundary scale)
 
 With α = 1/3 (SM convention `Y(L_L) = −1`):
 
@@ -225,7 +238,7 @@ authority:
 | Eigenvalue ratio +1:(−3) on (Sym², Anti²) | [`LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) | direct structural input |
 | (Sym², Anti²) ↔ (SU(3)-fundamental, SU(3)-singlet) | [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) | direct representation-theory input |
 | (color triplet ≡ quark, color singlet ≡ lepton) | SM-definition convention | admitted naming, not load-bearing physics |
-| Absolute scale α = 1/3 (`Y(L_L) = −1`) | SM-convention normalization | admitted; LHCM repair item (2), still open |
+| Absolute scale α = 1/3 (`Y(L_L) = −1`) | [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) after audit; otherwise SM-convention normalization | bounded bridge candidate; parent remains conditional until retained |
 
 The load-bearing step **of this note** is the chain assembly itself —
 i.e., the statement that, jointly, these chains plus the admitted SM
@@ -255,14 +268,16 @@ either item; both are routed to their own authority rows.
    that authority row carries its own audit status and any matter-sector
    verdict travels with that row, not this one.
 
-2. **α = 1/3 normalization convention.** The absolute scale α = +1/3
-   (equivalently, the SM convention `Y(L_L) = −1`) that fixes the
-   structural ratio +1 : (−3) to the SM hypercharge values
-   (+1/3, −1) is **admitted SM convention**, not derived. This is the
-   still-open LHCM normalization gap (LHCM repair item 2). All
-   structural content of this note (eigenvalue ratio, projector algebra,
-   GUT trace ratio) is α-independent; only the absolute SM-Y match in
-   the consequence table at α = 1/3 invokes this admitted convention.
+2. **α = 1/3 normalization bridge / convention boundary.** The absolute
+   scale α = +1/3 (equivalently, the SM convention `Y(L_L) = −1`) that
+   fixes the structural ratio +1 : (−3) to the SM hypercharge values
+   (+1/3, −1) is not derived internally here. The 2026-05-25 bounded
+   bridge linked above is the candidate upstream repair; until that row
+   is retained, this parent still treats the scale as an admitted
+   convention. All structural content of this note (eigenvalue ratio,
+   projector algebra, GUT trace ratio) is α-independent; only the
+   absolute SM-Y match in the consequence table at α = 1/3 invokes this
+   normalization boundary.
 
 **Retained scope (what the runner numerically verifies — claim
 boundary):**
@@ -308,15 +323,16 @@ complaints and the present note structure is:
 | Auditor complaint (2026-05-02) | Where the rewrite addresses it |
 |---|---|
 | "load-bearing step identifies Sym²/Anti² sectors with SM Q_L/L_L" | Moved to chain link **L2**, cited to LHCM matter-assignment note. No internal sector identification appears in this note's load-bearing chain. |
-| "names the unique traceless U(1) as hypercharge after choosing conventional normalization" | Normalization α = 1/3 is moved to chain link **L3** and explicitly admitted as the SM convention `Y(L_L) = −1`. The note does not claim to derive α. |
-| "runner verifies … after carrier identification" | The runner is restructured so every block is tagged `[STRUCTURAL]` (alpha-free, no SM-target import), `[CHAIN-L2]` (uses LHCM matter assignment), `[CHAIN-L3]` (uses admitted α = 1/3), or `[CONSISTENCY]`. The `[STRUCTURAL]` blocks alone do not perform any SM-Y identification. |
+| "names the unique traceless U(1) as hypercharge after choosing conventional normalization" | Normalization α = 1/3 is moved to chain link **L3**. The 2026-05-25 bounded normalization bridge is now recorded as a candidate upstream repair, while the parent remains conditional until that bridge is retained. |
+| "runner verifies … after carrier identification" | The runner is structured so every block is tagged `[STRUCTURAL]` (alpha-free, no SM-target import), `[CHAIN-L2]` (uses LHCM matter assignment), `[CHAIN-L3]` (uses the normalization boundary), or `[CONSISTENCY]`. The `[STRUCTURAL]` blocks alone do not perform any SM-Y identification. |
 | "does not derive the SM fermion-sector map … from independent premises" | The fermion-sector map is **not** claimed to be derived in this note. It is chained to the LHCM matter-assignment note's SU(3)-representation theorem. This note's load-bearing surface is the chain-assembly statement, not an independent sector-map derivation. |
 | Repair target: "retained theorem constructing the physical map … without importing the target labels" | The structural ratio half is supplied by the retained narrow ratio theorem (which is itself audited_clean / retained_bounded). The matter-assignment half is supplied by the LHCM matter-assignment note (separate audit row). This note's role is now strictly the chain-assembly point. |
 
 What this note's load-bearing surface is, in one sentence: *under the
 two cited chain links (L1 structural ratio, retained; L2 LHCM matter
-assignment, separate audit row) and the explicitly admitted SM
-convention (L3 α = 1/3), the unique traceless U(1) in the gl(3)+gl(1)
+assignment, separate audit row) and the L3 normalization boundary
+(either the retained 2026-05-25 bridge after audit, or admitted SM
+convention until then), the unique traceless U(1) in the gl(3)+gl(1)
 commutant of {SU(2)_weak, SWAP_{23}} reproduces the SM hypercharge
 pattern on the LH-doublet surface.* This is the auditor's stated "safe
 statement" elevated to the load-bearing chain itself.
@@ -325,14 +341,15 @@ What this note is **not** claiming, post-rewrite:
 
 - to derive the (Sym², Anti²) ↔ (color triplet, color singlet)
   assignment (that is L2, chained out);
-- to derive α = 1/3 (that is L3, explicitly admitted as SM convention);
+- to derive α = 1/3 internally (that is L3, now routed to the
+  2026-05-25 bounded normalization bridge candidate and otherwise
+  admitted as convention until retained);
 - to derive the Gell-Mann–Nishijima relation Q = T₃ + Y/2 (admitted as
   SM-convention bridge in the Part 3 / Part 9 runner blocks);
 - to perform full SM anomaly cancellation (requires RH sector, chained
   out to the RH-sector anomaly-cancellation companion note);
-- to retain LHCM as a whole (LHCM repair item (2) remains open and is
-  the well-known α-normalization gap; this note inherits that openness
-  through L3).
+- to retain LHCM as a whole; this note inherits the L2/L3 dependency
+  boundaries until the independent audit lane closes them.
 
 ## Files
 

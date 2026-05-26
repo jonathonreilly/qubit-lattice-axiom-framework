@@ -11,7 +11,8 @@ for this note.
 **Primary runner:** `scripts/frontier_su3_cube_perron_solve.py`
 **Companion:** [`SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md`](SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md)
 (fusion engine, PR 1, audited by Codex as bounded_theorem)
-**Roadmap:** [`SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md`](SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md)
+**Roadmap status:** historical planning context only; no roadmap note is
+cited as load-bearing authority for this narrowed theorem.
 
 ## 0. Headline
 
@@ -236,14 +237,10 @@ claim_type: bounded_theorem
 intrinsic_status: unaudited
 deps:
   - su3_fusion_engine_pr1_theorem_note_2026-05-03
-  - su3_tensor_network_engine_roadmap_note_2026-05-03
   - gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03
   - gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note
   - gauge_vacuum_plaquette_tensor_transfer_perron_solve_note
-  - gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note
-  - gauge_scalar_bridge_kz_external_lift_theorem_note_2026-05-03
-  - gauge_scalar_bridge_3plus1_native_lower_bound_staging_note_2026-05-03
-verdict_rationale_template: |
+review_scope_summary: |
   Narrowed per auditor `scope_too_broad` verdict to exactly the three
   in-scope items: (i) L_s=2 PBC spatial cube geometry (12 plaquettes,
   24 directed links, all 48 incidences forward); (ii) bipartite
@@ -258,10 +255,7 @@ verdict_rationale_template: |
 ## 7. Cross-references
 
 - Fusion engine (PR 1, audited): [`SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md`](SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md)
-- Engine roadmap: [`SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md`](SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md)
 - Eventual target: [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md)
-- Companion external lift: [`GAUGE_SCALAR_BRIDGE_KZ_EXTERNAL_LIFT_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_BRIDGE_KZ_EXTERNAL_LIFT_THEOREM_NOTE_2026-05-03.md) (PR #484)
-- Companion staging: [`GAUGE_SCALAR_BRIDGE_3PLUS1_NATIVE_LOWER_BOUND_STAGING_NOTE_2026-05-03.md`](GAUGE_SCALAR_BRIDGE_3PLUS1_NATIVE_LOWER_BOUND_STAGING_NOTE_2026-05-03.md) (PR #487)
 - Source-sector factorization: [`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
 - Existing reference Perron solves: [`GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)
 

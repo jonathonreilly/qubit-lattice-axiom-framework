@@ -21241,16 +21241,16 @@
       "runner": "scripts/frontier_strong_cp_theta_zero.py"
     },
     "strong_cp_theta_zero_note": {
-      "assert_count": 2,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 52,
+        "B": 2,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_strong_cp_theta_zero.py"
+      "runner": "scripts/frontier_strong_cp_theta_zero_selected_surface_repair.py"
     },
     "structural_no_go_survey_note": {
       "assert_count": 0,
@@ -46477,13 +46477,27 @@
     "scripts/frontier_strong_cp_theta_zero.py": {
       "assert_count": 2,
       "claims": [
-        "strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10",
-        "strong_cp_theta_zero_note"
+        "strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10"
       ],
       "counts": {
         "A": 0,
         "B": 0,
         "C": 52,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_strong_cp_theta_zero_selected_surface_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "strong_cp_theta_zero_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
@@ -55200,12 +55214,12 @@
     "dominant_class_distribution": {
       "A": 224,
       "B": 273,
-      "C": 747,
+      "C": 748,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
-    "runners_with_C": 969,
+    "runners_classified": 1983,
+    "runners_with_C": 970,
     "runners_with_D": 583
   }
 }

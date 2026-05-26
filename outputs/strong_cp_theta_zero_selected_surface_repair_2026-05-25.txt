@@ -1,0 +1,97 @@
+Strong CP theta-zero selected-surface repair runner
+
+========================================================================================
+Selected-surface claim boundary
+========================================================================================
+  [PASS] note contains required boundary: 'bounded-support selected-surface algebra'
+  [PASS] note contains required boundary: 'The selected surface is an explicit premise'
+  [PASS] note contains required boundary: 'not a derived framework action-surface theorem'
+  [PASS] note contains required boundary: 'theta_bare = 0'
+  [PASS] note contains required boundary: 'arg det(M_u M_d) = 0'
+  [PASS] note contains required boundary: 'This row does not derive the scalar-mass-only class'
+  [PASS] note contains required boundary: 'It does not solve strong CP beyond the explicitly selected surface.'
+  [PASS] note avoids overclaim phrase: 'retained action-surface strong-CP closure package'
+  [PASS] note avoids overclaim phrase: 'retained-framework action-surface closure'
+  [PASS] note avoids overclaim phrase: 'retained Wilson-plus-staggered action surface'
+  [PASS] note avoids overclaim phrase: 'axion-model exclusion'
+  [PASS] note avoids overclaim phrase: 'derives the theta-free action surface from the minimal framework axioms'
+  [PASS] note avoids overclaim phrase: 'proves the theta-free action surface from the minimal framework axioms'
+
+========================================================================================
+Scalar mass determinant phase
+========================================================================================
+  [PASS] arg det(M_u M_d)=0 for m_u=0.2, m_d=1.7, dim=1 (det=0.34)
+  [PASS] arg det(M_u M_d)=0 for m_u=0.2, m_d=1.7, dim=2 (det=0.1156)
+  [PASS] arg det(M_u M_d)=0 for m_u=0.2, m_d=1.7, dim=3 (det=0.039304)
+  [PASS] arg det(M_u M_d)=0 for m_u=0.2, m_d=1.7, dim=6 (det=0.001544804416)
+  [PASS] arg det(M_u M_d)=0 for m_u=1.0, m_d=1.0, dim=1 (det=1)
+  [PASS] arg det(M_u M_d)=0 for m_u=1.0, m_d=1.0, dim=2 (det=1)
+  [PASS] arg det(M_u M_d)=0 for m_u=1.0, m_d=1.0, dim=3 (det=1)
+  [PASS] arg det(M_u M_d)=0 for m_u=1.0, m_d=1.0, dim=6 (det=1)
+  [PASS] arg det(M_u M_d)=0 for m_u=3.5, m_d=0.4, dim=1 (det=1.4)
+  [PASS] arg det(M_u M_d)=0 for m_u=3.5, m_d=0.4, dim=2 (det=1.96)
+  [PASS] arg det(M_u M_d)=0 for m_u=3.5, m_d=0.4, dim=3 (det=2.744)
+  [PASS] arg det(M_u M_d)=0 for m_u=3.5, m_d=0.4, dim=6 (det=7.529536)
+
+========================================================================================
+Paired anti-Hermitian determinant positivity
+========================================================================================
+  [PASS] det(D+mI)>0 for paired spectrum len=3, m=0.1 (det=0.1071565625+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=3, m=0.7 (det=3.2155915625+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=3, m=2.0 (det=169.146125+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=4, m=0.1 (det=0.05294276+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=4, m=0.7 (det=9.42854276+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=4, m=2.0 (det=1381.25+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=5, m=0.1 (det=0.00195632486563+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=5, m=0.7 (det=1.38300945904+0.00e+00i)
+  [PASS] det(D+mI)>0 for paired spectrum len=5, m=2.0 (det=2773.29101562+0.00e+00i)
+
+========================================================================================
+Effective action reality
+========================================================================================
+  [PASS] S_eff real for S_W=0.0, det=0.75 (S_eff=0.287682072452)
+  [PASS] S_eff real for S_W=0.0, det=1.0 (S_eff=0)
+  [PASS] S_eff real for S_W=0.0, det=33.2 (S_eff=-3.50254987592)
+  [PASS] S_eff real for S_W=0.0, det=512.0 (S_eff=-6.23832462504)
+  [PASS] S_eff real for S_W=12.5, det=0.75 (S_eff=12.7876820725)
+  [PASS] S_eff real for S_W=12.5, det=1.0 (S_eff=12.5)
+  [PASS] S_eff real for S_W=12.5, det=33.2 (S_eff=8.99745012408)
+  [PASS] S_eff real for S_W=12.5, det=512.0 (S_eff=6.26167537496)
+  [PASS] S_eff real for S_W=48.25, det=0.75 (S_eff=48.5376820725)
+  [PASS] S_eff real for S_W=48.25, det=1.0 (S_eff=48.25)
+  [PASS] S_eff real for S_W=48.25, det=33.2 (S_eff=44.7474501241)
+  [PASS] S_eff real for S_W=48.25, det=512.0 (S_eff=42.011675375)
+
+========================================================================================
+Positive sector-weight triangle inequality
+========================================================================================
+  [PASS] set 1: |Z(theta)| <= Z(0) on theta grid (max|Z|=1.6, Z0=1.6)
+  [PASS] set 1: F(theta)-F(0) >= 0 where defined (min_delta=0.000e+00)
+  [PASS] set 2: |Z(theta)| <= Z(0) on theta grid (max|Z|=2, Z0=2)
+  [PASS] set 2: F(theta)-F(0) >= 0 where defined (min_delta=0.000e+00)
+  [PASS] set 3: |Z(theta)| <= Z(0) on theta grid (max|Z|=1.15625, Z0=1.15625)
+  [PASS] set 3: F(theta)-F(0) >= 0 where defined (min_delta=0.000e+00)
+
+========================================================================================
+Real scalar line axial endpoint discipline
+========================================================================================
+  [PASS] alpha=0: positive real scalar orientation iff endpoint selected (cos=1, sin=0)
+  [PASS] alpha=0.523599: positive real scalar orientation iff endpoint selected (cos=0.866025, sin=0.5)
+  [PASS] alpha=1.5708: positive real scalar orientation iff endpoint selected (cos=6.12323e-17, sin=1)
+  [PASS] alpha=3.14159: positive real scalar orientation iff endpoint selected (cos=-1, sin=1.22465e-16)
+  [PASS] alpha=6.28319: positive real scalar orientation iff endpoint selected (cos=1, sin=-2.44929e-16)
+
+========================================================================================
+Audit metadata after pipeline regeneration
+========================================================================================
+  [PASS] strong_cp_theta_zero_note row exists
+  [PASS] claim_type is bounded_theorem (bounded_theorem)
+  [PASS] audit_status reset to unaudited (unaudited)
+  [PASS] effective_status reset to unaudited (unaudited)
+  [PASS] runner path is selected-surface repair runner (scripts/frontier_strong_cp_theta_zero_selected_surface_repair.py)
+  [PASS] direct deps are empty for selected-surface theorem ([])
+  [PASS] open dependency paths are empty ([])
+
+========================================================================================
+TOTAL: PASS=64 FAIL=0
+========================================================================================

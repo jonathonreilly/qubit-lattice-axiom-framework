@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 484 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 17 |
-| unaudited | 1254 |
+| unaudited | 1253 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 773 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1483 |
+| `unaudited` | 1482 |
 
 | claim_type | count |
 |---|---:|
@@ -908,6 +908,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3382,6 +3383,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the exact projected Hermitian response pack, the unsymmetrized even column split is the pair (S12, S13), which descends on the sparse face to the live readout formulas.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the runner verifies that S12 and S13 are exactly the two real even off-diagonal response entries, that they pull back to (u,v)/(b,rho), and that the stated live readout formulas follow. It does not derive the Schur projection or a selector for the split, which the note explicitly leaves outside scope.
 - **rationale:** The load-bearing step is an algebraic coordinate/readout closure on an already supplied projected Hermitian response pack, not a first-principles derivation. The runner source computes the response pack from helper definitions, extracts S12 and S13, verifies their pullback and forward readout identities, and exhibits a same-triplet separator. The observed TARGET reproduction is a non-load-bearing comparator-style check and should not be read as deriving the target or a selector law.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given g_* = 427/4 from the retained-bounded SM inventory wrapper and treating the relativistic Majorana equilibrium-density and late electromagnetic entropy-conservation formulas as external thermal premises, the arithmetic yields d_N, g_*S(today), s/n_gamma, and their conversion product.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-dm-leptogenesis-equilibrium-conversion-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The equilibrium number/entropy densities give d_N = 135 zeta(3)/(4 pi^4 g_*), while electromagnetic entropy conservation gives (T_gamma/T_nu)^3 = 11/4, g_*S(today) = 43/11, and s/n_gamma = 7.039433661546651.  _(class `A`)_
+- **chain closes:** False — The one-hop dependency closes only the finite SM inventory arithmetic for g_* = 427/4. The d_N and s/n_gamma steps require the relativistic Majorana equilibrium density and the late photon/neutrino entropy-conservation conversion formulas, which are explicit in the source/runner but not retained dependencies or import wrappers in the restricted packet.
+- **rationale:** Issue: the source says the equilibrium conversion factors are closed, but the direct authority only closes the SM g_* inventory arithmetic. Why this blocks: the Majorana equilibrium-density and electromagnetic entropy-conservation/late-conversion formulas are physical thermal/cosmology premises, and the runner checks algebra after setting them rather than sourcing them from retained dependencies. Repair target: add retained-bounded import wrappers or retained theorems, with direct dependency edges, for the Majorana N1 equilibrium density and the e+e- entropy-conservation/g_*S(today)/s/n_gamma conversion chain. Claim boundary until fixed: exact bounded arithmetic over imported thermal assumptions, not a retained closed theorem and not a tuned numerical benchmark match.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16`

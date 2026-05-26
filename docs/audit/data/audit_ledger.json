@@ -56683,22 +56683,42 @@
       "verdict_rationale": "The load-bearing step is an algebraic coordinate/readout closure on an already supplied projected Hermitian response pack, not a first-principles derivation. The runner source computes the response pack from helper definitions, extracts S12 and S13, verifies their pullback and forward readout identities, and exhibits a same-triplet separator. The observed TARGET reproduction is a non-load-bearing comparator-style check and should not be read as deriving the target or a selector law."
     },
     "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T00:00:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
+        },
+        "dep_claim_type": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "sm_relativistic_dof_count_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 10.448,
+        "runner_hash": "b7b78ee26edaf69b4ed4d2b1de14807ed9037286c0887a748064c9b1ae531d23",
+        "transitive_descendants": 246
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-dm-leptogenesis-equilibrium-conversion-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop dependency closes only the finite SM inventory arithmetic for g_* = 427/4. The d_N and s/n_gamma steps require the relativistic Majorana equilibrium density and the late photon/neutrino entropy-conservation conversion formulas, which are explicit in the source/runner but not retained dependencies or import wrappers in the restricted packet.",
       "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
-      "claim_scope": null,
+      "claim_scope": "Given g_* = 427/4 from the retained-bounded SM inventory wrapper and treating the relativistic Majorana equilibrium-density and late electromagnetic entropy-conservation formulas as external thermal premises, the arithmetic yields d_N, g_*S(today), s/n_gamma, and their conversion product.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -56706,21 +56726,21 @@
         "sm_relativistic_dof_count_import_note_2026-05-17"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.448,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The equilibrium number/entropy densities give d_N = 135 zeta(3)/(4 pi^4 g_*), while electromagnetic entropy conservation gives (T_gamma/T_nu)^3 = 11/4, g_*S(today) = 43/11, and s/n_gamma = 7.039433661546651.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "5a491e5dec4b9ca05279d0dd63a6fb9e67ef7aeb7977f693234d0484aee24c3b",
       "note_path": "docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge -- add or create direct retained-bounded import-wrapper dependencies for the relativistic Majorana equilibrium density and late electromagnetic entropy-conservation/photon-neutrino conversion formulas, then narrow the source's closed-language or rerun the same arithmetic with those assumptions sourced.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -56828,18 +56848,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 9,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py",
       "title": "DM Leptogenesis Equilibrium-Conversion Theorem",
       "transitive_descendants": 246,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source says the equilibrium conversion factors are closed, but the direct authority only closes the SM g_* inventory arithmetic. Why this blocks: the Majorana equilibrium-density and electromagnetic entropy-conservation/late-conversion formulas are physical thermal/cosmology premises, and the runner checks algebra after setting them rather than sourcing them from retained dependencies. Repair target: add retained-bounded import wrappers or retained theorems, with direct dependency edges, for the Majorana N1 equilibrium density and the e+e- entropy-conservation/g_*S(today)/s/n_gamma conversion chain. Claim boundary until fixed: exact bounded arithmetic over imported thermal assumptions, not a retained closed theorem and not a tuned numerical benchmark match."
     },
     "dm_leptogenesis_exact_kernel_closure_note_2026-04-15": {
       "audit_date": null,

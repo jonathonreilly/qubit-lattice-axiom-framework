@@ -17,16 +17,16 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| high | `unaudited` | 197 |
+| high | `unaudited` | 196 |
 | critical | `unaudited` | 149 |
 | medium | `unaudited` | 103 |
 | critical | `audited_conditional` | 6 |
 | high | `audited_numerical_match` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_renaming` | 2 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 467
@@ -250,7 +250,7 @@ publication tables phrase it.
 | high | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| high | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| high | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | high | `dm_leptogenesis_hrad_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `dm_leptogenesis_pmns_constructive_continuity_closure_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `dm_leptogenesis_pmns_constructive_projected_source_selector_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

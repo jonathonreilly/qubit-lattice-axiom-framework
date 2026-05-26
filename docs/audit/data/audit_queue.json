@@ -189,7 +189,7 @@
       "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": null,
+      "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
       "transitive_descendants": 878
     },
     {

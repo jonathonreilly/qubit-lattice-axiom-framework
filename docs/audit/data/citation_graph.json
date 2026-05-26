@@ -53976,9 +53976,9 @@
         "yt_ward_identity_derivation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bbdd26cc578f54c124dcecf9a4c05aa26902e1f18e787fa98946f707767a1f88",
+      "note_hash": "3b6a23f85436a087c6c2a568c28744d24fc9d98ccd40d222e02d2cf40085f7de",
       "path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
       "title": "Off-Surface Same-1PI Pinning Theorem for the Two-Ward `g_bare` Route"
     },
     "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2": {
@@ -85313,6 +85313,6 @@
     "leaf_count": 787,
     "node_count": 2540,
     "root_count": 847,
-    "runners_with_path": 2110
+    "runners_with_path": 2111
   }
 }

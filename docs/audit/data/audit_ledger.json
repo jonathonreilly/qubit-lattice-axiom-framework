@@ -95964,7 +95964,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "bbdd26cc578f54c124dcecf9a4c05aa26902e1f18e787fa98946f707767a1f88",
+      "note_hash": "3b6a23f85436a087c6c2a568c28744d24fc9d98ccd40d222e02d2cf40085f7de",
       "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -96137,7 +96137,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
       "title": "Off-Surface Same-1PI Pinning Theorem for the Two-Ward `g_bare` Route",
       "transitive_descendants": 878,
       "verdict_rationale": null

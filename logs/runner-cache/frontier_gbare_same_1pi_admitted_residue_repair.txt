@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
+runner_sha256: 9e3713bf98c895372701c79484f68fd6f6f78393e1e9434f4a48db9165f43d56
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Admitted-residue same-1PI g_bare repair
+Claim: g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19
+Runner: scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
+
+========================================================================================
+PART 0: SOURCE FIREWALL
+========================================================================================
+  [PASS] source note contains boundary phrase: conditional-use firewall
+  [PASS] source note contains boundary phrase: conditional Path-2 support theorem
+  [PASS] source note contains boundary phrase: H_unit-residue admission
+  [PASS] source note contains boundary phrase: This note does not derive the complete same-projected 1PI exhaustion theorem
+  [PASS] source note contains boundary phrase: The `g_bare = 1` closure is **conditional on the H_unit-residue
+  [PASS] source note contains boundary phrase: does not prove the missing same-projected 1PI exhaustion bridge
+  [PASS] source note contains boundary phrase: scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
+  [PASS] source note excludes overclaim phrase: This proves the theorem.
+  [PASS] source note excludes overclaim phrase: mathematically unavoidable
+  [PASS] source note excludes overclaim phrase: cannot represent different quantities
+  [PASS] source note excludes overclaim phrase: H_unit-residue is the complete same-projected 1PI
+  [PASS] source note excludes overclaim phrase: promoted to retained
+  [PASS] runner source excludes non-load-bearing phrase: observed
+  [PASS] runner source excludes non-load-bearing phrase: Standard Model top mass
+  [PASS] runner source excludes non-load-bearing phrase: Planck-surface transport
+  [PASS] runner source excludes non-load-bearing phrase: apply_audit
+
+========================================================================================
+PART 1: EXACT COEFFICIENT ALGEBRA
+========================================================================================
+  [PASS] color dimension is N_c = 3  (N_c=3)
+  [PASS] retained Rep-B input is F_Htt^(0)^2 = 1/6  (F^2=1/6)
+  [PASS] admitted same-1PI identity forces g_bare^2 = 2 N_c F^2 = 1  (2*3*1/6=1)
+  [PASS] positive branch gives g_bare = 1  (g_bare=1)
+  [PASS] canonical positive solution matches Rep-B coefficient  (g^2/(2 N_c)=1/6)
+  [PASS] sample g_bare=1/2 would require F^2 != 1/6  (required F^2=1/24)
+  [PASS] sample g_bare=2 would require F^2 != 1/6  (required F^2=2/3)
+  [PASS] sample g_bare=3 would require F^2 != 1/6  (required F^2=3/2)
+  [PASS] sample g_bare=7/11 would require F^2 != 1/6  (required F^2=49/726)
+
+========================================================================================
+SUMMARY
+========================================================================================
+PASS=25 FAIL=0
+RESULT: PASS
+
+----- stderr -----
+

@@ -53852,17 +53852,17 @@
     },
     "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": {
       "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b0478e6823f34f2994d77587db9bdd2a33e9413d1a8ffea379ebaa6239365d5c",
+      "note_hash": "05a0181dc87773bed10391e1220d55f95f1f1af58cf3a21f65c6c3e76b51ef82",
       "path": "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
-      "runner_path": "scripts/frontier_g_bare_derivation.py",
-      "title": "g_bare Rescaling-Freedom Removal Theorem (Cl(3) Canonical Normalization)"
+      "runner_path": "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py",
+      "title": "g_bare Rescaling Conditional Algebra Lemma"
     },
     "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17": {
       "claim_id": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
@@ -85269,22 +85269,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 599,
+      "bounded_theorem": 600,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
       "none": 1450,
       "open_gate": 49,
-      "positive_theorem": 170
+      "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1018,
+      "bounded_theorem": 1019,
       "decoration": 1,
       "meta": 191,
       "no_go": 183,
       "none": 431,
       "open_gate": 126,
-      "positive_theorem": 590
+      "positive_theorem": 589
     },
     "edge_count": 9732,
     "leaf_count": 787,

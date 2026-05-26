@@ -16,6 +16,6 @@ open_imports: []
 out_of_scope:
   - physical SM color bridge
   - QCD amplitude or gluon-sector readings
-pr_status: pending
-next_exact_action: run audit pipeline and open review PR
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1930
+next_exact_action: verify PR checks and continue campaign with the next audited-conditional row
 stop_condition: PR opened and verified, then continue campaign

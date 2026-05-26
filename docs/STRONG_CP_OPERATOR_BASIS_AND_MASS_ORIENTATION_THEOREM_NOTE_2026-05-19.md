@@ -31,6 +31,35 @@ What this note does NOT claim:
 - It does **not** exclude clover, multi-plaquette, or higher-trace topological discretizations outside the single-plaquette Wilson-slot surface reviewed here.
 - It does **not** promote the parent note's status; that is the audit lane's call.
 
+## §0.1. 2026-05-26 conditional-use firewall
+
+This row is intentionally bounded to the named action surface. It does not
+derive the real-positive Wilson measure selector (P4/P5) or the scalar-mass
+action-class boundary from the minimal axiom surface alone. Those are explicit
+bounded premises of this source note.
+
+Downstream rows, including `STRONG_CP_THETA_ZERO_NOTE.md`, may use this row
+only with those premises inherited:
+
+- **CP-odd slot rejection is conditional on** the canonical Wilson
+  single-plaquette, real-positive-measure surface (P1)-(P5).
+- **Mass-orientation support is conditional on** the retained staggered-only
+  anti-Hermiticity / determinant-positivity authority plus the scalar-mass
+  action-class boundary.
+- **Positive mass orientation is conventional inside the real scalar line.**
+  The determinant-phase argument selects the real scalar line; the sign is not
+  derived from P5 alone.
+
+So the honest downstream statement is conditional support:
+
+```text
+theta_eff = 0 on the bounded Wilson+staggered scalar-mass action surface
+```
+
+not an unconditional proof that the one-qubit operator algebra on the `Z^3`
+spatial substrate forbids every CP-odd topological discretization or derives
+the scalar-mass-only action class.
+
 ---
 
 ## §1. Setting

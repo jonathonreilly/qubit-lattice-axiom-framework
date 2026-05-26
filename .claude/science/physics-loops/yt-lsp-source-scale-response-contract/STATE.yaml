@@ -1,0 +1,38 @@
+loop: yt-lsp-source-scale-response-contract
+created: "2026-05-26"
+mode: science_block
+target_status: best-honest-status
+active_route: lsp_projective_boundary_plus_strict_response_contract
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+claim_boundary: >
+  LSP projective readout supplies the signed record but does not fix the
+  physical source-action scale. A future strict same-source top/W pole-response
+  certificate would compute y_t from measured physical responses.
+proposal_allowed: false
+bare_retained_allowed: false
+files_touched:
+  - docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py
+  - outputs/yt_lsp_source_scale_boundary_and_strict_response_contract_2026-05-26.json
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/STATE.yaml
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/GOAL.md
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/ASSUMPTIONS_AND_IMPORTS.md
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/NO_GO_LEDGER.md
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/TRACE_GATE.md
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/CLAIM_STATUS_CERTIFICATE.md
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/REVIEW_HISTORY.md
+  - .claude/science/physics-loops/yt-lsp-source-scale-response-contract/HANDOFF.md
+verification:
+  - "python3 scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py"
+  - "python3 scripts/frontier_yt_lsp_signed_record_source_readout_support.py"
+  - "python3 scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py"
+  - "python3 scripts/frontier_yt_fh_top_w_response_ratio_gate.py"
+  - "python3 -m py_compile scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py"
+  - "git diff --check"
+next_exact_action: >
+  Either produce the strict same-source top/W response certificate named by
+  this block, or continue the derivation route for the physical source/action
+  unit. Do not claim LSP projective measurement alone closes lambda.
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1972"

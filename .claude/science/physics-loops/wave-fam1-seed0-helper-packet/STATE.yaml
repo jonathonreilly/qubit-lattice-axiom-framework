@@ -20,6 +20,6 @@ out_of_scope:
   - seed-0 cross-family synthesis
   - full H=0.25 portability law
   - Fam1 seed-1 control ladder
-pr_status: pending
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1935
 next_exact_action: open review PR, verify checks, then continue campaign with the next audited-conditional row
 stop_condition: PR opened and verified, then continue campaign

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1227 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,20 +54,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1059 |
+| `bounded_theorem` | 1060 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 247 |
-| `open_gate` | 112 |
+| `open_gate` | 111 |
 | `positive_theorem` | 725 |
 
 | criticality | count |
@@ -891,7 +891,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3533,19 +3532,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** **Script:** `scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py`  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
-- **auditor confidence:** high
-
-### `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16`
-
-- **Note:** [`DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited the restricted-packet claim that, using the imported exact flavored transport functional on the fixed N_e native seed surface, a numerically found off-seed source overshoots eta/eta_obs = 1 and continuity yields a closure point.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260505-040942-beec6e04-dm_leptogenesis_pmns_tra-093`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Because the aligned seed point gives eta/eta_obs < 1, the extremal candidate gives eta/eta_obs > 1, and the exact transport value is continuous on the interpolating fixed-seed family, there exists an exact closure point with eta/eta_obs = 1.  _(class `A`)_
-- **chain closes:** False — The continuity argument closes only after accepting the transport functional, projector interface, exact package constants, and observed normalization imported by the runner. Those upstream definitions and derivations are not provided in the restricted packet, so the claimed full-stack closure does not derive here from the sole axiom alone.
-- **rationale:** The runner performs a real numerical optimization and root find, but the computation rests on imported modules and constants not included as cited retained authorities. The decisive closure step is a valid continuity/intermediate-value argument over the computed endpoint values, not an independent first-principles derivation from Cl(3) on Z^3 inside the restricted packet. The note itself also frames transport extremality as an open candidate selector law rather than a closed sole-axiom theorem.
 - **auditor confidence:** high
 
 ### `dm_lepton_synthesis_note_2026-04-19`

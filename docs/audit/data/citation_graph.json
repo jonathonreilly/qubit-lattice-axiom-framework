@@ -48778,9 +48778,9 @@
     },
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py",
@@ -48788,10 +48788,10 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "note_hash": "c82845227007582cd4230fd556ef3073ac7044d0b2cfe8f93112da5bf07b01f2",
+      "note_hash": "0b15486c8b5be269671ba0957ef14a25fabc20ecc0bf862e4eba30ee6d744d6d",
       "path": "docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
-      "title": "DM Leptogenesis PMNS Transport-Extremal Source Candidate"
+      "title": "DM Leptogenesis PMNS Transport Interval Witness"
     },
     "dm_leptogenesis_projection_theorem_note_2026-04-15": {
       "claim_id": "dm_leptogenesis_projection_theorem_note_2026-04-15",
@@ -85508,20 +85508,20 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 590,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
-      "none": 1464,
+      "none": 1463,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1017,
       "decoration": 1,
       "meta": 191,
       "no_go": 175,
-      "none": 434,
+      "none": 433,
       "open_gate": 125,
       "positive_theorem": 596
     },

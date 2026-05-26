@@ -10,7 +10,7 @@
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1951
 
 ## Claim movement
 
@@ -23,3 +23,7 @@ The source note now explicitly says downstream rows inherit the real-positive Wi
 ## Remaining blocker
 
 A stronger future result would derive the selector boundaries from A1/A2 alone.
+
+## Next action
+
+Verify PR mergeability, then continue the campaign if runtime remains.

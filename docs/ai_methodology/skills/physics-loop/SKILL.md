@@ -112,9 +112,9 @@ unless the user explicitly supplied `--no-pr`.
 - PR titles must include `[physics-loop]`, the lane/block slug, and the honest
   status (`exact theorem`, `bounded theorem`, `no-go`, `exact support`,
   `bounded support`, `open`, or `demotion`).
-- PR bodies must link the block's `HANDOFF.md`, notes, runners, verification
-  commands/results, review findings, imports retired/exposed, and remaining
-  blockers.
+- PR bodies must link the block's `HANDOFF.md`, `TRACE_GATE.md`, notes,
+  runners, verification commands/results, review findings, imports
+  retired/exposed, trace reachability, and remaining blockers.
 - Do not merge, push science to `main`, or update repo-wide authority surfaces
   as part of the science run.
 
@@ -145,6 +145,7 @@ Create or update a durable pack under:
   NO_GO_LEDGER.md
   LITERATURE_BRIDGES.md
   ARTIFACT_PLAN.md
+  TRACE_GATE.md
   CLAIM_STATUS_CERTIFICATE.md
   REVIEW_HISTORY.md
   HANDOFF.md
@@ -156,8 +157,8 @@ for resume/migration, but new loop state should use `physics-loops`.
 
 Use `STATE.yaml` as the resume surface: current goal, target status, runtime,
 cycle/block count, active route, hard residual being attacked, files touched,
-open imports, no-go routes, review findings, PR status, next exact action, and
-stop condition.
+open imports, no-go routes, trace-gate classification, review findings, PR
+status, next exact action, and stop condition.
 
 Use `OPPORTUNITY_QUEUE.md` in campaign mode. It must rank candidate science
 targets by:
@@ -172,7 +173,42 @@ targets by:
 Use `CLAIM_STATUS_CERTIFICATE.md` for every science block. It must record the
 actual current-surface status, any conditional/hypothetical status, dependency
 classes, open imports, review-loop disposition, the intended audit
-`claim_type`, and whether independent audit remains required.
+`claim_type`, trace-gate classification, and whether independent audit remains
+required.
+
+Use `TRACE_GATE.md` for every coherent science block. It answers the
+reachability question: "If this artifact is true, what exact claim, blocker,
+import, or frontier surface does it move?" This is not a demand that all
+frontier work already have a downstream consumer; it is a demand not to pretend
+that frontier-only work closes a known lane.
+
+Required trace-gate fields:
+
+```yaml
+trace_class: direct_blocker_closure|upstream_support|negative_route_pruning|frontier_discovery|methodology
+target_claim_id: null|...
+target_blocker_text: null|"..."
+source_of_blocker_text: null|audit_ledger|review_loop|handoff|user_goal|frontier_question
+reachability_to_target: closes|partially_closes|supports|prunes|unknown_frontier|none
+artifact_role: theorem|runner_certificate|literature_bridge|no_go|demotion|tooling|frontier_probe
+next_trace_action: "..."
+```
+
+Trace rules:
+
+- `direct_blocker_closure` requires an exact quoted blocker or import and a
+  concrete statement of how the artifact retires it.
+- `upstream_support` must name the downstream consumer that could use it, or
+  explicitly say the consumer is not yet known.
+- `negative_route_pruning` must state which route is pruned and why the no-go
+  applies to that route rather than a broader family.
+- `frontier_discovery` is valid pure science output. It may have
+  `target_claim_id: null`, `target_blocker_text: null`, and
+  `reachability_to_target: unknown_frontier`, but the PR/body/handoff must not
+  claim it closes, promotes, or retires any existing lane.
+- Any retained-positive or promoted-positive proposal must have trace class
+  `direct_blocker_closure` or a fully enumerated chain of trace entries whose
+  last entry is `direct_blocker_closure`.
 
 ## Claim-Status Firewalls
 
@@ -222,6 +258,8 @@ Required status fields for major artifacts:
 ```yaml
 actual_current_surface_status: open|no-go|exact-support|bounded-support|conditional-support|demotion|candidate-retained-grade
 target_claim_type: positive_theorem|bounded_theorem|no_go|open_gate|decoration|meta|null
+trace_class: direct_blocker_closure|upstream_support|negative_route_pruning|frontier_discovery|methodology
+reachability_to_target: closes|partially_closes|supports|prunes|unknown_frontier|none
 conditional_surface_status: null|...
 hypothetical_axiom_status: null|...
 admitted_observation_status: null|...
@@ -265,9 +303,12 @@ after all of these are true:
    exact support on the current authority surface.
 5. A runner or proof artifact checks dependency classes, not only numerical
    output.
-6. Review-loop disposition is `pass`; `pending`, `passed_with_notes`,
+6. `TRACE_GATE.md` gives a direct blocker/import closure path for the proposed
+   target; frontier-discovery/support-only trace classes cannot certify
+   retained-grade proposal language by themselves.
+7. Review-loop disposition is `pass`; `pending`, `passed_with_notes`,
    `demote`, or `block` cannot certify a retained-grade proposal.
-7. The PR body and handoff explicitly say independent audit is still required
+8. The PR body and handoff explicitly say independent audit is still required
    before the repo may treat the claim as retained-grade.
 
 If any item fails, use `open`, `exact-support`, `bounded-support`,
@@ -291,8 +332,8 @@ Nonfatal events that must **not** end a campaign while runtime remains:
 Required response to a nonfatal event:
 
 1. demote or archive the current artifact honestly;
-2. checkpoint `STATE.yaml`, `HANDOFF.md`, `REVIEW_HISTORY.md`, and
-   `CLAIM_STATUS_CERTIFICATE.md`;
+2. checkpoint `STATE.yaml`, `HANDOFF.md`, `REVIEW_HISTORY.md`,
+   `TRACE_GATE.md`, and `CLAIM_STATUS_CERTIFICATE.md`;
 3. commit/push/open PR or write `PR_BACKLOG.md` for the coherent block;
 4. refresh `OPPORTUNITY_QUEUE.md`;
 5. choose the next highest-ranked retained-positive opportunity and continue.
@@ -351,12 +392,17 @@ For publication-facing or quantitative work, also inspect
    provable algebraic core from imports, numerical checks, and parent
    ambitions before engineering the artifact. See
    [`references/abstract-algebraic-core-extraction.md`](references/abstract-algebraic-core-extraction.md).
-6. **Build the opportunity queue.** In campaign mode or unattended runs longer
+6. **Draft the trace gate.** For each serious route, write the expected
+   trace class before execution. If the route is pure frontier work, mark it
+   `frontier_discovery` rather than inventing a downstream blocker. If the
+   route is intended to move a known lane, quote the exact blocker/import it
+   is supposed to retire.
+7. **Build the opportunity queue.** In campaign mode or unattended runs longer
    than one major cycle, create `OPPORTUNITY_QUEUE.md` and keep at least three
    ranked science opportunities unless the repo has fewer viable open targets.
    Prefer retained-positive opportunities over more audit churn after one or
    two no-go/support-only cycles.
-7. **Apply the dramatic-step gate.** Execute only routes that can change the
+8. **Apply the dramatic-step gate.** Execute only routes that can change the
    lane state: import retired, exact support added, no-go proven, major blocker
    isolated, or novel structure introduced with a falsifier. Apply the
    **corollary-churn check** alongside the gate: if the proposed cycle's output
@@ -385,6 +431,10 @@ For publication-facing or quantitative work, also inspect
    | V3 | Could the audit lane already complete this derivation from existing retained primitives + standard math machinery (Schur complement, cube-root-of-unity arithmetic, Casimir formulas, Pauli matrix algebra, etc.)? | "No" — explain why the framework's retained primitives are necessary. If "yes", the cycle is performative and the PR must not be opened. |
    | V4 | Is the marginal content non-trivial (not a textbook identity, not a definition restated)? | "Yes" with one-sentence justification. Examples that fail: "real shifts don't change imaginary parts", "(1/sqrt(N)) * I has matrix elements 1/sqrt(N)", "scaling by mu preserves slope". |
    | V5 | Is this a one-step variant of an already-landed cycle in this campaign? | "No" — name the closest prior cycle and explain the structural distinction. "Same matrix structure, different physical interpretation" is NOT a structural distinction; it's relabeling. |
+
+   A `frontier_discovery` route satisfies this gate only if it introduces a
+   genuinely new structure, falsifier, or hard-premise test; it must not be
+   sold as closure.
 
    Review-loop triage of the 2026-05-02 audit-backlog campaign found too many
    branches whose marginal repo value was review-prep rather than new science.
@@ -432,39 +482,39 @@ For publication-facing or quantitative work, also inspect
    max of 5 per session and must NOT be conflated with retained-promotion
    campaigns. When invoked under any other mode, treat Pattern-C-shaped output
    the same as any other PR: it must pass the V1-V5 gate.
-8. **Execute one major cycle.** Produce a theorem note, runner/log pair,
+9. **Execute one major cycle.** Produce a theorem note, runner/log pair,
    import-retirement audit, literature bridge, no-go packet, or demotion
    packet. Keep edits scoped to the chosen route.
-9. **Run deep-work pressure when stuck.** If the last two cycles were
+10. **Run deep-work pressure when stuck.** If the last two cycles were
    audit/no-go/blocker-isolation outputs, or if no easy route passes the gate,
    run a stretch-attempt cycle before declaring the active route blocked. See
    **Deep Work Rules** below.
-10. **Certify status.** Before committing a block, write or update
-    `CLAIM_STATUS_CERTIFICATE.md`. Demote any title, status line, table row,
-    runner printout, or handoff sentence that fails the claim-type
-    certificate.
-11. **Checkpoint.** Update `STATE.yaml` and `HANDOFF.md` at least every
-   checkpoint interval, before long scripts, after long scripts, and before
-   any authorized campaign stop.
-12. **Review at milestones.** After each major artifact, run the `review-loop`
+11. **Certify status and trace.** Before committing a block, write or update
+    `CLAIM_STATUS_CERTIFICATE.md` and `TRACE_GATE.md`. Demote any title,
+    status line, table row, runner printout, or handoff sentence that fails
+    the claim-type certificate or overstates trace reachability.
+12. **Checkpoint.** Update `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md`
+   at least every checkpoint interval, before long scripts, after long
+   scripts, and before any authorized campaign stop.
+13. **Review at milestones.** After each major artifact, run the `review-loop`
    skill unless disabled. In science-run mode, record findings in branch-local
    `REVIEW_HISTORY.md` and `HANDOFF.md`; do not update the live active review
    queue or other repo-wide authority surfaces before the later review and
    integration process. The local disposition must be one of `pass`, `demote`,
    or `block`; `self-review pending` is not enough to push a PR. Either fix
    locally, demote locally, archive locally, or select a new route.
-13. **Close the cycle honestly.** Use the narrowest honest status inside the
+14. **Close the cycle honestly.** Use the narrowest honest status inside the
     branch artifacts: candidate retained-grade only when the certificate names
     an audit-ready `claim_type`; otherwise exact support, bounded support,
     open, no-go, reject, or historical. Do not patch a missing
     theorem step with prose. Put
     any proposed repo-wide weaving in `HANDOFF.md` for later review and
     backpressure integration.
-14. **Open review PRs.** At each block closure, open or prepare one PR for the
+15. **Open review PRs.** At each block closure, open or prepare one PR for the
     coherent science block unless `--no-pr` was supplied. In campaign mode,
     a missing PR must become `PR_BACKLOG.md` and the campaign must continue if
     runtime remains.
-15. **Continue the campaign or stop.** After PR/backlog handling, if runtime
+16. **Continue the campaign or stop.** After PR/backlog handling, if runtime
     remains and the current lane is blocked or closed, pick the next
     `OPPORTUNITY_QUEUE.md` item and continue. Stop the whole campaign only
     when runtime/max cycles expires, the target status is genuinely achieved
@@ -699,6 +749,8 @@ Report:
 - remote science branch;
 - runtime used and cycles completed;
 - claim-state movement achieved;
+- trace-gate classification and whether the artifact reaches a known blocker
+  or is frontier-only;
 - imports retired or newly exposed;
 - artifacts created and checks run;
 - review-loop findings and disposition;

@@ -3,9 +3,43 @@
 **Date:** 2026-04-24
 **Runner:** `scripts/frontier_koide_native_zero_section_closure_route.py`
 **Claim type:** bounded_theorem
-**Status:** bounded_conditional native route; not yet proposed_retained-only closure
+**Status:** bounded_conditional native route; not proposed_retained-only closure
 **Retained scope:** class-A symbolic algebra checks the runner verifies under three
 admitted identifications (see "2026-05-19 audit-conditional repair" below).
+**Current-surface firewall:** this row may be cited on the actual current
+surface only as conditional support for the native zero-section route. It may
+not be cited as a retained Koide Q/delta closure unless the three
+identifications named below are independently derived and audited.
+
+## 2026-05-26 conditional-use firewall
+
+actual_current_surface_status: conditional-support / bounded-support
+conditional_surface_status: `Q = 2/3` and `delta_open = 2/9` follow only under
+the three named zero-section/readout identifications.
+proposal_allowed: false
+proposal_allowed_reason: this row still depends on the admitted Brannen
+real-`Z_3` primitive endpoint, unit-preserving determinant-line readout, and
+charged-lepton zero-source source-response readout.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+This note does not derive any of the three identifications. It records the
+finite-dimensional algebra and arithmetic consequences that follow after those
+identifications are supplied. Downstream use must keep that condition attached:
+
+1. The `Q = 2/3` conclusion is conditional on the charged-lepton scalar being
+   the zero-source source-response coefficient on the normalized second-order
+   carrier.
+2. The no-spectator conclusion is conditional on the physical Brannen endpoint
+   being the whole real nontrivial `Z_3` primitive rather than a rank-one
+   selected line.
+3. The `c = 0` endpoint conclusion is conditional on a unit-preserving based
+   determinant-line readout rather than an unbased torsor coordinate.
+
+The repair introduces no new axiom and no new admitted premise. It narrows the
+row's usable current-surface status so independent audit can decide whether
+the firewall is sufficient or whether one of the three identifications must be
+split into a separate upstream theorem.
 
 ## Purpose
 
@@ -171,6 +205,9 @@ CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_Q=TRUE
 CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_DELTA=TRUE
 CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_NATIVE_VALUES=TRUE
 RETAINED_ONLY_NATIVE_CLOSURE_CLAIMED=FALSE
+ACTUAL_CURRENT_SURFACE_STATUS=CONDITIONAL_SUPPORT
+AUDIT_REQUIRED_BEFORE_EFFECTIVE_RETAINED=TRUE
+BARE_RETAINED_ALLOWED=FALSE
 RESIDUAL_IDENTIFICATION_DELTA=Brannen_endpoint_is_real_Z3_primitive_not_rank_one_line
 RESIDUAL_TRIVIALIZATION=unit_preserving_determinant_line_endpoint_readout
 ```

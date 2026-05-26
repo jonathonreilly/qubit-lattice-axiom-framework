@@ -37,6 +37,11 @@ Nature-grade boundary:
        unbased torsor coordinate.
 
 No mass data, fitted Koide value, H_* pin, or target endpoint is used.
+
+Current-surface firewall:
+  The runner verifies only the conditional algebra under the three named
+  identifications. It does not assert retained Koide closure on the actual
+  current surface.
 """
 
 from __future__ import annotations
@@ -223,6 +228,11 @@ def main() -> int:
         True,
         "The value 2/9 is computed by APS; Q follows from zero source.  The tested assumptions are representation/unit laws.",
     )
+    record(
+        "F.4 current-surface status remains conditional-support",
+        True,
+        "No Brannen endpoint, determinant-line unit, or charged-lepton zero-source identification is derived here.",
+    )
 
     print()
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
@@ -241,6 +251,10 @@ def main() -> int:
         print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_DELTA=TRUE")
         print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_NATIVE_VALUES=TRUE")
         print("RETAINED_ONLY_NATIVE_CLOSURE_CLAIMED=FALSE")
+        print("ACTUAL_CURRENT_SURFACE_STATUS=CONDITIONAL_SUPPORT")
+        print("CONDITIONAL_SURFACE_STATUS=native_zero_section_identifications_imply_Q_and_delta")
+        print("AUDIT_REQUIRED_BEFORE_EFFECTIVE_RETAINED=TRUE")
+        print("BARE_RETAINED_ALLOWED=FALSE")
         print("RESIDUAL_IDENTIFICATION_Q=native_zero_source_charged_lepton_scalar_readout")
         print("RESIDUAL_IDENTIFICATION_DELTA=Brannen_endpoint_is_real_Z3_primitive_not_rank_one_line")
         print("RESIDUAL_TRIVIALIZATION=unit_preserving_determinant_line_endpoint_readout")

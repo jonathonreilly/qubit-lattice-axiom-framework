@@ -1,0 +1,16 @@
+loop_slug: koide-native-zero-section-firewall
+target_claim_id: koide_native_zero_section_closure_route_note_2026-04-24
+branch: physics-loop/koide-native-zero-section-firewall-20260526
+actual_current_surface_status: conditional-support
+conditional_surface_status: Q and delta follow under three named zero-section/readout identifications
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md
+  - scripts/frontier_koide_native_zero_section_closure_route.py
+  - .claude/science/physics-loops/koide-native-zero-section-firewall/
+next_exact_action: run runner, audit pipeline, strict lint, vocab lint, and open review PR
+stop_condition: review PR opened for independent audit

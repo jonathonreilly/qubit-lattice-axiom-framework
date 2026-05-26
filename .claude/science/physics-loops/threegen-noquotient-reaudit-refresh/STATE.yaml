@@ -24,5 +24,9 @@ open_imports:
   - "Independent audit must decide whether the narrowed matrix theorem closes given current retained-grade deps."
 no_go_routes:
   - "No physical-species interpretation; generation_axiom_boundary_note remains out of scope."
-next_exact_action: "Run audit pipeline/lints, then open PR."
-stop_condition: "Block PR opened or verification fails."
+pr:
+  url: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1921"
+  status: open
+  audit_lane_status: in_progress
+next_exact_action: "Monitor PR audit-lane result while campaign pivots to the next independent audited-conditional row."
+stop_condition: "12-hour campaign budget exhausted, user stops, or global tooling failure prevents PR delivery."

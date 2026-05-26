@@ -7,3 +7,4 @@
   `effective_status=unaudited` while main still held the old conditional
   verdict.
 - 2026-05-26: Updated source and runner; local runner passed 45/45.
+- 2026-05-26: PR #1921 opened; audit-lane check initially in progress.

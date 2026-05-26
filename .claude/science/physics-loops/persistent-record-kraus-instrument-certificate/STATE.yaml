@@ -34,6 +34,6 @@ no_go_routes:
   - "Do not use this branch to promote the downstream Born-rule row."
   - "Do not claim a derivation of the physical record-writing isometry from lattice dynamics."
 review_findings: []
-pr_status: pending
-next_exact_action: "Run final gates, commit, push, open the review PR, verify mergeability, then pivot to the next queued audited-conditional row."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1948"
+next_exact_action: "Verify mergeability, then pivot to the next queued audited-conditional row."
 stop_condition: "Continue campaign until the 12-hour budget expires or the refreshed opportunity queue has no viable independent science block."

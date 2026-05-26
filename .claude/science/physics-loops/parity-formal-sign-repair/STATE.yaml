@@ -1,0 +1,16 @@
+loop_slug: parity-formal-sign-repair
+branch: physics-loop/parity-formal-sign-repair-20260526
+target_claim_id: parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02
+target_note: docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md
+target_runner: scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py
+actual_current_surface_status: open
+proposed_branch_status: bounded-support
+audit_required_before_effective_status: true
+bare_retained_allowed: false
+runtime_context: "12-hour physics-loop campaign"
+cycle: 9
+descendants_at_start: 889
+load_bearing_score_at_start: 10.298
+route: "Narrow from lattice-action LV no-go to formal Dirac-algebra plus derivative-sign bounded theorem."
+next_exact_action: "Open review PR and let independent audit adjudicate the formal-scope repair."
+stop_condition: "PR opened and verified; continue campaign on next audited_conditional row."

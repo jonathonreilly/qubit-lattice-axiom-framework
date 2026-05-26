@@ -43876,13 +43876,13 @@
       "deps": [
         "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
       ],
-      "direct_in_degree": 35,
+      "direct_in_degree": 34,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 30.319,
+      "load_bearing_score": 29.817,
       "load_bearing_step": "`CPT * H * (CPT)^{-1} = C * P * H * P * C = C * (-H) * C = -(-H) = H`, hence the CPT/Theta_H-odd Hamiltonian-sector projection vanishes.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -44211,7 +44211,7 @@
       },
       "runner_path": "scripts/frontier_cpt_exact.py",
       "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
-      "transitive_descendants": 902,
+      "transitive_descendants": 901,
       "verdict_rationale": "The primary runner constructs the staggered phases, finite lattice hopping operator, C/P operators, CPT transform, and odd projections directly, with no external comparator or hard-coded target constants in the load-bearing path. Its PASS=53 result supports the algebraic identities on the tested even lattices, and the note supplies the general algebraic closure for even periodic L. The runner stdout still contains stale canonical-SME wording, but the source note explicitly demotes that identification to admitted, non-retained bridge material."
     },
     "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": {
@@ -189992,62 +189992,42 @@
       "verdict_rationale": "Within the 'detector-readable packet memory' bounded scope (Tier A positive, Tier B partial, Tier C open), the chain closes by direct measurement. The note correctly disclaims persistent localized objects beyond the centroid-memory regime, matching the bounded interpretation."
     },
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-26T01:47:21.826213+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
-        },
-        "dep_claim_type": {
-          "cpt_exact_note": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cpt_exact_note": "retained"
-        },
-        "deps": [
-          "cpt_exact_note"
-        ],
-        "load_bearing_score": 10.298,
-        "runner_hash": "e274474894c25cfd7d707eecbf0d1b8f984f0c4044e33179d1ccdeda1ac02d64",
-        "transitive_descendants": 889
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T014445Z-617d81b9-parity_operator_basis_di-01",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner closes the 4x4 Dirac-matrix enumeration and the formal derivative-sign bookkeeping, but it does not derive the derivative-side sign character from the actual combined staggered parity P = P_inv * epsilon on lattice derivative representatives. The missing step is a bridge showing that epsilon contributes no extra sign to the dim-5 lattice derivative factors, despite the cited epsilon H0 epsilon = -H0 anticommutation for the hopping operator.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-      "claim_scope": "Audited the formal algebraic P-weight identities for the four enumerated dim-5 SME-style bilinear structures in the odd total spatial-index sector, together with the finite-lattice epsilon H0 epsilon = -H0 check on L=4,6,8.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T01:47:21.826213+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "cpt_exact_note"
-      ],
+      "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.298,
-      "load_bearing_step": "Sublattice parity epsilon is asserted not to change the derivative-side parity weight, so the combined parity action factorizes into the standard Dirac parity sign times the spatial-derivative sign, giving net P-weight (-1)^N.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "70c5ef098312c15ca3034fc6f55d12b30936e484854a8999b9a4412a2bcbb75b",
+      "note_hash": "b85c6879cb84439eae95f8eef56acc7a27beaf7e42bc300553636475a15050cb",
       "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation or runner check for how P_inv * epsilon conjugates the actual lattice derivative representatives in the four SME-style bilinears, or explicitly narrow the claim to a formal Dirac-algebra sign convention independent of lattice derivative action.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -190199,21 +190179,71 @@
             "total_pass": 11
           },
           "verdict_rationale": "The runner genuinely constructs H_0 and checks epsilon H_0 epsilon = -H_0 on L = 4, 6, 8, but its operator-basis checks use only one representative index assignment per structure. The P-symmetric projection test also hard-codes P_full = -full_op instead of applying the full parity action to all allowed variants. The universal claim that every covered candidate is P-odd fails on the packet's own parity table for allowed mixed time-spatial cases, so the chain does not close."
+        },
+        {
+          "archived_at": "2026-05-26T07:39:07.215283+00:00",
+          "archived_for_note_hash": "70c5ef098312c15ca3034fc6f55d12b30936e484854a8999b9a4412a2bcbb75b",
+          "audit_date": "2026-05-26T01:47:21.826213+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
+            },
+            "dep_claim_type": {
+              "cpt_exact_note": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cpt_exact_note": "retained"
+            },
+            "deps": [
+              "cpt_exact_note"
+            ],
+            "load_bearing_score": 10.298,
+            "runner_hash": "e274474894c25cfd7d707eecbf0d1b8f984f0c4044e33179d1ccdeda1ac02d64",
+            "transitive_descendants": 889
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T014445Z-617d81b9-parity_operator_basis_di-01",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner closes the 4x4 Dirac-matrix enumeration and the formal derivative-sign bookkeeping, but it does not derive the derivative-side sign character from the actual combined staggered parity P = P_inv * epsilon on lattice derivative representatives. The missing step is a bridge showing that epsilon contributes no extra sign to the dim-5 lattice derivative factors, despite the cited epsilon H0 epsilon = -H0 anticommutation for the hopping operator.",
+          "claim_scope": "Audited the formal algebraic P-weight identities for the four enumerated dim-5 SME-style bilinear structures in the odd total spatial-index sector, together with the finite-lattice epsilon H0 epsilon = -H0 check on L=4,6,8.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T01:47:21.826213+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Sublattice parity epsilon is asserted not to change the derivative-side parity weight, so the combined parity action factorizes into the standard Dirac parity sign times the spatial-derivative sign, giving net P-weight (-1)^N.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation or runner check for how P_inv * epsilon conjugates the actual lattice derivative representatives in the four SME-style bilinears, or explicitly narrow the claim to a formal Dirac-algebra sign convention independent of lattice derivative action.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 234,
+            "B": 0,
+            "C": 3,
+            "D": 0,
+            "total_pass": 237
+          },
+          "verdict_rationale": "The runner genuinely constructs the staggered H0 matrix and the chiral-basis gamma algebra; it is not a print-only or tuned numerical-match runner. However, the operator-basis parity conclusion relies on a derivative-action premise that is asserted as sign bookkeeping rather than checked on lattice derivative operators. No-Go Discipline N3 flags this as a hidden bridge premise in the bounded theorem, and N6 finds no same-packet convention or ratification path that retires it."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 234,
+        "A": 0,
         "B": 0,
-        "C": 3,
+        "C": 0,
         "D": 0,
-        "total_pass": 237
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
-      "title": "Parity-Operator Basis: Dimension-5 LV Algebraic P-Weight Identities on the Staggered SME-Style Basis (Odd Total Spatial-Index Parity Sector)",
+      "title": "Parity-Operator Basis: Formal Dimension-5 P-Weight Identities",
       "transitive_descendants": 889,
-      "verdict_rationale": "The runner genuinely constructs the staggered H0 matrix and the chiral-basis gamma algebra; it is not a print-only or tuned numerical-match runner. However, the operator-basis parity conclusion relies on a derivative-action premise that is asserted as sign bookkeeping rather than checked on lattice derivative operators. No-Go Discipline N3 flags this as a hidden bridge premise in the bounded theorem, and N6 finds no same-packet convention or ratification path that retires it."
+      "verdict_rationale": null
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
       "audit_date": "2026-05-25T14:43:46.051946+00:00",
@@ -194242,7 +194272,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.82,
+      "load_bearing_score": 15.819,
       "load_bearing_step": "Using P D P = -D and K(i) = -i, the antiunitary Theta_H = P K sends H = iD to P(-iD)P = iD, so the Theta_H-odd projection of H vanishes.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -194342,7 +194372,7 @@
       },
       "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
       "title": "Physical Hermitian Hamiltonian And SME Bridge",
-      "transitive_descendants": 903,
+      "transitive_descendants": 902,
       "verdict_rationale": "Within the narrowed scope, the load-bearing step is a direct antiunitary algebra check rather than a renaming or external numerical match. The runner source actually builds D, C, P, direction-resolved components, and computes the Hermiticity, symmetry, and odd-sector norms; it does not merely print constants or import the contested premise. The original broad SME-coefficient-zero claim would require a separate operator-basis completeness bridge, but the note explicitly removes that as load-bearing."
     },
     "physical_lattice_foundational_interpretation_note_2026-05-08": {
@@ -304107,8 +304137,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2380,
-    "re_audit_required": 0,
+    "preserved_existing": 2379,
+    "re_audit_required": 1,
     "row_count": 2424,
     "seeded_new": 0
   }

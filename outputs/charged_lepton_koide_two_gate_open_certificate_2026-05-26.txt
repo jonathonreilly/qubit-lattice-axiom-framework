@@ -1,0 +1,36 @@
+[PASS] [A] note boundary contains: Claim type:** open_gate
+[PASS] [A] note boundary contains: Status:** open gate
+[PASS] [A] note boundary contains: two remaining charged-lepton Koide gates
+[PASS] [A] note boundary contains: Koide surface selection gate
+[PASS] [A] note boundary contains: Brannen phase identification gate
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note boundary contains: open-gate map
+[PASS] [A] note omits stale package phrase: current support packet
+[PASS] [A] note omits stale package phrase: authoritative support surface
+[PASS] [A] note omits stale package phrase: clean enough for package use
+[PASS] [A] note omits stale package phrase: conditional closure
+[PASS] [A] note omits stale package phrase: promoted on the current package surface
+[PASS] [A] note omits stale package phrase: retained closure
+[PASS] [A] note omits stale package phrase: retained promotion
+
+=== charged-lepton Koide gate algebra ===
+[PASS] [A] Q target solves c^2=2 (2)
+[PASS] [A] Q target solves r^2/a^2=1/2 (1/2)
+[PASS] [A] c^2=2 implies Q=2/3
+[PASS] [A] delta=Q/3 sends Q=2/3 to 2/9
+[PASS] [A] delta=2/9 is equivalent to Q=2/3 under delta=Q/3
+[PASS] [B] Brannen phase bridge is a declared extra rule
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type is open_gate
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] self dependency path removed ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (283)
+
+Charged-lepton Koide two-gate open certificate: PASS
+PASS=29 FAIL=0

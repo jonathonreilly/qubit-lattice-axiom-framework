@@ -43959,15 +43959,15 @@
     },
     "charged_lepton_koide_note_2026-04-18": {
       "claim_id": "charged_lepton_koide_note_2026-04-18",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "bed2e7508a2e43707e78064277863ba525900dce3217a594e130c0a44de2d6eb",
+      "note_hash": "8b90720698c26d9ae4a4a0990498cedf408e4b9c6b1b5a41ebea41c249d248ba",
       "path": "docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md",
-      "runner_path": null,
-      "title": "Charged-Lepton Koide Support Packet (2026-04-18)"
+      "runner_path": "scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py",
+      "title": "Charged-Lepton Koide Two-Gate Open Certificate"
     },
     "charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27": {
       "claim_id": "charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27",
@@ -85487,8 +85487,8 @@
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
-      "none": 1464,
-      "open_gate": 48,
+      "none": 1463,
+      "open_gate": 49,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
@@ -85496,14 +85496,14 @@
       "decoration": 1,
       "meta": 191,
       "no_go": 175,
-      "none": 434,
-      "open_gate": 125,
+      "none": 433,
+      "open_gate": 126,
       "positive_theorem": 596
     },
     "edge_count": 9778,
     "leaf_count": 783,
     "node_count": 2538,
     "root_count": 836,
-    "runners_with_path": 2099
+    "runners_with_path": 2100
   }
 }

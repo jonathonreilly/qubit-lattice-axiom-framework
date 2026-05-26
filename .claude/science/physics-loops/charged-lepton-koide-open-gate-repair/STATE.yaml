@@ -1,0 +1,50 @@
+loop_slug: charged-lepton-koide-open-gate-repair
+date: 2026-05-26
+campaign: 12h-science-loop
+block: charged-lepton-koide-two-gate-open-certificate
+target_claim_id: charged_lepton_koide_note_2026-04-18
+branch: physics-loop/charged-lepton-koide-open-gate-repair-20260526
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: narrow broad charged-lepton Koide package summary to a finite two-gate open certificate
+files_touched:
+  - docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md
+  - scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py
+  - outputs/charged_lepton_koide_two_gate_open_certificate_2026-05-26.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+open_gates:
+  - derive physical charged-lepton selection of c^2 = 2 / Q = 2/3
+  - derive the selected-line Brannen phase readout delta = Q/3, hence delta = 2/9 at the Koide target
+verification:
+  runner: PASS=29 FAIL=0
+  audit_lint_strict: pass_with_preexisting_maradudin_warning
+  render_controlled_vocabulary_check: pass
+  vocab_lint_changed_note: pass
+  git_diff_check: pass
+metadata_after_pipeline:
+  claim_type: open_gate
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  open_dependency_paths: []
+  transitive_descendants: 283
+  load_bearing_score: 15.15
+  criticality: critical
+  queue_position: 0
+  queue_ready: true
+next_exact_action: open review PR, then pivot to the next audited conditional science candidate
+stop_condition: 12h campaign runtime exhausted or refreshed opportunity queue fully blocked

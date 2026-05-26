@@ -48,8 +48,12 @@ No-go claims must pass the N1-N8 gate and be explicitly bounded.
 
 ## Branch / PR policy for the local agent (IMPORTANT)
 - **NEVER write to `main`.** All changes land via **pull request** only.
-- Develop on `claude/lattice-negative-numbers-exploration-FwRQE` (or a child branch off it); open a
-  **science PR** for review.
+- This block lives on `science/dynamics-lane-m3-pi-bridge-nogo-2026-05-26` (fresh off `origin/main`
+  on 2026-05-26). The earlier working branch `claude/lattice-negative-numbers-exploration-FwRQE`
+  had two prior PRs closed-without-merge (#1602, #1816); per the closed-PR-means-dead-branch policy,
+  this block was cherry-picked onto a fresh branch off `origin/main`.
+- Follow-up work either continues on this branch or branches fresh off `origin/main` for each new
+  block; open a **science PR** for review.
 - PRs go through **independent review and auditor agents** — author status on a PR is never an
   audit status; the auditor sets effective status.
 - Keep the claim-status discipline: state author status, mark `audit_required_before_effective`,

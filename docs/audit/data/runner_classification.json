@@ -21435,9 +21435,9 @@
     "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 28,
+        "A": 2,
+        "B": 3,
+        "C": 26,
         "D": 0
       },
       "decoration_candidate": false,
@@ -46601,9 +46601,9 @@
         "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03"
       ],
       "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 28,
+        "A": 2,
+        "B": 3,
+        "C": 26,
         "D": 0
       },
       "decoration_candidate": false,

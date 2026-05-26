@@ -1078,11 +1078,11 @@
     },
     {
       "from": "audited_symmetry_synthesis_note",
-      "to": "higher_symmetry_joint_validation_note"
+      "to": "mirror_chokepoint_boundary_fit_note"
     },
     {
       "from": "audited_symmetry_synthesis_note",
-      "to": "higher_symmetry_gravity_probe_note"
+      "to": "mirror_mutual_information_chokepoint_note"
     },
     {
       "from": "audited_symmetry_synthesis_note",
@@ -1090,7 +1090,11 @@
     },
     {
       "from": "audited_symmetry_synthesis_note",
-      "to": "mirror_mutual_information_chokepoint_note"
+      "to": "higher_symmetry_joint_validation_note"
+    },
+    {
+      "from": "audited_symmetry_synthesis_note",
+      "to": "higher_symmetry_gravity_probe_note"
     },
     {
       "from": "audit_backlog_note_2026-05-02",
@@ -11461,22 +11465,6 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "central_band_dense_joint_note"
-    },
-    {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "central_band_mass_window_note"
-    },
-    {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "asymmetry_persistence_pilot_note"
-    },
-    {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "asymmetry_persistence_mass_window_note"
-    },
-    {
       "from": "hard_geometry_head_to_head_note",
       "to": "central_band_dense_joint_highn_note"
     },
@@ -21257,10 +21245,6 @@
       "to": "minimal_axioms"
     },
     {
-      "from": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-      "to": "a1_qubit_interpretation_note_2026-05-20"
-    },
-    {
       "from": "primitive_p_heavyq_casimir_closure_note_2026-05-10_ppheavyq_closure",
       "to": "primitive_p_heavyq_species_proposal_note_2026-05-10_ppheavyq"
     },
@@ -24794,23 +24778,11 @@
     },
     {
       "from": "symmetry_head_to_head_note",
-      "to": "mirror_chokepoint_note"
-    },
-    {
-      "from": "symmetry_head_to_head_note",
-      "to": "mirror_mutual_information_chokepoint_note"
+      "to": "mirror_chokepoint_boundary_fit_note"
     },
     {
       "from": "symmetry_head_to_head_note",
       "to": "higher_symmetry_joint_validation_note"
-    },
-    {
-      "from": "symmetry_head_to_head_note",
-      "to": "higher_symmetry_gravity_probe_note"
-    },
-    {
-      "from": "symmetry_head_to_head_note",
-      "to": "mirror_chokepoint_boundary_fit_note"
     },
     {
       "from": "synthesis_note",
@@ -41855,20 +41827,21 @@
     },
     "audited_symmetry_synthesis_note": {
       "claim_id": "audited_symmetry_synthesis_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "mirror_chokepoint_note",
-        "higher_symmetry_joint_validation_note",
-        "higher_symmetry_gravity_probe_note",
+        "mirror_chokepoint_boundary_fit_note",
+        "mirror_mutual_information_chokepoint_note",
         "mirror_2d_validation_note",
-        "mirror_mutual_information_chokepoint_note"
+        "higher_symmetry_joint_validation_note",
+        "higher_symmetry_gravity_probe_note"
       ],
       "helper_runner_paths": [
         "scripts/mirror_born_audit.py"
       ],
-      "note_hash": "8e78b634b1790db98cf69ccc87de6177fa4d25e083a82d45538131816207b7cb",
+      "note_hash": "1212d9044c23a30482423df07b16c22d88e1ef9bd6ec15565f2ad3068ee36bb7",
       "path": "docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md",
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Audited Symmetry Synthesis Note"
@@ -42617,10 +42590,10 @@
         "bh_entropy_rt_ratio_widom_no_go_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "51dea579896de1b86472f746bc43ae3dd0437004975e001d1f19679666d63bc9",
+      "note_hash": "a09128dafd5c549b21fb581d4fdede4d5e829f184395ca419bf98e0266f71afa",
       "path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
-      "title": "Bekenstein-Hawking Entropy Derived from Lattice Entanglement"
+      "title": "Bekenstein-Hawking Entropy Bounded Lattice Companion"
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "claim_id": "bh_entropy_rt_ratio_widom_no_go_note",
@@ -48228,10 +48201,10 @@
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py"
       ],
-      "note_hash": "94735ad77bcee42110df4cced04793f0641370dc3dd5ce249a8dcdcd994a7e37",
+      "note_hash": "8b923c5da961df0cd3e4ade081bc7e19bfdf9153ea41eda7710e6f507107c2fb",
       "path": "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py",
-      "title": "DM Leptogenesis PMNS Analytic Stationary Classification Theorem"
+      "title": "DM Leptogenesis PMNS Algebraic Stationary Diagnostic"
     },
     "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
@@ -48778,9 +48751,9 @@
     },
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py",
@@ -48788,10 +48761,10 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "note_hash": "c82845227007582cd4230fd556ef3073ac7044d0b2cfe8f93112da5bf07b01f2",
+      "note_hash": "0b15486c8b5be269671ba0957ef14a25fabc20ecc0bf862e4eba30ee6d744d6d",
       "path": "docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
-      "title": "DM Leptogenesis PMNS Transport-Extremal Source Candidate"
+      "title": "DM Leptogenesis PMNS Transport Interval Witness"
     },
     "dm_leptogenesis_projection_theorem_note_2026-04-15": {
       "claim_id": "dm_leptogenesis_projection_theorem_note_2026-04-15",
@@ -54117,8 +54090,10 @@
         "graph_first_su3_integration_note",
         "native_gauge_closure_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "0d039e1648730e44d104838535bea63fe9b89e203c5915b5a5281ea7bc3606f1",
+      "helper_runner_paths": [
+        "scripts/frontier_su3_holonomy_exponential_bridge.py"
+      ],
+      "note_hash": "a9d3a45950911f285fb44224dfd53e9f21ceef98b4bf67af683c01064045497f",
       "path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
       "title": "Gauge-Normalization Rigidity Theorem"
@@ -54993,16 +54968,16 @@
     },
     "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": {
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
         "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
         "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f6c5fd5414a3919c7a492971967109d7aa3d621a433cb33ce14c30ed15d34a40",
+      "note_hash": "c0371aedea307e48971402f53e4ac13acbd488c3b45cd27227bcdb16819cc780",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Compressed Rim-Evaluation Theorem"
@@ -57201,15 +57176,10 @@
     },
     "hard_geometry_gravity_window_note": {
       "claim_id": "hard_geometry_gravity_window_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "central_band_dense_joint_note",
-        "central_band_mass_window_note",
-        "asymmetry_persistence_pilot_note",
-        "asymmetry_persistence_mass_window_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/asymmetry_persistence_joint_card.py",
         "scripts/asymmetry_persistence_pilot.py",
@@ -57222,10 +57192,10 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "ece5264d847d7614f924a0bf6d102bf3e91a07df9c03c0fa848fbfd8d6c13fdf",
+      "note_hash": "d9ebe10929687e3d7ed6b157d33dcc9834f0da8b2d5feac53ec4de8976de5595",
       "path": "docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md",
       "runner_path": "scripts/hard_geometry_gravity_window.py",
-      "title": "Hard-Geometry Gravity Window Note"
+      "title": "Hard-Geometry Direct Gravity Window Note"
     },
     "hard_geometry_head_to_head_note": {
       "claim_id": "hard_geometry_head_to_head_note",
@@ -69149,7 +69119,7 @@
         "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "note_hash": "b04105b74a6e97f0bd6681d1507ac625123301b51a1e1a4c63cf279e9b8d7011",
+      "note_hash": "ab21242fbd981531488d702a01c4698c8af933ccd75bdca1a3d97d1bfaffa305",
       "path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure"
@@ -69839,13 +69809,12 @@
       "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms",
-        "a1_qubit_interpretation_note_2026-05-20"
+        "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f9450bfd90b6cf731bc71b7f2eba55c6224a9bb0a69b74cb2df216c123fe7b23",
+      "note_hash": "6a131ecfbaebfc288b9bdcb2ff202464a7b91651846641cb936786d468b688b1",
       "path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
       "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra"
     },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
@@ -76160,9 +76129,9 @@
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bdd6146b189aa9646e8a4a119527fb050659963915114e400347540ba30cdf13",
+      "note_hash": "2a842207d7e81785287d7e870d586e46369e24a43975f1c08a0bfdab562442f9",
       "path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_sm_relativistic_dof_count_import.py",
       "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Named Non-Derivation Import"
     },
     "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
@@ -78038,14 +78007,14 @@
     },
     "su3_dabc_symmetric_theorem_note_2026-05-02": {
       "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "54372b216bbcf8fc0528b8150c746e927ac23f6695da2d5a6b5403c55280a7cb",
+      "note_hash": "238bc30e048b9d890f8b79488609a879eb3d78da23e6204ba65ce76c0ddc8080",
       "path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/su3_dabc_symmetric_check.py",
       "title": "SU(3) Symmetric Structure Constants d^{abc} from Anticommutator"
@@ -78344,18 +78313,15 @@
     },
     "symmetry_head_to_head_note": {
       "claim_id": "symmetry_head_to_head_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "mirror_chokepoint_note",
-        "mirror_mutual_information_chokepoint_note",
-        "higher_symmetry_joint_validation_note",
-        "higher_symmetry_gravity_probe_note",
-        "mirror_chokepoint_boundary_fit_note"
+        "mirror_chokepoint_boundary_fit_note",
+        "higher_symmetry_joint_validation_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5e815662ccd349fd1455dd62ad4013e1afe0985ac0acd8f50684d99d69d6b169",
+      "note_hash": "8ddc979b8af9ce95e19196bfe78b8207ee989d5e1e6a0cda85eedf32fea4579c",
       "path": "docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md",
       "runner_path": "scripts/symmetry_head_to_head.py",
       "title": "Symmetry Head-To-Head Note"
@@ -79527,7 +79493,7 @@
         "z2_hw1_mass_matrix_parametrization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "469d962029dae7256fe9da079fb667eb5f080750d54ee48eff36632cb05248d5",
+      "note_hash": "ecc3386078b1401209aeca659957c594acc0ae989fcffccffacd11f7ee8845e4",
       "path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "title": "Three-Generation Observable: No-Proper-Quotient Narrow Theorem"
@@ -80846,8 +80812,8 @@
     },
     "valley_linear_continuum_synthesis_note": {
       "claim_id": "valley_linear_continuum_synthesis_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "valley_linear_action_note",
@@ -80857,9 +80823,9 @@
         "decoherence_action_independence_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1fa18a23f24ea90bcc64e94d2345525fba586ab1585f5f0e14b847dcbc5b7152",
+      "note_hash": "34b85eb33a4f38f5d0521588f25a0030d9a8863a7a63bb3d5e173a28b157ba10",
       "path": "docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_valley_linear_continuum_synthesis.py",
       "title": "Valley-Linear Continuum Synthesis Note"
     },
     "valley_linear_mirror_transfer_note": {
@@ -81166,12 +81132,8 @@
       "deps": [
         "wave_direct_dm_h025_fam2_seed1_control_note"
       ],
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_h025_control_batch.py",
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "note_hash": "0774786b889814ce4069628f913948a44b8172574ec09a19a69f18aa23527ed5",
+      "helper_runner_paths": [],
+      "note_hash": "294c340bcf1b159b10ff1f6c29085b5f93ca08eeb4617e5bd32c335707a4906d",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Control Note"
@@ -85042,6 +85004,7 @@
     "hadron_lane1_sqrt_sigma_b2_static_energy_bridge_scout_note_2026-04-30_note_2026-05-17",
     "hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30",
     "half_plane_chart_equivalence_narrow_theorem_note_2026-05-02",
+    "hard_geometry_gravity_window_note",
     "hard_geometry_local_note",
     "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
     "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
@@ -85508,27 +85471,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 596,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
-      "none": 1464,
+      "none": 1459,
       "open_gate": 48,
-      "positive_theorem": 173
+      "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1021,
       "decoration": 1,
       "meta": 191,
       "no_go": 175,
-      "none": 434,
+      "none": 432,
       "open_gate": 125,
-      "positive_theorem": 596
+      "positive_theorem": 593
     },
-    "edge_count": 9783,
-    "leaf_count": 781,
+    "edge_count": 9776,
+    "leaf_count": 784,
     "node_count": 2538,
-    "root_count": 834,
-    "runners_with_path": 2099
+    "root_count": 835,
+    "runners_with_path": 2102
   }
 }

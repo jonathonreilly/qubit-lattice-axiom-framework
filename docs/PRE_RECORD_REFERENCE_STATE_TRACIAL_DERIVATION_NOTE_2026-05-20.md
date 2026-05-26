@@ -6,6 +6,8 @@
 unique-tracial-state characterization; the pre-record identification
 half is demoted to a separate open admission, not part of this row's
 audited claim — see `## Narrowed claim` and `## Open admission` below)
+**Runner:** `scripts/frontier_pre_record_reference_state_tracial_derivation.py`
+**Runner output:** `outputs/pre_record_reference_state_tracial_derivation_certificate_2026-05-26.txt`
 **Supersedes (in part):** `archive_unlanded/a3-prime-pre-record-state-superseded-2026-05-20/A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`
 
 ## Narrowed claim
@@ -33,7 +35,7 @@ The narrowed audited claim:
 The Steps 1-4 operator-algebra mathematics below (finite-dim trace
 uniqueness, tensor traciality, Powers' UHF type `2^∞` theorem) close
 this narrowed claim as a standard-math import composition. Step 5
-below is retained as the open admission and is no longer load-bearing
+below is kept as the open admission and is no longer load-bearing
 on this row.
 
 ## Open admission (demoted; not part of the narrowed claim)
@@ -54,12 +56,11 @@ pre-record reference.
 This narrowing supersedes the earlier proposal to adopt the reference
 state as a third axiom (A3') only for the uniqueness half; the
 pre-record identification half remains an open admission as noted
-above. With the qubit-per-site baseline in place (see
-`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` for the historical
-language), the unique tracial state becomes a *derived theorem* on the
-one-qubit `Z^3` operator algebra alone; identification with the
-pre-record reference remains the separate open admission. The framework
-stays at two axioms regardless.
+above. With the qubit-per-site baseline in the canonical axiom document,
+the unique tracial state becomes a *derived theorem* on the one-qubit
+`Z^3` operator algebra alone; identification with the pre-record reference
+remains the separate open admission. The framework stays at two axioms
+regardless.
 
 ## Setup
 
@@ -106,21 +107,12 @@ state on `A_Λ = ⊗_x A_x`.
 per site applied factor-by-factor on simple tensors `A = ⊗_x A_x`,
 `B = ⊗_x B_x`, then extended bilinearly to all of `A_Λ`.
 
-*Uniqueness:* let `τ'` be any tracial state on `A_Λ`. The restriction
-`τ'|_{A_x}` (defined by `τ'|_{A_x}(A_x) := τ'(A_x ⊗ ⊗_{y ≠ x} 𝟙_y)`)
-is a tracial state on the simple finite-dim factor `A_x = M_2(ℂ)`, so
-by Step 1 it equals the normalized trace on `A_x`. The same holds for
-every `x ∈ Λ`. Now consider any simple tensor `A = ⊗_x A_x`. By the
-tracial property and finite-dim factor-by-factor commutation argument
-(any element of `A_x` commutes with any element of `A_y` for `x ≠ y`
-because they live in commuting tensor factors), `τ'(⊗_x A_x)` decomposes
-as `∏_x τ'|_{A_x}(A_x) = ∏_x (Tr(A_x) / 2)`. (This factorization step
-uses that `A_Λ` is a finite tensor product of **simple matrix algebras**
-`M_2(ℂ)`, which forces tracial states to factor — for general C*-algebras
-tracial states need not factor on simple tensors, but for simple
-finite-dim matrix algebras they do, by Tomita's theorem on tensor
-products of factors.) Bilinear extension gives uniqueness on all of
-`A_Λ`. □
+*Uniqueness:* `A_Λ` is canonically isomorphic to the full matrix algebra
+`M_{2^|Λ|}(ℂ)`. Applying the Step 1 matrix-unit proof with
+`n = 2^|Λ|` shows that any normalized tracial state on `A_Λ` is
+`Tr(A)/2^|Λ|`. This avoids any appeal to factor restrictions: one-site
+restrictions alone do not determine an arbitrary multi-site state, but
+full matrix-algebra traciality does. □
 
 So at any finite Λ, the tracial state is:
 
@@ -164,12 +156,20 @@ These are all equivalent for the finite-dim case; in the
 thermodynamic limit (C1), (C2), and (C4) extend cleanly, and (C3)
 becomes a "maximum entropy per site" condition.
 
+For clarity, the narrowed claim does **not** use one-point Pauli
+expectation vanishing as an equivalent characterization. On two or more
+sites, zero one-site Bloch vectors do not force the tracial state because
+correlated density matrices can have zero one-point Pauli expectations.
+A valid finite-region Pauli characterization is stronger: all nonidentity
+Pauli-string expectations vanish, equivalently the local density matrix is
+`I/2^|Λ|`. The runner records this distinction explicitly.
+
 ## Step 5 — Identification with the pre-record reference (demoted to open admission; not part of the narrowed claim)
 
 **Scope.** Per the `## Narrowed claim` and `## Open admission` blocks
 above, the identification of `τ` with a pre-record reference state is
 **not** part of this row's audited claim. The material below is
-retained for context describing the still-open identification but is
+kept for context describing the still-open identification but is
 explicitly **not** load-bearing on the narrowed claim.
 
 To this point (Steps 1-4), the derivation is closed: there is a unique
@@ -244,9 +244,8 @@ closed by independent treatment.
   uniqueness half (now a derived theorem); the pre-record
   identification half remains the separate open admission above.
 - **Does not change the minimal axiom surface.** The one-qubit-per-site and
-  `Z^3` substrate commitments are unaffected. (See companion
-  proposal `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` for historical
-  presentational context.)
+  `Z^3` substrate commitments are unaffected. Historical A1
+  presentational material is not a load-bearing dependency of this row.
 - **Does not close any prior audit-conditional row** (e.g.,
   `observable_principle_from_axiom_note`'s scalar-additivity
   premise). Those conditions are observable-side or factorization-side
@@ -305,7 +304,6 @@ recorded as the demoted open admission only.
 **Upstream framework dependencies** (load-bearing; markdown links so the citation graph records them as deps):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — canonical axiom set; supplies the one-qubit-per-site and `Z^3` substrate commitments on which the quasi-local algebra is built
-- [`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`](A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md) — companion meta on the qubit identification
 
 **Upstream standard-math imports** (named non-derivation; not framework rows):
 
@@ -317,3 +315,6 @@ recorded as the demoted open admission only.
 
 - `BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md` — explanatory pointer; explains why this note's tracial route differs from the Jaynes route
 - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` — contextual pointer; `audited_conditional` at full-spinor scope. The narrow U1-U3 portion of its content is supported by the retained `cl3_complexification_split` + `cl3_faithful_irrep_dim_two` narrow theorems referenced in the canonical axiom doc, not via this row directly
+- Historical A1 qubit-interpretation companion — non-load-bearing
+  presentational context only; not cited as a framework dependency for
+  this row's narrowed theorem.

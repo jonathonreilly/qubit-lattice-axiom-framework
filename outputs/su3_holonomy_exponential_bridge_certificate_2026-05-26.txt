@@ -1,0 +1,51 @@
+========================================================================
+FINITE SU(3) HOLONOMY EXPONENTIAL BRIDGE
+========================================================================
+Claim checked: every tested finite SU(3) link has a traceless-Hermitian
+logarithm in the fixed canonical generator span, giving U=exp(i A^a T_a a).
+Scope: algebraic finite-link bridge only; no continuum or action claim.
+
+SECTION 1: canonical su(3) basis
+------------------------------------------------------------------------
+  [PASS] Gell-Mann basis is Hermitian and traceless
+  [PASS] Tr(T_a T_b)=delta_ab/2 (max dev=1.11e-16)
+
+SECTION 2: finite-link logarithm reconstruction
+------------------------------------------------------------------------
+  [PASS] identity link: U is special unitary
+  [PASS] identity link: log is Hermitian traceless
+  [PASS] identity link: log lies in fixed generator span (coeff_norm=0.000000)
+  [PASS] identity link: exp(i H) reconstructs U (err=0.00e+00)
+  [PASS] identity link: local branch recovers supplied generator (err=0.00e+00)
+  [PASS] generic diagonal link: U is special unitary
+  [PASS] generic diagonal link: log is Hermitian traceless
+  [PASS] generic diagonal link: log lies in fixed generator span (coeff_norm=1.273264)
+  [PASS] generic diagonal link: exp(i H) reconstructs U (err=0.00e+00)
+  [PASS] center-sector link: U is special unitary
+  [PASS] center-sector link: log is Hermitian traceless
+  [PASS] center-sector link: log lies in fixed generator span (coeff_norm=7.255197)
+  [PASS] center-sector link: exp(i H) reconstructs U (err=6.23e-16)
+  [PASS] random exponential link seed=11: U is special unitary
+  [PASS] random exponential link seed=11: log is Hermitian traceless
+  [PASS] random exponential link seed=11: log lies in fixed generator span (coeff_norm=0.373477)
+  [PASS] random exponential link seed=11: exp(i H) reconstructs U (err=1.07e-15)
+  [PASS] random exponential link seed=11: local branch recovers supplied generator (err=2.20e-16)
+  [PASS] random exponential link seed=23: U is special unitary
+  [PASS] random exponential link seed=23: log is Hermitian traceless
+  [PASS] random exponential link seed=23: log lies in fixed generator span (coeff_norm=1.876192)
+  [PASS] random exponential link seed=23: exp(i H) reconstructs U (err=1.39e-15)
+  [PASS] random exponential link seed=37: U is special unitary
+  [PASS] random exponential link seed=37: log is Hermitian traceless
+  [PASS] random exponential link seed=37: log lies in fixed generator span (coeff_norm=4.007191)
+  [PASS] random exponential link seed=37: exp(i H) reconstructs U (err=2.34e-15)
+
+SECTION 3: branch ambiguity is discrete, not a continuous scalar
+------------------------------------------------------------------------
+  [PASS] integer coroot shift leaves the same SU(3) holonomy (err=6.10e-16)
+  [PASS] branch shift preserves su(3), but changes coefficients discretely
+  [PASS] branch shift is not a uniform scalar dilation of all generators
+
+========================================================================
+SUMMARY: PASS=31 FAIL=0
+========================================================================
+BRIDGE PASSED

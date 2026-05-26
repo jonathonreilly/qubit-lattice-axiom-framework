@@ -212,11 +212,15 @@ cited = {
     "s3_mass_matrix_no_go_note": "S3_MASS_MATRIX_NO_GO_NOTE.md",
     "z2_hw1_mass_matrix_parametrization_note": "Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md",
 }
+retained_grade = {"retained", "retained_no_go", "retained_bounded"}
 for cid, filename in cited.items():
     row = rows.get(cid)
     check(f"{cid} exists in audit ledger",
           row is not None,
           detail=f"{filename}; effective_status={row.get('effective_status') if row else None!r}")
+check("all four declared dependencies are retained-grade on current ledger",
+      all(rows.get(cid, {}).get("effective_status") in retained_grade for cid in cited),
+      detail={cid: rows.get(cid, {}).get("effective_status") for cid in cited})
 
 claim_row = rows.get(CLAIM_ID)
 check(f"{CLAIM_ID} seeded by audit pipeline",
@@ -233,8 +237,9 @@ if claim_row is not None:
     check("staggered realization gate is not a declared dependency",
           "staggered_dirac_realization_gate_note_2026-05-03" not in claim_deps,
           detail=f"deps={sorted(claim_deps)}")
-    check(f"{CLAIM_ID} remains effective-unaudited before independent audit",
-          claim_row.get("effective_status") == "unaudited",
+    allowed_pending_or_reviewed = {"unaudited", "audited_conditional", "retained_bounded", "retained"}
+    check(f"{CLAIM_ID} is pending re-audit or later retained-grade after review",
+          claim_row.get("effective_status") in allowed_pending_or_reviewed,
           detail=f"effective_status={claim_row.get('effective_status')!r}")
 
 # Verify generation_axiom_boundary_note is NOT cited

@@ -1,0 +1,16 @@
+loop_slug: yt-ew-kappa-family-nogo
+branch: physics-loop/yt-ew-kappa-family-nogo-repair-20260526
+target_claim_id: yt_ew_color_projection_theorem
+target_note: docs/YT_EW_COLOR_PROJECTION_THEOREM.md
+target_runner: scripts/yt_ew_kappa_family_nogo_certificate.py
+actual_current_surface_status: open
+proposed_branch_status: no-go
+audit_required_before_effective_status: true
+bare_retained_allowed: false
+runtime_context: "12-hour physics-loop campaign"
+cycle: 8
+descendants_at_start: 554
+load_bearing_score_at_start: 34.116
+route: "Retire unconditional K_EW=9/8 theorem; preserve exact K_EW(kappa_EW) family and weak-angle preservation."
+next_exact_action: "Open review PR and let independent audit adjudicate the kappa-family no-go repair."
+stop_condition: "PR opened and verified; continue campaign on next audited_conditional row."

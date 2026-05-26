@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1274 |
+| unaudited | 1275 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1503 |
+| `unaudited` | 1504 |
 
 | claim_type | count |
 |---|---:|
@@ -82,10 +82,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1995
+- runners classified: 1996
 - runners with (C) first-principles compute hits: 972
 - runners with (D) external comparator hits: 583
-- decoration candidates (no C, no D): 329
+- decoration candidates (no C, no D): 330
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -906,7 +906,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8903,19 +8902,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For positive real x and y, (x/y)^16=1 implies x/y=1; combined with x/y^2=1 this gives y=1, x=1, hence beta=6 and u_0=u_0_can using x=6/beta.  _(class `A`)_
 - **chain closes:** True — Within the stated positive canonical branch, the two invariant equations are sufficient and overdetermine the one-parameter deformation. The even-power ambiguity is removed by positivity, division by y is valid because y is positive, and Wilson alpha_bare(beta)=3/(2 pi beta) gives x=alpha_bare(beta)/alpha_bare(6)=6/beta, so x=1 exactly fixes beta=6 while y=1 fixes u_0=u_0_can.
 - **rationale:** The audited claim is clean under the narrowed boundary because the load-bearing content is finite real algebra over explicitly positive normalized variables. No substrate semantics, continuum claim, species identification, or general regulator no-go is needed. The exclusion list prevents the wider architectural commentary from carrying theorem weight. Residual risk is only boundary discipline: the result remains a rigidity theorem for the specified two normalized invariants on the retained Wilson/canonical surface, not a theorem of physical-lattice necessity in any broader semantic or regulator-universal sense.
-- **auditor confidence:** high
-
-### `pl_topology_infrastructure_textbook_import_note_2026-05-17`
-
-- **Note:** [`PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only whether the wrapper establishes the five named imports from the restricted packet supplied here.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T231132Z-4e598fd0-pl_topology_infrastructu-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note asserts that four PL-topology/geometric-topology results plus one Kawamoto-Smit homogeneity premise are accepted named non-derivation imports usable as one-hop authorities downstream.  _(class `B`)_
-- **chain closes:** False — The chain does not close because no cited authorities are provided in full, and the note explicitly relies on external textbook/lattice-QFT imports rather than deriving them from the packet. The Kawamoto-Smit homogeneity premise is also an imported bridge premise not closed here.
-- **rationale:** The source note is explicitly a named-import wrapper, not a derivation of the cited PL-topology theorems or the lattice-QFT homogeneity premise. Under the restricted packet, section 2 provides no cited authorities, so the load-bearing imports cannot be verified as retained-grade inputs. The conclusion may be usable as a bounded dependency wrapper only after the referenced external authorities and the homogeneity bridge are supplied or separately retained.
 - **auditor confidence:** high
 
 ### `planck_boundary_orientation_incidence_no_go_note_2026-04-30`

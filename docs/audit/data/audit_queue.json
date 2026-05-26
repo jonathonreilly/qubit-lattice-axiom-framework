@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 272,
+    "critical": 271,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -54,31 +54,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_derivation_note",
-      "claim_scope": "On the scoped Wilson matching surface with canonical Cl(3) trace normalization, N_c = 3, beta = 6, and the two retained_bounded repair lemmas, exact algebra gives g_bare = 1 and removes an independent g_bare rescaling on that surface.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 17,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.328,
-      "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_derivation.py",
-      "transitive_descendants": 908
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "rconn_derived_note",
@@ -98,6 +73,33 @@
       "ready": true,
       "runner_path": "scripts/rconn_matching_rule_nogo_certificate.py",
       "transitive_descendants": 902
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_derivation_note",
+        "native_gauge_closure_note",
+        "graph_first_su3_integration_note",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 17,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 18.315,
+      "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
+      "transitive_descendants": 900
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -541,33 +543,6 @@
       "ready": true,
       "runner_path": "scripts/gate_b_farfield_harness.py",
       "transitive_descendants": 122
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note",
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note",
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.315,
-      "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
-      "transitive_descendants": 900
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7901,6 +7876,30 @@
       "ready": true,
       "runner_path": "scripts/frontier_action_normalization.py",
       "transitive_descendants": 64
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_derivation_note"
+      ],
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.672,
+      "note_path": "docs/CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ckm_moduli_only_unitarity_jarlskog_area_certificate.py",
+      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16804,30 +16803,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_consecutive_primes_s3_koide_bridge.py",
-      "transitive_descendants": 50
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.672,
-      "note_path": "docs/CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_ckm_moduli_only_unitarity_jarlskog_area_certificate.py",
       "transitive_descendants": 50
     },
     {
@@ -29171,6 +29146,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "g_bare_derivation_status_correction_audit_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_derivation_note",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_g_bare_derivation_status_audit.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "guard_reconciliation_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -33870,32 +33871,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_derivation_status_correction_audit_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_g_bare_derivation_status_audit.py",
       "transitive_descendants": 0
     },
     {
@@ -38625,6 +38600,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 64,
-  "total_pending": 1292
+  "ready_count": 66,
+  "total_pending": 1291
 }

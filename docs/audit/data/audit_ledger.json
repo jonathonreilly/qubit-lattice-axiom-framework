@@ -93400,11 +93400,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 12.831,
+      "load_bearing_score": 15.831,
       "load_bearing_step": "g_bare^2 = 2 N_c / beta = 6 / 6 = 1.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "0826315a516f2b7ddbe283c9d2adce6eb11e6558941dab82d3e7b7c796b75673",
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
       "notes_for_re_audit_if_any": "No re-audit blocker; preserve the scoped-assumption boundary for WM and beta=6 in downstream use.",
@@ -93939,24 +93939,46 @@
       "verdict_rationale": "The source no longer claims to derive the Wilson matching relation, beta=6, Wilson-action uniqueness, or exclusion of external-scale alternatives. The audited claim is only the bounded class-A implication over listed inputs, and that implication closes exactly. The runner corroborates the same rational arithmetic and explicitly marks CN, WM, and beta=6 as scoped inputs rather than derived facts."
     },
     "g_bare_derivation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T16:42:01.845626+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself."
+        },
+        "dep_claim_type": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 18.328,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 908
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-g-bare-derivation-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped algebra closes from the stated canonical-normalization, Wilson-matching, beta=6, and N_c=3 inputs. It does not close as an unbounded positive theorem because the Wilson surface, beta=6 input, and canonical normalization remain scoped assumptions inherited through retained_bounded dependencies.",
       "claim_id": "g_bare_derivation_note",
-      "claim_scope": "On the scoped Wilson matching surface with canonical Cl(3) trace normalization, N_c = 3, beta = 6, and the two retained_bounded repair lemmas, exact algebra gives g_bare = 1 and removes an independent g_bare rescaling on that surface.",
+      "claim_scope": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-26T16:38:00.064182+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T16:42:01.845626+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -93971,8 +93993,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T16:42:01.845317+00:00",
+          "auditor": "codex-gpt-5.5-g-bare-derivation-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -93980,19 +94013,19 @@
         "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 17,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 18.328,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Relative to the admitted canonical Cl(3) normalization, g_bare = 1 follows from beta = 2 N_c / g_bare^2 with N_c = 3 and beta = 6.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "49704f5dbd1bbdadc0eebfd33b41f226f331ccfd804261eb086e53bccff832c7",
       "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only the administrative retag: applying this as audited_clean should set claim_type bounded_theorem, not positive_theorem; Section G should be treated as a non-load-bearing ledger-state check.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -94192,16 +94225,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 52,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 53
       },
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "Derivation of g_bare = 1 from Canonical Cl(3) Normalization",
       "transitive_descendants": 908,
-      "verdict_rationale": null
+      "verdict_rationale": "The current source claim should be retained only as a bounded theorem: it is a clean algebraic consequence on the accepted Wilson/canonical-normalization surface, not a first-principles derivation of that surface. The two Section G bounded failures are stale ledger-visibility expectations that the repair rows be unaudited; operationally those rows are retained_bounded, so those failures are not load-bearing against the scoped theorem. The exact runner checks all pass, and the source explicitly excludes dynamical fixed-point, maximum-entropy, and absolute-normalization claims."
     },
     "g_bare_derivation_status_correction_audit_note_2026-05-02": {
       "audit_date": null,
@@ -94938,11 +94971,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 16.336,
+      "load_bearing_score": 19.336,
       "load_bearing_step": "Assuming canonical trace normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, and scalar rescaling by c, Tr((c T_a)(c T_b)) = c^2 delta_ab / 2 and beta_new = c^2 beta_old.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "05a0181dc87773bed10391e1220d55f95f1f1af58cf3a21f65c6c3e76b51ef82",
       "note_path": "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
       "notes_for_re_audit_if_any": "",

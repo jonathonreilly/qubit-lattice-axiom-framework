@@ -134,6 +134,44 @@ conventions are standard finite-dimensional Grassmann-integration content
 internal to the framework's staggered Dirac substrate. They are not
 load-bearing as separate imports.
 
+## Historical provenance (cited prior art, NOT load-bearing imports)
+
+The bilinear-form / Schur-complement structure of this result was first
+identified in the lattice-fermion literature in:
+
+- **Sharatchandra, Thun, Wolff** (1981), "Susskind fermions on a
+  Euclidean lattice", *Nuclear Physics B* **192**, 205–236.
+  Established reflection positivity for staggered (Kogut-Susskind)
+  fermions with positive mass via the half-action factorization and
+  link-reflection convention now bearing the first author's name.
+- **Menotti, Pelissetto** (1987), "Lattice gauge theory with Wilson
+  fermions and chiral symmetry", *Physical Review D* **35**, 1194.
+  Refined the Grassmann-half factorization argument used in step (B7).
+- **Osterwalder, Seiler** (1978), "Gauge field theories on a lattice",
+  *Annals of Physics* **110**, 440–471.
+  Underlying lattice OS reconstruction framework that motivates the
+  reflection-positivity bridge structure (the gauge half is the
+  companion bridge PR).
+
+**These references are cited as historical prior art / provenance only.**
+This note does **not** import any theorem, normalization, lemma, or
+numerical statement from the cited papers. The bridge derivation in
+steps (B1)–(B9) and the runner's verifications proceed entirely on the
+framework's own retained substrate:
+
+- Cl(3)/Z³ lattice baseline + staggered Kogut-Susskind hop matrix
+  (already in framework primitives);
+- `det(M_KS + mI) > 0` configuration-by-configuration (cited retained
+  one-hop authority `staggered_only_det_positivity_case_a_note_2026-05-17`);
+- Standard finite-dimensional Grassmann integration calculus
+  (mathematical machinery, not a framework-external import).
+
+The cited papers worked in continuum-limit or generic-Wilson contexts;
+this bridge specializes the argument to the framework's specific
+staggered-only `M_KS + mI` surface and the parent note's narrowed scope.
+The cited references serve as auditable provenance for the structural
+ideas; closure of the bridge is the framework's own derivation.
+
 ## Boundaries
 
 This bridge does **not** close:

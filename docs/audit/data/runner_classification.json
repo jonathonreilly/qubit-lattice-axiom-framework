@@ -18133,16 +18133,16 @@
       "runner": "scripts/frontier_qcd_low_energy_running_bridge.py"
     },
     "qnm_hardening_feasibility_note": {
-      "assert_count": 0,
+      "assert_count": 7,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/qnm_scaling.py"
+      "dominant_class": "C",
+      "runner": "scripts/qnm_hardening_stability_certificate.py"
     },
     "quantum_horizon_note": {
       "assert_count": 0,
@@ -53425,19 +53425,19 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/qnm_scaling.py": {
-      "assert_count": 0,
+    "scripts/qnm_hardening_stability_certificate.py": {
+      "assert_count": 7,
       "claims": [
         "qnm_hardening_feasibility_note"
       ],
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/quantum_horizon_k_sweep.py": {
@@ -55458,12 +55458,12 @@
     "dominant_class_distribution": {
       "A": 231,
       "B": 275,
-      "C": 749,
+      "C": 750,
       "D": 299,
-      "none": 439
+      "none": 438
     },
     "runners_classified": 1993,
-    "runners_with_C": 970,
+    "runners_with_C": 971,
     "runners_with_D": 584
   }
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1262 |
+| unaudited | 1263 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1491 |
+| `unaudited` | 1492 |
 
 | claim_type | count |
 |---|---:|
@@ -83,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 1993
-- runners with (C) first-principles compute hits: 970
+- runners with (C) first-principles compute hits: 971
 - runners with (D) external comparator hits: 584
 - decoration candidates (no C, no D): 325
 
@@ -916,7 +916,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -9605,22 +9604,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** It does not promote a quasi-normal mode result; it only freezes the control program that would be required before any QNM-style escape-spectrum claim could be reviewed safely.  _(class `A`)_
 - **chain closes:** True — The note's claim is a scope restriction and control checklist, not a positive spectral theorem. It explicitly denies a QNM/escape-spectrum result and therefore closes as a bounded control-program note without needing a numerical runner.
 - **rationale:** The source note is audit-clean only for its narrow boundary: QNM remains a hardening target and no quasi-normal-mode or escape-spectrum result is asserted. It does not attempt to derive or validate any spectral observable, and its listed five controls are stated as future prerequisites rather than achieved results. Residual risk is that this clean verdict must not be reused as evidence for a positive QNM lane; it ratifies only the bounded control-program framing.
-- **auditor confidence:** high
-
-### `qnm_hardening_feasibility_note`
-
-- **Note:** [`QNM_HARDENING_FEASIBILITY_NOTE.md`](../../docs/QNM_HARDENING_FEASIBILITY_NOTE.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** The audit covers only the open-gate feasibility statement that the supplied QNM sweep is exploratory and does not yet establish a retained exact-lattice spectral law.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260521-215638-bb10cae5-qnm_hardening_feasibilit-028`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** A QNM-style claim would need a frozen chain including a G = 0 null, matched fixed-field control, Born check on the converged field, explicit Nyquist-artifact exclusion, and refinement/threshold stability before it is review-safe.  _(class `B`)_
-- **chain closes:** False — The packet supports the conservative warning that the current runner is not a retained spectral theorem, but it does not close the missing controls. The missing step is a hardened QNM runner/note with the stated null, control, Born, artifact-exclusion, and stability checks.
-- **rationale:** The runner genuinely computes exploratory spectra, but it has no hard-bar assertions and does not run G = 0, matched fixed-field, Born, refinement, threshold, window, or damping controls. The repeated k = 6.5 peak is visible in stdout, but the claimed Nyquist-artifact diagnosis is not independently supplied in the restricted packet. The cited Poisson Born material is retained only for frozen-snapshot Born and explicitly leaves full nonlinear-loop Born open, so the QNM spectral claim cannot promote beyond an open-gate feasibility warning.
-- **open / conditional deps cited:**
-  - `archive_unlanded/poisson-self-consistency-stale-runners-2026-04-30/BACKREACTION_NOTE.md`
-  - `POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md`
 - **auditor confidence:** high
 
 ### `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28`

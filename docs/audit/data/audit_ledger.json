@@ -19505,8 +19505,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "The robustness runner recomputes the fixed-adjacency two-branch staggered-lattice protocol and reports 2-body delta_S > 0 in 60/60 audited configurations plus 3-body tau_3 = 0 with W/W-asym classification in 25/25 configurations.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "cc83ac2e432051e3703c9e8333bed6cac922bbfe4a18573d934622ede48558fa",
       "note_path": "docs/BRANCH_ENTANGLEMENT_ROBUSTNESS_NOTE_2026-04-11.md",
       "notes_for_re_audit_if_any": "Keep the retained claim boundary bounded to the externally imposed two-branch protocol; do not promote this to a full BMV witness without separate LOCC/self-generated-branch proof.",
@@ -217713,49 +217713,24 @@
       "verdict_rationale": "The source note is audit-clean only for its narrow boundary: QNM remains a hardening target and no quasi-normal-mode or escape-spectrum result is asserted. It does not attempt to derive or validate any spectral observable, and its listed five controls are stated as future prerequisites rather than achieved results. Residual risk is that this clean verdict must not be reused as evidence for a positive QNM lane; it ratifies only the bounded control-program framing."
     },
     "qnm_hardening_feasibility_note": {
-      "audit_date": "2026-05-21T22:12:04.596972+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row.",
-          "poisson_self_gravity_born_audit_note": "Narrow numerical audit on the provided h = 0.25 three-slit lattice runner: exact zero-coupling reduction and step-local frozen-snapshot Born cancellation; nonzero-coupling end-to-end Born is excluded from retained scope.",
-          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism."
-        },
-        "dep_claim_type": {
-          "gate_b_poisson_self_gravity_note": "no_go",
-          "poisson_self_gravity_born_audit_note": "bounded_theorem",
-          "poisson_self_gravity_loop_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gate_b_poisson_self_gravity_note": "retained_no_go",
-          "poisson_self_gravity_born_audit_note": "retained_bounded",
-          "poisson_self_gravity_loop_note": "retained_bounded"
-        },
-        "deps": [
-          "gate_b_poisson_self_gravity_note",
-          "poisson_self_gravity_born_audit_note",
-          "poisson_self_gravity_loop_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "e8b6a2ac2de6814740725231fa995bb923430daad49af3e662ebccdcf67f34fa",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-qnm_hardening_feasibilit-028",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The packet supports the conservative warning that the current runner is not a retained spectral theorem, but it does not close the missing controls. The missing step is a hardened QNM runner/note with the stated null, control, Born, artifact-exclusion, and stability checks.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "qnm_hardening_feasibility_note",
-      "claim_scope": "The audit covers only the open-gate feasibility statement that the supplied QNM sweep is exploratory and does not yet establish a retained exact-lattice spectral law.",
+      "claim_scope": null,
       "claim_type": "open_gate",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-21T22:12:04.596972+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate candidate",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -217765,23 +217740,22 @@
         "gate_b_poisson_self_gravity_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [
+        "scripts/qnm_scaling.py"
+      ],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "A QNM-style claim would need a frozen chain including a G = 0 null, matched fixed-field control, Born check on the converged field, explicit Nyquist-artifact exclusion, and refinement/threshold stability before it is review-safe.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "7527f239ab622888417ef0a4ce209354edeca3d430b318808d77befd7dc106d4",
+      "note_hash": "d09d36202e3aadd42f79c9bd443dc26e0a3cfea2800c6ac892fe8f1b4f30302e",
       "note_path": "docs/QNM_HARDENING_FEASIBILITY_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to add a dedicated QNM hardening runner and note/log pair with G = 0 null, matched fixed-field control, converged-field Born audit, explicit Nyquist exclusion, and refinement/threshold/window/damping stability hard bars.",
-      "open_dependency_paths": [
-        "archive_unlanded/poisson-self-consistency-stale-runners-2026-04-30/BACKREACTION_NOTE.md",
-        "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-30T18:17:51.106830+00:00",
@@ -217893,6 +217867,66 @@
             "total_pass": 3
           },
           "verdict_rationale": "The note's conservative conclusion is well supported as a feasibility/open-gate statement: the current runner computes exploratory spectra but does not close the controls needed for a retained spectral law. The branch-side QNM premise remains open because there is no G = 0 null, no matched fixed-field control, no converged-field Born audit, no explicit Nyquist exclusion, and no refinement/threshold stability pack. The chain therefore closes only for the negative review-safety assessment, not for any positive QNM hardening theorem."
+        },
+        {
+          "archived_at": "2026-05-26T11:50:35.535576+00:00",
+          "archived_for_note_hash": "7527f239ab622888417ef0a4ce209354edeca3d430b318808d77befd7dc106d4",
+          "audit_date": "2026-05-21T22:12:04.596972+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row.",
+              "poisson_self_gravity_born_audit_note": "Narrow numerical audit on the provided h = 0.25 three-slit lattice runner: exact zero-coupling reduction and step-local frozen-snapshot Born cancellation; nonzero-coupling end-to-end Born is excluded from retained scope.",
+              "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism."
+            },
+            "dep_claim_type": {
+              "gate_b_poisson_self_gravity_note": "no_go",
+              "poisson_self_gravity_born_audit_note": "bounded_theorem",
+              "poisson_self_gravity_loop_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gate_b_poisson_self_gravity_note": "retained_no_go",
+              "poisson_self_gravity_born_audit_note": "retained_bounded",
+              "poisson_self_gravity_loop_note": "retained_bounded"
+            },
+            "deps": [
+              "gate_b_poisson_self_gravity_note",
+              "poisson_self_gravity_born_audit_note",
+              "poisson_self_gravity_loop_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "e8b6a2ac2de6814740725231fa995bb923430daad49af3e662ebccdcf67f34fa",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-qnm_hardening_feasibilit-028",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The packet supports the conservative warning that the current runner is not a retained spectral theorem, but it does not close the missing controls. The missing step is a hardened QNM runner/note with the stated null, control, Born, artifact-exclusion, and stability checks.",
+          "claim_scope": "The audit covers only the open-gate feasibility statement that the supplied QNM sweep is exploratory and does not yet establish a retained exact-lattice spectral law.",
+          "claim_type": "open_gate",
+          "claim_type_last_reviewed": "2026-05-21T22:12:04.596972+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "A QNM-style claim would need a frozen chain including a G = 0 null, matched fixed-field control, Born check on the converged field, explicit Nyquist-artifact exclusion, and refinement/threshold stability before it is review-safe.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to add a dedicated QNM hardening runner and note/log pair with G = 0 null, matched fixed-field control, converged-field Born audit, explicit Nyquist exclusion, and refinement/threshold/window/damping stability hard bars.",
+          "open_dependency_paths": [
+            "archive_unlanded/poisson-self-consistency-stale-runners-2026-04-30/BACKREACTION_NOTE.md",
+            "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The runner genuinely computes exploratory spectra, but it has no hard-bar assertions and does not run G = 0, matched fixed-field, Born, refinement, threshold, window, or damping controls. The repeated k = 6.5 peak is visible in stdout, but the claimed Nyquist-artifact diagnosis is not independently supplied in the restricted packet. The cited Poisson Born material is retained only for frozen-snapshot Born and explicitly leaves full nonlinear-loop Born open, so the QNM spectral claim cannot promote beyond an open-gate feasibility warning."
         }
       ],
       "prose_corrections": [],
@@ -217904,10 +217938,10 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": "scripts/qnm_scaling.py",
+      "runner_path": "scripts/qnm_hardening_stability_certificate.py",
       "title": "QNM Hardening Feasibility Note",
       "transitive_descendants": 0,
-      "verdict_rationale": "The runner genuinely computes exploratory spectra, but it has no hard-bar assertions and does not run G = 0, matched fixed-field, Born, refinement, threshold, window, or damping controls. The repeated k = 6.5 peak is visible in stdout, but the claimed Nyquist-artifact diagnosis is not independently supplied in the restricted packet. The cited Poisson Born material is retained only for frozen-snapshot Born and explicitly leaves full nonlinear-loop Born open, so the QNM spectral claim cannot promote beyond an open-gate feasibility warning."
+      "verdict_rationale": null
     },
     "quantum_horizon_note": {
       "audit_date": null,
@@ -234420,8 +234454,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "On the corrected 10x10 periodic staggered torus, iterative backreaction is distinguished from matched static structured nulls, with the cleanest surviving separation in width contraction.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "305244efb42c3333bf634df6c3727283c6c392b9d99b59ab7addfc6258515f60",
       "note_path": "docs/SELF_CONSISTENCY_STRUCTURED_NULL_NOTE_2026-04-11.md",
       "open_dependency_paths": [],
@@ -250593,8 +250627,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "For a fixed periodic 2D staggered lattice, comparing the flat branch against the screened-field branch gives detector-resolved coherent-vs-mixture differences at the documented operating points while leaving topology/adjacency fixed.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "62042775b41b0893f5df9ab74054ae12fb6545ce64f45884f33683fd907ebf3f",
       "note_path": "docs/STAGGERED_GEOMETRY_SUPERPOSITION_NOTE_2026-04-11.md",
       "open_dependency_paths": [],
@@ -305357,8 +305391,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2379,
-    "re_audit_required": 3,
+    "preserved_existing": 2381,
+    "re_audit_required": 1,
     "row_count": 2426,
     "seeded_new": 0
   }

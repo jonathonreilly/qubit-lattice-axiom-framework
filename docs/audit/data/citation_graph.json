@@ -72608,18 +72608,20 @@
     },
     "qnm_hardening_feasibility_note": {
       "claim_id": "qnm_hardening_feasibility_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate candidate",
+      "claim_type_seed_hint": "open_gate",
       "deps": [
         "poisson_self_gravity_loop_note",
         "poisson_self_gravity_born_audit_note",
         "gate_b_poisson_self_gravity_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "7527f239ab622888417ef0a4ce209354edeca3d430b318808d77befd7dc106d4",
+      "helper_runner_paths": [
+        "scripts/qnm_scaling.py"
+      ],
+      "note_hash": "d09d36202e3aadd42f79c9bd443dc26e0a3cfea2800c6ac892fe8f1b4f30302e",
       "path": "docs/QNM_HARDENING_FEASIBILITY_NOTE.md",
-      "runner_path": "scripts/qnm_scaling.py",
+      "runner_path": "scripts/qnm_hardening_stability_certificate.py",
       "title": "QNM Hardening Feasibility Note"
     },
     "quantum_horizon_note": {
@@ -85480,8 +85482,8 @@
       "decoration": 1,
       "meta": 191,
       "no_go": 77,
-      "none": 1457,
-      "open_gate": 48,
+      "none": 1456,
+      "open_gate": 49,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
@@ -85490,8 +85492,8 @@
       "meta": 191,
       "no_go": 180,
       "none": 432,
-      "open_gate": 125,
-      "positive_theorem": 593
+      "open_gate": 126,
+      "positive_theorem": 592
     },
     "edge_count": 9771,
     "leaf_count": 785,

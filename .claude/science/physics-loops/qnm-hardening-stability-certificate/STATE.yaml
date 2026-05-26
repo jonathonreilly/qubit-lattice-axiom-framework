@@ -1,0 +1,39 @@
+loop_slug: qnm-hardening-stability-certificate
+started_at: 2026-05-26
+mode: campaign
+target_claim_id: qnm_hardening_feasibility_note
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The branch certifies a bounded negative hard-bar result for the current QNM hardening story, not a positive retained-grade spectral law."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/qnm-hardening-stability-certificate-20260526
+base: origin/main
+active_route: sub-nyquist-hard-bar-certificate
+hard_residual: "The prior QNM hardening story had no G=0 null, fixed-field control, Born check, Nyquist exclusion, or threshold/refinement/damping stability pack."
+files_touched:
+  - docs/QNM_HARDENING_FEASIBILITY_NOTE.md
+  - scripts/qnm_hardening_stability_certificate.py
+  - logs/runner-cache/qnm_hardening_stability_certificate.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+open_imports:
+  - "Positive QNM hardening would still need stable sub-Nyquist peaks on a stronger or broader control family."
+  - "The runner reuses the existing qnm_scaling reduced model as a helper; it does not derive the physical spectral observable from first principles."
+no_go_routes:
+  - "Do not promote the current QNM hardening story: detected minima are Nyquist-unsafe on the tested bounded surface."
+  - "Do not use the fixed-field Born pass as end-to-end nonlinear Born closure."
+review_findings: []
+pr_status: pending
+next_exact_action: "Run review-loop, final gates, commit, push, open PR, verify mergeability, then continue the campaign if runtime remains."
+stop_condition: "Continue campaign until the 12-hour budget expires or the refreshed opportunity queue has no viable independent science block."

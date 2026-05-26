@@ -132289,24 +132289,46 @@
       "verdict_rationale": "Both one-hop authorities are retained-grade under the rubric, and the load-bearing step is an exact algebraic projector decomposition rather than a fitted numerical comparison or renaming. The runner\u2019s broader hierarchy survey ends underdetermined for charged-lepton mass values, but the audited source claim only asserts the structural affine shape and explicitly leaves the weights unfixed. The structural theorem therefore closes on the restricted packet."
     },
     "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T20:30:31.467501+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 9.801,
+        "runner_hash": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
+        "transitive_descendants": 630
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-alpha-pass2-exact-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied direct dependencies are retained and audited_clean for the selected-axis graph-first 6+2 structural surface. The non-framework premises P1-P4 are not treated as axioms or derived facts; they are explicit antecedents in the bounded implication. Under that exact antecedent set, the conclusion is a rational arithmetic consequence with no hidden physical identification outside scope.",
       "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-      "claim_scope": "Given the retained graph-first selected-axis 6+2 Sym2/Anti2 split, the traceless two-eigenvalue U(1) ansatz Y_alpha = alpha(P_sym - 3 P_anti), and the explicitly supplied non-framework premise packet P1-P4, alpha is uniquely fixed to +1/3 in the doubled convention, equivalently Y(L_L) = -1. This scope does not derive or retain P1-P4, physical hypercharge identification, chiral matter content, or electroweak matching.",
+      "claim_scope": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T20:22:06.358747+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T20:30:31.467501+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -132321,8 +132343,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T20:30:31.467075+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-alpha-pass2-exact-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -132330,19 +132363,19 @@
         "graph_first_selector_derivation_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 9.801,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Substitute the retained 6+2 traceless ratio beta = -3 alpha and explicit P1-P4 into Q(e_L) = T_3(e_L) + Y(L_L)/2, giving -1 = -1/2 + (-3 alpha)/2, hence alpha = 1/3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8f765fdeb725fa953fc57c9aba04e939fff506a76f6a021205feb239ffd891bb",
       "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the claim is widened beyond the stated bounded implication, especially if P1-P4 are later presented as derived from Cl(3) on Z^3, as registry axioms/admissions, or as closing the full hypercharge/matter-identification chain.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -132401,18 +132434,26 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "checks": [
+          "source firewall confirms P1-P4 and boundary phrases are present",
+          "source firewall excludes non-load-bearing quark charge cross-check phrases",
+          "6+2 tracelessness gives beta/alpha = -3",
+          "exact rational solve gives alpha = 1/3",
+          "Y(L_L) = -1 at alpha = 1/3"
+        ],
+        "exit_code": 0,
+        "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+        "runner_sha256": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
+        "status": "ok",
+        "total_fail": 0,
+        "total_pass": 15
       },
       "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
       "title": "Hypercharge \u03b1 = 1/3 Normalization Bridge",
       "transitive_descendants": 630,
-      "verdict_rationale": null
+      "verdict_rationale": "Audited clean is warranted only as a bounded theorem/implication. The note honestly exposes the physical/readout inputs as P1-P4, states that they are not derived or registry-accepted premises, and keeps the parent hypercharge identification and electroweak/matter-assignment claims outside the load-bearing chain. The runner output independently checks the source firewall, the beta/alpha = -3 traceless ratio on the 6+2 split, and the exact Fraction solve alpha = 1/3 with TOTAL PASS=15 FAIL=0. No numerical fit, quark-charge cross-check, lattice-action input, or downstream status promotion is load-bearing."
     },
     "hypercharge_identification_note": {
       "audit_date": null,

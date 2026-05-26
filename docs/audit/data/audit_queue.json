@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 251,
+    "critical": 250,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -54,28 +54,30 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-      "claim_scope": "Given the retained graph-first selected-axis 6+2 Sym2/Anti2 split, the traceless two-eigenvalue U(1) ansatz Y_alpha = alpha(P_sym - 3 P_anti), and the explicitly supplied non-framework premise packet P1-P4, alpha is uniquely fixed to +1/3 in the doubled convention, equivalently Y(L_L) = -1. This scope does not derive or retain P1-P4, physical hypercharge identification, chiral matter content, or electroweak matching.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hypercharge_identification_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "graph_first_su3_integration_note",
-        "graph_first_selector_derivation_note"
+        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+        "graph_first_su3_integration_note"
       ],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 18,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.801,
-      "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 18.299,
+      "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
-      "transitive_descendants": 630
+      "runner_path": "scripts/frontier_hypercharge_identification.py",
+      "transitive_descendants": 629
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -813,33 +815,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_right_handed_sector.py",
       "transitive_descendants": 656
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hypercharge_identification_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.299,
-      "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hypercharge_identification.py",
-      "transitive_descendants": 629
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -38099,5 +38074,5 @@
     }
   ],
   "ready_count": 70,
-  "total_pending": 1271
+  "total_pending": 1270
 }

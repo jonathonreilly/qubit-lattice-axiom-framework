@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 164 |
-| **retained_bounded** | 474 |
+| **retained_bounded** | 475 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1270 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 761 |
+| `audited_clean` | 762 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -436,6 +433,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6063,6 +6061,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Direct matrix computation gives the four single-projector returns diag(1,0,0), diag(0,1,0), diag(0,0,1), and diag(0,0,0); linearity in the weights gives P_T1 Gamma_1 W Gamma_1 P_T1 = diag(w_O0,w_a,w_b).  _(class `A`)_
 - **chain closes:** True — The cited retained Gamma_1/T_1 surface plus the explicit Hamming-bit action close the projector calculation: Gamma_1 flips only axis 1, so the three T_1 species hit O_0, T_2(1,1,0), and T_2(1,0,1), while T_2(0,1,1) is absent at this order. Linearity then gives the affine diagonal form.
 - **rationale:** Both one-hop authorities are retained-grade under the rubric, and the load-bearing step is an exact algebraic projector decomposition rather than a fitted numerical comparison or renaming. The runner’s broader hierarchy survey ends underdetermined for charged-lepton mass values, but the audited source claim only asserts the structural affine shape and explicitly leaves the weights unfixed. The structural theorem therefore closes on the restricted packet.
+- **auditor confidence:** high
+
+### `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-hypercharge-alpha-pass2-exact-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substitute the retained 6+2 traceless ratio beta = -3 alpha and explicit P1-P4 into Q(e_L) = T_3(e_L) + Y(L_L)/2, giving -1 = -1/2 + (-3 alpha)/2, hence alpha = 1/3.  _(class `A`)_
+- **chain closes:** True — The supplied direct dependencies are retained and audited_clean for the selected-axis graph-first 6+2 structural surface. The non-framework premises P1-P4 are not treated as axioms or derived facts; they are explicit antecedents in the bounded implication. Under that exact antecedent set, the conclusion is a rational arithmetic consequence with no hidden physical identification outside scope.
+- **rationale:** Audited clean is warranted only as a bounded theorem/implication. The note honestly exposes the physical/readout inputs as P1-P4, states that they are not derived or registry-accepted premises, and keeps the parent hypercharge identification and electroweak/matter-assignment claims outside the load-bearing chain. The runner output independently checks the source firewall, the beta/alpha = -3 traceless ratio on the 6+2 split, and the exact Fraction solve alpha = 1/3 with TOTAL PASS=15 FAIL=0. No numerical fit, quark-charge cross-check, lattice-action input, or downstream status promotion is load-bearing.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

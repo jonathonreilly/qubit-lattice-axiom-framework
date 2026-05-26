@@ -11097,10 +11097,6 @@
       "to": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
     },
     {
-      "from": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
-      "to": "yt_ward_identity_derivation_theorem"
-    },
-    {
       "from": "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
       "to": "g_newton_self_consistency_bounded_sharpening_note_2026-05-10_planckp4"
     },
@@ -54157,14 +54153,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-        "yt_ward_identity_derivation_theorem"
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1c52b0fa35564689d1275ca312f378a7eae310c1b4e0184865ac819b6650d0ea",
+      "note_hash": "0e6c2bedfd1c80bf83b9dc02f404c1d490197f3716f7a09316bcef254c2f1221",
       "path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
-      "runner_path": null,
-      "title": "Off-Surface Same-1PI Pinning Theorem for the Two-Ward `g_bare` Route"
+      "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
+      "title": "Admitted-Residue Coefficient Algebra for the Two-Ward `g_bare` Route"
     },
     "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2": {
       "claim_id": "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
@@ -85500,10 +85495,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9777,
     "leaf_count": 783,
     "node_count": 2538,
     "root_count": 836,
-    "runners_with_path": 2099
+    "runners_with_path": 2100
   }
 }

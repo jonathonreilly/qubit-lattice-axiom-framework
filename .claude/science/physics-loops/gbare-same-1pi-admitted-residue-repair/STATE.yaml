@@ -1,0 +1,19 @@
+loop: gbare-same-1pi-admitted-residue-repair
+branch: physics-loop/gbare-same-1pi-admitted-residue-repair-20260525
+target_claim_id: g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+conditional_surface_status: conditional-support under admitted H_unit-residue completeness
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
+  - outputs/gbare_same_1pi_admitted_residue_repair_2026-05-25.txt
+open_imports:
+  - H_unit-residue completeness premise remains admitted, not derived
+next_exact_action: run audit pipeline, runner, lint, and PR creation
+stop_condition: open review-ready PR; do not merge or apply audit verdict

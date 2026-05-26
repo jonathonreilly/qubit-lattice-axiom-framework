@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 250,
+    "critical": 251,
     "high": 342,
     "leaf": 310,
     "medium": 322
@@ -52,6 +52,30 @@
     }
   ],
   "queue": [
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
+      ],
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 13.78,
+      "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
+      "transitive_descendants": 878
+    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36966,6 +36990,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 1,
-  "total_pending": 1224
+  "ready_count": 2,
+  "total_pending": 1225
 }

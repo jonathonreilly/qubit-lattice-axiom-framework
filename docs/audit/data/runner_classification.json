@@ -8160,6 +8160,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_g_bare_two_ward_closure.py"
     },
+    "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py"
+    },
     "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2": {
       "assert_count": 2,
       "counts": {
@@ -38219,6 +38231,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_gbare_wilson_action_internal_proof_walk.py": {
       "assert_count": 1,
       "claims": [
@@ -55196,15 +55223,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 315,
+    "decoration_candidates": 316,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
+    "runners_classified": 1983,
     "runners_with_C": 969,
     "runners_with_D": 583
   }

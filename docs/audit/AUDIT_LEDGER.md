@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -82,10 +82,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1982
+- runners classified: 1983
 - runners with (C) first-principles compute hits: 969
 - runners with (D) external comparator hits: 583
-- decoration candidates (no C, no D): 315
+- decoration candidates (no C, no D): 316
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -96,18 +96,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 723 | 53.50 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 906 | 52.33 | `audited_clean` | **retained_bounded** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 908 | 51.83 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1074 | 46.07 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1073 | 46.07 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 939 | 39.88 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 179 | 38.99 | `unaudited` | unaudited |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 711 | 37.98 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 939 | 37.88 | `audited_clean` | **retained_bounded** |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 935 | 37.37 | `audited_clean` | **retained_bounded** |
 | 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 554 | 34.12 | `audited_conditional` | ~~audited_conditional~~ |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1046 | 34.03 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1043 | 34.03 | `audited_clean` | **retained** |
 | 12 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 177 | 33.48 | `unaudited` | unaudited |
 | 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 33.35 | `audited_clean` | **retained** |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
-| 15 | `minimal_axioms` | meta | critical | 1039 | 31.52 | `unaudited` | meta |
+| 15 | `minimal_axioms` | meta | critical | 1036 | 31.52 | `unaudited` | meta |
 | 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 563 | 31.14 | `unaudited` | unaudited |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 30.55 | `audited_conditional` | ~~audited_conditional~~ |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `unaudited` | unaudited |
@@ -899,7 +899,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4544,19 +4543,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "F_Htt^(0)(g_bare) = (1 / sqrt(6)) * 1 = 1 / sqrt(6)," with no gauge-coupling insertion at tree order.  _(class `A`)_
 - **chain closes:** True — The cited narrow overlap theorem supplies the normalized diagonal Wick-contractor identity and gauge-coupling independence for the operator definition; the source note only specializes it to N_iso=2, N_c=3 and a basis pair. The note explicitly excludes the broader Ward-identification step, so no unproved SM Yukawa readout is needed for the scoped claim.
 - **rationale:** The bounded theorem closes as exact algebra over the supplied narrow overlap authority plus the source note's tree-order no-gauge-insertion argument. There is no tuned numerical comparator, no hidden g_bare dependence in the stated tree-level operator matrix element, and no reliance on the terminal top-Yukawa Ward-identification row within the audited scope. Residual risk is only that downstream uses may overread the internal bare datum as a physical Standard Model top-Yukawa readout, which this note explicitly does not establish.
-- **auditor confidence:** high
-
-### `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19`
-
-- **Note:** [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](../../docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional off-surface pinning of positive g_bare to 1 on Q_L from Rep A, retained Rep-B independence, and the admitted completeness of the H_unit same-projected 1PI residue.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T185958Z-bf9580d7-g_bare_two_ward_same_1pi-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under the H_unit-residue admission, Representation B exhausts the complete same-projected 1PI Gamma_S^(4) coefficient, so equating it with Representation A gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).  _(class `A`)_
-- **chain closes:** False — The algebra closes after accepting the H_unit-residue admission, but the restricted packet does not derive that the constant H_unit matrix element exhausts the complete same-projected 1PI residue for arbitrary g_bare. D17 uniqueness and canonical-surface agreement do not supply that off-surface bridge.
-- **rationale:** No runner was available, but the load-bearing issue is judgeable from the note text. The cited authorities are presented as retained_bounded in this packet; the blocker is instead the source note's explicit, load-bearing H_unit-residue admission. The N1-N8 stress check collapses the residual to that single missing bridge, and the packet's strongest steelman, D17 uniqueness plus canonical agreement, still does not prove off-surface completeness.
 - **auditor confidence:** high
 
 ### `gate_b_connectivity_tolerance_note`

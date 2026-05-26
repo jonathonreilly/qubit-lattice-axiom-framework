@@ -95552,67 +95552,44 @@
       "verdict_rationale": "The bounded theorem closes as exact algebra over the supplied narrow overlap authority plus the source note's tree-order no-gauge-insertion argument. There is no tuned numerical comparator, no hidden g_bare dependence in the stated tree-level operator matrix element, and no reliance on the terminal top-Yukawa Ward-identification row within the audited scope. Residual risk is only that downstream uses may overread the internal bare datum as a physical Standard Model top-Yukawa readout, which this note explicitly does not establish."
     },
     "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": {
-      "audit_date": "2026-05-25T19:01:55.748492+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
-          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
-        },
-        "dep_claim_type": {
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
-          "yt_ward_identity_derivation_theorem": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
-          "yt_ward_identity_derivation_theorem": "retained_bounded"
-        },
-        "deps": [
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-          "yt_ward_identity_derivation_theorem"
-        ],
-        "load_bearing_score": 13.771,
-        "runner_hash": null,
-        "transitive_descendants": 873
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T185958Z-bf9580d7-g_bare_two_ward_same_1pi-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebra closes after accepting the H_unit-residue admission, but the restricted packet does not derive that the constant H_unit matrix element exhausts the complete same-projected 1PI residue for arbitrary g_bare. D17 uniqueness and canonical-surface agreement do not supply that off-surface bridge.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
-      "claim_scope": "Conditional off-surface pinning of positive g_bare to 1 on Q_L from Rep A, retained Rep-B independence, and the admitted completeness of the H_unit same-projected 1PI residue.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-25T19:01:55.748492+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-        "yt_ward_identity_derivation_theorem"
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
       ],
       "direct_in_degree": 8,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 13.78,
-      "load_bearing_step": "Under the H_unit-residue admission, Representation B exhausts the complete same-projected 1PI Gamma_S^(4) coefficient, so equating it with Representation A gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "1c52b0fa35564689d1275ca312f378a7eae310c1b4e0184865ac819b6650d0ea",
+      "note_hash": "0e6c2bedfd1c80bf83b9dc02f404c1d490197f3716f7a09316bcef254c2f1221",
       "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a direct derivation that the H_unit tree-level matrix element exhausts the complete same-projected 1PI Gamma_S^(4) residue for arbitrary g_bare on Q_L.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -95716,10 +95693,64 @@
             "total_pass": 0
           },
           "verdict_rationale": "Both cited authorities are marked retained_bounded, so there is no automatic downgrade from non-retained upstream status. However, the source claim imports an additional off-surface identification: the constant H_unit matrix element is treated as a complete representation of the same four-fermion 1PI coefficient for all g_bare. The provided YT authority explicitly verifies the same-1PI agreement only on the canonical g_bare = 1 surface, while Rep-B independence only fixes the local matrix element, not the off-surface equality of the two Gamma^(4) representations. Thus the algebraic solve for g_bare = 1 is conditional on a missing bridge theorem rather than closed by the restricted packet."
+        },
+        {
+          "archived_at": "2026-05-26T04:12:52.043720+00:00",
+          "archived_for_note_hash": "1c52b0fa35564689d1275ca312f378a7eae310c1b4e0184865ac819b6650d0ea",
+          "audit_date": "2026-05-25T19:01:55.748492+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+              "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+            },
+            "dep_claim_type": {
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+              "yt_ward_identity_derivation_theorem": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+              "yt_ward_identity_derivation_theorem": "retained_bounded"
+            },
+            "deps": [
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+              "yt_ward_identity_derivation_theorem"
+            ],
+            "load_bearing_score": 13.771,
+            "runner_hash": null,
+            "transitive_descendants": 873
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T185958Z-bf9580d7-g_bare_two_ward_same_1pi-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebra closes after accepting the H_unit-residue admission, but the restricted packet does not derive that the constant H_unit matrix element exhausts the complete same-projected 1PI residue for arbitrary g_bare. D17 uniqueness and canonical-surface agreement do not supply that off-surface bridge.",
+          "claim_scope": "Conditional off-surface pinning of positive g_bare to 1 on Q_L from Rep A, retained Rep-B independence, and the admitted completeness of the H_unit same-projected 1PI residue.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T19:01:55.748492+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Under the H_unit-residue admission, Representation B exhausts the complete same-projected 1PI Gamma_S^(4) coefficient, so equating it with Representation A gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a direct derivation that the H_unit tree-level matrix element exhausts the complete same-projected 1PI Gamma_S^(4) residue for arbitrary g_bare on Q_L.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "No runner was available, but the load-bearing issue is judgeable from the note text. The cited authorities are presented as retained_bounded in this packet; the blocker is instead the source note's explicit, load-bearing H_unit-residue admission. The N1-N8 stress check collapses the residual to that single missing bridge, and the packet's strongest steelman, D17 uniqueness plus canonical agreement, still does not prove off-surface completeness."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "relabel_date": "2026-05-06T17:45:26.976870+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
@@ -95729,10 +95760,10 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
-      "title": "Off-Surface Same-1PI Pinning Theorem for the Two-Ward `g_bare` Route",
+      "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
+      "title": "Admitted-Residue Coefficient Algebra for the Two-Ward `g_bare` Route",
       "transitive_descendants": 878,
-      "verdict_rationale": "No runner was available, but the load-bearing issue is judgeable from the note text. The cited authorities are presented as retained_bounded in this packet; the blocker is instead the source note's explicit, load-bearing H_unit-residue admission. The N1-N8 stress check collapses the residual to that single missing bridge, and the packet's strongest steelman, D17 uniqueness plus canonical agreement, still does not prove off-surface completeness."
+      "verdict_rationale": null
     },
     "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2": {
       "audit_date": null,
@@ -114448,7 +114479,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 23.559,
+      "load_bearing_score": 23.555,
       "load_bearing_step": "For H(phi) = sum_i phi_i S_i, V_sel(phi) = Tr H(phi)^4 - (1/8)(Tr H(phi)^2)^2 = 32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to the pairwise-overlap potential with axis minima.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -114685,7 +114716,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
       "title": "Graph-First Weak-Axis Selector Derivation",
-      "transitive_descendants": 1066,
+      "transitive_descendants": 1063,
       "verdict_rationale": "The runner constructs the canonical Pauli-x cube shifts directly and verifies their algebraic properties, trace identities, normalized overlap form, axis minima, and residual stabilizers. Its checks are internal algebra over the stated graph-shift surface, with no external comparator, tuned numerical scale, or imported physical bridge. The cited SU(3) integration note is not load-bearing for this selector derivation, and the source note explicitly bounds away downstream abelian or phenomenological claims."
     },
     "graph_first_su3_integration_note": {
@@ -114776,7 +114807,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 46.07,
+      "load_bearing_score": 46.069,
       "load_bearing_step": "Imposing the residual complementary-axis swap on the weak-su(2) commutant restricts the base algebra to the 3+1 split, giving Comm(su(2)_weak, tau) isomorphic to gl(3) plus gl(1) with compact semisimple part su(3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -114849,7 +114880,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Graph-First `SU(3)` Integration Theorem",
-      "transitive_descendants": 1074,
+      "transitive_descendants": 1073,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet supports the narrowed selected-axis finite-cube theorem by explicit finite-dimensional linear algebra, and the runner constructs and checks the relevant operators rather than printing constants. The load-bearing step is an algebraic commutant calculation over the defined cube operators, so class A is more accurate than class C. The result is clean as a positive structural theorem only at this narrowed scope; selector derivation, color-carrier interpretation, anomaly completion, and electroweak matching are outside the ratified claim. | The second audit gives the applyable scoped tuple: the restricted packet supports a finite-dimensional algebraic commutant theorem once a selected axis is given. The runner source constructs the cube shift, parity, residual swap, commutant basis, projectors, and embedded su(3) generators directly, with no external comparator, tuned numerical input, or physical hypercharge promotion. The first audit\u2019s clean verdict is compatible, but its class C overstates the step as first-principles framework computation rather than an algebraic closure on explicitly defined finite-cube operators. | The restricted packet supports a clean finite-dimensional algebra theorem once the selected axis is taken as the scoped input. The runner constructs the cube shift, parity, swap, commutant, projectors, and embedded su(3) generators and checks the identities for all three axes, so the load-bearing step is an algebraic closure check rather than a first-principles physical computation. The second audit correctly narrows away the upstream selector derivation and any physical hypercharge or electroweak identification. | The restricted packet supports a clean finite-dimensional algebraic theorem on the selected-axis cube surface. The runner constructs the cube shift, parity, residual swap, commutant, projectors, and embedded su(3) generators for all three axes, so this is an algebraic closure check rather than a first-principles numerical compute from the full Cl(3) on Z^3 axiom surface. The clean verdict applies only to the structural selected-axis commutant statement and does not promote hypercharge, anomaly completion, electroweak matching, or the upstream selector derivation. | The restricted packet supports the narrowed finite-cube structural theorem by explicit finite-dimensional linear algebra for all three selected axes. The load-bearing step is an algebraic commutant calculation, so class A is more accurate than class C because no new first-principles physical number is computed from Cl(3) on Z^3. The second audit correctly scopes out the upstream selector derivation and any physical color, hypercharge, anomaly-completion, or EW matching interpretation."
     },
     "graph_laplacian_core_card_note": {
@@ -171022,7 +171053,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 31.522,
+      "load_bearing_score": 31.518,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
@@ -171043,7 +171074,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)",
-      "transitive_descendants": 1039,
+      "transitive_descendants": 1036,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-04-11": {
@@ -176603,7 +176634,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 34.032,
+      "load_bearing_score": 34.028,
       "load_bearing_step": "Combining the directly checked native Cl(3), Clifford-bivector su(2), and cubic parity anticommutation with the two retained graph-first selector/SU(3) inputs gives the claimed nonabelian gauge-structure surface, excluding the abelian and phenomenological surfaces.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -177012,7 +177043,7 @@
       },
       "runner_path": "scripts/frontier_non_abelian_gauge.py",
       "title": "Native Gauge Closure Note: Nonabelian Graph-First Gauge Closure on Z^3",
-      "transitive_descendants": 1046,
+      "transitive_descendants": 1043,
       "verdict_rationale": "The runner source genuinely constructs the displayed Clifford generators, bivectors, finite-block hopping operator, and parity matrix, then checks the stated identities rather than printing constants. The remaining nonabelian SU(3) component is imported only through two cited authorities that are explicitly marked retained positive-theorem inputs in the packet. No external comparator, tuned numerical value, or symbol-renaming step is load-bearing, and the abelian surface is expressly outside scope."
     },
     "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": {
@@ -302275,7 +302306,7 @@
         "minimal_axioms",
         "native_gauge_closure_note"
       ],
-      "direct_in_degree": 56,
+      "direct_in_degree": 55,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -302283,7 +302314,7 @@
       ],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 37.877,
+      "load_bearing_score": 37.37,
       "load_bearing_step": "Eq. (3.8): from H_unit = (1/sqrt(N_c N_iso)) sum psi-bar psi and canonical fermion normalization, the top-basis matrix element is (1/sqrt(6)) * 1 = 1/sqrt(6).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -302394,7 +302425,7 @@
       },
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "H_unit Scalar-Singlet Matrix Element Core: y_t_bare = g_bare / sqrt(6)",
-      "transitive_descendants": 939,
+      "transitive_descendants": 935,
       "verdict_rationale": "Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict."
     },
     "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17": {

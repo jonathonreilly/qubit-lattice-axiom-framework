@@ -4,19 +4,22 @@ axiom_first_reflection_positivity_check.py
 -------------------------------------------
 
 Numerical exhibits for the axiom-first reflection-positivity theorem
-on the canonical CL3-on-Z3 action (loop axiom-first-foundations,
-Cycle 2 / Route R2).
+on the staggered-only CL3-on-Z3 action surface (loop
+axiom-first-foundations, Cycle 2 / Route R2).
 
 Theorem note:
   docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
 
-The full canonical action is staggered Dirac–Wilson + Wilson SU(3)
-plaquette at g_bare = 1. The full numerical exhibit at SU(3) on a
-3+1D block is heavy; here we exhibit the *structural* content of
-RP on simpler representatives of the same factorisation that
-A_min admits:
+The repaired source note is intentionally narrower than the historical
+full staggered+Wilson-fermion surface. Its load-bearing fermion sector is
+M = M_KS + m I with m > 0. Wilson-fermion determinant checks in this
+runner are diagnostic only and are not counted as proof inputs.
 
-  E1.  Free staggered fermion + mass + Wilson term in 1+1D:
+The full numerical exhibit at SU(3) on a 3+1D block is heavy; here we
+exhibit the structural content of RP on simpler representatives of the
+same factorisation that A_min admits:
+
+  E1.  Free staggered-only fermion + mass in 1+1D:
        construct the canonical transfer matrix T = exp(-a_τ H_lat)
        in canonical Fock space; verify
          (E1a) T = T†                            (Hermiticity);
@@ -39,10 +42,16 @@ A_min admits:
        check that the half-action exponential gives a real,
        non-negative reconstructed inner-product matrix.
 
-If all four exhibits pass, the structural content of RP on
-A_min is reproduced numerically on these representatives. The
-theorem-note proof is the load-bearing argument; the runner is
-verification of the load-bearing facts.
+  E5.  Staggered chirality anticommutation for M_KS.
+
+  E6.  Wilson-fermion determinant diagnostic. This is printed for
+       continuity with older audit packets, but it is not load-bearing
+       for the repaired staggered-only theorem.
+
+If E1-E5 pass, the binding structural content of RP on the narrowed
+staggered-only surface is reproduced numerically on these
+representatives. The theorem-note proof is the load-bearing argument;
+the runner is verification of the load-bearing facts.
 """
 
 from __future__ import annotations
@@ -63,7 +72,7 @@ def staggered_phase_1d(x):
     return (-1) ** x
 
 
-def free_staggered_1plus1d_hamiltonian(L_s, mass=0.3, r_wilson=1.0):
+def free_staggered_1plus1d_hamiltonian(L_s, mass=0.3, r_wilson=0.0):
     """
     Build the spatial-slice Hamiltonian H_lat of a free staggered
     fermion on an L_s-site periodic 1D ring.
@@ -71,7 +80,7 @@ def free_staggered_1plus1d_hamiltonian(L_s, mass=0.3, r_wilson=1.0):
     H_lat = Σ_x [ m · ε(x) · (c_x^† c_x - 1/2)                    (mass term)
                  + (i/2) (c_x^† c_{x+1} - c_{x+1}^† c_x)          (sym. hop)
                  - r/2  (c_x^† c_{x+1} + c_{x+1}^† c_x - 2 c_x^† c_x) ]
-                                                                   (Wilson)
+                                                                   (optional Wilson diagnostic)
 
     Returns (H_lat as a 2^L_s × 2^L_s Hermitian matrix, the underlying
     1-particle Hermitian matrix h, and lists c, c†).
@@ -140,8 +149,8 @@ def build_fermion_fock_ops(N):
 # Exhibit E1: Hermiticity + positivity of the staggered-fermion transfer matrix
 # ---------------------------------------------------------------------------
 
-def exhibit_E1(L_s=4, a_tau=1.0, mass=0.3, r_wilson=1.0, tol=1e-10):
-    print("\n--- Exhibit E1: free staggered transfer matrix T = exp(-a_τ H_lat) ---")
+def exhibit_E1(L_s=4, a_tau=1.0, mass=0.3, r_wilson=0.0, tol=1e-10):
+    print("\n--- Exhibit E1: free staggered-only transfer matrix T = exp(-a_τ H_lat) ---")
     H, h, c, cdag = free_staggered_1plus1d_hamiltonian(L_s, mass=mass, r_wilson=r_wilson)
     # T = exp(-a_τ H)
     # use scipy.linalg.expm if available; numpy alternative:
@@ -392,7 +401,7 @@ def exhibit_E5(tol=1e-10):
                 print(f"    L_t={L_t}, L_s={L_s}: ||{{eps, M_KS}}||_max = {diff:.3e}  FAIL")
                 e5_pass = False
     if e5_pass:
-        print(f"  All {n_checked} checks passed (max diff < {tol:.0e}) across L_t in (4,6,8), L_s in (3,4)")
+        print(f"  All {n_checked} checks passed (max diff < {tol:.0e}) across L_t in (4,6,8), L_s in (4,6)")
         print(f"  This is the +/-lambda paired-eigenvalue identity for det(M_KS):")
         print(f"  if M_KS v = lambda v, then M_KS (eps v) = -lambda (eps v).")
     verdict = "PASS" if e5_pass else "FAIL"
@@ -401,11 +410,11 @@ def exhibit_E5(tol=1e-10):
 
 
 # ---------------------------------------------------------------------------
-# Exhibit E6: det(M) >= 0 across mass/lattice values, the canonical
-#             surface positivity load-bearing in Step 3a.
+# Exhibit E6: Wilson-fermion determinant diagnostic. This is not
+#             load-bearing for the repaired staggered-only theorem.
 # ---------------------------------------------------------------------------
 def exhibit_E6(tol=1e-9):
-    print("\n--- Exhibit E6: det(M) >= 0 on the canonical staggered+Wilson surface ---")
+    print("\n--- Exhibit E6 (diagnostic only): Wilson-fermion det(M) finite checks ---")
     # Use larger r_wilson and away-from-pole masses to ensure M is well-
     # conditioned and avoid borderline near-zero-determinant cases (where
     # numerical noise dominates the sign and the gamma_5-eigenvalue
@@ -476,9 +485,8 @@ def main():
     print(" axiom_first_reflection_positivity_check.py")
     print(" Loop: axiom-first-foundations, Cycle 2 / Route R2")
     print(" Exhibits structural content of reflection positivity for the")
-    print(" canonical CL3-on-Z3 staggered + Wilson + canonical-beta action.")
-    print(" 2026-05-03 review-loop repair: + E5 reflection-image identity")
-    print("                          + E6 det(M) >= 0 on canonical surface")
+    print(" staggered-only CL3-on-Z3 action plus Wilson-plaquette gauge half.")
+    print(" 2026-05-26 repair: E1-E5 are binding; E6 is Wilson diagnostic only")
     print("=" * 72)
 
     e1_pass, T, H, c, cdag = exhibit_E1(L_s=4)
@@ -489,8 +497,8 @@ def main():
     e6_pass = exhibit_E6()
 
     results = {"E1": e1_pass, "E2": e2_pass, "E3": e3_pass, "E4": e4_pass,
-               "E5 (staggered chirality anticommutation eps M_KS = -M_KS eps)": e5_pass,
-               "E6 (det(M) >= 0 on canonical surface, well-conditioned)": e6_pass}
+               "E5 (staggered chirality anticommutation eps M_KS = -M_KS eps)": e5_pass}
+    diagnostics = {"E6 (Wilson-fermion det diagnostic, non-load-bearing)": e6_pass}
     print()
     print("=" * 72)
     print(" SUMMARY")
@@ -499,10 +507,14 @@ def main():
     n_total = len(results)
     for k, v in results.items():
         print(f"   {k}: {'PASS' if v else 'FAIL'}")
-    print(f"\n   PASSED: {n_pass}/{n_total}")
+    print(f"\n   BINDING PASSED: {n_pass}/{n_total}")
+    print()
+    for k, v in diagnostics.items():
+        print(f"   diagnostic {k}: {'PASS' if v else 'CHECK-FAILED'}")
     print()
     if n_pass == n_total:
-        print(" verdict: structural RP exhibits (R1)–(R4) reproduced numerically.")
+        print(" verdict: binding staggered-only RP exhibits (R1)-(R4) reproduced numerically.")
+        print(" note: Wilson-fermion determinant output is diagnostic only.")
         return 0
     else:
         print(" verdict: at least one structural exhibit failed.")

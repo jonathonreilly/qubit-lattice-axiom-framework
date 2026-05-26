@@ -1,0 +1,42 @@
+loop_slug: dm-pmns-projector-raw-interface-repair
+campaign: 12h-science-loop-2026-05-25
+date: 2026-05-25
+branch: physics-loop/dm-pmns-projector-raw-interface-repair-20260525
+goal: |
+  Repair dm_leptogenesis_pmns_projector_interface_note_2026-04-16 by
+  retaining only the raw Hermitian-pair to projector-packet algebra and
+  removing physical carrier, N1-column, and eta diagnostic readings.
+target_status: bounded-support
+runtime_used: active campaign continuation
+cycles_completed: 1
+active_route: raw-interface rescope
+hard_residual_attacked: |
+  Audit blocker: the algebraic projector interface was valid, but the
+  source mixed it with open carrier authority, physical column selection,
+  and transport diagnostics requiring helper imports.
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md
+  - scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
+  - outputs/dm_pmns_projector_raw_interface_repair_2026-05-25.txt
+  - docs/audit/*
+  - .claude/science/physics-loops/dm-pmns-projector-raw-interface-repair/*
+open_imports: []
+no_go_routes:
+  - deriving the PMNS Hermitian-pair carrier
+  - selecting the physical N1 transport column
+  - retaining eta/eta_obs diagnostics in this row
+review_findings: pending external reviewer
+pr_status: pending
+next_exact_action: |
+  Commit, push, and open a review PR. Independent audit can then review
+  the dependency-free raw algebraic interface.
+stop_condition: |
+  PR opened and audit-lane checks pass.
+status_fields:
+  actual_current_surface_status: unaudited
+  target_claim_type: bounded_theorem
+  conditional_surface_status: bounded-support
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

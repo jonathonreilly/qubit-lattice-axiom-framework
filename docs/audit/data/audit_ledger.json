@@ -60972,56 +60972,43 @@
       "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_projector_interface_note_2026-04-16": {
-      "audit_date": "2026-05-22T02:40:35.173118+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 17.45,
-        "runner_hash": "58a835e91aaf90e027b1ea8cef9a234ff8a62e0e7772b33cf6c99671e6a9ceb2",
-        "transitive_descendants": 988
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-dm_leptogenesis_pmns_pro-011",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic interface closes conditional on a supplied Hermitian pair. The chain does not close as a physical DM leptogenesis statement because carrier authority and physical PMNS-column selection are explicitly left open.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
-      "claim_scope": "Audited the conditional pair-to-projector algebraic interface: once a Hermitian lepton pair is supplied, U_PMNS=U_e^dag U_nu gives a phase-insensitive doubly stochastic projector packet |U_PMNS|^2.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T02:40:35.173118+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 16,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 16.555,
-      "load_bearing_step": "Given any positive-definite Hermitian pair (H_nu, H_e), the flavored transport packet P_i(alpha)=|U_PMNS(alpha,i)|^2 is doubly stochastic, phase-insensitive, and pair-readable.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "771d05639070bac5cecdda3694db7b1b2f3863cdd5af028a700b0dc817cf38ab",
+      "note_hash": "ec7c82cab73dbc94591bca4b503aabb6582d05429b5d20331bbeb35d5f5fdd8b",
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained-grade derivations of the Hermitian-pair carrier authority and the physical N1 PMNS-column selection, plus include dm_leptogenesis_exact_common.py if diagnostic transport readouts are to be audited as load-bearing.",
-      "open_dependency_paths": [
-        "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -61166,21 +61153,64 @@
             "total_pass": 12
           },
           "verdict_rationale": "The runner genuinely checks the class-A algebraic facts that U_PMNS is unitary, |U_PMNS|^2 is doubly stochastic, and the projector packet is rephasing-invariant for sampled Hermitian pairs. The numerical eta readouts are computed diagnostics on chosen canonical sample pairs, not first-principles closure of the PMNS pair law or physical column selection. Because the note explicitly imports and leaves unresolved the carrier authority and physical-column authority, the full route-choice conclusion remains conditional rather than clean."
+        },
+        {
+          "archived_at": "2026-05-26T04:03:34.416756+00:00",
+          "archived_for_note_hash": "771d05639070bac5cecdda3694db7b1b2f3863cdd5af028a700b0dc817cf38ab",
+          "audit_date": "2026-05-22T02:40:35.173118+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 17.45,
+            "runner_hash": "58a835e91aaf90e027b1ea8cef9a234ff8a62e0e7772b33cf6c99671e6a9ceb2",
+            "transitive_descendants": 988
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-dm_leptogenesis_pmns_pro-011",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic interface closes conditional on a supplied Hermitian pair. The chain does not close as a physical DM leptogenesis statement because carrier authority and physical PMNS-column selection are explicitly left open.",
+          "claim_scope": "Audited the conditional pair-to-projector algebraic interface: once a Hermitian lepton pair is supplied, U_PMNS=U_e^dag U_nu gives a phase-insensitive doubly stochastic projector packet |U_PMNS|^2.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-22T02:40:35.173118+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Given any positive-definite Hermitian pair (H_nu, H_e), the flavored transport packet P_i(alpha)=|U_PMNS(alpha,i)|^2 is doubly stochastic, phase-insensitive, and pair-readable.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained-grade derivations of the Hermitian-pair carrier authority and the physical N1 PMNS-column selection, plus include dm_leptogenesis_exact_common.py if diagnostic transport readouts are to be audited as load-bearing.",
+          "open_dependency_paths": [
+            "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 12
+          },
+          "verdict_rationale": "The runner substantively verifies the algebraic PMNS projector interface by diagonalizing Hermitian pairs, checking unitarity/double stochasticity, and sampling eigenvector rephasings. Parts 2 and 3 compute conditional diagnostic transport values for chosen canonical samples, but those values are not retained-scope authority and depend on imported transport machinery whose source is not included. The note itself explicitly admits the carrier authority and physical-column authority are open dependencies, so retained status cannot propagate to a physical leptogenesis conclusion."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 6,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 12
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
       "title": "DM Leptogenesis PMNS Projector Interface",
       "transitive_descendants": 375,
-      "verdict_rationale": "The runner substantively verifies the algebraic PMNS projector interface by diagonalizing Hermitian pairs, checking unitarity/double stochasticity, and sampling eigenvector rephasings. Parts 2 and 3 compute conditional diagnostic transport values for chosen canonical samples, but those values are not retained-scope authority and depend on imported transport machinery whose source is not included. The note itself explicitly admits the carrier authority and physical-column authority are open dependencies, so retained status cannot propagate to a physical leptogenesis conclusion."
+      "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16": {
       "audit_date": null,
@@ -76136,7 +76166,6 @@
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py",
         "scripts/frontier_graph_first_selector_derivation.py",
@@ -82192,7 +82221,6 @@
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -82469,7 +82497,6 @@
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
       "independence": null,
@@ -82587,7 +82614,6 @@
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -82646,7 +82672,6 @@
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -139221,7 +139246,6 @@
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -139484,7 +139508,6 @@
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -140659,7 +140682,6 @@
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -304107,8 +304129,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2380,
-    "re_audit_required": 0,
+    "preserved_existing": 2379,
+    "re_audit_required": 1,
     "row_count": 2424,
     "seeded_new": 0
   }

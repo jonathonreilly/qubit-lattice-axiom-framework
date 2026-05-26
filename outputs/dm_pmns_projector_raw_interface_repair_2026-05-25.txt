@@ -1,0 +1,60 @@
+========================================================================================
+DM LEPTOGENESIS PMNS PROJECTOR RAW INTERFACE
+========================================================================================
+
+========================================================================================
+PART 0: SOURCE AND AUDIT METADATA FIREWALL
+========================================================================================
+  [PASS] source note states boundary phrase: Raw Pair-to-Projector Interface
+  [PASS] source note states boundary phrase: raw-interface repair
+  [PASS] source note states boundary phrase: does not claim carrier authority
+  [PASS] source note states boundary phrase: does not claim physical N1 column selection
+  [PASS] source note states boundary phrase: does not compute or retain eta/eta_obs diagnostics
+  [PASS] source note states boundary phrase: does not import dm_leptogenesis_exact_common
+  [PASS] source note states boundary phrase: No new axiom is introduced
+  [PASS] runner source excludes transport helper phrase: from dm_leptogenesis_exact_common import
+  [PASS] runner source excludes transport helper phrase: solve_multisource_flavored_transport
+  [PASS] runner source excludes transport helper phrase: eta_ratio_single_source_flavored
+  [PASS] audit ledger row exists
+  [PASS] claim type remains bounded_theorem  (bounded_theorem)
+  [PASS] audit status reset to unaudited for re-audit  (unaudited)
+  [PASS] effective status reset to unaudited for re-audit  (unaudited)
+  [PASS] raw interface has no ledger dependencies  ([])
+  [PASS] raw interface has no helper runner paths  ([])
+  [PASS] citation graph node exists
+  [PASS] citation graph node has no dependencies  ([])
+  [PASS] citation graph node has no helper runners  ([])
+  [PASS] citation graph has no outgoing dependency edge  ([])
+  [PASS] raw interface is queued for audit  (position=1)
+  [PASS] queued row is ready because deps are empty  (True)
+
+========================================================================================
+PART 1: UNITARY PAIR MATRIX AND DOUBLY STOCHASTIC PACKET
+========================================================================================
+  [PASS] U_pair is unitary on every deterministic Hermitian pair  (max err=1.19e-15)
+  [PASS] |U_pair|^2 has row sums equal to one  (max row err=1.04e-15)
+  [PASS] |U_pair|^2 has column sums equal to one  (max col err=1.26e-15)
+  [PASS] |U_pair|^2 entries are non-negative  (min entry=1.74e-02)
+  canonical packet:
+[[0.02526  0.051056 0.923685]
+ [0.122974 0.818156 0.05887 ]
+ [0.851766 0.130789 0.017445]]
+
+========================================================================================
+PART 2: EIGENVECTOR REPHASING INVARIANCE
+========================================================================================
+  [PASS] |U_pair|^2 is invariant under independent eigenvector rephasings  (max err=7.06e-16, samples=72)
+
+========================================================================================
+RESULT
+========================================================================================
+  Raw algebraic interface:
+    - supplied Hermitian pair -> U_pair = U_e^dagger U_nu
+    - |U_pair|^2 is doubly stochastic
+    - |U_pair|^2 is invariant under eigenvector rephasings
+
+  Carrier authority, physical N1 column selection, and eta diagnostics remain outside this repaired row.
+
+========================================================================================
+SUMMARY: PASS=27 FAIL=0
+========================================================================================

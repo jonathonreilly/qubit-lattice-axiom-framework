@@ -1,41 +1,35 @@
 #!/usr/bin/env python3
-"""
-DM leptogenesis PMNS projector interface.
+"""Raw Hermitian-pair to projector-packet interface.
 
-Framework convention:
-  Baseline physical framework means Cl(3) local algebra on the Z^3
-  spatial substrate. Historical axiom-side wording below is lane
-  terminology, not a new repo-wide axiom.
+This runner verifies only finite linear algebra:
 
-Status:
-  Exact interface theorem plus diagnostic transplant from the active PMNS lane.
+  * U_pair = U_e^dagger U_nu is unitary;
+  * |U_pair|^2 is doubly stochastic;
+  * |U_pair|^2 is invariant under independent eigenvector rephasings.
 
-Purpose:
-  Show that the neutrino lane already fixes the right *carrier* for the DM
-  flavored transport problem: once the lepton Hermitian pair (H_nu, H_e) is
-  supplied, the flavored transport projector packet is readable as |U_PMNS|^2.
+It intentionally does not compute leptogenesis transport diagnostics or import
+the DM transport helper module.
 """
 
 from __future__ import annotations
 
-import math
+import json
 import sys
+from pathlib import Path
 
 import numpy as np
 
-from dm_leptogenesis_exact_common import (
-    C_SPH,
-    D_THERMAL_EXACT,
-    ETA_OBS,
-    S_OVER_NGAMMA_EXACT,
-    exact_package,
-    solve_multisource_flavored_transport,
-)
+np.set_printoptions(precision=6, suppress=True, linewidth=140)
+
+ROOT = Path(__file__).resolve().parents[1]
+CLAIM_ID = "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
+NOTE_PATH = ROOT / "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md"
+LEDGER_PATH = ROOT / "docs/audit/data/audit_ledger.json"
+GRAPH_PATH = ROOT / "docs/audit/data/citation_graph.json"
+QUEUE_PATH = ROOT / "docs/audit/data/audit_queue.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
-
-CYCLE = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=complex)
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -52,23 +46,15 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def canonical_y(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
-    phase_block = np.diag(np.array([y[0], y[1], y[2] * np.exp(1j * delta)], dtype=complex))
-    return np.diag(np.asarray(x, dtype=complex)) + phase_block @ CYCLE
+def load_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
-def canonical_h(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
-    ymat = canonical_y(x, y, delta)
-    return ymat @ ymat.conj().T
-
-
-def monomial_y(masses: np.ndarray) -> np.ndarray:
-    return np.diag(np.asarray(masses, dtype=complex)) @ CYCLE
-
-
-def monomial_h(masses: np.ndarray) -> np.ndarray:
-    ymat = monomial_y(masses)
-    return ymat @ ymat.conj().T
+def queue_position(queue_data: dict) -> tuple[int | None, dict | None]:
+    for index, item in enumerate(queue_data.get("queue", []), start=1):
+        if isinstance(item, dict) and item.get("claim_id") == CLAIM_ID:
+            return index, item
+    return None, None
 
 
 def canonical_left_diagonalizer(h: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -79,287 +65,174 @@ def canonical_left_diagonalizer(h: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     return evals, u
 
 
-def pmns_projector_packet(h_nu: np.ndarray, h_e: np.ndarray) -> np.ndarray:
+def projector_packet(h_nu: np.ndarray, h_e: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     _eval_nu, u_nu = canonical_left_diagonalizer(h_nu)
     _eval_e, u_e = canonical_left_diagonalizer(h_e)
-    u_pmns = u_e.conj().T @ u_nu
-    packet = np.abs(u_pmns) ** 2
-    return packet / np.sum(packet, axis=0, keepdims=True)
+    u_pair = u_e.conj().T @ u_nu
+    return u_pair, np.abs(u_pair) ** 2
 
 
-def eta_ratio_single_source_flavored(pkg: object, projectors: tuple[float, ...]) -> float:
-    _, _, asym_grid = solve_multisource_flavored_transport(
-        lambdas=np.array([1.0]),
-        k_decays=np.array([pkg.k_decay_exact]),
-        source_matrix=np.array([projectors], dtype=float),
-        washout_matrix=np.array([projectors], dtype=float),
+def deterministic_pairs() -> list[tuple[str, np.ndarray, np.ndarray]]:
+    rng = np.random.default_rng(seed=20260525)
+    pairs: list[tuple[str, np.ndarray, np.ndarray]] = []
+
+    h_nu = np.array(
+        [
+            [2.6, 0.2 + 0.1j, -0.3j],
+            [0.2 - 0.1j, 1.7, 0.4 + 0.2j],
+            [0.3j, 0.4 - 0.2j, 1.2],
+        ],
+        dtype=complex,
     )
-    kappa_value = abs(float(asym_grid[:, -1].sum()))
-    return S_OVER_NGAMMA_EXACT * C_SPH * D_THERMAL_EXACT * pkg.epsilon_1 * kappa_value / ETA_OBS
-
-
-def part1_the_pair_already_determines_the_pmns_projector_packet() -> None:
-    print("\n" + "=" * 88)
-    print("PART 1: THE HERMITIAN PAIR ALREADY DETERMINES THE PMNS PROJECTOR PACKET")
-    print("=" * 88)
-
-    # Canonical sample (deterministic, for reproducibility of part 2 / 3).
-    h_nu_canon = canonical_h(
-        np.array([1.10, 1.30, 0.80], dtype=float),
-        np.array([0.60, 0.70, 1.00], dtype=float),
-        1.10,
+    h_e = np.array(
+        [
+            [1.1, -0.1j, 0.15 + 0.04j],
+            [0.1j, 2.4, -0.2 + 0.05j],
+            [0.15 - 0.04j, -0.2 - 0.05j, 3.0],
+        ],
+        dtype=complex,
     )
-    h_e_canon = monomial_h(np.array([0.021, 0.034, 0.055], dtype=float))
+    pairs.append(("canonical", h_nu + 2.0 * np.eye(3), h_e + 2.0 * np.eye(3)))
 
-    # The interface theorem is algebraic in the Hermitian pair: it must hold for
-    # any positive-definite Hermitian (H_nu, H_e), not only one canonical pair.
-    # Audit the algebraic claims on a deterministic random sample of pairs.
-    rng = np.random.default_rng(seed=20260516)
-    random_pairs: list[tuple[np.ndarray, np.ndarray]] = []
-    for _ in range(8):
+    for idx in range(8):
         a = rng.standard_normal((3, 3)) + 1j * rng.standard_normal((3, 3))
         b = rng.standard_normal((3, 3)) + 1j * rng.standard_normal((3, 3))
         h1 = a @ a.conj().T + 1e-3 * np.eye(3)
         h2 = b @ b.conj().T + 1e-3 * np.eye(3)
-        random_pairs.append((h1, h2))
+        pairs.append((f"random_{idx}", h1, h2))
+    return pairs
 
-    sample_pairs: list[tuple[str, np.ndarray, np.ndarray]] = [
-        ("canonical", h_nu_canon, h_e_canon),
-    ] + [("random_%d" % idx, h1, h2) for idx, (h1, h2) in enumerate(random_pairs)]
 
-    # Algebraic theorem 1: U_PMNS is unitary, so |U_PMNS|^2 is doubly stochastic,
-    # hence column-stochastic. Verify on every pair in the sample.
-    col_sum_err_max = 0.0
-    row_sum_err_max = 0.0
-    for _name, h_nu, h_e in sample_pairs:
-        _, u_nu = canonical_left_diagonalizer(h_nu)
-        _, u_e = canonical_left_diagonalizer(h_e)
-        u_pmns = u_e.conj().T @ u_nu
-        # Algebraic: U_PMNS U_PMNS^dag = I (unitary).
-        unit_err = np.linalg.norm(u_pmns @ u_pmns.conj().T - np.eye(3))
-        assert unit_err < 1e-10, f"U_PMNS not unitary: {unit_err}"
-        raw = np.abs(u_pmns) ** 2
-        col_sum_err_max = max(col_sum_err_max, float(np.linalg.norm(np.sum(raw, axis=0) - np.ones(3))))
-        row_sum_err_max = max(row_sum_err_max, float(np.linalg.norm(np.sum(raw, axis=1) - np.ones(3))))
+def part0_source_and_audit_metadata_firewall() -> None:
+    print("\n" + "=" * 88)
+    print("PART 0: SOURCE AND AUDIT METADATA FIREWALL")
+    print("=" * 88)
 
-    check(
-        "ALG: U_PMNS is unitary and |U_PMNS|^2 is doubly stochastic for every Hermitian pair sampled",
-        col_sum_err_max < 1e-10 and row_sum_err_max < 1e-10,
-        f"max col-sum err={col_sum_err_max:.2e}, max row-sum err={row_sum_err_max:.2e}, N={len(sample_pairs)}",
-    )
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    source = Path(__file__).read_text(encoding="utf-8")
 
-    # Algebraic theorem 2: |U_PMNS|^2 is invariant under independent left-eigenvector
-    # rephasings (diagonal unitary on the left of u_nu and u_e). Verify by sampling
-    # 8 random rephasing pairs on every Hermitian pair in the sample.
-    rephase_err_max = 0.0
-    for _name, h_nu, h_e in sample_pairs:
-        _, u_nu = canonical_left_diagonalizer(h_nu)
-        _, u_e = canonical_left_diagonalizer(h_e)
+    required_note_phrases = [
+        "Raw Pair-to-Projector Interface",
+        "raw-interface repair",
+        "does not claim carrier authority",
+        "does not claim physical N1 column selection",
+        "does not compute or retain eta/eta_obs diagnostics",
+        "does not import dm_leptogenesis_exact_common",
+        "No new axiom is introduced",
+    ]
+    for phrase in required_note_phrases:
+        check(f"source note states boundary phrase: {phrase}", phrase in note)
+
+    forbidden_source_phrases = [
+        "from " + "dm_leptogenesis_exact_common import",
+        "solve_multisource_" + "flavored_transport",
+        "eta_ratio_single_source_" + "flavored",
+    ]
+    for phrase in forbidden_source_phrases:
+        check(f"runner source excludes transport helper phrase: {phrase}", phrase not in source)
+
+    ledger = load_json(LEDGER_PATH)
+    row = ledger["rows"].get(CLAIM_ID)
+    check("audit ledger row exists", row is not None)
+    if row is None:
+        return
+    check("claim type remains bounded_theorem", row.get("claim_type") == "bounded_theorem", str(row.get("claim_type")))
+    check("audit status reset to unaudited for re-audit", row.get("audit_status") == "unaudited", str(row.get("audit_status")))
+    check("effective status reset to unaudited for re-audit", row.get("effective_status") == "unaudited", str(row.get("effective_status")))
+    check("raw interface has no ledger dependencies", row.get("deps") == [], str(row.get("deps")))
+    check("raw interface has no helper runner paths", row.get("helper_runner_paths") == [], str(row.get("helper_runner_paths")))
+
+    graph = load_json(GRAPH_PATH)
+    node = graph["nodes"].get(CLAIM_ID)
+    outgoing = [edge for edge in graph["edges"] if edge.get("from") == CLAIM_ID]
+    check("citation graph node exists", node is not None)
+    if node is not None:
+        check("citation graph node has no dependencies", node.get("deps") == [], str(node.get("deps")))
+        check("citation graph node has no helper runners", node.get("helper_runner_paths") == [], str(node.get("helper_runner_paths")))
+    check("citation graph has no outgoing dependency edge", outgoing == [], str(outgoing))
+
+    queue = load_json(QUEUE_PATH)
+    position, item = queue_position(queue)
+    check("raw interface is queued for audit", item is not None, f"position={position}")
+    if item is not None:
+        check("queued row is ready because deps are empty", item.get("ready") is True, str(item.get("ready")))
+
+
+def part1_unitary_and_doubly_stochastic() -> list[tuple[str, np.ndarray]]:
+    print("\n" + "=" * 88)
+    print("PART 1: UNITARY PAIR MATRIX AND DOUBLY STOCHASTIC PACKET")
+    print("=" * 88)
+
+    packets: list[tuple[str, np.ndarray]] = []
+    max_unitary_err = 0.0
+    max_row_err = 0.0
+    max_col_err = 0.0
+    min_entry = 1.0
+    for name, h_nu, h_e in deterministic_pairs():
+        u_pair, packet = projector_packet(h_nu, h_e)
+        packets.append((name, packet))
+        max_unitary_err = max(max_unitary_err, float(np.linalg.norm(u_pair @ u_pair.conj().T - np.eye(3))))
+        max_row_err = max(max_row_err, float(np.linalg.norm(np.sum(packet, axis=1) - np.ones(3))))
+        max_col_err = max(max_col_err, float(np.linalg.norm(np.sum(packet, axis=0) - np.ones(3))))
+        min_entry = min(min_entry, float(np.min(packet)))
+
+    check("U_pair is unitary on every deterministic Hermitian pair", max_unitary_err < 1e-10, f"max err={max_unitary_err:.2e}")
+    check("|U_pair|^2 has row sums equal to one", max_row_err < 1e-10, f"max row err={max_row_err:.2e}")
+    check("|U_pair|^2 has column sums equal to one", max_col_err < 1e-10, f"max col err={max_col_err:.2e}")
+    check("|U_pair|^2 entries are non-negative", min_entry >= -1e-14, f"min entry={min_entry:.2e}")
+
+    print("  canonical packet:")
+    print(np.round(packets[0][1], 6))
+    return packets
+
+
+def part2_rephasing_invariance() -> None:
+    print("\n" + "=" * 88)
+    print("PART 2: EIGENVECTOR REPHASING INVARIANCE")
+    print("=" * 88)
+
+    rng = np.random.default_rng(seed=20260526)
+    max_rephase_err = 0.0
+    samples = 0
+    for _name, h_nu, h_e in deterministic_pairs():
+        _eval_nu, u_nu = canonical_left_diagonalizer(h_nu)
+        _eval_e, u_e = canonical_left_diagonalizer(h_e)
         base = np.abs(u_e.conj().T @ u_nu) ** 2
         for _ in range(8):
-            theta_nu = rng.uniform(-np.pi, np.pi, size=3)
-            theta_e = rng.uniform(-np.pi, np.pi, size=3)
-            phase_nu = np.diag(np.exp(1j * theta_nu))
-            phase_e = np.diag(np.exp(1j * theta_e))
+            phase_nu = np.diag(np.exp(1j * rng.uniform(-np.pi, np.pi, size=3)))
+            phase_e = np.diag(np.exp(1j * rng.uniform(-np.pi, np.pi, size=3)))
             phased = np.abs((u_e @ phase_e).conj().T @ (u_nu @ phase_nu)) ** 2
-            rephase_err_max = max(rephase_err_max, float(np.linalg.norm(base - phased)))
+            max_rephase_err = max(max_rephase_err, float(np.linalg.norm(base - phased)))
+            samples += 1
 
     check(
-        "ALG: |U_PMNS|^2 is invariant under independent left-eigenvector rephasings on every sampled pair",
-        rephase_err_max < 1e-10,
-        f"max rephasing err={rephase_err_max:.2e} over {len(sample_pairs) * 8} samples",
+        "|U_pair|^2 is invariant under independent eigenvector rephasings",
+        max_rephase_err < 1e-10,
+        f"max err={max_rephase_err:.2e}, samples={samples}",
     )
 
-    # Bottom-line algebraic content of Part 1: the packet is pair-readable and
-    # phase-insensitive on every Hermitian pair, so no extra support-selection
-    # theorem is needed once the pair is supplied. This is now an executable
-    # consequence of the two algebraic checks above, not a hard-coded True.
-    packet_pair_readable = (col_sum_err_max < 1e-10) and (rephase_err_max < 1e-10)
-    check(
-        "Pair-conditioned flavored transport packet P_i(alpha)=|U_PMNS(alpha,i)|^2 is pair-readable and phase-insensitive",
-        packet_pair_readable,
-        "follows from the two preceding algebraic checks on every sampled pair",
-    )
 
-    canon_packet = pmns_projector_packet(h_nu_canon, h_e_canon)
-    print()
-    print("  Pair-conditioned PMNS projector packet on the canonical N_nu sample:")
-    print(np.round(canon_packet, 6))
-
-
-def part2_the_nu_side_pair_sample_gives_a_real_transport_lift() -> None:
+def part3_result() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE N_nu PAIR SAMPLE GIVES A REAL TRANSPORT LIFT")
+    print("RESULT")
     print("=" * 88)
-
-    pkg = exact_package()
-    h_nu = canonical_h(
-        np.array([1.10, 1.30, 0.80], dtype=float),
-        np.array([0.60, 0.70, 1.00], dtype=float),
-        1.10,
-    )
-    h_e = monomial_h(np.array([0.021, 0.034, 0.055], dtype=float))
-    packet = pmns_projector_packet(h_nu, h_e)
-
-    eta_vals = [eta_ratio_single_source_flavored(pkg, tuple(packet[:, idx])) for idx in range(3)]
-
-    check(
-        "The N_nu pair packet is non-democratic on every column",
-        max(abs(float(packet[row, col]) - 1.0 / 3.0) for row in range(3) for col in range(3)) > 0.15,
-        f"packet={np.round(packet, 6)}",
-    )
-    check(
-        "Its best column lifts the exact DM branch to eta/eta_obs = 0.767519440713",
-        abs(max(eta_vals) - 0.7675194407125014) < 1e-8,
-        f"etas={np.round(eta_vals, 6)}",
-    )
-    check(
-        "So the PMNS-pair transplant already gives a material improvement over the one-flavor authority path",
-        max(eta_vals) / 0.188785929502 > 4.0,
-        f"enhancement={max(eta_vals) / 0.188785929502:.6f}",
-    )
-
+    print("  Raw algebraic interface:")
+    print("    - supplied Hermitian pair -> U_pair = U_e^dagger U_nu")
+    print("    - |U_pair|^2 is doubly stochastic")
+    print("    - |U_pair|^2 is invariant under eigenvector rephasings")
     print()
-    print(f"  columnwise eta/eta_obs on the canonical N_nu sample = {np.round(eta_vals, 6)}")
-
-
-def part3_the_e_side_pair_sample_can_nearly_close_the_exact_miss() -> None:
-    print("\n" + "=" * 88)
-    print("PART 3: THE N_e PAIR SAMPLE CAN NEARLY CLOSE THE EXACT MISS")
-    print("=" * 88)
-
-    pkg = exact_package()
-    h_nu = monomial_h(np.array([0.018, 0.051, 0.074], dtype=float))
-    h_e = canonical_h(
-        np.array([0.24, 0.38, 1.07], dtype=float),
-        np.array([0.09, 0.22, 0.61], dtype=float),
-        1.10,
-    )
-    packet = pmns_projector_packet(h_nu, h_e)
-    eta_vals = [eta_ratio_single_source_flavored(pkg, tuple(packet[:, idx])) for idx in range(3)]
-    best_idx = int(np.argmax(eta_vals))
-
-    check(
-        "The canonical N_e pair sample gives a strongly hierarchical PMNS projector column",
-        float(np.max(packet[:, best_idx])) > 0.9,
-        f"best column={np.round(packet[:, best_idx], 6)}",
-    )
-    check(
-        "Its best column lifts the exact DM branch to eta/eta_obs = 0.989512597197",
-        abs(max(eta_vals) - 0.9895125971972334) < 1e-8,
-        f"etas={np.round(eta_vals, 6)}",
-    )
-    check(
-        "So the PMNS pair transplant can in principle erase almost the whole transport miss without a new N2 source",
-        max(eta_vals) > 0.98,
-        f"best eta/eta_obs={max(eta_vals):.12f}",
-    )
-
-    print()
-    print(f"  pair-conditioned PMNS projector packet on the canonical N_e sample:\n{np.round(packet, 6)}")
-    print(f"  columnwise eta/eta_obs on the canonical N_e sample = {np.round(eta_vals, 6)}")
-
-
-def part4_bottom_line() -> None:
-    print("\n" + "=" * 88)
-    print("PART 4: BOTTOM LINE - CONDITIONAL INTERFACE STRUCTURE")
-    print("=" * 88)
-
-    # The conditional structure has three slots; the interface theorem proven in
-    # Part 1 closes the third slot algebraically, but the first two slots remain
-    # open dependencies on imported PMNS/active-neutrino-lane authorities. The
-    # note is honest about this and the audit ledger flagged it. Replace the
-    # earlier unconditional True checks with executable structural assertions
-    # that explicitly name the missing authorities, so the conditional shape is
-    # legible from the runner output rather than masked by hard-coded passes.
-
-    open_dependencies = [
-        (
-            "carrier authority",
-            "active neutrino lane fixes the Hermitian pair ((H_nu,H_e), s) as the remaining"
-            " full target carrier rather than some other object",
-            "open: positive PMNS pair law from Cl(3) on Z^3 not yet supplied on the DM branch",
-        ),
-        (
-            "physical column authority",
-            "a retained theorem selecting which PMNS column is the physical N1 transport"
-            " column on the active neutrino lane",
-            "open: physical-column selection not yet derived from the sole axiom on the DM"
-            " branch",
-        ),
-    ]
-    closed_steps = [
-        (
-            "algebraic interface theorem",
-            "given any positive-definite Hermitian pair (H_nu, H_e), the flavored transport"
-            " packet P_i(alpha) = |U_PMNS(alpha,i)|^2 is unitary-doubly-stochastic,"
-            " phase-insensitive, and pair-readable without further support selection",
-            "closed: proved in Part 1 by algebraic checks on canonical and random pairs",
-        ),
-    ]
-
-    # Structural check: the conditional content of the note is exactly two open
-    # dependencies and one closed algebraic interface theorem. This is a
-    # bookkeeping assertion about the shape of the bridge, not a verdict on
-    # whether the open dependencies are subsequently closed.
-    check(
-        "Conditional structure has exactly two open dependencies and one closed algebraic step",
-        len(open_dependencies) == 2 and len(closed_steps) == 1,
-        f"open={len(open_dependencies)}, closed_algebraic={len(closed_steps)}",
-    )
-
-    # Structural check: the closed step is exactly the Part 1 interface theorem,
-    # not any conclusion about the open dependencies.
-    closed_label = closed_steps[0][0]
-    check(
-        "The closed algebraic step is the pair-to-projector interface theorem itself",
-        closed_label == "algebraic interface theorem",
-        f"closed step label = {closed_label!r}",
-    )
-
-    # Structural check: neither open dependency is asserted closed by the runner.
-    # Their resolution text must contain the explicit word 'open'. This is the
-    # honest replacement for the previous unconditional True checks on the
-    # carrier and column selection claims.
-    open_labels = sorted(label for label, _, _ in open_dependencies)
-    open_left_unresolved = all(
-        resolution.startswith("open:") for _, _, resolution in open_dependencies
-    )
-    check(
-        "Both open dependencies are explicitly left unresolved by this interface note",
-        open_left_unresolved and open_labels == ["carrier authority", "physical column authority"],
-        f"open labels = {open_labels}",
-    )
-
-    print()
-    print("  Conditional structure:")
-    print("    Closed (algebraic):")
-    for label, content, resolution in closed_steps:
-        print(f"      - {label}: {content}")
-        print(f"        {resolution}")
-    print("    Open (named dependencies on the PMNS/active-neutrino lane):")
-    for label, content, resolution in open_dependencies:
-        print(f"      - {label}: {content}")
-        print(f"        {resolution}")
-    print()
-    print("  Transport-facing read:")
-    print("    - Part 1 closes the algebraic pair-to-projector interface")
-    print("    - Parts 2 and 3 quantify the transport lift on two canonical sample pairs")
-    print("    - Part 4 (this section) leaves the carrier and column-selection")
-    print("      authorities explicitly open as named dependencies, replacing the")
-    print("      earlier unconditional True checks that the audit flagged as masking")
-    print("      missing structure")
+    print("  Carrier authority, physical N1 column selection, and eta diagnostics remain outside this repaired row.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS PMNS PROJECTOR INTERFACE")
+    print("DM LEPTOGENESIS PMNS PROJECTOR RAW INTERFACE")
     print("=" * 88)
 
-    part1_the_pair_already_determines_the_pmns_projector_packet()
-    part2_the_nu_side_pair_sample_gives_a_real_transport_lift()
-    part3_the_e_side_pair_sample_can_nearly_close_the_exact_miss()
-    part4_bottom_line()
+    part0_source_and_audit_metadata_firewall()
+    part1_unitary_and_doubly_stochastic()
+    part2_rephasing_invariance()
+    part3_result()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

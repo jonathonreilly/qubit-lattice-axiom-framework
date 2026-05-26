@@ -27,5 +27,9 @@ open_imports:
   - "Global logarithm branch and continuum gauge-field limits remain outside this row."
 no_go_routes:
   - "Do not claim a unique global log branch; center/branch cases show discrete co-root ambiguity."
-next_exact_action: "Run audit pipeline and lint; if clean, commit, push, and open review PR."
-stop_condition: "Block PR opened or a concrete verification failure requires a new repair."
+pr:
+  url: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1920"
+  status: open
+  audit_lane_status: in_progress
+next_exact_action: "Monitor PR audit-lane result while the campaign pivots to the next independent audited-conditional row."
+stop_condition: "12-hour campaign budget exhausted, user stops, or global tooling failure prevents PR delivery."

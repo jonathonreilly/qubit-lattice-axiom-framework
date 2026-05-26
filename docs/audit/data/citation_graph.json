@@ -23317,10 +23317,6 @@
       "to": "tensor_source_map_eta_note"
     },
     {
-      "from": "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
-      "to": "second_grown_family_sign_note"
-    },
-    {
       "from": "sign_portability_invariant_note",
       "to": "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09"
     },
@@ -75298,17 +75294,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "second_grown_family_sign_note"
-      ],
-      "helper_runner_paths": [
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/gate_b_nonlabel_connectivity_v1.py"
-      ],
-      "note_hash": "a94c72395e88766ac1d352db99f1b25c8cc915fd25565bdfdedb9cc07c0e9e11",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "880b226ddb10aa94c47a0c7803ad4ebe3c4a15c461a661b8e150184de9455f82",
       "path": "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
       "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
-      "title": "Sign Portability Invariant: First-Principles Derivation Within the Second Grown Family"
+      "title": "Sign Portability Invariant Cached Gate Certificate"
     },
     "sign_portability_invariant_note": {
       "claim_id": "sign_portability_invariant_note",
@@ -75323,10 +75314,7 @@
         "fourth_family_quadrant_note",
         "fifth_family_radial_boundary_note"
       ],
-      "helper_runner_paths": [
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/gate_b_nonlabel_connectivity_v1.py"
-      ],
+      "helper_runner_paths": [],
       "note_hash": "b9aaf4ca05b29056390c28481a4a18e7724f8537a999b258684d840d69b5b117",
       "path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
       "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
@@ -85278,6 +85266,7 @@
     "seventh_family_diagonal_note",
     "shapiro_static_discriminator_note",
     "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
+    "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
     "signed_gravity_aps_action_origin_superselection_stability_note_2026-05-17",
     "signed_gravity_aps_locked_source_action_proposal_note",
     "signed_gravity_boundary_coframe_chi_probe_note_2026-05-17",
@@ -85500,10 +85489,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9777,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

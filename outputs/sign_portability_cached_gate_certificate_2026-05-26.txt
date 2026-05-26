@@ -1,0 +1,49 @@
+[PASS] [A] note boundary contains: Claim type:** bounded_theorem
+[PASS] [A] note boundary contains: Status:** bounded cached-output certificate
+[PASS] [A] note boundary contains: not a proof of the unit-slope theorem
+[PASS] [A] note boundary contains: not a cross-family theorem
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale theorem phrase: claim_scope
+[PASS] [A] note omits stale theorem phrase: conditional on linear-response regularity
+[PASS] [A] note omits stale theorem phrase: cross-family equivalence claimed
+[PASS] [A] note omits stale theorem phrase: inherits the same four gates by the same proof
+[PASS] [A] note omits stale theorem phrase: bounded_theorem. Within the second grown-family slice
+
+=== sign-portability cached gate checks ===
+[PASS] [A] cache contains: runner: scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py
+[PASS] [A] cache contains: exit_code: 0
+[PASS] [A] cache contains: status: ok
+[PASS] [A] cache contains: thresholds: ZERO_TOL=1e-12 NEUTRAL_TOL=1e-12 ANTISYM_TOL=5e-03 EXP_TOL=5e-03
+[PASS] [A] cache contains: OVERALL: PASS
+[PASS] [C] derivation subset has two passing rows (2)
+[PASS] [C] subset G3 residual below threshold (3.758e-05)
+[PASS] [C] subset G4 residual below threshold (2.711e-05)
+[PASS] [C] derivation block reports PASS
+[PASS] [A] Grown transfer basin summary row parsed
+[PASS] [C] Grown transfer basin reports PPPP (PPPP)
+[PASS] [A] Alternative connectivity family summary row parsed
+[PASS] [C] Alternative connectivity family reports PPPP (PPPP)
+[PASS] [A] Second grown-family sign summary row parsed
+[PASS] [C] Second grown-family sign reports PPPP (PPPP)
+[PASS] [A] Third grown-family sign summary row parsed
+[PASS] [C] Third grown-family sign reports PPPP (PPPP)
+[PASS] [A] Fourth family quadrant summary row parsed
+[PASS] [C] Fourth family quadrant reports PPPP (PPPP)
+[PASS] [A] Fifth family radial summary row parsed
+[PASS] [C] Fifth family radial reports PPPP (PPPP)
+[PASS] [B] detailed family gate PASS rows present (24)
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type remains bounded_theorem
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] no helper runner paths remain ([])
+[PASS] [A] no open dependency paths remain ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (78)
+
+Sign portability cached gate certificate: PASS
+PASS=42 FAIL=0

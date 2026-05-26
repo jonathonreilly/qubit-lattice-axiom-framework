@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -945,7 +945,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
-| `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -10736,21 +10735,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No orthogonal F3-* route supplies an independent Sigma m_nu cross-bound on the framework's current-bank surface.  _(class `A`)_
 - **chain closes:** False — The finite-route synthesis follows only if the five route statuses and current-framework surface are accepted as inputs. The packet supplies no upstream authorities for T-4F-alpha-2, the current-bank Omega_DM interval, retained N_eff, the no-fitted-parameter rule, eta status, or the Lane 5 gate, and the runner hard-codes most of those status judgments.
 - **rationale:** The no-go gate passes N1 at the surface level because the note enumerates five distinct attack routes and mostly collapses non-independent routes under N2. It fails clean no-go under N4/N8: the restricted packet does not include the witness authorities needed to verify the Cycle-1 Omega_DM residue, T-4F-alpha-2, current-bank Omega_DM, eta status, or Lane 5 gate using same-packet evidence. The runner checks the PDG/CMB arithmetic but hard-codes most route-status and completeness conclusions as True. The scoped no-go is therefore plausible but conditional on missing dependency edges.
-- **auditor confidence:** high
-
-### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`
-
-- **Note:** [`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](../../docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the narrowed second-grown-family claim: G1 and G2 exact finite-strength algebraic cancellations, plus G3/G4 leading-order weak-field gate claims only to the extent supported by the provided source, cited note, and runner packet.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260522-023108-49f0228b-sign_portability_invaria-006`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** G1/G2 follow because the source-to-field map gives exactly zero field for empty or same-anchor +1/-1 sources; G3/G4 follow by Taylor expanding the propagation and detector centroid in eps so the Jacobi term flips sign and doubles under doubled charge.  _(class `A`)_
-- **chain closes:** False — The exact G1/G2 algebraic cancellations close from the provided source map and deterministic anchor rule. The weak-field centroid expansion and unit-slope ratio remain conditional because the packet does not certify row-wise detector-denominator lower bounds or nonzero first-order plus-source response dz_+.
-- **rationale:** The runner genuinely computes the second-grown-family rows for a subset and parses registered family logs, and it supports the finite-strength algebraic G1/G2 checks. However, the note itself explicitly records that G3/G4 require regular-denominator and nonzero-linear-response bounds, and those bounds are not supplied in the restricted packet. The cross-family unit-slope corollary also inherits that open regularity premise, so the full bounded-theorem surface does not close unconditionally.
-- **open / conditional deps cited:**
-  - `SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`
 - **auditor confidence:** high
 
 ### `signed_gravity_aps_locked_source_action_proposal_note`

@@ -19585,10 +19585,10 @@
       "runner": "scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py"
     },
     "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 4,
         "C": 0,
         "D": 0
       },
@@ -19597,10 +19597,10 @@
       "runner": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py"
     },
     "sign_portability_invariant_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 4,
         "C": 0,
         "D": 0
       },
@@ -25847,14 +25847,14 @@
       "exists": true
     },
     "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
         "sign_portability_invariant_note"
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 4,
         "C": 0,
         "D": 0
       },

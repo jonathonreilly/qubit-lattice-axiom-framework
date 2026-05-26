@@ -1,0 +1,38 @@
+loop: sign-portability-cached-gate
+date: 2026-05-26
+branch: physics-loop/sign-portability-cached-gate-repair-20260526
+base: origin/main
+mode: campaign
+target: bounded-support
+cycle: 1
+active_route: cached_gate_certificate
+hard_residual: rowwise_linear_response_lower_bounds
+files_touched:
+  - docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md
+  - scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py
+  - outputs/sign_portability_cached_gate_certificate_2026-05-26.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+claim_status:
+  claim_id: sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09
+  actual_current_surface_status: bounded-support
+  claim_type_author_hint_after_repair: bounded_theorem
+  audit_status_after_pipeline: unaudited
+  effective_status_after_pipeline: unaudited
+  bare_retained_allowed: false
+verification_completed:
+  - python3 -m py_compile scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py
+  - bash docs/audit/scripts/run_pipeline.sh
+  - PYTHONPATH=scripts python3 scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py
+  - python3 docs/audit/scripts/audit_lint.py --strict
+  - python3 scripts/render_controlled_vocabulary.py --check
+  - python3 scripts/vocab_lint.py --report-only docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md
+  - git diff --check
+next_exact_action: commit, push, and open PR
+stop_condition: coherent block packaged for review

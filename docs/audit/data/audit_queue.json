@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 235,
-    "high": 352,
+    "high": 351,
     "leaf": 327,
     "medium": 334
   },
@@ -6658,33 +6658,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "poisson_self_gravity_mechanism_note",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/minimal_source_driven_field_probe.py",
-        "scripts/poisson_self_gravity_born_audit.py",
-        "scripts/poisson_self_gravity_loop.py",
-        "scripts/poisson_self_gravity_loop_v3.py"
-      ],
-      "load_bearing_score": 8.748,
-      "note_path": "docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/poisson_self_gravity_mechanism.py",
-      "transitive_descendants": 151
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_ew_matching_rule_m_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -6705,6 +6678,34 @@
       "ready": true,
       "runner_path": "scripts/frontier_yt_ew_matching_rule_m_stretch.py",
       "transitive_descendants": 150
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "self_gravity_entropy_note_2026-04-11",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_3d_self_gravity_sign_note_2026-04-11",
+        "self_gravity_backreaction_closure_note",
+        "poisson_self_gravity_mechanism_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_staggered_self_gravity.py"
+      ],
+      "load_bearing_score": 7.729,
+      "note_path": "docs/SELF_GRAVITY_ENTROPY_NOTE_2026-04-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_self_gravity_entropy.py",
+      "transitive_descendants": 149
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -10753,34 +10754,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_gauge_scalar_bridge_3plus1_native_tube_staging.py",
-      "transitive_descendants": 149
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "self_gravity_entropy_note_2026-04-11",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_3d_self_gravity_sign_note_2026-04-11",
-        "self_gravity_backreaction_closure_note",
-        "poisson_self_gravity_mechanism_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_staggered_self_gravity.py"
-      ],
-      "load_bearing_score": 7.729,
-      "note_path": "docs/SELF_GRAVITY_ENTROPY_NOTE_2026-04-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_self_gravity_entropy.py",
       "transitive_descendants": 149
     },
     {
@@ -37532,5 +37505,5 @@
     }
   ],
   "ready_count": 64,
-  "total_pending": 1248
+  "total_pending": 1247
 }

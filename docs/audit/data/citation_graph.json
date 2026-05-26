@@ -9553,18 +9553,6 @@
       "to": "self_consistency_forces_poisson_note"
     },
     {
-      "from": "finite_rank_source_to_metric_theorem_note",
-      "to": "oh_schur_boundary_action_note"
-    },
-    {
-      "from": "finite_rank_source_to_metric_theorem_note",
-      "to": "finite_rank_gravity_residual_helper_note_2026-04-14"
-    },
-    {
-      "from": "finite_rank_source_to_metric_theorem_note",
-      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
-    },
-    {
       "from": "fixed_field_complex_grown_basin_v2_note",
       "to": "claude_complex_action_grown_companion_note"
     },
@@ -53530,16 +53518,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "oh_schur_boundary_action_note",
-        "finite_rank_gravity_residual_helper_note_2026-04-14",
-        "coarse_grained_exterior_law_helper_note_2026-04-14"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b4031c56b945a91835da345f7bcb5efbef8313a4b72c7bd7eb18bf714e832eb1",
+      "note_hash": "04d49f8729b06015e07fdec6aadd89254ea3273ef8392026d8dc783ed8f67e06",
       "path": "docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_finite_rank_source_to_metric_theorem.py",
-      "title": "Finite-Rank Source-to-Metric Theorem Path via Exact Boundary Action and Coarse-Grained Exterior Law"
+      "title": "Finite-Rank Source-to-Metric Self-Contained Finite-Lattice Certificate"
     },
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
       "claim_id": "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30",
@@ -84938,6 +84922,7 @@
     "fifth_family_radial_boundary_note",
     "fine_h_family_universality_note",
     "finite_rank_gravity_residual_helper_note_2026-04-14",
+    "finite_rank_source_to_metric_theorem_note",
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30",
     "flagship_paper_contribution_statement_note",
     "fm_transfer_note",
@@ -85500,10 +85485,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9775,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

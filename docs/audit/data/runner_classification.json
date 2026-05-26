@@ -7720,12 +7720,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 2,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "C",
       "runner": "scripts/frontier_finite_rank_source_to_metric_theorem.py"
     },
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
@@ -37073,12 +37073,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 2,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_first_order_coframe_unconditionality_no_go.py": {
@@ -55200,12 +55200,12 @@
     "dominant_class_distribution": {
       "A": 224,
       "B": 273,
-      "C": 747,
+      "C": 748,
       "D": 299,
-      "none": 439
+      "none": 438
     },
     "runners_classified": 1982,
-    "runners_with_C": 969,
+    "runners_with_C": 970,
     "runners_with_D": 583
   }
 }

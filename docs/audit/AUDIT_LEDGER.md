@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
@@ -83,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 1982
-- runners with (C) first-principles compute hits: 969
+- runners with (C) first-principles compute hits: 970
 - runners with (D) external comparator hits: 583
 - decoration candidates (no C, no D): 315
 
@@ -897,7 +897,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -4258,22 +4257,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Woodbury/Dyson identity gives G_W P = G_0 P (I - W G_S)^(-1), hence q_eff = (I - W G_S)^(-1) m and phi = G_0 P q_eff.  _(class `A`)_
 - **chain closes:** True — The audited claim is bounded to the finite-rank algebraic identity and its numerical implementation. The runner explicitly constructs H_0, P, W, solves both the full finite-rank system and the compressed Woodbury formula, and verifies agreement plus exterior harmonicity.
 - **rationale:** The load-bearing step is a standard finite-rank Woodbury/Dyson algebraic closure, not a numerical fit, external comparator, or renaming. The source note correctly bounds the claim to the helper-module construction and explicitly excludes derivation of P and W or closure of downstream gravity theorems. The runner source genuinely computes the finite-rank column identity, compressed source equivalence, and exterior harmonicity rather than printing constants.
-- **auditor confidence:** high
-
-### `finite_rank_source_to_metric_theorem_note`
-
-- **Note:** [`FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md`](../../docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact Woodbury source-to-exterior reconstruction and Schur boundary stationarity, plus bounded coarse-grained isotropic residual improvement on the imported finite-rank grid; no tensorial 3+1 or full nonlinear GR closure.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T111101Z-94e3c078-finite_rank_source_to_me-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Shell averaging the exact finite-rank exterior field and projecting it onto the radial harmonic law phi_eff(r)=a/r gives a static isotropic metric candidate with coarse residual 7.028e-06 versus direct residual 1.039e-02 on the imported finite-rank grid.  _(class `B`)_
-- **chain closes:** False — The exact algebraic checks close on the provided retained-bounded inputs, and the runner reports the bounded residual improvement. The scalar-to-metric step still imports the finite-rank support choice and coarse-grained exterior/metric residual map through helper-wrapper authorities rather than deriving those bridges within the packet.
-- **rationale:** The runner output is consistent with the narrowed bounded diagnostic: Woodbury reconstruction and Schur stationarity pass at machine precision, and the coarse residual improves by about 1.48e3 on the imported grid. But the load-bearing source-to-metric reduction relies on imported helper-wrapper constructions for the finite-rank operator and the shell-average/radial-harmonic metric map, both of which explicitly do not derive their framework inputs from the axiom. The note also correctly excludes full tensorial 3+1 closure, so the broader source-to-metric theorem remains conditional rather than clean.
-- **open / conditional deps cited:**
-  - `FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md`
-  - `COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md`
 - **auditor confidence:** high
 
 ### `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`

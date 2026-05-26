@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 163 |
-| **retained_bounded** | 467 |
+| **retained_bounded** | 468 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1282 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 752 |
+| `audited_clean` | 753 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -160,6 +157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | D | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | B | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1533,6 +1531,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The complexification splits as Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C), with the two summands distinguished by ω → ±i, so each summand has the unique 2-dimensional M_2(C) irreducible module and finite-dimensional representations decompose into copies of the two chiral irreps.  _(class `A`)_
 - **chain closes:** True — The in-scope U1-U3 claim follows from retained upstream narrow theorems establishing the Cl(3) complexification split and Pauli irrep uniqueness, plus standard finite-dimensional semisimple algebra representation theory. The former U4 physical per-site Hilbert-space bridge is explicitly out of scope.
 - **rationale:** The load-bearing step is an algebraic Clifford-algebra classification and representation-theory decomposition, not a numerical fit, definition, or external comparator. Both cited one-hop authorities are retained-grade and directly cover the split, chirality labels, two-dimensional irreps, and uniqueness within chirality. The runner source performs concrete Pauli-matrix and chirality checks, with one weak random-search exhibit for 3D nonexistence, but the proof of odd-dimensional exclusion is supplied by the retained algebraic decomposition rather than by that search.
+- **auditor confidence:** high
+
+### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block/finite-Lambda bounded scope: L1 Lieb-Robinson commutator bound for bounded finite-range Cl(3) local Hamiltonians on finite Z^3 blocks, L3 lattice light cone, L4 finite canonical local-term norm bound, and L2 only as temporal transfer-matrix clustering on the retained_bounded finite-Lambda/selected Wilson-plus-staggered surface; no unconditional spatial cluster decomposition, thermodynamic-limit, continuum, or general thermal-clustering claim is audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-cluster-decomposition-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The bounded claim closes by combining the finite-range Lieb-Robinson series bound for L1/L3/L4 with the one-hop retained_bounded Delta_T finite-Lambda support and mass-gap bridge for L2 only as finite-block temporal transfer-matrix clustering.  _(class `B`)_
+- **chain closes:** True — A five-judge panel produced a 4-of-5 majority for the second audit tuple. The source note's L1/L3/L4 branch is an internal finite-range Lieb-Robinson/path-count/norm argument, but the full bounded parent claim also depends on the surviving L2 branch, which is supplied by one-hop retained_bounded Delta_T finite-Lambda support and the mass-gap bridge to finite-block temporal transfer-matrix clustering. That decisive full-row closure is cross-note input verification, so the ratified load-bearing class is B. The clean verdict is restricted to that finite-block/finite-Lambda temporal scope; the legacy unconditional spatial cluster-decomposition, thermodynamic-limit, continuum, and general thermal-clustering readings are not audited as closed. The runner's E1-E4 PASS lines remain representative finite 1D free-fermion computations and are not promoted to proof of the theorem.
+- **rationale:** A five-judge panel produced a 4-of-5 majority for the second audit tuple. The source note's L1/L3/L4 branch is an internal finite-range Lieb-Robinson/path-count/norm argument, but the full bounded parent claim also depends on the surviving L2 branch, which is supplied by one-hop retained_bounded Delta_T finite-Lambda support and the mass-gap bridge to finite-block temporal transfer-matrix clustering. That decisive full-row closure is cross-note input verification, so the ratified load-bearing class is B. The clean verdict is restricted to that finite-block/finite-Lambda temporal scope; the legacy unconditional spatial cluster-decomposition, thermodynamic-limit, continuum, and general thermal-clustering readings are not audited as closed. The runner's E1-E4 PASS lines remain representative finite 1D free-fermion computations and are not promoted to proof of the theorem.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 263,
+    "critical": 262,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -52,32 +52,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "claim_scope": "Bounded finite-block scope: L1 Lieb-Robinson commutator bound, L3 lattice light cone, L4 finite canonical-normalized local-term norm bound for finite-range Cl(3) interactions, and L2 only as finite-Lambda temporal transfer-matrix clustering through the retained_bounded Delta_T/bridge inputs on the selected Wilson-plus-staggered surface; no spatial, thermodynamic-limit, continuum, or unconditional thermal clustering is audited as closed.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-        "strong_cp_theta_zero_note"
-      ],
-      "direct_in_degree": 16,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.776,
-      "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
-      "transitive_descendants": 876
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -38409,6 +38383,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 67,
-  "total_pending": 1283
+  "ready_count": 66,
+  "total_pending": 1282
 }

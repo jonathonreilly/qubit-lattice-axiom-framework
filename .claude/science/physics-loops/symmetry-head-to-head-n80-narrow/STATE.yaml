@@ -17,6 +17,6 @@ files_touched:
 open_imports: []
 open_scope_exclusions:
   - dense Z2 x Z2 N=100/120 range ranking
-pr_status: pending
-next_exact_action: run audit pipeline and open review PR
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1928
+next_exact_action: monitor audit-lane result, then continue campaign
 stop_condition: PR opened and verified, then continue campaign

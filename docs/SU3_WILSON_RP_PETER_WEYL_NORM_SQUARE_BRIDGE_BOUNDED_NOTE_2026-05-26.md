@@ -148,6 +148,50 @@ framework's SU(3) substrate; they are not load-bearing as separate
 imports. The numerical Haar integration that verifies (B2) is a
 runner-side check, not a dependency.
 
+## Historical provenance (cited prior art, NOT load-bearing imports)
+
+The Peter-Weyl norm-square structure for reflection positivity of lattice
+gauge theories was developed in the late-1970s lattice-gauge literature:
+
+- **Osterwalder, Seiler** (1978), "Gauge field theories on a lattice",
+  *Annals of Physics* **110**, 440–471.
+  Established reflection positivity for compact-group lattice gauge
+  theories via character-expansion + L²(G, Haar) norm-square at the
+  reflection-plane boundary. The pattern formalized as "Osterwalder-
+  Seiler reflection positivity" for non-Abelian gauge.
+- **Lüscher** (1977), "Construction of a self-adjoint, strictly positive
+  transfer matrix for Euclidean lattice gauge theories",
+  *Communications in Mathematical Physics* **54**, 283–292.
+  Earlier construction of the positive transfer matrix from
+  reflection-positive lattice action; the Wilson plaquette case is a
+  special case.
+- **Wilson** (1974), "Confinement of quarks", *Physical Review D*
+  **10**, 2445.
+  Introduced the Wilson plaquette gauge action `S_G = -(β/N_c) Σ_P Re tr(U_P)`
+  that this bridge analyzes; positivity of `c_λ(β)` for compact groups
+  was anticipated in the original paper's strong-coupling expansion.
+
+**These references are cited as historical prior art / provenance only.**
+This bridge does **not** import any theorem, normalization, lemma, or
+numerical value from the cited papers. The derivation in steps (B1)–(B7)
+and the runner's verifications proceed entirely on the framework's own
+retained substrate:
+
+- Compact SU(3) gauge structure (retained, `graph_first_su3_integration_note`);
+- Wilson plaquette action (framework primitive);
+- The abstract symmetric-involution norm-square theorem (G1)–(G3) (cited
+  retained one-hop authority `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`);
+- Standard Peter-Weyl decomposition of L²(SU(3), Haar) — compact-group
+  representation theory internal to the SU(3) substrate.
+
+The cited papers worked in greater generality (any compact gauge group,
+generic lattice geometry); this bridge specializes the argument to the
+framework's specific SU(3) Wilson plaquette + temporal-link-reflection
+surface that the parent
+`axiom_first_reflection_positivity_theorem_note_2026-04-29` requires.
+The cited references serve as auditable provenance for the structural
+ideas; closure of the bridge is the framework's own derivation.
+
 ## Boundaries
 
 This bridge does **not** close:

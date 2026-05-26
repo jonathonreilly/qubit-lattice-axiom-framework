@@ -39571,15 +39571,15 @@
     },
     "action_normalization_note": {
       "claim_id": "action_normalization_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (explicit-premises conditional algebraic claim; not a c-fixing first-principles theorem)",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "24f687773793ee51f0a40db75c676001d0f7d6ae9bd332797f383cd340e1fff3",
+      "note_hash": "9e9bd9e58895058f580ee1a190969d79ffbcc26058ea45ca2c62f258d7bc0700",
       "path": "docs/ACTION_NORMALIZATION_NOTE.md",
       "runner_path": "scripts/frontier_action_normalization.py",
-      "title": "Action Normalization: Convention-Locked Coupling Coefficient \u2014 Explicit-Premises Conditional Claim (Binding)"
+      "title": "Action Normalization Convention-Free Selection No-Go"
     },
     "action_power_3d_gravity_sign_closure_note": {
       "claim_id": "action_power_3d_gravity_sign_closure_note",
@@ -85483,19 +85483,19 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 588,
       "decoration": 1,
       "meta": 191,
-      "no_go": 72,
+      "no_go": 73,
       "none": 1464,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1015,
       "decoration": 1,
       "meta": 191,
-      "no_go": 175,
+      "no_go": 176,
       "none": 434,
       "open_gate": 125,
       "positive_theorem": 596

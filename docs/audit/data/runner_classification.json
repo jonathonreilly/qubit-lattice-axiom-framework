@@ -241,15 +241,15 @@
       "runner": "scripts/action_geometry_bridge_probe.py"
     },
     "action_normalization_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 0,
-        "B": 0,
+        "A": 1,
+        "B": 4,
         "C": 0,
-        "D": 1
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/frontier_action_normalization.py"
     },
     "action_power_3d_gravity_sign_closure_note": {
@@ -30703,18 +30703,18 @@
       "exists": true
     },
     "scripts/frontier_action_normalization.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "action_normalization_note"
       ],
       "counts": {
-        "A": 0,
-        "B": 0,
+        "A": 1,
+        "B": 4,
         "C": 0,
-        "D": 1
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_affine_imaginary_slot_invariance_narrow.py": {
@@ -55196,16 +55196,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 315,
+    "decoration_candidates": 316,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
-      "D": 299,
+      "D": 298,
       "none": 439
     },
     "runners_classified": 1982,
     "runners_with_C": 969,
-    "runners_with_D": 583
+    "runners_with_D": 582
   }
 }

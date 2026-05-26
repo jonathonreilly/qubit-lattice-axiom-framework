@@ -1,0 +1,54 @@
+[PASS] [A] note contains: **Claim type:** no_go
+[PASS] [A] note contains: convention-free selection
+[PASS] [A] note contains: does not select `c` convention-free
+[PASS] [A] note contains: A specific value of `c` appears only after choosing
+[PASS] [A] note contains: This row only records that the current finite runner packet does not make that choice
+[PASS] [A] note contains: any new axiom or audit verdict
+[PASS] [A] note omits stale phrase: bounded conditional claim
+[PASS] [A] note omits stale phrase: A1, A2, A3
+[PASS] [A] note omits stale phrase: admissions A1
+[PASS] [A] note omits stale phrase: light bending fixes
+[PASS] [A] note omits stale phrase: c = 1 is fixed by a convention-free observable
+[PASS] [A] note omits stale phrase: positive theorem
+ACTION NORMALIZATION CONVENTION-FREE SELECTION NO-GO
+==============================================================================
+[PASS] [A] cache contains: runner: scripts/frontier_action_normalization.py
+[PASS] [A] cache contains: exit_code: 0
+[PASS] [A] cache contains: status: ok
+[PASS] [A] cache contains: ACTION NORMALIZATION: CONVENTION-LOCKED COUPLING COEFFICIENT
+[PASS] [A] cache contains: PPN gamma=1 holds for any positive c
+[PASS] [A] cache contains: The earlier 'convention-free light bending' argument was incorrect.
+[PASS] [C] c scan contains all seven tested positive values ([0.1, 0.2, 0.5, 1.0, 2.0, 5.0, 10.0])
+[PASS] [C] self-consistency convergence does not select c ({0.1: 'Y', 0.2: 'Y', 0.5: 'Y', 1.0: 'Y', 2.0: 'Y', 5.0: 'Y', 10.0: 'Y'})
+[PASS] [C] beta is stable across tested c values ([1.2798, 1.2798, 1.2799, 1.2802, 1.2806, 1.2816, 1.2828])
+[PASS] [C] rescaling scan has five cG=1 rows ([(0.25, 4.0, 0.25, 1.0, 0.011728, 1.2801), (0.5, 2.0, 0.5, 1.0, 0.012162, 1.2802), (1.0, 1.0, 1.0, 1.0, 0.012252, 1.2802), (2.0, 0.5, 2.0, 1.0, 0.012262, 1.2802), (4.0, 0.25, 4.0, 1.0, 0.012267, 1.2802)])
+[PASS] [C] rescaling keeps c*phi_max approximately invariant (rel_spread=4.442e-02)
+[PASS] [C] massive-probe deflection rows parsed ([('0.5', '0.000290'), ('1.0', '0.000695'), ('2.0', '0.001752')])
+[PASS] [C] massive-probe deflection increases with c but is not a c-fixing test ([0.00029, 0.000695, 0.001752])
+
+ALGEBRAIC NO-GO CHECKS
+==============================================================================
+[PASS] [A] PPN gamma=1 readout is algebraically independent of c=0.5
+[PASS] [A] PPN gamma=1 readout is algebraically independent of c=1
+[PASS] [A] PPN gamma=1 readout is algebraically independent of c=2
+[PASS] [A] PPN gamma=1 readout is algebraically independent of c=5
+[PASS] [A] rescaling leaves c*G fixed for a=0.25
+[PASS] [A] rescaling leaves c*G fixed for a=0.5
+[PASS] [A] rescaling leaves c*G fixed for a=2
+[PASS] [A] rescaling leaves c*G fixed for a=4
+[PASS] [A] c=1 and c=2 are convention representatives, not simultaneous convention-free selections
+
+AUDIT METADATA
+==============================================================================
+[PASS] [M] claim type is no_go (no_go)
+[PASS] [M] audit status reset for re-audit (unaudited)
+[PASS] [M] effective status reset for re-audit (unaudited)
+[PASS] [M] runner path is registered (scripts/frontier_action_normalization.py)
+[PASS] [M] direct dependency list is empty ([])
+[PASS] [M] helper runner paths are empty ([])
+[PASS] [M] open dependency paths are empty ([])
+[PASS] [M] queue entry is ready ({'audit_independence_required': 'fresh_context_or_stronger', 'audit_status': 'unaudited', 'blocker': None, 'claim_id': 'action_normalization_note', 'claim_scope': None, 'claim_type': 'no_go', 'claim_type_provenance': 'author_hint', 'criticality': 'high', 'criticality_rank': 2, 'cross_confirmation_status': None, 'deps': [], 'direct_in_degree': 5, 'effective_status': 'unaudited', 'helper_runner_paths': [], 'load_bearing_score': 8.522, 'note_path': 'docs/ACTION_NORMALIZATION_NOTE.md', 'queue_reason': 'unaudited', 'ready': True, 'runner_path': 'scripts/frontier_action_normalization.py', 'transitive_descendants': 64})
+
+SUMMARY
+==============================================================================
+PASS=42 FAIL=0

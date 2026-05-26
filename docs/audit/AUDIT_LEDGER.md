@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1063 |
+| `bounded_theorem` | 1062 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 255 |
 | `open_gate` | 110 |
-| `positive_theorem` | 719 |
+| `positive_theorem` | 720 |
 
 | criticality | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2003
-- runners with (C) first-principles compute hits: 973
+- runners classified: 2006
+- runners with (C) first-principles compute hits: 976
 - runners with (D) external comparator hits: 583
 - decoration candidates (no C, no D): 334
 

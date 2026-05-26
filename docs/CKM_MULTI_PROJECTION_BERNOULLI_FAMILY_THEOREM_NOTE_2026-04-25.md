@@ -1,43 +1,45 @@
 # Multi-Projection Bernoulli Family at N_pair, N_color, N_quark
 
 **Date:** 2026-04-25
+**Claim type:** positive_theorem
 
-**Status:** proposed_retained CKM-structure theorem on current `main`. This note
-generalizes the Bernoulli-form ratios `(N-1)/N` and `(N-1)/N²` from a single
-N-level to a **multi-projection family** evaluated at all three
-structural-integer levels of the framework: `N_pair = 2`, `N_color = 3`,
-`N_quark = 6`.
+**Status:** source-side CKM-structure theorem proposal; independent audit lane
+only. This note applies the Bernoulli-form ratios `(N-1)/N` and `(N-1)/N²`
+directly to the framework's structural-integer levels `N_pair = 2`,
+`N_color = 3`, and `N_quark = 6`. Bernoulli terminology is parallel
+mathematical context for these exact rational identities, not an imported
+authority replacing the proof below.
 
 The result is a **six-element Bernoulli family** `{M(N), V(N) for N in
 {N_pair, N_color, N_quark}}` with **universal Bernoulli relation**
 `V(N) = M(N)/N` at every level, plus **cross-level decomposition theorems**
-that express retained CKM quantities `rho` and `A^2 rho` as exact products of
+that express upstream CKM quantities `rho` and `A^2 rho` as exact products of
 multi-projection Bernoulli pieces.
 
-It pushes the retained CKM structure further than the prior support-side
+It pushes the CKM structural package further than the prior support-side
 Bernoulli/ninth-family notes by:
 
 1. Lifting the Bernoulli structure from a single N-level to **three N-levels
    simultaneously**, exhibiting a 6-element family.
 2. Establishing the **universal Bernoulli relation** V(N) = M(N)/N as a
    structural fact at all three levels.
-3. Deriving **cross-level decomposition theorems** D1, D2 expressing retained
+3. Deriving **cross-level decomposition theorems** D1, D2 expressing upstream
    `rho` and `A^2 rho` as products of Bernoulli pieces from different levels.
 4. Packaging those decompositions as a dual pair with exact pair/color and
    mean/variance role exchange.
 
-The headline identities, all from retained CKM inputs:
+The headline identities, all from the upstream CKM structural packet:
 
 ```text
 Mean form M(N) = (N-1)/N at three structural levels:
   M(N_pair)  =  1/2     =  1/N_pair                     [framework-native]
-  M(N_color) =  2/3     =  A^2                          [retained W2]
-  M(N_quark) =  5/6     =  1 - rho  =  sin^2(gamma_bar) [retained CP-phase + N4]
+  M(N_color) =  2/3     =  A^2                          [W2 structural input]
+  M(N_quark) =  5/6     =  1 - rho  =  sin^2(gamma_bar) [CP-phase + N4 inputs]
 
 Variance form V(N) = (N-1)/N^2 at three structural levels:
   V(N_pair)  =  1/4     =  1/N_pair^2                   [framework-native, NEW reading]
   V(N_color) =  2/9     =  (N_color-1)/N_color^2        [from prior 2/9 branches]
-  V(N_quark) =  5/36    =  eta^2                        [retained Thales]
+  V(N_quark) =  5/36    =  eta^2                        [Thales structural input]
 
 Universal Bernoulli relation:
   V(N) = M(N) / N    for all N in {N_pair, N_color, N_quark}    [EXACT]
@@ -52,8 +54,8 @@ Cross-level decompositions (NEW):
 
 ## Statement
 
-On the retained CKM atlas + Wolfenstein structural surface, with retained
-N_pair = 2, N_color = 3, N_quark = N_pair × N_color = 6:
+On the CKM atlas + Wolfenstein structural surface, with
+`N_pair = 2`, `N_color = 3`, and `N_quark = N_pair × N_color = 6`:
 
 ```text
 (B1)  M(N_pair)  =  (N_pair - 1) / N_pair  =  1/2
@@ -79,15 +81,17 @@ N_pair = 2, N_color = 3, N_quark = N_pair × N_color = 6:
                =  1/N_color^2  =  1/9
 ```
 
-The theorem's new content is the **packaging** of these retained constituents as
-one six-element Bernoulli family, together with the universal relation `(MV1)`
-and the cross-level decompositions `(D1)` and `(D2)`. Individual entries such
-as `A^2 = 2/3`, `1 - rho = 5/6`, and `eta^2 = 5/36` were already present on
-current `main`.
+The theorem's new content is the framework-applied packaging of these
+constituents as one six-element Bernoulli family, together with the universal
+relation `(MV1)` and the cross-level decompositions `(D1)` and `(D2)`.
+Individual entries such as `A^2 = 2/3`, `1 - rho = 5/6`, and `eta^2 = 5/36`
+are upstream CKM structural inputs and are not re-derived in this row.
 
-## Retained Inputs
+## Upstream CKM Structural Inputs
 
-All inputs below are retained on current `main`:
+This row consumes the following upstream CKM structural inputs. Their audit
+status is set independently by the audit ledger; this row proves only the
+Bernoulli-family algebra conditional on those structural inputs.
 
 | Input | Authority on `main` |
 | --- | --- |
@@ -97,9 +101,9 @@ All inputs below are retained on current `main`:
 | `N_pair = 2`, `N_color = 3`, `N_quark = N_pair × N_color = 6` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) |
 | `tan(γ̄) = √5` PROTECTED ⇒ `sin²(γ̄) = 5/6 = 1 - ρ` (= M(N_quark)) | [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md), N4 |
 
-No PDG observable enters as a derivation input. No SUPPORT-tier or open inputs
-(cross-sector Koide bridges, bare-coupling support notes, or open quark/lepton
-bridges) are used as derivation inputs.
+No PDG observable enters as a derivation input. No cross-sector Koide bridge,
+bare-coupling support note, or open quark/lepton bridge is used as a
+derivation input.
 
 ## Derivation
 
@@ -119,7 +123,7 @@ M(N_pair)  =  (N_pair - 1) / N_pair  =  1/N_pair  =  1/2
 V(N_pair)  =  (N_pair - 1) / N_pair^2  =  1/N_pair^2  =  1/4
 ```
 
-These are derived directly from the retained N_pair = 2.
+These are derived directly from `N_pair = 2`.
 
 ### B2, B5: Color-projection (N = N_color = 3)
 
@@ -128,7 +132,7 @@ M(N_color)  =  (N_color - 1) / N_color  =  2/3
 V(N_color)  =  (N_color - 1) / N_color^2  =  2/9
 ```
 
-With retained `N_pair = 2` and `N_color = 3`, `M(N_color)` matches retained W2
+With `N_pair = 2` and `N_color = 3`, `M(N_color)` matches W2
 (`A² = N_pair/N_color = 2/3`) and `V(N_color) = 2/9` is its corresponding
 Bernoulli variance form.
 
@@ -139,7 +143,7 @@ M(N_quark)  =  (N_quark - 1) / N_quark  =  5/6  =  1 - rho
 V(N_quark)  =  (N_quark - 1) / N_quark^2  =  5/36  =  eta^2  (Thales)
 ```
 
-These match retained CP-phase identities directly (1 − ρ and η² = ρ(1 − ρ)).
+These match the CP-phase identities directly (1 − ρ and η² = ρ(1 − ρ)).
 
 ### MV1: Universal Bernoulli relation V(N) = M(N) / N
 
@@ -150,7 +154,7 @@ V(N)  =  (N - 1) / N^2  =  ((N - 1) / N) * (1 / N)  =  M(N) / N.
 ```
 
 This is a basic algebraic fact, but its appearance at THREE different N-levels
-in the framework, each with a retained-derivable interpretation, is the
+in the framework, each with a structural interpretation, is the
 structural content. Concretely:
 
 ```text
@@ -179,7 +183,7 @@ In framework with N_pair = 2, N_color = 3:
 V(N_pair) * M(N_color)  =  (1/4) * (2/3)  =  2/12  =  1/6  =  rho.   ✓
 ```
 
-This is a NEW cross-level decomposition theorem. The retained ρ = 1/N_quark is
+This is a NEW cross-level decomposition theorem. The identity `ρ = 1/N_quark` is
 expressed as a product of multi-projection Bernoulli pieces.
 
 ### D2: NEW cross-level decomposition for `A^2 rho`
@@ -204,7 +208,7 @@ A^2 rho  =  rho * A^2  =  (1/N_quark) * (N_pair/N_color)
         =  1/9.
 ```
 
-So `A^2 rho = V(N_color) × M(N_pair) = 1/9`. The retained product `A^2 rho`
+So `A^2 rho = V(N_color) × M(N_pair) = 1/9`. The product `A^2 rho`
 factors EXACTLY as the **color-level variance** times the **pair-level mean**.
 
 ### Symmetry observation
@@ -239,14 +243,14 @@ All identities verified to **exact Fraction arithmetic**:
 
 ### What this lets the framework package that it did not before
 
-Previously the framework had retained Bernoulli-form ratios at single N-levels
+Previously the framework had Bernoulli-form ratios at single N-levels
 (N_color via W2, N_quark via Thales). This note unifies the Bernoulli structure
 across **three N-levels simultaneously**, deriving:
 
 - A **complete six-element family** {M(N), V(N) for N ∈ {N_pair, N_color, N_quark}}
-  from retained CKM inputs.
+  from the upstream CKM structural inputs.
 - The **universal Bernoulli relation V(N) = M(N)/N** at all three levels.
-- **Cross-level decomposition theorems** D1 and D2 expressing retained `rho`
+- **Cross-level decomposition theorems** D1 and D2 expressing structural `rho`
   and `A^2 rho` as products of Bernoulli pieces at different levels.
 
 ### The multi-projection structure is the central new content
@@ -260,19 +264,20 @@ Both perspectives are complementary:
 - Multi-projection family: fixes Bernoulli form, evaluates at three structural
   levels.
 
-The framework supports BOTH structural decompositions of retained CKM ratios.
+The framework supports BOTH structural decompositions of these CKM ratios.
 
 ### Cross-level decompositions D1, D2 are sharp structural identities
 
-D1: `ρ = V(N_pair) × M(N_color)` is a clean factorization of the retained
-CP-phase apex coordinate. The retained ρ = 1/N_quark is expressed as a product
-of multi-projection Bernoulli quantities at different levels.
+D1: `ρ = V(N_pair) × M(N_color)` is a clean factorization of the upstream
+CP-phase apex coordinate. The structural identity `ρ = 1/N_quark` is
+expressed as a product of multi-projection Bernoulli quantities at different
+levels.
 
-D2: `A^2 rho = V(N_color) × M(N_pair)` is the dual factorization. The retained
-product `A^2 rho = 1/N_color²` is expressed as the color-variance times the
-pair-mean.
+D2: `A^2 rho = V(N_color) × M(N_pair)` is the dual factorization. The
+structural product `A^2 rho = 1/N_color²` is expressed as the color-variance
+times the pair-mean.
 
-These factorizations illuminate **what** the retained `rho` and `A^2 rho` mean
+These factorizations illuminate **what** `rho` and `A^2 rho` mean
 structurally: they are products of Bernoulli pieces from different N-levels,
 with the levels swapping roles between D1 and D2.
 
@@ -282,7 +287,7 @@ The universal Bernoulli relation V(N) = M(N)/N at all three levels, plus the
 cross-level decompositions D1 and D2, makes a sharp claim:
 
 ```text
-The framework's retained quantities (rho, A^2 rho) factor EXACTLY as products of
+The framework's structural quantities (rho, A^2 rho) factor EXACTLY as products of
 multi-projection Bernoulli pieces, with the levels (N_pair, N_color)
 swapping roles between D1 and D2.
 ```
@@ -294,24 +299,24 @@ break (or shift to different Bernoulli combinations).
 
 Three layers of new content beyond prior branches:
 
-1. **Multi-projection Bernoulli family** — first retained CKM theorem packaging
+1. **Multi-projection Bernoulli family** — CKM theorem proposal packaging
    the {M, V} × {N_pair, N_color, N_quark} structure as a unified 6-element
    object with universal relation V(N) = M(N)/N at all three levels.
 
 2. **Cross-level decomposition theorems D1, D2** — NEW factorizations of
-   retained `rho` and `A^2 rho` as products of Bernoulli pieces at different
+   structural `rho` and `A^2 rho` as products of Bernoulli pieces at different
    levels.
    The pair-color swap symmetry between D1 and D2 is a sharp structural
    duality.
 
 3. **Exact dual product law** — the theorem packages
    `rho = V(N_pair) M(N_color)` and `A^2 rho = V(N_color) M(N_pair)` as a dual
-   pair of exact retained CKM identities.
+   pair of exact CKM structural identities.
 
 ## What This Claims
 
 - `(B1)`-`(B6)`: 6-element Bernoulli family at three N-levels, each derivable
-  from retained CKM inputs.
+  from upstream CKM structural inputs.
 - `(MV1)`: NEW universal Bernoulli relation V(N) = M(N)/N at all three levels.
 - `(D1)`: NEW cross-level decomposition `ρ = V(N_pair) × M(N_color)`.
 - `(D2)`: NEW cross-level decomposition `A^2 rho = V(N_color) × M(N_pair)`.
@@ -335,7 +340,7 @@ positive-integer symbols `(p, c, q)` with the framework constraint
 asserting the residual equals `0`. The cited atlas-side inputs
 (`A^2 = N_pair/N_color`, `rho = 1/N_quark`,
 `eta^2 = (N_quark - 1)/N_quark^2`, cited `N_pair = 2`,
-`N_color = 3`) are imported from upstream authority notes and are not
+`N_color = 3`) are cited from upstream CKM notes and are not
 re-derived here.
 
 | Identity | Symbolic form | Verification |
@@ -357,8 +362,9 @@ shows `A^2 rho = 1/c^2 = 1/4`, not `1/9`, confirming that the cited
 ordering `(N_pair, N_color) = (2, 3)` is load-bearing for the named
 `(D2) = 1/9` value.
 
-The structural relations are therefore exact-symbolic over the imported
-atlas-side inputs and the framework counts. No floating-point pin is
+The structural relations are therefore exact-symbolic over the upstream
+atlas-side inputs and the framework counts. No textbook Bernoulli-polynomial
+identity, floating-point pin, or external comparator is
 required for any identity in this note (the family is purely rational
 under exact `sympy` arithmetic).
 
@@ -387,6 +393,6 @@ The runner uses Python's `fractions.Fraction` for exact-rational arithmetic.
   -- cited `N_pair = 2`, `N_color = 3`, `N_quark = N_pair × N_color = 6`.
 - [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md)
   -- cited N4 protection: `tan(γ̄) = √5` ⇒ `sin²(γ̄) = 5/6 = M(N_quark)`.
-- [`CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md`](CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md)
-  and [`CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md`](CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md)
+- `CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md`
+  and `CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md`
   -- related CKM-side support notes; not needed as derivation inputs here.

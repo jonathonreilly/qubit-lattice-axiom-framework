@@ -1,0 +1,28 @@
+loop: textbook-import-retirement
+branch: physics-loop/textbook-import-retire-20260526
+base: origin/main
+started: 2026-05-26
+mode: science_repair
+target_status: best-honest-status
+active_route: "Retire import-only framing where a framework-local proof/certificate already exists."
+actual_current_surface_status: open
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+  - docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+  - docs/CKM_MULTI_PROJECTION_BERNOULLI_FAMILY_THEOREM_NOTE_2026-04-25.md
+  - docs/PRIMITIVE_P_LH_NCG_NATIVE_NOTE_2026-05-10_pPlh_ncg_native.md
+  - docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md
+  - docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE_NOTE.md
+  - docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md
+  - scripts/frontier_ckm_multi_projection_bernoulli_family.py
+  - scripts/audit_companion_ckm_multi_projection_bernoulli_family_exact.py
+  - scripts/cl3_primitive_p_lh_ncg_native_2026_05_10_pPlh_ncg_native.py
+next_exact_action: "Run changed runners and audit pipeline checks, then open review PR."
+remaining_blockers:
+  - "Mermin-Wagner/Hohenberg/Coleman wrapper still bundles full external theorems; needs a separate finite-lattice/Bogoliubov theorem split or authority packet."
+  - "Topological-instanton wrapper still bundles Bogomolny/BPST, Atiyah-Singer, Luescher, and twisted-T4 results; needs separate theorem runners or retained authority packets."
+  - "Dimension upper-bound wrapper still depends on general-d continuum potential/atomic-stability bridges."
+  - "Newton-Poisson to flat Friedmann wrapper mixes Newtonian shell derivation and radiation/GR use; needs a careful separate theorem before import retirement."
+  - "One-parameter shell-law helper umbrella is helper registration, not a textbook-math import retirement target."

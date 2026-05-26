@@ -23088,6 +23088,42 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_universal_gr_tensor_quotient_uniqueness.py"
     },
+    "universal_qg_canonical_textbook_continuum_gr_closure_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 15,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_qg_canonical_textbook_continuum_gr_closure.py"
+    },
+    "universal_qg_canonical_textbook_geometric_action_equivalence_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_qg_canonical_textbook_geometric_action_equivalence.py"
+    },
+    "universal_qg_canonical_textbook_weak_measure_equivalence_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 16,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py"
+    },
     "universal_qg_optional_textbook_comparison_note": {
       "assert_count": 0,
       "counts": {
@@ -48442,6 +48478,51 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_universal_qg_canonical_textbook_continuum_gr_closure.py": {
+      "assert_count": 1,
+      "claims": [
+        "universal_qg_canonical_textbook_continuum_gr_closure_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 15,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_universal_qg_canonical_textbook_geometric_action_equivalence.py": {
+      "assert_count": 1,
+      "claims": [
+        "universal_qg_canonical_textbook_geometric_action_equivalence_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py": {
+      "assert_count": 1,
+      "claims": [
+        "universal_qg_canonical_textbook_weak_measure_equivalence_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 16,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_universal_theta_induced_edm_vanishing.py": {
       "assert_count": 1,
       "claims": [
@@ -55676,12 +55757,12 @@
     "dominant_class_distribution": {
       "A": 236,
       "B": 280,
-      "C": 750,
+      "C": 753,
       "D": 299,
       "none": 438
     },
-    "runners_classified": 2003,
-    "runners_with_C": 973,
+    "runners_classified": 2006,
+    "runners_with_C": 976,
     "runners_with_D": 583
   }
 }

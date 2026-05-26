@@ -1,0 +1,21 @@
+loop_slug: yt-connected-source-augmentation
+mode: run
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: connected-source augmentation-ideal selector
+hard_residual: "derive kappa_Y=0 without H_unit/Ward/observed target imports"
+files_touched:
+  - docs/YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md
+  - scripts/frontier_yt_connected_source_augmentation_ideal_selector.py
+  - outputs/yt_connected_source_augmentation_ideal_selector_2026-05-26.json
+open_imports:
+  - same-surface normalized connected source/action authority for physical Y_T
+  - canonical O_H
+  - scalar LSZ normalization
+  - strict pole rows or W/Z response after normalization is fixed
+review_findings: []
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1970"
+next_exact_action: "After the Y_T source-action naming cleanup lands, retarget or rebase this stacked bounded-support PR onto main."
+stop_condition: "Bounded-support review PR opened and verified."

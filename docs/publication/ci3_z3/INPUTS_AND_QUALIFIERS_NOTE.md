@@ -14,13 +14,16 @@ This note is the shortest package-level answer to:
 
 The accepted package statement is:
 
-> We take `Cl(3)` on `Z^3` as the physical theory.
+> We take a qubit at every site of `Z^3` as the physical axiom surface.
 
 The operational memo
-[MINIMAL_AXIOMS_2026-04-11.md](../../MINIMAL_AXIOMS_2026-04-11.md)
-records the accepted implementation boundary used to audit the current package.
+[MINIMAL_AXIOMS_2026-05-20.md](../../MINIMAL_AXIOMS_2026-05-20.md)
+records the accepted implementation boundary used to audit the current package:
+A1 is the per-site qubit local algebra, and A2 is the cubic lattice `Z^3`.
+The equivalent `Cl(3,0)` reading is the local-algebra language, not a separate
+title-level primitive.
 
-The one-axiom notes
+The optional compression notes
 
 - [SINGLE_AXIOM_INFORMATION_NOTE.md](../../SINGLE_AXIOM_INFORMATION_NOTE.md)
 - [SINGLE_AXIOM_HILBERT_NOTE.md](../../SINGLE_AXIOM_HILBERT_NOTE.md)

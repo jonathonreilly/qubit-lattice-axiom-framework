@@ -15,7 +15,8 @@ For reproduction, use [REPRODUCE.md](./REPRODUCE.md).
 ## Framework and Scope
 
 - working framework:
-  `Cl(3)` on `Z^3` as the physical theory
+  a qubit at every site of `Z^3` as the physical axiom surface, with
+  `Cl(3,0)` as the equivalent per-site local-algebra language
 - broad package shape:
   exact spacetime/gravity backbone, exact gauge/matter backbone, retained
   quantitative EW/QCD/flavor package, bounded companion phenomenology, one

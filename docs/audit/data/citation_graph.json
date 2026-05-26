@@ -24294,7 +24294,7 @@
     },
     {
       "from": "start_here",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "start_here",
@@ -29818,7 +29818,7 @@
     },
     {
       "from": "publication.ci3_z3.claims_table",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.claims_table",
@@ -30342,7 +30342,7 @@
     },
     {
       "from": "publication.ci3_z3.derivation_atlas",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.derivation_atlas",
@@ -32702,7 +32702,7 @@
     },
     {
       "from": "publication.ci3_z3.derivation_validation_map",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.derivation_validation_map",
@@ -33790,7 +33790,7 @@
     },
     {
       "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.external_reviewer_guide",
@@ -34166,7 +34166,7 @@
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
@@ -35094,7 +35094,7 @@
     },
     {
       "from": "publication.ci3_z3.inputs_and_qualifiers_note",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.inputs_and_qualifiers_note",
@@ -35390,7 +35390,7 @@
     },
     {
       "from": "publication.ci3_z3.publication_matrix",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.publication_matrix",
@@ -36670,7 +36670,7 @@
     },
     {
       "from": "publication.ci3_z3.readme",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.readme",
@@ -36714,7 +36714,7 @@
     },
     {
       "from": "publication.ci3_z3.results_index",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.results_index",
@@ -70021,10 +70021,10 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "cc773dc45bb520a3d7f9fa31b4a1f13c3869bbca32fde7817f5f03b16f832924",
+      "note_hash": "77f8d8ab2ce6526c4f0062d4e7ed5e32239f87d26059a7b01b5e695f0ec7293a",
       "path": "docs/publication/ci3_z3/ARXIV_DRAFT.md",
       "runner_path": null,
-      "title": "Physics from $Cl(3)$ on $Z^3$:"
+      "title": "Qubit-Lattice Axiom Framework:"
     },
     "publication.ci3_z3.arxiv_package": {
       "claim_id": "publication.ci3_z3.arxiv_package",
@@ -70068,7 +70068,7 @@
       "deps": [
         "publication.ci3_z3.quantitative_summary_table",
         "publication.ci3_z3.arxiv_draft",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
         "newton_law_derived_note",
@@ -70198,7 +70198,7 @@
         "publication.ci3_z3.derivation_validation_map"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4e26ff5256e01ae87b66fee68851e6fbb96ea2cfc666f75d916e82e1e725aef0",
+      "note_hash": "2a642311e324e8c3a0db969b4677976118c0333cd73eecfd29ae0a1add401063",
       "path": "docs/publication/ci3_z3/CLAIMS_TABLE.md",
       "runner_path": null,
       "title": "Manuscript Claims Surface"
@@ -70212,7 +70212,7 @@
         "publication.ci3_z3.usable_derived_values_index",
         "publication.ci3_z3.publication_matrix",
         "publication.ci3_z3.arxiv_draft",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "observable_principle_from_axiom_note",
         "single_axiom_hilbert_note",
         "single_axiom_information_note",
@@ -70800,7 +70800,7 @@
         "universal_qg_optional_textbook_comparison_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8ae0df48b4fab1fda993fe1a78c1a9ad95f98ca4b9b52fb06df3e44029d95d34",
+      "note_hash": "fc0d3f9e616dec43d0c871be1c1d332ae3aec78151e3d1b8e0191e4b4240643d",
       "path": "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
       "runner_path": null,
       "title": "Derivation Atlas"
@@ -70815,7 +70815,7 @@
         "publication.ci3_z3.publication_matrix",
         "publication.ci3_z3.quantitative_summary_table",
         "publication.ci3_z3.arxiv_draft",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
         "newton_law_derived_note",
@@ -71089,7 +71089,7 @@
         "teleportation_acceptance_suite_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6a4d734aee2054f011c763354be4a7e7a5a384056eb22e0e204745051c81d821",
+      "note_hash": "f22a65a2f93adcc17cf3d073ac46166bca55f27d9d8001e11c9b43cbd4e1af9b",
       "path": "docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md",
       "runner_path": null,
       "title": "Derivation / Validation Map"
@@ -71100,7 +71100,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "single_axiom_information_note",
         "single_axiom_hilbert_note",
         "continuum_identification_note",
@@ -71171,7 +71171,7 @@
         "publication.ci3_z3.results_index"
       ],
       "helper_runner_paths": [],
-      "note_hash": "af5b2e590b850a4988c8a7a04117cf50d7cde79585c4567478c427692ad0d43a",
+      "note_hash": "66a73af2c635bccb62ec639c84e05f4d54657ea4fc055f43be0abda3fe740235",
       "path": "docs/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md",
       "runner_path": null,
       "title": "External Reviewer Guide"
@@ -71185,7 +71185,7 @@
         "publication.ci3_z3.figure_plan"
       ],
       "helper_runner_paths": [],
-      "note_hash": "86ad9e8ee0f07a0507aa90a04a93b90491ae02435eb7b723d4a47b8482d4f37e",
+      "note_hash": "94a2a0ab8f462a23915e28f98e106c2c4d298771f98dcdec419d67b435945c40",
       "path": "docs/publication/ci3_z3/FIGURE_CAPTIONS.md",
       "runner_path": null,
       "title": "Figure Captions"
@@ -71233,7 +71233,7 @@
         "publication.ci3_z3.claims_table",
         "publication.ci3_z3.derivation_validation_map",
         "publication.ci3_z3.arxiv_draft",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "anomaly_forces_time_theorem",
         "s3_general_r_derivation_note",
         "s3_cap_uniqueness_note",
@@ -71453,7 +71453,7 @@
         "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5422fbab0eaf45461d5bc25e674d7f49bda5657906ce8dcba50b0cb400dab71b",
+      "note_hash": "f13b2e6b3f51faf5a1e92e244d5e76fa98c8d4f99f01e5f6337e9a2556cb7e02",
       "path": "docs/publication/ci3_z3/FULL_CLAIM_LEDGER.md",
       "runner_path": null,
       "title": "Full Claim Ledger"
@@ -71491,7 +71491,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "single_axiom_information_note",
         "single_axiom_hilbert_note",
         "planck_scale_lane_status_note_2026-04-23",
@@ -71519,7 +71519,7 @@
         "publication.ci3_z3.prediction_surface_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5a68d152e5c468b861c7e945b00c74cb3de6e2dec677bc8648dcd8272f033b5e",
+      "note_hash": "f82594083b6f3549dc84d4bf412d3961a9abef82685de88dd2697b9a1cd480f1",
       "path": "docs/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md",
       "runner_path": null,
       "title": "Inputs And Qualifiers"
@@ -71604,7 +71604,7 @@
       "claim_type_seed_hint": null,
       "deps": [
         "publication.ci3_z3.arxiv_draft",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
         "newton_law_derived_note",
@@ -71827,7 +71827,7 @@
         "koide_reviewer_stress_test_note_2026-04-21"
       ],
       "helper_runner_paths": [],
-      "note_hash": "25f89c16a55a8e59c3ff116590f4366fa32e00b4227eea114de0a3ce55c9cbf8",
+      "note_hash": "59a7afd2f35d5bf3962e275c874cc4e05889bd4e9a4edeb755d7318e8c42524f",
       "path": "docs/publication/ci3_z3/PUBLICATION_MATRIX.md",
       "runner_path": null,
       "title": "Publication Matrix"
@@ -71950,15 +71950,15 @@
         "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
         "publication.ci3_z3.release_environment",
         "publication.ci3_z3.reproducibility_freeze_2026-04-14",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "single_axiom_information_note",
         "single_axiom_hilbert_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5f22f56ac05133b44082d724f95d372e5c8bb1dda14313d906e470d6fdb70d0f",
+      "note_hash": "9c24433c52bc2a9949eb7937579f0cea2500560c5cb63531ce73e83dd3adc81f",
       "path": "docs/publication/ci3_z3/README.md",
       "runner_path": null,
-      "title": "Cl(3) / Z^3 Publication Package"
+      "title": "Qubit-Lattice Axiom Framework Publication Package"
     },
     "publication.ci3_z3.release_environment": {
       "claim_id": "publication.ci3_z3.release_environment",
@@ -72011,7 +72011,7 @@
         "publication.ci3_z3.full_claim_ledger",
         "publication.ci3_z3.reproduce",
         "publication.ci3_z3.arxiv_draft",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
         "newton_law_derived_note",
@@ -72347,7 +72347,7 @@
         "ckm_thales_pinned_alpha_s_independent_ratios_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "853e6f23285504a9a0457f05692fddd030de19eca0b296641b2a85dc99e1373a",
+      "note_hash": "494ea72dd016444daa0864609ddb708ef35bbbeb1f9681542d684e063b97b557",
       "path": "docs/publication/ci3_z3/RESULTS_INDEX.md",
       "runner_path": null,
       "title": "Results Index"
@@ -72415,7 +72415,7 @@
         "publication.ci3_z3.derivation_atlas"
       ],
       "helper_runner_paths": [],
-      "note_hash": "89487391bf54d864ba5bf1aaf123e9e881005a03116b1748822f14d60124e6f1",
+      "note_hash": "ed5aed611bb9875c8a0d0235f23817e1958c70e33f7e2e754eab859b99bc5edb",
       "path": "docs/publication/ci3_z3/SCIENCE_MAP.md",
       "runner_path": null,
       "title": "Science Map"
@@ -77599,11 +77599,11 @@
         "publication.ci3_z3.publication_matrix",
         "publication.ci3_z3.full_claim_ledger",
         "publication.ci3_z3.results_index",
-        "minimal_axioms_2026-04-11",
+        "minimal_axioms",
         "single_axiom_information_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "61f30e80a3bdb8b6963ad8ce5f8995d778e62586126eb3631688f714b24d7b7f",
+      "note_hash": "60aff11c4b335db4e9d87ed089d248621983f29ae699b89ba71ee37e65a6eaaf",
       "path": "docs/START_HERE.md",
       "runner_path": null,
       "title": "Start Here"

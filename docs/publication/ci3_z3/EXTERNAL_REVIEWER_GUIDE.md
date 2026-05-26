@@ -16,8 +16,10 @@ The current package is:
 
 For framework scoping, keep two layers separate:
 
-- the accepted package statement is `Cl(3)` on `Z^3` as the physical theory
-- use [MINIMAL_AXIOMS_2026-04-11.md](../../MINIMAL_AXIOMS_2026-04-11.md) as
+- the accepted package statement is a qubit at every site of `Z^3` as the
+  physical axiom surface, with `Cl(3,0)` as the equivalent per-site
+  local-algebra language
+- use [MINIMAL_AXIOMS_2026-05-20.md](../../MINIMAL_AXIOMS_2026-05-20.md) as
   the package-boundary memo for the current scientific package
 - use [SINGLE_AXIOM_INFORMATION_NOTE.md](../../SINGLE_AXIOM_INFORMATION_NOTE.md)
   and
@@ -218,7 +220,7 @@ Current status from that stack:
   regulator-style family preserving both accepted `alpha_s(v)` and `v` is
   trivial at the canonical point; on that retained package contract the
   physical-lattice reading is the unique surviving interpretation, and on the
-  accepted one-axiom Hilbert/locality/information surface substrate physicality
+  accepted qubit-lattice Hilbert/locality/information surface substrate physicality
   is derived rather than left as a separate live premise
 - exact three-generation / flavor support packet now sits in the atlas on
   `main`: full BZ-corner site-phase / cube-shift bridge, exact

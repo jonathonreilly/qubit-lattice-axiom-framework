@@ -9,8 +9,9 @@ The current arXiv figure set now exists as live manuscript assets in
 
 ### Figure 1. Retained derivation backbone
 
-`Cl(3)` on `Z^3` is taken as the physical theory. On the retained surface, this
-single discrete framework yields weak-field gravity through the
+A qubit at every site of `Z^3` is taken as the physical axiom surface, with
+`Cl(3,0)` as the equivalent per-site local-algebra language. On the retained
+surface, this single discrete framework yields weak-field gravity through the
 Poisson/Newton chain together with weak-field WEP and time dilation, exact
 native `SU(2)`, graph-first structural `SU(3)`, anomaly-forced `3+1`, a
 retained `S^3` compactification / topology closure, a full-framework

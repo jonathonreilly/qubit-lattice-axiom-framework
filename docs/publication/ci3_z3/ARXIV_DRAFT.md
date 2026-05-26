@@ -1,4 +1,4 @@
-# Physics from $Cl(3)$ on $Z^3$:
+# Qubit-Lattice Axiom Framework:
 # discrete $3+1$ gravity, gauge structure, matter closure, and quantitative tests
 
 **Jonathon Reilly**
@@ -11,13 +11,14 @@ Keywords: discrete gravity, lattice gauge theory, Clifford algebra, CKM, strong 
 
 ## Abstract
 
-We ask whether $Cl(3)$ on the cubic lattice $Z^3$ can be treated as the
-physical theory rather than as a temporary regulator, and we retain only those
-rows that survive direct audit on that exact discrete surface. The retained
-core is already broad. On the gravity side, the framework yields Poisson/Newton
-weak-field gravity, a restricted strong-field closure on an exact finite-rank
-class, exact full discrete $3+1$ Einstein-Regge gravity on
-$PL\,S^3 \times \mathbb{R}$, and an exact quantum-gravity/continuum
+We ask how much physics follows from two primitive commitments: a qubit at
+every site and the cubic site set $Z^3$. The equivalent $Cl(3,0)$ local-algebra
+reading supplies the audit-stable algebraic language, but the public framework
+is the qubit-lattice axiom framework rather than a title-level assumption of
+$Cl(3)$. The retained core is already broad. On the gravity side, the framework
+yields Poisson/Newton weak-field gravity, a restricted strong-field closure on
+an exact finite-rank class, exact full discrete $3+1$ Einstein-Regge gravity
+on $PL\,S^3 \times \mathbb{R}$, and an exact quantum-gravity/continuum
 identification chain on one chosen canonical textbook target. On the gauge and
 matter side, the same framework carries exact native $SU(2)$, graph-first
 structural $SU(3)$, anomaly-forced $3+1$, retained three-generation matter
@@ -54,9 +55,11 @@ The central question of this paper is not whether a discrete framework can
 imitate isolated pieces of known physics, but whether one exact discrete
 surface can carry a nontrivial fraction of gravity, gauge structure, matter,
 and quantitative phenomenology without being treated as disposable
-scaffolding. We take that question literally. The framework is $Cl(3)$ on
-$Z^3$, treated as physical rather than as a regulator, and we retain only those
-rows that survive direct audit on that exact surface.
+scaffolding. We take that question literally. The framework has two primitives:
+a qubit at every lattice site and the cubic site set $Z^3$. The equivalent
+$Cl(3,0)$ local algebra is the audit-stable mathematical reading of the
+per-site qubit, and we retain only those rows that survive direct audit on that
+exact axiom surface.
 
 Ambitious unification programs often fail less because a local mechanism is
 missing than because claim boundaries dissolve: structural theorems, numerical
@@ -66,8 +69,9 @@ explicitly retained, bounded, or open.
 
 The framework sentence is therefore simple:
 
-> We take $Cl(3)$ on $Z^3$ as the physical theory. Everything else in this
-> paper is either retained, bounded, or explicitly open.
+> We take a qubit at every site of $Z^3$ as the physical axiom surface.
+> Everything else in this paper is either retained, bounded, or explicitly
+> open.
 
 That sentence is stronger than a regulator interpretation and narrower than a
 blanket statement that every phenomenological sector has closed. The lattice is
@@ -352,7 +356,7 @@ $$
 remains central. The triplet sectors are no longer retained as physical
 species structure merely by declaration. Exact observable separation on the
 accepted Hilbert surface already gives them physical-species semantics, and
-the stronger one-axiom substrate-necessity result now closes the remaining
+the stronger substrate-necessity result now closes the remaining
 substrate-level physicality step as well. The safe paper claim is retained
 three-generation matter structure.
 
@@ -373,7 +377,7 @@ three-generation claim on the retained generation surface itself. Exact
 translation observables already separate the retained triplet as physically
 distinct sectors on the accepted Hilbert surface, so the remaining explicit
 step was only substrate-level physicality. That final step is now also closed
-on the accepted one-axiom Hilbert/locality/information surface, where the
+on the accepted qubit-lattice Hilbert/locality/information surface, where the
 graph/locality object is already part of the physical state-space structure
 and no same-theory regulator reinterpretation survives.
 
@@ -400,7 +404,7 @@ chain. More strongly, even allowing compensating `u_0` motion, any
 regulator-style family preserving both accepted `\alpha_s(v)` and `v`
 collapses to the canonical point. So on the retained package contract the
 physical-lattice reading is the unique surviving interpretation, and on the
-accepted one-axiom framework surface it is derived rather than separately
+accepted qubit-lattice framework surface it is derived rather than separately
 postulated. Detailed
 inter-family hierarchy and flavor numerics are separate questions.
 
@@ -859,7 +863,8 @@ carry the same bounded qualifier there.
 ## 8. Conclusion
 
 The central claim of this paper is no longer speculative. On the retained
-$Cl(3)$ on $Z^3$ surface, one exact discrete framework already carries a broad
+qubit-lattice axiom surface, with `Cl(3,0)` as the equivalent per-site
+local-algebra language, one exact discrete framework already carries a broad
 gravity backbone, gauge and matter structure, nontrivial exact support
 theorems, promoted quantitative outputs, and a bounded but genuine prediction
 surface.

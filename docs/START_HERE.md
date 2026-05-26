@@ -33,7 +33,7 @@ For domain-oriented navigation, use:
 
 For the accepted package inputs, use:
 
-- [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md)
+- [MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md)
 
 For optional framework-compression / reduction context, use:
 

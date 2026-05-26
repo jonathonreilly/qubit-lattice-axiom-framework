@@ -1,4 +1,4 @@
-# Cl(3) / Z^3 Publication Package
+# Qubit-Lattice Axiom Framework Publication Package
 
 This directory is the public scientific package for the current `main` branch.
 
@@ -38,7 +38,8 @@ For the full package-capture inventory, use:
 ## Current Package State
 
 - exact framework/backbone:
-  `Cl(3)` on `Z^3`, anomaly-forced `3+1`, exact native `SU(2)`, graph-first
+  qubit-at-every-`Z^3`-site axioms with the equivalent `Cl(3,0)` local-algebra
+  reading, anomaly-forced `3+1`, exact native `SU(2)`, graph-first
   structural `SU(3)`, exact discrete `3+1` GR, and the chosen continuum/QG
   identification chain
 - retained quantitative package:
@@ -214,7 +215,7 @@ same thing as the current active package state:
 ## Package Boundaries
 
 - framework/input boundary:
-  [MINIMAL_AXIOMS_2026-04-11.md](../../MINIMAL_AXIOMS_2026-04-11.md)
+  [MINIMAL_AXIOMS_2026-05-20.md](../../MINIMAL_AXIOMS_2026-05-20.md)
 - explicit package qualifiers:
   [INPUTS_AND_QUALIFIERS_NOTE.md](./INPUTS_AND_QUALIFIERS_NOTE.md)
 - explicit non-claims:

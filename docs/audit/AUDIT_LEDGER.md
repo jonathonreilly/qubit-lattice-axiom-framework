@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 462 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1225 |
+| unaudited | 1226 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 100 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -53,12 +53,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 747 |
-| `audited_conditional` | 101 |
+| `audited_conditional` | 100 |
 | `audited_decoration` | 42 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1454 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -73,8 +73,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 398 |
 | `high` | 487 |
-| `medium` | 579 |
-| `leaf` | 958 |
+| `medium` | 580 |
+| `leaf` | 957 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 3
@@ -959,7 +959,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `translation_covariance_local_op_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -12987,21 +12986,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Direct computation on basis states: T_a T_b |x> = T_a |x+b> = |x+b+a> = |x+(a+b)> = T_{a+b}|x>.  _(class `A`)_
 - **chain closes:** False — The regular-representation algebra closes for any translation subgroup that is actually supplied. The cited Noether authority only supports exact pure translations on the (2Z)^3 two-step sublattice and explicitly says one-site shifts are not pure symmetries, so the full Z^3 physical-translation claim is missing a retained bridge.
 - **rationale:** The runner genuinely constructs finite periodic permutation matrices and verifies seven algebraic group-representation properties, all class A. Those checks support the regular-representation statement on the toy (Z/L)^3 basis, but they do not establish that the framework authority provides pure one-site Z^3 translations on H_phys. The one-hop authority is narrower: its translation branch is the (2Z)^3 two-step Ward identity on an admitted staggered carrier, with one-site shifts requiring extra taste/staggered structure outside scope.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
-- **auditor confidence:** high
-
-### `translation_covariance_local_op_theorem_note_2026-05-02`
-
-- **Note:** [`TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md`](../../docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Algebraic covariance of site projectors, hopping operators, translated local copies, translation-invariant sums, and supports under an assumed regular lattice translation representation.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T193210Z-0e5f45cb-translation_covariance_l-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** By N1, T_a acts unitarily on H_phys by T_a |x; α⟩ = |x + a; α⟩, so conjugation relabels the site indices of local matrix units.  _(class `A`)_
-- **chain closes:** False — The algebraic conjugation identities close if the regular representation T_a |x;α⟩ = |x+a;α⟩ is admitted. The cited Noether authority supplied here only supports a bounded (2Z)^3 two-step translation/Ward statement on an admitted staggered carrier, not a unitary H_phys regular representation for all a ∈ Z^3.
-- **rationale:** The runner genuinely computes finite-dimensional permutation-matrix conjugation identities, so it supports the elementary algebra once the translation representation is assumed. It does not verify that the cited N1 authority supplies that representation, and the cited authority explicitly narrows pure translation symmetry to the (2Z)^3 sublattice with bounded admitted carrier inputs. The source note therefore overstates both the upstream dependency and the scope all a ∈ Z^3.
 - **open / conditional deps cited:**
   - `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high

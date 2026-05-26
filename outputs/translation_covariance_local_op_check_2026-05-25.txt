@@ -1,0 +1,57 @@
+========================================================================
+FINITE TENSOR-PRODUCT LOCAL-OPERATOR TRANSLATION COVARIANCE
+========================================================================
+
+------------------------------------------------------------------------
+TEST 0: load-bearing tensor-product bridge is retained-grade
+------------------------------------------------------------------------
+  tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
+  effective_status = retained
+  STATUS: PASS
+
+  finite block: 2x2x2, sites = 8, dim(H) = 256
+  shift a = (1, 0, 1)
+
+------------------------------------------------------------------------
+TEST 1: T_a is unitary on the tensor-product Fock basis
+------------------------------------------------------------------------
+  ||T T^dag - I|| = 0.000e+00
+  ||T^dag T - I|| = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 2: single-site M_2(C) generators shift by x -> x+a
+------------------------------------------------------------------------
+  checked 5 generators/matrices across 8 sites
+  max ||T M_x T^dag - M_(x+a)|| = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 3: finite-support two-site monomials shift both labels
+------------------------------------------------------------------------
+  x=(0, 0, 0), y=(0, 1, 0): deviation = 0.000e+00
+  x=(1, 1, 0), y=(0, 1, 1): deviation = 0.000e+00
+  x=(1, 0, 1), y=(1, 1, 1): deviation = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 4: translation-invariant density sum commutes with T_a
+------------------------------------------------------------------------
+  ||T Q_total T^dag - Q_total|| = 0.000e+00
+  ||[T, Q_total]|| = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 5: hopping-family sum over a translation orbit is invariant
+------------------------------------------------------------------------
+  ||T H_orbit T^dag - H_orbit|| = 0.000e+00
+  STATUS: PASS
+
+========================================================================
+  Test 0 (bridge retained-grade):                    PASS
+  Test 1 (T_a unitary):                              PASS
+  Test 2 (single-site covariance):                   PASS
+  Test 3 (two-site monomial covariance):             PASS
+  Test 4 (density sum invariant):                    PASS
+  Test 5 (hopping orbit invariant):                  PASS
+  OVERALL: PASS

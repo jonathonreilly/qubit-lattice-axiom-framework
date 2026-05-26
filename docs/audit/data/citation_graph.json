@@ -25258,7 +25258,7 @@
     },
     {
       "from": "translation_covariance_local_op_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "trysquared_proof_walk_lattice_independence_bounded_note_2026-05-08",
@@ -79557,13 +79557,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5f49fd3c06e7f0570e625004584156d594906b9ef068198e750af5416c1b1c67",
+      "note_hash": "9062604b9175018391b3081f2d8596f36229d8601bc60a8e1a8e1384feffa826",
       "path": "docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/translation_covariance_local_op_check.py",
-      "title": "Translation Covariance of Local Operators: T_a O(x) T_a^\u2020 = O(x + a)"
+      "title": "Translation Covariance of Single-Site Tensor Operators"
     },
     "triple_stack_collapse_scaling_note": {
       "claim_id": "triple_stack_collapse_scaling_note",
@@ -85460,7 +85460,7 @@
       "positive_theorem": 596
     },
     "edge_count": 9775,
-    "leaf_count": 782,
+    "leaf_count": 781,
     "node_count": 2536,
     "root_count": 836,
     "runners_with_path": 2097

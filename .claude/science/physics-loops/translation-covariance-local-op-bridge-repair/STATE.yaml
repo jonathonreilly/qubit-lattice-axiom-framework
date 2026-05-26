@@ -1,0 +1,23 @@
+loop: translation-covariance-local-op-bridge-repair
+branch: physics-loop/translation-covariance-local-op-bridge-repair-20260525
+base_ref: origin/main
+started_at: "2026-05-25"
+target_claim: translation_covariance_local_op_theorem_note_2026-05-02
+actual_current_surface_status: proposed_retained
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: true
+proposal_allowed_reason: "The claim is narrowed to the exact tensor-product translation surface supplied by the retained bridge."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "Replace stale H_phys regular-representation import with retained tensor-product local-operator covariance."
+files_touched:
+  - docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md
+  - scripts/translation_covariance_local_op_check.py
+  - outputs/translation_covariance_local_op_check_2026-05-25.txt
+open_imports: []
+no_go_routes:
+  - "Do not preserve the old arbitrary H_phys position-basis and position-operator covariance claims."
+next_exact_action: "Run audit pipeline, local review checks, commit, push, and open PR or record PR backlog if GitHub API quota remains exhausted."
+stop_condition: "One review branch delivered for this repair block."

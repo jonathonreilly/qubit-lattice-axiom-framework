@@ -13,7 +13,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 runtime_request: 12h campaign
 cycle_block: direct blocked-slit C_arm repair
-pr_status: pending
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1939
 open_imports:
   - "Independent audit must review whether the direct blocked-slit check closes the prior conditional blocker."
 no_go_routes:

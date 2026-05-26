@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1939
 
 This block repairs `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` by
 adding direct blocked-slit `sigma_arm(h)` measurements to the primary runner.

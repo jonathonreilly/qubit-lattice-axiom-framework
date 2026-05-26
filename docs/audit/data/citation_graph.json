@@ -77609,7 +77609,7 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8678d839eedcf55a36784534e74218ba3032b54a86f9aeb01316249f5fee7ce4",
+      "note_hash": "e38505a0f62fb5949b1ed57eae1e9474a4ab85f2ab8a63f8be1c2c40a69bfe5e",
       "path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
       "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface"

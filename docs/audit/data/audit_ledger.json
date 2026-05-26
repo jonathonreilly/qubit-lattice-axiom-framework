@@ -253824,95 +253824,26 @@
       "verdict_rationale": null
     },
     "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
-      "audit_date": "2026-05-25T10:39:44.749287+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom.",
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, \u03bc, \u0398, S_+, F) under the stated \u0398-invariance and reflection-Hermiticity assumptions.",
-          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
-        },
-        "dep_claim_type": {
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "positive_theorem",
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem",
-          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained",
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded",
-          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
-        },
-        "deps": [
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-          "staggered_only_det_positivity_case_a_note_2026-05-17"
-        ],
-        "load_bearing_score": 10.793,
-        "runner_hash": "79bad7ad73284cb3824a03c5958446d87a7e4687ac9ad62a16dcdb8535baab5e",
-        "transitive_descendants": 886
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-judicial-panel-per-site-k1-20260525T103944Z-strong_cp_operator_basis_and_mass_orient-majority",
-      "auditor_confidence": "judicial_panel_majority",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: hybrid / audited_conditional / bounded_theorem / class A; J2: hybrid / audited_conditional / bounded_theorem / class A; J3: hybrid / audited_conditional / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The algebraic exclusion is correct within the stated bounded surface, and the runner appears to perform real SU(3) and staggered-operator checks rather than canned output. However, audited_clean is too strong because the load-bearing real-positive action-surface selection and scalar-mass-only/positive-orientation boundary are imported premises, not derived from the retained authorities in this restricted packet. The retained reflection-positivity note supplies an abstract norm-square identity, not a theorem selecting the full Wilson action class, and the staggered determinant note proves positivity for mI but not exclusion of the scalar-class boundary itself. | The bounded algebraic checks themselves close once the real-positive measure surface and scalar-mass-only class are assumed, and the runner source performs actual finite SU(3) and staggered-operator computations rather than canned output. But the restricted packet does not derive those two action-surface boundaries from retained authorities; they are admitted premises, and the rubric requires a conditional verdict for unclosed boundary conditions. The no-go narrowing prevents a failed or overbroad verdict, but it does not upgrade the admitted walls into retained-grade derivations. | The finite SU(3)/staggered runner supports the bounded algebraic checks and the cited one-hop authorities are retained or retained_bounded. The chain nevertheless does not close as an audited_clean theorem because the theta rejection assumes the real-positive action-surface boundary, the mass result assumes the scalar-mass-only class, and the positive sign is explicitly conventional; those walls do the load-bearing selection work and are not derived in this packet. N3/N7 of the negative-claim gate therefore prevent a clean no-go-style rejection beyond the stipulated slot.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
-      "claim_scope": "Under the explicitly assumed real-positive single-plaquette Wilson surface and scalar-mass-only staggered action class, the i theta sum Im Tr U_P slot is excluded and non-real scalar mass phases are rejected; the positive mass sign remains conventional.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-25T10:39:44.749287+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-25T10:30:15.288696+00:00",
-          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T102839Z-926c6e71-strong_cp_operator_basis-01",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Under the canonical single-plaquette Wilson, real-positive-measure surface and the retained scalar-mass action-class boundary, the i\u03b8 \u03a3_P Im Tr U_P slot is inadmissible, non-real scalar mass phases fail determinant positivity, and the positive-mass convention gives \u03b8_eff = 0 on that bounded surface.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-25T10:32:27.178976+00:00",
-          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T103042Z-926c6e71-strong_cp_operator_basis-02",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Under the explicitly bounded real-positive Wilson plaquette surface and scalar-mass-only staggered action class, the specific single-plaquette i\u03b8 \u03a3 Im Tr U_P slot is inadmissible and non-real scalar mass phases are rejected; the positive mass sign is conventional.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_hybrid",
-        "third_audit": {
-          "audit_date": "2026-05-25T10:39:44.749287+00:00",
-          "auditor": "codex-judicial-panel-per-site-k1-20260525T103944Z-strong_cp_operator_basis_and_mass_orient-majority",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Under the explicitly assumed real-positive single-plaquette Wilson surface and scalar-mass-only staggered action class, the i theta sum Im Tr U_P slot is excluded and non-real scalar mass phases are rejected; the positive mass sign remains conventional.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "Treated the explicit real-positive and scalar-mass action-class boundaries as closed retained inputs rather than unclosed imported premises.",
-          "independence": "judicial_review",
-          "judgment_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: hybrid / audited_conditional / bounded_theorem / class A; J2: hybrid / audited_conditional / bounded_theorem / class A; J3: hybrid / audited_conditional / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The algebraic exclusion is correct within the stated bounded surface, and the runner appears to perform real SU(3) and staggered-operator checks rather than canned output. However, audited_clean is too strong because the load-bearing real-positive action-surface selection and scalar-mass-only/positive-orientation boundary are imported premises, not derived from the retained authorities in this restricted packet. The retained reflection-positivity note supplies an abstract norm-square identity, not a theorem selecting the full Wilson action class, and the staggered determinant note proves positivity for mI but not exclusion of the scalar-class boundary itself. | The bounded algebraic checks themselves close once the real-positive measure surface and scalar-mass-only class are assumed, and the runner source performs actual finite SU(3) and staggered-operator computations rather than canned output. But the restricted packet does not derive those two action-surface boundaries from retained authorities; they are admitted premises, and the rubric requires a conditional verdict for unclosed boundary conditions. The no-go narrowing prevents a failed or overbroad verdict, but it does not upgrade the admitted walls into retained-grade derivations. | The finite SU(3)/staggered runner supports the bounded algebraic checks and the cited one-hop authorities are retained or retained_bounded. The chain nevertheless does not close as an audited_clean theorem because the theta rejection assumes the real-positive action-surface boundary, the mass result assumes the scalar-mass-only class, and the positive sign is explicitly conventional; those walls do the load-bearing selection work and are not derived in this packet. N3/N7 of the negative-claim gate therefore prevent a clean no-go-style rejection beyond the stipulated slot.",
-          "load_bearing_step_class": "A",
-          "second_auditor_error": "Overstated docs/STRONG_CP_THETA_ZERO_NOTE.md as an open dependency; the conditional blocker is the missing retained bridge deriving the action-surface boundaries, not the parent context itself.",
-          "sided_with": "hybrid",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
@@ -253920,19 +253851,19 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "A nonzero i theta Q_lat term gives a complex Boltzmann phase on a real-positive measure surface, and intersecting det(D+M)>0 with the stipulated scalar-mass class leaves M = mI with the positive sign fixed by convention.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "8678d839eedcf55a36784534e74218ba3032b54a86f9aeb01316249f5fee7ce4",
+      "note_hash": "e38505a0f62fb5949b1ed57eae1e9474a4ab85f2ab8a63f8be1c2c40a69bfe5e",
       "note_path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained derivations of the real-positive Wilson action-surface selector and scalar-mass-only/positive-orientation boundary, or keep downstream use explicitly conditional on those premises.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -253995,6 +253926,107 @@
             "total_pass": 33
           },
           "verdict_rationale": "The runner genuinely constructs SU(3) plaquettes and staggered operators and supports the bounded rejection claims without external comparators. However, the proof still relies on P4 real-positive admissibility and C-class scalar-mass admissibility as action-surface boundaries, while the provided R3 authority is only an abstract norm-square lemma and R2 only proves positivity for positive real mI. The No-Go Discipline check also blocks broader clean closure: the note itself admits clover, multi-plaquette, axion-coupled, and non-real-positive routes remain outside scope, and N4 says the parent residual is only partially matched."
+        },
+        {
+          "archived_at": "2026-05-26T12:10:50.725795+00:00",
+          "archived_for_note_hash": "8678d839eedcf55a36784534e74218ba3032b54a86f9aeb01316249f5fee7ce4",
+          "audit_date": "2026-05-25T10:39:44.749287+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom.",
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, \u03bc, \u0398, S_+, F) under the stated \u0398-invariance and reflection-Hermiticity assumptions.",
+              "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+            },
+            "dep_claim_type": {
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "positive_theorem",
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem",
+              "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained",
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded",
+              "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+            },
+            "deps": [
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+              "staggered_only_det_positivity_case_a_note_2026-05-17"
+            ],
+            "load_bearing_score": 10.793,
+            "runner_hash": "79bad7ad73284cb3824a03c5958446d87a7e4687ac9ad62a16dcdb8535baab5e",
+            "transitive_descendants": 886
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-judicial-panel-per-site-k1-20260525T103944Z-strong_cp_operator_basis_and_mass_orient-majority",
+          "auditor_confidence": "judicial_panel_majority",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: hybrid / audited_conditional / bounded_theorem / class A; J2: hybrid / audited_conditional / bounded_theorem / class A; J3: hybrid / audited_conditional / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The algebraic exclusion is correct within the stated bounded surface, and the runner appears to perform real SU(3) and staggered-operator checks rather than canned output. However, audited_clean is too strong because the load-bearing real-positive action-surface selection and scalar-mass-only/positive-orientation boundary are imported premises, not derived from the retained authorities in this restricted packet. The retained reflection-positivity note supplies an abstract norm-square identity, not a theorem selecting the full Wilson action class, and the staggered determinant note proves positivity for mI but not exclusion of the scalar-class boundary itself. | The bounded algebraic checks themselves close once the real-positive measure surface and scalar-mass-only class are assumed, and the runner source performs actual finite SU(3) and staggered-operator computations rather than canned output. But the restricted packet does not derive those two action-surface boundaries from retained authorities; they are admitted premises, and the rubric requires a conditional verdict for unclosed boundary conditions. The no-go narrowing prevents a failed or overbroad verdict, but it does not upgrade the admitted walls into retained-grade derivations. | The finite SU(3)/staggered runner supports the bounded algebraic checks and the cited one-hop authorities are retained or retained_bounded. The chain nevertheless does not close as an audited_clean theorem because the theta rejection assumes the real-positive action-surface boundary, the mass result assumes the scalar-mass-only class, and the positive sign is explicitly conventional; those walls do the load-bearing selection work and are not derived in this packet. N3/N7 of the negative-claim gate therefore prevent a clean no-go-style rejection beyond the stipulated slot.",
+          "claim_scope": "Under the explicitly assumed real-positive single-plaquette Wilson surface and scalar-mass-only staggered action class, the i theta sum Im Tr U_P slot is excluded and non-real scalar mass phases are rejected; the positive mass sign remains conventional.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T10:39:44.749287+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-25T10:30:15.288696+00:00",
+              "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T102839Z-926c6e71-strong_cp_operator_basis-01",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Under the canonical single-plaquette Wilson, real-positive-measure surface and the retained scalar-mass action-class boundary, the i\u03b8 \u03a3_P Im Tr U_P slot is inadmissible, non-real scalar mass phases fail determinant positivity, and the positive-mass convention gives \u03b8_eff = 0 on that bounded surface.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-25T10:32:27.178976+00:00",
+              "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T103042Z-926c6e71-strong_cp_operator_basis-02",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Under the explicitly bounded real-positive Wilson plaquette surface and scalar-mass-only staggered action class, the specific single-plaquette i\u03b8 \u03a3 Im Tr U_P slot is inadmissible and non-real scalar mass phases are rejected; the positive mass sign is conventional.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_hybrid",
+            "third_audit": {
+              "audit_date": "2026-05-25T10:39:44.749287+00:00",
+              "auditor": "codex-judicial-panel-per-site-k1-20260525T103944Z-strong_cp_operator_basis_and_mass_orient-majority",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Under the explicitly assumed real-positive single-plaquette Wilson surface and scalar-mass-only staggered action class, the i theta sum Im Tr U_P slot is excluded and non-real scalar mass phases are rejected; the positive mass sign remains conventional.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "Treated the explicit real-positive and scalar-mass action-class boundaries as closed retained inputs rather than unclosed imported premises.",
+              "independence": "judicial_review",
+              "judgment_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: hybrid / audited_conditional / bounded_theorem / class A; J2: hybrid / audited_conditional / bounded_theorem / class A; J3: hybrid / audited_conditional / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The algebraic exclusion is correct within the stated bounded surface, and the runner appears to perform real SU(3) and staggered-operator checks rather than canned output. However, audited_clean is too strong because the load-bearing real-positive action-surface selection and scalar-mass-only/positive-orientation boundary are imported premises, not derived from the retained authorities in this restricted packet. The retained reflection-positivity note supplies an abstract norm-square identity, not a theorem selecting the full Wilson action class, and the staggered determinant note proves positivity for mI but not exclusion of the scalar-class boundary itself. | The bounded algebraic checks themselves close once the real-positive measure surface and scalar-mass-only class are assumed, and the runner source performs actual finite SU(3) and staggered-operator computations rather than canned output. But the restricted packet does not derive those two action-surface boundaries from retained authorities; they are admitted premises, and the rubric requires a conditional verdict for unclosed boundary conditions. The no-go narrowing prevents a failed or overbroad verdict, but it does not upgrade the admitted walls into retained-grade derivations. | The finite SU(3)/staggered runner supports the bounded algebraic checks and the cited one-hop authorities are retained or retained_bounded. The chain nevertheless does not close as an audited_clean theorem because the theta rejection assumes the real-positive action-surface boundary, the mass result assumes the scalar-mass-only class, and the positive sign is explicitly conventional; those walls do the load-bearing selection work and are not derived in this packet. N3/N7 of the negative-claim gate therefore prevent a clean no-go-style rejection beyond the stipulated slot.",
+              "load_bearing_step_class": "A",
+              "second_auditor_error": "Overstated docs/STRONG_CP_THETA_ZERO_NOTE.md as an open dependency; the conditional blocker is the missing retained bridge deriving the action-surface boundaries, not the parent context itself.",
+              "sided_with": "hybrid",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "A nonzero i theta Q_lat term gives a complex Boltzmann phase on a real-positive measure surface, and intersecting det(D+M)>0 with the stipulated scalar-mass class leaves M = mI with the positive sign fixed by convention.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained derivations of the real-positive Wilson action-surface selector and scalar-mass-only/positive-orientation boundary, or keep downstream use explicitly conditional on those premises.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: hybrid / audited_conditional / bounded_theorem / class A; J2: hybrid / audited_conditional / bounded_theorem / class A; J3: hybrid / audited_conditional / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The algebraic exclusion is correct within the stated bounded surface, and the runner appears to perform real SU(3) and staggered-operator checks rather than canned output. However, audited_clean is too strong because the load-bearing real-positive action-surface selection and scalar-mass-only/positive-orientation boundary are imported premises, not derived from the retained authorities in this restricted packet. The retained reflection-positivity note supplies an abstract norm-square identity, not a theorem selecting the full Wilson action class, and the staggered determinant note proves positivity for mI but not exclusion of the scalar-class boundary itself. | The bounded algebraic checks themselves close once the real-positive measure surface and scalar-mass-only class are assumed, and the runner source performs actual finite SU(3) and staggered-operator computations rather than canned output. But the restricted packet does not derive those two action-surface boundaries from retained authorities; they are admitted premises, and the rubric requires a conditional verdict for unclosed boundary conditions. The no-go narrowing prevents a failed or overbroad verdict, but it does not upgrade the admitted walls into retained-grade derivations. | The finite SU(3)/staggered runner supports the bounded algebraic checks and the cited one-hop authorities are retained or retained_bounded. The chain nevertheless does not close as an audited_clean theorem because the theta rejection assumes the real-positive action-surface boundary, the mass result assumes the scalar-mass-only class, and the positive sign is explicitly conventional; those walls do the load-bearing selection work and are not derived in this packet. N3/N7 of the negative-claim gate therefore prevent a clean no-go-style rejection beyond the stipulated slot."
         }
       ],
       "prose_corrections": [],
@@ -254009,7 +254041,7 @@
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
       "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface",
       "transitive_descendants": 1,
-      "verdict_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: hybrid / audited_conditional / bounded_theorem / class A; J2: hybrid / audited_conditional / bounded_theorem / class A; J3: hybrid / audited_conditional / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The algebraic exclusion is correct within the stated bounded surface, and the runner appears to perform real SU(3) and staggered-operator checks rather than canned output. However, audited_clean is too strong because the load-bearing real-positive action-surface selection and scalar-mass-only/positive-orientation boundary are imported premises, not derived from the retained authorities in this restricted packet. The retained reflection-positivity note supplies an abstract norm-square identity, not a theorem selecting the full Wilson action class, and the staggered determinant note proves positivity for mI but not exclusion of the scalar-class boundary itself. | The bounded algebraic checks themselves close once the real-positive measure surface and scalar-mass-only class are assumed, and the runner source performs actual finite SU(3) and staggered-operator computations rather than canned output. But the restricted packet does not derive those two action-surface boundaries from retained authorities; they are admitted premises, and the rubric requires a conditional verdict for unclosed boundary conditions. The no-go narrowing prevents a failed or overbroad verdict, but it does not upgrade the admitted walls into retained-grade derivations. | The finite SU(3)/staggered runner supports the bounded algebraic checks and the cited one-hop authorities are retained or retained_bounded. The chain nevertheless does not close as an audited_clean theorem because the theta rejection assumes the real-positive action-surface boundary, the mass result assumes the scalar-mass-only class, and the positive sign is explicitly conventional; those walls do the load-bearing selection work and are not derived in this packet. N3/N7 of the negative-claim gate therefore prevent a clean no-go-style rejection beyond the stipulated slot."
+      "verdict_rationale": null
     },
     "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": {
       "audit_date": "2026-05-23T20:33:47.821718+00:00",

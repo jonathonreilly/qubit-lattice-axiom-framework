@@ -1,0 +1,19 @@
+loop: planck-target3-conditional-clifford-carrier-repair
+branch: physics-loop/planck-target3-conditional-clifford-carrier-repair-20260525
+target_claim_id: planck_target3_clifford_phase_bridge_theorem_note_2026-04-25
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+conditional_surface_status: conditional-support under explicit coframe-response premise
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md
+  - scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
+  - outputs/planck_target3_conditional_clifford_carrier_repair_2026-05-25.txt
+open_imports:
+  - metric-compatible coframe response remains admitted, not derived
+next_exact_action: run audit pipeline, runner, lint, and PR creation
+stop_condition: open review-ready PR; do not merge or apply audit verdict

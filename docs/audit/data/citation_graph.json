@@ -68314,15 +68314,15 @@
     },
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": {
       "claim_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4665fb5f0f4417c530df9752d4aaa71b3c9c4c6625ed9ea2da93c3e2ec7c758e",
+      "note_hash": "f68277dea954d09995077c6ecb7bb4ada13b8545db9eef1bbd07f48562104490",
       "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
-      "runner_path": "scripts/frontier_planck_target3_clifford_phase_bridge.py",
-      "title": "Planck Target 3 Clifford Phase Bridge Theorem"
+      "runner_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+      "title": "Planck Target 3 Conditional Clifford Carrier Algebra"
     },
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25": {
       "claim_id": "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
@@ -85483,22 +85483,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 590,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
-      "none": 1464,
+      "none": 1463,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1017,
       "decoration": 1,
       "meta": 191,
       "no_go": 175,
       "none": 434,
       "open_gate": 125,
-      "positive_theorem": 596
+      "positive_theorem": 595
     },
     "edge_count": 9778,
     "leaf_count": 783,

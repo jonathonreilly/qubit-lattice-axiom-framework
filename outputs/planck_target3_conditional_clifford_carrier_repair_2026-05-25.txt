@@ -1,0 +1,68 @@
+Planck Target 3 conditional Clifford/CAR carrier repair
+Claim: planck_target3_clifford_phase_bridge_theorem_note_2026-04-25
+Runner: scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
+
+========================================================================================
+PART 0: SOURCE FIREWALL
+========================================================================================
+  [PASS] source note contains boundary phrase: conditional carrier rescope
+  [PASS] source note contains boundary phrase: conditional-support - finite Clifford/CAR carrier algebra
+  [PASS] source note contains boundary phrase: This row does not derive the metric-compatible coframe response on `K`
+  [PASS] source note contains boundary phrase: This row does not prove substrate forcing of the active block
+  [PASS] source note contains boundary phrase: This row does not claim that bare Hilbert-flow semantics alone force CAR
+  [PASS] source note contains boundary phrase: This row does not add a new axiom
+  [PASS] source note contains boundary phrase: scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
+  [PASS] source note excludes overbroad phrase: G_Newton
+  [PASS] source note excludes overbroad phrase: a/l_P
+  [PASS] source note excludes overbroad phrase: source-unit normalization support theorem
+  [PASS] source note excludes overbroad phrase: PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md
+  [PASS] source note excludes overbroad phrase: Current output:
+  [PASS] source note excludes overbroad phrase: PASS=34
+  [PASS] source note excludes overbroad phrase: c_Widom
+  [PASS] runner source excludes overbroad phrase: G_Newton
+  [PASS] runner source excludes overbroad phrase: a/l_P
+  [PASS] runner source excludes overbroad phrase: c_Widom
+  [PASS] runner source excludes overbroad phrase: frontier_planck_target3_clifford_phase_bridge
+
+========================================================================================
+PART 1: FINITE CLIFFORD/CAR ALGEBRA
+========================================================================================
+  [PASS] coframe generators square to the metric norm  (max err=0.00e+00)
+  [PASS] coframe generators are Hermitian  (max err=0.00e+00)
+  [PASS] coframe generators satisfy Cl_4 anticommutators  (max err=0.00e+00)
+  [PASS] linear coframe response preserves the quadratic form  (max err=1.84e-16)
+  [PASS] Clifford words span M_4(C)  (rank=16)
+  [PASS] commutant is only scalar  (dim=1)
+  [PASS] rank-four module is minimal for Cl_4(C)
+  [PASS] oriented Clifford pairs give two CAR modes  (cc=0.00e+00, cct=0.00e+00)
+  [PASS] two complex CAR modes have dimension four
+  [PASS] CAR modes reconstruct the Clifford generators  (max err=0.00e+00)
+  [PASS] Clifford bivector squares to -I  (err=0.00e+00)
+  [PASS] spin lift has 2pi -> -I and 4pi -> I
+  [PASS] rank-four packet in dimension sixteen has primitive trace 1/4  (1/4)
+
+========================================================================================
+PART 2: AUDIT METADATA AFTER PIPELINE
+========================================================================================
+  [PASS] claim ledger row exists
+  [PASS] claim type narrowed to bounded_theorem  (bounded_theorem)
+  [PASS] audit status reset to unaudited for re-audit  (unaudited)
+  [PASS] effective status reset to unaudited for re-audit  (unaudited)
+  [PASS] primary runner is registered  (scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py)
+  [PASS] no helper runners are imported  ([])
+  [PASS] narrowed row has no ledger dependencies  ([])
+  [PASS] no open dependency paths remain  ([])
+  [PASS] citation graph node exists
+  [PASS] citation graph node has no dependencies  ([])
+  [PASS] citation graph node has registered runner  (scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py)
+  [PASS] citation graph node has no helper runners  ([])
+  [PASS] citation graph has no outgoing dependency edges  ([])
+  [PASS] claim is queued for audit  (position=1)
+  [PASS] queued claim is ready  (True)
+  [PASS] queue item has no open dependency paths  (None)
+
+========================================================================================
+SUMMARY
+========================================================================================
+PASS=47 FAIL=0
+RESULT: PASS

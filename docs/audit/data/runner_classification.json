@@ -16909,16 +16909,16 @@
       "runner": "scripts/cl3_planck_substrate_to_carrier_forcing_2026_05_10_planckP1.py"
     },
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": {
-      "assert_count": 1,
+      "assert_count": 2,
       "counts": {
-        "A": 10,
-        "B": 0,
-        "C": 20,
+        "A": 0,
+        "B": 3,
+        "C": 12,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_planck_target3_clifford_phase_bridge.py"
+      "runner": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py"
     },
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25": {
       "assert_count": 0,
@@ -43429,15 +43429,15 @@
       "dominant_class": "D",
       "exists": true
     },
-    "scripts/frontier_planck_target3_clifford_phase_bridge.py": {
-      "assert_count": 1,
+    "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py": {
+      "assert_count": 2,
       "claims": [
         "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
       ],
       "counts": {
-        "A": 10,
-        "B": 0,
-        "C": 20,
+        "A": 0,
+        "B": 3,
+        "C": 12,
         "D": 0
       },
       "decoration_candidate": false,

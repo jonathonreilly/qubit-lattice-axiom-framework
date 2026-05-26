@@ -60587,7 +60587,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "ec3705b76a603bdefa9df620141acba4809122053a943a6227bb402480cf5fe1",
+      "note_hash": "b35f37650c48368a382644762e590b107e6d03c07ecbd76969e616e66cfa4263",
       "path": "docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_native_zero_section_closure_route.py",
       "title": "Koide native zero-section closure route"

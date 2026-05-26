@@ -3,6 +3,8 @@
 **Date:** 2026-05-20
 **Type:** bounded_theorem candidate
 **Status:** source-side proposal — independent audit lane owns the verdict
+**Primary runner:** [`scripts/persistent_record_kraus_instrument_certificate.py`](../scripts/persistent_record_kraus_instrument_certificate.py)
+**Runner cache:** [`logs/runner-cache/persistent_record_kraus_instrument_certificate.txt`](../logs/runner-cache/persistent_record_kraus_instrument_certificate.txt)
 **Supplies (proposed):** a bounded replacement candidate for the
 record-as-Kraus admission in
 `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` by
@@ -19,10 +21,16 @@ This is source-side routing context only; it does not assert an
 
 ## Claim
 
-For each persistent record `r` produced by the
-`PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE` mesoscopic record-formation
-process, there exists a Kraus operator `K_r` on the system algebra
-such that:
+On the bounded finite record-pilot surface, if the record-writing stage is
+represented by a normalized linear isometry
+
+```text
+W : H_sys -> H_sys \otimes H_record,
+W = sum_r K_r \otimes |r>
+```
+
+then each record outcome `r` defines a Kraus operator `K_r` on the system
+algebra such that:
 
 1. **Record-conditional update is Kraus conjugation:** the
    post-record state is `σ → σ|_r = K_r σ K_r† / Tr(K_r σ K_r†)`,
@@ -36,9 +44,10 @@ such that:
    completely positive trace-preserving (CPTP) map, matching the
    standard quantum-operations formalism.
 
-If independently retained, this supplies the record-as-Kraus input to
-the Born derivation route. It does not retag or promote the Born row
-by itself.
+If independent audit accepts this row, it supplies the finite
+normalized-instrument bridge needed by the record-as-Kraus input to the Born
+derivation route. It does not retag or promote the Born row by itself, and it
+does not claim asymptotic closure of record formation.
 
 ## Setup
 
@@ -55,14 +64,32 @@ K(r, r') = exp(-γ ||r - r'||²)                                           (1)
 parameterizes how strongly distinct records `r, r'` remain entangled
 (γ = 0: coherent superposition; γ → ∞: orthogonal records).
 
-To use this in the Born derivation, we need each record `r` to act
-on the system Hilbert space as a Kraus operator `K_r`, so the
-Lüders rule of the companion note applies.
+To use this in the Born derivation, the bounded record-writing stage must be a
+normalized linear map from system amplitudes into system-plus-record
+amplitudes. The 2026-05-26 certificate makes that bridge explicit at the finite
+instrument level.
+
+## 2026-05-26 finite-instrument certificate
+
+The primary runner constructs a finite normalized record-writing isometry
+`W : C^4 -> C^4 \otimes C^3`, extracts the record blocks `K_r`, and verifies:
+
+- `W^\dagger W = I`;
+- `sum_r K_r^\dagger K_r = I`;
+- the Choi matrix of `rho -> sum_r K_r rho K_r^\dagger` is positive;
+- for sampled arbitrary density matrices, the unconditional update is
+  trace-preserving and positive;
+- for each nonzero record probability, the selective state
+  `K_r rho K_r^\dagger / Tr(K_r rho K_r^\dagger)` is normalized and positive.
+
+This is the load-bearing finite algebra certificate for the note. The
+mesoscopic overlap-kernel dynamics remains the upstream bounded pilot.
 
 ## Step 1 — Record-amplitude map gives Kraus operators
 
-For a path `|ψ⟩` propagating through the lattice and writing into
-record state `|r⟩`, the joint system+record amplitude is
+For a finite normalized record-writing map, a path `|ψ⟩` propagating through
+the lattice and writing into record state `|r⟩` has joint system+record
+amplitude
 
 ```text
 |Ψ_joint⟩ = Σ_r A_r |φ_r⟩ ⊗ |r⟩                                          (2)
@@ -99,8 +126,8 @@ downstream composition, not an upstream premise of this row.
 
 ## Step 2 — Resolution of identity from path-amplitude normalization
 
-The persistent-record lane is normalized: the total probability over
-all records sums to 1 for any normalized input `|ψ⟩`:
+The finite normalized record-writing condition is that the total probability
+over all records sums to 1 for any normalized input `|ψ⟩`:
 
 ```text
 Σ_r |A_r ⟨φ_r | ψ⟩|² = ||ψ||² = 1                                       (6)
@@ -116,8 +143,8 @@ for every normalized `|ψ⟩`. This holds iff `Σ_r K_r† K_r = I_sys`,
 which is the **Kraus resolution of identity** (the requirement that
 the set `{K_r}` form a valid quantum measurement).
 
-The path-amplitude normalization on the persistent-record lane gives
-this directly from (6). Step 2 verifies the resolution of identity.
+The certificate checks this directly as `W^\dagger W = I`, equivalently
+`Σ_r K_r† K_r = I`.
 
 ## Step 3 — CPTP property of the unconditional update
 
@@ -147,10 +174,11 @@ entangled in the joint system+record amplitude. The Kraus operators
 record-conditional system action, not the inter-record entanglement.
 
 The γ parameter enters the Born derivation only through the
-**effective POVM** on the system: when γ = ∞ (orthogonal records),
-each `K_r` is a sharp projection; when γ < ∞, the effective POVM
-elements `E_r = K_r† K_r` are POVM effects that are not projections
-(they describe unsharp records).
+**effective POVM** on the system. The orthogonal-record limit
+(`γ = ∞`) is compatible with the projective special case when the
+record instrument is sharp. At finite overlap (`γ < ∞`), the effective
+POVM elements `E_r = K_r† K_r` need not be projections and can describe
+unsharp records.
 
 This matches the existing Born-derivation framing exactly: Gleason's
 projective theorem handles the γ = ∞ limit; the Busch POVM extension
@@ -190,11 +218,10 @@ admitted inputs.
    — supplies the persistent-record-formation process. This note
    identifies the Kraus structure of that process; it does not
    re-derive the persistent-record lane.
-2. **Linearity of the path-amplitude record-writing process.**
-   Required for `K_r` to extend to a bounded linear operator on the
-   system Hilbert space. Standard property of the lattice
-   path-integral; admitted from the framework's underlying linear
-   amplitude structure.
+2. **Finite normalized linear record-writing map.** Required for `K_r` to
+   extend to a bounded linear operator on the system Hilbert space. This branch
+   certifies the finite instrument algebra once that map is present; it does
+   not separately prove asymptotic record formation.
 3. **Standard Kraus / Choi structure for CPTP maps.** Standard
    operator-algebraic background (Kraus 1971, Choi 1975).
 

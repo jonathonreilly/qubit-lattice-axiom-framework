@@ -67805,9 +67805,9 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "64c8f71bf0ee9ab30a26e816678ec0cead387cc8b65f4d1aec12bc1f5897a83c",
+      "note_hash": "a3e00a9cc4a196f984c823b3ccd90014da78d3635134848d7e6d2178c61f9e32",
       "path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "runner_path": null,
+      "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators"
     },
     "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
@@ -85487,6 +85487,6 @@
     "leaf_count": 785,
     "node_count": 2540,
     "root_count": 842,
-    "runners_with_path": 2106
+    "runners_with_path": 2107
   }
 }

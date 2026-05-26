@@ -10,7 +10,7 @@
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1953
 
 ## Claim movement
 
@@ -27,3 +27,7 @@ scalar/CW/bare-parameter bridge. The row is reopened for audit:
 
 A retained-grade result would derive the scalar potential/CW/bare-parameter
 substrate from accepted primitives.
+
+## Next action
+
+Verify PR mergeability, then continue the campaign if runtime remains.

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 253,
+    "critical": 252,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -54,35 +54,29 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
-      "claim_scope": "Scoped no-go over the explicitly configured finite Route-2 support/readout typed-edge inventory plus the SU(3) F_adj=8/9 color-channel scalar denoted R_conn in this packet: the current bank has no typed derivation of gamma_T(center)/gamma_E(center) = -R_conn, while adding that bridge forces beta_E/alpha_E = 21/4. This does not derive the inventory, the T-side candidates, a physical connected-trace selector, quark masses, or any untyped color-endpoint identification.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "s3_time_theta_to_slice_coupling_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "quark_route2_exact_readout_map_note_2026-04-19",
         "quark_route2_exact_time_coupling_note_2026-04-19",
-        "rconn_derived_note"
+        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
       ],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py",
-        "scripts/frontier_quark_endpoint_readout_constraints.py",
-        "scripts/frontier_quark_route2_exact_readout_map.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py",
-        "scripts/frontier_tensor_support_center_excess_law.py"
-      ],
-      "load_bearing_score": 10.439,
-      "note_path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.937,
+      "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
-      "transitive_descendants": 693
+      "runner_path": null,
+      "transitive_descendants": 692
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -790,32 +784,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
       "transitive_descendants": 696
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "s3_time_theta_to_slice_coupling_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "quark_route2_exact_time_coupling_note_2026-04-19",
-        "quark_route2_exact_readout_map_note_2026-04-19",
-        "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.937,
-      "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 692
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -38157,5 +38125,5 @@
     }
   ],
   "ready_count": 71,
-  "total_pending": 1273
+  "total_pending": 1272
 }

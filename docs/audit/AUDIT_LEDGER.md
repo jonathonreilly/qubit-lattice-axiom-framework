@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 163 |
+| **retained_no_go** | 164 |
 | **retained_bounded** | 474 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1272 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 759 |
+| `audited_clean` | 760 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -661,6 +658,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9611,6 +9609,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The bounded claim closes: the source note does not claim a unique time-coupling law, only a conditional family plus an obstruction. The one-hop readout note supplies the reduced P(rho_E) family, and the runner verifies that two admissible choices agree on shell coupling but differ on center coupling while the slice factor is exact and nonzero.
 - **rationale:** The load-bearing step is an algebraic obstruction over the supplied readout family and computed slice backbone, not a tuned comparator or a renaming of the target quantity. The runner does not establish the missing unique readout theorem; instead it checks the bounded statement the note actually makes: conditional exactness once P_R is supplied and non-uniqueness when the readout entry remains unresolved. Because the audited scope is explicitly bounded away from a unique Theta_R -> Lambda_R theorem, the hostile review objection becomes the note's stated obstruction rather than a closure failure.
 - **auditor confidence:** high
+
+### `quark_route2_source_domain_bridge_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Scoped finite-bank no-go: over the explicit CURRENT_TYPED_EDGES inventory, the retained Route-2 readout scopes, the SU(3) adjoint-fraction scalar F_adj=8/9 rather than a physical connected-trace selector, and granted T-side candidates, no typed path derives gamma_T(center)/gamma_E(center)=-R_conn; adjoining that bridge gives beta_E/alpha_E=21/4 by endpoint algebra.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-quark-route2-source-domain-bridge-no-go-C75Ktt-2026-05-26-pass2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Over the configured typed current bank there is no edge or path from R_conn=8/9 to c_TE=gamma_T(center)/gamma_E(center)=-8/9, while adding exactly that bridge makes the endpoint algebra force beta_E/alpha_E=21/4.  _(class `A`)_
+- **chain closes:** True — The chain closes only at the configured finite-bank level: the readout dependency leaves beta_E/alpha_E independent, the Rconn dependency supplies only the SU(3) adjoint fraction/color scalar, and the runner checks graph reachability over CURRENT_TYPED_EDGES plus exact rational endpoint algebra. It would not close as a broader claim that every possible retained upstream authority outside that explicit inventory has been exhaustively excluded.
+- **rationale:** Audited clean for the narrowed configured-inventory no-go. N1 passes via the five packet attack frames; N2 has one collapsed wall, the missing typed source-domain bridge; N3 passes only with CURRENT_TYPED_EDGES treated as configured input rather than derived authority; N4 residuals match the readout and Rconn dependency scopes; N5 is finite typed-bank scoped; N6 finds no packet convention path; N7 steelman is an unenumerated upstream path, outside the audited scope; N8 was evaluated only within the restricted packet and found no closure mechanism. The runner is not a first-principles inventory derivation: it is existence/string checking plus exact algebra, hard-coded graph reachability, and endpoint-map identity checks over the configured bank.
 
 ### `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28`
 

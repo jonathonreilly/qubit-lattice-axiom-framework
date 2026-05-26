@@ -4,13 +4,15 @@ Hierarchy observable principle from the lattice axiom.
 
 Goal:
   Replace the imported "effective-action order parameter" language with a
-  framework-internal statement derived from the exact Grassmann Gaussian:
+  framework-internal conditional statement on the exact Grassmann Gaussian:
 
       Z[J] = det(D + J)
 
-  On independent subsystems, |Z| is multiplicative, so the unique continuous
-  additive scalar generator is log|Z|. Local scalar observables are therefore
-  the source-response coefficients of log|Z| (equivalently Re log Z).
+  Given P1 (scalar additivity on independent subsystems) and P2 (continuous
+  phase-blind scalar-generator selection), |Z| is multiplicative, so the
+  unique continuous additive scalar generator is log|Z|. Local scalar
+  observables are therefore the source-response coefficients of log|Z|
+  (equivalently Re log Z).
 
   On the minimal hierarchy block this reproduces the exact dimension-4
   effective-potential coefficient A(L_t), and the resulting temporal kernel is
@@ -389,42 +391,40 @@ def test_hierarchy_value_from_internal_observable_principle():
 
 
 def test_conditional_scope_shape():
-    """Part 6 -- conditional-scope verification (2026-05-07 scope narrowing).
+    """Part 6 -- conditional-scope verification (2026-05-25 P1+P2 narrowing).
 
-    Per the 2026-05-07 scope narrowing recorded in
+    Per the 2026-05-25 scope narrowing recorded in
     `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the load-bearing claim
-    of the parent note is conditional on four admitted premises:
+    of the parent note is conditional on the P1+P2 scalar-selection surface:
 
       P1: scalar additivity on independent subsystems
           (W[J_1 (+) J_2] = W[J_1] + W[J_2])
-      P2: CPT-even phase blindness
-          (W depends only on |Z|, not on the phase of Z)
-      P3: continuity / minimal regularity (so the multiplicative-to-additive
-          functional equation W(r_1 r_2) = W(r_1) + W(r_2) admits the unique
-          solution W = c log r + const)
-      P4: normalization choice (fixing c and the additive constant)
+      P2: continuous phase-blind scalar-generator selection
+          (the scalar bosonic generator is a continuous function of |Z| alone)
+
+    The zero-source baseline is fixed conventionally; finite-block regularity
+    and source-evenness are checked as candidate consistency properties, not
+    as derivations of the broader P2 selection premise.
 
     This test verifies, *as an empirical statement on the runner's lattice
     Dirac operator*, that:
 
-      - if the candidate generator W = log|det(D+J)| - log|det D| is adopted,
-        premises P1, P2, P3 hold on the runner's blocks, and the P4
-        baseline convention W(0) = 0 is implemented explicitly (so the
-        conditional implication "P1..P4 hold => W is the unique additive
-        CPT-even scalar generator" is non-vacuous on the verified blocks);
+      - if the candidate generator W = log|det(D+J)| - log|det D| is adopted
+        under P1+P2, it is additive on direct sums, source-even, regular near
+        zero source, and implements the baseline convention W(0) = 0;
 
       - any candidate that violates P1 (e.g. raw |Z|) fails to be a unique
         additive scalar generator, confirming P1 is a load-bearing selection
         filter rather than a redundant assumption.
 
-    This part does NOT attempt to derive P1-P4 from retained primitives;
+    This part does NOT attempt to derive P1 or P2 from retained primitives;
     that is explicitly out of scope per the audit-named conditional scope.
     It only verifies the conditional shape on the runner's block so
     reviewers can independently check that the runner's PASS count matches
     the conditional load-bearing statement of the parent note.
     """
     print("\n" + "=" * 78)
-    print("PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-05-07 SCOPE NARROWING)")
+    print("PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-05-25 P1+P2 NARROWING)")
     print("=" * 78)
 
     u0 = 0.9
@@ -485,17 +485,17 @@ def test_conditional_scope_shape():
         f"max additivity error = {p1_max_err:.2e}",
     )
     check(
-        "P2 (CPT-even phase blindness) holds: W(j) = W(-j)",
+        "P2 consistency: selected phase-blind candidate is source-even, W(j) = W(-j)",
         p2_max_err < 1e-12,
         f"max evenness error = {p2_max_err:.2e}",
     )
     check(
-        "P3 (continuity / small-j regularity) holds for the candidate W",
+        "candidate regularity: small-j behavior is stable for W",
         p3_max_err < 5e-3,
         f"max relative quadratic-coefficient consistency = {p3_max_err:.2e}",
     )
     check(
-        "P4 (normalization convention) is implemented by zero-source baseline subtraction",
+        "baseline convention is implemented by zero-source subtraction",
         p4_baseline_err < 1e-12,
         f"max zero-source baseline error = {p4_baseline_err:.2e}",
     )
@@ -506,66 +506,48 @@ def test_conditional_scope_shape():
     )
     print(
         "  Note: this part verifies the CONDITIONAL SHAPE only "
-        "(premises P1-P4 hold on the candidate W). It does NOT derive "
-        "P1-P4 from retained-grade primitives; that path is explicitly out of "
+        "(P1+P2 select the candidate W). It does NOT derive "
+        "P1 or P2 from retained-grade primitives; that path is explicitly out of "
         "scope per the audit-named conditional scope (see "
         "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named "
         "conditional scope')."
     )
 
 
-def test_premise_internal_derivations():
-    """Part 7 -- runner-local derivations of P2, P3, P4.
+def test_candidate_consistency_checks():
+    """Part 7 -- runner-local consistency checks for the selected candidate.
 
-    Per the 2026-05-09 narrowing recorded in
+    Per the 2026-05-25 narrowing recorded in
     `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` §"Runner-local
-    derivation of P2/P3/P4", three of the
-    four admitted bridge premises in Part 6 retire to runner-internal
-    consequences once the registered `CPT_EXACT_NOTE` construction is
-    admitted:
+    consistency checks for P2/P3/P4", these checks do not derive the
+    broader P2 scalar-generator classification premise. They verify that the
+    selected phase-blind amplitude generator has the expected structural
+    behavior on the registered staggered block:
 
-      * P2 (CPT-even phase blindness) follows from D being real
-        anti-Hermitian (a retained property of the staggered axiom): for
-        any real-Hermitian source `J`, `det(D + J)` and `det(D - J)`
-        are complex conjugates, so `|det(D + J)| = |det(D - J)|` is
-        forced. Thus `W` is automatically even in `J` without needing a
-        separate physical-principle premise.
+      * source evenness: because D is real anti-Hermitian on the runner block,
+        `|det(D + jI)| = |det(D - jI)|`, so the selected candidate W is even
+        in the scalar source;
 
-      * P3 (continuity / minimal regularity) follows from the finite
-        Grassmann-block structure: `j -> det(D + jI)` is a polynomial
-        in `j` of degree `dim(D)`, so `j -> log|det(D + jI)|` is real-
-        analytic on every neighborhood of `j` where the polynomial is
-        nonzero. The runner verifies analyticity directly via finite-
-        difference / Taylor-coefficient stability of the small-source
-        expansion.
+      * finite-block regularity: `j -> det(D + jI)` is a polynomial in `j`,
+        and D is invertible on the checked block, so the candidate
+        `log|det(D + jI)|` is regular near zero source;
 
-      * P4 (normalization convention) is not an independent premise but
-        the unique additive convention setting `W(0) = 0`. The runner
-        verifies the convention is enforced (zero-source baseline
-        subtraction) and confirms that any other normalization choice
-        differs from this one by an additive constant only and so does
-        not change the source-derivative observables.
+      * baseline convention: zero-source subtraction enforces `W(0) = 0`, and
+        additive shifts do not change source-derivative observables.
 
-    P1 (scalar additivity on independent subsystems) remains an admitted
-    physical-principle premise: it is the criterion that selects the
-    additive class of generators for "physical scalar bosonic
-    observable" in the first place. The runner checks the conditional
-    shape: P1 + (now-derived) P2/P3/P4 jointly force `W = log|det(D+J)|`
-    up to the conventional constant.
-
-    This part therefore reduces the admitted-premise set on the
-    physical-premise surface from {P1, P2, P3, P4} to P1 plus the cited
-    staggered-block/CPT structure. It does NOT derive P1, and it does not
-    promote `CPT_EXACT_NOTE`; those remain audit-governed inputs.
+    P1 and P2 remain admitted scalar-selection premises. This part does not
+    promote `CPT_EXACT_NOTE` or any cited upstream row; it only checks the
+    candidate selected under the conditional surface.
     """
     print("\n" + "=" * 78)
-    print("PART 7: RUNNER-LOCAL DERIVATIONS OF P2, P3, P4")
+    print("PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE")
     print("=" * 78)
 
     u0 = 0.9
 
-    # P2 derivation: D is real anti-Hermitian on the staggered block.
-    print("\n  P2 derivation: D is real anti-Hermitian on the runner block.")
+    # Candidate source-evenness check: D is real anti-Hermitian on the
+    # staggered block.
+    print("\n  Source-evenness check: D is real anti-Hermitian on the runner block.")
     real_d_imag_norm_max = 0.0
     anti_herm_residual_max = 0.0
     re_eig_max = 0.0
@@ -594,8 +576,9 @@ def test_premise_internal_derivations():
         f"max |Re(eigenvalue(D))| = {re_eig_max:.2e}",
     )
 
-    # P2 derivation step: |det(D+J)| = |det(D-J)| forced by realness of D.
-    p2_derived_err = 0.0
+    # Candidate source-evenness step: |det(D+J)| = |det(D-J)| is forced by
+    # realness of D on the checked source family.
+    source_even_err = 0.0
     for ls, lt in [(2, 2), (2, 4)]:
         d = build_dirac_4d_apbc(ls, lt, u0)
         n = d.shape[0]
@@ -603,12 +586,12 @@ def test_premise_internal_derivations():
             jp = j * np.eye(n, dtype=complex)
             zp = abs(np.linalg.det(d + jp))
             zm = abs(np.linalg.det(d - jp))
-            p2_derived_err = max(p2_derived_err, abs(zp - zm))
+            source_even_err = max(source_even_err, abs(zp - zm))
 
     check(
-        "P2 derived: |det(D + jI)| = |det(D - jI)| from real anti-Hermitian D",
-        p2_derived_err < 1e-12,
-        f"max |zp - zm| = {p2_derived_err:.2e}",
+        "source-evenness checked: |det(D + jI)| = |det(D - jI)| for the candidate",
+        source_even_err < 1e-12,
+        f"max |zp - zm| = {source_even_err:.2e}",
     )
 
     # Stronger statement: det(D + J) and det(D - J) are complex conjugates
@@ -628,16 +611,16 @@ def test_premise_internal_derivations():
             p2_conj_err = max(p2_conj_err, abs(det_p - det_m.conjugate()))
 
     check(
-        "P2 derived (stronger): det(D + jI) = conj(det(D - jI)) on even-dim staggered block",
+        "source-evenness checked (stronger): det(D + jI) = conj(det(D - jI)) on even-dim staggered block",
         p2_conj_err < 1e-9,
         f"max |det(D+J) - conj(det(D-J))| = {p2_conj_err:.2e}",
     )
 
-    # P3 derivation: j -> det(D + jI) is a polynomial in j of degree n;
+    # Candidate regularity check: j -> det(D + jI) is a polynomial in j of degree n;
     # log|det(D + jI)| is real-analytic on j-neighborhoods where the polynomial
     # is nonzero. The runner verifies via Taylor-coefficient stability and
     # via D being invertible (so j=0 is in the analyticity neighborhood).
-    print("\n  P3 derivation: finite-block analyticity of log|det(D + jI)|.")
+    print("\n  Candidate regularity check: finite-block analyticity of log|det(D + jI)|.")
     p3_d_invertible_err = 0.0
     for ls, lt in [(2, 2), (2, 4)]:
         d = build_dirac_4d_apbc(ls, lt, u0)
@@ -646,7 +629,7 @@ def test_premise_internal_derivations():
         p3_d_invertible_err = max(p3_d_invertible_err, 1.0 / max(smin, 1e-30))
         # Cap to avoid logging huge floats; we only need finiteness.
     check(
-        "P3 derived: D is invertible on the runner block (smin > 0, so log|det D| is finite)",
+        "candidate regularity checked: D is invertible on the runner block (smin > 0)",
         p3_d_invertible_err < 1e3,
         f"max 1/sigma_min(D) = {p3_d_invertible_err:.2e}",
     )
@@ -671,14 +654,14 @@ def test_premise_internal_derivations():
             p3_quadratic_stab_err = max(p3_quadratic_stab_err, rel)
 
     check(
-        "P3 derived: small-j Taylor ratio W(j)/j^2 converges to A(L_t) (analytic stability)",
+        "candidate regularity checked: small-j Taylor ratio W(j)/j^2 converges to A(L_t)",
         p3_quadratic_stab_err < 5e-3,
         f"max relative |W(j)/j^2 - A_exact| / A_exact = {p3_quadratic_stab_err:.2e}",
     )
 
-    # P4 derivation: zero-source baseline is the unique additive convention
-    # setting W(0) = 0; any other choice differs by an additive constant.
-    print("\n  P4 derivation: zero-source baseline as the additive normalization convention.")
+    # Baseline convention check: zero-source baseline fixes the additive
+    # convention setting W(0) = 0; any other choice differs by an additive constant.
+    print("\n  Baseline convention check: zero-source subtraction fixes W(0) = 0.")
     p4_baseline_zero_err = 0.0
     p4_constant_invariance_err = 0.0
     for ls, lt in [(2, 2), (2, 4)]:
@@ -715,24 +698,21 @@ def test_premise_internal_derivations():
             )
 
     check(
-        "P4 derived: W(0) = 0 enforced by zero-source baseline subtraction",
+        "baseline convention checked: W(0) = 0 enforced by zero-source subtraction",
         p4_baseline_zero_err < 1e-12,
         f"max |W(0)| = {p4_baseline_zero_err:.2e}",
     )
     check(
-        "P4 derived: source-derivative observables invariant under additive constant in W",
+        "baseline convention checked: source-derivative observables invariant under additive constant in W",
         p4_constant_invariance_err < 1e-9,
         f"max |dW_native - dW_alt| = {p4_constant_invariance_err:.2e}",
     )
 
-    # Summary: with P2, P3, P4 derived, the only remaining admitted premise
-    # is P1 (additivity on independent subsystems). The runner already
-    # verifies P1 in Part 6.
     print(
-        "\n  Summary: P2 follows from real anti-Hermitian D in the registered CPT_EXACT_NOTE construction,\n"
-        "  P3 follows from finite-block polynomial analyticity + D invertibility,\n"
-        "  P4 follows from the zero-source baseline convention. This narrows the\n"
-        "  physical-premise list but does not promote the cited upstream row."
+        "\n  Summary: the selected P1+P2 candidate passes source-evenness,\n"
+        "  finite-block regularity, and baseline-invariance checks. These checks\n"
+        "  do not derive the P1+P2 scalar-selection surface or promote any cited\n"
+        "  upstream row."
     )
 
 
@@ -745,7 +725,7 @@ def main():
     test_orbit_kernel_and_selector()
     test_hierarchy_value_from_internal_observable_principle()
     test_conditional_scope_shape()
-    test_premise_internal_derivations()
+    test_candidate_consistency_checks()
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")
     print("=" * 78)

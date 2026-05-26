@@ -1,0 +1,28 @@
+loop: observable-principle-p1p2-repair
+branch: physics-loop/observable-principle-p1p2-repair-20260525
+base: origin/main
+target_claim_id: observable_principle_from_axiom_note
+target_note: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
+actual_current_surface_status: conditional-support
+conditional_surface_status: conditional-support
+audit_effective_status_after_pipeline: unaudited
+audit_queue_position: 1
+audit_queue_ready: true
+criticality: critical
+transitive_descendants: 723
+direct_in_degree: 88
+active_route: "narrow source to explicit P1+P2 conditional surface"
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  - scripts/frontier_hierarchy_observable_principle_from_axiom.py
+  - outputs/observable_principle_p1p2_conditional_repair_2026-05-25.txt
+open_imports:
+  - "P1 scalar additivity remains admitted."
+  - "P2 continuous phase-blind scalar-generator selection remains admitted."
+no_go_routes:
+  - "Runner-local source-evenness does not derive full P2 generator classification."
+review_findings: "pass; conditional-support boundary, no audit verdict applied"
+pr_status: pending
+next_exact_action: "run review-loop checks, commit, push, and open PR"
+stop_condition: "PR opened and verified, then campaign pivots to the next science target"

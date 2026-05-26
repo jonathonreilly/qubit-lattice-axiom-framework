@@ -1,49 +1,6 @@
 {
   "live": [
     {
-      "actual_audit_status": "audited_failed",
-      "actual_claim_type": "no_go",
-      "actual_effective_status": "retained_no_go",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Fresh-context provenance re-audit: this archived no-go row has a terminal verdict recorded with independence=weak. Re-audit the no-go boundary under current independence and no-go-discipline requirements, or confirm it should remain archived/non-authority.",
-      "blocked_by_group_ids": [],
-      "claim_id": "cl4c_carrier_axiom_consequence_map_note_2026-04-28",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_failed",
-      "expected_current_claim_type": "no_go",
-      "expected_current_effective_status": "retained_no_go",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this audit-provenance review as evidence",
-        "PR-submitted audit verdicts",
-        "PR #441 review text or PR discussion as evidence",
-        "legacy weak-independence audit rationales as evidence",
-        "prior assistant discussion",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 7,
-      "group_id": "legacy_weak_independence_terminal_no_go_rows",
-      "group_order": 3,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md",
-      "queue_order": 1,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_cl4c_carrier_axiom_consequence_map.py",
-      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
       "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "unaudited",
@@ -83,7 +40,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 2,
+      "queue_order": 1,
       "ready": false,
       "ready_blocker": "blocked_by_dependency:pre_record_reference_state_tracial_derivation_note_2026-05-20:unaudited",
       "runner_path": null,
@@ -92,9 +49,9 @@
       "state": "live"
     }
   ],
-  "live_count": 2,
+  "live_count": 1,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 1,
+  "ready_count": 0,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "audited_clean",
@@ -1774,6 +1731,56 @@
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
       "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved"
+    },
+    {
+      "actual_audit_status": "audited_failed",
+      "actual_claim_type": "no_go",
+      "actual_effective_status": "retained_no_go",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Fresh-context provenance re-audit: this archived no-go row has a terminal verdict recorded with independence=weak. Re-audit the no-go boundary under current independence and no-go-discipline requirements, or confirm it should remain archived/non-authority.",
+      "blocked_by_group_ids": [],
+      "claim_id": "cl4c_carrier_axiom_consequence_map_note_2026-04-28",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_failed",
+      "expected_current_claim_type": "no_go",
+      "expected_current_effective_status": "retained_no_go",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this audit-provenance review as evidence",
+        "PR-submitted audit verdicts",
+        "PR #441 review text or PR discussion as evidence",
+        "legacy weak-independence audit rationales as evidence",
+        "prior assistant discussion",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 7,
+      "group_id": "legacy_weak_independence_terminal_no_go_rows",
+      "group_order": 3,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md",
+      "resolution_evidence": {
+        "audit_date": "2026-05-26T16:15:40.033788+00:00",
+        "audit_status": "audited_failed",
+        "auditor": "codex-gpt-5.5-fresh-context-cl4c-archive-boundary-2026-05-26",
+        "auditor_family": "codex-gpt-5.5",
+        "claim_type": "no_go",
+        "independence": "fresh_context"
+      },
+      "resolution_manifest_date": "2026-05-23",
+      "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
+      "runner_path": "scripts/frontier_cl4c_carrier_axiom_consequence_map.py",
+      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"
     },

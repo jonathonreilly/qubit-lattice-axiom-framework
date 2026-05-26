@@ -80901,14 +80901,16 @@
     },
     "vector_sector_note": {
       "claim_id": "vector_sector_note",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "helper_runner_paths": [],
-      "note_hash": "7aed9a439bdb4ce6a3fd0f5e10ca8ad4e4adbb66f5ebafd9bbfbe5c4b1f42894",
+      "helper_runner_paths": [
+        "scripts/vector_sector_circular_orbit.py"
+      ],
+      "note_hash": "27d9d75efcd302361b857b73d98cf49a7a8393439537bdf3f1ca9e446510ede0",
       "path": "docs/VECTOR_SECTOR_NOTE.md",
-      "runner_path": "scripts/vector_sector_circular_orbit.py",
+      "runner_path": "scripts/vector_sector_matched_scalar_exposure_certificate.py",
       "title": "Vector Sector: Circular Orbit Handedness"
     },
     "w_mass_derived_note": {
@@ -85453,22 +85455,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 594,
+      "bounded_theorem": 595,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
       "none": 1455,
       "open_gate": 48,
-      "positive_theorem": 171
+      "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1017,
       "decoration": 1,
       "meta": 191,
       "no_go": 183,
       "none": 432,
       "open_gate": 125,
-      "positive_theorem": 592
+      "positive_theorem": 591
     },
     "edge_count": 9765,
     "leaf_count": 786,

@@ -23257,7 +23257,7 @@
       "runner": "scripts/vector_magnetic_extension_probe.py"
     },
     "vector_sector_note": {
-      "assert_count": 0,
+      "assert_count": 3,
       "counts": {
         "A": 0,
         "B": 0,
@@ -23266,7 +23266,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/vector_sector_circular_orbit.py"
+      "runner": "scripts/vector_sector_matched_scalar_exposure_certificate.py"
     },
     "w_mass_derived_note": {
       "assert_count": 0,
@@ -54942,8 +54942,8 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/vector_sector_circular_orbit.py": {
-      "assert_count": 0,
+    "scripts/vector_sector_matched_scalar_exposure_certificate.py": {
+      "assert_count": 3,
       "claims": [
         "vector_sector_note"
       ],

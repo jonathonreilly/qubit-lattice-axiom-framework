@@ -1,8 +1,9 @@
-"""Hopping bilinear H_{xy} = a_x^† a_y + a_y^† a_x is Hermitian and translation-covariant.
+"""Hopping bilinear H_{xy} = a_x^dag a_y + a_y^dag a_x.
 
-By axiom_first_lattice_noether (cited, supplies translations T_a) and
-axiom_first_cl3_per_site_uniqueness (cited, supplies per-site Pauli C²
-with fermion ops a_x, a_x^†), the Hermitian symmetric hopping bilinear
+Uses the retained tensor-product translation/fermion-operator bridge
+as the load-bearing dependency for the finite Fock-space translations
+T_a, ladder operators a_x/a_x^dag, and Q_total.  On that surface the
+Hermitian symmetric hopping bilinear
 
     H_{xy}  :=  a_x^† a_y  +  a_y^† a_x
 
@@ -21,8 +22,14 @@ Hamiltonian. The key structural facts:
 from __future__ import annotations
 
 import itertools
+import json
+from pathlib import Path
 
 import numpy as np
+
+
+RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+BRIDGE_CLAIM_ID = "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
 
 
 def kron_chain(matrices: list[np.ndarray]) -> np.ndarray:
@@ -36,6 +43,19 @@ def main() -> None:
     print("=" * 72)
     print("HOPPING BILINEAR H_{xy} = a_x^† a_y + h.c. — Hermitian + translation-covariant")
     print("=" * 72)
+    print()
+
+    print("-" * 72)
+    print("TEST 0: load-bearing tensor-product bridge is retained-grade")
+    print("-" * 72)
+    ledger_path = Path("docs/audit/data/audit_ledger.json")
+    ledger = json.loads(ledger_path.read_text())
+    bridge_row = ledger["rows"][BRIDGE_CLAIM_ID]
+    bridge_status = bridge_row.get("effective_status")
+    t0_ok = bridge_status in RETAINED_GRADE
+    print(f"  {BRIDGE_CLAIM_ID}")
+    print(f"  bridge ledger effective-status field: {bridge_status}")
+    print(f"  STATUS: {'PASS' if t0_ok else 'FAIL'}")
     print()
 
     L = 4  # 4×4×4 periodic lattice
@@ -186,6 +206,7 @@ def main() -> None:
     print()
 
     print("=" * 72)
+    print(f"  Test 0 (bridge retained-grade):                    {'PASS' if t0_ok else 'FAIL'}")
     print(f"  Test 1 (H_{{xy}} Hermitian):                       {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 (T H_{{xy}} T^† = H_{{x+1, y+1}} cov):        {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 ([T, H_total] = 0 (sum is invariant)):     {'PASS' if t3_ok else 'FAIL'}")
@@ -193,7 +214,7 @@ def main() -> None:
     print(f"  Test 5 ([H_{{xy}}, Q̂] = 0):                         {'PASS' if t5_ok else 'FAIL'}")
     print(f"  Test 6 (occupation swap):                         {'PASS' if t6_ok else 'FAIL'}")
     print(f"  Test 7 (full Hamiltonian translation-invariant):  {'PASS' if t7_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
+    all_ok = all([t0_ok, t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:
         raise SystemExit(1)

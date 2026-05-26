@@ -10768,7 +10768,7 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 9,
         "D": 0
       },
@@ -14704,8 +14704,8 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 14,
+        "B": 1,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
@@ -16349,7 +16349,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 3,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -22588,7 +22588,7 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 8,
         "D": 0
       },
@@ -22601,7 +22601,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 6,
+        "C": 7,
         "D": 0
       },
       "decoration_candidate": false,
@@ -23699,6 +23699,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/wigner_mode_low_d_sublattice_check.py"
+    },
+    "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25": {
+      "assert_count": 0,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 47,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py"
     },
     "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": {
       "assert_count": 1,
@@ -43113,7 +43125,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 3,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -48347,6 +48359,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py": {
+      "assert_count": 0,
+      "claims": [
+        "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 47,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_wilson_bz_corner_hamming_staircase.py": {
       "assert_count": 1,
       "claims": [
@@ -50960,7 +50987,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 9,
         "D": 0
       },
@@ -52424,8 +52451,8 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 14,
+        "B": 1,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
@@ -54428,7 +54455,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 8,
         "D": 0
       },
@@ -54444,7 +54471,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 6,
+        "C": 7,
         "D": 0
       },
       "decoration_candidate": false,
@@ -55146,12 +55173,12 @@
     "dominant_class_distribution": {
       "A": 224,
       "B": 273,
-      "C": 746,
+      "C": 747,
       "D": 299,
       "none": 438
     },
-    "runners_classified": 1980,
-    "runners_with_C": 968,
+    "runners_classified": 1981,
+    "runners_with_C": 969,
     "runners_with_D": 583
   }
 }

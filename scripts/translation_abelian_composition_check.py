@@ -1,192 +1,179 @@
-"""Translation group composition: T_a T_b = T_{a+b} on lattice Hilbert.
+"""Finite tensor-product translation group composition checks.
 
-Test that the lattice translation operators T_a (defined by T_a |x⟩ = |x+a⟩
-on the Z^3 lattice basis, dual to lattice momentum P̂^μ via N1 of the
-cited lattice Noether theorem) satisfy:
-
-    (G1) closure:        T_a T_b = T_{a+b}             ∀ a, b ∈ Z^3
-    (G2) commutativity:  T_a T_b = T_b T_a             ∀ a, b ∈ Z^3
-    (G3) inverse:        T_{-a} = T_a^{-1} = T_a^†
-    (G4) identity:       T_0 = I
-    (G5) order:          T_a^N = I  on a periodic chain of size N (when a is unit)
-
-Therefore the lattice translation group is exactly Z^3 (or Z/NZ × Z/NZ × Z/NZ
-on a finite-N periodic lattice), matching A_min A2 (lattice geometry).
+This runner checks the repaired scope of
+TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md.  It uses the
+retained tensor-product translation / fermion-operator bridge as the
+load-bearing dependency and constructs the same finite tensor-permutation
+translations on a small periodic block.
 """
 from __future__ import annotations
 
 import itertools
+import json
+from pathlib import Path
 
 import numpy as np
 
 
-def build_translation_3d(L: int, a: tuple[int, int, int]) -> np.ndarray:
-    """Build T_a as permutation matrix on |x_1, x_2, x_3⟩ basis (L^3 dim).
+RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+BRIDGE_CLAIM_ID = "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
 
-    T_a |x⟩ = |x + a (mod L)⟩.
-    """
-    dim = L ** 3
-    T = np.zeros((dim, dim), dtype=complex)
-    for x1, x2, x3 in itertools.product(range(L), repeat=3):
-        idx_in = x1 * L * L + x2 * L + x3
-        y1 = (x1 + a[0]) % L
-        y2 = (x2 + a[1]) % L
-        y3 = (x3 + a[2]) % L
-        idx_out = y1 * L * L + y2 * L + y3
-        T[idx_out, idx_in] = 1.0
-    return T
+
+def site_index(L: int, coord: tuple[int, int, int]) -> int:
+    return coord[0] * L * L + coord[1] * L + coord[2]
+
+
+def add_coord(L: int, x: tuple[int, int, int], a: tuple[int, int, int]) -> tuple[int, int, int]:
+    return tuple((x[i] + a[i]) % L for i in range(3))
+
+
+def sub_coord(L: int, x: tuple[int, int, int], a: tuple[int, int, int]) -> tuple[int, int, int]:
+    return tuple((x[i] - a[i]) % L for i in range(3))
+
+
+def int_to_bits(value: int, n_bits: int) -> list[int]:
+    return [(value >> (n_bits - 1 - i)) & 1 for i in range(n_bits)]
+
+
+def bits_to_int(bits: list[int]) -> int:
+    value = 0
+    for bit in bits:
+        value = (value << 1) | int(bit)
+    return value
+
+
+def build_translation(L: int, shift: tuple[int, int, int]) -> np.ndarray:
+    sites = list(itertools.product(range(L), repeat=3))
+    n_sites = len(sites)
+    dim = 2**n_sites
+    translation = np.zeros((dim, dim), dtype=complex)
+    for col in range(dim):
+        bits_in = int_to_bits(col, n_sites)
+        bits_out = [0] * n_sites
+        for out_coord in sites:
+            in_coord = sub_coord(L, out_coord, shift)
+            bits_out[site_index(L, out_coord)] = bits_in[site_index(L, in_coord)]
+        row = bits_to_int(bits_out)
+        translation[row, col] = 1.0
+    return translation
 
 
 def main() -> None:
     print("=" * 72)
-    print("TRANSLATION GROUP COMPOSITION T_a T_b = T_{a+b} ON Z^3 LATTICE")
+    print("FINITE TENSOR-PRODUCT TRANSLATION GROUP COMPOSITION")
     print("=" * 72)
     print()
 
-    L = 4  # 4×4×4 periodic lattice = 64-dim per-site basis
-    dim = L ** 3
-    print(f"  Toy model: {L}×{L}×{L} periodic lattice, dim = {dim}")
+    print("-" * 72)
+    print("TEST 0: load-bearing tensor-product bridge is retained-grade")
+    print("-" * 72)
+    ledger = json.loads(Path("docs/audit/data/audit_ledger.json").read_text())
+    bridge_status = ledger["rows"][BRIDGE_CLAIM_ID].get("effective_status")
+    t0_ok = bridge_status in RETAINED_GRADE
+    print(f"  {BRIDGE_CLAIM_ID}")
+    print(f"  bridge ledger effective-status field: {bridge_status}")
+    print(f"  STATUS: {'PASS' if t0_ok else 'FAIL'}")
     print()
 
+    L = 2
+    n_sites = L**3
+    dim = 2**n_sites
+    identity = np.eye(dim, dtype=complex)
+    zero = (0, 0, 0)
     e1 = (1, 0, 0)
     e2 = (0, 1, 0)
     e3 = (0, 0, 1)
-    zero = (0, 0, 0)
+    print(f"  finite block: {L}x{L}x{L}, sites = {n_sites}, dim(H) = {dim}")
+    print()
 
-    T_e1 = build_translation_3d(L, e1)
-    T_e2 = build_translation_3d(L, e2)
-    T_e3 = build_translation_3d(L, e3)
-    T_0 = build_translation_3d(L, zero)
-    Iden = np.eye(dim, dtype=complex)
-
-    # ----- Test 1: T_0 = I -----
     print("-" * 72)
-    print("TEST 1: T_0 = I (identity element)")
+    print("TEST 1: identity and unitarity")
     print("-" * 72)
-    dev0 = np.linalg.norm(T_0 - Iden)
-    print(f"  ||T_0 - I|| = {dev0:.3e}")
-    t1_ok = dev0 < 1e-12
+    t_zero = build_translation(L, zero)
+    identity_dev = np.linalg.norm(t_zero - identity)
+    unitarity_devs: list[float] = []
+    for shift in [e1, e2, e3, (1, 1, 0), (1, 1, 1)]:
+        t_shift = build_translation(L, shift)
+        unitarity_devs.append(float(np.linalg.norm(t_shift @ t_shift.conj().T - identity)))
+        unitarity_devs.append(float(np.linalg.norm(t_shift.conj().T @ t_shift - identity)))
+    max_unitarity_dev = max(unitarity_devs)
+    t1_ok = identity_dev < 1e-12 and max_unitarity_dev < 1e-12
+    print(f"  ||T_0 - I|| = {identity_dev:.3e}")
+    print(f"  max unitarity deviation = {max_unitarity_dev:.3e}")
     print(f"  STATUS: {'PASS' if t1_ok else 'FAIL'}")
     print()
 
-    # ----- Test 2: closure T_a T_b = T_{a+b} (sweep over generators) -----
     print("-" * 72)
-    print("TEST 2: closure T_a T_b = T_{a+b} (sweep over basis vectors)")
+    print("TEST 2: closure T_a T_b = T_(a+b)")
     print("-" * 72)
-    max_close_dev = 0.0
-    test_pairs = [
-        (e1, e1, (2, 0, 0)),
-        (e1, e2, (1, 1, 0)),
-        (e1, e3, (1, 0, 1)),
-        (e2, e3, (0, 1, 1)),
-        (e1, (3, 2, 1), (4 % L, 2, 1)),
-        ((2, 1, 0), (1, 2, 3), (3, 3, 3)),
-        ((3, 3, 3), (1, 1, 1), (0, 0, 0)),  # wraps around
-    ]
-    for a, b, expected_sum in test_pairs:
-        T_a = build_translation_3d(L, a)
-        T_b = build_translation_3d(L, b)
-        T_ab = T_a @ T_b
-        T_sum = build_translation_3d(L, tuple((a[i] + b[i]) % L for i in range(3)))
-        d = np.linalg.norm(T_ab - T_sum)
-        max_close_dev = max(max_close_dev, d)
-        print(f"  a={a}, b={b}: ||T_a T_b - T_{{a+b}}|| = {d:.3e}")
-    t2_ok = max_close_dev < 1e-12
+    closure_devs: list[float] = []
+    shifts = list(itertools.product(range(L), repeat=3))
+    for a, b in itertools.product(shifts, repeat=2):
+        t_a = build_translation(L, a)
+        t_b = build_translation(L, b)
+        t_sum = build_translation(L, add_coord(L, a, b))
+        closure_devs.append(float(np.linalg.norm(t_a @ t_b - t_sum)))
+    max_closure_dev = max(closure_devs)
+    t2_ok = max_closure_dev < 1e-12
+    print(f"  checked {len(closure_devs)} ordered pairs")
+    print(f"  max ||T_a T_b - T_(a+b)|| = {max_closure_dev:.3e}")
     print(f"  STATUS: {'PASS' if t2_ok else 'FAIL'}")
     print()
 
-    # ----- Test 3: commutativity [T_a, T_b] = 0 (abelian) -----
     print("-" * 72)
-    print("TEST 3: [T_a, T_b] = 0 (translation group is abelian)")
+    print("TEST 3: commutativity [T_a,T_b] = 0")
     print("-" * 72)
-    max_comm_dev = 0.0
-    for (a, label_a), (b, label_b) in itertools.combinations(
-        [(e1, "e_1"), (e2, "e_2"), (e3, "e_3"), ((2, 1, 3), "(2,1,3)"), ((3, 0, 2), "(3,0,2)")], 2
-    ):
-        T_a = build_translation_3d(L, a)
-        T_b = build_translation_3d(L, b)
-        comm = T_a @ T_b - T_b @ T_a
-        d = np.linalg.norm(comm)
-        max_comm_dev = max(max_comm_dev, d)
-        print(f"  ||[T_{label_a}, T_{label_b}]|| = {d:.3e}")
+    comm_devs: list[float] = []
+    for a, b in itertools.product(shifts, repeat=2):
+        t_a = build_translation(L, a)
+        t_b = build_translation(L, b)
+        comm_devs.append(float(np.linalg.norm(t_a @ t_b - t_b @ t_a)))
+    max_comm_dev = max(comm_devs)
     t3_ok = max_comm_dev < 1e-12
+    print(f"  max ||[T_a,T_b]|| = {max_comm_dev:.3e}")
     print(f"  STATUS: {'PASS' if t3_ok else 'FAIL'}")
     print()
 
-    # ----- Test 4: inverse T_{-a} = T_a^† -----
     print("-" * 72)
-    print("TEST 4: T_{-a} = T_a^†  (inverse equals adjoint, T_a unitary)")
+    print("TEST 4: inverse T_-a = T_a^dag")
     print("-" * 72)
-    max_inv_dev = 0.0
-    for a in [e1, e2, e3, (2, 1, 0), (3, 2, 1)]:
-        T_a = build_translation_3d(L, a)
-        T_minus_a = build_translation_3d(L, tuple((-a[i]) % L for i in range(3)))
-        d_dag = np.linalg.norm(T_minus_a - T_a.conj().T)
-        d_inv = np.linalg.norm(T_a @ T_minus_a - Iden)
-        max_inv_dev = max(max_inv_dev, d_dag, d_inv)
-        print(f"  a={a}: ||T_{{-a}} - T_a†|| = {d_dag:.3e}, ||T_a T_{{-a}} - I|| = {d_inv:.3e}")
-    t4_ok = max_inv_dev < 1e-12
+    inverse_devs: list[float] = []
+    for a in shifts:
+        t_a = build_translation(L, a)
+        t_minus = build_translation(L, tuple((-a[i]) % L for i in range(3)))
+        inverse_devs.append(float(np.linalg.norm(t_minus - t_a.conj().T)))
+        inverse_devs.append(float(np.linalg.norm(t_a @ t_minus - identity)))
+    max_inverse_dev = max(inverse_devs)
+    t4_ok = max_inverse_dev < 1e-12
+    print(f"  max inverse deviation = {max_inverse_dev:.3e}")
     print(f"  STATUS: {'PASS' if t4_ok else 'FAIL'}")
     print()
 
-    # ----- Test 5: T_e1^L = I (cyclic order L on each axis) -----
     print("-" * 72)
-    print(f"TEST 5: T_e_i^{L} = I  (each axial generator has order L = {L})")
+    print("TEST 5: finite quotient faithfulness")
     print("-" * 72)
-    max_order_dev = 0.0
-    for ei, label in [(e1, "e_1"), (e2, "e_2"), (e3, "e_3")]:
-        T_ei = build_translation_3d(L, ei)
-        T_ei_L = np.linalg.matrix_power(T_ei, L)
-        d = np.linalg.norm(T_ei_L - Iden)
-        max_order_dev = max(max_order_dev, d)
-        print(f"  ||T_{label}^{L} - I|| = {d:.3e}")
-    t5_ok = max_order_dev < 1e-12
+    kernel = []
+    distinct = set()
+    for a in shifts:
+        t_a = build_translation(L, a)
+        if np.linalg.norm(t_a - identity) < 1e-12:
+            kernel.append(a)
+        distinct.add(tuple(np.round(t_a.real.flatten(), 6).tolist()))
+    t5_ok = kernel == [zero] and len(distinct) == L**3
+    print(f"  kernel = {kernel}")
+    print(f"  distinct translations = {len(distinct)}")
+    print(f"  expected distinct translations = {L ** 3}")
     print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
     print()
 
-    # ----- Test 6: total group order = L^3 (full translation group is (Z/L)^3) -----
-    print("-" * 72)
-    print(f"TEST 6: total translation group has order L^3 = {L ** 3}")
-    print("        (count distinct T_a as a ranges over (Z/L)^3)")
-    print("-" * 72)
-    seen = set()
-    for a in itertools.product(range(L), repeat=3):
-        T_a = build_translation_3d(L, a)
-        # Use a canonical hash via the matrix (rounded)
-        key = tuple(np.round(T_a.real.flatten(), 6).tolist())
-        seen.add(key)
-    distinct_count = len(seen)
-    print(f"  distinct translations: {distinct_count}")
-    print(f"  expected: {L ** 3}")
-    t6_ok = distinct_count == L ** 3
-    print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 7: structure constants — homomorphism Z^3 → U(dim) is faithful -----
-    print("-" * 72)
-    print("TEST 7: T : (Z/L)^3 → U(dim) is a faithful group homomorphism")
-    print("        (kernel is trivial: T_a = I  ⇒  a = 0)")
-    print("-" * 72)
-    # Faithfulness: only T_a equal to I is T_0
-    n_kernel = 0
-    for a in itertools.product(range(L), repeat=3):
-        T_a = build_translation_3d(L, a)
-        if np.linalg.norm(T_a - Iden) < 1e-12:
-            n_kernel += 1
-    print(f"  |kernel| = {n_kernel} (should be 1, the identity)")
-    t7_ok = n_kernel == 1
-    print(f"  STATUS: {'PASS' if t7_ok else 'FAIL'}")
-    print()
-
     print("=" * 72)
-    print(f"  Test 1 (T_0 = I):                                 {'PASS' if t1_ok else 'FAIL'}")
-    print(f"  Test 2 (closure T_a T_b = T_{{a+b}}):              {'PASS' if t2_ok else 'FAIL'}")
-    print(f"  Test 3 ([T_a, T_b] = 0 — abelian):                 {'PASS' if t3_ok else 'FAIL'}")
-    print(f"  Test 4 (T_{{-a}} = T_a† — unitary inverse):        {'PASS' if t4_ok else 'FAIL'}")
-    print(f"  Test 5 (T_e_i^L = I — cyclic order):               {'PASS' if t5_ok else 'FAIL'}")
-    print(f"  Test 6 (group order = L^3):                       {'PASS' if t6_ok else 'FAIL'}")
-    print(f"  Test 7 (faithful homomorphism):                   {'PASS' if t7_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
+    print(f"  Test 0 (bridge retained-grade):                    {'PASS' if t0_ok else 'FAIL'}")
+    print(f"  Test 1 (identity/unitarity):                       {'PASS' if t1_ok else 'FAIL'}")
+    print(f"  Test 2 (closure):                                  {'PASS' if t2_ok else 'FAIL'}")
+    print(f"  Test 3 (commutativity):                            {'PASS' if t3_ok else 'FAIL'}")
+    print(f"  Test 4 (inverse):                                  {'PASS' if t4_ok else 'FAIL'}")
+    print(f"  Test 5 (finite quotient faithfulness):             {'PASS' if t5_ok else 'FAIL'}")
+    all_ok = all([t0_ok, t1_ok, t2_ok, t3_ok, t4_ok, t5_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:
         raise SystemExit(1)

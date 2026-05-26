@@ -12414,7 +12414,7 @@
     },
     {
       "from": "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29",
@@ -17438,7 +17438,7 @@
     },
     {
       "from": "momentum_charge_commute_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "monopole_derived_note",
@@ -25254,11 +25254,11 @@
     },
     {
       "from": "translation_abelian_composition_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "translation_covariance_local_op_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "trysquared_proof_walk_lattice_independence_bounded_note_2026-05-08",
@@ -26731,6 +26731,10 @@
     {
       "from": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+    },
+    {
+      "from": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
       "from": "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
@@ -58177,13 +58181,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1108053b695457640373966ff1e77b1385a67a76e5d1d167476246de36b6c8ef",
+      "note_hash": "14a55c9496d7f27ea1a3696cd1bf1061ec92fb984e2fde4c7e74bb34ec2d1657",
       "path": "docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/hopping_bilinear_hermiticity_check.py",
-      "title": "Hopping Bilinear H_{xy} = a_x^\u2020 a_y + h.c. Is Hermitian and Translation-Covariant"
+      "title": "Hopping Bilinear H_{xy} = a_x^dag a_y + h.c. Is Hermitian and Translation-Covariant"
     },
     "hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29": {
       "claim_id": "hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29",
@@ -64467,7 +64471,7 @@
       "helper_runner_paths": [
         "scripts/mirror_born_audit.py"
       ],
-      "note_hash": "d23c08fa1e203848b006440656518c70f10cc127ded98acb6fcd6b93bb544372",
+      "note_hash": "25860f9c55f082c881ad682baa344196b3c5d860dd8ab6c9b254031a61ee9619",
       "path": "docs/MIRROR_2D_VALIDATION_NOTE.md",
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Validation Note"
@@ -64642,13 +64646,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d2204b8e97f23dd547ea8fef3f43869a80601d7d9c198fdca8f133c62de1dc26",
+      "note_hash": "2e766ff27378be9f3c6ab53319dc39c41a0aa158f32027fa365996125c498302",
       "path": "docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/momentum_charge_commute_check.py",
-      "title": "Total Momentum and Total U(1) Charge Commute on Framework Lattice"
+      "title": "Tensor-Product Translation Generators Commute With Total U(1) Charge"
     },
     "monopole_derived_note": {
       "claim_id": "monopole_derived_note",
@@ -67375,10 +67379,10 @@
         "cpt_exact_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8b5dfac63d54e044f8325f0decc3946a581ee4cf45590dfecf8b2e4cd72619e0",
+      "note_hash": "70c5ef098312c15ca3034fc6f55d12b30936e484854a8999b9a4412a2bcbb75b",
       "path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
-      "title": "Parity-Operator Basis: Dimension-5 LV Algebraic P-Weight Identities on the Staggered SME-Style Basis"
+      "title": "Parity-Operator Basis: Dimension-5 LV Algebraic P-Weight Identities on the Staggered SME-Style Basis (Odd Total Spatial-Index Parity Sector)"
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
       "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
@@ -79543,13 +79547,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "950c7679b545ee7c194a4b21f36b864f8c6e161d81e1f1e82deb9bca7011656a",
+      "note_hash": "ae37fe915439037f4d5636d1a394fe3612399df8ffb8b270fd312d10161354f8",
       "path": "docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/translation_abelian_composition_check.py",
-      "title": "Translation Group Composition T_a T_b = T_{a+b} on Z^3 Lattice"
+      "title": "Tensor-Product Translation Group Composition"
     },
     "translation_covariance_local_op_theorem_note_2026-05-02": {
       "claim_id": "translation_covariance_local_op_theorem_note_2026-05-02",
@@ -79557,13 +79561,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5f49fd3c06e7f0570e625004584156d594906b9ef068198e750af5416c1b1c67",
+      "note_hash": "58a777ba7664edd15d0dd1a2363c695457db0f5bba86a69e4e2c4b327313568f",
       "path": "docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/translation_covariance_local_op_check.py",
-      "title": "Translation Covariance of Local Operators: T_a O(x) T_a^\u2020 = O(x + a)"
+      "title": "Translation Covariance of Single-Site Tensor Operators"
     },
     "triple_stack_collapse_scaling_note": {
       "claim_id": "triple_stack_collapse_scaling_note",
@@ -81749,6 +81753,20 @@
       "path": "docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/wigner_mode_low_d_sublattice_check.py",
       "title": "Wigner Mode Realization on 1D/2D Sublattices of Z\u00b3 (CMW + Noether)"
+    },
+    "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25": {
+      "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "88ac4b1fca7bfe1aa7f775cc17ed5531c9dec455852d8a29d9d2f5be33b064e3",
+      "path": "docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md",
+      "runner_path": "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py",
+      "title": "Wilson Action-Surface Selector \u2014 Real-Positive Canonical Single-Plaquette Surface"
     },
     "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": {
       "claim_id": "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
@@ -85442,7 +85460,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 587,
+      "bounded_theorem": 588,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
@@ -85451,7 +85469,7 @@
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1014,
+      "bounded_theorem": 1015,
       "decoration": 1,
       "meta": 191,
       "no_go": 175,
@@ -85459,10 +85477,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9775,
+    "edge_count": 9776,
     "leaf_count": 782,
-    "node_count": 2536,
+    "node_count": 2537,
     "root_count": 836,
-    "runners_with_path": 2097
+    "runners_with_path": 2098
   }
 }

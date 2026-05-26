@@ -18,15 +18,15 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | high | `unaudited` | 191 |
-| critical | `unaudited` | 155 |
-| medium | `unaudited` | 101 |
-| critical | `audited_conditional` | 14 |
+| critical | `unaudited` | 156 |
+| medium | `unaudited` | 104 |
+| critical | `audited_conditional` | 13 |
 | high | `audited_conditional` | 6 |
-| medium | `audited_conditional` | 5 |
 | high | `audited_numerical_match` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_renaming` | 2 |
+| medium | `audited_conditional` | 2 |
 | medium | `audited_numerical_match` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 482
@@ -98,7 +98,7 @@ publication tables phrase it.
 | critical | `higgs_mechanism_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `higgs_vacuum_explicit_systematic_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
-| critical | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
+| critical | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `hypercharge_identification_note` | `audited_conditional` | `audited_conditional` | DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_circulant_character_derivation_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
@@ -470,7 +470,7 @@ publication tables phrase it.
 | medium | `lepton_charge_universality_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `mass_mixing_subspace_disjointness_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | medium | `meson_charges_from_quark_y_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `momentum_charge_commute_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
+| medium | `momentum_charge_commute_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_majorana_algebraic_bridge_obstruction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_majorana_no_stationary_scale_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_retained_lanes_note_2026-04-16` | `unaudited` | `unaudited` | PUBLICATION_MATRIX.md |
@@ -499,8 +499,8 @@ publication tables phrase it.
 | medium | `tensor_matching_completion_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `tensor_scalar_ratio_consolidation_theorem_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `tensor_source_map_eta_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `translation_abelian_composition_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
-| medium | `translation_covariance_local_op_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
+| medium | `translation_abelian_composition_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `translation_covariance_local_op_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `u1_fermion_number_conservation_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `universal_gr_block_constraint_interpretation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `universal_gr_casimir_block_localization_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

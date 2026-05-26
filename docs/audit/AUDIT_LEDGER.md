@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 471 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1279 |
+| unaudited | 1278 |
+| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -53,13 +54,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
+| `audit_in_progress` | 1 |
 | `audited_clean` | 756 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1508 |
+| `unaudited` | 1507 |
 
 | claim_type | count |
 |---|---:|
@@ -109,7 +111,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 32.35 | `audited_clean` | **retained** |
 | 15 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
 | 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 563 | 31.14 | `unaudited` | unaudited |
-| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 30.55 | `unaudited` | unaudited |
+| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 30.55 | `audit_in_progress` | audit_in_progress |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `unaudited` | unaudited |
 | 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 908 | 30.33 | `audited_renaming` | ~~audited_renaming~~ |
 | 20 | `cpt_exact_note` | positive_theorem | critical | 901 | 29.82 | `audited_clean` | **retained** |
@@ -124,6 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `plaquette_self_consistency_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |

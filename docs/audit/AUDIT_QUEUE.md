@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `plaquette_self_consistency_note` | bounded_theorem | unaudited | critical | 749 | 30.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_plaquette_self_consistency_finite_mc_repair.py` |
+| 1 | `plaquette_self_consistency_note` | bounded_theorem | audit_in_progress | critical | 749 | 30.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_plaquette_self_consistency_finite_mc_repair.py` |
 | 2 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 723 | 53.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
 | 3 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | unaudited | critical | 703 | 10.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pl_topology_finite_cone_cap_certificate.py` |
 | 4 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 696 | 19.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py` |

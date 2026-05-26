@@ -60625,10 +60625,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a4a1043bb2270a10bd91aca70256ce68fcbf39d8eeb3c1a603e97831e607df1a",
+      "note_hash": "6b991eac0322d06536d26108e888137763778717c4a7d61ce6d622299bd69336",
       "path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
-      "runner_path": "scripts/frontier_koide_moment_ratio_uniformity_theorem.py",
-      "title": "Moment-Ratio Uniformity (MRU) on Cl(d)/Z_d \u2014 conditional support note"
+      "runner_path": "scripts/frontier_koide_mru_reduced_log_volume_repair.py",
+      "title": "Koide MRU Reduced Two-Slot Log-Volume Identity"
     },
     "koide_mru_demotion_note_2026-04-20": {
       "claim_id": "koide_mru_demotion_note_2026-04-20",

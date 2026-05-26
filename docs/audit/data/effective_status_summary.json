@@ -1,40 +1,13 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1057,
+    "bounded_theorem": 1058,
     "decoration": 47,
     "meta": 234,
     "no_go": 255,
     "open_gate": 110,
-    "positive_theorem": 723
+    "positive_theorem": 722
   },
   "cycle_examples": [
-    [
-      "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "lorentz_kernel_positive_closure_note",
-      "emergent_lorentz_invariance_note",
-      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
-      "anomaly_forces_time_theorem",
-      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-    ],
-    [
-      "emergent_lorentz_invariance_note",
-      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
-      "anomaly_forces_time_theorem",
-      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-    ],
-    [
-      "lorentz_kernel_positive_closure_note",
-      "emergent_lorentz_invariance_note",
-      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
-      "anomaly_forces_time_theorem",
-      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-    ],
     [
       "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
       "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
@@ -43,9 +16,13 @@
       "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
       "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
       "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
+    ],
+    [
+      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
     ]
   ],
-  "cycles_detected": 6,
+  "cycles_detected": 3,
   "effective_status_counts": {
     "audited_conditional": 43,
     "audited_failed": 2,

@@ -1,155 +1,103 @@
-# DM Leptogenesis PMNS Analytic Stationary Classification Theorem
+# DM Leptogenesis PMNS Fixed-Chart Hermitian Block Parity Theorem
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-16  
-**Script:** `scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py`  
-**Framework convention:** “axiom” means only `Cl(3)` on `Z^3`
+**Date:** 2026-04-16; fixed-chart parity repair 2026-05-25
+**Status:** bounded-support formal matrix algebra. No reduced `N_e` surface authority, favored-column closure, eta normalization, relative-action selector, KKT branch classification, or stationary-branch minimality is part of the binding theorem.
+**Claim type:** bounded_theorem
+**Primary runner:** `scripts/frontier_dm_pmns_he_parity_repair.py`
 
-## Question
+## Actual claim
 
-Can the PMNS-assisted selector problem on the exact fixed native `N_e` seed
-surface be pushed beyond a branch-scan description into a genuinely analytic
-stationary classification?
+Let `x_1,x_2,x_3,y_1,y_2,y_3` be real coordinates and let `delta` be a real
+phase. Define the supplied fixed-chart matrix
 
-More precisely:
+```text
+Y(delta) =
+[[x1,          y1, 0],
+ [0,           x2, y2],
+ [y3 exp(i delta), 0, x3]].
+```
 
-- can the charged Hermitian block be written in closed form on the exact
-  reduced surface?
-- does the stationary problem admit a clean symmetry reduction?
-- can the existing exact stationary components then be classified on that
-  reduced real slice with an exact branch gap and a unique physical selector?
+Set
 
-## Bottom line
+```text
+H_e(delta) = Y(delta) Y(delta)^dagger.
+```
 
-Yes, as far as the current exact branch honestly supports.
+Then
 
-The new theorem does three things:
+```text
+H_e(delta) =
+[[x1^2+y1^2,              x2 y1,        x1 y3 exp(-i delta)],
+ [x2 y1,                  x2^2+y2^2,    x3 y2],
+ [x1 y3 exp(i delta),     x3 y2,        x3^2+y3^2]].
+```
 
-1. it writes the exact charged Hermitian block on the fixed native `N_e`
-   surface in closed form:
+Moreover,
 
-   \[
-   H_e = Y Y^\dagger
-   \]
+```text
+H_e(-delta) = conjugate(H_e(delta)).
+```
 
-   with
+Therefore every scalar readout invariant under entrywise complex conjugation
+of this Hermitian block is even in `delta`; for example, the trace, trace
+square, determinant, characteristic polynomial coefficients, eigenvalue
+multiset, and Frobenius norm are unchanged under `delta -> -delta`.
 
-   \[
-   Y = \begin{pmatrix}
-   x_1 & y_1 & 0 \\
-   0 & x_2 & y_2 \\
-   y_3 e^{i\delta} & 0 & x_3
-   \end{pmatrix},
-   \qquad
-   H_{13} = x_1 y_3 e^{-i\delta}.
-   \]
+That fixed-chart Hermitian-block formula and conjugation parity are the entire
+repaired theorem.
 
-2. it proves the selector problem is even under \(\delta \to -\delta\),
-   so the stationary classification reduces to the real slice on the physical
-   branch;
+## Why this repair is narrow
 
-3. it rewrites the selector as the exact KKT system for the seed-relative
-   effective action on the reduced surface and classifies the already-proved
-   stationary components there.
+The prior judicial audit accepted the displayed `H_e` formula and
+`delta -> -delta` parity as algebraic, but kept the row conditional because
+the selector conclusion imported helper machinery: reduced `N_e` surface
+authority, seed averages, favored-column closure functional, eta normalization,
+and relative-action/KKT branch selection.
 
-## Closed-form reduction
+This repair withdraws that selector conclusion from the binding claim. It
+preserves only the matrix-algebra theorem that closes from the supplied
+fixed-chart definition of `Y(delta)`.
 
-The exact Hermitian block on the `N_e` chart is
+## Theorem
 
-\[
-H_e =
-\begin{pmatrix}
-x_1^2+y_1^2 & x_2 y_1 & x_1 y_3 e^{-i\delta} \\
-x_2 y_1 & x_2^2+y_2^2 & x_3 y_2 \\
-x_1 y_3 e^{i\delta} & x_3 y_2 & x_3^2+y_3^2
-\end{pmatrix}.
-\]
+**Theorem.** For the supplied fixed-chart matrix `Y(delta)` above,
+`H_e(delta)=Y(delta)Y(delta)^dagger` has the displayed entries and satisfies
+`H_e(-delta)=conjugate(H_e(delta))`.
 
-So \(H_e(\delta)\) and \(H_e(-\delta)\) are conjugate, which implies:
+**Proof.** Multiplying `Y(delta)` by its adjoint gives:
 
-- the seed-relative effective action is even in \(\delta\)
-- the PMNS packet \(|U_e|^2{}^T\) is even in \(\delta\)
-- the selector problem can be classified on the real slice of the reduced
-  domain
+```text
+H11 = x1^2 + y1^2
+H22 = x2^2 + y2^2
+H33 = x3^2 + y3^2
+H12 = x2 y1
+H23 = x3 y2
+H13 = x1 y3 exp(-i delta)
+H31 = x1 y3 exp(i delta).
+```
 
-That is the main closed-form reduction.
+The only phase-dependent entries are `H13` and `H31`, and replacing
+`delta` by `-delta` swaps `exp(i delta)` with `exp(-i delta)`. Since all
+`x_i,y_i` are real, this is exactly entrywise complex conjugation of the
+Hermitian block. Any scalar function unchanged by entrywise conjugation is
+therefore even in `delta` on this supplied chart. QED.
 
-## Reduced stationary system
+## What this row does not claim
 
-On the fixed native `N_e` seed surface, the selector is the KKT system for the
-exact seed-relative effective action subject to the exact closure constraint:
+- It does not derive the fixed `N_e` reduced surface from Cl(3)/Z^3.
+- It does not derive seed averages, favored-column closure, eta normalization, or a PMNS value law.
+- It does not define or derive a relative-action selector.
+- It does not classify stationary KKT branches or prove branch minimality.
+- It does not compute a leptogenesis abundance or select a physical PMNS column.
+- It does not add an axiom or apply an audit verdict.
 
-\[
-\delta \bigl(S_{\rm rel}(H_e \| H_{\rm seed}) - \lambda C\bigr)=0,
-\qquad
-C = \eta_{i_*}/\eta_{\rm obs} - 1.
-\]
+The bridge from this fixed-chart parity algebra to the full PMNS-assisted
+leptogenesis selector remains a separate open science problem.
 
-Because the action and the closure map are even under \(\delta\to-\delta\),
-the relevant physical classification lives on the real slice \(\delta=0\).
-That is the analytic reduction: one phase variable is removed exactly, leaving
-a real KKT problem on the exact reduced surface.
+## Verification
 
-## Branch classification
-
-The existing exact reduced-surface theorem already proves that the admissible
-PMNS-assisted `N_e` closure domain is exactly the fixed native seed surface.
-On that reduced domain, the broad multistart stationary classification used in
-this theorem resolves:
-
-- one low-action branch
-- one higher-action branch
-- a finite action gap between them
-- the low-action branch gives exact closure on the favored column
-
-So the selector is now classified analytically as:
-
-> choose the unique lowest-action stationary branch of the exact seed-relative
-> effective action on the reduced `N_e` surface.
-
-The explicit branch representatives on the current exact branch are:
-
-- low-action branch:
-  - `x = (0.471675, 0.553810, 0.664515)`
-  - `y = (0.208063, 0.464382, 0.247555)`
-  - `delta ~ 0`
-  - `eta / eta_obs = 1`
-- high-action branch:
-  - `x = (0.790189, 0.406763, 0.493049)`
-  - `y = (0.586185, 0.167566, 0.166248)`
-  - `delta ~ 0`
-  - `eta / eta_obs = (1.0, 0.94763529, 0.95876001)`
-
-The action gap in this broad multistart pair remains finite:
-
-- `ΔS > 0.5`
-
-Later certified-global work on the same reduced surface sharpens the total
-stationary branch count to `3`, while preserving the same physical low-action
-selector branch as the unique global minimum. That stronger theorem does not
-change the analytic reductions proved here; it only strengthens the global
-counting/minimality statement.
-
-## What this theorem does and does not claim
-
-This theorem does claim:
-
-- a closed-form reduction of the selector problem to the exact real KKT
-  system on the reduced surface
-- exact analytic parity reduction in \(\delta\)
-- exact broad multistart classification of the dominant stationary components
-  on the reduced surface
-
-This theorem does **not** separately claim:
-
-- a symbolic elimination of every stationary point in the abstract over every
-  conceivable disconnected component outside the reduced surface
-
-That stronger ask would be a different theorem. For the current PMNS-assisted
-`N_e` closure claim, it is not the live hole.
-
-## Command
+Run:
 
 ```bash
-python3 scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py
+PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_he_parity_repair.py
 ```

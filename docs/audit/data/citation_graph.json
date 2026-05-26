@@ -48193,23 +48193,15 @@
     },
     "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
-        "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
-        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
-        "scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py",
-        "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py",
-        "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
-        "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py"
-      ],
-      "note_hash": "94735ad77bcee42110df4cced04793f0641370dc3dd5ce249a8dcdcd994a7e37",
+      "helper_runner_paths": [],
+      "note_hash": "eedfbefeba36d705e2e7bf92ac879531769320efdf439e9af9d77b58aac617e5",
       "path": "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md",
-      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py",
-      "title": "DM Leptogenesis PMNS Analytic Stationary Classification Theorem"
+      "runner_path": "scripts/frontier_dm_pmns_he_parity_repair.py",
+      "title": "DM Leptogenesis PMNS Fixed-Chart Hermitian Block Parity Theorem"
     },
     "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
@@ -85483,11 +85475,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 590,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
-      "none": 1464,
+      "none": 1463,
       "open_gate": 48,
       "positive_theorem": 173
     },

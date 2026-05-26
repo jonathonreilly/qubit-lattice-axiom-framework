@@ -1,0 +1,43 @@
+loop: dm-pmns-he-parity-repair
+branch: physics-loop/dm-pmns-he-parity-repair-20260525
+target_claim_id: dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: formal fixed-chart matrix algebra only
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle: 1
+active_route: fixed-chart Hermitian parity narrowing
+verification:
+  runner: PASS=40 FAIL=0
+  py_compile: pass
+  audit_lint_strict: pass_pre_existing_warning_only
+  controlled_vocabulary_check: pass
+  vocab_lint_report_only: pass
+  diff_check: pass
+audit_queue:
+  claim_type: bounded_theorem
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  open_dependency_paths: []
+  transitive_descendants: 352
+  load_bearing_score: 9.464
+  position: 1
+  ready: true
+  criticality: critical
+runner_classification_hint:
+  A: 10
+  B: 2
+  C: 0
+  D: 0
+review_loop_disposition: PASS_WITH_BOUNDED_CLAIMS
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md
+  - scripts/frontier_dm_pmns_he_parity_repair.py
+  - outputs/dm_pmns_he_parity_repair_2026-05-25.txt
+next_exact_action: commit, push, and open review PR
+stop_condition: review PR opened for independent audit, then continue campaign to next ranked row

@@ -1,54 +1,67 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_oriented_cycle_selection_structure.py
-runner_sha256: b3ba7b5fcf9a1caed22191fd128bf8607dcba31d6fd1644e4e813862413b2307
+runner_sha256: 7282c4adc33a2fa6a066b092b439465a8fd495c7eacfe3d382ab2837ff2b4bc9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
-PMNS ORIENTED CYCLE SELECTION STRUCTURE
+PMNS ORIENTED CYCLE RAW MATRIX REPAIR
 ========================================================================================
 
 Question:
-  Once the oriented cycle channel has a native observable law, what
-  exact selection structure remains on that channel?
+  What finite matrix identities follow for the displayed cycle subspace
+  and prescribed swap-conjugation map?
 
 ========================================================================================
-PART 1: EXACT C3 COVARIANCE COLLAPSES THE CYCLE CHANNEL TO ONE COMPLEX SLOT
+PART 0: SOURCE FIREWALL
 ========================================================================================
-  [PASS] C3 covariance permutes the cycle coefficients cyclically  (coeffs=[ 1. +0.2j -0.3+0.7j  0.5-0.4j], rotated=[-0.3+0.7j  0.5-0.4j  1. +0.2j])
-  [PASS] The exact C3-fixed locus on the cycle channel is sigma*(1,1,1)  (sigma=(0.37+0.11j))
-  [PASS] So the C3-covariant cycle law is exactly one complex slot sigma C
+  [PASS] source note states boundary phrase: Raw Matrix Identities
+  [PASS] source note states boundary phrase: raw-matrix repair
+  [PASS] source note states boundary phrase: does not claim the carrier or native observable/value law
+  [PASS] source note states boundary phrase: does not claim that the specified identity block is any physical
+  [PASS] source note states boundary phrase: does not claim that graph-first induces the prescribed swap-conjugation map
+  [PASS] source note states boundary phrase: The carrier and observable law remain outside this repaired row
+  [PASS] source note states boundary phrase: scripts/frontier_pmns_oriented_cycle_selection_structure.py
+  [PASS] source corpus excludes stale overclaim phrase: carrier and observable law are closed
+  [PASS] source corpus excludes stale overclaim phrase: sole axiom
+  [PASS] source corpus excludes stale overclaim phrase: graph-first selected-axis route
+  [PASS] source corpus excludes stale overclaim phrase: [PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md]
 
 ========================================================================================
-PART 2: THE SOLE-AXIOM FREE POINT SELECTS SIGMA = 0
+PART 1: EXACT C3 COVARIANCE COLLAPSES TO ONE COMPLEX SLOT
 ========================================================================================
-  [PASS] The free active block has zero oriented-cycle coefficients  (coeffs=[0.+0.j 0.+0.j 0.+0.j])
-  [PASS] Therefore the sole-axiom free point has sigma = 0  (sigma=0j)
-  [INFO] Exact sole-axiom C3 covariance selects only the trivial cycle law at the free point
+  [PASS] C3 conjugation cyclically permutes forward-cycle coefficients  (rotated=[-0.3+0.7j  0.5-0.4j  1. +0.2j])
+  [PASS] The exact C3 fixed locus contains sigma*(1,1,1)  (sigma=(0.37+0.11j))
+  [PASS] The C3-fixed block is exactly sigma C
 
 ========================================================================================
-PART 3: GRAPH-FIRST SELECTED AXIS REDUCES THE CYCLE CHANNEL TO A 3-REAL SUBFAMILY
+PART 2: SPECIFIED IDENTITY INPUT HAS ZERO CYCLE COEFFICIENTS
 ========================================================================================
-  [PASS] The residual swap-conjugation map preserves the cycle channel
-  [PASS] Its fixed locus is c1 = conjugate(c3), c2 real  (coeffs=[0.41+0.32j 0.28+0.j   0.41-0.32j])
-  [PASS] A generic cycle triple is not fixed by that residual antiunitary symmetry  (coeffs=[0.41+0.32j 0.28+0.07j 0.33-0.11j])
-  [INFO] The graph-first selected-axis route reduces the cycle channel to 3 real parameters  ((Re c1, Im c1, c2))
+  [PASS] I3 has zero forward-cycle coefficients  (coeffs=[0.+0.j 0.+0.j 0.+0.j])
+  [PASS] Therefore the specified identity input has sigma = 0  (sigma=0j)
+  [INFO] This is only a matrix identity on I3, not a physical free-point bridge.
+
+========================================================================================
+PART 3: PRESCRIBED SWAP-CONJUGATION FIXED LOCUS
+========================================================================================
+  [PASS] The prescribed swap-conjugation map preserves the displayed cycle support
+  [PASS] Its fixed locus contains c1 = conjugate(c3), c2 real  (coeffs=[0.41+0.32j 0.28+0.j   0.41-0.32j])
+  [PASS] A generic cycle triple is not fixed by the prescribed map  (coeffs=[0.41+0.32j 0.28+0.07j 0.33-0.11j])
+  [INFO] The prescribed map leaves a 3-real fixed family: (Re c1, Im c1, c2).
 
 ========================================================================================
 RESULT
 ========================================================================================
-  Exact selection structure on the oriented cycle channel:
-    - exact C3 covariance collapses it to sigma C
-    - the sole-axiom free point sets sigma = 0
-    - graph-first selected-axis symmetry reduces the channel further to
-      c1 = conjugate(c3), c2 real
+  Raw finite matrix identities:
+    - exact C3 covariance collapses the displayed cycle subspace to sigma C
+    - the specified identity input sets sigma = 0
+    - the prescribed swap-conjugation map fixes c1 = conjugate(c3), c2 real
 
-  So the cycle carrier and its observable law are closed, and the
-  remaining gap is only a value-selection law for that reduced channel.
+  The carrier and observable law remain outside this repaired row.
 
-PASS=8 FAIL=0
+PASS=19 FAIL=0
 
 ----- stderr -----
 

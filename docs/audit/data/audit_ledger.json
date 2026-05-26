@@ -203759,7 +203759,7 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 18,
+      "direct_in_degree": 17,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -203767,7 +203767,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 17.633,
+      "load_bearing_score": 17.126,
       "load_bearing_step": "Therefore any canonical active block has the exact native oriented-cycle decomposition A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31 with coefficient law (c_1, c_2, c_3) = diag(A C^dagger).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -203855,7 +203855,7 @@
       },
       "runner_path": "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
       "title": "PMNS Oriented Cycle Channel Value Law",
-      "transitive_descendants": 396,
+      "transitive_descendants": 394,
       "verdict_rationale": "The load-bearing step is a class-A matrix identity over the projected forward-cycle basis, not a numerical fit or definition-as-derivation. The cached runner for SHA 531e8147f7aa2e6e9c13b9f5ddf6b03ae7862a18e968627d815d5f748b7f79ec exits 0 with PASS=10 FAIL=0 and checks the projected cycle, projected scalar projectors, edge basis, coefficient extraction, reconstruction, mean identity, and response-profile round trip. Residual risk is only scope creep: this audit does not certify sole-axiom selection of the canonical active block or of the coefficient values."
     },
     "pmns_oriented_cycle_reduced_channel_nonselection_note": {
@@ -204049,16 +204049,11 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "pmns_oriented_cycle_channel_value_law_note"
-      ],
+      "deps": [],
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
-      "helper_runner_paths": [
-        "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
-        "scripts/pmns_lower_level_utils.py"
-      ],
+      "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
       "load_bearing_score": 10.615,
@@ -204066,7 +204061,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "ab21242fbd981531488d702a01c4698c8af933ccd75bdca1a3d97d1bfaffa305",
+      "note_hash": "6c18546d1985e6c7c588314f96f178e8d5c77eeae8a68c07837f3baa3ba731ba",
       "note_path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

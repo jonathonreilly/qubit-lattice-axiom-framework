@@ -1,43 +1,45 @@
 #!/usr/bin/env python3
-"""Selection structure on the oriented forward cycle channel.
+"""Raw finite matrix identities for the PMNS oriented-cycle row.
 
-Question:
-  Once the oriented forward cycle channel has an exact native observable law,
-  what exact selection structure remains on that channel?
+This runner deliberately checks only the displayed 3x3 matrices and maps:
 
-Answer:
-  Three raw matrix identities survive:
+  1. exact C3 covariance on A_fwd = c1 E12 + c2 E23 + c3 E31;
+  2. zero forward-cycle coefficients for the specified identity matrix I3;
+  3. the fixed locus of the prescribed map A -> P23 A^dag P23.
 
-    1. under exact C3 covariance on the hw=1 triplet, the cycle coefficients
-       collapse to the one-complex slot sigma * (1,1,1), i.e. sigma C
-    2. on the specified identity block I3, sigma = 0
-
-  For the prescribed residual antiunitary map on the cycle channel,
-
-      A_fwd = P23 A_fwd^dag P23
-
-  whose fixed locus is
-
-      c1 = conjugate(c3),  c2 real
-
-  so the prescribed map reduces the cycle channel to a 3-real subfamily,
-  but still does not fix the values.
+It also checks that the repaired source note excludes the prior
+carrier/value-law and physical-bridge readings.
 """
 
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 
 import numpy as np
 
-from pmns_lower_level_utils import CYCLE, I3
-from frontier_pmns_oriented_cycle_channel_value_law import oriented_cycle_coeffs_from_block
-
 np.set_printoptions(precision=6, suppress=True, linewidth=140)
+
+ROOT = Path(__file__).resolve().parents[1]
+CLAIM_ID = "pmns_oriented_cycle_selection_structure_note"
+RUNNER_PATH = "scripts/frontier_pmns_oriented_cycle_selection_structure.py"
+NOTE_PATH = ROOT / "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
+
+def e(i: int, j: int) -> np.ndarray:
+    out = np.zeros((3, 3), dtype=complex)
+    out[i, j] = 1.0
+    return out
+
+
+E12 = e(0, 1)
+E23 = e(1, 2)
+E31 = e(2, 0)
+CYCLE = E12 + E23 + E31
+I3 = np.eye(3, dtype=complex)
 P23 = np.array([[1, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex)
 
 
@@ -55,20 +57,13 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def e(i: int, j: int) -> np.ndarray:
-    out = np.zeros((3, 3), dtype=complex)
-    out[i, j] = 1.0
-    return out
-
-
-E12 = e(0, 1)
-E23 = e(1, 2)
-E31 = e(2, 0)
-
-
 def cycle_block(coeffs: np.ndarray) -> np.ndarray:
     c1, c2, c3 = np.asarray(coeffs, dtype=complex)
     return c1 * E12 + c2 * E23 + c3 * E31
+
+
+def forward_cycle_coeffs(a: np.ndarray) -> np.ndarray:
+    return np.array([a[0, 1], a[1, 2], a[2, 0]], dtype=complex)
 
 
 def cycle_covariant_rotate(a: np.ndarray) -> np.ndarray:
@@ -79,88 +74,135 @@ def residual_swap_conjugate(a: np.ndarray) -> np.ndarray:
     return P23 @ a.conj().T @ P23
 
 
-def part1_exact_c3_covariance_collapses_the_cycle_channel_to_one_complex_slot() -> None:
+def forbidden_phrases() -> list[str]:
+    return [
+        "carrier and observable law are " + "closed",
+        "sole " + "axiom",
+        "graph-first selected-axis " + "route",
+        "[" + "PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md" + "]",
+    ]
+
+
+def part0_source_firewall() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: EXACT C3 COVARIANCE COLLAPSES THE CYCLE CHANNEL TO ONE COMPLEX SLOT")
+    print("PART 0: SOURCE FIREWALL")
     print("=" * 88)
 
-    a = cycle_block(np.array([1.0 + 0.2j, -0.3 + 0.7j, 0.5 - 0.4j], dtype=complex))
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    source = Path(__file__).read_text(encoding="utf-8")
+    corpus = note + "\n" + source
+
+    required_note_phrases = [
+        "Raw Matrix Identities",
+        "raw-matrix repair",
+        "does not claim the carrier or native observable/value law",
+        "does not claim that the specified identity block is any physical",
+        "does not claim that graph-first induces the prescribed swap-conjugation map",
+        "The carrier and observable law remain outside this repaired row",
+        RUNNER_PATH,
+    ]
+    for phrase in required_note_phrases:
+        check(f"source note states boundary phrase: {phrase}", phrase in note)
+
+    for phrase in forbidden_phrases():
+        check(f"source corpus excludes stale overclaim phrase: {phrase}", phrase not in corpus)
+
+
+def part1_exact_c3_covariance_collapses_to_one_complex_slot() -> None:
+    print("\n" + "=" * 88)
+    print("PART 1: EXACT C3 COVARIANCE COLLAPSES TO ONE COMPLEX SLOT")
+    print("=" * 88)
+
+    coeffs = np.array([1.0 + 0.2j, -0.3 + 0.7j, 0.5 - 0.4j], dtype=complex)
+    a = cycle_block(coeffs)
     rotated = cycle_covariant_rotate(a)
-    coeffs = oriented_cycle_coeffs_from_block(a)
-    coeffs_rot = oriented_cycle_coeffs_from_block(rotated)
+    rotated_coeffs = forward_cycle_coeffs(rotated)
     sigma = 0.37 + 0.11j
     sigma_block = cycle_block(np.array([sigma, sigma, sigma], dtype=complex))
 
-    check("C3 covariance permutes the cycle coefficients cyclically",
-          np.linalg.norm(coeffs_rot - np.array([coeffs[1], coeffs[2], coeffs[0]], dtype=complex)) < 1e-12,
-          f"coeffs={np.round(coeffs, 6)}, rotated={np.round(coeffs_rot, 6)}")
-    check("The exact C3-fixed locus on the cycle channel is sigma*(1,1,1)",
-          np.linalg.norm(cycle_covariant_rotate(sigma_block) - sigma_block) < 1e-12,
-          f"sigma={sigma}")
-    check("So the C3-covariant cycle law is exactly one complex slot sigma C", np.linalg.norm(sigma_block - sigma * CYCLE) < 1e-12)
+    check(
+        "C3 conjugation cyclically permutes forward-cycle coefficients",
+        np.linalg.norm(rotated_coeffs - np.array([coeffs[1], coeffs[2], coeffs[0]], dtype=complex)) < 1e-12,
+        f"rotated={np.round(rotated_coeffs, 6)}",
+    )
+    check(
+        "The exact C3 fixed locus contains sigma*(1,1,1)",
+        np.linalg.norm(cycle_covariant_rotate(sigma_block) - sigma_block) < 1e-12,
+        f"sigma={sigma}",
+    )
+    check(
+        "The C3-fixed block is exactly sigma C",
+        np.linalg.norm(sigma_block - sigma * CYCLE) < 1e-12,
+    )
 
 
-def part2_the_specified_identity_block_has_sigma_zero() -> None:
+def part2_specified_identity_input_has_zero_cycle_coefficients() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE SPECIFIED IDENTITY BLOCK HAS SIGMA = 0")
+    print("PART 2: SPECIFIED IDENTITY INPUT HAS ZERO CYCLE COEFFICIENTS")
     print("=" * 88)
 
-    identity_block = I3.copy()
-    coeffs = oriented_cycle_coeffs_from_block(identity_block)
+    coeffs = forward_cycle_coeffs(I3)
     sigma = np.mean(coeffs)
 
-    check("The specified identity block has zero oriented-cycle coefficients", np.linalg.norm(coeffs) < 1e-12,
-          f"coeffs={np.round(coeffs, 6)}")
-    check("Therefore the specified identity block has sigma = 0", abs(sigma) < 1e-12, f"sigma={sigma}")
-    print("  [INFO] This is a raw matrix identity on I3, not a free-point identification")
+    check("I3 has zero forward-cycle coefficients", np.linalg.norm(coeffs) < 1e-12, f"coeffs={np.round(coeffs, 6)}")
+    check("Therefore the specified identity input has sigma = 0", abs(sigma) < 1e-12, f"sigma={sigma}")
+    print("  [INFO] This is only a matrix identity on I3, not a physical free-point bridge.")
 
 
-def part3_prescribed_swap_conjugation_has_a_3_real_fixed_subfamily() -> None:
+def part3_prescribed_swap_conjugation_fixed_locus() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: PRESCRIBED SWAP-CONJUGATION MAP HAS A 3-REAL FIXED SUBFAMILY")
+    print("PART 3: PRESCRIBED SWAP-CONJUGATION FIXED LOCUS")
     print("=" * 88)
 
     coeffs_good = np.array([0.41 + 0.32j, 0.28 + 0.0j, 0.41 - 0.32j], dtype=complex)
     coeffs_bad = np.array([0.41 + 0.32j, 0.28 + 0.07j, 0.33 - 0.11j], dtype=complex)
     a_good = cycle_block(coeffs_good)
     a_bad = cycle_block(coeffs_bad)
+    mapped_good = residual_swap_conjugate(a_good)
+    mapped_bad = residual_swap_conjugate(a_bad)
 
-    check("The residual swap-conjugation map preserves the cycle channel", np.array_equal(np.abs(residual_swap_conjugate(a_good)) > 1e-12, np.abs(a_good) > 1e-12))
-    check("Its fixed locus is c1 = conjugate(c3), c2 real",
-          np.linalg.norm(residual_swap_conjugate(a_good) - a_good) < 1e-12,
-          f"coeffs={np.round(coeffs_good, 6)}")
-    check("A generic cycle triple is not fixed by that residual antiunitary symmetry",
-          np.linalg.norm(residual_swap_conjugate(a_bad) - a_bad) > 1e-6,
-          f"coeffs={np.round(coeffs_bad, 6)}")
-    print("  [INFO] The prescribed map reduces the cycle channel to 3 real parameters  ((Re c1, Im c1, c2))")
+    check(
+        "The prescribed swap-conjugation map preserves the displayed cycle support",
+        np.array_equal(np.abs(mapped_good) > 1e-12, np.abs(a_good) > 1e-12),
+    )
+    check(
+        "Its fixed locus contains c1 = conjugate(c3), c2 real",
+        np.linalg.norm(mapped_good - a_good) < 1e-12,
+        f"coeffs={np.round(coeffs_good, 6)}",
+    )
+    check(
+        "A generic cycle triple is not fixed by the prescribed map",
+        np.linalg.norm(mapped_bad - a_bad) > 1e-6,
+        f"coeffs={np.round(coeffs_bad, 6)}",
+    )
+    print("  [INFO] The prescribed map leaves a 3-real fixed family: (Re c1, Im c1, c2).")
 
 
 def part4_result() -> None:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact selection structure on the oriented cycle channel:")
-    print("    - exact C3 covariance collapses it to sigma C")
-    print("    - the specified identity block sets sigma = 0")
-    print("    - prescribed swap-conjugation symmetry reduces the channel further to")
-    print("      c1 = conjugate(c3), c2 real")
+    print("  Raw finite matrix identities:")
+    print("    - exact C3 covariance collapses the displayed cycle subspace to sigma C")
+    print("    - the specified identity input sets sigma = 0")
+    print("    - the prescribed swap-conjugation map fixes c1 = conjugate(c3), c2 real")
     print()
-    print("  So the raw matrix identities on the oriented-cycle channel are closed.")
-    print("  Any sole-axiom or graph-first interpretation is outside this runner.")
+    print("  The carrier and observable law remain outside this repaired row.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("PMNS ORIENTED CYCLE SELECTION STRUCTURE")
+    print("PMNS ORIENTED CYCLE RAW MATRIX REPAIR")
     print("=" * 88)
     print()
     print("Question:")
-    print("  Once the oriented cycle channel has a native observable law, what")
-    print("  exact selection structure remains on that channel?")
+    print("  What finite matrix identities follow for the displayed cycle subspace")
+    print("  and prescribed swap-conjugation map?")
 
-    part1_exact_c3_covariance_collapses_the_cycle_channel_to_one_complex_slot()
-    part2_the_specified_identity_block_has_sigma_zero()
-    part3_prescribed_swap_conjugation_has_a_3_real_fixed_subfamily()
+    part0_source_firewall()
+    part1_exact_c3_covariance_collapses_to_one_complex_slot()
+    part2_specified_identity_input_has_zero_cycle_coefficients()
+    part3_prescribed_swap_conjugation_fixed_locus()
     part4_result()
 
     print()

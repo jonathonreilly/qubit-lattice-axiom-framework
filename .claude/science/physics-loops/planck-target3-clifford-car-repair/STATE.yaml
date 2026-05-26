@@ -1,0 +1,40 @@
+loop_slug: planck-target3-clifford-car-repair
+date: 2026-05-25
+mode: campaign_block
+base_ref: origin/main
+base_commit: c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+branch: physics-loop/planck-target3-clifford-car-repair-20260525
+target_claim:
+  claim_id: planck_target3_clifford_phase_bridge_theorem_note_2026-04-25
+  note_path: docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md
+  prior_audit_status: audited_conditional
+  prior_effective_status: audited_conditional
+  criticality: critical
+  transitive_descendants: 889
+repair_summary:
+  old_blocker: metric-compatible coframe response and source-unit normalization were not retained as broad closure
+  new_scope: conditional Clifford/CAR carrier forcing c_Widom=c_cell=1/4 only
+  runner: scripts/frontier_planck_target3_clifford_phase_bridge.py
+  no_new_axioms: true
+  audit_verdict_applied: false
+status_firewall:
+  actual_current_surface_status: conditional-support
+  conditional_surface_status: metric-compatible Clifford coframe response on P_A H_cell
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: coframe response remains conditional and source-unit normalization is out of scope
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+pipeline_after_repair:
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  audit_queue_position: 1
+  ready: true
+verification:
+  runner: outputs/planck_target3_clifford_car_repair_2026-05-25.txt
+  runner_result: "PASS=40 FAIL=0"
+  pipeline: docs/audit/scripts/run_pipeline.sh
+  pipeline_result: completed with only pre-existing Maradudin warning
+next_action: open review PR; independent auditor decides effective status

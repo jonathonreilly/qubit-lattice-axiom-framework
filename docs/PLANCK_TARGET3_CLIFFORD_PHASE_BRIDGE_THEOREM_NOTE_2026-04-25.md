@@ -1,6 +1,8 @@
 # Planck Target 3 Clifford Phase Bridge Theorem
 
-**Date:** 2026-04-25
+**Date:** 2026-04-25; 2026-05-25 (conditional Clifford/CAR repair:
+source-unit normalization and the `G_Newton,lat`, `a/l_P` map removed from
+this theorem scope)
 **Status:** support / conditional Target 3 bridge; 2026-04-30 carrier
 identification audited_renaming; not an SI decimal derivation of `hbar`
 **Runner:** `scripts/frontier_planck_target3_clifford_phase_bridge.py`
@@ -34,6 +36,11 @@ the irreducible complex `Cl_4` module, which is equivalent to two complex CAR
 modes. Therefore the last Target 2 carrier premise remains the
 metric-compatible Clifford coframe response, not a fitted entropy axiom.
 
+This repaired row stops at the conditional Clifford/CAR carrier and the exact
+coefficient equality `c_Widom=c_cell=1/4`. It does not claim the downstream
+source-unit normalization map to `G_Newton,lat=1` or `a/l_P=1`.
+Firewall phrase: does not claim the downstream source-unit normalization map.
+
 The distinction remains important: the stripped Hilbert-only surface still
 does not force CAR. Since the 2026-04-30 construction was not audit-ratified,
 this note keeps its original conditional reading.
@@ -46,7 +53,7 @@ this note keeps its original conditional reading.
 | time-locked primitive event cell `C^2_t otimes C^2_x otimes C^2_y otimes C^2_z` | four-axis primitive event coframe | retained Planck packet |
 | `P_A H_cell`, `rank(P_A)=4` | active primitive boundary block | retained Planck packet |
 | metric-compatible Clifford response `D(v)^2=||v||^2 I` | primitive active-block coframe response needed for the bridge | explicit conditional premise; the 2026-04-30 construction was audited_renaming |
-| source-unit normalization theorem | maps `c_cell=1/4` to `G_Newton,lat=1` and `a/l_P=1` | retained support theorem |
+| source-unit normalization theorem | optional downstream unit map | out of scope for this repaired row |
 
 No measured value of `G`, `hbar`, `l_P`, or `M_Pl` is imported.
 
@@ -124,15 +131,8 @@ Then:
    c_cell = Tr((I_16/16)P_A) = 4/16 = 1/4.
    ```
 
-Together with the source-unit normalization support theorem, the same
-conditional structural carrier gives
-
-```text
-G_Newton,lat = 1,
-a/l_P = 1
-```
-
-in the package's natural phase/action units.
+The downstream source-unit normalization map is outside this theorem. The
+runner records that no `G_Newton,lat` or `a/l_P` closure is claimed here.
 
 ## Proof
 
@@ -305,12 +305,10 @@ metrology. What closes here is the package-level structural bridge:
 native phase/action unit
   -> Clifford coframe edge statistics
   -> c_Widom = c_cell = 1/4
-  -> G_Newton,lat = 1
-  -> a/l_P = 1
 ```
 
-where the last two arrows use the retained source-unit normalization support
-theorem.
+The source-unit normalization arrows are intentionally not part of this
+repaired row.
 
 ## Relation to retained no-gos
 
@@ -334,9 +332,9 @@ Safe wording:
 > `P_A H_cell`, the active block is the irreducible `Cl_4(C)` module,
 > equivalently two complex CAR modes. The Target 2 area-law carrier is then
 > fixed without an entropy fit, and its exact coefficient equals the Planck
-> primitive trace, `c_Widom=c_cell=1/4`. With the source-unit normalization
-> support theorem this gives `G_Newton,lat=1` and `a/l_P=1` in natural
-> phase/action units. The 2026-04-30 attempt to derive the carrier from the
+> primitive trace, `c_Widom=c_cell=1/4`. This repaired row does not claim
+> `G_Newton,lat=1` or `a/l_P=1`; those require a separate source-unit
+> normalization authority. The 2026-04-30 attempt to derive the carrier from the
 > substrate was audited as `audited_renaming`, so this remains conditional.
 
 Unsafe wording:
@@ -366,13 +364,13 @@ The runner checks:
 8. exclusion of two-qubit and ququart semantics by the coframe law;
 9. exact `c_Widom=1/4`;
 10. equality `c_Widom=c_cell`;
-11. `lambda=1`, `G_Newton,lat=1`, and `a/l_P=1` in natural units;
-12. guardrails against claiming bare-Hilbert or SI-`hbar` closure.
+11. guardrails against claiming source-unit, bare-Hilbert, or SI-`hbar`
+    closure.
 
 Current output:
 
 ```text
-Summary: PASS=34  FAIL=0
+Summary: PASS=40  FAIL=0
 ```
 
 ## Audit dependency repair links

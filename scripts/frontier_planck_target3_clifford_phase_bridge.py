@@ -24,8 +24,10 @@ PStack experiment: frontier-planck-target3-clifford-phase-bridge
 from __future__ import annotations
 
 import itertools
+import json
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -33,6 +35,9 @@ import numpy as np
 PASS_COUNT = 0
 FAIL_COUNT = 0
 TOL = 1.0e-12
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md"
+CLAIM_ID = "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
 
 
 def check(name: str, passed: bool, detail: str) -> bool:
@@ -44,6 +49,37 @@ def check(name: str, passed: bool, detail: str) -> bool:
         FAIL_COUNT += 1
     print(f"[{status}] {name}: {detail}")
     return passed
+
+
+def support(name: str, detail: str) -> None:
+    print(f"[INFO] {name}: {detail}")
+
+
+def source_scope_firewall() -> None:
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    required = [
+        "conditional Clifford/CAR repair",
+        "stops at the conditional Clifford/CAR carrier",
+        "does not claim the downstream source-unit normalization map",
+        "no `G_Newton,lat` or `a/l_P` closure is claimed here",
+    ]
+    for needle in required:
+        check(f"source note contains {needle!r}", needle in note_text, "scope witness")
+
+    forbidden = [
+        "Together with the source-unit normalization support theorem",
+        "this gives `G_Newton,lat=1` and `a/l_P=1`",
+        "`lambda=1`, `G_Newton,lat=1`, and `a/l_P=1`",
+    ]
+    for needle in forbidden:
+        check(f"source note avoids source-unit overclaim {needle!r}", needle not in note_text, "source-unit map out of scope")
+
+    ledger = json.loads((ROOT / "docs" / "audit" / "data" / "audit_ledger.json").read_text())
+    row = ledger["rows"].get(CLAIM_ID)
+    check(f"{CLAIM_ID} seeded", row is not None, "audit ledger row present")
+    if row is not None:
+        check("claim type remains positive_theorem", row.get("claim_type") == "positive_theorem", str(row.get("claim_type")))
+        check("repaired row has no load-bearing markdown deps", set(row.get("deps", [])) == set(), str(row.get("deps", [])))
 
 
 I2 = np.eye(2, dtype=complex)
@@ -151,6 +187,8 @@ def main() -> int:
     print("Question: under the primitive Clifford/coframe response premise,")
     print("does the rank-four active block force the CAR edge carrier?")
     print()
+
+    source_scope_firewall()
 
     # Primitive cell and phase/action bookkeeping.
     dim_cell = 16
@@ -377,29 +415,9 @@ def main() -> int:
         f"c_Widom={c_widom:.12f}, c_cell={c_cell:.12f}",
     )
 
-    lambda_source = 4.0 * c_cell
-    g_newton_lat = 1.0 / lambda_source
-    area_coeff = 1.0 / (4.0 * g_newton_lat)
-    a_over_l_planck = 1.0 / math.sqrt(g_newton_lat)
-    check(
-        "primitive carrier fixes the physical source-unit scale lambda=1",
-        math.isclose(lambda_source, 1.0, abs_tol=1.0e-15),
-        "lambda=4*c_cell=1",
-    )
-    check(
-        "source-normalized lattice Newton coefficient is one",
-        math.isclose(g_newton_lat, 1.0, abs_tol=1.0e-15),
-        "G_Newton,lat=1/lambda=1",
-    )
-    check(
-        "Planck area coefficient matches the Clifford-CAR carrier",
-        math.isclose(area_coeff, c_widom, abs_tol=1.0e-15),
-        "1/(4G_Newton,lat)=1/4=c_Widom",
-    )
-    check(
-        "natural-unit Planck map gives a/l_P=1",
-        math.isclose(a_over_l_planck, 1.0, abs_tol=1.0e-15),
-        "l_P^2=G_phys=a^2 in hbar=c=1 units",
+    support(
+        "source-unit normalization map out of theorem scope",
+        "the runner stops at c_Widom=c_cell=1/4 and does not claim G_Newton,lat or a/l_P",
     )
 
     # Scope guardrails.
@@ -427,8 +445,8 @@ def main() -> int:
             "Verdict: conditional structural Target 3 bridge. Under the "
             "metric-compatible Clifford coframe response premise, the "
             "rank-four active block is forced to be the irreducible Cl_4/CAR "
-            "edge carrier, which gives c_Widom=c_cell=1/4 and, with source-unit normalization, "
-            "G_lat=1 and a/l_P=1 in natural phase/action units."
+            "edge carrier, which gives c_Widom=c_cell=1/4. The source-unit "
+            "normalization map is outside this repaired theorem scope."
         )
         return 0
     return 1

@@ -16911,8 +16911,8 @@
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": {
       "assert_count": 1,
       "counts": {
-        "A": 10,
-        "B": 0,
+        "A": 6,
+        "B": 2,
         "C": 20,
         "D": 0
       },
@@ -43435,8 +43435,8 @@
         "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
       ],
       "counts": {
-        "A": 10,
-        "B": 0,
+        "A": 6,
+        "B": 2,
         "C": 20,
         "D": 0
       },

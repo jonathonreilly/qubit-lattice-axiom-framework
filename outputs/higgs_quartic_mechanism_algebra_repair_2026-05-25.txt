@@ -1,0 +1,61 @@
+Higgs formal quartic mechanism algebra repair
+
+========================================================================================
+Source-note boundary
+========================================================================================
+  [PASS] note contains required boundary: 'bounded-support formal scalar-potential algebra'
+  [PASS] note contains required boundary: 'That formal quartic-potential mechanism is the entire repaired theorem.'
+  [PASS] note contains required boundary: 'This repair does not supply that missing physical bridge.'
+  [PASS] note contains required boundary: 'The physical bridge from this formal quartic-potential algebra to a framework-native Higgs mechanism remains a separate open science problem.'
+  [PASS] note avoids overclaim phrase: 'Higgs mechanism is derived from Cl(3)/Z^3'
+  [PASS] note avoids overclaim phrase: 'Coleman-Weinberg effective potential is derived from the framework'
+  [PASS] note avoids overclaim phrase: 'physical Higgs mass is predicted'
+  [PASS] note avoids overclaim phrase: 'lambda(M_Pl) is derived'
+  [PASS] note avoids overclaim phrase: 'bare-parameter substrate is derived'
+
+========================================================================================
+Symbolic quartic algebra
+========================================================================================
+  [PASS] stationary derivative factorizes as r(-mu2 + lambda r^2)
+  [PASS] broken radius solves stationarity
+  [PASS] broken minimum value is -mu2^2/(4 lambda) (-mu2**2/(4*lambda))
+  [PASS] radial curvature at broken radius is 2 mu2 (2*mu2)
+  [PASS] curvature equals 2 lambda v^2
+  [PASS] unbroken potential has zero value at origin
+  [PASS] unbroken potential derivative vanishes at origin
+  [PASS] unbroken curvature at origin is m2
+
+========================================================================================
+Numeric global-minimum samples
+========================================================================================
+  [PASS] lambda=1, m2=-0.25: minimum near broken radius (grid_min=0.500 expected=0.500)
+  [PASS] lambda=1, m2=-0.25: broken value below origin (Vmin=-0.015625)
+  [PASS] lambda=0.75, m2=-1.5: minimum near broken radius (grid_min=1.410 expected=1.414)
+  [PASS] lambda=0.75, m2=-1.5: broken value below origin (Vmin=-0.749973)
+  [PASS] lambda=2, m2=-3: minimum near broken radius (grid_min=1.220 expected=1.225)
+  [PASS] lambda=2, m2=-3: broken value below origin (Vmin=-1.124933)
+  [PASS] lambda=0.5, m2=0: minimum at origin (grid_min=0.000)
+  [PASS] lambda=0.5, m2=0: minimum value equals origin (Vmin=0.000000)
+  [PASS] lambda=1.5, m2=0.4: minimum at origin (grid_min=0.000)
+  [PASS] lambda=1.5, m2=0.4: minimum value equals origin (Vmin=0.000000)
+
+========================================================================================
+Negative controls
+========================================================================================
+  [PASS] lambda < 0 sample is unbounded along larger radius (V(10)=-1300.000)
+  [PASS] m2 > 0 sample has no nonzero broken minimum (argmin=0.000)
+
+========================================================================================
+Audit metadata after pipeline regeneration
+========================================================================================
+  [PASS] higgs_mechanism_note row exists
+  [PASS] claim_type is bounded_theorem (bounded_theorem)
+  [PASS] audit_status reset to unaudited (unaudited)
+  [PASS] effective_status reset to unaudited (unaudited)
+  [PASS] runner path is formal quartic repair runner (scripts/frontier_higgs_quartic_mechanism_algebra_repair.py)
+  [PASS] direct deps are empty for formal quartic theorem ([])
+  [PASS] open dependency paths are empty ([])
+
+========================================================================================
+TOTAL: PASS=36 FAIL=0
+========================================================================================

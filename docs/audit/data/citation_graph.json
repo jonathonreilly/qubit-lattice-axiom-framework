@@ -57978,10 +57978,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "e2d8370bbc0e683ff44647fa992bf3b4db392a28200a2370ed7cbeb3ee7e5c1b",
+      "note_hash": "2c15d486b0f35d075679d330b811893ef65204eef783c4eeaa1d233b0925fb9f",
       "path": "docs/HIGGS_MECHANISM_NOTE.md",
-      "runner_path": "scripts/frontier_higgs_mass_derived.py",
-      "title": "Higgs Mechanism Note"
+      "runner_path": "scripts/frontier_higgs_quartic_mechanism_algebra_repair.py",
+      "title": "Higgs Mechanism Formal Quartic Algebra Note"
     },
     "higgs_taste_singlet_projection_bounded_note_2026-05-09": {
       "claim_id": "higgs_taste_singlet_projection_bounded_note_2026-05-09",

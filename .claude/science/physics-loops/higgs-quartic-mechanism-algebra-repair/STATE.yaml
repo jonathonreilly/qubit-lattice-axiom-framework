@@ -1,0 +1,38 @@
+loop: higgs-quartic-mechanism-algebra-repair
+branch: physics-loop/higgs-quartic-mechanism-algebra-repair-20260525
+target_claim_id: higgs_mechanism_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: formal quartic scalar-potential algebra only
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle: 1
+active_route: formal quartic algebra narrowing
+verification:
+  runner: PASS=36 FAIL=0
+  py_compile: pass
+  audit_lint_strict: pass_pre_existing_warning_only
+  controlled_vocabulary_check: pass
+  vocab_lint_report_only: pass
+  diff_check: pass
+audit_queue:
+  claim_type: bounded_theorem
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  open_dependency_paths: []
+  transitive_descendants: 470
+  load_bearing_score: 11.88
+  position: 1
+  ready: true
+  criticality: critical
+review_loop_disposition: PASS_WITH_BOUNDED_CLAIMS
+files_touched:
+  - docs/HIGGS_MECHANISM_NOTE.md
+  - scripts/frontier_higgs_quartic_mechanism_algebra_repair.py
+  - outputs/higgs_quartic_mechanism_algebra_repair_2026-05-25.txt
+next_exact_action: commit, push, and open review PR
+stop_condition: review PR opened for independent audit, then continue campaign to next ranked row

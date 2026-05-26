@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 98 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,21 +54,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 98 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1455 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1058 |
+| `bounded_theorem` | 1059 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 247 |
 | `open_gate` | 112 |
-| `positive_theorem` | 726 |
+| `positive_theorem` | 725 |
 
 | criticality | count |
 |---|---:|
@@ -875,6 +875,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -1570,6 +1571,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `.claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md`
   - `LEFT_HANDED_CHARGE_MATCHING_NOTE.md`
+- **auditor confidence:** high
+
+### `audited_symmetry_synthesis_note`
+
+- **Note:** [`AUDITED_SYMMETRY_SYNTHESIS_NOTE.md`](../../docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Synthesis audit of the bounded symmetry-program summary: exact 2D mirror, exact mirror chokepoint, Z2 x Z2 joint validation, higher-symmetry gravity limitations, structured-growth Born failure, and bounded mirror MI diagnostics as supported by the supplied one-hop notes and runner packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260526T020226Z-f19e4291-audited_symmetry_synthes-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The strongest audited story is that exact 2D mirror, exact mirror, and Z2 x Z2 provide mature bounded symmetry-protected coexistence lanes while structured mirror growth remains only a geometry result until its propagator is Born-safe.  _(class `B`)_
+- **chain closes:** False — The qualitative synthesis mostly follows from retained-bounded cited authorities, but the Z2 x Z2 table and exponent in the source note use the older 32-seed raw log, while the cited authority says the binding registered cache is the 16-seed run with different values and alpha. The note also presents the mirror chokepoint headline more broadly than the narrowed parent authority, whose retained strict-card scope is only N=15 and N=25 with larger-N strict rows failing.
+- **rationale:** The primary runner source for the exact 2D mirror lane genuinely computes MI, purity, dTV, Born, k=0, and gravity from the exact 2D mirror generator and linear propagator, and its cached output matches the exact 2D mirror authority. However, the synthesis note is not a first-principles derivation; its load-bearing move is cross-note aggregation. That aggregation does not fully close because at least one load-bearing numerical Z2 x Z2 claim is tied to a historical raw log rather than the registered binding cache, and the exact mirror summary needs to inherit the narrowed retained scope of its cited parent.
 - **auditor confidence:** high
 
 ### `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`

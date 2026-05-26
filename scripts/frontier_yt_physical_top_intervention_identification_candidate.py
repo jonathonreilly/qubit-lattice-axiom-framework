@@ -88,7 +88,7 @@ def part1_anchors() -> dict[str, Any]:
 
     statuses = {
         "source_action_gate": ledger_row("observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21").get("effective_status"),
-        "yt_source_action_support": ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22").get("effective_status"),
+        "yt_source_action_support": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
         "one_higgs": ledger_row("sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26").get("effective_status"),
     }
     check("source-action gate is not retained authority", statuses["source_action_gate"] != "retained", statuses["source_action_gate"])

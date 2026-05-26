@@ -27402,7 +27402,7 @@
     },
     {
       "from": "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
-      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+      "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
       "from": "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
@@ -28037,23 +28037,23 @@
       "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
     },
     {
-      "from": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24",
+      "from": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
       "to": "minimal_axioms"
     },
     {
-      "from": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24",
+      "from": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
       "to": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
     },
     {
-      "from": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24",
-      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+      "from": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
-      "from": "yt_pr230_source_covariance_normalization_support_note_2026-05-24",
-      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+      "from": "yt_source_covariance_normalization_support_note_2026-05-24",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
-      "from": "yt_pr230_source_covariance_normalization_support_note_2026-05-24",
+      "from": "yt_source_covariance_normalization_support_note_2026-05-24",
       "to": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
     },
     {
@@ -28066,7 +28066,7 @@
     },
     {
       "from": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
-      "to": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24"
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
     },
     {
       "from": "yt_qfp_insensitivity_support_note",
@@ -28086,7 +28086,7 @@
     },
     {
       "from": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+      "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
       "from": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
@@ -28130,7 +28130,7 @@
     },
     {
       "from": "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
-      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+      "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
       "from": "yt_same_source_ew_higgs_authority_gate_note_2026-05-25",
@@ -28158,7 +28158,7 @@
     },
     {
       "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
-      "to": "yt_pr230_consolidated_status_note_2026-05-22"
+      "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
       "from": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
@@ -83183,7 +83183,7 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "ew_coupling_derivation_note"
       ],
       "helper_runner_paths": [],
@@ -83852,60 +83852,60 @@
       "runner_path": "scripts/frontier_yt_physical_top_intervention_identification_candidate.py",
       "title": "Y_T Physical Top Intervention Identification Candidate"
     },
-    "yt_pr230_consolidated_status_note_2026-05-22": {
-      "claim_id": "yt_pr230_consolidated_status_note_2026-05-22",
+    "yt_source_action_support_packet_note_2026-05-22": {
+      "claim_id": "yt_source_action_support_packet_note_2026-05-22",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
       "note_hash": "971bcd11736e75b3802e5199a8d7aa165c28bb53aa4035012663bb1147fed75e",
-      "path": "docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md",
-      "runner_path": "scripts/frontier_yt_pr230_consolidated_status.py",
-      "title": "PR230 Minimal Y_T Source-Action Support Packet"
+      "path": "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+      "runner_path": "scripts/frontier_yt_source_action_support_packet.py",
+      "title": "Y_T Source-Action Support Packet"
     },
-    "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24": {
-      "claim_id": "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24",
+    "yt_lsp_signed_record_source_readout_support_note_2026-05-24": {
+      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms",
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
-        "yt_pr230_consolidated_status_note_2026-05-22"
+        "yt_source_action_support_packet_note_2026-05-22"
       ],
       "helper_runner_paths": [],
       "note_hash": "15a9620dd3e95969957d0edaa0aec3cba0bc8955df1cce2e5e46b1ebb04eb4b4",
-      "path": "docs/YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
-      "runner_path": "scripts/frontier_yt_pr230_lsp_signed_record_source_readout_support.py",
-      "title": "PR230 LSP Signed-Record Source-Readout Support Theorem"
+      "path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
+      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
+      "title": "Y_T LSP Signed-Record Source-Readout Support Theorem"
     },
-    "yt_pr230_route_exhaustion_summary_note_2026-05-22": {
-      "claim_id": "yt_pr230_route_exhaustion_summary_note_2026-05-22",
+    "yt_source_action_route_exhaustion_summary_note_2026-05-22": {
+      "claim_id": "yt_source_action_route_exhaustion_summary_note_2026-05-22",
       "claim_type_author_hint": "meta",
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
       "note_hash": "9a174c41cd85f7a26e7e8adb9a33be9fcbdfac5ecb5d7e9b85c4a3b11ecfe3a6",
-      "path": "docs/YT_PR230_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md",
-      "runner_path": "scripts/frontier_yt_pr230_route_exhaustion_summary.py",
-      "title": "PR230 Route-Exhaustion Summary"
+      "path": "docs/YT_SOURCE_ACTION_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md",
+      "runner_path": "scripts/frontier_yt_source_action_route_exhaustion_summary.py",
+      "title": "Y_T Source-Action Route-Exhaustion Summary"
     },
-    "yt_pr230_source_covariance_normalization_support_note_2026-05-24": {
-      "claim_id": "yt_pr230_source_covariance_normalization_support_note_2026-05-24",
+    "yt_source_covariance_normalization_support_note_2026-05-24": {
+      "claim_id": "yt_source_covariance_normalization_support_note_2026-05-24",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
       ],
       "helper_runner_paths": [],
       "note_hash": "25605321fc4a8eade81919c6f6b00d0747095439bfab1e0c1050cf07c30791d4",
-      "path": "docs/YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
-      "runner_path": "scripts/frontier_yt_pr230_source_covariance_normalization_support.py",
-      "title": "PR230 Source-Covariance Normalization Support Theorem"
+      "path": "docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
+      "runner_path": "scripts/frontier_yt_source_covariance_normalization_support.py",
+      "title": "Y_T Source-Covariance Normalization Support Theorem"
     },
     "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25": {
       "claim_id": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
@@ -83915,7 +83915,7 @@
       "deps": [
         "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
         "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
-        "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24"
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
       ],
       "helper_runner_paths": [],
       "note_hash": "05e51f5d8a241daf99f93e150f29f028fd958e10fcca597c7174c49d8e89ff76",
@@ -83972,7 +83972,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms",
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
       ],
@@ -84045,7 +84045,7 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "yt_fh_top_w_response_ratio_gate_note_2026-05-25"
       ],
       "helper_runner_paths": [],
@@ -84119,7 +84119,7 @@
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "yt_color_projection_correction_note",
         "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
       ],
@@ -85295,8 +85295,8 @@
     "yt_ew_coupling_bridge_note_2026-05-17",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
     "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
-    "yt_pr230_consolidated_status_note_2026-05-22",
-    "yt_pr230_route_exhaustion_summary_note_2026-05-22",
+    "yt_source_action_support_packet_note_2026-05-22",
+    "yt_source_action_route_exhaustion_summary_note_2026-05-22",
     "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
     "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
     "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25",

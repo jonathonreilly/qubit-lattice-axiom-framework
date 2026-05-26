@@ -1,7 +1,7 @@
 # Closed PR Science Salvage Sweep 2026-05-03
 
 Purpose: record the review-loop sweep over closed unmerged PRs from PR #1
-forward, excluding PR #230 as requested. This is a review-history surface,
+forward, excluding the closed Y_T source-action PR as requested. This is a review-history surface,
 not a physics source note.
 
 ## Scope
@@ -9,7 +9,7 @@ not a physics source note.
 - Closed PRs scanned: 411, through PR #412.
 - Closed merged PRs: 327; treated as already landed on main.
 - Closed unmerged PRs reviewed for missed science: 84.
-- PR #230 was not touched.
+- the closed Y_T source-action PR was not touched.
 
 ## Salvaged Into Source Rows
 

@@ -14,7 +14,7 @@ candidate for the remaining physical-intervention identification.
 **Primary runner:** `scripts/frontier_yt_physical_top_intervention_identification_candidate.py`
 **Generated output:** `outputs/yt_physical_top_intervention_identification_candidate_2026-05-25.json`
 
-This note packages the remaining PR230 closure problem as one precise
+This note packages the remaining Y_T closure problem as one precise
 audit target:
 
 ```text
@@ -22,7 +22,7 @@ physical top Yukawa deformation
   = operational primitive RN source intervention for normalized O_top.
 ```
 
-It is intentionally stacked on the PR230 lambda-normalization support packet.
+It is intentionally stacked on the Y_T lambda-normalization support packet.
 That packet already proves:
 
 ```text

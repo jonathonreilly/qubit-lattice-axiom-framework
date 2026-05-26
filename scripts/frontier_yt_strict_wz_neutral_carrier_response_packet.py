@@ -83,7 +83,7 @@ def part1_anchors() -> dict[str, Any]:
         check(f"note contains required section: {phrase}", phrase in note)
 
     ew_mass = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
-    source_action = ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22")
+    source_action = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     one_higgs = ledger_row("sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26")
     hypercharge = ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24")
     ew_coupling = ledger_row("ew_coupling_derivation_note")

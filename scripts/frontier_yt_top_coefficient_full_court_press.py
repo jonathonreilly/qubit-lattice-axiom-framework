@@ -74,7 +74,7 @@ def part1_anchors() -> dict[str, Any]:
         check(f"note contains required section: {phrase}", phrase in note)
 
     statuses = {
-        "source_action": ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22").get("effective_status"),
+        "source_action": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
         "one_higgs": ledger_row("sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26").get("effective_status"),
         "hypercharge": ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24").get("effective_status"),
         "color_projection_correction": ledger_row("yt_color_projection_correction_note").get("effective_status"),

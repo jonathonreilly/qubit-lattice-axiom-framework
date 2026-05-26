@@ -17672,7 +17672,7 @@
       "cross_confirmation_status": null,
       "deps": [
         "minimal_axioms",
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
       ],
@@ -28113,7 +28113,7 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "ew_coupling_derivation_note"
       ],
       "direct_in_degree": 2,
@@ -31676,7 +31676,7 @@
       "deps": [
         "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
         "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
-        "yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24"
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
       ],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
@@ -37651,7 +37651,7 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
-        "yt_pr230_consolidated_status_note_2026-05-22",
+        "yt_source_action_support_packet_note_2026-05-22",
         "yt_fh_top_w_response_ratio_gate_note_2026-05-25"
       ],
       "direct_in_degree": 0,

@@ -184,5 +184,5 @@ closure has been obtained.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [yt_pr230_consolidated_status_note_2026-05-22](YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
+- [yt_source_action_support_packet_note_2026-05-22](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
 - [ew_coupling_derivation_note](EW_COUPLING_DERIVATION_NOTE.md)

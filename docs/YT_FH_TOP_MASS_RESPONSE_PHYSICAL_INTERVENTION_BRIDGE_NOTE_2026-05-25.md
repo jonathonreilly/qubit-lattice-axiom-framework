@@ -32,7 +32,7 @@ top pole mass must have the corresponding Feynman-Hellmann response.
 
 ## Inputs From The Current Stack
 
-This bridge uses the current PR230 stack only as support:
+This bridge uses the current Y_T source-action stack only as support:
 
 - The primitive source-unit packet proves that the normalized RN/Fisher source
   branch selects `lambda = 1` inside the operational source family.

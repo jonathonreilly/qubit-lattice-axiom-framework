@@ -20,7 +20,7 @@ SOURCE_ACTION_GATE = DOCS / "OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_AD
 RN_TEMPLATE = DOCS / "RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md"
 FISHER_UNIT = DOCS / "YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md"
 PREMISE_NOGO = DOCS / "YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md"
-LSP_SOURCE = DOCS / "YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
+LSP_SOURCE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 PASS_COUNT = 0
@@ -97,8 +97,8 @@ def part1_anchors() -> dict[str, Any]:
 
     statuses = {
         "source_action_gate": ledger_row("observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21").get("effective_status"),
-        "lsp_source": ledger_row("yt_" + "pr" + "230_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
-        "yt_source_action_support": ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22").get("effective_status"),
+        "lsp_source": ledger_row("yt_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
+        "yt_source_action_support": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
     }
     check("source-action gate is not retained authority", statuses["source_action_gate"] != "retained", statuses["source_action_gate"])
     check("LSP source support is not retained coefficient authority", statuses["lsp_source"] != "retained", statuses["lsp_source"])

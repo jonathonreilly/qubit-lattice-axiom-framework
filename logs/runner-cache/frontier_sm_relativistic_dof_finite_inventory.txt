@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_sm_relativistic_dof_finite_inventory.py
+runner_sha256: 714decb544f077fe780563f30351a64ae5f86709f1df5579e8640bccbb025fb5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+[PASS] [A] note boundary contains: finite declared-inventory arithmetic certificate
+[PASS] [A] note boundary contains: not a framework derivation
+[PASS] [A] note boundary contains: does not claim:
+[PASS] [A] note boundary contains: a framework derivation of the Standard Model particle inventory
+[PASS] [A] note boundary contains: a framework derivation of the fermion thermal factor
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note boundary contains: Downstream physical use of `g_* = 106.75` still has to carry
+[PASS] [A] note omits stale wrapper phrase: one-hop dependency rather than carry the count
+[PASS] [A] note omits stale wrapper phrase: This wrapper note is a named-import-only bounded theorem
+[PASS] [A] note omits stale wrapper phrase: This count is NOT derived
+
+=== finite inventory arithmetic ===
+[PASS] [A] gluons count ((8, 2) -> 16)
+[PASS] [A] su2_l_gauge_bosons count ((3, 2) -> 6)
+[PASS] [A] u1_y_gauge_boson count ((1, 2) -> 2)
+[PASS] [A] complex_higgs_doublet count ((4,) -> 4)
+[PASS] [A] quarks count ((6, 3, 2, 2) -> 72)
+[PASS] [A] charged_leptons count ((3, 2, 2) -> 12)
+[PASS] [A] active_neutrinos count ((3, 2) -> 6)
+[PASS] [A] gluons_broken_bookkeeping count ((8, 2) -> 16)
+[PASS] [A] photon count ((1, 2) -> 2)
+[PASS] [A] massive_w_w_z count ((3, 3) -> 9)
+[PASS] [A] higgs_scalar count ((1,) -> 1)
+[PASS] [A] bosonic total is 28 (28)
+[PASS] [A] fermionic total is 90 (90)
+[PASS] [A] broken-phase bosonic total matches unbroken total (28)
+[PASS] [A] fermion weight is 7/8 (7/8)
+[PASS] [A] g_star exact fraction is 427/4 (427/4)
+[PASS] [A] g_star decimal is 106.75 (106.75)
+[PASS] [A] no right-handed-neutrino states are counted (6)
+
+SM relativistic DOF finite inventory certificate: PASS
+PASS=28 FAIL=0
+
+----- stderr -----
+

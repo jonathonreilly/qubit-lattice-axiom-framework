@@ -1,26 +1,20 @@
 #!/usr/bin/env python3
-"""Sign portability invariant: derive the four gates within one family,
-then verify the cross-family corollary by reading registered family logs.
+"""Sign portability invariant gate comparison.
 
 Repair targets:
 
 1. Auditor (audit ledger conditional row, claim
-   sign_portability_invariant_note, deeper conditional gap): the
-   load-bearing claim "the signed-control fixed point survives across the
-   retained sign-law basins" was a cross-note comparison, not a
-   derivation. This runner now first re-runs the second grown family at
-   a small two-row subset and verifies the four gates as numerically
-   consistent with the algebraic / leading-order proofs in the
-   derivation theorem note
-   (`docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`).
+   sign_portability_invariant_note, deeper conditional gap): this runner
+   re-runs a small second-grown-family subset and checks the four named gates
+   numerically. It does not prove row-wise lower bounds or a full unit-slope
+   theorem.
 
 2. Auditor (audit ledger conditional row, claim
-   sign_portability_invariant_note, original 2026-04-28 verdict): replace
-   the hard-coded comparison printer with a runner that reads registered
-   one-hop family outputs and asserts common thresholds for zero-source
-   cancellation, neutral cancellation, antisymmetry, unit-slope
-   tolerance, and basin/seed exclusions. This block is preserved as the
-   cross-family corollary check.
+   sign_portability_invariant_note, original 2026-04-28 verdict): the
+   cross-family block reads registered one-hop family outputs and asserts
+   common thresholds for zero-source cancellation, neutral cancellation,
+   antisymmetry, unit-slope tolerance, and basin/seed exclusions. This is a
+   finite cached gate comparison, not a cross-family theorem.
 
 The four invariant gates are:
 
@@ -30,8 +24,8 @@ The four invariant gates are:
                                   relative to max(|plus|, |minus|)
     G4. unit-slope tolerance:     every PASSING row has |exp - 1| <= EXP_TOL
 
-In the derivation block, G1 and G2 are tested as exact-zero algebraic
-identities at finite source strength (`ZERO_TOL = 1e-12`,
+In the second-grown-family gate block, G1 and G2 are tested as exact-zero
+algebraic identities at finite source strength (`ZERO_TOL = 1e-12`,
 `NEUTRAL_TOL = 1e-12`). G3 and G4 are tested at the working
 `SOURCE_STRENGTH = 5e-5` against the same `ANTISYM_TOL = 5e-3`,
 `EXP_TOL = 5e-3` thresholds; the derivation note predicts that those
@@ -337,15 +331,12 @@ def _print_family(result: FamilyResult) -> None:
 
 
 def _verify_derivation_within_second_grown_family() -> tuple[bool, list[str]]:
-    """Numerically verify the four-gate derivation within the second grown family.
+    """Numerically verify the four runner-defined gates in one family.
 
-    The derivation theorem note
-    (`docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`)
-    proves G1, G2 as exact algebraic identities at finite source strength,
-    and G3, G4 as leading-order weak-field identities with bounded
-    second-order remainders. This routine re-runs the second grown family
-    sweep at a small two-row subset and checks the same row-level
-    thresholds the cross-family block uses.
+    This routine re-runs the second grown family sweep at a small two-row
+    subset and checks the same row-level thresholds the cross-family block
+    uses. It is a finite gate check, not a proof of row-wise lower bounds or a
+    full unit-slope theorem.
 
     Two rows are deliberately enough for the derivation check:
     - drift=0.0, seed=0  : exact-grid limit, all geometric symmetries clean
@@ -381,13 +372,12 @@ def _verify_derivation_within_second_grown_family() -> tuple[bool, list[str]]:
     lines: list[str] = []
     derivation_pass = True
 
-    lines.append("## Derivation verification: second grown family (subset)")
+    lines.append("## Gate verification: second grown family (subset)")
     lines.append("")
     lines.append("Re-running the second grown family sweep at a two-row subset to")
-    lines.append("check that the four gates derived in the theorem note hold under")
-    lines.append("computation, not just under log-reading. G1 and G2 are the")
-    lines.append("exact algebraic identities; G3 and G4 are the leading-order")
-    lines.append("weak-field identities with bounded second-order remainders.")
+    lines.append("check that the four runner-defined gates hold under computation,")
+    lines.append("not just under log-reading. This is a bounded gate certificate;")
+    lines.append("the row-wise lower-bound theorem remains separate open work.")
     lines.append("")
     lines.append(f"   {'drift':>5s} {'seed':>4s} {'zero':>11s} {'neutral':>11s} "
                  f"{'plus':>11s} {'minus':>11s} "
@@ -426,7 +416,7 @@ def _verify_derivation_within_second_grown_family() -> tuple[bool, list[str]]:
 
     lines.append("")
     lines.append(
-        f"   derivation_block: {'PASS' if derivation_pass else 'FAIL'}"
+        f"   second_grown_gate_block: {'PASS' if derivation_pass else 'FAIL'}"
     )
     lines.append(
         "   (G1, G2 exact at finite strength; G3, G4 leading-order with "
@@ -440,8 +430,8 @@ def _verify_derivation_within_second_grown_family() -> tuple[bool, list[str]]:
 def main() -> int:
     print("# Sign Portability Invariant Comparison")
     print()
-    print("Block 1: derivation within one family (second grown family).")
-    print("Block 2: cross-family corollary check via registered family logs.")
+    print("Block 1: finite gate check within one family (second grown family).")
+    print("Block 2: cross-family gate comparison via registered family logs.")
     print()
     print(f"thresholds: ZERO_TOL={ZERO_TOL:.0e} NEUTRAL_TOL={NEUTRAL_TOL:.0e} "
           f"ANTISYM_TOL={ANTISYM_TOL:.0e} EXP_TOL={EXP_TOL:.0e}")
@@ -490,7 +480,7 @@ def main() -> int:
 
     print("## Summary")
     print()
-    print(f"  derivation block (second grown family) = "
+    print(f"  second-grown gate block              = "
           f"{'PASS' if derivation_pass else 'FAIL'}")
     for result in all_results:
         gate_flags = "".join(
@@ -500,16 +490,13 @@ def main() -> int:
     print()
 
     print(
-        "Order parameter (now derivation-backed): the portable quantity is "
-        "the signed-control fixed point — exact zero-source null, exact "
-        "neutral cancellation, plus/minus antisymmetry, and weak-field "
-        "response near unit slope. The derivation block above re-derives "
-        "G1, G2 as exact algebraic identities at finite source strength and "
-        "G3, G4 as leading-order weak-field identities with bounded "
-        "second-order remainders within one family. The cross-family "
-        "block then verifies that the same gates hold on the other "
-        "retained sign-law families row-by-row, completing the corollary "
-        "structure described in the parent note."
+        "Order-parameter read: the checked quantity is the signed-control "
+        "fixed-point gate packet — zero-source null, neutral cancellation, "
+        "plus/minus antisymmetry, and weak-field response near unit slope. "
+        "The first block verifies these gates on a small second-grown-family "
+        "subset; the cross-family block checks the same thresholds on the "
+        "registered family logs. This is a finite cached gate comparison, "
+        "not a row-wise lower-bound theorem or a cross-family proof."
     )
     print()
 

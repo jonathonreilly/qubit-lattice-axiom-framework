@@ -1,29 +1,11 @@
 #!/usr/bin/env python3
-"""Action normalization: self-consistency fixes the coupling coefficient.
+"""Action-normalization convention-lock certificate.
 
-A Nature reviewer objects: "You chose S = L(1-f). If you chose S = L(1-2f),
-you'd get a different metric. The coefficient is arbitrary."
-
-This script shows the coefficient is NOT arbitrary. The self-consistency
-bootstrap -- propagator density sources the field that governs the propagator --
-uniquely determines the coupling c in S = L(1 - c*f).
-
-The argument:
-  1. Propagator accumulates phase k*S = k*L*(1 - c*f) with coupling c
-  2. Density rho = |psi|^2 sources the field via Poisson: nabla^2 f = -G*rho
-  3. Self-consistency requires the deflection from f on the propagator to match
-     the field sourced by the propagator's density
-  4. c and G are not independent -- they are related by self-consistency
-  5. There is a unique ratio c/G where the self-consistent iteration converges
-     AND reproduces correct Newtonian physics (beta = 1, factor-of-2 bending)
-
-Tests:
-  1. Vary c in S = L(1 - c*f): convergence, iteration count, converged field
-  2. Find c that gives beta = 1.0 (exact Newtonian mass law)
-  3. Metric coefficient: g_eff = (1 - c*f)^2, light bending factor = 1 + c
-  4. Convergence basin in (c, G) plane
-
-PStack experiment: action-normalization
+The finite scan shows that the coefficient in ``S = L(1 - c*f)`` is not
+selected convention-free.  Once a lattice-field/physical-potential map and
+source normalization are chosen, a representative can be named; without that
+separate bridge the runner exposes a convention family rather than a retained
+normalization theorem.
 """
 
 from __future__ import annotations
@@ -386,9 +368,10 @@ def measure_rescaling_degeneracy(N: int, k: float, source_pos: tuple[int, int, i
     while c changes by 1/a, the metric stays the same. So the degeneracy
     is (c, G) -> (c/a, a*G) with no physical consequence.
 
-    The physical normalization is set by convention: we choose f = Phi/c^2
-    (the Newtonian potential). Then G is Newton's constant, and c in the
-    action must equal 1 to match the Schwarzschild metric.
+    The runner does not select that convention. It only shows that once an
+    external f/Phi map and source normalization are chosen, c becomes a
+    representative of that convention rather than a convention-free output of
+    the finite loop.
     """
     print("Checking rescaling degeneracy: (c, G) -> (c/a, a*G)...")
     print()
@@ -428,7 +411,7 @@ def main():
     t_start = time.time()
 
     print("=" * 80)
-    print("ACTION NORMALIZATION: CONVENTION-LOCKED COUPLING COEFFICIENT")
+    print("ACTION NORMALIZATION: CONVENTION-FREE SELECTION NO-GO")
     print("=" * 80)
     print()
     print("Question: Is the coefficient c in S = L(1 - c*f) arbitrary?")
@@ -543,10 +526,9 @@ def main():
     print("The earlier 'verification' table that read 'YES' only at c = 1 was")
     print("circular: it just printed 1 + c and tested whether 1 + c = 2.")
     print()
-    print("The honest read: c is fixed by the convention identifying f with the")
-    print("standard Newtonian potential Phi and by the chosen Poisson source")
-    print("normalization. See TEST 5 / SYNTHESIS for the convention-locked")
-    print("statement.")
+    print("The honest read: c is fixed only after an external convention")
+    print("identifies f with the physical potential Phi and chooses the Poisson")
+    print("source normalization. The finite runner does not make that selection.")
     print()
 
     # ===================================================================
@@ -634,11 +616,11 @@ def main():
     print("identification Phi = c*f/2. This means gamma alone does NOT fix c.")
     print("The deflection ratio is (1+gamma) = 2 in PHI units, independent of c.")
     print()
-    print("WHAT FIXES c IS THE CONVENTION FOR f ITSELF:")
+    print("A CHOSEN f CONVENTION CAN NAME A REPRESENTATIVE c:")
     print("  Convention A (f = Phi):    requires c = 2 to match Schwarzschild")
     print("                              under the standard Newtonian Poisson source")
-    print("  Convention B (S = L(1-f)): the framework's choice (c = 1) absorbs the")
-    print("                              factor of 2 into the lattice Poisson source")
+    print("  Convention B (S = L(1-f)): uses c = 1 and absorbs the factor of 2")
+    print("                              into the lattice Poisson source")
     print("                              normalization")
     print("  Convention C (raw lattice f, no Phi identification): c is undetermined")
     print()
@@ -697,30 +679,23 @@ def main():
     print("   The metric g_tt = -(1 - c*f), g_rr = 1 + c*f gives gamma = 1")
     print("   for any positive c. Thus PPN gamma alone does NOT fix c.")
     print()
-    print("4. WHAT FIXES c IS THE FRAMEWORK CONVENTION ON f:")
-    print("   The framework's natural convention is Phi = f (the lattice scalar")
-    print("   f IS the Newtonian potential). Under that convention with the")
-    print("   standard Newtonian Poisson source nabla^2 f = -4*pi*G*rho, matching")
-    print("   g_tt = -(1 - 2*Phi) to -(1 - c*f) forces c = 2.")
-    print("   Alternatively, the framework's S = L(1-f) corresponds to c = 1")
-    print("   together with a Poisson source rescaled by a factor of 2.")
+    print("4. WHAT CAN NAME c IS AN EXTERNAL CONVENTION ON f:")
+    print("   If a later retained bridge chooses Phi = f and the standard")
+    print("   Newtonian source nabla^2 f = -4*pi*G*rho, matching")
+    print("   g_tt = -(1 - 2*Phi) to -(1 - c*f) names the representative c = 2.")
+    print("   If a later retained bridge instead chooses S = L(1-f), it names")
+    print("   c = 1 together with a Poisson source rescaled by a factor of 2.")
     print()
     print("5. NARROW HONEST CLAIM:")
-    print("   * The action coefficient c is NOT a free parameter once we fix the")
-    print("     identification between the lattice scalar f and the Newtonian")
-    print("     potential Phi.")
-    print("   * The choice c = 1 corresponds to the convention f = Phi WITH a")
-    print("     Poisson source rescaled by a factor of 2 relative to textbook")
-    print("     Newtonian, so that S = L(1-f) reproduces Schwarzschild.")
-    print("   * The choice c = 2 corresponds to the convention f = Phi WITH the")
-    print("     textbook Newtonian Poisson source nabla^2 f = -4*pi*G*rho.")
-    print("   * Both choices reproduce Schwarzschild and PPN gamma = 1; the")
-    print("     difference is an overall convention choice, not new physics.")
+    print("   * The finite packet does not select c convention-free.")
+    print("   * A representative c can be named only after choosing the")
+    print("     lattice-scalar/physical-potential map and source normalization.")
+    print("   * c = 1 and c = 2 are different representatives of such choices;")
+    print("     neither is derived by this runner as a convention-free observable.")
     print()
-    print("This is a NARROWED claim: c is fixed by convention (not by light")
-    print("bending). The framework's natural convention does pick out a specific")
-    print("c value once we name what f is in terms of Phi and what source")
-    print("normalization the Poisson equation uses.")
+    print("This is a NARROWED no-go claim: c is not selected by light bending,")
+    print("self-consistency, or the finite scans here. A later retained bridge")
+    print("could choose a convention and then name a representative c.")
     print()
 
     # Overall verdict
@@ -728,17 +703,17 @@ def main():
     print("VERDICT")
     print("=" * 80)
     print()
-    print("NARROWED: The coefficient c in S = L(1 - c*f) is determined by the")
-    print("convention used to identify the lattice scalar f with the physical")
-    print("Newtonian potential Phi and by the chosen Poisson source normalization.")
+    print("NARROWED: The coefficient c in S = L(1 - c*f) is not determined")
+    print("convention-free by this packet. It becomes a convention representative")
+    print("only after a separate f/Phi map and source normalization are chosen.")
     print()
     print("The reviewer's objection is partially correct: the coefficient is")
     print("convention-dependent, not convention-free. There is a one-parameter")
     print("rescaling family (c, G) -> (c/a, a*G) of equivalent theories.")
     print()
-    print("Once a convention is named, c is determined. With f = Phi and the")
-    print("textbook Newtonian source, c = 2. With S = L(1 - f) (i.e., c = 1),")
-    print("the Poisson normalization absorbs the missing factor of 2.")
+    print("Once a convention is named, c can be named inside that convention.")
+    print("For example, f = Phi plus the textbook Newtonian source gives c = 2;")
+    print("S = L(1 - f) gives c = 1 with a rescaled Poisson normalization.")
     print()
     print("EARLIER INTERPRETATION RETRACTED:")
     print("The earlier 'convention-free light bending' argument was incorrect.")

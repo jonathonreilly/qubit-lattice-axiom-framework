@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/complex_action_harness.py
-runner_sha256: 4467478f347fc6d0090aaf8253f976c8a8498b893822ed2f406f2971ba5ee5ee
+runner_sha256: 6d43dfc3283ec85bdeb14fee2e21a8e7afb651f8556697710e51fe6bccc8c50e
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 81.25
+elapsed_sec: 84.93
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -28,18 +28,18 @@ h=0.5, W=6, L=30, s=0.1, z_src=3.0
 
 BORN TEST (|I3|/P with gravitational field)
   running gamma=0.0...
-  gamma=0.0: |I3|/P = 2.38e-15
+  gamma=0.0: |I3|/P = 2.41e-15
   running gamma=0.5...
-  gamma=0.5: |I3|/P = 1.13e-15
+  gamma=0.5: |I3|/P = 3.94e-16
   running gamma=1.0...
-  gamma=1.0: |I3|/P = 1.03e-16
+  gamma=1.0: |I3|/P = 1.24e-16
 
 REDUCTION CHECK
   standard propagator delta: +9.339748e-02
   complex(gamma=0) delta:    +9.339748e-02
   match: True
 
-MASS SCALING at gamma=0.5 (horizon regime)
+SOURCE-STRENGTH SCALING at gamma=0.5 (free-gamma ansatz)
   s=0.025: delta=-9.578864e-02
   s=0.050: delta=-2.141553e-01
   s=0.100: delta=-5.075192e-01
@@ -49,10 +49,10 @@ SAFE READ
   gamma=0 must recover standard valley-linear (check reduction above)
   Born |I3|/P should be ~0 for ALL gamma (propagator is linear in psi)
   complex action is non-unitary but still linear: Born holds structurally
-  TOWARD->AWAY transition marks the exceptional point
-  escape < 1 means net absorption (horizon-like)
-  escape > 1 means net amplification (superradiance-like)
-  if Born holds AND gravity+horizons coexist, this is a genuine unification
+  TOWARD->AWAY transition is a finite free-gamma ansatz feature
+  escape < 1 means net absorption in this packet, not horizon physics
+  escape > 1 means net amplification in this packet
+  no gamma law, horizon observable, or unification theorem is derived here
 
 ----- stderr -----
 

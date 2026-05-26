@@ -24,11 +24,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1288 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,9 +53,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
 | `audited_clean` | 749 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -901,6 +898,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8799,6 +8797,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the fiber parent=(c_cell,delta), C(parent)=c_cell is constant while p_Schur(parent)=c_cell+delta and p_event(parent)=c_cell, so p_Schur=p_event iff delta=0.  _(class `A`)_
 - **chain closes:** True — The chain closes on its own scoped terms as an algebraic counterexample to carrier-only promotion. The runner confirms the nontrivial kernel, same carrier/different scalar pair, impossibility of carrier-only recovery on the fiber, equivalence of equality to delta=0, and normalization sensitivity.
 - **rationale:** The audited claim is a negative carrier-only no-go, not a positive Planck derivation. Within the supplied packet, the obstruction closes algebraically: two parents with identical carrier data can have different Schur scalars, so no function of carrier data alone can force the Schur/event equality without the extra no-hidden-character law delta=0. The Planck-normalization discussion is used only to show non-harmlessness of the hidden scalar if promoted as a coefficient, not to derive a physical coefficient from hidden assumptions.
+- **auditor confidence:** high
+
+### `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`
+
+- **Note:** [`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`](../../docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Then polarization gives the complex Clifford relations D(u)D(v) + D(v)D(u) = 2 <u,v> I_K, followed by the claim that oriented pairs give CAR relations with dagger.  _(class `A`)_
+- **chain closes:** False — Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.
+- **rationale:** Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.
 - **auditor confidence:** high
 
 ### `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`

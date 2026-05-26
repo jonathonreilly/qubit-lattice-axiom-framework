@@ -13794,24 +13794,46 @@
       "verdict_rationale": null
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T17:34:25.918792+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, \u03bc, \u0398, S_+, F) under the stated \u0398-invariance and reflection-Hermiticity assumptions.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 26.794,
+        "runner_hash": "b4bfda3f99fbe105cfd70d45c68028f7d835410f6d03fc00b674619a4247e0c8",
+        "transitive_descendants": 887
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-fresh-axiom-first-reflection-positivity-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant dependency closes only det(M_KS + m I) > 0; it explicitly does not prove the staggered Grassmann reflection-positive half-action factorization for arbitrary positive-time polynomial observables. The gauge dependency closes an abstract bounded norm-square identity under explicit symmetry hypotheses, but the restricted packet does not prove the SU(3) Wilson-plaquette boundary term satisfies those hypotheses for the stated lattice action.",
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Finite-lattice reflection positivity and vacuum-energy-subtracted transfer-matrix spectrum non-negativity for compact SU(3) Wilson plaquette gauge links coupled to staggered-only Kogut-Susskind fermions M = M_KS + m I, m > 0, excluding Wilson-fermion determinant claims.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-26T17:34:25.918792+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -13820,19 +13842,19 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 34,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 26.794,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The gauge half is asserted to be a positive Haar norm square, the staggered determinant input strictly positive configuration-by-configuration, and their product is asserted to give <Theta(F) F> = ||psi_F||^2 >= 0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b29f65b2935cb0835a7cb3de1a8f6c68fd27bbac019c02a4c87c62e574bdfcd4",
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained one-hop authorities proving the SU(3) Wilson-plaquette gauge boundary norm-square factorization for the stated reflection map and the staggered-only Grassmann half-action reflection-positive factorization for arbitrary A_+ polynomial observables, or narrow the source claim to only the determinant-positivity and abstract bounded norm-square inputs.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -14306,18 +14328,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only Sector",
       "transitive_descendants": 887,
-      "verdict_rationale": null
+      "verdict_rationale": "E1-E5 pass, but they are finite representative structural checks: free staggered transfer matrices, a truncated U(1) plaquette, finite Fock-space RP samples, a finite Gram matrix, and finite anticommutation checks. They do not compute or prove the load-bearing arbitrary compact SU(3) gauge-half boundary factorization or the staggered Grassmann half-action reflection-positive factorization. E6 is correctly diagnostic-only and cannot carry the theorem. The narrowed Wilson-excluding scope is appropriate, but the proof still imports missing reflection-positivity bridge theorems beyond the cited retained inputs."
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "audit_date": null,

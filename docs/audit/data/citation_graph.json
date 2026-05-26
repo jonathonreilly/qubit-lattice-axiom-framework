@@ -48417,10 +48417,8 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "note_hash": "771d05639070bac5cecdda3694db7b1b2f3863cdd5af028a700b0dc817cf38ab",
+      "helper_runner_paths": [],
+      "note_hash": "c48b181b1bdf4cd4add0f47a700db9398bac03b63af3298b8d9e4f900e78b617",
       "path": "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
       "title": "DM Leptogenesis PMNS Projector Interface"
@@ -50995,7 +50993,6 @@
         "dm_wilson_to_dweh_local_chain_path_algebra_target_note_2026-04-18"
       ],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py",
         "scripts/frontier_graph_first_selector_derivation.py",
@@ -52428,7 +52425,6 @@
         "dm_wilson_to_dweh_local_path_algebra_minimal_certificate_note_2026-04-18"
       ],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -52501,7 +52497,6 @@
         "dm_wilson_to_dweh_hermitian_source_family_target_note_2026-04-18"
       ],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
       "note_hash": "cfedae31ee81e16b0d5ef049a56b22ad74d4e17684b38de83116889552ea4f20",
@@ -52541,7 +52536,6 @@
         "dm_wilson_to_dweh_adjacent_chain_normal_form_theorem_note_2026-04-18"
       ],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -52561,7 +52555,6 @@
         "dm_wilson_to_dweh_structured_extension_criterion_theorem_note_2026-04-18"
       ],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -60051,7 +60044,6 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -60083,7 +60075,6 @@
         "koide_dweh_cyclic_compression_note_2026-04-18"
       ],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -60183,7 +60174,6 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],

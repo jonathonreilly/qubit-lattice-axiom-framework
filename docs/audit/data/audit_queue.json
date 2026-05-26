@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 269,
+    "critical": 270,
     "high": 358,
     "leaf": 323,
     "medium": 333
@@ -412,6 +412,28 @@
       "ready": true,
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "transitive_descendants": 391
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 16,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 16.555,
+      "note_path": "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+      "transitive_descendants": 375
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -9301,7 +9323,6 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
       "load_bearing_score": 9.714,
@@ -9699,7 +9720,6 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -9783,7 +9803,6 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -9868,7 +9887,6 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
       ],
@@ -21261,7 +21279,6 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py",
         "scripts/frontier_graph_first_selector_derivation.py",
@@ -38412,6 +38429,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 58,
-  "total_pending": 1283
+  "ready_count": 59,
+  "total_pending": 1284
 }

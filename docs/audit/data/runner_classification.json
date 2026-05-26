@@ -5077,10 +5077,10 @@
       "runner": "scripts/frontier_dm_leptogenesis_pmns_oriented_phase_sheet_selector_theorem.py"
     },
     "dm_leptogenesis_pmns_projector_interface_note_2026-04-16": {
-      "assert_count": 2,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 2,
         "C": 6,
         "D": 0
       },
@@ -34431,13 +34431,13 @@
       "exists": true
     },
     "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": {
-      "assert_count": 2,
+      "assert_count": 1,
       "claims": [
         "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 2,
         "C": 6,
         "D": 0
       },

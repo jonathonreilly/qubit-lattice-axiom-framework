@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 240,
+    "critical": 239,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -54,25 +54,30 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_fermion_card_2026-04-11",
-      "claim_scope": "Fixed finite computational certificate only: the canonical staggered 17-card runner, at MASS=0.3, G=50.0, S=5e-4, DT=0.15 with its prescribed external-potential builders and parity-coupled diagonal term, exits cleanly and reports 17/17 for 1D n=61 and 3D n=9, n=11, and n=13.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gravity_clean_derivation_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
+      "cross_confirmation_status": null,
+      "deps": [
+        "self_consistency_forces_poisson_note",
+        "poisson_exhaustive_uniqueness_note",
+        "gravity_full_self_consistency_note",
+        "staggered_fermion_card_2026-04-11"
+      ],
+      "direct_in_degree": 19,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.634,
-      "note_path": "docs/STAGGERED_FERMION_CARD_2026-04-11.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 17.624,
+      "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_staggered_17card_finite_scope_repair.py",
-      "transitive_descendants": 280
+      "runner_path": null,
+      "transitive_descendants": 278
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5488,33 +5493,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_charged_lepton_observable_curvature.py",
       "transitive_descendants": 280
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gravity_clean_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "self_consistency_forces_poisson_note",
-        "poisson_exhaustive_uniqueness_note",
-        "gravity_full_self_consistency_note",
-        "staggered_fermion_card_2026-04-11"
-      ],
-      "direct_in_degree": 19,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.624,
-      "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 278
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -37830,5 +37808,5 @@
     }
   ],
   "ready_count": 70,
-  "total_pending": 1260
+  "total_pending": 1259
 }

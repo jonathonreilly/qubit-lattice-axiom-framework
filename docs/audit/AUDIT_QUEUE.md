@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1260
+**Total pending:** 1259
 **Ready (all deps already at retained-grade or metadata tiers):** 70
 
 By criticality:
-- `critical`: 240
+- `critical`: 239
 - `high`: 359
 - `medium`: 334
 - `leaf`: 327
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `staggered_fermion_card_2026-04-11` | bounded_theorem | audit_in_progress | critical | 280 | 11.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_17card_finite_scope_repair.py` |
+| 1 | `gravity_clean_derivation_note` | bounded_theorem | unaudited | critical | 278 | 17.62 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 2 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | unaudited | critical | 255 | 18.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_r_base_group_theory_derivation.py` |
 | 3 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | positive_theorem | unaudited | critical | 207 | 21.70 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_audit_residual_closure.py` |
 | 4 | `gate_b_farfield_note` | bounded_theorem | unaudited | critical | 122 | 14.44 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/gate_b_farfield_harness.py` |

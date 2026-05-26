@@ -1,0 +1,53 @@
+[PASS] [A] note boundary contains: Claim type:** no_go
+[PASS] [A] note boundary contains: Status:** bounded no-go
+[PASS] [A] note boundary contains: do not satisfy the mechanism hard bar
+[PASS] [A] note boundary contains: included runner-cache artifacts
+[PASS] [A] note boundary contains: Why The Mechanism Bar Fails
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale artifact phrase: *** Add File:
+[PASS] [A] note omits stale artifact phrase: /Users/jonreilly/Projects/Physics
+[PASS] [A] note omits stale artifact phrase: hard-coded conclusion
+[PASS] [A] note omits stale artifact phrase: strict retained verdict
+[PASS] [A] note omits stale artifact phrase: This is a lightweight report script
+
+=== main loop cache hard bars ===
+[PASS] [A] epsilon=0 centroid identity (0.000e+00)
+[PASS] [A] epsilon=0 escape identity (1.000000)
+[PASS] [A] epsilon=0 loop converged
+[PASS] [A] parsed nonzero loop rows (20)
+[PASS] [A] frozen-field Born stays below hard bar (2.114e-15)
+[PASS] [A] weak-field TOWARD sign on nonzero rows (20/20)
+[PASS] [A] loop/instantaneous ratios stay bounded (1.010..1.010)
+[PASS] [A] nonzero source-strength scaling stays near linear ({0.01: 1.0, 0.05: 1.001, 0.1: 1.001, 0.2: 1.003, 0.5: 1.007})
+[PASS] [B] nonzero loop rows fail strict convergence (0/20 converged)
+
+=== Born audit cache split ===
+[PASS] [A] Born audit representative row parsed
+[PASS] [A] step-local Born is machine clean (1.028e-15)
+[PASS] [B] end-to-end Born is not machine clean (6.830e-05)
+[PASS] [B] step-local row is not a converged-loop theorem (False)
+[PASS] [B] end-to-end row is not converged (False)
+
+=== V3 matched-null cache ===
+[PASS] [A] V3 epsilon=0 centroid identity (0.000e+00)
+[PASS] [A] V3 epsilon=0 phase slope identity (0.000e+00)
+[PASS] [A] V3 epsilon=0 phase span identity (0.000e+00)
+[PASS] [A] parsed V3 nonzero summaries (3)
+[PASS] [A] V3 nonzero matched-null direction is TOWARD ([(3, 3), (3, 3), (3, 3)])
+[PASS] [B] V3 nonzero rows fail strict convergence ([(0, 3), (0, 3), (0, 3)])
+[PASS] [B] V3 matched-null effect remains tiny (2.204e-02)
+[PASS] [B] V3 phase-span effect remains bounded (1.569e-01)
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type is no_go
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/poisson_self_gravity_mechanism.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] no open dependency paths remain ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (151)
+
+Poisson self-gravity mechanism hard-bar certificate: PASS
+PASS=42 FAIL=0

@@ -1,0 +1,49 @@
+loop_slug: poisson-self-gravity-hardbar-nogo-repair
+date: 2026-05-26
+campaign: 12h-science-loop
+block: poisson-self-gravity-hardbar-nogo
+target_claim_id: poisson_self_gravity_mechanism_note
+branch: physics-loop/poisson-self-gravity-hardbar-nogo-repair-20260526
+actual_current_surface_status: no-go
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: replace hard-coded mechanism summary with cached-output hard-bar parser
+files_touched:
+  - docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md
+  - scripts/poisson_self_gravity_mechanism.py
+  - outputs/poisson_self_gravity_hardbar_nogo_certificate_2026-05-26.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+mechanism_hard_bar_failures:
+  - nonzero-coupling loop rows fail strict convergence
+  - end-to-end Born is diagnostic only and not machine clean
+  - matched-null effect remains tiny on the tested family
+verification:
+  runner: PASS=42 FAIL=0
+  audit_lint_strict: pass_with_preexisting_maradudin_warning
+  render_controlled_vocabulary_check: pass
+  vocab_lint_changed_note: pass
+  git_diff_check: pass
+metadata_after_pipeline:
+  claim_type: no_go
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  open_dependency_paths: []
+  transitive_descendants: 151
+  load_bearing_score: 8.748
+  criticality: high
+  queue_position: 250
+  queue_ready: true
+next_exact_action: open review PR, then pivot to the next audited conditional science candidate
+stop_condition: 12h campaign runtime exhausted or refreshed opportunity queue fully blocked

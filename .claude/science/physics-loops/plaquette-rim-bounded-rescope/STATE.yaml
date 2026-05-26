@@ -24,5 +24,9 @@ open_imports:
   - "Full local rim functional remains outside this row."
 no_go_routes:
   - "Do not claim full physical rim theorem or framework-point plaquette PF data."
-next_exact_action: "Run pipeline/lints, then open PR."
-stop_condition: "Block PR opened or verification fails."
+pr:
+  url: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1922"
+  status: open
+  audit_lane_status: in_progress
+next_exact_action: "Monitor PR audit-lane result while campaign pivots to next independent row."
+stop_condition: "12-hour campaign budget exhausted, user stops, or global tooling failure prevents PR delivery."

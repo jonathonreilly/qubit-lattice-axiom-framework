@@ -25254,7 +25254,7 @@
     },
     {
       "from": "translation_abelian_composition_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "translation_covariance_local_op_theorem_note_2026-05-02",
@@ -79543,13 +79543,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "950c7679b545ee7c194a4b21f36b864f8c6e161d81e1f1e82deb9bca7011656a",
+      "note_hash": "14b84ef7f59e7c767b4c151687953d6efed2ac4ac41d5fede8a5d4f4afe7c052",
       "path": "docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/translation_abelian_composition_check.py",
-      "title": "Translation Group Composition T_a T_b = T_{a+b} on Z^3 Lattice"
+      "title": "Tensor-Product Translation Group Composition"
     },
     "translation_covariance_local_op_theorem_note_2026-05-02": {
       "claim_id": "translation_covariance_local_op_theorem_note_2026-05-02",
@@ -85460,7 +85460,7 @@
       "positive_theorem": 596
     },
     "edge_count": 9775,
-    "leaf_count": 782,
+    "leaf_count": 781,
     "node_count": 2536,
     "root_count": 836,
     "runners_with_path": 2097

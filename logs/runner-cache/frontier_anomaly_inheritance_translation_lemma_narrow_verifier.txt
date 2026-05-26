@@ -1,0 +1,81 @@
+================================================================================
+ANOMALY-INHERITANCE TRANSLATION LEMMA (NARROW) VERIFIER
+================================================================================
+Theorem note: docs/AXIOM_FIRST_ANOMALY_INHERITANCE_TRANSLATION_LEMMA_NARROW_THEOREM_NOTE_2026-05-26.md
+Status: source-only research-lane proposal. No audit-lane wiring.
+
+Companions:
+  - PR #1959 (lattice WZ-Fujikawa narrow theorem): supplies C-int
+  - PR #1960 (AFT v2): supplies H_AFT (emergent (3,1) signature)
+  - Separate governance proposal: supplies H_C_b (convention adoption)
+
+--------------------------------------------------------------------------------
+T1.a Integer-cocycle bridge from PR #1959 produces integer coefficients
+--------------------------------------------------------------------------------
+  [PASS] T1.a Integer-cocycle coefficient is integer-valued for every gauge background
+
+--------------------------------------------------------------------------------
+T1.b Local counterterm shifts act by integer shifts; preserve R/Z class
+--------------------------------------------------------------------------------
+  [PASS] T1.b R/Z residue is invariant under integer-shift counterterms at all tested N, base, shift  (N ∈ {2,3,4,5,6,7,12}, base ∈ {0,1,5,-3,N+1,2N-1}, shifts ∈ {-2N,-N,0,N,2N,3N})
+
+--------------------------------------------------------------------------------
+T1.c No 2π factor is intrinsic to the anomaly coefficient
+--------------------------------------------------------------------------------
+  [PASS] T1.c Integer-cocycle values lie in Z, with no 2π scaling factor at the integer layer  (C-int output is integer-valued; the period-1 R/Z classification is intrinsic)
+  [PASS] T1.c The 2π factor in continuum conventions is the exponential-map convention chi -> exp(2*pi*i*chi)  (2π is a unit-of-angle choice, not a property of the coefficient)
+  [PASS] T1.c Therefore the framework's natural anomaly-coefficient period is 1, not 2π
+
+--------------------------------------------------------------------------------
+T2.a Framework dimensionless invariant (N-1)/N^2 (from six universal mechanisms)
+--------------------------------------------------------------------------------
+  [PASS] T2.a (N-1)/N^2 at N=3 = 2/9 (exact rational)  (got 2/9)
+  [PASS] T2.a (N-1)/N^2 at N=4 = 3/16 (exact rational)  (got 3/16)
+  [PASS] T2.a (N-1)/N^2 at N=5 = 4/25 (exact rational)  (got 4/25)
+  [PASS] T2.a (N-1)/N^2 at N=6 = 5/36 (exact rational)  (got 5/36)
+  [PASS] T2.a (N-1)/N^2 at N=7 = 6/49 (exact rational)  (got 6/49)
+  [PASS] T2.a (N-1)/N^2 at N=12 = 11/144 (exact rational)  (got 11/144)
+
+--------------------------------------------------------------------------------
+T2.b Under (H_AFT) ∧ (H_C_b): delta_Brannen = (N-1)/N^2 rad literally
+--------------------------------------------------------------------------------
+  [PASS] T2.b delta_Brannen(N=3) = 2/9 rad (literal, period-1 reading)  (got 2/9)
+  [PASS] T2.b delta_Brannen(N=4) = 3/16 rad (literal, period-1 reading)  (got 3/16)
+  [PASS] T2.b delta_Brannen(N=5) = 4/25 rad (literal, period-1 reading)  (got 4/25)
+  [PASS] T2.b delta_Brannen(N=6) = 5/36 rad (literal, period-1 reading)  (got 5/36)
+  [PASS] T2.b delta_Brannen(N=7) = 6/49 rad (literal, period-1 reading)  (got 6/49)
+  [PASS] T2.b delta_Brannen(N=12) = 11/144 rad (literal, period-1 reading)  (got 11/144)
+
+--------------------------------------------------------------------------------
+Post-hoc consistency checks (NOT derivation inputs)
+--------------------------------------------------------------------------------
+  [PASS] Post-hoc N=3: derived delta_Brannen = 2/9 matches PDG to better than 1e-12 (PDG itself is 7e-6 precise)  (|derived - 2/9 nominal| = 0.00e+00)
+  [PASS] Post-hoc N=6: derived delta_Brannen = 5/36 (matches retained CKM η² identification class)  (got 5/36)
+
+--------------------------------------------------------------------------------
+Conditional-structure checks (lemma is conditional on hypotheses)
+--------------------------------------------------------------------------------
+  [PASS] Lemma is conditional on (H_AFT): if AFT v2 audit fails, conclusion does not apply  (explicit in T2 statement)
+  [PASS] Lemma is conditional on (H_C_b): if convention 𝒞_b not adopted, conclusion does not apply  (explicit in T2 statement)
+  [PASS] T1 (anomaly coefficient in R/Z) is conditional only on PR #1959 C-int auditing
+  [PASS] T2 (Brannen inheritance) is conditional on (H_AFT) ∧ (H_C_b); does NOT assert either
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT propose 𝒞_b as adopted; that is the companion governance proposal
+  [PASS] Does NOT retire any retained no_go on origin/main  (KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY remains valid under its period-2π surface)
+  [PASS] Does NOT consume PDG, fitted selectors, or empirical anchors as derivation inputs  (post-hoc checks above are CONSISTENCY checks, not proof inputs)
+  [PASS] Does NOT import cobordism / Dai-Freed / Witten-Yonekura classification as load-bearing  (sidecar context only; T1 uses PR #1959 C-int)
+  [PASS] Does NOT propose a new axiom or new theory-language extension
+  [PASS] Does NOT predict the audit verdict on this note or any companion
+  [PASS] Does NOT promote, retire, or re-classify any existing audit row
+
+================================================================================
+Summary: PASS=30 FAIL=0
+================================================================================
+All conditional translation-lemma checks passed. Under (H_AFT) ∧ (H_𝒞_b),
+the Brannen circulant phase inherits the period-1 reading via AFT-mediated
+anomaly-coefficient inheritance from PR #1959's C-int. The framework's
+dimensionless invariant (N-1)/N² is read literally as δ_Brannen rad at
+both N=3 (lepton, 2/9) and N=6 (quark, 5/36).

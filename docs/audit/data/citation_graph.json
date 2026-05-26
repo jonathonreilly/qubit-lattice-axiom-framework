@@ -43628,10 +43628,10 @@
       "helper_runner_paths": [
         "scripts/evolving_network_prototype_v6.py"
       ],
-      "note_hash": "2352b17971430f95df8104d745f190c85a2b83ae731a1b41a8e1a245797f8f13",
+      "note_hash": "d3ae04199736908704d80128d5a1513c3057228399a3aab64f294503c8275ed4",
       "path": "docs/CAUSAL_FIELD_PORTABILITY_NOTE.md",
       "runner_path": "scripts/causal_field_portability_probe.py",
-      "title": "Causal Field Portability Note"
+      "title": "Causal Field Portability Bounded Diagnostic"
     },
     "causal_field_reconciliation_note": {
       "claim_id": "causal_field_reconciliation_note",

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 270,
+    "critical": 269,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -52,33 +52,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "claim_scope": "Bounded structural-normalization support on the admitted SU(3) Wilson-evaluation surface: retained/retained_bounded Cl(3)->End(V)->su(3) inputs plus canonical trace normalization exclude residual scalar generator dilation and force beta=2 N_c/g^2, hence beta=6 when the canonical connection is read with g=1. This does not derive the Wilson action form, action-choice uniqueness, continuum dynamics, running coupling, or downstream phenomenology.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "g_bare_derivation_note",
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note",
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 17,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.315,
-      "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
-      "transitive_descendants": 900
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -555,6 +528,32 @@
       "ready": true,
       "runner_path": "scripts/frontier_staggered_17card_finite_scope_repair.py",
       "transitive_descendants": 280
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "physical_lattice_necessity_note",
+        "g_bare_structural_normalization_theorem_note_2026-04-18",
+        "su3_casimir_fundamental_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 28,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 21.7,
+      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
+      "transitive_descendants": 207
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6642,32 +6641,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "physical_lattice_necessity_note",
-        "g_bare_structural_normalization_theorem_note_2026-04-18",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 28,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 21.7,
-      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
-      "transitive_descendants": 207
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su2_witten_z2_anomaly_theorem_note_2026-04-24",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -7694,6 +7667,33 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_mru_reduced_log_volume_repair.py",
       "transitive_descendants": 147
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "bridge_gap_hk_time_derivation_note_2026-05-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_structural_normalization_theorem_note_2026-04-18",
+        "su3_casimir_fundamental_theorem_note_2026-05-02",
+        "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.19,
+      "note_path": "docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/probe_hk_time_derivation.py",
+      "transitive_descendants": 145
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -11850,33 +11850,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/universal_gr_positive_background_local_closure.py",
-      "transitive_descendants": 145
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "bridge_gap_hk_time_derivation_note_2026-05-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_structural_normalization_theorem_note_2026-04-18",
-        "su3_casimir_fundamental_theorem_note_2026-05-02",
-        "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.19,
-      "note_path": "docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/probe_hk_time_derivation.py",
       "transitive_descendants": 145
     },
     {
@@ -38578,6 +38551,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 68,
-  "total_pending": 1290
+  "ready_count": 69,
+  "total_pending": 1289
 }

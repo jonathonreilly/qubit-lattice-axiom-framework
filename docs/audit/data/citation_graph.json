@@ -20241,98 +20241,6 @@
       "to": "gauge_vacuum_plaquette_framework_point_underdetermination_note"
     },
     {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_bridge_support_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_distinct_shell_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_reduction_existence_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_spectral_measure_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_framework_point_underdetermination_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_perron_reduction_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_residual_environment_identification_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_scalar_temporal_completion_theorem_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_constant_lift_obstruction_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "scalar_3plus1_temporal_ratio_note"
-    },
-    {
-      "from": "plaquette_self_consistency_note",
-      "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-    },
-    {
       "from": "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
       "to": "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
     },
@@ -68467,36 +68375,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "gauge_vacuum_plaquette_bridge_support_note",
-        "gauge_vacuum_plaquette_distinct_shell_theorem_note",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-        "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
-        "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
-        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
-        "gauge_vacuum_plaquette_spectral_measure_theorem_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_perron_reduction_theorem_note",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-        "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
-        "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-        "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-        "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "gauge_scalar_temporal_completion_theorem_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note",
-        "scalar_3plus1_temporal_ratio_note",
-        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7fdd666ee57454241fcb40a25a738506f939682d7699e7fc61095a649a401b21",
+      "note_hash": "0b774dec440a901e9c084423a8d8406af94719515856b1779684015817d16206",
       "path": "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
-      "runner_path": "scripts/frontier_plaquette_self_consistency.py",
-      "title": "Plaquette Self-Consistency: `<P>` as a Derived Same-Surface Constant"
+      "runner_path": "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py",
+      "title": "Plaquette Self-Consistency Finite MC Diagnostic"
     },
     "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09": {
       "claim_id": "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
@@ -85211,6 +85095,7 @@
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
+    "plaquette_self_consistency_note",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
     "pmns_active_four_real_source_from_transport_note_2026-05-17",
     "pmns_c3_character_holonomy_closure_note_2026-05-17",
@@ -85500,10 +85385,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9755,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

@@ -1,0 +1,19 @@
+loop: plaquette-finite-mc-diagnostic-repair
+branch: physics-loop/plaquette-finite-mc-diagnostic-repair-20260525
+target_claim_id: plaquette_self_consistency_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: finite Wilson-plaquette diagnostic
+hypothetical_axiom_status: null
+admitted_observation_status: "canonical 0.5934 comparator is admitted, not derived here"
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle: 1
+active_route: finite diagnostic narrowing
+files_touched:
+  - docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md
+  - scripts/frontier_plaquette_self_consistency_finite_mc_repair.py
+  - outputs/plaquette_self_consistency_finite_mc_repair_2026-05-25.txt
+next_exact_action: commit, push, and open review PR
+stop_condition: review PR opened for independent audit

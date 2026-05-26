@@ -1,413 +1,89 @@
-# Plaquette Self-Consistency: `<P>` as a Derived Same-Surface Constant
+# Plaquette Self-Consistency Finite MC Diagnostic
 
-**Date:** 2026-04-15 (status amended 2026-05-01; bounded scope hardening
-2026-05-24)
-**Type:** bounded_theorem
-**Status:** bounded - same-surface evaluation support on a bounded analytic
-            scope: `<P>(beta=6, SU(3), 4D)` is a uniquely determined
-            partition-function observable, and the canonical numerical value
-            `0.5934` is the MC-evaluated readout reused on that surface. The
-            analytic framework-point insertion at `beta = 6` is **not**
-            closed by this note; the bridge-support stack documented below
-            sharpens the residual gap without removing it. Author tier on
-            2026-05-01 amended from `proposed_retained` to `bounded`.
-**Script:** `scripts/frontier_plaquette_self_consistency.py`
+**Date:** 2026-04-15; finite-diagnostic repair 2026-05-25
+**Status:** bounded-support finite Wilson-plaquette diagnostic. The canonical infinite-volume value `0.5934` is an admitted comparison/reuse number here, not a value derived by this note.
+**Claim type:** bounded_theorem
+**Primary runner:** `scripts/frontier_plaquette_self_consistency_finite_mc_repair.py`
 
-## Status amendment 2026-05-01 (audit-driven scope sharpening)
+## Actual claim
 
-The 2026-04-30 Codex audit pass returned `audited_conditional` on this row
-with the rationale that the load-bearing step "still imports unratified
-direct authority" from the bridge-support stack and that the explicit
-analytic `beta = 6` insertion remains open. Subsequent audit feedback on
-the downstream `ALPHA_S_DERIVED_NOTE.md` (2026-04-29) phrased the same
-point downstream:
-
-> the plaquette dependency itself says the exact analytic beta=6 insertion
-> is not closed.
-
-The honest response is to scope this note explicitly bounded rather than
-to assert `proposed_retained` over an open analytic insertion. The Status
-line above now reads `bounded`. The narrower structural claim of the note
-- that `<P>(beta=6, SU(3), 4D)` is a uniquely defined observable of the
-retained partition function and is therefore not a free parameter -
-remains in force as the bounded same-surface claim. The numerical value
-`0.5934` remains the canonical MC-evaluated reuse number for downstream
-lanes, with the explicit caveat that it is bounded by the MC evaluation
-envelope, not by an analytic theorem. Downstream lanes should read this
-row as `bounded` and structure their own audit packets accordingly. The
-matching downstream bridge that closes the v -> M_Z transfer under the
-same bounded discipline lives in
-`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md` (referenced by file
-path rather than as a one-hop link to avoid a citation back-edge into
-the downstream consumer).
-
-## Framework-point context
-
-On the current accepted package surface, the Wilson gauge evaluation is not
-treated as a scan variable. The graph-first gauge sector fixes `N_c = 3`, the
-accepted canonical normalization/evaluation surface fixes `g_bare^2 = 1`, and
-the retained Wilson gauge action therefore sits at
-
-`beta = 2 N_c / g_bare^2 = 6`.
-
-So `beta = 6` is the package's fixed gauge evaluation point, and the plaquette
-readout below is the same-surface observable attached to that point. This note
-remains the authority for the plaquette evaluation itself; the repo does not
-need a separate standalone "beta = 6 lane" theorem surface for that fact.
-
-## Claim
-
-The plaquette expectation
-
-`<P>(beta = 6, SU(3), 4D) ~= 0.5934`
-
-is a uniquely determined observable of the axiom-defined partition function on
-the retained graph-first `SU(3)` Wilson-plaquette evaluation surface. It is not
-a fit parameter and it is not an experimental import.
-
-Computing the number requires non-perturbative evaluation. That is evaluation
-of a derived quantity, not introduction of a free degree of freedom.
-
-## Why This Matters
-
-The current quantitative stack uses the canonical plaquette chain
-
-`<P> -> u_0 = <P>^(1/4) -> alpha_s(v) = alpha_bare / u_0^2`
-
-and then reuses `u_0`, `alpha_s(v)`, and downstream quantities across the
-hierarchy, EW, CKM, confinement, Yukawa, and Higgs lanes.
-
-The review-safe point is:
-
-- `<P>` is not an externally chosen knob
-- `<P>` is not a hidden fit parameter
-- `<P>` is a same-surface evaluated observable of the retained theory
-
-## Argument
-
-### 1. The partition function is well-defined
-
-On the retained graph-first gauge surface:
-
-- the gauge group is `SU(3)`
-- the Wilson plaquette action at `g_bare^2 = 1` gives `beta = 2 N_c / g^2 = 6`
-- the finite periodic lattice gives a finite product of compact Haar integrals
-
-So
-
-`Z(beta) = integral DU exp(-S_W[U])`
-
-is finite and well-defined.
-
-### 2. The plaquette is a unique observable
-
-The average plaquette is
-
-`<P> = (1 / N_plaq) d(ln Z) / d beta`.
-
-Since `Z(beta)` is well-defined, `<P>` is a unique observable of the same
-partition function. There is no independent freedom to choose it.
-
-### 3. No phase-transition ambiguity is present at `beta = 6` on symmetric `L^4`
-
-The deconfining transition in `SU(3)` lattice gauge theory is a finite-
-temperature transition on asymmetric lattices, not a bulk transition on
-symmetric `L^4` lattices. So the plaquette on the symmetric `L^4` surface is
-the smooth same-phase observable that the framework actually uses.
-
-### 4. Monte Carlo evaluates the observable; it does not parameterize it
-
-Monte Carlo is the numerical evaluation method for this partition-function
-expectation value, exactly as numerical quadrature evaluates an analytically
-defined integral. The computation is non-perturbative, but the quantity is
-still framework-derived.
-
-## Verification Surface
-
-The runner checks:
-
-1. self-consistency of the uniqueness argument
-2. multi-volume plaquette convergence at `beta = 6`
-3. smooth monotone `beta`-dependence on a symmetric lattice
-4. perturbative-window sanity checks
-5. downstream consistency of `u_0` and `alpha_s(v)`
-
-## Bounded bridge-support stack on `main`
-
-The live repo now also carries a materially stronger support stack. This
-section is a dependency map, not an upgrade of this parent row beyond bounded
-same-surface support. Phrases inherited from dependency titles or local claims
-must be read under each dependency row's effective audit status:
-
-- local `SU(3)` one-plaquette block
-- accepted Wilson gauge-source temporal completion theorem
-- distinct-shell theorem for connected plaquette shells on the accepted
-  `3 spatial + 1 derived-time` surface
-- mixed repeated-plaquette audit and first nonlinear coefficient
-  of the full-vacuum reduction law
-- implicit reduction-law existence/uniqueness theorem on the finite
-  Wilson evaluation surface
-- nonperturbative susceptibility-flow theorem for the implicit reduction
-  law
-- connected plaquette-hierarchy theorem for the implicit reduction law
-- obstruction to any finite-order connected-hierarchy truncation
-- compact plaquette spectral-measure generating object for the full
-  finite Wilson hierarchy
-- framework-point underdetermination theorem showing that the current
-  closed jet and structure theorems still do not force a unique analytic
-  `P(6)`
-- transfer-operator / character-recurrence realization of the plaquette
-  generating object on the accepted `3+1` source surface
-- Perron-state reduction theorem on the explicit transfer operator
-- source-sector matrix-element factorization theorem at `beta = 6`
-  with a structural theorem note and a generic positive-diagonal witness
-  runner rather than an explicit Wilson `D_6` evaluation
-- local/environment factorization theorem isolating the local
-  Wilson marked-link factor on the source sector
-- spatial-environment character-measure theorem identifying the
-  residual operator as the boundary character measure of the unmarked spatial
-  Wilson environment
-- spatial-environment structural transfer theorem identifying that
-  boundary class function as a boundary-amplitude sequence of one explicit
-  positive spatial transfer operator
-- spatial-environment tensor-transfer theorem identifying the remaining
-  boundary amplitudes as explicit Wilson-coefficient / `SU(3)`-intertwiner
-  tensor-transfer data, with the runner only a truncated support packet rather
-  than a full `beta = 6` Perron solve
-- Perron/Jacobi underdetermination theorem showing that even the
-  sharpened factorized operator class still does not force unique `beta = 6`
-  Perron moments or Jacobi coefficients until the explicit
-  `beta = 6` tensor-transfer matrix elements generating the boundary
-  character data are fixed
-- bounded source-sector reference Perron solve packet with bounded no-go
-  over enumerated local-input `rho_(p,q)(6)` closures: two structural
-  reference choices of the residual environment (input rho = 1 and input
-  rho = delta_{(p,q),(0,0)}) give explicit Perron data
-  `P_loc(6) = 0.4524071590`, `P_triv(6) = 0.4225317396` from
-  `c_lambda(6)` and `SU(3)` intertwiners alone, with super-polynomial
-  NMAX truncation tail bound; three distinct admissible parametric
-  rho families produce strictly different `P(6)` and demonstrate only
-  the bounded no-go that the enumerated local-input closures do not
-  fix a unique `rho_(p,q)(6)`; the rho values in the reference solves
-  are structural input, NOT derived from any physical 3D Wilson
-  environment, and the note does not claim either reference corresponds
-  to the physical environment
-- scalar `3+1` bridge endpoint ratio
-  `A_inf / A_2 = 2 / sqrt(3)`
-- plaquette four-link coupling map
-  `P(U) = u_0^4 P(V)`
-- `3+1` plaquette/link incidence factor `6 / 4 = 3 / 2`
-- obstruction to the naive constant-lift law
-  `P(beta) = P_1plaq(beta * (3/2) * (2 / sqrt(3))^(1/4))`
-
-Those ingredients sharply narrow the last insertion bridge and give the current
-best analytic diagnostic candidate
-
-`P(6) = 0.593530679977098`.
-
-This sits only `1.3068e-4` (`0.022%`) above the current canonical same-surface value
-`0.5934`, so it materially strengthens the plaquette lane.
-
-Current authorities for that support stack:
-
-- [GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_PERRON_REDUCTION_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_PERRON_REDUCTION_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)
-- [GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md](./GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md)
-- [GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md)
-- [SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md](./SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md)
-
-Current support runners:
-
-- `scripts/frontier_gauge_vacuum_plaquette_bridge_support.py`
-- `scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py`
-- `scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py`
-- `scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py`
-- `scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py`
-- `scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py`
-- `scripts/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.py`
-- `scripts/frontier_gauge_vacuum_plaquette_spectral_measure_theorem.py`
-- `scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py`
-- `scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py`
-- `scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py`
-- `scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py`
-- `scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py`
-- `scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py`
-- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py`
-- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py`
-- `scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py`
-- `scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py`
-- `scripts/frontier_gauge_scalar_temporal_completion_theorem.py`
-- `scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py`
-- `scripts/frontier_scalar_3plus1_temporal_ratio.py`
-
-The honest live read is now sharper than before:
-
-- the class-level bridge ingredients are real
-- the simplest constant multiplicative effective-coupling lift is ruled out
-- the minimal distinct connected shell is fixed by the cube boundary
-  theorem
-- the first nonlocal full-vacuum coefficient is now fixed by the mixed
-  cumulant audit:
-  `P_full(beta) = P_1plaq(beta) + beta^5 / 472392 + O(beta^6)`
-- the implicit reduction law on the finite Wilson evaluation surface is
-  now also closed and unique
-- the nonperturbative susceptibility-flow law for that implicit reduction
-  is now also closed
-- the connected plaquette hierarchy governing that susceptibility flow is
-  now also closed
-- no exact finite-order connected-hierarchy truncation can close that object
-- the equivalent generating object is now also closed as one compact
-  plaquette spectral measure on each finite Wilson surface
-- the current exact jet and structural theorems still do **not** determine a
-  unique analytic framework-point value `P(6)`
-- the plaquette generating object is now also explicit at the operator level:
-  one positive one-clock Wilson transfer operator plus one exact self-adjoint
-  `SU(3)` character-recurrence source operator
-- the `beta = 6` source-sector transfer matrix elements are now also
-  explicit in factorized form:
-  `T_src(6) = exp(3 J) D_6 exp(3 J)`
-- the normalized mixed-kernel contribution is now also explicit and exactly
-  local:
-  `D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q)`
-- so the remaining analytic target is explicit identification of the
-  `beta = 6` spatial-transfer matrix elements generating the boundary
-  character data of `Z_6^env` in
-  `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`, equivalently the
-  physical Perron state of the factorized operator after the local
-  mixed-kernel factor is stripped off, and
-  therefore the explicit nonperturbative form of the reduction law at
-  `beta = 6`, not the old
-  constant-lift ansatz, not the onset coefficient, and not reduction-law
-  existence, transport, hierarchy identification, generating-object existence,
-  operator realization, or the broad operator-level underdetermination question
-  itself
-
-## Safe Reuse Rule
-
-Downstream lanes may safely treat the following as canonical same-surface
-evaluated quantities:
-
-- `<P> = 0.5934`
-- `u_0 = <P>^(1/4)`
-- `alpha_s(v) = alpha_bare / u_0^2`
-- `alpha_LM^2 = alpha_bare * alpha_s(v)` on the retained coupling
-  definitions
-
-with the understanding that the number is:
-
-- not structural in the same sense as an exact symmetry theorem
-- not imported from experiment
-- not a free parameter
-
-## Scope (bounded by construction)
-
-This note does **not** by itself upgrade the plaquette to a fully analytic
-physical-vacuum theorem at the framework point `beta = 6`. It does not migrate
-the full repo-wide numeric package from the historical same-surface value
-`0.5934` to an analytic replacement. The audit ledger's verdict on the
-exact `beta = 6` insertion is therefore explicitly carried forward as the
-defining bounded scope of this note.
-
-It claims the narrower and sufficient point needed by the package, scoped
-as `bounded` and not as `proposed_retained`:
-
-> the plaquette is a uniquely determined observable of the retained theory,
-> Monte Carlo is same-surface evaluation of that observable rather than
-> parameter fitting, and the bounded bridge-support stack materially narrows the
-> remaining analytic insertion gap without yet closing it.
-
-### Diagnostic comparison interval for the bounded analytic insertion
-
-The bridge-support stack pins the analytic candidate at
+For a finite periodic `L^4` lattice with `SU(3)` link variables and Wilson single-plaquette action
 
 ```text
-P(6) = 0.593530679977098,
+S_W[U; beta] = (beta / 3) sum_P (3 - Re Tr U_P),
 ```
 
-`+0.022%` above the canonical same-surface value `0.5934`. That candidate
-is **not** the same-surface plaquette: it is the current best analytic
-diagnostic candidate from the support stack plus the explicit Perron reference
-solves. The useful comparison interval is therefore
+the average plaquette
 
 ```text
-0.5934 ... 0.59353,
+P_bar(U) = (1 / N_P) sum_P Re Tr U_P / 3
 ```
 
-with `0.5934` the canonical MC-evaluated readout and `0.59353` the analytic
-candidate from the support stack. This interval is not asserted here as a
-theorem-grade upper/lower bound. Closure of the comparison gap is open work and
-is the target of the upstream support stack listed above.
+is a well-defined bounded observable of the finite compact configuration space. A Monte Carlo runner can evaluate finite-volume diagnostics of this observable at `beta = 6`, and those diagnostics are not fit parameters.
 
-### Boundary against downstream lanes
+That is the entire repaired claim.
 
-Downstream consumers (notably the lane recorded in
-`ALPHA_S_DERIVED_NOTE.md`) must read this row as `bounded`.
-Effective-status propagation therefore caps any rows that depend on
-`<P>` at `bounded` until the analytic insertion gap is closed. The
-`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md` lane runs under the
-same `bounded` discipline so that `alpha_s(M_Z) = 0.1181` inherits a
-documented one-hop running bridge and a documented upstream plaquette
-dependency, with both contributors explicitly bounded rather than
-spuriously `proposed_retained`. Both downstream notes are mentioned by
-file path rather than as one-hop markdown links, since they are
-downstream consumers of this plaquette claim and turning them into
-graph deps would create citation cycles.
+## What changed
 
-## Bridge-support progress 2026-05-09 (rho_(p,q)(6) Wilson environment)
+The earlier row mixed a true finite same-surface statement with a stronger unresolved physical readout:
 
-The 2026-05-05 audit pass on this row recorded the explicit repair
-target:
+- true finite statement: `P_bar` is a unique observable of the finite Wilson partition function once `beta`, lattice size, action, and measure are selected;
+- unresolved physical readout: the canonical `0.5934` value at the physical `beta=6` surface is not derived analytically here and is not certified here by a completed same-surface MC campaign.
 
-> missing_bridge_theorem: close or supply an independent completed
-> derivation of the physical beta=6 boundary character measure
-> rho_(p,q)(6), or explicitly restrict the row to structural same-surface
-> uniqueness with 0.5934 as an imported MC comparator.
+This repair keeps the finite observable/diagnostic theorem and withdraws the stronger value-closure language. The canonical value `0.5934` may still be used by downstream notes only as an admitted comparison/reuse number unless a separate retained MC certificate or analytic beta=6 closure is supplied.
 
-A first concrete piece of that repair target landed audited_clean on
-2026-05-09 in
-[`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md),
-which records a bounded finite-box computation of the normalized
-single-link SU(3) Wilson boundary character coefficients
-`rho_(p,q)(6)` for `0 <= p,q <= 4` by two independent methods (a
-Schur-Weyl Bessel-determinant sum and direct Weyl integration with
-Vandermonde squared), agreeing to `4.136e-15` absolute and
-`7.952e-14` relative error on the computed finite box.
+## Finite theorem
 
-The audited_clean status of that finite-box computation does not by
-itself close the analytic insertion gap recorded above. It supplies a
-bounded coefficient table for the canonical normalized single-link
-Wilson boundary class function on the explicit finite box, against
-which downstream all-weight closure work and downstream Perron-state
-work can be checked. Specifically, the sibling note explicitly states
-that it does not close:
+Fix:
 
-- an all-weight formula for `rho_(p,q)(6)`;
-- the full unmarked spatial Wilson tensor-transfer / Perron problem;
-- analytic closure of canonical `P(6)`;
-- retained status for the parent residual-environment identification
-  notes.
+- finite periodic lattice size `L`;
+- gauge group `SU(3)` on each oriented link;
+- Wilson single-plaquette action at a specified `beta`;
+- compact Haar product measure over all links.
 
-The honest read for this plaquette self-consistency row therefore
-remains bounded in source scope: the rho_(p,q)(6) audited_clean
-coefficient table narrows the remaining analytic insertion target
-without yet eliminating the strict-inequality slack documented in the
-explicit window above. Retained-grade propagation remains blocked until
-both the all-weight closure and the spatial Wilson tensor-transfer /
-Perron problem reach independent retained-grade audit.
+Then:
+
+1. the finite configuration space is compact;
+2. `S_W[U; beta]` is real and finite for every configuration;
+3. the finite partition function `Z_L(beta)` is finite and positive;
+4. `P_bar(U)` is bounded configuration-wise;
+5. the finite expectation
+
+```text
+<P>_L(beta) = Z_L(beta)^(-1) integral P_bar(U) exp(-S_W[U; beta]) dU
+```
+
+is a unique mathematical number for the selected finite surface.
+
+Monte Carlo is an evaluation method for this finite expectation. It does not introduce a fit parameter, but a short finite diagnostic run is not the same as an infinite-volume physical certificate.
+
+## Runner-backed diagnostic
+
+The paired runner verifies:
+
+- `SU(3)` proposal construction preserves unitarity and determinant one to numerical tolerance;
+- finite-lattice link and plaquette counts for `L^4`;
+- Wilson action and average plaquette are finite and real on sampled `SU(3)` configurations;
+- a one-plaquette Metropolis diagnostic changes the average plaquette between `beta=0` and `beta=6` in the expected direction;
+- the source note explicitly withholds a derivation of the canonical `0.5934` readout;
+- after audit-pipeline regeneration, the row is dependency-free and requeued for independent audit.
+
+## Boundaries
+
+This row does not claim:
+
+- a completed same-surface MC certificate for `0.5934`;
+- an analytic tensor-transfer/Perron solution for the physical `beta=6` boundary character;
+- that the finite diagnostic runner is an infinite-volume extrapolation;
+- that downstream uses of `0.5934` are proven by this note;
+- any audit verdict or status promotion.
+
+The remaining science target is still the real one: either ship a completed same-surface MC certificate for the physical value or derive the beta=6 boundary-character/tensor-transfer closure analytically.
+
+## Verification
+
+Run:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_plaquette_self_consistency_finite_mc_repair.py
+```

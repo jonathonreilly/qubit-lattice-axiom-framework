@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 243,
+    "critical": 242,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -54,25 +54,32 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16",
-      "claim_scope": "Only the supplied fixed-chart Y(delta) algebra: the displayed H_e(delta)=Y(delta)Y(delta)^dagger formula, H_e(-delta)=conjugate(H_e(delta)), and evenness of scalar readouts explicitly invariant under entrywise conjugation.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.464,
-      "note_path": "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md",
-      "queue_reason": "audit_in_progress",
+      "cross_confirmation_status": null,
+      "deps": [
+        "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+      ],
+      "direct_in_degree": 9,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/dm_leptogenesis_exact_common.py",
+        "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+        "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
+      ],
+      "load_bearing_score": 12.959,
+      "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_dm_pmns_he_parity_repair.py",
-      "transitive_descendants": 352
+      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
+      "transitive_descendants": 351
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4907,35 +4914,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
       "transitive_descendants": 357
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
-        "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
-        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
-        "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
-      ],
-      "load_bearing_score": 12.959,
-      "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
-      "transitive_descendants": 351
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -37903,5 +37881,5 @@
     }
   ],
   "ready_count": 72,
-  "total_pending": 1263
+  "total_pending": 1262
 }

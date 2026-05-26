@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 165 |
-| **retained_bounded** | 479 |
+| **retained_bounded** | 480 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1262 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 767 |
+| `audited_clean` | 768 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -268,6 +265,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -3389,6 +3387,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For dY_alpha/dz = P_alpha S_K(z) - P_alpha W_K(z)Y_alpha, the integrating-factor solution gives Y_alpha(infinity)=Psi_K(P_alpha), hence F_K(P)=sum_alpha Psi_K(P_alpha).  _(class `A`)_
 - **chain closes:** True — The claimed closure is the transport-facing integrating-factor reduction and canonical supplied-packet column selection, not a derivation of the PMNS active packet or five-real source. The runner computes the kernel, compares the functional against direct flavored transport, and verifies the canonical middle-column ordering and near-closing comparator.
 - **rationale:** Within the bounded scope stated in the note, the load-bearing step is a genuine algebraic solution of decoupled scalar transport equations over supplied S_K and W_K, and the conclusion follows. The runner source is not a trivial printout: it computes direct transport factors, the scalar functional, the channel optimum, and the canonical packet ordering, with the cache showing 12 passes and zero fails. The residual boundary is explicit: this does not close the PMNS-side value law, the active five-real source, or a derivation of the canonical active packet from Cl(3) on Z^3.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the supplied fixed-chart matrix Y(delta) with real x_i,y_i, the audit verifies only the displayed H_e(delta)=Y(delta)Y(delta)^dagger formula, H_e(-delta)=conjugate(H_e(delta)), and evenness of conjugation-invariant readouts on that fixed chart.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-dm-pmns-he-parity-pass2-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Multiplying Y(delta) by its adjoint gives the displayed H_e entries, and since all x_i,y_i are real, replacing delta by -delta is exactly entrywise complex conjugation of the Hermitian block.  _(class `A`)_
+- **chain closes:** True — The bounded formal claim closes directly from the supplied fixed-chart Y(delta) and ordinary matrix multiplication. No reduced N_e surface authority, favored-column closure, eta normalization, relative-action selector, KKT branch classification, branch minimality, leptogenesis abundance, physical PMNS column selection, or full PMNS-assisted leptogenesis selector is audited or ratified.
+- **rationale:** The runner is not merely a text checker: it constructs symbolic Y(delta), computes Y Y^dagger with Sympy, checks the displayed matrix, Hermiticity, parity under delta -> -delta, and representative conjugation-invariant readouts. Its nine source-note boundary checks only guard the narrowed scope and are not load-bearing algebra. With direct dependencies empty and the physical selector conclusions withdrawn from the binding claim, the fixed-chart algebraic theorem is clean only at the bounded formal scope stated above.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`

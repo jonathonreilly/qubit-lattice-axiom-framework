@@ -1,14 +1,20 @@
 # PR Backlog
 
-PR creation is pending for this block.
+No PR backlog remains for this block.
 
-Expected title:
+Created PR:
+
+```text
+https://github.com/jonathonreilly/cl3-lattice-framework/pull/1919
+```
+
+Title:
 
 ```text
 [physics-loop] observable principle P1/P2 conditional repair (bounded-support)
 ```
 
-Expected body should state:
+The PR body states:
 
 - no new axiom;
 - no audit verdict retag;

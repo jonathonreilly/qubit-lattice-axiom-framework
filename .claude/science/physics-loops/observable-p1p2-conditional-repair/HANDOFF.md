@@ -3,6 +3,8 @@
 This branch repairs `observable_principle_from_axiom_note` by narrowing the
 source theorem to explicit P1+P2 conditional scope.
 
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1919
+
 Key outcome:
 
 - before: `audited_conditional`

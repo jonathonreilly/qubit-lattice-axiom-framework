@@ -22,6 +22,6 @@ files_touched:
   - docs/audit/data/audit_ledger.json
   - docs/audit/AUDIT_QUEUE.md
 review_findings: "Self-review plus audit pipeline pass; independent audit still required."
-pr_status: pending
+pr_status: "open: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1919"
 next_exact_action: "Commit, push, open PR, verify CI, then pivot to the next audited conditional row."
 stop_condition: "Runtime exhaustion, global tooling block, or user interruption."

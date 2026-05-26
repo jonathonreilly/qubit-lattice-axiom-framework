@@ -188022,24 +188022,42 @@
       "verdict_rationale": null
     },
     "observable_principle_from_axiom_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T19:17:31.042807+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23"
+        ],
+        "load_bearing_score": 53.5,
+        "runner_hash": "dc8e1a606bcbf382de3337d3eb550b145bc662095535265eaaaf2ba14c4ee04a",
+        "transitive_descendants": 723
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-fresh-observable-principle-from-axiom-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact algebra closes after P1, P2, and the c=1 normalization are supplied. The restricted packet only gives Tier-A accepted-premise support for P1 at bounded tier; it does not derive or approved-premise-ratify P2, and it treats c=1 as a convention rather than a theorem fixing the physical generator scale.",
       "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Conditional finite-block algebra: given P1, P2, and the c=1/zero-source conventions, W = log|det(D+J)| on the runner APBC hierarchy block has the claimed additivity, local source-derivative, Matsubara-curvature, Klein-four, and Lt=4 selector identities; the electroweak-scale readout is excluded from the audited theorem.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (finite-algebra `log|det(D+J)|` generator on",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-26T19:17:31.042807+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -188047,21 +188065,21 @@
         "admitted_input_registry_tier_a_note_2026-05-23"
       ],
       "direct_in_degree": 88,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 53.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given P1 (scalar additivity on independent subsystems) and P2 (continuous phase-blind scalar-generator selection), with canonical c = 1 generator normalization and zero-source baseline fixed conventionally, the exact lattice-algebra identities on the minimal hierarchy block select W = log|det(D+J)| and its source-derivative/curvature/Lt=4 consequences.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "384ab5f83432f032d80fc316e61bfa424a2ad518343ae731944843c115ecdb4b",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: re-audit after a retained theorem or explicitly approved accepted-premise entry closes P2 continuous phase-blind scalar-generator selection and after the c=1 generator normalization is either derived, convention-scoped away from physical source-derivative normalization, or explicitly admitted under reviewed policy.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -188317,18 +188335,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 26,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "total_pass": 27
       },
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note",
       "transitive_descendants": 723,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the runner verifies the conditional algebra for the selected W = log|det(D+J)| candidate, but it does not derive the P2 phase-blind scalar-generator selection premise or the c=1 generator normalization from retained-grade primitives. Why this blocks: P1 is present in the Tier-A sidecar as a bounded accepted premise, but P2 is not, and a registry/meta note cannot promote a new premise or convention into proof. Repair target: derive P2 and the generator-scale normalization from retained primitives, or route P2 through an explicitly reviewed accepted-premise/Tier-A policy update and narrow the normalized-observable claim accordingly. Claim boundary until fixed: the finite algebra and Lt=4 selector are verified only conditionally on P1+P2 plus the stated conventions; the 0.025513% electroweak comparison is only an out-of-scope comparator."
     },
     "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

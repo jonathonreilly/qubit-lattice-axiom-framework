@@ -12689,6 +12689,18 @@
       "to": "three_generation_observable_theorem_note"
     },
     {
+      "from": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+      "to": "graph_first_selector_derivation_note"
+    },
+    {
+      "from": "hypercharge_identification_note",
+      "to": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
+    },
+    {
       "from": "hypercharge_identification_note",
       "to": "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
     },
@@ -24483,10 +24495,6 @@
     {
       "from": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
       "to": "su3_fusion_engine_pr1_theorem_note_2026-05-03"
-    },
-    {
-      "from": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
-      "to": "su3_tensor_network_engine_roadmap_note_2026-05-03"
     },
     {
       "from": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
@@ -58525,18 +58533,34 @@
       "runner_path": "scripts/frontier_hw1_second_order_return_shape_theorem.py",
       "title": "hw=1 Second-Order-Return Shape Theorem"
     },
+    "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": {
+      "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "graph_first_su3_integration_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "17fb8988295a8c7c14aa6e4ab4380812285f7c07bf49cfdb33bf899a2ed03c04",
+      "path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+      "title": "Hypercharge \u03b1 = 1/3 Normalization Bridge"
+    },
     "hypercharge_identification_note": {
       "claim_id": "hypercharge_identification_note",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
         "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b41b48838674794cf21713712922b5aedb5645d89e6ff85cb31178d47d34cf61",
+      "note_hash": "bbfc60614ea93569ece99abfd5ee85c4286d572f497747a087e21a9257111980",
       "path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
       "runner_path": "scripts/frontier_hypercharge_identification.py",
       "title": "Hypercharge U(1)_Y Identification from the Commutant"
@@ -77957,13 +77981,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "su3_fusion_engine_pr1_theorem_note_2026-05-03",
-        "su3_tensor_network_engine_roadmap_note_2026-05-03",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "12eddda0eff83a56174db5586a583737ffed6db2a6514b37867ecfe28c759d8d",
+      "note_hash": "e32b91926c38ac9a21e286dcc90da5d899e0dccc61b7e83e31b09377495e3d70",
       "path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
       "title": "SU(3) Tensor-Network Engine + L_s=2 Cube Perron Solve (Combined PR)"
@@ -85460,7 +85483,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 588,
+      "bounded_theorem": 589,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
@@ -85469,7 +85492,7 @@
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1015,
+      "bounded_theorem": 1016,
       "decoration": 1,
       "meta": 191,
       "no_go": 175,
@@ -85477,10 +85500,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9776,
-    "leaf_count": 782,
-    "node_count": 2537,
+    "edge_count": 9778,
+    "leaf_count": 783,
+    "node_count": 2538,
     "root_count": 836,
-    "runners_with_path": 2098
+    "runners_with_path": 2099
   }
 }

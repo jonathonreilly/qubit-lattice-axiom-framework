@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 462 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1232 |
+| unaudited | 1235 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,16 +54,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 746 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 95 |
 | `audited_decoration` | 42 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1461 |
+| `unaudited` | 1464 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1057 |
+| `bounded_theorem` | 1058 |
 | `decoration` | 43 |
 | `meta` | 234 |
 | `no_go` | 247 |
@@ -72,17 +72,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 398 |
-| `high` | 488 |
+| `critical` | 399 |
+| `high` | 487 |
 | `medium` | 579 |
-| `leaf` | 958 |
+| `leaf` | 959 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 3
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1981
+- runners classified: 1982
 - runners with (C) first-principles compute hits: 969
 - runners with (D) external comparator hits: 583
 - decoration candidates (no C, no D): 315
@@ -96,7 +96,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 723 | 53.50 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 906 | 52.33 | `audited_clean` | **retained_bounded** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 908 | 51.83 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1073 | 45.57 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1074 | 46.07 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 939 | 39.88 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 179 | 38.99 | `unaudited` | unaudited |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
@@ -909,7 +909,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -949,7 +948,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -6300,19 +6298,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Direct matrix computation gives the four single-projector returns diag(1,0,0), diag(0,1,0), diag(0,0,1), and diag(0,0,0); linearity in the weights gives P_T1 Gamma_1 W Gamma_1 P_T1 = diag(w_O0,w_a,w_b).  _(class `A`)_
 - **chain closes:** True — The cited retained Gamma_1/T_1 surface plus the explicit Hamming-bit action close the projector calculation: Gamma_1 flips only axis 1, so the three T_1 species hit O_0, T_2(1,1,0), and T_2(1,0,1), while T_2(0,1,1) is absent at this order. Linearity then gives the affine diagonal form.
 - **rationale:** Both one-hop authorities are retained-grade under the rubric, and the load-bearing step is an exact algebraic projector decomposition rather than a fitted numerical comparison or renaming. The runner’s broader hierarchy survey ends underdetermined for charged-lepton mass values, but the audited source claim only asserts the structural affine shape and explicitly leaves the weights unfixed. The structural theorem therefore closes on the restricted packet.
-- **auditor confidence:** high
-
-### `hypercharge_identification_note`
-
-- **Note:** [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the conditional chain assembly on the LH-doublet C^8 surface: retained structural ratio plus imported matter assignment plus admitted α = 1/3/GMN conventions reproduce the SM LH hypercharge and charge table.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T204833Z-82a77225-hypercharge_identificati-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under L1's +1:(-3) ratio, L2's Sym²/Anti² to Q_L/L_L matter assignment, and the admitted α = 1/3 SM normalization, Y_α has eigenvalues (+1/3, -1) on the LH-doublet sectors.  _(class `A`)_
-- **chain closes:** True — The algebraic chain closes once L2 and the admitted L3 normalization/readout are accepted as inputs. It does not close as an internal derivation of α = 1/3 or of the electric-charge bridge.
-- **rationale:** The runner genuinely computes the projector algebra, traceless ratio, uniqueness up to scale, and commutation checks rather than merely printing constants. However, the SM-value match depends on the explicitly admitted α = 1/3 normalization and the admitted Gell-Mann--Nishijima readout, neither of which is closed by the restricted packet. The rewrite removes the prior hidden renaming from the internal proof, but the retained theorem remains conditional on those imported bridges.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`
@@ -12019,21 +12004,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Peter-Weyl/Schur character orthogonality plus finite-dimensional diagonal-operator algebra on the SU(3) character truncation, reducing convolution by Z to eigenvalue multiplication by rho_(p,q).  _(class `A`)_
 - **chain closes:** True — The source has zero ledger dependencies and is scoped to textbook compact-Lie-group character algebra on an abstract finite truncation. The live runner reproduced PASS=13, FAIL=0, including Schur orthogonality checks, algebraic reduction, uniqueness, positivity, self-adjointness, swap symmetry, and abstract numerical sanity cases.
 - **rationale:** The theorem's conclusions are exactly the standard finite-dimensional character-convolution consequences of Schur orthogonality and diagonal linear algebra. The note explicitly forbids importing Wilson action, beta=6 data, or the parent plaquette environment identification, and the runner treats companion Wilson coefficients only as abstract positive symmetric input data. Within that boundary, no gap remains.
-- **auditor confidence:** high
-
-### `su3_cube_perron_solve_combined_theorem_note_2026-05-03`
-
-- **Note:** [`SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Narrow audit of the L_s=2 PBC cube structural packet: 12 plaquettes/24 directed links/all-forward incidences, bipartite 6:6 plaquette adjacency, and trivial-sector rho = delta Reference B recovery only.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T191034Z-a04bd683-su3_cube_perron_solve_co-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The L_s=2 PBC cube geometry and bipartite plaquette graph are enumerated directly, and with rho = delta_(0,0) the source-sector Perron solve gives P_trivial(6) = 0.4225317396, matching Reference B.  _(class `C`)_
-- **chain closes:** False — The three narrowed computations are internally supported by the runner and retained Reference B packet. However the restricted packet includes a non-retained roadmap authority and explicitly leaves non-trivial intertwiner traces/open cube rho work outside the closed chain.
-- **rationale:** The runner genuinely enumerates the finite cube geometry, link incidences, and bipartite adjacency rather than merely printing the claimed facts, and it recomputes the trivial-sector Perron value from rho = delta. The narrowed positive result is not a renaming or numerical comparator match. Still, the packet cites the unaudited/meta roadmap and repeatedly states that the non-trivial cube rho/intertwiner trace calculation remains open, so retained status cannot propagate cleanly through this row.
-- **open / conditional deps cited:**
-  - `SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `su3_dabc_symmetric_theorem_note_2026-05-02`

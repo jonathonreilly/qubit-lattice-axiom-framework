@@ -1,7 +1,7 @@
 {
   "by_criticality": {
-    "critical": 252,
-    "high": 343,
+    "critical": 254,
+    "high": 344,
     "leaf": 312,
     "medium": 326
   },
@@ -123,6 +123,31 @@
       "ready": true,
       "runner_path": "scripts/hopping_bilinear_hermiticity_check.py",
       "transitive_descendants": 878
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_su3_integration_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.801,
+      "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+      "transitive_descendants": 630
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -841,6 +866,33 @@
       "ready": false,
       "runner_path": "scripts/frontier_right_handed_sector.py",
       "transitive_descendants": 656
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hypercharge_identification_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+        "graph_first_su3_integration_note"
+      ],
+      "direct_in_degree": 18,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 18.299,
+      "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_hypercharge_identification.py",
+      "transitive_descendants": 629
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7105,6 +7157,33 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_fusion_engine_pr1_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.729,
+      "note_path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
+      "transitive_descendants": 149
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -10822,36 +10901,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note",
-        "gauge_scalar_temporal_completion_theorem_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.248,
-      "note_path": "docs/GAUGE_SCALAR_BRIDGE_3PLUS1_NATIVE_TUBE_STAGING_GATE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_scalar_bridge_3plus1_native_tube_staging.py",
-      "transitive_descendants": 151
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_ew_matching_rule_m_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -10899,6 +10948,36 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_lattice_physical_matching_cluster_obstruction.py",
+      "transitive_descendants": 149
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+        "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+        "gauge_vacuum_plaquette_constant_lift_obstruction_note",
+        "gauge_scalar_temporal_completion_theorem_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.229,
+      "note_path": "docs/GAUGE_SCALAR_BRIDGE_3PLUS1_NATIVE_TUBE_STAGING_GATE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_gauge_scalar_bridge_3plus1_native_tube_staging.py",
       "transitive_descendants": 149
     },
     {
@@ -37187,6 +37266,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 9,
-  "total_pending": 1233
+  "ready_count": 11,
+  "total_pending": 1236
 }

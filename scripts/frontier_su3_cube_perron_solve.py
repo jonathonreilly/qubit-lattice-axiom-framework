@@ -1,8 +1,9 @@
 """SU(3) tensor-network engine + L_s=2 PBC cube Perron solve (narrowed).
 
-This is the **combined deliverable** of the planned 5-PR engine roadmap
-(see docs/SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md), unified
-into one PR per user direction.
+This is the narrowed L_s=2 PBC cube structural runner.  Earlier planning
+called this part of a multi-PR engine roadmap, but the roadmap is
+historical context only and is not a load-bearing authority for this
+bounded theorem.
 
 It targets explicit computation of rho_(p,q)(6) for the unmarked spatial
 Wilson environment on the V-invariant L_s=2 PBC spatial cube, then plugs
@@ -769,7 +770,7 @@ def driver() -> int:
     print("  (lambda = (n,n) with n >= 1), this trace is the contraction of")
     print("  D^lambda representation matrices on the cube tensor network and")
     print("  REQUIRES the SU(3) Wigner intertwiner machinery (originally")
-    print("  PR 2 of the 5-PR roadmap). Without it, the (d_lambda c_lambda)^12")
+    print("  a separate future intertwiner-trace computation). Without it, the (d_lambda c_lambda)^12")
     print("  factor over-counts massively (it ignores the (1/d_lambda) factors")
     print("  from each link integration plus the actual intertwiner contractions).")
     print()
@@ -797,8 +798,8 @@ def driver() -> int:
         fail_count += 1
     print()
 
-    # ========== Section H: honest verdict ==========
-    print("--- Section H: honest verdict (narrowed note scope) ---")
+    # ========== Section H: honest summary ==========
+    print("--- Section H: honest summary (narrowed note scope) ---")
     print()
     print("  STRUCTURAL FINDINGS (all PASS):")
     print("    1. L_s=2 PBC cube has 12 unique unoriented spatial plaquettes,")
@@ -849,7 +850,7 @@ def driver() -> int:
     print(f"  Plaquette graph BIPARTITE (NEW finding; admits alternating lambda).")
     print(f"  Trivial-sector P(6) = {P_trivial:.6f} (recovers Reference B).")
     print(f"  Non-trivial-sector P(6) requires intertwiner traces (deferred).")
-    print(f"  Final verdict: HONEST PATH A (structural skeleton landed,")
+    print(f"  Final summary: HONEST PATH A (structural skeleton landed,")
     print(f"    quantitative closure deferred to intertwiner-PR follow-up).")
     return 0 if fail_count == 0 else 1
 

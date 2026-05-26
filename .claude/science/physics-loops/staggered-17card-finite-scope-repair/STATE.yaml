@@ -1,0 +1,44 @@
+loop: staggered-17card-finite-scope-repair
+branch: physics-loop/staggered-17card-finite-scope-repair-20260525
+target_claim_id: staggered_fermion_card_2026-04-11
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: finite canonical 17-card runner certificate only
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle: 1
+active_route: finite canonical runner narrowing
+files_touched:
+  - docs/STAGGERED_FERMION_CARD_2026-04-11.md
+  - scripts/frontier_staggered_17card_finite_scope_repair.py
+  - outputs/staggered_17card_finite_scope_repair_2026-05-25.txt
+verification:
+  audit_pipeline: pass_pre_existing_maradudin_warning_only
+  runner: PASS=27 FAIL=0
+  py_compile: pass
+  audit_lint_strict: pass_pre_existing_warning_only
+  controlled_vocabulary_check: pass
+  vocab_lint_report_only: pass
+  diff_check: pass
+audit_queue:
+  claim_type: bounded_theorem
+  audit_status: unaudited
+  effective_status: unaudited
+  deps: []
+  open_dependency_paths: []
+  transitive_descendants: 280
+  load_bearing_score: 11.634
+  position: 1
+  ready: true
+  criticality: critical
+runner_classification_hint:
+  A: 0
+  B: 4
+  C: 1
+  D: 0
+review_loop_disposition: PASS_WITH_BOUNDED_CLAIMS
+next_exact_action: commit, push, and open review PR
+stop_condition: review PR opened for independent audit, then continue campaign to next ranked row

@@ -24133,34 +24133,6 @@
       "to": "c3_symmetry_preserved_interpretation_note_2026-05-08"
     },
     {
-      "from": "staggered_fermion_card_2026-04-11",
-      "to": "minimal_axioms_2026-04-11"
-    },
-    {
-      "from": "staggered_fermion_card_2026-04-11",
-      "to": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "staggered_fermion_card_2026-04-11",
-      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "staggered_fermion_card_2026-04-11",
-      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "staggered_fermion_card_2026-04-11",
-      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "staggered_fermion_card_2026-04-11",
-      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "staggered_fermion_card_2026-04-11",
-      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
-    },
-    {
       "from": "staggered_graph_failure_map_note",
       "to": "staggered_graph_portability_note"
     },
@@ -77217,23 +77189,15 @@
     },
     "staggered_fermion_card_2026-04-11": {
       "claim_id": "staggered_fermion_card_2026-04-11",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "minimal_axioms_2026-04-11",
-        "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "6c9b6cc72832fc1387fb1763878e3daa95910f0c3874970eb0c93e63df2fff6e",
+      "note_hash": "db83a294851bc2f8c5691fdc53cce903842ed33bda35e56d6c46b5c02785ddf6",
       "path": "docs/STAGGERED_FERMION_CARD_2026-04-11.md",
-      "runner_path": "scripts/frontier_staggered_17card.py",
-      "title": "Staggered Fermion + Parity-Coupled Gravity \u2014 Complete Card"
+      "runner_path": "scripts/frontier_staggered_17card_finite_scope_repair.py",
+      "title": "Staggered Fermion Canonical 17-Card Finite Runner Certificate"
     },
     "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": {
       "claim_id": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
@@ -85322,6 +85286,7 @@
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
     "staggered_fermion_card_2026-04-10",
+    "staggered_fermion_card_2026-04-11",
     "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
     "staggered_geometry_superposition_note_2026-04-11",
     "staggered_graph_portability_note",
@@ -85483,11 +85448,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 590,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
-      "none": 1464,
+      "none": 1463,
       "open_gate": 48,
       "positive_theorem": 173
     },
@@ -85500,10 +85465,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
-    "leaf_count": 783,
+    "edge_count": 9771,
+    "leaf_count": 784,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

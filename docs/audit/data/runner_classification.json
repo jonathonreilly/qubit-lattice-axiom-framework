@@ -20905,16 +20905,16 @@
       "runner": "scripts/frontier_staggered_17card.py"
     },
     "staggered_fermion_card_2026-04-11": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 21,
+        "B": 4,
+        "C": 1,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_staggered_17card.py"
+      "dominant_class": "B",
+      "runner": "scripts/frontier_staggered_17card_finite_scope_repair.py"
     },
     "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
@@ -45889,8 +45889,7 @@
       "claims": [
         "lanes.staggered.readme",
         "session_synthesis_2026-04-10_graph_axioms",
-        "staggered_fermion_card_2026-04-10",
-        "staggered_fermion_card_2026-04-11"
+        "staggered_fermion_card_2026-04-10"
       ],
       "counts": {
         "A": 0,
@@ -45900,6 +45899,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_staggered_17card_finite_scope_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_fermion_card_2026-04-11"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_staggered_3d_self_gravity_sign.py": {
@@ -55199,13 +55213,13 @@
     "decoration_candidates": 315,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
-    "runners_with_C": 969,
+    "runners_classified": 1983,
+    "runners_with_C": 970,
     "runners_with_D": 583
   }
 }

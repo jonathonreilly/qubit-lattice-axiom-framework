@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1945
 
 This block repairs `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
 with a bounded Z^3 graph-Laplacian normalization certificate.

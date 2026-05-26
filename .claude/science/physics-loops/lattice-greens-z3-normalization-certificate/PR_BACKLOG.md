@@ -1,7 +1,7 @@
 # PR Backlog
 
-PR not opened yet. Expected title:
+PR opened:
 
 ```text
-[physics-loop] lattice-greens-z3-normalization-certificate bounded-support
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1945
 ```

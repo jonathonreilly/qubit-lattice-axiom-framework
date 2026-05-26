@@ -13,7 +13,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 runtime_request: 12h campaign
 cycle_block: Z3 lattice Green normalization certificate
-pr_status: pending
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1945"
 open_imports:
   - "Independent audit must review the bounded named-import wrapper."
 no_go_routes:
@@ -23,5 +23,5 @@ files_touched:
   - docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
   - scripts/lattice_greens_z3_asymptotic_normalization_certificate.py
   - logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt
-next_exact_action: "Run final gates, commit, push, open PR, then continue campaign if runtime remains."
+next_exact_action: "Verify PR merge state, then continue campaign if runtime remains."
 stop_condition: "Only stop this campaign when the 12h budget is exhausted, the user stops it, or a global tooling blocker prevents safe continuation."

@@ -11457,22 +11457,6 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "central_band_dense_joint_note"
-    },
-    {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "central_band_mass_window_note"
-    },
-    {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "asymmetry_persistence_pilot_note"
-    },
-    {
-      "from": "hard_geometry_gravity_window_note",
-      "to": "asymmetry_persistence_mass_window_note"
-    },
-    {
       "from": "hard_geometry_head_to_head_note",
       "to": "central_band_dense_joint_highn_note"
     },
@@ -57179,15 +57163,10 @@
     },
     "hard_geometry_gravity_window_note": {
       "claim_id": "hard_geometry_gravity_window_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "central_band_dense_joint_note",
-        "central_band_mass_window_note",
-        "asymmetry_persistence_pilot_note",
-        "asymmetry_persistence_mass_window_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/asymmetry_persistence_joint_card.py",
         "scripts/asymmetry_persistence_pilot.py",
@@ -57200,10 +57179,10 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "ece5264d847d7614f924a0bf6d102bf3e91a07df9c03c0fa848fbfd8d6c13fdf",
+      "note_hash": "d9ebe10929687e3d7ed6b157d33dcc9834f0da8b2d5feac53ec4de8976de5595",
       "path": "docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md",
       "runner_path": "scripts/hard_geometry_gravity_window.py",
-      "title": "Hard-Geometry Gravity Window Note"
+      "title": "Hard-Geometry Direct Gravity Window Note"
     },
     "hard_geometry_head_to_head_note": {
       "claim_id": "hard_geometry_head_to_head_note",
@@ -85016,6 +84995,7 @@
     "hadron_lane1_sqrt_sigma_b2_static_energy_bridge_scout_note_2026-04-30_note_2026-05-17",
     "hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30",
     "half_plane_chart_equivalence_narrow_theorem_note_2026-05-02",
+    "hard_geometry_gravity_window_note",
     "hard_geometry_local_note",
     "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
     "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
@@ -85483,11 +85463,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 590,
       "decoration": 1,
       "meta": 191,
       "no_go": 72,
-      "none": 1464,
+      "none": 1463,
       "open_gate": 48,
       "positive_theorem": 173
     },
@@ -85500,10 +85480,10 @@
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
-    "leaf_count": 783,
+    "edge_count": 9774,
+    "leaf_count": 785,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

@@ -1,0 +1,20 @@
+loop: hard-geometry-direct-gravity-narrow
+date: 2026-05-26
+target_claim_id: hard_geometry_gravity_window_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: narrow to primary direct-gravity maximum
+files_touched:
+  - docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md
+open_imports: []
+removed_scope:
+  - mass-response fit ranking
+pr_status: pending
+next_exact_action: run audit pipeline and open review PR
+stop_condition: PR opened and verified, then continue campaign

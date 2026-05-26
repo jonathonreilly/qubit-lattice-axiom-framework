@@ -1,9 +1,9 @@
 {
   "criticality_counts": {
     "critical": 409,
-    "high": 485,
-    "leaf": 1034,
-    "medium": 612
+    "high": 483,
+    "leaf": 1035,
+    "medium": 613
   },
   "flagship_signal_used": false,
   "node_count": 2540,

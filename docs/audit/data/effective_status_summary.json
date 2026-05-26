@@ -3,8 +3,8 @@
     "bounded_theorem": 1057,
     "decoration": 47,
     "meta": 234,
-    "no_go": 254,
-    "open_gate": 111,
+    "no_go": 255,
+    "open_gate": 110,
     "positive_theorem": 723
   },
   "cycle_examples": [
@@ -47,7 +47,7 @@
   ],
   "cycles_detected": 6,
   "effective_status_counts": {
-    "audited_conditional": 58,
+    "audited_conditional": 57,
     "audited_failed": 2,
     "audited_numerical_match": 12,
     "audited_renaming": 18,
@@ -78,7 +78,7 @@
     "retained_bounded": 464,
     "retained_no_go": 162,
     "retained_pending_chain": 8,
-    "unaudited": 1268
+    "unaudited": 1269
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

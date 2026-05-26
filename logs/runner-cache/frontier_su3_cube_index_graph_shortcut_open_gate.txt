@@ -1,54 +1,44 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py
-runner_sha256: 91de4e919eda47e8a409d5cfc90915bc9a44610948097f3754c9ba8d92984ba7
+runner_sha256: 7a59118d0bcb5320f074da32db598d6211cc39e9a6ee782cc09965fc6d1494f2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.97
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
-==============================================================================
-SU(3) L_s=2 Cube Index-Graph Shortcut Open Gate
-==============================================================================
+[PASS] [A] note boundary contains: Claim type:** no_go
+[PASS] [A] note boundary contains: Status:** bounded no-go
+[PASS] [A] note boundary contains: uniform-pairing shortcut route
+[PASS] [A] note boundary contains: P_candidate(6) = 0.4291049969
+[PASS] [A] note boundary contains: which is more than five hundred times the witness scale
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale audit/open-gate phrase: Status:** open gate, unaudited
+[PASS] [A] note omits stale audit/open-gate phrase: Primary runner:
+[PASS] [A] note omits stale audit/open-gate phrase: parent theorem promotion
+[PASS] [A] note omits stale audit/open-gate phrase: verdict_rationale_template
+[PASS] [A] note omits stale audit/open-gate phrase: intrinsic_status:
 
---- Geometry ---
-  unique plaquettes: 12
-  PASS: 12 plaquettes constructed
+=== finite shortcut graph ===
+[PASS] [A] 12 unique L_s=2 PBC plaquettes (12)
+[PASS] [A] 48 cyclic index nodes (48)
+[PASS] [A] 48 link-induced identifications (48)
+[PASS] [A] 8 connected components (8)
+[PASS] [A] uniform-pairing exponent is -16 (-16)
 
---- Candidate index graph ---
-  nodes: 48
-  identifications: 48
-  connected components: 8
-  PASS: candidate graph count matches expected L_s=2 shortcut
-
---- Candidate topological factor ---
-  T_lambda(candidate) = d_lambda^(-16)
-  PASS: shortcut exponent is -16
-
---- Conditional rho and Perron value ---
-  rho_candidate_(0, 0)(6) = 1.000000e+00
-  rho_candidate_(0, 1)(6) = 2.124624e-01
-  rho_candidate_(1, 0)(6) = 2.124624e-01
-  rho_candidate_(1, 1)(6) = 5.587932e-03
-  rho_candidate_(0, 2)(6) = 6.702087e-05
-  rho_candidate_(2, 0)(6) = 6.702087e-05
-  SUPPORT: rho values are conditional on the uniform-pairing trace ansatz
+=== candidate rho and Perron comparison ===
+[PASS] [A] rho(0,0) normalized to one (1.000000000000)
+[PASS] [A] rho(1,0) equals rho(0,1) (2.124624e-01/2.124624e-01)
+[PASS] [A] rho(1,0) matches cached candidate (2.124624e-01)
+[PASS] [A] rho(1,1) matches cached candidate (5.587932e-03)
+[PASS] [A] candidate Perron value matches expected (0.4291049969)
+[PASS] [A] candidate Perron value is normalized finite (0.4291049969)
+[PASS] [B] candidate misses target by witness-scale margin (gap=0.1644256831, gap/eps=542.7)
+[PASS] [B] uniform-pairing shortcut cannot close target (0.4291049969 < 0.5935306800)
   Perron eigenvalue: 3.5169423991
-  P_candidate(6): 0.4291049969
-  SUPPORT: candidate Perron value is finite and normalized
 
---- Bridge comparison ---
-  bridge-support target: 0.5935306800
-  distance: 0.164426
-  epsilon_witness: 3.030e-04
-  SUPPORT: candidate shortcut would not close the bridge witness
-
-Open gate:
-  Prove the actual SU(3) Wigner/intertwiner traces equal d_lambda^(-16),
-  or compute the traces and replace this shortcut candidate.
-
-==============================================================================
-SUMMARY: OPEN PASS=3 SUPPORT=3 FAIL=0
-==============================================================================
+SU(3) cube uniform-pairing shortcut no-go certificate: PASS
+PASS=25 FAIL=0
 
 ----- stderr -----
 

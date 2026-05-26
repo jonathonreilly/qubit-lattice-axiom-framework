@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/periodic_2d_wraparound_package_certificate.py
+runner_sha256: 4baadf6dbd8d60916e9305537d7c3d23900bf2369bc5539a4d9a0e058fe91444
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+helper: minimum-image wraparound distances PASS
+self_consistency: source and wrap-edge Hamiltonian PASS
+anderson_phase: source and wrap-edge Hamiltonian PASS
+born_alpha: source and wrap-edge Hamiltonian PASS
+self_consistency: cached rerun evidence PASS
+anderson_phase: cached rerun evidence PASS
+born_alpha: cached rerun evidence PASS
+CERTIFICATE PASS: periodic 2D wraparound package evidence is present
+
+----- stderr -----
+

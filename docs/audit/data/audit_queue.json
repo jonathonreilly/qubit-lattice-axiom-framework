@@ -1,9 +1,9 @@
 {
   "by_criticality": {
-    "critical": 262,
+    "critical": 263,
     "high": 348,
-    "leaf": 318,
-    "medium": 331
+    "leaf": 319,
+    "medium": 332
   },
   "cycle_break_target_count": 6,
   "cycle_break_targets": [
@@ -257,6 +257,32 @@
       "ready": true,
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "transitive_descendants": 696
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+        "graph_first_su3_integration_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.801,
+      "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+      "transitive_descendants": 630
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -18310,6 +18336,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.066,
+      "note_path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
+      "transitive_descendants": 66
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28687,6 +28735,41 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "periodic_2d_wraparound_fix_note_2026-04-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "self_consistency_structured_null_note_2026-04-11",
+        "holographic_probe_note_2026-04-11",
+        "boundary_law_robustness_note_2026-04-11",
+        "staggered_geometry_superposition_note_2026-04-11",
+        "bmv_entanglement_note_2026-04-11",
+        "branch_entanglement_robustness_note_2026-04-11",
+        "bmv_threebody_note_2026-04-11"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_born_rule_alpha.py",
+        "scripts/frontier_eigenvalue_stats_and_anderson_phase.py",
+        "scripts/frontier_self_consistency_test.py",
+        "scripts/periodic_geometry.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/periodic_2d_wraparound_package_certificate.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37902,6 +37985,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 33,
-  "total_pending": 1259
+  "ready_count": 36,
+  "total_pending": 1262
 }

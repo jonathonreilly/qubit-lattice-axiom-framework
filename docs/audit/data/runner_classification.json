@@ -13536,6 +13536,18 @@
       "dominant_class": null,
       "runner": "scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py"
     },
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": {
+      "assert_count": 5,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py"
+    },
     "lattice_keff_continuum_note": {
       "assert_count": 0,
       "counts": {
@@ -16465,16 +16477,16 @@
       "runner": "scripts/per_site_su2_spin_half_check.py"
     },
     "periodic_2d_wraparound_fix_note_2026-04-11": {
-      "assert_count": 0,
+      "assert_count": 11,
       "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 7,
+        "A": 4,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_self_consistency_test.py"
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/periodic_2d_wraparound_package_certificate.py"
     },
     "persistent_inertial_object_probe_note": {
       "assert_count": 0,
@@ -45592,7 +45604,6 @@
     "scripts/frontier_self_consistency_test.py": {
       "assert_count": 0,
       "claims": [
-        "periodic_2d_wraparound_fix_note_2026-04-11",
         "self_consistency_structured_null_note_2026-04-11"
       ],
       "counts": {
@@ -51573,6 +51584,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py": {
+      "assert_count": 5,
+      "claims": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/lattice_h2_T_numpy_continuum.py": {
       "assert_count": 0,
       "claims": [
@@ -52881,6 +52907,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/periodic_2d_wraparound_package_certificate.py": {
+      "assert_count": 11,
+      "claims": [
+        "periodic_2d_wraparound_fix_note_2026-04-11"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/persistent_inertial_object_probe.py": {
@@ -55413,15 +55454,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 323,
+    "decoration_candidates": 325,
     "dominant_class_distribution": {
-      "A": 229,
+      "A": 231,
       "B": 275,
       "C": 749,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1991,
+    "runners_classified": 1993,
     "runners_with_C": 970,
     "runners_with_D": 584
   }

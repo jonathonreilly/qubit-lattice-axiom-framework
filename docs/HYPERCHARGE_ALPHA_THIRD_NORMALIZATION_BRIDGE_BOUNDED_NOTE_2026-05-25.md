@@ -90,6 +90,55 @@ Q(d_L)  =  T_3(d_L) + Y(Q_L)/2  =  -1/2 + 1/6  =  -1/3.
 These match the empirical SM electric charges of (u_L, d_L), giving an
 independent rational consistency check.
 
+## Named Admitted Premises Registration (2026-05-26 audit-repair)
+
+In response to the 2026-05-26 `audited_conditional` verdict
+(`notes_for_re_audit_if_any`: "supply retained or explicitly
+accepted-premise packet entries for the Anti²-as-L_L readout, GMN
+relation, T_3(e_L) assignment, and Q(electron) unit convention"), this
+section registers the four non-framework inputs the proof-walk uses in
+named-premise form for independent audit. No new admissions are
+introduced; this is a structural re-statement of admissions already
+present in §"Claim" and §"Proof-walk" steps (B2)–(B5). This section does
+not add these inputs to the audit pipeline's centralized accepted-premise
+registry and does not grant retained or chain-closing authority by
+itself.
+
+- **(P1)** *Anti²-as-`L_L` branch readout convention.* On the
+  retained graph-first 6+2 split (Sym² 6-state ⊕ Anti² 2-state), the
+  2-state Anti² branch is identified with the left-handed lepton
+  doublet `L_L` for the bounded readout surface of this bridge. This
+  is a notation/readout convention; the matter-sector identification
+  itself is supplied by
+  [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md)
+  as chain-assembly context. **Status:** named admitted premise
+  (readout convention, not derived in this bridge; independent audit
+  decides whether this packet entry is sufficient).
+- **(P2)** *Gell-Mann–Nishijima relation `Q = T_3 + Y/2`.* The SM
+  convention bridge relating electric charge `Q`, weak isospin `T_3`,
+  and hypercharge `Y` in the doubled convention. **Status:** named
+  admitted premise (SM-convention bridge, not derived in this bridge;
+  independent audit decides whether this packet entry is sufficient).
+- **(P3)** *Weak-isospin assignment `T_3(e_L) = -1/2`.* The standard
+  SM assignment placing the left-handed electron as the `T_3 = -1/2`
+  weak-isospin doublet partner. **Status:** named admitted premise
+  (SM-convention weak-isospin assignment, not derived in this bridge;
+  independent audit decides whether this packet entry is sufficient).
+- **(P4)** *Electron-charge unit `Q(electron) = -1`.* The standard SI
+  convention assigning the electron's electric charge as the unit of
+  elementary charge, with sign convention `Q(electron) = -1` (modern
+  elementary-charge unit). **Status:** named admitted premise
+  (empirical unit convention; this is a single empirical input, not
+  derived in this bridge; independent audit decides whether this packet
+  entry is sufficient).
+
+The four registered premises (P1)–(P4) jointly feed steps (B2)–(B5)
+of the §"Proof-walk" table. Step (B1) (`β = -3α` from the 6+2
+tracelessness) uses only the retained graph-first split below; it
+does not consume any of (P1)–(P4). The composition `(B1)+(P1)+(P2)+
+(P3)+(P4)` then closes `α = 1/3` by rational arithmetic in steps
+(B6)–(B7).
+
 ## Load-Bearing Dependencies
 
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)

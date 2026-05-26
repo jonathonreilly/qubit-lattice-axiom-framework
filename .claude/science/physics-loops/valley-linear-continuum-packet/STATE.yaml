@@ -1,0 +1,30 @@
+loop_slug: valley-linear-continuum-packet
+started_at: "2026-05-26T09:33:00Z"
+mode: campaign_block
+target_claim_id: valley_linear_continuum_synthesis_note
+target_note: docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md
+target_runner: scripts/frontier_valley_linear_continuum_synthesis.py
+branch: physics-loop/valley-linear-continuum-packet-20260526
+base: origin/main@c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "Independent audit must review the in-packet continuum bridge."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: self_contained_continuum_bridge
+hard_residual_attacked: "Prior verdict could not audit the S=L(1-f) to 1/b continuum bridge because it lived outside the restricted packet."
+files_touched:
+  - docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md
+  - scripts/frontier_valley_linear_continuum_synthesis.py
+  - outputs/valley_linear_continuum_synthesis_certificate_2026-05-26.txt
+open_imports:
+  - "Independent audit must decide whether the straight-ray continuum bridge and retained-bounded finite-lattice dependencies close the bounded synthesis."
+no_go_routes:
+  - "No universal finite-lattice theorem."
+  - "No architecture-independent Gate-B closure."
+  - "No 4D tail-law closure."
+next_exact_action: "Run audit pipeline and lints, then open PR if clean."
+stop_condition: "Block PR opened or verification fails."

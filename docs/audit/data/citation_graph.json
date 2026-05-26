@@ -51859,9 +51859,9 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4d34d0b265f8e4cca818d46a67d135722f9ae1be9aef4da93a3382077539638f",
+      "note_hash": "ec46d1ba15c5052cb63318e6df0aedb73f823b32b78737e79f62cad401d0d765",
       "path": "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "runner_path": null,
+      "runner_path": "scripts/dm_thermal_average_sommerfeld_normalization.py",
       "title": "DM Thermal Average + Sommerfeld Argument Normalization \u2014 Named Non-Derivation Import"
     },
     "dm_wilson_direct_descendant_batch_authority_note_2026-05-03": {
@@ -85492,6 +85492,6 @@
     "leaf_count": 784,
     "node_count": 2538,
     "root_count": 835,
-    "runners_with_path": 2102
+    "runners_with_path": 2103
   }
 }

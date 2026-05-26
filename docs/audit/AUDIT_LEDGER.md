@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 165 |
-| **retained_bounded** | 481 |
+| **retained_bounded** | 482 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 17 |
 | unaudited | 1257 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 770 |
+| `audited_clean` | 771 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -672,6 +669,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9813,6 +9811,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The qubit-per-site axiom says 'qubit at every site'; by the standard QI definition, 'qubit' is the minimal faithful complex irreducible module of M_2(C), so the multiplicity classification selects k = 1.  _(class `E`)_
 - **chain closes:** False — The conclusion is obtained by unpacking the word 'qubit' as already meaning a two-dimensional minimal faithful module, not by an independent derivation from algebraic inputs. The multiplicity classification only confirms that this definition corresponds to k = 1 once the minimality requirement is imported.
 - **rationale:** The load-bearing move is definitional: A1 says each site is a qubit, and the note imports 'qubit' as the minimal faithful two-dimensional M_2(C) module. Wedderburn classification then translates that definition into the multiplicity label k = 1, but does not independently force minimality from the algebra A_x = M_2(C) alone, since higher multiplicity faithful modules remain available. The axiom-premise carve-out removes the automatic downgrade for citing MINIMAL_AXIOMS_2026-05-20.md, but it does not convert a rereading of the axiom's terminology into a class C derivation.
+- **auditor confidence:** high
+
+### `r_base_group_theory_derivation_theorem_note_2026-04-24`
+
+- **Note:** [`R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md`](../../docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given retained SU(3)/SU(2) structural inputs and the admitted GUT hypercharge normalization factor 3/5, the exact algebraic identity R_base = (3/5) * [(4/3)*8 + (3/4)*3] / [(3/4)*3] = 31/9.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-r-base-group-theory-pass2-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** R_base = (3/5) * [C_2(3) * dim(adj_3) + C_2(2) * dim(adj_2)] / [C_2(2) * dim(adj_2)] = 31/9.  _(class `A`)_
+- **chain closes:** True — The SU(3) and SU(2) Casimir/dimension inputs are standard algebra on the retained graph-first gauge structure, and the 3/5 factor is an admitted bounded normalization input from the retained_bounded hypercharge lane. Within that explicitly bounded input set, the arithmetic closes exactly and does not import cosmological observations.
+- **rationale:** The load-bearing result is a rational arithmetic identity over retained-grade structural inputs plus one admitted normalization input. The GUT normalization 3/5 is sufficient for a bounded clean result because the claim is explicitly scoped to that admission; it would not support an unbounded positive theorem deriving the normalization itself. This verdict does not ratify the full dark-matter/baryon ratio, Omega_Lambda chain, Sommerfeld factor, representation uniqueness, or physical cosmology closure.
 - **auditor confidence:** high
 
 ### `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02`

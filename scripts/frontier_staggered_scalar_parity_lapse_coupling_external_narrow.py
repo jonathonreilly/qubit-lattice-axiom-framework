@@ -1,21 +1,26 @@
 #!/usr/bin/env python3
-"""Runner for the staggered scalar parity / lapse coupling external narrow theorem.
+"""Runner for the staggered scalar parity / lapse coupling algebra certificate.
 
-The note records the algebraic content of the literature-correct staggered scalar
-coupling forms (parity (P), lapse (L)) and the per-site distinction from the
-additive identity coupling (I). This runner verifies the algebraic identities
-with exact Fraction arithmetic on small staggered lattices, and runs the
-source-note boundary checks.
+The repaired note does not assert external literature correctness. It records
+the algebraic consequences of three displayed operator forms: parity (P),
+lapse (L), and additive identity (I). This runner verifies those identities
+with exact Fraction arithmetic on small staggered lattices and checks that the
+note preserves the narrowed boundary.
 """
 
 from __future__ import annotations
 
 from fractions import Fraction
 from itertools import product
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md"
+LEDGER = ROOT / "docs" / "audit/data/audit_ledger.json"
+QUEUE = ROOT / "docs" / "audit/data/audit_queue.json"
+CLAIM_ID = "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
+RUNNER_PATH = "scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py"
 
 PASS = 0
 FAIL = 0
@@ -212,12 +217,16 @@ def test_well_hill_distinction_under_parity() -> None:
 def test_note_boundary() -> None:
     section("T8: source-note boundary")
     text = NOTE.read_text(encoding="utf-8")
-    lower = text.lower()
-    # Forbidden ASSERTING phrasings this note must NOT contain.
-    # (We look for assertion-positive phrasings, since the Boundary section
-    #  legitimately mentions disclaim-form phrases like "does not claim
-    #  universal irregular-graph closure".)
+    normalized = " ".join(text.split())
+    lower = normalized.lower()
     forbidden_asserts = [
+        "literature-correct scalar coupling",
+        "external references",
+        "upstream authority",
+        "zache",
+        "dempsey",
+        "kogut",
+        "susskind",
         "this note closes the staggered-dirac realization gate",
         "this note derives the parity coupling from a1",
         "we derive the parity coupling from a1",
@@ -229,12 +238,12 @@ def test_note_boundary() -> None:
         "we add a new framework axiom",
         "pipeline-derived status: retained",
     ]
-    # Required disclaimers / structural markers
     required = [
+        "bounded algebraic certificate",
         "does not claim",
-        "minimal_axioms_2026-05-03",
-        "external",
-        "honestly open",
+        "not a literature-correctness theorem",
+        "not a derivation from the framework axioms",
+        "no external literature authority is load-bearing",
         "**claim type:** bounded_theorem",
     ]
     check("note declares bounded_theorem", "**Claim type:** bounded_theorem" in text)
@@ -244,9 +253,29 @@ def test_note_boundary() -> None:
           len(missing) == 0,
           f"missing = {missing}" if missing else "all required disclaimers present")
     found_forbidden = [item for item in forbidden_asserts if item in lower]
-    check("note avoids assertion-form over-claims (axiom-forcing, universal-graph, trajectory-sign, retained-status)",
+    check("note avoids stale external-authority and over-claim phrases",
           len(found_forbidden) == 0,
-          f"found = {found_forbidden}" if found_forbidden else "no asserting-form over-claims found")
+          f"found = {found_forbidden}" if found_forbidden else "no stale over-claims found")
+
+
+def audit_metadata_checks() -> None:
+    section("T9: regenerated audit metadata")
+    if not LEDGER.exists() or not QUEUE.exists():
+        check("audit metadata files exist", False, "ledger or queue missing")
+        return
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
+    row = ledger["rows"][CLAIM_ID]
+    queue = json.loads(QUEUE.read_text(encoding="utf-8"))["queue"]
+    queue_entry = next((entry for entry in queue if entry["claim_id"] == CLAIM_ID), None)
+
+    check("claim type remains bounded_theorem", row.get("claim_type") == "bounded_theorem", str(row.get("claim_type")))
+    check("audit status reset for re-audit", row.get("audit_status") == "unaudited", str(row.get("audit_status")))
+    check("effective status reset for re-audit", row.get("effective_status") == "unaudited", str(row.get("effective_status")))
+    check("runner path is registered", row.get("runner_path") == RUNNER_PATH, str(row.get("runner_path")))
+    check("direct dependency list is empty", row.get("deps") == [], str(row.get("deps")))
+    check("helper runner paths are empty", row.get("helper_runner_paths") == [], str(row.get("helper_runner_paths")))
+    check("open dependency paths are empty", row.get("open_dependency_paths") == [], str(row.get("open_dependency_paths")))
+    check("queue entry is ready", queue_entry is not None and queue_entry.get("ready") is True, str(queue_entry))
 
 
 def main() -> int:
@@ -260,6 +289,7 @@ def main() -> int:
     test_lapse_reduces_to_flat_at_zero_phi()
     test_well_hill_distinction_under_parity()
     test_note_boundary()
+    audit_metadata_checks()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
     return 0 if FAIL == 0 else 1
 

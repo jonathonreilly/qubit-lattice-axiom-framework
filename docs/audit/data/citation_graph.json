@@ -77479,10 +77479,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c8e1f1a398089f5b35169eb28a545fa76b9b73cd57d720b99dfed17b3459a7d2",
+      "note_hash": "0c4276c1ffd33b5fe51641eb4af5dc2a4385acc0226514dea1d920f9c9c8baa7",
       "path": "docs/STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py",
-      "title": "Staggered Scalar Parity / Lapse Coupling \u2014 External Narrow Theorem"
+      "title": "Staggered Scalar Parity / Lapse Coupling Algebra Certificate"
     },
     "staggered_self_consistent_two_body_note_2026-04-11": {
       "claim_id": "staggered_self_consistent_two_body_note_2026-04-11",

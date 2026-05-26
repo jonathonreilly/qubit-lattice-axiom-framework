@@ -1,0 +1,28 @@
+loop: staggered-scalar-parity-lapse-algebra
+status: ready_for_review
+campaign: physics-loop-12h-audited-conditional-repair
+branch: physics-loop/staggered-scalar-parity-lapse-repair-20260526
+target_claim: staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+bare_retained_allowed: false
+proposal_allowed: false
+audit_required_before_effective_retained: true
+claim_boundary: exact algebra for displayed staggered parity/lapse/identity operator forms
+open_blocker: external coupling correctness and framework derivation remain separate bridges
+runner_result: PASS=26 FAIL=0
+files_touched:
+  - docs/STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py
+  - outputs/staggered_scalar_parity_lapse_algebra_certificate_2026-05-26.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+next_exact_action: open review PR and let independent audit decide
+stop_condition: PR opened and verified

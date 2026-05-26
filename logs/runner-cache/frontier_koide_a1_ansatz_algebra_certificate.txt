@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_a1_ansatz_algebra_certificate.py
+runner_sha256: 65ad7ac298f8802dd7a3b62a9459bac9a4babe56674e9d18668855fbc2085b1e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+[PASS] [A] note boundary contains: bounded support theorem
+[PASS] [A] note boundary contains: admitted quartic ansatz
+[PASS] [A] note boundary contains: input ansatz for this certificate
+[PASS] [A] note boundary contains: Downstream use of this row must carry the ansatz premise explicitly
+[PASS] [A] note boundary contains: a derivation of the quartic ansatz from the minimal axiom surface
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale package phrase: Headline admission
+[PASS] [A] note omits stale package phrase: Theoretical status
+[PASS] [A] note omits stale package phrase: Rigorously established
+[PASS] [A] note omits stale package phrase: Route A (RECOMMENDED)
+[PASS] [A] note omits stale package phrase: retained scope after narrowing
+[PASS] [A] note omits stale package phrase: CLOSED
+
+=== Koide quartic-ansatz algebra ===
+[PASS] [A] trace reduction identity (-9*(-a**2 + 2*r**2))
+[PASS] [A] squared ansatz identity (81*(-a**2 + 2*r**2)**2)
+[PASS] [A] ansatz is an explicit square (81*(-a**2 + 2*r**2)**2)
+[PASS] [A] zero-locus forward direction
+[PASS] [A] zero-locus ratio solves a^2=2r^2
+[PASS] [A] Brannen c squared is two on zero-locus (sqrt(2))
+[PASS] [A] formal Q expression gives two thirds (2/3)
+
+Koide quartic-ansatz algebra certificate: PASS
+PASS=19 FAIL=0
+
+----- stderr -----
+

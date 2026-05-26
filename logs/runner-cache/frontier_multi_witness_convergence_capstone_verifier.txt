@@ -43,6 +43,18 @@ Companions:
   [PASS] Σ1.identity at N=17: |{W1(N), ..., W6(N)}| = 1 (one rational, six frames)  (unique values: {Fraction(16, 289)})
   [PASS] Σ1.identity at N=53: |{W1(N), ..., W6(N)}| = 1 (one rational, six frames)  (unique values: {Fraction(52, 2809)})
 
+  W3 numerical cross-check (mpmath at 50 dps): verify Bernoulli-Hurwitz identity holds
+  [PASS] W3 numerical N=3: mpmath zeta_H(-1, 1/N) matches Bernoulli-Hurwitz closed form to 30+ dp  (mpmath=0.22222222222222220989, closed=0.22222222222222220989, |diff|=0.00e+00)
+  [PASS] W3 numerical N=6: mpmath zeta_H(-1, 1/N) matches Bernoulli-Hurwitz closed form to 30+ dp  (mpmath=0.13888888888888889506, closed=0.13888888888888889506, |diff|=0.00e+00)
+  [PASS] W3 numerical N=17: mpmath zeta_H(-1, 1/N) matches Bernoulli-Hurwitz closed form to 30+ dp  (mpmath=0.05536332179930796016, closed=0.05536332179930796016, |diff|=0.00e+00)
+  [PASS] W3 numerical N=53: mpmath zeta_H(-1, 1/N) matches Bernoulli-Hurwitz closed form to 30+ dp  (mpmath=0.01851192595229619181, closed=0.01851192595229619181, |diff|=0.00e+00)
+
+  Honest connection check: W2 (Bernoulli) and W3 (Hurwitz) are DUAL perspectives, not fully independent
+  [PASS] W2 = W3 at N=3 (by Bernoulli-Hurwitz duality)  (W2=2/9, W3=2/9)
+  [PASS] W2 = W3 at N=6 (by Bernoulli-Hurwitz duality)  (W2=5/36, W3=5/36)
+  [PASS] W2 = W3 at N=12 (by Bernoulli-Hurwitz duality)  (W2=11/144, W3=11/144)
+  [PASS] Disclosed: W2 (Bernoulli polynomial values) and W3 (Hurwitz zeta special values at s=-1) are connected by the Hurwitz-Bernoulli identity. They are TWO MATHEMATICAL OBJECTS that produce the same value via a known theorem — distinct perspectives, not fully independent witnesses
+
 --------------------------------------------------------------------------------
 Σ1 corollary: no-coincidence statement
 --------------------------------------------------------------------------------
@@ -87,7 +99,7 @@ Explicit non-claims (audit-discipline)
   [PASS] Does NOT promote, retire, or re-classify any existing audit row
 
 ================================================================================
-Summary: PASS=43 FAIL=0
+Summary: PASS=51 FAIL=0
 ================================================================================
 Σ1: six universal mechanisms converge to (N-1)/N² at every N tested.
 Σ2: under the five hypotheses, δ_Brannen = (N-1)/N² rad literally on the

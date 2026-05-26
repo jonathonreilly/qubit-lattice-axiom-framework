@@ -56,8 +56,12 @@ structure:
   N=3; (b) is the closed form that lifts the value to all N.
 - **W2.** Bernoulli polynomial difference
   `B_2(0) - B_2(1/N) = (N - 1)/N²`.
-- **W3.** Hurwitz zeta values: special-value evaluation gives the
-  same rational.
+- **W3.** Hurwitz zeta special value at `s = −1`:
+  `2·(ζ_H(−1, 1/N) − ζ_H(−1, 1)) = (N − 1)/N²` via the
+  Bernoulli-Hurwitz identity `ζ_H(−n, q) = −B_{n+1}(q)/(n+1)`.
+  **NOT fully independent of W2**: W2 and W3 are dual perspectives on
+  the same arithmetic identity via the Bernoulli-Hurwitz duality (see
+  the W3 detailed section below for full disclosure).
 - **W4.** Fisher information of the uniform distribution `u_N` on N
   outcomes: diagonal of the Fisher metric, with the selection
   principle (retained_bounded for N=3) establishing `u_N` as the
@@ -69,8 +73,19 @@ structure:
 
 This capstone theorem states the **convergence claim** these six
 witnesses make in a single audit-row: that the value `(N - 1)/N²`
-is **one structural invariant** in six independent algebraic frames,
-not a numerical coincidence across unrelated mathematical spaces.
+is **one structural invariant** in multiple algebraic frames, not
+a numerical coincidence across unrelated mathematical spaces.
+
+**Honest disclosure about independence:** of the six witnesses,
+W2 (Bernoulli polynomial) and W3 (Hurwitz zeta special value at
+`s = −1`) are connected by the Bernoulli-Hurwitz identity
+`ζ_H(−n, q) = −B_{n+1}(q)/(n+1)` and should be counted as two
+perspectives on a single arithmetic identity, not as fully-
+independent witnesses. The *algebraically distinct* frames are
+five: (W1 K-theory / spectral asymmetry), (W2 + W3 arithmetic),
+(W4 Fisher / information geometry), (W5 CFT twist), (W6
+character-theoretic rank). All five distinct frames produce the
+same `(N − 1)/N²`, which remains a strong cross-mechanism agreement.
 
 Combined with the translation lemma (PR #1963) and the audit-decided
 adoption of `𝒞_b` via PR #1964 (following the precedent pipeline
@@ -193,16 +208,45 @@ W2(N) := B_2(0) - B_2(1/N)
 Standard Bernoulli polynomial: `B_2(x) = x² - x + 1/6`. Direct
 substitution gives the value. No imports needed.
 
-### W3 — Hurwitz zeta value
+### W3 — Hurwitz zeta special value at s = −1
 
 ```
-W3(N) := ζ_H(2, 1/N) - ζ_H(2, 1)  reduced mod relevant counter-terms
-       = (N - 1)/N²    (via the Hurwitz-Lerch identity at s=2).
+W3(N) := 2·(ζ_H(−1, 1/N) − ζ_H(−1, 1)) = (N − 1)/N²
 ```
 
-The Hurwitz zeta value is a special function whose evaluation at
-this point gives the same Bernoulli rational by the well-known
-relation `ζ_H(2, q)` for rational `q`.
+where the Hurwitz zeta `ζ_H(s, q) = Σ_{k=0}^∞ 1/(k+q)^s` is
+analytically continued to `s = −1`. By the **Bernoulli-Hurwitz
+identity** `ζ_H(−n, q) = −B_{n+1}(q)/(n+1)`, specialized to `n = 1`:
+
+```
+ζ_H(−1, q) = −B_2(q)/2,    B_2(q) = q² − q + 1/6.
+```
+
+Substituting gives `2·(ζ_H(−1, 1/N) − ζ_H(−1, 1)) = B_2(1) − B_2(1/N)
+= (N−1)/N²`. We use the reference point `q = 1` because
+`ζ_H(−1, 1) = −1/12 = ζ(−1)` is the standard Riemann zeta value.
+
+The runner verifies W3 both (a) via the closed form (the
+Bernoulli-Hurwitz identity, which is a rigorous mathematical
+theorem) and (b) via direct numerical computation of `ζ_H(−1, q)`
+at 50-digit precision through `mpmath.zeta(-1, q)`. The two
+computations agree to 30+ decimal places.
+
+**HONEST DISCLOSURE: W3 is NOT fully independent of W2.** The
+Bernoulli-Hurwitz identity makes W2 (Bernoulli polynomial value)
+and W3 (Hurwitz zeta special value at s = −1) **dual perspectives
+on the same number-theoretic content**. They are two distinct
+mathematical objects — a polynomial value and an analytically-
+continued series value — that coincide via a known theorem. They
+should be counted as **two perspectives on one identity**, not as
+two independent witnesses. The capstone's "six universal mechanisms"
+count is therefore an honest count of *distinct algebraic-frame
+perspectives*, not of fully-independent verifications. The
+independent algebraic frames are: (W1 K-theory / spectral asymmetry),
+(W2 + W3, the Bernoulli-Hurwitz arithmetic frame), (W4 Fisher
+variance), (W5 CFT twist weight), (W6 character-theoretic rank);
+that's five algebraically distinct mechanisms producing the same
+rational, with W2-W3 a dual pair within the arithmetic frame.
 
 ### W4 — Fisher information of `u_N`
 

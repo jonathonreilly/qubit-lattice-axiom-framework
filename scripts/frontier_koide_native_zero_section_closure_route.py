@@ -29,14 +29,20 @@ Result:
 
 Nature-grade boundary:
   This is not yet retained-only closure unless review accepts or derives the
-  two native identification theorems:
+  three native identification theorems:
 
-    1. the Brannen endpoint is the whole real nontrivial Z3 primitive, not a
+    1. the charged-lepton scalar is the native zero-source coefficient;
+    2. the Brannen endpoint is the whole real nontrivial Z3 primitive, not a
        rank-one line inside its multiplicity space;
-    2. its open determinant-line readout is unit-preserving/based, not an
+    3. its open determinant-line readout is unit-preserving/based, not an
        unbased torsor coordinate.
 
 No mass data, fitted Koide value, H_* pin, or target endpoint is used.
+
+Current-surface firewall:
+  The runner verifies only the conditional algebra under the three named
+  identifications. It does not assert retained Koide closure on the actual
+  current surface.
 """
 
 from __future__ import annotations
@@ -214,14 +220,19 @@ def main() -> int:
         "It implies delta only by replacing rank-one selection with the whole real Z3 primitive endpoint.",
     )
     record(
-        "F.2 retained-only closure still requires two identification theorems",
+        "F.2 retained-only closure still requires three identification theorems",
         True,
-        "Need native proof of real-primitive Brannen endpoint and unit-preserving determinant-line readout.",
+        "Need native proof of zero-source readout, real-primitive Brannen endpoint, and unit-preserving determinant-line readout.",
     )
     record(
         "F.3 no hidden target import is used",
         True,
         "The value 2/9 is computed by APS; Q follows from zero source.  The tested assumptions are representation/unit laws.",
+    )
+    record(
+        "F.4 current-surface status remains conditional-support",
+        True,
+        "No Brannen endpoint, determinant-line unit, or charged-lepton zero-source identification is derived here.",
     )
 
     print()
@@ -241,10 +252,14 @@ def main() -> int:
         print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_DELTA=TRUE")
         print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_NATIVE_VALUES=TRUE")
         print("RETAINED_ONLY_NATIVE_CLOSURE_CLAIMED=FALSE")
+        print("ACTUAL_CURRENT_SURFACE_STATUS=CONDITIONAL_SUPPORT")
+        print("CONDITIONAL_SURFACE_STATUS=native_zero_section_identifications_imply_Q_and_delta")
+        print("AUDIT_REQUIRED_BEFORE_EFFECTIVE_RETAINED=TRUE")
+        print("BARE_RETAINED_ALLOWED=FALSE")
         print("RESIDUAL_IDENTIFICATION_Q=native_zero_source_charged_lepton_scalar_readout")
         print("RESIDUAL_IDENTIFICATION_DELTA=Brannen_endpoint_is_real_Z3_primitive_not_rank_one_line")
         print("RESIDUAL_TRIVIALIZATION=unit_preserving_determinant_line_endpoint_readout")
-        print("NEXT_NATIVE_CLOSURE_STEP=derive_the_two_delta_identifications_from_retained_boundary_physics")
+        print("NEXT_NATIVE_CLOSURE_STEP=derive_the_three_native_identifications_from_retained_boundary_physics")
         return 0
 
     print("KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE=FAILED")

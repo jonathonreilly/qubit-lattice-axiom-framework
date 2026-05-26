@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_native_zero_section_closure_route.py
-runner_sha256: f4c238630ae7a2c4e43f60ced2fe0a4bf0068916dc3fec1b5ad0e44e22c0c3ab
+runner_sha256: 8ea7bdc3d0596ddd4116b07f2688eecbfb8c88210e72fc4835fe7f554ef3f356
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.69
 status: ok
 ----- stdout -----
 
@@ -60,15 +60,17 @@ F. Hostile review boundary
 ========================================================================================
 [PASS] F.1 the route is not the old rank-one selected-line bridge
        It implies delta only by replacing rank-one selection with the whole real Z3 primitive endpoint.
-[PASS] F.2 retained-only closure still requires two identification theorems
-       Need native proof of real-primitive Brannen endpoint and unit-preserving determinant-line readout.
+[PASS] F.2 retained-only closure still requires three identification theorems
+       Need native proof of zero-source readout, real-primitive Brannen endpoint, and unit-preserving determinant-line readout.
 [PASS] F.3 no hidden target import is used
        The value 2/9 is computed by APS; Q follows from zero source.  The tested assumptions are representation/unit laws.
+[PASS] F.4 current-surface status remains conditional-support
+       No Brannen endpoint, determinant-line unit, or charged-lepton zero-source identification is derived here.
 
 ========================================================================================
 Summary
 ========================================================================================
-PASSED: 17/17
+PASSED: 18/18
   [PASS] A.1 source-label zero section gives the unique source-free midpoint
   [PASS] A.2 midpoint gives K_TL=0 and Q=2/3
   [PASS] A.3 nonzero source label remains the falsifier
@@ -84,18 +86,23 @@ PASSED: 17/17
   [PASS] E.1 real primitive plus unit endpoint gives delta_open=eta_APS
   [PASS] E.2 Q and delta are implied under the native zero-section route
   [PASS] F.1 the route is not the old rank-one selected-line bridge
-  [PASS] F.2 retained-only closure still requires two identification theorems
+  [PASS] F.2 retained-only closure still requires three identification theorems
   [PASS] F.3 no hidden target import is used
+  [PASS] F.4 current-surface status remains conditional-support
 
 KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE=CONDITIONAL
 CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_Q=TRUE
 CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_DELTA=TRUE
 CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_NATIVE_VALUES=TRUE
 RETAINED_ONLY_NATIVE_CLOSURE_CLAIMED=FALSE
+ACTUAL_CURRENT_SURFACE_STATUS=CONDITIONAL_SUPPORT
+CONDITIONAL_SURFACE_STATUS=native_zero_section_identifications_imply_Q_and_delta
+AUDIT_REQUIRED_BEFORE_EFFECTIVE_RETAINED=TRUE
+BARE_RETAINED_ALLOWED=FALSE
 RESIDUAL_IDENTIFICATION_Q=native_zero_source_charged_lepton_scalar_readout
 RESIDUAL_IDENTIFICATION_DELTA=Brannen_endpoint_is_real_Z3_primitive_not_rank_one_line
 RESIDUAL_TRIVIALIZATION=unit_preserving_determinant_line_endpoint_readout
-NEXT_NATIVE_CLOSURE_STEP=derive_the_two_delta_identifications_from_retained_boundary_physics
+NEXT_NATIVE_CLOSURE_STEP=derive_the_three_native_identifications_from_retained_boundary_physics
 
 ----- stderr -----
 

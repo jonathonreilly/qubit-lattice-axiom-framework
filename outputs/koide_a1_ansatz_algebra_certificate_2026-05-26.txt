@@ -1,0 +1,34 @@
+[PASS] [A] note boundary contains: bounded support theorem
+[PASS] [A] note boundary contains: admitted quartic ansatz
+[PASS] [A] note boundary contains: input ansatz for this certificate
+[PASS] [A] note boundary contains: Downstream use of this row must carry the ansatz premise explicitly
+[PASS] [A] note boundary contains: a derivation of the quartic ansatz from Axiom 1 / Axiom 2
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale package phrase: Headline admission
+[PASS] [A] note omits stale package phrase: Theoretical status
+[PASS] [A] note omits stale package phrase: Rigorously established
+[PASS] [A] note omits stale package phrase: Route A (RECOMMENDED)
+[PASS] [A] note omits stale package phrase: retained scope after narrowing
+[PASS] [A] note omits stale package phrase: CLOSED
+
+=== Koide A1 ansatz algebra ===
+[PASS] [A] trace reduction identity (-9*(-a**2 + 2*r**2))
+[PASS] [A] squared ansatz identity (81*(-a**2 + 2*r**2)**2)
+[PASS] [A] ansatz is an explicit square (81*(-a**2 + 2*r**2)**2)
+[PASS] [A] zero-locus forward direction
+[PASS] [A] zero-locus ratio solves a^2=2r^2
+[PASS] [A] Brannen c squared is two on zero-locus (sqrt(2))
+[PASS] [A] formal Q expression gives two thirds (2/3)
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type remains bounded_theorem
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/frontier_koide_a1_ansatz_algebra_certificate.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] no open dependency paths remain ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (140)
+
+Koide A1 ansatz algebra certificate: PASS
+PASS=27 FAIL=0

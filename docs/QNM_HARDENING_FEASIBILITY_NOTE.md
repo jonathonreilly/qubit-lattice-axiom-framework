@@ -1,7 +1,10 @@
 # QNM Hardening Feasibility Note
 
-**Status:** support - structural or confirmatory support note
+**Type:** open_gate candidate
+**Status:** bounded hard-bar negative; no positive QNM hardening law certified
 **Date:** 2026-04-05  
+**Primary runner:** [`scripts/qnm_hardening_stability_certificate.py`](../scripts/qnm_hardening_stability_certificate.py)
+**Runner cache:** [`logs/runner-cache/qnm_hardening_stability_certificate.txt`](../logs/runner-cache/qnm_hardening_stability_certificate.txt)
 **Scope:** decide whether any exact-lattice self-consistent spectral claim can
 be made review-safely from the current code/branch context
 
@@ -10,16 +13,54 @@ QNM story to a retained `main` claim. It only asks what would be required to
 make the claim review-safe, and whether the current chain is already close
 enough.
 
-Relevant branch-side anchor:
+Historical branch-side anchor:
 
-- `claude/distracted-napier:scripts/qnm_scaling.py`
-- `claude/distracted-napier:archive_unlanded/poisson-self-consistency-stale-runners-2026-04-30/BACKREACTION_NOTE.md`
+- [`scripts/qnm_scaling.py`](../scripts/qnm_scaling.py)
 
 Relevant current `main` context:
 
-- [POISSON_SELF_GRAVITY_LOOP_NOTE.md](/Users/jonreilly/Projects/Physics/docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md)
-- [POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md](/Users/jonreilly/Projects/Physics/docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md)
-- [GATE_B_POISSON_SELF_GRAVITY_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_POISSON_SELF_GRAVITY_NOTE.md)
+- [`POISSON_SELF_GRAVITY_LOOP_NOTE.md`](POISSON_SELF_GRAVITY_LOOP_NOTE.md)
+- [`POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md`](POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md)
+- [`GATE_B_POISSON_SELF_GRAVITY_NOTE.md`](GATE_B_POISSON_SELF_GRAVITY_NOTE.md)
+
+## 2026-05-26 hard-bar certificate
+
+The primary runner adds the controls requested by the audit row on reduced,
+deterministic grids. It does not certify a positive spectral law. It certifies
+the bounded negative boundary that the tested hardening minima are not
+sub-Nyquist features.
+
+The runner checks:
+
+1. **`G = 0` null:** with the same source strength, no absorption peaks pass
+   either threshold (`0.5` or `0.8`) in the tested windows.
+2. **Matched fixed-field control:** the self-coupled relaxed fields are frozen
+   before the `k` scan, so the spectrum is tested as a fixed-field propagation
+   problem rather than a moving field-update loop.
+3. **Fixed-field Born/Sorkin audit:** the three-source `I3/P` check on each
+   returned fixed field is machine clean (`< 1e-11`).
+4. **Nyquist exclusion:** every apparent self-coupled absorption minimum in
+   the tested cases lies at or beyond `0.95*pi/h`; the sub-Nyquist peak set is
+   empty.
+5. **Threshold, window, damping, and refinement stability:** the empty
+   sub-Nyquist peak set is stable for thresholds `0.5` and `0.8`, windows
+   `k=2..8` and `k=2..10`, damping `0.05` and `0.10`, and the `h=1.0` to
+   `h=0.75` refinement check.
+
+Representative cached output:
+
+```text
+coarse-damping005: h=1.00 damping=0.05 nyquist=3.142 relax_residual=1.543e-03 born_i3=4.863e-16
+  window=k2-8 threshold=0.5 G0_peaks=[] G0.10_peaks=[5.0] sub_nyquist_G0.10=[]
+coarse-damping010: h=1.00 damping=0.10 nyquist=3.142 relax_residual=2.038e-03 born_i3=3.290e-16
+  window=k2-10 threshold=0.8 G0_peaks=[] G0.10_peaks=[5.0, 8.0] sub_nyquist_G0.10=[]
+refined-damping005: h=0.75 damping=0.05 nyquist=4.189 relax_residual=4.188e-03 born_i3=2.737e-15
+  window=k2-10 threshold=0.8 G0_peaks=[] G0.10_peaks=[5.0, 7.5] sub_nyquist_G0.10=[]
+```
+
+The safe read is therefore negative and bounded: the current QNM-hardening
+story has not passed the hard bars needed for a positive exact-lattice
+spectral claim.
 
 ## Branch claim surface
 
@@ -94,10 +135,10 @@ locations and spacings are stable under:
 
 Without that, the peak spacing is still analysis-choice sensitive.
 
-## What would be needed
+## What would be needed for a future positive claim
 
-To make a QNM-style claim review-safe, the branch would need a narrow,
-frozen chain with all of the following:
+To make a positive QNM-style claim review-safe, a later branch would need a
+narrow, frozen chain with all of the following:
 
 1. `G = 0` null
 2. fixed-field matched control
@@ -112,13 +153,18 @@ The safest claim surface today is:
 
 - the branch QNM harness suggests a `G`-dependent escape spectrum on a
   self-consistent field family
-- the result is still exploratory
-- it is **not** yet safe to call it a retained exact-lattice spectral law
+- the 2026-05-26 hard-bar runner finds the tested apparent minima only at
+  Nyquist-unsafe locations
+- the result is therefore a bounded negative/open-gate boundary, not a
+  positive spectral law
 
 ## Verdict
 
-**feasibility: not yet review-safe**
+**feasibility: no positive QNM hardening certificate on the tested bounded
+surface**
 
-The QNM lane is worth hardening only if we can add the missing controls above.
-Until then, it should remain a branch-side exploratory spectral probe rather
-than a retained mainline claim.
+The QNM lane remains scientifically interesting, but this branch supplies a
+reviewable reason not to promote the current hardening story: the tested
+self-coupled minima do not survive the sub-Nyquist hard bars. Any future
+positive claim must exhibit stable sub-Nyquist peaks under the same control
+family, or a stronger one.

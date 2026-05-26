@@ -7541,7 +7541,7 @@
       "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_sm_relativistic_dof_count_import.py",
+      "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
       "transitive_descendants": 248
     },
     {

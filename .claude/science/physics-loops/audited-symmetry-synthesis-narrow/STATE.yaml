@@ -25,6 +25,6 @@ out_of_scope:
   - whole-window mirror MI advantage
   - single-surface mirror-family theorem
   - asymptotic symmetry law
-pr_status: pending
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1934
 next_exact_action: open review PR, verify checks, then continue campaign with the next audited-conditional row
 stop_condition: PR opened and verified, then continue campaign

@@ -1,32 +1,61 @@
-"""Open-gate runner for the SU(3) L_s=2 cube index-graph shortcut.
-
-This runner does not claim the actual nontrivial cube Wigner/intertwiner
-trace. It verifies the cyclic index graph used by the proposed shortcut and
-computes the conditional Perron value obtained if the nontrivial traces reduce
-to the uniform pairing ansatz
-
-    T_lambda(candidate) = d_lambda^(N_components - N_links).
-
-The missing audited step is proving that the real SU(3) nontrivial cube
-traces equal this candidate graph trace.
-
-Run:
-    python3 scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py
-"""
+#!/usr/bin/env python3
+"""No-go certificate for the SU(3) L_s=2 uniform-pairing shortcut."""
 
 from __future__ import annotations
 
 import math
-import sys
+from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
 from scipy.special import iv
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE = REPO_ROOT / "docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md"
 
 BETA = 6.0
 EPSILON_WITNESS = 3.03e-4
 BRIDGE_SUPPORT_TARGET = 0.5935306800
+EXPECTED_P_CANDIDATE = 0.4291049969
+
+PASS_COUNT = 0
+FAIL_COUNT = 0
+
+
+def check(name: str, condition: bool, detail: str = "", kind: str = "A") -> None:
+    global PASS_COUNT, FAIL_COUNT
+    status = "PASS" if condition else "FAIL"
+    if condition:
+        PASS_COUNT += 1
+    else:
+        FAIL_COUNT += 1
+    suffix = f" ({detail})" if detail else ""
+    print(f"[{status}] [{kind}] {name}{suffix}")
+
+
+def note_boundary_checks() -> None:
+    text = " ".join(NOTE.read_text(encoding="utf-8").split())
+    required = [
+        "Claim type:** no_go",
+        "Status:** bounded no-go",
+        "uniform-pairing shortcut route",
+        "P_candidate(6) = 0.4291049969",
+        "which is more than five hundred times the witness scale",
+        "does not claim",
+        "any new axiom or audit verdict",
+    ]
+    for phrase in required:
+        check(f"note boundary contains: {phrase}", phrase in text)
+
+    forbidden = [
+        "Status:** open gate, unaudited",
+        "Primary runner:",
+        "parent theorem promotion",
+        "verdict_rationale_template",
+        "intrinsic_status:",
+    ]
+    for phrase in forbidden:
+        check(f"note omits stale audit/open-gate phrase: {phrase}", phrase not in text)
 
 
 def dim_su3(p: int, q: int) -> int:
@@ -57,13 +86,12 @@ def all_plaquettes_with_links() -> List[Tuple[Tuple[int, int, int], int, int, Li
                 site[plane_dir1] = start_in_plane_idx
                 site[plane_dir2] = 0
                 site[orth] = orth_val
-                start = tuple(site)
                 cur = list(site)
                 links = []
                 for direction in [plane_dir1, plane_dir2, plane_dir1, plane_dir2]:
                     links.append((cur[0], cur[1], cur[2], direction))
                     cur[direction] = (cur[direction] + 1) % 2
-                plaquettes.append((start, plane_dir1, plane_dir2, links))
+                plaquettes.append((tuple(site), plane_dir1, plane_dir2, links))
 
     seen = set()
     unique = []
@@ -186,92 +214,42 @@ def candidate_perron_value(rho: Dict[Tuple[int, int], float], nmax: int = 7, mod
     return float(psi @ (j_op @ psi)), float(vals[idx])
 
 
-def driver() -> int:
-    pass_count = 0
-    support_count = 0
-    fail_count = 0
-
-    print("=" * 78)
-    print("SU(3) L_s=2 Cube Index-Graph Shortcut Open Gate")
-    print("=" * 78)
-    print()
-
+def shortcut_checks() -> None:
+    print("\n=== finite shortcut graph ===")
     plaquettes = all_plaquettes_with_links()
-    print("--- Geometry ---")
-    print(f"  unique plaquettes: {len(plaquettes)}")
-    if len(plaquettes) == 12:
-        print("  PASS: 12 plaquettes constructed")
-        pass_count += 1
-    else:
-        print("  FAIL: expected 12 plaquettes")
-        fail_count += 1
-
     n_nodes, edges = build_index_graph(plaquettes)
     n_components = count_connected_components(n_nodes, edges)
-    print()
-    print("--- Candidate index graph ---")
-    print(f"  nodes: {n_nodes}")
-    print(f"  identifications: {len(edges)}")
-    print(f"  connected components: {n_components}")
-    if (n_nodes, len(edges), n_components) == (48, 48, 8):
-        print("  PASS: candidate graph count matches expected L_s=2 shortcut")
-        pass_count += 1
-    else:
-        print("  FAIL: candidate graph count changed")
-        fail_count += 1
-
-    print()
-    print("--- Candidate topological factor ---")
     exponent = n_components - 24
-    print(f"  T_lambda(candidate) = d_lambda^({exponent})")
-    if exponent == -16:
-        print("  PASS: shortcut exponent is -16")
-        pass_count += 1
-    else:
-        print("  FAIL: shortcut exponent is not -16")
-        fail_count += 1
+    check("12 unique L_s=2 PBC plaquettes", len(plaquettes) == 12, str(len(plaquettes)))
+    check("48 cyclic index nodes", n_nodes == 48, str(n_nodes))
+    check("48 link-induced identifications", len(edges) == 48, str(len(edges)))
+    check("8 connected components", n_components == 8, str(n_components))
+    check("uniform-pairing exponent is -16", exponent == -16, str(exponent))
 
-    print()
-    print("--- Conditional rho and Perron value ---")
+    print("\n=== candidate rho and Perron comparison ===")
     rho = candidate_rho(BETA, 4, n_components)
-    for key, value in sorted(rho.items(), key=lambda item: -abs(item[1]))[:6]:
-        print(f"  rho_candidate_{key}(6) = {value:.6e}")
-    print("  SUPPORT: rho values are conditional on the uniform-pairing trace ansatz")
-    support_count += 1
+    check("rho(0,0) normalized to one", math.isclose(rho[(0, 0)], 1.0, rel_tol=0.0, abs_tol=1e-12), f"{rho[(0, 0)]:.12f}")
+    check("rho(1,0) equals rho(0,1)", math.isclose(rho[(1, 0)], rho[(0, 1)], rel_tol=1e-12, abs_tol=1e-12), f"{rho[(1, 0)]:.6e}/{rho[(0, 1)]:.6e}")
+    check("rho(1,0) matches cached candidate", abs(rho[(1, 0)] - 2.124624e-01) < 5e-8, f"{rho[(1, 0)]:.6e}")
+    check("rho(1,1) matches cached candidate", abs(rho[(1, 1)] - 5.587932e-03) < 5e-9, f"{rho[(1, 1)]:.6e}")
 
     p_candidate, eig_candidate = candidate_perron_value(rho)
+    gap = abs(BRIDGE_SUPPORT_TARGET - p_candidate)
+    ratio = gap / EPSILON_WITNESS
+    check("candidate Perron value matches expected", abs(p_candidate - EXPECTED_P_CANDIDATE) < 5e-10, f"{p_candidate:.10f}")
+    check("candidate Perron value is normalized finite", 0.0 < p_candidate < 1.0, f"{p_candidate:.10f}")
+    check("candidate misses target by witness-scale margin", ratio > 500.0, f"gap={gap:.10f}, gap/eps={ratio:.1f}", kind="B")
+    check("uniform-pairing shortcut cannot close target", p_candidate + EPSILON_WITNESS < BRIDGE_SUPPORT_TARGET, f"{p_candidate:.10f} < {BRIDGE_SUPPORT_TARGET:.10f}", kind="B")
     print(f"  Perron eigenvalue: {eig_candidate:.10f}")
-    print(f"  P_candidate(6): {p_candidate:.10f}")
-    if 0.0 < p_candidate < 1.0:
-        print("  SUPPORT: candidate Perron value is finite and normalized")
-        support_count += 1
-    else:
-        print("  FAIL: candidate Perron value is out of range")
-        fail_count += 1
 
-    print()
-    print("--- Bridge comparison ---")
-    distance = abs(p_candidate - BRIDGE_SUPPORT_TARGET)
-    print(f"  bridge-support target: {BRIDGE_SUPPORT_TARGET:.10f}")
-    print(f"  distance: {distance:.6f}")
-    print(f"  epsilon_witness: {EPSILON_WITNESS:.3e}")
-    if distance > EPSILON_WITNESS:
-        print("  SUPPORT: candidate shortcut would not close the bridge witness")
-        support_count += 1
-    else:
-        print("  FAIL: candidate unexpectedly reaches the witness target")
-        fail_count += 1
 
-    print()
-    print("Open gate:")
-    print("  Prove the actual SU(3) Wigner/intertwiner traces equal d_lambda^(-16),")
-    print("  or compute the traces and replace this shortcut candidate.")
-    print()
-    print("=" * 78)
-    print(f"SUMMARY: OPEN PASS={pass_count} SUPPORT={support_count} FAIL={fail_count}")
-    print("=" * 78)
-    return 0 if fail_count == 0 else 1
+def main() -> int:
+    note_boundary_checks()
+    shortcut_checks()
+    print("\nSU(3) cube uniform-pairing shortcut no-go certificate:", "PASS" if FAIL_COUNT == 0 else "FAIL")
+    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    return 0 if FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":
-    sys.exit(driver())
+    raise SystemExit(main())

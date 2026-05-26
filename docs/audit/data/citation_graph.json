@@ -24449,18 +24449,6 @@
       "to": "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03"
     },
     {
-      "from": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
-      "to": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
-    },
-    {
-      "from": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
-      "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
-    },
-    {
-      "from": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
-      "to": "su3_cube_perron_solve_combined_theorem_note_2026-05-03"
-    },
-    {
       "from": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
       "to": "su3_fusion_engine_pr1_theorem_note_2026-05-03"
     },
@@ -77938,19 +77926,15 @@
     },
     "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03": {
       "claim_id": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
-      "claim_type_author_hint": "open_gate",
-      "claim_type_author_hint_raw": "open_gate",
-      "claim_type_seed_hint": "open_gate",
-      "deps": [
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "su3_cube_perron_solve_combined_theorem_note_2026-05-03"
-      ],
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "29fb15873772e8d2715df6801c950b9b11e435d3bc724b520b35b4fc81bccba7",
+      "note_hash": "cea736e46bca1a4e001ed102201a9d78e2a9cb985a714485f3cb8ade9d9bab3a",
       "path": "docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py",
-      "title": "SU(3) L_s=2 Cube Index-Graph Shortcut Open Gate"
+      "title": "SU(3) L_s=2 Cube Uniform-Pairing Shortcut No-Go"
     },
     "su3_cube_perron_solve_combined_theorem_note_2026-05-03": {
       "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
@@ -85325,6 +85309,7 @@
     "structureless_dag_gravity_harness_note",
     "structureless_dag_gravity_note",
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+    "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
     "su3_fusion_engine_pr1_theorem_note_2026-05-03",
     "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
     "substrate_to_p_a_forcing_theorem_note_2026-04-30",
@@ -85471,24 +85456,24 @@
       "bounded_theorem": 594,
       "decoration": 1,
       "meta": 191,
-      "no_go": 79,
+      "no_go": 80,
       "none": 1455,
-      "open_gate": 49,
+      "open_gate": 48,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1016,
       "decoration": 1,
       "meta": 191,
-      "no_go": 182,
+      "no_go": 183,
       "none": 432,
-      "open_gate": 126,
+      "open_gate": 125,
       "positive_theorem": 592
     },
-    "edge_count": 9768,
-    "leaf_count": 785,
+    "edge_count": 9765,
+    "leaf_count": 786,
     "node_count": 2540,
-    "root_count": 843,
+    "root_count": 844,
     "runners_with_path": 2108
   }
 }

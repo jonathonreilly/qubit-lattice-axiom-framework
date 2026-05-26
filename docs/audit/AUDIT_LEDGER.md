@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1268 |
+| unaudited | 1269 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,28 +54,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1497 |
+| `unaudited` | 1498 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1057 |
 | `decoration` | 47 |
 | `meta` | 234 |
-| `no_go` | 254 |
-| `open_gate` | 111 |
+| `no_go` | 255 |
+| `open_gate` | 110 |
 | `positive_theorem` | 723 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 407 |
-| `high` | 482 |
-| `medium` | 574 |
-| `leaf` | 963 |
+| `high` | 480 |
+| `medium` | 575 |
+| `leaf` | 964 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 6
@@ -918,7 +918,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11552,19 +11551,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Peter-Weyl/Schur character orthogonality plus finite-dimensional diagonal-operator algebra on the SU(3) character truncation, reducing convolution by Z to eigenvalue multiplication by rho_(p,q).  _(class `A`)_
 - **chain closes:** True — The source has zero ledger dependencies and is scoped to textbook compact-Lie-group character algebra on an abstract finite truncation. The live runner reproduced PASS=13, FAIL=0, including Schur orthogonality checks, algebraic reduction, uniqueness, positivity, self-adjointness, swap symmetry, and abstract numerical sanity cases.
 - **rationale:** The theorem's conclusions are exactly the standard finite-dimensional character-convolution consequences of Schur orthogonality and diagonal linear algebra. The note explicitly forbids importing Wilson action, beta=6 data, or the parent plaquette environment identification, and the runner treats companion Wilson coefficients only as abstract positive symmetric input data. Within that boundary, no gap remains.
-- **auditor confidence:** high
-
-### `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`
-
-- **Note:** [`SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited the runner-backed L_s=2 cube cyclic index-graph count, the conditional shortcut factor d_lambda^(-16), and the conditional Perron value P_candidate(6)=0.4291049969 under the explicitly unproved uniform-pairing ansatz.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260526T015716Z-1a55f7e5-su3_cube_index_graph_sho-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** If the relevant SU(3) invariant pairings reduce to the cyclic index graph with one independent color choice per connected component, then T_lambda(candidate)=d_lambda^(8-24)=d_lambda^(-16), but that equality is the open gate.  _(class `C`)_
-- **chain closes:** False — The conditional graph computation closes, but the actual SU(3) cube trace does not. The missing step is an explicit Wigner/intertwiner trace derivation or computation showing the real nontrivial cube traces equal the uniform index-graph ansatz.
-- **rationale:** The runner source genuinely constructs the L_s=2 plaquette/link graph, builds the cyclic index identifications, counts 8 connected components, and computes the conditional rho and Perron value rather than merely printing constants. The source note correctly labels the uniform-pairing trace equality as unproved and forbids using P_candidate(6) as the actual cube Perron value or bridge closure. Because the load-bearing physical identification remains open, retained status cannot propagate through this row as a closed theorem.
 - **auditor confidence:** high
 
 ### `su3_cube_perron_solve_combined_theorem_note_2026-05-03`

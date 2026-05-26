@@ -1,0 +1,27 @@
+loop_slug: poisson-self-gravity-mechanism-nogo
+branch: physics-loop/poisson-self-gravity-mechanism-repair-20260526
+target_claim_id: poisson_self_gravity_mechanism_note
+target_note: docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md
+target_runner: scripts/poisson_self_gravity_mechanism.py
+actual_current_surface_status: open
+proposed_branch_status: no-go
+audit_required_before_effective_status: true
+bare_retained_allowed: false
+runtime_context: "12-hour physics-loop campaign"
+cycle: 6
+descendants_at_start: 151
+load_bearing_score_at_start: 8.748
+route: "Repair hard-coded mechanism summary into a recomputed finite no-go/control certificate."
+files_touched:
+  - docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md
+  - scripts/poisson_self_gravity_mechanism.py
+  - outputs/poisson_self_gravity_mechanism_finite_nogo_certificate_2026-05-26.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+next_exact_action: "Open review PR and let the independent audit lane adjudicate the requeued no-go packet."
+stop_condition: "PR opened and verified; continue campaign on next audited_conditional row."

@@ -1,0 +1,61 @@
+================================================================================================
+POISSON SELF-GRAVITY MECHANISM FINITE CONTROL NO-GO
+  recomputes the mechanism hard bars; no hard-coded MechanismVerdict
+================================================================================================
+LOOP QUICK PACKET
+  source nodes: [5322, 5347, 5297, 5323, 5321]
+  zero shift/escape: +0.000e+00 / 1.000000000000
+  zero converged: True in 2 iters, residual=0.000e+00
+  eps=0.05: max Born=8.551e-16, toward=2/2, mean |loop/inst|=0.887, alpha=1.001, max escape=1.015, converged=0/2
+
+V3 MATCHED-NULL PACKET
+  source patch nodes: [5322, 5347, 5297, 5323, 5321]
+  zero shift/escape/phase/span: +0.000e+00 / 1.000000000000 / +0.000e+00 / +0.000e+00
+  zero converged: True in 0 iters, residual=0.000e+00, R2=0.000
+  eps=0.00 s=0.0040: delta=+0.000e+00, phase=+0.000e+00, span=+0.000e+00, escape=1.000, converged=True, residual=0.000e+00
+  eps=0.05 s=0.0040: delta=+9.388e-03, phase=-9.526e-03, span=+6.693e-02, escape=1.042, converged=False, residual=1.445e-03
+  eps=0.20 s=0.0040: delta=+3.789e-02, phase=-3.831e-02, span=+2.696e-01, escape=1.178, converged=False, residual=5.779e-03
+
+END-TO-END BORN DIAGNOSTIC PACKET
+  slit nodes: [287, 312, 337]
+  zero shift/escape/Born: +0.000e+00 / 1.000000000000 / 1.209e-15
+  zero converged: True in 1 iters, residual=0.000e+00
+  eps=0.05 s=0.0040: step Born=1.028e-15, step converged=False, end Born=6.830e-05, end converged=False, end max iters=6, step residual=5.801e-03
+
+FINITE NO-GO READ
+  loop max frozen Born I3/P:       8.551e-16
+  loop max escape ratio:           1.015
+  V3 max matched-null centroid:    3.789e-02
+  V3 max phase span:               2.696e-01
+  end-to-end diagnostic Born I3/P: 6.830e-05
+  mechanism closure: blocked on nonconverged nonzero loops and diagnostic-only end-to-end Born
+
+CHECK SUMMARY
+  PASS loop exact-zero centroid: |shift|=0.000e+00
+  PASS loop exact-zero escape: |escape-1|=0.000e+00
+  PASS loop exact-zero convergence: converged=True, residual=0.000e+00
+  PASS loop frozen-field Born floor: max I3/P=8.551e-16
+  PASS loop weak-field TOWARD sign: toward=2/2
+  PASS loop small-control ratio: mean |loop/inst|=0.887
+  PASS loop near-linear mass exponent: alpha=1.001
+  PASS loop nonzero rows not converged: converged=0/2 under quick cap
+  PASS v3 exact-zero centroid: |shift|=0.000e+00
+  PASS v3 exact-zero escape: |escape-1|=0.000e+00
+  PASS v3 matched-null phase zero: slope=+0.000e+00, span=+0.000e+00
+  PASS v3 exact-zero convergence: converged=True, residual=0.000e+00
+  PASS v3 nonzero rows not converged: converged=0/2
+  PASS v3 stronger centroid observable: max |delta|=3.789e-02
+  PASS v3 phase-ramp observable: max |span|=2.696e-01
+  PASS v3 effect remains control-size: max |delta|=3.789e-02, max escape=1.178
+  PASS born exact-zero centroid: |shift|=0.000e+00
+  PASS born exact-zero escape: |escape-1|=0.000e+00
+  PASS born exact-zero convergence: converged=True, residual=0.000e+00
+  PASS born step-local Born floor: step I3/P=1.028e-15, step converged=False
+  PASS born end-to-end diagnostic nonzero: end I3/P=6.830e-05
+  PASS born end-to-end nonconverged: end converged=False, max subset iters=6
+  PASS note declares no_go: claim type marker present
+  PASS note states no new axiom: no-new-axiom sentence present
+  PASS note removes retained evidence section: old retained-evidence heading absent
+  PASS note preserves audit authority boundary: audit authority boundary present
+
+RUNNER STATUS: PASS (PASS=26 FAIL=0)

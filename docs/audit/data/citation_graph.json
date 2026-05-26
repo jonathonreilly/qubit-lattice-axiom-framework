@@ -21197,18 +21197,6 @@
       "to": "minimal_source_driven_field_probe_note"
     },
     {
-      "from": "poisson_self_gravity_mechanism_note",
-      "to": "poisson_self_gravity_loop_note"
-    },
-    {
-      "from": "poisson_self_gravity_mechanism_note",
-      "to": "poisson_self_gravity_born_audit_note"
-    },
-    {
-      "from": "poisson_self_gravity_mechanism_note",
-      "to": "poisson_self_gravity_loop_v3_note"
-    },
-    {
       "from": "portable_package_hierarchy_classifier_note",
       "to": "sign_portability_invariant_note"
     },
@@ -69720,19 +69708,20 @@
     },
     "poisson_self_gravity_mechanism_note": {
       "claim_id": "poisson_self_gravity_mechanism_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "poisson_self_gravity_loop_note",
-        "poisson_self_gravity_born_audit_note",
-        "poisson_self_gravity_loop_v3_note"
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py",
+        "scripts/poisson_self_gravity_born_audit.py",
+        "scripts/poisson_self_gravity_loop.py",
+        "scripts/poisson_self_gravity_loop_v3.py"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "97e6d6c3e04a0e36dcb0c78c769657b26dafca3121c2e8d965af1e4a737bae84",
+      "note_hash": "e77c07d37a9fd39114e3ec8674b34dbc4033916c5209445b9a83b313983ad4e3",
       "path": "docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md",
       "runner_path": "scripts/poisson_self_gravity_mechanism.py",
-      "title": "Poisson Self-Gravity Mechanism Note"
+      "title": "Poisson Self-Gravity Mechanism Finite Control No-Go"
     },
     "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17": {
       "claim_id": "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17",
@@ -85220,6 +85209,7 @@
     "pmns_selector_three_identity_support_note_2026-04-21_note_2026-05-17",
     "pmns_uniform_scalar_deformation_boundary_note",
     "poisson_self_gravity_loop_v3_note",
+    "poisson_self_gravity_mechanism_note",
     "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17",
     "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
@@ -85486,24 +85476,24 @@
       "bounded_theorem": 589,
       "decoration": 1,
       "meta": 191,
-      "no_go": 72,
-      "none": 1464,
+      "no_go": 73,
+      "none": 1463,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1015,
       "decoration": 1,
       "meta": 191,
-      "no_go": 175,
+      "no_go": 176,
       "none": 434,
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9775,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

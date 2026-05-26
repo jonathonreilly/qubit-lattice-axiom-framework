@@ -68,7 +68,7 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 341,
+        "A": 342,
         "B": 31,
         "C": 268,
         "D": 3,
@@ -82,32 +82,32 @@
         "same_severity": 23
       },
       "criticality_counts": {
-        "critical": 97,
+        "critical": 98,
         "high": 106,
         "leaf": 293,
         "medium": 184
       },
-      "cross_confirmation_agreement_rate": 0.78,
+      "cross_confirmation_agreement_rate": 0.781,
       "cross_confirmation_outcomes": {
         "awaiting_second": 1,
-        "confirmed": 202,
+        "confirmed": 203,
         "third_confirmed_first": 24,
         "third_confirmed_hybrid": 5,
         "third_confirmed_second": 28
       },
-      "cross_confirmation_pairs_agreed_first_try": 202,
-      "cross_confirmation_pairs_n": 259,
-      "cross_confirmation_pairs_seen": 259,
+      "cross_confirmation_pairs_agreed_first_try": 203,
+      "cross_confirmation_pairs_n": 260,
+      "cross_confirmation_pairs_seen": 260,
       "judicial_third_pass_count": 51,
       "overturned_by_third": 45,
       "ratified_by_third": 45,
       "third_pass_decisions_n": 90,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 680,
-      "verdict_changed_after_re_audit": 430,
+      "total_audits": 681,
+      "verdict_changed_after_re_audit": 432,
       "verdict_counts": {
-        "audited_clean": 557,
+        "audited_clean": 558,
         "audited_conditional": 45,
         "audited_decoration": 43,
         "audited_failed": 6,
@@ -138,9 +138,9 @@
   "totals": {
     "auditor_families_observed": 3,
     "overall_agreement_rate": 0.793,
-    "total_audits_recorded": 926,
-    "total_cross_confirmation_family_participations": 324,
-    "total_cross_confirmation_pairs": 275,
+    "total_audits_recorded": 927,
+    "total_cross_confirmation_family_participations": 325,
+    "total_cross_confirmation_pairs": 276,
     "total_third_pass_decisions": 104
   }
 }

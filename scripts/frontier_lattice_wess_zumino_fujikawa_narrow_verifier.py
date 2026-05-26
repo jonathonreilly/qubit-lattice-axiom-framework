@@ -448,9 +448,7 @@ def main():
     print("=====================================================")
     print(
         "Theorem note: "
-        ".claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/"
-        "successor-staging/"
-        "AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md"
+        "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md"
     )
     print("Status: source-only research-lane proposal. No audit-lane wiring.")
     print()

@@ -12,7 +12,9 @@ No existing audit row, claim_type, or `effective_status` is touched.
 **Predecessor:** Closed PR 402 (closed 2026-05-26 for (a) scope/runner
 mismatch and (b) verdict-bracket policy violation).
 **Runner:**
-`.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/successor-staging/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py`
+[`scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py`](../scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py)
+**Cached log:**
+[`logs/runner-cache/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.txt`](../logs/runner-cache/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.txt) (PASS=50 FAIL=0)
 
 ## Why this note exists (mandate)
 

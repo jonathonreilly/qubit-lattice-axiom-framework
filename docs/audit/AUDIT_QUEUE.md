@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1263
+**Total pending:** 1262
 **Ready (all deps already at retained-grade or metadata tiers):** 72
 
 By criticality:
-- `critical`: 243
+- `critical`: 242
 - `high`: 359
 - `medium`: 334
 - `leaf`: 327
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | critical | 352 | 9.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_pmns_he_parity_repair.py` |
+| 1 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | unaudited | critical | 351 | 12.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
 | 2 | `charged_lepton_koide_note_2026-04-18` | open_gate | unaudited | critical | 283 | 15.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py` |
 | 3 | `staggered_fermion_card_2026-04-11` | bounded_theorem | unaudited | critical | 280 | 11.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_17card_finite_scope_repair.py` |
 | 4 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | unaudited | critical | 255 | 18.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_r_base_group_theory_derivation.py` |

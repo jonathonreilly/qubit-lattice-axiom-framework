@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 166 |
-| **retained_bounded** | 484 |
+| **retained_bounded** | 485 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1246 |
+| unaudited | 1245 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
@@ -53,22 +53,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 775 |
+| `audited_clean` | 776 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1475 |
+| `unaudited` | 1474 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1065 |
+| `bounded_theorem` | 1066 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 110 |
-| `positive_theorem` | 716 |
+| `positive_theorem` | 715 |
 
 | criticality | count |
 |---|---:|
@@ -699,6 +699,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_consistency_structured_null_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `self_gravity_backreaction_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `self_gravity_born_hardening_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `self_gravity_entropy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `self_gravity_failure_diagnosis` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -10368,6 +10369,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The note is a bounded no-go, not a positive retained mechanism claim. With no cited dependencies, the current runner directly reproduces the zero-epsilon identity, the nonzero-coupling non-convergence, and the non-machine-clean end-to-end Born audit that support that bounded conclusion.
 - **rationale:** The bounded claim surface is narrow: it asserts that the exact zero-coupling identity survives while the nonzero self-gravity/backreaction lane does not promote under strict reduction and Born controls. The current runner recomputes those controls from the stated lattice setup and matches the note's reported values, including zero-epsilon identity, failed nonlinear convergence for nonzero couplings, and nonzero end-to-end Born residual. No upstream dependency or hidden retained mechanism is needed for this bounded no-go read; residual risk is only that the runner is slow and has unclassified output lines, not that the stated bounded conclusion overreaches the computed evidence.
 - **auditor confidence:** high
+
+### `self_gravity_entropy_note_2026-04-11`
+
+- **Note:** [`SELF_GRAVITY_ENTROPY_NOTE_2026-04-11.md`](../../docs/SELF_GRAVITY_ENTROPY_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite diagnostic for scripts/frontier_self_gravity_entropy.py: for the helper-defined MASS=0.30, MU2=0.22, DT=0.12, G_SELF=50.0, N_ITER=20 graph-family packet and listed cuts/ensembles, the single-particle binary occupancy entropy table is mixed and does not establish robust boundary-controlled or area-law-like scaling.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-self-gravity-entropy-2026-05-26-fresh-context-auditor`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** This simple entropy observable does not currently support an area-law claim.  _(class `C`)_
+- **chain closes:** True — The source note's numeric tables and aggregate readout match the cached runner output for the primary script, and the helper source shows the constants and graph families used. The closure is only the finite script-defined diagnostic; it does not inherit or prove a broader self-gravity mechanism or many-body entropy statement.
+- **rationale:** Runner output is completed and matches the source note, but it contains no PASS/assert checks, so runner_check_breakdown is zero and the audit treats the printed finite tables as the evidence surface. The finite data show mixed boundary correlations (+0.122, -0.399, +0.983; ensemble +0.285, -0.088, +0.489) and the observable is explicitly capped at ln(2), so the note's cautious non-support conclusion follows. N1-N8 no-go discipline was applied to the tempting broader area-law obstruction reading: fewer than five alternative area-law routes are closed, upstream no-go witnesses attack mechanism closure rather than this entropy residual, and the runner itself reports some boundary sensitivity; therefore the audit records a bounded finite diagnostic, not a no_go.
+- **auditor confidence:** medium
 
 ### `self_gravity_failure_diagnosis`
 

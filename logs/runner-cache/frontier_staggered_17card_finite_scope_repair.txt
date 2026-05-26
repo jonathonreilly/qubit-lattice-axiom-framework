@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_17card_finite_scope_repair.py
+runner_sha256: 00a39ee4060f1d395df0d9e75633c6265d0ea22a971f648b75f82109d2054a8a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 29.75
+status: ok
+----- stdout -----
+Staggered canonical 17-card finite-scope repair
+
+========================================================================================
+Source-note boundary
+========================================================================================
+  [PASS] note contains required boundary: 'bounded-support finite runner certificate'
+  [PASS] note contains required boundary: 'That fixed finite runner certificate is the entire repaired theorem.'
+  [PASS] note contains required boundary: 'This repair withdraws those physical and framework-realization claims from the binding theorem.'
+  [PASS] note contains required boundary: 'The bridge from this finite runner certificate to a physical staggered-gravity theorem remains a separate open science problem.'
+  [PASS] note avoids overclaim phrase: 'screened-Poisson bridge is derived'
+  [PASS] note avoids overclaim phrase: 'physical gravity is derived'
+  [PASS] note avoids overclaim phrase: 'attraction is derived'
+  [PASS] note avoids overclaim phrase: 'universal graph-family theorem is derived'
+  [PASS] note avoids overclaim phrase: 'framework-native staggered-Dirac realization is derived'
+
+========================================================================================
+Canonical runner execution
+========================================================================================
+  [PASS] canonical runner exits cleanly (returncode=0)
+
+========================================================================================
+Finite card score checks
+========================================================================================
+  [PASS] all four finite card blocks were parsed ({'1d_n61': 17, '3d_n9': 17, '3d_n11': 17, '3d_n13': 17})
+  [PASS] 1d_n61 score is 17/17 (got=17)
+  [PASS] 3d_n9 score is 17/17 (got=17)
+  [PASS] 3d_n11 score is 17/17 (got=17)
+  [PASS] 3d_n13 score is 17/17 (got=17)
+  [PASS] 3D n=11 family-coverage gate is stated
+  [PASS] 3D n=13 family-coverage gate is stated
+  parsed_scores = {'1d_n61': 17, '3d_n9': 17, '3d_n11': 17, '3d_n13': 17}
+
+========================================================================================
+Scope negative controls
+========================================================================================
+  [PASS] canonical runner uses prescribed external potential builder
+  [PASS] wrapper does not claim screened-Poisson derivation
+  [PASS] canonical output is treated as finite runner output
+
+========================================================================================
+TOTAL: PASS=20 FAIL=0
+========================================================================================
+
+----- stderr -----
+

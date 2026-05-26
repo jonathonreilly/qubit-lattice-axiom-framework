@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1275 |
+| unaudited | 1276 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1504 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -72,18 +72,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 407 |
-| `high` | 480 |
-| `medium` | 575 |
-| `leaf` | 964 |
+| `critical` | 403 |
+| `high` | 481 |
+| `medium` | 576 |
+| `leaf` | 966 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 6
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1996
-- runners with (C) first-principles compute hits: 972
+- runners classified: 1997
+- runners with (C) first-principles compute hits: 973
 - runners with (D) external comparator hits: 583
 - decoration candidates (no C, no D): 330
 
@@ -102,9 +102,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 711 | 37.98 | `unaudited` | unaudited |
 | 8 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 970 | 37.92 | `audited_clean` | **retained_bounded** |
 | 9 | `minimal_axioms` | meta | critical | 1054 | 36.54 | `unaudited` | meta |
-| 10 | `minimal_axioms_2026-04-11` | meta | critical | 952 | 34.40 | `unaudited` | meta |
-| 11 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 34.12 | `unaudited` | unaudited |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1042 | 34.03 | `audited_clean` | **retained** |
+| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 34.12 | `unaudited` | unaudited |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1042 | 34.03 | `audited_clean` | **retained** |
+| 12 | `minimal_axioms_2026-04-11` | meta | critical | 947 | 33.89 | `unaudited` | meta |
 | 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 177 | 33.48 | `unaudited` | unaudited |
 | 14 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 946 | 33.39 | `audited_clean` | **retained** |
 | 15 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
@@ -912,7 +912,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11053,25 +11052,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The current retained harness reproduces the force-based staggered card surface: 1D n=61 and 3D n=9/11/13 all score 17/17, with the documented n>9 C17 family-coverage gate.  _(class `C`)_
 - **chain closes:** True — The source note scopes the result to the force-based card and states the weaker row semantics and family-coverage caveats. The repo-local runner completed and reproduced the stated 17/17 outputs without external imports or stale numerical mismatch.
 - **rationale:** The load-bearing claim is bounded to a fixed finite runner and operating point, not a repo-wide centroid-gravity claim or a universal physical theorem. The runner computes the card rows and reproduces the note's listed values for 1D n=61 and 3D n=9/11/13, including the documented C17 limitation at n=11 and n=13. Residual risk is scope leakage: this clean verdict should not be read as validating centroid-based card semantics, dynamic/cosmological extensions, or full six-family 3D coverage above n=9.
-- **auditor confidence:** high
-
-### `staggered_fermion_card_2026-04-11`
-
-- **Note:** [`STAGGERED_FERMION_CARD_2026-04-11.md`](../../docs/STAGGERED_FERMION_CARD_2026-04-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** A conditional finite-harness audit of the parity-coupled staggered-fermion runner outputs on the listed finite graph/card families, assuming the stated screened-Poisson bridge, positive/free parameters, static/enumerated graphs, eigensolve gate, sign convention, and staggered-Dirac structure.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T105516Z-2e14613d-staggered_fermion_card_2-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Conditional on (H1)–(H9), the registered parity-coupled runner outputs reproduce the score surface tabulated on the enumerated finite cards.  _(class `B`)_
-- **chain closes:** False — The runner supports the finite-card score surface under the imported model and operating-point assumptions, but the note explicitly leaves H1, H3, H4, H5, H6, H7, H8, and H9 admitted. H9 is cited to retained substep notes, but those notes preserve open physical-identification gaps and do not derive the full staggered-Dirac realization used by this card.
-- **rationale:** The primary runner genuinely computes the reported 1D and 3D finite-card rows rather than merely printing constants, and the cached output matches the source note for the canonical 17-card surface, including the n=11/n=13 C17 family-coverage qualifier. However, the scientific claim is expressly conditional on imported premises, most importantly the screened-Poisson bridge H1, the free parameter/graph/eigensolve assumptions, H8's sign-flip interpretation, and H9's staggered-Dirac realization. The cited H2 theorem cleanly narrows the positivity subchain, but the cited staggered-Dirac substep notes are retained only for narrow algebraic/combinatorial atoms and repeatedly disclaim the physical realization bridge needed for this parent card.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-04-11.md`
-  - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-  - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
-  - `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-  - `STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17`

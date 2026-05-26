@@ -1,9 +1,9 @@
 {
   "criticality_counts": {
-    "critical": 409,
-    "high": 483,
-    "leaf": 1035,
-    "medium": 613
+    "critical": 405,
+    "high": 484,
+    "leaf": 1037,
+    "medium": 614
   },
   "flagship_signal_used": false,
   "node_count": 2540,
@@ -71,12 +71,6 @@
       "transitive_descendants": 1054
     },
     {
-      "claim_id": "minimal_axioms_2026-04-11",
-      "criticality": "critical",
-      "load_bearing_score": 34.396,
-      "transitive_descendants": 952
-    },
-    {
       "claim_id": "yt_ew_color_projection_theorem",
       "criticality": "critical",
       "load_bearing_score": 34.116,
@@ -87,6 +81,12 @@
       "criticality": "critical",
       "load_bearing_score": 34.027,
       "transitive_descendants": 1042
+    },
+    {
+      "claim_id": "minimal_axioms_2026-04-11",
+      "criticality": "critical",
+      "load_bearing_score": 33.889,
+      "transitive_descendants": 947
     },
     {
       "claim_id": "koide_circulant_character_derivation_note_2026-04-18",

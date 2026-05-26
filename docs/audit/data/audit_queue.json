@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 267,
+    "critical": 268,
     "high": 353,
     "leaf": 323,
     "medium": 332
@@ -430,6 +430,28 @@
       "ready": true,
       "runner_path": "scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py",
       "transitive_descendants": 283
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "staggered_fermion_card_2026-04-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 11.634,
+      "note_path": "docs/STAGGERED_FERMION_CARD_2026-04-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_staggered_17card_finite_scope_repair.py",
+      "transitive_descendants": 280
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -38297,6 +38319,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 49,
-  "total_pending": 1275
+  "ready_count": 50,
+  "total_pending": 1276
 }

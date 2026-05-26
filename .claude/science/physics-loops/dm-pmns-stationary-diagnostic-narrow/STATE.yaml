@@ -19,7 +19,6 @@ out_of_scope:
   - global reduced-surface branch enumeration
   - unique physical selector
   - physical off-seed source law
-pr_status: pending
-next_exact_action: run local gates and open review PR
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1931
+next_exact_action: verify PR checks and continue campaign with the next audited-conditional row
 stop_condition: PR opened and verified, then continue campaign
-

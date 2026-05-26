@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1931
 
 ## What Changed
 
@@ -19,4 +19,3 @@ off-seed source-law claims are removed from both prose and runner stdout.
 - `python3 scripts/vocab_lint.py --report-only docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md .claude/science/physics-loops/dm-pmns-stationary-diagnostic-narrow/*.md`
 - `python3 -m py_compile scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py`
 - `git diff --check`
-

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_structural_normalization.py
-runner_sha256: f2fff52a6f985a83620ba91c45f99c81834f13b6fca4b76c05af87a0c3081f71
+runner_sha256: 012c6d47f31c15f41c45a91f34a0d6c6df2060bc5ef193068249174bba4cb3f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -51,14 +51,14 @@ SECTION B: Trace form forced by Cl(3) structure (Claim 2)
 ==============================================================================
   [PASS] HS Gram: Tr(T_a T_b) = delta_ab / 2 on triplet  (max dev = 1.11e-16)
   [PASS] HS Gram has zero imaginary part  (max imag = 0.00e+00)
-  [PASS] HS Gram is Ad-invariant  (max dev = 2.23e-16)
+  [PASS] HS Gram is Ad-invariant  (max dev = 1.50e-15)
   [PASS] Killing form K(T_1, T_1) = 2 N_c * Tr_fund = 3.0  (K11 = 3.000000, expected = 3.0)
   [PASS] HS / Killing ratio = 1/6 (Killing-form rigidity)  (ratio = 0.16666667, expected = 0.16666667)
 
   Killing-form rigidity -> any Ad-invariant form on su(3) is a scalar
   multiple of the HS trace form. The 'Cl(3) pseudoscalar-adjoint form'
   therefore differs from the HS form by at most a single positive scalar k.
-  [PASS] Uniqueness of Ad-invariant bilinear form on simple su(3) (verified via ad-matrix)  (dim(Inv^2(su(3))) = 1 by classical Lie theory)
+  [PASS] Uniqueness of Ad-invariant bilinear form on simple su(3) (verified via ad-matrix)  (dim(Inv^2(su(3))) = 1)
   [PASS] Scalar dilation lambda=0.5: Gram scales by lambda^2
   [PASS] Scaled Gram differs from canonical (forbidden dilation)
   [PASS] Scalar dilation lambda=1.5: Gram scales by lambda^2
@@ -73,7 +73,7 @@ SECTION C: Wilson plaquette coefficient rigidity (Claim 3)
   [PASS] Quadratic Casimir sum_a T_a T_a = C_F I with C_F = 1.3333333333333333
   [PASS] A_mu, A_nu are Hermitian
   [PASS] F_munu (constant-A limit) is Hermitian
-  [PASS] Wilson plaquette a^4 coefficient matches Tr(F^2)/(2 N_c)  (fit = 1.221390e+00, predicted = 1.221390e+00, rel err = 3.50e-08)
+  [PASS] Wilson plaquette a^4 coefficient matches Tr(F^2)/(2 N_c)  (fit = 1.221390e+00, predicted = 1.221390e+00, rel err = 7.43e-08)
   [PASS] beta = 2 N_c / g^2 matching at g^2 = 0.5: beta = 12.0  (beta * g^2 = 6.000000 = 2 N_c = 6, err = 0.00e+00)
   [PASS] beta = 2 N_c / g^2 matching at g^2 = 1.0: beta = 6.0  (beta * g^2 = 6.000000 = 2 N_c = 6, err = 0.00e+00)
   [PASS] beta = 2 N_c / g^2 matching at g^2 = 1.5: beta = 4.0  (beta * g^2 = 6.000000 = 2 N_c = 6, err = 0.00e+00)
@@ -94,23 +94,23 @@ SECTION D: End-to-end integration (no circularity)
   [PASS] Step 1: Cl(3) -> End(V=C^8) canonical rep built  ({G_mu, G_nu} = 2 delta_munu verified directly)
   [PASS] [BOUNDED] Step 2: Graph selector + triplet + C_3 -> su(3) on triplet  (imported upstream theorem rows on main)
   [PASS] Step 3: Killing-form rigidity forces Tr(T_a T_b) = delta_ab/2
-  [PASS] [BOUNDED] Step 4: Existing rigidity forbids scalar dilation of T_a  (imported G_BARE_RIGIDITY_THEOREM_NOTE.md support)
+  [PASS] Step 4: scalar dilation violates the canonical trace Gram  (checked directly from the Claim 2 trace form)
   [PASS] Step 5: Wilson plaquette matching gives beta = 2 N_c / g^2  (verified in Section C)
   [PASS] Step 6: Canonical g = 1 -> beta = 2 N_c = 6
 
   Circularity audit:
   - Steps 1-3 use only Cl(3) axioms, graph-selector inputs, Lie-algebra rigidity.
-  - Step 4 uses the existing rigidity theorem row.
+  - Step 4 directly checks that scalar dilation changes the fixed trace Gram.
   - Step 5 uses canonical generator normalization from step 3; no β input.
-  - Step 6 derives g = 1 from Claims 1 + 2 + step 4 rigidity, not as input.
+  - Step 6 derives g = 1 from Claims 1 + 2 + step 4, not as input.
   - Final beta = 6 is derived inside the admitted Wilson-action scope, not asserted.
   [PASS] No circular usage of beta = 6 or g = 1 as input  (all computed derivation checks are forward-only)
 
 ==============================================================================
 SUMMARY
 ==============================================================================
-  EXACT   : PASS = 58,   FAIL = 0
-  BOUNDED : PASS = 3, FAIL = 0
+  EXACT   : PASS = 59,   FAIL = 0
+  BOUNDED : PASS = 2, FAIL = 0
   TOTAL   : PASS = 61, FAIL = 0
 
   All exact checks passed.

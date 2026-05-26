@@ -67499,8 +67499,8 @@
     },
     "periodic_2d_wraparound_fix_note_2026-04-11": {
       "claim_id": "periodic_2d_wraparound_fix_note_2026-04-11",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "self_consistency_structured_null_note_2026-04-11",
@@ -67511,10 +67511,15 @@
         "branch_entanglement_robustness_note_2026-04-11",
         "bmv_threebody_note_2026-04-11"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "866b6138f5fda456b133a72c4b9aab9f1778f99876b0db695efc95aa2b6c29ed",
+      "helper_runner_paths": [
+        "scripts/frontier_born_rule_alpha.py",
+        "scripts/frontier_eigenvalue_stats_and_anderson_phase.py",
+        "scripts/frontier_self_consistency_test.py",
+        "scripts/periodic_geometry.py"
+      ],
+      "note_hash": "839045df63d64b09357d4bb1d60ee9a0412d91cab1ecbf3dec623aee24ff9a64",
       "path": "docs/PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md",
-      "runner_path": "scripts/frontier_self_consistency_test.py",
+      "runner_path": "scripts/periodic_2d_wraparound_package_certificate.py",
       "title": "Periodic 2D Wraparound Fix Note (2026-04-11)"
     },
     "persistent_inertial_object_probe_note": {
@@ -85481,11 +85486,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 596,
+      "bounded_theorem": 597,
       "decoration": 1,
       "meta": 191,
       "no_go": 75,
-      "none": 1458,
+      "none": 1457,
       "open_gate": 48,
       "positive_theorem": 171
     },

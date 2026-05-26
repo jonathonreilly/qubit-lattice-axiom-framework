@@ -1,0 +1,28 @@
+loop: periodic-wraparound-package-certificate
+branch: physics-loop/periodic-wraparound-package-certificate-20260526
+base: origin/main@4922dfe87
+target_row: periodic_2d_wraparound_fix_note_2026-04-11
+target_note: docs/PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md
+target_runner: scripts/periodic_2d_wraparound_package_certificate.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+runtime_request: 12h campaign
+cycle_block: periodic 2D wraparound package certificate
+pr_status: pending
+open_imports:
+  - "Independent audit must review the narrowed package certificate."
+no_go_routes:
+  - "Do not promote Born-rule, holography, or continuum claims."
+  - "Do not claim more than corrected finite periodic-torus package evidence."
+files_touched:
+  - docs/PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md
+  - scripts/periodic_2d_wraparound_package_certificate.py
+  - logs/runner-cache/frontier_born_rule_alpha.txt
+  - logs/runner-cache/periodic_2d_wraparound_package_certificate.txt
+next_exact_action: "Run final gates, commit, push, open PR, then continue campaign if runtime remains."
+stop_condition: "Only stop this campaign when the 12h budget is exhausted, the user stops it, or a global tooling blocker prevents safe continuation."

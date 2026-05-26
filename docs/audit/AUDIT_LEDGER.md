@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1256 |
+| unaudited | 1257 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 69 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 70 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1485 |
+| `unaudited` | 1486 |
 
 | claim_type | count |
 |---|---:|
@@ -82,10 +82,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1991
+- runners classified: 1992
 - runners with (C) first-principles compute hits: 970
 - runners with (D) external comparator hits: 584
-- decoration candidates (no C, no D): 323
+- decoration candidates (no C, no D): 324
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -915,7 +915,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -8746,19 +8745,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With S_i = σ_i / 2, the Pauli matrices satisfy [S_i, S_j] = i ε_{ijk} S_k and S² = (3/4)I, so the irreducible 2-dimensional per-site module has j = 1/2.  _(class `A`)_
 - **chain closes:** True — The algebraic su(2), Casimir, spectrum, and commutant checks close directly in the Pauli representation. The previously missing physical-Hilbert bridge is supplied in the allowed targeted context by A1/R1's explicit k=1 qubit-per-site selection, so H_x = C² is no longer open for this audit scope.
 - **rationale:** The runner genuinely instantiates Pauli matrices and computes the commutators, Casimir, S_z spectrum, and scalar commutant rather than merely printing constants. The cited Cl(3) authority is retained_bounded for the Pauli/chirality representation content, and the allowed k=1 qubit-per-site context supplies the physical per-site Hilbert identification. With that targeted premise admitted, the note is an algebraic closure over retained-grade inputs, not a numerical match or definition substitution.
-- **auditor confidence:** high
-
-### `periodic_2d_wraparound_fix_note_2026-04-11`
-
-- **Note:** [`PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md`](../../docs/PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded bug-fix note as a current-main periodic-torus rerun entrypoint, with direct runner/source support only for the self-consistency surface and retained companion-note support for several downstream bounded surfaces.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T122528Z-36f01a80-periodic_2d_wraparound_f-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Periodic weighted runners now use minimum-image separations consistent with the torus adjacency actually being evolved, and the corrected current-main reruns are the live periodic package surface.  _(class `B`)_
-- **chain closes:** False — The restricted packet supports the minimum-image implementation in the provided self-consistency runner and several retained companion rerun summaries, but it does not include the shared helper source or all listed corrected runner/companion authorities, especially the eigenvalue/Anderson and Born-rule surfaces. The package-wide canonical-entrypoint conclusion therefore imports missing rerun/dependency edges.
-- **rationale:** The primary runner source genuinely computes the self-consistency fixed-surface quantities and uses minimum-image distances in its Hamiltonian weights, matching the supplied stdout and structured-null note. The cited companion notes are retained-grade and support their bounded rerun interpretations, including boundary-law, fixed-adjacency branch-superposition, and branch-entanglement limits. However, the source note is broader than the supplied packet: it names a shared helper and multiple corrected live surfaces whose code or full rerun notes are absent here. Because the audit cannot verify the whole package-wide bug-fix entrypoint from the restricted inputs alone, the chain is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `persistent_inertial_object_probe_note`

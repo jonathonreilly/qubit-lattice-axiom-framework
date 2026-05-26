@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1272 |
+| unaudited | 1273 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1501 |
+| `unaudited` | 1502 |
 
 | claim_type | count |
 |---|---:|
@@ -898,7 +898,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6166,19 +6165,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The runner genuinely checks elementary algebraic consequences of the scalar majorant ODE and source-note boundary language, but it does not derive the BBF polymer-norm inequality from the fermionic Polchinski equation. The note's load-bearing step is an imported external KMS theorem, while section 2 provides no cited authority text for audit. Therefore the bounded statement is conditional on that external theorem and its hypotheses, not cleanly closed by the restricted packet.
 - **open / conditional deps cited:**
   - `KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md`
-- **auditor confidence:** high
-
-### `koide_a1_loop_final_status_2026-04-22`
-
-- **Note:** [`KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md`](../../docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional algebraic route: trace reduction for the charged-lepton block and the A1 zero-locus/minimum of the admitted Koide-Nishiura quartic ansatz.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T233752Z-3fc340c0-koide_a1_loop_final_stat-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** With V(Φ) := [2(trΦ)^2 - 3tr(Φ^2)]^2 = 81(a^2 - 2|b|^2)^2 taken as the ansatz form, V(Φ)=0 iff a^2=2|b|^2, equivalently the Koide A1 relation.  _(class `A`)_
-- **chain closes:** False — The trace identity and zero-locus statement close algebraically once the quartic V(Φ) is admitted. The restricted packet does not derive that quartic potential from Cl(3)/Z^3 primitives.
-- **rationale:** The runner genuinely verifies algebraic consequences of the stated quartic ansatz, not a first-principles derivation of the ansatz. The source note explicitly admits V(Φ)=81(a^2-2|b|^2)^2 as an input premise and says the Cl(3)/Z^3 derivation remains open. Under the negative-boundary gate, N6 blocks any clean no-go reading because the packet itself leaves candidate derivation or ratification routes open.
 - **auditor confidence:** high
 
 ### `koide_a1_physical_bridge_attempt_2026-04-22`

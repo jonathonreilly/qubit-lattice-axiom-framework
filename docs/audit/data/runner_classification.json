@@ -11305,16 +11305,16 @@
       "runner": "scripts/frontier_koide_a1_derivation_status_note_hostile_audit_findings.py"
     },
     "koide_a1_loop_final_status_2026-04-22": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 5,
-        "B": 0,
+        "A": 12,
+        "B": 1,
         "C": 0,
         "D": 0
       },
       "decoration_candidate": true,
       "dominant_class": "A",
-      "runner": "scripts/frontier_koide_a1_quartic_potential_derivation.py"
+      "runner": "scripts/frontier_koide_a1_ansatz_algebra_certificate.py"
     },
     "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24": {
       "assert_count": 0,
@@ -39891,6 +39891,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_a1_ansatz_algebra_certificate.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_a1_loop_final_status_2026-04-22"
+      ],
+      "counts": {
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_koide_a1_brannen_plancherel_identity_support.py": {
       "assert_count": 0,
       "claims": [
@@ -39934,21 +39949,6 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
-      "exists": true
-    },
-    "scripts/frontier_koide_a1_quartic_potential_derivation.py": {
-      "assert_count": 0,
-      "claims": [
-        "koide_a1_loop_final_status_2026-04-22"
-      ],
-      "counts": {
-        "A": 5,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_koide_a1_radian_bridge_irreducibility_audit.py": {

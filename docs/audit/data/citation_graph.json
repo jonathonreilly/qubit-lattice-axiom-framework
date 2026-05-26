@@ -58918,10 +58918,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "baf45e7581d8300a8e1f94d9b021e1739976d14753583f0f0e23621c8bb7c907",
+      "note_hash": "78a20c40a77160d9cd441d8a6a1d5ffe89e64088046ff835c3f3ddf63bcc41c2",
       "path": "docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md",
-      "runner_path": "scripts/frontier_koide_a1_quartic_potential_derivation.py",
-      "title": "Koide A1 Investigation \u2014 Final Theoretical Status"
+      "runner_path": "scripts/frontier_koide_a1_ansatz_algebra_certificate.py",
+      "title": "Koide Quartic-Ansatz Algebra Bounded Certificate"
     },
     "koide_a1_loop_investigation_summary": {
       "claim_id": "koide_a1_loop_investigation_summary",

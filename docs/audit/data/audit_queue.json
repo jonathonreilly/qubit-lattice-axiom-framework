@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 265,
-    "high": 352,
+    "high": 353,
     "leaf": 323,
     "medium": 332
   },
@@ -7595,6 +7595,28 @@
       "ready": true,
       "runner_path": "scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py",
       "transitive_descendants": 148
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_a1_loop_final_status_2026-04-22",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.64,
+      "note_path": "docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_a1_ansatz_algebra_certificate.py",
+      "transitive_descendants": 140
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -38229,6 +38251,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 46,
-  "total_pending": 1272
+  "ready_count": 47,
+  "total_pending": 1273
 }

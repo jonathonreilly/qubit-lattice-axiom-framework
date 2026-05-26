@@ -60415,15 +60415,15 @@
     },
     "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": {
       "claim_id": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (conditional AM-GM result; not a uniqueness theorem).",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0d7030e4bb2180e1fc27cd6c8a462e9930a1d3d9dc6190421d97c29dc5137c08",
+      "note_hash": "a32f4d4a2ba4a1cc9a4e732483e2c46915ea62b07717891542b5f5d0f4b12286",
       "path": "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
       "runner_path": "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
-      "title": "Koide AM-GM Result Conditional on a Fixed Frobenius Normalization"
+      "title": "Koide Frobenius Isotype-Weight Freedom No-Go"
     },
     "koide_full_lattice_schur_inheritance_note_2026-04-18": {
       "claim_id": "koide_full_lattice_schur_inheritance_note_2026-04-18",
@@ -85483,19 +85483,19 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 588,
       "decoration": 1,
       "meta": 191,
-      "no_go": 72,
+      "no_go": 73,
       "none": 1464,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1015,
       "decoration": 1,
       "meta": 191,
-      "no_go": 175,
+      "no_go": 176,
       "none": 434,
       "open_gate": 125,
       "positive_theorem": 596

@@ -1,0 +1,41 @@
+[PASS] [A] note boundary contains: Claim type:** no_go
+[PASS] [A] note boundary contains: Status:** bounded no-go
+[PASS] [A] note boundary contains: do not force the Frobenius normalization
+[PASS] [A] note boundary contains: alpha = beta = 1
+[PASS] [A] note boundary contains: Conditional Corollary Kept Out Of Scope
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note omits stale conditional phrase: conditional AM-GM result; not a uniqueness theorem
+[PASS] [A] note omits stale conditional phrase: 29/29 PASS
+[PASS] [A] note omits stale conditional phrase: audited_conditional
+[PASS] [A] note omits stale conditional phrase: retained-grade derivation
+[PASS] [A] note omits stale conditional phrase: target_audit_status
+
+=== Frobenius isotype-weight freedom ===
+[PASS] [A] traceless component has zero trace
+[PASS] [A] scalar and traceless components are Frobenius-orthogonal
+[PASS] [A] B_{alpha,beta} diagonalizes by isotype weights (alpha*((-2*x1 + x2 + x3)**2 + (x1 - 2*x2 + x3)**2 + (x1 + x2 - 2*x3)**2)/9 + (alpha + 3*beta)*(x1 + x2 + x3)**2/3)
+[PASS] [A] Frobenius point has equal weights
+[PASS] [B] positive beta changes the isotype ratio
+[PASS] [B] alpha=beta=1 is positive on scalar block (scalar weight 4)
+[PASS] [B] alpha=beta=1 is positive on traceless block (traceless weight 1)
+[PASS] [B] alpha=beta=1 differs from Frobenius on trace-bearing matrix (B_11=22, B_10=6)
+[PASS] [B] B_{1,1} is invariant under cyclic conjugation on test pair
+
+=== admitted beta=0 AM-GM corollary sanity check ===
+[PASS] [A] AM-GM equality gives kappa=2 if beta=0 is admitted
+[PASS] [A] kappa=2 gives Q=2/3
+[PASS] [A] AM-GM stationary point is interior for N>0
+
+=== regenerated audit metadata ===
+[PASS] [A] ledger claim_type is no_go
+[PASS] [A] ledger audit_status reset to unaudited
+[PASS] [A] ledger effective_status reset to unaudited
+[PASS] [A] ledger runner_path registered (scripts/frontier_koide_frobenius_isotype_split_uniqueness.py)
+[PASS] [A] ledger has no direct deps ([])
+[PASS] [A] no open dependency paths remain ([])
+[PASS] [A] queue marks row ready (True)
+[PASS] [B] descendant chain remains material (98)
+
+Koide Frobenius isotype-weight freedom no-go certificate: PASS
+PASS=32 FAIL=0

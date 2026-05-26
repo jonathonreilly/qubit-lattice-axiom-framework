@@ -22,6 +22,8 @@ scalar/CW/bare-parameter bridge. The row is reopened for audit:
 - `effective_status`: `unaudited`
 - `open_dependency_paths`: `[]`
 - queue: ready, unblocked, critical
+- primary runner: `scripts/higgs_mechanism_conditional_firewall_certificate.py`
+- diagnostic runner: `scripts/frontier_higgs_mass_derived.py`
 
 ## Remaining blocker
 
@@ -30,4 +32,5 @@ substrate from accepted primitives.
 
 ## Next action
 
-Verify PR mergeability, then continue the campaign if runtime remains.
+Refresh companion runner cache, rerun pipeline/gates, push PR update, then
+verify mergeability.

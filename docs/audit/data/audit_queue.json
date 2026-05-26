@@ -371,7 +371,7 @@
       "note_path": "docs/HIGGS_MECHANISM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_higgs_mass_derived.py",
+      "runner_path": "scripts/higgs_mechanism_conditional_firewall_certificate.py",
       "transitive_descendants": 470
     },
     {

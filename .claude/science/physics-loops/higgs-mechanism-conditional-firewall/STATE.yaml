@@ -17,6 +17,8 @@ active_route: conditional-use-firewall
 hard_residual: "Audit requested a scalar potential/Coleman-Weinberg/bare-parameter substrate derivation or explicit conditional downstream use."
 files_touched:
   - docs/HIGGS_MECHANISM_NOTE.md
+  - scripts/higgs_mechanism_conditional_firewall_certificate.py
+  - logs/runner-cache/higgs_mechanism_conditional_firewall_certificate.txt
   - docs/audit/AUDIT_LEDGER.md
   - docs/audit/AUDIT_QUEUE.md
   - docs/audit/data/audit_ledger.json
@@ -31,5 +33,5 @@ no_go_routes:
 review_findings: []
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/1953
-next_exact_action: "Verify PR mergeability, then continue if runtime remains."
+next_exact_action: "Refresh companion runner cache, rerun pipeline/gates, push PR update, then verify mergeability."
 stop_condition: "Continue campaign until the 12-hour budget expires or queue exhaustion."

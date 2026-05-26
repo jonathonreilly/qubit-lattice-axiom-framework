@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/higgs_mechanism_conditional_firewall_certificate.py
+runner_sha256: 27739501d6233f9b644077e1c3d60906c2ed9aa42b8b822c5deb22033f59d7bd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+HIGGS MECHANISM CONDITIONAL FIREWALL CERTIFICATE
+note=docs/HIGGS_MECHANISM_NOTE.md
+[PASS] source note exists
+[PASS] heavy diagnostic runner exists
+[PASS] heavy diagnostic cache exists
+[PASS] note contains firewall phrase: conditional-use firewall
+[PASS] note contains firewall phrase: bounded mechanism-consistency note
+[PASS] note contains firewall phrase: single load-bearing bridge remains
+[PASS] note contains firewall phrase: scalar potential / Coleman-Weinberg / bare-parameter substrate
+[PASS] note contains firewall phrase: The runner is therefore a diagnostic consistency artifact only
+[PASS] note contains firewall phrase: be read as an audit-ratified derivation from A1/A2 alone
+[PASS] note contains firewall phrase: explicit bridge premise
+[PASS] note contains firewall phrase: The Higgs mechanism is derived from the framework axioms
+[PASS] heavy cache records diagnostic non-closure
+CERTIFICATE PASS: Higgs mechanism note is bounded to the admitted scalar/CW/bare-parameter bridge.
+
+----- stderr -----
+

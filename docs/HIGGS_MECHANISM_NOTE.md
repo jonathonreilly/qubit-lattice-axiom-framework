@@ -27,7 +27,8 @@ note), with its own
 admissions; this note exists only to record the mechanism-level
 support surface.
 **Status authority:** independent audit lane only.
-**Primary runner:** `scripts/frontier_higgs_mass_derived.py`
+**Primary runner:** `scripts/higgs_mechanism_conditional_firewall_certificate.py`
+**Source runner:** `scripts/frontier_higgs_mass_derived.py` (diagnostic support)
 
 ## 2026-05-26 conditional-use firewall
 

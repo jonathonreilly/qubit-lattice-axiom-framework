@@ -126909,7 +126909,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "1b186836844580ffb14a4150e6734778a7f597ef1ac3566f0be23c59385bb171",
+      "note_hash": "3eaf32f76dd7b27ab445979d2dfbffe8575911e68b1dcf30b9dd611e20435310",
       "note_path": "docs/HIGGS_MECHANISM_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -127202,7 +127202,7 @@
           "verdict_rationale": "The note's narrowed scope correctly excludes exact m_H closure and admits that theorem-grade derivations of the scalar order parameter, CW bridge, and EWSB chain remain open. The runner performs a bounded consistency computation, but it does not instantiate Cl(3) on Z^3 to derive the Higgs carrier or the bare parameters from the axiom. No-Go Discipline gate check for the bounded exclusions blocks audited_clean: N1/N2 collapse the named residuals to the same missing scalar/CW/bare-parameter bridge rather than five independent closed walls."
         },
         {
-          "archived_at": "2026-05-26T12:33:49.429302+00:00",
+          "archived_at": "2026-05-26T12:34:35.218716+00:00",
           "archived_for_note_hash": "e2d8370bbc0e683ff44647fa992bf3b4db392a28200a2370ed7cbeb3ee7e5c1b",
           "audit_date": "2026-05-25T23:36:28.591192+00:00",
           "audit_state_snapshot": {
@@ -127253,7 +127253,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": "scripts/frontier_higgs_mass_derived.py",
+      "runner_path": "scripts/higgs_mechanism_conditional_firewall_certificate.py",
       "title": "Higgs Mechanism Note",
       "transitive_descendants": 470,
       "verdict_rationale": null

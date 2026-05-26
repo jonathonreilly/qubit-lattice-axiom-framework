@@ -16,6 +16,8 @@ bare_retained_allowed: false
 - `effective_status`: `unaudited`
 - `open_dependency_paths`: `[]`
 - queue: ready, unblocked, critical
+- primary runner: `scripts/higgs_mechanism_conditional_firewall_certificate.py`
+- diagnostic runner: `scripts/frontier_higgs_mass_derived.py`
 
 ## Local review disposition
 

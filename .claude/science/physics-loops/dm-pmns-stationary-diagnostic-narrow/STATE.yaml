@@ -1,0 +1,25 @@
+loop: dm-pmns-stationary-diagnostic-narrow
+date: 2026-05-26
+target_claim_id: dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: narrow stationary classification to sampled diagnostic
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md
+  - scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.txt
+open_imports: []
+out_of_scope:
+  - global reduced-surface branch enumeration
+  - unique physical selector
+  - physical off-seed source law
+pr_status: pending
+next_exact_action: run local gates and open review PR
+stop_condition: PR opened and verified, then continue campaign
+

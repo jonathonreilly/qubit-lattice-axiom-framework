@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis PMNS analytic stationary classification theorem.
+DM leptogenesis PMNS algebraic stationary diagnostic.
 
 Framework convention:
   "axiom" means only the single framework axiom Cl(3) on Z^3.
 
 Purpose:
-  Push the PMNS-assisted N_e selector problem as far as the current exact
-  branch honestly allows in closed-form analytic form.
+  Push the PMNS-assisted N_e selector problem only as far as the current
+  audited-bounded surface allows in closed-form algebraic form.
 
   The new content here is structural rather than scan-first:
     1. derive the exact closed-form Hermitian block H_e = Y Y^dagger on the
@@ -15,14 +15,13 @@ Purpose:
     2. show the selector problem is even under delta -> -delta, so the
        stationary classification reduces to the real slice on the physical
        branch;
-    3. rewrite the selector as the exact KKT system for the seed-relative
-       bosonic action on the reduced surface;
-    4. classify the already-proved stationary components on that exact reduced
-       domain in reduced coordinates and verify the unique lowest-action branch.
+    3. verify the sampled stationary representatives satisfy the KKT residual
+       equations used by the imported branch diagnostic;
+    4. report the sampled dominant-pair action gap without claiming global
+       branch enumeration, unique physical selection, or a sole-axiom selector.
 
-  This is the prettiest theorem we can honestly defend without overstating the
-  claim as a separate all-component closed-form classification of every
-  stationary point in the abstract.
+  This runner is a bounded diagnostic.  It deliberately does not promote the
+  imported fixed-surface/relative-action setup to a retained selector theorem.
 """
 
 from __future__ import annotations
@@ -129,7 +128,7 @@ def part1_closed_form_reduction() -> None:
     )
 
     print()
-    print("  Closed-form H_e on the fixed native N_e chart:")
+    print("  Closed-form H_e on the imported fixed N_e chart:")
     print("  H11 = x1^2 + y1^2")
     print("  H22 = x2^2 + y2^2")
     print("  H33 = x3^2 + y3^2")
@@ -138,19 +137,19 @@ def part1_closed_form_reduction() -> None:
     print("  H13 = x1 y3 e^{-i delta}")
     print()
     print("  Therefore H_e(delta) and H_e(-delta) are conjugate, so the action and")
-    print("  PMNS packet are even in delta on the physical real slice.")
+    print("  PMNS packet are even in delta on the tested real slice.")
 
 
 def part2_reduced_kkt_system(branches: list[selector.Branch], i_star: int) -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE STATIONARY PROBLEM REDUCES TO A REAL KKT SYSTEM")
+    print("PART 2: SAMPLED STATIONARY REPRESENTATIVES SATISFY THE KKT RESIDUAL")
     print("=" * 88)
 
     print(
-        "The exact selector problem on the reduced N_e surface is the KKT system "
-        "for the seed-relative effective action with the exact closure constraint."
+        "On the imported fixed N_e chart, the sampled closure representatives are "
+        "checked against the seed-relative KKT residual used by the branch diagnostic."
     )
-    print("On the physical branch the delta-even symmetry allows us to work on delta = 0.")
+    print("This is a residual check on the sampled representatives, not a global selector proof.")
     print()
 
     for idx, branch in enumerate(branches):
@@ -160,7 +159,7 @@ def part2_reduced_kkt_system(branches: list[selector.Branch], i_star: int) -> No
         parity_s, parity_eta = parity_report(x, y, delta, i_star)
 
         check(
-            f"Branch {idx} is exactly closure-compatible on the reduced chart",
+            f"Branch {idx} is closure-compatible on the imported fixed chart",
             abs(stat.eta_i(p, i_star) - 1.0) < 1e-10,
             f"eta={stat.eta_i(p, i_star):.12f}",
         )
@@ -188,7 +187,7 @@ def part2_reduced_kkt_system(branches: list[selector.Branch], i_star: int) -> No
 
 def part3_branch_classification(branches: list[selector.Branch], i_star: int) -> None:
     print("\n" + "=" * 88)
-    print("PART 3: ANALYTIC BRANCH CLASSIFICATION ON THE REDUCED DOMAIN")
+    print("PART 3: SAMPLED DOMINANT-PAIR BRANCH DIAGNOSTIC")
     print("=" * 88)
 
     low = branches[0]
@@ -196,23 +195,23 @@ def part3_branch_classification(branches: list[selector.Branch], i_star: int) ->
     action_gap = high.action - low.action
 
     check(
-        "The broad multistart reduced-domain classification resolves two dominant stationary components",
+        "The broad multistart diagnostic reports two sampled dominant stationary components",
         len(branches) == 2,
         f"branch count={len(branches)}",
     )
     check(
-        "The low-action component is the exact closure branch selected by the sole-axiom effective action",
+        "The lower-action sampled component reaches closure on the tested favored column",
         abs(low.etas[i_star] - 1.0) < 1e-10,
         f"eta/eta_obs={low.etas[i_star]:.12f}",
     )
     check(
-        "The second component is separated by a finite analytic action gap",
+        "The second sampled component is separated by a finite action gap",
         action_gap > 0.5,
         f"ΔS={action_gap:.12f}",
     )
 
     print()
-    print("  dominant stationary components resolved by broad multistart on the exact reduced surface:")
+    print("  dominant stationary components reported by the sampled broad-multistart diagnostic:")
     for idx, branch in enumerate(branches):
         x, y, delta = stat.rel.build_active_from_params(branch.representative)
         print(f"  component {idx}:")
@@ -223,11 +222,11 @@ def part3_branch_classification(branches: list[selector.Branch], i_star: int) ->
         print(f"    eta/eta_obs= {np.round(branch.etas, 12)}")
 
     print()
-    print("  analytic classification:")
-    print("    - the stationary system is reduced exactly to the real slice by delta-evenness")
-    print("    - broad multistart on the exact reduced surface resolves two dominant real stationary components")
-    print("    - the lower-action component is the unique physical selector branch within that dominant pair")
-    print("    - the later certified-global theorem sharpens the total reduced-surface branch count to three")
+    print("  bounded diagnostic:")
+    print("    - the sampled representatives reduce to the real slice by delta-evenness")
+    print("    - broad multistart reports two dominant real stationary components on its tested starts")
+    print("    - the lower-action sampled component is lower only within this reported pair")
+    print("    - no certified-global branch count or physical selector theorem is claimed")
 
 
 def part4_bottom_line() -> None:
@@ -236,43 +235,41 @@ def part4_bottom_line() -> None:
     print("=" * 88)
 
     check(
-        "The reduced-surface selector problem now has an exact closed-form symmetry reduction",
+        "The imported fixed-chart problem has a closed-form symmetry reduction",
         True,
         "H_e(delta) is explicit and delta-even",
     )
     check(
-        "The remaining classification is a real KKT problem on the exact reduced domain",
+        "The sampled representatives satisfy the real KKT residual check",
         True,
-        "no passive-sector or transport state lives outside that domain",
+        "residual check only; no global domain exhaustion",
     )
     check(
-        "The exact current branch still has a closed-form symmetry reduction and a physically selected low-action closure branch",
+        "The current diagnostic has a lower-action closure representative in the sampled pair",
         True,
-        "the later certified-global theorem sharpens the exact branch count on the same reduced surface",
+        "sampled-pair diagnostic only",
     )
 
     print()
     print("  Honest scope:")
     print("    - closed-form structural reduction: yes")
-    print("    - exact broad-multistart dominant-branch classification on the reduced surface: yes")
-    print("    - separate global analytic elimination of every conceivable stationary")
-    print("      component in the abstract: not claimed here")
+    print("    - sampled broad-multistart dominant-pair diagnostic: yes")
+    print("    - global branch enumeration, unique selector, or physical source law: not claimed")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS PMNS ANALYTIC STATIONARY CLASSIFICATION THEOREM")
+    print("DM LEPTOGENESIS PMNS ALGEBRAIC STATIONARY DIAGNOSTIC")
     print("=" * 88)
     print()
     print("Framework convention:")
     print('  "axiom" means only Cl(3) on Z^3.')
     print()
     print("Goal:")
-    print("  Derive as much closed-form analytic stationary classification as honestly")
-    print("  possible for the PMNS-assisted selector problem on the exact fixed native")
-    print("  N_e seed surface.")
+    print("  Verify the closed-form H_e parity reduction and sampled stationary")
+    print("  branch diagnostics without claiming a global selector theorem.")
 
-    # Reuse the already-proved exact branch classification on the reduced surface.
+    # Reuse only the sampled branch diagnostic surface from the support runner.
     i_star, branches = selector.part1_enumerate_stationary_branches()
     part1_closed_form_reduction()
     part2_reduced_kkt_system(branches, i_star)

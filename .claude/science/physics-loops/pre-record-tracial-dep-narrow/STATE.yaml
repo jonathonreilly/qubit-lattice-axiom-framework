@@ -20,6 +20,6 @@ open_identifications:
   - physical pre-record reference-state identification
 review_findings:
   - one-point Pauli vanishing excluded as an equivalence
-pr_status: pending
-next_exact_action: run audit pipeline and open review PR
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1927
+next_exact_action: monitor audit-lane result, then continue campaign
 stop_condition: PR opened and verified, then continue campaign

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 270,
+    "critical": 271,
     "high": 356,
     "leaf": 323,
     "medium": 332
@@ -130,6 +130,31 @@
       "ready": true,
       "runner_path": "scripts/rconn_matching_rule_nogo_certificate.py",
       "transitive_descendants": 934
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+        "yt_ward_identity_derivation_theorem"
+      ],
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 13.83,
+      "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 909
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -38424,6 +38449,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 55,
-  "total_pending": 1281
+  "ready_count": 56,
+  "total_pending": 1282
 }

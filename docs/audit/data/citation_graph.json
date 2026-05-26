@@ -54095,8 +54095,10 @@
         "graph_first_su3_integration_note",
         "native_gauge_closure_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "0d039e1648730e44d104838535bea63fe9b89e203c5915b5a5281ea7bc3606f1",
+      "helper_runner_paths": [
+        "scripts/frontier_su3_holonomy_exponential_bridge.py"
+      ],
+      "note_hash": "a9d3a45950911f285fb44224dfd53e9f21ceef98b4bf67af683c01064045497f",
       "path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
       "title": "Gauge-Normalization Rigidity Theorem"

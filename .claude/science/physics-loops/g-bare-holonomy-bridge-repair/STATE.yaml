@@ -1,0 +1,31 @@
+loop_slug: g-bare-holonomy-bridge-repair
+started_at: "2026-05-26T08:30:00Z"
+mode: campaign_block
+target_claim_id: g_bare_rigidity_theorem_note
+target_note: docs/G_BARE_RIGIDITY_THEOREM_NOTE.md
+target_runner: scripts/frontier_g_bare_rigidity_theorem.py
+branch: physics-loop/g-bare-holonomy-bridge-repair-20260526
+base: origin/main@c5e5c547d1002416bfe7ed28b8e0f6b3e050a874
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "Independent audit remains required; this branch only supplies source-side repair evidence."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: finite_su3_holonomy_exponential_bridge
+hard_residual_attacked: "Audit blocker: U=exp(i A_op a) was admitted instead of derived from finite SU(3) link primitives."
+files_touched:
+  - docs/G_BARE_RIGIDITY_THEOREM_NOTE.md
+  - scripts/frontier_g_bare_rigidity_theorem.py
+  - scripts/frontier_su3_holonomy_exponential_bridge.py
+  - outputs/g_bare_rigidity_holonomy_bridge_certificate_2026-05-26.txt
+  - outputs/su3_holonomy_exponential_bridge_certificate_2026-05-26.txt
+open_imports:
+  - "Independent audit must decide whether the finite SU(3) spectral-log bridge discharges the prior HF blocker."
+  - "Global logarithm branch and continuum gauge-field limits remain outside this row."
+no_go_routes:
+  - "Do not claim a unique global log branch; center/branch cases show discrete co-root ambiguity."
+next_exact_action: "Run audit pipeline and lint; if clean, commit, push, and open review PR."
+stop_condition: "Block PR opened or a concrete verification failure requires a new repair."

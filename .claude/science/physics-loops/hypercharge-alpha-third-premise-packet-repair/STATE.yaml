@@ -1,0 +1,46 @@
+loop_slug: hypercharge-alpha-third-premise-packet-repair
+campaign: 12h-science-loop-2026-05-25
+date: 2026-05-25
+branch: physics-loop/hypercharge-alpha-third-premise-packet-repair-20260525
+goal: |
+  Repair the audited_conditional hypercharge alpha=1/3 bridge by exposing
+  the full non-axiom premise packet and removing non-load-bearing quark
+  charge cross-checks from the runner.
+target_status: bounded-support
+runtime_used: active campaign continuation
+cycles_completed: 1
+active_route: premise-packet rescope
+hard_residual_attacked: |
+  Audit blocker: exact rational arithmetic was valid, but the Anti^2-as-L_L
+  readout, GMN relation, T3(e_L), and electron-charge unit were admissions
+  without accepted-premise packet entries.
+files_touched:
+  - docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md
+  - scripts/hypercharge_alpha_third_normalization_runner.py
+  - outputs/hypercharge_alpha_third_premise_packet_repair_2026-05-25.txt
+  - docs/audit/*
+  - .claude/science/physics-loops/hypercharge-alpha-third-premise-packet-repair/*
+open_imports:
+  - P1 Anti^2-as-L_L readout convention
+  - P2 Gell-Mann-Nishijima convention
+  - P3 weak-isospin assignment T3(e_L) = -1/2
+  - P4 electron-charge unit convention Q(e_L) = -1
+no_go_routes:
+  - deriving P1-P4 from the sole axiom in this PR
+  - using quark electric-charge cross-checks as load-bearing evidence
+review_findings: pending external reviewer
+pr_status: pending
+next_exact_action: |
+  Commit, push, and open a review PR. The independent audit lane can
+  decide whether the explicit premise packet is accepted for bounded
+  retention.
+stop_condition: |
+  PR opened and audit-lane checks pass.
+status_fields:
+  actual_current_surface_status: unaudited
+  target_claim_type: bounded_theorem
+  conditional_surface_status: bounded-support
+  hypothetical_axiom_status: null
+  admitted_observation_status: premise-packet
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

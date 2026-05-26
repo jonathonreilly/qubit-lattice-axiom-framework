@@ -1,0 +1,37 @@
+HYPERCHARGE ALPHA=1/3 PREMISE-PACKET BRIDGE
+
+== Part 0: source and audit metadata ==
+PASS: source contains boundary phrase: Accepted-premise packet (not axioms)
+PASS: source contains boundary phrase: P1 Anti^2-as-L_L readout convention
+PASS: source contains boundary phrase: P2 Gell-Mann-Nishijima convention
+PASS: source contains boundary phrase: P3 weak-isospin assignment
+PASS: source contains boundary phrase: P4 electron-charge unit convention
+PASS: source contains boundary phrase: does not claim to derive the premise packet
+PASS: source contains boundary phrase: no new axiom is introduced
+PASS: source note excludes non-load-bearing cross-check phrase: empirical SM electric charges
+PASS: source note excludes non-load-bearing cross-check phrase: Q(u_L)
+PASS: source note excludes non-load-bearing cross-check phrase: Q(d_L)
+PASS: audit ledger row exists
+PASS: claim type remains bounded_theorem (bounded_theorem)
+PASS: audit status reset to unaudited for re-audit (unaudited)
+PASS: effective status reset to unaudited for re-audit (unaudited)
+PASS: retained graph-first dependencies are explicit (['graph_first_su3_integration_note', 'graph_first_selector_derivation_note'])
+PASS: citation graph node exists
+PASS: citation graph deps match retained graph-first inputs (['graph_first_su3_integration_note', 'graph_first_selector_derivation_note'])
+PASS: premise-packet bridge is queued for audit (position=1)
+PASS: queued row is ready because deps are retained (True)
+
+== Part 1: retained 6+2 traceless ratio ==
+PASS: tracelessness on the 6+2 split gives beta/alpha = -3 (-3)
+
+== Part 2: exact rational solve from P1-P4 ==
+PASS: alpha = 1/3 follows from Q(e_L), T3(e_L), and Y(L_L)=beta (1/3)
+PASS: Y(L_L) = -1 at alpha = 1/3 (-1)
+
+== Result ==
+alpha = 1/3
+Bounded bridge: retained 6+2 split/tracelessness + accepted premise packet P1-P4.
+No new axiom and no claim to derive P1-P4.
+
+TOTAL: PASS=22 FAIL=0
+VERDICT: bounded premise-packet bridge passes; alpha = 1/3 follows from retained 6+2 split/tracelessness + accepted premise packet P1-P4 by rational arithmetic.

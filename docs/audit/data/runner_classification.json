@@ -10984,12 +10984,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/hypercharge_alpha_third_normalization_runner.py"
     },
     "hypercharge_identification_note": {
@@ -51014,12 +51014,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/impact_parameter_lensing_probe.py": {
@@ -55196,13 +55196,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 315,
+    "decoration_candidates": 316,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
-      "none": 439
+      "none": 438
     },
     "runners_classified": 1982,
     "runners_with_C": 969,

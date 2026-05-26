@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 250,
+    "critical": 251,
     "high": 342,
     "leaf": 310,
     "medium": 322
@@ -52,6 +52,31 @@
     }
   ],
   "queue": [
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_su3_integration_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.801,
+      "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+      "transitive_descendants": 630
+    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36966,6 +36991,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 1,
-  "total_pending": 1224
+  "ready_count": 2,
+  "total_pending": 1225
 }

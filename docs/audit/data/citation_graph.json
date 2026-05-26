@@ -58543,7 +58543,7 @@
         "graph_first_selector_derivation_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "17fb8988295a8c7c14aa6e4ab4380812285f7c07bf49cfdb33bf899a2ed03c04",
+      "note_hash": "301ea199ea1b7da2e214e8da50f1a2178bf646d314cc2615ac6987c5592967aa",
       "path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
       "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
       "title": "Hypercharge \u03b1 = 1/3 Normalization Bridge"

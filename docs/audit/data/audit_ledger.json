@@ -127741,24 +127741,34 @@
       "verdict_rationale": null
     },
     "higgs_mechanism_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T21:21:56.966464+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.88,
+        "runner_hash": "7054a710106983f4b27c42c1f6b2248d37ee11b34961bdb77a1f982f740b38bd",
+        "transitive_descendants": 470
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-higgs-quartic-pass2-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded premise that the quartic potential is already admitted, the derivative factorization, endpoint/root analysis on r >= 0, value comparison, and curvature computation close by elementary algebra. The chain does not close, and does not claim to close, any physical bridge from the framework to a scalar field, Coleman-Weinberg effective potential, bare parameters, or m_H.",
       "claim_id": "higgs_mechanism_note",
-      "claim_scope": "Formal bounded theorem for the admitted quartic potential V(r) = (1/2)m2 r^2 + (1/4)lambda r^4 on r >= 0 with lambda > 0: global-minimum structure, broken-radius value, and radial curvature only.",
+      "claim_scope": "Only the finite-dimensional algebra of the admitted quartic potential V(r) = (1/2)m2 r^2 + (1/4)lambda r^4 on r >= 0: global-minimum cases and radial curvature. No framework-native scalar substrate, Coleman-Weinberg potential, lambda/m2/bare-parameter derivation, or physical Higgs mass prediction is ratified.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T21:16:53.645661+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T21:21:56.966464+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -127773,25 +127783,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T21:21:56.966061+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-higgs-quartic-pass2-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Only the finite-dimensional algebra of the admitted quartic potential V(r) = (1/2)m2 r^2 + (1/4)lambda r^4 on r >= 0: global-minimum cases and radial curvature. No framework-native scalar substrate, Coleman-Weinberg potential, lambda/m2/bare-parameter derivation, or physical Higgs mass prediction is ratified.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.88,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "If m2 >= 0, V(r) >= 0 = V(0); if m2 < 0, dV/dr = r(m2 + lambda r^2) gives v^2 = -m2/lambda and V(v) = -m2^2/(4 lambda) < 0 = V(0), with curvature -2 m2 = 2 lambda v^2 > 0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "4f0a009bb3aa55d5e202e0d37ef0af98df4303b7e0b543bd3a9e6be2f834ec0f",
       "note_path": "docs/HIGGS_MECHANISM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check future edits for scope creep: this row must not be cited as deriving a framework-native scalar substrate, Coleman-Weinberg potential, lambda/m2/bare substrate, or physical Higgs mass.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -128125,18 +128146,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 20,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 29
       },
       "runner_path": "scripts/frontier_higgs_quartic_mechanism_algebra_repair.py",
       "title": "Higgs Mechanism Formal Quartic Algebra Note",
       "transitive_descendants": 470,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note explicitly narrows the claim to formal quartic-potential algebra after admitting V(r), and its exclusions prevent promotion to a physical Higgs-mechanism derivation. The runner is not merely a text checker: the load-bearing checks use SymPy differentiation/substitution plus numeric global-minimum samples and negative controls; the other 9 PASS lines are non-load-bearing boundary-text guards. No external comparator, tuned numerical match, or upstream dependency is used. Clean status applies only to the bounded formal algebra."
     },
     "higgs_taste_singlet_projection_bounded_note_2026-05-09": {
       "audit_date": null,

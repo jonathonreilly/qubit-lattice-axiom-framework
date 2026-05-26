@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 165 |
-| **retained_bounded** | 476 |
+| **retained_bounded** | 477 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1265 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 764 |
+| `audited_clean` | 765 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `higgs_mechanism_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -426,6 +423,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -5854,6 +5852,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
+- **auditor confidence:** high
+
+### `higgs_mechanism_note`
+
+- **Note:** [`HIGGS_MECHANISM_NOTE.md`](../../docs/HIGGS_MECHANISM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the finite-dimensional algebra of the admitted quartic potential V(r) = (1/2)m2 r^2 + (1/4)lambda r^4 on r >= 0: global-minimum cases and radial curvature. No framework-native scalar substrate, Coleman-Weinberg potential, lambda/m2/bare-parameter derivation, or physical Higgs mass prediction is ratified.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-higgs-quartic-pass2-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** If m2 >= 0, V(r) >= 0 = V(0); if m2 < 0, dV/dr = r(m2 + lambda r^2) gives v^2 = -m2/lambda and V(v) = -m2^2/(4 lambda) < 0 = V(0), with curvature -2 m2 = 2 lambda v^2 > 0.  _(class `A`)_
+- **chain closes:** True — Within the bounded premise that the quartic potential is already admitted, the derivative factorization, endpoint/root analysis on r >= 0, value comparison, and curvature computation close by elementary algebra. The chain does not close, and does not claim to close, any physical bridge from the framework to a scalar field, Coleman-Weinberg effective potential, bare parameters, or m_H.
+- **rationale:** The source note explicitly narrows the claim to formal quartic-potential algebra after admitting V(r), and its exclusions prevent promotion to a physical Higgs-mechanism derivation. The runner is not merely a text checker: the load-bearing checks use SymPy differentiation/substitution plus numeric global-minimum samples and negative controls; the other 9 PASS lines are non-load-bearing boundary-text guards. No external comparator, tuned numerical match, or upstream dependency is used. Clean status applies only to the bounded formal algebra.
 - **auditor confidence:** high
 
 ### `higher_symmetry_gravity_probe_note`

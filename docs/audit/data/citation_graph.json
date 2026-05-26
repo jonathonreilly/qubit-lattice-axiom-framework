@@ -60325,15 +60325,15 @@
     },
     "koide_dimensionless_note_2026-04-24": {
       "claim_id": "koide_dimensionless_note_2026-04-24",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "868da47184659d5156ec84b699a76be33c0a1979bc46e557d4132ee6a71c1c32",
+      "note_hash": "f7c86c107d52f87023be49dc86ea1027ca238a976cfd93339f329aa6823043b6",
       "path": "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_dimensionless_objection_closure_review.py",
-      "title": "Koide Dimensionless Objection-Closure Review Packet"
+      "title": "Koide Dimensionless Countermodel No-Go"
     },
     "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16": {
       "claim_id": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
@@ -85483,19 +85483,19 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 588,
       "decoration": 1,
       "meta": 191,
-      "no_go": 72,
+      "no_go": 73,
       "none": 1464,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1015,
       "decoration": 1,
       "meta": 191,
-      "no_go": 175,
+      "no_go": 176,
       "none": 434,
       "open_gate": 125,
       "positive_theorem": 596

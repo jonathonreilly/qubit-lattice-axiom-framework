@@ -54,25 +54,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "g_bare_derivation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_scope": "On the scoped Wilson matching surface with canonical Cl(3) trace normalization, N_c = 3, beta = 6, and the two retained_bounded repair lemmas, exact algebra gives g_bare = 1 and removes an independent g_bare rescaling on that surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
         "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 17,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 18.328,
       "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "transitive_descendants": 908

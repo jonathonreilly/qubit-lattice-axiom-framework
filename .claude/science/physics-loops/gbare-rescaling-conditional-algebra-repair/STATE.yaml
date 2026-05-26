@@ -1,0 +1,17 @@
+claim_id: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03
+branch: physics-loop/gbare-rescaling-conditional-algebra-repair-20260525
+base: origin/main
+status: ready_for_review
+audit_verdict_applied: false
+repair_type: scope_narrowing
+target_claim_type: bounded_theorem
+post_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  criticality: critical
+  criticality_rank: 1
+  ready: true
+  transitive_descendants: 914
+  deps:
+    - cl3_color_automorphism_theorem

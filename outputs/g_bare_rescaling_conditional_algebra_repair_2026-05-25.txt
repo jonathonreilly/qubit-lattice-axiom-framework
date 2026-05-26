@@ -1,0 +1,19 @@
+[PASS] CN dependency is retained (cl3_color_automorphism_theorem: retained)
+[PASS] scoped WM gives beta_old = 2 N_c / g_bare^2 = 6 at the test point (beta_old = 6)
+[PASS] Gram scales by c^2 = 1/4 (new diagonal = 1/8)
+[PASS] nontrivial c^2 = 1/4 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 1/4 (beta_new = 3/2; beta_new / beta_old = 1/4)
+[PASS] Gram scales by c^2 = 2 (new diagonal = 1)
+[PASS] nontrivial c^2 = 2 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 2 (beta_new = 12; beta_new / beta_old = 2)
+[PASS] Gram scales by c^2 = 4 (new diagonal = 2)
+[PASS] nontrivial c^2 = 4 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 4 (beta_new = 24; beta_new / beta_old = 4)
+[PASS] Gram scales by c^2 = 9 (new diagonal = 9/2)
+[PASS] nontrivial c^2 = 9 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 9 (beta_new = 54; beta_new / beta_old = 9)
+[PASS] target row declares CN as its retained direct dependency (deps = ['cl3_color_automorphism_theorem'])
+[PASS] Wilson matching remains scoped text, not a load-bearing dependency edge (deps = ['cl3_color_automorphism_theorem'])
+INFO target audit routing: audit_status = unaudited; effective_status = unaudited
+SUMMARY: PASS = 16, FAIL = 0
+Conditional rescaling algebra check passed; no retained status is asserted.

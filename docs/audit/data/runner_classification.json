@@ -8105,12 +8105,12 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 22,
+        "C": 1,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_g_bare_derivation.py"
+      "dominant_class": "B",
+      "runner": "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py"
     },
     "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
@@ -37267,8 +37267,7 @@
     "scripts/frontier_g_bare_derivation.py": {
       "assert_count": 0,
       "claims": [
-        "g_bare_derivation_note",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        "g_bare_derivation_note"
       ],
       "counts": {
         "A": 0,
@@ -37308,6 +37307,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py": {
+      "assert_count": 0,
+      "claims": [
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_g_bare_rigidity_theorem.py": {
@@ -55199,13 +55213,13 @@
     "decoration_candidates": 315,
     "dominant_class_distribution": {
       "A": 224,
-      "B": 273,
+      "B": 274,
       "C": 747,
       "D": 299,
       "none": 439
     },
-    "runners_classified": 1982,
-    "runners_with_C": 969,
+    "runners_classified": 1983,
+    "runners_with_C": 970,
     "runners_with_D": 583
   }
 }

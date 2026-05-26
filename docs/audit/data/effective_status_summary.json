@@ -50,12 +50,12 @@
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "meta": 229,
-    "open_gate": 17,
+    "open_gate": 18,
     "retained": 146,
     "retained_bounded": 484,
     "retained_no_go": 165,
     "retained_pending_chain": 8,
-    "unaudited": 1250
+    "unaudited": 1249
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

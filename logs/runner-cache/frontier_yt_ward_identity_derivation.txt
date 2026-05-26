@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ward_identity_derivation.py
-runner_sha256: c43270c1e514c779c357bdb53d6f7f07b12c41ef161d7da117eb0694924c570b
+runner_sha256: 02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 5.74
+elapsed_sec: 2.81
 status: ok
 ----- stdout -----
 ========================================================================
 BLOCK 1: Q_L = (2,3) rep dimension (cited framework input)
 ========================================================================
-  [PASS (C)] N_c = 3 (SU(3) color fundamental)  --  LEFT_HANDED_CHARGE_MATCHING:13
-  [PASS (C)] N_iso = 2 (SU(2)_L doublet)  --  CKM_ATLAS:56 n_pair = 2
+  [PASS (C)] N_c = 3 (SU(3) color fundamental)  --  native nonabelian SU(3) surface
+  [PASS (C)] N_iso = 2 (SU(2) fundamental)  --  native nonabelian SU(2) surface
   [PASS (C)] dim(Q_L) = N_c * N_iso = 6  --  3 * 2 = 6, exact group theory
 
 ========================================================================
@@ -28,16 +28,16 @@ BLOCK 2: Canonical kinetic normalization forces Z^2 = N_c * N_iso
   [PASS (C)] Canonical Z^2 = N_c * N_iso = 6 from unit-residue requirement  --  Z = sqrt(6) = 2.4494897428
 
 ========================================================================
-BLOCK 3: Cross-check vs YUKAWA_COLOR_PROJECTION_THEOREM.md:112
+BLOCK 3: Color-only singlet-residue cross-check
 ========================================================================
 
-  YCP:112 free-theory singlet channel: Tr[M M^dag]_singlet = N_c * |G_0|^2
-  With YCP:36 projector-normalized phi = (1/N_c) psi-bar_a psi_a,
+  Color-only free-theory singlet channel: Tr[M M^dag]_singlet = N_c * |G_0|^2
+  With projector-normalized phi = (1/N_c) psi-bar_a psi_a,
   the composite propagator residue is <phi phi>_free = N_c|G_0|^2 / N_c^2 = |G_0|^2/N_c.
   Our formula on the color-only subblock with Z = N_c gives:
     N_c / Z^2 = N_c / N_c^2 = 1/N_c.  Match.
 
-  [PASS (C)] Color-only projector-form residue matches YCP:112 (= 1/N_c)  --  computed = 0.3333333333333333, YCP = 0.3333333333
+  [PASS (C)] Color-only projector-form residue matches the direct singlet contraction (= 1/N_c)  --  computed = 0.3333333333333333, YCP = 0.3333333333
 
 ========================================================================
 BLOCK 4: SU(N_c) Fierz identity (YCP_EW:169-172), verified explicitly
@@ -110,12 +110,13 @@ The support note makes no precision claim; see bridge note.
   [PASS (C)] NNLO correction is negligible (< 0.5%)  --  NNLO = 0.1481%
 
 ========================================================================
-BLOCK 10: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) via framework-native chain
+BLOCK 10: Conditional tadpole-ratio context (NON-LOAD-BEARING)
 ========================================================================
 
-  The source note checks the exact tree-level algebraic identity via a
-  same-1PI-function residue calculation in the same cited framework surface
-  (no UV-vs-EFT matching, no second theory).
+  The source note's load-bearing claim is the bare H_unit matrix element
+  y_t_bare = g_bare/sqrt(6), verified directly in Block 11.
+  This block keeps the older canonical-surface tadpole arithmetic as
+  context only; it does not certify the shared tadpole transport bridge.
 
   Step 3 (same-1PI-function residue identity, scalar-singlet only):
     Define Gamma^(4)(q^2) := P_{S,(1,1)} <psi-bar psi(q) psi-bar psi(-q)>_1PI,amp
@@ -134,8 +135,9 @@ BLOCK 10: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) via framework-native chain
     Same Green's function in same theory => coefficients agree:
       y_t_bare^2 = g_bare^2 / (2 N_c) = 1/6  (Block 11)
 
-  Step 4: tadpole 1/sqrt(u_0) inherited by both (D15, n_link=1)
-  Ratio:  y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(2 N_c) = 1/sqrt(6)
+  Conditional context: if a later retained bridge supplies the same
+  1/sqrt(u_0) dressing for both the scalar-singlet matrix element and
+  the gauge vertex, the ratio would remain 1/sqrt(2 N_c) = 1/sqrt(6).
 
   [PASS (C)] C_pert from D12 (Block 4/7): SU(N_c) color-singlet Fierz = 1/(2 N_c) = 1/6  --  C_pert = 0.1666666667
   [PASS (C)] |c_S| from S2 (Block 8): Lorentz scalar projection coefficient = 1  --  |c_S| = 1.0000000000
@@ -160,10 +162,11 @@ BLOCK 10: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) via framework-native chain
     tadpole factor = 1/sqrt(u_0) = 1.067411
     g_s(M_Pl)  = g_bare * tadpole = 1.067411
     y_t(M_Pl)  = y_t(bare) * tadpole = 0.435769
-  [PASS (C)] g_s(M_Pl) = 1/sqrt(u_0) = sqrt(4 pi alpha_LM) (two routes agree)  --  both = 1.0674107130
-  [PASS (C)] y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) [tadpole cancels in ratio]  --  ratio = 0.4082482905
-  [PASS (C)] y_t(M_Pl) = 0.4358 matches downstream-chain value  --  y_t(M_Pl) = 0.435769
-  [PASS (C)] Non-tautology: y_t(M_Pl) tracks Clebsch-Gordan overlap (Block 6)  --  counterfactual (10% shift in overlap): y_t -> 0.479345, differs from derived 0.435769
+  [PASS (C)] CONTEXT: g_s(M_Pl) = 1/sqrt(u_0) = sqrt(4 pi alpha_LM) if tadpole bridge is admitted  --  both = 1.0674107130
+  [PASS (C)] CONTEXT: y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) if shared tadpole bridge is admitted  --  ratio = 0.4082482905
+  Downstream numerical top-Yukawa values are intentionally not checked here.
+  This runner does not import the old 0.4358 comparison as authority.
+  [PASS (C)] CONTEXT: conditional y_t(M_Pl) tracks Clebsch-Gordan overlap (Block 6)  --  counterfactual (10% shift in overlap): y_t -> 0.479345, differs from derived 0.435769
 
   === Support chain (same-1PI-function residue identity) ===
 
@@ -171,7 +174,7 @@ BLOCK 10: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) via framework-native chain
   It states only the exact same-1PI-function residue identity
   on the scalar-singlet channel:
 
-    AX1 (Cl(3)) + AX2 (Z^3) + D1-D17 + S1 + S2 ->
+    A1 (one-qubit/physical-Cl(3)) + A2 (Z^3) + D1-D17 + S1 + S2 ->
 
     [Representation A — OGE-side computation, this Block 10]
        Color singlet Fierz: -1/(2 N_c) [D12, Block 4]
@@ -186,7 +189,8 @@ BLOCK 10: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) via framework-native chain
        => q^2 |Gamma^(4)|_H = y_t_bare^2 = 1/6
 
     Both A and B independently give 1/6; consistency confirmed in Block 11.
-    Canonical tadpole [D15]: y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) (exact)
+    Conditional tadpole context: if both vertices share the same dressing,
+       y_t(M_Pl)/g_s(M_Pl) remains 1/sqrt(6). This is not load-bearing.
 
   Quantitative NLO / precision / systematic discussion is SUPPORT-ONLY
   (see Block 9 and docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md).
@@ -274,7 +278,7 @@ identification surface; it documents SU(N_c) algebraic facts.
 ========================================================================
 SUMMARY
 ========================================================================
-  PASS: 45
+  PASS: 44
   FAIL: 0
 
   Every load-bearing coefficient in YT_WARD_IDENTITY_DERIVATION_THEOREM
@@ -291,9 +295,9 @@ SUMMARY
   - Block 10: computes the OGE-side coefficient (Representation A) of
              the same-1PI-function identity using D12 + S2; uses the
              y_t_bare value derived independently in Block 11 to drive
-             the canonical-surface tadpole continuum;
-             gives y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6).  Block 10 does NOT
-             derive y_t_bare itself (that lives in Block 11).
+             a conditional canonical-surface tadpole context check.
+             This context is NON-LOAD-BEARING and does not certify
+             y_t(M_Pl)/g_s(M_Pl) as a retained bridge.
   - Block 11: evaluates y_t_bare = 1/sqrt(6) INDEPENDENTLY from the
              H_unit operator matrix element (Clebsch-Gordan + canonical
              normalization, no OGE input); then verifies the value
@@ -305,10 +309,12 @@ SUMMARY
 
   Support result (exact tree-level algebraic identity on the stated surface):
     y_t_bare = g_bare / sqrt(6)
-    y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) on canonical surface
+    Conditional context only: a later retained shared-tadpole bridge would
+      preserve y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6), but this runner does not
+      certify that bridge.
 
   No precision bound is attached to this support note.
-  Quantitative corrections are out of scope (support note).
+  Quantitative corrections and physical top-Yukawa readout are out of scope.
   See docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md for the source note.
 
 ----- stderr -----

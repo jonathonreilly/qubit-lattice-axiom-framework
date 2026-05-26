@@ -1,0 +1,20 @@
+loop_slug: conditional-scope-repairs-20260526
+date: 2026-05-26
+branch: physics-loop/conditional-scope-repairs-20260526
+base: origin/main
+active_route: audited-conditional scope repairs
+targets:
+  - three_generation_structure_note
+  - planck_target3_clifford_phase_bridge_theorem_note_2026-04-25
+  - yt_zero_import_chain_note
+actual_current_surface_status: proposed_promoted
+effective_after_pipeline:
+  planck_target3_clifford_phase_bridge_theorem_note_2026-04-25: unaudited_ready
+  three_generation_rooting_undefined_narrow_theorem_note_2026-05-26: unaudited_ready
+  yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26: unaudited_ready
+  three_generation_structure_note: unaudited_waiting_on_new_no_go_packet
+  yt_zero_import_chain_note: unaudited_waiting_on_new_bounded_packet
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Open PR for reviewer/auditor re-audit; do not apply audit verdicts."
+stop_condition: "PR opened with all checks passing."

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 482 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 17 |
-| unaudited | 1257 |
+| unaudited | 1262 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,25 +54,25 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 771 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1486 |
+| `unaudited` | 1491 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1063 |
+| `bounded_theorem` | 1065 |
 | `decoration` | 47 |
 | `meta` | 234 |
-| `no_go` | 255 |
+| `no_go` | 256 |
 | `open_gate` | 110 |
-| `positive_theorem` | 719 |
+| `positive_theorem` | 718 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 371 |
+| `critical` | 373 |
 | `high` | 509 |
 | `medium` | 580 |
 | `leaf` | 968 |
@@ -82,9 +82,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2003
-- runners with (C) first-principles compute hits: 973
-- runners with (D) external comparator hits: 583
+- runners classified: 2004
+- runners with (C) first-principles compute hits: 974
+- runners with (D) external comparator hits: 584
 - decoration candidates (no C, no D): 334
 
 ## Top 25 by load-bearing score (topology only)
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
 | 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 563 | 31.14 | `unaudited` | unaudited |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 30.55 | `audited_clean` | **retained_bounded** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `audited_conditional` | ~~audited_conditional~~ |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `unaudited` | unaudited |
 | 19 | `left_handed_charge_matching_note` | decoration | critical | 676 | 30.40 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 20 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 908 | 30.33 | `audited_renaming` | ~~audited_renaming~~ |
 | 21 | `cpt_exact_note` | positive_theorem | critical | 901 | 29.82 | `audited_clean` | **retained** |
@@ -924,7 +924,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
-| `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -934,7 +933,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `three_generation_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -943,7 +941,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -9071,19 +9068,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The audited claim is a negative carrier-only no-go, not a positive Planck derivation. Within the supplied packet, the obstruction closes algebraically: two parents with identical carrier data can have different Schur scalars, so no function of carrier data alone can force the Schur/event equality without the extra no-hidden-character law delta=0. The Planck-normalization discussion is used only to show non-harmlessness of the hidden scalar if promoted as a coefficient, not to derive a physical coefficient from hidden assumptions.
 - **auditor confidence:** high
 
-### `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`
-
-- **Note:** [`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`](../../docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** Then polarization gives the complex Clifford relations D(u)D(v) + D(v)D(u) = 2 <u,v> I_K, followed by the claim that oriented pairs give CAR relations with dagger.  _(class `A`)_
-- **chain closes:** False — Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.
-- **rationale:** Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.
-- **auditor confidence:** high
-
 ### `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`
 
 - **Note:** [`PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`](../../docs/PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)
@@ -12516,18 +12500,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The load-bearing step is a genuine class-A algebraic closure over the supplied operator inputs, not a definition, renaming, numerical match, or external comparator check. The runner source hard-codes the specified finite matrices as inputs but then actually verifies the projector ranks, matrix-unit generation, commutant dimension, observable descent, and irreducibility checks. The negative no-proper-quotient boundary passes the restricted no-go gate because attack routes such as preserving only translations, dropping C3, approximate reduction, nonlinear quotienting, or physical reinterpretation all leave the stated exact full-algebra quotient scope.
 - **auditor confidence:** high
 
-### `three_generation_structure_note`
-
-- **Note:** [`THREE_GENERATION_STRUCTURE_NOTE.md`](../../docs/THREE_GENERATION_STRUCTURE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Attempted bounded theorem for the four local structural items on the admitted staggered-Dirac/Z^3 surface: corner/Hamming-weight spectrum, hw=1 lightest nonzero-mass triplet, Hamiltonian Cl(3) no-rooting, and retained M_3(C)/no-proper-quotient; physical-species, SM-generation, substrate, CKM, and full matter-content claims are excluded.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-fresh-three-generation-structure-C75Ktt-2026-05-26-pass1`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The in-scope statement bundles four local structural items: exact corner/orbit algebra 8=1+1+3+3, hw=1 as the lightest nonzero-mass triplet on Z^3, rooting not well-defined in Hamiltonian Cl(3) on Z^3, and exact M_3(C)/no proper exact quotient on the hw=1 triplet.  _(class `C`)_
-- **chain closes:** False — The retained direct dependency is authoritative for item (4) only. The primary runner closes the finite corner/Wilson/Hamming-weight side for items (1)-(2) and prints a bounded physical-identification assumption, but it does not prove item (3), and the source admits no standalone retained no-rooting theorem packet currently exists.
-- **rationale:** Issue: the source scope bundles four items, but the restricted packet closes only the spectral/Wilson/Hamming items and the M_3(C)/no-proper-quotient item. Why this blocks: the negative rooting-not-well-defined subclaim has no retained one-hop theorem in the packet, the primary runner does not test it, and under no-go discipline the packet cannot support a clean exclusion result for that subclaim. Repair target: add and audit a no-rooting narrow theorem as a direct retained-grade dependency, or narrow this row to the spectral plus M_3(C)/no-quotient content. Claim boundary until fixed: no rooting-exclusion, physical-species, SM-generation, substrate, CKM, or full matter-content closure is retained from this row.
-
 ### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`
 
 - **Note:** [`TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md)
@@ -13603,23 +13575,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict.
 - **rationale:** Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict.
 - **auditor confidence:** judicial_panel_majority
-
-### `yt_zero_import_chain_note`
-
-- **Note:** [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](../../docs/YT_ZERO_IMPORT_CHAIN_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** The current y_t/EW zero-import chain from the restricted packet to the reported v, y_t(v), m_t, alpha_s(M_Z), and sin^2(theta_W)(M_Z) outputs, including the section 9 algebraic narrowing.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-yt-zero-import-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The chain imposes y_t(M_Pl) = g_lattice / sqrt(6) and the connected-trace EW readout g_EW(phys) = g_EW(latt) * sqrt(9/8) after importing the canonical plaquette surface and exact Fierz fraction.  _(class `B`)_
-- **chain closes:** False — The downstream algebra/RGE calculation is internally consistent once <P> = 0.5934, R_conn/F_adj = 8/9, kappa_EW = 0, and the Ward boundary condition are supplied. The restricted packet does not derive the Ward bridge or the kappa_EW = 0 physical readout, and the runner imports or hard-codes the anchor values rather than computing them from the framework baseline.
-- **rationale:** Issue: the runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V, hard-codes R_CONN = 8/9, applies sqrt(9/8), and sets the Ward target g_lattice/sqrt(6) rather than deriving the physical bridge/readout selectors in the restricted packet. Why this blocks: the full zero-import numerical y_t/EW prediction does not follow from the supplied one-hop authorities; it is a conditional calculation over bounded/imported anchors and unclosed physical bridge choices. Repair target: provide retained-grade derivations or dependencies for the Ward boundary bridge, the kappa_EW = 0 connected-trace selector, and any intended unbounded plaquette certificate, or split the note so only the bounded algebraic calculator over declared premises is audited. Claim boundary until fixed: the packet supports internal algebraic/RGE propagation from declared inputs, not an unconditional zero-import y_t/EW prediction.
-- **open / conditional deps cited:**
-  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
-  - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
-  - `RCONN_DERIVED_NOTE.md`
-- **auditor confidence:** high
 
 ### `yukawa_color_projection_theorem`
 

@@ -199164,102 +199164,42 @@
       "verdict_rationale": null
     },
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": {
-      "audit_date": "2026-05-26T17:22:24.225993+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 18.298,
-        "runner_hash": "793e8f8ea64d5ae51ceedf79384367071cbf1e35241e496e8bc08e90884b0b7f",
-        "transitive_descendants": 889
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T17:22:24.225993+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-26T17:10:57.042375+00:00",
-          "auditor": "codex-gpt-5.5-fresh-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Exact finite Cl_4(C)/two-CAR-mode carrier algebra on a supplied rank-four complex active block with a supplied metric-compatible coframe response, plus finite spin phase and c_cell=1/4 trace arithmetic; excludes derivation of the coframe response, active-block forcing, and Planck/Newton/source-unit normalization.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-26T17:21:55.659474+00:00",
-          "auditor": "codex-gpt-5.5-fresh-planck-target3-clifford-phase-bridge-second-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an additional explicit *-compatible/Hermitian coframe-response premise; no coframe response, substrate forcing, Newton/Planck/SI normalization, or new axiom content is derived.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-26T17:22:24.225993+00:00",
-          "auditor": "codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "The first audit treated algebraic Clifford compatibility and the Hermitian Pauli runner realization as sufficient for the source note's general CAR-with-dagger claim. That silently imports a *-compatible/Hermitian premise for an arbitrary supplied metric-compatible coframe response.",
-          "independence": "judicial_review",
-          "judgment_rationale": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": {
-            "A": 13,
-            "B": 18,
-            "C": 0,
-            "D": 0,
-            "total_pass": 31
-          },
-          "second_auditor_error": "No material tuple-level error. The conditional verdict correctly preserves the bounded algebraic core while refusing clean status for the CAR-with-dagger extension until an explicit adjoint-compatible premise is supplied or derived.",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 17,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 18.298,
-      "load_bearing_step": "Then polarization gives the complex Clifford relations D(u)D(v) + D(v)D(u) = 2 <u,v> I_K, followed by the claim that oriented pairs give CAR relations with dagger.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "5ae8eabbc764b988ad333f63b798442650faafb44e9270fdd9771f0cfcc45ef2",
+      "note_hash": "e3c70efcd445ddbcef382be11027ee32c3401a3a6bc7fdcd5ea503fa23be409c",
       "note_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - add an explicit Hermitian/*-compatible coframe-response premise for the dagger CAR claim, prove that the stated metric-compatible response entails it, or restate the CAR conclusion algebraically with the creator defined by a Clifford involution rather than the ambient Hilbert adjoint.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -199470,21 +199410,113 @@
             "total_pass": 34
           },
           "verdict_rationale": "The runner genuinely constructs Cl_4 generators, verifies anticommutators, irreducibility, CAR reconstruction, and the 1/4 arithmetic, so the local conditional algebra is supported. However, the theorem explicitly rests on the unproved metric-compatible Clifford/coframe response on P_A H_cell, and the note also invokes a source-unit normalization theorem for G_Newton,lat=1 and a/l_P=1 that is not provided as a cited retained authority. Thus the restricted packet does not close the unconditional chain from axioms to the final bridge."
+        },
+        {
+          "archived_at": "2026-05-26T22:42:30.714179+00:00",
+          "archived_for_note_hash": "5ae8eabbc764b988ad333f63b798442650faafb44e9270fdd9771f0cfcc45ef2",
+          "audit_date": "2026-05-26T17:22:24.225993+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 18.298,
+            "runner_hash": "793e8f8ea64d5ae51ceedf79384367071cbf1e35241e496e8bc08e90884b0b7f",
+            "transitive_descendants": 889
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.",
+          "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T17:22:24.225993+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-26T17:10:57.042375+00:00",
+              "auditor": "codex-gpt-5.5-fresh-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Exact finite Cl_4(C)/two-CAR-mode carrier algebra on a supplied rank-four complex active block with a supplied metric-compatible coframe response, plus finite spin phase and c_cell=1/4 trace arithmetic; excludes derivation of the coframe response, active-block forcing, and Planck/Newton/source-unit normalization.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-26T17:21:55.659474+00:00",
+              "auditor": "codex-gpt-5.5-fresh-planck-target3-clifford-phase-bridge-second-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an additional explicit *-compatible/Hermitian coframe-response premise; no coframe response, substrate forcing, Newton/Planck/SI normalization, or new axiom content is derived.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-26T17:22:24.225993+00:00",
+              "auditor": "codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "The first audit treated algebraic Clifford compatibility and the Hermitian Pauli runner realization as sufficient for the source note's general CAR-with-dagger claim. That silently imports a *-compatible/Hermitian premise for an arbitrary supplied metric-compatible coframe response.",
+              "independence": "judicial_review",
+              "judgment_rationale": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": {
+                "A": 13,
+                "B": 18,
+                "C": 0,
+                "D": 0,
+                "total_pass": 31
+              },
+              "second_auditor_error": "No material tuple-level error. The conditional verdict correctly preserves the bounded algebraic core while refusing clean status for the CAR-with-dagger extension until an explicit adjoint-compatible premise is supplied or derived.",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "Then polarization gives the complex Clifford relations D(u)D(v) + D(v)D(u) = 2 <u,v> I_K, followed by the claim that oriented pairs give CAR relations with dagger.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad - add an explicit Hermitian/*-compatible coframe-response premise for the dagger CAR claim, prove that the stated metric-compatible response entails it, or restate the CAR conclusion algebraically with the creator defined by a Clifford involution rather than the ambient Hilbert adjoint.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 13,
+            "B": 18,
+            "C": 0,
+            "D": 0,
+            "total_pass": 31
+          },
+          "verdict_rationale": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 13,
-        "B": 18,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 31
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
       "title": "Planck Target 3 Conditional Clifford Carrier Algebra",
       "transitive_descendants": 889,
-      "verdict_rationale": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note."
+      "verdict_rationale": null
     },
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25": {
       "audit_date": "2026-05-05T09:36:09.724499+00:00",
@@ -271724,63 +271756,97 @@
       "transitive_descendants": 906,
       "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure over the supplied operator inputs, not a definition, renaming, numerical match, or external comparator check. The runner source hard-codes the specified finite matrices as inputs but then actually verifies the projector ranks, matrix-unit generation, commutant dimension, observable descent, and irreducibility checks. The negative no-proper-quotient boundary passes the restricted no-go gate because attack routes such as preserving only translations, dropping C3, approximate reduction, nonlinear quotienting, or physical reinterpretation all leave the stated exact full-algebra quotient scope."
     },
-    "three_generation_structure_note": {
-      "audit_date": "2026-05-26T19:49:58.548017+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope."
-        },
-        "dep_claim_type": {
-          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained_bounded"
-        },
-        "deps": [
-          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 30.439,
-        "runner_hash": "367b0322a27634056aa9017864859e2b4f9e1ea5ddcbeea9b01577c01fda04fb",
-        "transitive_descendants": 693
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-fresh-three-generation-structure-C75Ktt-2026-05-26-pass1",
+    "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
       "auditor_confidence": null,
-      "auditor_family": "codex-gpt-5.5",
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 9.941,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "d46281d578bc09352ba273ba4845737642c204c279abdf9c233ce63896421c6c",
+      "note_path": "docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_generation_rooting_undefined.py",
+      "title": "Three-Generation Rooting Undefined Narrow No-Go Theorem",
+      "transitive_descendants": 694,
+      "verdict_rationale": null
+    },
+    "three_generation_structure_note": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The retained direct dependency is authoritative for item (4) only. The primary runner closes the finite corner/Wilson/Hamming-weight side for items (1)-(2) and prints a bounded physical-identification assumption, but it does not prove item (3), and the source admits no standalone retained no-rooting theorem packet currently exists.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "three_generation_structure_note",
-      "claim_scope": "Attempted bounded theorem for the four local structural items on the admitted staggered-Dirac/Z^3 surface: corner/Hamming-weight spectrum, hw=1 lightest nonzero-mass triplet, Hamiltonian Cl(3) no-rooting, and retained M_3(C)/no-proper-quotient; physical-species, SM-generation, substrate, CKM, and full matter-content claims are excluded.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": "2026-05-26T19:49:58.548017+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26"
       ],
       "direct_in_degree": 42,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 30.439,
-      "load_bearing_step": "The in-scope statement bundles four local structural items: exact corner/orbit algebra 8=1+1+3+3, hw=1 as the lightest nonzero-mass triplet on Z^3, rooting not well-defined in Hamiltonian Cl(3) on Z^3, and exact M_3(C)/no proper exact quotient on the hw=1 triplet.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "3f3a8dea51481ac17608afe42072d0eab1788669c9d886e9019aec60f1facab7",
+      "note_hash": "446f32c1facbda91557024b0e0b8815311bdcdfc570b3152b2aa6a76536614e7",
       "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: either narrow this row to the runner-backed spectral structure plus retained M_3(C)/no-proper-quotient dependency, or add a retained-grade no-rooting narrow theorem as a one-hop dependency before re-auditing the full four-item scope.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -271979,21 +272045,71 @@
             "total_pass": 8
           },
           "verdict_rationale": "The primary runner genuinely computes the corner enumeration, Wilson mass by Hamming weight, and C(3,1)=3 combinatorics, so the spectral subclaim is class A rather than a mere printout. However, the note explicitly depends on the staggered-Dirac realization derivation target, whose cited canonical parent is effective_status open_gate. The broader in-scope items also rely on no-rooting and M3(C) closure claims whose full source/runners are not provided here as independent retained-grade inputs, so retained-clean status cannot propagate through this packet."
+        },
+        {
+          "archived_at": "2026-05-26T22:42:31.487743+00:00",
+          "archived_for_note_hash": "3f3a8dea51481ac17608afe42072d0eab1788669c9d886e9019aec60f1facab7",
+          "audit_date": "2026-05-26T19:49:58.548017+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope."
+            },
+            "dep_claim_type": {
+              "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained_bounded"
+            },
+            "deps": [
+              "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 30.439,
+            "runner_hash": "367b0322a27634056aa9017864859e2b4f9e1ea5ddcbeea9b01577c01fda04fb",
+            "transitive_descendants": 693
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-fresh-three-generation-structure-C75Ktt-2026-05-26-pass1",
+          "auditor_confidence": null,
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The retained direct dependency is authoritative for item (4) only. The primary runner closes the finite corner/Wilson/Hamming-weight side for items (1)-(2) and prints a bounded physical-identification assumption, but it does not prove item (3), and the source admits no standalone retained no-rooting theorem packet currently exists.",
+          "claim_scope": "Attempted bounded theorem for the four local structural items on the admitted staggered-Dirac/Z^3 surface: corner/Hamming-weight spectrum, hw=1 lightest nonzero-mass triplet, Hamiltonian Cl(3) no-rooting, and retained M_3(C)/no-proper-quotient; physical-species, SM-generation, substrate, CKM, and full matter-content claims are excluded.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T19:49:58.548017+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The in-scope statement bundles four local structural items: exact corner/orbit algebra 8=1+1+3+3, hw=1 as the lightest nonzero-mass triplet on Z^3, rooting not well-defined in Hamiltonian Cl(3) on Z^3, and exact M_3(C)/no proper exact quotient on the hw=1 triplet.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad: either narrow this row to the runner-backed spectral structure plus retained M_3(C)/no-proper-quotient dependency, or add a retained-grade no-rooting narrow theorem as a one-hop dependency before re-auditing the full four-item scope.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 1,
+            "B": 1,
+            "C": 6,
+            "D": 0,
+            "total_pass": 8
+          },
+          "verdict_rationale": "Issue: the source scope bundles four items, but the restricted packet closes only the spectral/Wilson/Hamming items and the M_3(C)/no-proper-quotient item. Why this blocks: the negative rooting-not-well-defined subclaim has no retained one-hop theorem in the packet, the primary runner does not test it, and under no-go discipline the packet cannot support a clean exclusion result for that subclaim. Repair target: add and audit a no-rooting narrow theorem as a direct retained-grade dependency, or narrow this row to the spectral plus M_3(C)/no-quotient content. Claim boundary until fixed: no rooting-exclusion, physical-species, SM-generation, substrate, CKM, or full matter-content closure is retained from this row."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 1,
-        "B": 1,
-        "C": 6,
+        "A": 0,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_generation_fermi_point.py",
       "title": "Three-Generation Matter Structure Note",
       "transitive_descendants": 693,
-      "verdict_rationale": "Issue: the source scope bundles four items, but the restricted packet closes only the spectral/Wilson/Hamming items and the M_3(C)/no-proper-quotient item. Why this blocks: the negative rooting-not-well-defined subclaim has no retained one-hop theorem in the packet, the primary runner does not test it, and under no-go discipline the packet cannot support a clean exclusion result for that subclaim. Repair target: add and audit a no-rooting narrow theorem as a direct retained-grade dependency, or narrow this row to the spectral plus M_3(C)/no-quotient content. Claim boundary until fixed: no rooting-exclusion, physical-species, SM-generation, substrate, CKM, or full matter-content closure is retained from this row."
+      "verdict_rationale": null
     },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
       "audit_date": "2026-05-23T12:56:41.423657+00:00",
@@ -296706,6 +296822,57 @@
       "transitive_descendants": 567,
       "verdict_rationale": null
     },
+    "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 9.517,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "0408daddf18f84719e34c1ca36826c7ed235485db29a967cd7dae002be1bfe14",
+      "note_path": "docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
+      "title": "YT Declared-Anchor Bounded Subchain Narrow Theorem",
+      "transitive_descendants": 517,
+      "verdict_rationale": null
+    },
     "yt_eft_bridge_theorem": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -306712,79 +306879,50 @@
       "verdict_rationale": null
     },
     "yt_zero_import_chain_note": {
-      "audit_date": "2026-05-26T21:05:31.891227+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
-          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
-          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
-        },
-        "dep_claim_type": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
-          "plaquette_self_consistency_note": "bounded_theorem",
-          "rconn_derived_note": "no_go"
-        },
-        "dep_effective_status": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
-          "plaquette_self_consistency_note": "retained_bounded",
-          "rconn_derived_note": "retained_no_go"
-        },
-        "deps": [
-          "ew_current_fierz_channel_decomposition_note_2026-05-01",
-          "plaquette_self_consistency_note",
-          "rconn_derived_note"
-        ],
-        "load_bearing_score": 14.014,
-        "runner_hash": "21edd61bef97f369083bf205ad7e0bef82035c1b0c10b7761c8969835c6f73bc",
-        "transitive_descendants": 516
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-xhigh-fresh-yt-zero-import-pass1-C75Ktt-2026-05-26",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The downstream algebra/RGE calculation is internally consistent once <P> = 0.5934, R_conn/F_adj = 8/9, kappa_EW = 0, and the Ward boundary condition are supplied. The restricted packet does not derive the Ward bridge or the kappa_EW = 0 physical readout, and the runner imports or hard-codes the anchor values rather than computing them from the framework baseline.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "yt_zero_import_chain_note",
-      "claim_scope": "The current y_t/EW zero-import chain from the restricted packet to the reported v, y_t(v), m_t, alpha_s(M_Z), and sin^2(theta_W)(M_Z) outputs, including the section 9 algebraic narrowing.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-26T21:05:31.891227+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
+        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
         "plaquette_self_consistency_note",
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "rconn_derived_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.014,
-      "load_bearing_step": "The chain imposes y_t(M_Pl) = g_lattice / sqrt(6) and the connected-trace EW readout g_EW(phys) = g_EW(latt) * sqrt(9/8) after importing the canonical plaquette surface and exact Fierz fraction.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "fd262b3c4be79ab390d98532a4ef3a5710902fb094085b55bfb59ff15c444508",
+      "note_hash": "be01fe7df35835b3cbc36aef3b73eb790c1aa61671f534dfe78a56f9ed56e70a",
       "note_path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: split the clean bounded algebraic/RGE subchain over declared <P>, F_adj, kappa_EW, and Ward-boundary premises from the full zero-import numerical prediction, or add retained-grade bridge notes before re-audit.",
-      "open_dependency_paths": [
-        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
-        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
-        "docs/RCONN_DERIVED_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-01T15:26:01.959359+00:00",
@@ -307019,21 +307157,83 @@
             "total_pass": 14
           },
           "verdict_rationale": "The source note now honestly identifies the conditional perimeter, and the visible downstream steps are mostly algebraic/RGE propagation once those inputs are admitted. However, the primary runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V from canonical_plaquette_surface, while R_conn=8/9 and the sqrt(9/8) EW readout are hard-coded rather than derived from Cl(3) inside the packet. The stdout labels these as computed or derived, but the source note itself states that the plaquette insertion and kappa_EW=0 matching selector remain residual gaps. Therefore the overall zero-import chain does not close from the provided inputs."
+        },
+        {
+          "archived_at": "2026-05-26T22:42:32.237835+00:00",
+          "archived_for_note_hash": "fd262b3c4be79ab390d98532a4ef3a5710902fb094085b55bfb59ff15c444508",
+          "audit_date": "2026-05-26T21:05:31.891227+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+              "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+              "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+            },
+            "dep_claim_type": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+              "plaquette_self_consistency_note": "bounded_theorem",
+              "rconn_derived_note": "no_go"
+            },
+            "dep_effective_status": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+              "plaquette_self_consistency_note": "retained_bounded",
+              "rconn_derived_note": "retained_no_go"
+            },
+            "deps": [
+              "ew_current_fierz_channel_decomposition_note_2026-05-01",
+              "plaquette_self_consistency_note",
+              "rconn_derived_note"
+            ],
+            "load_bearing_score": 14.014,
+            "runner_hash": "21edd61bef97f369083bf205ad7e0bef82035c1b0c10b7761c8969835c6f73bc",
+            "transitive_descendants": 516
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-yt-zero-import-pass1-C75Ktt-2026-05-26",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The downstream algebra/RGE calculation is internally consistent once <P> = 0.5934, R_conn/F_adj = 8/9, kappa_EW = 0, and the Ward boundary condition are supplied. The restricted packet does not derive the Ward bridge or the kappa_EW = 0 physical readout, and the runner imports or hard-codes the anchor values rather than computing them from the framework baseline.",
+          "claim_scope": "The current y_t/EW zero-import chain from the restricted packet to the reported v, y_t(v), m_t, alpha_s(M_Z), and sin^2(theta_W)(M_Z) outputs, including the section 9 algebraic narrowing.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-26T21:05:31.891227+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The chain imposes y_t(M_Pl) = g_lattice / sqrt(6) and the connected-trace EW readout g_EW(phys) = g_EW(latt) * sqrt(9/8) after importing the canonical plaquette surface and exact Fierz fraction.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "scope_too_broad: split the clean bounded algebraic/RGE subchain over declared <P>, F_adj, kappa_EW, and Ward-boundary premises from the full zero-import numerical prediction, or add retained-grade bridge notes before re-audit.",
+          "open_dependency_paths": [
+            "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+            "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
+            "docs/RCONN_DERIVED_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 2,
+            "C": 1,
+            "D": 6,
+            "total_pass": 14
+          },
+          "verdict_rationale": "Issue: the runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V, hard-codes R_CONN = 8/9, applies sqrt(9/8), and sets the Ward target g_lattice/sqrt(6) rather than deriving the physical bridge/readout selectors in the restricted packet. Why this blocks: the full zero-import numerical y_t/EW prediction does not follow from the supplied one-hop authorities; it is a conditional calculation over bounded/imported anchors and unclosed physical bridge choices. Repair target: provide retained-grade derivations or dependencies for the Ward boundary bridge, the kappa_EW = 0 connected-trace selector, and any intended unbounded plaquette certificate, or split the note so only the bounded algebraic calculator over declared premises is audited. Claim boundary until fixed: the packet supports internal algebraic/RGE propagation from declared inputs, not an unconditional zero-import y_t/EW prediction."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
-        "B": 2,
-        "C": 1,
-        "D": 6,
-        "total_pass": 14
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_yt_zero_import_chain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note",
       "transitive_descendants": 516,
-      "verdict_rationale": "Issue: the runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V, hard-codes R_CONN = 8/9, applies sqrt(9/8), and sets the Ward target g_lattice/sqrt(6) rather than deriving the physical bridge/readout selectors in the restricted packet. Why this blocks: the full zero-import numerical y_t/EW prediction does not follow from the supplied one-hop authorities; it is a conditional calculation over bounded/imported anchors and unclosed physical bridge choices. Repair target: provide retained-grade derivations or dependencies for the Ward boundary bridge, the kappa_EW = 0 connected-trace selector, and any intended unbounded plaquette certificate, or split the note so only the bounded algebraic calculator over declared premises is audited. Claim boundary until fixed: the packet supports internal algebraic/RGE propagation from declared inputs, not an unconditional zero-import y_t/EW prediction."
+      "verdict_rationale": null
     },
     "yukawa_color_projection_theorem": {
       "audit_date": "2026-05-25T10:18:49.309520+00:00",
@@ -307946,9 +308146,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2384,
+    "preserved_existing": 2386,
     "re_audit_required": 0,
-    "row_count": 2428,
+    "row_count": 2430,
     "seeded_new": 0
   }
 }

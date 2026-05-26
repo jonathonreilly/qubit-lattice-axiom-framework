@@ -17092,13 +17092,13 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 17,
+        "B": 1,
+        "C": 38,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_plaquette_self_consistency.py"
+      "runner": "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py"
     },
     "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09": {
       "assert_count": 1,
@@ -43722,15 +43722,15 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/frontier_plaquette_self_consistency.py": {
+    "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py": {
       "assert_count": 1,
       "claims": [
         "plaquette_self_consistency_note"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 17,
+        "B": 1,
+        "C": 38,
         "D": 0
       },
       "decoration_candidate": false,

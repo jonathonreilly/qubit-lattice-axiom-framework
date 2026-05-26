@@ -54,15 +54,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "On the retained finite hw=1 triplet H_hw=1 ~= C^3 with basis X_1, X_2, X_3, the diagonal projector algebra D_3 together with the C3[111] cycle generates M_3(C), so no nonzero proper subspace or proper quotient preserves both structures. Physical-species interpretation, SM-generation identification, and full matter-content closure are out of scope.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
@@ -70,11 +70,11 @@
         "z2_hw1_mass_matrix_parametrization_note"
       ],
       "direct_in_degree": 20,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 19.445,
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "transitive_descendants": 696

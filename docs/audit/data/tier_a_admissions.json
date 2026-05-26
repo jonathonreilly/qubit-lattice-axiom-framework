@@ -1,12 +1,25 @@
 {
   "schema_version": 1,
-  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted inputs are four: P1, AC_phi_lambda, S, and theta. Only three are machine premise nodes here because S is pervasive and has no single claim_id; it is tracked under not_a_node. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
-  "genuine_admitted_input_count": 4,
+  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted inputs are three: P1, S, and theta. Only two are machine premise nodes here because S is pervasive and has no single claim_id; it is tracked under not_a_node. AC_phi_lambda was retired on 2026-05-26 after the multi-witness convergence capstone (PR #1965) plus the four upstream science PRs (#1959, #1960, #1961, #1963) landed retained AND the user ratified C_b convention adoption (PR #1964); see retired_targets below for the closure record. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
+  "genuine_admitted_input_count": 3,
   "canonical_ids": [
     "observable_principle_from_axiom_note",
-    "staggered_dirac_realization_gate_note_2026-05-03",
     "strong_cp_theta_zero_note"
   ],
+  "retired_targets": {
+    "staggered_dirac_realization_gate_note_2026-05-03": {
+      "label": "AC_phi_lambda",
+      "retired_on": "2026-05-26",
+      "former_leverage": 41,
+      "retirement_basis": "multi_witness_convergence_capstone_theorem_note_2026-05-26 (PR #1965) + upstream science PRs #1959 (lattice WZ-Fujikawa internal ABJ on Z^4), #1960 (anomaly-forces-time v2), #1961 (Z_N equivariant spectral asymmetry on Cl(3)/Z^3), #1963 (AFT-mediated anomaly-inheritance translation lemma) all landed retained; PR #1964 ratified C_b as a retained governance convention (period-1 angular unit on C_N orbits, sibling to lattice-spacing/meter/GeV). Under C_b retention, the dimensionless invariant (N-1)/N^2 is read literally as delta_Brannen rad on the C_N orbit: 2/9 rad at N=3 (matches PDG to 7e-6, lepton Koide phase) and 5/36 rad at N=6 (matches retained CKM eta^2, quark sector). Single convention, both sectors, no per-sector parameter.",
+      "pillars_closed": {
+        "C3_breaking_phase_delta": "Closed via 6-PR capstone stack at N=3 and N=6 under C_b retention.",
+        "abstract_sector_to_physical_species_bridge": "Already retained via graph_first_su3_integration_note (retained, fanin 64, transitive 1049) + lhcm_matter_assignment_from_su3_representation_note_2026-05-02 (decoration_under_graph_first_su3_integration_note) + lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17 (retained_bounded). The color-charged-quark, color-singlet-lepton identification is SM-definition convention.",
+        "cross_sector_mass_basis_alignment": "Covered by retained CKM authorities (ckm_gate_closed_2026-04-25 + ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10 retained + ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10 retained + ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10 retained_pending_chain) and retained PMNS chain (pmns_oriented_cycle_channel_value_law_note retained, plus retained companion narrows). The capstone's single-convention cross-sector empirical match (N=3 lepton + N=6 quark from one C_b choice) is the structural alignment statement."
+      },
+      "former_no_go_portfolio_status": "Not retracted. The three no-gos (koide_a1_radian_bridge_irreducibility_audit_2026-04-24, koide_delta_lattice_wilson_selected_eigenline_no_go_2026-04-24, koide_delta_marked_relative_cobordism_no_go_2026-04-24) remain retained_no_go on their respective convention surfaces (period-2pi continuum). The capstone operates on a different convention surface (C_b period-1 angular unit on C_N orbits) and does not violate them. Both no-gos and capstone coexist as retained surfaces on different conventions; the registry retirement reflects that AC_phi_lambda is no longer a Tier-A admission, not that the no-gos were wrong on their own surface."
+    }
+  },
   "derivation_targets": {
     "observable_principle_from_axiom_note": {
       "label": "P1",
@@ -20,17 +33,6 @@
         "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
         "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
         "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
-      ]
-    },
-    "staggered_dirac_realization_gate_note_2026-05-03": {
-      "label": "AC_phi_lambda",
-      "statement": "generation mass-pattern input: the C_3-breaking phase/orientation plus the abstract-sector to physical-species bridge; bare e/mu/tau naming is a convention, not a derivation target",
-      "class": "discrete flavor input with labeling convention stripped",
-      "leverage": 41,
-      "no_go_portfolio": [
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
-        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24"
       ]
     },
     "strong_cp_theta_zero_note": {

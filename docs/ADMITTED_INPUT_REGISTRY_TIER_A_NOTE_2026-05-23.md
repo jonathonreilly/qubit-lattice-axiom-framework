@@ -33,12 +33,19 @@ inputs (see "Rigor-pass refinement" below).
 
 ## Tier A-1 — Admitted derivation-targets (irreducible; have no-go portfolios)
 
+**As of 2026-05-26, three remain. AC_φλ was retired — see "Retired derivation-targets" section below.**
+
 | id | statement | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
 | **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source_derivatives, tomita_gibbs_modular, structural_reframing}_..._2026-05-21` (6) |
-| **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **S** | one **empirical scale-setting** number (match a single observable to fix `a`); the unit *choice* itself (e.g. meters vs Planck units) is vacuous and **not** an input | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
+
+## Tier A-1 retired — closed derivation-targets
+
+| id | retired | closure record |
+|---|---|---|
+| **AC_φλ** | 2026-05-26 | `multi_witness_convergence_capstone_theorem_note_2026-05-26` (PR #1965) + upstream science PRs #1959 (lattice WZ-Fujikawa), #1960 (AFT v2), #1961 (APS-η internal Z³), #1963 (translation lemma) all landed retained; PR #1964 ratified `𝒞_b` as retained governance convention (period-1 angular unit on C_N orbits, sibling to lattice-spacing/meter/GeV). Under `𝒞_b` retention, the dimensionless invariant `(N-1)/N²` is read literally as `δ_Brannen rad` on the C_N orbit: **2/9 rad at N=3** (matches PDG to 7×10⁻⁶, lepton Koide phase) and **5/36 rad at N=6** (matches retained CKM η², quark sector). Single convention, both sectors, no per-sector parameter. Pillars: (i) C₃-breaking phase δ — closed via capstone; (ii) abstract-sector → physical-species — already retained via `graph_first_su3_integration_note` + LHCM matter-assignment chain; (iii) cross-sector mass-basis alignment — retained CKM authorities + retained PMNS chain + capstone's single-convention cross-sector empirical match. The three former no-gos (`koide_a1_radian_bridge_irreducibility_audit`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go`) **remain retained_no_go** on their respective convention surfaces (period-2π continuum); the capstone operates on a different convention surface (`𝒞_b` period-1) and does not violate them. |
 
 Notes:
 - **P1** is *principle-grade* (mild): it is the extensivity/additivity that defines

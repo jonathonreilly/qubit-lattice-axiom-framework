@@ -66480,8 +66480,10 @@
         "lattice_nn_deterministic_rescale_note",
         "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "1b12e7d94ade1dee3a4b8bb3edc53908ce0793da525aba12f7cf8b911a228198",
+      "helper_runner_paths": [
+        "scripts/lattice_nn_rescaled_continuum_identification.py"
+      ],
+      "note_hash": "3e58a6fd32cf280ad2e11aa9dba0ba924add6a51fc40a1323f8d53eaece95d48",
       "path": "docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md",
       "runner_path": "scripts/lattice_nn_rescaled_C_arm_derivation.py",
       "title": "Rescaled NN Lattice C_arm Coherent-Saddle Support Note"

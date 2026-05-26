@@ -43,9 +43,10 @@ The computation has three stages:
      by L_2, not L_total.
 
 The script prints both interpretations (L = L_total and L = L_2), the
-incoherent estimate, the leading phase-interference correction, and the
-residuals against the diagnostic C_arm_numeric = 2.7107. No Monte Carlo,
-no lattice propagation - all closed form.
+incoherent estimate, the leading phase-interference correction, and a direct
+deterministic blocked-slit sigma check against the actual field-free
+propagation runner. The historical diagnostic C_arm_numeric = 2.7107 is kept
+only as a comparator.
 
 Usage:
     python3 scripts/lattice_nn_rescaled_C_arm_derivation.py
@@ -56,6 +57,7 @@ from __future__ import annotations
 import cmath
 import math
 import sys
+from typing import Any
 
 
 # ---------------------------------------------------------------------------
@@ -76,6 +78,7 @@ L_2 = 2.0 * L_TOTAL / 3.0  # slit -> detector
 # Diagnostic fit values used only as bounded comparators.
 C_ARM_NUMERIC = 2.7107
 ALPHA_NUMERIC = 0.5256
+BLOCKED_SLIT_H_VALUES = (0.25, 0.125, 0.0625, 0.03125)
 
 
 # ---------------------------------------------------------------------------
@@ -248,6 +251,40 @@ def reldiff(pred: float, ref: float) -> float:
     return (pred - ref) / ref
 
 
+def phase_corrected_sigma_l2(h: float) -> float:
+    """Phase-corrected L_2 saddle prediction for sigma_arm(h)."""
+    return coherent_C_arm_sq(L_2, h)["C_arm"] * math.sqrt(h)
+
+
+def measure_blocked_slit_row(h: float) -> dict[str, Any]:
+    """Measure sigma_arm(h) from the actual blocked-slit propagation runner."""
+    try:
+        from lattice_nn_rescaled_continuum_identification import measure_arm_distribution
+    except Exception as exc:  # pragma: no cover
+        raise RuntimeError(
+            "could not import measure_arm_distribution from "
+            "scripts/lattice_nn_rescaled_continuum_identification.py"
+        ) from exc
+
+    row = measure_arm_distribution(h)
+    if row is None:
+        raise RuntimeError(f"measure_arm_distribution returned None at h={h}")
+    sigma = 0.5 * (float(row["sigma_a"]) + float(row["sigma_b"]))
+    predicted = phase_corrected_sigma_l2(h)
+    return {
+        "h": h,
+        "n": row["n"],
+        "sigma_a": float(row["sigma_a"]),
+        "sigma_b": float(row["sigma_b"]),
+        "sigma": sigma,
+        "predicted": predicted,
+        "reldiff": reldiff(predicted, sigma),
+        "mu_a": float(row["mu_a"]),
+        "mu_b": float(row["mu_b"]),
+        "born": float(row["born"]),
+    }
+
+
 def report() -> int:
     print("=" * 78)
     print("BOUNDED COHERENT-SADDLE SUPPORT FOR C_arm")
@@ -372,9 +409,32 @@ def report() -> int:
     print("  All four points agree with the diagnostic fit to within 2.5%.")
     print()
 
+    print("  Direct blocked-slit check against actual propagation:")
+    print("  This imports measure_arm_distribution(...) from the continuum")
+    print("  identification runner and measures sigma_arm(h) directly. The")
+    print("  diagnostic fit constants are not inputs to this check.")
+    print(f"  {'h':>8s}  {'nodes':>10s}  {'sigma_meas':>11s}  {'sigma_pred':>11s}  {'reldiff':>8s}  {'Born':>10s}")
+    blocked_rows = []
+    for h in BLOCKED_SLIT_H_VALUES:
+        row = measure_blocked_slit_row(h)
+        blocked_rows.append(row)
+        print(
+            f"  {h:8.5f}  {int(row['n']):10d}  {row['sigma']:11.4f}  "
+            f"{row['predicted']:11.4f}  {100.0 * row['reldiff']:+7.2f}%  "
+            f"{row['born']:10.2e}"
+        )
+    max_abs_blocked = max(abs(float(row["reldiff"])) for row in blocked_rows)
+    max_abs_born = max(abs(float(row["born"])) for row in blocked_rows)
+    print()
+    print(f"  Direct blocked-slit max residual = {100.0 * max_abs_blocked:.2f}%")
+    print(f"  Direct blocked-slit max Born residual = {max_abs_born:.2e}")
+    print()
+
     checks = {
         "post-slit coherent residual <= 10%": res_post <= 0.10,
         "per-h phase-corrected residual <= 2.5%": max_abs_rd <= 0.025,
+        "direct blocked-slit sigma residual <= 3%": max_abs_blocked <= 0.03,
+        "direct blocked-slit Born residual <= 1e-10": max_abs_born <= 1e-10,
         "post-slit length improves on full-length estimate": res_post < res_full,
         "coherent estimate improves on incoherent estimate": res_post < res_incoh,
         "h->0 post-slit value is stable": math.isclose(post0["C_arm"], 2.4855, rel_tol=5e-5),

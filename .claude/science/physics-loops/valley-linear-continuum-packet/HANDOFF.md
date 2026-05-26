@@ -1,5 +1,7 @@
 # Handoff
 
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1926
+
 ## What Changed
 
 The note now includes the continuum bridge that had previously lived only in

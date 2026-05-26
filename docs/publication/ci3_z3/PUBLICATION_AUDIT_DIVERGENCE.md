@@ -18,12 +18,13 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | high | `unaudited` | 197 |
-| critical | `unaudited` | 165 |
+| critical | `unaudited` | 164 |
 | medium | `unaudited` | 103 |
 | high | `audited_numerical_match` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
@@ -169,7 +170,7 @@ publication tables phrase it.
 | critical | `sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `staggered_dirac_realization_gate_note_2026-05-03` | `audited_renaming` | `audited_renaming` | DERIVATION_ATLAS.md |
 | critical | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `strong_cp_theta_zero_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `strong_cp_theta_zero_note` | `audit_in_progress` | `audit_in_progress` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `su2_witten_z2_anomaly_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `three_generation_structure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |

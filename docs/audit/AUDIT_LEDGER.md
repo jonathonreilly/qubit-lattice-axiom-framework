@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 465 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1286 |
+| unaudited | 1285 |
+| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -53,13 +54,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
+| `audit_in_progress` | 1 |
 | `audited_clean` | 750 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1515 |
+| `unaudited` | 1514 |
 
 | claim_type | count |
 |---|---:|
@@ -124,6 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `strong_cp_theta_zero_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |

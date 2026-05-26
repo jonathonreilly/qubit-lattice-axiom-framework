@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `strong_cp_theta_zero_note` | bounded_theorem | unaudited | critical | 879 | 19.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_strong_cp_theta_zero.py` |
+| 1 | `strong_cp_theta_zero_note` | bounded_theorem | audit_in_progress | critical | 879 | 19.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_strong_cp_theta_zero.py` |
 | 2 | `assumption_derivation_ledger` | bounded_theorem | unaudited | critical | 879 | 13.78 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 3 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 878 | 13.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gbare_same_1pi_admitted_residue_repair.py` |
 | 4 | `g_bare_rigidity_theorem_note` | bounded_theorem | unaudited | critical | 875 | 13.28 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rigidity_theorem.py` |

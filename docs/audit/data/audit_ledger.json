@@ -102512,24 +102512,46 @@
       "verdict_rationale": "The load-bearing step is an algebraic/model-witness non-entailment argument, not a fit, external comparator, or renamed definition. The cited authorities are retained-grade for the relevant packet boundary, and the runner source verifies the witness construction, monotonic sampled response, shared packet fingerprint, and distinct readouts rather than merely printing constants. No-Go Discipline passes: attack routes include inverse-definition escape, exact spectral measure, exact Perron/Jacobi data, exact effective action, exact independently selected beta_eff(6), and convention/ratification; these are either excluded from the current packet or explicitly named as future escape hatches, so the no-go is correctly narrowed to current-packet derivability."
     },
     "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T00:00:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_completion_theorem_note": "Exact temporal-completion ratio for the accepted Wilson nearest-neighbor local bosonic scalar gauge-source class with one uniform plaquette weight on the minimal APBC 3 spatial + 1 derived-time block.",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "The current Wilson packet, without an added exact beta-6 nonperturbative completion object or fitted beta_eff, does not derive the observable bridge <P>_full = R_O(beta_eff)."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_completion_theorem_note": "positive_theorem",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_completion_theorem_note": "retained",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "gauge_scalar_temporal_completion_theorem_note",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 8.304,
+        "runner_hash": "bf3a3db7548b284f9562e990a312c49216a2f335496e20bf8231bb871907e6a0",
+        "transitive_descendants": 157
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-gauge-scalar-temporal-open-gate-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the open_gate scope: the note explicitly narrows itself to a surveyed-route obstruction packet and forbids downstream use as retained positive support for <P>_full = R_O(beta_eff). The retained companion no-go dependency closes the current-packet gate-level negative statement, while the positive bridge remains open pending an exact nonperturbative primitive.",
       "claim_id": "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Open-gate obstruction packet for the positive bridge <P>_full = R_O(beta_eff), including A_min, forbidden imports, three surveyed obstruction routes, explicit non-closure, and companion no-go handoff; not positive bridge support.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -102538,19 +102560,19 @@
         "gauge_scalar_temporal_completion_theorem_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 8.304,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "This row is not a positive observable-bridge theorem; its binding current-surface content is the named obstruction that the attempted bridge remains open unless an explicit nonperturbative escape hatch is supplied.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "c287ce481e3483dc954488964311f265d99a2d6faedaec3ef4591769a679acbb",
       "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check if a future edit cites this row as positive bridge support or if an exact beta=6 spectral/effective-action/beta_eff primitive is added.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
@@ -102875,18 +102897,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 49,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 49
       },
       "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
       "title": "Gauge-Scalar Temporal Observable Bridge Stretch Attempt",
       "transitive_descendants": 157,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner is structure-only, so it would not support a positive observable-bridge theorem, but the audited claim is only an open_gate obstruction packet. The source clearly says it does not derive the bridge and must not be cited as retained positive support for <P>_full = R_O(beta_eff). The N1-N8 boundary avoids universal no-go overclaiming by naming only three surveyed routes, collapsing the wall to one missing exact nonperturbative bridge primitive, and leaving import-to-bounded-theorem retirement paths open."
     },
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-10T23:39:33.062002+00:00",

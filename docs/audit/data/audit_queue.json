@@ -226,7 +226,7 @@
       "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
+      "runner_path": "scripts/frontier_parity_dim5_formal_sign_repair.py",
       "transitive_descendants": 890
     },
     {

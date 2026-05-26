@@ -190884,7 +190884,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "b85c6879cb84439eae95f8eef56acc7a27beaf7e42bc300553636475a15050cb",
+      "note_hash": "d6f41f417ae0e0e992195fb1f6d66b46babee337070ce02e01f98b4e70f89d02",
       "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -191099,8 +191099,8 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
-      "title": "Parity-Operator Basis: Formal Dimension-5 P-Weight Identities",
+      "runner_path": "scripts/frontier_parity_dim5_formal_sign_repair.py",
+      "title": "Parity Dimension-5 Formal Sign Identities on the SME-Style Basis",
       "transitive_descendants": 890,
       "verdict_rationale": null
     },
@@ -305896,8 +305896,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2381,
-    "re_audit_required": 1,
+    "preserved_existing": 2382,
+    "re_audit_required": 0,
     "row_count": 2426,
     "seeded_new": 0
   }

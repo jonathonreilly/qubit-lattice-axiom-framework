@@ -1,22 +1,13 @@
 # PR Backlog
 
-## 2026-05-25 - PR creation blocked by GitHub API rate limit
+No open PR backlog.
 
-Branch pushed:
+## 2026-05-25 - Resolved GitHub API rate limit
 
-```bash
-physics-loop/hopping-bilinear-translation-bridge-repair-20260525
-```
+Initial PR creation was blocked by exhausted GitHub API quota after the
+branch was pushed. The quota later recovered and the PR was opened:
 
-Open the PR when GitHub API quota recovers:
-
-```bash
-gh pr create \
-  --base main \
-  --head physics-loop/hopping-bilinear-translation-bridge-repair-20260525 \
-  --title "[physics-loop] hopping bilinear translation bridge repair proposed_retained" \
-  --body-file .claude/science/physics-loops/hopping-bilinear-translation-bridge-repair/PR_BODY.md
-```
+https://github.com/jonathonreilly/cl3-lattice-framework/pull/1863
 
 Attempted command:
 

@@ -16,6 +16,4 @@ Changes:
 Independent audit is still required before the row can regain retained
 effective status.
 
-PR creation is pending only because GitHub API quota was exhausted after
-the branch was pushed. The exact `gh pr create` command and failure are
-recorded in `PR_BACKLOG.md`.
+PR opened: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1863

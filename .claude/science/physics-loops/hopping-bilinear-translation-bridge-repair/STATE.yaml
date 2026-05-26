@@ -19,5 +19,5 @@ files_touched:
 open_imports: []
 no_go_routes:
   - "Do not claim this follows from the staggered-carrier Noether translation branch."
-next_exact_action: "Open PR from the pushed branch after GitHub API quota recovers; exact command recorded in PR_BACKLOG.md."
-stop_condition: "Branch pushed and PR backlog recorded because GitHub API rate limit blocked PR creation."
+next_exact_action: "Reviewer/audit-lane review of PR #1863."
+stop_condition: "Review PR opened for this repair block."

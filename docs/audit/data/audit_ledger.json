@@ -264780,9 +264780,9 @@
       "verdict_rationale": "The computational readouts are reproducible and bounded, but the source note's interpretive framing goes beyond them. The result can be retained only as conditional support: finite MPO/entropy/singular-spectrum diagnostics on small toy lattices, not a theorem connecting this framework to AdS/CFT, RT surfaces, MERA, or holographic gravity."
     },
     "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": {
-      "audit_date": "2026-05-25T23:53:39.238817+00:00",
+      "audit_date": "2026-05-26T01:48:14.742718+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_axiom_premise_note_hash": {
           "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
         },
@@ -264798,26 +264798,26 @@
         "deps": [
           "minimal_axioms"
         ],
-        "load_bearing_score": 0.0,
+        "load_bearing_score": 11.786,
         "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
-        "transitive_descendants": 0
+        "transitive_descendants": 882
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T235316Z-0a7b7bbc-tensor_product_translati-01",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T014754Z-91d14616-tensor_product_translati-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The cited axiom premise supplies the per-site qubit algebra and Z^3 translation structure, and the remaining constructions are standard finite tensor products, local ladder matrices, and periodic relabelling. The proof establishes the identities directly on the tensor-product basis without importing any open fermion, Noether, gauge, or numerical premise.",
+      "chain_closure_explanation": "The proof closes by finite tensor-product basis permutation algebra using the accepted A1 qubit factor and A2 Z^3 translation structure, plus stated standard finite-volume periodic identification. Charge conservation follows by conjugating each summand and relabeling the finite site sum.",
       "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-      "claim_scope": "For a finite periodic block \u039b \u2282 Z^3 with H_\u039b = \u2297_x C^2_x, the tensor-permutation translations T_a are unitary, obey T_a T_b = T_{a+b}, conjugate the local per-site ladder operators as T_a a_x T_a^\u2020 = a_{x+a} and T_a a_x^\u2020 T_a^\u2020 = a_{x+a}^\u2020, and commute with Q_total = \u03a3_x a_x^\u2020 a_x.",
+      "claim_scope": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, translate the per-site ladder operators by conjugation, and commute with Q_total = sum_x a_x^dagger a_x.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-26T00:44:15.508640+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-26T01:48:14.742718+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -264832,8 +264832,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T01:48:14.742718+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T014754Z-91d14616-tensor_product_translati-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, translate the per-site ladder operators by conjugation, and commute with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -264841,18 +264852,18 @@
       ],
       "direct_in_degree": 4,
       "effective_status": "retained",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "retained",
       "load_bearing_score": 11.786,
-      "load_bearing_step": "Applying the tensor-permutation definition of T_a to a_x on a basis state gives T_a a_x T_a^\u2020 |b\u27e9 = a_{x+a} |b\u27e9, and relabelling the finite torus sum gives T_a Q_total T_a^\u2020 = Q_total.",
+      "load_bearing_step": "Using definition (2), T_a sends factor-content |c_y>_y to |c_{y-a}>_y, so conjugating the single-site ladder operator a_x by T_a gives a_{x+a}.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "e3f4ce0a0b208757225d718d12be839c1f2fbf3e67e072db64935025da37fd0a",
       "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-cli-gpt-5.5-per-site-k1-20260525T235316Z-0a7b7bbc-tensor_product_translati-01, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the convention match between the note's active translation T_a and the runner's basis-index convention, but the packet is internally consistent.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -264867,7 +264878,7 @@
       "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
       "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
       "transitive_descendants": 882,
-      "verdict_rationale": "The source note's load-bearing argument is a direct algebraic closure from the accepted A1/A2 framework premise plus ordinary finite-dimensional tensor-product mathematics. The runner source explicitly constructs the ladder operators, permutation matrices, and total charge operator with exact sympy matrices, then verifies the stated identities entrywise; it does not hard-code contested outputs or import external comparators. The absence of Jordan-Wigner anticommutation is acknowledged and kept out of scope, so it does not block the stated per-site Pauli convention claim."
+      "verdict_rationale": "The load-bearing covariance identity is a direct algebraic consequence of the defined tensor-permutation action and the single-site ladder operator definition. The cited upstream axiom memo is explicitly flagged as an accepted axiom premise, so its meta status does not force a conditional downgrade. The runner source genuinely constructs the finite tensor-product matrices and permutation matrices with exact sympy arithmetic and verifies the claimed identities; it does not hard-code contested outputs or import external comparators."
     },
     "tensor_scalar_ratio_consolidation_theorem_note_2026-04-22": {
       "audit_date": null,

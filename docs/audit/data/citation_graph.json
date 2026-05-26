@@ -62846,9 +62846,9 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "25cc341fc426f2e35f9c6d9c211fabba4eb1c72f1625f825e3b7a3b039406f85",
+      "note_hash": "646e758c5f799179a32fb5079a2a6e19328fa4630d2545b0718f49a6986cd418",
       "path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
-      "runner_path": null,
+      "runner_path": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
       "title": "Lattice Green's Function Asymptotic (Maradudin 1971) \u2014 Named Non-Derivation Import"
     },
     "lattice_keff_continuum_note": {
@@ -85502,6 +85502,6 @@
     "leaf_count": 785,
     "node_count": 2540,
     "root_count": 840,
-    "runners_with_path": 2106
+    "runners_with_path": 2107
   }
 }

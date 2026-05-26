@@ -1,0 +1,27 @@
+loop: lattice-greens-z3-normalization-certificate
+branch: physics-loop/lattice-greens-z3-normalization-certificate-20260526
+base: origin/main@1f480d2f5
+target_row: lattice_greens_function_maradudin_textbook_import_note_2026-05-18
+target_note: docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+target_runner: scripts/lattice_greens_z3_asymptotic_normalization_certificate.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+runtime_request: 12h campaign
+cycle_block: Z3 lattice Green normalization certificate
+pr_status: pending
+open_imports:
+  - "Independent audit must review the bounded named-import wrapper."
+no_go_routes:
+  - "Do not claim a framework derivation of the lattice Green asymptotic."
+  - "Do not close downstream Newton-law or gravity rows from this import wrapper alone."
+files_touched:
+  - docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+  - scripts/lattice_greens_z3_asymptotic_normalization_certificate.py
+  - logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt
+next_exact_action: "Run final gates, commit, push, open PR, then continue campaign if runtime remains."
+stop_condition: "Only stop this campaign when the 12h budget is exhausted, the user stops it, or a global tooling blocker prevents safe continuation."

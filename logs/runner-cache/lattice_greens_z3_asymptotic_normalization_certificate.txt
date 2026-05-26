@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/lattice_greens_z3_asymptotic_normalization_certificate.py
+runner_sha256: 70e548b5c286d5a7916baf3d64e7a23c34b072932ffd9f9c48bb5de18a3a6ce9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+symbol eps=0.10000: axis=0.9991669444 diag=0.9991669444
+symbol eps=0.05000: axis=0.9997916840 diag=0.9997916840
+symbol eps=0.02500: axis=0.9999479178 diag=0.9999479178
+symbol eps=0.01250: axis=0.9999869792 diag=0.9999869792
+continuum flux R=1.0: 1.0000000000000000
+continuum flux R=2.0: 1.0000000000000000
+continuum flux R=5.0: 1.0000000000000000
+continuum flux R=10.0: 1.0000000000000000
+axis r= 16: residual=2.658444e-07 scaled_r5=0.278758
+axis r= 32: residual=8.302321e-09 scaled_r5=0.278580
+axis r= 64: residual=2.594066e-10 scaled_r5=0.278536
+axis r=128: residual=8.106139e-12 scaled_r5=0.278525
+CERTIFICATE PASS: Z^3 graph-Laplacian Green asymptotic normalization is 1/(4*pi*r)
+
+----- stderr -----
+

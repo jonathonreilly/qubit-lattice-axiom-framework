@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1256 |
+| unaudited | 1257 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 69 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 70 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1485 |
+| `unaudited` | 1486 |
 
 | claim_type | count |
 |---|---:|
@@ -82,10 +82,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1991
+- runners classified: 1992
 - runners with (C) first-principles compute hits: 970
 - runners with (D) external comparator hits: 584
-- decoration candidates (no C, no D): 323
+- decoration candidates (no C, no D): 324
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -912,7 +912,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7150,19 +7149,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested 3D dense spent-delay card.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, field, propagation, detector probabilities, centroid shift, P_near, and channel bias directly, then computes all four z = 2..5 rows without importing or hard-coding the contested values. The cited hierarchy authority supplies the retained sign-interpretation rule, and the source note excludes the rows and broader claims that the authority does not retain.
 - **rationale:** The load-bearing attractive-window claim is a bounded first-principles runner computation on the stated card. The runner source is not a constant printer or cross-note equality check; it generates the graph, propagates amplitudes, computes the observables, and classifies z = 2, 3, 4, 5 as attractive with positive centroid, P_near, and bias. The one-hop hierarchy authority is retained_bounded, and the note explicitly narrows away z = 6, 2D distance-law, refinement, and all-distances claims. A second auditor should note the minor non-load-bearing Born display drift between 7.39e-16 in the note and 7.37e-16 in the runner output.
-- **auditor confidence:** high
-
-### `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
-
-- **Note:** [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the named-import wrapper asserting the standard Z^3 nearest-neighbor lattice Green's function asymptotic G(r) ~ 1/(4 pi |r|).
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T232506Z-dc7f0605-lattice_greens_function_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The cubic-lattice Green's function satisfies G(r) -> 1 / (4 pi |r|) as |r| -> infinity, asserted as the Maradudin-Montroll-Weiss asymptotic.  _(class `B`)_
-- **chain closes:** False — The packet provides no retained cited authority or derivation of the asymptotic. The missing step is the actual textbook proof or retained upstream authority establishing the lattice Green's function asymptotic under the stated normalization.
-- **rationale:** The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization.
 - **auditor confidence:** high
 
 ### `lattice_keff_continuum_note`

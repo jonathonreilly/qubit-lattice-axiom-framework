@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,19 +54,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1059 |
+| `bounded_theorem` | 1058 |
 | `decoration` | 47 |
 | `meta` | 234 |
-| `no_go` | 247 |
+| `no_go` | 248 |
 | `open_gate` | 112 |
 | `positive_theorem` | 725 |
 
@@ -82,10 +82,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1982
+- runners classified: 1983
 - runners with (C) first-principles compute hits: 969
 - runners with (D) external comparator hits: 583
-- decoration candidates (no C, no D): 315
+- decoration candidates (no C, no D): 316
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -96,14 +96,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 723 | 53.50 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 906 | 52.33 | `audited_clean` | **retained_bounded** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 908 | 51.83 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1074 | 46.07 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1062 | 46.05 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 939 | 39.88 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 179 | 38.99 | `unaudited` | unaudited |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 711 | 37.98 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 939 | 37.88 | `audited_clean` | **retained_bounded** |
 | 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 554 | 34.12 | `audited_conditional` | ~~audited_conditional~~ |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1046 | 34.03 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1034 | 34.02 | `audited_clean` | **retained** |
 | 12 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 177 | 33.48 | `unaudited` | unaudited |
 | 13 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 33.35 | `audited_clean` | **retained** |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
@@ -941,7 +941,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `rconn_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -10187,22 +10186,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** eta_bar / rho_bar = (mu eta) / (mu rho) = eta / rho, since mu > 0 cancels; the origin angle and doubled-angle identities then depend only on this preserved slope, and the (1,0)-based finite tangent difference factors as eta*(mu - 1)/((1 - mu*rho)*(1 - rho)).  _(class `A`)_
 - **chain closes:** True — The scoped claim is pure algebra and elementary plane geometry over abstract positive real symbols with no cited dependencies. The note explicitly guards the finite-tangent exclusions needed for T4, so the factorization proves the iff condition on its stated domain.
 - **rationale:** The load-bearing step is a direct algebraic cancellation under positive radial scaling, with standard arctan and double-angle consequences, and the runner independently verifies the symbolic slope, origin-angle, doubled-angle, radius, and finite-tangent factorization checks. Residual risk is limited to scope control: this clean verdict covers only the abstract Euclidean radial-scaling theorem and does not ratify any CKM-specific assignment, physical observable bridge, or upstream parent framing.
-- **auditor confidence:** high
-
-### `rconn_derived_note`
-
-- **Note:** [`RCONN_DERIVED_NOTE.md`](../../docs/RCONN_DERIVED_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact imported SU(N_c) adjoint representation-dimension fraction 8/9 at N_c=3 plus a conditional R_conn/MC consistency statement gated on matching rule (M).
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T184949Z-6f3c2210-rconn_derived_note-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Assuming matching rule (M), the lattice connected color trace projects onto the adjoint channel, giving R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4).  _(class `F`)_
-- **chain closes:** False — The Fierz channel-count fraction closes only as an imported algebraic dimension fact. The missing step is the dynamical/readout bridge matching the lattice connected-trace observable to the adjoint-channel fraction, equivalently fixing kappa_EW = 0.
-- **rationale:** The exact 8/9 dimension fraction is supported as an imported Fierz algebra fact, but the observable identification is the named matching rule (M), explicitly admitted as open. The retained no-go authority shows kappa_EW is not fixed by the retained packet because kappa_EW = 0 and kappa_EW = 1 completions share the same Fierz arithmetic and CMT scaling. The runner performs a real SU(3) lattice MC consistency check, but hard-codes the analytic 8/9 target and cannot independently derive M. No-Go Discipline N1-N8 does not justify clean closure: same-packet routes through Fierz projection, CMT, OZI, disconnected vanishing, scheme assignment, Wilson-line projection, and numerical ratification remain ruled out or admitted.
-- **open / conditional deps cited:**
-  - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
-  - `EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17`

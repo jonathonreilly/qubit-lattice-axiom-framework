@@ -22205,18 +22205,6 @@
       "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
     },
     {
-      "from": "rconn_derived_note",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
-    },
-    {
-      "from": "rconn_derived_note",
-      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
-    },
-    {
-      "from": "rconn_derived_note",
-      "to": "yukawa_color_projection_theorem"
-    },
-    {
       "from": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
@@ -73791,21 +73779,15 @@
     },
     "rconn_derived_note": {
       "claim_id": "rconn_derived_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (conditional on admitted premise (M))",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "yukawa_color_projection_theorem"
-      ],
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "note_hash": "c4c44671aea333635999bbcb333209c60851630aad23371df5e116cb89d47ded",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a16e4d22dcd6f4fa2d7f082424876b30635bdb09c01f16e50891e16ae34d2443",
       "path": "docs/RCONN_DERIVED_NOTE.md",
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate (conditional on admitted matching rule (M))"
+      "runner_path": "scripts/rconn_matching_rule_nogo_certificate.py",
+      "title": "R_conn Matching-Rule No-Go With Exact Fierz Support"
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
@@ -85243,6 +85225,7 @@
     "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28",
     "qubit_axiom_hardening_note_2026-05-20",
     "radial_scaling_protected_angle_narrow_theorem_note_2026-05-02",
+    "rconn_derived_note",
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
     "reopened_lane_checklist",
     "replay_environment_note",
@@ -85483,27 +85466,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 589,
+      "bounded_theorem": 588,
       "decoration": 1,
       "meta": 191,
-      "no_go": 72,
+      "no_go": 73,
       "none": 1464,
       "open_gate": 48,
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1016,
+      "bounded_theorem": 1015,
       "decoration": 1,
       "meta": 191,
-      "no_go": 175,
+      "no_go": 176,
       "none": 434,
       "open_gate": 125,
       "positive_theorem": 596
     },
-    "edge_count": 9778,
+    "edge_count": 9775,
     "leaf_count": 783,
     "node_count": 2538,
-    "root_count": 836,
+    "root_count": 837,
     "runners_with_path": 2099
   }
 }

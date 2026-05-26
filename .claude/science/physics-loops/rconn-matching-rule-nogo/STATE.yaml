@@ -1,0 +1,20 @@
+loop_slug: rconn-matching-rule-nogo
+branch: physics-loop/rconn-matching-rule-nogo-repair-20260526
+target_claim_id: rconn_derived_note
+target_note: docs/RCONN_DERIVED_NOTE.md
+target_runner: scripts/rconn_matching_rule_nogo_certificate.py
+actual_current_surface_status: open
+proposed_branch_status: no-go
+audit_required_before_effective_status: true
+bare_retained_allowed: false
+runtime_context: "12-hour physics-loop campaign"
+cycle: 7
+descendants_at_start: 902
+load_bearing_score_at_start: 16.819
+route: "Retire unconditional physical R_conn readout; preserve exact Fierz support and expose kappa_EW underdetermination."
+files_touched:
+  - docs/RCONN_DERIVED_NOTE.md
+  - scripts/rconn_matching_rule_nogo_certificate.py
+  - outputs/rconn_matching_rule_nogo_certificate_2026-05-26.txt
+next_exact_action: "Open review PR and let the independent audit lane adjudicate the no-go repair."
+stop_condition: "PR opened and verified; continue campaign on next audited_conditional row."

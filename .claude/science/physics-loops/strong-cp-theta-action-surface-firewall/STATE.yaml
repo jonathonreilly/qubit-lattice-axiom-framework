@@ -1,0 +1,38 @@
+loop_slug: strong-cp-theta-action-surface-firewall
+started_at: 2026-05-26
+mode: campaign
+target_claim_id: strong_cp_theta_zero_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This branch narrows theta-zero to the explicitly theta-free Wilson-plus-staggered scalar-mass surface; it does not derive that surface from A1/A2 alone."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/strong-cp-theta-action-surface-firewall-20260526
+base: origin/main
+active_route: action-surface-firewall
+hard_residual: "Prior audit allowed only selected-surface theta_eff=0 support and rejected unconditional strong-CP-solution wording."
+files_touched:
+  - docs/STRONG_CP_THETA_ZERO_NOTE.md
+  - scripts/frontier_strong_cp_theta_zero.py
+  - logs/runner-cache/frontier_strong_cp_theta_zero.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+open_imports:
+  - "Selected theta-free action surface remains a premise."
+  - "Positive real quark-mass orientation remains selected-surface input."
+no_go_routes:
+  - "Do not claim a retained or all-formulations strong-CP solution from the runner."
+review_findings: []
+pr_status: pending
+next_exact_action: "Run final gates, commit, push, open PR, verify mergeability, then continue if runtime remains."
+stop_condition: "Continue campaign until the 12-hour budget expires or queue exhaustion."

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 464 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1272 |
+| unaudited | 1273 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 749 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1501 |
+| `unaudited` | 1502 |
 
 | claim_type | count |
 |---|---:|
@@ -915,7 +915,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11348,19 +11347,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** By Theta-anti-invariance of h, exp(-i c (h(x) + h(Theta x))) = 1, so the symmetrically modified reflected expectation equals the original RP norm-square.  _(class `A`)_
 - **chain closes:** True — The cited authority is retained_bounded and supplies the reflected-expectation norm-square identity. The added CP-odd phase cancels pointwise under the stated Theta-anti-invariance, so the no-go closes within the narrowed half-square RP scope.
 - **rationale:** The proof is a direct algebraic closure over the retained upstream identity: h(Theta x) = -h(x) cancels the symmetric phase, and reflection-Hermiticity makes F(Theta x)F(x) a norm-square factor. The runner source genuinely computes the finite-carrier identities with sympy/numpy and does not hard-code contested constants or import external comparators. The no-go gate passes at this packet scope: attacks via non-Hermitian observables, non-anti-invariant h, fixed points, carrier extension, single-side phases, and real-action admissibility either fail by the stated algebra or fall outside the narrowed operational claim. The clean verdict is only for the half-square RP detection failure, not for full continuum theta physics or independent action-class admissibility.
-- **auditor confidence:** high
-
-### `strong_cp_theta_zero_note`
-
-- **Note:** [`STRONG_CP_THETA_ZERO_NOTE.md`](../../docs/STRONG_CP_THETA_ZERO_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the explicitly θ-free Wilson-plus-staggered scalar-mass retained action surface and its internal determinant, axial, effective-action, and positive-weight checks.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260505-033337-de2b049d-strong_cp_theta_zero_not-019`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The decisive step is action-surface selection: no bare θ slot is present and the quark-mass surface is explicitly real positive, so θ_bare = 0 and arg det(M_u M_d) = 0 on that selected surface.  _(class `E`)_
-- **chain closes:** False — The internal checks close for the selected θ-free, real-positive-mass surface, but the restricted packet does not derive that this is the physically forced Cl(3)/Z^3 action surface. The missing step is an operator-basis/action-surface theorem forbidding an admissible CP-odd F̃F slot and fixing the positive real mass orientation.
-- **rationale:** The runner genuinely computes several retained-surface consistency checks, including determinant positivity, axial-grid behavior, effective-action reality, and sampled θ-sum positivity. However, the load-bearing θ_eff = 0 step uses the θ-free action-class definition and an explicit positive real mass surface as premises rather than deriving them from the provided axiom packet. The note itself correctly narrows the claim to a bounded conditional action-surface closure, so the appropriate verdict is conditional rather than failed or clean.
 - **auditor confidence:** high
 
 ### `structured_chokepoint_bridge_extension_note`

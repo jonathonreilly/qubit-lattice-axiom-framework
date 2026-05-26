@@ -77646,14 +77646,14 @@
     },
     "strong_cp_theta_zero_note": {
       "claim_id": "strong_cp_theta_zero_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "ec1dbd767b1a8511d6e59bb9383f33a0be3b5d8482e7d955d5225efb77c0b925",
+      "note_hash": "aa5e267276958a8765e52758016a1267ec95c98d75c59bca27a05d3358ec6882",
       "path": "docs/STRONG_CP_THETA_ZERO_NOTE.md",
       "runner_path": "scripts/frontier_strong_cp_theta_zero.py",
       "title": "Strong CP / \u03b8 = 0 Conditional Action-Surface Closure"
@@ -85455,11 +85455,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 595,
+      "bounded_theorem": 596,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
-      "none": 1454,
+      "none": 1453,
       "open_gate": 49,
       "positive_theorem": 170
     },

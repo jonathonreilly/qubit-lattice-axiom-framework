@@ -1,8 +1,10 @@
 # Vector Sector: Circular Orbit Handedness
 
 **Date:** 2026-04-06
-**Status:** proposed_retained positive — phase-locked handedness (1H amplitude 0.018), not universal DC
-**Claim type:** positive_theorem
+**Status:** bounded support — phase-locked handedness with matched scalar exposure on the audited CCW/CW case
+**Claim type:** bounded_theorem candidate
+**Primary runner:** [`scripts/vector_sector_matched_scalar_exposure_certificate.py`](../scripts/vector_sector_matched_scalar_exposure_certificate.py)
+**Runner cache:** [`logs/runner-cache/vector_sector_matched_scalar_exposure_certificate.txt`](../logs/runner-cache/vector_sector_matched_scalar_exposure_certificate.txt)
 
 **Audit-conditional perimeter (2026-04-27):**
 The current generated audit ledger records this row `audited_conditional` with
@@ -21,18 +23,18 @@ f-oddness clean, time-order non-trivial) reproduced live by the
 registered runner
 [`scripts/vector_sector_circular_orbit.py`](../scripts/vector_sector_circular_orbit.py).
 The matched-scalar-exposure table at f=0.02 in §"Result" is reported
-in the note but is not independently reproduced by the current runner
-output as a labeled column; the §"What this means" framing as a
-"phase-locked first-harmonic handedness signal" is bounded
-interpretation that does not promote to an unqualified retained
+in the note and is now independently reproduced by the 2026-05-26
+companion certificate as a labeled column. The §"What this means"
+framing as a "phase-locked first-harmonic handedness signal" remains
+bounded interpretation and does not promote to an unqualified retained
 vector-sector observable. The supported perimeter is the lock-in
-harmonic protocol and its outputs; bridge-to-retained-vector-sector
-language remains conditional. A future runner-cache deposit
-explicitly logging the matched-exposure column under audit-lane
-runner timeout would close that gap.
+harmonic protocol and the audited matched-exposure CCW/CW case;
+bridge-to-retained-vector-sector language remains conditional.
 
 ## Artifact chain
 
+- [`scripts/vector_sector_matched_scalar_exposure_certificate.py`](../scripts/vector_sector_matched_scalar_exposure_certificate.py)
+- [`logs/runner-cache/vector_sector_matched_scalar_exposure_certificate.txt`](../logs/runner-cache/vector_sector_matched_scalar_exposure_certificate.txt)
 - [`scripts/vector_sector_circular_orbit.py`](../scripts/vector_sector_circular_orbit.py)
 - [`logs/2026-04-06-vector-sector-circular-orbit.txt`](../logs/2026-04-06-vector-sector-circular-orbit.txt)
 - This note
@@ -53,6 +55,14 @@ At f=0.02, R=4.0, s=0.004:
 
 The dz component flips sign between CCW and CW. Scalar exposure is
 exactly matched.
+
+The companion certificate logs the audited values directly:
+
+```text
+CCW: dy=+0.008993011 dz=+0.006964048 avg_inv_r=0.177240525605
+CW:  dy=+0.010404010 dz=-0.008384286 avg_inv_r=0.177240525605
+matched_scalar_exposure_delta=0.000e+00
+```
 
 ### What passes
 

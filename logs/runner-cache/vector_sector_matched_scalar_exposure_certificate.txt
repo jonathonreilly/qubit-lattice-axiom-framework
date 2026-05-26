@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/vector_sector_matched_scalar_exposure_certificate.py
+runner_sha256: 2fe6313737793517bc0e461b61fcef5d26a48ed177b1e378de8d8c643b0a4103
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.53
+status: ok
+----- stdout -----
+VECTOR SECTOR MATCHED SCALAR EXPOSURE CERTIFICATE
+freq=0.020 R=4.000 s=0.004000
+CCW: dy=+0.008993011 dz=+0.006964048 avg_inv_r=0.177240525605
+CW:  dy=+0.010404010 dz=-0.008384286 avg_inv_r=0.177240525605
+matched_scalar_exposure_delta=0.000e+00
+dz_antisymmetry_sum=-1.420e-03
+CERTIFICATE PASS: audited CCW/CW vector-sector case has matched scalar exposure and opposite dz sign
+
+----- stderr -----
+

@@ -224109,24 +224109,39 @@
     "quark_route2_source_domain_bridge_no_go_note_2026-04-28": {
       "audit_date": null,
       "audit_state_snapshot": null,
-      "audit_status": "unaudited",
+      "audit_status": "audit_in_progress",
       "auditor": null,
       "auditor_confidence": null,
       "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": null,
+      "blocker": "awaiting_cross_confirmation",
       "chain_closes": null,
       "chain_closure_explanation": null,
       "claim_id": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
-      "claim_scope": null,
+      "claim_scope": "Scoped no-go over the explicitly configured finite Route-2 support/readout typed-edge inventory plus the SU(3) F_adj=8/9 color-channel scalar denoted R_conn in this packet: the current bank has no typed derivation of gamma_T(center)/gamma_E(center) = -R_conn, while adding that bridge forces beta_E/alpha_E = 21/4. This does not derive the inventory, the T-side candidates, a physical connected-trace selector, quark masses, or any untyped color-endpoint identification.",
       "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-26T19:56:18.831374+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
-      "cross_confirmation": null,
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T19:56:18.831164+00:00",
+          "auditor": "codex-gpt-5.5-fresh-quark-route2-source-domain-bridge-no-go-C75Ktt-2026-05-26-pass1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scoped no-go over the explicitly configured finite Route-2 support/readout typed-edge inventory plus the SU(3) F_adj=8/9 color-channel scalar denoted R_conn in this packet: the current bank has no typed derivation of gamma_T(center)/gamma_E(center) = -R_conn, while adding that bridge forces beta_E/alpha_E = 21/4. This does not derive the inventory, the T-side candidates, a physical connected-trace selector, quark masses, or any untyped color-endpoint identification.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
       "decoration_parent_claim_id": null,
       "deps": [
         "quark_route2_exact_readout_map_note_2026-04-19",
@@ -224134,7 +224149,7 @@
         "rconn_derived_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
@@ -224144,7 +224159,7 @@
         "scripts/frontier_tensor_support_center_excess_law.py"
       ],
       "independence": null,
-      "intrinsic_status": "unaudited",
+      "intrinsic_status": "audit_in_progress",
       "load_bearing_score": 10.439,
       "load_bearing_step": null,
       "load_bearing_step_class": null,

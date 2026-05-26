@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 191 |
 | critical | `unaudited` | 156 |
-| medium | `unaudited` | 103 |
+| medium | `unaudited` | 102 |
 | critical | `audited_conditional` | 12 |
 | high | `audited_conditional` | 6 |
 | high | `audited_numerical_match` | 3 |
@@ -29,7 +29,7 @@ publication tables phrase it.
 | medium | `audited_conditional` | 2 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 480
+**Total non-retained-grade rows in publication tables:** 479
 
 ## Per-row breakdown
 
@@ -497,7 +497,6 @@ publication tables phrase it.
 | medium | `tensor_matching_completion_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `tensor_scalar_ratio_consolidation_theorem_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `tensor_source_map_eta_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `translation_abelian_composition_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `translation_covariance_local_op_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `u1_fermion_number_conservation_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `universal_gr_block_constraint_interpretation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 463 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
@@ -47,7 +47,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
-| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 1 |
+| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 2 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
 
@@ -55,20 +55,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 748 |
 | `audited_conditional` | 98 |
-| `audited_decoration` | 43 |
+| `audited_decoration` | 44 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1459 |
+| `unaudited` | 1458 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1058 |
-| `decoration` | 44 |
+| `decoration` | 45 |
 | `meta` | 234 |
 | `no_go` | 247 |
 | `open_gate` | 112 |
-| `positive_theorem` | 729 |
+| `positive_theorem` | 728 |
 
 | criticality | count |
 |---|---:|
@@ -996,6 +996,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `multisite_pauli_group_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
@@ -8277,6 +8278,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The cache-reader opens the three cited authority caches and prints the retained rows side-by-side without asserting any cross-lane retained winner ranking.  _(class `B`)_
 - **chain closes:** True — The restricted packet includes retained-grade cited authorities and runner source showing the primary runner reads the cited caches and fails if required rows or FAIL markers are missing. The narrowed claim is only cache transcription, so no missing cross-lane bridge theorem is needed.
 - **rationale:** All cited authorities are retained_bounded, and the source note no longer asserts the earlier cross-lane ranking or purity-to-purity comparison. The runner source is a cache-reader rather than a first-principles computation, but that matches the narrowed load-bearing claim: it verifies rows against one-hop registered caches and exits nonzero if required rows are absent. The conclusion follows from the cited retained inputs as a bounded transcription note.
+- **auditor confidence:** high
+
+### `momentum_charge_commute_theorem_note_2026-05-02`
+
+- **Note:** [`MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** On the retained finite tensor-product translation surface, Q_total commutes with tensor-permutation translations and with finite-block spectral generators K_mu that are functions of axial translation unitaries.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260526T015812Z-eac1bfbc-momentum_charge_commute_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because [T,Q_total]=0, Q_total preserves every eigenspace of T, so each spectral projector Pi_theta and hence K_mu = sum_theta theta Pi_theta commute with Q_total.  _(class `A`)_
+- **chain closes:** True — The cited bridge is explicitly retained and supplies [T_a,Q_total]=0 on the same finite tensor-product surface. The spectral-generator corollary follows by finite-dimensional spectral calculus for a normal unitary commuting with Q_total.
+- **rationale:** The note makes no new physics import beyond the retained tensor-product translation bridge and standard finite-dimensional spectral theory. Its load-bearing work is algebraic closure: commuting normal unitaries have commuting spectral projectors, so functions of those unitaries commute with Q_total. The runner substantively checks the same finite-matrix commutators and includes one bookkeeping retained-status check; it does not use external comparators or tuned numerical inputs. Under the tie-break rule, this is a decoration of a single retained parent rather than a standalone clean theorem.
+- **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
 - **auditor confidence:** high
 
 ### `moonshot_other_testables_note`

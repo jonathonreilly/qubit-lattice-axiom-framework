@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 191 |
 | critical | `unaudited` | 156 |
-| medium | `unaudited` | 104 |
+| medium | `unaudited` | 103 |
 | critical | `audited_conditional` | 12 |
 | high | `audited_conditional` | 6 |
 | high | `audited_numerical_match` | 3 |
@@ -29,7 +29,7 @@ publication tables phrase it.
 | medium | `audited_conditional` | 2 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 481
+**Total non-retained-grade rows in publication tables:** 480
 
 ## Per-row breakdown
 
@@ -469,7 +469,6 @@ publication tables phrase it.
 | medium | `lepton_charge_universality_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `mass_mixing_subspace_disjointness_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | medium | `meson_charges_from_quark_y_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `momentum_charge_commute_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_majorana_algebraic_bridge_obstruction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_majorana_no_stationary_scale_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_retained_lanes_note_2026-04-16` | `unaudited` | `unaudited` | PUBLICATION_MATRIX.md |

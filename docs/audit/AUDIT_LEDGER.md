@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 480 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1262 |
+| unaudited | 1261 |
 | meta | 229 |
-| ~~audited_numerical_match~~ | 12 |
+| ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 2 |
@@ -57,9 +57,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 48 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
-| `audited_numerical_match` | 12 |
+| `audited_numerical_match` | 13 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1491 |
+| `unaudited` | 1490 |
 
 | claim_type | count |
 |---|---:|
@@ -1035,6 +1035,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -3400,6 +3401,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Multiplying Y(delta) by its adjoint gives the displayed H_e entries, and since all x_i,y_i are real, replacing delta by -delta is exactly entrywise complex conjugation of the Hermitian block.  _(class `A`)_
 - **chain closes:** True — The bounded formal claim closes directly from the supplied fixed-chart Y(delta) and ordinary matrix multiplication. No reduced N_e surface authority, favored-column closure, eta normalization, relative-action selector, KKT branch classification, branch minimality, leptogenesis abundance, physical PMNS column selection, or full PMNS-assisted leptogenesis selector is audited or ratified.
 - **rationale:** The runner is not merely a text checker: it constructs symbolic Y(delta), computes Y Y^dagger with Sympy, checks the displayed matrix, Hermiticity, parity under delta -> -delta, and representative conjugation-invariant readouts. Its nine source-note boundary checks only guard the narrowed scope and are not load-bearing algebra. With direct dependencies empty and the physical selector conclusions withdrawn from the binding claim, the fixed-chart algebraic theorem is clean only at the bounded formal scope stated above.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional numerical source selection from the imported I_seed objective on the fixed N_e seed surface, constrained by eta_i*/eta_obs = 1; not a baseline derivation of the selector.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-dm-pmns-mininfo-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given the imported information-geometric selector I_seed and the transport-favored column i_* identified by sister theorems, minimize I_seed over positive off-seed sources on the fixed native N_e seed surface subject to eta_i*/eta_obs = 1, yielding a unique stationary point with the reported values.  _(class `G`)_
+- **chain closes:** False — The runner imposes eta_i*/eta_obs = 1 as a constraint and finds one SLSQP solution with finite cost, so the exact closure is calibrated into the optimization problem. The restricted packet does not prove the stated uniqueness/global stationary classification or supply a one-hop authority for the favored-column/stationary-branch theorem; the supplied dependency explicitly excludes KKT branch classification and favored-column closure.
+- **rationale:** The bounded framing honestly admits that I_seed is imported, but the retained claim still says the constrained problem has a unique stationary point on the exact closure manifold. The primary runner hard-codes the seed surface and eta_obs target, constrains eta_i*/eta_obs to equal 1, and verifies one numerical optimizer output; it does not prove global uniqueness, stationarity, or minimality. The direct dependency note currently retained for this path is only a fixed-chart Hermitian-block parity theorem and explicitly says favored-column closure, eta normalization, KKT branch classification, and stationary-branch minimality are outside its theorem. The safe reduced result is therefore a calibrated numerical constrained-optimization sample, not a clean retained bounded theorem.
+- **open / conditional deps cited:**
+  - `DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`

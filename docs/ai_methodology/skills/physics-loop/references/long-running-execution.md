@@ -57,7 +57,7 @@ Checkpoint:
 - at least once per checkpoint interval;
 - before any authorized campaign stop.
 
-Each checkpoint updates `STATE.yaml` and `HANDOFF.md` with:
+Each checkpoint updates `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` with:
 
 - current cycle and route;
 - current science block and branch;
@@ -65,6 +65,7 @@ Each checkpoint updates `STATE.yaml` and `HANDOFF.md` with:
 - files changed;
 - commands run and results;
 - imports retired/exposed;
+- trace-gate classification and reachability to any known blocker;
 - review findings;
 - PR status for the block;
 - next exact action;
@@ -103,7 +104,8 @@ finished or blocked.
 
 When a block reaches a local stop:
 
-1. update `CLAIM_STATUS_CERTIFICATE.md` and demote any unsafe wording, using
+1. update `CLAIM_STATUS_CERTIFICATE.md` and `TRACE_GATE.md`, then demote any
+   unsafe wording, using
    `proposed_retained` / `proposed_promoted` only for audit-ready author
    proposals and never as audit-ratified status;
 2. run the smallest relevant checks;
@@ -142,9 +144,9 @@ missed blocks, unless `--no-pr` was supplied:
 3. Open one PR per block with `gh pr create`.
 4. Base independent block PRs on `main`; base dependent block PRs on the prior
    block branch and mark them as stacked.
-5. Include links to `HANDOFF.md`, `REVIEW_HISTORY.md`, theorem notes, runners,
-   logs, verification commands/results, imports retired/exposed, and remaining
-   blockers.
+5. Include links to `HANDOFF.md`, `TRACE_GATE.md`, `REVIEW_HISTORY.md`,
+   theorem notes, runners, logs, verification commands/results, imports
+   retired/exposed, trace reachability, and remaining blockers.
 6. Label or title the PR for review backlog, e.g.
    `[physics-loop][review-loop] <slug> block NN: <honest status>`.
 7. Never merge the PR. The review-loop/backpressure process decides landing.

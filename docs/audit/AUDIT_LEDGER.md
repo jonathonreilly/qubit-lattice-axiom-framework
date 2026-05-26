@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 163 |
-| **retained_bounded** | 470 |
+| **retained_bounded** | 471 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1279 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 755 |
+| `audited_clean` | 756 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `g_bare_two_ward_closure_note_2026-04-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -330,6 +327,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_bare_two_ward_closure_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -4334,6 +4332,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given the admitted Wilson plaquette action and canonical generators with Tr(T_a T_b)=delta_ab/2, the small-a matching gives beta=2 N_c/g^2; in the canonical Cl(3)-normalized basis scalar generator dilation is not admissible, so g=1 and beta=6 for SU(3).  _(class `A`)_
 - **chain closes:** True — The direct dependencies supplied in the packet are retained-grade or retained_bounded, and the note explicitly treats the Wilson action form and kinetic matching convention as admitted bounded premises rather than hidden derivations. Within that admitted surface, the trace-Gram/scalar-dilation and Wilson-coefficient steps close without importing a downstream plaquette-evaluation result.
 - **rationale:** The source does not inflate the result into a full dynamical derivation: it repeatedly preserves the bounded Wilson-action/canonical-normalization scope and names the action-choice gap. The runner cache is current and clean, with exact PASS=59, bounded PASS=2, total PASS=61, FAIL=0; the bounded PASS lines mark the admitted Wilson/action-form and upstream structural inputs rather than hiding them. The runner checks the load-bearing algebraic chain, including canonical Gram rigidity, scalar-dilation failure, the Wilson small-a coefficient, and beta=2 N_c/g^2 leading to beta=6 at canonical g=1. No open one-hop dependency or downstream circular beta input is needed for the scoped claim.
+- **auditor confidence:** high
+
+### `g_bare_two_ward_closure_note_2026-04-18`
+
+- **Note:** [`G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`](../../docs/G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Ward-route algebra on the retained Q_L block: given the retained_bounded Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity, including its H_unit-residue admission, the unique positive bare coupling is g_bare = 1 at N_c = 3. This does not assert an admission-free physical coupling, SM top-Yukawa readout, continuum limit, Wilson-action choice, or phenomenological normalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-g-bare-two-ward-closure-second-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substitute F_Htt^(0)(g_bare) = 1/sqrt(6) into F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c) with N_c = 3, giving g_bare^2 = 1 and the positive-branch solution g_bare = 1.  _(class `A`)_
+- **chain closes:** True — The chain closes only at bounded-theorem scope. The local algebra follows from retained_bounded one-hop authorities, but the H_unit-residue admission inherited through the same-1PI pinning input prevents honest classification as an unbounded positive theorem.
+- **rationale:** As a positive_theorem the note would overclaim: every load-bearing authority in the packet is retained_bounded, and the same-1PI pinning input carries the H_unit-residue admission. After narrowing to bounded_theorem scope, the closure is a genuine class-A algebraic consequence of the retained_bounded Ward inputs. The runner supports the arithmetic and checks textual presence of the Ward/pinning premises, but it does not independently derive the H_unit-residue exhaustion bridge.
 - **auditor confidence:** high
 
 ### `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19`

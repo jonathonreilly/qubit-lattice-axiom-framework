@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 250,
+    "critical": 249,
     "high": 359,
     "leaf": 327,
     "medium": 334
@@ -52,33 +52,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hypercharge_identification_note",
-      "claim_scope": "Bounded chain-assembly theorem only: given the retained graph-first selected-axis SU(3) commutant surface, the retained/decorated Sym^2/Anti^2 eigenvalue ratio 1:(-3), the imported LHCM Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with quark/lepton labels only under the stated SM-definition convention, and the audited bounded alpha=1/3 normalization bridge with its admitted GMN/electron-charge readout premises, the LH-doublet surface has Y(Q_L)=+1/3 and Y(L_L)=-1 and the displayed GMN charge table follows. This does not internally derive matter assignment, physical hypercharge, alpha=1/3, GMN Q=T3+Y/2, electroweak matching beyond the LH-doublet surface, anomaly cancellation, or a full SM spectrum.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.299,
-      "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hypercharge_identification.py",
-      "transitive_descendants": 629
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -260,6 +233,32 @@
       "ready": true,
       "runner_path": "scripts/frontier_staggered_17card_finite_scope_repair.py",
       "transitive_descendants": 280
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "hypercharge_identification_note",
+        "graph_first_su3_integration_note",
+        "native_gauge_closure_note"
+      ],
+      "direct_in_degree": 21,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 18.5,
+      "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
+      "transitive_descendants": 255
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5988,32 +5987,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/verify_cl3_sm_embedding.py",
-      "transitive_descendants": 255
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hypercharge_identification_note",
-        "graph_first_su3_integration_note",
-        "native_gauge_closure_note"
-      ],
-      "direct_in_degree": 21,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.5,
-      "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
       "transitive_descendants": 255
     },
     {
@@ -38074,5 +38047,5 @@
     }
   ],
   "ready_count": 70,
-  "total_pending": 1270
+  "total_pending": 1269
 }

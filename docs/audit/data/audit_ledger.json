@@ -196786,24 +196786,34 @@
       "verdict_rationale": null
     },
     "pl_topology_infrastructure_textbook_import_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-26T19:25:11.724360+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.459,
+        "runner_hash": "6ad8b46f3967deabcb6849ebe251c4ce4567a3dafe06b3c3a879c7e108c78d49",
+        "transitive_descendants": 703
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-pl-topology-cone-cap-second-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note's narrowed claim is exactly the finite construction checked by the runner. There are no direct dependencies, and the runner constructs the finite complexes from R, counts the relevant faces/edges/tetrahedra, checks the apex link and Euler characteristics, and also checks that the note boundary withdraws the prior external PL-topology and physical-closure imports.",
       "claim_id": "pl_topology_infrastructure_textbook_import_note_2026-05-17",
-      "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only.",
+      "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T19:21:32.024640+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-26T19:25:11.724360+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -196818,25 +196828,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-26T19:25:11.723998+00:00",
+          "auditor": "codex-gpt-5.5-fresh-pl-topology-cone-cap-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.459,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For each checked radius R = 2, 3, 4, the runner constructs the declared cubical boundary triangulation and cone-cap complex and verifies the five listed finite combinatorial properties.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "72c1a61edf8d6220b4a61a69d0cf5aec0d86bd20d6fc1cbc878a6f540aef340e",
       "note_path": "docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if downstream text cites this row for arbitrary cap classification, PL-homeomorphism uniqueness, S^3 compactification, Kawamoto-Smit homogeneity, or physical closure rather than the finite R = 2, 3, 4 certificate.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -196882,18 +196903,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 36,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 36
       },
       "runner_path": "scripts/frontier_pl_topology_finite_cone_cap_certificate.py",
       "title": "PL-Topology Infrastructure \u2014 Finite Cone-Cap Boundary Certificate",
       "transitive_descendants": 703,
-      "verdict_rationale": null
+      "verdict_rationale": "The current note no longer imports PL Schoenflies, homogeneity, every-cap-homeomorphic closure, S^3 compactification, or physical closure as load-bearing conclusions. The executable evidence is bounded to R = 2, 3, 4 and verifies only finite combinatorial identities for the declared cubical-boundary cone-cap construction. This is clean as a bounded finite certificate, but it must not be cited as a general PL topology theorem or as a physical compactification theorem."
     },
     "planck_boundary_density_extension_theorem_note_2026-04-24": {
       "audit_date": null,

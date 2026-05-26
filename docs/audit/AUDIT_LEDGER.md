@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 163 |
-| **retained_bounded** | 472 |
+| **retained_bounded** | 473 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
 | unaudited | 1276 |
-| audit_in_progress | 1 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 17 |
@@ -54,8 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 757 |
+| `audited_clean` | 758 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
@@ -126,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -619,6 +616,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_sidebit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `physical_lattice_necessity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `planck_boundary_orientation_incidence_no_go_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_finite_response_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_parent_source_hidden_character_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -8889,6 +8887,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For positive real x and y, (x/y)^16=1 implies x/y=1; combined with x/y^2=1 this gives y=1, x=1, hence beta=6 and u_0=u_0_can using x=6/beta.  _(class `A`)_
 - **chain closes:** True — Within the stated positive canonical branch, the two invariant equations are sufficient and overdetermine the one-parameter deformation. The even-power ambiguity is removed by positivity, division by y is valid because y is positive, and Wilson alpha_bare(beta)=3/(2 pi beta) gives x=alpha_bare(beta)/alpha_bare(6)=6/beta, so x=1 exactly fixes beta=6 while y=1 fixes u_0=u_0_can.
 - **rationale:** The audited claim is clean under the narrowed boundary because the load-bearing content is finite real algebra over explicitly positive normalized variables. No substrate semantics, continuum claim, species identification, or general regulator no-go is needed. The exclusion list prevents the wider architectural commentary from carrying theorem weight. Residual risk is only boundary discipline: the result remains a rigidity theorem for the specified two normalized invariants on the retained Wilson/canonical surface, not a theorem of physical-lattice necessity in any broader semantic or regulator-universal sense.
+- **auditor confidence:** high
+
+### `pl_topology_infrastructure_textbook_import_note_2026-05-17`
+
+- **Note:** [`PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-pl-topology-cone-cap-second-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For each checked radius R = 2, 3, 4, the runner constructs the declared cubical boundary triangulation and cone-cap complex and verifies the five listed finite combinatorial properties.  _(class `A`)_
+- **chain closes:** True — The note's narrowed claim is exactly the finite construction checked by the runner. There are no direct dependencies, and the runner constructs the finite complexes from R, counts the relevant faces/edges/tetrahedra, checks the apex link and Euler characteristics, and also checks that the note boundary withdraws the prior external PL-topology and physical-closure imports.
+- **rationale:** The current note no longer imports PL Schoenflies, homogeneity, every-cap-homeomorphic closure, S^3 compactification, or physical closure as load-bearing conclusions. The executable evidence is bounded to R = 2, 3, 4 and verifies only finite combinatorial identities for the declared cubical-boundary cone-cap construction. This is clean as a bounded finite certificate, but it must not be cited as a general PL topology theorem or as a physical compactification theorem.
 - **auditor confidence:** high
 
 ### `planck_boundary_orientation_incidence_no_go_note_2026-04-30`

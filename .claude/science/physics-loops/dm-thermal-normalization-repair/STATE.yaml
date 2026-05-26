@@ -13,7 +13,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 runtime_request: 12h campaign
 cycle_block: DM thermal normalization repair
-pr_status: pending
+pr_status: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1941
 open_imports:
   - "Independent audit must decide whether narrowing to normalization algebra closes the former textbook-import blocker."
 no_go_routes:

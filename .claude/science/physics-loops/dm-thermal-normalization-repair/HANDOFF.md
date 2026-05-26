@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1941
 
 This block repairs `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17`
 by narrowing it to a runner-backed normalization packet.

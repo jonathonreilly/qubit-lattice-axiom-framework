@@ -4887,14 +4887,14 @@
     "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
+        "A": 10,
+        "B": 1,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py"
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_dm_pmns_he_parity_repair.py"
     },
     "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16": {
       "assert_count": 1,
@@ -34208,21 +34208,6 @@
       "dominant_class": "B",
       "exists": true
     },
-    "scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py": {
-      "assert_count": 1,
-      "claims": [
-        "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true
-    },
     "scripts/frontier_dm_leptogenesis_pmns_breaking_triplet_source_law.py": {
       "assert_count": 1,
       "claims": [
@@ -36142,6 +36127,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_dm_pmns_he_parity_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+      ],
+      "counts": {
+        "A": 10,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_dm_pmns_local_selector_family_no_go_theorem_2026_04_20.py": {
@@ -55549,16 +55549,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 330,
+    "decoration_candidates": 331,
     "dominant_class_distribution": {
-      "A": 233,
+      "A": 234,
       "B": 278,
-      "C": 751,
+      "C": 750,
       "D": 299,
       "none": 436
     },
     "runners_classified": 1997,
-    "runners_with_C": 973,
+    "runners_with_C": 972,
     "runners_with_D": 583
   }
 }

@@ -1,116 +1,112 @@
-# Higgs Mechanism Note
+# Higgs Mechanism Formal Quartic Algebra Note
 
-**Date:** 2026-04-15 (2026-05-18: claim_scope narrowed to conditional
-mechanism-level consistency per audit verdict boundary instruction;
-2026-05-25: previously-enumerated residuals collapsed to a single
-admitted scalar/CW/bare-parameter bridge per the per-site audit N1/N2
-verdict).
-**Status:** mechanism-level support only
+**Date:** 2026-04-15; formal quartic-algebra repair 2026-05-25
+**Status:** bounded-support formal scalar-potential algebra. No
+framework-native scalar substrate, Coleman-Weinberg derivation,
+bare-parameter derivation, or Higgs-mass prediction is part of the binding
+theorem.
 **Claim type:** bounded_theorem
-**Claim scope (post-2026-05-25 consolidation):** the load-bearing
-content of this note is **conditional mechanism-level consistency
-only** — assuming the single admitted scalar/CW/bare-parameter bridge
-(see "Single Admitted Bridge" section below), the bounded runner
-supports lattice Coleman-Weinberg electroweak symmetry breaking for
-`O(1)` comparison inputs. The bounded-consistency claim is restricted
-to comparison of imported `lambda` and `m^2` values against runner
-output; it is **not** a derivation of those values from Cl(3)/Z^3.
-This note **does NOT** claim that the Higgs mechanism is derived as an
-audited theorem from the framework axioms. Authority for any specific
-Higgs-mass numerical readout is delegated to
-`HIGGS_MASS_DERIVED_NOTE.md` (see-also delegation pointer; backticked to
-break cycle-0030 in the citation graph — load-bearing citation direction is
-*higgs_mass_derived_note → this_mechanism_note*, as recorded in the
-"Audit dependency repair links" section below and consistent with the
-derived-mass authority's own "Supporting Higgs surfaces" listing of this
-note), with its own
-admissions; this note exists only to record the mechanism-level
-support surface.
+**Primary runner:** `scripts/frontier_higgs_quartic_mechanism_algebra_repair.py`
 **Status authority:** independent audit lane only.
-**Primary runner:** `scripts/frontier_higgs_mass_derived.py`
 
-## Authority Rule
+## Actual claim
 
-Use `HIGGS_MASS_DERIVED_NOTE.md` for the current
-Higgs authority boundary. This note exists only to support the mechanism-level
-claim.
+Let `r >= 0` be a formal radial scalar coordinate and let
 
-## Safe Statement
+```text
+V(r) = (1/2) m2 r^2 + (1/4) lambda r^4
+```
 
-The current package supports the following mechanism-level claims,
-conditional on the single admitted bridge enumerated below:
+with `lambda > 0`.
 
-- the lattice admits a scalar order-parameter surface relevant to EWSB
-  (carrier identification admitted, not derived in this packet)
-- lattice Coleman-Weinberg electroweak symmetry breaking occurs naturally for
-  `O(1)` comparison inputs on the current bounded runner
-- the physical lattice cutoff removes the continuum quadratic-divergence
-  naturalness story as the organizing Higgs problem
+This note proves only the standard finite-dimensional algebra of this
+admitted quartic potential:
 
-## Single Admitted Bridge
+- if `m2 >= 0`, the unique global minimum on `r >= 0` is `r = 0`;
+- if `m2 < 0`, the unique nonzero minimizing radius is
+  `v = sqrt(-m2 / lambda)`;
+- at that broken-radius minimum,
+  `V(v) = -m2^2 / (4 lambda) < V(0)`;
+- the radial curvature is
+  `d^2 V / dr^2 |_{r=v} = -2 m2 = 2 lambda v^2 > 0`.
 
-Per the 2026-05-22 per-site audit verdict (N1/N2 No-Go Discipline
-gate), the previously-enumerated residual obstructions
-(scalar-order-parameter derivation; Coleman-Weinberg potential bridge;
-EWSB-from-Cl(3)/Z^3 chain; framework-native derivation of
-`lambda(M_Pl) = 0`; exact `m_H = 125 GeV` closure) are **not**
-independent walls. They collapse to a single admitted bridge:
+That formal quartic-potential mechanism is the entire repaired theorem.
 
-- **scalar potential / Coleman-Weinberg / bare-parameter substrate
-  (Cl(3)/Z^3 derivation not provided in this packet).** The runner
-  assumes the Higgs-field variable and imports comparison inputs
-  including `lambda` and `m^2` as bare values. Until this single
-  bridge is derived as a retained-grade theorem, every named residual
-  above remains open by construction, and the mechanism-level claim
-  is conditional on the bridge.
+## Why this repair is narrow
 
-This consolidation is bookkeeping only; it does not promote any claim
-or change the audited scope.
+The prior conditional audit asked for a derivation of the
+scalar-potential / Coleman-Weinberg / bare-parameter substrate from the
+framework. This repair does not supply that missing physical bridge.
 
-## Boundary
+Instead, it withdraws the framework-derivation and numerical-Higgs content from
+this row. The binding claim is only the exact algebra that follows once the
+quartic potential is already admitted.
 
-This note does **not** claim exact Higgs-mass closure, and the
-bounded-consistency claim is **restricted to comparison** of imported
-`lambda` and `m^2` against runner output (not a derivation of those
-values from Cl(3)/Z^3).
+## Theorem
 
-It supports, conditional on the single admitted bridge above:
+**Theorem.** For `lambda > 0`, the potential
 
-- a mechanism-level Higgs route consistent with bounded CW EWSB
-- hierarchy problem structurally ameliorated by the physical lattice cutoff
+```text
+V(r) = (1/2) m2 r^2 + (1/4) lambda r^4
+```
 
-It does not support (all collapsing to the single admitted bridge):
+on `r >= 0` has the following global-minimum structure.
 
-- exact `m_H = 125 GeV`
-- a theorem-grade closure of the Higgs route from the framework axioms
-- a framework-native derivation of `lambda(M_Pl) = 0`. File pointers
-  for the open-gate context (not dependency edges): the cycle-20
-  stretch attempt at `docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md`,
-  and the open-gate audit recorded at
-  `docs/VACUUM_CRITICAL_STABILITY_NOTE.md`. Downstream notes consume
-  `lambda(M_Pl) = 0` as admitted-context literature-standard input on
-  equal footing with Buttazzo / Degrassi SM analyses.
+If `m2 >= 0`, then `V(r) >= 0 = V(0)` for all `r >= 0`, so the unbroken
+minimum is `r = 0`.
 
-<!--
-Cycle-break (2026-05-06): the "Audit dependency repair links" back-edge
-to `HIGGS_MASS_DERIVED_NOTE.md` was removed because the derived-mass
-authority note already cites this mechanism note as a Supporting Higgs
-surface ("mechanism-level support"). Retaining the bookkeeping back-link
-produced cycle-0047 in the citation graph
-(`docs/audit/data/cycle_inventory.json`). File pointer:
-`HIGGS_MASS_DERIVED_NOTE.md`.
--->
+If `m2 < 0`, the stationary equation is
 
-## Audit dependency repair links
+```text
+dV/dr = r (m2 + lambda r^2) = 0.
+```
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+The nonzero stationary radius is
 
-- `higgs_mass_derived_note`
-  (see-also cross-reference; backticked to break cycle-0001 in the citation
-  graph. This note is the upstream mechanism-level support surface for the
-  derived-mass authority, and `HIGGS_MASS_DERIVED_NOTE.md` cites it as a
-  "Supporting Higgs surface" in its own body. The load-bearing citation
-  direction is *higgs_mass_derived_note → this_mechanism_note*, not vice
-  versa.)
-- `VACUUM_CRITICAL_STABILITY_NOTE.md`
-  (see-also cross-reference; backticked to break cycle-0026 / cycle-0027 / cycle-0038 / cycle-0039 — VACUUM_CRITICAL_STABILITY_NOTE.md is named here as a graph-bookkeeping repair link only, not as a load-bearing input; this note's body itself already backticks the same file pointer at the cycle-20 stretch-attempt context paragraph)
+```text
+v^2 = -m2 / lambda.
+```
+
+Since `lambda > 0`, the potential tends to `+infinity` as `r -> infinity`.
+The nonzero stationary point has value
+
+```text
+V(v) = (1/2)m2(-m2/lambda) + (1/4)lambda(m2^2/lambda^2)
+     = -m2^2 / (4 lambda) < 0 = V(0),
+```
+
+so it is the global minimum on `r >= 0`. Its radial curvature is
+
+```text
+d^2V/dr^2 |_{r=v} = m2 + 3 lambda v^2 = -2 m2 = 2 lambda v^2 > 0.
+```
+
+QED.
+
+## What this row does not claim
+
+- It does not derive the scalar field, scalar order parameter, or Higgs carrier
+  from the framework.
+- It does not derive a Coleman-Weinberg effective potential from the framework.
+- It does not derive `lambda`, `m2`, a Planck-scale boundary value, or a bare-parameter substrate.
+- It does not compute or predict `m_H = 125 GeV`.
+- It does not use observed masses, PDG constants, threshold corrections, or fitted selectors.
+- It does not add an axiom or apply an audit verdict.
+
+The physical bridge from this formal quartic-potential algebra to a
+framework-native Higgs mechanism remains a separate open science problem.
+
+## Verification
+
+Run:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_higgs_quartic_mechanism_algebra_repair.py
+```
+
+Expected result:
+
+```text
+Higgs formal quartic mechanism algebra repair
+TOTAL: PASS=29 FAIL=0
+```

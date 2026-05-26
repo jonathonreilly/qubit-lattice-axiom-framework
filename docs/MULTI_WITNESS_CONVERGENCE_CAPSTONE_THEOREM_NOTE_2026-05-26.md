@@ -56,36 +56,57 @@ structure:
   N=3; (b) is the closed form that lifts the value to all N.
 - **W2.** Bernoulli polynomial difference
   `B_2(0) - B_2(1/N) = (N - 1)/N²`.
-- **W3.** Hurwitz zeta special value at `s = −1`:
-  `2·(ζ_H(−1, 1/N) − ζ_H(−1, 1)) = (N − 1)/N²` via the
-  Bernoulli-Hurwitz identity `ζ_H(−n, q) = −B_{n+1}(q)/(n+1)`.
-  **NOT fully independent of W2**: W2 and W3 are dual perspectives on
-  the same arithmetic identity via the Bernoulli-Hurwitz duality (see
-  the W3 detailed section below for full disclosure).
+- **W3.** Hurwitz zeta special value at `s = −1`, computed via the
+  **Fourier sum** from the Hurwitz functional equation:
+  `ζ_H(−1, q) = −(1/(2π²)) · Σ_{n=1}^∞ cos(2πnq)/n²`. So
+  `2·(ζ_H(−1, 1/N) − ζ_H(−1, 1)) = (N − 1)/N²`. The algorithm uses
+  harmonic analysis on the circle; no Bernoulli polynomial appears
+  in the computation. **However, by the Hurwitz functional equation
+  (a known theorem), this Fourier sum equals the Bernoulli-Hurwitz
+  closed form `−B_2(q)/2`, so W3 and W2 evaluate the SAME identity
+  via algorithmically distinct routes.** They are one mathematical
+  content with two algorithmic perspectives, not two independent
+  witnesses (see the W3 detailed section below).
 - **W4.** Fisher information of the uniform distribution `u_N` on N
   outcomes: diagonal of the Fisher metric, with the selection
   principle (retained_bounded for N=3) establishing `u_N` as the
   unique attractor of the framework's retained native dynamics.
 - **W5.** Z_N CFT orbifold twist weights `2·h_{τ_1}` at the lowest
   twist sector.
-- **W6.** Burnside / equivariant K-theory: rank-difference / |G|²
-  on the regular representation.
+- **W6.** Burnside / character theory: `(rank(regular rep) − rank(trivial rep))/|G|² = (N−1)/N²`.
+  **Equivalent to W1.b (equivariant K-theory augmentation-ideal
+  rank)**: both compute the same quantity in finite-group representation
+  theory; the runner separates them as historical labels but the
+  calculation is literally identical. Not an independent witness; one
+  mechanism in two notations.
 
 This capstone theorem states the **convergence claim** these six
 witnesses make in a single audit-row: that the value `(N - 1)/N²`
 is **one structural invariant** in multiple algebraic frames, not
 a numerical coincidence across unrelated mathematical spaces.
 
-**Honest disclosure about independence:** of the six witnesses,
-W2 (Bernoulli polynomial) and W3 (Hurwitz zeta special value at
-`s = −1`) are connected by the Bernoulli-Hurwitz identity
-`ζ_H(−n, q) = −B_{n+1}(q)/(n+1)` and should be counted as two
-perspectives on a single arithmetic identity, not as fully-
-independent witnesses. The *algebraically distinct* frames are
-five: (W1 K-theory / spectral asymmetry), (W2 + W3 arithmetic),
-(W4 Fisher / information geometry), (W5 CFT twist), (W6
-character-theoretic rank). All five distinct frames produce the
-same `(N − 1)/N²`, which remains a strong cross-mechanism agreement.
+**Honest disclosure about independence:** the runner implements six
+witness functions, but they realize only **four mathematically
+distinct identities** for `(N − 1)/N²`:
+
+| # | Mathematical identity | Algorithmic perspectives implemented |
+|---|---|---|
+| 1 | Representation theory of Z_N | **W1.a** (APS-η spectral sum via cyclotomic, PR #1961) ≡ **W1.b** (equivariant K-theory augmentation rank) ≡ **W6** (Burnside character theory) — all the same quantity by equivariant Lefschetz / character theory. Three lenses; one identity. |
+| 2 | Bernoulli polynomial / Hurwitz zeta at `s = −1` | **W2** (polynomial algebra: `B_2(0) − B_2(1/N)`) ≡ **W3** (harmonic analysis: Fourier sum from Hurwitz functional equation) — same value by Hurwitz functional equation theorem. Two distinct algorithms; one identity. |
+| 3 | Probability / information geometry | **W4** (variance of Bernoulli(1/N), or Fisher diagonal at `u_N`). |
+| 4 | Z_N orbifold CFT | **W5** (lowest twist conformal weight `2·h_{τ_1} = (N−1)/N²`). |
+
+So the strict count is **four distinct mathematical identities**
+producing the same rational `(N − 1)/N²` — not six. The "six
+witnesses" label tracks six algorithmic perspectives; the structural
+identity claim is that **four distinct mathematical frames**
+(representation theory, Bernoulli/Hurwitz arithmetic, probability
+/ information geometry, CFT) converge on the same number. Four-way
+convergence across distinct mathematical content is still a strong
+cross-mechanism agreement and remains the substantive content of
+Σ1; the runner verifies all six algorithmic perspectives at every
+tested N to confirm both the inter-frame agreement and the within-frame
+algorithmic equivalences.
 
 Combined with the translation lemma (PR #1963) and the audit-decided
 adoption of `𝒞_b` via PR #1964 (following the precedent pipeline
@@ -208,45 +229,54 @@ W2(N) := B_2(0) - B_2(1/N)
 Standard Bernoulli polynomial: `B_2(x) = x² - x + 1/6`. Direct
 substitution gives the value. No imports needed.
 
-### W3 — Hurwitz zeta special value at s = −1
+### W3 — Hurwitz zeta special value at s = −1 (via Fourier sum)
 
 ```
 W3(N) := 2·(ζ_H(−1, 1/N) − ζ_H(−1, 1)) = (N − 1)/N²
 ```
 
 where the Hurwitz zeta `ζ_H(s, q) = Σ_{k=0}^∞ 1/(k+q)^s` is
-analytically continued to `s = −1`. By the **Bernoulli-Hurwitz
-identity** `ζ_H(−n, q) = −B_{n+1}(q)/(n+1)`, specialized to `n = 1`:
+analytically continued to `s = −1`.
+
+**Primary algorithm (genuinely independent of W2 / Bernoulli):**
+the runner computes `ζ_H(−1, 1/N)` via the **Hurwitz functional
+equation** (Hurwitz 1882):
 
 ```
-ζ_H(−1, q) = −B_2(q)/2,    B_2(q) = q² − q + 1/6.
+ζ_H(−1, q) = −(1/(2π²)) · Σ_{n=1}^∞ cos(2πn·q) / n²
 ```
 
-Substituting gives `2·(ζ_H(−1, 1/N) − ζ_H(−1, 1)) = B_2(1) − B_2(1/N)
-= (N−1)/N²`. We use the reference point `q = 1` because
-`ζ_H(−1, 1) = −1/12 = ζ(−1)` is the standard Riemann zeta value.
+evaluated at `q = 1/N`. This is **harmonic analysis on the circle**:
+a Fourier sum of `cos(2πn/N)/n²` weighted by `−1/(2π²)`. No
+Bernoulli polynomial, no analytic continuation by Bernoulli formula,
+no polynomial algebra — just trigonometric series summation.
 
-The runner verifies W3 both (a) via the closed form (the
-Bernoulli-Hurwitz identity, which is a rigorous mathematical
-theorem) and (b) via direct numerical computation of `ζ_H(−1, q)`
-at 50-digit precision through `mpmath.zeta(-1, q)`. The two
-computations agree to 30+ decimal places.
+The numerical Fourier-sum value converges to the same number as the
+Bernoulli-Hurwitz closed form `ζ_H(−1, q) = −B_2(q)/2`, by the
+Hurwitz functional equation theorem.
 
-**HONEST DISCLOSURE: W3 is NOT fully independent of W2.** The
-Bernoulli-Hurwitz identity makes W2 (Bernoulli polynomial value)
-and W3 (Hurwitz zeta special value at s = −1) **dual perspectives
-on the same number-theoretic content**. They are two distinct
-mathematical objects — a polynomial value and an analytically-
-continued series value — that coincide via a known theorem. They
-should be counted as **two perspectives on one identity**, not as
-two independent witnesses. The capstone's "six universal mechanisms"
-count is therefore an honest count of *distinct algebraic-frame
-perspectives*, not of fully-independent verifications. The
-independent algebraic frames are: (W1 K-theory / spectral asymmetry),
-(W2 + W3, the Bernoulli-Hurwitz arithmetic frame), (W4 Fisher
-variance), (W5 CFT twist weight), (W6 character-theoretic rank);
-that's five algebraically distinct mechanisms producing the same
-rational, with W2-W3 a dual pair within the arithmetic frame.
+**Three-way verification in the runner**:
+
+| Algorithm | Approach | Precision |
+|---|---|---|
+| (A) Fourier sum | harmonic analysis (`Σ cos(2πn/N)/n²` to 50k terms) | ~3 decimal digits |
+| (B) `mpmath.zeta(-1, q)` | Euler-Maclaurin / mpmath's general algorithm | 50 decimal digits |
+| (C) Bernoulli-Hurwitz closed form | polynomial algebra | exact rational |
+
+All three converge to `(N−1)/N²` at every tested `N`, providing
+genuinely algorithmically-distinct routes to the same number. The
+agreement between (A) and (C) is a non-trivial verification of the
+Hurwitz functional equation at the specific rationals `q = 1/N`.
+
+**HONEST DISCLOSURE: W3 is NOT fully independent of W2 at the level
+of mathematical content.** The Hurwitz functional equation
+*equates* the Fourier sum to `−B_2(q)/2`, so W2 (Bernoulli
+polynomial value) and W3 (Hurwitz zeta at `s = −1`) compute the
+*same number-theoretic identity* via algorithmically distinct
+routes. They are one mathematical identity with two algorithmic
+perspectives, not two independent identities. The runner reports
+this explicitly: `W2 = W3 at N=3, 6, 12` is verified, and the
+disclosure is logged in the audit output.
 
 ### W4 — Fisher information of `u_N`
 
@@ -305,10 +335,16 @@ algebra. The verifier checks this at every N from 2 to 100 in
 rational arithmetic. ∎
 
 **Corollary (no coincidence).** The agreement is **one structural
-invariant** in six independent algebraic frames, not a numerical
-coincidence between unrelated mathematical spaces. This is the
-formal statement that resolves the dynamics-lane initial
-"numerical pun" diagnosis.
+invariant** across **four mathematically distinct frames**
+(representation theory, Bernoulli/Hurwitz arithmetic,
+probability/information geometry, CFT), computed through **six
+algorithmic perspectives** (the redundancy within frames is
+explicitly disclosed in the Σ1 mandate section: W1.a ≡ W1.b ≡ W6
+by equivariant Lefschetz / character theory; W2 ≡ W3 by Hurwitz
+functional equation). Four-way convergence across distinct
+mathematical content is not numerical coincidence between unrelated
+mathematical spaces — it is the formal statement that resolves the
+dynamics-lane initial "numerical pun" diagnosis.
 
 ## Σ2: Conditional Capstone Closure
 

@@ -12892,13 +12892,13 @@
         "minimal_axioms",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
-      "direct_in_degree": 16,
+      "direct_in_degree": 15,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 21.794,
+      "load_bearing_score": 21.293,
       "load_bearing_step": "The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -13400,7 +13400,7 @@
       },
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 887,
+      "transitive_descendants": 886,
       "verdict_rationale": "The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes."
     },
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17": {
@@ -35766,7 +35766,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 23.392,
+      "load_bearing_score": 23.39,
       "load_bearing_step": "Cl(3,0) is real-isomorphic to M_2(C), and after complexification the central idempotents e_\u00b1 split it as M_2(C) \u2295 M_2(C), whose irreducible modules have complex dimension 2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -35787,7 +35787,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
-      "transitive_descendants": 949,
+      "transitive_descendants": 948,
       "verdict_rationale": "The load-bearing content is a standard class-(A) algebraic closure: centrality and square of the pseudoscalar, the real-algebra isomorphism Cl(3,0) \u2245 M_2(C), the complexified idempotent split, and the 2-dimensional simple-module readout. The runner source genuinely performs exact symbolic Pauli-matrix and abstract idempotent checks rather than importing external constants or fitted premises. The proof stays within the stated abstract algebra scope and explicitly excludes the open physical per-site Hilbert-space bridge."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -174768,79 +174768,112 @@
       "verdict_rationale": null
     },
     "momentum_charge_commute_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-25T19:28:48.194540+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
-        },
-        "dep_claim_type": {
-          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
-        },
-        "deps": [
-          "axiom_first_lattice_noether_theorem_note_2026-04-29"
-        ],
-        "load_bearing_score": 6.085,
-        "runner_hash": "cb4f7a25649bc7b241dc85f791eca799a9c4cec3a909aec7ffe1fb4b2a991d8b",
-        "transitive_descendants": 47
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T192826Z-c2687fea-momentum_charge_commute_-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic commutation argument closes only for the symmetry generators actually supplied by the cited Noether authority. The source note overstates N1 as a total lattice momentum operator/current on H_phys, while the cited authority narrows N1 to a (2Z)^3 two-step Ward identity and explicitly keeps the canonical momentum density support-only.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "momentum_charge_commute_theorem_note_2026-05-02",
-      "claim_scope": "Commutation of the total sublattice-translation momentum generator with the total U(1) fermion-number generator on the admitted staggered lattice carrier, plus common (P,Q) labels where the corresponding self-adjoint generators are available.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-25T19:28:48.194540+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 6.085,
-      "load_bearing_step": "Algebra-level commutativity of translations and global U(1) phase implies their generators commute as operators on H_phys, hence [P\u0302_total^\u03bc,Q\u0302_total]=0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "d2204b8e97f23dd547ea8fef3f43869a80601d7d9c198fdca8f133c62de1dc26",
+      "note_hash": "b673bf57b239af1f57dbbfc4f6923246d92ea771dad1a77d0c085aeb3401064d",
       "note_path": "docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to the retained bounded (2Z)^3 two-step translation generator or add a retained bridge theorem constructing the claimed P\u0302_total^\u03bc on H_phys from the two-step Ward identity.",
-      "open_dependency_paths": [
-        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-26T00:24:40.516529+00:00",
+          "archived_for_note_hash": "d2204b8e97f23dd547ea8fef3f43869a80601d7d9c198fdca8f133c62de1dc26",
+          "audit_date": "2026-05-25T19:28:48.194540+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+            },
+            "dep_claim_type": {
+              "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+            },
+            "deps": [
+              "axiom_first_lattice_noether_theorem_note_2026-04-29"
+            ],
+            "load_bearing_score": 6.085,
+            "runner_hash": "cb4f7a25649bc7b241dc85f791eca799a9c4cec3a909aec7ffe1fb4b2a991d8b",
+            "transitive_descendants": 47
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T192826Z-c2687fea-momentum_charge_commute_-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic commutation argument closes only for the symmetry generators actually supplied by the cited Noether authority. The source note overstates N1 as a total lattice momentum operator/current on H_phys, while the cited authority narrows N1 to a (2Z)^3 two-step Ward identity and explicitly keeps the canonical momentum density support-only.",
+          "claim_scope": "Commutation of the total sublattice-translation momentum generator with the total U(1) fermion-number generator on the admitted staggered lattice carrier, plus common (P,Q) labels where the corresponding self-adjoint generators are available.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T19:28:48.194540+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Algebra-level commutativity of translations and global U(1) phase implies their generators commute as operators on H_phys, hence [P\u0302_total^\u03bc,Q\u0302_total]=0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to the retained bounded (2Z)^3 two-step translation generator or add a retained bridge theorem constructing the claimed P\u0302_total^\u03bc on H_phys from the two-step Ward identity.",
+          "open_dependency_paths": [
+            "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 5
+          },
+          "verdict_rationale": "The load-bearing argument is a standard algebraic closure: uniform U(1) phase and lattice translations commute as group actions, so their generators commute when both are valid operators on the same Hilbert-space surface. However, the one-hop authority is only retained_bounded and contains explicit open/admitted carrier structure, including the residual KS-phase-form admission. More importantly, its translation branch does not currently provide the full total lattice momentum operator claimed here; it supplies only the exact two-step Ward identity, with the canonical momentum density not theorem-grade. The runner checks a 1D toy Fock-space translation and number operator, so it supports the algebraic pattern but does not repair the missing bridge to the framework's P\u0302_total^\u03bc."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 5
+        "total_pass": 0
       },
       "runner_path": "scripts/momentum_charge_commute_check.py",
-      "title": "Total Momentum and Total U(1) Charge Commute on Framework Lattice",
+      "title": "Tensor-Product Translation Generators Commute With Total U(1) Charge",
       "transitive_descendants": 47,
-      "verdict_rationale": "The load-bearing argument is a standard algebraic closure: uniform U(1) phase and lattice translations commute as group actions, so their generators commute when both are valid operators on the same Hilbert-space surface. However, the one-hop authority is only retained_bounded and contains explicit open/admitted carrier structure, including the residual KS-phase-form admission. More importantly, its translation branch does not currently provide the full total lattice momentum operator claimed here; it supplies only the exact two-step Ward identity, with the canonical momentum density not theorem-grade. The runner checks a 1D toy Fock-space translation and number operator, so it supports the algebraic pattern but does not repair the missing bridge to the framework's P\u0302_total^\u03bc."
+      "verdict_rationale": null
     },
     "monopole_derived_note": {
       "audit_date": null,
@@ -244963,7 +244996,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.82,
+      "load_bearing_score": 14.819,
       "load_bearing_step": "Reordering via (G1)-(G3), Berezin top-term selection gives sum over permutations sign(pi) prod_x M_{x,pi(x)} = det(M), and homogeneous odd Grassmann operators anticommute under exchange.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -244984,7 +245017,7 @@
       },
       "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
       "title": "Spin-Statistics \u2014 Berezin Determinant Narrow Theorem",
-      "transitive_descendants": 903,
+      "transitive_descendants": 902,
       "verdict_rationale": "The load-bearing step is class A: coefficient extraction in a finite exterior algebra reduces the Gaussian Grassmann integral to the Leibniz determinant formula. The odd-odd antisymmetry also follows directly from the homogeneous Grassmann grading and linearity of the Berezin integral. The runner source checks the relevant algebra symbolically for small N and does not import calibrated data, upstream notes, or contested physical premises. The result is clean for the explicitly bounded abstract-Grassmann scope, not for the out-of-scope physical identification claims."
     },
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {
@@ -247248,7 +247281,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 19.819,
+      "load_bearing_score": 19.817,
       "load_bearing_step": "Within the explicit two-candidate framing, bosonic per-site Fock dimension is infinite while Grassmann per-site Fock dimension is 2, so only the Grassmann candidate matches the retained Cl(3) faithful-irrep dim_C V = 2 readout, and its Berezin partition gives det(M).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -247433,7 +247466,7 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
-      "transitive_descendants": 902,
+      "transitive_descendants": 901,
       "verdict_rationale": "The cited authorities are retained-grade: one retained and one retained_bounded. The runner source performs concrete symbolic checks of Pauli carrier dimension, Grassmann nilpotency, determinant-by-permutation equality, finite bosonic truncation growth, and a bosonic-vs-Grassmann trace distinction; it does not merely print constants or import an external comparator. The theorem is clean only in its narrow abstract two-candidate scope, not as a closure of the physical staggered-Dirac substep."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
@@ -264552,23 +264585,23 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_last_reviewed": "2026-05-25T23:53:39.238817+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "leaf",
+      "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 6.115,
       "load_bearing_step": "Applying the tensor-permutation definition of T_a to a_x on a basis state gives T_a a_x T_a^\u2020 |b\u27e9 = a_{x+a} |b\u27e9, and relabelling the finite torus sum gives T_a Q_total T_a^\u2020 = Q_total.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "e3f4ce0a0b208757225d718d12be839c1f2fbf3e67e072db64935025da37fd0a",
       "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
       "notes_for_re_audit_if_any": "",
@@ -264585,7 +264618,7 @@
       },
       "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
       "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 48,
       "verdict_rationale": "The source note's load-bearing argument is a direct algebraic closure from the accepted A1/A2 framework premise plus ordinary finite-dimensional tensor-product mathematics. The runner source explicitly constructs the ladder operators, permutation matrices, and total charge operator with exact sympy matrices, then verifies the stated identities entrywise; it does not hard-code contested outputs or import external comparators. The absence of Jordan-Wigner anticommutation is acknowledged and kept out of scope, so it does not block the stated per-site Pauli convention claim."
     },
     "tensor_scalar_ratio_consolidation_theorem_note_2026-04-22": {
@@ -303432,8 +303465,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2378,
-    "re_audit_required": 0,
+    "preserved_existing": 2377,
+    "re_audit_required": 1,
     "row_count": 2422,
     "seeded_new": 0
   }

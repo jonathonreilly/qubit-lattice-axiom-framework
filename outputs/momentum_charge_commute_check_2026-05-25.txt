@@ -1,0 +1,60 @@
+========================================================================
+TENSOR-PRODUCT TRANSLATION GENERATORS COMMUTE WITH Q_TOTAL
+========================================================================
+
+------------------------------------------------------------------------
+TEST 0: load-bearing tensor-product bridge is retained-grade
+------------------------------------------------------------------------
+  tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
+  effective_status = retained
+  STATUS: PASS
+
+  finite block: 2x2x2, sites = 8, dim(H) = 256
+
+------------------------------------------------------------------------
+TEST 1: Q_total is Hermitian and integer-valued
+------------------------------------------------------------------------
+  ||Q - Q^dag|| = 0.000e+00
+  max integer deviation on spectrum = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 2: each retained translation commutes with Q_total
+------------------------------------------------------------------------
+  shift=(1, 0, 0): ||[T,Q]||=0.000e+00, ||TQT^dag-Q||=0.000e+00
+  shift=(0, 1, 0): ||[T,Q]||=0.000e+00, ||TQT^dag-Q||=0.000e+00
+  shift=(0, 0, 1): ||[T,Q]||=0.000e+00, ||TQT^dag-Q||=0.000e+00
+  shift=(1, 1, 1): ||[T,Q]||=0.000e+00, ||TQT^dag-Q||=0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 3: finite-block spectral generators K_mu commute with Q_total
+------------------------------------------------------------------------
+  shift=(1, 0, 0): ||K-K^dag||=0.000e+00, ||[K,Q]||=0.000e+00
+  shift=(0, 1, 0): ||K-K^dag||=0.000e+00, ||[K,Q]||=0.000e+00
+  shift=(0, 0, 1): ||K-K^dag||=0.000e+00, ||[K,Q]||=0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 4: axial spectral generators commute pairwise
+------------------------------------------------------------------------
+  pair=(0,1): ||[K_i,K_j]||=0.000e+00
+  pair=(0,2): ||[K_i,K_j]||=0.000e+00
+  pair=(1,2): ||[K_i,K_j]||=0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 5: common finite-block eigenbasis for Q_total and K_mu
+------------------------------------------------------------------------
+  offdiag(Q) in common basis = 9.767e-14
+  max offdiag(K_mu) in common basis = 2.757e-11
+  STATUS: PASS
+
+========================================================================
+  Test 0 (bridge retained-grade):                    PASS
+  Test 1 (Q_total Hermitian/integer):                 PASS
+  Test 2 ([T_a,Q_total] = 0):                         PASS
+  Test 3 ([K_mu,Q_total] = 0):                        PASS
+  Test 4 ([K_mu,K_nu] = 0):                           PASS
+  Test 5 (common finite-block eigenbasis):            PASS
+  OVERALL: PASS

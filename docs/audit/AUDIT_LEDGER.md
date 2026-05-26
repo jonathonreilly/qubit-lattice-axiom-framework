@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 462 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 15 |
-| unaudited | 1225 |
+| unaudited | 1226 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 100 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -53,28 +53,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 747 |
-| `audited_conditional` | 101 |
+| `audited_conditional` | 100 |
 | `audited_decoration` | 42 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1454 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1057 |
+| `bounded_theorem` | 1056 |
 | `decoration` | 43 |
 | `meta` | 234 |
 | `no_go` | 247 |
 | `open_gate` | 112 |
-| `positive_theorem` | 729 |
+| `positive_theorem` | 730 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 398 |
 | `high` | 487 |
-| `medium` | 579 |
-| `leaf` | 958 |
+| `medium` | 580 |
+| `leaf` | 957 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 3
@@ -925,7 +925,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `momentum_charge_commute_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8293,21 +8292,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The cache-reader opens the three cited authority caches and prints the retained rows side-by-side without asserting any cross-lane retained winner ranking.  _(class `B`)_
 - **chain closes:** True — The restricted packet includes retained-grade cited authorities and runner source showing the primary runner reads the cited caches and fails if required rows or FAIL markers are missing. The narrowed claim is only cache transcription, so no missing cross-lane bridge theorem is needed.
 - **rationale:** All cited authorities are retained_bounded, and the source note no longer asserts the earlier cross-lane ranking or purity-to-purity comparison. The runner source is a cache-reader rather than a first-principles computation, but that matches the narrowed load-bearing claim: it verifies rows against one-hop registered caches and exits nonzero if required rows are absent. The conclusion follows from the cited retained inputs as a bounded transcription note.
-- **auditor confidence:** high
-
-### `momentum_charge_commute_theorem_note_2026-05-02`
-
-- **Note:** [`MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Commutation of the total sublattice-translation momentum generator with the total U(1) fermion-number generator on the admitted staggered lattice carrier, plus common (P,Q) labels where the corresponding self-adjoint generators are available.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T192826Z-c2687fea-momentum_charge_commute_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Algebra-level commutativity of translations and global U(1) phase implies their generators commute as operators on H_phys, hence [P̂_total^μ,Q̂_total]=0.  _(class `A`)_
-- **chain closes:** False — The algebraic commutation argument closes only for the symmetry generators actually supplied by the cited Noether authority. The source note overstates N1 as a total lattice momentum operator/current on H_phys, while the cited authority narrows N1 to a (2Z)^3 two-step Ward identity and explicitly keeps the canonical momentum density support-only.
-- **rationale:** The load-bearing argument is a standard algebraic closure: uniform U(1) phase and lattice translations commute as group actions, so their generators commute when both are valid operators on the same Hilbert-space surface. However, the one-hop authority is only retained_bounded and contains explicit open/admitted carrier structure, including the residual KS-phase-form admission. More importantly, its translation branch does not currently provide the full total lattice momentum operator claimed here; it supplies only the exact two-step Ward identity, with the canonical momentum density not theorem-grade. The runner checks a 1D toy Fock-space translation and number operator, so it supports the algebraic pattern but does not repair the missing bridge to the framework's P̂_total^μ.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `moonshot_other_testables_note`

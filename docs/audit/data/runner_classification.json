@@ -14704,8 +14704,8 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 14,
+        "B": 1,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
@@ -52424,8 +52424,8 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 14,
+        "B": 1,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,

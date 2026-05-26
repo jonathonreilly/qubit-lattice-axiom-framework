@@ -1,0 +1,24 @@
+loop: momentum-charge-tensor-generator-repair
+branch: physics-loop/momentum-charge-tensor-generator-repair-20260525
+base_ref: origin/main
+started_at: "2026-05-25"
+target_claim: momentum_charge_commute_theorem_note_2026-05-02
+actual_current_surface_status: proposed_retained
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: true
+proposal_allowed_reason: "The repaired claim is narrowed to retained tensor-product translations, Q_total, and finite-dimensional spectral generators."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "Replace broad P_total/H_phys claim with finite-block K_mu/Q_total commutation."
+files_touched:
+  - docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md
+  - scripts/momentum_charge_commute_check.py
+  - outputs/momentum_charge_commute_check_2026-05-25.txt
+open_imports: []
+no_go_routes:
+  - "Do not claim K_mu is the retained full physical P_total^mu."
+  - "Do not keep Wigner classification or cross-section selection-rule corollaries."
+next_exact_action: "Run audit pipeline, local review checks, commit, push, and open PR."
+stop_condition: "One review PR opened for this repair block."

@@ -17438,7 +17438,7 @@
     },
     {
       "from": "momentum_charge_commute_theorem_note_2026-05-02",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "monopole_derived_note",
@@ -64642,13 +64642,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d2204b8e97f23dd547ea8fef3f43869a80601d7d9c198fdca8f133c62de1dc26",
+      "note_hash": "b673bf57b239af1f57dbbfc4f6923246d92ea771dad1a77d0c085aeb3401064d",
       "path": "docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/momentum_charge_commute_check.py",
-      "title": "Total Momentum and Total U(1) Charge Commute on Framework Lattice"
+      "title": "Tensor-Product Translation Generators Commute With Total U(1) Charge"
     },
     "monopole_derived_note": {
       "claim_id": "monopole_derived_note",
@@ -85460,7 +85460,7 @@
       "positive_theorem": 596
     },
     "edge_count": 9775,
-    "leaf_count": 782,
+    "leaf_count": 781,
     "node_count": 2536,
     "root_count": 836,
     "runners_with_path": 2097

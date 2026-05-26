@@ -47,6 +47,9 @@ required = [
     "Renormalization-group",
     "non-analytically-derivable",
     "does not set an",
+    "Current-surface boundary firewall (2026-05-26)",
+    "not a positive observable-bridge theorem",
+    "not as retained positive support",
 ]
 for s in required:
     check(f"note contains: {s!r}", s in note_text)

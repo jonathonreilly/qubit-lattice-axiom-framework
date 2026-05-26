@@ -54710,7 +54710,7 @@
         "gauge_scalar_temporal_completion_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8991024dc76f93a92831b9eb96a435dcb8c0e2aef40bfca1ef9d3f3bb276c496",
+      "note_hash": "75ea52823ccef2e1d6f24023878050c1ed030841c7b9b95057c01559e949bcc9",
       "path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
       "title": "Gauge-Scalar Temporal Observable Bridge Stretch Attempt"

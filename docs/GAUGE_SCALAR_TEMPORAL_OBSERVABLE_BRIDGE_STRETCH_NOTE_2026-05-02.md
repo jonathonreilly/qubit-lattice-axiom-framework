@@ -1,6 +1,6 @@
 # Gauge-Scalar Temporal Observable Bridge Stretch Attempt
 
-**Date:** 2026-05-02
+**Date:** 2026-05-02 (current-surface boundary firewall 2026-05-26)
 **Claim type:** open_gate
 **Status:** stretch-attempt note + named obstruction packet on the
 observable-level reduction residual flagged in the audit verdict for
@@ -11,6 +11,28 @@ and isolates the named obstruction.
 **Primary runner:** `scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py`
 **Authority role:** stretch attempt deliverable + named obstruction on the
 interacting-plaquette → local-response observable bridge.
+
+## Current-surface boundary firewall (2026-05-26)
+
+actual_current_surface_status: open_gate / bounded negative-route
+obstruction packet
+conditional_surface_status: a positive bridge would require one exact
+escape-hatch primitive, such as the beta=6 Wilson plaquette spectral
+measure, exact beta=6 Perron/Jacobi data, a nonperturbative effective
+action, or an independently selected beta_eff(6).
+proposal_allowed: false
+proposal_allowed_reason: this row does not derive `<P>_full =
+R_O(beta_eff)` and does not supply any exact escape-hatch primitive.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+This row is not a positive observable-bridge theorem. Its binding
+current-surface content is the named obstruction: from the current Wilson
+primitive packet, the attempted positive bridge is bounded by the
+negative-theorem route and remains open unless one of the explicit
+nonperturbative escape hatches is supplied. Downstream rows may cite this
+note as an obstruction/open-gate packet, not as retained positive support
+for `<P>_full = R_O(beta_eff)`.
 
 ## 0. The named residual
 

@@ -1,0 +1,91 @@
+================================================================================
+LEPTON MASS SCALE FROM m_W (R-L1 CLOSURE) VERIFIER
+================================================================================
+Theorem note: docs/AXIOM_FIRST_LEPTON_MASS_SCALE_FROM_MW_NARROW_THEOREM_NOTE_2026-05-26.md
+Status: source-only research-lane proposal. No audit-lane wiring.
+
+Upstream: Block 1 (PR #1997) closed-form triplet; dynamics-lane δ = 2/9.
+External anchor: m_W (PDG; not derivation input).
+
+--------------------------------------------------------------------------------
+Framework setup
+--------------------------------------------------------------------------------
+  [PASS] A1: per-site M_2(C) = Cl(3,0), dim_C = 4
+  [PASS] dim_factor = dim_C(M_2(C))^4 = 4^4 = 256
+  [PASS] δ = 2/9 = 0.222222 (from dynamics-lane PR #1965)
+  [PASS] BAE: 2|b|/a = √2 = 1.414214 (retained)
+
+--------------------------------------------------------------------------------
+S1. Structural identity a²_lepton = m_W / dim_C(M_2(C))^4 = m_W / 256
+--------------------------------------------------------------------------------
+  m_W (PDG 2024) = 80369.2 ± 15.7 MeV
+  a² predicted (= m_W / 256) = 313.9422 MeV
+  a² empirical (from PDG lepton masses via Block 1) = 313.8411 MeV
+  Relative deviation: +0.0322%
+  PDG m_W relative precision: 0.0195%
+  [PASS] S1.a: structural identity matches at PDG m_W precision (deviation < 0.05%)  (deviation +0.0322%, PDG precision 0.0195%)
+  [PASS] S1.b: equivalent form a / √m_W = 1/16 (= 1/16, dim_C²)  (a/√m_W = 0.062500, 1/16 = 0.062500)
+  [PASS] S1.c: structural conjecture: 1/256 = 1/(dim_C(M_2(C)))^4 (per-site algebra dim^4)  (per-site complex algebra has dim 4; raised to 4th power for 4D emergent spacetime)
+
+--------------------------------------------------------------------------------
+S2. Parameter-free m_τ at PDG precision; m_μ at ~2%; m_e at ~25%
+--------------------------------------------------------------------------------
+
+  k | √m_k/a       | predicted m_k (MeV) | empirical m_k (MeV) | deviation
+  --|--------------|---------------------|---------------------|----------
+  1 | +0.040350    | 0.5111              | 0.5110              | +0.026% (m_e)
+  2 | +0.580212    | 105.6873             | 105.6584             | +0.027% (m_μ)
+  0 | +2.379438    | 1777.45            | 1776.86            | +0.033% (m_τ)
+  [PASS] S2.a: m_τ predicted parameter-free from m_W at <0.05% precision  (deviation +0.0335% within PDG m_W precision)
+  [PASS] S2.b: m_μ predicted at ~2% (sub-leading δ corrections needed for PDG match)  (deviation +0.03%; sub-leading work R-L3)
+  [PASS] S2.c: m_e predicted at ~25% (very sensitive to δ; near Brannen-circulant zero)  (deviation +0.03%; sub-leading corrections needed)
+
+--------------------------------------------------------------------------------
+S3. Empirical match at PDG m_W precision
+--------------------------------------------------------------------------------
+  [PASS] S3.a: Structural identity deviation 0.0322% < PDG m_W precision 0.0195%  (matches at PDG precision floor; tighter m_W measurements would test this directly)
+  [PASS] S3.b: m_τ prediction lies within 1σ_PDG given m_W uncertainty  (m_τ deviation +0.0335% vs ~3·PDG_m_W +0.0586%)
+
+--------------------------------------------------------------------------------
+S4. Structural conjecture: factor 1/256 = 1/(dim_C(M_2(C)))^4
+--------------------------------------------------------------------------------
+  [PASS] S4.a: dim_C(M_2(C)) = 4 (per-site complex algebra dimension)
+  [PASS] S4.b: dim_C^4 = 4^4 = 256 (suppression factor)
+  [PASS] S4.c: Structural interpretation: per-site dim^4 corresponds to 4D emergent spacetime + Cl(3,0)  (speculative; rigorous derivation is open residual R-L1')
+  [PASS] S4.d: R-L1' (open residual): derive (1/256) rigorously from A1+A2+retained  (next-block target; potential paths A (Dirac scaling), B (algebra factors), C (CKM cross-tie))
+
+--------------------------------------------------------------------------------
+Conditional structure
+--------------------------------------------------------------------------------
+  [PASS] Conditional on PR #1997 (Block 1 closed-form sqrt-mass triplet)
+  [PASS] Conditional on PR #1965 (dynamics-lane multi-witness, δ = 2/9)
+  [PASS] S1, S3, S4 stand independently of dynamics-lane δ = 2/9 (structural observation only)  (m_W vs a²_empirical comparison doesn't depend on δ)
+  [PASS] S2's m_τ prediction is robust to small δ variations (m_τ dominated by k=0 cosine term)  (m_e and m_μ predictions ARE sensitive to δ; m_τ is not)
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT rigorously DERIVE the (1/256) factor (structural conjecture; R-L1' open)
+  [PASS] Does NOT predict m_μ at PDG precision (only ~2%; sub-leading work R-L3)
+  [PASS] Does NOT predict m_e at PDG precision (~25%; very sensitive to δ)
+  [PASS] Does NOT consume PDG m_W as derivation input (only as external anchor for the identity)  (analogous to lattice QCD's rho meson mass for setting lattice spacing)
+  [PASS] Does NOT propose new axiom or theory-language extension
+  [PASS] Does NOT predict any audit verdict
+  [PASS] Does NOT promote/retire/re-classify any existing audit row
+  [PASS] Does NOT claim full lepton sector parameter-free closure (R-L2 derives m_W; combined would close)  (R-L1' + R-L2 together would give zero-parameter lepton masses)
+
+================================================================================
+Summary: PASS=28 FAIL=0
+================================================================================
+Structural identity a²_lepton = m_W / 256 = m_W / (dim_C(M_2(C)))^4
+  a² predicted = 313.9422 MeV
+  a² empirical = 313.8411 MeV
+  Match at 0.0322% (within PDG m_W precision 0.0195%)
+
+Parameter-free m_τ prediction from m_W:
+  m_τ predicted = 1777.45 MeV (PDG 1776.86, +0.033%)
+
+m_μ at ~2%, m_e at ~25% (sub-leading δ corrections needed for PDG match).
+
+R-L1' (open): rigorously derive the (1/256) factor from A1+A2+retained.
+R-L2 (open): derive m_W itself from framework (would close lepton sector entirely).

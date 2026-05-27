@@ -214995,13 +214995,13 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
         "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 3.5,
       "load_bearing_step": "At Taylor depth 100, the runner builds exact Bessel-determinant coefficients and verifies the finite matching systems: no r<=2,d<=30 kernel, a one-dimensional r=3,d=2 kernel matching L, and r=3,d=2..12 kernels of dimension d-1.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -215077,7 +215077,7 @@
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Extended (Koutschan-style) Minimality Note",
-      "transitive_descendants": 2,
+      "transitive_descendants": 3,
       "verdict_rationale": "The provided runner source is not a print-only artifact: it constructs the Bessel-determinant Taylor series, builds matching matrices over exact Fractions, computes exact ranks, extracts the nullspace, and compares the primitive integer kernel to the published operator. The hard-coded operator coefficients are used for candidate verification and signature comparison, while the finite lower-order exclusions and minimal scan hit are computed from the generated coefficient sequence. The one-hop cited note dependencies are retained_bounded, and the audited conclusion is limited to the stated bounded finite windows."
     },
     "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": {
@@ -215604,14 +215604,15 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+        "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.085,
       "load_bearing_step": "The note relies on the finite runner certificate that no order-\u2264-2 polynomial-coefficient annihilator exists through coefficient degree \u226412, together with uniqueness of the order-3 degree-2 operator.",
       "load_bearing_step_class": "B",
@@ -215684,7 +215685,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -215692,7 +215693,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/frontier_pf_rank_bound_assessment_repair.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Rank-Bound Citation Note",
       "transitive_descendants": 2,
       "verdict_rationale": "Runner stdout and source are unavailable, so the judgment falls back to the source note and cited authorities. The source note imports companion finite-window certificates, but overstates their scope: the retained companion excludes order-2 only through degree 11, not degree 12, and the ODE companion is finite-runner scoped rather than an analytic identity proof. The all-degree rank/order bridge remains explicitly admitted rather than closed."

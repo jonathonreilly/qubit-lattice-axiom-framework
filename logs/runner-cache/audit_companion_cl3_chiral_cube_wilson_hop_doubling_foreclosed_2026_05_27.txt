@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cl3_chiral_cube_wilson_hop_doubling_foreclosed_2026_05_27.py
+runner_sha256: fc5173b981090abaaf1e1962756e6e36556bc44ad038cd740adb10e26e9ed53e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+=== Cl(3) chiral-cube Wilson-hop doubling foreclosed NO-GO ===
+
+[A] SU(3) Gell-Mann generators and single Casimir
+
+  PASS  8 Gell-Mann generators constructed :: len(lam) = 8
+  PASS  lambda^1 is Hermitian
+  PASS  lambda^2 is Hermitian
+  PASS  lambda^3 is Hermitian
+  PASS  lambda^4 is Hermitian
+  PASS  lambda^5 is Hermitian
+  PASS  lambda^6 is Hermitian
+  PASS  lambda^7 is Hermitian
+  PASS  lambda^8 is Hermitian
+  PASS  lambda^1 is traceless
+  PASS  lambda^2 is traceless
+  PASS  lambda^3 is traceless
+  PASS  lambda^4 is traceless
+  PASS  lambda^5 is traceless
+  PASS  lambda^6 is traceless
+  PASS  lambda^7 is traceless
+  PASS  lambda^8 is traceless
+  PASS  Tr[T^1 T^1] = 1/2 (diag normalization) :: got 1/2
+  PASS  Tr[T^1 T^2] = 0 (off-diag orthogonality) :: got 0
+  PASS  sum_a T^a T^a = C_F * I exactly (textbook one-loop Casimir) :: C_F = 4/3 = 4/3
+  PASS  C_F = (N_c^2 - 1)/(2 N_c) = 4/3 for N_c = 3
+
+[B] Symbolic Taylor expansion U_mu + U_mu^dagger to O(g^2)
+
+  PASS  X = g a A_mu^a T^a is Hermitian
+  PASS  O(g) cancellation: cos(X) is even in X, U + U^dag has no O(g) term :: 2 cos(X) = 2 - X^2 + X^4/12 - ... ; odd powers vanish
+  PASS  Each entry of X^2 is degree-2 in A (one bilinear A^a A^b per term) :: O(g^2) coefficient of U+U^dag has ONE bilinear, NOT two
+
+[C] Gauge-averaging <A^a A^b> = delta^{ab}
+
+  PASS  <X^2 / (ga)^2> = sum_a T^a T^a = C_F * I exactly :: single Casimir factor C_F = 4/3, NOT 2 C_F
+  PASS  <U_mu + U_mu^dag>_{O(g^2)} = 2 I - (g a)^2 * C_F * I + O(g^4) :: ONE Casimir factor on the color identity, NOT 2 C_F
+
+[D] Hermitian conjugacy: same gauge field on same single link
+
+  PASS  X = g a A_mu^a T^a is Hermitian (numerical check) :: ||X - X^H||_max = 0.00e+00
+  PASS  U_mu * U_mu^dag = I (unitarity on single link) :: ||U U^dag - I||_max = 1.03e-17; forward o backward on same link is identity, NOT 2-link product
+  PASS  U_mu^dag = (U_mu)^{H} (Hermitian conjugate of same link) :: ||U^dag - U^H||_max = 1.43e-17; U^dag uses SAME A_mu^a as U
+  PASS  U_mu + U_mu^dag is Hermitian (= 2 cos(X) for Hermitian X) :: ||(U + U^dag) - (U + U^dag)^H||_max = 1.39e-17
+  PASS  Tr(U + U^dag) is real (cos of Hermitian has real eigenvalues) :: Im[Tr(U + U^dag)] = 1.04e-17
+
+[E] Alternative reads: none source 8/3 without forbidden inputs
+
+  PASS  target rho = (N_c^2-1)/N_c = 8/3 for N_c = 3
+  PASS  (R0) single Wilson link CW: rho = C_F = 4/3
+  PASS  (R0) does NOT match target 8/3
+  PASS  (R1) forward+backward as INDEPENDENT (foreclosed): rho = 2 C_F = 8/3
+  PASS  (R1) FORECLOSED by Hermitian conjugacy: U^dag shares A with U :: see Section D
+  PASS  (R2) sum over d=3 spatial dirs: rho = d * C_F = 4
+  PASS  (R2) does NOT match target 8/3
+  PASS  (R3) per-color-row trace (1/N_c) Tr[C_F I] = C_F = 4/3
+  PASS  (R3) does NOT match target 8/3
+  PASS  (R4) (1/N_c) * 2 * sum_a Tr[T^a T^a] = 8/3 algebraically
+  PASS  (R4) inserts SAME ad-hoc factor 2 as (R1); both un-sourced :: 2 in (R4) absorbs forward+backward; not derivable from CW
+  PASS  (R5) dim(adj_3)/N_c = (N^2-1)/N = 8/3 (algebraic identity)
+  PASS  (R5) is identity 2 C_F = (N^2-1)/N; not CW-sourced
+  PASS  (R6) hw_dark * C_F = 3 * 4/3 = 4
+  PASS  (R6) does NOT match target 8/3
+  PASS  (R7) sigma_x is Hermitian (= its own Hermitian conjugate)
+  PASS  (R7) bit-flip 'forward+backward' is the SAME operator, no doubling :: 2 * sigma_x is just rescaling of single operator
+
+[F] SU(N) Fierz sandwich identity rules out (D4)
+
+  PASS  sum_a T^a I T^a = C_F I (M=I, singlet channel) :: natural self-energy on fundamental scalar lives in SINGLET channel
+  PASS  sum_a T^a T^3 T^a = -(1/(2 N_c)) T^3 (M=T^b traceless, adjoint channel) :: traceless M gives adjoint-channel projection
+  PASS  (D4) traceless-M operator route requires new dynamical input (forbidden) :: feedback_no_new_axioms.md forbids inserting traceless M without derivation
+
+[G] m_DM predictions per alternative read
+
+  PASS  (R0) m_DM = C_F * 6 v = 8 v ≈ 1.97 TeV (factor 2 below target)
+  PASS  (R1) m_DM = 2 C_F * 6 v = 16 v ≈ 3.94 TeV (target, but un-sourced)
+  PASS  (R2) m_DM = d C_F * 6 v = 24 v ≈ 5.91 TeV (1.5x above target)
+  PASS  (R3) m_DM = (per-row trace) * 6 v = 8 v (factor 2 below target)
+  PASS  (R6) m_DM = hw_dark C_F * 6 v = 24 v (1.5x above target)
+  PASS  target structural product m_DM = N_sites * v = 16 v (from audit-discovery) :: rank-1 of 22 multipliers, 14x gap to next-closest
+  PASS  Only (R1)/(R4)/(R5) match 16 v target; all require un-sourced factor 2 :: single-Casimir CW gives 8 v; doubling requires (D1)-(D4) forbidden inputs
+
+[H] Exhaustiveness of foreclosed routes (D1)-(D4)
+
+  PASS  (D1) two independent gauge fields per link: FORBIDDEN by U^dag = U^H :: Hermitian conjugacy forces same A_mu^a in both forward and backward
+  PASS  (D2) sum over d spatial directions: gives d C_F = 4, not 8/3
+  PASS  (D3) ad hoc factor 2 at gauge-averaging step: FORBIDDEN by no-new-axioms :: standard textbook <A^a A^b> = delta^{ab} has no factor 2
+  PASS  (D4) traceless M in sum_a T^a M T^a: FORBIDDEN as new dynamical input :: natural self-energy on fundamental has M = I (singlet)
+  PASS  Exhaustiveness: all 4 routes (D1)-(D4) to 8/3 require forbidden inputs :: no fifth route within standard one-loop CW machinery
+
+[I] Negative controls
+
+  PASS  SU(2): C_F = 3/4 != target 3/2 (factor 2 short)
+  PASS  SU(3): C_F = 4/3 != target 8/3 (factor 2 short)
+  PASS  SU(4): C_F = 15/8 != target 15/4 (factor 2 short)
+  PASS  SU(2) sanity: sum_a T^a T^a = (3/4) I = C_F I for N=2
+
+=== SCORECARD ===
+  PASS=67 FAIL=0
+
+----- stderr -----
+

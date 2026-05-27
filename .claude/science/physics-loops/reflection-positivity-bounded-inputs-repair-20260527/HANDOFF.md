@@ -8,6 +8,8 @@
 - Ran the audit pipeline so the row is reset to `unaudited` and ready for
   independent re-audit.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2077
+
 ## Binding Claim
 
 The repaired row asserts only that a positive staggered determinant factor and
@@ -40,4 +42,3 @@ vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)
 bash docs/audit/scripts/run_pipeline.sh
 Pipeline complete.
 ```
-

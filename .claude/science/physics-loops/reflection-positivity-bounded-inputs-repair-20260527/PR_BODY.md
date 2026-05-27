@@ -3,6 +3,8 @@
 This PR repairs `axiom_first_reflection_positivity_theorem_note_2026-04-29` by
 taking the audit-provided narrow route.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2077
+
 The source note no longer claims full finite-lattice reflection positivity,
 OS Hilbert-space construction, physical transfer-matrix positivity, or a
 subtracted energy-spectrum theorem. It now asserts only the bounded-input
@@ -53,4 +55,3 @@ Pipeline complete.
 - Staggered Grassmann half-action reflection-positive factorization for
   arbitrary positive-half polynomial observables.
 - Full OS/transfer-matrix/energy positivity reconstruction.
-

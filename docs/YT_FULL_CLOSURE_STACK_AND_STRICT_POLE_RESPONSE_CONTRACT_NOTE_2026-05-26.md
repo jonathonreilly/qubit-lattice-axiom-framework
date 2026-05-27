@@ -86,6 +86,9 @@ closed exactly:
   positive real C3 transfer/Perron selection is not a top-line law: it picks
   the C3 singlet Perron line or leaves the nontrivial block degenerate, so it
   does not supply the target nontrivial C3 character line
+  the residual C3 phase-ordering cone is explicit support: nontrivial top-line
+  ordering requires y_0 > sqrt(3) x_0 or -y_0 > sqrt(3) x_0, but that cone
+  membership is not derived on the actual surface
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -806,6 +809,31 @@ source of nontrivial top-line authority.  The remaining C3 route must add an
 accepted orientation/phase/top-ordering law beyond positive real Perron
 selection, or it must be bypassed by strict same-source top/W pole rows.
 
+[`YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`](YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md)
+then converts the remaining orientation/phase/top-ordering import into an
+exact finite inequality target.  For a connected Hermitian C3-circulant base
+operator
+
+```text
+H_0 = x_0 B_x + y_0 B_y,
+```
+
+the character eigenvalues imply:
+
+```text
+P_omega2 top  <=>  y_0 > 0 and y_0 > sqrt(3) x_0,
+P_omega top   <=>  y_0 < 0 and -y_0 > sqrt(3) x_0,
+P_0 top       <=>  x_0 > 0 and |y_0| < sqrt(3) x_0.
+```
+
+Therefore a future accepted C3 microscopic dynamics theorem has a precise
+certificate target: derive that the physical same-surface base operator lies
+in one of the two nontrivial phase-ordering cones.  If that is supplied, the
+derived `B_x` source tangent and the factorization boundary give the target
+row magnitude `A/sqrt(12)`.  This is exact support, not closure, because the
+current surface does not derive the accepted base operator or its cone
+membership.
+
 ## Non-Claims
 
 This note does not:
@@ -852,6 +880,10 @@ proposal_allowed_reason: |
   The positive real C3 transfer/Perron selection shortcut is also pruned: it
   selects the C3 singlet Perron line or leaves the nontrivial block degenerate,
   while the target row requires a nontrivial C3 line or strict pole evidence.
+  The residual C3 phase-ordering cone has now been characterized exactly:
+  nontrivial top-line ordering requires y_0 > sqrt(3) x_0 or
+  -y_0 > sqrt(3) x_0, but the current surface does not derive that the
+  accepted base operator lies in either cone.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

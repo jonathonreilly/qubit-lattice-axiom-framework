@@ -94,7 +94,7 @@
       "closed": true,
       "name": "physical top generation projector",
       "next_action": "produce accepted strict top/W pole rows, or derive new microscopic dynamics with accepted backend/projectors/matrix elements",
-      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned",
+      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open",
       "step": 6.5
     },
     {
@@ -107,9 +107,9 @@
   ],
   "fail_count": 0,
   "first_open_gate": "accepted strict same-source top/W pole rows, or new microscopic dynamics deriving accepted backend/projectors/matrix elements",
-  "pass_count": 257,
+  "pass_count": 265,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering, and the current real/reflection-even same-surface inputs do not derive a non-mass-ordering top-line law. Derived B_x also does not derive the base C3 circulant dynamics or spectral ordering. The strict sparse route is unavailable on the current branch because accepted backend/projector/controlled pole-row artifacts are absent. The microscopic backend/projector/matrix-element boundary prunes the current source-law/carrier/C3/no-kappa shortcut because the accepted backend, physical top projector, and source-generator matrix element remain load-bearing. The positive real C3 transfer/Perron shortcut is also pruned because positivity selects P_0, while the target coefficient requires a nontrivial C3 character line or strict pole rows. First-principles transfer response is now closed, but the top sector matrix element remains load-bearing. The factorization boundary shows exactly how A/sqrt(12) would follow from accepted generator factorization plus a nontrivial top line, but those inputs remain open and coefficient-certified top/W response evidence remains absent.",
+  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering, and the current real/reflection-even same-surface inputs do not derive a non-mass-ordering top-line law. Derived B_x also does not derive the base C3 circulant dynamics or spectral ordering. The strict sparse route is unavailable on the current branch because accepted backend/projector/controlled pole-row artifacts are absent. The microscopic backend/projector/matrix-element boundary prunes the current source-law/carrier/C3/no-kappa shortcut because the accepted backend, physical top projector, and source-generator matrix element remain load-bearing. The positive real C3 transfer/Perron shortcut is also pruned because positivity selects P_0, while the target coefficient requires a nontrivial C3 character line or strict pole rows. The residual C3 phase-ordering cone is now explicit: a nontrivial top line requires y_0 > sqrt(3) x_0 or -y_0 > sqrt(3) x_0, but the current surface does not derive that cone membership. First-principles transfer response is now closed, but the top sector matrix element remains load-bearing. The factorization boundary shows exactly how A/sqrt(12) would follow from accepted generator factorization plus a nontrivial top line, but those inputs remain open and coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
     "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
     "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py",
@@ -119,13 +119,17 @@
     "outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json",
     "docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md",
     "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
-    "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json"
+    "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json",
+    "docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py",
+    "outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json"
   ],
   "support_output_status": {
     "c3_circulant_dynamics_ordering_source_law_boundary_fail_count": 0,
     "c3_connected_reflection_even_source_candidate_fail_count": 0,
     "c3_connected_source_from_normalized_rn_fail_count": 0,
     "c3_nontrivial_top_line_assignment_boundary_fail_count": 0,
+    "c3_phase_ordering_cone_support_boundary_fail_count": 0,
     "c3_positive_transfer_perron_top_line_nogo_fail_count": 0,
     "c3_real_record_reflection_even_source_fail_count": 0,
     "c3_real_same_surface_top_line_law_obstruction_fail_count": 0,

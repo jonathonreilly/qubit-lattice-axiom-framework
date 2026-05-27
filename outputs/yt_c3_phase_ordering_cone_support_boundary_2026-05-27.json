@@ -1,0 +1,116 @@
+{
+  "actual_current_surface_status": "exact-support / open phase-ordering import",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_same_surface_base_operator_derived": false,
+    "bare_retained_allowed": false,
+    "nontrivial_cone_implies_target_row": true,
+    "phase_ordering_cone_characterized": true,
+    "phase_ordering_law_derived": false,
+    "physical_top_line_in_nontrivial_cone_derived": false,
+    "proposal_allowed": false,
+    "strict_pole_rows_present": false
+  },
+  "claim_id": "yt_c3_phase_ordering_cone_support_boundary_note_2026-05-27",
+  "dependency_status": {
+    "c3_dynamics": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "perron_nogo": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py",
+  "next_action": "derive the phase-ordering cone from accepted microscopic dynamics, or produce strict same-source top/W pole rows",
+  "pass_count": 70,
+  "phase_ordering_cone": {
+    "Pomega2_minus_P0": "(-3*sqrt(6)*x_0 + 3*sqrt(2)*y_0)/6",
+    "Pomega2_minus_Pomega": "sqrt(2)*y_0",
+    "Pomega_minus_P0": "(-3*sqrt(6)*x_0 - 3*sqrt(2)*y_0)/6",
+    "lambda_P0": "sqrt(6)*x_0/3",
+    "lambda_Pomega": "(-sqrt(6)*x_0 - 3*sqrt(2)*y_0)/6",
+    "lambda_Pomega2": "(-sqrt(6)*x_0 + 3*sqrt(2)*y_0)/6"
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The exact nontrivial C3 phase-ordering cone is characterized, but the current surface does not derive that the accepted physical top base operator lies in that cone.",
+  "reachability_to_target": "supports",
+  "region_witnesses": {
+    "nontrivial_degenerate_wall": {
+      "eigenvalues": {
+        "P_0": "-sqrt(6)/3",
+        "P_omega": "sqrt(6)/6",
+        "P_omega2": "sqrt(6)/6"
+      },
+      "top_by_largest": "P_omega",
+      "x0": "-1",
+      "y0": "0"
+    },
+    "omega2_region": {
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "-sqrt(2)/2",
+        "P_omega2": "sqrt(2)/2"
+      },
+      "top_by_largest": "P_omega2",
+      "x0": "0",
+      "y0": "1"
+    },
+    "omega_region": {
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "sqrt(2)/2",
+        "P_omega2": "-sqrt(2)/2"
+      },
+      "top_by_largest": "P_omega",
+      "x0": "0",
+      "y0": "-1"
+    },
+    "p0_omega2_wall": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "-2*sqrt(6)/3",
+        "P_omega2": "sqrt(6)/3"
+      },
+      "top_by_largest": "P_0",
+      "x0": "1",
+      "y0": "sqrt(3)"
+    },
+    "p0_omega_wall": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "sqrt(6)/3",
+        "P_omega2": "-2*sqrt(6)/3"
+      },
+      "top_by_largest": "P_0",
+      "x0": "1",
+      "y0": "-sqrt(3)"
+    },
+    "singlet_region": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "-sqrt(6)/6",
+        "P_omega2": "-sqrt(6)/6"
+      },
+      "top_by_largest": "P_0",
+      "x0": "1",
+      "y0": "0"
+    }
+  },
+  "source_response_rows": {
+    "P_0_row": "sqrt(3)*A/3",
+    "P_omega2_row": "-sqrt(3)*A/6",
+    "P_omega_row": "-sqrt(3)*A/6"
+  },
+  "trace_class": "upstream_support"
+}

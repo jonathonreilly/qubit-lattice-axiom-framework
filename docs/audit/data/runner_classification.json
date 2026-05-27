@@ -12144,6 +12144,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_circulant_wilson_target.py"
     },
+    "koide_cl3_selector_gap_note_2026-04-19": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/frontier_koide_cl3_selector_gap.py"
+    },
     "koide_cone_completing_root_narrow_theorem_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -40996,6 +41008,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_cl3_selector_gap.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_cl3_selector_gap_note_2026-04-19"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/frontier_koide_cone_completing_root_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -56747,9 +56774,9 @@
       "B": 293,
       "C": 761,
       "D": 302,
-      "none": 436
+      "none": 437
     },
-    "runners_classified": 2045,
+    "runners_classified": 2046,
     "runners_with_C": 996,
     "runners_with_D": 602
   }

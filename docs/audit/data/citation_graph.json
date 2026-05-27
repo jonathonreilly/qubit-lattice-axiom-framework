@@ -60664,10 +60664,13 @@
       "deps": [
         "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "671669fdca086e520c7c86791bedc7f0d48e6fbafa87d5c3a93855e1252f4981",
+      "helper_runner_paths": [
+        "scripts/frontier_higgs_dressed_propagator_v1.py",
+        "scripts/frontier_koide_selected_line_cyclic_response_bridge.py"
+      ],
+      "note_hash": "f276fda7ad51b5645a5e6688f2e311f311493e2a89bf094040125e5af0beb2fb",
       "path": "docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_koide_cl3_selector_gap.py",
       "title": "Koide Cl(3) \u2192 SM Embedding \u2014 Selector Gap Note"
     },
     "koide_closure_atlas_issues_flagged": {
@@ -86194,6 +86197,6 @@
     "leaf_count": 806,
     "node_count": 2574,
     "root_count": 858,
-    "runners_with_path": 2150
+    "runners_with_path": 2151
   }
 }

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 246,
-    "high": 337,
+    "high": 338,
     "leaf": 321,
     "medium": 331
   },
@@ -7000,6 +7000,33 @@
       "ready": true,
       "runner_path": "scripts/frontier_omega_lambda_arithmetic_cascade.py",
       "transitive_descendants": 246
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_cl3_selector_gap_note_2026-04-19",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_higgs_dressed_propagator_v1.py",
+        "scripts/frontier_koide_selected_line_cyclic_response_bridge.py"
+      ],
+      "load_bearing_score": 9.395,
+      "note_path": "docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_cl3_selector_gap.py",
+      "transitive_descendants": 237
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -37165,6 +37192,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 59,
-  "total_pending": 1235
+  "ready_count": 60,
+  "total_pending": 1236
 }

@@ -1,0 +1,19 @@
+loop: koide-selector-gap-runner-registration-20260527
+branch: physics-loop/koide-selector-gap-repair-20260527
+target_claim_id: koide_cl3_selector_gap_note_2026-04-19
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+new_axioms: false
+files_touched:
+  - docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+runner_result: "PASS=26 FAIL=0"
+pipeline_result: "Pipeline complete; target ready=true"
+pr_url: null
+next_exact_action: "Open a draft review PR for the runner-backed open-gate repair."
+

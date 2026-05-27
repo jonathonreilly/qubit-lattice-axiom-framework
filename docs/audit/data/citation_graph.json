@@ -421,6 +421,30 @@
       "to": "sigma_hier_uniqueness_theorem_note_2026-04-19"
     },
     {
+      "from": "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27",
+      "to": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27",
+      "to": "native_gauge_closure_note"
+    },
+    {
+      "from": "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27",
+      "to": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
+    },
+    {
+      "from": "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27",
+      "to": "cpt_exact_note"
+    },
+    {
       "from": "accessible_prediction_note",
       "to": "action_normalization_note"
     },
@@ -39510,6 +39534,25 @@
       "path": "docs/ABCC_CP_PHASE_NO_GO_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_abcc_cp_phase_no_go_theorem.py",
       "title": "A-BCC CP-Phase No-Go Theorem"
+    },
+    "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27": {
+      "claim_id": "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
+        "native_gauge_closure_note",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "cpt_exact_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "89e13c4c542d321c7fbefb0546f794a33da3e07b30b54dd69e113f68983afdd3",
+      "path": "docs/ABJ_ANOMALY_FRAMEWORK_INTERNAL_U1_JACOBIAN_NARROW_NOTE_2026-05-27.md",
+      "runner_path": "scripts/abj_anomaly_framework_internal_u1_jacobian_runner.py",
+      "title": "ABJ Anomaly Framework-Internal U(1)_Y Jacobian Narrow Bridge"
     },
     "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10": {
       "claim_id": "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10",
@@ -85832,7 +85875,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 623,
+      "bounded_theorem": 624,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -85841,7 +85884,7 @@
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1040,
+      "bounded_theorem": 1041,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -85849,10 +85892,10 @@
       "open_gate": 127,
       "positive_theorem": 589
     },
-    "edge_count": 9788,
-    "leaf_count": 803,
-    "node_count": 2562,
+    "edge_count": 9794,
+    "leaf_count": 802,
+    "node_count": 2563,
     "root_count": 856,
-    "runners_with_path": 2138
+    "runners_with_path": 2139
   }
 }

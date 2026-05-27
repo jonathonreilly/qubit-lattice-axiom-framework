@@ -192,6 +192,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_abcc_cp_phase_no_go_theorem.py"
     },
+    "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/abj_anomaly_framework_internal_u1_jacobian_runner.py"
+    },
     "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10": {
       "assert_count": 0,
       "counts": {
@@ -26375,6 +26387,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/abj_anomaly_framework_internal_u1_jacobian_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "abj_anomaly_framework_internal_u1_jacobian_narrow_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py": {
@@ -56421,12 +56448,12 @@
     "dominant_class_distribution": {
       "A": 245,
       "B": 292,
-      "C": 760,
+      "C": 761,
       "D": 301,
       "none": 435
     },
-    "runners_classified": 2033,
-    "runners_with_C": 989,
+    "runners_classified": 2034,
+    "runners_with_C": 990,
     "runners_with_D": 597
   }
 }

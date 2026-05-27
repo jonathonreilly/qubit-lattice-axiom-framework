@@ -73,6 +73,16 @@ Cycle 8 orientation-biased phase-potential verification:
 - YAML validation passed.
 - `git diff --check` passed.
 
+Orientation-biased phase-potential science commit pushed and recorded in
+PR #1980:
+
+```text
+81c1c93897bbb809a42fbf6251b6684a011647e4
+```
+
+PR #1980 body was updated with the orientation-biased phase-potential no-go
+result, artifacts, verification, and next exact action.
+
 New strict-route result:
 
 ```text

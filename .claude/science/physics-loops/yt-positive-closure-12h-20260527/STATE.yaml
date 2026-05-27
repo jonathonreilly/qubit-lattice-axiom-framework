@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 30765
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T21:54:08Z"
+last_checkpoint_utc: "2026-05-27T21:57:07Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_orientation_biased_phase_potential_orbit_member_no_go
@@ -231,8 +231,11 @@ commands_run:
   - "python3 -m py_compile scripts/frontier_yt_c3_orientation_biased_phase_potential_orbit_member_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py -> PASS"
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
+  - "git commit -m 'Prune orientation-biased C3 phase-potential shortcut' -> 81c1c93897bbb809a42fbf6251b6684a011647e4"
+  - "git push -> branch updated"
+  - "gh pr edit 1980 --body-file /tmp/pr1980_body_new.md -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "PR #1980 body update pending for the orientation-biased phase-potential no-go result after the science commit is pushed."
-latest_science_commit: 3c3958dd4d8d3e20b66ff404e338d3b2c140fbae
+pr_status: "PR #1980 body updated with orientation-biased phase-potential no-go result, artifacts, verification, commit 81c1c93897bbb809a42fbf6251b6684a011647e4, and next exact action."
+latest_science_commit: 81c1c93897bbb809a42fbf6251b6684a011647e4
 next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls, or derive the accepted same-surface backend/projectors/source-generator matrix elements; if staying on C3, derive a genuinely new physical phase/orbit-member law beyond the existing reflection axis and scalar orientation bias."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

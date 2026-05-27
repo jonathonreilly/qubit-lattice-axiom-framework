@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 520 |
+| **retained_bounded** | 521 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1181 |
+| unaudited | 1180 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 818 |
+| `audited_clean` | 819 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1410 |
+| `unaudited` | 1409 |
 
 | claim_type | count |
 |---|---:|
@@ -188,6 +188,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `causal_impact_parameter_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2165,6 +2166,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The low-SNR cross-family replay is trustworthy as a diagnosis of the fixed-anchor replay harness boundary, not as a refutation or validation of the upstream center-family causal-field result.  _(class `C`)_
 - **chain closes:** True — The one-hop portability note is retained_bounded, and the current cached runner output matches the narrowed diagnostic: max |delta_y| = 0, max |field| = 0, forward-only ratio spread = 0.423, and dynamic(c=0.5)/instantaneous ratio spread = 0.352. Because the current scope excludes the archived center-family observable and any proof that source placement is the load-bearing cause, no missing upstream diagnostic is required for this bounded closure.
 - **rationale:** The absence of PASS markers does not block closure here because the runner source actually constructs the three configured families, selects the fixed nominal source anchor, computes the zero control and field-gated centroid shifts, and prints the finite diagnostic rows rather than hard-coding the contested conclusion. The retained portability dependency plus the current cache support only the bounded harness-boundary reading, not a cross-family portability theorem and not a field-theory derivation. Boundary language is clean only at this finite-runner scope; it is not a no-go over all source registrations or carrier choices.
+
+### `causal_impact_parameter_note`
+
+- **Note:** [`CAUSAL_IMPACT_PARAMETER_NOTE.md`](../../docs/CAUSAL_IMPACT_PARAMETER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite diagnostic on the runner-configured candidate retained-grade center grown family using the runner-defined growth, propagation, source selection, field, detector z-centroid metric, impact-parameter values, field strength, and log-log fit choices. It supports only that, in this finite harness, the exact-null control is zero and the tested causal-field variants do not preserve a recognizable impact-parameter law shape, with the finite-cone dynamic case diagnosed as the boundary. It does not claim a physical field theory, general carrier/metric theorem, retained growth theorem, seed/field-strength stability, or general impact-parameter law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-sagan-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The primary runner defines a finite center-grown-family impact-parameter sweep, computes zero-control and causal-field detector centroid shifts under instantaneous, forward-only, and finite-cone variants, fits runner-defined log-log alpha/R2 values, and the source note reports the same finite diagnostic without deriving or importing a physical carrier/metric/growth theorem.  _(class `C`)_
+- **chain closes:** True — The source note is exactly mirrored by the primary runner output. The runner exits cleanly and reports the same zero-control values, alpha/R2/toward table, and conclusion; the helper only supplies runner-defined finite growth and propagation machinery.
+- **rationale:** The note closes as a bounded finite diagnostic. Its numerical claims match the runner output, and its conclusion is negative/boundary-scoped rather than a broad physical or portability theorem. The potentially loaded wording around the retained center family is acceptable here as runner-defined setup because the audited scope is restricted to the configured finite harness and does not use the retained center-family result as an independent theorem.
+- **auditor confidence:** high
 
 ### `causal_propagating_field_note`
 

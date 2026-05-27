@@ -1,6 +1,6 @@
-# β·g_bare² = 2 N_c Rescaling-Invariance Bounded Identity Note
+# β·g_bare² = 2 N_c Conditional Wilson-Matching Arithmetic Lemma
 
-**Date:** 2026-05-08
+**Date:** 2026-05-08. Repair narrowing: 2026-05-27.
 **Claim type:** bounded_theorem
 **Proposal allowed:** false
 **Status authority:** source-note proposal only; audit verdict and
@@ -10,81 +10,106 @@ effective status are set by the independent audit lane.
 
 ## Claim
 
-The dimensionless identity
+This row is an explicitly conditional arithmetic lemma. It assumes the
+Wilson action-surface matching premise
+
+```text
+WM:  β = 2 N_c / g_bare²
+```
+
+for positive `g_bare²` and fixed color rank `N_c`. The Wilson matching
+premise is not proved here, is not a retained conclusion of this row, and
+is not imported from any Ward-route coupling-closure note.
+
+Under `WM`, the product identity
 
 ```text
 β · g_bare² = 2 N_c
 ```
 
-is a direct algebraic consequence of the Wilson small-`a` matching
-relation `β = 2 N_c / g_bare²` carried by
-[`G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`](G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md).
-Under the generator-basis rescaling `T_a → c · T_a` (equivalently
-`A → c · A`) established by
+is ordinary algebra. Under the scoped generator-basis rescaling map
+`T_a -> c · T_a` (equivalently `A -> c · A`) discussed by
 [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md),
-which sends `β → c² · β`, holding the product `β · g_bare² = 2 N_c`
-fixed forces the companion mapping `g_bare² → g_bare² / c²`. The product
+the matched coefficient transforms as `β -> c² · β` when `WM` is held as
+the action-surface premise. Pairing that map with
+`g_bare² -> g_bare² / c²` gives
 
 ```text
-β'(c) · g_bare'²(c) = (c² β) · (g_bare² / c²) = β · g_bare² = 2 N_c
+β'(c) · g_bare'²(c)
+  = (c² β) · (g_bare² / c²)
+  = β · g_bare²
+  = 2 N_c.
 ```
 
-is therefore invariant under the rescaling. Verified at exact rational
-precision for `c ∈ {1/2, 1, 2, 3}`.
+The pure algebraic core is the already audited standalone identity in
+[`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md),
+specialized only by naming the abstract variables as `(g, N) =
+(g_bare, N_c)`. The physical Wilson-surface interpretation remains
+conditional on `WM`.
 
-This note is a bounded arithmetic identity. It does not introduce a new
-axiom, does not modify the retained theorem family, and does not promote
-any status row.
+This note does not introduce a new axiom, does not prove Wilson matching,
+does not modify the retained theorem family, and does not promote any
+status row.
 
-## Imported Authorities
+## Inputs and Authorities
 
-| Authority | Role |
+| Item | Role |
 |---|---|
-| [`G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`](G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md) | supplies the Wilson small-`a` matching relation `β = 2 N_c / g_bare²` used as input here |
-| [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | supplies the `T_a → c · T_a` (equivalently `A → c · A`) generator-basis rescaling and the `β → c² · β` mapping used as input here |
+| Explicit premise `WM: β = 2 N_c / g_bare²` | scoped Wilson action-surface assumption; not derived or imported as a retained theorem here |
+| [`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) | retained pure polynomial-algebra identity for `β(g,N)=2N/g²`, `β(g/c,N)=c²β(g,N)`, and invariance of `β·g²` |
+| [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | scoped generator-basis rescaling map; it also treats Wilson matching as an input rather than deriving it |
 
-Both are imported authorities for a bounded arithmetic identity. The row
-remains unaudited until the independent audit lane reviews this note,
-its dependencies, and the runner.
+The dependency structure is therefore: retained abstract algebra plus a
+scoped rescaling map, with `WM` declared as an explicit premise. No
+Ward-route coupling-closure result is used as authority for `WM`.
 
 ## Arithmetic Identity Table
 
-For `N_c = 3`, the imported Wilson small-`a` matching gives
-`β · g_bare² = 2 · 3 = 6`. With the imported generator-basis rescaling
-mapping `β → c² · β`, the companion mapping that holds the product
-fixed is `g_bare² → g_bare² / c²`. The single-row arithmetic table:
+Let `q = g_bare² > 0` and assume `WM`, so `β = 2 N_c / q`. For any
+positive rational rescaling `c`,
 
-| `c` | `β'(c) = c² · β` | `g_bare'²(c) = g_bare² / c²` | product `β'(c) · g_bare'²(c)` |
+```text
+β'(c) = c² · β,
+g_bare'²(c) = q / c²,
+β'(c) · g_bare'²(c) = 2 N_c.
+```
+
+For the representative specialization `N_c = 3` and `q = 1`, the exact
+rational table is:
+
+| `c` | `β'(c) = c² · β` | `g_bare'²(c) = q / c²` | product `β'(c) · g_bare'²(c)` |
 |---|---|---|---|
-| `1/2` | `β / 4` | `4 · g_bare²` | `2 N_c` |
-| `1`   | `β`     | `g_bare²`     | `2 N_c` |
-| `2`   | `4 · β` | `g_bare² / 4` | `2 N_c` |
-| `3`   | `9 · β` | `g_bare² / 9` | `2 N_c` |
+| `1/2` | `3/2` | `4` | `6 = 2 N_c` |
+| `1` | `6` | `1` | `6 = 2 N_c` |
+| `2` | `24` | `1/4` | `6 = 2 N_c` |
+| `3` | `54` | `1/9` | `6 = 2 N_c` |
 
-The runner verifies each row at exact rational precision using
-`fractions.Fraction`, with the representative substitution
-`β = 2 N_c / g_bare² = 6` at the canonical `g_bare² = 1` value carried
-by `G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`. The product equals
-`2 N_c = 6` exactly for every row.
+The representative `q = 1` row is only a test point for the conditional
+arithmetic. It is not a derivation of a physical canonical value for
+`g_bare`.
 
 ## Boundaries
 
-This is a **bounded arithmetic identity only**. In particular, this
-note does not establish, and does not claim to establish:
+This is a **conditional bounded arithmetic lemma only**. In particular,
+this note does not establish, and does not claim to establish:
 
-- a continuum-limit statement about `β` or `g_bare` at `a → 0`;
-- any retention or promotion of `g_bare = 1` or any other `g_bare` lane;
-- any modification of the imported Wilson small-`a` matching relation;
-- any modification of the imported generator-basis rescaling theorem;
-- any new claim about the action form (Wilson plaquette vs Symanzik vs
-  improved actions remain outside this scope);
-- any new claim about the canonical Cl(3) connection normalization
-  `Tr(T_a T_b) = δ_ab / 2` itself;
+- Wilson matching `β = 2 N_c / g_bare²` from the framework axioms;
+- a Wilson plaquette action selector, Symanzik/improved-action exclusion,
+  or continuum-limit theorem;
+- any retention or promotion of `g_bare = 1` or any other physical
+  coupling lane;
+- that a Ward-route coupling-closure theorem carries the Wilson matching
+  premise;
+- a modification of the imported abstract polynomial identity;
+- a modification of the scoped generator-basis rescaling theorem;
+- a new claim about canonical Cl(3) connection normalization
+  `Tr(T_a T_b) = δ_ab / 2`;
 - any parent theorem/status promotion.
 
-The single load-bearing step is class (A) algebraic substitution
-verified at exact rational precision for the four enumerated `c`
-values.
+The single load-bearing step is class (A) algebraic substitution under
+the explicit `WM` premise, verified at exact rational precision for the
+enumerated `c` values and additional positive rational `g_bare²` values.
+The runner performs these checks with Python `fractions.Fraction`.
 
 ## Verification
 
@@ -98,7 +123,7 @@ Expected:
 
 ```text
 TOTAL: PASS=N FAIL=0
-VERDICT: bounded arithmetic identity passes; β · g_bare² = 2 N_c is
-invariant under the imported generator-basis rescaling for c ∈ {1/2, 1,
-2, 3} at exact rational precision.
+VERDICT: conditional bounded arithmetic lemma passes; assuming WM,
+β · g_bare² = 2 N_c is invariant under the scoped joint rescaling for
+c ∈ {1/2, 1, 2, 3} at exact rational precision.
 ```

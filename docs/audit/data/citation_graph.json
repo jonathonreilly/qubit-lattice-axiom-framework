@@ -1886,11 +1886,11 @@
     },
     {
       "from": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-      "to": "g_bare_two_ward_closure_note_2026-04-18"
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
       "from": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      "to": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "bh_entropy_derived_note",
@@ -42466,14 +42466,14 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "g_bare_two_ward_closure_note_2026-04-18",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "763acf8c2b0e3f54c44bb4b46c10e15f5e7d8f5f3926fac564f0abebb016e60a",
+      "note_hash": "ca4582a927596369d6117125d42ae0cfed030ee4838a6a1710d087214a2a425f",
       "path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
       "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
-      "title": "\u03b2\u00b7g_bare\u00b2 = 2 N_c Rescaling-Invariance Bounded Identity Note"
+      "title": "\u03b2\u00b7g_bare\u00b2 = 2 N_c Conditional Wilson-Matching Arithmetic Lemma"
     },
     "beyond_lattice_qcd_note": {
       "claim_id": "beyond_lattice_qcd_note",
@@ -85503,7 +85503,7 @@
       "positive_theorem": 590
     },
     "edge_count": 9745,
-    "leaf_count": 797,
+    "leaf_count": 796,
     "node_count": 2552,
     "root_count": 855,
     "runners_with_path": 2128

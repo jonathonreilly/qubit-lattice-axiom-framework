@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""PR230 source-side covariance normalization support gate.
+"""Y_T source-action source-side covariance normalization support gate.
 
 This runner checks the finite-support Schwinger-Dyson/Feynman-Hellmann
-identity for the PR230 product RN source packet:
+identity for the Y_T source-action product RN source packet:
 
     d log Z / dh_i = <epsilon_i>
     d^2 log Z / dh_i dh_j = Cov(epsilon_i, epsilon_j)
@@ -21,9 +21,9 @@ from typing import Callable
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-OUTPUT = ROOT / "outputs" / "yt_pr230_source_covariance_normalization_support_2026-05-24.json"
-NOTE = DOCS / "YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md"
-PR230_NOTE = DOCS / "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md"
+OUTPUT = ROOT / "outputs" / "yt_source_covariance_normalization_support_2026-05-24.json"
+NOTE = DOCS / "YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md"
+SOURCE_ACTION_NOTE = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 POLE_NOGO = DOCS / "YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
@@ -138,12 +138,12 @@ def max_matrix_error(a: list[list[float]], b: list[list[float]]) -> float:
 
 def part1_anchors() -> None:
     print("\nPart 1: anchors")
-    for path in (NOTE, PR230_NOTE, POLE_NOGO, LEDGER):
+    for path in (NOTE, SOURCE_ACTION_NOTE, POLE_NOGO, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
     note = read(NOTE)
     check("note declares bounded_theorem", "**Claim type:** bounded_theorem" in note)
-    check("note registers this runner", "scripts/frontier_yt_pr230_source_covariance_normalization_support.py" in note)
-    check("note cites PR230 consolidated packet", "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md" in note)
+    check("note registers this runner", "scripts/frontier_yt_source_covariance_normalization_support.py" in note)
+    check("note cites Y_T source-action support packet", "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md" in note)
     check("note cites pole-row normalization no-go", "YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md" in note)
 
 
@@ -227,7 +227,7 @@ def part5_firewalls() -> None:
 def write_output(grad_error: float, hessian_error: float) -> None:
     payload = {
         "generated_at": "2026-05-24T00:00:00Z",
-        "claim": "PR230 product RN source coordinate fixes source-side connected covariance row",
+        "claim": "Y_T source-action product RN source coordinate fixes source-side connected covariance row",
         "claim_type_author_hint": "bounded_theorem",
         "status_authority": "independent_audit_lane_only",
         "direct_effective_status_change_allowed_from_this_note": False,
@@ -247,7 +247,7 @@ def write_output(grad_error: float, hessian_error: float) -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("PR230 SOURCE-COVARIANCE NORMALIZATION SUPPORT")
+    print("Y_T SOURCE-COVARIANCE NORMALIZATION SUPPORT")
     print("=" * 88)
     part1_anchors()
     grad_error, hessian_error = part2_fh_covariance_identity()

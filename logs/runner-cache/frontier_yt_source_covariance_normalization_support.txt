@@ -1,23 +1,23 @@
 ===== runner cache v1 =====
-runner: scripts/frontier_yt_pr230_source_covariance_normalization_support.py
-runner_sha256: 442eeaa8519a7c8d23c3daf29bf9718cc8a8d8b668ed96693ed5401b3eb62032
+runner: scripts/frontier_yt_source_covariance_normalization_support.py
+runner_sha256: 2874560a7d1ba1cbce2cc9fd0085dcbe8e8f3bdc9bf4a1a2f4f23d0aadf91c5b
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
-PR230 SOURCE-COVARIANCE NORMALIZATION SUPPORT
+Y_T SOURCE-COVARIANCE NORMALIZATION SUPPORT
 ========================================================================================
 
 Part 1: anchors
-[PASS] docs/YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md exists
-[PASS] docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md exists
+[PASS] docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
 [PASS] docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md exists
 [PASS] docs/audit/data/audit_ledger.json exists
 [PASS] note declares bounded_theorem
 [PASS] note registers this runner
-[PASS] note cites PR230 consolidated packet
+[PASS] note cites Y_T source-action support packet
 [PASS] note cites pole-row normalization no-go
 
 Part 2: finite-support FH covariance identity
@@ -52,7 +52,7 @@ Part 5: firewalls
 [PASS] forbidden overclaim absent: y_t =
 [PASS] forbidden overclaim absent: m_t =
 [PASS] forbidden overclaim absent: sqrt(8/9) as an unconditional
-wrote outputs/yt_pr230_source_covariance_normalization_support_2026-05-24.json
+wrote outputs/yt_source_covariance_normalization_support_2026-05-24.json
 
 ========================================================================================
 RESULT: PASS=33 FAIL=0

@@ -7,7 +7,7 @@
 
 ## Claim Boundary
 
-This note proves a narrow negative boundary for PR230's source-Higgs pole-row
+This note proves a narrow negative boundary for Y_T source-action's source-Higgs pole-row
 route:
 
 > Strict `C_ss/C_sH/C_HH` single-pole rows and the Gram-purity identity
@@ -27,8 +27,8 @@ from the current Cl(3)/Z^3 substrate.
 Load-bearing algebra in this note is self-contained. The following repo
 surfaces are context for the target and the remaining open gates:
 
-- [`YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`](YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
-  records the current minimum PR230 support packet and lists the remaining
+- [`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
+  records the current minimum Y_T source-action support packet and lists the remaining
   gates: same-surface source/action authority, canonical `O_H`, scalar LSZ
   normalization, strict pole rows or W/Z bypass, and matching/running.
 - [`YT_COLOR_PROJECTION_CORRECTION_NOTE.md`](YT_COLOR_PROJECTION_CORRECTION_NOTE.md)
@@ -122,7 +122,7 @@ connected-trace specialization from the full-trace completion. Selecting
 `kappa_Y = 0` still requires an independent canonical-normalization theorem,
 not merely cleaner pole rows.
 
-## Consequence For PR230
+## Consequence For The Y_T Source-Action Lane
 
 Strict `C_ss/C_sH/C_HH` rows are still useful evidence. They can support:
 
@@ -185,7 +185,7 @@ separate.
 
 ### N4 - Residual Matching
 
-This no-go matches the remaining PR230 residual identified in the consolidated
+This no-go matches the remaining Y_T source-action residual identified in the consolidated
 status note: source-Higgs pole rows or a W/Z bypass are still open only after
 canonical source/action and scalar normalization are supplied. The result does
 not duplicate the color-projection no-go, which concerns Fierz/channel-count

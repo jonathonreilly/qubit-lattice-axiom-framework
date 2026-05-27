@@ -16,8 +16,8 @@ OUTPUT = ROOT / "outputs" / "yt_signed_linear_democratic_tangent_physical_bridge
 
 NOTE = DOCS / "YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
-SOURCE_ACTION = DOCS / "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md"
-LSP_SOURCE = DOCS / "YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
+SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+LSP_SOURCE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
 ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
 SYMBOLIC_TOP = DOCS / "YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md"
 SIGNED_LINEAR = DOCS / "YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md"
@@ -74,8 +74,8 @@ def part1_anchors() -> dict[str, Any]:
         check(f"note contains required section: {phrase}", phrase in note)
 
     statuses = {
-        "source_action": ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22").get("effective_status"),
-        "lsp_source": ledger_row("yt_" + "pr" + "230_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
+        "source_action": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
+        "lsp_source": ledger_row("yt_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
         "one_higgs": ledger_row("sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26").get("effective_status"),
         "ew_mass": ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26").get("effective_status"),
     }

@@ -25,7 +25,7 @@ DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_fh_top_w_response_ratio_gate_2026-05-25.json"
 
 NOTE = DOCS / "YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md"
-SOURCE_ACTION_STATUS = DOCS / ("YT_" + "PR" + "230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md")
+SOURCE_ACTION_STATUS = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 POLE_NOGO = DOCS / "YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
 EW_COUPLING = DOCS / "EW_COUPLING_DERIVATION_NOTE.md"
@@ -86,7 +86,7 @@ def part1_anchors() -> dict[str, Any]:
         check(f"note contains required section: {phrase}", phrase in note)
 
     ew_mass_row = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
-    source_action_row = ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22")
+    source_action_row = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     pole_row = ledger_row("yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23")
     ew_coupling_row = ledger_row("ew_coupling_derivation_note")
 

@@ -1,6 +1,6 @@
 {
   "audit_required_before_effective_status_change": true,
-  "claim": "PR230 primitive signed RN source record equals native LSP Pauli signed readout",
+  "claim": "Y_T source-action primitive signed RN source record equals native LSP Pauli signed readout",
   "claim_type_author_hint": "bounded_theorem",
   "direct_effective_status_change_allowed_from_this_note": false,
   "fail_count": 0,

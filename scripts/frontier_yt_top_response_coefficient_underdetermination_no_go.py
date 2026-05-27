@@ -70,7 +70,7 @@ def part1_anchors() -> dict[str, Any]:
     ):
         check(f"note contains required section: {phrase}", phrase in note)
 
-    source_action = ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22")
+    source_action = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     one_higgs = ledger_row("sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26")
     color_nogo = ledger_row("yt_color_projection_correction_note")
     color_fraction = ledger_row("yukawa_color_projection_theorem")

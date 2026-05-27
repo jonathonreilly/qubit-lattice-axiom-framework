@@ -71,7 +71,7 @@ def part1_anchors() -> dict[str, Any]:
         check(f"note contains required section: {phrase}", phrase in note)
 
     statuses = {
-        "source_action": ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22").get("effective_status"),
+        "source_action": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
         "ew_mass": ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26").get("effective_status"),
     }
     check("source-action support is retained_bounded", statuses["source_action"] == "retained_bounded")

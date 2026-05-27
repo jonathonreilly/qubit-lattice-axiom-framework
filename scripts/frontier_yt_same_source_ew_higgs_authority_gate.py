@@ -27,7 +27,7 @@ DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_same_source_ew_higgs_authority_gate_2026-05-25.json"
 
 NOTE = DOCS / "YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md"
-SOURCE_ACTION_STATUS = DOCS / ("YT_" + "PR" + "230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md")
+SOURCE_ACTION_STATUS = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 FH_GATE = DOCS / "YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md"
 NEUTRAL_RAY_BRIDGE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
 STRICT_WZ_PACKET = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
@@ -103,7 +103,7 @@ def part1_anchors() -> dict[str, Any]:
     for phrase in required:
         check(f"note contains required section: {phrase}", phrase in note)
 
-    source_action_row = ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22")
+    source_action_row = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     ew_mass_row = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
     check("source-action support status is retained_bounded", source_action_row.get("effective_status") == "retained_bounded")
     check("EW Higgs gauge-mass theorem is retained", ew_mass_row.get("effective_status") == "retained")

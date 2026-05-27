@@ -19,15 +19,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 147 |
-| **retained_no_go** | 171 |
-| **retained_bounded** | 535 |
+| **retained_no_go** | 168 |
+| **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1173 |
+| unaudited | 1183 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 68 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -56,13 +56,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 834 |
-| `audited_conditional` | 68 |
+| `audited_clean` | 828 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1402 |
+| `unaudited` | 1412 |
 
 | claim_type | count |
 |---|---:|
@@ -949,14 +949,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_pr230_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `yt_top_coefficient_full_court_press_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -1024,10 +1018,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
-| `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
-| `yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -14696,97 +14686,6 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **decoration parent:** `yt_ew_color_projection_theorem`
 - **auditor confidence:** high
 
-### `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25`
-
-- **Note:** [`YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md`](../../docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded claim that an assumed operational finite-volume RN/log-odds source family for a normalized local operator algebraically gives the source-coupled action form and lambda=1 primitive coordinate; not the physical top-Yukawa intervention identification.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T200939Z-3e7d9c39-yt_operational_source_ac-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The RN source density R_h = exp(h O) / E_0[exp(h O)] implies S_h = S_0 - h O + c(h) I, hence -dS_h/dh = O modulo identity.  _(class `A`)_
-- **chain closes:** False — The RN-to-action identity closes once the operational RN source family is assumed. The restricted packet does not derive or cite retained authority for identifying the physical top Yukawa deformation with the primitive RN source intervention for O_top.
-- **rationale:** The finite-dimensional RN/log-density step is valid algebra, and the runner's substantive computations are SymPy checks of that algebra plus the six-component normalization. The runner does not derive the operational source premise or the top Yukawa intervention identification from the baseline; its boundary checks acknowledge that gap. Because the restricted packet imports an unclosed physical bridge, the result is conditional support rather than audited clean closure.
-- **auditor confidence:** high
-
-### `yt_pr230_consolidated_status_note_2026-05-22`
-
-- **Note:** [`YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`](../../docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact finite-support algebraic equivalence between a product RN source family on signed one-site records and a site-diagonal source-coupled local action, with no physical Y_T closure claimed.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125721Z-e42b4824-yt_pr230_consolidated_st-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** If S_h = S_0 - sum_x h_x epsilon_x, then exp(-S_h) / exp(-S_0) = exp(sum_x h_x epsilon_x), which is exactly the same RN family after normalization.  _(class `A`)_
-- **chain closes:** True — The bounded support identity follows by direct finite algebra from the displayed definitions of R_h, W_h, and S_h. The physical neutral EW/Higgs authority gate is explicitly outside the audited scope.
-- **rationale:** The load-bearing step is a direct algebraic identity over the finite signed-record definitions, and the runner source genuinely computes finite RN densities, composition, the origin score, and action equivalence rather than merely printing constants. The packet does not claim physical top-Yukawa closure or same-surface neutral EW/Higgs authority, so the listed unresolved physics gates do not block the bounded support theorem. No-Go Discipline check: the negative boundary is scoped to non-closure of Y_T rather than a broad impossibility claim; same-packet evidence lists multiple independent missing gates and the runner verifies absence of strict source-Higgs rows and W/Z bypass, so no N1-N8 blocker defeats the bounded verdict.
-- **auditor confidence:** high
-
-### `yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24`
-
-- **Note:** [`YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Narrow algebraic support that the PR230 primitive signed RN source record has a native one-site Pauli sharp-projective signed readout carrier, with the exponential RN family fixed by smooth normalized source composition and origin score.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T124703Z-b1dc7602-yt_pr230_lsp_signed_reco-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** At h = 0, d log R_h / d h_x = epsilon_x, and under the sigma_z sharp-projective readout this is the signed spectral outcome in {-1,+1}.  _(class `A`)_
-- **chain closes:** True — Within the stated readout-carrier scope, the chain closes from the supplied retained-grade LSP projective rule, the qubit axiom premise, and the retained_bounded PR230 source packet. It does not close or rely on source/action authority, Higgs-operator identification, LSZ normalization, pole rows, or Yukawa matching.
-- **rationale:** The load-bearing work is algebraic: Pauli spectral projections give the signed observable sigma_z with spectrum {-1,+1}, and the product RN source score at the origin is epsilon_x. The uniqueness corollary follows from normalized multiplication giving additive smooth log-odds with coefficients fixed by the origin score. The non-axiom cited authorities are retained_bounded, the axiom node is explicitly flagged as an axiom premise, and the runner performs actual matrix, RN, composition, and boundary checks without external comparators or tuned numerical inputs.
-- **auditor confidence:** high
-
-### `yt_pr230_source_covariance_normalization_support_note_2026-05-24`
-
-- **Note:** [`YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_PR230_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact finite-support source-side covariance normalization in the fixed PR230 RN signed-record source coordinate.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T125132Z-dd10b518-yt_pr230_source_covarian-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For the finite RN source family, differentiating log Z with respect to h_x gives <epsilon_x>_h and differentiating again gives Cov_h(epsilon_x, epsilon_y).  _(class `A`)_
-- **chain closes:** True — The derivative and Hessian identities follow by finite-sum differentiation of the RN partition function, and the cited PR230 packet supplies the fixed signed-record source coordinate. The conclusion is bounded to the source-side row and does not import scalar/Higgs normalization.
-- **rationale:** The load-bearing step is a genuine algebraic closure over a finite positive-support RN source family, and the runner independently checks the finite-gradient/Hessian covariance identity plus the fixed-coordinate rescaling boundary. Both cited authorities are retained-grade under the rubric: the PR230 packet is retained_bounded and the pole-row boundary is retained_no_go. No-Go Discipline check for the residual scalar/Higgs walls passes: the packet enumerates alternate routes, keeps source-side and scalar-side normalization independent, scans hidden canonical/LSZ language, matches the cited pole-row residual, narrows the non-closure wording, preserves a convention/redefinition distinction, states the strongest future-theorem escape, and uses only same-packet boundary evidence.
-- **auditor confidence:** high
-
-### `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25`
-
-- **Note:** [`YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`](../../docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md)
-- **claim_type:** `no_go`
-- **claim_scope:** The current qubit-on-Z^3 baseline plus the enumerated scale-blind support structures does not select the primitive physical source/action unit lambda=1 for the top Yukawa tangent.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T194734Z-0d934431-yt_primitive_unit_source-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The one-parameter family dS_lambda/dh|_{h=0}=lambda * sum_i u_dem(i) O_i preserves the enumerated normalized/projective structures while changing y_33(lambda)=lambda/sqrt(6).  _(class `A`)_
-- **chain closes:** True — The lambda-scaled tangent normalizes to the same democratic ray and preserves the signed/projective data while y_33 varies as lambda/sqrt(6). Within the restricted packet, the baseline supplies no physical source coordinate that selects lambda=1.
-- **rationale:** The load-bearing step is an algebraic counterfamily, not a tuned numerical match or a definition of lambda=1. The runner source performs symbolic normalization, probability, coefficient, and signed-score checks, plus text/status/firewall checks; it does not hard-code the contested primitive-unit premise as a positive closure. The no-go gate passes on the restricted packet: at least five routes are enumerated, the residual collapses to the physical source/action unit, hidden premise language is explicit, and future theorem or direct-measurement routes remain live.
-- **auditor confidence:** medium
-
-### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`
-
-- **Note:** [`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the finite-dimensional democratic-source statement: an S_6-invariant unit vector on a six-component Q_L carrier has component amplitude 1/sqrt(6), not its identification with y_33 or y_t.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201356Z-14601ab0-yt_qubit_democratic_top_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The unique unit vector in C^6 invariant under all S_6 permutations is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).  _(class `A`)_
-- **chain closes:** True — The finite-dimensional invariant-vector result follows by standard linear algebra once the six-component carrier and full S_6 democracy are taken as the scoped setup. The physical bridge identifying this amplitude with the top Yukawa coefficient remains explicitly outside the claimed closure.
-- **rationale:** The mathematical component-amplitude result is a clean algebraic consequence of S_6 invariance and unit normalization, and the runner source genuinely checks that finite-dimensional computation rather than merely printing PASS. However, the note's physical relevance depends on an explicitly open bridge: strict top coefficient equals democratic Q_L component amplitude. Under the no-go discipline gate for a bounded residual admission, N1 cannot enumerate five same-packet attack routes that close or independently test that bridge; the restricted packet only states the bridge is future work.
-- **auditor confidence:** high
-
-### `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25`
-
-- **Note:** [`YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the finite-dimensional fork that qubits on Z^3 alone do not select a C^6 component, while an S6-democratic source has component amplitude 1/sqrt(6) and projective weight 1/6.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201448Z-124d7727-yt_qubit_signed_linear_s-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The physical Yukawa coefficient is the signed linear action-tangent component of the democratic Q_L source.  _(class `F`)_
-- **chain closes:** False — The finite-dimensional democratic-source calculation closes, but the claimed bridge to the strict top Yukawa coefficient is explicitly left open. The missing step is a retained source/action theorem identifying the physical top Yukawa coefficient with the signed linear action-tangent component.
-- **rationale:** The runner verifies algebraic facts about normalized vectors, S6 democracy, projective weights, and linear source tangents, and it checks retained-grade ledger statuses for upstream support. It does not derive the physical Yukawa identification; the note itself states that this bridge remains open. No-Go gate N1 fails for a clean bounded negative boundary because the packet does not enumerate five independent attack routes to exclude alternative bridge closures.
-- **auditor confidence:** high
-
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`
 
 - **Note:** [`YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md`](../../docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md)
@@ -14800,32 +14699,6 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **rationale:** The load-bearing step is ordinary finite-dimensional color algebra, not a definition, numerical fit, or external comparator. The cited upstream authority is retained_no_go and supplies the conditional kappa_Y family that this note targets; the current note does not import the open kappa_Y selector as a premise. The restricted packet satisfies the no-go gate: it enumerates six routes, collapses independent walls, scans hidden assumptions, matches the cited residual, narrows rhetoric, leaves partial closure paths open, gives a steelman, and uses same-packet cross-cycle evidence.
 - **auditor confidence:** high
 
-### `yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25`
-
-- **Note:** [`YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md`](../../docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded claim that the normalized democratic signed-linear tangent gives y_33=1/sqrt(6) only under an explicit primitive-unit physical source/action premise, and otherwise leaves an exact lambda obstruction.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201844Z-5afc4927-yt_signed_linear_democra-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Without the primitive-unit physical-source premise, the family dS_lambda/ds|0 = lambda * sum_i u_dem(i) O_i preserves the cited structural supports while giving y_33(lambda)=lambda/sqrt(6).  _(class `A`)_
-- **chain closes:** False — The bounded obstruction closes algebraically, but the positive physical Yukawa bridge does not close. The missing step is a retained derivation or accepted theorem that the physical top Yukawa deformation is the primitive unit signed-record source/action tangent.
-- **rationale:** The runner verifies algebraic normalization, the democratic tangent component, and the lambda counterfamily; it does not derive the primitive physical source unit from the restricted inputs. The cited no-go authority is retained_no_go and directly matches the residual, but the source note itself keeps the key identification open. No-Go Discipline is satisfied within the packet: multiple routes are enumerated, the wall collapses to the source-unit premise, hidden premise language is explicit, the residual matches, the negative scope is narrow, convention/direct-response closure paths remain open, the steelman does not defeat the current-surface obstruction, and the analogy to prior scale-blind walls is same-packet only.
-- **auditor confidence:** high
-
-### `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23`
-
-- **Note:** [`YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md`](../../docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Strict single-pole C_ss/C_sH/C_HH Gram-purity rows can certify common-pole support but cannot by themselves determine absolute scalar/source normalization or select kappa_Y = 0.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T204108Z-ca660075-yt_source_higgs_pole_row-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under independent source/Higgs rescalings s -> mu s and H -> lambda H, Gram purity and effective mass are unchanged while absolute residues scale, so lambda^2 = 9/8 can absorb the K_Y(1)/K_Y(0) ambiguity.  _(class `A`)_
-- **chain closes:** True — The rescaling algebra gives an explicit invariance witness: pole mass, Gram determinant, and normalized rank-one residue ratios are unchanged while the absolute normalization moves. Since the retained K_Y family differs between kappa_Y = 0 and kappa_Y = 1 by a squared-normalization factor 9/8, pole-row purity alone cannot distinguish them.
-- **rationale:** The load-bearing step is elementary algebra over the single-pole row and the retained K_Y(kappa_Y) family, with no numerical comparator or fitted input. The runner source genuinely checks the Gram determinant, mass-ratio invariance, normalized-residue cancellation, and 9/8 absorption using exact rational arithmetic. The No-Go Discipline gate passes: the packet enumerates five attack routes, keeps the normalization wall narrow, and leaves canonical O_H/LSZ or physical-response routes explicitly open.
-- **auditor confidence:** high
-
 ### `yt_ssb_matching_gap_analysis_note_2026-04-18`
 
 - **Note:** [`YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md`](../../docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md)
@@ -14837,19 +14710,6 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
-- **auditor confidence:** high
-
-### `yt_top_coefficient_full_court_press_note_2026-05-25`
-
-- **Note:** [`YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md`](../../docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md)
-- **claim_type:** `no_go`
-- **claim_scope:** The audited claim is the narrow negative boundary that carrier, W/Z denominator response, and one-Higgs gauge/operator selection do not determine the top Yukawa coefficient y_33.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T201939Z-716bec50-yt_top_coefficient_full_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** A one-dimensional gauge intertwiner fixes the up-type Yukawa operator only up to an arbitrary scalar, and for three generations gauge symmetry leaves the entries of Y_u, including y_33, as continuous moduli.  _(class `A`)_
-- **chain closes:** True — The algebra in the packet shows the top/W response ratio retains an arbitrary numerator coefficient and the gauge/operator constraints do not contain y_33. The closure is only for the current structural route, while direct response, signed-linear tangent, democratic source-response, and new flavor-principle routes remain live.
-- **rationale:** The runner source does not hard-code a top Yukawa value or import an observed mass; its load-bearing computation is the symbolic underdetermination check that y_33 remains arbitrary under the displayed constraints. The note's negative wording is scoped to carrier + W/Z + one-Higgs gauge-selection algebra and explicitly preserves the live measurement and new-principle routes. The No-Go Discipline gate passes within the restricted packet: N1 names more than five attack routes, N2 collapses the walls to the single top-coefficient residual, N3-N6 keep live bridges explicit, and N7-N8 do not defeat the narrow no-go.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_derivation_theorem`

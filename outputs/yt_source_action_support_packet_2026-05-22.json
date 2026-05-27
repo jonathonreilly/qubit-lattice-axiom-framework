@@ -30,9 +30,9 @@
     "only after physical input exists, run matching/running and retained-proposal gates"
   ],
   "review_surface": [
-    "docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md",
-    "scripts/frontier_yt_pr230_consolidated_status.py",
-    "outputs/yt_pr230_consolidated_status_2026-05-22.json"
+    "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+    "scripts/frontier_yt_source_action_support_packet.py",
+    "outputs/yt_source_action_support_packet_2026-05-22.json"
   ],
   "source_action_gate_accepted": false,
   "strict_source_higgs_rows_present": false,

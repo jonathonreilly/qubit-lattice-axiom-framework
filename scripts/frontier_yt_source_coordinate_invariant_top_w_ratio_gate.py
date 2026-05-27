@@ -81,7 +81,7 @@ def part1_anchors() -> dict[str, Any]:
         check(f"note contains required section: {phrase}", phrase in note)
 
     ew_mass = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
-    source_action = ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22")
+    source_action = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     check("EW Higgs gauge-mass theorem is retained", ew_mass.get("effective_status") == "retained")
     check("source-action support packet remains retained_bounded only", source_action.get("effective_status") == "retained_bounded")
     return {

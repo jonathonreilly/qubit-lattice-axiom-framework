@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_source_action_support_packet.py
+runner_sha256: 8ba4439e09f5e0ce6b0bd2d3f1cb7749937fcece9fd179373b6fe41a6e679f73
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Y_T source-action support packet
+========================================================================
+PASS: note-present: docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md
+PASS: product-rn-composes-by-source-addition: 6.938893903907228e-17
+PASS: origin-score-is-primitive-one-site-record: 8.22666379463044e-11
+PASS: site-diagonal-source-action-equivalent-to-product-rn: 0.0
+PASS: source-action-authority-still-open: support result only
+PASS: strict-source-higgs-rows-absent: outputs/yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json
+PASS: strict-wz-bypass-absent: outputs/yt_source_action_strict_same_source_wz_physical_response_packet_2026-05-22.json
+PASS: proposal-retained-forbidden: not retained and not proposed_retained
+PASS: forbidden-import-firewall-clean: {'H_unit': False, 'yt_ward_identity': False, 'y_t_bare': False, 'observed_top_or_yukawa_target': False, 'alpha_LM_or_plaquette_u0': False, 'package_v_as_closure': False, 'Planck_or_alpha_s': False, 'fitted_selector': False}
+PASS: remaining-gates-explicit: ['accept or derive the equivalent source/action gate as current same-surface neutral EW/Higgs authority', 'derive canonical O_H and scalar LSZ normalization on that accepted surface', 'produce strict C_ss/C_sH/C_HH source-Higgs pole rows, or a strict same-source W/Z bypass', 'only after physical input exists, run matching/running and retained-proposal gates']
+wrote outputs/yt_source_action_support_packet_2026-05-22.json
+SUMMARY: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -144,7 +144,7 @@ support alone.
 
 ## Primitive-Unit Branch
 
-The PR230 signed-record source packet does supply a way to remove `lambda`,
+The Y_T source-action signed-record source packet does supply a way to remove `lambda`,
 but only after accepting the source/action gate as the physical Yukawa source
 gate.
 

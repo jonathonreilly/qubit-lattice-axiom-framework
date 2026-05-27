@@ -57,7 +57,7 @@ Assume:
 4. **Action as log-density:** a finite-volume action represents a probability
    weight by `P(domega) proportional exp(-S(omega))`.
 
-These are exactly the finite-source semantics already used by the PR230
+These are exactly the finite-source semantics already used by the Y_T source-action
 RN/source packet and the standard finite-dimensional Gibbs/RN template.  The
 new point is that they imply the source-coupled action form; it does not need
 to be asserted separately.

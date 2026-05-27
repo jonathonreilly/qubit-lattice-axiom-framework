@@ -14,7 +14,7 @@ no positive Y_T closure by this note alone.
 **Primary runner:** `scripts/frontier_yt_primitive_source_unit_fisher_normalization.py`
 **Generated output:** `outputs/yt_primitive_source_unit_fisher_normalization_2026-05-25.json`
 
-This note proves the best available `lambda = 1` statement for PR230.
+This note proves the best available `lambda = 1` statement for Y_T source-action.
 
 ```text
 primitive signed-record source unit
@@ -211,4 +211,4 @@ SUMMARY: PASS=... FAIL=0
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21](OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md)
-- [yt_pr230_lsp_signed_record_source_readout_support_note_2026-05-24](YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- [yt_lsp_signed_record_source_readout_support_note_2026-05-24](YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)

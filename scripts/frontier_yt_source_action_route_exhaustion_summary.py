@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gate for the PR230 route-exhaustion summary note."""
+"""Gate for the Y_T source-action route-exhaustion summary note."""
 
 from __future__ import annotations
 
@@ -8,15 +8,15 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "YT_PR230_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md"
-OUTPUT = ROOT / "outputs" / "yt_pr230_route_exhaustion_summary_2026-05-22.json"
+NOTE = ROOT / "docs" / "YT_SOURCE_ACTION_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md"
+OUTPUT = ROOT / "outputs" / "yt_source_action_route_exhaustion_summary_2026-05-22.json"
 
 
 def main() -> int:
     text = NOTE.read_text(encoding="utf-8")
     checks = {
         "status_support_only": "not retained; not proposed_retained" in text,
-        "backup_branch_named": "backup/pr230-pre-clean-20260522-172104558" in text,
+        "backup_branch_named": "backup/yt-source-action-pre-clean-20260522-172104558" in text,
         "surviving_gate_named": "source-coupled site-diagonal local action" in text
         and "external compositional one-site product RN source semantics" in text,
         "direct_compute_demoted": "partial" in text
@@ -52,9 +52,9 @@ def main() -> int:
         "pass_count": sum(1 for ok in checks.values() if ok),
         "fail_count": sum(1 for ok in checks.values() if not ok),
         "review_surface": [
-            "docs/YT_PR230_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md",
-            "scripts/frontier_yt_pr230_route_exhaustion_summary.py",
-            "outputs/yt_pr230_route_exhaustion_summary_2026-05-22.json",
+            "docs/YT_SOURCE_ACTION_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md",
+            "scripts/frontier_yt_source_action_route_exhaustion_summary.py",
+            "outputs/yt_source_action_route_exhaustion_summary_2026-05-22.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

@@ -847,50 +847,6 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the Gell-Mann-carrier d^{abc} algebra qualify as positive_theorem on retained algebraic inputs?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 8,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
-      "runner_path": "scripts/su3_dabc_symmetric_check.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
-    {
       "actual_audit_status": "audited_decoration",
       "actual_claim_type": "decoration",
       "actual_effective_status": "decoration_under_graph_first_su3_integration_note",
@@ -1877,6 +1833,60 @@
       "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
       "runner_path": "scripts/frontier_hubble_c1_stuck_fanout_synthesis.py",
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the Gell-Mann-carrier d^{abc} algebra qualify as positive_theorem on retained algebraic inputs?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
+      "deps": [
+        "cl3_color_automorphism_theorem"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 8,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
+      "resolution_evidence": {
+        "audit_date": "2026-05-27T04:04:37.502750+00:00",
+        "audit_status": "audited_clean",
+        "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-kant-2nd",
+        "auditor_family": "codex-gpt-5.5",
+        "claim_type": "bounded_theorem",
+        "independence": "fresh_context"
+      },
+      "resolution_manifest_date": "2026-05-22",
+      "resolution_reason": "bounded_terminal_after_reaudit",
+      "runner_path": "scripts/su3_dabc_symmetric_check.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"
     },

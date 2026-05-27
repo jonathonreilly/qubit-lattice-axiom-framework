@@ -6422,6 +6422,14 @@
     },
     {
       "from": "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06",
+      "to": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06",
+      "to": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06",
       "to": "cl3_taste_generation_theorem"
     },
     {
@@ -48179,10 +48187,12 @@
         "dm_eta_g1_cl3_adj3_embedding_algebraic_support_theorem_note_2026-05-06",
         "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25",
         "cl3_color_automorphism_theorem",
+        "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4ebabe13f1c0bbf563ad6d3323ab66f6a3e616cdc429ac53c8f84e01e794f96b",
+      "note_hash": "d999cc71915e869497d920c70cbac0fd66a32c5e8beefa9782e0ab1b076c2952",
       "path": "docs/DM_ETA_G1_OPERATOR_BRIDGE_PROOF_THEOREM_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_dm_eta_g1_bridge_proof_2026_05_06.py",
       "title": "DM-eta G1 Operator-Level Adjoint-Channel Bridge Proof Theorem (V1)"
@@ -86320,8 +86330,8 @@
       "open_gate": 127,
       "positive_theorem": 587
     },
-    "edge_count": 9838,
-    "leaf_count": 810,
+    "edge_count": 9840,
+    "leaf_count": 808,
     "node_count": 2579,
     "root_count": 858,
     "runners_with_path": 2154

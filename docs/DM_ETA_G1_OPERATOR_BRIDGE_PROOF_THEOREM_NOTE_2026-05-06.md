@@ -117,9 +117,41 @@ support scope and its dependency chain.
 - [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md)
   -- Section B (base x fiber decomposition; SU(3)_c on 3D symmetric
   base via M_3_sym (x) I_2); Section D (Fierz completeness on
-  End(C^N_c)); Section F (Y eigenvalue spectrum {+1/3 (6D), -1 (2D)}).
+  End(C^N_c)). The 2026-05-04 scope-narrowing of this
+  parent theorem retained only Sections A-D in narrative form; the
+  Y eigenvalue spectrum (formerly cited as "Section F") and the
+  Gell-Mann embedding (formerly cited as "Section H") are now
+  document-level source surfaces in the two narrow theorems cited next.
+- [`CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md)
+  -- Y eigenvalue spectrum `{+1/3 (multiplicity 6), -1 (multiplicity 2)}`
+  on the chiral cube C^8 (document-level source surface promoting the
+  previously-cited "CL3_COLOR_AUTOMORPHISM Section F" content from
+  `scripts/verify_cl3_sm_embedding.py` Section F).
+- [`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
+  -- Gell-Mann embedding `T^a_8d = M_3_sym (x) I_2` on the (base x fiber)
+  decomposition (document-level source surface promoting the previously-cited
+  "CL3_COLOR_AUTOMORPHISM Section H" content from
+  `scripts/verify_cl3_sm_embedding.py` Section H).
 - [`CL3_TASTE_GENERATION_THEOREM.md`](CL3_TASTE_GENERATION_THEOREM.md)
   -- chiral cube C^8 = (C^2)^otimes 3 with Burnside `1+3+3+1` decomp.
+
+**Note on citation repointing (2026-05-27).** Earlier revisions of this
+note cited "CL3_COLOR_AUTOMORPHISM Section F" (Y eigenvalue spectrum)
+and "CL3_COLOR_AUTOMORPHISM Section H" (Gell-Mann embedding). After the
+2026-05-04 scope-narrowing of CL3_COLOR_AUTOMORPHISM_THEOREM
+to Sections A-D in narrative form, those Section F / Section H labels
+referred to `scripts/verify_cl3_sm_embedding.py` Sections F and H rather
+than document-level authorities. The two parallel-shipped narrow theorems
+[`CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md)
+and
+[`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
+promote those script sections to document-level bounded source
+surfaces and are the citations now used in this note. Previously this
+chain was implicit via the script reference; it is now explicit via the
+new narrow theorem citations. No proof content of this bridge note has
+changed: the Y spectrum invoked in Step 2 and the Gell-Mann embedding
+invoked in Steps 5 and the honest-residual discussion are mathematically
+identical to the prior citations.
 
 ## 0. Headline
 
@@ -204,8 +236,9 @@ and fiber `b3 in {0,1}` (2D). The base further decomposes under
 b1 <-> b2 reflection into 3D symmetric (color triplet) + 1D antisymmetric
 (lepton singlet). Verified at machine precision (runner Tests 1, 2).
 
-**Step 2 (hypercharge Y spectrum).** By CL3_COLOR_AUTOMORPHISM
-(Section F), `Y = (+1/3) P_symm + (-1) P_antisymm` has eigenvalue
+**Step 2 (hypercharge Y spectrum).** By
+[`CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md),
+`Y = (+1/3) P_symm + (-1) P_antisymm` has eigenvalue
 spectrum `{+1/3 (multiplicity 6), -1 (multiplicity 2)}`. Verified at
 machine precision (Test 3).
 
@@ -222,7 +255,9 @@ Therefore the lepton singlet block is carrier-level orthogonal to the
 dark state. Verified at machine precision (Test 5, 11).
 
 **Step 5 (SU(3)_c trivial on lepton, non-trivial on dark).** By
-CL3_COLOR_AUTOMORPHISM (Section B and H), SU(3)_c is embedded as
+CL3_COLOR_AUTOMORPHISM (Section B) and
+[`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md),
+SU(3)_c is embedded as
 `T^a_8d = (M_3_sym (x) I_2)` where `M_3_sym` acts on the 3D symmetric
 base block and is zero on the 1D antisymmetric block. Numerically:
 `max |T^a_8d @ lepton_vec| = 0` (machine precision); `max |T^a_8d @ |111>|
@@ -345,8 +380,9 @@ No new axioms or repo-wide dynamical premises are introduced.
 
 The bridge proof relies on the structural identification
 "gauge-mediated propagator" = "constructed from T^a generators". This
-identification is cited from CL3_COLOR_AUTOMORPHISM Section H (the
-Gell-Mann embedding), not derived in this note. A reviewer might
+identification is cited from
+[`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
+(the Gell-Mann embedding), not derived in this note. A reviewer might
 challenge whether the dark hw=3 mass renormalization on the
 SU(3)-gauged staggered chiral cube is *necessarily* of the
 gauge-mediated form `Sigma_a T^a (x) T^a` rather than admitting some
@@ -374,8 +410,10 @@ C_A/C_F Casimir-self-energy options as wrong-channel.
   selection), not a perturbative loop calculation.
 - That a new axiom is introduced. The note uses cited authorities:
   (base x fiber) decomposition (CL3_COLOR_AUTOMORPHISM B), Y spectrum
-  (CL3_COLOR_AUTOMORPHISM F), SU(3)_c on sym base (CL3_COLOR_AUTOMORPHISM
-  B+H), Fierz completeness (CL3_COLOR_AUTOMORPHISM D), chiral cube
+  ([`CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md)),
+  SU(3)_c on sym base (CL3_COLOR_AUTOMORPHISM B +
+  [`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)),
+  Fierz completeness (CL3_COLOR_AUTOMORPHISM D), chiral cube
   (CL3_TASTE_GENERATION), bare Wilson kinetic mass (DM_ETA_FREEZEOUT_BYPASS
   Origin B). No new axioms, no new dynamical mechanisms.
 
@@ -445,8 +483,12 @@ audit of the corrected dependency chain.
   [`DM_ETA_G1_CL3_ADJ3_EMBEDDING_ALGEBRAIC_SUPPORT_THEOREM_NOTE_2026-05-06.md`](DM_ETA_G1_CL3_ADJ3_EMBEDDING_ALGEBRAIC_SUPPORT_THEOREM_NOTE_2026-05-06.md)
 - DM-eta freezeout-bypass quantitative theorem (parent bounded theorem):
   [`DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md`](DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md)
-- Cl(3) color automorphism (load-bearing one-hop authority):
+- Cl(3) color automorphism (load-bearing one-hop authority, Sections B + D):
   [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md)
+- Cl(3) hypercharge Y eigenvalue spectrum (document-level bounded source surface, replaces former "Section F" script reference):
+  [`CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md)
+- Cl(3) SU(3) symmetric-base commutant Gell-Mann embedding (document-level bounded source surface, replaces former "Section H" script reference):
+  [`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
 - Cl(3) taste generation (chiral cube structure):
   [`CL3_TASTE_GENERATION_THEOREM.md`](CL3_TASTE_GENERATION_THEOREM.md)
 
@@ -472,6 +514,8 @@ upstream_dependencies:
   - dm_eta_g1_cl3_adj3_embedding_algebraic_support_theorem_note
   - dm_eta_freezeout_bypass_quantitative_theorem
   - cl3_color_automorphism_theorem
+  - cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27
+  - cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27
   - cl3_taste_generation_theorem
 admitted_context_inputs:
   - SU(N) Fierz identity (already in CL3_COLOR_AUTOMORPHISM)

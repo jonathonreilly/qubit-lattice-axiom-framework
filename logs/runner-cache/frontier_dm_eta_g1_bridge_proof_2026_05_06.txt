@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_g1_bridge_proof_2026_05_06.py
-runner_sha256: e38edd7f7d6c0e34cba87863fd66ccb5063837d99d5908476d5d35b8bc474d22
+runner_sha256: b7aee9c84ba034869334e59d73aa648db5b2330992bdb669f99d73b9cc0212ec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -32,7 +32,7 @@ TEST 2: (base x fiber) decomposition of C^8
 
 ------------------------------------------------------------------------------
 TEST 3: Hypercharge Y = (+1/3) P_symm + (-1) P_antisymm
-        Cited from CL3_COLOR_AUTOMORPHISM Section F
+        Cited from CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM...
         Eigenvalue spectrum: Y=+1/3 (6D quark block), Y=-1 (2D lepton block)
 ------------------------------------------------------------------------------
   Y eigenvalue +1/3 multiplicity = 6 (expected 6)
@@ -204,7 +204,8 @@ CARRIER SUPPORT SUMMARY
 
   The singlet Fierz channel projector on End(C^N_c) maps any matrix M
   to (Tr M / N_c) I -- the 1D SU(3)_c-trivial subspace. By
-  CL3_COLOR_AUTOMORPHISM B+H, SU(3)_c trivial = lepton-block carrier
+  CL3_COLOR_AUTOMORPHISM B + CL3_SU3_SYMMETRIC_BASE_COMMUTANT...,
+  SU(3)_c trivial = lepton-block carrier
   (verified Test 11b: T^a annihilates lepton vecs).
 
   Carrier orthogonality is preserved: the dark state has no lepton
@@ -218,8 +219,9 @@ CARRIER SUPPORT SUMMARY
 
   This is STRUCTURAL SUPPORT -- not a new dynamical mechanism.
   It uses only cited primitives: (base x fiber) decomposition
-  (CL3_COLOR_AUTOMORPHISM B), Y eigenvalue spectrum (CL3_COLOR_AUTOMORPHISM F),
-  SU(3)_c on sym base (CL3_COLOR_AUTOMORPHISM B+H), Fierz completeness
+  (CL3_COLOR_AUTOMORPHISM B), Y eigenvalue spectrum
+  (CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM...), SU(3)_c on sym base
+  (CL3_COLOR_AUTOMORPHISM B + CL3_SU3_SYMMETRIC_BASE_COMMUTANT...), Fierz completeness
   (CL3_COLOR_AUTOMORPHISM D), Cl(3) chiral cube (CL3_TASTE_GENERATION),
   bare Wilson kinetic mass (DM_ETA_FREEZEOUT_BYPASS Origin B). NO new
   axioms, NO new dynamical mechanisms, NO new combinatorial inputs.

@@ -297,6 +297,12 @@ Verification so far:
 
 No `POSITIVE_CLOSURE` marker was written.
 
+Cycle 4 science commit pushed and recorded in PR #1980:
+
+```text
+db72674e3abd27ea00df2ef6861d481116024c96
+```
+
 Previous science commit pushed and recorded in PR #1980 before this cycle:
 
 ```text
@@ -312,9 +318,8 @@ f291e8410
 Next exact action:
 
 ```text
-derive accepted orientation-odd same-surface C3 microscopic dynamics proving
-the quantitative phase-strength inequality |y_0| > sqrt(3) x_0 on a signed
-nontrivial branch and supplying W/top matrix
-elements, or obtain accepted strict same-source top/W pole-row data with
-contact, FV/IR, and model-class controls.
+derive accepted same-surface C3 phase-angle dynamics proving the quantitative
+phase-strength inequality |y_0| > sqrt(3) x_0 on a signed nontrivial branch
+and supplying W/top matrix elements, or obtain accepted strict same-source
+top/W pole-row data with contact, FV/IR, and model-class controls.
 ```

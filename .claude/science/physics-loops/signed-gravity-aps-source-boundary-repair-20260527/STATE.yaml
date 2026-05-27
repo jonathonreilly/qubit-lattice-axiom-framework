@@ -1,0 +1,24 @@
+loop_slug: signed-gravity-aps-source-boundary-repair-20260527
+branch: physics-loop/signed-gravity-aps-source-boundary-repair-20260527
+base: origin/main
+target_claim_id: signed_gravity_aps_locked_source_action_proposal_note
+target_status: open_gate
+current_surface_status: open_gate
+cycle_count: 1
+active_route: mark_source_action_as_permanent_axiomatic_extension_boundary
+hard_residual: retained APS/Wald/Gauss stack still does not derive chi_eta M_phys rho Phi
+files_touched:
+  - docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+  - scripts/signed_gravity_aps_source_action_boundary_repair.py
+  - .claude/science/physics-loops/signed-gravity-aps-source-boundary-repair-20260527/
+open_imports: []
+no_go_routes:
+  - current retained stack does not derive the APS-locked source-action term
+trace_gate_classification: direct_blocker_closure
+ledger_after_pipeline: unaudited open_gate with retained no_go dependency and no open_dependency_paths
+review_findings: branch-local runner, vocab lint, diff check, and pipeline passed; independent Codex reviewer/audit still required
+pr_status: draft_open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2116
+pr_mergeability: MERGEABLE / UNSTABLE
+next_exact_action: proceed to next ledger-order conditional row
+stop_condition: draft PR created

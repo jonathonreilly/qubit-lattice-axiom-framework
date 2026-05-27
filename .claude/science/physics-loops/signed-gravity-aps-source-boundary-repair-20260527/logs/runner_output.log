@@ -1,0 +1,28 @@
+Signed gravity APS source-action boundary repair
+========================================================================
+
+A. Boundary wording
+------------------------------------------------------------------------
+PASS: note declares open_gate type
+PASS: note states permanent axiomatic-extension boundary
+PASS: note says cross term is not derived
+PASS: note says no physical signed-gravity claim
+PASS: note does not ask audit to retain current theorem
+
+B. Ledger authority
+------------------------------------------------------------------------
+PASS: lane status authority is retained_no_go -- retained_no_go
+PASS: source-action row claim_type is open_gate before repair pipeline -- open_gate
+PASS: source-action row is not retained before repair pipeline -- unaudited
+
+C. Original algebra harness
+------------------------------------------------------------------------
+PASS: original harness exits cleanly -- returncode=0
+PASS: original harness remains conditional
+PASS: original harness states new source-action premise
+PASS: original harness does not derive origin
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=12, FAIL=0
+VERDICT: APS source-action row is permanently open_gate / axiomatic-extension boundary.

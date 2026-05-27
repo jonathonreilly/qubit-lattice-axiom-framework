@@ -43,12 +43,15 @@ closed exactly:
   symbolic support alone is pruned by an exact finite-transfer counterfamily
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
+  the top generation projector remains open: C3-symmetric staggered
+  generation support cannot pick the physical top projector by itself
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
   primitive top-source identification premise
   accepted same-surface pole/response authority for the physical top/Higgs row
   coefficient-certified same-source top/W response evidence
+  accepted physical top generation projector or strict top pole identification
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -267,6 +270,14 @@ accepted W/top sector projectors are load-bearing.  Source normalization and
 the six-component carrier amplitude do not by themselves determine those
 projectors or their source-generator matrix elements.
 
+[`YT_TOP_SECTOR_PROJECTOR_GENERATION_LABEL_OBSTRUCTION_NOTE_2026-05-27.md`](YT_TOP_SECTOR_PROJECTOR_GENERATION_LABEL_OBSTRUCTION_NOTE_2026-05-27.md)
+then specializes that projector blocker to the physical top row.  The current
+C3-symmetric staggered/generation surface carries the hw=1 generation triplet,
+but it does not canonically choose which cyclically-related corner projector is
+the physical top generation projector.  The local six-component coefficient
+remains exact support; top-specific pole authority needs same-surface dynamics
+or strict pole-row evidence.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -358,6 +369,13 @@ The latest obstruction makes the immediate target still sharper:
 ```text
 derive accepted W/top sector projectors and their source-generator
 matrix elements on that same finite transfer/action surface.
+```
+
+The top-projector specialization makes the route boundary explicit:
+
+```text
+derive accepted physical top generation projector, not merely the
+generation-blind six-component carrier coefficient.
 ```
 
 ## Non-Claims

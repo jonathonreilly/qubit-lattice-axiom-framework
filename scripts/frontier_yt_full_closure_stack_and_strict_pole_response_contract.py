@@ -46,6 +46,7 @@ DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RES
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
 BACKEND_PROJECTOR_OBSTRUCTION = DOCS / "YT_NATIVE_BACKEND_AUTHORITY_PROJECTOR_OBSTRUCTION_NOTE_2026-05-27.md"
+TOP_SECTOR_PROJECTOR_OBSTRUCTION = DOCS / "YT_TOP_SECTOR_PROJECTOR_GENERATION_LABEL_OBSTRUCTION_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -64,6 +65,7 @@ DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_spa
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
 BACKEND_PROJECTOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_native_backend_authority_projector_obstruction_2026-05-27.json"
+TOP_SECTOR_PROJECTOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_top_sector_projector_generation_label_obstruction_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -127,6 +129,7 @@ def part1_anchors() -> dict[str, str]:
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
         BACKEND_PROJECTOR_OBSTRUCTION,
+        TOP_SECTOR_PROJECTOR_OBSTRUCTION,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -144,6 +147,7 @@ def part1_anchors() -> dict[str, str]:
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
         BACKEND_PROJECTOR_OBSTRUCTION_OUT,
+        TOP_SECTOR_PROJECTOR_OBSTRUCTION_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -162,6 +166,7 @@ def part1_anchors() -> dict[str, str]:
         "targeted kappa exercise",
         "native candidate backend",
         "sector projectors are load-bearing",
+        "top generation projector remains open",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -198,6 +203,7 @@ def part2_support_outputs() -> dict[str, Any]:
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
     projector_obstruction = load_json(BACKEND_PROJECTOR_OBSTRUCTION_OUT)
+    top_sector_projector_obstruction = load_json(TOP_SECTOR_PROJECTOR_OBSTRUCTION_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -238,6 +244,9 @@ def part2_support_outputs() -> dict[str, Any]:
     check("backend projector obstruction passed", projector_obstruction.get("fail_count") == 0, projector_obstruction.get("fail_count"))
     check("backend projector obstruction is route pruning", projector_obstruction.get("trace_class") == "negative_route_pruning")
     check("projector obstruction keeps projector/dynamics route live", "sector projectors" in projector_obstruction.get("route_still_live", ""))
+    check("top-sector projector obstruction passed", top_sector_projector_obstruction.get("fail_count") == 0, top_sector_projector_obstruction.get("fail_count"))
+    check("top-sector projector obstruction is route pruning", top_sector_projector_obstruction.get("trace_class") == "negative_route_pruning")
+    check("top-sector obstruction keeps strict pole-row route live", "strict same-source pole-row evidence" in top_sector_projector_obstruction.get("route_still_live", ""))
 
     return {
         "fisher": fisher,
@@ -256,6 +265,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
         "backend_projector_obstruction": projector_obstruction,
+        "top_sector_projector_obstruction": top_sector_projector_obstruction,
     }
 
 
@@ -458,6 +468,13 @@ def main() -> int:
             "next_action": "supply an accepted finite same-surface top/W transfer/action backend, then run the sparse response certificate for coefficient-certified rows",
         },
         {
+            "step": 6.5,
+            "name": "physical top generation projector",
+            "status": "exact_no_go_for_derivation_from_current_c3_symmetric_staggered_generation_support_alone",
+            "closed": True,
+            "next_action": "derive a C3-breaking/labeling-independent accepted pole projector from same-surface dynamics, or produce strict pole-row data",
+        },
+        {
             "step": 7,
             "name": "same-scale g2 and matching/running",
             "status": "open_for_numerical_y_t_v",
@@ -495,6 +512,7 @@ def main() -> int:
             "strict_top_fail_count": support_outputs["strict_top"].get("fail_count"),
             "strict_same_source_obstruction_fail_count": support_outputs["strict_same_source_obstruction"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
+            "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

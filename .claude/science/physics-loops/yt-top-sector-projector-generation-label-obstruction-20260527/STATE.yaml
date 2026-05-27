@@ -1,0 +1,24 @@
+goal: "Prune or close the top-sector projector blocker for PR #1980 Y_T."
+target_status: "best-honest-status"
+actual_current_surface_status: "no-go"
+trace_class: "negative_route_pruning"
+active_route: "derive physical top generation projector from current C3-symmetric staggered/generation support"
+block_count: 1
+files_touched:
+  - "docs/YT_TOP_SECTOR_PROJECTOR_GENERATION_LABEL_OBSTRUCTION_NOTE_2026-05-27.md"
+  - "scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py"
+  - "outputs/yt_top_sector_projector_generation_label_obstruction_2026-05-27.json"
+  - "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md"
+  - "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py"
+  - "outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json"
+open_imports:
+  - "accepted physical top generation projector"
+  - "same-surface W/top transfer/action dynamics"
+  - "strict same-source top/W pole-row evidence"
+no_go_routes:
+  - "derive P_top from current C3-symmetric generation support alone"
+verification:
+  - "python3 scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py -> PASS=84 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=131 FAIL=0"
+next_exact_action: "Try a positive same-surface dynamics theorem or strict-pole evidence route; do not re-use source normalization or carrier algebra alone."
+stop_condition: "Full closure only if a strict same-source top/W pole-response certificate or accepted projector/dynamics theorem is supplied."

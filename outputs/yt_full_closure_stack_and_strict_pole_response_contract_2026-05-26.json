@@ -91,6 +91,13 @@
       "step": 6
     },
     {
+      "closed": true,
+      "name": "physical top generation projector",
+      "next_action": "derive a C3-breaking/labeling-independent accepted pole projector from same-surface dynamics, or produce strict pole-row data",
+      "status": "exact_no_go_for_derivation_from_current_c3_symmetric_staggered_generation_support_alone",
+      "step": 6.5
+    },
+    {
       "closed": false,
       "name": "same-scale g2 and matching/running",
       "next_action": "defer unless the claim is numerical y_t(v) rather than local ratio",
@@ -100,7 +107,7 @@
   ],
   "fail_count": 0,
   "first_open_gate": "strict same-source top/W response evidence unless audit accepts primitive top-source premise",
-  "pass_count": 125,
+  "pass_count": 131,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. Coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
@@ -121,6 +128,7 @@
     "strict_top_fail_count": 0,
     "strict_wz_fail_count": 0,
     "top_carrier_fail_count": 0,
+    "top_sector_projector_obstruction_fail_count": 0,
     "top_source_nogo_fail_count": 0
   },
   "upstream_statuses": {

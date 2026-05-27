@@ -93605,8 +93605,9 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "rconn_derived_note",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "rconn_derived_note"
       ],
       "direct_in_degree": 0,
       "effective_status": "audited_conditional",
@@ -93749,7 +93750,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 1,
@@ -93757,8 +93758,8 @@
         "D": 0,
         "total_pass": 3
       },
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "title": "EW Current Matching via OZI / Disconnected-Trace Suppression Theorem",
+      "runner_path": "scripts/frontier_ew_current_ozi_scope_repair.py",
+      "title": "EW Current OZI Size-Class Boundary Support Note",
       "transitive_descendants": 0,
       "verdict_rationale": "Both cited authorities explicitly leave the physical EW matching selector open: RCONN states kappa_EW is underdetermined, and the Fierz note names matching rule (M) as not derived. The source note admits the exact 9/8 bridge is non-load-bearing, but its displayed theorem still says the physical continuum-matched EW polarization is connected up to O(1/N_c^2), which requires that missing readout bridge. The displayed Wigner-Eckart/projector formula supplies at most a size-class argument and is not independently verified by the R_conn runner."
     },
@@ -93831,7 +93832,7 @@
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
-      "direct_in_degree": 12,
+      "direct_in_degree": 13,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],

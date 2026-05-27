@@ -9682,11 +9682,15 @@
     },
     {
       "from": "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
-      "to": "rconn_derived_note"
+      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
     {
       "from": "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
-      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
+    },
+    {
+      "from": "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
+      "to": "rconn_derived_note"
     },
     {
       "from": "ew_current_matching_rule_open_gate_note_2026-05-03",
@@ -54624,16 +54628,17 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "rconn_derived_note",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "rconn_derived_note"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
       "note_hash": "bc354561cb4ac1fbdc0a4ae1158d898d05111d4b9519a42fc3994ec5e9943ce1",
       "path": "docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md",
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "title": "EW Current Matching via OZI / Disconnected-Trace Suppression Theorem"
+      "runner_path": "scripts/frontier_ew_current_ozi_scope_repair.py",
+      "title": "EW Current OZI Size-Class Boundary Support Note"
     },
     "ew_current_matching_rule_open_gate_note_2026-05-03": {
       "claim_id": "ew_current_matching_rule_open_gate_note_2026-05-03",

@@ -29477,10 +29477,6 @@
       "to": "native_gauge_closure_note"
     },
     {
-      "from": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
-      "to": "yt_ew_color_projection_theorem"
-    },
-    {
       "from": "yt_ward_step3_contact_4fermion_vanishing_narrow_theorem_note_2026-05-17",
       "to": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
     },
@@ -86901,7 +86897,7 @@
       "note_hash": "673d979a97abf46a82e67ff9ae69361a8c1fa4b0ee1bac60f48367b00d1dbe44",
       "path": "docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py",
-      "title": "yt_ward Canonical-Surface Ratio Narrow Theorem (Tadpole Cancellation)"
+      "title": "yt_ward Conditional Tadpole-Cancellation Algebra Lemma"
     },
     "yt_ward_step3_contact_4fermion_vanishing_narrow_theorem_note_2026-05-17": {
       "claim_id": "yt_ward_step3_contact_4fermion_vanishing_narrow_theorem_note_2026-05-17",

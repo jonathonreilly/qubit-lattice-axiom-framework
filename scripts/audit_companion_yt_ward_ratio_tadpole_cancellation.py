@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-"""Exact-symbolic audit-companion runner for the yt_ward canonical-surface
-ratio narrow theorem note
+"""Exact-symbolic audit-companion runner for the yt_ward conditional
+tadpole-cancellation algebra note
 `YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md`.
 
 The parent narrow note's load-bearing content is the algebraic-substitution
-implication that, given the retained CMT change-of-variables identity
-`<O(U)> = u_0^{n_link} <O_V(V)>_eff` (D14) plus the retained
-`n_link = 1` per single-vertex coupling identity (D15, "one factor of u_0
-per vertex"), the two canonical-surface single-vertex coupling readouts
+implication that, given the two common tadpole-readout assumptions
 
   (D1) g_s(M_Pl)  := g_bare   / sqrt(u_0)
   (D2) y_t(M_Pl)  := y_t_bare / sqrt(u_0)
@@ -21,8 +18,7 @@ identically in u_0 (the common 1/sqrt(u_0) tadpole factor cancels).
 This Pattern A narrow runner adds a sympy-based exact-symbolic verification:
 
   (a) treats (g_bare, y_t_bare, u_0) as free positive real symbols;
-  (b) imports D1, D2 verbatim from the cited retained
-      yt_ew_color_projection_theorem D14-D15 chain at n_link = 1;
+  (b) assumes D1 and D2 as the conditional surface under test;
   (c) verifies (P1) reduces to 0 symbolically;
   (d) verifies the (P1) ratio is independent of u_0 after simplification;
   (e) verifies four derivable corollaries;
@@ -35,9 +31,8 @@ This Pattern A narrow runner adds a sympy-based exact-symbolic verification:
 Companion role: not a new claim row, not a new source note, no status
 promotion. Provides audit-friendly evidence that the parent's
 load-bearing class-(A) tadpole-cancellation algebra holds at exact
-symbolic precision under the cited retained CMT inputs. The cited CMT
-and n_link identities themselves are imported from upstream retained
-authorities and are not re-derived here.
+symbolic precision under D1 and D2. The CMT/readout premises themselves
+are not imported as retained authority and are not re-derived here.
 """
 
 from pathlib import Path
@@ -80,7 +75,7 @@ def main() -> int:
     print("YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: sympy-symbolic verification of (P1)")
     print("  y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare")
-    print("under retained CMT D14 + n_link = 1 per single-vertex (D15) inputs")
+    print("under conditional readout assumptions D1 and D2")
     print("=" * 88)
 
     # ---------------------------------------------------------------------
@@ -93,17 +88,7 @@ def main() -> int:
     # n_link as a positive integer symbol (used in the parametric CMT form).
     n = Symbol("n", positive=True, integer=True)
 
-    # Cited inputs (retained yt_ew_color_projection_theorem D14-D15):
-    #   CMT(O, n) : <O(U)> = u_0^n <O_V(V)>_eff
-    #   n_link    = 1 per single-vertex coupling insertion
-    #
-    # The CMT square-root normalization for the coupling readout (the
-    # coupling enters the action at order one per vertex; the square-root
-    # form is the operator-square-root of the single-vertex CMT factor):
-    #
-    #   coupling_canonical(O) := coupling_bare / u_0^{n_link / 2}
-    #
-    # At n_link = 1 per single-vertex insertion this gives:
+    # Conditional inputs under test:
     #   (D1) g_s(M_Pl)  := g_bare   / sqrt(u_0)
     #   (D2) y_t(M_Pl)  := y_t_bare / sqrt(u_0)
     n_v = 1
@@ -113,7 +98,7 @@ def main() -> int:
     print(f"  symbolic g_bare    (positive real) = {g_bare}")
     print(f"  symbolic y_t_bare  (positive real) = {y_t_bare}")
     print(f"  symbolic u_0       (positive real) = {u_0}")
-    print(f"  cited n_link (single-vertex coupling) = {n_v}")
+    print(f"  conditional common tadpole exponent = {n_v}/2")
     print(f"  (D1) g_s(M_Pl)  = g_bare   / sqrt(u_0)  = {g_s_MPl}")
     print(f"  (D2) y_t(M_Pl)  = y_t_bare / sqrt(u_0)  = {y_t_MPl}")
 
@@ -242,7 +227,7 @@ def main() -> int:
     # ---------------------------------------------------------------------
     # The algebraic identity is the load-bearing content; an FP numerical
     # cross-check at one randomly-chosen sample is a sanity check, not the
-    # authority.
+    # proof input.
     sample = {
         g_bare: Rational("71", 100),
         y_t_bare: Rational("41", 100),

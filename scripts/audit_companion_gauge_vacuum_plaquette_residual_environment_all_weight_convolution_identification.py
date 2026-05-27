@@ -10,14 +10,14 @@ residual source-sector operator
              := D_beta^loc^{-1} * D_beta,
   R_beta^env chi_(p,q) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) chi_(p,q),  (D1)
 
-with the central convolution operator
+with the unnormalized central convolution operator
 
-  C_(Z_beta^env / z_(0,0)^env(beta))
+  (1 / lambda_env(beta)) C_(Z_beta^env)
 
 by the boundary class function
 
   Z_beta^env(W) := sum_(p,q) d_(p,q) z_(p,q)^env(beta) chi_(p,q)(W),
-  z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) * z_(0,0)^env(beta).  (D2)
+  z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) * lambda_env(beta).  (D2)
 
 Three cited retained authorities supply the inputs (I1), (I2), (I3):
 
@@ -35,15 +35,20 @@ Three cited retained authorities supply the inputs (I1), (I2), (I3):
        coefficient sequence (rho_(p,q)) with rho_(0,0) = 1, the diagonal operator
        R[rho] equals the normalized convolution operator C_{Z/Z_(0,0)} by the
        associated central class function Z(W) = sum d_(p,q) rho_(p,q) chi_(p,q)(W).
+       By linearity, the same character-basis dictionary gives the unnormalized
+       eigenvalue formula C_Z chi_(p,q) = z_(p,q) chi_(p,q). This runner consumes
+       only that unnormalized identity; it does not assume rho_(0,0)=1 for
+       R_beta^env.
 
 This Pattern A narrow runner verifies symbolically (sympy `simplify` to 0):
 
   (a) (T1) structural diagonality, self-adjointness, positivity, and
       conjugation symmetry of R_beta^env under (I1)+(I2);
   (b) (T2) Peter-Weyl character expansion of Z_beta^env with the
-      coefficients of (D2);
+      coefficients of (D2), including the distinction between lambda_env and
+      the actual trivial coefficient z_(0,0)^env = lambda_env*kappa_(0,0);
   (c) (T3) eigenvalue equality kappa_(p,q) / a_(p,q)^4 = z_(p,q)^env /
-      z_(0,0)^env at every weight in a finite representative truncation;
+      lambda_env at every weight in a finite representative truncation;
   (d) (T4) uniqueness: two distinct eigenvalue sequences yield distinct
       operators;
   (e) algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta;
@@ -169,13 +174,13 @@ def main() -> int:
     D_beta_loc = diag_matrix([ai**4 for ai in a])
 
     # R_beta^env = D_beta_loc^{-1} * D_beta (by (D1)).
-    # Equivalent eigenvalue sequence: rho_(p,q)^env = kappa_(p,q) / a_(p,q)^4.
+    # Equivalent eigenvalue sequence: r_(p,q)^env = kappa_(p,q) / a_(p,q)^4.
     rho_env = [kappa[i] / a[i]**4 for i in range(n)]
     R_env = diag_matrix(rho_env)
 
     print(f"  N_MAX = {N_MAX}  ({n} weights in finite truncation)")
     print(f"  Distinct abstract symbol pairs: kappa = {len(set(kappa))}, a (incl. fixed a_00=1) = {len(set(a))}")
-    print(f"  rho_(0,0)^env = kappa_(0,0) / a_(0,0)^4 = kappa_(0,0) (since a_(0,0)=1)")
+    print(f"  r_(0,0)^env = kappa_(0,0) / a_(0,0)^4 = kappa_(0,0) (since a_(0,0)=1)")
 
     # -------------------------------------------------------------------
     section("Part 1: (T1) structural diagonality of R_beta^env")
@@ -235,38 +240,41 @@ def main() -> int:
     section("Part 2: (T2) Peter-Weyl coefficients of Z_beta^env")
     # -------------------------------------------------------------------
 
-    # Define z_(p,q)^env := (kappa_(p,q) / a_(p,q)^4) * z_(0,0)^env, with z_(0,0)^env > 0.
-    z_00_env = Symbol("z_00_env", positive=True, real=True)
-    z_env = [rho_env[i] * z_00_env for i in range(n)]
+    # Define z_(p,q)^env := (kappa_(p,q) / a_(p,q)^4) * lambda_env, with
+    # lambda_env > 0. The actual trivial coefficient is
+    # z_(0,0)^env = lambda_env * kappa_(0,0), so lambda_env is not a
+    # trivial-channel normalization unless kappa_(0,0) = 1 is separately added.
+    lambda_env = Symbol("lambda_env", positive=True, real=True)
+    z_env = [rho_env[i] * lambda_env for i in range(n)]
+    actual_z_00_env = z_env[index[(0, 0)]]
 
-    # rho_(p,q)^env := z_(p,q)^env / z_(0,0)^env, and the convolution operator's
-    # eigenvalue on chi_(p,q) is rho_(p,q)^env.
-    rho_env_from_z = [simplify(z_env[i] / z_00_env) for i in range(n)]
+    # r_(p,q)^env := z_(p,q)^env / lambda_env, and the unnormalized convolution
+    # operator divided by lambda_env has eigenvalue r_(p,q)^env on chi_(p,q).
+    r_env_from_z = [simplify(z_env[i] / lambda_env) for i in range(n)]
 
     check(
-        "(T2) Z_beta^env character coefficient (D2) matches rho^env on every basis weight",
-        all(simplify(rho_env_from_z[i] - rho_env[i]) == 0 for i in range(n)),
-        detail="z_(p,q)^env / z_(0,0)^env = kappa_(p,q) / a_(p,q)^4 at every weight",
+        "(T2) Z_beta^env character coefficient (D2) matches r^env on every basis weight",
+        all(simplify(r_env_from_z[i] - rho_env[i]) == 0 for i in range(n)),
+        detail="z_(p,q)^env / lambda_env = kappa_(p,q) / a_(p,q)^4 at every weight",
     )
 
-    # rho_(0,0)^env = 1 by construction.
     check(
-        "(T2) rho_(0,0)^env(beta) = 1 (normalization)",
-        simplify(rho_env_from_z[index[(0, 0)]] - kappa[index[(0, 0)]]) == 0,
-        detail="rho_(0,0)^env = kappa_(0,0)/1 = kappa_(0,0); normalization sets it to 1 conventionally",
+        "(T2) actual trivial coefficient is lambda_env * kappa_(0,0), not lambda_env",
+        simplify(actual_z_00_env - lambda_env * kappa[index[(0, 0)]]) == 0,
+        detail="no kappa_(0,0)=1 normalization premise is used",
     )
 
-    # rho conjugation symmetry on rho_env_from_z.
-    rho_sym = True
+    # r conjugation symmetry on r_env_from_z.
+    r_sym = True
     for (p, q) in weights:
         i = index[(p, q)]
         j = index[(q, p)]
-        if simplify(rho_env_from_z[i] - rho_env_from_z[j]) != 0:
-            rho_sym = False
+        if simplify(r_env_from_z[i] - r_env_from_z[j]) != 0:
+            r_sym = False
             break
     check(
-        "(T2) rho_(p,q)^env = rho_(q,p)^env (conjugation symmetry)",
-        rho_sym,
+        "(T2) r_(p,q)^env = r_(q,p)^env (conjugation symmetry)",
+        r_sym,
         detail="follows from kappa_(p,q) = kappa_(q,p) and a_(p,q) = a_(q,p)",
     )
 
@@ -274,30 +282,52 @@ def main() -> int:
     section("Part 3: (T3) all-weight structural identification")
     # -------------------------------------------------------------------
 
-    # By (I3) retained, normalized convolution by Z_beta^env / z_(0,0)^env is
-    # diagonal on characters with eigenvalues rho_(p,q)^env. So C_Z and R_env
-    # have the same eigenvalue sequence iff the symbolic identity
-    # kappa_(p,q)/a_(p,q)^4 = z_(p,q)^env/z_(0,0)^env holds at every weight.
+    # By the unnormalized character-basis convolution dictionary, C_Z is
+    # diagonal on characters with eigenvalues z_(p,q)^env. So (1/lambda_env) C_Z
+    # and R_env have the same eigenvalue sequence iff the symbolic identity
+    # kappa_(p,q)/a_(p,q)^4 = z_(p,q)^env/lambda_env holds at every weight.
     T3_holds_pointwise = True
     for i in range(n):
-        diff = simplify(rho_env[i] - rho_env_from_z[i])
+        diff = simplify(rho_env[i] - r_env_from_z[i])
         if diff != 0:
             T3_holds_pointwise = False
             break
     check(
-        "(T3) eigenvalue equality kappa_(p,q)/a_(p,q)^4 = z_(p,q)^env/z_(0,0)^env on every basis weight",
+        "(T3) eigenvalue equality kappa_(p,q)/a_(p,q)^4 = z_(p,q)^env/lambda_env on every basis weight",
         T3_holds_pointwise,
         detail="symbolic reduction at exact sympy precision on N_MAX=3 truncation",
     )
 
     # Operator-level equality: matrices match on every entry.
-    C_Z = diag_matrix(rho_env_from_z)
-    R_minus_C = R_env - C_Z
+    C_Z_over_lambda = diag_matrix(r_env_from_z)
+    R_minus_C = R_env - C_Z_over_lambda
     T3_operator = all(simplify(R_minus_C[i, j]) == 0 for i in range(n) for j in range(n))
     check(
-        "(T3) R_beta^env = C_(Z_beta^env / z_(0,0)^env) at the operator level",
+        "(T3) R_beta^env = (1/lambda_env) C_(Z_beta^env) at the operator level",
         T3_operator,
         detail="matrix difference reduces to zero on every entry symbolically",
+    )
+
+    C_Z_over_actual_z00 = diag_matrix([simplify(z_env[i] / actual_z_00_env) for i in range(n)])
+    R_over_kappa00 = diag_matrix([simplify(rho_env[i] / kappa[index[(0, 0)]]) for i in range(n)])
+    normalized_matches_rescaled = all(
+        simplify((C_Z_over_actual_z00 - R_over_kappa00)[i, j]) == 0
+        for i in range(n)
+        for j in range(n)
+    )
+    check(
+        "(T3) normalizing by actual z_(0,0)^env gives R_beta^env / kappa_(0,0)",
+        normalized_matches_rescaled,
+        detail="separates the out-of-scope kappa_(0,0)=1 hypothesis from the unnormalized theorem",
+    )
+
+    normalized_not_R_expr = simplify(
+        C_Z_over_actual_z00[index[(0, 0)], index[(0, 0)]] - R_env[index[(0, 0)], index[(0, 0)]]
+    )
+    check(
+        "(T3) without kappa_(0,0)=1, normalized convolution is not asserted equal to R_beta^env",
+        normalized_not_R_expr != 0,
+        detail=f"trivial-channel difference = {normalized_not_R_expr}",
     )
 
     # -------------------------------------------------------------------
@@ -418,7 +448,7 @@ def main() -> int:
     # Substitute one independent abstract positive symmetric coefficient sample
     # and verify all properties at exact sympy rational precision.
     sample_kappa = {
-        pair_to_sym_kappa[(0, 0)]: Rational(1, 1),  # normalization
+        pair_to_sym_kappa[(0, 0)]: Rational(7, 5),  # deliberately not normalized
         pair_to_sym_kappa[(0, 1)]: Rational(3, 10),
         pair_to_sym_kappa[(1, 1)]: Rational(1, 8),
         pair_to_sym_kappa[(0, 2)]: Rational(2, 25),
@@ -471,16 +501,27 @@ def main() -> int:
     )
 
     # Convolution-representation match: R_env at the sample equals the diagonal
-    # operator built from rho^env = kappa/a^4 at the sample.
-    C_Z_concrete = C_Z.subs({**sample_kappa, **sample_a})
-    R_env_concrete_minus_C_Z_concrete = R_env_concrete - C_Z_concrete
+    # operator built from z^env/lambda_env = kappa/a^4 at the sample.
+    C_Z_over_lambda_concrete = C_Z_over_lambda.subs({**sample_kappa, **sample_a})
+    R_env_concrete_minus_C_Z_concrete = R_env_concrete - C_Z_over_lambda_concrete
     convolution_match = all(
         R_env_concrete_minus_C_Z_concrete[i, j] == 0 for i in range(n) for j in range(n)
     )
     check(
-        "(numerical sanity) R_beta^env = C_Z/z_(0,0)^env at the abstract sample (exact)",
+        "(numerical sanity) R_beta^env = (1/lambda_env) C_Z at the abstract sample (exact)",
         convolution_match,
         detail="diagonal-operator match exact in rationals on every basis weight",
+    )
+
+    C_Z_over_actual_concrete = C_Z_over_actual_z00.subs({**sample_kappa, **sample_a})
+    normalized_delta_concrete = simplify(
+        C_Z_over_actual_concrete[index[(0, 0)], index[(0, 0)]]
+        - R_env_concrete[index[(0, 0)], index[(0, 0)]]
+    )
+    check(
+        "(numerical sanity) actual-trivial normalization differs from R_beta^env when kappa_(0,0) != 1",
+        normalized_delta_concrete != 0,
+        detail=f"sample trivial-channel difference = {normalized_delta_concrete}",
     )
 
     # -------------------------------------------------------------------
@@ -489,7 +530,8 @@ def main() -> int:
     print("  Verified at exact sympy precision under cited retained (I1)+(I2)+(I3):")
     print("    (T1) Structural diagonality, self-adjointness, positivity, swap symmetry of R_beta^env")
     print("    (T2) Peter-Weyl character expansion of Z_beta^env with (D2) coefficients")
-    print("    (T3) eigenvalue equality kappa/a^4 = z^env/z_(0,0)^env at every weight (operator-level)")
+    print("    (T3) eigenvalue equality kappa/a^4 = z^env/lambda_env at every weight (operator-level)")
+    print("    (T3b) actual-trivial normalization gives R/kappa_(0,0), not R, unless kappa_(0,0)=1")
     print("    (T4) uniqueness: distinct eigenvalue sequences yield distinct operators")
     print("    Algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta")
     print("    Counterfactuals: D^loc strip + swap symmetry are both load-bearing")

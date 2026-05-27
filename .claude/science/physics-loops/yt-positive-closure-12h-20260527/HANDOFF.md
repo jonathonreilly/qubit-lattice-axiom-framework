@@ -540,6 +540,9 @@ Phase-orbit selector underdetermination no-go science commit:
 b08f4d4d7e786e94f41eeb75ffa8564217fd2e80
 ```
 
+PR #1980 body was updated with the phase-orbit selector no-go result and
+verification.
+
 Previous science commit pushed and recorded in PR #1980 before this cycle:
 
 ```text

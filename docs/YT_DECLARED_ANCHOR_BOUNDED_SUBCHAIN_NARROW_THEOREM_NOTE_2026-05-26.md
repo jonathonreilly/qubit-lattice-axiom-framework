@@ -83,5 +83,5 @@ PYTHONPATH=scripts python3 scripts/frontier_yt_declared_anchor_bounded_subchain.
 Expected result:
 
 ```text
-FAIL=0
+TOTAL: PASS=15, FAIL=0
 ```

@@ -13,8 +13,8 @@ matching rule.
 **Status:** historical zero-import chain note with EW normalization now
 matching-rule conditional through `kappa_EW`; do not cite the EW `sqrt(9/8)`
 step as an unconditional retained derivation.
-**Script:** `scripts/frontier_yt_zero_import_chain.py`
-**Narrow bounded runner:** `scripts/frontier_yt_declared_anchor_bounded_subchain.py`
+**Script:** `scripts/frontier_yt_declared_anchor_bounded_subchain.py`
+**Historical full-chain runner:** `scripts/frontier_yt_zero_import_chain.py`
 
 **Status authority and audit hygiene (2026-05-10, updated 2026-05-18):**
 The audit lane has classified this note `audited_conditional` (audit row
@@ -55,16 +55,12 @@ under the imported exact Fierz fraction `8/9`) into the new section 9
 of this note, and (2) names the two residual gaps (the bounded
 canonical plaquette insertion at `beta = 6` and the matching rule (M))
 so that the source note explicitly records the analytic scope without
-new admissions and without inventing closures. The claim type therefore
-remains `positive_theorem` at the *algebraic / Ward / RGE* level of
-section 4 (those are not in the conditional perimeter), while the
-*overall y_t / EW prediction chain* is honestly conditional on the two
-named upstream items. The 2026-05-26 split supersedes the older
-`positive_theorem` wording for audit purposes: the auditable source packet is
-bounded over declared anchors, and the full zero-import numerical prediction is
-not asserted as retained. No new axioms are introduced and no new content is
-asserted as derived from retained primitives that is not actually derived from
-retained primitives.
+new admissions and without inventing closures. The 2026-05-26 split
+supersedes the older `positive_theorem` wording for audit purposes: the
+auditable source packet is bounded over declared anchors, and the full
+zero-import numerical prediction is not asserted as retained. No new axioms
+are introduced and no new content is asserted as derived from retained
+primitives that is not actually derived from retained primitives.
 
 ---
 

@@ -1,0 +1,693 @@
+{
+  "actual_current_surface_status": "bounded-support backend candidate",
+  "anchors": {
+    "kappa_exercise": {
+      "actual_current_surface_status": "exact-support / open kappa proof",
+      "anchors": {
+        "primitive_record": {
+          "actual_current_surface_status": "exact-support",
+          "audit_required_before_effective_retained": true,
+          "backup_route": "strict same-source top/W response evidence",
+          "bare_retained_allowed": false,
+          "boundary": {
+            "actual_current_surface_status": "exact-support",
+            "physical_top_yukawa_identified_as_primitive_intervention": false,
+            "primitive_record_intervention_law_derived": true,
+            "proposal_allowed_for_full_y_t": false,
+            "strict_top_w_response_evidence_present": false
+          },
+          "fail_count": 0,
+          "first_open_gate_after_this_note": "physical top-source identification",
+          "markov_naturality": {
+            "q_marg_minus": 0.14340433330997698,
+            "q_marg_plus": 0.856595666690023
+          },
+          "no_hidden_fiber_witness": {
+            "kl_hidden": 0.19978364106622332,
+            "kl_minimum": 0.04570054152531286
+          },
+          "pass_count": 75,
+          "proposal_allowed": false,
+          "proposal_allowed_reason": "The primitive no-hidden-record intervention law is derived, but full Y_T closure still needs top-source identification or strict same-source top/W response evidence.",
+          "reachability_to_target": "partially_closes",
+          "record_space": {
+            "mean": 0.0,
+            "state_count": 8,
+            "variance": 1.0000000000000002
+          },
+          "review_surface": [
+            "docs/YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_primitive_record_intervention_law.py",
+            "outputs/yt_primitive_record_intervention_law_2026-05-27.json"
+          ],
+          "statuses": {
+            "busch_povm": "retained",
+            "lsp_projective": "retained_bounded",
+            "lsp_signed_record": "retained_bounded",
+            "powers_tracial": "retained",
+            "source_action": "retained_bounded"
+          },
+          "top_component": {
+            "lambda_status": "raw coordinate scale under Fisher unit",
+            "top_component": "1/sqrt(6)"
+          },
+          "trace_class": "upstream_support"
+        },
+        "sparse_transfer_certificate": {
+          "actual_current_surface_status": "bounded-support microbench / open strict-response backend",
+          "audit_required_before_effective_retained": true,
+          "bare_retained_allowed": false,
+          "candidate_action_backend": {
+            "accepted_same_surface_transfer_backend_present": false,
+            "backend_id": "candidate_action_backend",
+            "missing_fields": [
+              "accepted finite same-surface transfer/action backend",
+              "same source id on that backend",
+              "isolated vacuum/W/top spectral projectors",
+              "coefficient-certified dM_t/dh",
+              "coefficient-certified dM_W/dh",
+              "contact/vacuum subtraction",
+              "FV/IR controls",
+              "same model class",
+              "same-scale g2 or explicit ratio scope"
+            ],
+            "proposal_allowed": false,
+            "proposal_allowed_reason": "A candidate action backend cannot be run until the accepted finite same-surface top/W transfer surface exists.",
+            "status": "blocked_no_accepted_backend",
+            "strict_top_w_rows_present": false
+          },
+          "counterfamily_backend": {
+            "backend_a": {
+              "backend_id": "counterfamily_backend_kappa_sqrt(6)/6",
+              "backend_role": "tainted_counterexample_backend",
+              "contains_free_top_coefficient_input": true,
+              "dM_W_dh": "A*g_2/2",
+              "dM_t_dh": "sqrt(2)*A*kappa/2",
+              "eigenvalue_rows": {
+                "W": "exp(-a_t*g_2*(A*h + v_0)/2)",
+                "top": "exp(-sqrt(2)*a_t*kappa*(A*h + v_0)/2)",
+                "vacuum": "1"
+              },
+              "finite_volume_ir_controls_pass": false,
+              "input_parameters": [
+                "a_t",
+                "g_2",
+                "v_0",
+                "A",
+                "kappa"
+              ],
+              "proposal_allowed": false,
+              "proposal_allowed_reason": "backend includes free top coefficient kappa as an input; the harness must reject it as closure",
+              "readout_after_substitution": "sqrt(6)/6",
+              "readout_contains_kappa": true,
+              "readout_y33": "kappa",
+              "same_model_class": "support-schema-only diagonal finite transfer family",
+              "same_scale_g2": "ratio-scoped only",
+              "same_source_id": "h",
+              "surface_id": "diagonal_three_sector_transfer_counterfamily",
+              "top_pole_isolated": true,
+              "vacuum_contact_subtraction_done": true,
+              "w_pole_isolated": true
+            },
+            "backend_b": {
+              "backend_id": "counterfamily_backend_kappa_sqrt(6)/3",
+              "backend_role": "tainted_counterexample_backend",
+              "contains_free_top_coefficient_input": true,
+              "dM_W_dh": "A*g_2/2",
+              "dM_t_dh": "sqrt(2)*A*kappa/2",
+              "eigenvalue_rows": {
+                "W": "exp(-a_t*g_2*(A*h + v_0)/2)",
+                "top": "exp(-sqrt(2)*a_t*kappa*(A*h + v_0)/2)",
+                "vacuum": "1"
+              },
+              "finite_volume_ir_controls_pass": false,
+              "input_parameters": [
+                "a_t",
+                "g_2",
+                "v_0",
+                "A",
+                "kappa"
+              ],
+              "proposal_allowed": false,
+              "proposal_allowed_reason": "backend includes free top coefficient kappa as an input; the harness must reject it as closure",
+              "readout_after_substitution": "sqrt(6)/3",
+              "readout_contains_kappa": true,
+              "readout_y33": "kappa",
+              "same_model_class": "support-schema-only diagonal finite transfer family",
+              "same_scale_g2": "ratio-scoped only",
+              "same_source_id": "h",
+              "surface_id": "diagonal_three_sector_transfer_counterfamily",
+              "top_pole_isolated": true,
+              "vacuum_contact_subtraction_done": true,
+              "w_pole_isolated": true
+            }
+          },
+          "fail_count": 0,
+          "next_action": "Supply an accepted finite same-surface top/W transfer/action backend with isolated vacuum/W/top projectors, then rerun this certificate to compute coefficient-certified dM_t/dh and dM_W/dh without kappa as an input.",
+          "pass_count": 88,
+          "proposal_allowed": false,
+          "proposal_allowed_reason": "The harness validates the strict-response certificate schema and rejects the kappa-tainted counterfamily backend.  No accepted finite same-surface top/W transfer/action backend is present, so no coefficient-bearing top row has been derived.",
+          "reachability_to_target": "supports",
+          "review_surface": [
+            "docs/YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py",
+            "outputs/yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
+          ],
+          "strict_certificate_schema": {
+            "counterfamily_strict_positive_fields": {
+              "FV_IR_model_class_checks_pass": false,
+              "coefficient_certified_dM_W_dh": true,
+              "coefficient_certified_dM_t_dh": false,
+              "contact_subtraction_done": true,
+              "no_forbidden_imports": true,
+              "same_model_class": false,
+              "same_scale_for_g2_and_source_response": false,
+              "same_source_id": true,
+              "top_pole_isolated": true,
+              "w_pole_isolated": true
+            },
+            "required_fields": [
+              "same_source_id",
+              "surface_id",
+              "top_pole_isolated",
+              "w_pole_isolated",
+              "dM_t_dh",
+              "dM_W_dh",
+              "vacuum_contact_subtraction_done",
+              "finite_volume_ir_controls_pass",
+              "same_model_class",
+              "same_scale_g2",
+              "contains_free_top_coefficient_input",
+              "proposal_allowed"
+            ],
+            "strict_positive_certificate_passes": false
+          },
+          "strict_top_w_response_certificate_present": false,
+          "taint_scans": {
+            "candidate_stub_scan": {
+              "forbidden_proof_input_hits": [],
+              "passes_forbidden_import_firewall": true,
+              "passes_target_value_input_firewall": true,
+              "target_value_hits": []
+            },
+            "counterfamily_scan": {
+              "forbidden_proof_input_hits": [],
+              "passes_forbidden_import_firewall": true,
+              "passes_target_value_input_firewall": false,
+              "target_value_hits": [
+                "sqrt(6)"
+              ]
+            }
+          },
+          "trace_class": "upstream_support"
+        },
+        "top_hard_stop": {
+          "actual_current_surface_status": "no-go",
+          "audit_required_before_effective_retained": true,
+          "bare_retained_allowed": false,
+          "carrier_scope": {
+            "carrier_line_selected": true,
+            "coefficient_selected": false
+          },
+          "conditional_theorem_preserved": {
+            "conditional_component": "1/sqrt(6)"
+          },
+          "counterfamily": {
+            "preserved_constraints": [
+              "locality",
+              "lsp_signed_record_ray",
+              "one_higgs_up_type_carrier",
+              "color_singlet_weak_singlet",
+              "normalized_top_operator_ray",
+              "democratic_direction",
+              "markov_sufficient_coarse_graining",
+              "forbidden_import_free"
+            ]
+          },
+          "fail_count": 0,
+          "input_status_summary": {
+            "mininfo_gate_fail_count": 0,
+            "primitive_record_law_fail_count": 0,
+            "top_carrier_fail_count": 0
+          },
+          "next_action": "strict same-source top/W response evidence, unless audit accepts the primitive top-source identification premise",
+          "pass_count": 63,
+          "proposal_allowed": false,
+          "proposal_allowed_reason": "The current structural inputs select the top operator ray and primitive source law, but do not derive the physical identification of the Standard Model top source coordinate with Fisher arclength.",
+          "reachability_to_target": "prunes",
+          "review_surface": [
+            "docs/YT_TOP_SOURCE_IDENTIFICATION_HARD_STOP_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_top_source_identification_hard_stop_no_go.py",
+            "outputs/yt_top_source_identification_hard_stop_no_go_2026-05-27.json"
+          ],
+          "scope": {
+            "actual_current_surface_status": "no-go",
+            "conditional_y33_refuted": false,
+            "primitive_law_refuted": false,
+            "proposal_allowed": false,
+            "route_pruned": "structural no-compute top-source identification from current inputs alone",
+            "strict_response_route_live": true
+          },
+          "trace_class": "negative_route_pruning"
+        }
+      },
+      "bare_retained_allowed": false,
+      "claim_id": "yt_kappa_direct_full_physics_exercise_note_2026-05-27",
+      "counterfamily": {
+        "conclusion": "pure projector/carrier proof does not fix physical scalar coefficient",
+        "dM_W_dh": "A*g_2/2",
+        "dM_t_dh": "sqrt(2)*A*kappa/2",
+        "example_a": "sqrt(6)/6",
+        "example_b": "sqrt(6)/3",
+        "readout": "kappa"
+      },
+      "exact_support": {
+        "component_amplitude": "1/sqrt(6)",
+        "dim_q_l": 6,
+        "norm_squared": "1",
+        "status": "exact_support_not_physical_coefficient_proof"
+      },
+      "exercise": {
+        "assumptions": [
+          {
+            "assumption": "qubit/Cl3 on Z3 substrate",
+            "status": "accepted_lane_premise",
+            "what_if_wrong": "outside this note"
+          },
+          {
+            "assumption": "Q_L carrier dimension six",
+            "status": "exact_support",
+            "what_if_wrong": "kappa becomes 1/sqrt(d)"
+          },
+          {
+            "assumption": "democratic unit vector",
+            "status": "exact_finite_math",
+            "what_if_wrong": "model-dependent vector"
+          },
+          {
+            "assumption": "top source equals primitive O_top source",
+            "status": "open",
+            "what_if_wrong": "raw scalar survives"
+          },
+          {
+            "assumption": "Fisher arclength source coordinate",
+            "status": "exact_support_after_statistic",
+            "what_if_wrong": "lambda returns"
+          },
+          {
+            "assumption": "accepted pole surface",
+            "status": "open",
+            "what_if_wrong": "LSZ bridge stays conditional"
+          },
+          {
+            "assumption": "same-surface top/W response rows",
+            "status": "open",
+            "what_if_wrong": "no coefficient readout"
+          },
+          {
+            "assumption": "Ward/H_unit fixes magnitude",
+            "status": "rejected",
+            "what_if_wrong": "audited trap repeats"
+          },
+          {
+            "assumption": "Planck scale fixes dimensionless kappa",
+            "status": "rejected_for_local_kappa",
+            "what_if_wrong": "scale/coefficient conflation"
+          }
+        ],
+        "literature_sources": [
+          "https://cern-courier.web.cern.ch/a/the-origin-of-particle-masses/",
+          "https://arxiv.org/abs/2003.08401",
+          "https://arxiv.org/abs/1612.06963",
+          "https://arxiv.org/abs/2305.05491",
+          "https://arxiv.org/abs/1701.08895",
+          "https://arxiv.org/abs/1306.1465"
+        ],
+        "math_sources": [
+          "https://encyclopediaofmath.org/wiki/Schur_lemma",
+          "Kato/Rellich isolated-eigenvalue perturbation theory",
+          "finite convex duality and KL I-projection",
+          "Chentsov/Fisher sufficient-statistic monotonicity"
+        ],
+        "panel": {
+          "accept_exact_component_amplitude": "20/20",
+          "accept_projector_alone_as_physical_coefficient_proof": "0/20",
+          "prefer_same_surface_response_backend": "18/20"
+        },
+        "routes": [
+          {
+            "proposal_allowed_now": false,
+            "rank": 1,
+            "route": "native same-surface transfer/action backend plus strict top/W FH rows",
+            "status": "best_positive_route"
+          },
+          {
+            "proposal_allowed_now": false,
+            "rank": 2,
+            "route": "physical top-source identification theorem for primitive no-hidden-record O_top",
+            "status": "plausible_but_audit_risky"
+          },
+          {
+            "proposal_allowed_now": false,
+            "rank": 3,
+            "route": "direct lattice/top correlator or production response measurement",
+            "status": "clean_measurement_route_compute_heavy"
+          },
+          {
+            "proposal_allowed_now": false,
+            "rank": 4,
+            "route": "new native flavor/UV fixed-point theorem",
+            "status": "frontier_route_no_current_artifact"
+          },
+          {
+            "proposal_allowed_now": false,
+            "rank": 5,
+            "route": "pure democratic projector/Clebsch proof",
+            "status": "exact_support_only"
+          },
+          {
+            "proposal_allowed_now": false,
+            "rank": 6,
+            "route": "Ward/H_unit repair",
+            "status": "rejected_definition_trap"
+          }
+        ]
+      },
+      "fail_count": 0,
+      "first_open_gate": "native same-surface top/W transfer/action backend or accepted physical top-source identification theorem",
+      "generated_by": "scripts/frontier_yt_kappa_direct_full_physics_exercise.py",
+      "next_action": "build the native finite transfer/action backend and compute the top/W Feynman-Hellmann rows with no kappa input",
+      "pass_count": 56,
+      "proposal_allowed": false,
+      "proposal_allowed_reason": "The exercise verifies exact 1/sqrt(6) carrier support and a scalar counterfamily; no accepted physical source identification or coefficient-bearing top/W response backend is present.",
+      "reachability_to_target": "supports",
+      "trace_class": "upstream_support"
+    },
+    "sparse_certificate": {
+      "actual_current_surface_status": "bounded-support microbench / open strict-response backend",
+      "audit_required_before_effective_retained": true,
+      "bare_retained_allowed": false,
+      "candidate_action_backend": {
+        "accepted_same_surface_transfer_backend_present": false,
+        "backend_id": "candidate_action_backend",
+        "missing_fields": [
+          "accepted finite same-surface transfer/action backend",
+          "same source id on that backend",
+          "isolated vacuum/W/top spectral projectors",
+          "coefficient-certified dM_t/dh",
+          "coefficient-certified dM_W/dh",
+          "contact/vacuum subtraction",
+          "FV/IR controls",
+          "same model class",
+          "same-scale g2 or explicit ratio scope"
+        ],
+        "proposal_allowed": false,
+        "proposal_allowed_reason": "A candidate action backend cannot be run until the accepted finite same-surface top/W transfer surface exists.",
+        "status": "blocked_no_accepted_backend",
+        "strict_top_w_rows_present": false
+      },
+      "counterfamily_backend": {
+        "backend_a": {
+          "backend_id": "counterfamily_backend_kappa_sqrt(6)/6",
+          "backend_role": "tainted_counterexample_backend",
+          "contains_free_top_coefficient_input": true,
+          "dM_W_dh": "A*g_2/2",
+          "dM_t_dh": "sqrt(2)*A*kappa/2",
+          "eigenvalue_rows": {
+            "W": "exp(-a_t*g_2*(A*h + v_0)/2)",
+            "top": "exp(-sqrt(2)*a_t*kappa*(A*h + v_0)/2)",
+            "vacuum": "1"
+          },
+          "finite_volume_ir_controls_pass": false,
+          "input_parameters": [
+            "a_t",
+            "g_2",
+            "v_0",
+            "A",
+            "kappa"
+          ],
+          "proposal_allowed": false,
+          "proposal_allowed_reason": "backend includes free top coefficient kappa as an input; the harness must reject it as closure",
+          "readout_after_substitution": "sqrt(6)/6",
+          "readout_contains_kappa": true,
+          "readout_y33": "kappa",
+          "same_model_class": "support-schema-only diagonal finite transfer family",
+          "same_scale_g2": "ratio-scoped only",
+          "same_source_id": "h",
+          "surface_id": "diagonal_three_sector_transfer_counterfamily",
+          "top_pole_isolated": true,
+          "vacuum_contact_subtraction_done": true,
+          "w_pole_isolated": true
+        },
+        "backend_b": {
+          "backend_id": "counterfamily_backend_kappa_sqrt(6)/3",
+          "backend_role": "tainted_counterexample_backend",
+          "contains_free_top_coefficient_input": true,
+          "dM_W_dh": "A*g_2/2",
+          "dM_t_dh": "sqrt(2)*A*kappa/2",
+          "eigenvalue_rows": {
+            "W": "exp(-a_t*g_2*(A*h + v_0)/2)",
+            "top": "exp(-sqrt(2)*a_t*kappa*(A*h + v_0)/2)",
+            "vacuum": "1"
+          },
+          "finite_volume_ir_controls_pass": false,
+          "input_parameters": [
+            "a_t",
+            "g_2",
+            "v_0",
+            "A",
+            "kappa"
+          ],
+          "proposal_allowed": false,
+          "proposal_allowed_reason": "backend includes free top coefficient kappa as an input; the harness must reject it as closure",
+          "readout_after_substitution": "sqrt(6)/3",
+          "readout_contains_kappa": true,
+          "readout_y33": "kappa",
+          "same_model_class": "support-schema-only diagonal finite transfer family",
+          "same_scale_g2": "ratio-scoped only",
+          "same_source_id": "h",
+          "surface_id": "diagonal_three_sector_transfer_counterfamily",
+          "top_pole_isolated": true,
+          "vacuum_contact_subtraction_done": true,
+          "w_pole_isolated": true
+        }
+      },
+      "fail_count": 0,
+      "next_action": "Supply an accepted finite same-surface top/W transfer/action backend with isolated vacuum/W/top projectors, then rerun this certificate to compute coefficient-certified dM_t/dh and dM_W/dh without kappa as an input.",
+      "pass_count": 88,
+      "proposal_allowed": false,
+      "proposal_allowed_reason": "The harness validates the strict-response certificate schema and rejects the kappa-tainted counterfamily backend.  No accepted finite same-surface top/W transfer/action backend is present, so no coefficient-bearing top row has been derived.",
+      "reachability_to_target": "supports",
+      "review_surface": [
+        "docs/YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md",
+        "scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py",
+        "outputs/yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
+      ],
+      "strict_certificate_schema": {
+        "counterfamily_strict_positive_fields": {
+          "FV_IR_model_class_checks_pass": false,
+          "coefficient_certified_dM_W_dh": true,
+          "coefficient_certified_dM_t_dh": false,
+          "contact_subtraction_done": true,
+          "no_forbidden_imports": true,
+          "same_model_class": false,
+          "same_scale_for_g2_and_source_response": false,
+          "same_source_id": true,
+          "top_pole_isolated": true,
+          "w_pole_isolated": true
+        },
+        "required_fields": [
+          "same_source_id",
+          "surface_id",
+          "top_pole_isolated",
+          "w_pole_isolated",
+          "dM_t_dh",
+          "dM_W_dh",
+          "vacuum_contact_subtraction_done",
+          "finite_volume_ir_controls_pass",
+          "same_model_class",
+          "same_scale_g2",
+          "contains_free_top_coefficient_input",
+          "proposal_allowed"
+        ],
+        "strict_positive_certificate_passes": false
+      },
+      "strict_top_w_response_certificate_present": false,
+      "taint_scans": {
+        "candidate_stub_scan": {
+          "forbidden_proof_input_hits": [],
+          "passes_forbidden_import_firewall": true,
+          "passes_target_value_input_firewall": true,
+          "target_value_hits": []
+        },
+        "counterfamily_scan": {
+          "forbidden_proof_input_hits": [],
+          "passes_forbidden_import_firewall": true,
+          "passes_target_value_input_firewall": false,
+          "target_value_hits": [
+            "sqrt(6)"
+          ]
+        }
+      },
+      "trace_class": "upstream_support"
+    },
+    "strict_obstruction": {
+      "actual_current_surface_status": "no-go",
+      "audit_required_before_effective_retained": true,
+      "bare_retained_allowed": false,
+      "counterfamily": {
+        "dM_W_dh": "g_2*A/2",
+        "dM_t_dh": "kappa*A/sqrt(2)",
+        "readout": "kappa"
+      },
+      "current_certificate_field_status": {
+        "FV_IR_model_class_checks_pass": {
+          "closes_positive_field": false,
+          "current_status": "absent for measured/solved top/W pole packet"
+        },
+        "W_pole_isolated": {
+          "closes_positive_field": false,
+          "current_status": "W/Z denominator algebra support exists; same-surface pole certificate absent"
+        },
+        "coefficient_certified_dM_W_dh": {
+          "closes_positive_field": "partial",
+          "current_status": "support row g_2*v'(h)/2, not packaged with top pole data"
+        },
+        "coefficient_certified_dM_t_dh": {
+          "closes_positive_field": false,
+          "current_status": "symbolic y_33*v'(h)/sqrt(2), coefficient free"
+        },
+        "contact_subtraction_done": {
+          "closes_positive_field": false,
+          "current_status": "absent for measured/solved top/W pole packet"
+        },
+        "no_forbidden_imports": {
+          "closes_positive_field": true,
+          "current_status": "pass for support artifacts and this obstruction"
+        },
+        "same_model_class": {
+          "closes_positive_field": false,
+          "current_status": "same symbolic carrier class only; accepted top/W transfer class absent"
+        },
+        "same_scale_for_g2_and_source_response": {
+          "closes_positive_field": false,
+          "current_status": "open for numerical Y_T; local ratio can scope g_2 separately"
+        },
+        "same_source_id": {
+          "closes_positive_field": false,
+          "current_status": "support-only symbolic neutral carrier coordinate; accepted physical top/W transfer source absent"
+        },
+        "top_pole_isolated": {
+          "closes_positive_field": false,
+          "current_status": "absent coefficient-certified top pole row"
+        }
+      },
+      "fail_count": 0,
+      "next_action": "direct same-surface top and W pole-response solve, with coefficient rows, contact subtraction, FV/IR checks, model-class checks, and same-scale g_2 scope",
+      "pass_count": 74,
+      "proposal_allowed": false,
+      "proposal_allowed_reason": "Current same-source/W-row/symbolic-top support does not contain a coefficient-certified top pole response row. A finite transfer counterfamily preserves the support schema while varying the recovered top coefficient.",
+      "reachability_to_target": "prunes",
+      "review_surface": [
+        "docs/YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md",
+        "scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py",
+        "outputs/yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json"
+      ],
+      "route_pruned": "deriving strict coefficient-certified top/W response evidence from current same-source/W-row/symbolic-top support alone",
+      "support_output_status": {
+        "fh_gate_fail_count": 0,
+        "same_source_gate_fail_count": 0,
+        "strict_top_fail_count": 0,
+        "strict_top_w_rows_present": false,
+        "strict_wz_fail_count": 0,
+        "symbolic_top_coefficient_derived": false,
+        "top_coefficient_nogo_fail_count": 0,
+        "top_source_nogo_fail_count": 0
+      },
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "bare_retained_allowed": false,
+  "candidate_backend": {
+    "M_W": "g_2*(A*ell + v_0)/2",
+    "M_t": "sqrt(3)*(A*ell + v_0)/6",
+    "accepted_same_surface_transfer_backend_present": false,
+    "accepted_top_pole_isolated": false,
+    "accepted_w_pole_isolated": false,
+    "backend_derived_from_qubit_cl3_z3_substrate": false,
+    "backend_id": "native_fisher_unit_democratic_top_w_candidate",
+    "backend_role": "no_kappa_candidate_backend",
+    "component_amplitude": "sqrt(6)/6",
+    "contact_subtraction_done": false,
+    "contains_free_top_coefficient_input": false,
+    "dM_W_dell": "A*g_2/2",
+    "dM_t_dell": "sqrt(3)*A/6",
+    "dim_q_l_color_isospin": 6,
+    "finite_volume_ir_controls_pass": false,
+    "formal_transfer_rows": {
+      "W": "exp(-a_t*g_2*(A*ell + v_0)/2)",
+      "top": "exp(-sqrt(3)*a_t*(A*ell + v_0)/6)",
+      "vacuum": "1"
+    },
+    "free_symbols_in_M_t": [
+      "A",
+      "ell",
+      "v_0"
+    ],
+    "free_symbols_in_dM_t": [
+      "A"
+    ],
+    "proposal_allowed": false,
+    "readout_equals_1_over_sqrt6": true,
+    "readout_y33": "sqrt(6)/6",
+    "same_model_class": false,
+    "same_scale_g2": "ratio-scoped candidate only",
+    "same_source_id": "ell",
+    "surface_id": "candidate_finite_same_surface_top_w_transfer_action",
+    "transfer_rows_recover_masses": {
+      "W": true,
+      "top": true
+    },
+    "v_of_ell": "A*ell + v_0"
+  },
+  "claim_id": "yt_native_same_surface_top_w_transfer_action_backend_candidate_note_2026-05-27",
+  "counterfamily_comparison": {
+    "candidate_readout": "sqrt(6)/6",
+    "counterfamily_status": "still applies to current structural support; candidate must be derived as physical backend",
+    "tainted_readout": "kappa"
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py",
+  "next_action": "derive this candidate backend from qubit/Cl(3) on Z^3 substrate transfer/action dynamics, or produce strict pole-row data on it",
+  "pass_count": 64,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The no-kappa same-source rows compute 1/sqrt(6), but the backend is not yet derived as the accepted physical transfer/action surface and lacks strict pole/FV/IR/contact/model-class checks.",
+  "reachability_to_target": "supports",
+  "strict_certificate_boundary": {
+    "missing_authority_gates": [
+      "accepted_same_surface_transfer_backend_present",
+      "backend_derived_from_qubit_cl3_z3_substrate",
+      "top_pole_isolated",
+      "w_pole_isolated",
+      "contact_subtraction_done",
+      "finite_volume_ir_controls_pass",
+      "same_model_class"
+    ],
+    "required_positive_fields": {
+      "accepted_same_surface_transfer_backend_present": false,
+      "backend_derived_from_qubit_cl3_z3_substrate": false,
+      "coefficient_certified_dM_W_dh": true,
+      "coefficient_certified_dM_t_dh": true,
+      "contact_subtraction_done": false,
+      "finite_volume_ir_controls_pass": false,
+      "same_model_class": false,
+      "same_scale_g2_or_ratio_scope": true,
+      "same_source_id": true,
+      "top_pole_isolated": false,
+      "w_pole_isolated": false
+    },
+    "strict_certificate_passes": false
+  },
+  "strict_top_w_response_certificate_present": false,
+  "trace_class": "upstream_support"
+}

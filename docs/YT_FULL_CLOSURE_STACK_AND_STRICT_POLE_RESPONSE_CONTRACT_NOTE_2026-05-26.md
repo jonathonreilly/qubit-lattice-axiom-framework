@@ -247,6 +247,19 @@ six-component carrier amplitude is exact support, not a physical coefficient
 proof, and ranks the native same-surface top/W transfer/action backend as the
 best positive route.
 
+[`YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md`](YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md)
+fills the previously empty candidate-backend slot with explicit no-`kappa`
+rows:
+
+```text
+M_W(ell) = g_2 v(ell) / 2,
+M_t(ell) = v(ell) / sqrt(12).
+```
+
+The response readout is exactly `1/sqrt(6)`.  This is still bounded support,
+because the candidate has not been derived as the accepted physical substrate
+transfer/action backend and lacks pole/FV/IR/contact/model-class certificates.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -324,6 +337,14 @@ dM_W/dh with no kappa input.
 The targeted kappa exercise sharpens that target: the next backend must close
 the physical scalar coefficient bridge, not merely reproduce the
 `1/sqrt(6)` democratic carrier amplitude.
+
+The native candidate backend gives the first concrete object to derive:
+
+```text
+accepted substrate transfer/action dynamics
+  -> M_W(ell) = g_2 v(ell)/2 and M_t(ell)=v(ell)/sqrt(12)
+  -> strict top/W response certificate.
+```
 
 ## Non-Claims
 

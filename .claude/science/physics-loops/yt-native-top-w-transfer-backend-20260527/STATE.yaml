@@ -1,0 +1,12 @@
+loop_slug: yt-native-top-w-transfer-backend-20260527
+target: best-honest-status
+mode: focused_science_cycle
+current_surface_status: bounded-support backend candidate
+active_route: native same-surface top/W transfer-action backend
+hard_residual: candidate backend is not yet derived as accepted physical transfer/action surface
+files_touched:
+  - docs/YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md
+  - scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py
+  - outputs/yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json
+next_exact_action: derive candidate backend authority from qubit/Cl(3) on Z^3 transfer/action dynamics
+stop_condition: one coherent backend-candidate science block packaged and verified

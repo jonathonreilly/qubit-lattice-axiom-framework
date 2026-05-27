@@ -1,0 +1,187 @@
+{
+  "actual_current_surface_status": "no-go",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_quantitative_phase_strength_underdetermination_no_go_note_2026-05-27",
+  "current_premise_no_go": {
+    "audit": {
+      "connected_hermitian_c3_circulant_family": true,
+      "least_deformation_from_positive_bx_axis_selects_target": false,
+      "no_forbidden_imports": true,
+      "orientation_sign_supplied": true,
+      "phase_angle_selector_derived": false,
+      "phase_strength_law_derived": false,
+      "pure_phase_axis_is_new_quantitative_premise": true,
+      "pure_phase_axis_would_select_target": true,
+      "source_tangent_bx_fixed": true,
+      "strict_top_w_response_certificate_present": false,
+      "unit_frobenius_base_norm_supplied": true
+    },
+    "least_deformation_witness": {
+      "largest_lines": [
+        "P_0"
+      ],
+      "pure_phase_axis_squared_distance_to_positive_Bx_axis": "2",
+      "squared_distance_to_positive_Bx_axis": "(-2 + sqrt(3))**2/4 + 1/4",
+      "x0": "sqrt(3)/2",
+      "y0": "1/2"
+    }
+  },
+  "dependency_status": {
+    "circulant_boundary": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "orientation_necessity": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "orientation_strength": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "phase_cone": {
+      "actual_current_surface_status": "exact-support / open phase-ordering import",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "strict_availability": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py",
+  "literature_math_search": {
+    "external_literature_load_bearing": false,
+    "math_used": "finite C3 character algebra and two-dimensional cone geometry",
+    "perron_frobenius_reuse": "not reused as positive input; existing positive-real C3 Perron route selects P_0"
+  },
+  "pass_count": 106,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Unit-normalized connected C3 base dynamics with a signed orientation branch still contains both singlet-top and nontrivial-top finite witnesses. The quantitative phase angle remains an open physical/dynamical input.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "current same-surface C3 premises plus unit base normalization and orientation sign derive quantitative nontrivial phase-strength",
+  "route_still_live": "derive accepted same-surface quantitative phase-angle dynamics proving |y_0| > sqrt(3) x_0, or produce accepted strict top/W pole rows",
+  "source_rows": {
+    "P_0": "sqrt(3)*A/3",
+    "P_omega": "-sqrt(3)*A/6",
+    "P_omega2": "-sqrt(3)*A/6"
+  },
+  "trace_class": "negative_route_pruning",
+  "unit_circle_witnesses": {
+    "negative_inside_cone_unit": {
+      "c3_circulant": true,
+      "connected": true,
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "sqrt(2)/2",
+        "P_omega2": "-sqrt(2)/2"
+      },
+      "hermitian": true,
+      "largest_lines": [
+        "P_omega"
+      ],
+      "orientation_sign": "negative",
+      "unit_frobenius_norm": true,
+      "x0": "0",
+      "y0": "-1"
+    },
+    "negative_outside_cone_unit": {
+      "c3_circulant": true,
+      "connected": true,
+      "eigenvalues": {
+        "P_0": "sqrt(2)/2",
+        "P_omega": "0",
+        "P_omega2": "-sqrt(2)/2"
+      },
+      "hermitian": true,
+      "largest_lines": [
+        "P_0"
+      ],
+      "orientation_sign": "negative",
+      "unit_frobenius_norm": true,
+      "x0": "sqrt(3)/2",
+      "y0": "-1/2"
+    },
+    "negative_wall_unit": {
+      "c3_circulant": true,
+      "connected": true,
+      "eigenvalues": {
+        "P_0": "sqrt(6)/6",
+        "P_omega": "sqrt(6)/6",
+        "P_omega2": "-sqrt(6)/3"
+      },
+      "hermitian": true,
+      "largest_lines": [
+        "P_0",
+        "P_omega"
+      ],
+      "orientation_sign": "negative",
+      "unit_frobenius_norm": true,
+      "x0": "1/2",
+      "y0": "-sqrt(3)/2"
+    },
+    "positive_inside_cone_unit": {
+      "c3_circulant": true,
+      "connected": true,
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "-sqrt(2)/2",
+        "P_omega2": "sqrt(2)/2"
+      },
+      "hermitian": true,
+      "largest_lines": [
+        "P_omega2"
+      ],
+      "orientation_sign": "positive",
+      "unit_frobenius_norm": true,
+      "x0": "0",
+      "y0": "1"
+    },
+    "positive_outside_cone_unit": {
+      "c3_circulant": true,
+      "connected": true,
+      "eigenvalues": {
+        "P_0": "sqrt(2)/2",
+        "P_omega": "-sqrt(2)/2",
+        "P_omega2": "0"
+      },
+      "hermitian": true,
+      "largest_lines": [
+        "P_0"
+      ],
+      "orientation_sign": "positive",
+      "unit_frobenius_norm": true,
+      "x0": "sqrt(3)/2",
+      "y0": "1/2"
+    },
+    "positive_wall_unit": {
+      "c3_circulant": true,
+      "connected": true,
+      "eigenvalues": {
+        "P_0": "sqrt(6)/6",
+        "P_omega": "-sqrt(6)/3",
+        "P_omega2": "sqrt(6)/6"
+      },
+      "hermitian": true,
+      "largest_lines": [
+        "P_0",
+        "P_omega2"
+      ],
+      "orientation_sign": "positive",
+      "unit_frobenius_norm": true,
+      "x0": "1/2",
+      "y0": "sqrt(3)/2"
+    }
+  }
+}

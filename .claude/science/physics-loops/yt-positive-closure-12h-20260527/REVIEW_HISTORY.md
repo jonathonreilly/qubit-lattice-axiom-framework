@@ -276,3 +276,34 @@ Verification recorded with this review:
   phase-ordering cone, and same-surface matrix factorization.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 10
+
+Scope:
+
+- C3 quantitative phase-strength underdetermination no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks C3 Frobenius-orthonormal basis, unit-circle signed witnesses, least-deformation counter-witness, source rows, dependency outputs, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go route pruning for the unit-normalized signed shortcut only; future phase-angle dynamics and strict rows remain live. |
+| Imports / support | DISCLOSED | Accepted phase-angle/strength dynamics, W/top projectors, matrix elements, and strict pole rows remain open. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=106 FAIL=0`
+- Full stack runner: `PASS=285 FAIL=0`
+- Adjacent Y_T runners passed: orientation-phase strength no-go,
+  orientation-phase necessity no-go, phase-ordering cone, C3 circulant
+  dynamics boundary, same-surface matrix factorization, and strict sparse
+  availability audit.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

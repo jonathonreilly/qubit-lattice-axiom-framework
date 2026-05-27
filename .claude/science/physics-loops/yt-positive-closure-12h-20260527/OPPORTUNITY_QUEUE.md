@@ -11,7 +11,8 @@
 | 7 | C3 phase-ordering cone characterization | medium | medium | present | exact support landed; cone membership not derived |
 | 8 | Reflection-even base dynamics route to phase cone | low | medium | present | pruned; reflection forces `y_0=0` |
 | 9 | Orientation sign / nonzero `B_y` route to phase cone | low | medium | present | pruned; sign is necessary but not sufficient |
-| 10 | New accepted quantitative orientation-phase strength theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | only remaining theory route |
+| 10 | Unit-normalized quantitative C3 phase-strength shortcut | low | medium | present | pruned; unit norm plus orientation sign still leaves singlet and nontrivial witnesses |
+| 11 | New accepted quantitative orientation-phase angle theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | only remaining theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -38,3 +39,12 @@ rank 4 or rank 10: obtain accepted strict top/W pole-row data with the
 required controls, or derive a genuinely new quantitative orientation-phase
 strength theorem proving `|y_0| > sqrt(3) x_0` on a signed nontrivial branch
 and supplying W/top projectors plus source-generator matrix elements.
+
+Queue refresh after the tenth block: positive closure remains open. Unit
+Frobenius normalization of the connected C3 base operator plus orientation sign
+is also pruned: the signed unit circle contains both singlet-top and
+nontrivial-top witnesses. The next exact action is rank 4 or rank 11: obtain
+accepted strict top/W pole-row data with the required controls, or derive a new
+accepted phase-angle dynamics theorem that fixes the unit-circle angle inside
+the nontrivial cone and supplies W/top projectors plus source-generator matrix
+elements.

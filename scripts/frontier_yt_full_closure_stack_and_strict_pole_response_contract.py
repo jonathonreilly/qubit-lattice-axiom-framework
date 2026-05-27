@@ -52,6 +52,10 @@ This runner verifies the current burn-down state:
 * Orientation sign or nonzero B_y phase is also insufficient by itself:
   same-sign base operators can lie inside the nontrivial cone or in the
   singlet region. A positive C3 route needs a quantitative phase-strength law.
+* Unit-normalized same-surface C3 base dynamics plus orientation sign is also
+  underdetermined: the allowed unit circle contains both singlet-top and
+  nontrivial-top regions, so the remaining C3 route needs a real phase-angle
+  dynamics law, not just normalization.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -112,6 +116,7 @@ C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO = DOCS / "YT_C3_POSITIVE_TRANSFER_PERR
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY = DOCS / "YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md"
 C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY = DOCS / "YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md"
 C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY = DOCS / "YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md"
+C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION = DOCS / "YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -151,6 +156,7 @@ C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT = ROOT / "outputs" / "yt_c3_positi
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json"
 C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_OUT = ROOT / "outputs" / "yt_c3_orientation_phase_dynamics_necessity_2026-05-27.json"
 C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_orientation_phase_strength_boundary_2026-05-27.json"
+C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_OUT = ROOT / "outputs" / "yt_c3_quantitative_phase_strength_underdetermination_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -235,6 +241,7 @@ def part1_anchors() -> dict[str, str]:
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY,
         C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY,
         C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY,
+        C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -273,6 +280,7 @@ def part1_anchors() -> dict[str, str]:
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT,
         C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_OUT,
         C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_OUT,
+        C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -314,6 +322,7 @@ def part1_anchors() -> dict[str, str]:
         "phase-ordering cone",
         "orientation-odd phase law",
         "phase-strength law",
+        "phase-strength underdetermination",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -371,6 +380,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_phase_ordering_cone_support_boundary = load_json(C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT)
     c3_orientation_phase_dynamics_necessity = load_json(C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_OUT)
     c3_orientation_phase_strength_boundary = load_json(C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_OUT)
+    c3_quantitative_phase_strength_underdetermination = load_json(C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -578,6 +588,32 @@ def part2_support_outputs() -> dict[str, Any]:
         "C3 phase-strength law remains open",
         c3_orientation_phase_strength_boundary.get("no_go_audit", {}).get("phase_strength_law_derived") is False,
     )
+    check(
+        "C3 quantitative phase-strength underdetermination no-go passed",
+        c3_quantitative_phase_strength_underdetermination.get("fail_count") == 0,
+        c3_quantitative_phase_strength_underdetermination.get("fail_count"),
+    )
+    check(
+        "C3 unit-normalized signed branch still contains singlet witness",
+        c3_quantitative_phase_strength_underdetermination.get("unit_circle_witnesses", {})
+        .get("positive_outside_cone_unit", {})
+        .get("largest_lines")
+        == ["P_0"],
+    )
+    check(
+        "C3 phase angle selector remains open",
+        c3_quantitative_phase_strength_underdetermination.get("current_premise_no_go", {})
+        .get("audit", {})
+        .get("phase_angle_selector_derived")
+        is False,
+    )
+    check(
+        "C3 quantitative underdetermination leaves strict rows absent",
+        c3_quantitative_phase_strength_underdetermination.get("current_premise_no_go", {})
+        .get("audit", {})
+        .get("strict_top_w_response_certificate_present")
+        is False,
+    )
 
     return {
         "fisher": fisher,
@@ -617,6 +653,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_phase_ordering_cone_support_boundary": c3_phase_ordering_cone_support_boundary,
         "c3_orientation_phase_dynamics_necessity": c3_orientation_phase_dynamics_necessity,
         "c3_orientation_phase_strength_boundary": c3_orientation_phase_strength_boundary,
+        "c3_quantitative_phase_strength_underdetermination": c3_quantitative_phase_strength_underdetermination,
     }
 
 
@@ -821,9 +858,9 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned",
             "closed": True,
-            "next_action": "produce accepted strict top/W pole rows, or derive a quantitative phase-strength microscopic dynamics law with accepted backend/projectors/matrix elements",
+            "next_action": "produce accepted strict top/W pole rows, or derive a quantitative phase-angle microscopic dynamics law with accepted backend/projectors/matrix elements",
         },
         {
             "step": 7,
@@ -864,6 +901,10 @@ def main() -> int:
             "Orientation sign alone is also pruned because same-sign finite "
             "C3 base operators can still lie in the singlet region; a "
             "quantitative phase-strength law is required. "
+            "Unit-normalized same-surface C3 base dynamics plus orientation "
+            "sign is also underdetermined: the unit circle contains both "
+            "singlet-top and nontrivial-top witnesses, so a phase-angle "
+            "dynamics law remains load-bearing. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -872,7 +913,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted strict same-source top/W pole rows, or quantitative orientation-phase strength dynamics deriving accepted backend/projectors/matrix elements",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or quantitative orientation-phase angle dynamics deriving accepted backend/projectors/matrix elements",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -912,6 +953,7 @@ def main() -> int:
             "c3_phase_ordering_cone_support_boundary_fail_count": support_outputs["c3_phase_ordering_cone_support_boundary"].get("fail_count"),
             "c3_orientation_phase_dynamics_necessity_fail_count": support_outputs["c3_orientation_phase_dynamics_necessity"].get("fail_count"),
             "c3_orientation_phase_strength_boundary_fail_count": support_outputs["c3_orientation_phase_strength_boundary"].get("fail_count"),
+            "c3_quantitative_phase_strength_underdetermination_fail_count": support_outputs["c3_quantitative_phase_strength_underdetermination"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -934,6 +976,9 @@ def main() -> int:
             "docs/YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_orientation_phase_strength_boundary.py",
             "outputs/yt_c3_orientation_phase_strength_boundary_2026-05-27.json",
+            "docs/YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py",
+            "outputs/yt_c3_quantitative_phase_strength_underdetermination_2026-05-27.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

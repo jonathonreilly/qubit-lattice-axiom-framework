@@ -19,6 +19,8 @@ closure:
    dynamics.
 9. a no-go for deriving that cone from orientation sign or nonzero `B_y`
    phase alone.
+10. a no-go for deriving that cone from unit-normalized connected C3 base
+    dynamics plus orientation sign.
 
 New result:
 
@@ -204,6 +206,27 @@ now needs a quantitative phase-strength law, not merely an orientation branch:
 `|y_0| > sqrt(3) x_0` on the signed nontrivial branch, plus accepted W/top
 matrix elements and controls.
 
+Tenth result:
+
+```text
+x_0^2 + y_0^2 = 1, orientation sign supplied
+  -/-> nontrivial C3 phase-ordering cone
+```
+
+Unit signed witnesses:
+
+```text
+x_0 = 0,         y_0 = 1          -> P_omega2 top -> A/sqrt(12)
+x_0 = sqrt(3)/2, y_0 = 1/2        -> P_0 top      -> A/sqrt(3)
+x_0 = 1/2,       y_0 = sqrt(3)/2  -> P_0 = P_omega2
+```
+
+Thus even unit Frobenius normalization of the connected C3 base operator does
+not supply the missing quantitative law. The remaining positive C3 route needs
+an accepted phase-angle dynamics theorem fixing the unit-circle angle inside
+the nontrivial cone, plus same-surface W/top projectors and matrix elements,
+or strict pole-row data.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -233,12 +256,19 @@ Artifacts:
 - `docs/YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_orientation_phase_strength_boundary.py`
 - `outputs/yt_c3_orientation_phase_strength_boundary_2026-05-27.json`
+- `docs/YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py`
+- `outputs/yt_c3_quantitative_phase_strength_underdetermination_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
 
+- `python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py` -> `SUMMARY: PASS=106 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=285 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py` -> `SUMMARY: PASS=86 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py` -> `SUMMARY: PASS=68 FAIL=0`
+- `python3 -m py_compile scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `PASS`
+- `git diff --check` -> `PASS`
 - `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=278 FAIL=0`
 - `python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py` -> `SUMMARY: PASS=114 FAIL=0`
 - `python3 scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py` -> `SUMMARY: PASS=64 FAIL=0`

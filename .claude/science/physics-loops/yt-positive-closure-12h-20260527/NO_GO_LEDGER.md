@@ -57,3 +57,10 @@ derive accepted base-operator cone membership.
   not derive the nontrivial phase-ordering cone. The same positive sign gives
   `P_omega2` for `x_0=0,y_0=1` but `P_0` for `x_0=1,y_0=1`; the missing object
   is a quantitative phase-strength law `|y_0| > sqrt(3) x_0`.
+- New in the tenth block: unit Frobenius normalization of the connected C3 base
+  operator plus orientation sign still does not derive the nontrivial
+  phase-ordering cone. On the signed unit circle, `(x_0,y_0)=(0,1)` selects
+  `P_omega2`, while `(x_0,y_0)=(sqrt(3)/2,1/2)` has the same sign and unit norm
+  but selects `P_0`; `(1/2,sqrt(3)/2)` is the degeneracy wall. The remaining
+  C3 route needs an accepted phase-angle/strength dynamics law, not just
+  normalization.

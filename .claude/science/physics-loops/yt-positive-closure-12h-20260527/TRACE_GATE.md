@@ -7,7 +7,7 @@ target_blocker_text: "derive/certify the coefficient-bearing same-surface top se
 source_of_blocker_text: user_goal
 reachability_to_target: prunes
 artifact_role: no_go
-next_trace_action: "derive accepted quantitative same-surface C3 phase-strength dynamics proving |y_0| > sqrt(3) x_0 on a signed nontrivial branch, or produce accepted strict top/W pole-row data"
+next_trace_action: "derive accepted quantitative same-surface C3 phase-angle dynamics proving |y_0| > sqrt(3) x_0 on a signed nontrivial branch, or produce accepted strict top/W pole-row data"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -33,3 +33,8 @@ The ninth artifact prunes the weaker orientation-sign route: same-sign finite
 C3 base operators can lie inside the nontrivial cone or in the singlet region.
 The next trace action must therefore derive a quantitative phase-strength law,
 or supply accepted pole-row data.
+The tenth artifact prunes the unit-normalized signed C3 shortcut: the signed
+unit circle contains both singlet-top and nontrivial-top witnesses, so unit
+normalization does not derive the phase-strength law. The next trace action
+must derive an accepted phase-angle dynamics law, or supply accepted pole-row
+data.

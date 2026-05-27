@@ -15,6 +15,8 @@ The eighth route pruned reflection-even base dynamics as a derivation of that
 cone.
 The ninth route pruned orientation sign/nonzero `B_y` alone as a derivation of
 that cone.
+The tenth route pruned unit-normalized connected C3 base dynamics plus
+orientation sign as a derivation of that cone.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -28,6 +30,7 @@ that cone.
 | C3 phase-ordering cone | exact support boundary | 2 | Landed: nontrivial top line iff `|y_0| > sqrt(3) x_0` with nonzero sign branch |
 | Reflection-even C3 base dynamics to phase cone | no-go shortcut test | 3 | Pruned: reflection forces `y_0 = 0`, giving `P_0` or degenerate nontrivial block |
 | Orientation sign / nonzero phase to phase cone | no-go shortcut test | 3 | Pruned: same sign can select `P_0` or a nontrivial line depending on phase strength |
+| Unit-normalized signed C3 base phase | no-go shortcut test | 3 | Pruned: the signed unit circle contains both `P_0` and nontrivial-line witnesses |
 
 ## Stuck Fan-Out
 
@@ -45,8 +48,10 @@ that cone.
 | Phase-ordering cone map | Classify exactly when complex C3 dynamics selects a nontrivial line | Succeeds as exact support; accepted cone membership remains open |
 | Reflection-even base dynamics | Try to derive cone membership while preserving reflection symmetry | Fails; `y_0 = 0` forces singlet or nontrivial degeneracy |
 | Orientation sign only | Try to derive cone membership from nonzero signed `B_y` | Fails; `x_0=1,y_0=1` keeps `P_0` largest despite positive sign |
+| Unit-normalized signed base dynamics | Add `x_0^2+y_0^2=1` to the signed branch | Fails; `(0,1)` selects `P_omega2`, but `(sqrt(3)/2,1/2)` selects `P_0` with the same sign and unit norm |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-quantitative orientation-phase microscopic dynamics theorem with accepted
-backend/projectors, nontrivial phase-ordering cone membership, and matrix
-elements, or accepted strict pole rows. It does not close the coefficient row.
+quantitative orientation-phase-angle microscopic dynamics theorem with
+accepted backend/projectors, nontrivial phase-ordering cone membership, and
+matrix elements, or accepted strict pole rows. It does not close the
+coefficient row.

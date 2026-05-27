@@ -96,6 +96,10 @@ closed exactly:
   orientation sign or nonzero B_y phase is not enough: same-sign finite C3
   base operators can still lie in the singlet region, so a quantitative
   phase-strength law is required
+  quantitative phase-strength underdetermination persists even after unit
+  Frobenius normalization of the base operator: the signed unit C3 base circle
+  contains both singlet-top and nontrivial-top witnesses, so a phase-angle
+  dynamics law remains load-bearing
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -116,7 +120,8 @@ still open:
   assigns the physical top row to a nontrivial C3 line
   accepted orientation-odd same-surface C3 phase dynamics proving
   |y_0| > sqrt(3) x_0 on the signed nontrivial branch
-  accepted quantitative phase-strength law, not merely orientation sign
+  accepted quantitative phase-strength / phase-angle law, not merely
+  orientation sign or unit base normalization
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -861,6 +866,28 @@ selects `P_0` because `1 < sqrt(3)`.  The future positive theorem must supply
 a quantitative phase-strength law proving strict cone membership, not just
 an orientation sign.
 
+[`YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`](YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md)
+then tests the stronger quantitative shortcut: add unit Frobenius
+normalization of the connected C3 base operator while keeping the signed
+orientation branch.  Since `B_x` and `B_y` are Frobenius-orthonormal, this
+puts `(x_0,y_0)` on the unit circle.  The signed unit circle still contains
+both:
+
+```text
+x_0 = 0,          y_0 = 1/1  -> P_omega2 top -> A/sqrt(12)
+x_0 = sqrt(3)/2,  y_0 = 1/2  -> P_0 top      -> A/sqrt(3)
+```
+
+and the wall
+
+```text
+x_0 = 1/2,        y_0 = sqrt(3)/2 -> P_0 = P_omega2.
+```
+
+Thus unit normalization plus orientation sign does not derive the
+phase-strength law.  The C3 route now needs an accepted phase-angle dynamics
+law, or direct strict pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -917,12 +944,15 @@ proposal_allowed_reason: |
   The orientation-phase strength boundary further prunes orientation sign or
   nonzero `B_y` alone: same-sign base operators can still remain in the
   singlet region unless `|y_0| > sqrt(3) x_0` is derived.
+  The quantitative phase-strength underdetermination note further shows that
+  even unit-normalized connected C3 base dynamics plus orientation sign leaves
+  the phase angle free, with both singlet-top and nontrivial-top witnesses.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  quantitative orientation-phase strength theorem deriving accepted
+  quantitative orientation-phase angle theorem deriving accepted
   same-surface backend, W/top projectors, and source-generator matrix
   elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix

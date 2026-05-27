@@ -18,6 +18,9 @@ no external theorem is load-bearing. The orientation-phase necessity no-go
 directly computes the reflection action `R C R = C^2`, the sign flip of
 `B_y`, and the resulting finite C3 eigenvalue degeneracies at `y_0 = 0`. The
 orientation-phase strength boundary directly compares finite same-sign
-witnesses on the two sides of the cone inequality. The
+witnesses on the two sides of the cone inequality. The quantitative
+phase-strength underdetermination block adds unit Frobenius normalization of
+the connected C3 base operator and directly compares signed unit-circle
+witnesses on both sides of the same cone wall. The
 strict-route audit is a branch-local availability check over existing JSON
 certificates. No literature bridge is needed for the claim status.

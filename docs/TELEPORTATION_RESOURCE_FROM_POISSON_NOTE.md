@@ -7,6 +7,10 @@ Status: planning / first artifact. This note records a narrow audit of whether
 the existing Poisson-driven CHSH lane already yields an encoded two-qubit Bell
 resource for ordinary quantum state teleportation.
 
+**Type:** open_gate
+
+**Primary runner:** `scripts/frontier_teleportation_resource_from_poisson.py`
+
 **Audit-conditional perimeter (2026-05-08):**
 In the cited audit snapshot, the audit lane classified this row `audited_conditional` with
 `auditor_confidence = high`, `chain_closes = false`, `claim_type =
@@ -142,6 +146,35 @@ Still open before promotion:
 - Separate deterministic traced extraction from diagnostic postselection.
 - Keep the claim restricted to quantum state teleportation.
 
+## Scope repair and re-audit boundary (2026-05-27)
+
+This row is now intentionally framed as an `open_gate`, not as a
+deterministic-resource theorem. The small-surface Poisson/CHSH calculation is
+still useful: it verifies that the chosen offline last-taste-bit reduction
+produces high Bell overlap, high CHSH, positive negativity, and high ideal
+state-teleportation fidelity on the stated `1D N=8` and `2D 4x4` cases. That
+does not by itself prove native preparation/readout, operational carrier
+selection, or a physical deterministic resource.
+
+The re-audit target is therefore narrower than promotion. The row should only
+be re-audited for the bounded diagnostic and for correct dependency hygiene:
+
+- The original runner remains the numerical source for the small-surface
+  certificate.
+- The Poisson/CHSH source chain must be visible in the restricted packet.
+- The current A1+A2 premise is [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md);
+  no new axiom is introduced here.
+- No sentence in this note asserts that the last taste bit has been derived as
+  a native physical carrier.
+- The missing native preparation/readout theorem remains the next positive
+  science target if this open-gate boundary passes audit.
+
+Branch-local checker:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_teleportation_poisson_resource_scope_repair.py
+```
+
 ## Citation chain and audit-stated repair path (2026-05-10)
 
 The audit verdict (2026-05-08, see top of note) flags that the
@@ -155,10 +188,10 @@ this row currently stands as follows.
 |---|---|---|---|
 | Poisson/CHSH small-surface ground states | `scripts/frontier_bell_inequality.py` (imported by this runner) | source script in repo | restricted-packet inclusion of the Poisson/CHSH machinery source |
 | This row's runner | `scripts/frontier_teleportation_resource_from_poisson.py` | runner produces the quoted certificate | bounded extraction on `1D N=8` and `2D 4x4` only |
-| Adjacent retained Poisson resource sweep | [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md) | `unaudited` (bounded_theorem) | adjacent diagnostic; not a substitute for the missing bridge theorem |
+| Adjacent retained Poisson resource sweep | [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md) | `retained_bounded` (bounded_theorem) | adjacent diagnostic; not a substitute for the missing bridge theorem |
 | Adjacent retained resource fidelity note | [`TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`](TELEPORTATION_RESOURCE_FIDELITY_NOTE.md) | `audited_clean` (bounded_theorem) | bounded fidelity protocol; not a derivation of last-taste-bit selection |
 | Adjacent retained measurement-record / apparatus-dynamics-closure | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md), [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | `audited_clean` (bounded_theorem) | adjacent bounded results; do not select the last taste bit as native carrier |
-| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | the repository axiom from which native preparation/readout must derive |
+| Current framework axiom premise | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `meta` / accepted axiom premise | the native preparation/readout theorem has not yet been derived from A1+A2 |
 
 The audit-stated repair path (verbatim from
 `audit_ledger.json/notes_for_re_audit_if_any`) is to **prove the

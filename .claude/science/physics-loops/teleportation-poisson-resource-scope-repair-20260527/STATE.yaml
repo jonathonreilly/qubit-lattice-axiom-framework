@@ -1,0 +1,18 @@
+loop: teleportation-poisson-resource-scope-repair-20260527
+target_claim_id: teleportation_resource_from_poisson_note
+actual_current_surface_status: open
+target_status: open_gate_reaudit
+branch: physics-loop/teleportation-poisson-resource-scope-repair-20260527
+started_from: origin/main
+files_touched:
+  - docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md
+  - scripts/frontier_teleportation_poisson_resource_scope_repair.py
+  - .claude/science/physics-loops/teleportation-poisson-resource-scope-repair-20260527/
+active_route: scope repair and dependency hygiene
+hard_residual: native preparation/readout theorem and last-taste-bit physical carrier selection
+open_imports:
+  - native preparation/readout bridge remains unproved
+  - deterministic physical carrier selection remains unproved
+trace_gate_classification: direct_blocker_closure
+next_exact_action: run checker, vocab lint, diff check, audit pipeline, then open draft PR
+stop_condition: draft PR opened for independent review

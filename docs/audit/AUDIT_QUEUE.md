@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1236
+**Total pending:** 1237
 **Ready (all deps already at retained-grade or metadata tiers):** 59
 
 By criticality:
 - `critical`: 246
 - `high`: 337
 - `medium`: 331
-- `leaf`: 322
+- `leaf`: 323
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -20,7 +20,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 3 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | unaudited | critical | 886 | 10.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py` |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 726 | 53.51 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
 | 5 | `s3_cap_uniqueness_note` | bounded_theorem | unaudited | critical | 704 | 19.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_cap_uniqueness.py` |
-| 6 | `three_generation_structure_note` | bounded_theorem | unaudited | critical | 698 | 30.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_generation_structure_narrow_spectrum.py` |
+| 6 | `three_generation_structure_note` | bounded_theorem | unaudited | critical | 699 | 30.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_generation_structure_narrow_spectrum.py` |
 | 7 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | unaudited | critical | 519 | 9.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_declared_anchor_bounded_subchain.py` |
 | 8 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | positive_theorem | unaudited | critical | 515 | 12.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 9 | `gravity_clean_derivation_note` | bounded_theorem | unaudited | critical | 280 | 17.63 | Y | fresh_context_or_stronger_with_cross_confirmation | - |

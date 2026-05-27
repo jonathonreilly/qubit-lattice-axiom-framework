@@ -1,0 +1,197 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py
+runner_sha256: 5be56bb7c77c16595f240b843aa691c2896d4f7bf547c7898e9c11e26ee88de9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic + numerical) for
+CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27
+Goal: verify Gell-Mann embedding T^a_8D = M_{3,sym}(lambda^a/2) (x) I_2,
+      Lie-algebra closure with cited f^{abc}, and commutant identification
+      [T^a_8D, Jf_i] = 0 with the fiber SU(2) action.
+Source: scripts/verify_cl3_sm_embedding.py Section H (lines 430-541).
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: Pauli matrices and base structure (anticommutation, U_base unitary)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Pauli) {sigma_1, sigma_1} = 2 I_2
+  [PASS (A)] (Pauli) {sigma_1, sigma_2} = 0 I_2
+  [PASS (A)] (Pauli) {sigma_1, sigma_3} = 0 I_2
+  [PASS (A)] (Pauli) {sigma_2, sigma_1} = 0 I_2
+  [PASS (A)] (Pauli) {sigma_2, sigma_2} = 2 I_2
+  [PASS (A)] (Pauli) {sigma_2, sigma_3} = 0 I_2
+  [PASS (A)] (Pauli) {sigma_3, sigma_1} = 0 I_2
+  [PASS (A)] (Pauli) {sigma_3, sigma_2} = 0 I_2
+  [PASS (A)] (Pauli) {sigma_3, sigma_3} = 2 I_2
+  [PASS (A)] (U_base) U_base * U_base^dag = I_4 (unitary)
+  [PASS (A)] (U_base) U_base^dag * U_base = I_4 (unitary, other order)
+
+----------------------------------------------------------------------------------------
+Part 2: Gell-Mann matrices: Hermitian, traceless, T_F = 1/2 normalization
+----------------------------------------------------------------------------------------
+  [PASS (A)] (GM) lambda^1 Hermitian
+  [PASS (A)] (GM) lambda^2 Hermitian
+  [PASS (A)] (GM) lambda^3 Hermitian
+  [PASS (A)] (GM) lambda^4 Hermitian
+  [PASS (A)] (GM) lambda^5 Hermitian
+  [PASS (A)] (GM) lambda^6 Hermitian
+  [PASS (A)] (GM) lambda^7 Hermitian
+  [PASS (A)] (GM) lambda^8 Hermitian
+  [PASS (A)] (GM) Tr[lambda^1] = 0 (traceless)
+  [PASS (A)] (GM) Tr[lambda^2] = 0 (traceless)
+  [PASS (A)] (GM) Tr[lambda^3] = 0 (traceless)
+  [PASS (A)] (GM) Tr[lambda^4] = 0 (traceless)
+  [PASS (A)] (GM) Tr[lambda^5] = 0 (traceless)
+  [PASS (A)] (GM) Tr[lambda^6] = 0 (traceless)
+  [PASS (A)] (GM) Tr[lambda^7] = 0 (traceless)
+  [PASS (A)] (GM) Tr[lambda^8] = 0 (traceless)
+  [PASS (A)] (T2 / T_F=1/2) Tr_3[(lambda^a/2)(lambda^b/2)] = (1/2) delta_{ab} on all 64 pairs  (fails = 0)
+
+----------------------------------------------------------------------------------------
+Part 3: 4-base embedding M^a_4 = U_base^dag * diag(lambda^a/2, 0) * U_base
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1) M^1_4 Hermitian
+  [PASS (A)] (T1) Tr[M^1_4] = 0
+  [PASS (A)] (T1) M^2_4 Hermitian
+  [PASS (A)] (T1) Tr[M^2_4] = 0
+  [PASS (A)] (T1) M^3_4 Hermitian
+  [PASS (A)] (T1) Tr[M^3_4] = 0
+  [PASS (A)] (T1) M^4_4 Hermitian
+  [PASS (A)] (T1) Tr[M^4_4] = 0
+  [PASS (A)] (T1) M^5_4 Hermitian
+  [PASS (A)] (T1) Tr[M^5_4] = 0
+  [PASS (A)] (T1) M^6_4 Hermitian
+  [PASS (A)] (T1) Tr[M^6_4] = 0
+  [PASS (A)] (T1) M^7_4 Hermitian
+  [PASS (A)] (T1) Tr[M^7_4] = 0
+  [PASS (A)] (T1) M^8_4 Hermitian
+  [PASS (A)] (T1) Tr[M^8_4] = 0
+  [PASS (A)] (T1 block) sym 3x3 block of M^1_4 (in sorted basis) = lambda^1/2
+  [PASS (A)] (T1 block) antisym entry M^1_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^1_4 has no sym <-> antisym mixing
+  [PASS (A)] (T1 block) sym 3x3 block of M^2_4 (in sorted basis) = lambda^2/2
+  [PASS (A)] (T1 block) antisym entry M^2_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^2_4 has no sym <-> antisym mixing
+  [PASS (A)] (T1 block) sym 3x3 block of M^3_4 (in sorted basis) = lambda^3/2
+  [PASS (A)] (T1 block) antisym entry M^3_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^3_4 has no sym <-> antisym mixing
+  [PASS (A)] (T1 block) sym 3x3 block of M^4_4 (in sorted basis) = lambda^4/2
+  [PASS (A)] (T1 block) antisym entry M^4_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^4_4 has no sym <-> antisym mixing
+  [PASS (A)] (T1 block) sym 3x3 block of M^5_4 (in sorted basis) = lambda^5/2
+  [PASS (A)] (T1 block) antisym entry M^5_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^5_4 has no sym <-> antisym mixing
+  [PASS (A)] (T1 block) sym 3x3 block of M^6_4 (in sorted basis) = lambda^6/2
+  [PASS (A)] (T1 block) antisym entry M^6_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^6_4 has no sym <-> antisym mixing
+  [PASS (A)] (T1 block) sym 3x3 block of M^7_4 (in sorted basis) = lambda^7/2
+  [PASS (A)] (T1 block) antisym entry M^7_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^7_4 has no sym <-> antisym mixing
+  [PASS (A)] (T1 block) sym 3x3 block of M^8_4 (in sorted basis) = lambda^8/2
+  [PASS (A)] (T1 block) antisym entry M^8_4[3,3] (in sorted basis) = 0
+  [PASS (A)] (T1 block) M^8_4 has no sym <-> antisym mixing
+
+----------------------------------------------------------------------------------------
+Part 4: 8D embedding T^a_8D = M^a_4 (x) I_2; tensor-product factorization
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1 8D) T^1_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^1_8D] = 0
+  [PASS (A)] (T1 8D) T^2_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^2_8D] = 0
+  [PASS (A)] (T1 8D) T^3_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^3_8D] = 0
+  [PASS (A)] (T1 8D) T^4_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^4_8D] = 0
+  [PASS (A)] (T1 8D) T^5_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^5_8D] = 0
+  [PASS (A)] (T1 8D) T^6_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^6_8D] = 0
+  [PASS (A)] (T1 8D) T^7_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^7_8D] = 0
+  [PASS (A)] (T1 8D) T^8_8D Hermitian
+  [PASS (A)] (T1 8D) Tr[T^8_8D] = 0
+  [PASS (A)] (T2 8D) Tr_8[T^1_8D T^1_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^2_8D T^2_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^3_8D T^3_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^4_8D T^4_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^5_8D T^5_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^6_8D T^6_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^7_8D T^7_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^8_8D T^8_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+
+----------------------------------------------------------------------------------------
+Part 5: Lie algebra closure: [T^a_8D, T^b_8D] = i f^{abc} T^c_8D
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T3) [T^a_8D, T^b_8D] = i sum_c f^{abc} T^c_8D on all 64 pairs  (max err = 1.11e-16)
+  [PASS (A)] (known f) f^{123} = 1.000000  (got 1.000000)
+  [PASS (A)] (known f) f^{147} = 0.500000  (got 0.500000)
+  [PASS (A)] (known f) f^{156} = -0.500000  (got -0.500000)
+  [PASS (A)] (known f) f^{246} = 0.500000  (got 0.500000)
+  [PASS (A)] (known f) f^{257} = 0.500000  (got 0.500000)
+  [PASS (A)] (known f) f^{345} = 0.500000  (got 0.500000)
+  [PASS (A)] (known f) f^{367} = -0.500000  (got -0.500000)
+  [PASS (A)] (known f) f^{458} = 0.866025  (got 0.866025)
+  [PASS (A)] (known f) f^{678} = 0.866025  (got 0.866025)
+
+----------------------------------------------------------------------------------------
+Part 6: Jacobi identity (T4) on all 512 triples
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T4) Jacobi identity [[T^a,T^b],T^c] + cyc = 0 on all 512 triples  (max err = 0.00e+00)
+
+----------------------------------------------------------------------------------------
+Part 7: Commutant identification (T5): [T^a_8D, Jf_i] = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T5) [T^a_8D, Jf_i] = 0 on all 24 (a, i) pairs  (max err = 0.00e+00)
+  [PASS (A)] (T6) tensor-product proof: T^3_8D * Jf_2 = M^3_4 (x) (sigma_2/2)  (max err = 0.00e+00)
+
+----------------------------------------------------------------------------------------
+Part 8: Action on symmetric and antisymmetric base subspaces
+----------------------------------------------------------------------------------------
+  [PASS (A)] (action sym) T^a_8D acts non-trivially on the dark state |111> for at least one a  (max ||T^a_8D |111>|| = 0.5000)
+  [PASS (A)] (action antisym) T^a_8D annihilates the antisymmetric-base block (both b3=0, b3=1 reps)  (max ||T^a_8D |antisym>|| = 1.12e-17)
+
+----------------------------------------------------------------------------------------
+Part 9: Counterfactual: wrong-fiber embedding fails the commutant test
+----------------------------------------------------------------------------------------
+  [PASS (A)] (counterfactual) wrong-fiber embedding M (x) sigma_3 fails to commute with Jf_i  (max err = 0.5000)
+
+----------------------------------------------------------------------------------------
+Part 10: Hypercharge bonus: [T^a_8D, Y] = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (bonus) [T^a_8D, Y] = 0 for all a (carrier-level)  (max err = 1.39e-17)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified:
+    Pauli anticommutation {sigma_i, sigma_j} = 2 delta_{ij} I_2 (9 pairs, sympy)
+    U_base unitary (sympy)
+    Gell-Mann matrices Hermitian, traceless (sympy)
+    T_F = 1/2 normalization Tr_3[(lambda^a/2)(lambda^b/2)] = (1/2) delta_{ab} (64 pairs, sympy)
+    M^a_4 = U_base^dag * diag(lambda^a/2, 0) * U_base Hermitian, traceless (sympy)
+    Block structure: sym 3x3 block of M^a_4 = lambda^a/2; antisym (3,3) = 0; no mixing (sympy)
+    T^a_8D = M^a_4 (x) I_2 Hermitian, traceless (sympy)
+    Tr_8[T^a_8D T^a_8D] = 1 (sympy diagonal)
+    Lie algebra closure [T^a_8D, T^b_8D] = i sum_c f^{abc} T^c_8D (64 pairs, numpy)
+    9 known Gell-Mann structure constants f^{abc} reproduced (numpy)
+    Jacobi identity on all 512 triples (numpy)
+    [T^a_8D, Jf_i] = 0 on all 24 (a, i) pairs (numpy)
+    Tensor-product proof of commutativity (sample) (numpy)
+    T^a_8D acts non-trivially on dark state |111> (numpy)
+    T^a_8D annihilates antisymmetric base block (numpy)
+    Counterfactual: wrong-fiber embedding fails commutativity (numpy)
+    Hypercharge bonus: [T^a_8D, Y] = 0 (numpy)
+
+========================================================================================
+TOTAL: PASS=109, FAIL=0
+========================================================================================
+VERDICT: narrow Gell-Mann embedding theorem (T1)-(T5) verified;
+         the 8D operators T^a_8D = M_{3,sym}(lambda^a/2) (x) I_2 form an su(3)
+         Lie algebra inside the commutant of the fiber-SU(2) action {Jf_i}.
+
+----- stderr -----
+

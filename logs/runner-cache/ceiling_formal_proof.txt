@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/ceiling_formal_proof.py
-runner_sha256: 51a2080cdec6f925b1b8bfc330a52efa2ee58062c34b40ed4b9d56504e8db42a
+runner_sha256: b127203f0c148119fcd06c20e20cfcfaeae42571c637e8cdccf5d0f30ffbd1ee
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.15
+elapsed_sec: 2.41
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -14,15 +14,15 @@ FORMAL CLT CEILING ANALYSIS
 
      N        d_TV     overlap   1-pur_min    lyap_gap   lindeberg   ok   time
   ---------------------------------------------------------------------------
-    12      0.1642      0.8289      0.0655         inf      0.1193   16     0s
-    15      0.1974      0.8416      0.0521         inf      0.0922   16     0s
-    18      0.1396      0.8656      0.0490         inf      0.0755   16     0s
-    22      0.1757      0.8589      0.0498         inf      0.0607   16     1s
-    25      0.1905      0.8452      0.0597         inf      0.0533   16     1s
-    30      0.1679      0.8616      0.0611         inf      0.0446   16     1s
-    40      0.2209      0.7652      0.0765         inf      0.0334   16     1s
-    60      0.1480      0.8949      0.0387         inf      0.0223   16     2s
-    80      0.0399      0.9830      0.0050         inf      0.0168   16     2s
+    12      0.1642      0.8289      0.0655      0.1063      0.1193   16     0s
+    15      0.1974      0.8416      0.0521      0.1061      0.0922   16     0s
+    18      0.1396      0.8656      0.0490      0.0977      0.0755   16     0s
+    22      0.1757      0.8589      0.0498      0.0914      0.0607   16     0s
+    25      0.1905      0.8452      0.0597      0.0882      0.0533   16     0s
+    30      0.1679      0.8616      0.0611      0.0866      0.0446   16     0s
+    40      0.2209      0.7652      0.0765      0.0739      0.0334   16     0s
+    60      0.1480      0.8949      0.0387      0.0670      0.0223   16     0s
+    80      0.0399      0.9830      0.0050      0.0654      0.0168   16     1s
 
 POWER LAW FITS: quantity = A × N^alpha
       quantity         A     alpha      R²
@@ -34,15 +34,15 @@ POWER LAW FITS: quantity = A × N^alpha
 LYAPUNOV SPECTRAL GAP (λ₁ - λ₂)
      N         gap                            interpretation
   ----------------------------------------------------------
-    12         inf                        rank-1 convergence
-    15         inf                        rank-1 convergence
-    18         inf                        rank-1 convergence
-    22         inf                        rank-1 convergence
-    25         inf                        rank-1 convergence
-    30         inf                        rank-1 convergence
-    40         inf                        rank-1 convergence
-    60         inf                        rank-1 convergence
-    80         inf                        rank-1 convergence
+    12      0.1063                              moderate gap
+    15      0.1061                              moderate gap
+    18      0.0977                                  weak gap
+    22      0.0914                                  weak gap
+    25      0.0882                                  weak gap
+    30      0.0866                                  weak gap
+    40      0.0739                                  weak gap
+    60      0.0670                                  weak gap
+    80      0.0654                                  weak gap
 
 LINDEBERG CONDITION (max ||T_l||² / Σ||T_l||²)
      N   max_ratio                  interpretation
@@ -57,23 +57,33 @@ LINDEBERG CONDITION (max ||T_l||² / Σ||T_l||²)
     60      0.0223                       CLT valid
     80      0.0168                       CLT valid
 
-THEOREM STRUCTURE:
-  IF spectral gap is large AND Lindeberg holds:
-    → Product T_N...T_1 drives ANY two initial vectors
-      toward the same dominant direction
-    → Single-slit distributions ψ_A and ψ_B converge
-    → d_TV → 0, overlap → 1, pur_min → 1
-    → Decoherence ceiling is a SPECTRAL PROPERTY
-      of the transfer matrix product
+MECHANISM READING (interpretation guidance):
+  The bounded finding on the cached configuration is a
+  Lindeberg-style averaging interpretation, not spectral rank-1
+  collapse:
 
-  IF shared exponent across d_TV, overlap, 1-pur_min:
-    → All three decay at the same rate
-    → The CLT mechanism is the SOLE driver
-    → No mechanism operating on the bath or propagator
-      can change the exponent without changing the
-      spectral gap of T_N...T_1
+  - Lindeberg ratio scales ~1/N: no single layer dominates,
+    and the dominance shrinks with N. This is the
+    non-dominance condition behind the CLT-style reading.
+
+  - Operator-chain Lyapunov gap is finite and decreases with
+    N (table above). The corrected measurement does NOT
+    show rank-1 collapse of the square operator chain.
+    The finite-and-decreasing gap is consistent with
+    spectrum concentration rather than collapse.
+
+  - d_TV / 1-overlap / 1-pur_min all show power-law decline.
+    Exponents (-0.48 / -0.78 / -0.85) are not strictly equal
+    within R^2 ~= 0.4, but all three concentrate toward zero
+    on the cached N range — consistent with the layer-averaged
+    CLT-style interpretation.
+
+  The original 2026-04-03 reading attributing the d_TV decline
+  to rank-1 spectral collapse of T_N...T_1 was driven by a
+  singleton-source padding artifact in the prior version of
+  compute_lyapunov_spectrum; the corrected (square-only)
+  spectrum and the Lindeberg scaling now support a consistent
+  CLT-style averaging interpretation instead.
 
 ----- stderr -----
-/private/tmp/gate-fix-worktree/scripts/ceiling_formal_proof.py:262: RuntimeWarning: invalid value encountered in scalar subtract
-  var = sum((v - m) ** 2 for v in vals) / (len(vals) - 1)
 

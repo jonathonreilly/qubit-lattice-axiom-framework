@@ -1,0 +1,73 @@
+==============================================================================
+Section A: Exact symbolic substitution chain (B1)-(B4)
+==============================================================================
+  PASS [EXACT]  (B1) V(r) = -C g_bare^2 G(r) with G = 1/(4 pi r) gives V = -C g_bare^2 / (4 pi r)
+  PASS [EXACT]  (B2) alpha := g_bare^2 / (4 pi) (canonical QFT dimensionless-coupling convention)
+  PASS [EXACT]  (B3) -C alpha / r = -C g_bare^2 / (4 pi r) algebraically (sympy)
+  PASS [EXACT]  (B3) substitution: -C alpha/r |_{alpha = g_bare^2/(4 pi)} = -C g_bare^2/(4 pi r)
+  PASS [EXACT]  (B4) at g_bare = 1: alpha = 1^2 / (4 pi) = 1/(4 pi) (sympy)
+  PASS [EXACT]  (B4) consequence: V(r) -> -C / (4 pi r) at g_bare = 1 (I1 readout identification)
+  PASS [EXACT]  (B1+B3) full chain: -C g_bare^2 / (4 pi r) = -C (g_bare^2 / (4 pi)) / r (sympy-exact)
+
+==============================================================================
+Section B: Casimir convention C = C_F = (N_c^2 - 1) / (2 N_c) (P1 detail)
+==============================================================================
+  PASS [EXACT]  (B-Casimir) C_F = (N_c^2 - 1)/(2 N_c) at N_c = 3 is exactly 4/3
+  PASS [EXACT]  (B-Casimir) C_F at N_c = 2 is exactly 3/4 (sanity)
+  PASS [EXACT]  (B-Casimir) V(r) -> -C_F alpha / r at N_c = 3 gives -4/3 alpha / r
+
+==============================================================================
+Section C: numerical alpha at g_bare = 1 (cross-check parent note (D2))
+==============================================================================
+  PASS [EXACT]  (C1) numerical alpha = 1/(4 pi) = 0.0795774... (matches parent note (D2))
+  PASS [EXACT]  (C2) numerical g_bare^2/(4 pi) at g_bare = 1 matches 1/(4 pi)
+  PASS [BOUNDED] (C3) V_chain(r=5.0) = V_alpha_form(r) at C=C_F, g_bare=1, numerically err = 3.469e-18
+  PASS [BOUNDED] (C3) V_chain(r=10.0) = V_alpha_form(r) at C=C_F, g_bare=1, numerically err = 1.735e-18
+  PASS [BOUNDED] (C3) V_chain(r=20.0) = V_alpha_form(r) at C=C_F, g_bare=1, numerically err = 8.674e-19
+  PASS [BOUNDED] (C3) V_chain(r=50.0) = V_alpha_form(r) at C=C_F, g_bare=1, numerically err = 4.337e-19
+
+==============================================================================
+Section D: numerical bounded V(r) cross-check via Z^3 Green's function
+==============================================================================
+  PASS [BOUNDED] (D1) V_lat(r=(5,0,0)) / V_continuum(r=(5,0,0)) ~ 1 large-r ratio = 0.989646
+  PASS [BOUNDED] (D1) V_lat(r=(10,0,0)) / V_continuum(r=(10,0,0)) ~ 1 large-r ratio = 1.013635
+  PASS [BOUNDED] (D1) V_lat(r=(15,0,0)) / V_continuum(r=(15,0,0)) ~ 1 large-r ratio = 0.993822
+  PASS [BOUNDED] (D1) V_lat(r=(20,0,0)) / V_continuum(r=(20,0,0)) ~ 1 large-r ratio = 1.005979
+  PASS [BOUNDED] (D2) V_lat(r=(3, 4, 0)) / V_continuum(r=(3, 4, 0)) ~ 1 off-axis |r|=5.00, ratio = 0.999269
+  PASS [BOUNDED] (D2) V_lat(r=(5, 5, 5)) / V_continuum(r=(5, 5, 5)) ~ 1 off-axis |r|=8.66, ratio = 0.997760
+  PASS [BOUNDED] (D2) V_lat(r=(6, 8, 0)) / V_continuum(r=(6, 8, 0)) ~ 1 off-axis |r|=10.00, ratio = 0.999598
+
+==============================================================================
+Section E: isolation of I1 from I2 and I3 (no over-claim)
+==============================================================================
+  PASS [EXACT]  (E1) I2 (alpha = g_bare^2 / (4 pi)) is consumed from parent I2 entry, not re-derived here
+  PASS [EXACT]  (E2) I3 (canonical Cl(3) normalization + Wilson surface) consumed, not re-derived here
+  PASS [EXACT]  (E3) single accepted-premise (P1) registered; no new admissions
+  PASS [EXACT]  (E4) (P1) is exactly the static-source linear-response readout convention
+
+==============================================================================
+Section F: no-import audit on load-bearing chain
+==============================================================================
+  PASS [EXACT]  (F1) no continuum 4D-Fourier-measure d^4 k / (2 pi)^4 import used
+  PASS [EXACT]  (F2) no d^4 k / (2 pi)^4 string appears in load-bearing inputs
+  PASS [EXACT]  (F3) no Wick rotation Z^3 -> Z^4 in load-bearing chain
+  PASS [EXACT]  (F4) load-bearing inputs enumerable (5 items)
+
+==============================================================================
+Section G: vocabulary audit + no-go honor
+==============================================================================
+  PASS [EXACT]  (G1) no new repo vocabulary introduced
+  PASS [EXACT]  (G2) no multiplicative cross-row combination used (Cheeger-Simons R/Z no-go honored)
+  PASS [EXACT]  (G3) regulator-dependence no-go honored: only (4 pi) prefactor addressed; no `16` exponent claim
+  PASS [EXACT]  (G4) bridge addresses exactly parent note packet entry I1, not I2 or I3
+
+==============================================================================
+Summary
+==============================================================================
+EXACT   : PASS = 24, FAIL = 0
+BOUNDED : PASS = 11, FAIL = 0
+TOTAL   : PASS = 35, FAIL = 0
+
+VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from
+  the parent alpha_bare bridge + accepted-premise packet (P1) + conditional
+  Maradudin asymptotic by exact symbolic substitution arithmetic.

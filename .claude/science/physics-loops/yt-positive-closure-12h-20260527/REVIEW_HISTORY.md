@@ -67,3 +67,33 @@ Verification recorded with this review:
   backend candidate.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 3
+
+Scope:
+
+- new C3 circulant dynamics ordering/source-law boundary note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner tests normalized C3 circulant basis, `B_x` line derivatives, base-operator ordering countermodels, real-block degeneracy, status, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go route pruning; the positive route is not globally refuted. |
+| Imports / support | DISCLOSED | Base dynamics, `y_0` phase law, and spectral ordering are named as open imports. |
+| Nature retention | OPEN | No positive closure; strict pole rows or a new microscopic dynamics theorem remain required. |
+| Audit compatibility | PASS | Claim status is explicit and conservative. |
+
+Disposition: pass for no-go route-pruning artifact; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=95 FAIL=0`
+- Full stack runner: `PASS=234 FAIL=0`
+- Adjacent Y_T runners passed: real same-surface top-line obstruction, C3
+  spectral source-response no-go, C3 spectral support, C3 real-record source,
+  mass-ordering obstruction, and direct sparse certificate.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

@@ -8,11 +8,11 @@ conditional_surface_status: "exact top-row certificate if accepted same-surface 
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The finite C3 factorization algebra gives A/sqrt(12) exactly on nontrivial C3 lines, but the actual current surface still lacks an accepted physical top line and accepted same-surface source-generator factorization. The real same-surface C3 top-line obstruction shows current real/reflection-even support fixes B_x but does not exclude P_0 or isolate a nontrivial complex top line."
+proposal_allowed_reason: "The finite C3 factorization algebra gives A/sqrt(12) exactly on nontrivial C3 lines, but the actual current surface still lacks an accepted physical top line and accepted same-surface source-generator factorization. The real same-surface C3 top-line obstruction shows current real/reflection-even support fixes B_x but does not exclude P_0 or isolate a nontrivial complex top line. The C3 circulant dynamics boundary shows derived B_x fixes line derivatives but not base dynamics, phase law, or top spectral ordering."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass_for_no_go_route_pruning_only
-next_exact_action: "derive accepted C3 circulant dynamics/source law for a(h), x(h), y(h), or produce strict same-source top/W pole rows"
+next_exact_action: "produce strict same-source top/W pole rows, or derive a new microscopic base C3 dynamics/orientation theorem"
 ```
 
 Retained or proposed-retained wording is not allowed for these blocks.

@@ -24,3 +24,7 @@
   fixes `B_x`, but `P_0` remains allowed, and reflection swaps `P_omega` with
   `P_omega2`. Excluding the singlet or isolating a nontrivial complex line
   requires accepted spectral dynamics/source law or strict pole rows.
+- New in the third block: derived `B_x` source tangent fixes line derivatives
+  but does not derive the base C3 circulant dynamics or spectral ordering.
+  Real/reflection-even base dynamics leaves the nontrivial block degenerate;
+  complex/orientation-odd dynamics needs an additional base `y_0` phase law.

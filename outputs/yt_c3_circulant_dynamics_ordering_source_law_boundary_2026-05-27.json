@@ -1,0 +1,74 @@
+{
+  "actual_current_surface_status": "no-go",
+  "anchors": {
+    "factorization_status": "conditional-support",
+    "first_principles_status": "exact-support / formal-transfer no-go",
+    "real_top_line_status": "no-go",
+    "spectral_source_response_status": "no-go",
+    "spectral_support_status": "exact-support"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "base_dynamics_countermodels": {
+    "case_A_real_x_positive": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "-sqrt(6)/6",
+        "P_omega2": "-sqrt(6)/6"
+      },
+      "top_by_largest": "P_0",
+      "top_derivative": "sqrt(6)/3",
+      "x0": "1",
+      "y0": "0"
+    },
+    "case_B_complex_orientation_odd": {
+      "eigenvalues": {
+        "P_0": "-sqrt(6)/3",
+        "P_omega": "(-3*sqrt(2) + sqrt(6))/6",
+        "P_omega2": "(sqrt(6) + 3*sqrt(2))/6"
+      },
+      "top_by_largest": "P_omega2",
+      "top_derivative": "-sqrt(6)/6",
+      "x0": "-1",
+      "y0": "1"
+    },
+    "case_C_real_nontrivial_block_degenerate": {
+      "eigenvalues": {
+        "P_0": "-sqrt(6)/3",
+        "P_omega": "sqrt(6)/6",
+        "P_omega2": "sqrt(6)/6"
+      },
+      "nontrivial_pair_degenerate": true,
+      "x0": "-1",
+      "y0": "0"
+    }
+  },
+  "certificate_boundary": {
+    "accepted_base_c3_circulant_operator": false,
+    "c3_spectral_projectors_available": true,
+    "no_forbidden_imports": true,
+    "operator_derived_on_same_surface": false,
+    "orientation_phase_law_for_y0_derived": false,
+    "same_surface_w_response_certificate_present": false,
+    "source_derivative_bx_derived": true,
+    "source_generator_matrix_element_on_physical_top_derived": false,
+    "strict_top_w_response_certificate_present": false,
+    "top_line_ordering_derived": false
+  },
+  "claim_id": "yt_c3_circulant_dynamics_ordering_source_law_boundary_note_2026-05-27",
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py",
+  "next_ranked_route": "strict sparse top/W pole-response evidence or new microscopic dynamics theorem",
+  "pass_count": 95,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The derived B_x source tangent fixes line derivatives, but the current surface does not derive the base C3 circulant dynamics or spectral ordering. Real/reflection-even base dynamics leaves the nontrivial block degenerate, and complex/orientation-odd dynamics needs an additional y0 phase law.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "derived B_x source tangent plus C3 spectral algebra derives the accepted top spectral line and source matrix element",
+  "route_still_live": "derive accepted base C3 circulant dynamics with orientation/phase law and top-line ordering, or produce strict same-source top/W pole rows",
+  "source_derivative_responses": {
+    "P_0": "sqrt(6)/3",
+    "P_omega": "-sqrt(6)/6",
+    "P_omega2": "-sqrt(6)/6"
+  },
+  "trace_class": "negative_route_pruning"
+}

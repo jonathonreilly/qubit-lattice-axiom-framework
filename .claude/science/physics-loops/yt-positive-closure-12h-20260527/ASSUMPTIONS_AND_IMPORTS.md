@@ -8,12 +8,13 @@
 | Nontrivial C3 top-line assignment | Selects response magnitude `1/sqrt(6)` rather than singlet `2/sqrt(6)` | unsupported import on actual surface; current real same-surface shortcut pruned | current branch C3 finite algebra | yes | yes | derive accepted C3 circulant dynamics/source law or strict pole rows | open blocker |
 | Same-surface top generator factorization `(A/sqrt(2)) B_x` | Turns C3 response into `A/sqrt(12)` matrix element | unsupported import on actual surface | new factorization boundary | yes | yes | derive accepted transfer/action generator or strict pole rows | open blocker |
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
-| C3 circulant dynamics/source law for `a(h), x(h), y(h)` | Could supply spectral ordering and source-generator matrix element | unsupported import on actual surface | C3 spectral source-response no-go plus new top-line obstruction | yes | yes | derive same-surface dynamics/source theorem or strict pole rows | next active blocker |
+| Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
 | Contact/FV/IR/model-class checks | Certify strict pole-row evidence | missing certificate fields | sparse response contract | yes for strict evidence route | yes | direct sparse pole-response certificate | open blocker |
 | `H_unit`, old Ward authority, `yt_ward_identity`, `y_t_bare`, observed top/W/Z masses, PDG targets, `alpha_LM`, plaquette/u0, Planck, alpha_s, fitted selectors | Forbidden proof inputs | forbidden | user campaign instruction | no | no | must remain absent | not used |
 
 Current block results: the exact finite algebra shows how `A/sqrt(12)` would
 follow if the same-surface generator factorization and nontrivial top-line
-assignment were supplied, and the real same-surface C3 shortcut does not
-derive that top-line assignment. The next live algebraic import is an accepted
-C3 circulant dynamics/source law for `a(h), x(h), y(h)`.
+assignment were supplied; the real same-surface C3 shortcut does not derive
+that top-line assignment; and the derived `B_x` source tangent does not derive
+base C3 dynamics or spectral ordering. The next active import is an accepted
+base dynamics/orientation theorem or strict pole-response evidence.

@@ -73,6 +73,9 @@ closed exactly:
   real same-surface top-line law obstruction: current real/reflection-even C3
   support does not exclude P_0 or isolate a nontrivial complex line as the
   physical top pole
+  C3 circulant dynamics ordering source-law boundary: derived B_x fixes the
+  source derivative, but base dynamics, orientation/phase law, and spectral
+  ordering remain load-bearing
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -86,7 +89,7 @@ still open:
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
   accepted physical target/source direction inside the C3 tangent space
-  accepted C3 circulant dynamics/source law for a(h), x(h), y(h)
+  accepted base C3 circulant dynamics and orientation/phase law for y_0
   accepted spectral ordering/exclusion of the C3 singlet line as the physical
   top row
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
@@ -705,6 +708,30 @@ non-compute route is no longer a generic top-line convention; it is an
 accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` that supplies
 the spectral ordering and source-generator matrix element.
 
+The C3 circulant dynamics ordering source-law boundary then tests the next
+layer.  The now-derived source tangent is
+
+```text
+dH/dell = B_x.
+```
+
+That fixes line derivatives:
+
+```text
+P_0       ->  2/sqrt(6)
+P_omega   -> -1/sqrt(6)
+P_omega2  -> -1/sqrt(6).
+```
+
+But it does not derive the base C3 circulant operator or the spectral ordering
+that would make one line the physical top pole.  Real/reflection-even base
+dynamics either selects the singlet or leaves the nontrivial block degenerate;
+complex/orientation-odd dynamics can isolate a nontrivial line only after an
+extra orientation/phase law for the base `y_0` coefficient is derived.  The
+next non-compute route is therefore an accepted base C3 circulant dynamics
+theorem with orientation/phase law and top-line ordering, not another source
+normalization argument.
+
 ## Non-Claims
 
 This note does not:
@@ -739,12 +766,15 @@ proposal_allowed_reason: |
   The real same-surface top-line law obstruction now prunes the available
   non-mass-ordering shortcut: current real/reflection-even C3 support does not
   exclude P_0 or isolate a nontrivial complex top line.
+  The C3 circulant dynamics ordering boundary further shows that derived B_x
+  fixes the source derivative but not the base circulant dynamics, phase law,
+  or spectral ordering.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: accepted C3 circulant dynamics/source law for a(h), x(h),
-  y(h), or strict same-source top/W response evidence
+first_open_gate: accepted base C3 circulant dynamics with orientation/phase
+  law and top-line ordering, or strict same-source top/W response evidence
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted spectral dynamics/source law
 backup_route: audit accepts primitive top-source premise as physical source law

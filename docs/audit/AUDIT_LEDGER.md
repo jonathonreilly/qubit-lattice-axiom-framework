@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 499 |
+| **retained_bounded** | 500 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 795 |
+| `audited_clean` | 796 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1452 |
+| `unaudited` | 1451 |
 
 | claim_type | count |
 |---|---:|
@@ -321,6 +321,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -4339,6 +4340,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Woodbury/Dyson identity gives G_W P = G_0 P (I - W G_S)^(-1), hence q_eff = (I - W G_S)^(-1) m and phi = G_0 P q_eff.  _(class `A`)_
 - **chain closes:** True — The audited claim is bounded to the finite-rank algebraic identity and its numerical implementation. The runner explicitly constructs H_0, P, W, solves both the full finite-rank system and the compressed Woodbury formula, and verifies agreement plus exterior harmonicity.
 - **rationale:** The load-bearing step is a standard finite-rank Woodbury/Dyson algebraic closure, not a numerical fit, external comparator, or renaming. The source note correctly bounds the claim to the helper-module construction and explicitly excludes derivation of P and W or closure of downstream gravity theorems. The runner source genuinely computes the finite-rank column identity, compressed source equivalence, and exterior harmonicity rather than printing constants.
+- **auditor confidence:** high
+
+### `finite_rank_source_to_metric_theorem_note`
+
+- **Note:** [`FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md`](../../docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed 15^3 Dirichlet finite-lattice certificate for the runner-defined seven-site finite-rank source, exterior harmonic/Schur boundary algebra, shell-averaged radial harmonic projection, and bounded static isotropic residual reduction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-darwin-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the fixed 15^3 Dirichlet lattice, with the seven-site support and finite-rank matrix defined in the runner, the finite-rank source reproduces the exterior field and its shell-averaged radial harmonic projection gives a bounded static isotropic residual reduction.  _(class `C`)_
+- **chain closes:** True — The runner locally constructs the Laplacian, support projector, Woodbury finite-rank solve, Schur DtN matrix, radial projection, and finite-difference static isotropic residual diagnostic without helper imports or dependencies. The META pass lines are excluded from the scientific chain because they only check transient audit ledger/queue state and are not load-bearing physics.
+- **rationale:** Within the explicitly bounded scope, the conclusion follows from the self-contained finite computation: the finite-rank identities close to machine precision, exterior harmonicity and Schur stationarity are computed directly, and the radial harmonic projection produces the stated residual reduction. The note explicitly excludes full nonlinear GR, continuum limits, universal source-to-metric claims, tensorial 3+1 matching, and derivation of the support choice, so those unclosed extensions are not part of the audited claim. The 8 META lines are a non-load-bearing runner artifact to ignore for scientific closure, not a blocker.
 - **auditor confidence:** high
 
 ### `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`

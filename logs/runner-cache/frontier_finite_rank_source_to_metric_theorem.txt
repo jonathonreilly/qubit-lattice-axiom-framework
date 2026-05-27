@@ -1,46 +1,68 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_finite_rank_source_to_metric_theorem.py
-runner_sha256: 4b5ed4655be16854dc6d62bea05b5e23857f662c63a007a765b7be83ac2d3b9a
+runner_sha256: c8345808be123fe4fb96c74fcffae3971b4167b789737ad161ee5c210d213b43
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.58
+elapsed_sec: 2.64
 status: ok
 ----- stdout -----
-FINITE-RANK SOURCE-TO-METRIC THEOREM PATH
+FINITE-RANK SOURCE-TO-METRIC SELF-CONTAINED FINITE-LATTICE CERTIFICATE
 ==============================================================================
 [EXACT] PASS: finite-rank column identity
-    max column error=3.886e-16, support size=7
+    max column error=2.776e-16, support size=7
 [EXACT] PASS: finite-rank compressed source
-    max field error=9.992e-16
+    max field error=8.882e-16, q_eff_sum=9.53220124
 [EXACT] PASS: finite-rank exterior harmonicity outside support
-    max exterior residual=1.277e-15
+    max exterior residual=8.604e-16
 support size=7, q_eff_sum=9.53220124
+[EXACT] PASS: Schur DtN matrix is symmetric positive on the exterior shell
+    trace=1052, bulk=888, sym_err=3.331e-16, min_eig=1.148587e+00
+[EXACT] PASS: finite-rank shell trace is recovered by exterior Dirichlet extension
+    boundary reconstruction error=6.245e-17
+[EXACT] PASS: finite-rank shell trace is stationary for the Schur boundary action
+    flux_err=3.053e-16, stationary_grad=3.053e-16
 
-exact finite-rank family:
+finite-rank radial projection scan:
   R_match=3.0  a=0.357088  shell_rms=0.126  shell_max_rel=0.841  direct=9.851e-02  coarse=7.393e-05
   R_match=3.5  a=0.315750  shell_rms=0.125  shell_max_rel=0.628  direct=9.650e-02  coarse=3.848e-05
   R_match=4.0  a=0.297284  shell_rms=0.125  shell_max_rel=0.533  direct=9.638e-03  coarse=2.125e-05
   R_match=4.5  a=0.259967  shell_rms=0.111  shell_max_rel=0.340  direct=2.793e-02  coarse=1.188e-05
   R_match=5.0  a=0.239107  shell_rms=0.094  shell_max_rel=0.233  direct=1.039e-02  coarse=7.028e-06
-[EXACT] PASS: the exact finite-rank source field is recovered by the Woodbury-compressed exterior solve
-    boundary reconstruction error=6.939e-17
-[EXACT] PASS: the exact finite-rank shell trace is stationary for the microscopic Schur boundary action
-    flux_err=4.163e-16, stationary_grad=4.163e-16
-[BOUNDED] PASS: the finite-rank family admits a vacuum-close coarse-grained isotropic exterior metric
-    R_match=5.0, a=0.239107, shell_rms=0.094, direct=1.039e-02, coarse=7.028e-06
-[BOUNDED] PASS: the coarse-grained isotropic candidate strongly improves the finite-rank `3+1` residual
+[BOUNDED] PASS: finite-rank family admits a vacuum-close coarse radial isotropic metric
+    R_match=5.0, a=0.239107, shell_rms=0.094, coarse=7.028e-06
+[BOUNDED] PASS: coarse radial isotropic candidate strongly improves the direct same-source residual
     direct=1.039e-02, coarse=7.028e-06, improvement=1477.6x
+[BOUNDARY] PASS: direct same-source residual remains nonzero, so tensorial completion is still open
+    direct residual=1.039e-02
+
+AUDIT METADATA
+[META] PASS: claim type remains bounded_theorem
+    bounded_theorem
+[META] PASS: audit status reset for re-audit
+    unaudited
+[META] PASS: effective status reset for re-audit
+    unaudited
+[META] PASS: runner path is registered
+    scripts/frontier_finite_rank_source_to_metric_theorem.py
+[META] PASS: direct dependency list is empty
+    []
+[META] PASS: helper runner paths are empty
+    []
+[META] PASS: open dependency paths are empty
+    []
+[META] PASS: queue entry is ready
+    {'audit_independence_required': 'any_non_self', 'audit_status': 'unaudited', 'blocker': None, 'claim_id': 'finite_rank_source_to_metric_theorem_note', 'claim_scope': None, 'claim_type': 'bounded_theorem', 'claim_type_provenance': 'author_hint', 'criticality': 'medium', 'criticality_rank': 1, 'cross_confirmation_status': None, 'deps': [], 'direct_in_degree': 4, 'effective_status': 'unaudited', 'helper_runner_paths': [], 'load_bearing_score': 8.229, 'note_path': 'docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md', 'queue_reason': 'unaudited', 'ready': True, 'runner_path': 'scripts/frontier_finite_rank_source_to_metric_theorem.py', 'transitive_descendants': 74}
 
 ==============================================================================
-BLOCKER
+BOUNDARY
 ==============================================================================
-The finite-rank family still does not supply an exact tensorial `3+1` matching map. The direct common-source metric remains nonzero, so this route closes the scalar exterior architecture but not full nonlinear GR.
+The row proves no full tensorial `3+1` matching law and no full nonlinear GR. It is a fixed finite-lattice source-to-exterior plus scalar/static isotropic residual certificate.
 
 ==============================================================================
 SUMMARY
 ==============================================================================
-PASS=4 FAIL=0 TOTAL=4
-All checks passed.
+PASS=17 FAIL=0 TOTAL=17
+EXACT=6 BOUNDED=2 META=8
 
 ----- stderr -----
 

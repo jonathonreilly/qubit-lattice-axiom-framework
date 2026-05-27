@@ -1,0 +1,111 @@
+{
+  "actual_current_surface_status": "no-go",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_orientation_phase_dynamics_necessity_no_go_note_2026-05-27",
+  "dependency_status": {
+    "c3_dynamics": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "perron_nogo": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "phase_cone": {
+      "actual_current_surface_status": "exact-support / open phase-ordering import",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "real_source": {
+      "actual_current_surface_status": "exact-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "real_top_line": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py",
+  "no_go_audit": {
+    "accepted_orientation_phase_law_derived": false,
+    "no_forbidden_imports": true,
+    "orientation_odd_phase_term_required": true,
+    "reflection_even_base_dynamics_forces_y0_zero": true,
+    "reflection_even_base_dynamics_selects_isolated_nontrivial_line": false,
+    "strict_top_w_response_certificate_present": false
+  },
+  "pass_count": 86,
+  "phase_cone_at_y0_zero": {
+    "P_omega2_minus_P0_at_y0_zero": "-sqrt(6)*x_0/2",
+    "P_omega2_minus_Pomega_at_y0_zero": "0",
+    "P_omega_minus_P0_at_y0_zero": "-sqrt(6)*x_0/2"
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Reflection-even C3 base dynamics forces y_0 = 0. It either selects the C3 singlet line or leaves the nontrivial block degenerate, so it cannot isolate a nontrivial physical top line or certify A/sqrt(12).",
+  "reachability_to_target": "prunes",
+  "reflection_basis": {
+    "R_Bx_R": "B_x",
+    "R_By_R": "-B_y",
+    "reflection_invariance_condition": "y_0 = 0"
+  },
+  "reflection_even_ordering_cases": {
+    "x_negative": {
+      "eigenvalues": {
+        "P_0": "-sqrt(6)/3",
+        "P_omega": "sqrt(6)/6",
+        "P_omega2": "sqrt(6)/6"
+      },
+      "largest_lines": [
+        "P_omega",
+        "P_omega2"
+      ],
+      "x0": "-1",
+      "y0": "0"
+    },
+    "x_positive": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "-sqrt(6)/6",
+        "P_omega2": "-sqrt(6)/6"
+      },
+      "largest_lines": [
+        "P_0"
+      ],
+      "x0": "1",
+      "y0": "0"
+    },
+    "x_zero": {
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "0",
+        "P_omega2": "0"
+      },
+      "largest_lines": [
+        "P_0",
+        "P_omega",
+        "P_omega2"
+      ],
+      "x0": "0",
+      "y0": "0"
+    }
+  },
+  "route_pruned": "reflection-even same-surface C3 base dynamics derives nontrivial phase-ordering cone membership",
+  "route_still_live": "derive accepted orientation-odd same-surface C3 dynamics with nontrivial cone membership and W/top matrix elements, or produce strict same-source top/W pole rows",
+  "source_response_rows": {
+    "P_0_row": "sqrt(3)*A/3",
+    "P_omega2_row": "-sqrt(3)*A/6",
+    "P_omega_row": "-sqrt(3)*A/6"
+  },
+  "trace_class": "negative_route_pruning"
+}

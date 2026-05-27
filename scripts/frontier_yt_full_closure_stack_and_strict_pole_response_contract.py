@@ -45,6 +45,10 @@ This runner verifies the current burn-down state:
 * The residual C3 phase-ordering cone is now explicit support: the top line is
   nontrivial exactly in the two cones y_0 > sqrt(3) x_0 or
   -y_0 > sqrt(3) x_0, but that cone membership is not yet derived.
+* Reflection-even same-surface C3 base dynamics cannot derive that cone:
+  reflection forces y_0 = 0, which selects P_0 or leaves the nontrivial block
+  degenerate. A positive C3 route needs an accepted orientation-odd phase law
+  or strict pole rows.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -103,6 +107,7 @@ STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT = DOCS / "YT_STRICT_SPARSE_TOP_W_POLE_RES
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY = DOCS / "YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md"
 C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO = DOCS / "YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md"
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY = DOCS / "YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md"
+C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY = DOCS / "YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -140,6 +145,7 @@ STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT = ROOT / "outputs" / "yt_strict_spars
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT = ROOT / "outputs" / "yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json"
 C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT = ROOT / "outputs" / "yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json"
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json"
+C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_OUT = ROOT / "outputs" / "yt_c3_orientation_phase_dynamics_necessity_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -222,6 +228,7 @@ def part1_anchors() -> dict[str, str]:
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY,
         C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO,
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY,
+        C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -258,6 +265,7 @@ def part1_anchors() -> dict[str, str]:
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT,
         C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT,
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT,
+        C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -297,6 +305,7 @@ def part1_anchors() -> dict[str, str]:
         "microscopic backend/projector/matrix-element boundary",
         "positive real C3 transfer/Perron selection",
         "phase-ordering cone",
+        "orientation-odd phase law",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -352,6 +361,7 @@ def part2_support_outputs() -> dict[str, Any]:
     microscopic_backend_projector_matrix_element_boundary = load_json(MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT)
     c3_positive_transfer_perron_top_line_nogo = load_json(C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT)
     c3_phase_ordering_cone_support_boundary = load_json(C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT)
+    c3_orientation_phase_dynamics_necessity = load_json(C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -528,6 +538,24 @@ def part2_support_outputs() -> dict[str, Any]:
         "C3 phase-ordering cone implies target row conditionally",
         c3_phase_ordering_cone_support_boundary.get("certificate_boundary", {}).get("nontrivial_cone_implies_target_row") is True,
     )
+    check(
+        "C3 orientation-phase dynamics necessity no-go passed",
+        c3_orientation_phase_dynamics_necessity.get("fail_count") == 0,
+        c3_orientation_phase_dynamics_necessity.get("fail_count"),
+    )
+    check(
+        "C3 orientation-phase no-go prunes reflection-even cone derivation",
+        c3_orientation_phase_dynamics_necessity.get("trace_class") == "negative_route_pruning",
+        c3_orientation_phase_dynamics_necessity.get("trace_class"),
+    )
+    check(
+        "C3 orientation-phase no-go requires orientation-odd dynamics",
+        c3_orientation_phase_dynamics_necessity.get("no_go_audit", {}).get("orientation_odd_phase_term_required") is True,
+    )
+    check(
+        "C3 orientation-phase no-go leaves strict pole rows absent",
+        c3_orientation_phase_dynamics_necessity.get("no_go_audit", {}).get("strict_top_w_response_certificate_present") is False,
+    )
 
     return {
         "fisher": fisher,
@@ -565,6 +593,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "microscopic_backend_projector_matrix_element_boundary": microscopic_backend_projector_matrix_element_boundary,
         "c3_positive_transfer_perron_top_line_nogo": c3_positive_transfer_perron_top_line_nogo,
         "c3_phase_ordering_cone_support_boundary": c3_phase_ordering_cone_support_boundary,
+        "c3_orientation_phase_dynamics_necessity": c3_orientation_phase_dynamics_necessity,
     }
 
 
@@ -771,7 +800,7 @@ def main() -> int:
             "name": "physical top generation projector",
             "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open",
             "closed": True,
-            "next_action": "produce accepted strict top/W pole rows, or derive new microscopic dynamics with accepted backend/projectors/matrix elements",
+            "next_action": "produce accepted strict top/W pole rows, or derive orientation-odd microscopic dynamics with accepted backend/projectors/matrix elements",
         },
         {
             "step": 7,
@@ -806,6 +835,9 @@ def main() -> int:
             "nontrivial top line requires y_0 > sqrt(3) x_0 or "
             "-y_0 > sqrt(3) x_0, but the current surface does not derive "
             "that cone membership. "
+            "Reflection-even same-surface C3 base dynamics is now pruned as "
+            "a source of that cone because it forces y_0 = 0 and therefore "
+            "selects P_0 or leaves the nontrivial block degenerate. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -814,7 +846,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted strict same-source top/W pole rows, or new microscopic dynamics deriving accepted backend/projectors/matrix elements",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or orientation-odd microscopic dynamics deriving accepted backend/projectors/matrix elements",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -852,6 +884,7 @@ def main() -> int:
             "microscopic_backend_projector_matrix_element_boundary_fail_count": support_outputs["microscopic_backend_projector_matrix_element_boundary"].get("fail_count"),
             "c3_positive_transfer_perron_top_line_nogo_fail_count": support_outputs["c3_positive_transfer_perron_top_line_nogo"].get("fail_count"),
             "c3_phase_ordering_cone_support_boundary_fail_count": support_outputs["c3_phase_ordering_cone_support_boundary"].get("fail_count"),
+            "c3_orientation_phase_dynamics_necessity_fail_count": support_outputs["c3_orientation_phase_dynamics_necessity"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -868,6 +901,9 @@ def main() -> int:
             "docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py",
             "outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json",
+            "docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py",
+            "outputs/yt_c3_orientation_phase_dynamics_necessity_2026-05-27.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

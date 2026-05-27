@@ -89,6 +89,10 @@ closed exactly:
   the residual C3 phase-ordering cone is explicit support: nontrivial top-line
   ordering requires y_0 > sqrt(3) x_0 or -y_0 > sqrt(3) x_0, but that cone
   membership is not derived on the actual surface
+  reflection-even same-surface C3 base dynamics cannot derive that cone:
+  reflection forces y_0 = 0, which selects P_0 or leaves the nontrivial block
+  degenerate; a positive C3 dynamics theorem needs an accepted orientation-odd
+  phase law or strict pole rows
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -102,11 +106,13 @@ still open:
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
   accepted physical target/source direction inside the C3 tangent space
-accepted base C3 circulant dynamics and orientation/phase law for y_0
+  accepted base C3 circulant dynamics and orientation/phase law for y_0
   accepted spectral ordering/exclusion of the C3 singlet line as the physical
   top row
   accepted non-positive, phase/orientation, or strict-pole authority that
   assigns the physical top row to a nontrivial C3 line
+  accepted orientation-odd same-surface C3 phase dynamics proving
+  |y_0| > sqrt(3) x_0 on the signed nontrivial branch
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -834,6 +840,15 @@ row magnitude `A/sqrt(12)`.  This is exact support, not closure, because the
 current surface does not derive the accepted base operator or its cone
 membership.
 
+[`YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md`](YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md)
+then prunes the reflection-even base-dynamics route to that cone.  Reflection
+fixes `B_x` and flips `B_y`; hence reflection-even C3 base dynamics forces
+`y_0 = 0`.  With `y_0 = 0`, the largest line is `P_0` for `x_0 > 0`, the
+nontrivial block is degenerate for `x_0 < 0`, and the whole triplet is
+degenerate for `x_0 = 0`.  Therefore an isolated nontrivial top line needs an
+accepted orientation-odd phase law, not another reflection-even source or
+base-dynamics argument.
+
 ## Non-Claims
 
 This note does not:
@@ -884,13 +899,16 @@ proposal_allowed_reason: |
   nontrivial top-line ordering requires y_0 > sqrt(3) x_0 or
   -y_0 > sqrt(3) x_0, but the current surface does not derive that the
   accepted base operator lies in either cone.
+  The orientation-phase necessity no-go further prunes reflection-even base
+  dynamics as a source of that cone: it forces y_0 = 0, which gives either the
+  singlet line or a degenerate nontrivial block.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  microscopic dynamics theorem deriving accepted same-surface backend, W/top
-  projectors, and source-generator matrix elements
+  orientation-odd microscopic dynamics theorem deriving accepted same-surface
+  backend, W/top projectors, and source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted pole rows or microscopic dynamics
 backup_route: audit accepts primitive top-source premise as physical source law

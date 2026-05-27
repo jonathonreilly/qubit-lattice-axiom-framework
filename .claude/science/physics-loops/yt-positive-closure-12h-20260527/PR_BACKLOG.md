@@ -101,3 +101,19 @@ existing `B_x` source derivative and factorization row give `A/sqrt(12)`.
 The cone membership is not derived on the actual current surface, so no
 retained or proposed-retained Y_T closure is claimed.
 ```
+
+Then append the eighth block:
+
+```text
+## 2026-05-27 Update: C3 Orientation-Phase Dynamics Necessity No-Go
+
+Added no-go route pruning for deriving the residual nontrivial C3
+phase-ordering cone from reflection-even same-surface base dynamics.
+Reflection fixes `B_x` and flips `B_y`, so reflection-even base dynamics
+forces `y_0 = 0`. Then `x_0 > 0` selects `P_0`, `x_0 < 0` leaves
+`P_omega` and `P_omega2` degenerate, and `x_0 = 0` is fully degenerate. A
+positive C3 dynamics theorem must therefore supply an accepted orientation-odd
+phase law with `|y_0| > sqrt(3) x_0` on a signed nontrivial branch plus W/top
+matrix elements, or the route must be bypassed by accepted strict pole rows.
+No retained or proposed-retained Y_T closure is claimed.
+```

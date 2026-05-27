@@ -14,6 +14,8 @@ counterfamily directly. The positive Perron block directly diagonalizes the
 entrywise-positive real C3-circulant family `a I + b(C+C^2)` and checks that
 the Perron line is `P_0`. The phase-ordering cone block directly classifies
 the finite C3 character eigenvalue inequalities for `x_0 B_x + y_0 B_y`;
-no external theorem is load-bearing. The strict-route audit is a branch-local
-availability check over existing JSON certificates. No literature bridge is
-needed for the claim status.
+no external theorem is load-bearing. The orientation-phase necessity no-go
+directly computes the reflection action `R C R = C^2`, the sign flip of
+`B_y`, and the resulting finite C3 eigenvalue degeneracies at `y_0 = 0`. The
+strict-route audit is a branch-local availability check over existing JSON
+certificates. No literature bridge is needed for the claim status.

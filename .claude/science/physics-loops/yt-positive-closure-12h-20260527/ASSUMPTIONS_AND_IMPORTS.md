@@ -11,6 +11,7 @@
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
 | Positive real C3 transfer/Perron top-line selection | Would use positivity to select the physical top line | pruned on current surface | `YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md` | yes | yes | add accepted orientation/phase/top-ordering dynamics or strict pole rows | no-go for positive real shortcut |
 | Nontrivial C3 phase-ordering cone membership | Places the top line in `P_omega` or `P_omega2` instead of `P_0` | exact support/open import | `YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive `y_0 > sqrt(3) x_0` or `-y_0 > sqrt(3) x_0` from accepted microscopic dynamics | open blocker |
+| Orientation-odd same-surface C3 phase law | Supplies nonzero `y_0` strong enough to isolate a nontrivial complex line | unsupported import on actual surface; reflection-even route pruned | `YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive accepted orientation-odd base dynamics with `|y_0| > sqrt(3) x_0` and W/top matrix elements, or bypass with strict pole rows | open blocker |
 | Contact/FV/IR/model-class checks | Certify strict pole-row evidence | missing certificate fields | sparse response contract | yes for strict evidence route | yes | direct sparse pole-response certificate | open blocker |
 | Accepted strict top/W pole rows | Bypass C3 line assignment and read coefficient directly | absent | strict sparse availability audit | yes | yes | produce accepted pole-row data/certificate | open blocker |
 | Microscopic backend/projector/matrix-element shortcut | Would derive the physical row from source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | pruned on current surface | `YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive accepted backend, W/top projectors, and source-generator matrix elements, or produce strict pole rows | no-go for current shortcut |
@@ -26,7 +27,10 @@ shortcut does not derive the accepted backend, physical top projector, or
 source-generator matrix element; and positive real C3 transfer/Perron
 selection picks the singlet `P_0` rather than a nontrivial physical top line.
 The exact residual C3 phase-ordering cone is now characterized, but accepted
-base-operator cone membership remains open. The next active import is accepted
-strict pole-row data or a genuinely new microscopic dynamics/orientation
-theorem deriving `y_0 > sqrt(3) x_0` or `-y_0 > sqrt(3) x_0` plus W/top
-projectors and source-generator matrix elements on one same-surface backend.
+base-operator cone membership remains open. Reflection-even base dynamics is
+now pruned as a route to that cone because it forces `y_0 = 0`, leaving either
+the singlet line or a degenerate nontrivial block. The next active import is
+accepted strict pole-row data or a genuinely new orientation-odd microscopic
+dynamics theorem deriving `|y_0| > sqrt(3) x_0` on a signed nontrivial branch
+plus W/top projectors and source-generator matrix elements on one
+same-surface backend.

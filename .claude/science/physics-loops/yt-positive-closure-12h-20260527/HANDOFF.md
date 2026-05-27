@@ -1,6 +1,6 @@
 # Handoff
 
-Supervisor cycle 2 has produced seven science blocks, not positive retained-grade
+The campaign has produced eight science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -15,6 +15,8 @@ closure:
 6. a no-go for positive real C3 transfer/Perron selection as a nontrivial
    physical top-line law;
 7. exact support characterizing the residual C3 phase-ordering cone.
+8. a no-go for deriving that cone from reflection-even same-surface C3 base
+   dynamics.
 
 New result:
 
@@ -159,6 +161,28 @@ and factorization row give `A/sqrt(12)`. The current surface still does not
 derive the accepted base operator or its cone membership, so no retained or
 proposed-retained wording is allowed.
 
+Eighth result:
+
+```text
+reflection-even C3 base dynamics
+  -> y_0 = 0
+  -/-> isolated nontrivial C3 top line
+```
+
+The finite witness is:
+
+```text
+x_0 > 0, y_0 = 0 -> P_0 largest
+x_0 < 0, y_0 = 0 -> P_omega and P_omega2 largest but degenerate
+x_0 = 0, y_0 = 0 -> all three lines degenerate
+```
+
+Thus the exact phase-ordering cone cannot be derived by keeping the base
+dynamics reflection-even. A future positive C3 dynamics theorem must supply an
+accepted orientation-odd phase law with `|y_0| > sqrt(3) x_0` on a signed
+nontrivial branch, plus same-surface W/top matrix elements; otherwise the
+campaign must use strict same-source pole rows.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -182,10 +206,15 @@ Artifacts:
 - `docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py`
 - `outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json`
+- `docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py`
+- `outputs/yt_c3_orientation_phase_dynamics_necessity_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
 
+- `python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py` -> `SUMMARY: PASS=86 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=272 FAIL=0`
 - `python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py` -> `SUMMARY: PASS=114 FAIL=0`
 - `python3 scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py` -> `SUMMARY: PASS=64 FAIL=0`
 - `python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`
@@ -219,7 +248,7 @@ Previous science commit pushed and recorded in PR #1980 before this cycle:
 d9d4d70a955efdf83e5f689f2d8e156ea1a101b5
 ```
 
-This cycle's science commit:
+Cycle 2 science commit:
 
 ```text
 f291e8410
@@ -228,7 +257,8 @@ f291e8410
 Next exact action:
 
 ```text
-derive the nontrivial C3 phase-ordering cone from accepted microscopic
-dynamics on the same surface, or obtain accepted strict same-source top/W
-pole-row data with contact, FV/IR, and model-class controls.
+derive accepted orientation-odd same-surface C3 microscopic dynamics proving
+|y_0| > sqrt(3) x_0 on a signed nontrivial branch and supplying W/top matrix
+elements, or obtain accepted strict same-source top/W pole-row data with
+contact, FV/IR, and model-class controls.
 ```

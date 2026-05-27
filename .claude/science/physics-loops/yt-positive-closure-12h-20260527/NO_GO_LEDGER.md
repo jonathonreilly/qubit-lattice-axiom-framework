@@ -48,3 +48,8 @@ Non-no-go support checkpoint after the sixth block: the residual C3
 phase-ordering cone is now exact. Nontrivial top-line ordering requires
 `y_0 > sqrt(3) x_0` or `-y_0 > sqrt(3) x_0`; the actual surface does not yet
 derive accepted base-operator cone membership.
+- New in the eighth block: reflection-even same-surface C3 base dynamics does
+  not derive the nontrivial phase-ordering cone. Reflection forces `y_0 = 0`;
+  then `x_0 > 0` selects `P_0`, `x_0 < 0` leaves `P_omega` and `P_omega2`
+  degenerate, and `x_0 = 0` is fully degenerate. A positive C3 route needs an
+  accepted orientation-odd phase law or strict pole rows.

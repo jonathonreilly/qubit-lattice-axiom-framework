@@ -11,6 +11,8 @@ shortcut to the accepted matrix element.
 The sixth route tested positive real C3 transfer/Perron selection as a
 nontrivial top-line law.
 The seventh route characterized the residual C3 phase-ordering cone.
+The eighth route pruned reflection-even base dynamics as a derivation of that
+cone.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -22,6 +24,7 @@ The seventh route characterized the residual C3 phase-ordering cone.
 | Microscopic backend/projector/matrix-element shortcut | no-go shortcut test | 3 | Pruned: current support does not derive accepted backend, top projector, or source-generator matrix element |
 | Positive real C3 transfer/Perron selection | no-go shortcut test | 3 | Pruned: positivity selects `P_0`, not a nontrivial line |
 | C3 phase-ordering cone | exact support boundary | 2 | Landed: nontrivial top line iff `|y_0| > sqrt(3) x_0` with nonzero sign branch |
+| Reflection-even C3 base dynamics to phase cone | no-go shortcut test | 3 | Pruned: reflection forces `y_0 = 0`, giving `P_0` or degenerate nontrivial block |
 
 ## Stuck Fan-Out
 
@@ -37,8 +40,9 @@ The seventh route characterized the residual C3 phase-ordering cone.
 | Microscopic backend/projector route | Combine source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | Fails; accepted backend, physical projector, and source-generator matrix element remain load-bearing |
 | Positive real C3 Perron route | Use positivity to select the physical top line | Fails; Perron line is `P_0`, nontrivial block remains degenerate |
 | Phase-ordering cone map | Classify exactly when complex C3 dynamics selects a nontrivial line | Succeeds as exact support; accepted cone membership remains open |
+| Reflection-even base dynamics | Try to derive cone membership while preserving reflection symmetry | Fails; `y_0 = 0` forces singlet or nontrivial degeneracy |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-microscopic dynamics/orientation theorem with accepted backend/projectors,
+orientation-odd microscopic dynamics theorem with accepted backend/projectors,
 nontrivial phase-ordering cone membership, and matrix elements, or accepted
 strict pole rows. It does not close the coefficient row.

@@ -19,15 +19,15 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 186 |
 | critical | `unaudited` | 149 |
-| medium | `unaudited` | 101 |
+| medium | `unaudited` | 100 |
 | critical | `audited_conditional` | 6 |
 | high | `audited_conditional` | 4 |
 | high | `audited_numerical_match` | 4 |
 | high | `audited_renaming` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
+| medium | `audited_conditional` | 2 |
 | critical | `audited_renaming` | 1 |
-| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 460
@@ -402,7 +402,7 @@ publication tables phrase it.
 | medium | `dm_flagship_closure_review_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| medium | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
+| medium | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_minimal_a13_sheet_selector_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

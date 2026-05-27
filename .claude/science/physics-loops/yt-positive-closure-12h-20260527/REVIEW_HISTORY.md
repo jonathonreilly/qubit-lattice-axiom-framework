@@ -435,6 +435,40 @@ Verification recorded with this review:
 - YAML validation passed.
 - `git diff --check` passed.
 
+## 2026-05-27 Local Review, Block 19
+
+Scope:
+
+- C3 orientation-biased phase-potential orbit-member no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks C3 periodicity, reflection parity of `sin(3 phi)`, generic and reflected orbit witnesses, dependency outputs, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open orientation-biased orbit-member law; scalar orientation bias selects a phase orbit, not a physical top-line member. |
+| Imports / support | DISCLOSED | No external phase law, physical basepoint, observed masses, target selector, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=85 FAIL=0`
+- Full stack runner: `PASS=356 FAIL=0`
+- Adjacent Y_T runners passed: phase-orbit selector `PASS=79`,
+  orbit-member covariance `PASS=73`, dihedral basepoint `PASS=84`, cubic
+  phase-potential sign-branch `PASS=88`, phase-ordering cone support
+  `PASS=70`, same-surface matrix factorization `PASS=77`, strict sparse
+  availability audit `PASS=74`, and primitive character phase-angle candidate
+  `PASS=71`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 18
 
 Scope:

@@ -21,6 +21,7 @@
 | C3-invariant scalar phase-orbit selection alone | Would derive the physical nontrivial top line from a selected C3 phase orbit | pruned on current surface | `YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive an accepted same-surface orbit-member/top-line law excluding `P_0`, or bypass with strict pole rows | no-go for scalar orbit-selector shortcut |
 | C3 orbit-member/readout covariance alone | Would derive the physical nontrivial top line after a C3 phase orbit has been selected | pruned on current surface | `YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive an accepted physical orientation/basepoint/orbit-member readout law, or bypass with strict pole rows | no-go for covariance-only member-readout shortcut |
 | Existing C3/dihedral reflection-basepoint structure | Would supply the missing physical basepoint/orbit-member law from already-present reflection data | pruned on current surface | `YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive a genuinely new accepted physical basepoint law beyond the existing reflection axis, or bypass with strict pole rows | no-go for existing-reflection basepoint shortcut |
+| Orientation-biased C3 scalar phase potential | Would supply the missing physical nontrivial top-line member from a reflection-odd `sin(3 phi)` phase-bias term | pruned on current surface | `YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive an accepted physical basepoint/readout law beyond scalar orientation bias, or bypass with strict pole rows | no-go for orientation-biased scalar-potential shortcut |
 | Contact/FV/IR/model-class checks | Certify strict pole-row evidence | missing certificate fields | sparse response contract | yes for strict evidence route | yes | direct sparse pole-response certificate | open blocker |
 | Accepted strict top/W pole rows | Bypass C3 line assignment and read coefficient directly | absent, including current-branch repository discovery scan | strict sparse availability audit; strict pole-row repository discovery no-go | yes | yes | produce accepted pole-row data/certificate | open blocker |
 | Microscopic backend/projector/matrix-element shortcut | Would derive the physical row from source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | pruned on current surface | `YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive accepted backend, W/top projectors, and source-generator matrix elements, or produce strict pole rows | no-go for current shortcut |
@@ -81,3 +82,9 @@ The strict-route repository discovery audit now also prunes the
 hidden-existing-certificate shortcut: current Y_T strict/response/backend or
 projector outputs do not contain a complete accepted strict top/W pole-row
 packet.
+The orientation-biased phase-potential shortcut is now pruned too: adding a
+reflection-odd `sin(3 phi)` phase-bias term selects a C3 phase orbit rather
+than a physical orbit member, and generic selected orbits still contain a
+`P_0` singlet-row witness. The remaining C3 import is an accepted physical
+basepoint/readout law beyond scalar orientation bias, with W/top matrix
+elements, or strict pole rows.

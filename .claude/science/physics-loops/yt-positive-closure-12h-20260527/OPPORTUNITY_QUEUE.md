@@ -20,6 +20,7 @@
 | 16 | Existing C3/dihedral basepoint anchor after orbit selection | low | high | present | pruned; full C3/D3 naturality has no section, and the existing reflection axis fixes `P_0` |
 | 17 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
 | 18 | Hidden accepted strict pole-row certificate already present under another artifact name | low | high | present | pruned by current-branch repository discovery scan |
+| 19 | Orientation-biased C3 scalar phase potential with reflection-odd `sin(3 phi)` term | low | high | present | pruned; selects a C3 orbit, not a physical member |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -126,3 +127,13 @@ produce new accepted strict top/W pole-row data with contact, FV/IR, and
 model-class controls, or derive an accepted same-surface
 backend/projector/matrix-element theorem; if staying on C3, derive a genuinely
 new physical phase/orbit-member law beyond the existing reflection axis.
+
+Queue refresh after the nineteenth block: positive closure remains open. The
+orientation-biased scalar phase-potential shortcut is pruned: adding a
+reflection-odd `sin(3 phi)` term shifts the selected C3 phase orbit but still
+does not choose a physical member, and generic selected orbits contain `P_0`.
+The next exact action remains rank 4 or rank 17: produce accepted strict
+top/W pole-row data with contact, FV/IR, and model-class controls, or derive
+an accepted same-surface backend/projector/matrix-element theorem; if staying
+on C3, derive a non-scalar physical basepoint/readout theorem beyond existing
+reflection-axis and scalar orientation-bias premises.

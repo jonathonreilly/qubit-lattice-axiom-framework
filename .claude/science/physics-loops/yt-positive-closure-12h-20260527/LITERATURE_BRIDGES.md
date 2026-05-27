@@ -43,3 +43,7 @@ The strict pole-row repository discovery no-go is likewise a finite
 branch-local schema scan over current Y_T JSON and note artifacts. It uses no
 external physics source to decide whether a complete accepted pole-row packet
 exists in this branch.
+The orientation-biased phase-potential block directly checks the finite C3
+periodicity of `c_0 + r cos(3 phi) + s sin(3 phi)`, the reflection parity of
+the `sin(3 phi)` term, and the selected-orbit top-line witnesses. It imports
+no Landau potential, phenomenological phase, or external orientation law.

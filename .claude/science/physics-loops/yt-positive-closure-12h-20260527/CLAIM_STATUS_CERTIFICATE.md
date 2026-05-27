@@ -1,18 +1,18 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go / current-branch strict-row discovery
+actual_current_surface_status: no-go / open orientation-biased orbit-member law
 trace_class: negative_route_pruning
-reachability_to_target: prunes hidden-existing-certificate shortcut
+reachability_to_target: prunes orientation-biased phase-potential shortcut
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The current-branch discovery scan finds Y_T strict-response harnesses, candidate rows, and no-go packets, but no accepted same-surface strict top/W pole-row certificate with backend authority, isolated W/top poles, coefficient-certified rows, contact/FV/IR/model-class controls, and no free top coefficient input. The actual surface still lacks accepted strict pole rows or an accepted same-surface backend/projector/matrix-element theorem."
+proposal_allowed_reason: "A C3-invariant orientation-biased phase potential with a reflection-odd sin(3 phi) term still selects a three-member C3 phase orbit, not a physical orbit member. Generic selected orbits contain a P_0 singlet-row witness and nontrivial target-row witnesses, and the actual surface still lacks an accepted physical basepoint/readout law, accepted W/top matrix elements, or strict pole-row data."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass_for_no_go_route_pruning_only
-next_exact_action: "produce accepted strict top/W pole-row data with controls, or derive the accepted same-surface backend/projectors/source-generator matrix elements; if staying on C3, derive a genuinely new physical phase/orbit-member law beyond the existing reflection axis"
+next_exact_action: "produce accepted strict top/W pole-row data with controls, or derive the accepted same-surface backend/projectors/source-generator matrix elements; if staying on C3, derive a physical basepoint/readout law beyond scalar orientation bias that excludes P_0 and supplies W/top matrix elements"
 ```
 
 Retained or proposed-retained wording is not allowed for these blocks.

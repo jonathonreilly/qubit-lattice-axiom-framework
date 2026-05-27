@@ -127,6 +127,10 @@ closed exactly:
   dihedral basepoint anchor obstruction: full C3/D3 naturality has no section
   of the free orbit, and the already-derived real-record reflection axis fixes
   the singlet P_0 member rather than a nontrivial target row
+  orientation-biased phase-potential orbit-member no-go: adding an explicit
+  reflection-odd sin(3 phi) phase-bias term still selects a C3 phase orbit,
+  not a physical member; generic selected orbits still contain P_0 unless an
+  accepted basepoint/readout law or strict pole rows are supplied
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -159,6 +163,9 @@ still open:
   accepted physical basepoint authority beyond the existing real-record
   reflection axis, since that axis fixes P_0 and rotated axes would import a
   new C3 basepoint section
+  accepted physical member/readout law beyond orientation-biased C3 scalar
+  potentials, since a reflection-odd sin(3 phi) bias still leaves
+  orbit-member selection load-bearing
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -1075,6 +1082,45 @@ Thus C3 covariance of the readout does not exclude the singlet member.  The
 remaining C3 route needs an accepted physical orientation/basepoint/readout
 theorem with W/top matrix elements, or strict pole rows.
 
+[`YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md`](YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md)
+then tests the already-present C3/dihedral reflection data as that missing
+physical anchor.  Full C3/D3 naturality still has no section of the selected
+free phase orbit, and the existing real-record reflection axis fixes the
+singlet member:
+
+```text
+phi = 0 -> P_0 -> A/sqrt(3).
+```
+
+Rotated reflection axes can fix `P_omega2` or `P_omega`, but choosing such a
+rotated axis is precisely the missing physical basepoint import.
+
+[`YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md`](YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md)
+then tests a stronger orientation-biased phase-potential premise.  A
+reflection-odd `sin(3 phi)` term is allowed in the C3 scalar phase potential:
+
+```text
+V(phi) = c_0 + r cos(3 phi) + s sin(3 phi).
+```
+
+But C3 invariance still makes the selected extrema a three-member orbit:
+
+```text
+phi_n = delta/3 + 2 pi n/3.
+```
+
+For example, with `delta = pi/7`:
+
+```text
+phi = pi/21          -> P_0      -> A/sqrt(3)
+phi = pi/21+2 pi/3  -> P_omega2 -> A/sqrt(12)
+phi = pi/21-2 pi/3  -> P_omega  -> A/sqrt(12)
+```
+
+Thus even explicit orientation bias does not choose a physical orbit member
+or exclude `P_0`.  The remaining C3 route still needs an accepted physical
+basepoint/readout law with W/top matrix elements, or strict pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -1158,6 +1204,14 @@ proposal_allowed_reason: |
   the missing readout law: a free C3 phase orbit has no equivariant section,
   and symmetry-breaking sections include a P_0 row as well as the two
   nontrivial target rows.
+  The dihedral basepoint anchor obstruction prunes the existing reflection
+  data as the missing physical section: full C3/D3 naturality has no section,
+  and the existing real-record reflection axis fixes P_0 rather than a
+  nontrivial member.
+  The orientation-biased phase-potential no-go prunes a stronger scalar
+  phase-law premise: adding a reflection-odd sin(3 phi) term still selects a
+  C3 orbit, not a physical member, and generic selected orbits still contain a
+  P_0 witness.
   The strict pole-row repository discovery no-go additionally prunes the
   hidden-existing-certificate shortcut: scanning current Y_T
   strict/response/backend/projector outputs finds support harnesses,

@@ -1,0 +1,214 @@
+{
+  "actual_current_surface_status": "no-go / open orientation-biased orbit-member law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "dependencies": {
+    "cubic_nogo": {
+      "actual_current_surface_status": "no-go / open cubic phase law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "dihedral_basepoint": {
+      "actual_current_surface_status": "no-go / open physical basepoint anchor law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "matrix_element": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "orbit_member_nogo": {
+      "actual_current_surface_status": "no-go / open orbit-member readout law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "phase_cone": {
+      "actual_current_surface_status": "exact-support / open phase-ordering import",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "phase_orbit_nogo": {
+      "actual_current_surface_status": "no-go / open phase-orbit member law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "strict_availability": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "no_go_certificate": {
+    "accepted_nontrivial_top_line_law_derived": false,
+    "accepted_physical_basepoint_readout_law_derived": false,
+    "accepted_w_top_matrix_elements_supplied": false,
+    "bare_retained_allowed": false,
+    "generic_orientation_biased_orbit_contains_nontrivial_rows": true,
+    "generic_orientation_biased_orbit_contains_p0": true,
+    "no_forbidden_imports": true,
+    "orientation_bias_selects_orbit_member": false,
+    "orientation_bias_selects_phase_orbit": true,
+    "orientation_biased_potential_is_c3_invariant": true,
+    "proposal_allowed": false,
+    "pure_sine_bias_selects_phase_orbit": true,
+    "reflection_odd_phase_bias_characterized": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "orbit_witnesses": {
+    "generic_orientation_biased_orbit_delta_pi_over_7": [
+      {
+        "eigenvalues": {
+          "P_0": "sqrt(6)*cos(pi/21)/3",
+          "P_omega": "-sqrt(6)*cos(2*pi/7)/3",
+          "P_omega2": "-sqrt(6)*cos(8*pi/21)/3"
+        },
+        "phi": "pi/21",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/3"
+        ],
+        "top_lines": [
+          "P_0"
+        ]
+      },
+      {
+        "eigenvalues": {
+          "P_0": "-sqrt(6)*cos(2*pi/7)/3",
+          "P_omega": "-sqrt(6)*cos(8*pi/21)/3",
+          "P_omega2": "sqrt(6)*cos(pi/21)/3"
+        },
+        "phi": "5*pi/7",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega2"
+        ]
+      },
+      {
+        "eigenvalues": {
+          "P_0": "-sqrt(6)*cos(8*pi/21)/3",
+          "P_omega": "sqrt(6)*cos(pi/21)/3",
+          "P_omega2": "-sqrt(6)*cos(2*pi/7)/3"
+        },
+        "phi": "-13*pi/21",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega"
+        ]
+      }
+    ],
+    "pure_sine_bias_maxima": [
+      {
+        "eigenvalues": {
+          "P_0": "sqrt(2)/2",
+          "P_omega": "-sqrt(2)/2",
+          "P_omega2": "0"
+        },
+        "phi": "pi/6",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/3"
+        ],
+        "top_lines": [
+          "P_0"
+        ]
+      },
+      {
+        "eigenvalues": {
+          "P_0": "-sqrt(2)/2",
+          "P_omega": "0",
+          "P_omega2": "sqrt(2)/2"
+        },
+        "phi": "5*pi/6",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega2"
+        ]
+      },
+      {
+        "eigenvalues": {
+          "P_0": "0",
+          "P_omega": "sqrt(2)/2",
+          "P_omega2": "-sqrt(2)/2"
+        },
+        "phi": "-pi/2",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega"
+        ]
+      }
+    ],
+    "reflected_orientation_biased_orbit_minus_delta": [
+      {
+        "eigenvalues": {
+          "P_0": "sqrt(6)*cos(pi/21)/3",
+          "P_omega": "-sqrt(6)*cos(8*pi/21)/3",
+          "P_omega2": "-sqrt(6)*cos(2*pi/7)/3"
+        },
+        "phi": "-pi/21",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/3"
+        ],
+        "top_lines": [
+          "P_0"
+        ]
+      },
+      {
+        "eigenvalues": {
+          "P_0": "-sqrt(6)*cos(8*pi/21)/3",
+          "P_omega": "-sqrt(6)*cos(2*pi/7)/3",
+          "P_omega2": "sqrt(6)*cos(pi/21)/3"
+        },
+        "phi": "13*pi/21",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega2"
+        ]
+      },
+      {
+        "eigenvalues": {
+          "P_0": "-sqrt(6)*cos(2*pi/7)/3",
+          "P_omega": "sqrt(6)*cos(pi/21)/3",
+          "P_omega2": "-sqrt(6)*cos(8*pi/21)/3"
+        },
+        "phi": "-5*pi/7",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega"
+        ]
+      }
+    ]
+  },
+  "orientation_biased_potential_family": {
+    "c3_periodicity_check": "0",
+    "offset_c3_periodicity_check": "0",
+    "offset_form": "cos(delta - 3*phi)",
+    "orbit_member_equal_value_check": "0",
+    "orientation_biased_potential": "c0 + r*cos(3*phi) + s*sin(3*phi)",
+    "reflection_difference": "-2*s*sin(3*phi)",
+    "stationary_equation": "-3*r*sin(3*phi) + 3*s*cos(3*phi)"
+  },
+  "pass_count": 85,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "A C3-invariant orientation-biased phase potential with a reflection-odd sin(3 phi) term still selects a three-member C3 phase orbit.  The selected orbit contains a P0 singlet-row witness and nontrivial target-row witnesses, and the pure sine bias has the same orbit-member problem.  The actual surface still lacks an accepted physical basepoint/readout law, accepted W/top matrix elements, or strict pole-row data.",
+  "reachability_to_target": "prunes shortcut",
+  "review_surface": [
+    "docs/YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_c3_orientation_biased_phase_potential_orbit_member_no_go.py",
+    "outputs/yt_c3_orientation_biased_phase_potential_orbit_member_no_go_2026-05-27.json"
+  ],
+  "route_pruned": "orientation-biased C3 scalar phase potential derives the physical nontrivial top-line member",
+  "route_still_live": "derive an accepted same-surface physical basepoint/readout law that selects a nontrivial orbit member and supplies W/top source-generator matrix elements, or produce accepted strict same-source top/W pole rows",
+  "trace_class": "negative_route_pruning"
+}

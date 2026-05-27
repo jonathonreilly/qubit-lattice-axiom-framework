@@ -90,3 +90,11 @@ rows, contact/FV/IR/model-class controls, and no free top coefficient input.
 The next trace action is therefore to produce new accepted strict pole-row
 data or derive the accepted same-surface backend/projectors/source-generator
 matrix elements.
+The nineteenth artifact prunes an explicit orientation-biased scalar
+phase-potential shortcut. Adding a reflection-odd `sin(3 phi)` term produces
+a C3-invariant potential that still selects a three-member phase orbit rather
+than a physical member. Generic selected orbits contain a `P_0` singlet-row
+witness and two nontrivial target-row witnesses. The next trace action is
+therefore still accepted strict pole-row data, accepted backend/projector
+matrix elements, or a non-scalar physical basepoint/readout theorem that
+excludes `P_0` without target insertion.

@@ -83,6 +83,10 @@ This runner verifies the current burn-down state:
   C3/D3 naturality has no section of the free orbit, and the already-derived
   real-record reflection axis fixes the singlet P_0 member rather than a
   nontrivial target row.
+* The orientation-biased phase-potential shortcut is now pruned: adding a
+  reflection-odd sin(3phi) term still selects a C3 phase orbit, not a physical
+  orbit member, so P_0 remains allowed without an accepted basepoint/readout
+  law or strict pole rows.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -152,6 +156,7 @@ C3_CUBIC_PHASE_POTENTIAL_NOGO = DOCS / "YT_C3_CUBIC_PHASE_POTENTIAL_SIGN_BRANCH_
 C3_PHASE_ORBIT_SELECTOR_NOGO = DOCS / "YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
 C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO = DOCS / "YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md"
 C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION = DOCS / "YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md"
+C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO = DOCS / "YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -200,6 +205,7 @@ C3_CUBIC_PHASE_POTENTIAL_NOGO_OUT = ROOT / "outputs" / "yt_c3_cubic_phase_potent
 C3_PHASE_ORBIT_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_phase_orbit_selector_underdetermination_2026-05-27.json"
 C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT = ROOT / "outputs" / "yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json"
 C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json"
+C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT = ROOT / "outputs" / "yt_c3_orientation_biased_phase_potential_orbit_member_no_go_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -293,6 +299,7 @@ def part1_anchors() -> dict[str, str]:
         C3_PHASE_ORBIT_SELECTOR_NOGO,
         C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO,
         C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION,
+        C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -340,6 +347,7 @@ def part1_anchors() -> dict[str, str]:
         C3_PHASE_ORBIT_SELECTOR_NOGO_OUT,
         C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT,
         C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT,
+        C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -391,6 +399,7 @@ def part1_anchors() -> dict[str, str]:
         "phase-orbit selector underdetermination",
         "orbit-member readout covariance no-go",
         "dihedral basepoint anchor obstruction",
+        "orientation-biased phase-potential orbit-member no-go",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -457,6 +466,9 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_phase_orbit_selector_nogo = load_json(C3_PHASE_ORBIT_SELECTOR_NOGO_OUT)
     c3_orbit_member_readout_covariance_nogo = load_json(C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT)
     c3_dihedral_basepoint_anchor_obstruction = load_json(C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT)
+    c3_orientation_biased_phase_potential_orbit_member_nogo = load_json(
+        C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT
+    )
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -900,6 +912,34 @@ def part2_support_outputs() -> dict[str, Any]:
         .get("rotated_reflection_axis_selects_nontrivial_member_only_with_extra_basepoint")
         is True,
     )
+    check(
+        "C3 orientation-biased phase-potential no-go passed",
+        c3_orientation_biased_phase_potential_orbit_member_nogo.get("fail_count") == 0,
+        c3_orientation_biased_phase_potential_orbit_member_nogo.get("fail_count"),
+    )
+    check(
+        "C3 orientation-biased phase-potential route is pruned",
+        c3_orientation_biased_phase_potential_orbit_member_nogo.get("trace_class") == "negative_route_pruning",
+        c3_orientation_biased_phase_potential_orbit_member_nogo.get("trace_class"),
+    )
+    check(
+        "orientation bias still selects an orbit rather than a member",
+        c3_orientation_biased_phase_potential_orbit_member_nogo.get("no_go_certificate", {})
+        .get("orientation_bias_selects_orbit_member")
+        is False,
+    )
+    check(
+        "orientation-biased orbit still contains P0",
+        c3_orientation_biased_phase_potential_orbit_member_nogo.get("no_go_certificate", {})
+        .get("generic_orientation_biased_orbit_contains_p0")
+        is True,
+    )
+    check(
+        "orientation-biased route still lacks physical basepoint readout",
+        c3_orientation_biased_phase_potential_orbit_member_nogo.get("no_go_certificate", {})
+        .get("accepted_physical_basepoint_readout_law_derived")
+        is False,
+    )
 
     return {
         "fisher": fisher,
@@ -948,6 +988,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_phase_orbit_selector_nogo": c3_phase_orbit_selector_nogo,
         "c3_orbit_member_readout_covariance_nogo": c3_orbit_member_readout_covariance_nogo,
         "c3_dihedral_basepoint_anchor_obstruction": c3_dihedral_basepoint_anchor_obstruction,
+        "c3_orientation_biased_phase_potential_orbit_member_nogo": c3_orientation_biased_phase_potential_orbit_member_nogo,
     }
 
 
@@ -1152,7 +1193,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface phase-angle/orbit-member law selecting a nontrivial top line with backend/projectors/matrix elements",
         },
@@ -1234,6 +1275,11 @@ def main() -> int:
             "fixes the singlet P_0 member rather than a nontrivial target "
             "row; rotated reflection axes would import the missing physical "
             "basepoint section. "
+            "An explicit orientation-biased phase potential with a "
+            "reflection-odd sin(3phi) term is now also pruned as a top-line "
+            "law: it still selects a C3 phase orbit, not a physical orbit "
+            "member, and the selected orbit contains a P_0 witness unless an "
+            "accepted basepoint/readout law is supplied. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1291,6 +1337,7 @@ def main() -> int:
             "c3_phase_orbit_selector_nogo_fail_count": support_outputs["c3_phase_orbit_selector_nogo"].get("fail_count"),
             "c3_orbit_member_readout_covariance_nogo_fail_count": support_outputs["c3_orbit_member_readout_covariance_nogo"].get("fail_count"),
             "c3_dihedral_basepoint_anchor_obstruction_fail_count": support_outputs["c3_dihedral_basepoint_anchor_obstruction"].get("fail_count"),
+            "c3_orientation_biased_phase_potential_orbit_member_nogo_fail_count": support_outputs["c3_orientation_biased_phase_potential_orbit_member_nogo"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -1334,6 +1381,12 @@ def main() -> int:
             "docs/YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py",
             "outputs/yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json",
+            "docs/YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py",
+            "outputs/yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json",
+            "docs/YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_orientation_biased_phase_potential_orbit_member_no_go.py",
+            "outputs/yt_c3_orientation_biased_phase_potential_orbit_member_no_go_2026-05-27.json",
             "docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py",
             "outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json",

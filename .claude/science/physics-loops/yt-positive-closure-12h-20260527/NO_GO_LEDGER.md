@@ -119,3 +119,10 @@ potential/variational law and a physical nonzero orientation branch.
   top coefficient input. Producing new accepted strict pole-row data or
   deriving the accepted same-surface backend/projectors/matrix elements remains
   load-bearing.
+- New in the nineteenth block: adding an explicit orientation-biased
+  C3 scalar phase potential with a reflection-odd `sin(3 phi)` term still does
+  not derive the physical nontrivial top line. The potential selects a
+  three-member C3 phase orbit, not a physical orbit member; generic selected
+  orbits contain `P_0 -> A/sqrt(3)` as well as nontrivial target rows. A
+  physical basepoint/readout law beyond scalar orientation bias, or accepted
+  strict pole rows, remains load-bearing.

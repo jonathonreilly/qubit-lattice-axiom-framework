@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced eighteen science blocks, not positive retained-grade
+The campaign has produced nineteen science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -35,6 +35,43 @@ closure:
     C3/dihedral reflection-basepoint structure alone.
 18. a current-branch discovery no-go for hidden accepted strict top/W pole-row
     evidence under another Y_T strict/response/backend/projector artifact name.
+19. a no-go for deriving the physical nontrivial top line from an
+    orientation-biased C3 scalar phase potential with a reflection-odd
+    `sin(3 phi)` term.
+
+New orientation-biased phase-potential result:
+
+```text
+V(phi) = c_0 + r cos(3 phi) + s sin(3 phi)
+  -> selects a C3 phase orbit
+  -/-> selects a physical orbit member
+```
+
+The finite witness for a generic offset is:
+
+```text
+phi = pi/21          -> P_0      -> A/sqrt(3)
+phi = pi/21+2 pi/3  -> P_omega2 -> A/sqrt(12)
+phi = pi/21-2 pi/3  -> P_omega  -> A/sqrt(12)
+```
+
+So explicit orientation bias shifts the selected orbit but does not exclude
+the singlet member. The remaining C3 route needs a physical
+basepoint/readout law beyond scalar orientation bias, with accepted W/top
+matrix elements, or accepted strict pole rows.
+
+Cycle 8 orientation-biased phase-potential verification:
+
+- `python3 scripts/frontier_yt_c3_orientation_biased_phase_potential_orbit_member_no_go.py` -> `SUMMARY: PASS=85 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=356 FAIL=0`
+- Adjacent runners passed: phase-orbit selector `PASS=79`, orbit-member
+  covariance `PASS=73`, dihedral basepoint `PASS=84`, cubic phase-potential
+  sign-branch `PASS=88`, phase-ordering cone support `PASS=70`,
+  same-surface matrix factorization `PASS=77`, strict sparse availability
+  audit `PASS=74`, and primitive character phase-angle candidate `PASS=71`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
 
 New strict-route result:
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 494 |
+| **retained_bounded** | 495 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 790 |
+| `audited_clean` | 791 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1458 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -582,6 +582,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
+| `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_continuum_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_full_kernel_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -8554,6 +8555,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The source note explicitly narrows the historical headline to the retained bounded wide-tail replay note. The completed replay log matches the dependency note's frozen values; the live short-budget run timed out just before completion and is not used as negative evidence.
 - **rationale:** The audited claim is the bounded finite-window replay statement, not the broader historical headline. The one-hop dependency is retained_bounded, and the completed runner log reports Born=4.82e-15, k=0=+0.000000, 9/9 TOWARD rows, peak-tail b^(-1.07) with R^2=0.990, and far-tail b^(-1.17) with R^2=0.997, matching the source and dependency notes. Residual risk is only asymptotic/generalization risk, which the source note explicitly excludes.
 - **auditor confidence:** high
+
+### `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite checked-grid result for the exact primary runner/helper, rescaled NN blocked-slit geometry, BETA=0.8, K_PHYS=5.0, L=40, FANOUT=3, and h in {0.25,0.125,0.0625,0.03125}: phase-corrected L2 coherent saddle predicts directly measured blocked-slit arm widths within 1.96%, with Born residual <=2.06e-15; the h->0 C_arm=2.4855 comparison to the historical diagnostic fit is comparator-only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-nn-c-arm-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The primary runner directly measures blocked-slit sigma_arm(h) from the actual field-free propagation and checks it against the phase-corrected L2 coherent saddle with max residual 1.96%.  _(class `C`)_
+- **chain closes:** True — The coherent-saddle formula is derived from the retained deterministic-rescale amplitudes and fixed slit-plane geometry, then the primary runner independently computes the actual blocked-slit arm widths through the helper propagation code. The earlier no-slit L1/L2 comparison is not load-bearing for this scoped claim, because the repaired bridge is the direct blocked-slit measurement against the L2 saddle.
+- **rationale:** Within the bounded finite-runner scope, the old L1/L2 blocker is resolved: the claim no longer depends on choosing between no-slit-kernel anchoring readings, and instead tests the L2 saddle against the actual blocked-slit propagation. The diagnostic C_arm_numeric constants appear only in comparator checks; the direct blocked-slit guard imports and measures sigma_arm(h) from the helper and does not use those fit constants as inputs. Residual risk is scope-bound: this does not prove a continuum theory, an exact finite-h asymptotic expansion, or a physical interpretation beyond the supplied harness and grid.
 
 ### `nn_lattice_rescaled_continuum_identification_note_2026-05-10`
 

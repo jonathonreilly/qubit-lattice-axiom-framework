@@ -20784,6 +20784,18 @@
       "dominant_class": "C",
       "runner": "scripts/ceiling_formal_proof.py"
     },
+    "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 26,
+        "B": 2,
+        "C": 2,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/sphaleron_coefficient_28_79_runner.py"
+    },
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -55220,6 +55232,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/sphaleron_coefficient_28_79_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 26,
+        "B": 2,
+        "C": 2,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/staggered_chiral_symmetry_check.py": {
       "assert_count": 0,
       "claims": [
@@ -56257,14 +56284,14 @@
   "stats": {
     "decoration_candidates": 346,
     "dominant_class_distribution": {
-      "A": 241,
+      "A": 242,
       "B": 289,
       "C": 760,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2027,
-    "runners_with_C": 985,
-    "runners_with_D": 591
+    "runners_classified": 2028,
+    "runners_with_C": 986,
+    "runners_with_D": 592
   }
 }

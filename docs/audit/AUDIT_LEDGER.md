@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1211 |
+| unaudited | 1212 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -62,11 +62,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1441 |
+| `unaudited` | 1442 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1081 |
+| `bounded_theorem` | 1082 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 259 |
@@ -78,16 +78,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 373 |
 | `high` | 510 |
 | `medium` | 583 |
-| `leaf` | 976 |
+| `leaf` | 977 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 4
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2027
-- runners with (C) first-principles compute hits: 985
-- runners with (D) external comparator hits: 591
+- runners classified: 2028
+- runners with (C) first-principles compute hits: 986
+- runners with (D) external comparator hits: 592
 - decoration candidates (no C, no D): 346
 
 ## Top 25 by load-bearing score (topology only)
@@ -97,7 +97,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 724 | 53.50 | `audited_conditional` | ~~audited_conditional~~ |
-| 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 907 | 52.83 | `audited_clean` | **retained_bounded** |
+| 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 908 | 53.33 | `audited_clean` | **retained_bounded** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 902 | 50.82 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1051 | 46.04 | `audited_clean` | **retained** |
 | 5 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 939 | 40.88 | `audited_clean` | **retained_bounded** |

@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/sphaleron_coefficient_28_79_runner.py
+runner_sha256: 3ff8c7ee25332ab5adca953176736e27dbc968eb68591eb9fd5ad1a73d8d2e8b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+SPHALERON COEFFICIENT C_sph = 28/79 ADMISSION BRIDGE
+
+== Part 0: source firewall ==
+PASS: source contains boundary phrase: Supplied premise packet (not axioms)
+PASS: source contains boundary phrase: E1 Sphaleron equilibrium
+PASS: source contains boundary phrase: E2 B - L conservation
+PASS: source contains boundary phrase: E3 Plasma hypercharge neutrality
+PASS: source contains boundary phrase: E4 Yukawa-mediated chemical equilibria
+PASS: source contains boundary phrase: E5 Small-`mu/T` thermal expansion
+PASS: source contains boundary phrase: E6 Single Higgs doublet `N_H = 1` and the SM-content list
+PASS: source contains boundary phrase: does not claim to derive E1, E2, E3, E4, E5, or E6
+PASS: source contains boundary phrase: no new repo-wide axiom is introduced
+PASS: source contains boundary phrase: Khlebnikov-Shaposhnikov 1988 and Harvey-Turner 1990
+PASS: source contains boundary phrase: scripts/sphaleron_coefficient_28_79_runner.py
+PASS: source note excludes non-load-bearing phrase: PDG observed
+PASS: source note excludes non-load-bearing phrase: Monte Carlo measurement
+PASS: source note excludes non-load-bearing phrase: fitted observational value
+
+== Part 1: symbolic linear-algebra reduction ==
+PASS: E4 Yukawa: mu_uR - (mu_qL + mu_phi) = 0
+PASS: E4 Yukawa: mu_dR - (mu_qL - mu_phi) = 0
+PASS: E4 Yukawa: mu_eR - (mu_lL - mu_phi) = 0
+PASS: E3 + E4 reduce to 4 N_F mu_qL - 4 N_F mu_lL + (8 N_F + 4 N_H) mu_phi (= 0) (got -4*N_F*mu_lL + 8*N_F*mu_phi + 4*N_F*mu_qL + 4*N_H*mu_phi)
+PASS: E1 + E6 flavor-symmetric: mu_lL = -3 mu_qL
+PASS: B5 solve: mu_qL = -(2 N_F + N_H)/(4 N_F) mu_phi (got -mu_phi*(2*N_F + N_H)/(4*N_F))
+PASS: B6a: n_B/(T^2/6) = 4 N_F mu_qL (got 4*N_F*mu_qL)
+PASS: B6b: n_B/(T^2/6) = -(2 N_F + N_H) mu_phi (got -mu_phi*(2*N_F + N_H))
+PASS: B7a: n_L/(T^2/6) = N_F (-9 mu_qL - mu_phi) after E1+E4 (got N_F*(-mu_phi - 9*mu_qL))
+PASS: B7b: n_L/(T^2/6) = (14 N_F + 9 N_H)/4 · mu_phi (got mu_phi*(14*N_F + 9*N_H)/4)
+PASS: B7c: (n_B - n_L)/(T^2/6) = -(22 N_F + 13 N_H)/4 · mu_phi (got mu_phi*(-22*N_F - 13*N_H)/4)
+PASS: B8: C_sph = (8 N_F + 4 N_H) / (22 N_F + 13 N_H) (got 4*(2*N_F + N_H)/(22*N_F + 13*N_H))
+PASS: mu_phi cancels in the ratio (output independent of mu_phi) (free_symbols={N_F, N_H})
+
+== Part 2: evaluate at retained (N_F, N_H) = (3, 1) ==
+PASS: C_sph at (N_F, N_H) = (3, 1) = 28/79 (exact) (got 28/79)
+PASS: Fraction cross-check: (8·3+4)/(22·3+13) = 28/79 (got 28/79)
+PASS: Decimal 28/79 = 0.354430379746... within 1e-12 (got 0.35443037974683544)
+PASS: T^2/6 small-mu/T prefactor cancels in C_sph (ratio of B7c and B6b)
+
+== Part 3: admission packet independence ==
+PASS: source boundary marker present: or any of its rate
+PASS: source boundary marker present: derivation of the temperature window
+PASS: source boundary marker present: *equilibrium* relations among chemical potentials are used
+PASS: source boundary marker present: No PDG observed values consumed
+PASS: source boundary marker present: No literature numerical comparators consumed beyond
+PASS: source boundary marker present: No fitted selectors consumed
+PASS: source boundary marker present: No same-surface family arguments
+PASS: source boundary marker present: does not cite the Wilson plaquette action
+PASS: source boundary marker present: Carlo measurement
+
+== Result ==
+C_sph(N_F=3, N_H=1) = 28/79 = 0.35443037974683544
+Bounded admission-bridge: retained N_F = 3 + retained one-generation hypercharge spectrum + supplied EWPT-equilibrium premise packet E1-E6.
+No new repo-wide axiom and no claim to derive E1-E6.
+
+TOTAL: PASS=40 FAIL=0
+VERDICT: bounded admission-bridge passes; C_sph = 28/79 follows from retained N_F = 3 + retained one-generation hypercharge spectrum + supplied EWPT-equilibrium premise packet E1-E6 by rational arithmetic.
+
+----- stderr -----
+

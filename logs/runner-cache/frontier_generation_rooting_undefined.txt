@@ -1,21 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_generation_rooting_undefined.py
-runner_sha256: 43e61111df26adc067382780b8bb7d46e9c0feb3ddd4039955412488d868b4ee
+runner_sha256: f37f6e6a3b46d56071e1400ada129e6fb943a51994eda714310f0c3176d08cd2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ==============================================================================
-FRONTIER: ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3
+FRONTIER: COORDINATE ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3
 ==============================================================================
 
-Verifies that the fourth-root trick (or any Hamiltonian analogue)
-is NOT a well-defined operation in Cl(3) on Z^3.
+Verifies that coordinate BZ-corner deletion is NOT a well-defined
+algebra-preserving operation in Hamiltonian Cl(3) on Z^3.
 
 
 ==============================================================================
-CHECK 1: Cl(3) irreducibility -- no proper subspace carries Cl(3)
+CHECK 1: coordinate Cl(3) projection failure
 ==============================================================================
 
   --- Full C^8: Cl(3) verification ---
@@ -36,7 +36,7 @@ CHECK 1: Cl(3) irreducibility -- no proper subspace carries Cl(3)
   --- Exhaustive search: all 246 proper subsets of C^8 ---
   [PASS] [EXACT] exhaustive_no_cl3_subspace: tested 246 proper subsets: NONE preserve Cl(3)
 
-  --- Random unitary rotations: 4D subspaces ---
+  --- Support-only random unitary rotations: 4D subspaces ---
   [PASS] [EXACT] random_unitary_4d_no_cl3: tested 200 random 4D subspaces: NONE preserve Cl(3)
 
 ==============================================================================
@@ -96,28 +96,27 @@ CHECK 3: Spectral mismatch -- projection changes the physics
   [PASS] [EXACT] L=6_degeneracy_broken: unique eigenvalues: full=7, proj=2
 
 ==============================================================================
-SYNTHESIS: ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3
+SYNTHESIS: COORDINATE ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3
 ==============================================================================
 
-  THEOREM (Rooting Undefined):
+  THEOREM (Coordinate Rooting Undefined):
     Let the theory be defined by:
-      (A1) Cl(3) algebra: {Gamma_i, Gamma_j} = 2 delta_{ij} on C^8
-      (A2) Z^3 lattice with staggered Hamiltonian
-      (A3) Hilbert space = tensor product over sites
-      (A4) Unitary evolution: U(t) = exp(-iHt)
+      - Hamiltonian Cl(3) algebra: {Gamma_i, Gamma_j} = 2 delta_{ij} on C^8
+      - Z^3 staggered Hamiltonian corner/taste carrier
 
-    Then there exists NO projector P on the taste space satisfying ALL of:
+    Then there exists NO nontrivial proper coordinate BZ-corner projector P
+    satisfying ALL of:
       (R1) P projects to a PROPER subspace of C^8 (removes some taste doublers)
       (R2) P preserves the taste permutation symmetry (Z_2)^3
       (R3) The projected gammas P Gamma_i P generate Cl(3) on im(P)
 
     PROOF:
       Obstruction 1 (R1 vs R3):
-        Cl(3) on C^8 admits no proper Cl(3)-invariant subspace.
-        Verified exhaustively: all 246 proper subsets of C^8 (dim 2..7)
+        Coordinate compression by BZ-corner subsets does not preserve Cl(3).
+        Verified exhaustively: all 246 coordinate subsets of C^8 (dim 2..7)
         violate at least one anticommutation relation.
-        Additionally, 200 random 4D subspaces (unitary rotations) also fail.
-        This is a REPRESENTATION-THEORETIC fact, not a computational artifact.
+        Additionally, 200 random 4D subspaces (unitary rotations) fail as a
+        support-only probe; this is not an exhaustive arbitrary-subspace claim.
 
       Obstruction 2 (R1 vs R2):
         The taste symmetry group (Z_2)^3 acts TRANSITIVELY on the 8 corners.
@@ -132,22 +131,21 @@ SYNTHESIS: ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3
     Each obstruction is independently fatal.
 
   CONSEQUENCE (ROOTING OBSTRUCTION -- does NOT close generation physicality):
-    The 8 taste states are PERMANENT features of the Hamiltonian formulation
-    on Z^3.  They cannot be removed by any operation consistent with axioms
-    (A1)-(A4).  This is a rooting obstruction:
+    The 8 taste states cannot be removed by coordinate BZ-corner deletion while
+    preserving the Hamiltonian Cl(3) / Z^3 carrier.  This is a coordinate
+    rooting obstruction:
       - The Z_3 orbit structure 8 = 1 + 1 + 3 + 3 cannot be reduced.
       - The triplet orbits cannot be projected away.
       - Whether these orbits correspond to physical SM generations
         remains an open interpretive question (generation physicality
         is still BOUNDED, not closed).
 
-  RESPONSE TO "USE A PATH INTEGRAL INSTEAD":
-    The framework is defined by (A1)-(A4).  A path integral formulation
-    with det(D)^{1/4} would be a DIFFERENT theory.  The question is whether
-    THIS theory can be rooted.  It cannot.
+  NON-CLAIM:
+    This runner does not adjudicate a path-integral formulation, an arbitrary
+    non-coordinate invariant subspace, or physical species semantics.
 
-  STATUS: This is an EXACT obstruction.  All checks are first-principles
-  consequences of the axioms with no additional input.
+  STATUS: This is an EXACT coordinate-projector obstruction.  The random
+  non-coordinate probes are support-only diagnostics.
 
 
 ==============================================================================
@@ -193,7 +191,7 @@ RESULTS SUMMARY
 
 PASS=37  FAIL=0
 
-All checks passed. Rooting is verified to be undefined.
+All checks passed. Coordinate rooting is verified to be undefined.
 
 ----- stderr -----
 

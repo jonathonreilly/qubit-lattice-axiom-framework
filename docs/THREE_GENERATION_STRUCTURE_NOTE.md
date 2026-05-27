@@ -26,13 +26,12 @@ two residuals:
    source author treats it as a bounded-theorem admitted-context input
    rather than as a defect to be repaired here.
 2. *no-rooting / `M_3(C)` sub-claims need retained-grade authority packets.*
-   Standalone narrow-theorem packets carving the M3(C) sub-claim out are
-   now cited inline below
+   Standalone narrow-theorem packets carving the M3(C) sub-claim and the
+   no-rooting sub-claim out are now cited inline below
    ([`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
-   for the algebra-generation half; the rooting-undefined runner
-   `frontier_generation_rooting_undefined.py` covers the no-rooting half
-   via three independent EXACT obstructions but no standalone narrow-
-   theorem packet currently exists for it). Each cited packet is recorded
+   for the algebra-generation half and
+   [`THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md`](THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md)
+   for the Hamiltonian no-rooting no-go). Each cited packet is recorded
    below with its current ledger status so an auditor can route to it
    directly.
 
@@ -72,21 +71,20 @@ are runner-verified by `frontier_generation_fermi_point.py`,
    irreducibility on `C^8` (exhaustive search over all 246 proper subsets,
    none of which carry a Cl(3) subalgebra), (b) BZ-corner projection
    breaking the staggered taste symmetry, and (c) spectral mismatch
-   between projected and unprojected systems. *Standalone retained-grade
-   packet for the no-rooting sub-claim:* a dedicated narrow-theorem note
-   carving the rooting result out of this row does not currently exist;
-   the runner-level result is the load-bearing authority for the no-
-   rooting in-scope item until such a packet is written.
+   between projected and unprojected systems. *Standalone audit-pending
+   packet for the no-rooting sub-claim:*
+   [`THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md`](THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md)
+   carves this no-go out as a separate source packet with the same runner.
 3. `frontier_three_generation_observable_theorem.py` proves that the
    `hw=1` triplet already carries the full exact generation algebra
    `M_3(C)`, so no proper exact quotient exists even before flavor.
    *Standalone retained-grade packet for the M3(C) sub-claim:*
    [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
    carves the algebra-generation half of the observable theorem out as a
-   standalone bounded_theorem candidate (current ledger status:
-   `unaudited`). When that narrow packet is independently audited, the
-   M3(C) sub-claim of this row gains a retained-grade route distinct from
-   the broader observable-theorem row.
+   standalone bounded_theorem packet (current ledger status on main:
+   `audited_clean` / `retained_bounded`). The M3(C) sub-claim of this row
+   therefore has a retained-grade route distinct from the broader
+   observable-theorem row.
 4. `frontier_physical_lattice_necessity.py` now closes the narrower but
    important semantics step that exact observable separation + no proper exact
    quotient + accepted Hilbert semantics already force the `hw=1`
@@ -158,6 +156,8 @@ For the exact generation algebra theorem, see
 `three_generation_observable_theorem_note`
 (cross-reference, not a load-bearing upstream dep — this note's claim is
 established inline; the standalone packaging exists for reuse).
+For the no-rooting obstruction as a standalone audit packet, see
+`THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md`.
 For the exact no-same-stack / no-same-surface regulator reinterpretation
 closure, see `physical_lattice_necessity_note` (cross-reference).
 

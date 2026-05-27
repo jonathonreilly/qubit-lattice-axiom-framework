@@ -1,6 +1,7 @@
 # Planck Target 3 Conditional Clifford Carrier Algebra
 
-**Date:** 2026-04-25 (2026-05-25 conditional carrier rescope)
+**Date:** 2026-04-25 (2026-05-25 conditional carrier rescope;
+2026-05-26 Clifford-star CAR repair)
 **Claim type:** bounded_theorem
 **Claim scope (2026-05-25 conditional carrier rescope):** exact finite
 `Cl_4(C)` / two-CAR-mode carrier algebra on a supplied rank-four active
@@ -39,7 +40,8 @@ D(u)D(v) + D(v)D(u) = 2 <u,v> I_K.
 
 Because `dim(K)=4`, this is the irreducible complex `Cl_4(C)` module.
 Pairing the four Clifford generators into two oriented planes gives two
-complex CAR modes.
+complex CAR modes **inside the finite Clifford algebra**. The CAR modes are
+formed with creators defined by the Clifford `*`-involution. No ambient Hilbert-adjoint identification is part of the load-bearing claim.
 
 This row proves only the conditional finite carrier algebra. It does not
 derive the coframe response on `K`.
@@ -78,22 +80,38 @@ Gamma_t Gamma_n Gamma_1 Gamma_2
 span `M_4(C)`, and the commutant is only the scalar algebra. Thus the
 rank-four active block is the irreducible complex `Cl_4(C)` module.
 
-Now pair the axes by an oriented face choice:
+Now pair the axes by an oriented face choice and use the finite Clifford
+`*`-involution fixed by
+
+```text
+Gamma_a^* = Gamma_a,     i^* = -i,     (AB)^* = B^* A^*.
+```
+
+This is the algebraic involution of the supplied Clifford carrier, not an
+extra physical Hilbert-space adjoint premise.
+
+Define annihilators and Clifford-`*` creators by
 
 ```text
 c_N = (Gamma_t + i Gamma_n) / 2,
 c_T = (Gamma_1 + i Gamma_2) / 2.
+
+c_N^* = (Gamma_t - i Gamma_n) / 2,
+c_T^* = (Gamma_1 - i Gamma_2) / 2.
 ```
 
 The Clifford relations imply
 
 ```text
 {c_i, c_j} = 0,
-{c_i, c_j^dagger} = delta_ij I.
+{c_i, c_j^*} = delta_ij I.
 ```
 
 So the same four-dimensional active block is the Fock space of two
-complex CAR modes.
+complex CAR modes in the finite Clifford-`*` algebra. In the concrete
+Hermitian matrix representation used by the runner this `*` operation is
+represented by conjugate transpose, but that representation fact is a
+check of the finite algebra, not a separate physical adjoint bridge.
 
 The bivector `Gamma_t Gamma_n` squares to `-I`. Therefore its spin lift
 has the usual central phase behavior: a `2 pi` vector turn acts as `-I`
@@ -139,7 +157,8 @@ The auditable content is exactly:
 
 1. supplied metric-compatible coframe response implies `Cl_4(C)` relations;
 2. the four-dimensional module is irreducible;
-3. oriented Clifford pairs are two CAR modes;
+3. oriented Clifford pairs are two CAR modes with creators defined by the
+   Clifford `*`-involution;
 4. the spin lift carries the standard `2 pi -> -I`, `4 pi -> I` phase;
 5. if the primitive packet rank is `4` inside dimension `16`, then
    `c_cell=1/4`.

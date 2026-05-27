@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
 """
-Rooting Is Undefined in Hamiltonian Cl(3) on Z^3
-==================================================
+Coordinate Rooting Is Undefined in Hamiltonian Cl(3) on Z^3
+===========================================================
 
-THEOREM (Rooting Undefined):
+THEOREM (Coordinate Rooting Undefined):
   In the framework Cl(3) on Z^3 with Hamiltonian evolution, the operation
-  "remove specific taste doublers" (the Hamiltonian analogue of the fourth-root
-  trick) is not a well-defined operation: every projection that removes BZ-corner
-  states while preserving the Cl(3) algebra leads to a contradiction.
+  "remove specific BZ-corner taste states" is not a well-defined coordinate
+  deletion operation: every nontrivial proper coordinate projection that removes
+  BZ-corner states while preserving the Cl(3) algebra leads to a contradiction.
+  This runner does not prove a universal statement about arbitrary
+  non-coordinate invariant subspaces.
 
 THIS SCRIPT VERIFIES THREE INDEPENDENT OBSTRUCTIONS:
 
-  CHECK 1 (EXACT): Cl(3) irreducibility -- the Kawamoto-Smit gammas on C^8
-    form an IRREDUCIBLE representation.  Exhaustive search over all 246 proper
-    subsets of C^8 (size 2..7) confirms: NONE carry a Cl(3) subalgebra.
-    Therefore no taste-reducing projection preserves the defining algebra.
+  CHECK 1 (EXACT): coordinate Cl(3) projection failure.  Exhaustive search
+    over all 246 nontrivial proper coordinate subsets of C^8 (size 2..7)
+    confirms: NONE carry the compressed Cl(3) anticommutator algebra.
+    Therefore no BZ-corner coordinate-deletion projection preserves the
+    defining algebra.
 
   CHECK 2 (EXACT): BZ-corner projection breaks the staggered taste symmetry.
     The taste permutation operators (which map BZ corner s to corner s XOR e_mu)
@@ -29,8 +32,9 @@ CLASSIFICATION:
   Hamiltonian evolution) with no additional input, no fitting, no finite-size
   extrapolation.
 
-The theorem is unconditional: it does not say "we choose not to root."
-It says "rooting is not a well-defined operation in this formulation."
+Within the coordinate BZ-corner deletion scope, the theorem is unconditional:
+it does not say "we choose not to root."  It says the coordinate rooting
+operation is not algebra-preserving in this formulation.
 
 PStack experiment: frontier-generation-rooting-undefined
 Self-contained: numpy only.
@@ -210,33 +214,28 @@ def momentum_space_projector(L, keep_corners):
 
 
 # =============================================================================
-# CHECK 1: Cl(3) irreducibility -- no proper subspace carries the algebra
+# CHECK 1: coordinate Cl(3) projection failure
 # =============================================================================
 
 def check1_clifford_irreducibility():
     """
-    EXACT CHECK: The Kawamoto-Smit gammas on C^8 form an irreducible
-    representation of Cl(3).  This means:
+    EXACT CHECK: no nontrivial proper coordinate BZ-corner subset carries the
+    compressed Cl(3) anticommutator algebra.  This means:
 
     1. {Gamma_i, Gamma_j} = 2 delta_{ij} on C^8 (verification).
-    2. NO proper subspace of C^8 (of dimension 1..7) carries a Cl(3) algebra
-       under the projected gammas P Gamma_i P.
+    2. NO proper coordinate subset of C^8 (of dimension 2..7) carries a Cl(3)
+       algebra under the projected gammas P Gamma_i P.
 
-    This is the CENTRAL obstruction: rooting requires projecting to a subspace,
-    but the defining algebra of the framework does not survive projection.
-
-    Mathematical reason: The 8-dimensional representation is the regular
-    representation of Cl(3).  The Clifford algebra Cl(3) over R is isomorphic
-    to M_2(C) (2x2 complex matrices), which has a unique irreducible module
-    of dimension 2.  But the KS gammas act on the FULL 8-dimensional space
-    as the left-regular representation, and every proper subspace projection
-    breaks at least one anticommutation relation.
+    This is the central coordinate-rooting obstruction: BZ-corner deletion is
+    represented by coordinate projection, and the defining algebra does not
+    survive those coordinate compressions.
 
     We verify this EXHAUSTIVELY: test all C(8,k) subsets for k=2..7 (total
-    246 subsets).
+    246 subsets).  One-dimensional coordinate subsets are degenerate
+    non-candidates and are not counted in the generation-rooting search.
     """
     print("\n" + "=" * 78)
-    print("CHECK 1: Cl(3) irreducibility -- no proper subspace carries Cl(3)")
+    print("CHECK 1: coordinate Cl(3) projection failure")
     print("=" * 78)
 
     gammas = build_kawamoto_smit_gammas()
@@ -327,9 +326,10 @@ def check1_clifford_irreducibility():
            f"tested {total_tested} proper subsets: "
            f"{'NONE' if not any_valid else 'FOUND'} preserve Cl(3)")
 
-    # Also check: projecting with UNITARY rotation (not just coordinate subset)
-    # Try random unitary rotations of the taste space
-    print("\n  --- Random unitary rotations: 4D subspaces ---")
+    # Support-only probe: projecting with unitary rotations (not coordinate
+    # subsets).  This is not exhaustive and is not load-bearing for the
+    # coordinate-rooting theorem.
+    print("\n  --- Support-only random unitary rotations: 4D subspaces ---")
     np.random.seed(42)
     n_random = 200
     any_random_valid = False
@@ -638,29 +638,28 @@ def check3_spectral_mismatch():
 
 def synthesis():
     print("\n" + "=" * 78)
-    print("SYNTHESIS: ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3")
+    print("SYNTHESIS: COORDINATE ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3")
     print("=" * 78)
 
     print("""
-  THEOREM (Rooting Undefined):
+  THEOREM (Coordinate Rooting Undefined):
     Let the theory be defined by:
-      (A1) Cl(3) algebra: {Gamma_i, Gamma_j} = 2 delta_{ij} on C^8
-      (A2) Z^3 lattice with staggered Hamiltonian
-      (A3) Hilbert space = tensor product over sites
-      (A4) Unitary evolution: U(t) = exp(-iHt)
+      - Hamiltonian Cl(3) algebra: {Gamma_i, Gamma_j} = 2 delta_{ij} on C^8
+      - Z^3 staggered Hamiltonian corner/taste carrier
 
-    Then there exists NO projector P on the taste space satisfying ALL of:
+    Then there exists NO nontrivial proper coordinate BZ-corner projector P
+    satisfying ALL of:
       (R1) P projects to a PROPER subspace of C^8 (removes some taste doublers)
       (R2) P preserves the taste permutation symmetry (Z_2)^3
       (R3) The projected gammas P Gamma_i P generate Cl(3) on im(P)
 
     PROOF:
       Obstruction 1 (R1 vs R3):
-        Cl(3) on C^8 admits no proper Cl(3)-invariant subspace.
-        Verified exhaustively: all 246 proper subsets of C^8 (dim 2..7)
+        Coordinate compression by BZ-corner subsets does not preserve Cl(3).
+        Verified exhaustively: all 246 coordinate subsets of C^8 (dim 2..7)
         violate at least one anticommutation relation.
-        Additionally, 200 random 4D subspaces (unitary rotations) also fail.
-        This is a REPRESENTATION-THEORETIC fact, not a computational artifact.
+        Additionally, 200 random 4D subspaces (unitary rotations) fail as a
+        support-only probe; this is not an exhaustive arbitrary-subspace claim.
 
       Obstruction 2 (R1 vs R2):
         The taste symmetry group (Z_2)^3 acts TRANSITIVELY on the 8 corners.
@@ -675,22 +674,21 @@ def synthesis():
     Each obstruction is independently fatal.
 
   CONSEQUENCE (ROOTING OBSTRUCTION -- does NOT close generation physicality):
-    The 8 taste states are PERMANENT features of the Hamiltonian formulation
-    on Z^3.  They cannot be removed by any operation consistent with axioms
-    (A1)-(A4).  This is a rooting obstruction:
+    The 8 taste states cannot be removed by coordinate BZ-corner deletion while
+    preserving the Hamiltonian Cl(3) / Z^3 carrier.  This is a coordinate
+    rooting obstruction:
       - The Z_3 orbit structure 8 = 1 + 1 + 3 + 3 cannot be reduced.
       - The triplet orbits cannot be projected away.
       - Whether these orbits correspond to physical SM generations
         remains an open interpretive question (generation physicality
         is still BOUNDED, not closed).
 
-  RESPONSE TO "USE A PATH INTEGRAL INSTEAD":
-    The framework is defined by (A1)-(A4).  A path integral formulation
-    with det(D)^{1/4} would be a DIFFERENT theory.  The question is whether
-    THIS theory can be rooted.  It cannot.
+  NON-CLAIM:
+    This runner does not adjudicate a path-integral formulation, an arbitrary
+    non-coordinate invariant subspace, or physical species semantics.
 
-  STATUS: This is an EXACT obstruction.  All checks are first-principles
-  consequences of the axioms with no additional input.
+  STATUS: This is an EXACT coordinate-projector obstruction.  The random
+  non-coordinate probes are support-only diagnostics.
 """)
 
 
@@ -700,11 +698,11 @@ def synthesis():
 
 if __name__ == "__main__":
     print("=" * 78)
-    print("FRONTIER: ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3")
+    print("FRONTIER: COORDINATE ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3")
     print("=" * 78)
     print()
-    print("Verifies that the fourth-root trick (or any Hamiltonian analogue)")
-    print("is NOT a well-defined operation in Cl(3) on Z^3.")
+    print("Verifies that coordinate BZ-corner deletion is NOT a well-defined")
+    print("algebra-preserving operation in Hamiltonian Cl(3) on Z^3.")
     print()
 
     check1_clifford_irreducibility()
@@ -725,5 +723,5 @@ if __name__ == "__main__":
         print("\nWARNING: Some checks failed. Review output above.")
         sys.exit(1)
     else:
-        print("\nAll checks passed. Rooting is verified to be undefined.")
+        print("\nAll checks passed. Coordinate rooting is verified to be undefined.")
         sys.exit(0)

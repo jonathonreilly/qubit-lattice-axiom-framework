@@ -5329,7 +5329,7 @@
       "runner": "scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py"
     },
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16": {
-      "assert_count": 1,
+      "assert_count": 2,
       "counts": {
         "A": 0,
         "B": 0,
@@ -35236,7 +35236,7 @@
       "exists": true
     },
     "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py": {
-      "assert_count": 1,
+      "assert_count": 2,
       "claims": [
         "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16"
       ],

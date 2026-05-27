@@ -25,6 +25,15 @@ CLAIM_ID = "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
 RUNNER_PATH = "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
 NOTE_PATH = ROOT / "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md"
 
+# Pure linear-algebra helpers used as the raw Hermitian-pair interface for
+# every dm_leptogenesis_pmns_* downstream runner. These are reinstated by the
+# 2026-05-27 runner repair for the dm_leptogenesis_pmns_transport candidate row:
+# the prior raw-interface rewrite stripped these helpers and broke ImportError
+# in 10+ downstream scripts (all importing `canonical_h` from this module).
+# The helpers below match the pre-strip definitions verbatim and import no
+# transport machinery, preserving the raw-interface narrowing intent.
+CYCLE = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=complex)
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -43,6 +52,31 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
+def canonical_y(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
+    """Canonical Y_lepton construction from (x, y, delta) coordinates."""
+    phase_block = np.diag(
+        np.array([y[0], y[1], y[2] * np.exp(1j * delta)], dtype=complex)
+    )
+    return np.diag(np.asarray(x, dtype=complex)) + phase_block @ CYCLE
+
+
+def canonical_h(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
+    """Canonical Hermitian pair H = Y Y^dagger from (x, y, delta) coordinates."""
+    ymat = canonical_y(x, y, delta)
+    return ymat @ ymat.conj().T
+
+
+def monomial_y(masses: np.ndarray) -> np.ndarray:
+    """Monomial Y from a diagonal mass vector."""
+    return np.diag(np.asarray(masses, dtype=complex)) @ CYCLE
+
+
+def monomial_h(masses: np.ndarray) -> np.ndarray:
+    """Monomial Hermitian H = Y Y^dagger from a diagonal mass vector."""
+    ymat = monomial_y(masses)
+    return ymat @ ymat.conj().T
+
+
 def canonical_left_diagonalizer(h: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     evals, u = np.linalg.eigh(h)
     order = np.argsort(np.real(evals))
@@ -56,6 +90,21 @@ def projector_packet(h_nu: np.ndarray, h_e: np.ndarray) -> tuple[np.ndarray, np.
     _eval_e, u_e = canonical_left_diagonalizer(h_e)
     u_pair = u_e.conj().T @ u_nu
     return u_pair, np.abs(u_pair) ** 2
+
+
+def pmns_projector_packet(h_nu: np.ndarray, h_e: np.ndarray) -> np.ndarray:
+    """Column-normalized PMNS projector packet |U_PMNS|^2 from a Hermitian pair.
+
+    Returns the doubly-stochastic |U|^2 matrix (after column-stochastic
+    normalization). Distinct from `projector_packet` above, which returns the
+    raw (u_pair, |u_pair|^2) tuple without normalization; the two helpers are
+    kept side by side because downstream runners import either name.
+    """
+    _eval_nu, u_nu = canonical_left_diagonalizer(h_nu)
+    _eval_e, u_e = canonical_left_diagonalizer(h_e)
+    u_pmns = u_e.conj().T @ u_nu
+    packet = np.abs(u_pmns) ** 2
+    return packet / np.sum(packet, axis=0, keepdims=True)
 
 
 def deterministic_pairs() -> list[tuple[str, np.ndarray, np.ndarray]]:

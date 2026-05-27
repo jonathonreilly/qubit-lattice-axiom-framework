@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
-runner_sha256: 6c3999e9bd3fe580bdb35aaab848411ade2741e1f8b283b3f14d9a907d8c2500
+runner_sha256: 12db9415d3223c30be1022e8a55f207a327717b4e0b1699095459cfabae5d05a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ========================================================================================

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_primitive_p_lh_ncg_native_2026_05_10_pPlh_ncg_native.py
-runner_sha256: 1d63eb16736a8e713cb872e6f64598ac153c253b469d20626ef3847ed22570f1
+runner_sha256: 6b3cb9d8786415bc63686e8028c81989054962cb7bfd77126f364866718b0744
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -25,12 +25,12 @@ SECTION 0: Context — physical Cl(3)/Z^3 ingredients carried into this probe
   [PASS (ctx)] ω = γ_1γ_2γ_3 = -i I on ρ_- summand -- U2: negative-chirality scalar action; ρ_± non-isomorphic
 
 ============================================================================
-SECTION 1: KO-dim signature reading — Cl⁺(3) ≅ Cl(0,2), signature 6 mod 8
+SECTION 1: KO-dim signature reading — direct Cl⁺(3) ≅ H computation
 ============================================================================
   [PASS (signature)] Cl(3,0) signature = 3 mod 8 (Cartan classification) -- Morita class: M_2(C) (real-dim 8 = 2³)
   [PASS (signature)] Cl(0,3) signature = 5 mod 8 (Cartan classification) -- Morita class: H ⊕ H (split-biquaternions)
   [PASS (signature)] Cl(0,2) signature = 6 mod 8 (Cartan classification) -- Morita class: H (quaternions)
-  [PASS (signature)] Cl⁺(3,0) ≅ Cl(0,2) ≅ ℍ (standard textbook result) -- even subalgebra of Cl(3,0) is at signature 6 mod 8
+  [PASS (signature)] Cl⁺(3,0) ≅ ℍ by direct bivector multiplication -- one scalar plus three bivectors with quaternion product table
   [PASS (signature)] KO-dim of Cl⁺(3) = 6 mod 8 (signature of Cl(0,2)) -- the even sub-algebra inherits KO-dim 6 from its Cartan class
   [PASS (signature)] Cl⁺(3) as real algebra has dim 4 (one scalar + three bivectors) -- linear-independence over R: rank 4/4
 

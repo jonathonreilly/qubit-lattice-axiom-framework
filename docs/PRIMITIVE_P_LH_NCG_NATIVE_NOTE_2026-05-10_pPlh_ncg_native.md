@@ -85,9 +85,13 @@ primitive itself emerges**, not merely that it is consistent.
 
 ### 2.1 Signature reading on Cl⁺(3) ≅ Cl(0,2)
 
-**Step 1.** From `CL3_SM_EMBEDDING_THEOREM.md`, the even subalgebra
-`Cl⁺(3) ≅ ℍ` (quaternions). Standard Cartan classification of real
-Clifford algebras over reals gives:
+**Step 1.** The runner applies the Clifford multiplication directly on the
+framework Pauli model. The even subalgebra is spanned over `R` by
+`{I, γ_1γ_2, γ_1γ_3, γ_2γ_3}`; those three bivectors square to `-I` and
+obey the quaternion product table. Hence the framework-side calculation gives
+`Cl⁺(3) ≅ ℍ` without importing a classification table.
+
+In the usual Cartan notation this is the same class as `Cl(0,2)`:
 
 ```text
    Cl(p,q) Morita class:   (p − q) mod 8
@@ -96,11 +100,10 @@ Clifford algebras over reals gives:
    Cl(3,0)⁺ ≅  Cl(0,2)  ≅  ℍ           signature  6 (inherited)
 ```
 
-Reference: Wikipedia, *Classification of Clifford algebras*,
-verified against Lawson-Michelsohn *Spin Geometry* table. The even
-subalgebra of Cl(p,q) is isomorphic to Cl(p, q−1) or Cl(q, p−1),
-depending on orientation; for Cl(3,0)⁺ the standard identification is
-Cl(0,2).
+Lawson-Michelsohn, *Spin Geometry*, Ch. I is cited only as a parallel
+textbook reference for the same Clifford classification. The load-bearing
+packet here is the explicit framework bivector multiplication plus the
+runner's KO-sign check.
 
 **Step 2.** The KO-dimension of a *real spectral triple* (A, H, D, γ, J)
 is the value n ∈ ℤ/8 such that the signs (ε, ε', ε'') in
@@ -513,7 +516,8 @@ contextual_imports_not_approved:
   - Connes canonical KO-dim sign table (Connes 1995; reproduced in
     Connes-Marcolli NCG QFM Ch. 1; Suijlekom NCG Particle Physics Ch. 4)
   - Standard real-Clifford-algebra Cartan classification
-    (Lawson-Michelsohn Spin Geometry Ch. I)
+    (direct framework bivector computation; Lawson-Michelsohn Spin Geometry
+    Ch. I cited in parallel)
   - Chamseddine-Connes-Suijlekom 2013 (arXiv:1304.8050) as the
     authoritative reading of order-one's role as SM-vs-PS discriminator
 literature_references:
@@ -526,6 +530,9 @@ literature_references:
   - Boyle L., Farnsworth S., "A new algebraic structure in the
     standard model of particle physics," JHEP 06 (2018) 071
   - Lawson H.B. Jr., Michelsohn M.L., Spin Geometry, Princeton 1989, Ch. I
-  - Wikipedia, "Classification of Clifford algebras," verified against above
+    (parallel reference for the Clifford classification; not imported as the
+    load-bearing proof)
+  - Wikipedia, "Classification of Clifford algebras" (non-authority
+    convenience pointer only)
 verification_runner: scripts/cl3_primitive_p_lh_ncg_native_2026_05_10_pPlh_ncg_native.py
 ```

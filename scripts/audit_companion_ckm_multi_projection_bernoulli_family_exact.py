@@ -43,7 +43,7 @@ exact-symbolic verification:
 Companion role: Pattern B audit-acceleration only. Not a new claim row,
 not a new source note, no status promotion. The cited atlas-side inputs
 (A^2 = N_pair/N_color, rho = 1/N_quark, eta^2 = (N_quark - 1)/N_quark^2)
-are imported from upstream authority notes and are not re-derived here.
+are cited from upstream CKM notes and are not re-derived here.
 """
 
 from __future__ import annotations

@@ -34,4 +34,4 @@ authority path.
 
 ## Upstream authority
 
-- [SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) — named non-derivation import wrapper for the Standard-Model relativistic degrees-of-freedom count `g_* = 28 + (7/8) * 90 = 106.75` used in output (1) and propagated through output (2).
+- [SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) — finite declared-inventory arithmetic certificate for the Standard-Model relativistic degrees-of-freedom count `g_* = 28 + (7/8) * 90 = 106.75` used in output (1) and propagated through output (2).

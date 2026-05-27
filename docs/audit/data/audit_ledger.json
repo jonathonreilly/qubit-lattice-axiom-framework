@@ -31140,13 +31140,13 @@
         "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25"
       ],
-      "direct_in_degree": 16,
+      "direct_in_degree": 15,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.883,
+      "load_bearing_score": 13.333,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -31246,7 +31246,7 @@
       },
       "runner_path": "scripts/frontier_ckm_bernoulli_two_ninths_koide_bridge.py",
       "title": "Bernoulli-Variance 2/9 Identities in CKM: Support for the Cross-Sector Koide Bridge",
-      "transitive_descendants": 58,
+      "transitive_descendants": 56,
       "verdict_rationale": null
     },
     "ckm_brocard_polynomial_vieta_structural_integers_theorem_note_2026-04-25": {
@@ -34052,10 +34052,10 @@
       "claim_id": "ckm_multi_projection_bernoulli_family_theorem_note_2026-04-25",
       "claim_scope": null,
       "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -34063,9 +34063,7 @@
         "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
         "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
-        "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25",
-        "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25",
-        "ckm_n9_structural_family_koide_bridge_support_note_2026-04-25"
+        "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25"
       ],
       "direct_in_degree": 11,
       "effective_status": "unaudited",
@@ -34078,7 +34076,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "ca742d5a3655f71862e9125b4fd34f4017a67b6a215843710e47c8cb7244c22a",
+      "note_hash": "10ca96ed5ef0eb72a6e7ebe0ac6e2fe43376962d2b971ab9b626139d0b653453",
       "note_path": "docs/CKM_MULTI_PROJECTION_BERNOULLI_FAMILY_THEOREM_NOTE_2026-04-25.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -34209,13 +34207,13 @@
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
         "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25"
       ],
-      "direct_in_degree": 16,
+      "direct_in_degree": 15,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.858,
+      "load_bearing_score": 13.307,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -34369,7 +34367,7 @@
       },
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "title": "Complete n/N_color^2 Structural Family from CKM Retained Inputs: Koide-Bridge Support",
-      "transitive_descendants": 57,
+      "transitive_descendants": 55,
       "verdict_rationale": null
     },
     "ckm_neutron_edm_bound_note": {
@@ -56199,42 +56197,24 @@
       "verdict_rationale": "The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure."
     },
     "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16": {
-      "audit_date": "2026-05-27T02:25:40.313825+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation."
-        },
-        "dep_claim_type": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded"
-        },
-        "deps": [
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
-        ],
-        "load_bearing_score": 6.585,
-        "runner_hash": "36136c7d46fe9eed27c62ab5427c38252e61f9ff952f3187d5f479f22686e4df",
-        "transitive_descendants": 47
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner computes the endpoint distinctness and non-overlap checks from helper-supplied alpha endpoints, eta/omega conversion, and certified thermal-bound machinery. The only direct retained dependency supplies the continuum thermal integral form, not the full helper provenance for canonical plaquette constants, endpoint construction, eta/omega conversion, or the certified endpoint ratio intervals.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-      "claim_scope": "Bounded packet-scope arithmetic showing two stipulated same-surface DM endpoint couplings are distinct and map through the helper-supplied certified thermal bounds to non-overlapping R(alpha) and Omega_DM intervals; excludes a metatheoretical no-selector theorem and excludes selector closure.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-27T02:25:40.313825+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -56242,31 +56222,25 @@
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 6.585,
-      "load_bearing_step": "The two same-surface endpoint observables alpha_lo and alpha_hi are distinct, both lie above alpha_bare, and their certified same-surface DM ratio intervals do not overlap.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "31c938c732fcbd286deb12cb7e0e689da4d88c0b9aa7c68f7f758e4d539eb21d",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge - Add direct retained authorities for the canonical plaquette endpoint constants, eta/omega conversion, certified thermal-bound helper, and any current-bank selector completeness theorem; then re-audit the endpoint non-overlap claim.",
-      "open_dependency_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
-        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
-        "scripts/dm_leptogenesis_exact_common.py",
-        "selector completeness / obstruction theorem for the current DM bank"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -56375,6 +56349,63 @@
             "total_pass": 7
           },
           "verdict_rationale": "The numeric distinctness checks are conditional on imported constants and imported certified-bound functions whose implementations and authority chain are not included. The decisive no-selector step is not derived from Cl(3) on Z^3 or from cited retained inputs; it is asserted as an absence/completeness statement. Because the restricted packet has no cited authorities and no bank-completeness theorem, the current-bank no-go does not close as theorem-grade from the supplied materials."
+        },
+        {
+          "archived_at": "2026-05-27T11:23:18.554534+00:00",
+          "audit_date": "2026-05-27T02:25:40.313825+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation."
+            },
+            "dep_claim_type": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded"
+            },
+            "deps": [
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
+            ],
+            "load_bearing_score": 6.585,
+            "runner_hash": "36136c7d46fe9eed27c62ab5427c38252e61f9ff952f3187d5f479f22686e4df",
+            "transitive_descendants": 47
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner computes the endpoint distinctness and non-overlap checks from helper-supplied alpha endpoints, eta/omega conversion, and certified thermal-bound machinery. The only direct retained dependency supplies the continuum thermal integral form, not the full helper provenance for canonical plaquette constants, endpoint construction, eta/omega conversion, or the certified endpoint ratio intervals.",
+          "claim_scope": "Bounded packet-scope arithmetic showing two stipulated same-surface DM endpoint couplings are distinct and map through the helper-supplied certified thermal bounds to non-overlapping R(alpha) and Omega_DM intervals; excludes a metatheoretical no-selector theorem and excludes selector closure.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T02:25:40.313825+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16:retained_bounded->unaudited",
+          "load_bearing_step": "The two same-surface endpoint observables alpha_lo and alpha_hi are distinct, both lie above alpha_bare, and their certified same-surface DM ratio intervals do not overlap.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "missing_dependency_edge - Add direct retained authorities for the canonical plaquette endpoint constants, eta/omega conversion, certified thermal-bound helper, and any current-bank selector completeness theorem; then re-audit the endpoint non-overlap claim.",
+          "open_dependency_paths": [
+            "scripts/canonical_plaquette_surface.py",
+            "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+            "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+            "scripts/dm_leptogenesis_exact_common.py",
+            "selector completeness / obstruction theorem for the current DM bank"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 8,
+            "D": 0,
+            "assert_count": 1,
+            "total_pass": 8
+          },
+          "verdict_rationale": "Issue: The arithmetic distinctness/non-overlap checks close only over helper-supplied endpoint and thermal-bound inputs that are not closed by the row's direct retained dependency. Why this blocks: the source's cited thermal integral authority does not by itself supply CANONICAL_ALPHA_LM, the plaquette-supported short-distance endpoint, ETA_OBS/omega_b conversion, or the certified same-surface ratio-bound implementation used for the quoted intervals; the packet-scope no-selector declaration is also not a theorem-grade selector obstruction. Repair target: wire and retain direct authorities for the endpoint constants, eta/omega conversion, certified thermal bounds, and any packet-completeness/selector-obstruction claim, or narrow the row to pure arithmetic over explicitly stipulated helper outputs. Claim boundary until fixed: the runner supports conditional arithmetic that two stipulated same-surface endpoints give disjoint certified intervals; it does not establish theorem-grade selector absence or selector closure."
         }
       ],
       "prose_corrections": [],
@@ -56382,15 +56413,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 8,
+        "C": 0,
         "D": 0,
-        "assert_count": 1,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
       "title": "DM Full Closure Same-Surface Numerator Selector Boundary",
       "transitive_descendants": 47,
-      "verdict_rationale": "Issue: The arithmetic distinctness/non-overlap checks close only over helper-supplied endpoint and thermal-bound inputs that are not closed by the row's direct retained dependency. Why this blocks: the source's cited thermal integral authority does not by itself supply CANONICAL_ALPHA_LM, the plaquette-supported short-distance endpoint, ETA_OBS/omega_b conversion, or the certified same-surface ratio-bound implementation used for the quoted intervals; the packet-scope no-selector declaration is also not a theorem-grade selector obstruction. Repair target: wire and retain direct authorities for the endpoint constants, eta/omega conversion, certified thermal bounds, and any packet-completeness/selector-obstruction claim, or narrow the row to pure arithmetic over explicitly stipulated helper outputs. Claim boundary until fixed: the runner supports conditional arithmetic that two stipulated same-surface endpoints give disjoint certified intervals; it does not establish theorem-grade selector absence or selector closure."
+      "verdict_rationale": null
     },
     "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17": {
       "audit_date": null,
@@ -56561,42 +56591,24 @@
       "verdict_rationale": null
     },
     "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": {
-      "audit_date": "2026-05-27T01:49:53.615990+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
-        },
-        "dep_claim_type": {
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
-        },
-        "deps": [
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
-        ],
-        "load_bearing_score": 8.728,
-        "runner_hash": "825b7ea0959379d317e1f52b1a4d9b0bf079cef805a6eca8e447bb1c99b5ae9b",
-        "transitive_descendants": 52
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-beauvoir-2nd",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited dependency is retained_bounded for exactly the normalization algebra, benchmark slice, and Sommerfeld argument convention consumed here. The source note and runner explicitly leave current-bank DM selector closure open, so the auditable bounded claim is only the continuum integral/moment reduction, which follows from the dependency by algebra.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-      "claim_scope": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-27T01:49:53.615990+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -56604,19 +56616,19 @@
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 6,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 8.728,
-      "load_bearing_step": "On the retained freeze-out slice x_f = 25, the same-surface thermal Sommerfeld average has the exact normalized continuum form <S> = (2/sqrt(pi)) integral_0^infinity S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^-t dt, with <1/v> = 5/sqrt(pi) and <1/v^2> = 25/2.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "f79c2bc90ba5c2b276183ba657e571ec590da2fc92604b4480b17e572a8628bd",
+      "note_hash": "c717de9cb7ff6bdd99cdda05ede637f32c523d99b0dc84372ce7ea7f00a258e9",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "Re-check downstream uses do not cite the title as full DM selector closure; the audited clean scope is the narrow thermal integral representation only.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -56721,63 +56733,91 @@
             "total_pass": 5
           },
           "verdict_rationale": "The displayed integral representation is a standard algebraic normalization/change-of-variables result, not a first-principles computation from Cl(3) on Z^3. The runner mostly recomputes closed-form constants from hard-coded X_F = 25 and checks identities against the same formulas, with one consequence check set to True. The bounded conclusion is honest about the DM selector still being open, but the thermal average convention and retained freeze-out slice are unproved premises in this restricted packet."
+        },
+        {
+          "archived_at": "2026-05-27T11:23:09.968902+00:00",
+          "archived_for_note_hash": "f79c2bc90ba5c2b276183ba657e571ec590da2fc92604b4480b17e572a8628bd",
+          "audit_date": "2026-05-27T01:49:53.615990+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
+            },
+            "dep_claim_type": {
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+            },
+            "deps": [
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+            ],
+            "load_bearing_score": 8.728,
+            "runner_hash": "825b7ea0959379d317e1f52b1a4d9b0bf079cef805a6eca8e447bb1c99b5ae9b",
+            "transitive_descendants": 52
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-beauvoir-2nd",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited dependency is retained_bounded for exactly the normalization algebra, benchmark slice, and Sommerfeld argument convention consumed here. The source note and runner explicitly leave current-bank DM selector closure open, so the auditable bounded claim is only the continuum integral/moment reduction, which follows from the dependency by algebra.",
+          "claim_scope": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T01:49:53.615990+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "On the retained freeze-out slice x_f = 25, the same-surface thermal Sommerfeld average has the exact normalized continuum form <S> = (2/sqrt(pi)) integral_0^infinity S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^-t dt, with <1/v> = 5/sqrt(pi) and <1/v^2> = 25/2.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check downstream uses do not cite the title as full DM selector closure; the audited clean scope is the narrow thermal integral representation only.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 5
+          },
+          "verdict_rationale": "Clean only under the bounded scope: the note does not establish DM full selector closure, but it does not actually claim that in the body or runner. The load-bearing content is an algebraic restatement/application of the retained-bounded normalization packet at x_f=25, and the runner's five PASS lines check the declared formula, prefactor, two moments, and localization consequence without importing external comparator physics."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 5
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_integral_representation_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Integral Representation Theorem",
       "transitive_descendants": 52,
-      "verdict_rationale": "Clean only under the bounded scope: the note does not establish DM full selector closure, but it does not actually claim that in the body or runner. The load-bearing content is an algebraic restatement/application of the retained-bounded normalization packet at x_f=25, and the runner's five PASS lines check the declared formula, prefactor, two moments, and localization consequence without importing external comparator physics."
+      "verdict_rationale": null
     },
     "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": {
-      "audit_date": "2026-05-27T02:01:21.990743+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
-        },
-        "dep_claim_type": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
-        },
-        "deps": [
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
-        ],
-        "load_bearing_score": 7.144,
-        "runner_hash": "0e1040096d25d365bb71e6a9f8deb3e5fb757ceb64982a903253e72f8b7073f4",
-        "transitive_descendants": 49
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-socrates-2nd",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The h(y)>0 derivative argument closes locally as algebra, and the direct dependencies cover the thermal integral normalization and argument convention. The restricted packet does not directly establish that the physical same-surface DM ratio uses the stipulated f_att/f_rep forms or the 64:1 channel weights.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-      "claim_scope": "Conditional bounded algebraic monotonicity of the normalized same-surface thermal ratio at x_f=25 assuming the displayed attractive/repulsive Sommerfeld functions and 64:1 channel weights; excludes derivation of the Sommerfeld law, freeze-out value, and same-surface channel-weight assignment.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-27T02:01:21.990743+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -56786,19 +56826,19 @@
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.144,
-      "load_bearing_step": "On the same-surface DM channel weights, this yields the pointwise derivative bound 64 f_att'(8y) + f_rep'(y) > 63/2 and therefore the exact same-surface thermal DM ratio is strictly increasing in alpha.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "3dea6151f7e3d5499fcf2ac5ae29ecbc16dff25f928457470f16282cc850e261",
+      "note_hash": "a0a7e55e26dd390b5517bebc55b127a85caeb5ffc23093d90f907de1f233058d",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge - Add the direct same-surface 64:1 channel-weight authority and Sommerfeld attractive/repulsive function-form authority to the audit packet, then re-audit; no current-bank no-go consequence was audited here.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -56903,21 +56943,75 @@
             "total_pass": 5
           },
           "verdict_rationale": "The load-bearing step is an algebraic monotonicity argument, not a first-principles computation from Cl(3) on Z^3. Its conclusion depends on imported structure: the definitions of f_att and f_rep as the relevant thermal factors, the 64:1 same-surface channel weights, the positive integration measure, and the one-scalar alpha-family relation. Because those inputs are not closed inside the restricted packet and no cited retained authority is provided, the theorem is conditional rather than clean."
+        },
+        {
+          "archived_at": "2026-05-27T11:23:10.084475+00:00",
+          "archived_for_note_hash": "3dea6151f7e3d5499fcf2ac5ae29ecbc16dff25f928457470f16282cc850e261",
+          "audit_date": "2026-05-27T02:01:21.990743+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
+            },
+            "dep_claim_type": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+            },
+            "deps": [
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+            ],
+            "load_bearing_score": 7.144,
+            "runner_hash": "0e1040096d25d365bb71e6a9f8deb3e5fb757ceb64982a903253e72f8b7073f4",
+            "transitive_descendants": 49
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-socrates-2nd",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The h(y)>0 derivative argument closes locally as algebra, and the direct dependencies cover the thermal integral normalization and argument convention. The restricted packet does not directly establish that the physical same-surface DM ratio uses the stipulated f_att/f_rep forms or the 64:1 channel weights.",
+          "claim_scope": "Conditional bounded algebraic monotonicity of the normalized same-surface thermal ratio at x_f=25 assuming the displayed attractive/repulsive Sommerfeld functions and 64:1 channel weights; excludes derivation of the Sommerfeld law, freeze-out value, and same-surface channel-weight assignment.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T02:01:21.990743+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "On the same-surface DM channel weights, this yields the pointwise derivative bound 64 f_att'(8y) + f_rep'(y) > 63/2 and therefore the exact same-surface thermal DM ratio is strictly increasing in alpha.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_dependency_edge - Add the direct same-surface 64:1 channel-weight authority and Sommerfeld attractive/repulsive function-form authority to the audit packet, then re-audit; no current-bank no-go consequence was audited here.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 5
+          },
+          "verdict_rationale": "Issue: the algebraic monotonicity proof is valid for the displayed functions and 64:1 weights, but those inputs are not established by the one-hop retained dependencies. Why this blocks: the source concludes monotonicity of the exact same-surface thermal DM ratio, so the Sommerfeld function form and same-surface channel-weight assignment are load-bearing bridges. Repair target: add direct retained dependencies for the 64:1 same-surface channel-weight theorem and the attractive/repulsive Sommerfeld function-form authority, or narrow the note to an explicitly stipulated algebraic lemma. Claim boundary until fixed: clean monotonicity and at-most-one-root consequences hold only within admitted one-scalar families that assume those functions and weights."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 5
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Monotonicity Theorem",
       "transitive_descendants": 49,
-      "verdict_rationale": "Issue: the algebraic monotonicity proof is valid for the displayed functions and 64:1 weights, but those inputs are not established by the one-hop retained dependencies. Why this blocks: the source concludes monotonicity of the exact same-surface thermal DM ratio, so the Sommerfeld function form and same-surface channel-weight assignment are load-bearing bridges. Repair target: add direct retained dependencies for the 64:1 same-surface channel-weight theorem and the attractive/repulsive Sommerfeld function-form authority, or narrow the note to an explicitly stipulated algebraic lemma. Claim boundary until fixed: clean monotonicity and at-most-one-root consequences hold only within admitted one-scalar families that assume those functions and weights."
+      "verdict_rationale": null
     },
     "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16": {
       "audit_date": "2026-04-30T20:20:57.340384+00:00",
@@ -57008,46 +57102,24 @@
       "verdict_rationale": "The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result."
     },
     "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": {
-      "audit_date": "2026-05-27T02:08:50.783759+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
-        },
-        "dep_claim_type": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
-        },
-        "deps": [
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
-        ],
-        "load_bearing_score": 7.144,
-        "runner_hash": "841ece80f8f33d54276bf4e170d62c9fe97f55360ded1777c338b77ac161c13c",
-        "transitive_descendants": 49
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-mendel-2nd",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The thermal integral and normalization dependencies close the x_f=25 continuum form, and the runner computes the printed live intervals rather than embedding the interval endpoints. The live-DM alpha interval, alpha_conv construction, observed eta/omega conversion, R_BASE, and channel weights nevertheless enter through helper modules, not direct retained dependencies of the source note.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-      "claim_scope": "Conditional bounded support for exact positive-series/tail enclosures of the same-surface thermal factor at x_f=25 and containment of the corrected continuum evaluator at the three declared alpha samples; excludes current-bank selector closure and excludes provenance of the live-DM constants/channel machinery until directly wired.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-27T02:08:50.783759+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -57056,30 +57128,25 @@
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.144,
-      "load_bearing_step": "On the live DM interval, the corrected high-precision continuum evaluator is contained inside extremely narrow exact-series/tail support intervals for alpha_lo, alpha_conv, and alpha_hi.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "acd80b134a7d230d258d9b2bdc08375e834e2870dc9f02dc57e052a9362a24f3",
+      "note_hash": "e3b7dfc64e3b33d31a61ab34d578a039e0f02ae869664784fc4df184f62d436c",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge - Add direct retained authority/dependency edges for the canonical plaquette alpha endpoints, ETA_OBS/omega_b conversion, OMEGA_DM_OBS target, R_BASE/channel weights, and same-surface ratio machinery; then re-audit that the helper still computes the intervals without hard-coding the printed R/alpha endpoints.",
-      "open_dependency_paths": [
-        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
-        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
-        "scripts/dm_leptogenesis_exact_common.py",
-        "scripts/canonical_plaquette_surface.py"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -57183,21 +57250,80 @@
             "total_pass": 13
           },
           "verdict_rationale": "The runner does more than print constants, but its load-bearing live-slice checks depend on imported modules not included in the restricted packet. Several early PASS checks are asserted as unconditional mathematical facts rather than derived from the framework axiom, and the numerical interval containment is delegated to external helper functions and imported constants. The note is honest that this is support rather than theorem-grade selector closure, so the audited scope remains conditional on the unseen helper-layer bridge and normalizations."
+        },
+        {
+          "archived_at": "2026-05-27T11:23:10.202091+00:00",
+          "archived_for_note_hash": "acd80b134a7d230d258d9b2bdc08375e834e2870dc9f02dc57e052a9362a24f3",
+          "audit_date": "2026-05-27T02:08:50.783759+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
+            },
+            "dep_claim_type": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+            },
+            "deps": [
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+              "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+            ],
+            "load_bearing_score": 7.144,
+            "runner_hash": "841ece80f8f33d54276bf4e170d62c9fe97f55360ded1777c338b77ac161c13c",
+            "transitive_descendants": 49
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-mendel-2nd",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The thermal integral and normalization dependencies close the x_f=25 continuum form, and the runner computes the printed live intervals rather than embedding the interval endpoints. The live-DM alpha interval, alpha_conv construction, observed eta/omega conversion, R_BASE, and channel weights nevertheless enter through helper modules, not direct retained dependencies of the source note.",
+          "claim_scope": "Conditional bounded support for exact positive-series/tail enclosures of the same-surface thermal factor at x_f=25 and containment of the corrected continuum evaluator at the three declared alpha samples; excludes current-bank selector closure and excludes provenance of the live-DM constants/channel machinery until directly wired.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T02:08:50.783759+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "On the live DM interval, the corrected high-precision continuum evaluator is contained inside extremely narrow exact-series/tail support intervals for alpha_lo, alpha_conv, and alpha_hi.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_dependency_edge - Add direct retained authority/dependency edges for the canonical plaquette alpha endpoints, ETA_OBS/omega_b conversion, OMEGA_DM_OBS target, R_BASE/channel weights, and same-surface ratio machinery; then re-audit that the helper still computes the intervals without hard-coding the printed R/alpha endpoints.",
+          "open_dependency_paths": [
+            "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+            "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+            "scripts/dm_leptogenesis_exact_common.py",
+            "scripts/canonical_plaquette_surface.py"
+          ],
+          "runner_check_breakdown": {
+            "A": 13,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 13
+          },
+          "verdict_rationale": "Issue: The exact series/tail algebra is local, but the live-DM support claim depends on helper-sourced canonical plaquette alpha endpoints, ETA_OBS, omega_b_from_eta, OMEGA_DM_OBS, R_BASE, and same-surface channel machinery. Why this blocks: the two direct dependencies cover thermal integral/normalization only, so the restricted one-hop chain does not close the provenance of the live interval/constants used in the headline alpha_lo/alpha_conv/alpha_hi checks. Repair target: add direct retained dependency edges or a bounded authority for those live-DM constants/functions and keep the helper source in the audit packet. Claim boundary until fixed: exact series/tail support is valid only conditional on those stipulated helper constants/functions, and remains non-selector-closure support."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 13,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 13
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py",
       "title": "DM Full Closure Same-Surface Thermal Series/Tail Support",
       "transitive_descendants": 49,
-      "verdict_rationale": "Issue: The exact series/tail algebra is local, but the live-DM support claim depends on helper-sourced canonical plaquette alpha endpoints, ETA_OBS, omega_b_from_eta, OMEGA_DM_OBS, R_BASE, and same-surface channel machinery. Why this blocks: the two direct dependencies cover thermal integral/normalization only, so the restricted one-hop chain does not close the provenance of the live interval/constants used in the headline alpha_lo/alpha_conv/alpha_hi checks. Repair target: add direct retained dependency edges or a bounded authority for those live-DM constants/functions and keep the helper source in the audit packet. Claim boundary until fixed: exact series/tail support is valid only conditional on those stipulated helper constants/functions, and remains non-selector-closure support."
+      "verdict_rationale": null
     },
     "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19": {
       "audit_date": "2026-05-23T19:46:21.680360+00:00",
@@ -57384,42 +57510,24 @@
       "verdict_rationale": "The load-bearing step is an algebraic coordinate/readout closure on an already supplied projected Hermitian response pack, not a first-principles derivation. The runner source computes the response pack from helper definitions, extracts S12 and S13, verifies their pullback and forward readout identities, and exhibits a same-triplet separator. The observed TARGET reproduction is a non-load-bearing comparator-style check and should not be read as deriving the target or a selector law."
     },
     "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16": {
-      "audit_date": "2026-05-26T00:00:00+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
-        },
-        "dep_claim_type": {
-          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
-        },
-        "deps": [
-          "sm_relativistic_dof_count_import_note_2026-05-17"
-        ],
-        "load_bearing_score": 10.448,
-        "runner_hash": "b7b78ee26edaf69b4ed4d2b1de14807ed9037286c0887a748064c9b1ae531d23",
-        "transitive_descendants": 246
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-xhigh-fresh-dm-leptogenesis-equilibrium-conversion-C75Ktt-2026-05-26",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The one-hop dependency closes only the finite SM inventory arithmetic for g_* = 427/4. The d_N and s/n_gamma steps require the relativistic Majorana equilibrium density and the late photon/neutrino entropy-conservation conversion formulas, which are explicit in the source/runner but not retained dependencies or import wrappers in the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
-      "claim_scope": "Given g_* = 427/4 from the retained-bounded SM inventory wrapper and treating the relativistic Majorana equilibrium-density and late electromagnetic entropy-conservation formulas as external thermal premises, the arithmetic yields d_N, g_*S(today), s/n_gamma, and their conversion product.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -57427,21 +57535,21 @@
         "sm_relativistic_dof_count_import_note_2026-05-17"
       ],
       "direct_in_degree": 5,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.448,
-      "load_bearing_step": "The equilibrium number/entropy densities give d_N = 135 zeta(3)/(4 pi^4 g_*), while electromagnetic entropy conservation gives (T_gamma/T_nu)^3 = 11/4, g_*S(today) = 43/11, and s/n_gamma = 7.039433661546651.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "5a491e5dec4b9ca05279d0dd63a6fb9e67ef7aeb7977f693234d0484aee24c3b",
+      "note_hash": "7fc788beb4449b4b46694ea790ad2ed02fd7842b6596c16025ea13c41707da2b",
       "note_path": "docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge -- add or create direct retained-bounded import-wrapper dependencies for the relativistic Majorana equilibrium density and late electromagnetic entropy-conservation/photon-neutrino conversion formulas, then narrow the source's closed-language or rerun the same arithmetic with those assumptions sourced.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -57546,21 +57654,71 @@
             "total_pass": 9
           },
           "verdict_rationale": "The runner verifies algebraic consequences of accepted relativistic equilibrium formulas and imported exact constants, and it numerically checks the standard zeta-function integrals. It does not instantiate the framework axiom or compute the taste spectrum from first principles; the key count 28 + (7/8)*90 is supplied inside the runner. Because no cited authority is provided for that spectrum count and the runner imports the benchmark constants it checks against, the claimed axiom-only closure is conditional on an omitted spectrum-count derivation."
+        },
+        {
+          "archived_at": "2026-05-27T11:23:10.318726+00:00",
+          "archived_for_note_hash": "5a491e5dec4b9ca05279d0dd63a6fb9e67ef7aeb7977f693234d0484aee24c3b",
+          "audit_date": "2026-05-26T00:00:00+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
+            },
+            "dep_claim_type": {
+              "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
+            },
+            "deps": [
+              "sm_relativistic_dof_count_import_note_2026-05-17"
+            ],
+            "load_bearing_score": 10.448,
+            "runner_hash": "b7b78ee26edaf69b4ed4d2b1de14807ed9037286c0887a748064c9b1ae531d23",
+            "transitive_descendants": 246
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-dm-leptogenesis-equilibrium-conversion-C75Ktt-2026-05-26",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The one-hop dependency closes only the finite SM inventory arithmetic for g_* = 427/4. The d_N and s/n_gamma steps require the relativistic Majorana equilibrium density and the late photon/neutrino entropy-conservation conversion formulas, which are explicit in the source/runner but not retained dependencies or import wrappers in the restricted packet.",
+          "claim_scope": "Given g_* = 427/4 from the retained-bounded SM inventory wrapper and treating the relativistic Majorana equilibrium-density and late electromagnetic entropy-conservation formulas as external thermal premises, the arithmetic yields d_N, g_*S(today), s/n_gamma, and their conversion product.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The equilibrium number/entropy densities give d_N = 135 zeta(3)/(4 pi^4 g_*), while electromagnetic entropy conservation gives (T_gamma/T_nu)^3 = 11/4, g_*S(today) = 43/11, and s/n_gamma = 7.039433661546651.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_dependency_edge -- add or create direct retained-bounded import-wrapper dependencies for the relativistic Majorana equilibrium density and late electromagnetic entropy-conservation/photon-neutrino conversion formulas, then narrow the source's closed-language or rerun the same arithmetic with those assumptions sourced.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 9,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 9
+          },
+          "verdict_rationale": "Issue: the source says the equilibrium conversion factors are closed, but the direct authority only closes the SM g_* inventory arithmetic. Why this blocks: the Majorana equilibrium-density and electromagnetic entropy-conservation/late-conversion formulas are physical thermal/cosmology premises, and the runner checks algebra after setting them rather than sourcing them from retained dependencies. Repair target: add retained-bounded import wrappers or retained theorems, with direct dependency edges, for the Majorana N1 equilibrium density and the e+e- entropy-conservation/g_*S(today)/s/n_gamma conversion chain. Claim boundary until fixed: exact bounded arithmetic over imported thermal assumptions, not a retained closed theorem and not a tuned numerical benchmark match."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 9,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 9
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py",
       "title": "DM Leptogenesis Equilibrium-Conversion Theorem",
       "transitive_descendants": 246,
-      "verdict_rationale": "Issue: the source says the equilibrium conversion factors are closed, but the direct authority only closes the SM g_* inventory arithmetic. Why this blocks: the Majorana equilibrium-density and electromagnetic entropy-conservation/late-conversion formulas are physical thermal/cosmology premises, and the runner checks algebra after setting them rather than sourcing them from retained dependencies. Repair target: add retained-bounded import wrappers or retained theorems, with direct dependency edges, for the Majorana N1 equilibrium density and the e+e- entropy-conservation/g_*S(today)/s/n_gamma conversion chain. Claim boundary until fixed: exact bounded arithmetic over imported thermal assumptions, not a retained closed theorem and not a tuned numerical benchmark match."
+      "verdict_rationale": null
     },
     "dm_leptogenesis_exact_kernel_closure_note_2026-04-15": {
       "audit_date": null,
@@ -58351,7 +58509,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "9ea95191fa422c0e8d3f516db520b0f36f544c11c7b143fdcd4bce12e43cfb97",
+      "note_hash": "c74d4cbf8468d4b08f28287c41716dfd3e9b42726403e827c3ccf31fe571df77",
       "note_path": "docs/DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -80623,52 +80781,42 @@
       "verdict_rationale": null
     },
     "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": {
-      "audit_date": "2026-05-27T01:46:29.011769+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 7.255,
-        "runner_hash": "6f0cdf06535212b7eff5609cd5c1143a14f8b2690b91b68c52aa27c4e25d17b8",
-        "transitive_descendants": 53
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-turing-2nd",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The chain closes for the bounded conditional scope: after accepting the stated weight, benchmark, and argument convention as hypotheses, the denominator, moments, t-measure, and argument substitution are direct algebraic consequences. The named textbook physics is not promoted to a framework derivation by this verdict.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17",
-      "claim_scope": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-27T01:46:29.011769+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.255,
-      "load_bearing_step": "From the normalized MB weight `v^2 exp(-a v^2)` at `a = x_f/4 = 25/4`, the change `t = a v^2` gives the stated moments, `alpha_eff/v = alpha_eff sqrt(a/t)`, and the prefactor `1/Gamma(3/2) = 2/sqrt(pi)`.",
-      "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
-      "note_hash": "ec46d1ba15c5052cb63318e6df0aedb73f823b32b78737e79f62cad401d0d765",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 7.255,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "8b33d9bb9f09ec31d80d56057a63130b4793d9bf66df3fe8d743c283849aca87",
       "note_path": "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Re-check that downstream consumers cite this only for the bounded relative-velocity normalization and Sommerfeld argument substitution, not as a derivation of the MB distribution, freeze-out benchmark, or Sommerfeld enhancement law.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -80711,21 +80859,63 @@
             "total_pass": 0
           },
           "verdict_rationale": "The source note is candidly scoped as a named non-derivation import, not a first-principles derivation. However, the restricted audit packet contains no upstream authorities despite the claim depending on textbook and literature inputs. Under the rubric, importing explicit normalizations and benchmark values not closed by the packet makes the claim conditional rather than clean."
+        },
+        {
+          "archived_at": "2026-05-27T11:23:10.672233+00:00",
+          "archived_for_note_hash": "ec46d1ba15c5052cb63318e6df0aedb73f823b32b78737e79f62cad401d0d765",
+          "audit_date": "2026-05-27T01:46:29.011769+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 7.255,
+            "runner_hash": "6f0cdf06535212b7eff5609cd5c1143a14f8b2690b91b68c52aa27c4e25d17b8",
+            "transitive_descendants": 53
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-turing-2nd",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The chain closes for the bounded conditional scope: after accepting the stated weight, benchmark, and argument convention as hypotheses, the denominator, moments, t-measure, and argument substitution are direct algebraic consequences. The named textbook physics is not promoted to a framework derivation by this verdict.",
+          "claim_scope": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T01:46:29.011769+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "From the normalized MB weight `v^2 exp(-a v^2)` at `a = x_f/4 = 25/4`, the change `t = a v^2` gives the stated moments, `alpha_eff/v = alpha_eff sqrt(a/t)`, and the prefactor `1/Gamma(3/2) = 2/sqrt(pi)`.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check that downstream consumers cite this only for the bounded relative-velocity normalization and Sommerfeld argument substitution, not as a derivation of the MB distribution, freeze-out benchmark, or Sommerfeld enhancement law.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "The load-bearing content is finite class-A normalization algebra over explicitly stated inputs, and the note repeatedly excludes freeze-out physics, derivation of the MB distribution, derivation of `x_f=25`, and derivation of the Sommerfeld law from the audited claim. The runner implements the same algebraic checks and exits cleanly. This is clean only as a bounded conditional certificate, not as an authority for the imported textbook premises themselves."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/dm_thermal_average_sommerfeld_normalization.py",
-      "title": "DM Thermal Average + Sommerfeld Argument Normalization \u2014 Named Non-Derivation Import",
+      "title": "DM Thermal Average + Sommerfeld Argument Normalization \u2014 Framework-Applied Certificate",
       "transitive_descendants": 53,
-      "verdict_rationale": "The load-bearing content is finite class-A normalization algebra over explicitly stated inputs, and the note repeatedly excludes freeze-out physics, derivation of the MB distribution, derivation of `x_f=25`, and derivation of the Sommerfeld law from the audited claim. The runner implements the same algebraic checks and exits cleanly. This is clean only as a bounded conditional certificate, not as an authority for the imported textbook premises themselves."
+      "verdict_rationale": null
     },
     "dm_wilson_direct_descendant_batch_authority_note_2026-05-03": {
       "audit_date": null,
@@ -160907,52 +161097,42 @@
       "verdict_rationale": null
     },
     "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": {
-      "audit_date": "2026-05-27T01:39:05.672789+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 7.066,
-        "runner_hash": "70e548b5c286d5a7916baf3d64e7a23c34b072932ffd9f9c48bb5de18a3a6ce9",
-        "transitive_descendants": 66
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-copernicus-2nd",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner closes the symbol, flux, and lattice-harmonic residual normalization checks, but the restricted packet does not contain the load-bearing textbook theorem text or an accepted one-hop authority proving the lattice Green's function asymptotic itself.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-      "claim_scope": "Bounded named-import wrapper for the Z^3 nearest-neighbor graph-Laplacian Green's function asymptotic, with a local normalization certificate for the 1/(4*pi*r) convention.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-27T01:39:05.672789+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.066,
-      "load_bearing_step": "The Green's function G(r) = (-Delta_lat)^(-1)(r) satisfies G(r) -> 1 / (4 pi |r|) as |r| -> infinity.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "015457c2951646220237670fa5994251ed6eec4ab7bb757e2372ee62715929c4",
+      "note_hash": "508acb99608c6094aaa0c69f2265018e2cec1bbffd1a9b79812eacd014fac4bf",
       "note_path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: add a one-hop auditable authority note containing the exact cubic-lattice Green's function asymptotic theorem text and its normalization convention, then re-audit this wrapper against that dependency.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -160995,21 +161175,63 @@
             "total_pass": 0
           },
           "verdict_rationale": "The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization."
+        },
+        {
+          "archived_at": "2026-05-27T11:23:11.202101+00:00",
+          "archived_for_note_hash": "015457c2951646220237670fa5994251ed6eec4ab7bb757e2372ee62715929c4",
+          "audit_date": "2026-05-27T01:39:05.672789+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 7.066,
+            "runner_hash": "70e548b5c286d5a7916baf3d64e7a23c34b072932ffd9f9c48bb5de18a3a6ce9",
+            "transitive_descendants": 66
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-copernicus-2nd",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner closes the symbol, flux, and lattice-harmonic residual normalization checks, but the restricted packet does not contain the load-bearing textbook theorem text or an accepted one-hop authority proving the lattice Green's function asymptotic itself.",
+          "claim_scope": "Bounded named-import wrapper for the Z^3 nearest-neighbor graph-Laplacian Green's function asymptotic, with a local normalization certificate for the 1/(4*pi*r) convention.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T01:39:05.672789+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The Green's function G(r) = (-Delta_lat)^(-1)(r) satisfies G(r) -> 1 / (4 pi |r|) as |r| -> infinity.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: add a one-hop auditable authority note containing the exact cubic-lattice Green's function asymptotic theorem text and its normalization convention, then re-audit this wrapper against that dependency.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 3
+          },
+          "verdict_rationale": "Issue: the packet names the Maradudin-Montroll-Weiss/Lawler/Spitzer lattice Green's function asymptotic but does not include an auditable one-hop theorem statement or accepted authority text. Why this blocks: the local runner verifies the normalization of 1/(4*pi*r), not the theorem that the actual lattice Green's function has that asymptotic. Repair target: add a direct dependency or accepted bounded-import authority containing the exact textbook/random-walk theorem and its applicability to the stated graph-Laplacian convention. Claim boundary until fixed: this remains a normalization certificate plus named candidate import, not retained-grade support for the asymptotic theorem."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 3,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 3
+        "total_pass": 0
       },
       "runner_path": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
-      "title": "Lattice Green's Function Asymptotic (Maradudin 1971) \u2014 Named Non-Derivation Import",
+      "title": "`Z^3` Lattice Green's Function Asymptotic Normalization \u2014 Framework-Applied Certificate",
       "transitive_descendants": 66,
-      "verdict_rationale": "Issue: the packet names the Maradudin-Montroll-Weiss/Lawler/Spitzer lattice Green's function asymptotic but does not include an auditable one-hop theorem statement or accepted authority text. Why this blocks: the local runner verifies the normalization of 1/(4*pi*r), not the theorem that the actual lattice Green's function has that asymptotic. Repair target: add a direct dependency or accepted bounded-import authority containing the exact textbook/random-walk theorem and its applicability to the stated graph-Laplacian convention. Claim boundary until fixed: this remains a normalization certificate plus named candidate import, not retained-grade support for the asymptotic theorem."
+      "verdict_rationale": null
     },
     "lattice_keff_continuum_note": {
       "audit_date": "2026-05-24T18:06:56.796632+00:00",
@@ -187160,7 +187382,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "d56eeca7ffbf89a77115f0a675f3cb16e1c5f4a988d9316db73b15f7c210a5a0",
+      "note_hash": "5380c2ddd1d0870ad9b997b2f72fd46d29ca7bf60a70ca4e0640cc2b04cd3cfd",
       "note_path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -214419,7 +214641,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "988e5a26228edd3c84e647ece597ab1b593231a69e4aa130ed618b30b85f8313",
+      "note_hash": "13ee73a0ac6c6c010cca85b702dd95d54879357ee86433f9b32d4bb9f3cca534",
       "note_path": "docs/PRIMITIVE_P_LH_NCG_NATIVE_NOTE_2026-05-10_pPlh_ncg_native.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -281642,7 +281864,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "eccae0d7add02be53f85fa61caeead5422bcc04e1126afa062bbfa7d4ed070ad",
+      "note_hash": "8e83ba00e717fd11a31f82c7c6e50882d5776422459e9b89577492a5553659af",
       "note_path": "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -281702,7 +281924,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/frontier_universal_qg_canonical_textbook_continuum_gr_closure.py",
       "title": "Universal QG Canonical Textbook Continuum Gravitational Closure",
       "transitive_descendants": 100,
       "verdict_rationale": null
@@ -281748,7 +281970,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "8416b249e6e029a7e3dffb210751f308129b5a9fea072869843bc53d5922c714",
+      "note_hash": "28a7be3f9373a92ebc52b7edb7418ed4d0bcde0d1c9f748bb150245e7c73c5e2",
       "note_path": "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -281824,7 +282046,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/frontier_universal_qg_canonical_textbook_geometric_action_equivalence.py",
       "title": "Universal QG Canonical Textbook Einstein-Hilbert-Style Geometric/Action Equivalence",
       "transitive_descendants": 115,
       "verdict_rationale": null
@@ -281868,7 +282090,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "e2dae77dbf6cbdcf44c8ca56c5083c94e11c7479dfc382ec6ef0889f6052cd26",
+      "note_hash": "1d5889881aa5a526f52c6575384445cb0795ebf4ab96f341dd3ea273cda8fe80",
       "note_path": "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -281939,7 +282161,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py",
       "title": "Universal QG Canonical Textbook Weak/Measure Equivalence",
       "transitive_descendants": 123,
       "verdict_rationale": null
@@ -290548,7 +290770,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "80aea59009dac837986fea925550e54b9ac10ef5b6cfd24f94f2a23e687e8717",
+      "note_hash": "eb79689fa019da65c8630b2339022222f5ff34bfa0563e32778ca5f162fd2699",
       "note_path": "docs/WAVE_RETARDED_GRAVITY_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py
+runner_sha256: 87f7b9946cacf9ef89096deba2ae6d66b9cb8c11efa2d75999ae4e27ab16c09e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Wave direct-dM H=0.25 Fam1 fine-pair synthesis
+  [PASS] note contains 'Fam1 Fine-Pair Synthesis'
+  [PASS] note contains 'Claim type:** bounded_theorem'
+  [PASS] note contains 'controlled `Fam1`, `H = 0.25`, `S = 0.004`'
+  [PASS] note contains 'seed `1` has the larger-magnitude negative `R_hist`'
+  [PASS] note contains 'coarse-to-fine seed-ordering reversal'
+  [PASS] note contains 'removed from this row'
+  [PASS] note contains 'remains out of scope'
+  [PASS] note avoids unsupported phrase 'old coarse-H seed ordering is not refinement-stable'
+  [PASS] note avoids unsupported phrase 'flip is driven by uneven late-gain compression'
+  [PASS] note avoids unsupported phrase 'old high band closes'
+  [PASS] note avoids unsupported phrase 'low band retains'
+  [PASS] note avoids unsupported phrase 'coarse-`H` `R_hist` band'
+  [PASS] note avoids unsupported phrase 'coarse-`H` late-gain band'
+  [PASS] note avoids unsupported phrase 'would become retained'
+  [PASS] note avoids unsupported phrase '\nStatus: retained\n'
+  [PASS] note avoids unsupported phrase '\nStatus: promoted\n'
+  [PASS] seed 0 log exists (/private/tmp/cl3-review-open-20260527-hnkyam/logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt)
+  [PASS] seed 0 log declares Fam1
+  [PASS] seed 0 log declares H=0.250
+  [PASS] seed 0 log has exact null summary
+  [PASS] seed 0 log has negative sign pattern
+  [PASS] seed 0 log has spread summary
+  [PASS] seed 0 dM(early) matches (+0.004989)
+  [PASS] seed 0 dM(late) matches (+0.006246)
+  [PASS] seed 0 delta_hist matches (-0.001256)
+  [PASS] seed 0 R_hist matches (-20.12%)
+  [PASS] seed 1 log exists (/private/tmp/cl3-review-open-20260527-hnkyam/logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed1.txt)
+  [PASS] seed 1 log declares Fam1
+  [PASS] seed 1 log declares H=0.250
+  [PASS] seed 1 log has exact null summary
+  [PASS] seed 1 log has negative sign pattern
+  [PASS] seed 1 log has spread summary
+  [PASS] seed 1 dM(early) matches (+0.004411)
+  [PASS] seed 1 dM(late) matches (+0.006255)
+  [PASS] seed 1 delta_hist matches (-0.001843)
+  [PASS] seed 1 R_hist matches (-29.47%)
+  [PASS] both fine-pair seeds have negative delta_hist
+  [PASS] seed 1 has larger-magnitude negative R_hist at H=0.25
+  [PASS] the runner does not inspect coarse high/low band logs
+
+Wave direct-dM H=0.25 Fam1 fine-pair synthesis: PASS
+PASS=39 FAIL=0
+
+----- stderr -----
+

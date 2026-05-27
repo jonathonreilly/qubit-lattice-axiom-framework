@@ -3,9 +3,10 @@
 **Date:** 2026-05-03
 **Type:** infrastructure + validation support theorem
 **Claim scope:** establish a working CVXPY-based moment-problem SDP
-infrastructure for lattice gauge bootstrap on this framework, validated
-on SU(2) and SU(3) single-plaquette reference data via Bessel functions
-and numerical Haar integration on the Cartan torus. The infrastructure is
+infrastructure for lattice gauge bootstrap on this framework, validated by
+support-aware bracket containment of SU(2) and SU(3) single-plaquette
+reference data via Bessel functions and numerical Haar integration on the
+Cartan torus. The infrastructure is
 unblocked by infra PR
 [#430](https://github.com/jonathonreilly/cl3-lattice-framework/pull/430)
 which added cvxpy 1.8.2 + open-source SDP solvers via venv. The
@@ -19,8 +20,8 @@ infrastructure provides the foundation for actual lattice bracketing of
 
 Can CVXPY (now installed via venv per PR #430) actually produce useful
 SDP-based brackets on plaquette moments for SU(N) lattice gauge theory?
-Validation requires comparing CVXPY brackets to known reference values
-(single-plaquette via Bessel for SU(2), Haar integration for SU(3)).
+Validation requires checking that CVXPY brackets contain known reference
+values (single-plaquette via Bessel for SU(2), Haar integration for SU(3)).
 
 ## 1. Setup
 
@@ -98,7 +99,7 @@ above the single-plaquette mean-field value.
 - **CVXPY-based SDP infrastructure** for moment-problem bootstrap is
   validated and working on this framework.
 - SU(2) and SU(3) single-plaquette references computed analytically/numerically.
-- CVXPY brackets recover known reference values when higher moments are fixed.
+- CVXPY brackets contain known reference values when higher moments are fixed.
 - Pure PSD brackets without loop equations are demonstrated to be trivial
   (just support endpoints).
 
@@ -119,7 +120,7 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 claim_type_reason: |
   This is an infrastructure/methodology cycle: it establishes that
-  CVXPY-based SDP moment-bootstrap is functional and correctly recovers
+  CVXPY-based SDP moment-bootstrap is functional and correctly contains
   reference values when higher moments are constrained. It does NOT
   bracket the lattice ⟨P⟩(β=6) target on its own; that requires loop
   equations (block 02).

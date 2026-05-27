@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_industrial_sdp_bootstrap_block01.py
-runner_sha256: d81544345adc4d7a4e9c2b423780897bb12de63ae7f9309f0685dcac8e87da5d
+runner_sha256: 36b5a0384d343d8023a8bd2126085f7d8961c49a9938c25957dfc9266f125919
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.59
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -43,11 +43,28 @@ Available solvers: ['CLARABEL', 'HIGHS', 'OSQP', 'SCIPY', 'SCS']
 
 --- CVXPY bootstrap with single-plaquette moments fixed ---
   Fix m_2, m_3, m_4 to single-plaquette reference values; bracket m_1.
-  Tests: does CVXPY correctly recover m_1 = ref value?
+  Tests: does CVXPY bracket contain m_1 = ref value?
   SU(2): fixed m_2,3,4 from Bessel ref. Bracket m_1 ∈ [0.684871, 0.769227]
-    Reference m_1_SU(2) = 0.767365; CVXPY recovered? False
+    Reference m_1_SU(2) = 0.767365; CVXPY containment? True
   SU(3): fixed m_2,3,4 from Haar ref. Bracket m_1 ∈ [0.281915, 0.451550]
-    Reference m_1_SU(3) = 0.422532; CVXPY recovered? False
+    Reference m_1_SU(3) = 0.422532; CVXPY containment? True
+
+==============================================================================
+Explicit PASS/FAIL containment assertions
+==============================================================================
+  [PASS] CVXPY has an open-source conic solver (solvers=['CLARABEL', 'HIGHS', 'OSQP', 'SCIPY', 'SCS'])
+  [PASS] SU(2) reference m1 lies in support (m1=0.76736480)
+  [PASS] SU(3) reference m1 lies in support (m1=0.42253174)
+  [PASS] SU(2) pure PSD bracket solver status acceptable (optimal/optimal)
+  [PASS] SU(2) pure PSD bracket spans support endpoints ([-1.000009, 1.000009])
+  [PASS] SU(3) pure PSD bracket solver status acceptable (optimal/optimal)
+  [PASS] SU(3) pure PSD bracket spans support endpoints ([-0.333336, 1.000000])
+  [PASS] SU(2) fixed-moment bracket solver status acceptable (optimal/optimal)
+  [PASS] SU(2) fixed-moment bracket contains reference m1 (ref=0.767365, interval=[0.684871, 0.769227])
+  [PASS] SU(2) fixed-moment bracket is containment, not endpoint recovery (ref=0.767365)
+  [PASS] SU(3) fixed-moment bracket solver status acceptable (optimal/optimal)
+  [PASS] SU(3) fixed-moment bracket contains reference m1 (ref=0.422532, interval=[0.281915, 0.451550])
+  [PASS] SU(3) fixed-moment bracket is containment, not endpoint recovery (ref=0.422532)
 
 ==============================================================================
 Block 01 SDP infrastructure validation complete.
@@ -61,6 +78,7 @@ Observation: pure PSD brackets without loop equations are wide.
 Adding single-plaquette moment constraints shows CVXPY workflow is
 functional. Block 02 will apply real loop equations / multi-Wilson-loop
 bootstrap to attempt a tighter bracket on SU(3) ⟨P⟩(β=6).
+PASS=13 FAIL=0
 ==============================================================================
 
 ----- stderr -----

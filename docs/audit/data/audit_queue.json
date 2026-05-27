@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 336,
     "leaf": 293,
-    "medium": 320
+    "medium": 321
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -17360,6 +17360,30 @@
       "ready": true,
       "runner_path": "scripts/dm_thermal_average_sommerfeld_normalization.py",
       "transitive_descendants": 53
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "industrial_sdp_bootstrap_infrastructure_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "plaquette_self_consistency_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.672,
+      "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
+      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36016,6 +36040,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 25,
-  "total_pending": 1190
+  "ready_count": 26,
+  "total_pending": 1191
 }

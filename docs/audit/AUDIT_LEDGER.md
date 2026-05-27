@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1190 |
+| unaudited | 1191 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1419 |
+| `unaudited` | 1420 |
 
 | claim_type | count |
 |---|---:|
@@ -985,7 +985,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gravity_clean_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6743,22 +6742,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The in-sample classifier rule (avg_deg >= 10.415 and reach_frac >= 0.859) is applied without refit to nine scripted independent generator families, yielding only 2/9 full-battery passes, 4/9 hard-coded prediction accuracy, and 6/9 no-refit rule accuracy.  _(class `C`)_
 - **chain closes:** True — The live runner rebuilds the nine named generator families, applies the same five-condition battery and frozen rule, and reproduces the negative table: only E1_er_p005 and E2_er_p020 pass, hard-coded predictions score 4/9, and the no-refit classifier rule scores 6/9.
 - **rationale:** The finite negative result closes on its own terms: the checked-in runner contains the nine generator constructors, the hard-coded prediction dictionary, the five-condition battery, and the frozen avg_deg/reach_frac rule, and live replay matches the source note's pass/fail and accuracy claims. The decisive rule failures R1, R3, and X1 all satisfy the frozen structural thresholds but fail the actual battery, while only the two Erdős-Rényi families pass the full package. This clean verdict is narrow: it certifies this deterministic nine-family held-out replay and the checked-in prediction table, not an exhaustive statistical theorem over all independent generator laws or independent timestamp proof beyond the artifact chain.
-- **auditor confidence:** high
-
-### `industrial_sdp_bootstrap_infrastructure_note_2026-05-03`
-
-- **Note:** [`INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** CVXPY-based single-variable moment-problem SDP infrastructure for SU(2)/SU(3) single-plaquette validation at beta=6; excludes full lattice beta=6 bracketing, loop equations, and industrial-precision SDP claims.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-einstein-2nd`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The CVXPY moment SDP with Hankel PSD and Hausdorff shifted-PSD constraints produces single-plaquette brackets that contain the SU(2) and SU(3) reference first moments when higher moments m2-m4 are fixed.  _(class `C`)_
-- **chain closes:** False — The narrow infrastructure smoke-test core is supported by runner output showing CVXPY 1.8.2 installed, solvers available, moment references computed, PSD-only brackets support-trivial, and fixed-higher-moment brackets containing the printed SU(2)/SU(3) reference m1 values. However, the note says the brackets recover the known reference values, while the runner's own recovery predicates print False for both SU(2) and SU(3), and the runner has no asserts to certify the validation interpretation.
-- **rationale:** Issue: The runner output supports only a bounded infrastructure smoke test: the brackets contain the reference m1 values, but the runner's own recovery predicates report False for both SU(2) and SU(3), and there are no asserts. Why this blocks: the note's stronger language that CVXPY brackets recover known reference values is not mechanically checked and is partly contradicted by the printed runner output. Repair target: replace the recovery criterion with explicit containment checks, add asserts for solver status and reference containment within tolerance, and revise note language from endpoint recovery to containment unless endpoint recovery is intended and achieved. Claim boundary until fixed: CVXPY infrastructure runs and produces feasible support-aware moment brackets containing the single-plaquette reference values in this printed run; it does not certify recovery or full lattice beta=6 bracketing.
-- **open / conditional deps cited:**
-  - `scripts/frontier_industrial_sdp_bootstrap_block01.py`
-  - `INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`

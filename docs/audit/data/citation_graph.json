@@ -58535,7 +58535,7 @@
         "plaquette_self_consistency_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bae3f71710d5f8619369d3c5d6cf3873f66b8b92afd8a5216b00a536f3d99207",
+      "note_hash": "203617dd1609c540bff674cf5b7d2382bb36d57bc0b1af5d51185bd20d03af9e",
       "path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
       "title": "Industrial SDP Bootstrap \u2014 Infrastructure + SU(2)/SU(3) Single-Plaquette Validation"

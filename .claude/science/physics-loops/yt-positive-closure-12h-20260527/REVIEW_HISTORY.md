@@ -435,6 +435,39 @@ Verification recorded with this review:
 - YAML validation passed.
 - `git diff --check` passed.
 
+## 2026-05-27 Local Review, Block 16
+
+Scope:
+
+- C3 orbit-member readout covariance no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the finite C3 quotient-section no-go, symmetry-breaking section witnesses, dependency outputs, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open orbit-member readout law; C3 covariance alone cannot choose a physical member of a free phase orbit. |
+| Imports / support | DISCLOSED | No external phase law, physical basepoint, observed masses, target selector, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=73 FAIL=0`
+- Full stack runner: `PASS=334 FAIL=0`
+- Adjacent Y_T runners passed: phase-orbit selector no-go `PASS=79`, cubic
+  phase-potential sign/branch no-go `PASS=88`, phase-ordering cone support
+  `PASS=70`, same-surface matrix factorization `PASS=77`, strict sparse
+  availability audit `PASS=74`, and primitive character phase-angle candidate
+  `PASS=71`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 15
 
 Scope:

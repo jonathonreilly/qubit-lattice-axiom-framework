@@ -118,6 +118,9 @@ closed exactly:
   phase potential selects phase orbits, not physical orbit members; generic
   orbits contain P_0, P_omega, and P_omega2 witnesses, so an accepted
   orbit-member/top-line law or strict pole rows remains load-bearing
+  orbit-member readout covariance no-go: a free C3 phase orbit has no
+  C3-equivariant section, and the three symmetry-breaking sections include
+  the singlet row A/sqrt(3) as well as the target rows A/sqrt(12)
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -145,6 +148,8 @@ still open:
   operator
   accepted same-surface orbit-member/readout law that excludes P_0 after a
   C3-invariant scalar phase orbit is selected
+  accepted physical orientation/basepoint anchor for such an orbit-member
+  readout law; C3 covariance alone is now pruned
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -1038,6 +1043,29 @@ nontrivial orbit member.  The missing object is still an accepted
 same-surface orbit-member/readout law, an orientation theorem that excludes
 `P_0`, or strict W/top pole rows.
 
+[`YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md`](YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md)
+then tests whether that missing member/readout law follows from C3 covariance
+itself.  It does not.  On a strict phase orbit
+
+```text
+O_phi = {phi, phi + 2 pi/3, phi + 4 pi/3},
+```
+
+the C3 action is free, so the quotient map `O_phi -> O_phi/C3` has no
+C3-equivariant section.  If one relaxes equivariance and allows a
+symmetry-breaking section, the three possible member choices are all
+available before adding a physical anchor.  On the primitive orbit:
+
+```text
+section 0: phi = 0        -> P_0      -> A/sqrt(3)
+section 1: phi = 2 pi/3   -> P_omega2 -> A/sqrt(12)
+section 2: phi = 4 pi/3   -> P_omega  -> A/sqrt(12)
+```
+
+Thus C3 covariance of the readout does not exclude the singlet member.  The
+remaining C3 route needs an accepted physical orientation/basepoint/readout
+theorem with W/top matrix elements, or strict pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -1117,6 +1145,10 @@ proposal_allowed_reason: |
   orbits, and those orbits contain singlet and nontrivial top-line witnesses.
   An accepted orbit-member/top-line readout law or strict pole rows remain
   load-bearing.
+  The orbit-member readout covariance no-go further prunes C3 covariance as
+  the missing readout law: a free C3 phase orbit has no equivariant section,
+  and symmetry-breaking sections include a P_0 row as well as the two
+  nontrivial target rows.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

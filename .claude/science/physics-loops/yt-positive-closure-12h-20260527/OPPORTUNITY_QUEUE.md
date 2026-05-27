@@ -16,7 +16,8 @@
 | 12 | Finite C3 representation/character facts select the physical phase angle | low | medium | present | pruned; C3-native choices include both target and singlet rows |
 | 13 | Accepted cubic invariant phase potential plus orientation branch | low | high | present | invariance-only shortcut pruned; accepted sign, dynamics law, and branch not derived |
 | 14 | General C3 scalar phase-orbit selector | low | high | present | pruned; orbit selection does not choose a physical nontrivial orbit member |
-| 15 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
+| 15 | C3 orbit-member/readout covariance after orbit selection | low | high | present | pruned; no equivariant section, and symmetry-breaking sections include `P_0` |
+| 16 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -95,3 +96,12 @@ nontrivial top-line witnesses. The next exact action is rank 4 or rank 15:
 obtain accepted strict top/W pole-row data with contact, FV/IR, and
 model-class controls, or derive an accepted same-surface orbit-member/top-line
 law that excludes `P_0` and supplies W/top matrix elements.
+
+Queue refresh after the sixteenth block: positive closure remains open. C3
+orbit-member/readout covariance is pruned as the missing physical top-line
+law: a free C3 phase orbit has no equivariant section, and symmetry-breaking
+sections include the singlet row as well as the target nontrivial rows. The
+next exact action is rank 4 or rank 16: obtain accepted strict top/W pole-row
+data with contact, FV/IR, and model-class controls, or derive an accepted
+same-surface physical orientation/basepoint/orbit-member law that excludes
+`P_0` and supplies W/top matrix elements.

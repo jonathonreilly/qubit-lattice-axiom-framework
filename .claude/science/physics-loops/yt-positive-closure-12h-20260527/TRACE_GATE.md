@@ -7,7 +7,7 @@ target_blocker_text: "derive/certify the coefficient-bearing same-surface top se
 source_of_blocker_text: user_goal
 reachability_to_target: prunes shortcut
 artifact_role: no_go_route_pruning
-next_trace_action: "derive accepted same-surface Y_T cubic phase potential/variational law with sign plus physical nonzero orientation branch; or produce accepted strict top/W pole-row data"
+next_trace_action: "derive accepted same-surface physical orientation/basepoint/orbit-member readout law with W/top matrix elements; or produce accepted strict top/W pole-row data"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -68,3 +68,9 @@ primitive cubic orbit contains both the singlet row `A/sqrt(3)` and the target
 rows `A/sqrt(12)`. The next trace action is to produce accepted strict W/top
 pole rows, or derive an accepted same-surface orbit-member/top-line law that
 excludes `P_0` and supplies W/top matrix elements.
+The sixteenth artifact prunes C3 covariance of that orbit-member readout as
+the missing law. A free C3 phase orbit has no equivariant section, and if a
+symmetry-breaking section is supplied, the admissible sections include
+`P_0 -> A/sqrt(3)` as well as the nontrivial target rows. The next trace
+action is therefore a physical orientation/basepoint/orbit-member theorem with
+W/top matrix elements, or strict W/top pole rows.

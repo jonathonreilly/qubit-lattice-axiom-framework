@@ -95,3 +95,11 @@ potential/variational law and a physical nonzero orientation branch.
   orbit contains the singlet row `A/sqrt(3)` as well as the target rows
   `A/sqrt(12)`. An accepted orbit-member/top-line law or strict pole rows
   remain load-bearing.
+- New in the sixteenth block: C3 orbit-member/readout covariance alone does
+  not derive the physical nontrivial top line after a phase orbit is selected.
+  A free three-member C3 phase orbit has no equivariant section. If
+  equivariance is relaxed, the three symmetry-breaking sections include
+  `phi=0 -> P_0 -> A/sqrt(3)` as well as `phi=2pi/3 -> P_omega2 -> A/sqrt(12)`
+  and `phi=4pi/3 -> P_omega -> A/sqrt(12)`. An accepted physical
+  orientation/basepoint/orbit-member readout law or strict pole rows remain
+  load-bearing.

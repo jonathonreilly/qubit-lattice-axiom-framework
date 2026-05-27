@@ -1,23 +1,23 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 5
+supervisor_cycle: 6
 runtime_budget_seconds: 43200
-remaining_campaign_seconds_at_cycle_start: 33964
+remaining_campaign_seconds_at_cycle_start: 33160
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T20:53:25Z"
+last_checkpoint_utc: "2026-05-27T21:06:25Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_phase_orbit_selector_underdetermination
+active_route: c3_orbit_member_readout_covariance_no_go
 hard_residual: "derive/certify dM_t/dell = A/sqrt(12)"
-actual_current_surface_status: no-go / open phase-orbit member law
+actual_current_surface_status: no-go / open orbit-member readout law
 trace_class: negative_route_pruning
 reachability_to_target: prunes shortcut
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "General C3-invariant scalar phase dynamics is now pruned as a nontrivial top-line selector. A real C3-invariant scalar phase potential is periodic under phi -> phi + 2pi/3 and therefore selects phase orbits, not physical orbit members. A generic strict-ordering orbit cycles through P_0, P_omega2, and P_omega, and the primitive cubic orbit contains phi=0 -> P_0 -> A/sqrt(3) as well as phi=+/-2pi/3 -> nontrivial lines -> A/sqrt(12). The actual surface still lacks an accepted same-surface orbit-member/top-line readout law or strict top/W pole rows."
+claim_state_movement: "C3 orbit-member covariance is now pruned as the missing nontrivial top-line readout law. A selected free C3 phase orbit has no C3-equivariant section; if equivariance is relaxed, the three symmetry-breaking sections include phi=0 -> P_0 -> A/sqrt(3) as well as phi=2pi/3 -> P_omega2 -> A/sqrt(12) and phi=4pi/3 -> P_omega -> A/sqrt(12). The actual surface still lacks an accepted physical orientation/basepoint/orbit-member readout law with W/top matrix elements, or strict top/W pole rows."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -43,6 +43,9 @@ files_touched:
   - docs/YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py
   - outputs/yt_c3_phase_orbit_selector_underdetermination_2026-05-27.json
+  - docs/YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md
+  - scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py
+  - outputs/yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -59,6 +62,7 @@ open_imports:
   - accepted same-surface cubic phase potential or variational law
   - accepted physical nonzero orientation branch for the base operator
   - accepted same-surface orbit-member/readout law excluding P_0 from a selected C3 phase orbit
+  - accepted physical orientation/basepoint anchor for the orbit-member readout law
   - contact, FV/IR, and model-class controls
   - new microscopic dynamics theorem deriving the accepted backend/projectors/matrix elements
 no_go_routes:
@@ -77,6 +81,7 @@ no_go_routes:
   - finite C3 representation/character facts alone select the accepted Y_T phase angle
   - C3-invariant cubic phase-potential structure alone selects the accepted physical Y_T phase angle
   - C3-invariant scalar phase dynamics alone selects the physical nontrivial top line from a selected phase orbit
+  - C3 orbit-member/readout covariance alone selects a physical nontrivial top line from a selected free phase orbit
 commands_run:
   - "python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py -> PASS=106 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=285 FAIL=0"
@@ -154,6 +159,9 @@ commands_run:
   - "git diff --check -> PASS"
   - "python3 scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py -> PASS=79 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=326 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py -> PASS=73 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=334 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py -> PASS"
   - "python3 scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py -> PASS=88 FAIL=0"
   - "python3 scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py -> PASS=82 FAIL=0"
   - "python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py -> PASS=94 FAIL=0"
@@ -168,7 +176,7 @@ commands_run:
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: PR #1980 body updated with phase-orbit selector underdetermination no-go block and verification
-latest_science_commit: b08f4d4d7e786e94f41eeb75ffa8564217fd2e80
-next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls; if staying on C3, derive an accepted same-surface orbit-member/top-line law that excludes P_0 and supplies W/top matrix elements."
+pr_status: pending update for orbit-member readout covariance no-go block
+latest_science_commit: pending
+next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls; if staying on C3, derive an accepted same-surface physical orientation/basepoint/orbit-member readout law that excludes P_0 and supplies W/top matrix elements."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

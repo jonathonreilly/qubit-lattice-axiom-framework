@@ -19,6 +19,7 @@
 | Accepted C3 cubic phase potential and orientation branch | Would select the primitive nontrivial character phase from the cubic trace invariant | conditional support/open import | `YT_C3_CUBIC_INVARIANT_PHASE_SELECTOR_SUPPORT_BOUNDARY_NOTE_2026-05-27.md` | yes if used for cubic route | yes for C3 route | derive accepted same-surface Y_T cubic phase dynamics/orientation, or bypass with strict pole rows | open blocker |
 | C3-invariant cubic phase potential structure alone | Would derive the physical phase law from invariance and cubic trace data | pruned on current surface | `YT_C3_CUBIC_PHASE_POTENTIAL_SIGN_BRANCH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive accepted sign, variational convention, and orientation branch, or bypass with strict pole rows | no-go for invariance-only shortcut |
 | C3-invariant scalar phase-orbit selection alone | Would derive the physical nontrivial top line from a selected C3 phase orbit | pruned on current surface | `YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive an accepted same-surface orbit-member/top-line law excluding `P_0`, or bypass with strict pole rows | no-go for scalar orbit-selector shortcut |
+| C3 orbit-member/readout covariance alone | Would derive the physical nontrivial top line after a C3 phase orbit has been selected | pruned on current surface | `YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive an accepted physical orientation/basepoint/orbit-member readout law, or bypass with strict pole rows | no-go for covariance-only member-readout shortcut |
 | Contact/FV/IR/model-class checks | Certify strict pole-row evidence | missing certificate fields | sparse response contract | yes for strict evidence route | yes | direct sparse pole-response certificate | open blocker |
 | Accepted strict top/W pole rows | Bypass C3 line assignment and read coefficient directly | absent | strict sparse availability audit | yes | yes | produce accepted pole-row data/certificate | open blocker |
 | Microscopic backend/projector/matrix-element shortcut | Would derive the physical row from source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | pruned on current surface | `YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive accepted backend, W/top projectors, and source-generator matrix elements, or produce strict pole rows | no-go for current shortcut |
@@ -65,3 +66,9 @@ top-line selector: it selects phase orbits, and those orbits contain singlet
 and nontrivial top-line witnesses. The remaining C3 route needs an accepted
 orbit-member/top-line readout law that excludes `P_0`, plus W/top matrix
 elements, or strict pole rows.
+C3 orbit-member/readout covariance alone is now pruned as that missing law:
+a free C3 phase orbit has no equivariant section, and the three
+symmetry-breaking sections include a `P_0` row as well as the two nontrivial
+target-row witnesses. The remaining C3 route needs an accepted physical
+orientation/basepoint/orbit-member readout law that excludes `P_0`, plus W/top
+matrix elements, or strict pole rows.

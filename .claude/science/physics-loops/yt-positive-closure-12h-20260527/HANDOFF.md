@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced fifteen science blocks, not positive retained-grade
+The campaign has produced sixteen science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -29,6 +29,8 @@ closure:
     phase-potential structure alone.
 15. a no-go for deriving the physical nontrivial top line from a general
     C3-invariant scalar phase potential alone.
+16. a no-go for deriving the physical nontrivial top line from C3
+    orbit-member/readout covariance alone.
 
 New result:
 
@@ -341,6 +343,28 @@ physical top pole is a nontrivial orbit member. The remaining positive route
 needs an accepted same-surface orbit-member/top-line readout law with W/top
 matrix elements, or accepted strict same-source top/W pole rows with controls.
 
+Sixteenth result:
+
+```text
+selected free C3 phase orbit
+  + C3-covariant orbit-member/readout structure
+  -/-> accepted nontrivial physical top line
+```
+
+There is no C3-equivariant section of the free three-member orbit quotient.
+If a symmetry-breaking section is supplied instead, the primitive orbit gives:
+
+```text
+section 0: phi = 0        -> P_0      -> A/sqrt(3)
+section 1: phi = 2 pi/3   -> P_omega2 -> A/sqrt(12)
+section 2: phi = 4 pi/3   -> P_omega  -> A/sqrt(12)
+```
+
+Thus C3 covariance itself cannot be the missing physical member/readout law.
+The remaining positive route needs an accepted physical
+orientation/basepoint/orbit-member theorem with W/top matrix elements, or
+accepted strict same-source top/W pole rows with controls.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -388,6 +412,9 @@ Artifacts:
 - `docs/YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py`
 - `outputs/yt_c3_phase_orbit_selector_underdetermination_2026-05-27.json`
+- `docs/YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py`
+- `outputs/yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
@@ -473,6 +500,11 @@ Cycle 5 phase-orbit selector verification:
   audit `PASS=74`, same-surface matrix factorization `PASS=77`,
   orientation-phase strength no-go `PASS=68`, and orientation-phase dynamics
   necessity `PASS=86`.
+
+Cycle 6 orbit-member readout covariance verification so far:
+
+- `python3 scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py` -> `SUMMARY: PASS=73 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=334 FAIL=0`
 
 Cycle 4 science commit pushed and recorded in PR #1980:
 
@@ -560,6 +592,6 @@ Next exact action:
 ```text
 produce accepted strict same-source top/W pole-row data with contact, FV/IR,
 and model-class controls; if staying on C3, derive an accepted same-surface
-orbit-member/top-line law that excludes P_0 and supplies W/top matrix
-elements.
+physical orientation/basepoint/orbit-member law that excludes P_0 and supplies
+W/top matrix elements.
 ```

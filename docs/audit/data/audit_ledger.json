@@ -263549,22 +263549,50 @@
       "verdict_rationale": "The supplied runner is source-visible and does more than print cached constants: it evaluates the SU(3) Bessel-determinant coefficient sum, diagonalizes the 4096 x 4096 total Casimir to recover the rank-8 singlet basis, constructs the stated plaquette tensor, and reports the finite storage/intermediate arithmetic. The repaired note no longer load-bears on the L_s=2 Block 5 diagnostics or on the unaudited bridge/open-gate constants. The full L_s=3 contraction is expressly outside the audited claim, so its absence is not a blocker for this staging theorem."
     },
     "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T04:10:56.748602+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "The current Wilson packet, without an added exact beta-6 nonperturbative completion object or fitted beta_eff, does not derive the observable bridge <P>_full = R_O(beta_eff).",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "Block 4 L_s=3 PBC cube partition-function staging only: Bessel-determinant coefficients, trivial-sector partition identity, rank-8 four-fold Haar singlet basis, stated plaquette-tensor encoding, and storage/intermediate-size scope arithmetic; no L_s=2 orientation diagnostics, bridge-gap claim, or full 81-link contraction.",
+          "su3_wilson_closed_form_fanout_theorem_note_2026-05-04": "Bounded SU(3) Wilson beta=6 fan-out record: the runner computes four named closed-form estimates, M1 single-plaquette character = 0.4225, M2 strong-coupling leading = 0.3333, M4 mean-field self-consistency = 0.8740, and M5 weak-coupling one-loop = 0.9259. Conditional on the imported comparator P_MC=0.5934 and epsilon_witness=3.03e-4, all four are far misses. This does not claim the MC value is derived, does not prove a global no-go for all analytic routes, and does not promote the gauge-scalar bridge."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "bounded_theorem",
+          "su3_wilson_closed_form_fanout_theorem_note_2026-05-04": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "retained_bounded",
+          "su3_wilson_closed_form_fanout_theorem_note_2026-05-04": "retained_bounded"
+        },
+        "deps": [
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
+          "su3_wilson_closed_form_fanout_theorem_note_2026-05-04"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "77a4015f96f25b2a613ff5d5d071c89a7342b18a7897c7fe30107aba8db8e2a1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-erdos-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cache/hash/exit status and L_s=3 geometry check close, and the broad negative rhetoric can be narrowed away. However, the runner's chi_(2,1) implementation fails the identity check at U=I: it returns 18 while dim(2,1)=15, so the runner does not compute one of the claimed listed irreps and its rho/Perron output is contaminated.",
       "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
-      "claim_scope": null,
+      "claim_scope": "Finite L_s=3 PBC N=5000 naive Haar-MC failed-route record only: geometry/cache/run behavior, comparator-only bridge gap, and noise-dominated Perron output; no derived P_cube and no global no-go against MC, importance sampling, tensor routes, or the bridge.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T04:10:56.748602+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -263574,34 +263602,41 @@
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For all listed nontrivial irreps, the N=5000 Haar-MC integrand means are statistically indistinguishable from zero and the induced P_cube=0.1075862401 is noise-dominated, not a derived bridge value.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "e8aab23c32438a7fbb9f3634e82dc7fd2f7dabfcef920516282c1c562a464e21",
       "note_path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: fix chi_(2,1) to use the correct SU(3) character, rerun/cache the MC, and keep the source scope narrowed to finite naive-Haar failure without global route-foreclosure claims.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 1,
+        "B": 1,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "issues": [
+          "chi_(2,1) formula returns 18 at identity vs expected 15",
+          "within +/-1 SE wording is slightly overstated for some reported means"
+        ],
+        "runner_result": "runner_sha256=77a4015f96f25b2a613ff5d5d071c89a7342b18a7897c7fe30107aba8db8e2a1; exit_code=0; chi_(2,1)(I)=18 but dim(2,1)=15",
+        "runner_status": "ok",
+        "support": 1,
+        "total_pass": 1
       },
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
       "title": "SU(3) L_s=3 PBC Cube Haar Monte Carlo: Honest Negative Result",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the listed-irrep Haar MC runner has a concrete SU(3) character implementation defect: chi_(2,1)(I)=18 while dim(2,1)=15, so the claimed (2,1) channel and downstream rho/Perron result are contaminated. Why this blocks: the finite negative result is runner-backed and cannot be retained while one tracked irrep is computed with the wrong character. Repair target: fix chi_(2,1), rerun and cache the MC, and keep the source narrowed to finite naive-Haar failure without global route-foreclosure claims. Claim boundary until fixed: geometry/hash/run completion and the existing noisy output are diagnostic only, not retained bounded evidence. No-go discipline: passes only for the narrowed finite-run failed-route claim; it would not pass for broad readings such as structurally wrong tool, requires 1e200 samples, exact tensor route only viable, or importance sampling forbidden."
     },
     "su3_wigner_l3_treewidth_infeasible_2026-05-04": {
       "audit_date": null,

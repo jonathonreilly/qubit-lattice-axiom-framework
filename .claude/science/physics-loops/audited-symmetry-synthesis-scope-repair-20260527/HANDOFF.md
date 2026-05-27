@@ -28,3 +28,7 @@ registered finite authority surfaces.
 - No rank-1/CLT mechanism theorem is supplied.
 - No sector-preservation family theorem is supplied.
 - No asymptotic or unified grown-lane claim is promoted.
+
+## PR
+
+PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2094

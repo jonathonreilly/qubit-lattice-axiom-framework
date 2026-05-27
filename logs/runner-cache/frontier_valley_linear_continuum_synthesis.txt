@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_valley_linear_continuum_synthesis.py
+runner_sha256: 06d554bd4d241f34939f517b4c9255c1f15ab322b227f01eacb755061256551a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+================================================================================
+VALLEY-LINEAR CONTINUUM SYNTHESIS BRIDGE
+================================================================================
+Scope: symbolic straight-ray continuum bridge only.
+Not scope: universal finite-lattice or architecture-independent theorem.
+
+[PASS] valley-linear perturbation is -L*f: -L*f
+[PASS] derivative of continuum phase: k*s*x0/(b*sqrt(b**2 + x0**2)) + k*s*x1/(b*sqrt(b**2 + x1**2))
+[PASS] left wide-ray term tends to 1/b: b*term -> 1
+[PASS] right wide-ray term tends to 1/b: b*term -> 1
+[PASS] wide-ray derivative tends to 2*k*s/b: 2*k*s/b
+[PASS] large-finite ray ratio is near one: 0.999999999998000
+
+PASS=6 FAIL=0
+Result: continuum bridge yields a 1/b straight-ray deflection scale.
+
+----- stderr -----
+

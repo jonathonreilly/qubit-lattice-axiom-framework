@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 503 |
+| **retained_bounded** | 504 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1218 |
+| unaudited | 1217 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 799 |
+| `audited_clean` | 800 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1447 |
+| `unaudited` | 1446 |
 
 | claim_type | count |
 |---|---:|
@@ -875,6 +875,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `valley_linear_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_asymptotic_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `valley_linear_mirror_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `valley_linear_repro_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `valley_linear_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -13432,6 +13433,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the restricted packet, the runner performs numerical lattice propagations over the stated checkpoint ladder and fits the resulting mass and distance laws rather than printing fixed constants. The conclusion is bounded to the tested finite slices and does not assert a continuum theorem.
 - **rationale:** The note's conclusion is conservative and matches the completed runner output: the tested slices remain TOWARD, preserve F~M near 1.00, and show far-tail slopes that vary across h/W choices. The runner source is not a trivial constant printer; it constructs lattice checkpoints, propagates fields, computes Born/k=0/gravity/mass-scaling/distance-law quantities, and fits power laws. No external comparator or imported calibrated measurement is used, and the claimed scope stays bounded to this finite replay.
 - **auditor confidence:** medium
+
+### `valley_linear_continuum_synthesis_note`
+
+- **Note:** [`VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md`](../../docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded straight-ray continuum algebraic bridge for S=L(1-f), f=s/r, plus retained-bounded synthesis of the cited finite 3D ordered-lattice evidence; no universal finite-lattice, convergence, or architecture-independent theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-heisenberg-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In the wide-ray continuum regime x_m >> b and L_phys - x_m >> b, d(delta Phi)/db -> 2 k s / b, so the continuum deflection scale of the valley-linear action is 1/b in the 3D straight-ray approximation.  _(class `A`)_
+- **chain closes:** True — The source note derives the asinh phase integral and its wide-ray derivative algebraically, and the runner independently checks the symbolic derivative and 1/b limit. The finite-lattice claims are explicitly limited to retained-bounded one-hop dependencies and are not promoted to universal convergence or architecture independence.
+- **rationale:** The claim closes only because its operative scope is bounded: a straight-ray continuum algebraic bridge plus synthesis of already retained-bounded lattice evidence. The note repeatedly excludes exact finite-lattice convergence, universal architecture independence, and a stabilized finite-lattice -1.00 theorem, so the Newtonian language is confined to the stipulated continuum approximation rather than overclaimed as a full discrete-model theorem.
+- **auditor confidence:** high
 
 ### `valley_linear_mirror_transfer_note`
 

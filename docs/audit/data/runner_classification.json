@@ -4548,6 +4548,18 @@
       "dominant_class": "C",
       "runner": "scripts/DM_EFFECTIVE_PARENT_one_clock_transfer_boundary_2026_04_18.py"
     },
+    "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py"
+    },
     "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25": {
       "assert_count": 0,
       "counts": {
@@ -34028,6 +34040,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem.py": {
       "assert_count": 0,
       "claims": [
@@ -56178,12 +56205,12 @@
     "dominant_class_distribution": {
       "A": 241,
       "B": 287,
-      "C": 759,
+      "C": 760,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2024,
-    "runners_with_C": 984,
-    "runners_with_D": 589
+    "runners_classified": 2025,
+    "runners_with_C": 985,
+    "runners_with_D": 590
   }
 }

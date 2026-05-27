@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1208 |
+| unaudited | 1209 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -55,17 +55,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 828 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 827 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1438 |
+| `unaudited` | 1439 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1078 |
+| `bounded_theorem` | 1079 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 259 |
@@ -76,7 +77,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 373 |
 | `high` | 510 |
-| `medium` | 580 |
+| `medium` | 581 |
 | `leaf` | 976 |
 
 - **Retained pending chain closure:** 8
@@ -84,9 +85,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2024
-- runners with (C) first-principles compute hits: 984
-- runners with (D) external comparator hits: 589
+- runners classified: 2025
+- runners with (C) first-principles compute hits: 985
+- runners with (D) external comparator hits: 590
 - decoration candidates (no C, no D): 345
 
 ## Top 25 by load-bearing score (topology only)
@@ -98,14 +99,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 724 | 53.50 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 906 | 52.33 | `audited_clean` | **retained_bounded** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 902 | 50.82 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1049 | 46.04 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1050 | 46.04 | `audited_clean` | **retained** |
 | 5 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 939 | 40.88 | `audited_clean` | **retained_bounded** |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 180 | 39.00 | `unaudited` | unaudited |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 849 | 38.23 | `unaudited` | unaudited |
 | 8 | `minimal_axioms` | meta | critical | 1043 | 38.03 | `unaudited` | meta |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 712 | 37.98 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | no_go | critical | 555 | 37.12 | `audited_clean` | **retained_no_go** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1020 | 34.00 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1021 | 34.00 | `audited_clean` | **retained** |
 | 12 | `plaquette_self_consistency_note` | bounded_theorem | critical | 750 | 33.55 | `audited_clean` | **retained_bounded** |
 | 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 178 | 33.48 | `unaudited` | unaudited |
 | 14 | `minimal_axioms_2026-04-11` | meta | critical | 933 | 33.37 | `unaudited` | meta |
@@ -113,7 +114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 566 | 32.15 | `unaudited` | unaudited |
 | 17 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 564 | 31.14 | `unaudited` | unaudited |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 694 | 30.44 | `unaudited` | unaudited |
-| 19 | `left_handed_charge_matching_note` | decoration | critical | 677 | 30.41 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 19 | `left_handed_charge_matching_note` | decoration | critical | 678 | 30.41 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 20 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 909 | 30.33 | `audited_renaming` | ~~audited_renaming~~ |
 | 21 | `cpt_exact_note` | positive_theorem | critical | 905 | 30.32 | `audited_clean` | **retained** |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 223 | 29.81 | `unaudited` | unaudited |
@@ -126,6 +127,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -760,7 +762,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11327,19 +11328,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting N_c = 3 into the anomaly-allowed family yields the SM hypercharge tuple and left-Weyl charge spectrum {0, ±1/3, ±2/3, ±1}.  _(class `A`)_
 - **chain closes:** True — The narrowed hypercharge statement follows by exact rational substitution from retained-grade cited inputs. The source correctly demotes the Burnside generation-count import and does not use it load-bearing for the audited claim.
 - **rationale:** The load-bearing step is a straightforward algebraic closure: take the retained anomaly family, insert the independently retained graph-first N_c = 3 selector, and compare the resulting rational tuple to the retained hypercharge-enumeration tuple. The runner source performs exact rational arithmetic rather than merely printing constants, and its ledger checks are cross-note status checks rather than external numerical comparators. The two residuals are explicitly scoped as hypotheses/residual freedoms, and the generation-count bridge is excluded from the narrowed claim.
-- **auditor confidence:** high
-
-### `sm_relativistic_dof_count_import_note_2026-05-17`
-
-- **Note:** [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](../../docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-sm-relativistic-dof-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Given the declared inventory, g_bosonic = 28 and g_fermionic = 90, so g_* = g_bosonic + (7/8) g_fermionic = 28 + (7/8) * 90 = 427/4 = 106.75.  _(class `A`)_
-- **chain closes:** True — The chain closes as class-A arithmetic over explicitly stated bounded inputs: the listed component multiplicities multiply and sum to 28 and 90, and Fraction(7,8) gives 427/4. The external Standard Model inventory is declared as the bounded input and required to be carried downstream, so it is not a hidden wall inside a claimed framework derivation.
-- **rationale:** This is a clean bounded arithmetic/import certificate, not a numerical match: the target value follows exactly from the declared inventory table and the 7/8 weight. The runner computes component products, sums bosonic and fermionic totals, applies Fraction(7,8), checks 427/4 and 106.75, and verifies note-boundary statements; it does not merely print the target. The dependency closes the exact retained 7/8 rational identity within this bounded scope, while the source explicitly does not ratify a framework derivation of Standard Model particle content, the fermion thermal factor, electroweak equilibrium, cosmology, downstream DM-leptogenesis, or a new audit verdict. Under the no-go/admission discipline, the named external inventory assumption is surfaced as the bounded input and downstream obligation, not hidden as an unacknowledged closure claim.
 - **auditor confidence:** high
 
 ### `source_driven_field_recovery_h025_pocket_note`

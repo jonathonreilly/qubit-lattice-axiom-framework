@@ -6093,6 +6093,14 @@
       "to": "dm_wilson_parent_correctness_audit_note_2026-04-18"
     },
     {
+      "from": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
+      "to": "r_base_group_theory_derivation_theorem_note_2026-04-24"
+    },
+    {
+      "from": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
+      "to": "eta_188_structural_origin_partial_note_2026-05-03"
+    },
+    {
       "from": "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25",
       "to": "higgs_mass_from_axiom_note"
     },
@@ -47518,6 +47526,23 @@
       "runner_path": "scripts/DM_EFFECTIVE_PARENT_one_clock_transfer_boundary_2026_04_18.py",
       "title": "DM Effective Parent One-Clock Transfer Boundary Theorem Note"
     },
+    "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28": {
+      "claim_id": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "r_base_group_theory_derivation_theorem_note_2026-04-24",
+        "eta_188_structural_origin_partial_note_2026-05-03"
+      ],
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "note_hash": "7b1b4897add385984b182d0e8b4f38f93ffe191851a3a898646da0a176d8c879",
+      "path": "docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py",
+      "title": "DM `eta` Bounded Prediction From Supplied `N_sites \u00b7 v` Premise Narrow Theorem"
+    },
     "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25": {
       "claim_id": "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25",
       "claim_type_author_hint": null,
@@ -85543,7 +85568,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 614,
+      "bounded_theorem": 615,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -85552,7 +85577,7 @@
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1032,
+      "bounded_theorem": 1033,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -85560,10 +85585,10 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9754,
-    "leaf_count": 796,
-    "node_count": 2553,
+    "edge_count": 9756,
+    "leaf_count": 797,
+    "node_count": 2554,
     "root_count": 855,
-    "runners_with_path": 2129
+    "runners_with_path": 2130
   }
 }

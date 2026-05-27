@@ -1,0 +1,116 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
+runner_sha256: 03d7dc7ec15f12c0772000bff73caed916a521e598a8db2ac481c11bdc6735be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================
+DM eta bounded prediction from supplied N_sites · v premise
+========================================================================
+
+Section 1: chain authority audits
+------------------------------------------------------------------------
+[PASS] Note exists at expected path  --  DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md
+[PASS] Note claim type is bounded_theorem
+[PASS] Note status authority is independent audit lane only
+[PASS] Note proposal_allowed: false
+[PASS] R_base authority exists  --  R_BASE_GROUP_THEORY_DERIVATION authority
+[PASS] R_base = 31/9 stated in authority
+[PASS] eta_188 authority exists  --  ETA_188_STRUCTURAL_ORIGIN authority
+[PASS] eta_188 ratio 0.1888 recorded in authority
+[PASS] Lane 5 (C2) bipartition parent authority exists
+[PASS] Bipartition records (C2.eta) sub-target
+
+Section 2: R_base = 31/9 exact rational check
+------------------------------------------------------------------------
+[PASS] Casimir SU(3) fund C_2 = 4/3
+[PASS] Casimir SU(2) fund C_2 = 3/4
+[PASS] Adjoint dim SU(3) = 8
+[PASS] Adjoint dim SU(2) = 3
+[PASS] Numerator = 155/12  --  computed 155/12
+[PASS] Denominator = 9/4  --  computed 9/4
+[PASS] R_base = 31/9 exactly  --  computed 31/9
+[PASS] R_base float ≈ 3.4444
+
+Section 3: structural composed product P2: m_DM = N_sites · v
+------------------------------------------------------------------------
+[PASS] N_sites = 2^d with d = 4 gives N_sites = 16
+[PASS] v VEV value 246.282818290129 GeV (composed input)
+[PASS] m_DM = N_sites · v evaluates to ≈ 3940.5 GeV  --  computed 3940.5251 GeV
+[PASS] m_DM ≈ 3.94 TeV (falsifiable single-mass readout)  --  computed 3.941 TeV
+[PASS] Note records the falsifiable readout `m_DM ~ 3.94 TeV`
+
+Section 4: freeze-out-bypass identity arithmetic (M0)
+------------------------------------------------------------------------
+[PASS] Canonical plaquette 0.5934 used as cited surface
+[PASS] u_0 = <P>^(1/4) ≈ 0.8777  --  computed 0.877681
+[PASS] alpha_LM = (1/(4π))/u_0 ≈ 0.09067  --  computed 0.090668
+[PASS] R(central) = R_base * 1.59 ≈ 5.481  --  computed 5.4767
+[PASS] C(central) ≈ 4.108e-17 GeV^-2  --  computed 4.1077e-17
+
+Section 5: central evaluation eta_pred(central)
+------------------------------------------------------------------------
+[PASS] eta_pred(central) ≈ 6.38e-10  --  computed 6.3783e-10
+[PASS] Central deviation ≈ +4.22% vs eta_obs  --  computed +4.220%
+
+Section 6: bounded band over (x_F, S_vis/S_dark) rectangle
+------------------------------------------------------------------------
+[PASS] grid (M0) (22.0, 1.7) -> 5.25e-10  --  computed 5.250e-10
+[PASS] grid (M0) (22.0, 1.59) -> 5.61e-10  --  computed 5.613e-10
+[PASS] grid (M0) (22.0, 1.4) -> 6.38e-10  --  computed 6.375e-10
+[PASS] grid (M0) (25.0, 1.7) -> 5.97e-10  --  computed 5.966e-10
+[PASS] grid (M0) (25.0, 1.59) -> 6.38e-10  --  computed 6.378e-10
+[PASS] grid (M0) (25.0, 1.4) -> 7.24e-10  --  computed 7.244e-10
+[PASS] grid (M0) (28.0, 1.59) -> 7.14e-10  --  computed 7.144e-10
+[PASS] grid (M0) (28.0, 1.4) -> 8.11e-10  --  computed 8.113e-10
+[PASS] Bounded band low corner (x_F=22, S=1.7) ≈ 5.25e-10  --  computed 5.250e-10
+[PASS] Bounded band high corner (x_F=28, S=1.4) ≈ 8.10e-10  --  computed 8.113e-10
+[PASS] Note records direct lower band 5.25e-10
+[PASS] Note records direct upper band 8.11e-10
+[PASS] Note records inherited audit-companion interval as context only
+[PASS] Bracketing (direct fixed-alpha band): low <= eta_obs <= high
+[PASS] (M0) low corner equals (22, 1.7) ≈ 5.25e-10  --  computed 5.250e-10
+[PASS] (M0) high corner equals (28, 1.4) ≈ 8.11e-10  --  computed 8.113e-10
+
+Section 7: cross-check vs ETA_188 structural decomposition
+------------------------------------------------------------------------
+[PASS] ABC pure-rational = 516/53009  --  computed 516/53009
+[PASS] g_* = 427/4 (SM-only at leptogenesis scale)
+[PASS] g_S = 43/11 (CMB DOF today)
+[PASS] C_sph = 28/79 (sphaleron conversion)
+
+Section 8: note-text records named premise packet P1-P7
+------------------------------------------------------------------------
+[PASS] Note records named premise P1 freeze-out-bypass identity
+[PASS] Note records named premise P2 structural mass candidate
+[PASS] Note records named premise P3 BBN coefficient
+[PASS] Note records named premise P4 freeze-out coefficient band
+[PASS] Note records named premise P5 SM effective DOF
+[PASS] Note records named premise P6 Kolb-Turner prefactor
+[PASS] Note records named premise P7 Sommerfeld continuation
+
+Section 9: note-text records audit-companion vs load-bearing classification
+------------------------------------------------------------------------
+[PASS] Note lists R_base authority under load-bearing dependencies
+[PASS] Note lists eta_188 authority under load-bearing dependencies
+[PASS] Note lists DM_ETA_FREEZEOUT_BYPASS as audit-companion (not retained)
+[PASS] Note lists DM_ETA_NSITES_V_LIFT as audit-companion (not retained)
+[PASS] Note lists HIGGS_MASS_FROM_AXIOM as audit-companion (not retained)
+[PASS] Note lists OBSERVABLE_PRINCIPLE as audit-companion (not retained)
+[PASS] Note explicitly declines (C2.eta) closure
+
+Section 10: status discipline
+------------------------------------------------------------------------
+[PASS] Note's YAML status declaration is narrow_bounded_theorem
+[PASS] Note declares bare_retained_allowed: false
+[PASS] Note declares audit_required_before_effective_retained: true
+[PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
+
+========================================================================
+TOTAL: PASS=68 FAIL=0
+VERDICT: bounded prediction passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
+
+----- stderr -----
+

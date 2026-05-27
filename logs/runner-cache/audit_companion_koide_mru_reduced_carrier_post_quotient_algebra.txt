@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py
-runner_sha256: e3a28d07bd8c076d81413148cc467c26d1830e1f1acb94fed40cae62cd798f91
+runner_sha256: 9ea5528c94361548a1115f96b0be848cacd2e15d7e931f4befe8eb4638577676
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,7 +12,7 @@ KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17
 Goal: sympy-symbolic verification of (P1) rho_+ = rho_perp at the
 reduced-carrier Lagrange extremum, (P2) E_+ = E_perp, (P3) kappa = 2,
 and the reparametrization equivalence S_rho = (1/2) S_E under
-the cited admitted SO(2)-quotient carrier and the cited retained
+the formal positive two-slot carrier and the cited retained
 Frobenius identities (T2)/(T3) of
 koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10
 ========================================================================================

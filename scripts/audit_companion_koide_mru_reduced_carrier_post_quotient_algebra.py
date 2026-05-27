@@ -3,15 +3,13 @@
 narrow theorem note
 `KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`.
 
-Parent narrow note's load-bearing content is the algebraic-substitution
-implication that, given (i) an admitted SO(2) frame-quotient carrier
-`(rho_+, rho_perp)` with `rho_+^2 = E_+`, `rho_perp^2 = E_perp` on the
-charged-lepton scalar lane (admitted input from parent target row
-`koide_moment_ratio_uniformity_theorem_note_2026-04-19` §2.2), (ii) the
-retained block-total Frobenius identities `E_+ = 3 a^2`,
-`E_perp = 6 |b|^2` from
+Parent narrow note's load-bearing content is the formal algebraic-substitution
+corollary that, given (i) two positive formal variables
+`(rho_+, rho_perp)` with the definitional positive change of variables
+`rho_+^2 = E_+`, `rho_perp^2 = E_perp`, (ii) the retained block-total
+Frobenius identities `E_+ = 3 a^2`, `E_perp = 6 |b|^2` from
 `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
-(T2, retained), and (iii) the positive total-power constraint
+(T2, retained), and (iii) the formal positive total-power constraint
 `rho_+^2 + rho_perp^2 = E_tot > 0`, the Lagrange extremum of
 `S_rho = log rho_+ + log rho_perp` is
 
@@ -19,7 +17,7 @@ retained block-total Frobenius identities `E_+ = 3 a^2`,
   (P2) E_+     = E_perp     = E_tot / 2
   (P3) a^2     = 2 |b|^2,    kappa := a^2 / |b|^2 = 2.
 
-Moreover the reduced-carrier extremum problem on `(rho_+, rho_perp)` is
+Moreover the formal reduced-carrier extremum problem on `(rho_+, rho_perp)` is
 monotone-reparametrization equivalent to the retained Frobenius-carrier
 extremum problem on `(E_+, E_perp)` certified by
 `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
@@ -41,17 +39,17 @@ This Pattern A / B narrow runner adds an exact-symbolic verification:
   (g) counterfactual probes: weight tilt `(mu, nu) != (1, 1)` and
       carrier tilt `p != 1` both move the critical point off
       `kappa = 2`, confirming the symmetric `(1, 1)` log-functional on
-      the symmetric `(rho_+, rho_perp)` carrier is load-bearing.
+      the symmetric `(rho_+, rho_perp)` formal carrier is load-bearing.
 
 Companion role: not a new claim row beyond the narrow theorem note,
 not a status promotion, no new framework vocabulary. Provides
-audit-friendly evidence that the parent's load-bearing class-(A) algebra
-holds at exact symbolic precision under the cited admitted SO(2)-quotient
-carrier and the cited retained Frobenius identities. The cited Frobenius
+audit-friendly evidence that the formal class-(A) algebra
+holds at exact symbolic precision under the formal positive two-slot carrier
+and the cited retained Frobenius identities. The cited Frobenius
 identities themselves are imported from the upstream retained narrow
-theorem and are not re-derived here; the SO(2)-quotient admission itself
-is admitted from the parent target row §2.2 and is explicitly not
-derived in the restricted packet of this runner.
+theorem and are not re-derived here. This runner does not derive or use a
+physical SO(2) frame quotient, charged-lepton scalar-lane readout, or
+mass-identification bridge.
 """
 
 from __future__ import annotations
@@ -116,7 +114,7 @@ def main() -> int:
     print("Goal: sympy-symbolic verification of (P1) rho_+ = rho_perp at the")
     print("reduced-carrier Lagrange extremum, (P2) E_+ = E_perp, (P3) kappa = 2,")
     print("and the reparametrization equivalence S_rho = (1/2) S_E under")
-    print("the cited admitted SO(2)-quotient carrier and the cited retained")
+    print("the formal positive two-slot carrier and the cited retained")
     print("Frobenius identities (T2)/(T3) of")
     print("koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10")
     print("=" * 88)
@@ -496,8 +494,8 @@ def main() -> int:
             )
 
     # Counterfactual B: carrier exponent tilt: D = diag(rho_+, rho_perp^p)
-    # Total constraint still rho_+^2 + rho_perp^2 = E_tot (parent's
-    # admitted symmetric power constraint), but use log det(D) =
+    # Total constraint still rho_+^2 + rho_perp^2 = E_tot (the formal
+    # symmetric power constraint), but use log det(D) =
     # log rho_+ + p log rho_perp as the carrier-tilted functional.
     p_pow = Symbol("p_pow", positive=True, real=True)
     S_carrier = log(rho_p) + p_pow * log(rho_perp)

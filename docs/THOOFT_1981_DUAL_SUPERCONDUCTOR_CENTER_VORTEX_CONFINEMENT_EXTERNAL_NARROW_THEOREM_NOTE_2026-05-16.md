@@ -203,6 +203,24 @@ observable with the Wilson loop or vortex condensate, derive the
 monopole/vortex measure and string tension, and verify the
 substrate-specific bridge.
 
+## Re-audit Packet Boundary
+
+The intended packet for this row contains:
+
+- the source note;
+- the primary boundary runner above;
+- the branch-local scope repair checker:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_thooft_center_vortex_scope_repair.py
+```
+
+The expected post-pipeline ledger state is `audit_status=unaudited`,
+`claim_type=open_gate`, and no open dependency paths. A clean audit should not
+promote the row beyond `open_gate`; promotion would require retained one-hop
+authorities or new retained bridge theorems for condensation/percolation,
+string tension, Wilson-loop area law, and framework observable identification.
+
 ## External References
 
 - G. 't Hooft, "Topology of the gauge condition and new confinement

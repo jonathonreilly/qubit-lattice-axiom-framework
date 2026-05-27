@@ -3,6 +3,8 @@
 This PR repairs `koide_cl3_selector_gap_note_2026-04-19` by registering the
 existing finite selected-slice route-inventory runner:
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2081
+
 ```text
 scripts/frontier_koide_cl3_selector_gap.py
 ```
@@ -42,4 +44,3 @@ Pipeline complete.
 - Transport-law selector.
 - First-principles `kappa_*`.
 - Direct degeneracy-triple runner if that triple remains load-bearing.
-

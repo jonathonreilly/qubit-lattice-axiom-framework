@@ -1,0 +1,34 @@
+slug: pf-rank-bound-assessment-repair-20260527
+branch: physics-loop/pf-rank-bound-assessment-repair-20260527
+base: origin/main
+date: 2026-05-27
+mode: science_fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+target_claim_id: plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06
+files_touched:
+  - docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md
+  - scripts/frontier_pf_rank_bound_assessment_repair.py
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+verification:
+  runner: "SUMMARY: PASS=19 FAIL=0"
+  vocab_lint: clean
+  audit_pipeline: complete
+open_imports:
+  - all-degree rank theorem
+  - all-order minimal-annihilator theorem
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+pr_status: pending
+pr_url: null
+next_exact_action: "Commit, push, open draft PR, then record the PR URL."
+stop_condition: "Draft PR opened and verified."

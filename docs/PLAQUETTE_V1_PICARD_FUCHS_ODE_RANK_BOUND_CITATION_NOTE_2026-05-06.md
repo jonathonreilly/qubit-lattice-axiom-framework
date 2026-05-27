@@ -9,6 +9,25 @@
 and
 [`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)
 (the partial minimality proof, pending the rank bound covered here)
+and
+[`PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md)
+(the retained-bounded extended finite-window/Koutschan-style certificate).
+
+## 2026-05-27 Runner And Scope Repair
+
+This row is now explicitly a bounded assessment row. Its binding claim is the
+gap classification:
+
+- the old textbook-style `rank <= N` citation is not established by the cited
+  Aomoto-Gelfand / Sabbah / HTT authorities for this SU(3) Wilson character
+  integral;
+- the companion retained-bounded packets support finite-window and extended
+  finite-window certificate claims;
+- the all-degree / all-order minimal-annihilator conclusion remains open.
+
+The paired runner verifies those boundaries against the source text and the
+current audit ledger. It does not convert the assessment into an all-order
+rank theorem.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 

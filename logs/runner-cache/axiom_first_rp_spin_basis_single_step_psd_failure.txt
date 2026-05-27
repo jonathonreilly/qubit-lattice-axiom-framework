@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py
+runner_sha256: 1aa86e6405b426846c48264d883264cdb522b0de340442d6594fe3d1dc8fed2f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+Basis size (A_+ monomials up to degree 2): 37
+Lattice: L_t=4, L_s=2, mass=0.5
+Sites: 8 total, 4 in positive half
+
+Test 1: free case U=1
+  det(M) = (0.09765624999999996+0j)
+  ||G - G†||_max = 3.331e-16
+  Gram eigenvalues: min = -8.0000e-01, max = 7.7845e+00
+  PSD: NO
+
+Test 2: 5 random U(1) gauge configs
+  trial 0: detM = +4.928e-01+6.703e-17j, ||G-G†|| = 1.41e+00, Gram min eig = -1.3392e+00, PSD = NO
+  trial 1: detM = +5.455e-01-7.123e-17j, ||G-G†|| = 1.09e+00, Gram min eig = -1.7794e+00, PSD = NO
+  trial 2: detM = +3.165e-01+1.947e-17j, ||G-G†|| = 1.10e+00, Gram min eig = -1.0780e+00, PSD = NO
+  trial 3: detM = +7.547e-01-6.735e-18j, ||G-G†|| = 1.07e+00, Gram min eig = -1.2556e+00, PSD = NO
+  trial 4: detM = +9.140e-01-2.607e-17j, ||G-G†|| = 1.37e+00, Gram min eig = -2.0990e+00, PSD = NO
+
+PSD count: 0/5 random configs
+FAIL examples (PSD violations, in line with the two-step literature warning):
+  trial 0: min eig = -1.3392e+00
+  trial 1: min eig = -1.7794e+00
+  trial 2: min eig = -1.0780e+00
+  trial 3: min eig = -1.2556e+00
+  trial 4: min eig = -2.0990e+00
+
+========================================================================
+VERDICT
+========================================================================
+  free U=1 Gram min eigenvalue: -8.0000e-01
+  random U(1) PSD failures: 5 / 5
+  no-go reproduced: YES
+  PASS -- single-step spin-basis Lagrangian RP for staggered KS
+  under Sharatchandra Theta alone does NOT give a PSD Gram matrix,
+  matching Caracciolo-Palumbo 2013 and the 2-step block formulation
+  in STW 1981 / Palumbo 2002 / Smit.
+
+----- stderr -----
+

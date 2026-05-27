@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1233 |
+| unaudited | 1234 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 43 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,21 +57,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 827 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1463 |
+| `unaudited` | 1464 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1097 |
+| `bounded_theorem` | 1098 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 259 |
 | `open_gate` | 111 |
-| `positive_theorem` | 709 |
+| `positive_theorem` | 708 |
 
 | criticality | count |
 |---|---:|
@@ -959,7 +959,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `assumption_derivation_ledger` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
-| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1693,19 +1692,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
-- **auditor confidence:** high
-
-### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Finite-lattice reflection positivity and vacuum-energy-subtracted transfer-matrix spectrum non-negativity for compact SU(3) Wilson plaquette gauge links coupled to staggered-only Kogut-Susskind fermions M = M_KS + m I, m > 0, excluding Wilson-fermion determinant claims.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-fresh-axiom-first-reflection-positivity-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The gauge half is asserted to be a positive Haar norm square, the staggered determinant input strictly positive configuration-by-configuration, and their product is asserted to give <Theta(F) F> = ||psi_F||^2 >= 0.  _(class `A`)_
-- **chain closes:** False — The determinant dependency closes only det(M_KS + m I) > 0; it explicitly does not prove the staggered Grassmann reflection-positive half-action factorization for arbitrary positive-time polynomial observables. The gauge dependency closes an abstract bounded norm-square identity under explicit symmetry hypotheses, but the restricted packet does not prove the SU(3) Wilson-plaquette boundary term satisfies those hypotheses for the stated lattice action.
-- **rationale:** E1-E5 pass, but they are finite representative structural checks: free staggered transfer matrices, a truncated U(1) plaquette, finite Fock-space RP samples, a finite Gram matrix, and finite anticommutation checks. They do not compute or prove the load-bearing arbitrary compact SU(3) gauge-half boundary factorization or the staggered Grassmann half-action reflection-positive factorization. E6 is correctly diagnostic-only and cannot carry the theorem. The narrowed Wilson-excluding scope is appropriate, but the proof still imports missing reflection-positivity bridge theorems beyond the cited retained inputs.
 - **auditor confidence:** high
 
 ### `background_independence_note`

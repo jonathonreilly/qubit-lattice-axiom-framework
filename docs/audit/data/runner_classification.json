@@ -1157,12 +1157,12 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 20,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/axiom_first_reflection_positivity_check.py"
+      "runner": "scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py"
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "assert_count": 0,
@@ -28292,7 +28292,7 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/axiom_first_reflection_positivity_check.py": {
+    "scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py": {
       "assert_count": 0,
       "claims": [
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
@@ -28300,7 +28300,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 20,
+        "C": 9,
         "D": 0
       },
       "decoration_candidate": false,

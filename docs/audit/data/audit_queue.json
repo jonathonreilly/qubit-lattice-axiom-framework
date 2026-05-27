@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 235,
     "high": 328,
-    "leaf": 297,
+    "leaf": 296,
     "medium": 311
   },
   "cycle_break_target_count": 3,
@@ -26760,33 +26760,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "nn_lattice_rescaled_continuum_identification_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10",
-        "nn_lattice_rescaled_c_arm_nlo_saddle_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_nn_rescaled_C_arm_NNLO_saddle.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35563,6 +35536,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 17,
-  "total_pending": 1171
+  "ready_count": 16,
+  "total_pending": 1170
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 528 |
+| **retained_bounded** | 529 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1171 |
+| unaudited | 1170 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 826 |
+| `audited_clean` | 827 |
 | `audited_conditional` | 76 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1400 |
+| `unaudited` | 1399 |
 
 | claim_type | count |
 |---|---:|
@@ -606,6 +606,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_c_arm_nlo_saddle_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_continuum_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_full_kernel_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -9169,6 +9170,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** sigma^2(h) = C_LO^2 * h * (A+B)/(A cos(omega h)+B), so delta_a(h) = (A+B)/(A cos(omega h)+B)-1 with d2_phase = (A/(A+B))*omega^2/2 = 1.150955, then the upstream four-point log-log fit protocol gives alpha_NLO_eff = 0.5170.  _(class `A`)_
 - **chain closes:** True — Within the narrowed bounded scope, the result follows algebraically from the retained parent saddle formula, retained harness constants, and the retained upstream finite-window diagnostic comparator. The note does not claim full empirical-alpha closure and explicitly leaves the 0.0086 residual outside the strong-closure band.
 - **rationale:** The runner source computes the closed-form phase correction, q^4 perturbative add-on, OLS alpha extraction, and per-h residual checks rather than merely printing expected values. The SHA-pinned cached run exits 0 and its PASS guards support the bounded partial claim: positive delta, alpha shift in the right direction, undershoot of empirical alpha, residual alpha gap within the weak band, max sigma^2 residual 4.38%, and h->0 recovery of C_LO^2. Because all supplied one-hop dependencies are retained_bounded/audited_clean and the source does not promote beyond partial NLO closure, the bounded theorem closes.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-window NNLO diagnostic only: in the deterministic-rescale NN harness with frozen parameters and fit window h in {0.25, 0.125, 0.0625, 0.03125}, the closed-form finite-slit-aperture NNLO computation gives alpha_NNLO_eff = 0.5247, within 0.0009 of the retained empirical alpha = 0.5256, with max fit-window sigma residual 0.205%. This excludes h = 0.015625, a full continuum operator, universal parameter claims, and any upstream status promotion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-05-27-nnlo-saddle`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying the continuum diagnostic's log-log linear fit protocol to the NNLO_full aperture model on the four-point fit window gives alpha_eff = 0.5247 and |alpha_NNLO_eff - 0.5256| = 0.0009 <= 0.005.  _(class `C`)_
+- **chain closes:** True — The source note cites retained_bounded one-hop inputs for the empirical fit, LO saddle, alpha-constrained refit, and NLO saddle. The runner recomputes the phase-series null, q6 subleading correction, closed-form finite-slit-aperture convolution, log-log alpha extraction, and bounded-support guards from the frozen harness values, then compares only to the retained four-point empirical fit window.
+- **rationale:** Clean within the bounded diagnostic scope. The load-bearing aperture correction is not a fitted parameter or a renamed target value: the runner computes the complex-erf truncated-convolution moments from fixed harness constants and applies the same four-point fit protocol used by the retained continuum diagnostic. The retained empirical alpha and sigma rows are imported transparently as comparators, and every direct dependency is retained_bounded. Residual risk remains exactly the source note's boundary: the closed-form saddle underpredicts the finer h = 0.015625 row and no full continuum operator, universal C_arm theorem, or upstream promotion is audited here.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_continuum_identification_note_2026-05-10`

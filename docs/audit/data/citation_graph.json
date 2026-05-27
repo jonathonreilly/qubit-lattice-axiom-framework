@@ -57990,7 +57990,7 @@
       "note_hash": "4b09f59d5c6ab048be8a3d34be617b42eaaf1e12dc4f72aada75c8bc782f42d5",
       "path": "docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md",
       "runner_path": "scripts/frontier_grav_wave_post_newtonian.py",
-      "title": "Gravitational Wave / Post-Newtonian Probe"
+      "title": "Gravitational Wave / Action-Form Sensitivity Probe"
     },
     "gravitomagnetic_note": {
       "claim_id": "gravitomagnetic_note",

@@ -1,0 +1,177 @@
+========================================================================
+GRAVITATIONAL WAVE / ACTION-FORM SENSITIVITY PROBE
+Bounded finite-lattice toy-model comparisons
+========================================================================
+
+Lattice: 20x20x20 = 8000 nodes
+k = 5.0, beta = 0.8
+scipy available: True
+
+========================================================================
+TEST A: GRAVITATIONAL WAVE PROPAGATION
+========================================================================
+
+  Poisson solve time: 0.06s
+
+  Field profile along z-axis from source:
+      r         f(r)    1/(4pi*r)    ratio
+      1     0.078649     0.079577   0.9883
+      2     0.035439     0.039789   0.8907
+      3     0.020050     0.026526   0.7559
+      4     0.012729     0.019894   0.6398
+      5     0.008443     0.015915   0.5305
+      6     0.005556     0.013263   0.4189
+      7     0.003394     0.011368   0.2986
+
+  Self-consistent retardation test:
+  Create field with source at (center,center,center).
+  Propagate beam. Compare force when field extends to different radii.
+
+  Full field deflection: delta_z = -0.059081
+
+  Truncated field test (field nonzero only within radius R of source):
+      R      delta_z   fraction
+      2    -0.014149     0.2395
+      4    -0.036174     0.6123
+      6    -0.057637     0.9755
+      8    -0.066264     1.1216
+      9    -0.064317     1.0886
+
+  90% of full deflection reached at R=6
+  -> Beam samples field only near its path
+  -> Field at large R from beam path is irrelevant
+  [Test A time: 1.5s]
+
+========================================================================
+TEST B: IMPOSED RETARDED SOURCE SAMPLING
+========================================================================
+
+  Part 1: RETARDED vs INSTANTANEOUS POTENTIAL
+  Source at fixed position. Field evaluated with vs without
+  retardation delay r/c_lattice.
+
+  Static source: instantaneous deflection = -0.00213348
+
+  Part 2: MOVING SOURCE — instantaneous vs retarded field
+  Source moves in y at velocity v. At each beam layer:
+    Instantaneous: Poisson solve with source at y(layer)
+    Retarded: Poisson solve with source at y(layer - delay)
+  where delay = distance / c_lattice (c=1 cell/step)
+
+       v    d_instant     d_retarded         diff     rel%
+    0.00    -0.002133      -0.002133    +0.000000     0.00%
+    0.05    -0.002756      -0.002366    -0.000390    14.16%
+    0.10    -0.002848      -0.002853    +0.000005     0.18%
+    0.20    -0.006562      -0.005641    -0.000921    14.03%
+    0.30    -0.009987      -0.008485    -0.001502    15.04%
+
+  Retardation correction fit: |inst - retard| ~ alpha * v
+  alpha = 0.004594, R^2 = 0.8052
+
+  RESULT: Retarded-vs-instantaneous difference grows with velocity.
+  The finite toy model distinguishes the imposed retarded
+  source rule from instantaneous Poisson sampling.
+  [Test B time: 3.0s]
+
+========================================================================
+TEST C: LAYER-ORDER SENSITIVITY OF FIELD-AMPLITUDE COUPLING
+========================================================================
+
+  Localized field perturbation test:
+  Add f += pert at (layer_x, center, center+2)
+  Measure detector centroid change.
+
+   layer_x   delta_z_bg   delta_z_pert  sensitivity
+         2     9.900121       9.901175    +0.105393
+         4     9.900121       9.900348    +0.022667
+         6     9.900121       9.904738    +0.461661
+         8     9.900121       9.900534    +0.041212
+        10     9.900121       9.901485    +0.136375
+        12     9.900121       9.900774    +0.065252
+        14     9.900121       9.900070    -0.005146
+        16     9.900121       9.899926    -0.019521
+
+  Sensitivity profile slope: -0.022986 per layer
+  (negative slope = later layers have less remaining path)
+
+  RESULT: Sensitivity DECREASES for later layers.
+  This is an ordered-layer sensitivity result:
+  perturbations at later layers have less remaining path to
+  accumulate deflection. No dynamical wave equation is derived.
+
+  Self-consistency retardation test:
+  Compare: (a) field from final density vs (b) field from initial guess
+
+  Beam density center of mass: (18.8, 9.9, 9.9)
+  Beam density max: 2.452245e+09
+  Beam spread: sigma_x=0.55, sigma_y=3.97, sigma_z=3.98
+  [Test C time: 2.0s]
+
+========================================================================
+TEST D: VALLEY-LINEAR vs IMPOSED f^2 ACTION
+========================================================================
+
+    strength    max_f   VL delta_z   PN delta_z    ratio    diff%
+      0.0010  0.00024    +0.000017    +0.000017   1.0003    +0.03%
+      0.0050  0.00122    +0.000077    +0.000078   1.0014    +0.14%
+      0.0100  0.00244    +0.000136    +0.000136   1.0031    +0.31%
+      0.0500  0.01218    -0.000097    -0.000090   0.9219    +7.81%
+      0.1000  0.02436    -0.002133    -0.002118   0.9926    +0.74%
+      0.5000  0.12180    -0.085818    -0.087882   1.0240    -2.40%
+      1.0000  0.24360    -0.329981    -0.342070   1.0366    -3.66%
+
+  f^2 correction exceeds 1% at strength s = 0.0500 (max f = 0.01218)
+  diff% vs max_f slope: -14.30%/unit-field
+  (diagnostic only; no physical PN coefficient is derived)
+  [Test D time: 3.6s]
+
+========================================================================
+SYNTHESIS: BOUNDED TOY-MODEL SENSITIVITY
+========================================================================
+
+1. GRAVITATIONAL WAVES:
+   Deflection saturates at R~6 from source (>90% of full).
+   The beam samples the field mostly within a few lattice spacings
+   of its path. The Poisson equation is elliptic (instantaneous),
+   so the field itself does NOT propagate as a wave.
+   HONEST NEGATIVE: no gravitational waves from the field equation.
+   However, the beam propagates at finite speed (layer by layer),
+   so information about field changes is carried at the beam speed.
+
+2. RETARDED vs INSTANTANEOUS POTENTIAL:
+   Retardation effect DETECTED (up to 15.0% at highest v).
+   The instantaneous Poisson field and imposed retarded field give
+   different deflections when the source moves. This is a
+   finite-runner sensitivity result, not a derived PN observable.
+
+3. LAYER-ORDER SENSITIVITY:
+   Sensitivity profile shows layer-order dependence:
+   later-layer perturbations have less effect (less remaining path).
+   The ordered propagation introduces a layer-ordered sensitivity.
+   This is not a dynamical gravitational-wave field equation.
+
+4. IMPOSED f^2 ACTION TERM:
+   f^2 correction DETECTABLE above strength s = 0.0500.
+   The runner can distinguish S=L(1-f) from S=L(1-f-f^2/2).
+   No physical PN coefficient or observable bridge is derived.
+
+========================================================================
+VERDICT
+========================================================================
+
+This bounded runner establishes:
+
+  - Poisson-field gravitational waves: NEGATIVE. The field is
+    elliptic/instantaneous in this model.
+  - Truncated-field sensitivity: bounded finite-lattice result.
+  - Imposed retarded-source sampling: distinguishable from
+    instantaneous sampling on this finite runner.
+  - Layer-order perturbations: sensitivity depends on layer position.
+  - Imposed f^2 action term: distinguishable from valley-linear action
+    at tested strengths.
+
+This runner does not derive GR, physical gravitational waves, a
+post-Newtonian observable, c_lattice normalization, or an f^2
+coefficient from retained framework primitives.
+
+Total runtime: 10.1s

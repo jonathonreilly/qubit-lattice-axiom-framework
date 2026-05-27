@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1187 |
+| unaudited | 1188 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1416 |
+| `unaudited` | 1417 |
 
 | claim_type | count |
 |---|---:|
@@ -85,10 +85,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2012
+- runners classified: 2013
 - runners with (C) first-principles compute hits: 979
 - runners with (D) external comparator hits: 587
-- decoration candidates (no C, no D): 338
+- decoration candidates (no C, no D): 339
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -1010,7 +1010,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `wave_direct_dm_h025_fam2_seed0_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
-| `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -14150,22 +14149,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.  _(class `A`)_
 - **chain closes:** True — The two direct retained-grade control notes provide the exact nulls, common negative sign patterns, weak-field linearity spreads, and seed0/seed1 H=0.25 values needed for the pair synthesis. The conclusion is only the bounded conjunction/comparison of those inputs, with broader portability and family-widening claims explicitly excluded.
 - **rationale:** The row is retagged from positive_theorem to bounded_theorem because its support is finite to the configured Fam2 H=0.25 two-seed ladder and one upstream control input is itself bounded. The synthesis closes as an algebraic/logical aggregation over two retained-grade control-note inputs; no runner is present or needed for this aggregation row. It is not decoration because it aggregates two independent seed-control inputs into a bounded family-pair control/asymmetry surface, rather than restating a single parent by pure algebra. Clean status does not ratify Fam3, seed widening, lab-facing magnitude, Fam1 comparison, or a general H=0.25 portability law.
-
-### `wave_direct_dm_h025_two_point_synthesis_note`
-
-- **Note:** [`WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Controlled Fam1 H=0.25 S=0.004 seed0/seed1 two-point synthesis, including null/sign/control-ladder support and the narrower conclusion that sign survives while old coarse-H seed ordering is not refinement-stable.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-aquinas-2nd`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The synthesis promotes a Fam1 H=0.25 two-seed result plus a coarse-to-fine seed-ordering reversal / uneven late-gain-compression comparison.  _(class `C`)_
-- **chain closes:** False — The H=0.25 Fam1 seed0 and seed1 fine rows are supported by the primary seed0 runner output and retained Fam1 seed0/seed1 control dependencies. The coarse-to-fine ordering reversal and uneven late-gain-compression mechanism depends on coarse-H seed-band high/low logs that are cited in the note but are not retained one-hop dependencies in the audit packet.
-- **rationale:** Issue: The note's headline depends on old coarse-H seed ordering and late-gain compression bands, but the coarse-H high/low logs are only mentioned in the source note authority chain and are not provided as retained one-hop dependencies. Why this blocks: without retained coarse-H dependency edges or runner artifacts, the audit packet verifies the fine-H seed pair/control core but cannot close the refinement-instability and compression-mechanism portion of the bounded theorem. Repair target: add retained one-hop dependencies for the coarse-H seed-band logs high/low, or attach runner/source/output artifacts that reproduce the coarse-H R_hist and late-gain band values for both seeds. Claim boundary until fixed: the clean core is limited to the controlled Fam1 H=0.25 seed0/seed1 fine-H sign/null/control-ladder comparison; the coarse-to-fine seed-ordering reversal and uneven late-gain-compression explanation remain conditional.
-- **open / conditional deps cited:**
-  - `logs/2026-04-08-wave-direct-dm-h025-high-band.txt`
-  - `logs/2026-04-08-wave-direct-dm-h025-low-band.txt`
-- **auditor confidence:** high
 
 ### `wave_equation_gravity_note`
 

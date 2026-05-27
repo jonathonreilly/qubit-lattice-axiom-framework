@@ -1,0 +1,8 @@
+loop: wave-direct-dm-h025-fam1-fine-pair-synthesis-20260527
+target_claim_id: wave_direct_dm_h025_two_point_synthesis_note
+actual_current_surface_status: proposed_retained
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+proposal_allowed: true
+audit_required_before_effective_retained: true
+next_exact_action: "Run runner, cache, pipeline, strict lint, pre-commit check, then open PR."

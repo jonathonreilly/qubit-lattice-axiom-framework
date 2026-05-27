@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -287860,7 +287859,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.322,
+      "load_bearing_score": 11.0,
       "load_bearing_step": "`Fam2`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -23%`; together with the existing `Fam2`, seed `1` control ladder, that closes the second-family fine-`H` pair without promoting a full portability law.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -288032,7 +288031,7 @@
       },
       "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Control Note",
-      "transitive_descendants": 19,
+      "transitive_descendants": 15,
       "verdict_rationale": "The finite seed0 ladder is closed by a source-visible computation whose cached output matches the note, even though the runner prints computed rows instead of classifier PASS markers. The seed1 dependency is retained-grade in the restricted packet, so the combined second-family pair claim closes only at the bounded scope. The absence of PASS markers is a classifier-format artifact here, not a runner_artifact_issue blocking a clean verdict; clean status does not promote any full H=0.25 portability law."
     },
     "wave_direct_dm_h025_fam2_seed1_control_note": {
@@ -288077,7 +288076,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 11.892,
+      "load_bearing_score": 11.587,
       "load_bearing_step": "The retained Fam2, seed 1, H = 0.25 point has an exact S = 0 null, common negative weak-field sign, low |delta_hist/s| spread, and stable normalized magnitude around -35%.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -288149,7 +288148,7 @@
       },
       "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed1 Control Note",
-      "transitive_descendants": 20,
+      "transitive_descendants": 16,
       "verdict_rationale": "The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims."
     },
     "wave_direct_dm_h025_fam2_seed1_followup_note": {
@@ -288431,13 +288430,13 @@
         "wave_direct_dm_h025_fam2_seed1_control_note",
         "wave_direct_dm_h025_fam2_seed0_control_note"
       ],
-      "direct_in_degree": 7,
+      "direct_in_degree": 6,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 7.748,
+      "load_bearing_score": 6.907,
       "load_bearing_step": "Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -288645,7 +288644,7 @@
       },
       "runner_path": null,
       "title": "Wave Direct-dM H=0.25 Fam2 Two-Point Synthesis Note",
-      "transitive_descendants": 18,
+      "transitive_descendants": 14,
       "verdict_rationale": "The row is retagged from positive_theorem to bounded_theorem because its support is finite to the configured Fam2 H=0.25 two-seed ladder and one upstream control input is itself bounded. The synthesis closes as an algebraic/logical aggregation over two retained-grade control-note inputs; no runner is present or needed for this aggregation row. It is not decoration because it aggregates two independent seed-control inputs into a bounded family-pair control/asymmetry surface, rather than restating a single parent by pure algebra. Clean status does not ratify Fam3, seed widening, lab-facing magnitude, Fam1 comparison, or a general H=0.25 portability law."
     },
     "wave_direct_dm_h025_fam3_seed0_control_note": {
@@ -289461,79 +289460,46 @@
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_two_point_synthesis_note": {
-      "audit_date": "2026-05-27T02:32:00.453925+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "wave_direct_dm_h025_fam1_seed0_control_note": "Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.",
-          "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%.",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
-        },
-        "dep_claim_type": {
-          "wave_direct_dm_h025_fam1_seed0_control_note": "bounded_theorem",
-          "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "wave_direct_dm_h025_fam1_seed0_control_note": "retained_bounded",
-          "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
-        },
-        "deps": [
-          "wave_direct_dm_h025_fam1_seed0_control_note",
-          "wave_direct_dm_h025_fam1_seed1_control_note",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-        ],
-        "load_bearing_score": 8.0,
-        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
-        "transitive_descendants": 15
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-aquinas-2nd",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The H=0.25 Fam1 seed0 and seed1 fine rows are supported by the primary seed0 runner output and retained Fam1 seed0/seed1 control dependencies. The coarse-to-fine ordering reversal and uneven late-gain-compression mechanism depends on coarse-H seed-band high/low logs that are cited in the note but are not retained one-hop dependencies in the audit packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "wave_direct_dm_h025_two_point_synthesis_note",
-      "claim_scope": "Controlled Fam1 H=0.25 S=0.004 seed0/seed1 two-point synthesis, including null/sign/control-ladder support and the narrower conclusion that sign survives while old coarse-H seed ordering is not refinement-stable.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-27T02:32:00.453925+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam1_seed1_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+        "wave_direct_dm_h025_fam1_seed1_control_note"
       ],
       "direct_in_degree": 9,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 8.587,
-      "load_bearing_step": "The synthesis promotes a Fam1 H=0.25 two-seed result plus a coarse-to-fine seed-ordering reversal / uneven late-gain-compression comparison.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "fbdabcc1347bd5ab2d21f894050fcf5c04cea80e5bb5fe375bf18850aa051d9c",
+      "note_hash": "a326ec7ba15cf86459ab3c08e29ec973c8bab7a496634e60f74133c05e8e530c",
       "note_path": "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge - Provide retained direct dependency edges or runner artifacts for the cited coarse-H seed-band logs high/low so the refinement-instability and late-gain-compression parts of the synthesis can be audited from retained provenance.",
-      "open_dependency_paths": [
-        "logs/2026-04-08-wave-direct-dm-h025-high-band.txt",
-        "logs/2026-04-08-wave-direct-dm-h025-low-band.txt"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -289657,28 +289623,89 @@
             "total_pass": 0
           },
           "verdict_rationale": "The old third sample sided with the first numerical-match verdict, but judicial review favors the second: the note depends on a missing artifact-chain provenance and the current runner did not complete under the audit timeout, so the numerical synthesis is conditional rather than independently closed. The selected H=0.25 values can remain a reported narrow synthesis, not an audit-clean numerical theorem."
+        },
+        {
+          "archived_at": "2026-05-27T12:30:34.457507+00:00",
+          "archived_for_note_hash": "fbdabcc1347bd5ab2d21f894050fcf5c04cea80e5bb5fe375bf18850aa051d9c",
+          "audit_date": "2026-05-27T02:32:00.453925+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "wave_direct_dm_h025_fam1_seed0_control_note": "Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.",
+              "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%.",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
+            },
+            "dep_claim_type": {
+              "wave_direct_dm_h025_fam1_seed0_control_note": "bounded_theorem",
+              "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "wave_direct_dm_h025_fam1_seed0_control_note": "retained_bounded",
+              "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
+            },
+            "deps": [
+              "wave_direct_dm_h025_fam1_seed0_control_note",
+              "wave_direct_dm_h025_fam1_seed1_control_note",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+            ],
+            "load_bearing_score": 8.0,
+            "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+            "transitive_descendants": 15
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-aquinas-2nd",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The H=0.25 Fam1 seed0 and seed1 fine rows are supported by the primary seed0 runner output and retained Fam1 seed0/seed1 control dependencies. The coarse-to-fine ordering reversal and uneven late-gain-compression mechanism depends on coarse-H seed-band high/low logs that are cited in the note but are not retained one-hop dependencies in the audit packet.",
+          "claim_scope": "Controlled Fam1 H=0.25 S=0.004 seed0/seed1 two-point synthesis, including null/sign/control-ladder support and the narrower conclusion that sign survives while old coarse-H seed ordering is not refinement-stable.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T02:32:00.453925+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The synthesis promotes a Fam1 H=0.25 two-seed result plus a coarse-to-fine seed-ordering reversal / uneven late-gain-compression comparison.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "missing_dependency_edge - Provide retained direct dependency edges or runner artifacts for the cited coarse-H seed-band logs high/low so the refinement-instability and late-gain-compression parts of the synthesis can be audited from retained provenance.",
+          "open_dependency_paths": [
+            "logs/2026-04-08-wave-direct-dm-h025-high-band.txt",
+            "logs/2026-04-08-wave-direct-dm-h025-low-band.txt"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "primary_runner_computes_coarse_h_comparisons": false,
+            "primary_runner_computes_control_ladders": false,
+            "primary_runner_computes_seed1": false,
+            "primary_runner_exit_code": 0,
+            "primary_runner_matches_seed0_fine_point": true,
+            "primary_runner_status": "ok",
+            "primary_runner_timeout_sec": 1800,
+            "total_pass": 1
+          },
+          "verdict_rationale": "Issue: The note's headline depends on old coarse-H seed ordering and late-gain compression bands, but the coarse-H high/low logs are only mentioned in the source note authority chain and are not provided as retained one-hop dependencies. Why this blocks: without retained coarse-H dependency edges or runner artifacts, the audit packet verifies the fine-H seed pair/control core but cannot close the refinement-instability and compression-mechanism portion of the bounded theorem. Repair target: add retained one-hop dependencies for the coarse-H seed-band logs high/low, or attach runner/source/output artifacts that reproduce the coarse-H R_hist and late-gain band values for both seeds. Claim boundary until fixed: the clean core is limited to the controlled Fam1 H=0.25 seed0/seed1 fine-H sign/null/control-ladder comparison; the coarse-to-fine seed-ordering reversal and uneven late-gain-compression explanation remain conditional."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "primary_runner_computes_coarse_h_comparisons": false,
-        "primary_runner_computes_control_ladders": false,
-        "primary_runner_computes_seed1": false,
-        "primary_runner_exit_code": 0,
-        "primary_runner_matches_seed0_fine_point": true,
-        "primary_runner_status": "ok",
-        "primary_runner_timeout_sec": 1800,
-        "total_pass": 1
+        "total_pass": 0
       },
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
-      "title": "Wave Direct-dM H=0.25 Two-Point Synthesis Note",
+      "runner_path": "scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py",
+      "title": "Wave Direct-dM H=0.25 Fam1 Fine-Pair Synthesis",
       "transitive_descendants": 16,
-      "verdict_rationale": "Issue: The note's headline depends on old coarse-H seed ordering and late-gain compression bands, but the coarse-H high/low logs are only mentioned in the source note authority chain and are not provided as retained one-hop dependencies. Why this blocks: without retained coarse-H dependency edges or runner artifacts, the audit packet verifies the fine-H seed pair/control core but cannot close the refinement-instability and compression-mechanism portion of the bounded theorem. Repair target: add retained one-hop dependencies for the coarse-H seed-band logs high/low, or attach runner/source/output artifacts that reproduce the coarse-H R_hist and late-gain band values for both seeds. Claim boundary until fixed: the clean core is limited to the controlled Fam1 H=0.25 seed0/seed1 fine-H sign/null/control-ladder comparison; the coarse-to-fine seed-ordering reversal and uneven late-gain-compression explanation remain conditional."
+      "verdict_rationale": null
     },
     "wave_direct_dm_matched_history_note": {
       "audit_date": null,

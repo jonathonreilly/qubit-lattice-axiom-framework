@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 506 |
+| **retained_bounded** | 507 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1206 |
+| unaudited | 1205 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,22 +53,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 802 |
+| `audited_clean` | 803 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1435 |
+| `unaudited` | 1434 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1068 |
+| `bounded_theorem` | 1069 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
-| `positive_theorem` | 712 |
+| `positive_theorem` | 711 |
 
 | criticality | count |
 |---|---:|
@@ -646,6 +646,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_finite_response_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_parent_source_hidden_character_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `plaquette_4d_mc_support_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9633,6 +9634,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The current one-axiom Hilbert/information-flow surface fixes only phase classes exp(iS/kappa), while the same rank-four block supports CAR/Fock and non-CAR two-qubit or ququart semantics under the same Hilbert-flow axioms.  _(class `A`)_
 - **chain closes:** True — The no-go is scoped to the explicitly stated bare Hilbert-flow surface. Rescaling invariance blocks an absolute action scale, and explicit CAR and non-CAR realizations on the same C^4 active block demonstrate underdetermination of edge statistics.
 - **rationale:** The runner completed from cache with 27/27 PASS and checks the relevant algebraic invariances, finite-matrix obstruction, CAR construction, non-CAR alternatives, and identical unitary-flow compatibility. The proof does not derive a positive physical hbar or CAR bridge; it cleanly establishes the bounded negative result that those structures are not forced by the stated one-axiom surface. The final route through a separate Clifford/coframe principle is explicitly outside this no-go scope, so it does not weaken the scoped boundary claim.
+- **auditor confidence:** high
+
+### `plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05`
+
+- **Note:** [`PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md`](../../docs/PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite numerical/artifact-supported theorem: for the accepted periodic 3 spatial + 1 derived time SU(3) Wilson plaquette evaluation surface at beta=6, the committed five-volume Monte Carlo artifacts and paired verifier reproducibly produce P_inf=0.59400 +/-0.00037 under the 1/L^4 fit, with an independent 1/L^2 estimate P_inf=0.59288 +/-0.00033, and the canonical comparator 0.5934 lies inside the primary 1/L^4 two-sigma bracket. This does not claim analytic derivation, unique Wilson-surface forcing from Cl(3)/Z3, infinite-volume physics closure beyond the fitted numerical extrapolation, or downstream parameter authority.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-dewey-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Committed five-volume SU(3) Wilson plaquette artifacts for L={3,4,5,6,8} are consumed by the verifier, which computes autocorrelation-aware block-jackknife errors, performs weighted 1/L^4 and 1/L^2 finite-size fits, checks leave-one-out sensitivity, and verifies that the primary 1/L^4 two-sigma bracket [0.59327,0.59473] contains the canonical comparator 0.5934.  _(class `D`)_
+- **chain closes:** True — The scoped claim closes from the source note, one-hop retained dependencies, runner source behavior, and cached runner output. The dependencies support only the accepted finite Wilson surface, finite plaquette diagnostic, bare-coupling setup, and retained 3+1D Wilson combinatorics. The runner output shows exit 0, five artifacts loaded, finite autocorrelation-adjusted estimates, both finite-size fits, the primary bracket containing the comparator, and PASS=11 FAIL=0. Closure is bounded to the committed artifacts and verifier protocol.
+- **rationale:** The seeded positive_theorem type overstates the nature of the result, because the claim is numerical, finite-artifact-supported, and dependent on bounded retained premises. Reclassified as bounded_theorem, the claim is clean: the packet supplies the source-note scope, retained one-hop dependencies, runner behavior, and successful cached output needed to close the artifact-verifier claim. No analytic or broader physical authority is closed.
 - **auditor confidence:** high
 
 ### `plaquette_4d_mc_support_note_2026-05-04`

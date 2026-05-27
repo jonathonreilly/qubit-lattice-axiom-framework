@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 526 |
+| **retained_bounded** | 527 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1173 |
+| unaudited | 1172 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 824 |
+| `audited_clean` | 825 |
 | `audited_conditional` | 76 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1402 |
+| `unaudited` | 1401 |
 
 | claim_type | count |
 |---|---:|
@@ -501,6 +501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7515,6 +7516,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The readout map is exactly L(u,v,w,z)=diag(u,v,w), with the z slot mapped to zero.  _(class `A`)_
 - **chain closes:** True — Given the stated single-slot images, the rank, kernel, image, fiber, and quotient claims follow by elementary linear algebra. The broader selector-admissibility factorization is explicitly excluded from the theorem under audit.
 - **rationale:** The bounded claim is a direct algebraic closure from the explicitly defined map and its computed matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]. The runner source does instantiate the relevant projectors and Γ_1 action to check the stated single-slot images, then verifies the kernel, quotient fibers, covariance, and invariant quadratic family. The note cleanly separates the unproved admissibility-implies-constancy statement as conditional, so that open extension does not contaminate the bounded theorem.
+- **auditor confidence:** high
+
+### `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded signed-algebra bridge only: assuming the retained C_3 circulant/character eigenvalue identities and the scoped equal-weight Frobenius extremum a^2 = 2|b|^2, the signed algebraic ratio Q_alg(lambda) = (sum_k lambda_k^2)/(sum_k lambda_k)^2 equals 2/3 when the denominator is nonzero. The positive-vector Koide interpretation is limited to positive eigenvalue chambers and no physical charged-lepton readout, phase selection, mass-square-root identification, or downstream Koide closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the retained Fourier identities sum(lambda_k)=3a and sum(lambda_k^2)=3a^2+6|b|^2, substitute the scoped Frobenius-extremum condition a^2=2|b|^2 to get Q_alg(lambda)=6a^2/9a^2=2/3.  _(class `A`)_
+- **chain closes:** True — All direct dependencies are retained-grade and supply exactly the algebraic surfaces used: circulant/character sums, the scoped equal-weight Frobenius extremum, and the positive-vector cone equivalence for chamber-limited interpretation. The runner verifies the exact 2/3 ratio, non-extremal controls, existence of a positive chamber, and non-positivity of some phases with PASS=9 FAIL=0.
+- **rationale:** No-go/admission gate: the row does not claim a no-go, a global positive-spectrum theorem, or a physical charged-lepton Koide derivation. Within the stated signed algebraic scope, the derivation closes by direct substitution from retained inputs and exact rational runner checks. Residual risk is explicitly outside scope: selecting the equal-weight Frobenius functional as physical, proving lambda_k=sqrt(m_k), choosing a phase chamber, or promoting any downstream Koide parent requires separate retained bridge work.
 - **auditor confidence:** high
 
 ### `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`

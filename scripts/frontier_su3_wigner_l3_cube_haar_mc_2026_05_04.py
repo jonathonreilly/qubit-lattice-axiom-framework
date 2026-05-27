@@ -195,18 +195,18 @@ def chi_02(U_p: np.ndarray) -> complex:
 
 
 def chi_21(U_p: np.ndarray) -> complex:
-    """chi_(2,1)(U): mixed symmetric. Use Schur formula via fundamental.
+    """chi_(2,1)(U) from the SU(3) Clebsch-Gordan product.
 
-    For SU(3): chi_(2,1) = chi_(1,1) chi_(1,0) - chi_(1,0) - chi_(2,0)
-    (fusion (1,1) ⊗ (1,0) = (2,1) + (1,0) + ... — derive carefully)
+    The product decomposition is
 
-    Simpler: chi_(2,1) = chi_(1,0) chi_(1,1) - chi_(1,0) chi_(0,0) - chi_(0,1)
-    (from (1,1) ⊗ (1,0) = (2,1) + (1,0)+ (0,2))
+        (1,0) tensor (1,1) = (2,1) + (0,2) + (1,0).
+
+    Hence chi_(2,1) = chi_(1,0) chi_(1,1) - chi_(0,2) - chi_(1,0).
+    At the identity this gives 3*8 - 6 - 3 = 15, matching dim(2,1).
     """
     t = np.trace(U_p)
-    td = np.trace(U_p.conj().T)
     chi11 = abs(t) ** 2 - 1
-    return t * chi11 - t - td
+    return t * chi11 - chi_02(U_p) - t
 
 
 def all_characters(U_p: np.ndarray) -> Dict[Tuple[int, int], complex]:
@@ -337,6 +337,27 @@ def driver() -> int:
     else:
         print(f"  FAIL: expected 81, got {n_plaq}")
         fail_count += 1
+    print()
+
+    print("--- Character normalization sanity checks ---")
+    identity = np.eye(N_COLOR, dtype=complex)
+    for lam, chi_func in {
+        (0, 0): chi_00,
+        (1, 0): chi_10,
+        (0, 1): chi_01,
+        (1, 1): chi_11,
+        (2, 0): chi_20,
+        (0, 2): chi_02,
+        (2, 1): chi_21,
+    }.items():
+        value = chi_func(identity)
+        expected = dim_su3(*lam)
+        if abs(value - expected) < 1e-10:
+            print(f"  PASS: chi_{lam}(I) = dim{lam} = {expected}")
+            pass_count += 1
+        else:
+            print(f"  FAIL: chi_{lam}(I) = {value}, expected {expected}")
+            fail_count += 1
     print()
 
     n_samples = N_SAMPLES_DEFAULT

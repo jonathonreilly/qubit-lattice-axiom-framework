@@ -41835,14 +41835,14 @@
     },
     "assumption_derivation_ledger": {
       "claim_id": "assumption_derivation_ledger",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "rconn_derived_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "184bcf9134f431bc1a69e15807ee8fbf40e9b6da8dbc845ac90e6cbe35dcf585",
+      "note_hash": "f89c8f21a5baf645d3b56967dbee3b86095f30a212c906ee8bfb8a3f352de17d",
       "path": "docs/ASSUMPTION_DERIVATION_LEDGER.md",
       "runner_path": null,
       "title": "Assumption / Derivation Ledger"
@@ -86224,11 +86224,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 637,
+      "bounded_theorem": 638,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
-      "none": 1441,
+      "none": 1440,
       "open_gate": 50,
       "positive_theorem": 171
     },

@@ -26417,10 +26417,6 @@
       "to": "wave_direct_dm_h025_fam1_seed1_control_note"
     },
     {
-      "from": "wave_direct_dm_h025_two_point_synthesis_note",
-      "to": "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-    },
-    {
       "from": "wave_direct_dm_matched_history_note",
       "to": "wave_direct_dm_family_scout_note"
     },
@@ -81276,17 +81272,13 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam1_seed1_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+        "wave_direct_dm_h025_fam1_seed1_control_note"
       ],
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "note_hash": "fbdabcc1347bd5ab2d21f894050fcf5c04cea80e5bb5fe375bf18850aa051d9c",
+      "helper_runner_paths": [],
+      "note_hash": "a326ec7ba15cf86459ab3c08e29ec973c8bab7a496634e60f74133c05e8e530c",
       "path": "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
-      "title": "Wave Direct-dM H=0.25 Two-Point Synthesis Note"
+      "runner_path": "scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py",
+      "title": "Wave Direct-dM H=0.25 Fam1 Fine-Pair Synthesis"
     },
     "wave_direct_dm_matched_history_note": {
       "claim_id": "wave_direct_dm_matched_history_note",
@@ -85415,7 +85407,7 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9740,
+    "edge_count": 9739,
     "leaf_count": 792,
     "node_count": 2547,
     "root_count": 851,

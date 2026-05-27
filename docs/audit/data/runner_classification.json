@@ -23701,16 +23701,16 @@
       "runner": "scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py"
     },
     "wave_direct_dm_h025_two_point_synthesis_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/wave_direct_dm_h025_point_runner.py"
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py"
     },
     "wave_direct_dm_matched_history_note": {
       "assert_count": 0,
@@ -55485,6 +55485,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py": {
+      "assert_count": 1,
+      "claims": [
+        "wave_direct_dm_h025_two_point_synthesis_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py": {
       "assert_count": 0,
       "claims": [
@@ -55551,8 +55566,7 @@
         "wave_direct_dm_h025_fam2_seed0_boundary_note",
         "wave_direct_dm_h025_fam2_seed1_followup_note",
         "wave_direct_dm_h025_high_band_boundary_note",
-        "wave_direct_dm_h025_low_band_retention_note",
-        "wave_direct_dm_h025_two_point_synthesis_note"
+        "wave_direct_dm_h025_low_band_retention_note"
       ],
       "counts": {
         "A": 0,
@@ -55929,15 +55943,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 338,
+    "decoration_candidates": 339,
     "dominant_class_distribution": {
       "A": 236,
-      "B": 284,
+      "B": 285,
       "C": 756,
       "D": 300,
       "none": 437
     },
-    "runners_classified": 2013,
+    "runners_classified": 2014,
     "runners_with_C": 980,
     "runners_with_D": 587
   }

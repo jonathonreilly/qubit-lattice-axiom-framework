@@ -34,6 +34,16 @@ closure:
 17. a no-go for deriving the physical nontrivial top line from the existing
     C3/dihedral reflection-basepoint structure alone.
 
+Cycle 7 dihedral basepoint anchor obstruction science commit pushed and
+recorded in PR #1980:
+
+```text
+9470accf9a53c56a1e0ff8c1e22c85c37d75b5ce
+```
+
+PR #1980 body was updated with the dihedral basepoint anchor obstruction
+result, artifacts, verification, and next exact action.
+
 New result:
 
 ```text

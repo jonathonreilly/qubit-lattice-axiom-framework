@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 32345
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T21:23:29Z"
+last_checkpoint_utc: "2026-05-27T21:25:33Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_dihedral_basepoint_anchor_obstruction
@@ -195,7 +195,7 @@ commands_run:
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: pending update for dihedral basepoint anchor obstruction block
-latest_science_commit: 43f573469664bc58d683c6f24ce9b86a505ad189
+pr_status: "PR #1980 body updated with dihedral basepoint anchor obstruction result, artifacts, verification, and next exact action."
+latest_science_commit: 9470accf9a53c56a1e0ff8c1e22c85c37d75b5ce
 next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls; if staying on C3, derive a genuinely new same-surface physical basepoint/orbit-member theorem beyond the existing reflection axis, excluding P_0 and supplying W/top matrix elements."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

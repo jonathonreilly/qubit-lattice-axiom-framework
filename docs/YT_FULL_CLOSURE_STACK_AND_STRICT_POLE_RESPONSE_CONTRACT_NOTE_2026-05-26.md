@@ -76,6 +76,9 @@ closed exactly:
   C3 circulant dynamics ordering source-law boundary: derived B_x fixes the
   source derivative, but base dynamics, orientation/phase law, and spectral
   ordering remain load-bearing
+  strict sparse pole-response availability audit: the harness and no-kappa
+  candidate are present, but no accepted backend or controlled W/top pole-row
+  certificate is present
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -92,6 +95,8 @@ still open:
   accepted base C3 circulant dynamics and orientation/phase law for y_0
   accepted spectral ordering/exclusion of the C3 singlet line as the physical
   top row
+  accepted strict same-source top/W pole rows, or microscopic
+  backend/projector/matrix-element theorem
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -732,6 +737,30 @@ next non-compute route is therefore an accepted base C3 circulant dynamics
 theorem with orientation/phase law and top-line ordering, not another source
 normalization argument.
 
+The strict sparse top/W pole-response availability audit then checks the
+remaining bypass route on the current branch.  It finds the sparse harness and
+native no-`kappa` candidate, but the strict positive evidence artifacts are
+absent:
+
+```text
+outputs/yt_fh_top_w_strict_response_rows_2026-05-25.json
+outputs/yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json
+```
+
+The native candidate still records:
+
+```yaml
+accepted_same_surface_transfer_backend_present: false
+accepted_top_pole_isolated: false
+accepted_w_pole_isolated: false
+contact_subtraction_done: false
+finite_volume_ir_controls_pass: false
+same_model_class: false
+```
+
+So strict response remains the clean positive route, but it is not present on
+the current branch.
+
 ## Non-Claims
 
 This note does not:
@@ -769,14 +798,16 @@ proposal_allowed_reason: |
   The C3 circulant dynamics ordering boundary further shows that derived B_x
   fixes the source derivative but not the base circulant dynamics, phase law,
   or spectral ordering.
+  The strict sparse availability audit confirms that accepted backend and
+  controlled W/top pole-row artifacts are absent on the current branch.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: accepted base C3 circulant dynamics with orientation/phase
-  law and top-line ordering, or strict same-source top/W response evidence
+first_open_gate: accepted strict same-source top/W pole rows, or microscopic
+  backend/projector/matrix-element theorem
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
-  element through accepted spectral dynamics/source law
+  element through accepted pole rows or microscopic dynamics
 backup_route: audit accepts primitive top-source premise as physical source law
 ```
 

@@ -97,3 +97,32 @@ Verification recorded with this review:
   mass-ordering obstruction, and direct sparse certificate.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 4
+
+Scope:
+
+- strict sparse top/W pole-response availability audit note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks expected strict-row artifacts are absent and validates direct sparse/native candidate status fields. |
+| Physics claim boundary | PASS | Status is no-go route pruning for current branch availability only; future strict evidence remains live. |
+| Imports / support | DISCLOSED | Accepted backend, pole projectors, and controlled pole rows are named as open. |
+| Nature retention | OPEN | No positive closure; no strict rows are present. |
+| Audit compatibility | PASS | Claim status is explicit and conservative. |
+
+Disposition: pass for no-go route-availability artifact; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=74 FAIL=0`
+- Full stack runner: `PASS=241 FAIL=0`
+- Adjacent Y_T runners passed: direct sparse certificate, native backend
+  candidate, backend projector obstruction, and first-principles transfer.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

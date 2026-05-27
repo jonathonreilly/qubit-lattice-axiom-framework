@@ -93,7 +93,7 @@
     {
       "closed": true,
       "name": "physical top generation projector",
-      "next_action": "derive accepted base C3 circulant dynamics with orientation/phase law and top-line ordering, or produce strict pole-row data",
+      "next_action": "produce accepted strict top/W pole rows, or derive microscopic backend/projector/matrix-element theorem",
       "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned",
       "step": 6.5
     },
@@ -106,10 +106,10 @@
     }
   ],
   "fail_count": 0,
-  "first_open_gate": "accepted base C3 circulant dynamics with orientation/phase law and top-line ordering, or strict same-source top/W response evidence",
-  "pass_count": 234,
+  "first_open_gate": "accepted strict same-source top/W pole rows, or microscopic backend/projector/matrix-element theorem",
+  "pass_count": 241,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering, and the current real/reflection-even same-surface inputs do not derive a non-mass-ordering top-line law. Derived B_x also does not derive the base C3 circulant dynamics or spectral ordering. First-principles transfer response is now closed, but the top sector matrix element remains load-bearing. The factorization boundary shows exactly how A/sqrt(12) would follow from accepted generator factorization plus a nontrivial top line, but those inputs remain open and coefficient-certified top/W response evidence remains absent.",
+  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering, and the current real/reflection-even same-surface inputs do not derive a non-mass-ordering top-line law. Derived B_x also does not derive the base C3 circulant dynamics or spectral ordering. The strict sparse route is unavailable on the current branch because accepted backend/projector/controlled pole-row artifacts are absent. First-principles transfer response is now closed, but the top sector matrix element remains load-bearing. The factorization boundary shows exactly how A/sqrt(12) would follow from accepted generator factorization plus a nontrivial top line, but those inputs remain open and coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
     "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
     "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py",
@@ -139,6 +139,7 @@
     "same_source_fail_count": 0,
     "same_surface_top_matrix_element_factorization_fail_count": 0,
     "strict_same_source_obstruction_fail_count": 0,
+    "strict_sparse_top_w_availability_audit_fail_count": 0,
     "strict_top_fail_count": 0,
     "strict_wz_fail_count": 0,
     "top_carrier_fail_count": 0,

@@ -32,6 +32,9 @@ This runner verifies the current burn-down state:
 * The C3 circulant source-law shortcut is now pruned at the next layer:
   derived B_x fixes the source derivative, but base circulant dynamics,
   orientation/phase law, and spectral ordering remain load-bearing.
+* The strict sparse pole-response availability audit confirms the harness and
+  no-kappa candidate are present, but no accepted backend or strict W/top pole
+  rows are present on the branch.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -86,6 +89,7 @@ C3_REAL_RECORD_REFLECTION_EVEN_SOURCE = DOCS / "YT_C3_REAL_RECORD_REFLECTION_EVE
 C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION = DOCS / "YT_C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_NOTE_2026-05-27.md"
 C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION = DOCS / "YT_C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_NOTE_2026-05-27.md"
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY = DOCS / "YT_C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_NOTE_2026-05-27.md"
+STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT = DOCS / "YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -119,6 +123,7 @@ C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_OUT = ROOT / "outputs" / "yt_c3_real_recor
 C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_top_line_mass_ordering_obstruction_2026-05-27.json"
 C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_real_same_surface_top_line_law_obstruction_2026-05-27.json"
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_circulant_dynamics_ordering_source_law_boundary_2026-05-27.json"
+STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT = ROOT / "outputs" / "yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -197,6 +202,7 @@ def part1_anchors() -> dict[str, str]:
         C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION,
         C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION,
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY,
+        STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -229,6 +235,7 @@ def part1_anchors() -> dict[str, str]:
         C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT,
         C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT,
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT,
+        STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -264,6 +271,7 @@ def part1_anchors() -> dict[str, str]:
         "mass-ordering obstruction",
         "real same-surface top-line law obstruction",
         "C3 circulant dynamics ordering source-law boundary",
+        "strict sparse pole-response availability audit",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -315,6 +323,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_top_line_mass_ordering_obstruction = load_json(C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT)
     c3_real_same_surface_top_line_law_obstruction = load_json(C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT)
     c3_circulant_dynamics_ordering_source_law_boundary = load_json(C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT)
+    strict_sparse_top_w_availability_audit = load_json(STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -431,6 +440,10 @@ def part2_support_outputs() -> dict[str, Any]:
     check("C3 dynamics boundary says source derivative is derived", c3_circulant_dynamics_ordering_source_law_boundary.get("certificate_boundary", {}).get("source_derivative_bx_derived") is True)
     check("C3 dynamics boundary leaves top ordering open", c3_circulant_dynamics_ordering_source_law_boundary.get("certificate_boundary", {}).get("top_line_ordering_derived") is False)
     check("C3 dynamics boundary leaves phase law open", c3_circulant_dynamics_ordering_source_law_boundary.get("certificate_boundary", {}).get("orientation_phase_law_for_y0_derived") is False)
+    check("strict sparse availability audit passed", strict_sparse_top_w_availability_audit.get("fail_count") == 0, strict_sparse_top_w_availability_audit.get("fail_count"))
+    check("strict sparse availability audit is route pruning", strict_sparse_top_w_availability_audit.get("trace_class") == "negative_route_pruning")
+    check("strict sparse audit confirms accepted backend absent", strict_sparse_top_w_availability_audit.get("certificate_boundary", {}).get("accepted_same_surface_backend_present") is False)
+    check("strict sparse audit confirms strict positive certificate absent", strict_sparse_top_w_availability_audit.get("certificate_boundary", {}).get("strict_positive_certificate_present") is False)
 
     return {
         "fisher": fisher,
@@ -464,6 +477,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_top_line_mass_ordering_obstruction": c3_top_line_mass_ordering_obstruction,
         "c3_real_same_surface_top_line_law_obstruction": c3_real_same_surface_top_line_law_obstruction,
         "c3_circulant_dynamics_ordering_source_law_boundary": c3_circulant_dynamics_ordering_source_law_boundary,
+        "strict_sparse_top_w_availability_audit": strict_sparse_top_w_availability_audit,
     }
 
 
@@ -670,7 +684,7 @@ def main() -> int:
             "name": "physical top generation projector",
             "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned",
             "closed": True,
-            "next_action": "derive accepted base C3 circulant dynamics with orientation/phase law and top-line ordering, or produce strict pole-row data",
+            "next_action": "produce accepted strict top/W pole rows, or derive microscopic backend/projector/matrix-element theorem",
         },
         {
             "step": 7,
@@ -691,6 +705,9 @@ def main() -> int:
             "and the current real/reflection-even same-surface inputs do not "
             "derive a non-mass-ordering top-line law. Derived B_x also does "
             "not derive the base C3 circulant dynamics or spectral ordering. "
+            "The strict sparse route is unavailable on the current branch "
+            "because accepted backend/projector/controlled pole-row artifacts "
+            "are absent. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -699,7 +716,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted base C3 circulant dynamics with orientation/phase law and top-line ordering, or strict same-source top/W response evidence",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or microscopic backend/projector/matrix-element theorem",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -733,6 +750,7 @@ def main() -> int:
             "c3_top_line_mass_ordering_obstruction_fail_count": support_outputs["c3_top_line_mass_ordering_obstruction"].get("fail_count"),
             "c3_real_same_surface_top_line_law_obstruction_fail_count": support_outputs["c3_real_same_surface_top_line_law_obstruction"].get("fail_count"),
             "c3_circulant_dynamics_ordering_source_law_boundary_fail_count": support_outputs["c3_circulant_dynamics_ordering_source_law_boundary"].get("fail_count"),
+            "strict_sparse_top_w_availability_audit_fail_count": support_outputs["strict_sparse_top_w_availability_audit"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

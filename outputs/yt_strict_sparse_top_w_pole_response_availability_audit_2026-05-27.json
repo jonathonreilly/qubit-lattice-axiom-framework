@@ -1,0 +1,50 @@
+{
+  "actual_current_surface_status": "no-go",
+  "anchors": {
+    "backend_obstruction_status": "no-go",
+    "direct_sparse_status": "bounded-support microbench / open strict-response backend",
+    "full_stack_status": "exact-support / open strict-response gate",
+    "native_backend_status": "bounded-support backend candidate"
+  },
+  "audit_required_before_effective_retained": true,
+  "availability_witness": {
+    "candidate_action_backend_status": "blocked_no_accepted_backend",
+    "direct_sparse_certificate_present": true,
+    "native_candidate_backend": {
+      "accepted_same_surface_transfer_backend_present": false,
+      "accepted_top_pole_isolated": false,
+      "accepted_w_pole_isolated": false,
+      "contact_subtraction_done": false,
+      "finite_volume_ir_controls_pass": false,
+      "readout_equals_1_over_sqrt6": true,
+      "same_model_class": false
+    },
+    "strict_positive_certificate_passes": false,
+    "strict_source_higgs_rows_artifact_present": false,
+    "strict_top_w_rows_artifact_present": false
+  },
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_same_surface_backend_present": false,
+    "accepted_top_pole_isolated": false,
+    "accepted_w_pole_isolated": false,
+    "coefficient_certified_dM_W_row_present": false,
+    "coefficient_certified_dM_t_row_present": false,
+    "contact_fv_ir_model_class_controls_present": false,
+    "native_no_kappa_candidate_present": true,
+    "no_forbidden_imports": true,
+    "strict_positive_certificate_present": false,
+    "strict_sparse_harness_present": true
+  },
+  "claim_id": "yt_strict_sparse_top_w_pole_response_availability_audit_note_2026-05-27",
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py",
+  "next_ranked_route": "new microscopic backend/projector/matrix-element theorem",
+  "pass_count": 74,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The strict sparse harness and no-kappa candidate are present, but the accepted same-surface backend, isolated W/top projectors, and controlled coefficient-certified pole rows are absent.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "current branch already contains strict same-source top/W pole-response evidence",
+  "route_still_live": "produce accepted strict top/W pole rows or derive the accepted backend/projectors/matrix elements from microscopic dynamics",
+  "trace_class": "negative_route_pruning"
+}

@@ -7,7 +7,9 @@ closure:
 2. a no-go for the current non-mass-ordering real same-surface C3 top-line
    shortcut;
 3. a no-go for the shortcut from derived `B_x` source tangent to accepted
-   base C3 circulant dynamics and top spectral ordering.
+   base C3 circulant dynamics and top spectral ordering;
+4. a strict sparse pole-response availability audit showing the current branch
+   lacks accepted W/top pole-row evidence.
 
 New result:
 
@@ -67,6 +69,19 @@ x0=-1, y0=0 -> nontrivial block largest but degenerate
 Thus the remaining C3 route needs an accepted base dynamics/orientation-phase
 law and top-line ordering, not another source-normalization argument.
 
+Fourth result:
+
+```text
+strict sparse harness + no-kappa native candidate
+  -/-> strict positive top/W pole-response certificate
+```
+
+The expected strict-row artifacts are absent, and the native candidate still
+records `accepted_same_surface_transfer_backend_present: false`,
+`accepted_top_pole_isolated: false`, `accepted_w_pole_isolated: false`,
+`contact_subtraction_done: false`, `finite_volume_ir_controls_pass: false`,
+and `same_model_class: false`.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -78,6 +93,9 @@ Artifacts:
 - `docs/YT_C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py`
 - `outputs/yt_c3_circulant_dynamics_ordering_source_law_boundary_2026-05-27.json`
+- `docs/YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py`
+- `outputs/yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
@@ -85,7 +103,8 @@ Verification so far:
 - `python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py` -> `SUMMARY: PASS=77 FAIL=0`
 - `python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `SUMMARY: PASS=104 FAIL=0`
 - `python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py` -> `SUMMARY: PASS=95 FAIL=0`
-- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=234 FAIL=0`
+- `python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `SUMMARY: PASS=74 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=241 FAIL=0`
 - `python3 scripts/frontier_yt_first_principles_transfer_response_boundary.py` -> `SUMMARY: PASS=56 FAIL=0`
 - `python3 scripts/frontier_yt_c3_real_record_reflection_even_source.py` -> `SUMMARY: PASS=76 FAIL=0`
 - `python3 scripts/frontier_yt_c3_nontrivial_top_line_assignment_boundary.py` -> `SUMMARY: PASS=81 FAIL=0`
@@ -106,7 +125,7 @@ No `POSITIVE_CLOSURE` marker was written.
 Next exact action:
 
 ```text
-attack strict sparse top/W pole-response evidence on an accepted backend, or
-derive a new microscopic base-dynamics/orientation theorem that supplies the
-C3 circulant top spectral ordering.
+derive a new microscopic backend/projector/matrix-element theorem, or obtain
+accepted strict same-source top/W pole-row data with contact, FV/IR, and
+model-class controls.
 ```

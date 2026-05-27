@@ -41,3 +41,16 @@ additional phase/order theorem. The next live routes are strict top/W pole
 rows or a new microscopic base-dynamics/orientation theorem. No retained or
 proposed-retained Y_T closure is claimed.
 ```
+
+Then append the fourth block:
+
+```text
+## 2026-05-27 Update: Strict Sparse Top/W Pole-Response Availability Audit
+
+Added a branch-local availability audit for the strict pole-response bypass.
+The sparse harness and no-kappa native candidate are present, but accepted
+same-surface backend/projectors and controlled W/top pole rows are absent.
+The next live routes are accepted strict pole-row data or a microscopic
+backend/projector/matrix-element theorem. No retained or proposed-retained
+Y_T closure is claimed.
+```

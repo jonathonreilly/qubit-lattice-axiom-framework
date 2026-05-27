@@ -5,6 +5,7 @@
 Selected routes: same-surface top sector matrix-element factorization boundary,
 then non-mass-ordering real same-surface C3 top-line law obstruction.
 The third route tested the C3 circulant dynamics/source-law shortcut.
+The fourth route audited strict sparse pole-response evidence availability.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -12,7 +13,7 @@ The third route tested the C3 circulant dynamics/source-law shortcut.
 | Treat `B_x` alone as coefficient certificate | no-go shortcut test | 2 | Pruned: `P_0` gives `A/sqrt(3)` |
 | Non-mass-ordering C3 top-line law | no-go shortcut test | 3 | Pruned on current real/reflection-even C3 support |
 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | no-go shortcut test | 3 | Pruned as source-derivative shortcut; base dynamics/order still open |
-| Strict sparse top/W pole-response evidence | exact runner/certificate | 3 | Best next bypass route; current harness exists but no accepted backend/pole rows |
+| Strict sparse top/W pole-response evidence | availability audit | 3 | Audited absent on current branch; harness/candidate only |
 
 ## Stuck Fan-Out
 
@@ -27,5 +28,5 @@ The third route tested the C3 circulant dynamics/source-law shortcut.
 | Strict evidence route | Inspect current sparse certificate | Harness exists; accepted backend and pole rows absent |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-microscopic base-dynamics/orientation theorem or strict pole rows. It does not
-close the coefficient row.
+microscopic backend/projector/matrix-element theorem or accepted strict pole
+rows. It does not close the coefficient row.

@@ -28,3 +28,7 @@
   but does not derive the base C3 circulant dynamics or spectral ordering.
   Real/reflection-even base dynamics leaves the nontrivial block degenerate;
   complex/orientation-odd dynamics needs an additional base `y_0` phase law.
+- New in the fourth block: current branch artifacts do not contain strict
+  same-source top/W pole-response evidence. The harness and no-kappa candidate
+  are present, but accepted backend/projectors and controlled W/top pole rows
+  are absent.

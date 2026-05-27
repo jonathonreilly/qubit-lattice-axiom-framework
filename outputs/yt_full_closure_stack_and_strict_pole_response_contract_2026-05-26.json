@@ -93,8 +93,8 @@
     {
       "closed": true,
       "name": "physical top generation projector",
-      "next_action": "derive physical connected/reflection-even source authority and nontrivial top-line ordering, or produce strict pole-row data",
-      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open_lsp_and_orientation_shortcuts_pruned_connected_reflection_even_bx_candidate_exact_support",
+      "next_action": "derive physical connected/reflection-even source authority plus nontrivial top-line ordering, or produce strict pole-row data",
+      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open_lsp_and_orientation_shortcuts_pruned_connected_reflection_even_bx_candidate_exact_support_nontrivial_top_line_shortcut_pruned",
       "step": 6.5
     },
     {
@@ -107,7 +107,7 @@
   ],
   "fail_count": 0,
   "first_open_gate": "strict same-source top/W response evidence unless audit accepts primitive top-source premise",
-  "pass_count": 171,
+  "pass_count": 178,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. Coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
@@ -117,6 +117,7 @@
   ],
   "support_output_status": {
     "c3_connected_reflection_even_source_candidate_fail_count": 0,
+    "c3_nontrivial_top_line_assignment_boundary_fail_count": 0,
     "c3_source_direction_nogo_fail_count": 0,
     "c3_spectral_projector_support_fail_count": 0,
     "c3_spectral_source_response_nogo_fail_count": 0,

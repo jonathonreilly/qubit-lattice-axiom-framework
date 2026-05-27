@@ -14,6 +14,9 @@ This runner verifies the current burn-down state:
   those supplied premises it selects B_x and gives 1/sqrt(6) on nontrivial
   C3 character lines, while leaving the physical premises and top-line
   assignment open.
+* The nontrivial top-line assignment shortcut is now pruned: B_x gives
+  2/sqrt(6) on the C3 singlet line and 1/sqrt(6) only on the nontrivial
+  character lines.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -57,6 +60,7 @@ C3_SOURCE_DIRECTION_NOGO = DOCS / "YT_C3_SOURCE_DIRECTION_SELECTION_NO_GO_NOTE_2
 LSP_C3_SOURCE_DIRECTION_BOUNDARY = DOCS / "YT_LSP_PROJECTIVE_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md"
 POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY = DOCS / "YT_POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md"
 C3_CONNECTED_REFLECTION_EVEN_SOURCE_CANDIDATE = DOCS / "YT_C3_CONNECTED_REFLECTION_EVEN_SOURCE_DIRECTION_CANDIDATE_NOTE_2026-05-27.md"
+C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY = DOCS / "YT_C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -82,6 +86,7 @@ C3_SOURCE_DIRECTION_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_direction_select
 LSP_C3_SOURCE_DIRECTION_BOUNDARY_OUT = ROOT / "outputs" / "yt_lsp_projective_c3_source_direction_boundary_2026-05-27.json"
 POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_OUT = ROOT / "outputs" / "yt_positivity_orientation_c3_source_direction_boundary_2026-05-27.json"
 C3_CONNECTED_REFLECTION_EVEN_SOURCE_CANDIDATE_OUT = ROOT / "outputs" / "yt_c3_connected_reflection_even_source_direction_candidate_2026-05-27.json"
+C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_nontrivial_top_line_assignment_boundary_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -152,6 +157,7 @@ def part1_anchors() -> dict[str, str]:
         LSP_C3_SOURCE_DIRECTION_BOUNDARY,
         POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY,
         C3_CONNECTED_REFLECTION_EVEN_SOURCE_CANDIDATE,
+        C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -176,6 +182,7 @@ def part1_anchors() -> dict[str, str]:
         LSP_C3_SOURCE_DIRECTION_BOUNDARY_OUT,
         POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_OUT,
         C3_CONNECTED_REFLECTION_EVEN_SOURCE_CANDIDATE_OUT,
+        C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -202,6 +209,7 @@ def part1_anchors() -> dict[str, str]:
         "positivity/orientation support selects C3 and an oriented splitter only",
         "connected + reflection-even source conditions select B_x",
         "nontrivial C3 character lines have response magnitude 1/sqrt(6)",
+        "top-line nontriviality remains load-bearing",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -245,6 +253,7 @@ def part2_support_outputs() -> dict[str, Any]:
     lsp_c3_source_direction_boundary = load_json(LSP_C3_SOURCE_DIRECTION_BOUNDARY_OUT)
     positivity_orientation_c3_source_direction_boundary = load_json(POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_OUT)
     c3_connected_reflection_even_source_candidate = load_json(C3_CONNECTED_REFLECTION_EVEN_SOURCE_CANDIDATE_OUT)
+    c3_nontrivial_top_line_assignment_boundary = load_json(C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -309,6 +318,10 @@ def part2_support_outputs() -> dict[str, Any]:
     check("C3 connected/reflection-even candidate selects B_x under conditions", c3_connected_reflection_even_source_candidate.get("certificate_boundary", {}).get("candidate_direction_bx_selected_under_conditions") is True)
     check("C3 connected/reflection-even candidate gives nontrivial 1/sqrt(6)", c3_connected_reflection_even_source_candidate.get("spectral_response_witness", {}).get("nontrivial_line_magnitude") == "1/sqrt(6)")
     check("C3 connected/reflection-even candidate keeps physical premises open", c3_connected_reflection_even_source_candidate.get("certificate_boundary", {}).get("physical_top_line_nontrivial_derived") is False)
+    check("C3 nontrivial top-line boundary passed", c3_nontrivial_top_line_assignment_boundary.get("fail_count") == 0, c3_nontrivial_top_line_assignment_boundary.get("fail_count"))
+    check("C3 nontrivial top-line boundary is route pruning", c3_nontrivial_top_line_assignment_boundary.get("trace_class") == "negative_route_pruning")
+    check("C3 nontrivial top-line boundary keeps assignment live", "nontrivial top-line assignment" in c3_nontrivial_top_line_assignment_boundary.get("route_still_live", ""))
+    check("C3 singlet top assignment differs by factor two", c3_nontrivial_top_line_assignment_boundary.get("response_witness", {}).get("assignment_witness", {}).get("top_line_P0_magnitude") == "2/sqrt(6)")
 
     return {
         "fisher": fisher,
@@ -334,6 +347,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "lsp_c3_source_direction_boundary": lsp_c3_source_direction_boundary,
         "positivity_orientation_c3_source_direction_boundary": positivity_orientation_c3_source_direction_boundary,
         "c3_connected_reflection_even_source_candidate": c3_connected_reflection_even_source_candidate,
+        "c3_nontrivial_top_line_assignment_boundary": c3_nontrivial_top_line_assignment_boundary,
     }
 
 
@@ -538,9 +552,9 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open_lsp_and_orientation_shortcuts_pruned_connected_reflection_even_bx_candidate_exact_support",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open_lsp_and_orientation_shortcuts_pruned_connected_reflection_even_bx_candidate_exact_support_nontrivial_top_line_shortcut_pruned",
             "closed": True,
-            "next_action": "derive physical connected/reflection-even source authority and nontrivial top-line ordering, or produce strict pole-row data",
+            "next_action": "derive physical connected/reflection-even source authority plus nontrivial top-line ordering, or produce strict pole-row data",
         },
         {
             "step": 7,
@@ -587,6 +601,7 @@ def main() -> int:
             "lsp_c3_source_direction_boundary_fail_count": support_outputs["lsp_c3_source_direction_boundary"].get("fail_count"),
             "positivity_orientation_c3_source_direction_boundary_fail_count": support_outputs["positivity_orientation_c3_source_direction_boundary"].get("fail_count"),
             "c3_connected_reflection_even_source_candidate_fail_count": support_outputs["c3_connected_reflection_even_source_candidate"].get("fail_count"),
+            "c3_nontrivial_top_line_assignment_boundary_fail_count": support_outputs["c3_nontrivial_top_line_assignment_boundary"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

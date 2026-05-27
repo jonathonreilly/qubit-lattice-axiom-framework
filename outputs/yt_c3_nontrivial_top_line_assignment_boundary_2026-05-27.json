@@ -1,0 +1,42 @@
+{
+  "actual_current_surface_status": "no-go",
+  "anchors": {
+    "c3_projector_support_status": "exact-support",
+    "connected_candidate_status": "exact-support",
+    "top_projector_obstruction_status": "no-go"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "bx_source_direction_selected_under_conditions": true,
+    "c3_spectral_projectors_available": true,
+    "connected_reflection_even_source_direction_available": true,
+    "lsp_projective_instruments_available_for_supplied_projectors": true,
+    "no_forbidden_imports": true,
+    "physical_top_line_nontrivial_derived": false,
+    "strict_top_w_response_certificate_present": false,
+    "trivial_c3_line_excluded_as_top": false
+  },
+  "claim_id": "yt_c3_nontrivial_top_line_assignment_boundary_note_2026-05-27",
+  "conditional_surface_status": "exact-support if nontrivial top-line assignment is supplied",
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_nontrivial_top_line_assignment_boundary.py",
+  "pass_count": 81,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The connected/reflection-even B_x source gives 1/sqrt(6) only on nontrivial C3 character lines. The physical top-line assignment is not derived on the current surface.",
+  "reachability_to_target": "prunes",
+  "response_witness": {
+    "assignment_witness": {
+      "top_line_P0_magnitude": "2/sqrt(6)",
+      "top_line_nontrivial_magnitude": "1/sqrt(6)"
+    },
+    "responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "(-sqrt(2)/2 + sqrt(6)*I/6)/(sqrt(3) - I)",
+      "P_omega2": "(-sqrt(2)/2 - sqrt(6)*I/6)/(sqrt(3) + I)"
+    },
+    "source_direction": "B_x"
+  },
+  "route_still_live": "derive nontrivial top-line assignment from same-surface dynamics or produce strict same-source top/W pole rows",
+  "trace_class": "negative_route_pruning"
+}

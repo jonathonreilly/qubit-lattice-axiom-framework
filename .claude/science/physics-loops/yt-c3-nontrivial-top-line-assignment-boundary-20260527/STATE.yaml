@@ -1,0 +1,23 @@
+loop_slug: yt-c3-nontrivial-top-line-assignment-boundary-20260527
+mode: campaign_block
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+branch: physics-loop/yt-primitive-physical-source-theorem-20260526
+stack_pr: 1980
+active_route: C3 connected/reflection-even source plus top-line assignment
+hard_residual_attacked: whether B_x alone forces the physical 1/sqrt(6) coefficient
+result: |
+  B_x gives 2/sqrt(6) on the C3 singlet line and 1/sqrt(6) only on the
+  nontrivial C3 character lines. Therefore top-line nontriviality is
+  load-bearing.
+open_imports:
+  - physical top row is a nontrivial C3 character line
+  - accepted exclusion of the C3 singlet line as physical top row
+  - strict same-source top/W pole rows
+proposal_allowed: false
+bare_retained_allowed: false
+next_exact_action: derive nontrivial top-line assignment from same-surface dynamics or produce strict pole rows
+stop_condition: positive retained closure or narrowest honest blocker fully documented
+

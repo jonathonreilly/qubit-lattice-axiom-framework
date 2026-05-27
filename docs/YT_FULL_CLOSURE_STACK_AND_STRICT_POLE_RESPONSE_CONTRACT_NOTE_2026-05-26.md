@@ -57,6 +57,8 @@ closed exactly:
   not the physical Y_T C3 source tangent
   connected + reflection-even source conditions select B_x, whose nontrivial
   C3 character lines have response magnitude 1/sqrt(6)
+  connected/reflection-even B_x does not by itself select the top line:
+  top-line nontriviality remains load-bearing
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -70,6 +72,7 @@ still open:
   accepted physical target/source direction inside the C3 tangent space
   accepted physical connected-source premise, reflection-even source premise,
   and nontrivial top C3 line assignment
+  accepted exclusion of the C3 singlet line as the physical top row
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -351,6 +354,20 @@ the two nontrivial C3 character lines have source-response magnitude
 does not derive that the physical Y_T source is connected and reflection-even
 on this surface, or that the physical top row is a nontrivial C3 line.
 
+[`YT_C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY_NOTE_2026-05-27.md`](YT_C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY_NOTE_2026-05-27.md)
+then tests that last shortcut directly.  The same `B_x` source gives
+
+```text
+Tr(P_0 B_x)       =  2/sqrt(6)
+Tr(P_omega B_x)   = -1/sqrt(6)
+Tr(P_omega2 B_x)  = -1/sqrt(6).
+```
+
+Therefore the target coefficient follows from the C3 candidate only if the
+physical top row is supplied as a nontrivial C3 character line.  The retained
+three-generation algebra supplies the character projectors as finite algebra,
+but it explicitly does not identify them with a physical top pole row.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -510,6 +527,18 @@ top-line assignment from same-surface dynamics, or produce strict top/W pole
 rows directly.
 ```
 
+The top-line assignment boundary shows that this is not just wording:
+
+```text
+top = P_0       -> |response| = 2/sqrt(6)
+top = P_omega   -> |response| = 1/sqrt(6)
+top = P_omega2  -> |response| = 1/sqrt(6).
+```
+
+So top-line nontriviality remains load-bearing.  A future closure must derive
+why the physical top row is not the C3 singlet, or bypass the issue with
+strict pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -535,8 +564,10 @@ proposal_allowed_reason: |
   the primitive no-hidden-record source law is derived. The top-source
   identification route does not close from current structural inputs, and
   the connected/reflection-even C3 source candidate still depends on physical
-  source and top-line premises. Strict same-source response evidence is not
-  present, so retained or proposed-retained Y_T wording is not allowed.
+  source and top-line premises. The B_x candidate gives 1/sqrt(6) only after
+  the nontrivial top-line premise is supplied. Strict same-source response
+  evidence is not present, so retained or proposed-retained Y_T wording is not
+  allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: physical connected/reflection-even source authority plus nontrivial top-line assignment, or strict same-source top/W response evidence

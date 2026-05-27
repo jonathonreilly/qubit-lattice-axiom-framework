@@ -57,3 +57,10 @@ denominator-side response algebra with the conditional finite C3 matrix rows
 and checks the response-ratio arithmetic. No external source is load-bearing:
 the no-go is a branch-local same-surface certificate boundary plus elementary
 finite algebra.
+The nontrivial C3 block matrix-element support block directly computes the
+finite projectors `P_0` and `P_nt = I - P_0`, verifies that `B_x` is scalar on
+`P_nt`, and derives the singlet-weight response formula `(3s-1)/sqrt(6)`.
+No external finite-group theorem, physical selector, or literature phase law
+is imported. This source is used as finite matrix algebra only; it does not
+provide derivation closure for the physical zero-singlet top-block membership
+law.

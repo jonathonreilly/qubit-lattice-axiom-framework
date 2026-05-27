@@ -98,6 +98,10 @@ This runner verifies the current burn-down state:
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
+* The nontrivial C3 block matrix-element support theorem sharpens that
+  target: B_x is scalar on the real nontrivial block P_nt, so zero singlet
+  weight is enough for A/sqrt(12); complex-line isolation is not needed for
+  the coefficient row, but zero singlet weight is still not derived.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -132,6 +136,7 @@ STRICT_TOP = DOCS / "YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.
 STRICT_SAME_SOURCE_OBSTRUCTION = DOCS / "YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md"
 FIRST_PRINCIPLES_TRANSFER_RESPONSE = DOCS / "YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md"
 SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION = DOCS / "YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md"
+C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT = DOCS / "YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
@@ -183,6 +188,7 @@ STRICT_TOP_OUT = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_
 STRICT_SAME_SOURCE_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json"
 FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT = ROOT / "outputs" / "yt_first_principles_transfer_response_boundary_2026-05-27.json"
 SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT = ROOT / "outputs" / "yt_same_surface_top_matrix_element_factorization_boundary_2026-05-27.json"
+C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_nontrivial_block_matrix_element_support_2026-05-27.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
@@ -279,6 +285,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_SAME_SOURCE_OBSTRUCTION,
         FIRST_PRINCIPLES_TRANSFER_RESPONSE,
         SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION,
+        C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT,
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
@@ -329,6 +336,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_SAME_SOURCE_OBSTRUCTION_OUT,
         FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT,
         SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT,
+        C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
@@ -381,6 +389,7 @@ def part1_anchors() -> dict[str, str]:
         "first-principles transfer/Feynman-Hellmann",
         "sector matrix elements remain load-bearing",
         "same-surface top matrix-element factorization",
+        "nontrivial C3 block matrix-element support",
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
@@ -452,6 +461,7 @@ def part2_support_outputs() -> dict[str, Any]:
     strict_obstruction = load_json(STRICT_SAME_SOURCE_OBSTRUCTION_OUT)
     first_principles_transfer_response = load_json(FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT)
     same_surface_top_matrix_element_factorization = load_json(SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT)
+    c3_nontrivial_block_matrix_element_support = load_json(C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
@@ -538,6 +548,41 @@ def part2_support_outputs() -> dict[str, Any]:
     check(
         "same-surface factorization leaves nontrivial top-line assignment open",
         same_surface_top_matrix_element_factorization.get("certificate_boundary", {}).get("nontrivial_top_line_assignment_derived") is False,
+    )
+    check(
+        "C3 nontrivial block matrix-element support passed",
+        c3_nontrivial_block_matrix_element_support.get("fail_count") == 0,
+        c3_nontrivial_block_matrix_element_support.get("fail_count"),
+    )
+    check(
+        "C3 nontrivial block support is exact support/open",
+        c3_nontrivial_block_matrix_element_support.get("actual_current_surface_status")
+        == "exact-support / open nontrivial-block membership law",
+        c3_nontrivial_block_matrix_element_support.get("actual_current_surface_status"),
+    )
+    check(
+        "C3 nontrivial block gives target row",
+        c3_nontrivial_block_matrix_element_support.get("block_matrix_element_witness", {})
+        .get("top_row_if_supported_in_P_nt")
+        == "A/sqrt(12)",
+    )
+    check(
+        "C3 nontrivial block does not need complex line isolation for coefficient",
+        c3_nontrivial_block_matrix_element_support.get("certificate_boundary", {})
+        .get("complex_line_isolation_needed_for_coefficient_row")
+        is False,
+    )
+    check(
+        "C3 nontrivial block still leaves zero singlet weight open",
+        c3_nontrivial_block_matrix_element_support.get("certificate_boundary", {})
+        .get("zero_singlet_weight_derived_on_actual_surface")
+        is False,
+    )
+    check(
+        "C3 nontrivial block still lacks strict top/W response certificate",
+        c3_nontrivial_block_matrix_element_support.get("certificate_boundary", {})
+        .get("strict_top_w_response_certificate_present")
+        is False,
     )
     check("direct sparse response certificate harness passed", direct_sparse_cert.get("fail_count") == 0, direct_sparse_cert.get("fail_count"))
     check("direct sparse response certificate is bounded support", direct_sparse_cert.get("actual_current_surface_status") == "bounded-support microbench / open strict-response backend")
@@ -1038,6 +1083,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "strict_same_source_obstruction": strict_obstruction,
         "first_principles_transfer_response": first_principles_transfer_response,
         "same_surface_top_matrix_element_factorization": same_surface_top_matrix_element_factorization,
+        "c3_nontrivial_block_matrix_element_support": c3_nontrivial_block_matrix_element_support,
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
@@ -1270,16 +1316,16 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
             "closed": False,
-            "next_action": "derive accepted same-surface generator factorization plus nontrivial top-line assignment, or produce a new accepted strict pole-response packet because none is present under existing artifact names",
+            "next_action": "derive accepted same-surface generator factorization plus zero-singlet nontrivial-block top membership, or produce a new accepted strict pole-response packet because none is present under existing artifact names",
         },
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_that_membership_law_is_open_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
             "closed": True,
-            "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface phase-angle/orbit-member law selecting a nontrivial top line with backend/projectors/matrix elements",
+            "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface phase-angle/orbit-member law excluding P_0 with backend/projectors/matrix elements",
         },
         {
             "step": 7,
@@ -1376,15 +1422,22 @@ def main() -> int:
             "authority and the physical nontrivial top line, while the same "
             "denominator and source scale admit the P_0 singlet readout "
             "sqrt(2/3). "
+            "The nontrivial real-block matrix-element support theorem now "
+            "sharpens the C3 coefficient target: once zero P_0 singlet weight "
+            "is supplied, B_x is scalar on P_nt and every P_nt-supported top "
+            "readout gives A/sqrt(12), so complex-line isolation is not "
+            "needed for the coefficient row. This does not authorize "
+            "proposal language because zero singlet weight and accepted pole "
+            "controls are still open. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
-            "factorization plus a nontrivial top line, but those inputs remain open "
+            "factorization plus zero-singlet nontrivial-block support, but those inputs remain open "
             "and coefficient-certified top/W response evidence remains absent."
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface phase-angle/orbit-member dynamics deriving a nontrivial physical top line with backend/projectors/matrix elements",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface phase-angle/orbit-member dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -1404,6 +1457,7 @@ def main() -> int:
             "strict_same_source_obstruction_fail_count": support_outputs["strict_same_source_obstruction"].get("fail_count"),
             "first_principles_transfer_response_fail_count": support_outputs["first_principles_transfer_response"].get("fail_count"),
             "same_surface_top_matrix_element_factorization_fail_count": support_outputs["same_surface_top_matrix_element_factorization"].get("fail_count"),
+            "c3_nontrivial_block_matrix_element_support_fail_count": support_outputs["c3_nontrivial_block_matrix_element_support"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),
@@ -1446,6 +1500,9 @@ def main() -> int:
             "docs/YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md",
             "scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py",
             "outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json",
+            "docs/YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py",
+            "outputs/yt_c3_nontrivial_block_matrix_element_support_2026-05-27.json",
             "docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
             "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json",

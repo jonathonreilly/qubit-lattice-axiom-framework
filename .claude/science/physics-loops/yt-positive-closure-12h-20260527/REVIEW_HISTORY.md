@@ -34,6 +34,40 @@ Verification recorded with this review:
 - YAML validation passed.
 - `git diff --check` passed.
 
+## 2026-05-27 Local Review, Block 22
+
+Scope:
+
+- C3 nontrivial-block matrix element support note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the finite C3 block projectors, scalar action of `B_x` on `P_nt`, singlet-weight leakage formula, dependency outputs, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is exact support/open membership law; the result narrows the coefficient condition to zero `P_0` singlet weight but does not derive that physical law. |
+| Imports / support | DISCLOSED | No external physics, observed masses, target selector, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | Actual status, trace class, proposal firewall, and remaining imports are explicit. |
+
+Disposition: pass for exact-support artifact only; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=85 FAIL=0`
+- Full stack runner: `PASS=382 FAIL=0`
+- Adjacent Y_T runners passed: same-surface matrix factorization `PASS=77`,
+  real top-line obstruction `PASS=104`, source-response extremal no-go
+  `PASS=105`, strict W/Z plus C3 splice no-go `PASS=110`, C3 real-record
+  source theorem `PASS=76`, phase-ordering cone support `PASS=70`, strict
+  sparse availability audit `PASS=74`, and direct sparse response certificate
+  `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 20
 
 Scope:

@@ -48,6 +48,10 @@ closed exactly:
   same-surface top matrix-element factorization algebra is explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), while the
   accepted generator factorization and nontrivial top-line law remain open
+  nontrivial C3 block matrix-element support sharpens the coefficient row:
+  B_x is scalar on the real nontrivial block P_nt, so zero singlet weight
+  is sufficient for A/sqrt(12) and complex-line isolation is not needed for
+  the coefficient row; zero singlet weight is still an open physical law
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -149,6 +153,9 @@ still open:
   coefficient-certified same-source top/W response evidence
   coefficient-certified same-surface top sector matrix element
   accepted same-surface generator factorization for the top block
+  accepted zero-singlet physical top-block membership law; complex-line
+  isolation is not required for the coefficient row once P_nt support is
+  supplied, but the actual surface still must exclude P_0
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -416,6 +423,25 @@ This is conditional support, not closure.  The same finite C3 algebra also
 allows the singlet assignment, which gives `A/sqrt(3)`.  Therefore accepted
 same-surface generator factorization and a nontrivial top-line law remain
 load-bearing.
+
+[`YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md`](YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md)
+sharpens the coefficient row.  Since
+
+```text
+B_x P_nt = -P_nt/sqrt(6),  P_nt = P_omega + P_omega2,
+```
+
+every normalized readout supported in the real nontrivial block gives
+
+```text
+|Tr(rho_nt (A/sqrt(2)) B_x)| = A/sqrt(12).
+```
+
+Thus the coefficient row does not require choosing between `P_omega` and
+`P_omega2`; it requires zero `P_0` singlet weight, plus the accepted
+same-surface generator factorization and pole controls.  The actual current
+surface still does not derive that zero-singlet physical top-block membership
+law.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a

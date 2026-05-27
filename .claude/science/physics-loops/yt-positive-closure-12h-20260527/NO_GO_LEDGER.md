@@ -142,3 +142,11 @@ potential/variational law and a physical nonzero orientation branch.
   the `P_0` singlet readout `sqrt(2/3)`. Same-surface splice authority,
   physical top-line/projector authority, and strict pole-row controls remain
   load-bearing.
+
+Non-no-go support checkpoint after the twenty-first block: the nontrivial real
+C3 block is enough for the coefficient row. On `P_nt = P_omega + P_omega2`,
+`B_x` is scalar with eigenvalue `-1/sqrt(6)`, so any normalized top readout
+with zero `P_0` singlet weight gives `A/sqrt(12)` after the conditional radial
+factor. This support does not close the route because zero-singlet physical
+top-block membership, same-surface generator factorization, and strict pole
+controls remain open.

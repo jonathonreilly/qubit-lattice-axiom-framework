@@ -1,9 +1,10 @@
 # Handoff
 
-The campaign has produced twenty-one science blocks, not positive retained-grade
+The campaign has produced twenty-two science blocks, not positive retained-grade
 closure:
 
-1. a conditional-support matrix-element factorization boundary;
+1. a conditional-support matrix-element factorization boundary and later
+   nontrivial-block support sharpening;
 2. a no-go for the current non-mass-ordering real same-surface C3 top-line
    shortcut;
 3. a no-go for the shortcut from derived `B_x` source tangent to accepted
@@ -42,6 +43,48 @@ closure:
     same-surface `B_x` source-response extrema.
 21. a no-go for promoting strict W/Z denominator support plus the conditional
     C3 target row into a strict same-source top/W pole-response certificate.
+22. exact support showing the coefficient row only needs zero singlet weight
+    in the real nontrivial C3 block, not isolation of a single complex
+    nontrivial line.
+
+New nontrivial-block matrix-element support result:
+
+```text
+B_x P_nt = -P_nt/sqrt(6),  P_nt = P_omega + P_omega2
+```
+
+Therefore any normalized top readout supported in `P_nt` gives:
+
+```text
+|Tr(rho_nt (A/sqrt(2)) B_x)| = A/sqrt(12)
+```
+
+The singlet leakage formula is:
+
+```text
+Tr(rho B_x) = (3s - 1)/sqrt(6),  s = Tr(P_0 rho)
+```
+
+So the target nontrivial response forces `s=0`.  This narrows the coefficient
+row blocker from choosing a specific complex line (`P_omega` or `P_omega2`) to
+deriving an accepted physical top-block law excluding `P_0`.  It is exact
+support only: the actual current surface still lacks accepted zero-singlet
+top-block membership, accepted same-surface generator factorization, and
+strict pole controls.
+
+Cycle 10 nontrivial-block support verification:
+
+- `python3 scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py` -> `SUMMARY: PASS=85 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=382 FAIL=0`
+- Adjacent runners passed: same-surface matrix factorization `PASS=77`, real
+  top-line obstruction `PASS=104`, source-response extremal no-go `PASS=105`,
+  strict W/Z plus C3 splice no-go `PASS=110`, C3 real-record source theorem
+  `PASS=76`, phase-ordering cone support `PASS=70`, strict sparse
+  availability audit `PASS=74`, and direct sparse response certificate
+  `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
 
 New strict W/Z plus C3 top-row splice result:
 

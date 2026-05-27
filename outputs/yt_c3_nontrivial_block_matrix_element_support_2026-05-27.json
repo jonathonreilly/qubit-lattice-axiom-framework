@@ -1,0 +1,60 @@
+{
+  "actual_current_surface_status": "exact-support / open nontrivial-block membership law",
+  "anchors": {
+    "factorization_status": "conditional-support",
+    "first_principles_status": "exact-support / formal-transfer no-go",
+    "real_source_status": "exact-support",
+    "top_line_status": "no-go"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block_matrix_element_witness": {
+    "P_0_response": "2/sqrt(6)",
+    "P_nt_response": "-1/sqrt(6)",
+    "response_with_singlet_weight_s": "(3*s - 1)/sqrt(6)",
+    "singlet_readout_if_supported_in_P_0": "2/sqrt(6)",
+    "target_readout_if_supported_in_P_nt": "1/sqrt(6)",
+    "target_response_forces_singlet_weight": "s = 0",
+    "top_row_if_supported_in_P_0": "A/sqrt(3)",
+    "top_row_if_supported_in_P_nt": "A/sqrt(12)",
+    "top_row_with_singlet_weight_s": "sqrt(3)*A*(3*s - 1)/6"
+  },
+  "certificate_boundary": {
+    "accepted_same_surface_generator_factorization_derived": false,
+    "bare_retained_allowed": false,
+    "complex_line_isolation_needed_for_coefficient_row": false,
+    "nontrivial_real_block_response_scalar": true,
+    "proposal_allowed": false,
+    "strict_top_w_response_certificate_present": false,
+    "zero_singlet_weight_derived_on_actual_surface": false,
+    "zero_singlet_weight_sufficient_for_target_row": true
+  },
+  "fail_count": 0,
+  "first_principles_elon_summary": {
+    "A_min": [
+      "finite positive transfer/Feynman-Hellmann response theorem",
+      "real finite-record C3 source theorem giving B_x",
+      "finite C3 spectral projector algebra",
+      "conditional same-surface top-block factorization",
+      "same-source W denominator row"
+    ],
+    "complex_line_isolation_for_coefficient": "not required once P_nt support is supplied",
+    "singlet_exclusion": "still load-bearing and not derived"
+  },
+  "no_go_audit": {
+    "reason": "the actual current surface does not derive zero singlet weight or accepted pole controls",
+    "remaining_imports": [
+      "accepted zero-singlet physical top-block membership law",
+      "accepted same-surface source-generator factorization",
+      "accepted W/top pole isolation or degenerate-pole response rule",
+      "contact/FV/IR/model-class controls or direct strict pole rows"
+    ],
+    "route_not_closed": "P_nt block support implies retained/proposed-retained Y_T closure"
+  },
+  "pass_count": 85,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The finite C3 algebra proves the target row for any top readout supported in P_nt, but the actual current surface still does not derive zero singlet weight, accepted same-surface generator factorization, or strict pole-row controls.",
+  "reachability_to_target": "supports",
+  "route_still_live": "derive accepted zero-singlet top-block membership with same-surface generator factorization, or produce strict same-source top/W pole rows directly",
+  "trace_class": "upstream_support"
+}

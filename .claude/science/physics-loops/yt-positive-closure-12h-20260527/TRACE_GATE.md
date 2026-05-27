@@ -1,13 +1,13 @@
 # Trace Gate
 
 ```yaml
-trace_class: negative_route_pruning
+trace_class: upstream_support
 target_claim_id: yt_positive_closure_pr1980
 target_blocker_text: "derive/certify the coefficient-bearing same-surface top sector matrix element dM_t/dell = A/sqrt(12)"
 source_of_blocker_text: user_goal
-reachability_to_target: prunes shortcut
-artifact_role: no_go_route_pruning
-next_trace_action: "produce accepted strict top/W pole-row data; or derive accepted same-surface backend/projectors/source-generator matrix elements, including any genuinely new physical C3 phase/orbit-member law"
+reachability_to_target: supports
+artifact_role: theorem_support
+next_trace_action: "derive accepted zero-singlet top-block membership plus same-surface generator factorization, or produce accepted strict top/W pole-row data with controls"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -115,3 +115,11 @@ action is still accepted strict pole-row data, accepted
 backend/projector/source-generator matrix elements, or a physical
 basepoint/readout theorem beyond scalar orientation bias and source-response
 extrema.
+The twenty-second artifact is upstream support for the same-surface matrix
+element gate. It proves that `B_x` is scalar on the real nontrivial block
+`P_nt = P_omega + P_omega2`, so any normalized top readout with zero `P_0`
+singlet weight gives `A/sqrt(12)` after the conditional radial factor.
+Complex-line isolation is therefore not needed for the coefficient row. The
+trace remains support-only because the actual current surface still does not
+derive zero-singlet physical top-block membership, accepted same-surface
+generator factorization, or strict pole controls.

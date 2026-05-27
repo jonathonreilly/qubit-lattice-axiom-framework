@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 535 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1167 |
+| unaudited | 1168 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 834 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 71 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1396 |
+| `unaudited` | 1397 |
 
 | claim_type | count |
 |---|---:|
@@ -88,7 +88,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 - runners classified: 2008
 - runners with (C) first-principles compute hits: 977
 - runners with (D) external comparator hits: 584
-- decoration candidates (no C, no D): 335
+- decoration candidates (no C, no D): 336
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -1009,7 +1009,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -10940,18 +10939,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review.
 - **rationale:** The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review.
 - **auditor confidence:** high
-
-### `s3_cap_uniqueness_note`
-
-- **Note:** [`S3_CAP_UNIQUENESS_NOTE.md`](../../docs/S3_CAP_UNIQUENESS_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Attempted bounded theorem that cone-capping is the unique PL closure of the cubical ball yielding a closed simply connected PL 3-manifold, with resulting space identified as PL S^3.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-fresh-s3-cap-uniqueness-C75Ktt-2026-05-26-pass1`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Applied to our situation: the PL S^2 = dB inside PL S^3 = M separates M into two pieces, B and X; by Alexander/Schoenflies X is also a PL 3-ball, and every PL 3-ball with prescribed boundary is PL homeomorphic to cone(dB).  _(class `B`)_
-- **chain closes:** False — The proof relies on global PL Schoenflies/Alexander cone, Alexander trick/MCG, Perelman/Moise, van Kampen, and Kawamoto-Smit closure imports. The only retained direct dependency in the packet supplies finite R=2,3,4 cone-cap construction facts and explicitly disclaims arbitrary cap uniqueness, S^3 identification, physical closure, and those external theorem derivations.
-- **rationale:** Issue: the global cap-uniqueness and PL S^3 conclusion are carried by Schoenflies/Alexander cone, Alexander trick/MCG, Perelman/Moise, van Kampen, and Kawamoto-Smit closure imports. Why this blocks: the only retained direct dependency supplies finite R=2,3,4 cone-cap construction facts and explicitly disclaims arbitrary cap uniqueness, S^3 identification, physical closure, and those external theorem derivations. Repair target: provide retained one-hop authorities or derivations for PL Schoenflies/Alexander cone uniqueness, Alexander trick/MCG gluing uniqueness, Perelman/Moise/van Kampen S^3 identification, and Kawamoto-Smit physical closure, or narrow this row to the finite cone-cap construction certificate. Claim boundary until fixed: finite cubical-ball and boundary/cone-cap construction checks may be cited; framework-forced uniqueness among arbitrary PL caps and PL S^3 identification may not.
 
 ### `s3_mass_matrix_no_go_note`
 

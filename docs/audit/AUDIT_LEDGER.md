@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 487 |
+| **retained_bounded** | 488 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1242 |
+| unaudited | 1241 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 779 |
+| `audited_clean` | 780 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1471 |
+| `unaudited` | 1470 |
 
 | claim_type | count |
 |---|---:|
@@ -173,6 +173,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bound_state_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `bridge_gap_hk_plaquette_closed_form_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `bridge_gap_hk_time_derivation_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1868,6 +1869,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The one-hop dependencies are now retained-grade and support the bounded 2-body branch-entanglement interpretation and corrected 3-body W-type interpretation. The current source note and runner output close the scoped robustness claim without relying on full BMV witness status or an external comparator.
 - **rationale:** The clean verdict applies only to the bounded numerical protocol theorem stated in the note. The load-bearing runner output gives positive 2-body delta_S across all audited sweeps and confirms the corrected 3-body W-type, non-GHZ interpretation with tau_3 = 0 and positive bipartite entropies. The prior dependency block is resolved because both cited one-hop dependencies now have retained-grade status. Plot generation failed due to missing matplotlib, but that does not affect the load-bearing numerical checks.
 - **auditor confidence:** medium
+
+### `bridge_gap_hk_plaquette_closed_form_note_2026-05-06`
+
+- **Note:** [`BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`](../../docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded SU(3) single-plaquette heat-kernel expectation: under the Block 01 Brownian-time matching surface and canonical fundamental Casimir C2=4/3, <(1/3) Re Tr U>_HK,1plaq(t)=exp(-2t/3), so at t(6)=1 it equals exp(-2/3); thermodynamic plaquette values, Wilson/HK action-form uniqueness, finite-beta corrections, and bridge-gap closure are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-bridge-gap-hk-plaquette-2026-05-26-fresh-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Combining Re Tr U = (chi_(1,0) + chi_(0,1))/2 with the heat-kernel character expansion and Schur orthogonality selects only lambda=(0,1),(1,0), giving integral Re Tr U P_t(U)dU = 3 exp(-2t/3) and hence <(1/3) Re Tr U> = exp(-2t/3).  _(class `A`)_
+- **chain closes:** True — The derivation closes from the heat-kernel expansion, Schur orthogonality, Z_HK=1 normalization, and the retained-bounded Casimir value C2(1,0)=C2(0,1)=4/3. The beta=6 number then follows by importing the retained-bounded Block 01 input t(6)=1; Wilson and MC comparisons are explicitly non-load-bearing.
+- **rationale:** The exact two-character statement follows directly from Schur orthogonality applied to the SU(3) heat-kernel character expansion: all higher representations vanish against Re Tr U, and the fundamental/conjugate-fundamental pair gives exp(-2t/3) after dividing by N_c=3. The t(6)=1 substitution is supplied by a retained-bounded dependency, so the exp(-2/3) specialization is clean within the bounded surface. Residual risk lies outside the audited claim: thermodynamic multi-plaquette evaluation and action-form uniqueness are not closed here.
+- **auditor confidence:** high
 
 ### `bridge_gap_hk_time_derivation_note_2026-05-06`
 

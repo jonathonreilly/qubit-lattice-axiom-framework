@@ -20489,6 +20489,18 @@
       "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
     },
     {
+      "from": "plaquette_c6_derivation_framework_su3_narrow_theorem_note_2026-05-27",
+      "to": "p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "plaquette_c6_derivation_framework_su3_narrow_theorem_note_2026-05-27",
+      "to": "native_gauge_closure_note"
+    },
+    {
+      "from": "plaquette_c6_derivation_framework_su3_narrow_theorem_note_2026-05-27",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
       "from": "plaquette_observable_uniqueness_bounded_note_2026-05-25",
       "to": "plaquette_self_consistency_note"
     },
@@ -69037,6 +69049,22 @@
       "runner_path": "scripts/frontier_plaquette_bootstrap_framework_specific_positivity.py",
       "title": "Plaquette Bootstrap \u2014 Framework-Specific Positivity (3x3 Extension)"
     },
+    "plaquette_c6_derivation_framework_su3_narrow_theorem_note_2026-05-27": {
+      "claim_id": "plaquette_c6_derivation_framework_su3_narrow_theorem_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27",
+        "native_gauge_closure_note",
+        "graph_first_su3_integration_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "08953dc9eb035ae8c76601ab75df27a60ca5f0f8104ed4c3d8ea329e228b731d",
+      "path": "docs/PLAQUETTE_C6_DERIVATION_FRAMEWORK_SU3_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "runner_path": "scripts/frontier_plaquette_c6_derivation_framework_su3_narrow.py",
+      "title": "SU(3) Wilson Plaquette Strong-Coupling c_6 = 24 Framework-Bounded Factorization Note"
+    },
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10": {
       "claim_id": "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -86173,7 +86201,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 635,
+      "bounded_theorem": 636,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -86182,7 +86210,7 @@
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1052,
+      "bounded_theorem": 1053,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -86190,10 +86218,10 @@
       "open_gate": 127,
       "positive_theorem": 589
     },
-    "edge_count": 9825,
+    "edge_count": 9828,
     "leaf_count": 806,
-    "node_count": 2574,
+    "node_count": 2575,
     "root_count": 858,
-    "runners_with_path": 2150
+    "runners_with_path": 2151
   }
 }

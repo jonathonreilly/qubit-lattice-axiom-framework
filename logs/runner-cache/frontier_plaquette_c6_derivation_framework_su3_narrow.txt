@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_plaquette_c6_derivation_framework_su3_narrow.py
+runner_sha256: c140dd13eadbde9e7e35a0af93201c9b10b62f71c6b1d4b02dd6611179450ade
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+(T1) c_1 = 1 derivation on framework SU(3) Haar primitives
+----------------------------------------------------------------------------------------
+  [PASS] Haar: int dU Re Tr U = 0  (= 0)
+  [PASS] Haar: int dU (Tr U)^2 = 0  (no sym singlet in 3 (x) 3)  (= 0)
+  [PASS] Haar: int dU |Tr U|^2 = 1  (Schur orthogonality F . F̄)  (= 1)
+  [PASS] Haar: <(Re Tr U)^2> = 1/2  (= 1/2)
+  [PASS] <P>_leading = beta/(2 N^2) = beta/18  at N=3  (<P>_leading = beta/18, expected beta/18)
+  [PASS] c_1 = 1  (coefficient of u in <P>(u) at leading order)  (c_1 = 1)
+
+----------------------------------------------------------------------------------------
+(T2) d=4 cube enumeration through marked plaquette P0
+----------------------------------------------------------------------------------------
+  [PASS] d=4 cube enumeration: 4 cubes contain marked plaquette P0  (cube count = 4)
+  [PASS] d=4 cube enumeration: 2 distinct 3-axis subsets  (axis-sets = [[0, 1, 3], [0, 1, 2]])
+  [PASS] d=4 cube enumeration: 2 positions per axis-set [0, 1, 3]  (position count for [0, 1, 3] = 2)
+  [PASS] d=4 cube enumeration: 2 positions per axis-set [0, 1, 2]  (position count for [0, 1, 2] = 2)
+
+----------------------------------------------------------------------------------------
+(T3) c_6 = 4 (geometric) x 6 (SU(3) Wigner) = 24
+----------------------------------------------------------------------------------------
+  [PASS] c_6 factorization: 4 x 6 = 24  (4 (cubes in d=4) x 6 (SU(3) Wigner) = 24, target 24)
+  [PASS] Cube rotation group: |O|/|Stab(face)| = orbit(face) = 6  (|O|=24, |Stab|=4, orbit=6)
+
+----------------------------------------------------------------------------------------
+(T4) c_4 = 4 partial bound via d=4 transverse enumeration
+----------------------------------------------------------------------------------------
+  [PASS] d=4 transverse branch count (c_4 geometric)  (count = 4, Drouffe-Zuber c_4 = 4)
+
+----------------------------------------------------------------------------------------
+(T5) d=4 spacetime inheritance: D=3 alone gives c_6 = 12, not 24
+----------------------------------------------------------------------------------------
+  [PASS] D=3 substrate alone: cube count = 2 (one transverse axis)  (D=3 cube count = 2)
+  [PASS] d=4 spacetime: cube count = 4 (two transverse axes)  (d=4 cube count = 4)
+  [PASS] c_6 differs between D=3 (=12) and d=4 (=24)  (c_6^(D=3)=12, c_6^(d=4)=24; only d=4 matches DZ Table 13)
+
+----------------------------------------------------------------------------------------
+(T6) Composition: framework c_1=1, c_4=4, c_6=24 imply Pade[3/3]=3/5
+----------------------------------------------------------------------------------------
+  [PASS] Pade[3/3] using framework-bounded c_1=1, c_4=4, c_6=24 gives 3/5  (Pade[3/3](1/3) = 3/5)
+  [PASS] Pade[3/3] numerator P(u) = u - 6 u^3  (P(u) = -6*u**3 + u)
+  [PASS] Pade[3/3] denominator Q(u) = 1 - 6 u^2 - 4 u^3  (Q(u) = -4*u**3 - 6*u**2 + 1)
+
+========================================================================================
+TOTAL: PASS=19 FAIL=0
+========================================================================================
+
+----- stderr -----
+

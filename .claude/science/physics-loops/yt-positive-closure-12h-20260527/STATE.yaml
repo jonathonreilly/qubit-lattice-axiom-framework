@@ -273,8 +273,11 @@ commands_run:
   - "python3 -m py_compile scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py scripts/frontier_yt_strict_symbolic_top_response_row_packet.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py scripts/frontier_yt_c3_nontrivial_top_line_assignment_boundary.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS"
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
+  - "git commit -m 'Prune strict WZ C3 top-row splice shortcut' -> 120d0ebdf8251c512af9f6b5bc811669223e504d"
+  - "git push -> branch updated"
+  - "gh pr edit 1980 --body-file /tmp/pr1980_body_block21.md -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Pending update for strict W/Z plus C3 top-row splice no-go block."
-latest_science_commit: b038b10aef732ee6dbcd786e332e4561d705929f
+pr_status: "PR #1980 body updated with the strict W/Z plus C3 top-row splice no-go result, artifacts, verification, and next exact action."
+latest_science_commit: 120d0ebdf8251c512af9f6b5bc811669223e504d
 next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls, or derive the accepted same-surface splice/backend/projectors/source-generator matrix elements; if staying on C3, derive a genuinely new physical phase/orbit-member law beyond the existing reflection axis, scalar orientation bias, and source-response extrema."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

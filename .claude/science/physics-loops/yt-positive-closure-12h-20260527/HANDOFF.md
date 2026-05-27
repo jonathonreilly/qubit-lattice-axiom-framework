@@ -85,6 +85,16 @@ Cycle 9 strict W/Z plus C3 top-row splice verification:
 - YAML validation passed.
 - `git diff --check` passed.
 
+Strict W/Z plus C3 top-row splice science commit pushed and recorded in
+PR #1980:
+
+```text
+120d0ebdf8251c512af9f6b5bc811669223e504d
+```
+
+PR #1980 body was updated with the strict W/Z plus C3 top-row splice no-go
+result, artifacts, verification, and next exact action.
+
 New source-response extremal readout result:
 
 ```text

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 519 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1183 |
+| unaudited | 1182 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 73 |
+| ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -55,12 +55,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 817 |
-| `audited_conditional` | 73 |
+| `audited_conditional` | 74 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1412 |
+| `unaudited` | 1411 |
 
 | claim_type | count |
 |---|---:|
@@ -949,6 +949,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1824,6 +1825,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Defining beta(g,N)=2N/g^2, substitution under g -> g/c gives beta(g/c,N)=c^2 beta(g,N), and the joint product beta*g^2 remains 2N.  _(class `A`)_
 - **chain closes:** True — The conclusions follow by direct substitution in beta(g,N)=2N/g^2 and elementary rational algebra. The runner verifies the symbolic identities, exact rational instances, nontrivial beta changes, orbit exhaustion, product invariance, and scope guards with PASS=43 and FAIL=0.
 - **rationale:** The restricted claim is pure polynomial algebra: once beta(g,N)=2N/g^2 is defined, the c^2 rescaling and beta*g^2 invariance follow immediately without importing Wilson action, SU(N_c), Cl(3), a physical g_bare value, or any numerical comparator. The live runner reproduces all symbolic, exact-rational, orbit/fiber, and scope-guard checks with PASS=43 and FAIL=0. Residual risk is downstream misuse as a derivation of the physical g_bare convention rather than an abstract identity.
+- **auditor confidence:** high
+
+### `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`
+
+- **Note:** [`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Intended bounded arithmetic identity: beta*g_bare^2 = 2*N_c is invariant under beta -> c^2*beta with companion g_bare^2 -> g_bare^2/c^2, verified at exact rational precision for c in {1/2, 1, 2, 3}, but the Wilson matching premise beta = 2*N_c/g_bare^2 is not supplied by the cited two-Ward closure authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-hegel-2nd-normalized`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The load-bearing step imports the Wilson small-a matching relation beta = 2*N_c/g_bare^2 from G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18 and uses it as the authority for beta*g_bare^2 = 2*N_c.  _(class `B`)_
+- **chain closes:** False — The arithmetic closes if beta = 2*N_c/g_bare^2 is admitted as an explicit premise. The cited two-Ward closure dependency does not carry that Wilson matching relation in its retained scope, and the rescaling dependency treats Wilson matching as a scoped input rather than deriving it.
+- **rationale:** Issue: The note says G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18 supplies the Wilson small-a matching relation beta = 2*N_c/g_bare^2. Why this blocks: that dependency's retained scope is bounded two-Ward g_bare algebra and explicitly excludes Wilson-action choice; the other cited rescaling dependency uses Wilson matching only as a scoped premise. Repair target: cite or add a retained Wilson-matching bridge for beta = 2*N_c/g_bare^2 on the relevant action surface, or rewrite this row as explicitly conditional on Wilson matching. Claim boundary until fixed: the exact product invariance is valid only after assuming Wilson matching and the chosen companion g_bare^2 rescaling.
+- **open / conditional deps cited:**
+  - `G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`
+  - `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `beyond_lattice_qcd_note`

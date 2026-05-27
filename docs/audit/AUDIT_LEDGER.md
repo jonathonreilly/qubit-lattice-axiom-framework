@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 493 |
+| **retained_bounded** | 494 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,22 +53,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 789 |
+| `audited_clean` | 790 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1459 |
+| `unaudited` | 1458 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1066 |
+| `bounded_theorem` | 1067 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 110 |
-| `positive_theorem` | 715 |
+| `positive_theorem` | 714 |
 
 | criticality | count |
 |---|---:|
@@ -877,6 +877,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_fam1_seed1_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed1_control_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_fam2_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_equation_self_field_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
@@ -13422,6 +13423,18 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The primary runner calls measure_dm over the stated strengths and prints values matching the note; the helper path shown instantiates the lattice growth, wave solve, beam propagation, and history comparison rather than importing the contested conclusion. Within the restricted packet, the stated null, sign pattern, and weak-field scaling summary follow from the completed runner output.
 - **rationale:** The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_two_point_synthesis_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-wave-fam2-synthesis-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.  _(class `A`)_
+- **chain closes:** True — The two direct retained-grade control notes provide the exact nulls, common negative sign patterns, weak-field linearity spreads, and seed0/seed1 H=0.25 values needed for the pair synthesis. The conclusion is only the bounded conjunction/comparison of those inputs, with broader portability and family-widening claims explicitly excluded.
+- **rationale:** The row is retagged from positive_theorem to bounded_theorem because its support is finite to the configured Fam2 H=0.25 two-seed ladder and one upstream control input is itself bounded. The synthesis closes as an algebraic/logical aggregation over two retained-grade control-note inputs; no runner is present or needed for this aggregation row. It is not decoration because it aggregates two independent seed-control inputs into a bounded family-pair control/asymmetry surface, rather than restating a single parent by pure algebra. Clean status does not ratify Fam3, seed widening, lab-facing magnitude, Fam1 comparison, or a general H=0.25 portability law.
 
 ### `wave_equation_gravity_note`
 

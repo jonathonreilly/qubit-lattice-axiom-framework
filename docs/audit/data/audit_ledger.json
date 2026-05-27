@@ -285464,11 +285464,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 8.322,
+      "load_bearing_score": 11.322,
       "load_bearing_step": "`Fam2`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -23%`; together with the existing `Fam2`, seed `1` control ladder, that closes the second-family fine-`H` pair without promoting a full portability law.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "294c340bcf1b159b10ff1f6c29085b5f93ca08eeb4617e5bd32c335707a4906d",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
       "notes_for_re_audit_if_any": "Boundary language was treated as scope narrowing, not as a no-go wall claim; re-check if the seed1 retained-grade dependency, runner source hash, or printed row values change.",
@@ -285917,24 +285917,46 @@
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_two_point_synthesis_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
+      "audit_date": "2026-05-27T01:02:44.011720+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note"
+        ],
+        "load_bearing_score": 7.748,
+        "runner_hash": null,
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-wave-fam2-synthesis-2026-05-26",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The two direct retained-grade control notes provide the exact nulls, common negative sign patterns, weak-field linearity spreads, and seed0/seed1 H=0.25 values needed for the pair synthesis. The conclusion is only the bounded conjunction/comparison of those inputs, with broader portability and family-widening claims explicitly excluded.",
       "claim_id": "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T01:02:44.011720+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -285943,19 +285965,19 @@
         "wave_direct_dm_h025_fam2_seed0_control_note"
       ],
       "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.748,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7421f5597882251be66eed2dd600273da117a262f7df1199fb2b1cf97250f363",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "If future edits make the coarse-H bands or Fam1 comparison load-bearing rather than contextual boundary language, add retained one-hop dependencies and re-audit the enlarged scope.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -286146,7 +286168,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -286157,7 +286179,7 @@
       "runner_path": null,
       "title": "Wave Direct-dM H=0.25 Fam2 Two-Point Synthesis Note",
       "transitive_descendants": 18,
-      "verdict_rationale": null
+      "verdict_rationale": "The row is retagged from positive_theorem to bounded_theorem because its support is finite to the configured Fam2 H=0.25 two-seed ladder and one upstream control input is itself bounded. The synthesis closes as an algebraic/logical aggregation over two retained-grade control-note inputs; no runner is present or needed for this aggregation row. It is not decoration because it aggregates two independent seed-control inputs into a bounded family-pair control/asymmetry surface, rather than restating a single parent by pure algebra. Clean status does not ratify Fam3, seed widening, lab-facing magnitude, Fam1 comparison, or a general H=0.25 portability law."
     },
     "wave_direct_dm_h025_fam3_seed0_control_note": {
       "audit_date": null,

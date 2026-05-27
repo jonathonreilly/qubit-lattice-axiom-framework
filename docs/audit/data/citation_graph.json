@@ -681,6 +681,14 @@
       "to": "ai_methodology.llm_skill_pack_2026-04-25"
     },
     {
+      "from": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
+      "to": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24"
+    },
+    {
+      "from": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
+      "to": "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+    },
+    {
       "from": "alpha_s_4loop_running_derivation_partial_note_2026-05-10_4loop",
       "to": "bridge_lanes_promotion_proposal_note_2026-05-10_lanes"
     },
@@ -41083,6 +41091,21 @@
       "path": "docs/AI_METHODOLOGY_NOTE_2026-04-25.md",
       "runner_path": null,
       "title": "AI Methodology Note \u2014 Cl(3)/Z^3 Framework"
+    },
+    "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27": {
+      "claim_id": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
+        "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2e8e91fc9c185b332c77328872ee22af7ec1520c59ecef6e831557c00c9a0f28",
+      "path": "docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+      "runner_path": "scripts/alpha_convention_i2_accepted_premise_runner.py",
+      "title": "\u03b1 := g_bare\u00b2/(4\u03c0) Convention I2 Accepted-Premise Bridge"
     },
     "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24": {
       "claim_id": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
@@ -85982,7 +86005,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 627,
+      "bounded_theorem": 628,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -85991,7 +86014,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1044,
+      "bounded_theorem": 1045,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -85999,10 +86022,10 @@
       "open_gate": 127,
       "positive_theorem": 590
     },
-    "edge_count": 9805,
+    "edge_count": 9807,
     "leaf_count": 806,
-    "node_count": 2567,
+    "node_count": 2568,
     "root_count": 857,
-    "runners_with_path": 2143
+    "runners_with_path": 2144
   }
 }

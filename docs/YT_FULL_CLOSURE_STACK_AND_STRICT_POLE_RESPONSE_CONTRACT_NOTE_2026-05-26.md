@@ -34,14 +34,15 @@ closed exactly:
   the no-hidden-scale minimum-information intervention law uniquely gives
   y_33 = 1/sqrt(6) if accepted as the physical top source law
   source-coordinate scale is not invariant on the RN/Fisher source manifold
+  top-source identification is not derivable from the current structural
+  inputs alone
   Fisher source arclength equals LSZ unit-residue normalization if an accepted
   isolated-pole residue surface is supplied
   W/Z denominator response and symbolic top-response row algebra are closed
 
 still open:
-  audit/derive that the physical top Yukawa deformation is the primitive
-  no-hidden-record intervention targeting O_top, or measure the strict top/W
-  response directly
+  strict same-source top/W response evidence, unless audit accepts the
+  primitive top-source identification premise
   accepted same-surface pole/response authority for the physical top/Higgs row
   coefficient-certified same-source top/W response evidence
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
@@ -55,7 +56,8 @@ closure and why the current branch still cannot claim it.
 ### 0. Same-Surface Source/Action Authority
 
 Current status: bounded support plus exact minimum-information and primitive
-no-hidden-record support; physical top-source identification still open.
+no-hidden-record support; top-source identification is pruned from current
+structural inputs by a hard-stop no-go.
 
 [`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
 proves an exact finite identity between product RN source semantics and a
@@ -81,18 +83,20 @@ top/Higgs pole surface exists.
 derives that a primitive no-hidden-record finite intervention with named
 target expectation is forced to be the KL/I-projection RN source family and to
 use Fisher arclength as its intrinsic source unit.  This burns down the
-source-law derivation itself.  The remaining point is now the top-specific
-identification: the physical top Yukawa deformation must be audited or derived
-as that primitive intervention targeting `O_top`.
+source-law derivation itself.
+
+[`YT_TOP_SOURCE_IDENTIFICATION_HARD_STOP_NO_GO_NOTE_2026-05-27.md`](YT_TOP_SOURCE_IDENTIFICATION_HARD_STOP_NO_GO_NOTE_2026-05-27.md)
+then attempts the top-specific identification and finds the exact obstruction:
+the current structural constraints select the top operator ray but not the
+physical source calibration on that ray.
 
 Full closure needs either:
 
 ```text
-derive/accept the physical top source as this primitive RN/Fisher
-source/action surface,
+audit acceptance of the primitive top-source premise,
 ```
 
-or bypass that identification by measuring strict same-source pole responses.
+or, audit-cleanly, strict same-source pole-response evidence.
 
 ### 1. Top-Carrier Burn-Down
 
@@ -275,9 +279,8 @@ finite-record source/action variational form, or the one-Higgs top carrier
 skeleton.  It is:
 
 ```text
-audit/derive that the physical top Yukawa deformation is the primitive
-no-hidden-record intervention targeting O_top, or measure strict same-source
-top/W pole responses directly.
+strict same-source top/W response evidence, unless audit accepts the primitive
+top-source identification premise.
 ```
 
 That is the next positive science target.
@@ -298,19 +301,20 @@ This note does not:
 ## Claim-Status Certificate
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
+actual_current_surface_status: exact-support plus exact no-go boundary
+trace_class: upstream_support / negative_route_pruning
+reachability_to_target: supports / prunes current no-compute identification route
 proposal_allowed: false
 proposal_allowed_reason: |
   The closure stack and conditional pole/response algebra are explicit, and
-  the primitive no-hidden-record source law is derived. The physical top-source
-  identification and strict same-source response certificate are not present,
-  so retained or proposed-retained Y_T wording is not allowed.
+  the primitive no-hidden-record source law is derived. The top-source
+  identification route does not close from current structural inputs, and
+  strict same-source response evidence is not present, so retained or
+  proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: audit/derive physical top-source identification
-backup_route: strict same-source top/W pole-response measurement certificate
+first_open_gate: strict same-source top/W response evidence unless audit accepts primitive top-source premise
+backup_route: audit accepts primitive top-source premise as physical source law
 ```
 
 ## Verification

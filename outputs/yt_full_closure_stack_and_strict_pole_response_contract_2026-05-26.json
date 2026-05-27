@@ -36,8 +36,8 @@
     {
       "closed": false,
       "name": "same-surface source/action authority",
-      "next_action": "audit/derive physical top-source identification, or bypass via strict same-source pole responses",
-      "status": "bounded_support_plus_minimum_information_and_primitive_record_law_exact_support_physical_top_source_identification_open",
+      "next_action": "strict same-source pole responses, unless audit accepts primitive top-source premise",
+      "status": "bounded_support_plus_minimum_information_and_primitive_record_law_exact_support_top_source_identification_pruned_from_current_inputs",
       "step": 0
     },
     {
@@ -57,9 +57,16 @@
     {
       "closed": false,
       "name": "physical intervention minimum-information uniqueness",
-      "next_action": "audit/derive that the physical top Yukawa deformation is this primitive intervention",
-      "status": "exact_support_with_primitive_record_law_derived_top_source_identification_open",
+      "next_action": "use only if audit accepts the primitive top-source identification premise",
+      "status": "exact_support_with_primitive_record_law_derived_top_source_identification_not_derived_from_current_inputs",
       "step": 3
+    },
+    {
+      "closed": true,
+      "name": "top-source identification hard-stop",
+      "next_action": "pivot to strict same-source top/W response evidence",
+      "status": "exact_no_go_for_structural_no_compute_derivation_from_current_inputs",
+      "step": 3.5
     },
     {
       "closed": true,
@@ -79,7 +86,7 @@
       "closed": false,
       "name": "strict same-source top/W response rows",
       "next_action": "produce coefficient-certified top/W response rows",
-      "status": "algebra_closed_evidence_absent",
+      "status": "remaining_audit_clean_positive_route_evidence_absent",
       "step": 6
     },
     {
@@ -91,10 +98,10 @@
     }
   ],
   "fail_count": 0,
-  "first_open_gate": "audit/derive physical top-source identification",
-  "pass_count": 87,
+  "first_open_gate": "strict same-source top/W response evidence unless audit accepts primitive top-source premise",
+  "pass_count": 93,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The stack burns down source-coordinate scale and Fisher/LSZ normalization conditional algebra, but accepted same-surface pole/action authority and coefficient-certified top/W response evidence are absent.",
+  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. Coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
     "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
     "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py",
@@ -110,7 +117,8 @@
     "same_source_fail_count": 0,
     "strict_top_fail_count": 0,
     "strict_wz_fail_count": 0,
-    "top_carrier_fail_count": 0
+    "top_carrier_fail_count": 0,
+    "top_source_nogo_fail_count": 0
   },
   "upstream_statuses": {
     "ew_coupling": "unaudited",

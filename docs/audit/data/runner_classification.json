@@ -22740,6 +22740,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_three_generation_observable_theorem.py"
     },
+    "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_three_generation_rooting_coordinate_no_go.py"
+    },
     "three_generation_structure_note": {
       "assert_count": 3,
       "counts": {
@@ -48125,6 +48137,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_three_generation_rooting_coordinate_no_go.py": {
+      "assert_count": 1,
+      "claims": [
+        "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_trYsquared_proof_walk_lattice_independence.py": {
       "assert_count": 1,
       "claims": [
@@ -55676,12 +55703,12 @@
     "dominant_class_distribution": {
       "A": 236,
       "B": 280,
-      "C": 750,
+      "C": 751,
       "D": 299,
       "none": 438
     },
-    "runners_classified": 2003,
-    "runners_with_C": 973,
+    "runners_classified": 2004,
+    "runners_with_C": 974,
     "runners_with_D": 583
   }
 }

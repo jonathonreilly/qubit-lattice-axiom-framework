@@ -79367,6 +79367,18 @@
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem Note"
     },
+    "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27": {
+      "claim_id": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "e2a3c7b2c4db6d0de565448a9a8f9f62a4d9dbaf9bfbd3a54dfe4143bfddfa62",
+      "path": "docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "runner_path": "scripts/frontier_three_generation_rooting_coordinate_no_go.py",
+      "title": "Three-Generation Rooting Undefined Narrow No-Go Theorem"
+    },
     "three_generation_structure_note": {
       "claim_id": "three_generation_structure_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -85235,6 +85247,7 @@
     "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
     "three_generation_observable_count_corollary_note_2026-05-03",
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+    "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27",
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
     "triple_stack_collapse_scaling_note",
     "two_field_retarded_family_closure_note_2026-04-10",
@@ -85333,7 +85346,7 @@
       "bounded_theorem": 602,
       "decoration": 1,
       "meta": 191,
-      "no_go": 80,
+      "no_go": 81,
       "none": 1450,
       "open_gate": 49,
       "positive_theorem": 169
@@ -85342,15 +85355,15 @@
       "bounded_theorem": 1021,
       "decoration": 1,
       "meta": 191,
-      "no_go": 183,
+      "no_go": 184,
       "none": 431,
       "open_gate": 126,
       "positive_theorem": 589
     },
     "edge_count": 9739,
-    "leaf_count": 788,
-    "node_count": 2542,
-    "root_count": 848,
-    "runners_with_path": 2113
+    "leaf_count": 789,
+    "node_count": 2543,
+    "root_count": 849,
+    "runners_with_path": 2114
   }
 }

@@ -1,0 +1,28 @@
+slug: three-generation-no-rooting-theorem-20260527
+date: 2026-05-27
+mode: run
+target_status: exact-support
+current_goal: >
+  Supply a standalone no-rooting narrow theorem for the three-generation
+  backlog without overclaiming arbitrary subspaces or physical species
+  semantics.
+cycle_count: 1
+active_route: finite BZ-corner coordinate-projection no-go
+hard_residual: >
+  The parent three-generation row needs a one-hop no-rooting theorem before
+  the broad four-item scope can be re-audited. The stale omnibus version used
+  overly broad arbitrary-subspace language, so this branch narrows the theorem
+  to nonempty proper BZ-corner/taste coordinate projections.
+files_touched:
+  - docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-27.md
+  - scripts/frontier_three_generation_rooting_coordinate_no_go.py
+  - docs/audit/*
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+open_imports:
+  - Parent-row recitation is intentionally deferred until this no-go packet is independently audited.
+  - No physical species, SM-generation, chirality, CKM, or full matter-content claim is made.
+trace_gate: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: final checks, commit, push, and open review PR
+stop_condition: standalone no-go PR opened with audit queue ready

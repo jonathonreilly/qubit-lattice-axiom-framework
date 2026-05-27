@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_alpha_s_tadpole_power_identity.py
-runner_sha256: 73b84396803b078fe05c9f6773da3dd210b8084d1552af498edf6088ce9c83b6
+runner_sha256: 3a7a4853adedcaceaa74a0376cc4422e6a7276cf11665add3bf52d3ad7dff42a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10
 Goal: sympy-symbolic verification of (P1) alpha_LM^2 = alpha_bare * alpha_s(v)
-and (P2) alpha_s(v) / alpha_LM = 1/u_0 under retained CMT D14-D15 inputs
+and (P2) alpha_s(v) / alpha_LM = 1/u_0 under retained abstract tadpole-power inputs
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -18,8 +18,8 @@ Part 0: symbolic setup
 ----------------------------------------------------------------------------------------
   symbolic alpha_bare (positive real) = alpha_bare
   symbolic u_0 (positive real)        = u_0
-  cited n_link(gauge coupling) = 1
-  cited n_link(vacuum polarization) = 2
+  cited alpha_LM tadpole power = 1
+  cited alpha_s(v) tadpole power = 2
   (D1) alpha_LM    = alpha_bare / u_0   = alpha_bare/u_0
   (D2) alpha_s(v)  = alpha_bare / u_0^2 = alpha_bare/u_0**2
 
@@ -48,7 +48,7 @@ Part 3: derivable corollaries
 Part 4: free-symbol bookkeeping after substitution
 ----------------------------------------------------------------------------------------
   [PASS (A)] (P1) LHS - RHS difference has empty free symbols after simplify  (free_symbols = set())
-  [PASS (A)] (P1) LHS retains free symbols {alpha_bare, u_0}  (free_symbols of (P1) LHS = {u_0, alpha_bare})
+  [PASS (A)] (P1) LHS retains free symbols {alpha_bare, u_0}  (free_symbols of (P1) LHS = {alpha_bare, u_0})
 
 ----------------------------------------------------------------------------------------
 Part 5: numerical FP cross-check at one independent random sample
@@ -56,16 +56,16 @@ Part 5: numerical FP cross-check at one independent random sample
   [PASS (A)] (P1) FP sanity at sample (alpha_bare=0.23, u_0=0.876): LHS == RHS  (|LHS - RHS| = 0.000e+00)
 
 ----------------------------------------------------------------------------------------
-Part 6: counterfactual probes (n_link split is load-bearing)
+Part 6: counterfactual probes (power split is load-bearing)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] counterfactual: at n_link = (1, 1), (P1) collapses to a non-identity  (diff = alpha_bare**2*(1 - u_0)/u_0**2 (nonzero confirms n_link = (1, 2) load-bearing))
-  [PASS (A)] counterfactual: at n_link(vp) = 0 (no CMT), (P1) fails parametrically  (diff = -alpha_bare**2 + alpha_bare**2/u_0**2)
+  [PASS (A)] counterfactual: at powers = (1, 1), (P1) collapses to a non-identity  (diff = alpha_bare**2*(1 - u_0)/u_0**2 (nonzero confirms powers = (1, 2) load-bearing))
+  [PASS (A)] counterfactual: at alpha_s(v) power = 0 (no tadpole dressing), (P1) fails parametrically  (diff = -alpha_bare**2 + alpha_bare**2/u_0**2)
 
 ----------------------------------------------------------------------------------------
-Part 7: parametric CMT form (general n_link, sanity)
+Part 7: parametric tadpole-power form (general exponent sanity)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] parametric CMT: (P1) holds iff n_link(vp) = 2 * n_link(g)  (diff = 0 (parametric in n_link = n; (D2)'s n_vp = 2 satisfies n_vp = 2 n_g at n_g = 1))
-  [PASS (A)] counterfactual: at n_g = 2 with n_vp = 3 (not 4), (P1) fails parametrically  (diff at n_g=2, n_vp=3 = alpha_bare**2*(1 - u_0)/u_0**4 (confirms n_vp = 2 n_g locks the algebra))
+  [PASS (A)] parametric powers: (P1) holds iff power(alpha_s(v)) = 2 * power(alpha_LM)  (diff = 0 (parametric in alpha_LM power = n; D2's power 2 is twice D1's power 1))
+  [PASS (A)] counterfactual: at alpha_LM power = 2 with alpha_s(v) power = 3 (not 4), (P1) fails parametrically  (diff at powers (2, 3) = alpha_bare**2*(1 - u_0)/u_0**4 (confirms alpha_s(v) power must be twice alpha_LM power))
 
 ----------------------------------------------------------------------------------------
 Summary
@@ -76,8 +76,8 @@ Summary
     Four corollary identities all reduce to 0 parametrically
     (P1) LHS retains expected free-symbol set {alpha_bare, u_0}
     FP numerical cross-check passes at one independent random sample
-    Counterfactual: n_link(vp) != 2 n_link(g) collapses (P1)
-    Parametric CMT form: (P1) holds iff n_link(vp) = 2 n_link(g) (n_g = 1, n_vp = 2)
+    Counterfactual: power(alpha_s(v)) != 2 power(alpha_LM) collapses (P1)
+    Parametric tadpole-power form: (P1) holds iff alpha_s(v) power is twice alpha_LM power
 
 ========================================================================================
 TOTAL: PASS=16, FAIL=0

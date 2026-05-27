@@ -308090,24 +308090,54 @@
       "verdict_rationale": null
     },
     "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T04:15:50.195139+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "For positive integers N_iso and N_c, with H_unit explicitly defined as (1/sqrt(N_iso*N_c))*I on an orthonormal pair basis, the basis-state tree-level matrix element is 1/sqrt(N_iso*N_c) and contains no gauge-coupling parameter.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "positive_theorem",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "native_gauge_closure_note",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "87df628045a8e4b714816938b68f2f0b539af21256a21fabe36d02535f68c9ef",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-locke-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic gate closes as an open-gate diagnostic: the retained inputs and runner support the residual, the gate equation, and the off-surface failure. The chain does not close, and does not claim to close, the same-1PI bridge or any downstream retained theorem.",
       "claim_id": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Coefficient-bookkeeping diagnostic only: from C_A=c_S*g_bare^2/(2N_c) and C_B=1/(N_c*N_iso), equality reduces to c_S*g_bare^2=2/N_iso; at N_iso=2,c_S=1 this is g_bare^2=1, but same-1PI equivalence, g_bare=1 selection, and top-Yukawa readout remain unproved.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T04:15:50.195139+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -308118,19 +308148,19 @@
         "native_gauge_closure_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "C_A - C_B = (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso), so C_A=C_B iff c_S*g_bare^2=2/N_iso, while C_A=C_B is itself the missing same-1PI bridge.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "11698cd5f31242adf5ab65d7abe7ee88cb670d48d5c93e59757135f34dcdb6e7",
       "note_path": "docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if a later row tries to use this gate equation as a retained same-1PI theorem or as a derivation of g_bare=1/top-Yukawa without adding the missing Wick-level bridge.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -308198,18 +308228,22 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 15,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "runner_result": "runner_sha256=87df628045a8e4b714816938b68f2f0b539af21256a21fabe36d02535f68c9ef; PASS=23, FAIL=0",
+        "runner_status": "ok",
+        "scope_hygiene": 8,
+        "total_fail": 0,
+        "total_pass": 23
       },
       "runner_path": "scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py",
       "title": "YT_WARD Step 3 Same-1PI Construction Gate Diagnostic",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean only as open_gate. The note correctly blocks propagation by stating that equating Rep A and Rep B would assume the same-1PI equivalence under review. It avoids deriving g_bare=1, the Standard Model top-Yukawa observable, or same-1PI identity."
     },
     "yt_zero_import_authority_note": {
       "audit_date": null,

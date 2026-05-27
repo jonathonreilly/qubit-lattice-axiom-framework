@@ -2,8 +2,9 @@
 """Exact-symbolic audit-companion runner for
 `DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`.
 
-The narrow theorem's load-bearing content is the observable-principle
-bridge-selection statement that, given the retained upstream authorities
+The narrow theorem's load-bearing content is the finite-block
+raw-to-Hermitian-completion bridge statement that, given the retained
+upstream authorities
 (X1) `OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10`
 and (X2) `CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10`,
 the canonical Frobenius bridge ratio on the finite-dimensional bridge
@@ -11,8 +12,10 @@ algebra on C^16 with Y = P_R Γ_1 P_L is
 
   sqrt(Tr(Y^† Y) / Tr(Γ_1^† Γ_1))  =  sqrt(8 / 16)  =  1 / sqrt(2),
 
-with the active-space ratio 1 excluded by (X1)'s block-local uniqueness
-because Y carries zero W-source-response.
+where Γ_1 = Y + Y^† is the real-symmetric Hermitian-completed source
+direction. The active-space ratio 1 is retained only as a trace
+comparator. The runner does not apply (X1) directly to the non-Hermitian
+raw bridge Y and does not certify a physical y_nu/g_weak readout.
 
 The proof steps verified at exact sympy precision are:
 
@@ -24,11 +27,11 @@ The proof steps verified at exact sympy precision are:
   (DG)    det(m I_{16} + j Γ_1) = (m^2 - j^2)^8.
   (WG)    W[j Γ_1] = 8 log|1 - j^2/m^2| (closed-form match at exact rationals).
   (R)     sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2).
-  (R1)    Active-space ratio Tr Y^† Y / Tr P_L = 1; flagged as
-          non-admissible because Y is in the kernel of the (X1)
-          source-response map.
-  (R2)    Pseudoscalar companion i(Y - Y^†) is anti-Hermitian completion
-          and is trace-orthogonal to Γ_1.
+  (R1)    Active-space ratio Tr Y^† Y / Tr P_L = 1; flagged as a
+          comparator because P_L is not the Hermitian-completed source
+          direction.
+  (R2)    Pseudoscalar companion i(Y - Y^†) is Hermitian, has the same
+          trace norm, and is trace-orthogonal to Γ_1.
 
 Counterfactual: a candidate Γ̃_1 with [γ_5, Γ̃_1] ≠ 0 breaks (X3.H),
 confirming the anticommutation {γ_5, Γ_1} = 0 is load-bearing.
@@ -38,7 +41,7 @@ provides audit-friendly evidence that the narrow theorem's load-bearing
 algebra holds at exact symbolic precision on the canonical C^16
 representation. (X1) and (X2) are imported from retained-bounded
 upstream rows; this runner does not re-derive them but verifies the
-bridge identities they apply to.
+bridge identities used by the narrowed source note.
 """
 
 from __future__ import annotations
@@ -144,6 +147,10 @@ def main() -> int:
         matrix_eq(G1, G1.H),
     )
     check(
+        "G1 is real symmetric, hence in the X1 real-symmetric source class",
+        matrix_eq(G1, G1.T) and all(entry.is_real for entry in G1),
+    )
+    check(
         "G1^2 = I_{16} (Hermitian involution)",
         matrix_eq(G1 * G1, I16),
     )
@@ -201,6 +208,10 @@ def main() -> int:
     check(
         "(X3.N) Y^2 = 0 on C^16",
         matrix_eq(Y * Y, zeros(16, 16)),
+    )
+    check(
+        "Y is not Hermitian, so the runner does not treat Y as an X1 source direction",
+        not matrix_eq(Y, Y.H),
     )
 
     # (X3.H): Y + Y^† = Γ_1
@@ -338,16 +349,13 @@ def main() -> int:
         detail=f"active = {sympy.simplify(ratio_active)}",
     )
 
-    # The active-space comparator is excluded by the (X1) uniqueness on the
-    # source direction Y, because W[j Y] = 0 identically (Step 5 of the proof):
-    # this is the (R1) corollary — the active-space ratio is not an admissible
-    # bosonic normalization because Y is in the kernel of the source-response.
-    # Verified above via (WZ) at three rational j-values; we record one more
-    # exact symbolic check:
+    # The active-space comparator is a trace comparator, not the
+    # source-direction ratio. W[jY]=0 remains a nilpotent diagnostic, but
+    # X1 is not applied to Y because Y is non-Hermitian.
     check(
-        "(R1) active-space comparator non-admissible because W[j Y] ≡ 0 in j",
-        len(nonzero_coeffs_above_zero) == 0,
-        detail="Y is in kernel of the (X1) source-response on real-D blocks",
+        "(R1) active-space ratio is comparator-only; Y is outside the X1 source-domain use",
+        len(nonzero_coeffs_above_zero) == 0 and not matrix_eq(Y, Y.H),
+        detail="W[jY] is nilpotent diagnostic; Γ_1 is the real-symmetric source direction",
     )
 
     # =========================================================================
@@ -419,10 +427,11 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 8: cross-check — (X1) source-derivative consistency on Γ_1")
+    section("Part 8: cross-check — source-derivative diagnostics on Γ_1 and Y")
     # =========================================================================
     #
-    # The (X1) uniqueness statement implies that ∂_j W[j Γ_1] at j=0 equals
+    # The (X1) uniqueness statement applies to Γ_1 and implies that
+    # ∂_j W[j Γ_1] at j=0 equals
     # c * d/dj [8 log|1 - j^2|] evaluated at j=0 = 0, and ∂^2_j W[j Γ_1] at j=0
     # equals c * d^2/dj^2 [8 log|1 - j^2|] at j=0 = -16. Verify symbolically.
 
@@ -445,10 +454,10 @@ def main() -> int:
         detail=f"∂²_j W = {d2W_at0}",
     )
 
-    # And ∂^2_j W[j Y] at j=0 = 0 because W[jY] ≡ 0:
-    # (Already established by the polynomial coefficient check above.)
+    # And ∂^2_j W[j Y] at j=0 = 0 because W[jY] ≡ 0. This is a
+    # diagnostic nilpotency check, not an application of X1 to Y.
     check(
-        "∂²_j W[j Y] at j = 0 = 0 (Y is in kernel of source-response)",
+        "∂²_j W[j Y] at j = 0 = 0 (nilpotent diagnostic; not an X1 source-domain claim)",
         len(nonzero_coeffs_above_zero) == 0,
         detail="follows from W[jY] ≡ 0 identically in j",
     )
@@ -466,13 +475,13 @@ def main() -> int:
     print("    (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals")
     print("    (WZ) W[j Y] = 0 at exact rationals")
     print("    (R)  sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2)")
-    print("    (R1) active-space comparator = 1 is non-admissible because")
-    print("         Y is in the kernel of the (X1) source-response on real-D blocks")
-    print("    (R2) pseudoscalar companion is anti-Hermitian-completion partner;")
+    print("    (R1) active-space comparator = 1 is comparator-only;")
+    print("         Γ_1, not Y or P_L, is the real-symmetric source direction")
+    print("    (R2) pseudoscalar companion is Hermitian and trace-orthogonal;")
     print("         trace-orthogonal to Γ_1 and same magnitude")
     print("    Counterfactual: candidate Γ̃_1 commuting with γ_5 forces Y_tilde = 0")
     print("                     and (X3.H) breaks — anticommutation is load-bearing")
-    print("    (X1) source-derivative consistency: ∂²_j W[j Γ_1]|_0 = -16, ∂²_j W[j Y]|_0 = 0")
+    print("    Source diagnostics: ∂²_j W[j Γ_1]|_0 = -16, ∂²_j W[j Y]|_0 = 0")
 
     print()
     print("=" * 88)

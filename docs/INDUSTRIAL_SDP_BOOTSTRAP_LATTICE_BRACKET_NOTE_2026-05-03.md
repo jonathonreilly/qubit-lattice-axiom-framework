@@ -173,3 +173,9 @@ proposal_allowed_reason: |
 - Bridge-support analytic upper-bound: `GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`
 - Sister obstruction: [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
 - Literature: Kazakov-Zheng [arXiv:2203.11360](https://arxiv.org/abs/2203.11360), [arXiv:2404.16925](https://arxiv.org/abs/2404.16925)
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [industrial_sdp_bootstrap_infrastructure_note_2026-05-03](INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md)

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 537 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1155 |
+| unaudited | 1158 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,21 +57,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 836 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1384 |
+| `unaudited` | 1387 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1071 |
+| `bounded_theorem` | 1069 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 256 |
-| `open_gate` | 111 |
-| `positive_theorem` | 706 |
+| `open_gate` | 110 |
+| `positive_theorem` | 709 |
 
 | criticality | count |
 |---|---:|
@@ -81,7 +81,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `leaf` | 968 |
 
 - **Retained pending chain closure:** 8
-- **Citation cycles detected:** 3
+- **Citation cycles detected:** 4
 
 ### Runner classification (static heuristic)
 
@@ -106,9 +106,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 711 | 37.98 | `unaudited` | unaudited |
 | 9 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 37.12 | `audited_clean` | **retained_no_go** |
 | 10 | `minimal_axioms` | meta | critical | 1039 | 36.52 | `unaudited` | meta |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1020 | 34.00 | `audited_clean` | **retained** |
-| 12 | `minimal_axioms_2026-04-11` | meta | critical | 932 | 33.87 | `unaudited` | meta |
-| 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 33.55 | `audited_clean` | **retained_bounded** |
+| 11 | `plaquette_self_consistency_note` | bounded_theorem | critical | 750 | 34.05 | `audited_clean` | **retained_bounded** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1020 | 34.00 | `audited_clean` | **retained** |
+| 13 | `minimal_axioms_2026-04-11` | meta | critical | 932 | 33.87 | `unaudited` | meta |
 | 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 177 | 33.48 | `unaudited` | unaudited |
 | 15 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 32.35 | `audited_clean` | **retained** |
 | 16 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
@@ -1001,7 +1001,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1030,9 +1029,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_fam2_seed0_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
-| `wave_direct_dm_h025_fam2_seed1_followup_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6923,24 +6920,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `scripts/frontier_industrial_sdp_bootstrap_block01.py`
   - `INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
-
-### `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03`
-
-- **Note:** [`INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** A bounded numerical bracket attempt for lattice <P>(beta=6) under the stated finite SDP constraints, with a conditional narrow obstruction that this implemented constraint set gives no nontrivial upper bound beyond 1.0.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-euler-2nd`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The CVXPY SDP with PSD, Hausdorff, 4x4 Gram, support, optional area-law, and admitted bridge-support lower-bound constraints solves and returns the wide bracket approximately [0.4225, 1.0]; the broader obstruction is inferred from the upper endpoint staying trivial without explicit loop equations.  _(class `C`)_
-- **chain closes:** False — The runner supports the narrow numerical readout that the implemented constraints produce a lower endpoint near 0.4225 when the admitted lower bound is enabled and an upper endpoint near 1.0. It does not close the broader consolidated obstruction that industrial SDP without Migdal-Makeenko equations cannot tighten the bracket, and the source relies on block-01 infrastructure and admitted bridge-support inputs that are not closed as direct retained authorities in this row.
-- **rationale:** Issue: The narrow implemented SDP bracket is runner-supported, but the broader consolidated obstruction is not closed by the packet. Why this blocks: the source names a wall around missing Migdal-Makeenko equations and says even industrial SDP cannot tighten the bracket, but the restricted packet does not visibly satisfy N1-N8 no-go discipline or prove that all non-loop-equation routes are exhausted; it also relies on block-01 infrastructure and an admitted mean-field lower bound rather than direct retained closure for those inputs. Repair target: either narrow the claim to the specific implemented CVXPY constraint set and its bracket, or add retained authority for the infrastructure/lower-bound inputs plus a retained bridge theorem/no-go audit covering alternative routes, wall independence, hidden-wall scan, residual matching, rhetoric audit, partial-closure path scan, steelman, and cross-cycle echo. Claim boundary until fixed: this runner's PSD/Hausdorff/Gram/support/area-law/admitted-lower-bound SDP gives approximately [0.4225, 1.0] with a trivial upper endpoint; the broad consolidated obstruction is not cleanly retained.
-- **open / conditional deps cited:**
-  - `INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`
-  - `INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md`
-  - `visible N1-N8 no-go discipline record for the consolidated obstruction`
-  - `retained bridge for the mean-field lower-bound input p1 >= 0.4225`
-- **auditor confidence:** medium_high
 
 ### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`
 
@@ -14160,22 +14139,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
 - **auditor confidence:** high
 
-### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`
-
-- **Note:** [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](../../docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Subordinate coefficient-selection support only: on the canonical tadpole-improved surface, compare the perturbative scalar-singlet coefficient C_pert = 1/(2 N_c) = 1/6 with the strong-coupling one-link coefficient C_strong = 1/N_c^2 = 1/9, without ratifying physical top-Yukawa readout, shared tadpole transport, or an unconditional y_t(M_Pl)/g_s(M_Pl) bridge.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-uv-gauge-yukawa-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** On the tadpole-improved canonical surface alpha_LM = alpha_bare / u_0 = 0.0907 is small, so the perturbative coefficient 1/(2 N_c) = 1/6 is the dominant 4-fermion structure and the strong-coupling 1/N_c^2 = 1/9 coefficient is not the correct coefficient on that surface.  _(class `B`)_
-- **chain closes:** False — The algebraic coefficient comparison closes, but the surface-selection step does not. The restricted packet computes C_pert, C_strong, alpha_LM, and n_opt, but does not derive the claimed perturbative-domain selector or the strong-coupling character-ratio nonconvergence criterion from a retained direct authority.
-- **rationale:** Issue: the note's load-bearing selection says the canonical tadpole-improved surface makes the perturbative coefficient govern over the strong-coupling coefficient. Why this blocks: the runner genuinely computes the SU(3) Fierz coefficient, Haar one-link coefficient, Clifford projection, and canonical alpha arithmetic, but the expansion-domain selector is asserted from small alpha_LM and an uncomputed c1/c0 claim rather than derived in the restricted dependency packet. Repair target: add or derive a retained canonical-surface perturbative-regime selector, including the u_0/alpha_LM authority and the strong-coupling character-ratio comparison, and wire it as a direct dependency. Claim boundary until fixed: the clean bounded core is the algebraic comparison C_pert = 1/6 versus C_strong = 1/9 plus support-only NLO arithmetic; no physical y_t readout, shared tadpole transport, or unconditional Planck-ratio bridge is ratified.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-04-11.md`
-  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
-- **auditor confidence:** high
-
 ### `valley_linear_action_note`
 
 - **Note:** [`VALLEY_LINEAR_ACTION_NOTE.md`](../../docs/VALLEY_LINEAR_ACTION_NOTE.md)
@@ -14399,22 +14362,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The primary runner calls measure_dm over the stated strengths and prints values matching the note; the helper path shown instantiates the lattice growth, wave solve, beam propagation, and history comparison rather than importing the contested conclusion. Within the restricted packet, the stated null, sign pattern, and weak-field scaling summary follow from the completed runner output.
 - **rationale:** The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims.
 - **auditor confidence:** medium
-
-### `wave_direct_dm_h025_fam2_seed1_followup_note`
-
-- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded finite-run follow-up for the direct-dM matched-history lane: at Fam2, seed 1, S=0.004, H=0.25, the completed point log reports dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and the retained Fam2 control dependencies support the same-resolution seed-1 and seed-0 ladders. The broader claims that this aligns with coarse-H seed-1 late-gain behavior and reproduces the Fam1 cross-seed ordering are not closed by the current one-hop packet.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note's honest conclusion says that on Fam2 the H=0.25 seed-conditioned late-gain asymmetry survives and the cross-seed ordering flips the same way it did on Fam1, while the normalized amplitude band is not refinement-stable.  _(class `B`)_
-- **chain closes:** False — The target Fam2 seed-1 point and the two retained Fam2 control ladders are present, but the claim's coarse-H seed-1 comparison and Fam1-style cross-seed comparison require upstream comparison authorities that are not in the selected one-hop dependency packet. The registered cached runner output also runs the default Fam1 seed0 point, not the Fam2 seed1 target.
-- **rationale:** Issue: the load-bearing conclusion is not just the isolated Fam2 seed-1 point; it also compares that point to coarse-H seed-1 values and to the Fam1 cross-seed ordering. Why this blocks: the one-hop retained packet includes Fam2 seed-1 control, Fam2 seed-0 control, and Fam2 pair synthesis, but not the Fam1 pair or coarse-H portability authorities needed for those comparison statements; additionally the registered cached runner output is not parameterized to the target Fam2 seed-1 invocation. Repair target: add direct dependency edges to the retained Fam1/fine-H and coarse-H comparison authorities used by the claim, and wire a target-specific runner wrapper or cache entry for `--family Fam2 --seed 1 --strength 0.004 --h 0.25`. Claim boundary until fixed: the completed log plus retained Fam2 control notes support the bounded Fam2 seed-1 point and same-resolution Fam2 pair controls, but not the broader cross-family/coarse-to-fine follow-up claim.
-- **open / conditional deps cited:**
-  - `WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`
-  - `WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md`
-- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam2_two_point_synthesis_note`
 

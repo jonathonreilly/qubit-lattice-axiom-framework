@@ -12777,6 +12777,10 @@
       "to": "gauge_vacuum_plaquette_framework_point_underdetermination_note"
     },
     {
+      "from": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
+      "to": "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
+    },
+    {
       "from": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms"
     },
@@ -26021,6 +26025,10 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
+      "from": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
       "from": "vacuum_critical_stability_note",
       "to": "composite_higgs_mechanism_note_2026-05-03"
     },
@@ -26251,6 +26259,14 @@
     {
       "from": "wave_direct_dm_h025_fam2_seed1_followup_note",
       "to": "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+    },
+    {
+      "from": "wave_direct_dm_h025_fam2_seed1_followup_note",
+      "to": "wave_direct_dm_h025_two_point_synthesis_note"
+    },
+    {
+      "from": "wave_direct_dm_h025_fam2_seed1_followup_note",
+      "to": "wave_direct_dm_portability_batch_note"
     },
     {
       "from": "wave_direct_dm_h025_fam2_two_point_synthesis_note",
@@ -58505,10 +58521,11 @@
       "claim_type_seed_hint": null,
       "deps": [
         "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note"
+        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+        "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c6e67f12f150045c5645e55e0dd95493aaa02d85908c92647436e5850e7679cc",
+      "note_hash": "3974a9f7d642c54275d6ca77ef65901787d7af5340fc6ea59b499851f08384eb",
       "path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "title": "Industrial SDP Bootstrap \u2014 Lattice \u27e8P\u27e9(\u03b2=6) Bracket Attempt"
@@ -80523,12 +80540,13 @@
       "deps": [
         "yt_ward_identity_derivation_theorem",
         "yt_ew_color_projection_theorem",
-        "minimal_axioms_2026-04-11"
+        "minimal_axioms_2026-04-11",
+        "plaquette_self_consistency_note"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "d34460eb9aae8d0bb5710aa08322f75581b8da83b7b522b1ee86dc205e3dbe1c",
+      "note_hash": "d8e2d7f0a182335907e13c2e4e234f3988f855585e4c731c43c442bdba4fa9e6",
       "path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "UV Gauge-to-Yukawa Bridge: Subordinate Support Note"
@@ -80992,13 +81010,15 @@
       "deps": [
         "wave_direct_dm_h025_fam2_seed1_control_note",
         "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+        "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+        "wave_direct_dm_h025_two_point_synthesis_note",
+        "wave_direct_dm_portability_batch_note"
       ],
       "helper_runner_paths": [
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "b92c5d873d173bbf740cbed76d17e666180b96e3d72a9c101f6c8067099d80e4",
+      "note_hash": "a655d2d61b96ef9e27706251d222177ba96cb14b8fd5c074ddd36c8f4087b3eb",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed1 Follow-Up Note"
@@ -85327,7 +85347,7 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9735,
+    "edge_count": 9739,
     "leaf_count": 788,
     "node_count": 2542,
     "root_count": 848,

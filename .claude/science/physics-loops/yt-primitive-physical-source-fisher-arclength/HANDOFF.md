@@ -35,12 +35,17 @@ The added stack contract records the order from here to full closure:
 1. source/action authority is now backed by bounded RN/action support plus an
    exact minimum-information variational theorem, but physical top
    intervention identification is still open;
-2. source-coordinate scale is burned down by Fisher arclength;
-3. Fisher arclength equals LSZ unit-residue normalization once an accepted pole
+2. the one-Higgs up-type top carrier skeleton is selected exactly as
+   `bar Q_L tilde H u_R`, while the coefficient remains free;
+3. under a no-hidden-scale minimum-information intervention law, the physical
+   top source is unique and gives `y_33 = 1/sqrt(6)`;
+4. source-coordinate scale is burned down by Fisher arclength;
+5. Fisher arclength equals LSZ unit-residue normalization once an accepted pole
    residue is supplied;
-4. the first open hard gate is accepted same-surface pole/action authority;
-5. the backup/parallel route is strict same-source top/W pole-response rows;
-6. same-scale `g_2` and matching/running are only needed for numerical
+6. the first open hard gate is audit/derivation of the physical intervention
+   law, or strict same-source top/W pole-response rows if that law is not
+   accepted;
+7. same-scale `g_2` and matching/running are only needed for numerical
    physical-scale `y_t(v)`, not for the local ratio scope.
 
 The current branch therefore does useful science, but still cannot claim
@@ -53,6 +58,8 @@ Run:
 ```text
 python3 scripts/frontier_yt_primitive_physical_source_fisher_arclength_invariant.py
 python3 scripts/frontier_yt_minimum_information_source_action_bridge.py
+python3 scripts/frontier_yt_physical_intervention_mininfo_uniqueness_gate.py
+python3 scripts/frontier_yt_one_higgs_top_carrier_selection_support.py
 python3 scripts/frontier_yt_fisher_lsz_source_normalization_bridge.py
 python3 scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py
 python3 scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py

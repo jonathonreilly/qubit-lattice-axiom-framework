@@ -17,11 +17,18 @@ family from a finite-record variational criterion.  It supports source/action
 authority but still does not prove that the physical top Yukawa experiment is
 that intervention.
 
+The physical-intervention uniqueness add-on proves that if the no-hidden-scale
+minimum-information intervention law is accepted as the top source law, the
+normalized top component is `1/sqrt(6)`.  The carrier add-on selects
+`bar Q_L tilde H u_R` exactly.  These are upstream support, not audit-ratified
+closure.
+
 The Fisher-LSZ add-on further proves that an accepted isolated-pole residue
 surface makes Fisher arclength identical to LSZ unit-residue normalization.
 The trace still supports rather than closes the Y_T blocker because the pole
 surface and strict response rows remain absent.
 
-The stack contract names the first open gate explicitly as accepted
-same-surface pole/action authority.  This prevents the branch from pretending
-that Fisher/LSZ algebra alone is closure.
+The stack contract now names the first open gate explicitly as audit/derivation
+of the physical intervention law, with strict top/W pole-response measurement
+as the fallback.  This prevents the branch from pretending that
+minimum-information algebra alone is closure.

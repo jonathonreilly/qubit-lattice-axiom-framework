@@ -25,8 +25,17 @@ surface or strict top/W response evidence.
 
 ## Closure Stack Contract Review
 
-Disposition: `pass` for branch-local exact-support stack packaging.  The
-minimum-information bridge runner passed with `PASS=37 FAIL=0`.  The closure
-contract runner passed with `PASS=73 FAIL=0`, names the first open gate as
-accepted same-surface pole/action authority, and keeps retained/proposed-
-retained wording forbidden.
+Disposition: historical `pass` for branch-local exact-support stack packaging.
+The minimum-information bridge runner passed with `PASS=37 FAIL=0`.  The
+initial closure contract runner passed with `PASS=73 FAIL=0`; it has now been
+superseded by the updated `PASS=81 FAIL=0` contract below.
+
+## Physical Intervention And Carrier Add-Ons
+
+Disposition: `pass` for branch-local exact-support packaging.  The
+physical-intervention uniqueness gate passed with `PASS=48 FAIL=0`; it proves
+the no-hidden-scale minimum-information law fixes `y_33 = 1/sqrt(6)` if that
+law is accepted as the physical top source law.  The one-Higgs top-carrier
+support passed with `PASS=41 FAIL=0`; it selects `bar Q_L tilde H u_R` and
+leaves the generation coefficient free.  The updated closure contract passed
+with `PASS=81 FAIL=0` and keeps retained/proposed-retained wording forbidden.

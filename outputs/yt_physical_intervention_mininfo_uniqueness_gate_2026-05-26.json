@@ -1,0 +1,31 @@
+{
+  "actual_current_surface_status": "exact-support under no-hidden-scale minimum-information intervention law",
+  "audit_required_before_effective_retained": true,
+  "backup_route": "strict same-source top/W pole-response measurement certificate",
+  "bare_retained_allowed": false,
+  "conditional_surface_status": "If the no-hidden-scale minimum-information intervention law is accepted as the physical top Yukawa source law for O_top, then y_33=1/sqrt(6).",
+  "criteria": {
+    "intrinsic_fisher_source_unit": true,
+    "local_target": true,
+    "minimum_information": true,
+    "no_hidden_channel": true,
+    "normalized_top_operator": true,
+    "one_higgs_top_carrier_retained": false,
+    "physical_top_yukawa_law_audit_accepted": false,
+    "proposal_allowed": false,
+    "same_scale_g2_retained_for_numeric_claim": false,
+    "strict_top_w_response_evidence_present": false
+  },
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "audit/derive the physical intervention law",
+  "pass_count": 48,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The uniqueness theorem is exact under the intervention law, but the law still needs independent audit/derivation as the physical top Yukawa source law.",
+  "reachability_to_target": "partially_closes",
+  "review_surface": [
+    "docs/YT_PHYSICAL_INTERVENTION_MININFO_UNIQUENESS_GATE_NOTE_2026-05-26.md",
+    "scripts/frontier_yt_physical_intervention_mininfo_uniqueness_gate.py",
+    "outputs/yt_physical_intervention_mininfo_uniqueness_gate_2026-05-26.json"
+  ],
+  "trace_class": "upstream_support"
+}

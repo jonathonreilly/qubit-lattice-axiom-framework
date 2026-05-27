@@ -5,7 +5,7 @@ conditional_surface_status: "If the physical top intervention is identified with
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Accepted same-surface pole/action authority and strict top/W response rows remain open."
+proposal_allowed_reason: "The no-hidden-scale minimum-information intervention law has not yet been audited/derived as the physical top Yukawa source law, and strict top/W response rows remain absent."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
@@ -17,5 +17,7 @@ surface.  It cannot propose retained Y_T closure because the accepted pole
 surface and strict top/W response rows are still not supplied.
 
 The minimum-information source/action bridge verifies `SUMMARY: PASS=37 FAIL=0`.
-The closure-stack contract verifies `SUMMARY: PASS=73 FAIL=0` and records the
-first open gate as physical/top same-surface pole/action authority.
+The physical-intervention uniqueness gate verifies `SUMMARY: PASS=48 FAIL=0`.
+The one-Higgs top-carrier support verifies `SUMMARY: PASS=41 FAIL=0`.
+The closure-stack contract verifies `SUMMARY: PASS=81 FAIL=0` and records the
+first open gate as audit/derivation of the physical intervention law.

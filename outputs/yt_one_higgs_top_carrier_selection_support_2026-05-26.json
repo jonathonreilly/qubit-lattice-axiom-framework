@@ -1,0 +1,33 @@
+{
+  "actual_current_surface_status": "exact-support for one-Higgs up-type top carrier skeleton",
+  "allowed_monomials": [
+    "bar Q_L tilde_H u_R",
+    "bar Q_L H d_R",
+    "bar L_L H e_R",
+    "bar L_L tilde_H nu_R"
+  ],
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "boundary": {
+    "generation_matrix_entry_selected": false,
+    "physical_intervention_law_accepted": false,
+    "proposal_allowed": false,
+    "strict_top_w_response_evidence_present": false,
+    "top_carrier_skeleton_selected": true
+  },
+  "fail_count": 0,
+  "pass_count": 41,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The top carrier skeleton is selected, but the generation matrix entry, physical intervention law, same-scale g2, and matching/running remain outside this packet.",
+  "reachability_to_target": "supports",
+  "review_surface": [
+    "docs/YT_ONE_HIGGS_TOP_CARRIER_SELECTION_SUPPORT_NOTE_2026-05-26.md",
+    "scripts/frontier_yt_one_higgs_top_carrier_selection_support.py",
+    "outputs/yt_one_higgs_top_carrier_selection_support_2026-05-26.json"
+  ],
+  "trace_class": "upstream_support",
+  "upstream_statuses": {
+    "broad_one_higgs_status": "unaudited",
+    "hypercharge_enumeration_status": "retained_bounded"
+  }
+}

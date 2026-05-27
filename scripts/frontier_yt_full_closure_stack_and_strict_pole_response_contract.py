@@ -27,6 +27,8 @@ OUTPUT = ROOT / "outputs" / "yt_full_closure_stack_and_strict_pole_response_cont
 NOTE = DOCS / "YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md"
 SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 MIN_INFO = DOCS / "YT_MINIMUM_INFORMATION_SOURCE_ACTION_BRIDGE_THEOREM_NOTE_2026-05-26.md"
+MININFO_UNIQUENESS = DOCS / "YT_PHYSICAL_INTERVENTION_MININFO_UNIQUENESS_GATE_NOTE_2026-05-26.md"
+TOP_CARRIER = DOCS / "YT_ONE_HIGGS_TOP_CARRIER_SELECTION_SUPPORT_NOTE_2026-05-26.md"
 FISHER = DOCS / "YT_PRIMITIVE_PHYSICAL_SOURCE_FISHER_ARCLENGTH_INVARIANT_THEOREM_NOTE_2026-05-26.md"
 FISHER_LSZ = DOCS / "YT_FISHER_LSZ_SOURCE_NORMALIZATION_BRIDGE_THEOREM_NOTE_2026-05-26.md"
 POLE_NOGO = DOCS / "YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md"
@@ -38,6 +40,8 @@ LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
 MIN_INFO_OUT = ROOT / "outputs" / "yt_minimum_information_source_action_bridge_2026-05-26.json"
+MININFO_UNIQUENESS_OUT = ROOT / "outputs" / "yt_physical_intervention_mininfo_uniqueness_gate_2026-05-26.json"
+TOP_CARRIER_OUT = ROOT / "outputs" / "yt_one_higgs_top_carrier_selection_support_2026-05-26.json"
 FISHER_LSZ_OUT = ROOT / "outputs" / "yt_fisher_lsz_source_normalization_bridge_2026-05-26.json"
 FH_OUT = ROOT / "outputs" / "yt_fh_top_w_response_ratio_gate_2026-05-25.json"
 SAME_SOURCE_OUT = ROOT / "outputs" / "yt_same_source_ew_higgs_authority_gate_2026-05-25.json"
@@ -90,6 +94,8 @@ def part1_anchors() -> dict[str, str]:
         NOTE,
         SOURCE_ACTION,
         MIN_INFO,
+        MININFO_UNIQUENESS,
+        TOP_CARRIER,
         FISHER,
         FISHER_LSZ,
         POLE_NOGO,
@@ -100,6 +106,8 @@ def part1_anchors() -> dict[str, str]:
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
+        MININFO_UNIQUENESS_OUT,
+        TOP_CARRIER_OUT,
         FISHER_LSZ_OUT,
         FH_OUT,
         SAME_SOURCE_OUT,
@@ -115,7 +123,7 @@ def part1_anchors() -> dict[str, str]:
         "Conditional Closure Theorem",
         "Current Burn-Down Result",
         "Non-Claims",
-        "accepted same-surface pole/action authority",
+        "audit/derive that the no-hidden-scale minimum-information intervention law",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -138,6 +146,8 @@ def part2_support_outputs() -> dict[str, Any]:
     print("\nPart 2: already-burned-down support outputs")
     fisher = load_json(FISHER_OUT)
     min_info = load_json(MIN_INFO_OUT)
+    mininfo_uniqueness = load_json(MININFO_UNIQUENESS_OUT)
+    top_carrier = load_json(TOP_CARRIER_OUT)
     fisher_lsz = load_json(FISHER_LSZ_OUT)
     fh = load_json(FH_OUT)
     same = load_json(SAME_SOURCE_OUT)
@@ -146,6 +156,10 @@ def part2_support_outputs() -> dict[str, Any]:
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
+    check("physical-intervention mininfo uniqueness gate passed", mininfo_uniqueness.get("fail_count") == 0, mininfo_uniqueness.get("fail_count"))
+    check("physical-intervention uniqueness proposal is not allowed", mininfo_uniqueness.get("proposal_allowed") is False)
+    check("one-Higgs top-carrier support passed", top_carrier.get("fail_count") == 0, top_carrier.get("fail_count"))
+    check("one-Higgs top-carrier proposal is not allowed", top_carrier.get("proposal_allowed") is False)
     check("Fisher source-scale theorem passed", fisher.get("fail_count") == 0, fisher.get("fail_count"))
     check("Fisher theorem proposal is not allowed", fisher.get("proposal_allowed") is False)
     check("Fisher theorem exposes remaining bridge", "remaining_bridge" in fisher)
@@ -161,6 +175,8 @@ def part2_support_outputs() -> dict[str, Any]:
     return {
         "fisher": fisher,
         "minimum_information": min_info,
+        "minimum_information_uniqueness": mininfo_uniqueness,
+        "top_carrier": top_carrier,
         "fisher_lsz": fisher_lsz,
         "fh": fh,
         "same_source": same,
@@ -259,7 +275,7 @@ def part5_missing_certificates() -> dict[str, Any]:
     ]
     check("strict source-Higgs pole certificate schema has 11 fields", len(required_pole_fields) == 11)
     check("strict top/W response certificate schema has 10 fields", len(required_top_w_fields) == 10)
-    check("first open gate is pole/action authority before numerical running", True, "accepted same-surface pole/action authority")
+    check("first open gate is physical intervention law before numerical running", True, "audit/derive physical intervention law")
 
     return {
         "strict_source_higgs_pole_certificate_present": pole_cert_present,
@@ -313,38 +329,52 @@ def main() -> int:
             "name": "same-surface source/action authority",
             "status": "bounded_support_plus_minimum_information_exact_support_physical_identification_open",
             "closed": False,
-            "next_action": "derive or accept physical Y_T source/action surface, or bypass via strict same-source pole responses",
+            "next_action": "audit/derive physical top intervention law, or bypass via strict same-source pole responses",
         },
         {
             "step": 1,
+            "name": "one-Higgs up-type top carrier skeleton",
+            "status": "exact_support_coefficient_free",
+            "closed": True,
+            "next_action": "combine only with a physical intervention/coefficient theorem or strict response evidence",
+        },
+        {
+            "step": 2,
             "name": "source-scale Fisher arclength",
             "status": "exact_support",
             "closed": True,
             "next_action": "use only with a physical Fisher/LSZ source readout",
         },
         {
-            "step": 2,
+            "step": 3,
+            "name": "physical intervention minimum-information uniqueness",
+            "status": "exact_support_under_no_hidden_scale_intervention_law",
+            "closed": False,
+            "next_action": "audit/derive that law as the physical top Yukawa source law",
+        },
+        {
+            "step": 4,
             "name": "Fisher/LSZ source normalization",
             "status": "exact_support_under_accepted_isolated_pole",
             "closed": True,
             "next_action": "supply accepted same-surface isolated-pole residue authority",
         },
         {
-            "step": 3,
+            "step": 5,
             "name": "same-surface pole/action authority",
             "status": "open_first_hard_gate",
             "closed": False,
             "next_action": "produce strict pole/residue certificate or theorem",
         },
         {
-            "step": 4,
+            "step": 6,
             "name": "strict same-source top/W response rows",
             "status": "algebra_closed_evidence_absent",
             "closed": False,
             "next_action": "produce coefficient-certified top/W response rows",
         },
         {
-            "step": 5,
+            "step": 7,
             "name": "same-scale g2 and matching/running",
             "status": "open_for_numerical_y_t_v",
             "closed": False,
@@ -362,7 +392,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted same-surface pole/action authority",
+        "first_open_gate": "audit/derive the physical intervention law",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -370,6 +400,8 @@ def main() -> int:
         "support_output_status": {
             "fisher_fail_count": support_outputs["fisher"].get("fail_count"),
             "minimum_information_fail_count": support_outputs["minimum_information"].get("fail_count"),
+            "minimum_information_uniqueness_fail_count": support_outputs["minimum_information_uniqueness"].get("fail_count"),
+            "top_carrier_fail_count": support_outputs["top_carrier"].get("fail_count"),
             "fisher_lsz_fail_count": support_outputs["fisher_lsz"].get("fail_count"),
             "fh_fail_count": support_outputs["fh"].get("fail_count"),
             "same_source_fail_count": support_outputs["same_source"].get("fail_count"),

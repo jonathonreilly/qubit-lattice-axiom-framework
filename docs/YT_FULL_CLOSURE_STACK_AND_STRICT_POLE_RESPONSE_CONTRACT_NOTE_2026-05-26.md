@@ -28,13 +28,18 @@ The result is:
 closed exactly:
   source-coupled action follows from a finite-record minimum-information
   intervention criterion
+  the one-Higgs up-type top carrier skeleton is selected as bar Q_L tilde H u_R
+  the no-hidden-scale minimum-information intervention law uniquely gives
+  y_33 = 1/sqrt(6) if accepted as the physical top source law
   source-coordinate scale is not invariant on the RN/Fisher source manifold
   Fisher source arclength equals LSZ unit-residue normalization if an accepted
   isolated-pole residue surface is supplied
   W/Z denominator response and symbolic top-response row algebra are closed
 
 still open:
-  accepted same-surface pole/action authority for the physical top/Higgs row
+  audit/derive that the no-hidden-scale minimum-information law is the physical
+  top Yukawa source law, or measure the strict top/W response directly
+  accepted same-surface pole/response authority for the physical top/Higgs row
   coefficient-certified same-source top/W response evidence
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
@@ -77,7 +82,22 @@ derive/accept the physical top source as this RN/Fisher source/action surface,
 
 or bypass that identification by measuring strict same-source pole responses.
 
-### 1. Source-Scale Burn-Down
+### 1. Top-Carrier Burn-Down
+
+Current status: exact support for the one-Higgs up-type top skeleton; no
+coefficient authority.
+
+[`YT_ONE_HIGGS_TOP_CARRIER_SELECTION_SUPPORT_NOTE_2026-05-26.md`](YT_ONE_HIGGS_TOP_CARRIER_SELECTION_SUPPORT_NOTE_2026-05-26.md)
+checks the one-Higgs charge table directly and selects
+
+```text
+bar Q_L tilde H u_R
+```
+
+as the unique renormalizable one-Higgs carrier from `Q_L` to `u_R`.  It leaves
+the generation matrix entry free.
+
+### 2. Source-Scale Burn-Down
 
 Current status: exact support, closed for the intrinsic source coordinate.
 
@@ -93,7 +113,13 @@ The `lambda` freedom is therefore a raw-coordinate freedom on the source
 manifold, not an invariant coefficient, once the physical readout is Fisher
 normalized.
 
-### 2. Fisher/LSZ Bridge
+[`YT_PHYSICAL_INTERVENTION_MININFO_UNIQUENESS_GATE_NOTE_2026-05-26.md`](YT_PHYSICAL_INTERVENTION_MININFO_UNIQUENESS_GATE_NOTE_2026-05-26.md)
+then proves that under a no-hidden-scale minimum-information intervention law,
+the physical source targeting normalized `O_top` is unique and gives
+`y_33 = 1/sqrt(6)`.  That law is still an audit/derivation gate, not silently
+assumed.
+
+### 3. Fisher/LSZ Bridge
 
 Current status: exact support conditional on an accepted isolated-pole residue.
 
@@ -109,7 +135,7 @@ accepted isolated pole with residue A_O
 This turns the source-scale question into a physical pole-surface question.
 It does not prove that the Y_T source has that accepted pole surface.
 
-### 3. Same-Surface Pole/Residue Authority
+### 4. Same-Surface Pole/Residue Authority
 
 Current status: open first hard gate.
 
@@ -144,7 +170,7 @@ no_forbidden_imports: true
 Without this, Fisher/LSZ remains exact support but cannot close the physical
 Y_T row.
 
-### 4. Strict Same-Source Top/W Response Evidence
+### 5. Strict Same-Source Top/W Response Evidence
 
 Current status: algebra closed; coefficient evidence absent.
 
@@ -174,7 +200,7 @@ Existing support closes the W/Z denominator row and the symbolic top row shape,
 but the top numerator coefficient remains free until this certificate or an
 equivalent coefficient theorem exists.
 
-### 5. Coefficient Readout
+### 6. Coefficient Readout
 
 Current status: conditional.
 
@@ -195,7 +221,7 @@ for the local ratio lane.  If the route is instead the direct top/W response
 measurement, the measured slope ratio gives `y_t/g_2` first, and a same-scale
 `g_2` authority is needed for numerical `y_t`.
 
-### 6. Same-Scale Coupling And Running
+### 7. Same-Scale Coupling And Running
 
 Current status: open for numerical `y_t(v)`.
 
@@ -229,15 +255,17 @@ surface, not `H_unit`, not the old Ward matrix element, and not a definition of
 
 ## Current Burn-Down Result
 
-The first unsatisfied gate is not algebraic source normalization or the
-finite-record source/action variational form.  It is:
+The first unsatisfied gate is not algebraic source normalization, the
+finite-record source/action variational form, or the one-Higgs top carrier
+skeleton.  It is:
 
 ```text
-accepted same-surface physical pole/action authority for the Y_T top/Higgs row.
+audit/derive that the no-hidden-scale minimum-information intervention law is
+the physical top Yukawa source law, or measure strict same-source top/W pole
+responses directly.
 ```
 
-That is the next positive science target.  If it cannot be derived, the backup
-target is the strict same-source top/W response measurement certificate.
+That is the next positive science target.
 
 ## Non-Claims
 
@@ -266,7 +294,7 @@ proposal_allowed_reason: |
   not present, so retained or proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: accepted same-surface pole/action authority
+first_open_gate: audit/derive the physical intervention law
 backup_route: strict same-source top/W pole-response measurement certificate
 ```
 

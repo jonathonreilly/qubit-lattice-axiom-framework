@@ -36,49 +36,63 @@
     {
       "closed": false,
       "name": "same-surface source/action authority",
-      "next_action": "derive or accept physical Y_T source/action surface, or bypass via strict same-source pole responses",
+      "next_action": "audit/derive physical top intervention law, or bypass via strict same-source pole responses",
       "status": "bounded_support_plus_minimum_information_exact_support_physical_identification_open",
       "step": 0
+    },
+    {
+      "closed": true,
+      "name": "one-Higgs up-type top carrier skeleton",
+      "next_action": "combine only with a physical intervention/coefficient theorem or strict response evidence",
+      "status": "exact_support_coefficient_free",
+      "step": 1
     },
     {
       "closed": true,
       "name": "source-scale Fisher arclength",
       "next_action": "use only with a physical Fisher/LSZ source readout",
       "status": "exact_support",
-      "step": 1
+      "step": 2
+    },
+    {
+      "closed": false,
+      "name": "physical intervention minimum-information uniqueness",
+      "next_action": "audit/derive that law as the physical top Yukawa source law",
+      "status": "exact_support_under_no_hidden_scale_intervention_law",
+      "step": 3
     },
     {
       "closed": true,
       "name": "Fisher/LSZ source normalization",
       "next_action": "supply accepted same-surface isolated-pole residue authority",
       "status": "exact_support_under_accepted_isolated_pole",
-      "step": 2
+      "step": 4
     },
     {
       "closed": false,
       "name": "same-surface pole/action authority",
       "next_action": "produce strict pole/residue certificate or theorem",
       "status": "open_first_hard_gate",
-      "step": 3
+      "step": 5
     },
     {
       "closed": false,
       "name": "strict same-source top/W response rows",
       "next_action": "produce coefficient-certified top/W response rows",
       "status": "algebra_closed_evidence_absent",
-      "step": 4
+      "step": 6
     },
     {
       "closed": false,
       "name": "same-scale g2 and matching/running",
       "next_action": "defer unless the claim is numerical y_t(v) rather than local ratio",
       "status": "open_for_numerical_y_t_v",
-      "step": 5
+      "step": 7
     }
   ],
   "fail_count": 0,
-  "first_open_gate": "accepted same-surface pole/action authority",
-  "pass_count": 73,
+  "first_open_gate": "audit/derive the physical intervention law",
+  "pass_count": 81,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and Fisher/LSZ normalization conditional algebra, but accepted same-surface pole/action authority and coefficient-certified top/W response evidence are absent.",
   "review_surface": [
@@ -91,9 +105,11 @@
     "fisher_fail_count": 0,
     "fisher_lsz_fail_count": 0,
     "minimum_information_fail_count": 0,
+    "minimum_information_uniqueness_fail_count": 0,
     "same_source_fail_count": 0,
     "strict_top_fail_count": 0,
-    "strict_wz_fail_count": 0
+    "strict_wz_fail_count": 0,
+    "top_carrier_fail_count": 0
   },
   "upstream_statuses": {
     "ew_coupling": "unaudited",

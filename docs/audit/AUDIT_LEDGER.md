@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 516 |
+| **retained_bounded** | 517 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1189 |
+| unaudited | 1188 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 813 |
+| `audited_clean` | 814 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1418 |
+| `unaudited` | 1417 |
 
 | claim_type | count |
 |---|---:|
@@ -800,6 +800,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `structured_chokepoint_bridge_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -12327,6 +12328,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The wave-field hardening still closes the interaction, norm, and bounded-field story cleanly, but it does not close the full state-family battery and it does not give universal contraction on this operating point.  _(class `C`)_
 - **chain closes:** True — The runner directly computes the scalar wave field coupled to staggered matter and reproduces the note's hard scores of 4/5, 5/5, 4/5 plus width ratios 1.0047, 1.0019, and 0.9923. The note's bounded conclusion matches the current corrected output.
 - **rationale:** The claim is scoped to a bounded corrected wave-field prototype, not retained universal robustness. Current output confirms W1-W4 on all three families, W6 only on growing, and width response as a diagnostic rather than a gate. Residual risk is limited to the stated lack of universal contraction, full state-family robustness, larger-graph battery, and retarded-field closure.
+- **auditor confidence:** high
+
+### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`
+
+- **Note:** [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](../../docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded theorem: on the canonical single-plaquette Wilson real-positive measure surface, the nonzero Euclidean i-theta ImTr plaquette slot is rejected; on the retained staggered determinant-positive scalar-mass action class, non-real scalar mass phases are rejected, while positive mass sign is conventional.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-raman-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Nonzero exp(-S_W - i theta Q_lat[U]) is generically complex and violates the explicit real-positive Wilson surface, while the intersection of determinant positivity with the explicit scalar-mass class leaves only real scalar M=mI.  _(class `A`)_
+- **chain closes:** True — The chain closes only after treating the real-positive Wilson surface and scalar-mass action-class boundary as explicit bounded premises. The note does not close, and correctly excludes, clover/multi-plaquette/axion/non-real-positive routes or unconditional theta selection.
+- **rationale:** Within the narrowed scope, the proof is an algebraic closure over retained one-hop inputs plus explicit action-surface premises, not a hidden derivation from the minimal axiom surface. The runner genuinely constructs SU(3) plaquettes, Wilson phases, staggered determinants, and scalar/pseudoscalar decompositions; it supports the bounded rejection but not any broader no-go. The source's N1-N8 no-go discipline correctly fails the broad universal FtildeF/no-theta claim and preserves the narrowed slot theorem.
 - **auditor confidence:** high
 
 ### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`

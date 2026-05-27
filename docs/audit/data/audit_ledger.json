@@ -257162,24 +257162,50 @@
       "verdict_rationale": null
     },
     "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T03:59:51.398123+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, \u03bc, \u0398, S_+, F) under the stated \u0398-invariance and reflection-Hermiticity assumptions.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "79bad7ad73284cb3824a03c5958446d87a7e4687ac9ad62a16dcdb8535baab5e",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-raman-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes only after treating the real-positive Wilson surface and scalar-mass action-class boundary as explicit bounded premises. The note does not close, and correctly excludes, clover/multi-plaquette/axion/non-real-positive routes or unconditional theta selection.",
       "claim_id": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
-      "claim_scope": null,
+      "claim_scope": "Conditional bounded theorem: on the canonical single-plaquette Wilson real-positive measure surface, the nonzero Euclidean i-theta ImTr plaquette slot is rejected; on the retained staggered determinant-positive scalar-mass action class, non-real scalar mass phases are rejected, while positive mass sign is conventional.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T03:59:51.398123+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -257189,19 +257215,19 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Nonzero exp(-S_W - i theta Q_lat[U]) is generically complex and violates the explicit real-positive Wilson surface, while the intersection of determinant positivity with the explicit scalar-mass class leaves only real scalar M=mI.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "e38505a0f62fb5949b1ed57eae1e9474a4ab85f2ab8a63f8be1c2c40a69bfe5e",
       "note_path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if downstream use broadens this into an unconditional strong-CP/no-FtildeF theorem or treats the scalar-mass class / real-positive Wilson surface as derived rather than explicit bounded premises.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -257368,18 +257394,23 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 30,
+        "B": 3,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "gate_fail": 0,
+        "gate_pass": 8,
+        "runner_result": "runner_sha256=79bad7ad73284cb3824a03c5958446d87a7e4687ac9ad62a16dcdb8535baab5e; 8 gates pass, 33 subchecks pass, 0 fail",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 33
       },
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
       "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the narrowed scope, the proof is an algebraic closure over retained one-hop inputs plus explicit action-surface premises, not a hidden derivation from the minimal axiom surface. The runner genuinely constructs SU(3) plaquettes, Wilson phases, staggered determinants, and scalar/pseudoscalar decompositions; it supports the bounded rejection but not any broader no-go. The source's N1-N8 no-go discipline correctly fails the broad universal FtildeF/no-theta claim and preserves the narrowed slot theorem."
     },
     "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": {
       "audit_date": "2026-05-23T20:33:47.821718+00:00",

@@ -782,7 +782,7 @@
     },
     {
       "from": "alpha_s_derived_narrow_theorem_note_2026-05-10",
-      "to": "yt_ew_color_projection_theorem"
+      "to": "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "alpha_s_derived_note",
@@ -41309,10 +41309,10 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "yt_ew_color_projection_theorem"
+        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7ded53dc702a6ae58941269c2ba9eb1477d9c2ad9ec2ccc770a8f290b4ede164",
+      "note_hash": "3fa313f9919148b18845f4a872eb2198c2475657493136e5d681ab3cd83bc17b",
       "path": "docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_alpha_s_tadpole_power_identity.py",
       "title": "alpha_s Derived Narrow Theorem (Tadpole-Power Coupling-Chain Identity)"

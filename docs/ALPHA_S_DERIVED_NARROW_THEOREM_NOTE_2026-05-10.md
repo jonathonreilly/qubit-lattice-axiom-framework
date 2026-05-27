@@ -1,16 +1,17 @@
 # alpha_s Derived Narrow Theorem (Tadpole-Power Coupling-Chain Identity)
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10 (original); 2026-05-27 (dep correction per audit
+verdict: replaced wrong upstream citation with the actual retained
+abstract tadpole-power authority).
 **Type:** positive_theorem
 **Claim scope:** the standalone algebraic-substitution implication that, given
-(i) the retained Combined Mean-Field Theory (CMT) change-of-variables
-identity `<O(U)> = u_0^{n_link} <O_V(V)>_eff` supplied by
-[`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
-(D14, retained `yt_ew_color_projection_theorem`, audited_clean /
-retained_bounded), (ii) the retained `n_link = 1` per single-vertex
-gauge-coupling identity (D15, same retained authority), and (iii) the
-retained `n_link = 2` per vacuum-polarization identity (D15, same retained
-authority), the two canonical-surface coupling definitions
+(i) the retained abstract tadpole-power identity packet supplied by
+[`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+(retained, `audited_clean / retained`: standalone algebraic identities
+over abstract positive reals `alpha_bare` and `u_0`, including the
+vertex-power / link-power identities, geometric-mean identity,
+constant-ratio chain, `u_0 = 1` boundary, unique positive inverse map,
+and `P^{1/4}` substitution), the two abstract coupling definitions
 
 ```text
 alpha_LM    :=  alpha_bare / u_0,                                      (D1)
@@ -51,28 +52,39 @@ isolates only the exact algebraic tadpole-power substitution.
 ## Statement
 
 Let `alpha_bare, u_0` be abstract positive real symbols. Suppose the
-three retained input identities
+retained abstract tadpole-power authority supplies the input identities
 
 ```text
-CMT(O,n)    :  <O(U)>  =  u_0^n * <O_V(V)>_eff,                        (I1)
-n_link(g)   :  n_link = 1  for the single-vertex gauge coupling,       (I2)
-n_link(vp)  :  n_link = 2  for the vacuum-polarization correlator,     (I3)
+alpha_LM    :=  alpha_bare / u_0,                                      (I1)
+alpha_s(v)  :=  alpha_bare / u_0^2,                                    (I2)
+alpha_bare > 0, u_0 > 0.                                               (I3)
 ```
 
 are supplied as cited inputs from the retained
-`yt_ew_color_projection_theorem` D14-D15 chain (audited_clean /
-retained_bounded, per `docs/audit/data/audit_ledger.json` at the date of
-this note). Define the two canonical-surface couplings
+[`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+(`audited_clean / retained`, per `docs/audit/data/audit_ledger.json`).
+The 2026-05-26 audit verdict on this row identified an incorrect
+upstream citation in the prior draft (it cited
+`YT_EW_COLOR_PROJECTION_THEOREM.md`, which is a `retained_no_go` on the
+K_EW kappa-family and does **not** supply tadpole-power algebra); the
+2026-05-27 correction re-points the citation to the actual retained
+tadpole-power authority above, whose claim scope explicitly includes
+the vertex-power and link-power identities plus the abstract
+`u_0`-substitution structure consumed by (D1)/(D2). This source note
+does not claim that the retained authority derives the physical CMT
+change-of-variables formula; it consumes only the retained abstract
+algebraic identities.
+
+Define the two canonical-surface couplings
 
 ```text
 alpha_LM    :=  alpha_bare / u_0,                                      (D1)
 alpha_s(v)  :=  alpha_bare / u_0^2.                                    (D2)
 ```
 
-`(D1)` is the CMT-rescaled coupling at `n_link = 1`; `(D2)` is the
-CMT-rescaled coupling at `n_link = 2`. Both definitions consume only the
-cited retained CMT identity `(I1)` plus the cited `n_link` identities
-`(I2)`, `(I3)`. Then the two algebraic identities
+`(D1)` is the one-power tadpole-improved coupling; `(D2)` is the
+two-power tadpole-improved coupling. Both definitions consume only the
+cited retained abstract tadpole-power algebra. Then the two algebraic identities
 
 ```text
 alpha_LM^2          =  alpha_bare * alpha_s(v),                        (P1)
@@ -121,17 +133,18 @@ All follow algebraically from `(D1)` and `(D2)`.
 ## What this claims
 
 - The exact algebraic coupling-chain identity `(P1)` and tadpole-ratio
-  identity `(P2)`, **conditional on** the three cited retained CMT
-  inputs `(I1)`-`(I3)`.
+  identity `(P2)`, **conditional on** the cited retained abstract
+  tadpole-power inputs `(I1)`-`(I3)`.
 - Four derivable corollary identities that follow algebraically.
 
 ## What this does NOT claim
 
-- Does **not** derive the CMT identity `(I1)`. That is the retained
-  `yt_ew_color_projection_theorem` D14 / CMT change-of-variables
-  identity (audited_clean / retained_bounded).
-- Does **not** derive the `n_link` counts `(I2)`-`(I3)`. Those are
-  retained content in the same authority (D15).
+- Does **not** derive a physical CMT change-of-variables formula
+  `<O(U)> = u_0^{n_link} <O_V(V)>_eff`. The retained authority cited
+  here is an abstract tadpole-power algebra theorem, not a physical CMT
+  derivation.
+- Does **not** derive physical `n_link` counts. It consumes the retained
+  vertex-power and link-power algebraic definitions of the same authority.
 - Does **not** supply a value of `u_0`. The plaquette evaluation
   `u_0 = <P>^{1/4}` from `plaquette_self_consistency_note` is currently
   `unaudited`, and the analytic `beta = 6` insertion of that note is
@@ -156,8 +169,13 @@ All follow algebraically from `(D1)` and `(D2)`.
 The older broad alpha_s row bundles the algebraic substitution above with
 several distinct downstream items:
 
-1. The retained CMT identities `(I1)`-`(I3)` themselves, supplied by
-   `yt_ew_color_projection_theorem`.
+1. The retained abstract tadpole-power identities `(I1)`-`(I3)` themselves, supplied by
+   the retained
+   `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
+   (the prior draft cited `yt_ew_color_projection_theorem` here, which
+   the 2026-05-26 audit verdict identified as a wrong upstream — that
+   row is a `retained_no_go` on the K_EW kappa-family, not a tadpole-power
+   supplier).
 2. The upstream `u_0` plaquette evaluation `u_0 = <P>^{1/4}` with
    `<P> = 0.5934` from `plaquette_self_consistency_note` (currently
    `unaudited`; analytic `beta = 6` insertion explicitly open work).
@@ -178,12 +196,26 @@ the PDG identification.
 
 ## Cited dependencies
 
-- [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
-  — retained CMT change-of-variables identity D14 (`(I1)`) and `n_link`
-  identities D15 (`(I2)`, `(I3)`). Retained authority
-  (`yt_ew_color_projection_theorem`, effective_status=retained_bounded,
-  audit_status=audited_clean per `docs/audit/data/audit_ledger.json` row
-  at the date of this note).
+- [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained abstract tadpole-power identities (`(I1)`-`(I3)`),
+  including the vertex-power / link-power definitions. Retained
+  authority (`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`,
+  `effective_status=retained`, `audit_status=audited_clean` per
+  `docs/audit/data/audit_ledger.json`). The retained scope explicitly
+  covers the standalone algebraic identities over abstract positive
+  reals `alpha_bare` and `u_0`, vertex-power / link-power identities,
+  geometric-mean identity, constant-ratio chain, `u_0 = 1` boundary,
+  unique positive inverse map, and abstract `P^{1/4}` substitution —
+  exactly the input set this narrow theorem consumes.
+
+- ~~`YT_EW_COLOR_PROJECTION_THEOREM.md`~~ — citation **removed** by
+  the 2026-05-27 dep correction (backticked, not linked, to drop the
+  graph edge). The prior draft cited this row as the CMT supplier; the
+  2026-05-26 audit verdict on this note identified the citation as
+  wrong because `yt_ew_color_projection_theorem` is a `retained_no_go`
+  on the K_EW kappa-family (`audited_clean / retained_no_go`), not a
+  tadpole-power authority. The actual retained tadpole-power authority is
+  the new citation above.
 
 ## Forbidden imports check
 
@@ -217,11 +249,11 @@ verifies symbolically (sympy `simplify` to 0) that:
    `(alpha_bare, u_0) = (0.23, 0.876)`: confirms `(P1)` to machine
    precision (this is an independent FP-cross-check; the algebraic
    identity is the load-bearing content).
-8. Counterfactual probe: at `n_link = 0` for the vacuum polarization
-   (instead of 2), `(P1)` fails parametrically; at `n_link = 1` for
-   both, `(P1)` reduces to `alpha_bare = u_0`, which is a non-identity
-   on `(alpha_bare, u_0)`, confirming the `n_link = (1, 2)` split is
-   load-bearing.
+8. Counterfactual probe: at alpha_s(v) tadpole power `0` (instead of
+   2), `(P1)` fails parametrically; at tadpole power `1` for both
+   couplings, `(P1)` reduces to `alpha_bare = u_0`, which is a
+   non-identity on `(alpha_bare, u_0)`, confirming the `(1, 2)` power
+   split is load-bearing.
 
 ## Cross-references
 
@@ -229,8 +261,13 @@ verifies symbolically (sympy `simplify` to 0) that:
   substitution above with the upstream `u_0` evaluation, downstream
   running bridge, numerical readouts, and PDG identification; currently
   `unaudited`).
-- `yt_ew_color_projection_theorem` (retained source of the CMT
-  identities and `n_link` counts; `audited_clean`).
+- `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
+  (retained source of the abstract tadpole-power identities and
+  vertex-power / link-power definitions; `audited_clean / retained`).
+  Replaces the prior draft's stale cross-reference to
+  `yt_ew_color_projection_theorem`,
+  which is actually a `retained_no_go` on the K_EW kappa-family and not
+  a tadpole-power authority.
 - `plaquette_self_consistency_note` (upstream plaquette `u_0` evaluation;
   currently `unaudited`; not consumed by this narrow theorem).
 - `qcd_low_energy_running_bridge_note_2026-05-01` (downstream running

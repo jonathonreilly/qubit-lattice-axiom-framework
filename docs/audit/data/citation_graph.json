@@ -57858,6 +57858,18 @@
       "runner_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
       "title": "Hierarchy 7/8 Riemann-Dirichlet Dimensional Anchor \u2014 Narrow Theorem"
     },
+    "hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26": {
+      "claim_id": "hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a86404e08b07bba00bfff47e7c6b382866547c1b1d3baa74a27437edd53a7a73",
+      "path": "docs/HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow.py",
+      "title": "7/8 as APBC/PBC Thermal-Zeta Period Quotient on S\u00b9_\u03b2 \u2014 Narrow Theorem"
+    },
     "hierarchy_spatial_bc_and_u0_scaling_note": {
       "claim_id": "hierarchy_spatial_bc_and_u0_scaling_note",
       "claim_type_author_hint": null,
@@ -85454,6 +85466,7 @@
     "hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10",
     "hierarchy_matsubara_decomposition_note",
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+    "hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26",
     "hierarchy_spatial_bc_and_u0_scaling_note",
     "higgs_from_lattice_note",
     "higgs_mechanism_note",
@@ -85934,7 +85947,7 @@
       "no_go": 84,
       "none": 1441,
       "open_gate": 50,
-      "positive_theorem": 171
+      "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1042,
@@ -85943,12 +85956,12 @@
       "no_go": 187,
       "none": 426,
       "open_gate": 127,
-      "positive_theorem": 589
+      "positive_theorem": 590
     },
     "edge_count": 9802,
-    "leaf_count": 803,
-    "node_count": 2564,
-    "root_count": 856,
-    "runners_with_path": 2140
+    "leaf_count": 804,
+    "node_count": 2565,
+    "root_count": 857,
+    "runners_with_path": 2141
   }
 }

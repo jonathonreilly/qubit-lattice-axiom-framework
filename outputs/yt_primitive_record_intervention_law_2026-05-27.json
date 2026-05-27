@@ -1,0 +1,49 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "audit_required_before_effective_retained": true,
+  "backup_route": "strict same-source top/W response evidence",
+  "bare_retained_allowed": false,
+  "boundary": {
+    "actual_current_surface_status": "exact-support",
+    "physical_top_yukawa_identified_as_primitive_intervention": false,
+    "primitive_record_intervention_law_derived": true,
+    "proposal_allowed_for_full_y_t": false,
+    "strict_top_w_response_evidence_present": false
+  },
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "physical top-source identification",
+  "markov_naturality": {
+    "q_marg_minus": 0.14340433330997698,
+    "q_marg_plus": 0.856595666690023
+  },
+  "no_hidden_fiber_witness": {
+    "kl_hidden": 0.19978364106622332,
+    "kl_minimum": 0.04570054152531286
+  },
+  "pass_count": 75,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The primitive no-hidden-record intervention law is derived, but full Y_T closure still needs top-source identification or strict same-source top/W response evidence.",
+  "reachability_to_target": "partially_closes",
+  "record_space": {
+    "mean": 0.0,
+    "state_count": 8,
+    "variance": 1.0000000000000002
+  },
+  "review_surface": [
+    "docs/YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_primitive_record_intervention_law.py",
+    "outputs/yt_primitive_record_intervention_law_2026-05-27.json"
+  ],
+  "statuses": {
+    "busch_povm": "retained",
+    "lsp_projective": "retained_bounded",
+    "lsp_signed_record": "retained_bounded",
+    "powers_tracial": "retained",
+    "source_action": "retained_bounded"
+  },
+  "top_component": {
+    "lambda_status": "raw coordinate scale under Fisher unit",
+    "top_component": "1/sqrt(6)"
+  },
+  "trace_class": "upstream_support"
+}

@@ -4,7 +4,7 @@ target_blocker_text: "derive or accept that the physical top Yukawa deformation 
 source_of_blocker_text: audit_ledger
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Burn down gate 1 by proving or failing the primitive record intervention law from finite qubit records, LSP sharp readout, Markov naturality, no-hidden-channel semantics, and least distinguishability; if not accepted, pivot to strict same-source top/W pole-response measurement."
+next_trace_action: "Burn down the top-source identification gate: prove or fail that the physical top Yukawa deformation is the primitive no-hidden-record intervention targeting normalized O_top; if not accepted, pivot to strict same-source top/W pole-response measurement."
 
 ## Trace Explanation
 
@@ -37,3 +37,8 @@ The five-agent research-panel synthesis then selects the next primitive:
 derive the LSP-compatible primitive physical intervention law.  It records that
 the conditional theorem is accepted as exact support, but that `0/20` simulated
 reviewers accept retained physical-source closure on the current surface.
+
+The primitive record intervention law is now derived as exact support.  The
+remaining gap is top-specific: the physical top Yukawa deformation must be
+identified with that primitive intervention, or the lane must use strict
+same-source top/W response evidence instead.

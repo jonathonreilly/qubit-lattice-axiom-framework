@@ -23,3 +23,6 @@ The closure-stack contract verifies `SUMMARY: PASS=81 FAIL=0` and records the
 first open gate as audit/derivation of the physical intervention law.
 The research-panel synthesis verifies `SUMMARY: PASS=71 FAIL=0` and selects
 the primitive record intervention law as the next science block.
+The primitive record intervention law verifies `SUMMARY: PASS=75 FAIL=0`.
+The full stack contract now verifies `SUMMARY: PASS=87 FAIL=0` and records
+physical top-source identification as the first open gate.

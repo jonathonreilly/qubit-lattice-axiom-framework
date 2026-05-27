@@ -1,9 +1,8 @@
 # Opportunity Queue
 
-1. **Primitive record intervention law.**
-   Prove or fail the finite-record/LSP route:
-   qubit records + sharp projective readout + Markov naturality + no hidden
-   channel + least distinguishability imply the RN/Fisher source law.
+1. **Physical top-source identification.**
+   Prove or fail that the physical top Yukawa deformation is the primitive
+   no-hidden-record intervention targeting normalized `O_top`.
 
 2. **Chentsov/Fisher source unit.**
    Specialize finite-simplex Chentsov uniqueness to framework record blocks

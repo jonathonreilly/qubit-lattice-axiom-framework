@@ -5,8 +5,9 @@ This runner verifies the current burn-down state:
 
 * Fisher source-scale and Fisher/LSZ bridge support are present.
 * Pole-row Gram purity alone remains normalization-blind.
-* The first missing positive gate is accepted same-surface pole/action
-  authority, followed by strict same-source top/W response evidence.
+* The primitive no-hidden-record intervention law is now derived as exact
+  support; the first missing positive gate is physical top-source
+  identification, followed by strict same-source top/W response evidence.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -27,6 +28,7 @@ OUTPUT = ROOT / "outputs" / "yt_full_closure_stack_and_strict_pole_response_cont
 NOTE = DOCS / "YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md"
 SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 MIN_INFO = DOCS / "YT_MINIMUM_INFORMATION_SOURCE_ACTION_BRIDGE_THEOREM_NOTE_2026-05-26.md"
+PRIMITIVE_RECORD_LAW = DOCS / "YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md"
 MININFO_UNIQUENESS = DOCS / "YT_PHYSICAL_INTERVENTION_MININFO_UNIQUENESS_GATE_NOTE_2026-05-26.md"
 TOP_CARRIER = DOCS / "YT_ONE_HIGGS_TOP_CARRIER_SELECTION_SUPPORT_NOTE_2026-05-26.md"
 FISHER = DOCS / "YT_PRIMITIVE_PHYSICAL_SOURCE_FISHER_ARCLENGTH_INVARIANT_THEOREM_NOTE_2026-05-26.md"
@@ -40,6 +42,7 @@ LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
 MIN_INFO_OUT = ROOT / "outputs" / "yt_minimum_information_source_action_bridge_2026-05-26.json"
+PRIMITIVE_RECORD_LAW_OUT = ROOT / "outputs" / "yt_primitive_record_intervention_law_2026-05-27.json"
 MININFO_UNIQUENESS_OUT = ROOT / "outputs" / "yt_physical_intervention_mininfo_uniqueness_gate_2026-05-26.json"
 TOP_CARRIER_OUT = ROOT / "outputs" / "yt_one_higgs_top_carrier_selection_support_2026-05-26.json"
 FISHER_LSZ_OUT = ROOT / "outputs" / "yt_fisher_lsz_source_normalization_bridge_2026-05-26.json"
@@ -94,6 +97,7 @@ def part1_anchors() -> dict[str, str]:
         NOTE,
         SOURCE_ACTION,
         MIN_INFO,
+        PRIMITIVE_RECORD_LAW,
         MININFO_UNIQUENESS,
         TOP_CARRIER,
         FISHER,
@@ -106,6 +110,7 @@ def part1_anchors() -> dict[str, str]:
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
+        PRIMITIVE_RECORD_LAW_OUT,
         MININFO_UNIQUENESS_OUT,
         TOP_CARRIER_OUT,
         FISHER_LSZ_OUT,
@@ -123,7 +128,8 @@ def part1_anchors() -> dict[str, str]:
         "Conditional Closure Theorem",
         "Current Burn-Down Result",
         "Non-Claims",
-        "audit/derive that the no-hidden-scale minimum-information intervention law",
+        "physical top-source identification",
+        "primitive no-hidden-record source law is derived",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -146,6 +152,7 @@ def part2_support_outputs() -> dict[str, Any]:
     print("\nPart 2: already-burned-down support outputs")
     fisher = load_json(FISHER_OUT)
     min_info = load_json(MIN_INFO_OUT)
+    primitive_record_law = load_json(PRIMITIVE_RECORD_LAW_OUT)
     mininfo_uniqueness = load_json(MININFO_UNIQUENESS_OUT)
     top_carrier = load_json(TOP_CARRIER_OUT)
     fisher_lsz = load_json(FISHER_LSZ_OUT)
@@ -156,6 +163,9 @@ def part2_support_outputs() -> dict[str, Any]:
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
+    check("primitive record intervention law passed", primitive_record_law.get("fail_count") == 0, primitive_record_law.get("fail_count"))
+    check("primitive record intervention law proposal is not allowed for full Y_T", primitive_record_law.get("proposal_allowed") is False)
+    check("primitive record law narrows next gate to top-source identification", primitive_record_law.get("first_open_gate_after_this_note") == "physical top-source identification")
     check("physical-intervention mininfo uniqueness gate passed", mininfo_uniqueness.get("fail_count") == 0, mininfo_uniqueness.get("fail_count"))
     check("physical-intervention uniqueness proposal is not allowed", mininfo_uniqueness.get("proposal_allowed") is False)
     check("one-Higgs top-carrier support passed", top_carrier.get("fail_count") == 0, top_carrier.get("fail_count"))
@@ -175,6 +185,7 @@ def part2_support_outputs() -> dict[str, Any]:
     return {
         "fisher": fisher,
         "minimum_information": min_info,
+        "primitive_record_law": primitive_record_law,
         "minimum_information_uniqueness": mininfo_uniqueness,
         "top_carrier": top_carrier,
         "fisher_lsz": fisher_lsz,
@@ -275,7 +286,7 @@ def part5_missing_certificates() -> dict[str, Any]:
     ]
     check("strict source-Higgs pole certificate schema has 11 fields", len(required_pole_fields) == 11)
     check("strict top/W response certificate schema has 10 fields", len(required_top_w_fields) == 10)
-    check("first open gate is physical intervention law before numerical running", True, "audit/derive physical intervention law")
+    check("first open gate is physical top-source identification before numerical running", True, "audit/derive physical top-source identification")
 
     return {
         "strict_source_higgs_pole_certificate_present": pole_cert_present,
@@ -327,9 +338,9 @@ def main() -> int:
         {
             "step": 0,
             "name": "same-surface source/action authority",
-            "status": "bounded_support_plus_minimum_information_exact_support_physical_identification_open",
+            "status": "bounded_support_plus_minimum_information_and_primitive_record_law_exact_support_physical_top_source_identification_open",
             "closed": False,
-            "next_action": "audit/derive physical top intervention law, or bypass via strict same-source pole responses",
+            "next_action": "audit/derive physical top-source identification, or bypass via strict same-source pole responses",
         },
         {
             "step": 1,
@@ -348,9 +359,9 @@ def main() -> int:
         {
             "step": 3,
             "name": "physical intervention minimum-information uniqueness",
-            "status": "exact_support_under_no_hidden_scale_intervention_law",
+            "status": "exact_support_with_primitive_record_law_derived_top_source_identification_open",
             "closed": False,
-            "next_action": "audit/derive that law as the physical top Yukawa source law",
+            "next_action": "audit/derive that the physical top Yukawa deformation is this primitive intervention",
         },
         {
             "step": 4,
@@ -392,7 +403,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "audit/derive the physical intervention law",
+        "first_open_gate": "audit/derive physical top-source identification",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -400,6 +411,7 @@ def main() -> int:
         "support_output_status": {
             "fisher_fail_count": support_outputs["fisher"].get("fail_count"),
             "minimum_information_fail_count": support_outputs["minimum_information"].get("fail_count"),
+            "primitive_record_law_fail_count": support_outputs["primitive_record_law"].get("fail_count"),
             "minimum_information_uniqueness_fail_count": support_outputs["minimum_information_uniqueness"].get("fail_count"),
             "top_carrier_fail_count": support_outputs["top_carrier"].get("fail_count"),
             "fisher_lsz_fail_count": support_outputs["fisher_lsz"].get("fail_count"),

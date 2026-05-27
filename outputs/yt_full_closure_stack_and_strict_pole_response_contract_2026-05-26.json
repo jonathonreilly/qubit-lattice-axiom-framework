@@ -36,8 +36,8 @@
     {
       "closed": false,
       "name": "same-surface source/action authority",
-      "next_action": "audit/derive physical top intervention law, or bypass via strict same-source pole responses",
-      "status": "bounded_support_plus_minimum_information_exact_support_physical_identification_open",
+      "next_action": "audit/derive physical top-source identification, or bypass via strict same-source pole responses",
+      "status": "bounded_support_plus_minimum_information_and_primitive_record_law_exact_support_physical_top_source_identification_open",
       "step": 0
     },
     {
@@ -57,8 +57,8 @@
     {
       "closed": false,
       "name": "physical intervention minimum-information uniqueness",
-      "next_action": "audit/derive that law as the physical top Yukawa source law",
-      "status": "exact_support_under_no_hidden_scale_intervention_law",
+      "next_action": "audit/derive that the physical top Yukawa deformation is this primitive intervention",
+      "status": "exact_support_with_primitive_record_law_derived_top_source_identification_open",
       "step": 3
     },
     {
@@ -91,8 +91,8 @@
     }
   ],
   "fail_count": 0,
-  "first_open_gate": "audit/derive the physical intervention law",
-  "pass_count": 81,
+  "first_open_gate": "audit/derive physical top-source identification",
+  "pass_count": 87,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and Fisher/LSZ normalization conditional algebra, but accepted same-surface pole/action authority and coefficient-certified top/W response evidence are absent.",
   "review_surface": [
@@ -106,6 +106,7 @@
     "fisher_lsz_fail_count": 0,
     "minimum_information_fail_count": 0,
     "minimum_information_uniqueness_fail_count": 0,
+    "primitive_record_law_fail_count": 0,
     "same_source_fail_count": 0,
     "strict_top_fail_count": 0,
     "strict_wz_fail_count": 0,

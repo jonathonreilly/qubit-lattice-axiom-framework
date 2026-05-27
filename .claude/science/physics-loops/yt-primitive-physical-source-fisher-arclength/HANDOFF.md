@@ -77,11 +77,18 @@ New artifact:
 docs/YT_PHYSICAL_SOURCE_LAW_RESEARCH_PANEL_SYNTHESIS_NOTE_2026-05-26.md
 scripts/frontier_yt_physical_source_law_research_panel_synthesis.py
 outputs/yt_physical_source_law_research_panel_synthesis_2026-05-26.json
+docs/YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md
+scripts/frontier_yt_primitive_record_intervention_law.py
+outputs/yt_primitive_record_intervention_law_2026-05-27.json
 ```
 
-Next action: attempt Block 1, the primitive record intervention law. If it
-fails, the no-compute source-law path stays exact-support and the clean
-fallback is strict same-source top/W response evidence.
+Block 1 result: derived as exact support. The primitive no-hidden-record
+intervention law now forces the RN/KL source family and Fisher-unit coordinate.
+
+Next action: prove or fail physical top-source identification. The remaining
+gate is whether the physical top Yukawa deformation is the primitive
+no-hidden-record intervention targeting normalized `O_top`. If it fails, the
+clean fallback is strict same-source top/W response evidence.
 
 ## Verification
 
@@ -98,4 +105,5 @@ python3 scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contra
 python3 scripts/frontier_yt_fh_top_w_response_ratio_gate.py
 python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
 python3 scripts/frontier_yt_physical_source_law_research_panel_synthesis.py
+python3 scripts/frontier_yt_primitive_record_intervention_law.py
 ```

@@ -28,6 +28,8 @@ The result is:
 closed exactly:
   source-coupled action follows from a finite-record minimum-information
   intervention criterion
+  primitive no-hidden-record finite interventions force the RN/Fisher source
+  law
   the one-Higgs up-type top carrier skeleton is selected as bar Q_L tilde H u_R
   the no-hidden-scale minimum-information intervention law uniquely gives
   y_33 = 1/sqrt(6) if accepted as the physical top source law
@@ -37,8 +39,9 @@ closed exactly:
   W/Z denominator response and symbolic top-response row algebra are closed
 
 still open:
-  audit/derive that the no-hidden-scale minimum-information law is the physical
-  top Yukawa source law, or measure the strict top/W response directly
+  audit/derive that the physical top Yukawa deformation is the primitive
+  no-hidden-record intervention targeting O_top, or measure the strict top/W
+  response directly
   accepted same-surface pole/response authority for the physical top/Higgs row
   coefficient-certified same-source top/W response evidence
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
@@ -51,8 +54,8 @@ closure and why the current branch still cannot claim it.
 
 ### 0. Same-Surface Source/Action Authority
 
-Current status: bounded support plus exact minimum-information support; physical
-top intervention identification still open.
+Current status: bounded support plus exact minimum-information and primitive
+no-hidden-record support; physical top-source identification still open.
 
 [`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
 proves an exact finite identity between product RN source semantics and a
@@ -74,10 +77,19 @@ intervention criterion.  It still does not prove that the physical top Yukawa
 experiment is this minimum-information intervention or that an accepted
 top/Higgs pole surface exists.
 
+[`YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md`](YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md)
+derives that a primitive no-hidden-record finite intervention with named
+target expectation is forced to be the KL/I-projection RN source family and to
+use Fisher arclength as its intrinsic source unit.  This burns down the
+source-law derivation itself.  The remaining point is now the top-specific
+identification: the physical top Yukawa deformation must be audited or derived
+as that primitive intervention targeting `O_top`.
+
 Full closure needs either:
 
 ```text
-derive/accept the physical top source as this RN/Fisher source/action surface,
+derive/accept the physical top source as this primitive RN/Fisher
+source/action surface,
 ```
 
 or bypass that identification by measuring strict same-source pole responses.
@@ -116,8 +128,11 @@ normalized.
 [`YT_PHYSICAL_INTERVENTION_MININFO_UNIQUENESS_GATE_NOTE_2026-05-26.md`](YT_PHYSICAL_INTERVENTION_MININFO_UNIQUENESS_GATE_NOTE_2026-05-26.md)
 then proves that under a no-hidden-scale minimum-information intervention law,
 the physical source targeting normalized `O_top` is unique and gives
-`y_33 = 1/sqrt(6)`.  That law is still an audit/derivation gate, not silently
-assumed.
+`y_33 = 1/sqrt(6)`.  The general primitive record intervention law is now
+derived by
+[`YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md`](YT_PRIMITIVE_RECORD_INTERVENTION_LAW_THEOREM_NOTE_2026-05-27.md).
+The remaining gate is whether the physical top Yukawa deformation is this
+primitive intervention for `O_top`.
 
 ### 3. Fisher/LSZ Bridge
 
@@ -137,7 +152,7 @@ It does not prove that the Y_T source has that accepted pole surface.
 
 ### 4. Same-Surface Pole/Residue Authority
 
-Current status: open first hard gate.
+Current status: open hard gate.
 
 The retained pole-row no-go
 [`YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md`](YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md)
@@ -260,9 +275,9 @@ finite-record source/action variational form, or the one-Higgs top carrier
 skeleton.  It is:
 
 ```text
-audit/derive that the no-hidden-scale minimum-information intervention law is
-the physical top Yukawa source law, or measure strict same-source top/W pole
-responses directly.
+audit/derive that the physical top Yukawa deformation is the primitive
+no-hidden-record intervention targeting O_top, or measure strict same-source
+top/W pole responses directly.
 ```
 
 That is the next positive science target.
@@ -288,13 +303,13 @@ trace_class: upstream_support
 reachability_to_target: supports
 proposal_allowed: false
 proposal_allowed_reason: |
-  The closure stack and conditional pole/response algebra are now explicit,
-  and source-scale normalization has been burned down to the accepted
-  pole/action surface.  The physical same-surface pole/response certificate is
-  not present, so retained or proposed-retained Y_T wording is not allowed.
+  The closure stack and conditional pole/response algebra are explicit, and
+  the primitive no-hidden-record source law is derived. The physical top-source
+  identification and strict same-source response certificate are not present,
+  so retained or proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: audit/derive the physical intervention law
+first_open_gate: audit/derive physical top-source identification
 backup_route: strict same-source top/W pole-response measurement certificate
 ```
 

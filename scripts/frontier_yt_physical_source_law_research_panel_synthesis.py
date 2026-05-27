@@ -194,7 +194,10 @@ def part6_trace_reachability() -> None:
     note = read(NOTE)
     check(
         "synthesis targets the full-stack first open gate",
-        "audit/derive that the no-hidden-scale minimum-information law" in full_stack
+        (
+            "audit/derive that the no-hidden-scale minimum-information law" in full_stack
+            or "physical top-source identification" in full_stack
+        )
         and "derive/audit the no-hidden-scale minimum-information intervention law" in note,
     )
     check(

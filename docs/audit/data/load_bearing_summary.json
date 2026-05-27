@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 373,
     "high": 512,
-    "leaf": 1039,
+    "leaf": 1040,
     "medium": 618
   },
   "flagship_signal_used": false,
-  "node_count": 2542,
+  "node_count": 2543,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -73,8 +73,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 36.522,
-      "transitive_descendants": 1039
+      "load_bearing_score": 37.024,
+      "transitive_descendants": 1040
     },
     {
       "claim_id": "plaquette_self_consistency_note",
@@ -139,8 +139,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 29.817,
-      "transitive_descendants": 901
+      "load_bearing_score": 30.319,
+      "transitive_descendants": 902
     },
     {
       "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",

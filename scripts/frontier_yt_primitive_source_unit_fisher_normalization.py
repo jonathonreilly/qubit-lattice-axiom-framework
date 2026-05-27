@@ -16,7 +16,7 @@ OUTPUT = ROOT / "outputs" / "yt_primitive_source_unit_fisher_normalization_2026-
 
 NOTE = DOCS / "YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
-LSP_SOURCE = DOCS / "YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
+LSP_SOURCE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
 SOURCE_ACTION_GATE = DOCS / "OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md"
 RN_TEMPLATE = DOCS / "RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md"
 BRIDGE_ATTEMPT = DOCS / "YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md"
@@ -86,9 +86,9 @@ def part1_anchors() -> dict[str, Any]:
     check("RN template records finite Gibbs density", "D_H = e^{-H} / Z_H" in rn)
 
     statuses = {
-        "lsp_source": ledger_row("yt_" + "pr" + "230_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
+        "lsp_source": ledger_row("yt_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
         "source_action_gate": ledger_row("observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21").get("effective_status"),
-        "yt_source_action_support": ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22").get("effective_status"),
+        "yt_source_action_support": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
     }
     check("LSP source support is not retained coefficient authority", statuses["lsp_source"] != "retained", statuses["lsp_source"])
     check("source-action gate is not retained authority", statuses["source_action_gate"] != "retained", statuses["source_action_gate"])

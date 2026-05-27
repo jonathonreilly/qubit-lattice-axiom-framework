@@ -13,7 +13,7 @@ direct_effective_status_change_allowed_from_this_note: false
 **Primary runner:** `scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py`
 **Generated output:** `outputs/yt_primitive_unit_source_action_physical_premise_no_go_2026-05-25.json`
 
-This note completes the full-court-press attempt on the remaining PR230
+This note completes the full-court-press attempt on the remaining Y_T source-action
 bridge:
 
 ```text
@@ -137,9 +137,9 @@ They differ only in the physical source unit.  Selecting the first deformation
 is exactly the source/action convention the current surface has not yet
 derived.
 
-## Consequence For PR230
+## Consequence For The Y_T Source-Action Lane
 
-The current PR230 state is sharper than before:
+The current Y_T source-action state is sharper than before:
 
 1. The number `1/sqrt(6)` is not missing.  It is the exact normalized
    color-isospin/signed-linear tangent component.

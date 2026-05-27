@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Minimal PR230 Y_T source-action support packet gate.
+"""Minimal Y_T source-action support packet gate.
 
 This runner intentionally replaces the earlier block/chunk history with one
 self-contained check:
@@ -20,8 +20,8 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "outputs" / "yt_pr230_consolidated_status_2026-05-22.json"
-NOTE = ROOT / "docs" / "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md"
+OUTPUT = ROOT / "outputs" / "yt_source_action_support_packet_2026-05-22.json"
+NOTE = ROOT / "docs" / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -62,7 +62,7 @@ def max_abs(a: list[float], b: list[float]) -> float:
 
 
 def main() -> int:
-    print("PR230 minimal Y_T source-action support packet")
+    print("Y_T source-action support packet")
     print("=" * 72)
 
     omega = states(3)
@@ -96,8 +96,8 @@ def main() -> int:
     action_density = normalize(action_weights)
     action_equivalence_l1_error = l1(action_density, rh)
 
-    strict_source_higgs_rows = ROOT / "outputs" / "yt_pr230_block508_id_source_higgs_strict_rows_2026-05-22.json"
-    strict_wz_packet = ROOT / "outputs" / "yt_pr230_strict_same_source_wz_physical_response_packet_2026-05-22.json"
+    strict_source_higgs_rows = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
+    strict_wz_packet = ROOT / "outputs" / "yt_source_action_strict_same_source_wz_physical_response_packet_2026-05-22.json"
 
     forbidden_imports = {
         "H_unit": False,
@@ -155,9 +155,9 @@ def main() -> int:
         "forbidden_imports": forbidden_imports,
         "remaining_gates": remaining_gates,
         "review_surface": [
-            "docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md",
-            "scripts/frontier_yt_pr230_consolidated_status.py",
-            "outputs/yt_pr230_consolidated_status_2026-05-22.json",
+            "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+            "scripts/frontier_yt_source_action_support_packet.py",
+            "outputs/yt_source_action_support_packet_2026-05-22.json",
         ],
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

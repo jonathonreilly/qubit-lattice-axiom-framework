@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_lambda_normalization_attack_fanout_2026-05-25.json"
 NOTE = DOCS / "YT_LAMBDA_NORMALIZATION_ATTACK_FANOUT_NOTE_2026-05-25.md"
-SOURCE_ACTION_STATUS = DOCS / ("YT_" + "PR" + "230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md")
+SOURCE_ACTION_STATUS = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 POLE_NOGO = DOCS / "YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md"
 COLOR_NOGO = DOCS / "YT_COLOR_PROJECTION_CORRECTION_NOTE.md"
 COLOR_THEOREM = DOCS / "YUKAWA_COLOR_PROJECTION_THEOREM.md"
@@ -84,7 +84,7 @@ def part1_anchors() -> None:
     for phrase in required_note_phrases:
         check(f"note contains section/phrase: {phrase}", phrase in note)
 
-    status_row = ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22")
+    status_row = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     pole_row = ledger_row("yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23")
     color_row = ledger_row("yt_color_projection_correction_note")
     decoration_row = ledger_row("yukawa_color_projection_theorem")

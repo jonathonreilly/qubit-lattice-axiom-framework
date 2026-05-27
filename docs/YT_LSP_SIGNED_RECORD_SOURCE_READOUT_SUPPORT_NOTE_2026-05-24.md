@@ -1,18 +1,18 @@
-# PR230 LSP Signed-Record Source-Readout Support Theorem
+# Y_T LSP Signed-Record Source-Readout Support Theorem
 
 **Date:** 2026-05-24
 **Claim type:** bounded_theorem
 **Claim scope:** exact support theorem identifying the signed one-site source
-record used in the PR230 product-Radon-Nikodym source packet with the signed
+record used in the Y_T source-action product-Radon-Nikodym source packet with the signed
 spectral readout of an ideal unrefined sharp projective measurement on the
 local qubit algebra. This closes only the measurement/readout carrier of the
-PR230 source gate. It does not accept the source-coupled action convention as
+Y_T source-action gate. It does not accept the source-coupled action convention as
 neutral EW/Higgs authority, does not derive canonical `O_H`, does not fix
 scalar LSZ normalization, does not select `kappa_Y = 0`, and does not derive `y_t`.
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome; later status is generated only by the audit
 pipeline after independent review.
-**Primary runner:** `scripts/frontier_yt_pr230_lsp_signed_record_source_readout_support.py`
+**Primary runner:** `scripts/frontier_yt_lsp_signed_record_source_readout_support.py`
 
 ## Cited Authorities
 
@@ -26,8 +26,8 @@ Load-bearing one-hop authorities:
   for an unrefined sharp projection `P`, the canonical measurement
   instrument has Kraus operator `K_P = P`, so sequential effects read as
   `P E P`.
-- [`YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`](YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
-  supplies the PR230 product RN source support packet. Its source generator at
+- [`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
+  supplies the Y_T source-action product RN source support packet. Its source generator at
   the origin is the primitive signed one-site record `epsilon_x in {-1,+1}`.
 
 ## Theorem
@@ -59,7 +59,7 @@ Thus the possible ideal readout outcomes are exactly
 epsilon_x in {-1,+1}.
 ```
 
-For a finite block of sites, the PR230 source packet uses the product RN family
+For a finite block of sites, the Y_T source-action packet uses the product RN family
 
 ```text
 R_h(epsilon) = exp(sum_x h_x epsilon_x) / Z(h).
@@ -73,18 +73,18 @@ d log R_h / d h_x |_{h=0} = epsilon_x.
 
 Under the qubit/LSP readout above, this is precisely the signed spectral
 readout of the local projective measurement of `sigma_z(x)`. Therefore the
-measurement/readout carrier of the PR230 source packet is native to the
+measurement/readout carrier of the Y_T source-action packet is native to the
 current qubit-on-`Z^3` substrate:
 
 ```text
-PR230 primitive signed source record epsilon_x
+Y_T source-action primitive signed source record epsilon_x
   = LSP sharp-projective signed Pauli readout at site x.
 ```
 
 ## Source-Family Uniqueness Corollary
 
 The exponential RN form is also forced by the source semantics used in the
-PR230 packet. Let `R_h(epsilon)` be a positive smooth normalized source family
+Y_T source-action packet. Let `R_h(epsilon)` be a positive smooth normalized source family
 on a finite signed-record block satisfying:
 
 1. `R_0` is the uniform pre-source reference density;
@@ -124,7 +124,7 @@ After restoring normalization, the unique family is exactly
 R_h(epsilon) = exp(sum_x h_x epsilon_x) / Z(h).
 ```
 
-So the PR230 source packet's product RN family is not an extra fitted choice
+So the Y_T source-action packet's product RN family is not an extra fitted choice
 once the signed-record readout, smoothness, and source-composition semantics
 are adopted.
 
@@ -137,7 +137,7 @@ signed one-site RN source generator
   <-> signed local Pauli projective readout
 ```
 
-It removes two bounded ambiguities from the PR230 support packet:
+It removes two bounded ambiguities from the Y_T source-action support packet:
 
 1. "What is the primitive signed source record?" It is the signed spectral
    readout of the local qubit's sharp Pauli measurement.
@@ -161,7 +161,7 @@ This note does not derive positive retained `Y_T` closure. It does not claim:
 - `sqrt(8/9)` as an unconditional Yukawa correction;
 - `m_t` or `y_t`.
 
-The result narrows the PR230 blocker rather than closing it:
+The result narrows the Y_T source-action blocker rather than closing it:
 
 ```text
 closed support:
@@ -200,7 +200,7 @@ source_boundary: signed_record_readout_support_only
 status_authority: independent_audit_lane_only
 proposal_allowed: false
 proposal_allowed_reason: |
-  The theorem closes only the measurement/readout carrier of the PR230
+  The theorem closes only the measurement/readout carrier of the Y_T source-action
   source packet. Source/action authority, canonical O_H, scalar LSZ,
   physical pole rows or W/Z bypass, and matching/running remain open.
 audit_required_before_effective_status_change: true
@@ -218,7 +218,7 @@ fitted selector as load-bearing input.
 Run:
 
 ```text
-python3 scripts/frontier_yt_pr230_lsp_signed_record_source_readout_support.py
+python3 scripts/frontier_yt_lsp_signed_record_source_readout_support.py
 ```
 
 Expected result:
@@ -226,3 +226,8 @@ Expected result:
 ```text
 RESULT: PASS=50 FAIL=0
 ```
+
+During the source-action rename migration this row is audit-queue gated on
+`yt_source_action_support_packet_note_2026-05-22`. Before that upstream row is
+independently retained again under its new name, the runner's dependency-status
+check is expected to block this row rather than certify it.

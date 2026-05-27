@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md"
-STATUS_NOTE = DOCS / "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md"
+STATUS_NOTE = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 COLOR_NOTE = DOCS / "YT_COLOR_PROJECTION_CORRECTION_NOTE.md"
 SCALE_NOTE = DOCS / "OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md"
 
@@ -109,7 +109,7 @@ def main() -> int:
 
     print("\nPart 0: source and context anchors")
     check("source note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
-    check("PR230 consolidated status note exists", STATUS_NOTE.exists(), str(STATUS_NOTE.relative_to(ROOT)))
+    check("Y_T source-action consolidated status note exists", STATUS_NOTE.exists(), str(STATUS_NOTE.relative_to(ROOT)))
     check("color-projection correction note exists", COLOR_NOTE.exists(), str(COLOR_NOTE.relative_to(ROOT)))
     check("scale-invariant source-response note exists", SCALE_NOTE.exists(), str(SCALE_NOTE.relative_to(ROOT)))
     check("source note is typed no_go", "**Claim type:** no_go" in note)
@@ -118,7 +118,7 @@ def main() -> int:
         "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py" in note,
     )
     check(
-        "PR230 status exposes canonical LSZ as an open gate",
+        "Y_T source-action status exposes canonical LSZ as an open gate",
         "Derive canonical `O_H` and scalar LSZ normalization" in status_note,
     )
     check(

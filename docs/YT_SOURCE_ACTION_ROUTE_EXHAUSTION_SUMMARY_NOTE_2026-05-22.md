@@ -1,20 +1,20 @@
-# PR230 Route-Exhaustion Summary
+# Y_T Source-Action Route-Exhaustion Summary
 
 **Date:** 2026-05-22
 **Type:** meta
 **Status:** route-memory support only; not retained; not proposed_retained.
 
-This note preserves the useful science from the cleaned PR230 history without
+This note preserves the useful science from the cleaned Y_T source-action history without
 landing the old chunk logs, scratch PR-body blocks, or speculative theorem
 attempts.  The raw pre-clean branch was
-`backup/pr230-pre-clean-20260522-172104558`; it contained thousands of files of
-physics-loop provenance.  PR230 now keeps only the minimal positive support
+`backup/yt-source-action-pre-clean-20260522-172104558`; it contained thousands of files of
+physics-loop provenance.  Y_T source-action now keeps only the minimal positive support
 packet.  This note keeps the high-signal negative memory so future workers do
 not reopen already-audited dead ends without changing a premise.
 
 ## Consolidated Outcome
 
-The old PR230 campaign did not reach full positive top-Yukawa closure.  It
+The old Y_T source-action campaign did not reach full positive top-Yukawa closure.  It
 converged on one surviving gate:
 
 ```text
@@ -63,11 +63,11 @@ from finite packet algebra without the missing source/action and LSZ gates.
 The qubit and LSP reframing clarified the primitive signed-record basis, but
 LSP/projective measurement rules are measurement instrumentation, not by
 themselves a source selector.  The useful residue of this route is the product
-RN source/action equivalence now carried by PR230.
+RN source/action equivalence now carried by Y_T source-action.
 
 ## Negative Applicability
 
-These are not universal no-go theorems.  They apply to the old PR230 artifacts
+These are not universal no-go theorems.  They apply to the old Y_T source-action artifacts
 as they existed before cleanup.  A route can be reopened if it changes at least
 one load-bearing premise, for example by deriving same-surface source/action
 authority, deriving canonical `O_H` plus scalar LSZ, or producing strict
@@ -76,7 +76,7 @@ physical pole rows with the required controls.
 ## No-Go Discipline Gate
 
 This is a support-memory note, not a no-go claim.  The narrow negative claim is
-only: **the old PR230 artifacts did not close top-Yukawa from their submitted
+only: **the old Y_T source-action artifacts did not close top-Yukawa from their submitted
 premises**.  N1-N8 is recorded so future workers do not mistake that limited
 memory for a universal route closure.
 
@@ -109,13 +109,13 @@ as evidence for closure; the note only says the old artifacts lacked those
 authorities.
 
 **N4 — Residual matching.**
-The residual recorded here is the old PR230 residual:
+The residual recorded here is the old Y_T source-action residual:
 `source/action authority -> canonical O_H / scalar LSZ -> strict pole or W/Z
 bypass -> matching/running`.  No external no-go is cited as proof of universal
 failure, so there is no residual mismatch to inherit.
 
 **N5 — Rhetoric audit.**
-All negative wording is artifact-scoped: "old PR230 artifacts", "old branch",
+All negative wording is artifact-scoped: "old Y_T source-action artifacts", "old branch",
 "this route", and "before cleanup".  The note does not say the top-Yukawa route
 is impossible, only that those submitted artifacts did not close it.
 
@@ -132,7 +132,7 @@ strict W/Z bypass carrying common source IDs and covariance transport.  This
 note leaves that route open.
 
 **N8 — Cross-cycle echo.**
-Prior failed PR230 route fragments are treated as route memory only.  If a
+Prior failed Y_T source-action route fragments are treated as route memory only.  If a
 later ratification, convention reframe, or source/action derivation retires
 the surviving gate, this note should be read as obsolete historical memory, not
 as standing evidence against the reopened route.
@@ -146,19 +146,19 @@ alpha_s, or fitted selectors as load-bearing input.
 ## Review Gate
 
 Runner:
-`scripts/frontier_yt_pr230_route_exhaustion_summary.py`
+`scripts/frontier_yt_source_action_route_exhaustion_summary.py`
 
 Reproduction:
 
 ```bash
-python3 scripts/frontier_yt_pr230_route_exhaustion_summary.py
+python3 scripts/frontier_yt_source_action_route_exhaustion_summary.py
 ```
 
 Expected scorecard: `SUMMARY: PASS=11 FAIL=0`.  The runner checks only that
 this support-memory note stays demoted, scope-limited, firewall-clean, and
 no-go-discipline-visible; it is not evidence for top-Yukawa closure.
 
-`runner_path: scripts/frontier_yt_pr230_route_exhaustion_summary.py`
+`runner_path: scripts/frontier_yt_source_action_route_exhaustion_summary.py`
 
 ## Next Useful Work
 

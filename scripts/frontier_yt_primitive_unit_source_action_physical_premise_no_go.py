@@ -18,8 +18,8 @@ NOTE = DOCS / "YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
 SOURCE_ACTION_GATE = DOCS / "OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md"
 BRIDGE_ATTEMPT = DOCS / "YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md"
-CONSOLIDATED = DOCS / "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md"
-LSP_SOURCE = DOCS / "YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
+CONSOLIDATED = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+LSP_SOURCE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 PASS_COUNT = 0
@@ -69,7 +69,7 @@ def part1_anchors_and_authority() -> dict[str, Any]:
         "Current Axiom Surface",
         "Exact Counterfamily",
         "Why Signed Records Alone Do Not Remove Lambda",
-        "Consequence For PR230",
+        "Consequence For The Y_T Source-Action Lane",
         "Firewalls",
     ):
         check(f"note contains required section: {phrase}", phrase in note)
@@ -85,8 +85,8 @@ def part1_anchors_and_authority() -> dict[str, Any]:
 
     statuses = {
         "source_action_gate": ledger_row("observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21").get("effective_status"),
-        "yt_source_action_support": ledger_row("yt_" + "pr" + "230_consolidated_status_note_2026-05-22").get("effective_status"),
-        "lsp_source": ledger_row("yt_" + "pr" + "230_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
+        "yt_source_action_support": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
+        "lsp_source": ledger_row("yt_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
     }
     check("source-action gate is not retained authority", statuses["source_action_gate"] != "retained", statuses["source_action_gate"])
     check("finite source-action support is retained_bounded", statuses["yt_source_action_support"] == "retained_bounded", statuses["yt_source_action_support"])

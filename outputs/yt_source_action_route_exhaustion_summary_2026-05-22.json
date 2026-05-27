@@ -16,9 +16,9 @@
   "pass_count": 11,
   "proposal_allowed": false,
   "review_surface": [
-    "docs/YT_PR230_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md",
-    "scripts/frontier_yt_pr230_route_exhaustion_summary.py",
-    "outputs/yt_pr230_route_exhaustion_summary_2026-05-22.json"
+    "docs/YT_SOURCE_ACTION_ROUTE_EXHAUSTION_SUMMARY_NOTE_2026-05-22.md",
+    "scripts/frontier_yt_source_action_route_exhaustion_summary.py",
+    "outputs/yt_source_action_route_exhaustion_summary_2026-05-22.json"
   ],
   "status": "route-memory support only / no retained or proposed_retained claim"
 }

@@ -30,7 +30,7 @@ Load-bearing one-hop authorities:
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) supplies the
   current qubit-on-`Z^3` local algebra, equivalently `M_2(C) ~= Cl(3,0)`.
-- [`YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md`](YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md)
+- [`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
   supplies the retained-bounded signed-record source-action support packet.
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
   supplies the retained one-Higgs electroweak doublet bookkeeping:

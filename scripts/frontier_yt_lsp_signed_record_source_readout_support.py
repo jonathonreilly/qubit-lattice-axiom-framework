@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""PR230 LSP signed-record source-readout support runner.
+"""Y_T LSP signed-record source-readout support runner.
 
 This runner verifies a narrow support theorem:
 
-    PR230 primitive signed source record epsilon_x
+    Y_T source-action primitive signed source record epsilon_x
       = signed spectral readout of a local Pauli sharp projective measurement.
 
 It intentionally does not claim source/action authority, canonical O_H, scalar
@@ -23,12 +23,12 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-NOTE = DOCS / "YT_PR230_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
+NOTE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
 LSP = DOCS / "LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md"
-PR230 = DOCS / "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md"
+SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-OUTPUT = ROOT / "outputs" / "yt_pr230_lsp_signed_record_source_readout_support_2026-05-24.json"
+OUTPUT = ROOT / "outputs" / "yt_lsp_signed_record_source_readout_support_2026-05-24.json"
 
 PASS = 0
 FAIL = 0
@@ -66,15 +66,15 @@ def max_abs(a: list[float], b: list[float]) -> float:
 
 def part1_source_anchors() -> None:
     print("\nPart 1: source anchors")
-    for path in (NOTE, AXIOMS, LSP, PR230, LEDGER):
+    for path in (NOTE, AXIOMS, LSP, SOURCE_ACTION, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
     check("note declares bounded_theorem", "**Claim type:** bounded_theorem" in note)
-    check("note registers this runner", "frontier_yt_pr230_lsp_signed_record_source_readout_support.py" in note)
+    check("note registers this runner", "frontier_yt_lsp_signed_record_source_readout_support.py" in note)
     check("note cites current qubit axioms", "MINIMAL_AXIOMS_2026-05-20.md" in note)
     check("note cites LSP projective theorem", "LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md" in note)
-    check("note cites PR230 support packet", "YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md" in note)
+    check("note cites Y_T source-action support packet", "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md" in note)
 
 
 def part2_ledger_status_boundary() -> None:
@@ -85,7 +85,7 @@ def part2_ledger_status_boundary() -> None:
             "effective_status": {"retained_bounded", "retained"},
             "claim_type": {"bounded_theorem", "positive_theorem"},
         },
-        "yt_pr230_consolidated_status_note_2026-05-22": {
+        "yt_source_action_support_packet_note_2026-05-22": {
             "effective_status": {"retained_bounded", "audited_clean"},
             "claim_type": {"bounded_theorem"},
         },
@@ -233,7 +233,7 @@ def write_output() -> None:
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "generated_at": "2026-05-24T00:00:00Z",
-        "claim": "PR230 primitive signed RN source record equals native LSP Pauli signed readout",
+        "claim": "Y_T source-action primitive signed RN source record equals native LSP Pauli signed readout",
         "claim_type_author_hint": "bounded_theorem",
         "source_boundary": "signed_record_readout_support_only",
         "status_authority": "independent_audit_lane_only",
@@ -253,7 +253,7 @@ def write_output() -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("PR230 LSP SIGNED-RECORD SOURCE-READOUT SUPPORT")
+    print("Y_T LSP SIGNED-RECORD SOURCE-READOUT SUPPORT")
     print("=" * 88)
     part1_source_anchors()
     part2_ledger_status_boundary()

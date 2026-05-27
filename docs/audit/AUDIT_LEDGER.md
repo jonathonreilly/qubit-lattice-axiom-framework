@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 530 |
+| **retained_bounded** | 531 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1169 |
+| unaudited | 1168 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 828 |
+| `audited_clean` | 829 |
 | `audited_conditional` | 76 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1398 |
+| `unaudited` | 1397 |
 
 | claim_type | count |
 |---|---:|
@@ -639,6 +639,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_v2_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -9658,6 +9659,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With S_i = σ_i / 2, the Pauli matrices satisfy [S_i, S_j] = i ε_{ijk} S_k and S² = (3/4)I, so the irreducible 2-dimensional per-site module has j = 1/2.  _(class `A`)_
 - **chain closes:** True — The algebraic su(2), Casimir, spectrum, and commutant checks close directly in the Pauli representation. The previously missing physical-Hilbert bridge is supplied in the allowed targeted context by A1/R1's explicit k=1 qubit-per-site selection, so H_x = C² is no longer open for this audit scope.
 - **rationale:** The runner genuinely instantiates Pauli matrices and computes the commutators, Casimir, S_z spectrum, and scalar commutant rather than merely printing constants. The cited Cl(3) authority is retained_bounded for the Pauli/chirality representation content, and the allowed k=1 qubit-per-site context supplies the physical per-site Hilbert identification. With that targeted premise admitted, the note is an algebraic closure over retained-grade inputs, not a numerical match or definition substitution.
+- **auditor confidence:** high
+
+### `periodic_2d_wraparound_fix_note_2026-04-11`
+
+- **Note:** [`PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md`](../../docs/PERIODIC_2D_WRAPAROUND_FIX_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded bug-fix certificate for the corrected 2D periodic-torus weighted package: the minimum-image helper returns the expected wraparound displacements, three core periodic Hamiltonian builders use corrected wrap-edge weights, and cached successful rerun evidence is present for self-consistency, Anderson/eigenvalue statistics, and Born-alpha surfaces. This does not re-audit or promote any downstream Born-rule, holography, branch-entanglement, BMV, or continuum claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-05-27-periodic-wraparound`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The package certificate checks minimum_image_displacement((0,0),(9,0),(10,10)) = (-1,0), verifies corrected wrap-edge Hamiltonian weight |H[0,wrap]| = 0.5 in the three imported core runners, and confirms each required corrected-run cache exits 0 with the expected result text.  _(class `C`)_
+- **chain closes:** True — The primary runner imports the live periodic helper and three live core periodic runners, checks their wraparound behavior directly, and checks cached rerun evidence. The broader companion surfaces are retained_bounded or retained direct dependencies and the source note explicitly keeps their physics interpretations bounded rather than promoting them through this bug-fix row.
+- **rationale:** Clean within the bounded package-certificate scope. The runner does not merely narrate a fix: it exercises the shared minimum-image helper, checks live Hamiltonian wrap-edge weights in the self-consistency, Anderson/eigenvalue, and Born-alpha runners, and verifies SHA-pinned cached rerun evidence for those surfaces. The source note repeatedly excludes downstream promotion, so the clean verdict covers the corrected periodic-torus evidence entrypoint only, not the Born-rule, holography, BMV, branch-entanglement, or continuum interpretations.
 - **auditor confidence:** high
 
 ### `persistent_inertial_object_probe_note`

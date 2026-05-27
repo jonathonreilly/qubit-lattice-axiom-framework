@@ -435,6 +435,40 @@ Verification recorded with this review:
 - YAML validation passed.
 - `git diff --check` passed.
 
+## 2026-05-27 Local Review, Block 18
+
+Scope:
+
+- strict top/W pole-row repository discovery no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner scans current Y_T strict/response/backend/projector outputs for complete accepted pole-row certificate fields and checks named strict-row artifact absence. |
+| Physics claim boundary | PASS | Status is no-go/current-branch discovery only; it prunes hidden existing evidence, not future strict pole-row production. |
+| Imports / support | DISCLOSED | No external physics, observed masses, target selectors, or forbidden inputs are imported; the scan is branch-local schema discovery. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type_author_hint: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=79 FAIL=0`
+- Full stack runner: `PASS=348 FAIL=0`
+- Adjacent strict/projector runners passed: strict sparse availability audit
+  `PASS=74`, direct sparse certificate `PASS=88`, strict same-source
+  coefficient obstruction `PASS=74`, native backend candidate `PASS=64`,
+  native backend projector obstruction `PASS=68`, top-sector projector
+  obstruction `PASS=85`, microscopic backend/projector boundary `PASS=114`,
+  and same-surface matrix factorization `PASS=77`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 16
 
 Scope:

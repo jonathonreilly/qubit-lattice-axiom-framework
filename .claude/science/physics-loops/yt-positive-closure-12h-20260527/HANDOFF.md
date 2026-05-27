@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced seventeen science blocks, not positive retained-grade
+The campaign has produced eighteen science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -33,6 +33,27 @@ closure:
     orbit-member/readout covariance alone.
 17. a no-go for deriving the physical nontrivial top line from the existing
     C3/dihedral reflection-basepoint structure alone.
+18. a current-branch discovery no-go for hidden accepted strict top/W pole-row
+    evidence under another Y_T strict/response/backend/projector artifact name.
+
+New strict-route result:
+
+```text
+current Y_T strict/response/backend/projector outputs
+  -> support harnesses, candidate rows, and no-go packets
+  -/-> accepted strict same-surface top/W pole-row certificate
+```
+
+The discovery scan found no complete packet with accepted backend authority,
+isolated W/top poles, coefficient-certified rows, contact/FV/IR/model-class
+controls, and no free top coefficient input. This prunes only the
+hidden-existing-certificate shortcut; producing new accepted strict pole-row
+data remains live.
+
+Cycle 7 strict pole-row repository discovery verification so far:
+
+- `python3 scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py` -> `SUMMARY: PASS=79 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=348 FAIL=0`
 
 Cycle 7 dihedral basepoint anchor obstruction science commit pushed and
 recorded in PR #1980:

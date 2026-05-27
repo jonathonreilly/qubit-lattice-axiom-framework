@@ -7,7 +7,7 @@ target_blocker_text: "derive/certify the coefficient-bearing same-surface top se
 source_of_blocker_text: user_goal
 reachability_to_target: prunes shortcut
 artifact_role: no_go_route_pruning
-next_trace_action: "derive accepted same-surface physical orientation/basepoint/orbit-member readout law with W/top matrix elements; or produce accepted strict top/W pole-row data"
+next_trace_action: "produce accepted strict top/W pole-row data; or derive accepted same-surface backend/projectors/source-generator matrix elements, including any genuinely new physical C3 phase/orbit-member law"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -81,3 +81,12 @@ already-derived real-record reflection axis fixes the singlet member
 importing the missing physical basepoint section. The next trace action is
 therefore accepted strict W/top pole rows, or a genuinely new same-surface
 physical basepoint/orbit-member theorem beyond the existing reflection axis.
+The eighteenth artifact prunes the hidden-existing-certificate shortcut for
+the strict route. A current-branch scan of Y_T
+strict/response/backend/projector outputs finds support harnesses, candidate
+rows, and no-go packets, but no accepted same-surface strict top/W pole-row
+certificate with backend authority, isolated W/top poles, coefficient-certified
+rows, contact/FV/IR/model-class controls, and no free top coefficient input.
+The next trace action is therefore to produce new accepted strict pole-row
+data or derive the accepted same-surface backend/projectors/source-generator
+matrix elements.

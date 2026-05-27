@@ -32,6 +32,9 @@ law itself can select a physical nontrivial member after such an orbit is
 selected.
 The seventeenth route tested whether the existing C3/dihedral reflection
 basepoint structure can supply that physical member law.
+The eighteenth route tested whether accepted strict top/W pole-row evidence is
+already present under another current-branch Y_T strict/response/backend or
+projector artifact name.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -53,6 +56,7 @@ basepoint structure can supply that physical member law.
 | General C3 scalar phase-orbit selector | no-go shortcut test | 3 | Pruned: C3-invariant scalar dynamics selects phase orbits; generic/primitive orbits contain both singlet and nontrivial top-line witnesses |
 | C3 orbit-member/readout covariance | no-go shortcut test | 3 | Pruned: free C3 orbits have no equivariant section; symmetry-breaking sections include `P_0` and nontrivial witnesses |
 | Existing C3/dihedral basepoint anchor | no-go shortcut test | 3 | Pruned: full C3/D3 naturality has no section; the existing reflection axis fixes `P_0`, while rotated axes import the missing basepoint |
+| Strict pole-row repository discovery | no-go current-branch audit | 3 | Pruned: no hidden accepted strict top/W pole-row certificate exists under current Y_T response/backend/projector artifact names |
 
 ## Stuck Fan-Out
 
@@ -78,6 +82,7 @@ basepoint structure can supply that physical member law.
 | General scalar phase orbit | Ask C3-invariant scalar phase dynamics to select the physical nontrivial top line | Fails; orbit selection is not orbit-member selection, and the same orbit contains `P_0`, `P_omega2`, and `P_omega` witnesses |
 | Orbit-member readout covariance | Ask C3 covariance to provide the missing physical member section after orbit selection | Fails; no equivariant section exists for a free C3 orbit, and symmetry-breaking sections include a `P_0` row |
 | Existing dihedral basepoint anchor | Ask the already-derived real-record reflection/dihedral structure to choose the physical member | Fails; C3/D3 naturality has no section, and the existing reflection axis fixes the singlet member `P_0` |
+| Strict pole-row discovery | Search current Y_T strict/response/backend/projector outputs for a hidden accepted pole-row packet | Fails; support harnesses and candidates are present, but no complete accepted same-surface strict top/W pole-row certificate is present |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -85,3 +90,6 @@ nontrivial physical line with accepted backend/projectors and matrix elements,
 or accepted strict pole rows. It does not close the coefficient row.
 The existing reflection axis cannot serve as that theorem; it selects the
 singlet member, and rotated axes are new basepoint imports.
+The current branch also does not contain a hidden accepted strict pole-row
+packet under another response/backend/projector artifact name, so the strict
+route requires new pole-row data or a new accepted backend/projector theorem.

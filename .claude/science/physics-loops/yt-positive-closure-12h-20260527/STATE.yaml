@@ -6,18 +6,18 @@ remaining_campaign_seconds_at_cycle_start: 32345
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T21:25:33Z"
+last_checkpoint_utc: "2026-05-27T21:33:18Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_dihedral_basepoint_anchor_obstruction
-hard_residual: "derive accepted physical orientation/basepoint/orbit-member anchor excluding P_0, or certify dM_t/dell = A/sqrt(12) by strict pole rows"
-actual_current_surface_status: no-go / open physical basepoint anchor law
+active_route: strict_top_w_pole_row_repository_discovery_no_go
+hard_residual: "produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls, or derive accepted same-surface backend/projectors/matrix elements"
+actual_current_surface_status: no-go / current-branch strict-row discovery
 trace_class: negative_route_pruning
 reachability_to_target: prunes shortcut
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "The existing C3/dihedral reflection-basepoint shortcut is now pruned. Full C3/D3 naturality has no section of the selected free phase orbit. The already-derived real-record reflection axis fixes phi=0 -> P_0 -> A/sqrt(3), while rotated reflection axes can fix nontrivial members only by importing the missing physical basepoint section. The actual surface still lacks accepted physical basepoint/orbit-member authority with W/top matrix elements, or strict top/W pole rows."
+claim_state_movement: "The strict pole-row repository discovery route is now pruned for current branch artifacts. A scan of current Y_T strict/response/backend/projector outputs finds support harnesses, candidate rows, and no-go packets, but no accepted same-surface strict top/W pole-row certificate with backend authority, isolated W/top poles, coefficient-certified rows, contact/FV/IR/model-class controls, and no free top coefficient input. Positive closure still requires producing new accepted strict pole-row data or deriving the accepted same-surface backend/projectors/matrix elements."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -49,6 +49,9 @@ files_touched:
   - docs/YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py
   - outputs/yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json
+  - docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md
+  - scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py
+  - outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -87,6 +90,7 @@ no_go_routes:
   - C3-invariant scalar phase dynamics alone selects the physical nontrivial top line from a selected phase orbit
   - C3 orbit-member/readout covariance alone selects a physical nontrivial top line from a selected free phase orbit
   - existing C3/dihedral reflection-basepoint structure selects a physical nontrivial member of a selected free phase orbit
+  - current branch already contains hidden accepted strict top/W pole-row evidence under another artifact name
 commands_run:
   - "python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py -> PASS=106 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=285 FAIL=0"
@@ -168,6 +172,21 @@ commands_run:
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=334 FAIL=0"
   - "python3 scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py -> PASS=84 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=341 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py -> PASS=79 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=348 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS=88 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py -> PASS=64 FAIL=0"
+  - "python3 scripts/frontier_yt_native_backend_authority_projector_obstruction.py -> PASS=68 FAIL=0"
+  - "python3 scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py -> PASS=85 FAIL=0"
+  - "python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py -> PASS=114 FAIL=0"
+  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py -> PASS=79 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=348 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py scripts/frontier_yt_native_backend_authority_projector_obstruction.py scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "git diff --check -> PASS"
   - "python3 scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py -> PASS=73 FAIL=0"
   - "python3 scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py -> PASS=79 FAIL=0"
   - "python3 scripts/frontier_yt_c3_real_record_reflection_even_source.py -> PASS=76 FAIL=0"
@@ -195,7 +214,7 @@ commands_run:
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "PR #1980 body updated with dihedral basepoint anchor obstruction result, artifacts, verification, and next exact action."
-latest_science_commit: 9470accf9a53c56a1e0ff8c1e22c85c37d75b5ce
-next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls; if staying on C3, derive a genuinely new same-surface physical basepoint/orbit-member theorem beyond the existing reflection axis, excluding P_0 and supplying W/top matrix elements."
+pr_status: pending update for strict pole-row repository discovery no-go block
+latest_science_commit: pending strict pole-row repository discovery no-go commit
+next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls, or derive the accepted same-surface backend/projectors/source-generator matrix elements; if staying on C3, derive a genuinely new physical phase/orbit-member law beyond the existing reflection axis."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

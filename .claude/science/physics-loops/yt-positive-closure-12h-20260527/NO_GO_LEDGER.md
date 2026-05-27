@@ -110,3 +110,12 @@ potential/variational law and a physical nonzero orientation branch.
   reflection axes can fix `P_omega2` or `P_omega`, but choosing such an axis
   imports the missing physical basepoint section. Accepted strict pole rows or
   a genuinely new same-surface physical basepoint theorem remain load-bearing.
+- New in the eighteenth block: the current branch does not already contain a
+  hidden accepted strict top/W pole-row certificate under another Y_T
+  strict/response/backend/projector artifact name. The discovery scan finds
+  harnesses, candidate rows, and no-go packets, but no complete accepted packet
+  with same-surface backend authority, isolated W/top poles,
+  coefficient-certified rows, contact/FV/IR/model-class controls, and no free
+  top coefficient input. Producing new accepted strict pole-row data or
+  deriving the accepted same-surface backend/projectors/matrix elements remains
+  load-bearing.

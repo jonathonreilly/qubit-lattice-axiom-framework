@@ -5,7 +5,7 @@
 | 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and nontrivial top-line law | medium | high | partial | factorization support landed; top-line shortcut still blocked |
 | 2 | Non-mass-ordering C3 top-line law excluding `P_0` without target selection | low | high | present | pruned on current real/reflection-even C3 surface |
 | 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; base dynamics/order still open |
-| 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch |
+| 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch, including repository discovery scan |
 | 5 | Current microscopic source/backend/carrier/C3 shortcut | low | high | present | pruned; does not derive accepted backend/projector/matrix element |
 | 6 | Positive real C3 transfer/Perron top-line selection | low | high | present | pruned; selects `P_0` or leaves nontrivial block degenerate |
 | 7 | C3 phase-ordering cone characterization | medium | medium | present | exact support landed; cone membership not derived |
@@ -19,6 +19,7 @@
 | 15 | C3 orbit-member/readout covariance after orbit selection | low | high | present | pruned; no equivariant section, and symmetry-breaking sections include `P_0` |
 | 16 | Existing C3/dihedral basepoint anchor after orbit selection | low | high | present | pruned; full C3/D3 naturality has no section, and the existing reflection axis fixes `P_0` |
 | 17 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
+| 18 | Hidden accepted strict pole-row certificate already present under another artifact name | low | high | present | pruned by current-branch repository discovery scan |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -115,3 +116,13 @@ next exact action is rank 4 or rank 17: obtain accepted strict top/W pole-row
 data with contact, FV/IR, and model-class controls, or derive a genuinely new
 same-surface physical basepoint/orbit-member theorem beyond the existing
 reflection axis, excluding `P_0` and supplying W/top matrix elements.
+
+Queue refresh after the eighteenth block: positive closure remains open. The
+hidden-existing-certificate shortcut for the strict route is pruned: current
+Y_T strict/response/backend/projector outputs contain harnesses, candidate
+rows, and no-go packets, but no complete accepted same-surface strict top/W
+pole-row certificate. The next exact action remains rank 4 or rank 17:
+produce new accepted strict top/W pole-row data with contact, FV/IR, and
+model-class controls, or derive an accepted same-surface
+backend/projector/matrix-element theorem; if staying on C3, derive a genuinely
+new physical phase/orbit-member law beyond the existing reflection axis.

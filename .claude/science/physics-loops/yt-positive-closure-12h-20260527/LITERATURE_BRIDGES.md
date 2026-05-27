@@ -39,3 +39,7 @@ literature bridge is needed for the claim status. The dihedral basepoint
 anchor obstruction directly enumerates the finite C3 generator and the three
 D3 reflection axes on the selected primitive orbit; it uses no external
 finite-group theorem as authority and imports no physical basepoint law.
+The strict pole-row repository discovery no-go is likewise a finite
+branch-local schema scan over current Y_T JSON and note artifacts. It uses no
+external physics source to decide whether a complete accepted pole-row packet
+exists in this branch.

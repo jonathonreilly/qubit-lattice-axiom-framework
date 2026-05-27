@@ -14,6 +14,22 @@ factorization and a nontrivial top-line law remain load-bearing. No retained or
 proposed-retained Y_T closure is claimed.
 ```
 
+Then append the eighteenth block:
+
+```text
+## 2026-05-27 Update: Strict Top/W Pole-Row Repository Discovery No-Go
+
+Added a current-branch discovery no-go for the shortcut that accepted strict
+top/W pole-row evidence is already present under another Y_T
+strict/response/backend/projector artifact name. The scan finds harnesses,
+candidate rows, and no-go packets, but no complete accepted same-surface
+strict top/W pole-row certificate with backend authority, isolated W/top
+poles, coefficient-certified rows, contact/FV/IR/model-class controls, and no
+free top coefficient input. Producing new accepted strict pole-row data or an
+accepted same-surface backend/projector/matrix-element theorem remains
+load-bearing. No retained or proposed-retained Y_T closure is claimed.
+```
+
 Then append the second block:
 
 ```text

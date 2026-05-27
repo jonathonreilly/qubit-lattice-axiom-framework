@@ -79,6 +79,9 @@ closed exactly:
   strict sparse pole-response availability audit: the harness and no-kappa
   candidate are present, but no accepted backend or controlled W/top pole-row
   certificate is present
+  strict pole-row repository discovery no-go: a broader current-branch scan of
+  Y_T strict/response/backend/projector outputs finds no hidden accepted
+  top/W pole-row certificate under another artifact name
   microscopic backend/projector/matrix-element boundary: current source law,
   carrier amplitude, C3 algebra, W row, and no-kappa backend candidate do not
   derive the accepted physical top projector or its source-generator matrix
@@ -1155,6 +1158,13 @@ proposal_allowed_reason: |
   the missing readout law: a free C3 phase orbit has no equivariant section,
   and symmetry-breaking sections include a P_0 row as well as the two
   nontrivial target rows.
+  The strict pole-row repository discovery no-go additionally prunes the
+  hidden-existing-certificate shortcut: scanning current Y_T
+  strict/response/backend/projector outputs finds support harnesses,
+  candidate rows, and no-go packets, but no accepted same-surface strict
+  top/W pole-row certificate with backend authority, isolated W/top poles,
+  coefficient-certified rows, contact/FV/IR/model-class controls, and no free
+  top coefficient input.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 529 |
+| **retained_bounded** | 530 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1170 |
+| unaudited | 1169 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 827 |
+| `audited_clean` | 828 |
 | `audited_conditional` | 76 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1399 |
+| `unaudited` | 1398 |
 
 | claim_type | count |
 |---|---:|
@@ -612,6 +612,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -9249,6 +9250,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source actually constructs the lattice, propagates amplitudes, computes gravity/Born/k=0 rows, fits the joint log response, and performs the critical-strength comparison. The cited deterministic-rescale and high-precision notes are retained-grade support for using the Born-clean rescaled lane through the checked spacings.
 - **rationale:** Within the stated finite-window scope, the conclusion follows from a first-principles framework computation rather than from a copied or renamed upstream number. The runner output matches the note's quoted exponents, guards, R^2, and critical-strength value, and the source code shows those values are computed from the lattice propagation and ordinary least-squares fit. The small-field cutoff is a stated harness guard, so the audited conclusion is only that the fitted critical schedule fails that stated guard, not a universal no-go theorem.
 - **auditor confidence:** high
+
+### `nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_UNIVERSAL_PARAMETER_THEOREM_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_UNIVERSAL_PARAMETER_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded parameter-sweep verification only: at fixed rescaled-NN three-edge geometry with FANOUT=3, SLIT_Y=3, and PHYS_W=20, the closed-form C_arm(h) and c2(h)/c2_inf formulas are checked at three alternate harness points perturbing BETA, K_PHYS, and PHYS_L. The primary per-h C_arm coherent-vs-measured sigma test stays within 2.44%, and c2_inf stays within 0.279%; no FANOUT-varying topology, SLIT_Y/PHYS_W variation, exact log-linear C_arm fit closure, or general outside-harness theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-05-27-universal-parameter`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At Points A/B/C, the primary C_arm per-h coherent formula has max residuals 2.439%, 2.283%, and 2.198%, and the c2_inf comparison has residuals -0.120%, -0.130%, and -0.279%, all inside the stated bounded acceptance bands.  _(class `C`)_
+- **chain closes:** True — Both direct dependencies are retained_bounded. The runner re-derives the closed forms from explicit harness parameters, builds and propagates the lattice at the three alternate parameter points, measures sigma_arm and c2 directly, and compares those measurements against the parameterized formulas without importing publication framing or fitted target constants as hidden premises.
+- **rationale:** Clean only under the narrowed bounded scope. The source and runner support a harness-parameterized check over BETA, K_PHYS, and PHYS_L while holding the NN three-edge geometry fixed. The runner's secondary h->0 geodesic-limit C_arm fit comparison fails for Points A and C by just over 10%, but the note marks that comparison as tracked-only and not part of the primary acceptance; the load-bearing primary per-h coherent comparison closes at <=2.44%, and c2_inf closes at <=0.279%. The FANOUT language is acceptable only as the fixed FANOUT=3 normalization inside the current geometry, because no fanout-varying topology is tested.
+- **auditor confidence:** medium_high
 
 ### `no_per_site_bosonic_ccr_theorem_note_2026-05-02`
 

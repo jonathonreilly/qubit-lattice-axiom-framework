@@ -1,116 +1,138 @@
-# Mermin-Wagner / Hohenberg / Coleman + Bogoliubov Inequality — Named Non-Derivation Imports
+# Mermin-Wagner / Hohenberg / Coleman + Bogoliubov Inequality
 
-**Date:** 2026-05-18
+**Date:** 2026-05-18 (framework-local repair: 2026-05-27)
 **Claim type:** bounded_theorem
-**Status:** bounded named-import wrapper bundling three classical
-results from statistical mechanics / quantum field theory: the
-Bogoliubov inequality on the thermal commutator-symmetrized inner
-product, and the Mermin-Wagner / Hohenberg / Coleman theorems
-forbidding spontaneous breaking of continuous global symmetries in
-`d <= 2` spatial dimensions at finite temperature, with the Coleman
-theorem giving the relativistic `1 + 1`-dimensional zero-temperature
-analogue.
+**Status:** bounded framework-local Bogoliubov/infrared certificate; external
+Mermin-Wagner, Hohenberg, and Coleman references are parallel literature
+citations, not load-bearing retained imports.
+**Runner:** `scripts/mermin_wagner_bogoliubov_framework_certificate.py`
 **Status authority:** independent audit lane only.
 
 ## Purpose
 
-This wrapper note documents the Bogoliubov inequality plus the
-Mermin-Wagner / Hohenberg / Coleman dimension-restriction theorems as
-named non-derivation imports so downstream rows (notably
-`AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`)
-can register one-hop dependencies for the textbook technique inputs.
+This packet replaces the former named-import wrapper with a direct finite
+lattice certificate for the part of the Mermin-Wagner/Hohenberg machinery that
+the framework actually uses downstream:
 
-## Imports covered
+- the finite Gibbs-state Bogoliubov inequality;
+- the lattice Goldstone dispersion `E_k = 2 sum_mu (1 - cos k_mu)` on `Z^d`;
+- the infrared sum `I_d(L) = L^{-d} sum_{k != 0} 1/E_k`;
+- the dimension threshold `I_d -> infinity` for `d <= 2` and finite behavior
+  for `d >= 3`;
+- the conditional consequence that a finite Bogoliubov double-commutator
+  constant forces the continuous-symmetry order parameter to vanish when
+  `I_d` diverges.
 
-### 1. Bogoliubov inequality (1962)
+The packet does not add an axiom. It uses finite-dimensional Hilbert-space
+algebra, the existing `Z^d` lattice dispersion, and explicitly stated local
+Hamiltonian hypotheses.
 
-Statement: for two operators `A, B` on a Gibbs thermal state
-`ρ = Z^{-1} e^{-βH}` with `Z = tr e^{-βH}`, the thermal commutator
-inner product satisfies
+## Local Theorem
 
+Let `H_L` be a finite-dimensional Hermitian Hamiltonian on a periodic
+`L^d` lattice block with Gibbs state
+
+```text
+rho_beta = exp(-beta H_L) / tr(exp(-beta H_L)),   beta > 0.
 ```
-| ⟨ [A, B] ⟩_β |^2  ≤  β · ⟨ {A, A^†} ⟩_β · ⟨ [B, [H, B^†]] ⟩_β / 2.
+
+For finite operators `A` and `C`,
+
+```text
+| <[C,A]>_beta |^2
+    <= (beta/2) <{A,A^dagger}>_beta <[[C,H_L],C^dagger]>_beta.     (B)
 ```
 
-This is the **Bogoliubov inequality**, a Schwartz-style inequality
-on the thermal commutator inner product. Standard derivation uses
-the spectral decomposition of `ρ` plus the Schwartz inequality on
-the matrix element representation. It is the central technique input
-in the Mermin-Wagner proof.
+This is a finite matrix inequality: diagonalize `H_L`, write the thermal
+expectation in the energy basis, and apply Cauchy-Schwarz to the weighted
+matrix-element sum. No continuum theorem is imported.
 
-Reference: N. N. Bogoliubov, *Phys. Abhandl. Sowjetunion* **6**, 1
-(1962); textbook treatments in J. M. Ziman, *Models of Disorder*
-(Cambridge 1979), §6; G. D. Mahan, *Many-Particle Physics*, 3rd ed.
-(Plenum 2000), Ch. 3.
+For a translation-invariant local Hamiltonian whose long-wavelength
+continuous-symmetry charge mode has a finite double-commutator bound
 
-### 2. Mermin-Wagner theorem (1966)
+```text
+<[[q_k,H_L],q_k^dagger]>_beta <= C E_k
+```
 
-Statement: in `d ≤ 2` spatial dimensions at any finite temperature
-`T > 0`, no continuous global symmetry of a Hamiltonian with
-sufficiently short-range interactions can be spontaneously broken; the
-order parameter `⟨q_x⟩_β` of any local generator `q_x` of the symmetry
-vanishes identically.
+with `C < infinity` independent of `L`, `E_k = 2 sum_mu(1 - cos k_mu)`,
+and a finite onsite anticommutator/susceptibility bound, the standard
+Bogoliubov summation gives
 
-The proof combines Bogoliubov's inequality applied to the
-Goldstone-mode-projected fields with the lattice infrared integral
-`I_d = (1/V) Σ_{k ≠ 0} 1/E_k`. For `d = 1, 2` the integral diverges
-logarithmically (`d = 2`) or as a power (`d = 1`) in the
-infrared, forcing the order parameter to zero.
+```text
+|m_L|^2 <= C' / I_d(L),
+I_d(L) = L^{-d} sum_{k != 0} 1/E_k.                              (CMW)
+```
 
-Reference: N. D. Mermin & H. Wagner, "Absence of Ferromagnetism or
-Antiferromagnetism in One- or Two-Dimensional Isotropic Heisenberg
-Models," *Phys. Rev. Lett.* **17**, 1133 (1966).
+Thus the framework-local implication is:
 
-### 3. Hohenberg theorem (1967)
+```text
+I_d(L) -> infinity  =>  m_L -> 0.
+```
 
-Statement: extends Mermin-Wagner to crystalline ordering and
-Bose-Einstein condensation in `d ≤ 2`. The argument structure is
-identical to Mermin-Wagner via Bogoliubov's inequality applied to the
-relevant order-parameter operator.
+For the lattice dispersion above:
 
-Reference: P. C. Hohenberg, "Existence of Long-Range Order in One and
-Two Dimensions," *Phys. Rev.* **158**, 383 (1967).
+- `d=1`: `I_1(L) = (L^2 - 1)/(12L)`, so `I_1(L)` diverges linearly.
+- `d=2`: `I_2(L)` diverges logarithmically by comparison with
+  `int d^2 k / |k|^2`.
+- `d>=3`: the corresponding infrared integral is finite at `k=0`.
 
-### 4. Coleman theorem (1973)
+This is the only retained-target claim in this packet.
 
-Statement: in `d = 2` (relativistic `d_s = 1` plus one time direction)
-spontaneous breaking of continuous global symmetries is forbidden in
-relativistic quantum field theory by the infrared divergence of the
-massless Goldstone propagator.
+## Runner Certificate
 
-Reference: S. Coleman, "There are no Goldstone bosons in two
-dimensions," *Comm. Math. Phys.* **31**, 259 (1973).
+[`scripts/mermin_wagner_bogoliubov_framework_certificate.py`](../scripts/mermin_wagner_bogoliubov_framework_certificate.py)
+checks the finite ingredients without using external theorem text:
 
-## What this note does NOT claim
+- random finite Gibbs-state matrix instances of inequality (B);
+- the exact one-dimensional identity for `I_1(L)`;
+- monotone logarithmic growth of `I_2(L)` over a finite ladder;
+- bounded/converging behavior of `I_3(L)` over a finite ladder;
+- decreasing order-parameter upper bounds `sqrt(1/I_d(L))` for `d=1,2`.
 
-- This is NOT a re-derivation of any of the cited theorems.
-- This is NOT a framework-level derivation of the dimension restriction
-  from `Cl(3)` on `Z^3` alone; the `d = 3` substrate choice is recorded
-  separately, with the textbook Mermin-Wagner restriction providing
-  the structural necessity that `d >= 3` for SSB of continuous global
-  symmetries.
-- The D9 long-range-force/kernel condition cited in the consumer note
-  is a separate framework-internal axiom-reduction artifact (from
-  `AXIOM_REDUCTION_NOTE.md`) and is not covered by this textbook
-  import.
-- The bounded scope is the named non-derivation import only.
+The cache reports `PASS=5 FAIL=0`.
 
-## Downstream usage
+## Literature Citations In Parallel
 
-This wrapper is consumed by:
+The external literature is now cited as historical/contextual confirmation of
+the same mathematical mechanism, not as an uninspected source of retained
+authority:
 
-- `AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md` — uses Bogoliubov's inequality (Step 1) and the lattice IR-integral analysis (Step 3-4) on `Z^d`, both of which are textbook moves classified by the Mermin-Wagner / Hohenberg / Coleman literature. The consumer note's framework contribution is the explicit `Cl(3) ⊗ Z^d` substrate adaptation and the `d_s = 3` minimality conclusion combining Mermin-Wagner with the framework's D9 long-range-force/kernel condition.
+- N. N. Bogoliubov, 1962: original inequality behind the finite-temperature
+  argument.
+- N. D. Mermin and H. Wagner, 1966: finite-temperature no-breaking theorem for
+  continuous symmetries in one and two spatial dimensions under short-range
+  hypotheses.
+- P. C. Hohenberg, 1967: related finite-temperature low-dimensional ordering
+  obstruction for Bose systems and crystalline order.
+- S. Coleman, 1973: relativistic `1+1` zero-temperature analogue via the
+  infrared singularity of massless scalar fields.
 
-## Boundary
+Coleman's relativistic zero-temperature theorem is not re-derived or retained
+by this packet. It remains a parallel citation. Downstream claims that need the
+full Coleman QFT theorem need a separate framework-local or retained authority
+packet.
 
-This wrapper note is a named-import-only bounded theorem. It does not
-claim:
+## Hypotheses And Boundary
 
-- a framework derivation of any of the imported textbook theorems;
-- closure of any downstream `d = 3` minimality theorem;
-- a tighter audit-tier status for the consumers.
+The retained-target theorem is conditional on the explicit local Hamiltonian
+conditions in (CMW):
 
-Its only function is to pin the Bogoliubov inequality and the
-Mermin-Wagner / Hohenberg / Coleman dimension-restriction theorems as
-accepted mathematical inputs so downstream notes can cite them cleanly
-via one-hop edges in the audit citation graph.
+- finite onsite Hilbert space or a regulated finite-dimensional local algebra;
+- finite beta Gibbs state;
+- translation invariance on the tested `Z^d` block;
+- a continuous global symmetry with charge mode `q_k`;
+- finite onsite anticommutator/susceptibility bound;
+- local/short-range dynamics giving the double-commutator estimate
+  `<[[q_k,H_L],q_k^dagger]> <= C E_k` with `C` independent of `L`.
+
+The packet does not claim:
+
+- a proof for arbitrary long-range Hamiltonians;
+- a proof of every Hohenberg/Coleman hypothesis;
+- a zero-temperature relativistic Coleman theorem;
+- closure of the downstream `d_s=3` minimality theorem, which still depends on
+  its own D9/kernel premise and audit state.
+
+The purpose is narrower and cleaner: the framework now carries the finite
+Bogoliubov/IR mechanism directly, while citing the classical papers in
+parallel.

@@ -63967,10 +63967,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0989f3bdceff33e474bdf477be35532f4782f3dfb5e5022e464e736f1d5a5c3d",
+      "note_hash": "54dbc0334b48c8ed64ef70cf0407a8d64e9706dae308497dee115e93ec63e9ba",
       "path": "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
-      "runner_path": null,
-      "title": "Mermin-Wagner / Hohenberg / Coleman + Bogoliubov Inequality \u2014 Named Non-Derivation Imports"
+      "runner_path": "scripts/mermin_wagner_bogoliubov_framework_certificate.py",
+      "title": "Mermin-Wagner / Hohenberg / Coleman + Bogoliubov Inequality"
     },
     "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
@@ -85427,6 +85427,6 @@
     "leaf_count": 794,
     "node_count": 2549,
     "root_count": 854,
-    "runners_with_path": 2124
+    "runners_with_path": 2125
   }
 }

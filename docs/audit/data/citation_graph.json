@@ -79380,9 +79380,9 @@
     },
     "three_generation_observable_dep_chain_audit_note_2026-05-02": {
       "claim_id": "three_generation_observable_dep_chain_audit_note_2026-05-02",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "`meta` \u2014 retired dep-chain bookkeeping snapshot",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "three_generation_observable_theorem_note",
         "generation_axiom_boundary_note",
@@ -79393,10 +79393,10 @@
         "physical_lattice_necessity_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "68e659b7bab0f16154fae11e6afd3646a65d205065f446ff398481be3d6a316c",
+      "note_hash": "5ce6f6794a21b23904c7c2cc3ab09c4f60c9cc87a370d001b75fae07dd028139",
       "path": "docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md",
-      "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
-      "title": "Three-Generation Observable Theorem \u2014 Dep-Chain Audit"
+      "runner_path": null,
+      "title": "Three-Generation Observable Theorem \u2014 Dep-Chain Audit (Retired)"
     },
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": {
       "claim_id": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
@@ -85449,18 +85449,18 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 611,
       "decoration": 1,
-      "meta": 191,
+      "meta": 192,
       "no_go": 84,
-      "none": 1444,
+      "none": 1443,
       "open_gate": 49,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1029,
       "decoration": 1,
-      "meta": 191,
+      "meta": 192,
       "no_go": 187,
-      "none": 427,
+      "none": 426,
       "open_gate": 126,
       "positive_theorem": 590
     },
@@ -85468,6 +85468,6 @@
     "leaf_count": 796,
     "node_count": 2551,
     "root_count": 855,
-    "runners_with_path": 2126
+    "runners_with_path": 2125
   }
 }

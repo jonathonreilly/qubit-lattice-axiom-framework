@@ -29,7 +29,7 @@
   "cycles_detected": 4,
   "effective_status_counts": {
     "audited_conditional": 54,
-    "audited_failed": 3,
+    "audited_failed": 2,
     "audited_numerical_match": 14,
     "audited_renaming": 18,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
@@ -56,7 +56,7 @@
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 229,
+    "meta": 230,
     "open_gate": 20,
     "retained": 147,
     "retained_bounded": 532,

@@ -3,7 +3,7 @@
     "critical": 244,
     "high": 337,
     "leaf": 310,
-    "medium": 326
+    "medium": 327
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -17629,6 +17629,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py",
+      "transitive_descendants": 4
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "same_family_3d_closure_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "valley_linear_wide_tail_note",
+        "valley_linear_action_note",
+        "valley_linear_asymptotic_bridge_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/lattice_3d_valley_linear_card.py"
+      ],
+      "load_bearing_score": 3.322,
+      "note_path": "docs/SAME_FAMILY_3D_CLOSURE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/same_family_3d_closure.py",
       "transitive_descendants": 4
     },
     {
@@ -36689,6 +36717,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 51,
-  "total_pending": 1217
+  "ready_count": 52,
+  "total_pending": 1218
 }

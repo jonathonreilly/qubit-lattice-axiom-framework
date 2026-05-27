@@ -1,202 +1,103 @@
 # Same-Family 3D Closure: Valley-Linear
 
-**Date:** 2026-04-04 (inline-cache repair: 2026-05-18)
-**Status:** bounded same-family closure note; the wrapper presents the
+**Date:** 2026-04-04 (live-source repair: 2026-05-27)
+**Status:** bounded same-family finite-lattice closure packet, submitted for
+re-audit after replacing the former print-only wrapper path with a live primary
+runner.
 **Claim type:** bounded_theorem
-closure card backed by the inlined per-`L` / per-`W` cached certificates
-in the "Per-L / per-W cached certificates" section below. The wrapper
-does **not** itself recompute the load-bearing observables. Rows 1-7
-(core card at `h=0.25, W=10, L=12`) and the row-10 tails (`W=10` core
-and `W=12` companion) are anchored against the inlined cache excerpts.
-Rows 8-9 at `L=8` and `L=10` are narrowed to queued follow-up status
-because the 2026-04-04 per-`L` source logs at the matching `h=0.25,
-W=10` slice could not be located on 2026-05-18; the `L=12` anchor for
-those rows is supported by the inlined core-card cache. The script is
-therefore a print-aggregation wrapper for an already-frozen multi-log
-core (now made visible from this packet), not a live re-derivation
-harness.
 
-**Audit-conditional perimeter (2026-05-02):**
-The current generated audit ledger records this row `audited_conditional` with
-`auditor_confidence = high`, `chain_closes = false`, and `claim_type =
-bounded_theorem`. The audit chain-closure explanation is exact: "The
-source note itself says the wrapper aggregates and prints frozen rows
-and does not recompute the load-bearing observables. With deps=[] and
-no retained log/runner dependency chain, the closure card cannot be
-retained as an independently audited theorem." This rigorization edit
-only sharpens the boundary of the conditional perimeter; nothing here
-promotes audit status. The supported content of this note is the
-print-aggregation wrapper itself: the script
+## Claim
+
+On the ordered 3D dense lattice family with action `S = L(1-f)`, kernel
+`1/L^2` with `h^2` measure, field `s/r`, slit geometry from the valley-linear
+harness, and detector readout from the same harness, the primary runner
 [`scripts/same_family_3d_closure.py`](../scripts/same_family_3d_closure.py)
-prints the frozen 10-row table and the registered cache
-[`logs/runner-cache/same_family_3d_closure.txt`](../logs/runner-cache/same_family_3d_closure.txt)
-captures the wrapper output. The note is honest in §"What remains
-open" that the wrapper is replay-only; that honesty is exactly the
-audit-stated reason the row cannot promote — there are no live
-deps=[] in the wrapper. The supported perimeter is the wrapper
-print itself, not the underlying closure checks. A future repair
-would explicitly enumerate the per-`L` and per-`W` runs as
-dependencies (with their own ledger entries) so the chain rule could
-close; that step is deferred to a downstream rebuild and is not in
-the scope of this print-aggregation note.
+now recomputes the load-bearing `h=0.25`, `W=10` finite-lattice closure rows:
 
-## Current on-disk artifacts
+- rows 1-7 at `L=12`;
+- rows 8-9 at the same `h=0.25`, `W=10` slice for `L=8,10,12`;
+- row 10 for the core `W=10` distance tail.
 
-- Script: [`scripts/same_family_3d_closure.py`](/Users/jonreilly/Projects/Physics/scripts/same_family_3d_closure.py)
-- Log: [`logs/2026-04-04-same-family-3d-closure.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-same-family-3d-closure.txt)
+The widened `W=12` row-10 companion remains a dependency on the retained
+bounded packet [`VALLEY_LINEAR_WIDE_TAIL_NOTE.md`](VALLEY_LINEAR_WIDE_TAIL_NOTE.md)
+rather than a second live replay inside this primary runner.
 
-## Per-L / per-W cached certificates (load-bearing for restricted packet, inlined 2026-05-18)
+## What Changed
 
-The wrapper print-aggregates the closure card from already-frozen rows. The
-audit verdict (2026-05-02) explicitly notes that the wrapper itself does not
-recompute the load-bearing observables and has no `deps=[]` chain to the
-per-`L` / per-`W` source runs. This section inlines the cache excerpts that
-the closure card draws from, so the source data backing rows 1-7 (core card),
-the W=12 companion in row 10, and the L=12 anchor for rows 8-9 are visible
-directly from this packet without needing to traverse the wrapper.
+The prior audit conditional blocker was not a failed science result. It was a
+source-chain failure: the packet exposed a wrapper that printed frozen constants,
+with rows 2, 6, 7 and the `L=8/L=10` same-slice rows not recomputed in the
+executed path. The 2026-05-27 repair changes that executed path.
 
-The repair makes no audit-status claim. It scopes the supported perimeter of
-this note to the rows that have a retained, on-disk source-log excerpt below.
-Rows 8 and 9 at L=8 and L=10 are explicitly narrowed at the end of this
-section because no retained source log carrying those replays at h=0.25, W=10
-could be located on 2026-05-18.
+The repaired runner imports the same lattice/action implementation from
+[`scripts/lattice_3d_valley_linear_card.py`](../scripts/lattice_3d_valley_linear_card.py),
+declares a 30-minute audit timeout, and performs the actual finite-lattice
+propagations for the core card, the same-`h` multi-`L` purity/gravity checks,
+and the `W=10` distance-law fit. The runner exits nonzero if any of the bounded
+certificate checks fail.
 
-### Sub-section A — Core h=0.25, W=10, L=12 (rows 1-7 + L=12 anchor for rows 8-9)
+## Load-Bearing Dependencies
 
-Inlined from [`logs/2026-04-04-valley-linear-same-harness-compare.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-same-harness-compare.txt)
-and [`logs/2026-04-04-valley-linear-asymptotic-bridge.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-asymptotic-bridge.txt):
+This note intentionally makes the dependency chain visible.
 
-```text
-========================================================================================
-SAME-HARNESS ACTION COMPARISON: spent-delay vs valley-linear
-  fixed family: 3D ordered dense lattice, 1/L^2 kernel, h^2 measure
-  h=0.25, W=10, L=12, max_d=12, nodes=321,489
-========================================================================================
-action                 Born        k=0      F~M    gravity   TOWARD                   tail
-valley-linear      4.20e-15  +0.00e+00     1.00  +0.000224      8/8 z>=4: -0.93 (R²=0.983)
+- [`VALLEY_LINEAR_ACTION_NOTE.md`](VALLEY_LINEAR_ACTION_NOTE.md) supplies the
+  retained bounded action-family context for the fixed 3D ordered dense lattice
+  comparison.
+- [`VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md`](VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md)
+  supplies the retained bounded bridge context for the `h/W` ladder and
+  slice-dependent tail interpretation.
+- [`VALLEY_LINEAR_WIDE_TAIL_NOTE.md`](VALLEY_LINEAR_WIDE_TAIL_NOTE.md) supplies
+  the retained bounded `h=0.25`, `W=12` wide-tail companion used in row 10.
+- [`scripts/lattice_3d_valley_linear_card.py`](../scripts/lattice_3d_valley_linear_card.py)
+  is the helper source included in the audit packet for the lattice, action,
+  field, slit, decoherence, and fit routines used by the primary runner.
 
-VALLEY-LINEAR ASYMPTOTIC BRIDGE (h=0.25 core retained anchor)
-core retained   0.25   10   4.20e-15  +0.00e+00     1.00   +0.000224      9/9 z>=4: -1.00 (R²=0.979) z>=5: -1.12 (R²=0.991, n=6)
-```
+## Recomputed Card
 
-This anchors rows 1, 3, 4, 5, and the W=10 core tail of row 10
-(`b^(-0.93)` from same-harness-compare; the `b^(-1.00)` z≥4 read from
-asymptotic-bridge is a consistent same-family replay) at the same core
-family. Rows 2 (`d_TV=0.83`), 6 (Decoherence=49.9%), and 7 (MI=0.64 bits)
-are carried inside the wrapper's frozen-card values and are not separately
-inlined here; they are part of the supported "frozen-card" perimeter of
-the wrapper, not of the load-bearing per-`L` chain this section restores.
+The current runner output reports:
 
-### Sub-section B — W=12 width companion for row 10 far tail
+| # | Property | Recomputed value | Slice |
+|---|---:|---:|---|
+| 1 | Born `|I3|/P` | `4.20e-15` | `h=0.25`, `W=10`, `L=12` |
+| 2 | path distinguishability `d_TV` | `0.8341` | `h=0.25`, `W=10`, `L=12` |
+| 3 | `k=0` gravity | `0.000000` | `h=0.25`, `W=10`, `L=12` |
+| 4 | mass scaling `F~M alpha` | `1.00` | `h=0.25`, `W=10`, `L=12` |
+| 5 | gravity sign at `z=3` | `+0.000224` TOWARD | `h=0.25`, `W=10`, `L=12` |
+| 6 | decoherence | `49.9%` | `h=0.25`, `W=10`, `L=12` |
+| 7 | detector mutual information | `0.6376` bits | `h=0.25`, `W=10`, `L=12` |
+| 8 | purity stability | `49.97%`, `49.94%`, `49.94%` | `L=8,10,12` at same `h,W` |
+| 9 | gravity growth | `+0.000157 -> +0.000199 -> +0.000224` | `L=8,10,12` at same `h,W` |
+| 10 | distance tail | `b^(-0.93)`, `R^2=0.983`; `8/8` TOWARD | core `W=10` |
 
-Inlined from [`logs/2026-04-04-valley-linear-wide-tail-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-wide-tail-replay.txt):
+The retained `W=12` companion from
+[`VALLEY_LINEAR_WIDE_TAIL_NOTE.md`](VALLEY_LINEAR_WIDE_TAIL_NOTE.md) reports
+`b^(-1.07)`, `R^2=0.990` from `z>=4` and `b^(-1.17)`, `R^2=0.997` from
+`z>=5`.
 
-```text
-========================================================================================
-3D VALLEY-LINEAR WIDE-TAIL REPLAY
-  Bounded h=0.25, W=12 follow-up on the ordered-lattice 1/L^2 family.
-  nodes=461,041  layers=49  h=0.25  W=12  max_d=12
-========================================================================================
-Barrier sanity: Born=4.82e-15  k=0=+0.000000
-TOWARD support: 9/9
-Tail from peak (z>=4): b^(-1.07), R^2=0.990  n=7
-Far tail (z>=5): b^(-1.17), R^2=0.997  n=6
-Total time: 128.1s
-```
+## Runner Boundary
 
-This anchors the W=12 companion `b^(-1.07)` value in row 10 of the card.
+The primary runner is still a bounded finite-lattice certificate, not a
+continuum theorem. It proves that the stated computations close on this family
+and these finite slices. It does not derive the valley-linear action, prove
+universal Newtonian `1/b`, or claim stability under all future refinements.
 
-### Sub-section C — Honest narrowing of rows 8-9 (L=8 and L=10 at h=0.25, W=10)
+The repair is therefore aimed at removing the specific audit blocker
+`missing_dependency_edge` / `print-only wrapper`, not at expanding the physics
+claim beyond the finite slices above.
 
-The wrapper claims that "L=8 and L=10 were replayed separately on 2026-04-04"
-with hardcoded values `grav={8: 0.000157, 10: 0.000199}` and
-`1-pur={8: 0.4997, 10: 0.4994}`. On 2026-05-18 a careful sweep of the
-`logs/` and `logs/runner-cache/` directories did not locate any retained
-log under `logs/2026-04-04-*.txt` that carries L=8 or L=10 at the same
-core slice `h=0.25, W=10` with those specific (grav, 1-pur) pairs. The
-only retained 2026-04-04 logs that mention `L=8` or `L=10` together with
-purity are at different slices (`h=1.0, W=6` in
-`2026-04-04-lattice-3d-dense-10prop.txt`, and `h=0.5, max_d=3` in
-`2026-04-04-valley-linear-robustness-sweep.txt`), which are not the same
-family as the closure card's core slice.
+## Re-Audit Target
 
-Consequently, rows 8 and 9 (the same-`h` multi-`L` rows with `L=8` and
-`L=10`) are narrowed here to **queued follow-up** status. The card's L=12
-anchor row remains supported by Sub-section A above. The intended same-`h`
-multi-`L` story is not removed from the card — it is honestly demoted to
-"needs a recovered or re-run source log" pending a future repair that
-produces the per-`L` source artifacts.
+The row should be re-audited as a bounded theorem packet with:
 
-The wrapper print-output still includes the hardcoded L=8 and L=10 lines,
-but for the supported perimeter of *this* note they read as queued
-follow-ups rather than as load-bearing rows. A future repair that adds
-explicit dependency entries for live or cached per-`L` certificates can
-restore those rows to the supported chain; that future step is outside
-the scope of this inline-cache repair.
+- primary runner:
+  [`scripts/same_family_3d_closure.py`](../scripts/same_family_3d_closure.py);
+- helper/source runner:
+  [`scripts/lattice_3d_valley_linear_card.py`](../scripts/lattice_3d_valley_linear_card.py);
+- retained dependencies:
+  [`VALLEY_LINEAR_ACTION_NOTE.md`](VALLEY_LINEAR_ACTION_NOTE.md),
+  [`VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md`](VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md),
+  and [`VALLEY_LINEAR_WIDE_TAIL_NOTE.md`](VALLEY_LINEAR_WIDE_TAIL_NOTE.md).
 
-This is a same-family closure on one retained family:
-
-- action: `S = L(1-f)`
-- kernel: `1/L^2` with `h^2` measure
-- field: `s/r`
-- ordered 3D dense lattice
-
-It is not a single-instance theorem card. Properties `8-9` are same-family
-multi-`L` rows, and property `10` includes a same-family width companion.
-The frozen wrapper replays `L=8` and `L=10`, then reuses the retained core
-`L=12` row so the whole note stays on one family at one `h`.
-
-## Architecture
-- Action: S = L(1-f) (valley-linear)
-- Kernel: 1/L^2 with h^2 measure
-- Lattice: 3D dense, h=0.25, W=10, max_d=3
-- Field: s/r with s=5e-5
-
-## Card
-
-| # | Property | Value | Same family? |
-|---|----------|-------|-------------|
-| 1 | Born | 4.20e-15 | h=0.25 W=10 L=12 |
-| 2 | d_TV | 0.83 | h=0.25 W=10 L=12 |
-| 3 | k=0 gravity | 0.000000 | h=0.25 W=10 L=12 |
-| 4 | F∝M alpha | 1.00 | h=0.25 W=10 L=12 |
-| 5 | Gravity sign | +0.000224 TOWARD | h=0.25 W=10 L=12 |
-| 6 | Decoherence | 49.9% | h=0.25 W=10 L=12 |
-| 7 | MI | 0.64 bits | h=0.25 W=10 L=12 |
-| 8 | Purity stable | 50.0% (L=8,10,12) | h=0.25 W=10 |
-| 9 | Gravity grows | +0.157→+0.224 | h=0.25 W=10 |
-| 10 | Distance tail | b^(-0.93) W=10 / b^(-1.07) W=12 | h=0.25 |
-
-Properties 8-9 use `L=8,10,12` at the SAME `h=0.25` and `W=10`.
-No `h=0.5` companions are needed, but the `L=12` multi-`L` row is carried
-through the frozen core-card values rather than recomputed inside the wrapper.
-
-## What this closes
-
-This is the first time the same-family closure is carried as a real
-script/log/note chain. The fixed core rows remain at `h=0.25, W=10, L=12`;
-properties `8-9` are same-`h` multi-`L` rows; and property `10` still carries
-a width companion for the far tail.
-
-## What remains open
-
-- The distance exponent is near-Newtonian but not exactly -1.0. The frozen
-  W=10 and W=12 rows stay as companion width checks. Cache excerpts for
-  both widths are inlined above.
-- Properties 8-9 use multiple `L` values (necessary for scaling checks).
-  This is a same-family multi-size test, not a single-instance card. As
-  of the 2026-05-18 inline-cache repair, the `L=8` and `L=10` per-`L`
-  source logs at the matching `h=0.25, W=10` slice could not be located
-  on disk; rows 8-9 at those `L` values are therefore narrowed to
-  **queued follow-up** status (see Sub-section C above). The `L=12`
-  anchor for these rows remains supported.
-- The wrapper is partly replayed and partly frozen by design: it is a review-
-  facing closure note, not a new heavyweight all-live card harness. The
-  script `scripts/same_family_3d_closure.py` aggregates and prints the
-  frozen rows but does not itself recompute the underlying closure
-  observables. Live recomputation lives in the per-`L` and per-`W` runs;
-  the cached certificate excerpts for the rows the per-`L`/per-`W` chain
-  *does* cover are now inlined above so the supported perimeter is visible
-  directly from this packet.
-- The action is selected, not derived (though the universality-class result
-  shows it's the simplest member of the Newtonian family).
+The row should not be promoted by this edit alone. The independent audit owns
+the verdict after checking that the repaired primary runner and the retained
+dependencies close the stated finite-lattice chain.

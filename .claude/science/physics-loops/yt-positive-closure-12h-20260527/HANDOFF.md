@@ -330,10 +330,17 @@ Cycle 4 science commit pushed and recorded in PR #1980:
 db72674e3abd27ea00df2ef6861d481116024c96
 ```
 
-Primitive phase-angle candidate science commit pending PR update:
+Primitive phase-angle candidate science commit pushed and recorded in PR #1980:
 
 ```text
 8dcbe0a137510ba5e71bccf6724d9567376b3c4c
+```
+
+Primitive phase-angle candidate handoff checkpoint pushed and recorded in
+PR #1980:
+
+```text
+a9a9ba417d055df225b647a3e7a6b27cba2374df
 ```
 
 Previous science commit pushed and recorded in PR #1980 before this cycle:

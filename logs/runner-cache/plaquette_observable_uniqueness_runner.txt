@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_observable_uniqueness_runner.py
+runner_sha256: a1dd8cc32159b300e4dd099937eda51c33ebbc18375d5e924b91e050a47b917c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+PASS Z(beta=1) is finite positive real
+PASS d ln Z / d beta exists symbolically
+PASS affine derivative relation <P> = 1 + (1/N_plaq) d ln Z / d beta
+PASS <P>(beta=6) is single-valued real on the toy
+PASS <P>(beta=1) is single-valued real on the toy
+PASS toy bound |<P>| <= 1 at beta=6
+PASS toy bound |<P>| <= 1 at beta=1
+PASS Boltzmann weight is differentiable symbolically
+PASS <P>(beta=6) is smooth (no real singularity)
+PASS runner makes no numeric-value comparison (literal check)
+TOTAL: PASS=10 FAIL=0
+VERDICT: bounded proof-walk passes; <P> is an affine derivative observable of the cited finite compact-Haar partition function, with no numeric-value claim.
+
+----- stderr -----
+

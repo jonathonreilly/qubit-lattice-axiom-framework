@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 531 |
+| **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1167 |
+| unaudited | 1166 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 829 |
+| `audited_clean` | 830 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1396 |
+| `unaudited` | 1395 |
 
 | claim_type | count |
 |---|---:|
@@ -670,6 +670,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `plaquette_4d_mc_support_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_observable_uniqueness_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10105,6 +10106,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If a real polynomial p(t) has degree d >= 1, then p(t)/t^d tends to its nonzero leading coefficient, so |p(t)| diverges as t -> +infinity; hence finite limit or boundedness on [0,+infinity) forces p constant.  _(class `A`)_
 - **chain closes:** True — The proof is elementary polynomial algebra and the runner verifies the same leading-term, finite-limit, endpoint-obstruction, boundedness, and constant negative-control checks by exact SymPy algebra. The source explicitly excludes the parent Wilson/plaquette endpoint and hierarchy claims, so no external physical bridge is needed.
 - **rationale:** The audited claim is a standalone algebra theorem, not the parent plaquette obstruction. The note proves the leading-term asymptotic directly and derives the finite-limit, two-endpoint, and boundedness corollaries without importing any physical observable or comparator. The runner exits with PASS=52 FAIL=0 and checks the proof surface through exact symbolic limits, degree/leading-coefficient checks, endpoint obstruction examples, and constant negative controls. Residual risk is only misuse of this algebra fact by downstream physical notes, which is outside this claim scope.
+- **auditor confidence:** high
+
+### `plaquette_observable_uniqueness_bounded_note_2026-05-25`
+
+- **Note:** [`PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md`](../../docs/PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded structural observable-identity result only: on a finite periodic SU(3) Wilson surface with compact Haar product measure and Wilson action S_W = (beta / N_c) sum_p Re Tr(1 - U_p), the normalized average plaquette is the single-valued affine derivative observable <P>(beta) = 1 + (1 / N_plaq) d ln Z(beta) / d beta. This excludes any numeric P(beta=6) value, tensor-transfer/Perron closure, Monte Carlo evaluation, parent verdict repair, or downstream numeric-value claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-05-27-plaquette-observable-uniqueness`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Differentiating Z(beta) = integral exp[-(beta/N_c) sum_p Re Tr(1 - U_p)] dU under the finite compact Haar integral gives d ln Z / d beta = -(N_plaq / N_c)(N_c - <Re Tr U_p>), hence <P> = 1 + (1 / N_plaq) d ln Z / d beta.  _(class `A`)_
+- **chain closes:** True — The direct dependencies are retained-grade for the finite compact Wilson surface, plaquette spectral measure, reduction existence, temporal completion context, and framework-point underdetermination boundary. The proof is an algebraic differentiation identity over a finite compact integral; the runner's toy compact-Haar check is consistent support and does not import a numeric plaquette value.
+- **rationale:** Clean within the bounded structural scope. The load-bearing step is not a numeric readout and not a renamed value: it is the standard finite-volume derivative identity for the Wilson partition function under the stated action convention. Compact Haar finiteness and retained finite-surface measure authorities close the differentiation and single-valuedness requirements, while the source explicitly excludes P(6), the 0.5934 comparison, Perron/tensor closure, and Monte Carlo evaluation. The toy runner is not treated as an SU(3) proof substitute; it only sanity-checks the algebraic affine relation and verifies no canonical numeric comparison is made.
 - **auditor confidence:** high
 
 ### `plaquette_self_consistency_note`

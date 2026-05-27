@@ -984,6 +984,18 @@
       "dominant_class": "C",
       "runner": "scripts/axiom_first_cpt_check.py"
     },
+    "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py"
+    },
     "axiom_first_first_law_bh_mechanics_theorem_note_2026-05-01": {
       "assert_count": 0,
       "counts": {
@@ -31626,6 +31638,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py": {
+      "assert_count": 1,
+      "claims": [
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_axiom_first_microcausality_lieb_robinson_hostile_audit_findings.py": {
       "assert_count": 0,
       "claims": [
@@ -56365,14 +56392,14 @@
   "stats": {
     "decoration_candidates": 347,
     "dominant_class_distribution": {
-      "A": 243,
+      "A": 244,
       "B": 292,
       "C": 760,
       "D": 301,
       "none": 435
     },
-    "runners_classified": 2031,
+    "runners_classified": 2032,
     "runners_with_C": 988,
-    "runners_with_D": 594
+    "runners_with_D": 595
   }
 }

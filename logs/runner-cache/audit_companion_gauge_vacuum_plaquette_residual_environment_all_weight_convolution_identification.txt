@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
-runner_sha256: 32a77b30a1e69d6559b145427b551cd80089a2c94f2b7aabef102004cdfe104f
+runner_sha256: 714583bd0f242c070d31bdac63a04d5587c74d25b3d775162a1aa992de6cbfab
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.03
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -18,7 +18,7 @@ Part 0: symbolic setup
 ----------------------------------------------------------------------------------------
   N_MAX = 3  (16 weights in finite truncation)
   Distinct abstract symbol pairs: kappa = 10, a (incl. fixed a_00=1) = 10
-  rho_(0,0)^env = kappa_(0,0) / a_(0,0)^4 = kappa_(0,0) (since a_(0,0)=1)
+  r_(0,0)^env = kappa_(0,0) / a_(0,0)^4 = kappa_(0,0) (since a_(0,0)=1)
 
 ----------------------------------------------------------------------------------------
 Part 1: (T1) structural diagonality of R_beta^env
@@ -31,15 +31,17 @@ Part 1: (T1) structural diagonality of R_beta^env
 ----------------------------------------------------------------------------------------
 Part 2: (T2) Peter-Weyl coefficients of Z_beta^env
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (T2) Z_beta^env character coefficient (D2) matches rho^env on every basis weight  (z_(p,q)^env / z_(0,0)^env = kappa_(p,q) / a_(p,q)^4 at every weight)
-  [PASS (A)] (T2) rho_(0,0)^env(beta) = 1 (normalization)  (rho_(0,0)^env = kappa_(0,0)/1 = kappa_(0,0); normalization sets it to 1 conventionally)
-  [PASS (A)] (T2) rho_(p,q)^env = rho_(q,p)^env (conjugation symmetry)  (follows from kappa_(p,q) = kappa_(q,p) and a_(p,q) = a_(q,p))
+  [PASS (A)] (T2) Z_beta^env character coefficient (D2) matches r^env on every basis weight  (z_(p,q)^env / lambda_env = kappa_(p,q) / a_(p,q)^4 at every weight)
+  [PASS (A)] (T2) actual trivial coefficient is lambda_env * kappa_(0,0), not lambda_env  (no kappa_(0,0)=1 normalization premise is used)
+  [PASS (A)] (T2) r_(p,q)^env = r_(q,p)^env (conjugation symmetry)  (follows from kappa_(p,q) = kappa_(q,p) and a_(p,q) = a_(q,p))
 
 ----------------------------------------------------------------------------------------
 Part 3: (T3) all-weight structural identification
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (T3) eigenvalue equality kappa_(p,q)/a_(p,q)^4 = z_(p,q)^env/z_(0,0)^env on every basis weight  (symbolic reduction at exact sympy precision on N_MAX=3 truncation)
-  [PASS (A)] (T3) R_beta^env = C_(Z_beta^env / z_(0,0)^env) at the operator level  (matrix difference reduces to zero on every entry symbolically)
+  [PASS (A)] (T3) eigenvalue equality kappa_(p,q)/a_(p,q)^4 = z_(p,q)^env/lambda_env on every basis weight  (symbolic reduction at exact sympy precision on N_MAX=3 truncation)
+  [PASS (A)] (T3) R_beta^env = (1/lambda_env) C_(Z_beta^env) at the operator level  (matrix difference reduces to zero on every entry symbolically)
+  [PASS (A)] (T3) normalizing by actual z_(0,0)^env gives R_beta^env / kappa_(0,0)  (separates the out-of-scope kappa_(0,0)=1 hypothesis from the unnormalized theorem)
+  [PASS (A)] (T3) without kappa_(0,0)=1, normalized convolution is not asserted equal to R_beta^env  (trivial-channel difference = 1 - kappa_0_0)
 
 ----------------------------------------------------------------------------------------
 Part 4: (T4) uniqueness of the diagonal eigenvalue sequence
@@ -70,7 +72,8 @@ Part 8: finite-truncation numerical sanity (Class A FP cross-check)
   [PASS (A)] (numerical sanity) R_beta^env is positive definite at the abstract sample  (all diagonal entries > 0 in exact rationals)
   [PASS (A)] (numerical sanity) R_beta^env is self-adjoint at the abstract sample  (exact rational entries; transpose equals self)
   [PASS (A)] (numerical sanity) R_beta^env commutes with the swap involution at the abstract sample  ([S, R_env] = 0 exactly in rationals)
-  [PASS (A)] (numerical sanity) R_beta^env = C_Z/z_(0,0)^env at the abstract sample (exact)  (diagonal-operator match exact in rationals on every basis weight)
+  [PASS (A)] (numerical sanity) R_beta^env = (1/lambda_env) C_Z at the abstract sample (exact)  (diagonal-operator match exact in rationals on every basis weight)
+  [PASS (A)] (numerical sanity) actual-trivial normalization differs from R_beta^env when kappa_(0,0) != 1  (sample trivial-channel difference = -2/5)
 
 ----------------------------------------------------------------------------------------
 Summary
@@ -78,14 +81,15 @@ Summary
   Verified at exact sympy precision under cited retained (I1)+(I2)+(I3):
     (T1) Structural diagonality, self-adjointness, positivity, swap symmetry of R_beta^env
     (T2) Peter-Weyl character expansion of Z_beta^env with (D2) coefficients
-    (T3) eigenvalue equality kappa/a^4 = z^env/z_(0,0)^env at every weight (operator-level)
+    (T3) eigenvalue equality kappa/a^4 = z^env/lambda_env at every weight (operator-level)
+    (T3b) actual-trivial normalization gives R/kappa_(0,0), not R, unless kappa_(0,0)=1
     (T4) uniqueness: distinct eigenvalue sequences yield distinct operators
     Algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta
     Counterfactuals: D^loc strip + swap symmetry are both load-bearing
     Finite-truncation numerical sanity at one independent abstract sample
 
 ========================================================================================
-TOTAL: PASS=20, FAIL=0
+TOTAL: PASS=23, FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -534,6 +534,12 @@ recorded in PR #1980:
 f63768d454fc8936566b917b898cdd5077f3a0d5
 ```
 
+Phase-orbit selector underdetermination no-go science commit:
+
+```text
+b08f4d4d7e786e94f41eeb75ffa8564217fd2e80
+```
+
 Previous science commit pushed and recorded in PR #1980 before this cycle:
 
 ```text

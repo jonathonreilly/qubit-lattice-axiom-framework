@@ -8316,6 +8316,18 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_g_newton_weak_field_response_2026_05_10_gnewtonG3.py"
     },
+    "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py"
+    },
     "g_weak_from_framework_note_2026-05-03": {
       "assert_count": 0,
       "counts": {
@@ -37854,6 +37866,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py": {
+      "assert_count": 1,
+      "claims": [
+        "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_g_weak_from_framework.py": {
       "assert_count": 0,
       "claims": [
@@ -56228,15 +56255,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 345,
+    "decoration_candidates": 346,
     "dominant_class_distribution": {
       "A": 241,
-      "B": 288,
+      "B": 289,
       "C": 760,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2026,
+    "runners_classified": 2027,
     "runners_with_C": 985,
     "runners_with_D": 591
   }

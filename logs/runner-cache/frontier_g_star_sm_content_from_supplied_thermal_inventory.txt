@@ -1,0 +1,151 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py
+runner_sha256: 3707daf79f2b27cb88fb19d0a86ac5a031826873c5ffd41d13f03cb11a4b502c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+note structure and scope
+----------------------------------------------------------------------------------------
+  [PASS] note contains: Claim type:** bounded_theorem
+  [PASS] note contains: source-note proposal only
+  [PASS] note contains: does not add a new axiom
+  [PASS] note contains: Standard Model thermal inventory itself remains an external
+  [PASS] note contains: Retained support packet (R1-R6)
+  [PASS] note contains: Supplied premise packet (P1-P5
+  [PASS] note contains: Proof-walk
+  [PASS] note contains: Exact arithmetic check
+  [PASS] note contains: Boundaries
+  [PASS] note contains: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17
+  [PASS] note contains: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE
+  [PASS] note contains: CL3_COLOR_AUTOMORPHISM_THEOREM
+  [PASS] note contains: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02
+  [PASS] note contains: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10
+
+----------------------------------------------------------------------------------------
+proof-walk forbids lattice-action imports
+----------------------------------------------------------------------------------------
+  [PASS] proof-walk section is present
+  [PASS] proof-walk only references 'plaquette' in the explicit non-use disclaimer (count=2)
+  [PASS] proof-walk only references 'staggered phase' in the explicit non-use disclaimer (count=2)
+  [PASS] proof-walk only references 'Wilson plaquette' in the explicit non-use disclaimer (count=1)
+  [PASS] proof-walk only references 'Brillouin' in the explicit non-use disclaimer (count=1)
+  [PASS] proof-walk only references 'link unitary' in the explicit non-use disclaimer (count=1)
+  [PASS] proof-walk only references 'Monte Carlo' in the explicit non-use disclaimer (count=0)
+  [PASS] proof-walk only references 'u_0' in the explicit non-use disclaimer (count=2)
+  [PASS] proof-walk only references 'fitted' in the explicit non-use disclaimer (count=2)
+
+----------------------------------------------------------------------------------------
+R1-R6 retained support packet citations are present
+----------------------------------------------------------------------------------------
+  [PASS] R1 cites THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md as markdown link
+  [PASS] R1 target file exists: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+  [PASS] R1 cites THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
+  [PASS] R1 target file exists: THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] R2 cites CL3_COLOR_AUTOMORPHISM_THEOREM.md as markdown link
+  [PASS] R2 target file exists: CL3_COLOR_AUTOMORPHISM_THEOREM.md
+  [PASS] R3 cites ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
+  [PASS] R3 target file exists: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] R3 cites SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
+  [PASS] R3 target file exists: SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] R4 cites PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md as markdown link
+  [PASS] R4 target file exists: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  [PASS] R5 cites SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
+  [PASS] R5 target file exists: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] R5 cites SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
+  [PASS] R5 target file exists: SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] R6 cites HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
+  [PASS] R6 target file exists: HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md
+
+----------------------------------------------------------------------------------------
+P1-P5 supplied premise packet is named
+----------------------------------------------------------------------------------------
+  [PASS] premise present: **P1 Declared Standard Model particle inventory.**
+  [PASS] premise present: **P2 Two transverse polarizations per massless vector.**
+  [PASS] premise present: **P3 Four real scalar degrees-of-freedom per complex doublet.**
+  [PASS] premise present: **P4 Dirac four-dof per charged fermion flavour-colour state.**
+  [PASS] premise present: **P5 Temperature above the electroweak crossover.**
+
+----------------------------------------------------------------------------------------
+bosonic count factorisation (R-packet + P-packet)
+----------------------------------------------------------------------------------------
+  [PASS] R2: dim adj(SU(3)) = N_c^2 - 1 = 8 (8)
+  [PASS] R4-implied: dim adj(SU(2)) = 3 (3)
+  [PASS] (B1) gluon DOF = 16 (8 * 2 = 16)
+  [PASS] (B2) SU(2)_L gauge boson DOF = 6 (3 * 2 = 6)
+  [PASS] (B3) U(1)_Y gauge boson DOF = 2 (1 * 2 = 2)
+  [PASS] (B4) Higgs doublet DOF = 4 (4)
+  [PASS] (B5) N_bosons = 28 (28)
+
+----------------------------------------------------------------------------------------
+fermionic count factorisation (R-packet + P-packet)
+----------------------------------------------------------------------------------------
+  [PASS] (B6) quark DOF = n_gen * (n_up + n_down) * N_c * 4 = 72 (3 * 2 * 3 * 4 = 72)
+  [PASS] (B7) charged lepton DOF = n_gen * 4 = 12 (3 * 4 = 12)
+  [PASS] (B8) active neutrino DOF = n_gen * 2 = 6 (3 * 2 = 6)
+  [PASS] (B9) N_fermions = 90 (90)
+
+----------------------------------------------------------------------------------------
+exact rational g_* arithmetic
+----------------------------------------------------------------------------------------
+  [PASS] R6: fermion weight is 7/8 (7/8)
+  [PASS] (B10) (7/8) * 90 = 630 / 8 = 78.75 exact (315/4)
+  [PASS] (B11) g_* = 28 + 78.75 = 106.75 (427/4)
+  [PASS] (B12) g_* as exact rational = 854/8 = 427/4
+  [PASS] (B13) g_* decimal = 106.75 (106.75)
+
+----------------------------------------------------------------------------------------
+parent inventory note consistency
+----------------------------------------------------------------------------------------
+  [PASS] parent note contains: 28 + (7/8) * 90
+  [PASS] parent note contains: 427/4
+  [PASS] parent note contains: 106.75
+  [PASS] parent note contains: g_bosonic = 16 + 6 + 2 + 4 = 28
+  [PASS] parent note contains: g_fermionic = 72 + 12 + 6 = 90
+
+----------------------------------------------------------------------------------------
+explicit boundary disclaimers (admission honesty)
+----------------------------------------------------------------------------------------
+  [PASS] boundary disclaimer present: does not close:
+  [PASS] boundary disclaimer present: derivation of the Standard Model gauge group
+  [PASS] boundary disclaimer present: derivation of the SM particle inventory list itself
+  [PASS] boundary disclaimer present: derivation of the two-transverse-polarization count
+  [PASS] boundary disclaimer present: derivation of the four-real-scalar count
+  [PASS] boundary disclaimer present: derivation of the Dirac four-dof / Weyl two-dof state count
+  [PASS] boundary disclaimer present: T > 250 GeV
+  [PASS] boundary disclaimer present: any parent theorem/status promotion
+
+----------------------------------------------------------------------------------------
+no new repo vocabulary introduced
+----------------------------------------------------------------------------------------
+  [PASS] forbidden vocabulary absent: 'g-star landing class'
+  [PASS] forbidden vocabulary absent: 'BSM admission tier'
+  [PASS] forbidden vocabulary absent: 'thermal dof framing'
+  [PASS] forbidden vocabulary absent: 'g_* landing class'
+  [PASS] forbidden vocabulary absent: 'new theory class'
+  [PASS] forbidden vocabulary absent: 'algebraic universality'
+  [PASS] forbidden vocabulary absent: 'two-class framing'
+  [PASS] forbidden vocabulary absent: 'lattice-realization-invariant'
+
+----------------------------------------------------------------------------------------
+status-authority schema
+----------------------------------------------------------------------------------------
+  [PASS] status-authority surface phrase: **Status authority:** source-note proposal only
+  [PASS] status-authority surface phrase: audit verdict and
+  [PASS] status-authority surface phrase: effective status are set by the independent audit lane
+
+----------------------------------------------------------------------------------------
+runner-note self-consistency
+----------------------------------------------------------------------------------------
+  [PASS] runner path cited in note
+
+TOTAL: PASS=89 FAIL=0
+VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the retained support packet R1-R6 plus supplied premise packet P1-P5 by exact rational arithmetic.
+
+----- stderr -----
+

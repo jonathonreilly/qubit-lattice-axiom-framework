@@ -1,11 +1,12 @@
 # Bertrand Stable-Orbit Upper-Bound Support
 
-**Date:** 2026-05-20
+**Date:** 2026-05-20 (continuum-law derivation added 2026-05-27)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status:** source-side proposal; independent audit lane only
 **Status authority:** independent audit lane only.
 **Related wrapper:** `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
+**Primary runner:** [`../scripts/frontier_bertrand_stable_orbit_upper_bound_repair.py`](../scripts/frontier_bertrand_stable_orbit_upper_bound_repair.py)
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -33,10 +34,11 @@ not claim a complete framework-internal proof of Bertrand's theorem.
 
 The landable support claim is narrower:
 
-> Given a continuum central potential of the form `V(r) = -k/r^(d-2)` with
-> `k > 0`, the effective-potential stability calculation gives stable
-> circular orbits only for integer `d = 3`; `d = 4` is marginal and `d >= 5`
-> is unstable.
+> On the standard continuum central-potential Hamiltonian surface in integer
+> `d >= 3`, the radial harmonic Green-potential law gives
+> `V(r) = -k/r^(d-2)` up to a positive constant, and the effective-potential
+> stability calculation then gives stable circular orbits only for
+> integer `d = 3`; `d = 4` is marginal and `d >= 5` is unstable.
 
 This supports the existing named-import wrapper by making the elementary
 stability part explicit. The all-bounded-orbits-are-closed part of Bertrand's
@@ -45,20 +47,64 @@ audited.
 
 ## Inputs
 
-1. **Framework-connected potential form.** The source of the dimensional
-   potential pattern is [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md).
-   Its audited binding scope is cache-backed `d = 3` and `d = 4` rows; use of
-   a general `d` continuum law is therefore an explicit bounded extrapolation,
-   not a retained universal theorem.
-2. **Standard classical mechanics.** The effective-potential reduction for a
-   central force is admitted background. This note writes out the stability
-   algebra but does not re-derive Hamiltonian mechanics.
+1. **Continuum radial Green-potential surface.** This note derives the
+   `d`-dimensional radial law directly: for integer `d >= 3`, the radial
+   harmonic function outside the source is proportional to `r^(2-d)`, hence
+   the attractive central potential has the form `V(r) = -k/r^(d-2)` with
+   `k > 0`. This is pure continuum math on the stated central-potential
+   surface, not an extrapolation from
+   [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md).
+2. **Central-potential Hamiltonian surface.** The theorem is conditional on
+   the usual reduced radial Hamiltonian with angular-momentum barrier
+   `L^2/(2 m r^2)`. The calculation below derives the circular-orbit
+   stability criterion inside that surface.
 3. **Bertrand closure theorem.** The exact all-`L` closed-orbit theorem is a
    standard classical-mechanics import. It is not retired by this note.
 
+## Continuum `d`-Law Derivation
+
+For a radial function `f(r)` in `d` Euclidean dimensions, the source-free
+radial Laplacian is
+
+```text
+Delta f = f''(r) + ((d - 1) / r) f'(r).
+```
+
+For `d >= 3`, set
+
+```text
+f(r) = r^(2-d).
+```
+
+Then
+
+```text
+f'(r)  = (2-d) r^(1-d),
+f''(r) = (2-d)(1-d) r^(-d),
+```
+
+and therefore
+
+```text
+Delta r^(2-d)
+  = (2-d)(1-d) r^(-d) + (d-1)(2-d) r^(-d)
+  = 0
+```
+
+for `r > 0`. Thus the attractive radial Green-potential family outside the
+source is proportional to
+
+```text
+V(r) = -k r^(2-d) = -k / r^(d-2),       k > 0.
+```
+
+The force magnitude scales as `1/r^(d-1)`. This supplies the continuum
+`d >= 5` potential law used by the stability calculation below, without using
+the framework table's cache-backed `d = 3,4` rows as the source of that law.
+
 ## Effective-Potential Calculation
 
-For a central potential
+For the derived central potential
 
 ```text
 V(r) = -k / r^(d-2),      k = GMm > 0,      d >= 3,
@@ -100,9 +146,10 @@ marginal and `d >= 5` is unstable.
 ## Relation To Dimension Selection
 
 This note can support the upper-bound side of `DIMENSION_SELECTION_NOTE.md`
-only in the bounded sense above. It does not by itself prove that the physical Cl(3) local
-algebra on the `Z^3` spatial substrate should be replaced by a `Z^d` substrate,
-and it does not close the D=3 chain.
+only in the bounded sense above. It supplies a continuum-math support lemma,
+not a framework theorem that the physical Cl(3) local algebra on the `Z^3`
+spatial substrate should be replaced by a `Z^d` substrate, and it does not
+close the D=3 chain.
 
 The companion bounded support note
 `COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md` records the
@@ -112,8 +159,9 @@ gaps remain open as described in `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`.
 ## What This Does Not Close
 
 - It does not retire the Bertrand theorem import completely.
-- It does not establish a retained universal dimensional-gravity law for all
-  integer `d`.
+- It does not establish a framework-native universal dimensional-gravity law
+  for all integer `d`; it derives only the continuum radial Green-potential
+  law on the stated central-potential surface.
 - It does not settle `d = 1` or `d = 2`; those belong to the separate
   lower-bound bridge.
 - It does not promote any parent row or audit status.

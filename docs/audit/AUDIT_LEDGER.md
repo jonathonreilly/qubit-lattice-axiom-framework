@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 524 |
+| **retained_bounded** | 525 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1176 |
+| unaudited | 1175 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 822 |
+| `audited_clean` | 823 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1405 |
+| `unaudited` | 1404 |
 
 | claim_type | count |
 |---|---:|
@@ -344,6 +344,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_bare_derivation_status_correction_audit_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4832,6 +4833,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Relative to the admitted canonical Cl(3) normalization, g_bare = 1 follows from beta = 2 N_c / g_bare^2 with N_c = 3 and beta = 6.  _(class `A`)_
 - **chain closes:** True — The scoped algebra closes from the stated canonical-normalization, Wilson-matching, beta=6, and N_c=3 inputs. It does not close as an unbounded positive theorem because the Wilson surface, beta=6 input, and canonical normalization remain scoped assumptions inherited through retained_bounded dependencies.
 - **rationale:** The current source claim should be retained only as a bounded theorem: it is a clean algebraic consequence on the accepted Wilson/canonical-normalization surface, not a first-principles derivation of that surface. The two Section G bounded failures are stale ledger-visibility expectations that the repair rows be unaudited; operationally those rows are retained_bounded, so those failures are not load-bearing against the scoped theorem. The exact runner checks all pass, and the source explicitly excludes dynamical fixed-point, maximum-entropy, and absolute-normalization claims.
+- **auditor confidence:** high
+
+### `g_bare_derivation_status_correction_audit_note_2026-05-02`
+
+- **Note:** [`G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](../../docs/G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded status-correction packet only: the old missing-runner finding is superseded because scripts/frontier_g_bare_derivation.py is present, and the two 2026-05-03 repair-candidate rows plus the parent g_bare row are one-hop retained-grade dependencies. This audits the packet's refreshed dependency/status boundary and proposal_allowed=false disposition; it does not promote the parent beyond retained_bounded and does not derive the upstream canonical normalization CN or the local Wilson beta=6 surface from A1+A2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Section 2 wires the two 2026-05-03 repair-candidate notes and the parent g_bare note as dependencies, and Sections 5-7 state that the former missing-runner, constraint-vs-convention, and A -> A/g rescaling blockers are superseded only on the bounded retained-grade surface while absolute derivation of CN and beta=6 remains out of scope.  _(class `B`)_
+- **chain closes:** True — The direct ledger dependencies are retained-grade: the parent g_bare row is retained_bounded, the rescaling row is retained_bounded, and the constraint-vs-convention row is retained_bounded. The packet's runner verifies the refreshed note structure, parent runner presence, declared repair-candidate links, criteria table, and sister-row inventory with PASS=35 FAIL=0. The source table's loose 'retained' wording for the rescaling row is scoped here as retained-grade, not unbounded retained.
+- **rationale:** No-go/admission gate: the packet does not close a no-go and does not claim that absolute normalization has been derived; it keeps the remaining CN/beta=6 absolute-derivation target outside scope. The bounded status-correction claim closes because the prior missing-runner issue is now false, the two repair-candidate rows are live retained-grade dependencies, and the refreshed packet explicitly keeps proposal_allowed=false for parent promotion. Residual risk is bounded to status metadata: this audit does not prove the canonical normalization from A1+A2, does not turn beta=6 into a first-principles output, and does not upgrade the parent beyond its audit-derived retained_bounded boundary.
 - **auditor confidence:** high
 
 ### `g_bare_dynamical_fixation_obstruction_note_2026-04-18`

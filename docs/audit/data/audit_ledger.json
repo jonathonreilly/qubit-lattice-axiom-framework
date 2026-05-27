@@ -95204,24 +95204,50 @@
       "verdict_rationale": "The current source claim should be retained only as a bounded theorem: it is a clean algebraic consequence on the accepted Wilson/canonical-normalization surface, not a first-principles derivation of that surface. The two Section G bounded failures are stale ledger-visibility expectations that the repair rows be unaudited; operationally those rows are retained_bounded, so those failures are not load-bearing against the scoped theorem. The exact runner checks all pass, and the source explicitly excludes dynamical fixed-point, maximum-entropy, and absolute-normalization claims."
     },
     "g_bare_derivation_status_correction_audit_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T04:55:24.467498+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_derivation_note": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself."
+        },
+        "dep_claim_type": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_derivation_note": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_derivation_note": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_derivation_note",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7f601ea57809be3ea6e92a39b6e94afbafcd0415dd8c64b91933350b7f8a61d6",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct ledger dependencies are retained-grade: the parent g_bare row is retained_bounded, the rescaling row is retained_bounded, and the constraint-vs-convention row is retained_bounded. The packet's runner verifies the refreshed note structure, parent runner presence, declared repair-candidate links, criteria table, and sister-row inventory with PASS=35 FAIL=0. The source table's loose 'retained' wording for the rescaling row is scoped here as retained-grade, not unbounded retained.",
       "claim_id": "g_bare_derivation_status_correction_audit_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Bounded status-correction packet only: the old missing-runner finding is superseded because scripts/frontier_g_bare_derivation.py is present, and the two 2026-05-03 repair-candidate rows plus the parent g_bare row are one-hop retained-grade dependencies. This audits the packet's refreshed dependency/status boundary and proposal_allowed=false disposition; it does not promote the parent beyond retained_bounded and does not derive the upstream canonical normalization CN or the local Wilson beta=6 surface from A1+A2.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T04:55:24.467498+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -95231,14 +95257,14 @@
         "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Section 2 wires the two 2026-05-03 repair-candidate notes and the parent g_bare note as dependencies, and Sections 5-7 state that the former missing-runner, constraint-vs-convention, and A -> A/g rescaling blockers are superseded only on the bounded retained-grade surface while absolute derivation of CN and beta=6 remains out of scope.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f74ffe02c035538b29af80311cdf16ef4b5335d5632a396f465298e8e398efc5",
@@ -95390,16 +95416,19 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 35,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "runner_result": "runner_sha256=7f601ea57809be3ea6e92a39b6e94afbafcd0415dd8c64b91933350b7f8a61d6; exit_code=0; PASS=35 FAIL=0; checks note structure, superseded missing-runner finding, declared repair-candidate links, criteria table, and G_BARE family inventory.",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 35
       },
       "runner_path": "scripts/frontier_g_bare_derivation_status_audit.py",
       "title": "g_bare Derivation Note \u2014 Status Correction Audit",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "No-go/admission gate: the packet does not close a no-go and does not claim that absolute normalization has been derived; it keeps the remaining CN/beta=6 absolute-derivation target outside scope. The bounded status-correction claim closes because the prior missing-runner issue is now false, the two repair-candidate rows are live retained-grade dependencies, and the refreshed packet explicitly keeps proposal_allowed=false for parent promotion. Residual risk is bounded to status metadata: this audit does not prove the canonical normalization from A1+A2, does not turn beta=6 into a first-principles output, and does not upgrade the parent beyond its audit-derived retained_bounded boundary."
     },
     "g_bare_dynamical_fixation_obstruction_note_2026-04-18": {
       "audit_date": "2026-05-27T01:56:52.360517+00:00",

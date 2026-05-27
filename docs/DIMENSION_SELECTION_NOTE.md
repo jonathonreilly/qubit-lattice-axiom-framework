@@ -1,4 +1,32 @@
-# Dimension Selection: Does Self-Consistency Require d = 3?
+# Dimension Selection Lower-Bound Finite-k Repair
+
+**Date:** original dimension-selection note; 2026-05-27 lower-bound scope
+repair.
+**Claim type:** bounded_theorem
+**Status:** finite-runner lower-bound support only. This row does not claim
+that self-consistency uniquely selects `d = 3`, does not import the textbook
+upper-bound side as a load-bearing premise, and does not authorize any axiom
+rewrite. Independent audit owns the effective status.
+**Runner:** `scripts/frontier_dimension_selection_lower_bound_parent_repair.py`
+
+## 2026-05-27 Scope Repair
+
+The prior note mixed two statements:
+
+1. a finite runner lower-bound observation: the runner's attraction/mass-law
+   criteria fail for `d <= 2` and pass for `d = 3,4,5`;
+2. a broader unique-`d = 3` conclusion using separate orbital and atomic
+   stability inputs.
+
+Only the first statement is binding in this row. The second statement remains
+context for separate upper-bound work and is not a theorem of this packet.
+
+The finite-k sign bridge
+[`DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md`](DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md)
+is the retained-bounded authority for the runner-specific lower-bound sign.
+It differentiates the actual layer-normalized finite-k propagator used by
+`scripts/frontier_dimension_selection.py`, rather than importing WKB/eikonal
+ray reasoning as the load-bearing sign argument.
 
 **Date:** 2026-04 (2026-05-28: scoped to the numerical lower-bound experiment;
 the d≤3 upper bound and the analytic d-dim potential/sign bridge registered as
@@ -53,83 +81,100 @@ two admitted inputs**. The note already states (§"Bounded Conclusion") that
 "the script does not claim that self-consistency alone selects d = 3." No new
 axiom, import, or retained bridge is introduced by this repair.
 
-## Method
+## Answer
 
-For each dimension d = 1, 2, 3, 4, 5:
+No. The current retained/bounded result is narrower:
 
-1. Build a d-dimensional lattice with Dirichlet boundary conditions
-2. Run self-consistent iteration (propagate, extract density, solve Poisson,
-   repeat) on the d-dim lattice
-3. Measure gravity observables using 2D propagation through the analytic
-   d-dimensional potential:
-   - d = 1: phi ~ -M * r (confining)
-   - d = 2: phi ~ -M * log(r)
-   - d = 3: phi ~ -M / r
-   - d = 4: phi ~ -M / r^2
-   - d = 5: phi ~ -M / r^3
-4. Measure: force sign, mass exponent beta, distance exponent alpha
-5. Check Born rule I_3 via 3-slit Sorkin test
-
-## Results
-
-| d | Attractive? | beta | alpha | alpha_pred | I_3 | All pass? |
-|---|---|---|---|---|---|---|
-| 1 | NO | 0.18 | 0.42 | -1 | < 1e-10 | no |
-| 2 | NO | 0.27 | -0.17 | 0 | < 1e-10 | no |
-| 3 | Yes | 1.01 | 1.32 | 1 | < 1e-10 | YES |
-| 4 | Yes | 1.05 | 3.30 | 2 | < 1e-10 | YES |
-| 5 | Yes | 1.03 | 5.01 | 3 | < 1e-10 | YES |
-
-Self-consistency converges at all dimensions. Born rule (I_3 = 0) holds
-universally (it follows from propagator linearity, not dimension).
-
-## Key Finding: Force Sign Transition at d = 2/3
-
-The propagator phase coupling S = L * (1 - phi) produces attractive
-deflection only when the potential phi decays with distance, which
-requires d >= 3 (phi ~ 1/r^(d-2)). For d <= 2, the potential grows
-or is logarithmic, and the accumulated phase reverses the force sign.
-
-This is the central result: **self-consistency excludes d <= 2**.
-
-## What These Observables Do NOT Select
-
-- **I_3 = 0**: Universal, holds at all d. Does not discriminate.
-- **beta = 1**: Holds at d >= 3 (from Poisson linearity with decaying
-  Green's function). Does not discriminate within d >= 3.
-- **Attractive gravity**: Holds at d >= 3. Does not discriminate within
-  d >= 3.
-
-## What Selects d = 3 From Above
-
-The upper bound d <= 3 comes from separate physical requirements not
-tested numerically in this script:
-
-- **Stable orbits** (Bertrand's theorem): Only d = 3 supports stable
-  closed orbits under the 1/r^(d-1) force law. For d >= 4, perturbations
-  grow and orbits spiral inward or outward.
-- **Stable atoms**: Hydrogen-like atoms are unstable for d >= 5 (the
-  kinetic energy cannot balance the potential).
-
-## Bounded Conclusion
-
-Self-consistency of propagator + gravitational field provides a **lower
-bound**: d >= 3 is required for attractive gravity with linear mass
-dependence. Combined with the known **upper bound** from orbital and
-atomic stability (d <= 3), this uniquely gives **d = 3**.
-
-The script does not claim that self-consistency alone selects d = 3.
-The lower bound is the numerical result; the upper bound is from
-classical/quantum stability theory.
-
-## Reproducibility
-
-```
-python3 scripts/frontier_dimension_selection.py
+```text
+d <= 2  -> fails the runner's attractive-gravity / beta~1 lower-bound criteria
+d >= 3  -> passes those runner criteria for d = 3, 4, 5
 ```
 
-Runtime: < 1 second. Requires numpy and scipy.
+Thus this row supports a finite-runner lower bound, not a unique-dimension
+theorem.
 
-## Upstream authority
+## Runner Surface
 
-- `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` (back-reference to the downstream named-import wrapper, not load-bearing on this `d >= 3` lower-bound derivation — this dimension_selection note's runner derives the lower bound from `Cl(3)` + propagator self-consistency standalone. The 2026-05-17 wrapper consumes *this* note's `d >= 3` to form the joint `d = 3` conclusion via Bertrand 1873 + Tangherlini 1963 / Ehrenfest 1917 textbook upper bounds. Backticked to break length-2 cycle `cycle-0016` in `docs/audit/data/cycle_inventory.json`; citation graph direction is *2026-05-17 wrapper → this note*.)
+For each dimension `d = 1,2,3,4,5`, the original runner:
+
+1. builds a finite lattice or finite propagation model;
+2. uses the stated analytic `d`-dimensional potential family
+   - `d = 1`: `phi ~ -M r`;
+   - `d = 2`: `phi ~ -M log(r)`;
+   - `d >= 3`: `phi ~ -M / r^(d-2)`;
+3. measures force sign, mass exponent `beta`, distance exponent `alpha`, and
+   a linear-propagator Sorkin `I_3` check.
+
+The finite-k bridge supplies the direct runner-specific sign certificate for
+the detector-centroid response at the baseline geometry.
+
+## Bounded Result
+
+The runner output reports:
+
+| d | attractive? | beta approx | `I_3` | lower-bound read |
+|---|---|---:|---|---|
+| 1 | no | 0.18 | `<1e-10` | fails |
+| 2 | no | 0.27 | `<1e-10` | fails |
+| 3 | yes | 1.01 | `<1e-10` | passes |
+| 4 | yes | 1.05 | `<1e-10` | passes |
+| 5 | yes | 1.03 | `<1e-10` | passes |
+
+The finite-k derivative bridge independently certifies the same sign
+transition for the runner's baseline centroid observable:
+
+```text
+d <= 2: negative/away response
+d >= 3: positive/toward response
+```
+
+This is the bounded claim of this row.
+
+## Non-Claims
+
+This row does not claim:
+
+- that `d = 3` is uniquely selected by the three runner observables;
+- that the all-d analytic potential family is derived from A1+A2 alone;
+- that Bertrand, Tangherlini, Ehrenfest, or atomic-stability upper bounds are
+  proved in this row;
+- that `Z^3` has been derived from a dimension-free axiom system;
+- that any repo-wide axiom line should be rewritten;
+- that observed physical dimension is an admitted data input.
+
+## Relation To Upper-Bound Work
+
+The separate upper-bound wrapper
+`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` combines
+this lower-bound route with named external upper-bound mathematics. That
+wrapper is not load-bearing for the bounded claim here. Any future attempt to
+derive `d <= 3` inside the framework must be audited separately.
+
+## What This Closes
+
+- finite-runner lower-bound support for excluding `d <= 2` in the stated
+  propagator-plus-Poisson runner surface;
+- direct use of the retained-bounded finite-k centroid-sign bridge;
+- removal of the unique-`d = 3` overclaim from this parent row.
+
+## What Remains Open
+
+- framework-internal derivation of the all-d potential family;
+- uniform control over all runner geometries, `k`, source widths, and positive
+  masses;
+- framework-internal upper-bound derivation `d <= 3`;
+- any axiom-level dimension rewrite.
+
+## Verification
+
+Run:
+
+```bash
+python3 scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+```
+
+Expected summary:
+
+```text
+SUMMARY: PASS=29 FAIL=0
+```

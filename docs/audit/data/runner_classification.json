@@ -35111,6 +35111,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_dimension_selection_lower_bound_parent_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "dimension_selection_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_dirac_walk_3plus1d_core_card.py": {
       "assert_count": 2,
       "claims": [

@@ -56610,8 +56610,8 @@
     },
     "gravity_clean_derivation_note": {
       "claim_id": "gravity_clean_derivation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "self_consistency_forces_poisson_note",
@@ -56620,10 +56620,10 @@
         "staggered_fermion_card_2026-04-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9cb56948dd6885f8c17a2f2e01e3982698673edb9677f7f63041b10954abc717",
+      "note_hash": "8ee156f4df63eda277ba73aa370d738280a1f1358b77a48b25de2f0aecd857a9",
       "path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
       "runner_path": null,
-      "title": "Clean Derivation: Cl(3) on Z^3 to Newton's Inverse-Square Law (Conditional)"
+      "title": "Conditional Weak-Field Gravity IF-Chain on `Z^3`"
     },
     "gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25": {
       "claim_id": "gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25",
@@ -85693,11 +85693,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 619,
+      "bounded_theorem": 620,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
-      "none": 1442,
+      "none": 1441,
       "open_gate": 50,
       "positive_theorem": 171
     },

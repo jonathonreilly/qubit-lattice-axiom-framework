@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1214 |
+| unaudited | 1215 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 47 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 827 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1444 |
+| `unaudited` | 1445 |
 
 | claim_type | count |
 |---|---:|
@@ -980,7 +980,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
-| `gravity_clean_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5880,24 +5879,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the configured probe parameters, the mean phase delta from the static v=0 baseline is monotonic in v_z, with small-|v| deltas approximately antisymmetric and the |v|=0.5 antisymmetry failing.  _(class `C`)_
 - **chain closes:** True — The retained bounded claim follows on its own restricted terms: the supplied runner source computes the reported phases from the configured DAG, propagator, imposed source trajectory, and static baseline, and the cached stdout matches the note's table. No GR, Shapiro, or self-consistent moving-source bridge is closed or claimed within the retained scope.
 - **rationale:** For the bounded diagnostic actually retained, the runner is not a constant-printing or hard-coded expected-value script; it constructs the configured grown families, propagates amplitudes, computes phases, and subtracts the v=0 baseline. The output supports monotonic increase in v_z, approximate antisymmetry only at |v|=0.2, and failure of full antisymmetry at |v|=0.5, matching the revised note. The broader gravitomagnetic/Shapiro and self-consistent moving-source claims are explicitly excluded, so they are not part of the audited closure.
-- **auditor confidence:** high
-
-### `gravity_clean_derivation_note`
-
-- **Note:** [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded IF-chain: if the framework stipulates L^{-1}=G_0, rho=|psi|^2 as gravitational mass density, the weak-field test-mass response S=L(1-phi), and the Z^3 lattice Green-function asymptotic, then the lattice Poisson equation gives a 1/r potential and inverse-square force in lattice units.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-gravity-clean-derivation-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The note's load-bearing move is the assertion that self-consistency requires L^{-1}=G_0, followed by inversion to L=G_0^{-1}=-Delta_lat and source/response identifications to obtain the force law.  _(class `F`)_
-- **chain closes:** False — The narrow algebraic IF-chain closes only after the closure identity and source/response maps are granted as hypotheses. The source note as a whole still asserts a complete zero-free-parameter derivation from the single axiom and cites one-hop dependencies beyond their bounded scopes, so the stated note does not close as written.
-- **rationale:** Issue: the note still presents a clean single-axiom, zero-free-parameter Newton derivation, while its one-hop dependencies only support bounded diagnostics or stipulated implications. Why this blocks: GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as a stipulated closure identity; SELF_CONSISTENCY_FORCES_POISSON_NOTE and POISSON_EXHAUSTIVE_UNIQUENESS_NOTE are bounded finite/operator-family diagnostics; and STAGGERED_FERMION_CARD_2026-04-11 explicitly does not derive rho=|psi|^2 as a physical gravity source. Repair target: rewrite the source note so every binding claim is the bounded IF-chain only, or add retained bridge theorems for L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), and the lattice Green-function normalization. Claim boundary until fixed: conditional weak-field chain under those stipulated inputs.
-- **open / conditional deps cited:**
-  - `SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`
-  - `POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md`
-  - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
-  - `STAGGERED_FERMION_CARD_2026-04-11.md`
 - **auditor confidence:** high
 
 ### `gravity_full_self_consistency_note`

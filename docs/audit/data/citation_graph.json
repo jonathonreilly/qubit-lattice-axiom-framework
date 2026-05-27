@@ -24089,10 +24089,6 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
-      "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-    },
-    {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "to": "left_handed_charge_matching_note"
     },
@@ -77477,11 +77473,10 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "minimal_axioms_2026-04-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "908367e1e75df3b7b7d32f403fce914da8789d85e02ad0d9afc55aced7ee8391",
+      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
@@ -85502,7 +85497,7 @@
       "open_gate": 126,
       "positive_theorem": 590
     },
-    "edge_count": 9745,
+    "edge_count": 9744,
     "leaf_count": 796,
     "node_count": 2552,
     "root_count": 855,

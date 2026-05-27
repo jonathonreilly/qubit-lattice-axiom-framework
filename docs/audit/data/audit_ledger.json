@@ -14155,13 +14155,13 @@
         "staggered_only_det_positivity_case_a_note_2026-05-17",
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 35,
+      "direct_in_degree": 34,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 27.296,
+      "load_bearing_score": 26.794,
       "load_bearing_step": "The gauge half is asserted to be a positive Haar norm square, the staggered determinant input strictly positive configuration-by-configuration, and their product is asserted to give <Theta(F) F> = ||psi_F||^2 >= 0.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -14652,7 +14652,7 @@
       },
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only Sector",
-      "transitive_descendants": 888,
+      "transitive_descendants": 887,
       "verdict_rationale": "E1-E5 pass, but they are finite representative structural checks: free staggered transfer matrices, a truncated U(1) plaquette, finite Fock-space RP samples, a finite Gram matrix, and finite anticommutation checks. They do not compute or prove the load-bearing arbitrary compact SU(3) gauge-half boundary factorization or the staggered Grassmann half-action reflection-positive factorization. E6 is correctly diagnostic-only and cannot carry the theorem. The narrowed Wilson-excluding scope is appropriate, but the proof still imports missing reflection-positivity bridge theorems beyond the cited retained inputs."
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
@@ -17152,8 +17152,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "Defining beta(g,N)=2N/g^2, substitution under g -> g/c gives beta(g/c,N)=c^2 beta(g,N), and the joint product beta*g^2 remains 2N.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "a8fb8bff35dc5bd2c474a4d489632f65aebcb6678f2d93a9693e8a3e65ddc44d",
       "note_path": "docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Recheck if later work cites this as deriving g_bare=1, beta=6, Wilson action normalization, or an SU(N_c) physical convention.",
@@ -230756,7 +230756,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.303,
+      "load_bearing_score": 15.301,
       "load_bearing_step": "Using \u0398-invariance of S_+ and reflection-Hermiticity of F, the reflected expectation becomes \u222b_X |\u03c8\u00b2(x)F(x)|\u00b2 d\u03bc(x), hence a weighted L\u00b2 norm-square.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -230777,7 +230777,7 @@
       },
       "runner_path": "scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py",
       "title": "Reflection Positivity Symmetric Involution Norm-Square Bounded Theorem",
-      "transitive_descendants": 892,
+      "transitive_descendants": 891,
       "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the explicit hypotheses in the note. The runner source actually constructs a finite measured-space model with \u0398(k)=-k, checks \u0398-invariance, Hermiticity, the norm-square identity, non-negativity, and sesquilinear properties, rather than only printing expected constants. The theorem is intentionally narrow and does not import the open Wilson plaquette, fermion determinant, or combined-sector reflection-positivity bridges. A second auditor should note the wording of strict positivity should be read as \u03c8\u00b2F not equal to zero \u03bc-a.e., not nonzero at almost every point."
     },
     "replay_environment_note": {
@@ -257406,7 +257406,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 14.803,
+      "load_bearing_score": 14.801,
       "load_bearing_step": "Equation (16) and (18): det(M)=\u220f_{i=1}^{n/2}(m\u00b2+\u03c3_i\u00b2)>0 after the det(\u03b3\u2085)=(-1)^{n/2} sign cancels the sign in det(\u03b3\u2085M).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -257427,7 +257427,7 @@
       },
       "runner_path": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py",
       "title": "Staggered-Only det(M_KS + m\u00b7I) > 0 \u2014 Sub-Theorem Note (Case A standalone)",
-      "transitive_descendants": 892,
+      "transitive_descendants": 891,
       "verdict_rationale": "The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, \u03b3\u2085-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument."
     },
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": {
@@ -257898,8 +257898,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-04-11",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "minimal_axioms_2026-04-11"
       ],
       "direct_in_degree": 2,
       "effective_status": "unaudited",
@@ -257912,7 +257911,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "908367e1e75df3b7b7d32f403fce914da8789d85e02ad0d9afc55aced7ee8391",
+      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
       "note_path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -312273,8 +312272,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2393,
-    "re_audit_required": 1,
+    "preserved_existing": 2394,
+    "re_audit_required": 0,
     "row_count": 2438,
     "seeded_new": 0
   }

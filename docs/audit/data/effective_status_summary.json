@@ -26,7 +26,7 @@
   "effective_status_counts": {
     "audited_conditional": 56,
     "audited_failed": 2,
-    "audited_numerical_match": 13,
+    "audited_numerical_match": 14,
     "audited_renaming": 18,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
     "decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29": 1,
@@ -55,7 +55,7 @@
     "retained_bounded": 490,
     "retained_no_go": 168,
     "retained_pending_chain": 8,
-    "unaudited": 1237
+    "unaudited": 1236
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

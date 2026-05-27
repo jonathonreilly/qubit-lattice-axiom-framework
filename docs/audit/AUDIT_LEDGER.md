@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 168 |
+| **retained_no_go** | 169 |
 | **retained_bounded** | 490 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 783 |
+| `audited_clean` | 784 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1465 |
+| `unaudited` | 1464 |
 
 | claim_type | count |
 |---|---:|
@@ -461,6 +461,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cyclic_wilson_descendant_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6653,6 +6654,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The cited retained bridge supplies the scalar-on-M_zeta theorem, and the parent runner checks the downstream algebraic consequences plus endpoint countermodels. No non-retained selector or boundary-section theorem deriving c=0 is present in the restricted packet.
 - **rationale:** The load-bearing scalar-mark step is an algebraic closure over the retained bridge theorem, not a definition substitution or numerical match. The runner source does more than print constants: it symbolically checks the residual structure and re-verifies representative scalar restrictions by importing the sibling Wilson construction. Within the stated no-go scope, the conclusion follows from retained inputs and explicit countermodels showing marked relative cobordism does not force selected-line closure or c=0.
 - **auditor confidence:** high
+
+### `koide_dimensionless_note_2026-04-24`
+
+- **Note:** [`KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md`](../../docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go: the finite two-channel response formula and endpoint delta formula alone do not imply full dimensionless Koide closure; explicit finite countermodels remain unless extra physical source/readout laws impose z=0 and selected-line/local/basepoint endpoint data.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-koide-dimensionless-no-go-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The stated finite formulas give Q(0,1/4)=8/9, Q(0,-1/4)=8/15 and endpoint countermodels delta=0, 1/9, and 1/3, so the finite two-channel plus endpoint algebra does not force full dimensionless closure without additional physical selection of z=0 and selected-line/local/basepoint endpoint data.  _(class `A`)_
+- **chain closes:** True — The source note has no one-hop dependencies, and its conclusion follows by exact fraction arithmetic from its own definitions of Q(s,z) and delta. The closure is only a finite-algebra non-implication, leaving physical source/readout selection, charged-lepton scale closure, and future axioms outside the audited scope.
+- **rationale:** The narrowed no-go closes because explicit countermodels are sufficient for the fixed finite-algebra non-implication being claimed. N1 does not expose an untested in-scope route: attacks would need to show that the finite algebra itself forbids z, makes Q z-invariant, forbids spectator endpoint support, forbids endpoint_shift, or already derives selected-line/basepoint data, and the note/runner either gives exact countermodels or marks the needed selection as external. N2-N8 do not block clean status: the residuals are scoped boundaries rather than an inflated wall list, there are no cited prior residual witnesses to mismatch, the rhetoric is narrowed to the finite two-channel plus endpoint formulas, and the steelman/partial-closure route of a future physical source/readout law is expressly left open. The runner source performs exact Fraction checks and reports PASS=38 FAIL=0, with the single B-class check being non-load-bearing metadata.
 
 ### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`
 

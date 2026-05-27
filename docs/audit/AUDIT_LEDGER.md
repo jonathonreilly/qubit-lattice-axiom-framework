@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 504 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1212 |
+| unaudited | 1211 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 800 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1441 |
+| `unaudited` | 1440 |
 
 | claim_type | count |
 |---|---:|
@@ -960,6 +960,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7087,6 +7088,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Exactness identifies the Q and delta kernels but does not choose their zero section; the missing statement is a retained canonical-section / primitive-readout theorem.  _(class `A`)_
 - **chain closes:** True — Within this narrowed no-go scope, the chain closes: the runner constructs the Q trace projection and delta closed-boundary projection, computes their nontrivial kernels, shows kernel translations preserve retained totals, and exhibits nonzero representatives that fail the target readouts. This proves exactness alone lacks a canonical zero representative.
 - **rationale:** The load-bearing result is an exact algebraic obstruction, not a positive physical identification: the code shows nonunique fibres over the retained totals and counter-representatives preserving those totals while changing Q or delta closure. The note's retained statement is correspondingly negative and explicitly says native closure remains false unless a new physical source/boundary-origin law is derived. The runner does not hard-code a desired positive closure; it demonstrates the missing section as the obstruction. Residual risk is scope control: the broader review-packet narrative mentions other branches and runners, but this audit only ratifies the primary residual cohomology no-go stated above.
+- **auditor confidence:** high
+
+### `koide_native_zero_section_closure_route_note_2026-04-24`
+
+- **Note:** [`KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md`](../../docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Class-A symbolic consequences of three explicit admitted zero-section/readout identifications: real Z3-primitive idempotents, rank-one non-equivariance, unit endpoint c=0, and Q=2/3 plus delta_open=2/9 under the native zero-section substitutions; excludes derivation of the identifications and excludes retained-only Koide closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Under z=0, spectator=0, and c=0, the runner verifies Q=2/3 and delta_open=eta_APS=2/9, while stating that retained-only closure still requires the three native identification theorems.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional algebra and arithmetic close under the three stated identifications, and the runner verifies the conditional symbolic consequences. The source and runner both leave the charged-lepton zero-source readout, the Brannen endpoint as the whole real Z3 primitive, and the unit-preserving determinant-line readout as open identifications rather than retained inputs.
+- **rationale:** Issue: The runner closes only symbolic algebra under three admitted identifications: charged-lepton zero-source readout, Brannen endpoint as the whole real Z3 primitive, and unit-preserving determinant-line readout. Why this blocks: those identifications are exactly the load-bearing physical/readout bridges needed for Q=2/3 and delta_open=2/9 to be retained current-surface outputs, and no retained dependency or theorem derives them in this row. Repair target: split or add retained upstream theorems deriving the three identifications, then re-audit the same algebraic runner as downstream support. Claim boundary until fixed: the row is conditional algebraic support for the native zero-section route only; it is not retained-only Koide Q/delta closure.
+- **open / conditional deps cited:**
+  - `native zero-source charged-lepton scalar readout`
+  - `Brannen endpoint as whole real nontrivial Z3 primitive`
+  - `unit-preserving determinant-line endpoint readout`
 - **auditor confidence:** high
 
 ### `koide_pointed_origin_exhaustion_theorem_note_2026-04-24`

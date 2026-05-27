@@ -38,3 +38,8 @@
   witnesses keep the W row fixed while the top matrix element changes with the
   projector. The accepted backend, physical top projector, and source-generator
   matrix element remain load-bearing.
+- New in the sixth block: positive real C3 transfer/Perron selection does not
+  supply a nontrivial physical top line. Entrywise-positive real
+  C3-circulant dynamics selects the singlet Perron line `P_0`; the nontrivial
+  block is degenerate, and the target row still needs an orientation/phase
+  top-ordering law or strict pole rows.

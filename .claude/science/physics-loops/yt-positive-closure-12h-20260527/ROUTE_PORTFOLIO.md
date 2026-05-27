@@ -8,6 +8,8 @@ The third route tested the C3 circulant dynamics/source-law shortcut.
 The fourth route audited strict sparse pole-response evidence availability.
 The fifth route tested the current microscopic source/backend/carrier/C3
 shortcut to the accepted matrix element.
+The sixth route tested positive real C3 transfer/Perron selection as a
+nontrivial top-line law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -17,6 +19,7 @@ shortcut to the accepted matrix element.
 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | no-go shortcut test | 3 | Pruned as source-derivative shortcut; base dynamics/order still open |
 | Strict sparse top/W pole-response evidence | availability audit | 3 | Audited absent on current branch; harness/candidate only |
 | Microscopic backend/projector/matrix-element shortcut | no-go shortcut test | 3 | Pruned: current support does not derive accepted backend, top projector, or source-generator matrix element |
+| Positive real C3 transfer/Perron selection | no-go shortcut test | 3 | Pruned: positivity selects `P_0`, not a nontrivial line |
 
 ## Stuck Fan-Out
 
@@ -30,7 +33,9 @@ shortcut to the accepted matrix element.
 | C3 circulant source law | Use derived `B_x` as source derivative to order top line | Fails; base dynamics and `y_0` phase/order remain load-bearing |
 | Strict evidence route | Inspect current sparse certificate | Harness exists; accepted backend and pole rows absent |
 | Microscopic backend/projector route | Combine source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | Fails; accepted backend, physical projector, and source-generator matrix element remain load-bearing |
+| Positive real C3 Perron route | Use positivity to select the physical top line | Fails; Perron line is `P_0`, nontrivial block remains degenerate |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-microscopic dynamics theorem with accepted backend/projectors/matrix elements,
-or accepted strict pole rows. It does not close the coefficient row.
+microscopic dynamics/orientation theorem with accepted backend/projectors,
+top-ordering law, and matrix elements, or accepted strict pole rows. It does
+not close the coefficient row.

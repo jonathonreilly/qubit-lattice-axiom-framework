@@ -70,3 +70,18 @@ data or a genuinely new microscopic dynamics theorem deriving accepted
 backend, W/top projectors, and source-generator matrix elements. No retained
 or proposed-retained Y_T closure is claimed.
 ```
+
+Then append the sixth block:
+
+```text
+## 2026-05-27 Update: Positive Real C3 Transfer/Perron Top-Line No-Go
+
+Added no-go route pruning for the shortcut from entrywise-positive real
+C3-circulant transfer dynamics to a nontrivial physical top line. For
+`T = a I + b(C+C^2), a>0, b>0`, the Perron line is `P_0`, while
+`P_omega` and `P_omega2` remain degenerate. The singlet gives `A/sqrt(3)`,
+not the target `A/sqrt(12)`. The next live routes are accepted strict
+pole-row data or a new microscopic dynamics/orientation theorem deriving
+accepted backend, W/top projectors, top-ordering law, and source-generator
+matrix elements. No retained or proposed-retained Y_T closure is claimed.
+```

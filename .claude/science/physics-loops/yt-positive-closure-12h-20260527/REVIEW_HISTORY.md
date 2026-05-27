@@ -159,3 +159,32 @@ Verification recorded with this review:
   obstruction.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 6
+
+Scope:
+
+- positive real C3 transfer/Perron top-line no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the positive real C3 circulant spectrum, Perron gap, singlet/nontrivial row conflict, dependency outputs, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go route pruning for the positive-real-Perron shortcut only; phase/orientation dynamics and strict rows remain live. |
+| Imports / support | DISCLOSED | Orientation/phase/top-ordering law and strict pole-row evidence are named as open imports. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=64 FAIL=0`
+- Full stack runner: `PASS=257 FAIL=0`
+- Adjacent Y_T runners passed: C3 dynamics boundary, same-surface matrix
+  factorization, and microscopic backend/projector boundary.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

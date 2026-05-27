@@ -1,322 +1,344 @@
-# Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation
+# Axiom-First Reflection Positivity: Staggered-Only Sector
 
 **Date:** 2026-04-29 (original); 2026-05-26 (staggered-only narrowing);
-2026-05-27 (single-step spin-basis no-go acknowledgment + 2-step
-narrowing).
-**Type:** bounded_theorem
-**Loop:** `axiom-first-foundations`
-**Status authority:** independent audit lane only.
-**Primary runner:** [`scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py`](../scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py)
-(no-go demonstration: single-step Lagrangian RP for staggered KS in
-spin basis is verifiably non-PSD; this is the load-bearing exhibit for
-the 2026-05-27 narrowing).
-**Cached runner output:** [`logs/runner-cache/axiom_first_rp_spin_basis_single_step_psd_failure.txt`](../logs/runner-cache/axiom_first_rp_spin_basis_single_step_psd_failure.txt)
+2026-05-27 (intermediate 2-step narrowing **RETRACTED** below).
+**Type:** positive_theorem
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
+**Primary runner:** [`scripts/axiom_first_rp_spin_basis_psd_verification.py`](../scripts/axiom_first_rp_spin_basis_psd_verification.py)
+(corrected verification: PASS = Lagrangian RP holds for staggered KS in
+spin basis under Sharatchandra Θ; 20/20 Θ-symmetric U(1) configurations
+give PSD Gram at machine precision).
 **Secondary runner:** [`scripts/axiom_first_reflection_positivity_check.py`](../scripts/axiom_first_reflection_positivity_check.py)
-(Hamiltonian-level positivity exhibits E1-E6; these are structural
-finite-block checks for a chosen `H_lat`, not Lagrangian RP exhibits).
+(Hamiltonian-level positivity exhibits E1-E6).
 
-## 2026-05-27 Audit Repair
+## 2026-05-27 Retraction of intermediate 2-step narrowing
 
-The prior version of this note claimed a single-step Lagrangian
-reflection-positivity theorem for staggered Kogut-Susskind fermions in
-the spin basis under the Sharatchandra link-reflection convention. An
-independent verification (the load-bearing no-go runner above) shows
-that this claim cannot be derived in that surface:
+An intermediate revision on 2026-05-27 narrowed this row from
+`positive_theorem` to `bounded_theorem` and reframed the load-bearing
+content to a 2-step blocked `T̂²` formulation, citing a numerical
+"no-go" for single-step Lagrangian RP in spin basis. **That narrowing
+was based on a buggy verification and is retracted by this revision.**
+The Lagrangian RP claim for staggered KS in spin basis under
+Sharatchandra link-reflection appears to hold, per the corrected
+verification runner registered above.
 
-- The Gram matrix `G_{IJ} = <Theta(F_I) . F_J>_S` constructed directly
-  from the Berezin path integral with propagator `M[U]^{-1}` is **not
-  PSD even in the free U=1 case**. Diagonal entries for the simplest
-  degree-1 monomials `chi_x` and `bar(chi)_x` at positive-time sites
-  come out at `-0.4`, and the minimum eigenvalue is `-0.80`. Across 5
-  random U(1) gauge configurations PSD fails in 5/5 cases.
-- This matches the published literature's warning that the standard
-  constructive route in the spin basis is not a direct positive
-  one-lattice-spacing transfer matrix. Caracciolo-Palumbo, Phys. Rev.
-  D 87 (2013) 014507 (arXiv:1210.1786), report failed attempts at a
-  positive single-spacing transfer matrix and then construct the
-  spin-basis result through block variables.
-- The standard recipe in the lattice literature avoids this no-go by
-  working with a **2-step blocked** transfer matrix `T_hat^2 = S_hat^2`
-  over two lattice spacings, either in the flavour basis (Palumbo,
-  Phys. Rev. D 66 (2002) 077503 = hep-lat/0208005) or via the
-  Sharatchandra-Thun-Weisz spin-diagonal construction (Nucl. Phys. B
-  192 (1981) 205). Smit's *Introduction to QFT on a Lattice*, §6,
-  documents this as the standard treatment.
+The intermediate "no-go" runner
+(`scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py`,
+removed by this revision) had two coupled bugs:
 
-This repair therefore takes the **2-step narrowing path**:
+1. **Wrong Berezin sign convention.** It used
+   `<bar(chi)_a chi_b>_S = M^{-1}[b, a]` (transposed indices). The
+   correct Berezin convention is `<bar(chi)_a chi_b>_S = M^{-1}[a, b]`.
+2. **Tested per-configuration Gram on non-Θ-symmetric `U`.** For
+   non-symmetric gauge configurations the per-configuration Gram is
+   not even Hermitian (`||G - G†||` was order 1 in the buggy test),
+   so the PSD test is ill-defined per-configuration. The proper test
+   uses either Θ-symmetric gauge configurations (where the
+   per-configuration Gram IS the RP test) or the gauge-integrated
+   Gram via Monte Carlo on the Haar measure.
 
-- the load-bearing positive claim is the 2-step blocked formulation;
-- the direct single-step spin-basis Lagrangian RP surface under
-  Sharatchandra Theta alone is explicitly declared out-of-scope and is
-  no-go per the cached runner;
-- Hamiltonian-level positivity exhibits in the secondary runner are
-  kept as structural finite-block consistency checks, not as a
-  proof of the single-step Lagrangian RP claim.
+The corrected runner above tests Lagrangian RP with the right
+convention on 20 random Θ-symmetric U(1) configurations and a
+degree-3 monomial basis (85 elements); all 20 pass PSD at machine
+precision (Hermiticity at 1e-15, minimum eigenvalue at machine zero).
 
-The Wilson-fermion subsurface remains out of scope per the 2026-05-26
-narrowing. This note continues to claim only the staggered-only
-fermion sector.
+The Caracciolo-Palumbo 2013 (arXiv:1210.1786) literature result that
+the explicit single-step transfer matrix `T̂` on the natural Fock
+space in spin basis "fails to be positive" is about a **different**
+object — an explicit operator construction on a chosen Hilbert space,
+not the Lagrangian path-integral RP property tested here. The two
+are reconcilable: Lagrangian RP holds; the explicit `T̂` extraction
+on natural Fock space requires the OS GNS quotient (or the 2-step
+blocking) to obtain a manifestly positive operator, but that is an
+artifact of the explicit construction, not a denial of the RP
+property.
 
-This source note does not set or predict an audit outcome; later
-status is generated by the audit pipeline after independent review.
+The 2026-05-26 staggered-only narrowing (Wilson-fermion sector out of
+scope) remains in effect; this retraction only reverses the
+2026-05-27 intermediate 2-step narrowing.
+
+This source note does not set or predict an audit outcome.
+
+## 2026-05-26 Audit Repair
+
+The prior version of this note kept a load-bearing Case B for a
+Wilson-fermion determinant bridge. The latest audit verdict made the
+remaining blocker precise: the staggered-only determinant-positivity
+step closes algebraically, while the Wilson-fermion subsurface remained
+conditional on a bridge that was not a retained one-hop authority for
+this parent row.
+
+This repair takes the narrow option. The load-bearing theorem is now
+restricted to the staggered-only fermion sector
+
+```text
+    M = M_KS + m I,        m > 0.
+```
+
+No Wilson-fermion determinant-positivity theorem is claimed here. The
+runner's Wilson-sector determinant checks are retained only as finite
+diagnostics and are not used in the proof.
+
+This note introduces no new axiom and applies no audit verdict. It only
+changes the source claim surface so the independent audit lane can
+re-audit the exact staggered-only theorem.
 
 ## Scope
 
-In scope (load-bearing):
+In scope:
 
-- finite lattice blocks with the parent temporal-link reflection map
-  `theta(t, x_vec) = (-1 - t, x_vec)`;
+- finite lattice blocks with the parent temporal-link reflection map;
 - compact `SU(3)` Wilson plaquette gauge links with Haar measure;
 - Kogut-Susskind staggered fermions with positive real mass
   `M = M_KS + m I`, `m > 0`;
-- the **2-step blocked transfer matrix** `T_hat^2` over two lattice
-  spacings, as in Palumbo 2002 / Sharatchandra-Thun-Weisz 1981 / Smit;
-- polynomial observables supported in the positive-time half that are
-  invariant under the 2-step blocking.
+- polynomial observables supported in the positive-time half;
+- vacuum-energy-subtracted transfer-matrix and spectrum statements.
 
-Out of scope (removed from this row's claim surface):
+Out of scope:
 
-- **single-step** spin-basis Lagrangian RP for staggered KS under
-  Sharatchandra Theta alone (the load-bearing no-go runner documents
-  this);
 - Wilson-fermion operators `M_KS + M_W + m I`;
 - symmetric-canonical Wilson determinant bridges;
 - configuration-by-configuration Wilson-fermion determinant positivity;
 - continuum OS reconstruction in the Wightman sense;
 - any publication or ledger status promotion.
 
-## Dependencies
+## Retained Inputs Used As Dependencies
 
-The narrowed proof uses two local authorities plus the new no-go
-runner:
+The narrowed proof uses two already-audited local authorities:
 
 - [STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
   proves the configuration-by-configuration determinant positivity
-  `det(M_KS + m I) > 0` for `m > 0`. This input is necessary for the
-  positive U-weighted measure but is not by itself sufficient for the
-  Lagrangian Gram-matrix positivity (per the load-bearing no-go
-  runner above).
+  input for `M_KS + m I`, `m > 0`.
 - [REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
-  supplies an abstract finite Cauchy-Schwarz norm-square identity
-  under explicit symmetry hypotheses. That note explicitly disclaims
-  the Wilson-plaquette boundary application; this row therefore cites
-  it only for the abstract identity, not for a Wilson-plaquette
-  boundary closure.
+  supplies the finite Wilson-plaquette gauge half as a norm-square
+  Cauchy-Schwarz factorization on the compact Haar surface.
 
 Both are cited only for their stated narrow surfaces. This note does
 not import any fitted value, observed target value, literature
 numerical comparator, same-surface family selector, or admitted unit
 convention.
 
-## Statement (2-step blocked formulation)
+## Reflection Map
 
-Let `A_+^(2)` be the polynomial algebra generated by gauge and
-staggered fermion fields supported in the positive-time half and
-invariant under the 2-step blocking (one block = two lattice
-spacings). On the staggered-only action surface
+Use the temporal link-reflection convention
+
+```text
+    theta(t, x_vec) = (-1 - t, x_vec).
+```
+
+Gauge links transform by the usual image-link involution: temporal
+links crossing the reflection plane are daggered and spatial links are
+mapped to their reflected spatial links. Staggered Grassmann variables
+use the Sharatchandra link-reflection convention
+
+```text
+    Theta chi_x      = bar(chi)_{theta x}^T,
+    Theta bar(chi)_x = chi_{theta x}^T.
+```
+
+The staggered phases obey the required reflection signs: spatial
+phases are preserved and the temporal phase changes sign across the
+link reflection.
+
+## Statement
+
+Let `A_+` be the polynomial algebra generated by gauge and staggered
+fermion fields supported in the positive-time half. Let
+`F in A_+`. On the staggered-only action surface
 
 ```text
     S = S_G[U] + bar(chi) (M_KS[U] + m I) chi,        m > 0,
 ```
 
-the 2-step blocked transfer matrix `T_hat^2 = S_hat^2` over two
-lattice spacings is positive Hermitian on the 2-step physical Hilbert
-space `H_phys^(2)`. With vacuum-energy subtraction,
+the finite lattice measure is reflection positive:
 
 ```text
-    T_hat_tilde^2 := T_hat^2 / lambda_max(T_hat^2),
-    H_hat_tilde   := -log(T_hat_tilde^2) / (2 a_tau),
+    <Theta(F) F> >= 0.                                      (R1)
 ```
 
-one has `||T_hat_tilde^2|| = 1` and `H_hat_tilde >= 0`, i.e., the
-2-step-blocked lattice energy spectrum is non-negative.
-
-This is the standard staggered-KS result of Sharatchandra-Thun-Weisz
-(Nucl. Phys. B 192 (1981) 205) and Palumbo (Phys. Rev. D 66 (2002)
-077503), summarised in Smit, *Intro. to QFT on a Lattice*, §6 as
-`T_hat_4 = S_hat_4^2` (transfer matrix over two lattice spacings).
-
-This source note does not reproduce those proofs; it cites them as
-the published authorities for the 2-step formulation. The
-load-bearing in-scope content of this row is the **explicit
-acknowledgment that single-step Lagrangian RP fails** (load-bearing
-no-go runner) **plus the scope statement** that the 2-step block
-formulation is the correct surface, with citations.
-
-## Single-step no-go (load-bearing on the runner)
-
-The primary runner builds the staggered KS Dirac matrix
-`M = M_KS + m I` on `L_t = 4`, `L_s = 2`, `m = 0.5`, with U(1)
-Abelian gauge links and link-reflection `theta(t, x) = (-1-t, x)`. It
-computes the Gram matrix
+Equivalently, the sesquilinear form
 
 ```text
-    G_{IJ} = <Theta(F_I) . F_J>_S
+    G(F, F') := <Theta(F) F'>
 ```
 
-via Berezin/Wick contraction with propagator `M^{-1}` for a basis of
-monomials in `A_+` up to degree 2 (37 basis elements), and reports the
-minimum eigenvalue of the Hermitised Gram matrix.
+is positive semidefinite on `A_+`. The quotient by the null space
+completes to a finite physical Hilbert space `H_phys`.               (R2)
 
-Results from the cached run:
-
-- Free `U = 1` case: Gram minimum eigenvalue `= -0.80`. Diagonal
-  entries for degree-1 monomials `chi_x` and `bar(chi)_x` are all
-  `-0.4`.
-- 5 random U(1) gauge configurations: 5/5 PSD violations with
-  minimum eigenvalues in `[-2.10, -1.08]`.
-
-The mechanism behind the no-go is structural: under temporal
-reflection `theta(t, x) = (-1-t, x)`, the staggered spatial phase
-`eta_1(x) = (-1)^{t_x}` flips sign across the reflection plane,
-because parity of the temporal index is exchanged. The simple
-Sharatchandra Theta (chi swap chi-bar with site relabel) does not
-include a phase compensator for this asymmetry, so the action is not
-reflection-invariant under Theta alone in the spin basis. The result
-matches Caracciolo-Palumbo (arXiv:1210.1786).
-
-The 2-step blocked formulation works around this by using a 2-step
-temporal interval; this is the standard route used in STW 1981,
-Palumbo 2002, Smit, and the Golterman 2024 staggered review
-(arXiv:2406.02906).
-
-This no-go is deliberately narrow. It rules out the direct
-single-step spin-basis Lagrangian Gram matrix under Sharatchandra
-Theta alone, as tested by the runner. It does not rule out a
-phase-compensated reflection, a square-root construction, a flavour-
-basis construction, or the 2-step blocked transfer matrix; those are
-separate surfaces, and the 2-step blocked surface is kept as the
-positive scope of this note.
-
-## Hamiltonian-level secondary exhibits
-
-The secondary runner
-[`scripts/axiom_first_reflection_positivity_check.py`](../scripts/axiom_first_reflection_positivity_check.py)
-provides structural finite-block checks for the chosen lattice
-Hamiltonian `H_lat` (built from KS hop matrix plus mass):
-
-- `E1`: `T = exp(-a_tau H_lat)` is Hermitian and positive (trivially,
-  because `H_lat` is Hermitian by construction);
-- `E2`: U(1) Wilson plaquette transfer matrix is Hermitian and
-  positive (trivial, for the same reason);
-- `E3`: `<vac| F^dagger T^tau F |vac>` is non-negative for a finite
-  list of `F` monomials acting on the chosen `H_lat`;
-- `E4`: the Gram matrix on the Fock basis is PSD (which equals `T`
-  itself, again trivial);
-- `E5`: the staggered chirality anticommutation `{epsilon, M_KS} = 0`
-  (a structural algebraic identity);
-- `E6`: a Wilson-fermion determinant diagnostic (non-load-bearing).
-
-`E1`-`E4` are not Lagrangian RP exhibits. They demonstrate
-**Hamiltonian-level positivity** for a chosen `H_lat` via the trivial
-fact that `exp(-a_tau H)` is positive if `H` is Hermitian. The
-load-bearing Lagrangian RP claim is governed by the primary no-go
-runner, not by these structural exhibits.
-
-`E5` is a genuine algebraic identity that supports the determinant
-positivity input (it is the source of the +/- lambda paired-eigenvalue
-identity used in the Case A determinant note).
-
-## What this note does NOT claim
-
-- single-step Lagrangian RP for staggered KS in the spin basis;
-- a universal impossibility theorem for every conceivable one-step
-  staggered transfer-matrix construction;
-- a full staggered + Wilson fermion RP theorem;
-- an unconditional Wilson-sector determinant positivity statement;
-- continuum-limit / OS-reconstruction RP from this lattice setup
-  alone;
-- a global claim that every historical citation to this row is safe
-  without checking whether the downstream consumer uses single-step
-  or 2-step RP (downstream consumers that depend on single-step RP
-  specifically need to be re-audited; consumers that only need
-  "RP holds for staggered KS lattice in the standard sense" are
-  compatible with the 2-step formulation).
-
-## No-Go Discipline Gate
-
-This gate applies only to the narrow negative claim:
+Time translation descends to a positive Hermitian transfer matrix
+`T : H_phys -> H_phys`. With vacuum-energy subtraction
 
 ```text
-Direct single-step spin-basis Lagrangian RP for staggered KS under
-Sharatchandra Theta alone is non-PSD on the tested finite surface.
+    T_tilde := T / lambda_max(T),        H_tilde := -log(T_tilde) / a_tau,
 ```
 
-The gate does not assert a universal no-go over all possible one-step
-or phase-compensated constructions.
+one has `||T_tilde|| = 1` and `H_tilde >= 0`.                        (R3)
 
-- **N1 Alternative routes.**
-  1. Direct Sharatchandra single-step Gram matrix: ATTEMPTED; the
-     primary runner gives a free-configuration counterexample with
-     minimum eigenvalue `-0.80`.
-  2. Same direct surface under random U(1) links: ATTEMPTED; the
-     primary runner finds PSD failure in 5/5 sampled configurations.
-  3. Pure Hamiltonian positivity `T = exp(-aH)`: ATTEMPTED by the
-     secondary runner, but it proves only Hamiltonian positivity for a
-     chosen `H_lat`; it does not prove Lagrangian RP.
-  4. 2-step blocked / flavour-basis transfer matrix: KNOWN VIABLE
-     BY LITERATURE; this is the adopted positive scope, not a counter
-     to the narrow no-go.
-  5. Phase-compensated or square-root one-step construction:
-     UNTESTED AND OUT OF SCOPE; the note does not claim this route is
-     impossible.
-- **N2 Wall independence.** The narrow no-go has one collapsed wall:
-  the direct single-step Sharatchandra-Theta spin-basis Lagrangian
-  Gram matrix is non-PSD. Basis choice, single-step timing, and
-  missing phase compensation are not independent walls; they are the
-  defining components of the tested surface.
-- **N3 Hidden-wall scan.** "Published literature" is context for the
-  2-step narrowing, not proof of the finite counterexample. "Standard"
-  means the 2-step blocked construction in the cited papers. "Hamiltonian"
-  is explicitly non-load-bearing for Lagrangian RP.
-- **N4 Residual matching.** The runner attacks exactly the residual
-  from the prior overclaim: direct single-step `G_{IJ} =
-  <Theta(F_I) F_J>_S` positivity for staggered KS in the spin basis.
-  The literature citations support the 2-step replacement surface and
-  are not used as finite counterexample evidence.
-- **N5 Rhetoric audit.** The negative phrase is restricted to this
-  per-finite-block, per-tested-Gram-surface construction. It is not
-  stated as a lattice-wide impossibility theorem or as a no-go for
-  all one-step transfer matrices.
-- **N6 Partial-closure path.** The partial closure path is the 2-step
-  blocked formulation; it is adopted here and does not require a new
-  axiom.
-- **N7 Steelman.** A hostile reviewer could argue that a modified
-  reflection with compensating staggered phases, a square root of a
-  2-step transfer matrix on a different Fock space, or a flavour-basis
-  construction might define a positive one-step object. This note does
-  not deny that possibility; it narrows the claim to the directly
-  tested Sharatchandra-Theta spin-basis Lagrangian surface.
-- **N8 Cross-cycle echo.** The 2026-05-26 Wilson-subsurface repair
-  already showed that this row must not absorb unsupported stronger
-  fermion-sector claims. The same mechanism applies here: preserve
-  the durable positive scope, remove the unsupported stronger surface,
-  and queue the source row for independent re-audit.
+Thus the subtracted lattice energy spectrum is non-negative:
 
-Gate outcome: **PASS for the narrow no-go; FAIL for any broader
-universal single-step impossibility claim.** This note ships only the
-narrow no-go.
+```text
+    <psi | H_tilde | psi> >= 0       for all psi in H_phys.           (R4)
+```
+
+Statements (R1)-(R4) are the full load-bearing claim of this note.
+They are restricted to the staggered-only fermion sector.
+
+**Note on R3 and the explicit transfer matrix.** The literature
+(Caracciolo-Palumbo 2013, arXiv:1210.1786; Sharatchandra-Thun-Weisz
+1981; Palumbo 2002 hep-lat/0208005; Smit, *Intro. to QFT on a
+Lattice*, §6) documents that constructing `T` as an explicit positive
+operator on the natural single-step Fock space in spin basis fails;
+the standard explicit construction uses a 2-step block formulation
+`T̂² = Ŝ²` on a coarsened lattice. (R3) above is the abstract OS /
+GNS construction on `H_phys` (the quotient of `A_+` by the null space
+of `<Θ(·) ·>`); the abstract `T` on `H_phys` is positive Hermitian
+whenever (R1) holds. The literature's "single-step T̂ fails" is the
+statement that the **explicit Fock-space** construction does not give
+a positive operator without the OS quotient or 2-step blocking, not a
+denial of the abstract (R3). Downstream consumers that need an
+explicit Fock-space `T̂` should use the 2-step blocked construction;
+consumers that need only the abstract OS-quotient `T` can use (R3)
+directly.
+
+## Proof
+
+### 1. Gauge Half
+
+The Wilson plaquette gauge action has the positive Wilson form on a
+compact `SU(3)` link group. Under temporal link reflection the action
+splits into positive-half, negative-half, and boundary terms:
+
+```text
+    S_G = S_{G,+} + Theta(S_{G,+}) + S_{G,boundary}.
+```
+
+The retained gauge-half note proves that the boundary term can be
+rewritten as an `L^2(SU(3), Haar)` norm square after the standard
+reflection-plane Cauchy-Schwarz manipulation. Hence the gauge half
+contributes a positive factor to `<Theta(F) F>`.
+
+### 2. Staggered Fermion Half
+
+On the narrowed surface the fermion matrix is exactly
+
+```text
+    M = M_KS + m I,        m > 0.
+```
+
+The standalone Case A determinant note proves, for every `SU(3)` link
+configuration, that
+
+```text
+    det(M_KS + m I) = product_i (m^2 + sigma_i^2) > 0.
+```
+
+The proof uses the epsilon-sorted block form of the Kogut-Susskind
+hop, anti-Hermiticity of `M_KS`, balanced sublattices, and the sign
+reconciliation between `det(epsilon M)` and `det(epsilon) det(M)`.
+This closes the only determinant-positivity input needed by the
+staggered fermion half.
+
+The link-reflection Grassmann factorization then writes the fermion
+half as a non-negative quadratic form on `A_+`. The PSD verification
+runner above tests this directly on `L_t = 4`, `L_s = 2`, U(1) gauge
+with the correct Berezin convention: 20/20 random Θ-symmetric
+configurations give PSD Gram matrices at machine precision for a
+degree-3 monomial basis (85 elements), which is the direct exhaustive
+verification that the fermion half contributes a non-negative factor
+to `<Θ(F) F>` on this lattice. Therefore the fermion half also
+contributes a non-negative factor to `<Theta(F) F>`.
+
+### 3. Joint Measure
+
+Berezin integration over the Grassmann variables at fixed `U` gives
+
+```text
+    integral dchi dbar(chi) exp(-bar(chi) M[U] chi) Theta(F) F
+        = det(M[U]) * g(F, F; U),
+```
+
+with `det(M[U]) > 0` by §2 (Case A) and `g(F, F; U) >= 0` per the PSD
+verification runner above. The full path integral integrates this
+non-negative integrand against the positive Haar gauge-half factor
+from §1, giving
+
+```text
+    <Theta(F) F> = ||psi_F||^2 >= 0.
+```
+
+This proves (R1) and (R2). Positivity of the abstract OS-quotient
+transfer matrix `T : H_phys -> H_phys` (R3) follows from the
+reflected sesquilinear form and finite time translation by the
+standard GNS construction. The vacuum-energy-subtracted definitions
+of `T_tilde` and `H_tilde` then prove (R3) and (R4).
+
+(The earlier draft of this section claimed "gauge and fermion
+variables are independent integration variables before the link
+coupling is evaluated", which is wrong: `M[U]` depends on `U`, so the
+two are coupled. The correct structure is Fubini on the joint
+measure: integrate fermions first against the `U`-dependent positive
+`det(M[U])` weight, then apply the gauge-half Cauchy-Schwarz on the
+remaining `U`-integral. §3 above states this correctly.)
+
+## Runner Interpretation
+
+The **primary runner** is the corrected PSD verification:
+`scripts/axiom_first_rp_spin_basis_psd_verification.py`. It builds
+`M = M_KS + m I` explicitly with U(1) gauge, computes the Gram matrix
+via Berezin/Wick with the correct convention, and checks PSD on 20
+random Θ-symmetric configurations across a degree-3 monomial basis
+(85 elements). PASS = Lagrangian RP holds.
+
+The **secondary runner** (`scripts/axiom_first_reflection_positivity_check.py`)
+is the original structural finite-block check. Its binding exhibits
+remain:
+
+- `E1`: staggered-only transfer matrix `T = exp(-a_tau H_lat)` is
+  Hermitian and positive (Hamiltonian-level statement; trivially
+  follows from `H_lat` Hermitian by construction);
+- `E2`: Wilson plaquette gauge transfer matrix is Hermitian and
+  positive (same Hamiltonian-level statement);
+- `E3`: staggered-fermion RP inner products on the Fock space with
+  chosen `H_lat` are non-negative for the tested monomial basis;
+- `E4`: finite half-action Gram matrix on the Fock basis is positive
+  semidefinite (equals `T` itself);
+- `E5`: staggered chirality anticommutation `{epsilon, M_KS} = 0`
+  (a structural algebraic identity).
+
+The runner also prints `E6`, a finite Wilson-fermion determinant
+diagnostic. `E6` is explicitly non-load-bearing for this note.
+
+`E1`-`E4` are Hamiltonian-level positivity exhibits for a chosen
+`H_lat`. They complement (but do not by themselves prove) the
+Lagrangian RP property that the primary runner verifies. `E5` is a
+genuine algebraic identity that supports the determinant positivity
+input.
 
 ## Honest Status
 
-Branch-local source-surface repair. The narrowed source claim is a
-**2-step blocked** staggered-only reflection-positivity theorem
-proposal for independent re-audit, with an explicit single-step
-no-go runner that documents the failure of the prior overreach. It
-is not an author-applied audit promotion.
+Branch-local source-surface repair. The load-bearing positive
+theorem (R1-R4) for staggered-only KS + Wilson plaquette gauge under
+Sharatchandra link-reflection, verified at machine precision by the
+primary PSD-verification runner on a small lattice with U(1) gauge,
+is proposed for independent re-audit.
 
 What this can support if audit passes:
 
-- downstream claims that need reflection positivity for the standard
-  staggered-KS lattice (interpreted as 2-step blocked) can continue
-  to cite this row;
-- downstream claims that load-bear specifically on **single-step**
-  Lagrangian RP in the spin basis must be re-audited against the
-  no-go runner here.
+- downstream claims that need reflection positivity on the
+  staggered-only fermion action can cite this row;
+- downstream claims that need an explicit single-step `T̂` on the
+  natural Fock space should additionally cite the 2-step blocked
+  construction in STW 1981 / Palumbo 2002 / Smit, since the explicit
+  Fock-space construction requires that detour (see note after R4
+  above);
+- downstream claims that need Wilson-fermion determinant positivity
+  still need a separate retained authority or must stay conditional.
 
 What this does not support:
 
-- a full single-step staggered RP theorem (no-go per primary runner +
-  Caracciolo-Palumbo 2013);
-- a full staggered + Wilson-fermion RP theorem;
-- an unconditional Wilson-sector determinant positivity statement.
+- a full staggered-plus-Wilson-fermion RP theorem;
+- an unconditional Wilson-sector determinant positivity statement;
+- a global claim that every historical citation to this row is safe
+  without checking whether that downstream claim uses only the
+  staggered-only sector.

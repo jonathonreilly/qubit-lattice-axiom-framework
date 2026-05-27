@@ -94,7 +94,7 @@
       "blocker": null,
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "positive_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
@@ -110,7 +110,7 @@
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py",
+      "runner_path": "scripts/axiom_first_rp_spin_basis_psd_verification.py",
       "transitive_descendants": 894
     },
     {

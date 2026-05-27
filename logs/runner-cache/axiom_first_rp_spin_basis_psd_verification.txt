@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/axiom_first_rp_spin_basis_psd_verification.py
+runner_sha256: 4841b76c4807599a1181e01533c84a838495604b3490aafdb38e0536741a68f1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+========================================================================
+Lagrangian RP verification: staggered KS, spin basis, link reflection
+Berezin convention: <bar(chi)_a chi_b>_S = M^{-1}[a, b]
+Lattice: L_t = 4, L_s = 2, mass = 0.5
+========================================================================
+
+Basis (A_+ monomials up to degree 3): 85 elements
+Positive-half sites: 4
+
+Test 1: free U = 1
+  det(M) = +9.7656e-02
+  ||G - G^dag||_max = 3.331e-16
+  Gram eigenvalues: min = -2.1477e-15, max = +7.7845e+00
+  PSD: YES
+
+Test 2: 20 random Theta-symmetric U(1) configurations
+  trial  0: herm = 3.38e-16, min eig = -1.3083e-15, max eig = +5.1144e+00, PSD
+  trial  1: herm = 8.62e-16, min eig = -2.2793e-15, max eig = +7.9409e+00, PSD
+  trial  2: herm = 2.48e-16, min eig = -2.1074e-15, max eig = +6.0115e+00, PSD
+  trial  3: herm = 3.33e-16, min eig = -2.2361e-15, max eig = +5.3885e+00, PSD
+  trial  4: herm = 2.83e-16, min eig = -1.8586e-15, max eig = +5.0485e+00, PSD
+  trial  5: herm = 2.99e-16, min eig = -1.9766e-15, max eig = +5.1021e+00, PSD
+  trial  6: herm = 6.02e-16, min eig = -2.4200e-15, max eig = +7.5665e+00, PSD
+  trial  7: herm = 9.88e-16, min eig = -2.5283e-15, max eig = +8.2800e+00, PSD
+  trial  8: herm = 2.48e-16, min eig = -1.2967e-15, max eig = +4.4535e+00, PSD
+  trial  9: herm = 3.80e-16, min eig = -3.6191e-15, max eig = +7.2332e+00, PSD
+  trial 10: herm = 4.23e-16, min eig = -2.1100e-15, max eig = +6.0772e+00, PSD
+  trial 11: herm = 2.22e-16, min eig = -2.0246e-15, max eig = +5.8269e+00, PSD
+  trial 12: herm = 4.34e-16, min eig = -3.0628e-15, max eig = +7.8198e+00, PSD
+  trial 13: herm = 5.12e-16, min eig = -2.1834e-15, max eig = +7.0252e+00, PSD
+  trial 14: herm = 4.58e-16, min eig = -2.2526e-15, max eig = +8.1645e+00, PSD
+  trial 15: herm = 5.58e-16, min eig = -2.5443e-15, max eig = +7.2508e+00, PSD
+  trial 16: herm = 2.23e-16, min eig = -2.0263e-15, max eig = +5.9695e+00, PSD
+  trial 17: herm = 2.97e-16, min eig = -1.9829e-15, max eig = +6.3037e+00, PSD
+  trial 18: herm = 2.29e-16, min eig = -1.9841e-15, max eig = +5.4257e+00, PSD
+  trial 19: herm = 3.55e-16, min eig = -2.1398e-15, max eig = +5.6951e+00, PSD
+
+  PSD count: 20/20
+  Worst Hermiticity error: 9.883e-16
+  Worst min eigenvalue:    -3.6191e-15
+
+========================================================================
+VERDICT
+========================================================================
+PASS -- Lagrangian RP holds for staggered KS in spin basis
+        under Sharatchandra link-reflection. All 20 random
+        Theta-symmetric U(1) configurations give PSD Gram
+        matrices at machine precision (Hermiticity at 1e-15,
+        min eigenvalue at machine zero) for a degree-3 basis
+        of 85 monomials.
+
+        The Caracciolo-Palumbo 2013 (arXiv:1210.1786) result
+        that single-step T_hat fails in the spin basis is
+        about an explicit transfer-matrix construction on the
+        natural Fock space, NOT about the Lagrangian RP
+        property tested here. Lagrangian RP holds; explicit
+        T_hat extraction on natural Fock space requires the
+        OS GNS quotient.
+
+----- stderr -----
+

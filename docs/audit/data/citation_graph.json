@@ -42415,18 +42415,18 @@
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "staggered_only_det_positivity_case_a_note_2026-05-17",
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1a5924143c0cd8d84222894b3cb09d0b15ec1cd1913d40dd4f87e85e84641f4a",
+      "note_hash": "028178255e9f8dcb5b7d01b73be7a1a3b433cf47b9f5b9a435936b3f9f9bc892",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "runner_path": "scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py",
-      "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation"
+      "runner_path": "scripts/axiom_first_rp_spin_basis_psd_verification.py",
+      "title": "Axiom-First Reflection Positivity: Staggered-Only Sector"
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
@@ -86201,22 +86201,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 636,
+      "bounded_theorem": 635,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
       "none": 1441,
       "open_gate": 50,
-      "positive_theorem": 171
+      "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1053,
+      "bounded_theorem": 1052,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
       "none": 426,
       "open_gate": 127,
-      "positive_theorem": 589
+      "positive_theorem": 590
     },
     "edge_count": 9828,
     "leaf_count": 806,

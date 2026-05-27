@@ -7980,6 +7980,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_frozen_stars_rigorous.py"
     },
+    "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py"
+    },
     "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03": {
       "assert_count": 2,
       "counts": {
@@ -37663,6 +37675,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_full_pl_s3_atlas_cocycle_closure.py": {
       "assert_count": 2,
       "claims": [
@@ -56312,13 +56339,13 @@
     "decoration_candidates": 347,
     "dominant_class_distribution": {
       "A": 242,
-      "B": 290,
+      "B": 291,
       "C": 760,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2029,
-    "runners_with_C": 986,
-    "runners_with_D": 592
+    "runners_classified": 2030,
+    "runners_with_C": 987,
+    "runners_with_D": 593
   }
 }

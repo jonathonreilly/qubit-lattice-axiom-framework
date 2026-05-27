@@ -53788,6 +53788,18 @@
       "runner_path": "scripts/frontier_frozen_stars_rigorous.py",
       "title": "Frozen Stars Rigorous: Bounded Hartree Note"
     },
+    "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28": {
+      "claim_id": "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "fde6fa6aa3f455b6f1d37ab0839fa67cfb8c7ac4e2451a204bbbe0e02b4b13db",
+      "path": "docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "runner_path": "scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py",
+      "title": "FRW + Adiabatic Expansion Cosmological-Backdrop Open Gate"
+    },
     "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03": {
       "claim_id": "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03",
       "claim_type_author_hint": null,
@@ -85124,6 +85136,7 @@
     "fourth_family_complex_boundary_note",
     "fourth_family_quadrant_note",
     "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
+    "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28",
     "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
     "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
     "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
@@ -85685,7 +85698,7 @@
       "meta": 192,
       "no_go": 84,
       "none": 1442,
-      "open_gate": 49,
+      "open_gate": 50,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
@@ -85694,13 +85707,13 @@
       "meta": 192,
       "no_go": 187,
       "none": 426,
-      "open_gate": 126,
+      "open_gate": 127,
       "positive_theorem": 589
     },
     "edge_count": 9768,
-    "leaf_count": 800,
-    "node_count": 2558,
-    "root_count": 856,
-    "runners_with_path": 2134
+    "leaf_count": 801,
+    "node_count": 2559,
+    "root_count": 857,
+    "runners_with_path": 2135
   }
 }

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 235,
-    "high": 331,
+    "high": 330,
     "leaf": 327,
     "medium": 331
   },
@@ -6653,31 +6653,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gravity_sign_audit_2026-04-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
-        "minimal_axioms_2026-05-03"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.248,
-      "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_correct_coupling.py",
-      "transitive_descendants": 75
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -36939,6 +36914,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 57,
-  "total_pending": 1224
+  "ready_count": 56,
+  "total_pending": 1223
 }

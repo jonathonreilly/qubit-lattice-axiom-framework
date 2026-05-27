@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 517 |
+| **retained_bounded** | 518 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1187 |
+| unaudited | 1186 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 814 |
+| `audited_clean` | 815 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1416 |
+| `unaudited` | 1415 |
 
 | claim_type | count |
 |---|---:|
@@ -815,6 +815,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12568,6 +12569,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the all-trivial plaquette assignment lambda=(0,0), the cube contribution is constant so rho=delta_(0,0), and inserting that rho into the retained source-sector operator gives P_trivial(6)=0.4225317396, while the L_s=2 PBC geometry and bipartite adjacency are verified by finite enumeration.  _(class `C`)_
 - **chain closes:** True — Within the narrowed scope, the runner constructs the finite cube, checks link incidence/orientation and BFS bipartiteness, then computes the rho=delta Perron solve from the displayed source-sector operator. The non-trivial rho and any P_cube bound are explicitly outside the audited claim.
 - **rationale:** All cited authorities needed for the narrowed claim are retained-grade, and the runner source performs real finite enumeration and a Perron computation rather than merely printing the target value. The hard-coded Reference B tolerance is only a comparison check; the reported P_trivial value is recomputed from rho=delta in the source-sector matrix. No physical full-cube rho, non-trivial intertwiner trace, or P_cube >= P_trivial bound is audited or needed for this narrowed theorem.
+- **auditor confidence:** high
+
+### `su3_dabc_symmetric_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract algebraic SU(3) carrier supplied by the retained one-hop authority, with Gell-Mann T^a=lambda^a/2 normalization and trace-projection identities only; no physical color, QCD, or SM interpretation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-kant-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Trace-orthogonal projection of anticommutator and commutator parts in the Gell-Mann basis yields the d tensor, f tensor, and product decomposition.  _(class `A`)_
+- **chain closes:** True — The retained parent supplies the exact algebraic SU(3) carrier. Given that carrier and the admitted trace inner product/projection facts, D1-D6 are finite-dimensional matrix identities verified directly by the runner.
+- **rationale:** The claim is bounded to algebraic SU(3) structure constants and product decomposition. It does not rely on excluded physical-color or QCD readings. The added d^{abc} tensor, reference values, symmetry/reality facts, and combined T^a T^b decomposition are concrete algebraic content on the retained carrier, not merely a renaming of the parent.
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

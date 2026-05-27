@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 29625
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T22:34:54Z"
+last_checkpoint_utc: "2026-05-27T22:41:38Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_nontrivial_block_matrix_element_support
@@ -293,8 +293,11 @@ commands_run:
   - "python3 -m py_compile scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py scripts/frontier_yt_c3_real_record_reflection_even_source.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS"
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
+  - "git commit -m 'Add C3 nontrivial block matrix element support' -> 6110182cb8abd8043246a37e773888e9fb87b27d"
+  - "git push -> branch updated"
+  - "gh pr edit 1980 --body-file /tmp/pr1980_body_block22.md -> PR body updated"
 review_disposition: pass_for_exact_support_only
-pr_status: "pending update for C3 nontrivial block matrix-element support block"
-latest_science_commit: 120d0ebdf8251c512af9f6b5bc811669223e504d
+pr_status: "PR #1980 body updated with the C3 nontrivial-block matrix-element support result, artifacts, verification, and next exact action."
+latest_science_commit: 6110182cb8abd8043246a37e773888e9fb87b27d
 next_exact_action: "Derive accepted zero-singlet physical top-block membership plus same-surface generator factorization, or produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

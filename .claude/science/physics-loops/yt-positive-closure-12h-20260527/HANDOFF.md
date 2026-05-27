@@ -86,6 +86,17 @@ Cycle 10 nontrivial-block support verification:
 - YAML validation passed.
 - `git diff --check` passed.
 
+Cycle 10 nontrivial-block support science commit pushed and recorded in
+PR #1980:
+
+```text
+6110182cb8abd8043246a37e773888e9fb87b27d
+```
+
+PR #1980 body was updated with the nontrivial-block matrix-element support
+result, artifacts, verification, and next exact action.  No
+`POSITIVE_CLOSURE` marker was written.
+
 New strict W/Z plus C3 top-row splice result:
 
 ```text

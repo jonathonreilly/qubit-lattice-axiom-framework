@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 517 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1188 |
+| unaudited | 1187 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -47,6 +47,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
+| `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 4 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
@@ -55,16 +56,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 814 |
 | `audited_conditional` | 72 |
-| `audited_decoration` | 46 |
+| `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1417 |
+| `unaudited` | 1416 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1070 |
-| `decoration` | 47 |
+| `bounded_theorem` | 1069 |
+| `decoration` | 48 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
@@ -1047,6 +1048,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
+| `strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_strong_cp_theta_zero_note` | weak | codex-gpt-5.5 | A | `strong_cp_theta_zero_note` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -12354,6 +12356,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** By Theta-anti-invariance of h, exp(-i c (h(x) + h(Theta x))) = 1, so the symmetrically modified reflected expectation equals the original RP norm-square.  _(class `A`)_
 - **chain closes:** True — The cited authority is retained_bounded and supplies the reflected-expectation norm-square identity. The added CP-odd phase cancels pointwise under the stated Theta-anti-invariance, so the no-go closes within the narrowed half-square RP scope.
 - **rationale:** The proof is a direct algebraic closure over the retained upstream identity: h(Theta x) = -h(x) cancels the symmetric phase, and reflection-Hermiticity makes F(Theta x)F(x) a norm-square factor. The runner source genuinely computes the finite-carrier identities with sympy/numpy and does not hard-code contested constants or import external comparators. The no-go gate passes at this packet scope: attacks via non-Hermitian observables, non-anti-invariant h, fixed points, carrier extension, single-side phases, and real-action admissibility either fail by the stated algebra or fall outside the narrowed operational claim. The clean verdict is only for the half-square RP detection failure, not for full continuum theta physics or independent action-class admissibility.
+- **auditor confidence:** high
+
+### `strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10`
+
+- **Note:** [`STRONG_CP_THETA_ZERO_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`](../../docs/STRONG_CP_THETA_ZERO_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Scope-narrowing restatement of the retained-bounded strong_cp_theta_zero_note selected-surface theta_eff=0 claim; it reuses the parent runner and adds no independent physical content beyond the parent row.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_strong_cp_theta_zero_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** The note isolates which frontier_strong_cp_theta_zero.py checks are internal consistency checks on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface, citing strong_cp_theta_zero_note as its sole parent.  _(class `A`)_
+- **chain closes:** False — The source has one retained-bounded parent, reuses the parent runner, and does not add an independent observable, comparator, bridge theorem, or runner result; it is useful scope bookkeeping but not a separate retained theorem.
+- **rationale:** Issue: the row is advertised as a bounded theorem, but its load-bearing content is a restatement of the already audited strong_cp_theta_zero_note selected-surface scope and runner results. Why this blocks: keeping it as a separate retained theorem would duplicate the parent claim surface without independent physics. Repair target: cite the parent retained-bounded row for theta_eff=0 selected-surface closure; use this note only as boxed scope documentation. Claim boundary until fixed: decoration under strong_cp_theta_zero_note.
+- **decoration parent:** `strong_cp_theta_zero_note`
 - **auditor confidence:** high
 
 ### `strong_cp_theta_zero_note`

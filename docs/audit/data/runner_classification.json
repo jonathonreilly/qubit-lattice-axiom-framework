@@ -23569,16 +23569,16 @@
       "runner": "scripts/frontier_wave_direct_dm_h025_fam1_seed1_control_note_hostile_audit_findings.py"
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/wave_direct_dm_h025_point_runner.py"
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py"
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note_2026-05-17": {
       "assert_count": 0,
@@ -55557,6 +55557,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py": {
+      "assert_count": 1,
+      "claims": [
+        "wave_direct_dm_h025_fam2_seed0_boundary_note"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py": {
       "assert_count": 0,
       "claims": [
@@ -55590,7 +55605,6 @@
     "scripts/wave_direct_dm_h025_point_runner.py": {
       "assert_count": 0,
       "claims": [
-        "wave_direct_dm_h025_fam2_seed0_boundary_note",
         "wave_direct_dm_h025_fam2_seed1_followup_note",
         "wave_direct_dm_h025_high_band_boundary_note",
         "wave_direct_dm_h025_low_band_retention_note"
@@ -55970,15 +55984,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 339,
+    "decoration_candidates": 340,
     "dominant_class_distribution": {
-      "A": 236,
+      "A": 237,
       "B": 286,
       "C": 757,
       "D": 299,
       "none": 437
     },
-    "runners_classified": 2015,
+    "runners_classified": 2016,
     "runners_with_C": 981,
     "runners_with_D": 587
   }

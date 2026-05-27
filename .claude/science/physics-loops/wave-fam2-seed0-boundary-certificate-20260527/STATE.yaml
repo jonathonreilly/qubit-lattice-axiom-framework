@@ -1,0 +1,16 @@
+goal: repair audited conditional row wave_direct_dm_h025_fam2_seed0_boundary_note
+target_status: proposed_retained
+mode: science-fix
+active_route: row_specific_runner_and_coarse_provenance_certificate
+current_surface_status: audited_conditional_before_reaudit
+files_touched:
+  - docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md
+  - scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed0_boundary_certificate.txt
+verification:
+  - python3 scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py --force --push-mode none --allow-non-main
+  - bash docs/audit/scripts/run_pipeline.sh
+  - python3 docs/audit/scripts/audit_lint.py --strict
+next_exact_action: independent audit of the reset unaudited row
+stop_condition: PR opened for review; no direct main modification

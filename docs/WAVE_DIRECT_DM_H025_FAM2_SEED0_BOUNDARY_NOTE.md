@@ -1,7 +1,9 @@
 # Wave Direct-dM H=0.25 Fam2 Seed0 Boundary Note
 
 **Date:** 2026-04-08
-**Status:** diagnosed closure on the first extra-family `H = 0.25` reserve point
+**Claim type:** bounded_theorem
+**Status:** row-specific runner-certified boundary on the first extra-family
+`H = 0.25` reserve point; ready for independent re-audit.
 
 This note records the first family-widening replay after the frozen
 `Fam1` two-point synthesis on the direct-`dM` matched-history lane:
@@ -14,7 +16,12 @@ This note records the first family-widening replay after the frozen
 
 ## Reference comparison
 
-All three rows use the same family, seed, and source strength.
+All three rows use the same family, seed, and source strength.  The
+row-specific certificate runner
+[`scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py`](../scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py)
+recomputes the full comparison below from the live matched-history solver,
+including the coarse `H = 0.50` / `0.35` provenance rows and the fine
+`H = 0.25` point.
 
 | H | dM(early) | dM(late) | delta_hist | R_hist | late gain |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -26,6 +33,8 @@ Runtime / memory for the `H = 0.25` replay:
 
 - elapsed = `120.78 s`
 - peak RSS = `691.0 MB`
+
+The paired certificate replay over all three H rows reports `PASS=21 FAIL=0`.
 
 ## Narrow read
 
@@ -68,6 +77,8 @@ So the honest conclusion is:
 
 ## Artifact Chain
 
+- [`scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py`](../scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py)
+- [`logs/runner-cache/wave_direct_dm_h025_fam2_seed0_boundary_certificate.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed0_boundary_certificate.txt)
 - [`scripts/wave_direct_dm_h025_point_runner.py`](../scripts/wave_direct_dm_h025_point_runner.py)
 - [`logs/2026-04-08-wave-direct-dm-h025-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-fam2-seed0.txt)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)

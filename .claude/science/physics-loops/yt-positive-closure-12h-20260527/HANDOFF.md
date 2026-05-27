@@ -141,6 +141,17 @@ Cycle 10 zero-singlet membership no-go verification:
 - YAML validation passed.
 - `git diff --check` passed.
 
+Cycle 10 zero-singlet membership no-go science commit pushed and recorded in
+PR #1980:
+
+```text
+24e0a70a598383e5a384a03ba901e5fb7ba64428
+```
+
+PR #1980 body was updated with the zero-singlet top-block membership no-go
+result, artifacts, verification, and next exact action.  No
+`POSITIVE_CLOSURE` marker was written.
+
 New strict W/Z plus C3 top-row splice result:
 
 ```text

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 513 |
+| **retained_bounded** | 514 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1192 |
+| unaudited | 1191 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 810 |
+| `audited_clean` | 811 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1421 |
+| `unaudited` | 1420 |
 
 | claim_type | count |
 |---|---:|
@@ -591,6 +591,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
+| `nn_lattice_rescaled_c2_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_continuum_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_full_kernel_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8915,6 +8916,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe wording is that the widened W = 12, h = 0.25 replay gives a far-tail fit of b^(-1.17) on the tested z >= 5 window, is a strong finite-lattice replay, and is not a universal theorem.  _(class `B`)_
 - **chain closes:** True — The source note explicitly narrows the historical headline to the retained bounded wide-tail replay note. The completed replay log matches the dependency note's frozen values; the live short-budget run timed out just before completion and is not used as negative evidence.
 - **rationale:** The audited claim is the bounded finite-window replay statement, not the broader historical headline. The one-hop dependency is retained_bounded, and the completed runner log reports Born=4.82e-15, k=0=+0.000000, 9/9 TOWARD rows, peak-tail b^(-1.07) with R^2=0.990, and far-tail b^(-1.17) with R^2=0.997, matching the source and dependency notes. Residual risk is only asymptotic/generalization risk, which the source note explicitly excludes.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_c2_derivation_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_C2_DERIVATION_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_C2_DERIVATION_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded closed-form phase-saddle support for c2_inf = k(2 - sqrt(2))/(4 c L_total) in the deterministic-rescale NN no-slit, single-source, field-free harness at BETA=0.8, K_PHYS=5.0, L_total=40, FANOUT=3, with checked h in {0.5, 0.25, 0.125, 0.0625}; no positive PDE/Schrodinger or general-parameter theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-lagrange-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** With no slit anchoring, the propagation length in the phase saddle is L_total, and c2(h) = Im(r)/(4 L_total h |r|^2) = sin(k h (sqrt(2)-1))/(2 sqrt(2) c L_total h), hence c2_inf = k(2 - sqrt(2))/(4 c L_total).  _(class `A`)_
+- **chain closes:** True — The per-edge amplitudes and deterministic rescale schedule are fixed by retained bounded inputs, and the no-slit retained dependency supplies the diagnostic c2(h)/c2_inf comparison target. The algebraic saddle reduction closes for the bounded support scope; it does not assert a PDE bridge or exact formal remainder theorem.
+- **rationale:** The derivation is a local algebraic saddle calculation over the retained no-slit/rescale harness inputs, with the contested L_total choice justified by the absence of slits and sharply checked against the wrong L_2 alternative. The runner does not instantiate the full lattice, but it correctly computes the closed form and compares it to retained no-slit diagnostic values: analytic residual 0.117%, all per-h residuals <=1%, K/(4L), L_2, and ray-optics alternatives worse. The source only inherits the retained no-slit non-Schrodinger boundary; it does not ship a new no-go.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10`

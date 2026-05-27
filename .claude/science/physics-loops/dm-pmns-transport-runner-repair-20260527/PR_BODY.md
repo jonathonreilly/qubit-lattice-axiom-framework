@@ -1,5 +1,7 @@
 ## Summary
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2076
+
 Repairs the stale runner artifact for
 `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16`.
 

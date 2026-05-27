@@ -24952,8 +24952,8 @@
       "assert_count": 0,
       "counts": {
         "A": 7,
-        "B": 0,
-        "C": 47,
+        "B": 1,
+        "C": 46,
         "D": 0
       },
       "decoration_candidate": false,
@@ -50880,8 +50880,8 @@
       ],
       "counts": {
         "A": 7,
-        "B": 0,
-        "C": 47,
+        "B": 1,
+        "C": 46,
         "D": 0
       },
       "decoration_candidate": false,

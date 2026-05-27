@@ -17,8 +17,7 @@ PARENT TARGET:
 WHAT THIS RUNNER DOES:
   Eight verification gates that EXHIBIT the bounded action-surface selector
   inside the canonical leading-beta ansatz on actual SU(3) configurations +
-  symbolic continuum limit matching the retained canonical normalization (beta = 6 via
-  G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03).
+  symbolic continuum limit matching the scoped canonical normalization premise beta = 6.
 
   V1 - Gauge-invariant scalar functional enumeration
   V2 - Real-action exclusion of imaginary-plaquette term
@@ -27,12 +26,12 @@ WHAT THIS RUNNER DOES:
   V5 - Imaginary-plaquette real proxy samples both signs
   V6 - Canonical ansatz enumeration; only Re Tr U_P passes the leading-beta gate
   V7 - Explicit F~F-proxy term construction + rejection
-  V8 - Compose with retained canonical-normalization primitive: beta = 6 emerges
+  V8 - Scoped beta-matching consistency: beta = 6 is internally consistent
 
   PASS = 8, FAIL = 0 expected.
 
 ANTI-OVERCLAIM:
-  - Does NOT claim canonical normalization beta=6 derived here (uses the retained primitive as input).
+  - Does NOT claim canonical normalization beta=6 derived here (treats it as a scoped premise).
   - Does NOT claim (P4)/(P5) derived from the framework baseline; they are standard QFT conventions.
   - Does NOT extend beyond single-plaquette scope (clover, multi-plaquette etc. out of scope).
   - Does NOT solve strong CP (second missing bridge out of scope).
@@ -716,17 +715,17 @@ def test_V7_FFtilde_proxy_construction_rejection():
 
 
 # ---------------------------------------------------------------------------
-# V8 - Compose with retained canonical-normalization primitive
+# V8 - Scoped beta-matching consistency
 # ---------------------------------------------------------------------------
 
 
 def test_V8_compose_with_g_bare_rescaling():
-    print("\n=== V8: Compose with retained canonical-normalization primitive ===\n")
+    print("\n=== V8: Scoped beta-matching consistency ===\n")
 
-    # The retained primitive G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03
-    # establishes: beta = 2 N_c / g_bare^2 fixes beta once canonical normalization
-    # Tr(T_a T_b) = delta_ab / 2 is fixed. With N_c = 3 and the retained
-    # canonical-normalization value g_bare^2 = 1, we get beta = 6.
+    # This gate checks internal consistency of the scoped Wilson matching premise:
+    # beta = 2 N_c / g_bare^2 fixes beta once canonical generator normalization
+    # Tr(T_a T_b) = delta_ab / 2 is fixed. With N_c = 3 and scoped
+    # g_bare^2 = 1, the bounded surface uses beta = 6.
 
     # Verify: the leading-order continuum-limit match works ONLY at beta = 6 for the canonical
     # generator normalization.
@@ -757,16 +756,16 @@ def test_V8_compose_with_g_bare_rescaling():
     # in front of (N_c - Re Tr U_P) as the chosen action.
 
     # Predicted relation: g_bare^2 = 2 N_c / beta. For N_c = 3 and beta = 6: g_bare^2 = 1.
-    # Test: compute the predicted g_bare from beta = 6 with canonical normalization
+    # Test: compute the predicted g_bare from the scoped beta = 6 premise.
     beta_test = 6.0
     g_bare_sq_predicted = 2 * N_c / beta_test
     check(
-        "V8.2  Retained-primitive relation: g_bare^2 = 2 N_c / beta = 1 at beta = 6, N_c = 3",
+        "V8.2  Scoped relation: g_bare^2 = 2 N_c / beta = 1 at beta = 6, N_c = 3",
         abs(g_bare_sq_predicted - 1.0) < 1e-12,
         f"g_bare^2 = {g_bare_sq_predicted:.6f}",
     )
 
-    # Inverse direction: from canonical normalization + g_bare^2 = 1, derive beta = 6
+    # Inverse direction: from canonical normalization + scoped g_bare^2 = 1, recover beta = 6.
     g_bare_sq = 1.0
     beta_derived = 2 * N_c / g_bare_sq
     check(
@@ -775,15 +774,13 @@ def test_V8_compose_with_g_bare_rescaling():
         f"beta = {beta_derived:.6f}",
     )
 
-    # Confirm: this composition produces beta = 6 as the canonical Wilson coefficient.
-    # The retained primitive says g_bare carries no independent scalar freedom
-    # under canonical normalization, so beta is fixed once the SU(3) color
-    # dimension N_c = 3 is fixed.
+    # Confirm: the scoped matching premise produces beta = 6 as the canonical Wilson coefficient.
+    # This is not a retained-authority import; it is the explicit boundary of this bounded packet.
 
     check(
-        "V8   Composition with retained canonical-normalization authority: beta = 6 from N_c = 3",
+        "V8   Scoped beta-matching consistency: beta = 6 from N_c = 3",
         T_gram_max_dev < 1e-12 and abs(beta_derived - 6.0) < 1e-12,
-        "Canonical Wilson coefficient anchored by retained primitive G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03",
+        "Canonical Wilson coefficient checked as a scoped premise, not imported retained authority",
     )
 
 

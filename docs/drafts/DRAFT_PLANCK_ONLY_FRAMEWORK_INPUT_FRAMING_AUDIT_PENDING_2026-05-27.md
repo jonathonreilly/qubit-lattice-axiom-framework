@@ -1,13 +1,70 @@
-# Planck as the Framework's Sole Dimensionful Input — Framing Synthesis
+# [DRAFT — PARKED] Planck as Framework's Sole Dimensionful Input — Audit-Pending Synthesis
 
 **Date:** 2026-05-27
-**Type:** publication-surface synthesis note (front-door narrative)
-**Status authority:** independent audit lane only. This is a *framing/synthesis* note
-for the publication surface. It does **not** introduce new axioms, admissions, or
-repo vocabulary. It does **not** assert retained-grade on any single row. It
-catalogs the cumulative bounded-closure posture reached after the 2026-05-25 →
-2026-05-27 hierarchy attack and frames its publication-surface presentation.
-**Source-side `proposal_allowed: false`**.
+**Status:** 🛑 **DRAFT — PARKED. DO NOT TREAT AS PUBLICATION SURFACE.**
+**Location:** `docs/drafts/` — explicitly OUTSIDE `docs/publication/`
+**Type:** planning document / future-state synthesis
+**Status authority:** independent audit lane only. **Every projection in this
+note depends on audit ratification of underlying PRs that have not happened yet.**
+
+## ⚠ Why this note is parked as DRAFT (read first)
+
+This note describes a future state of the framework that **does not exist on
+live `main` yet**. It synthesizes the cumulative bounded-closure posture of
+the 2026-05-25 → 2026-05-27 hierarchy attack, but every claim about
+"reduced axiom surface", "Tier-A retirement", or "Planck-only minimum"
+depends on PRs that are sitting unratified in the audit pipeline.
+
+### What's actually on live main (as of 2026-05-27)
+
+- `MINIMAL_AXIOMS_2026-05-20.md`: A1 (per-site qubit) + A2 (cubic lattice Z³)
+  — **A2 is still a separate axiom**
+- `tier_a_admissions.json`: `genuine_admitted_input_count: 4` (P1, AC_φλ, S, θ
+  all as derivation_targets / not_a_node) — **registry edits #1983, #1984 not
+  merged**
+- AC_φλ retirement (#1969) and θ retirement (#1978) **gated on capstones**
+- 24+ hierarchy bounded-closure PRs (#1991-#2046) **all unratified**
+
+### What this note projects
+
+- A1 reduces to qubit on 3D Euclidean substrate (via PR #2046 partial A2 collapse + identification clarification commit)
+- Tier-A registry collapses to `{S = M_Pl}` (post #1983, #1984, #1969, #1978 ratification)
+- Hierarchy primitives P1-P4 in bounded-closure (post the 24+ PR ratifications)
+- (4π)^-16 chain in 7-named-premise form
+- F2 2-loop residual confirmed at order-of-magnitude
+
+**The projections are honest** — they describe what the publication surface
+*will* look like IF the audit pipeline ratifies the queued work cleanly. But
+the projections are not the publication surface itself; they are a
+forward-looking synthesis kept in `docs/drafts/` until ratification happens.
+
+### When to migrate this back to `docs/publication/`
+
+When all of the following ratify on the live audit ledger:
+1. PR #1983 (P1 → stated_principle reclassification)
+2. PR #1984 (S → empirical_anchor reclassification)
+3. PR #1969 (AC_φλ Tier-A retirement) — gated on Codex capstone #1959-#1965
+4. PR #1978 (θ Tier-A retirement) — gated on Track A capstone #1974-#1981
+5. The 24+ hierarchy chain PRs (#1991-#2046, including #2026 P2 bounded closure, #2030 F2 confirmation, #2046 A2 partial collapse)
+
+At that point, this note's projections become ACTUAL framework state and the
+synthesis can be migrated back to `docs/publication/ci3_z3/` as the
+publication-surface mic-drop framing. Until then it stays here as a planning
+document.
+
+### What this draft does NOT do
+
+- Does **not** introduce new axioms, admissions, or vocabulary
+- Does **not** assert retained-grade on any individual row
+- Does **not** modify the live publication surface (`INPUTS_AND_QUALIFIERS_NOTE`,
+  `ARXIV_DRAFT`, etc.)
+- Does **not** consume PDG values as load-bearing inputs
+- **Source-side `proposal_allowed: false`** — this is a draft / planning
+  document, not a source-note proposal for audit ratification
+
+---
+
+## Original synthesis content (unchanged below — describes the post-audit projection)
 
 ## 0. Axiom surface and dimensionality convention
 

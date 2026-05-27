@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1238 |
+| unaudited | 1239 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 41 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,21 +57,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 827 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1468 |
+| `unaudited` | 1469 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1101 |
+| `bounded_theorem` | 1100 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 259 |
 | `open_gate` | 111 |
-| `positive_theorem` | 708 |
+| `positive_theorem` | 709 |
 
 | criticality | count |
 |---|---:|
@@ -88,7 +88,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 - runners classified: 2047
 - runners with (C) first-principles compute hits: 998
 - runners with (D) external comparator hits: 602
-- decoration candidates (no C, no D): 350
+- decoration candidates (no C, no D): 351
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `minimal_axioms` | meta | critical | 1057 | 39.05 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 181 | 39.01 | `unaudited` | unaudited |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 714 | 37.98 | `unaudited` | unaudited |
-| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 557 | 37.12 | `audited_clean` | **retained_no_go** |
+| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 556 | 36.62 | `audited_clean` | **retained_no_go** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1035 | 35.52 | `audited_clean` | **retained** |
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 935 | 33.87 | `audited_clean` | **retained** |
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 752 | 33.56 | `audited_clean` | **retained_bounded** |
@@ -955,7 +955,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `alpha_s_derived_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1322,21 +1321,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², α_LM² = (α_bare/u_0)² = α_bare·(α_bare/u_0²) = α_bare·α_s(v).  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and follows immediately from the two definitional equations plus positivity for the logarithm. No physical plaquette value, running bridge, PDG comparator, or retained dependency is needed for the theorem as stated.
 - **rationale:** The theorem closes inside its explicitly narrow scope: once α_LM and α_s(v) are defined as α_bare/u_0 and α_bare/u_0² over positive scalars, T1-T3 are forced by algebra. The runner's numeric retained-value checks are not load-bearing for the abstract theorem, and the source note explicitly excludes physical derivation or external comparator claims.
-- **auditor confidence:** high
-
-### `alpha_s_derived_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded algebraic identity candidate: if alpha_LM := alpha_bare/u_0, alpha_s(v) := alpha_bare/u_0^2, and the n_link=(1,2) tadpole-power split is supplied by retained authority, then alpha_LM^2 = alpha_bare * alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0. This audit does not ratify a value of u_0, any alpha_s(M_Z) readout, or any Standard-Model strong-coupling identification.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The load-bearing step is the source's assertion that the two coupling definitions D1 and D2 consume retained CMT/n_link identities from yt_ew_color_projection_theorem; after that, P1 and P2 are pure algebraic substitution.  _(class `B`)_
-- **chain closes:** False — The exact algebra closes only after D1, D2, and n_link=(1,2) are assumed, and the runner verifies that assumed algebra. The restricted one-hop dependency is YT_EW_COLOR_PROJECTION_THEOREM.md, whose current retained content is a kappa-family no-go for EW color projection and does not supply the CMT tadpole-power coupling identities claimed by this note.
-- **rationale:** Issue: the algebraic runner hard-codes the coupling definitions and n_link split, while the cited one-hop authority no longer supplies those CMT tadpole-power inputs. Why this blocks: without a retained source for D1, D2, and n_link=(1,2), the row reduces to a definition-level algebra identity rather than a retained positive theorem about the coupling chain. Repair target: cite and audit a retained theorem that supplies the CMT change-of-variables identity and the single-vertex/vacuum-polarization n_link counts, or rewrite this row as a purely definitional algebra lemma with no physics retention claim. Claim boundary until fixed: the symbolic identities are correct under the stated assumptions, but the assumptions are not closed by the current dependency packet.
-- **open / conditional deps cited:**
-  - `YT_EW_COLOR_PROJECTION_THEOREM.md`
 - **auditor confidence:** high
 
 ### `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`

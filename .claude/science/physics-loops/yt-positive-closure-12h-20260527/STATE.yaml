@@ -6,18 +6,18 @@ remaining_campaign_seconds_at_cycle_start: 37627
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T20:20:34Z"
+last_checkpoint_utc: "2026-05-27T20:32:46Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_representation_phase_selection_no_go
+active_route: c3_cubic_invariant_phase_selector_support_boundary
 hard_residual: "derive/certify dM_t/dell = A/sqrt(12)"
-actual_current_surface_status: no-go / open same-surface phase-angle law
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+actual_current_surface_status: conditional-support / open cubic phase law
+trace_class: upstream_support
+reachability_to_target: supports
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Finite C3 representation/character facts alone were pruned as a selector for the physical Y_T same-surface base phase angle. The C3-native unit Hermitian family H(phi)=cos(phi)B_x+sin(phi)B_y includes target-row witnesses such as phi=pi/2 and phi=2pi/3, but also singlet-row witnesses such as phi=0 and phi=pi/6. Therefore representation theory supplies available algebraic choices but does not select the physical phase law. Positive closure still needs an accepted same-surface phase-angle dynamics/readout theorem, or accepted strict W/top pole rows."
+claim_state_movement: "The cubic C3 trace invariant gives a concrete conditional phase-selector route. On the unit connected C3 phase circle, Tr(H(phi)^3)=sqrt(6)cos(3phi)/6. Its maxima are phi=0,+2pi/3,-2pi/3; the real-axis maximum gives the singlet row A/sqrt(3), while the oriented nonzero maxima give A/sqrt(12). Thus accepted cubic invariant maximization plus an accepted nonzero orientation branch would select phi=+/-2pi/3. The actual surface still lacks the accepted Y_T cubic phase potential and physical orientation branch."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -34,6 +34,9 @@ files_touched:
   - docs/YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_representation_phase_selection_no_go.py
   - outputs/yt_c3_representation_phase_selection_no_go_2026-05-27.json
+  - docs/YT_C3_CUBIC_INVARIANT_PHASE_SELECTOR_SUPPORT_BOUNDARY_NOTE_2026-05-27.md
+  - scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py
+  - outputs/yt_c3_cubic_invariant_phase_selector_support_boundary_2026-05-27.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -47,6 +50,8 @@ open_imports:
   - accepted orientation-odd same-surface C3 phase law with |y_0| > sqrt(3) x_0 on a signed nontrivial branch
   - accepted quantitative phase-angle/strength law, beyond orientation sign, nonzero B_y, or unit base normalization alone
   - accepted same-surface phase-angle law selecting phi = +/-2pi/3, or another nontrivial-cone angle, for the physical Y_T base operator
+  - accepted same-surface cubic phase potential or variational law
+  - accepted physical nonzero orientation branch for the base operator
   - contact, FV/IR, and model-class controls
   - new microscopic dynamics theorem deriving the accepted backend/projectors/matrix elements
 no_go_routes:
@@ -113,8 +118,23 @@ commands_run:
   - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
   - "python3 -m py_compile scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS"
   - "git diff --check -> PASS"
-review_disposition: pass_for_no_go_boundary_only
-pr_status: PR #1980 pending update for representation phase-selection no-go block after science commit 32942a29f1c355f90c96dd34756502d60f7043a1
-latest_science_commit: 32942a29f1c355f90c96dd34756502d60f7043a1
-next_exact_action: "Derive an accepted same-surface C3 phase-angle dynamics/readout theorem selecting a nontrivial-cone angle for the physical Y_T base operator and supplying W/top projectors plus source-generator matrix elements; otherwise pivot to accepted strict same-source top/W pole-row data with controls."
+  - "python3 scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py -> PASS=82 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=311 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py -> PASS=71 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py -> PASS=94 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py -> PASS=106 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py -> PASS=70 FAIL=0"
+  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py -> PASS=68 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py -> PASS=86 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py -> PASS=104 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "git diff --check -> PASS"
+review_disposition: pass_for_conditional_support_only
+pr_status: PR #1980 pending update for cubic invariant phase-selector support block
+latest_science_commit: pending_cubic_invariant_phase_selector_block
+next_exact_action: "Derive an accepted same-surface Y_T cubic phase potential/variational law plus physical nonzero orientation branch, with W/top projectors and source-generator matrix elements; otherwise pivot to accepted strict same-source top/W pole-row data with controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

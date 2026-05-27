@@ -75,3 +75,11 @@ selecting those angles, or strict pole rows.
   family contains target-row witnesses (`phi=pi/2`, `phi=2pi/3`) and
   singlet-row witnesses (`phi=0`, `phi=pi/6`). Choosing among them is an
   additional same-surface dynamics/readout law unless derived.
+
+Non-no-go support checkpoint after the twelfth block: the cubic C3 trace
+invariant gives a sharper conditional phase-selector route. On the unit
+connected base circle, `Tr(H(phi)^3)=sqrt(6)cos(3phi)/6`; cubic maxima are
+`phi=0,+2pi/3,-2pi/3`. The oriented nonzero maxima select nontrivial C3
+character lines and give `A/sqrt(12)`, but the singlet maximum gives
+`A/sqrt(3)`. The actual surface still needs an accepted Y_T cubic phase
+potential/variational law and a physical nonzero orientation branch.

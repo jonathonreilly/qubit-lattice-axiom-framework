@@ -21,6 +21,8 @@ The eleventh route checked primitive nontrivial C3 character phase angles as a
 concrete candidate for the still-open phase-angle law.
 The twelfth route tested whether finite C3 representation/character facts
 alone select that phase law.
+The thirteenth route tested whether the cubic C3 trace invariant supplies a
+phase-selector route.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -37,6 +39,7 @@ alone select that phase law.
 | Unit-normalized signed C3 base phase | no-go shortcut test | 3 | Pruned: the signed unit circle contains both `P_0` and nontrivial-line witnesses |
 | Primitive nontrivial C3 character phase angle `phi=+/-2pi/3` | conditional support | 2 | Landed: selects `P_omega2` or `P_omega` and gives `A/sqrt(12)`, but accepted phase law is open |
 | Finite C3 representation/character phase selection | no-go shortcut test | 3 | Pruned: C3-native unit Hermitian choices include both target and singlet rows |
+| Cubic C3 trace invariant phase selector | conditional support | 2 | Landed: cubic maximization plus accepted nonzero orientation would select primitive nontrivial angles, but accepted cubic dynamics/branch are open |
 
 ## Stuck Fan-Out
 
@@ -57,8 +60,9 @@ alone select that phase law.
 | Unit-normalized signed base dynamics | Add `x_0^2+y_0^2=1` to the signed branch | Fails; `(0,1)` selects `P_omega2`, but `(sqrt(3)/2,1/2)` selects `P_0` with the same sign and unit norm |
 | Primitive character angle | Test `phi=+/-2pi/3` on the unit base circle | Succeeds conditionally; it hits the target row, but deriving that phase for the physical Y_T base operator remains open |
 | Representation-only selection | Ask C3 character/projector facts or functions of `C` to choose the phase | Fails; the same C3-native family contains `phi=0` and `phi=pi/6` singlet witnesses |
+| Cubic trace invariant | Extremize `Tr(H(phi)^3)` on the unit C3 base circle | Succeeds conditionally; cubic maxima include `phi=+/-2pi/3`, but also the singlet `phi=0`, so accepted orientation/cubic dynamics remain load-bearing |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-same-surface phase-angle dynamics/readout theorem selecting a nontrivial-cone
-angle with accepted backend/projectors and matrix elements, or accepted strict
-pole rows. It does not close the coefficient row.
+same-surface cubic phase dynamics/orientation theorem selecting a
+nontrivial-cone angle with accepted backend/projectors and matrix elements, or
+accepted strict pole rows. It does not close the coefficient row.

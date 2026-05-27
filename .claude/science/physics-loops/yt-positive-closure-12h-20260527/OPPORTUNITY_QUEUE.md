@@ -14,7 +14,8 @@
 | 10 | Unit-normalized quantitative C3 phase-strength shortcut | low | medium | present | pruned; unit norm plus orientation sign still leaves singlet and nontrivial witnesses |
 | 11 | Primitive nontrivial C3 character phase-angle candidate `phi=+/-2pi/3` | medium | medium | present | conditional support landed; accepted same-surface phase-angle law not derived |
 | 12 | Finite C3 representation/character facts select the physical phase angle | low | medium | present | pruned; C3-native choices include both target and singlet rows |
-| 13 | New accepted quantitative orientation-phase angle theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | only remaining theory route |
+| 13 | Accepted cubic invariant phase potential plus orientation branch | medium | high | present | conditional support landed; accepted dynamics law and branch not derived |
+| 14 | New accepted quantitative orientation-phase angle theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -68,3 +69,12 @@ target-row and singlet-row witnesses. The next exact action is rank 4 or rank
 derive a same-surface dynamics/readout theorem selecting the physical
 nontrivial-cone phase angle and supplying W/top projectors plus source-generator
 matrix elements.
+
+Queue refresh after the thirteenth block: positive closure remains open. The
+cubic trace invariant supplies a concrete conditional selector: cubic
+maximization plus nonzero orientation branch selects `phi=+/-2pi/3`, but the
+accepted same-surface Y_T cubic phase potential and physical orientation branch
+remain open. The next exact action is rank 4 or rank 13: obtain accepted
+strict top/W pole-row data with controls, or derive that cubic phase
+dynamics/orientation law with W/top projectors and source-generator matrix
+elements.

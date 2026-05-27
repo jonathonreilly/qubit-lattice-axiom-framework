@@ -107,6 +107,10 @@ closed exactly:
   representation phase-selection no-go: finite C3 representation/character
   facts alone do not select that phase law, since C3-native unit Hermitian
   choices include both target-row and singlet-row witnesses
+  cubic invariant phase-selector support: on the unit C3 phase circle
+  Tr(H^3) = sqrt(6) cos(3 phi)/6, so cubic maximization plus an accepted
+  nonzero orientation branch would select phi = +/-2 pi/3, but the accepted
+  cubic phase law and branch remain open
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -951,6 +955,34 @@ cyclic shift identify available algebraic choices, but they do not select the
 physical Y_T base operator.  The remaining positive route is still an accepted
 same-surface dynamics/readout law for the phase angle, or strict pole rows.
 
+[`YT_C3_CUBIC_INVARIANT_PHASE_SELECTOR_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`](YT_C3_CUBIC_INVARIANT_PHASE_SELECTOR_SUPPORT_BOUNDARY_NOTE_2026-05-27.md)
+then tests a sharper finite variational route.  On the unit connected C3 base
+circle,
+
+```text
+Tr(H(phi)^2) = 1,
+Tr(H(phi)^3) = sqrt(6)/6 cos(3 phi).
+```
+
+The cubic maxima are:
+
+```text
+phi = 0, +2 pi/3, -2 pi/3.
+```
+
+The real-axis maximum gives the singlet row `A/sqrt(3)`, while the two
+oriented nonzero maxima give the target row `A/sqrt(12)`.  Therefore:
+
+```text
+accepted cubic invariant maximization
++ accepted nonzero orientation branch
+  -> phi = +2 pi/3 or -2 pi/3
+  -> A/sqrt(12).
+```
+
+This is conditional support, not closure: the current surface has not derived
+an accepted Y_T cubic phase potential or physical orientation branch.
+
 ## Non-Claims
 
 This note does not:
@@ -1018,6 +1050,10 @@ proposal_allowed_reason: |
   representation/character facts alone as the selector for that angle:
   C3-native unit Hermitian choices include both target-row and singlet-row
   witnesses.
+  The cubic invariant phase-selector support boundary gives a sharper
+  conditional route: cubic maximization plus a nonzero orientation branch
+  would select phi = +/-2 pi/3, but the accepted same-surface cubic phase
+  potential and physical orientation branch remain open.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

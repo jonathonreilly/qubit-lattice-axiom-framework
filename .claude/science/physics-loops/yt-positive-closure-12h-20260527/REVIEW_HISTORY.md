@@ -370,3 +370,35 @@ Verification recorded with this review:
   orientation-phase strength no-go, and C3 circulant dynamics boundary.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 13
+
+Scope:
+
+- C3 cubic invariant phase-selector support boundary note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks C3 trace invariants, cubic maxima, primitive-angle target rows, singlet-axis countermaximum, dependency outputs, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is conditional-support/open cubic phase law; future accepted cubic dynamics/orientation and strict rows remain live. |
+| Imports / support | DISCLOSED | Accepted same-surface cubic phase potential, physical orientation branch, W/top projectors, matrix elements, and strict pole rows remain open. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `actual_current_surface_status`, trace class, conditional status, and proposal firewall are explicit. |
+
+Disposition: pass for conditional-support artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=82 FAIL=0`
+- Full stack runner: `PASS=311 FAIL=0`
+- Adjacent Y_T runners passed: primitive character phase-angle candidate,
+  representation phase-selection no-go, quantitative phase-strength
+  underdetermination, phase-ordering cone support, same-surface matrix
+  factorization, strict sparse availability audit, orientation-phase strength
+  no-go, and C3 circulant dynamics boundary.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

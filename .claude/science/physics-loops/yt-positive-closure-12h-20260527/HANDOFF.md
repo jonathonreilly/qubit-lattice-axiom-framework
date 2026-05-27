@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced twelve science blocks, not positive retained-grade
+The campaign has produced thirteen science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -24,6 +24,7 @@ closure:
 11. a conditional-support primitive C3 character phase-angle candidate.
 12. a no-go for deriving the phase law from finite C3
     representation/character facts alone.
+13. a conditional-support cubic invariant phase-selector boundary.
 
 New result:
 
@@ -263,6 +264,23 @@ does not select the physical Y_T base phase. The remaining positive route
 needs an accepted same-surface phase-angle dynamics/readout law, or strict
 top/W pole rows.
 
+Thirteenth result:
+
+```text
+Tr(H(phi)^2) = 1
+Tr(H(phi)^3) = sqrt(6)/6 cos(3 phi)
+
+cubic maxima: phi = 0, +2 pi/3, -2 pi/3
+phi = 0       -> P_0      top -> A/sqrt(3)
+phi = +2 pi/3 -> P_omega2 top -> A/sqrt(12)
+phi = -2 pi/3 -> P_omega  top -> A/sqrt(12)
+```
+
+Thus accepted cubic invariant maximization plus an accepted nonzero
+orientation branch would select the primitive nontrivial character angle and
+give the target row. This is conditional support only: the accepted Y_T cubic
+phase potential and physical orientation branch are not derived.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -301,6 +319,9 @@ Artifacts:
 - `docs/YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_representation_phase_selection_no_go.py`
 - `outputs/yt_c3_representation_phase_selection_no_go_2026-05-27.json`
+- `docs/YT_C3_CUBIC_INVARIANT_PHASE_SELECTOR_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py`
+- `outputs/yt_c3_cubic_invariant_phase_selector_support_boundary_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
@@ -308,7 +329,8 @@ Verification so far:
 - `python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py` -> `SUMMARY: PASS=106 FAIL=0`
 - `python3 scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py` -> `SUMMARY: PASS=71 FAIL=0`
 - `python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py` -> `SUMMARY: PASS=94 FAIL=0`
-- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=303 FAIL=0`
+- `python3 scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py` -> `SUMMARY: PASS=82 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=311 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py` -> `SUMMARY: PASS=86 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py` -> `SUMMARY: PASS=68 FAIL=0`
 - `python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`
@@ -346,6 +368,22 @@ Verification so far:
 - `python3 -m py_compile ...` -> pass
 - `git diff --check` -> pass
 
+Final cubic-block verification before commit:
+
+- `python3 scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py` -> `SUMMARY: PASS=82 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=311 FAIL=0`
+- Adjacent runners passed: primitive character phase-angle candidate
+  `PASS=71`, representation phase-selection no-go `PASS=94`,
+  quantitative phase-strength underdetermination `PASS=106`,
+  phase-ordering cone support `PASS=70`, same-surface matrix factorization
+  `PASS=77`, strict sparse availability audit `PASS=74`,
+  orientation-phase strength no-go `PASS=68`, C3 circulant dynamics boundary
+  `PASS=95`, orientation-phase dynamics necessity `PASS=86`, and real
+  same-surface top-line obstruction `PASS=104`.
+- `python3 -m py_compile scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `PASS`
+- `ruby -e 'require "yaml"; YAML.load_file(ARGV[0]); puts "YAML OK"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml` -> `YAML OK`
+- `git diff --check` -> `PASS`
+
 No `POSITIVE_CLOSURE` marker was written.
 
 Cycle 4 science commit pushed and recorded in PR #1980:
@@ -373,6 +411,12 @@ Representation phase-selection no-go science commit pending PR update:
 32942a29f1c355f90c96dd34756502d60f7043a1
 ```
 
+Cubic invariant phase-selector support commit pending PR update:
+
+```text
+pending
+```
+
 Previous science commit pushed and recorded in PR #1980 before this cycle:
 
 ```text
@@ -388,8 +432,8 @@ f291e8410
 Next exact action:
 
 ```text
-derive accepted same-surface C3 phase-angle dynamics/readout law selecting a
-nontrivial-cone angle for the physical Y_T base operator while supplying W/top
-matrix elements; otherwise obtain accepted strict same-source top/W pole-row
-data with contact, FV/IR, and model-class controls.
+derive accepted same-surface Y_T cubic phase potential/variational law plus
+physical nonzero orientation branch while supplying W/top matrix elements;
+otherwise obtain accepted strict same-source top/W pole-row data with contact,
+FV/IR, and model-class controls.
 ```

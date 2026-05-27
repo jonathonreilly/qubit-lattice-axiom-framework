@@ -1,0 +1,115 @@
+{
+  "actual_current_surface_status": "conditional-support / open cubic phase law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "candidate_certificate": {
+    "accepted_physical_orientation_branch_derived": false,
+    "accepted_same_surface_cubic_phase_potential_derived": false,
+    "bare_retained_allowed": false,
+    "cubic_invariant_formula_derived": true,
+    "cubic_max_orbit_contains_primitive_angles": true,
+    "cubic_max_orbit_contains_singlet_axis": true,
+    "no_forbidden_imports": true,
+    "orientation_branch_plus_cubic_max_selects_target": true,
+    "proposal_allowed": false,
+    "quadratic_invariant_phase_blind": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "claim_id": "yt_c3_cubic_invariant_phase_selector_support_boundary_note_2026-05-27",
+  "conditional_surface_status": "A/sqrt(12) follows if an accepted same-surface cubic phase potential and orientation branch select phi=+/-2pi/3",
+  "cubic_phase_witnesses": {
+    "cubic_max_negative_branch": {
+      "cubic_trace": "sqrt(6)/6",
+      "largest_lines": [
+        "P_omega"
+      ],
+      "phi": "-2*pi/3",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "second_derivative": "-3*sqrt(6)/2",
+      "x0": "-1/2",
+      "y0": "-sqrt(3)/2"
+    },
+    "cubic_max_positive_branch": {
+      "cubic_trace": "sqrt(6)/6",
+      "largest_lines": [
+        "P_omega2"
+      ],
+      "phi": "2*pi/3",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "second_derivative": "-3*sqrt(6)/2",
+      "x0": "-1/2",
+      "y0": "sqrt(3)/2"
+    },
+    "cubic_max_real_axis": {
+      "cubic_trace": "sqrt(6)/6",
+      "largest_lines": [
+        "P_0"
+      ],
+      "phi": "0",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/3"
+      ],
+      "second_derivative": "-3*sqrt(6)/2",
+      "x0": "1",
+      "y0": "0"
+    },
+    "positive_orientation_nonmax_counter": {
+      "cubic_trace": "0",
+      "largest_lines": [
+        "P_0"
+      ],
+      "phi": "pi/6",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/3"
+      ],
+      "second_derivative": "0",
+      "x0": "sqrt(3)/2",
+      "y0": "1/2"
+    }
+  },
+  "dependency_status": {
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "phase_cone": {
+      "actual_current_surface_status": "exact-support / open phase-ordering import",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "primitive_angle": {
+      "actual_current_surface_status": "conditional-support / open phase-angle law",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "representation_nogo": {
+      "actual_current_surface_status": "no-go / open same-surface phase-angle law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "strict_availability": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py",
+  "literature_math_search": {
+    "external_literature_load_bearing": false,
+    "math_used": "finite C3 trace invariants and direct diagonalization"
+  },
+  "next_action": "derive accepted same-surface cubic phase dynamics/orientation, or produce accepted strict top/W pole rows",
+  "pass_count": 82,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The cubic invariant gives a concrete conditional selector for the primitive nontrivial character angles once an orientation branch is supplied, but the actual current surface does not derive the Y_T cubic phase potential or the physical orientation branch.",
+  "reachability_to_target": "supports",
+  "route_still_open": "accepted same-surface cubic phase dynamics/orientation, or accepted strict top/W pole rows",
+  "route_supported": "accepted cubic invariant maximization plus accepted orientation branch selects primitive nontrivial C3 character angle",
+  "trace_class": "upstream_support"
+}

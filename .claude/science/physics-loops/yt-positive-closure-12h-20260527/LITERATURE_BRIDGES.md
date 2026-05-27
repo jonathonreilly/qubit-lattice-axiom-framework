@@ -29,4 +29,7 @@ imported as Y_T proof. The representation phase-selection no-go directly
 checks that C3 character/projector facts and C3-native functions of the cyclic
 shift leave both target-row and singlet-row finite witnesses. The
 strict-route audit is a branch-local availability check over existing JSON
-certificates. No literature bridge is needed for the claim status.
+certificates. The cubic invariant phase-selector support boundary directly
+computes the finite C3 trace invariants `Tr(H^2)` and `Tr(H^3)` on the unit
+connected phase circle; it imports no external cubic potential or literature
+selection rule. No literature bridge is needed for the claim status.

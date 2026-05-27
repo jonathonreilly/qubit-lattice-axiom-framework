@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 495 |
+| **retained_bounded** | 496 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 791 |
+| `audited_clean` | 792 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1457 |
+| `unaudited` | 1456 |
 
 | claim_type | count |
 |---|---:|
@@ -183,6 +183,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2009,6 +2010,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the declared finite replay, the exact-null control survives but the tested ratios split by family, with forward-only ratio spread 0.423 and dynamic c=0.5 ratio spread 0.352.  _(class `C`)_
 - **chain closes:** True — The cached runner output matches the note's null-control values, family rows, and ratio spreads, and the primary runner computes them from the helper implementation rather than hard-coding the reported values. The retained-bounded one-hop helper note is sufficient as an algorithm-source dependency for this bounded replay because the source note does not claim physical carrier, metric, threshold, or portability-theorem closure.
 - **rationale:** The bounded claim closes exactly as a finite diagnostic: the runner constructs the three configured grown families, selects source anchors, computes instantaneous/forward/dynamic fields, propagates amplitudes, and measures detector-centroid shifts against the free baseline. The note keeps the conclusion at the observed exact-null survival and family-split ratios, and explicitly excludes cross-family portability, field-theory derivation, and framework selection of the carrier/metric/threshold. Residual boundary: any future claim that the carrier, readout, metric, threshold, or portability law is physically derived would require a separate retained theorem.
+
+### `causal_field_reconciliation_note`
+
+- **Note:** [`CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite diagnostic on the configured fixed-anchor cross-family replay: the exact-null control holds and the configured forward-only and dynamic-cone ratios split across the three tested growth families; no claim is audited about the center-family 0.45 observable, seed/field-strength stability, physical field theory, or source-placement causality.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-causal-field-reconciliation-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The low-SNR cross-family replay is trustworthy as a diagnosis of the fixed-anchor replay harness boundary, not as a refutation or validation of the upstream center-family causal-field result.  _(class `C`)_
+- **chain closes:** True — The one-hop portability note is retained_bounded, and the current cached runner output matches the narrowed diagnostic: max |delta_y| = 0, max |field| = 0, forward-only ratio spread = 0.423, and dynamic(c=0.5)/instantaneous ratio spread = 0.352. Because the current scope excludes the archived center-family observable and any proof that source placement is the load-bearing cause, no missing upstream diagnostic is required for this bounded closure.
+- **rationale:** The absence of PASS markers does not block closure here because the runner source actually constructs the three configured families, selects the fixed nominal source anchor, computes the zero control and field-gated centroid shifts, and prints the finite diagnostic rows rather than hard-coding the contested conclusion. The retained portability dependency plus the current cache support only the bounded harness-boundary reading, not a cross-family portability theorem and not a field-theory derivation. Boundary language is clean only at this finite-runner scope; it is not a no-go over all source registrations or carrier choices.
 
 ### `causal_propagating_field_note`
 

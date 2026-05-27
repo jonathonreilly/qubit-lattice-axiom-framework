@@ -75,20 +75,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 373 |
+| `critical` | 372 |
 | `high` | 509 |
 | `medium` | 581 |
-| `leaf` | 969 |
+| `leaf` | 970 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 4
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2011
+- runners classified: 2012
 - runners with (C) first-principles compute hits: 979
 - runners with (D) external comparator hits: 587
-- decoration candidates (no C, no D): 337
+- decoration candidates (no C, no D): 338
 
 ## Top 25 by load-bearing score (topology only)
 

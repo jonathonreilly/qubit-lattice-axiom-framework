@@ -1,8 +1,8 @@
 {
   "by_criticality": {
-    "critical": 242,
+    "critical": 241,
     "high": 334,
-    "leaf": 291,
+    "leaf": 292,
     "medium": 320
   },
   "cycle_break_target_count": 4,
@@ -116,23 +116,25 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
+      "claim_id": "three_generation_structure_note",
       "claim_scope": null,
-      "claim_type": "no_go",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
+      "deps": [
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 42,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.941,
-      "note_path": "docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "load_bearing_score": 30.439,
+      "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_generation_rooting_undefined.py",
-      "transitive_descendants": 694
+      "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
+      "transitive_descendants": 693
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -636,31 +638,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
       "transitive_descendants": 696
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "three_generation_structure_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26"
-      ],
-      "direct_in_degree": 42,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 30.439,
-      "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_generation_fermi_point.py",
-      "transitive_descendants": 693
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -27395,6 +27372,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_generation_rooting_undefined.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35945,6 +35944,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
+  "ready_count": 22,
   "total_pending": 1187
 }

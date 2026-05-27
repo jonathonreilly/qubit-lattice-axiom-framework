@@ -25093,10 +25093,6 @@
       "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
     },
     {
-      "from": "three_generation_structure_note",
-      "to": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26"
-    },
-    {
       "from": "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03",
       "to": "three_generation_observable_theorem_note"
     },
@@ -79416,16 +79412,15 @@
     "three_generation_structure_note": {
       "claim_id": "three_generation_structure_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26"
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "446f32c1facbda91557024b0e0b8815311bdcdfc570b3152b2aa6a76536614e7",
+      "note_hash": "684d23754000f7c39047f1dfb09801c20f68aa498cb7f69789fd3588388dc104",
       "path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-      "runner_path": "scripts/frontier_generation_fermi_point.py",
+      "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "title": "Three-Generation Matter Structure Note"
     },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
@@ -85407,8 +85402,8 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9741,
-    "leaf_count": 790,
+    "edge_count": 9740,
+    "leaf_count": 791,
     "node_count": 2546,
     "root_count": 850,
     "runners_with_path": 2121

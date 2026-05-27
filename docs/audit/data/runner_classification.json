@@ -576,6 +576,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_anomaly_cancellation_proof_walk_lattice_independence.py"
     },
+    "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 4,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py"
+    },
     "anomaly_forces_time_theorem": {
       "assert_count": 0,
       "counts": {
@@ -26528,6 +26540,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 4,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/architecture_directional_measure_table_runner_2026_05_03.py": {
@@ -56392,14 +56419,14 @@
   "stats": {
     "decoration_candidates": 347,
     "dominant_class_distribution": {
-      "A": 244,
+      "A": 245,
       "B": 292,
       "C": 760,
       "D": 301,
       "none": 435
     },
-    "runners_classified": 2032,
-    "runners_with_C": 988,
-    "runners_with_D": 596
+    "runners_classified": 2033,
+    "runners_with_C": 989,
+    "runners_with_D": 597
   }
 }

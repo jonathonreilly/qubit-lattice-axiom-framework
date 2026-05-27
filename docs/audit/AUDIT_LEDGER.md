@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 521 |
+| **retained_bounded** | 522 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1180 |
+| unaudited | 1179 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,22 +54,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 819 |
+| `audited_clean` | 820 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1409 |
+| `unaudited` | 1408 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1069 |
+| `bounded_theorem` | 1070 |
 | `decoration` | 48 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
-| `positive_theorem` | 710 |
+| `positive_theorem` | 709 |
 
 | criticality | count |
 |---|---:|
@@ -189,6 +189,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_impact_parameter_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `causal_source_placement_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2196,6 +2197,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `runner_output_empty`
   - `archived_session_log_or_named_numeric_output_missing`
   - `seed_strength_and_geometry_independence_sweeps_not_reproducible`
+- **auditor confidence:** high
+
+### `causal_source_placement_robustness_note`
+
+- **Note:** [`CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite configured diagnostic for the runner-defined growth families, constants, seeds, source layer, field parameters, centroid readout, and nominal/centroid/ordinal source-placement rules: exact-zero controls remain zero and the recorded placement ratios show placement sensitivity without restoring a single portable cross-family causal-field scale in that harness.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-helmholtz-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The primary runner recomputes the configured finite zero controls and placement-comparison ratios for three growth families and three source-placement rules, and the note's boundary claim is limited to those runner-defined outputs: placement changes the measured ratios, while no common portable cross-family scale appears in the configured cases.  _(class `C`)_
+- **chain closes:** True — The source note's table and safe read match the completed primary runner output, and the helper only supplies finite growth, propagation, and centroid routines. The two one-hop dependencies are retained-bounded and supply fixed-anchor finite context; the audited claim does not rely on the unaudited center-family 0.45 result, physical field theory, source-placement causality, or a portability theorem beyond the configured harness.
+- **rationale:** Clean only as a bounded finite diagnostic. The runner directly checks the load-bearing numerical controls and placement-ratio table, the values match the source note, and the retained-bounded dependencies are sufficient for the fixed-anchor context. Residual risk is external validity: broader source-placement causality, physical field theory, and portability/no-go claims remain outside the audited scope.
 - **auditor confidence:** high
 
 ### `central_band_born_dense_sweep_note`

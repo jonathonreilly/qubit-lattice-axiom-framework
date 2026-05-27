@@ -23487,22 +23487,46 @@
       "verdict_rationale": "Issue: the retained positive depends on numerical ratios, seed/strength stability, and a geometry-independence claim, but the named runner contains no executable computation and produces no output. Why this blocks: a hostile auditor cannot verify the instantaneous, forward-only, c=1, or c=0.5 deflection ratios; cannot check the stated 0.63/0.45 numbers; cannot inspect the grown geometry, source placement, field definition, propagation speed convention, or seed/strength sweep; and cannot distinguish a true causal-cone observable from an imposed-field parameterization artifact. Repair target: restore or add a primary runner that builds the stated grown geometry, computes all four field cases, sweeps the stated strengths and seeds, archives deterministic output, and asserts the table values and stability tolerances; if the claim remains geometry-independent, include a registered portability sweep or theorem explaining why the ratio is not specific to the chosen generator/action. Claim boundary until fixed: it is safe only to say that the note reports an unverified inline calculation suggesting a finite-cone field may change deflection ratios; it is not safe to retain a positive observable, stability result, geometry-independence claim, or physical speed-of-field interpretation."
     },
     "causal_source_placement_robustness_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T04:40:03.411609+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem.",
+          "causal_field_reconciliation_note": "Finite diagnostic on the configured fixed-anchor cross-family replay: the exact-null control holds and the configured forward-only and dynamic-cone ratios split across the three tested growth families; no claim is audited about the center-family 0.45 observable, seed/field-strength stability, physical field theory, or source-placement causality."
+        },
+        "dep_claim_type": {
+          "causal_field_portability_note": "bounded_theorem",
+          "causal_field_reconciliation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_field_portability_note": "retained_bounded",
+          "causal_field_reconciliation_note": "retained_bounded"
+        },
+        "deps": [
+          "causal_field_portability_note",
+          "causal_field_reconciliation_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d7e93b55c33427e6db2665170420f6a2f41be459864cd1a506bcad8ac2b1a9ed",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-helmholtz-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note's table and safe read match the completed primary runner output, and the helper only supplies finite growth, propagation, and centroid routines. The two one-hop dependencies are retained-bounded and supply fixed-anchor finite context; the audited claim does not rely on the unaudited center-family 0.45 result, physical field theory, source-placement causality, or a portability theorem beyond the configured harness.",
       "claim_id": "causal_source_placement_robustness_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Finite configured diagnostic for the runner-defined growth families, constants, seeds, source layer, field parameters, centroid readout, and nominal/centroid/ordinal source-placement rules: exact-zero controls remain zero and the recorded placement ratios show placement sensitivity without restoring a single portable cross-family causal-field scale in that harness.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-27T04:40:03.411609+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -23511,21 +23535,21 @@
         "causal_field_portability_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/evolving_network_prototype_v6.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The primary runner recomputes the configured finite zero controls and placement-comparison ratios for three growth families and three source-placement rules, and the note's boundary claim is limited to those runner-defined outputs: placement changes the measured ratios, while no common portable cross-family scale appears in the configured cases.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "a0c40e4f90c97bc76f0327f97528635e1dc72b853a180df545b0f8d137561df3",
       "note_path": "docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the row is later used as a general no-go, source-placement causality theorem, physical field-theory claim, or cross-family portability theorem beyond the configured finite diagnostic.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -23570,18 +23594,22 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "runner_result": "runner_sha256=d7e93b55c33427e6db2665170420f6a2f41be459864cd1a506bcad8ac2b1a9ed; exit_code=0; exact-zero controls and placement-comparison ratios match source; helper scripts/evolving_network_prototype_v6.py included",
+        "runner_status": "ok",
+        "scope_hygiene": 4,
+        "total_fail": 0,
+        "total_pass": 8
       },
       "runner_path": "scripts/causal_source_placement_robustness.py",
       "title": "Causal Source Placement Robustness Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean only as a bounded finite diagnostic. The runner directly checks the load-bearing numerical controls and placement-ratio table, the values match the source note, and the retained-bounded dependencies are sufficient for the fixed-anchor context. Residual risk is external validity: broader source-placement causality, physical field theory, and portability/no-go claims remain outside the audited scope."
     },
     "central_band_born_dense_sweep_note": {
       "audit_date": "2026-05-18T12:32:03.870552+00:00",

@@ -127,3 +127,9 @@ The direct universal route is:
 
 The remaining obstruction is not `lambda` on this route. It is the absence of
 a canonical complement section inside the `SO(3)` orbit bundle.
+
+## Verification
+
+```bash
+PYTHONPATH=scripts python3 scripts/universal_gr_complement_canonical_reaudit.py
+```

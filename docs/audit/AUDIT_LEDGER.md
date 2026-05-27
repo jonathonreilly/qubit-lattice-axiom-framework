@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 504 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1213 |
+| unaudited | 1212 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 800 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1442 |
+| `unaudited` | 1441 |
 
 | claim_type | count |
 |---|---:|
@@ -67,8 +67,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 256 |
-| `open_gate` | 110 |
-| `positive_theorem` | 714 |
+| `open_gate` | 111 |
+| `positive_theorem` | 713 |
 
 | criticality | count |
 |---|---:|
@@ -955,6 +955,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_clean_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6599,6 +6600,24 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `scripts/frontier_industrial_sdp_bootstrap_block01.py`
   - `INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
+
+### `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03`
+
+- **Note:** [`INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** A bounded numerical bracket attempt for lattice <P>(beta=6) under the stated finite SDP constraints, with a conditional narrow obstruction that this implemented constraint set gives no nontrivial upper bound beyond 1.0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-euler-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The CVXPY SDP with PSD, Hausdorff, 4x4 Gram, support, optional area-law, and admitted bridge-support lower-bound constraints solves and returns the wide bracket approximately [0.4225, 1.0]; the broader obstruction is inferred from the upper endpoint staying trivial without explicit loop equations.  _(class `C`)_
+- **chain closes:** False — The runner supports the narrow numerical readout that the implemented constraints produce a lower endpoint near 0.4225 when the admitted lower bound is enabled and an upper endpoint near 1.0. It does not close the broader consolidated obstruction that industrial SDP without Migdal-Makeenko equations cannot tighten the bracket, and the source relies on block-01 infrastructure and admitted bridge-support inputs that are not closed as direct retained authorities in this row.
+- **rationale:** Issue: The narrow implemented SDP bracket is runner-supported, but the broader consolidated obstruction is not closed by the packet. Why this blocks: the source names a wall around missing Migdal-Makeenko equations and says even industrial SDP cannot tighten the bracket, but the restricted packet does not visibly satisfy N1-N8 no-go discipline or prove that all non-loop-equation routes are exhausted; it also relies on block-01 infrastructure and an admitted mean-field lower bound rather than direct retained closure for those inputs. Repair target: either narrow the claim to the specific implemented CVXPY constraint set and its bracket, or add retained authority for the infrastructure/lower-bound inputs plus a retained bridge theorem/no-go audit covering alternative routes, wall independence, hidden-wall scan, residual matching, rhetoric audit, partial-closure path scan, steelman, and cross-cycle echo. Claim boundary until fixed: this runner's PSD/Hausdorff/Gram/support/area-law/admitted-lower-bound SDP gives approximately [0.4225, 1.0] with a trivial upper endpoint; the broad consolidated obstruction is not cleanly retained.
+- **open / conditional deps cited:**
+  - `INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`
+  - `INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md`
+  - `visible N1-N8 no-go discipline record for the consolidated obstruction`
+  - `retained bridge for the mean-field lower-bound input p1 >= 0.4225`
+- **auditor confidence:** medium_high
 
 ### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`
 

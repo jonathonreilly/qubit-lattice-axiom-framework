@@ -134563,22 +134563,46 @@
       "verdict_rationale": "Issue: The runner output supports only a bounded infrastructure smoke test: the brackets contain the reference m1 values, but the runner's own recovery predicates report False for both SU(2) and SU(3), and there are no asserts. Why this blocks: the note's stronger language that CVXPY brackets recover known reference values is not mechanically checked and is partly contradicted by the printed runner output. Repair target: replace the recovery criterion with explicit containment checks, add asserts for solver status and reference containment within tolerance, and revise note language from endpoint recovery to containment unless endpoint recovery is intended and achieved. Claim boundary until fixed: CVXPY infrastructure runs and produces feasible support-aware moment brackets containing the single-plaquette reference values in this printed run; it does not certify recovery or full lattice beta=6 bracketing."
     },
     "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T02:21:13.247977+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "no_go",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "retained_no_go",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "00310b164929d9679cf0fa3a36732b76b961977e053c28feb49a5bec92b7be29",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-euler-2nd",
+      "auditor_confidence": "medium_high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports the narrow numerical readout that the implemented constraints produce a lower endpoint near 0.4225 when the admitted lower bound is enabled and an upper endpoint near 1.0. It does not close the broader consolidated obstruction that industrial SDP without Migdal-Makeenko equations cannot tighten the bracket, and the source relies on block-01 infrastructure and admitted bridge-support inputs that are not closed as direct retained authorities in this row.",
       "claim_id": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "A bounded numerical bracket attempt for lattice <P>(beta=6) under the stated finite SDP constraints, with a conditional narrow obstruction that this implemented constraint set gives no nontrivial upper bound beyond 1.0.",
+      "claim_type": "open_gate",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "numerical CVXPY bracket attempt + named-obstruction stretch",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-27T02:21:13.247977+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -134587,34 +134611,42 @@
         "gauge_vacuum_plaquette_framework_point_underdetermination_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.144,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The CVXPY SDP with PSD, Hausdorff, 4x4 Gram, support, optional area-law, and admitted bridge-support lower-bound constraints solves and returns the wide bracket approximately [0.4225, 1.0]; the broader obstruction is inferred from the upper endpoint staying trivial without explicit loop equations.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "c6e67f12f150045c5645e55e0dd95493aaa02d85908c92647436e5850e7679cc",
       "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem - Re-audit after the claim is narrowed to the implemented runner readout or after retained authority supplies the infrastructure/lower-bound inputs and the N1-N8 route-exhaustion bridge for the broad consolidated obstruction.",
+      "open_dependency_paths": [
+        "docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md",
+        "docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md",
+        "visible N1-N8 no-go discipline record for the consolidated obstruction",
+        "retained bridge for the mean-field lower-bound input p1 >= 0.4225"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "C": 18,
+        "D": 1,
+        "assert_count": 0,
+        "full_bracket": "[0.422504, 1.000001]",
+        "pure_psd_bracket": "[-0.333333, 0.999999]",
+        "total_pass": 19
       },
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "title": "Industrial SDP Bootstrap \u2014 Lattice \u27e8P\u27e9(\u03b2=6) Bracket Attempt",
       "transitive_descendants": 49,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: The narrow implemented SDP bracket is runner-supported, but the broader consolidated obstruction is not closed by the packet. Why this blocks: the source names a wall around missing Migdal-Makeenko equations and says even industrial SDP cannot tighten the bracket, but the restricted packet does not visibly satisfy N1-N8 no-go discipline or prove that all non-loop-equation routes are exhausted; it also relies on block-01 infrastructure and an admitted mean-field lower bound rather than direct retained closure for those inputs. Repair target: either narrow the claim to the specific implemented CVXPY constraint set and its bracket, or add retained authority for the infrastructure/lower-bound inputs plus a retained bridge theorem/no-go audit covering alternative routes, wall independence, hidden-wall scan, residual matching, rhetoric audit, partial-closure path scan, steelman, and cross-cycle echo. Claim boundary until fixed: this runner's PSD/Hausdorff/Gram/support/area-law/admitted-lower-bound SDP gives approximately [0.4225, 1.0] with a trivial upper endpoint; the broad consolidated obstruction is not cleanly retained."
     },
     "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
       "audit_date": "2026-05-25T12:20:12.648412+00:00",

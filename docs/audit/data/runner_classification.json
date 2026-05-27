@@ -23964,6 +23964,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_universal_gr_casimir_block_localization.py"
     },
+    "universal_gr_complement_canonical_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 11,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/universal_gr_complement_canonical_reaudit.py"
+    },
     "universal_gr_discrete_global_closure_note": {
       "assert_count": 1,
       "counts": {
@@ -57545,6 +57557,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/universal_gr_complement_canonical_reaudit.py": {
+      "assert_count": 1,
+      "claims": [
+        "universal_gr_complement_canonical_note"
+      ],
+      "counts": {
+        "A": 11,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/universal_gr_positive_background_local_closure.py": {

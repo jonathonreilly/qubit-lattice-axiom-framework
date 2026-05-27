@@ -1,0 +1,18 @@
+loop: universal-gr-complement-canonical-repair-20260527
+target_claim_id: universal_gr_complement_canonical_note
+actual_current_surface_status: conditional-support
+target_status: bounded_theorem_reaudit
+branch: physics-loop/universal-gr-complement-canonical-repair-20260527
+started_from: origin/main
+files_touched:
+  - docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md
+  - scripts/universal_gr_complement_canonical_reaudit.py
+  - .claude/science/physics-loops/universal-gr-complement-canonical-repair-20260527/
+active_route: retained-dependency wiring plus exact no-section runner
+hard_residual: full curvature localization and Einstein/Regge identification remain open
+open_imports:
+  - no full-GR closure
+  - no canonical curvature-localization operator
+trace_gate_classification: direct_blocker_closure
+next_exact_action: verify, run audit pipeline, open draft PR
+stop_condition: draft PR opened for independent review

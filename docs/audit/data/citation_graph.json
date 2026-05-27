@@ -26413,6 +26413,14 @@
       "to": "universal_gr_a1_invariant_section_note"
     },
     {
+      "from": "universal_gr_complement_canonical_note",
+      "to": "universal_gr_polarization_frame_bundle_blocker_note"
+    },
+    {
+      "from": "universal_gr_complement_canonical_note",
+      "to": "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "universal_gr_constraint_action_stationarity_note",
       "to": "observable_principle_from_axiom_note"
     },
@@ -82272,11 +82280,14 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "universal_gr_polarization_frame_bundle_blocker_note",
+        "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10"
+      ],
       "helper_runner_paths": [],
       "note_hash": "91ea58eb29d54fddd47492cc024714d079bb12bee189e1bcfc147762095ad634",
       "path": "docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/universal_gr_complement_canonical_reaudit.py",
       "title": "Universal GR Complement Canonicalization Audit"
     },
     "universal_gr_constraint_action_stationarity_note": {
@@ -87847,7 +87858,6 @@
     "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
     "universal_gr_bd_congruence_invariance_bounded_note_2026-05-10",
     "universal_gr_block_normalization_note",
-    "universal_gr_complement_canonical_note",
     "universal_gr_invariant_frame_obstruction_note",
     "universal_gr_lambda_bypass_note",
     "universal_gr_lorentzian_global_atlas_closure_note",

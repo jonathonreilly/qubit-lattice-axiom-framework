@@ -9,14 +9,69 @@ catalogs the cumulative bounded-closure posture reached after the 2026-05-25 →
 2026-05-27 hierarchy attack and frames its publication-surface presentation.
 **Source-side `proposal_allowed: false`**.
 
-## 0. Notation and dimensionality convention
+## 0. Axiom surface and dimensionality convention
 
-**The framework's accepted spacetime is `D = 3+1`** — three spatial dimensions
-(from A2: cubic lattice `Z^3`) plus one temporal dimension (emergent via Wick
-rotation, with **Lorentzian signature `(3,1)`** forced from primitives by the
-bounded sign-ε closure of PR #2026). The relevant Clifford algebra is
-**`Cl(3,1) ≅ M_4(ℝ)`** (Cartan-Bott cell at signature `(3,1)`), NOT the
-Euclidean `Cl(4,0) ≅ M_2(ℍ)` cell.
+### 0.1 The honest axiom surface
+
+After the 2026-05-25 → 2026-05-27 hierarchy attack + PR #2046 partial
+collapse of A2 + PR #1983 reclassification of P1, the framework's
+**honest minimum** is:
+
+| Component | Class | Role |
+|---|---|---|
+| **A1** | structural | per-site qubit at discrete sites of a 3D Euclidean substrate — packages qubit + spatial-3D identification + discreteness as one substrate axiom |
+| **P1** (observable principle) | stated_principle (post PR #1983 audit) | scalar observables are additive over independent subsystems; forces `W = log|det(D+J)|` readout |
+| **M_Pl** | empirical anchor | sole dimensionful input — `1/a = M_Pl ≈ 1.22 × 10¹⁹ GeV` (= the Z³ lattice spacing in human units) |
+
+Plus the **retained derivation chain** (no admissions):
+- anomaly inflow forces `D_temporal = 1` (PR #2015 + ANOMALY_FORCES_TIME)
+- bounded sign-ε closure forces Lorentzian `Cl(3,1)` signature (PR #2026)
+- the 10 algebraic d=4 witnesses (PRs #2004-#2013) inherit the same chain
+
+That's it. **One structural substrate axiom + one observable-readout principle
++ one dimensionful translation = whole framework.**
+
+### 0.2 Why "qubit alone forces D=3" is not quite right
+
+A single qubit lives in `C²` with internal symmetry `SU(2)`. Mathematically,
+`SU(2) ≅ Spin(3)` is the double cover of `SO(3)` — the rotation group of 3D
+space — but **isomorphism is not identification**. A qubit's `SU(2)` could
+abstractly be the spin-double-cover of any 3D space, or an internal symmetry
+with no spatial meaning.
+
+The bridge from "qubit internal SU(2)" to "qubit's algebra IS the 3D spatial
+rotation algebra" is the **internal-external symmetry merger**: the qubit's
+local algebra at site `x` IS the algebra of spatial rotations around `x`. This
+identification is implicit in the framework's "Cl(3,0) reading" of A1 —
+calling the qubit's algebra `Cl(3,0)` already presupposes signature `(3,0)` =
+3 positive spatial directions.
+
+Three honest framings of A1:
+
+| Framing | What's in A1 | What's separately needed |
+|---|---|---|
+| **(a) Spatial-explicit (canonical)** | "qubit at each site of a 3D Euclidean substrate" | discrete translations (small, in P1 below) |
+| (b) Algebra-only | "per-site qubit, internal algebra Cl(3,0)" | discrete translations + internal-external identification |
+| (c) Merger-explicit | "qubit at each site, qubit algebra = local spatial-rotation algebra" | discrete translations |
+
+**Framing (a) is the canonical reading of `MINIMAL_AXIOMS_2026-05-20`** ("qubit
+at every site of `Z^3`"). The `Z^3` clause packages the 3D-spatial structure
+into A1 explicitly. The "Cl(3,0) reading" is the equivalent phrasing under
+the merger identification.
+
+PR #2046 derived: **GIVEN A1 (under any of (a)/(b)/(c)) + discrete translations,
+the lattice is forced to be primitive cubic `Z^3`** (Bravais cell selection
+from O_h symmetry + lattice constants). The "cubic" part collapses out of A2;
+the "discrete" part remains a small named premise.
+
+### 0.3 Dimensionality convention
+
+The framework's accepted spacetime is `D = 3+1` — three spatial dimensions
+(from A1) plus one temporal dimension (emergent via Wick rotation, with
+**Lorentzian signature `(3,1)`** forced from primitives by the bounded sign-ε
+closure of PR #2026). The relevant Clifford algebra is **`Cl(3,1) ≅ M_4(ℝ)`**
+(Cartan-Bott cell at signature `(3,1)`), NOT the Euclidean `Cl(4,0) ≅ M_2(ℍ)`
+cell.
 
 When this note (and the cited PRs) refer to "d = 4" or "d_spacetime = 4", the
 intended reading is always **D = 3+1 Lorentzian**, post-Wick-rotation to
@@ -45,13 +100,19 @@ distinction matters because:
 
 ## 1. Headline claim (framing only, not a theorem)
 
-> **The Cl(3)/Z³ framework takes the Planck mass `M_Pl` as its sole dimensionful
-> input.** The algebraic axioms `A_min = {A1: per-site qubit, A2: Z^3 lattice}`
-> carry no numerical content. The spacetime is `D = 3+1` Lorentzian
-> (Cl(3,1) signature), with the temporal direction emergent via Wick rotation
-> and the signature itself derived from primitives (PR #2026). Every
-> dimensionless ratio in the Standard Model derives from this `A_min`
-> substrate + the bounded `D = 3+1` forcing chain. Translating to human units
+> **The Cl(3)/Z³ framework takes the Planck mass `M_Pl` as its sole
+> dimensionful input.** The structural axioms are:
+> 1. **A1**: qubit at each discrete site of a 3D Euclidean substrate (= "Cl(3,0)
+>    per-site algebra" under the internal-external merger reading)
+> 2. **P1**: scalar observables are additive over independent subsystems
+>    (forces the `W = log|det(D+J)|` readout — stated principle post PR #1983)
+>
+> The temporal direction (D_temporal = 1) is **derived**, not axiomatic:
+> anomaly inflow (PR #2015) + bounded sign-ε closure (PR #2026) force `D = 3+1`
+> with Lorentzian signature `Cl(3,1)`. The cubic structure of A2 (formerly
+> separate axiom) is **derived** from A1 + small (P1) discreteness premise
+> (PR #2046). Every dimensionless ratio in the Standard Model derives from
+> this substrate + the bounded forcing chain. Translating to human units
 > (kg/m/s) using a single human-unit value of `1/a = M_Pl ≈ 1.22 × 10¹⁹ GeV`
 > reconstructs `v = 246.28 GeV` (vs PDG `246.22 GeV`), with the residual
 > `0.0255%` at the predicted 2-loop running scale `(α_LM/π)² ≈ 0.083%`
@@ -93,14 +154,24 @@ window:
 | id | class | what |
 |---|---|---|
 | **S** | **`empirical_anchor`** = M_Pl | **the sole dimensionful input** |
-| P1 | `stated_principle` | canonical-convention class (not an input) |
+| P1 | `stated_principle` | observable-readout principle (NOT an input, NOT a derivation target — a structural assumption about how scalar observables compose) |
 | Y₀, g₀ | `conventions` | vacuous rescaling (already classified) |
 | AC_φλ | retired | gated PR #1969 + Codex capstone #1959-#1965 |
 | θ | retired | gated PR #1978 + Track A capstone #1974-#1981 |
 
-After audit ratification of these registry edits, the registry collapses to one
-entry: **`{S = M_Pl}`** in the `empirical_anchors` class. The
-`derivation_targets` category becomes empty.
+After audit ratification of these registry edits, the `derivation_targets`
+category becomes empty. The `empirical_anchors` category collapses to one
+entry: **`{S = M_Pl}`**. The `stated_principles` category contains P1 — a
+structural assumption about observable extraction (scalar additivity), not a
+numerical input or derivation target.
+
+**Note that P1 is NOT eliminated** — it remains a stated principle. The
+framework is honest that scalar additivity is assumed, not derived. P1 is
+not in the same epistemic class as M_Pl (which is a number) nor as A1 (which
+is a substrate). It is a third kind of axiom: an observable-extraction rule.
+The mic-drop claim "M_Pl is the sole *dimensionful* input" is honest; the
+claim "M_Pl is the sole admission" would be overreach because P1 (algebraic
+admission) and A1 (structural admission) are also present.
 
 ## 3. The hierarchy formula bounded chain (`v = M_Pl × (7/8)^(1/4) × α_LM^16`)
 
@@ -233,13 +304,30 @@ backed by an end-to-end bounded chain.
 The publication front-door framing is therefore the headline claim of §1:
 
 > The framework derives every dimensionless ratio in the Standard Model from
-> `A_min = {qubit, Z³}`. The single dimensionful translation is `M_Pl ↔ 1/a`.
-> Human-unit `M_Pl = 1.22 × 10¹⁹ GeV` reconstructs `v = 246.28 GeV` (vs PDG
-> `246.22 GeV`), with the residual at the predicted 2-loop running scale.
+> A1 (per-site qubit at discrete sites of a 3D Euclidean substrate) + P1
+> (scalar additivity readout principle). The single dimensionful translation
+> is `M_Pl ↔ 1/a`. Human-unit `M_Pl = 1.22 × 10¹⁹ GeV` reconstructs
+> `v = 246.28 GeV` (vs PDG `246.22 GeV`), with the residual at the predicted
+> 2-loop running scale.
+
+**Comparison to other frameworks' axiom surfaces:**
+
+| Framework | Algebraic/structural admissions | Dimensionful inputs |
+|---|---|---|
+| **GR** | spacetime topology (4-manifold) + Lorentzian metric existence + diffeomorphism invariance + Einstein equations as field eqs | `G_Newton` |
+| **QM** | complex Hilbert space + bounded observables + Born rule + unitary dynamics | `ℏ` |
+| **SM** | gauge group `SU(3) × SU(2) × U(1)` + 3 fermion families + Higgs doublet + Yukawa matrices + CKM/PMNS structure | ~19 free parameters |
+| **Cl(3)/Z³ framework** | **A1 (qubit-on-3D-substrate) + P1 (scalar additivity) + (P1-discreteness from PR #2046)** | **`M_Pl`** |
+
+The framework's admissions are **strictly comparable in count** to GR or QM
+(one substrate + one observable-readout) and **strictly less in count** than
+the Standard Model. The dimensionful surface is **strictly one number**,
+matching GR (`G`) and QM (`ℏ`) — but with the difference that the framework
+*derives* every dimensionless ratio that GR/QM/SM admit as separate inputs.
 
 This framing is consistent with GR (`G_Newton` is structural, not free) and QM
-(`ℏ` is structural, not free). The framework's content is the structure of
-`A_min` plus the bounded chain — not a number derived from nothing.
+(`ℏ` is structural, not free). The framework's content is the structure of A1
++ P1 plus the bounded chain — not a number derived from nothing.
 
 ## 7. What this synthesis note does NOT do
 

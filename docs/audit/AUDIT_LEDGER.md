@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 519 |
+| **retained_bounded** | 520 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1182 |
+| unaudited | 1181 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 817 |
+| `audited_clean` | 818 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1411 |
+| `unaudited` | 1410 |
 
 | claim_type | count |
 |---|---:|
@@ -183,6 +183,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2100,6 +2101,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The closure ('no future retained primitive can break this') is a meta-statement about the framework registry; under the no-new-axioms rule, this meta-statement is not analytically reducible from A_min.  _(class `A`)_
 - **chain closes:** True — The chain closes for the scoped open_gate: the note explicitly remains a stretch attempt and names registry closure as the residual meta-premise. It does not close retained carrier-orbit invariance or downstream swap-reduction closure.
 - **rationale:** The current cached PASS=52 output is stale relative to the supplied current runner sha, so the current PASS=59 FAIL=2 run controls. Both live failures are brittle literal-string checks for 'not exact' in the constructed Xi note; the allowed source text instead says 'not an exact tensor observable' and identifies Xi_R^(0) as a bounded support-response Jacobian, which supports the same bounded-not-exact meaning. Under the hostile standard this would block a positive retained theorem, but this row is an open_gate and the source note accurately records the obstruction rather than claiming closure.
+- **auditor confidence:** high
+
+### `causal_cone_speed_map_note`
+
+- **Note:** [`CAUSAL_CONE_SPEED_MAP_NOTE.md`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite cone-speed diagnostic on the configured center grown family with runner-defined growth, propagation, source-anchor, centroid, field-strength, metric, seed set, and c values; it supports an exact zero-source control and structured/non-monotone proxy dependence with largest response near c=1.0, but not a smooth monotone law, stable plateau theorem, physical wave-speed claim, or framework-selected carrier/metric/threshold theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-planck-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The primary runner performs the configured finite center-family cone-speed sweep, using the helper-defined growth, propagation, source-anchor, field, metric, and detector-centroid choices; the zero-source control remains exactly null and the reported c-sweep table supports a structured but non-monotone proxy-control classification without promoting c to a physical wave speed.  _(class `C`)_
+- **chain closes:** True — The source note stays within the finite runner setup, the one-hop retained-bounded dependencies provide bounded causal-field replay and distance-tail context, and the runner output exactly matches the source numbers and classification. The helper source shows the carrier, growth rule, propagation, anchor, field, and centroid are runner-defined diagnostic choices rather than imported physical or axiomatic theorems.
+- **rationale:** The note is a bounded finite diagnostic whose numerical claims, exact-null control, c-sweep table, and noisy/non-monotone classification are matched by the runner output. It explicitly rejects physical wave-speed and smooth-monotone readings, so it does not import an unclosed carrier, metric, threshold, or growth-rule theorem beyond the runner-defined setup.
 - **auditor confidence:** high
 
 ### `causal_distance_tail_note`

@@ -22016,22 +22016,46 @@
       "verdict_rationale": "The current cached PASS=52 output is stale relative to the supplied current runner sha, so the current PASS=59 FAIL=2 run controls. Both live failures are brittle literal-string checks for 'not exact' in the constructed Xi note; the allowed source text instead says 'not an exact tensor observable' and identifies Xi_R^(0) as a bounded support-response Jacobian, which supports the same bounded-not-exact meaning. Under the hostile standard this would block a positive retained theorem, but this row is an open_gate and the source note accurately records the obstruction rather than claiming closure."
     },
     "causal_cone_speed_map_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T04:32:30.723638+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_distance_tail_note": "Bounded finite distance-tail diagnostic on the configured causal-field replay over the three declared grown-family parameter rows, with exact zero-source controls, broad instantaneous/forward/dynamic c=1 power-law-like tails, and dynamic c=0.5 collapse; not a universal causal-field theorem, Newtonian rescue, physical carrier derivation, or portability law.",
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem."
+        },
+        "dep_claim_type": {
+          "causal_distance_tail_note": "bounded_theorem",
+          "causal_field_portability_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_distance_tail_note": "retained_bounded",
+          "causal_field_portability_note": "retained_bounded"
+        },
+        "deps": [
+          "causal_distance_tail_note",
+          "causal_field_portability_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7bbfb035ae5b777d1956b9e32a4aeb8661e8bfcba9d97123d012d024e5e60c78",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-planck-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note stays within the finite runner setup, the one-hop retained-bounded dependencies provide bounded causal-field replay and distance-tail context, and the runner output exactly matches the source numbers and classification. The helper source shows the carrier, growth rule, propagation, anchor, field, and centroid are runner-defined diagnostic choices rather than imported physical or axiomatic theorems.",
       "claim_id": "causal_cone_speed_map_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite cone-speed diagnostic on the configured center grown family with runner-defined growth, propagation, source-anchor, centroid, field-strength, metric, seed set, and c values; it supports an exact zero-source control and structured/non-monotone proxy dependence with largest response near c=1.0, but not a smooth monotone law, stable plateau theorem, physical wave-speed claim, or framework-selected carrier/metric/threshold theorem.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T04:32:30.723638+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -22040,21 +22064,21 @@
         "causal_distance_tail_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/evolving_network_prototype_v6.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The primary runner performs the configured finite center-family cone-speed sweep, using the helper-defined growth, propagation, source-anchor, field, metric, and detector-centroid choices; the zero-source control remains exactly null and the reported c-sweep table supports a structured but non-monotone proxy-control classification without promoting c to a physical wave speed.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5a58957e0ce5c1f2d82dbadb4528482b13e14b2fe8047d2672858761acd69f56",
       "note_path": "docs/CAUSAL_CONE_SPEED_MAP_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source note is expanded to claim a physical carrier, monotone law, cross-family portability, framework-selected metric/threshold, or if the runner/helper constants or classification rule change.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -22100,18 +22124,22 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "runner_result": "runner_sha256=7bbfb035ae5b777d1956b9e32a4aeb8661e8bfcba9d97123d012d024e5e60c78; exit_code=0; zero-source control exact; c-sweep table and noisy/non-monotone classification match source; helper scripts/evolving_network_prototype_v6.py included",
+        "runner_status": "ok",
+        "scope_hygiene": 4,
+        "total_fail": 0,
+        "total_pass": 8
       },
       "runner_path": "scripts/causal_cone_speed_map.py",
       "title": "Causal Cone Speed Map Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The note is a bounded finite diagnostic whose numerical claims, exact-null control, c-sweep table, and noisy/non-monotone classification are matched by the runner output. It explicitly rejects physical wave-speed and smooth-monotone readings, so it does not import an unclosed carrier, metric, threshold, or growth-rule theorem beyond the runner-defined setup."
     },
     "causal_distance_tail_note": {
       "audit_date": "2026-05-27T03:21:11.640077+00:00",
@@ -22164,11 +22192,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 1.5,
+      "load_bearing_score": 4.5,
       "load_bearing_step": "The exact zero-source control stays exact on every family, the broad field cases keep a clear distance-law tail but with exponents steeply below Newtonian, and the finite-cone dynamic c=0.5 case collapses the tail further and acts as the boundary diagnostic.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "1b0983e90603349a5e1f4a3f0242af6287df902d7686aedd85acf585df37e0f6",
       "note_path": "docs/CAUSAL_DISTANCE_TAIL_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the note is expanded beyond the configured finite replay into a universal causal-field theorem, a physical carrier/readout derivation, or a portable Newtonian distance-law claim.",

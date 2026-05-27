@@ -1,0 +1,12 @@
+slug: gbare-hs-rigidity-scope-repair-20260527
+status: queued_for_reaudit
+branch: physics-loop/gbare-hs-rigidity-scope-repair-20260527
+target_claim_id: g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07
+target_note: docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md
+repair_class: scope_narrowing
+actual_current_surface_status: bounded-support
+audit_status_after_pipeline: unaudited
+effective_status_after_pipeline: unaudited
+ready_after_pipeline: true
+no_new_axioms: true
+pr: null

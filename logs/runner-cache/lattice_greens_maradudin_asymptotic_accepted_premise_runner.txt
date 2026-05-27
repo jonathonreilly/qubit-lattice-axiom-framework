@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
+runner_sha256: 07871f304c9a94ed395aca8ffcdc87c6db23ad72a117525f82093e39c27223fd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+CUBIC-LATTICE MARADUDIN ASYMPTOTIC ACCEPTED-PREMISE BRIDGE
+
+== Part 0: source firewall ==
+  PASS: source note file exists (docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+  PASS: source contains required phrase: Accepted Premises Registration
+  PASS: source contains required phrase: (P1)
+  PASS: source contains required phrase: Maradudin
+  PASS: source contains required phrase: Lawler
+  PASS: source contains required phrase: Spitzer
+  PASS: source contains required phrase: accepted-premise packet entry
+  PASS: source contains required phrase: not derived in this bridge
+  PASS: source contains required phrase: MINIMAL_AXIOMS_2026-05-03.md
+  PASS: source contains required phrase: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
+  PASS: source contains required phrase: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+  PASS: source contains required phrase: bounded_theorem
+  PASS: source contains required phrase: Status authority
+  PASS: source contains required phrase: independent audit lane only
+  PASS: source note excludes forbidden phrase: PDG load-bearing value
+  PASS: source note excludes forbidden phrase: load-bearing fitted
+  PASS: source note excludes forbidden phrase: Monte Carlo measurement consumed
+  PASS: source note excludes forbidden phrase: load-bearing g_bare value
+  PASS: source note excludes forbidden phrase: Wilson plaquette load-bearing input
+  PASS: source note excludes forbidden phrase: Newton constant G_obs imported
+
+== Part 1: (B1) symbol normalization (sympy) ==
+  PASS: (B1) sympy: lambda(k) at order 2 equals kx^2 + ky^2 + kz^2 (deg2 = kx**2 + ky**2 + kz**2)
+  PASS: (B1) sympy: lambda(k) has no order-3 cross-terms (even-cosine symmetry)
+  PASS: (B1) sympy: lambda(k) has non-zero O(|k|^4) correction (deg4 = -kx**4/12 - ky**4/12 - kz**4/12)
+  PASS: (B1) sympy: axis expansion is eps^2 - eps^4/12 + O(eps^6)
+
+== Part 1b: (B1) symbol normalization (numerical) ==
+  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.10000 (ratio=0.9991669444)
+  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.10000 (ratio=0.9991669444)
+  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.05000 (ratio=0.9997916840)
+  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.05000 (ratio=0.9997916840)
+  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.02500 (ratio=0.9999479178)
+  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.02500 (ratio=0.9999479178)
+  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.01250 (ratio=0.9999869792)
+  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.01250 (ratio=0.9999869792)
+
+== Part 2: (B2) continuum-kernel unit flux (sympy) ==
+  PASS: (B2) sympy: -d(1/(4 pi r))/dr = 1/(4 pi r^2)
+  PASS: (B2) sympy: int_{S^2} R^2 * (1/(4 pi R^2)) dOmega = 1 (flux = 1)
+  PASS: (B2) numerical: flux at R=1.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: (B2) numerical: flux at R=2.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: (B2) numerical: flux at R=5.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: (B2) numerical: flux at R=10.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: (B2) numerical: flux at R=100.0 equals 1.0 (flux=1.0000000000000000)
+
+== Part 3: (B3) lattice-harmonic residual decay ==
+  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=16 (scaled=0.278758)
+  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=32 (scaled=0.278580)
+  PASS: (B3) residual decays by ~r^-5 between r and r/2 at r=32 (ratio=32.020)
+  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=64 (scaled=0.278536)
+  PASS: (B3) residual decays by ~r^-5 between r and r/2 at r=64 (ratio=32.005)
+  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=128 (scaled=0.278525)
+  PASS: (B3) residual decays by ~r^-5 between r and r/2 at r=128 (ratio=32.001)
+  PASS: (B3) scaled coefficient stable across r=16..128 (first=0.2788 last=0.2785)
+
+== Part 4: (B4) constant identification under (P1) ==
+  PASS: (B4) sympy: c = 1/(4 pi) under unit point source convention
+  PASS: (B4) numerical: target c value 1/(4 pi) computed (c = 0.0795774715459477)
+  PASS: (B4) numerical: 4 pi = 12.566370614... (4 pi = 12.566370614359)
+
+== Part 5: dependency status check ==
+  PASS: Parent Maradudin wrapper note file exists (docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+  PASS: Canonical narrow-bridge template file exists (docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+  PASS: Parent normalization certificate runner exists (scripts/lattice_greens_z3_asymptotic_normalization_certificate.py)
+  PASS: MINIMAL_AXIOMS_2026-05-03.md exists (docs/MINIMAL_AXIOMS_2026-05-03.md)
+
+== Part 6: no forbidden imports ==
+  PASS: source note excludes literature comparator: PDG obs value
+  PASS: source note excludes literature comparator: fitted selector consumed
+  PASS: source note excludes literature comparator: Newton constant G_obs imported
+  PASS: source note excludes literature comparator: Planck length l_P_obs imported
+  PASS: source note excludes literature comparator: Bekenstein-Hawking entropy observed import
+  PASS: source note excludes literature comparator: Wilson plaquette load-bearing input
+  PASS: source note excludes literature comparator: Monte Carlo measurement consumed
+
+== Part 7: no new axioms or vocabulary ==
+  PASS: note disclaims new axiom introduction
+  PASS: (P1) declared as structural re-statement, not new admission
+
+TOTAL: PASS=63 FAIL=0
+VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from the parent normalization certificate + accepted-premise packet (P1) by substrate-internal arithmetic and finite-precision lattice-harmonic residual evaluation.
+
+----- stderr -----

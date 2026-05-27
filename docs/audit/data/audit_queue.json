@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 235,
-    "high": 339,
+    "high": 338,
     "leaf": 327,
     "medium": 334
   },
@@ -6653,30 +6653,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "bh_entropy_derived_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "bh_entropy_rt_ratio_widom_no_go_note"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.17,
-      "note_path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_bh_entropy_derived.py",
-      "transitive_descendants": 71
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -37212,6 +37188,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 56,
-  "total_pending": 1235
+  "ready_count": 55,
+  "total_pending": 1234
 }

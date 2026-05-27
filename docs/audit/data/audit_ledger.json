@@ -17093,24 +17093,42 @@
       "verdict_rationale": "Issue: the note promotes a finite toy-model computation and an I_3 identity into a Born-rule derivation and a lattice-QCD no-analog claim. Why this blocks: the Sorkin test uses P = |psi|^2 in the runner, and the graph-gravity and lattice-QCD comparison bridges are not derived or supported by any cited authority. Repair target: provide a retained bridge theorem deriving the probability/readout rule without imposing |psi|^2, plus a retained authority or theorem for the lattice-QCD comparison. Claim boundary until fixed: the runner supports only that the specified numerical model changes its propagated profile when the Poisson field is included and that its Born-probability three-slit calculation has negligible I_3."
     },
     "bh_entropy_derived_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
+      "audit_date": "2026-05-27T00:39:14.578249+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bh_entropy_rt_ratio_widom_no_go_note": "Finite-L <= 64 numerical-fit evidence for the OBC half-filled NN-hopping square-lattice RT ratio, plus the direct 2D diamond Widom coefficient evaluation c_Widom = 1/6; no all-L asymptotic no-go is retained."
+        },
+        "dep_claim_type": {
+          "bh_entropy_rt_ratio_widom_no_go_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bh_entropy_rt_ratio_widom_no_go_note": "retained_bounded"
+        },
+        "deps": [
+          "bh_entropy_rt_ratio_widom_no_go_note"
+        ],
+        "load_bearing_score": 10.17,
+        "runner_hash": "fb64437b80095ce94a671e39b1bdf690ccdad2077654917c196dd0929845a5f6",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-bh-entropy-derived-2026-05-26",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded finite-packet scope, the runner constructs the finite Hamiltonians, diagonalizes them, computes correlation-matrix entropies, reads transfer-layer singular-value ranks, and reports the finite comparison values and pass/fail checks. The Widom dependency is used only as retained-bounded context, not as an all-L theorem or as a physical BH coefficient selector.",
       "claim_id": "bh_entropy_derived_note",
-      "claim_scope": null,
+      "claim_scope": "Finite OBC half-filled NN-hopping free-fermion/correlation-matrix entropy calculations on the stated 2D/3D sizes, transfer-layer chi_eff and finite-L RT ratios, plus finite gravity-modulation and species-cancellation checks; excludes BH coefficient derivation, physical carrier/readout bridge, L<=96 probe claims, and all-L OBC Widom/asymptotic claims.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T00:39:14.578249+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -17118,19 +17136,19 @@
         "bh_entropy_rt_ratio_widom_no_go_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.17,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "finite OBC free-fermion Hamiltonian -> finite half-space correlation-matrix entropy -> finite transfer-layer SVD rank chi_eff -> finite-L comparison S_ent / (|dA| log chi_eff) -> bounded companion values, not S_BH derivation",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "bbb3b3c0a96e43eaf842ef283e892aa4105f9524db41113a36e25091556217ca",
       "note_path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the note promotes the 1/4 comparison to a derivation/pass-fail claim, imports L<=96 or all-L asymptotic evidence into scope, changes the carrier/readout, or claims physical S_BH coefficient selection.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -17363,20 +17381,20 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.976765+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
       "title": "Bekenstein-Hawking Entropy Bounded Lattice Companion",
       "transitive_descendants": 71,
-      "verdict_rationale": null
+      "verdict_rationale": "The bounded claim closes exactly as a finite computation: area-law fits in 2D/3D, monotone finite gravity modulation, and species cancellation are directly checked, while the RT ratios near or far from 1/4 are labeled observations rather than pass/fail derivations. The source note explicitly excludes derivation of S_BH = A/(4 l_P^2), physical coefficient selection, L<=96 cache/probe claims, and all-L OBC Widom asymptotics. Residual boundary: this clean verdict retains only the finite-packet companion evidence and does not promote any physical black-hole entropy bridge."
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "audit_date": "2026-05-25T23:41:35.720573+00:00",
@@ -17417,11 +17435,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.19,
+      "load_bearing_score": 14.19,
       "load_bearing_step": "The retained claim is that the exact 2D diamond Widom coefficient is 1/6 and the in-packet finite-L <= 64 runner gives numerical-fit evidence inconsistent with an exact 1/4 ratio under the stated OBC carrier and chi_eff threshold.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "2b1f71f18a432ac9881ec9c8fcffb59a27cadaf56befc9bb45a30aee355db2a5",
       "note_path": "docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md",
       "notes_for_re_audit_if_any": "Re-check that downstream ledgers do not quote the runner's stale THEOREM stdout as an all-L retained no-go; only the finite-L <= 64 evidence and exact 2D integral should propagate.",

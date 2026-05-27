@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 490 |
+| **retained_bounded** | 491 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1235 |
+| unaudited | 1234 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 784 |
+| `audited_clean` | 785 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1464 |
+| `unaudited` | 1463 |
 
 | claim_type | count |
 |---|---:|
@@ -162,6 +162,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1732,6 +1733,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner verifies finite algebraic/numerical behavior of the chosen model, but it computes detector probabilities as np.abs(psi)**2 and therefore assumes the Born readout it claims to derive. No one-hop authority or theorem closes the graph-to-gravity physical bridge or the claim that lattice QCD lacks any analogous construction.
 - **rationale:** Issue: the note promotes a finite toy-model computation and an I_3 identity into a Born-rule derivation and a lattice-QCD no-analog claim. Why this blocks: the Sorkin test uses P = |psi|^2 in the runner, and the graph-gravity and lattice-QCD comparison bridges are not derived or supported by any cited authority. Repair target: provide a retained bridge theorem deriving the probability/readout rule without imposing |psi|^2, plus a retained authority or theorem for the lattice-QCD comparison. Claim boundary until fixed: the runner supports only that the specified numerical model changes its propagated profile when the Poisson field is included and that its Born-probability three-slit calculation has negligible I_3.
 - **auditor confidence:** high
+
+### `bh_entropy_derived_note`
+
+- **Note:** [`BH_ENTROPY_DERIVED_NOTE.md`](../../docs/BH_ENTROPY_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite OBC half-filled NN-hopping free-fermion/correlation-matrix entropy calculations on the stated 2D/3D sizes, transfer-layer chi_eff and finite-L RT ratios, plus finite gravity-modulation and species-cancellation checks; excludes BH coefficient derivation, physical carrier/readout bridge, L<=96 probe claims, and all-L OBC Widom/asymptotic claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-bh-entropy-derived-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** finite OBC free-fermion Hamiltonian -> finite half-space correlation-matrix entropy -> finite transfer-layer SVD rank chi_eff -> finite-L comparison S_ent / (|dA| log chi_eff) -> bounded companion values, not S_BH derivation  _(class `C`)_
+- **chain closes:** True — Within the bounded finite-packet scope, the runner constructs the finite Hamiltonians, diagonalizes them, computes correlation-matrix entropies, reads transfer-layer singular-value ranks, and reports the finite comparison values and pass/fail checks. The Widom dependency is used only as retained-bounded context, not as an all-L theorem or as a physical BH coefficient selector.
+- **rationale:** The bounded claim closes exactly as a finite computation: area-law fits in 2D/3D, monotone finite gravity modulation, and species cancellation are directly checked, while the RT ratios near or far from 1/4 are labeled observations rather than pass/fail derivations. The source note explicitly excludes derivation of S_BH = A/(4 l_P^2), physical coefficient selection, L<=96 cache/probe claims, and all-L OBC Widom asymptotics. Residual boundary: this clean verdict retains only the finite-packet companion evidence and does not promote any physical black-hole entropy bridge.
 
 ### `bh_entropy_rt_ratio_widom_no_go_note`
 

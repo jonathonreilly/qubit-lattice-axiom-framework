@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 146 |
+| **retained** | 147 |
 | **retained_no_go** | 171 |
 | **retained_bounded** | 508 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1202 |
+| unaudited | 1201 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,22 +53,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 804 |
+| `audited_clean` | 805 |
 | `audited_conditional` | 69 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1070 |
+| `bounded_theorem` | 1069 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
-| `positive_theorem` | 710 |
+| `positive_theorem` | 711 |
 
 | criticality | count |
 |---|---:|
@@ -674,6 +674,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -10107,6 +10108,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Any tracial state on A restricts to the normalized trace on every finite-region matrix algebra, so it agrees with τ∞ on the dense local subalgebra and norm-continuity extends the equality to all of A.  _(class `A`)_
 - **chain closes:** True — The cited axiom premise supplies the per-site M_2(C) algebra and Z^3 lattice, and the note's finite-region uniqueness plus compatibility, density, and state-continuity argument proves uniqueness on the inductive-limit algebra. No open identification is needed for the unique-trace theorem itself.
 - **rationale:** The load-bearing step is a standard algebraic/operator-algebra closure: restrictions of an arbitrary tracial state to each finite matrix algebra are uniquely normalized traces, and equality on the dense local union extends by boundedness of states. The only upstream authority is explicitly flagged as an accepted axiom premise, so it does not trigger the non-retained downgrade. The later identification with ρ_ref is described as a connection and does not bear on the audited unique-tracial-state theorem.
+- **auditor confidence:** high
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-mcclintock-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The UHF C*-algebra of type 2^infinity admits a unique tracial state, obtained as the inductive limit of the finite normalized traces.  _(class `C`)_
+- **chain closes:** True — For the narrowed math-only scope, the chain closes: A1 supplies M_2(C) per site, the scoped operator algebra is the standard quasi-local tensor product over Z^3, finite matrix algebras have unique normalized traces, and Powers' UHF type 2^infinity uniqueness theorem gives the inductive-limit trace. The chain would not close for the demoted pre-record physical identification or without tensor composition as part of the scoped operator-algebra definition.
+- **rationale:** The clean content is a standard operator-algebra theorem, not a physical bridge: once the one-qubit Z^3 quasi-local algebra is fixed, there is a unique tracial state and its finite-region density matrices are tensor products of I/2. The runner reports PASS=12, FAIL=0 with dominant C-class finite-region trace checks; the infinite UHF uniqueness remains a named standard-math import, used only for mathematical closure. This verdict excludes Step 5's no-extra-structure/pre-record identification and does not certify one-point Pauli vanishing alone as a sufficient global characterization.
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

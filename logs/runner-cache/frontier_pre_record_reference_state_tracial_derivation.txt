@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pre_record_reference_state_tracial_derivation.py
+runner_sha256: 4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+================================================================================
+PRE-RECORD TRACIAL-STATE NARROWING CERTIFICATE
+================================================================================
+Scope: finite-region tracial-state algebra checks only.
+Not scope: pre-record physical identification or Powers UHF proof.
+
+[PASS] M2 matrix-unit trace uniqueness: n=2, offdiag_zero=True, diag_equal=True, normalization=True
+[PASS] two-site M4 matrix-unit trace uniqueness: n=4, offdiag_zero=True, diag_equal=True, normalization=True
+[PASS] tensor normalized trace factors on Pauli basis: checked 16 two-site basis tensors
+[PASS] inner-unitary invariance of normalized trace: Hadamard-phase-CNOT conjugation
+[PASS] 1-site tracial density is I/d: dim=2, trace=1.0
+[PASS] 1-site maximum entropy: S=0.69314718056, log(dim)=0.69314718056
+[PASS] 2-site tracial density is I/d: dim=4, trace=1.0
+[PASS] 2-site maximum entropy: S=1.38629436112, log(dim)=1.38629436112
+[PASS] 3-site tracial density is I/d: dim=8, trace=1.0
+[PASS] 3-site maximum entropy: S=2.07944154168, log(dim)=2.07944154168
+[PASS] full nonidentity Pauli-string expectations vanish for I/4: checked all 15 nonidentity two-site strings
+[PASS] one-point Pauli vanishing is not sufficient: min_eig=0.125, <ZZ>=0.500
+
+PASS=12 FAIL=0
+Result: finite-region trace identities support the narrowed theorem surface.
+Residual: Powers UHF uniqueness remains a named standard-math import; pre-record identification remains open.
+
+----- stderr -----
+

@@ -3048,6 +3048,18 @@
       "dominant_class": "C",
       "runner": "scripts/verify_cl3_sm_embedding.py"
     },
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": {
+      "assert_count": 0,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py"
+    },
     "cl4c_carrier_axiom_consequence_map_note_2026-04-28": {
       "assert_count": 1,
       "counts": {
@@ -26694,6 +26706,21 @@
       "assert_count": 1,
       "claims": [
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py": {
+      "assert_count": 0,
+      "claims": [
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
       ],
       "counts": {
         "A": 3,
@@ -56011,15 +56038,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 340,
+    "decoration_candidates": 341,
     "dominant_class_distribution": {
-      "A": 237,
+      "A": 238,
       "B": 286,
       "C": 757,
       "D": 300,
       "none": 437
     },
-    "runners_classified": 2017,
+    "runners_classified": 2018,
     "runners_with_C": 982,
     "runners_with_D": 588
   }

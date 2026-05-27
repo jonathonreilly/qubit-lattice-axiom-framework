@@ -45337,6 +45337,18 @@
       "runner_path": "scripts/verify_cl3_sm_embedding.py",
       "title": "Cl(3) Taste-Generation Theorem: Z\u00b3 Lattice Doubling \u2192 3 Tastes with Generation Structure"
     },
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": {
+      "claim_id": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "363fb5fcc8f5184d0b08cc65502655887adea9ed3d8805618ef872d15a255055",
+      "path": "docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "runner_path": "scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py",
+      "title": "Cl(3) \u2192 Cl(3,1) Spinor Extension Narrow Theorem"
+    },
     "claude_branch_retainability_note": {
       "claim_id": "claude_branch_retainability_note",
       "claim_type_author_hint": null,
@@ -84728,6 +84740,7 @@
     "ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02",
     "cl3_complexification_split_narrow_theorem_note_2026-05-10",
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
     "claude_branch_retainability_note",
     "claude_complex_action_carryover_note",
     "claude_complex_action_grown_companion_note",
@@ -85412,7 +85425,7 @@
       "no_go": 84,
       "none": 1444,
       "open_gate": 49,
-      "positive_theorem": 170
+      "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1028,
@@ -85421,12 +85434,12 @@
       "no_go": 187,
       "none": 427,
       "open_gate": 126,
-      "positive_theorem": 589
+      "positive_theorem": 590
     },
     "edge_count": 9737,
-    "leaf_count": 794,
-    "node_count": 2549,
-    "root_count": 854,
-    "runners_with_path": 2124
+    "leaf_count": 795,
+    "node_count": 2550,
+    "root_count": 855,
+    "runners_with_path": 2125
   }
 }

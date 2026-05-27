@@ -1,7 +1,8 @@
 {
   "schema_version": 1,
-  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted inputs are four: P1, AC_phi_lambda, S, and theta. Only three are machine premise nodes here because S is pervasive and has no single claim_id; it is tracked under not_a_node. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
-  "genuine_admitted_input_count": 4,
+  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. As of 2026-05-26, the registry distinguishes three input categories: (1) admitted derivation targets (genuine framework-specific gaps the framework can attempt to close — currently P1, AC_phi_lambda, theta); (2) empirical anchors (single empirical numbers that fix dimensionful scales — currently S, reclassified 2026-05-26 from ambiguous not_a_node tracking, analog of SM Higgs VEV v=246 GeV and GR G_Newton); (3) conventions (Y0 and g0, vacuous rescaling choices, excluded from admission count). Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Empirical anchors are NOT derivation targets in the same sense; they are honest external inputs (single dimensionful number per theory) shared with every physics theory (e.g., SM v=246 GeV, GR G_Newton). The framework's advantage is reducing many SM dimensionful parameters to a single empirical anchor via substrate-derived ratios. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
+  "genuine_admitted_input_count": 3,
+  "empirical_anchors_count": 1,
   "canonical_ids": [
     "observable_principle_from_axiom_note",
     "staggered_dirac_realization_gate_note_2026-05-03",
@@ -43,6 +44,35 @@
       ]
     }
   },
+  "empirical_anchors": {
+    "S": {
+      "label": "absolute scale",
+      "statement": "one empirical scale-setting number (match a single observable to fix a); the unit choice itself is vacuous, and S is pervasive with no single citeable parent row",
+      "class": "empirical anchor (single dimensionful number)",
+      "leverage": "pervasive — fixes the overall lattice spacing a > 0 that propagates everywhere",
+      "convergent_foreclosure_portfolio": [
+        "planck_finite_response_no_go_note_2026-04-24",
+        "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+        "planck_boundary_orientation_incidence_no_go_note_2026-04-30"
+      ],
+      "reclassification_basis": "Reclassified 2026-05-26 from not_a_node (ambiguous tracking) to formal empirical_anchor category. The framework's substrate provides lattice spacing a > 0 as a free parameter; no natural scale-setting mechanism is internal to the substrate. The 3-no-go portfolio (planck-related foreclosures) confirms S is irreducible to substrate primitives without external empirical input — this is a CONVERGENT FORECLOSURE pattern (3 independent attempts all failing), mirroring the multi-witness pattern used for AC_phi_lambda (positive, PR #1965) and P1 (negative, PR #1983). S is the framework's analog of SM Higgs VEV v=246 GeV (fixing electroweak mass scale) and GR Newton constant G_N (fixing gravitational coupling scale). Every physics theory has exactly this kind of single empirical anchor; the framework's strength is reducing SM's ~19 free parameters to ~1 (S) after substrate-derived structure is accounted for.",
+      "comparison_to_other_theories": {
+        "SM_higgs_vev": {
+          "value": "v = 246 GeV",
+          "role": "fixes electroweak mass scale (M_W = gv/2, m_f = y_f v / sqrt(2))",
+          "derivability_in_SM": "empirical anchor; v itself is not derived from anything more fundamental in the SM",
+          "parallel_to_S": "Both are single dimensionful numbers fixed by one experimental measurement; both are required external inputs to make dimensionful predictions"
+        },
+        "GR_G_newton": {
+          "value": "G_N = 6.67430(15) × 10^-11 N(m/kg)^2",
+          "role": "fixes gravitational coupling scale and Planck mass M_Pl = (hbar c / G_N)^{1/2}",
+          "derivability_in_GR": "empirical anchor; G_N itself is not derived from anything more fundamental in GR",
+          "parallel_to_S": "Both fix the overall dimensionful scale of the theory; both are necessarily external"
+        },
+        "framework_advantage": "After S is fixed, the framework derives ALL OTHER SM dimensionful parameters from substrate primitives: mass ratios (Koide closure for charged leptons), hypercharge ratios (alpha=1/3 + structural derivation), CKM angles (zero-import end-to-end via taste-staircase), neutrino mixing (PMNS via graph-first cycle structure), etc. The SM has ~19 free parameters; the framework reduces this to ~1 (S) after the substrate-derivable structure is accounted for. This is the framework's strongest publication-grade claim."
+      }
+    }
+  },
   "conventions": {
     "hypercharge_identification_note": {
       "label": "Y0",
@@ -59,15 +89,5 @@
       "basis": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10 (retained): g_bare is rescaling-invariant convention, not a number to derive"
     }
   },
-  "not_a_node": {
-    "S": {
-      "label": "absolute scale",
-      "statement": "one empirical scale-setting number (match a single observable to fix a); the unit choice itself is vacuous, and S is pervasive with no single citeable parent row, so it is tracked descriptively in the registry note and is NOT a premise-node here",
-      "no_go_portfolio": [
-        "planck_finite_response_no_go_note_2026-04-24",
-        "planck_parent_source_hidden_character_no_go_note_2026-04-24",
-        "planck_boundary_orientation_incidence_no_go_note_2026-04-30"
-      ]
-    }
-  }
+  "not_a_node": {}
 }

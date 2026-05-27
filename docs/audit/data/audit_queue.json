@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 235,
     "high": 328,
-    "leaf": 291,
+    "leaf": 290,
     "medium": 311
   },
   "cycle_break_target_count": 3,
@@ -26760,34 +26760,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "qnm_hardening_feasibility_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "poisson_self_gravity_loop_note",
-        "poisson_self_gravity_born_audit_note",
-        "gate_b_poisson_self_gravity_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/qnm_scaling.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/QNM_HARDENING_FEASIBILITY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/qnm_hardening_stability_certificate.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35397,6 +35369,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 11,
-  "total_pending": 1165
+  "ready_count": 10,
+  "total_pending": 1164
 }

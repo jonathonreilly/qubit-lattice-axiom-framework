@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 171 |
 | **retained_bounded** | 533 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 19 |
-| unaudited | 1165 |
+| open_gate | 20 |
+| unaudited | 1164 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 831 |
+| `audited_clean` | 832 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1394 |
+| `unaudited` | 1393 |
 
 | claim_type | count |
 |---|---:|
@@ -704,6 +704,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -10668,6 +10669,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** It does not promote a quasi-normal mode result; it only freezes the control program that would be required before any QNM-style escape-spectrum claim could be reviewed safely.  _(class `A`)_
 - **chain closes:** True — The note's claim is a scope restriction and control checklist, not a positive spectral theorem. It explicitly denies a QNM/escape-spectrum result and therefore closes as a bounded control-program note without needing a numerical runner.
 - **rationale:** The source note is audit-clean only for its narrow boundary: QNM remains a hardening target and no quasi-normal-mode or escape-spectrum result is asserted. It does not attempt to derive or validate any spectral observable, and its listed five controls are stated as future prerequisites rather than achieved results. Residual risk is that this clean verdict must not be reused as evidence for a positive QNM lane; it ratifies only the bounded control-program framing.
+- **auditor confidence:** high
+
+### `qnm_hardening_feasibility_note`
+
+- **Note:** [`QNM_HARDENING_FEASIBILITY_NOTE.md`](../../docs/QNM_HARDENING_FEASIBILITY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate boundary only: on the reduced deterministic qnm_scaling grids exercised by scripts/qnm_hardening_stability_certificate.py, the current QNM-hardening branch does not certify a positive exact-lattice spectral law because the tested self-coupled absorption minima remain Nyquist-unsafe and no sub-Nyquist peak survives the G=0/null, fixed-field Born/Sorkin, threshold, window, damping, and refinement hard bars.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary runner freezes the self-coupled fields before the k scan and asserts that G=0 produces no peaks, the fixed-field Born/Sorkin check is machine clean, and every self-coupled minimum in the tested threshold/window/damping/refinement cases has an empty sub-Nyquist peak set.  _(class `C`)_
+- **chain closes:** True — The cited self-gravity loop, Born audit, and Gate-B self-gravity rows are retained-grade bounded/no-go controls. The helper and primary runner construct the reduced lattice propagation test directly, use the branch QNM harness as the object under test, and complete with exit_code=0 and a pinned cache showing no sub-Nyquist hardening peak under the stated controls.
+- **rationale:** This is clean only as an open gate. The note does not promote a positive QNM spectral law; it records that the current branch-side hardening story fails the stated review bars on the tested bounded surface. The runner computes the relevant controls rather than merely restating the note: G=0 peak null, frozen-field propagation, fixed-field Born/Sorkin I3/P below 1e-11, Nyquist exclusion, and threshold/window/damping/refinement stability. The no-go discipline gate does not force a no-go demotion because the claim is not universal and leaves an explicit future positive route: stable sub-Nyquist peaks under the same or stronger controls. The residual risk is scope drift; this row should block promotion of the current QNM story, not be cited as a theorem that QNM hardening is impossible.
 - **auditor confidence:** high
 
 ### `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28`

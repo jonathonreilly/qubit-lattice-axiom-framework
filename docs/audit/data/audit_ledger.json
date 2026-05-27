@@ -221385,24 +221385,50 @@
       "verdict_rationale": "The source note is audit-clean only for its narrow boundary: QNM remains a hardening target and no quasi-normal-mode or escape-spectrum result is asserted. It does not attempt to derive or validate any spectral observable, and its listed five controls are stated as future prerequisites rather than achieved results. Residual risk is that this clean verdict must not be reused as evidence for a positive QNM lane; it ratifies only the bounded control-program framing."
     },
     "qnm_hardening_feasibility_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T05:31:57.996073+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row.",
+          "poisson_self_gravity_born_audit_note": "Narrow numerical audit on the provided h = 0.25 three-slit lattice runner: exact zero-coupling reduction and step-local frozen-snapshot Born cancellation; nonzero-coupling end-to-end Born is excluded from retained scope.",
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism."
+        },
+        "dep_claim_type": {
+          "gate_b_poisson_self_gravity_note": "no_go",
+          "poisson_self_gravity_born_audit_note": "bounded_theorem",
+          "poisson_self_gravity_loop_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go",
+          "poisson_self_gravity_born_audit_note": "retained_bounded",
+          "poisson_self_gravity_loop_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note",
+          "poisson_self_gravity_born_audit_note",
+          "poisson_self_gravity_loop_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5efaaf002f088e662b456885ae2fe9808b52a3223a6263619f4389cd2d6cc11e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited self-gravity loop, Born audit, and Gate-B self-gravity rows are retained-grade bounded/no-go controls. The helper and primary runner construct the reduced lattice propagation test directly, use the branch QNM harness as the object under test, and complete with exit_code=0 and a pinned cache showing no sub-Nyquist hardening peak under the stated controls.",
       "claim_id": "qnm_hardening_feasibility_note",
-      "claim_scope": null,
+      "claim_scope": "Open-gate boundary only: on the reduced deterministic qnm_scaling grids exercised by scripts/qnm_hardening_stability_certificate.py, the current QNM-hardening branch does not certify a positive exact-lattice spectral law because the tested self-coupled absorption minima remain Nyquist-unsafe and no sub-Nyquist peak survives the G=0/null, fixed-field Born/Sorkin, threshold, window, damping, and refinement hard bars.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate candidate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T05:31:57.996073+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -221412,21 +221438,21 @@
         "gate_b_poisson_self_gravity_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [
         "scripts/qnm_scaling.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The primary runner freezes the self-coupled fields before the k scan and asserts that G=0 produces no peaks, the fixed-field Born/Sorkin check is machine clean, and every self-coupled minimum in the tested threshold/window/damping/refinement cases has an empty sub-Nyquist peak set.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d09d36202e3aadd42f79c9bd443dc26e0a3cfea2800c6ac892fe8f1b4f30302e",
       "note_path": "docs/QNM_HARDENING_FEASIBILITY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit only if a future QNM runner supplies stable sub-Nyquist peaks with G=0/null, fixed-field Born/Sorkin, threshold/window/damping/refinement controls, and a dedicated note/log pair.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -221602,18 +221628,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 5,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 5
       },
       "runner_path": "scripts/qnm_hardening_stability_certificate.py",
       "title": "QNM Hardening Feasibility Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "This is clean only as an open gate. The note does not promote a positive QNM spectral law; it records that the current branch-side hardening story fails the stated review bars on the tested bounded surface. The runner computes the relevant controls rather than merely restating the note: G=0 peak null, frozen-field propagation, fixed-field Born/Sorkin I3/P below 1e-11, Nyquist exclusion, and threshold/window/damping/refinement stability. The no-go discipline gate does not force a no-go demotion because the claim is not universal and leaves an explicit future positive route: stable sub-Nyquist peaks under the same or stronger controls. The residual risk is scope drift; this row should block promotion of the current QNM story, not be cited as a theorem that QNM hardening is impossible."
     },
     "quantum_horizon_note": {
       "audit_date": null,

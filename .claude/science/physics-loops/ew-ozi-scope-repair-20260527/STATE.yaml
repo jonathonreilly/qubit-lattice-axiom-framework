@@ -1,0 +1,18 @@
+loop_slug: ew-ozi-scope-repair-20260527
+target_claim_id: ew_current_matching_ozi_suppression_theorem_note_2026-04-27
+target_status: bounded-support
+runtime_mode: campaign
+cycle_count: 1
+active_route: narrow_to_kappa_family
+hard_residual: "Selector kappa_EW = 0 remains underived."
+files_touched:
+  - docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md
+  - scripts/frontier_ew_current_ozi_scope_repair.py
+open_imports:
+  - ew_current_fierz_channel_decomposition_note_2026-05-01
+  - ew_current_matching_rule_open_gate_note_2026-05-03
+trace_gate_classification: direct_blocker_closure
+review_findings: "Self-review pass for bounded-support scope repair; external review/audit required."
+pr_status: pending
+next_exact_action: "Run audit pipeline, inspect ledger reset, commit, push, open draft PR, then continue to exponent_derivation."
+stop_condition: "Continue campaign through ordered conditional backlog."

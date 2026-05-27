@@ -1,4 +1,4 @@
-# EW Current Matching via OZI / Disconnected-Trace Suppression Theorem
+# EW Current OZI Size-Class Boundary Support Note
 
 **Date:** 2026-04-27
 **Type:** bounded_theorem
@@ -6,20 +6,56 @@
 **Status:** bounded support theorem for EW current matching on the standard 1/N_c expansion surface
 **Primary runner:** `scripts/frontier_color_projection_mc.py`
 **Depends on:**
-[RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md),
-`YT_EW_COLOR_PROJECTION_THEOREM.md` (plain text reference, not a load-bearing import)
-**Sibling exact derivation of `(N_c^2−1)/N_c^2`:**
-[EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
-— independent representation-theoretic derivation of the same ratio via
-the SU(N_c) Fierz completeness identity. The OZI suppression argument
-in this note bounds the disconnected piece relative to the connected
-piece (a dynamical-suppression statement at leading 1/N_c). The Fierz
-note gives the exact channel-fraction ratio without 1/N_c expansion.
-The two arguments are complementary: this note bounds the disconnected
-contribution to `O(1/N_c^2)`; the Fierz note specifies the connected-
-channel weight as exact group theory.
+[EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md),
+[EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md),
+[RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md) as bounded context.
 
----
+## Scope Repair
+
+The earlier version of this row was audited conditional because it treated an
+OZI/large-`N_c` suppression argument as if it supplied the physical EW
+connected-trace selector. The live retained no-go
+[EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+shows that the current retained packet does not select
+
+```text
+kappa_EW = 0.
+```
+
+This repair keeps the useful science and removes the selector overclaim. The
+binding row is now the bounded size-class statement:
+
+```text
+C = F_adj = (N_c^2 - 1) / N_c^2,
+S = 1 - F_adj = 1 / N_c^2,
+Pi_EW^phys(kappa_EW) = C + kappa_EW S,
+K_EW(kappa_EW) = 1 / (C + kappa_EW S).
+```
+
+For bounded `kappa_EW = O(1)`, the disconnected contribution has relative
+size
+
+```text
+kappa_EW S / C = kappa_EW / (N_c^2 - 1) = O(1/N_c^2).
+```
+
+At `N_c = 3`, the connected-trace specialization gives
+
+```text
+K_EW(0) = 9/8,
+```
+
+while the full-trace specialization gives
+
+```text
+K_EW(1) = 1.
+```
+
+Both completions share the same Fierz channel arithmetic and the same bounded
+OZI size class. Therefore this note cannot derive the exact `9/8` coefficient
+without an additional selector theorem. It supplies bounded support for the
+OZI-sized disconnected-channel family and preserves the exact channel split
+needed by future selector work.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -41,199 +77,132 @@ non-load-bearing input until a retained authority for it lands.
 
 ## Statement
 
-**Support theorem (EW disconnected-current suppression at leading order in 1/N_c).**
-On the unified `Cl(3) / Z^3` lattice with `N_c = 3` quarks in the
-fundamental representation, the physical (continuum-matched) EW vacuum
-polarization equals the **connected** color trace plus corrections of
-order `1/N_c^2`:
+**Bounded OZI size-class theorem.** On the current EW-current packet, the
+retained representation-theoretic channel split fixes the adjoint and singlet
+fractions
 
-    Pi_EW^{phys} = Pi_EW^{conn} * (1 + O(1/N_c^2))
+```text
+F_adj = (N_c^2 - 1) / N_c^2,
+F_singlet = 1 / N_c^2.
+```
 
-The disconnected piece — quark-antiquark annihilation through a pure-
-gluon (colorless) intermediate state — is **OZI-suppressed by `1/N_c^2`**
-relative to the connected piece. This is the same large-`N_c` topology
-family that supports the connected-channel ratio
-`R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4)`, but it does not by itself
-fix the non-perturbative disconnected coefficient.
+An OZI/large-`N_c` disconnected-current contribution can be represented by a
+bounded coefficient `kappa_EW` multiplying the singlet channel. This gives the
+one-parameter family
 
-Equivalently: at leading order in `1/N_c`, the physical EW coupling
-extracted from `Pi_EW^{phys}` is bounded toward the connected color
-trace rather than the total color trace. The canonical package readout
-uses the sibling `R_conn` value:
+```text
+K_EW(kappa_EW) = 1 / (F_adj + kappa_EW F_singlet).
+```
 
-    alpha_EW^{phys} / alpha_EW^{lattice} = N_c^2 / (N_c^2 - 1) = 9/8 at N_c = 3
+The family is exact algebraically once `kappa_EW` is supplied, and its
+disconnected part is `O(1/N_c^2)` for bounded `kappa_EW`. The current retained
+packet does not fix `kappa_EW`.
 
-as a bounded matching model, not as an exact coefficient derived by this
-note alone.
+## Proof
 
-This addresses the matching-rule gap flagged on
-`YT_EW_COLOR_PROJECTION_THEOREM.md`:
-the connected-trace route now has an explicit large-`N_c` support
-argument. It remains a bounded support input until an independent
-derivation fixes the disconnected coefficient required for exact
-`9/8` matching.
+### 1. Fierz Channel Split
 
-## Why this is needed
+The sibling Fierz/channel theorem supplies the exact finite-dimensional
+identity
 
-The audit lane traced the 9/8 correction back to a chain of three
-distinct claims:
+```text
+N_c x N_c-bar = 1 + adj,
+dim(adj) = N_c^2 - 1,
+dim(1) = 1.
+```
 
-1. `R_conn = (N_c^2 - 1)/N_c^2` is the connected color trace ratio.
-2. R_conn equals 8/9 at N_c = 3.
-3. **The physical EW coupling reads off the connected (not total) trace.**
+Normalizing by the total `N_c^2` channel count gives
 
-Claims (1) and (2) are derived in
-[RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md) via the 't Hooft 1/N_c
-expansion. Claim (3) — the **matching rule** — was previously asserted
-in YT_EW_COLOR_PROJECTION_THEOREM.md Section 2.6 ("The physical claim:
-the 9/8 correction arises if the physical EW current uses the connected
-color trace") without an independent derivation.
+```text
+C = F_adj = (N_c^2 - 1) / N_c^2,
+S = F_singlet = 1 / N_c^2.
+```
 
-This note fills part of that third step. The connected-trace preference
-follows from the same 1/N_c topological mechanism that gives R_conn,
-applied to the EW vacuum polarization directly rather than to the
-q-qbar propagator. The exact coefficient identification with `1/R_conn`
-remains an additional package assumption.
+At `N_c = 3`, `C = 8/9` and `S = 1/9`.
 
-## Derivation
+### 2. Bounded OZI Class
 
-### 1. The two contributions to Pi_EW
+Let `kappa_EW` be the disconnected-current readout coefficient. The physical
+readout family is
 
-Let `J_EW^μ` be the EW current built from quark bilinears
-`J_EW^μ ~ q-bar_a γ^μ T_EW q^a` summed over colors `a`. The vacuum
-polarization is the two-point function:
+```text
+Pi_EW^phys(kappa_EW) = C + kappa_EW S.
+```
 
-    Pi_EW^{μν}(q) = i ∫ d^4 x e^{iqx} <0| T J_EW^μ(x) J_EW^ν(0) |0>
+For any bounded `kappa_EW`, the disconnected part relative to the connected
+part is
 
-Wick-contracting the four quark fields gives two topologies:
+```text
+kappa_EW S / C = kappa_EW / (N_c^2 - 1),
+```
 
-**Connected piece (`Pi_EW^{conn}`).** The two `J_EW` insertions are
-joined by a single quark loop. Color flows continuously from one
-insertion to the other through the quark line plus any gluon dressing.
+which is `O(1/N_c^2)` in the large-`N_c` counting sense. This is the exact
+bounded-size content retained by the OZI argument in this row.
 
-**Disconnected piece (`Pi_EW^{disc}`).** The two `J_EW` insertions
-each have their own closed quark loop. The two loops are joined only
-through gluons. The intermediate state between the two insertions is
-a pure-glue (color-singlet) configuration — i.e., a glueball.
+### 3. Coefficient Boundary
 
-The full vacuum polarization is the sum:
+The alpha-level matching factor associated with a supplied `kappa_EW` is
 
-    Pi_EW^{full} = Pi_EW^{conn} + Pi_EW^{disc}
+```text
+K_EW(kappa_EW) = 1 / (C + kappa_EW S).
+```
 
-### 2. The disconnected piece factors through a colorless intermediate
+At `N_c = 3`,
 
-By construction, `Pi_EW^{disc}` factorizes as:
+```text
+K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9).
+```
 
-    Pi_EW^{disc} ~ <0| J_EW^μ |G> <G| J_EW^ν |0>  summed over glueball states |G>
+Two completions illustrate the live boundary:
 
-where each matrix element `<0| J_EW^μ |G>` couples a colored quark
-bilinear to a color-singlet hadronic state. By Wigner-Eckart on
-`SU(3)_c`, this matrix element is a singlet-channel projection of
-the q-qbar bilinear:
+```text
+kappa_EW = 0  ->  K_EW = 9/8,
+kappa_EW = 1  ->  K_EW = 1.
+```
 
-    <0| J_EW^μ |G> = (1/N_c) trace_c[G_glueball^μ]
+Both completions satisfy the same Fierz arithmetic and both have bounded OZI
+size. The selector `kappa_EW = 0` is therefore not derived by this packet.
 
-where the `1/N_c` arises from normalizing the singlet projector
-`P_{singlet} = (1/N_c) δ_a^a` against the fundamental color sum.
+## What This Claims
 
-Therefore each insertion picks up a factor of `1/N_c`, and the
-disconnected piece is suppressed by `1/N_c^2`:
+- Exact channel fractions `C = (N_c^2 - 1)/N_c^2` and `S = 1/N_c^2`, supplied
+  by the Fierz/channel authority.
+- The bounded OZI size class `kappa_EW S/C = kappa_EW/(N_c^2 - 1)` for bounded
+  `kappa_EW`.
+- The exact conditional family
+  `K_EW(kappa_EW) = 1/(F_adj + kappa_EW F_singlet)`.
+- The connected-trace value `9/8` only as the specialization
+  `kappa_EW = 0`.
 
-    Pi_EW^{disc} / Pi_EW^{conn} ~ 1/N_c^2 * h(λ)
+## What This Does Not Claim
 
-where `h(λ)` is a non-perturbative function of the 't Hooft coupling
-encoding glueball dynamics. This is the standard OZI suppression rule
-for vector currents in large-N_c QCD (Witten 1979, Coleman 1985).
+- It does not derive the physical EW connected-trace selector.
+- It does not derive an unconditional exact `9/8` EW matching coefficient.
+- It does not compute a non-perturbative disconnected-current coefficient.
+- It does not use Monte Carlo agreement, PDG values, or package-level success
+  to ratify `kappa_EW = 0`.
+- It does not add a new axiom or apply an audit verdict.
 
-### 3. Matching the lattice readout
+## Relation To Prior MC Runner
 
-The lattice EW coupling is extracted from `Pi_EW^{full}` via the CMT,
-which is color-blind:
+The legacy runner `scripts/frontier_color_projection_mc.py` is a consistency
+check for the sibling connected-channel value near `8/9`. It does not compute
+the EW disconnected topology and does not derive `kappa_EW`.
 
-    g_EW^{lattice}^2 = N_c * <Pi_EW^{full}>_{lattice} / (vertex normalization)
+The binding runner for this repaired row is
+`scripts/frontier_ew_current_ozi_scope_repair.py`, which checks the exact
+rational family, the two-completion boundary, and source-note hygiene.
 
-At leading order in `1/N_c`, the disconnected piece is suppressed:
+## Reopen Conditions
 
-    Pi_EW^{full} = Pi_EW^{conn} + O(1/N_c^2) * Pi_EW^{conn}
+Upgrade beyond this bounded support requires one of:
 
-so the lattice readout includes both pieces but is dominated by the
-connected piece up to `O(1/N_c^2)` corrections.
+- a retained lattice-current selector theorem deriving `kappa_EW = 0`;
+- an exact disconnected-current computation fixing the same coefficient from
+  accepted primitives; or
+- a reviewed framework convention explicitly admitting the connected-trace
+  selector as a convention rather than a derivation.
 
-The continuum EW coupling, by contrast, is matched to a perturbative
-QCD-corrected quark loop that has no glueball intermediate state at
-leading order in `α_s`. The continuum readout therefore picks up only
-the connected piece. The matching factor between lattice and continuum
-is:
-
-    g_EW^{phys}^2 / g_EW^{lattice}^2 = Pi_EW^{conn} / Pi_EW^{full}
-                                     = 1 / (1 + O(1/N_c^2))
-                                     = 1 - O(1/N_c^2)
-
-The package-level `9/8` correction is obtained if the disconnected
-coefficient is identified with the sibling `R_conn` complement. The
-large-`N_c` argument here supports that route parametrically; it does
-not prove the coefficient equality. Therefore this note is a bounded
-support input for the EW matching lane, not a stand-alone closure of
-the physical matching factor.
-
-### 4. Consistency check against MC
-
-The runner [`scripts/frontier_color_projection_mc.py`](../scripts/frontier_color_projection_mc.py)
-measures `R_conn = 0.887 ± 0.008` on a 4^4 lattice at β = 6, in
-agreement with `8/9 = 0.8889` to 0.2%. That validates the sibling
-`R_conn` channel. This note uses the same large-`N_c` suppression
-logic for the EW disconnected topology, but a dedicated physical
-matching theorem or runner would still be required to turn the
-parametric suppression argument into an exact `1/R_conn` coefficient
-claim.
-
-## Claim boundary
-
-This theorem proves a **bounded support route** for connected-trace EW
-matching at leading order in `1/N_c`. It does **not** prove:
-
-- An exact (genus-2-vanishing) matching identity. Exact matching would
-  require showing the disconnected piece vanishes identically, which
-  is false (glueball intermediate states exist), or deriving its
-  coefficient from an independent physical matching condition.
-- A first-principles derivation independent of the `1/N_c` expansion.
-  The matching uses the same topological mechanism as R_conn; an
-  independent derivation route would strengthen the result but is
-  not present here.
-- Specific values of the disconnected coefficient. The MC bound on
-  `R_conn` is relevant corroboration for the sibling color channel,
-  not a direct measurement of the EW disconnected topology.
-
-## What this lane does NOT change
-
-- `g_1`, `g_2`, `sin²θ_W`, `1/α_EM(M_Z)` numerical agreements with PDG
-  remain as-is. This theorem supplies bounded support for the
-  matching route; the comparator values are unchanged.
-- `R_conn = 8/9` itself remains a separate theorem in
-  `RCONN_DERIVED_NOTE.md`, with its own audit
-  row and its own MC verification.
-- The 't Hooft expansion and the OZI rule are both standard textbook
-  results (Witten 1979; Coleman 1985, Ch. 8; Manohar 1998
-  hep-ph/9802419). This note applies them; it does not invent them.
-
-## References
-
-- 't Hooft, *Nucl. Phys.* B72, 461 (1974) — original 1/N_c paper.
-- Witten, *Nucl. Phys.* B160, 57 (1979) — OZI suppression of
-  disconnected vector-current contributions.
-- Coleman, *Aspects of Symmetry* (1985), Ch. 8 — pedagogical large-N_c.
-- Manohar, *Large N QCD* (1998), hep-ph/9802419 — modern review.
-- Lucini, Teper, Wenger, *JHEP* 0401, 061 (2004) — lattice MC
-  verification of `1/N_c^2` suppression of non-planar observables at
-  strong coupling.
-
-## Cross-references
-
-- Parent claim:
-  `YT_EW_COLOR_PROJECTION_THEOREM.md`
-  — the EW color projection lane that this theorem unblocks.
-- Sibling derivation:
-  `RCONN_DERIVED_NOTE.md` — the q-qbar channel
-  R_conn derivation, using the same `1/N_c` topological mechanism.
-- Audit lane handoff:
-  [docs/audit/worker_lanes/01_rconn_derivation.md](audit/worker_lanes/01_rconn_derivation.md).
+Until then, downstream rows may use only the family
+`K_EW(kappa_EW) = 1/(8/9 + kappa_EW/9)` and must mark `9/8` as the
+connected-trace specialization.

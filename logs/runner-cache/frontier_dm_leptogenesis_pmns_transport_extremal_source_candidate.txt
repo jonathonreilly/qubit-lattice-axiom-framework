@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
-runner_sha256: e294e735ff688f7e05317519d0dcfa4caee6a6268d442665d9862e0fb1b4614f
+runner_sha256: 5c33e383e9dcbd58950f72ae3db158ab3ebe339333e785c1f1d64660d119a408
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.93
+elapsed_sec: 2.03
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -22,9 +22,7 @@ PART 1: THE IMPORTED TRANSPORT OBJECTIVE IS EVALUABLE ON THE SEED SURFACE
 ========================================================================================
   [PASS] The aligned seed point lies on the imported fixed-seed surface  ((xbar,ybar)=(0.563333,0.306667))
   [PASS] The imported flavored transport functional is evaluable directly on that surface  (etas=[0.433077 0.719083 0.719083])
-  [PASS] The aligned seed benchmark on the canonical N_e seed pair is the 0.719082536061 lift  (packet=[[0.666667 0.166667 0.166667]
- [0.       0.5      0.5     ]
- [0.333333 0.333333 0.333333]])
+  [PASS] The aligned seed benchmark on the canonical N_e seed pair matches the retained direct-transport lift  (current functional replay=0.719082664368; retained direct benchmark=0.719082536061)
 
   aligned seed packet:
 [[0.666667 0.166667 0.166667]

@@ -1,8 +1,7 @@
 # DM Leptogenesis PMNS Transport Interval Witness
 
-**Date:** 2026-04-16 (scope narrowed 2026-05-26)
+**Date:** 2026-04-16 (scope narrowed 2026-05-26; runner repaired 2026-05-27)
 **Status:** bounded - imported transport interval witness only
-**Status authority:** independent audit lane only
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py`
 
@@ -27,6 +26,30 @@ bounded interval witness computed by the runner:
 No physical selector law, full-stack closure, or sole-axiom derivation of the
 off-seed source is claimed.
 
+## Runner Repair (2026-05-27)
+
+The raw PMNS projector-interface repair intentionally removed legacy transport
+helpers from `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py`.
+That made this row's old transitive imports stale even though the intended
+bounded interval witness only needs a narrow compatibility replay.
+
+This revision makes the primary runner self-contained for the finite
+compatibility layer:
+
+- the canonical `CYCLE`, `canonical_h`, active packet diagonalization, and
+  one-column transport functional are implemented directly in the primary
+  runner;
+- the runner imports only `scripts/dm_leptogenesis_exact_common.py` for the
+  already-existing exact package constants, normalized transport grid, expansion
+  profile, and washout profile; and
+- the stale imports of the raw interface, active-projector reduction, and
+  flavor-column theorem runners are removed from this row's executable surface.
+
+This is a source-surface repair, not a new axiom or a selector law.  The exact
+`eta/eta_obs = 1` point remains an interpolated diagnostic against `ETA_OBS`,
+so the auditable retained content is the reproducible seed-to-overshoot interval
+witness, not an independent physical prediction of the observed baryon ratio.
+
 ## Question
 
 Does the imported PMNS-assisted transport functional contain a seed-to-overshoot
@@ -37,7 +60,9 @@ interval witness on the fixed `N_e` parameterized family?
 Yes, as a bounded diagnostic.  On the imported fixed-seed family:
 
 - the aligned seed benchmark gives
-  `max_i eta_i / eta_obs = 0.7190825360613422`;
+  `max_i eta_i / eta_obs = 0.719082664368` in the self-contained functional
+  replay, matching the retained direct-transport benchmark
+  `0.7190825360613422` within the runner tolerance;
 - the sampled off-seed endpoint gives
   `max_i eta_i / eta_obs = 1.0522203130495849`; and
 - the interpolated witness gives `max_i eta_i / eta_obs = 1`.
@@ -88,5 +113,5 @@ This row does not claim:
 ## Command
 
 ```bash
-python3 scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
+python3 scripts/cached_runner_output.py --refresh scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
 ```

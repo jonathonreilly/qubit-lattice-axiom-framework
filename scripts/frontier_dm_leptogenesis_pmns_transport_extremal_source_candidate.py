@@ -34,19 +34,17 @@ from dm_leptogenesis_exact_common import (
     ETA_OBS,
     S_OVER_NGAMMA_EXACT,
     exact_package,
+    reference_expansion_profile,
+    solve_normalized_transport,
+    washout_profile,
 )
-from frontier_dm_leptogenesis_flavor_column_functional_theorem import (
-    flavored_column_functional,
-    flavored_transport_kernel,
-)
-from frontier_dm_leptogenesis_pmns_active_projector_reduction import active_packet_from_h
-from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
 XBAR_NE = 0.5633333333333334
 YBAR_NE = 0.30666666666666664
+CYCLE = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=complex)
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -61,6 +59,55 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def canonical_y(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
+    phase_block = np.diag(np.array([y[0], y[1], y[2] * np.exp(1j * delta)], dtype=complex))
+    return np.diag(np.asarray(x, dtype=complex)) + phase_block @ CYCLE
+
+
+def canonical_h(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
+    ymat = canonical_y(x, y, delta)
+    return ymat @ ymat.conj().T
+
+
+def canonical_left_diagonalizer(h: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    evals, u = np.linalg.eigh(h)
+    order = np.argsort(np.real(evals))
+    evals = np.real(evals[order])
+    u = u[:, order]
+    return evals, u
+
+
+def active_packet_from_h(h_act: np.ndarray) -> np.ndarray:
+    _evals, u_act = canonical_left_diagonalizer(h_act)
+    return np.abs(u_act) ** 2
+
+
+def flavored_transport_kernel(k_decay: float) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    z_grid, n_n1, _ = solve_normalized_transport(k_decay, reference_expansion_profile)
+    source_profile = -np.gradient(n_n1, z_grid)
+    w_vals = np.array(
+        [washout_profile(float(z), k_decay, reference_expansion_profile) for z in z_grid],
+        dtype=float,
+    )
+    tail = np.zeros_like(z_grid)
+    for idx in range(len(z_grid) - 2, -1, -1):
+        tail[idx] = tail[idx + 1] + 0.5 * (w_vals[idx] + w_vals[idx + 1]) * (z_grid[idx + 1] - z_grid[idx])
+    return z_grid, source_profile, tail
+
+
+def psi_q(q: float, z_grid: np.ndarray, source_profile: np.ndarray, washout_tail: np.ndarray) -> float:
+    return float(np.trapezoid(q * source_profile * np.exp(-q * washout_tail), z_grid))
+
+
+def flavored_column_functional(
+    column: np.ndarray,
+    z_grid: np.ndarray,
+    source_profile: np.ndarray,
+    washout_tail: np.ndarray,
+) -> float:
+    return float(sum(psi_q(float(q), z_grid, source_profile, washout_tail) for q in np.asarray(column, dtype=float)))
 
 
 PKG = exact_package()
@@ -135,9 +182,9 @@ def part1_the_transport_objective_is_evaluable_on_the_imported_seed_surface() ->
         f"etas={np.round(etas_seed, 6)}",
     )
     check(
-        "The aligned seed benchmark on the canonical N_e seed pair is the 0.719082536061 lift",
+        "The aligned seed benchmark on the canonical N_e seed pair matches the retained direct-transport lift",
         abs(np.max(etas_seed) - 0.7190825360613422) < 2e-7,
-        f"packet={np.round(packet_seed, 6)}",
+        f"current functional replay={np.max(etas_seed):.12f}; retained direct benchmark=0.719082536061",
     )
 
     print()

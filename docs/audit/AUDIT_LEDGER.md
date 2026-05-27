@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 505 |
+| **retained_bounded** | 506 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1208 |
+| unaudited | 1207 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 801 |
+| `audited_clean` | 802 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1437 |
+| `unaudited` | 1436 |
 
 | claim_type | count |
 |---|---:|
@@ -105,11 +105,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 34.12 | `audited_clean` | **retained_no_go** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1020 | 34.00 | `audited_clean` | **retained** |
 | 12 | `minimal_axioms_2026-04-11` | meta | critical | 932 | 33.87 | `unaudited` | meta |
-| 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 177 | 33.48 | `unaudited` | unaudited |
-| 14 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 32.35 | `audited_clean` | **retained** |
-| 15 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
-| 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 563 | 31.14 | `unaudited` | unaudited |
-| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 30.55 | `audited_clean` | **retained_bounded** |
+| 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 33.55 | `audited_clean` | **retained_bounded** |
+| 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 177 | 33.48 | `unaudited` | unaudited |
+| 15 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 32.35 | `audited_clean` | **retained** |
+| 16 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
+| 17 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 563 | 31.14 | `unaudited` | unaudited |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `audited_conditional` | ~~audited_conditional~~ |
 | 19 | `left_handed_charge_matching_note` | decoration | critical | 676 | 30.40 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 20 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 908 | 30.33 | `audited_renaming` | ~~audited_renaming~~ |
@@ -646,6 +646,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_finite_response_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_parent_source_hidden_character_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `plaquette_4d_mc_support_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9632,6 +9633,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The no-go is scoped to the explicitly stated bare Hilbert-flow surface. Rescaling invariance blocks an absolute action scale, and explicit CAR and non-CAR realizations on the same C^4 active block demonstrate underdetermination of edge statistics.
 - **rationale:** The runner completed from cache with 27/27 PASS and checks the relevant algebraic invariances, finite-matrix obstruction, CAR construction, non-CAR alternatives, and identical unitary-flow compatibility. The proof does not derive a positive physical hbar or CAR bridge; it cleanly establishes the bounded negative result that those structures are not forced by the stated one-axiom surface. The final route through a separate Clifford/coframe principle is explicitly outside this no-go scope, so it does not weaken the scoped boundary claim.
 - **auditor confidence:** high
+
+### `plaquette_4d_mc_support_note_2026-05-04`
+
+- **Note:** [`PLAQUETTE_4D_MC_SUPPORT_NOTE_2026-05-04.md`](../../docs/PLAQUETTE_4D_MC_SUPPORT_NOTE_2026-05-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Deterministic seeded finite-volume Monte Carlo support for the full 3 spatial + 1 derived time periodic SU(3) Wilson plaquette surface at beta=6; support for surface identification and canonical-region numerical behavior, not analytic P(6) closure, not thermodynamic-limit proof, and not a retained-status proposal.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-linnaeus-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The seeded runner instantiates the accepted periodic 3+1D SU(3) Wilson plaquette surface at beta=6 and produces finite-volume L=2 and L=3 plaquette values in the claimed broad bands, with L=3 near the admitted 0.5934 comparator only as contextual support.  _(class `C`)_
+- **chain closes:** True — The scoped claim closes. The retained one-hop dependencies supply the well-defined finite periodic SU(3) Wilson plaquette observable, the accepted 3+1D Wilson surface combinatorics, and the boundary that analytic P(6) and constant-lift closure remain unavailable. The runner source and SHA-pinned cache align on seed 42, beta=6, periodic 4D finite volumes, cold-start SU(3) links, Gell-Mann Metropolis updates, and broad L=2/L=3 plaquette support checks.
+- **rationale:** Clean for the stated bounded theorem. The source note, one-hop retained dependencies, runner source, and cached output align on the same finite-volume 3+1D periodic Wilson plaquette computation. The claim uses 0.5934 only as contextual comparator and does not overclaim analytic P(6), autocorrelation-controlled thermodynamic extrapolation, or infinite-volume closure.
+- **auditor confidence:** medium_high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`
 

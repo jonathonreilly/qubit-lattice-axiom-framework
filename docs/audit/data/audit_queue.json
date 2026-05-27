@@ -3,7 +3,7 @@
     "critical": 235,
     "high": 328,
     "leaf": 327,
-    "medium": 318
+    "medium": 317
   },
   "cycle_break_target_count": 3,
   "cycle_break_targets": [
@@ -16966,33 +16966,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "plaquette_4d_mc_support_note_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "gauge_scalar_temporal_completion_theorem_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.7,
-      "note_path": "docs/PLAQUETTE_4D_MC_SUPPORT_NOTE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_4d_mc_support_2026_05_04.py",
-      "transitive_descendants": 12
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wave_direct_dm_h025_fam2_seed0_boundary_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17015,6 +16988,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "transitive_descendants": 11
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "plaquette_4d_mc_support_note_2026-05-04",
+        "plaquette_self_consistency_note",
+        "g_bare_derivation_note",
+        "gauge_scalar_temporal_completion_theorem_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.085,
+      "note_path": "docs/PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_4d_plaquette_fss_verify_2026_05_05.py",
       "transitive_descendants": 11
     },
     {
@@ -24452,33 +24452,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/signed_gravity_staggered_dirac_boundary_eta_realization.py",
-      "transitive_descendants": 11
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_4d_mc_support_note_2026-05-04",
-        "plaquette_self_consistency_note",
-        "g_bare_derivation_note",
-        "gauge_scalar_temporal_completion_theorem_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.085,
-      "note_path": "docs/PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_4d_plaquette_fss_verify_2026_05_05.py",
       "transitive_descendants": 11
     },
     {
@@ -36540,5 +36513,5 @@
     }
   ],
   "ready_count": 46,
-  "total_pending": 1208
+  "total_pending": 1207
 }

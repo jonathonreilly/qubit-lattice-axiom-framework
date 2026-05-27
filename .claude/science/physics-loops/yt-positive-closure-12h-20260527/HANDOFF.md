@@ -405,16 +405,24 @@ PR #1980:
 a9a9ba417d055df225b647a3e7a6b27cba2374df
 ```
 
-Representation phase-selection no-go science commit pending PR update:
+Representation phase-selection no-go science commit pushed and recorded in
+PR #1980:
 
 ```text
 32942a29f1c355f90c96dd34756502d60f7043a1
 ```
 
+Representation phase-selection no-go handoff checkpoint pushed and recorded in
+PR #1980:
+
+```text
+99cb22cc28a6cce78465096065c683b97efa8c99
+```
+
 Cubic invariant phase-selector support commit pending PR update:
 
 ```text
-pending
+e7550c86583a77da9aaae2830abb030371393276
 ```
 
 Previous science commit pushed and recorded in PR #1980 before this cycle:

@@ -1,0 +1,148 @@
+{
+  "actual_current_surface_status": "bounded-support microbench / open strict-response backend",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "candidate_action_backend": {
+    "accepted_same_surface_transfer_backend_present": false,
+    "backend_id": "candidate_action_backend",
+    "missing_fields": [
+      "accepted finite same-surface transfer/action backend",
+      "same source id on that backend",
+      "isolated vacuum/W/top spectral projectors",
+      "coefficient-certified dM_t/dh",
+      "coefficient-certified dM_W/dh",
+      "contact/vacuum subtraction",
+      "FV/IR controls",
+      "same model class",
+      "same-scale g2 or explicit ratio scope"
+    ],
+    "proposal_allowed": false,
+    "proposal_allowed_reason": "A candidate action backend cannot be run until the accepted finite same-surface top/W transfer surface exists.",
+    "status": "blocked_no_accepted_backend",
+    "strict_top_w_rows_present": false
+  },
+  "counterfamily_backend": {
+    "backend_a": {
+      "backend_id": "counterfamily_backend_kappa_sqrt(6)/6",
+      "backend_role": "tainted_counterexample_backend",
+      "contains_free_top_coefficient_input": true,
+      "dM_W_dh": "A*g_2/2",
+      "dM_t_dh": "sqrt(2)*A*kappa/2",
+      "eigenvalue_rows": {
+        "W": "exp(-a_t*g_2*(A*h + v_0)/2)",
+        "top": "exp(-sqrt(2)*a_t*kappa*(A*h + v_0)/2)",
+        "vacuum": "1"
+      },
+      "finite_volume_ir_controls_pass": false,
+      "input_parameters": [
+        "a_t",
+        "g_2",
+        "v_0",
+        "A",
+        "kappa"
+      ],
+      "proposal_allowed": false,
+      "proposal_allowed_reason": "backend includes free top coefficient kappa as an input; the harness must reject it as closure",
+      "readout_after_substitution": "sqrt(6)/6",
+      "readout_contains_kappa": true,
+      "readout_y33": "kappa",
+      "same_model_class": "support-schema-only diagonal finite transfer family",
+      "same_scale_g2": "ratio-scoped only",
+      "same_source_id": "h",
+      "surface_id": "diagonal_three_sector_transfer_counterfamily",
+      "top_pole_isolated": true,
+      "vacuum_contact_subtraction_done": true,
+      "w_pole_isolated": true
+    },
+    "backend_b": {
+      "backend_id": "counterfamily_backend_kappa_sqrt(6)/3",
+      "backend_role": "tainted_counterexample_backend",
+      "contains_free_top_coefficient_input": true,
+      "dM_W_dh": "A*g_2/2",
+      "dM_t_dh": "sqrt(2)*A*kappa/2",
+      "eigenvalue_rows": {
+        "W": "exp(-a_t*g_2*(A*h + v_0)/2)",
+        "top": "exp(-sqrt(2)*a_t*kappa*(A*h + v_0)/2)",
+        "vacuum": "1"
+      },
+      "finite_volume_ir_controls_pass": false,
+      "input_parameters": [
+        "a_t",
+        "g_2",
+        "v_0",
+        "A",
+        "kappa"
+      ],
+      "proposal_allowed": false,
+      "proposal_allowed_reason": "backend includes free top coefficient kappa as an input; the harness must reject it as closure",
+      "readout_after_substitution": "sqrt(6)/3",
+      "readout_contains_kappa": true,
+      "readout_y33": "kappa",
+      "same_model_class": "support-schema-only diagonal finite transfer family",
+      "same_scale_g2": "ratio-scoped only",
+      "same_source_id": "h",
+      "surface_id": "diagonal_three_sector_transfer_counterfamily",
+      "top_pole_isolated": true,
+      "vacuum_contact_subtraction_done": true,
+      "w_pole_isolated": true
+    }
+  },
+  "fail_count": 0,
+  "next_action": "Supply an accepted finite same-surface top/W transfer/action backend with isolated vacuum/W/top projectors, then rerun this certificate to compute coefficient-certified dM_t/dh and dM_W/dh without kappa as an input.",
+  "pass_count": 88,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The harness validates the strict-response certificate schema and rejects the kappa-tainted counterfamily backend.  No accepted finite same-surface top/W transfer/action backend is present, so no coefficient-bearing top row has been derived.",
+  "reachability_to_target": "supports",
+  "review_surface": [
+    "docs/YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py",
+    "outputs/yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
+  ],
+  "strict_certificate_schema": {
+    "counterfamily_strict_positive_fields": {
+      "FV_IR_model_class_checks_pass": false,
+      "coefficient_certified_dM_W_dh": true,
+      "coefficient_certified_dM_t_dh": false,
+      "contact_subtraction_done": true,
+      "no_forbidden_imports": true,
+      "same_model_class": false,
+      "same_scale_for_g2_and_source_response": false,
+      "same_source_id": true,
+      "top_pole_isolated": true,
+      "w_pole_isolated": true
+    },
+    "required_fields": [
+      "same_source_id",
+      "surface_id",
+      "top_pole_isolated",
+      "w_pole_isolated",
+      "dM_t_dh",
+      "dM_W_dh",
+      "vacuum_contact_subtraction_done",
+      "finite_volume_ir_controls_pass",
+      "same_model_class",
+      "same_scale_g2",
+      "contains_free_top_coefficient_input",
+      "proposal_allowed"
+    ],
+    "strict_positive_certificate_passes": false
+  },
+  "strict_top_w_response_certificate_present": false,
+  "taint_scans": {
+    "candidate_stub_scan": {
+      "forbidden_proof_input_hits": [],
+      "passes_forbidden_import_firewall": true,
+      "passes_target_value_input_firewall": true,
+      "target_value_hits": []
+    },
+    "counterfamily_scan": {
+      "forbidden_proof_input_hits": [],
+      "passes_forbidden_import_firewall": true,
+      "passes_target_value_input_firewall": false,
+      "target_value_hits": [
+        "sqrt(6)"
+      ]
+    }
+  },
+  "trace_class": "upstream_support"
+}

@@ -41,6 +41,8 @@ closed exactly:
   W/Z denominator response and symbolic top-response row algebra are closed
   deriving a coefficient-certified top pole row from current same-source/W-row
   symbolic support alone is pruned by an exact finite-transfer counterfamily
+  the sparse transfer response certificate harness exists and rejects
+  kappa-tainted backends
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -230,6 +232,14 @@ upgraded into coefficient-certified top pole-response evidence by algebra
 alone.  A future positive certificate must supply a direct coefficient-bearing
 top pole row or a dynamics theorem deriving the coefficient.
 
+[`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
+implements the first concrete certificate harness for this route.  It has a
+counterfamily backend that proves the machinery reads an inserted `kappa` and
+then rejects that backend as non-proof, plus a candidate-action backend stub
+that stays blocked until an accepted finite same-surface top/W transfer/action
+surface is supplied.  This is bounded support for the strict-response route,
+not the missing response evidence.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -295,6 +305,14 @@ top-source identification premise.
 ```
 
 That is the next positive science target.
+
+The immediate engineering target is now narrower:
+
+```text
+supply an accepted finite same-surface top/W transfer/action backend, then run
+the sparse response certificate to compute coefficient-certified dM_t/dh and
+dM_W/dh with no kappa input.
+```
 
 ## Non-Claims
 

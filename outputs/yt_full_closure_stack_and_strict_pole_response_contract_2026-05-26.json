@@ -4,6 +4,7 @@
   "backup_route": "strict same-source top/W pole-response measurement certificate",
   "bare_retained_allowed": false,
   "certificates": {
+    "bounded_sparse_response_harness_present": true,
     "required_pole_fields": [
       "same_surface_id",
       "source_action_authority",
@@ -85,8 +86,8 @@
     {
       "closed": false,
       "name": "strict same-source top/W response rows",
-      "next_action": "produce direct coefficient-certified top/W pole-response rows or a dynamics theorem deriving the top coefficient",
-      "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone",
+      "next_action": "supply an accepted finite same-surface top/W transfer/action backend, then run the sparse response certificate for coefficient-certified rows",
+      "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_bounded_sparse_certificate_harness_present",
       "step": 6
     },
     {
@@ -99,7 +100,7 @@
   ],
   "fail_count": 0,
   "first_open_gate": "strict same-source top/W response evidence unless audit accepts primitive top-source premise",
-  "pass_count": 98,
+  "pass_count": 106,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. Coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
@@ -108,6 +109,7 @@
     "outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json"
   ],
   "support_output_status": {
+    "direct_sparse_response_certificate_fail_count": 0,
     "fh_fail_count": 0,
     "fisher_fail_count": 0,
     "fisher_lsz_fail_count": 0,

@@ -42,6 +42,7 @@ SAME_SOURCE = DOCS / "YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md"
 STRICT_WZ = DOCS / "YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md"
 STRICT_TOP = DOCS / "YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md"
 STRICT_SAME_SOURCE_OBSTRUCTION = DOCS / "YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md"
+DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -56,6 +57,7 @@ SAME_SOURCE_OUT = ROOT / "outputs" / "yt_same_source_ew_higgs_authority_gate_202
 STRICT_WZ_OUT = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
 STRICT_TOP_OUT = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 STRICT_SAME_SOURCE_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json"
+DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -115,6 +117,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_WZ,
         STRICT_TOP,
         STRICT_SAME_SOURCE_OBSTRUCTION,
+        DIRECT_SPARSE_RESPONSE_CERT,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -128,6 +131,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_WZ_OUT,
         STRICT_TOP_OUT,
         STRICT_SAME_SOURCE_OBSTRUCTION_OUT,
+        DIRECT_SPARSE_RESPONSE_CERT_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -142,6 +146,7 @@ def part1_anchors() -> dict[str, str]:
         "primitive no-hidden-record source law is derived",
         "top-source identification is pruned",
         "finite-transfer counterfamily",
+        "sparse transfer response certificate",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -174,6 +179,7 @@ def part2_support_outputs() -> dict[str, Any]:
     wz = load_json(STRICT_WZ_OUT)
     top = load_json(STRICT_TOP_OUT)
     strict_obstruction = load_json(STRICT_SAME_SOURCE_OBSTRUCTION_OUT)
+    direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -200,6 +206,10 @@ def part2_support_outputs() -> dict[str, Any]:
     check("symbolic top response leaves coefficient open", top.get("top_coefficient_derived") is False)
     check("strict same-source coefficient obstruction passed", strict_obstruction.get("fail_count") == 0, strict_obstruction.get("fail_count"))
     check("strict same-source obstruction is route-pruning", strict_obstruction.get("trace_class") == "negative_route_pruning")
+    check("direct sparse response certificate harness passed", direct_sparse_cert.get("fail_count") == 0, direct_sparse_cert.get("fail_count"))
+    check("direct sparse response certificate is bounded support", direct_sparse_cert.get("actual_current_surface_status") == "bounded-support microbench / open strict-response backend")
+    check("direct sparse response certificate proposal is not allowed", direct_sparse_cert.get("proposal_allowed") is False)
+    check("direct sparse response certificate does not supply strict top/W rows", direct_sparse_cert.get("strict_top_w_response_certificate_present") is False)
 
     return {
         "fisher": fisher,
@@ -214,6 +224,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "strict_wz": wz,
         "strict_top": top,
         "strict_same_source_obstruction": strict_obstruction,
+        "direct_sparse_response_certificate": direct_sparse_cert,
     }
 
 
@@ -277,8 +288,10 @@ def part5_missing_certificates() -> dict[str, Any]:
     print("\nPart 5: missing positive certificates")
     pole_cert_present = STRICT_SOURCE_HIGGS_ROWS.exists()
     top_w_cert_present = STRICT_TOP_W_ROWS.exists()
+    sparse_harness_present = DIRECT_SPARSE_RESPONSE_CERT_OUT.exists()
     check("accepted strict source-Higgs pole certificate absent", not pole_cert_present, STRICT_SOURCE_HIGGS_ROWS.relative_to(ROOT).as_posix())
     check("coefficient-certified strict top/W response rows absent", not top_w_cert_present, STRICT_TOP_W_ROWS.relative_to(ROOT).as_posix())
+    check("bounded sparse response harness present", sparse_harness_present, DIRECT_SPARSE_RESPONSE_CERT_OUT.relative_to(ROOT).as_posix())
 
     required_pole_fields = [
         "same_surface_id",
@@ -312,6 +325,7 @@ def part5_missing_certificates() -> dict[str, Any]:
     return {
         "strict_source_higgs_pole_certificate_present": pole_cert_present,
         "strict_top_w_response_certificate_present": top_w_cert_present,
+        "bounded_sparse_response_harness_present": sparse_harness_present,
         "required_pole_fields": required_pole_fields,
         "required_top_w_fields": required_top_w_fields,
     }
@@ -408,9 +422,9 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_bounded_sparse_certificate_harness_present",
             "closed": False,
-            "next_action": "produce direct coefficient-certified top/W pole-response rows or a dynamics theorem deriving the top coefficient",
+            "next_action": "supply an accepted finite same-surface top/W transfer/action backend, then run the sparse response certificate for coefficient-certified rows",
         },
         {
             "step": 7,
@@ -449,6 +463,7 @@ def main() -> int:
             "strict_wz_fail_count": support_outputs["strict_wz"].get("fail_count"),
             "strict_top_fail_count": support_outputs["strict_top"].get("fail_count"),
             "strict_same_source_obstruction_fail_count": support_outputs["strict_same_source_obstruction"].get("fail_count"),
+            "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

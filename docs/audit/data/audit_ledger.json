@@ -130126,11 +130126,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 5.7,
+      "load_bearing_score": 8.7,
       "load_bearing_step": "The registered SHA-pinned joint-validator cache for scripts/higher_symmetry_joint_validation.py, on default argv with N=25,40,60,80 and 16 seeds, directly supports the bounded Z2 x Z2 Born-clean, k=0-zero, and positive band-averaged gravity rows in the sparse window.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "1fe8df876b5ef7db3ff5e3ffbee4e866d3bbf6359d10d6ad1e4174b63c8bafd5",
       "note_path": "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
       "notes_for_re_audit_if_any": "Second auditor should re-check that downstream tooling preserves the narrowed scope and does not promote the stale dense N=120 conclusion text as retained.",
@@ -263853,24 +263853,46 @@
       "verdict_rationale": "The load-bearing bounded negative conclusion matches the current runner when invoked with the note's explicit density-optimum parameters and is consistent with the archived log. The note states the correct boundary: the generated scaffold has a small viable pocket, does not consistently beat exact mirror, and does not survive to N=60. Residual process risk is that the runner defaults now run a different all-FAIL window, so future readers need the note/log command rather than the default invocation."
     },
     "symmetry_head_to_head_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T02:49:36.664917+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows."
+        },
+        "dep_claim_type": {
+          "higher_symmetry_joint_validation_note": "bounded_theorem",
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higher_symmetry_joint_validation_note": "retained_bounded",
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded"
+        },
+        "deps": [
+          "higher_symmetry_joint_validation_note",
+          "mirror_chokepoint_boundary_fit_note"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "f9bffe0e14a17b67a9a7612fbe61cc57ebf683e5173ddf690d572697e43538a9",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note cites exactly the two retained-bounded authorities that supply the displayed N=80 rows, and the arithmetic comparisons in the narrowed claim follow directly from those rows. The runner verifies both dependencies are retained-grade, confirms the Z2 x Z2 authority is scoped to sparse N=25,40,60,80 with no N=120 binding claim, checks the shared N=80 row, and reports PASS=8 FAIL=0.",
       "claim_id": "symmetry_head_to_head_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded one-row comparison theorem on the shared N=80 row only: relative to the retained-bounded mirror dense boundary card and retained-bounded sparse Z2 x Z2 joint-validation card, mirror has the larger displayed gravity-weighted joint read at N=80 (3.0551 > 2.218), Z2 x Z2 has the lower displayed purity at N=80 (0.782 < 0.8182), and both displayed rows are Born-clean and k=0 clean. No N=100/N=120 range ranking, asymptotic symmetry-family ordering, or promotion of either dependency is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T02:49:36.664917+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -263879,19 +263901,19 @@
         "higher_symmetry_joint_validation_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 3.822,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The bounded comparison read is that at the shared N=80 row mirror has the stronger displayed gravity-weighted joint read, Z2 x Z2 has the stronger displayed decoherence-side read because its purity is lower, and both rows are Born-clean and k=0 clean.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8ddc979b8af9ce95e19196bfe78b8207ee989d5e1e6a0cda85eedf32fea4579c",
       "note_path": "docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit should demote or condition the row if future wording restores N=100/N=120 range claims, asymptotic symmetry-family ranking, or any promotion of the two cited dependencies beyond their retained-bounded scopes.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -264099,18 +264121,23 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "assert_count": 1,
+        "runner_elapsed_sec": 0.08,
+        "runner_result": "PASS=8 FAIL=0",
+        "runner_sha256": "f9bffe0e14a17b67a9a7612fbe61cc57ebf683e5173ddf690d572697e43538a9",
+        "runner_status": "ok",
+        "total_pass": 8
       },
       "runner_path": "scripts/symmetry_head_to_head.py",
       "title": "Symmetry Head-To-Head Note",
       "transitive_descendants": 9,
-      "verdict_rationale": null
+      "verdict_rationale": "The claim is clean only at the narrowed bounded scope. It is a cross-note comparison over two retained-bounded inputs, not a new first-principles symmetry-family theorem; within that scope the displayed values and inequalities close without extra premises. The runner hardens the scope guard by rejecting N=100/N=120 or asymptotic range language and by checking the current retained-grade state of both dependencies."
     },
     "symmetry_spectrum_mirror_compare_note": {
       "audit_date": "2026-05-02T00:59:30.186654+00:00",

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 507 |
+| **retained_bounded** | 508 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1204 |
+| unaudited | 1203 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 803 |
+| `audited_clean` | 804 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1433 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
@@ -814,6 +814,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `symmetry_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `teleportation_3d1_causal_record_channel_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5 | A | - |
@@ -12473,6 +12474,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** At the density optimum, the generated paired scaffold is still Born-clean where it runs and recovers a modest subset of the mirror gap at N=25 and N=40, but it loses retention by N=60.  _(class `C`)_
 - **chain closes:** True — Running the registered script with the note's density-optimum parameters reproduces the saved log and the note's key table: paired-generated noise values have Born=0 where they run at N=25/40 and all paired-generated N=60 rows fail. The note keeps the conclusion bounded and does not promote the generated scaffold.
 - **rationale:** The load-bearing bounded negative conclusion matches the current runner when invoked with the note's explicit density-optimum parameters and is consistent with the archived log. The note states the correct boundary: the generated scaffold has a small viable pocket, does not consistently beat exact mirror, and does not survive to N=60. Residual process risk is that the runner defaults now run a different all-FAIL window, so future readers need the note/log command rather than the default invocation.
+- **auditor confidence:** high
+
+### `symmetry_head_to_head_note`
+
+- **Note:** [`SYMMETRY_HEAD_TO_HEAD_NOTE.md`](../../docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded one-row comparison theorem on the shared N=80 row only: relative to the retained-bounded mirror dense boundary card and retained-bounded sparse Z2 x Z2 joint-validation card, mirror has the larger displayed gravity-weighted joint read at N=80 (3.0551 > 2.218), Z2 x Z2 has the lower displayed purity at N=80 (0.782 < 0.8182), and both displayed rows are Born-clean and k=0 clean. No N=100/N=120 range ranking, asymptotic symmetry-family ordering, or promotion of either dependency is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bounded comparison read is that at the shared N=80 row mirror has the stronger displayed gravity-weighted joint read, Z2 x Z2 has the stronger displayed decoherence-side read because its purity is lower, and both rows are Born-clean and k=0 clean.  _(class `B`)_
+- **chain closes:** True — The source note cites exactly the two retained-bounded authorities that supply the displayed N=80 rows, and the arithmetic comparisons in the narrowed claim follow directly from those rows. The runner verifies both dependencies are retained-grade, confirms the Z2 x Z2 authority is scoped to sparse N=25,40,60,80 with no N=120 binding claim, checks the shared N=80 row, and reports PASS=8 FAIL=0.
+- **rationale:** The claim is clean only at the narrowed bounded scope. It is a cross-note comparison over two retained-bounded inputs, not a new first-principles symmetry-family theorem; within that scope the displayed values and inequalities close without extra premises. The runner hardens the scope guard by rejecting N=100/N=120 or asymptotic range language and by checking the current retained-grade state of both dependencies.
 - **auditor confidence:** high
 
 ### `symmetry_spectrum_mirror_compare_note`

@@ -95347,11 +95347,11 @@
         "self_consistency_forces_poisson_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
       "load_bearing_step": "Extremizing the displayed graph action with respect to Phi_i gives sum_j w_ij(Phi_i - Phi_j) + mu^2 Phi_i = G rho_i, i.e. (L + mu^2 I) Phi = G rho.",
       "load_bearing_step_class": "A",
@@ -95519,7 +95519,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -95527,8 +95527,8 @@
         "D": 0,
         "total_pass": 4
       },
-      "runner_path": "scripts/frontier_field_equation_uniqueness.py",
-      "title": "Field Equation Derivation \u2014 Variational Argument",
+      "runner_path": "scripts/frontier_field_equation_variational_scope_repair.py",
+      "title": "Field Equation Variational Identity For A Stipulated Quadratic Graph Action",
       "transitive_descendants": 0,
       "verdict_rationale": "Differentiating the edge, mass, and linear source terms gives the stated screened Poisson equation under the usual positive graph-Laplacian convention. However, that only proves the Euler-Lagrange equation of the chosen action; it does not derive why this action, the mass term, or the source coupling are forced by the framework. The runner is a finite numerical battery over four candidate field operators, not a variational derivation, and its own output reports multiple passing field equations rather than unique selection of screened Poisson."
     },

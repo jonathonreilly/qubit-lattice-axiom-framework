@@ -54846,8 +54846,8 @@
       "helper_runner_paths": [],
       "note_hash": "ba91135d989b41ae633c942f85de5a2121019df0840f39ebc2b2efd13ae8acf2",
       "path": "docs/FIELD_EQUATION_DERIVATION_NOTE.md",
-      "runner_path": "scripts/frontier_field_equation_uniqueness.py",
-      "title": "Field Equation Derivation \u2014 Variational Argument"
+      "runner_path": "scripts/frontier_field_equation_variational_scope_repair.py",
+      "title": "Field Equation Variational Identity For A Stipulated Quadratic Graph Action"
     },
     "fifth_family_complex_boundary_note": {
       "claim_id": "fifth_family_complex_boundary_note",

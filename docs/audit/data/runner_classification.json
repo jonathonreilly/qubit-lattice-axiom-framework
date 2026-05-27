@@ -7945,16 +7945,16 @@
       "runner": "scripts/fermion_parity_z2_grading_check.py"
     },
     "field_equation_derivation_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 4,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_field_equation_uniqueness.py"
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_field_equation_variational_scope_repair.py"
     },
     "fifth_family_complex_boundary_note": {
       "assert_count": 0,
@@ -38898,19 +38898,19 @@
       "dominant_class": "B",
       "exists": true
     },
-    "scripts/frontier_field_equation_uniqueness.py": {
-      "assert_count": 0,
+    "scripts/frontier_field_equation_variational_scope_repair.py": {
+      "assert_count": 1,
       "claims": [
         "field_equation_derivation_note"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 4,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_finite_rank_gravity_residual.py": {

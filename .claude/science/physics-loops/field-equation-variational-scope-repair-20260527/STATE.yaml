@@ -1,0 +1,17 @@
+loop_slug: field-equation-variational-scope-repair-20260527
+target_claim_id: field_equation_derivation_note
+target_status: bounded-support
+runtime_mode: campaign
+cycle_count: 1
+active_route: stipulated_action_variational_identity
+hard_residual: "No restricted-class theorem selecting the action, mass term, or source coupling."
+files_touched:
+  - docs/FIELD_EQUATION_DERIVATION_NOTE.md
+  - scripts/frontier_field_equation_variational_scope_repair.py
+open_imports:
+  - self_consistency_forces_poisson_note
+trace_gate_classification: direct_blocker_closure
+review_findings: "Self-review pass for bounded variational identity; external review/audit required."
+pr_status: pending
+next_exact_action: "Run audit pipeline, inspect ledger reset, commit, push, open draft PR, then continue to gauge vacuum plaquette first-sector transfer family boundary."
+stop_condition: "Continue campaign through ordered conditional backlog."

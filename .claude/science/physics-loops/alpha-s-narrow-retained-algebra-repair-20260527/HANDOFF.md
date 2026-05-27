@@ -29,3 +29,7 @@ tadpole-improvement algebra theorem instead.
 - Broad `ALPHA_S_DERIVED_NOTE.md` remains unaudited/open for its numerical and
   running surfaces.
 - No plaquette, CMT, n_link, or SM-readout claim is promoted here.
+
+## PR
+
+PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2092

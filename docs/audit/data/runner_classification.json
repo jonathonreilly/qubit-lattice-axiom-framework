@@ -20076,6 +20076,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_universal_gr_tensor_action_blocker.py"
     },
+    "s3_time_primitive_chain_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_s3_time_primitive_chain_reaudit.py"
+    },
     "s3_time_spacetime_observable_route_note": {
       "assert_count": 1,
       "counts": {
@@ -47650,6 +47662,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_s3_time_primitive_chain_reaudit.py": {
+      "assert_count": 1,
+      "claims": [
+        "s3_time_primitive_chain_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_s3_time_spacetime_tensor_primitive.py": {

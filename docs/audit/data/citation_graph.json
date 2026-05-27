@@ -23166,6 +23166,10 @@
     },
     {
       "from": "s3_time_primitive_chain_note",
+      "to": "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+    },
+    {
+      "from": "s3_time_primitive_chain_note",
       "to": "quark_route2_exact_readout_map_note_2026-04-19"
     },
     {
@@ -76524,6 +76528,7 @@
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
       "deps": [
+        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
         "quark_route2_exact_readout_map_note_2026-04-19",
         "quark_route2_exact_time_coupling_note_2026-04-19"
       ],

@@ -1,11 +1,14 @@
 # Primitive Chain Readout and Time-Coupling Update
 
-**Status:** support - route-2 primitive-chain update
+**Status:** open_gate - route-2 primitive-chain update backed by retained
+readout-map obstruction
+**Type:** open_gate
 **Date:** 2026-04-19  
 **Type:** open_gate
 **Status authority:** independent audit lane only.
 **Purpose:** restate the remaining Route-2 primitives after the exact bilinear
-carrier and the new readout/time-coupling theorem block
+carrier, the readout/time-coupling theorem block, and the retained
+E-channel readout naturality no-go.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -27,7 +30,8 @@ non-load-bearing input until a retained authority for it lands.
 
 ## Verdict
 
-Route 2 no longer lacks an exact tensor carrier.
+Route 2 no longer lacks an exact tensor carrier, and the prior open audit
+blocker for this row has a direct retained no-go answer.
 
 The current exact stack already gives:
 
@@ -46,8 +50,19 @@ The new theorem block then sharpens the remaining problem:
 - and the unresolved readout map induces the current exact obstruction to a
   unique readout-to-slice time-coupling theorem
 
+The retained no-go
+[`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+then proves the admissibility boundary requested by audit: within the current
+restricted Route-2 carrier/readout class, even after granting the two T-side
+candidates, `beta_E / alpha_E` remains a free parameter unless an additional
+E-center endpoint ratio, source-domain rule, or stronger readout primitive is
+supplied. In particular, the current objects do not uniquely select
+`beta_E / alpha_E = 21/4`.
+
 So the smallest missing primitive is no longer “some tensor observable.”
 It is the **exact readout map from `K_R` to the Route-2 two-channel readout**.
+The exact next target is sharper: derive a new E-center/source/readout
+primitive, or accept this route as blocked at the current restricted surface.
 
 ## Exact stack already in hand
 
@@ -85,6 +100,9 @@ Route-2 backbone.
 - current obstruction:
   the exact endpoint target is equivalent to
   `(beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E) = (-1, -2, 21/4)`
+- retained admissibility boundary:
+  after granting the two T-side entries, the current restricted carrier leaves
+  `beta_E / alpha_E` free; selecting `21/4` requires additional structure.
 
 ### Primitive P3: exact readout-to-slice coupling law
 
@@ -121,7 +139,9 @@ beta_E / alpha_E = 21/4.
 Granting the two `T`-side candidates collapses the remaining missing step to
 the single `E`-channel entry `beta_E / alpha_E = 21/4`.
 
-That is the current sharp open problem.
+That is the current sharp open problem. The retained naturality no-go proves
+that this entry is not selected by carrier linearity, shell normalization,
+T-side transfer data, or low-rational naturality alone.
 
 ## Dependency ranking
 
@@ -132,6 +152,9 @@ The clean dependency order is now:
 3. final Einstein/Regge identification
 
 The older “missing tensor primitive” framing is obsolete on this branch.
+The older “maybe the current restricted class already selects `21/4`”
+framing is also obsolete: the retained no-go shows the current class does not
+uniquely select it.
 
 ## Immediate next derivation target
 
@@ -141,9 +164,30 @@ The next theorem should be:
 > objects, or prove a stronger admissibility theorem that shows why the
 > current readout class cannot select it uniquely.
 
-That is the correct next route-2 primitive target after this block.
+The second branch of that audit request is now supplied by the retained
+naturality no-go. The remaining positive-science target is therefore a new
+primitive beyond the current restricted carrier/readout surface: derive the
+E-center endpoint ratio, a source-domain rule, or a stronger readout-map
+theorem.
 
 ## Upstream authorities (Route-2 theorem notes)
 
 - [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) — exact bilinear carrier `K_R` and restricted bright readout class `P_R`.
 - [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) — exact slice backbone `Lambda_R` and one-step transfer `T_R = exp(-Lambda_R)`.
+- [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) — retained no-go proving the current restricted Route-2 carrier/readout class does not uniquely select `beta_E / alpha_E = 21/4`.
+
+## Verification
+
+Run:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py
+```
+
+Expected result:
+
+```text
+TOTAL: PASS=24, FAIL=0
+VERDICT: S3 primitive chain is an open gate backed by retained Route-2
+non-selection.
+```

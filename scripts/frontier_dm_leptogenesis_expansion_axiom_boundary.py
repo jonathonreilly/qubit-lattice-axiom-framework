@@ -25,7 +25,14 @@ from __future__ import annotations
 import math
 import sys
 
-from dm_leptogenesis_exact_common import exact_package
+from dm_leptogenesis_exact_common import (
+    C_SPH,
+    D_THERMAL_EXACT,
+    ETA_OBS,
+    S_OVER_NGAMMA_EXACT,
+    exact_package,
+    solve_normalized_transport,
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -98,19 +105,50 @@ def part3_the_boundary_collapses_to_one_object_h_rad_of_t() -> None:
     print("PART 3: THE BOUNDARY COLLAPSES TO ONE OBJECT H_RAD(T)")
     print("=" * 88)
 
+    pkg = exact_package()
+
+    def eta_for_expansion_profile(expansion_profile):
+        _z_grid, _n_n1, n_bm = solve_normalized_transport(
+            pkg.k_decay_exact,
+            expansion_profile=expansion_profile,
+        )
+        kappa_axiom = abs(float(n_bm[-1]))
+        prefactor = S_OVER_NGAMMA_EXACT * C_SPH * D_THERMAL_EXACT * pkg.epsilon_1
+        eta_value = prefactor * kappa_axiom
+        return eta_value, kappa_axiom
+
+    def reference_expansion_profile(_z: float) -> float:
+        return 1.0
+
+    def normalized_perturbed_expansion_profile(z: float) -> float:
+        # E_H(1)=1, positive on the runner interval, and nonconstant.
+        return 1.0 + 0.03 * (z - 1.0) / (z + 1.0)
+
+    eta_ref_1, kappa_ref_1 = eta_for_expansion_profile(reference_expansion_profile)
+    eta_ref_2, kappa_ref_2 = eta_for_expansion_profile(reference_expansion_profile)
+    eta_pert, kappa_pert = eta_for_expansion_profile(
+        normalized_perturbed_expansion_profile
+    )
+
     check(
         "Given H_rad(T), the exact source, projection, equilibrium, and transport equations fix eta uniquely",
-        True,
-        "all remaining transport quantities are functionals of H_rad(T)",
+        abs(eta_ref_1 - eta_ref_2) < 1.0e-20
+        and abs(kappa_ref_1 - kappa_ref_2) < 1.0e-14,
+        f"eta[H_rad]={eta_ref_1:.12e}, kappa[H_rad]={kappa_ref_1:.15f}",
     )
     check(
-        "Without H_rad(T), full theorem closure still fails",
-        True,
-        "the exact remaining non-axiom object is the radiation-era expansion law",
+        "Changing the normalized expansion profile changes the computed eta",
+        abs(eta_pert - eta_ref_1) / eta_ref_1 > 1.0e-3,
+        f"eta[E_H!=1]={eta_pert:.12e}, relative shift={(eta_pert/eta_ref_1 - 1.0):+.3e}",
+    )
+    check(
+        "The computed radiation-branch eta matches the transport-decomposition theorem readout",
+        abs((eta_ref_1 / ETA_OBS) - 0.188785929502) < 5.0e-10,
+        f"eta[H_rad]/eta_obs={eta_ref_1 / ETA_OBS:.12f}",
     )
     check(
         "So the old vague T_rad(K) boundary sharpens to one concrete datum H_rad(T)",
-        True,
+        abs(normalized_perturbed_expansion_profile(1.0) - 1.0) < 1.0e-15,
         "equivalently: the normalized expansion profile E_H(z) with its z=1 normalization",
     )
 

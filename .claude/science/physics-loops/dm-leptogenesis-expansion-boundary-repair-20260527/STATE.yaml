@@ -1,0 +1,20 @@
+loop_slug: dm-leptogenesis-expansion-boundary-repair-20260527
+target_claim_id: dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16
+target_status: bounded-support
+runtime_mode: ordered science-fix loop
+cycle_count: 1
+active_route: replace_asserted_boundary_with_direct_transport_computation
+hard_residual: upstream Hrad theorem and DM flagship selector closure remain outside this row
+files_touched:
+  - docs/DM_LEPTOGENESIS_EXPANSION_AXIOM_BOUNDARY_NOTE_2026-04-16.md
+  - scripts/frontier_dm_leptogenesis_expansion_axiom_boundary.py
+  - .claude/science/physics-loops/dm-leptogenesis-expansion-boundary-repair-20260527/
+open_imports:
+  - audit status of DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md
+  - audit status of DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md
+  - right-sensitive microscopic selector law
+trace_gate: direct_blocker_closure_partial
+review_disposition: local_mechanical_checks_passed
+pr_status: not_opened_yet
+next_exact_action: commit, push, open draft PR
+stop_condition: continue ordered backlog after PR is opened

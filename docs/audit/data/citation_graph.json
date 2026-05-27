@@ -12473,6 +12473,46 @@
       "to": "hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27"
     },
     {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "omega_lambda_derivation_note"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "cosmology_from_mass_spectrum_note"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "r_base_group_theory_derivation_theorem_note_2026-04-24"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "matter_radiation_equality_structural_identity_theorem_note_2026-04-24"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "omega_lambda_matter_bridge_theorem_note_2026-04-22"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "hubble_lane5_two_gate_dependency_firewall_note_2026-04-27"
+    },
+    {
+      "from": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "to": "n_eff_from_three_generations_theorem_note_2026-04-24"
+    },
+    {
       "from": "hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27",
       "to": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26"
     },
@@ -58253,6 +58293,29 @@
       "runner_path": null,
       "title": "Hubble Lane 5 C1 Narrow Route No-Go Cluster"
     },
+    "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27": {
+      "claim_id": "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
+        "hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27",
+        "omega_lambda_derivation_note",
+        "cosmology_from_mass_spectrum_note",
+        "r_base_group_theory_derivation_theorem_note_2026-04-24",
+        "matter_radiation_equality_structural_identity_theorem_note_2026-04-24",
+        "hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29",
+        "omega_lambda_matter_bridge_theorem_note_2026-04-22",
+        "hubble_lane5_two_gate_dependency_firewall_note_2026-04-27",
+        "n_eff_from_three_generations_theorem_note_2026-04-24"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9e85ca3dfb741a012eb4c287c5d24eac8c1e6ea7a2a1f8f0c6fd00a5a193cfb9",
+      "path": "docs/HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "runner_path": "scripts/frontier_hubble_lane5_c2_attack_surface_bipartition.py",
+      "title": "Lane 5 `(C2)` Attack-Surface Bipartition Narrow Theorem"
+    },
     "hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29": {
       "claim_id": "hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29",
       "claim_type_author_hint": null,
@@ -85480,7 +85543,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 612,
+      "bounded_theorem": 613,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -85489,7 +85552,7 @@
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1030,
+      "bounded_theorem": 1031,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -85497,10 +85560,10 @@
       "open_gate": 126,
       "positive_theorem": 590
     },
-    "edge_count": 9744,
+    "edge_count": 9754,
     "leaf_count": 796,
-    "node_count": 2552,
+    "node_count": 2553,
     "root_count": 855,
-    "runners_with_path": 2128
+    "runners_with_path": 2129
   }
 }

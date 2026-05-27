@@ -11004,6 +11004,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_hubble_c1_stuck_fanout_synthesis.py"
     },
+    "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27": {
+      "assert_count": 1,
+      "counts": {
+        "A": 4,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_hubble_lane5_c2_attack_surface_bipartition.py"
+    },
     "hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29": {
       "assert_count": 1,
       "counts": {
@@ -39949,6 +39961,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_hubble_lane5_c2_attack_surface_bipartition.py": {
+      "assert_count": 1,
+      "claims": [
+        "hubble_lane5_c2_attack_surface_bipartition_narrow_theorem_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py": {
       "assert_count": 1,
       "claims": [
@@ -56133,15 +56160,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 344,
+    "decoration_candidates": 345,
     "dominant_class_distribution": {
       "A": 241,
-      "B": 286,
+      "B": 287,
       "C": 758,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2022,
+    "runners_classified": 2023,
     "runners_with_C": 983,
     "runners_with_D": 589
   }

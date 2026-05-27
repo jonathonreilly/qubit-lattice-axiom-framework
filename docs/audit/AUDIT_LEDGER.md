@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1185 |
+| unaudited | 1186 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1414 |
+| `unaudited` | 1415 |
 
 | claim_type | count |
 |---|---:|
@@ -87,7 +87,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 2010
 - runners with (C) first-principles compute hits: 978
-- runners with (D) external comparator hits: 585
+- runners with (D) external comparator hits: 586
 - decoration candidates (no C, no D): 337
 
 ## Top 25 by load-bearing score (topology only)
@@ -98,7 +98,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 723 | 53.50 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 906 | 52.33 | `audited_clean` | **retained_bounded** |
-| 3 | `minimal_axioms_2026-05-03` | meta | critical | 909 | 51.83 | `unaudited` | meta |
+| 3 | `minimal_axioms_2026-05-03` | meta | critical | 903 | 51.32 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1049 | 46.04 | `audited_clean` | **retained** |
 | 5 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 939 | 40.88 | `audited_clean` | **retained_bounded** |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 179 | 38.99 | `unaudited` | unaudited |
@@ -985,7 +985,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gravity_clean_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
-| `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6028,21 +6027,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
-
-### `gravity_sign_audit_2026-04-10`
-
-- **Note:** [`GRAVITY_SIGN_AUDIT_2026-04-10.md`](../../docs/GRAVITY_SIGN_AUDIT_2026-04-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded configured diagnostic: for the displayed parity and lapse Hamiltonian forms, the finite 1D external-potential runner distinguishes well from hill; this does not audit physical gravity sign, literature-correct scalar coupling, staggered-gate closure, or irregular-graph portability.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-godel-2nd`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Under the corrected parity and lapse couplings, well vs hill are distinguishable in the configured exact-lattice external-potential test.  _(class `C`)_
-- **chain closes:** False — The narrow Part 4 well/hill diagnostic closes under stipulated parity/lapse forms, but the note still contains broader physical/literature-correct and irregular-graph survival language not supplied by the retained bounded algebraic dependency. Current stdout also conflicts with parts of the narrative: Part 1 labels lapse repulse TOWARD while Part 4 labels lapse hill AWAY, and graph self-gravity expands for identity, parity, and lapse.
-- **rationale:** Issue: the note has a clean bounded core, but still gestures at physical gravity sign, literature-correct scalar coupling, and irregular-graph portability/self-gravity claims beyond the retained packet. Why this blocks: the one-hop parity/lapse note is only a finite algebraic comparison of displayed forms, and MINIMAL_AXIOMS documents the staggered-Dirac realization target as open rather than deriving these forms from A1+A2. Repair target: split or rewrite the claim so the retained row states only the stipulated well/hill diagnostic, or supply a retained bridge theorem for the scalar/lapse coupling and a graph-native directional observable with current runner agreement. Claim boundary until fixed: bounded 1D configured parity/lapse well-hill separation only, with no physical gravity-sign or irregular-graph closure.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-05-03.md`
-- **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`
 

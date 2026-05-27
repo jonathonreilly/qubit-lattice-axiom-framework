@@ -10729,10 +10729,6 @@
       "to": "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
     },
     {
-      "from": "gravity_sign_audit_2026-04-10",
-      "to": "minimal_axioms_2026-05-03"
-    },
-    {
       "from": "grav_decoherence_derived_note",
       "to": "newton_law_derived_note"
     },
@@ -56573,14 +56569,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
-        "minimal_axioms_2026-05-03"
+        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "20c09981d345e5eeb02d31cb920c0fc76f39d0d2bd91fcddc863168b5a3221b4",
+      "note_hash": "04da5ba4204a232486f847a604fd9125cb4ba98a8f26d7d94c92bef4b950d340",
       "path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
-      "runner_path": "scripts/frontier_correct_coupling.py",
-      "title": "Gravity Sign Audit \u2014 Corrected Assessment"
+      "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
+      "title": "Gravity Sign Well/Hill Diagnostic"
     },
     "gravity_signed_source_density_boundary_note": {
       "claim_id": "gravity_signed_source_density_boundary_note",
@@ -85422,7 +85417,7 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9744,
+    "edge_count": 9743,
     "leaf_count": 790,
     "node_count": 2546,
     "root_count": 850,

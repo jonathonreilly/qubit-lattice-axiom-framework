@@ -120452,70 +120452,45 @@
       "verdict_rationale": null
     },
     "gravity_sign_audit_2026-04-10": {
-      "audit_date": "2026-05-27T01:31:51.245606+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-03": null,
-          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "Bounded algebraic certificate for the displayed staggered parity, identity, and lapse operator forms on finite sites/rational test profiles; excludes external literature correctness, uniqueness, framework derivation, continuum/GR consequences, and gate closure."
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "retained_bounded"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-03",
-          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
-        ],
-        "load_bearing_score": 10.248,
-        "runner_hash": "91b3877ab23a8bc17cab2b8ae1036957836be306279f38c234488af64993e951",
-        "transitive_descendants": 75
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-godel-2nd",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The narrow Part 4 well/hill diagnostic closes under stipulated parity/lapse forms, but the note still contains broader physical/literature-correct and irregular-graph survival language not supplied by the retained bounded algebraic dependency. Current stdout also conflicts with parts of the narrative: Part 1 labels lapse repulse TOWARD while Part 4 labels lapse hill AWAY, and graph self-gravity expands for identity, parity, and lapse.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gravity_sign_audit_2026-04-10",
-      "claim_scope": "Bounded configured diagnostic: for the displayed parity and lapse Hamiltonian forms, the finite 1D external-potential runner distinguishes well from hill; this does not audit physical gravity sign, literature-correct scalar coupling, staggered-gate closure, or irregular-graph portability.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-27T01:31:51.245606+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
-        "minimal_axioms_2026-05-03"
+        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 8,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.248,
-      "load_bearing_step": "Under the corrected parity and lapse couplings, well vs hill are distinguishable in the configured exact-lattice external-potential test.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "20c09981d345e5eeb02d31cb920c0fc76f39d0d2bd91fcddc863168b5a3221b4",
+      "note_hash": "04da5ba4204a232486f847a604fd9125cb4ba98a8f26d7d94c92bef4b950d340",
       "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - cheapest repair is to narrow the source note to the stipulated Part 4 well/hill diagnostic and update/remove stale graph self-gravity and Part 1/Part 4 lapse-direction language before re-audit.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-03.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-04T15:35:10.812307+00:00",
@@ -120683,21 +120658,77 @@
             "total_pass": 1
           },
           "verdict_rationale": "The runner is substantive: it builds Hamiltonians, evolves states, and computes centroid, force, width, and graph diagnostics rather than merely printing constants. However, the load-bearing coupling choice is introduced as an imported or stipulated structure in the restricted packet, not derived from the stated baseline axiom, and the note itself admits that this bridge remains open. Therefore the bounded numerical split is supported only conditional on the asserted parity/lapse coupling identification."
+        },
+        {
+          "archived_at": "2026-05-27T12:13:56.255136+00:00",
+          "archived_for_note_hash": "20c09981d345e5eeb02d31cb920c0fc76f39d0d2bd91fcddc863168b5a3221b4",
+          "audit_date": "2026-05-27T01:31:51.245606+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-03": null,
+              "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "Bounded algebraic certificate for the displayed staggered parity, identity, and lapse operator forms on finite sites/rational test profiles; excludes external literature correctness, uniqueness, framework derivation, continuum/GR consequences, and gate closure."
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "retained_bounded"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-03",
+              "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
+            ],
+            "load_bearing_score": 10.248,
+            "runner_hash": "91b3877ab23a8bc17cab2b8ae1036957836be306279f38c234488af64993e951",
+            "transitive_descendants": 75
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-godel-2nd",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The narrow Part 4 well/hill diagnostic closes under stipulated parity/lapse forms, but the note still contains broader physical/literature-correct and irregular-graph survival language not supplied by the retained bounded algebraic dependency. Current stdout also conflicts with parts of the narrative: Part 1 labels lapse repulse TOWARD while Part 4 labels lapse hill AWAY, and graph self-gravity expands for identity, parity, and lapse.",
+          "claim_scope": "Bounded configured diagnostic: for the displayed parity and lapse Hamiltonian forms, the finite 1D external-potential runner distinguishes well from hill; this does not audit physical gravity sign, literature-correct scalar coupling, staggered-gate closure, or irregular-graph portability.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T01:31:51.245606+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Under the corrected parity and lapse couplings, well vs hill are distinguishable in the configured exact-lattice external-potential test.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad - cheapest repair is to narrow the source note to the stipulated Part 4 well/hill diagnostic and update/remove stale graph self-gravity and Part 1/Part 4 lapse-direction language before re-audit.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-03.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 6,
+            "D": 0,
+            "total_pass": 6
+          },
+          "verdict_rationale": "Issue: the note has a clean bounded core, but still gestures at physical gravity sign, literature-correct scalar coupling, and irregular-graph portability/self-gravity claims beyond the retained packet. Why this blocks: the one-hop parity/lapse note is only a finite algebraic comparison of displayed forms, and MINIMAL_AXIOMS documents the staggered-Dirac realization target as open rather than deriving these forms from A1+A2. Repair target: split or rewrite the claim so the retained row states only the stipulated well/hill diagnostic, or supply a retained bridge theorem for the scalar/lapse coupling and a graph-native directional observable with current runner agreement. Claim boundary until fixed: bounded 1D configured parity/lapse well-hill separation only, with no physical gravity-sign or irregular-graph closure."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 6,
+        "C": 0,
         "D": 0,
-        "total_pass": 6
+        "total_pass": 0
       },
-      "runner_path": "scripts/frontier_correct_coupling.py",
-      "title": "Gravity Sign Audit \u2014 Corrected Assessment",
+      "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
+      "title": "Gravity Sign Well/Hill Diagnostic",
       "transitive_descendants": 75,
-      "verdict_rationale": "Issue: the note has a clean bounded core, but still gestures at physical gravity sign, literature-correct scalar coupling, and irregular-graph portability/self-gravity claims beyond the retained packet. Why this blocks: the one-hop parity/lapse note is only a finite algebraic comparison of displayed forms, and MINIMAL_AXIOMS documents the staggered-Dirac realization target as open rather than deriving these forms from A1+A2. Repair target: split or rewrite the claim so the retained row states only the stipulated well/hill diagnostic, or supply a retained bridge theorem for the scalar/lapse coupling and a graph-native directional observable with current runner agreement. Claim boundary until fixed: bounded 1D configured parity/lapse well-hill separation only, with no physical gravity-sign or irregular-graph closure."
+      "verdict_rationale": null
     },
     "gravity_signed_source_density_boundary_note": {
       "audit_date": null,
@@ -136586,7 +136617,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 13.356,
+      "load_bearing_score": 13.349,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -136607,7 +136638,7 @@
       },
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology",
-      "transitive_descendants": 926,
+      "transitive_descendants": 921,
       "verdict_rationale": null
     },
     "kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11": {
@@ -175194,13 +175225,13 @@
       "deps": [
         "key_terminology"
       ],
-      "direct_in_degree": 84,
+      "direct_in_degree": 83,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 51.83,
+      "load_bearing_score": 51.32,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -175221,7 +175252,7 @@
       },
       "runner_path": "scripts/frontier_generation_rooting_undefined.py",
       "title": "Minimal Framework Axioms (Restored)",
-      "transitive_descendants": 909,
+      "transitive_descendants": 903,
       "verdict_rationale": null
     },
     "minimal_bidirectional_trapping_probe_note": {

@@ -11,6 +11,8 @@ framework-local and auditable rather than raw textbook/paper imports.
 This does not retag either row as retained. Both rows are reset to unaudited
 bounded-theorem queue entries for independent audit.
 
+Loop PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2085
+
 ## Target Rows
 
 - `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11`

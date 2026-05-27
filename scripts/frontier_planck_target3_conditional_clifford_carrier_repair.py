@@ -5,7 +5,8 @@ This runner verifies only the repaired scope:
 
   * supplied metric-compatible coframe response gives Cl_4(C) relations;
   * the rank-four module is irreducible;
-  * oriented Clifford pairs give two complex CAR modes;
+  * oriented Clifford pairs give two complex CAR modes using the Clifford
+    *-involution, not an ambient physical Hilbert adjoint;
   * the spin lift has the finite 2pi -> -I, 4pi -> I phase behavior.
 """
 
@@ -140,6 +141,8 @@ def part0_source_firewall() -> None:
         "This row does not derive the metric-compatible coframe response on `K`",
         "This row does not prove substrate forcing of the active block",
         "This row does not claim that bare Hilbert-flow semantics alone force CAR",
+        "with creators defined by the Clifford `*`-involution",
+        "No ambient Hilbert-adjoint identification is part of the load-bearing claim",
         "This row does not add a new axiom",
         RUNNER_PATH,
     ]
@@ -205,7 +208,11 @@ def part1_clifford_and_car() -> None:
 
     c_normal, c_tangent = car_from_majoranas(gammas)
     max_cc, max_cct = car_errors((c_normal, c_tangent))
-    check("oriented Clifford pairs give two CAR modes", max_cc < TOL and max_cct < TOL, f"cc={max_cc:.2e}, cct={max_cct:.2e}")
+    check(
+        "oriented Clifford pairs give two CAR modes under Clifford star",
+        max_cc < TOL and max_cct < TOL,
+        f"cc={max_cc:.2e}, cct={max_cct:.2e}",
+    )
     check("two complex CAR modes have dimension four", 2**2 == 4)
 
     reconstructed = [

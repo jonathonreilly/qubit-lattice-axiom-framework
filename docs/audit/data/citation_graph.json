@@ -25105,6 +25105,10 @@
       "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
     },
     {
+      "from": "three_generation_structure_note",
+      "to": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26"
+    },
+    {
       "from": "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03",
       "to": "three_generation_observable_theorem_note"
     },
@@ -28443,6 +28447,10 @@
     {
       "from": "yt_zero_import_boundary_ratio_authority_theorem_note_2026-05-17",
       "to": "yt_zero_import_chain_note"
+    },
+    {
+      "from": "yt_zero_import_chain_note",
+      "to": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26"
     },
     {
       "from": "yt_zero_import_chain_note",
@@ -68218,7 +68226,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5ae8eabbc764b988ad333f63b798442650faafb44e9270fdd9771f0cfcc45ef2",
+      "note_hash": "f23740e17a02e0893de286a04c8ec7d2a509a8934bf5639831f834643f126096",
       "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
       "title": "Planck Target 3 Conditional Clifford Carrier Algebra"
@@ -79408,16 +79416,29 @@
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem Note"
     },
+    "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26": {
+      "claim_id": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "d714708357692757fb2e0a2b57ab93a9d3967e8a24a787dc14fdc625246465ac",
+      "path": "docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_generation_rooting_undefined.py",
+      "title": "Three-Generation Rooting Undefined Narrow No-Go Theorem"
+    },
     "three_generation_structure_note": {
       "claim_id": "three_generation_structure_note",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3f3a8dea51481ac17608afe42072d0eab1788669c9d886e9019aec60f1facab7",
+      "note_hash": "446f32c1facbda91557024b0e0b8815311bdcdfc570b3152b2aa6a76536614e7",
       "path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
       "runner_path": "scripts/frontier_generation_fermi_point.py",
       "title": "Three-Generation Matter Structure Note"
@@ -82977,6 +82998,18 @@
       "runner_path": "scripts/frontier_yt_constructive_uv_bridge.py",
       "title": "Constructive UV-Localized Bridge Class for `y_t`"
     },
+    "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": {
+      "claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "0408daddf18f84719e34c1ca36826c7ed235485db29a967cd7dae002be1bfe14",
+      "path": "docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
+      "title": "YT Declared-Anchor Bounded Subchain Narrow Theorem"
+    },
     "yt_eft_bridge_theorem": {
       "claim_id": "yt_eft_bridge_theorem",
       "claim_type_author_hint": null,
@@ -84444,10 +84477,11 @@
     },
     "yt_zero_import_chain_note": {
       "claim_id": "yt_zero_import_chain_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
         "plaquette_self_consistency_note",
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "rconn_derived_note"
@@ -84455,7 +84489,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "fd262b3c4be79ab390d98532a4ef3a5710902fb094085b55bfb59ff15c444508",
+      "note_hash": "be01fe7df35835b3cbc36aef3b73eb790c1aa61671f534dfe78a56f9ed56e70a",
       "path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
       "runner_path": "scripts/frontier_yt_zero_import_chain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note"
@@ -85276,6 +85310,7 @@
     "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
     "three_generation_observable_count_corollary_note_2026-05-03",
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+    "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
     "triple_stack_collapse_scaling_note",
     "two_field_retarded_family_closure_note_2026-04-10",
@@ -85352,6 +85387,7 @@
     "yt_bridge_hessian_selector_note_2026-05-17",
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
+    "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
     "yt_ew_color_projection_theorem",
     "yt_ew_coupling_bridge_note_2026-05-17",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
@@ -85371,27 +85407,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 604,
+      "bounded_theorem": 606,
       "decoration": 1,
       "meta": 191,
-      "no_go": 80,
-      "none": 1449,
+      "no_go": 81,
+      "none": 1448,
       "open_gate": 49,
       "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1023,
+      "bounded_theorem": 1025,
       "decoration": 1,
       "meta": 191,
-      "no_go": 183,
-      "none": 431,
+      "no_go": 184,
+      "none": 430,
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9742,
+    "edge_count": 9744,
     "leaf_count": 790,
-    "node_count": 2544,
-    "root_count": 848,
-    "runners_with_path": 2118
+    "node_count": 2546,
+    "root_count": 850,
+    "runners_with_path": 2120
   }
 }

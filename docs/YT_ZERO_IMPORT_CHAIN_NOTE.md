@@ -1,10 +1,20 @@
 # Zero-Import y_t Derivation: Definitive Authority Note
 
-**Date:** 2026-04-14 (last status edit: 2026-05-18)
+**Date:** 2026-04-14 (last status edit: 2026-05-18; bounded subchain split
+2026-05-26)
+**Claim type:** bounded_theorem
+**Claim scope (2026-05-26 split):** current auditable source scope is the
+bounded declared-anchor subchain recorded in
+[`YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md`](YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md)
+and section 9 below. The older full zero-import numerical prediction remains
+historical/conditional until retained-grade bridge notes derive the bounded
+plaquette insertion `<P>(beta=6)` and the `kappa_EW=0` connected-trace
+matching rule.
 **Status:** historical zero-import chain note with EW normalization now
 matching-rule conditional through `kappa_EW`; do not cite the EW `sqrt(9/8)`
 step as an unconditional retained derivation.
 **Script:** `scripts/frontier_yt_zero_import_chain.py`
+**Narrow bounded runner:** `scripts/frontier_yt_declared_anchor_bounded_subchain.py`
 
 **Status authority and audit hygiene (2026-05-10, updated 2026-05-18):**
 The audit lane has classified this note `audited_conditional` (audit row
@@ -49,13 +59,16 @@ new admissions and without inventing closures. The claim type therefore
 remains `positive_theorem` at the *algebraic / Ward / RGE* level of
 section 4 (those are not in the conditional perimeter), while the
 *overall y_t / EW prediction chain* is honestly conditional on the two
-named upstream items. No new axioms are introduced and no new content
-is asserted as derived from retained primitives that is not actually
-derived from retained primitives.
+named upstream items. The 2026-05-26 split supersedes the older
+`positive_theorem` wording for audit purposes: the auditable source packet is
+bounded over declared anchors, and the full zero-import numerical prediction is
+not asserted as retained. No new axioms are introduced and no new content is
+asserted as derived from retained primitives that is not actually derived from
+retained primitives.
 
 ---
 
-## 1. Result
+## 1. Historical Full-Chain Result (Out Of Current Audit Scope)
 
 | Prediction             | Value    | Observed | Deviation | Status  |
 |------------------------|----------|----------|-----------|---------|
@@ -66,7 +79,10 @@ derived from retained primitives.
 | 1/alpha_EM(M_Z)        | 127.665  | 127.951  | -0.22%    | NOTE    |
 | m_H [GeV]              | 152.15   | 125.25   | +21.5%    | PRED    |
 
-All four primary predictions pass their thresholds (m_t within 5%, alpha_s within 2%, sin^2 within 1%, v within 1%).  No SM observable is used as an input.
+These are historical full-chain runner outputs. They are not the current
+auditable claim scope of this row after the 2026-05-26 split. No SM observable
+is used as an input, but the full chain remains conditional on the bounded
+plaquette insertion and the `kappa_EW=0` matching rule.
 
 ---
 
@@ -189,9 +205,17 @@ The observed deviation of -1.84% exceeds the estimated systematic by about 1.2%.
 
 ---
 
-## 6. Gate Assessment
+## 6. Historical Gate Assessment (Superseded By 2026-05-26 Split)
 
-**What is cleanly derived (zero bounded items):**
+**Superseded historical wording.** Earlier versions of this note described the
+full chain as clean at zero-bounded scope. That wording is not the current
+audit boundary. The current bounded packet is the declared-anchor subchain in
+`YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md`;
+the full numerical chain remains conditional on the two named residual inputs
+listed in section 9.C.
+
+Historical full-chain outputs retained for context:
+
 - m_t = 169.5 GeV from zero SM imports (-1.84% from observed)
 - alpha_s(M_Z) = 0.1181 from CMT anchor (+0.14%)
 - sin^2(theta_W)(M_Z) = 0.2306 from geometric bare couplings (-0.26%)
@@ -295,6 +319,12 @@ that perimeter, without changing audit status.
 ---
 
 ## 9. Inlined derivations of the imported anchors (2026-05-18 repair)
+
+The 2026-05-26 split factors the reusable bounded part of this section into
+[`YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md`](YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md).
+This section remains as explanatory derivation text for the historical chain;
+the standalone note plus `frontier_yt_declared_anchor_bounded_subchain.py`
+are the auditable source packet for the narrowed claim.
 
 This section addresses the audit-row repair target
 `missing_dependency_edge` for `yt_zero_import_chain_note`: "add

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
-runner_sha256: 793e8f8ea64d5ae51ceedf79384367071cbf1e35241e496e8bc08e90884b0b7f
+runner_sha256: 9e24e057bdaf1e0ca6753cab5ca54cc62d776297d9b3044b5baa8c31324d5502
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14
@@ -18,6 +18,8 @@ PART 0: SOURCE FIREWALL
   [PASS] source note contains boundary phrase: This row does not derive the metric-compatible coframe response on `K`
   [PASS] source note contains boundary phrase: This row does not prove substrate forcing of the active block
   [PASS] source note contains boundary phrase: This row does not claim that bare Hilbert-flow semantics alone force CAR
+  [PASS] source note contains boundary phrase: with creators defined by the Clifford `*`-involution
+  [PASS] source note contains boundary phrase: No ambient Hilbert-adjoint identification is part of the load-bearing claim
   [PASS] source note contains boundary phrase: This row does not add a new axiom
   [PASS] source note contains boundary phrase: scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
   [PASS] source note excludes overbroad phrase: G_Newton
@@ -42,7 +44,7 @@ PART 1: FINITE CLIFFORD/CAR ALGEBRA
   [PASS] Clifford words span M_4(C)  (rank=16)
   [PASS] commutant is only scalar  (dim=1)
   [PASS] rank-four module is minimal for Cl_4(C)
-  [PASS] oriented Clifford pairs give two CAR modes  (cc=0.00e+00, cct=0.00e+00)
+  [PASS] oriented Clifford pairs give two CAR modes under Clifford star  (cc=0.00e+00, cct=0.00e+00)
   [PASS] two complex CAR modes have dimension four
   [PASS] CAR modes reconstruct the Clifford generators  (max err=0.00e+00)
   [PASS] Clifford bivector squares to -I  (err=0.00e+00)
@@ -52,7 +54,7 @@ PART 1: FINITE CLIFFORD/CAR ALGEBRA
 ========================================================================================
 SUMMARY
 ========================================================================================
-PASS=31 FAIL=0
+PASS=33 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

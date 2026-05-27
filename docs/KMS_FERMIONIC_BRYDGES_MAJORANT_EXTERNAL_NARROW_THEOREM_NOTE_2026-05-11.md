@@ -1,4 +1,4 @@
-# Kroschinsky-Marchetti-Salmhofer Fermionic Brydges Majorant — External Narrow Theorem
+# KMS Fermionic Brydges Majorant - Finite Framework Majorant Repair
 
 **Date:** 2026-05-11
 **Claim type:** bounded_theorem
@@ -26,39 +26,101 @@ No new axiom, import, or retained bridge is introduced. The conditional core is
 the load-bearing content; the named upstream stays admitted until a retained
 authority/runner for it lands.
 
-## Claim
+## Binding Framework Lemma
 
-Let `V_l` denote the fermionic effective interaction at scale `l` along the Polchinski continuous Wilsonian flow with infrared cutoff parameter `l`. Let `||.||_h` denote a Brydges-Battle-Federbush polymer norm with auxiliary weight parameter `h > 0` (Gram-type fermion norm; see KMS §2 for the exact definition).
+Let a finite framework packet provide:
 
-Then there exist scale-dependent majorant coefficients `M_l >= 0` and a Polchinski flow equation
-
-```text
-d/dl V_l = - <V_l, V_l>_C + Delta_C V_l
-```
-
-(where `<.,.>_C` is the Polchinski quadratic form and `Delta_C` is the cutoff-derivative Laplacian) for which the BBF polymer norm satisfies a per-scale majorant bound
+1. a finite scale mesh `l_0 < ... < l_N`;
+2. a finite coefficient vector `c(l_j)` at each scale;
+3. a BBF-style non-negative polymer norm
 
 ```text
-d/dl ||V_l||_h <= a(l) ||V_l||_h^2 + b(l) ||V_l||_h
+Y_j := ||c(l_j)||_h = sum_P w_P |c_P(l_j)|,        w_P >= 0;
 ```
 
-with explicit, scale-integrable, non-negative `a(l), b(l)` derived from the Gram covariance decomposition (KMS Theorem 1; arXiv:2404.06099 v1, eq. (T1)).
+4. non-negative scale coefficients `R_j >= 1` and `q_j >= 0` such that the
+   verified one-step majorant inequality is
 
-As a corollary, if `||V_{l_0}||_h` is sufficiently small at the ultraviolet endpoint `l_0`, the flow is globally well-defined and contracts in the BBF norm, with the standard rigorous-RG global-existence consequences.
+```text
+Y_{j+1} <= R_j Y_j / (1 - q_j Y_j)                 (1)
+```
+
+whenever `q_j Y_j < 1`.
+
+Define
+
+```text
+E_n := product_{j=0}^{n-1} R_j,
+Q_n := sum_{j=0}^{n-1} q_j product_{i=0}^{j-1} R_i .
+```
+
+Then the finite comparison bound is
+
+```text
+Y_n <= E_n Y_0 / (1 - Q_n Y_0)                     (2)
+```
+
+provided `Q_n Y_0 < 1`. This is the bounded framework claim of this note.
+
+Equivalently, in the continuous notation
+
+```text
+dY/dl <= a(l) Y^2 + b(l) Y,        a(l), b(l) >= 0,
+B(l) = integral b,
+Q(l) = integral a(s) exp(B(s)) ds,
+```
+
+the same comparison gives
+
+```text
+Y(l) <= exp(B(l)) Y(l_0) / (1 - Y(l_0) Q(l)).
+```
+
+The proof is elementary: set `Z = exp(-B) Y`, so
+
+```text
+dZ/dl <= a(l) exp(B(l)) Z^2.
+```
+
+Integrating `d(1/Z)/dl >= -a(l) exp(B(l))` gives the displayed bound.
+For the mesh form, the substitution `X_j = 1/Y_j` turns (1) into
+
+```text
+X_{j+1} >= (X_j - q_j) / R_j,
+```
+
+and iterating gives (2). No external theorem is imported for this finite
+comparison step.
+
+## Relation To KMS
+
+Kroschinsky-Marchetti-Salmhofer prove that a fermionic Polchinski flow can be
+put into a Brydges-Battle-Federbush majorant form under their hypotheses. This
+note does not import that theorem as the binding proof. It proves only the
+finite comparison math that would apply after a framework packet has supplied
+the one-step inequality and non-negative coefficients.
+
+The KMS paper remains cited in parallel as evidence that this finite
+majorant pattern is the right rigorous-RG technology to compare against.
 
 ## Boundary
 
-This note records an external fermionic-RG theorem and its standard published context. It does not claim:
+This note does not claim:
 
-- that any framework staggered-Dirac blocking/coarse-graining is the KMS continuous Polchinski flow;
+- that any framework staggered-Dirac blocking/coarse-graining is the KMS
+  continuous Polchinski flow;
 - that the framework's canonical surface lies in the KMS small-data regime;
 - that any project-specific coupling is the BBF norm coefficient at any scale;
+- that KMS Theorem 1 has been re-proved in full;
 - closure of any framework substitution, hierarchy formula, or physical scale;
 - any numerical prediction or comparison with observation;
 - any new framework axiom or repo-wide premise;
 - specifically: the scaffold admissions of `HIERARCHY_BBS_STAGGERED_TASTE_BLOCKING_BRIDGE_SCAFFOLD_AVAILABILITY_BOUNDED_NOTE_2026-05-11.md` remain open; KMS provides published fermionic-RG technology, but the substrate-specific bridge to those admissions would still need to be separately constructed.
 
-Any later framework use must separately construct the polymer norm, identify the framework substrate's effective action with `V_l`, verify the small-data hypothesis, and establish the physical bridge.
+Any later framework use must separately construct the polymer norm, prove the
+one-step inequality, identify the framework substrate's effective action with
+the coefficient vector `c(l_j)`, verify the small-data hypothesis, and
+establish the physical bridge.
 
 ## External References
 
@@ -72,8 +134,10 @@ Any later framework use must separately construct the polymer norm, identify the
 
 The paired runner checks:
 
-1. exact Fraction arithmetic for the scalar majorant ODE `dy/dl = a y^2 + b y` solved on a finite-grid; small-data integrability of the closed-form solution;
-2. monotonicity: if `y(l_0) <= y_0` and `a, b >= 0` integrable, then `y(l)` stays bounded on `[l_0, infinity)` iff `y_0` lies below the explicit small-data threshold;
+1. exact Fraction arithmetic for the scalar majorant ODE `dy/dl = a y^2 + b y`
+   and the mesh comparison map `Y_{j+1} <= R_j Y_j/(1-q_jY_j)`;
+2. monotonicity: if `Y_0` lies below the explicit small-data threshold, the
+   finite comparison bound stays positive and finite;
 3. composition: the per-scale norm bound chains across `N` scales `l_0 < l_1 < ... < l_N` with product structure on the exponential `b`-factor;
 4. the small-data fixed-point structure of the Polchinski quadratic form, on scalar and finite-dimensional toy operators;
 5. substrate-independence: the majorant ODE structure does not depend on the particular fermionic theory beyond the inputs `(a(l), b(l))`;
@@ -83,22 +147,14 @@ The paired runner checks:
 
 Expected runner result: `PASS=N`, `FAIL=0`.
 
-## Upstream authority
+## Background References
 
-This note is an external narrow theorem note citing a rigorous-RG
-preprint. The Brydges-Battle-Federbush (BBF) polymer-norm
-machinery and the Polchinski Wilsonian flow are textbook
-constructive-QFT material; the specific scale-integrability bound is
-the Kroschinsky-Marchetti-Salmhofer majorant-method result cited by
-this note.
+The references below are background context, not load-bearing imports for the
+finite comparison lemma proved above.
 
-- **External authority — Kroschinsky-Marchetti-Salmhofer majorant method**: Wilhelm Kroschinsky, Domingos H. U. Marchetti, and Manfred Salmhofer, "The majorant method for the fermionic effective action," arXiv:2404.06099. This is the source note's cited authority for the per-scale majorant bound `d/dl ||V_l||_h <= a(l) ||V_l||_h^2 + b(l) ||V_l||_h`, including the hypotheses on the Gram covariance decomposition that fix the coefficient functions `a(l), b(l)`. The hypotheses include: a Gram-type fermion Brydges-Battle-Federbush polymer norm with auxiliary weight `h > 0`; a Polchinski continuous Wilsonian flow with infrared cutoff `l`; the polymer activity decomposition of the effective interaction `V_l`; and the bound `a(l), b(l) >= 0` integrable on the scale interval. The small-data corollary is standard rigorous-RG output of the per-scale majorant bound applied at the UV endpoint.
+- Kroschinsky, Marchetti, and Salmhofer, arXiv:2404.06099: background
+  rigorous-RG source for the fermionic BBF/Polchinski majorant setting.
+- Brydges, Spencer, Imbrie, Rivasseau, and Salmhofer: background on
+  BBF polymer norms, cluster expansions, and Wilsonian fermionic RG.
 
-- **Background textbook authorities (not load-bearing on this note)**: D. Brydges & T. Spencer, *Comm. Math. Phys.* **97**, 125 (1985); D. Brydges, J. Imbrie, *J. Stat. Phys.* **110**, 503 (2003); M. Salmhofer, *Renormalization: An Introduction* (Springer 1999). These provide the BBF polymer-norm and Wilsonian flow machinery into which KMS Theorem 1 plugs.
-
-This wrapper records the external KMS authority and its standard
-background as named non-derivation imports. The framework-side
-admissions (whether the staggered-Dirac blocking is the KMS continuous
-Polchinski flow; whether the canonical surface lies in the KMS small-
-data regime) are explicitly out of scope and remain open as stated in
-the Boundary section above.
+The framework-side admissions remain open as stated in the Boundary section.

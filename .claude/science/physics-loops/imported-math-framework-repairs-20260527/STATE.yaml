@@ -1,0 +1,49 @@
+slug: imported-math-framework-repairs-20260527
+branch: physics-loop/imported-math-repairs-20260527
+base: origin/main
+date: 2026-05-27
+mode: science_fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+current_goal: "Retire raw imported-math blockers by replacing them with framework-local bounded proof or dependency surfaces."
+active_route: imported_math_internalization
+cycle_count: 1
+block_count: 1
+target_claim_ids:
+  - kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11
+  - born_rule_from_gleason_busch_derivation_note_2026-05-20
+files_touched:
+  - docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md
+  - scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py
+  - docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md
+  - scripts/born_rule_framework_bridge_check.py
+  - docs/audit/AUDIT_DISPATCH_QUEUE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_dispatch_queue.json
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+verification:
+  kms_runner: "TOTAL: PASS=20, FAIL=0"
+  born_runner: "TOTAL: PASS=25, FAIL=0"
+  kms_vocab_lint: clean
+  born_vocab_lint: clean
+  audit_pipeline: complete
+open_imports:
+  - "KMS framework substrate identification and one-step inequality construction remain future work."
+  - "Born durable/native persistent record formation remains future work."
+  - "Born arbitrary unsharp instrument uniqueness remains future work."
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_findings: []
+pr_status: pending
+pr_url: null
+next_exact_action: "Run diff checks, commit, push, open draft PR, then update this pack with the PR URL."
+stop_condition: "Draft PR opened and verified."

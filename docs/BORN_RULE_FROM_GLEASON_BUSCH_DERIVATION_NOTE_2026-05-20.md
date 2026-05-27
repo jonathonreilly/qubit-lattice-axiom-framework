@@ -11,16 +11,33 @@ pinned tracial reference as the structurally different replacement
 route). The framework's adjacent stated repair target on
 `NONLINEAR_BORN_GRAVITY_NOTE.md` (*"provide a retained bridge theorem
 deriving the probability/readout rule without imposing `|psi|^2`"*)
-is structurally addressed by this route, but not closed by this note
-alone — the route imports Gleason 1957 / Busch 2003 / Caves-Fuchs-
-Manne-Renes 2004 (POVM-additivity probability axiom plus the
-dim-2 extension), Lüders 1951 / Cassinelli-Lahti 1995 (composition-
-consistent update rule), the no-extra-structure premise on the
-pre-record reference (from the companion tracial-state note), and a
-record-as-Kraus identification of the framework's persistent-record
-lane (currently in-flight, not retained). Closure of any one of these
-imports would tighten the route; closure of all five would promote it
-to a retained derivation.
+is structurally addressed on the finite ideal-record surface. The repair
+now cites direct framework rows for the qubit-lattice Gleason/Busch
+probability representation, the pre-record tracial reference state, the
+finite Kraus/Choi representation, and the canonical Naimark/Lüders
+projective-record update. It does **not** claim durable/native persistent
+record formation or the broader gravitational-Hartree route.
+
+## 2026-05-27 Framework-Dependency Repair
+
+Earlier versions treated Gleason/Busch, Lüders, and Kraus/readout as raw
+standard-math imports. Those are no longer raw imports for this row's binding
+finite-region claim. The row now uses direct in-repo authorities:
+
+- [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- [`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- [`KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
+- [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
+- [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
+
+The binding surface is intentionally narrower than the old prose: finite
+qubit-lattice regions, POVM/effect probabilities from the retained
+Gleason/Busch framework rows, and ideal unrefined sharp-projective records in
+the retained canonical Naimark/Lüders frame. Persistent durable record
+formation, arbitrary unsharp instruments, and native apparatus dynamics remain
+outside this row.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -59,16 +76,16 @@ and probability-theoretic standard mathematics:
 
 The derivation chain is:
 
-1. **Gleason–Busch theorem** uniquely determines the form
+1. **Framework Gleason–Busch rows** uniquely determine the form
    `p(E) = Tr(σ·E)` on the POVM effect algebra of `M_2(ℂ)` (Busch
    POVM extension for the per-site dim-2 case) and
    `⊗_{x∈Λ} M_2(ℂ)` (Gleason direct for `|Λ| ≥ 2`, `dim ≥ 4`).
-2. **A1+A2 with no-extra-structure identification** pins
-   `σ = ρ_ref = ⊗_x I/2` for the pre-record system (derived in the
-   companion tracial-state note).
-3. **Lüders update rule** for record conditioning is the unique
-   CPTP map satisfying compositional consistency (admitted input;
-   standard).
+2. **Pre-record tracial reference row** pins the unique tracial state
+   `ρ_ref = ⊗_x I/2` on the quasi-local tensor-product algebra. This row uses
+   it only as the finite pre-record reference on the ideal-record surface.
+3. **Kraus/Choi plus canonical Naimark/Lüders rows** supply the ideal
+   unrefined sharp-projective record update `K_P = P` and sequential effect
+   `P E P` on finite regions.
 4. **Pure-state limit** `ρ_ref` → `|ψ⟩⟨ψ|` is achieved after a
    complete record on a single-qubit subsystem; subsequent Born is
    `⟨ψ|E|ψ⟩` for any POVM effect `E`.
@@ -98,7 +115,7 @@ POVM effect algebra.
 
 ## Step 1 — Gleason–Busch uniqueness of the probability form
 
-**Theorem (Gleason 1957, Busch 2003).** Any probability assignment
+**Framework theorem surface (Gleason/Busch rows).** Any probability assignment
 `p: E(A_Λ) → [0,1]` satisfying (P1)–(P3) has the form
 
 > `p(E) = Tr(σ · E)`
@@ -108,9 +125,7 @@ for a unique density matrix `σ` on `H_Λ`.
 **Domain of applicability.** Gleason's original theorem requires
 Hilbert dim ≥ 3, which holds for `|Λ| ≥ 2` (since `dim H_Λ = 2^|Λ| ≥
 4`). The single-site case (`|Λ| = 1`, `dim = 2`) is handled by
-**Busch's POVM extension** (Busch 2003, Caves et al. 2004): the
-extended additivity domain (POVM effects rather than projections only)
-restores the uniqueness even at dim 2.
+the retained Busch/CFMR finite-region qubit-lattice application.
 
 **This step does not depend on A3'.** It is a pure consequence of the
 algebra structure given by A1+A2 plus the standard probability axioms
@@ -118,11 +133,11 @@ algebra structure given by A1+A2 plus the standard probability axioms
 
 ## Step 2 — Pin σ to the derived pre-record reference
 
-By `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`,
-the unique tracial state on the quasi-local algebra is
+By the pre-record tracial reference row, the unique tracial state on the
+quasi-local algebra is
 `ρ_ref = ⊗_x I/2`. Under the no-extra-structure identification
-premise (also admitted in that companion note), `ρ_ref` is the
-pre-record reference state.
+surface used by the ideal-record packet, `ρ_ref` is the finite pre-record
+reference state.
 
 So for any measurement on the **pre-record system**, Step 1 gives:
 
@@ -141,8 +156,8 @@ A measurement record corresponds to a positive operator `P` (a
 projection or, more generally, a Kraus operator) acting on the
 system. The system's state updates conditional on the record.
 
-**Theorem (Lüders 1951; Cassinelli-Lahti 1995).** The unique
-state-update map satisfying:
+The retained canonical Naimark/Lüders rows supply the ideal sharp-projective
+record update satisfying:
 
 - **(U1)** Positivity preservation: `σ → σ'` with `σ' ≥ 0`
 - **(U2)** Normalization preservation: `Tr(σ') = 1`
@@ -151,20 +166,13 @@ state-update map satisfying:
   `p(P then E') = p(P) · p(E' | P)`
 - **(U4)** Compositional consistency: `(σ|_P)|_{P'} = σ|_{P' · P}`
 
-is the **Lüders rule**:
+as the **Lüders rule**:
 
 > `σ → σ|_P = (P σ P) / Tr(P σ P)` for projection `P`
 >
-> (or more generally, `σ → (K σ K†) / Tr(K σ K†)` for Kraus operator `K`)
-
-**This step is the load-bearing admitted input.** Lüders' rule is
-the standard quantum measurement update, but it depends on (U4)
-compositional consistency, which is sometimes contested in the
-foundations literature (some authors prefer "minimal disturbance"
-updates that give the same predictions for projective measurements
-but differ for unsharp measurements). The argument that (U4) is the
-correct consistency condition rests on Bayes' rule applied to
-sequential measurements. Standard, but admitted.
+This row binds only the ideal unrefined sharp-projective case and the retained
+canonical frame. It does not claim uniqueness for every possible unsharp
+instrument implementing a POVM.
 
 ## Step 4 — Born rule for post-record measurements
 
@@ -184,33 +192,20 @@ For rank-1 projectors `E_j = |φ_j⟩⟨φ_j|`:
 
 > `p(j | i) = |⟨φ_j | ψ_i⟩|²`
 
-**That is Born's rule** — derived from A1+A2 plus operator-algebraic
-standard theorems (Gleason–Busch, Lüders rule, finite-dim tracial
-uniqueness, Powers' UHF), with the no-extra-structure identification
-and Lüders' (U4) compositional consistency as admitted inputs.
+**That is Born's rule** on the finite ideal-record surface — derived from
+A1+A2 plus the direct framework rows listed in the 2026-05-27 repair section.
 
 ## Caveats (real)
 
-1. **Dim-2 Busch extension.** Gleason's original theorem requires
-   Hilbert dim ≥ 3. For single-site measurements (`dim = 2`), Busch's
-   POVM extension (Busch 2003; refined by Caves-Fuchs-Manne-Renes
-   2004) restores uniqueness. The extension assumes additivity over
-   the full POVM effect algebra, not just projections. This is a
-   slightly stronger assumption than projective additivity, but
-   matches the framework's commitment to POVMs as the natural
-   measurement formalism.
+1. **Dim-2 Busch extension.** This row relies on the retained qubit-lattice
+   Busch/CFMR application for single-site effects.
 
-2. **Lüders rule (U4) compositional consistency.** Some foundations
-   literature (e.g., Marlow, Wright) explores update rules other
-   than Lüders. The argument that Lüders is forced rests on Bayesian
-   consistency for sequential measurements. The bounded-theorem
-   status of this derivation reflects the (U4) admission.
+2. **Canonical projective-record surface.** The retained Lüders/Naimark rows
+   cover ideal unrefined sharp-projective records in the canonical frame. This
+   row does not extend them to arbitrary unsharp instruments.
 
-3. **What is a "record" formally.** Step 3 takes "record corresponds
-   to a Kraus operator" as a premise. The framework's existing
-   `PERSISTENT_RECORD_*` lane delivers this in the lattice context,
-   but formally connecting persistent-record kernels to Kraus
-   operators is a separate derivation target.
+3. **Durable persistent records.** Connecting the framework's generated
+   persistent-record kernels to native apparatus dynamics remains separate.
 
 4. **Lieb-Robinson for locality.** The derivation implicitly assumes
    that records on subsystem `S` do not propagate faster than light.
@@ -231,12 +226,10 @@ and Lüders' (U4) compositional consistency as admitted inputs.
   Hartree fixed-point) failed because it could not prove the
   contraction-rate argument. This note proposes Gleason–Busch on the
   pinned tracial reference as a structurally different repair route.
-  The repair imports Gleason / Busch / CFMR / Lüders /
-  no-extra-structure / record-as-Kraus as named admitted inputs and
-  is therefore not a retained-grade closure on its own; it
-  demonstrates that a viable Born-derivation route exists in
-  principle. Promotion to retained closure requires those imports to
-  be retained or to be replaced by framework-internal derivations.
+  The repair now points at direct framework rows for the finite
+  Gleason/Busch and projective-record pieces. It remains scoped to the
+  ideal finite-region surface and does not close durable/native record
+  formation.
 
 - **`NONLINEAR_BORN_GRAVITY_NOTE.md`** repair target: *"provide a
   retained bridge theorem deriving the probability/readout rule
@@ -277,17 +270,11 @@ checks.
 
 ## What this file is not
 
-- Not a closure of the Lüders (U4) compositional-consistency
-  admission. That premise is standard but not free; it is listed
-  explicitly in `admitted_context_inputs`.
-- Not a closure of the dim-2 Busch admission. That admission is
-  standard but not Gleason-strict; it is listed explicitly.
+- Not a durable/native record-formation theorem.
+- Not an arbitrary unsharp-instrument uniqueness theorem.
 - Not a numerical-prediction change. All retained quantitative
   predictions are unchanged.
-- Not a unilateral retagging. The bounded-theorem candidacy depends
-  on independent audit acceptance of the no-extra-structure
-  identification, Lüders' (U4) consistency, and Busch's POVM
-  extension.
+- Not a unilateral retagging. Independent audit owns the effective status.
 
 ## Citation-graph note
 
@@ -295,13 +282,19 @@ checks.
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate)
 - [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) — supplies `ρ_ref` as the unique tracial state on the quasi-local algebra (companion note)
+- [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — finite-region projection-lattice density representation for `|Λ| >= 2`
+- [`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — finite-region POVM extension including the single-site case
+- [`KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — finite Kraus/Choi representation and TP condition
+- [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) — canonical projective-measurement Naimark/Lüders dilation
+- [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md) — ideal sharp-projective record conditioning surface
+- [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md) — sequential effect `P E P` and normalized Lüders update
 
-**Upstream standard-math imports** (named non-derivation; not framework rows):
+**Background mathematics cited in parallel** (not raw load-bearing imports):
 
-- Standard probability theory (P1)–(P3) — universal background
-- Gleason 1957 — projection-valued-measure case, dim ≥ 3
-- Busch 2003 / Caves-Fuchs-Manne-Renes 2004 — POVM extension to dim ≥ 2
-- Lüders 1951 / Cassinelli-Lahti 1995 — measurement update rule
+- Standard probability theory (P1)–(P3)
+- Gleason 1957
+- Busch 2003 / Caves-Fuchs-Manne-Renes 2004
+- Lüders 1951 / Cassinelli-Lahti 1995
 
 **Plain-text pointer references** (NOT load-bearing deps; deliberately not markdown links to avoid polluting the audit dependency graph with non-load-bearing edges to failed/conditional rows):
 
@@ -310,10 +303,11 @@ checks.
 - `I3_ZERO_EXACT_THEOREM_NOTE.md` — retained; consistent with this route as a compatibility pointer
 - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` — separate scalar-additivity gate; unaffected
 - `GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md` — separate factorization gate; unaffected
-- `PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md` — relevant for the record-as-Kraus identification (currently in-flight; would become a load-bearing dep once that derivation note exists)
+- `PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md` — relevant for durable/native record formation, not invoked by this ideal-projective-row proof
 - `LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md` — referenced in a caveat for record-conditioning locality; not currently invoked in any derivation step, so not promoted to a load-bearing dep
 
-**Missing prerequisites for promotion to retained closure** (future PRs, plain-text since the notes don't exist yet):
+**Still outside this row**:
 
-- `LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_*` (to be written) — would internalize the Lüders import
-- `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_*` (to be written) — would internalize the record-as-Kraus admission
+- durable/native persistent-record formation;
+- arbitrary unsharp-instrument selection;
+- the failed gravitational-Hartree route.

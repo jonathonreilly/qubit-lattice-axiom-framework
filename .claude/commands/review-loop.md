@@ -26,9 +26,12 @@ Run the repo-native physics review loop from:
    mostly confirmatory. Block PASS when a changed claim has missing graph
    dependencies, author-prewritten audit verdicts, stale retained-status
    assumptions, or a runner that does not test the load-bearing bridge.
-7. Re-review only files changed by the fix pass, plus interacting files that
+7. For math-bearing runner/proof changes, do not trust PASS output alone:
+   independently cross-check load-bearing formulas, signs, factors,
+   normalizations, expected values, and edge cases before landing.
+8. Re-review only files changed by the fix pass, plus interacting files that
    were already in the original changed-file set.
-8. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
+9. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
    preserve any durable, runner-backed lemma in the same requested landing path
    with a canonical claim type, and explicitly reject only the pieces that
    cannot be salvaged without new science.
@@ -37,10 +40,10 @@ Run the repo-native physics review loop from:
    or audit-readiness repairs into source/tooling/pipeline changes and
    regenerate generated surfaces instead of rejecting them just because they
    are not theorem science.
-9. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
+10. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
    never land them unless the user explicitly asks for draft inspection without
    landing.
-10. End with a concise report covering imports/support status, retained/bounded
+11. End with a concise report covering imports/support status, retained/bounded
    disposition, salvage disposition, audit-readiness, commits, checks, and
    remaining manual science.
 
@@ -74,9 +77,12 @@ Run the repo-native physics review loop from:
   dependency statuses. Reviewers must reject stale exact-status checks that
   require only `effective_status = retained` when bounded/no-go retained
   grades are valid.
-- `/review-loop` must not apply audit verdicts. It prepares audit-clean review
-  surfaces and reports which proposed claims require the independent
-  audit worker.
+- `/review-loop` must not apply audit verdicts. It prepares
+  audit-compatible review surfaces and reports which proposed claims require
+  the independent audit worker.
+- `/review-loop` is review, not audit. It may run the compatibility pipeline
+  and strict lint, but it must not claim an audit verdict, apply auditor
+  results, or describe its review as an audit.
 - `/review-loop` must not create or open pull requests. If science is
   salvageable, land the source-only salvage and dependency-chain/audit-queue
   repairs as part of the current landing path; otherwise close or reject the
@@ -100,6 +106,12 @@ Run the repo-native physics review loop from:
   bridges, empirical matches, or parent theorem/status surfaces.
 - Nature-grade retention requires derived or explicitly admitted inputs,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
+- Math-bearing runners require independent formula review: PASS lines do not
+  establish that the runner's expression, sign, factor, normalization, or
+  expected value is correct.
+- Branch-local or draft-PR vocabulary, including language leaked from PR230 or
+  similar long-lived drafts, must be translated to native repo language before
+  landing.
 - Closing a PR must not discard durable science. Salvage narrow
   theorem/no-go/open-gate lemmas into canonical source-only landing commits
   when the runner directly supports the narrowed claim and no audit

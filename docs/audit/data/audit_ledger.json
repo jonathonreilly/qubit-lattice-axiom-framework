@@ -197411,24 +197411,48 @@
       "verdict_rationale": "The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome."
     },
     "persistent_record_as_kraus_operator_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T05:20:19.931480+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "persistent_record_overlap_kernel_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "persistent_record_overlap_kernel_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "persistent_record_overlap_kernel_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "08fca11ee1c5c97a2b4ee08e1debb9159bc327e7aae53ebe2fec36e6a5680c72",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-27-persistent-record-kraus",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Kraus/CPTP algebra closes once a normalized linear isometry W is assumed, and the runner verifies that algebra on a finite sampled isometry. The restricted packet does not derive W from the retained persistent-record overlap-kernel pilot or from the minimal axioms, so the advertised record-lane bridge remains conditional.",
       "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Conditional finite-instrument algebra only: if the bounded persistent-record stage is already represented by a normalized linear isometry W: H_sys -> H_sys tensor H_record with W = sum_r K_r tensor |r>, then the extracted K_r satisfy the Kraus resolution of identity, define normalized selective updates when p_r > 0, and define a CPTP unconditional map. The audit does not close the bridge from the retained persistent-record overlap-kernel pilot to such a normalized linear isometry.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T05:20:19.931480+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -197437,20 +197461,22 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For a finite normalized record-writing map W = sum_r K_r tensor |r>, W^dagger W = I implies sum_r K_r^dagger K_r = I, and therefore rho -> sum_r K_r rho K_r^dagger is trace-preserving and completely positive.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "6090820e9a936cc256b0a2638556a170039381b9fe00659ee1e69729248fc86d",
       "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a retained normalized linear record-writing isometry theorem for the persistent-record overlap-kernel lane; then re-audit the finite Kraus/CPTP algebra as a bounded bridge.",
+      "open_dependency_paths": [
+        "finite_normalized_record_writing_isometry_bridge"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-23T12:01:21.826263+00:00",
@@ -197619,18 +197645,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 5
       },
       "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source note's bridge from the framework persistent-record process to Kraus operators assumes a finite normalized linear record-writing isometry W, but the direct retained record-overlap dependency supplies a bounded mesoscopic count-vector overlap-kernel pilot, not a retained theorem constructing W. Why this blocks: the runner samples an abstract random isometry and verifies standard Kraus/Choi algebra; it does not construct the isometry from the persistent-record dynamics, the overlap kernel, or a specific record observable. Repair target: add and audit a theorem or runner deriving the normalized linear record-writing map from the persistent-record lane, including how record labels form an orthonormal or POVM-compatible record space and how path amplitudes define linear K_r blocks. Claim boundary until fixed: the finite-isometry-to-Kraus/CPTP algebra is valid, but the framework record-as-Kraus bridge remains conditional."
     },
     "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
       "audit_date": "2026-05-23T12:52:12.797919+00:00",

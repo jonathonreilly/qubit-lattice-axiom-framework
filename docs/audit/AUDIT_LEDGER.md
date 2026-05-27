@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 531 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1168 |
+| unaudited | 1167 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -55,12 +55,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 829 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1397 |
+| `unaudited` | 1396 |
 
 | claim_type | count |
 |---|---:|
@@ -1005,6 +1005,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `omega_lambda_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -9880,6 +9881,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The exact-lattice branch has a self-maintaining multistage top4 floor that transfers across most of the widened local pocket, with only a residual inward-source boundary between source_z=1.00 and source_z=1.25.  _(class `C`)_
 - **chain closes:** True — The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
 - **rationale:** The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
+- **auditor confidence:** high
+
+### `persistent_record_as_kraus_operator_note_2026-05-20`
+
+- **Note:** [`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](../../docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-instrument algebra only: if the bounded persistent-record stage is already represented by a normalized linear isometry W: H_sys -> H_sys tensor H_record with W = sum_r K_r tensor |r>, then the extracted K_r satisfy the Kraus resolution of identity, define normalized selective updates when p_r > 0, and define a CPTP unconditional map. The audit does not close the bridge from the retained persistent-record overlap-kernel pilot to such a normalized linear isometry.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-2026-05-27-persistent-record-kraus`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For a finite normalized record-writing map W = sum_r K_r tensor |r>, W^dagger W = I implies sum_r K_r^dagger K_r = I, and therefore rho -> sum_r K_r rho K_r^dagger is trace-preserving and completely positive.  _(class `A`)_
+- **chain closes:** False — The Kraus/CPTP algebra closes once a normalized linear isometry W is assumed, and the runner verifies that algebra on a finite sampled isometry. The restricted packet does not derive W from the retained persistent-record overlap-kernel pilot or from the minimal axioms, so the advertised record-lane bridge remains conditional.
+- **rationale:** Issue: the source note's bridge from the framework persistent-record process to Kraus operators assumes a finite normalized linear record-writing isometry W, but the direct retained record-overlap dependency supplies a bounded mesoscopic count-vector overlap-kernel pilot, not a retained theorem constructing W. Why this blocks: the runner samples an abstract random isometry and verifies standard Kraus/Choi algebra; it does not construct the isometry from the persistent-record dynamics, the overlap kernel, or a specific record observable. Repair target: add and audit a theorem or runner deriving the normalized linear record-writing map from the persistent-record lane, including how record labels form an orthonormal or POVM-compatible record space and how path amplitudes define linear K_r blocks. Claim boundary until fixed: the finite-isometry-to-Kraus/CPTP algebra is valid, but the framework record-as-Kraus bridge remains conditional.
+- **open / conditional deps cited:**
+  - `finite_normalized_record_writing_isometry_bridge`
 - **auditor confidence:** high
 
 ### `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`

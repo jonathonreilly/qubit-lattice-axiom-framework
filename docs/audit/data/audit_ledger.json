@@ -292934,24 +292934,42 @@
       "verdict_rationale": null
     },
     "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T05:45:10.737359+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself."
+        },
+        "dep_claim_type": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c3143bdf8250c3951a82ff66c744d21bfd578f0af6549d9b90ac20dac3101600",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner completes and supports the finite checks inside the declared ansatz, but the one-hop dependency's audited scope is only a conditional algebraic rescaling lemma: given canonical trace normalization and scoped Wilson matching, rescaling changes the Gram matrix and beta. It explicitly does not derive Wilson matching, action-surface uniqueness, g_bare=1, or beta=6. Therefore the proof imports a stronger authority than the retained dependency actually supplies.",
       "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
-      "claim_scope": null,
+      "claim_scope": "Conditional bounded Wilson-surface selector packet: within the named real-positive, canonical leading-beta, single-plaquette ansatz, the runner checks that i theta Im Tr U_P violates the real-action surface and that the real Wilson slot is the surviving enumerated candidate. The current dependency chain does not supply the claimed retained beta=6/Wilson-matching authority, so the selector is not retained-grade as stated.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T05:45:10.737359+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -292959,20 +292977,22 @@
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The proof treats G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03 as a retained authority for beta=6, g_bare^2=1, and scoped Wilson matching, then uses that input with P4/P5 to select the real Wilson slot.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "88ac4b1fca7bfe1aa7f775cc17ed5531c9dec455852d8a29d9d2f5be33b064e3",
       "note_path": "docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained Wilson matching / beta=6 canonical-normalization authority, or narrow this row to an explicitly conditional selector over scoped Wilson matching and beta=6.",
+      "open_dependency_paths": [
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-26T14:07:42.893131+00:00",
@@ -293029,15 +293049,16 @@
       "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 1,
+        "C": 8,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py",
       "title": "Wilson Action-Surface Selector \u2014 Real-Positive Canonical Single-Plaquette Surface",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source's load-bearing P3 step cites g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 as a retained canonical-normalization authority fixing beta=6 / g_bare^2=1 and Wilson matching, but that row's audited claim_scope is only a conditional rescaling lemma over an assumed Wilson matching relation.\nWhy this blocks: the Wilson selector can be clean only after beta=6 and the Wilson matching/action surface are available as retained-grade inputs, or after this row is explicitly narrowed to a conditional theorem over those assumptions. The completed runner cannot repair a missing retained authority because it uses the same beta=6/Wilson-matching premise in V8.\nRepair target: add or cite a retained bridge deriving the canonical Wilson matching and beta=6 authority, or rewrite this note as explicitly conditional on scoped Wilson matching and beta=6 without claiming the one-hop dependency supplies them.\nClaim boundary until fixed: within the named real-positive canonical leading-beta ansatz, the finite runner evidence supports rejection of the i theta Im Tr U_P slot by P4 and enumerates the real Wilson slot, but the row remains conditional on the missing Wilson-matching / beta authority."
     },
     "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": {
       "audit_date": null,

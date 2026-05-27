@@ -1,5 +1,7 @@
 ## Summary
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2074
+
 Repairs `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` by narrowing
 it to the audited-clean core candidate: R1-R3 Hilbert-Schmidt trace-Casimir
 rigidity.

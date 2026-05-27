@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 536 |
+| **retained_bounded** | 537 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1161 |
+| unaudited | 1160 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 835 |
+| `audited_clean` | 836 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1390 |
+| `unaudited` | 1389 |
 
 | claim_type | count |
 |---|---:|
@@ -914,6 +914,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_repro_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `valley_linear_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_wide_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `vector_sector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_amplification_near_horizon_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -14257,6 +14258,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** On the widened h = 0.25, W = 12 replay for the 3D valley-linear branch, the far-tail fit on the tested z >= 5 window is b^(-1.17) with high R^2.  _(class `C`)_
 - **chain closes:** True — The note explicitly limits the claim to the tested finite-lattice replay and does not assert a universal continuum theorem. The completed runner output matches the frozen replay numbers stated in the note.
 - **rationale:** The bounded claim closes because the completed replay log reports the same barrier sanity checks, 9/9 TOWARD rows, and tail-fit exponents/R^2 values quoted by the note. The note preserves the correct claim boundary by saying this is a finite-lattice replay rather than a universal theorem.
+- **auditor confidence:** high
+
+### `vector_sector_note`
+
+- **Note:** [`VECTOR_SECTOR_NOTE.md`](../../docs/VECTOR_SECTOR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-harness certificate only: for the deterministic vector-sector circular-orbit setup at f=0.02, R=4.0, s=0.004, seed/family used by the runner, the primary certificate reports exactly matched avg_1/r scalar exposure for CCW and CW and opposite dz signs. This does not promote an unqualified retained vector-sector observable, universal magnetic-like force, phase-independent handedness, or physics-level carrier/readout bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary certificate recomputes the f=0.02 CCW/CW case with the helper harness, asserts dz_CCW>0, dz_CW<0, and avg_inv_r(CCW)=avg_inv_r(CW) within 1e-14, and prints the matched scalar exposure table.  _(class `C`)_
+- **chain closes:** True — There are no one-hop source-note dependencies for the scoped finite harness. The primary runner and helper source are in the restricted packet; the cached run exits 0 and reports CCW dz=+0.006964048, CW dz=-0.008384286, matched_scalar_exposure_delta=0.000e+00. The legacy circular-orbit log is consistent with the phase-locked bounded interpretation, but the clean verdict rests on the primary matched-exposure certificate.
+- **rationale:** The previous blocker was the missing independent matched-scalar-exposure table. The current certificate supplies that table for the audited CCW/CW case and hard-bars the two dz signs plus exact avg_1/r exposure match. The result is not a broad vector-sector theorem: phase averaging is near zero, the note itself records phase dependence, and the bridge from this selected lock-in/readout protocol to a retained physical vector-sector observable remains outside the audited scope. Within the bounded finite computation, the claim closes.
 - **auditor confidence:** high
 
 ### `wave_3plus1d_promotions_note`

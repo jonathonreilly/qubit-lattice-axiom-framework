@@ -23,7 +23,7 @@ irreps are at the same order as their MC standard error:
 | (1,0) | `-6.3e-5` | `±5.9e-5` (within error of 0) |
 | (1,1) | `9.5e-18` | `±8.0e-18` (within error of 0) |
 | (2,0) | `3.5e-9` | `±4.1e-9` (within error of 0) |
-| (2,1) | `1.17e+8` | `±1.25e+8` (within error of 0) |
+| (2,1) | `1.44e-12` | `±1.62e-12` (within error of 0) |
 
 All nontrivial integrand averages are **statistically indistinguishable
 from zero** at N_samples = 5000. The resulting source-sector Perron
@@ -34,9 +34,12 @@ density).
 The gap to the bridge-support target `0.5935` is `0.486 = 1604×
 ε_witness`, **larger** than at L_s=2.
 
-## 1. Why naive Haar MC fails here
+The runner now includes character-normalization sanity checks for every
+tracked irrep, including `chi_(2,1)(I) = dim(2,1) = 15`.
 
-### 1.1 Integrand magnitude
+## 1. What the finite naive-Haar run shows
+
+### 1.1 Integrand magnitude diagnostic
 
 For random Haar SU(3) link variables, `chi_(1,1)(U_p) = |tr(U_p)|^2 - 1`
 has mean zero (Schur orthogonality on the Cartan torus). Each plaquette
@@ -62,22 +65,23 @@ To resolve `T_(1,1) ~ 1e-100` above MC noise (variance ~ 1 per sample),
 we'd need `N_samples ~ (1 / 1e-100)^2 = 1e+200` samples. Infeasible by
 ~150 orders of magnitude.
 
-### 1.3 What this means
+### 1.3 What this means for this row
 
-The Haar MC approach is **not just slow at L_s=3 — it is structurally
-the wrong tool**. The integrand is exponentially small in the lattice
-volume (each plaquette factor is `O(1)` random with mean 0, and 81
-multiplied together give a value at the bottom of double-precision
-representable range), and direct sampling cannot resolve the result.
+This finite naive-Haar run does not supply a bridge-support signal at
+`L_s = 3`.  The integrand is exponentially small in the lattice volume
+(each plaquette factor is `O(1)` random with mean 0, and 81 multiplied
+together give a value at the bottom of double-precision representable
+range), and the direct sample used here cannot resolve the result.
 
 This is a manifestation of the **sign problem** common in lattice gauge
 Monte Carlo with non-Boltzmann weighting: the integrand has
 +/- contributions that cancel, and the variance grows exponentially
 with system size while the signal does not.
 
-## 2. What this rules out
+## 2. Finite-run comparison context
 
-This negative result, combined with Block 5's L_s=2 verdict, establishes:
+This finite negative result sits alongside the earlier bounded comparison
+rows:
 
 | Approach | Status |
 |---|---|
@@ -89,10 +93,10 @@ This negative result, combined with Block 5's L_s=2 verdict, establishes:
 | Mean-field self-consistent | gives `0.874`, gap `926× ε_w` (PR #503) |
 | Weak-coupling 1-loop | gives `0.926`, gap `1097× ε_w` (PR #503) |
 
-**Remaining viable route:** exact L_s ≥ 3 tensor-network contraction
-of the Wigner-Racah cube trace. A later treewidth check in
+**Remaining constructive route:** exact L_s >= 3 tensor-network contraction
+of the Wigner-Racah cube trace remains open. A later treewidth check in
 `SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md`
-shows naive node-elimination is not enough, so this requires:
+shows naive node-elimination is not enough, so that route would require:
 - Memory-aware contraction-order optimization (greedy or
   graph-partitioning-based) that preserves the rank/decomposition
   structure rather than materializing naive link tensors;
@@ -101,12 +105,15 @@ shows naive node-elimination is not enough, so this requires:
   contractor;
 - Multi-day to multi-week engineering effort.
 
-## 3. Why importance sampling doesn't escape
+This row does not claim that tensor routes, improved MC estimators,
+importance sampling, or other algorithms are globally impossible.
+
+## 3. Why importance sampling is out of scope for this row
 
 The natural fix for sign-problem MC is **importance sampling**:
 re-weight by Wilson Boltzmann `exp(β/N Σ_p Re tr U_p)` and sample from
-the importance distribution. But this turns the computation into
-**standard lattice Wilson Monte Carlo**, which:
+the importance distribution. This is a different route from the naive
+Haar run certified here.  If used as a derivation input, it would:
 
 - Imports `<P>(β=6) ≈ 0.5934` as the comparator value rather than
   deriving it;
@@ -115,9 +122,9 @@ the importance distribution. But this turns the computation into
 - Reduces the framework's contribution to "we used standard lattice MC
   to compute <P>", which is not a derivation.
 
-This is a deliberate methodological choice: the framework demands
-`<P>(β=6)` from primitives, not from the importance-sampled MC that
-"already knows" the answer.
+For this row, importance sampling is therefore excluded from the binding
+claim.  It is not a theorem that importance sampling is forbidden in every
+future diagnostic context.
 
 ## 4. Theorem statement
 
@@ -126,10 +133,12 @@ This is a deliberate methodological choice: the framework demands
 N_samples = 5000 Haar Monte Carlo samples on the L_s=3 PBC cube (81
 unique Wilson plaquettes, 81 directed links) and evaluates the
 integrand `∏_p chi_lambda(U_p)` for `lambda ∈ {(0,0), (1,0), (0,1),
-(1,1), (2,0), (0,2), (2,1)}`. For all nontrivial irreps, the MC mean
-is statistically indistinguishable from zero (within ±1 standard
-error). The induced source-sector Perron value is `P_cube(L=3 PBC, MC)
-= 0.108`, dominated by MC noise; gap to bridge target is `0.486 =
+(1,1), (2,0), (0,2), (2,1)}`.  The runner also verifies
+`chi_lambda(I) = dim(lambda)` for the tracked irreps, including the
+corrected `(2,1)` character.  For all nontrivial irreps, the MC mean is
+statistically indistinguishable from zero (within ±1 standard error).
+The induced source-sector Perron value is `P_cube(L=3 PBC, MC) =
+0.1076`, dominated by MC noise; gap to bridge target is `0.4859 =
 1604× ε_witness`.
 
 Naive Haar MC at L_s=3 cannot resolve `T_lambda(L=3 cube)` for
@@ -144,8 +153,8 @@ by ~150 orders of magnitude.
 
 - Direct Haar MC of T_lambda(L=3 cube) at N_samples = 5000.
 - Honest documentation of MC failure mode (sign-problem-like variance).
-- Verdict: importance sampling is forbidden (would import MC value);
-  exact tensor-network contraction remains the only viable route.
+- Verdict: this finite naive-Haar MC run gives no bridge-support signal;
+  exact tensor-network contraction remains an open constructive route.
 
 ### 5.2 Out of scope
 
@@ -153,6 +162,7 @@ by ~150 orders of magnitude.
   engineering, future PR).
 - Importance-sampled lattice MC (forbidden by no-imports policy).
 - Closure of the gauge-scalar bridge.
+- Global foreclosure of improved MC, tensor, or other future routes.
 
 ### 5.3 Not making the following claims
 
@@ -171,7 +181,7 @@ Claim type: `bounded_theorem`.
 Review boundary: the runner documents a negative result for naive Haar
 MC on the L_s=3 PBC cube. At N=5000, all nontrivial integrand averages
 are statistically indistinguishable from zero within MC standard error.
-The reported `P_cube(L=3 PBC, MC) = 0.108` is a noise-dominated failure
+The reported `P_cube(L=3 PBC, MC) = 0.1076` is a noise-dominated failure
 signal, not a derived value. This note does not set an audit verdict and
 does not promote the bridge parent chain.
 
@@ -191,8 +201,8 @@ python3 scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py
 Expected runtime: ~20 seconds. Expected summary:
 
 ```text
-SUMMARY: THEOREM PASS=1 SUPPORT=1 FAIL=0
+SUMMARY: THEOREM PASS=8 SUPPORT=1 FAIL=0
 ```
 
-with headline showing P_cube(L=3 PBC, MC) ~ 0.1 (MC noise) and gap ~
-0.49 = 1604x epsilon_witness.
+with headline showing P_cube(L=3 PBC, MC) ~ 0.1076 (MC noise) and gap
+~0.4859 = 1604x epsilon_witness.

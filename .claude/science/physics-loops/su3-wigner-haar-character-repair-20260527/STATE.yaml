@@ -1,0 +1,16 @@
+goal: repair audited conditional row su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04
+target_status: proposed_retained
+mode: science-fix
+active_route: correct_su3_21_character_and_scope_finite_naive_haar_negative_result
+current_surface_status: audited_conditional_before_reaudit
+files_touched:
+  - docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md
+  - scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py
+  - logs/runner-cache/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.txt
+verification:
+  - python3 scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py --force --push-mode none --allow-non-main
+  - bash docs/audit/scripts/run_pipeline.sh
+  - python3 docs/audit/scripts/audit_lint.py --strict
+next_exact_action: independent audit of the reset unaudited row
+stop_condition: PR opened for review; no direct main modification

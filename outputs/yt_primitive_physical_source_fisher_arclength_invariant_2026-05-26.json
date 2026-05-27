@@ -1,0 +1,42 @@
+{
+  "bare_retained_allowed": false,
+  "claim": "For a normalized six-component top source, the coefficient per unit Fisher arclength on the RN source manifold is 1/sqrt(6), independent of the raw source-coordinate scale lambda.",
+  "coordinate_covariance": {
+    "normalized_h": "sqrt(6)/6",
+    "normalized_hprime": "sqrt(6)/6",
+    "raw_coeff_h": "sqrt(6)*lambda/6",
+    "raw_coeff_hprime": "sqrt(6)*lambda/(6*alpha)"
+  },
+  "fail_count": 0,
+  "fisher_arclength": {
+    "dS_dell_operator_coefficient": "-1",
+    "ell_at_origin": "h*lambda",
+    "fisher_arclength_component": "sqrt(6)/6",
+    "raw_component": "sqrt(6)*lambda/6",
+    "raw_fisher_metric": "lambda**2"
+  },
+  "forbidden_imports_used": false,
+  "geometry": {
+    "component": "sqrt(6)/6",
+    "component_squared": "1/6",
+    "norm_squared": "1"
+  },
+  "pass_count": 56,
+  "prior_no_go_boundary": {
+    "acknowledges_prior_no_go": true,
+    "lsp_scale_blindness_preserved": true,
+    "names_remaining_bridge": true,
+    "raw_nogo_has_lambda_family": true,
+    "states_raw_coordinate_scope": true
+  },
+  "proposal_allowed": false,
+  "reachability_to_target": "partially_closes",
+  "remaining_bridge": "Prove or audit that the physical top Yukawa coefficient is read in the Fisher/LSZ-normalized source coordinate, or provide strict same-source top/W response evidence.",
+  "review_surface": [
+    "docs/YT_PRIMITIVE_PHYSICAL_SOURCE_FISHER_ARCLENGTH_INVARIANT_THEOREM_NOTE_2026-05-26.md",
+    "scripts/frontier_yt_primitive_physical_source_fisher_arclength_invariant.py",
+    "outputs/yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
+  ],
+  "status": "exact-support / narrowed bridge",
+  "trace_class": "upstream_support"
+}

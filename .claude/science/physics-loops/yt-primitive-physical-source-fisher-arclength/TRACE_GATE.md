@@ -1,0 +1,13 @@
+trace_class: upstream_support
+target_claim_id: yt_top_yukawa_source_action_lane
+target_blocker_text: "derive or accept that the physical top Yukawa deformation is the primitive unit signed-record source/action tangent on the normalized top trilinear"
+source_of_blocker_text: audit_ledger
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "Prove/audit Fisher-LSZ source normalization for the physical top Yukawa readout, or replace the premise with strict same-source top/W response evidence."
+
+## Trace Explanation
+
+If the theorem is true, it removes `lambda` as an invariant obstruction inside
+the operational RN/Fisher source-manifold route.  It does not by itself prove
+that the physical top Yukawa readout uses that Fisher/LSZ source unit.

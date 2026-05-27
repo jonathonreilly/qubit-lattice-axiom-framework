@@ -1,0 +1,24 @@
+loop_slug: yt-primitive-physical-source-fisher-arclength
+target: best-honest-status
+active_route: route_1_primitive_physical_source
+block_status: exact-support
+branch: physics-loop/yt-primitive-physical-source-theorem-20260526
+base_branch: physics-loop/yt-lsp-source-scale-response-contract-20260526
+files_touched:
+  - docs/YT_PRIMITIVE_PHYSICAL_SOURCE_FISHER_ARCLENGTH_INVARIANT_THEOREM_NOTE_2026-05-26.md
+  - scripts/frontier_yt_primitive_physical_source_fisher_arclength_invariant.py
+  - outputs/yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json
+  - .claude/science/physics-loops/yt-primitive-physical-source-fisher-arclength/
+open_imports:
+  - physical Fisher/LSZ source-normalization bridge for top Yukawa readout
+  - retained one-Higgs/top carrier authority remains outside this block
+  - strict same-source top/W response evidence remains absent
+no_go_routes_respected:
+  - raw-coordinate lambda family no-go
+  - LSP source-scale blindness
+  - old Ward/H_unit definition-as-derivation failure
+next_exact_action: >
+  Attack the physical Fisher/LSZ source-normalization bridge, or build a
+  strict same-source top/W response certificate to measure the invariant
+  coefficient directly.
+stop_condition: block packaged; continue campaign if user requests more blocks

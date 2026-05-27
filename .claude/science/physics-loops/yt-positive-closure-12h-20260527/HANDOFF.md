@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced twenty science blocks, not positive retained-grade
+The campaign has produced twenty-one science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -40,6 +40,50 @@ closure:
     `sin(3 phi)` term.
 20. a no-go for deriving the physical nontrivial top line from the derived
     same-surface `B_x` source-response extrema.
+21. a no-go for promoting strict W/Z denominator support plus the conditional
+    C3 target row into a strict same-source top/W pole-response certificate.
+
+New strict W/Z plus C3 top-row splice result:
+
+```text
+strict W/Z denominator response
+  + conditional C3 target row
+  -/-> accepted strict same-source top/W pole-response certificate
+```
+
+The formal target splice is:
+
+```text
+dM_W/dell = g_2 A / 2
+dM_t/dell = A/sqrt(12)
+(g_2/sqrt(2)) (dM_t/dell)/(dM_W/dell) = 1/sqrt(6)
+```
+
+But the same denominator and source scale also admit:
+
+```text
+P_0 -> dM_t/dell = A/sqrt(3)
+    -> sqrt(2/3)
+```
+
+So denominator-side W/Z support plus the conditional C3 target row does not
+close the strict route. The splice still imports same-surface authority, the
+physical nontrivial top-line law, accepted top projector authority, and strict
+pole-row controls.
+
+Cycle 9 strict W/Z plus C3 top-row splice verification:
+
+- `python3 scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py` -> `SUMMARY: PASS=110 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=373 FAIL=0`
+- Adjacent runners passed: strict W/Z denominator `PASS=47`, strict symbolic
+  top row `PASS=45`, same-surface matrix factorization `PASS=77`, strict
+  sparse availability audit `PASS=74`, strict pole-row repository discovery
+  `PASS=79`, C3 source-response extremal no-go `PASS=105`, C3 nontrivial
+  top-line boundary `PASS=81`, and direct sparse response certificate
+  `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
 
 New source-response extremal readout result:
 

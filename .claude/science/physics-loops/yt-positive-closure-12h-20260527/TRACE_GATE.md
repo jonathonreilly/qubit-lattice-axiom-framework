@@ -106,3 +106,12 @@ nontrivial complex lines remain degenerate. The next trace action is still
 accepted strict pole-row data, accepted backend/projector matrix elements, or
 a physical basepoint/readout theorem beyond scalar orientation bias and
 source-response extrema.
+The twenty-first artifact prunes the strict W/Z plus C3 top-row splice
+shortcut. The formal splice of the strict W/Z denominator response with the
+conditional C3 target row gives `1/sqrt(6)` only after same-surface authority
+and the physical nontrivial top line are supplied; the same denominator and
+source scale also admit the `P_0` singlet readout `sqrt(2/3)`. The next trace
+action is still accepted strict pole-row data, accepted
+backend/projector/source-generator matrix elements, or a physical
+basepoint/readout theorem beyond scalar orientation bias and source-response
+extrema.

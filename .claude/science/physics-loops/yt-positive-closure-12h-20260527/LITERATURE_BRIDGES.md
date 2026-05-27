@@ -52,3 +52,8 @@ source-response rows and their signed/absolute extrema. A targeted external
 math search on equivariant maps and G-set sections was context only for the
 already-pruned orbit-member covariance issue; no external theorem is
 load-bearing for this block.
+The strict W/Z plus C3 top-row splice block directly combines the retained
+denominator-side response algebra with the conditional finite C3 matrix rows
+and checks the response-ratio arithmetic. No external source is load-bearing:
+the no-go is a branch-local same-surface certificate boundary plus elementary
+finite algebra.

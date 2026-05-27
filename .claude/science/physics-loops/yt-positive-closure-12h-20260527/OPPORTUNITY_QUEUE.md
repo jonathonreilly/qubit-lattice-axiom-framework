@@ -22,6 +22,7 @@
 | 18 | Hidden accepted strict pole-row certificate already present under another artifact name | low | high | present | pruned by current-branch repository discovery scan |
 | 19 | Orientation-biased C3 scalar phase potential with reflection-odd `sin(3 phi)` term | low | high | present | pruned; selects a C3 orbit, not a physical member |
 | 20 | Source-response extremal readout from derived `B_x` | low | high | present | pruned; maxima select `P_0`, minima import a selector and leave the nontrivial pair degenerate |
+| 21 | Strict W/Z denominator plus conditional C3 target-row splice | low | high | present | pruned; formal target readout imports same-surface and physical nontrivial top-line authority |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -149,3 +150,14 @@ model-class controls, or derive an accepted same-surface
 backend/projector/matrix-element theorem; if staying on C3, derive a physical
 basepoint/readout theorem beyond scalar orientation bias and source-response
 extrema.
+
+Queue refresh after the twenty-first block: positive closure remains open.
+The strict W/Z plus C3 top-row splice shortcut is pruned: the formal target
+readout `1/sqrt(6)` appears only after same-surface splice authority and the
+physical nontrivial top line are supplied, while the same denominator/source
+scale admits the `P_0` singlet readout `sqrt(2/3)`. The next exact action is
+still rank 4 or rank 17: produce accepted strict top/W pole-row data with
+contact, FV/IR, and model-class controls, or derive an accepted same-surface
+backend/projector/source-generator matrix-element theorem; if staying on C3,
+derive a physical basepoint/readout theorem beyond scalar orientation bias and
+source-response extrema.

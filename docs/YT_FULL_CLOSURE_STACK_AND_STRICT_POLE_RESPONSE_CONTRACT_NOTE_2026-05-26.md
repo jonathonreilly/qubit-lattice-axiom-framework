@@ -136,6 +136,11 @@ closed exactly:
   nontrivial top line; signed/absolute maxima select P_0, while
   signed/absolute minima select the nontrivial pair only by importing a
   minimum-response selector
+  strict W/Z plus C3 top-row splice no-go: the formal splice of the strict
+  W/Z denominator response with the conditional C3 target row gives
+  1/sqrt(6) only after supplying same-surface authority and the physical
+  nontrivial top line; the same denominator and source scale also admit the
+  singlet row sqrt(2/3)
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -174,6 +179,9 @@ still open:
   accepted physical member/readout law beyond source-response extrema, since
   maximum-response readouts select P_0 and minimum-response readouts are extra
   selector premises
+  accepted same-surface splice authority between the strict W/Z denominator
+  surface and the conditional C3 target row, with the physical top line and
+  projector derived rather than inserted
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -841,6 +849,28 @@ same_model_class: false
 So strict response remains the clean positive route, but it is not present on
 the current branch.
 
+[`YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md`](YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md)
+then tests whether the closed strict W/Z denominator support can be spliced
+with the conditional C3 target row to make the missing strict packet.  The
+formal splice gives:
+
+```text
+dM_W/dell = g_2 A / 2,
+dM_t/dell = A/sqrt(12),
+(g_2/sqrt(2)) (dM_t/dell)/(dM_W/dell) = 1/sqrt(6).
+```
+
+But the same denominator and source scale also allow the C3 singlet row:
+
+```text
+P_0 -> dM_t/dell = A/sqrt(3)
+    -> (g_2/sqrt(2)) (dM_t/dell)/(dM_W/dell) = sqrt(2/3).
+```
+
+Thus the splice still imports the same-surface identity and the physical
+nontrivial top-line/projector law.  It is a useful contract check, not a
+strict top/W pole-response certificate.
+
 [`YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md`](YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md)
 then attacks the remaining non-compute microscopic route directly.  It proves
 that the current source law, carrier amplitude, C3 algebra, conditional W row,
@@ -1248,6 +1278,11 @@ proposal_allowed_reason: |
   and give A/sqrt(3), while signed and absolute minima give A/sqrt(12) only
   after adding a minimum-response top-line selector and still do not isolate a
   single nontrivial complex line.
+  The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
+  shortcut: denominator-side W/Z support plus a conditional C3 target row is
+  not yet an accepted same-source top/W pole packet because the same-surface
+  splice, physical top line, top projector, and strict pole-row controls
+  remain open.
   The strict pole-row repository discovery no-go additionally prunes the
   hidden-existing-certificate shortcut: scanning current Y_T
   strict/response/backend/projector outputs finds support harnesses,

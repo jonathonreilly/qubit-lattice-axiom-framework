@@ -59,6 +59,9 @@ Current block artifacts:
 - `docs/YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py`
 - `outputs/yt_c3_source_response_extremal_readout_no_go_2026-05-27.json`
+- `docs/YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py`
+- `outputs/yt_strict_wz_c3_top_row_splice_no_go_2026-05-27.json`
 - `docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py`
 - `outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json`

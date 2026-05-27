@@ -1,5 +1,39 @@
 # Review History
 
+## 2026-05-27 Local Review, Block 21
+
+Scope:
+
+- strict W/Z plus C3 top-row splice no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, the formal splice algebra, the singlet counterreadout, certificate boundary fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open strict splice authority; the target readout requires same-surface authority and physical nontrivial top-line authority. |
+| Imports / support | DISCLOSED | No observed masses, old Ward route, target insertion, fitted selector, or external theorem is used. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=110 FAIL=0`
+- Full stack runner: `PASS=373 FAIL=0`
+- Adjacent Y_T runners passed: strict W/Z denominator `PASS=47`, strict
+  symbolic top row `PASS=45`, same-surface matrix factorization `PASS=77`,
+  strict sparse availability audit `PASS=74`, strict pole-row repository
+  discovery `PASS=79`, C3 source-response extremal no-go `PASS=105`, C3
+  nontrivial top-line boundary `PASS=81`, and direct sparse response
+  certificate `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 20
 
 Scope:

@@ -1,0 +1,71 @@
+{
+  "actual_current_surface_status": "no-go / open strict splice authority",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_top_projector_or_pole_isolated": false,
+    "accepted_w_pole_isolated_on_spliced_surface": false,
+    "bare_retained_allowed": false,
+    "coefficient_certified_dM_W_row_present_on_same_packet": false,
+    "coefficient_certified_dM_t_row_present": false,
+    "conditional_c3_target_row_available": true,
+    "contact_fv_ir_model_class_controls_present": false,
+    "no_forbidden_imports": true,
+    "physical_top_line_nontrivial_derived": false,
+    "proposal_allowed": false,
+    "same_source_id_certified": false,
+    "same_surface_splice_authority_derived": false,
+    "strict_positive_certificate_present": false,
+    "strict_symbolic_top_shape_closed": true,
+    "strict_wz_denominator_response_closed": true
+  },
+  "claim_id": "yt_strict_wz_c3_top_row_splice_no_go_note_2026-05-27",
+  "dependencies": {
+    "c3_source_extremal_fail_count": 0,
+    "same_surface_matrix_fail_count": 0,
+    "strict_availability_fail_count": 0,
+    "strict_discovery_fail_count": 0,
+    "strict_symbolic_top_fail_count": 0,
+    "strict_wz_fail_count": 0
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py",
+  "no_go_audit": {
+    "counterwitness": {
+      "nontrivial_readout": "1/sqrt(6)",
+      "same_denominator": "g_2*A/2",
+      "singlet_readout": "sqrt(2/3)"
+    },
+    "new_required_input": "accepted strict top/W pole rows, or accepted same-surface backend/projectors/source-generator matrix elements",
+    "route_pruned": true,
+    "route_tested": "strict W/Z denominator plus conditional C3 target row is already a strict top/W pole certificate",
+    "strict_route_still_live": true,
+    "why_pruned": "The target readout requires same-surface splice authority and a physical nontrivial top line. The same denominator and source scale also admit the P0 singlet row."
+  },
+  "pass_count": 110,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The formal splice gives 1/sqrt(6) only after supplying same-surface authority and the physical nontrivial top line. The same denominator and source scale also admit the singlet row sqrt(2/3), so the top-line/projector authority remains load-bearing.",
+  "reachability_to_target": "prunes strict denominator plus conditional C3 row shortcut",
+  "review_surface": [
+    "docs/YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py",
+    "outputs/yt_strict_wz_c3_top_row_splice_no_go_2026-05-27.json"
+  ],
+  "route_pruned": "strict W/Z denominator response plus conditional C3 target row is already an accepted strict same-source top/W pole-response certificate",
+  "route_still_live": "produce accepted strict top/W pole rows, or derive the accepted same-surface backend/projectors/source-generator matrix elements",
+  "splice_witness": {
+    "candidate_rows": {
+      "P_0": "A/sqrt(3)",
+      "P_omega": "A/sqrt(12) in magnitude",
+      "P_omega2": "A/sqrt(12) in magnitude"
+    },
+    "dM_W_dell": "g_2*A/2",
+    "source_reparameterization_cancels": true,
+    "target_depends_on_nontrivial_line_choice": true,
+    "top_w_readouts": {
+      "P_0": "sqrt(6)/3",
+      "P_omega_or_P_omega2": "sqrt(6)/6"
+    }
+  },
+  "trace_class": "negative_route_pruning"
+}

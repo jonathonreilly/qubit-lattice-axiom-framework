@@ -91,6 +91,10 @@ This runner verifies the current burn-down state:
   absolute maxima of the same-surface B_x response select P_0 and give
   A/sqrt(3), while signed and absolute minima select the nontrivial pair only
   by importing a minimum-response selector.
+* The strict W/Z plus C3 top-row splice shortcut is now pruned: the formal
+  splice gives 1/sqrt(6) only after supplying same-surface authority and the
+  physical nontrivial top line; the same denominator and source scale also
+  admit the P_0 singlet row sqrt(2/3).
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -162,6 +166,7 @@ C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO = DOCS / "YT_C3_ORBIT_MEMBER_READOUT_COV
 C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION = DOCS / "YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md"
 C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO = DOCS / "YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md"
 C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO = DOCS / "YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md"
+STRICT_WZ_C3_TOP_ROW_SPLICE_NOGO = DOCS / "YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -212,6 +217,7 @@ C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT = ROOT / "outputs" / "yt_c3_orbit_me
 C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json"
 C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT = ROOT / "outputs" / "yt_c3_orientation_biased_phase_potential_orbit_member_no_go_2026-05-27.json"
 C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_response_extremal_readout_no_go_2026-05-27.json"
+STRICT_WZ_C3_TOP_ROW_SPLICE_NOGO_OUT = ROOT / "outputs" / "yt_strict_wz_c3_top_row_splice_no_go_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -307,6 +313,7 @@ def part1_anchors() -> dict[str, str]:
         C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION,
         C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO,
         C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO,
+        STRICT_WZ_C3_TOP_ROW_SPLICE_NOGO,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -356,6 +363,7 @@ def part1_anchors() -> dict[str, str]:
         C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT,
         C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT,
         C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO_OUT,
+        STRICT_WZ_C3_TOP_ROW_SPLICE_NOGO_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -409,6 +417,7 @@ def part1_anchors() -> dict[str, str]:
         "dihedral basepoint anchor obstruction",
         "orientation-biased phase-potential orbit-member no-go",
         "source-response extremal readout no-go",
+        "strict W/Z plus C3 top-row splice no-go",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -479,6 +488,7 @@ def part2_support_outputs() -> dict[str, Any]:
         C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT
     )
     c3_source_response_extremal_readout_nogo = load_json(C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO_OUT)
+    strict_wz_c3_top_row_splice_nogo = load_json(STRICT_WZ_C3_TOP_ROW_SPLICE_NOGO_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -978,6 +988,40 @@ def part2_support_outputs() -> dict[str, Any]:
         .get("nontrivial_complex_line_isolated")
         is False,
     )
+    check(
+        "strict W/Z plus C3 top-row splice no-go passed",
+        strict_wz_c3_top_row_splice_nogo.get("fail_count") == 0,
+        strict_wz_c3_top_row_splice_nogo.get("fail_count"),
+    )
+    check(
+        "strict W/Z plus C3 splice route is pruned",
+        strict_wz_c3_top_row_splice_nogo.get("trace_class") == "negative_route_pruning",
+        strict_wz_c3_top_row_splice_nogo.get("trace_class"),
+    )
+    check(
+        "strict W/Z plus C3 splice target row depends on nontrivial line",
+        strict_wz_c3_top_row_splice_nogo.get("splice_witness", {})
+        .get("target_depends_on_nontrivial_line_choice")
+        is True,
+    )
+    check(
+        "strict W/Z plus C3 splice keeps same-surface authority open",
+        strict_wz_c3_top_row_splice_nogo.get("certificate_boundary", {})
+        .get("same_surface_splice_authority_derived")
+        is False,
+    )
+    check(
+        "strict W/Z plus C3 splice keeps physical top line open",
+        strict_wz_c3_top_row_splice_nogo.get("certificate_boundary", {})
+        .get("physical_top_line_nontrivial_derived")
+        is False,
+    )
+    check(
+        "strict W/Z plus C3 splice still has no strict positive certificate",
+        strict_wz_c3_top_row_splice_nogo.get("certificate_boundary", {})
+        .get("strict_positive_certificate_present")
+        is False,
+    )
 
     return {
         "fisher": fisher,
@@ -1028,6 +1072,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_dihedral_basepoint_anchor_obstruction": c3_dihedral_basepoint_anchor_obstruction,
         "c3_orientation_biased_phase_potential_orbit_member_nogo": c3_orientation_biased_phase_potential_orbit_member_nogo,
         "c3_source_response_extremal_readout_nogo": c3_source_response_extremal_readout_nogo,
+        "strict_wz_c3_top_row_splice_nogo": strict_wz_c3_top_row_splice_nogo,
     }
 
 
@@ -1225,7 +1270,7 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_bounded_sparse_certificate_harness_present",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
             "closed": False,
             "next_action": "derive accepted same-surface generator factorization plus nontrivial top-line assignment, or produce a new accepted strict pole-response packet because none is present under existing artifact names",
         },
@@ -1325,6 +1370,12 @@ def main() -> int:
             "absolute minima give A/sqrt(12) only by adding a "
             "minimum-response selector and still leave the two nontrivial "
             "complex lines degenerate. "
+            "The strict W/Z plus C3 top-row splice shortcut is now pruned: "
+            "the formal splice of the denominator W row with the conditional "
+            "C3 target row gives 1/sqrt(6) only after supplying same-surface "
+            "authority and the physical nontrivial top line, while the same "
+            "denominator and source scale admit the P_0 singlet readout "
+            "sqrt(2/3). "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1384,6 +1435,7 @@ def main() -> int:
             "c3_dihedral_basepoint_anchor_obstruction_fail_count": support_outputs["c3_dihedral_basepoint_anchor_obstruction"].get("fail_count"),
             "c3_orientation_biased_phase_potential_orbit_member_nogo_fail_count": support_outputs["c3_orientation_biased_phase_potential_orbit_member_nogo"].get("fail_count"),
             "c3_source_response_extremal_readout_nogo_fail_count": support_outputs["c3_source_response_extremal_readout_nogo"].get("fail_count"),
+            "strict_wz_c3_top_row_splice_nogo_fail_count": support_outputs["strict_wz_c3_top_row_splice_nogo"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -1436,6 +1488,9 @@ def main() -> int:
             "docs/YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py",
             "outputs/yt_c3_source_response_extremal_readout_no_go_2026-05-27.json",
+            "docs/YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py",
+            "outputs/yt_strict_wz_c3_top_row_splice_no_go_2026-05-27.json",
             "docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py",
             "outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json",

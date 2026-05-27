@@ -23,6 +23,7 @@
 | Existing C3/dihedral reflection-basepoint structure | Would supply the missing physical basepoint/orbit-member law from already-present reflection data | pruned on current surface | `YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive a genuinely new accepted physical basepoint law beyond the existing reflection axis, or bypass with strict pole rows | no-go for existing-reflection basepoint shortcut |
 | Orientation-biased C3 scalar phase potential | Would supply the missing physical nontrivial top-line member from a reflection-odd `sin(3 phi)` phase-bias term | pruned on current surface | `YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive an accepted physical basepoint/readout law beyond scalar orientation bias, or bypass with strict pole rows | no-go for orientation-biased scalar-potential shortcut |
 | Source-response extremal readout | Would use extrema of the already-derived same-surface `B_x` response as a non-scalar physical top-line member law | pruned on current surface | `YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for shortcut | derive an accepted physical basepoint/readout law beyond source-response extrema, or bypass with strict pole rows | no-go for source-response extremal shortcut |
+| Strict W/Z plus conditional C3 top-row splice | Would splice denominator-side W/Z support with the conditional C3 target row to form a strict top/W pole-response certificate | pruned on current surface | `YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for strict route | derive accepted same-surface splice authority, physical top-line/projector authority, and strict pole-row controls | no-go for strict-splice shortcut |
 | Contact/FV/IR/model-class checks | Certify strict pole-row evidence | missing certificate fields | sparse response contract | yes for strict evidence route | yes | direct sparse pole-response certificate | open blocker |
 | Accepted strict top/W pole rows | Bypass C3 line assignment and read coefficient directly | absent, including current-branch repository discovery scan | strict sparse availability audit; strict pole-row repository discovery no-go | yes | yes | produce accepted pole-row data/certificate | open blocker |
 | Microscopic backend/projector/matrix-element shortcut | Would derive the physical row from source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | pruned on current surface | `YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive accepted backend, W/top projectors, and source-generator matrix elements, or produce strict pole rows | no-go for current shortcut |
@@ -96,3 +97,9 @@ minimum-response selector and still leave the nontrivial complex pair
 degenerate. The remaining C3 import is an accepted physical basepoint/readout
 law beyond source-response extrema, with W/top matrix elements, or strict pole
 rows.
+The strict W/Z plus C3 top-row splice shortcut is now pruned: the formal
+splice gives `1/sqrt(6)` only after same-surface authority and the physical
+nontrivial top line are supplied, while the same denominator/source scale also
+admits the `P_0` singlet readout `sqrt(2/3)`. The remaining strict import is
+accepted same-surface splice/backend/projector/source-generator authority or
+accepted strict pole-row data with controls.

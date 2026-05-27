@@ -134,3 +134,11 @@ potential/variational law and a physical nonzero orientation branch.
   minimum-response selector, and they still leave the nontrivial complex pair
   degenerate. A physical basepoint/readout law beyond source-response extrema,
   or accepted strict pole rows, remains load-bearing.
+- New in the twenty-first block: strict W/Z denominator support plus the
+  conditional C3 target row cannot be promoted into an accepted strict
+  same-source top/W pole-response certificate. The formal splice gives
+  `1/sqrt(6)` only after supplying same-surface authority and the physical
+  nontrivial top line, while the same denominator and source scale also admit
+  the `P_0` singlet readout `sqrt(2/3)`. Same-surface splice authority,
+  physical top-line/projector authority, and strict pole-row controls remain
+  load-bearing.

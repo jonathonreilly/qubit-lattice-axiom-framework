@@ -41,6 +41,9 @@ physical orbit-member/top-line law.
 The twentieth route tested whether the already-derived same-surface `B_x`
 source-response extrema can supply the missing physical orbit-member/top-line
 law as a non-scalar readout.
+The twenty-first route tested whether strict W/Z denominator support plus the
+conditional C3 target row can be spliced into an accepted strict same-source
+top/W pole-response certificate.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -65,6 +68,7 @@ law as a non-scalar readout.
 | Strict pole-row repository discovery | no-go current-branch audit | 3 | Pruned: no hidden accepted strict top/W pole-row certificate exists under current Y_T response/backend/projector artifact names |
 | Orientation-biased C3 phase potential | no-go shortcut test | 3 | Pruned: a reflection-odd `sin(3 phi)` bias still selects a C3 orbit, not a physical member; generic orbits include `P_0` |
 | Source-response extremal readout | no-go shortcut test | 3 | Pruned: signed/absolute maxima select `P_0`; signed/absolute minima give the target row only by importing a minimum-response selector and leave the nontrivial pair degenerate |
+| Strict W/Z plus C3 top-row splice | no-go shortcut test | 3 | Pruned: the formal target splice needs same-surface authority and the physical nontrivial top line; the same denominator admits the `P_0` singlet readout |
 
 ## Stuck Fan-Out
 
@@ -93,6 +97,7 @@ law as a non-scalar readout.
 | Strict pole-row discovery | Search current Y_T strict/response/backend/projector outputs for a hidden accepted pole-row packet | Fails; support harnesses and candidates are present, but no complete accepted same-surface strict top/W pole-row certificate is present |
 | Orientation-biased phase potential | Add a reflection-odd `sin(3 phi)` term to the C3 scalar phase potential | Fails; the potential selects a three-member C3 orbit, and the orbit contains a `P_0` singlet-row witness plus nontrivial target-row witnesses |
 | Source-response extremal readout | Use the derived `B_x` response itself as a non-scalar orbit-member/top-line readout | Fails; response maxima select `P_0 -> A/sqrt(3)`, while minima select the nontrivial pair only with an extra selector |
+| Strict W/Z plus C3 top-row splice | Combine strict W/Z denominator support with the conditional C3 target row | Fails; the target readout appears only after supplying same-surface splice authority and nontrivial top-line authority, while the same denominator/source scale allows a `P_0` singlet readout |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -109,4 +114,6 @@ source-response extremal route also fails: the maximum readouts choose the
 singlet and the minimum readouts import the missing selector. A positive C3
 route now needs a physical basepoint/readout theorem beyond source-response
 extrema, or the campaign must move through accepted strict pole-row
-data/backend-projector matrix elements.
+data/backend-projector matrix elements. The strict W/Z plus C3 splice route
+does not bypass that: it remains a contract check until same-surface splice,
+physical top-line/projector, and pole-row controls are accepted.

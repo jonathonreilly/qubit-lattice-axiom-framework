@@ -67,7 +67,7 @@
     }
   },
   "doc_status_scan": {
-    "doc_count": 22,
+    "doc_count": 24,
     "proposal_allowed_true_hits": [],
     "retained_status_hits": []
   },
@@ -83,9 +83,10 @@
   "reachability_to_target": "prunes hidden-existing-certificate shortcut",
   "repository_discovery": {
     "accepted_backend_packets": [],
-    "candidate_count": 22,
+    "candidate_count": 24,
     "candidate_paths": [
       "outputs/yt_c3_real_same_surface_top_line_law_obstruction_2026-05-27.json",
+      "outputs/yt_c3_source_response_extremal_readout_no_go_2026-05-27.json",
       "outputs/yt_c3_spectral_source_response_underdetermination_no_go_2026-05-27.json",
       "outputs/yt_c3_spectral_top_projector_route_support_2026-05-27.json",
       "outputs/yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json",
@@ -104,6 +105,7 @@
       "outputs/yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json",
       "outputs/yt_strict_symbolic_top_response_row_packet_2026-05-25.json",
       "outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json",
+      "outputs/yt_strict_wz_c3_top_row_splice_no_go_2026-05-27.json",
       "outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json",
       "outputs/yt_top_response_coefficient_underdetermination_no_go_2026-05-25.json",
       "outputs/yt_top_sector_projector_generation_label_obstruction_2026-05-27.json"

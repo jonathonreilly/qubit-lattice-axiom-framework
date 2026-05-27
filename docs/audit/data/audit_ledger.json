@@ -103680,24 +103680,50 @@
       "verdict_rationale": "The source note is carefully narrowed to runner-backed local/scalar ingredients and explicitly excludes the open physical Wilson-environment solve. The runner genuinely computes the SU(3) one-plaquette Bessel/Weyl/source checks and the four-link scaling check; it imports the scalar completion ratio from a retained upstream helper and imports the canonical plaquette only for a support comparator. No cited authority in the load-bearing bounded packet is non-retained, and the retained no-go authority is used only to keep the full constant-lift bridge out of scope."
     },
     "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T01:43:06.383921+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17": "Finite-box B={0<=p,q<=4} inverse Peter-Weyl uniqueness of the normalized truncated SU(3) central character expansion realizing the diagonal residual operator on H_B, with beta=6 witness consistency only at bounded scope.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J).",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 7.977,
+        "runner_hash": "47edfb6c99326fe19a417b43935227d32c2d6a135034092f9635894efa843b63",
+        "transitive_descendants": 62
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-tesla-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Read at the 2026-05-26 bounded scope, the claim is only the finite-sector algebraic identity converting a finite character coefficient vector into its Peter-Weyl evaluation functional. The retained-bounded dependencies supply enough finite packet context for that algebraic surface; the source explicitly excludes the full untruncated Wilson environment and physical coefficient vector.",
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite marked class-sector Peter-Weyl evaluation-map identity: given the retained finite coefficient vector v_beta, the compressed boundary W-dependence is the canonical vector K(W), with no claim to full physical Wilson-environment coefficients or the full local rim functional.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T01:43:06.383921+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -103707,19 +103733,19 @@
         "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.977,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By the exact character expansion, Z_beta^env(W)=sum_(p,q) d_(p,q) z_(p,q)^env(beta) chi_(p,q)(W)=<K(W), v_beta>.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "c0371aedea307e48971402f53e4ac13acbd488c3b45cd27227bcdb16819cc780",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if later edits present v_beta, z_(p,q)^env(beta), or Z_beta^env as the full physical untruncated Wilson-environment data rather than a bounded finite-sector coefficient vector.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -103825,18 +103851,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 1,
+        "C": 12,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 13
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Compressed Rim-Evaluation Theorem",
       "transitive_descendants": 62,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a finite-dimensional Peter-Weyl evaluation identity, not a derivation of v_beta or of the actual Wilson environment. The source note's bounded rescope and exclusions keep the actual-env transfer language outside the audited claim boundary. The shared runner's uniqueness and scalar-insufficiency support checks are not load-bearing for this source row, and the remaining sampling/inversion checks do not expand the claim beyond finite-sector coefficient recovery."
     },
     "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": {
       "audit_date": null,
@@ -110995,11 +111021,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.5,
+      "load_bearing_score": 9.5,
       "load_bearing_step": "Using the finite-box convolution-on-characters identity, equality C_(Z'|_B)=R_beta^env|_B implies rho'_(p,q) chi_(p,q)=rho_(p,q) chi_(p,q), hence rho'_(p,q)=rho_(p,q) for every weight in B and the normalized truncated class function is unique.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "85d3f40f0c380ecebbb79f29d13baf5d2876a705f06ea68b4e03a31b20d7afa6",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "Re-check only that 'positive' is interpreted as positive-type/nonnegative Peter-Weyl coefficients rather than pointwise positivity of the truncated finite character sum.",

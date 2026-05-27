@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 509 |
+| **retained_bounded** | 510 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1197 |
+| unaudited | 1196 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 806 |
+| `audited_clean` | 807 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1426 |
+| `unaudited` | 1425 |
 
 | claim_type | count |
 |---|---:|
@@ -181,6 +181,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2055,6 +2056,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The closure ('no future retained primitive can break this') is a meta-statement about the framework registry; under the no-new-axioms rule, this meta-statement is not analytically reducible from A_min.  _(class `A`)_
 - **chain closes:** True — The chain closes for the scoped open_gate: the note explicitly remains a stretch attempt and names registry closure as the residual meta-premise. It does not close retained carrier-orbit invariance or downstream swap-reduction closure.
 - **rationale:** The current cached PASS=52 output is stale relative to the supplied current runner sha, so the current PASS=59 FAIL=2 run controls. Both live failures are brittle literal-string checks for 'not exact' in the constructed Xi note; the allowed source text instead says 'not an exact tensor observable' and identifies Xi_R^(0) as a bounded support-response Jacobian, which supports the same bounded-not-exact meaning. Under the hostile standard this would block a positive retained theorem, but this row is an open_gate and the source note accurately records the obstruction rather than claiming closure.
+- **auditor confidence:** high
+
+### `causal_distance_tail_note`
+
+- **Note:** [`CAUSAL_DISTANCE_TAIL_NOTE.md`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite distance-tail diagnostic on the configured causal-field replay over the three declared grown-family parameter rows, with exact zero-source controls, broad instantaneous/forward/dynamic c=1 power-law-like tails, and dynamic c=0.5 collapse; not a universal causal-field theorem, Newtonian rescue, physical carrier derivation, or portability law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact zero-source control stays exact on every family, the broad field cases keep a clear distance-law tail but with exponents steeply below Newtonian, and the finite-cone dynamic c=0.5 case collapses the tail further and acts as the boundary diagnostic.  _(class `C`)_
+- **chain closes:** True — The completed runner constructs the declared grown-family cases from the helper implementation, builds the configured instantaneous, forward-only, and dynamic finite-cone fields, propagates amplitudes, and recomputes the table printed in the source note. The retained one-hop portability note supplies the bounded configured-replay context and explicitly excludes carrier, threshold, portability-law, and field-theory promotion, matching this claim's safe boundary.
+- **rationale:** The bounded claim closes as a finite configured replay: the runner computes the zero controls, field variants, power-law exponents, R^2 values, and TOWARD counts from the declared helper algorithm and parameters, and the cache output matches the source table. The source does not promote a universal theorem, a physical carrier derivation, or a portable Newtonian law; its conclusion is the bounded diagnostic that broad variants remain power-law-like but non-Newtonian while dynamic c=0.5 marks the configured boundary. Residual risk: future citations must not treat this as an axiom-derived causal field, a framework-selected readout/metric, or an asymptotic distance law.
 - **auditor confidence:** high
 
 ### `causal_escape_window_note`

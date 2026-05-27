@@ -1,17 +1,30 @@
 # Opportunity Queue
 
-1. **Physical intervention law audit/derivation.**
-   Decide whether the no-hidden-scale minimum-information intervention law is
-   accepted or derivable as the physical top Yukawa source law.  If yes, the
-   local coefficient route has `y_33 = 1/sqrt(6)` under exact support.  If no,
-   demote this route and pivot to direct strict top/W response measurement.
+1. **Primitive record intervention law.**
+   Prove or fail the finite-record/LSP route:
+   qubit records + sharp projective readout + Markov naturality + no hidden
+   channel + least distinguishability imply the RN/Fisher source law.
 
-2. **Strict same-source top/W response evidence pipeline.**
-   Implement or wire a certificate with `dM_t/dh`, `dM_W/dh`,
-   same-source identity, contact subtraction, FV/IR checks, and same-scale
-   `g_2`.
+2. **Chentsov/Fisher source unit.**
+   Specialize finite-simplex Chentsov uniqueness to framework record blocks
+   and fix the remaining scalar with `Var(O_top)=1`.
 
-3. **Same-scale `g_2` / numerical scope gate.**
+3. **Top source direction and carrier.**
+   Upgrade normalized six-component `O_top` and one-Higgs carrier authority
+   without importing a generation coefficient.
+
+4. **Local coefficient closure package.**
+   Combine items 1-3 only if they pass review/audit firewalls.
+
+5. **Same-surface pole-residue authority.**
+   Supply the accepted source/Higgs pole-residue surface if the route needs
+   physical one-particle normalization.
+
+6. **Strict same-source top/W response evidence pipeline.**
+   Implement or wire a certificate with `dM_t/dh`, `dM_W/dh`, same-source
+   identity, contact subtraction, FV/IR checks, and same-scale `g_2`.
+
+7. **Same-scale `g_2` / numerical scope gate.**
    If the target is physical-scale `y_t(v)`, provide same-scale `g_2` plus
-   matching/running.  If the target is the local ratio/coefficient lane, keep
+   matching/running. If the target is the local ratio/coefficient lane, keep
    this explicitly scoped out.

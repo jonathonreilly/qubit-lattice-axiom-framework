@@ -8,6 +8,8 @@
 | Normalized six-component top trilinear | `O_top` carrier | Support input | `1/sqrt(6)` is not the relevant component. |
 | Raw lambda-family no-go | Boundary | Retained negative boundary in current stack | If inapplicable, this block is still a coordinate-invariance theorem. |
 | Fisher arclength as physical source unit | Remaining bridge | Not closed here | Raw `lambda` remains physical unless measured or otherwise normalized. |
+| Primitive physical intervention law | First selected primitive | Open after research panel | If not derivable from finite records/LSP, the no-compute closure path remains exact-support only. |
+| Literature source-geometry bridge | Strategy input | Non-authoritative | If overused, hidden continuum/QFT imports enter the Y_T proof. |
 
 Forbidden proof inputs: `H_unit`, old Ward authority, `y_t_bare`, observed
 top/W/Z masses, PDG target values, `alpha_LM`, plaquette/u0, Planck, alpha_s,

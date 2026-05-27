@@ -1,0 +1,32 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "fail_count": 0,
+  "multi_block_track": [
+    "Block 1: Primitive Record Intervention Law",
+    "Block 2: Chentsov/Fisher Source Unit",
+    "Block 3: Top Source Direction And Carrier",
+    "Block 4: Local Coefficient Closure",
+    "Block 5: LSZ/Pole Compatibility",
+    "Block 6: Strict Top/W Response Fallback Or Cross-Check"
+  ],
+  "panel": {
+    "agent_count": 5,
+    "backup_route": "strict same-source top/W response evidence",
+    "conditional_theorem_acceptance": "20/20",
+    "retained_physical_source_acceptance_now": "0/20",
+    "selected_primitive": "LSP-compatible primitive physical intervention law"
+  },
+  "pass_count": 71,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The research panel selects the next primitive but does not derive the physical intervention law.",
+  "reachability_to_target": "supports",
+  "review_surface": [
+    "docs/YT_PHYSICAL_SOURCE_LAW_RESEARCH_PANEL_SYNTHESIS_NOTE_2026-05-26.md",
+    "scripts/frontier_yt_physical_source_law_research_panel_synthesis.py",
+    "outputs/yt_physical_source_law_research_panel_synthesis_2026-05-26.json"
+  ],
+  "selected_next_primitive": "LSP-compatible primitive physical intervention law",
+  "trace_class": "upstream_support"
+}

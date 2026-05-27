@@ -21,3 +21,5 @@ The physical-intervention uniqueness gate verifies `SUMMARY: PASS=48 FAIL=0`.
 The one-Higgs top-carrier support verifies `SUMMARY: PASS=41 FAIL=0`.
 The closure-stack contract verifies `SUMMARY: PASS=81 FAIL=0` and records the
 first open gate as audit/derivation of the physical intervention law.
+The research-panel synthesis verifies `SUMMARY: PASS=71 FAIL=0` and selects
+the primitive record intervention law as the next science block.

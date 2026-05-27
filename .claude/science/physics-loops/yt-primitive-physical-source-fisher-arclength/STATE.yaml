@@ -11,19 +11,28 @@ files_touched:
   - docs/YT_ONE_HIGGS_TOP_CARRIER_SELECTION_SUPPORT_NOTE_2026-05-26.md
   - docs/YT_FISHER_LSZ_SOURCE_NORMALIZATION_BRIDGE_THEOREM_NOTE_2026-05-26.md
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - docs/YT_PHYSICAL_SOURCE_LAW_RESEARCH_PANEL_SYNTHESIS_NOTE_2026-05-26.md
   - scripts/frontier_yt_primitive_physical_source_fisher_arclength_invariant.py
   - scripts/frontier_yt_minimum_information_source_action_bridge.py
   - scripts/frontier_yt_physical_intervention_mininfo_uniqueness_gate.py
   - scripts/frontier_yt_one_higgs_top_carrier_selection_support.py
   - scripts/frontier_yt_fisher_lsz_source_normalization_bridge.py
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - scripts/frontier_yt_physical_source_law_research_panel_synthesis.py
   - outputs/yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json
   - outputs/yt_minimum_information_source_action_bridge_2026-05-26.json
   - outputs/yt_physical_intervention_mininfo_uniqueness_gate_2026-05-26.json
   - outputs/yt_one_higgs_top_carrier_selection_support_2026-05-26.json
   - outputs/yt_fisher_lsz_source_normalization_bridge_2026-05-26.json
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+  - outputs/yt_physical_source_law_research_panel_synthesis_2026-05-26.json
   - .claude/science/physics-loops/yt-primitive-physical-source-fisher-arclength/
+latest_research_panel:
+  agent_count: 5
+  conditional_theorem_acceptance: "20/20"
+  retained_physical_source_acceptance_now: "0/20"
+  selected_next_primitive: LSP-compatible primitive physical intervention law
+  backup_route: strict same-source top/W response evidence
 open_imports:
   - audit/derive the no-hidden-scale minimum-information intervention law as the physical top Yukawa source law
   - accepted same-surface isolated-pole residue authority for the Y_T source/Higgs and top/W transfer rows, if using the pole route
@@ -33,8 +42,7 @@ no_go_routes_respected:
   - LSP source-scale blindness
   - old Ward/H_unit definition-as-derivation failure
 next_exact_action: >
-  Decide the physical intervention law gate: either audit/derive the
-  no-hidden-scale minimum-information intervention law as the physical top
-  Yukawa source law, or pivot to the strict same-source top/W pole-response
-  measurement certificate.
-stop_condition: block packaged; continue campaign if user requests more blocks
+  Start Block 1: prove or fail the primitive record intervention law from
+  finite qubit records, LSP sharp projective readout, Markov naturality,
+  no-hidden-channel semantics, and least distinguishability.
+stop_condition: research panel synthesized; next block selected

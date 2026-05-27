@@ -51,6 +51,38 @@ The added stack contract records the order from here to full closure:
 The current branch therefore does useful science, but still cannot claim
 retained or proposed-retained Y_T closure.
 
+## Five-Agent Research Panel
+
+The requested research exercise converged on one next primitive:
+
+```text
+LSP-compatible primitive physical intervention law
+```
+
+Panel result:
+
+- `20/20` simulated reviewers accept the conditional theorem: if the physical
+  top source is the no-hidden-scale minimum-information Fisher/RN source, then
+  `y_33 = 1/sqrt(6)`.
+- `0/20` accept that this is already retained physical Y_T closure.
+- Literature did not produce a direct top-Yukawa proof; useful work is in
+  finite-record/source information geometry, not BSM hierarchy models.
+- Framework-native bottom-up analysis says qubits + LSP give signed finite
+  records, but the no-hidden-record/minimum-intervention theorem still has to
+  be proved.
+
+New artifact:
+
+```text
+docs/YT_PHYSICAL_SOURCE_LAW_RESEARCH_PANEL_SYNTHESIS_NOTE_2026-05-26.md
+scripts/frontier_yt_physical_source_law_research_panel_synthesis.py
+outputs/yt_physical_source_law_research_panel_synthesis_2026-05-26.json
+```
+
+Next action: attempt Block 1, the primitive record intervention law. If it
+fails, the no-compute source-law path stays exact-support and the clean
+fallback is strict same-source top/W response evidence.
+
 ## Verification
 
 Run:
@@ -65,4 +97,5 @@ python3 scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.
 python3 scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py
 python3 scripts/frontier_yt_fh_top_w_response_ratio_gate.py
 python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+python3 scripts/frontier_yt_physical_source_law_research_panel_synthesis.py
 ```

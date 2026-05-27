@@ -21072,6 +21072,18 @@
       "dominant_class": "C",
       "runner": "scripts/probe_bz_corner_decomposition.py"
     },
+    "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 5,
+        "C": 3,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py"
+    },
     "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17": {
       "assert_count": 2,
       "counts": {
@@ -55424,6 +55436,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 5,
+        "C": 3,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/staggered_only_det_positivity_case_a_2026-05-17.py": {
       "assert_count": 1,
       "claims": [
@@ -56447,13 +56474,13 @@
     "decoration_candidates": 347,
     "dominant_class_distribution": {
       "A": 245,
-      "B": 292,
+      "B": 293,
       "C": 761,
       "D": 301,
       "none": 435
     },
-    "runners_classified": 2034,
-    "runners_with_C": 990,
-    "runners_with_D": 597
+    "runners_classified": 2035,
+    "runners_with_C": 991,
+    "runners_with_D": 598
   }
 }

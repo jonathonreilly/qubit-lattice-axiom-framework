@@ -10,6 +10,7 @@
 | Same-surface sign/order/readout law excluding `P_0` | Would turn `P_nt` support into physical zero-singlet top-block membership | unsupported import on actual surface; current real/reflection-even block-algebra shortcut pruned | `YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md` | yes | yes | derive a new accepted dynamics/order/readout theorem or bypass with strict pole rows | open blocker |
 | Source-orientation/sign selector for `P_nt` | Would choose the sign of `B_x` that makes `P_nt` largest | unsupported import on actual surface; source-orientation sign-selector shortcut pruned | `YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md` | yes if used | yes for sign route | derive accepted physical source-orientation/sign/readout law or bypass with strict pole rows | no-go for sign-choice shortcut |
 | Trace-free centered-source law for zero singlet weight | Would convert `Tr(B_x)=0` or zero centered-source expectation into support in `P_nt` | unsupported import on actual surface; trace-free centered-source shortcut pruned | `YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md` | yes if used | yes for centered-source route | derive accepted physical top-block/readout law excluding `P_0`, or bypass with strict pole rows | no-go for trace-free shortcut |
+| Minimum-information readout law for zero singlet weight | Would convert finite RN/Fisher minimum-information source semantics into support in `P_nt` | unsupported import on actual surface; minimum-information readout shortcut pruned | `YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md` | yes if used | yes for mininfo readout route | derive accepted physical top-block/readout law excluding `P_0`, add an accepted hard-boundary law, or bypass with strict pole rows | no-go for finite mininfo-readout shortcut |
 | Same-surface top generator factorization `(A/sqrt(2)) B_x` | Turns C3 response into `A/sqrt(12)` matrix element | unsupported import on actual surface | new factorization boundary | yes | yes | derive accepted transfer/action generator or strict pole rows | open blocker |
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
@@ -126,5 +127,12 @@ remains an extra convention.
 The centered-source refinement is now pruned as well: `Tr(B_x)=0` is an
 operator/source constraint and zero centered expectation gives singlet weight
 `s=1/3`, not zero singlet weight. The remaining C3 import is a genuinely
+accepted physical top-block/readout law excluding `P_0`, with generator
+factorization, or accepted strict pole rows.
+The minimum-information readout refinement is now pruned as well: the finite
+RN/I-projection tilt over the C3 line responses keeps full support for every
+finite source coordinate, gives `s=1/3` at the origin, and reaches zero
+singlet weight only through an added infinite-boundary law or by imposing the
+target response as a constraint. The remaining C3 import is still a genuinely
 accepted physical top-block/readout law excluding `P_0`, with generator
 factorization, or accepted strict pole rows.

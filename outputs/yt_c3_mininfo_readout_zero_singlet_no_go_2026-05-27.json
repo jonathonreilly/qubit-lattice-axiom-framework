@@ -1,0 +1,69 @@
+{
+  "actual_current_surface_status": "no-go / open minimum-information readout law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "c3_block_witness": {
+    "P_0_response": "2/sqrt(6)",
+    "P_nt_response": "-1/sqrt(6)",
+    "response_with_singlet_weight_s": "(3*s - 1)/sqrt(6)",
+    "target_nontrivial_response_forces": "s = 0",
+    "uniform_response": "0",
+    "uniform_singlet_weight": "s = 1/3"
+  },
+  "certificate_boundary": {
+    "accepted_same_surface_generator_factorization_derived": false,
+    "accepted_zero_singlet_membership_derived": false,
+    "bare_retained_allowed": false,
+    "finite_rn_tilt_can_set_singlet_weight_zero": false,
+    "finite_rn_tilt_has_full_support": true,
+    "minimum_information_readout_without_target_selects_zero_singlet": false,
+    "minimum_information_source_law_derived": true,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "strict_top_w_response_certificate_present": false,
+    "target_constraint_is_coefficient_row_input": true,
+    "zero_singlet_requires_infinite_boundary_or_target_constraint": true
+  },
+  "dependency_statuses": {
+    "block_support": "exact-support / open nontrivial-block membership law",
+    "first_principles": "exact-support / formal-transfer no-go",
+    "minimum_information": "exact-support under minimum-information intervention criterion",
+    "primitive_record_law": "exact-support",
+    "real_source": "exact-support",
+    "source_orientation": "no-go / open source-orientation sign law",
+    "strict_availability": "no-go",
+    "trace_free": "no-go / open trace-free source-to-zero-singlet law",
+    "zero_singlet": "no-go / open zero-singlet top-block membership law"
+  },
+  "fail_count": 0,
+  "minimum_information_witness": {
+    "baseline_line_law": "uniform on P_0, P_omega, P_omega2",
+    "finite_tilt_has_full_support": true,
+    "finite_tilt_singlet_weight": "exp(2 ell/sqrt(6)) / (exp(2 ell/sqrt(6)) + 2 exp(-ell/sqrt(6)))",
+    "singlet_weight_at_ell_0": "1/3",
+    "target_response_constraint_forces": "q(P_0) = 0",
+    "why_not_closure": "the explicit target-response constraint is the missing coefficient row as an input",
+    "zero_singlet_requires": "ell -> -infinity, or an explicit target-response constraint"
+  },
+  "no_go_audit": {
+    "reason": "The finite full-support I-projection source family gives a full-support exponential tilt over the C3 lines. With no target response it returns the uniform singlet weight s=1/3; forcing s=0 requires an infinite-boundary tilt or the target nontrivial response as a constraint.",
+    "remaining_imports": [
+      "accepted physical top-block/readout law excluding P_0",
+      "accepted same-surface generator factorization",
+      "accepted strict same-source top/W pole rows or degenerate-pole response rule",
+      "contact/FV/IR/model-class controls"
+    ],
+    "route_pruned": "minimum-information/RN-Fisher readout semantics derive accepted zero-singlet physical top-block membership"
+  },
+  "pass_count": 103,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Minimum-information/RN-Fisher source semantics produce finite full-support exponential tilts over the C3 spectral lines. They do not set the physical top singlet weight to zero unless the target response is inserted as a constraint or an infinite boundary limit is added as a new physical law.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py",
+    "outputs/yt_c3_mininfo_readout_zero_singlet_no_go_2026-05-27.json"
+  ],
+  "route_still_live": "derive accepted physical top-block/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict same-source top/W pole rows with controls",
+  "trace_class": "negative_route_pruning"
+}

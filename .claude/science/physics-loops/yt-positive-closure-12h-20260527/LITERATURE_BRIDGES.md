@@ -70,3 +70,10 @@ real block eigenvalues. No external representation theorem, physical
 mass-ordering convention, or literature sign law is load-bearing. External
 context could only motivate a new physical sign/order/readout theorem; it does
 not close the current repository surface.
+The minimum-information readout zero-singlet no-go directly applies the
+branch-local finite KL/I-projection source-law calculus to the C3 line
+responses of `B_x`. No external information-theory or physics reference is
+load-bearing: the finite full-support exponential tilt and the boundary
+condition for zero singlet weight are rederived in the runner. External
+context could only motivate a new hard-boundary/readout law; it does not close
+the current repository surface.

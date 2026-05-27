@@ -53,6 +53,8 @@ The twenty-fourth route tested whether choosing the source orientation/sign of
 `B_x` can derive that zero-singlet law.
 The twenty-fifth route tested whether trace-free centered-source semantics can
 derive that zero-singlet law.
+The twenty-sixth route tested whether finite minimum-information/RN-Fisher
+readout semantics can derive that zero-singlet law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -82,6 +84,7 @@ derive that zero-singlet law.
 | Zero-singlet C3 top-block membership from real block algebra | no-go shortcut test | 3 | Pruned: `H(a,x)` selects `P_0` for `x>0` and `P_nt` only with an added sign/order or minimum-response premise |
 | Source-orientation sign selector for `P_nt` | no-go shortcut test | 3 | Pruned: choosing the sign of `B_x` that makes `P_nt` largest imports an unaccepted source-coordinate orientation law |
 | Trace-free centered-source selector for `P_nt` | no-go shortcut test | 3 | Pruned: `Tr(B_x)=0` is operator-level; zero source expectation gives singlet weight `s=1/3`, not `s=0` |
+| Minimum-information readout selector for `P_nt` | no-go shortcut test | 3 | Pruned: finite RN/I-projection tilts retain full support; zero singlet requires an infinite boundary or target response insertion |
 
 ## Stuck Fan-Out
 
@@ -115,6 +118,7 @@ derive that zero-singlet law.
 | Zero-singlet block membership | Ask whether current real/reflection-even C3 block algebra excludes `P_0` | Fails; the same finite family selects `P_0` or `P_nt` depending on an undetermined sign/order premise |
 | Source-orientation sign selector | Ask whether choosing the source sign that makes `P_nt` largest supplies the missing physical law | Fails; the same-source ratio is invariant under `ell -> -ell`, largest absolute response selects `P_0`, and minimum response is an extra convention |
 | Trace-free centered-source selector | Ask whether connected/trace-free source semantics exclude `P_0` | Fails; trace-freeness is an operator/source statement, zero expectation gives `s=1/3`, and the target row requires `s=0` |
+| Minimum-information readout selector | Ask whether finite RN/Fisher source semantics exclude `P_0` | Fails; finite tilts keep full support, and zero singlet is an infinite-boundary or target-insertion condition |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -148,3 +152,6 @@ that premise rather than choose it, or move to strict pole-row data.
 The trace-free centered-source no-go prunes the next obvious centering
 shortcut: source trace-freeness does not constrain the top projector, and zero
 source expectation selects `s=1/3` rather than zero singlet weight.
+The minimum-information readout no-go prunes the source-geometry shortcut:
+finite RN/I-projection source semantics cannot eliminate `P_0`; doing so
+requires an infinite support boundary or a target response constraint.

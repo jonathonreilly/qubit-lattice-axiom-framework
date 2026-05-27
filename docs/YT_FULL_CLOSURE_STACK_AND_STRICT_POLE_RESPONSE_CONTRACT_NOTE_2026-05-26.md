@@ -62,6 +62,10 @@ closed exactly:
   trace-free centered-source no-go: Tr(B_x)=0 is an operator/source
   constraint, not a physical top-projector law; zero source expectation gives
   singlet weight s=1/3, not zero singlet weight, and P_0 remains allowed
+  minimum-information readout zero-singlet no-go: finite RN/I-projection tilts
+  over the C3 line responses retain full support and cannot set singlet weight
+  to zero at finite source coordinate; imposing the target response as a
+  constraint inserts the missing coefficient row
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -171,6 +175,8 @@ still open:
   to select P_nt by the sign of B_x
   accepted trace-free-source-to-top-membership law if the C3 route tries to
   convert source centering into zero P_0 singlet weight
+  accepted minimum-information/top-readout law if the C3 route tries to turn
+  RN/Fisher source semantics into zero P_0 singlet weight
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -496,6 +502,33 @@ source-orientation/sign law.  The sign-blind largest absolute response selects
 `P_0`, while minimum-response selection still imports an undderived
 convention.  The C3 route still needs an accepted physical
 source-orientation/sign/readout law, base dynamics, or strict pole rows.
+
+[`YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md`](YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md)
+then prunes the centered-source shortcut.  `Tr(B_x)=0` is an operator/source
+statement, not a physical top-projector law.  For singlet weight `s`,
+
+```text
+Tr(rho B_x) = (3s - 1)/sqrt(6),
+```
+
+so zero centered expectation gives `s = 1/3`, while the target row requires
+`s = 0`.  The singlet block remains allowed until a physical top-block law or
+strict pole-row data excludes it.
+
+[`YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md`](YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md)
+then prunes the minimum-information readout shortcut.  The finite
+RN/I-projection tilt over the C3 line responses is full-support:
+
+```text
+s(ell) =
+  exp(2 ell/sqrt(6))
+  / [exp(2 ell/sqrt(6)) + 2 exp(-ell/sqrt(6))].
+```
+
+Thus `s(ell) > 0` for every finite source coordinate.  Zero singlet weight
+appears only as an infinite-boundary limit, or by imposing the target
+nontrivial response as a constraint.  The latter is target insertion, not a
+derived physical readout law.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a
@@ -1364,6 +1397,10 @@ proposal_allowed_reason: |
   the source sign that makes P_nt largest imports an unaccepted source
   orientation, largest absolute response selects P_0, and minimum-response
   selection remains an extra convention.
+  The trace-free centered-source and minimum-information readout no-gos prune
+  two further zero-singlet shortcuts: source centering gives s=1/3, and finite
+  RN/I-projection tilts retain full support unless an infinite-boundary law or
+  the target response itself is imported.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface

@@ -1,16 +1,16 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go / open trace-free source-to-zero-singlet law
+actual_current_surface_status: no-go / open minimum-information readout law
 trace_class: negative_route_pruning
-reachability_to_target: prunes current trace-free centered-source shortcut
+reachability_to_target: prunes current minimum-information readout shortcut
 conditional_surface_status: exact top-row certificate if accepted same-surface
   generator factorization and zero-singlet top-block support are supplied by
   an accepted physical top-block/readout law or strict pole rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The finite C3 algebra proves that P_nt support would give A/sqrt(12), but trace-freeness of B_x is an operator/source statement rather than a physical top-projector law. For singlet weight s, Tr(rho B_x)=(3s-1)/sqrt(6); zero centered expectation gives s=1/3, while the target nontrivial response requires s=0."
+proposal_allowed_reason: "The finite C3 algebra proves that P_nt support would give A/sqrt(12), but finite minimum-information/RN-Fisher tilts over the C3 line responses keep full support and do not set singlet weight to zero. Zero singlet weight appears only as an infinite-boundary selection law or by inserting the target response as a constraint."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass_for_no_go_route_pruning_only

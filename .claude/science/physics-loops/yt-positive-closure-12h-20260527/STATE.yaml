@@ -1,23 +1,23 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 11
+supervisor_cycle: 12
 runtime_budget_seconds: 43200
-remaining_campaign_seconds_at_cycle_start: 26198
+remaining_campaign_seconds_at_cycle_start: 24760
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T23:13:50Z"
+last_checkpoint_utc: "2026-05-27T23:27:06Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_trace_free_centered_source_zero_singlet_no_go
+active_route: c3_mininfo_readout_zero_singlet_no_go
 hard_residual: "derive a new accepted physical top-block/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / open trace-free source-to-zero-singlet law
+actual_current_surface_status: no-go / open minimum-information readout law
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "The trace-free centered-source shortcut is now pruned. Tr(B_x)=0 is an operator/source statement and does not constrain the physical top projector; zero source expectation gives singlet weight s=1/3, while the target nontrivial response requires s=0. Positive closure still requires a new accepted physical top-block/readout law excluding P_0 plus same-surface generator factorization, or accepted strict top/W pole-row data with controls."
+claim_state_movement: "The finite minimum-information/RN-Fisher readout shortcut is now pruned. Full-support I-projection tilts over the C3 line responses keep positive singlet weight for every finite source coordinate and give s=1/3 at the origin; zero singlet weight appears only as an infinite-boundary readout law or by imposing the target nontrivial response as a constraint. Positive closure still requires a new accepted physical top-block/readout law excluding P_0 plus same-surface generator factorization, or accepted strict top/W pole-row data with controls."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -70,6 +70,9 @@ files_touched:
   - docs/YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py
   - outputs/yt_c3_trace_free_centered_source_zero_singlet_no_go_2026-05-27.json
+  - docs/YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md
+  - scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py
+  - outputs/yt_c3_mininfo_readout_zero_singlet_no_go_2026-05-27.json
   - docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py
   - outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json
@@ -88,6 +91,7 @@ open_imports:
   - accepted same-surface sign/order/readout law excluding P_0
   - accepted physical source-orientation/sign/readout law excluding P_0
   - accepted trace-free-source-to-top-membership law excluding P_0
+  - accepted finite-minimum-information/top-readout law excluding P_0
   - accepted orientation-odd same-surface C3 phase law with |y_0| > sqrt(3) x_0 on a signed nontrivial branch
   - accepted quantitative phase-angle/strength law, beyond orientation sign, nonzero B_y, or unit base normalization alone
   - accepted same-surface phase-angle law selecting phi = +/-2pi/3, or another nontrivial-cone angle, for the physical Y_T base operator
@@ -125,7 +129,24 @@ no_go_routes:
   - current real/reflection-even C3 block algebra derives zero-singlet physical top-block membership
   - choosing the source orientation/sign of B_x that makes P_nt largest derives zero-singlet physical top-block membership
   - connected/trace-free C3 source tangent derives zero-singlet physical top-block membership
+  - finite minimum-information/RN-Fisher readout semantics derive zero-singlet physical top-block membership
 commands_run:
+  - "python3 scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py -> PASS=103 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=415 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py -> PASS=85 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py -> PASS=104 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py -> PASS=89 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py -> PASS=89 FAIL=0"
+  - "python3 scripts/frontier_yt_minimum_information_source_action_bridge.py -> PASS=37 FAIL=0"
+  - "python3 scripts/frontier_yt_primitive_record_intervention_law.py -> PASS=75 FAIL=0"
+  - "python3 scripts/frontier_yt_first_principles_transfer_response_boundary.py -> PASS=56 FAIL=0"
+  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_real_record_reflection_even_source.py -> PASS=76 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS=88 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py scripts/frontier_yt_minimum_information_source_action_bridge.py scripts/frontier_yt_primitive_record_intervention_law.py scripts/frontier_yt_first_principles_transfer_response_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_c3_real_record_reflection_even_source.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "git diff --check -> PASS"
   - "python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py -> PASS=106 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=285 FAIL=0"
   - "python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py -> PASS=68 FAIL=0"

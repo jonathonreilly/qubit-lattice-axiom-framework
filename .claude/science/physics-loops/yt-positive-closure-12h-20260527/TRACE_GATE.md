@@ -5,7 +5,7 @@ trace_class: negative_route_pruning
 target_claim_id: yt_positive_closure_pr1980
 target_blocker_text: "derive/certify the coefficient-bearing same-surface top sector matrix element dM_t/dell = A/sqrt(12)"
 source_of_blocker_text: user_goal
-reachability_to_target: prunes current trace-free centered-source shortcut
+reachability_to_target: prunes current minimum-information readout shortcut
 artifact_role: no_go
 next_trace_action: "derive a new accepted same-surface physical top-block/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict top/W pole-row data with controls"
 ```
@@ -145,5 +145,14 @@ The twenty-fifth artifact prunes the trace-free centered-source shortcut.
 law. For top singlet weight `s`, `Tr(rho B_x)=(3s-1)/sqrt(6)`; zero centered
 expectation gives `s=1/3`, while the target nontrivial response requires
 `s=0`. The next trace action remains a genuinely accepted physical
+top-block/readout law excluding `P_0` with generator factorization, or
+accepted strict top/W pole rows with controls.
+The twenty-sixth artifact prunes the minimum-information/RN-Fisher readout
+shortcut for that same zero-singlet blocker. The finite I-projection tilt over
+the C3 line responses keeps full support for every finite source coordinate:
+the singlet weight is positive and equals `1/3` at the origin. Zero singlet
+weight appears only as an infinite-boundary selection law or by imposing the
+target nontrivial response as a constraint, which would insert the missing
+coefficient row. The next trace action remains a genuinely accepted physical
 top-block/readout law excluding `P_0` with generator factorization, or
 accepted strict top/W pole rows with controls.

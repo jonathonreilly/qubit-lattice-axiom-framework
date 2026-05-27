@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced twenty-five science blocks, not positive retained-grade
+The campaign has produced twenty-six science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary and later
@@ -52,6 +52,8 @@ closure:
     zero-singlet physical top-block membership.
 25. a no-go showing trace-free centered-source semantics do not derive
     zero-singlet physical top-block membership.
+26. a no-go showing finite minimum-information/RN-Fisher readout semantics do
+    not derive zero-singlet physical top-block membership.
 
 New nontrivial-block matrix-element support result:
 
@@ -258,6 +260,50 @@ in PR #1980:
 PR #1980 body was updated with the trace-free centered-source no-go result,
 artifacts, verification, and next exact action. No `POSITIVE_CLOSURE` marker
 was written.
+
+New minimum-information readout zero-singlet no-go:
+
+```text
+finite minimum-information/RN-Fisher readout semantics
+  -/-> accepted zero-singlet physical top-block membership
+```
+
+The finite witness is the full-support C3 line tilt:
+
+```text
+s(ell) =
+  exp(2 ell/sqrt(6))
+  / [exp(2 ell/sqrt(6)) + 2 exp(-ell/sqrt(6))]
+```
+
+For every finite source coordinate, `s(ell) > 0`, and at the origin:
+
+```text
+s(0) = 1/3
+```
+
+Zero singlet weight appears only as `ell -> -infinity`, or by imposing the
+target nontrivial response as a constraint. The latter inserts the missing
+coefficient row as an input. Positive closure still requires an accepted
+physical top-block/readout theorem excluding `P_0` plus same-surface
+generator factorization, or accepted strict same-source top/W pole rows with
+controls.
+
+Cycle 12 minimum-information readout no-go verification:
+
+- `python3 scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py` -> `SUMMARY: PASS=103 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=415 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`,
+  zero-singlet membership no-go `PASS=104`, source-orientation sign-selector
+  no-go `PASS=89`, trace-free centered-source no-go `PASS=89`,
+  minimum-information source-action bridge `PASS=37`, primitive record law
+  `PASS=75`, first-principles transfer response `PASS=56`, same-surface
+  matrix factorization `PASS=77`, real-record C3 source `PASS=76`, strict
+  sparse availability audit `PASS=74`, and direct sparse certificate
+  `PASS=88`.
+
+Cycle 12 commit and PR update are pending until final verification and push
+complete in this invocation. No `POSITIVE_CLOSURE` marker was written.
 
 New strict W/Z plus C3 top-row splice result:
 

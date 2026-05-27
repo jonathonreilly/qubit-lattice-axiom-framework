@@ -173,3 +173,12 @@ controls remain open.
   while the target nontrivial response requires `s=0`. A positive closure
   route now needs an accepted physical top-block/readout law excluding `P_0`,
   or strict top/W pole-row data with controls.
+- New in the twenty-sixth block: finite minimum-information/RN-Fisher readout
+  semantics do not derive zero-singlet physical top-block membership. The
+  full-support I-projection tilt over the C3 line responses has positive
+  singlet weight for every finite source coordinate and gives `s=1/3` at the
+  origin. Zero singlet weight appears only as an infinite-boundary selection
+  law or by imposing the target nontrivial response as a constraint, which
+  reimports the missing coefficient row. A positive closure route still needs
+  an accepted physical top-block/readout law excluding `P_0`, or strict top/W
+  pole-row data with controls.

@@ -34,6 +34,45 @@ Verification recorded with this review:
 - YAML validation passed.
 - `git diff --check` passed.
 
+## 2026-05-27 Local Review, Block 26
+
+Scope:
+
+- C3 minimum-information readout zero-singlet no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the finite C3 block algebra, full-support RN/I-projection tilt, target-response boundary, dependency outputs, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open minimum-information readout law; finite source tilts do not derive zero singlet weight, and target-response constraints are marked as target insertion. |
+| Imports / support | DISCLOSED | No observed masses, target selector, external literature theorem, hard-boundary law, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, markdown-linked dependencies, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status. The full audit pipeline
+was not run because this physics-loop branch is carrying branch-local science
+artifacts and must not regenerate repo-wide audit authority surfaces during
+the campaign checkpoint.
+
+Verification recorded with this review:
+
+- New runner: `PASS=103 FAIL=0`
+- Full stack runner: `PASS=415 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`,
+  zero-singlet membership no-go `PASS=104`, source-orientation sign-selector
+  no-go `PASS=89`, trace-free centered-source no-go `PASS=89`,
+  minimum-information source-action bridge `PASS=37`, primitive record law
+  `PASS=75`, first-principles transfer response `PASS=56`, same-surface
+  matrix factorization `PASS=77`, real-record C3 source `PASS=76`, strict
+  sparse availability audit `PASS=74`, and direct sparse certificate
+  `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 24
 
 Scope:

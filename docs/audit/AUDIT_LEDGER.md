@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 531 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1240 |
+| unaudited | 1241 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 40 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,21 +57,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 826 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1470 |
+| `unaudited` | 1471 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1101 |
+| `bounded_theorem` | 1102 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 259 |
 | `open_gate` | 111 |
-| `positive_theorem` | 708 |
+| `positive_theorem` | 707 |
 
 | criticality | count |
 |---|---:|
@@ -971,7 +971,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
@@ -5058,21 +5057,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In temporal gauge each mixed plaquette holonomy reduces to U_(tau+1)(x,mu) U_tau(x,mu)^-1, giving K as a product over spatial links, and Schur orthogonality gives integral_G chi_mu(U' U^-1) lambda_ij(U) dU = delta_{mu,lambda} d_lambda^-1 lambda_ij(U').  _(class `A`)_
 - **chain closes:** True — The source note closes from compact-group Haar measure, the stated temporal-gauge Wilson mixed plaquette structure, Fubini factorization, and standard Schur orthogonality. No one-hop dependency, SU(3) specialization, beta=6 value, source-sector bridge, full transfer operator, reflection positivity, or physical identification is needed.
 - **rationale:** The theorem is a genuine algebraic closure: temporal gauge makes each mixed plaquette depend only on the same spatial link on adjacent slices, so the mixed kernel factorizes, and central convolution diagonalizes on Peter-Weyl matrix coefficients with eigenvalue c_lambda/d_lambda. The marked/non-marked compression then follows by tensoring these one-link identities and dividing by the trivial-channel scalar. The runner is not a proof of the compact-group theorem because it checks finite Z_N cases, but it is consistent structural verification plus a useful negative control; the proof itself supplies the compact-group step through Schur orthogonality.
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audited only the claimed reduction of the beta=6 plaquette PF seam to matrix-element evaluation of already-fixed integral objects K_6^env and B_6(W), using the two supplied upstream authorities and the included runner source/output.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T111854Z-6d2acdaa-gauge_vacuum_plaquette_b-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Because K_6^env and B_6(W) are already fixed as explicit Wilson/Haar integrals, the remaining beta=6 seam is exactly evaluation of the class-sector matrix elements entering S_6^env and eta_6.  _(class `A`)_
-- **chain closes:** False — The reduction would be algebraic if the full Wilson/Haar kernel/rim integral boundary theorems and full boundary-amplitude identity were retained inputs. In this packet, the supplied transfer authority is only retained_bounded and explicitly does not claim the actual full Wilson-environment transfer identity, while the asserted exact integral objects and rim/compression authorities are not supplied as retained load-bearing inputs.
-- **rationale:** The note's main step is an algebraic reduction, not a first-principles computation. However, it depends on open or missing bridges: the full untruncated Wilson environment transfer identity and the exact one-slab/rim integral boundary inputs are not closed by the restricted packet. The included runner mostly checks finite structural witnesses, string-presence support in other repo notes, and three-sample operator facts; it does not evaluate or prove the physical K_6^env and B_6(W) integral matrix-element setup claimed here.
-- **open / conditional deps cited:**
-  - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_bridge_support_note`

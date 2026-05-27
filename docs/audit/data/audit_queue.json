@@ -3,7 +3,7 @@
     "critical": 248,
     "high": 338,
     "leaf": 322,
-    "medium": 333
+    "medium": 334
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -17566,6 +17566,31 @@
       "ready": true,
       "runner_path": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
       "transitive_descendants": 69
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+        "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.5,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+      "transitive_descendants": 63
     },
     {
       "audit_independence_required": "any_non_self",
@@ -37318,6 +37343,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 62,
-  "total_pending": 1241
+  "ready_count": 63,
+  "total_pending": 1242
 }

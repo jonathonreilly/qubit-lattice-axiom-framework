@@ -1,13 +1,85 @@
 # Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction
 
-**Date:** 2026-04-17
-**Status:** exact reduction theorem on the plaquette PF lane; after the new
-one-slab kernel-integral boundary theorem and the new full-slice rim-lift
-integral boundary theorem, the remaining framework-point seam is exactly
-evaluation of the integral-defined class-sector matrix elements, not a new
-closure principle
-**Type:** positive_theorem
+**Date:** 2026-04-17 (original); 2026-05-27 (conditional-reduction narrowing).
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
+**Status:** conditional reduction of the beta=6 plaquette PF seam to
+matrix-element evaluation of the cited integral objects, **conditional
+on the full Wilson/Haar one-slab kernel, full-slice rim-lift, and
+untruncated boundary-amplitude theorems being retained inputs**.
 **Runner:** `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
+
+## 2026-05-27 Audit Repair (conditional-reduction narrowing)
+
+The 2026-05-25 audit verdict was `audited_conditional` with closure
+issue:
+
+> *"The reduction would be algebraic if the full Wilson/Haar
+> kernel/rim integral boundary theorems and full boundary-amplitude
+> identity were retained inputs. In this packet, the supplied
+> transfer authority is only retained_bounded and explicitly does not
+> claim the actual full Wilson-environment transfer identity, while
+> the asserted exact integral objects and rim/compression authorities
+> are not supplied as retained load-bearing inputs."*
+
+Repair instruction: *"supply retained full-scope authorities proving
+the actual Wilson/Haar one-slab kernel, full-slice rim lift, and
+untruncated boundary-amplitude identity used by the reduction."*
+
+Supplying the named retained authorities is substantive new work
+(each of the integral boundary theorems is itself an open theoretical
+target) and is out of scope for a review-loop PR per the framework
+policy on adding new retained authorities. This revision takes the
+**conditional-reduction narrowing path**:
+
+- demote claim_type `positive_theorem` -> `bounded_theorem`;
+- restate the load-bearing claim explicitly as a **conditional
+  reduction**: GIVEN the named integral boundary theorems and the
+  untruncated boundary-amplitude identity as supplied premises, the
+  reduction of the beta=6 plaquette PF seam to matrix-element
+  evaluation is algebraic;
+- explicitly enumerate the assumed (not-retained) inputs in the
+  "Required-but-unsupplied retained authorities" section below;
+- the runner remains as a structural finite-block check on the
+  bounded surface; it does not by itself derive the assumed integral
+  identities.
+
+The cited one-hop authority
+([`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md))
+is `retained_bounded` and supplies a bounded transfer surface, not
+the full Wilson-environment transfer identity that the reduction
+needs. The
+[`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md`](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md)
+dep records the underdetermination explicitly. The reduction theorem
+in §"Theorem 1" below is therefore conditional, not unconditional.
+
+### Required-but-unsupplied retained authorities
+
+The reduction theorem in §"Theorem 1" assumes the following four
+inputs as supplied premises. None is currently in retained inventory
+as a one-hop authority for this row; each is named here so any future
+audit can confirm or supply them.
+
+1. **Full Wilson/Haar one-slab kernel theorem** — exact form of
+   `K_beta^env(U_{k+1}, U_k)` as a single Wilson/Haar bulk slab
+   integral, with the untruncated kernel identity used by the
+   compression step.
+2. **Full-slice rim-lift theorem** — exact form of `B_beta(W)` as a
+   single local Wilson/Haar rim integral on the full slice, with the
+   untruncated rim-lift identity used by the compression step.
+3. **Exact kernel/rim compression theorem** — the canonical
+   compression law `S_6^env = P_cls K_6^env P_cls`,
+   `eta_6(W) = P_cls B_6(W)` with the untruncated compression
+   identity used downstream.
+4. **Exact compressed rim-evaluation theorem** —
+   `Z_6^env(W) = <K(W), v_6>` via the canonical Peter-Weyl evaluation
+   law on the compressed boundary.
+
+Downstream consumers that need the reduction as a closed bounded
+theorem (not a conditional reduction) must wait until retained
+one-hop authorities for (1)-(4) land; until then this row's
+load-bearing scope is the conditional reduction only.
 
 ## Question
 
@@ -17,9 +89,16 @@ the explicit `beta = 6` PF seam?
 
 ## Answer
 
-It is an exact reduction theorem.
+It is a **conditional** reduction theorem: under the four required-
+but-unsupplied retained authorities listed in §"2026-05-27 Audit
+Repair" above (full Wilson/Haar one-slab kernel, full-slice rim-lift,
+exact kernel/rim compression, and exact compressed rim-evaluation
+laws), the reduction below is algebraic. Until those authorities are
+retained one-hop on this row, the in-scope content is the conditional
+form of the reduction, not an unconditional bounded theorem.
 
-At `beta = 6`, the remaining framework-point seam is not:
+At `beta = 6`, the remaining framework-point seam is **conditionally**
+not:
 
 - a search for a new post-compression operator formalism,
 - a search for a new compressed `W`-dependence law,
@@ -87,7 +166,12 @@ From the exact compressed rim-evaluation theorem:
 Therefore the only honest next theorem seam is evaluation of the beta-side
 matrix elements generated by the integral objects already fixed above.
 
-## Theorem 1: exact beta=6 matrix-element reduction of the integral seam
+## Theorem 1: conditional beta=6 matrix-element reduction of the integral seam
+
+**Conditional on** the four required-but-unsupplied retained
+authorities in §"2026-05-27 Audit Repair" above (full Wilson/Haar
+one-slab kernel, full-slice rim-lift, exact kernel/rim compression,
+and exact compressed rim-evaluation laws), the following holds.
 
 Let `chi_(p,q)` denote the marked class-function basis and let
 

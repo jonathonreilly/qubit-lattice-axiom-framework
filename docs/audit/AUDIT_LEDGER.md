@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 537 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1158 |
+| unaudited | 1157 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -34,6 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cpt_exact_note` | 4 |
+| `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
@@ -56,16 +57,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 836 |
 | `audited_conditional` | 79 |
-| `audited_decoration` | 47 |
+| `audited_decoration` | 48 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1387 |
+| `unaudited` | 1386 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1072 |
-| `decoration` | 48 |
+| `bounded_theorem` | 1071 |
+| `decoration` | 49 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
@@ -1086,6 +1087,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `translation_covariance_local_op_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
+| `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -14833,6 +14835,23 @@ Claim boundary until fixed: the current runner gives useful bounded evidence tha
 - **load-bearing step:** The value kappa_EW = 0 is not selected by the Fierz fraction, by common rescaling, by the weak-angle preservation property, or by the historical numerical agreement after choosing that value.  _(class `A`)_
 - **chain closes:** True — The restricted packet gives exact algebra for F_adj = 8/9 and K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9), while kappa_EW = 0 and kappa_EW = 1 remain distinct admissible completions under the same algebraic inputs. No selector theorem or exact disconnected-current coefficient is present in the packet, so the stated no-go boundary closes.
 - **rationale:** The runner passes with exact Fraction-based checks for the kappa family, two-completion witness, weak-angle preservation, coupling-ratio preservation, and common-scale invariance. The five B-class checks are source-note hygiene/text-presence checks, not retained dependency imports. The clean verdict is limited to the packet-scoped no-go and does not promote K_EW = 9/8 or a physical connected-trace selector as unconditionally derived.
+- **auditor confidence:** high
+
+### `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25`
+
+- **Note:** [`YT_EW_F_ADJ_FIERZ_FRACTION_BOUNDED_NOTE_2026-05-25.md`](../../docs/YT_EW_F_ADJ_FIERZ_FRACTION_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic specialization of the cited Fierz channel-count authority: from singlet count 1, adjoint count N_c^2 - 1, and total N_c^2, the exact adjoint fraction at N_c = 3 is 8/9. This adds no independent physical selector, comparator, or theorem beyond the parent Fierz/decomposition row.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** F_adj = (N_c^2 - 1) / N_c^2 = 8/9 at N_c = 3.  _(class `A`)_
+- **chain closes:** True — The arithmetic closes exactly from the cited Fierz channel-count authority and the runner verifies the rational specialization. However, the same 8/9 channel-count fraction is already the audited content of the parent Fierz/decomposition row; this note adds no independent comparator, no compression, and no new physical readout selector.
+- **rationale:** Issue: the source presents an exact bounded proof-walk, but the proof-walk is only the rational specialization of the cited Fierz channel-count parent.
+Why this blocks: a separate retained bounded theorem would duplicate algebraic content already carried by the parent decoration authority, and would inflate the claim surface without adding an independent observable, comparator, or selector theorem.
+Repair target: box this note under the Fierz channel-count parent, or re-promote only if a later revision adds independent physical content such as a retained EW-current selector or a new comparator not already attached to the parent.
+Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebra under the parent; it should be treated as decoration, not as an independent retained bounded theorem.
+- **decoration parent:** `ew_current_fierz_channel_decomposition_note_2026-05-01`
 - **auditor confidence:** high
 
 ### `yt_ew_m_residual_note_2026-05-02`

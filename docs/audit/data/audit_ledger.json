@@ -308694,24 +308694,42 @@
       "verdict_rationale": "Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict."
     },
     "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T05:56:44.664886+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the symbolic cancellation exactly after D1 and D2 are assumed, including counterfactual checks showing equal n_link is load-bearing. The chain does not close from the one-hop dependency because yt_ew_color_projection_theorem is currently audited as a K_EW(kappa_EW) family/no-go boundary; its audited scope does not ratify the broader CMT D14 / n_link=1 single-vertex tadpole readout for both g_s and y_t used by this note.",
       "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Conditional algebraic tadpole-cancellation lemma: if both g_s(M_Pl) and y_t(M_Pl) are assigned the same single-vertex readout factor 1/sqrt(u_0), then y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare identically and is u_0-independent. The current cited parent does not supply retained authority for applying that common tadpole readout to this Ward-ratio pair.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T05:56:44.664886+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -308719,20 +308737,22 @@
         "yt_ew_color_projection_theorem"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "g_s(M_Pl) := g_bare / sqrt(u_0), y_t(M_Pl) := y_t_bare / sqrt(u_0), therefore y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "10438ee488107dc27e54485ec600ee0e0a600824b9d0adfe0a3ed72322ebfd8f",
       "note_path": "docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained authority for the common CMT single-vertex tadpole readout of both g_s and y_t in this Ward-ratio context, or narrow the row to a conditional algebra lemma over D1 and D2.",
+      "open_dependency_paths": [
+        "yt_ew_color_projection_theorem"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-22T15:30:26.224552+00:00",
@@ -308785,18 +308805,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 20,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 20
       },
       "runner_path": "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py",
       "title": "yt_ward Canonical-Surface Ratio Narrow Theorem (Tadpole Cancellation)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the algebraic cancellation is correct, but the source treats yt_ew_color_projection_theorem as retained authority for the common single-vertex tadpole readouts g_s(M_Pl)=g_bare/sqrt(u_0) and y_t(M_Pl)=y_t_bare/sqrt(u_0). The current audited parent scope is instead the K_EW(kappa_EW) no-go/family boundary and does not close those Ward-ratio CMT readout premises.\nWhy this blocks: without a retained theorem assigning the same tadpole power/readout map to both g_s and y_t in this context, the runner only proves a conditional symbolic identity after the contested readout equations are inserted.\nRepair target: add or cite a retained CMT/single-vertex tadpole-readout theorem for this Ward-ratio pair, or narrow the note to an explicitly conditional algebra lemma over D1 and D2.\nClaim boundary until fixed: given D1 and D2 as assumptions, the u_0 cancellation and corollaries are exact; no u_0 value, g_bare value, y_t_bare value, SM identification, or RGE running is established by this row."
     },
     "yt_ward_step3_contact_4fermion_vanishing_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

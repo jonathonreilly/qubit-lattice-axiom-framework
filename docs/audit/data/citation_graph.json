@@ -53823,19 +53823,19 @@
     },
     "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": {
       "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "physical_lattice_necessity_note",
         "g_bare_structural_normalization_theorem_note_2026-04-18",
         "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7fcc2748d0d20824cf86fd5a663e04940325391e960ac050a0dad1046073055a",
+      "note_hash": "6b55665ea0de926328e5558208cbc2b200eba63361279d09f96e2ab2f995e8a1",
       "path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
       "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
-      "title": "g_bare Hilbert\u2013Schmidt Rigidity Theorem (Independent Rescaling-Freedom Closure)"
+      "title": "g_bare Hilbert\u2013Schmidt Rigidity Theorem (R1-R3 Narrow Surface)"
     },
     "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17": {
       "claim_id": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
@@ -85330,22 +85330,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 602,
+      "bounded_theorem": 603,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
       "none": 1450,
       "open_gate": 49,
-      "positive_theorem": 169
+      "positive_theorem": 168
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1021,
+      "bounded_theorem": 1022,
       "decoration": 1,
       "meta": 191,
       "no_go": 183,
       "none": 431,
       "open_gate": 126,
-      "positive_theorem": 589
+      "positive_theorem": 588
     },
     "edge_count": 9739,
     "leaf_count": 788,

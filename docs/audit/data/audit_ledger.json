@@ -95855,102 +95855,26 @@
       "verdict_rationale": "The bounded claim is clean because it does not promote W2's admitted bridge into an unconditional proved physical identity. It only performs the narrow substitution W1 + W2 + AN + NC, and the stated scope explicitly excludes deriving W1, W2, N_c, physical readouts, or comparators. Admission gate passed: the W2 bridge admission is explicit, localized inside the retained_bounded W2 dependency, and preserved as inherited bounded content rather than hidden in the downstream algebraic conclusion."
     },
     "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": {
-      "audit_date": "2026-05-26T22:50:45.069956+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
-          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
-        },
-        "dep_claim_type": {
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
-          "physical_lattice_necessity_note": "no_go",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
-        },
-        "dep_effective_status": {
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
-          "physical_lattice_necessity_note": "retained_no_go",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
-        },
-        "deps": [
-          "g_bare_structural_normalization_theorem_note_2026-04-18",
-          "physical_lattice_necessity_note",
-          "su3_casimir_fundamental_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 21.7,
-        "runner_hash": "9c155be2e88138c9b4d5b850ae895677694c6abc3d9397028a9c5b5fd40ff43e",
-        "transitive_descendants": 207
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-xhigh-five-judge-panel-majority-g-bare-hs-C75Ktt-2026-05-26",
-      "auditor_confidence": "judicial_majority_3_to_2",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": "Current source scope includes R1-R3 Hilbert-Schmidt trace-Casimir scalar-dilation rigidity plus R4 connection-rescaling equivalence and R5 Wilson-coefficient routing. R1-R3 close as bounded class-A algebra, but R4/R5 remain conditional on a retained physical connection-equivalence bridge and Wilson action-routing premise.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-26T22:50:45.069956+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-26T00:00:00+00:00",
-          "auditor": "codex-gpt-5.5-xhigh-fresh-g-bare-hs-rigidity-pass1-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Given the retained/bounded canonical triplet carrier and fixed Hilbert-Schmidt form on su(3), scalar dilation T_a -> c T_a rescales both Tr(T_a T_b) and sum_a T_a T_a by c^2, so only c = +/-1 preserves the fixed trace-Casimir pair; no Wilson-action derivation, N_F = 1/2 from Cl(3), dynamical running/fixed-point selection, or absolute g_bare = 1 derivation is audited.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-26T00:00:00+00:00",
-          "auditor": "codex-gpt-5.5-xhigh-fresh-g-bare-hs-rigidity-pass2-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Attempted bounded HS-rigidity-to-g_bare theorem: R1-R3 establish fixed-form trace/Casimir scalar-dilation rigidity on the algebraic su(3) triplet, while R4/R5 would additionally require a physical connection-equivalence bridge and admitted Wilson-action routing.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-26T22:50:45.069956+00:00",
-          "auditor": "codex-gpt-5.5-xhigh-five-judge-panel-majority-g-bare-hs-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Current source scope includes R1-R3 Hilbert-Schmidt trace-Casimir scalar-dilation rigidity plus R4 connection-rescaling equivalence and R5 Wilson-coefficient routing. R1-R3 close as bounded class-A algebra, but R4/R5 remain conditional on a retained physical connection-equivalence bridge and Wilson action-routing premise.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "The first audit correctly identified a clean bounded R1-R3 algebraic core, but over-narrowed the row to that subclaim while R4/R5 remain part of the current source theorem/proposed scope. The correct ledger state for the as-written row is scope_too_broad conditional until the source is split/narrowed or the missing bridge is retained.",
-          "independence": "judicial_review",
-          "judgment_rationale": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": {
-            "A": 62,
-            "B": 5,
-            "C": 0,
-            "D": 0,
-            "total_pass": 67
-          },
-          "second_auditor_error": "No material tuple error. The second audit correctly treated the clean R1-R3 core as insufficient to ratify the broader current source scope; it should be read as conditional on the R4/R5 extension, not as a rejection of the trace-Casimir algebra.",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "physical_lattice_necessity_note",
@@ -95958,34 +95882,143 @@
         "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 28,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 21.7,
-      "load_bearing_step": "For c^2 != 1, both invariants change by the same factor c^2; the canonical pair (N_F, C_F) = (1/2, 4/3) is preserved only at c^2 = 1, so T_a -> c T_a with c != +/-1 is not an automorphism of the canonical inner-product structure on g_conc.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "7fcc2748d0d20824cf86fd5a663e04940325391e960ac050a0dad1046073055a",
+      "note_hash": "6b55665ea0de926328e5558208cbc2b200eba63361279d09f96e2ab2f995e8a1",
       "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "notes_for_re_audit_if_any": "scope_too_broad -- narrow/split the source to R1-R3 HS trace-Casimir rigidity only, or add retained bridge theorems proving R4 physical connection-coordinate equivalence and R5 Wilson action routing from the fixed Hilbert-Schmidt structure.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-27T01:11:34.963190+00:00",
+          "archived_for_note_hash": "7fcc2748d0d20824cf86fd5a663e04940325391e960ac050a0dad1046073055a",
+          "audit_date": "2026-05-26T22:50:45.069956+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+              "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
+            },
+            "dep_claim_type": {
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
+              "physical_lattice_necessity_note": "no_go",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+            },
+            "dep_effective_status": {
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
+              "physical_lattice_necessity_note": "retained_no_go",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+            },
+            "deps": [
+              "g_bare_structural_normalization_theorem_note_2026-04-18",
+              "physical_lattice_necessity_note",
+              "su3_casimir_fundamental_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 21.7,
+            "runner_hash": "9c155be2e88138c9b4d5b850ae895677694c6abc3d9397028a9c5b5fd40ff43e",
+            "transitive_descendants": 207
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-xhigh-five-judge-panel-majority-g-bare-hs-C75Ktt-2026-05-26",
+          "auditor_confidence": "judicial_majority_3_to_2",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.",
+          "claim_scope": "Current source scope includes R1-R3 Hilbert-Schmidt trace-Casimir scalar-dilation rigidity plus R4 connection-rescaling equivalence and R5 Wilson-coefficient routing. R1-R3 close as bounded class-A algebra, but R4/R5 remain conditional on a retained physical connection-equivalence bridge and Wilson action-routing premise.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T22:50:45.069956+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-26T00:00:00+00:00",
+              "auditor": "codex-gpt-5.5-xhigh-fresh-g-bare-hs-rigidity-pass1-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Given the retained/bounded canonical triplet carrier and fixed Hilbert-Schmidt form on su(3), scalar dilation T_a -> c T_a rescales both Tr(T_a T_b) and sum_a T_a T_a by c^2, so only c = +/-1 preserves the fixed trace-Casimir pair; no Wilson-action derivation, N_F = 1/2 from Cl(3), dynamical running/fixed-point selection, or absolute g_bare = 1 derivation is audited.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-26T00:00:00+00:00",
+              "auditor": "codex-gpt-5.5-xhigh-fresh-g-bare-hs-rigidity-pass2-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Attempted bounded HS-rigidity-to-g_bare theorem: R1-R3 establish fixed-form trace/Casimir scalar-dilation rigidity on the algebraic su(3) triplet, while R4/R5 would additionally require a physical connection-equivalence bridge and admitted Wilson-action routing.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-26T22:50:45.069956+00:00",
+              "auditor": "codex-gpt-5.5-xhigh-five-judge-panel-majority-g-bare-hs-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Current source scope includes R1-R3 Hilbert-Schmidt trace-Casimir scalar-dilation rigidity plus R4 connection-rescaling equivalence and R5 Wilson-coefficient routing. R1-R3 close as bounded class-A algebra, but R4/R5 remain conditional on a retained physical connection-equivalence bridge and Wilson action-routing premise.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "The first audit correctly identified a clean bounded R1-R3 algebraic core, but over-narrowed the row to that subclaim while R4/R5 remain part of the current source theorem/proposed scope. The correct ledger state for the as-written row is scope_too_broad conditional until the source is split/narrowed or the missing bridge is retained.",
+              "independence": "judicial_review",
+              "judgment_rationale": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": {
+                "A": 62,
+                "B": 5,
+                "C": 0,
+                "D": 0,
+                "total_pass": 67
+              },
+              "second_auditor_error": "No material tuple error. The second audit correctly treated the clean R1-R3 core as insufficient to ratify the broader current source scope; it should be read as conditional on the R4/R5 extension, not as a rejection of the trace-Casimir algebra.",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "For c^2 != 1, both invariants change by the same factor c^2; the canonical pair (N_F, C_F) = (1/2, 4/3) is preserved only at c^2 = 1, so T_a -> c T_a with c != +/-1 is not an automorphism of the canonical inner-product structure on g_conc.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad -- narrow/split the source to R1-R3 HS trace-Casimir rigidity only, or add retained bridge theorems proving R4 physical connection-coordinate equivalence and R5 Wilson action routing from the fixed Hilbert-Schmidt structure.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 62,
+            "B": 5,
+            "C": 0,
+            "D": 0,
+            "total_pass": 67
+          },
+          "verdict_rationale": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 62,
-        "B": 5,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 67
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
-      "title": "g_bare Hilbert\u2013Schmidt Rigidity Theorem (Independent Rescaling-Freedom Closure)",
+      "title": "g_bare Hilbert\u2013Schmidt Rigidity Theorem (R1-R3 Narrow Surface)",
       "transitive_descendants": 207,
-      "verdict_rationale": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation."
+      "verdict_rationale": null
     },
     "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17": {
       "audit_date": null,
@@ -310589,8 +310622,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2381,
-    "re_audit_required": 3,
+    "preserved_existing": 2384,
+    "re_audit_required": 0,
     "row_count": 2428,
     "seeded_new": 0
   }

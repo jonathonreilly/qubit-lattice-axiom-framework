@@ -1,0 +1,30 @@
+loop: g-bare-hs-rigidity-scope-repair-20260527
+branch: physics-loop/g-bare-hs-rigidity-scope-repair-20260527
+base: origin/main
+cycle: 1
+status: ready_for_review
+target_claim_id: g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07
+target_note: docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md
+target_runner: scripts/frontier_g_bare_audit_residual_closure.py
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: true
+proposal_allowed_reason: >
+  The branch narrows an audited_conditional row to the R1-R3 Hilbert-Schmidt
+  trace/Casimir rigidity surface that the blocker identified as already
+  closing at bounded class-A level; independent audit still decides status.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+open_imports:
+  - Killing-form rigidity for simple su(3) is used as standard bounded mathematics.
+  - Overall Hilbert-Schmidt scalar N_F remains a convention/open bridge.
+  - R4 physical connection-coordinate equivalence remains out of scope.
+  - R5 Wilson coefficient routing remains out of scope.
+review_findings: local_review_clean
+pr_status: pending
+next_exact_action: pre-commit audit check, commit, push, open PR
+stop_condition: PR opened and verified against main

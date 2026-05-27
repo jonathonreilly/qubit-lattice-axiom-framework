@@ -1,9 +1,10 @@
-# g_bare Hilbert–Schmidt Rigidity Theorem (Independent Rescaling-Freedom Closure)
+# g_bare Hilbert–Schmidt Rigidity Theorem (R1-R3 Narrow Surface)
 
-**Date:** 2026-05-07
-**Claim type:** positive_theorem
-**Status:** unaudited candidate. This note is graph-visible only so the
-independent audit lane can decide its audit and effective status.
+**Date:** 2026-05-07 (scope narrowed 2026-05-27)
+**Claim type:** bounded_theorem
+**Status:** bounded R1-R3 source. This note is graph-visible only so the
+independent audit lane can decide its audit and effective status; no author-side
+retained status is asserted.
 **Primary runner:** [`scripts/frontier_g_bare_audit_residual_closure.py`](../scripts/frontier_g_bare_audit_residual_closure.py)
 
 ## 0. Audit context
@@ -22,12 +23,18 @@ candidate as `audited_decoration` (effective status
 
 The audit-flagged weakness was that the 2026-05-03 statement is a
 narrow algebraic substitution given an admitted normalization. The
-present note carries an independent, structurally distinct argument:
+present note carries an independent, structurally distinct bounded argument:
 the Hilbert–Schmidt trace form on `End(V)` *induced from the framework
 Hilbert space* is the **unique** Ad-invariant inner product on
 `su(3) ⊂ End(V)` up to overall positive scalar (Killing-form rigidity).
 Under that fixed form, **no scalar dilation `T_a → c T_a` simultaneously
 preserves the trace Gram and the quadratic Casimir** for `c ≠ ±1`.
+
+The 2026-05-26/27 audit of this row found that R1-R3 close as bounded
+class-A algebra but that the prior source scope also included R4/R5: a physical
+connection-coordinate equivalence claim and Wilson action-routing claim.  This
+revision narrows the binding theorem to R1-R3 only.  R4/R5 remain downstream
+open bridge targets and are not part of this row's auditable candidate surface.
 
 This is a class (A) algebraic identity whose load-bearing inputs are:
 
@@ -78,21 +85,6 @@ normalization.
 > Equivalently, there exists **no scalar dilation that lies in the
 > automorphism group of the canonical inner-product structure on
 > `g_conc`**.
->
-> **(R4) Connection rescaling reduces to coordinate redundancy.** The
-> rescaling `A → c A` of an arbitrary connection `A_op = Σ_a A^a T_a`
-> is the substitution `A^a → c A^a` of coefficients. With the operator
-> basis `{T_a}` pinned by (R3), the connection `A_op` itself does not
-> change under this substitution unless we *also* dilate the
-> generators (forbidden by R3). Hence `A → c A` carries no independent
-> physical content; it is coordinate redundancy on the fixed operator
-> `A_op`.
->
-> **(R5) Wilson-coefficient routing.** Under any *non-canonical* basis
-> with `T_a → c T_a`, the Wilson plaquette small-`a` matching produces
-> `β_new = c² · β_old`, leaving `g_bare` unchanged. This routes the
-> abstract continuum-rescaling freedom into the action coefficient
-> `β`, not into a separate `g_bare` parameter.
 
 The theorem **does not** claim:
 
@@ -101,15 +93,20 @@ The theorem **does not** claim:
   the companion note,
   `G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`);
 - that the Wilson plaquette action form is uniquely forced (separate
-  retention target via A2.5; see
+  retention target; see
   [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
   Claim 3 caveat);
-- closure of the deeper "absolute derivation of `g_bare = 1` from A1+A2"
-  Nature-grade target.
+- that connection-coordinate rescaling is physically redundant for the
+  framework gauge connection;
+- that Wilson small-`a` coefficient routing is derived from the fixed
+  Hilbert-Schmidt structure;
+- closure of the companion `g_bare = 1` constraint-vs-convention row; or
+- closure of the deeper "absolute derivation of `g_bare = 1` from Axiom 1 and
+  Axiom 2" target.
 
 ## 2. What this candidate adds beyond the 2026-05-03 candidate
 
-| Aspect | 2026-05-03 (decoration) | Present (positive_theorem candidate) |
+| Aspect | 2026-05-03 (decoration) | Present (R1-R3 bounded candidate) |
 |---|---|---|
 | Load-bearing input | canonical `Tr(T_a T_b) = δ/2` from `cl3_color_automorphism_theorem` | Hilbert–Schmidt form `B_HS` from framework Hilbert space + Killing rigidity |
 | Conclusion type | algebraic substitution showing `c²` shift in `β` | structural rigidity statement: no `c` preserves both trace Gram AND Casimir |
@@ -127,8 +124,9 @@ rigidity check that the auditor identified as missing.
 
 | Authority | Audit-lane status | Role |
 |---|---|---|
-| [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md) | unaudited | provides the canonical Cl(3) -> End(V) -> su(3) embedding (Claim 1) and the Ad-invariant form identification (Claim 2) |
-| [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) | audited_conditional | provides `C_2 = 4/3` on the fundamental in canonical normalization, used to sharpen the Casimir-form joint rigidity statement |
+| [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md) | audited clean no-go / retained-grade effective status | provides the fixed Hilbert-space/input-algebra boundary used here only as a bounded algebraic surface |
+| [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md) | audited clean / retained bounded | provides the canonical Cl(3) -> End(V) -> su(3) embedding (Claim 1) and the Ad-invariant form identification (Claim 2) |
+| [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) | audited decoration under retained color-normalization parent | provides a convenient canonical-basis check of `C_2 = 4/3`; the R1-R3 argument also derives `C_F = (8/3) N_F` directly |
 
 The dependency on `cl3_color_automorphism_theorem` (the
 basis-normalization lemma) is *two-hop* via either parent and is
@@ -173,29 +171,13 @@ Step 4 (No nontrivial joint preservation).
   an automorphism of the canonical inner-product structure on g_conc.
   (Sign flip c = -1 reverses orientation but preserves both invariants;
   this is the discrete reflection ambiguity, not a continuous rescaling.)
-
-Step 5 (Connection redundancy).
-  The connection A_op = Σ_a A^a T_a is the operator. Substituting
-  A^a → c A^a yields A_op → c A_op. This is the coefficient rescaling.
-  By Step 4, simultaneously rescaling T_a → c T_a is FORBIDDEN under
-  fixed B_HS, so the only legitimate "rescaling" reduces to coefficient
-  rescaling, which is coordinate redundancy on the same physical
-  operator A_op (no new physical content).
-
-Step 6 (Wilson coefficient routing).
-  Suppose we admit a non-canonical basis T_a → c T_a (which violates
-  Steps 1-4 but is the historical "A → A/g" rescaling reading). Then
-  Wilson small-a matching at fixed continuum kinetic term
-  (1/(2 g²)) Tr(F²) gives
-      β_new = c² · β_old,
-  leaving g_bare unchanged. The continuum rescaling freedom thereby
-  routes itself into β, not into g_bare.
 ```
 
 This load-bearing chain is class (A) — algebraic identities on the
 framework's fixed Hilbert-space structure plus standard Lie-algebra
 rigidity. It does NOT use the Gell-Mann basis values as input; it uses
-the *form* directly.
+the *form* directly.  The former R4/R5 connection and Wilson-routing
+statements are downstream bridge targets, not binding claims of this row.
 
 ## 5. Why this is not a decoration of `cl3_color_automorphism_theorem`
 
@@ -242,9 +224,8 @@ Verifies, in `Section H`:
 4. The "no joint preservation" claim (Step 4) is checked: at every
    `c ≠ ±1`, both the trace Gram **and** the Casimir change by `c²`,
    and the canonical pair is recovered ONLY at `c² = 1`.
-5. The Wilson-coefficient routing (Step 6) is verified by repeating
-   the small-`a` plaquette expansion under non-canonical generators
-   and confirming `β_new = c² · β_old`.
+5. The runner also prints a Wilson-coefficient routing diagnostic.  That
+   diagnostic is not part of this narrowed row's load-bearing R1-R3 claim.
 
 ## 7. The remaining convention layer (overall scalar `k`)
 
@@ -258,33 +239,33 @@ Standard physics conventions are:
 | Fundamental Killing | dimension-determined | `1` | mathematical Killing-form |
 | Adjoint-trace | varies | `N_c` | gauge-theory adjoint trace |
 
-The framework adopts the canonical Gell-Mann normalization
-`N_F = 1/2`. This is a single convention scalar, not an independent
-`g_bare` choice. Its convention status is documented in the companion
-note
-`G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`,
-which makes precise that `g_bare = 1` is a *derived constraint* given
-`N_F = 1/2` and is **not** a separate convention.
+The framework frequently uses the canonical Gell-Mann normalization
+`N_F = 1/2`.  This row does not audit whether that scalar is forced or whether
+it closes the companion `g_bare = 1` constraint-vs-convention claim.  It only
+proves that once the Hilbert-Schmidt normalization is fixed, scalar dilation
+cannot preserve both the trace Gram and the quadratic Casimir except at
+`c = ±1`.
 
 ## 8. Review-lane disposition (audit queued)
 
 ```yaml
-target_claim_type: positive_theorem
+target_claim_type: bounded_theorem
 proposed_claim_scope: |
   Under the framework's fixed Hilbert-space inner product on V = C^8,
   the Hilbert-Schmidt form on g_conc = su(3) ⊂ End(V) is the unique
   Ad-invariant inner product (Killing rigidity); no real c ≠ ±1
   preserves both the trace Gram and the quadratic Casimir
-  simultaneously; the connection rescaling A → c A reduces to
-  coordinate redundancy on the same operator A_op; under any
-  non-canonical basis the Wilson small-a matching routes the rescaling
-  into β = c² · β, leaving g_bare unchanged.
+  simultaneously.
 proposed_load_bearing_step_class: A
 declared_one_hop_deps:
+  - physical_lattice_necessity_note
   - g_bare_structural_normalization_theorem_note_2026-04-18
   - su3_casimir_fundamental_theorem_note_2026-05-02
 independent_audit_required_before_effective_status_change: true
 parent_update_allowed_only_after_independent_audit_accepts_child_rows: true
+out_of_scope_until_separate_bridge:
+  - R4 physical connection-coordinate equivalence
+  - R5 Wilson coefficient routing
 distinguishing_content_from_2026-05-03: |
   The 2026-05-03 candidate's load-bearing step was a single algebraic
   substitution into the canonical Gell-Mann basis (one-form rigidity).
@@ -297,20 +278,25 @@ distinguishing_content_from_2026-05-03: |
 
 ## 9. What this candidate can support after independent audit acceptance
 
-- The constraint reading of `g_bare = 1` (companion theorem
-  `G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`).
-- The independent (non-decoration) closure of the rescaling-freedom
-  removal repair target named in
+- A bounded upstream algebraic input for any future connection-coordinate or
+  Wilson-routing bridge.
+- The independent R1-R3 part of the rescaling-freedom removal repair target
+  named in
   `G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`.
 - A future re-audit of `G_BARE_DERIVATION_NOTE.md`,
-  after the independent audit lane has reviewed this row and the companion
-  constraint-vs-convention restatement note.
+  only after separate bridge rows close R4/R5 and the companion
+  constraint-vs-convention row.
 
 ## 10. What this theorem does NOT close
 
 - The convention-vs-derivation status of the **overall scalar** `N_F`
   (the canonical normalization choice). This remains the genuine
   remaining convention layer; see the companion restatement note.
+- R4: the physical connection-coordinate equivalence of coefficient
+  rescaling.
+- R5: Wilson action coefficient routing from the fixed Hilbert-Schmidt
+  structure.
+- The companion `g_bare = 1` constraint-vs-convention conclusion.
 - The choice of the Wilson plaquette action form per se; Symanzik /
   improved actions remain outside this scope.
 - The deeper question of whether `N_F = 1/2` is itself uniquely forced
@@ -333,9 +319,8 @@ distinguishing_content_from_2026-05-03: |
   — declared one-hop dep providing the canonical-basis Casimir value
   used to sharpen the joint rigidity statement.
 - `G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`
-  — companion note that uses the present rigidity to disambiguate the
-  convention layer (overall `N_F` scalar) from the constraint layer
-  (`g_bare = 1`).
+  — companion note that requires separate audit before it can use the
+  present R1-R3 rigidity in a `g_bare = 1` constraint argument.
 ## 12. Honest scoping summary
 
 The novelty of the present theorem over the 2026-05-03 candidate is
@@ -347,8 +332,7 @@ form on simple `su(3)` up to scalar) is the additional structural
 input that lifts the argument out of the decoration tier.
 
 The remaining convention layer is the **overall scalar `N_F`** that
-sets the normalization of the Hilbert–Schmidt form. Once `N_F = 1/2`
-is admitted as the canonical Gell-Mann convention, `g_bare = 1`
-follows as a structural constraint. The deeper question — whether
-`N_F = 1/2` itself is forced by Cl(3) alone — is separately tracked
-as a Nature-grade target.
+sets the normalization of the Hilbert–Schmidt form.  This row does not
+derive `N_F = 1/2`, does not derive the physical connection readout, and
+does not derive Wilson action routing.  Those are separate bridge targets
+before the parent `g_bare = 1` surface can claim closure.

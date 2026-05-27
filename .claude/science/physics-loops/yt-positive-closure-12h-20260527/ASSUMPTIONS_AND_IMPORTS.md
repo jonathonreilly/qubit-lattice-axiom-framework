@@ -8,6 +8,7 @@
 | Nontrivial C3 top-line assignment | Selects response magnitude `1/sqrt(6)` rather than singlet `2/sqrt(6)` | unsupported import on actual surface; current real same-surface shortcut pruned | current branch C3 finite algebra | yes | yes | derive accepted C3 circulant dynamics/source law or strict pole rows | open blocker |
 | Zero-singlet nontrivial C3 block membership | Weakens the coefficient-row requirement from an individual complex line to support in `P_nt = P_omega + P_omega2` | exact support/open import | `YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md` | yes | yes | derive accepted physical top-block law excluding `P_0`, or bypass with strict pole rows | open blocker |
 | Same-surface sign/order/readout law excluding `P_0` | Would turn `P_nt` support into physical zero-singlet top-block membership | unsupported import on actual surface; current real/reflection-even block-algebra shortcut pruned | `YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md` | yes | yes | derive a new accepted dynamics/order/readout theorem or bypass with strict pole rows | open blocker |
+| Source-orientation/sign selector for `P_nt` | Would choose the sign of `B_x` that makes `P_nt` largest | unsupported import on actual surface; source-orientation sign-selector shortcut pruned | `YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md` | yes if used | yes for sign route | derive accepted physical source-orientation/sign/readout law or bypass with strict pole rows | no-go for sign-choice shortcut |
 | Same-surface top generator factorization `(A/sqrt(2)) B_x` | Turns C3 response into `A/sqrt(12)` matrix element | unsupported import on actual surface | new factorization boundary | yes | yes | derive accepted transfer/action generator or strict pole rows | open blocker |
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
@@ -116,3 +117,8 @@ real/reflection-even C3 block algebra has eigenvalues
 `lambda(P_0)=a+2x` and `lambda(P_nt)=a-x`, so excluding `P_0` requires an
 accepted sign/order/readout law or strict pole rows rather than another
 algebraic restatement of the same block.
+The immediate sign-choice refinement is now also pruned: selecting the sign of
+`B_x` that makes `P_nt` largest imports an unaccepted source-coordinate
+orientation law. The same-source ratio is invariant under `ell -> -ell`,
+largest absolute response selects `P_0`, and minimum-response selection
+remains an extra convention.

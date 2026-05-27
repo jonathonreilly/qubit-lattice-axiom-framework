@@ -68,6 +68,9 @@ Current block artifacts:
 - `docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py`
 - `outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json`
+- `docs/YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py`
+- `outputs/yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json`
 - `docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py`
 - `outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json`
@@ -80,6 +83,6 @@ Next artifact if continuing:
 
 - accepted strict top/W pole-row data, or an accepted same-surface
   backend/projector/matrix-element theorem; if staying on C3, a genuinely new
-  same-surface sign/order/readout theorem excluding `P_0` and supplying
-  accepted backend, W/top projectors, generator factorization, and
-  source-generator matrix elements.
+  same-surface physical source-orientation/sign/readout theorem excluding
+  `P_0` and supplying accepted backend, W/top projectors, generator
+  factorization, and source-generator matrix elements.

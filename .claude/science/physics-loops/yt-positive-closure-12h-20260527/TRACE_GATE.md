@@ -5,9 +5,9 @@ trace_class: negative_route_pruning
 target_claim_id: yt_positive_closure_pr1980
 target_blocker_text: "derive/certify the coefficient-bearing same-surface top sector matrix element dM_t/dell = A/sqrt(12)"
 source_of_blocker_text: user_goal
-reachability_to_target: prunes current real/reflection-even block-membership shortcut
+reachability_to_target: prunes current source-orientation sign-selector shortcut
 artifact_role: no_go
-next_trace_action: "derive a new accepted same-surface sign/order/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict top/W pole-row data with controls"
+next_trace_action: "derive a new accepted same-surface physical source-orientation/sign/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict top/W pole-row data with controls"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -131,3 +131,12 @@ names the real nontrivial block but does not derive the physical sign/order
 or minimum-response convention needed to exclude `P_0`. The next trace action
 is a new accepted same-surface sign/order/readout theorem with generator
 factorization, or accepted strict W/top pole rows with controls.
+The twenty-fourth artifact prunes the source-orientation sign-choice shortcut
+inside that same blocker. The real finite-record source theorem gives `B_x`
+only up to source-coordinate orientation, and the same-source top/W ratio is
+invariant under `ell -> -ell`. Largest signed response selects `P_0` for
+`+B_x` and `P_nt` for `-B_x`, so choosing the sign that selects `P_nt` imports
+an unaccepted source-orientation/sign law. Largest absolute response selects
+`P_0`; minimum-response selection still imports a convention. The next trace
+action remains an accepted physical source-orientation/sign/readout law with
+generator factorization, or accepted strict top/W pole rows with controls.

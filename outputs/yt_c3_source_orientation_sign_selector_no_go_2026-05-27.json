@@ -1,0 +1,110 @@
+{
+  "actual_current_surface_status": "no-go / open source-orientation sign law",
+  "anchors": {
+    "block_support": "exact-support / open nontrivial-block membership law",
+    "first_principles": "exact-support / formal-transfer no-go",
+    "real_source": "exact-support",
+    "source_response_extremal": "no-go / open source-response readout law",
+    "strict_availability": "no-go",
+    "zero_singlet": "no-go / open zero-singlet top-block membership law"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "absolute_response_max_selects_P0": true,
+    "accepted_same_surface_generator_factorization_derived": false,
+    "accepted_source_orientation_law_for_Pnt_derived": false,
+    "accepted_zero_singlet_membership_derived": false,
+    "bare_retained_allowed": false,
+    "largest_signed_selector_orientation_invariant": false,
+    "minimum_response_top_convention_derived": false,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "same_source_ratio_orientation_invariant": true,
+    "source_direction_bx_available_up_to_sign": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "claim_id": "yt_c3_source_orientation_sign_selector_no_go_note_2026-05-27",
+  "fail_count": 0,
+  "first_principles_elon_summary": {
+    "A_min": [
+      "finite positive transfer/Feynman-Hellmann response support",
+      "same-source top/W source-coordinate cancellation",
+      "real finite-record C3 source theorem selecting B_x up to sign",
+      "finite C3 projector/block algebra",
+      "nontrivial-block matrix-element support theorem",
+      "zero-singlet membership no-go"
+    ],
+    "result": "blocked by source-coordinate orientation invariance and response-order counterwitnesses",
+    "route_attempted": "derive zero P_0 singlet weight by source orientation/sign selection",
+    "stuck_fanout_frames": [
+      "coordinate orientation",
+      "signed response ordering",
+      "sign-blind absolute response ordering",
+      "minimum-response rule",
+      "strict pole bypass"
+    ]
+  },
+  "generated_by": "scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py",
+  "no_go_audit": {
+    "counterfamily": {
+      "absolute_response": "orientation-invariant maximum selects P_0",
+      "ell_to_minus_ell": "same-source top/W ratio is unchanged",
+      "minimum_response": "P_nt selection imports a minimum-response convention",
+      "minus_Bx": "largest signed response selects P_nt only by opposite source orientation",
+      "plus_Bx": "largest signed response selects P_0"
+    },
+    "remaining_imports": [
+      "accepted physical source-orientation/sign/order/readout law excluding P_0",
+      "accepted same-surface generator factorization",
+      "accepted strict same-source top/W pole rows or degenerate-pole response rule",
+      "contact/FV/IR/model-class controls"
+    ],
+    "route_pruned": "choosing the source orientation/sign that makes P_nt largest derives accepted zero-singlet physical top-block membership"
+  },
+  "pass_count": 89,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Selecting P_nt by source-sign choice depends on an unaccepted orientation of the same source coordinate. The same-source response ratio is invariant under ell -> -ell, largest absolute response selects P_0, and minimum-response selection remains an imported convention.",
+  "reachability_to_target": "prunes",
+  "route_still_live": "derive an accepted same-surface source-orientation/sign/readout law excluding P_0 with generator factorization, or produce accepted strict same-source top/W pole rows",
+  "same_source_orientation_invariance": {
+    "dM_W_dell": "g_2*A/2",
+    "dM_t_dell": "A/sqrt(12)",
+    "readout": "1/sqrt(6)",
+    "under_ell_to_minus_ell": "both derivatives flip sign and the ratio is unchanged"
+  },
+  "source_orientation_selector_witness": {
+    "absolute_response_order": "P_0 has unique largest absolute response",
+    "base_responses": {
+      "P_0": "sqrt(6)/3",
+      "P_nt": "-sqrt(6)/6"
+    },
+    "minimum_response_status": "selects P_nt only by importing a convention",
+    "orientation_cases": {
+      "minus_Bx": {
+        "P_0_row_magnitude": "A/sqrt(3)",
+        "P_nt_row_magnitude": "A/sqrt(12)",
+        "largest_absolute": "P_0",
+        "largest_signed": "P_nt",
+        "minimum_signed": "P_0",
+        "responses": {
+          "P_0": "-sqrt(6)/3",
+          "P_nt": "sqrt(6)/6"
+        }
+      },
+      "plus_Bx": {
+        "P_0_row_magnitude": "A/sqrt(3)",
+        "P_nt_row_magnitude": "A/sqrt(12)",
+        "largest_absolute": "P_0",
+        "largest_signed": "P_0",
+        "minimum_signed": "P_nt",
+        "responses": {
+          "P_0": "sqrt(6)/3",
+          "P_nt": "-sqrt(6)/6"
+        }
+      }
+    },
+    "source_direction_known_only_up_to_sign": true
+  },
+  "trace_class": "negative_route_pruning"
+}

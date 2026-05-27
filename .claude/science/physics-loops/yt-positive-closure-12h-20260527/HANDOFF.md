@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced twenty-three science blocks, not positive retained-grade
+The campaign has produced twenty-four science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary and later
@@ -48,6 +48,8 @@ closure:
     nontrivial line.
 23. a no-go showing current real/reflection-even C3 block algebra does not
     derive that zero-singlet physical top-block membership law.
+24. a no-go showing source-orientation/sign choice of `B_x` does not derive
+    zero-singlet physical top-block membership.
 
 New nontrivial-block matrix-element support result:
 
@@ -151,6 +153,47 @@ PR #1980:
 PR #1980 body was updated with the zero-singlet top-block membership no-go
 result, artifacts, verification, and next exact action.  No
 `POSITIVE_CLOSURE` marker was written.
+
+New source-orientation sign-selector no-go:
+
+```text
+real finite-record C3 source direction up to sign
+  + choose the sign/order that makes P_nt largest
+  -/-> accepted zero-singlet physical top-block membership
+```
+
+The finite witness is:
+
+```text
++B_x:  largest signed response -> P_0,  largest absolute response -> P_0
+-B_x:  largest signed response -> P_nt, largest absolute response -> P_0
+```
+
+The same-source top/W response ratio is invariant under `ell -> -ell`, so
+choosing the orientation that makes `P_nt` largest imports the missing
+physical source-orientation/sign law. Minimum-response selection still imports
+an extra convention. Positive closure still requires an accepted physical
+source-orientation/sign/readout law excluding `P_0` plus same-surface
+generator factorization, or accepted strict same-source top/W pole rows with
+contact, FV/IR, and model-class controls.
+
+Cycle 11 source-orientation sign-selector no-go verification:
+
+- `python3 scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py` -> `SUMMARY: PASS=89 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=398 FAIL=0`
+- Adjacent runners passed: zero-singlet membership no-go `PASS=104`,
+  nontrivial-block support `PASS=85`, real-record C3 source `PASS=76`,
+  source-response extremal no-go `PASS=105`, same-surface matrix
+  factorization `PASS=77`, first-principles transfer response `PASS=56`,
+  strict sparse availability audit `PASS=74`, and C3 circulant dynamics
+  boundary `PASS=95`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+Cycle 11 source-orientation sign-selector no-go science commit is pending at
+this checkpoint. PR #1980 body update is pending. No `POSITIVE_CLOSURE`
+marker was written.
 
 New strict W/Z plus C3 top-row splice result:
 

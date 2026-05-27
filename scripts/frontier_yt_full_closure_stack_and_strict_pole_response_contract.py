@@ -105,6 +105,10 @@ This runner verifies the current burn-down state:
 * The zero-singlet top-block membership shortcut is now pruned: real
   reflection-even C3 block algebra permits both P_0 and P_nt block selections
   depending on an undetermined sign/order or minimum-response premise.
+* The source-orientation sign-selector shortcut is now pruned: choosing the
+  sign of B_x that makes P_nt largest imports an unaccepted source-coordinate
+  orientation law; sign-blind largest response selects P_0, and minimum
+  response remains a convention.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -141,6 +145,7 @@ FIRST_PRINCIPLES_TRANSFER_RESPONSE = DOCS / "YT_FIRST_PRINCIPLES_TRANSFER_RESPON
 SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION = DOCS / "YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md"
 C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT = DOCS / "YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO = DOCS / "YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md"
+C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO = DOCS / "YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
@@ -194,6 +199,7 @@ FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT = ROOT / "outputs" / "yt_first_principles
 SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT = ROOT / "outputs" / "yt_same_surface_top_matrix_element_factorization_boundary_2026-05-27.json"
 C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_nontrivial_block_matrix_element_support_2026-05-27.json"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT = ROOT / "outputs" / "yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json"
+C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
@@ -292,6 +298,7 @@ def part1_anchors() -> dict[str, str]:
         SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION,
         C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO,
+        C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO,
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
@@ -344,6 +351,7 @@ def part1_anchors() -> dict[str, str]:
         SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT,
         C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT,
+        C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
@@ -398,6 +406,7 @@ def part1_anchors() -> dict[str, str]:
         "same-surface top matrix-element factorization",
         "nontrivial C3 block matrix-element support",
         "zero-singlet top-block membership no-go",
+        "source-orientation sign-selector no-go",
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
@@ -471,6 +480,7 @@ def part2_support_outputs() -> dict[str, Any]:
     same_surface_top_matrix_element_factorization = load_json(SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT)
     c3_nontrivial_block_matrix_element_support = load_json(C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT)
     c3_zero_singlet_top_block_membership_nogo = load_json(C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT)
+    c3_source_orientation_sign_selector_nogo = load_json(C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
@@ -619,6 +629,34 @@ def part2_support_outputs() -> dict[str, Any]:
         "C3 zero-singlet no-go keeps strict rows absent",
         c3_zero_singlet_top_block_membership_nogo.get("certificate_boundary", {})
         .get("strict_top_w_response_certificate_present")
+        is False,
+    )
+    check(
+        "C3 source-orientation sign-selector no-go passed",
+        c3_source_orientation_sign_selector_nogo.get("fail_count") == 0,
+        c3_source_orientation_sign_selector_nogo.get("fail_count"),
+    )
+    check(
+        "C3 source-orientation sign-selector route is pruned",
+        c3_source_orientation_sign_selector_nogo.get("trace_class") == "negative_route_pruning",
+        c3_source_orientation_sign_selector_nogo.get("trace_class"),
+    )
+    check(
+        "C3 source-orientation sign-selector no-go shows largest signed is not orientation invariant",
+        c3_source_orientation_sign_selector_nogo.get("certificate_boundary", {})
+        .get("largest_signed_selector_orientation_invariant")
+        is False,
+    )
+    check(
+        "C3 source-orientation sign-selector no-go keeps absolute max on P_0",
+        c3_source_orientation_sign_selector_nogo.get("certificate_boundary", {})
+        .get("absolute_response_max_selects_P0")
+        is True,
+    )
+    check(
+        "C3 source-orientation sign-selector no-go keeps P_nt sign law open",
+        c3_source_orientation_sign_selector_nogo.get("certificate_boundary", {})
+        .get("accepted_source_orientation_law_for_Pnt_derived")
         is False,
     )
     check("direct sparse response certificate harness passed", direct_sparse_cert.get("fail_count") == 0, direct_sparse_cert.get("fail_count"))
@@ -1122,6 +1160,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "same_surface_top_matrix_element_factorization": same_surface_top_matrix_element_factorization,
         "c3_nontrivial_block_matrix_element_support": c3_nontrivial_block_matrix_element_support,
         "c3_zero_singlet_top_block_membership_nogo": c3_zero_singlet_top_block_membership_nogo,
+        "c3_source_orientation_sign_selector_nogo": c3_source_orientation_sign_selector_nogo,
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
@@ -1473,6 +1512,12 @@ def main() -> int:
             "undetermined sign/order or minimum-response convention, so "
             "excluding P_0 remains a new physical law rather than an algebraic "
             "consequence. "
+            "The source-orientation sign-selector shortcut is also pruned: "
+            "choosing the sign of B_x that makes P_nt largest is an "
+            "unaccepted orientation of the same source coordinate; the "
+            "same-source top/W ratio is invariant under ell -> -ell, "
+            "largest absolute response selects P_0, and minimum-response "
+            "selection is still an imported convention. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1503,6 +1548,7 @@ def main() -> int:
             "same_surface_top_matrix_element_factorization_fail_count": support_outputs["same_surface_top_matrix_element_factorization"].get("fail_count"),
             "c3_nontrivial_block_matrix_element_support_fail_count": support_outputs["c3_nontrivial_block_matrix_element_support"].get("fail_count"),
             "c3_zero_singlet_top_block_membership_nogo_fail_count": support_outputs["c3_zero_singlet_top_block_membership_nogo"].get("fail_count"),
+            "c3_source_orientation_sign_selector_nogo_fail_count": support_outputs["c3_source_orientation_sign_selector_nogo"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),
@@ -1551,6 +1597,9 @@ def main() -> int:
             "docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py",
             "outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json",
+            "docs/YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py",
+            "outputs/yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json",
             "docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
             "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json",

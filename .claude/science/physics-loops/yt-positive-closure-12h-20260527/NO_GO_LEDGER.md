@@ -158,3 +158,11 @@ controls remain open.
   convention. A positive closure route now needs a new accepted
   same-surface sign/order/readout law excluding `P_0`, or strict top/W
   pole-row data with controls.
+- New in the twenty-fourth block: choosing the source orientation/sign of
+  `B_x` that makes `P_nt` largest does not derive zero-singlet physical
+  top-block membership. The same-source top/W ratio is invariant under
+  `ell -> -ell`, while largest signed response swaps between `P_0` and
+  `P_nt` under that orientation reversal. Largest absolute response selects
+  `P_0`; minimum-response selection remains an extra convention. A positive
+  closure route now needs an accepted physical source-orientation/sign/readout
+  law excluding `P_0`, or strict top/W pole-row data with controls.

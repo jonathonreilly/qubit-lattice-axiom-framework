@@ -55,6 +55,10 @@ closed exactly:
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
+  source-orientation sign-selector no-go: choosing the sign of B_x that makes
+  P_nt largest imports an unaccepted source-coordinate orientation law; the
+  same-source ratio is invariant under ell -> -ell, largest absolute response
+  selects P_0, and minimum response remains a convention
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -160,6 +164,8 @@ still open:
   isolation is not required for the coefficient row once P_nt support is
   supplied, but the actual surface still must exclude P_0 through a new
   accepted sign/order/readout law or strict pole rows
+  accepted physical source-orientation/sign/readout law if the C3 route tries
+  to select P_nt by the sign of B_x
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -469,6 +475,22 @@ law that excludes `P_0`.  Minimum-response selection also imports an
 underrived convention.  The zero-singlet membership route therefore remains a
 new dynamics/readout theorem or strict pole-row requirement, not an algebraic
 consequence of the current real C3 surface.
+
+[`YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md`](YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md)
+then prunes the immediate sign-choice shortcut.  The real finite-record C3
+source theorem selects `B_x` only up to source-coordinate orientation, and the
+same-source top/W ratio is invariant under
+
+```text
+ell -> -ell.
+```
+
+Largest signed response selects `P_0` for `+B_x` and `P_nt` for `-B_x`;
+therefore choosing the sign that selects `P_nt` imports the missing
+source-orientation/sign law.  The sign-blind largest absolute response selects
+`P_0`, while minimum-response selection still imports an undderived
+convention.  The C3 route still needs an accepted physical
+source-orientation/sign/readout law, base dynamics, or strict pole rows.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a
@@ -1331,6 +1353,12 @@ proposal_allowed_reason: |
   and give A/sqrt(3), while signed and absolute minima give A/sqrt(12) only
   after adding a minimum-response top-line selector and still do not isolate a
   single nontrivial complex line.
+  The nontrivial-block support theorem narrows the coefficient row to zero
+  singlet weight, but the zero-singlet membership no-go and source-orientation
+  sign-selector no-go now prune the immediate real-block shortcuts: choosing
+  the source sign that makes P_nt largest imports an unaccepted source
+  orientation, largest absolute response selects P_0, and minimum-response
+  selection remains an extra convention.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface
@@ -1348,9 +1376,9 @@ proposal_allowed_reason: |
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  same-surface phase-angle/orbit-member dynamics theorem deriving a
-  nontrivial physical top line, with accepted backend, W/top projectors, and
-  source-generator matrix elements
+  same-surface source-orientation/sign/readout dynamics theorem deriving
+  zero-singlet physical top-block support, with accepted backend, W/top
+  projectors, and source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted pole rows or microscopic dynamics
 backup_route: audit accepts primitive top-source premise as physical source law

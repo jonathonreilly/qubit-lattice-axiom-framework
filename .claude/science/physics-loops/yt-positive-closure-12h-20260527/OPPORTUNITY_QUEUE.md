@@ -2,7 +2,7 @@
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Status |
 |---:|---|---:|---:|---|---|
-| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout law | medium | high | partial | factorization support landed; block support landed; current real/reflection-even block-algebra shortcut pruned |
+| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout law | medium | high | partial | factorization support landed; block support landed; current real/reflection-even block-algebra and source-orientation sign-choice shortcuts pruned |
 | 2 | Non-mass-ordering C3 top-block law excluding `P_0` without target selection | low | high | present | pruned on current real/reflection-even C3 surface, including the weaker zero-singlet block-membership shortcut |
 | 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; base dynamics/order still open |
 | 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch, including repository discovery scan |
@@ -178,3 +178,13 @@ selection is also an extra convention. The next exact action remains rank 1
 or rank 4, but rank 1 is now specifically a genuinely new accepted
 same-surface sign/order/readout theorem excluding `P_0` plus generator
 factorization, not another algebraic restatement of the real C3 block.
+
+Queue refresh after the twenty-fourth block: positive closure remains open.
+The source-orientation sign-choice shortcut is now pruned as well: selecting
+the sign of `B_x` that makes `P_nt` largest imports an unaccepted
+source-coordinate orientation law, while largest absolute response selects
+`P_0` and minimum-response selection remains an extra convention. The next
+exact action remains rank 1 or rank 4, but rank 1 now requires a genuinely
+accepted physical source-orientation/sign/readout theorem excluding `P_0`
+plus same-surface generator factorization; otherwise pivot to accepted strict
+same-source top/W pole-row data with contact, FV/IR, and model-class controls.

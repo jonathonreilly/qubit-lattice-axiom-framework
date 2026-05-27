@@ -176,7 +176,7 @@ commands_run:
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: pending update for orbit-member readout covariance no-go block
-latest_science_commit: pending
+pr_status: PR #1980 body updated with orbit-member readout covariance no-go block and verification
+latest_science_commit: 43f573469664bc58d683c6f24ce9b86a505ad189
 next_exact_action: "Produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls; if staying on C3, derive an accepted same-surface physical orientation/basepoint/orbit-member readout law that excludes P_0 and supplies W/top matrix elements."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

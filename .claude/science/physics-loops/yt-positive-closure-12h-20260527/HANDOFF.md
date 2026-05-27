@@ -506,6 +506,15 @@ Cycle 6 orbit-member readout covariance verification so far:
 - `python3 scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py` -> `SUMMARY: PASS=73 FAIL=0`
 - `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=334 FAIL=0`
 
+Orbit-member readout covariance no-go science commit:
+
+```text
+43f573469664bc58d683c6f24ce9b86a505ad189
+```
+
+PR #1980 body was updated with the orbit-member readout covariance no-go
+result and verification.
+
 Cycle 4 science commit pushed and recorded in PR #1980:
 
 ```text

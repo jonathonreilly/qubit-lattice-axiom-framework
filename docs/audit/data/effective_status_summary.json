@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1070,
-    "decoration": 47,
+    "bounded_theorem": 1069,
+    "decoration": 48,
     "meta": 234,
     "no_go": 256,
     "open_gate": 111,
@@ -46,6 +46,7 @@
     "decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_pmns_hw1_source_transfer_boundary_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
+    "decoration_under_strong_cp_theta_zero_note": 1,
     "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 4,
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
@@ -55,7 +56,7 @@
     "retained_bounded": 517,
     "retained_no_go": 171,
     "retained_pending_chain": 8,
-    "unaudited": 1188
+    "unaudited": 1187
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

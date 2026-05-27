@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 235,
-    "high": 335,
+    "high": 334,
     "leaf": 327,
     "medium": 334
   },
@@ -6658,25 +6658,26 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_h025_fam2_seed0_control_note",
+      "claim_id": "wave_direct_dm_h025_fam2_two_point_synthesis_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "wave_direct_dm_h025_fam2_seed1_control_note"
+        "wave_direct_dm_h025_fam2_seed1_control_note",
+        "wave_direct_dm_h025_fam2_seed0_control_note"
       ],
-      "direct_in_degree": 8,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.322,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
+      "load_bearing_score": 7.748,
+      "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
-      "transitive_descendants": 19
+      "runner_path": null,
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16287,31 +16288,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py",
       "transitive_descendants": 22
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.748,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -37121,5 +37097,5 @@
     }
   ],
   "ready_count": 53,
-  "total_pending": 1231
+  "total_pending": 1230
 }

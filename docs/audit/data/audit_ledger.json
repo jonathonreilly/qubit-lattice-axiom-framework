@@ -285416,24 +285416,42 @@
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_seed0_control_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
+      "audit_date": "2026-05-27T00:58:19.164495+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed1_control_note"
+        ],
+        "load_bearing_score": 8.322,
+        "runner_hash": "06127f24dfc9a2efd0e86c1e7a921e10e423e7bbb083d973ca7d10902dbeb22d",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-wave-fam2-seed0-2026-05-26",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The self-contained runner recomputes the seed0 ladder and matches the note: exact S=0 null, negative nonzero delta_hist signs, R_hist near -23%, and 6.67% |delta_hist/s| spread. The one-hop seed1 dependency is audited_clean with effective_status=retained, so the bounded Fam2 pair statement closes within the stated scope.",
       "claim_id": "wave_direct_dm_h025_fam2_seed0_control_note",
-      "claim_scope": null,
+      "claim_scope": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T00:58:19.164495+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -285441,19 +285459,19 @@
         "wave_direct_dm_h025_fam2_seed1_control_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 8.322,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "`Fam2`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -23%`; together with the existing `Fam2`, seed `1` control ladder, that closes the second-family fine-`H` pair without promoting a full portability law.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "294c340bcf1b159b10ff1f6c29085b5f93ca08eeb4617e5bd32c335707a4906d",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Boundary language was treated as scope narrowing, not as a no-go wall claim; re-check if the seed1 retained-grade dependency, runner source hash, or printed row values change.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -285608,7 +285626,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -285619,7 +285637,7 @@
       "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Control Note",
       "transitive_descendants": 19,
-      "verdict_rationale": null
+      "verdict_rationale": "The finite seed0 ladder is closed by a source-visible computation whose cached output matches the note, even though the runner prints computed rows instead of classifier PASS markers. The seed1 dependency is retained-grade in the restricted packet, so the combined second-family pair claim closes only at the bounded scope. The absence of PASS markers is a classifier-format artifact here, not a runner_artifact_issue blocking a clean verdict; clean status does not promote any full H=0.25 portability law."
     },
     "wave_direct_dm_h025_fam2_seed1_control_note": {
       "audit_date": "2026-05-23T19:39:42.325205+00:00",
@@ -285663,11 +285681,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 8.892,
+      "load_bearing_score": 11.892,
       "load_bearing_step": "The retained Fam2, seed 1, H = 0.25 point has an exact S = 0 null, common negative weak-field sign, low |delta_hist/s| spread, and stable normalized magnitude around -35%.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "bafb115dea1181af532de9669f501808175b022ecb996a43d1b79216dfbd02a5",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check the full untruncated helper source for prop_beam/cz/field_at details, since the packet excerpt shown here contains an inline truncation marker in the long helper block.",

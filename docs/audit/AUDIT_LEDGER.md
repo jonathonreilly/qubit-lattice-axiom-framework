@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 492 |
+| **retained_bounded** | 493 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 788 |
+| `audited_clean` | 789 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1460 |
+| `unaudited` | 1459 |
 
 | claim_type | count |
 |---|---:|
@@ -875,6 +875,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_amplification_near_horizon_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `wave_direct_dm_family_scout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam1_seed1_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed1_control_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_equation_self_field_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -13396,6 +13397,18 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The supplied runner cache matches the table and summary in the note, and the primary runner fixes the claimed family, seed, H, and strength ladder before calling the shared compute path. Within the restricted packet, the claim remains bounded to this family/seed/H control replay and does not require a portability law.
 - **rationale:** The runner output reports an exact S=0 null, negative delta_hist at all three nonzero strengths, R_hist values from -29.02% to -30.37%, and a 5.22% scaled-magnitude spread, matching the source note. The runner source is not a constant printer: it delegates to measure_dm after pinning the CLI arguments to Fam1, seed 1, H=0.25, and the included helper path constructs the lattice, histories, wave field, and beam response rather than importing the contested table from another note. The note's conclusion is appropriately bounded and explicitly avoids promoting a portability law.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_seed0_control_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-wave-fam2-seed0-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** `Fam2`, seed `0`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -23%`; together with the existing `Fam2`, seed `1` control ladder, that closes the second-family fine-`H` pair without promoting a full portability law.  _(class `C`)_
+- **chain closes:** True — The self-contained runner recomputes the seed0 ladder and matches the note: exact S=0 null, negative nonzero delta_hist signs, R_hist near -23%, and 6.67% |delta_hist/s| spread. The one-hop seed1 dependency is audited_clean with effective_status=retained, so the bounded Fam2 pair statement closes within the stated scope.
+- **rationale:** The finite seed0 ladder is closed by a source-visible computation whose cached output matches the note, even though the runner prints computed rows instead of classifier PASS markers. The seed1 dependency is retained-grade in the restricted packet, so the combined second-family pair claim closes only at the bounded scope. The absence of PASS markers is a classifier-format artifact here, not a runner_artifact_issue blocking a clean verdict; clean status does not promote any full H=0.25 portability law.
 
 ### `wave_direct_dm_h025_fam2_seed1_control_note`
 

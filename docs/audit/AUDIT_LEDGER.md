@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 504 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1216 |
+| unaudited | 1215 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 800 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1445 |
+| `unaudited` | 1444 |
 
 | claim_type | count |
 |---|---:|
@@ -936,6 +936,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -3533,6 +3534,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the retained freeze-out slice x_f = 25, the same-surface thermal Sommerfeld average has the exact normalized continuum form <S> = (2/sqrt(pi)) integral_0^infinity S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^-t dt, with <1/v> = 5/sqrt(pi) and <1/v^2> = 25/2.  _(class `A`)_
 - **chain closes:** True — The cited dependency is retained_bounded for exactly the normalization algebra, benchmark slice, and Sommerfeld argument convention consumed here. The source note and runner explicitly leave current-bank DM selector closure open, so the auditable bounded claim is only the continuum integral/moment reduction, which follows from the dependency by algebra.
 - **rationale:** Clean only under the bounded scope: the note does not establish DM full selector closure, but it does not actually claim that in the body or runner. The load-bearing content is an algebraic restatement/application of the retained-bounded normalization packet at x_f=25, and the runner's five PASS lines check the declared formula, prefactor, two moments, and localization consequence without importing external comparator physics.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded algebraic monotonicity of the normalized same-surface thermal ratio at x_f=25 assuming the displayed attractive/repulsive Sommerfeld functions and 64:1 channel weights; excludes derivation of the Sommerfeld law, freeze-out value, and same-surface channel-weight assignment.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-socrates-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the same-surface DM channel weights, this yields the pointwise derivative bound 64 f_att'(8y) + f_rep'(y) > 63/2 and therefore the exact same-surface thermal DM ratio is strictly increasing in alpha.  _(class `A`)_
+- **chain closes:** False — The h(y)>0 derivative argument closes locally as algebra, and the direct dependencies cover the thermal integral normalization and argument convention. The restricted packet does not directly establish that the physical same-surface DM ratio uses the stipulated f_att/f_rep forms or the 64:1 channel weights.
+- **rationale:** Issue: the algebraic monotonicity proof is valid for the displayed functions and 64:1 weights, but those inputs are not established by the one-hop retained dependencies. Why this blocks: the source concludes monotonicity of the exact same-surface thermal DM ratio, so the Sommerfeld function form and same-surface channel-weight assignment are load-bearing bridges. Repair target: add direct retained dependencies for the 64:1 same-surface channel-weight theorem and the attractive/repulsive Sommerfeld function-form authority, or narrow the note to an explicitly stipulated algebraic lemma. Claim boundary until fixed: clean monotonicity and at-most-one-root consequences hold only within admitted one-scalar families that assume those functions and weights.
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`

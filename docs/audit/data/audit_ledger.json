@@ -56323,22 +56323,46 @@
       "verdict_rationale": "Clean only under the bounded scope: the note does not establish DM full selector closure, but it does not actually claim that in the body or runner. The load-bearing content is an algebraic restatement/application of the retained-bounded normalization packet at x_f=25, and the runner's five PASS lines check the declared formula, prefactor, two moments, and localization consequence without importing external comparator physics."
     },
     "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T02:01:21.990743+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
+        },
+        "dep_claim_type": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "0e1040096d25d365bb71e6a9f8deb3e5fb757ceb64982a903253e72f8b7073f4",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-socrates-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The h(y)>0 derivative argument closes locally as algebra, and the direct dependencies cover the thermal integral normalization and argument convention. The restricted packet does not directly establish that the physical same-surface DM ratio uses the stipulated f_att/f_rep forms or the 64:1 channel weights.",
       "claim_id": "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Conditional bounded algebraic monotonicity of the normalized same-surface thermal ratio at x_f=25 assuming the displayed attractive/repulsive Sommerfeld functions and 64:1 channel weights; excludes derivation of the Sommerfeld law, freeze-out value, and same-surface channel-weight assignment.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T02:01:21.990743+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -56347,19 +56371,19 @@
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.144,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the same-surface DM channel weights, this yields the pointwise derivative bound 64 f_att'(8y) + f_rep'(y) > 63/2 and therefore the exact same-surface thermal DM ratio is strictly increasing in alpha.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3dea6151f7e3d5499fcf2ac5ae29ecbc16dff25f928457470f16282cc850e261",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge - Add the direct same-surface 64:1 channel-weight authority and Sommerfeld attractive/repulsive function-form authority to the audit packet, then re-audit; no current-bank no-go consequence was audited here.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -56467,18 +56491,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Monotonicity Theorem",
       "transitive_descendants": 49,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the algebraic monotonicity proof is valid for the displayed functions and 64:1 weights, but those inputs are not established by the one-hop retained dependencies. Why this blocks: the source concludes monotonicity of the exact same-surface thermal DM ratio, so the Sommerfeld function form and same-surface channel-weight assignment are load-bearing bridges. Repair target: add direct retained dependencies for the 64:1 same-surface channel-weight theorem and the attractive/repulsive Sommerfeld function-form authority, or narrow the note to an explicitly stipulated algebraic lemma. Claim boundary until fixed: clean monotonicity and at-most-one-root consequences hold only within admitted one-scalar families that assume those functions and weights."
     },
     "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16": {
       "audit_date": "2026-04-30T20:20:57.340384+00:00",

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/topological_instanton_bounded_certificate.py
+runner_sha256: ec13c7381ccda4c554e0d1c03f480f70807f02883b6016e08421d1fcb49b53fb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.16
+status: ok
+----- stdout -----
+==============================================================================
+BOUNDED TOPOLOGICAL INSTANTON CERTIFICATE
+==============================================================================
+
+PART A: 4D Hodge-star algebra on 2-forms
+  [PASS (A)] *^2 = 1 on Lambda^2(R^4): True
+  sample=0: ||F||^2=4.50960181 <F,*F>=-3.35739975 ratio=1.34318286 [PASS]
+  sample=1: ||F||^2=8.34272766 <F,*F>=-5.50095056 ratio=1.51659746 [PASS]
+  sample=2: ||F||^2=2.32778712 <F,*F>=+0.80884402 ratio=2.87791844 [PASS]
+  sample=3: ||F||^2=5.60417112 <F,*F>=-0.85564251 ratio=6.54966421 [PASS]
+  sample=4: ||F||^2=5.83173107 <F,*F>=+1.88644509 ratio=3.09138659 [PASS]
+  sample=5: ||F||^2=7.32999467 <F,*F>=+2.90313572 ratio=2.52485428 [PASS]
+  sample=6: ||F||^2=2.02362165 <F,*F>=-0.42197202 ratio=4.79562996 [PASS]
+  sample=7: ||F||^2=3.56467885 <F,*F>=-1.27262911 ratio=2.80103513 [PASS]
+  [PASS (A)] self-dual projection satisfies *F=F: True
+  [PASS (A)] anti-self-dual projection satisfies *F=-F: True
+  [PASS (A)] self-dual bound saturation ratio=1.000000000000
+  [PASS (A)] anti-self-dual bound saturation ratio=1.000000000000
+
+PART B: BPST radial normalization
+  rho=0.5: integral=78.956835208715 8*pi^2=78.956835208715 [PASS]
+  rho=1.0: integral=78.956835208715 8*pi^2=78.956835208715 [PASS]
+  rho=2.0: integral=78.956835208715 8*pi^2=78.956835208715 [PASS]
+  rho=3.5: integral=78.956835208715 8*pi^2=78.956835208715 [PASS]
+
+PART C: twisted T^4 fractional charge arithmetic
+  SU(2) flux=(1, 0, 0, 0, 0, 1): k=1 Q=0.500000000000 [PASS]
+  SU(3) flux=(1, 0, 0, 0, 0, 1): k=1 Q=0.333333333333 [PASS]
+  SU(3) flux=(1, 0, 0, 0, 0, 2): k=2 Q=0.666666666667 [PASS]
+  SU(5) flux=(1, 0, 1, 1, 0, 2): k=3 Q=0.600000000000 [PASS]
+
+SUMMARY
+  [PASS (A)] Hodge star and Bogomolny inequality
+  [PASS (A)] BPST radial 8pi^2 normalization
+  [PASS (A)] twisted T4 k/N charge arithmetic
+  PASS=3 FAIL=0
+
+----- stderr -----
+

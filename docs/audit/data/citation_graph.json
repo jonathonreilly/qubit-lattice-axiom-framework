@@ -79505,10 +79505,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "26e553dbcc9bcd6a478b19af57103c3021581affdf971674515448f99f4f051d",
+      "note_hash": "c4e562fb2cd148ce8983d329e53836414a69616d8e161d0ae538702098898521",
       "path": "docs/TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md",
-      "runner_path": null,
-      "title": "Topological-Instanton Infrastructure \u2014 Named Non-Derivation Imports"
+      "runner_path": "scripts/topological_instanton_bounded_certificate.py",
+      "title": "Topological-Instanton Infrastructure"
     },
     "translation_abelian_composition_theorem_note_2026-05-02": {
       "claim_id": "translation_abelian_composition_theorem_note_2026-05-02",
@@ -85468,6 +85468,6 @@
     "leaf_count": 796,
     "node_count": 2551,
     "root_count": 855,
-    "runners_with_path": 2125
+    "runners_with_path": 2126
   }
 }

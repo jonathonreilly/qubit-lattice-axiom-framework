@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_omega_lambda_arithmetic_cascade.py
+runner_sha256: 841e559463446b18c2aa5002e0f08f896840c5a2d30f38fc89ac262b2018e417
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Omega_Lambda bounded arithmetic cascade
+  [PASS] note boundary contains: bounded conditional arithmetic cascade
+  [PASS] note boundary contains: Omega_b = 0.0492
+  [PASS] note boundary contains: R = Omega_DM / Omega_b = 5.38
+  [PASS] note boundary contains: Omega_total = 1
+  [PASS] note boundary contains: No derivation of `Omega_b`
+  [PASS] note boundary contains: No derivation of flatness
+  [PASS] note boundary contains: No audit verdict and no direct ledger retag.
+  [PASS] R_base exact identity equals 31/9  (31/9)
+  [PASS] Omega_b declared positive  (Omega_b=0.049200)
+  [PASS] R declared positive  (R=5.380000)
+  [PASS] Omega_total declared flat
+  [PASS] Omega_DM = R * Omega_b  (Omega_DM=0.264696)
+  [PASS] Omega_m = Omega_b + Omega_DM  (Omega_m=0.313896)
+  [PASS] Omega_Lambda = Omega_total - Omega_m  (Omega_Lambda=0.686104)
+  [PASS] rounded Omega_Lambda equals 0.686
+  [PASS] Sommerfeld multiplier is recorded, not derived  (S=1.561935483871)
+
+Omega_Lambda arithmetic cascade: PASS
+PASS=16 FAIL=0
+
+----- stderr -----
+

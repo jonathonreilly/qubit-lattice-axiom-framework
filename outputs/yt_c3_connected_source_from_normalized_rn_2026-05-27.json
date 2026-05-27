@@ -1,0 +1,41 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "anchors": {
+    "c3_candidate_status": "exact-support",
+    "primitive_record_status": "exact-support",
+    "source_action_status": "exact support / narrowed blocker: product RN source semantics and source-coupled site-diagonal local action are equivalent, but this gate is not accepted as current neutral EW/Higgs authority and positive Y_T closure is not achieved"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "c3_connected_projection_witness": {
+    "basis": [
+      "B_a",
+      "B_x",
+      "B_y"
+    ],
+    "removed_direction": "B_a",
+    "surviving_connected_tangent": "x B_x + y B_y"
+  },
+  "certificate_boundary": {
+    "connected_source_premise_derived": true,
+    "identity_source_direction_removed": true,
+    "no_forbidden_imports": true,
+    "nontrivial_top_line_assignment_derived": false,
+    "normalized_rn_source_law_available": true,
+    "reflection_even_neutral_source_derived": false,
+    "strict_top_w_response_certificate_present": false
+  },
+  "claim_id": "yt_c3_connected_source_from_normalized_rn_theorem_note_2026-05-27",
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "reflection-even neutral source authority plus nontrivial top-line assignment",
+  "generated_by": "scripts/frontier_yt_c3_connected_source_from_normalized_rn.py",
+  "pass_count": 73,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Normalized RN/Fisher source semantics remove the identity direction and derive the connected-source premise. Reflection-even source authority, nontrivial top-line assignment, and strict top/W response evidence remain open.",
+  "reachability_to_target": "partially_closes",
+  "rn_identity_witness": {
+    "centered_score_invariant": true,
+    "identity_shift_cancels": true
+  },
+  "trace_class": "upstream_support"
+}

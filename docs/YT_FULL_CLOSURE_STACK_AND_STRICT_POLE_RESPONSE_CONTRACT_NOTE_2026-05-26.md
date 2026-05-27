@@ -59,6 +59,8 @@ closed exactly:
   C3 character lines have response magnitude 1/sqrt(6)
   connected/reflection-even B_x does not by itself select the top line:
   top-line nontriviality remains load-bearing
+  normalized RN/Fisher source semantics remove the identity direction, so the
+  connected-source premise is derived
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -70,8 +72,7 @@ still open:
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
   accepted physical target/source direction inside the C3 tangent space
-  accepted physical connected-source premise, reflection-even source premise,
-  and nontrivial top C3 line assignment
+  accepted reflection-even source premise and nontrivial top C3 line assignment
   accepted exclusion of the C3 singlet line as the physical top row
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
@@ -368,6 +369,21 @@ physical top row is supplied as a nontrivial C3 character line.  The retained
 three-generation algebra supplies the character projectors as finite algebra,
 but it explicitly does not identify them with a physical top pole row.
 
+[`YT_C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN_THEOREM_NOTE_2026-05-27.md`](YT_C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN_THEOREM_NOTE_2026-05-27.md)
+then burns down the connected-source premise itself.  In a normalized
+Radon-Nikodym source family,
+
+```text
+exp(h (O + c I)) / Z_{O+c}(h)
+  = exp(h O) / Z_O(h),
+```
+
+so identity source terms are pure normalizers.  Equivalently, the source score
+is the centered observable `O - E_0[O] I`.  Applying this to the C3 tangent
+basis removes `B_a = I/sqrt(3)` and leaves the connected tangent
+`x B_x + y B_y`.  This closes connectedness, while reflection evenness and
+nontrivial top-line assignment remain open.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -527,6 +543,14 @@ top-line assignment from same-surface dynamics, or produce strict top/W pole
 rows directly.
 ```
 
+After the normalized-RN source theorem, this should be read as:
+
+```text
+connected-source authority is derived;
+derive reflection-even neutral-source authority and nontrivial top-line
+assignment, or produce strict top/W pole rows directly.
+```
+
 The top-line assignment boundary shows that this is not just wording:
 
 ```text
@@ -563,14 +587,15 @@ proposal_allowed_reason: |
   The closure stack and conditional pole/response algebra are explicit, and
   the primitive no-hidden-record source law is derived. The top-source
   identification route does not close from current structural inputs, and
-  the connected/reflection-even C3 source candidate still depends on physical
-  source and top-line premises. The B_x candidate gives 1/sqrt(6) only after
-  the nontrivial top-line premise is supplied. Strict same-source response
-  evidence is not present, so retained or proposed-retained Y_T wording is not
-  allowed.
+  the connected/reflection-even C3 source candidate still depends on
+  reflection-even source and top-line premises. The connected-source premise
+  is now derived by normalized RN/Fisher source semantics. The B_x candidate
+  gives 1/sqrt(6) only after the nontrivial top-line premise is supplied.
+  Strict same-source response evidence is not present, so retained or
+  proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: physical connected/reflection-even source authority plus nontrivial top-line assignment, or strict same-source top/W response evidence
+first_open_gate: reflection-even neutral-source authority plus nontrivial top-line assignment, or strict same-source top/W response evidence
 backup_route: audit accepts primitive top-source premise as physical source law
 ```
 

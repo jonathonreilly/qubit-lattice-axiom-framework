@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py
+runner_sha256: 55eb996eeeb52a1d2b693177c5cc4cd7fd671e9c13b898e82abc7fbc07b4b108
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Pattern A narrow theorem: SU(3) Wilson plaquette strong-coupling Pade[3/3]
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part 1 (T1): leading-order strong-coupling identity
+----------------------------------------------------------------------------------------
+  [PASS] leading <P>/beta coefficient equals 1/(2 N^2) at N=3  (1/(2*3^2) = 1/18, expected 1/18)
+  [PASS] u(beta) = beta/18 at leading order, beta=6 -> u=1/3  (u(6) = 1/3)
+
+----------------------------------------------------------------------------------------
+Part 2 (T2): truncated bounded series
+----------------------------------------------------------------------------------------
+  <P>(u) (truncated at u^8) = 100*u**8 - 24*u**7 + 24*u**6 + 4*u**4 + u
+  [PASS] truncated series <P>(u=1/3) is a definite rational number  (<P>(u=1/3) = 2755/6561 = 0.419906)
+  [PASS] truncated SC O(u^8) series leaves a sizeable residual to MC 0.5934 (NOT a closure)  (residual = 0.1735 (29.2%))
+
+----------------------------------------------------------------------------------------
+Part 3 (T3): Pade[N/M] analytic-continuation table
+----------------------------------------------------------------------------------------
+  a_n series: [(0, 0), (1, 1), (2, 0), (3, 0), (4, 4), (5, 0), (6, 24), (7, -24), (8, 100)]
+  Pade[3/3] in u:  P(u) = -6*u**3 + u
+                   Q(u) = -4*u**3 - 6*u**2 + 1
+                   value at u=1/3 = 3/5 = 0.600000
+  [PASS] Pade[3/3] at u=1/3 equals exactly 3/5  (Pade[3/3](1/3) = 3/5)
+  [PASS] Pade[3/3] residual to MC value 0.5934 is small (NOT zero -- no closure)  (gap = -0.0066 (-1.11%))
+  [PASS] Pade[4/4] at u=1/3 is rational  (Pade[4/4](1/3) = 157/395 = 0.397468)
+  [PASS] Pade[4/4] does NOT improve over Pade[3/3] (alternation destabilizes)  (|gap_44|=0.1959 > |gap_33|=0.0066)
+  [PASS] Pade[1/1] at u=1/3 = 1/3 (just the leading-order linear value)  (Pade[1/1](1/3) = 1/3)
+
+----------------------------------------------------------------------------------------
+Part 4 (T4): sensitivity audit on Pade[3/3]
+----------------------------------------------------------------------------------------
+  [PASS] Pade[3/3](u=1/3) is invariant under arbitrary changes of (c_7, c_8)  (checked 16 (c_7,c_8) perturbation pairs)
+  [PASS] Pade[3/3](u=1/3) with c_6=24 equals 3/5  (got 3/5 = 0.600000)
+  [PASS] Pade[3/3](u=1/3) with c_6=12 equals 3/7  (got 3/7 = 0.428571)
+  [PASS] Pade[3/3](u=1/3) with c_6=0 equals 9/23  (got 9/23 = 0.391304)
+
+----------------------------------------------------------------------------------------
+Part 5 (T3 cont.): conformal-mapping cross-check
+----------------------------------------------------------------------------------------
+  [PASS] conformal z(u=1/3, alpha=4) = 1/(3+alpha) = 1/7  (z = 1/7)
+  [PASS] Pade[3/3] in conformally-mapped z (alpha=4) at z=1/7 equals 3/5  (Pade[3/3]_z(z=1/7) = 3/5)
+  [PASS] Pade[3/3] in conformally-mapped z (alpha=2) at z=1/5 equals 3/5  (Pade[3/3]_z(z=1/5, alpha=2) = 3/5)
+
+----------------------------------------------------------------------------------------
+Part 6 (T5): Borel-Pade obstruction witness
+----------------------------------------------------------------------------------------
+  Borel-transformed coefficients b_n: [(1, 1), (4, 1/6), (6, 1/30), (7, -1/210), (8, 5/2016)]
+  Borel-Pade[3/3] denominator Q(t) = -(5*t**3 + 6*t**2 - 30)/30
+  positive Borel-plane roots: ['1.492725']
+  corresponding Laplace-contour poles at u=1/3: ['4.478174']
+  [PASS] Borel-Pade[3/3] has a positive real pole in the Borel plane  (roots=[1.4927245090172323])
+  [PASS] ordinary Borel-Laplace integral at u=1/3 is obstructed by a positive-contour pole  (t_poles=[4.478173527051697])
+
+----------------------------------------------------------------------------------------
+Part 7: comparison summary (NOT a closure)
+----------------------------------------------------------------------------------------
+  Truncated SC series O(u^8) at u=1/3   : 0.419906   gap = +0.1735 (+29.24%)
+  Pade[3/3] in u                        : 0.600000   gap = -0.0066 (-1.11%)
+  Pade[3/3] in conformal z (alpha=4)    : 0.600000   gap = -0.0066
+  Pade[3/3] in conformal z (alpha=2)    : 0.600000   gap = -0.0066
+  Pade[4/4] in u                        : 0.397468   gap = +0.1959
+  Borel-Pade[3/3]+Borel-Laplace         : obstructed by positive-contour pole
+  MC reference value                    : 0.593400
+  [PASS] Pade[3/3] in u and in z (alpha=4) agree exactly  (u-form = 3/5, z-form = 3/5)
+  [PASS] Pade[3/3] in u and in z (alpha=2) agree exactly  (u-form = 3/5, z-form_alpha2 = 3/5)
+
+----------------------------------------------------------------------------------------
+TOTAL: PASS=20 FAIL=0
+----------------------------------------------------------------------------------------
+
+----- stderr -----
+

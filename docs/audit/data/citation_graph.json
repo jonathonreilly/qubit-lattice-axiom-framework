@@ -68282,6 +68282,18 @@
       "runner_path": "scripts/frontier_plaquette_alpha_s_chain_audit_map_synthesis.py",
       "title": "Plaquette / alpha_s Chain Audit Map Synthesis Meta Note"
     },
+    "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27": {
+      "claim_id": "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "3e2ae2fec18841b041534f4603c6e5d4529f3d733a56f49b874ede84f138a54b",
+      "path": "docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "runner_path": "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py",
+      "title": "SU(3) Wilson Plaquette Strong-Coupling Pad\u00e9[3/3] Narrow Theorem (Bounded)"
+    },
     "plaquette_bootstrap_framework_integration_note_2026-05-03": {
       "claim_id": "plaquette_bootstrap_framework_integration_note_2026-05-03",
       "claim_type_author_hint": null,
@@ -85106,6 +85118,7 @@
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
+    "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_self_consistency_note",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
@@ -85390,7 +85403,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 607,
+      "bounded_theorem": 608,
       "decoration": 1,
       "meta": 191,
       "no_go": 83,
@@ -85399,7 +85412,7 @@
       "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1026,
+      "bounded_theorem": 1027,
       "decoration": 1,
       "meta": 191,
       "no_go": 186,
@@ -85408,9 +85421,9 @@
       "positive_theorem": 589
     },
     "edge_count": 9739,
-    "leaf_count": 792,
-    "node_count": 2547,
-    "root_count": 851,
-    "runners_with_path": 2122
+    "leaf_count": 793,
+    "node_count": 2548,
+    "root_count": 852,
+    "runners_with_path": 2123
   }
 }

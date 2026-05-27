@@ -1,0 +1,27 @@
+loop_slug: beta-gbare-rescaling-conditional-repair-20260527
+target_claim_id: beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08
+target_status: bounded-support
+actual_current_surface_status: unaudited
+branch: physics-loop/beta-gbare-rescaling-conditional-repair-20260527
+base: origin/main
+created_utc: 2026-05-27
+cycle_count: 1
+active_route: explicit Wilson-matching conditional rescope
+hard_residual: no retained Wilson-matching authority for beta = 2 N_c / g_bare^2
+files_touched:
+  - docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md
+  - scripts/frontier_beta_gbare_squared_rescaling_invariance.py
+  - logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/runner_classification.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+open_imports:
+  - Wilson action-surface matching remains an explicit premise, not proved here
+  - physical Wilson plaquette action selection remains outside this row
+review_status: local runner/cache/pipeline/vocab pass; independent audit required
+pr_status: pending
+next_exact_action: open review PR
+stop_condition: one coherent conditional rescope packaged

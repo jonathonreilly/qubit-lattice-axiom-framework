@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 235,
-    "high": 337,
+    "high": 336,
     "leaf": 327,
     "medium": 334
   },
@@ -6653,28 +6653,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "action_normalization_note",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.522,
-      "note_path": "docs/ACTION_NORMALIZATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_action_normalization.py",
-      "transitive_descendants": 64
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -27894,6 +27872,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "accessible_prediction_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "action_normalization_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACCESSIBLE_PREDICTION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_accessible_prediction.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -31223,30 +31225,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "accessible_prediction_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "action_normalization_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACCESSIBLE_PREDICTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_accessible_prediction.py",
       "transitive_descendants": 0
     },
     {
@@ -37167,5 +37145,5 @@
     }
   ],
   "ready_count": 54,
-  "total_pending": 1233
+  "total_pending": 1232
 }

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 170 |
+| **retained_no_go** | 171 |
 | **retained_bounded** | 491 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 786 |
+| `audited_clean` | 787 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1462 |
+| `unaudited` | 1461 |
 
 | claim_type | count |
 |---|---:|
@@ -126,6 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_power_3d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -1119,6 +1120,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The supplied runner source actually generates the DAGs, propagates both actions, and computes the reported table rather than printing fixed constants. The source note's safe interpretation is limited to the tested scripted slice and matches the completed stdout.
 - **rationale:** Clean for the bounded computational claim only: the note freezes the parameters, the runner computes the finite replay, and the stdout supports a mixed, non-monotonic shift in the scripted readout. The result does not rely on unlisted dependencies or external comparators, and the note explicitly does not claim a universal action unification or continuum theorem. Residual risk is scope creep if later citations treat this as a physical bridge beyond the frozen generated-DAG experiment.
 - **auditor confidence:** medium
+
+### `action_normalization_note`
+
+- **Note:** [`ACTION_NORMALIZATION_NOTE.md`](../../docs/ACTION_NORMALIZATION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the narrowed current-packet no-go: self-consistency scans, rescaling degeneracy, conditional PPN gamma readout, massive-probe sanity checks, and source-normalization conventions do not uniquely select c without a separate f/Phi and Poisson-normalization bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-action-normalization-no-go-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The current propagator-Poisson packet does not select c convention-free; c is convention-locked unless a separate retained bridge fixes the scalar-potential and source-normalization conventions.  _(class `C`)_
+- **chain closes:** True — The source note stays inside the current finite runner packet and explicitly excludes derivation of f/Phi, weak-field readout, Poisson source normalization, convention-free preferred c, and null-ray/light-bending closure. N1-N8 do not block because the five tempting selection routes are named and bounded, the bridge walls are not inflated as independent theorem results, hidden assumptions are converted into exclusions, no mismatched witness residuals are used, rhetoric is narrowed to the current packet, partial convention-bridge closure remains allowed, the steelman is only a future retained bridge/null-ray channel, and the restricted packet contains no broader prior-wall echo to inherit.
+- **rationale:** The runner source actually performs finite propagator-Poisson scans rather than an external comparator check: convergence across tested c values, rescaling rows with c*G fixed, and the c,G convergence grid support the bounded statement that this packet does not select c. The PPN gamma and massive-probe sections are correctly demoted to conditional/sanity-check status and no longer claim convention-free light-bending selection. The clean verdict is only for the narrowed negative boundary, not for any universal claim that no future convention, retained f/Phi bridge, Poisson-normalization bridge, or null-ray runner could select a representative c.
 
 ### `action_power_3d_gravity_sign_closure_note`
 

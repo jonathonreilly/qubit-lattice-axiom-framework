@@ -286287,22 +286287,50 @@
       "verdict_rationale": "The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims."
     },
     "wave_direct_dm_h025_fam2_seed1_followup_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T02:47:27.532572+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+        ],
+        "load_bearing_score": 3.959,
+        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The target Fam2 seed-1 point and the two retained Fam2 control ladders are present, but the claim's coarse-H seed-1 comparison and Fam1-style cross-seed comparison require upstream comparison authorities that are not in the selected one-hop dependency packet. The registered cached runner output also runs the default Fam1 seed0 point, not the Fam2 seed1 target.",
       "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Bounded finite-run follow-up for the direct-dM matched-history lane: at Fam2, seed 1, S=0.004, H=0.25, the completed point log reports dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and the retained Fam2 control dependencies support the same-resolution seed-1 and seed-0 ladders. The broader claims that this aligns with coarse-H seed-1 late-gain behavior and reproduces the Fam1 cross-seed ordering are not closed by the current one-hop packet.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T02:47:27.532572+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -286312,23 +286340,26 @@
         "wave_direct_dm_h025_fam2_two_point_synthesis_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 3.959,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note's honest conclusion says that on Fam2 the H=0.25 seed-conditioned late-gain asymmetry survives and the cross-seed ordering flips the same way it did on Fam1, while the normalized amplitude band is not refinement-stable.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b92c5d873d173bbf740cbed76d17e666180b96e3d72a9c101f6c8067099d80e4",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct retained dependency edges for the Fam1/fine-H pair comparison and the coarse-H portability/late-gain comparison, then add a target-specific runner wrapper or cached certificate for the Fam2 seed1 H=0.25 invocation.",
+      "open_dependency_paths": [
+        "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
+        "docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.370080+00:00",
@@ -286382,18 +286413,24 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
+        "assert_count": 0,
+        "cached_runner_scope": "default Fam1 seed0 invocation, not the Fam2 seed1 target",
+        "runner_sha256": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+        "runner_status": "ok",
+        "target_log_path": "logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt",
+        "target_log_result": "Fam2 seed=1 H=0.25 strength=0.004: dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%",
         "total_pass": 0
       },
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed1 Follow-Up Note",
       "transitive_descendants": 10,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the load-bearing conclusion is not just the isolated Fam2 seed-1 point; it also compares that point to coarse-H seed-1 values and to the Fam1 cross-seed ordering. Why this blocks: the one-hop retained packet includes Fam2 seed-1 control, Fam2 seed-0 control, and Fam2 pair synthesis, but not the Fam1 pair or coarse-H portability authorities needed for those comparison statements; additionally the registered cached runner output is not parameterized to the target Fam2 seed-1 invocation. Repair target: add direct dependency edges to the retained Fam1/fine-H and coarse-H comparison authorities used by the claim, and wire a target-specific runner wrapper or cache entry for `--family Fam2 --seed 1 --strength 0.004 --h 0.25`. Claim boundary until fixed: the completed log plus retained Fam2 control notes support the bounded Fam2 seed-1 point and same-resolution Fam2 pair controls, but not the broader cross-family/coarse-to-fine follow-up claim."
     },
     "wave_direct_dm_h025_fam2_seed1_followup_note_2026-05-17": {
       "audit_date": null,

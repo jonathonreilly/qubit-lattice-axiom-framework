@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 507 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1205 |
+| unaudited | 1204 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,21 +54,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 803 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1069 |
+| `bounded_theorem` | 1070 |
 | `decoration` | 47 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
-| `positive_theorem` | 711 |
+| `positive_theorem` | 710 |
 
 | criticality | count |
 |---|---:|
@@ -987,6 +987,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_fam2_seed0_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `wave_direct_dm_h025_fam2_seed1_followup_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13770,6 +13771,22 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The primary runner calls measure_dm over the stated strengths and prints values matching the note; the helper path shown instantiates the lattice growth, wave solve, beam propagation, and history comparison rather than importing the contested conclusion. Within the restricted packet, the stated null, sign pattern, and weak-field scaling summary follow from the completed runner output.
 - **rationale:** The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_seed1_followup_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-run follow-up for the direct-dM matched-history lane: at Fam2, seed 1, S=0.004, H=0.25, the completed point log reports dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and the retained Fam2 control dependencies support the same-resolution seed-1 and seed-0 ladders. The broader claims that this aligns with coarse-H seed-1 late-gain behavior and reproduces the Fam1 cross-seed ordering are not closed by the current one-hop packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's honest conclusion says that on Fam2 the H=0.25 seed-conditioned late-gain asymmetry survives and the cross-seed ordering flips the same way it did on Fam1, while the normalized amplitude band is not refinement-stable.  _(class `B`)_
+- **chain closes:** False — The target Fam2 seed-1 point and the two retained Fam2 control ladders are present, but the claim's coarse-H seed-1 comparison and Fam1-style cross-seed comparison require upstream comparison authorities that are not in the selected one-hop dependency packet. The registered cached runner output also runs the default Fam1 seed0 point, not the Fam2 seed1 target.
+- **rationale:** Issue: the load-bearing conclusion is not just the isolated Fam2 seed-1 point; it also compares that point to coarse-H seed-1 values and to the Fam1 cross-seed ordering. Why this blocks: the one-hop retained packet includes Fam2 seed-1 control, Fam2 seed-0 control, and Fam2 pair synthesis, but not the Fam1 pair or coarse-H portability authorities needed for those comparison statements; additionally the registered cached runner output is not parameterized to the target Fam2 seed-1 invocation. Repair target: add direct dependency edges to the retained Fam1/fine-H and coarse-H comparison authorities used by the claim, and wire a target-specific runner wrapper or cache entry for `--family Fam2 --seed 1 --strength 0.004 --h 0.25`. Claim boundary until fixed: the completed log plus retained Fam2 control notes support the bounded Fam2 seed-1 point and same-resolution Fam2 pair controls, but not the broader cross-family/coarse-to-fine follow-up claim.
+- **open / conditional deps cited:**
+  - `WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`
+  - `WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md`
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam2_two_point_synthesis_note`
 

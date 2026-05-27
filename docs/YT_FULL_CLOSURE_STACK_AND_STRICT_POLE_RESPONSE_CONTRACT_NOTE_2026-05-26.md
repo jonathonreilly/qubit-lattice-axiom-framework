@@ -121,6 +121,9 @@ closed exactly:
   orbit-member readout covariance no-go: a free C3 phase orbit has no
   C3-equivariant section, and the three symmetry-breaking sections include
   the singlet row A/sqrt(3) as well as the target rows A/sqrt(12)
+  dihedral basepoint anchor obstruction: full C3/D3 naturality has no section
+  of the free orbit, and the already-derived real-record reflection axis fixes
+  the singlet P_0 member rather than a nontrivial target row
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -150,6 +153,9 @@ still open:
   C3-invariant scalar phase orbit is selected
   accepted physical orientation/basepoint anchor for such an orbit-member
   readout law; C3 covariance alone is now pruned
+  accepted physical basepoint authority beyond the existing real-record
+  reflection axis, since that axis fixes P_0 and rotated axes would import a
+  new C3 basepoint section
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements

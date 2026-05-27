@@ -74,3 +74,10 @@ symmetry-breaking section is supplied, the admissible sections include
 `P_0 -> A/sqrt(3)` as well as the nontrivial target rows. The next trace
 action is therefore a physical orientation/basepoint/orbit-member theorem with
 W/top matrix elements, or strict W/top pole rows.
+The seventeenth artifact prunes the existing C3/dihedral basepoint shortcut:
+full C3/D3 naturality has no section of the free orbit, and the
+already-derived real-record reflection axis fixes the singlet member
+`P_0 -> A/sqrt(3)`. Rotated reflection axes can fix nontrivial members only by
+importing the missing physical basepoint section. The next trace action is
+therefore accepted strict W/top pole rows, or a genuinely new same-surface
+physical basepoint/orbit-member theorem beyond the existing reflection axis.

@@ -30,6 +30,8 @@ potential can select the physical nontrivial top line from a phase orbit.
 The sixteenth route tested whether C3 covariance of the orbit-member/readout
 law itself can select a physical nontrivial member after such an orbit is
 selected.
+The seventeenth route tested whether the existing C3/dihedral reflection
+basepoint structure can supply that physical member law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -50,6 +52,7 @@ selected.
 | C3 cubic phase-potential sign/branch shortcut | no-go shortcut test | 3 | Pruned: invariance gives a signed `cos(3phi)` term, not the accepted sign, variational convention, or orientation branch |
 | General C3 scalar phase-orbit selector | no-go shortcut test | 3 | Pruned: C3-invariant scalar dynamics selects phase orbits; generic/primitive orbits contain both singlet and nontrivial top-line witnesses |
 | C3 orbit-member/readout covariance | no-go shortcut test | 3 | Pruned: free C3 orbits have no equivariant section; symmetry-breaking sections include `P_0` and nontrivial witnesses |
+| Existing C3/dihedral basepoint anchor | no-go shortcut test | 3 | Pruned: full C3/D3 naturality has no section; the existing reflection axis fixes `P_0`, while rotated axes import the missing basepoint |
 
 ## Stuck Fan-Out
 
@@ -74,8 +77,11 @@ selected.
 | Cubic potential invariance | Ask C3-invariant cubic phase-potential structure alone to choose the physical phase law | Fails; sign, variational convention, singlet extrema, degeneracies, and orientation branch remain load-bearing |
 | General scalar phase orbit | Ask C3-invariant scalar phase dynamics to select the physical nontrivial top line | Fails; orbit selection is not orbit-member selection, and the same orbit contains `P_0`, `P_omega2`, and `P_omega` witnesses |
 | Orbit-member readout covariance | Ask C3 covariance to provide the missing physical member section after orbit selection | Fails; no equivariant section exists for a free C3 orbit, and symmetry-breaking sections include a `P_0` row |
+| Existing dihedral basepoint anchor | Ask the already-derived real-record reflection/dihedral structure to choose the physical member | Fails; C3/D3 naturality has no section, and the existing reflection axis fixes the singlet member `P_0` |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
 nontrivial physical line with accepted backend/projectors and matrix elements,
 or accepted strict pole rows. It does not close the coefficient row.
+The existing reflection axis cannot serve as that theorem; it selects the
+singlet member, and rotated axes are new basepoint imports.

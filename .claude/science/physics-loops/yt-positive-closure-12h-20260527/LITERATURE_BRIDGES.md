@@ -35,4 +35,7 @@ connected phase circle; it imports no external cubic potential or literature
 selection rule. The cubic phase-potential sign/branch no-go directly
 enumerates the signed cubic extremal orbits and does not import a Landau
 potential sign, variational convention, or external orientation law. No
-literature bridge is needed for the claim status.
+literature bridge is needed for the claim status. The dihedral basepoint
+anchor obstruction directly enumerates the finite C3 generator and the three
+D3 reflection axes on the selected primitive orbit; it uses no external
+finite-group theorem as authority and imports no physical basepoint law.

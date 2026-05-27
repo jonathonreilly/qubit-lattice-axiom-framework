@@ -103,3 +103,10 @@ potential/variational law and a physical nonzero orientation branch.
   and `phi=4pi/3 -> P_omega -> A/sqrt(12)`. An accepted physical
   orientation/basepoint/orbit-member readout law or strict pole rows remain
   load-bearing.
+- New in the seventeenth block: the existing C3/dihedral reflection-basepoint
+  structure does not derive the physical nontrivial top line. Full C3/D3
+  naturality has no section of the free orbit, and the already-derived
+  real-record reflection axis fixes `phi=0 -> P_0 -> A/sqrt(3)`. Rotated
+  reflection axes can fix `P_omega2` or `P_omega`, but choosing such an axis
+  imports the missing physical basepoint section. Accepted strict pole rows or
+  a genuinely new same-surface physical basepoint theorem remain load-bearing.

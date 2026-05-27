@@ -50,6 +50,9 @@ Current block artifacts:
 - `docs/YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py`
 - `outputs/yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json`
+- `docs/YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py`
+- `outputs/yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json`
 - updated `docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md`
 - updated `scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
 - updated `outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json`
@@ -58,6 +61,6 @@ Current block artifacts:
 Next artifact if continuing:
 
 - accepted strict top/W pole-row data, or a genuinely new same-surface
-  physical orientation/basepoint/orbit-member theorem deriving exclusion of
-  `P_0`, accepted same-surface backend, W/top projectors, and
-  source-generator matrix elements.
+  physical basepoint/orbit-member theorem beyond the existing reflection axis
+  deriving exclusion of `P_0`, accepted same-surface backend, W/top
+  projectors, and source-generator matrix elements.

@@ -17,7 +17,8 @@
 | 13 | Accepted cubic invariant phase potential plus orientation branch | low | high | present | invariance-only shortcut pruned; accepted sign, dynamics law, and branch not derived |
 | 14 | General C3 scalar phase-orbit selector | low | high | present | pruned; orbit selection does not choose a physical nontrivial orbit member |
 | 15 | C3 orbit-member/readout covariance after orbit selection | low | high | present | pruned; no equivariant section, and symmetry-breaking sections include `P_0` |
-| 16 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
+| 16 | Existing C3/dihedral basepoint anchor after orbit selection | low | high | present | pruned; full C3/D3 naturality has no section, and the existing reflection axis fixes `P_0` |
+| 17 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -105,3 +106,12 @@ next exact action is rank 4 or rank 16: obtain accepted strict top/W pole-row
 data with contact, FV/IR, and model-class controls, or derive an accepted
 same-surface physical orientation/basepoint/orbit-member law that excludes
 `P_0` and supplies W/top matrix elements.
+
+Queue refresh after the seventeenth block: positive closure remains open. The
+existing C3/dihedral reflection-basepoint shortcut is also pruned: full
+C3/D3 naturality has no section of the free orbit, and the already-derived
+real-record reflection axis fixes `P_0` rather than a nontrivial member. The
+next exact action is rank 4 or rank 17: obtain accepted strict top/W pole-row
+data with contact, FV/IR, and model-class controls, or derive a genuinely new
+same-surface physical basepoint/orbit-member theorem beyond the existing
+reflection axis, excluding `P_0` and supplying W/top matrix elements.

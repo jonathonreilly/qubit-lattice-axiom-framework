@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced sixteen science blocks, not positive retained-grade
+The campaign has produced seventeen science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -31,6 +31,8 @@ closure:
     C3-invariant scalar phase potential alone.
 16. a no-go for deriving the physical nontrivial top line from C3
     orbit-member/readout covariance alone.
+17. a no-go for deriving the physical nontrivial top line from the existing
+    C3/dihedral reflection-basepoint structure alone.
 
 New result:
 
@@ -365,6 +367,33 @@ The remaining positive route needs an accepted physical
 orientation/basepoint/orbit-member theorem with W/top matrix elements, or
 accepted strict same-source top/W pole rows with controls.
 
+Seventeenth result:
+
+```text
+existing C3/dihedral reflection-basepoint structure
+  -/-> accepted physical nontrivial orbit member
+```
+
+Full C3/D3 naturality has no section of the selected free phase orbit. The
+already-derived real-record reflection axis fixes:
+
+```text
+phi = 0 -> P_0 -> A/sqrt(3)
+```
+
+and swaps the two target members:
+
+```text
+phi = 2 pi/3 <-> 4 pi/3
+P_omega2 <-> P_omega.
+```
+
+Rotated reflection axes can fix `P_omega2` or `P_omega`, but choosing the
+rotated axis is precisely the missing physical basepoint/section input. The
+remaining route is therefore accepted strict top/W pole rows, or a genuinely
+new same-surface physical basepoint/orbit-member theorem beyond the existing
+reflection axis with W/top matrix elements.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -415,6 +444,9 @@ Artifacts:
 - `docs/YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py`
 - `outputs/yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json`
+- `docs/YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py`
+- `outputs/yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
@@ -505,6 +537,20 @@ Cycle 6 orbit-member readout covariance verification so far:
 
 - `python3 scripts/frontier_yt_c3_orbit_member_readout_covariance_no_go.py` -> `SUMMARY: PASS=73 FAIL=0`
 - `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=334 FAIL=0`
+
+Cycle 7 dihedral basepoint anchor obstruction verification so far:
+
+- `python3 scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py` -> `SUMMARY: PASS=84 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=341 FAIL=0`
+- Adjacent Y_T runners passed: orbit-member covariance no-go `PASS=73`,
+  phase-orbit selector no-go `PASS=79`, real-record reflection source
+  `PASS=76`, phase-ordering cone support `PASS=70`, same-surface matrix
+  factorization `PASS=77`, strict sparse availability audit `PASS=74`,
+  cubic phase-potential sign/branch no-go `PASS=88`, and primitive character
+  phase-angle candidate `PASS=71`.
+- `python3 -m py_compile ...` -> `PASS`
+- YAML validation -> `YAML OK`
+- `git diff --check` -> `PASS`
 
 Orbit-member readout covariance no-go science commit:
 
@@ -600,7 +646,7 @@ Next exact action:
 
 ```text
 produce accepted strict same-source top/W pole-row data with contact, FV/IR,
-and model-class controls; if staying on C3, derive an accepted same-surface
-physical orientation/basepoint/orbit-member law that excludes P_0 and supplies
-W/top matrix elements.
+and model-class controls; if staying on C3, derive a genuinely new
+same-surface physical basepoint/orbit-member theorem beyond the existing
+reflection axis, excluding P_0 and supplying W/top matrix elements.
 ```

@@ -1,0 +1,233 @@
+{
+  "actual_current_surface_status": "no-go / open physical basepoint anchor law",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_dihedral_basepoint_anchor_obstruction_note_2026-05-27",
+  "conditional_surface_status": null,
+  "dependencies": {
+    "matrix_element": {
+      "claim_id": null,
+      "fail_count": 0,
+      "status": "conditional-support"
+    },
+    "orbit_member_nogo": {
+      "claim_id": "yt_c3_orbit_member_readout_covariance_no_go_note_2026-05-27",
+      "fail_count": 0,
+      "status": "no-go / open orbit-member readout law"
+    },
+    "phase_cone": {
+      "claim_id": "yt_c3_phase_ordering_cone_support_boundary_note_2026-05-27",
+      "fail_count": 0,
+      "status": "exact-support / open phase-ordering import"
+    },
+    "phase_orbit_nogo": {
+      "claim_id": "yt_c3_phase_orbit_selector_underdetermination_no_go_note_2026-05-27",
+      "fail_count": 0,
+      "status": "no-go / open phase-orbit member law"
+    },
+    "reflection_source": {
+      "claim_id": "yt_c3_real_record_reflection_even_source_theorem_note_2026-05-27",
+      "fail_count": 0,
+      "status": "exact-support"
+    },
+    "strict_availability": {
+      "claim_id": "yt_strict_sparse_top_w_pole_response_availability_audit_note_2026-05-27",
+      "fail_count": 0,
+      "status": "no-go"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_dihedral_basepoint_anchor_obstruction.py",
+  "group_action": {
+    "c3_generator_action": {
+      "0": 1,
+      "1": 2,
+      "2": 0
+    },
+    "c3_invariant_section_exists": false,
+    "candidate_sections": [
+      {
+        "c3_generator_image": 1,
+        "c3_invariant": false,
+        "chosen_member": 0,
+        "d3_invariant": false
+      },
+      {
+        "c3_generator_image": 2,
+        "c3_invariant": false,
+        "chosen_member": 1,
+        "d3_invariant": false
+      },
+      {
+        "c3_generator_image": 0,
+        "c3_invariant": false,
+        "chosen_member": 2,
+        "d3_invariant": false
+      }
+    ],
+    "d3_natural_section_exists": false,
+    "members": [
+      0,
+      1,
+      2
+    ]
+  },
+  "hypothetical_axiom_status": null,
+  "next_ranked_route": "accepted strict top/W pole rows or new physical basepoint theorem",
+  "no_go_certificate": {
+    "accepted_orbit_member_readout_derived": false,
+    "accepted_physical_basepoint_anchor_derived": false,
+    "accepted_w_top_matrix_elements_supplied": false,
+    "bare_retained_allowed": false,
+    "c3_invariant_section_exists": false,
+    "d3_natural_section_exists": false,
+    "existing_record_reflection_excludes_p0": false,
+    "existing_record_reflection_fixes_p0": true,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "rotated_reflection_axis_selects_nontrivial_member_only_with_extra_basepoint": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "pass_count": 84,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Full C3/D3 naturality cannot select a member of a free phase orbit, and the existing real-record reflection axis fixes the singlet member P_0. Rotated reflection axes can fix nontrivial members only after importing the missing physical basepoint section.",
+  "reachability_to_target": "prunes shortcut",
+  "reflection_witnesses": {
+    "primitive_member_rows": {
+      "0": {
+        "eigenvalues": {
+          "P_0": "sqrt(6)/3",
+          "P_omega": "-sqrt(6)/6",
+          "P_omega2": "-sqrt(6)/6"
+        },
+        "member": 0,
+        "phi": "0",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/3"
+        ],
+        "top_lines": [
+          "P_0"
+        ]
+      },
+      "1": {
+        "eigenvalues": {
+          "P_0": "-sqrt(6)/6",
+          "P_omega": "-sqrt(6)/6",
+          "P_omega2": "sqrt(6)/3"
+        },
+        "member": 1,
+        "phi": "2*pi/3",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega2"
+        ]
+      },
+      "2": {
+        "eigenvalues": {
+          "P_0": "-sqrt(6)/6",
+          "P_omega": "sqrt(6)/3",
+          "P_omega2": "-sqrt(6)/6"
+        },
+        "member": 2,
+        "phi": "4*pi/3",
+        "row_magnitudes_if_selected": [
+          "sqrt(3)*A/6"
+        ],
+        "top_lines": [
+          "P_omega"
+        ]
+      }
+    },
+    "reflection_axes": [
+      {
+        "axis": 0,
+        "fixed_member_witnesses": [
+          {
+            "eigenvalues": {
+              "P_0": "sqrt(6)/3",
+              "P_omega": "-sqrt(6)/6",
+              "P_omega2": "-sqrt(6)/6"
+            },
+            "member": 0,
+            "phi": "0",
+            "row_magnitudes_if_selected": [
+              "sqrt(3)*A/3"
+            ],
+            "top_lines": [
+              "P_0"
+            ]
+          }
+        ],
+        "fixed_members": [
+          0
+        ],
+        "imports_rotated_axis_if_declared_physical": false,
+        "swapped_members": {
+          "1": 2,
+          "2": 1
+        }
+      },
+      {
+        "axis": 1,
+        "fixed_member_witnesses": [
+          {
+            "eigenvalues": {
+              "P_0": "-sqrt(6)/6",
+              "P_omega": "-sqrt(6)/6",
+              "P_omega2": "sqrt(6)/3"
+            },
+            "member": 1,
+            "phi": "2*pi/3",
+            "row_magnitudes_if_selected": [
+              "sqrt(3)*A/6"
+            ],
+            "top_lines": [
+              "P_omega2"
+            ]
+          }
+        ],
+        "fixed_members": [
+          1
+        ],
+        "imports_rotated_axis_if_declared_physical": true,
+        "swapped_members": {
+          "0": 2,
+          "2": 0
+        }
+      },
+      {
+        "axis": 2,
+        "fixed_member_witnesses": [
+          {
+            "eigenvalues": {
+              "P_0": "-sqrt(6)/6",
+              "P_omega": "sqrt(6)/3",
+              "P_omega2": "-sqrt(6)/6"
+            },
+            "member": 2,
+            "phi": "4*pi/3",
+            "row_magnitudes_if_selected": [
+              "sqrt(3)*A/6"
+            ],
+            "top_lines": [
+              "P_omega"
+            ]
+          }
+        ],
+        "fixed_members": [
+          2
+        ],
+        "imports_rotated_axis_if_declared_physical": true,
+        "swapped_members": {
+          "0": 1,
+          "1": 0
+        }
+      }
+    ]
+  },
+  "route_still_live": "produce accepted strict top/W pole rows, or derive an accepted same-surface physical orientation/basepoint/orbit-member top-line law with W/top matrix elements",
+  "trace_class": "negative_route_pruning"
+}

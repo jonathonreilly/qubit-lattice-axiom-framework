@@ -500,3 +500,37 @@ Verification recorded with this review:
   audit `PASS=74`, same-surface matrix factorization `PASS=77`,
   orientation-phase strength no-go `PASS=68`, and orientation-phase dynamics
   necessity `PASS=86`.
+
+## 2026-05-27 Local Review, Block 17
+
+Scope:
+
+- C3 dihedral basepoint anchor obstruction note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner enumerates the finite C3 generator, the three D3 reflection axes, primitive-orbit row witnesses, dependency outputs, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open physical basepoint anchor law; existing C3/D3 naturality has no section, and the already-derived reflection axis fixes `P_0`. |
+| Imports / support | DISCLOSED | No external phase law, rotated-axis basepoint, observed masses, target selector, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=84 FAIL=0`
+- Full stack runner: `PASS=341 FAIL=0`
+- Adjacent Y_T runners passed: orbit-member covariance no-go `PASS=73`,
+  phase-orbit selector no-go `PASS=79`, real-record reflection source
+  `PASS=76`, phase-ordering cone support `PASS=70`, same-surface matrix
+  factorization `PASS=77`, strict sparse availability audit `PASS=74`,
+  cubic phase-potential sign/branch no-go `PASS=88`, and primitive character
+  phase-angle candidate `PASS=71`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.

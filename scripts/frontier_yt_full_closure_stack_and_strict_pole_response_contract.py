@@ -76,6 +76,10 @@ This runner verifies the current burn-down state:
 * C3 orbit-member readout covariance is also pruned as the missing law: a
   free C3 phase orbit has no equivariant section, and symmetry-breaking
   sections include a P_0 witness as well as target nontrivial witnesses.
+* The existing dihedral/reflection basepoint shortcut is now pruned: full
+  C3/D3 naturality has no section of the free orbit, and the already-derived
+  real-record reflection axis fixes the singlet P_0 member rather than a
+  nontrivial target row.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -143,6 +147,7 @@ C3_CUBIC_INVARIANT_PHASE_SELECTOR = DOCS / "YT_C3_CUBIC_INVARIANT_PHASE_SELECTOR
 C3_CUBIC_PHASE_POTENTIAL_NOGO = DOCS / "YT_C3_CUBIC_PHASE_POTENTIAL_SIGN_BRANCH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
 C3_PHASE_ORBIT_SELECTOR_NOGO = DOCS / "YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
 C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO = DOCS / "YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md"
+C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION = DOCS / "YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -189,6 +194,7 @@ C3_CUBIC_INVARIANT_PHASE_SELECTOR_OUT = ROOT / "outputs" / "yt_c3_cubic_invarian
 C3_CUBIC_PHASE_POTENTIAL_NOGO_OUT = ROOT / "outputs" / "yt_c3_cubic_phase_potential_sign_branch_underdetermination_2026-05-27.json"
 C3_PHASE_ORBIT_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_phase_orbit_selector_underdetermination_2026-05-27.json"
 C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT = ROOT / "outputs" / "yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json"
+C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -280,6 +286,7 @@ def part1_anchors() -> dict[str, str]:
         C3_CUBIC_PHASE_POTENTIAL_NOGO,
         C3_PHASE_ORBIT_SELECTOR_NOGO,
         C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO,
+        C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -325,6 +332,7 @@ def part1_anchors() -> dict[str, str]:
         C3_CUBIC_PHASE_POTENTIAL_NOGO_OUT,
         C3_PHASE_ORBIT_SELECTOR_NOGO_OUT,
         C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT,
+        C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -374,6 +382,7 @@ def part1_anchors() -> dict[str, str]:
         "cubic phase-potential sign/branch no-go",
         "phase-orbit selector underdetermination",
         "orbit-member readout covariance no-go",
+        "dihedral basepoint anchor obstruction",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -438,6 +447,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_cubic_phase_potential_nogo = load_json(C3_CUBIC_PHASE_POTENTIAL_NOGO_OUT)
     c3_phase_orbit_selector_nogo = load_json(C3_PHASE_ORBIT_SELECTOR_NOGO_OUT)
     c3_orbit_member_readout_covariance_nogo = load_json(C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT)
+    c3_dihedral_basepoint_anchor_obstruction = load_json(C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -839,6 +849,29 @@ def part2_support_outputs() -> dict[str, Any]:
         .get("accepted_orbit_member_readout_derived")
         is False,
     )
+    check(
+        "C3 dihedral basepoint anchor obstruction passed",
+        c3_dihedral_basepoint_anchor_obstruction.get("fail_count") == 0,
+        c3_dihedral_basepoint_anchor_obstruction.get("fail_count"),
+    )
+    check(
+        "C3/D3 naturality still has no section",
+        c3_dihedral_basepoint_anchor_obstruction.get("no_go_certificate", {})
+        .get("d3_natural_section_exists")
+        is False,
+    )
+    check(
+        "existing record reflection fixes P0",
+        c3_dihedral_basepoint_anchor_obstruction.get("no_go_certificate", {})
+        .get("existing_record_reflection_fixes_p0")
+        is True,
+    )
+    check(
+        "nontrivial reflected axis remains a basepoint import",
+        c3_dihedral_basepoint_anchor_obstruction.get("no_go_certificate", {})
+        .get("rotated_reflection_axis_selects_nontrivial_member_only_with_extra_basepoint")
+        is True,
+    )
 
     return {
         "fisher": fisher,
@@ -885,6 +918,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_cubic_phase_potential_nogo": c3_cubic_phase_potential_nogo,
         "c3_phase_orbit_selector_nogo": c3_phase_orbit_selector_nogo,
         "c3_orbit_member_readout_covariance_nogo": c3_orbit_member_readout_covariance_nogo,
+        "c3_dihedral_basepoint_anchor_obstruction": c3_dihedral_basepoint_anchor_obstruction,
     }
 
 
@@ -1089,7 +1123,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface phase-angle/orbit-member law selecting a nontrivial top line with backend/projectors/matrix elements",
         },
@@ -1162,6 +1196,12 @@ def main() -> int:
             "law either: a free three-member C3 orbit has no equivariant "
             "section, and symmetry-breaking sections include a P_0 witness "
             "as well as the target nontrivial witnesses. "
+            "The existing dihedral/reflection basepoint shortcut is now "
+            "pruned too: full C3/D3 naturality cannot select a member of the "
+            "free orbit, and the already-derived real-record reflection axis "
+            "fixes the singlet P_0 member rather than a nontrivial target "
+            "row; rotated reflection axes would import the missing physical "
+            "basepoint section. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1217,6 +1257,7 @@ def main() -> int:
             "c3_cubic_phase_potential_nogo_fail_count": support_outputs["c3_cubic_phase_potential_nogo"].get("fail_count"),
             "c3_phase_orbit_selector_nogo_fail_count": support_outputs["c3_phase_orbit_selector_nogo"].get("fail_count"),
             "c3_orbit_member_readout_covariance_nogo_fail_count": support_outputs["c3_orbit_member_readout_covariance_nogo"].get("fail_count"),
+            "c3_dihedral_basepoint_anchor_obstruction_fail_count": support_outputs["c3_dihedral_basepoint_anchor_obstruction"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

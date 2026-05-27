@@ -1,0 +1,61 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "anchor_statuses": {
+    "first_principles_status": "exact-support / formal-transfer no-go",
+    "mass_ordering_status": "no-go",
+    "nontrivial_boundary_status": "no-go",
+    "real_record_status": "exact-support"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_physical_top_projector": false,
+    "accepted_same_surface_generator_factorization": false,
+    "bare_retained_allowed": false,
+    "c3_bx_source_direction_checked": true,
+    "nontrivial_line_gives_target_row": true,
+    "nontrivial_top_line_assignment_derived": false,
+    "proposal_allowed": false,
+    "radial_factor_algebra_checked": true,
+    "same_surface_factorization_schema_written": true,
+    "singlet_line_gives_different_row": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "conditional_surface_status": "exact top-row certificate if accepted same-surface generator factorization and nontrivial top-line assignment are supplied",
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "accepted same-surface generator factorization plus nontrivial top-line assignment, or strict top/W pole rows",
+  "matrix_element_witness": {
+    "B_x": "(C+C^2)/sqrt(6)",
+    "radial_factor": "A/sqrt(2)",
+    "responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "-sqrt(6)/6",
+      "P_omega2": "-sqrt(6)/6"
+    },
+    "singlet_readout": "2/sqrt(6)",
+    "singlet_top_row": "A/sqrt(3)",
+    "target_readout": "1/sqrt(6)",
+    "target_top_row": "A/sqrt(12)",
+    "top_matrix_element_rows": {
+      "P_0": "sqrt(3)*A/3",
+      "P_omega": "-sqrt(3)*A/6",
+      "P_omega2": "-sqrt(3)*A/6"
+    }
+  },
+  "no_go_boundary": {
+    "counterassignment_same_finite_algebra": {
+      "top_equals_P_0": "A/sqrt(3)",
+      "top_equals_P_omega": "A/sqrt(12)"
+    },
+    "reason": "physical top-line assignment is not derived by the finite algebra",
+    "route_pruned": "same-surface factorization algebra plus B_x alone certifies physical top row",
+    "route_still_live": "derive accepted same-surface generator factorization and nontrivial top-line law, or produce strict same-source top/W pole rows"
+  },
+  "pass_count": 77,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The finite C3 factorization algebra gives A/sqrt(12) exactly on nontrivial C3 lines, but the actual current surface still lacks an accepted physical top line and accepted same-surface source-generator factorization. The singlet line remains allowed by the same finite algebra and gives A/sqrt(3).",
+  "reachability_to_target": "supports",
+  "route_pruned": "same-surface factorization algebra plus B_x alone certifies physical top row",
+  "route_still_live": "derive accepted same-surface generator factorization and nontrivial top-line law, or produce strict same-source top/W pole rows",
+  "trace_class": "upstream_support"
+}

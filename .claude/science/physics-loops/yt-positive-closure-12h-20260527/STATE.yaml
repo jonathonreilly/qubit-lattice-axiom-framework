@@ -1,0 +1,53 @@
+loop_slug: yt-positive-closure-12h-20260527
+mode: campaign
+supervisor_cycle: 1
+runtime_budget_seconds: 43200
+repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
+branch: physics-loop/yt-primitive-physical-source-theorem-20260526
+pr: 1980
+last_checkpoint_utc: "2026-05-27T18:22:23Z"
+lock_mode: branch-local
+lock_note: "Repo-global automation_lock.py status failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
+active_route: same_surface_top_matrix_element_factorization_boundary
+hard_residual: "derive/certify dM_t/dell = A/sqrt(12)"
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+bare_retained_allowed: false
+positive_closure_marker_written: false
+claim_state_movement: "Exact factorization shape of the top matrix element was proved: nontrivial C3 B_x line times A/sqrt(2) gives A/sqrt(12), while the singlet gives A/sqrt(3)."
+files_touched:
+  - docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md
+  - scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py
+  - outputs/yt_same_surface_top_matrix_element_factorization_boundary_2026-05-27.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+  - .claude/science/physics-loops/yt-positive-closure-12h-20260527/
+open_imports:
+  - accepted same-surface generator factorization `(A/sqrt(2)) B_x`
+  - nontrivial C3 physical top-line assignment
+  - accepted physical top pole/projector
+  - strict top/W pole rows with contact, FV/IR, and model-class checks
+no_go_routes:
+  - formal transfer first principles alone force kappa
+  - B_x source direction alone certifies physical top row
+  - mass ordering selects target nontrivial line
+  - factorization algebra alone certifies physical top row
+commands_run:
+  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=218 FAIL=0"
+  - "python3 scripts/frontier_yt_first_principles_transfer_response_boundary.py -> PASS=56 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_real_record_reflection_even_source.py -> PASS=76 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_nontrivial_top_line_assignment_boundary.py -> PASS=81 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_top_line_mass_ordering_obstruction.py -> PASS=70 FAIL=0"
+  - "python3 scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS=88 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_connected_source_from_normalized_rn.py -> PASS=73 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_spectral_source_response_underdetermination_no_go.py -> PASS=58 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS"
+  - "git diff --check -> PASS"
+review_disposition: pass_for_conditional_support_only
+pr_status: pending_update
+next_exact_action: "Attack accepted same-surface generator factorization plus nontrivial top-line authority; if blocked, pivot to non-mass-ordering C3 top-line law or strict sparse top/W pole-response evidence."
+stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

@@ -26,6 +26,9 @@ This runner verifies the current burn-down state:
 * The mass-ordering top-line shortcut is now pruned: under B_x the ordinary
   top/heaviest convention selects P_0 with 2/sqrt(6), not the target
   nontrivial-line response 1/sqrt(6).
+* The same-surface top matrix-element factorization algebra is now explicit:
+  (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
+  accepted generator factorization and nontrivial top-line law remain open.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -59,6 +62,7 @@ STRICT_WZ = DOCS / "YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25
 STRICT_TOP = DOCS / "YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md"
 STRICT_SAME_SOURCE_OBSTRUCTION = DOCS / "YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md"
 FIRST_PRINCIPLES_TRANSFER_RESPONSE = DOCS / "YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md"
+SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION = DOCS / "YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
@@ -89,6 +93,7 @@ STRICT_WZ_OUT = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet
 STRICT_TOP_OUT = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 STRICT_SAME_SOURCE_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json"
 FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT = ROOT / "outputs" / "yt_first_principles_transfer_response_boundary_2026-05-27.json"
+SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT = ROOT / "outputs" / "yt_same_surface_top_matrix_element_factorization_boundary_2026-05-27.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
@@ -164,6 +169,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_TOP,
         STRICT_SAME_SOURCE_OBSTRUCTION,
         FIRST_PRINCIPLES_TRANSFER_RESPONSE,
+        SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION,
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
@@ -193,6 +199,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_TOP_OUT,
         STRICT_SAME_SOURCE_OBSTRUCTION_OUT,
         FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT,
+        SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
@@ -224,6 +231,7 @@ def part1_anchors() -> dict[str, str]:
         "finite-transfer counterfamily",
         "first-principles transfer/Feynman-Hellmann",
         "sector matrix elements remain load-bearing",
+        "same-surface top matrix-element factorization",
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
@@ -273,6 +281,7 @@ def part2_support_outputs() -> dict[str, Any]:
     top = load_json(STRICT_TOP_OUT)
     strict_obstruction = load_json(STRICT_SAME_SOURCE_OBSTRUCTION_OUT)
     first_principles_transfer_response = load_json(FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT)
+    same_surface_top_matrix_element_factorization = load_json(SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
@@ -325,6 +334,18 @@ def part2_support_outputs() -> dict[str, Any]:
         "first-principles theorem names matrix element as first open gate",
         "top sector response row" in first_principles_transfer_response.get("first_open_gate_after_this_note", ""),
         first_principles_transfer_response.get("first_open_gate_after_this_note"),
+    )
+    check("same-surface top matrix-element factorization passed", same_surface_top_matrix_element_factorization.get("fail_count") == 0, same_surface_top_matrix_element_factorization.get("fail_count"))
+    check("same-surface factorization is conditional support", same_surface_top_matrix_element_factorization.get("actual_current_surface_status") == "conditional-support")
+    check("same-surface factorization target row is A/sqrt(12)", same_surface_top_matrix_element_factorization.get("matrix_element_witness", {}).get("target_top_row") == "A/sqrt(12)")
+    check("same-surface factorization proposal is not allowed", same_surface_top_matrix_element_factorization.get("proposal_allowed") is False)
+    check(
+        "same-surface factorization leaves generator factorization open",
+        same_surface_top_matrix_element_factorization.get("certificate_boundary", {}).get("accepted_same_surface_generator_factorization") is False,
+    )
+    check(
+        "same-surface factorization leaves nontrivial top-line assignment open",
+        same_surface_top_matrix_element_factorization.get("certificate_boundary", {}).get("nontrivial_top_line_assignment_derived") is False,
     )
     check("direct sparse response certificate harness passed", direct_sparse_cert.get("fail_count") == 0, direct_sparse_cert.get("fail_count"))
     check("direct sparse response certificate is bounded support", direct_sparse_cert.get("actual_current_surface_status") == "bounded-support microbench / open strict-response backend")
@@ -397,6 +418,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "strict_top": top,
         "strict_same_source_obstruction": strict_obstruction,
         "first_principles_transfer_response": first_principles_transfer_response,
+        "same_surface_top_matrix_element_factorization": same_surface_top_matrix_element_factorization,
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
@@ -609,9 +631,9 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_bounded_sparse_certificate_harness_present",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_bounded_sparse_certificate_harness_present",
             "closed": False,
-            "next_action": "derive or certify the same-surface top sector matrix element dM_t/dell=A/sqrt(12), then run the sparse response certificate for coefficient-certified rows",
+            "next_action": "derive accepted same-surface generator factorization plus nontrivial top-line assignment, or certify the top row directly with strict pole-response rows",
         },
         {
             "step": 6.5,
@@ -637,8 +659,10 @@ def main() -> int:
             "then prunes top-source identification from current structural inputs. "
             "The C3 B_x route is now also blocked under ordinary mass-ordering. "
             "First-principles transfer response is now closed, but the top sector "
-            "matrix element remains load-bearing and coefficient-certified top/W "
-            "response evidence remains absent."
+            "matrix element remains load-bearing. The factorization boundary shows "
+            "exactly how A/sqrt(12) would follow from accepted generator "
+            "factorization plus a nontrivial top line, but those inputs remain open "
+            "and coefficient-certified top/W response evidence remains absent."
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
@@ -661,6 +685,7 @@ def main() -> int:
             "strict_top_fail_count": support_outputs["strict_top"].get("fail_count"),
             "strict_same_source_obstruction_fail_count": support_outputs["strict_same_source_obstruction"].get("fail_count"),
             "first_principles_transfer_response_fail_count": support_outputs["first_principles_transfer_response"].get("fail_count"),
+            "same_surface_top_matrix_element_factorization_fail_count": support_outputs["same_surface_top_matrix_element_factorization"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),

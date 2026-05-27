@@ -45,6 +45,9 @@ closed exactly:
   symbolic support alone is pruned by an exact finite-transfer counterfamily
   formal transfer-matrix first principles alone cannot force the top response
   coefficient; sector matrix elements remain load-bearing
+  same-surface top matrix-element factorization algebra is explicit:
+  (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), while the
+  accepted generator factorization and nontrivial top-line law remain open
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -74,6 +77,7 @@ still open:
   accepted same-surface pole/response authority for the physical top/Higgs row
   coefficient-certified same-source top/W response evidence
   coefficient-certified same-surface top sector matrix element
+  accepted same-surface generator factorization for the top block
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -291,6 +295,27 @@ on the same accepted surface where
 ```text
 <W|V|W> - <0|V|0> = g_2 A/2.
 ```
+
+[`YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`](YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md)
+then writes the exact factorization shape of that target row.  If an accepted
+same-surface top block has source generator
+
+```text
+V_top = (A/sqrt(2)) B_x,
+B_x = (C+C^2)/sqrt(6),
+```
+
+and the physical top line is one of the nontrivial C3 character projectors,
+then
+
+```text
+|<top|V|top> - <0|V|0>| = A/sqrt(12).
+```
+
+This is conditional support, not closure.  The same finite C3 algebra also
+allows the singlet assignment, which gives `A/sqrt(3)`.  Therefore accepted
+same-surface generator factorization and a nontrivial top-line law remain
+load-bearing.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a
@@ -535,6 +560,20 @@ dM_t/dell = A/sqrt(12)
 
 must be derived or certified on the same surface.
 
+The factorization boundary now records the exact algebraic certificate shape:
+
+```text
+V_top = (A/sqrt(2)) B_x,
+top = P_omega or P_omega2
+  -> |dM_t/dell| = A/sqrt(12).
+```
+
+It also records why this is not positive closure: the same `B_x` finite algebra
+allows `top = P_0`, which gives `A/sqrt(3)`.  Thus the remaining target is not
+another normalization calculation.  It is accepted same-surface generator
+factorization plus nontrivial top-line authority, or strict pole rows that
+measure the coefficient directly.
+
 The top-projector specialization makes the route boundary explicit:
 
 ```text
@@ -672,11 +711,15 @@ proposal_allowed_reason: |
   real finite-record source semantics. The B_x candidate gives 1/sqrt(6) only
   after the nontrivial top-line premise is supplied. First-principles
   transfer/Feynman-Hellmann identities are now closed but leave the top sector
-  matrix element load-bearing. Strict same-source response evidence is not
-  present, so retained or proposed-retained Y_T wording is not allowed.
+  matrix element load-bearing. The factorization boundary shows that
+  A/sqrt(12) follows exactly from an accepted top generator
+  (A/sqrt(2))B_x plus a nontrivial top line, but those inputs are still open.
+  Strict same-source response evidence is not present, so retained or
+  proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: nontrivial top-line assignment, or strict same-source top/W response evidence
+first_open_gate: accepted same-surface generator factorization plus nontrivial
+  top-line assignment, or strict same-source top/W response evidence
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element, or a non-mass-ordering same-surface top-line law
 backup_route: audit accepts primitive top-source premise as physical source law

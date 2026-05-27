@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 537 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1159 |
+| unaudited | 1158 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 78 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -55,21 +55,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 836 |
-| `audited_conditional` | 78 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1388 |
+| `unaudited` | 1387 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1071 |
+| `bounded_theorem` | 1072 |
 | `decoration` | 48 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
-| `positive_theorem` | 708 |
+| `positive_theorem` | 707 |
 
 | criticality | count |
 |---|---:|
@@ -1033,6 +1033,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_fam2_seed1_followup_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14787,6 +14788,25 @@ Claim boundary until fixed: within the named real-positive canonical leading-bet
   - `staggered_3D_cubic_source_mass_scaling_and_attraction_artifact_not_registered`
   - `Wilson_3D_cubic_source_mass_scaling_and_attraction_artifact_not_registered`
   - `2D_random_geometric_control_row_artifact_not_registered`
+- **auditor confidence:** high
+
+### `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded numerical RGE diagnostic: for the runner's 2-loop SM RGE setup, imported canonical plaquette/coupling inputs, imported Ward target, and sampled interval X in [0.5, 1.2], the completed runner verifies finite-grid monotonicity, finite Lipschitz estimates, brentq root agreement, and a below-onset scan. It does not by itself prove continuum strict monotonicity/unique-root closure or a retained physical boundary-transfer theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** (T4) unique-root: the Ward boundary condition Phi(X*) = g_lattice / sqrt(6) = 0.43577 has EXACTLY ONE solution X* in [0.5, 1.2], with X* = 0.97267 (verified to 1e-10).  _(class `D`)_
+- **chain closes:** False — The runner completes and supports the sampled numerical diagnostic, but the source elevates grid monotonicity plus brentq checks to continuum strict monotonicity and exact uniqueness on the whole interval. In addition, the runner imports CANONICAL_PLAQUETTE = 0.5934 and derived canonical couplings from scripts/canonical_plaquette_surface.py, while the cited plaquette dependency's audited scope explicitly does not certify the 0.5934 same-surface or infinite-volume value. The Ward dependency is retained only for the bounded H_unit matrix-element identity, not for a physical SM y_t(M_Pl) boundary-transfer theorem.
+- **rationale:** Issue: the load-bearing unique-root statement treats finite-grid monotonicity/Brent checks as a proof of strict monotonicity and exactly one solution on the full continuum interval, and it uses imported canonical plaquette/coupling and Ward-boundary inputs that are stronger than the audited scopes of the one-hop dependencies.
+Why this blocks: a retained theorem for exact interval uniqueness needs either a rigorous interval/variational monotonicity proof or a narrower claim limited to the completed sampled diagnostic, and the boundary target/canonical surface must be supplied as retained-grade inputs or explicitly treated as assumptions.
+Repair target: narrow the row to a finite-grid numerical diagnostic under stated imported inputs, or add a retained interval-proof/validated-numerics certificate plus retained canonical plaquette/coupling-surface and Ward-boundary-transfer authorities.
+Claim boundary until fixed: the current runner gives useful bounded evidence that, in the coded SM-RGE setup and sampled range, the map is well behaved and the root near X = 0.972672 is stable; it does not close the exact continuum uniqueness theorem or the physical BC-transfer authority as stated.
+- **open / conditional deps cited:**
+  - `plaquette_self_consistency_note`
+  - `yt_ward_identity_derivation_theorem`
 - **auditor confidence:** high
 
 ### `yt_color_projection_correction_note`

@@ -27421,7 +27421,7 @@
       "claim_id": "gate_b_h025_joint_package_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,

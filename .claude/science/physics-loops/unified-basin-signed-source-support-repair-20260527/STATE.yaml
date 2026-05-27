@@ -1,0 +1,18 @@
+loop: unified-basin-signed-source-support-repair-20260527
+target_claim_id: unified_basin_signed_source_control_support_note_2026-04-30
+actual_current_surface_status: demotion
+target_status: meta
+branch: physics-loop/unified-basin-signed-source-support-repair-20260527
+started_from: origin/main
+files_touched:
+  - docs/UNIFIED_BASIN_SIGNED_SOURCE_CONTROL_SUPPORT_NOTE_2026-04-30.md
+  - scripts/unified_basin_signed_source_metadata_check.py
+  - .claude/science/physics-loops/unified-basin-signed-source-support-repair-20260527/
+active_route: metadata demotion
+hard_residual: no live retained-generator runner for signed-source numerical rows
+open_imports:
+  - archived failed wrapper is not retained authority
+  - signed-source rows are not recomputed by this row
+trace_gate_classification: direct_blocker_closure
+next_exact_action: verify, run audit pipeline, open draft PR
+stop_condition: draft PR opened for independent review

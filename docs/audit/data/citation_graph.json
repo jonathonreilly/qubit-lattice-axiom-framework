@@ -4817,6 +4817,22 @@
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
+      "to": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27"
+    },
+    {
+      "from": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
+      "to": "gbare_wilson_action_internal_proof_walk_bounded_note_2026-05-08"
+    },
+    {
+      "from": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
+      "to": "g_bare_derivation_note"
+    },
+    {
+      "from": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
+      "to": "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+    },
+    {
       "from": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
       "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
     },
@@ -45612,6 +45628,23 @@
       "runner_path": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py",
       "title": "Cl(3) \u03b3-Involution Determinant Identity \u2014 Narrow Theorem"
     },
+    "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27": {
+      "claim_id": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
+        "gbare_wilson_action_internal_proof_walk_bounded_note_2026-05-08",
+        "g_bare_derivation_note",
+        "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d75294f9a5bd95dbdcf9f66cf6acfd6086a7cee9f73690aa72ad5ec4d4f956ed",
+      "path": "docs/CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+      "runner_path": "scripts/cl3_normalization_i3_accepted_premise_runner.py",
+      "title": "Canonical Generator Normalization + Wilson Surface No-Rescaling I3 Accepted-Premise Bridge"
+    },
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -86005,7 +86038,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 628,
+      "bounded_theorem": 629,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -86014,7 +86047,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1045,
+      "bounded_theorem": 1046,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -86022,10 +86055,10 @@
       "open_gate": 127,
       "positive_theorem": 590
     },
-    "edge_count": 9807,
-    "leaf_count": 806,
-    "node_count": 2568,
+    "edge_count": 9811,
+    "leaf_count": 805,
+    "node_count": 2569,
     "root_count": 857,
-    "runners_with_path": 2144
+    "runners_with_path": 2145
   }
 }

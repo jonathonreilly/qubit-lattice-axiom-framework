@@ -3036,6 +3036,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py"
     },
+    "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27": {
+      "assert_count": 0,
+      "counts": {
+        "A": 14,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/cl3_normalization_i3_accepted_premise_runner.py"
+    },
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -30172,6 +30184,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/cl3_normalization_i3_accepted_premise_runner.py": {
+      "assert_count": 0,
+      "claims": [
+        "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 14,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/cl3_np_neutrino_pmns_circulant_2026_05_10_npNu.py": {
       "assert_count": 2,
       "claims": [
@@ -56581,14 +56608,14 @@
   "stats": {
     "decoration_candidates": 347,
     "dominant_class_distribution": {
-      "A": 248,
+      "A": 249,
       "B": 293,
       "C": 761,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2039,
-    "runners_with_C": 993,
+    "runners_classified": 2040,
+    "runners_with_C": 994,
     "runners_with_D": 601
   }
 }

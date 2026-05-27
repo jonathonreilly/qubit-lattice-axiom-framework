@@ -54780,8 +54780,8 @@
       "helper_runner_paths": [],
       "note_hash": "7f27ea40b83af511d7e30a27e7921e980e6d7dc497c0dd15eb6214058423329b",
       "path": "docs/EXPONENT_DERIVATION.md",
-      "runner_path": null,
-      "title": "Derivation: Decoherence Exponent vs Dimension"
+      "runner_path": "scripts/frontier_exponent_derivation_scope_repair.py",
+      "title": "Decoherence Exponent Dimensional-Heuristic Boundary Note"
     },
     "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
       "claim_id": "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26",

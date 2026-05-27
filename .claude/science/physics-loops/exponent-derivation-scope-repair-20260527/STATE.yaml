@@ -1,0 +1,17 @@
+loop_slug: exponent-derivation-scope-repair-20260527
+target_claim_id: exponent_derivation
+target_status: bounded-support
+runtime_mode: campaign
+cycle_count: 1
+active_route: demote_to_matched_replay_boundary
+hard_residual: "No derivation of effective DAG path count or mixing fraction from the actual path measure."
+files_touched:
+  - docs/EXPONENT_DERIVATION.md
+  - scripts/frontier_exponent_derivation_scope_repair.py
+open_imports:
+  - matched_2d_4d_decoherence_note
+trace_gate_classification: direct_blocker_closure
+review_findings: "Self-review pass for bounded boundary/scope repair; external review/audit required."
+pr_status: pending
+next_exact_action: "Run audit pipeline, inspect ledger reset, commit, push, open draft PR, then continue to field_equation_derivation_note."
+stop_condition: "Continue campaign through ordered conditional backlog."

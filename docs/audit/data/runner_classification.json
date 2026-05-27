@@ -38883,6 +38883,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_exponent_derivation_scope_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "exponent_derivation"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_extension_lane_b_protects_lane_a_joint_composition_narrow.py": {
       "assert_count": 1,
       "claims": [

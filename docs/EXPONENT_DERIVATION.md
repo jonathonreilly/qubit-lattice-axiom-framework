@@ -1,4 +1,4 @@
-# Derivation: Decoherence Exponent vs Dimension
+# Decoherence Exponent Dimensional-Heuristic Boundary Note
 
 **Date:** 2026-04-03
 **Status:** bounded - bounded or caveated result note
@@ -24,155 +24,108 @@ No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
 
-## The observation
+## Scope Repair
 
-The decoherence ceiling exponent alpha in (1-pur_min) ~ C × N^alpha
-depends on the spatial dimension d:
+The earlier note proposed an organizing dimensional scaling story for the
+decoherence ceiling exponent in
 
-| d_spatial | alpha (measured) | Config |
-|-----------|-----------------|--------|
-| 1 (2D graph) | -1.5 ± 0.5 | Uniform, various params |
-| 2 (3D graph) | ~-0.7 | 3D modular (limited data) |
-| 3 (4D graph) | -0.2 to -0.5 | 4D modular gap=3 |
+```text
+1 - pur_min ~ C N^alpha.
+```
 
-## The argument
+Its load-bearing steps were the asserted effective path-count and mixing-zone
+scalings
 
-### Setup
+```text
+n_eff ~ M^((d_spatial - 1)/d_spatial),
+f_mix ~ (r/L)^d_spatial,
+alpha ~ 1/d_spatial.
+```
 
-Consider a DAG with N layers, M nodes per layer, d_spatial transverse
-dimensions. The barrier is at layer N/3, with two slits (upper/lower
-in the first transverse coordinate y).
+Those steps are not derived from the actual DAG path measure. The retained
+matched 2D-vs-4D replay also reports that, after matching the current modular
+families and approximate degree, the data do not support a clean dimension-only
+escape claim. This repaired row therefore does not claim a retained dimensional
+exponent mechanism.
 
-Amplitude from slit A at detector node j is:
+The binding claim is narrower:
 
-    ψ_A(j) = Σ_{paths p: A→j} w(p) × exp(i × phase(p))
+- the old `alpha ~ 1/d_spatial` derivation remains a heuristic route map;
+- the retained matched replay is a counterweight showing the route is not
+  isolated from topology/connectivity in the current harness;
+- any future positive theorem must either derive the path measure or provide a
+  broader matched-dimensional runner that controls topology/connectivity.
 
-where w(p) includes 1/L attenuation and directional measure.
+No new axiom, fitted selector, or audit verdict is introduced.
 
-### Step 1: Effective independent path count
+## Retained Matched-Replay Boundary
 
-The number of geometrically distinct paths from a slit to a detector
-grows exponentially with depth: n_paths ~ (connectivity)^N.
+The one-hop retained-bounded dependency
+[MATCHED_2D_4D_DECOHERENCE_NOTE.md](MATCHED_2D_4D_DECOHERENCE_NOTE.md)
+pins the current comparison:
 
-But the EFFECTIVE number of independent contributions to the amplitude
-at a detector is much smaller. Paths that pass through the same
-intermediate nodes contribute correlated amplitudes.
+| N | 2D `pur_min` | 2D `<k>` | 4D `pur_min` | 4D `<k>` | matched 4D `r` |
+|---|---:|---:|---:|---:|---:|
+| 25 | 0.9341 | 9.76 | 0.9647 | 9.52 | 4.75 |
+| 40 | 0.9577 | 9.98 | 0.9559 | 9.69 | 4.75 |
+| 60 | 0.9555 | 10.11 | 0.9378 | 9.78 | 4.75 |
+| 80 | 0.9667 | 10.24 | 0.9812 | 9.89 | 4.75 |
+| 100 | 0.9428 | 10.25 | 0.9991 | 9.89 | 4.75 |
 
-The effective independent path count at a detector scales with the
-"bottleneck width" — the number of independent channels between
-barrier and detector. In d_spatial dimensions with M nodes per layer:
+The retained dependency reports per-seed exponent fits:
 
-    n_eff ~ M^((d_spatial-1)/d_spatial)
+```text
+2D matched alpha = -0.158 +/- 1.024
+4D matched alpha = -2.704 +/- 0.620
+delta alpha (4D - 2D) = -2.546
+```
 
-This is because in d spatial dimensions, the "cross-section" of
-independent channels scales as the (d-1)-dimensional surface area
-of the beam, while the total node count scales as the d-dimensional
-volume.
+This is not evidence for the old "higher dimension makes alpha flatter"
+reading in the matched pocket. It is evidence that the current exponent lane is
+still topology/connectivity-coupled.
 
-### Step 2: CLT convergence of overlap
+## What This Claims
 
-The overlap between slit-A and slit-B detector distributions is:
+- The original dimensional-scaling argument is a heuristic and not a retained
+  derivation.
+- The current retained matched 2D/4D replay blocks using this row as a clean
+  dimension-only exponent theorem.
+- The future repair target is explicit: derive the effective path measure, or
+  run a broader matched-dimensional sweep that isolates dimension from
+  topology/connectivity.
 
-    O = |Σ_j ψ_A*(j) ψ_B(j)|² / (Σ_j |ψ_A(j)|² × Σ_j |ψ_B(j)|²)
+## What This Does Not Claim
 
-By CLT, when both slits contribute to many paths reaching each
-detector, the per-detector amplitudes become correlated Gaussians.
-The overlap approaches 1 at a rate determined by how quickly the
-slit-specific structure is washed out.
+- It does not prove `alpha ~ 1/d_spatial`.
+- It does not assert the old 5D/6D exponent predictions as binding results.
+- It does not claim dimension alone rescues the decoherence ceiling.
+- It does not use unmatched family summaries as proof of a theorem.
+- It does not add a new axiom or apply an audit verdict.
 
-The key parameter is the "slit separation at detector" — how
-structurally different the slit-A and slit-B path distributions
-are at the detector layer. On a graph with N layers and d_spatial
-transverse dimensions:
+## Heuristic Kept For Future Work
 
-- In 1 spatial dim: paths from both slits must pass through the
-  same intermediate nodes (no room to go around). The distributions
-  converge as the graph grows because all paths merge.
+The following route remains scientifically useful as a conjectural path, but
+not as a closed theorem:
 
-- In d spatial dims (d > 1): paths from different slits can take
-  routes through different transverse dimensions, maintaining
-  structural separation even as N grows.
+1. define the actual DAG path measure for slit-to-detector amplitudes;
+2. derive the effective independent channel count under that measure;
+3. derive how slit-overlap/mixing volume scales under a matched family;
+4. fit or prove the exponent law only after topology/connectivity are
+   controlled.
 
-### Step 3: Dimensional scaling
+This is a real future science route. The present row simply prevents the
+heuristic from masquerading as a retained mechanism.
 
-The rate of overlap convergence O → 1 is controlled by the
-fraction of SHARED intermediate nodes between slit-A and slit-B
-paths.
+## Verification
 
-In d_spatial dimensions, the "mixing zone" where slit-A and slit-B
-paths overlap has d_spatial-dimensional extent. The fraction of
-detector-relevant paths that pass through the mixing zone scales as:
+Run:
 
-    f_mix ~ (mixing_width / total_width)^(d_spatial)
+```bash
+python3 scripts/frontier_exponent_derivation_scope_repair.py
+```
 
-For uniform random graphs with connect_radius r and extent L:
+Expected:
 
-    f_mix ~ (r/L)^(d_spatial)
-
-The overlap converges as:
-
-    1 - O ~ f_mix^N_eff ~ (r/L)^(d_spatial × N_eff)
-
-Taking logs and approximating N_eff ~ N (linear in depth):
-
-    alpha ~ -d_spatial × log(L/r) / log(N)
-
-This is a ROUGH scaling argument, but it predicts:
-- Higher d_spatial → smaller |alpha| (flatter exponent)
-- Larger L/r (sparser graphs) → larger |alpha| (steeper)
-- The exponent should scale approximately as 1/d_spatial
-
-### Step 4: Comparison with data
-
-| d_spatial | Predicted alpha (relative) | Measured alpha |
-|-----------|--------------------------|----------------|
-| 1 | baseline | -1.5 |
-| 2 | ~1/2 × baseline | ~-0.7 |
-| 3 | ~1/3 × baseline | -0.2 to -0.5 |
-
-The prediction alpha ~ 1/d_spatial gives:
-- d=1: -1.5 (baseline)
-- d=2: -0.75 (predicted) vs ~-0.7 (measured)
-- d=3: -0.50 (predicted) vs -0.2 to -0.5 (measured)
-
-The agreement is approximate but captures the right trend and
-the right order of magnitude on the unmatched family-level summaries.
-However, the matched comparison in
-[docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md)
-does **not** support a clean dimension-only escape claim, so this derivation
-should currently be read as an organizing heuristic rather than as a retained
-mechanism.
-
-## Prediction
-
-If this argument is correct:
-- **5D (d_spatial=4):** alpha ~ -1.5/4 = -0.375
-- **6D (d_spatial=5):** alpha ~ -1.5/5 = -0.30
-
-And the exponent approaches zero as d_spatial → ∞, meaning
-decoherence becomes truly scalable in high-dimensional graphs.
-
-## Caveats
-
-1. The "f_mix ~ (r/L)^d" step is hand-waving. A rigorous derivation
-   would need the actual path-measure on the DAG.
-
-2. The connect_radius / y_range dependence enters through r/L, which
-   is consistent with the universality test showing exponent depends
-   on connect_radius and y_range.
-
-3. Layer normalization changes the effective amplitude distribution,
-   which modifies the CLT convergence rate but not the dimensional
-   scaling.
-
-4. The old k-dependence story is now fit-sensitive. A review-safe
-   fixed-window rerun on `N=[25,30,40,60,80]` with shared seeds gives
-   overlapping bootstrap intervals across k, so the earlier `k=3` vs
-   `k=10` exponent gap should be treated as an exploratory family
-   effect rather than a clean exponent law. The likely interpretation
-   is still phase-coherence-length driven, but the evidence does not yet
-   support a hardened `alpha(k)` theorem.
-
-5. The current 4D large-`N` lane is still topology- and connectivity-coupled.
-   So even if the heuristic trend turns out to be right, it is not yet
-   isolated as a pure dimensional law in the current codebase.
+```text
+SUMMARY: PASS=22 FAIL=0
+```

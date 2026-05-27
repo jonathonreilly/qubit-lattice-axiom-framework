@@ -220,6 +220,11 @@ def part4_closure_routes() -> dict[str, Any]:
             "retained_grade": False,
             "reason": "not present on current surface; prior C3-breaking routes are obstructed",
         },
+        "c3_preserving_nondegenerate_spectral_dynamics": {
+            "can_select_P_top": True,
+            "retained_grade": True,
+            "reason": "live if an accepted same-surface circulant dynamics derives spectral projectors, ordering, and source-generator matrix elements",
+        },
         "empirical_pole_or_spectrum_input": {
             "can_select_P_top": True,
             "retained_grade": False,
@@ -233,7 +238,15 @@ def part4_closure_routes() -> dict[str, Any]:
     }
     for name, row in routes.items():
         check(f"route recorded: {name}", set(row) == {"can_select_P_top", "retained_grade", "reason"})
-    check("only strict same-surface pole evidence is retained-grade here", [name for name, row in routes.items() if row["retained_grade"]] == ["strict_same_surface_pole_response_evidence"])
+    retained_grade_routes = [name for name, row in routes.items() if row["retained_grade"]]
+    check(
+        "retained-grade live routes are spectral dynamics or strict pole evidence",
+        retained_grade_routes == [
+            "c3_preserving_nondegenerate_spectral_dynamics",
+            "strict_same_surface_pole_response_evidence",
+        ],
+        retained_grade_routes,
+    )
     return routes
 
 

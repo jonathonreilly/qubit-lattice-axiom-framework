@@ -52,17 +52,19 @@ P_top = projector onto the physical third/up-type top generation pole.
 
 The current C3-symmetric surface can carry the generation triplet and can carry
 the generation-blind six-component color/isospin coefficient, but it cannot choose one of the three cyclically-related generation projectors as `P_top`.
-Choosing it requires one of:
+Choosing a corner-label projector requires one of:
 
 1. a labeling convention;
 2. a C3-breaking dynamics theorem;
-3. empirical pole/spectrum input;
-4. strict same-surface pole-row evidence that identifies the top pole without
+3. a C3-preserving nondegenerate spectral dynamics theorem whose mass
+   eigenprojectors, ordering, and source-generator matrix elements are derived;
+4. empirical pole/spectrum input;
+5. strict same-surface pole-row evidence that identifies the top pole without
    importing the old Ward route.
 
-Only route 4 is audit-clean for the current Y_T retained target.  Route 1 is a
-name/convention, route 2 is blocked on the current surface, and route 3 is an
-observation import.
+Routes 3 and 5 are the audit-clean positive routes for the current Y_T retained
+target.  Route 1 is a name/convention, route 2 is blocked on the current
+surface, and route 4 is an observation import.
 
 ## Finite Witness
 
@@ -102,6 +104,12 @@ pi_C(c_i) = {u,c,t}_{i+2},
 all related by the same cyclic relabeling.  The current structural inputs do
 not distinguish them, but they assign the word `top` to different projectors.
 Therefore the physical top projector is not derivable from those inputs alone.
+
+This witness is deliberately about **corner-label projectors**.  It does not
+forbid a C3-preserving circulant mass operator from having nondegenerate
+Fourier/spectral projectors.  That spectral route remains live, but it must
+derive the accepted dynamics, the eigenvalue ordering, and the source-generator
+matrix elements; C3 representation theory alone does not supply those.
 
 ## Relation To The Six-Component Coefficient
 
@@ -159,9 +167,11 @@ no_forbidden_imports: true
 ```
 
 or a strict pole-row dataset/certificate that directly identifies the physical
-top pole and its same-source response.  A naming convention can make a bounded
-or exact-support statement cleaner, but it cannot by itself close retained
-physical top Yukawa authority.
+top pole and its same-source response.  A C3-preserving nondegenerate spectral
+mass operator is a legitimate live route if it is derived on the same surface
+and supplies the source-generator matrix elements.  A naming convention can
+make a bounded or exact-support statement cleaner, but it cannot by itself
+close retained physical top Yukawa authority.
 
 ## Non-Claims
 
@@ -190,8 +200,9 @@ proposal_allowed_reason: |
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 next_action: derive accepted W/top sector projectors and source-generator
-  matrix elements on the same finite transfer/action surface, or produce
-  strict same-source pole-row evidence.
+  matrix elements on the same finite transfer/action surface, including the
+  C3-preserving nondegenerate spectral-projector route, or produce strict
+  same-source pole-row evidence.
 ```
 
 ## Verification

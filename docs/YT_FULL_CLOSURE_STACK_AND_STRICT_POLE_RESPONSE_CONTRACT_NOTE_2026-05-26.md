@@ -45,6 +45,8 @@ closed exactly:
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
   generation support cannot pick the physical top projector by itself
+  C3 spectral-projector route remains live: a derived nondegenerate
+  circulant dynamics could supply mass eigenprojectors
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -52,6 +54,8 @@ still open:
   accepted same-surface pole/response authority for the physical top/Higgs row
   coefficient-certified same-source top/W response evidence
   accepted physical top generation projector or strict top pole identification
+  accepted C3-preserving circulant generation operator, eigenvalue ordering,
+  and top-line source-generator matrix element
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -278,6 +282,13 @@ the physical top generation projector.  The local six-component coefficient
 remains exact support; top-specific pole authority needs same-surface dynamics
 or strict pole-row evidence.
 
+[`YT_C3_SPECTRAL_TOP_PROJECTOR_ROUTE_SUPPORT_NOTE_2026-05-27.md`](YT_C3_SPECTRAL_TOP_PROJECTOR_ROUTE_SUPPORT_NOTE_2026-05-27.md)
+then repairs a possible overbroad reading of that obstruction.  C3-preserving
+circulant dynamics can have three distinct Fourier-character spectral
+projectors.  That mass-eigenline route is live, but it still needs an accepted
+same-surface operator, eigenvalue ordering, and source-generator matrix
+elements.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -376,6 +387,14 @@ The top-projector specialization makes the route boundary explicit:
 ```text
 derive accepted physical top generation projector, not merely the
 generation-blind six-component carrier coefficient.
+```
+
+The C3 spectral support keeps the best positive projector route explicit:
+
+```text
+derive accepted C3-preserving circulant generation dynamics
+  -> nondegenerate spectral top line
+  -> source-generator matrix element.
 ```
 
 ## Non-Claims

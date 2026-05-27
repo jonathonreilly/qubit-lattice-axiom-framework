@@ -1,0 +1,23 @@
+goal: "Repair the top-projector obstruction scope and preserve the C3 spectral positive route."
+target_status: "exact-support"
+actual_current_surface_status: "exact-support"
+trace_class: "upstream_support"
+active_route: "C3-preserving nondegenerate spectral projector route"
+block_count: 1
+files_touched:
+  - "docs/YT_C3_SPECTRAL_TOP_PROJECTOR_ROUTE_SUPPORT_NOTE_2026-05-27.md"
+  - "scripts/frontier_yt_c3_spectral_top_projector_route_support.py"
+  - "outputs/yt_c3_spectral_top_projector_route_support_2026-05-27.json"
+  - "docs/YT_TOP_SECTOR_PROJECTOR_GENERATION_LABEL_OBSTRUCTION_NOTE_2026-05-27.md"
+  - "scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py"
+  - "outputs/yt_top_sector_projector_generation_label_obstruction_2026-05-27.json"
+  - "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md"
+  - "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py"
+open_imports:
+  - "accepted C3 circulant generation operator"
+  - "top-line eigenvalue ordering"
+  - "source-generator matrix element on the spectral top line"
+verification:
+  - "python3 scripts/frontier_yt_c3_spectral_top_projector_route_support.py -> PASS=73 FAIL=0"
+  - "python3 scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py -> PASS=85 FAIL=0"
+next_exact_action: "Derive or refute the accepted C3 circulant generation operator and source response."

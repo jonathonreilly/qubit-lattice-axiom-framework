@@ -2037,6 +2037,11 @@
       "reason": "not present on current surface; prior C3-breaking routes are obstructed",
       "retained_grade": false
     },
+    "c3_preserving_nondegenerate_spectral_dynamics": {
+      "can_select_P_top": true,
+      "reason": "live if an accepted same-surface circulant dynamics derives spectral projectors, ordering, and source-generator matrix elements",
+      "retained_grade": true
+    },
     "empirical_pole_or_spectrum_input": {
       "can_select_P_top": true,
       "reason": "imports observed spectrum or target data",
@@ -2090,7 +2095,7 @@
     }
   },
   "generated_by": "scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py",
-  "pass_count": 84,
+  "pass_count": 85,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The current C3-symmetric staggered/generation surface does not canonically choose the physical top generation projector. The six-component carrier coefficient remains exact support, but top-specific pole authority needs a projector/dynamics theorem or strict pole-row evidence.",
   "reachability_to_target": "prunes",

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 523 |
+| **retained_bounded** | 524 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1177 |
+| unaudited | 1176 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 821 |
+| `audited_clean` | 822 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1406 |
+| `unaudited` | 1405 |
 
 | claim_type | count |
 |---|---:|
@@ -102,8 +102,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 179 | 38.99 | `unaudited` | unaudited |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
 | 8 | `alpha_s_derived_note` | bounded_theorem | critical | 711 | 37.98 | `unaudited` | unaudited |
-| 9 | `minimal_axioms` | meta | critical | 1039 | 36.52 | `unaudited` | meta |
-| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 34.12 | `audited_clean` | **retained_no_go** |
+| 9 | `yt_ew_color_projection_theorem` | no_go | critical | 554 | 37.12 | `audited_clean` | **retained_no_go** |
+| 10 | `minimal_axioms` | meta | critical | 1039 | 36.52 | `unaudited` | meta |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1020 | 34.00 | `audited_clean` | **retained** |
 | 12 | `minimal_axioms_2026-04-11` | meta | critical | 932 | 33.87 | `unaudited` | meta |
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 749 | 33.55 | `audited_clean` | **retained_bounded** |
@@ -340,6 +340,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4765,6 +4766,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** if `g_3^2 = 1`, `g_2^2 = 1/(d + 1)`, and `g_Y^2 = 1/(d + 2)`, then `1/g_em^2 = 2d + 3`  _(class `A`)_
 - **chain closes:** True — The note explicitly limits itself to algebra after the coupling inputs are assumed, and the stated identities follow by direct substitution. It does not claim to derive the inputs or a physical low-energy readout.
 - **rationale:** Within the bounded scope, the load-bearing step is ordinary algebra over explicitly assumed inputs, not a claimed first-principles derivation. The runner verifies the same substitutions and also checks boundary language in extra files, but those extra files are not needed for the scoped conditional identity. No external comparator, renaming, or tuned numerical match is present in the source note's actual claim boundary.
+- **auditor confidence:** high
+
+### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic implication only: given the literature input u_0(SU(2)) in [0.96, 0.98], the named scale ratio L = ln(M_Pl/v) = 38.44, the standard one-loop SU(2) running equation, and the retained/retained_bounded lattice-anchor, beta-coefficient, native-SU(2), Wilson-normalization, and tadpole vertex-power inputs, exact substitution plus monotonicity gives g_2(v = 246 GeV) in [0.659392836186702, 0.682834304553707]. No derivation of u_0, L, the one-loop RGE, a PDG comparator, or a point prediction is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Equations (R1)-(R3) substitute the explicit inputs into 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L and then invert to g_2(v), while (M1)/(S7) proves the endpoint reversal because d/du_0[1/alpha_2(v)] = 32*pi*u_0 > 0.  _(class `A`)_
+- **chain closes:** True — The scoped result is an algebraic bounded implication over explicit hypotheses. The direct ledger dependencies are retained-grade or decoration-under-retained, and the remaining non-framework inputs are explicitly scoped as named admissions rather than claimed derivations. The runner recomputes the symbolic formula, monotonicity, endpoint reversal, and decimal interval with PASS=18 FAIL=0.
+- **rationale:** No-go/admission gate: this row does not assert a no-go or wall closure; it states a bounded implication with explicit admissions. The admission set is u_0(SU(2)) in [0.96,0.98], L=38.44, and the standard one-loop SU(2) running equation; treating those as hypotheses, not derived outputs, avoids hidden-wall inflation. The load-bearing algebra then closes: the denominator is 16*pi*u_0^2 - (b_2/(2*pi))*L, monotonicity maps u_hi to the lower g_2 endpoint and u_lo to the upper endpoint, and the exact runner reproduces the displayed interval. Residual risk is bounded-scope only: deriving u_0, the scale ratio, or the one-loop RGE from framework primitives would require separate retained rows, and this audit does not promote a point value or PDG match.
 - **auditor confidence:** high
 
 ### `g_bare_canonical_convention_narrow_theorem_note_2026-05-02`

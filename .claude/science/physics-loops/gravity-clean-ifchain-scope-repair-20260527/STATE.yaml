@@ -1,0 +1,26 @@
+loop_slug: gravity-clean-ifchain-scope-repair-20260527
+target_claim_id: gravity_clean_derivation_note
+target_status: bounded-support
+actual_current_surface_status: unaudited
+branch: physics-loop/gravity-clean-ifchain-scope-repair-20260527
+base: origin/main
+created_utc: 2026-05-27
+cycle_count: 1
+active_route: bounded IF-chain scope repair
+hard_residual: source note overclaimed single-axiom zero-free-parameter Newton derivation
+files_touched:
+  - docs/GRAVITY_CLEAN_DERIVATION_NOTE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+open_imports:
+  - derivation of L^{-1}=G_0 remains open
+  - physical source map rho=|psi|^2 remains open
+  - weak-field response S=L(1-phi) remains open
+  - framework-normalized Green-function bridge remains open
+review_status: vocab/pipeline pass; independent audit required
+pr_status: pending
+next_exact_action: open review PR
+stop_condition: one coherent scope repair packaged

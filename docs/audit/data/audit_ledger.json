@@ -119465,54 +119465,24 @@
       "verdict_rationale": null
     },
     "gravity_clean_derivation_note": {
-      "audit_date": "2026-05-26T22:20:50.073027+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`.",
-          "poisson_exhaustive_uniqueness_note": "Finite N = 16 Dirichlet-grid candidate-enumeration diagnostic over the runner's enumerated operator tests, not a continuum Poisson uniqueness theorem or exhaustive theorem over all local symmetric operators.",
-          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives.",
-          "staggered_fermion_card_2026-04-11": "Fixed finite runner certificate only: the primary wrapper executes scripts/frontier_staggered_17card.py at MASS=0.3, G=50.0, S=5e-4, DT=0.15 and verifies the stated 17/17 scores for 1D n=61 and 3D n=9,11,13, including the stated C17 family-coverage gates."
-        },
-        "dep_claim_type": {
-          "gravity_full_self_consistency_note": "bounded_theorem",
-          "poisson_exhaustive_uniqueness_note": "bounded_theorem",
-          "self_consistency_forces_poisson_note": "bounded_theorem",
-          "staggered_fermion_card_2026-04-11": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gravity_full_self_consistency_note": "retained_bounded",
-          "poisson_exhaustive_uniqueness_note": "retained_bounded",
-          "self_consistency_forces_poisson_note": "retained_bounded",
-          "staggered_fermion_card_2026-04-11": "retained_bounded"
-        },
-        "deps": [
-          "gravity_full_self_consistency_note",
-          "poisson_exhaustive_uniqueness_note",
-          "self_consistency_forces_poisson_note",
-          "staggered_fermion_card_2026-04-11"
-        ],
-        "load_bearing_score": 17.624,
-        "runner_hash": null,
-        "transitive_descendants": 278
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-xhigh-fresh-gravity-clean-derivation-pass1-C75Ktt-2026-05-26",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The narrow algebraic IF-chain closes only after the closure identity and source/response maps are granted as hypotheses. The source note as a whole still asserts a complete zero-free-parameter derivation from the single axiom and cites one-hop dependencies beyond their bounded scopes, so the stated note does not close as written.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gravity_clean_derivation_note",
-      "claim_scope": "Bounded IF-chain: if the framework stipulates L^{-1}=G_0, rho=|psi|^2 as gravitational mass density, the weak-field test-mass response S=L(1-phi), and the Z^3 lattice Green-function asymptotic, then the lattice Poisson equation gives a 1/r potential and inverse-square force in lattice units.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-26T22:20:50.073027+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -119523,25 +119493,20 @@
         "staggered_fermion_card_2026-04-11"
       ],
       "direct_in_degree": 19,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 17.624,
-      "load_bearing_step": "The note's load-bearing move is the assertion that self-consistency requires L^{-1}=G_0, followed by inversion to L=G_0^{-1}=-Delta_lat and source/response identifications to obtain the force law.",
-      "load_bearing_step_class": "F",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "9cb56948dd6885f8c17a2f2e01e3982698673edb9677f7f63041b10954abc717",
+      "note_hash": "d3c0f4338777ca29f5e5bb8fff8e411bc2f7204760c2c7c73eb2b38afccaaada",
       "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: rewrite the source note so every binding claim is the bounded IF-chain only, remove or explicitly supersede the single-axiom/zero-free-parameter/clean-chain prose, and add retained bridge theorems if any future audit is meant to derive L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), or the lattice Green-function normalization rather than assume them.",
-      "open_dependency_paths": [
-        "docs/SELF_CONSISTENCY_FORCES_POISSON_NOTE.md",
-        "docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md",
-        "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
-        "docs/STAGGERED_FERMION_CARD_2026-04-11.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
         {
@@ -119724,22 +119689,89 @@
             "total_pass": 0
           },
           "verdict_rationale": "No runner output or source is available, so the runner cannot supply first-principles support. From the note text alone, the decisive step is an imposed identification between the propagator Green function and the gravitational field Green function, not a derivation from the axiom. The note itself acknowledges that the closure condition, Born/mass-density source map, weak-field response map, and Green-function theorem are not registered audit-clean dependencies. The safe audited result is therefore only the conditional chain granted those premises."
+        },
+        {
+          "archived_at": "2026-05-27T14:41:22.049006+00:00",
+          "archived_for_note_hash": "9cb56948dd6885f8c17a2f2e01e3982698673edb9677f7f63041b10954abc717",
+          "audit_date": "2026-05-26T22:20:50.073027+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`.",
+              "poisson_exhaustive_uniqueness_note": "Finite N = 16 Dirichlet-grid candidate-enumeration diagnostic over the runner's enumerated operator tests, not a continuum Poisson uniqueness theorem or exhaustive theorem over all local symmetric operators.",
+              "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives.",
+              "staggered_fermion_card_2026-04-11": "Fixed finite runner certificate only: the primary wrapper executes scripts/frontier_staggered_17card.py at MASS=0.3, G=50.0, S=5e-4, DT=0.15 and verifies the stated 17/17 scores for 1D n=61 and 3D n=9,11,13, including the stated C17 family-coverage gates."
+            },
+            "dep_claim_type": {
+              "gravity_full_self_consistency_note": "bounded_theorem",
+              "poisson_exhaustive_uniqueness_note": "bounded_theorem",
+              "self_consistency_forces_poisson_note": "bounded_theorem",
+              "staggered_fermion_card_2026-04-11": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gravity_full_self_consistency_note": "retained_bounded",
+              "poisson_exhaustive_uniqueness_note": "retained_bounded",
+              "self_consistency_forces_poisson_note": "retained_bounded",
+              "staggered_fermion_card_2026-04-11": "retained_bounded"
+            },
+            "deps": [
+              "gravity_full_self_consistency_note",
+              "poisson_exhaustive_uniqueness_note",
+              "self_consistency_forces_poisson_note",
+              "staggered_fermion_card_2026-04-11"
+            ],
+            "load_bearing_score": 17.624,
+            "runner_hash": null,
+            "transitive_descendants": 278
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-gravity-clean-derivation-pass1-C75Ktt-2026-05-26",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The narrow algebraic IF-chain closes only after the closure identity and source/response maps are granted as hypotheses. The source note as a whole still asserts a complete zero-free-parameter derivation from the single axiom and cites one-hop dependencies beyond their bounded scopes, so the stated note does not close as written.",
+          "claim_scope": "Bounded IF-chain: if the framework stipulates L^{-1}=G_0, rho=|psi|^2 as gravitational mass density, the weak-field test-mass response S=L(1-phi), and the Z^3 lattice Green-function asymptotic, then the lattice Poisson equation gives a 1/r potential and inverse-square force in lattice units.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T22:20:50.073027+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The note's load-bearing move is the assertion that self-consistency requires L^{-1}=G_0, followed by inversion to L=G_0^{-1}=-Delta_lat and source/response identifications to obtain the force law.",
+          "load_bearing_step_class": "F",
+          "notes_for_re_audit_if_any": "scope_too_broad: rewrite the source note so every binding claim is the bounded IF-chain only, remove or explicitly supersede the single-axiom/zero-free-parameter/clean-chain prose, and add retained bridge theorems if any future audit is meant to derive L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), or the lattice Green-function normalization rather than assume them.",
+          "open_dependency_paths": [
+            "docs/SELF_CONSISTENCY_FORCES_POISSON_NOTE.md",
+            "docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md",
+            "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+            "docs/STAGGERED_FERMION_CARD_2026-04-11.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the note still presents a clean single-axiom, zero-free-parameter Newton derivation, while its one-hop dependencies only support bounded diagnostics or stipulated implications. Why this blocks: GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as a stipulated closure identity; SELF_CONSISTENCY_FORCES_POISSON_NOTE and POISSON_EXHAUSTIVE_UNIQUENESS_NOTE are bounded finite/operator-family diagnostics; and STAGGERED_FERMION_CARD_2026-04-11 explicitly does not derive rho=|psi|^2 as a physical gravity source. Repair target: rewrite the source note so every binding claim is the bounded IF-chain only, or add retained bridge theorems for L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), and the lattice Green-function normalization. Claim boundary until fixed: conditional weak-field chain under those stipulated inputs."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_fail": 0,
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Clean Derivation: Cl(3) on Z^3 to Newton's Inverse-Square Law (Conditional)",
+      "title": "Conditional Weak-Field Gravity IF-Chain on `Z^3`",
       "transitive_descendants": 278,
-      "verdict_rationale": "Issue: the note still presents a clean single-axiom, zero-free-parameter Newton derivation, while its one-hop dependencies only support bounded diagnostics or stipulated implications. Why this blocks: GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as a stipulated closure identity; SELF_CONSISTENCY_FORCES_POISSON_NOTE and POISSON_EXHAUSTIVE_UNIQUENESS_NOTE are bounded finite/operator-family diagnostics; and STAGGERED_FERMION_CARD_2026-04-11 explicitly does not derive rho=|psi|^2 as a physical gravity source. Repair target: rewrite the source note so every binding claim is the bounded IF-chain only, or add retained bridge theorems for L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), and the lattice Green-function normalization. Claim boundary until fixed: conditional weak-field chain under those stipulated inputs."
+      "verdict_rationale": null
     },
     "gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25": {
       "audit_date": null,
@@ -312240,8 +312272,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2394,
-    "re_audit_required": 0,
+    "preserved_existing": 2393,
+    "re_audit_required": 1,
     "row_count": 2438,
     "seeded_new": 0
   }

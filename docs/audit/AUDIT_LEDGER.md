@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 486 |
+| **retained_bounded** | 487 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1243 |
+| unaudited | 1242 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 778 |
+| `audited_clean` | 779 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1472 |
+| `unaudited` | 1471 |
 
 | claim_type | count |
 |---|---:|
@@ -173,6 +173,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bound_state_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `bridge_gap_hk_time_derivation_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1867,6 +1868,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The one-hop dependencies are now retained-grade and support the bounded 2-body branch-entanglement interpretation and corrected 3-body W-type interpretation. The current source note and runner output close the scoped robustness claim without relying on full BMV witness status or an external comparator.
 - **rationale:** The clean verdict applies only to the bounded numerical protocol theorem stated in the note. The load-bearing runner output gives positive 2-body delta_S across all audited sweeps and confirms the corrected 3-body W-type, non-GHZ interpretation with tau_3 = 0 and positive bipartite entropies. The prior dependency block is resolved because both cited one-hop dependencies now have retained-grade status. Plot generation failed due to missing matplotlib, but that does not affect the load-bearing numerical checks.
 - **auditor confidence:** medium
+
+### `bridge_gap_hk_time_derivation_note_2026-05-06`
+
+- **Note:** [`BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md`](../../docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded leading-order small-U Wilson-to-heat-kernel Brownian-time matching: under canonical Tr(T_a T_b)=delta_ab/2, admitted Wilson/action-form and heat-kernel comparison assumptions, and canonical g_bare=1 with N_c=3, the matching gives t(beta)=2 N_c/beta=g_bare^2 and t(6)=1; no action-form uniqueness, finite-beta correction, thermodynamic plaquette, or bridge-gap closure is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-bridge-gap-hk-time-2026-05-26-fresh-auditor`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Set the Wilson quadratic coefficient equal to the heat-kernel quadratic coefficient, (beta/(4 N_c))|X|^2 = |X|^2/(2t), hence t = 2 N_c / beta = g_bare^2 and t(6)=1.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded surface, the conclusion follows by ordinary algebra from the canonical trace/norm relation, the Wilson small-U quadratic coefficient, and the standard local heat-kernel Gaussian asymptotic on a compact Lie group. The standard Brownian-motion/heat-kernel facts are acceptable mathematical machinery here because they are used only for the local asymptotic matching, not to import a physical action-choice or thermodynamic bridge.
+- **rationale:** The source is explicit that this is only a leading-order bounded matching theorem and not a resolution of the bridge gap, action-form uniqueness, finite-beta corrections, or thermodynamic plaquette behavior. The load-bearing calculation is a class-A coefficient match, and the cited retained-bounded/decoration inputs supply the canonical normalization and N_c=3 surface needed for the scoped result. The runner corroborates the algebraic normalization, small-U expansion, t(beta)=2N_c/beta, and t(6)=1 checks; its heat-kernel plaquette preview is non-load-bearing and does not introduce an external comparator. No hidden fitted value or physical observable bridge is used inside the audited scope.
+- **auditor confidence:** high
 
 ### `broad_surrogate_point_source_compare_note`
 

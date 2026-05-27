@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 235,
-    "high": 347,
+    "high": 346,
     "leaf": 327,
     "medium": 334
   },
@@ -6658,7 +6658,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "bridge_gap_hk_time_derivation_note_2026-05-06",
+      "claim_id": "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "migration_hint",
@@ -6666,20 +6666,20 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "g_bare_structural_normalization_theorem_note_2026-04-18",
+        "bridge_gap_hk_time_derivation_note_2026-05-06",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
-        "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+        "g_bare_structural_normalization_theorem_note_2026-04-18"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.19,
-      "note_path": "docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md",
+      "load_bearing_score": 8.68,
+      "note_path": "docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/probe_hk_time_derivation.py",
-      "transitive_descendants": 145
+      "runner_path": "scripts/probe_hk_plaquette_closed_form.py",
+      "transitive_descendants": 144
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -10756,33 +10756,6 @@
       "ready": false,
       "runner_path": "scripts/universal_gr_positive_background_local_closure.py",
       "transitive_descendants": 145
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "bridge_gap_hk_time_derivation_note_2026-05-06",
-        "su3_casimir_fundamental_theorem_note_2026-05-02",
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-        "g_bare_structural_normalization_theorem_note_2026-04-18"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.68,
-      "note_path": "docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/probe_hk_plaquette_closed_form.py",
-      "transitive_descendants": 144
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -37408,5 +37381,5 @@
     }
   ],
   "ready_count": 61,
-  "total_pending": 1243
+  "total_pending": 1242
 }

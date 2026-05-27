@@ -1569,6 +1569,14 @@
       "to": "axiom_first_hawking_temperature_theorem_note_2026-05-01"
     },
     {
+      "from": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+      "to": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+    },
+    {
       "from": "axiom_reduction_note",
       "to": "born_rule_analysis_2026-04-11"
     },
@@ -42160,6 +42168,21 @@
       "path": "docs/AXIOM_FIRST_UNRUH_TEMPERATURE_THEOREM_NOTE_2026-05-01.md",
       "runner_path": "scripts/axiom_first_unruh_temperature_check.py",
       "title": "Axiom-First Unruh Temperature from KMS + Framework Lorentz Kernel"
+    },
+    "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": {
+      "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6c1ef488ecfdf777c993024f1c02671ff9dbc69290d3bed43f1894bb809bcc9c",
+      "path": "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py",
+      "title": "Finite Z_N Spectral-Asymmetry Weight-Sum Theorem (Bounded)"
     },
     "axiom_reduction_note": {
       "claim_id": "axiom_reduction_note",
@@ -85358,7 +85381,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 603,
+      "bounded_theorem": 604,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
@@ -85367,7 +85390,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1022,
+      "bounded_theorem": 1023,
       "decoration": 1,
       "meta": 191,
       "no_go": 183,
@@ -85375,10 +85398,10 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9742,
-    "leaf_count": 789,
-    "node_count": 2543,
+    "edge_count": 9744,
+    "leaf_count": 790,
+    "node_count": 2544,
     "root_count": 848,
-    "runners_with_path": 2114
+    "runners_with_path": 2115
   }
 }

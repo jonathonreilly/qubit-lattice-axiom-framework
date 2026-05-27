@@ -419,10 +419,17 @@ PR #1980:
 99cb22cc28a6cce78465096065c683b97efa8c99
 ```
 
-Cubic invariant phase-selector support commit pending PR update:
+Cubic invariant phase-selector support commit pushed and recorded in PR #1980:
 
 ```text
 e7550c86583a77da9aaae2830abb030371393276
+```
+
+Cubic invariant phase-selector handoff checkpoint pushed and recorded in
+PR #1980:
+
+```text
+5e89a60b98f4e91d8c4a32ba2e27bef61373888e
 ```
 
 Previous science commit pushed and recorded in PR #1980 before this cycle:

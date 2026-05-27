@@ -9,11 +9,11 @@ Six-element family {M(N), V(N) for N in {N_pair, N_color, N_quark}}:
   V(N) = (N-1)/N^2    (Bernoulli variance)
 
   B1: M(N_pair)  = 1/2     [framework-native]
-  B2: M(N_color) = 2/3     = A^2 [retained W2]
-  B3: M(N_quark) = 5/6     = 1 - rho = sin^2(gamma_bar) [retained]
+  B2: M(N_color) = 2/3     = A^2 [W2 structural input]
+  B3: M(N_quark) = 5/6     = 1 - rho = sin^2(gamma_bar) [CP structural input]
   B4: V(N_pair)  = 1/4
   B5: V(N_color) = 2/9     [from prior 2/9 branches]
-  B6: V(N_quark) = 5/36    = eta^2 [retained Thales]
+  B6: V(N_quark) = 5/36    = eta^2 [Thales structural input]
 
   MV1: V(N) = M(N)/N at all three levels [universal Bernoulli relation]
 
@@ -21,7 +21,7 @@ Cross-level decompositions (NEW):
   D1: rho = V(N_pair) * M(N_color) = (1/4)(2/3) = 1/6
   D2: A^2 rho = V(N_color) * M(N_pair) = (2/9)(1/2) = 1/9
 
-ALL INPUTS RETAINED on current main:
+Upstream CKM structural inputs on current main:
 - W2 A^2 = N_pair/N_color = M(N_color) (WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES)
 - rho = 1/N_quark, eta^2 = (N_quark-1)/N_quark^2 = V(N_quark)
   (CKM_CP_PHASE_STRUCTURAL_IDENTITY)
@@ -77,7 +77,7 @@ def V(N: int) -> Fraction:
 
 
 def audit_inputs() -> None:
-    banner("Retained inputs on current main")
+    banner("Upstream CKM structural inputs on current main")
 
     print(f"  N_pair = {N_PAIR}, N_color = {N_COLOR}, N_quark = {N_QUARK}")
     print(f"  A^2 = N_pair/N_color  = {Fraction(N_PAIR, N_COLOR)}")
@@ -93,15 +93,15 @@ def audit_inputs() -> None:
           Fraction(N_QUARK - 1, N_QUARK ** 2) == Fraction(5, 36))
 
     repo_root = Path(__file__).resolve().parents[1]
-    upstream_retained = (
+    upstream_sources = (
         "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
         "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
         "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
         "docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
     )
-    for rel in upstream_retained:
+    for rel in upstream_sources:
         path = repo_root / rel
-        check(f"retained on main: {rel}", path.exists())
+        check(f"upstream source exists: {rel}", path.exists())
 
 
 def audit_six_element_family() -> None:
@@ -119,13 +119,13 @@ def audit_six_element_family() -> None:
 
     print("  Mean form M(N) = (N-1)/N:")
     print(f"    B1: M(N_pair)  = 1/2  = {M_pair}  [framework-native]")
-    print(f"    B2: M(N_color) = 2/3  = {M_color}  = A^2 [W2 retained]")
+    print(f"    B2: M(N_color) = 2/3  = {M_color}  = A^2 [W2 input]")
     print(f"    B3: M(N_quark) = 5/6  = {M_quark}  = 1 - rho = sin^2(gamma_bar)")
     print()
     print("  Variance form V(N) = (N-1)/N^2:")
     print(f"    B4: V(N_pair)  = 1/4  = {V_pair}")
     print(f"    B5: V(N_color) = 2/9  = {V_color}  [from prior branches]")
-    print(f"    B6: V(N_quark) = 5/36 = {V_quark}  = eta^2 [Thales retained]")
+    print(f"    B6: V(N_quark) = 5/36 = {V_quark}  = eta^2 [Thales input]")
 
     check("(B1) M(N_pair) = 1/2", M_pair == Fraction(1, 2))
     check("(B2) M(N_color) = A^2 = 2/3", M_color == Fraction(2, 3))
@@ -227,11 +227,12 @@ def audit_summary() -> None:
     print("              [Cross-level decomposition of CP-phase rho]")
     print()
     print("  NEW (D2):   A^2 rho = V(N_color) * M(N_pair) = (2/9)(1/2) = 1/9")
-    print("              [Cross-level decomposition of the retained A^2 rho product]")
+    print("              [Cross-level decomposition of the A^2 rho product]")
     print()
     print("  Duality: D1 and D2 swap pair↔color and variance↔mean roles.")
     print()
-    print("  All inputs retained on main; no SUPPORT-tier or open inputs are used.")
+    print("  Upstream CKM structural inputs are cited separately; no cross-sector Koide")
+    print("  bridge, bare-coupling support note, or open quark/lepton bridge is used.")
 
 
 def main() -> int:

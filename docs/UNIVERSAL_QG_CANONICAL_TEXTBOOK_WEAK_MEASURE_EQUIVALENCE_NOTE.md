@@ -3,6 +3,7 @@
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / canonical textbook continuum
 weak-form and Gaussian-measure theorem
+**Primary runner:** [`scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py`](../scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py)
 
 ## Verdict
 

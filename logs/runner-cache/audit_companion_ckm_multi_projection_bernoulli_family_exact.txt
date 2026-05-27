@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_multi_projection_bernoulli_family_exact.py
+runner_sha256: e0881042ab54d8198a9549afedf9a4630f49fd057d62d64aa8188cfbefc9423f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_multi_projection_bernoulli_family_theorem_note_2026-04-25
@@ -89,3 +97,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=23, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

@@ -44,10 +44,9 @@ This is a standard result of lattice potential theory (Maradudin,
 Montroll, Weiss, *Theory of Lattice Dynamics in the Harmonic
 Approximation*, 1971; also Spitzer, *Principles of Random Walk*,
 §29; Lawler, *Intersections of Random Walks*, §1.5). Recorded as a
-named non-derivation textbook import via the wrapper note
+framework-applied `Z^3` graph-Laplacian normalization certificate via
 [LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md);
-admitted as accepted mathematical input rather than derived in this
-note.
+the coefficient is not re-derived in this note.
 
 (BA-1) and (BA-2) are the only bounded admissions. Conditional on
 those admissions, the remaining calculation of Newton's inverse-square

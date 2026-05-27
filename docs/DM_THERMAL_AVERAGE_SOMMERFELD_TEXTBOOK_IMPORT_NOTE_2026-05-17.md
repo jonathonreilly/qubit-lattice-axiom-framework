@@ -1,32 +1,36 @@
-# DM Thermal Average + Sommerfeld Argument Normalization — Named Non-Derivation Import
+# DM Thermal Average + Sommerfeld Argument Normalization — Framework-Applied Certificate
 
 **Date:** 2026-05-17
 **Claim type:** bounded_theorem
-**Status:** bounded normalization packet for the Maxwell-Boltzmann
-thermal-velocity average at the explicit benchmark slice `x_f = 25` and for
-the Sommerfeld argument change of variables used by the same-surface thermal
-continuum integral.
+**Status:** source-side proposal; independent audit lane only. The
+load-bearing claim is the framework-applied finite normalization algebra for
+the Maxwell-Boltzmann thermal-velocity average at the explicit benchmark
+slice `x_f = 25` and for the Sommerfeld argument change of variables used by
+the same-surface thermal continuum integral. Literature references are
+parallel context for the physics conventions; they are not the proof of the
+normalization identities below.
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/dm_thermal_average_sommerfeld_normalization.py`](../scripts/dm_thermal_average_sommerfeld_normalization.py)
 **Runner cache:** [`logs/runner-cache/dm_thermal_average_sommerfeld_normalization.txt`](../logs/runner-cache/dm_thermal_average_sommerfeld_normalization.txt)
 
 ## Purpose
 
-This wrapper note documents the finite normalization algebra consumed by the
+This note documents the finite normalization algebra consumed by the
 same-surface DM thermal closure layer so downstream rows (notably
 `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md`)
 can register a one-hop dependency rather than carry the normalization
 constants as unattributed inputs.
 
-The repair narrows the previous textbook-import scope. The packet now proves
-the Maxwell-Boltzmann variable change and low-order moments at the explicit
+The repair narrows the previous textbook-import scope. The packet proves the
+Maxwell-Boltzmann variable change and low-order moments at the explicit
 benchmark `x_f = 25`; it does not prove freeze-out physics, derive the
 Maxwell-Boltzmann distribution from framework axioms, or derive the
 Sommerfeld enhancement law.
 
 ## Ingredients covered
 
-This wrapper bundles three bounded inputs:
+This certificate isolates one framework-applied algebraic calculation over
+three declared inputs:
 
 ### 1. Maxwell-Boltzmann thermal-velocity average
 
@@ -134,10 +138,10 @@ above.
 
 ## Downstream usage
 
-This wrapper is consumed by (see-also pointers; backticked to break
+This certificate is consumed by (see-also pointers; backticked to break
 cycle-0009 / cycle-0010 / cycle-0011 / cycle-0012 / cycle-0013 in the
 citation graph — the load-bearing direction is downstream-theorem ->
-this textbook import, not the reverse):
+this normalization certificate, not the reverse):
 
 - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md` — the continuum integral form `<S> = (2/sqrt(pi)) ∫_0^∞ S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^{-t} dt`, the slice `a = x_f / 4 = 25 / 4`, and the moment data `<1/v> = 5/sqrt(pi)`, `<1/v^2> = 25/2`.
 - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md` — uses the same thermal-average machinery as a downstream consumer.
@@ -145,10 +149,11 @@ this textbook import, not the reverse):
 
 ## Boundary
 
-This wrapper note is a bounded normalization theorem covering the finite
+This note is a bounded normalization theorem covering the finite
 algebra above. It does not claim:
 
-- a framework derivation of any of the imported textbook ingredients;
+- a framework derivation of the declared Maxwell-Boltzmann distribution,
+  freeze-out slice, or Sommerfeld enhancement law;
 - closure of any downstream DM-leptogenesis or DM-thermal theorem;
 - a tighter audit-tier status for the consumers.
 

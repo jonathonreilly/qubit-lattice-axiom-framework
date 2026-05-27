@@ -1,10 +1,43 @@
-# g_bare Hilbert–Schmidt Rigidity Theorem (Independent Rescaling-Freedom Closure)
+# g_bare Hilbert–Schmidt Rigidity Theorem (R1–R3 Bounded Algebraic Core)
 
-**Date:** 2026-05-07
-**Claim type:** positive_theorem
-**Status:** unaudited candidate. This note is graph-visible only so the
-independent audit lane can decide its audit and effective status.
+**Date:** 2026-05-07 (original); 2026-05-27 (R4/R5 narrowed out of scope
+per audit verdict).
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
 **Primary runner:** [`scripts/frontier_g_bare_audit_residual_closure.py`](../scripts/frontier_g_bare_audit_residual_closure.py)
+
+## 2026-05-27 Audit Repair
+
+The 2026-05-26 audit verdict (`codex-audit-loop-gpt-5.5-2026-05-26`)
+on this row was `audited_conditional` with explicit closure issue:
+
+> *"The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes,
+> but the source row as written also includes R4/R5 claims that
+> coefficient rescaling is merely coordinate redundancy on the same
+> physical connection and that Wilson coefficient routing supports
+> the g_bare interpretation. Why this blocks: the trace-Casimir
+> identity proves only generator-basis rigidity under a fixed
+> algebraic form; it does not derive the physical
+> connection-equivalence relation, Wilson plaquette action form, or
+> matching surface from retained inputs."*
+
+The auditor's repair instruction: *"split/narrow the source and ledger
+scope to the standalone R1-R3 bounded algebraic theorem, or add
+retained bridge theorems for physical connection equivalence and
+Wilson action routing."*
+
+This repair takes the **narrow path**: R1-R3 stay as the load-bearing
+bounded algebraic theorem; R4 (connection rescaling redundancy) and R5
+(Wilson coefficient routing) are explicitly demoted to out-of-scope
+companion observations that **require unsupplied retained bridge
+theorems** before they can be load-bearing. No new axiom or import is
+added.
+
+This row's claim boundary until those bridges land: R1-R3 may be used
+as a clean algebraic core; this row **must not** be cited for Wilson
+action form, running/fixed-point selection, N_F = 1/2 from Cl(3),
+absolute g_bare = 1 from A1+A2, or the parent broad g_bare derivation.
 
 ## 0. Audit context
 
@@ -78,21 +111,17 @@ normalization.
 > Equivalently, there exists **no scalar dilation that lies in the
 > automorphism group of the canonical inner-product structure on
 > `g_conc`**.
->
-> **(R4) Connection rescaling reduces to coordinate redundancy.** The
-> rescaling `A → c A` of an arbitrary connection `A_op = Σ_a A^a T_a`
-> is the substitution `A^a → c A^a` of coefficients. With the operator
-> basis `{T_a}` pinned by (R3), the connection `A_op` itself does not
-> change under this substitution unless we *also* dilate the
-> generators (forbidden by R3). Hence `A → c A` carries no independent
-> physical content; it is coordinate redundancy on the fixed operator
-> `A_op`.
->
-> **(R5) Wilson-coefficient routing.** Under any *non-canonical* basis
-> with `T_a → c T_a`, the Wilson plaquette small-`a` matching produces
-> `β_new = c² · β_old`, leaving `g_bare` unchanged. This routes the
-> abstract continuum-rescaling freedom into the action coefficient
-> `β`, not into a separate `g_bare` parameter.
+
+R1-R3 are the **load-bearing in-scope content** of this row.
+
+The earlier draft included two further claims labeled R4 and R5
+(connection rescaling redundancy and Wilson-coefficient routing).
+Per the 2026-05-26 audit verdict, those claims **require unsupplied
+retained bridge theorems** (a physical connection-equivalence
+relation and a Wilson plaquette matching surface) and are therefore
+**out of scope** here. They are recorded as companion observations
+in §"Companion observations (out of scope)" below and do not bind on
+R1-R3 closure.
 
 The theorem **does not** claim:
 
@@ -174,28 +203,14 @@ Step 4 (No nontrivial joint preservation).
   (Sign flip c = -1 reverses orientation but preserves both invariants;
   this is the discrete reflection ambiguity, not a continuous rescaling.)
 
-Step 5 (Connection redundancy).
-  The connection A_op = Σ_a A^a T_a is the operator. Substituting
-  A^a → c A^a yields A_op → c A_op. This is the coefficient rescaling.
-  By Step 4, simultaneously rescaling T_a → c T_a is FORBIDDEN under
-  fixed B_HS, so the only legitimate "rescaling" reduces to coefficient
-  rescaling, which is coordinate redundancy on the same physical
-  operator A_op (no new physical content).
-
-Step 6 (Wilson coefficient routing).
-  Suppose we admit a non-canonical basis T_a → c T_a (which violates
-  Steps 1-4 but is the historical "A → A/g" rescaling reading). Then
-  Wilson small-a matching at fixed continuum kinetic term
-  (1/(2 g²)) Tr(F²) gives
-      β_new = c² · β_old,
-  leaving g_bare unchanged. The continuum rescaling freedom thereby
-  routes itself into β, not into g_bare.
+[Steps 5-6 retired to "Companion observations (out of scope)" below.]
 ```
 
-This load-bearing chain is class (A) — algebraic identities on the
-framework's fixed Hilbert-space structure plus standard Lie-algebra
-rigidity. It does NOT use the Gell-Mann basis values as input; it uses
-the *form* directly.
+Steps 1-4 above are the **load-bearing chain** for R1-R3 and are
+class (A) — algebraic identities on the framework's fixed
+Hilbert-space structure plus standard Lie-algebra rigidity. They do
+NOT use the Gell-Mann basis values as input; they use the *form*
+directly.
 
 ## 5. Why this is not a decoration of `cl3_color_automorphism_theorem`
 
@@ -231,20 +246,66 @@ python3 scripts/frontier_g_bare_audit_residual_closure.py
 
 Verifies, in `Section H`:
 
-1. The Hilbert–Schmidt form `B_HS` on `g_conc ⊂ End(V_3)` is
+1. (R1) The Hilbert–Schmidt form `B_HS` on `g_conc ⊂ End(V_3)` is
    computed explicitly and shown to be Ad-invariant (numerical Ad
    action by random `SU(3)` group elements preserves the form).
-2. The Casimir `C_F = (8/3) N_F` identity is checked for several
+2. (R2) The Casimir `C_F = (8/3) N_F` identity is checked for several
    basis normalizations `N_F ∈ {1/2, 1, 2, 1/4}` to confirm the
    uniqueness-up-to-scalar structure.
-3. The joint rescaling identity (Step 3) is verified on `c ∈ {1/2,
-   √2, 2, 3}` for both invariants simultaneously.
-4. The "no joint preservation" claim (Step 4) is checked: at every
-   `c ≠ ±1`, both the trace Gram **and** the Casimir change by `c²`,
-   and the canonical pair is recovered ONLY at `c² = 1`.
-5. The Wilson-coefficient routing (Step 6) is verified by repeating
-   the small-`a` plaquette expansion under non-canonical generators
-   and confirming `β_new = c² · β_old`.
+3. (R2 cont.) The joint rescaling identity (Step 3) is verified on
+   `c ∈ {1/2, √2, 2, 3}` for both invariants simultaneously.
+4. (R3) The "no joint preservation" claim (Step 4) is checked: at
+   every `c ≠ ±1`, both the trace Gram **and** the Casimir change
+   by `c²`, and the canonical pair is recovered ONLY at `c² = 1`.
+
+The runner additionally prints a Wilson-coefficient routing check
+that exhibits `β_new = c² · β_old` under non-canonical basis. That
+output is **non-load-bearing** for the present row's R1-R3 scope; it
+is companion-observation evidence for the out-of-scope R5 claim
+discussed below.
+
+## Companion observations (out of scope)
+
+The following two statements were claimed as R4 and R5 in the
+earlier draft. The 2026-05-26 audit verdict identified that they
+require **unsupplied retained bridge theorems** and therefore cannot
+be load-bearing on this row's R1-R3 algebraic core. They are
+recorded here as companion observations for future-work tracking,
+**not** as theorem-grade content.
+
+**(Companion C4 — was R4) Connection rescaling reduces to coordinate
+redundancy.** The rescaling `A → c A` of an arbitrary connection
+`A_op = Σ_a A^a T_a` is the substitution `A^a → c A^a` of
+coefficients. With the operator basis `{T_a}` pinned by R3, the
+connection `A_op` itself does not change under this substitution
+unless we *also* dilate the generators (forbidden by R3).
+
+**Required-but-unsupplied bridge for C4 to become load-bearing:**
+a retained **physical connection-equivalence relation** identifying
+the lattice connection on the framework Hilbert space with `A_op` as
+above, in a sense that lets R3 propagate from generator basis to the
+physical connection variables. The trace-Casimir rigidity does not
+by itself derive this connection-equivalence; it must come from a
+separate retained authority on the physical connection variables.
+
+**(Companion C5 — was R5) Wilson-coefficient routing.** Under a
+*non-canonical* basis with `T_a → c T_a`, the Wilson plaquette
+small-`a` matching gives `β_new = c² · β_old`, leaving `g_bare`
+unchanged.
+
+**Required-but-unsupplied bridge for C5 to become load-bearing:**
+a retained **Wilson plaquette action routing theorem** deriving the
+small-`a` matching surface (Wilson plaquette action form, fixed
+continuum kinetic term, matching prescription) from retained inputs,
+so the `β = c² β` reading is more than a textbook reading of a
+specific action form. The runner's numerical verification of
+`β_new = c² β_old` is consistent with this reading but does not
+constitute the retained Wilson-action-routing bridge.
+
+Until those two bridges land as retained authorities, downstream
+consumers must not cite this row for R4-type connection-equivalence
+or R5-type Wilson-action-routing claims; only the R1-R3 bounded
+algebraic core is in load-bearing scope.
 
 ## 7. The remaining convention layer (overall scalar `k`)
 
@@ -269,15 +330,23 @@ which makes precise that `g_bare = 1` is a *derived constraint* given
 ## 8. Review-lane disposition (audit queued)
 
 ```yaml
-target_claim_type: positive_theorem
+target_claim_type: bounded_theorem
 proposed_claim_scope: |
   Under the framework's fixed Hilbert-space inner product on V = C^8,
   the Hilbert-Schmidt form on g_conc = su(3) ⊂ End(V) is the unique
   Ad-invariant inner product (Killing rigidity); no real c ≠ ±1
   preserves both the trace Gram and the quadratic Casimir
-  simultaneously; the connection rescaling A → c A reduces to
-  coordinate redundancy on the same operator A_op; under any
-  non-canonical basis the Wilson small-a matching routes the rescaling
+  simultaneously. The connection-rescaling and Wilson-coefficient
+  routing observations (former R4/R5) are explicitly out of scope
+  pending retained bridge theorems; until those bridges land the
+  R1-R3 trace-Casimir rigidity is the load-bearing content. The
+  earlier R4/R5 prose is preserved in the Companion-observations
+  section as future-work tracking, not load-bearing claims.
+historical_proposed_claim_scope_below_retired: |
+  Earlier (positive_theorem) draft additionally claimed the
+  connection rescaling A → c A reduces to coordinate redundancy on
+  the same operator A_op and under any non-canonical basis the
+  Wilson small-a matching routes the rescaling
   into β = c² · β, leaving g_bare unchanged.
 proposed_load_bearing_step_class: A
 declared_one_hop_deps:
@@ -339,16 +408,24 @@ distinguishing_content_from_2026-05-03: |
 ## 12. Honest scoping summary
 
 The novelty of the present theorem over the 2026-05-03 candidate is
-the **joint two-form rigidity**: under the framework's fixed
+the **joint two-form rigidity** (R1-R3): under the framework's fixed
 Hilbert–Schmidt form, no scalar dilation `T_a → c T_a` with `c ≠ ±1`
 preserves both the trace Gram and the quadratic Casimir
 simultaneously. Killing-form rigidity (uniqueness of the Ad-invariant
 form on simple `su(3)` up to scalar) is the additional structural
 input that lifts the argument out of the decoration tier.
 
+The connection-equivalence and Wilson-action-routing readings (former
+R4/R5) are explicitly **out of scope** pending retained bridge
+theorems — they appear as companion observations only. The R1-R3
+algebraic core is the load-bearing content; nothing in the present
+row by itself derives the Wilson action form, the small-`a` matching
+surface, or the absolute `g_bare = 1` reading from R1-R3 alone.
+
 The remaining convention layer is the **overall scalar `N_F`** that
 sets the normalization of the Hilbert–Schmidt form. Once `N_F = 1/2`
 is admitted as the canonical Gell-Mann convention, `g_bare = 1`
-follows as a structural constraint. The deeper question — whether
-`N_F = 1/2` itself is forced by Cl(3) alone — is separately tracked
-as a Nature-grade target.
+follows as a structural constraint **conditional on** the
+out-of-scope Wilson-action-routing bridge becoming retained. The
+deeper question — whether `N_F = 1/2` itself is forced by Cl(3)
+alone — is separately tracked as a Nature-grade target.

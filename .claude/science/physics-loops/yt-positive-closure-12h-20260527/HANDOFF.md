@@ -248,9 +248,16 @@ Cycle 11 trace-free centered-source no-go verification:
 - YAML validation passed.
 - `git diff --check` passed.
 
-Cycle 11 trace-free centered-source no-go science commit is pending at this
-checkpoint. PR #1980 body update is pending. No `POSITIVE_CLOSURE` marker was
-written.
+Cycle 11 trace-free centered-source no-go science commit pushed and recorded
+in PR #1980:
+
+```text
+5f54687464e81738f8c40da90a839e30f1dfc60d
+```
+
+PR #1980 body was updated with the trace-free centered-source no-go result,
+artifacts, verification, and next exact action. No `POSITIVE_CLOSURE` marker
+was written.
 
 New strict W/Z plus C3 top-row splice result:
 

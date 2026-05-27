@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Exact runner for the conditional inner-automorphism tracial theorem.
+"""Exact runner for the inner-automorphism fixed-state tracial theorem.
 
 The runner checks the finite-dimensional proof used by
 INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.
-It does not approve PRR as a framework rule; it verifies only:
+It does not approve PRR as a framework rule or identify any specific
+pre-record reference state. It verifies only:
 
-    PRR on M_d(C) => rho = I_d / d.
+    (forall U in U(d), U rho U^dagger = rho) => rho = I_d / d.
 """
 
 from __future__ import annotations
@@ -115,12 +116,11 @@ def test_T5_source_boundary() -> None:
     text = NOTE.read_text(encoding="utf-8")
     required = [
         "**Claim type:** bounded_theorem",
-        "does not approve that",
-        "does not add a new framework axiom or rule",
-        "derive PRR from A1+A2",
-        "conditional bridge theorem",
-        "explicit approval",
-        "Plain-text target row, not a load-bearing dependency",
+        "This repair removes PRR from the binding claim",
+        "does not derive or approve PRR",
+        "does not identify the pre-record reference state",
+        "does not add a new framework axiom, rule, admission, or status verdict",
+        "Plain-text downstream target, not a load-bearing dependency",
     ]
     for item in required:
         check(
@@ -133,6 +133,9 @@ def test_T5_source_boundary() -> None:
         "parent row is closed",
         "P1 is closed",
         "PRR is already part of the framework",
+        "ADMITTED PREMISE (PRR)",
+        "PRR + finite-region",
+        "conditional bridge theorem",
         "audit verdict is retained",
     ]
     hits = [item for item in forbidden if item in text]
@@ -140,7 +143,7 @@ def test_T5_source_boundary() -> None:
 
 
 def main() -> int:
-    print("# Conditional inner-automorphism tracial-identification runner")
+    print("# Inner-automorphism fixed-state tracial-identification runner")
     test_T1_diagonal_unitaries_kill_offdiagonal()
     test_T2_permutation_unitaries_equalize_diagonal()
     test_T3_trace_normalization_fixes_identity_weight()

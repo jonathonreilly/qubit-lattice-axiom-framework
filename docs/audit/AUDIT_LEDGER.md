@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 512 |
+| **retained_bounded** | 513 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1193 |
+| unaudited | 1192 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 809 |
+| `audited_clean` | 810 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1422 |
+| `unaudited` | 1421 |
 
 | claim_type | count |
 |---|---:|
@@ -563,6 +563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_compact_floor_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_h025_constrained_localization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_localization_frontier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `mesoscopic_surrogate_multistage_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8462,6 +8463,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained h=0.5, W=8, segment L=6 3D ordered-lattice family, varying topN shows compact sources remain self-similar but weak while broader sources carry stronger two-stage response while remaining stable.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, source supports, weak surrogate field, two sourced-response stages, and printed metrics directly from the included framework code. The conclusion is bounded to the sampled retained family and does not require a persistent-mass or geometry-generic bridge.
 - **rationale:** The runner source is present and its load-bearing path computes the frontier metrics rather than printing hard-coded expected values. The helper code supplies the lattice propagation, detector indexing, and point-source construction used by the primary runner, with no imported external comparator or tuned empirical constant. All one-hop cited authorities are marked retained_bounded, and the audited conclusion stays within the bounded mesoscopic-source scope rather than claiming persistent mass.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_localization_sweep_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-sweep benchmark only: this runner, this cached table, this explicit mesoscopic benchmark predicate, and the stated fixed 3D ordered-lattice mesoscopic-source setup. This does not certify retained source-control authority, framework-wide optimality, or a least-bad source theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-jason-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The runner's asserted benchmark predicate separates passing broad top-N rows from failing square/Gaussian rows using support, capture, score, and width-ratio thresholds.  _(class `B`)_
+- **chain closes:** True — The claim closes at the finite-table level: the cache facts, benchmark predicate, passing top-N rows, failing square/Gaussian rows, and assertion-gated runner output all align with the narrowed source claim. The row does not rely on treating the benchmark or ordered-lattice setup as retained framework machinery.
+- **rationale:** The bounded claim is audit-clean because the branch-local benchmark is explicitly scoped as a finite runner/table predicate rather than a retained framework principle. The negative statement is limited to the finite sweep: no square/Gaussian row passes this explicit benchmark here, while broad top-N rows do. Residual boundary: downstream citations must not generalize this into source-control authority, physical validity of the ordered-lattice setup, or a theorem over all possible localized families.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_multistage_note`

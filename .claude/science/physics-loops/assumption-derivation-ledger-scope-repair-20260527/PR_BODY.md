@@ -1,5 +1,7 @@
 ## Summary
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2070
+
 Repairs `assumption_derivation_ledger` by narrowing it from a broad package
 status table to the one directly supported authority slice:
 

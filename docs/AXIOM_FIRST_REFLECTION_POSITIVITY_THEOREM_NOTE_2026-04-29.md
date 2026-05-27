@@ -1,231 +1,94 @@
-# Axiom-First Reflection Positivity: Staggered-Only Sector
+# Axiom-First Reflection Positivity - Bounded Input Assembly
 
-**Date:** 2026-04-29 (original); 2026-05-26 (staggered-only audit repair)
-**Claim type:** positive_theorem
-**Loop:** `axiom-first-foundations`
-**Runner:** `scripts/axiom_first_reflection_positivity_check.py`
-**Latest certificate:** `outputs/axiom_first_reflection_positivity_staggered_only_certificate_2026-05-26.txt`
+**Date:** 2026-04-29; bounded-input repair 2026-05-27
+**Claim type:** bounded_theorem
+**Runner:** `scripts/axiom_first_reflection_positivity_bounded_inputs.py`
 **Status authority:** independent audit lane only.
 
-## 2026-05-26 Audit Repair
+This repaired row is no longer a full reflection-positivity theorem for the
+`SU(3)` Wilson plaquette action coupled to arbitrary staggered half-action
+observables. The audited conditional verdict found that the available packet
+does not prove the missing `SU(3)` Wilson-plaquette gauge boundary
+factorization or the staggered Grassmann half-action factorization for
+arbitrary positive-half polynomial observables.
 
-The prior version of this note kept a load-bearing Case B for a
-Wilson-fermion determinant bridge. The latest audit verdict made the
-remaining blocker precise: the staggered-only determinant-positivity
-step closes algebraically, while the Wilson-fermion subsurface remained
-conditional on a bridge that was not a retained one-hop authority for
-this parent row.
+The binding scope is therefore narrowed to the two one-hop bounded inputs that
+are actually available, plus their abstract finite product consequence.
 
-This repair takes the narrow option. The load-bearing theorem is now
-restricted to the staggered-only fermion sector
+## Binding Scope
 
-```text
-    M = M_KS + m I,        m > 0.
+The repaired row asserts only:
+
+1. The staggered-only determinant input is available from
+   [STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md):
+
+   ```text
+   det(M_KS + m I) = product_i (m^2 + sigma_i^2) > 0,     m > 0.
+   ```
+
+2. The abstract reflection norm-square input is available from
+   [REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md):
+
+   ```text
+   <Theta(F) F> = || psi^2 F ||^2 >= 0
+   ```
+
+   under explicit measure-preserving involution, half-action invariance, and
+   reflection-Hermitian observable hypotheses.
+
+3. In any finite product setting where those two hypotheses are supplied, the
+   product of the positive staggered determinant weight and the abstract
+   norm-square weight is non-negative, and the induced finite Gram matrix is
+   positive semidefinite.
+
+That is the full binding claim of this repaired row.
+
+## What This Does Not Claim
+
+This row does not claim:
+
+- the actual `SU(3)` Wilson plaquette gauge-half boundary factorization for the
+  stated temporal reflection map;
+- the staggered Grassmann half-action reflection-positive factorization for
+  arbitrary positive-half polynomial observables;
+- full finite-lattice reflection positivity for the physical action;
+- construction of the physical Osterwalder-Schrader Hilbert space;
+- positivity of the physical transfer matrix or subtracted energy spectrum;
+- any Wilson-fermion determinant positivity theorem; or
+- any publication/ledger status promotion.
+
+Those remain separate bridge-theorem targets.
+
+## Direct Dependencies
+
+| Authority | Role |
+|---|---|
+| [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) | positive staggered determinant input for `M_KS + m I`, `m > 0` |
+| [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) | abstract norm-square / PSD sesquilinear input under explicit hypotheses |
+
+The older structural runner `scripts/axiom_first_reflection_positivity_check.py`
+is diagnostic context only. It is not the binding runner for this repaired row.
+
+## Runner
+
+Run:
+
+```bash
+python3 scripts/axiom_first_reflection_positivity_bounded_inputs.py
 ```
 
-No Wilson-fermion determinant-positivity theorem is claimed here. The
-runner's Wilson-sector determinant checks are retained only as finite
-diagnostics and are not used in the proof.
+The runner verifies the finite algebraic product consequence of the narrowed
+inputs and checks that the source note excludes the former full-theorem claims.
 
-This note introduces no new axiom and applies no audit verdict. It only
-changes the source claim surface so the independent audit lane can
-re-audit the exact staggered-only theorem.
-
-## Scope
-
-In scope:
-
-- finite lattice blocks with the parent temporal-link reflection map;
-- compact `SU(3)` Wilson plaquette gauge links with Haar measure;
-- Kogut-Susskind staggered fermions with positive real mass
-  `M = M_KS + m I`, `m > 0`;
-- polynomial observables supported in the positive-time half;
-- vacuum-energy-subtracted transfer-matrix and spectrum statements.
-
-Out of scope:
-
-- Wilson-fermion operators `M_KS + M_W + m I`;
-- symmetric-canonical Wilson determinant bridges;
-- configuration-by-configuration Wilson-fermion determinant positivity;
-- continuum OS reconstruction in the Wightman sense;
-- any publication or ledger status promotion.
-
-## Retained Inputs Used As Dependencies
-
-The narrowed proof uses two already-audited local authorities:
-
-- [STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
-  proves the configuration-by-configuration determinant positivity
-  input for `M_KS + m I`, `m > 0`.
-- [REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
-  supplies the finite Wilson-plaquette gauge half as a norm-square
-  Cauchy-Schwarz factorization on the compact Haar surface.
-
-Both are cited only for their stated narrow surfaces. This note does
-not import any fitted value, observed target value, literature
-numerical comparator, same-surface family selector, or admitted unit
-convention.
-
-## Reflection Map
-
-Use the temporal link-reflection convention
+Expected certificate:
 
 ```text
-    theta(t, x_vec) = (-1 - t, x_vec).
+RUNNER STATUS: PASS
 ```
 
-Gauge links transform by the usual image-link involution: temporal
-links crossing the reflection plane are daggered and spatial links are
-mapped to their reflected spatial links. Staggered Grassmann variables
-use the Sharatchandra link-reflection convention
+## Re-Audit Question
 
-```text
-    Theta chi_x      = bar(chi)_{theta x}^T,
-    Theta bar(chi)_x = chi_{theta x}^T.
-```
-
-The staggered phases obey the required reflection signs: spatial
-phases are preserved and the temporal phase changes sign across the
-link reflection.
-
-## Statement
-
-Let `A_+` be the polynomial algebra generated by gauge and staggered
-fermion fields supported in the positive-time half. Let
-`F in A_+`. On the staggered-only action surface
-
-```text
-    S = S_G[U] + bar(chi) (M_KS[U] + m I) chi,        m > 0,
-```
-
-the finite lattice measure is reflection positive:
-
-```text
-    <Theta(F) F> >= 0.                                      (R1)
-```
-
-Equivalently, the sesquilinear form
-
-```text
-    G(F, F') := <Theta(F) F'>
-```
-
-is positive semidefinite on `A_+`. The quotient by the null space
-completes to a finite physical Hilbert space `H_phys`.               (R2)
-
-Time translation descends to a positive Hermitian transfer matrix
-`T : H_phys -> H_phys`. With vacuum-energy subtraction
-
-```text
-    T_tilde := T / lambda_max(T),        H_tilde := -log(T_tilde) / a_tau,
-```
-
-one has `||T_tilde|| = 1` and `H_tilde >= 0`.                        (R3)
-
-Thus the subtracted lattice energy spectrum is non-negative:
-
-```text
-    <psi | H_tilde | psi> >= 0       for all psi in H_phys.           (R4)
-```
-
-Statements (R1)-(R4) are the full load-bearing claim of this note.
-They are restricted to the staggered-only fermion sector.
-
-## Proof
-
-### 1. Gauge Half
-
-The Wilson plaquette gauge action has the positive Wilson form on a
-compact `SU(3)` link group. Under temporal link reflection the action
-splits into positive-half, negative-half, and boundary terms:
-
-```text
-    S_G = S_{G,+} + Theta(S_{G,+}) + S_{G,boundary}.
-```
-
-The retained gauge-half note proves that the boundary term can be
-rewritten as an `L^2(SU(3), Haar)` norm square after the standard
-reflection-plane Cauchy-Schwarz manipulation. Hence the gauge half
-contributes a positive factor to `<Theta(F) F>`.
-
-### 2. Staggered Fermion Half
-
-On the narrowed surface the fermion matrix is exactly
-
-```text
-    M = M_KS + m I,        m > 0.
-```
-
-The standalone Case A determinant note proves, for every `SU(3)` link
-configuration, that
-
-```text
-    det(M_KS + m I) = product_i (m^2 + sigma_i^2) > 0.
-```
-
-The proof uses the epsilon-sorted block form of the Kogut-Susskind hop,
-anti-Hermiticity of `M_KS`, balanced sublattices, and the sign
-reconciliation between `det(epsilon M)` and `det(epsilon) det(M)`.
-This closes the only determinant-positivity input needed by the
-staggered fermion half.
-
-The link-reflection Grassmann factorization then writes the fermion
-half as a finite sum of squared half-action amplitudes. Therefore it
-also contributes a non-negative factor to `<Theta(F) F>`.
-
-### 3. Product Measure
-
-The gauge and fermion variables are independent integration variables
-before the link coupling is evaluated. The gauge half is a positive
-Haar norm square and the staggered determinant input is strictly
-positive configuration-by-configuration. Their product is a positive
-finite measure on the staggered-only action surface.
-
-Thus, for every `F in A_+`,
-
-```text
-    <Theta(F) F> = ||psi_F||^2 >= 0.
-```
-
-This proves (R1) and (R2). Positivity and Hermiticity of the transfer
-matrix follow from the reflected sesquilinear form and finite time
-translation. The vacuum-energy-subtracted definitions of `T_tilde` and
-`H_tilde` then prove (R3) and (R4).
-
-## Runner Interpretation
-
-The registered runner is a finite structural check, not an audit
-verdict. After this repair its binding exhibits are:
-
-- `E1`: staggered-only transfer matrix is Hermitian and positive;
-- `E2`: Wilson plaquette gauge transfer matrix is Hermitian and positive;
-- `E3`: staggered-fermion RP inner products are non-negative;
-- `E4`: finite half-action Gram matrix is positive semidefinite;
-- `E5`: staggered chirality anticommutation for the Kogut-Susskind hop.
-
-The runner also prints `E6`, a finite Wilson-fermion determinant
-diagnostic. `E6` is explicitly non-load-bearing for this note.
-
-The latest local certificate reports all binding exhibits passing and
-keeps the Wilson diagnostic separate from the theorem scope.
-
-## Honest Status
-
-Branch-local source-surface repair. The narrowed source claim is a
-staggered-only reflection-positivity theorem proposal for independent
-re-audit. It is not an author-applied audit promotion.
-
-What this can support if audit passes:
-
-- downstream claims that need reflection positivity only on the
-  staggered-only fermion action can cite this row;
-- downstream claims that need Wilson-fermion determinant positivity
-  still need a separate retained authority or must stay conditional.
-
-What this does not support:
-
-- a full staggered-plus-Wilson-fermion RP theorem;
-- an unconditional Wilson-sector determinant positivity statement;
-- a global claim that every historical citation to this row is safe
-  without checking whether that downstream claim uses only the
-  staggered-only sector.
+Does this narrowed row now correctly retain only the determinant-positivity
+input, the abstract norm-square input, and their bounded finite product/PSD
+consequence, while leaving the full reflection-positivity bridge theorem
+outside the binding claim?

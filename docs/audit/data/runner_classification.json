@@ -1153,16 +1153,16 @@
       "runner": "scripts/axiom_first_reeh_schlieder_check.py"
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 20,
+        "B": 2,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/axiom_first_reflection_positivity_check.py"
+      "runner": "scripts/axiom_first_reflection_positivity_bounded_inputs.py"
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "assert_count": 0,
@@ -28292,15 +28292,15 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/axiom_first_reflection_positivity_check.py": {
-      "assert_count": 0,
+    "scripts/axiom_first_reflection_positivity_bounded_inputs.py": {
+      "assert_count": 1,
       "claims": [
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 20,
+        "B": 2,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,

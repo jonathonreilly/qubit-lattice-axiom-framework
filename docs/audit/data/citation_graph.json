@@ -83005,7 +83005,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0408daddf18f84719e34c1ca36826c7ed235485db29a967cd7dae002be1bfe14",
+      "note_hash": "c28f416edc8f69177e6ffdb73d8ee87d32702645500dae85f2cef5ba08adcef5",
       "path": "docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
       "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
       "title": "YT Declared-Anchor Bounded Subchain Narrow Theorem"
@@ -84486,12 +84486,10 @@
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "rconn_derived_note"
       ],
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "note_hash": "be01fe7df35835b3cbc36aef3b73eb790c1aa61671f534dfe78a56f9ed56e70a",
+      "helper_runner_paths": [],
+      "note_hash": "3b2fce6b7b04ed2159edf06ded10fed16731e145021c19e6ce869a20764b57fa",
       "path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
-      "runner_path": "scripts/frontier_yt_zero_import_chain.py",
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note"
     },
     "yukawa_color_projection_theorem": {

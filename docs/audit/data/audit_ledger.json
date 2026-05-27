@@ -299759,7 +299759,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "0408daddf18f84719e34c1ca36826c7ed235485db29a967cd7dae002be1bfe14",
+      "note_hash": "c28f416edc8f69177e6ffdb73d8ee87d32702645500dae85f2cef5ba08adcef5",
       "note_path": "docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -310277,9 +310277,7 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
+      "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
       "load_bearing_score": 14.014,
@@ -310287,7 +310285,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "be01fe7df35835b3cbc36aef3b73eb790c1aa61671f534dfe78a56f9ed56e70a",
+      "note_hash": "3b2fce6b7b04ed2159edf06ded10fed16731e145021c19e6ce869a20764b57fa",
       "note_path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -310598,7 +310596,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": "scripts/frontier_yt_zero_import_chain.py",
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note",
       "transitive_descendants": 516,
       "verdict_rationale": null
@@ -311514,8 +311512,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2387,
-    "re_audit_required": 1,
+    "preserved_existing": 2388,
+    "re_audit_required": 0,
     "row_count": 2432,
     "seeded_new": 0
   }

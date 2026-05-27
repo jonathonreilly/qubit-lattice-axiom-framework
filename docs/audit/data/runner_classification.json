@@ -25525,16 +25525,16 @@
       "runner": "scripts/frontier_yt_zero_import_ratio_authority.py"
     },
     "yt_zero_import_chain_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 11,
-        "D": 13
+        "C": 10,
+        "D": 4
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/frontier_yt_zero_import_chain.py"
+      "dominant_class": "C",
+      "runner": "scripts/frontier_yt_declared_anchor_bounded_subchain.py"
     },
     "yukawa_color_projection_theorem": {
       "assert_count": 1,
@@ -49431,7 +49431,8 @@
     "scripts/frontier_yt_declared_anchor_bounded_subchain.py": {
       "assert_count": 1,
       "claims": [
-        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26"
+        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+        "yt_zero_import_chain_note"
       ],
       "counts": {
         "A": 0,
@@ -50558,8 +50559,7 @@
     "scripts/frontier_yt_zero_import_chain.py": {
       "assert_count": 0,
       "claims": [
-        "alpha_s_derived_note",
-        "yt_zero_import_chain_note"
+        "alpha_s_derived_note"
       ],
       "counts": {
         "A": 0,

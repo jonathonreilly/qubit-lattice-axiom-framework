@@ -1510,14 +1510,12 @@
       ],
       "direct_in_degree": 10,
       "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
+      "helper_runner_paths": [],
       "load_bearing_score": 14.014,
       "note_path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": "scripts/frontier_yt_zero_import_chain.py",
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
       "transitive_descendants": 516
     },
     {

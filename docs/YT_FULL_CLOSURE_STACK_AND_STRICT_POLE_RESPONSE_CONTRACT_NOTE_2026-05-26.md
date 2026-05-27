@@ -79,6 +79,10 @@ closed exactly:
   strict sparse pole-response availability audit: the harness and no-kappa
   candidate are present, but no accepted backend or controlled W/top pole-row
   certificate is present
+  microscopic backend/projector/matrix-element boundary: current source law,
+  carrier amplitude, C3 algebra, W row, and no-kappa backend candidate do not
+  derive the accepted physical top projector or its source-generator matrix
+  element
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -95,8 +99,9 @@ still open:
   accepted base C3 circulant dynamics and orientation/phase law for y_0
   accepted spectral ordering/exclusion of the C3 singlet line as the physical
   top row
-  accepted strict same-source top/W pole rows, or microscopic
-  backend/projector/matrix-element theorem
+  accepted strict same-source top/W pole rows, or a new microscopic dynamics
+  theorem that derives the accepted same-surface backend, W/top projectors,
+  and source-generator matrix elements
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -761,6 +766,18 @@ same_model_class: false
 So strict response remains the clean positive route, but it is not present on
 the current branch.
 
+[`YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md`](YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md)
+then attacks the remaining non-compute microscopic route directly.  It proves
+that the current source law, carrier amplitude, C3 algebra, conditional W row,
+and no-`kappa` backend candidate still do not determine the top matrix element
+without an accepted physical projector/eigenvector and its source-generator
+expectation on the same transfer/action surface.  A finite witness keeps
+`dM_W/dell = g_2 A/2` fixed while changing the top projector from a target row
+`A/sqrt(12)` to a singlet-size row `A/sqrt(3)`.  Therefore the remaining
+positive route is not another source-normalization theorem; it is an accepted
+backend/projector/matrix-element dynamics theorem, or direct strict pole-row
+data.
+
 ## Non-Claims
 
 This note does not:
@@ -800,12 +817,17 @@ proposal_allowed_reason: |
   or spectral ordering.
   The strict sparse availability audit confirms that accepted backend and
   controlled W/top pole-row artifacts are absent on the current branch.
+  The microscopic backend/projector/matrix-element boundary further prunes the
+  shortcut from current source/backend/carrier/C3 support to the accepted top
+  row: the accepted backend, physical top projector, and source-generator
+  matrix element remain load-bearing.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: accepted strict same-source top/W pole rows, or microscopic
-  backend/projector/matrix-element theorem
+first_open_gate: accepted strict same-source top/W pole rows, or a new
+  microscopic dynamics theorem deriving accepted same-surface backend, W/top
+  projectors, and source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted pole rows or microscopic dynamics
 backup_route: audit accepts primitive top-source premise as physical source law

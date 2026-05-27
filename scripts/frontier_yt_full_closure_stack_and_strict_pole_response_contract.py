@@ -35,6 +35,10 @@ This runner verifies the current burn-down state:
 * The strict sparse pole-response availability audit confirms the harness and
   no-kappa candidate are present, but no accepted backend or strict W/top pole
   rows are present on the branch.
+* The microscopic backend/projector/matrix-element boundary prunes the current
+  non-compute shortcut: source law, carrier amplitude, C3 algebra, W row, and
+  no-kappa candidate do not derive the accepted top projector or matrix
+  element.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -90,6 +94,7 @@ C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION = DOCS / "YT_C3_TOP_LINE_MASS_ORDERING_OBS
 C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION = DOCS / "YT_C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_NOTE_2026-05-27.md"
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY = DOCS / "YT_C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_NOTE_2026-05-27.md"
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT = DOCS / "YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md"
+MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY = DOCS / "YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -124,6 +129,7 @@ C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_top_line_m
 C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_real_same_surface_top_line_law_obstruction_2026-05-27.json"
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_circulant_dynamics_ordering_source_law_boundary_2026-05-27.json"
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT = ROOT / "outputs" / "yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json"
+MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT = ROOT / "outputs" / "yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -203,6 +209,7 @@ def part1_anchors() -> dict[str, str]:
         C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION,
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY,
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT,
+        MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -236,6 +243,7 @@ def part1_anchors() -> dict[str, str]:
         C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT,
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT,
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT,
+        MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -272,6 +280,7 @@ def part1_anchors() -> dict[str, str]:
         "real same-surface top-line law obstruction",
         "C3 circulant dynamics ordering source-law boundary",
         "strict sparse pole-response availability audit",
+        "microscopic backend/projector/matrix-element boundary",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -324,6 +333,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_real_same_surface_top_line_law_obstruction = load_json(C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT)
     c3_circulant_dynamics_ordering_source_law_boundary = load_json(C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT)
     strict_sparse_top_w_availability_audit = load_json(STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT)
+    microscopic_backend_projector_matrix_element_boundary = load_json(MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -444,6 +454,25 @@ def part2_support_outputs() -> dict[str, Any]:
     check("strict sparse availability audit is route pruning", strict_sparse_top_w_availability_audit.get("trace_class") == "negative_route_pruning")
     check("strict sparse audit confirms accepted backend absent", strict_sparse_top_w_availability_audit.get("certificate_boundary", {}).get("accepted_same_surface_backend_present") is False)
     check("strict sparse audit confirms strict positive certificate absent", strict_sparse_top_w_availability_audit.get("certificate_boundary", {}).get("strict_positive_certificate_present") is False)
+    check(
+        "microscopic backend/projector/matrix-element boundary passed",
+        microscopic_backend_projector_matrix_element_boundary.get("fail_count") == 0,
+        microscopic_backend_projector_matrix_element_boundary.get("fail_count"),
+    )
+    check("microscopic boundary is route pruning", microscopic_backend_projector_matrix_element_boundary.get("trace_class") == "negative_route_pruning")
+    check(
+        "microscopic boundary leaves physical top projector absent",
+        microscopic_backend_projector_matrix_element_boundary.get("certificate_boundary", {}).get("physical_top_projector_or_pole_derived") is False,
+    )
+    check(
+        "microscopic boundary leaves source matrix element absent",
+        microscopic_backend_projector_matrix_element_boundary.get("certificate_boundary", {}).get("source_generator_matrix_element_derived") is False,
+    )
+    check(
+        "microscopic boundary keeps strict pole-row route live",
+        "strict same-source top/W pole-row data" in microscopic_backend_projector_matrix_element_boundary.get("route_still_live", ""),
+        microscopic_backend_projector_matrix_element_boundary.get("route_still_live"),
+    )
 
     return {
         "fisher": fisher,
@@ -478,6 +507,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_real_same_surface_top_line_law_obstruction": c3_real_same_surface_top_line_law_obstruction,
         "c3_circulant_dynamics_ordering_source_law_boundary": c3_circulant_dynamics_ordering_source_law_boundary,
         "strict_sparse_top_w_availability_audit": strict_sparse_top_w_availability_audit,
+        "microscopic_backend_projector_matrix_element_boundary": microscopic_backend_projector_matrix_element_boundary,
     }
 
 
@@ -682,9 +712,9 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned",
             "closed": True,
-            "next_action": "produce accepted strict top/W pole rows, or derive microscopic backend/projector/matrix-element theorem",
+            "next_action": "produce accepted strict top/W pole rows, or derive new microscopic dynamics with accepted backend/projectors/matrix elements",
         },
         {
             "step": 7,
@@ -708,6 +738,10 @@ def main() -> int:
             "The strict sparse route is unavailable on the current branch "
             "because accepted backend/projector/controlled pole-row artifacts "
             "are absent. "
+            "The microscopic backend/projector/matrix-element boundary prunes "
+            "the current source-law/carrier/C3/no-kappa shortcut because the "
+            "accepted backend, physical top projector, and source-generator "
+            "matrix element remain load-bearing. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -716,7 +750,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted strict same-source top/W pole rows, or microscopic backend/projector/matrix-element theorem",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or new microscopic dynamics deriving accepted backend/projectors/matrix elements",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -751,6 +785,7 @@ def main() -> int:
             "c3_real_same_surface_top_line_law_obstruction_fail_count": support_outputs["c3_real_same_surface_top_line_law_obstruction"].get("fail_count"),
             "c3_circulant_dynamics_ordering_source_law_boundary_fail_count": support_outputs["c3_circulant_dynamics_ordering_source_law_boundary"].get("fail_count"),
             "strict_sparse_top_w_availability_audit_fail_count": support_outputs["strict_sparse_top_w_availability_audit"].get("fail_count"),
+            "microscopic_backend_projector_matrix_element_boundary_fail_count": support_outputs["microscopic_backend_projector_matrix_element_boundary"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -758,6 +793,9 @@ def main() -> int:
             "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
             "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py",
             "outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json",
+            "docs/YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py",
+            "outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

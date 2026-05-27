@@ -32,3 +32,9 @@
   same-source top/W pole-response evidence. The harness and no-kappa candidate
   are present, but accepted backend/projectors and controlled W/top pole rows
   are absent.
+- New in the fifth block: current microscopic source law, carrier amplitude,
+  C3 algebra, conditional W row, and no-kappa backend candidate do not derive
+  the accepted coefficient-bearing physical top matrix element. Finite
+  witnesses keep the W row fixed while the top matrix element changes with the
+  projector. The accepted backend, physical top projector, and source-generator
+  matrix element remain load-bearing.

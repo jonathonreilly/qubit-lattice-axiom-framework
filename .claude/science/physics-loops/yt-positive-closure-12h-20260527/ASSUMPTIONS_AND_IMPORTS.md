@@ -11,6 +11,7 @@
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
 | Contact/FV/IR/model-class checks | Certify strict pole-row evidence | missing certificate fields | sparse response contract | yes for strict evidence route | yes | direct sparse pole-response certificate | open blocker |
 | Accepted strict top/W pole rows | Bypass C3 line assignment and read coefficient directly | absent | strict sparse availability audit | yes | yes | produce accepted pole-row data/certificate | open blocker |
+| Microscopic backend/projector/matrix-element shortcut | Would derive the physical row from source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | pruned on current surface | `YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive accepted backend, W/top projectors, and source-generator matrix elements, or produce strict pole rows | no-go for current shortcut |
 | `H_unit`, old Ward authority, `yt_ward_identity`, `y_t_bare`, observed top/W/Z masses, PDG targets, `alpha_LM`, plaquette/u0, Planck, alpha_s, fitted selectors | Forbidden proof inputs | forbidden | user campaign instruction | no | no | must remain absent | not used |
 
 Current block results: the exact finite algebra shows how `A/sqrt(12)` would
@@ -18,5 +19,8 @@ follow if the same-surface generator factorization and nontrivial top-line
 assignment were supplied; the real same-surface C3 shortcut does not derive
 that top-line assignment; and the derived `B_x` source tangent does not derive
 base C3 dynamics or spectral ordering; and current branch artifacts do not
-contain accepted strict pole-response evidence. The next active import is a
-microscopic backend/projector/matrix-element theorem or accepted pole-row data.
+contain accepted strict pole-response evidence; and the current microscopic
+shortcut does not derive the accepted backend, physical top projector, or
+source-generator matrix element. The next active import is accepted strict
+pole-row data or a genuinely new microscopic dynamics theorem with those
+objects derived on one same-surface backend.

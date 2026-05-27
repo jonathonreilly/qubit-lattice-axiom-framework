@@ -6,9 +6,12 @@
 | 2 | Non-mass-ordering C3 top-line law excluding `P_0` without target selection | low | high | present | pruned on current real/reflection-even C3 surface |
 | 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; base dynamics/order still open |
 | 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch |
-| 5 | New microscopic backend/projector/matrix-element theorem | low-medium | high | absent | best remaining theory route |
+| 5 | Current microscopic source/backend/carrier/C3 shortcut | low | high | present | pruned; does not derive accepted backend/projector/matrix element |
+| 6 | New accepted microscopic dynamics theorem deriving backend, W/top projectors, and matrix elements | low | high | absent | only remaining theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
-exact action is rank 5: derive a microscopic accepted backend/projector/
-matrix-element theorem, or obtain external strict top/W pole-row data with the
-required controls.
+Queue refresh after the fifth block: positive closure remains open. The next
+exact action is rank 4 or rank 6: obtain accepted strict top/W pole-row data
+with the required controls, or derive a genuinely new microscopic dynamics
+theorem that supplies the accepted same-surface backend, W/top projectors, and
+source-generator matrix elements. No current-source shortcut remains.

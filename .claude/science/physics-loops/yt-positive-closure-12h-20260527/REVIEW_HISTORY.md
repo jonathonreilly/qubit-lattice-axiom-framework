@@ -126,3 +126,36 @@ Verification recorded with this review:
   candidate, backend projector obstruction, and first-principles transfer.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 5
+
+Scope:
+
+- microscopic backend/projector/matrix-element boundary note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, FH matrix-element equivalence, finite projector counterfamily, C3 specialization, stuck fan-out, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go route pruning for the current microscopic shortcut only; future accepted dynamics or strict rows remain live. |
+| Imports / support | DISCLOSED | Accepted backend, W/top projectors, and source-generator matrix elements are named as open imports. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Repo governance | PASS | Dependencies are linked in the note; no repo-wide authority surfaces were promoted. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=114 FAIL=0`
+- Full stack runner: `PASS=249 FAIL=0`
+- Adjacent Y_T runners passed: first-principles transfer, same-surface matrix
+  factorization, native backend candidate, backend projector obstruction,
+  top-sector projector obstruction, strict sparse availability audit, direct
+  sparse certificate, C3 dynamics boundary, and real same-surface top-line
+  obstruction.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

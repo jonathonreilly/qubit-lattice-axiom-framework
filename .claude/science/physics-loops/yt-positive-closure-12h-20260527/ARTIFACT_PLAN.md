@@ -14,6 +14,9 @@ Current block artifacts:
 - `docs/YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py`
 - `outputs/yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json`
+- `docs/YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py`
+- `outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json`
 - updated `docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md`
 - updated `scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
 - updated `outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json`
@@ -21,5 +24,6 @@ Current block artifacts:
 
 Next artifact if continuing:
 
-- new microscopic backend/projector/matrix-element theorem, or accepted strict
-  top/W pole-row data.
+- accepted strict top/W pole-row data, or a genuinely new microscopic dynamics
+  theorem deriving the accepted same-surface backend, W/top projectors, and
+  source-generator matrix elements.

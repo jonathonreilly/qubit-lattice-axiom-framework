@@ -1,14 +1,15 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 1
+supervisor_cycle: 2
 runtime_budget_seconds: 43200
+remaining_campaign_seconds_at_cycle_start: 40738
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T18:48:34Z"
+last_checkpoint_utc: "2026-05-27T19:04:04Z"
 lock_mode: branch-local
-lock_note: "Repo-global automation_lock.py status failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: strict_sparse_top_w_pole_response_availability_audit
+lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
+active_route: microscopic_backend_projector_matrix_element_boundary
 hard_residual: "derive/certify dM_t/dell = A/sqrt(12)"
 actual_current_surface_status: no-go
 trace_class: negative_route_pruning
@@ -16,20 +17,11 @@ reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "The strict sparse route was audited: harness and no-kappa candidate are present, but accepted backend/projectors and controlled W/top pole-row artifacts are absent."
+claim_state_movement: "The current microscopic source/backend/carrier/C3 shortcut was pruned: source law, carrier amplitude, C3 algebra, conditional W row, and no-kappa candidate do not derive the accepted same-surface backend, physical top projector, or source-generator matrix element."
 files_touched:
-  - docs/YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md
-  - scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py
-  - outputs/yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json
-  - docs/YT_C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_NOTE_2026-05-27.md
-  - scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py
-  - outputs/yt_c3_circulant_dynamics_ordering_source_law_boundary_2026-05-27.json
-  - docs/YT_C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_NOTE_2026-05-27.md
-  - scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py
-  - outputs/yt_c3_real_same_surface_top_line_law_obstruction_2026-05-27.json
-  - docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md
-  - scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py
-  - outputs/yt_same_surface_top_matrix_element_factorization_boundary_2026-05-27.json
+  - docs/YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md
+  - scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py
+  - outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -38,8 +30,9 @@ open_imports:
   - accepted strict same-source top/W pole rows
   - accepted same-surface transfer/action backend
   - isolated W/top projectors on that backend
+  - source-generator matrix elements on accepted W/top projectors
   - contact, FV/IR, and model-class controls
-  - microscopic backend/projector/matrix-element theorem
+  - new microscopic dynamics theorem deriving the accepted backend/projectors/matrix elements
 no_go_routes:
   - formal transfer first principles alone force kappa
   - B_x source direction alone certifies physical top row
@@ -48,29 +41,22 @@ no_go_routes:
   - current real/reflection-even C3 support derives a non-mass-ordering nontrivial top-line law
   - derived `B_x` source tangent plus C3 spectral algebra derives accepted top spectral line and source matrix element
   - current branch artifacts already contain strict same-source top/W pole-response evidence
+  - current microscopic source law plus carrier amplitude plus C3 algebra plus no-kappa backend candidate derives the accepted coefficient-bearing physical top matrix element
 commands_run:
-  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
-  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=218 FAIL=0"
+  - "python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py -> PASS=114 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=249 FAIL=0"
   - "python3 scripts/frontier_yt_first_principles_transfer_response_boundary.py -> PASS=56 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_real_record_reflection_even_source.py -> PASS=76 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_nontrivial_top_line_assignment_boundary.py -> PASS=81 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_top_line_mass_ordering_obstruction.py -> PASS=70 FAIL=0"
-  - "python3 scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS=88 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_connected_source_from_normalized_rn.py -> PASS=73 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_spectral_source_response_underdetermination_no_go.py -> PASS=58 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py -> PASS=104 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
-  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
-  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=241 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_spectral_top_projector_route_support.py -> PASS=73 FAIL=0"
-  - "python3 scripts/frontier_yt_c3_source_direction_selection_no_go.py -> PASS=70 FAIL=0"
-  - "python3 scripts/frontier_yt_lsp_projective_c3_source_direction_boundary.py -> PASS=87 FAIL=0"
-  - "python3 scripts/frontier_yt_positivity_orientation_c3_source_direction_boundary.py -> PASS=70 FAIL=0"
+  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
   - "python3 scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py -> PASS=64 FAIL=0"
-  - "python3 -m py_compile changed and adjacent C3/Y_T runners -> PASS"
-  - "git diff --check -> PASS"
+  - "python3 scripts/frontier_yt_native_backend_authority_projector_obstruction.py -> PASS=68 FAIL=0"
+  - "python3 scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py -> PASS=85 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS=88 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py -> PASS=104 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: updated_through_science_commit_d9d4d70a955efdf83e5f689f2d8e156ea1a101b5
-latest_science_commit: d9d4d70a955efdf83e5f689f2d8e156ea1a101b5
-next_exact_action: "Attack new microscopic backend/projector/matrix-element theorem, or obtain accepted strict top/W pole-row data."
+pr_status: pending_update_after_commit
+latest_science_commit: pending_current_block
+next_exact_action: "The remaining positive route is accepted strict same-source top/W pole-row data, or a genuinely new microscopic dynamics theorem deriving the accepted same-surface backend, W/top projectors, and source-generator matrix elements with controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

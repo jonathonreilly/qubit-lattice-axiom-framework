@@ -6,6 +6,8 @@ Selected routes: same-surface top sector matrix-element factorization boundary,
 then non-mass-ordering real same-surface C3 top-line law obstruction.
 The third route tested the C3 circulant dynamics/source-law shortcut.
 The fourth route audited strict sparse pole-response evidence availability.
+The fifth route tested the current microscopic source/backend/carrier/C3
+shortcut to the accepted matrix element.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -14,6 +16,7 @@ The fourth route audited strict sparse pole-response evidence availability.
 | Non-mass-ordering C3 top-line law | no-go shortcut test | 3 | Pruned on current real/reflection-even C3 support |
 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | no-go shortcut test | 3 | Pruned as source-derivative shortcut; base dynamics/order still open |
 | Strict sparse top/W pole-response evidence | availability audit | 3 | Audited absent on current branch; harness/candidate only |
+| Microscopic backend/projector/matrix-element shortcut | no-go shortcut test | 3 | Pruned: current support does not derive accepted backend, top projector, or source-generator matrix element |
 
 ## Stuck Fan-Out
 
@@ -26,7 +29,8 @@ The fourth route audited strict sparse pole-response evidence availability.
 | Real same-surface C3 top-line law | Try to exclude `P_0` from current real/reflection-even support | Fails; support fixes `B_x` but not physical top sector |
 | C3 circulant source law | Use derived `B_x` as source derivative to order top line | Fails; base dynamics and `y_0` phase/order remain load-bearing |
 | Strict evidence route | Inspect current sparse certificate | Harness exists; accepted backend and pole rows absent |
+| Microscopic backend/projector route | Combine source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | Fails; accepted backend, physical projector, and source-generator matrix element remain load-bearing |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-microscopic backend/projector/matrix-element theorem or accepted strict pole
-rows. It does not close the coefficient row.
+microscopic dynamics theorem with accepted backend/projectors/matrix elements,
+or accepted strict pole rows. It does not close the coefficient row.

@@ -1,6 +1,6 @@
 # Handoff
 
-Supervisor cycle 1 has produced two science blocks, not positive retained-grade
+Supervisor cycle 2 has produced five science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -9,7 +9,9 @@ closure:
 3. a no-go for the shortcut from derived `B_x` source tangent to accepted
    base C3 circulant dynamics and top spectral ordering;
 4. a strict sparse pole-response availability audit showing the current branch
-   lacks accepted W/top pole-row evidence.
+   lacks accepted W/top pole-row evidence;
+5. a no-go for the current microscopic source/backend/carrier/C3 shortcut to
+   the accepted top matrix element.
 
 New result:
 
@@ -82,6 +84,39 @@ records `accepted_same_surface_transfer_backend_present: false`,
 `contact_subtraction_done: false`, `finite_volume_ir_controls_pass: false`,
 and `same_model_class: false`.
 
+Fifth result:
+
+```text
+source law + carrier amplitude + C3 algebra + W row + no-kappa candidate
+  -/-> accepted coefficient-bearing physical top matrix element
+```
+
+The finite witness keeps the W row fixed:
+
+```text
+dM_W/dell = g_2 A/2
+```
+
+while changing only the top projector in a candidate top subspace:
+
+```text
+theta = 0     -> dM_t/dell = A/sqrt(12)
+theta = pi/2  -> dM_t/dell = A/sqrt(3)
+```
+
+The C3 specialization is the discrete version of the same boundary:
+
+```text
+P_0       -> A/sqrt(3)
+P_omega   -> -A/sqrt(12)
+P_omega2  -> -A/sqrt(12)
+```
+
+Therefore the current microscopic route also does not close the coefficient
+row. A positive theorem must derive the accepted same-surface backend,
+physical W/top projectors, and source-generator matrix elements, or the route
+must be bypassed by strict pole-row data.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -96,15 +131,19 @@ Artifacts:
 - `docs/YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py`
 - `outputs/yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json`
+- `docs/YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py`
+- `outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
 
+- `python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py` -> `SUMMARY: PASS=114 FAIL=0`
 - `python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py` -> `SUMMARY: PASS=77 FAIL=0`
 - `python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `SUMMARY: PASS=104 FAIL=0`
 - `python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py` -> `SUMMARY: PASS=95 FAIL=0`
 - `python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `SUMMARY: PASS=74 FAIL=0`
-- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=241 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=249 FAIL=0`
 - `python3 scripts/frontier_yt_first_principles_transfer_response_boundary.py` -> `SUMMARY: PASS=56 FAIL=0`
 - `python3 scripts/frontier_yt_c3_real_record_reflection_even_source.py` -> `SUMMARY: PASS=76 FAIL=0`
 - `python3 scripts/frontier_yt_c3_nontrivial_top_line_assignment_boundary.py` -> `SUMMARY: PASS=81 FAIL=0`
@@ -117,21 +156,26 @@ Verification so far:
 - `python3 scripts/frontier_yt_lsp_projective_c3_source_direction_boundary.py` -> `SUMMARY: PASS=87 FAIL=0`
 - `python3 scripts/frontier_yt_positivity_orientation_c3_source_direction_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`
 - `python3 scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py` -> `SUMMARY: PASS=64 FAIL=0`
+- `python3 scripts/frontier_yt_native_backend_authority_projector_obstruction.py` -> `SUMMARY: PASS=68 FAIL=0`
+- `python3 scripts/frontier_yt_top_sector_projector_generation_label_obstruction.py` -> `SUMMARY: PASS=85 FAIL=0`
 - `python3 -m py_compile ...` -> pass
 - `git diff --check` -> pass
 
 No `POSITIVE_CLOSURE` marker was written.
 
-Latest science commit pushed and recorded in PR #1980:
+Previous science commit pushed and recorded in PR #1980 before this cycle:
 
 ```text
 d9d4d70a955efdf83e5f689f2d8e156ea1a101b5
 ```
 
+This cycle's commit hash is recorded in the PR body after push.
+
 Next exact action:
 
 ```text
-derive a new microscopic backend/projector/matrix-element theorem, or obtain
-accepted strict same-source top/W pole-row data with contact, FV/IR, and
-model-class controls.
+obtain accepted strict same-source top/W pole-row data with contact, FV/IR,
+and model-class controls, or derive a genuinely new microscopic dynamics
+theorem that supplies the accepted same-surface backend, W/top projectors, and
+source-generator matrix elements.
 ```

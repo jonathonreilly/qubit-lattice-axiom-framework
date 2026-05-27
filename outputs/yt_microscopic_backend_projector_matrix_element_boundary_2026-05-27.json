@@ -1,0 +1,139 @@
+{
+  "actual_current_surface_status": "no-go",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "c3_specialization_witness": {
+    "B_x": "(C+C^2)/sqrt(6)",
+    "conclusion": "nontrivial top-line authority is load-bearing",
+    "radial_rows": {
+      "P_0": "sqrt(3)*A/3",
+      "P_omega": "-sqrt(3)*A/6",
+      "P_omega2": "-sqrt(3)*A/6"
+    },
+    "responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "-sqrt(6)/6",
+      "P_omega2": "-sqrt(6)/6"
+    }
+  },
+  "certificate_boundary": {
+    "accepted_same_surface_transfer_backend": false,
+    "bare_retained_allowed": false,
+    "c3_matrix_algebra_available": true,
+    "candidate_carrier_amplitude_available": true,
+    "contact_subtraction_done": false,
+    "finite_volume_ir_controls_pass": false,
+    "physical_top_projector_or_pole_derived": false,
+    "proposal_allowed": false,
+    "same_model_class": false,
+    "same_source_w_row_available_as_conditional_row": true,
+    "source_generator_matrix_element_derived": false,
+    "source_law_derived": true,
+    "strict_pole_row_data_present": false,
+    "w_projector_or_pole_derived": false
+  },
+  "claim_id": "yt_microscopic_backend_projector_matrix_element_boundary_note_2026-05-27",
+  "conditional_surface_status": "exact top-row certificate if accepted backend, physical top projector, and source-generator matrix element are supplied",
+  "dependency_status": {
+    "backend_projector": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "c3_dynamics": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "c3_real_top_line": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "first_principles": {
+      "actual_current_surface_status": "exact-support / formal-transfer no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "native_backend": {
+      "actual_current_surface_status": "bounded-support backend candidate",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "strict_sparse": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "top_sector_projector": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "accepted same-surface backend/projectors/source-generator matrix elements, or accepted strict same-source top/W pole-row data",
+  "generated_by": "scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py",
+  "matrix_element_equivalence": {
+    "alternative_readout_for_A_over_sqrt3": "sqrt(6)/3",
+    "dM_W_dell": "g_W - g_0",
+    "dM_t_dell": "g_t - g_0",
+    "target_condition": "g_t - g_0 = A/sqrt(12)",
+    "target_readout": "1/sqrt(6)"
+  },
+  "pass_count": 114,
+  "projector_continuum_witness": {
+    "G_top": "diag(A/sqrt(12), A/sqrt(3))",
+    "P_theta": "rank_one_projector(cos(theta)e1 + sin(theta)e2)",
+    "alternate_readout": "sqrt(6)/3",
+    "conclusion": "projector authority is load-bearing",
+    "expectation": "sqrt(3)*A*(sin(theta)**2 + 1)/6",
+    "same_w_row": "g_2*A/2",
+    "target_readout": "sqrt(6)/6",
+    "theta_0_row": "sqrt(3)*A/6",
+    "theta_pi_over_2_row": "sqrt(3)*A/3"
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The current microscopic support fixes source law, candidate carrier amplitude, and C3 matrix algebra, but it does not derive the accepted same-surface backend, physical top pole projector, or the top source-generator expectation. Finite witnesses keep the W row fixed while the top matrix element changes with the projector.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "current microscopic source/backend/carrier/C3 support derives the accepted coefficient-bearing physical top matrix element",
+  "route_still_live": "derive accepted same-surface backend/projectors/matrix elements, or produce strict same-source top/W pole-row data",
+  "stuck_fanout_synthesis": [
+    {
+      "attempt": "derive the source family and Fisher unit from no-hidden-record intervention",
+      "disposition": "blocked",
+      "frame": "primitive_rn_fisher_source_law",
+      "result": "source law derived, physical O_top/projector not derived"
+    },
+    {
+      "attempt": "use normalized color/isospin component 1/sqrt(6) as the top row",
+      "disposition": "blocked",
+      "frame": "six_component_carrier_amplitude",
+      "result": "local coefficient support only; physical top generation pole remains open"
+    },
+    {
+      "attempt": "assign top to a nontrivial C3 character line",
+      "disposition": "blocked",
+      "frame": "c3_spectral_line",
+      "result": "target row exact on nontrivial lines, but current dynamics/order does not assign physical top there"
+    },
+    {
+      "attempt": "use formal transfer/FH and W row to force the top row",
+      "disposition": "blocked",
+      "frame": "same_source_transfer_fh",
+      "result": "FH reduces the problem to the sector matrix element; it does not fix it"
+    },
+    {
+      "attempt": "bypass projector theorem with accepted pole-row data",
+      "disposition": "blocked_on_missing_artifact",
+      "frame": "strict_sparse_pole_rows",
+      "result": "harness exists but accepted backend/projector/controlled rows are absent"
+    }
+  ],
+  "trace_class": "negative_route_pruning"
+}

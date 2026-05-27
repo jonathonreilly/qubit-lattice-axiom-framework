@@ -54,3 +54,19 @@ The next live routes are accepted strict pole-row data or a microscopic
 backend/projector/matrix-element theorem. No retained or proposed-retained
 Y_T closure is claimed.
 ```
+
+Then append the fifth block:
+
+```text
+## 2026-05-27 Update: Microscopic Backend/Projector Matrix-Element Boundary
+
+Added no-go route pruning for the current microscopic shortcut from source
+law, carrier amplitude, C3 algebra, W row, and no-kappa backend candidate to
+the accepted coefficient-bearing top matrix element. A finite witness keeps
+`dM_W/dell = g_2 A/2` fixed while changing the top row from `A/sqrt(12)` to
+`A/sqrt(3)` by changing the projector; the C3 specialization gives the same
+singlet/nontrivial split. The next live routes are accepted strict pole-row
+data or a genuinely new microscopic dynamics theorem deriving accepted
+backend, W/top projectors, and source-generator matrix elements. No retained
+or proposed-retained Y_T closure is claimed.
+```

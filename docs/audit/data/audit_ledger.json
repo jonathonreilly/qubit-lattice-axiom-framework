@@ -123634,14 +123634,15 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "native_gauge_closure_note",
-        "graph_first_su3_integration_note"
+        "graph_first_su3_integration_note",
+        "g_bare_structural_normalization_theorem_note_2026-04-18"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
       "load_bearing_step": "The variation of L_mass leaves the residual term (m^2/g) A_mu^a partial^mu omega^a, which integrates by parts to a nonzero bulk term for arbitrary local omega unless m = 0.",
       "load_bearing_step_class": "A",
@@ -123862,13 +123863,13 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 4,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 0
       },
       "runner_path": "scripts/gluon_tree_level_massless_check.py",
       "title": "Tree-Level Gluon Masslessness on a Conditional SU(3) Yang-Mills Surface",

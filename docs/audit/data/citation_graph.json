@@ -20453,14 +20453,6 @@
       "to": "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16"
     },
     {
-      "from": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "to": "persistent_record_overlap_kernel_note"
-    },
-    {
-      "from": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "to": "minimal_axioms"
-    },
-    {
       "from": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
       "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
     },
@@ -69814,15 +69806,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "persistent_record_overlap_kernel_note",
-        "minimal_axioms"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
       "note_hash": "ebb66f338545701da293036395e691a12f245bb2237d3060a826ae4d9c513744",
       "path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
       "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
-      "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators"
+      "title": "Finite Record Isometry to Kraus Instrument Algebra"
     },
     "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
       "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
@@ -87631,6 +87620,7 @@
     "persistent_object_readout_taper_note",
     "persistent_object_top3_multistage_probe_note_2026-04-16",
     "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16",
+    "persistent_record_as_kraus_operator_note_2026-05-20",
     "persistent_record_matched_compare_note",
     "persistent_record_overlap_kernel_note",
     "persistent_record_refinement_note",

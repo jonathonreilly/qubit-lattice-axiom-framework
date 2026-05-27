@@ -1,0 +1,24 @@
+loop_slug: persistent-record-kraus-scope-repair-20260527
+branch: physics-loop/persistent-record-kraus-scope-repair-20260527
+base: origin/main
+target_claim_id: persistent_record_as_kraus_operator_note_2026-05-20
+target_status: bounded-support
+current_surface_status: bounded-support
+cycle_count: 1
+active_route: narrow_persistent_record_bridge_to_finite_isometry_kraus_algebra
+hard_residual: deriving normalized record-writing isometry from persistent-record dynamics remains open
+files_touched:
+  - docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md
+  - scripts/persistent_record_kraus_instrument_certificate.py
+  - .claude/science/physics-loops/persistent-record-kraus-scope-repair-20260527/
+open_imports: []
+no_go_routes:
+  - persistent-record dynamics to isometry bridge not claimed
+trace_gate_classification: direct_blocker_closure
+review_findings: branch-local wording and runner checks passed; independent Codex reviewer/audit still required
+ledger_after_pipeline: unaudited bounded_theorem with no deps or open_dependency_paths
+pr_status: draft_open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2113
+pr_mergeability: MERGEABLE / UNSTABLE
+next_exact_action: proceed to next ledger-order conditional row
+stop_condition: draft PR created

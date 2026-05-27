@@ -1,15 +1,21 @@
 # alpha_s Derived Narrow Theorem (Tadpole-Power Coupling-Chain Identity)
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10 (original); 2026-05-27 (dep correction per audit
+verdict: replaced wrong upstream citation with the actual retained CMT
+authority).
 **Type:** positive_theorem
 **Claim scope:** the standalone algebraic-substitution implication that, given
 (i) the retained Combined Mean-Field Theory (CMT) change-of-variables
 identity `<O(U)> = u_0^{n_link} <O_V(V)>_eff` supplied by
-[`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
-(D14, retained `yt_ew_color_projection_theorem`, audited_clean /
-retained_bounded), (ii) the retained `n_link = 1` per single-vertex
-gauge-coupling identity (D15, same retained authority), and (iii) the
-retained `n_link = 2` per vacuum-polarization identity (D15, same retained
+[`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+(retained, `audited_clean / retained`: standalone algebraic identities
+over abstract positive reals `alpha_bare` and `u_0`, including the
+vertex-power / link-power identities, geometric-mean identity,
+constant-ratio chain, `u_0 = 1` boundary, unique positive inverse map,
+and `P^{1/4}` substitution), (ii) the retained `n_link = 1` per
+single-vertex gauge-coupling identity (vertex-power identity, same
+retained authority), and (iii) the retained `n_link = 2` per
+vacuum-polarization identity (link-power identity, same retained
 authority), the two canonical-surface coupling definitions
 
 ```text
@@ -60,9 +66,18 @@ n_link(vp)  :  n_link = 2  for the vacuum-polarization correlator,     (I3)
 ```
 
 are supplied as cited inputs from the retained
-`yt_ew_color_projection_theorem` D14-D15 chain (audited_clean /
-retained_bounded, per `docs/audit/data/audit_ledger.json` at the date of
-this note). Define the two canonical-surface couplings
+[`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+(`audited_clean / retained`, per `docs/audit/data/audit_ledger.json`).
+The 2026-05-26 audit verdict on this row identified an incorrect
+upstream citation in the prior draft (it cited
+`YT_EW_COLOR_PROJECTION_THEOREM.md`, which is a `retained_no_go` on the
+K_EW kappa-family and does **not** supply CMT/tadpole identities); the
+2026-05-27 correction re-points the citation to the actual retained
+tadpole-power authority above, whose claim scope explicitly includes
+the vertex-power (`n_link = 1`) and link-power (`n_link = 2`) identities
+plus the abstract `u_0`-substitution structure consumed by (D1)/(D2).
+
+Define the two canonical-surface couplings
 
 ```text
 alpha_LM    :=  alpha_bare / u_0,                                      (D1)
@@ -128,10 +143,10 @@ All follow algebraically from `(D1)` and `(D2)`.
 ## What this does NOT claim
 
 - Does **not** derive the CMT identity `(I1)`. That is the retained
-  `yt_ew_color_projection_theorem` D14 / CMT change-of-variables
-  identity (audited_clean / retained_bounded).
-- Does **not** derive the `n_link` counts `(I2)`-`(I3)`. Those are
-  retained content in the same authority (D15).
+  `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
+  CMT change-of-variables identity (`audited_clean / retained`).
+- Does **not** derive the `n_link` counts `(I2)`-`(I3)`. Those are the
+  retained vertex-power and link-power identities of the same authority.
 - Does **not** supply a value of `u_0`. The plaquette evaluation
   `u_0 = <P>^{1/4}` from `plaquette_self_consistency_note` is currently
   `unaudited`, and the analytic `beta = 6` insertion of that note is
@@ -157,7 +172,12 @@ The older broad alpha_s row bundles the algebraic substitution above with
 several distinct downstream items:
 
 1. The retained CMT identities `(I1)`-`(I3)` themselves, supplied by
-   `yt_ew_color_projection_theorem`.
+   the retained
+   `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
+   (the prior draft cited `yt_ew_color_projection_theorem` here, which
+   the 2026-05-26 audit verdict identified as a wrong upstream — that
+   row is a `retained_no_go` on the K_EW kappa-family, not a CMT/tadpole
+   supplier).
 2. The upstream `u_0` plaquette evaluation `u_0 = <P>^{1/4}` with
    `<P> = 0.5934` from `plaquette_self_consistency_note` (currently
    `unaudited`; analytic `beta = 6` insertion explicitly open work).
@@ -178,12 +198,26 @@ the PDG identification.
 
 ## Cited dependencies
 
-- [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
-  — retained CMT change-of-variables identity D14 (`(I1)`) and `n_link`
-  identities D15 (`(I2)`, `(I3)`). Retained authority
-  (`yt_ew_color_projection_theorem`, effective_status=retained_bounded,
-  audit_status=audited_clean per `docs/audit/data/audit_ledger.json` row
-  at the date of this note).
+- [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained CMT change-of-variables identity (`(I1)`) and `n_link`
+  vertex-power / link-power identities (`(I2)`, `(I3)`). Retained
+  authority (`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`,
+  `effective_status=retained`, `audit_status=audited_clean` per
+  `docs/audit/data/audit_ledger.json`). The retained scope explicitly
+  covers the standalone algebraic identities over abstract positive
+  reals `alpha_bare` and `u_0`, vertex-power / link-power identities,
+  geometric-mean identity, constant-ratio chain, `u_0 = 1` boundary,
+  unique positive inverse map, and abstract `P^{1/4}` substitution —
+  exactly the input set this narrow theorem consumes.
+
+- ~~`YT_EW_COLOR_PROJECTION_THEOREM.md`~~ — citation **removed** by
+  the 2026-05-27 dep correction (backticked, not linked, to drop the
+  graph edge). The prior draft cited this row as the CMT supplier; the
+  2026-05-26 audit verdict on this note identified the citation as
+  wrong because `yt_ew_color_projection_theorem` is a `retained_no_go`
+  on the K_EW kappa-family (`audited_clean / retained_no_go`), not a
+  CMT/tadpole authority. The actual retained CMT/tadpole authority is
+  the new citation above.
 
 ## Forbidden imports check
 
@@ -229,8 +263,12 @@ verifies symbolically (sympy `simplify` to 0) that:
   substitution above with the upstream `u_0` evaluation, downstream
   running bridge, numerical readouts, and PDG identification; currently
   `unaudited`).
-- `yt_ew_color_projection_theorem` (retained source of the CMT
-  identities and `n_link` counts; `audited_clean`).
+- `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
+  (retained source of the CMT identities and `n_link` vertex-power /
+  link-power counts; `audited_clean / retained`). Replaces the prior
+  draft's stale cross-reference to `yt_ew_color_projection_theorem`,
+  which is actually a `retained_no_go` on the K_EW kappa-family and not
+  a CMT/tadpole authority.
 - `plaquette_self_consistency_note` (upstream plaquette `u_0` evaluation;
   currently `unaudited`; not consumed by this narrow theorem).
 - `qcd_low_energy_running_bridge_note_2026-05-01` (downstream running

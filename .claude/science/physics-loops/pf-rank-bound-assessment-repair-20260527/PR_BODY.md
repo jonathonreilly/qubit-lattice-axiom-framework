@@ -2,6 +2,8 @@
 
 This PR repairs the PF rank-bound citation row as a bounded gap-assessment row.
 
+Loop PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2089
+
 It adds a primary runner and makes explicit that the row does not claim an
 all-degree rank theorem or an all-order minimal-annihilator theorem.
 

@@ -28,7 +28,7 @@ open_imports:
   - all-order minimal-annihilator theorem
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-pr_status: pending
-pr_url: null
-next_exact_action: "Commit, push, open draft PR, then record the PR URL."
-stop_condition: "Draft PR opened and verified."
+pr_status: draft_open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2089"
+next_exact_action: "Reviewer extracts/lands science and independent auditor evaluates the bounded assessment row."
+stop_condition: "Draft PR opened, linked, and verified."

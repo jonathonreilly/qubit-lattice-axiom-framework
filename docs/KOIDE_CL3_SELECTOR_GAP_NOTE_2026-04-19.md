@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-19
 **Claim type:** open_gate
+**Runner:** `scripts/frontier_koide_cl3_selector_gap.py`
 **Status:** open selector-gap inventory / support note on current `main` — the listed Cl(3) doublet/Kramers, baryon-Schur, SU(3)-coupling, and degeneracy probes are recorded as conditional candidate routes (not retained exhaustions), and the charged-lepton package remains bounded
 
 ---
@@ -49,6 +50,31 @@ status after the source change. The §1 - §4 numerics ("≈ −0.816",
 +2.195)") are recorded as printed claims unsupported by an in-repo
 retained derivation chain, except where the parent V(m) coefficient
 assignment carries them.
+
+## Runner-registration repair (2026-05-27)
+
+The existing executable route-inventory runner is now registered as this
+row's primary runner:
+
+```text
+scripts/frontier_koide_cl3_selector_gap.py
+```
+
+It verifies the finite selected-slice checks used by this open-gate inventory:
+
+- the displayed selected-line matrix diagonals at `m = 0`;
+- the doublet-A equal-diagonal value `m_DA = -sqrt(2/3)` and its miss from
+  the admitted `m_*` comparator;
+- the `E1 = 2*SELECTOR` cancellation giving `|H_frozen[0,2]| = GAMMA = 1/2`;
+- the selected-slice `m`-variation along `T_m`;
+- the tested `N_c`, `R_conn`, and `C_2(fund)` coefficient variants; and
+- the positivity-threshold and gap diagnostics.
+
+The runner does **not** derive `m_*`, `kappa_*`, the H-witness input, a
+microscopic full `4 x 4` baryon-block theorem, or a transport-law selector.
+It therefore supports the note as a runner-backed open-gate inventory, not as a
+closed no-go theorem and not as retained charged-lepton closure. No new axiom
+is introduced.
 
 ---
 
@@ -120,9 +146,9 @@ This follows from an algebraic cancellation: **E1 = 2·SELECTOR** at the Koide s
 
 Per the audit perimeter narrowing above, the four sub-routes below are
 recorded as *probed candidates* rather than retained exhaustions; each
-remains conditional pending a direct retained dependency or runner
-beyond the parent V_eff coefficient assignment (cf. the per-route
-conditional perimeter table below).
+is now accompanied by the registered finite selected-slice runner where
+applicable. The runner does not close the full `4 x 4`, transport, or
+`kappa_*` open routes (cf. the per-route conditional perimeter table below).
 
 ### 3a. Doublet A equal-diagonal → m_DA = -√(2/3) ≈ -0.816
 
@@ -221,13 +247,13 @@ the parent mass-tower note.
 
 | Section | Sub-claim | Direct in-repo dependency? | Conditional posture |
 |---|---|---|---|
-| §1 Kramers doublets | Cl⁺(3) ≅ ℍ → two j=1/2 doublets | No retained one-hop authority cited here | Structural identification, conditional pending direct retained dep/runner |
-| §2 Doublet-A equal-diagonal | m_DA = −√(2/3) ≈ −0.816497 (exact) | No retained one-hop authority cited here | Algebraic claim, conditional pending direct retained dep/runner |
-| §2 J₂ off-diagonal | \|H_frozen[0,2]\| = 1/2 (E1 = 2·SELECTOR cancellation) | No retained one-hop authority cited here | Algebraic cancellation claim, conditional pending direct retained dep/runner |
-| §3a Doublet-A miss | gap ≈ 0.344 (~30%) | depends on §2 (above) | Inherits conditional posture of §2 |
-| §3b Baryon Schur ∝ −I₃ | S₃-symmetric baryon coupling → m-independent shift | No retained one-hop authority cited here | Conditional pending retained 4×4 derivation |
-| §3c SU(3) coupling-mod misses | three modifications all miss > 5% | No retained one-hop authority cited here | Numeric claim, conditional pending retained Cl(3)→SM-embedding theorem |
-| §3d No degeneracy crossing | eigenvalues (−2.507, −0.848, +2.195) all distinct | No retained one-hop authority cited here | Numeric claim, conditional pending direct retained runner |
+| §1 Kramers doublets | Cl⁺(3) ≅ ℍ → two j=1/2 doublets | Runner checks the selected-line diagonal pattern only | Structural identification remains bounded to the selected-line matrix displayed/imported by the runner |
+| §2 Doublet-A equal-diagonal | m_DA = −√(2/3) ≈ −0.816497 (exact) | Runner-backed finite selected-slice check | Runner-backed algebraic selected-slice diagnostic, not a physical selector |
+| §2 J₂ off-diagonal | \|H_frozen[0,2]\| = 1/2 (E1 = 2·SELECTOR cancellation) | Runner-backed finite selected-slice check | Runner-backed algebraic cancellation diagnostic |
+| §3a Doublet-A miss | gap ≈ 0.344 (~30%) | Runner-backed using admitted `m_*` comparator | Runner-backed miss statement; comparator remains admitted/open, not derived here |
+| §3b Baryon Schur ∝ −I₃ | S₃-symmetric baryon coupling → m-independent shift | Runner checks selected-slice `T_m` variation and uniform-shift invariance | Conditional pending retained microscopic `4 x 4` derivation of the coupling itself |
+| §3c SU(3) coupling-mod misses | three modifications all miss > 5% | Runner-backed coefficient-variant checks | Runner-backed finite coefficient diagnostics, not a theorem exhausting all color couplings |
+| §3d No degeneracy crossing | eigenvalues (−2.507, −0.848, +2.195) all distinct | The current runner does not bind this eigenvalue triple as a retained theorem | Conditional pending direct retained degeneracy runner if this row wants the eigenvalue triple load-bearing |
 | §4 m_* from H_* witness | kappa_* ≈ −0.608, m_* ≈ −1.1605 | parent note marks H_* witness as G1 phenomenological pin, **not** Cl(3)-derived | Conditional pending first-principles kappa_* derivation (open) |
 | §5 Open routes (a),(b),(c) | full 4×4, transport 4π/√6, kappa_* derivation | explicitly open / no derivation | Open-gate inventory only |
 

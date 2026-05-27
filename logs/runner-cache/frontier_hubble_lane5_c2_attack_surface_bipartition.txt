@@ -1,0 +1,123 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hubble_lane5_c2_attack_surface_bipartition.py
+runner_sha256: c57ed09940198f8049ebac4f278ff9aafe59156455ffccaaa6020296e3d0c98f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+========================================================================================
+LANE 5 (C2) ATTACK-SURFACE BIPARTITION NARROW THEOREM RUNNER
+========================================================================================
+
+Bounded statement under test:
+  - bounded matter-cascade slice has exactly two C2-counted pins (eta, alpha_GUT);
+  - residual (C2) attack surface bipartitions into (C2.eta) and (C2.alpha_GUT);
+  - PMNS-A13 sub-route on (C2.eta) is retained-no-go;
+  - (C3) class empty on current vacuum/topology surface.
+
+This runner does NOT derive eta, alpha_GUT, T_CMB, or H_0.
+
+----------------------------------------------------------------------------------------
+Part 1: retained R_base = 31/9 group-theory identity
+----------------------------------------------------------------------------------------
+  [PASS] C_2(SU(3)_fund) = 4/3
+  [PASS] C_2(SU(2)_fund) = 3/4
+  [PASS] dim(adj SU(3)) = 8 = N^2 - 1 at N=3
+  [PASS] dim(adj SU(2)) = 3 = N^2 - 1 at N=2
+  [PASS] numerator N = C2(3)*dim(adj_3) + C2(2)*dim(adj_2) = 155/12  (computed 155/12)
+  [PASS] denominator D = C2(2)*dim(adj_2) = 9/4  (computed 9/4)
+  [PASS] N/D = 155/27  (computed 155/27)
+  [PASS] R_base = (3/5) * 155/27 = 31/9 (lowest terms)  (computed 31/9)
+  [PASS] R_base = 3/5 + 128/45 equivalent decomposition holds  (computed 31/9)
+
+----------------------------------------------------------------------------------------
+Part 2: bounded cascade arithmetic at declared inputs
+----------------------------------------------------------------------------------------
+  Omega_b      = 0.049200
+  R            = 5.380000
+  Omega_DM     = 0.264696
+  Omega_m      = 0.313896
+  Omega_Lambda = 0.686104
+  [PASS] Omega_DM = R * Omega_b matches documented 0.264696  (got 0.264696)
+  [PASS] Omega_m = Omega_b + Omega_DM matches documented 0.313896  (got 0.313896)
+  [PASS] Omega_Lambda = Omega_total - Omega_m matches documented 0.686104  (got 0.686104)
+  [PASS] Rounded Omega_Lambda = 0.686  (got 0.686)
+  R_base       = 31/9 = 3.444444
+  S = R/R_base = 1.561935
+  [PASS] S_corr implied by declared R is approximately 1.562  (got 1.561935484)
+
+----------------------------------------------------------------------------------------
+Part 3: Sommerfeld interval at bounded alpha_GUT gives Omega_Lambda band
+----------------------------------------------------------------------------------------
+  alpha_GUT band = [0.03, 0.05]
+  R band         = [4.8, 5.3]
+  Omega_m band (eta fixed)   = [0.285360, 0.309960]
+  Omega_Lambda band (eta fixed) = [0.689948, 0.714548]
+  [PASS] alpha_GUT-only band: Omega_Lambda lower endpoint near 0.69  (got 0.689948)
+  [PASS] alpha_GUT-only band: Omega_Lambda upper endpoint near 0.71  (got 0.714548)
+  Band width (alpha_GUT-only, eta fixed)  = 0.024600
+  [PASS] alpha_GUT-only band width is order 0.02-0.03 at eta fixed  (got 0.024600)
+  [PASS] alpha_GUT-only sub-band is inside the documented joint [0.66, 0.71] band  (alpha_GUT-only=[0.690, 0.715]; joint=[0.66, 0.71])
+
+----------------------------------------------------------------------------------------
+Part 4: BBN sensitivity to eta (alpha_GUT fixed)
+----------------------------------------------------------------------------------------
+  eta_10 band    = [5.7, 6.5]
+  Omega_b band   = [0.045817, 0.052247]
+  Omega_Lambda band (eta-only) = [0.666569, 0.707596]
+  Band width (alpha_GUT-fixed) = 0.041026
+  [PASS] Omega_b is positive and monotonic in eta_10  (got [0.045817, 0.052247])
+  [PASS] Omega_b in physically sensible Planck-2018 ballpark band  (got [0.045817, 0.052247])
+  [PASS] Documented Omega_b = 0.0492 sits inside the band at central eta  (band=[0.045817, 0.052247])
+  [PASS] Cascade is linear in Omega_b at fixed R (no quadratic terms)
+
+----------------------------------------------------------------------------------------
+Part 5: bipartition symbolic statement
+----------------------------------------------------------------------------------------
+  Omega_Lambda(eta, alpha_GUT) = -Omega_r - 31*c_BBN*eta*S_corr(alpha_GUT)/(9*h2) - c_BBN*eta/h2 + 1
+  free symbols of Omega_Lambda = {h2, eta, Omega_r, c_BBN, alpha_GUT}
+  [PASS] Omega_Lambda explicitly depends on eta
+  [PASS] Omega_Lambda explicitly depends on alpha_GUT (via Sommerfeld)
+  [PASS] d Omega_Lambda / d eta is non-zero  (d/deta = c_BBN*(-31*S_corr(alpha_GUT) - 9)/(9*h2))
+  [PASS] d Omega_Lambda / d alpha_GUT is non-zero (via Sommerfeld)  (d/dalpha_GUT = -31*c_BBN*eta*Derivative(S_corr(alpha_GUT), alpha_GUT)/(9*h2))
+  [PASS] After eta retired, cascade has no remaining free eta dependence
+  [PASS] After alpha_GUT retired, cascade has no remaining S_corr(alpha_GUT) function
+  Surviving pins after full retirement = set()
+  [PASS] After both eta and alpha_GUT retired, no cascade-internal observational pin remains  (surviving=set())
+
+----------------------------------------------------------------------------------------
+Part 6: cited authority text confirms framing
+----------------------------------------------------------------------------------------
+  [PASS] Necessity no-go names (C2) cosmic-history-ratio retirement
+  [PASS] Necessity no-go names broader eta, alpha_GUT, T_CMB targets
+  [PASS] Eta audit identifies the bounded cascade entry/exit chain
+  [PASS] C2 stretch records the PMNS-A13 / CKM right-sensitive sub-route as no-go
+  [PASS] C3 audit records the (C3) class as empty / no-active-route
+  [PASS] Cosmology note lists eta (imported) and alpha_GUT (bounded) as the cascade inputs
+  [PASS] Cosmology note states alpha_GUT in [0.03, 0.05] Sommerfeld
+  [PASS] Omega_Lambda note records the bounded arithmetic cascade
+  [PASS] R_base note retains R_base = 31/9 group-theory identity
+
+----------------------------------------------------------------------------------------
+Part 7: claim-status guardrails on this note
+----------------------------------------------------------------------------------------
+  [PASS] Note declares Type: bounded_theorem
+  [PASS] Note declares Status authority: independent audit lane only
+  [PASS] Note declares actual_current_surface_status: narrow_bounded_theorem
+  [PASS] Note declares proposal_allowed: false
+  [PASS] Note declares bare_retained_allowed: false
+  [PASS] Note explicitly does NOT close (C2)
+  [PASS] Note explicitly does NOT retire eta
+  [PASS] Note explicitly does NOT retire alpha_GUT
+  [PASS] Note bipartitions the residual into (C2.eta) and (C2.alpha_GUT)
+  [PASS] Note distinguishes full cascade closure from C2-class premise discharge
+
+========================================================================================
+SUMMARY: PASS=48 FAIL=0
+========================================================================================
+Result: bipartition narrow theorem holds on the cited authority surface.
+No (C2) closure, no eta retirement, no alpha_GUT retirement claimed.
+
+----- stderr -----
+

@@ -434,3 +434,36 @@ Verification recorded with this review:
 - `python3 -m py_compile ...` passed.
 - YAML validation passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 15
+
+Scope:
+
+- C3 phase-orbit selector underdetermination no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks finite C3 Fourier periodicity, phase-orbit witnesses, dependency outputs, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open phase-orbit member law; orbit selection is not top-line selection. |
+| Imports / support | DISCLOSED | No external phase law, potential offset, orientation branch, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=79 FAIL=0`
+- Full stack runner: `PASS=326 FAIL=0`
+- Adjacent Y_T runners passed: cubic phase-potential sign/branch no-go
+  `PASS=88`, cubic invariant phase-selector `PASS=82`, representation
+  phase-selection no-go `PASS=94`, phase-ordering cone support `PASS=70`,
+  primitive character phase-angle candidate `PASS=71`, quantitative
+  phase-strength underdetermination `PASS=106`, strict sparse availability
+  audit `PASS=74`, same-surface matrix factorization `PASS=77`,
+  orientation-phase strength no-go `PASS=68`, and orientation-phase dynamics
+  necessity `PASS=86`.

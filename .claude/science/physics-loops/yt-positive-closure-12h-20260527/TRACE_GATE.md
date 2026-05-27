@@ -61,3 +61,10 @@ The fourteenth artifact prunes cubic invariant structure alone as the missing
 phase law: the finite functional is only a signed `cos(3phi)` term, and
 without an accepted sign, variational convention, and physical orientation
 branch, singlet and degenerate witnesses remain allowed.
+The fifteenth artifact prunes the broader scalar phase-orbit shortcut:
+C3-invariant scalar dynamics selects phase orbits, not physical orbit members.
+A generic orbit contains `P_0`, `P_omega2`, and `P_omega` winners, and the
+primitive cubic orbit contains both the singlet row `A/sqrt(3)` and the target
+rows `A/sqrt(12)`. The next trace action is to produce accepted strict W/top
+pole rows, or derive an accepted same-surface orbit-member/top-line law that
+excludes `P_0` and supplies W/top matrix elements.

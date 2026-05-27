@@ -15,7 +15,8 @@
 | 11 | Primitive nontrivial C3 character phase-angle candidate `phi=+/-2pi/3` | medium | medium | present | conditional support landed; accepted same-surface phase-angle law not derived |
 | 12 | Finite C3 representation/character facts select the physical phase angle | low | medium | present | pruned; C3-native choices include both target and singlet rows |
 | 13 | Accepted cubic invariant phase potential plus orientation branch | low | high | present | invariance-only shortcut pruned; accepted sign, dynamics law, and branch not derived |
-| 14 | New accepted quantitative orientation-phase angle theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
+| 14 | General C3 scalar phase-orbit selector | low | high | present | pruned; orbit selection does not choose a physical nontrivial orbit member |
+| 15 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -86,3 +87,11 @@ and physical nonzero orientation branch remain load-bearing. The next exact
 action is rank 4 or rank 14: obtain accepted strict top/W pole-row data with
 controls, or derive a genuinely accepted same-surface dynamics/orientation
 theorem with W/top projectors and source-generator matrix elements.
+
+Queue refresh after the fifteenth block: positive closure remains open.
+General C3-invariant scalar phase dynamics is pruned as a top-line selector:
+it selects phase orbits, and generic/primitive orbits contain both `P_0` and
+nontrivial top-line witnesses. The next exact action is rank 4 or rank 15:
+obtain accepted strict top/W pole-row data with contact, FV/IR, and
+model-class controls, or derive an accepted same-surface orbit-member/top-line
+law that excludes `P_0` and supplies W/top matrix elements.

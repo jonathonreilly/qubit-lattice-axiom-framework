@@ -25,6 +25,8 @@ The thirteenth route tested whether the cubic C3 trace invariant supplies a
 phase-selector route.
 The fourteenth route tested whether C3-invariant cubic phase-potential
 structure alone supplies the missing accepted phase law.
+The fifteenth route tested whether a general C3-invariant scalar phase
+potential can select the physical nontrivial top line from a phase orbit.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -43,6 +45,7 @@ structure alone supplies the missing accepted phase law.
 | Finite C3 representation/character phase selection | no-go shortcut test | 3 | Pruned: C3-native unit Hermitian choices include both target and singlet rows |
 | Cubic C3 trace invariant phase selector | conditional support | 2 | Landed: cubic maximization plus accepted nonzero orientation would select primitive nontrivial angles, but accepted cubic dynamics/branch are open |
 | C3 cubic phase-potential sign/branch shortcut | no-go shortcut test | 3 | Pruned: invariance gives a signed `cos(3phi)` term, not the accepted sign, variational convention, or orientation branch |
+| General C3 scalar phase-orbit selector | no-go shortcut test | 3 | Pruned: C3-invariant scalar dynamics selects phase orbits; generic/primitive orbits contain both singlet and nontrivial top-line witnesses |
 
 ## Stuck Fan-Out
 
@@ -65,8 +68,9 @@ structure alone supplies the missing accepted phase law.
 | Representation-only selection | Ask C3 character/projector facts or functions of `C` to choose the phase | Fails; the same C3-native family contains `phi=0` and `phi=pi/6` singlet witnesses |
 | Cubic trace invariant | Extremize `Tr(H(phi)^3)` on the unit C3 base circle | Succeeds conditionally; cubic maxima include `phi=+/-2pi/3`, but also the singlet `phi=0`, so accepted orientation/cubic dynamics remain load-bearing |
 | Cubic potential invariance | Ask C3-invariant cubic phase-potential structure alone to choose the physical phase law | Fails; sign, variational convention, singlet extrema, degeneracies, and orientation branch remain load-bearing |
+| General scalar phase orbit | Ask C3-invariant scalar phase dynamics to select the physical nontrivial top line | Fails; orbit selection is not orbit-member selection, and the same orbit contains `P_0`, `P_omega2`, and `P_omega` witnesses |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-same-surface cubic phase dynamics/orientation theorem selecting a
-nontrivial-cone angle with accepted backend/projectors and matrix elements, or
-accepted strict pole rows. It does not close the coefficient row.
+same-surface orbit-member/top-line theorem selecting a nontrivial physical
+line with accepted backend/projectors and matrix elements, or accepted strict
+pole rows. It does not close the coefficient row.

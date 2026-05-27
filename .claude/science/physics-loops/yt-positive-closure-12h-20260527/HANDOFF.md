@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced fourteen science blocks, not positive retained-grade
+The campaign has produced fifteen science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -27,6 +27,8 @@ closure:
 13. a conditional-support cubic invariant phase-selector boundary.
 14. a no-go for deriving the physical phase law from C3-invariant cubic
     phase-potential structure alone.
+15. a no-go for deriving the physical nontrivial top line from a general
+    C3-invariant scalar phase potential alone.
 
 New result:
 
@@ -311,6 +313,34 @@ physical top pole. The remaining positive route still needs a same-surface
 Y_T dynamics/orientation theorem with W/top matrix elements, or strict
 same-source top/W pole-row data.
 
+Fifteenth result:
+
+```text
+real C3-invariant scalar phase potential
+  -> V(phi + 2 pi/3) = V(phi)
+  -> selects phase orbits, not physical orbit members
+  -/-> accepted nontrivial physical top line
+```
+
+Finite witnesses:
+
+```text
+generic orbit:
+  phi = pi/9          -> P_0
+  phi = pi/9+2 pi/3  -> P_omega2
+  phi = pi/9-2 pi/3  -> P_omega
+
+primitive cubic orbit:
+  phi = 0       -> P_0      -> A/sqrt(3)
+  phi = +2 pi/3 -> P_omega2 -> A/sqrt(12)
+  phi = -2 pi/3 -> P_omega  -> A/sqrt(12)
+```
+
+Thus even the broader scalar phase-potential route cannot certify that the
+physical top pole is a nontrivial orbit member. The remaining positive route
+needs an accepted same-surface orbit-member/top-line readout law with W/top
+matrix elements, or accepted strict same-source top/W pole rows with controls.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -355,6 +385,9 @@ Artifacts:
 - `docs/YT_C3_CUBIC_PHASE_POTENTIAL_SIGN_BRANCH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py`
 - `outputs/yt_c3_cubic_phase_potential_sign_branch_underdetermination_2026-05-27.json`
+- `docs/YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py`
+- `outputs/yt_c3_phase_orbit_selector_underdetermination_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
@@ -427,6 +460,19 @@ Final cubic-block verification before commit:
 - `git diff --check` -> `PASS`
 
 No `POSITIVE_CLOSURE` marker was written.
+
+Cycle 5 phase-orbit selector verification:
+
+- `python3 scripts/frontier_yt_c3_phase_orbit_selector_underdetermination.py` -> `SUMMARY: PASS=79 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=326 FAIL=0`
+- Adjacent Y_T runners passed: cubic phase-potential sign/branch no-go
+  `PASS=88`, cubic invariant phase-selector `PASS=82`, representation
+  phase-selection no-go `PASS=94`, phase-ordering cone support `PASS=70`,
+  primitive character phase-angle candidate `PASS=71`, quantitative
+  phase-strength underdetermination `PASS=106`, strict sparse availability
+  audit `PASS=74`, same-surface matrix factorization `PASS=77`,
+  orientation-phase strength no-go `PASS=68`, and orientation-phase dynamics
+  necessity `PASS=86`.
 
 Cycle 4 science commit pushed and recorded in PR #1980:
 
@@ -503,8 +549,8 @@ f291e8410
 Next exact action:
 
 ```text
-derive accepted same-surface Y_T cubic phase potential/variational law plus
-physical nonzero orientation branch while supplying W/top matrix elements;
-otherwise obtain accepted strict same-source top/W pole-row data with contact,
-FV/IR, and model-class controls.
+produce accepted strict same-source top/W pole-row data with contact, FV/IR,
+and model-class controls; if staying on C3, derive an accepted same-surface
+orbit-member/top-line law that excludes P_0 and supplies W/top matrix
+elements.
 ```

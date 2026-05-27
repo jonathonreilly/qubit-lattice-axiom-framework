@@ -114,6 +114,10 @@ closed exactly:
   cubic phase-potential sign/branch no-go: C3-invariant cubic structure alone
   leaves sign, variational convention, singlet extrema, degeneracies, and
   physical orientation branch load-bearing
+  phase-orbit selector underdetermination no-go: a general C3-invariant scalar
+  phase potential selects phase orbits, not physical orbit members; generic
+  orbits contain P_0, P_omega, and P_omega2 witnesses, so an accepted
+  orbit-member/top-line law or strict pole rows remains load-bearing
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -139,6 +143,8 @@ still open:
   accepted same-surface phase-angle law deriving phi = +/-2 pi/3, or another
   angle in the nontrivial phase-ordering cone, for the physical top base
   operator
+  accepted same-surface orbit-member/readout law that excludes P_0 after a
+  C3-invariant scalar phase orbit is selected
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -1002,6 +1008,36 @@ The first orbit includes both the singlet row and the target nontrivial rows;
 the second orbit gives degenerate top sets.  Therefore C3-invariant cubic
 structure is not itself an accepted phase law.
 
+[`YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`](YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md)
+then tests the broader scalar-potential route.  A real C3-invariant scalar
+phase potential has the finite Fourier form
+
+```text
+V(phi) = c_0 + sum_n [a_n cos(3 n phi) + b_n sin(3 n phi)].
+```
+
+It is therefore constant on each orbit
+
+```text
+phi, phi + 2 pi/3, phi - 2 pi/3.
+```
+
+The top-line map is not constant on that orbit.  A generic strict-ordering
+orbit cycles through `P_0`, `P_omega2`, and `P_omega`; the primitive cubic
+orbit gives:
+
+```text
+phi = 0       -> P_0      -> A/sqrt(3)
+phi = +2 pi/3 -> P_omega2 -> A/sqrt(12)
+phi = -2 pi/3 -> P_omega  -> A/sqrt(12)
+```
+
+Thus C3-invariant scalar dynamics, even beyond the cubic term, can at most
+select an orbit.  It cannot by itself certify that the physical top pole is a
+nontrivial orbit member.  The missing object is still an accepted
+same-surface orbit-member/readout law, an orientation theorem that excludes
+`P_0`, or strict W/top pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -1076,13 +1112,18 @@ proposal_allowed_reason: |
   The cubic phase-potential sign/branch no-go prunes cubic invariance alone
   as the missing phase law: sign, variational convention, singlet extrema,
   degeneracies, and physical orientation branch remain load-bearing.
+  The phase-orbit selector underdetermination no-go prunes the broader scalar
+  phase-potential shortcut: C3-invariant scalar dynamics selects whole phase
+  orbits, and those orbits contain singlet and nontrivial top-line witnesses.
+  An accepted orbit-member/top-line readout law or strict pole rows remain
+  load-bearing.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  same-surface phase-angle dynamics theorem deriving phi = +/-2 pi/3, or
-  another nontrivial-cone angle, with accepted backend, W/top projectors, and
+  same-surface phase-angle/orbit-member dynamics theorem deriving a
+  nontrivial physical top line, with accepted backend, W/top projectors, and
   source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted pole rows or microscopic dynamics

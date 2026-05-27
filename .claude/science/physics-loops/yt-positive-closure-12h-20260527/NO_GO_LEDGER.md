@@ -88,3 +88,10 @@ potential/variational law and a physical nonzero orientation branch.
   functional to a constant plus a signed `cos(3phi)` term, but sign,
   variational convention, singlet extrema, degenerate extrema, and physical
   orientation branch remain load-bearing.
+- New in the fifteenth block: general real C3-invariant scalar phase dynamics
+  does not derive the physical nontrivial top line. Such a potential is
+  constant on phase orbits `phi, phi+2pi/3, phi-2pi/3`; a generic orbit
+  cycles through `P_0`, `P_omega2`, and `P_omega`, and the primitive cubic
+  orbit contains the singlet row `A/sqrt(3)` as well as the target rows
+  `A/sqrt(12)`. An accepted orbit-member/top-line law or strict pole rows
+  remain load-bearing.

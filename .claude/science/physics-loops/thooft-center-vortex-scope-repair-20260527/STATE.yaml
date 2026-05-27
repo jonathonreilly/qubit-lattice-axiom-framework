@@ -1,0 +1,20 @@
+loop: thooft-center-vortex-scope-repair-20260527
+target_claim_id: thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16
+actual_current_surface_status: open
+target_status: open_gate_reaudit
+branch: physics-loop/thooft-center-vortex-scope-repair-20260527
+started_from: origin/main
+files_touched:
+  - docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/frontier_thooft_center_vortex_scope_repair.py
+  - .claude/science/physics-loops/thooft-center-vortex-scope-repair-20260527/
+active_route: permanent open-gate boundary
+hard_residual: no framework bridge for confinement mechanism, Wilson area law, or string tension
+open_imports:
+  - monopole condensation not derived
+  - center-vortex percolation not derived
+  - Wilson-loop area law and sigma greater than zero not derived
+  - framework substrate/readout bridge not derived
+trace_gate_classification: direct_blocker_closure
+next_exact_action: verify, run audit pipeline, open draft PR
+stop_condition: draft PR opened for independent review

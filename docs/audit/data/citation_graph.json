@@ -67122,17 +67122,17 @@
     },
     "omega_lambda_derivation_note": {
       "claim_id": "omega_lambda_derivation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "r_base_group_theory_derivation_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "37a6a9ee9ce4bfdd042c3173c547b75247a181ed9a772bbe57d5738d91f33a79",
+      "note_hash": "288e8264e94a2ba78a0194fcbc40fa21608c07b6a696e7403c32c9fcb21f3761",
       "path": "docs/OMEGA_LAMBDA_DERIVATION_NOTE.md",
-      "runner_path": null,
-      "title": "Omega_Lambda Derivation: The Cosmological Pie Chart"
+      "runner_path": "scripts/frontier_omega_lambda_arithmetic_cascade.py",
+      "title": "Omega_Lambda Arithmetic Cascade"
     },
     "omega_lambda_matter_bridge_theorem_note_2026-04-22": {
       "claim_id": "omega_lambda_matter_bridge_theorem_note_2026-04-22",
@@ -85407,20 +85407,20 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 606,
+      "bounded_theorem": 607,
       "decoration": 1,
       "meta": 191,
       "no_go": 81,
-      "none": 1448,
+      "none": 1447,
       "open_gate": 49,
       "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1025,
+      "bounded_theorem": 1026,
       "decoration": 1,
       "meta": 191,
       "no_go": 184,
-      "none": 430,
+      "none": 429,
       "open_gate": 126,
       "positive_theorem": 589
     },
@@ -85428,6 +85428,6 @@
     "leaf_count": 790,
     "node_count": 2546,
     "root_count": 850,
-    "runners_with_path": 2120
+    "runners_with_path": 2121
   }
 }

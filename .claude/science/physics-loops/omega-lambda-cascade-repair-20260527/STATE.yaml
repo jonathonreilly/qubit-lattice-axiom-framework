@@ -1,0 +1,19 @@
+loop: omega-lambda-cascade-repair-20260527
+target_claim_id: omega_lambda_derivation_note
+target_status: proposed_retained
+actual_current_surface_status: proposed_retained
+branch: physics-loop/omega-lambda-cascade-repair-20260527
+base: origin/main
+current_route: split arithmetic cascade from unclosed cosmology bridges
+files_touched:
+  - docs/OMEGA_LAMBDA_DERIVATION_NOTE.md
+  - scripts/frontier_omega_lambda_arithmetic_cascade.py
+open_imports:
+  - Omega_b / eta / BBN
+  - Sommerfeld/alpha_GUT continuation from R_base to R=5.38
+  - flatness
+  - DM relic mapping
+verification:
+  - python3 scripts/frontier_omega_lambda_arithmetic_cascade.py
+next_exact_action: run audit pipeline, commit, open PR
+stop_condition: PR created and row queued for independent re-audit

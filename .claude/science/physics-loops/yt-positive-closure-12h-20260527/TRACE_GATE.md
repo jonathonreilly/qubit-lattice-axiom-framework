@@ -1,13 +1,13 @@
 # Trace Gate
 
 ```yaml
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: yt_positive_closure_pr1980
 target_blocker_text: "derive/certify the coefficient-bearing same-surface top sector matrix element dM_t/dell = A/sqrt(12)"
 source_of_blocker_text: user_goal
-reachability_to_target: supports
-artifact_role: theorem_support_boundary
-next_trace_action: "derive accepted same-surface C3 phase-angle dynamics selecting phi=+/-2pi/3, or another nontrivial-cone angle, for the physical Y_T base operator; or produce accepted strict top/W pole-row data"
+reachability_to_target: prunes
+artifact_role: no_go
+next_trace_action: "derive accepted same-surface C3 phase-angle dynamics/readout law selecting a nontrivial-cone angle for the physical Y_T base operator; or produce accepted strict top/W pole-row data"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -45,3 +45,9 @@ target nontrivial cone, select `P_omega2` or `P_omega`, and give
 derive that the physical Y_T same-surface base operator has either phase
 angle. The next trace action is to derive that accepted phase-angle law, or
 to bypass it with strict pole-row data.
+The twelfth artifact prunes finite C3 representation/character facts alone as
+the selector for that phase law. The C3-native unit Hermitian family includes
+`phi=pi/2` and `phi=2pi/3` target-row witnesses, but also `phi=0` and
+`phi=pi/6` singlet-row witnesses. The next trace action must therefore derive
+an accepted same-surface dynamics/readout law for the physical phase, or
+bypass the phase route with strict pole-row data.

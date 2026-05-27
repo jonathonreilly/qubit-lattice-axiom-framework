@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced eleven science blocks, not positive retained-grade
+The campaign has produced twelve science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -22,6 +22,8 @@ closure:
 10. a no-go for deriving that cone from unit-normalized connected C3 base
     dynamics plus orientation sign.
 11. a conditional-support primitive C3 character phase-angle candidate.
+12. a no-go for deriving the phase law from finite C3
+    representation/character facts alone.
 
 New result:
 
@@ -244,6 +246,23 @@ site-phase, or general representation theory remain context only unless a new
 same-surface Y_T dynamics theorem connects them to this pole/action surface
 without target insertion.
 
+Twelfth result:
+
+```text
+H(phi) = cos(phi) B_x + sin(phi) B_y
+
+phi = 0       -> P_0      top -> A/sqrt(3)
+phi = pi/2    -> P_omega2 top -> A/sqrt(12)
+phi = 2 pi/3  -> P_omega2 top -> A/sqrt(12)
+phi = pi/6    -> P_0      top -> A/sqrt(3)
+```
+
+Finite C3 projectors, primitive character phases, and functions of the cyclic
+shift identify available algebraic choices, but representation theory alone
+does not select the physical Y_T base phase. The remaining positive route
+needs an accepted same-surface phase-angle dynamics/readout law, or strict
+top/W pole rows.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -279,13 +298,17 @@ Artifacts:
 - `docs/YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py`
 - `outputs/yt_c3_primitive_character_phase_angle_candidate_2026-05-27.json`
+- `docs/YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_representation_phase_selection_no_go.py`
+- `outputs/yt_c3_representation_phase_selection_no_go_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
 
 - `python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py` -> `SUMMARY: PASS=106 FAIL=0`
 - `python3 scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py` -> `SUMMARY: PASS=71 FAIL=0`
-- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=295 FAIL=0`
+- `python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py` -> `SUMMARY: PASS=94 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=303 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py` -> `SUMMARY: PASS=86 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py` -> `SUMMARY: PASS=68 FAIL=0`
 - `python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`
@@ -293,6 +316,7 @@ Verification so far:
 - `python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `SUMMARY: PASS=74 FAIL=0`
 - `python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py` -> `SUMMARY: PASS=95 FAIL=0`
 - `python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `SUMMARY: PASS=104 FAIL=0`
+- `python3 -m py_compile scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py` -> `PASS`
 - `python3 -m py_compile scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `PASS`
 - `python3 -m py_compile scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `PASS`
 - `git diff --check` -> `PASS`
@@ -358,9 +382,8 @@ f291e8410
 Next exact action:
 
 ```text
-derive accepted same-surface C3 phase-angle dynamics proving the quantitative
-phase angle phi = +/-2 pi/3, or another nontrivial-cone angle, for the
-physical Y_T base operator while supplying W/top matrix elements; otherwise
-obtain accepted strict same-source top/W pole-row data with contact, FV/IR,
-and model-class controls.
+derive accepted same-surface C3 phase-angle dynamics/readout law selecting a
+nontrivial-cone angle for the physical Y_T base operator while supplying W/top
+matrix elements; otherwise obtain accepted strict same-source top/W pole-row
+data with contact, FV/IR, and model-class controls.
 ```

@@ -6,18 +6,18 @@ remaining_campaign_seconds_at_cycle_start: 37627
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T20:09:37Z"
+last_checkpoint_utc: "2026-05-27T20:16:37Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_primitive_character_phase_angle_candidate
+active_route: c3_representation_phase_selection_no_go
 hard_residual: "derive/certify dM_t/dell = A/sqrt(12)"
-actual_current_surface_status: conditional-support / open phase-angle law
-trace_class: upstream_support
-reachability_to_target: supports
+actual_current_surface_status: no-go / open same-surface phase-angle law
+trace_class: negative_route_pruning
+reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Primitive nontrivial C3 character phase angles were certified as a concrete conditional-support route. On the unit base circle, phi=+2pi/3 gives (x_0,y_0)=(-1/2,sqrt(3)/2), selects P_omega2, and gives A/sqrt(12); phi=-2pi/3 gives (x_0,y_0)=(-1/2,-sqrt(3)/2), selects P_omega, and gives A/sqrt(12). The current surface still does not derive that the physical Y_T same-surface base operator has either phase angle; adjacent C3 phase appearances remain context only, not proof inputs. Positive closure still needs an accepted same-surface phase-angle dynamics law, or accepted strict W/top pole rows."
+claim_state_movement: "Finite C3 representation/character facts alone were pruned as a selector for the physical Y_T same-surface base phase angle. The C3-native unit Hermitian family H(phi)=cos(phi)B_x+sin(phi)B_y includes target-row witnesses such as phi=pi/2 and phi=2pi/3, but also singlet-row witnesses such as phi=0 and phi=pi/6. Therefore representation theory supplies available algebraic choices but does not select the physical phase law. Positive closure still needs an accepted same-surface phase-angle dynamics/readout theorem, or accepted strict W/top pole rows."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -31,6 +31,9 @@ files_touched:
   - docs/YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py
   - outputs/yt_c3_primitive_character_phase_angle_candidate_2026-05-27.json
+  - docs/YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md
+  - scripts/frontier_yt_c3_representation_phase_selection_no_go.py
+  - outputs/yt_c3_representation_phase_selection_no_go_2026-05-27.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -59,6 +62,7 @@ no_go_routes:
   - reflection-even same-surface C3 base dynamics derives nontrivial C3 phase-ordering cone membership
   - orientation sign or nonzero B_y phase term derives nontrivial C3 phase-ordering cone membership
   - unit-normalized connected C3 base dynamics plus orientation sign derives nontrivial C3 phase-ordering cone membership
+  - finite C3 representation/character facts alone select the accepted Y_T phase angle
 commands_run:
   - "python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py -> PASS=106 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=285 FAIL=0"
@@ -98,8 +102,19 @@ commands_run:
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=295 FAIL=0"
   - "python3 -m py_compile scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py -> PASS"
   - "git diff --check -> PASS"
-review_disposition: pass_for_conditional_support_only
-pr_status: PR #1980 body updated with primitive character phase-angle candidate result, verification, and commits
-latest_science_commit: 8dcbe0a137510ba5e71bccf6724d9567376b3c4c
-next_exact_action: "Derive an accepted same-surface C3 phase-angle dynamics theorem selecting phi=+/-2pi/3, or another angle inside the nontrivial phase-ordering cone, with W/top projectors and source-generator matrix elements; otherwise pivot to accepted strict same-source top/W pole-row data with controls."
+  - "python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py -> PASS=94 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=303 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py -> PASS=71 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py -> PASS=106 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py -> PASS=70 FAIL=0"
+  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py -> PASS=68 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS"
+  - "git diff --check -> PASS"
+review_disposition: pass_for_no_go_boundary_only
+pr_status: PR #1980 pending update for representation phase-selection no-go block
+latest_science_commit: pending_representation_phase_selection_block
+next_exact_action: "Derive an accepted same-surface C3 phase-angle dynamics/readout theorem selecting a nontrivial-cone angle for the physical Y_T base operator and supplying W/top projectors plus source-generator matrix elements; otherwise pivot to accepted strict same-source top/W pole-row data with controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

@@ -1,0 +1,166 @@
+{
+  "actual_current_surface_status": "no-go / open same-surface phase-angle law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_representation_phase_selection_no_go_note_2026-05-27",
+  "conditional_surface_status": "A/sqrt(12) follows if accepted same-surface Y_T dynamics selects phi=+/-2pi/3, the phase-generator axis, or another nontrivial-cone angle",
+  "dependency_status": {
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "phase_cone": {
+      "actual_current_surface_status": "exact-support / open phase-ordering import",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "primitive_angle": {
+      "actual_current_surface_status": "conditional-support / open phase-angle law",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "strict_availability": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "underdetermination": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_representation_phase_selection_no_go.py",
+  "literature_math_search": {
+    "adjacent_lane_phase_status": "context only; not imported as Y_T proof",
+    "external_literature_load_bearing": false,
+    "math_used": "finite C3 character algebra and direct diagonalization"
+  },
+  "next_action": "derive accepted same-surface phase-angle dynamics, or produce accepted strict top/W pole rows",
+  "no_go_certificate": {
+    "adjacent_lane_phase_import_used_as_proof": false,
+    "c3_native_counterangle_selects_singlet": true,
+    "candidate_angles_give_target_row": true,
+    "finite_c3_projectors_available": true,
+    "no_forbidden_imports": true,
+    "representation_theory_excludes_singlet_counterangle": false,
+    "representation_theory_selects_phase_generator_axis": false,
+    "representation_theory_selects_phi_pm_2pi_over_3": false,
+    "same_surface_phase_angle_dynamics_law_derived": false,
+    "strict_top_w_response_certificate_present": false,
+    "unit_connected_hermitian_circulant_family_available": true
+  },
+  "pass_count": 94,
+  "phase_family_witnesses": {
+    "negative_phase_generator_axis": {
+      "c3_native_hermitian_connected": true,
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "sqrt(2)/2",
+        "P_omega2": "-sqrt(2)/2"
+      },
+      "largest_lines": [
+        "P_omega"
+      ],
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "unit_norm": true,
+      "x0": "0",
+      "y0": "-1"
+    },
+    "negative_primitive_character_angle": {
+      "c3_native_hermitian_connected": true,
+      "eigenvalues": {
+        "P_0": "-sqrt(6)/6",
+        "P_omega": "sqrt(6)/3",
+        "P_omega2": "-sqrt(6)/6"
+      },
+      "largest_lines": [
+        "P_omega"
+      ],
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "unit_norm": true,
+      "x0": "-1/2",
+      "y0": "-sqrt(3)/2"
+    },
+    "phase_generator_axis": {
+      "c3_native_hermitian_connected": true,
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "-sqrt(2)/2",
+        "P_omega2": "sqrt(2)/2"
+      },
+      "largest_lines": [
+        "P_omega2"
+      ],
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "unit_norm": true,
+      "x0": "0",
+      "y0": "1"
+    },
+    "primitive_character_angle": {
+      "c3_native_hermitian_connected": true,
+      "eigenvalues": {
+        "P_0": "-sqrt(6)/6",
+        "P_omega": "-sqrt(6)/6",
+        "P_omega2": "sqrt(6)/3"
+      },
+      "largest_lines": [
+        "P_omega2"
+      ],
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "unit_norm": true,
+      "x0": "-1/2",
+      "y0": "sqrt(3)/2"
+    },
+    "real_character_axis": {
+      "c3_native_hermitian_connected": true,
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "-sqrt(6)/6",
+        "P_omega2": "-sqrt(6)/6"
+      },
+      "largest_lines": [
+        "P_0"
+      ],
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/3"
+      ],
+      "unit_norm": true,
+      "x0": "1",
+      "y0": "0"
+    },
+    "singlet_counter_angle": {
+      "c3_native_hermitian_connected": true,
+      "eigenvalues": {
+        "P_0": "sqrt(2)/2",
+        "P_omega": "-sqrt(2)/2",
+        "P_omega2": "0"
+      },
+      "largest_lines": [
+        "P_0"
+      ],
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/3"
+      ],
+      "unit_norm": true,
+      "x0": "sqrt(3)/2",
+      "y0": "1/2"
+    }
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Finite C3 representation theory supplies the projectors and a C3-native unit phase family, but it does not choose the physical Y_T base angle. Both target-row and singlet-row C3-native witnesses remain allowed without an accepted same-surface dynamics law.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "finite C3 representation/character facts alone select the accepted Y_T phase angle",
+  "route_still_live": "accepted same-surface phase-angle dynamics, or accepted strict top/W pole rows",
+  "trace_class": "negative_route_pruning"
+}

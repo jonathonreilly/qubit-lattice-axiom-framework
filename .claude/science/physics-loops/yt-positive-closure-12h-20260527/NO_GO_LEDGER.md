@@ -70,3 +70,8 @@ C3 character angles are a concrete conditional route. `phi=+2pi/3` selects
 `P_omega2` and `phi=-2pi/3` selects `P_omega`; both give `A/sqrt(12)`.
 The actual surface still needs an accepted same-surface Y_T phase-angle law
 selecting those angles, or strict pole rows.
+- New in the twelfth block: finite C3 representation/character facts alone do
+  not select the physical Y_T base phase angle. The C3-native unit Hermitian
+  family contains target-row witnesses (`phi=pi/2`, `phi=2pi/3`) and
+  singlet-row witnesses (`phi=0`, `phi=pi/6`). Choosing among them is an
+  additional same-surface dynamics/readout law unless derived.

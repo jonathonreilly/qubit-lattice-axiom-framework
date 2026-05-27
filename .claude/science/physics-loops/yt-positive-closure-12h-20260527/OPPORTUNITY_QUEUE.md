@@ -13,7 +13,8 @@
 | 9 | Orientation sign / nonzero `B_y` route to phase cone | low | medium | present | pruned; sign is necessary but not sufficient |
 | 10 | Unit-normalized quantitative C3 phase-strength shortcut | low | medium | present | pruned; unit norm plus orientation sign still leaves singlet and nontrivial witnesses |
 | 11 | Primitive nontrivial C3 character phase-angle candidate `phi=+/-2pi/3` | medium | medium | present | conditional support landed; accepted same-surface phase-angle law not derived |
-| 12 | New accepted quantitative orientation-phase angle theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | only remaining theory route |
+| 12 | Finite C3 representation/character facts select the physical phase angle | low | medium | present | pruned; C3-native choices include both target and singlet rows |
+| 13 | New accepted quantitative orientation-phase angle theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | only remaining theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -58,3 +59,12 @@ the required controls, or derive a same-surface phase-angle dynamics theorem
 that selects `phi=+/-2pi/3` (or another nontrivial-cone angle) for the physical
 Y_T base operator and supplies W/top projectors plus source-generator matrix
 elements.
+
+Queue refresh after the twelfth block: positive closure remains open. Finite
+C3 representation/character facts alone are pruned as a selector for the
+physical phase angle: the same C3-native unit Hermitian family contains
+target-row and singlet-row witnesses. The next exact action is rank 4 or rank
+13: obtain accepted strict top/W pole-row data with the required controls, or
+derive a same-surface dynamics/readout theorem selecting the physical
+nontrivial-cone phase angle and supplying W/top projectors plus source-generator
+matrix elements.

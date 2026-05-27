@@ -104,6 +104,9 @@ closed exactly:
   angles phi = +/-2 pi/3 lie in the target nontrivial cone and give
   A/sqrt(12), but the accepted same-surface phase-angle law selecting those
   angles remains open
+  representation phase-selection no-go: finite C3 representation/character
+  facts alone do not select that phase law, since C3-native unit Hermitian
+  choices include both target-row and singlet-row witnesses
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -925,6 +928,29 @@ operator.  Adjacent C3 phase appearances in CKM, PMNS, site-phase, or generic
 representation theory are context only unless a new same-surface Y_T dynamics
 theorem connects them to this pole/action surface without target insertion.
 
+[`YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md`](YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md)
+then tests the attempted promotion from finite C3 representation facts to that
+same-surface phase-angle law.  It finds a finite C3-native unit Hermitian
+family:
+
+```text
+H(phi) = cos(phi) B_x + sin(phi) B_y.
+```
+
+Within that same representation-theoretic family:
+
+```text
+phi = 0       -> P_0      top -> A/sqrt(3)
+phi = pi/2    -> P_omega2 top -> A/sqrt(12)
+phi = 2 pi/3  -> P_omega2 top -> A/sqrt(12)
+phi = pi/6    -> P_0      top -> A/sqrt(3)
+```
+
+Thus finite C3 projectors, primitive character phases, and functions of the
+cyclic shift identify available algebraic choices, but they do not select the
+physical Y_T base operator.  The remaining positive route is still an accepted
+same-surface dynamics/readout law for the phase angle, or strict pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -988,6 +1014,10 @@ proposal_allowed_reason: |
   C3 target now available: phi = +/-2 pi/3 would select a nontrivial line and
   give A/sqrt(12), but the actual current surface does not derive that the
   physical Y_T same-surface base operator has either angle.
+  The representation phase-selection no-go prunes finite C3
+  representation/character facts alone as the selector for that angle:
+  C3-native unit Hermitian choices include both target-row and singlet-row
+  witnesses.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

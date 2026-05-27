@@ -339,3 +339,34 @@ Verification recorded with this review:
   top-line obstruction.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 12
+
+Scope:
+
+- C3 representation phase-selection no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks C3-native unit Hermitian phase-family witnesses, dependency outputs, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open same-surface phase-angle law; future accepted dynamics and strict pole rows remain live. |
+| Imports / support | DISCLOSED | Accepted same-surface phase-angle dynamics/readout law, W/top projectors, matrix elements, and strict pole rows remain open. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=94 FAIL=0`
+- Full stack runner: `PASS=303 FAIL=0`
+- Adjacent Y_T runners passed: primitive character phase-angle candidate,
+  quantitative phase-strength underdetermination, phase-ordering cone support,
+  same-surface matrix factorization, strict sparse availability audit,
+  orientation-phase strength no-go, and C3 circulant dynamics boundary.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

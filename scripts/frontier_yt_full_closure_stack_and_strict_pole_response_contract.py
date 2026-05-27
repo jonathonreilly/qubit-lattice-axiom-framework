@@ -60,6 +60,9 @@ This runner verifies the current burn-down state:
   conditional support route: phi = +/- 2*pi/3 lies inside the target
   nontrivial cone and gives A/sqrt(12), but the same-surface phase-angle law
   selecting those angles is still open.
+* Finite C3 representation/character facts alone do not select that phase
+  law: C3-native unit Hermitian choices include both target-row and singlet-row
+  witnesses.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -122,6 +125,7 @@ C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY = DOCS / "YT_C3_ORIENTATION_PHASE_DYNAMI
 C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY = DOCS / "YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md"
 C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION = DOCS / "YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
 C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE = DOCS / "YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md"
+C3_REPRESENTATION_PHASE_SELECTION_NOGO = DOCS / "YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -163,6 +167,7 @@ C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_OUT = ROOT / "outputs" / "yt_c3_orientat
 C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_orientation_phase_strength_boundary_2026-05-27.json"
 C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_OUT = ROOT / "outputs" / "yt_c3_quantitative_phase_strength_underdetermination_2026-05-27.json"
 C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_OUT = ROOT / "outputs" / "yt_c3_primitive_character_phase_angle_candidate_2026-05-27.json"
+C3_REPRESENTATION_PHASE_SELECTION_NOGO_OUT = ROOT / "outputs" / "yt_c3_representation_phase_selection_no_go_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -249,6 +254,7 @@ def part1_anchors() -> dict[str, str]:
         C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY,
         C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION,
         C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE,
+        C3_REPRESENTATION_PHASE_SELECTION_NOGO,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -289,6 +295,7 @@ def part1_anchors() -> dict[str, str]:
         C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_OUT,
         C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_OUT,
         C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_OUT,
+        C3_REPRESENTATION_PHASE_SELECTION_NOGO_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -333,6 +340,7 @@ def part1_anchors() -> dict[str, str]:
         "phase-strength underdetermination",
         "primitive character phase-angle candidate",
         "open phase-angle law",
+        "representation phase-selection no-go",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -392,6 +400,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_orientation_phase_strength_boundary = load_json(C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_OUT)
     c3_quantitative_phase_strength_underdetermination = load_json(C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_OUT)
     c3_primitive_character_phase_angle_candidate = load_json(C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_OUT)
+    c3_representation_phase_selection_nogo = load_json(C3_REPRESENTATION_PHASE_SELECTION_NOGO_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -662,6 +671,34 @@ def part2_support_outputs() -> dict[str, Any]:
         .get("largest_lines")
         == ["P_omega"],
     )
+    check(
+        "C3 representation phase-selection no-go passed",
+        c3_representation_phase_selection_nogo.get("fail_count") == 0,
+        c3_representation_phase_selection_nogo.get("fail_count"),
+    )
+    check(
+        "C3 representation phase-selection is route pruning",
+        c3_representation_phase_selection_nogo.get("trace_class") == "negative_route_pruning",
+        c3_representation_phase_selection_nogo.get("trace_class"),
+    )
+    check(
+        "C3 representation theory does not select primitive angle",
+        c3_representation_phase_selection_nogo.get("no_go_certificate", {})
+        .get("representation_theory_selects_phi_pm_2pi_over_3")
+        is False,
+    )
+    check(
+        "C3 representation family includes singlet counterangle",
+        c3_representation_phase_selection_nogo.get("no_go_certificate", {})
+        .get("c3_native_counterangle_selects_singlet")
+        is True,
+    )
+    check(
+        "C3 representation phase route remains live only with dynamics or strict rows",
+        "accepted same-surface phase-angle dynamics"
+        in c3_representation_phase_selection_nogo.get("route_still_live", ""),
+        c3_representation_phase_selection_nogo.get("route_still_live"),
+    )
 
     return {
         "fisher": fisher,
@@ -703,6 +740,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_orientation_phase_strength_boundary": c3_orientation_phase_strength_boundary,
         "c3_quantitative_phase_strength_underdetermination": c3_quantitative_phase_strength_underdetermination,
         "c3_primitive_character_phase_angle_candidate": c3_primitive_character_phase_angle_candidate,
+        "c3_representation_phase_selection_nogo": c3_representation_phase_selection_nogo,
     }
 
 
@@ -907,7 +945,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface phase-angle law selecting phi=+/-2pi/3 or another nontrivial-cone angle with backend/projectors/matrix elements",
         },
@@ -959,6 +997,10 @@ def main() -> int:
             "cone and A/sqrt(12), but the current surface does not derive "
             "that the physical Y_T same-surface base operator has either "
             "phase angle. "
+            "Finite C3 representation/character facts alone are now pruned "
+            "as a selector for that phase law because C3-native unit "
+            "Hermitian choices include both target-row and singlet-row "
+            "witnesses. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1009,6 +1051,7 @@ def main() -> int:
             "c3_orientation_phase_strength_boundary_fail_count": support_outputs["c3_orientation_phase_strength_boundary"].get("fail_count"),
             "c3_quantitative_phase_strength_underdetermination_fail_count": support_outputs["c3_quantitative_phase_strength_underdetermination"].get("fail_count"),
             "c3_primitive_character_phase_angle_candidate_fail_count": support_outputs["c3_primitive_character_phase_angle_candidate"].get("fail_count"),
+            "c3_representation_phase_selection_nogo_fail_count": support_outputs["c3_representation_phase_selection_nogo"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -1037,6 +1080,9 @@ def main() -> int:
             "docs/YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py",
             "outputs/yt_c3_primitive_character_phase_angle_candidate_2026-05-27.json",
+            "docs/YT_C3_REPRESENTATION_PHASE_SELECTION_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_representation_phase_selection_no_go.py",
+            "outputs/yt_c3_representation_phase_selection_no_go_2026-05-27.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

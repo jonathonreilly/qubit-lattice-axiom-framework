@@ -25,6 +25,8 @@ witnesses on both sides of the same cone wall. The primitive character
 phase-angle candidate directly evaluates `phi=0` and `phi=+/-2pi/3` on that
 same finite unit base circle. Adjacent C3 phase appearances in CKM, PMNS,
 site-phase, or generic representation theory are context only and are not
-imported as Y_T proof. The
+imported as Y_T proof. The representation phase-selection no-go directly
+checks that C3 character/projector facts and C3-native functions of the cyclic
+shift leave both target-row and singlet-row finite witnesses. The
 strict-route audit is a branch-local availability check over existing JSON
 certificates. No literature bridge is needed for the claim status.

@@ -1,0 +1,13 @@
+goal: repair audited conditional row g_bare_dynamical_fixation_obstruction_note_2026-04-18
+target_status: proposed_retained
+mode: science-fix
+active_route: narrow_to_completed_l4_detector_obstruction
+current_surface_status: audited_conditional_before_reaudit
+files_touched:
+  - docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md
+verification:
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_g_bare_critical_feature_scan.py --check-only --allow-non-main
+  - bash docs/audit/scripts/run_pipeline.sh
+  - python3 docs/audit/scripts/audit_lint.py --strict
+next_exact_action: independent audit of the reset unaudited row
+stop_condition: PR opened for review; no direct main modification

@@ -10889,14 +10889,6 @@
       "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
     },
     {
-      "from": "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
-      "to": "g_bare_derivation_note"
-    },
-    {
-      "from": "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
-      "to": "plaquette_self_consistency_note"
-    },
-    {
       "from": "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09",
       "to": "g_bare_canonical_convention_narrow_theorem_note_2026-05-02"
     },
@@ -53790,18 +53782,15 @@
     },
     "g_bare_dynamical_fixation_obstruction_note_2026-04-18": {
       "claim_id": "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "g_bare_derivation_note",
-        "plaquette_self_consistency_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "e166d55cbed1f9796b1bddeb5903a80276bfb903f16c9bff1cb222798e5f92cb",
+      "note_hash": "bbb2daf2355d0d4a781e318b5a03a3abb5eb4275fb3a80387d9377c97f953e42",
       "path": "docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_g_bare_critical_feature_scan.py",
-      "title": "g_bare = 1 Dynamical Fixation Obstruction \u2014 Path 3 Scan"
+      "title": "g_bare = 1 Dynamical Fixation L=4 Detector Obstruction"
     },
     "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10": {
       "claim_id": "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
@@ -84850,6 +84839,7 @@
     "fourth_family_quadrant_note",
     "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
     "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+    "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
     "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
     "gap_physics_note",
     "gate_b_connectivity_tolerance_note",
@@ -85403,11 +85393,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 609,
+      "bounded_theorem": 610,
       "decoration": 1,
       "meta": 191,
       "no_go": 83,
-      "none": 1445,
+      "none": 1444,
       "open_gate": 49,
       "positive_theorem": 170
     },
@@ -85420,10 +85410,10 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9739,
+    "edge_count": 9737,
     "leaf_count": 793,
     "node_count": 2548,
-    "root_count": 852,
+    "root_count": 853,
     "runners_with_path": 2123
   }
 }

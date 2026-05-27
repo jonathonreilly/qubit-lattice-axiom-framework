@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1229 |
+| unaudited | 1230 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -62,11 +62,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1459 |
+| `unaudited` | 1460 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1093 |
+| `bounded_theorem` | 1094 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 259 |
@@ -78,17 +78,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 375 |
 | `high` | 508 |
 | `medium` | 588 |
-| `leaf` | 985 |
+| `leaf` | 986 |
 
 - **Retained pending chain closure:** 8
 - **Citation cycles detected:** 4
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2041
+- runners classified: 2042
 - runners with (C) first-principles compute hits: 994
 - runners with (D) external comparator hits: 601
-- decoration candidates (no C, no D): 348
+- decoration candidates (no C, no D): 349
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -102,8 +102,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1060 | 46.05 | `audited_clean` | **retained** |
 | 5 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 948 | 40.89 | `audited_clean` | **retained_bounded** |
 | 6 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 853 | 39.24 | `unaudited` | unaudited |
-| 7 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 181 | 39.01 | `unaudited` | unaudited |
-| 8 | `minimal_axioms` | meta | critical | 1052 | 38.54 | `unaudited` | meta |
+| 7 | `minimal_axioms` | meta | critical | 1053 | 39.04 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 181 | 39.01 | `unaudited` | unaudited |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 713 | 37.98 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | no_go | critical | 556 | 37.12 | `audited_clean` | **retained_no_go** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1031 | 35.01 | `audited_clean` | **retained** |

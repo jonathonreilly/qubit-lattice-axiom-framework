@@ -1752,6 +1752,18 @@
       "dominant_class": null,
       "runner": "scripts/broken_graph_action_power_robustness.py"
     },
+    "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 10,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py"
+    },
     "c3_symmetry_preserved_interpretation_note_2026-05-08": {
       "assert_count": 1,
       "counts": {
@@ -28392,6 +28404,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 10,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/causal_cone_speed_map.py": {
@@ -56633,15 +56660,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 348,
+    "decoration_candidates": 349,
     "dominant_class_distribution": {
-      "A": 250,
+      "A": 251,
       "B": 293,
       "C": 761,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2041,
+    "runners_classified": 2042,
     "runners_with_C": 994,
     "runners_with_D": 601
   }

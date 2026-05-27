@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 534 |
+| **retained_bounded** | 535 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1163 |
+| unaudited | 1162 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 833 |
+| `audited_clean` | 834 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1392 |
+| `unaudited` | 1391 |
 
 | claim_type | count |
 |---|---:|
@@ -727,6 +727,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -11020,6 +11021,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting T^a_Rbar := -(T^a_R)^* into Tr_R[T^a_R {T^b_R, T^c_R}] gives one overall minus sign for the cubic trace, hence A(Rbar) = -A(R); with A(3)=1 this gives A(3bar)=-1 and two copies give -2.  _(class `A`)_
 - **chain closes:** True — Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.
 - **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
+- **auditor confidence:** high
+
+### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`
+
+- **Note:** [`RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md`](../../docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-volume trace Radon-Nikodym template only: on A_Lambda ~= M_{2^|Lambda|}(C) with normalized trace tau_Lambda, any self-adjoint H defines D_H = e^{-H}/tau_Lambda(e^{-H}), a positive tau_Lambda-normalized density, and omega_H(O)=tau_Lambda(D_H O) is a normal state with Radon-Nikodym density D_H. Any wording in terms of rho_ref is audited only insofar as rho_ref|_Lambda denotes this normalized trace; this does not close the pre-record physical identification, Wilson-measure-to-operator representation bridge, mutual absolute continuity across carriers, thermodynamic limit, or RP compatibility theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For self-adjoint finite-region H, functional calculus gives e^{-H} positive and tau_Lambda(e^{-H})>0, so D_H is a positive normalized density and omega_H(O)=tau_Lambda(D_H O) is the finite-dimensional density-matrix/Radon-Nikodym representation relative to the faithful normalized trace.  _(class `A`)_
+- **chain closes:** True — A1/A2 supply the finite qubit-lattice matrix algebra, and the retained tracial-state theorem supplies tau_Lambda(A)=Tr(A)/2^|Lambda| as the finite-region trace. The remaining proof is standard finite-dimensional matrix functional calculus and trace positivity. The audited scope deliberately excludes the still-open Wilson/RP representation and pre-record identification bridges.
+- **rationale:** The finite-dimensional trace-density theorem closes on the restricted packet: e^{-H} is positive for self-adjoint H, the normalized trace is faithful, D_H has tau_Lambda(D_H)=1, and every normal finite-dimensional state has a density relative to the faithful trace. The row is clean only as this bounded template. The source's bridge language is not ratified as RP compatibility: the Wilson Euclidean measure still needs a retained representation as H_Wilson,Lambda on A_Lambda, and the upstream tracial-state audit excludes the physical identification of tau with a pre-record reference. The no-go/wall discipline check is therefore handled by narrowing the audited scope rather than treating the missing bridges as closed or impossible.
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

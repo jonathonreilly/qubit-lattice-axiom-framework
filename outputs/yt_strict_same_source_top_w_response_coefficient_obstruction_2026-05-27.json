@@ -1,0 +1,75 @@
+{
+  "actual_current_surface_status": "no-go",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "counterfamily": {
+    "dM_W_dh": "g_2*A/2",
+    "dM_t_dh": "kappa*A/sqrt(2)",
+    "readout": "kappa"
+  },
+  "current_certificate_field_status": {
+    "FV_IR_model_class_checks_pass": {
+      "closes_positive_field": false,
+      "current_status": "absent for measured/solved top/W pole packet"
+    },
+    "W_pole_isolated": {
+      "closes_positive_field": false,
+      "current_status": "W/Z denominator algebra support exists; same-surface pole certificate absent"
+    },
+    "coefficient_certified_dM_W_dh": {
+      "closes_positive_field": "partial",
+      "current_status": "support row g_2*v'(h)/2, not packaged with top pole data"
+    },
+    "coefficient_certified_dM_t_dh": {
+      "closes_positive_field": false,
+      "current_status": "symbolic y_33*v'(h)/sqrt(2), coefficient free"
+    },
+    "contact_subtraction_done": {
+      "closes_positive_field": false,
+      "current_status": "absent for measured/solved top/W pole packet"
+    },
+    "no_forbidden_imports": {
+      "closes_positive_field": true,
+      "current_status": "pass for support artifacts and this obstruction"
+    },
+    "same_model_class": {
+      "closes_positive_field": false,
+      "current_status": "same symbolic carrier class only; accepted top/W transfer class absent"
+    },
+    "same_scale_for_g2_and_source_response": {
+      "closes_positive_field": false,
+      "current_status": "open for numerical Y_T; local ratio can scope g_2 separately"
+    },
+    "same_source_id": {
+      "closes_positive_field": false,
+      "current_status": "support-only symbolic neutral carrier coordinate; accepted physical top/W transfer source absent"
+    },
+    "top_pole_isolated": {
+      "closes_positive_field": false,
+      "current_status": "absent coefficient-certified top pole row"
+    }
+  },
+  "fail_count": 0,
+  "next_action": "direct same-surface top and W pole-response solve, with coefficient rows, contact subtraction, FV/IR checks, model-class checks, and same-scale g_2 scope",
+  "pass_count": 74,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Current same-source/W-row/symbolic-top support does not contain a coefficient-certified top pole response row. A finite transfer counterfamily preserves the support schema while varying the recovered top coefficient.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py",
+    "outputs/yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json"
+  ],
+  "route_pruned": "deriving strict coefficient-certified top/W response evidence from current same-source/W-row/symbolic-top support alone",
+  "support_output_status": {
+    "fh_gate_fail_count": 0,
+    "same_source_gate_fail_count": 0,
+    "strict_top_fail_count": 0,
+    "strict_top_w_rows_present": false,
+    "strict_wz_fail_count": 0,
+    "symbolic_top_coefficient_derived": false,
+    "top_coefficient_nogo_fail_count": 0,
+    "top_source_nogo_fail_count": 0
+  },
+  "trace_class": "negative_route_pruning"
+}

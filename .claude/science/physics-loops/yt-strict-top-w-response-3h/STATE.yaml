@@ -1,0 +1,66 @@
+loop_slug: yt-strict-top-w-response-3h
+mode: campaign
+target_status: best-honest-status
+repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
+branch: physics-loop/yt-primitive-physical-source-theorem-20260526
+base: physics-loop/yt-lsp-source-scale-response-contract-20260526
+pr: 1980
+runtime_budget: 3h
+started_utc: "2026-05-27T01:47:45Z"
+last_checkpoint_utc: "2026-05-27T02:00:22Z"
+lock_mode: branch-local
+lock_note: "Repo-global automation_lock.py default path is blocked by /Users/jonreilly permissions; branch-local lock acquired under this loop pack."
+cycle_count: 1
+active_route: strict_same_source_top_w_response_coefficient_obstruction
+hard_residual: "Can current same-source/W-row/symbolic-top support itself supply a coefficient-certified top pole response row?"
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+bare_retained_allowed: false
+claim_state_movement: "Pruned the shortcut from current same-source/W-row/symbolic-top support to coefficient-certified top pole-response evidence."
+files_touched:
+  - docs/YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md
+  - scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py
+  - outputs/yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+  - .claude/science/physics-loops/yt-strict-top-w-response-3h/
+open_imports:
+  - "direct coefficient-certified top pole response row"
+  - "same-surface W/top pole certificate with contact subtraction"
+  - "FV/IR and model-class checks for top/W response solve"
+  - "same-scale g2 scope for numerical y_t(v)"
+no_go_routes:
+  - "structural no-compute top-source identification from current inputs alone"
+  - "deriving coefficient-certified top pole row from current same-source/W-row/symbolic-top support alone"
+forbidden_imports_checked:
+  - H_unit
+  - yt_ward_identity
+  - y_t_bare
+  - observed top/W/Z masses
+  - PDG targets
+  - alpha_LM
+  - plaquette/u0
+  - Planck
+  - alpha_s
+  - fitted selectors
+commands_run:
+  - "python3 scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=98 FAIL=0"
+  - "python3 scripts/frontier_yt_top_source_identification_hard_stop_no_go.py -> PASS=63 FAIL=0"
+  - "python3 scripts/frontier_yt_fh_top_w_response_ratio_gate.py -> PASS=38 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_symbolic_top_response_row_packet.py -> PASS=45 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py -> PASS=47 FAIL=0"
+  - "python3 scripts/frontier_yt_same_source_ew_higgs_authority_gate.py -> PASS=41 FAIL=0"
+  - "python3 scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py -> PASS=43 FAIL=0"
+  - "python3 scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py -> PASS=63 FAIL=0"
+  - "python3 scripts/frontier_yt_top_response_coefficient_underdetermination_no_go.py -> PASS=43 FAIL=0"
+  - "python3 scripts/frontier_yt_top_coefficient_full_court_press.py -> PASS=59 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS"
+  - "git diff --check -> PASS"
+review_disposition: pass
+pr_status: pending_update
+next_exact_action: "Commit, push, and update PR #1980; future science action is a direct same-surface top/W pole-response solve or coefficient theorem."
+stop_condition: "Queue refreshed after stretch/fan-out; remaining positive routes require new top/W pole data, a new microscopic coefficient theorem, or human/audit acceptance of the primitive-source premise."

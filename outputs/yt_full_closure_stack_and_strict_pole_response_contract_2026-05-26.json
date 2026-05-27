@@ -85,8 +85,8 @@
     {
       "closed": false,
       "name": "strict same-source top/W response rows",
-      "next_action": "produce coefficient-certified top/W response rows",
-      "status": "remaining_audit_clean_positive_route_evidence_absent",
+      "next_action": "produce direct coefficient-certified top/W pole-response rows or a dynamics theorem deriving the top coefficient",
+      "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone",
       "step": 6
     },
     {
@@ -99,7 +99,7 @@
   ],
   "fail_count": 0,
   "first_open_gate": "strict same-source top/W response evidence unless audit accepts primitive top-source premise",
-  "pass_count": 93,
+  "pass_count": 98,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. Coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
@@ -115,6 +115,7 @@
     "minimum_information_uniqueness_fail_count": 0,
     "primitive_record_law_fail_count": 0,
     "same_source_fail_count": 0,
+    "strict_same_source_obstruction_fail_count": 0,
     "strict_top_fail_count": 0,
     "strict_wz_fail_count": 0,
     "top_carrier_fail_count": 0,

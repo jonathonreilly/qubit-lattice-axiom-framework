@@ -39,6 +39,8 @@ closed exactly:
   Fisher source arclength equals LSZ unit-residue normalization if an accepted
   isolated-pole residue surface is supplied
   W/Z denominator response and symbolic top-response row algebra are closed
+  deriving a coefficient-certified top pole row from current same-source/W-row
+  symbolic support alone is pruned by an exact finite-transfer counterfamily
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -218,6 +220,15 @@ no_forbidden_imports: true
 Existing support closes the W/Z denominator row and the symbolic top row shape,
 but the top numerator coefficient remains free until this certificate or an
 equivalent coefficient theorem exists.
+
+[`YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md`](YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md)
+sharpens that boundary.  It constructs a finite transfer counterfamily with the
+same source coordinate, isolated W/top eigenvalue rows, the W denominator row,
+and the symbolic top row shape, while varying the recovered top coefficient
+`kappa`.  Therefore current same-source/W-row/symbolic-top support cannot be
+upgraded into coefficient-certified top pole-response evidence by algebra
+alone.  A future positive certificate must supply a direct coefficient-bearing
+top pole row or a dynamics theorem deriving the coefficient.
 
 ### 6. Coefficient Readout
 

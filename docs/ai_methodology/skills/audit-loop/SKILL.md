@@ -24,6 +24,17 @@ Use this skill to audit one claim at a time from the repository audit queue and 
 - Do not read broad publication framing while judging the claim. Use the source note, one-hop cited authorities, runner, runner output, and the audit rubric.
 - Preserve fresh-context integrity. Do not read prior audit rationales, previous audit entries, rendered `AUDIT_LEDGER.md` history, PR text, publication framing, or downstream summaries while judging a claim.
 - Do not grant `audited_clean` unless the derivation closes without hidden premises, unsupported physical identifications, circular dependency, or tuned comparator matching.
+- Do not grant `audited_clean` on a math-bearing claim just because a runner
+  prints PASS. Independently check every load-bearing formula, sign, factor,
+  normalization, matrix identity, optimizer objective, and expected numerical
+  value against the source note and cited authorities. Use at least one route
+  that does not share the runner's implementation path: manual derivation,
+  symbolic/algebraic simplification, finite toy-case enumeration, independent
+  recomputation, invariant/limit checks, or direct comparison to a cited
+  theorem. If the runner is self-confirming, generates its own expected value,
+  omits a sign/factor/normalization check, or a reopened issue says the runner
+  math was wrong, treat the formula family as suspect and choose a non-clean
+  verdict until the expression is independently fixed and rechecked.
 - Tier-A admitted derivation targets are accepted non-axiom premises only when
   already listed in `docs/audit/data/tier_a_admissions.json`; they satisfy
   dependency closure only at the bounded tier, so downstream clean rows remain
@@ -279,6 +290,13 @@ Answer these before choosing a verdict:
 - Are any physical carriers, unit maps, source laws, boundary conditions, sectors, normalizations, or readouts selected without a retained theorem?
 - Are dependencies unaudited, open gates, retained-pending-chain, stale, or themselves conditional?
 - Does the runner compute the hard bridge, or does it hard-code the contested premise and check consistency afterward?
+- For every math-bearing step, what independent formula check was performed
+  beyond rerunning the same code? Did it verify the sign, factor,
+  normalization, dimensions/units, matrix ordering, boundary condition,
+  optimizer objective, and expected numeric value?
+- Would a minimal toy case, limiting case, symmetry/invariance check, or
+  second implementation catch the class of error the runner could otherwise
+  hide?
 - Is this an independent theorem, or algebraic decoration of an upstream claim?
 - Are numerical values current with the runner and the source note?
 - Would a hostile specialist be able to reject the conclusion without making a mistake?
@@ -288,12 +306,18 @@ Answer these before choosing a verdict:
 
 Use the audit-lane verdict enum exactly:
 
-- `audited_clean`: derivation closes from the cited inputs; no hidden physical identification; runner checks the load-bearing step or the proof is purely exact algebra over independent retained inputs. Effective status is derived from ledger `claim_type` plus dependency closure, not source-note status prose. `support` is not a claim class, and old support prose neither grants nor blocks retained status after a clean audit.
+- `audited_clean`: derivation closes from the cited inputs; no hidden physical identification; runner checks the load-bearing step or the proof is purely exact algebra over independent retained inputs; and every math-bearing formula/sign/factor/normalization/numeric target has been independently cross-checked outside the runner's implementation path. Effective status is derived from ledger `claim_type` plus dependency closure, not source-note status prose. `support` is not a claim class, and old support prose neither grants nor blocks retained status after a clean audit.
 - `audited_conditional`: depends on an unaudited dependency, open gate, retained-pending-chain row, unratified physical bridge, or an explicit premise not closed by the cited authorities.
 - `audited_renaming`: the load-bearing step defines/renames the target quantity or identifies two concepts without derivation.
 - `audited_decoration`: exact algebraic corollary with no independent comparator, falsifiability, compression, or new physical content beyond an upstream parent.
 - `audited_numerical_match`: result depends on tuned/calibrated input or chosen scale/value rather than a structural theorem.
 - `audited_failed`: chain is wrong, stale relative to the runner, mismatches the observable, contradicts dependencies, or does not close on its own terms.
+
+Math errors in a runner are scientific blockers, not mere infrastructure
+noise, when the affected formula is load-bearing. Use `audited_failed` if the
+current claim relies on the wrong expression; use `audited_conditional` with
+`notes_for_re_audit_if_any: runner_artifact_issue` only when the source claim
+may still be true but the artifact is not reliable enough to judge it.
 
 When in doubt, choose the more conservative non-clean verdict.
 

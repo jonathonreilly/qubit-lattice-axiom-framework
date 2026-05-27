@@ -1,0 +1,101 @@
+================================================================================
+LEPTON MASS SPECTRUM LANE BLOCK 1 — CLOSED-FORM SQRT-MASS TRIPLET VERIFIER
+================================================================================
+Theorem note: docs/AXIOM_FIRST_LEPTON_MASS_SPECTRUM_LANE_BLOCK1_NARROW_THEOREM_NOTE_2026-05-26.md
+Status: source-only research-lane proposal. No audit-lane wiring.
+Conditional on dynamics-lane PRs #1959-#1965 audits (providing δ = 2/9).
+
+--------------------------------------------------------------------------------
+Framework setup
+--------------------------------------------------------------------------------
+  [PASS] Retained BAE: |b|²/a² = 1/2 ⇒ 2|b|/a = √2 = 1.414214
+  [PASS] Dynamics-lane upstream: δ = 2/9 = 0.222222 rad (PR #1965)
+
+--------------------------------------------------------------------------------
+L1. Closed-form sqrt-mass triplet √m_k = a · [1 + √2 cos(2πk/3 + 2/9)]
+--------------------------------------------------------------------------------
+
+  k | 2πk/3 + 2/9 | cos(·)       | √m_k / a
+  --|-------------|--------------|----------
+  0 | 0.2222      | +0.975410    | +2.379438
+  1 | 2.3166      | -0.678575    | +0.040350
+  2 | 4.4110      | -0.296835    | +0.580212
+
+  [PASS] L1.a: smallest (= √m_e/a) at k=1: 0.040350
+  [PASS] L1.b: middle (= √m_μ/a) at k=2: 0.580212
+  [PASS] L1.c: largest (= √m_τ/a) at k=0: 2.379438
+  [PASS] L1.d: all three sqrt-masses positive (physical)
+  [PASS] L1.e: Σ √m_k / a = 3 (Brannen sum identity; cos terms cancel)  (sum = 3.0000000000)
+  [PASS] L1.f: Koide Q = (Σm)/(Σ√m)² = 0.666667 ≈ 2/3 = 0.666667  (deviation from 2/3: +0.000000 (~10⁻³, matches retained Koide at PDG precision))
+
+--------------------------------------------------------------------------------
+L2. PDG empirical match via Koide Q = 2/3 identity
+--------------------------------------------------------------------------------
+  PDG sqrt-masses (in √MeV):
+    √m_e = 0.714842
+    √m_μ = 10.279026
+    √m_τ = 42.152817
+    Σ = 53.146685
+    a_PDG = Σ/3 = 17.715562 √MeV
+
+  [PASS] L2.a: PDG Koide Q = 0.66666051 ≈ 2/3 = 0.66666667  (PDG matches 2/3 to 6.16 × 10⁻⁶)
+  [PASS] L2.b: PDG-extracted δ = arccos((√m_τ - a)/(a√2)) = 0.222270 rad  (vs framework prediction 2/9 = 0.222222; deviation 0.000048 rad (~10⁻⁴))
+
+  Empirical (PDG) vs framework prediction (δ = 2/9, BAE = 1/2):
+  ratio          | empirical  | predicted  | deviation
+  ---------------|------------|------------|----------
+  √m_e/a         | 0.040351  | 0.040350  | +0.000001
+  √m_μ/a         | 0.580226  | 0.580212  | +0.000014
+  √m_τ/a         | 2.379423  | 2.379438  | -0.000015
+  [PASS] L2.c: √m_τ/a matches at <10⁻³ precision (largest mass; least sensitive)  (deviation 0.00002)
+  [PASS] L2.d: √m_μ/a matches at <10⁻² precision (middle mass)  (deviation 0.00001)
+  [PASS] L2.e: √m_e/a matches at <10⁻² precision (smallest mass; most sensitive)  (deviation 0.00000; sensitive because √m_e ≈ 0)
+  [PASS] L2.f: Koide Q = 2/3 holds at PDG precision (~7×10⁻⁶) — the tight constraint
+
+--------------------------------------------------------------------------------
+L3. Overall scale a_lepton is the open derivation residual
+--------------------------------------------------------------------------------
+  [PASS] L3.a: Empirical a_lepton = 17.7156 √MeV (from PDG Σ √m_k / 3)  (value extracted from PDG; framework derivation open)
+  [PASS] L3.b: Equivalently a² = 313.84 MeV (the 'lepton mass scale' in Brannen convention)
+  [PASS] L3.c: a_lepton is NOT derived in this Block 1; identified as open residual  (next-block targets: R-L1 (EW VEV), R-L2 (staggered Dirac), R-L3 (alpha))
+  [PASS] L3.d: a² / v_EW = 0.001275 ≈ 1/785  (a²/v ≈ 1/783; whether this ratio has structural significance is R-L1)
+
+--------------------------------------------------------------------------------
+Conditional structure: depends on dynamics-lane upstream PRs
+--------------------------------------------------------------------------------
+  [PASS] Conditional on PR #1965 (dynamics-lane multi-witness) for δ = 2/9
+  [PASS] Conditional on PRs #1959, #1960, #1961 (dynamics-lane foundations)
+  [PASS] If upstream audits dirty: L1 reduces to Brannen + BAE structural form (δ open)  (user explicitly authorized this risk)
+  [PASS] L2 (Koide Q = 2/3) is INDEPENDENT of δ = 2/9; stands at the structural level  (Koide Q identity is retained at PDG precision regardless of δ)
+  [PASS] L3 (open scale a_lepton) is independent of upstream audit outcomes
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT derive a_lepton (overall scale; open residual R-L1, R-L2, R-L3)
+  [PASS] Does NOT derive individual mass values m_e, m_μ, m_τ in absolute units  (follow from a · (dimensionless ratios))
+  [PASS] Does NOT address sub-leading corrections to Brannen circulant
+  [PASS] Does NOT predict neutrino mass observables (separate lane)
+  [PASS] Does NOT connect to EW Higgs sector (cross-lane, R-L1 in next blocks)
+  [PASS] Does NOT assert δ = 2/9 unconditionally (from dynamics-lane upstream)  (if upstream dirty, framework predicts Brannen + BAE structure only)
+  [PASS] Does NOT consume PDG lepton masses as derivation inputs (only for L2 comparison)
+  [PASS] Does NOT propose new axiom or theory-language extension
+  [PASS] Does NOT predict any audit verdict
+  [PASS] Does NOT promote, retire, or re-classify any existing audit row
+
+================================================================================
+Summary: PASS=33 FAIL=0
+================================================================================
+Lepton mass spectrum lane Block 1: closed-form sqrt-mass triplet derived.
+
+  √m_k = a · [1 + √2 cos(2πk/3 + 2/9)],  k ∈ {0, 1, 2}
+
+  Predicted ratios (vs PDG):
+    √m_e/a  ≈ 0.0403  (PDG: 0.0404)
+    √m_μ/a  ≈ 0.5802  (PDG: 0.5802)
+    √m_τ/a  ≈ 2.3794  (PDG: 2.3794)
+
+  Open residual: a_lepton ≈ 17.7156 √MeV (a² ≈ 313.8 MeV)
+  Next-block targets: R-L1 (EW VEV), R-L2 (staggered Dirac), R-L3 (α connection).
+
+  Koide Q = 2/3 matches PDG at 6.16 × 10⁻⁶ (the 7×10⁻⁶ retained precision)

@@ -3,6 +3,8 @@
 This PR repairs the audited-conditional beta=6 plaquette evaluation-seam row by
 narrowing it to finite witness/evaluator-route bounded support.
 
+Loop PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2086
+
 The row no longer claims the full `K_6^env` / `B_6(W)` Wilson/Haar integral
 objects are already available. It now certifies only the finite left evaluator,
 the exact radical rank-three first symmetric restriction, and the finite

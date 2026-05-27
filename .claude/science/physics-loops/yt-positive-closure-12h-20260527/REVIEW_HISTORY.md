@@ -34,3 +34,36 @@ Verification recorded with this review:
   all passed.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 2
+
+Scope:
+
+- new real same-surface C3 top-line law obstruction note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner tests real/reflection C3 projectors, singlet/nontrivial block responses, counterassignments, route status, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go route pruning; no retained/proposed-retained wording. |
+| Imports / support | DISCLOSED | The note names the remaining dynamics/source-law import and forbidden inputs are absent. |
+| Nature retention | OPEN | No positive closure; the C3 circulant dynamics/source law remains open. |
+| Audit compatibility | PASS | Claim status is explicit and conservative. |
+
+Disposition: pass for no-go route-pruning artifact; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=104 FAIL=0`
+- Full stack runner: `PASS=226 FAIL=0`
+- Adjacent Y_T runners passed: first-principles transfer, same-surface
+  factorization, C3 real-record source, nontrivial top-line boundary,
+  mass-ordering obstruction, C3 spectral support, C3 spectral source-response
+  no-go, C3 source-direction no-go, LSP C3 boundary,
+  positivity/orientation C3 boundary, direct sparse certificate, and native
+  backend candidate.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

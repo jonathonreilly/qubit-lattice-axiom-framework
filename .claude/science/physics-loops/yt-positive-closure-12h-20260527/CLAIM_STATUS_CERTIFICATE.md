@@ -1,17 +1,18 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: conditional-support
-trace_class: upstream_support
-reachability_to_target: supports
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
 conditional_surface_status: "exact top-row certificate if accepted same-surface generator factorization and nontrivial top-line assignment are supplied"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The finite C3 factorization algebra gives A/sqrt(12) exactly on nontrivial C3 lines, but the actual current surface still lacks an accepted physical top line and accepted same-surface source-generator factorization. The singlet line remains allowed by the same finite algebra and gives A/sqrt(3)."
+proposal_allowed_reason: "The finite C3 factorization algebra gives A/sqrt(12) exactly on nontrivial C3 lines, but the actual current surface still lacks an accepted physical top line and accepted same-surface source-generator factorization. The real same-surface C3 top-line obstruction shows current real/reflection-even support fixes B_x but does not exclude P_0 or isolate a nontrivial complex top line."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pass_for_conditional_support_only
+review_loop_disposition: pass_for_no_go_route_pruning_only
+next_exact_action: "derive accepted C3 circulant dynamics/source law for a(h), x(h), y(h), or produce strict same-source top/W pole rows"
 ```
 
-Retained or proposed-retained wording is not allowed for this block.
+Retained or proposed-retained wording is not allowed for these blocks.

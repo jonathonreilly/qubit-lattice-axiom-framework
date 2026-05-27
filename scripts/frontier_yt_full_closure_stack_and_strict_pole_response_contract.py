@@ -26,6 +26,9 @@ This runner verifies the current burn-down state:
 * The mass-ordering top-line shortcut is now pruned: under B_x the ordinary
   top/heaviest convention selects P_0 with 2/sqrt(6), not the target
   nontrivial-line response 1/sqrt(6).
+* The non-mass-ordering real same-surface C3 top-line shortcut is now pruned:
+  current real/reflection-even C3 support fixes B_x but does not exclude P_0
+  or isolate a nontrivial complex line as the physical top pole.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -78,6 +81,7 @@ C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY = DOCS / "YT_C3_NONTRIVIAL_TOP_LINE_A
 C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN = DOCS / "YT_C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN_THEOREM_NOTE_2026-05-27.md"
 C3_REAL_RECORD_REFLECTION_EVEN_SOURCE = DOCS / "YT_C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_THEOREM_NOTE_2026-05-27.md"
 C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION = DOCS / "YT_C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_NOTE_2026-05-27.md"
+C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION = DOCS / "YT_C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -109,6 +113,7 @@ C3_NONTRIVIAL_TOP_LINE_ASSIGNMENT_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_nontr
 C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN_OUT = ROOT / "outputs" / "yt_c3_connected_source_from_normalized_rn_2026-05-27.json"
 C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_OUT = ROOT / "outputs" / "yt_c3_real_record_reflection_even_source_2026-05-27.json"
 C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_top_line_mass_ordering_obstruction_2026-05-27.json"
+C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_real_same_surface_top_line_law_obstruction_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -185,6 +190,7 @@ def part1_anchors() -> dict[str, str]:
         C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN,
         C3_REAL_RECORD_REFLECTION_EVEN_SOURCE,
         C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION,
+        C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -215,6 +221,7 @@ def part1_anchors() -> dict[str, str]:
         C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN_OUT,
         C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_OUT,
         C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT,
+        C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -248,6 +255,7 @@ def part1_anchors() -> dict[str, str]:
         "normalized RN/Fisher source semantics remove the identity direction",
         "real finite-record source semantics select the reflection-even C3 source",
         "mass-ordering obstruction",
+        "real same-surface top-line law obstruction",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -297,6 +305,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_connected_source_from_normalized_rn = load_json(C3_CONNECTED_SOURCE_FROM_NORMALIZED_RN_OUT)
     c3_real_record_reflection_even_source = load_json(C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_OUT)
     c3_top_line_mass_ordering_obstruction = load_json(C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT)
+    c3_real_same_surface_top_line_law_obstruction = load_json(C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -403,6 +412,11 @@ def part2_support_outputs() -> dict[str, Any]:
     check("mass-ordering proxy selects P_0", c3_top_line_mass_ordering_obstruction.get("mass_ordering_witness", {}).get("mass_ordering_proxy_top_line") == "P_0")
     check("mass-ordering top magnitude is 2/sqrt(6)", c3_top_line_mass_ordering_obstruction.get("mass_ordering_witness", {}).get("mass_ordering_proxy_top_magnitude") == "sqrt(6)/3")
     check("target nontrivial magnitude remains 1/sqrt(6)", c3_top_line_mass_ordering_obstruction.get("mass_ordering_witness", {}).get("target_nontrivial_magnitude") == "1/sqrt(6)")
+    check("C3 real same-surface top-line law obstruction passed", c3_real_same_surface_top_line_law_obstruction.get("fail_count") == 0, c3_real_same_surface_top_line_law_obstruction.get("fail_count"))
+    check("C3 real same-surface top-line law obstruction is route pruning", c3_real_same_surface_top_line_law_obstruction.get("trace_class") == "negative_route_pruning")
+    check("real top-line obstruction prunes non-mass-ordering shortcut", "non-mass-ordering" in c3_real_same_surface_top_line_law_obstruction.get("route_pruned", ""))
+    check("real top-line obstruction leaves C3 circulant dynamics next", "a(h), x(h), y(h)" in c3_real_same_surface_top_line_law_obstruction.get("route_still_live", ""))
+    check("real top-line obstruction keeps P_0 counterassignment", c3_real_same_surface_top_line_law_obstruction.get("counterassignments", {}).get("assignment_A", {}).get("top_matrix_element_magnitude") == "A/sqrt(3)")
 
     return {
         "fisher": fisher,
@@ -434,6 +448,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_connected_source_from_normalized_rn": c3_connected_source_from_normalized_rn,
         "c3_real_record_reflection_even_source": c3_real_record_reflection_even_source,
         "c3_top_line_mass_ordering_obstruction": c3_top_line_mass_ordering_obstruction,
+        "c3_real_same_surface_top_line_law_obstruction": c3_real_same_surface_top_line_law_obstruction,
     }
 
 
@@ -638,9 +653,9 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned",
             "closed": True,
-            "next_action": "derive a non-mass-ordering top-line law, or produce strict pole-row data",
+            "next_action": "derive accepted C3 circulant dynamics/source law for a(h), x(h), y(h), or produce strict pole-row data",
         },
         {
             "step": 7,
@@ -657,7 +672,9 @@ def main() -> int:
         "proposal_allowed_reason": (
             "The stack burns down source-coordinate scale and the primitive source law, "
             "then prunes top-source identification from current structural inputs. "
-            "The C3 B_x route is now also blocked under ordinary mass-ordering. "
+            "The C3 B_x route is now also blocked under ordinary mass-ordering, "
+            "and the current real/reflection-even same-surface inputs do not "
+            "derive a non-mass-ordering top-line law. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -666,7 +683,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "strict same-source top/W response evidence, or a non-mass-ordering same-surface top-line law",
+        "first_open_gate": "accepted C3 circulant dynamics/source law for a(h), x(h), y(h), or strict same-source top/W response evidence",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -698,6 +715,7 @@ def main() -> int:
             "c3_connected_source_from_normalized_rn_fail_count": support_outputs["c3_connected_source_from_normalized_rn"].get("fail_count"),
             "c3_real_record_reflection_even_source_fail_count": support_outputs["c3_real_record_reflection_even_source"].get("fail_count"),
             "c3_top_line_mass_ordering_obstruction_fail_count": support_outputs["c3_top_line_mass_ordering_obstruction"].get("fail_count"),
+            "c3_real_same_surface_top_line_law_obstruction_fail_count": support_outputs["c3_real_same_surface_top_line_law_obstruction"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

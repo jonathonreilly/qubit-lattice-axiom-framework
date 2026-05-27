@@ -93,8 +93,8 @@
     {
       "closed": true,
       "name": "physical top generation projector",
-      "next_action": "derive a non-mass-ordering top-line law, or produce strict pole-row data",
-      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0",
+      "next_action": "derive accepted C3 circulant dynamics/source law for a(h), x(h), y(h), or produce strict pole-row data",
+      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned",
       "step": 6.5
     },
     {
@@ -106,10 +106,10 @@
     }
   ],
   "fail_count": 0,
-  "first_open_gate": "strict same-source top/W response evidence, or a non-mass-ordering same-surface top-line law",
-  "pass_count": 218,
+  "first_open_gate": "accepted C3 circulant dynamics/source law for a(h), x(h), y(h), or strict same-source top/W response evidence",
+  "pass_count": 226,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering. First-principles transfer response is now closed, but the top sector matrix element remains load-bearing. The factorization boundary shows exactly how A/sqrt(12) would follow from accepted generator factorization plus a nontrivial top line, but those inputs remain open and coefficient-certified top/W response evidence remains absent.",
+  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering, and the current real/reflection-even same-surface inputs do not derive a non-mass-ordering top-line law. First-principles transfer response is now closed, but the top sector matrix element remains load-bearing. The factorization boundary shows exactly how A/sqrt(12) would follow from accepted generator factorization plus a nontrivial top line, but those inputs remain open and coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
     "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
     "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py",
@@ -120,6 +120,7 @@
     "c3_connected_source_from_normalized_rn_fail_count": 0,
     "c3_nontrivial_top_line_assignment_boundary_fail_count": 0,
     "c3_real_record_reflection_even_source_fail_count": 0,
+    "c3_real_same_surface_top_line_law_obstruction_fail_count": 0,
     "c3_source_direction_nogo_fail_count": 0,
     "c3_spectral_projector_support_fail_count": 0,
     "c3_spectral_source_response_nogo_fail_count": 0,

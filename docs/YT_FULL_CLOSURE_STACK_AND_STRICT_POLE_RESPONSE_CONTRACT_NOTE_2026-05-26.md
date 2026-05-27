@@ -70,6 +70,9 @@ closed exactly:
   connected-source premise is derived
   real finite-record source semantics select the reflection-even C3 source,
   so the C3 source direction is B_x up to sign
+  real same-surface top-line law obstruction: current real/reflection-even C3
+  support does not exclude P_0 or isolate a nontrivial complex line as the
+  physical top pole
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -83,8 +86,9 @@ still open:
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
   accepted physical target/source direction inside the C3 tangent space
-  accepted nontrivial top C3 line assignment
-  accepted exclusion of the C3 singlet line as the physical top row
+  accepted C3 circulant dynamics/source law for a(h), x(h), y(h)
+  accepted spectral ordering/exclusion of the C3 singlet line as the physical
+  top row
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -683,6 +687,24 @@ by the mass-ordering line.  Therefore the nontrivial top-line assignment cannot
 be treated as a harmless top-label convention.  It requires a new same-surface
 top-line law, or it must be bypassed with strict same-source top/W pole rows.
 
+The real same-surface top-line law obstruction then tests that
+non-mass-ordering shortcut directly.  The current real/reflection-even C3
+support fixes the source direction `B_x`, but it does not exclude the singlet
+spectral sector as the physical top pole.  It also cannot isolate an
+individual complex nontrivial line without extra dynamics, since reflection
+swaps the two nontrivial character projectors:
+
+```text
+R P_omega R = P_omega2.
+```
+
+The real same-surface support can name the block
+`P_nt = P_omega + P_omega2`, but saying that the physical top lies in that
+block is itself the missing physical top-sector law.  Thus the next
+non-compute route is no longer a generic top-line convention; it is an
+accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` that supplies
+the spectral ordering and source-generator matrix element.
+
 ## Non-Claims
 
 This note does not:
@@ -714,14 +736,17 @@ proposal_allowed_reason: |
   matrix element load-bearing. The factorization boundary shows that
   A/sqrt(12) follows exactly from an accepted top generator
   (A/sqrt(2))B_x plus a nontrivial top line, but those inputs are still open.
+  The real same-surface top-line law obstruction now prunes the available
+  non-mass-ordering shortcut: current real/reflection-even C3 support does not
+  exclude P_0 or isolate a nontrivial complex top line.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: accepted same-surface generator factorization plus nontrivial
-  top-line assignment, or strict same-source top/W response evidence
+first_open_gate: accepted C3 circulant dynamics/source law for a(h), x(h),
+  y(h), or strict same-source top/W response evidence
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
-  element, or a non-mass-ordering same-surface top-line law
+  element through accepted spectral dynamics/source law
 backup_route: audit accepts primitive top-source premise as physical source law
 ```
 

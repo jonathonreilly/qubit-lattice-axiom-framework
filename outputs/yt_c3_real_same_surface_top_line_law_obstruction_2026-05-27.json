@@ -1,0 +1,53 @@
+{
+  "actual_current_surface_status": "no-go",
+  "anchors": {
+    "factorization_status": "conditional-support",
+    "first_principles_status": "exact-support / formal-transfer no-go",
+    "mass_ordering_status": "no-go",
+    "real_source_status": "exact-support",
+    "spectral_source_response_status": "no-go"
+  },
+  "attempt_audit": {
+    "c3_spectral_dynamics_route_closed": false,
+    "connected_source_excludes_singlet_state": false,
+    "lsp_readout_selects_projector": false,
+    "mass_ordering_selects_nontrivial_line": false,
+    "no_forbidden_imports": true,
+    "positivity_orientation_selects_top_line": false,
+    "real_reflection_even_source_isolates_complex_nontrivial_line": false,
+    "strict_top_w_response_certificate_present": false
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_real_same_surface_top_line_law_obstruction_note_2026-05-27",
+  "counterassignments": {
+    "assignment_A": {
+      "physical_top_sector": "P_0",
+      "preserves_current_real_c3_source_support": true,
+      "top_matrix_element_magnitude": "A/sqrt(3)"
+    },
+    "assignment_B": {
+      "physical_top_sector": "P_nt or supplied nontrivial line",
+      "preserves_current_real_c3_source_support": true,
+      "top_matrix_element_magnitude_per_line": "A/sqrt(12)"
+    },
+    "reason_not_closed": "the current surface supplies no physical rule choosing assignment_B over assignment_A"
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py",
+  "next_ranked_route": "accepted C3 circulant dynamics/source law for a(h), x(h), y(h)",
+  "pass_count": 104,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The current real connected/reflection-even C3 source support fixes B_x but does not exclude the singlet C3 spectral sector as the physical top pole. It can name the real nontrivial block only as an extra physical sector law, and cannot isolate an individual complex line without additional dynamics.",
+  "reachability_to_target": "prunes",
+  "real_c3_block_witness": {
+    "P_0": "sqrt(6)/3",
+    "P_nt_per_line": "-sqrt(6)/6",
+    "P_nt_total": "-sqrt(6)/3",
+    "P_omega": "-sqrt(6)/6",
+    "P_omega2": "-sqrt(6)/6"
+  },
+  "route_pruned": "real same-surface C3 support derives non-mass-ordering nontrivial top-line assignment",
+  "route_still_live": "derive accepted C3 circulant dynamics/source law for a(h), x(h), y(h), or produce strict same-source top/W pole-response evidence",
+  "trace_class": "negative_route_pruning"
+}

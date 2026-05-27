@@ -19,3 +19,8 @@
 - New in this block: same-surface matrix-element factorization algebra alone
   does not certify the physical top row. It needs accepted generator
   factorization and nontrivial top-line authority.
+- New in the second block: current real/reflection-even same-surface C3
+  support does not derive a non-mass-ordering nontrivial top-line law. It
+  fixes `B_x`, but `P_0` remains allowed, and reflection swaps `P_omega` with
+  `P_omega2`. Excluding the singlet or isolating a nontrivial complex line
+  requires accepted spectral dynamics/source law or strict pole rows.

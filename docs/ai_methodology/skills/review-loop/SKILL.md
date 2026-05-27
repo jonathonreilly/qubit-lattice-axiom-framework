@@ -132,9 +132,11 @@ Parse:
 5. Record whether the worktree was initially clean. If it was dirty, do not
    auto-commit without explicit user permission unless the slash-command
    invocation clearly requested commit-producing fixes.
-6. If the task is to review open/non-landed PRs, include all non-merged PRs in
-   the requested scope except PRs the user explicitly excluded. Closed-but-
-   unmerged PR heads can be inspected with `gh pr view` and
+6. If the task is to review open/non-landed PRs, include all non-merged,
+   non-draft PRs in the requested scope except PRs the user explicitly
+   excluded. Draft PRs are out of scope: ignore them entirely and do not land
+   them unless the user explicitly asks to inspect a draft PR without landing
+   it. Closed-but-unmerged PR heads can be inspected with `gh pr view` and
    `git fetch origin pull/<N>/head:refs/tmp/pr-<N>`.
 
 Useful commands:

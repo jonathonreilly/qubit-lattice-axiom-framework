@@ -122,6 +122,12 @@ Verification so far:
 
 No `POSITIVE_CLOSURE` marker was written.
 
+Latest science commit pushed and recorded in PR #1980:
+
+```text
+d9d4d70a955efdf83e5f689f2d8e156ea1a101b5
+```
+
 Next exact action:
 
 ```text

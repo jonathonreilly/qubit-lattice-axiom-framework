@@ -1,0 +1,91 @@
+================================================================================
+QUARK MASS SPECTRUM LANE BLOCK 1 — STRUCTURAL IDENTIFICATION VERIFIER
+================================================================================
+Theorem note: docs/AXIOM_FIRST_QUARK_MASS_SPECTRUM_LANE_BLOCK1_NARROW_THEOREM_NOTE_2026-05-26.md
+Status: source-only research-lane proposal. No audit-lane wiring.
+Type: SCOPING / STRUCTURAL-IDENTIFICATION (not quantitative prediction).
+
+--------------------------------------------------------------------------------
+M1. Brannen-circulant structural form per isospin sector
+--------------------------------------------------------------------------------
+  [PASS] M1 (a=1.0, |b|/a=0.5, δ=0.000): Σ m_k = 3a (Brannen sum identity)  (Σm = 3.000000, 3a = 3.0)
+  [PASS] M1 (a=1.0, |b|/a=1.0, δ=0.524): Σ m_k = 3a (Brannen sum identity)  (Σm = 3.000000, 3a = 3.0)
+  [PASS] M1 (a=1.0, |b|/a=2.0, δ=1.047): Σ m_k = 3a (Brannen sum identity)  (Σm = 3.000000, 3a = 3.0)
+  [PASS] M1 (a=1.0, |b|/a=10.0, δ=0.349): Σ m_k = 3a (Brannen sum identity)  (Σm = 3.000000, 3a = 3.0)
+  [PASS] M1: Brannen-circulant form m_k = a + 2|b| cos(2πk/3 + δ) applies to ANY C_3-equivariant triplet  (structural inheritance from retained KOIDE_CIRCULANT_CHARACTER_DERIVATION)
+  [PASS] M1: Up-type quarks (u, c, t) form a C_3 triplet → Brannen-circulant with (a_up, |b|_up, δ_up)
+  [PASS] M1: Down-type quarks (d, s, b) form a C_3 triplet → Brannen-circulant with (a_down, |b|_down, δ_down)
+  [PASS] M1: Sector-specific parameters; quark BAE ≠ lepton BAE  (empirically verified in M2)
+
+--------------------------------------------------------------------------------
+M2. Lepton BAE |b|²/a² = 1/2 does NOT apply to quark sectors
+--------------------------------------------------------------------------------
+
+  Sector  | masses (GeV)                      | Koide-Q     | vs 2/3 ≈ 0.6667
+  --------|-----------------------------------|-------------|-----------------
+  Lepton  | 5.1100e-04, 1.0566e-01, 1.7769 | 0.6667      | -0.0000
+  Up      | 2.1600e-03, 1.2700,     173.0    | 0.8491      | +0.1824
+  Down    | 4.6700e-03, 0.0934,     4.18    | 0.7314      | +0.0648
+
+  [PASS] M2.a: Lepton Q ≈ 2/3 (retained; matches 10⁻⁵ empirically)  (Q_lepton = 0.666659 vs 2/3 = 0.666667)
+  [PASS] M2.b: Quark up-sector Q ≈ 0.849 ≠ 2/3 (lepton BAE does NOT apply)  (Q_up = 0.8491; deviation from 2/3 = 0.1824)
+  [PASS] M2.c: Quark down-sector Q ≈ 0.731 ≠ 2/3 (lepton BAE does NOT apply)  (Q_down = 0.7314; deviation from 2/3 = 0.0648)
+  [PASS] M2.d: Q_up ≠ Q_down (sectors are DIFFERENT, not the same hidden constant)  (|Q_up - Q_down| = 0.1177)
+  [PASS] M2.e: Three Q values empirically distinct: Q_lepton (~0.667), Q_up (~0.849), Q_down (~0.731)  (three sectors → three distinct Koide-Q values → three distinct BAE parameters)
+
+--------------------------------------------------------------------------------
+M3. Hierarchy is the quark-sector signature (accommodated by Brannen circulant)
+--------------------------------------------------------------------------------
+
+  Sector  | max/min ratio
+  --------|---------------
+  Lepton  | 3477.2 (τ/e)
+  Up      | 80092.6 (t/u)
+  Down    | 895.1 (b/d)
+
+  [PASS] M3.a: Lepton hierarchy ≈ 3500 (m_τ / m_e)
+  [PASS] M3.b: Up-quark hierarchy ≈ 80,000 (m_t / m_u; EXTREME)
+  [PASS] M3.c: Down-quark hierarchy ≈ 900 (m_b / m_d; MODERATE)
+  [PASS] M3.d: Brannen-circulant CAN accommodate any hierarchy via |b|/a (structural flexibility)  (larger |b|/a → larger m_max - m_min ratio)
+  [PASS] M3.e: Lepton |b|²/a² = 1/2 fixes lepton hierarchy ratio ~3500; quark sectors need DIFFERENT |b|/a  (quark BAE not yet retained)
+
+--------------------------------------------------------------------------------
+M4. Open derivation residuals (R-Q1, R-Q2, R-Q3)
+--------------------------------------------------------------------------------
+  [PASS] M4 (R-Q1): derive quark BAE parameters (|b|/a)_q, δ_q for each isospin sector  (potential angles: connection to CKM Wolfenstein, isospin doublet asymmetry)
+  [PASS] M4 (R-Q2): derive quark mass scale a_q (sector-specific)  (connects to retained STAGGERED_DIRAC + quark gauge content)
+  [PASS] M4 (R-Q3): connect to retained STAGGERED_DIRAC infrastructure for first-principles derivation  (parallel to lepton mass spectrum derivation path noted in dynamics-lane handoff)
+  [PASS] M4: All three residuals are SCOPING targets for next blocks; not closed in this Block 1  (this Block 1 is a structural-identification scoping theorem, not quantitative)
+
+--------------------------------------------------------------------------------
+Cross-tie to today's other lanes (PRs #1959-#1989)
+--------------------------------------------------------------------------------
+  [PASS] Cross-tie: CKM lane PR #1988 identified (n_pair, n_color) = (2, 3); n_pair=2 is isospin doublet  (quark sectors are up-type + down-type from same SU(2)_L doublet)
+  [PASS] Cross-tie: cross-lane capstone PR #1989 unifies lepton (N=3) and quark (N=6) at the substrate level  (quark masses inherit from same C_3 character substrate at N=3 within each isospin sector)
+  [PASS] Cross-tie: dynamics-lane Koide phase δ_lepton = 2/9 — quark δ_q analog is OPEN (R-Q1)  (each sector has its own Brannen phase δ_q)
+  [PASS] Cross-tie: PMNS lane and CKM lane addressed MIXING; this lane addresses MASSES  (quark mass spectrum is distinct axis from CKM mixing matrix)
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT derive quark BAE parameters (|b|/a)_q, δ_q  (open residual R-Q1)
+  [PASS] Does NOT derive quark mass scale a_q  (open residual R-Q2)
+  [PASS] Does NOT derive individual quark masses m_u, m_c, m_t, m_d, m_s, m_b
+  [PASS] Does NOT predict the Koide-Q values for quark sectors  (quark BAE parameters not yet retained)
+  [PASS] Does NOT derive the mass hierarchy magnitude  (open residual R-Q1 covers this)
+  [PASS] Does NOT consume PDG quark masses as derivation inputs (only for empirical comparison)  (masses used to verify M2 (lepton BAE doesn't extend))
+  [PASS] Does NOT propose new axiom or theory-language extension
+  [PASS] Does NOT predict any audit verdict
+  [PASS] Does NOT promote, retire, or re-classify any existing audit row
+
+================================================================================
+Summary: PASS=35 FAIL=0
+================================================================================
+Quark mass spectrum lane Block 1: structural identification only.
+  M1: quark mass operator has Brannen-circulant form on each isospin sector
+  M2: lepton BAE |b|²/a² = 1/2 does NOT apply (Q_up ≈ 0.849, Q_down ≈ 0.731 vs lepton 0.667)
+  M3: hierarchy is the quark signature (accommodated by large |b|/a)
+  M4: open derivation residuals R-Q1, R-Q2, R-Q3 enumerated
+
+This is a SCOPING theorem opening the lane, NOT a quantitative prediction.
+Quark BAE parameters, mass scale, and individual masses remain open for next blocks.

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 509 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1198 |
+| unaudited | 1197 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 71 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 806 |
-| `audited_conditional` | 71 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
@@ -934,6 +934,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `assumption_derivation_ledger` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -1646,6 +1647,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `.claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md`
   - `LEFT_HANDED_CHARGE_MATCHING_NOTE.md`
 - **auditor confidence:** high
+
+### `audited_symmetry_synthesis_note`
+
+- **Note:** [`AUDITED_SYMMETRY_SYNTHESIS_NOTE.md`](../../docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded synthesis of the named registered finite symmetry surfaces: strict-card exact mirror N=15/25, dense mirror boundary through N=100, finite mirror MI diagnostic, exact 2D mirror validation, Z2xZ2 cached N=25/40/60/80, and gravity-probe surfaces, excluding N=120 promotion and asymptotic or family-law claims.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-meitner-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The strongest bounded synthesis story says random growth fails by a rank-1 / CLT-type mechanism, exact discrete symmetry can preserve distinct sectors and delay that failure, and the mature finite bounded symmetry program holds across the named registered authority surfaces while the unified grown lane does not yet close.  _(class `B`)_
+- **chain closes:** False — The one-hop retained-bounded dependencies close the listed finite registered surfaces and their explicit exclusions. They do not close the broader rank-1/CLT mechanism or exact sector-preservation explanation as a retained synthesis-level mechanism theorem.
+- **rationale:** Issue: the finite artifact synthesis is mostly supported, but the note still claims mechanism-level language that random growth fails by a rank-1 / CLT-type mechanism and that exact discrete symmetry can preserve distinct sectors. Why this blocks: the one-hop authorities support finite runner/cache surfaces and bounded observed separations, not a retained mechanism theorem for those explanatory claims across the synthesized program. Repair target: narrow those mechanism sentences to observed finite diagnostics, or cite/add retained bridge theorems for the CLT/rank-1 mechanism and sector-preservation claim. Claim boundary until fixed: the registered finite rows themselves remain supported by retained-bounded dependencies.
+- **auditor confidence:** medium
 
 ### `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
 

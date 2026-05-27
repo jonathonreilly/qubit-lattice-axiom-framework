@@ -30,3 +30,7 @@ the stability calculation.
 - No framework-native universal dimensional-gravity law is claimed.
 - Full Bertrand closed-orbit theorem remains an external classical-mechanics
   result.
+
+## PR
+
+PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2095

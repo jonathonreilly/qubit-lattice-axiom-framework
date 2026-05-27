@@ -22836,6 +22836,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_three_generation_structure_narrow_spectrum.py"
     },
+    "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
+      "assert_count": 7,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/topological_instanton_framework_certificate.py"
+    },
     "translation_abelian_composition_theorem_note_2026-05-02": {
       "assert_count": 0,
       "counts": {
@@ -55232,6 +55244,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/topological_instanton_framework_certificate.py": {
+      "assert_count": 7,
+      "claims": [
+        "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/topology_families.py": {
       "assert_count": 0,
       "claims": [
@@ -56011,15 +56038,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 340,
+    "decoration_candidates": 341,
     "dominant_class_distribution": {
-      "A": 237,
+      "A": 238,
       "B": 286,
       "C": 757,
       "D": 300,
       "none": 437
     },
-    "runners_classified": 2017,
+    "runners_classified": 2018,
     "runners_with_C": 982,
     "runners_with_D": 588
   }

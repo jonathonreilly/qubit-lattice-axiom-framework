@@ -55,6 +55,8 @@ closed exactly:
   does not select the physical C3 source direction
   positivity/orientation support selects C3 and an oriented splitter only,
   not the physical Y_T C3 source tangent
+  connected + reflection-even source conditions select B_x, whose nontrivial
+  C3 character lines have response magnitude 1/sqrt(6)
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -66,6 +68,8 @@ still open:
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
   accepted physical target/source direction inside the C3 tangent space
+  accepted physical connected-source premise, reflection-even source premise,
+  and nontrivial top C3 line assignment
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -329,6 +333,24 @@ reflection-odd splitter axis `B_y`, but `B_y` produces spectral-line responses
 assignment and source-generator matrix element.  Therefore orientation support
 is not a Y_T source-direction theorem.
 
+[`YT_C3_CONNECTED_REFLECTION_EVEN_SOURCE_DIRECTION_CANDIDATE_NOTE_2026-05-27.md`](YT_C3_CONNECTED_REFLECTION_EVEN_SOURCE_DIRECTION_CANDIDATE_NOTE_2026-05-27.md)
+then records the strongest positive C3 source-direction candidate so far.  In
+the C3 Hermitian tangent basis
+
+```text
+B_a = I/sqrt(3)
+B_x = (C + C^2)/sqrt(6)
+B_y = i(C - C^2)/sqrt(6),
+```
+
+a connected source tangent removes the trace/identity direction `B_a`, and a
+reflection-even neutral scalar source removes the orientation-odd direction
+`B_y`.  Under those supplied premises, the only unit ray left is `B_x`, and
+the two nontrivial C3 character lines have source-response magnitude
+`1/sqrt(6)`.  This is exact support for the live route, not closure: it still
+does not derive that the physical Y_T source is connected and reflection-even
+on this surface, or that the physical top row is a nontrivial C3 line.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -468,6 +490,26 @@ orientation can pick C3 and the reflection-odd splitter axis;
 it still does not derive the physical Y_T source tangent.
 ```
 
+The connected/reflection-even candidate gives the best positive C3 bridge now
+available:
+
+```text
+connected source tangent + reflection-even neutral source
+  -> B_x = (C+C^2)/sqrt(6)
+  -> nontrivial C3 line response magnitude 1/sqrt(6).
+```
+
+Equivalently, the nontrivial C3 character lines have response magnitude 1/sqrt(6)
+under the `B_x` candidate.
+
+The remaining blocker is correspondingly narrower:
+
+```text
+derive the physical connected/reflection-even source authority and nontrivial
+top-line assignment from same-surface dynamics, or produce strict top/W pole
+rows directly.
+```
+
 ## Non-Claims
 
 This note does not:
@@ -492,11 +534,12 @@ proposal_allowed_reason: |
   The closure stack and conditional pole/response algebra are explicit, and
   the primitive no-hidden-record source law is derived. The top-source
   identification route does not close from current structural inputs, and
-  strict same-source response evidence is not present, so retained or
-  proposed-retained Y_T wording is not allowed.
+  the connected/reflection-even C3 source candidate still depends on physical
+  source and top-line premises. Strict same-source response evidence is not
+  present, so retained or proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: strict same-source top/W response evidence unless audit accepts primitive top-source premise
+first_open_gate: physical connected/reflection-even source authority plus nontrivial top-line assignment, or strict same-source top/W response evidence
 backup_route: audit accepts primitive top-source premise as physical source law
 ```
 

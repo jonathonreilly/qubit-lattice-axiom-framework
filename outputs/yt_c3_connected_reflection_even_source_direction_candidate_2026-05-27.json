@@ -1,0 +1,44 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "anchors": {
+    "c3_direction_nogo_status": "no-go",
+    "lsp_boundary_status": "no-go",
+    "orientation_boundary_status": "no-go"
+  },
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "candidate_direction_bx_selected_under_conditions": true,
+    "connected_source_condition_assumed_not_derived": true,
+    "no_forbidden_imports": true,
+    "nontrivial_c3_line_response_magnitude_1_over_sqrt6": true,
+    "physical_top_line_nontrivial_derived": false,
+    "reflection_even_neutral_source_condition_assumed_not_derived": true,
+    "same_surface_dynamics_derived": false,
+    "same_surface_top_w_response_certificate_present": false
+  },
+  "claim_id": "yt_c3_connected_reflection_even_source_direction_candidate_note_2026-05-27",
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_connected_reflection_even_source_direction_candidate.py",
+  "pass_count": 75,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Connected + reflection-even source conditions select B_x, and B_x has response magnitude 1/sqrt(6) on nontrivial C3 character lines. The physical connected-source premise, reflection-even premise, and top-line assignment are not yet derived.",
+  "reachability_to_target": "supports",
+  "route_still_live": "derive connected/reflection-even physical source authority and nontrivial top-line assignment from same-surface dynamics, or produce strict same-source top/W pole-response evidence",
+  "route_supported": "connected reflection-even C3 source direction B_x",
+  "selector_witness": {
+    "candidate_direction": "B_x",
+    "connected_removes": "B_a",
+    "reflection_even_removes": "B_y"
+  },
+  "spectral_response_witness": {
+    "candidate_direction": "B_x",
+    "nontrivial_line_magnitude": "1/sqrt(6)",
+    "p0_magnitude": "2/sqrt(6)",
+    "responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "-sqrt(6)/6",
+      "P_omega2": "-sqrt(6)/6"
+    }
+  },
+  "trace_class": "upstream_support"
+}

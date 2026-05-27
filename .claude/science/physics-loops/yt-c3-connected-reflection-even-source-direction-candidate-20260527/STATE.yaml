@@ -1,0 +1,24 @@
+loop_slug: yt-c3-connected-reflection-even-source-direction-candidate-20260527
+mode: campaign_block
+target_status: best-honest-status
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+branch: physics-loop/yt-primitive-physical-source-theorem-20260526
+stack_pr: 1980
+active_route: connected/reflection-even C3 source direction
+hard_residual_attacked: physical Y_T source direction inside C3 Hermitian tangent space
+result: |
+  Under supplied connected-source and reflection-even neutral-source premises,
+  the C3 Hermitian source tangent is forced to B_x up to sign. The two
+  nontrivial C3 character lines then have response magnitude 1/sqrt(6).
+open_imports:
+  - physical connected-source authority for the Y_T source
+  - physical reflection-even neutral-source authority on the same surface
+  - physical top row as a nontrivial C3 character line
+  - accepted same-surface dynamics or strict top/W pole rows
+proposal_allowed: false
+bare_retained_allowed: false
+next_exact_action: derive the physical premises/top-line assignment or pivot to strict top/W response evidence
+stop_condition: positive retained closure or narrowest honest blocker fully documented
+

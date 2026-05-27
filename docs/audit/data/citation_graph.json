@@ -6005,6 +6005,26 @@
       "to": "dirac_core_card_note"
     },
     {
+      "from": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+    },
+    {
+      "from": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+      "to": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+      "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "directional_b_geometry_normalized_holdout_transfer_mass5_note",
       "to": "directional_b_geometry_normalized_holdout_transfer_note"
     },
@@ -47377,6 +47397,24 @@
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_weak_coupling_scan.py",
       "title": "Dirac Weak Coupling Note"
     },
+    "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28": {
+      "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "cpt_exact_note",
+        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
+        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "20f3a147b4572e3bb0a13dead07e53f4a4fa0d226fbaef69010dcc7457f8517a",
+      "path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
+      "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
+      "title": "Dirac / Weyl Fermion DOF From Lorentz and Chirality Admission Bridge Note"
+    },
     "directional_b_density_stencil_note": {
       "claim_id": "directional_b_density_stencil_note",
       "claim_type_author_hint": null,
@@ -64500,6 +64538,18 @@
       "path": "docs/MASS_SPECTRUM_DERIVED_NOTE.md",
       "runner_path": null,
       "title": "Mass Spectrum Derived \u2014 Five-Phase Attack Closure"
+    },
+    "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28": {
+      "claim_id": "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "b6321de75a744a93b99117c72d4a44245a1c1a3f98f8fd8d98912cdba8ce4307",
+      "path": "docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py",
+      "title": "Massless Vector Polarization Count from Lorentzian Signature and Gauge Redundancy \u2014 Bounded Narrow Theorem"
     },
     "matched_2d_4d_decoherence_note": {
       "claim_id": "matched_2d_4d_decoherence_note",
@@ -85750,6 +85800,7 @@
     "localized_source_response_sweep_note_2026-05-17",
     "lorentz_violation_derived_note",
     "main_open_cubic_validation_2026-04-11",
+    "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28",
     "matched_2d_4d_decoherence_note",
     "matter_inertial_closure_note",
     "memory_decay_diagnosis_2026-04-11",
@@ -86122,7 +86173,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 632,
+      "bounded_theorem": 634,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -86131,7 +86182,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1049,
+      "bounded_theorem": 1051,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -86139,10 +86190,10 @@
       "open_gate": 127,
       "positive_theorem": 590
     },
-    "edge_count": 9820,
-    "leaf_count": 804,
-    "node_count": 2572,
-    "root_count": 857,
-    "runners_with_path": 2148
+    "edge_count": 9825,
+    "leaf_count": 806,
+    "node_count": 2574,
+    "root_count": 858,
+    "runners_with_path": 2150
   }
 }

@@ -1,0 +1,142 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+runner_sha256: 5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+audit-companion: Dirac/Weyl fermion dof admission bridge
+----------------------------------------------------------------------------------------
+note: /private/tmp/cl3-review-open-20260527-yg4oK6/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+parent: /private/tmp/cl3-review-open-20260527-yg4oK6/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+
+----------------------------------------------------------------------------------------
+note structure and scope
+----------------------------------------------------------------------------------------
+  [PASS] note contains: Claim type:** bounded_theorem
+  [PASS] note contains: Status authority:** source-note proposal only
+  [PASS] note contains: does **not** add a new axiom
+  [PASS] note contains: Framework authority packet (R1-R4)
+  [PASS] note contains: Supplied admission packet (Q1-Q2
+  [PASS] note contains: Proof-walk
+  [PASS] note contains: Exact arithmetic check
+  [PASS] note contains: Mapping to the parent note's P4 premise
+  [PASS] note contains: Boundaries
+  [PASS] note contains: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02
+  [PASS] note contains: CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: CPT_EXACT_NOTE
+  [PASS] note contains: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27
+  [PASS] note contains: HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10
+  [PASS] note contains: G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28
+
+----------------------------------------------------------------------------------------
+admission packet (Q1-Q2) marked as not framework-retained
+----------------------------------------------------------------------------------------
+  [PASS] admission marker present: Q1 Cl(3,1) Lorentzian signature extension
+  [PASS] admission marker present: Q2 On-shell relativistic thermal-counting convention
+  [PASS] admission marker present: admitted, not derived
+  [PASS] admission marker present: not framework-retained
+
+----------------------------------------------------------------------------------------
+P4 audit-conditional replacement mapping is explicit
+----------------------------------------------------------------------------------------
+  [PASS] parent note carries P4 premise
+  [PASS] bridge cites parent P4 wording
+  [PASS] bridge maps P4 to R1 + R3 (Dirac)
+  [PASS] bridge maps Weyl halving to R2 (chirality)
+
+----------------------------------------------------------------------------------------
+proof-walk forbids lattice-action imports
+----------------------------------------------------------------------------------------
+  [PASS] proof-walk section is present
+  [PASS] proof-walk has explicit non-use disclaimer
+
+----------------------------------------------------------------------------------------
+repo-vocabulary discipline (no new class / tier framings)
+----------------------------------------------------------------------------------------
+  [PASS] forbidden vocabulary absent: 'fermion landing class'
+  [PASS] forbidden vocabulary absent: 'fermion landing tier'
+  [PASS] forbidden vocabulary absent: 'spinor landing tier'
+  [PASS] forbidden vocabulary absent: 'spinor landing class'
+  [PASS] forbidden vocabulary absent: 'Dirac admission tier'
+  [PASS] forbidden vocabulary absent: 'Weyl admission tier'
+  [PASS] forbidden vocabulary absent: 'Dirac landing class'
+  [PASS] forbidden vocabulary absent: 'Weyl landing class'
+  [PASS] forbidden vocabulary absent: 'dof landing class'
+  [PASS] forbidden vocabulary absent: 'dof landing tier'
+  [PASS] forbidden vocabulary absent: '(CKN)'
+  [PASS] forbidden vocabulary absent: 'two-class framing'
+  [PASS] forbidden vocabulary absent: 'algebraic universality'
+
+----------------------------------------------------------------------------------------
+exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2
+----------------------------------------------------------------------------------------
+  [PASS] Dirac dof = 2 (spin) * 2 (particle-antiparticle) = 4 (got 4)
+  [PASS] Dirac dof = (dim_R V_(3,1) * 2) / 2 = 4 (got 4)
+  [PASS] factorisations agree (R1*R3 = Q1-spinor decomposition)
+  [PASS] Weyl dof = Dirac dof / 2 (chirality projection, R2) = 2 (got 2)
+  [PASS] Weyl dof = 2 (helicity-antiparticle)
+  [PASS] naive off-shell real-component count = 8 (4 complex spinor)
+  [PASS] on-shell halving 8 / 2 = 4 (Q2 admission)
+
+----------------------------------------------------------------------------------------
+explicit 4x4 real-matrix realisation of Cl(3, 1)
+----------------------------------------------------------------------------------------
+  [PASS] Gamma_1^2 = eta_1 I_4 (eta_1 = 1)
+  [PASS] Gamma_2^2 = eta_2 I_4 (eta_2 = 1)
+  [PASS] Gamma_3^2 = eta_3 I_4 (eta_3 = 1)
+  [PASS] Gamma_4^2 = eta_4 I_4 (eta_4 = -1)
+  [PASS] {Gamma_1, Gamma_2} = 0
+  [PASS] {Gamma_1, Gamma_3} = 0
+  [PASS] {Gamma_1, Gamma_4} = 0
+  [PASS] {Gamma_2, Gamma_3} = 0
+  [PASS] {Gamma_2, Gamma_4} = 0
+  [PASS] {Gamma_3, Gamma_4} = 0
+  [PASS] gamma_5^2 = +I (chirality involution) (phase = i)
+  [PASS] {gamma_5, Gamma_1} = 0
+  [PASS] {gamma_5, Gamma_2} = 0
+  [PASS] {gamma_5, Gamma_3} = 0
+  [PASS] {gamma_5, Gamma_4} = 0
+  [PASS] P_L^2 = P_L (projector idempotency)
+  [PASS] P_R^2 = P_R (projector idempotency)
+  [PASS] P_L + P_R = I (chirality completeness)
+  [PASS] P_L * P_R = 0 (chirality orthogonality)
+  [PASS] rank(P_L) = 2 (Weyl-half subspace) (got 2)
+  [PASS] rank(P_R) = 2 (Weyl-half subspace) (got 2)
+  [PASS] rank(P_L) + rank(P_R) = 4 (full spinor space dim)
+
+----------------------------------------------------------------------------------------
+R4 CAR irreducible single-mode carrier dim 2
+----------------------------------------------------------------------------------------
+  [PASS] {c, c^dagger} = I
+  [PASS] {c, c} = 0
+  [PASS] {c^dagger, c^dagger} = 0
+  [PASS] (c^dagger)^2 = 0 (Pauli exclusion)
+  [PASS] n^2 = n (number operator idempotent)
+  [PASS] spectrum(n) = {0, 1} (got {0, 1})
+  [PASS] CAR carrier dim = 2
+
+----------------------------------------------------------------------------------------
+R3 CPT particle-antiparticle pairing factor 2
+----------------------------------------------------------------------------------------
+  [PASS] CPT pair label cardinality = 2
+  [PASS] two-mode CPT-paired Fock dim = 4
+  [PASS] Dirac state-label cardinality = spin * particle-antiparticle = 4
+
+----------------------------------------------------------------------------------------
+P4 replacement support: bridge supplies the factor 2 * 2 = 4 from R-packet
+----------------------------------------------------------------------------------------
+  [PASS] bridge reproduces P4 Dirac dof = 4 from R1 + R3
+  [PASS] bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2
+  [PASS] Q1 + Q2 path also yields 4 (cross-check on the spinor-dim side)
+
+TOTAL: PASS=82 FAIL=0
+VERDICT: bounded admission bridge passes; Dirac dof = 4 and Weyl dof = 2 follow from the framework authority packet R1-R4 plus supplied admission packet Q1-Q2 by exact rational arithmetic.
+
+----- stderr -----
+

@@ -4248,6 +4248,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_dirac_walk_3plus1d_weak_coupling_scan.py"
     },
+    "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 18,
+        "B": 2,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py"
+    },
     "directional_b_density_stencil_note": {
       "assert_count": 0,
       "counts": {
@@ -14615,6 +14627,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_mass_mixing_disjointness_theorem.py"
+    },
+    "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py"
     },
     "matched_2d_4d_decoherence_note": {
       "assert_count": 9,
@@ -27143,6 +27167,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py": {
+      "assert_count": 1,
+      "claims": [
+        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 18,
+        "B": 2,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -27501,6 +27540,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py": {
+      "assert_count": 1,
+      "claims": [
+        "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py": {
@@ -56689,14 +56743,14 @@
   "stats": {
     "decoration_candidates": 350,
     "dominant_class_distribution": {
-      "A": 252,
+      "A": 253,
       "B": 293,
       "C": 761,
-      "D": 301,
+      "D": 302,
       "none": 436
     },
-    "runners_classified": 2043,
-    "runners_with_C": 994,
-    "runners_with_D": 601
+    "runners_classified": 2045,
+    "runners_with_C": 996,
+    "runners_with_D": 602
   }
 }

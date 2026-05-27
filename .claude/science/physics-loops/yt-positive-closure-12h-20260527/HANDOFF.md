@@ -474,6 +474,12 @@ PR #1980:
 5e89a60b98f4e91d8c4a32ba2e27bef61373888e
 ```
 
+Cubic phase-potential sign/branch no-go science commit pending PR update:
+
+```text
+9d6f527e0d3d0e98b3af3f7b13a500f3be6b1b0d
+```
+
 Previous science commit pushed and recorded in PR #1980 before this cycle:
 
 ```text

@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 37627
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T20:42:20Z"
+last_checkpoint_utc: "2026-05-27T20:43:06Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_cubic_phase_potential_sign_branch_underdetermination
@@ -148,7 +148,7 @@ commands_run:
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: PR #1980 pending update for cubic phase-potential sign/branch no-go block
-latest_science_commit: pending_cubic_phase_potential_sign_branch_block
+pr_status: PR #1980 pending update for cubic phase-potential sign/branch no-go block at 9d6f527e0d3d0e98b3af3f7b13a500f3be6b1b0d
+latest_science_commit: 9d6f527e0d3d0e98b3af3f7b13a500f3be6b1b0d
 next_exact_action: "Derive an accepted same-surface Y_T cubic phase potential/variational law with sign and physical nonzero orientation branch, with W/top projectors and source-generator matrix elements; otherwise pivot to accepted strict same-source top/W pole-row data with controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

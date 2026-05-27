@@ -89,3 +89,10 @@ So the honest conclusion is:
 - `docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`
 - `docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`
 - `docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md`
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [wave_direct_dm_h025_two_point_synthesis_note](WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md)
+- [wave_direct_dm_portability_batch_note](WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md)

@@ -1,8 +1,45 @@
 {
-  "cycle_count": 3,
+  "cycle_count": 4,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "wave_direct_dm_h025_fam2_seed1_followup_note",
+          "to": "wave_direct_dm_portability_batch_note"
+        },
+        {
+          "from": "wave_direct_dm_portability_batch_note",
+          "to": "wave_direct_dm_h025_fam2_seed1_followup_note"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 10,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
+          "title": "Wave Direct-dM H=0.25 Fam2 Seed1 Follow-Up Note",
+          "transitive_descendants": 10
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "wave_direct_dm_portability_batch_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md",
+          "title": "Wave Direct-dM Portability Batch",
+          "transitive_descendants": 10
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0002",
       "decision": null,
       "edges": [
         {
@@ -39,7 +76,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0002",
+      "cycle_id": "cycle-0003",
       "decision": null,
       "edges": [
         {
@@ -76,7 +113,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0003",
+      "cycle_id": "cycle-0004",
       "decision": null,
       "edges": [
         {
@@ -127,7 +164,7 @@
     }
   ],
   "length_counts": {
-    "2": 2,
+    "2": 3,
     "3": 1
   },
   "sort": [

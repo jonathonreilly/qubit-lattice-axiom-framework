@@ -3012,6 +3012,18 @@
       "dominant_class": null,
       "runner": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py"
     },
+    "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27": {
+      "assert_count": 2,
+      "counts": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_cl3_chiral_cube_wilson_hop_doubling_foreclosed_2026_05_27.py"
+    },
     "cl3_color_automorphism_theorem": {
       "assert_count": 2,
       "counts": {
@@ -27054,6 +27066,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_cl3_chiral_cube_wilson_hop_doubling_foreclosed_2026_05_27.py": {
+      "assert_count": 2,
+      "claims": [
+        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py": {
@@ -56795,15 +56822,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 350,
+    "decoration_candidates": 351,
     "dominant_class_distribution": {
-      "A": 254,
+      "A": 255,
       "B": 293,
       "C": 762,
       "D": 302,
       "none": 436
     },
-    "runners_classified": 2047,
+    "runners_classified": 2048,
     "runners_with_C": 998,
     "runners_with_D": 602
   }

@@ -4825,6 +4825,10 @@
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
       "from": "cl3_color_automorphism_theorem",
       "to": "native_gauge_closure_note"
     },
@@ -45705,6 +45709,20 @@
       "runner_path": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
       "title": "Cl(3) Central Pseudoscalar Schur Separator Narrow Theorem"
     },
+    "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27": {
+      "claim_id": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "cl3_color_automorphism_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "82ed8d312f16651debe9c92fb56638283e571732457231d717159475741c51ff",
+      "path": "docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md",
+      "runner_path": "scripts/audit_companion_cl3_chiral_cube_wilson_hop_doubling_foreclosed_2026_05_27.py",
+      "title": "Cl(3) Chiral-Cube Wilson-Hop Doubling Foreclosed Narrow No-Go"
+    },
     "cl3_color_automorphism_theorem": {
       "claim_id": "cl3_color_automorphism_theorem",
       "claim_type_author_hint": "bounded_theorem",
@@ -86270,7 +86288,7 @@
       "bounded_theorem": 639,
       "decoration": 1,
       "meta": 192,
-      "no_go": 84,
+      "no_go": 85,
       "none": 1440,
       "open_gate": 50,
       "positive_theorem": 171
@@ -86279,15 +86297,15 @@
       "bounded_theorem": 1055,
       "decoration": 1,
       "meta": 192,
-      "no_go": 187,
+      "no_go": 188,
       "none": 426,
       "open_gate": 127,
       "positive_theorem": 589
     },
-    "edge_count": 9836,
-    "leaf_count": 808,
-    "node_count": 2577,
+    "edge_count": 9837,
+    "leaf_count": 809,
+    "node_count": 2578,
     "root_count": 858,
-    "runners_with_path": 2152
+    "runners_with_path": 2153
   }
 }

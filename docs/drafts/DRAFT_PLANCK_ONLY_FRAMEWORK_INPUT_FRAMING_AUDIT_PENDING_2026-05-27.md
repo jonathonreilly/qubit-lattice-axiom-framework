@@ -398,24 +398,48 @@ The publication front-door framing is therefore the headline claim of §1:
 > `v = 246.28 GeV` (vs PDG `246.22 GeV`), with the residual at the predicted
 > 2-loop running scale.
 
-**Comparison to other frameworks' axiom surfaces:**
+**Comparison to other frameworks' axiom surfaces (HONEST per-component breakdown):**
 
-| Framework | Algebraic/structural admissions | Dimensionful inputs |
-|---|---|---|
-| **GR** | spacetime topology (4-manifold) + Lorentzian metric existence + diffeomorphism invariance + Einstein equations as field eqs | `G_Newton` |
-| **QM** | complex Hilbert space + bounded observables + Born rule + unitary dynamics | `ℏ` |
-| **SM** | gauge group `SU(3) × SU(2) × U(1)` + 3 fermion families + Higgs doublet + Yukawa matrices + CKM/PMNS structure | ~19 free parameters |
-| **Cl(3)/Z³ framework** | **A1 (qubit-on-3D-substrate) + P1 (scalar additivity) + (P1-discreteness from PR #2046)** | **`M_Pl`** |
+Each framework requires (a) a structural axiom, (b) an observable-readout
+principle, (c) a dynamical principle, plus (d) dimensionful number(s). The
+framework's content per component:
 
-The framework's admissions are **strictly comparable in count** to GR or QM
-(one substrate + one observable-readout) and **strictly less in count** than
-the Standard Model. The dimensionful surface is **strictly one number**,
-matching GR (`G`) and QM (`ℏ`) — but with the difference that the framework
-*derives* every dimensionless ratio that GR/QM/SM admit as separate inputs.
+| Framework | Structural axiom(s) | Observable-readout | Dynamical principle | Dimensionful |
+|---|---|---|---|---|
+| **GR** | spacetime manifold + Lorentzian metric `g_μν` + diffeomorphism invariance | `ds² = g_μν dx^μ dx^ν` (metric IS length/time rule) | Einstein equations `G_μν = 8πT_μν` | `G_Newton` (+ `c` implicit in metric signature) |
+| **QM** | complex Hilbert space + self-adjoint operators ↔ observables | **Born rule** `P = |⟨ψ\|φ⟩|²` (Gleason partial basis; not derived from structure alone) | unitary evolution `U = exp(-iHt/ℏ)` | `ℏ` |
+| **SM** | gauge group `SU(3)×SU(2)×U(1)` + 3 fermion families + Higgs doublet | path integral measure / S-matrix | gauge-invariant Lagrangian + spontaneous symmetry breaking | **~19 free parameters** (masses, mixings, couplings) |
+| **Cl(3)/Z³ (post-#2049)** | **A1 (qubit + Cl(3,0) per site) + (P1) discreteness + (S1) signature convention** | **P1 observable principle** (scalar additivity → `W = log\|det(D+J)\|`) | Wilson plaquette action (**derived** from A1 + retained chain; not a separate admission) | **`M_Pl` only** |
 
-This framing is consistent with GR (`G_Newton` is structural, not free) and QM
-(`ℏ` is structural, not free). The framework's content is the structure of A1
-+ P1 plus the bounded chain — not a number derived from nothing.
+**Honest read:** GR and QM each have ~5 pieces; the framework also has ~5
+pieces. The framework is NOT categorically simpler in admission *count*. What
+it IS:
+
+- **The dimensionful count is strictly one** (`M_Pl`), matching GR (G) and
+  QM (ℏ), and strictly less than SM (~19 numerical parameters).
+- **The dynamical principle is derived, not admitted** — the Wilson plaquette
+  action follows from A1 + framework retained structure, whereas GR's Einstein
+  equations, QM's Schrödinger equation, and SM's Lagrangian are all
+  separately-assumed dynamical principles.
+- **Every SM dimensionless parameter (19+ numbers) is derived** from the
+  bounded chain, whereas in SM these are 19+ separate admissions.
+- **(S1) is a convention, not substantive ontology** — strictly weaker than
+  GR's "Lorentzian signature is the right signature for spacetime" or QM's
+  "complex Hilbert space is the right Hilbert space".
+
+The mic-drop claim is therefore **NOT** "the framework has strictly less
+admissions than GR/QM in count". It is:
+
+> **The framework derives every dimensionless ratio of the Standard Model from
+> a substrate axiom + an observable-readout principle + a single dimensionful
+> anchor. The dynamical principle that GR/QM/SM each separately admit is
+> derived in the framework. The 19+ free parameters of the SM collapse to
+> theorems.**
+
+This is consistent with GR (`G_Newton` is structural, not free) and QM
+(`ℏ` is structural, not free) — and STRICTLY stronger than the Standard
+Model. The framework's content is the structure of A1 + P1 + (P1) + (S1)
+plus the bounded chain — not a number derived from nothing.
 
 ## 7. What this synthesis note does NOT do
 

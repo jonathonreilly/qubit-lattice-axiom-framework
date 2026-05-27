@@ -1,0 +1,23 @@
+loop_slug: koide-native-zero-section-scope-repair-20260527
+branch: physics-loop/koide-native-zero-section-scope-repair-20260527
+base: origin/main
+target_claim_id: koide_native_zero_section_closure_route_note_2026-04-24
+target_status: bounded-support
+current_surface_status: bounded-support
+cycle_count: 1
+active_route: convert_admitted_zero_section_identifications_to_defined_route_algebra
+hard_residual: physical Koide zero-section/readout bridge remains outside this row
+files_touched:
+  - docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md
+  - scripts/frontier_koide_native_zero_section_closure_route.py
+  - .claude/science/physics-loops/koide-native-zero-section-scope-repair-20260527/
+open_imports: []
+no_go_routes:
+  - physical charged-lepton zero-source readout derivation not attempted
+  - physical Brannen endpoint identification not attempted
+  - physical determinant-line based readout derivation not attempted
+trace_gate_classification: direct_blocker_closure
+review_findings: branch-local wording and runner checks passed; independent Codex reviewer/audit still required
+pr_status: draft PR https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2110
+next_exact_action: continue to next ledger-order conditional row
+stop_condition: campaign queue exhausted or user stops the loop

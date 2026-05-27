@@ -1,35 +1,34 @@
 #!/usr/bin/env python3
 """
-Koide native zero-section closure route.
+Koide native zero-section defined route algebra.
 
 Purpose:
-  Find the sharpest retained/native route to full dimensionless Koide closure
-  after the residual cohomology obstruction reduced the gap to a zero-section
-  theorem:
+  Verify the finite algebraic route object behind the native zero-section
+  Koide lane. The runner does not claim that the physical framework selects
+  this object; it checks the exact consequences inside the defined route:
 
       z = 0, spectator = 0, c = 0.
 
 Result:
-  Exact conditional route, with a narrower review burden.
+  Exact bounded route algebra, with physical bridge identifications out of
+  scope.
 
   Q:
-    If the charged-lepton scalar is read as the native zero-source coefficient
-    of the retained source-response generator, then z=0, hence K_TL=0 and
-    Q=2/3.  This is the already sharpened source-response route.
+    In the defined source-label algebra, the zero section z=0 gives K_TL=0
+    and Q=2/3.
 
   Delta:
-    The real nontrivial Z3 character pair is an irreducible real primitive.
-    Its equivariant idempotents are only 0 and I.  Therefore a boundary readout
-    required to stay on this real primitive has no retained spectator channel:
-    spectator=0.
+    The defined real nontrivial Z3 primitive has equivariant idempotents only
+    0 and I. Therefore the defined primitive has no internal spectator
+    projector: spectator=0.
 
-    If the selected open determinant-line endpoint is a unit-preserving based
-    functor, then the endpoint-exact offset is c=0.  With the independent APS
-    computation eta_APS=2/9, delta_open=eta_APS=2/9.
+    The defined determinant-line endpoint is based, so the endpoint-exact
+    offset is c=0. With the finite Z3 scalar eta_Z3=2/9, the route endpoint
+    has delta_open=eta_Z3=2/9.
 
 Nature-grade boundary:
-  This is not yet retained-only closure unless review accepts or derives the
-  three native identification theorems:
+  This is not physical Koide closure unless later work derives the three
+  physical bridge identifications:
 
     1. the charged-lepton scalar is the native zero-source coefficient;
     2. the Brannen endpoint is the whole real nontrivial Z3 primitive, not a
@@ -40,9 +39,8 @@ Nature-grade boundary:
 No mass data, fitted Koide value, H_* pin, or target endpoint is used.
 
 Current-surface firewall:
-  The runner verifies only the conditional algebra under the three named
-  identifications. It does not assert retained Koide closure on the actual
-  current surface.
+  The runner verifies only the defined route algebra. It does not assert
+  retained Koide closure on the actual current surface.
 """
 
 from __future__ import annotations
@@ -92,12 +90,12 @@ def eta_abss_z3_weights_12() -> sp.Expr:
 
 
 def main() -> int:
-    section("A. Q native zero-source section")
+    section("A. Q defined zero-source section")
 
     z = sp.symbols("z", real=True)
     w_plus = sp.simplify((1 + z) / 2)
     record(
-        "A.1 source-label zero section gives the unique source-free midpoint",
+        "A.1 source-label zero section gives the defined source-free midpoint",
         w_plus.subs(z, 0) == sp.Rational(1, 2),
         "z=<Z>=0 -> w_plus=w_perp=1/2.",
     )
@@ -114,7 +112,7 @@ def main() -> int:
         "z=-1/3 -> w_plus=1/3 -> Q=1.",
     )
 
-    section("B. Real Z3 primitive has no equivariant spectator split")
+    section("B. Defined real Z3 primitive has no equivariant spectator split")
 
     theta = 2 * sp.pi / 3
     R = sp.Matrix([[sp.cos(theta), -sp.sin(theta)], [sp.sin(theta), sp.cos(theta)]])
@@ -123,7 +121,7 @@ def main() -> int:
     a, b = sp.symbols("a b", real=True)
     commutant_element = a * sp.eye(2) + b * J
     record(
-        "B.1 real nontrivial Z3 pair is represented by a 120-degree rotation",
+        "B.1 defined real nontrivial Z3 pair is represented by a 120-degree rotation",
         sp.simplify(R**3 - sp.eye(2)) == sp.zeros(2, 2)
         and sp.simplify(R + sp.Rational(1, 2) * sp.eye(2) - sp.sqrt(3) / 2 * J)
         == sp.zeros(2, 2),
@@ -145,17 +143,17 @@ def main() -> int:
     idempotent = sp.simplify(commutant_element**2 - commutant_element)
     idem_solutions = sp.solve(list(idempotent), [a, b], dict=True)
     record(
-        "B.3 equivariant idempotents on the real primitive are only 0 and I",
+        "B.3 equivariant idempotents on the defined real primitive are only 0 and I",
         idem_solutions == [{a: 0, b: 0}, {a: 1, b: 0}],
         f"idempotents={idem_solutions}",
     )
     record(
-        "B.4 therefore a native real-primitive endpoint has no spectator channel",
+        "B.4 therefore the defined real-primitive endpoint has no spectator channel",
         True,
-        "There is no retained Z3-equivariant projector splitting selected versus spectator inside the real primitive.",
+        "There is no Z3-equivariant projector splitting selected versus spectator inside the defined real primitive.",
     )
 
-    section("C. Why rank-one selected-line readout is not native")
+    section("C. Why rank-one selected-line readout is outside the defined primitive")
 
     alpha = sp.symbols("alpha", real=True)
     v = sp.Matrix([sp.cos(alpha), sp.sin(alpha)])
@@ -163,29 +161,29 @@ def main() -> int:
     comm_line = sp.simplify(P_line * R - R * P_line)
     alpha_solutions = sp.solve(list(comm_line), [alpha], dict=True)
     record(
-        "C.1 no real rank-one line projector commutes with the retained Z3 rotation",
+        "C.1 no real rank-one line projector commutes with the defined Z3 rotation",
         alpha_solutions == [],
         "A rank-one Brannen line inside the real primitive is extra non-equivariant boundary data.",
     )
     record(
-        "C.2 native delta implication must read the whole real primitive, not a CP1 line",
+        "C.2 route delta implication reads the whole defined real primitive, not a CP1 line",
         True,
         "This converts the old selected/spectator obstruction into a precise identification theorem.",
     )
 
-    section("D. Determinant-line unit removes the endpoint-exact offset if retained")
+    section("D. Defined determinant-line unit removes the endpoint-exact offset")
 
     eta = eta_abss_z3_weights_12()
     c, phi = sp.symbols("c phi", real=True)
     endpoint_map = sp.simplify(phi + c)
     unit_condition_solution = sp.solve(sp.Eq(endpoint_map.subs(phi, 0), 0), c)
     record(
-        "D.1 independent APS value remains eta_APS=2/9",
+        "D.1 finite Z3 route scalar is eta_Z3=2/9",
         eta == sp.Rational(2, 9),
-        f"eta_APS={eta}",
+        f"eta_Z3={eta}",
     )
     record(
-        "D.2 unit-preserving endpoint functor forces c=0",
+        "D.2 defined unit-preserving endpoint functor forces c=0",
         unit_condition_solution == [0],
         f"F(phi)=phi+c, F(0)=0 -> c={unit_condition_solution}",
     )
@@ -195,44 +193,44 @@ def main() -> int:
         "If c=1/9, the same closed eta gives delta_open=1/3.",
     )
 
-    section("E. Full conditional native chain")
+    section("E. Full defined route chain")
 
     selected, spectator, c_sym = sp.symbols("selected spectator c_sym", real=True)
     native_delta_law = {selected: 1, spectator: 0, c_sym: 0}
     delta_open = sp.simplify(selected * eta + c_sym)
     record(
-        "E.1 real primitive plus unit endpoint gives delta_open=eta_APS",
+        "E.1 defined real primitive plus unit endpoint gives delta_open=eta_Z3",
         sp.simplify(delta_open.subs(native_delta_law) - eta) == 0,
         f"delta_open={sp.simplify(delta_open.subs(native_delta_law))}",
     )
     record(
-        "E.2 Q and delta are implied under the native zero-section route",
+        "E.2 Q and delta are implied inside the defined zero-section route",
         q_from_weight(sp.Rational(1, 2)) == sp.Rational(2, 3)
         and sp.simplify(delta_open.subs(native_delta_law)) == sp.Rational(2, 9),
-        "Q=2/3 and delta=2/9 follow without numerical fitting once the native zero sections are retained.",
+        "Q=2/3 and delta=2/9 follow without numerical fitting inside the defined route algebra.",
     )
 
-    section("F. Hostile review boundary")
+    section("F. Physical bridge boundary")
 
     record(
-        "F.1 the route is not the old rank-one selected-line bridge",
+        "F.1 the defined route is not the old rank-one selected-line bridge",
         True,
         "It implies delta only by replacing rank-one selection with the whole real Z3 primitive endpoint.",
     )
     record(
-        "F.2 retained-only closure still requires three identification theorems",
+        "F.2 physical closure still requires three identification theorems",
         True,
-        "Need native proof of zero-source readout, real-primitive Brannen endpoint, and unit-preserving determinant-line readout.",
+        "Need physical proof of zero-source readout, real-primitive Brannen endpoint, and unit-preserving determinant-line readout.",
     )
     record(
         "F.3 no hidden target import is used",
         True,
-        "The value 2/9 is computed by APS; Q follows from zero source.  The tested assumptions are representation/unit laws.",
+        "The value 2/9 is computed from the finite Z3 sum; Q follows from the defined zero source.",
     )
     record(
-        "F.4 current-surface status remains conditional-support",
+        "F.4 current-surface physical Koide closure remains unclaimed",
         True,
-        "No Brannen endpoint, determinant-line unit, or charged-lepton zero-source identification is derived here.",
+        "No physical Brannen endpoint, determinant-line unit, or charged-lepton zero-source identification is derived here.",
     )
 
     print()
@@ -247,25 +245,25 @@ def main() -> int:
 
     print()
     if n_pass == n_total:
-        print("KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE=CONDITIONAL")
-        print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_Q=TRUE")
-        print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_DELTA=TRUE")
-        print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_NATIVE_VALUES=TRUE")
-        print("RETAINED_ONLY_NATIVE_CLOSURE_CLAIMED=FALSE")
-        print("ACTUAL_CURRENT_SURFACE_STATUS=CONDITIONAL_SUPPORT")
-        print("CONDITIONAL_SURFACE_STATUS=native_zero_section_identifications_imply_Q_and_delta")
+        print("KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE")
+        print("DEFINED_ROUTE_ZERO_SECTION_IMPLIES_Q=TRUE")
+        print("DEFINED_ROUTE_REAL_Z3_PRIMITIVE_HAS_NO_SPECTATOR_IDEMPOTENT=TRUE")
+        print("DEFINED_ROUTE_UNIT_ENDPOINT_IMPLIES_C_ZERO=TRUE")
+        print("DEFINED_ROUTE_ENDPOINT_IMPLIES_DELTA=TRUE")
+        print("PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE")
+        print("PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE")
+        print("ACTUAL_CURRENT_SURFACE_STATUS=BOUNDED_SUPPORT")
         print("AUDIT_REQUIRED_BEFORE_EFFECTIVE_RETAINED=TRUE")
         print("BARE_RETAINED_ALLOWED=FALSE")
-        print("RESIDUAL_IDENTIFICATION_Q=native_zero_source_charged_lepton_scalar_readout")
-        print("RESIDUAL_IDENTIFICATION_DELTA=Brannen_endpoint_is_real_Z3_primitive_not_rank_one_line")
-        print("RESIDUAL_TRIVIALIZATION=unit_preserving_determinant_line_endpoint_readout")
-        print("NEXT_NATIVE_CLOSURE_STEP=derive_the_three_native_identifications_from_retained_boundary_physics")
+        print("PHYSICAL_BRIDGE_Q_OPEN=native_zero_source_charged_lepton_scalar_readout")
+        print("PHYSICAL_BRIDGE_DELTA_OPEN=Brannen_endpoint_is_real_Z3_primitive_not_rank_one_line")
+        print("PHYSICAL_BRIDGE_ENDPOINT_OPEN=unit_preserving_determinant_line_endpoint_readout")
         return 0
 
-    print("KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE=FAILED")
-    print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_Q=FALSE")
-    print("CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_DELTA=FALSE")
-    print("RETAINED_ONLY_NATIVE_CLOSURE_CLAIMED=FALSE")
+    print("KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=FAILED")
+    print("DEFINED_ROUTE_ZERO_SECTION_IMPLIES_Q=FALSE")
+    print("DEFINED_ROUTE_ENDPOINT_IMPLIES_DELTA=FALSE")
+    print("PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE")
     return 1
 
 

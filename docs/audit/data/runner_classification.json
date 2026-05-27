@@ -409,16 +409,16 @@
       "runner": "scripts/frontier_yt_zero_import_chain.py"
     },
     "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30": {
-      "assert_count": 4,
+      "assert_count": 2,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 8,
-        "D": 3
+        "B": 0,
+        "C": 3,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_alpha_s_direct_wilson_loop.py"
+      "runner": "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py"
     },
     "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02": {
       "assert_count": 4,
@@ -31044,7 +31044,6 @@
     "scripts/frontier_alpha_s_direct_wilson_loop.py": {
       "assert_count": 4,
       "claims": [
-        "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
         "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02"
       ],
       "counts": {
@@ -31052,6 +31051,21 @@
         "B": 1,
         "C": 8,
         "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py": {
+      "assert_count": 2,
+      "claims": [
+        "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -55878,12 +55892,12 @@
     "dominant_class_distribution": {
       "A": 236,
       "B": 283,
-      "C": 755,
+      "C": 756,
       "D": 299,
       "none": 437
     },
-    "runners_classified": 2010,
-    "runners_with_C": 978,
-    "runners_with_D": 585
+    "runners_classified": 2011,
+    "runners_with_C": 979,
+    "runners_with_D": 586
   }
 }

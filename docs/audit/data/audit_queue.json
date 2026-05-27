@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 242,
-    "high": 332,
+    "high": 333,
     "leaf": 291,
     "medium": 320
   },
@@ -6888,6 +6888,31 @@
       "ready": true,
       "runner_path": "scripts/frontier_omega_lambda_arithmetic_cascade.py",
       "transitive_descendants": 244
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_su3_integration_note",
+        "plaquette_self_consistency_note"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.276,
+      "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py",
+      "transitive_descendants": 154
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -35896,6 +35921,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 19,
-  "total_pending": 1185
+  "ready_count": 20,
+  "total_pending": 1186
 }

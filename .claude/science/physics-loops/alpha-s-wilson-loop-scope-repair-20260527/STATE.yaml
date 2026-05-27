@@ -1,0 +1,8 @@
+loop: alpha-s-wilson-loop-scope-repair-20260527
+target_claim_id: alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30
+actual_current_surface_status: proposed_retained
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+proposal_allowed: true
+audit_required_before_effective_retained: true
+next_exact_action: "Run runner, audit pipeline, strict lint, pre-commit check; then open PR."

@@ -1,0 +1,54 @@
+
+----------------------------------------------------------------------------------------
+Part 1: open-gate inventory structure
+----------------------------------------------------------------------------------------
+  [PASS (A)] contains: 'Kubo Fam2 Non-Convergence Possible-Obstruction Inventory'  ()
+  [PASS (A)] contains: 'open-gate inventory'  ()
+  [PASS (A)] contains: 'Recorded Finite Data'  ()
+  [PASS (A)] contains: 'Minimal Local Premises'  ()
+  [PASS (A)] contains: 'Forbidden Imports'  ()
+  [PASS (A)] contains: 'Fam2'  ()
+  [PASS (A)] contains: 'Fam1'  ()
+  [PASS (A)] contains: 'Fam3'  ()
+  [PASS (A)] contains: '(O1)'  ()
+  [PASS (A)] contains: '(O2)'  ()
+  [PASS (A)] contains: '(O3)'  ()
+  [PASS (A)] contains: 'not exhaustive'  ()
+  [PASS (A)] contains: 'proposal_allowed: false'  ()
+
+----------------------------------------------------------------------------------------
+Part 2: 3 possible obstruction routes documented
+----------------------------------------------------------------------------------------
+  [PASS (A)] obstruction: Parameter-dependent microscopic dynamics  ()
+  [PASS (A)] obstruction: Critical or near-critical parameter regime  ()
+  [PASS (A)] obstruction: Fam2-specific discretization interaction  ()
+
+----------------------------------------------------------------------------------------
+Part 3: Fam parameters enumerated
+----------------------------------------------------------------------------------------
+  [PASS (A)] family parameter: drift=0.20, restore=0.70  ()
+  [PASS (A)] family parameter: drift=0.05, restore=0.30  ()
+  [PASS (A)] family parameter: drift=0.50, restore=0.90  ()
+
+----------------------------------------------------------------------------------------
+Part 4: explicit non-closure and non-exhaustiveness
+----------------------------------------------------------------------------------------
+  [PASS (A)] non-closure: does not resolve Fam2 non-convergence  ()
+  [PASS (A)] non-closure: does not prove an exhaustive obstruction trichotomy  ()
+  [PASS (A)] non-closure: does not prove a continuum limit for Fam2  ()
+  [PASS (A)] non-closure: does not alter the status of any parent Kubo-family evidence  ()
+
+----------------------------------------------------------------------------------------
+Part 5: closeout labels
+----------------------------------------------------------------------------------------
+  [PASS (A)] status label: actual_current_surface_status: open  ()
+  [PASS (A)] status label: bare_retained_allowed: false  ()
+
+========================================================================================
+  TOTAL: PASS=25, FAIL=0
+========================================================================================
+KUBO_FAM2_POSSIBLE_OBSTRUCTION_INVENTORY=TRUE
+OPEN_GATE_DOCUMENTED=TRUE
+EXHAUSTIVE_TRICHOTOMY_CLAIMED=FALSE
+FAM2_NON_CONVERGENCE_RESOLVED=FALSE
+OBSERVED_OR_FITTED_TARGET_CONSUMED=FALSE

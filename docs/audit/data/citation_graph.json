@@ -16985,14 +16985,6 @@
       "to": "born_scattering_comparison_note"
     },
     {
-      "from": "kubo_fam2_non_convergence_note_2026-05-02",
-      "to": "kubo_continuum_limit_families_note"
-    },
-    {
-      "from": "kubo_fam2_non_convergence_note_2026-05-02",
-      "to": "kubo_fam2_refinement_note"
-    },
-    {
       "from": "kubo_fam2_refinement_note",
       "to": "kubo_continuum_limit_families_note"
     },
@@ -63944,7 +63936,7 @@
       "note_hash": "f6db482e9ea98af3a65f08ac4cb1919bf02f17f5be105a101ca7b0f57e7b30d9",
       "path": "docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_kubo_fam2_non_convergence_stretch.py",
-      "title": "Kubo Fam2 Non-Convergence Stretch Attempt"
+      "title": "Kubo Fam2 Non-Convergence Possible-Obstruction Inventory"
     },
     "kubo_fam2_refinement_note": {
       "claim_id": "kubo_fam2_refinement_note",
@@ -87521,6 +87513,7 @@
     "koide_z3_joint_projector_identity_note_2026-04-19",
     "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
     "kubo_continuum_limit_families_note_2026-05-17",
+    "kubo_fam2_non_convergence_note_2026-05-02",
     "lanes_open_science_03_quark_mass_retention_open_lane_2026-04-26_note_2026-05-17",
     "lattice_3d_dense_spent_delay_z2_z5_support_note_2026-04-30",
     "lattice_3d_dense_window_extension_note",

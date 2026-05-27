@@ -1,0 +1,21 @@
+loop_slug: kubo-fam2-non-convergence-scope-repair-20260527
+branch: physics-loop/kubo-fam2-non-convergence-scope-repair-20260527
+base: origin/main
+target_claim_id: kubo_fam2_non_convergence_note_2026-05-02
+target_status: open
+current_surface_status: open
+cycle_count: 1
+active_route: narrow_exhaustive_obstruction_claim_to_possible_route_inventory
+hard_residual: Fam2 continuum/non-convergence mechanism remains unresolved
+files_touched:
+  - docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md
+  - scripts/frontier_kubo_fam2_non_convergence_stretch.py
+  - .claude/science/physics-loops/kubo-fam2-non-convergence-scope-repair-20260527/
+open_imports: []
+no_go_routes:
+  - exhaustive three-route obstruction theorem not claimed
+trace_gate_classification: direct_blocker_closure
+review_findings: branch-local wording and runner checks passed; independent Codex reviewer/audit still required
+pr_status: draft PR https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2111
+next_exact_action: continue to next ledger-order conditional row
+stop_condition: campaign queue exhausted or user stops the loop

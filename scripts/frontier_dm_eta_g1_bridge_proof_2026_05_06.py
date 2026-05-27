@@ -6,14 +6,16 @@ correction, it is not a proof that the dark hw=3 scalar self-energy
 projects through the adjoint Fierz channel. The scalar self-energy
 sum_a T^a T^a = C_F I is singlet-channel.
 
-This runner instantiates the cited (base x fiber) decomposition of
-CL3_COLOR_AUTOMORPHISM on the explicit Cl(3) chiral cube and checks:
+This runner instantiates the cited base/fiber, Y-spectrum, and
+Gell-Mann embedding source surfaces on the explicit Cl(3) chiral cube
+and checks:
 
    (1) The dark state |111> sits in the 3D symmetric-base subspace with
        hypercharge Y = +1/3 -- the *quark-like color triplet*, not the
        1D antisymmetric lepton singlet (Y = -1).
 
-   (2) SU(3)_c (embedded as M_3_sym (x) I_2 per CL3_COLOR_AUTOMORPHISM B)
+   (2) SU(3)_c (embedded as M_3_sym (x) I_2 per the Gell-Mann
+       embedding narrow theorem)
        acts non-trivially on the dark state |111> and trivially on the
        lepton singlet (Y=-1) block. The lepton block carries the trivial
        SU(3)_c representation; the dark state carries the fundamental.
@@ -32,9 +34,9 @@ CL3_COLOR_AUTOMORPHISM on the explicit Cl(3) chiral cube and checks:
 The corrected mechanism is carrier support plus scalar-trace arithmetic,
 not a new dynamical mechanism. It follows from the cited (base x fiber)
 decomposition (CL3_COLOR_AUTOMORPHISM Section B), the cited Y eigenvalue
-spectrum (CL3_COLOR_AUTOMORPHISM Section F), the cited Fierz completeness
-(CL3_COLOR_AUTOMORPHISM Section D), and the Gell-Mann normalization. No
-new axioms are admitted.
+spectrum (CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM...), the cited Fierz
+completeness (CL3_COLOR_AUTOMORPHISM Section D), and the Gell-Mann
+embedding narrow theorem. No new axioms are admitted.
 
 Counterfactual Pass on the bridge mechanism
 --------------------------------------------
@@ -94,9 +96,10 @@ This runner does not close an operator-level adjoint-channel bridge. It
 preserves carrier support and scalar-trace arithmetic. The mechanism uses
 ONLY cited primitives:
   - (base x fiber) decomposition of CL3_COLOR_AUTOMORPHISM Section B;
-  - SU(3)_c on 3D symmetric base of CL3_COLOR_AUTOMORPHISM Section B and H;
+  - SU(3)_c on 3D symmetric base from CL3_COLOR_AUTOMORPHISM Section B
+    plus CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING...;
   - Hypercharge Y eigenvalue spectrum {+1/3 (6D), -1 (2D)} of
-    CL3_COLOR_AUTOMORPHISM Section F;
+    CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM...;
   - Fierz completeness P_singlet + P_adj = I of CL3_COLOR_AUTOMORPHISM
     Section D;
   - Chiral cube C^8 = (C^2)^otimes 3 with Hamming weight decomposition
@@ -240,10 +243,10 @@ def main() -> None:
     pass_count += int(t2); fail_count += int(not t2)
     print()
 
-    # ------------------ TEST 3: Hypercharge Y from CL3_COLOR_AUTOMORPHISM F -----
+    # ------------------ TEST 3: Hypercharge Y spectrum narrow theorem -----------
     print("-" * 78)
     print("TEST 3: Hypercharge Y = (+1/3) P_symm + (-1) P_antisymm")
-    print("        Cited from CL3_COLOR_AUTOMORPHISM Section F")
+    print("        Cited from CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM...")
     print("        Eigenvalue spectrum: Y=+1/3 (6D quark block), Y=-1 (2D lepton block)")
     print("-" * 78)
     Y = (1 / 3) * P_symm + (-1) * P_antisymm
@@ -592,7 +595,8 @@ def main() -> None:
     print()
     print("  The singlet Fierz channel projector on End(C^N_c) maps any matrix M")
     print("  to (Tr M / N_c) I -- the 1D SU(3)_c-trivial subspace. By")
-    print("  CL3_COLOR_AUTOMORPHISM B+H, SU(3)_c trivial = lepton-block carrier")
+    print("  CL3_COLOR_AUTOMORPHISM B + CL3_SU3_SYMMETRIC_BASE_COMMUTANT...,")
+    print("  SU(3)_c trivial = lepton-block carrier")
     print("  (verified Test 11b: T^a annihilates lepton vecs).")
     print()
     print("  Carrier orthogonality is preserved: the dark state has no lepton")
@@ -606,8 +610,9 @@ def main() -> None:
     print()
     print("  This is STRUCTURAL SUPPORT -- not a new dynamical mechanism.")
     print("  It uses only cited primitives: (base x fiber) decomposition")
-    print("  (CL3_COLOR_AUTOMORPHISM B), Y eigenvalue spectrum (CL3_COLOR_AUTOMORPHISM F),")
-    print("  SU(3)_c on sym base (CL3_COLOR_AUTOMORPHISM B+H), Fierz completeness")
+    print("  (CL3_COLOR_AUTOMORPHISM B), Y eigenvalue spectrum")
+    print("  (CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM...), SU(3)_c on sym base")
+    print("  (CL3_COLOR_AUTOMORPHISM B + CL3_SU3_SYMMETRIC_BASE_COMMUTANT...), Fierz completeness")
     print("  (CL3_COLOR_AUTOMORPHISM D), Cl(3) chiral cube (CL3_TASTE_GENERATION),")
     print("  bare Wilson kinetic mass (DM_ETA_FREEZEOUT_BYPASS Origin B). NO new")
     print("  axioms, NO new dynamical mechanisms, NO new combinatorial inputs.")

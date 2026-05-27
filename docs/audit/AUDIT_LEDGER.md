@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1200 |
+| unaudited | 1201 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1430 |
+| `unaudited` | 1431 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2020
-- runners with (C) first-principles compute hits: 982
+- runners classified: 2021
+- runners with (C) first-principles compute hits: 983
 - runners with (D) external comparator hits: 589
 - decoration candidates (no C, no D): 343
 
@@ -992,7 +992,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8363,19 +8362,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The memory failure is not primarily a Yukawa-range artifact: mu^2 matters, but geometry scaling matters more, and the old screening-alone diagnosis is too strong.  _(class `C`)_
 - **chain closes:** True — The registered runner exits 0 and reproduces the scaled-geometry decay and fixed-geometry survival/strengthening tables exactly, including the mu^2=0 and mu^2=0.22 anchor values quoted in the note.
 - **rationale:** The bounded diagnosis closes against scripts/frontier_memory_mu2_size_sweep.py. The current output matches the note's scaled-geometry rows, including N=61 mu2=0 memory +0.020854 vs mu2=0.22 +0.016780 and N=121 mu2=0 +0.001767 vs mu2=0.22 +0.000865, and it matches the fixed-geometry rows, including N=81 mu2=0 +0.231199 vs mu2=0.22 +0.244260 and N=121 mu2=0 +2.580905 vs mu2=0.22 +2.599619. The note does not promote a publication-grade memory claim; it only narrows the failure mode.
-- **auditor confidence:** high
-
-### `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18`
-
-- **Note:** [`MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the bounded named-import wrapper for the Bogoliubov inequality and the Mermin-Wagner/Hohenberg/Coleman no-SSB dimension restrictions, not a derivation of those theorems.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T234117Z-b972b265-mermin_wagner_bogoliubov-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note pins the Bogoliubov inequality and the Mermin-Wagner / Hohenberg / Coleman dimension-restriction theorems as accepted mathematical inputs for downstream one-hop citation.  _(class `E`)_
-- **chain closes:** False — The restricted packet provides no retained one-hop authorities or runner derivation for the imported textbook theorems. The missing step is an attached retained authority or independent derivation establishing the theorem statements and their hypotheses within the packet.
-- **rationale:** The source note openly presents a named non-derivation import, so the load-bearing move is a definitional registration rather than first-principles closure. Because the packet lists no cited authorities in full, the textbook theorem statements, short-range interaction hypothesis, operator-domain assumptions, and Coleman relativistic assumptions remain imported rather than closed. Applying the negative-claim gate, N3 flags these as hidden/explicit assumptions inside the bounded no-SSB boundary, preventing an audited_clean verdict.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_annular_tapered_sweep_note`

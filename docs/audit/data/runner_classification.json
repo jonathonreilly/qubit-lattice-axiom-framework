@@ -14484,6 +14484,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_memory_mu2_size_sweep.py"
     },
+    "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": {
+      "assert_count": 3,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/mermin_wagner_bogoliubov_bounded_certificate.py"
+    },
     "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
@@ -52857,6 +52869,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/mermin_wagner_bogoliubov_bounded_certificate.py": {
+      "assert_count": 3,
+      "claims": [
+        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/mesoscopic_surrogate_alternate_family_scout.py": {
       "assert_count": 0,
       "claims": [
@@ -56083,12 +56110,12 @@
     "dominant_class_distribution": {
       "A": 240,
       "B": 286,
-      "C": 757,
+      "C": 758,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2020,
-    "runners_with_C": 982,
+    "runners_classified": 2021,
+    "runners_with_C": 983,
     "runners_with_D": 589
   }
 }

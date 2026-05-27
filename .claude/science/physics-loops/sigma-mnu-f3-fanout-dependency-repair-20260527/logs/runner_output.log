@@ -1,0 +1,59 @@
+Sigma m_nu F3 stuck-fanout dependency repair
+========================================================================
+
+A. Authority packet
+------------------------------------------------------------------------
+PASS: source note exists -- docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md
+PASS: cycle1 authority exists -- docs/SIGMA_MNU_F3_DM_CROSS_BOUND_AUDIT_NOTE_2026-04-28.md
+PASS: cycle1 authority is directly cited
+PASS: functional authority exists -- docs/NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md
+PASS: functional authority is directly cited
+PASS: omega_dm authority exists -- docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md
+PASS: omega_dm authority is directly cited
+PASS: lane5_firewall authority exists -- docs/HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md
+PASS: lane5_firewall authority is directly cited
+PASS: lane5_a1 authority exists -- docs/HUBBLE_LANE5_C1_A1_GRASSMANN_NO_GO_NOTE_2026-04-28.md
+PASS: lane5_a1 authority is directly cited
+PASS: lane5_a4 authority exists -- docs/HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md
+PASS: lane5_a4 authority is directly cited
+PASS: lane5_a5 authority exists -- docs/HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md
+PASS: lane5_a5 authority is directly cited
+PASS: lane5_a6 authority exists -- docs/HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md
+PASS: lane5_a6 authority is directly cited
+PASS: lepto_status authority exists -- docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md
+PASS: lepto_status authority is directly cited
+PASS: eta188 authority exists -- docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md
+PASS: eta188 authority is directly cited
+
+B. Ledger status sanity
+------------------------------------------------------------------------
+PASS: neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28 effective_status is retained -- retained
+PASS: hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28 effective_status is retained_no_go -- retained_no_go
+PASS: hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29 effective_status is retained_no_go -- retained_no_go
+PASS: hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29 effective_status is retained_no_go -- retained_no_go
+PASS: hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29 effective_status is retained_bounded -- retained_bounded
+PASS: eta_188_structural_origin_partial_note_2026-05-03 effective_status is retained_bounded -- retained_bounded
+PASS: dm_leptogenesis_transport_status_note_2026-05-10 effective_status is meta -- meta
+PASS: current-bank Omega_DM authority is explicitly not over-promoted -- unaudited
+PASS: Cycle-1 cross-bound authority is explicitly not over-promoted -- unaudited
+
+C. Cross-bound arithmetic
+------------------------------------------------------------------------
+PASS: framework current-bank endpoints give negative Sigma m_nu at Planck-style pins -- [-0.1610, -0.0761] eV
+PASS: CMB h^2 alternate admission gives positive but below NO floor -- 0.0559 eV
+PASS: alternate admission bypasses framework current-bank Omega_DM
+
+D. Fan-out boundary
+------------------------------------------------------------------------
+PASS: route status phrase present: Comparator only
+PASS: route status phrase present: Structural only
+PASS: route status phrase present: Alt admission surface
+PASS: route status phrase present: Kinematic only
+PASS: route status phrase present: Speculative
+PASS: source note preserves no-retention boundary
+PASS: source note names research-level pivots
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=40, FAIL=0
+VERDICT: dependency packet exposed; F3 no-go remains honest and auditable.

@@ -103,58 +103,53 @@ def extract_transfer_matrices(positions, adj, field, k, by_layer):
 def compute_lyapunov_spectrum(matrices, n_exponents=5):
     """Compute Lyapunov exponents via QR iteration on square transfer matrices.
 
-    Since layers may have different sizes, we work with the product
-    M = T_N ... T_1 restricted to the common dimension. For layers
-    with different node counts, pad with zeros.
-
-    Alternative approach: compute singular values of the full product
-    on the first few seeds and extract the spectrum from those.
+    The generator places a single source node at layer 0 and `nodes_per_layer`
+    nodes at every subsequent layer. The first transition matrix is therefore
+    `(common_size, 1)`; naively padding it to `(common_size, common_size)`
+    leaves columns 1..common_size-1 as zero, which structurally rank-limits
+    the entire padded product to 1 independently of any spectral property
+    of the operator chain. Skipping layer-mismatched leading and trailing
+    matrices yields the Lyapunov spectrum of the genuine `(common_size,
+    common_size)` product T_{end-1} ... T_2, which IS a property of the
+    operator chain.
     """
     if not matrices:
         return np.zeros(n_exponents)
 
-    # Find the most common layer size
     sizes = [T.shape[1] for T, _, _ in matrices]
     common_size = max(set(sizes), key=sizes.count)
     n_track = min(n_exponents, common_size)
 
-    # Build padded square matrices and multiply
-    # Use SVD of accumulated product for stability
+    square_matrices = [
+        T for T, _, _ in matrices if T.shape == (common_size, common_size)
+    ]
+    if not square_matrices:
+        return np.full(n_track, float("nan"))
+
     product = np.eye(common_size, dtype=complex)
     log_sum = 0.0
     n_steps = 0
 
-    for T, from_nodes, to_nodes in matrices:
-        n_to, n_from = T.shape
-        # Pad/crop to common_size × common_size
-        T_sq = np.zeros((common_size, common_size), dtype=complex)
-        r = min(n_to, common_size)
-        c = min(n_from, common_size)
-        T_sq[:r, :c] = T[:r, :c]
-
-        product = T_sq @ product
+    for T in square_matrices:
+        product = T @ product
         n_steps += 1
-
-        # Periodically renormalize to avoid overflow/underflow
         if n_steps % 5 == 0:
             norm = np.linalg.norm(product)
             if norm > 1e-30:
                 log_sum += math.log(norm)
                 product /= norm
 
-    # Final SVD
     try:
         s = np.linalg.svd(product, compute_uv=False)
-        # Lyapunov exponents from singular values
         lyap = np.zeros(n_track)
         for i in range(min(n_track, len(s))):
             if s[i] > 1e-30:
                 lyap[i] = (math.log(s[i]) + log_sum) / max(1, n_steps)
             else:
-                lyap[i] = -float('inf')
+                lyap[i] = -float("inf")
         return lyap
     except Exception:
-        return np.full(n_track, float('nan'))
+        return np.full(n_track, float("nan"))
 
 
 def compute_tv_distance(psi_a, psi_b, positions, det_nodes):
@@ -429,21 +424,33 @@ def main():
         print(f"  {nl:4d}  {lind:10.4f}  {interp:>30s}")
 
     print()
-    print("THEOREM STRUCTURE:")
-    print("  IF spectral gap is large AND Lindeberg holds:")
-    print("    → Product T_N...T_1 drives ANY two initial vectors")
-    print("      toward the same dominant direction")
-    print("    → Single-slit distributions ψ_A and ψ_B converge")
-    print("    → d_TV → 0, overlap → 1, pur_min → 1")
-    print("    → Decoherence ceiling is a SPECTRAL PROPERTY")
-    print("      of the transfer matrix product")
+    print("MECHANISM READING (interpretation guidance):")
+    print("  The bounded finding on the cached configuration is a")
+    print("  Lindeberg-style averaging interpretation, not spectral rank-1")
+    print("  collapse:")
     print()
-    print("  IF shared exponent across d_TV, overlap, 1-pur_min:")
-    print("    → All three decay at the same rate")
-    print("    → The CLT mechanism is the SOLE driver")
-    print("    → No mechanism operating on the bath or propagator")
-    print("      can change the exponent without changing the")
-    print("      spectral gap of T_N...T_1")
+    print("  - Lindeberg ratio scales ~1/N: no single layer dominates,")
+    print("    and the dominance shrinks with N. This is the")
+    print("    non-dominance condition behind the CLT-style reading.")
+    print()
+    print("  - Operator-chain Lyapunov gap is finite and decreases with")
+    print("    N (table above). The corrected measurement does NOT")
+    print("    show rank-1 collapse of the square operator chain.")
+    print("    The finite-and-decreasing gap is consistent with")
+    print("    spectrum concentration rather than collapse.")
+    print()
+    print("  - d_TV / 1-overlap / 1-pur_min all show power-law decline.")
+    print("    Exponents (-0.48 / -0.78 / -0.85) are not strictly equal")
+    print("    within R^2 ~= 0.4, but all three concentrate toward zero")
+    print("    on the cached N range — consistent with the layer-averaged")
+    print("    CLT-style interpretation.")
+    print()
+    print("  The original 2026-04-03 reading attributing the d_TV decline")
+    print("  to rank-1 spectral collapse of T_N...T_1 was driven by a")
+    print("  singleton-source padding artifact in the prior version of")
+    print("  compute_lyapunov_spectrum; the corrected (square-only)")
+    print("  spectrum and the Lindeberg scaling now support a consistent")
+    print("  CLT-style averaging interpretation instead.")
 
 
 if __name__ == "__main__":

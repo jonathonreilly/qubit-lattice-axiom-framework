@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 242,
     "high": 336,
-    "leaf": 303,
+    "leaf": 304,
     "medium": 326
   },
   "cycle_break_target_count": 4,
@@ -27782,6 +27782,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "spectral_symmetry_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "higher_symmetry_joint_validation_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/generative_causal_dag_interference.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SPECTRAL_SYMMETRY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/ceiling_formal_proof.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -36435,6 +36461,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 41,
-  "total_pending": 1207
+  "ready_count": 42,
+  "total_pending": 1208
 }

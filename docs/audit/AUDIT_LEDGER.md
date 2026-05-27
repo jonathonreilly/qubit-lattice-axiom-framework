@@ -23,12 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1207 |
+| unaudited | 1208 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 48 |
-| ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,19 +58,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 828 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 49 |
-| `audited_failed` | 45 |
+| `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1437 |
+| `unaudited` | 1438 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1077 |
+| `bounded_theorem` | 1078 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 259 |
 | `open_gate` | 110 |
-| `positive_theorem` | 709 |
+| `positive_theorem` | 708 |
 
 | criticality | count |
 |---|---:|
@@ -1085,7 +1084,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `source_resolved_retarded_green_pocket_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_transverse_propagating_green_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `spectral_symmetry_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_backreaction_capture_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_green_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_iterative_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -11679,19 +11677,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The primary retained-lattice runner and the explicitly named spectral-control runners compute the raw, Lorentzian, detector-equalized, and source-side weighting cases. Their current outputs support the bounded conclusion that broad/flat source-defined spectra remain AWAY and only detector-output reweighting flips selected comparisons.
 - **rationale:** The note is clean as a bounded negative for broadband attraction under the tested source-defined spectral controls. The current artifacts reproduce the stated pattern: raw broad/flat spectra are AWAY, source-coupled and source-equalized controls do not rescue broadband TOWARD, and detector-equalized TOWARD behavior is explicitly framed as an output-dependent diagnostic rather than a source model. Residual risk is that this does not rule out a later physical k-selection mechanism, but the note lists that as open work.
 - **auditor confidence:** medium
-
-### `spectral_symmetry_note`
-
-- **Note:** [`SPECTRAL_SYMMETRY_NOTE.md`](../../docs/SPECTRAL_SYMMETRY_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audited the broad spectral-symmetry theorem that generic linear DAG transfer products rank-collapse while exact Z2/Z2xZ2 graph symmetry prevents slit convergence by protected sector rank.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T123650Z-659d7015-spectral_symmetry_note-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Discrete symmetries of the graph force the transfer matrix product to maintain rank > 1: if the graph has Z2 symmetry, the transfer matrices commute with reflection, decompose into even/odd sectors, and the full product maintains rank-2 so opposite slits cannot converge.  _(class `A`)_
-- **chain closes:** False — The packet does not prove that exact graph symmetry gives nonmixing slit sectors with nonzero independent rank-1 limits, nor that the stated rank result holds asymptotically for connected causal DAGs. The primary runner only gives finite random-DAG ceiling evidence, and its Lyapunov rank-1 read is not a valid arbitrary-initial-condition proof because the padded product includes a singleton source layer that rank-limits the product by construction.
-- **rationale:** The source note's load-bearing symmetry-sector theorem is broader than the retained bounded Z2xZ2 evidence supplied upstream. The retained authority supports only a finite cached N=25,40,60,80 joint-validation window and explicitly narrows the old successor framing. The primary runner does not test the symmetry-sector rank claim and its apparent infinite Lyapunov gap is not valid evidence for convergence of arbitrary initial conditions, since the transfer-product construction is rank-limited by the one-node source layer and padding/cropping procedure.
-- **auditor confidence:** high
 
 ### `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`
 

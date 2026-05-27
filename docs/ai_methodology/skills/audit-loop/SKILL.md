@@ -24,17 +24,23 @@ Use this skill to audit one claim at a time from the repository audit queue and 
 - Do not read broad publication framing while judging the claim. Use the source note, one-hop cited authorities, runner, runner output, and the audit rubric.
 - Preserve fresh-context integrity. Do not read prior audit rationales, previous audit entries, rendered `AUDIT_LEDGER.md` history, PR text, publication framing, or downstream summaries while judging a claim.
 - Do not grant `audited_clean` unless the derivation closes without hidden premises, unsupported physical identifications, circular dependency, or tuned comparator matching.
-- Do not grant `audited_clean` on a math-bearing claim just because a runner
-  prints PASS. Independently check every load-bearing formula, sign, factor,
+- Treat every math-bearing claim as requiring an independent math audit before
+  any verdict is applied. Check every load-bearing formula, sign, factor,
   normalization, matrix identity, optimizer objective, and expected numerical
   value against the source note and cited authorities. Use at least one route
   that does not share the runner's implementation path: manual derivation,
   symbolic/algebraic simplification, finite toy-case enumeration, independent
   recomputation, invariant/limit checks, or direct comparison to a cited
-  theorem. If the runner is self-confirming, generates its own expected value,
-  omits a sign/factor/normalization check, or a reopened issue says the runner
-  math was wrong, treat the formula family as suspect and choose a non-clean
-  verdict until the expression is independently fixed and rechecked.
+  theorem. Do not let PASS output, cached logs, or generated expected values
+  substitute for this check.
+- When the independent math check fails, is incomplete, or exposes a
+  runner/source mismatch, the verdict rationale must name the exact formula
+  family and why the independent check does not close. Do not grant
+  `audited_clean` until the expression is independently fixed and rechecked.
+  If the runner is self-confirming, generates its own expected value, omits a
+  sign/factor/normalization check, or a reopened issue says the runner math was
+  wrong, treat the formula family as suspect and choose a non-clean verdict
+  unless the restricted packet contains a valid independent repair.
 - Tier-A admitted derivation targets are accepted non-axiom premises only when
   already listed in `docs/audit/data/tier_a_admissions.json`; they satisfy
   dependency closure only at the bounded tier, so downstream clean rows remain

@@ -1,0 +1,23 @@
+loop: yt-first-principles-transfer-response-boundary-20260527
+date: 2026-05-27
+mode: focused_run
+target_status: best-honest-status
+branch: physics-loop/yt-primitive-physical-source-theorem-20260526
+pr: 1980
+active_route: first-principles transfer/Feynman-Hellmann pole-response theorem
+hard_residual: determine whether transfer-matrix first principles force the missing Y_T top response coefficient
+current_status: exact-support / formal-transfer no-go
+files_touched:
+  - docs/YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md
+  - scripts/frontier_yt_first_principles_transfer_response_boundary.py
+  - outputs/yt_first_principles_transfer_response_boundary_2026-05-27.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+open_imports:
+  - coefficient-certified same-surface top sector matrix element
+  - accepted physical top pole/projector or strict same-source pole-row evidence
+  - same-scale g2 if making a numerical y_t(v) claim
+no_go_routes:
+  - formal transfer-matrix first principles alone force kappa
+next_exact_action: derive/certify dM_t/dell=A/sqrt(12) on the accepted same surface, or derive a non-mass-ordering C3 top-line law
+stop_condition: theorem runner, stack runner, py_compile, and diff checks pass; PR #1980 updated

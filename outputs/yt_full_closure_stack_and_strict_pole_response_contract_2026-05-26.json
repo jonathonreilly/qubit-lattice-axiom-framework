@@ -86,8 +86,8 @@
     {
       "closed": false,
       "name": "strict same-source top/W response rows",
-      "next_action": "supply an accepted finite same-surface top/W transfer/action backend, then run the sparse response certificate for coefficient-certified rows",
-      "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_bounded_sparse_certificate_harness_present",
+      "next_action": "derive or certify the same-surface top sector matrix element dM_t/dell=A/sqrt(12), then run the sparse response certificate for coefficient-certified rows",
+      "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_bounded_sparse_certificate_harness_present",
       "step": 6
     },
     {
@@ -107,9 +107,9 @@
   ],
   "fail_count": 0,
   "first_open_gate": "strict same-source top/W response evidence, or a non-mass-ordering same-surface top-line law",
-  "pass_count": 201,
+  "pass_count": 209,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering. Coefficient-certified top/W response evidence remains absent.",
+  "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. The C3 B_x route is now also blocked under ordinary mass-ordering. First-principles transfer response is now closed, but the top sector matrix element remains load-bearing and coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
     "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
     "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py",
@@ -126,6 +126,7 @@
     "c3_top_line_mass_ordering_obstruction_fail_count": 0,
     "direct_sparse_response_certificate_fail_count": 0,
     "fh_fail_count": 0,
+    "first_principles_transfer_response_fail_count": 0,
     "fisher_fail_count": 0,
     "fisher_lsz_fail_count": 0,
     "lsp_c3_source_direction_boundary_fail_count": 0,

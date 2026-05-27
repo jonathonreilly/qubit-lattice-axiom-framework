@@ -39,8 +39,12 @@ closed exactly:
   Fisher source arclength equals LSZ unit-residue normalization if an accepted
   isolated-pole residue surface is supplied
   W/Z denominator response and symbolic top-response row algebra are closed
+  first-principles transfer/Feynman-Hellmann pole-response identities are
+  closed, including same-source top/W source-reparameterization cancellation
   deriving a coefficient-certified top pole row from current same-source/W-row
   symbolic support alone is pruned by an exact finite-transfer counterfamily
+  formal transfer-matrix first principles alone cannot force the top response
+  coefficient; sector matrix elements remain load-bearing
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -69,6 +73,7 @@ still open:
   primitive top-source identification premise
   accepted same-surface pole/response authority for the physical top/Higgs row
   coefficient-certified same-source top/W response evidence
+  coefficient-certified same-surface top sector matrix element
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -258,6 +263,34 @@ and the symbolic top row shape, while varying the recovered top coefficient
 upgraded into coefficient-certified top pole-response evidence by algebra
 alone.  A future positive certificate must supply a direct coefficient-bearing
 top pole row or a dynamics theorem deriving the coefficient.
+
+[`YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md`](YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md)
+then pushes the first-principles route to its formal limit.  Positive
+transfer-matrix first principles prove the pole-response formula
+
+```text
+dM_X/dell
+  = -a_t^{-1} [
+      Lambda_X'(ell)/Lambda_X(ell)
+      - Lambda_0'(ell)/Lambda_0(ell)
+    ],
+```
+
+and, with isolated eigenvalues, the Feynman-Hellmann sector matrix-element
+form.  They also prove that the same-source top/W response ratio cancels
+source reparameterization.  But a finite positive transfer counterfamily keeps
+the top sector matrix element free while preserving the W row.  Therefore the
+remaining first-principles target is exactly:
+
+```text
+<top|V|top> - <0|V|0> = A/sqrt(12)
+```
+
+on the same accepted surface where
+
+```text
+<W|V|W> - <0|V|0> = g_2 A/2.
+```
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a
@@ -492,6 +525,16 @@ derive accepted W/top sector projectors and their source-generator
 matrix elements on that same finite transfer/action surface.
 ```
 
+The first-principles transfer theorem confirms that this is not a bookkeeping
+gap.  Transfer/Feynman-Hellmann first principles reduce the route to sector
+matrix elements; they do not determine those matrix elements:
+
+```text
+dM_t/dell = A/sqrt(12)
+```
+
+must be derived or certified on the same surface.
+
 The top-projector specialization makes the route boundary explicit:
 
 ```text
@@ -627,14 +670,15 @@ proposal_allowed_reason: |
   identification route does not close from current structural inputs, and
   the C3 source direction is now B_x up to sign from normalized RN/Fisher plus
   real finite-record source semantics. The B_x candidate gives 1/sqrt(6) only
-  after the nontrivial top-line premise is supplied. Strict same-source
-  response evidence is not present, so retained or proposed-retained Y_T
-  wording is not allowed.
+  after the nontrivial top-line premise is supplied. First-principles
+  transfer/Feynman-Hellmann identities are now closed but leave the top sector
+  matrix element load-bearing. Strict same-source response evidence is not
+  present, so retained or proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: nontrivial top-line assignment, or strict same-source top/W response evidence
-refined_first_open_gate: strict same-source top/W response evidence, or a
-  non-mass-ordering same-surface top-line law
+refined_first_open_gate: coefficient-certified same-surface top sector matrix
+  element, or a non-mass-ordering same-surface top-line law
 backup_route: audit accepts primitive top-source premise as physical source law
 ```
 

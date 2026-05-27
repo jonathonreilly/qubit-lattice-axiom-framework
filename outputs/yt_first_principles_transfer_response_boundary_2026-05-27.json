@@ -1,0 +1,43 @@
+{
+  "actual_current_surface_status": "exact-support / formal-transfer no-go",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "c3_boundary": {
+    "B_x": "(C+C^2)/sqrt(6)",
+    "P_0_response": "2/sqrt(6)",
+    "P_nontrivial_response": "-1/sqrt(6)",
+    "boundary": "nontrivial top-line law remains load-bearing"
+  },
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "coefficient-certified same-surface top sector response row, or non-mass-ordering C3 top-line law",
+  "formal_transfer_counterfamily": {
+    "counterfamily_status": "formal transfer axioms satisfied while kappa varies",
+    "dM_W_dell": "g_2*A/2",
+    "dM_t_dell": "kappa*A/sqrt(2)",
+    "readout": "kappa",
+    "witness_readouts": [
+      "1/sqrt(6)",
+      "2/sqrt(6)"
+    ]
+  },
+  "pass_count": 56,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Transfer/Feynman-Hellmann first principles prove the exact response formula and same-source ratio, but a finite positive transfer counterfamily leaves the top sector matrix element free.",
+  "reachability_to_target": "partially_closes",
+  "review_surface": [
+    "docs/YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_first_principles_transfer_response_boundary.py",
+    "outputs/yt_first_principles_transfer_response_boundary_2026-05-27.json"
+  ],
+  "route_pruned": "formal transfer-matrix first principles alone force kappa",
+  "same_source_ratio": {
+    "same_source_readout": "y_t",
+    "target_dM_t_dell": "A/sqrt(12)",
+    "target_readout": "1/sqrt(6)"
+  },
+  "trace_class": "negative_route_pruning",
+  "transfer_derivative": {
+    "dM_X_dell": "g_X - g_0",
+    "transfer_formula": "-a_t^-1[(Lambda_X'/Lambda_X)-(Lambda_0'/Lambda_0)]"
+  }
+}

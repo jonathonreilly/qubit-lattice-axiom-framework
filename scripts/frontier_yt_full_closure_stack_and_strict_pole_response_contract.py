@@ -58,6 +58,7 @@ SAME_SOURCE = DOCS / "YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md"
 STRICT_WZ = DOCS / "YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md"
 STRICT_TOP = DOCS / "YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md"
 STRICT_SAME_SOURCE_OBSTRUCTION = DOCS / "YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md"
+FIRST_PRINCIPLES_TRANSFER_RESPONSE = DOCS / "YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
@@ -87,6 +88,7 @@ SAME_SOURCE_OUT = ROOT / "outputs" / "yt_same_source_ew_higgs_authority_gate_202
 STRICT_WZ_OUT = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
 STRICT_TOP_OUT = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 STRICT_SAME_SOURCE_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json"
+FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT = ROOT / "outputs" / "yt_first_principles_transfer_response_boundary_2026-05-27.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
@@ -161,6 +163,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_WZ,
         STRICT_TOP,
         STRICT_SAME_SOURCE_OBSTRUCTION,
+        FIRST_PRINCIPLES_TRANSFER_RESPONSE,
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
@@ -189,6 +192,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_WZ_OUT,
         STRICT_TOP_OUT,
         STRICT_SAME_SOURCE_OBSTRUCTION_OUT,
+        FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
@@ -218,6 +222,8 @@ def part1_anchors() -> dict[str, str]:
         "primitive no-hidden-record source law is derived",
         "top-source identification is pruned",
         "finite-transfer counterfamily",
+        "first-principles transfer/Feynman-Hellmann",
+        "sector matrix elements remain load-bearing",
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
@@ -266,6 +272,7 @@ def part2_support_outputs() -> dict[str, Any]:
     wz = load_json(STRICT_WZ_OUT)
     top = load_json(STRICT_TOP_OUT)
     strict_obstruction = load_json(STRICT_SAME_SOURCE_OBSTRUCTION_OUT)
+    first_principles_transfer_response = load_json(FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
@@ -307,6 +314,18 @@ def part2_support_outputs() -> dict[str, Any]:
     check("symbolic top response leaves coefficient open", top.get("top_coefficient_derived") is False)
     check("strict same-source coefficient obstruction passed", strict_obstruction.get("fail_count") == 0, strict_obstruction.get("fail_count"))
     check("strict same-source obstruction is route-pruning", strict_obstruction.get("trace_class") == "negative_route_pruning")
+    check("first-principles transfer-response theorem passed", first_principles_transfer_response.get("fail_count") == 0, first_principles_transfer_response.get("fail_count"))
+    check(
+        "first-principles theorem is exact support plus formal-transfer no-go",
+        first_principles_transfer_response.get("actual_current_surface_status") == "exact-support / formal-transfer no-go",
+        first_principles_transfer_response.get("actual_current_surface_status"),
+    )
+    check("first-principles theorem prunes formal transfer-only kappa closure", first_principles_transfer_response.get("trace_class") == "negative_route_pruning")
+    check(
+        "first-principles theorem names matrix element as first open gate",
+        "top sector response row" in first_principles_transfer_response.get("first_open_gate_after_this_note", ""),
+        first_principles_transfer_response.get("first_open_gate_after_this_note"),
+    )
     check("direct sparse response certificate harness passed", direct_sparse_cert.get("fail_count") == 0, direct_sparse_cert.get("fail_count"))
     check("direct sparse response certificate is bounded support", direct_sparse_cert.get("actual_current_surface_status") == "bounded-support microbench / open strict-response backend")
     check("direct sparse response certificate proposal is not allowed", direct_sparse_cert.get("proposal_allowed") is False)
@@ -377,6 +396,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "strict_wz": wz,
         "strict_top": top,
         "strict_same_source_obstruction": strict_obstruction,
+        "first_principles_transfer_response": first_principles_transfer_response,
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
@@ -589,9 +609,9 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_bounded_sparse_certificate_harness_present",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_bounded_sparse_certificate_harness_present",
             "closed": False,
-            "next_action": "supply an accepted finite same-surface top/W transfer/action backend, then run the sparse response certificate for coefficient-certified rows",
+            "next_action": "derive or certify the same-surface top sector matrix element dM_t/dell=A/sqrt(12), then run the sparse response certificate for coefficient-certified rows",
         },
         {
             "step": 6.5,
@@ -616,7 +636,9 @@ def main() -> int:
             "The stack burns down source-coordinate scale and the primitive source law, "
             "then prunes top-source identification from current structural inputs. "
             "The C3 B_x route is now also blocked under ordinary mass-ordering. "
-            "Coefficient-certified top/W response evidence remains absent."
+            "First-principles transfer response is now closed, but the top sector "
+            "matrix element remains load-bearing and coefficient-certified top/W "
+            "response evidence remains absent."
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
@@ -638,6 +660,7 @@ def main() -> int:
             "strict_wz_fail_count": support_outputs["strict_wz"].get("fail_count"),
             "strict_top_fail_count": support_outputs["strict_top"].get("fail_count"),
             "strict_same_source_obstruction_fail_count": support_outputs["strict_same_source_obstruction"].get("fail_count"),
+            "first_principles_transfer_response_fail_count": support_outputs["first_principles_transfer_response"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),

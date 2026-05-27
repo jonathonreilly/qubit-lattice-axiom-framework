@@ -14,3 +14,11 @@ Disposition: `pass` for branch-local exact-support packaging after narrowing
 the trace class from direct blocker closure to upstream support.  The theorem
 is useful Route 1 science because it proves raw `lambda` is not an invariant
 inside the RN/Fisher source-manifold route, but it is not a retained proposal.
+
+## Fisher-LSZ Add-On Review
+
+Disposition: `pass` for a second exact-support theorem under an accepted
+isolated-pole source surface.  The add-on proves Fisher arclength and LSZ
+unit-residue normalization agree algebraically, while preserving the pole-row
+no-go boundary: Gram purity alone still does not create the accepted pole
+surface or strict top/W response evidence.

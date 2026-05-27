@@ -1,9 +1,9 @@
 # Opportunity Queue
 
-1. **Physical Fisher/LSZ source-normalization bridge.**
-   Prove that the physical top Yukawa readout uses the Fisher-normalized
-   source coordinate on the RN source manifold.  Highest positive-retention
-   leverage after this block.
+1. **Accepted same-surface pole-residue authority.**
+   Prove or measure the isolated source/Higgs and top/W pole residues on the
+   same Y_T transfer surface.  The Fisher/LSZ equivalence is now exact support
+   once this pole surface is supplied.
 
 2. **Strict same-source top/W response evidence pipeline.**
    Implement or wire a certificate with `dM_t/dh`, `dM_W/dh`,

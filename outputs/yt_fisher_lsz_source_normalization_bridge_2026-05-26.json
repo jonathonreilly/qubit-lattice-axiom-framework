@@ -1,0 +1,37 @@
+{
+  "bare_retained_allowed": false,
+  "claim": "On an accepted isolated-pole surface, Fisher source arclength and LSZ unit-residue normalization give the same normalized insertion.",
+  "current_boundary": {
+    "pole_nogo_names_lsz_gate": true,
+    "preserves_pole_row_no_go": true,
+    "proposal_not_allowed": true,
+    "same_surface_pole_residue_not_supplied": true,
+    "strict_top_w_response_not_supplied": true
+  },
+  "fail_count": 0,
+  "fisher_lsz_equivalence": {
+    "fisher_insertion": "1/A",
+    "fisher_metric": "A**2",
+    "lsz_insertion": "1/A",
+    "pole_residue": "A**2",
+    "scaled_invariant": "1/A"
+  },
+  "forbidden_imports_used": false,
+  "gram_purity_boundary": {
+    "gram_det": "0",
+    "normalized_overlap": "1",
+    "scaled_gram_det": "0",
+    "scaled_overlap": "1"
+  },
+  "pass_count": 48,
+  "proposal_allowed": false,
+  "reachability_to_target": "supports",
+  "remaining_bridge": "Provide accepted same-surface pole-residue authority and strict top/W response evidence; this theorem does not create the pole rows.",
+  "review_surface": [
+    "docs/YT_FISHER_LSZ_SOURCE_NORMALIZATION_BRIDGE_THEOREM_NOTE_2026-05-26.md",
+    "scripts/frontier_yt_fisher_lsz_source_normalization_bridge.py",
+    "outputs/yt_fisher_lsz_source_normalization_bridge_2026-05-26.json"
+  ],
+  "status": "exact-support under accepted isolated-pole source surface",
+  "trace_class": "upstream_support"
+}

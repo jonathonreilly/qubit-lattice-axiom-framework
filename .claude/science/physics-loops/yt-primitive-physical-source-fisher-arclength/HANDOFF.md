@@ -17,14 +17,16 @@ therefore `-O_top`, and the top component is `1/sqrt(6)` independent of
 
 `exact-support / narrowed bridge`.
 
-This is not retained Y_T closure.  The next hard bridge is:
+This is not retained Y_T closure.  A second exact-support block in this same
+package also proves:
 
 ```text
-physical top Yukawa readout = Fisher/LSZ-normalized source coefficient
+accepted isolated pole residue
+  -> Fisher source arclength = LSZ unit-residue normalization
 ```
 
-or else strict same-source top/W response evidence must measure the
-coefficient.
+So the next hard bridge is no longer Fisher-vs-LSZ algebra.  It is same-surface
+pole-residue authority and strict top/W response evidence.
 
 ## Verification
 
@@ -32,6 +34,7 @@ Run:
 
 ```text
 python3 scripts/frontier_yt_primitive_physical_source_fisher_arclength_invariant.py
+python3 scripts/frontier_yt_fisher_lsz_source_normalization_bridge.py
 python3 scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py
 python3 scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py
 python3 scripts/frontier_yt_fh_top_w_response_ratio_gate.py

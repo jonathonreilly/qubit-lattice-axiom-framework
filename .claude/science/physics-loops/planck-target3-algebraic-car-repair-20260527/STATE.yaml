@@ -1,0 +1,27 @@
+slug: planck-target3-algebraic-car-repair-20260527
+date: 2026-05-27
+mode: run
+target_status: bounded-support
+current_goal: >
+  Repair the audited_conditional Planck Target 3 Clifford carrier row by
+  removing the ambient-adjoint CAR overclaim while preserving the exact finite
+  Clifford algebra.
+cycle_count: 1
+active_route: formal Clifford-conjugate CAR restatement
+hard_residual: >
+  The prior source used c_j^dagger language. Metric compatibility gives the
+  Clifford anticommutators but does not force the supplied representation to
+  be Hermitian for the ambient Hilbert adjoint.
+files_touched:
+  - docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md
+  - scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
+  - docs/audit/*
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+open_imports:
+  - The metric-compatible coframe response on K remains a supplied premise.
+  - No substrate forcing, unit normalization, Newton/Planck scale, or SI claim is derived.
+trace_gate: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: run final checks, commit, push, and open review PR
+stop_condition: review PR opened with row queued for independent audit

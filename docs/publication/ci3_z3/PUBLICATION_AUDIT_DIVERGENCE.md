@@ -17,7 +17,7 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| high | `unaudited` | 190 |
+| high | `unaudited` | 191 |
 | critical | `unaudited` | 155 |
 | medium | `unaudited` | 101 |
 | high | `audited_numerical_match` | 4 |
@@ -25,7 +25,6 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
@@ -304,7 +303,7 @@ publication tables phrase it.
 | high | `koide_brannen_callan_harvey_candidate_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_brannen_geometry_dirac_support_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_circulant_character_bridge_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| high | `koide_cl3_selector_gap_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
+| high | `koide_cl3_selector_gap_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `koide_explicit_calculations_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_full_lattice_schur_inheritance_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `koide_gamma_orbit_positive_one_clock_semigroup_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |

@@ -51,6 +51,8 @@ closed exactly:
   source-law derivatives remain load-bearing
   unit source normalization fixes scale, not direction, in the C3 tangent
   source space
+  LSP projective readout supplies instruments for supplied projectors, but
+  does not select the physical C3 source direction
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -309,6 +311,14 @@ scale, not a direction inside the three-dimensional C3-invariant Hermitian
 tangent space.  The remaining non-compute target is therefore a physical
 target/source direction, not another normalization argument.
 
+[`YT_LSP_PROJECTIVE_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md`](YT_LSP_PROJECTIVE_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md)
+checks the qubit/LSP reframing against that exact blocker.  LSP supplies
+`K_P=P` for a supplied sharp projector and the Pauli signed-record readout
+carrier, but a fixed C3 spectral projector `P_0` can be paired with distinct
+unit C3 source tangents `B_a`, `B_x`, and `B_y` whose top-line responses are
+`1/sqrt(3)`, `2/sqrt(6)`, and `0`.  Therefore LSP/projective support does not
+select the physical C3 source direction.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -430,6 +440,14 @@ The source-direction no-go makes the same point geometrically:
 ```text
 derive physical target/source direction in the C3 tangent space;
 unit Fisher length alone is insufficient.
+```
+
+The LSP boundary confirms that the qubit/projective measurement rule does not
+remove this blocker:
+
+```text
+LSP gives the canonical instrument for a supplied projector;
+it does not choose the C3 source tangent or source-generator matrix element.
 ```
 
 ## Non-Claims

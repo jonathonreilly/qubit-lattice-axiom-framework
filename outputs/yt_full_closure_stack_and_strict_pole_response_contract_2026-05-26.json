@@ -94,7 +94,7 @@
       "closed": true,
       "name": "physical top generation projector",
       "next_action": "derive physical target/source direction in C3 tangent space plus top-line ordering, or produce strict pole-row data",
-      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open",
+      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open_lsp_projective_shortcut_pruned",
       "step": 6.5
     },
     {
@@ -107,7 +107,7 @@
   ],
   "fail_count": 0,
   "first_open_gate": "strict same-source top/W response evidence unless audit accepts primitive top-source premise",
-  "pass_count": 149,
+  "pass_count": 155,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. Coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
@@ -123,6 +123,7 @@
     "fh_fail_count": 0,
     "fisher_fail_count": 0,
     "fisher_lsz_fail_count": 0,
+    "lsp_c3_source_direction_boundary_fail_count": 0,
     "minimum_information_fail_count": 0,
     "minimum_information_uniqueness_fail_count": 0,
     "primitive_record_law_fail_count": 0,

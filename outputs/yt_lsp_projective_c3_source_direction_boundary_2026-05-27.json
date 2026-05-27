@@ -1,0 +1,43 @@
+{
+  "actual_current_surface_status": "no-go",
+  "anchors": {
+    "c3_projector_status": "exact-support",
+    "c3_source_direction_status": "no-go"
+  },
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "c3_spectral_projector_route_live": true,
+    "lsp_projective_rule_available": true,
+    "no_forbidden_imports": true,
+    "physical_c3_source_direction_derived": false,
+    "same_surface_top_w_response_certificate_present": false,
+    "signed_record_readout_available": true,
+    "top_line_source_generator_matrix_element_derived": false,
+    "unit_source_normalization_available": true
+  },
+  "claim_id": "yt_lsp_projective_c3_source_direction_boundary_note_2026-05-27",
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_lsp_projective_c3_source_direction_boundary.py",
+  "instrument_witness": {
+    "conclusion": "projective instrument is unchanged while FH source response changes",
+    "lsp_instrument": "K_P0=P0",
+    "projector": "P0=(I+C+C^2)/3",
+    "unit_c3_tangent_responses": {
+      "B_a": "sqrt(3)/3",
+      "B_x": "sqrt(6)/3",
+      "B_y": "0"
+    }
+  },
+  "pass_count": 87,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "LSP supplies the canonical projective instrument for a supplied projector. The C3 finite witness keeps that projector fixed while changing the unit-normalized C3 source tangent and top-line response.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "LSP projective/signed-record readout selects the physical C3 source direction",
+  "route_still_live": "derive physical C3 source direction from same-surface dynamics, or produce strict same-source top/W pole-response evidence",
+  "signed_readout_witness": {
+    "missing_selector": "alpha",
+    "signed_readout": "sigma_z with outcomes {-1,+1}",
+    "unit_c3_family_response": "sqrt(6)*sin(alpha)/3 + sqrt(3)*cos(alpha)/3"
+  },
+  "trace_class": "negative_route_pruning"
+}

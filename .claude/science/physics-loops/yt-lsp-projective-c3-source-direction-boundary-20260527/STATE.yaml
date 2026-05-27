@@ -1,0 +1,23 @@
+loop: yt-lsp-projective-c3-source-direction-boundary-20260527
+status: block_complete
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+active_route: LSP projective/signed-record readout selects physical C3 source direction
+hard_residual: physical C3 source direction in the C3 tangent space
+files_touched:
+  - docs/YT_LSP_PROJECTIVE_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md
+  - scripts/frontier_yt_lsp_projective_c3_source_direction_boundary.py
+  - outputs/yt_lsp_projective_c3_source_direction_boundary_2026-05-27.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+open_imports:
+  - accepted same-surface C3 generation dynamics
+  - physical source-generator direction and matrix element
+  - strict same-source top/W pole-response evidence
+no_go_routes:
+  - LSP projective readout alone selects the C3 source tangent
+review_findings: pending review-loop; local gates pass
+next_exact_action: derive physical source direction from accepted same-surface dynamics, or produce strict pole rows
+stop_condition: positive closure or narrowest documented blocker

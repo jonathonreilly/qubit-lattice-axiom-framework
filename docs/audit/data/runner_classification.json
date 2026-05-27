@@ -949,16 +949,16 @@
       "runner": "scripts/audit_landscape_snapshot.py"
     },
     "audited_symmetry_synthesis_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/mirror_2d_validation.py"
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_audited_symmetry_synthesis_scope_repair.py"
     },
     "axiom_first_bekenstein_bound_theorem_note_2026-05-01": {
       "assert_count": 1,
@@ -31953,6 +31953,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_audited_symmetry_synthesis_scope_repair.py": {
+      "assert_count": 1,
+      "claims": [
+        "audited_symmetry_synthesis_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -53756,7 +53771,6 @@
     "scripts/mirror_2d_validation.py": {
       "assert_count": 0,
       "claims": [
-        "audited_symmetry_synthesis_note",
         "lanes.mirror.readme",
         "mirror_2d_gravity_law_note",
         "mirror_2d_validation_note"
@@ -56795,15 +56809,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 350,
+    "decoration_candidates": 351,
     "dominant_class_distribution": {
       "A": 254,
-      "B": 293,
+      "B": 294,
       "C": 762,
       "D": 302,
       "none": 436
     },
-    "runners_classified": 2047,
+    "runners_classified": 2048,
     "runners_with_C": 998,
     "runners_with_D": 602
   }

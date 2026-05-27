@@ -1,11 +1,12 @@
 # Audited Symmetry Synthesis Note
 
-**Date:** 2026-04-03 (scope narrowed 2026-05-26)
+**Date:** 2026-04-03 (scope narrowed 2026-05-26; mechanism firewall added 2026-05-27)
 **Status:** bounded synthesis candidate on registered finite authority
 surfaces only; no unified mirror or `Z₂ × Z₂` family theorem.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived after independent review.
+**Primary runner:** [`../scripts/frontier_audited_symmetry_synthesis_scope_repair.py`](../scripts/frontier_audited_symmetry_synthesis_scope_repair.py)
 
 This note consolidates the symmetry-program results after a direct audit of the
 current code and saved artifacts. The goal is to separate the claims that are
@@ -38,6 +39,24 @@ No dense `Z₂ × Z₂` `N=120` promotion, whole-window mirror MI advantage,
 single-surface mirror-family theorem, or asymptotic symmetry law is part of
 this synthesis claim.
 
+## Mechanism Firewall (2026-05-27)
+
+The synthesis claim below is a finite-surface aggregation only. Mechanism
+phrases such as "rank-1 / CLT", "sector preservation", and "random-growth
+failure mechanism" are interpretive labels for the observed finite diagnostics,
+not load-bearing theorem claims.
+
+In particular, this row does **not** claim:
+
+- a retained rank-1 or CLT mechanism theorem for random growth;
+- a retained theorem that exact discrete symmetry preserves sectors across a
+  family;
+- an asymptotic separation law;
+- a unified grown Born+gravity+decoherence successor lane.
+
+Any future use of those mechanism claims must cite a separate retained
+one-hop mechanism theorem.
+
 ## Primary Artifacts
 
 - exact mirror / bounded coexistence:
@@ -66,9 +85,10 @@ this synthesis claim.
 The cited exact-mirror authorities are already narrowed to finite registered
 surfaces. The current safe statement is still:
 
-- random growth tends toward the CLT / rank-1 ceiling
-- exact discrete symmetry can delay or prevent that convergence in bounded
-  windows
+- the registered random baselines are weaker than the exact-symmetry rows in
+  the named finite windows
+- exact discrete-symmetry rows remain distinct from the matched random rows in
+  those finite windows
 - approximate or heuristic symmetry is not enough to inherit the same benefit
 
 The exact mirror chokepoint lane remains the canonical parity-protected
@@ -217,8 +237,10 @@ So the fragility story should be treated as:
 
 The strongest bounded synthesis story this note proposes for re-audit is:
 
-1. random growth fails by a rank-1 / CLT-type mechanism
-2. exact discrete symmetry can preserve distinct sectors and delay that failure
+1. registered random baselines underperform the exact-symmetry rows on the
+   cited finite windows
+2. exact discrete symmetry gives finite-window separation from those matched
+   random baselines, with no mechanism theorem claimed here
 3. exact mirror symmetry gives a finite strict-card coexistence pocket at
    `N=15` and `N=25`
 4. exact 2D mirror gives a review-safe bounded coexistence pocket with strong

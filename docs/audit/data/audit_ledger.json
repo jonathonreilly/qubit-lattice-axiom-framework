@@ -11237,62 +11237,24 @@
       "verdict_rationale": null
     },
     "audited_symmetry_synthesis_note": {
-      "audit_date": "2026-05-27T03:18:20.423434+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "higher_symmetry_gravity_probe_note": "On the default dense Z2xZ2 runner surface N={80,100,120}, 16 seeds, z2z2_quarter=16, connect_radius=5.2, anchor_b=5.0, mass_count=4, the SHA-matched completed runner produces the stated finite mass-window rows, positive-row subfits inside M={2,3,5,8}, and positive but weak fixed-distance sweep rows; it does not establish rowwise/global gravity positivity, Born safety, or a gravity law.",
-          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
-          "mirror_2d_validation_note": "Bounded exact 2D mirror coexistence pocket for N in {25,40,60,80,100}, npl_half=12, yr=10.0, connect_radius=2.5, 8 seeds, and k-band [3,5,7], with no promoted mass-law or distance-law claim.",
-          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
-          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency.",
-          "mirror_mutual_information_chokepoint_note": "Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed."
-        },
-        "dep_claim_type": {
-          "higher_symmetry_gravity_probe_note": "bounded_theorem",
-          "higher_symmetry_joint_validation_note": "bounded_theorem",
-          "mirror_2d_validation_note": "bounded_theorem",
-          "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
-          "mirror_chokepoint_note": "bounded_theorem",
-          "mirror_mutual_information_chokepoint_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "higher_symmetry_gravity_probe_note": "retained_bounded",
-          "higher_symmetry_joint_validation_note": "retained_bounded",
-          "mirror_2d_validation_note": "retained_bounded",
-          "mirror_chokepoint_boundary_fit_note": "retained_bounded",
-          "mirror_chokepoint_note": "retained_bounded",
-          "mirror_mutual_information_chokepoint_note": "retained_bounded"
-        },
-        "deps": [
-          "higher_symmetry_gravity_probe_note",
-          "higher_symmetry_joint_validation_note",
-          "mirror_2d_validation_note",
-          "mirror_chokepoint_boundary_fit_note",
-          "mirror_chokepoint_note",
-          "mirror_mutual_information_chokepoint_note"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-meitner-2nd",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The one-hop retained-bounded dependencies close the listed finite registered surfaces and their explicit exclusions. They do not close the broader rank-1/CLT mechanism or exact sector-preservation explanation as a retained synthesis-level mechanism theorem.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "audited_symmetry_synthesis_note",
-      "claim_scope": "Bounded synthesis of the named registered finite symmetry surfaces: strict-card exact mirror N=15/25, dense mirror boundary through N=100, finite mirror MI diagnostic, exact 2D mirror validation, Z2xZ2 cached N=25/40/60/80, and gravity-probe surfaces, excluding N=120 promotion and asymptotic or family-law claims.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-27T03:18:20.423434+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -11305,21 +11267,19 @@
         "higher_symmetry_gravity_probe_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [
-        "scripts/mirror_born_audit.py"
-      ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "The strongest bounded synthesis story says random growth fails by a rank-1 / CLT-type mechanism, exact discrete symmetry can preserve distinct sectors and delay that failure, and the mature finite bounded symmetry program holds across the named registered authority surfaces while the unified grown lane does not yet close.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "1212d9044c23a30482423df07b16c22d88e1ef9bd6ec15565f2ad3068ee36bb7",
+      "note_hash": "92689e5d00f972e74295f68f0e624b2a3ed0e5f15565b202d0c251cb8c3c31e9",
       "note_path": "docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: remove or explicitly mark the rank-1/CLT and sector-preservation mechanism language as non-binding interpretation, unless a retained one-hop mechanism theorem is supplied.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -11428,24 +11388,94 @@
             "total_pass": 2
           },
           "verdict_rationale": "The primary runner source for the exact 2D mirror lane genuinely computes MI, purity, dTV, Born, k=0, and gravity from the exact 2D mirror generator and linear propagator, and its cached output matches the exact 2D mirror authority. However, the synthesis note is not a first-principles derivation; its load-bearing move is cross-note aggregation. That aggregation does not fully close because at least one load-bearing numerical Z2 x Z2 claim is tied to a historical raw log rather than the registered binding cache, and the exact mirror summary needs to inherit the narrowed retained scope of its cited parent."
+        },
+        {
+          "archived_at": "2026-05-27T19:02:19.176418+00:00",
+          "archived_for_note_hash": "1212d9044c23a30482423df07b16c22d88e1ef9bd6ec15565f2ad3068ee36bb7",
+          "audit_date": "2026-05-27T03:18:20.423434+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "higher_symmetry_gravity_probe_note": "On the default dense Z2xZ2 runner surface N={80,100,120}, 16 seeds, z2z2_quarter=16, connect_radius=5.2, anchor_b=5.0, mass_count=4, the SHA-matched completed runner produces the stated finite mass-window rows, positive-row subfits inside M={2,3,5,8}, and positive but weak fixed-distance sweep rows; it does not establish rowwise/global gravity positivity, Born safety, or a gravity law.",
+              "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding.",
+              "mirror_2d_validation_note": "Bounded exact 2D mirror coexistence pocket for N in {25,40,60,80,100}, npl_half=12, yr=10.0, connect_radius=2.5, 8 seeds, and k-band [3,5,7], with no promoted mass-law or distance-law claim.",
+              "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
+              "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency.",
+              "mirror_mutual_information_chokepoint_note": "Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed."
+            },
+            "dep_claim_type": {
+              "higher_symmetry_gravity_probe_note": "bounded_theorem",
+              "higher_symmetry_joint_validation_note": "bounded_theorem",
+              "mirror_2d_validation_note": "bounded_theorem",
+              "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
+              "mirror_chokepoint_note": "bounded_theorem",
+              "mirror_mutual_information_chokepoint_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "higher_symmetry_gravity_probe_note": "retained_bounded",
+              "higher_symmetry_joint_validation_note": "retained_bounded",
+              "mirror_2d_validation_note": "retained_bounded",
+              "mirror_chokepoint_boundary_fit_note": "retained_bounded",
+              "mirror_chokepoint_note": "retained_bounded",
+              "mirror_mutual_information_chokepoint_note": "retained_bounded"
+            },
+            "deps": [
+              "higher_symmetry_gravity_probe_note",
+              "higher_symmetry_joint_validation_note",
+              "mirror_2d_validation_note",
+              "mirror_chokepoint_boundary_fit_note",
+              "mirror_chokepoint_note",
+              "mirror_mutual_information_chokepoint_note"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-meitner-2nd",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The one-hop retained-bounded dependencies close the listed finite registered surfaces and their explicit exclusions. They do not close the broader rank-1/CLT mechanism or exact sector-preservation explanation as a retained synthesis-level mechanism theorem.",
+          "claim_scope": "Bounded synthesis of the named registered finite symmetry surfaces: strict-card exact mirror N=15/25, dense mirror boundary through N=100, finite mirror MI diagnostic, exact 2D mirror validation, Z2xZ2 cached N=25/40/60/80, and gravity-probe surfaces, excluding N=120 promotion and asymptotic or family-law claims.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T03:18:20.423434+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The strongest bounded synthesis story says random growth fails by a rank-1 / CLT-type mechanism, exact discrete symmetry can preserve distinct sectors and delay that failure, and the mature finite bounded symmetry program holds across the named registered authority surfaces while the unified grown lane does not yet close.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "scope_too_broad: remove or explicitly mark the rank-1/CLT and sector-preservation mechanism language as non-binding interpretation, unless a retained one-hop mechanism theorem is supplied.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 6,
+            "C": 1,
+            "D": 0,
+            "runner_result": "mirror_2d_validation.py cache exit_code=0, status=ok; exact 2D mirror rows have Born max 2.18e-15 with positive listed MI, dTV, and gravity reads. Other synthesis surfaces are cross-note checks against retained-bounded one-hop authorities.",
+            "runner_status": "ok",
+            "total_fail": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Issue: the finite artifact synthesis is mostly supported, but the note still claims mechanism-level language that random growth fails by a rank-1 / CLT-type mechanism and that exact discrete symmetry can preserve distinct sectors. Why this blocks: the one-hop authorities support finite runner/cache surfaces and bounded observed separations, not a retained mechanism theorem for those explanatory claims across the synthesized program. Repair target: narrow those mechanism sentences to observed finite diagnostics, or cite/add retained bridge theorems for the CLT/rank-1 mechanism and sector-preservation claim. Claim boundary until fixed: the registered finite rows themselves remain supported by retained-bounded dependencies."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 6,
-        "C": 1,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "runner_result": "mirror_2d_validation.py cache exit_code=0, status=ok; exact 2D mirror rows have Born max 2.18e-15 with positive listed MI, dTV, and gravity reads. Other synthesis surfaces are cross-note checks against retained-bounded one-hop authorities.",
-        "runner_status": "ok",
-        "total_fail": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
-      "runner_path": "scripts/mirror_2d_validation.py",
+      "runner_path": "scripts/frontier_audited_symmetry_synthesis_scope_repair.py",
       "title": "Audited Symmetry Synthesis Note",
       "transitive_descendants": 1,
-      "verdict_rationale": "Issue: the finite artifact synthesis is mostly supported, but the note still claims mechanism-level language that random growth fails by a rank-1 / CLT-type mechanism and that exact discrete symmetry can preserve distinct sectors. Why this blocks: the one-hop authorities support finite runner/cache surfaces and bounded observed separations, not a retained mechanism theorem for those explanatory claims across the synthesized program. Repair target: narrow those mechanism sentences to observed finite diagnostics, or cite/add retained bridge theorems for the CLT/rank-1 mechanism and sector-preservation claim. Claim boundary until fixed: the registered finite rows themselves remain supported by retained-bounded dependencies."
+      "verdict_rationale": null
     },
     "axiom_change_proposal_2026-04-10": {
       "audit_date": null,

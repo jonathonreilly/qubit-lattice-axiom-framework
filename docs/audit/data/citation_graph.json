@@ -42145,12 +42145,10 @@
         "higher_symmetry_joint_validation_note",
         "higher_symmetry_gravity_probe_note"
       ],
-      "helper_runner_paths": [
-        "scripts/mirror_born_audit.py"
-      ],
-      "note_hash": "1212d9044c23a30482423df07b16c22d88e1ef9bd6ec15565f2ad3068ee36bb7",
+      "helper_runner_paths": [],
+      "note_hash": "92689e5d00f972e74295f68f0e624b2a3ed0e5f15565b202d0c251cb8c3c31e9",
       "path": "docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md",
-      "runner_path": "scripts/mirror_2d_validation.py",
+      "runner_path": "scripts/frontier_audited_symmetry_synthesis_scope_repair.py",
       "title": "Audited Symmetry Synthesis Note"
     },
     "axiom_change_proposal_2026-04-10": {

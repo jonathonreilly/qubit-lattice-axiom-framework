@@ -3,6 +3,8 @@
 This PR repairs `dimension_selection_note` by narrowing it to finite-runner
 lower-bound support.
 
+Loop PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2088
+
 It no longer claims that self-consistency uniquely selects `d = 3`. Instead,
 it routes the supported lower-bound surface through the retained-bounded
 finite-k centroid-sign bridge:

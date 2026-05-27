@@ -37,7 +37,10 @@ Run the repo-native physics review loop from:
    or audit-readiness repairs into source/tooling/pipeline changes and
    regenerate generated surfaces instead of rejecting them just because they
    are not theorem science.
-9. End with a concise report covering imports/support status, retained/bounded
+9. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
+   never land them unless the user explicitly asks for draft inspection without
+   landing.
+10. End with a concise report covering imports/support status, retained/bounded
    disposition, salvage disposition, audit-readiness, commits, checks, and
    remaining manual science.
 
@@ -78,6 +81,9 @@ Run the repo-native physics review loop from:
   salvageable, land the source-only salvage and dependency-chain/audit-queue
   repairs as part of the current landing path; otherwise close or reject the
   existing PR with a clear reason.
+- `/review-loop` must ignore draft-status PRs. Drafts are not candidates for
+  landing, review-loop comments, or salvage unless the user explicitly asks for
+  draft inspection without landing.
 - When integrating PRs, `/review-loop` must not checkout whole files from a
   stale PR head over current `main`. Compute the PR merge base, detect overlap
   between files changed on current `main` and files changed by the PR, and use

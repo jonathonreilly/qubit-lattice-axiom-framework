@@ -1,0 +1,77 @@
+{
+  "actual_current_surface_status": "exact-support / open hard-boundary readout law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "boundary_compactification": {
+    "boundary_completion_selects_endpoint_by_itself": false,
+    "compactified_family": "q(s) = (s, (1-s)/2, (1-s)/2)",
+    "natural_parameter_substitution": "t = exp(3 ell/sqrt(6))",
+    "nontrivial_boundary": {
+      "conditional_row": "A/sqrt(12)",
+      "response": "-1/sqrt(6)",
+      "s": "0",
+      "t": "0"
+    },
+    "singlet_boundary": {
+      "conditional_row": "A/sqrt(3)",
+      "response": "2/sqrt(6)",
+      "s": "1",
+      "t": "infinity"
+    },
+    "singlet_weight": "s = t/(t+2)"
+  },
+  "dependency_statuses": {
+    "block_support": "exact-support / open nontrivial-block membership law",
+    "minimum_information": "exact-support under minimum-information intervention criterion",
+    "minimum_information_no_go": "no-go / open minimum-information readout law",
+    "real_source": "exact-support",
+    "source_orientation": "no-go / open source-orientation sign law",
+    "strict_availability": "no-go",
+    "trace_free": "no-go / open trace-free source-to-zero-singlet law",
+    "zero_singlet": "no-go / open zero-singlet top-block membership law"
+  },
+  "fail_count": 0,
+  "fisher_nearest_face_support": {
+    "baseline": "s = 1/3",
+    "distance_gap_numeric": "0.679673818908243874192785026784",
+    "distance_to_P_0": "pi - 2 asin(1/sqrt(3))",
+    "distance_to_P_nt": "2 asin(1/sqrt(3))",
+    "fisher_metric_on_c3_block_curve": "ds^2/[s(1-s)]",
+    "nearest_boundary_face": "P_nt",
+    "nearest_face_implies_zero_singlet": true,
+    "nearest_face_law_accepted_on_current_surface": false
+  },
+  "no_go_audit": {
+    "reason": "The compactified C3 RN/Fisher source family has two endpoints: P_nt and P_0. A nearest-Fisher-face rule selects P_nt exactly, but that rule is an additional physical hard-boundary readout law not accepted on the current surface.",
+    "route_pruned": "minimum-information hard-boundary completion alone derives accepted zero-singlet physical top-block membership",
+    "route_still_live": [
+      "accepted hard-boundary nearest-face top-readout law plus generator factorization",
+      "another accepted physical top-block/readout law excluding P_0",
+      "accepted strict same-source top/W pole rows with controls"
+    ]
+  },
+  "pass_count": 97,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The C3 minimum-information hard-boundary geometry makes P_nt the nearest Fisher boundary face from the symmetric baseline, and P_nt support would give A/sqrt(12) with the still-open generator factorization. The current surface has not accepted nearest-boundary face selection as the physical top readout.",
+  "reachability_to_target": "supports",
+  "review_surface": [
+    "docs/YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_c3_mininfo_hard_boundary_face_selector_support.py",
+    "outputs/yt_c3_mininfo_hard_boundary_face_selector_support_2026-05-27.json"
+  ],
+  "route_still_live": "derive accepted hard-boundary nearest-face top-readout law plus same-surface generator factorization, derive another accepted physical top-block/readout law excluding P_0, or produce accepted strict same-source top/W pole rows with controls",
+  "support_certificate": {
+    "accepted_nearest_face_top_readout_law_derived": false,
+    "accepted_same_surface_generator_factorization_derived": false,
+    "bare_retained_allowed": false,
+    "hard_boundary_completion_alone_selects_Pnt": false,
+    "hard_boundary_completion_available": true,
+    "nearest_face_would_exclude_P0": true,
+    "nearest_face_would_give_A_over_sqrt12_with_generator_factorization": true,
+    "nearest_fisher_boundary_face_is_Pnt": true,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "strict_top_w_response_certificate_present": false
+  },
+  "trace_class": "upstream_support"
+}

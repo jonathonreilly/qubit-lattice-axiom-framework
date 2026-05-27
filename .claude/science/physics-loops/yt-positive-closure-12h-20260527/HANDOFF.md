@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced twenty-six science blocks, not positive retained-grade
+The campaign has produced twenty-seven science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary and later
@@ -54,6 +54,9 @@ closure:
     zero-singlet physical top-block membership.
 26. a no-go showing finite minimum-information/RN-Fisher readout semantics do
     not derive zero-singlet physical top-block membership.
+27. exact support showing the hard-boundary completion of that RN/Fisher C3
+    source curve has nearest Fisher boundary face `P_nt`, while the physical
+    nearest-boundary readout law remains open.
 
 New nontrivial-block matrix-element support result:
 
@@ -312,6 +315,40 @@ in PR #1980:
 PR #1980 body was updated with the minimum-information readout no-go result,
 artifacts, verification, and next exact action. No `POSITIVE_CLOSURE` marker
 was written.
+
+New hard-boundary minimum-information face-selector support:
+
+```text
+compactified C3 RN/Fisher source curve
+  -> endpoints P_nt and P_0
+  -> nearest Fisher boundary face from s=1/3 is P_nt
+```
+
+The exact distance comparison is:
+
+```text
+d_F(1/3, P_nt) = 2 asin(1/sqrt(3))
+d_F(1/3, P_0)  = pi - 2 asin(1/sqrt(3))
+```
+
+Thus a future accepted nearest-hard-boundary-face top-readout law would
+exclude `P_0` and, with same-surface generator factorization, would feed the
+already-derived `P_nt -> A/sqrt(12)` matrix-element support. This does not
+close the actual current surface: nearest-boundary face selection is a new
+unaccepted physical top-readout law, generator factorization remains open, and
+strict top/W pole-row controls remain absent.
+
+Cycle 13 hard-boundary support verification:
+
+- `python3 scripts/frontier_yt_c3_mininfo_hard_boundary_face_selector_support.py` -> `SUMMARY: PASS=97 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=424 FAIL=0`
+- Adjacent runners and py-compile/git checks are recorded in `STATE.yaml`.
+
+No `POSITIVE_CLOSURE` marker was written. The next exact action is to
+derive/accept the hard-boundary nearest-face readout law with generator
+factorization, derive another same-surface physical top-block law excluding
+`P_0`, or produce accepted strict same-source top/W pole-row data with
+contact, FV/IR, and model-class controls.
 
 New strict W/Z plus C3 top-row splice result:
 

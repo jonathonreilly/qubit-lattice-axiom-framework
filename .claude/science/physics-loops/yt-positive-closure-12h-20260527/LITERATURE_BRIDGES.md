@@ -77,3 +77,10 @@ load-bearing: the finite full-support exponential tilt and the boundary
 condition for zero singlet weight are rederived in the runner. External
 context could only motivate a new hard-boundary/readout law; it does not close
 the current repository surface.
+The hard-boundary minimum-information face-selector support block directly
+computes the Fisher geometry of the compactified finite C3 line simplex
+`q(s)=(s,(1-s)/2,(1-s)/2)`. No external information-geometry theorem is
+load-bearing: the runner derives the metric `ds^2/[s(1-s)]`, the two boundary
+distances, and the nearest-face comparison directly. External context could
+only motivate accepting nearest-boundary face selection as a physical
+top-readout law; it does not close the current repository surface.

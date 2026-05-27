@@ -66,6 +66,10 @@ closed exactly:
   over the C3 line responses retain full support and cannot set singlet weight
   to zero at finite source coordinate; imposing the target response as a
   constraint inserts the missing coefficient row
+  hard-boundary minimum-information face-selector support: compactifying that
+  RN/Fisher family exposes both P_nt and P_0 endpoints, while a nearest
+  Fisher-boundary-face law would select P_nt conditionally; the nearest-face
+  readout law is not accepted on the current surface
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -177,6 +181,8 @@ still open:
   convert source centering into zero P_0 singlet weight
   accepted minimum-information/top-readout law if the C3 route tries to turn
   RN/Fisher source semantics into zero P_0 singlet weight
+  accepted hard-boundary nearest-face top-readout law if the C3 route tries to
+  turn the RN/Fisher boundary compactification into zero P_0 singlet weight
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -529,6 +535,35 @@ Thus `s(ell) > 0` for every finite source coordinate.  Zero singlet weight
 appears only as an infinite-boundary limit, or by imposing the target
 nontrivial response as a constraint.  The latter is target insertion, not a
 derived physical readout law.
+
+[`YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md`](YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md)
+then tests that infinite-boundary escape hatch.  Compactifying the same
+RN/Fisher C3 readout curve gives two endpoints:
+
+```text
+t -> 0        -> P_nt -> A/sqrt(12) conditionally
+t -> infinity -> P_0  -> A/sqrt(3)
+```
+
+Boundary completion alone therefore still does not choose the physical top
+block.  It does add a sharp conditional support result: in the Fisher metric
+on
+
+```text
+q(s) = (s, (1-s)/2, (1-s)/2),
+```
+
+the symmetric baseline `s=1/3` is closer to the `P_nt` face than to the `P_0`
+face:
+
+```text
+d_F(1/3, P_nt) = 2 asin(1/sqrt(3)),
+d_F(1/3, P_0)  = pi - 2 asin(1/sqrt(3)).
+```
+
+Thus an accepted nearest-hard-boundary-face readout law would select `P_nt`.
+The actual current surface does not contain that law, so this is support for
+a new possible readout theorem, not closure.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a
@@ -1401,6 +1436,11 @@ proposal_allowed_reason: |
   two further zero-singlet shortcuts: source centering gives s=1/3, and finite
   RN/I-projection tilts retain full support unless an infinite-boundary law or
   the target response itself is imported.
+  The hard-boundary minimum-information face-selector support theorem then
+  sharpens that infinite-boundary law: the compactified RN/Fisher family has
+  both P_nt and P_0 endpoints, and nearest-Fisher-boundary selection would
+  choose P_nt, but nearest-boundary face selection remains a new unaccepted
+  physical top-readout law.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface
@@ -1418,7 +1458,7 @@ proposal_allowed_reason: |
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  same-surface source-orientation/sign/readout dynamics theorem deriving
+  same-surface source-orientation/sign/readout/hard-boundary dynamics theorem deriving
   zero-singlet physical top-block support, with accepted backend, W/top
   projectors, and source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix

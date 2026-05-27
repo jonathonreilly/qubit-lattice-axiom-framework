@@ -182,3 +182,13 @@ controls remain open.
   reimports the missing coefficient row. A positive closure route still needs
   an accepted physical top-block/readout law excluding `P_0`, or strict top/W
   pole-row data with controls.
+
+Non-no-go support checkpoint after the twenty-sixth block: the
+hard-boundary completion of the C3 minimum-information readout curve has a
+sharp nearest-Fisher-face candidate. The compactified curve has endpoints
+`P_nt` and `P_0`; from the symmetric baseline `s=1/3`, the Fisher distances
+are `2 asin(1/sqrt(3))` to `P_nt` and
+`pi - 2 asin(1/sqrt(3))` to `P_0`, so nearest-boundary-face selection would
+choose `P_nt` and conditionally give `A/sqrt(12)`. This is exact support only:
+the current surface does not accept nearest-boundary face selection as the
+physical top readout, and strict pole controls remain absent.

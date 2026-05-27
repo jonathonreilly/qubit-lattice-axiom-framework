@@ -34,6 +34,42 @@ Verification recorded with this review:
 - YAML validation passed.
 - `git diff --check` passed.
 
+## 2026-05-27 Local Review, Block 27
+
+Scope:
+
+- C3 minimum-information hard-boundary face-selector support note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, C3 hard-boundary compactification, Fisher nearest-face distances, support/no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is exact-support/open hard-boundary readout law; nearest Fisher boundary selection supports `P_nt` but is not claimed as accepted physical top readout. |
+| Imports / support | DISCLOSED | No observed masses, target selector, old Ward authority, external information-geometry theorem, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: bounded_theorem`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for support-boundary artifact only; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=97 FAIL=0`
+- Full stack runner: `PASS=424 FAIL=0`
+- Adjacent runners passed: mininfo readout no-go `PASS=103`,
+  nontrivial-block support `PASS=85`, zero-singlet membership no-go
+  `PASS=104`, source-orientation sign-selector no-go `PASS=89`,
+  trace-free centered-source no-go `PASS=89`, minimum-information
+  source-action bridge `PASS=37`, primitive record law `PASS=75`,
+  first-principles transfer response `PASS=56`, same-surface matrix
+  factorization `PASS=77`, strict sparse availability audit `PASS=74`, and
+  direct sparse response certificate `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 26
 
 Scope:

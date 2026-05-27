@@ -116,6 +116,11 @@ This runner verifies the current burn-down state:
   RN/I-projection tilts over the C3 line responses have full support, so zero
   singlet weight appears only as an infinite-boundary law or target-response
   insertion.
+* The hard-boundary minimum-information face-selector support result sharpens
+  that infinite-boundary escape hatch: the compactified C3 RN/Fisher curve has
+  both P_nt and P_0 endpoints, while a new nearest-Fisher-boundary-face law
+  would select P_nt conditionally. That nearest-face law is not accepted on
+  the current surface.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -155,6 +160,7 @@ C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO = DOCS / "YT_C3_ZERO_SINGLET_TOP_BLOCK
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO = DOCS / "YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md"
 C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO = DOCS / "YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md"
 C3_MININFO_READOUT_ZERO_SINGLET_NOGO = DOCS / "YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md"
+C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT = DOCS / "YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
@@ -211,6 +217,7 @@ C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT = ROOT / "outputs" / "yt_c3_zero_s
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json"
 C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT = ROOT / "outputs" / "yt_c3_trace_free_centered_source_zero_singlet_no_go_2026-05-27.json"
 C3_MININFO_READOUT_ZERO_SINGLET_NOGO_OUT = ROOT / "outputs" / "yt_c3_mininfo_readout_zero_singlet_no_go_2026-05-27.json"
+C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_mininfo_hard_boundary_face_selector_support_2026-05-27.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
@@ -312,6 +319,7 @@ def part1_anchors() -> dict[str, str]:
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO,
         C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO,
         C3_MININFO_READOUT_ZERO_SINGLET_NOGO,
+        C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT,
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
@@ -367,6 +375,7 @@ def part1_anchors() -> dict[str, str]:
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT,
         C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT,
         C3_MININFO_READOUT_ZERO_SINGLET_NOGO_OUT,
+        C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
@@ -424,6 +433,7 @@ def part1_anchors() -> dict[str, str]:
         "source-orientation sign-selector no-go",
         "trace-free centered-source no-go",
         "minimum-information readout zero-singlet no-go",
+        "hard-boundary minimum-information face-selector support",
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
@@ -500,6 +510,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_source_orientation_sign_selector_nogo = load_json(C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT)
     c3_trace_free_centered_source_zero_singlet_nogo = load_json(C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT)
     c3_mininfo_readout_zero_singlet_nogo = load_json(C3_MININFO_READOUT_ZERO_SINGLET_NOGO_OUT)
+    c3_mininfo_hard_boundary_face_selector_support = load_json(C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
@@ -737,6 +748,41 @@ def part2_support_outputs() -> dict[str, Any]:
     check(
         "C3 minimum-information readout still has no strict positive certificate",
         c3_mininfo_readout_zero_singlet_nogo.get("certificate_boundary", {})
+        .get("strict_top_w_response_certificate_present")
+        is False,
+    )
+    check(
+        "C3 hard-boundary mininfo face-selector support passed",
+        c3_mininfo_hard_boundary_face_selector_support.get("fail_count") == 0,
+        c3_mininfo_hard_boundary_face_selector_support.get("fail_count"),
+    )
+    check(
+        "C3 hard-boundary mininfo support remains open",
+        c3_mininfo_hard_boundary_face_selector_support.get("actual_current_surface_status")
+        == "exact-support / open hard-boundary readout law",
+        c3_mininfo_hard_boundary_face_selector_support.get("actual_current_surface_status"),
+    )
+    check(
+        "C3 hard-boundary completion alone does not select P_nt",
+        c3_mininfo_hard_boundary_face_selector_support.get("support_certificate", {})
+        .get("hard_boundary_completion_alone_selects_Pnt")
+        is False,
+    )
+    check(
+        "C3 nearest Fisher boundary face is P_nt",
+        c3_mininfo_hard_boundary_face_selector_support.get("support_certificate", {})
+        .get("nearest_fisher_boundary_face_is_Pnt")
+        is True,
+    )
+    check(
+        "C3 nearest-face top readout law remains open",
+        c3_mininfo_hard_boundary_face_selector_support.get("support_certificate", {})
+        .get("accepted_nearest_face_top_readout_law_derived")
+        is False,
+    )
+    check(
+        "C3 hard-boundary support still has no strict positive certificate",
+        c3_mininfo_hard_boundary_face_selector_support.get("support_certificate", {})
         .get("strict_top_w_response_certificate_present")
         is False,
     )
@@ -1244,6 +1290,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_source_orientation_sign_selector_nogo": c3_source_orientation_sign_selector_nogo,
         "c3_trace_free_centered_source_zero_singlet_nogo": c3_trace_free_centered_source_zero_singlet_nogo,
         "c3_mininfo_readout_zero_singlet_nogo": c3_mininfo_readout_zero_singlet_nogo,
+        "c3_mininfo_hard_boundary_face_selector_support": c3_mininfo_hard_boundary_face_selector_support,
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
@@ -1483,7 +1530,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_real_block_algebra_sign_choice_trace_free_centering_and_mininfo_readout_do_not_derive_that_membership_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_real_block_algebra_sign_choice_trace_free_centering_and_finite_mininfo_readout_do_not_derive_that_membership_hard_boundary_mininfo_nearest_face_selects_pnt_conditionally_but_nearest_face_readout_law_is_open_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface sign/order/readout law excluding P_0 with backend/projectors/matrix elements",
         },
@@ -1611,6 +1658,13 @@ def main() -> int:
             "zero at finite source coordinate, while imposing the target "
             "nontrivial response as a constraint inserts the missing "
             "coefficient row. "
+            "The hard-boundary completion of that same minimum-information "
+            "family now gives exact conditional support: the C3 RN/Fisher "
+            "curve has both P_nt and P_0 endpoints, and the nearest Fisher "
+            "boundary face from the symmetric baseline is P_nt. This still "
+            "does not authorize proposal language because nearest-boundary "
+            "face selection is a new physical top-readout law, not accepted "
+            "on the current surface. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1619,7 +1673,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface sign/order/readout dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface sign/order/readout/hard-boundary dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -1644,6 +1698,7 @@ def main() -> int:
             "c3_source_orientation_sign_selector_nogo_fail_count": support_outputs["c3_source_orientation_sign_selector_nogo"].get("fail_count"),
             "c3_trace_free_centered_source_zero_singlet_nogo_fail_count": support_outputs["c3_trace_free_centered_source_zero_singlet_nogo"].get("fail_count"),
             "c3_mininfo_readout_zero_singlet_nogo_fail_count": support_outputs["c3_mininfo_readout_zero_singlet_nogo"].get("fail_count"),
+            "c3_mininfo_hard_boundary_face_selector_support_fail_count": support_outputs["c3_mininfo_hard_boundary_face_selector_support"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),
@@ -1701,6 +1756,9 @@ def main() -> int:
             "docs/YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py",
             "outputs/yt_c3_mininfo_readout_zero_singlet_no_go_2026-05-27.json",
+            "docs/YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_mininfo_hard_boundary_face_selector_support.py",
+            "outputs/yt_c3_mininfo_hard_boundary_face_selector_support_2026-05-27.json",
             "docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
             "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json",

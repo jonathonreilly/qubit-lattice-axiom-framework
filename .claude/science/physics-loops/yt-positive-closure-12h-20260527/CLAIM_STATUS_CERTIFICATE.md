@@ -1,20 +1,20 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go / open minimum-information readout law
-trace_class: negative_route_pruning
-reachability_to_target: prunes current minimum-information readout shortcut
+actual_current_surface_status: exact-support / open hard-boundary readout law
+trace_class: upstream_support
+reachability_to_target: supports hard-boundary zero-singlet route but does not close it
 conditional_surface_status: exact top-row certificate if accepted same-surface
-  generator factorization and zero-singlet top-block support are supplied by
-  an accepted physical top-block/readout law or strict pole rows
+  generator factorization and an accepted physical hard-boundary nearest-face
+  top-readout law are supplied, or if accepted strict pole rows are supplied
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The finite C3 algebra proves that P_nt support would give A/sqrt(12), but finite minimum-information/RN-Fisher tilts over the C3 line responses keep full support and do not set singlet weight to zero. Zero singlet weight appears only as an infinite-boundary selection law or by inserting the target response as a constraint."
+proposal_allowed_reason: "The compactified C3 RN/Fisher source family has both P_nt and P_0 endpoints. Nearest Fisher boundary face selection from the symmetric baseline picks P_nt and would give A/sqrt(12) with generator factorization, but nearest-boundary face selection is not accepted as the physical top readout on the actual current surface. Strict top/W pole-row controls remain absent."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pass_for_no_go_route_pruning_only
-next_exact_action: "derive a new accepted same-surface physical top-block/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict top/W pole-row data with controls"
+review_loop_disposition: pass_for_support_boundary_only
+next_exact_action: "derive/accept a same-surface physical hard-boundary nearest-face top-readout law plus generator factorization, or produce accepted strict top/W pole-row data with controls"
 ```
 
-Retained or proposed-retained wording is not allowed for these blocks.
+Retained or proposed-retained wording is not allowed for this block.

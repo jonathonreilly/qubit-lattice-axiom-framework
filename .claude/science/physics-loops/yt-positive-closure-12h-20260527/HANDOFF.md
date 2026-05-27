@@ -78,6 +78,16 @@ Cycle 9 source-response extremal readout verification:
 - YAML validation passed.
 - `git diff --check` passed.
 
+Source-response extremal readout science commit pushed and recorded in
+PR #1980:
+
+```text
+b038b10aef732ee6dbcd786e332e4561d705929f
+```
+
+PR #1980 body was updated with the source-response extremal readout no-go
+result, artifacts, verification, and next exact action.
+
 New orientation-biased phase-potential result:
 
 ```text

@@ -302,8 +302,16 @@ Cycle 12 minimum-information readout no-go verification:
   sparse availability audit `PASS=74`, and direct sparse certificate
   `PASS=88`.
 
-Cycle 12 commit and PR update are pending until final verification and push
-complete in this invocation. No `POSITIVE_CLOSURE` marker was written.
+Cycle 12 minimum-information readout no-go science commit pushed and recorded
+in PR #1980:
+
+```text
+7c2aff1f2dd7f418788cea337110545e2586ae8f
+```
+
+PR #1980 body was updated with the minimum-information readout no-go result,
+artifacts, verification, and next exact action. No `POSITIVE_CLOSURE` marker
+was written.
 
 New strict W/Z plus C3 top-row splice result:
 

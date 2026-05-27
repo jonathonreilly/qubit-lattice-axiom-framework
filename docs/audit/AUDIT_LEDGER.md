@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 504 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1215 |
+| unaudited | 1214 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 800 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1444 |
+| `unaudited` | 1443 |
 
 | claim_type | count |
 |---|---:|
@@ -937,6 +937,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -3560,6 +3561,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Refining the same-surface thermal quadrature shifts the admitted-family selector root by far more than the apparent 9/62 residual, so the structural 9/62 collapse is not stable.  _(class `C`)_
 - **chain closes:** True — The note's bounded negative claim is exactly reproduced by the runner: it computes the coarse apparent match, then recomputes refined roots at 4000, 8000, and 16000 points and shows material drift away from 9/62.
 - **rationale:** The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded support for exact positive-series/tail enclosures of the same-surface thermal factor at x_f=25 and containment of the corrected continuum evaluator at the three declared alpha samples; excludes current-bank selector closure and excludes provenance of the live-DM constants/channel machinery until directly wired.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-mendel-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the live DM interval, the corrected high-precision continuum evaluator is contained inside extremely narrow exact-series/tail support intervals for alpha_lo, alpha_conv, and alpha_hi.  _(class `A`)_
+- **chain closes:** False — The thermal integral and normalization dependencies close the x_f=25 continuum form, and the runner computes the printed live intervals rather than embedding the interval endpoints. The live-DM alpha interval, alpha_conv construction, observed eta/omega conversion, R_BASE, and channel weights nevertheless enter through helper modules, not direct retained dependencies of the source note.
+- **rationale:** Issue: The exact series/tail algebra is local, but the live-DM support claim depends on helper-sourced canonical plaquette alpha endpoints, ETA_OBS, omega_b_from_eta, OMEGA_DM_OBS, R_BASE, and same-surface channel machinery. Why this blocks: the two direct dependencies cover thermal integral/normalization only, so the restricted one-hop chain does not close the provenance of the live interval/constants used in the headline alpha_lo/alpha_conv/alpha_hi checks. Repair target: add direct retained dependency edges or a bounded authority for those live-DM constants/functions and keep the helper source in the audit packet. Claim boundary until fixed: exact series/tail support is valid only conditional on those stipulated helper constants/functions, and remains non-selector-closure support.
+- **open / conditional deps cited:**
+  - `scripts/dm_full_closure_same_surface_thermal_support_common.py`
+  - `scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py`
+  - `scripts/dm_leptogenesis_exact_common.py`
+  - `scripts/canonical_plaquette_surface.py`
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`

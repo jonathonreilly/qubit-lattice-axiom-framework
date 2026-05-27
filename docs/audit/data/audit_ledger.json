@@ -56593,22 +56593,46 @@
       "verdict_rationale": "The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result."
     },
     "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T02:08:50.783759+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
+        },
+        "dep_claim_type": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "841ece80f8f33d54276bf4e170d62c9fe97f55360ded1777c338b77ac161c13c",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-mendel-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The thermal integral and normalization dependencies close the x_f=25 continuum form, and the runner computes the printed live intervals rather than embedding the interval endpoints. The live-DM alpha interval, alpha_conv construction, observed eta/omega conversion, R_BASE, and channel weights nevertheless enter through helper modules, not direct retained dependencies of the source note.",
       "claim_id": "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Conditional bounded support for exact positive-series/tail enclosures of the same-surface thermal factor at x_f=25 and containment of the corrected continuum evaluator at the three declared alpha samples; excludes current-bank selector closure and excludes provenance of the live-DM constants/channel machinery until directly wired.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T02:08:50.783759+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -56617,25 +56641,30 @@
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.144,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the live DM interval, the corrected high-precision continuum evaluator is contained inside extremely narrow exact-series/tail support intervals for alpha_lo, alpha_conv, and alpha_hi.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "acd80b134a7d230d258d9b2bdc08375e834e2870dc9f02dc57e052a9362a24f3",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge - Add direct retained authority/dependency edges for the canonical plaquette alpha endpoints, ETA_OBS/omega_b conversion, OMEGA_DM_OBS target, R_BASE/channel weights, and same-surface ratio machinery; then re-audit that the helper still computes the intervals without hard-coding the printed R/alpha endpoints.",
+      "open_dependency_paths": [
+        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+        "scripts/dm_leptogenesis_exact_common.py",
+        "scripts/canonical_plaquette_surface.py"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -56742,18 +56771,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 13,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 13
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py",
       "title": "DM Full Closure Same-Surface Thermal Series/Tail Support",
       "transitive_descendants": 49,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: The exact series/tail algebra is local, but the live-DM support claim depends on helper-sourced canonical plaquette alpha endpoints, ETA_OBS, omega_b_from_eta, OMEGA_DM_OBS, R_BASE, and same-surface channel machinery. Why this blocks: the two direct dependencies cover thermal integral/normalization only, so the restricted one-hop chain does not close the provenance of the live interval/constants used in the headline alpha_lo/alpha_conv/alpha_hi checks. Repair target: add direct retained dependency edges or a bounded authority for those live-DM constants/functions and keep the helper source in the audit packet. Claim boundary until fixed: exact series/tail support is valid only conditional on those stipulated helper constants/functions, and remains non-selector-closure support."
     },
     "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19": {
       "audit_date": "2026-05-23T19:46:21.680360+00:00",

@@ -402,3 +402,35 @@ Verification recorded with this review:
   no-go, and C3 circulant dynamics boundary.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 14
+
+Scope:
+
+- C3 cubic phase-potential sign/branch underdetermination no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks finite C3 trace invariants, signed cubic extremal orbits, singlet and degenerate witnesses, dependency outputs, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open cubic phase law; accepted sign, variational convention, orientation branch, dynamics, and strict rows remain live. |
+| Imports / support | DISCLOSED | No external potential sign or literature phase law is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=88 FAIL=0`
+- Full stack runner: `PASS=319 FAIL=0`
+- Adjacent Y_T runners passed: cubic invariant phase-selector `PASS=82`,
+  primitive character phase-angle candidate `PASS=71`, representation
+  phase-selection no-go `PASS=94`, phase-ordering cone support `PASS=70`,
+  and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.

@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced thirteen science blocks, not positive retained-grade
+The campaign has produced fourteen science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -25,6 +25,8 @@ closure:
 12. a no-go for deriving the phase law from finite C3
     representation/character facts alone.
 13. a conditional-support cubic invariant phase-selector boundary.
+14. a no-go for deriving the physical phase law from C3-invariant cubic
+    phase-potential structure alone.
 
 New result:
 
@@ -281,6 +283,34 @@ orientation branch would select the primitive nontrivial character angle and
 give the target row. This is conditional support only: the accepted Y_T cubic
 phase potential and physical orientation branch are not derived.
 
+Fourteenth result:
+
+```text
+C3-invariant cubic phase potential on the unit C3 base circle
+  -> constant + signed cos(3 phi)
+  -/-> accepted physical Y_T phase law
+```
+
+Finite witnesses:
+
+```text
+max cos(3 phi): phi = 0, +2 pi/3, -2 pi/3
+  phi = 0       -> P_0      top -> A/sqrt(3)
+  phi = +2 pi/3 -> P_omega2 top -> A/sqrt(12)
+  phi = -2 pi/3 -> P_omega  top -> A/sqrt(12)
+
+min cos(3 phi): phi = pi/3, pi, -pi/3
+  phi = pi/3   -> P_0/P_omega2 degeneracy
+  phi = pi     -> P_omega/P_omega2 degeneracy
+  phi = -pi/3  -> P_0/P_omega degeneracy
+```
+
+Thus C3-invariant cubic structure alone does not supply the accepted sign,
+variational convention, physical nonzero orientation branch, or isolated
+physical top pole. The remaining positive route still needs a same-surface
+Y_T dynamics/orientation theorem with W/top matrix elements, or strict
+same-source top/W pole-row data.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -322,6 +352,9 @@ Artifacts:
 - `docs/YT_C3_CUBIC_INVARIANT_PHASE_SELECTOR_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py`
 - `outputs/yt_c3_cubic_invariant_phase_selector_support_boundary_2026-05-27.json`
+- `docs/YT_C3_CUBIC_PHASE_POTENTIAL_SIGN_BRANCH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py`
+- `outputs/yt_c3_cubic_phase_potential_sign_branch_underdetermination_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
@@ -331,6 +364,15 @@ Verification so far:
 - `python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py` -> `SUMMARY: PASS=94 FAIL=0`
 - `python3 scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py` -> `SUMMARY: PASS=82 FAIL=0`
 - `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=311 FAIL=0`
+- `python3 scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py` -> `SUMMARY: PASS=88 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=319 FAIL=0`
+- Adjacent runners for the fourteenth block passed: cubic invariant
+  phase-selector `PASS=82`, primitive character phase-angle candidate
+  `PASS=71`, representation phase-selection no-go `PASS=94`, phase-ordering
+  cone support `PASS=70`, and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_cubic_invariant_phase_selector_support_boundary.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `PASS`
+- `ruby -e 'require "yaml"; YAML.load_file(ARGV[0]); puts "YAML OK"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml` -> `YAML OK`
+- `git diff --check` -> `PASS`
 - `python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py` -> `SUMMARY: PASS=86 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py` -> `SUMMARY: PASS=68 FAIL=0`
 - `python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`

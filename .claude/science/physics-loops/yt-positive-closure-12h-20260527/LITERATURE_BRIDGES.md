@@ -32,4 +32,7 @@ strict-route audit is a branch-local availability check over existing JSON
 certificates. The cubic invariant phase-selector support boundary directly
 computes the finite C3 trace invariants `Tr(H^2)` and `Tr(H^3)` on the unit
 connected phase circle; it imports no external cubic potential or literature
-selection rule. No literature bridge is needed for the claim status.
+selection rule. The cubic phase-potential sign/branch no-go directly
+enumerates the signed cubic extremal orbits and does not import a Landau
+potential sign, variational convention, or external orientation law. No
+literature bridge is needed for the claim status.

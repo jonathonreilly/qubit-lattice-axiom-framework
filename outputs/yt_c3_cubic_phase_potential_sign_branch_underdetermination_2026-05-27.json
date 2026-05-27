@@ -1,0 +1,154 @@
+{
+  "actual_current_surface_status": "no-go / open cubic phase law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_cubic_phase_potential_sign_branch_underdetermination_no_go_note_2026-05-27",
+  "conditional_surface_status": null,
+  "dependency_status": {
+    "cubic_support": {
+      "actual_current_surface_status": "conditional-support / open cubic phase law",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "phase_cone": {
+      "actual_current_surface_status": "exact-support / open phase-ordering import",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "primitive_angle": {
+      "actual_current_surface_status": "conditional-support / open phase-angle law",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "representation_nogo": {
+      "actual_current_surface_status": "no-go / open same-surface phase-angle law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "strict_availability": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "extremal_witnesses": {
+    "opposite_sign_extremum_negative_wall": {
+      "class": "degenerate",
+      "cubic_trace": "-sqrt(6)/6",
+      "largest_lines": [
+        "P_0",
+        "P_omega"
+      ],
+      "phi": "-pi/3",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/3",
+        "sqrt(3)*A/6"
+      ],
+      "x0": "1/2",
+      "y0": "-sqrt(3)/2"
+    },
+    "opposite_sign_extremum_positive_wall": {
+      "class": "degenerate",
+      "cubic_trace": "-sqrt(6)/6",
+      "largest_lines": [
+        "P_0",
+        "P_omega2"
+      ],
+      "phi": "pi/3",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/3",
+        "sqrt(3)*A/6"
+      ],
+      "x0": "1/2",
+      "y0": "sqrt(3)/2"
+    },
+    "opposite_sign_extremum_real_negative_axis": {
+      "class": "degenerate",
+      "cubic_trace": "-sqrt(6)/6",
+      "largest_lines": [
+        "P_omega",
+        "P_omega2"
+      ],
+      "phi": "pi",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6",
+        "sqrt(3)*A/6"
+      ],
+      "x0": "-1",
+      "y0": "0"
+    },
+    "positive_sign_max_negative_branch": {
+      "class": "target",
+      "cubic_trace": "sqrt(6)/6",
+      "largest_lines": [
+        "P_omega"
+      ],
+      "phi": "-2*pi/3",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "x0": "-1/2",
+      "y0": "-sqrt(3)/2"
+    },
+    "positive_sign_max_positive_branch": {
+      "class": "target",
+      "cubic_trace": "sqrt(6)/6",
+      "largest_lines": [
+        "P_omega2"
+      ],
+      "phi": "2*pi/3",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/6"
+      ],
+      "x0": "-1/2",
+      "y0": "sqrt(3)/2"
+    },
+    "positive_sign_max_real_axis": {
+      "class": "singlet",
+      "cubic_trace": "sqrt(6)/6",
+      "largest_lines": [
+        "P_0"
+      ],
+      "phi": "0",
+      "row_magnitudes_if_selected": [
+        "sqrt(3)*A/3"
+      ],
+      "x0": "1",
+      "y0": "0"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_cubic_phase_potential_sign_branch_underdetermination.py",
+  "invariant_family": {
+    "cubic_phi": "sqrt(6)*cos(3*phi)/6",
+    "cubic_xy": "sqrt(6)*x*(x**2 - 3*y**2)/6",
+    "derivative": "-sqrt(6)*beta*sin(3*phi)/2",
+    "potential": "sqrt(6)*beta*cos(3*phi)/6 + v0",
+    "quadratic": "x**2 + y**2"
+  },
+  "literature_math_search": {
+    "external_literature_load_bearing": false,
+    "math_used": "finite C3 trace invariants and extremal orbit enumeration"
+  },
+  "next_action": "derive accepted same-surface cubic phase dynamics/orientation, or produce accepted strict top/W pole rows",
+  "no_go_certificate": {
+    "accepted_physical_orientation_branch_derived": false,
+    "bare_retained_allowed": false,
+    "c3_invariant_cubic_functional_class_characterized": true,
+    "cubic_sign_or_optimization_convention_derived": false,
+    "degenerate_extrema_allowed": true,
+    "no_forbidden_imports": true,
+    "physical_phase_law_derived": false,
+    "proposal_allowed": false,
+    "quadratic_invariant_phase_blind": true,
+    "singlet_extremum_allowed": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "pass_count": 88,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "C3-invariant cubic structure characterizes the finite phase functional, but its sign, variational convention, and physical orientation branch are not derived; singlet and degenerate extremal witnesses remain allowed.",
+  "reachability_to_target": "prunes shortcut",
+  "route_pruned": "C3 invariance plus cubic trace invariant alone selects the physical Y_T phase angle",
+  "route_still_live": "accepted same-surface cubic phase dynamics/orientation, or accepted strict top/W pole rows",
+  "trace_class": "negative_route_pruning"
+}

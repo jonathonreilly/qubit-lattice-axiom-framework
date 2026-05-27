@@ -111,6 +111,9 @@ closed exactly:
   Tr(H^3) = sqrt(6) cos(3 phi)/6, so cubic maximization plus an accepted
   nonzero orientation branch would select phi = +/-2 pi/3, but the accepted
   cubic phase law and branch remain open
+  cubic phase-potential sign/branch no-go: C3-invariant cubic structure alone
+  leaves sign, variational convention, singlet extrema, degeneracies, and
+  physical orientation branch load-bearing
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -983,6 +986,22 @@ accepted cubic invariant maximization
 This is conditional support, not closure: the current surface has not derived
 an accepted Y_T cubic phase potential or physical orientation branch.
 
+[`YT_C3_CUBIC_PHASE_POTENTIAL_SIGN_BRANCH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`](YT_C3_CUBIC_PHASE_POTENTIAL_SIGN_BRANCH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md)
+then prunes the next shortcut.  C3-invariant cubic structure alone reduces the
+unit-circle phase functional to a constant plus a signed `cos(3 phi)` term.
+Without an accepted same-surface Y_T sign, variational convention, and
+physical nonzero orientation branch, the finite extrema still include
+singlet and degenerate witnesses:
+
+```text
+max cos(3 phi): phi = 0, +2 pi/3, -2 pi/3
+min cos(3 phi): phi = pi/3, pi, -pi/3
+```
+
+The first orbit includes both the singlet row and the target nontrivial rows;
+the second orbit gives degenerate top sets.  Therefore C3-invariant cubic
+structure is not itself an accepted phase law.
+
 ## Non-Claims
 
 This note does not:
@@ -1054,6 +1073,9 @@ proposal_allowed_reason: |
   conditional route: cubic maximization plus a nonzero orientation branch
   would select phi = +/-2 pi/3, but the accepted same-surface cubic phase
   potential and physical orientation branch remain open.
+  The cubic phase-potential sign/branch no-go prunes cubic invariance alone
+  as the missing phase law: sign, variational convention, singlet extrema,
+  degeneracies, and physical orientation branch remain load-bearing.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

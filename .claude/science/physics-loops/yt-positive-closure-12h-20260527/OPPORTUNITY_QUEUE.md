@@ -14,7 +14,7 @@
 | 10 | Unit-normalized quantitative C3 phase-strength shortcut | low | medium | present | pruned; unit norm plus orientation sign still leaves singlet and nontrivial witnesses |
 | 11 | Primitive nontrivial C3 character phase-angle candidate `phi=+/-2pi/3` | medium | medium | present | conditional support landed; accepted same-surface phase-angle law not derived |
 | 12 | Finite C3 representation/character facts select the physical phase angle | low | medium | present | pruned; C3-native choices include both target and singlet rows |
-| 13 | Accepted cubic invariant phase potential plus orientation branch | medium | high | present | conditional support landed; accepted dynamics law and branch not derived |
+| 13 | Accepted cubic invariant phase potential plus orientation branch | low | high | present | invariance-only shortcut pruned; accepted sign, dynamics law, and branch not derived |
 | 14 | New accepted quantitative orientation-phase angle theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
@@ -78,3 +78,11 @@ remain open. The next exact action is rank 4 or rank 13: obtain accepted
 strict top/W pole-row data with controls, or derive that cubic phase
 dynamics/orientation law with W/top projectors and source-generator matrix
 elements.
+
+Queue refresh after the fourteenth block: positive closure remains open. C3
+cubic invariant phase-potential structure alone is pruned as the missing phase
+law because sign, variational convention, singlet extremum, degenerate extrema,
+and physical nonzero orientation branch remain load-bearing. The next exact
+action is rank 4 or rank 14: obtain accepted strict top/W pole-row data with
+controls, or derive a genuinely accepted same-surface dynamics/orientation
+theorem with W/top projectors and source-generator matrix elements.

@@ -23,6 +23,8 @@ The twelfth route tested whether finite C3 representation/character facts
 alone select that phase law.
 The thirteenth route tested whether the cubic C3 trace invariant supplies a
 phase-selector route.
+The fourteenth route tested whether C3-invariant cubic phase-potential
+structure alone supplies the missing accepted phase law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -40,6 +42,7 @@ phase-selector route.
 | Primitive nontrivial C3 character phase angle `phi=+/-2pi/3` | conditional support | 2 | Landed: selects `P_omega2` or `P_omega` and gives `A/sqrt(12)`, but accepted phase law is open |
 | Finite C3 representation/character phase selection | no-go shortcut test | 3 | Pruned: C3-native unit Hermitian choices include both target and singlet rows |
 | Cubic C3 trace invariant phase selector | conditional support | 2 | Landed: cubic maximization plus accepted nonzero orientation would select primitive nontrivial angles, but accepted cubic dynamics/branch are open |
+| C3 cubic phase-potential sign/branch shortcut | no-go shortcut test | 3 | Pruned: invariance gives a signed `cos(3phi)` term, not the accepted sign, variational convention, or orientation branch |
 
 ## Stuck Fan-Out
 
@@ -61,6 +64,7 @@ phase-selector route.
 | Primitive character angle | Test `phi=+/-2pi/3` on the unit base circle | Succeeds conditionally; it hits the target row, but deriving that phase for the physical Y_T base operator remains open |
 | Representation-only selection | Ask C3 character/projector facts or functions of `C` to choose the phase | Fails; the same C3-native family contains `phi=0` and `phi=pi/6` singlet witnesses |
 | Cubic trace invariant | Extremize `Tr(H(phi)^3)` on the unit C3 base circle | Succeeds conditionally; cubic maxima include `phi=+/-2pi/3`, but also the singlet `phi=0`, so accepted orientation/cubic dynamics remain load-bearing |
+| Cubic potential invariance | Ask C3-invariant cubic phase-potential structure alone to choose the physical phase law | Fails; sign, variational convention, singlet extrema, degeneracies, and orientation branch remain load-bearing |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface cubic phase dynamics/orientation theorem selecting a

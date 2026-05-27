@@ -83,3 +83,8 @@ connected base circle, `Tr(H(phi)^3)=sqrt(6)cos(3phi)/6`; cubic maxima are
 character lines and give `A/sqrt(12)`, but the singlet maximum gives
 `A/sqrt(3)`. The actual surface still needs an accepted Y_T cubic phase
 potential/variational law and a physical nonzero orientation branch.
+- New in the fourteenth block: C3-invariant cubic phase-potential structure
+  alone does not derive the physical phase law. It reduces the unit-circle
+  functional to a constant plus a signed `cos(3phi)` term, but sign,
+  variational convention, singlet extrema, degenerate extrema, and physical
+  orientation branch remain load-bearing.

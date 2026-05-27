@@ -1,13 +1,13 @@
 # Trace Gate
 
 ```yaml
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: yt_positive_closure_pr1980
 target_blocker_text: "derive/certify the coefficient-bearing same-surface top sector matrix element dM_t/dell = A/sqrt(12)"
 source_of_blocker_text: user_goal
-reachability_to_target: supports
-artifact_role: theorem_support_boundary
-next_trace_action: "derive accepted same-surface Y_T cubic phase potential/variational law plus physical nonzero orientation branch; or produce accepted strict top/W pole-row data"
+reachability_to_target: prunes shortcut
+artifact_role: no_go_route_pruning
+next_trace_action: "derive accepted same-surface Y_T cubic phase potential/variational law with sign plus physical nonzero orientation branch; or produce accepted strict top/W pole-row data"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -57,3 +57,7 @@ The thirteenth artifact adds conditional support: on the unit C3 phase circle
 the real-axis maximum gives the singlet row. The next trace action is to
 derive the accepted Y_T cubic phase potential and physical orientation branch,
 or bypass with strict pole-row data.
+The fourteenth artifact prunes cubic invariant structure alone as the missing
+phase law: the finite functional is only a signed `cos(3phi)` term, and
+without an accepted sign, variational convention, and physical orientation
+branch, singlet and degenerate witnesses remain allowed.

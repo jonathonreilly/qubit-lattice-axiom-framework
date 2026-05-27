@@ -7,7 +7,7 @@ target_blocker_text: "derive/certify the coefficient-bearing same-surface top se
 source_of_blocker_text: user_goal
 reachability_to_target: prunes
 artifact_role: no_go
-next_trace_action: "derive accepted orientation-odd same-surface C3 dynamics proving |y_0| > sqrt(3) x_0 on a signed nontrivial branch, or produce accepted strict top/W pole-row data"
+next_trace_action: "derive accepted quantitative same-surface C3 phase-strength dynamics proving |y_0| > sqrt(3) x_0 on a signed nontrivial branch, or produce accepted strict top/W pole-row data"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -29,3 +29,7 @@ cone: reflection forces `y_0 = 0`, which gives `P_0` or a degenerate
 nontrivial block. The next trace action must therefore derive an accepted
 orientation-odd phase law with W/top matrix elements, or supply accepted
 pole-row data.
+The ninth artifact prunes the weaker orientation-sign route: same-sign finite
+C3 base operators can lie inside the nontrivial cone or in the singlet region.
+The next trace action must therefore derive a quantitative phase-strength law,
+or supply accepted pole-row data.

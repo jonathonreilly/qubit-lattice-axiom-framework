@@ -10,7 +10,8 @@
 | 6 | Positive real C3 transfer/Perron top-line selection | low | high | present | pruned; selects `P_0` or leaves nontrivial block degenerate |
 | 7 | C3 phase-ordering cone characterization | medium | medium | present | exact support landed; cone membership not derived |
 | 8 | Reflection-even base dynamics route to phase cone | low | medium | present | pruned; reflection forces `y_0=0` |
-| 9 | New accepted orientation-odd microscopic dynamics theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | only remaining theory route |
+| 9 | Orientation sign / nonzero `B_y` route to phase cone | low | medium | present | pruned; sign is necessary but not sufficient |
+| 10 | New accepted quantitative orientation-phase strength theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | only remaining theory route |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -30,3 +31,10 @@ rank 9: obtain accepted strict top/W pole-row data with the required controls,
 or derive a genuinely new orientation-odd microscopic dynamics theorem proving
 `|y_0| > sqrt(3) x_0` on a signed nontrivial branch and supplying W/top
 projectors plus source-generator matrix elements.
+
+Queue refresh after the ninth block: positive closure remains open.
+Orientation sign/nonzero `B_y` alone is pruned, so the next exact action is
+rank 4 or rank 10: obtain accepted strict top/W pole-row data with the
+required controls, or derive a genuinely new quantitative orientation-phase
+strength theorem proving `|y_0| > sqrt(3) x_0` on a signed nontrivial branch
+and supplying W/top projectors plus source-generator matrix elements.

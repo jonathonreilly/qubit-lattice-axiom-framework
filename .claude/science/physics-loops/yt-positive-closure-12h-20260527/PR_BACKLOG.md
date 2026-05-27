@@ -117,3 +117,19 @@ phase law with `|y_0| > sqrt(3) x_0` on a signed nontrivial branch plus W/top
 matrix elements, or the route must be bypassed by accepted strict pole rows.
 No retained or proposed-retained Y_T closure is claimed.
 ```
+
+Then append the ninth block:
+
+```text
+## 2026-05-27 Update: C3 Orientation-Phase Strength Boundary No-Go
+
+Added no-go route pruning for the shortcut from orientation sign or nonzero
+`B_y` phase to nontrivial C3 cone membership. Same-sign finite witnesses land
+on both sides of the cone: `x_0=0,y_0=1` selects `P_omega2` and gives the
+target nontrivial row, while `x_0=1,y_0=1` has the same positive sign but
+selects `P_0` and gives `A/sqrt(3)`. Therefore a positive C3 dynamics theorem
+must supply a quantitative phase-strength law proving
+`|y_0| > sqrt(3) x_0` on the signed branch, or the route must be bypassed by
+accepted strict pole rows. No retained or proposed-retained Y_T closure is
+claimed.
+```

@@ -17,5 +17,7 @@ the finite C3 character eigenvalue inequalities for `x_0 B_x + y_0 B_y`;
 no external theorem is load-bearing. The orientation-phase necessity no-go
 directly computes the reflection action `R C R = C^2`, the sign flip of
 `B_y`, and the resulting finite C3 eigenvalue degeneracies at `y_0 = 0`. The
+orientation-phase strength boundary directly compares finite same-sign
+witnesses on the two sides of the cone inequality. The
 strict-route audit is a branch-local availability check over existing JSON
 certificates. No literature bridge is needed for the claim status.

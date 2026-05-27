@@ -93,6 +93,9 @@ closed exactly:
   reflection forces y_0 = 0, which selects P_0 or leaves the nontrivial block
   degenerate; a positive C3 dynamics theorem needs an accepted orientation-odd
   phase law or strict pole rows
+  orientation sign or nonzero B_y phase is not enough: same-sign finite C3
+  base operators can still lie in the singlet region, so a quantitative
+  phase-strength law is required
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -113,6 +116,7 @@ still open:
   assigns the physical top row to a nontrivial C3 line
   accepted orientation-odd same-surface C3 phase dynamics proving
   |y_0| > sqrt(3) x_0 on the signed nontrivial branch
+  accepted quantitative phase-strength law, not merely orientation sign
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -849,6 +853,14 @@ degenerate for `x_0 = 0`.  Therefore an isolated nontrivial top line needs an
 accepted orientation-odd phase law, not another reflection-even source or
 base-dynamics argument.
 
+[`YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md`](YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md)
+then prunes the weaker orientation-sign shortcut.  A nonzero `B_y` term or a
+signed branch is necessary but not sufficient: `x_0 = 0, y_0 = 1` selects
+`P_omega2`, while `x_0 = 1, y_0 = 1` has the same orientation sign but still
+selects `P_0` because `1 < sqrt(3)`.  The future positive theorem must supply
+a quantitative phase-strength law proving strict cone membership, not just
+an orientation sign.
+
 ## Non-Claims
 
 This note does not:
@@ -902,13 +914,17 @@ proposal_allowed_reason: |
   The orientation-phase necessity no-go further prunes reflection-even base
   dynamics as a source of that cone: it forces y_0 = 0, which gives either the
   singlet line or a degenerate nontrivial block.
+  The orientation-phase strength boundary further prunes orientation sign or
+  nonzero `B_y` alone: same-sign base operators can still remain in the
+  singlet region unless `|y_0| > sqrt(3) x_0` is derived.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  orientation-odd microscopic dynamics theorem deriving accepted same-surface
-  backend, W/top projectors, and source-generator matrix elements
+  quantitative orientation-phase strength theorem deriving accepted
+  same-surface backend, W/top projectors, and source-generator matrix
+  elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted pole rows or microscopic dynamics
 backup_route: audit accepts primitive top-source premise as physical source law

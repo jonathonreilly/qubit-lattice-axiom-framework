@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced eight science blocks, not positive retained-grade
+The campaign has produced nine science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -17,6 +17,8 @@ closure:
 7. exact support characterizing the residual C3 phase-ordering cone.
 8. a no-go for deriving that cone from reflection-even same-surface C3 base
    dynamics.
+9. a no-go for deriving that cone from orientation sign or nonzero `B_y`
+   phase alone.
 
 New result:
 
@@ -183,6 +185,25 @@ accepted orientation-odd phase law with `|y_0| > sqrt(3) x_0` on a signed
 nontrivial branch, plus same-surface W/top matrix elements; otherwise the
 campaign must use strict same-source pole rows.
 
+Ninth result:
+
+```text
+orientation sign or nonzero B_y phase
+  -/-> nontrivial C3 phase-ordering cone
+```
+
+Same-sign finite witnesses:
+
+```text
+x_0 = 0, y_0 = 1 -> P_omega2 top -> A/sqrt(12)
+x_0 = 1, y_0 = 1 -> P_0 top -> A/sqrt(3)
+```
+
+Thus orientation sign is necessary but not sufficient. The positive C3 route
+now needs a quantitative phase-strength law, not merely an orientation branch:
+`|y_0| > sqrt(3) x_0` on the signed nontrivial branch, plus accepted W/top
+matrix elements and controls.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -209,12 +230,16 @@ Artifacts:
 - `docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py`
 - `outputs/yt_c3_orientation_phase_dynamics_necessity_2026-05-27.json`
+- `docs/YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_orientation_phase_strength_boundary.py`
+- `outputs/yt_c3_orientation_phase_strength_boundary_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
 
 - `python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py` -> `SUMMARY: PASS=86 FAIL=0`
-- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=272 FAIL=0`
+- `python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py` -> `SUMMARY: PASS=68 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=278 FAIL=0`
 - `python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py` -> `SUMMARY: PASS=114 FAIL=0`
 - `python3 scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py` -> `SUMMARY: PASS=64 FAIL=0`
 - `python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`
@@ -258,7 +283,8 @@ Next exact action:
 
 ```text
 derive accepted orientation-odd same-surface C3 microscopic dynamics proving
-|y_0| > sqrt(3) x_0 on a signed nontrivial branch and supplying W/top matrix
+the quantitative phase-strength inequality |y_0| > sqrt(3) x_0 on a signed
+nontrivial branch and supplying W/top matrix
 elements, or obtain accepted strict same-source top/W pole-row data with
 contact, FV/IR, and model-class controls.
 ```

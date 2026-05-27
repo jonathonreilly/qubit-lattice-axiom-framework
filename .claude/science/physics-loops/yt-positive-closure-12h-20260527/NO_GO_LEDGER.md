@@ -53,3 +53,7 @@ derive accepted base-operator cone membership.
   then `x_0 > 0` selects `P_0`, `x_0 < 0` leaves `P_omega` and `P_omega2`
   degenerate, and `x_0 = 0` is fully degenerate. A positive C3 route needs an
   accepted orientation-odd phase law or strict pole rows.
+- New in the ninth block: orientation sign or a nonzero `B_y` phase term does
+  not derive the nontrivial phase-ordering cone. The same positive sign gives
+  `P_omega2` for `x_0=0,y_0=1` but `P_0` for `x_0=1,y_0=1`; the missing object
+  is a quantitative phase-strength law `|y_0| > sqrt(3) x_0`.

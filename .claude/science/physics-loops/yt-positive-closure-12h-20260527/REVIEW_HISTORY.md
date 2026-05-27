@@ -247,3 +247,32 @@ Verification recorded with this review:
   positive Perron no-go, and same-surface matrix factorization.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 9
+
+Scope:
+
+- C3 orientation-phase strength boundary no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks same-sign inside/outside cone witnesses, cone inequality algebra, source rows, no-go audit fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go route pruning for orientation-sign/nonzero-phase shortcut only; quantitative phase-strength dynamics and strict rows remain live. |
+| Imports / support | DISCLOSED | Accepted quantitative phase-strength law, W/top projectors, matrix elements, and strict pole rows remain open. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=68 FAIL=0`
+- Full stack runner: `PASS=278 FAIL=0`
+- Adjacent Y_T runners passed: orientation-phase necessity no-go,
+  phase-ordering cone, and same-surface matrix factorization.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

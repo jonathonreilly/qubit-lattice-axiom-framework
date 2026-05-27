@@ -1,0 +1,133 @@
+{
+  "actual_current_surface_status": "no-go",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_orientation_phase_strength_boundary_no_go_note_2026-05-27",
+  "dependency_status": {
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "orientation_necessity": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "phase_cone": {
+      "actual_current_surface_status": "exact-support / open phase-ordering import",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_orientation_phase_strength_boundary.py",
+  "inequality_algebra": {
+    "P_omega2_minus_P0": "(-3*sqrt(6)*x_0 + 3*sqrt(2)*y_0)/6",
+    "P_omega2_minus_Pomega": "sqrt(2)*y_0",
+    "P_omega_minus_P0": "(-3*sqrt(6)*x_0 - 3*sqrt(2)*y_0)/6",
+    "strength_condition": "|y_0| > sqrt(3) x_0 on the signed branch"
+  },
+  "no_go_audit": {
+    "no_forbidden_imports": true,
+    "nonzero_y0_sufficient": false,
+    "orientation_sign_sufficient": false,
+    "orientation_sign_supplied": true,
+    "phase_strength_law_derived": false,
+    "strict_top_w_response_certificate_present": false
+  },
+  "pass_count": 68,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Orientation sign is necessary but not sufficient. Same-sign finite C3 base operators can lie either inside the nontrivial cone or in the singlet region, depending on the quantitative inequality |y_0| > sqrt(3) x_0.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "orientation sign or nonzero B_y phase term derives nontrivial phase-ordering cone membership",
+  "route_still_live": "derive accepted same-surface phase-strength law proving |y_0| > sqrt(3) x_0 on a signed nontrivial branch, or produce strict same-source top/W pole rows",
+  "sign_vs_strength_witnesses": {
+    "negative_sign_inside_cone": {
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "sqrt(2)/2",
+        "P_omega2": "-sqrt(2)/2"
+      },
+      "largest_lines": [
+        "P_omega"
+      ],
+      "orientation_sign": "negative",
+      "x0": "0",
+      "y0": "-1"
+    },
+    "negative_sign_outside_cone": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "(-sqrt(6) + 3*sqrt(2))/6",
+        "P_omega2": "(-3*sqrt(2) - sqrt(6))/6"
+      },
+      "largest_lines": [
+        "P_0"
+      ],
+      "orientation_sign": "negative",
+      "x0": "1",
+      "y0": "-1"
+    },
+    "negative_wall": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "sqrt(6)/3",
+        "P_omega2": "-2*sqrt(6)/3"
+      },
+      "largest_lines": [
+        "P_0",
+        "P_omega"
+      ],
+      "orientation_sign": "negative",
+      "x0": "1",
+      "y0": "-sqrt(3)"
+    },
+    "positive_sign_inside_cone": {
+      "eigenvalues": {
+        "P_0": "0",
+        "P_omega": "-sqrt(2)/2",
+        "P_omega2": "sqrt(2)/2"
+      },
+      "largest_lines": [
+        "P_omega2"
+      ],
+      "orientation_sign": "positive",
+      "x0": "0",
+      "y0": "1"
+    },
+    "positive_sign_outside_cone": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "(-3*sqrt(2) - sqrt(6))/6",
+        "P_omega2": "(-sqrt(6) + 3*sqrt(2))/6"
+      },
+      "largest_lines": [
+        "P_0"
+      ],
+      "orientation_sign": "positive",
+      "x0": "1",
+      "y0": "1"
+    },
+    "positive_wall": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "-2*sqrt(6)/3",
+        "P_omega2": "sqrt(6)/3"
+      },
+      "largest_lines": [
+        "P_0",
+        "P_omega2"
+      ],
+      "orientation_sign": "positive",
+      "x0": "1",
+      "y0": "sqrt(3)"
+    }
+  },
+  "source_rows": {
+    "P_0": "sqrt(3)*A/3",
+    "P_omega": "-sqrt(3)*A/6",
+    "P_omega2": "-sqrt(3)*A/6"
+  },
+  "trace_class": "negative_route_pruning"
+}

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1198 |
+| unaudited | 1199 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1427 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -988,7 +988,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7157,23 +7156,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
-- **auditor confidence:** high
-
-### `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`
-
-- **Note:** [`KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional post-quotient algebra only: given an admitted SO(2) frame-quotient/reduced two-slot carrier with rho_+^2 = E_+ and rho_perp^2 = E_perp, plus the retained block-total Frobenius identities E_+ = 3a^2 and E_perp = 6|b|^2, the equal-weight reduced-carrier log-volume extremum gives rho_+^2 = rho_perp^2 = E_tot/2 and hence a^2 = 2|b|^2, kappa = 2. The SO(2)-quotient/reduced-carrier bridge on the charged-lepton scalar lane is not derived or retained in this packet.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The source's frontmatter and binding scope assume the SO(2) frame-quotient carrier on the charged-lepton scalar lane, with rho_+^2 = E_+ and rho_perp^2 = E_perp, and then run exact log-volume algebra on that admitted carrier.  _(class `F`)_
-- **chain closes:** False — The algebra after the reduced-carrier admission closes and the runner verifies it at exact symbolic precision with PASS=35 FAIL=0. The full scoped claim still load-bears the physical SO(2)-quotient/reduced-carrier bridge, and the current parent dependency supplies only a formal reduced two-variable log-volume identity, not a retained physical charged-lepton SO(2)-quotient derivation.
-- **rationale:** Issue: the source requires the SO(2) frame-quotient/reduced two-slot carrier on the charged-lepton scalar lane as a load-bearing premise. Why this blocks: that carrier/readout bridge is an admitted physical reduction, not a retained theorem in the restricted packet; the current parent row is retained_bounded only as formal reduced-carrier algebra and explicitly does not derive the physical SO(2)-quotient. Repair target: add a retained bridge theorem deriving the SO(2)-quotient/reduced-carrier map rho_i^2 = E_i on the charged-lepton scalar lane, or rewrite this row as a purely formal algebraic corollary with no physical SO(2)-quotient/carrier claim. Claim boundary until fixed: the post-quotient algebra is exact and runner-certified, but the row remains conditional on the unratified reduced-carrier bridge.
-- **open / conditional deps cited:**
-  - `retained derivation of the SO(2) frame-quotient/reduced-carrier bridge on the charged-lepton scalar lane`
-  - `retained theorem identifying rho_+^2 = E_+ and rho_perp^2 = E_perp as a physical reduction rather than an admitted carrier`
-  - `or source rewrite removing the physical SO(2)-quotient admission and claiming only formal reduced-carrier algebra`
 - **auditor confidence:** high
 
 ### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`

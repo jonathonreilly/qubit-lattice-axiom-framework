@@ -15130,11 +15130,11 @@
     },
     {
       "from": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
-      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+      "to": "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
     },
     {
       "from": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
-      "to": "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "koide_mru_demotion_note_2026-04-20",
@@ -60561,14 +60561,14 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c826292c156c9c37c5d047a5d923df49d3ce4b29b4006687bd5a972bcbccace4",
+      "note_hash": "0aa4ca45998870a8ae94d48a5fcf95c9c8f3fceab701377b6ddf3bec7c65f65d",
       "path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py",
-      "title": "Koide MRU Reduced-Carrier Narrow Theorem (Post-Quotient Algebra Reparametrization Equivalence)"
+      "title": "Koide MRU Reduced-Carrier Formal Corollary"
     },
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19": {
       "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",

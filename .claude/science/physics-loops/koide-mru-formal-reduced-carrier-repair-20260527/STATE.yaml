@@ -1,0 +1,23 @@
+loop_slug: koide-mru-formal-reduced-carrier-repair-20260527
+target_claim_id: koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17
+target_status: bounded-support
+actual_current_surface_status: unaudited
+branch: physics-loop/koide-mru-formal-reduced-carrier-repair-20260527
+base: origin/main
+created_utc: 2026-05-27
+cycle_count: 1
+active_route: formal two-variable rescope
+files_touched:
+  - docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py
+  - logs/runner-cache/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+open_imports:
+  - physical SO(2) quotient from charged-lepton scalar lane remains open
+review_status: local runner/pipeline/vocab pass; independent audit required
+pr_status: pending
+next_exact_action: open review PR
+stop_condition: one coherent formal rescope packaged

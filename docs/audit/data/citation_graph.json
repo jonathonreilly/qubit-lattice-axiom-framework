@@ -16697,6 +16697,10 @@
       "to": "gravity_observable_hierarchy_note"
     },
     {
+      "from": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+    },
+    {
       "from": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",
       "to": "monopole_derived_note"
     },
@@ -63199,6 +63203,20 @@
       "runner_path": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
       "title": "`Z^3` Lattice Green's Function Asymptotic Normalization \u2014 Framework-Applied Certificate"
     },
+    "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27": {
+      "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a38c01c50fe69bd5dd101a59e10e80673174a50d2474bbfefb3fc9cf97270164",
+      "path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+      "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
+      "title": "Cubic-Lattice Green's Function Asymptotic Accepted-Premise Bridge"
+    },
     "lattice_keff_continuum_note": {
       "claim_id": "lattice_keff_continuum_note",
       "claim_type_author_hint": "no_go",
@@ -85941,7 +85959,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 625,
+      "bounded_theorem": 626,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -85950,7 +85968,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1042,
+      "bounded_theorem": 1043,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -85958,10 +85976,10 @@
       "open_gate": 127,
       "positive_theorem": 590
     },
-    "edge_count": 9802,
-    "leaf_count": 804,
-    "node_count": 2565,
+    "edge_count": 9803,
+    "leaf_count": 805,
+    "node_count": 2566,
     "root_count": 857,
-    "runners_with_path": 2141
+    "runners_with_path": 2142
   }
 }

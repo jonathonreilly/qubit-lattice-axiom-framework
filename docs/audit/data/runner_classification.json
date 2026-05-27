@@ -13764,6 +13764,18 @@
       "dominant_class": "A",
       "runner": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py"
     },
+    "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27": {
+      "assert_count": 1,
+      "counts": {
+        "A": 13,
+        "B": 3,
+        "C": 2,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py"
+    },
     "lattice_keff_continuum_note": {
       "assert_count": 0,
       "counts": {
@@ -52495,6 +52507,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 13,
+        "B": 3,
+        "C": 2,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py": {
       "assert_count": 5,
       "claims": [
@@ -56500,14 +56527,14 @@
   "stats": {
     "decoration_candidates": 347,
     "dominant_class_distribution": {
-      "A": 245,
+      "A": 246,
       "B": 293,
       "C": 761,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2036,
-    "runners_with_C": 991,
-    "runners_with_D": 598
+    "runners_classified": 2037,
+    "runners_with_C": 992,
+    "runners_with_D": 599
   }
 }

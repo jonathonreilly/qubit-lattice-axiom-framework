@@ -58,6 +58,30 @@ closure:
     source curve has nearest Fisher boundary face `P_nt`, while the physical
     nearest-boundary readout law remains open.
 
+Cycle 13 hard-boundary support science commit pushed and recorded in PR #1980:
+
+```text
+a217889a6b6d214f7303fb6f66a028e6097a921bb
+```
+
+Cycle 13 verification:
+
+- `python3 scripts/frontier_yt_c3_mininfo_hard_boundary_face_selector_support.py` -> `SUMMARY: PASS=97 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=424 FAIL=0`
+- Adjacent runners passed: mininfo readout no-go `PASS=103`,
+  nontrivial-block support `PASS=85`, zero-singlet membership no-go
+  `PASS=104`, source-orientation sign-selector no-go `PASS=89`,
+  trace-free centered-source no-go `PASS=89`, minimum-information
+  source-action bridge `PASS=37`, primitive record law `PASS=75`,
+  first-principles transfer response `PASS=56`, same-surface matrix
+  factorization `PASS=77`, strict sparse availability audit `PASS=74`, and
+  direct sparse response certificate `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+No `POSITIVE_CLOSURE` marker was written.
+
 New nontrivial-block matrix-element support result:
 
 ```text

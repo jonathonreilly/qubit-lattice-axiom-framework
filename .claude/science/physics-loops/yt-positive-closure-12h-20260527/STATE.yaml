@@ -407,8 +407,11 @@ commands_run:
   - "python3 -m py_compile scripts/frontier_yt_c3_mininfo_hard_boundary_face_selector_support.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py scripts/frontier_yt_minimum_information_source_action_bridge.py scripts/frontier_yt_primitive_record_intervention_law.py scripts/frontier_yt_first_principles_transfer_response_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS"
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
+  - "git commit -m 'Add C3 hard-boundary mininfo support' -> a217889a6b6d214f7303fb6f66a028e6097a921bb"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_support_boundary_only
-pr_status: "Cycle 13 hard-boundary support result ready for PR #1980 update after commit/push."
-latest_science_commit: pending_cycle_13_commit
+pr_status: "PR #1980 body updated with the C3 hard-boundary minimum-information support result, artifacts, verification, and next exact action."
+latest_science_commit: a217889a6b6d214f7303fb6f66a028e6097a921bb
 next_exact_action: "Derive/accept a physical hard-boundary nearest-face top-readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

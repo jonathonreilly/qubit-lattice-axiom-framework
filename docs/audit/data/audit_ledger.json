@@ -21109,15 +21109,21 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms",
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+        "luders_rule_from_composition_consistency_note_2026-05-20",
+        "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+        "minimal_axioms"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
       "load_bearing_step": "A1+A2 with the no-extra-structure identification pins \u03c3 = \u03c1_ref = \u2297_x I/2 for the pre-record system.",
       "load_bearing_step_class": "B",
@@ -21191,7 +21197,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -21199,7 +21205,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/born_rule_framework_bridge_check.py",
       "title": "Born Rule via Gleason\u2013Busch on the Pre-Record Reference State: Bounded Support / Repair Route",
       "transitive_descendants": 1,
       "verdict_rationale": "The source note itself admits that the no-extra-structure/pre-record identification, L\u00fcders/update premise, and persistent-record-as-Kraus mapping are not derived in the restricted packet. The cited tracial-state authority is retained for unique tracial-state characterization only and explicitly says the pre-record identification remains an open admission, so retained status cannot propagate through that identification. Even if the projective-measurement component is treated as resolved elsewhere, that authority is not included as a cited retained dependency here and the pre-record identification remains a blocker."
@@ -23232,13 +23238,13 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 2.085,
       "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM-extension theorem applies to E(H_\u039b) and gives m(E)=Tr(\u03c3E) for a unique density matrix \u03c3.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -23309,7 +23315,7 @@
       },
       "runner_path": null,
       "title": "Busch POVM Extension on the Qubit-Lattice Effect Algebra (Narrow)",
-      "transitive_descendants": 0,
+      "transitive_descendants": 2,
       "verdict_rationale": "The source does not re-prove Busch's theorem, but it honestly scopes the row as applying that named standard POVM-Gleason theorem to the framework substrate. The only framework dependency is the axiom-premise Minimal Axioms note, which correctly yields A_\u039b = M_{2^|\u039b|}(C) and dim H_\u039b \u2265 2 for nonempty finite \u039b. The M3 partition-additivity condition is strong enough to match the effect-additivity needed for the stated theorem by adding complements. No runner was supplied, so the audit is textual rather than computational."
     },
     "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": {
@@ -123117,13 +123123,13 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 2.085,
       "load_bearing_step": "Applying Gleason's theorem to H_\u039b with |\u039b| \u2265 2 gives f_m(|\u03c8\u27e9)=\u27e8\u03c8|\u03c3|\u03c8\u27e9 and hence m(P)=Tr(\u03c3P) for every projection P.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -123196,7 +123202,7 @@
       },
       "runner_path": null,
       "title": "Gleason's Theorem on the Qubit-Lattice Projection Lattice (Narrow)",
-      "transitive_descendants": 0,
+      "transitive_descendants": 2,
       "verdict_rationale": "There is no runner, so the judgment rests on the note text. The load-bearing move is an algebraic/theorem-application closure: once H_\u039b is the finite complex Hilbert space of dimension at least 3 and m is a countably additive projection-lattice probability measure, Gleason gives the density operator and finite-dimensional additivity gives m(P)=Tr(\u03c3P). The only upstream repository authority is explicitly flagged as an accepted axiom premise, and the note does not overclaim the single-qubit dim-2 case or a full Born-rule derivation chain."
     },
     "global_coherence_held_out2_note": {
@@ -145235,11 +145241,11 @@
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.085,
       "load_bearing_step": "Given the KMS per-scale bound, the scalar majorant ODE dy/dl = a y^2 + b y yields small-data boundedness, monotonicity, scale chaining, and fixed-point consequences.",
       "load_bearing_step_class": "A",
@@ -145247,10 +145253,8 @@
       "max_descendant_status_rank": 30,
       "note_hash": "38cf0b410b218f721efad2ff17a889c66ebe2675876593b2e185a949b34c59a4",
       "note_path": "docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: include the KMS arXiv:2404.06099 theorem statement/proof excerpt or a retained upstream authority row establishing the BBF majorant inequality and hypotheses.",
-      "open_dependency_paths": [
-        "docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-18T11:31:37.037522+00:00",
@@ -145342,14 +145346,14 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 14,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 14
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py",
-      "title": "Kroschinsky-Marchetti-Salmhofer Fermionic Brydges Majorant \u2014 External Narrow Theorem",
+      "title": "KMS Fermionic Brydges Majorant - Finite Framework Majorant Repair",
       "transitive_descendants": 2,
       "verdict_rationale": "The runner source performs real Fraction arithmetic and boundary-text checks, but all scientific closure depends on accepting the KMS per-scale BBF majorant inequality as an external input. The source note explicitly admits that this upstream theorem is unsupplied and that no retained authority row for it is present. Therefore the conditional scalar ODE core closes algebraically, but the claimed external theorem chain does not close from the restricted packet alone."
     },
@@ -165446,13 +165450,13 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 5.585,
+      "load_bearing_score": 6.822,
       "load_bearing_step": "The framework's qubit-lattice algebra A_\u039b = \u2297_x M_2(C) is a finite-dimensional matrix algebra M_d(C), so Kraus' and Choi's hypotheses are satisfied and the standard theorems apply.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -165523,7 +165527,7 @@
       },
       "runner_path": null,
       "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)",
-      "transitive_descendants": 2,
+      "transitive_descendants": 4,
       "verdict_rationale": "The load-bearing step is an algebraic verification that the finite-region qubit-lattice algebra is a finite-dimensional matrix algebra, placing it within the hypotheses of the cited standard Kraus and Choi theorems. The only provided framework authority is flagged as an axiom premise, so it does not trigger the non-retained dependency downgrade. The claim is narrowly scoped to finite regions and does not overclaim an infinite-volume representation theorem or a specific record-formation dynamics."
     },
     "kubo_continuum_limit_families_note": {
@@ -181223,13 +181227,13 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 2.085,
       "load_bearing_step": "Given M_{P,E}=P E P, equality of Tr(sigma|_P E) with Tr(P sigma P E)/Tr(sigma P) for every POVM effect E forces sigma|_P=(P sigma P)/Tr(P sigma P).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -181300,7 +181304,7 @@
       },
       "runner_path": null,
       "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
-      "transitive_descendants": 0,
+      "transitive_descendants": 2,
       "verdict_rationale": "The previous blocker, the import of M_{P,E}=P E P, is removed for the ideal unrefined sharp-projective scope by the allowed ratified LSP-projective rule. Within that scope, the remaining derivation is a trace-duality algebraic closure and does not require a numerical runner. The broader source-note wording about arbitrary Kraus operators or general instruments is not part of this audited scope."
     },
     "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": {
@@ -181358,13 +181362,13 @@
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 2.085,
       "load_bearing_step": "The conclusion (1) follows by direct algebra: K_P\u2020 E K_P = P\u2020 E P = P E P, using P\u2020 = P.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -181444,7 +181448,7 @@
       },
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
       "title": "L\u00fcders Sequential-Product Conditional Bridge (Narrow)",
-      "transitive_descendants": 0,
+      "transitive_descendants": 2,
       "verdict_rationale": "All load-bearing non-axiom dependencies in the restricted packet are retained-grade: Kraus-Choi is retained and LSP-projective is retained_bounded; the Minimal Axioms node is an axiom-premise carve-out. The theorem is clean only at bounded scope, namely the canonical projective L\u00fcders/Naimark frame, not uniqueness of all sequential products. Same-packet negative-boundary checks do not defeat that scoped result because the alternative-Kraus routes are explicitly outside the canonical-frame claim."
     },
     "m2_tensor_d4_dimension_256_bounded_note_2026-05-26": {

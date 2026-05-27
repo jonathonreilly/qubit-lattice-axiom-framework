@@ -19,7 +19,9 @@ Source sidecars:
 
 ## Live Dispatch Entries
 
-_No live dispatch entries._
+| # | ready | group | claim_id | current | source note | audit question | ready_blocker |
+|---:|:---:|---|---|---|---|---|---|
+| 1 | Y | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? |  |
 
 ## Resolved By Post-Manifest Re-Audit
 

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Runner for the Kroschinsky-Marchetti-Salmhofer fermionic Brydges majorant external theorem note.
+"""Runner for the finite KMS/BBF framework majorant repair note.
 
-The note records the structural form of the published KMS arXiv:2404.06099 majorant bound
-for the fermionic Polchinski equation. The runner verifies the algebraic content of the
-scalar majorant ODE, its small-data integrability, composition across scales, and the
-source-note boundary disclaimers excluding framework-bridge / status overclaims.
+The note no longer imports the published KMS theorem as the binding proof
+surface.  The runner verifies the finite comparison math actually used here:
+scalar Riccati majorants, mesh composition, small-data thresholds, positivity
+of a BBF-style finite polymer norm, and source-note boundary firewalls.
 """
 
 from __future__ import annotations
@@ -56,6 +56,29 @@ def test_scalar_majorant_ode_closed_form() -> None:
     )
 
 
+def test_general_riccati_step_map() -> None:
+    section("T1b: one-step Riccati map with linear b-factor")
+    # The finite comparison step used in the note is
+    #     Y_{j+1} <= R_j Y_j / (1 - q_j Y_j)
+    # with R_j >= 1, q_j >= 0.  This is the exact mesh analogue of
+    # exp(B) y0 / (1 - y0 int a exp(B)).
+    r = Fraction(3, 2)
+    q = Fraction(1, 5)
+    y0 = Fraction(1, 4)
+    y1 = r * y0 / (1 - q * y0)
+    expected = Fraction(15, 38)
+    check(
+        "one-step comparison map R*y/(1-q*y) evaluates exactly",
+        y1 == expected,
+        f"y1={y1}, expected={expected}",
+    )
+    check(
+        "one-step small-data denominator is positive",
+        1 - q * y0 > 0,
+        f"1 - q*y0 = {1 - q * y0}",
+    )
+
+
 def test_small_data_integrability() -> None:
     section("T2: small-data integrability threshold")
     # Closed-form blow-up scale: l_* = 1 / (a y0).  If l_max < l_*, bounded; else blows up.
@@ -76,6 +99,55 @@ def test_small_data_integrability() -> None:
         "large-data y0 = 5 evolved to l=2 blows up (a y0 l = 5/2 > 1)",
         large_blowup,
         f"1 - a l y0 = {1 - a * l_evolve * y0_large}",
+    )
+
+
+def test_piecewise_riccati_composition() -> None:
+    section("T2b: finite mesh composition with quadratic accumulation")
+    # Iterating y -> R_j*y/(1-q_j*y) gives
+    #   Y_n = E_n Y_0 / (1 - Q_n Y_0),
+    #   E_n = prod_j R_j,
+    #   Q_n = sum_j q_j prod_{i<j} R_i.
+    y0 = Fraction(1, 10)
+    segments = [(Fraction(3, 2), Fraction(1, 5)), (Fraction(4, 3), Fraction(1, 7)), (Fraction(5, 4), Fraction(1, 11))]
+
+    y = y0
+    for r, q in segments:
+        y = r * y / (1 - q * y)
+
+    e = Fraction(1, 1)
+    q_total = Fraction(0, 1)
+    prefix = Fraction(1, 1)
+    for r, q in segments:
+        q_total += q * prefix
+        prefix *= r
+        e *= r
+    closed = e * y0 / (1 - q_total * y0)
+
+    check(
+        "iterated one-step maps equal the closed finite-mesh comparison formula",
+        y == closed,
+        f"iterated={y}, closed={closed}, E={e}, Q={q_total}",
+    )
+    check(
+        "finite-mesh small-data condition Q_n*y0 < 1 holds in the sample",
+        q_total * y0 < 1,
+        f"Q*y0={q_total * y0}",
+    )
+
+
+def test_comparison_monotonicity() -> None:
+    section("T2c: monotonicity below the finite-mesh threshold")
+    r = Fraction(5, 4)
+    q = Fraction(1, 6)
+    low = Fraction(1, 10)
+    high = Fraction(1, 5)
+    map_low = r * low / (1 - q * low)
+    map_high = r * high / (1 - q * high)
+    check(
+        "R*y/(1-q*y) is monotone on 0 <= y < 1/q",
+        low < high and map_low < map_high,
+        f"low->{map_low}, high->{map_high}",
     )
 
 
@@ -189,7 +261,8 @@ def test_note_boundary() -> None:
         "alpha_lm^16 is closed",
     ]
     check("note declares bounded_theorem", "**Claim type:** bounded_theorem" in text)
-    check("note declares external scope", "external" in lower)
+    check("note declares finite framework majorant scope", "finite framework majorant" in lower)
+    check("note says KMS is cited in parallel, not binding", "cited in parallel" in lower and "no external theorem is imported" in lower)
     check(
         "note avoids framework bridge and status overclaims",
         not any(item in lower for item in forbidden),
@@ -201,7 +274,10 @@ def main() -> int:
     print("# KMS fermionic Brydges majorant external theorem runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
     test_scalar_majorant_ode_closed_form()
+    test_general_riccati_step_map()
     test_small_data_integrability()
+    test_piecewise_riccati_composition()
+    test_comparison_monotonicity()
     test_composition_across_scales()
     test_fixed_point_zero_action()
     test_substrate_independence()

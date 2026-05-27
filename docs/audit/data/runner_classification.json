@@ -360,6 +360,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_affine_imaginary_slot_invariance_narrow.py"
     },
+    "alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py"
+    },
     "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27": {
       "assert_count": 0,
       "counts": {
@@ -26633,6 +26645,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/alpha_convention_i2_accepted_premise_runner.py": {
@@ -56660,15 +56687,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 349,
+    "decoration_candidates": 350,
     "dominant_class_distribution": {
-      "A": 251,
+      "A": 252,
       "B": 293,
       "C": 761,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2042,
+    "runners_classified": 2043,
     "runners_with_C": 994,
     "runners_with_D": 601
   }

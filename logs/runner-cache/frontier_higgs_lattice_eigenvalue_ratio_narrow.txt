@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py
-runner_sha256: 7ced0fd61271f54704fea67cae6b4ad9e9d347027940dc22bb4e9012b051215c
+runner_sha256: 91c94aab606c66870ffddf16840242af7fbb3e16bbf5105d225d11d1b98dd02c
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.51
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
@@ -17,7 +17,8 @@ Part 1: note structure and scope discipline
   [PASS (A)] contains: 'N_taste = 16'  ()
   [PASS (A)] contains: 'NO physical Higgs mass identification'  ()
   [PASS (A)] contains: 'GRAPH_FIRST_SU3_INTEGRATION_NOTE.md'  ()
-  [PASS (A)] contains: 'G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md'  ()
+  [PASS (A)] contains: 'G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md'  ()
+  [PASS (A)] contains: 'G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md'  ()
   [PASS (A)] contains: 'g_bare = 1'  ()
   [PASS (A)] contains: 'class (A)'  ()
   [PASS (A)] contains: 'target_claim_type: bounded_theorem'  ()
@@ -54,15 +55,17 @@ Part 5: R_lattice = 4 / (u_0² N_taste) = 1 / (4 u_0²)
 ----------------------------------------------------------------------------------------
 Part 6: declared authorities are graph-visible
 ----------------------------------------------------------------------------------------
-  [PASS (A)] g_bare_canonical_convention_narrow_theorem_note_2026-05-02 exists in audit ledger  (effective_status='decoration_under_graph_first_su3_integration_note')
+  [PASS (A)] g_bare_constraint_vs_convention_theorem_note_2026-05-03 exists in audit ledger  (effective_status='retained_bounded')
+  [PASS (A)] g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 exists in audit ledger  (effective_status='retained_bounded')
   [PASS (A)] graph_first_su3_integration_note exists in audit ledger  (effective_status='retained')
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 seeded by audit pipeline  (run docs/audit/scripts/run_pipeline.sh after editing the note)
-  [FAIL (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_canonical_convention_narrow_theorem_note_2026-05-02 as declared dependency  (deps=['g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note'])
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_constraint_vs_convention_theorem_note_2026-05-03 as declared dependency  (deps=['g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note'])
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 as declared dependency  (deps=['g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note'])
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records graph_first_su3_integration_note as declared dependency  (deps=['g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note'])
-  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 remains effective-unaudited before independent audit  (effective_status='unaudited')
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 is not effective-retained before independent audit  (effective_status='unaudited')
 
 ========================================================================================
-  TOTAL: PASS=29, FAIL=1
+  TOTAL: PASS=33, FAIL=0
 ========================================================================================
 
 ----- stderr -----

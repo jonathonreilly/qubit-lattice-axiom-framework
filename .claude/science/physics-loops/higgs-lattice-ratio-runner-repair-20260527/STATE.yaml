@@ -1,0 +1,23 @@
+loop_slug: higgs-lattice-ratio-runner-repair-20260527
+target_claim_id: higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02
+target_status: bounded-support
+actual_current_surface_status: unaudited
+branch: physics-loop/higgs-lattice-ratio-runner-repair-20260527
+base: origin/main
+created_utc: 2026-05-27
+cycle_count: 1
+active_route: stale runner dependency repair
+files_touched:
+  - scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py
+  - logs/runner-cache/frontier_higgs_lattice_eigenvalue_ratio_narrow.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+open_imports:
+  - admitted mean-field factorization
+  - no physical Higgs mass identification in this row
+review_status: local runner/pipeline pass; independent audit required
+pr_status: pending
+next_exact_action: open review PR
+stop_condition: one coherent runner artifact repair packaged

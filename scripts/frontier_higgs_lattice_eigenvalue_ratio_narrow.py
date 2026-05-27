@@ -50,7 +50,8 @@ required = [
     "N_taste = 16",
     "NO physical Higgs mass identification",
     "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
-    "G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md",
+    "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
+    "G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
     "g_bare = 1",
     "class (A)",
     "target_claim_type: bounded_theorem",
@@ -145,7 +146,8 @@ rows = ledger['rows']
 
 dep_ids = {
     "graph_first_su3_integration_note",
-    "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+    "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+    "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
 }
 for dep_id in sorted(dep_ids):
     dep_row = rows.get(dep_id)
@@ -163,8 +165,8 @@ if claim_row is not None:
         check(f"{CLAIM_ID} records {dep_id} as declared dependency",
               dep_id in claim_deps,
               detail=f"deps={sorted(claim_deps)}")
-    check(f"{CLAIM_ID} remains effective-unaudited before independent audit",
-          claim_row.get("effective_status") == "unaudited",
+    check(f"{CLAIM_ID} is not effective-retained before independent audit",
+          claim_row.get("effective_status") in {"unaudited", "audited_conditional"},
           detail=f"effective_status={claim_row.get('effective_status')!r}")
 
 

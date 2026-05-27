@@ -46,6 +46,7 @@ When all of the following ratify on the live audit ledger:
 3. PR #1969 (AC_φλ Tier-A retirement) — gated on Codex capstone #1959-#1965
 4. PR #1978 (θ Tier-A retirement) — gated on Track A capstone #1974-#1981
 5. The 24+ hierarchy chain PRs (#1991-#2046, including #2026 P2 bounded closure, #2030 F2 confirmation, #2046 A2 partial collapse)
+6. **PR #2049** (internal-external SU(2) merger from Cl(3,0) universal property) — operator-level identification `S_i = σ_i/2 = -i B_i` across 5 mechanisms, 273/0 sympy on all 48 O_h elements
 
 At that point, this note's projections become ACTUAL framework state and the
 synthesis can be migrated back to `docs/publication/ci3_z3/` as the
@@ -71,55 +72,85 @@ document.
 ### 0.1 The honest axiom surface
 
 After the 2026-05-25 → 2026-05-27 hierarchy attack + PR #2046 partial
-collapse of A2 + PR #1983 reclassification of P1, the framework's
-**honest minimum** is:
+collapse of A2 + PR #1983 reclassification of P1 + **PR #2049 operator-level
+merger of internal-external SU(2)**, the framework's **honest minimum**
+(post all ratifications) is:
 
 | Component | Class | Role |
 |---|---|---|
-| **A1** | structural | per-site qubit at discrete sites of a 3D Euclidean substrate — packages qubit + spatial-3D identification + discreteness as one substrate axiom |
+| **A1** | structural | per-site qubit with Cl(3,0) local algebra at each lattice site |
+| **(P1)** | named premise | discrete translations (irreducible — discreteness can't be derived from continuous Cl(3,0) algebra alone) |
 | **P1** (observable principle) | stated_principle (post PR #1983 audit) | scalar observables are additive over independent subsystems; forces `W = log|det(D+J)|` readout |
+| **(S1)** | convention (not substantive) | "standard signature reading" — labeling Cl(3,0)'s `(3,0)` as physical 3D Euclidean space rather than abstract 3-dim ℝ-vector space; implicit in every retained Cl(3) row |
 | **M_Pl** | empirical anchor | sole dimensionful input — `1/a = M_Pl ≈ 1.22 × 10¹⁹ GeV` (= the Z³ lattice spacing in human units) |
 
 Plus the **retained derivation chain** (no admissions):
-- anomaly inflow forces `D_temporal = 1` (PR #2015 + ANOMALY_FORCES_TIME)
-- bounded sign-ε closure forces Lorentzian `Cl(3,1)` signature (PR #2026)
-- the 10 algebraic d=4 witnesses (PRs #2004-#2013) inherit the same chain
+- Internal-external SU(2) merger: `S_i = σ_i/2 = -i B_i` forced by Cl(3,0) universal property (PR #2049, 5 mechanisms, 273/0 sympy on all 48 O_h elements)
+- Cubic Z³ Bravais structure derived from A1 + (P1) + O_h embedding (PR #2046)
+- Anomaly inflow forces `D_temporal = 1` (PR #2015 + ANOMALY_FORCES_TIME)
+- Bounded sign-ε closure forces Lorentzian `Cl(3,1)` signature (PR #2026)
+- The 10 algebraic d=4 witnesses (PRs #2004-#2013) inherit the same chain
 
-That's it. **One structural substrate axiom + one observable-readout principle
-+ one dimensionful translation = whole framework.**
+**The qubit's internal SU(2) and the lattice's spatial Spin(3) are not
+"identified by convention" — they are the same operators on `H_x = C²`,
+forced by the universal property of Cl(3,0).** PR #2049 verifies this at
+operator level across all 48 elements of the cubic point group O_h.
 
-### 0.2 Why "qubit alone forces D=3" is not quite right
+That's it. **One structural substrate axiom + one discreteness premise + one
+observable-readout principle + one signature-labeling convention + one
+dimensionful translation = whole framework.**
 
-A single qubit lives in `C²` with internal symmetry `SU(2)`. Mathematically,
-`SU(2) ≅ Spin(3)` is the double cover of `SO(3)` — the rotation group of 3D
-space — but **isomorphism is not identification**. A qubit's `SU(2)` could
-abstractly be the spin-double-cover of any 3D space, or an internal symmetry
-with no spatial meaning.
+### 0.2 The internal-external SU(2) merger — now operator-level derived (post PR #2049)
 
-The bridge from "qubit internal SU(2)" to "qubit's algebra IS the 3D spatial
-rotation algebra" is the **internal-external symmetry merger**: the qubit's
-local algebra at site `x` IS the algebra of spatial rotations around `x`. This
-identification is implicit in the framework's "Cl(3,0) reading" of A1 —
-calling the qubit's algebra `Cl(3,0)` already presupposes signature `(3,0)` =
-3 positive spatial directions.
+The bridge from "qubit internal `SU(2)`" to "qubit's algebra IS the 3D
+spatial rotation algebra" is the **internal-external symmetry merger**. An
+earlier reading of A1 (pre PR #2049) treated this identification as an
+implicit convention — the qubit's `SU(2)` is *isomorphic to* `Spin(3)`, but
+the *identification* of one with the other was implicit.
 
-Three honest framings of A1:
+**PR #2049 closes this gap at operator level.** Five independent mechanisms
+verify (PASS = 273/0, exact sympy across all 48 O_h elements):
+
+- (M1) Bivectors `B_i = (i/2) σ_i` close into internal `su(2)`
+- (M2) Universal-property `φ_R` acts on bivectors as the SO(3) vector rep
+- (M3) **Infinitesimal coincidence**: `S_i = σ_i/2 = -i B_i` — the internal
+       `su(2)` generators ARE the same operators as the infinitesimal spatial
+       `Spin(3)` generators on `H_x = C²`
+- (M4) All 48 O_h elements lift faithfully onto `H_x`
+- (M5) Pauli equivariance `U(R) σ_i U(R)^* = R_{ij} σ_j` IS simultaneously the
+       `SO(3) → SU(2)` double cover AND the internal `SU(2)` conjugation
+
+The merger is not isomorphism, not analogy, not convention — **the same
+operators on `H_x`**, forced by the universal property of Cl(3,0).
+
+**Honest remaining residual: (S1) "Standard signature reading"** —
+the labeling of Cl(3,0)'s signature `(3,0)` as *physical* 3D Euclidean space
+rather than abstract 3-dim ℝ-vector space with positive-definite form. This
+is a *convention*, not substantive content, and is implicit in every existing
+Cl(3) retained row. It's a strict weakening of PR #2046's earlier (P2)
+generator-axis primitivity premise.
+
+Three honest framings of A1 (post #2049):
 
 | Framing | What's in A1 | What's separately needed |
 |---|---|---|
-| **(a) Spatial-explicit (canonical)** | "qubit at each site of a 3D Euclidean substrate" | discrete translations (small, in P1 below) |
-| (b) Algebra-only | "per-site qubit, internal algebra Cl(3,0)" | discrete translations + internal-external identification |
-| (c) Merger-explicit | "qubit at each site, qubit algebra = local spatial-rotation algebra" | discrete translations |
+| **(a) Spatial-explicit** | "qubit at each site of a 3D Euclidean substrate" | (P1) discrete translations |
+| **(b) Algebra-only + (S1) convention** | "per-site qubit, internal algebra Cl(3,0); (S1) (3,0) labels physical 3D space" | (P1) discrete translations |
+| (c) Merger-explicit | "qubit at each site, qubit algebra = local spatial-rotation algebra" | (P1) discrete translations |
 
-**Framing (a) is the canonical reading of `MINIMAL_AXIOMS_2026-05-20`** ("qubit
-at every site of `Z^3`"). The `Z^3` clause packages the 3D-spatial structure
-into A1 explicitly. The "Cl(3,0) reading" is the equivalent phrasing under
-the merger identification.
+**Framing (b) is now the cleanest post-#2049 reading** — A1 is the algebra-only
+statement (per-site Cl(3,0)), with (S1) explicit as a small naming convention
+and the operator-level merger (PR #2049) supplying the substantive
+identification automatically.
 
-PR #2046 derived: **GIVEN A1 (under any of (a)/(b)/(c)) + discrete translations,
-the lattice is forced to be primitive cubic `Z^3`** (Bravais cell selection
-from O_h symmetry + lattice constants). The "cubic" part collapses out of A2;
-the "discrete" part remains a small named premise.
+Combined with PR #2046:
+- Cubic Bravais structure → derived (O_h faithful in Cl(3) via PR #1974, primitive cP from O_h)
+- Cl(3,0) algebra → A1 axiom
+- Discreteness → (P1) named premise (irreducible — Cl(3,0) is continuous ℝ³ algebra)
+- 3D-spatial labeling → (S1) convention (implicit in standard Cl(3,0) usage)
+
+So GIVEN A1 + (P1) + (S1), the lattice is forced to be primitive cubic `Z³`
+with internal-external SU(2) operator-level merger.
 
 ### 0.3 Dimensionality convention
 

@@ -1,0 +1,24 @@
+loop_slug: sigma-mnu-f3-fanout-dependency-repair-20260527
+branch: physics-loop/sigma-mnu-f3-fanout-dependency-repair-20260527
+base: origin/main
+target_claim_id: sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28
+target_status: no_go
+current_surface_status: no_go
+cycle_count: 1
+active_route: expose_missing_dependency_edges_and_verify_cross_bound_arithmetic
+hard_residual: numerical Sigma m_nu retention still requires Omega_DM tightening, alt admission, or Lane 5 gate closure
+files_touched:
+  - docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md
+  - scripts/frontier_sigma_mnu_f3_stuck_fanout_dependency_repair.py
+  - .claude/science/physics-loops/sigma-mnu-f3-fanout-dependency-repair-20260527/
+open_imports: []
+no_go_routes:
+  - five F3 routes do not supply an independent current-surface numerical Sigma m_nu cross-bound
+trace_gate_classification: direct_blocker_closure
+ledger_after_pipeline: unaudited no_go with dependency packet and no open_dependency_paths
+review_findings: branch-local runner, vocab lint, diff check, and pipeline passed; independent Codex reviewer/audit still required
+pr_status: draft_open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2115
+pr_mergeability: MERGEABLE / UNSTABLE
+next_exact_action: proceed to next ledger-order conditional row
+stop_condition: draft PR created

@@ -20572,13 +20572,13 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
-        "D": 18
+        "D": 1
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py"
+      "dominant_class": "B",
+      "runner": "scripts/frontier_sigma_mnu_f3_stuck_fanout_dependency_repair.py"
     },
     "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09": {
       "assert_count": 0,
@@ -47863,19 +47863,19 @@
       "dominant_class": "D",
       "exists": true
     },
-    "scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py": {
+    "scripts/frontier_sigma_mnu_f3_stuck_fanout_dependency_repair.py": {
       "assert_count": 1,
       "claims": [
         "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
-        "D": 18
+        "D": 1
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_signed_gravity_aps_action_origin_superselection_stability_note_hostile_audit_findings.py": {

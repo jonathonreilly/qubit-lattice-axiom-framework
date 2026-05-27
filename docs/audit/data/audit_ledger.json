@@ -1968,7 +1968,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 11.544,
+      "load_bearing_score": 11.566,
       "load_bearing_step": "The current propagator-Poisson packet does not select c convention-free; c is convention-locked unless a separate retained bridge fixes the scalar-potential and source-normalization conventions.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -2212,7 +2212,7 @@
       },
       "runner_path": "scripts/frontier_action_normalization.py",
       "title": "Action Normalization Convention-Free Selection No-Go",
-      "transitive_descendants": 65,
+      "transitive_descendants": 66,
       "verdict_rationale": "The runner source actually performs finite propagator-Poisson scans rather than an external comparator check: convergence across tested c values, rescaling rows with c*G fixed, and the c,G convergence grid support the bounded statement that this packet does not select c. The PPN gamma and massive-probe sections are correctly demoted to conditional/sanity-check status and no longer claim convention-free light-bending selection. The clean verdict is only for the narrowed negative boundary, not for any universal claim that no future convention, retained f/Phi bridge, Poisson-normalization bridge, or null-ray runner could select a representative c."
     },
     "action_power_3d_gravity_sign_closure_note": {
@@ -8019,7 +8019,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 10.522,
+      "load_bearing_score": 10.544,
       "load_bearing_step": "Apply Baker's theorem to S(lambda)=-sum_i lambda_i log(lambda_i) with algebraic coefficients lambda_i and positive algebraic log arguments lambda_i, then use S(lambda)>0 for every non-product finite probability spectrum.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -8105,7 +8105,7 @@
       },
       "runner_path": "scripts/frontier_area_law_algebraic_spectrum_entropy_no_go.py",
       "title": "Area-Law Algebraic-Spectrum Entropy No-Go Note",
-      "transitive_descendants": 64,
+      "transitive_descendants": 65,
       "verdict_rationale": "The audited claim is a bounded mathematical no-go, not a general physical exclusion of every finite or gapped carrier. Under the explicit premise that the finite Schmidt spectrum has algebraic nonzero entries, the von Neumann entropy is a linear form in logarithms of algebraic numbers with algebraic coefficients. Baker's theorem gives that any nonzero such form is transcendental. A non-product finite probability spectrum has strictly positive entropy, while the product spectrum has entropy 0. Since 1/4 is algebraic and nonzero, exact equality S=1/4 is excluded. The runner summary checks the target rationality, representative rational/algebraic spectra, primitive m/16 binary cases, flat ranks, direct-sum log-linear forms, and the p_star transcendental-selector consequence without reporting failures. Residual risk is only scope control: the clean result covers algebraic finite Schmidt spectra and algebraic finite-matrix cases yielding algebraic reduced spectra; it does not prove that all physically possible finite or gapped edge carriers must have algebraic Schmidt spectra."
     },
     "area_law_coefficient_gap_note": {
@@ -8146,7 +8146,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 9.022,
+      "load_bearing_score": 9.044,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -8236,7 +8236,7 @@
       },
       "runner_path": null,
       "title": "Area-Law Coefficient Gap Audit",
-      "transitive_descendants": 64,
+      "transitive_descendants": 65,
       "verdict_rationale": null
     },
     "area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09": {
@@ -8331,7 +8331,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.022,
+      "load_bearing_score": 11.044,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -8401,7 +8401,7 @@
       },
       "runner_path": "scripts/frontier_area_law_multipocket_selector_no_go.py",
       "title": "Area-Law Multipocket Selector No-Go Note",
-      "transitive_descendants": 64,
+      "transitive_descendants": 65,
       "verdict_rationale": null
     },
     "area_law_native_car_semantics_tightening_note_2026-04-25": {
@@ -8748,7 +8748,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 10.522,
+      "load_bearing_score": 10.544,
       "load_bearing_step": "Within the finite primitive-edge class whose local data are only the 16-state primitive cell, source-free state, rank-four projector, locality/additivity, and standard von Neumann or binary measurement entropy, there is no derivation of an entanglement area coefficient equal to 1/4.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -8843,7 +8843,7 @@
       },
       "runner_path": "scripts/frontier_area_law_primitive_edge_entropy_selector_no_go.py",
       "title": "Area-Law Primitive-Edge Entropy Selector No-Go Note",
-      "transitive_descendants": 64,
+      "transitive_descendants": 65,
       "verdict_rationale": "The no-go is scoped to exact finite-cell entropy constructions and a gapped two-level edge example, not to all possible entropy-carrier theorems. The note explicitly distinguishes the primitive trace Tr((I_16/16)P_A)=1/4 from von Neumann and binary entropy values, and the runner reproduces those finite arithmetic checks with current PASS=26 FAIL=0. No hidden physical identification is used to claim a positive entropy coefficient; the conclusion is negative and leaves positive routes open only if they add a selector or operational entropy theorem."
     },
     "area_law_primitive_parity_gate_carrier_theorem_note_2026-04-25": {
@@ -8879,7 +8879,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 10.629,
+      "load_bearing_score": 10.65,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -8946,7 +8946,7 @@
       },
       "runner_path": "scripts/frontier_area_law_primitive_parity_gate_carrier.py",
       "title": "Area-Law Primitive Parity-Gate Carrier Theorem Note",
-      "transitive_descendants": 69,
+      "transitive_descendants": 70,
       "verdict_rationale": null
     },
     "area_law_quarter_broader_no_go_note_2026-04-25": {
@@ -8981,7 +8981,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.15,
+      "load_bearing_score": 12.17,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -9113,7 +9113,7 @@
       },
       "runner_path": "scripts/frontier_area_law_quarter_broader_no_go.py",
       "title": "Area-Law Quarter Broader No-Go Note",
-      "transitive_descendants": 70,
+      "transitive_descendants": 71,
       "verdict_rationale": null
     },
     "assumption_derivation_ledger": {
@@ -19176,7 +19176,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.19,
+      "load_bearing_score": 10.209,
       "load_bearing_step": "finite OBC free-fermion Hamiltonian -> finite half-space correlation-matrix entropy -> finite transfer-layer SVD rank chi_eff -> finite-L comparison S_ent / (|dA| log chi_eff) -> bounded companion values, not S_BH derivation",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -19428,7 +19428,7 @@
       },
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
       "title": "Bekenstein-Hawking Entropy Bounded Lattice Companion",
-      "transitive_descendants": 72,
+      "transitive_descendants": 73,
       "verdict_rationale": "The bounded claim closes exactly as a finite computation: area-law fits in 2D/3D, monotone finite gravity modulation, and species cancellation are directly checked, while the RT ratios near or far from 1/4 are labeled observations rather than pass/fail derivations. The source note explicitly excludes derivation of S_BH = A/(4 l_P^2), physical coefficient selection, L<=96 cache/probe claims, and all-L OBC Widom asymptotics. Residual boundary: this clean verdict retains only the finite-packet companion evidence and does not promote any physical black-hole entropy bridge."
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
@@ -19470,7 +19470,7 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.209,
+      "load_bearing_score": 14.229,
       "load_bearing_step": "The retained claim is that the exact 2D diamond Widom coefficient is 1/6 and the in-packet finite-L <= 64 runner gives numerical-fit evidence inconsistent with an exact 1/4 ratio under the stated OBC carrier and chi_eff threshold.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -19753,7 +19753,7 @@
       },
       "runner_path": "scripts/frontier_bh_entropy_rt_ratio_widom.py",
       "title": "BH Entropy RT-Ratio Widom No-Go Theorem",
-      "transitive_descendants": 73,
+      "transitive_descendants": 74,
       "verdict_rationale": "The narrowed retained scope avoids the prior overclaim: it does not assert lim_L r(L)=1/6 as a retained theorem and defers the L<=96 probe as cache-not-in-packet. The runner source is substantive rather than a print-only certificate: it constructs the lattice Hamiltonian, diagonalizes it, computes entropy and chi_eff, and fits the reported finite-L data. The No-Go Discipline gate passes for this bounded evidence boundary because the packet names alternate carriers, all-L asymptotics, threshold-rank saturation, physical BH normalization, and the L<=96 probe as outside or open rather than foreclosed. The runner stdout still contains stale overbroad THEOREM wording, but the note explicitly narrows the retained claim so that label is not treated as load-bearing."
     },
     "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10": {
@@ -21782,7 +21782,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.587,
+      "load_bearing_score": 10.609,
       "load_bearing_step": "On the fixed audit parameter envelope, every counted BFS-ball fit satisfies R^2 > 0.95, and the 80-configuration >=3-radii subgrid also satisfies R^2 > 0.95 in 80/80 configurations, with the small side=10, G=10 partition cross-check also above 0.95.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -21847,7 +21847,7 @@
       },
       "runner_path": "scripts/frontier_boundary_law_robustness.py",
       "title": "Boundary-Law Robustness Addendum",
-      "transitive_descendants": 67,
+      "transitive_descendants": 68,
       "verdict_rationale": "The load-bearing result is a genuine finite-run computation in the supplied runner rather than a hard-coded printout, renaming, or external comparator match. The cited companion authority is retained_bounded, and the source note explicitly confines the conclusion to the fixed audit envelope, excluding theorem-level, parameter-independent, and holographic interpretations. A second auditor should keep the claim boundary tight: this is clean only as the reported bounded numerical diagnostic on the exact grid and readout."
     },
     "branch_cleanup_recommendation_2026-05-03": {
@@ -36752,7 +36752,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.248,
+      "load_bearing_score": 12.267,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -36799,7 +36799,7 @@
       },
       "runner_path": "scripts/frontier_ckm_neutron_edm_bound.py",
       "title": "CKM Neutron-EDM Corollary and Bounded Prediction",
-      "transitive_descendants": 75,
+      "transitive_descendants": 76,
       "verdict_rationale": null
     },
     "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25": {
@@ -44921,7 +44921,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 17.585,
+      "load_bearing_score": 17.6,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -45007,7 +45007,7 @@
       },
       "runner_path": "scripts/frontier_confinement_string_tension.py",
       "title": "Confinement and String Tension Theorem",
-      "transitive_descendants": 95,
+      "transitive_descendants": 96,
       "verdict_rationale": null
     },
     "connectivity_family_v2_elliptical_duplicate_note": {
@@ -46167,7 +46167,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 9.65,
+      "load_bearing_score": 9.67,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -46188,7 +46188,7 @@
       },
       "runner_path": "scripts/frontier_cosmological_constant.py",
       "title": "Cosmological Constant \u2014 Spectral-Gap Companion",
-      "transitive_descendants": 70,
+      "transitive_descendants": 71,
       "verdict_rationale": null
     },
     "cosmological_constant_result_2026-04-12_note_2026-05-17": {
@@ -46390,7 +46390,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 18.858,
+      "load_bearing_score": 18.875,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -46533,7 +46533,7 @@
       },
       "runner_path": "scripts/frontier_cosmological_constant_spectral_gap_identity.py",
       "title": "Spectral-Gap Cosmological-Constant Identity Theorem",
-      "transitive_descendants": 81,
+      "transitive_descendants": 82,
       "verdict_rationale": null
     },
     "cosmological_constant_vacuum_energy_audit_note": {
@@ -46565,7 +46565,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 7.255,
+      "load_bearing_score": 7.281,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -46672,7 +46672,7 @@
       },
       "runner_path": "scripts/frontier_cosmological_constant.py",
       "title": "Cosmological Constant Vacuum-Energy Audit",
-      "transitive_descendants": 53,
+      "transitive_descendants": 54,
       "verdict_rationale": null
     },
     "cosmology_from_mass_spectrum_note": {
@@ -46724,7 +46724,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "audited_numerical_match",
-      "load_bearing_score": 10.285,
+      "load_bearing_score": 10.304,
       "load_bearing_step": "The cascade `eta -> Omega_b (BBN) -> Omega_DM = R * Omega_b -> Omega_m -> Omega_Lambda = 1 - Omega_m (flatness)` uses one imported input (`eta`) and one bounded/tuned parameter (`alpha_GUT`) to match the Planck pie-chart entries.",
       "load_bearing_step_class": "G",
       "max_descendant_status": "retained_pending_chain",
@@ -46771,7 +46771,7 @@
       },
       "runner_path": "scripts/frontier_cosmology_from_mass_spectrum.py",
       "title": "Cosmology Cascade from Mass Spectrum (Phase 5 of mass spectrum)",
-      "transitive_descendants": 77,
+      "transitive_descendants": 78,
       "verdict_rationale": "Issue: the note and runner verify a calibrated comparator cascade, not a closed bounded theorem. Why this blocks: eta is imported from observation and R = 5.48 is selected by matching the observed DM/baryon ratio, while several named authorities needed for the cascade are not retained one-hop dependencies. Repair target: add the missing dependency edges and provide retained bridge theorems for eta, the matter/cosmology-flatness assumptions, and the alpha_GUT/Sommerfeld selection, with a runner that computes the bounded band instead of hard-coding R_selfconsistent. Claim boundary until fixed: arithmetic conditional cascade from imported eta, external BBN/flatness, retained-bounded R_base, and calibrated alpha_GUT/Sommerfeld only."
     },
     "cosmology_from_mass_spectrum_note_2026-05-17": {
@@ -46855,7 +46855,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.066,
+      "load_bearing_score": 13.087,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -46902,7 +46902,7 @@
       },
       "runner_path": "scripts/frontier_cosmology_frw_kinematic_reduction.py",
       "title": "FRW Late-Time Kinematic Reduction Theorem",
-      "transitive_descendants": 66,
+      "transitive_descendants": 67,
       "verdict_rationale": null
     },
     "cosmology_open_number_reduction_theorem_note_2026-04-26": {
@@ -46943,7 +46943,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.883,
+      "load_bearing_score": 13.907,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -46964,7 +46964,7 @@
       },
       "runner_path": "scripts/frontier_cosmology_open_number_reduction.py",
       "title": "Cosmology Open-Number Reduction Theorem: The Late-Time Bounded Surface Has Two Structural Degrees Of Freedom At Fixed Radiation Readout",
-      "transitive_descendants": 58,
+      "transitive_descendants": 59,
       "verdict_rationale": null
     },
     "cosmology_scale_identification_and_reduction_note": {
@@ -46997,7 +46997,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.229,
+      "load_bearing_score": 13.248,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -47104,7 +47104,7 @@
       },
       "runner_path": "scripts/frontier_cosmology_scale_identification.py",
       "title": "Cosmology Scale Identification and Reduction",
-      "transitive_descendants": 74,
+      "transitive_descendants": 75,
       "verdict_rationale": null
     },
     "cosmology_single_ratio_inverse_reconstruction_theorem_note_2026-04-25": {
@@ -47139,7 +47139,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.431,
+      "load_bearing_score": 12.454,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -47276,7 +47276,7 @@
       },
       "runner_path": "scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
       "title": "Cosmology Single-Ratio Inverse Reconstruction Theorem",
-      "transitive_descendants": 60,
+      "transitive_descendants": 61,
       "verdict_rationale": null
     },
     "coulomb_stability_upper_bound_support_note_2026-05-20": {
@@ -50165,7 +50165,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 8.19,
+      "load_bearing_score": 8.209,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -50382,7 +50382,7 @@
       },
       "runner_path": "scripts/frontier_dark_energy_eos.py",
       "title": "Decoration: Numerical / Lattice / Evolution-Model Companion to the Retained Dark-Energy EOS Corollary",
-      "transitive_descendants": 72,
+      "transitive_descendants": 73,
       "verdict_rationale": null
     },
     "dark_energy_eos_note_2026-05-17": {
@@ -50474,7 +50474,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.609,
+      "load_bearing_score": 12.629,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -50571,7 +50571,7 @@
       },
       "runner_path": "scripts/frontier_dark_energy_eos_retained_corollary.py",
       "title": "Dark-Energy EOS Retained Structural Corollary",
-      "transitive_descendants": 68,
+      "transitive_descendants": 69,
       "verdict_rationale": null
     },
     "decoherence_action_independence_note": {
@@ -65853,7 +65853,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.954,
+      "load_bearing_score": 6.977,
       "load_bearing_step": "On the sampled multistart starts, the constrained scan recovers one favored low-action PMNS-assisted N_e branch separated from a high-action branch by a finite action gap.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -65995,7 +65995,7 @@
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py",
       "title": "DM Leptogenesis PMNS Multistart Selector Support \u2014 Runner Diagnostic (Binding)",
-      "transitive_descendants": 61,
+      "transitive_descendants": 62,
       "verdict_rationale": "The source note has been narrowed to the exact finite diagnostic supported by the cached runner output. The load-bearing branch enumeration and action-gap computation are produced by actual constrained optimization and clustering through the included helper chain, with no hard-coded branch representatives in the primary runner. The eta/eta_obs=1 statements are observation-normalized closure readouts on the imposed closure surface, not an independent global prediction. The note explicitly excludes branch completeness, branch uniqueness beyond the sampled starts, and certified-global selector content."
     },
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16": {
@@ -67008,7 +67008,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 7.407,
+      "load_bearing_score": 7.431,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -67135,7 +67135,7 @@
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py",
       "title": "DM Leptogenesis PMNS Reduced-Surface Selector Support",
-      "transitive_descendants": 59,
+      "transitive_descendants": 60,
       "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16": {
@@ -67180,7 +67180,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 7.407,
+      "load_bearing_score": 7.431,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -67305,7 +67305,7 @@
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py",
       "title": "DM Leptogenesis PMNS Reduction-Exhaustion Theorem",
-      "transitive_descendants": 59,
+      "transitive_descendants": 60,
       "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16": {
@@ -68985,13 +68985,13 @@
         "dm_leptogenesis_hrad_theorem_note_2026-04-16",
         "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 3.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "meta",
@@ -69012,7 +69012,7 @@
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_transport_status_terminal_synthesis.py",
       "title": "DM Leptogenesis Transport Status Terminal Synthesis Meta Note",
-      "transitive_descendants": 2,
+      "transitive_descendants": 3,
       "verdict_rationale": null
     },
     "dm_leptogenesis_universal_yukawa_no_go_note_2026-04-15": {
@@ -90826,7 +90826,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.858,
+      "load_bearing_score": 6.883,
       "load_bearing_step": "On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -90984,7 +90984,7 @@
       },
       "runner_path": "scripts/frontier_emergent_geometry.py",
       "title": "Emergent Geometry from Matter-Coupled Growth",
-      "transitive_descendants": 57,
+      "transitive_descendants": 58,
       "verdict_rationale": "The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim."
     },
     "emergent_lorentz_invariance_note": {
@@ -92042,7 +92042,7 @@
       "criticality": "medium",
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -125793,7 +125793,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 10.785,
+      "load_bearing_score": 10.804,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -126071,7 +126071,7 @@
       },
       "runner_path": "scripts/frontier_graviton_mass_derived.py",
       "title": "Lichnerowicz TT Spectral Arithmetic on S^3 with Imported Hubble Radius",
-      "transitive_descendants": 77,
+      "transitive_descendants": 78,
       "verdict_rationale": null
     },
     "graviton_mass_derived_note_2026-05-17": {
@@ -126162,7 +126162,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 9.954,
+      "load_bearing_score": 9.977,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -126234,7 +126234,7 @@
       },
       "runner_path": "scripts/frontier_graviton_mass_spectral_gap_identity.py",
       "title": "Graviton-Mass Spectral-Gap Identity Theorem",
-      "transitive_descendants": 61,
+      "transitive_descendants": 62,
       "verdict_rationale": null
     },
     "graviton_spectral_tower_theorem_note_2026-04-24": {
@@ -126272,7 +126272,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.431,
+      "load_bearing_score": 11.454,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -126319,7 +126319,7 @@
       },
       "runner_path": "scripts/frontier_graviton_spectral_tower.py",
       "title": "Graviton TT Compactness Spectral Tower on Retained S\u00b3",
-      "transitive_descendants": 60,
+      "transitive_descendants": 61,
       "verdict_rationale": null
     },
     "gravity_clean_derivation_note": {
@@ -126720,7 +126720,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.333,
+      "load_bearing_score": 11.358,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -126767,7 +126767,7 @@
       },
       "runner_path": "scripts/frontier_gravity_cosmology_tower_lambda_spectral_bridge.py",
       "title": "Gravity-Cosmology Tower Lambda Spectral Bridge Theorem",
-      "transitive_descendants": 56,
+      "transitive_descendants": 57,
       "verdict_rationale": null
     },
     "gravity_full_self_consistency_note": {
@@ -139137,7 +139137,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.109,
+      "load_bearing_score": 11.129,
       "load_bearing_step": "The current runner computes the stated correlation-matrix entropies/ranks and reports boundary-fit R^2 exceeding volume-fit R^2 for both G=0 and G=10 globally and per side, with boundary slopes 0.186053 and 0.211399 giving ratio 0.8801.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -139226,7 +139226,7 @@
       },
       "runner_path": "scripts/frontier_holographic_probe.py",
       "title": "Holographic Boundary-Law Probe (Bounded Companion Note)",
-      "transitive_descendants": 68,
+      "transitive_descendants": 69,
       "verdict_rationale": "The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement."
     },
     "hopping_bilinear_hermiticity_theorem_note_2026-05-02": {
@@ -139630,13 +139630,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 3.322,
+      "load_bearing_score": 4.085,
       "load_bearing_step": "The bulk Majoranas shift Hamming weight by exactly \u00b11, so \u03b3_a P_A lies in P_0 \u2295 P_2 orthogonal to P_A and therefore P_A \u03b3_a P_A = 0.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -139723,7 +139723,7 @@
       },
       "runner_path": "scripts/frontier_hubble_c1_a1_grassmann_no_go.py",
       "title": "Lane 5 `(C1)` Gate \u2014 A1 Grassmann-from-axiom-3 No-Go",
-      "transitive_descendants": 4,
+      "transitive_descendants": 5,
       "verdict_rationale": "The runner source genuinely constructs the 16-dimensional operators, verifies the Clifford relations, computes the P_A compressions, and exhaustively checks the 15 four-bilinear subsets; it is not merely printing expected constants. The load-bearing step is an algebraic operator/projection identity over the explicitly supplied constructions, not a definition, renaming, external comparator, or tuned numerical match. Within the natural-action scope stated in the theorem, the no-go follows from the provided inputs."
     },
     "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29": {
@@ -140049,13 +140049,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 5.459,
+      "load_bearing_score": 6.024,
       "load_bearing_step": "The algebra generated by the rank-two Z_2 parity-gate projector on K=P_A H_cell is only span{I_K,Q_+} with dimension 2 and a large commutant, while the same gate data admit non-CAR response operators; therefore the gate does not determine the full M_4(C)/Cl_4(C) odd Clifford/CAR coframe response.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -140078,7 +140078,7 @@
       },
       "runner_path": "scripts/frontier_hubble_lane5_c1_a4_parity_gate_car_boundary.py",
       "title": "Lane 5 `(C1)` A4 Parity-Gate-To-CAR Boundary Note",
-      "transitive_descendants": 21,
+      "transitive_descendants": 22,
       "verdict_rationale": "The second audit has the scientifically correct tuple. The source note is not a positive theorem row; it is a scoped no-go against the direct A4 shortcut from primitive parity gate plus rank(P_A)=4 to native CAR/coframe response and action-unit pinning. The runner evidence is class A finite algebra: dimensions of generated algebras and commutants, Clifford anticommutator checks, compatible non-CAR responses, gate-sector ambiguity, exact finite half-zone checks, and the unchanged kappa rescaling degeneracy. No-Go Discipline is closed for this narrow packet scope. N1: at least five attack routes against the shortcut are tested or explicitly bounded: gate algebra dimension 2 vs Cl_4 dimension 16; commutant dimension 8 underdetermination; a single Z_2 involution not being a four-axis coframe; same gate data allowing non-CAR two-qubit responses; gate not defining odd edge maps; action-unit rescaling persistence. N2: the packet collapses the residuals to two independent walls, CAR/coframe orientation-statistics lift and dimensional action/metrology unit, without inflating subchecks as independent walls. N3: hidden imports are explicit: CAR/coframe response, primitive two-mode CAR carrier, Target 3 bridge, and metrology/action unit are marked as conditional imports or surviving routes, not smuggled into the no-go. N4: residual matching is exact because the no-go attacks only the direct A4 shortcut, while preserving the conditional parity-gate theorem once CAR/coframe response is separately supplied. N5: rhetoric is narrow to P_A H_cell finite active-block parity-gate-to-CAR non-forcing, not a universal claim that no CAR route exists. N6: partial closure paths remain open in the note: direct A1 module-morphism, orientation/statistics lift, metrology theorem, or minimal carrier/metrology axiom. N7: the strongest steelman is that the residual Z_2 half-zone inside the rank-four block may already encode the missing orientation/statistics lift; the packet answers that this assumes the CAR/coframe carrier and is defeated by underdetermination and non-CAR compatible models for the gate-alone route. N8: cross-cycle echo risk is handled within the supplied packet by carrying forward A2 rescaling degeneracy and listing A1/A4/metrology survivor paths rather than claiming broader C1 closure or retiring unrelated walls. Therefore audited_clean no_go/A is defensible at the narrow A4 shortcut scope.\n\nSecond-stage five-judge panel breakdown: ('second', 'audited_clean', 'no_go', 'A'):4; ('hybrid', 'audited_conditional', 'no_go', 'A'):1. Prior panel breakdown: {\n  \"individual_votes\": [\n    {\n      \"first_auditor_error\": \"The first audit correctly noticed the finite-algebra obstruction but assigned the wrong claim_type and class. The source note blocks the A4 shortcut rather than proving a positive theorem, and the runner checks algebraic matrix/combinatorial identities on stated inputs rather than a class C first-principles compute from the axiom.\",\n      \"judge\": 1,\n      \"judgment_rationale\": \"The second audit is correct on the scientific classification: this is a narrow no_go boundary, and the load-bearing step is an algebraic finite-matrix obstruction, class A. The first audit misclassifies the row as a positive_theorem and class C. However, the packet's No-Go Discipline Gate forbids ratifying clean no_go unless N1-N8 are closed from the packet. N1: the packet contains partial alternative-route coverage through gate-algebra dimension, commutant size, non-CAR response compatibility, odd-map nonselection, and action-unit rescaling, but it does not supply the required explicit five-route N1 table with retained-authority citations. N2: the packet names multiple residual walls, but does not provide a pairwise wall-independence table. N3: hidden-wall phrases are present or implied, including added CAR/coframe response and standard finite matrix algebra, but no formal hidden-wall scan is supplied. N4: the residual appears narrowly matched to the A4 shortcut, but no per-citation residual-matching table is supplied. N5: the rhetoric is mostly finite active-block scoped, but no multi-resolution rhetoric audit is supplied. N6: surviving closure paths are listed, so the note does not overclaim universal impossibility, but no formal partial-closure scan is supplied. N7: the strongest steelman is the listed orientation/statistics lift from the even Z_2 parity gate to odd Clifford generators; the packet notes it as surviving, but does not provide a formal steelman section. N8: no cross-cycle echo repo search or prior-wall retirement table is included. Because N8 and other checklist items are not closed in this packet, audited_clean no_go cannot be ratified here.\",\n      \"notes_for_re_audit_if_any\": \"no_go_discipline_required: supply a restricted-input N1-N8 checklist for this exact narrow A4 shortcut, especially the N8 cross-cycle echo table, then re-run judicial confirmation for audited_clean no_go/A.\",\n      \"second_auditor_error\": \"The second audit correctly identifies no_go and class A, but over-applies audited_clean under the supplied judicial packet because the No-Go Discipline N1-N8 closure required for clean no_go is not present.\",\n      \"tuple\": [\n        \"hybrid\",\n        \"audit_in_progress\",\n        \"no_go\",\n        \"A\"\n      ]\n    },\n    {\n      \"first_auditor_error\": \"The first audit misclassified the object as a positive_theorem and class C. The source note explicitly blocks the standalone A4 shortcut, and the runner checks finite algebraic underdetermination rather than computing a new first-princi"
     },
     "hubble_lane5_c1_a4_parity_gate_no_go_note_2026-04-28": {
@@ -140282,13 +140282,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 5.459,
+      "load_bearing_score": 6.024,
       "load_bearing_step": "Each natural odd Jordan-Wigner Gamma_i flips a primitive bit, so every weight-one basis vector is sent to weight zero or two; therefore P_A Gamma_i P_A=0 for all i, [P_A,Gamma_i]!=0, the compressed span is only span{P_A}, and (P_A Gamma_i P_A)^2=0 rather than P_A.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -140310,7 +140310,7 @@
       },
       "runner_path": "scripts/frontier_hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction.py",
       "title": "Lane 5 `(C1)` A5 Boolean-Coframe Restriction Obstruction Note",
-      "transitive_descendants": 21,
+      "transitive_descendants": 22,
       "verdict_rationale": "Clean only at the narrowed no_go scope. N1 PASS: five attack routes are addressed in the packet: direct weight preservation fails by leakage [4,4,4,4]; direct compressed generators fail because P_A Gamma_i P_A=0; metric compatibility fails because compressed squares differ from P_A by norm 2; rotated/linear natural odd coframes fail by linearity from zero compression and span rank 1; inherited occupation grading fails because parity restricts to -P_A. Intrinsic Cl_4, quotient/bilinear, changed-morphism, and explicit-carrier routes are preserved as out of scope, not hidden closures. N2 PASS: the wall collapses to one wall, P_A is not reducing for the fixed odd coframe, so zero compression and metric failure are consequences rather than independent walls. N3 PASS: natural and standard are explicit premises/finite-algebra context, not hidden claims of universality. N4 PASS: runner residual matches the claim exactly, direct compression descent, and A1/A4 are contextual only. N5 PASS: the negative phrase is tested only at block compression of full-cell odd generators; the note explicitly rejects broader no-active-block wording. N6 PASS: partial closure paths are named and left open; no new-axiom-required overclaim is made. N7 PASS: the strongest steelman is the runner's own intrinsic C^4 Cl_4 construction plus possible quotient/bilinear theorem, but that defeats only a broader claim, not this compression no_go. N8 PASS within the restricted packet: A1/A4 are similar boundary echoes and neither supplies a mechanism that makes the natural odd generators reduce P_A.\n\nFive-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('hybrid', 'audited_clean', 'no_go', 'C'). Majority ratifies the hybrid tuple audited_clean/no_go/C: the second audit has the correct negative claim type and narrowed scope, while the first audit's C-class runner-supported load-bearing classification is the conservative class for this packet."
     },
     "hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28": {
@@ -140449,13 +140449,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 5.959,
+      "load_bearing_score": 6.524,
       "load_bearing_step": "The load-bearing step is finite active-block matrix-unit generation together with permutation, phase-rotation, and common (S,kappa) rescaling witnesses showing that algebraic existence is not selector/metrology selection.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -140477,7 +140477,7 @@
       },
       "runner_path": "scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py",
       "title": "Lane 5 `(C1)` A6 Bilinear Active-Block Support/Boundary Note",
-      "transitive_descendants": 21,
+      "transitive_descendants": 22,
       "verdict_rationale": "Human-authorized second-stage five-judge panel 20260520T023920Z-b8677358 resolved the prior 2-2-1 split by 5/5 majority for hybrid / audited_clean / bounded_theorem / C. Representative rationale: The safe retained source wording is a bounded support/boundary theorem, not a C1-closing positive theorem: the positive M_4(C)/Cl_4(C) capacity clause closes exactly, while the selector/metrology non-selection boundary is explicitly part of the retained audited claim. The class is C rather than A because the retained boundary depends on runner-witnessed non-uniqueness and rescaling checks, not only on the exact finite CAR/matrix algebra. Vote breakdown: ('hybrid', 'audited_clean', 'bounded_theorem', 'C')=5"
     },
     "hubble_lane5_c1_carrier_metrology_axiom_audit_note_2026-04-29": {
@@ -140666,7 +140666,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 1.5,
+      "load_bearing_score": 2.085,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -140768,7 +140768,7 @@
       },
       "runner_path": null,
       "title": "Lane 5 `(C1)` Absolute-Scale Gate \u2014 Residual-Premise Attack Audit",
-      "transitive_descendants": 1,
+      "transitive_descendants": 2,
       "verdict_rationale": null
     },
     "hubble_lane5_c1_narrow_route_nogo_cluster_2026-04-30": {
@@ -141081,7 +141081,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 6.644,
+      "load_bearing_score": 6.7,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -141142,7 +141142,7 @@
       },
       "runner_path": null,
       "title": "Lane 5 `(C3)` Class: No Active Vacuum/Topology Route \u2014 Audit-No-Go",
-      "transitive_descendants": 24,
+      "transitive_descendants": 25,
       "verdict_rationale": null
     },
     "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26": {
@@ -141179,7 +141179,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 8.333,
+      "load_bearing_score": 8.358,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -141239,7 +141239,7 @@
       },
       "runner_path": null,
       "title": "Lane 5 Cosmic-History-Ratio Necessity No-Go: `H_0` and `L` Cannot Be Derived From The Minimal Accepted Axiom Stack Alone",
-      "transitive_descendants": 56,
+      "transitive_descendants": 57,
       "verdict_rationale": null
     },
     "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26": {
@@ -141277,7 +141277,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 7.281,
+      "load_bearing_score": 7.307,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -141338,7 +141338,7 @@
       },
       "runner_path": null,
       "title": "Lane 5 `eta` Retirement Gate Audit: The Single Microscopic Selector That Retires `eta` From The Bounded Cosmology Cascade",
-      "transitive_descendants": 54,
+      "transitive_descendants": 55,
       "verdict_rationale": null
     },
     "hubble_lane5_planck_c1_gate_audit_note_2026-04-26": {
@@ -141374,7 +141374,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 7.781,
+      "load_bearing_score": 7.807,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -141433,7 +141433,7 @@
       },
       "runner_path": null,
       "title": "Lane 5 Planck `(C1)` Gate Audit: The Metric-Compatible Primitive Clifford/CAR Coframe Response Is The Single Residual Premise For Retaining `R_Lambda` Numerically",
-      "transitive_descendants": 54,
+      "transitive_descendants": 55,
       "verdict_rationale": null
     },
     "hubble_lane5_two_gate_dependency_firewall_note_2026-04-27": {
@@ -141464,13 +141464,13 @@
         "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
         "hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 9.085,
+      "load_bearing_score": 9.644,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -141563,7 +141563,7 @@
       },
       "runner_path": "scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py",
       "title": "Hubble Lane 5 Two-Gate Dependency Firewall",
-      "transitive_descendants": 23,
+      "transitive_descendants": 24,
       "verdict_rationale": null
     },
     "hubble_lane5_workstream_status_note_2026-04-27": {
@@ -141741,7 +141741,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.407,
+      "load_bearing_score": 12.431,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -141762,7 +141762,7 @@
       },
       "runner_path": "scripts/frontier_hubble_tension_structural_lock.py",
       "title": "Hubble Tension Structural Lock Theorem: Late-Time `H_0` Is a Single Scalar on the Retained Surface",
-      "transitive_descendants": 59,
+      "transitive_descendants": 60,
       "verdict_rationale": null
     },
     "hw1_second_order_return_shape_theorem_note": {
@@ -182299,7 +182299,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 14.0,
+      "load_bearing_score": 14.022,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -182408,7 +182408,7 @@
       },
       "runner_path": "scripts/frontier_matter_radiation_equality_structural_identity.py",
       "title": "Matter-Radiation Equality Structural Identity Theorem",
-      "transitive_descendants": 63,
+      "transitive_descendants": 64,
       "verdict_rationale": null
     },
     "matter_self_focusing_note": {
@@ -192549,13 +192549,13 @@
       "criticality": "medium",
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 3.5,
       "load_bearing_step": "Combining the flat-FRW matter-budget split, the open-number reduction \u03a9_m,0 = 1 - L - R, and \u03a9_\u03bd,0 h\u00b2 = \u03a3m_\u03bd / C_\u03bd gives \u03a3m_\u03bd = (1 - L - R - \u03a9_b - \u03a9_DM) \u00d7 C_\u03bd \u00d7 h\u00b2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -192576,7 +192576,7 @@
       },
       "runner_path": null,
       "title": "`\u03a3m_\u03bd` Structural Functional Form on Cosmology Bounded Surface \u2014 Support Note (4F-\u03b1)",
-      "transitive_descendants": 2,
+      "transitive_descendants": 3,
       "verdict_rationale": "The load-bearing step is an algebraic consequence of the stated matter-budget split, open-number reduction, and neutrino-relic convention, and the runner reproduces that algebra plus equivalent-form and limiting-case checks. The note is explicit that the result is support-level and that numerical \u03a3m_\u03bd retention remains blocked on admitted/open inputs h, \u03a9_b, and \u03a9_DM. Residual risk is not hidden physics in this row but the fact that the runner named in the note is not registered as the ledger primary runner."
     },
     "neutrino_lane4_4f_sigma_m_nu_theorem_plan_note_2026-04-28": {
@@ -204332,7 +204332,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.454,
+      "load_bearing_score": 12.477,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -204468,7 +204468,7 @@
       },
       "runner_path": "scripts/frontier_omega_lambda_matter_bridge.py",
       "title": "\u03a9_\u039b Matter-Bridge Theorem: `\u03a9_\u039b = (H_inf / H_0)\u00b2` under the Retained Spectral-Gap Identity",
-      "transitive_descendants": 61,
+      "transitive_descendants": 62,
       "verdict_rationale": null
     },
     "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10": {
@@ -211416,7 +211416,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 10.544,
+      "load_bearing_score": 10.566,
       "load_bearing_step": "B4 is a finite signed-permutation subgroup with an identity gap, so its infinitesimal tangent from finite automorphisms alone is zero-dimensional while local metric response requires nonzero Sym^2(R^4) directions.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -211533,7 +211533,7 @@
       },
       "runner_path": "scripts/frontier_planck_finite_response_nogo.py",
       "title": "Planck Finite-Response No-Go Note",
-      "transitive_descendants": 65,
+      "transitive_descendants": 66,
       "verdict_rationale": "Clean no-go. The audited conclusion is only the negative finite-automorphism-only obstruction, not a positive Planck-scale derivation. The load-bearing facts are algebraic: finite signed permutations are isolated from identity, the identity neighborhood contains no nontrivial automorphisms, the finite orbit excludes arbitrarily small generic symmetric perturbations, and finite matrices cannot realize a nonzero canonical commutator trace. No tuned scale, physical readout selection, or hidden gravitational identification is needed for this negative claim."
     },
     "planck_from_structure_path_opening_meta_note_2026-05-10": {
@@ -211571,7 +211571,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 7.066,
+      "load_bearing_score": 7.087,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -211592,7 +211592,7 @@
       },
       "runner_path": "scripts/frontier_planck_from_structure_path_opening.py",
       "title": "Planck-from-Structure Path-Opening Meta Note",
-      "transitive_descendants": 66,
+      "transitive_descendants": 67,
       "verdict_rationale": null
     },
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2": {
@@ -211908,7 +211908,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 8.129,
+      "load_bearing_score": 8.15,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -211929,7 +211929,7 @@
       },
       "runner_path": "scripts/cl3_planck_orientation_principle_2026_05_10_planckP3.py",
       "title": "Planck Orientation Principle from Retained 3+1 Single-Clock Time-Asymmetry",
-      "transitive_descendants": 69,
+      "transitive_descendants": 70,
       "verdict_rationale": null
     },
     "planck_parent_source_hidden_character_no_go_note_2026-04-24": {
@@ -212457,7 +212457,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.022,
+      "load_bearing_score": 11.044,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -212553,7 +212553,7 @@
       },
       "runner_path": "scripts/frontier_planck_conditional_completion_audit.py",
       "title": "Planck-Scale Conditional Completion Note",
-      "transitive_descendants": 64,
+      "transitive_descendants": 65,
       "verdict_rationale": null
     },
     "planck_scale_lane_status_note_2026-04-23": {
@@ -212602,7 +212602,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.0,
+      "load_bearing_score": 13.022,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -212740,7 +212740,7 @@
       },
       "runner_path": null,
       "title": "Planck-Scale Lane Status Note",
-      "transitive_descendants": 63,
+      "transitive_descendants": 64,
       "verdict_rationale": null
     },
     "planck_source_unit_normalization_support_theorem_note_2026-04-25": {
@@ -212946,7 +212946,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 7.066,
+      "load_bearing_score": 7.087,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -212967,7 +212967,7 @@
       },
       "runner_path": "scripts/cl3_planck_substrate_to_carrier_forcing_2026_05_10_planckP1.py",
       "title": "Planck Substrate-to-Carrier Forcing \u2014 Reflection-Positivity Route",
-      "transitive_descendants": 66,
+      "transitive_descendants": 67,
       "verdict_rationale": null
     },
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": {
@@ -227171,7 +227171,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 9.307,
+      "load_bearing_score": 9.333,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -227301,7 +227301,7 @@
       },
       "runner_path": "scripts/frontier_primordial_spectrum.py",
       "title": "Primordial Power Spectrum from Graph Growth",
-      "transitive_descendants": 55,
+      "transitive_descendants": 56,
       "verdict_rationale": null
     },
     "propagator_family_unification_note": {
@@ -249366,7 +249366,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 9.858,
+      "load_bearing_score": 9.883,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -249413,7 +249413,7 @@
       },
       "runner_path": "scripts/frontier_scalar_harmonic_tower.py",
       "title": "Scalar Harmonic Compactness Spectral Tower on Retained S^3",
-      "transitive_descendants": 57,
+      "transitive_descendants": 58,
       "verdict_rationale": null
     },
     "scalar_kg_rerun_note_2026-04-10": {
@@ -254920,17 +254920,17 @@
         "cosmology_open_number_reduction_theorem_note_2026-04-26",
         "hubble_lane5_c1_gate_residual_premise_attack_audit_note_2026-04-28"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "1b9e866d7ba46873ae71c6a09c59bf21e481da8608a76e2577e7c5c74b3d6f58",
       "note_path": "docs/SIGMA_MNU_F3_DM_CROSS_BOUND_AUDIT_NOTE_2026-04-28.md",
       "notes_for_re_audit_if_any": null,
@@ -254983,7 +254983,7 @@
       },
       "runner_path": "scripts/frontier_sigma_mnu_f3_dm_cross_bound_audit.py",
       "title": "Lane 4F (\u03a3m_\u03bd) \u2014 F3 DM Cross-Bound Audit",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": null
     },
     "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28": {
@@ -255018,10 +255018,21 @@
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
+      "deps": [
+        "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28",
+        "neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28",
+        "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
+        "hubble_lane5_two_gate_dependency_firewall_note_2026-04-27",
+        "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28",
+        "hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29",
+        "hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29",
+        "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29",
+        "dm_leptogenesis_transport_status_note_2026-05-10",
+        "eta_188_structural_origin_partial_note_2026-05-03"
+      ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
@@ -255083,13 +255094,13 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 12,
         "B": 2,
         "C": 0,
-        "D": 6,
-        "total_pass": 20
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py",
       "title": "Neutrino Sum-Mass Route-Status Fan-Out Synthesis",
@@ -297554,7 +297565,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.172,
+      "load_bearing_score": 13.187,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -297621,7 +297632,7 @@
       },
       "runner_path": "scripts/frontier_universal_qg_canonical_textbook_continuum_gr_closure.py",
       "title": "Universal QG Canonical Textbook Continuum Gravitational Closure",
-      "transitive_descendants": 101,
+      "transitive_descendants": 102,
       "verdict_rationale": null
     },
     "universal_qg_canonical_textbook_geometric_action_equivalence_note": {
@@ -301705,7 +301716,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 10.907,
+      "load_bearing_score": 10.931,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -301752,7 +301763,7 @@
       },
       "runner_path": "scripts/frontier_vector_gauge_field_kk_tower.py",
       "title": "Vector Gauge-Field Compactness Spectral Tower on Retained S^3",
-      "transitive_descendants": 59,
+      "transitive_descendants": 60,
       "verdict_rationale": null
     },
     "vector_magnetic_extension_note": {

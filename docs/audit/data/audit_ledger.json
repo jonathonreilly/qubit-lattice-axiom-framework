@@ -41927,22 +41927,42 @@
       "verdict_rationale": null
     },
     "connectivity_family_v2_elliptical_duplicate_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T04:43:27.228038+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "sign_portability_invariant_note": "Finite cached diagnostic that scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py exits 0 for the runner-defined G1-G4 gate packet on the two-row second-grown recompute subset, the recorded core family logs, and the fifth-family holdout under the stated tolerances; no universal portability theorem, row-wise lower-bound theorem, or independent order parameter is audited."
+        },
+        "dep_claim_type": {
+          "sign_portability_invariant_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "sign_portability_invariant_note": "retained_bounded"
+        },
+        "deps": [
+          "sign_portability_invariant_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-parfit-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note explicitly retracts independent-family status and frames the result as a support/diagnostic duplicate inside the bounded parent sign-portability invariant. The runner output matches that scope: finite sweep, exit 0, 25/45 passes, exact controls, failures by sign orientation, and safe read that the family reproduces but does not broaden the retained family set.",
       "claim_id": "connectivity_family_v2_elliptical_duplicate_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Finite diagnostic duplicate-boundary claim for scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py on the stated no-restore grown parity-tapered elliptical-shell sweep: exact zero-source and neutral cancellation across rows, plus/minus antisymmetry, 25/45 rows passing the runner gate with mean passing exponent near 1, and failed rows attributed to sign-orientation flips. It does not audit a new independent connectivity family, universal portability theorem, independent order parameter, or broader tier-ratifiable family.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T04:43:27.228038+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -41950,21 +41970,21 @@
         "sign_portability_invariant_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/gate_b_no_restore_farfield.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Finite runner-defined elliptical-shell sweep reproduces sign-law controls on a passing narrow slice while nearby rows fail by sign-orientation flips, supporting only a diagnostic duplicate boundary inside the retained bounded sign-portability invariant.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "839228e6547bfdaed31db8ca8c21a9b2feba4f539ec26483378fb4580988aab8",
       "note_path": "docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the note is promoted to an independent retained connectivity family, claims a new order parameter, relies on sign_portability_invariant_note as universal rather than bounded, or if runner/cache outputs change.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -42066,18 +42086,22 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 6,
         "D": 0,
-        "total_pass": 0
+        "runner_result": "runner_sha256=48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d; exit_code=0; elapsed=483.15s; rows_total=45; rows_passed=25; zero and neutral exact; mean_exponent among passes=0.999826; helper scripts/gate_b_no_restore_farfield.py included",
+        "runner_status": "ok",
+        "scope_hygiene": 4,
+        "total_fail": 0,
+        "total_pass": 10
       },
       "runner_path": "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
       "title": "Connectivity Family V2 Elliptical Duplicate Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean at the honest bounded duplicate-boundary scope. The note no longer asserts candidate retained-grade or independent family status, and the runner output supports the finite diagnostic reading rather than a broader theorem. Residual risk is misuse as a new independent sign-law family; that claim remains outside scope."
     },
     "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-10T23:32:19.027006+00:00",
@@ -241234,11 +241258,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 8.785,
+      "load_bearing_score": 11.785,
       "load_bearing_step": "Block 2 reads the registered per-row outputs of each one-hop family runner and asserts G1 zero-source, G2 neutral, G3 antisymmetry, and G4 unit-slope thresholds, with rejected rows surfaced as basin/seed exclusions.",
       "load_bearing_step_class": "B",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "b9aaf4ca05b29056390c28481a4a18e7724f8537a999b258684d840d69b5b117",
       "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the source is edited to promote the corollary/inheritance wording into a universal portability theorem or independent order parameter.",

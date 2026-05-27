@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 522 |
+| **retained_bounded** | 523 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1179 |
+| unaudited | 1178 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,22 +54,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 820 |
+| `audited_clean` | 821 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1408 |
+| `unaudited` | 1407 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1070 |
+| `bounded_theorem` | 1071 |
 | `decoration` | 48 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
-| `positive_theorem` | 709 |
+| `positive_theorem` | 708 |
 
 | criticality | count |
 |---|---:|
@@ -238,6 +238,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
+| `connectivity_family_v2_elliptical_duplicate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2965,6 +2966,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The smallest stable discriminator is the anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the retained anchor row.  _(class `B`)_
 - **chain closes:** True — The packet now supplies the previously missing original grown-basin complex authority and second-family boundary authority, and all load-bearing comparison rows are supported by retained-grade cited notes. The runner itself only renders hard-coded rows, so closure rests on cross-note verification rather than independent computation.
 - **rationale:** The claim is a bounded finite comparison, not a first-principles derivation. Within that scope, the retained-positive rows and boundary rows are all backed by retained-grade one-hop authorities in the restricted packet, including the original grown companion and second-family boundary window. The runner does not compute the physics and should be treated only as a rendering/cache check, but the cited authorities close the finite discriminator table.
+- **auditor confidence:** high
+
+### `connectivity_family_v2_elliptical_duplicate_note`
+
+- **Note:** [`CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md`](../../docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite diagnostic duplicate-boundary claim for scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py on the stated no-restore grown parity-tapered elliptical-shell sweep: exact zero-source and neutral cancellation across rows, plus/minus antisymmetry, 25/45 rows passing the runner gate with mean passing exponent near 1, and failed rows attributed to sign-orientation flips. It does not audit a new independent connectivity family, universal portability theorem, independent order parameter, or broader tier-ratifiable family.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-parfit-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Finite runner-defined elliptical-shell sweep reproduces sign-law controls on a passing narrow slice while nearby rows fail by sign-orientation flips, supporting only a diagnostic duplicate boundary inside the retained bounded sign-portability invariant.  _(class `C`)_
+- **chain closes:** True — The source note explicitly retracts independent-family status and frames the result as a support/diagnostic duplicate inside the bounded parent sign-portability invariant. The runner output matches that scope: finite sweep, exit 0, 25/45 passes, exact controls, failures by sign orientation, and safe read that the family reproduces but does not broaden the retained family set.
+- **rationale:** Clean at the honest bounded duplicate-boundary scope. The note no longer asserts candidate retained-grade or independent family status, and the runner output supports the finite diagnostic reading rather than a broader theorem. Residual risk is misuse as a new independent sign-law family; that claim remains outside scope.
 - **auditor confidence:** high
 
 ### `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`

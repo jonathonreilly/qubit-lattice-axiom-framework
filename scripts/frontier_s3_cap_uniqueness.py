@@ -1,598 +1,271 @@
 #!/usr/bin/env python3
-"""
-S^3 Cap-Map Uniqueness: The Framework FORCES Cone-Capping
-==========================================================
+"""Finite cone-cap construction certificate for the legacy S3 cap row.
 
-STATUS: BOUNDED (closes the specific cap-map uniqueness gap from
-Codex findings 10 and 20).
-
-PREREQUISITE (already verified in frontier_s3_cap_link_formal.py, 19/19):
-  The cone-capped cubical ball IS a PL 3-manifold. Every vertex link
-  (interior, boundary, cone point) is PL S^2. This script does NOT
-  re-verify that result.
-
-THE GAP THIS SCRIPT CLOSES:
-  Cap-map uniqueness. We proved the cone-capped cubical ball is a PL
-  3-manifold, but not that the framework FORCES this specific closure.
-  A referee asks: "why must the lattice close this way and not some other?"
-
-THE UNIQUENESS ARGUMENT:
-  Given: B = cubical ball in Z^3 with boundary dB = PL S^2.
-  Required: close B to a CLOSED PL 3-manifold M with pi_1(M) = 0.
-
-  Claim: the cone cap (M = B cup cone(dB)) is the UNIQUE such closure
-  up to PL homeomorphism. Proof by exhaustive exclusion:
-
-  (A) Handle attachment: attaching a 1-handle (B^2 x I) to two disjoint
-      disks on dB gives pi_1 = Z by van Kampen. Not simply connected.
-      EXCLUDED.
-
-  (B) Boundary identification: any non-trivial quotient of dB either
-      creates non-manifold singularities (vertex links not S^2) or gives
-      pi_1 != 0 (e.g., antipodal identification gives RP^3 with pi_1=Z/2).
-      EXCLUDED.
-
-  (C) Multi-point cone: using two cone points p,q and partitioning
-      dB = A cup B, coning A over p and B over q. The edge pq has
-      link = boundary curve of A, which is S^1 only if A and B are
-      hemispheres (the suspension). But susp(S^2) = S^3 is PL-homeomorphic
-      to the single-cone-point result by Alexander's theorem. DEGENERATE.
-
-  (D) Gluing ambiguity: MCG(S^2) = Z/2 (orientation-preserving and
-      -reversing). Alexander's theorem (1923): every homeomorphism of S^2
-      extends to B^3. So any two cone caps with different gluing maps give
-      PL-homeomorphic results. The cone cap is UNIQUE up to PL homeomorphism.
-
-  Physical motivation for closure:
-  The Kawamoto-Smit staggered fermion action requires nearest-neighbor
-  hopping at every site. An open ball with boundary has sites that are
-  physically distinguishable by their incomplete cubical neighborhood,
-  violating the lattice translation invariance built into the framework.
-  The ball MUST be closed to a manifold without boundary.
-
-WHAT THIS SCRIPT VERIFIES:
-  E1-E4: Exact computational checks on the cubical ball (growth, boundary,
-         interior links, Kawamoto-Smit inhomogeneity)
-  T1-T7: Theorem-grade cited results forming the uniqueness chain
-  T8:    Global exhaustiveness via Generalized Schoenflies (Alexander 1924
-         / Brown 1960) -- replaces the case-list T2-T4 enumeration with a
-         structural argument that every PL 3-complex closure of B yielding
-         a closed simply-connected PL 3-manifold is a PL 3-ball, hence the
-         cone cap up to PL homeomorphism.  Closes the audit "global
-         exhaustiveness of alternative-closure enumeration" gap.
-
-PStack experiment: frontier-s3-cap-uniqueness
-Self-contained: numpy only.
+This runner deliberately proves only finite combinatorial facts about the
+declared cubical-ball boundary family. It does not assert PL Schoenflies,
+Alexander cone uniqueness, Perelman/Moise, mapping-class, van Kampen, or
+Kawamoto-Smit physical-closure authority.
 """
 
 from __future__ import annotations
-import sys
-import time
-from collections import defaultdict
 
-import numpy as np
+import itertools
+from collections import Counter, defaultdict, deque
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE = REPO_ROOT / "docs/S3_CAP_UNIQUENESS_NOTE.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
 
-def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> bool:
+def check(name: str, condition: bool, detail: str = "", kind: str = "A") -> None:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
-    tag = f" [{kind}]" if kind != "EXACT" else ""
-    msg = f"  [{status}]{tag} {name}"
-    if detail:
-        msg += f"  ({detail})"
-    print(msg)
-    return condition
+    suffix = f" ({detail})" if detail else ""
+    print(f"[{status}] [{kind}] {name}{suffix}")
 
 
-# =============================================================================
-# Infrastructure
-# =============================================================================
+def cubical_ball_cubes(radius: int) -> set[tuple[int, int, int]]:
+    sites: set[tuple[int, int, int]] = set()
+    for x in range(-radius - 1, radius + 2):
+        for y in range(-radius - 1, radius + 2):
+            for z in range(-radius - 1, radius + 2):
+                if x * x + y * y + z * z <= radius * radius:
+                    sites.add((x, y, z))
 
-def cubical_ball(R: int) -> tuple[set, set]:
-    """
-    Build cubical ball: union of all unit cubes whose 8 corners lie
-    within Euclidean distance R of origin.
-    Returns (vertex_set, cube_set_by_min_corner).
-    """
-    euc_sites = set()
-    for x in range(-R - 1, R + 2):
-        for y in range(-R - 1, R + 2):
-            for z in range(-R - 1, R + 2):
-                if x * x + y * y + z * z <= R * R:
-                    euc_sites.add((x, y, z))
-    cubes = set()
-    for s in euc_sites:
-        x, y, z = s
-        corners = [(x + dx, y + dy, z + dz) for dx in (0, 1) for dy in (0, 1) for dz in (0, 1)]
-        if all(c in euc_sites for c in corners):
-            cubes.add(s)
-    cb_sites = set()
-    for cube in cubes:
-        x, y, z = cube
-        for dx in (0, 1):
-            for dy in (0, 1):
-                for dz in (0, 1):
-                    cb_sites.add((x + dx, y + dy, z + dz))
-    return cb_sites, cubes
-
-
-def classify_vertices(sites: set) -> tuple[set, set]:
-    """Cubically interior vs boundary classification."""
-    interior, boundary = set(), set()
-    for v in sites:
-        x, y, z = v
-        is_int = all(
-            (x + dx, y + dy, z + dz) in sites
-            for dx in (-1, 0, 1) for dy in (-1, 0, 1) for dz in (-1, 0, 1)
-            if not (dx == 0 and dy == 0 and dz == 0)
-        )
-        (interior if is_int else boundary).add(v)
-    return interior, boundary
-
-
-def vertex_link_simple(v: tuple, sites: set) -> tuple[int, int, int]:
-    """Return (V, E, F) of vertex link in the cubical complex."""
-    x, y, z = v
-    axis_dirs = [(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
-    dirs = [d for d in axis_dirs if (x+d[0], y+d[1], z+d[2]) in sites]
-
-    edges = []
-    for i, d1 in enumerate(dirs):
-        for j, d2 in enumerate(dirs):
-            if j <= i:
-                continue
-            if d1[0]*d2[0] + d1[1]*d2[1] + d1[2]*d2[2] != 0:
-                continue
-            if (x+d1[0]+d2[0], y+d1[1]+d2[1], z+d1[2]+d2[2]) in sites:
-                edges.append((i, j))
-
-    tris = []
-    for i, d1 in enumerate(dirs):
-        for j, d2 in enumerate(dirs):
-            if j <= i:
-                continue
-            for k, d3 in enumerate(dirs):
-                if k <= j:
-                    continue
-                dots = [d1[l]*d2[l]+d1[l]*d3[l]+d2[l]*d3[l] for l in range(3)]
-                # Actually need pairwise dots = 0
-                dot12 = sum(d1[l]*d2[l] for l in range(3))
-                dot13 = sum(d1[l]*d3[l] for l in range(3))
-                dot23 = sum(d2[l]*d3[l] for l in range(3))
-                if dot12 != 0 or dot13 != 0 or dot23 != 0:
-                    continue
-                c = (x+d1[0]+d2[0]+d3[0], y+d1[1]+d2[1]+d3[1], z+d1[2]+d2[2]+d3[2])
-                if c in sites:
-                    tris.append((i, j, k))
-
-    return len(dirs), len(edges), len(tris)
-
-
-def boundary_surface_chi(cubes: set) -> int:
-    """Euler characteristic of boundary surface of cubical ball."""
-    face_dict = defaultdict(int)
-    for cube in cubes:
-        x, y, z = cube
-        faces = [
-            tuple(sorted(((x,y,z),(x+1,y,z),(x+1,y+1,z),(x,y+1,z)))),
-            tuple(sorted(((x,y,z+1),(x+1,y,z+1),(x+1,y+1,z+1),(x,y+1,z+1)))),
-            tuple(sorted(((x,y,z),(x+1,y,z),(x+1,y,z+1),(x,y,z+1)))),
-            tuple(sorted(((x,y+1,z),(x+1,y+1,z),(x+1,y+1,z+1),(x,y+1,z+1)))),
-            tuple(sorted(((x,y,z),(x,y+1,z),(x,y+1,z+1),(x,y,z+1)))),
-            tuple(sorted(((x+1,y,z),(x+1,y+1,z),(x+1,y+1,z+1),(x+1,y,z+1)))),
+    cubes: set[tuple[int, int, int]] = set()
+    for x, y, z in sites:
+        corners = [
+            (x + dx, y + dy, z + dz)
+            for dx in (0, 1)
+            for dy in (0, 1)
+            for dz in (0, 1)
         ]
-        for f in faces:
-            face_dict[f] += 1
-
-    bd_faces = [f for f, c in face_dict.items() if c == 1]
-    bd_verts, bd_edges = set(), set()
-    for f in bd_faces:
-        verts = list(f)
-        for v in verts:
-            bd_verts.add(v)
-        xs = set(v[0] for v in verts)
-        ys = set(v[1] for v in verts)
-        if len(xs) == 1:
-            sv = sorted(verts, key=lambda v: (v[1], v[2]))
-            cycle = [sv[0], sv[1], sv[3], sv[2]]
-        elif len(ys) == 1:
-            sv = sorted(verts, key=lambda v: (v[0], v[2]))
-            cycle = [sv[0], sv[1], sv[3], sv[2]]
-        else:
-            sv = sorted(verts, key=lambda v: (v[0], v[1]))
-            cycle = [sv[0], sv[1], sv[3], sv[2]]
-        for i in range(4):
-            bd_edges.add(tuple(sorted((cycle[i], cycle[(i + 1) % 4]))))
-
-    return len(bd_verts) - len(bd_edges) + len(bd_faces)
+        if all(corner in sites for corner in corners):
+            cubes.add((x, y, z))
+    return cubes
 
 
-def coordination_number(v: tuple, sites: set) -> int:
-    x, y, z = v
-    return sum(1 for d in [(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
-               if (x+d[0], y+d[1], z+d[2]) in sites)
+def cube_faces(cube: tuple[int, int, int]) -> list[tuple[tuple[int, int, int], ...]]:
+    x, y, z = cube
+    return [
+        tuple(sorted(((x, y, z), (x + 1, y, z), (x + 1, y + 1, z), (x, y + 1, z)))),
+        tuple(sorted(((x, y, z + 1), (x + 1, y, z + 1), (x + 1, y + 1, z + 1), (x, y + 1, z + 1)))),
+        tuple(sorted(((x, y, z), (x + 1, y, z), (x + 1, y, z + 1), (x, y, z + 1)))),
+        tuple(sorted(((x, y + 1, z), (x + 1, y + 1, z), (x + 1, y + 1, z + 1), (x, y + 1, z + 1)))),
+        tuple(sorted(((x, y, z), (x, y + 1, z), (x, y + 1, z + 1), (x, y, z + 1)))),
+        tuple(sorted(((x + 1, y, z), (x + 1, y + 1, z), (x + 1, y + 1, z + 1), (x + 1, y, z + 1)))),
+    ]
 
 
-# =============================================================================
-# E1: Growth axiom produces connected convex cubical ball
-# =============================================================================
+def boundary_quads(cubes: set[tuple[int, int, int]]) -> list[tuple[tuple[int, int, int], ...]]:
+    counts: Counter[tuple[tuple[int, int, int], ...]] = Counter()
+    for cube in cubes:
+        counts.update(cube_faces(cube))
+    return [face for face, count in counts.items() if count == 1]
 
-def test_growth_convexity():
-    print("\n=== E1: Growth axiom => connected convex cubical ball ===")
-    for R in [2, 3, 4]:
-        sites, cubes = cubical_ball(R)
 
-        # BFS connectivity
-        start = next(iter(sites))
-        visited = {start}
-        queue = [start]
-        while queue:
-            v = queue.pop(0)
-            x, y, z = v
-            for d in [(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]:
-                nb = (x+d[0], y+d[1], z+d[2])
-                if nb in sites and nb not in visited:
-                    visited.add(nb)
+def quad_cycle(quad: tuple[tuple[int, int, int], ...]) -> list[tuple[int, int, int]]:
+    """Return the four vertices in cyclic order around an axis-aligned square."""
+    verts = list(quad)
+    varying = [
+        axis
+        for axis in range(3)
+        if max(v[axis] for v in verts) != min(v[axis] for v in verts)
+    ]
+    if len(varying) != 2:
+        raise ValueError(f"not an axis-aligned square: {quad!r}")
+    a, b = varying
+    min_a = min(v[a] for v in verts)
+    max_a = max(v[a] for v in verts)
+    min_b = min(v[b] for v in verts)
+    max_b = max(v[b] for v in verts)
+
+    def pick(aa: int, bb: int) -> tuple[int, int, int]:
+        matches = [v for v in verts if v[a] == aa and v[b] == bb]
+        if len(matches) != 1:
+            raise ValueError(f"bad square corner lookup: {quad!r}")
+        return matches[0]
+
+    return [pick(min_a, min_b), pick(max_a, min_b), pick(max_a, max_b), pick(min_a, max_b)]
+
+
+def triangulate_quad(quad: tuple[tuple[int, int, int], ...]) -> list[tuple[tuple[int, int, int], ...]]:
+    verts = quad_cycle(quad)
+    return [tuple(sorted((verts[0], verts[1], verts[2]))), tuple(sorted((verts[0], verts[2], verts[3])))]
+
+
+def edges_of(simplex: tuple[int, ...]) -> set[tuple[int, int]]:
+    return {tuple(sorted(edge)) for edge in itertools.combinations(simplex, 2)}
+
+
+def faces_of_tet(tet: tuple[int, int, int, int]) -> set[tuple[int, int, int]]:
+    return {tuple(sorted(face)) for face in itertools.combinations(tet, 3)}
+
+
+def connected_tri_surface(triangles: set[tuple[int, int, int]]) -> bool:
+    by_edge: defaultdict[tuple[int, int], list[tuple[int, int, int]]] = defaultdict(list)
+    for tri in triangles:
+        for edge in edges_of(tri):
+            by_edge[edge].append(tri)
+    if not triangles:
+        return False
+    start = next(iter(triangles))
+    seen = {start}
+    queue: deque[tuple[int, int, int]] = deque([start])
+    while queue:
+        tri = queue.popleft()
+        for edge in edges_of(tri):
+            for nb in by_edge[edge]:
+                if nb not in seen:
+                    seen.add(nb)
                     queue.append(nb)
-        connected = len(visited) == len(sites)
+    return seen == triangles
 
-        # Convexity check
-        rng = np.random.RandomState(42)
-        sites_list = list(sites)
-        n = len(sites_list)
-        convex = True
-        for _ in range(min(500, n * (n - 1) // 2)):
-            i, j = rng.choice(n, 2, replace=False)
-            a, b = np.array(sites_list[i]), np.array(sites_list[j])
-            steps = int(max(abs(b[k] - a[k]) for k in range(3)))
-            if steps == 0:
+
+def vertex_links_are_cycles(triangles: set[tuple[int, int, int]]) -> bool:
+    """Check every vertex link in a triangulated 2-complex is a connected cycle."""
+    vertices = {v for tri in triangles for v in tri}
+    for vertex in vertices:
+        link_edges: set[tuple[int, int]] = set()
+        link_vertices: set[int] = set()
+        for tri in triangles:
+            if vertex not in tri:
                 continue
-            for t in range(steps + 1):
-                p = a + (b - a) * t / steps
-                pi = tuple(int(round(p[k])) for k in range(3))
-                if pi not in sites:
-                    convex = False
-                    break
-            if not convex:
-                break
-
-        check(f"R={R}: connected convex cubical ball",
-              connected and convex, f"|V|={len(sites)}, |cubes|={len(cubes)}")
-
-
-# =============================================================================
-# E2: Boundary is PL S^2
-# =============================================================================
-
-def test_boundary_sphere():
-    print("\n=== E2: Boundary of cubical ball = PL S^2 (chi=2) ===")
-    for R in [2, 3, 4, 5]:
-        _, cubes = cubical_ball(R)
-        chi = boundary_surface_chi(cubes)
-        check(f"R={R}: boundary chi = 2", chi == 2, f"chi={chi}")
-
-
-# =============================================================================
-# E3: Interior vertices have full octahedral link (V=6, E=12, F=8)
-# =============================================================================
-
-def test_interior_links():
-    print("\n=== E3: Interior vertex links = octahedron (V=6, E=12, F=8, chi=2) ===")
-    for R in [2, 3, 4]:
-        sites, _ = cubical_ball(R)
-        interior, _ = classify_vertices(sites)
-        all_ok = True
-        for v in interior:
-            V, E, F = vertex_link_simple(v, sites)
-            if not (V == 6 and E == 12 and F == 8):
-                all_ok = False
-                break
-        check(f"R={R}: all interior links = octahedron",
-              all_ok, f"|interior|={len(interior)}")
+            opposite = tuple(sorted(v for v in tri if v != vertex))
+            if len(opposite) != 2:
+                return False
+            link_edges.add(opposite)
+            link_vertices.update(opposite)
+        if not link_vertices:
+            return False
+        degrees: Counter[int] = Counter()
+        neighbors: defaultdict[int, set[int]] = defaultdict(set)
+        for a, b in link_edges:
+            degrees[a] += 1
+            degrees[b] += 1
+            neighbors[a].add(b)
+            neighbors[b].add(a)
+        if set(degrees) != link_vertices:
+            return False
+        if any(degree != 2 for degree in degrees.values()):
+            return False
+        start = next(iter(link_vertices))
+        seen = {start}
+        queue: deque[int] = deque([start])
+        while queue:
+            current = queue.popleft()
+            for nb in neighbors[current]:
+                if nb not in seen:
+                    seen.add(nb)
+                    queue.append(nb)
+        if seen != link_vertices:
+            return False
+    return True
 
 
-# =============================================================================
-# E4: Kawamoto-Smit inhomogeneity of open ball
-# =============================================================================
+def finite_certificate(radius: int) -> None:
+    print(f"\n=== R={radius} finite cone-cap certificate ===")
+    cubes = cubical_ball_cubes(radius)
+    quads = boundary_quads(cubes)
 
-def test_kawamoto_smit():
-    """
-    The framework Hamiltonian requires nearest-neighbor hopping uniformly.
-    An open ball has cubically-boundary vertices (incomplete cubical neighborhoods)
-    that are physically distinguishable from interior vertices. The ball
-    MUST be closed to a manifold without boundary.
-    """
-    print("\n=== E4: Open ball is physically inhomogeneous (closure required) ===")
-    for R in [2, 3, 4]:
-        sites, _ = cubical_ball(R)
-        interior, boundary = classify_vertices(sites)
-        # Key point: boundary vertices have INCOMPLETE cubical neighborhoods,
-        # not just fewer axis-neighbors. This means the staggered fermion
-        # hopping terms differ at boundary sites.
-        has_boundary = len(boundary) > 0
-        check(f"R={R}: cubical ball has {len(boundary)} boundary sites (inhomogeneous)",
-              has_boundary,
-              f"|interior|={len(interior)}, |boundary|={len(boundary)}")
+    vertex_map: dict[tuple[int, int, int], int] = {}
+    for vertex in sorted({v for quad in quads for v in quad}):
+        vertex_map[vertex] = len(vertex_map)
 
-    check("Kawamoto-Smit: uniform hopping requires closure to manifold without boundary",
-          True,
-          "open boundary => physically distinguishable sites => "
-          "broken lattice translation invariance",
-          kind="THEOREM")
+    boundary_tris: set[tuple[int, int, int]] = set()
+    for quad in quads:
+        for tri in triangulate_quad(quad):
+            boundary_tris.add(tuple(sorted(vertex_map[v] for v in tri)))
 
+    boundary_edges: Counter[tuple[int, int]] = Counter()
+    for tri in boundary_tris:
+        boundary_edges.update(edges_of(tri))
+    boundary_vertices = {v for tri in boundary_tris for v in tri}
+    chi_boundary = len(boundary_vertices) - len(boundary_edges) + len(boundary_tris)
 
-# =============================================================================
-# T1: Cone-capped cubical ball is PL 3-manifold (cite prior result)
-# =============================================================================
+    apex = max(boundary_vertices) + 1
+    tets = {tuple(sorted((apex, *tri))) for tri in boundary_tris}
+    tet_faces: Counter[tuple[int, int, int]] = Counter()
+    tet_edges: set[tuple[int, int]] = set()
+    for tet in tets:
+        tet_faces.update(faces_of_tet(tet))
+        tet_edges.update(edges_of(tet))
 
-def test_cite_pl_manifold():
-    print("\n=== T1: Cone-capped cubical ball is PL 3-manifold (prior result) ===")
-    check("frontier_s3_cap_link_formal.py: 19/19 checks passed",
-          True,
-          "every vertex link (interior, boundary, cone point) is PL S^2; "
-          "verified R=2,3,4",
-          kind="CITE")
-    check("frontier_s3_pl_manifold.py: 9/9 checks passed",
-          True,
-          "cubical ball boundary is PL S^2; interior links are octahedra; "
-          "verified R=2..6",
-          kind="CITE")
+    base_faces = {face for face, count in tet_faces.items() if count == 1}
+    side_faces = {face for face, count in tet_faces.items() if count == 2}
+    stray_faces = {face: count for face, count in tet_faces.items() if count not in (1, 2)}
+    cap_vertices = set(boundary_vertices) | {apex}
+    chi_cap = len(cap_vertices) - len(tet_edges) + len(tet_faces) - len(tets)
+    apex_link = {tuple(sorted(v for v in tet if v != apex)) for tet in tets}
 
-
-# =============================================================================
-# T2: Handle attachment excluded
-# =============================================================================
-
-def test_handle_excluded():
-    print("\n=== T2: Handle attachment => pi_1 = Z (excluded) ===")
-    # Attaching a 1-handle (D^2 x I) to two disjoint disks D_1, D_2 on dB:
-    # van Kampen: pi_1(B cup handle) = pi_1(B) * pi_1(D^2 x S^1) / pi_1(D^2 u D^2)
-    # = {1} * Z / {1} = Z.
-    # Since pi_1 = Z != 0, the result is not simply connected and cannot be S^3.
-    check("1-handle: pi_1(B^3 cup (D^2 x I)) = Z by van Kampen",
-          True,
-          "not simply connected => not S^3",
-          kind="THEOREM")
-    # More generally: attaching ANY handle (genus >= 1) gives pi_1 != 0.
-    check("n-handle (n >= 1): pi_1 contains free factors => not simply connected",
-          True,
-          "excluded for all handle numbers",
-          kind="THEOREM")
+    check(f"R{radius}: nonempty cubical ball", len(cubes) > 0, f"cubes={len(cubes)}")
+    check(f"R{radius}: nonempty boundary", len(quads) > 0, f"quads={len(quads)}")
+    check(
+        f"R{radius}: boundary edge degree two",
+        all(count == 2 for count in boundary_edges.values()),
+        f"edges={len(boundary_edges)}",
+    )
+    check(f"R{radius}: boundary connected", connected_tri_surface(boundary_tris))
+    check(f"R{radius}: boundary vertex links are cycles", vertex_links_are_cycles(boundary_tris))
+    check(f"R{radius}: boundary chi equals two", chi_boundary == 2, f"chi={chi_boundary}")
+    check(
+        f"R{radius}: cone boundary equals base triangulation",
+        base_faces == boundary_tris,
+        f"base={len(base_faces)} tris={len(boundary_tris)}",
+    )
+    check(
+        f"R{radius}: all non-base cone faces are paired",
+        len(side_faces) + len(base_faces) == len(tet_faces) and not stray_faces,
+        f"paired={len(side_faces)} stray={len(stray_faces)}",
+    )
+    check(
+        f"R{radius}: apex link is boundary triangulation",
+        apex_link == boundary_tris,
+        f"link_tris={len(apex_link)}",
+    )
+    check(f"R{radius}: cone cap chi equals one", chi_cap == 1, f"chi={chi_cap}")
 
 
-# =============================================================================
-# T3: Boundary identification excluded
-# =============================================================================
+def note_boundary_checks() -> None:
+    text = NOTE.read_text(encoding="utf-8")
+    required = [
+        "bounded finite construction certificate",
+        "The legacy row name contains \"uniqueness\"",
+        "For the explicit cubical-ball family constructed by the runner",
+        "No proof that closure is physically mandatory.",
+        "No proof that every admissible cap is PL-homeomorphic to the cone cap.",
+        "No proof that the compactified lattice is `PL S^3`.",
+        "No retained verdict, no direct ledger retag",
+    ]
+    for phrase in required:
+        check(f"note boundary contains: {phrase}", phrase in text)
 
-def test_identification_excluded():
-    print("\n=== T3: Boundary identification => non-manifold or pi_1 != 0 ===")
-    check("antipodal identification: B^3/(x~-x on dB) = RP^3, pi_1 = Z/2",
-          True,
-          "not simply connected => not S^3",
-          kind="THEOREM")
-    check("general free identification of boundary points: non-manifold vertex links",
-          True,
-          "identifying v ~ w for non-adjacent v,w creates vertex with "
-          "link = D^2 cup D^2 glued at non-adjacent points, not S^2",
-          kind="THEOREM")
-    check("equivariant quotient by finite group G acting on dB: pi_1 contains G",
-          True,
-          "quotient of B^3 by G acting on boundary gives lens space / "
-          "prism manifold with pi_1 = G != 0",
-          kind="THEOREM")
-
-
-# =============================================================================
-# T4: Multi-point cone excluded or degenerate
-# =============================================================================
-
-def test_multicone_excluded():
-    print("\n=== T4: Multi-cone => non-manifold or degenerate to single cone ===")
-    check("2 cone points with non-hemispheric partition: non-manifold edge",
-          True,
-          "link of edge between cone points has boundary (not S^1) => "
-          "not a PL 3-manifold",
-          kind="THEOREM")
-    check("2 cone points with hemispheric partition = suspension(S^2) = S^3",
-          True,
-          "suspension is PL-homeomorphic to cone cap by Alexander's theorem; "
-          "degenerate case, not a distinct closure",
-          kind="THEOREM")
-    check("k >= 3 cone points: non-manifold at cone-point edges",
-          True,
-          "generically non-manifold; only PL-manifold case degenerates to "
-          "iterated suspension = cone cap",
-          kind="THEOREM")
+    forbidden = [
+        "CLOSED at the paper bar",
+        "The answer: cone-capping is the UNIQUE closure",
+        "accepted named non-derivation imports usable as one-hop authorities",
+        "Kawamoto-Smit homogeneity premise as accepted",
+        "Perelman and Moise, the result is PL S^3",
+    ]
+    for phrase in forbidden:
+        check(f"note omits forbidden overclaim: {phrase}", phrase not in text)
 
 
-# =============================================================================
-# T5: Gluing map uniqueness (Alexander trick + MCG(S^2))
-# =============================================================================
-
-def test_alexander_mcg():
-    print("\n=== T5: Gluing map uniqueness (Alexander trick + MCG(S^2)) ===")
-    check("Alexander trick (1923): every self-homeomorphism of S^2 extends to B^3",
-          True,
-          "given phi: S^2 -> S^2, construct Phi: B^3 -> B^3 extending phi; "
-          "Phi provides PL-homeomorphism between different gluings",
-          kind="THEOREM")
-    check("MCG(S^2) = Z/2: generated by a single reflection",
-          True,
-          "only two isotopy classes of self-homeomorphisms of S^2",
-          kind="THEOREM")
-    check("both orientation-preserving and -reversing gluings give PL-homeomorphic S^3",
-          True,
-          "Alexander trick applies to both; the cone cap is unique up to PL homeo",
-          kind="THEOREM")
-
-
-# =============================================================================
-# T6: van Kampen => pi_1(M) = 0; Perelman + Moise => PL S^3
-# =============================================================================
-
-def test_final_identification():
-    print("\n=== T6: van Kampen + Perelman + Moise => PL S^3 ===")
-    check("pi_1(B) = 0 (convex => contractible)", True, kind="THEOREM")
-    check("pi_1(cone(dB)) = 0 (cone is contractible)", True, kind="THEOREM")
-    check("pi_1(dB) = pi_1(S^2) = 0", True, kind="THEOREM")
-    check("Seifert-van Kampen: pi_1(M) = {1} *_{pi_1(S^2)} {1} = {1}", True, kind="THEOREM")
-    check("Perelman (2003): closed simply-connected 3-manifold = TOP S^3", True,
-          "Poincare conjecture", kind="THEOREM")
-    check("Moise (1952): TOP = PL in dimension 3", True,
-          "Hauptvermutung for 3-manifolds", kind="THEOREM")
-    check("Combined: M = PL S^3", True, kind="THEOREM")
-
-
-# =============================================================================
-# T7: Complete uniqueness chain
-# =============================================================================
-
-def test_uniqueness_chain():
-    print("\n=== T7: Complete uniqueness chain ===")
-    print("  Full argument:")
-    print("    1. Growth axiom => connected cubical ball B         [E1, framework]")
-    print("    2. dB = PL 2-sphere with chi = 2                   [E2, computed]")
-    print("    3. Kawamoto-Smit => B must be closed                [E4, framework]")
-    print("    4. B cup cone(dB) IS a PL 3-manifold                [T1, prior result]")
-    print("    5. Handle attachment excluded (pi_1 = Z)            [T2, van Kampen]")
-    print("    6. Boundary identification excluded                 [T3, non-manifold/pi_1]")
-    print("    7. Multi-cone excluded or degenerate                [T4, link argument]")
-    print("    8. Cone cap unique up to PL homeo                   [T5, Alexander+MCG]")
-    print("    9. pi_1(M) = 0, M = PL S^3                         [T6, Perelman+Moise]")
-    print("   Therefore: S^3 is the UNIQUE closure forced by the framework.")
-    print()
-    check("Cap-map uniqueness: cone cap is the unique PL closure of the cubical ball",
-          True,
-          "alternatives exhaustively excluded; gluing unique by Alexander trick; "
-          "result is PL S^3 by Perelman + Moise",
-          kind="THEOREM")
-
-
-# =============================================================================
-# T8: Global exhaustiveness via Generalized Schoenflies (Alexander 1924,
-#     Brown 1960, Mazur 1959).  This subsumes the case-by-case T2-T4 with a
-#     single STRUCTURAL argument: every PL 3-complex closure of B that
-#     yields a closed simply-connected PL 3-manifold is a PL 3-ball.
-# =============================================================================
-
-def test_schoenflies_exhaustiveness():
-    print("\n=== T8: Schoenflies global exhaustiveness ===")
-    print("  Structural argument (replaces case-by-case T2-T4 enumeration):")
-    print("    Any PL 3-complex X with M = B cup_{dB} X a closed simply-")
-    print("    connected PL 3-manifold satisfies:")
-    print("      (a) M = PL S^3  (Perelman + Moise)")
-    print("      (b) Image of B in M is a PL 3-ball  (B is convex cubical)")
-    print("      (c) Image of X in M is the closure of the complement of a")
-    print("          PL 3-ball, hence ALSO a PL 3-ball  (Alexander 1924 PL")
-    print("          Schoenflies / Brown 1960 generalized Schoenflies)")
-    print("      (d) Every PL 3-ball with prescribed PL S^2 boundary is PL")
-    print("          homeomorphic to cone(S^2)  (Alexander 1930)")
-    print("    Therefore X = cone(dB) up to PL homeo, GLOBALLY.")
-    print()
-    check("Alexander 1924 (PL Schoenflies in dim 3): every PL S^2 in PL S^3 "
-          "bounds two PL 3-balls",
-          True,
-          "global exhaustiveness step: any PL 3-complex closure X of B "
-          "yielding PL 3-manifold M is itself a PL 3-ball",
-          kind="THEOREM")
-    check("Brown 1960 / Mazur 1959 generalized Schoenflies: locally flat "
-          "(n-1)-sphere in S^n bounds two n-balls",
-          True,
-          "specializes to Alexander 1924 in PL dim 3",
-          kind="THEOREM")
-    check("Alexander 1930 cone theorem: every PL 3-ball is PL homeomorphic "
-          "to cone(S^2)",
-          True,
-          "every closure X (a PL 3-ball by Schoenflies) equals cone(dB) "
-          "up to PL homeomorphism",
-          kind="THEOREM")
-    check("STRUCTURAL EXHAUSTIVENESS: every PL 3-complex closure X of B is a "
-          "cone cap up to PL homeo",
-          True,
-          "Schoenflies (X is a PL 3-ball) + Alexander 1930 cone theorem "
-          "(every PL 3-ball with PL S^2 boundary = cone(S^2))",
-          kind="THEOREM")
-
-
-# =============================================================================
-# Main
-# =============================================================================
-
-def main():
-    t0 = time.time()
-    print("=" * 70)
-    print("S^3 Cap-Map Uniqueness: The Framework FORCES Cone-Capping")
-    print("=" * 70)
-
-    # Exact computational checks
-    test_growth_convexity()      # E1: cubical ball is connected and convex
-    test_boundary_sphere()       # E2: boundary has chi = 2
-    test_interior_links()        # E3: interior links are octahedra
-    test_kawamoto_smit()         # E4: open ball is inhomogeneous
-
-    # Theorem checks (cited results and logical chain)
-    test_cite_pl_manifold()      # T1: cone-capped ball is PL manifold (prior)
-    test_handle_excluded()       # T2: handle attachment excluded
-    test_identification_excluded()  # T3: boundary identification excluded
-    test_multicone_excluded()    # T4: multi-cone excluded/degenerate
-    test_alexander_mcg()         # T5: gluing map uniqueness
-    test_final_identification()  # T6: van Kampen + Perelman + Moise
-    test_uniqueness_chain()      # T7: complete chain
-    test_schoenflies_exhaustiveness()  # T8: structural global exhaustiveness
-
-    elapsed = time.time() - t0
-    print()
-    print("=" * 70)
-    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT} ({elapsed:.1f}s)")
-    print()
-    if FAIL_COUNT > 0:
-        print("FAILURES DETECTED -- see above")
-    else:
-        print("All checks passed.")
-        print()
-        print("INTERPRETATION:")
-        print("  This script closes the SPECIFIC gap identified by Codex findings")
-        print("  10 and 20: cap-map uniqueness.")
-        print()
-        print("  Previously proved (frontier_s3_cap_link_formal.py, 19/19):")
-        print("    The cone-capped cubical ball IS a PL 3-manifold.")
-        print()
-        print("  Newly proved here:")
-        print("    The cone cap is the UNIQUE PL closure of the cubical ball")
-        print("    that produces a closed, simply connected PL 3-manifold.")
-        print("    Proof: exhaustive exclusion of alternatives (handle attachment,")
-        print("    boundary identification, multi-cone) + Alexander trick + MCG(S^2).")
-        print()
-        print("  Combined with van Kampen (pi_1=0) and Perelman+Moise:")
-        print("    M = PL S^3 is the unique closure forced by the framework.")
-        print()
-        print("  STATUS: KEEP BOUNDED.")
-        print()
-        print("  Uniqueness of compactification: RESOLVED.")
-        print("    Cone cap is the unique closure giving a closed simply-connected")
-        print("    PL 3-manifold (all alternatives exhaustively excluded, 35/35).")
-        print()
-        print("  Framework-level selection: RESOLVED.")
-        print("    KS homogeneity forces closure; open boundaries violate")
-        print("    translation invariance required by the staggered Hamiltonian.")
-        print()
-        print("  Lane remains BOUNDED (not CLOSED) because the argument relies on:")
-        print("    (a) Exhaustiveness of PL closure classification (cited, not constructive)")
-        print("    (b) Alexander's theorem (1923)")
-        print("    (c) Moise's theorem (1952)")
-        print("    (d) Perelman's theorem (2003)")
-        print("  These are well-established but external to the framework.")
-    print("=" * 70)
-
-    sys.exit(0 if FAIL_COUNT == 0 else 1)
+def main() -> int:
+    note_boundary_checks()
+    for radius in (2, 3, 4, 5):
+        finite_certificate(radius)
+    print("\nS3 finite cone-cap construction certificate:", "PASS" if FAIL_COUNT == 0 else "FAIL")
+    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    return 0 if FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

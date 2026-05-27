@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py
+runner_sha256: 97a8fb5fc7042403c2e135e5d4a1afcd0789b91a67a1f4b68cac8feed8966742
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+==============================================================================
+Section 0: source-boundary firewall
+==============================================================================
+  PASS [EXACT]  (S-required) source contains bounded theorem
+  PASS [EXACT]  (S-required) source contains status authority
+  PASS [EXACT]  (S-required) source contains bz dependency
+  PASS [EXACT]  (S-required) source contains maradudin dependency
+  PASS [EXACT]  (S-required) source contains i1 dependency
+  PASS [EXACT]  (S-required) source contains i2 dependency
+  PASS [EXACT]  (S-required) source contains i3 dependency
+  PASS [EXACT]  (S-required) source contains no new axiom
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: retained-bounded
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: retained_bounded
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: audited_conditional
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: effective_status
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: MINIMAL_AXIOMS_2026-05-03
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: A1 (local algebra)
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: A2 (spatial substrate)
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: canonical Cl(3) connection normalization
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: new admission
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: admission count
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: axiom class
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: Koide A1
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)
+
+==============================================================================
+Section A: BZ Haar constants
+==============================================================================
+  PASS [EXACT]  (BZ-Haar) int_{[-pi,pi]^3} d^3k/(2 pi)^3 = 1
+  PASS [EXACT]  (BZ-Vol) vol([-pi,pi]^3) = (2 pi)^3 = 8 pi^3
+
+==============================================================================
+Section B: Maradudin coefficient constants
+==============================================================================
+  PASS [EXACT]  (B1) int_{S^2} dOmega = 4 pi
+  PASS [EXACT]  (B2) int_0^oo sin(k r)/k dk = pi/2 for r > 0
+  PASS [EXACT]  (B3) (4 pi)/(2 pi)^3 * (pi/2) = 1/(4 pi)
+
+==============================================================================
+Section C: alpha-bare composition algebra
+==============================================================================
+  PASS [EXACT]  (C1) -C alpha/r with alpha=g_bare^2/(4 pi) equals -C g_bare^2/(4 pi r)
+  PASS [EXACT]  (C2) at g_bare=1, alpha_bare=1/(4 pi)
+  PASS [EXACT]  (C3) at g_bare=1, V(r) -> -C/(4 pi r)
+
+==============================================================================
+Section D: bounded lattice Green sanity check
+==============================================================================
+  PASS [BOUNDED] (D1) G_lat((8, 0, 0)) / (1/(4 pi |r|)) near 1 ratio = 1.017870
+  PASS [BOUNDED] (D1) G_lat((12, 0, 0)) / (1/(4 pi |r|)) near 1 ratio = 1.010828
+  PASS [BOUNDED] (D1) G_lat((5, 5, 5)) / (1/(4 pi |r|)) near 1 ratio = 0.997752
+  PASS [BOUNDED] (D1) G_lat((6, 8, 0)) / (1/(4 pi |r|)) near 1 ratio = 0.999589
+
+==============================================================================
+Section E: no-import / boundary audit
+==============================================================================
+  PASS [EXACT]  (E1) load-bearing inputs enumerable (6 items)
+  PASS [EXACT]  (E2) no 4D loop-measure import in load-bearing inputs
+  PASS [EXACT]  (E3) no Wick rotation in load-bearing inputs
+
+==============================================================================
+Summary
+==============================================================================
+EXACT   : PASS = 33, FAIL = 0
+BOUNDED : PASS = 4, FAIL = 0
+TOTAL   : PASS = 37, FAIL = 0
+
+VERDICT: bounded alpha-bare composition bridge passes.
+  The alpha-bare (4 pi) denominator composes with the Z^3
+  Maradudin coefficient through the landed BZ, I1, I2, and I3 rows.
+
+----- stderr -----
+

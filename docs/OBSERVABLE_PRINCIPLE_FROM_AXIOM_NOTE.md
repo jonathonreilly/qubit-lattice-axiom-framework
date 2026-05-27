@@ -498,16 +498,64 @@ P1+P2 alone; they are fixed here by the source-generator convention:
 - additive constant `= - log|det D|` (zero-source baseline subtraction),
   enforcing `W(0) = 0`.
 
-Both are conventional choices. The overall scale `c` would rescale local
-source-derivative observables, so this note does not treat `c = 1` as
-derived. The additive constant, by contrast, does **not** propagate to
-local source-derivative observables: any additive shift `C` gives
-`W_alt = W + C` and `d/dj W_alt = d/dj W` exactly. The runner's Part 7
-verifies this additive-shift invariance for the zero-source-baseline
-convention.
+Both are conventional choices. The additive constant does **not**
+propagate to local source-derivative observables: any additive shift
+`C` gives `W_alt = W + C` and `d/dj W_alt = d/dj W` exactly. The
+runner's Part 7 verifies this additive-shift invariance for the
+zero-source-baseline convention.
 
-P4 is therefore a convention only, with no propagation to local
-source-derivative observables.
+#### `c` is a scale convention, not a physical content choice
+
+The overall scale `c` rescales the generator and (in unrestricted form)
+its source-derivative observables, so a naive reading might treat
+`c = 1` as a physically-loaded choice. The four in-scope identities
+above are however **c-equivariant** in the precise sense that their
+algebraic-structural content is invariant under `W -> c W` rescaling:
+
+- **Theorem 1 (selected generator family).** Under P1+P2 the unique
+  continuous additive phase-blind solution is a one-parameter family
+  `{W_c = c · log|det(D+J)| + const : c > 0}`. The choice `c = 1`
+  picks one representative of that family; any other `c > 0`
+  representative satisfies the same selection and the same `P1+P2`
+  identities, modulo a global scale on source derivatives. Theorem 1
+  in §"Claim scope" should therefore be read as fixing the
+  generator class, not the absolute scale.
+
+- **Theorem 2 (local source derivatives).** With `W_c`, local
+  source-derivative observables carry a global `c` prefactor:
+  `∂W_c/∂j_x = c · Re Tr[(D+J)^(-1) P_x]`, and similarly for the
+  second derivative kernel. Ratios of local observables, locality /
+  connectedness / boson-evenness of the kernel, and the index
+  structure of the source-derivative operators are all `c`-
+  independent. Only the absolute observable scale carries the `c`
+  factor.
+
+- **Theorem 3 (Matsubara closed-form identity).** The closed-form
+  identity is `c`-equivariant: `W_c(j) = c · A(L_t) j^2 + O(j^4)`,
+  with `A(L_t)` itself `c`-independent. Both sides scale together
+  under `W -> c W`, so the identity holds for every `c > 0` in
+  the family with the same `A(L_t)`.
+
+- **Theorem 4 (Klein-four invariance + `L_t = 4` selector).** The
+  Klein-four group acts on the source `J`, not on the generator
+  scale. The orbit-resolution argument that selects `L_t = 4` as
+  the minimal resolved APBC orbit is therefore manifestly
+  `c`-independent.
+
+In short, the in-scope identities (1)-(4) are statements about the
+algebraic / index / orbit structure of `W_c`, all of which are
+preserved under `c`-rescaling. The `c = 1` choice fixes only the
+absolute scale of source-derivative observables, and that absolute
+scale enters this note only through the §"Consequence for `v`"
+comparator readout, which is already declared out-of-scope.
+
+P4 is therefore a true normalization convention with respect to this
+note's in-scope content: rescaling `c` leaves Theorems 1-4 invariant
+as algebraic-structural statements. The physical generator scale
+question — which `c` (if any) is preferred by retained framework
+primitives, and whether absolute observable normalization is fixed
+elsewhere in the framework — is out-of-scope for this row and is
+recorded as an open question for the audit lane.
 
 ### What remains admitted: P1+P2 scalar-selection surface
 
@@ -518,6 +566,53 @@ alone — also remains an admitted scalar-selection premise. Together they
 select the additive phase-blind amplitude generator class. This row does
 not attempt to derive that selection surface from retained primitives; that
 route is explicitly out of scope.
+
+#### Admission asymmetry between P1 and P2
+
+P1 and P2 are admitted on this row with **different audit backing**:
+
+- **P1** is registered as the canonical Tier-A admitted input
+  `observable_principle_from_axiom_note` (label `P1`, leverage 88) in
+  `docs/audit/data/tier_a_admissions.json`, with a six-row
+  `retained_no_go` portfolio
+  (`observable_principle_p1_bridge_*_narrow_note_2026-05-21`) that
+  documents independent failed derivation attempts. Under the Tier-A
+  propagation policy, P1 has machine-readable accepted-premise backing
+  for bounded audits; the audit pipeline remains the authority for any
+  downstream effective status.
+
+- **P2** is **not** in the Tier-A registry. The note admits it
+  inline as a scalar-selection premise, but the registry does not
+  carry a P2 entry, a P2 leverage score, or a P2 no-go portfolio.
+  Downstream rows that load-bear on P2 should be aware that the
+  admission is weaker than the P1 admission and that the audit-lane
+  treatment is consequently more conservative.
+
+This asymmetry is not closed by this note. The audit lane is the
+authority on whether the inline-admitted P2 premise is acceptable for
+its dependents.
+
+#### Existing candidate retirement path for P1 + (phase-positive) P2
+
+A candidate derivation of P1 and the phase-positive side of P2 from a
+qubit-trace generating functional is recorded in (backticked to avoid
+load-bearing the parent on an `unaudited` row)
+`OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md`.
+That note proposes that
+
+```
+W_qubit[J] := log Tr_A(e^{-(H + J)}) - log Tr_A(e^{-H})
+```
+
+automatically satisfies P1 (via trace-tensor factorization on disjoint
+qubit regions) and the phase-positive side of P2 (because `Z[J]` is
+manifestly real-positive for self-adjoint `H + J`). When that note
+becomes retained-grade, transferring the retirement back to this
+note's `W = log|det(D+J)|` formulation remains conditional on the
+admitted Grassmann / Berezin bridge between the qubit-trace and
+Grassmann-determinant surfaces, per the qubit-trace note's own scope.
+This cross-reference is informational only and does **not** promote
+either row.
 
 ### Updated conditional load-bearing statement
 

@@ -359,7 +359,7 @@ def test_orbit_kernel_and_selector():
 
 def test_hierarchy_value_from_internal_observable_principle():
     print("\n" + "=" * 78)
-    print("PART 5: INTERNAL OBSERVABLE PRINCIPLE FIXES THE HIERARCHY CORRECTION")
+    print("PART 5: OUT-OF-SCOPE HIERARCHY COMPARATOR (INFORMATIONAL ONLY)")
     print("=" * 78)
 
     c4 = (7.0 / 8.0) ** 0.25
@@ -378,17 +378,7 @@ def test_hierarchy_value_from_internal_observable_principle():
     print(f"  v_pred = {v_pred:.12f} GeV")
     print(f"  v_meas = {v_meas:.12f} GeV")
     print(f"  relative error = {rel:.6%}")
-
-    check(
-        "the internally selected hierarchy correction is exactly (7/8)^(1/4)",
-        abs(c4 - (7.0 / 8.0) ** 0.25) < 1e-15,
-        f"absolute error = {abs(c4 - (7.0 / 8.0) ** 0.25):.2e}",
-    )
-    check(
-        "the resulting electroweak scale stays within 0.5% of measurement",
-        abs(rel) < 0.005,
-        f"relative error = {rel:.6%}",
-    )
+    print("  INFO: comparator only; not counted as a theorem PASS check.")
 
 
 def test_conditional_scope_shape():
@@ -716,8 +706,8 @@ def test_candidate_consistency_checks():
     print(
         "\n  Summary: the selected P1+P2 candidate passes source-evenness,\n"
         "  finite-block regularity, and additive-baseline invariance checks.\n"
-        "  The c=1 scale remains the canonical generator normalization, not a\n"
-        "  derived theorem. These checks do not derive the P1+P2 scalar-selection\n"
+        "  The c=1 scale is a representative normalization, not a derived\n"
+        "  physical scale. These checks do not derive the P1+P2 scalar-selection\n"
         "  surface or promote any cited upstream row."
     )
 

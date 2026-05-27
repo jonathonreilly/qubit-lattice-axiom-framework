@@ -16146,7 +16146,7 @@
         "A": 0,
         "B": 0,
         "C": 24,
-        "D": 0
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -39658,7 +39658,7 @@
         "A": 0,
         "B": 0,
         "C": 24,
-        "D": 0
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -56400,6 +56400,6 @@
     },
     "runners_classified": 2032,
     "runners_with_C": 988,
-    "runners_with_D": 595
+    "runners_with_D": 596
   }
 }

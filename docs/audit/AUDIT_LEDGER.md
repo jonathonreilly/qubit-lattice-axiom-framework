@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 518 |
+| **retained_bounded** | 519 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1184 |
+| unaudited | 1183 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 816 |
+| `audited_clean` | 817 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1413 |
+| `unaudited` | 1412 |
 
 | claim_type | count |
 |---|---:|
@@ -125,6 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1143,6 +1144,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 
 ## Audit findings (full)
+
+### `accessible_prediction_note`
+
+- **Note:** [`ACCESSIBLE_PREDICTION_NOTE.md`](../../docs/ACCESSIBLE_PREDICTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional prediction scenarios only: if the named premises P1..P6 are taken as inputs, then the listed numerical/algebraic signatures follow; the note does not claim P1..P6 are derived, retained, unique, falsifying, or Planck-lattice-dependent framework consequences.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-bohr-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The narrowed claim is that five accessible-prediction scenarios follow algebraically only after granting explicit named premises P1..P6, including imported Newtonian Poisson sourcing, branch-phase dynamics, Born-gravity cross-link, extended-source ansatz, Schrodinger-Newton Gaussian evolution, and decoherence scaling.  _(class `A`)_
+- **chain closes:** True — Within the narrowed boundary, the chain closes as a bounded conditional because the missing bridges are explicitly promoted to named premises and the note disclaims derivation or retained status for them. The retained no-go dependency blocks treating P1's f/Phi and Poisson-normalization import as an audited framework consequence, but the current source note does not make that stronger claim.
+- **rationale:** Clean only as a conditional bounded theorem: all load-bearing bridge/readout/normalization assumptions are named as inputs, and the note expressly withdraws uniqueness, forward falsification, retained-premise, and primitive-derivation claims. The runner is not proof of primitives and still contains stale broad wording, but the source-note scope no longer relies on that wording.
+- **auditor confidence:** high
 
 ### `action_crossover_note`
 

@@ -1274,24 +1274,42 @@
       "verdict_rationale": null
     },
     "accessible_prediction_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T04:24:08.842129+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "action_normalization_note": "Audited only the narrowed current-packet no-go: self-consistency scans, rescaling degeneracy, conditional PPN gamma readout, massive-probe sanity checks, and source-normalization conventions do not uniquely select c without a separate f/Phi and Poisson-normalization bridge."
+        },
+        "dep_claim_type": {
+          "action_normalization_note": "no_go"
+        },
+        "dep_effective_status": {
+          "action_normalization_note": "retained_no_go"
+        },
+        "deps": [
+          "action_normalization_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "54ad5c4f62da19261c97c51f678c8feff41fb1ed9b8d08b9afaf6b54803345f4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-bohr-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed boundary, the chain closes as a bounded conditional because the missing bridges are explicitly promoted to named premises and the note disclaims derivation or retained status for them. The retained no-go dependency blocks treating P1's f/Phi and Poisson-normalization import as an audited framework consequence, but the current source note does not make that stronger claim.",
       "claim_id": "accessible_prediction_note",
-      "claim_scope": null,
+      "claim_scope": "Conditional prediction scenarios only: if the named premises P1..P6 are taken as inputs, then the listed numerical/algebraic signatures follow; the note does not claim P1..P6 are derived, retained, unique, falsifying, or Planck-lattice-dependent framework consequences.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (conditional prediction scenarios; not an audited derivation of the source law or cross-constraint bridges)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T04:24:08.842129+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -1299,19 +1317,19 @@
         "action_normalization_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The narrowed claim is that five accessible-prediction scenarios follow algebraically only after granting explicit named premises P1..P6, including imported Newtonian Poisson sourcing, branch-phase dynamics, Born-gravity cross-link, extended-source ansatz, Schrodinger-Newton Gaussian evolution, and decoherence scaling.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "19a0bf95dc3e2b6eefbd2fc2f58f02b332da8d09dccd329e5be760ff35141669",
       "note_path": "docs/ACCESSIBLE_PREDICTION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source or runner broadens this into a retained framework derivation, uniqueness claim, or forward falsification claim without retained bridge theorems for P1..P6.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -1396,18 +1414,21 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
+        "runner_result": "runner_sha256=54ad5c4f62da19261c97c51f678c8feff41fb1ed9b8d08b9afaf6b54803345f4; exit_code=0; no PASS/FAIL accounting",
+        "runner_status": "ok",
+        "total_fail": 0,
         "total_pass": 0
       },
       "runner_path": "scripts/frontier_accessible_prediction.py",
       "title": "Accessible Predictions: Where the Framework Differs from GR \u2014 Conditional Prediction Scenarios (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean only as a conditional bounded theorem: all load-bearing bridge/readout/normalization assumptions are named as inputs, and the note expressly withdraws uniqueness, forward falsification, retained-premise, and primitive-derivation claims. The runner is not proof of primitives and still contains stale broad wording, but the source-note scope no longer relies on that wording."
     },
     "action_architecture_matrix_note": {
       "audit_date": null,
@@ -1816,11 +1837,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 8.522,
+      "load_bearing_score": 11.522,
       "load_bearing_step": "The current propagator-Poisson packet does not select c convention-free; c is convention-locked unless a separate retained bridge fixes the scalar-potential and source-normalization conventions.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "9e9bd9e58895058f580ee1a190969d79ffbcc26058ea45ca2c62f258d7bc0700",
       "note_path": "docs/ACTION_NORMALIZATION_NOTE.md",
       "notes_for_re_audit_if_any": "Residual boundary: re-audit if a later retained bridge derives the lattice scalar f / physical potential Phi map, fixes the Poisson source normalization, or adds a genuine null-ray/light-bending runner channel that is claimed to select c.",

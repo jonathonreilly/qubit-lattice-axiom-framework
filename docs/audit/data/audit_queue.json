@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 235,
     "high": 328,
-    "leaf": 298,
+    "leaf": 297,
     "medium": 311
   },
   "cycle_break_target_count": 3,
@@ -26760,30 +26760,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35587,6 +35563,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 18,
-  "total_pending": 1172
+  "ready_count": 17,
+  "total_pending": 1171
 }

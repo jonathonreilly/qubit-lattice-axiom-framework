@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 527 |
+| **retained_bounded** | 528 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1172 |
+| unaudited | 1171 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 825 |
+| `audited_clean` | 826 |
 | `audited_conditional` | 76 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1401 |
+| `unaudited` | 1400 |
 
 | claim_type | count |
 |---|---:|
@@ -504,6 +504,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_transport_gap_constant_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_y_l1_ratios_wilson_integer_diff_note_2026-05-08_probey_l1_ratios` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
@@ -7555,6 +7556,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Each retained generator D, U, U^dagger, and every spectral projector P_lambda(D) restricts to a scalar multiple of the identity on M_zeta, so every polynomial in them restricts to a scalar.  _(class `A`)_
 - **chain closes:** True — The algebraic closure follows directly: on M_zeta, D is zero, U and U^dagger are scalar by the eigenspace definition, and D-spectral projectors are either identity for lambda=0 or zero for lambda nonzero. Polynomial combinations of scalar restrictions remain scalar.
 - **rationale:** The load-bearing step is a genuine class-A finite-dimensional algebraic closure over the stated retained inputs, not a definition substitution or numerical fit. The runner checks the scalar restrictions for generators and sampled polynomial words at r=1.0 and r=1.425, and also verifies a non-retained rank-one projector is non-scalar. The conclusion does not use PDG data, charged-lepton masses, Koide targets, or an external comparator.
+- **auditor confidence:** high
+
+### `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded C_3 dimension-count ratio only: assuming the retained C_3 circulant coordinate surface H = aI + bC + bbar C^2 with selected complex coordinate b, the real-dimension ratio dim_R({b}) / dim_R(Herm_3) is exactly 2/9. No radian primitive, Berry holonomy, physical charged-lepton readout, parent linking-relation closure, equal-sector-norm input, or generalized C_d theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The selected coordinate b is complex, so dim_R({b}) = 2, while dim_R(Herm_3) = 3 real diagonal degrees plus 3 complex off-diagonal pairs times 2 real degrees = 9, hence rho_delta_C3 = 2/9.  _(class `A`)_
+- **chain closes:** True — The sole direct dependency is retained and supplies the C_3 circulant coordinate surface with b as a complex coordinate. The Herm_3 dimension count is elementary finite-dimensional linear algebra, and the runner verifies dim_R(Herm_3)=9, dim_R(C)=2, the exact 2/9 ratio, and non-C3 denominator controls with PASS=8 FAIL=0.
+- **rationale:** No-go/admission gate: the row does not assert a no-go or a physical/radian bridge; it only records a bounded dimensionless arithmetic ratio on the retained C_3 surface. The derivation closes from the retained coordinate surface plus elementary dimension counting. Residual risk is explicitly outside scope: using 2/9 as a radian-valued primitive, Berry holonomy, charged-lepton readout, parent linking closure, or generalized 2/d^2 law needs separate retained work.
 - **auditor confidence:** high
 
 ### `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 235,
     "high": 328,
-    "leaf": 326,
+    "leaf": 325,
     "medium": 311
   },
   "cycle_break_target_count": 3,
@@ -26760,33 +26760,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_vacuum_plaquette_bridge_support_note",
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -27127,6 +27100,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/su3_dabc_symmetric_check.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
+        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
       "transitive_descendants": 1
     },
     {
@@ -30161,32 +30160,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/signed_gravity_retained_boundary_source_principle_nogo.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
       "transitive_descendants": 1
     },
     {
@@ -36329,5 +36302,5 @@
     }
   ],
   "ready_count": 41,
-  "total_pending": 1200
+  "total_pending": 1199
 }

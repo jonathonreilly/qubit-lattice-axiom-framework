@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 508 |
+| **retained_bounded** | 509 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1200 |
+| unaudited | 1199 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 805 |
+| `audited_clean` | 806 |
 | `audited_conditional` | 70 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -813,6 +813,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block3_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `su3_wilson_closed_form_fanout_theorem_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -12491,6 +12492,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the narrowed scope, the one-hop dependencies are retained-grade or retained_bounded and supply the SU(3) representation-theory and L_s=3 geometry inputs. The primary runner source visibly recomputes the coefficients and singlet basis rather than importing the disclaimed bridge constants or relying on the missing Block 5 runner.
 - **rationale:** The supplied runner is source-visible and does more than print cached constants: it evaluates the SU(3) Bessel-determinant coefficient sum, diagonalizes the 4096 x 4096 total Casimir to recover the rank-8 singlet basis, constructs the stated plaquette tensor, and reports the finite storage/intermediate arithmetic. The repaired note no longer load-bears on the L_s=2 Block 5 diagnostics or on the unaudited bridge/open-gate constants. The full L_s=3 contraction is expressly outside the audited claim, so its absence is not a blocker for this staging theorem.
 - **auditor confidence:** medium
+
+### `su3_wilson_closed_form_fanout_theorem_note_2026-05-04`
+
+- **Note:** [`SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md`](../../docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded SU(3) Wilson beta=6 fan-out record: the runner computes four named closed-form estimates, M1 single-plaquette character = 0.4225, M2 strong-coupling leading = 0.3333, M4 mean-field self-consistency = 0.8740, and M5 weak-coupling one-loop = 0.9259. Conditional on the imported comparator P_MC=0.5934 and epsilon_witness=3.03e-4, all four are far misses. This does not claim the MC value is derived, does not prove a global no-go for all analytic routes, and does not promote the gauge-scalar bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner evaluates the four named closed-form estimates at beta=6 and asserts that the comparator-independent table matches the source note, while the gap-to-MC reading is explicitly conditional on imported P_MC=0.5934 and epsilon_witness=3.03e-4.  _(class `D`)_
+- **chain closes:** True — The bounded internal table closes from the source, retained one-hop Wilson/Wigner dependencies, and runner source/output. The comparator wing is clean only as a conditional external-comparator statement: the retained dependencies allow use of 0.5934 as a comparator/reuse number, not as a derived plaquette value.
+- **rationale:** The bounded claim closes because the runner actually computes the four named formulas, verifies the source-note table, and treats the MC value and epsilon target as comparator-only inputs. The no-go discipline gate is satisfied only at this narrow scope: four specified routes are tested and reported as far-misses, while global statements that no closed form or no analytic route exists are explicitly outside the audited claim. Residual risk is wording drift: future citations must preserve that the far-miss reading inherits the comparator provenance and that L_s>=3 Wigner-Racah remains a next route, not a proven necessary route.
+- **auditor confidence:** high
 
 ### `substrate_to_p_a_forcing_theorem_note_2026-04-30`
 

@@ -1,0 +1,26 @@
+loop_slug: gate-b-grown-joint-package-runner-repair-20260527
+target_claim_id: gate_b_grown_joint_package_note
+target_status: bounded-support
+actual_current_surface_status: unaudited
+branch: physics-loop/gate-b-grown-joint-package-runner-repair-20260527
+base: origin/main
+created_utc: 2026-05-27
+cycle_count: 1
+active_route: runner-cache/source-note reconciliation
+hard_residual: source note carried stale Born values and stale farfield dependency status
+files_touched:
+  - docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md
+  - scripts/gate_b_grown_joint_package.py
+  - logs/runner-cache/gate_b_grown_joint_package.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/runner_classification.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+open_imports:
+  - physical Gate B/gravity closure remains out of scope
+  - full generated-geometry family generalization remains out of scope
+review_status: local runner/cache/pipeline/vocab pass; independent audit required
+pr_status: pending
+next_exact_action: open review PR
+stop_condition: one coherent artifact repair packaged

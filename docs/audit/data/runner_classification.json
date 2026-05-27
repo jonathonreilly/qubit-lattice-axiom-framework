@@ -8389,15 +8389,15 @@
       "runner": "scripts/gate_b_grown_distance_law.py"
     },
     "gate_b_grown_joint_package_note": {
-      "assert_count": 0,
+      "assert_count": 4,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
-        "D": 0
+        "D": 3
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "A",
       "runner": "scripts/gate_b_grown_joint_package.py"
     },
     "gate_b_grown_propagating_field_note": {
@@ -13417,15 +13417,15 @@
       "runner": "scripts/frontier_chiral_bottleneck_card.py"
     },
     "lanes.generated-geometry.readme": {
-      "assert_count": 0,
+      "assert_count": 4,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
-        "D": 0
+        "D": 3
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "A",
       "runner": "scripts/gate_b_grown_joint_package.py"
     },
     "lanes.mirror.readme": {
@@ -50952,19 +50952,19 @@
       "exists": true
     },
     "scripts/gate_b_grown_joint_package.py": {
-      "assert_count": 0,
+      "assert_count": 4,
       "claims": [
         "gate_b_grown_joint_package_note",
         "lanes.generated-geometry.readme"
       ],
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
-        "D": 0
+        "D": 3
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/gate_b_grown_propagating_field_probe.py": {
@@ -56135,14 +56135,14 @@
   "stats": {
     "decoration_candidates": 344,
     "dominant_class_distribution": {
-      "A": 241,
+      "A": 242,
       "B": 286,
       "C": 758,
       "D": 301,
-      "none": 436
+      "none": 435
     },
     "runners_classified": 2022,
     "runners_with_C": 983,
-    "runners_with_D": 589
+    "runners_with_D": 590
   }
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1202 |
+| unaudited | 1203 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1432 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -87,7 +87,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 2022
 - runners with (C) first-principles compute hits: 983
-- runners with (D) external comparator hits: 589
+- runners with (D) external comparator hits: 590
 - decoration candidates (no C, no D): 344
 
 ## Top 25 by load-bearing score (topology only)
@@ -977,7 +977,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
-| `gate_b_grown_joint_package_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4908,18 +4907,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The provided runner source directly constructs the exact and grown geometries, propagates amplitudes, computes mean detector shifts, fits the positive post-peak tail, and emits the numbers cited in the note. Within the narrow runner-defined family, no cited upstream authority is needed.
 - **rationale:** The source note makes a bounded numerical claim about a specific harness result, and the included runner code is not a constant-printing script or cross-note value import. It performs the geometry growth, propagation, field perturbation, delta aggregation, and log-log tail fit that its stdout reports. The conclusion is therefore clean only for the stated finite tested family, not for broader Gate B closure or all generated-geometry parameter space.
 - **auditor confidence:** high
-
-### `gate_b_grown_joint_package_note`
-
-- **Note:** [`GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded SHA-pinned runner comparison at h=0.5, W=10, L=12, four seeds, for exact grid, drift=0.2/restore=0.7 grown geometry, and drift=0.3/restore=0.5 stress geometry, measuring Born, d_TV, MI, and decoherence under runner-defined ingredients only; no physical-gravity or full Gate B closure is included.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-fresh-gate-b-grown-joint-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The note's load-bearing step is the bounded statement that Born, d_TV, MI, and CL-bath decoherence stay close between the exact grid and the declared grown-geometry rows in the four-seed runner comparison.  _(class `C`)_
-- **chain closes:** False — The one-hop dependencies are retained_bounded under the current metadata, and the runner source directly constructs the geometries and computes the observables. Clean closure is blocked because the source note's frozen Born numbers match the old cited log but not the current SHA-pinned runner cache used for this audit.
-- **rationale:** Issue: the source note/frozen log state Born means exact=2.12e-15, drift=0.2=2.19e-15, stress=2.45e-15, while the current SHA-pinned cache reports exact=2.06e-15, drift=0.2=2.23e-15, stress=2.63e-15. Why this blocks: this row is a bounded numerical comparison, so the source note's numerical certificate must match the current runner certificate or explicitly reconcile the old frozen artifact; the stale farfield status prose is non-authoritative and does not block because the current dependency metadata is retained_bounded. Repair target: refresh the note's frozen Born values and artifact text to the current cache, or provide a SHA-pinned reconciliation of the old log versus the current cache. Claim boundary until fixed: the current runner supports the same qualitative bounded transfer pattern at the current cache values only, with physical-gravity and broader Gate B closure still excluded rather than converted into a no-go wall.
 
 ### `gate_b_grown_propagating_field_note`
 

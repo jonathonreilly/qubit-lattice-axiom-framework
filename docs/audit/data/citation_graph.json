@@ -54300,7 +54300,7 @@
         "gate_b_grown_distance_law_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "20bef463457fd3d10737edde97eb6a709ffdfe9a24b95ef1b242d0bf58e5a6f4",
+      "note_hash": "77672a632789c7afa0cc7ae665e7681ecd35396435a9feda3992e5a24d55d8d8",
       "path": "docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md",
       "runner_path": "scripts/gate_b_grown_joint_package.py",
       "title": "Gate B Grown-Geometry Joint Package Note"

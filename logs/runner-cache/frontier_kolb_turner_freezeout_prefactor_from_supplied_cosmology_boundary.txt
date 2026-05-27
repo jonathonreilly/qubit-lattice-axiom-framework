@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary.py
+runner_sha256: 164b4d30636bb0507496f478d9218df25a20652fb828e7aa28173054e4a3717f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+========================================================================================
+Exact-symbolic runner for
+KOLB_TURNER_FREEZEOUT_PREFACTOR_FROM_SUPPLIED_COSMOLOGY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-05-28
+Goal: sympy-symbolic verification of (P*) K = s_0 * sqrt(45/pi) / (rho_c/h^2)
+under named cosmological-thermodynamic premises (P1)-(P5)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: source boundary
+----------------------------------------------------------------------------------------
+  [PASS] source boundary marker present: Supplied Premise Sources and Context
+  [PASS] source boundary marker present: No new repo-wide
+  [PASS] source boundary marker present: local supplied premise
+  [PASS] source boundary marker present: not a load-bearing dependency
+  [PASS] source boundary marker present: scripts/frontier_kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary.py
+  [PASS] stale/overbroad source phrase absent: scripts/audit_companion_kolb_turner_freezeout_prefactor_from_mpl_gstar.py
+  [PASS] stale/overbroad source phrase absent: KOLB_TURNER_FREEZEOUT_PREFACTOR_FROM_M_PL_AND_G_STAR
+  [PASS] stale/overbroad source phrase absent: No new admission is introduced
+
+----------------------------------------------------------------------------------------
+Part 1: symbolic setup
+----------------------------------------------------------------------------------------
+  symbolic g_*S(T_0) (positive real) = g_starS_T0
+  symbolic T_0       (positive real) = T_0
+  symbolic H_100     (positive real) = H_100
+  symbolic M_Pl      (positive real) = M_Pl
+  (D1) s_0         = (2 pi^2 / 45) g_*S(T_0) T_0^3 = 2*pi**2*T_0**3*g_starS_T0/45
+  (D2) rho_c/h^2   = 3 H_100^2 M_Pl^2 / (8 pi)      = 3*H_100**2*M_Pl**2/(8*pi)
+  (P4 leading)     = sqrt(45 / pi)                  = 3*sqrt(5)/sqrt(pi)
+  (D3) K (def)     = s_0 * sqrt(45/pi) / (rho_c/h^2) = 16*sqrt(5)*pi**(5/2)*T_0**3*g_starS_T0/(45*H_100**2*M_Pl**2)
+
+----------------------------------------------------------------------------------------
+Part 2: (P*) identity reduces to 0 parametrically
+----------------------------------------------------------------------------------------
+  [PASS] (P*) K - s_0 * sqrt(45/pi) / (rho_c/h^2) = 0 parametrically  (diff = 0)
+
+----------------------------------------------------------------------------------------
+Part 3: explicit canonical form
+----------------------------------------------------------------------------------------
+  [PASS] K = 16 pi^3 g_*S(T_0) T_0^3 sqrt(45/pi) / (135 H_100^2 M_Pl^2) (canonical form)  (diff = 0)
+
+----------------------------------------------------------------------------------------
+Part 4: numerical evaluation against textbook K
+----------------------------------------------------------------------------------------
+  T_0       = 2.348654e-13 GeV  (= 2.7255 K)
+  g_*S(T_0) = 3.909091
+  H_100     = 2.133058e-42 GeV  (= 100 km/s/Mpc)
+  M_Pl      = 1.220910e+19 GeV  (Tier-A S admission)
+  s_0       = 2.221520e-38 GeV^3
+  rho_c/h^2 = 8.095697e-47 GeV^4
+  sqrt(45/pi) = 3.784699
+  K (this note, leading) = 1.038550e+09 GeV^-1
+  K (textbook KT Eq. 5.49) = 1.070000e+09 GeV^-1
+  relative deviation = -2.939%
+  [PASS] K (this note) reproduces textbook 1.07e9 GeV^-1 within 5% (Boltzmann coefficient gap)  (K(this) = 1.0385e+09, K(KT) = 1.0700e+09, dev = -2.939%)
+
+----------------------------------------------------------------------------------------
+Part 5: counterfactual / scaling probes
+----------------------------------------------------------------------------------------
+  [PASS] Removing sqrt(45/pi) collapses K by factor 3.78  (K_full / K_noBoltz = 3.784699, sqrt(45/pi) = 3.784699)
+  [PASS] Doubling M_Pl reduces K by factor 4 (since K ~ 1/M_Pl^2 via rho_c/h^2)  (K(M_Pl) / K(2*M_Pl) = 4.000000)
+  [PASS] Doubling T_0 increases K by factor 8 (since K ~ T_0^3)  (K(2*T_0) / K(T_0) = 8.000000)
+  [PASS] Doubling g_*S(T_0) increases K by factor 2 (since K ~ g_*S(T_0))  (K(2*g_*S) / K(g_*S) = 2.000000)
+  [PASS] Doubling H_100 reduces K by factor 4 (since K ~ 1/H_100^2 via rho_c/h^2)  (K(H_100) / K(2*H_100) = 4.000000)
+
+----------------------------------------------------------------------------------------
+Part 6: symbolic free-symbol residual check
+----------------------------------------------------------------------------------------
+  [PASS] (P*) lhs - rhs has no free residual symbols  (lhs - rhs = 0)
+  [PASS] K_def free symbols = {g_*S(T_0), T_0, H_100, M_Pl}  (got {H_100, T_0, M_Pl, g_starS_T0})
+  [PASS] K_explicit free symbols = {g_*S(T_0), T_0, H_100, M_Pl}  (got {H_100, T_0, M_Pl, g_starS_T0})
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 19
+  FAIL = 0
+  TOTAL = 19
+
+VERDICT: (P*) algebraic prefactor identity holds parametrically; numerical
+evaluation reproduces textbook K = 1.07e9 GeV^-1 within ~3% Boltzmann-tail
+subleading-coefficient gap; all scaling probes confirm the expected exponents.
+
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

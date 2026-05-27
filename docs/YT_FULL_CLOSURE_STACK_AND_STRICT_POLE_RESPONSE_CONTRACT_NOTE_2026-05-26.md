@@ -260,6 +260,13 @@ The response readout is exactly `1/sqrt(6)`.  This is still bounded support,
 because the candidate has not been derived as the accepted physical substrate
 transfer/action backend and lacks pole/FV/IR/contact/model-class certificates.
 
+[`YT_NATIVE_BACKEND_AUTHORITY_PROJECTOR_OBSTRUCTION_NOTE_2026-05-27.md`](YT_NATIVE_BACKEND_AUTHORITY_PROJECTOR_OBSTRUCTION_NOTE_2026-05-27.md)
+then prunes the attempted shortcut from source normalization to backend
+authority.  A Feynman-Hellmann slope is a sector matrix element, so the
+accepted W/top sector projectors are load-bearing.  Source normalization and
+the six-component carrier amplitude do not by themselves determine those
+projectors or their source-generator matrix elements.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -344,6 +351,13 @@ The native candidate backend gives the first concrete object to derive:
 accepted substrate transfer/action dynamics
   -> M_W(ell) = g_2 v(ell)/2 and M_t(ell)=v(ell)/sqrt(12)
   -> strict top/W response certificate.
+```
+
+The latest obstruction makes the immediate target still sharper:
+
+```text
+derive accepted W/top sector projectors and their source-generator
+matrix elements on that same finite transfer/action surface.
 ```
 
 ## Non-Claims

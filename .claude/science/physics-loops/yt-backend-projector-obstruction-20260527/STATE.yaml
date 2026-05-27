@@ -1,0 +1,12 @@
+loop_slug: yt-backend-projector-obstruction-20260527
+target: best-honest-status
+mode: focused_science_cycle
+current_surface_status: no-go
+active_route: native backend authority from source normalization alone
+hard_residual: FH slopes require accepted W/top sector projectors
+files_touched:
+  - docs/YT_NATIVE_BACKEND_AUTHORITY_PROJECTOR_OBSTRUCTION_NOTE_2026-05-27.md
+  - scripts/frontier_yt_native_backend_authority_projector_obstruction.py
+  - outputs/yt_native_backend_authority_projector_obstruction_2026-05-27.json
+next_exact_action: derive accepted W/top sector projectors and source-generator matrix elements
+stop_condition: obstruction packaged and verified

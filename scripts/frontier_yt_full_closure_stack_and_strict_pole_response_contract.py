@@ -45,6 +45,7 @@ STRICT_SAME_SOURCE_OBSTRUCTION = DOCS / "YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_CO
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
+BACKEND_PROJECTOR_OBSTRUCTION = DOCS / "YT_NATIVE_BACKEND_AUTHORITY_PROJECTOR_OBSTRUCTION_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -62,6 +63,7 @@ STRICT_SAME_SOURCE_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_strict_same_source_t
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
+BACKEND_PROJECTOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_native_backend_authority_projector_obstruction_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -124,6 +126,7 @@ def part1_anchors() -> dict[str, str]:
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
+        BACKEND_PROJECTOR_OBSTRUCTION,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -140,6 +143,7 @@ def part1_anchors() -> dict[str, str]:
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
+        BACKEND_PROJECTOR_OBSTRUCTION_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -157,6 +161,7 @@ def part1_anchors() -> dict[str, str]:
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
+        "sector projectors are load-bearing",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -192,6 +197,7 @@ def part2_support_outputs() -> dict[str, Any]:
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
+    projector_obstruction = load_json(BACKEND_PROJECTOR_OBSTRUCTION_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -229,6 +235,9 @@ def part2_support_outputs() -> dict[str, Any]:
     check("native backend candidate is bounded support", native_backend.get("actual_current_surface_status") == "bounded-support backend candidate")
     check("native backend computes 1/sqrt(6) without kappa input", native_backend.get("candidate_backend", {}).get("readout_equals_1_over_sqrt6") is True)
     check("native backend candidate proposal is not allowed", native_backend.get("proposal_allowed") is False)
+    check("backend projector obstruction passed", projector_obstruction.get("fail_count") == 0, projector_obstruction.get("fail_count"))
+    check("backend projector obstruction is route pruning", projector_obstruction.get("trace_class") == "negative_route_pruning")
+    check("projector obstruction keeps projector/dynamics route live", "sector projectors" in projector_obstruction.get("route_still_live", ""))
 
     return {
         "fisher": fisher,
@@ -246,6 +255,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
+        "backend_projector_obstruction": projector_obstruction,
     }
 
 

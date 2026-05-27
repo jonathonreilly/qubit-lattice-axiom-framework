@@ -83,6 +83,9 @@ closed exactly:
   carrier amplitude, C3 algebra, W row, and no-kappa backend candidate do not
   derive the accepted physical top projector or its source-generator matrix
   element
+  positive real C3 transfer/Perron selection is not a top-line law: it picks
+  the C3 singlet Perron line or leaves the nontrivial block degenerate, so it
+  does not supply the target nontrivial C3 character line
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -96,9 +99,11 @@ still open:
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
   accepted physical target/source direction inside the C3 tangent space
-  accepted base C3 circulant dynamics and orientation/phase law for y_0
+accepted base C3 circulant dynamics and orientation/phase law for y_0
   accepted spectral ordering/exclusion of the C3 singlet line as the physical
   top row
+  accepted non-positive, phase/orientation, or strict-pole authority that
+  assigns the physical top row to a nontrivial C3 line
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -778,6 +783,29 @@ positive route is not another source-normalization theorem; it is an accepted
 backend/projector/matrix-element dynamics theorem, or direct strict pole-row
 data.
 
+[`YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md`](YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md)
+then tests a narrower C3 dynamics shortcut: can entrywise-positive real
+C3-circulant transfer dynamics select the target nontrivial top line by
+Perron/Frobenius authority?  For
+
+```text
+T = a I + b(C+C^2),  a>0, b>0,
+```
+
+the eigenvalues are
+
+```text
+P_0 -> a+2b,
+P_omega, P_omega2 -> a-b.
+```
+
+Thus the Perron line is `P_0`, while the nontrivial C3 block remains
+degenerate.  Since `P_0` gives the singlet-size row `A/sqrt(3)` rather than
+the target `A/sqrt(12)`, positive real C3 transfer/Perron selection is not a
+source of nontrivial top-line authority.  The remaining C3 route must add an
+accepted orientation/phase/top-ordering law beyond positive real Perron
+selection, or it must be bypassed by strict same-source top/W pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -821,6 +849,9 @@ proposal_allowed_reason: |
   shortcut from current source/backend/carrier/C3 support to the accepted top
   row: the accepted backend, physical top projector, and source-generator
   matrix element remain load-bearing.
+  The positive real C3 transfer/Perron selection shortcut is also pruned: it
+  selects the C3 singlet Perron line or leaves the nontrivial block degenerate,
+  while the target row requires a nontrivial C3 line or strict pole evidence.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

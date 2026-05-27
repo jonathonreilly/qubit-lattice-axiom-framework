@@ -39,6 +39,9 @@ This runner verifies the current burn-down state:
   non-compute shortcut: source law, carrier amplitude, C3 algebra, W row, and
   no-kappa candidate do not derive the accepted top projector or matrix
   element.
+* The positive real C3 transfer/Perron top-line shortcut is now pruned:
+  positivity selects the C3 singlet Perron line, or leaves the nontrivial
+  block degenerate, and therefore does not supply the target nontrivial line.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -95,6 +98,7 @@ C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION = DOCS / "YT_C3_REAL_SAME_SURFACE_
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY = DOCS / "YT_C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_NOTE_2026-05-27.md"
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT = DOCS / "YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md"
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY = DOCS / "YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md"
+C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO = DOCS / "YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -130,6 +134,7 @@ C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_re
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_circulant_dynamics_ordering_source_law_boundary_2026-05-27.json"
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT = ROOT / "outputs" / "yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json"
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT = ROOT / "outputs" / "yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json"
+C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT = ROOT / "outputs" / "yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -210,6 +215,7 @@ def part1_anchors() -> dict[str, str]:
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY,
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT,
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY,
+        C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -244,6 +250,7 @@ def part1_anchors() -> dict[str, str]:
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT,
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT,
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT,
+        C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -281,6 +288,7 @@ def part1_anchors() -> dict[str, str]:
         "C3 circulant dynamics ordering source-law boundary",
         "strict sparse pole-response availability audit",
         "microscopic backend/projector/matrix-element boundary",
+        "positive real C3 transfer/Perron selection",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -334,6 +342,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_circulant_dynamics_ordering_source_law_boundary = load_json(C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT)
     strict_sparse_top_w_availability_audit = load_json(STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT)
     microscopic_backend_projector_matrix_element_boundary = load_json(MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT)
+    c3_positive_transfer_perron_top_line_nogo = load_json(C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -473,6 +482,25 @@ def part2_support_outputs() -> dict[str, Any]:
         "strict same-source top/W pole-row data" in microscopic_backend_projector_matrix_element_boundary.get("route_still_live", ""),
         microscopic_backend_projector_matrix_element_boundary.get("route_still_live"),
     )
+    check(
+        "C3 positive transfer Perron top-line no-go passed",
+        c3_positive_transfer_perron_top_line_nogo.get("fail_count") == 0,
+        c3_positive_transfer_perron_top_line_nogo.get("fail_count"),
+    )
+    check("C3 positive transfer Perron no-go is route pruning", c3_positive_transfer_perron_top_line_nogo.get("trace_class") == "negative_route_pruning")
+    check(
+        "positive Perron line is the C3 singlet",
+        c3_positive_transfer_perron_top_line_nogo.get("certificate_boundary", {}).get("perron_line_is_p0") is True,
+    )
+    check(
+        "positive Perron route does not isolate nontrivial line",
+        c3_positive_transfer_perron_top_line_nogo.get("certificate_boundary", {}).get("nontrivial_line_isolated") is False,
+    )
+    check(
+        "positive Perron route prunes nontrivial top-line shortcut",
+        "nontrivial top line" in c3_positive_transfer_perron_top_line_nogo.get("route_pruned", ""),
+        c3_positive_transfer_perron_top_line_nogo.get("route_pruned"),
+    )
 
     return {
         "fisher": fisher,
@@ -508,6 +536,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_circulant_dynamics_ordering_source_law_boundary": c3_circulant_dynamics_ordering_source_law_boundary,
         "strict_sparse_top_w_availability_audit": strict_sparse_top_w_availability_audit,
         "microscopic_backend_projector_matrix_element_boundary": microscopic_backend_projector_matrix_element_boundary,
+        "c3_positive_transfer_perron_top_line_nogo": c3_positive_transfer_perron_top_line_nogo,
     }
 
 
@@ -712,7 +741,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive new microscopic dynamics with accepted backend/projectors/matrix elements",
         },
@@ -742,6 +771,9 @@ def main() -> int:
             "the current source-law/carrier/C3/no-kappa shortcut because the "
             "accepted backend, physical top projector, and source-generator "
             "matrix element remain load-bearing. "
+            "The positive real C3 transfer/Perron shortcut is also pruned "
+            "because positivity selects P_0, while the target coefficient "
+            "requires a nontrivial C3 character line or strict pole rows. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -786,6 +818,7 @@ def main() -> int:
             "c3_circulant_dynamics_ordering_source_law_boundary_fail_count": support_outputs["c3_circulant_dynamics_ordering_source_law_boundary"].get("fail_count"),
             "strict_sparse_top_w_availability_audit_fail_count": support_outputs["strict_sparse_top_w_availability_audit"].get("fail_count"),
             "microscopic_backend_projector_matrix_element_boundary_fail_count": support_outputs["microscopic_backend_projector_matrix_element_boundary"].get("fail_count"),
+            "c3_positive_transfer_perron_top_line_nogo_fail_count": support_outputs["c3_positive_transfer_perron_top_line_nogo"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -796,6 +829,9 @@ def main() -> int:
             "docs/YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md",
             "scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py",
             "outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json",
+            "docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
+            "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

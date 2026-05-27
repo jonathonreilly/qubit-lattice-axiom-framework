@@ -1,0 +1,54 @@
+{
+  "actual_current_surface_status": "no-go",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "bare_retained_allowed": false,
+    "nontrivial_line_isolated": false,
+    "orientation_phase_law_derived": false,
+    "perron_line_is_p0": true,
+    "proposal_allowed": false,
+    "real_positive_c3_transfer_checked": true,
+    "strict_pole_rows_present": false
+  },
+  "claim_id": "yt_c3_positive_transfer_perron_top_line_no_go_note_2026-05-27",
+  "dependency_status": {
+    "c3_dynamics": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "matrix_factorization": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "microscopic_boundary": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
+  "pass_count": 64,
+  "perron_witness": {
+    "T": "a*I + b*(C+C^2), a>0, b>0",
+    "conclusion": "positive real C3 Perron selection chooses P_0, not a nontrivial line",
+    "lambda_P0": "a + 2*b",
+    "lambda_Pomega": "a - b",
+    "lambda_Pomega2": "a - b",
+    "perron_gap": "3*b"
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Positive real C3 transfer/Perron selection picks the C3 singlet line or leaves the nontrivial block degenerate. It does not supply the physical nontrivial top-line law needed for A/sqrt(12).",
+  "reachability_to_target": "prunes",
+  "route_pruned": "positive real C3 transfer/Perron selection supplies nontrivial top line",
+  "route_still_live": "derive an accepted orientation/phase/top-ordering dynamics theorem beyond positive real C3 Perron selection, or produce strict top/W pole-row data",
+  "target_row_conflict": {
+    "nontrivial_target_row": "A*(-3 + sqrt(3)*I)/(6*(sqrt(3) - I))",
+    "perron_line_row": "sqrt(3)*A/3",
+    "route_pruned": "positive Perron top-line selection supplies singlet-size row"
+  },
+  "trace_class": "negative_route_pruning"
+}

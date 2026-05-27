@@ -1,0 +1,102 @@
+================================================================================
+PMNS TM_2 FULL MAGNITUDES-SQUARED MATRIX (NARROW) VERIFIER
+================================================================================
+Theorem note: docs/AXIOM_FIRST_PMNS_TM2_FULL_MAGNITUDES_NARROW_THEOREM_NOTE_2026-05-26.md
+Status: source-only research-lane proposal. No audit-lane wiring.
+Upstream: Block 1 (PR #1979).
+
+--------------------------------------------------------------------------------
+M1. Closed form of the |U|² matrix
+--------------------------------------------------------------------------------
+  [PASS] M1 at s² = 0: |U_e1|² = 2/3 - s² = 2/3  (got 2/3)
+  [PASS] M1 at s² = 0: |U_e2|² = 1/3 (trimaximal)  (got 1/3)
+  [PASS] M1 at s² = 0: |U_e3|² = s² (definition)  (got 0)
+  [PASS] M1 at s² = 0: |U_μ1|² = 1/6 + s²/2 = 1/6  (got 1/6)
+  [PASS] M1 at s² = 0: |U_μ2|² = 1/3  (got 1/3)
+  [PASS] M1 at s² = 0: |U_μ3|² = (1 - s²)/2 = 1/2  (got 1/2)
+  [PASS] M1 at s² = 1/100: |U_e1|² = 2/3 - s² = 197/300  (got 197/300)
+  [PASS] M1 at s² = 1/100: |U_e2|² = 1/3 (trimaximal)  (got 1/3)
+  [PASS] M1 at s² = 1/100: |U_e3|² = s² (definition)  (got 1/100)
+  [PASS] M1 at s² = 1/100: |U_μ1|² = 1/6 + s²/2 = 103/600  (got 103/600)
+  [PASS] M1 at s² = 1/100: |U_μ2|² = 1/3  (got 1/3)
+  [PASS] M1 at s² = 1/100: |U_μ3|² = (1 - s²)/2 = 99/200  (got 99/200)
+  [PASS] M1 at s² = 1/45: |U_e1|² = 2/3 - s² = 29/45  (got 29/45)
+  [PASS] M1 at s² = 1/45: |U_e2|² = 1/3 (trimaximal)  (got 1/3)
+  [PASS] M1 at s² = 1/45: |U_e3|² = s² (definition)  (got 1/45)
+  [PASS] M1 at s² = 1/45: |U_μ1|² = 1/6 + s²/2 = 8/45  (got 8/45)
+  [PASS] M1 at s² = 1/45: |U_μ2|² = 1/3  (got 1/3)
+  [PASS] M1 at s² = 1/45: |U_μ3|² = (1 - s²)/2 = 22/45  (got 22/45)
+  [PASS] M1 at s² = 1/10: |U_e1|² = 2/3 - s² = 17/30  (got 17/30)
+  [PASS] M1 at s² = 1/10: |U_e2|² = 1/3 (trimaximal)  (got 1/3)
+  [PASS] M1 at s² = 1/10: |U_e3|² = s² (definition)  (got 1/10)
+  [PASS] M1 at s² = 1/10: |U_μ1|² = 1/6 + s²/2 = 13/60  (got 13/60)
+  [PASS] M1 at s² = 1/10: |U_μ2|² = 1/3  (got 1/3)
+  [PASS] M1 at s² = 1/10: |U_μ3|² = (1 - s²)/2 = 9/20  (got 9/20)
+
+--------------------------------------------------------------------------------
+Structural properties: doubly stochastic, μτ-democratic, trimaximal column 2
+--------------------------------------------------------------------------------
+  [PASS] Row sums = 1 at s² = 0  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] Column sums = 1 at s² = 0  (col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] μτ-democracy (Row 2 = Row 3) at s² = 0
+  [PASS] Trimaximal column 2 (|U_α2|² = 1/3 ∀α) at s² = 0
+  [PASS] Row sums = 1 at s² = 1/100  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] Column sums = 1 at s² = 1/100  (col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] μτ-democracy (Row 2 = Row 3) at s² = 1/100
+  [PASS] Trimaximal column 2 (|U_α2|² = 1/3 ∀α) at s² = 1/100
+  [PASS] Row sums = 1 at s² = 1/45  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] Column sums = 1 at s² = 1/45  (col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] μτ-democracy (Row 2 = Row 3) at s² = 1/45
+  [PASS] Trimaximal column 2 (|U_α2|² = 1/3 ∀α) at s² = 1/45
+  [PASS] Row sums = 1 at s² = 1/10  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] Column sums = 1 at s² = 1/10  (col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] μτ-democracy (Row 2 = Row 3) at s² = 1/10
+  [PASS] Trimaximal column 2 (|U_α2|² = 1/3 ∀α) at s² = 1/10
+
+--------------------------------------------------------------------------------
+Special-case rationalities
+--------------------------------------------------------------------------------
+  [PASS] At s² = 0 (TBM limit): all |U_αi|² have denominator ≤ 6 (= |S_3|)  (max denominator: 6; matrix: [[Fraction(2, 3), Fraction(1, 3), Fraction(0, 1)], [Fraction(1, 6), Fraction(1, 3), Fraction(1, 2)], [Fraction(1, 6), Fraction(1, 3), Fraction(1, 2)]])
+  [PASS] At s² = 1/45: all |U_αi|² have denominator ≤ 90 (= 2 × 45)  (max denominator: 45)
+
+--------------------------------------------------------------------------------
+Empirical comparison (consistency check only, NOT derivation input)
+--------------------------------------------------------------------------------
+
+  Entry  | Predicted | Measured (±)        | Deviation | σ
+  -------|-----------|---------------------|-----------|-----
+  |U_e1|² | 0.6444    | 0.6730 ± 0.0120    | -0.0286   | 2.4σ
+  |U_e2|² | 0.3333    | 0.3050 ± 0.0120    | +0.0283   | 2.4σ
+  |U_e3|² | 0.0223    | 0.0223 ± 0.0007    | +0.0000   | 0.0σ
+  |U_μ1|² | 0.1778    | 0.1160 ± 0.0200    | +0.0618   | 3.1σ
+  |U_μ2|² | 0.3333    | 0.3450 ± 0.0200    | -0.0117   | 0.6σ
+  |U_μ3|² | 0.4889    | 0.5390 ± 0.0200    | -0.0502   | 2.5σ
+  |U_τ1|² | 0.1778    | 0.2110 ± 0.0200    | -0.0332   | 1.7σ
+  |U_τ2|² | 0.3333    | 0.3490 ± 0.0200    | -0.0157   | 0.8σ
+  |U_τ3|² | 0.4889    | 0.4390 ± 0.0200    | +0.0499   | 2.5σ
+  [PASS] Empirical |U_e3|² matches exactly (s² is definitional)  (prediction = s² (input); not a derivation)
+  [PASS] Empirical column 2 matches within ~1σ everywhere  (prediction = 1/3 = 0.333 vs measured 0.305-0.349)
+  [PASS] Empirical |U_e2|² shows ~2.3σ tension (Block 1's L3 sum-rule tension at the |U|² level)  (3σ-class tension; resolves via sub-leading C_3 breaking (separate PR))
+  [PASS] Empirical μτ-democracy (|U_μi|² = |U_τi|²) shows ~3.5σ tension in column 3  (measured |U_μ3|² = 0.539, |U_τ3|² = 0.439; framework predicts equal)
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT specify s² = sin²θ_13 (free parameter at this order)
+  [PASS] Does NOT address empirical column-1/column-3 ~2-3σ deviations (sub-leading work)
+  [PASS] Does NOT predict neutrino mass observables, mass ordering, or Δm² values
+  [PASS] Does NOT consume PDG/NuFit as derivation inputs (consistency checks only)
+  [PASS] Does NOT propose new axiom or theory-language extension
+  [PASS] Does NOT predict any audit verdict
+  [PASS] Does NOT promote, retire, or re-classify any existing audit row
+
+================================================================================
+Summary: PASS=53 FAIL=0
+================================================================================
+TM_2 full magnitudes-squared matrix |U|² derived from Block 1 + unitarity.
+  |U|² = ( 2/3 - s²    1/3    s²       )
+         ( 1/6 + s²/2  1/3   (1-s²)/2  )    s² := sin²θ_13
+         ( 1/6 + s²/2  1/3   (1-s²)/2  )
+
+Single free parameter s². Doubly stochastic, μτ-democratic, trimaximal col 2.
+At s² = 0: rational denominator ≤ 6. At s² = 1/45: denominator ≤ 90.

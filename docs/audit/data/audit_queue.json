@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 235,
     "high": 328,
-    "leaf": 283,
+    "leaf": 282,
     "medium": 311
   },
   "cycle_break_target_count": 3,
@@ -26760,32 +26760,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_ew_color_projection_theorem",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/yt_ew_sin_sq_theta_w_preservation_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35193,6 +35167,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 3,
-  "total_pending": 1157
+  "ready_count": 2,
+  "total_pending": 1156
 }

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 537 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1157 |
+| unaudited | 1156 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -52,21 +52,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 4 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
+| `decoration_under_yt_ew_color_projection_theorem` | 1 |
 
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 836 |
 | `audited_conditional` | 79 |
-| `audited_decoration` | 48 |
+| `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1386 |
+| `unaudited` | 1385 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1071 |
-| `decoration` | 49 |
+| `bounded_theorem` | 1070 |
+| `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 111 |
@@ -1088,6 +1089,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
+| `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_yt_ew_color_projection_theorem` | cross_family | codex-gpt-5.5 | A | `yt_ew_color_projection_theorem` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -14878,6 +14880,23 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The exact matching coefficient (N_c^2 - 1)/N_c^2 for the physical EW current renormalization requires fixing the disconnected coefficient at non-perturbative level.  _(class `B`)_
 - **chain closes:** False — The supplied dependencies close the algebraic channel fraction and the kappa-family no-selector boundary, but they do not prove the source note's stronger finite-Nc non-exactness claim. The note's obstruction list and standard-QFT premises are not enough, under no-go discipline, to turn absence of a retained selector into an exhaustive no-go.
 - **rationale:** Issue: The queue hint positive_theorem is incorrect; this is a no-go/obstruction attempt, but the note's obstruction list does not exhaust the exact matching-rule routes under N1-N8. Why this blocks: N1 names only three routes, N2 does not establish independence of O1/O3, N3 leaves standard-QFT/OZI/glueball premises as unsupplied hidden walls, N5/N7 show that 'NOT exact at finite N_c' is broader than 'not derived by this packet', and N8 cannot be completed from the restricted inputs. Repair target: Narrow the source to the current-packet no-selector boundary already supported by the kappa-family dependency, or add a retained selector/no-go proof with a full N1-N8 checklist, at least five distinct route closures, collapsed wall independence, and explicit authority for the non-perturbative disconnected-current/OZI claims. Claim boundary until fixed: downstream rows may cite only the algebraic F_adj = 8/9 support and the current-packet kappa/selector residual; they may not cite an exact physical R_conn = 8/9 derivation or an exhaustive finite-Nc no-go.
+- **auditor confidence:** high
+
+### `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`
+
+- **Note:** [`YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md`](../../docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic corollary of the retained K_EW(kappa_EW) family: any common nonzero multiplicative rescaling of g_Y and g_2 cancels from sin^2(theta_W)=g_Y^2/(g_Y^2+g_2^2). This does not select kappa_EW, does not derive an individual 9/8 coupling projection, and adds no independent comparator beyond the parent packet.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_yt_ew_color_projection_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** sin^2(theta_W)' = (K_EW g_Y)^2 / ((K_EW g_Y)^2 + (K_EW g_2)^2) = g_Y^2 / (g_Y^2 + g_2^2) = sin^2(theta_W).  _(class `A`)_
+- **chain closes:** True — The symbolic cancellation is exact and the runner verifies it for the generic kappa_EW form plus kappa_EW=0 and kappa_EW=1. The result is nevertheless ordinary algebra over the retained parent K_EW(kappa_EW) family and the retained Weinberg-angle definition, with no new physical selector or comparator.
+- **rationale:** Issue: the source's algebra is correct, but the load-bearing fact is just cancellation of a common multiplicative factor already implied by the parent K_EW(kappa_EW) family/no-go packet.
+Why this blocks: separate retained bounded status would duplicate a direct algebraic corollary of the parent and inflate the claim surface without adding a new observable, selector theorem, or external comparator.
+Repair target: box this row under yt_ew_color_projection_theorem, or re-promote only if a future revision adds independent content beyond common-factor cancellation.
+Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero EW coupling rescaling is exact algebra, but it is decoration rather than an independent theorem.
+- **decoration parent:** `yt_ew_color_projection_theorem`
 - **auditor confidence:** high
 
 ### `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25`

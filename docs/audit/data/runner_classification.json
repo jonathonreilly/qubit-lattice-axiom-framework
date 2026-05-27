@@ -3876,6 +3876,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py"
     },
+    "coulomb_stability_upper_bound_support_note_2026-05-20": {
+      "assert_count": 2,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_coulomb_stability_scaling_repair.py"
+    },
     "coupled_field_generated_family_probe_note": {
       "assert_count": 0,
       "counts": {
@@ -34894,6 +34906,21 @@
       "counts": {
         "A": 21,
         "B": 7,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_coulomb_stability_scaling_repair.py": {
+      "assert_count": 2,
+      "claims": [
+        "coulomb_stability_upper_bound_support_note_2026-05-20"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
         "C": 0,
         "D": 0
       },

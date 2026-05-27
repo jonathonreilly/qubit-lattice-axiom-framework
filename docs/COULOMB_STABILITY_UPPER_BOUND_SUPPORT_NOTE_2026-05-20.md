@@ -3,6 +3,7 @@
 **Date:** 2026-05-20
 **Claim type:** bounded_theorem
 **Status:** source-side proposal; independent audit lane only
+**Primary runner:** [`scripts/frontier_coulomb_stability_scaling_repair.py`](../scripts/frontier_coulomb_stability_scaling_repair.py)
 **Related wrapper:** `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only.
@@ -32,91 +33,121 @@ the D=3 upper-bound route. It does not claim a repo-wide axiom change and it
 does not claim a complete framework-internal derivation of higher-dimensional
 atomic stability.
 
-The landable support claim is narrower, and is stated explicitly conditional
-on the admitted external premises (P1)-(P3) recorded in the Inputs section
-below:
+The landable support claim is narrower:
 
-> **Conditional scaling lemma.** Given (P1) the d-dimensional continuum
-> Coulomb Hamiltonian `H_d = -(hbar^2/2m) Delta_d - alpha/r^(d-2)` as an
-> external admitted form, (P2) standard d-dimensional continuum quantum
-> mechanics (radial Schrödinger equation, scaled-trial-state expectations,
-> hydrogenic `d = 3` spectrum) as admitted background, and (P3) a
-> Coulomb/scalar potential-form sector identification (no gauge coupling or
-> electromagnetic sector derived from the framework), then the elementary
-> trial-state scaling argument exhibits `d = 4` as the critical dimension:
-> `d >= 5` is unbounded below, while `d = 3` is the canonical case with the
-> Rydberg accumulation spectrum.
+> **Green-kernel scaling lemma.** For integer `d >= 3`, let
+> `G_d(r) = r^(2-d)` on `R^d \ {0}` and consider the quadratic form
+> `Q_d[psi] = kappa int |grad psi|^2 dx - alpha int G_d(|x|)|psi|^2 dx`
+> on smooth compactly supported test functions away from the origin, with
+> `kappa, alpha > 0`. Then `Delta G_d = 0` away from the origin, the scaled
+> functions `psi_lambda(x) = lambda^(d/2) psi(lambda x)` preserve norm, and
+> `Q_d[psi_lambda] = lambda^2 T - lambda^(d-2) U`. Therefore the attractive
+> Green-kernel form is unbounded below for every integer `d >= 5`; `d = 4`
+> is the marginal inverse-square exponent; and the scaling test alone does
+> not prove a physical `d = 3` hydrogen spectrum.
 
-The argument is purely algebraic once (P1)-(P3) are admitted. This note does
-not derive (P1), (P2), or (P3) from already retained framework authority. It
-supports the existing named-import wrapper by writing out the elementary
-scaling step explicitly, conditional on those admissions.
+The result is a bounded continuum-math support lemma. It retires the
+load-bearing import of the trial-state scaling algebra inside this row, but
+it does not supply a framework-native electromagnetic sector, gauge coupling,
+or full spectral theorem. Those remain outside this note.
 
 ## Inputs
 
-All three inputs below are explicitly admitted external premises. None is
-derived in the restricted packet of this note.
+The binding calculation uses only the following mathematical inputs:
 
-1. **(P1) d-dimensional continuum Coulomb Hamiltonian (admitted external
-   premise).** The dimensional potential pattern is linked to
-   [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md), whose
-   audited binding scope is cache-backed `d = 3` and `d = 4` rows only. Use of
-   the general-`d` continuum Coulomb law
-   `H_d = -(hbar^2/2m) Delta_d - alpha/r^(d-2)` is an explicit external
-   admission and is not retained as a universal framework-internal law.
-2. **(P2) Standard d-dimensional continuum quantum mechanics (admitted
-   external premise).** The radial Schrödinger equation in `d` dimensions,
-   the scaled-trial-state expectations
-   `<T>_{psi_lambda} = lambda^2 T`, `<V>_{psi_lambda} = -lambda^(d-2) U`,
-   and the hydrogenic `d = 3` Rydberg spectrum are admitted as external
-   continuum-QM background. The corresponding spectral/domain classification
-   (self-adjoint extensions, accumulation at threshold) is admitted with
-   them and is not re-derived in the restricted packet.
-3. **(P3) Coulomb/scalar sector identification (admitted external premise).**
-   The note treats `H_d` as a Coulomb/scalar potential-form analogue. The
-   identification with a physical electromagnetic sector, a derived gauge
-   coupling, or a framework-internal `alpha` is not admitted by this note.
+1. **Euclidean radial calculus.** For a radial function `f(r)` on
+   `R^d \ {0}`,
 
-## Scaling Argument
+   ```text
+   Delta f = f''(r) + ((d-1)/r) f'(r).
+   ```
 
-Given admissions (P1)-(P3) above, the algebraic step proceeds as follows.
-For the d-dimensional Coulomb Hamiltonian admitted in (P1),
+   Substituting `f(r) = r^a` gives
 
-```text
-H_d = -(hbar^2 / 2m) Delta_d - alpha / r^(d-2),
-```
+   ```text
+   Delta r^a = a(a + d - 2) r^(a-2).
+   ```
 
-take a normalized trial state `psi_lambda(r) = lambda^(d/2) psi(lambda r)`
-of the form admitted in (P2). The kinetic and potential expectations scale
-as
+   With `a = 2 - d`, this gives `Delta r^(2-d) = 0` away from the origin.
+   The singular source normalization at the origin is not used.
+2. **Compactly supported test functions.** The form is evaluated on
+   smooth compactly supported `psi` with support avoiding the origin and with
+   `T = kappa int |grad psi|^2 dx > 0` and
+   `U = alpha int r^(2-d) |psi|^2 dx > 0`.
+3. **Dilation.** For `lambda > 0`,
 
-```text
-<T>_{psi_lambda} = lambda^2 T,
-<V>_{psi_lambda} = -lambda^(d-2) U,
-```
+   ```text
+   psi_lambda(x) = lambda^(d/2) psi(lambda x).
+   ```
 
-with `T, U > 0` for a suitable compactly supported trial state. Therefore
+   This is a change-of-variables calculation, not an admitted spectral fact.
+
+No physical electromagnetic-sector identification is used in the binding
+lemma. The symbols `alpha` and `kappa` are positive form coefficients only.
+
+## Scaling Proof
+
+For integer `d >= 3`, define
 
 ```text
-<H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U.          (1)
+Q_d[psi] = kappa int |grad psi(x)|^2 dx
+           - alpha int |x|^(2-d) |psi(x)|^2 dx.
 ```
 
-For `d >= 5`, the attractive potential term grows faster than the kinetic
-term as `lambda -> infinity`, so the Hamiltonian is unbounded below.
-
-For `d = 4`, both terms scale as `lambda^2`; this is the marginal inverse-square
-case. Boundedness depends on the coupling and domain choice, so it does not
-give the canonical Coulomb spectrum by itself.
-
-For `d = 3`, the standard Coulomb problem admitted in (P2) has the
-hydrogenic spectrum
+The radial identity above shows that `|x|^(2-d)` is the harmonic Green-kernel
+shape away from the origin. For the dilation `psi_lambda`, the norm obeys
 
 ```text
-E_n = -m alpha^2 / (2 hbar^2 n^2),     n = 1, 2, 3, ...
+int |psi_lambda(x)|^2 dx
+= int lambda^d |psi(lambda x)|^2 dx
+= int |psi(y)|^2 dy.
 ```
 
-with bound states accumulating at threshold. This spectrum is consumed as
-admitted external continuum-QM background and is not re-derived here.
+The gradient term scales as
+
+```text
+int |grad psi_lambda(x)|^2 dx
+= lambda^2 int |grad psi(y)|^2 dy,
+```
+
+and the attractive Green-kernel term scales as
+
+```text
+int |x|^(2-d) |psi_lambda(x)|^2 dx
+= lambda^(d-2) int |y|^(2-d) |psi(y)|^2 dy.
+```
+
+Therefore
+
+```text
+Q_d[psi_lambda] = lambda^2 T - lambda^(d-2) U.          (1)
+```
+
+For every integer `d >= 5`, the attractive term in (1) grows with exponent
+`d - 2 > 2`, so `Q_d[psi_lambda] -> -infinity` as `lambda -> infinity`.
+Thus the form is unbounded below on this test-function family.
+
+For `d = 4`, both terms scale as `lambda^2`; this is the marginal
+inverse-square exponent. The scaling argument alone does not decide
+boundedness without a coupling/domain theorem.
+
+For `d = 3`, the attractive term scales as `lambda`, so this ultraviolet
+collapse test does not make the form unbounded below. This note does not
+claim the hydrogenic spectrum, threshold accumulation, self-adjoint-extension
+classification, or physical Rydberg scale.
+
+## Runner Certificate
+
+`scripts/frontier_coulomb_stability_scaling_repair.py` verifies the restricted
+claim by checking:
+
+- the radial Laplacian formula `Delta r^a = a(a+d-2) r^(a-2)`;
+- the Green-kernel substitution `a = 2-d`;
+- norm preservation for `psi_lambda`;
+- kinetic scaling by `lambda^2`;
+- potential scaling by `lambda^(d-2)`;
+- the exponent ordering for `d = 3`, `d = 4`, and all checked `d >= 5`;
+- concrete large-`lambda` examples showing negative divergence for `d >= 5`.
 
 ## Relation To Dimension Selection
 
@@ -126,20 +157,19 @@ in the bounded sense above. It complements
 not close the D=3 chain by itself and does not promote the minimal-axioms
 spatial-substrate line.
 
-The lower-bound bridge and single-clock uniqueness gaps remain open as
-described in `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`.
+The lower-bound bridge and single-clock uniqueness gaps remain separate
+open issues recorded in `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`.
 
 ## What This Does Not Close
 
-- It does not retire the higher-dimensional atomic-stability import completely.
-- It does not establish a retained universal dimensional Coulomb law for all
-  integer `d`.
-- It does not derive (P1) the d-dimensional continuum Coulomb Hamiltonian
-  from already retained framework authority.
-- It does not derive (P2) standard d-dimensional continuum quantum mechanics
-  or the hydrogenic `d = 3` spectrum from already retained framework
-  authority.
-- It does not derive (P3) the electromagnetic / gauge sector identification
-  or a coupling value from the framework.
+- It does not retire the higher-dimensional atomic-stability import completely:
+  it retires only the Green-kernel scaling sublemma.
+- It does not establish a framework-native electromagnetic sector, gauge
+  coupling, or physical value of `alpha`.
+- It does not prove a full hydrogenic `d = 3` spectrum, threshold
+  accumulation, or self-adjoint-extension classification.
+- It does not prove a universal dimensional Coulomb law as a physical
+  framework theorem for all `d`; the binding statement is a bounded
+  continuum-math lemma about the stated Green-kernel form.
 - It does not settle the lower-bound force-sign bridge.
 - It does not promote any parent row or audit status.

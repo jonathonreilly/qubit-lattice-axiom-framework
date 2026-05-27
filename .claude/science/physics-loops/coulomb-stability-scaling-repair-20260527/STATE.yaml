@@ -1,0 +1,20 @@
+loop_slug: coulomb-stability-scaling-repair-20260527
+target_claim_id: coulomb_stability_upper_bound_support_note_2026-05-20
+target_status: bounded-support
+runtime_mode: ordered science-fix loop
+cycle_count: 1
+active_route: narrow_to_green_kernel_scaling_lemma
+hard_residual: physical EM-sector/readout and hydrogen-spectrum closure remain outside this row
+files_touched:
+  - docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+  - scripts/frontier_coulomb_stability_scaling_repair.py
+  - .claude/science/physics-loops/coulomb-stability-scaling-repair-20260527/
+open_imports:
+  - physical electromagnetic sector
+  - physical coupling value
+  - full hydrogenic spectral/domain theorem
+trace_gate: direct_blocker_closure_partial
+review_disposition: local_mechanical_checks_passed
+pr_status: not_opened_yet
+next_exact_action: commit, push, open draft PR
+stop_condition: continue ordered backlog after PR is opened

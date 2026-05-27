@@ -1,0 +1,58 @@
+COULOMB GREEN-KERNEL SCALING REPAIR
+Scope: bounded continuum-math scaling lemma; no EM-sector claim.
+
+PASS: d=3: Delta r^(2-d)=0 away from the origin
+PASS: d=4: Delta r^(2-d)=0 away from the origin
+PASS: d=5: Delta r^(2-d)=0 away from the origin
+PASS: d=6: Delta r^(2-d)=0 away from the origin
+PASS: d=7: Delta r^(2-d)=0 away from the origin
+PASS: d=8: Delta r^(2-d)=0 away from the origin
+PASS: d=9: Delta r^(2-d)=0 away from the origin
+PASS: d=10: Delta r^(2-d)=0 away from the origin
+PASS: d=3: dilation preserves L2 norm
+PASS: d=3: kinetic form scales as lambda^2
+PASS: d=3: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=4: dilation preserves L2 norm
+PASS: d=4: kinetic form scales as lambda^2
+PASS: d=4: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=5: dilation preserves L2 norm
+PASS: d=5: kinetic form scales as lambda^2
+PASS: d=5: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=6: dilation preserves L2 norm
+PASS: d=6: kinetic form scales as lambda^2
+PASS: d=6: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=7: dilation preserves L2 norm
+PASS: d=7: kinetic form scales as lambda^2
+PASS: d=7: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=8: dilation preserves L2 norm
+PASS: d=8: kinetic form scales as lambda^2
+PASS: d=8: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=9: dilation preserves L2 norm
+PASS: d=9: kinetic form scales as lambda^2
+PASS: d=9: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=10: dilation preserves L2 norm
+PASS: d=10: kinetic form scales as lambda^2
+PASS: d=10: Green-kernel attraction scales as lambda^(d-2)
+PASS: d=3: attractive exponent 1 is sub-quadratic
+PASS: d=4: attractive exponent 2 is marginal
+PASS: d=5: attractive exponent beats kinetic exponent
+PASS: d=6: attractive exponent beats kinetic exponent
+PASS: d=7: attractive exponent beats kinetic exponent
+PASS: d=8: attractive exponent beats kinetic exponent
+PASS: d=9: attractive exponent beats kinetic exponent
+PASS: d=10: attractive exponent beats kinetic exponent
+PASS: d=5: Q(lambda=10)<0 for T=U=1
+PASS: d=5: Q(lambda=100) is more negative
+PASS: d=6: Q(lambda=10)<0 for T=U=1
+PASS: d=6: Q(lambda=100) is more negative
+PASS: d=7: Q(lambda=10)<0 for T=U=1
+PASS: d=7: Q(lambda=100) is more negative
+PASS: d=8: Q(lambda=10)<0 for T=U=1
+PASS: d=8: Q(lambda=100) is more negative
+PASS: d=9: Q(lambda=10)<0 for T=U=1
+PASS: d=9: Q(lambda=100) is more negative
+PASS: d=10: Q(lambda=10)<0 for T=U=1
+PASS: d=10: Q(lambda=100) is more negative
+PASS: d=3: lambda^2-lambda scaling has finite trial-family minimum
+
+SUMMARY: PASS=53 FAIL=0

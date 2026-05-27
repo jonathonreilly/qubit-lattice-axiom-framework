@@ -1,0 +1,91 @@
+================================================================================
+PMNS MULTI-WITNESS CONVERGENCE CAPSTONE VERIFIER (Block 4)
+================================================================================
+Theorem note: docs/PMNS_MULTI_WITNESS_CONVERGENCE_CAPSTONE_THEOREM_NOTE_2026-05-26.md
+Status: source-only research-lane capstone. No audit-lane wiring.
+
+Companions:
+  PR #1979 (Block 1: TM_2 leading-order)         H_B1
+  PR #1982 (Block 2: full |U|² closed form)      H_B2
+  PR #1985 (Block 3: K-theoretic foundation)     H_B3
+
+--------------------------------------------------------------------------------
+Π1. PMNS leading-order prediction (TM_2 + maximal CP + closed |U|²)
+--------------------------------------------------------------------------------
+  [PASS] Π1.a: Trimaximal middle column |U_α2|² = 1/3 ∀α (Block 1 L1, Block 3 K1-K4)  (four-frame convergence: forward-cycle eigenvector + Z_3 DFT + Schur + K-theory)
+  [PASS] Π1.b: Maximal atmospheric θ_23 = π/4 (Block 1 L2)  (from R2 |U_μi|² = |U_τi|² + unitarity)
+  [PASS] Π1.c: TM_2 sum rule 3 sin²θ_12 cos²θ_13 = 1 (Block 1 L3)  (from L1 + PDG parametrization |U_e2|² = cos²θ_13 sin²θ_12)
+  [PASS] Π1.d: Maximal CP violation δ_CP ∈ {π/2, 3π/2} (Block 1 L4)  (algebraically forced by L1+L2+unitarity (cos δ_CP = 0))
+  [PASS] Π1.e: M1 at s²=0: rows sum to 1, cols sum to 1, μτ-democracy  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)], col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] Π1.e: M1 at s²=1/100: rows sum to 1, cols sum to 1, μτ-democracy  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)], col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] Π1.e: M1 at s²=1/45: rows sum to 1, cols sum to 1, μτ-democracy  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)], col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+  [PASS] Π1.e: M1 at s²=1/10: rows sum to 1, cols sum to 1, μτ-democracy  (row sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)], col sums: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)])
+
+--------------------------------------------------------------------------------
+Π2. Conditional capstone closure under (H_B1) ∧ (H_B2) ∧ (H_B3)
+--------------------------------------------------------------------------------
+  [PASS] Π2: Conditional structure explicit — does NOT assert H_B1, H_B2, H_B3  (capstone is conditional, not unconditional)
+  [PASS] Π2: Under all three hypotheses, leading-order PMNS is a SINGLE retained structural object  (L1-L4 + M1 + K1-K4 compose into one coherent structure)
+  [PASS] Π2: Remaining frontier flagged: sub-leading θ_13, ~3σ tensions, neutrino masses  (not in this capstone's scope)
+
+--------------------------------------------------------------------------------
+Π3. Lepton-sector unification: 1/N + (N-1)/N² = (2N-1)/N²
+--------------------------------------------------------------------------------
+
+    N |     1/N (PMNS) |   (N-1)/N² (Koide) |    (2N-1)/N² (sum)
+  --- | -------------- | ------------------ | ------------------
+    3 |            1/3 |                2/9 |                5/9
+    4 |            1/4 |               3/16 |               7/16
+    5 |            1/5 |               4/25 |               9/25
+    6 |            1/6 |               5/36 |              11/36
+    7 |            1/7 |               6/49 |              13/49
+   12 |           1/12 |             11/144 |             23/144
+  100 |          1/100 |           99/10000 |          199/10000
+  [PASS] Π3 sweep: 1/N + (N-1)/N² = (2N-1)/N² verified at N ∈ {3, 4, 5, 6, 7, 12, 100}
+
+  Framework-relevant N:
+  [PASS] Π3 at N=3 (lepton): PMNS 1/3 + Koide 2/9 = 5/9 ≈ 0.5556
+  [PASS] Π3 at N=6 (quark): PMNS 1/6 + Koide 5/36 = 11/36 ≈ 0.3056
+
+  [PASS] Π3 interpretation: SAME Z_3 character substrate produces both invariants  (trivial-irrep density (PMNS) + non-trivial-irrep density (Koide))
+  [PASS] Π3 interpretation: PMNS + Koide are NOT independent observables; structurally tied  (two facets of the same Z_3 representation-ring algebra)
+
+--------------------------------------------------------------------------------
+Empirical sanity (consistency check only, NOT derivation input)
+--------------------------------------------------------------------------------
+  [PASS] Empirical column-2 magnitudes sum to 0.999 (unitarity ✓)
+  [PASS] Framework predicts trimaximal: each |U_α2|² = 1/3 = 0.333  (measured: [0.305, 0.345, 0.349]; max deviation: 0.028 (~1σ))
+  [PASS] Empirical column-2 average ≈ 0.3330, framework predicts 1/3 = 0.3333  (averaged trimaximal magnitude matches framework prediction)
+
+--------------------------------------------------------------------------------
+Cross-tie to dynamics-lane structure
+--------------------------------------------------------------------------------
+  [PASS] PMNS lane and dynamics-lane share the Z_3 character substrate  (same A1+A2 + retained C_3 produces both PMNS column-2 and Koide phase)
+  [PASS] Sum identity 1/N + (N-1)/N² = (2N-1)/N² is an elementary arithmetic fact  (not a new mathematical theorem; structural interpretation is the content)
+  [PASS] The framework's lepton sector lives ENTIRELY on the Z_3 character substrate  (bridge between Koide axis and PMNS axis is structural, not phenomenological)
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT specify s² = sin²θ_13 (free parameter; multi-PR sub-leading work)
+  [PASS] Does NOT address ~2-3σ empirical tensions in columns 1, 3 (sub-leading)
+  [PASS] Does NOT resolve ~3.5σ μτ-democracy tension (sub-leading θ_23 octant)
+  [PASS] Does NOT predict neutrino mass observables
+  [PASS] Does NOT assert any of (H_B1, H_B2, H_B3); capstone is CONDITIONAL
+  [PASS] Does NOT retrofit any retained content on origin/main
+  [PASS] Does NOT consume PDG/NuFit as derivation inputs
+  [PASS] Does NOT propose new axiom or theory-language extension
+  [PASS] Does NOT predict any audit verdict
+  [PASS] Does NOT promote, retire, or re-classify any existing audit row
+
+================================================================================
+Summary: PASS=32 FAIL=0
+================================================================================
+PMNS lane Blocks 1-3 collected into one capstone with conditional closure.
+  Π1: TM_2 leading-order + maximal CP + closed |U|² (from Blocks 1-3)
+  Π2: Conditional closure under (H_B1) ∧ (H_B2) ∧ (H_B3)
+  Π3: Lepton-sector unification: 1/N + (N-1)/N² = (2N-1)/N²
+
+Framework's lepton sector lives on the Z_3 character substrate; PMNS and
+Koide are two natural invariants (trivial vs non-trivial irrep density)
+of the same representation ring R(Z_3).

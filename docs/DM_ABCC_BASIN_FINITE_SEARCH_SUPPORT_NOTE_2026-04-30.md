@@ -1,41 +1,83 @@
 # DM A-BCC Basin Finite-Search Support Note
 
-**Primary runner:** scripts/frontier_dm_abcc_basin_enumeration_completeness.py
+**Primary runner:** scripts/frontier_dm_abcc_basin_independent_finite_scan.py
+
+**Historical archived runner:** scripts/frontier_dm_abcc_basin_enumeration_completeness.py
 
 **Date:** 2026-04-30 (2026-05-18: claim_scope formalized as conditional
-provenance for a finite scan only per audit verdict boundary
-instruction).
+provenance for a finite scan only per audit verdict boundary instruction;
+2026-05-27: live runner repaired to derive the active-chamber finite-scan
+representatives without importing the archived basin coordinate chart).
 **Claim type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
-of this note is **conditional provenance for a finite scan only**:
-the salvaged finite-search observations (30 PASS stamps on a large
-bounded scan, five named chart representatives Basin 1/N/P/X/2 on
-the tested source surface, active-chamber classification of C_base
-vs C_neg rows on the printed finite representatives) are recorded
-from the prior archived wrapper. This note **does NOT** claim
-exhaustiveness, an audited bounded theorem, or that no narrow basin
-was missed. The audit verdict's repair sub-target ("add the archived
-wrapper and/or completed runner certificate as direct audit inputs,
-then re-audit the finite-search observations under the non-exhaustion
-scope") remains separate open work; the archived source wrapper at
-`archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/`
-is referenced but not in-`docs/` retained.
+**Claim scope (post-2026-05-27 repair):** the load-bearing content of
+this note is a **deterministic finite-scan support certificate** on the
+active A-BCC chamber only. The live runner starts from the Hermitian
+pencil, the retained sigma set, the PMNS central angle target, the
+coordinate box, and the active chamber inequality; it does **not** import
+the archived five-basin coordinate chart or expected signature labels.
+It independently reproduces three active-chamber representatives in the
+finite scan, records their residual norms and local Jacobian ranks, and
+computes the C_base/C_neg split from the determinant of the live
+Hermitian pencil. This note **does NOT** claim interval/root-isolation
+exhaustiveness, a global no-missed-basin theorem, or closure of the
+out-of-chamber chart.
 **Status authority:** independent audit lane only.
-**Status:** support. Salvage note for finite-search observations preserved
-after the A-BCC basin-enumeration completeness wrapper failed audit.
+**Status:** bounded support. Re-audit candidate after the 2026-05-27
+finite-scan repair; independent audit still owns any effective-status
+change.
 
 ---
 
-## 0. Provenance
+## 0. Live finite-scan repair
 
-The source wrapper
+The 2026-05-27 repair replaces the archived wrapper as the primary
+audit input. The live runner is
+`scripts/frontier_dm_abcc_basin_independent_finite_scan.py`.
+
+The runner uses three deterministic seed families over the same
+coordinate box `[-50,50]^3`:
+
+- endpoint grid with 9 points per coordinate;
+- midpoint grid with 8 points per coordinate;
+- Chebyshev grid with 9 points per coordinate.
+
+For each retained sigma choice
+`(2,1,0)`, `(2,0,1)`, `(0,1,2)`, `(1,2,0)`, it solves the three
+PMNS-angle residual equations by bounded least-squares from all
+chamber-compatible seeds. Roots are accepted only when the residual norm
+is below `1e-7`, the solution remains inside the coordinate box, and the
+active chamber inequality `delta + q_+ >= sqrt(8/3)` holds.
+
+The three seed families agree on the same active-chamber finite-scan
+representatives:
+
+| sigma | representative `(m, delta, q_+)` | component | residual norm |
+|---|---:|---|---:|
+| `(2,1,0)` | `(0.65706134, 0.93380634, 0.71504233)` | `C_base` | `1.57e-16` |
+| `(2,1,0)` | `(28.00618829, 20.72183121, 5.01159946)` | `C_neg` | `4.91e-15` |
+| `(2,0,1)` | `(21.12826367, 12.68002802, 2.08923481)` | `C_neg` | `1.08e-15` |
+
+The local residual Jacobian is full rank at the three representatives
+in the live finite-scan certificate (`min_singular >= 4.049e-04`), and
+the determinant sign gives one `C_base` and two `C_neg` representatives
+inside the active chamber.
+
+**Boundary of the repair.** This is still a finite-scan certificate, not
+an interval proof. It removes the prior audit complaint that the primary
+runner hard-coded the retained basin coordinates and expected signature
+labels, but it does not settle the stronger global root-isolation target
+from the old failed completeness wrapper.
+
+## 1. Historical provenance
+
+The old source wrapper
 [`DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`](../archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md)
 is archived under recovery tag
 `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/`.
 The audit rejected the theorem-grade exhaustiveness claim because a dense
 grid plus local minimization is not a proof that no narrow basin was missed.
 
-## Archived wrapper + runner certificate (load-bearing for restricted packet, inlined 2026-05-18)
+## Archived wrapper + runner certificate (historical; no longer primary)
 
 The audit verdict on this note (claim_type `bounded_theorem`,
 verdict `audited_conditional`) identified one packet-visibility gap:
@@ -47,15 +89,12 @@ inlines that load-bearing content so the finite-search provenance is
 auditable without leaving the retained docs surface.
 
 **Scope of this inlining.** The audit verdict also flagged that the
-runner script `scripts/frontier_dm_abcc_basin_enumeration_completeness.py`
-hard-codes the retained basin chart and expected signature labels — i.e.
-the runner does not independently derive all listed observations from
-axioms. That is a derivation-from-axioms issue and is **not** addressed by
-this inlining. This repair only addresses packet visibility of the
-referenced archive + cached runner stdout. The note's claim scope remains
-**finite-search provenance under explicit non-exhaustion**; nothing in
-this section promotes the bounded finite-search observations to an
-exhaustiveness theorem.
+old runner script `scripts/frontier_dm_abcc_basin_enumeration_completeness.py`
+hard-codes the retained basin chart and expected signature labels. The
+2026-05-27 live runner above is the repair for that defect. This archived
+section remains only as provenance for the old failed completeness wrapper;
+it is not the primary source of the repaired active-chamber finite-scan
+claim.
 
 ### A. Archived wrapper provenance
 
@@ -238,7 +277,7 @@ retained completeness theorem.
 
 ---
 
-## 1. Surviving observations
+## 2. Surviving historical observations
 
 The archived wrapper still records useful finite-search data:
 
@@ -250,9 +289,12 @@ The archived wrapper still records useful finite-search data:
 - the active-chamber classification recorded by the scan separates the
   C_base row from the C_neg rows on the printed finite representatives.
 
-## 2. Boundary
+## 3. Boundary
 
-This note is not an exhaustion theorem. It preserves the finite-search
-observations only. Any future claim that the A-BCC source-surface chart has
-no additional narrow basins needs a separate proof surface or a stronger
-auditable certificate.
+This note is not an exhaustion theorem. The repaired primary claim is
+only that the live equations, under the finite deterministic scan described
+above, reproduce the three active-chamber representatives and the
+one-`C_base` / two-`C_neg` split without importing the archived basin chart.
+Any future claim that the A-BCC source-surface chart has no additional
+narrow basins needs a separate interval/root-isolation proof surface or a
+stronger auditable certificate.

@@ -1,0 +1,24 @@
+loop_slug: dm-abcc-basin-finite-scan-repair-20260527
+target_claim_id: dm_abcc_basin_finite_search_support_note_2026-04-30
+target_status: bounded-support
+actual_current_surface_status: unaudited
+branch: physics-loop/dm-abcc-basin-interval-certificate-20260527
+base: origin/main
+created_utc: 2026-05-27
+cycle_count: 1
+active_route: independent active-chamber finite-scan repair
+files_touched:
+  - docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md
+  - scripts/frontier_dm_abcc_basin_independent_finite_scan.py
+  - logs/runner-cache/frontier_dm_abcc_basin_independent_finite_scan.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+open_imports:
+  - global interval/root-isolation exclusion of all possible narrow A-BCC basins
+review_status: local scope firewall pass; independent audit/review still required
+pr_status: pending
+next_exact_action: open a review PR and let the independent auditor review the new finite-scan certificate
+stop_condition: one coherent repair block packaged

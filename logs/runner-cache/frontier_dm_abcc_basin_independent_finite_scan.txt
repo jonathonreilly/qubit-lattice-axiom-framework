@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_abcc_basin_independent_finite_scan.py
+runner_sha256: 1cde7595f1082c96c7228611e3c75889fa6ed11736c04c5918ff75a52ff3b558
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.98
+status: ok
+----- stdout -----
+========================================================================
+DM A-BCC independent active-chamber finite-scan certificate
+========================================================================
+retained sigma set: [(2, 1, 0), (2, 0, 1), (0, 1, 2), (1, 2, 0)]
+target PMNS angles: (0.307, 0.0218, 0.545)
+active chamber: delta + q_plus >= sqrt(8/3) = 1.6329931619
+coordinate box: [-50.0, 50.0]^3
+scope: deterministic finite scan only; no global root-isolation claim
+
+--- source-input firewall ---
+  [PASS] runner source does not carry the archived coordinate chart as input  (leaks=[])
+
+--- finite scan family: endpoint_grid_9 ---
+    sigma (2, 1, 0): 2 active-chamber roots
+        point=(0.65706134, 0.93380634, 0.71504233) residual=1.57e-16
+        point=(28.00618829, 20.72183121, 5.01159946) residual=4.91e-15
+    sigma (2, 0, 1): 1 active-chamber roots
+        point=(21.12826367, 12.68002802, 2.08923481) residual=1.08e-15
+    sigma (0, 1, 2): 0 active-chamber roots
+    sigma (1, 2, 0): 0 active-chamber roots
+    chamber-compatible seeds tested: 1620
+  [PASS] endpoint_grid_9: derived three active-chamber roots  (found 3)
+
+--- finite scan family: midpoint_grid_8 ---
+    sigma (2, 1, 0): 2 active-chamber roots
+        point=(0.65706134, 0.93380634, 0.71504233) residual=5.67e-16
+        point=(28.00618829, 20.72183121, 5.01159946) residual=2.94e-15
+    sigma (2, 0, 1): 1 active-chamber roots
+        point=(21.12826367, 12.68002802, 2.08923481) residual=1.59e-15
+    sigma (0, 1, 2): 0 active-chamber roots
+    sigma (1, 2, 0): 0 active-chamber roots
+    chamber-compatible seeds tested: 1152
+  [PASS] midpoint_grid_8: derived three active-chamber roots  (found 3)
+
+--- finite scan family: chebyshev_grid_9 ---
+    sigma (2, 1, 0): 2 active-chamber roots
+        point=(0.65706134, 0.93380634, 0.71504233) residual=8.69e-16
+        point=(28.00618829, 20.72183121, 5.01159946) residual=1.18e-14
+    sigma (2, 0, 1): 1 active-chamber roots
+        point=(21.12826367, 12.68002802, 2.08923481) residual=3.85e-15
+    sigma (0, 1, 2): 0 active-chamber roots
+    sigma (1, 2, 0): 0 active-chamber roots
+    chamber-compatible seeds tested: 1620
+  [PASS] chebyshev_grid_9: derived three active-chamber roots  (found 3)
+
+--- cross-family finite-scan agreement ---
+  [PASS] endpoint_grid_9 matches the reference derived root set  (signature=(((2, 0, 1), (21.128264, 12.680028, 2.089235)), ((2, 1, 0), (0.657061, 0.933806, 0.715042)), ((2, 1, 0), (28.006188, 20.721831, 5.011599))))
+  [PASS] midpoint_grid_8 matches the reference derived root set  (signature=(((2, 0, 1), (21.128264, 12.680028, 2.089235)), ((2, 1, 0), (0.657061, 0.933806, 0.715042)), ((2, 1, 0), (28.006188, 20.721831, 5.011599))))
+  [PASS] chebyshev_grid_9 matches the reference derived root set  (signature=(((2, 0, 1), (21.128264, 12.680028, 2.089235)), ((2, 1, 0), (0.657061, 0.933806, 0.715042)), ((2, 1, 0), (28.006188, 20.721831, 5.011599))))
+
+--- derived active-chamber representative certificate ---
+    R1: sigma=(2, 0, 1), component=C_neg, det=-2.029611e+04, margin=+1.313627e+01
+        point=(21.12826367, 12.68002802, 2.08923481)
+        angles=(0.3070000000, 0.0218000000, 0.5450000000); residual_norm=1.08e-15; min_singular=9.727e-04
+    R2: sigma=(2, 1, 0), component=C_base, det=+9.591738e-01, margin=+1.585551e-02
+        point=(0.65706134, 0.93380634, 0.71504233)
+        angles=(0.3070000000, 0.0218000000, 0.5450000000); residual_norm=1.57e-16; min_singular=8.539e-02
+    R3: sigma=(2, 1, 0), component=C_neg, det=-7.053723e+04, margin=+2.410044e+01
+        point=(28.00618829, 20.72183121, 5.01159946)
+        angles=(0.3070000000, 0.0218000000, 0.5450000000); residual_norm=4.91e-15; min_singular=4.049e-04
+  [PASS] finite scan root count is three  (per_sigma={(2, 1, 0): 2, (2, 0, 1): 1, (0, 1, 2): 0, (1, 2, 0): 0})
+  [PASS] sigma=(2,1,0) contributes two active-chamber representatives
+  [PASS] sigma=(2,0,1) contributes one active-chamber representative
+  [PASS] remaining retained sigma choices contribute no active-chamber representatives
+  [PASS] all derived representatives lie strictly inside the R=50 coordinate box  (max_abs_coord=28.006)
+  [PASS] all derived representatives satisfy the active chamber inequality  (min_margin=1.586e-02)
+  [PASS] all residuals are below ROOT_TOL  (max_residual=4.905e-15)
+  [PASS] local residual Jacobians have full numerical rank  (min_sv=4.049e-04)
+  [PASS] finite discovered set has one C_base and two C_neg representatives  (components=['C_neg', 'C_base', 'C_neg'])
+
+TOTAL: PASS=16  FAIL=0
+
+----- stderr -----
+

@@ -4360,13 +4360,13 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 17,
+        "B": 1,
+        "C": 7,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_dm_abcc_basin_enumeration_completeness.py"
+      "runner": "scripts/frontier_dm_abcc_basin_independent_finite_scan.py"
     },
     "dm_abcc_chamber_bound_derivation_note_2026-04-20": {
       "assert_count": 2,
@@ -33798,13 +33798,27 @@
     "scripts/frontier_dm_abcc_basin_enumeration_completeness.py": {
       "assert_count": 1,
       "claims": [
-        "dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20",
-        "dm_abcc_basin_finite_search_support_note_2026-04-30"
+        "dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20"
       ],
       "counts": {
         "A": 0,
         "B": 0,
         "C": 17,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_dm_abcc_basin_independent_finite_scan.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_abcc_basin_finite_search_support_note_2026-04-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 7,
         "D": 0
       },
       "decoration_candidate": false,
@@ -56069,12 +56083,12 @@
     "dominant_class_distribution": {
       "A": 239,
       "B": 286,
-      "C": 757,
+      "C": 758,
       "D": 300,
       "none": 437
     },
-    "runners_classified": 2019,
-    "runners_with_C": 982,
+    "runners_classified": 2020,
+    "runners_with_C": 983,
     "runners_with_D": 588
   }
 }

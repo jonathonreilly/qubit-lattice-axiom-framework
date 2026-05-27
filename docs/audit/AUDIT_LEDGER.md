@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1198 |
+| unaudited | 1199 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1427 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2019
-- runners with (C) first-principles compute hits: 982
+- runners classified: 2020
+- runners with (C) first-principles compute hits: 983
 - runners with (D) external comparator hits: 588
 - decoration candidates (no C, no D): 342
 
@@ -969,7 +969,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3576,21 +3575,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md`
   - `SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md`
   - `DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_THEOREM_NOTE_2026-04-21.md`
-- **auditor confidence:** high
-
-### `dm_abcc_basin_finite_search_support_note_2026-04-30`
-
-- **Note:** [`DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md`](../../docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional provenance for the inlined archived finite scan only: the packet records what the cached runner and archived wrapper reported for the bounded multistart scan, not a proof that the A-BCC chart has no additional basins.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-dm_abcc_basin_finite_sea-032`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The support note preserves the archived wrapper's finite-search observations: a cached runner with TOTAL PASS=30 FAIL=0, five printed basin representatives, and the active-chamber C_base/C_neg partition, explicitly without an exhaustiveness claim.  _(class `B`)_
-- **chain closes:** False — The narrowed provenance claim is visible in the packet, but the runner does not independently derive all printed representatives from axioms: the five retained basins and expected signature labels are hard-coded inputs. A closed retained theorem would need an independent enumeration or certificate deriving those representatives and excluding missed narrow basins.
-- **rationale:** The note correctly narrows away from the retracted exhaustiveness theorem and inlines the archived wrapper plus cached stdout, so the finite-scan provenance is auditable as provenance. However, the primary runner imports the retained basin chart and expected signature components directly in code, then checks discovery/clustering and labels against those inputs. The far-field, Lipschitz, and T8 checks remain heuristic/random or empirical and do not close an exhaustion proof; the packet itself acknowledges that no such theorem is being claimed. Therefore the claim is conditional on the archived finite-scan artifact and is not a first-principles derivation.
-- **open / conditional deps cited:**
-  - `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`
 - **auditor confidence:** high
 
 ### `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19`

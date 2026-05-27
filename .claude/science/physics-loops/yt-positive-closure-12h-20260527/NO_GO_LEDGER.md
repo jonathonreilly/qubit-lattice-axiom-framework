@@ -126,3 +126,11 @@ potential/variational law and a physical nonzero orientation branch.
   orbits contain `P_0 -> A/sqrt(3)` as well as nontrivial target rows. A
   physical basepoint/readout law beyond scalar orientation bias, or accepted
   strict pole rows, remains load-bearing.
+- New in the twentieth block: using the derived same-surface `B_x`
+  source-response extrema as a non-scalar physical readout still does not
+  derive the physical nontrivial top line. Signed and absolute maxima select
+  `P_0 -> A/sqrt(3)`. Signed and absolute minima select
+  `P_omega/P_omega2 -> A/sqrt(12)`, but only after importing a
+  minimum-response selector, and they still leave the nontrivial complex pair
+  degenerate. A physical basepoint/readout law beyond source-response extrema,
+  or accepted strict pole rows, remains load-bearing.

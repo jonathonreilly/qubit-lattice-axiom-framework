@@ -1,5 +1,39 @@
 # Review History
 
+## 2026-05-27 Local Review, Block 20
+
+Scope:
+
+- C3 source-response extremal readout no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks finite C3 source-response rows, signed/absolute extrema, dependency outputs, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open source-response readout law; response maxima select `P_0`, while response minima require an extra selector and remain nontrivial-pair degenerate. |
+| Imports / support | DISCLOSED | No observed masses, target selector, external phase law, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=105 FAIL=0`
+- Full stack runner: `PASS=364 FAIL=0`
+- Adjacent Y_T runners passed: same-surface matrix factorization `PASS=77`,
+  nontrivial top-line assignment boundary `PASS=81`, top-line mass-ordering
+  obstruction `PASS=70`, phase-orbit selector no-go `PASS=79`,
+  orbit-member covariance no-go `PASS=73`, orientation-biased
+  phase-potential no-go `PASS=85`, and strict sparse availability audit
+  `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review
 
 Scope:

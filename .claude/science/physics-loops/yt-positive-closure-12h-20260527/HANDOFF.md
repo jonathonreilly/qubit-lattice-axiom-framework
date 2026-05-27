@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced nineteen science blocks, not positive retained-grade
+The campaign has produced twenty science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -38,6 +38,45 @@ closure:
 19. a no-go for deriving the physical nontrivial top line from an
     orientation-biased C3 scalar phase potential with a reflection-odd
     `sin(3 phi)` term.
+20. a no-go for deriving the physical nontrivial top line from the derived
+    same-surface `B_x` source-response extrema.
+
+New source-response extremal readout result:
+
+```text
+B_x source-response extrema
+  -/-> accepted physical nontrivial C3 top-line law
+```
+
+The finite witness is:
+
+```text
+max signed response      -> P_0              -> A/sqrt(3)
+max absolute response    -> P_0              -> A/sqrt(3)
+min signed response      -> P_omega/P_omega2 -> A/sqrt(12)
+min absolute response    -> P_omega/P_omega2 -> A/sqrt(12)
+```
+
+So the non-scalar source-response readout does not close the coefficient row.
+The maximum-response rules select the singlet, while the minimum-response
+rules give the target row only by importing a new selector and still leave the
+two nontrivial complex lines degenerate. The remaining C3 route needs an
+accepted physical basepoint/readout law beyond scalar orientation bias and
+source-response extrema, with W/top matrix elements, or accepted strict pole
+rows.
+
+Cycle 9 source-response extremal readout verification:
+
+- `python3 scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py` -> `SUMMARY: PASS=105 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=364 FAIL=0`
+- Adjacent runners passed: same-surface matrix factorization `PASS=77`,
+  nontrivial top-line assignment boundary `PASS=81`, top-line mass-ordering
+  obstruction `PASS=70`, phase-orbit selector `PASS=79`, orbit-member
+  covariance `PASS=73`, orientation-biased phase-potential no-go `PASS=85`,
+  and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
 
 New orientation-biased phase-potential result:
 

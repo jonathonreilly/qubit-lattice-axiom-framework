@@ -1,0 +1,147 @@
+{
+  "actual_current_surface_status": "no-go / open source-response readout law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "dependencies": {
+    "mass_ordering": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "matrix_element": {
+      "actual_current_surface_status": "conditional-support",
+      "fail_count": 0,
+      "trace_class": "upstream_support"
+    },
+    "nontrivial_boundary": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "orbit_member": {
+      "actual_current_surface_status": "no-go / open orbit-member readout law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "orientation_biased": {
+      "actual_current_surface_status": "no-go / open orientation-biased orbit-member law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "phase_orbit": {
+      "actual_current_surface_status": "no-go / open phase-orbit member law",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    },
+    "strict_availability": {
+      "actual_current_surface_status": "no-go",
+      "fail_count": 0,
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "no_go_certificate": {
+    "absolute_response_max_selects_p0": true,
+    "absolute_response_min_selects_nontrivial_pair": true,
+    "accepted_physical_source_response_readout_law_derived": false,
+    "accepted_w_top_matrix_elements_supplied": false,
+    "bare_retained_allowed": false,
+    "bx_source_direction_available": true,
+    "minimum_response_top_convention_derived": false,
+    "no_forbidden_imports": true,
+    "nontrivial_complex_line_isolated": false,
+    "proposal_allowed": false,
+    "same_surface_matrix_factorization_support_available": true,
+    "signed_response_max_selects_p0": true,
+    "signed_response_min_selects_nontrivial_pair": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "pass_count": 105,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The same-surface B_x source-response extrema do not derive the physical nontrivial top line. Signed and absolute maxima select P_0 and give A/sqrt(3). Signed and absolute minima select the nontrivial pair and give A/sqrt(12), but that minimum-response convention is an extra physical selector and remains degenerate between P_omega and P_omega2.",
+  "reachability_to_target": "prunes shortcut",
+  "review_surface": [
+    "docs/YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py",
+    "outputs/yt_c3_source_response_extremal_readout_no_go_2026-05-27.json"
+  ],
+  "route_pruned": "same-surface B_x source-response extremal readout supplies the physical nontrivial C3 top-line law",
+  "route_still_live": "derive an accepted same-surface physical basepoint/readout law that selects a nontrivial C3 character line and supplies W/top source-generator matrix elements, or produce accepted strict same-source top/W pole rows",
+  "selected_orbit_readout_witness": {
+    "absolute_max_readout": [
+      "P_0"
+    ],
+    "absolute_min_readout": [
+      "P_omega",
+      "P_omega2"
+    ],
+    "generic_selected_orbit_labels": [
+      "P_0",
+      "P_omega2",
+      "P_omega"
+    ],
+    "selected_orbit_contains_p0": true,
+    "selected_orbit_nontrivial_minimum_is_degenerate": true
+  },
+  "source_response_witness": {
+    "matrix_row_magnitudes": {
+      "P_0": "sqrt(3)*A/3",
+      "P_omega": "sqrt(3)*A/6",
+      "P_omega2": "sqrt(3)*A/6"
+    },
+    "matrix_rows": {
+      "P_0": "sqrt(3)*A/3",
+      "P_omega": "-sqrt(3)*A/6",
+      "P_omega2": "-sqrt(3)*A/6"
+    },
+    "response_magnitudes": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "sqrt(6)/6",
+      "P_omega2": "sqrt(6)/6"
+    },
+    "responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "-sqrt(6)/6",
+      "P_omega2": "-sqrt(6)/6"
+    },
+    "source_response_extrema": {
+      "absolute_max": {
+        "lines": [
+          "P_0"
+        ],
+        "row_magnitudes": [
+          "sqrt(3)*A/3"
+        ]
+      },
+      "absolute_min": {
+        "lines": [
+          "P_omega",
+          "P_omega2"
+        ],
+        "row_magnitudes": [
+          "sqrt(3)*A/6",
+          "sqrt(3)*A/6"
+        ]
+      },
+      "signed_max": {
+        "lines": [
+          "P_0"
+        ],
+        "row_magnitudes": [
+          "sqrt(3)*A/3"
+        ]
+      },
+      "signed_min": {
+        "lines": [
+          "P_omega",
+          "P_omega2"
+        ],
+        "row_magnitudes": [
+          "sqrt(3)*A/6",
+          "sqrt(3)*A/6"
+        ]
+      }
+    }
+  },
+  "trace_class": "negative_route_pruning"
+}

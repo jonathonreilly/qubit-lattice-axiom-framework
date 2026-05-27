@@ -87,6 +87,10 @@ This runner verifies the current burn-down state:
   reflection-odd sin(3phi) term still selects a C3 phase orbit, not a physical
   orbit member, so P_0 remains allowed without an accepted basepoint/readout
   law or strict pole rows.
+* The source-response extremal readout shortcut is now pruned: signed and
+  absolute maxima of the same-surface B_x response select P_0 and give
+  A/sqrt(3), while signed and absolute minima select the nontrivial pair only
+  by importing a minimum-response selector.
 * The same-surface top matrix-element factorization algebra is now explicit:
   (A/sqrt(2)) times the nontrivial B_x response gives A/sqrt(12), but the
   accepted generator factorization and nontrivial top-line law remain open.
@@ -157,6 +161,7 @@ C3_PHASE_ORBIT_SELECTOR_NOGO = DOCS / "YT_C3_PHASE_ORBIT_SELECTOR_UNDERDETERMINA
 C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO = DOCS / "YT_C3_ORBIT_MEMBER_READOUT_COVARIANCE_NO_GO_NOTE_2026-05-27.md"
 C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION = DOCS / "YT_C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_NOTE_2026-05-27.md"
 C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO = DOCS / "YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md"
+C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO = DOCS / "YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -206,6 +211,7 @@ C3_PHASE_ORBIT_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_phase_orbit_selecto
 C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT = ROOT / "outputs" / "yt_c3_orbit_member_readout_covariance_no_go_2026-05-27.json"
 C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_dihedral_basepoint_anchor_obstruction_2026-05-27.json"
 C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT = ROOT / "outputs" / "yt_c3_orientation_biased_phase_potential_orbit_member_no_go_2026-05-27.json"
+C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_response_extremal_readout_no_go_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -300,6 +306,7 @@ def part1_anchors() -> dict[str, str]:
         C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO,
         C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION,
         C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO,
+        C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -348,6 +355,7 @@ def part1_anchors() -> dict[str, str]:
         C3_ORBIT_MEMBER_READOUT_COVARIANCE_NOGO_OUT,
         C3_DIHEDRAL_BASEPOINT_ANCHOR_OBSTRUCTION_OUT,
         C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT,
+        C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -400,6 +408,7 @@ def part1_anchors() -> dict[str, str]:
         "orbit-member readout covariance no-go",
         "dihedral basepoint anchor obstruction",
         "orientation-biased phase-potential orbit-member no-go",
+        "source-response extremal readout no-go",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -469,6 +478,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_orientation_biased_phase_potential_orbit_member_nogo = load_json(
         C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NOGO_OUT
     )
+    c3_source_response_extremal_readout_nogo = load_json(C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NOGO_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -940,6 +950,34 @@ def part2_support_outputs() -> dict[str, Any]:
         .get("accepted_physical_basepoint_readout_law_derived")
         is False,
     )
+    check(
+        "C3 source-response extremal readout no-go passed",
+        c3_source_response_extremal_readout_nogo.get("fail_count") == 0,
+        c3_source_response_extremal_readout_nogo.get("fail_count"),
+    )
+    check(
+        "C3 source-response extremal readout route is pruned",
+        c3_source_response_extremal_readout_nogo.get("trace_class") == "negative_route_pruning",
+        c3_source_response_extremal_readout_nogo.get("trace_class"),
+    )
+    check(
+        "source-response maximum still selects P0",
+        c3_source_response_extremal_readout_nogo.get("no_go_certificate", {})
+        .get("absolute_response_max_selects_p0")
+        is True,
+    )
+    check(
+        "source-response target minimum remains an extra selector",
+        c3_source_response_extremal_readout_nogo.get("no_go_certificate", {})
+        .get("minimum_response_top_convention_derived")
+        is False,
+    )
+    check(
+        "source-response minimum still leaves nontrivial pair degenerate",
+        c3_source_response_extremal_readout_nogo.get("no_go_certificate", {})
+        .get("nontrivial_complex_line_isolated")
+        is False,
+    )
 
     return {
         "fisher": fisher,
@@ -989,6 +1027,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_orbit_member_readout_covariance_nogo": c3_orbit_member_readout_covariance_nogo,
         "c3_dihedral_basepoint_anchor_obstruction": c3_dihedral_basepoint_anchor_obstruction,
         "c3_orientation_biased_phase_potential_orbit_member_nogo": c3_orientation_biased_phase_potential_orbit_member_nogo,
+        "c3_source_response_extremal_readout_nogo": c3_source_response_extremal_readout_nogo,
     }
 
 
@@ -1193,7 +1232,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface phase-angle/orbit-member law selecting a nontrivial top line with backend/projectors/matrix elements",
         },
@@ -1280,6 +1319,12 @@ def main() -> int:
             "law: it still selects a C3 phase orbit, not a physical orbit "
             "member, and the selected orbit contains a P_0 witness unless an "
             "accepted basepoint/readout law is supplied. "
+            "The non-scalar source-response extremal readout shortcut is "
+            "also pruned: signed and absolute maxima of the derived B_x "
+            "response select P_0 and give A/sqrt(3), while signed and "
+            "absolute minima give A/sqrt(12) only by adding a "
+            "minimum-response selector and still leave the two nontrivial "
+            "complex lines degenerate. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1338,6 +1383,7 @@ def main() -> int:
             "c3_orbit_member_readout_covariance_nogo_fail_count": support_outputs["c3_orbit_member_readout_covariance_nogo"].get("fail_count"),
             "c3_dihedral_basepoint_anchor_obstruction_fail_count": support_outputs["c3_dihedral_basepoint_anchor_obstruction"].get("fail_count"),
             "c3_orientation_biased_phase_potential_orbit_member_nogo_fail_count": support_outputs["c3_orientation_biased_phase_potential_orbit_member_nogo"].get("fail_count"),
+            "c3_source_response_extremal_readout_nogo_fail_count": support_outputs["c3_source_response_extremal_readout_nogo"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
@@ -1387,6 +1433,9 @@ def main() -> int:
             "docs/YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_orientation_biased_phase_potential_orbit_member_no_go.py",
             "outputs/yt_c3_orientation_biased_phase_potential_orbit_member_no_go_2026-05-27.json",
+            "docs/YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py",
+            "outputs/yt_c3_source_response_extremal_readout_no_go_2026-05-27.json",
             "docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py",
             "outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json",

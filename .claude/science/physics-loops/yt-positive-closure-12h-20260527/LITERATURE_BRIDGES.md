@@ -47,3 +47,8 @@ The orientation-biased phase-potential block directly checks the finite C3
 periodicity of `c_0 + r cos(3 phi) + s sin(3 phi)`, the reflection parity of
 the `sin(3 phi)` term, and the selected-orbit top-line witnesses. It imports
 no Landau potential, phenomenological phase, or external orientation law.
+The source-response extremal readout block directly computes the finite C3
+source-response rows and their signed/absolute extrema. A targeted external
+math search on equivariant maps and G-set sections was context only for the
+already-pruned orbit-member covariance issue; no external theorem is
+load-bearing for this block.

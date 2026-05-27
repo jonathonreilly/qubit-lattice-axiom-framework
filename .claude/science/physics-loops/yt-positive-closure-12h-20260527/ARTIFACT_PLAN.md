@@ -56,6 +56,9 @@ Current block artifacts:
 - `docs/YT_C3_ORIENTATION_BIASED_PHASE_POTENTIAL_ORBIT_MEMBER_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_orientation_biased_phase_potential_orbit_member_no_go.py`
 - `outputs/yt_c3_orientation_biased_phase_potential_orbit_member_no_go_2026-05-27.json`
+- `docs/YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_source_response_extremal_readout_no_go.py`
+- `outputs/yt_c3_source_response_extremal_readout_no_go_2026-05-27.json`
 - `docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py`
 - `outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json`
@@ -68,7 +71,7 @@ Next artifact if continuing:
 
 - accepted strict top/W pole-row data, or an accepted same-surface
   backend/projector/matrix-element theorem; if staying on C3, a genuinely new
-  physical basepoint/readout theorem beyond existing reflection-axis and
-  scalar orientation-bias premises deriving exclusion of `P_0`, accepted
-  same-surface backend, W/top projectors, and source-generator matrix
-  elements.
+  physical basepoint/readout theorem beyond existing reflection-axis, scalar
+  orientation-bias, and source-response extremal premises deriving exclusion
+  of `P_0`, accepted same-surface backend, W/top projectors, and
+  source-generator matrix elements.

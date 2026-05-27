@@ -131,6 +131,11 @@ closed exactly:
   reflection-odd sin(3 phi) phase-bias term still selects a C3 phase orbit,
   not a physical member; generic selected orbits still contain P_0 unless an
   accepted basepoint/readout law or strict pole rows are supplied
+  source-response extremal readout no-go: using the derived B_x response
+  itself as a non-scalar member readout still does not derive the physical
+  nontrivial top line; signed/absolute maxima select P_0, while
+  signed/absolute minima select the nontrivial pair only by importing a
+  minimum-response selector
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -166,6 +171,9 @@ still open:
   accepted physical member/readout law beyond orientation-biased C3 scalar
   potentials, since a reflection-odd sin(3 phi) bias still leaves
   orbit-member selection load-bearing
+  accepted physical member/readout law beyond source-response extrema, since
+  maximum-response readouts select P_0 and minimum-response readouts are extra
+  selector premises
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -1121,6 +1129,29 @@ Thus even explicit orientation bias does not choose a physical orbit member
 or exclude `P_0`.  The remaining C3 route still needs an accepted physical
 basepoint/readout law with W/top matrix elements, or strict pole rows.
 
+[`YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md`](YT_C3_SOURCE_RESPONSE_EXTREMAL_READOUT_NO_GO_NOTE_2026-05-27.md)
+then tests the non-scalar source-response readout shortcut.  The same finite
+C3 rows are:
+
+```text
+Tr(P_0 B_x)       =  2/sqrt(6)
+Tr(P_omega B_x)   = -1/sqrt(6)
+Tr(P_omega2 B_x)  = -1/sqrt(6)
+```
+
+Therefore:
+
+```text
+max signed/absolute source response -> P_0 -> A/sqrt(3)
+min signed/absolute source response -> P_omega/P_omega2 -> A/sqrt(12)
+```
+
+The target row is present as conditional support for a supplied
+minimum-response top-line law, but that law is not derived and remains
+degenerate on the two nontrivial complex lines.  The remaining C3 route still
+needs an accepted physical basepoint/readout law with W/top matrix elements,
+or strict pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -1212,6 +1243,11 @@ proposal_allowed_reason: |
   phase-law premise: adding a reflection-odd sin(3 phi) term still selects a
   C3 orbit, not a physical member, and generic selected orbits still contain a
   P_0 witness.
+  The source-response extremal readout no-go prunes the non-scalar shortcut
+  from the derived B_x response itself: signed and absolute maxima select P_0
+  and give A/sqrt(3), while signed and absolute minima give A/sqrt(12) only
+  after adding a minimum-response top-line selector and still do not isolate a
+  single nontrivial complex line.
   The strict pole-row repository discovery no-go additionally prunes the
   hidden-existing-certificate shortcut: scanning current Y_T
   strict/response/backend/projector outputs finds support harnesses,

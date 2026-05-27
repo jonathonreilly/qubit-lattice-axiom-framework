@@ -98,3 +98,11 @@ witness and two nontrivial target-row witnesses. The next trace action is
 therefore still accepted strict pole-row data, accepted backend/projector
 matrix elements, or a non-scalar physical basepoint/readout theorem that
 excludes `P_0` without target insertion.
+The twentieth artifact prunes the non-scalar source-response extremal readout
+shortcut. The same-surface `B_x` response maxima select
+`P_0 -> A/sqrt(3)`, while response minima select the nontrivial pair and give
+`A/sqrt(12)` only after importing a minimum-response selector; the two
+nontrivial complex lines remain degenerate. The next trace action is still
+accepted strict pole-row data, accepted backend/projector matrix elements, or
+a physical basepoint/readout theorem beyond scalar orientation bias and
+source-response extrema.

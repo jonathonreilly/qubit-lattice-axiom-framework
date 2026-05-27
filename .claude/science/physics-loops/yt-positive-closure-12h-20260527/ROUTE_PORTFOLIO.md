@@ -38,6 +38,9 @@ projector artifact name.
 The nineteenth route tested whether an explicit orientation-biased C3 scalar
 phase potential with a reflection-odd `sin(3 phi)` term supplies the missing
 physical orbit-member/top-line law.
+The twentieth route tested whether the already-derived same-surface `B_x`
+source-response extrema can supply the missing physical orbit-member/top-line
+law as a non-scalar readout.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -61,6 +64,7 @@ physical orbit-member/top-line law.
 | Existing C3/dihedral basepoint anchor | no-go shortcut test | 3 | Pruned: full C3/D3 naturality has no section; the existing reflection axis fixes `P_0`, while rotated axes import the missing basepoint |
 | Strict pole-row repository discovery | no-go current-branch audit | 3 | Pruned: no hidden accepted strict top/W pole-row certificate exists under current Y_T response/backend/projector artifact names |
 | Orientation-biased C3 phase potential | no-go shortcut test | 3 | Pruned: a reflection-odd `sin(3 phi)` bias still selects a C3 orbit, not a physical member; generic orbits include `P_0` |
+| Source-response extremal readout | no-go shortcut test | 3 | Pruned: signed/absolute maxima select `P_0`; signed/absolute minima give the target row only by importing a minimum-response selector and leave the nontrivial pair degenerate |
 
 ## Stuck Fan-Out
 
@@ -88,6 +92,7 @@ physical orbit-member/top-line law.
 | Existing dihedral basepoint anchor | Ask the already-derived real-record reflection/dihedral structure to choose the physical member | Fails; C3/D3 naturality has no section, and the existing reflection axis fixes the singlet member `P_0` |
 | Strict pole-row discovery | Search current Y_T strict/response/backend/projector outputs for a hidden accepted pole-row packet | Fails; support harnesses and candidates are present, but no complete accepted same-surface strict top/W pole-row certificate is present |
 | Orientation-biased phase potential | Add a reflection-odd `sin(3 phi)` term to the C3 scalar phase potential | Fails; the potential selects a three-member C3 orbit, and the orbit contains a `P_0` singlet-row witness plus nontrivial target-row witnesses |
+| Source-response extremal readout | Use the derived `B_x` response itself as a non-scalar orbit-member/top-line readout | Fails; response maxima select `P_0 -> A/sqrt(3)`, while minima select the nontrivial pair only with an extra selector |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -99,6 +104,9 @@ The current branch also does not contain a hidden accepted strict pole-row
 packet under another response/backend/projector artifact name, so the strict
 route requires new pole-row data or a new accepted backend/projector theorem.
 An explicit scalar orientation-bias term does not provide the missing physical
-section either; it only shifts the selected C3 orbit. A positive C3 route now
-needs a non-scalar physical basepoint/readout theorem, or the campaign must
-move through accepted strict pole-row data/backend-projector matrix elements.
+section either; it only shifts the selected C3 orbit. The non-scalar
+source-response extremal route also fails: the maximum readouts choose the
+singlet and the minimum readouts import the missing selector. A positive C3
+route now needs a physical basepoint/readout theorem beyond source-response
+extrema, or the campaign must move through accepted strict pole-row
+data/backend-projector matrix elements.

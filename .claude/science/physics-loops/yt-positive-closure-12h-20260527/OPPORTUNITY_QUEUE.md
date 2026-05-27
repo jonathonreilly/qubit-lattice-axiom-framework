@@ -21,6 +21,7 @@
 | 17 | New accepted quantitative orientation-phase/orbit-member theorem deriving backend, W/top projectors, nontrivial cone membership, and matrix elements | low | high | absent | remaining broader theory route |
 | 18 | Hidden accepted strict pole-row certificate already present under another artifact name | low | high | present | pruned by current-branch repository discovery scan |
 | 19 | Orientation-biased C3 scalar phase potential with reflection-odd `sin(3 phi)` term | low | high | present | pruned; selects a C3 orbit, not a physical member |
+| 20 | Source-response extremal readout from derived `B_x` | low | high | present | pruned; maxima select `P_0`, minima import a selector and leave the nontrivial pair degenerate |
 
 Queue refresh after the fourth block: positive closure remains open. The next
 Queue refresh after the fifth block: positive closure remains open.
@@ -137,3 +138,14 @@ top/W pole-row data with contact, FV/IR, and model-class controls, or derive
 an accepted same-surface backend/projector/matrix-element theorem; if staying
 on C3, derive a non-scalar physical basepoint/readout theorem beyond existing
 reflection-axis and scalar orientation-bias premises.
+
+Queue refresh after the twentieth block: positive closure remains open. The
+source-response extremal readout shortcut is pruned: signed/absolute maxima of
+`B_x` select `P_0 -> A/sqrt(3)`, while signed/absolute minima select the
+nontrivial pair only by importing a minimum-response selector and still do not
+isolate a single complex line. The next exact action remains rank 4 or rank
+17: produce accepted strict top/W pole-row data with contact, FV/IR, and
+model-class controls, or derive an accepted same-surface
+backend/projector/matrix-element theorem; if staying on C3, derive a physical
+basepoint/readout theorem beyond scalar orientation bias and source-response
+extrema.

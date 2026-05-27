@@ -8,6 +8,8 @@
 - Ran the audit pipeline so the target row is reset to `unaudited` and
   queue-ready.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2081
+
 ## Verification
 
 ```text
@@ -32,4 +34,3 @@ Pipeline complete.
 - First-principles derivation of `kappa_*`.
 - Optional direct degeneracy runner if the eigenvalue triple is to remain
   load-bearing.
-

@@ -312,12 +312,12 @@ def main() -> int:
     print()
 
     check(
-        "the transfer and beta=6 seam-reduction notes already factor the compressed route through one propagated beta-side vector built from the identity boundary state",
-        "Z_beta^env(W) = <eta_beta(W), (S_beta^env)^(L_perp-1) eta_beta(e)>" in transfer_note
+        "the conditional beta=6 seam-reduction note factors the compressed route through one propagated beta-side vector built from the identity boundary state",
+        "conditional reduction" in eval_reduction_note
         and "z_(p,q)^env(6)" in eval_reduction_note
         and "eta_6(e)" in eval_reduction_note
         and "v_6 = sum_(p,q) z_(p,q)^env(6) chi_(p,q)" in eval_reduction_note,
-        detail="the right-hand beta-side datum is common across all three sample points",
+        detail="the right-hand beta-side datum is common across all three sample points once the premise identities are supplied",
         bucket="SUPPORT",
     )
     check(
@@ -336,9 +336,9 @@ def main() -> int:
         bucket="SUPPORT",
     )
     check(
-        "the spatial-environment underdetermination note already records that the current stack does not force unique explicit beta=6 environment data",
-        "the current exact stack still does **not** determine unique explicit" in underdetermination_note
-        or "the current exact stack still does **not** determine unique explicit `beta = 6` spatial-environment data." in underdetermination_note,
+        "the spatial-environment underdetermination note records that the listed structural surface does not force unique explicit beta=6 environment data",
+        "does **not** determine unique" in underdetermination_note
+        and "`beta = 6` spatial-environment" in underdetermination_note,
         detail="the current lane still leaves the beta-side vector open",
         bucket="SUPPORT",
     )

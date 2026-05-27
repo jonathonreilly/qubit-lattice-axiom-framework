@@ -169,6 +169,76 @@ supplies it.
 - analytic closure of canonical `P(6)`
 - a global sole-axiom PF selector
 
+## No-Go Discipline Gate
+
+**Status:** PASS for the narrowed finite structural-surface no-go only.
+The claim being closed is not a global plaquette selector no-go and not
+a claim about the full `beta = 6` Wilson-parent / factorization stack.
+It says only that the listed positivity, self-adjointness,
+conjugation-symmetry, and positive-symmetric-boundary constraints do
+not by themselves force a unique `(S_6^env, eta_6)` on the runner's
+finite witness surface.
+
+### N1 - Alternative route enumeration
+
+| route | what it would attempt | why it fails for this scoped no-go | marker |
+|---|---|---|---|
+| Listed structural surface alone | Derive uniqueness from positivity, self-adjointness, conjugation symmetry, and positive boundary normalization. | The runner exhibits two distinct admissible witnesses satisfying those conditions. | ATTEMPTED |
+| Stronger full Wilson-parent stack | Use full Wilson-parent / factorization constraints to collapse the two witnesses. | This route is explicitly out of scope and left open; the note does not claim that stack fails. | ATTEMPTED |
+| Local Wilson triple shortcut | Reuse the local Wilson three-sample data as the missing environment selector. | The local-Wilson obstruction note records that this shortcut does not close the current surface. | RULED OUT BY PRIOR |
+| Compressed rim-functional uniqueness | Use uniqueness of the left Peter-Weyl evaluation functional to force the right beta-side vector. | It fixes the sample-side functional, not the beta-side pair `(S_6^env, eta_6)`. | ATTEMPTED |
+| Exact radical sample map | Use the first symmetric radical three-sample map to identify the beta-side data. | The map is a left operator on supplied beta-side data; it does not determine the data. | ATTEMPTED |
+| Beta6 evaluation-seam reduction | Reduce to matrix-element evaluation and infer uniqueness. | Reduction to evaluation is not evaluation; different admissible beta-side witnesses still induce different triples. | ATTEMPTED |
+
+### N2 - Wall-independence audit
+
+This no-go has one collapsed wall: the listed structural witness surface
+is insufficient for uniqueness. The full Wilson-parent / factorization
+stack is not counted as a failed wall; it is out of scope and may still
+close the surface in future source work.
+
+### N3 - Hidden-wall scan
+
+Phrases such as "current exact", "already", and "structural surface"
+are scoped to the listed witness packet. The note does not smuggle a
+claim that the full beta=6 stack has been tested or rejected.
+
+### N4 - Residual matching
+
+The residual closed here is exact: non-uniqueness on the finite listed
+witness surface. The broader residual "does the full Wilson-parent /
+factorization stack force uniqueness?" is explicitly not claimed closed
+and is not supported by the runner.
+
+### N5 - Rhetoric audit
+
+The phrase "does not determine unique" is restricted to the listed
+structural surface and the runner's finite witness packet. It is not
+used at the lattice-wide, full-stack, or analytic-plaquette-closure
+resolution.
+
+### N6 - Partial-closure path scan
+
+The open positive path is to supply a retained bridge theorem showing
+that the full beta=6 Wilson-parent / factorization constraints collapse
+the witness surface to a unique pair. That is an import-retirement
+source-work path, not a new axiom.
+
+### N7 - Steelman
+
+A hostile reviewer could argue that the full Wilson-parent /
+factorization admissibility constraints, once written down, might rule
+out one of the two finite witnesses. This steelman is accepted and is
+exactly why the no-go is narrowed to the listed structural surface
+alone.
+
+### N8 - Cross-cycle echo
+
+The plaquette lane has previously overclaimed by treating finite
+structural witness checks as full beta=6 closure. This note avoids that
+echo by keeping the no-go at the finite witness-surface level and
+leaving the full-stack bridge route open.
+
 ## Command
 
 ```bash

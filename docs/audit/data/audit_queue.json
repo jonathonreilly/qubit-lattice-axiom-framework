@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 235,
     "high": 328,
-    "leaf": 301,
+    "leaf": 300,
     "medium": 311
   },
   "cycle_break_target_count": 3,
@@ -26760,33 +26760,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "guard_reconciliation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/dense_prune_channel_count_guard.py",
-        "scripts/dense_prune_q003_joint_strict.py",
-        "scripts/three_d_joint_test.py",
-        "scripts/three_d_modular_gravity_mass_scaling.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GUARD_RECONCILIATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/guard_reconciliation_n100_q003_certificate.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35665,6 +35638,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
-  "total_pending": 1175
+  "ready_count": 20,
+  "total_pending": 1174
 }

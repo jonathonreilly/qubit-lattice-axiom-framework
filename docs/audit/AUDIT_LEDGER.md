@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 525 |
+| **retained_bounded** | 526 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1175 |
+| unaudited | 1174 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 823 |
+| `audited_clean` | 824 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1404 |
+| `unaudited` | 1403 |
 
 | claim_type | count |
 |---|---:|
@@ -432,6 +432,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `guard_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_scalable_scout_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `h0125_wider_replay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6259,6 +6260,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The source note's numerical table matches the completed runner stdout, and the runner source computes the phase-ramp metrics and zero-source reduction rather than printing hard-coded verdict constants. The closure is only for the stated finite replay configuration and does not imply a geometry-generic no-go.
 - **rationale:** Clean for the bounded no-go scope: the runner computes the fixed-field replay, reports exact zero-source spans of zero, and returns low phase-ramp R2 values around 0.30, which supports the note's refusal to promote a grown-row transfer claim. No cited authorities are required for the limited negative conclusion as written. Residual risk is confined to the unprovided grow helper and the qualitative threshold for 'review-safe,' so the claim must remain bounded to the printed finite configuration.
 - **auditor confidence:** medium
+
+### `guard_reconciliation_note`
+
+- **Note:** [`GUARD_RECONCILIATION_NOTE.md`](../../docs/GUARD_RECONCILIATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite aggregate dense-prune guard diagnostic only: in the runner-defined dense 3D same-graph harness at N=100, q=0.03, nodes/layer=60, connect_radius=2.7, one prune iteration, and the runner's valid-seed aggregates, the channel-count guarded arm preserves eff_ch, reduces gravity damage, and has zero aggregate flips relative to the plain-prune aggregate, while paying a small bounded purity cost. This does not audit a seed-paired rescue law, a simultaneous purity-improvement theorem, a broad N=80/100/120 basin, or an asymptotic dense-prune repair.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary runner fixes DENSE_GUARD_LAYERS=100 and DENSE_GUARD_QS=0.03, executes the dense channel-count guard harness, extracts the N=100 q=0.03 plain and guarded aggregate rows, and asserts the finite certificate conditions: plain flips >= 1, guarded flips = 0, guarded |d_grav| smaller than plain |d_grav|, guarded d_pur > -0.01, guarded eff_p/eff_b >= 0.95, plain eff_p/eff_b < 0.55, and guarded removed count below plain.  _(class `C`)_
+- **chain closes:** True — There are no one-hop ledger dependencies. The primary runner and helper sources construct the finite dense 3D graph ensemble, compute the plain and guarded aggregate rows, and the cached run completed with exit_code=0. The displayed aggregate metrics match the note's narrowed certificate: plain d_pur=+0.0094, d_grav=-3.2356, eff_p=2.447, flips=3; guarded d_pur=-0.0039, d_grav=-0.1272, eff_p=5.056, flips=0.
+- **rationale:** No-go/admission gate: the audit does not ratify a general negative result that dense pruning cannot be repaired, nor a general positive rescue. The source's broader mechanism language is valid only as boundary context. The runner-backed bounded pocket closes because the finite harness computes the N=100, q=0.03 aggregate rows and the certificate asserts exactly the reduced gravity damage, eff_ch preservation, and zero guarded aggregate flips at small bounded purity cost. Residual risk: the plain and guarded aggregates have different valid counts, so this is not a same-seed rescue theorem; the source correctly excludes seed-level rescue, simultaneous purity improvement, uniform N-extension, and asymptotic repair.
+- **auditor confidence:** high
 
 ### `h0125_failure_derivation`
 

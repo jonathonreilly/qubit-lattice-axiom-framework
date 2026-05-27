@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
-runner_sha256: e294e735ff688f7e05317519d0dcfa4caee6a6268d442665d9862e0fb1b4614f
+runner_sha256: a9649d1bc870ba3cd9b5fcdf2c177b5477d213f1ffed560b5d4c1f0d7bed6e3e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.93
+elapsed_sec: 3.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -44,26 +44,26 @@ PART 2: TRANSPORT SEARCH FINDS AN OFF-SEED OVERSHOOT WITNESS
   delta_opt = -2.232783910770
   eta/eta_obs(opt) = [1.05222  0.663861 0.622758]
   packet_opt:
-[[9.28711e-01 3.45440e-02 3.67440e-02]
- [3.56440e-02 1.16200e-03 9.63194e-01]
- [3.56440e-02 9.64294e-01 6.20000e-05]]
+[[0.928711 0.034544 0.036744]
+ [0.035644 0.001162 0.963194]
+ [0.035644 0.964294 0.000062]]
 
 ========================================================================================
 PART 3: CONTINUITY GIVES AN INTERPOLATED CLOSURE WITNESS
 ========================================================================================
   [PASS] The computed best-eta map crosses 1 on the interpolating seed-preserving family  ((seed,opt)=(0.719082664368,1.052220313050))
-  [PASS] The interpolated witness has eta/eta_obs = 1 on the same parameterized family  (etas=[1.         0.71842553 0.57229394], best column=0)
+  [PASS] The interpolated witness has eta/eta_obs = 1 on the same parameterized family  (etas=[1.       0.718426 0.572294], best column=0)
   [PASS] That closure point is still genuinely off-seed  (x=[0.128516, 1.411729, 0.149755], y=[0.291587, 0.196351, 0.432063], delta=-2.041003068182)
 
   lambda_*  = 0.914106850348
   x_close   = [0.128516, 1.411729, 0.149755]
   y_close   = [0.291587, 0.196351, 0.432063]
   delta_*   = -2.041003068182
-  eta/eta_obs(close) = [1.         0.71842553 0.57229394]
+  eta/eta_obs(close) = [1.       0.718426 0.572294]
   packet_close:
-[[8.91492e-01 3.74600e-02 7.10480e-02]
- [6.84440e-02 2.78600e-03 9.28770e-01]
- [4.00640e-02 9.59753e-01 1.83000e-04]]
+[[0.891492 0.03746  0.071048]
+ [0.068444 0.002786 0.92877 ]
+ [0.040064 0.959753 0.000183]]
 
 ========================================================================================
 PART 4: BOTTOM LINE

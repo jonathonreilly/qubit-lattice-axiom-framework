@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 532 |
+| **retained_bounded** | 531 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1236 |
+| unaudited | 1238 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 42 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -56,13 +56,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 827 |
-| `audited_conditional` | 43 |
+| `audited_clean` | 826 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1466 |
+| `unaudited` | 1468 |
 
 | claim_type | count |
 |---|---:|
@@ -286,7 +286,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -968,7 +967,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
-| `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3706,19 +3704,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The source note has been narrowed to the exact finite diagnostic supported by the cached runner output. The load-bearing branch enumeration and action-gap computation are produced by actual constrained optimization and clustering through the included helper chain, with no hard-coded branch representatives in the primary runner. The eta/eta_obs=1 statements are observation-normalized closure readouts on the imposed closure surface, not an independent global prediction. The note explicitly excludes branch completeness, branch uniqueness beyond the sampled starts, and certified-global selector content.
 - **auditor confidence:** high
 
-### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
-
-- **Note:** [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Raw Hermitian-pair projector algebra only: for a supplied 3 x 3 positive-definite Hermitian pair together with chosen unitary eigendiagonalizers U_nu and U_e, U_pair = U_e^dagger U_nu is unitary, |U_pair|^2 is doubly stochastic, and |U_pair|^2 is invariant under independent eigenvector column rephasings.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-dm-pmns-projector-pass2-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** U_pair = U_e^dagger U_nu is unitary because it is a product of unitaries, and the entrywise squared magnitudes of a unitary matrix form a doubly stochastic matrix; independent phase choices multiply entries by unit-modulus factors and do not change squared magnitudes.  _(class `A`)_
-- **chain closes:** True — The scoped claim closes as finite-dimensional linear algebra: products of unitaries are unitary, unitary row and column norms give row and column sums equal to one, and diagonal unitary rephasings preserve entrywise magnitudes. No direct dependencies or physical bridge inputs are needed for this narrowed algebraic statement.
-- **rationale:** The source note's retained-candidate content is confined to three raw algebraic facts, and those facts follow directly from standard Hermitian diagonalization and unitary-matrix identities. The runner corroborates the identities on deterministic examples and verifies that the repaired runner does not import the transport helper or compute eta diagnostics. This clean verdict does not ratify carrier authority, physical N1 column selection, eta/eta_obs diagnostics, a transport theorem, a PMNS pair law, a selected-column theorem, or physical leptogenesis prediction.
-- **auditor confidence:** high
-
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`
 
 - **Note:** [`DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
@@ -3730,19 +3715,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** **Script:** `scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py`  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
-- **auditor confidence:** high
-
-### `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16`
-
-- **Note:** [`DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded interval-witness diagnostic for the explicitly imported PMNS-assisted transport functional on the fixed N_e parameterized family; no physical selector law, off-seed source derivation, helper-row promotion, or full-stack closure is audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-dm-pmns-transport-interval-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The imported transport functional evaluates the aligned seed endpoint below eta/eta_obs = 1, a sampled off-seed endpoint above 1, and interpolation along that family yields eta/eta_obs = 1.  _(class `A`)_
-- **chain closes:** False — The note boundary avoids ratifying the physical selector/source/full-stack claims, and the primary runner source uses differential_evolution plus brentq rather than hard-coding eta/eta_obs = 1. However, the current restricted helper packet is internally inconsistent: direct import now fails because canonical_h is imported from scripts/frontier_dm_leptogenesis_pmns_projector_interface.py but that file defines no canonical_h.
-- **rationale:** Issue: the cached PASS=12 log is not source-verifiable against the current helper tree because the cache SHA pins only the primary runner e294e735ff688f7e05317519d0dcfa4caee6a6268d442665d9862e0fb1b4614f, while current transitive imports fail. Why this blocks: the source note's binding claim is the computed runner witness, so a stale or non-reproducible helper state cannot support a clean bounded audit. Repair target: restore or reroute the missing helper definitions canonical_h, monomial_h, and eta_ratio_single_source_flavored, then regenerate a cache that covers the transitive helper state and re-audit the bounded interval witness. Claim boundary until fixed: stale cached diagnostic over imported transport objects only; no retained bounded witness and no physical selector/source/full-stack closure.
 - **auditor confidence:** high
 
 ### `dm_lepton_synthesis_note_2026-04-19`

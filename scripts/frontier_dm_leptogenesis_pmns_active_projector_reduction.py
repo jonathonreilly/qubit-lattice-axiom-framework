@@ -26,14 +26,46 @@ from itertools import permutations
 
 import numpy as np
 
-from dm_leptogenesis_exact_common import exact_package
+from dm_leptogenesis_exact_common import (
+    C_SPH,
+    D_THERMAL_EXACT,
+    ETA_OBS,
+    S_OVER_NGAMMA_EXACT,
+    exact_package,
+    solve_multisource_flavored_transport,
+)
 from frontier_dm_leptogenesis_pmns_projector_interface import (
     canonical_h,
     canonical_left_diagonalizer,
-    eta_ratio_single_source_flavored,
     monomial_h,
     pmns_projector_packet,
 )
+
+
+# Inlined from the pre-2026-05-26 raw-interface module (which was stripped
+# of transport-coupled helpers to preserve its narrow scope). This is the
+# only consumer of `eta_ratio_single_source_flavored`; placing the helper
+# here keeps the projector interface free of transport dependencies while
+# fixing the ImportError flagged by the 2026-05-26 audit verdict on
+# dm_leptogenesis_pmns_transport_extremal_source_candidate.
+def eta_ratio_single_source_flavored(
+    pkg: object, projectors: tuple[float, ...]
+) -> float:
+    _, _, asym_grid = solve_multisource_flavored_transport(
+        lambdas=np.array([1.0]),
+        k_decays=np.array([pkg.k_decay_exact]),
+        source_matrix=np.array([projectors], dtype=float),
+        washout_matrix=np.array([projectors], dtype=float),
+    )
+    kappa_value = abs(float(asym_grid[:, -1].sum()))
+    return (
+        S_OVER_NGAMMA_EXACT
+        * C_SPH
+        * D_THERMAL_EXACT
+        * pkg.epsilon_1
+        * kappa_value
+        / ETA_OBS
+    )
 
 PASS_COUNT = 0
 FAIL_COUNT = 0

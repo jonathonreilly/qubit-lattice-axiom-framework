@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 498 |
+| **retained_bounded** | 499 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 794 |
+| `audited_clean` | 795 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1454 |
+| `unaudited` | 1453 |
 
 | claim_type | count |
 |---|---:|
@@ -782,6 +782,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_newton_reproduction_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -11850,6 +11851,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Given the stated off-diagonal anti-Hermitian block form M_KS=[[0,K],[-K†,0]] with equal ε-sublattice dimensions, the SVD of K reduces γ₅M to independent 2x2 blocks. The determinant sign from γ₅ is explicitly counted and cancels, leaving a strictly positive product because m>0 and σ_i²≥0.
 - **rationale:** The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, γ₅-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument.
 - **auditor confidence:** high
+
+### `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic certificate for the displayed staggered parity, identity, and lapse operator forms on finite sites/rational test profiles; excludes external literature correctness, uniqueness, framework derivation, continuum/GR consequences, and gate closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-staggered-scalar-parity-lapse-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given the displayed definitions of epsilon(x), P, I, and L, the note claims only the resulting finite algebraic identities and distinctions, including P-I = Phi(x)(epsilon(x)-1) and Hermiticity of sqrt(N) H_flat sqrt(N) for real diagonal sqrt(N).  _(class `A`)_
+- **chain closes:** True — Within the narrowed scope, the conclusions follow from the stated definitions and elementary finite algebra. The missing external authority/derivation bridge is explicitly outside the audited claim rather than a hidden premise.
+- **rationale:** The source note has successfully narrowed the claim to an if-given-these-operator-forms algebraic certificate. This is not a definition-only external bridge claim, because the audited conclusion is not that P or L is forced or externally correct, but that the displayed forms have the stated algebraic consequences. It is not decoration under the policy because there is no single retained parent claim being expanded into corollaries; the row is self-contained bounded algebra rather than a boxed corollary cluster.
 
 ### `staggered_self_consistent_two_body_note_2026-04-11`
 

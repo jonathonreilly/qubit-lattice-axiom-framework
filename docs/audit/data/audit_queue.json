@@ -3,7 +3,7 @@
     "critical": 235,
     "high": 331,
     "leaf": 327,
-    "medium": 332
+    "medium": 331
   },
   "cycle_break_target_count": 3,
   "cycle_break_targets": [
@@ -6658,6 +6658,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gravity_sign_audit_2026-04-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
+        "minimal_axioms_2026-05-03"
+      ],
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.248,
+      "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_correct_coupling.py",
+      "transitive_descendants": 75
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -12014,31 +12039,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gravity_sign_audit_2026-04-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
-        "minimal_axioms_2026-05-03"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.248,
-      "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_correct_coupling.py",
-      "transitive_descendants": 75
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "shapiro_delay_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17039,28 +17039,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.767,
-      "note_path": "docs/STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py",
-      "transitive_descendants": 76
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36962,5 +36940,5 @@
     }
   ],
   "ready_count": 57,
-  "total_pending": 1225
+  "total_pending": 1224
 }

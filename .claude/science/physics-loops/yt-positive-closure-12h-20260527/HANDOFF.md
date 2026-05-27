@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced twenty-four science blocks, not positive retained-grade
+The campaign has produced twenty-five science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary and later
@@ -49,6 +49,8 @@ closure:
 23. a no-go showing current real/reflection-even C3 block algebra does not
     derive that zero-singlet physical top-block membership law.
 24. a no-go showing source-orientation/sign choice of `B_x` does not derive
+    zero-singlet physical top-block membership.
+25. a no-go showing trace-free centered-source semantics do not derive
     zero-singlet physical top-block membership.
 
 New nontrivial-block matrix-element support result:
@@ -201,6 +203,54 @@ f17bd8c821ceea4ffe2159e61d9ce848eef28017
 PR #1980 body was updated with the source-orientation sign-selector no-go
 result, artifacts, verification, and next exact action. No
 `POSITIVE_CLOSURE` marker was written.
+
+New trace-free centered-source zero-singlet no-go:
+
+```text
+connected/trace-free C3 source tangent
+  -/-> accepted zero-singlet physical top-block membership
+```
+
+The finite witness is:
+
+```text
+Tr(B_x) = 0
+Tr(rho B_x) = (3s - 1)/sqrt(6),  s = Tr(P_0 rho)
+```
+
+Zero centered-source expectation gives:
+
+```text
+Tr(rho B_x) = 0  <=>  s = 1/3
+```
+
+but the target nontrivial response requires:
+
+```text
+s = 0
+```
+
+So source centering is an operator/source constraint, not a physical
+top-projector law. `P_0` remains allowed unless an accepted physical
+top-block/readout theorem or strict pole-row data excludes it.
+
+Cycle 11 trace-free centered-source no-go verification:
+
+- `python3 scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py` -> `SUMMARY: PASS=89 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=406 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`,
+  zero-singlet membership no-go `PASS=104`, source-orientation sign-selector
+  no-go `PASS=89`, real-record C3 source `PASS=76`, same-surface matrix
+  factorization `PASS=77`, first-principles transfer response `PASS=56`,
+  strict sparse availability audit `PASS=74`, source-response extremal no-go
+  `PASS=105`, and C3 circulant dynamics boundary `PASS=95`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+Cycle 11 trace-free centered-source no-go science commit is pending at this
+checkpoint. PR #1980 body update is pending. No `POSITIVE_CLOSURE` marker was
+written.
 
 New strict W/Z plus C3 top-row splice result:
 

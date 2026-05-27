@@ -1,5 +1,39 @@
 # Review History
 
+## 2026-05-27 Local Review, Block 25
+
+Scope:
+
+- C3 trace-free centered-source zero-singlet no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks finite C3 projectors, `Tr(B_x)=0`, singlet-weight response, zero-expectation and target-response solutions, certificate fields, dependency outputs, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open trace-free source-to-zero-singlet law; trace-free source centering is identified as operator-level, not a physical top-projector selector. |
+| Imports / support | DISCLOSED | No observed masses, old Ward route, target insertion, fitted selector, or external theorem is used. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=89 FAIL=0`
+- Full stack runner: `PASS=406 FAIL=0`
+- Adjacent Y_T runners passed: nontrivial-block support `PASS=85`,
+  zero-singlet membership no-go `PASS=104`, source-orientation sign-selector
+  no-go `PASS=89`, real-record C3 source `PASS=76`, same-surface matrix
+  factorization `PASS=77`, first-principles transfer response `PASS=56`,
+  strict sparse availability audit `PASS=74`, source-response extremal no-go
+  `PASS=105`, and C3 circulant dynamics boundary `PASS=95`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 24
 
 Scope:

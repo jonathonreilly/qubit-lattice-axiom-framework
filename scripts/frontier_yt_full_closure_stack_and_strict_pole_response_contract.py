@@ -109,6 +109,9 @@ This runner verifies the current burn-down state:
   sign of B_x that makes P_nt largest imports an unaccepted source-coordinate
   orientation law; sign-blind largest response selects P_0, and minimum
   response remains a convention.
+* The trace-free centered-source shortcut is now pruned: Tr(B_x)=0 is an
+  operator/source statement, not a physical top-projector law. Zero source
+  expectation gives singlet weight s=1/3, while the target row requires s=0.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -146,6 +149,7 @@ SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION = DOCS / "YT_SAME_SURFACE_TOP_MATR
 C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT = DOCS / "YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO = DOCS / "YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO = DOCS / "YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md"
+C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO = DOCS / "YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
@@ -200,6 +204,7 @@ SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT = ROOT / "outputs" / "yt_same_
 C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_nontrivial_block_matrix_element_support_2026-05-27.json"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT = ROOT / "outputs" / "yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json"
+C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT = ROOT / "outputs" / "yt_c3_trace_free_centered_source_zero_singlet_no_go_2026-05-27.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
@@ -299,6 +304,7 @@ def part1_anchors() -> dict[str, str]:
         C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO,
+        C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO,
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
@@ -352,6 +358,7 @@ def part1_anchors() -> dict[str, str]:
         C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT,
+        C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
@@ -407,6 +414,7 @@ def part1_anchors() -> dict[str, str]:
         "nontrivial C3 block matrix-element support",
         "zero-singlet top-block membership no-go",
         "source-orientation sign-selector no-go",
+        "trace-free centered-source no-go",
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
@@ -481,6 +489,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_nontrivial_block_matrix_element_support = load_json(C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT)
     c3_zero_singlet_top_block_membership_nogo = load_json(C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT)
     c3_source_orientation_sign_selector_nogo = load_json(C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT)
+    c3_trace_free_centered_source_zero_singlet_nogo = load_json(C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
@@ -658,6 +667,34 @@ def part2_support_outputs() -> dict[str, Any]:
         c3_source_orientation_sign_selector_nogo.get("certificate_boundary", {})
         .get("accepted_source_orientation_law_for_Pnt_derived")
         is False,
+    )
+    check(
+        "C3 trace-free centered-source zero-singlet no-go passed",
+        c3_trace_free_centered_source_zero_singlet_nogo.get("fail_count") == 0,
+        c3_trace_free_centered_source_zero_singlet_nogo.get("fail_count"),
+    )
+    check(
+        "C3 trace-free centered-source route is pruned",
+        c3_trace_free_centered_source_zero_singlet_nogo.get("trace_class") == "negative_route_pruning",
+        c3_trace_free_centered_source_zero_singlet_nogo.get("trace_class"),
+    )
+    check(
+        "C3 trace-free centered source does not select top projector",
+        c3_trace_free_centered_source_zero_singlet_nogo.get("certificate_boundary", {})
+        .get("trace_free_source_operator_selects_top_projector")
+        is False,
+    )
+    check(
+        "C3 trace-free zero expectation gives s=1/3",
+        c3_trace_free_centered_source_zero_singlet_nogo.get("centered_source_witness", {})
+        .get("zero_centered_expectation_forces")
+        == "s = 1/3",
+    )
+    check(
+        "C3 trace-free target response still requires s=0",
+        c3_trace_free_centered_source_zero_singlet_nogo.get("centered_source_witness", {})
+        .get("target_nontrivial_response_forces")
+        == "s = 0",
     )
     check("direct sparse response certificate harness passed", direct_sparse_cert.get("fail_count") == 0, direct_sparse_cert.get("fail_count"))
     check("direct sparse response certificate is bounded support", direct_sparse_cert.get("actual_current_surface_status") == "bounded-support microbench / open strict-response backend")
@@ -1161,6 +1198,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_nontrivial_block_matrix_element_support": c3_nontrivial_block_matrix_element_support,
         "c3_zero_singlet_top_block_membership_nogo": c3_zero_singlet_top_block_membership_nogo,
         "c3_source_orientation_sign_selector_nogo": c3_source_orientation_sign_selector_nogo,
+        "c3_trace_free_centered_source_zero_singlet_nogo": c3_trace_free_centered_source_zero_singlet_nogo,
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
@@ -1400,7 +1438,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_real_block_algebra_alone_does_not_derive_that_membership_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_real_block_algebra_sign_choice_and_trace_free_centering_do_not_derive_that_membership_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface sign/order/readout law excluding P_0 with backend/projectors/matrix elements",
         },
@@ -1518,6 +1556,10 @@ def main() -> int:
             "same-source top/W ratio is invariant under ell -> -ell, "
             "largest absolute response selects P_0, and minimum-response "
             "selection is still an imported convention. "
+            "The trace-free centered-source shortcut is now pruned: "
+            "Tr(B_x)=0 is an operator/source statement rather than a "
+            "physical top-projector law; zero centered expectation gives "
+            "s=1/3, while the target nontrivial response requires s=0. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1549,6 +1591,7 @@ def main() -> int:
             "c3_nontrivial_block_matrix_element_support_fail_count": support_outputs["c3_nontrivial_block_matrix_element_support"].get("fail_count"),
             "c3_zero_singlet_top_block_membership_nogo_fail_count": support_outputs["c3_zero_singlet_top_block_membership_nogo"].get("fail_count"),
             "c3_source_orientation_sign_selector_nogo_fail_count": support_outputs["c3_source_orientation_sign_selector_nogo"].get("fail_count"),
+            "c3_trace_free_centered_source_zero_singlet_nogo_fail_count": support_outputs["c3_trace_free_centered_source_zero_singlet_nogo"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),
@@ -1600,6 +1643,9 @@ def main() -> int:
             "docs/YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py",
             "outputs/yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json",
+            "docs/YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md",
+            "scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py",
+            "outputs/yt_c3_trace_free_centered_source_zero_singlet_no_go_2026-05-27.json",
             "docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
             "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json",

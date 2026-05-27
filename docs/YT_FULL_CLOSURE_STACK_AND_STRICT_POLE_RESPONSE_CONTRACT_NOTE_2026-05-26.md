@@ -59,6 +59,9 @@ closed exactly:
   P_nt largest imports an unaccepted source-coordinate orientation law; the
   same-source ratio is invariant under ell -> -ell, largest absolute response
   selects P_0, and minimum response remains a convention
+  trace-free centered-source no-go: Tr(B_x)=0 is an operator/source
+  constraint, not a physical top-projector law; zero source expectation gives
+  singlet weight s=1/3, not zero singlet weight, and P_0 remains allowed
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -166,6 +169,8 @@ still open:
   accepted sign/order/readout law or strict pole rows
   accepted physical source-orientation/sign/readout law if the C3 route tries
   to select P_nt by the sign of B_x
+  accepted trace-free-source-to-top-membership law if the C3 route tries to
+  convert source centering into zero P_0 singlet weight
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element

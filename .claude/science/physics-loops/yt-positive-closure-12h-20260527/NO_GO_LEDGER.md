@@ -166,3 +166,10 @@ controls remain open.
   `P_0`; minimum-response selection remains an extra convention. A positive
   closure route now needs an accepted physical source-orientation/sign/readout
   law excluding `P_0`, or strict top/W pole-row data with controls.
+- New in the twenty-fifth block: connected/trace-free source centering does
+  not derive zero-singlet physical top-block membership. `Tr(B_x)=0` is an
+  operator/source statement; for top singlet weight `s`,
+  `Tr(rho B_x)=(3s-1)/sqrt(6)`. Zero centered expectation gives `s=1/3`,
+  while the target nontrivial response requires `s=0`. A positive closure
+  route now needs an accepted physical top-block/readout law excluding `P_0`,
+  or strict top/W pole-row data with controls.

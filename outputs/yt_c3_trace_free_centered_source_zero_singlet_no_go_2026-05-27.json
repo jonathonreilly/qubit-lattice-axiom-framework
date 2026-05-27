@@ -1,0 +1,60 @@
+{
+  "actual_current_surface_status": "no-go / open trace-free source-to-zero-singlet law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "centered_source_witness": {
+    "P_0_response": "2/sqrt(6)",
+    "P_0_top_row": "A/sqrt(3)",
+    "P_nt_response": "-1/sqrt(6)",
+    "P_nt_top_row": "A/sqrt(12)",
+    "response_with_singlet_weight_s": "(3*s - 1)/sqrt(6)",
+    "target_nontrivial_response_forces": "s = 0",
+    "trace_B_x": "0",
+    "zero_centered_expectation_forces": "s = 1/3",
+    "zero_expectation_top_row": "0"
+  },
+  "certificate_boundary": {
+    "P0_remains_allowed_without_physical_top_law": true,
+    "accepted_same_surface_generator_factorization_derived": false,
+    "accepted_zero_singlet_membership_derived": false,
+    "bare_retained_allowed": false,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "strict_top_w_response_certificate_present": false,
+    "target_response_singlet_weight": "0",
+    "trace_free_source_operator_derived": true,
+    "trace_free_source_operator_selects_top_projector": false,
+    "zero_source_expectation_selects_Pnt": false,
+    "zero_source_expectation_singlet_weight": "1/3"
+  },
+  "dependency_statuses": {
+    "block_support": "exact-support / open nontrivial-block membership law",
+    "first_principles": "exact-support / formal-transfer no-go",
+    "real_source": "exact-support",
+    "source_orientation": "no-go / open source-orientation sign law",
+    "strict_availability": "no-go",
+    "zero_singlet": "no-go / open zero-singlet top-block membership law"
+  },
+  "fail_count": 0,
+  "no_go_audit": {
+    "reason": "Tr(B_x)=0 is an operator statement; for top singlet weight s, Tr(rho B_x)=(3s-1)/sqrt(6), so zero expectation gives s=1/3 rather than the needed s=0",
+    "remaining_imports": [
+      "accepted physical top-block/readout law excluding P_0",
+      "accepted same-surface generator factorization",
+      "accepted strict same-source top/W pole rows or degenerate-pole response rule",
+      "contact/FV/IR/model-class controls"
+    ],
+    "route_pruned": "connected/trace-free C3 source tangent derives zero-singlet physical top-block membership"
+  },
+  "pass_count": 89,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Trace-freeness of B_x is an operator/source statement, not a physical top-projector law. For singlet weight s, Tr(rho B_x)=(3s-1)/sqrt(6); zero centered expectation gives s=1/3, while the target nontrivial response requires s=0.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md",
+    "scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py",
+    "outputs/yt_c3_trace_free_centered_source_zero_singlet_no_go_2026-05-27.json"
+  ],
+  "route_still_live": "derive accepted physical top-block/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict same-source top/W pole rows with controls",
+  "trace_class": "negative_route_pruning"
+}

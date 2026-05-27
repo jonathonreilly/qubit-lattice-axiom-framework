@@ -313559,18 +313559,15 @@
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "yt_ward_identity_derivation_theorem"
-      ],
+      "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
       "load_bearing_step": "From positive forward differences on a 33-point grid plus a sign change and brentq agreement, the note concludes that Phi(X)=g_lattice/sqrt(6) has a unique root X*=0.97267 on [0.5,1.2].",
       "load_bearing_step_class": "B",
@@ -313690,7 +313687,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -313699,7 +313696,7 @@
         "total_pass": 23
       },
       "runner_path": "scripts/frontier_yt_boundary_bc_transfer_uniqueness.py",
-      "title": "yt Boundary BC-Transfer Uniqueness Narrow Theorem (Backward-RGE Monotonicity)",
+      "title": "yt Boundary BC-Transfer Finite-Grid Diagnostic (Backward-RGE)",
       "transitive_descendants": 0,
       "verdict_rationale": "The primary runner is not a trivial printout: it numerically integrates the stated 2-loop ODE, samples Phi, computes finite differences, brentq roots, and a step-size stability check; its own 23 assertions are all diagnostic class D. However the load-bearing target Phi(X)=g_lattice/sqrt(6) imports a Planck-surface Ward boundary condition that the provided Ward authority explicitly does not claim; it only supports a bare H_unit matrix element and says tadpole/SM transport is separate. The runner also hard-codes CANONICAL_PLAQUETTE=0.5934 through the helper even though the plaquette authority says that value is admitted/reused, not certified by that note. Finally, to the extent T2/T4 remain binding continuum claims, a 33-point grid and brentq agreement do not prove strict monotonicity or exact uniqueness on the whole interval."
     },

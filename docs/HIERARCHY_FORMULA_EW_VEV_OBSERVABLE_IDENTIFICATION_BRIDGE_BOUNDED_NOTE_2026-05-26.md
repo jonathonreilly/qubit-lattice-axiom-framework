@@ -67,13 +67,18 @@ admitted-context so that the bridge's *conditional* content is auditable.
   `audited_renaming`. C2 is the **exponent** input.
 - **C3 (= hierarchy P3) — `u_0^16 → α_LM^16` substitution.** Algebraic
   identity `α_LM^16 = α_bare^16 / u_0^16` carries the bare-coupling
-  prefactor `α_bare^16 = (1/4π)^16 ≈ 1.34 × 10^(-17)`. The retained
+  prefactor `α_bare^16 = (1/4π)^16 ≈ 2.59 × 10^(-18)`. The retained
   `α_LM` geometric-mean identity supplies the algebra; the
   regulator-dependence no-go
   (`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`)
   records that the species-count ↔ hierarchy-exponent identification
   depends on the substrate-imposed naive regulator. C3 is the
-  **coupling-power** input.
+  **coupling-power** input. (NB: this corrects an order-of-magnitude
+  typo in `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10` §3 which
+  quotes `1.34 × 10^(-17)`; the correct value at `α_bare = 1/(4π)` is
+  `≈ 2.59 × 10^(-18)`. The downstream `α_LM^16 ≈ 2.09 × 10^(-17)` and
+  the `v_hierarchy ≈ 246.28 GeV` arithmetic are unaffected because the
+  `u_0^(-16) ≈ 8.07` factor multiplies through correctly.)
 - **C4 — Observable-principle scalar-additivity admission.** The
   audited_conditional admission of
   `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (P1 scalar additivity over

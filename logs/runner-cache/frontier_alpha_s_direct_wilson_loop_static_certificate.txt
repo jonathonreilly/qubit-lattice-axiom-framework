@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py
+runner_sha256: 8751432f0659773f743b192ccb0a2c50a66a04f93afd692f5786f56011c74e2a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Direct Wilson-loop static-potential certificate
+certificate: /private/tmp/cl3-review-open-20260527-hnkyam/outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json
+  [PASS] certificate can be loaded
+  [PASS] certificate declares Wilson-loop/static-potential authority (authority='wilson_loop_static_potential')
+  [PASS] certificate is on the configured beta=6 Wilson surface (action='Cl3Z3_SU3_Wilson', g_bare=1.0, betas=[6.0])
+  [PASS] certificate disallows alpha_LM/u0/plaquette authority flags (all three flags must be false)
+  [PASS] certificate exposes no forbidden authority keys (no forbidden keys)
+  [PASS] certificate contains three ensembles
+  [PASS] certificate uses three distinct lattice volumes (volumes=[(12, 12, 12, 24), (16, 16, 16, 32), (24, 24, 24, 48)])
+  [PASS] each ensemble has at least 500 saved configurations
+  [PASS] Wilson-loop means and errors pass finite statistics checks (qualified=72)
+  [PASS] static-potential plateaus pass finite diagnostics (12/12)
+  [PASS] per-volume Cornell force fits are finite (finite fits=3)
+  [PASS] local force-scheme alpha_qq values are finite at multiple points (points=18)
+  [PASS] global Cornell fit has finite static-potential parameters (sigma=0.054485636694192124, e=0.284764583881128)
+  [PASS] per-volume r0/a diagnostics are finite certificate diagnostics (r0/a=[5.325599527844339, 4.909094990688272, 4.8293276704145915])
+  [PASS] physical scale and running fields are quarantined as context (present but not used by this runner as pass/fail evidence)
+  [PASS] existing alpha_LM/u0 chain is cross-check only (used_as_authority=False)
+
+Direct Wilson-loop static-potential certificate: PASS
+PASS=16 FAIL=0
+
+----- stderr -----
+

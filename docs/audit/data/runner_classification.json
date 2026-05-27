@@ -21648,6 +21648,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_star_supported_bridge_class.py"
     },
+    "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27": {
+      "assert_count": 0,
+      "counts": {
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/static_source_readout_i1_accepted_premise_runner.py"
+    },
     "strc_lo_collinearity_theorem_note_2026-04-19": {
       "assert_count": 1,
       "counts": {
@@ -55601,6 +55613,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/static_source_readout_i1_accepted_premise_runner.py": {
+      "assert_count": 0,
+      "claims": [
+        "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/structured_chokepoint_bridge.py": {
       "assert_count": 0,
       "claims": [
@@ -56606,15 +56633,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 347,
+    "decoration_candidates": 348,
     "dominant_class_distribution": {
-      "A": 249,
+      "A": 250,
       "B": 293,
       "C": 761,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2040,
+    "runners_classified": 2041,
     "runners_with_C": 994,
     "runners_with_D": 601
   }

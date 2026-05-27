@@ -146363,22 +146363,46 @@
       "verdict_rationale": null
     },
     "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T05:00:39.770280+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "Formal positive two-slot constrained log-volume extremum under rho_plus^2 + rho_perp^2 = E_tot, with kappa defined as 2*rho_plus^2/rho_perp^2 and evaluated only at that extremum."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e3a28d07bd8c076d81413148cc467c26d1830e1f1acb94fed40cae62cd798f91",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra after the reduced-carrier admission closes and the runner verifies it at exact symbolic precision with PASS=35 FAIL=0. The full scoped claim still load-bears the physical SO(2)-quotient/reduced-carrier bridge, and the current parent dependency supplies only a formal reduced two-variable log-volume identity, not a retained physical charged-lepton SO(2)-quotient derivation.",
       "claim_id": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Conditional post-quotient algebra only: given an admitted SO(2) frame-quotient/reduced two-slot carrier with rho_+^2 = E_+ and rho_perp^2 = E_perp, plus the retained block-total Frobenius identities E_+ = 3a^2 and E_perp = 6|b|^2, the equal-weight reduced-carrier log-volume extremum gives rho_+^2 = rho_perp^2 = E_tot/2 and hence a^2 = 2|b|^2, kappa = 2. The SO(2)-quotient/reduced-carrier bridge on the charged-lepton scalar lane is not derived or retained in this packet.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T05:00:39.770280+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -146387,34 +146411,41 @@
         "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The source's frontmatter and binding scope assume the SO(2) frame-quotient carrier on the charged-lepton scalar lane, with rho_+^2 = E_+ and rho_perp^2 = E_perp, and then run exact log-volume algebra on that admitted carrier.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "c826292c156c9c37c5d047a5d923df49d3ce4b29b4006687bd5a972bcbccace4",
       "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the physical SO(2)-quotient/reduced-carrier map on the charged-lepton scalar lane, or rescope the source to a purely formal two-variable corollary of the retained Frobenius and reduced-log-volume rows.",
+      "open_dependency_paths": [
+        "retained derivation of the SO(2) frame-quotient/reduced-carrier bridge on the charged-lepton scalar lane",
+        "retained theorem identifying rho_+^2 = E_+ and rho_perp^2 = E_perp as a physical reduction rather than an admitted carrier",
+        "or source rewrite removing the physical SO(2)-quotient admission and claiming only formal reduced-carrier algebra"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 35,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "runner_result": "runner_sha256=e3a28d07bd8c076d81413148cc467c26d1830e1f1acb94fed40cae62cd798f91; exit_code=0; PASS=35 FAIL=0; exact symbolic verification of post-quotient Lagrange extremum, E_i=rho_i^2 reparametrization, kappa=2 algebra, and counterfactual tilts; runner does not derive the physical SO(2)-quotient/reduced-carrier bridge.",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 35
       },
       "runner_path": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py",
       "title": "Koide MRU Reduced-Carrier Narrow Theorem (Post-Quotient Algebra Reparametrization Equivalence)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source requires the SO(2) frame-quotient/reduced two-slot carrier on the charged-lepton scalar lane as a load-bearing premise. Why this blocks: that carrier/readout bridge is an admitted physical reduction, not a retained theorem in the restricted packet; the current parent row is retained_bounded only as formal reduced-carrier algebra and explicitly does not derive the physical SO(2)-quotient. Repair target: add a retained bridge theorem deriving the SO(2)-quotient/reduced-carrier map rho_i^2 = E_i on the charged-lepton scalar lane, or rewrite this row as a purely formal algebraic corollary with no physical SO(2)-quotient/carrier claim. Claim boundary until fixed: the post-quotient algebra is exact and runner-certified, but the row remains conditional on the unratified reduced-carrier bridge."
     },
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19": {
       "audit_date": "2026-05-26T00:00:00+00:00",

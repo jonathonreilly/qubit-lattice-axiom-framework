@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 146 |
-| **retained_no_go** | 167 |
+| **retained_no_go** | 168 |
 | **retained_bounded** | 489 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1239 |
+| unaudited | 1238 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 781 |
+| `audited_clean` | 782 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1468 |
+| `unaudited` | 1467 |
 
 | claim_type | count |
 |---|---:|
@@ -462,6 +462,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6665,6 +6666,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The audited scope is a finite-dimensional linear-algebra theorem: cyclic group averaging is a canonical projector, its image is the stated circulant Hermitian basis, and the trace responses reconstruct the projected component. This does not audit the upstream microscopic source law, Koide selector principle, or charged-lepton readout, which the note explicitly leaves open.
 - **rationale:** Within the bounded algebraic scope, the load-bearing step closes: the note states the projector, the basis-level action, the generic coefficient formula, and the response reconstruction, and the cached runner confirms all algebraic identities with PASS=11 FAIL=0. The two D-class checks are only witness/comparator checks for the observed amplitude target and are not needed to prove the compression theorem. This clean verdict must not be read as closing the microscopic source law for (r0,r1,r2), the selector principle, or the final charged-lepton readout, all of which remain explicitly outside this claim scope.
 - **auditor confidence:** high
+
+### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
+
+- **Note:** [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](../../docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Fixed-premise non-implication on Herm(3): positive-definiteness, Ad-invariance, and scalar/traceless isotype orthogonality do not imply beta = 0 or scalar/traceless weight ratio 1. The audited scope excludes Q = 2/3, Koide, charged-lepton physics, and any claim that no future independent normalization authority can exist.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-koide-frobenius-no-go-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The positive-definite region contains beta != 0 examples, specifically alpha = beta = 1, with scalar weight 4, traceless weight 1, positive definiteness, Ad-invariance, and non-Frobenius behavior on trace-bearing matrices.  _(class `A`)_
+- **chain closes:** True — A single countermodel is enough for this narrowed logical non-implication. B_{1,1} satisfies the stated premises, has scalar/traceless weights 4 and 1, and therefore negates the conclusion that the premises force the Frobenius ratio 1; full invariance follows from the trace form, while the runner provides internal algebra and boundary sanity checks.
+- **rationale:** The narrowed no-go closes as an algebraic counterexample, not as a broad no-future-route theorem. N1-N8 do not block it: alternative routes that keep the same premises must attack the exhibited countermodel, while routes through beta = 0 admissions, AM-GM, Q = 2/3, or charged-lepton identifications add premises explicitly kept out of scope; there are no independent wall sets, hidden cited residual witnesses, new-axiom claims, or decoration concerns in the bounded statement. The residual boundary is that any later positive derivation may still proceed by supplying an independent authority fixing the scalar/traceless isotype-weight ratio to 1.
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`
 

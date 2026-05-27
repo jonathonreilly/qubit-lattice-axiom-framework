@@ -4845,6 +4845,14 @@
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+      "to": "cl3_taste_generation_theorem"
+    },
+    {
       "from": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
       "to": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27"
     },
@@ -45778,6 +45786,21 @@
       "runner_path": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py",
       "title": "Cl(3) \u03b3-Involution Determinant Identity \u2014 Narrow Theorem"
     },
+    "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27": {
+      "claim_id": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "cl3_taste_generation_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a76b5819ea53b220f3f02c1d598f90e14d3fb7588a370b2147f64f90aa5fe9bf",
+      "path": "docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "runner_path": "scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py",
+      "title": "Cl(3) Hypercharge Eigenvalue Spectrum on the Chiral Cube Narrow Theorem"
+    },
     "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27": {
       "claim_id": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
       "claim_type_author_hint": "bounded_theorem",
@@ -86285,7 +86308,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 640,
+      "bounded_theorem": 641,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86294,7 +86317,7 @@
       "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1056,
+      "bounded_theorem": 1057,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86302,10 +86325,10 @@
       "open_gate": 127,
       "positive_theorem": 588
     },
-    "edge_count": 9837,
-    "leaf_count": 809,
-    "node_count": 2578,
+    "edge_count": 9839,
+    "leaf_count": 810,
+    "node_count": 2579,
     "root_count": 858,
-    "runners_with_path": 2153
+    "runners_with_path": 2154
   }
 }

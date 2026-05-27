@@ -3072,6 +3072,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py"
     },
+    "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27": {
+      "assert_count": 0,
+      "counts": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py"
+    },
     "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27": {
       "assert_count": 0,
       "counts": {
@@ -27105,6 +27117,21 @@
       ],
       "counts": {
         "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py": {
+      "assert_count": 0,
+      "claims": [
+        "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 13,
         "B": 0,
         "C": 0,
         "D": 0
@@ -56822,15 +56849,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 351,
+    "decoration_candidates": 352,
     "dominant_class_distribution": {
-      "A": 255,
+      "A": 256,
       "B": 293,
       "C": 762,
       "D": 302,
       "none": 436
     },
-    "runners_classified": 2048,
+    "runners_classified": 2049,
     "runners_with_C": 998,
     "runners_with_D": 602
   }

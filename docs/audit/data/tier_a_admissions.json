@@ -1,27 +1,13 @@
 {
   "schema_version": 1,
-  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted inputs are four: P1, AC_phi_lambda, S, and theta. Only three are machine premise nodes here because S is pervasive and has no single claim_id; it is tracked under not_a_node. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
-  "genuine_admitted_input_count": 4,
+  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. As of 2026-05-26, the registry distinguishes three input categories: (1) admitted derivation targets (genuine framework-specific gaps the framework can attempt to close — currently AC_phi_lambda, S, and theta); (2) stated principles (foundational principles the framework states rather than derives — currently P1, with a 6-no-go convergent-foreclosure portfolio establishing irreducibility, reclassified 2026-05-26); (3) conventions (Y0 and g0, vacuous rescaling choices, excluded from admission count). Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Stated principles are NOT derivation targets in the same sense; they are foundational framework inputs (analogous to GR's general covariance) and the convergent-foreclosure portfolio establishes that derivation is structurally not possible. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
+  "genuine_admitted_input_count": 3,
+  "stated_principles_count": 1,
   "canonical_ids": [
-    "observable_principle_from_axiom_note",
     "staggered_dirac_realization_gate_note_2026-05-03",
     "strong_cp_theta_zero_note"
   ],
   "derivation_targets": {
-    "observable_principle_from_axiom_note": {
-      "label": "P1",
-      "statement": "scalar observables are additive over independent subsystems; forces W = log|det(D+J)|",
-      "class": "extensivity principle (mild)",
-      "leverage": 88,
-      "no_go_portfolio": [
-        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
-      ]
-    },
     "staggered_dirac_realization_gate_note_2026-05-03": {
       "label": "AC_phi_lambda",
       "statement": "generation mass-pattern input: the C_3-breaking phase/orientation plus the abstract-sector to physical-species bridge; bare e/mu/tau naming is a convention, not a derivation target",
@@ -41,6 +27,24 @@
       "no_go_portfolio": [
         "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
       ]
+    }
+  },
+  "stated_principles": {
+    "observable_principle_from_axiom_note": {
+      "label": "P1",
+      "statement": "scalar observables are additive over independent subsystems; forces W = log|det(D+J)|",
+      "class": "principle-grade (mild) — extensivity defining what extensive observables are; not a derivation target",
+      "leverage": 88,
+      "convergent_foreclosure_portfolio": [
+        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
+      ],
+      "reclassification_basis": "Reclassified 2026-05-26 from derivation_target to stated_principle. The 6-no-go portfolio above forms a CONVERGENT FORECLOSURE pattern: 6 independent mathematical frameworks (Connes NC spectral, extensivity primitive, Jones index subfactor, locality of source derivatives, Tomita-Gibbs modular, structural reframing) all independently attempted to derive P1, all failed for different structural reasons. The registry already noted that additivity is logarithm circular at the foundational level. The convergent foreclosure is the multi-witness mirror of the AC_phi_lambda 6-witness positive convergence (PR #1965), here showing P1 is irreducible / principle-grade. P1 is the framework's analog of GR's general covariance (stated, not derived). Pattern parallel to physics: every theory has a foundational extensivity / locality principle.",
+      "comparison_to_other_theories": "GR general covariance, SM unitarity, axiomatic QFT Wightman/OS axioms — all stated principles, never 'derived' from something more fundamental."
     }
   },
   "conventions": {

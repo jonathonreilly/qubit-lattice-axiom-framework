@@ -3132,6 +3132,18 @@
       "dominant_class": "C",
       "runner": "scripts/verify_cl3_sm_embedding.py"
     },
+    "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py"
+    },
     "cl3_taste_generation_theorem": {
       "assert_count": 2,
       "counts": {
@@ -27086,6 +27098,21 @@
         "D": 0
       },
       "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py": {
+      "assert_count": 1,
+      "claims": [
+        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -56770,14 +56797,14 @@
   "stats": {
     "decoration_candidates": 350,
     "dominant_class_distribution": {
-      "A": 253,
+      "A": 254,
       "B": 293,
       "C": 762,
       "D": 302,
       "none": 436
     },
-    "runners_classified": 2046,
-    "runners_with_C": 997,
+    "runners_classified": 2047,
+    "runners_with_C": 998,
     "runners_with_D": 602
   }
 }

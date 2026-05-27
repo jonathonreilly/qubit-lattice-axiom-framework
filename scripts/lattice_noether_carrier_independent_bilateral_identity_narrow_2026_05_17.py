@@ -25,7 +25,7 @@ For any c_mu in this class, the nearest-neighbour operator
     M_{x, x-mu_hat}  =  -(1/2) c_mu(x - mu_hat)        (= -(1/2) c_mu(x))
 
 is anti-Hermitian off-diagonal (M^T = -M off-diagonal). For any
-field-index generator T satisfying
+site-local/internal generator T satisfying
 
     [T, M]  =  0,                                                        (Sym)
 
@@ -54,6 +54,9 @@ Thus the bilateral Noether identity is *carrier-independent within the
 axis-translation-invariant class*, decoupling the identity from the
 staggered-Dirac realization gate. The gate enters only when one wants
 to *identify* M with the specific physical operator M_KS.
+
+This runner does not claim a Ward theorem for generators that shift
+lattice indices.
 
 Exhibits.
 
@@ -552,11 +555,13 @@ def main():
     print(" lattice_noether_carrier_independent_bilateral_identity_narrow")
     print(" Block 27 of filter-excluded-positive-closures-2026-05-17")
     print()
-    print(" Theorem. Bilateral Noether identity holds on the axis-translation-")
+    print(" Bounded theorem. Bilateral Noether identity holds on the axis-translation-")
     print(" invariant carrier class { c_mu : c_mu(x + mu_hat) = c_mu(x) },")
     print(" with on-shell divergence vanishing for every c_mu in the class")
-    print(" and every generator T with [T, M] = 0. Decouples the bilateral")
-    print(" identity from the staggered-Dirac realization gate.")
+    print(" and every site-local/internal generator T with [T, M] = 0.")
+    print(" It does not claim a Ward theorem for lattice-index generators.")
+    print(" This decouples the bilateral identity from the staggered-Dirac")
+    print(" realization gate.")
     print("=" * 72)
     print()
     results = {
@@ -578,6 +583,11 @@ def main():
     all_pass = all(results.values())
     print()
     print(f" Overall verdict: {'PASS' if all_pass else 'FAIL'}")
+    if all_pass:
+        print("LATTICE_NOETHER_BILATERAL_AXISINV_INTERNAL_GENERATOR_THEOREM=TRUE")
+        print("SITE_LOCAL_INTERNAL_GENERATOR_SCOPE=TRUE")
+        print("LATTICE_INDEX_WARD_CURRENT_CLAIMED=FALSE")
+        print("FINITE_GRASSMANN_PARTITION_AUTHORITY_CITED=TRUE")
     return 0 if all_pass else 1
 
 

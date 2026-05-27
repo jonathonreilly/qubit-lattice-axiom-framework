@@ -32,7 +32,7 @@ authority/runner for it lands.
 ## Authority disclaimer
 
 This is a source-note proposal. The `claim_type`, scope, named
-admissions, and `positive_theorem` classification are author-proposed;
+admissions, and bounded-theorem classification are author-proposed;
 the audit lane has full authority to retag, narrow, or reject the
 proposal. This note adds a narrow sub-theorem that **strictly extends**
 the parent note's content without modifying parent text. No parent
@@ -69,12 +69,12 @@ carrier class* defined below. The staggered carrier `eta_mu` is one
 member of this class; the naive Wilson-free carrier `c_mu = 1` is
 another; we exhibit a third explicit member to certify the class is
 strictly larger than {naive, staggered}. The bilateral Noether
-identity is then a positive theorem on every member of the class, with
+identity is then a bounded theorem on every member of the class, with
 **no dependence on the staggered-Dirac realization gate**.
 
 The narrow closure here is therefore a slice of the parent's
 audited_conditional gap: the *bilateral algebraic core* (parent Step 2
-plus the U(1)-phase Step 4a) is recovered as a positive theorem on the
+plus the U(1)-phase Step 4a) is recovered as a bounded theorem on the
 axis-inv class, independent of the carrier-import question. The
 remainder of the parent's content -- specifically the identification of
 the carrier with `M_KS` and the physical naming of `J` as the
@@ -139,8 +139,10 @@ Proof. By direct expansion:
 This vanishes for every `(x, mu)` iff `c_mu(x + mu_hat) = c_mu(x)` for
 every `x`, which is `(AxisInv)`. ∎
 
-**(T2) Carrier-independent bilateral conserved current.** For any
-`c_mu` in `AxisInv(Z^d)` and any field-index generator `T` satisfying
+**(T2) Carrier-independent bilateral conserved current for site-local/internal generators.** For any
+`c_mu` in `AxisInv(Z^d)` and any site-local/internal generator `T`
+(a generator acting on internal/field indices at each fixed lattice site,
+not a generator that shifts lattice indices) satisfying
 the symmetry condition
 
 ```text
@@ -262,11 +264,12 @@ mu_hat) = c_mu(x)` to match coefficients, so outside `AxisInv` the
 bilateral form `(5)` is no longer the form produced by the local-alpha
 expansion.
 
-For non-trivial generators `T` (those that don't commute with arbitrary
-operators), `(Sym)` itself constrains the relationship between `T`
-and `c_mu`, and the bilateral form `(5)` is the *only* form that the
-finite-Grassmann variational derivation produces, again requiring
-`(AxisInv)`.
+For non-trivial site-local/internal generators `T` (those that do not
+commute with arbitrary internal operators), `(Sym)` itself constrains
+the relationship between `T` and `c_mu`, and the bilateral form `(5)` is
+the *only* form that the finite-Grassmann variational derivation
+produces, again requiring `(AxisInv)`. Generators that shift lattice
+indices require a separate Ward theorem and are outside this row.
 
 ## Carrier inclusion: staggered and naive Wilson-free
 
@@ -400,8 +403,8 @@ axis-translation-invariance property.
 
 ## Honest status
 
-**Positive narrow theorem on the explicit framework baseline.** The
-bilateral Noether identity is a positive theorem on the
+**Bounded narrow theorem on the explicit finite-Grassmann surface.** The
+bilateral Noether identity is a bounded theorem on the
 axis-translation-invariant carrier class, with `(T1)`-`(T5)`
 established algebraically and verified numerically by the eight runner
 exhibits to machine precision. The narrow theorem does *not* close
@@ -417,9 +420,12 @@ effective status; this note adds a strictly-additive positive
 sub-theorem that does not modify the parent note's text or change
 its dependency graph.
 
-The narrow theorem here is dimension-independent and gate-independent;
-it depends only on `A1`, `A2`, and the elementary finite-Grassmann
-variational technique used by the parent in Step 2.
+The narrow theorem here is dimension-independent and staggered-gate
+independent. Its finite-Grassmann bilinear/partition surface is supplied
+by the retained-bounded Berezin determinant authority cited below, and
+its Noether-current claim is restricted to site-local/internal
+generators. It does not claim a Ward theorem for lattice-index-shifting
+generators.
 
 ## Not in scope
 
@@ -436,9 +442,10 @@ variational technique used by the parent in Step 2.
 
 ## Load-bearing dependencies
 
-- Current public framework memo:
-  `MINIMAL_AXIOMS_2026-05-03.md` (`A1`: Cl(3) per-site, `A2`: Z^d
-  spatial substrate).
+- [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained-bounded finite-Grassmann Berezin determinant / bilinear
+  partition authority supplying the finite Grassmann algebra surface
+  used by the local-alpha bilinear expectation convention.
 
 ## Citations
 
@@ -462,12 +469,27 @@ expansion); the naive carrier `c_mu = 1` is another. The runner
 exhibits a third explicit member (`phi_mu = 1 + 0.3 cos(...)`) to
 certify the class is genuinely larger than {naive, staggered}.
 
-## Audit dependency repair links
+## 2026-05-27 Audit-Conditional Repair
 
-- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md) - current
-  public framework memo; sole upstream framework dependency.
-- [axiom_first_lattice_noether_theorem_note_2026-04-29](AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) -
-  parent (audited_conditional). This narrow theorem is strictly
+The audit blocker on this row requested two repairs:
+
+1. cite a retained finite-Grassmann bilinear/partition theorem as a
+   one-hop dependency;
+2. narrow `(T2)` to site-local/internal generators, unless a separate
+   Ward theorem for lattice-index generators is supplied.
+
+This revision takes that path. It adds the retained-bounded Berezin
+determinant narrow theorem as the one-hop finite-Grassmann authority and
+narrows `(T2)` throughout to generators acting internally at fixed
+lattice sites. Lattice-index-shifting Ward currents remain out of scope.
+
+## Audit Dependency Repair Links
+
+- [spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained-bounded finite-Grassmann Berezin determinant / bilinear
+  partition authority.
+- [axiom_first_lattice_noether_theorem_note_2026-04-29](AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)
+  — parent surface for context. This narrow theorem is strictly
   additive on the parent and does not modify the parent's text or
   dependency graph.
 - [staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)

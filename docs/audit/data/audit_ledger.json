@@ -172931,11 +172931,11 @@
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
       "load_bearing_step": "The backward hop reindex uses AxisInv, c_mu(x' + mu_hat) = c_mu(x'), so the forward and backward coefficients combine into the bilateral current (5).",
       "load_bearing_step_class": "A",
@@ -173064,13 +173064,13 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 8,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
       "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem (Block 27)",
@@ -185689,7 +185689,7 @@
       "deps": [
         "key_terminology"
       ],
-      "direct_in_degree": 82,
+      "direct_in_degree": 81,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],

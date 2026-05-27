@@ -1,0 +1,21 @@
+loop_slug: lattice-noether-bilateral-scope-repair-20260527
+branch: physics-loop/lattice-noether-bilateral-scope-repair-20260527
+base: origin/main
+target_claim_id: lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17
+target_status: bounded-support
+current_surface_status: bounded-support
+cycle_count: 1
+active_route: cite_retained_grassmann_authority_and_narrow_generator_scope
+hard_residual: lattice-index-shifting Ward theorem remains out of scope
+files_touched:
+  - docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py
+  - .claude/science/physics-loops/lattice-noether-bilateral-scope-repair-20260527/
+open_imports: []
+no_go_routes:
+  - lattice-index generator Ward theorem not claimed
+trace_gate_classification: direct_blocker_closure
+review_findings: branch-local wording and runner checks passed; independent Codex reviewer/audit still required
+pr_status: draft PR https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2112
+next_exact_action: continue to next ledger-order conditional row
+stop_condition: campaign queue exhausted or user stops the loop

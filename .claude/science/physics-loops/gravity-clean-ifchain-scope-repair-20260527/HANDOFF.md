@@ -14,5 +14,7 @@ Key movement:
 - Pipeline reset the target row to `audit_status=unaudited`,
   `effective_status=unaudited`, `ready=true`.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2062
+
 Remaining science blocker: prove the missing closure/source/response/Green
 bridges if we want an unconditional gravity derivation.

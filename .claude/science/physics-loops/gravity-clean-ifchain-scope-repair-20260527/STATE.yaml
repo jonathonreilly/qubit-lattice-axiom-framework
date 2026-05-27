@@ -21,6 +21,6 @@ open_imports:
   - weak-field response S=L(1-phi) remains open
   - framework-normalized Green-function bridge remains open
 review_status: vocab/pipeline pass; independent audit required
-pr_status: pending
-next_exact_action: open review PR
+pr_status: open https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2062
+next_exact_action: independent audit/reviewer extraction
 stop_condition: one coherent scope repair packaged

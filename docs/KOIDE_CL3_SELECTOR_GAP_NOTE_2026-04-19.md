@@ -1,8 +1,69 @@
 # Koide Cl(3) → SM Embedding — Selector Gap Note
 
-**Date:** 2026-04-19
-**Claim type:** open_gate
-**Status:** open selector-gap inventory / support note on current `main` — the listed Cl(3) doublet/Kramers, baryon-Schur, SU(3)-coupling, and degeneracy probes are recorded as conditional candidate routes (not retained exhaustions), and the charged-lepton package remains bounded
+**Date:** 2026-04-19 (original); 2026-05-10 (audit-conditional perimeter);
+2026-05-27 (inventory-only language tightened).
+**Type:** open_gate
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
+**Status:** open selector-gap inventory / support note on current `main`
+— the listed Cl(3) doublet/Kramers, baryon-Schur, SU(3)-coupling, and
+degeneracy probes are recorded as conditional candidate routes (not
+retained exhaustions), and the charged-lepton package remains bounded.
+
+---
+
+## 2026-05-27 Scope Tightening (inventory-only)
+
+The 2026-05-16 independent audit feedback recorded this closure issue:
+
+> *"The restricted packet closes the parent V_eff coefficient
+> assignment, but it does not close the route-specific doublet,
+> baryon-Schur, SU(3)-coupling, degeneracy, full-4x4, transport, or
+> kappa_* derivations. The note correctly leaves the global
+> Cl(3)-alone non-derivability statement open."*
+
+The repair target was: *"add direct retained dependencies or runners for
+each listed route, especially the full 4x4 baryon block, SU(3)-coupling
+modifications, degeneracy scan, and first-principles kappa_* derivation."*
+
+Adding the listed retained dependencies / runners is substantive new
+research (each route is itself an open theoretical question) and is
+**out of scope** for this revision per the framework policy on
+adding new retained authorities. This revision takes the alternative
+path the prior feedback's acknowledgment ("The note correctly leaves the
+global Cl(3)-alone non-derivability statement open") already permits:
+tighten the inventory-only character of every listed route so it is
+unambiguous that this note does not claim any of them is exhausted.
+
+**Inventory-only scope.** This note is graph-visible **only as an
+inventory** of candidate Cl(3) selector-gap routes. The single
+load-bearing item that the cited parent authority supplies is the
+V_eff coefficient assignment carried by
+`KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19`. Every
+other listed item below — the §1 Kramers-doublet identification, the
+§2 algebraic m_DA value, the §3a-§3d sub-route negative readings, the
+§4 H_* witness kappa_*, and the §5 open routes (full 4×4, transport
+4π/√6, kappa_* derivation) — is recorded **as inventory** and is
+**not claimed exhausted** by this note. Each listed route requires
+its own retained one-hop authority or runner to become load-bearing;
+none is supplied here.
+
+**Boundary until per-route authorities land.** Downstream consumers
+must not cite this note for:
+
+- any specific route's exhaustion (use a retained per-route authority
+  if one lands later);
+- a closed "Cl(3) alone cannot derive m_*" bounded theorem (the global
+  closure-statement stays open per the 2026-05-10 perimeter and the
+  2026-05-16 feedback acknowledgment);
+- the §1 - §4 numerics ("≈ −0.816", "GAMMA = 1/2 exact", "miss m_* by
+  > 5%", "eigenvalues (−2.507, −0.848, +2.195)") as bounded-theorem
+  values — these are printed inventory readings, not retained results.
+
+This source revision does not add new axioms, imports, retained
+bridges, or runners. It tightens the existing inventory-only language
+to match the 2026-05-16 feedback acknowledgment and the 2026-05-10
+perimeter.
 
 ---
 

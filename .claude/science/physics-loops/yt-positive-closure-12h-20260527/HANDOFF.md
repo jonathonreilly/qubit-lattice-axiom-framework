@@ -55,6 +55,16 @@ Cycle 7 strict pole-row repository discovery verification so far:
 - `python3 scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py` -> `SUMMARY: PASS=79 FAIL=0`
 - `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=348 FAIL=0`
 
+Strict pole-row repository discovery science commit pushed and recorded in
+PR #1980:
+
+```text
+3c3958dd4d8d3e20b66ff404e338d3b2c140fbae
+```
+
+PR #1980 body was updated with the strict pole-row repository discovery no-go
+result, artifacts, verification, and next exact action.
+
 Cycle 7 dihedral basepoint anchor obstruction science commit pushed and
 recorded in PR #1980:
 

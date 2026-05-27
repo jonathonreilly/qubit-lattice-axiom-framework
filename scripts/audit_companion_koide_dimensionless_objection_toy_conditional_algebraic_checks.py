@@ -3,22 +3,20 @@
 `KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md`.
 
 This Pattern A narrow runner verifies, in exact rational arithmetic, the
-conditional algebraic identities (T1)-(T9) that hold inside the explicit
-two-channel source-response toy `T` and the admitted scalar
-`eta_APS = 2/9` declared in the note's (A1)-(A5).
+algebraic identities (T1)-(T9) that hold inside the explicitly defined
+two-channel source-response toy algebra (D1)-(D5). The toy scalar
+`eta_toy = 2/9` is a definition of the toy object, not an admitted
+physical APS scalar.
 
-All identities are conditional on the named admissions (A1)-(A5); the
-runner makes that explicit by emitting only conditional closeout
-headlines. It does not assert any retained-grade closure or any
-retained-grade no-go.
+The runner emits defined-toy closeout headlines. It does not assert any
+retained-grade physical closure or any retained-grade physical no-go.
 
 Companion role: narrow source of evidence for the parent no-go packet
 `koide_dimensionless_objection_closure_review_packet_2026-04-24` that
-the in-toy conditional-algebra layer holds at exact rational precision
-under the declared admissions, separately from the question of whether
-those admissions are themselves retained-derived.
+the in-toy algebraic layer holds at exact rational precision inside the
+defined toy algebra, separately from any physical bridge theorem.
 
-PASS/FAIL is on the conditional identities only.
+PASS/FAIL is on the defined-toy identities only.
 """
 
 from __future__ import annotations
@@ -52,42 +50,42 @@ def banner(title: str) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Admitted toy (A1)-(A5)
+# Defined toy algebra (D1)-(D5)
 # ---------------------------------------------------------------------------
 
-ETA_APS = Fraction(2, 9)  # (A5) admitted APS scalar
+ETA_TOY = Fraction(2, 9)  # (D5) defined toy scalar
 
 
 def q_toy(s: Fraction, z: Fraction) -> Fraction:
-    """(A1) admitted dimensionless ratio Q(s, z)."""
+    """(D1) defined dimensionless toy ratio Q(s, z)."""
     y_plus = Fraction(1) / (Fraction(1) + s + z)
     y_perp = Fraction(1) / (Fraction(1) + s - z)
     return (Fraction(1) + y_perp / y_plus) / 3
 
 
 def z_expectation(weight_plus: Fraction) -> Fraction:
-    """(A2) admitted central Z expectation: <Z>(w) = 2 w - 1."""
+    """(D2) defined central Z expectation: <Z>(w) = 2 w - 1."""
     return 2 * weight_plus - 1
 
 
 def delta_open(s_chi: Fraction, c: Fraction) -> Fraction:
-    """(A5) admitted open-endpoint formula: delta = eta_APS * (1 - s_chi) + c."""
-    return ETA_APS * (Fraction(1) - s_chi) + c
+    """(D5) defined open-endpoint formula: delta = eta_toy * (1 - s_chi) + c."""
+    return ETA_TOY * (Fraction(1) - s_chi) + c
 
 
 # ---------------------------------------------------------------------------
-# Conditional algebraic identities (T1)-(T9)
+# Defined-toy algebraic identities (T1)-(T9)
 # ---------------------------------------------------------------------------
 
 
 def part_t1_zero_background() -> None:
-    banner("(T1) Q zero-background identity under (A1)")
+    banner("(T1) Q zero-background identity in defined toy (D1)")
     q = q_toy(Fraction(0), Fraction(0))
     check("Q(0, 0) = 2/3", q == Fraction(2, 3), f"Q={q}")
 
 
 def part_t2_common_invariance() -> None:
-    banner("(T2) Q common-source invariance under (A1)")
+    banner("(T2) Q common-source invariance in defined toy (D1)")
     for s in (Fraction(1, 5), Fraction(3, 7), Fraction(-1, 11)):
         q = q_toy(s, Fraction(0))
         check(
@@ -98,7 +96,7 @@ def part_t2_common_invariance() -> None:
 
 
 def part_t3_traceless_departure() -> None:
-    banner("(T3) Q traceless-background departure under (A1)")
+    banner("(T3) Q traceless-background departure in defined toy (D1)")
     # Generic nonzero z samples
     samples: List[Fraction] = [Fraction(1, 3), Fraction(2, 5), Fraction(-1, 7)]
     for z in samples:
@@ -125,7 +123,7 @@ def part_t3_traceless_departure() -> None:
 
 
 def part_t4_z_survival() -> None:
-    banner("(T4) Z survives under (A2)")
+    banner("(T4) Z survives in defined toy (D2)")
     # Z = diag(1, -1) -> Z^2 = (1, 1) componentwise.
     z_diag = (1, -1)
     z_square = tuple(zi * zi for zi in z_diag)
@@ -144,7 +142,7 @@ def part_t4_z_survival() -> None:
 
 
 def part_t5_endpoint_dimensions() -> None:
-    banner("(T5) Selected-line endpoint dimensionality under (A3)")
+    banner("(T5) Selected-line endpoint dimensionality in defined toy (D3)")
     dim_end_l = 1
     dim_end_v = 4
     check("dim End(L_chi) = 1", dim_end_l == 1)
@@ -162,13 +160,13 @@ def part_t5_endpoint_dimensions() -> None:
 
 
 def part_t6_delta_selected_line() -> None:
-    banner("(T6) delta selected-line conditional value under (A3)+(A4)+(A5)")
+    banner("(T6) delta selected-line toy value under (D3)+(D4)+(D5)")
     delta = delta_open(Fraction(0), Fraction(0))
-    check("delta(0, 0) = 2/9", delta == ETA_APS, f"delta={delta}")
+    check("delta(0, 0) = 2/9", delta == ETA_TOY, f"delta={delta}")
 
 
 def part_t7_delta_countermodels() -> None:
-    banner("(T7) delta ambient countermodels under (A5)")
+    banner("(T7) delta ambient countermodels in defined toy (D5)")
     cases: List[Tuple[str, Fraction, Fraction, Fraction]] = [
         ("closing endpoint (s_chi=0, c=0)", Fraction(0), Fraction(0), Fraction(2, 9)),
         ("spectator endpoint (s_chi=1, c=0)", Fraction(1), Fraction(0), Fraction(0)),
@@ -180,8 +178,8 @@ def part_t7_delta_countermodels() -> None:
         check(f"{name} -> delta = {expected}", value == expected, f"delta={value}")
 
 
-def part_t8_q_retained_only_blocker() -> None:
-    banner("(T8) Q retained-only blocker in-toy under (A1)+(A2)")
+def part_t8_q_selection_boundary() -> None:
+    banner("(T8) Q selection boundary in defined toy (D1)+(D2)")
     # Counterexample: z = 1/4, w = 2/3 (non-midpoint).
     q = q_toy(Fraction(0), Fraction(1, 4))
     exp_z = z_expectation(Fraction(2, 3))
@@ -195,19 +193,19 @@ def part_t8_q_retained_only_blocker() -> None:
         exp_z != 0,
         f"<Z>={exp_z}",
     )
-    # The implication '[observable completeness on (A1)+(A2)] => Q = 2/3'
-    # would require Q = 2/3 to hold for every (A1)+(A2)-allowed source
-    # state. The pair (z=1/4, w=2/3) is allowed by (A1)+(A2) and violates
-    # Q = 2/3, so the implication fails.
+    # The implication '[tracking Z] => Q = 2/3' would require Q = 2/3 to
+    # hold for every toy source state. The pair (z=1/4, w=2/3) is inside
+    # the defined toy algebra and violates Q = 2/3, so the implication
+    # fails.
     implication_holds_universally = False  # by the explicit counterexample above
     check(
-        "in-toy: '[observable completeness on (A1)+(A2)] => Q = 2/3' fails",
+        "in-toy: '[tracking Z] => Q = 2/3' fails",
         not implication_holds_universally,
     )
 
 
-def part_t9_delta_retained_only_blocker() -> None:
-    banner("(T9) delta retained-only blocker in-toy under (A5)")
+def part_t9_delta_selection_boundary() -> None:
+    banner("(T9) delta selection boundary in defined toy (D5)")
     values = {
         delta_open(Fraction(0), Fraction(0)),
         delta_open(Fraction(1), Fraction(0)),
@@ -215,22 +213,22 @@ def part_t9_delta_retained_only_blocker() -> None:
         delta_open(Fraction(0), Fraction(1, 9)),
     }
     check(
-        "at least two distinct delta values reachable from (A5) alone",
+        "at least two distinct delta values reachable from the toy endpoint formula",
         len(values) >= 2,
         f"|values|={len(values)}, values={sorted(values)}",
     )
-    # Therefore (A5) alone does not entail delta = 2/9; the additional
-    # selection (s_chi, c) = (0, 0) is required.
+    # Therefore the endpoint formula alone does not entail delta = 2/9;
+    # the additional selection (s_chi, c) = (0, 0) is required.
     delta_only_value_is_2_over_9 = (values == {Fraction(2, 9)})
     check(
-        "in-toy: '(A5) alone => delta = 2/9' fails",
+        "in-toy: endpoint formula alone does not pin delta = 2/9",
         not delta_only_value_is_2_over_9,
     )
 
 
 def main() -> int:
     print("=" * 88)
-    print("Koide dimensionless objection - toy conditional algebraic checks")
+    print("Koide dimensionless objection - defined toy algebraic checks")
     print("(Pattern A narrow companion runner)")
     print("=" * 88)
 
@@ -241,8 +239,8 @@ def main() -> int:
     part_t5_endpoint_dimensions()
     part_t6_delta_selected_line()
     part_t7_delta_countermodels()
-    part_t8_q_retained_only_blocker()
-    part_t9_delta_retained_only_blocker()
+    part_t8_q_selection_boundary()
+    part_t9_delta_selection_boundary()
 
     print()
     print("=" * 88)
@@ -251,21 +249,21 @@ def main() -> int:
     print("=" * 88)
 
     if FAIL_COUNT == 0:
-        # Explicitly conditional headlines. No retained-grade closure or
-        # retained-grade no-go is asserted by this runner.
-        print("KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS=TRUE")
-        print("ADMISSIONS_USED=A1_A2_A3_A4_A5")
-        print("ETA_APS_ADMITTED=2/9")
-        print("IF_A1_THEN_Q_AT_ZERO_BACKGROUND_EQUALS_2_OVER_3=TRUE")
-        print("IF_A1_AND_Z_NONZERO_THEN_Q_NOT_EQUAL_2_OVER_3=TRUE")
-        print("IF_A2_THEN_Z_LABEL_SURVIVES_OBSERVABLE_COMPLETENESS=TRUE")
-        print("IF_A3_A4_A5_AND_SELECTED_LINE_LOCAL_THEN_DELTA_EQUALS_2_OVER_9=TRUE")
-        print("IF_A5_ALONE_THEN_DELTA_NOT_PINNED_TO_2_OVER_9=TRUE")
-        print("RETAINED_GRADE_CLOSURE_ASSERTED=FALSE")
-        print("RETAINED_GRADE_NO_GO_ASSERTED=FALSE")
+        # Defined-toy headlines. No retained-grade physical closure or
+        # retained-grade physical no-go is asserted by this runner.
+        print("KOIDE_DIMENSIONLESS_OBJECTION_DEFINED_TOY_ALGEBRAIC_CHECKS=TRUE")
+        print("TOY_DEFINITIONS_USED=D1_D2_D3_D4_D5")
+        print("ETA_TOY_VALUE=2/9")
+        print("D1_IMPLIES_Q_AT_ZERO_BACKGROUND_EQUALS_2_OVER_3=TRUE")
+        print("D1_AND_Z_NONZERO_IMPLIES_Q_NOT_EQUAL_2_OVER_3=TRUE")
+        print("D2_Z_LABEL_SURVIVES_IN_DEFINED_TOY=TRUE")
+        print("D3_D4_D5_SELECTED_LINE_LOCAL_DELTA_EQUALS_2_OVER_9=TRUE")
+        print("D5_ENDPOINT_FORMULA_ALONE_DOES_NOT_PIN_DELTA_TO_2_OVER_9=TRUE")
+        print("RETAINED_GRADE_PHYSICAL_CLOSURE_ASSERTED=FALSE")
+        print("RETAINED_GRADE_PHYSICAL_NO_GO_ASSERTED=FALSE")
         return 0
 
-    print("KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS=FALSE")
+    print("KOIDE_DIMENSIONLESS_OBJECTION_DEFINED_TOY_ALGEBRAIC_CHECKS=FALSE")
     return 1
 
 

@@ -1,0 +1,21 @@
+loop_slug: koide-dimensionless-toy-scope-repair-20260527
+branch: physics-loop/koide-dimensionless-toy-scope-repair-20260527
+base: origin/main
+target_claim_id: koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16
+target_status: bounded-support
+current_surface_status: bounded-support
+cycle_count: 1
+active_route: convert_admitted_inputs_to_defined_toy_object
+hard_residual: physical Koide/APS propagation remains outside this row
+files_touched:
+  - docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
+  - .claude/science/physics-loops/koide-dimensionless-toy-scope-repair-20260527/
+open_imports: []
+no_go_routes:
+  - deriving physical two-channel carrier or eta_APS from retained authorities was not attempted in this bounded repair
+trace_gate_classification: direct_blocker_closure
+review_findings: branch-local wording and runner checks passed; independent Codex reviewer/audit still required
+pr_status: draft PR https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2109
+next_exact_action: continue to next ledger-order conditional row
+stop_condition: campaign queue exhausted or user stops the loop

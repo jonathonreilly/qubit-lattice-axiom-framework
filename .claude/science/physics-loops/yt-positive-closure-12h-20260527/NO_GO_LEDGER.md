@@ -64,3 +64,9 @@ derive accepted base-operator cone membership.
   but selects `P_0`; `(1/2,sqrt(3)/2)` is the degeneracy wall. The remaining
   C3 route needs an accepted phase-angle/strength dynamics law, not just
   normalization.
+
+Non-no-go support checkpoint after the tenth block: the primitive nontrivial
+C3 character angles are a concrete conditional route. `phi=+2pi/3` selects
+`P_omega2` and `phi=-2pi/3` selects `P_omega`; both give `A/sqrt(12)`.
+The actual surface still needs an accepted same-surface Y_T phase-angle law
+selecting those angles, or strict pole rows.

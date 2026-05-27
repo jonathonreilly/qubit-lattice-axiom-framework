@@ -21,6 +21,10 @@ orientation-phase strength boundary directly compares finite same-sign
 witnesses on the two sides of the cone inequality. The quantitative
 phase-strength underdetermination block adds unit Frobenius normalization of
 the connected C3 base operator and directly compares signed unit-circle
-witnesses on both sides of the same cone wall. The
+witnesses on both sides of the same cone wall. The primitive character
+phase-angle candidate directly evaluates `phi=0` and `phi=+/-2pi/3` on that
+same finite unit base circle. Adjacent C3 phase appearances in CKM, PMNS,
+site-phase, or generic representation theory are context only and are not
+imported as Y_T proof. The
 strict-route audit is a branch-local availability check over existing JSON
 certificates. No literature bridge is needed for the claim status.

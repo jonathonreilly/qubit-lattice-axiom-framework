@@ -1,13 +1,13 @@
 # Trace Gate
 
 ```yaml
-trace_class: negative_route_pruning
+trace_class: upstream_support
 target_claim_id: yt_positive_closure_pr1980
 target_blocker_text: "derive/certify the coefficient-bearing same-surface top sector matrix element dM_t/dell = A/sqrt(12)"
 source_of_blocker_text: user_goal
-reachability_to_target: prunes
-artifact_role: no_go
-next_trace_action: "derive accepted quantitative same-surface C3 phase-angle dynamics proving |y_0| > sqrt(3) x_0 on a signed nontrivial branch, or produce accepted strict top/W pole-row data"
+reachability_to_target: supports
+artifact_role: theorem_support_boundary
+next_trace_action: "derive accepted same-surface C3 phase-angle dynamics selecting phi=+/-2pi/3, or another nontrivial-cone angle, for the physical Y_T base operator; or produce accepted strict top/W pole-row data"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -38,3 +38,10 @@ unit circle contains both singlet-top and nontrivial-top witnesses, so unit
 normalization does not derive the phase-strength law. The next trace action
 must derive an accepted phase-angle dynamics law, or supply accepted pole-row
 data.
+The eleventh artifact adds conditional support rather than a no-go:
+the primitive nontrivial C3 character angles `phi=+/-2 pi/3` lie inside the
+target nontrivial cone, select `P_omega2` or `P_omega`, and give
+`A/sqrt(12)`. The trace is support-only because the current surface does not
+derive that the physical Y_T same-surface base operator has either phase
+angle. The next trace action is to derive that accepted phase-angle law, or
+to bypass it with strict pole-row data.

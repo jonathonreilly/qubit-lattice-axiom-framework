@@ -100,6 +100,10 @@ closed exactly:
   Frobenius normalization of the base operator: the signed unit C3 base circle
   contains both singlet-top and nontrivial-top witnesses, so a phase-angle
   dynamics law remains load-bearing
+  primitive character phase-angle candidate: the nontrivial C3 character
+  angles phi = +/-2 pi/3 lie in the target nontrivial cone and give
+  A/sqrt(12), but the accepted same-surface phase-angle law selecting those
+  angles remains open
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -122,6 +126,9 @@ still open:
   |y_0| > sqrt(3) x_0 on the signed nontrivial branch
   accepted quantitative phase-strength / phase-angle law, not merely
   orientation sign or unit base normalization
+  accepted same-surface phase-angle law deriving phi = +/-2 pi/3, or another
+  angle in the nontrivial phase-ordering cone, for the physical top base
+  operator
   accepted strict same-source top/W pole rows, or a new microscopic dynamics
   theorem that derives the accepted same-surface backend, W/top projectors,
   and source-generator matrix elements
@@ -888,6 +895,36 @@ Thus unit normalization plus orientation sign does not derive the
 phase-strength law.  The C3 route now needs an accepted phase-angle dynamics
 law, or direct strict pole rows.
 
+[`YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md`](YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md)
+then records the strongest concrete C3 phase-angle candidate so far.  On the
+unit base circle
+
+```text
+x_0 = cos(phi),  y_0 = sin(phi),
+```
+
+the primitive nontrivial C3 character angles satisfy:
+
+```text
+phi = +2 pi/3 -> P_omega2 top -> A/sqrt(12)
+phi = -2 pi/3 -> P_omega  top -> A/sqrt(12)
+phi = 0       -> P_0      top -> A/sqrt(3)
+```
+
+This is conditional support, not closure.  It identifies a precise positive
+route and leaves an open phase-angle law:
+
+```text
+derive accepted same-surface Y_T base phase angle phi = +/-2 pi/3
+  -> nontrivial C3 top line
+  -> A/sqrt(12).
+```
+
+The current surface does not derive that phase angle for the physical Y_T base
+operator.  Adjacent C3 phase appearances in CKM, PMNS, site-phase, or generic
+representation theory are context only unless a new same-surface Y_T dynamics
+theorem connects them to this pole/action surface without target insertion.
+
 ## Non-Claims
 
 This note does not:
@@ -947,14 +984,18 @@ proposal_allowed_reason: |
   The quantitative phase-strength underdetermination note further shows that
   even unit-normalized connected C3 base dynamics plus orientation sign leaves
   the phase angle free, with both singlet-top and nontrivial-top witnesses.
+  The primitive character phase-angle candidate gives the sharpest positive
+  C3 target now available: phi = +/-2 pi/3 would select a nontrivial line and
+  give A/sqrt(12), but the actual current surface does not derive that the
+  physical Y_T same-surface base operator has either angle.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  quantitative orientation-phase angle theorem deriving accepted
-  same-surface backend, W/top projectors, and source-generator matrix
-  elements
+  same-surface phase-angle dynamics theorem deriving phi = +/-2 pi/3, or
+  another nontrivial-cone angle, with accepted backend, W/top projectors, and
+  source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted pole rows or microscopic dynamics
 backup_route: audit accepts primitive top-source premise as physical source law

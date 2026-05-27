@@ -17,6 +17,8 @@ The ninth route pruned orientation sign/nonzero `B_y` alone as a derivation of
 that cone.
 The tenth route pruned unit-normalized connected C3 base dynamics plus
 orientation sign as a derivation of that cone.
+The eleventh route checked primitive nontrivial C3 character phase angles as a
+concrete candidate for the still-open phase-angle law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -31,6 +33,7 @@ orientation sign as a derivation of that cone.
 | Reflection-even C3 base dynamics to phase cone | no-go shortcut test | 3 | Pruned: reflection forces `y_0 = 0`, giving `P_0` or degenerate nontrivial block |
 | Orientation sign / nonzero phase to phase cone | no-go shortcut test | 3 | Pruned: same sign can select `P_0` or a nontrivial line depending on phase strength |
 | Unit-normalized signed C3 base phase | no-go shortcut test | 3 | Pruned: the signed unit circle contains both `P_0` and nontrivial-line witnesses |
+| Primitive nontrivial C3 character phase angle `phi=+/-2pi/3` | conditional support | 2 | Landed: selects `P_omega2` or `P_omega` and gives `A/sqrt(12)`, but accepted phase law is open |
 
 ## Stuck Fan-Out
 
@@ -49,9 +52,10 @@ orientation sign as a derivation of that cone.
 | Reflection-even base dynamics | Try to derive cone membership while preserving reflection symmetry | Fails; `y_0 = 0` forces singlet or nontrivial degeneracy |
 | Orientation sign only | Try to derive cone membership from nonzero signed `B_y` | Fails; `x_0=1,y_0=1` keeps `P_0` largest despite positive sign |
 | Unit-normalized signed base dynamics | Add `x_0^2+y_0^2=1` to the signed branch | Fails; `(0,1)` selects `P_omega2`, but `(sqrt(3)/2,1/2)` selects `P_0` with the same sign and unit norm |
+| Primitive character angle | Test `phi=+/-2pi/3` on the unit base circle | Succeeds conditionally; it hits the target row, but deriving that phase for the physical Y_T base operator remains open |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
-quantitative orientation-phase-angle microscopic dynamics theorem with
-accepted backend/projectors, nontrivial phase-ordering cone membership, and
-matrix elements, or accepted strict pole rows. It does not close the
-coefficient row.
+same-surface phase-angle microscopic dynamics theorem selecting
+`phi=+/-2pi/3` (or another nontrivial-cone angle) with accepted
+backend/projectors and matrix elements, or accepted strict pole rows. It does
+not close the coefficient row.

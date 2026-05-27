@@ -307,3 +307,35 @@ Verification recorded with this review:
   availability audit.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 11
+
+Scope:
+
+- C3 primitive character phase-angle candidate note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks `phi=0` and `phi=+/-2pi/3` witnesses, dependency outputs, candidate certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is conditional support/open phase-angle law; no retained/proposed-retained wording. |
+| Imports / support | DISCLOSED | Accepted same-surface Y_T phase-angle dynamics, W/top projectors, matrix elements, and strict pole rows remain open. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `actual_current_surface_status`, trace class, conditional status, and proposal firewall are explicit. |
+
+Disposition: pass for conditional-support artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=71 FAIL=0`
+- Full stack runner: `PASS=295 FAIL=0`
+- Adjacent Y_T runners passed: quantitative phase-strength underdetermination,
+  phase-ordering cone support, same-surface matrix factorization, strict sparse
+  availability audit, orientation-phase strength no-go, orientation-phase
+  necessity no-go, C3 circulant dynamics boundary, and real same-surface
+  top-line obstruction.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

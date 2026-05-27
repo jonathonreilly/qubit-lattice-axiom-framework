@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced nine science blocks, not positive retained-grade
+The campaign has produced eleven science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -21,6 +21,7 @@ closure:
    phase alone.
 10. a no-go for deriving that cone from unit-normalized connected C3 base
     dynamics plus orientation sign.
+11. a conditional-support primitive C3 character phase-angle candidate.
 
 New result:
 
@@ -227,6 +228,22 @@ an accepted phase-angle dynamics theorem fixing the unit-circle angle inside
 the nontrivial cone, plus same-surface W/top projectors and matrix elements,
 or strict pole-row data.
 
+Eleventh result:
+
+```text
+phi = +2 pi/3 -> (x_0,y_0)=(-1/2,sqrt(3)/2)  -> P_omega2 top -> A/sqrt(12)
+phi = -2 pi/3 -> (x_0,y_0)=(-1/2,-sqrt(3)/2) -> P_omega  top -> A/sqrt(12)
+phi = 0       -> (x_0,y_0)=(1,0)              -> P_0      top -> A/sqrt(3)
+```
+
+Thus the primitive nontrivial C3 character angles are a concrete positive
+candidate for the open phase-angle law. This is conditional support only: the
+current surface does not derive that the physical Y_T same-surface base
+operator has phase `+/-2 pi/3`. Adjacent C3 phase appearances in CKM, PMNS,
+site-phase, or general representation theory remain context only unless a new
+same-surface Y_T dynamics theorem connects them to this pole/action surface
+without target insertion.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -259,15 +276,25 @@ Artifacts:
 - `docs/YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py`
 - `outputs/yt_c3_quantitative_phase_strength_underdetermination_2026-05-27.json`
+- `docs/YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py`
+- `outputs/yt_c3_primitive_character_phase_angle_candidate_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
 
 - `python3 scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py` -> `SUMMARY: PASS=106 FAIL=0`
-- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=285 FAIL=0`
+- `python3 scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py` -> `SUMMARY: PASS=71 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=295 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py` -> `SUMMARY: PASS=86 FAIL=0`
 - `python3 scripts/frontier_yt_c3_orientation_phase_strength_boundary.py` -> `SUMMARY: PASS=68 FAIL=0`
+- `python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`
+- `python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py` -> `SUMMARY: PASS=77 FAIL=0`
+- `python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `SUMMARY: PASS=74 FAIL=0`
+- `python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py` -> `SUMMARY: PASS=95 FAIL=0`
+- `python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `SUMMARY: PASS=104 FAIL=0`
 - `python3 -m py_compile scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `PASS`
+- `python3 -m py_compile scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_orientation_phase_strength_boundary.py scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `PASS`
 - `git diff --check` -> `PASS`
 - `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=278 FAIL=0`
 - `python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py` -> `SUMMARY: PASS=114 FAIL=0`
@@ -319,7 +346,8 @@ Next exact action:
 
 ```text
 derive accepted same-surface C3 phase-angle dynamics proving the quantitative
-phase-strength inequality |y_0| > sqrt(3) x_0 on a signed nontrivial branch
-and supplying W/top matrix elements, or obtain accepted strict same-source
-top/W pole-row data with contact, FV/IR, and model-class controls.
+phase angle phi = +/-2 pi/3, or another nontrivial-cone angle, for the
+physical Y_T base operator while supplying W/top matrix elements; otherwise
+obtain accepted strict same-source top/W pole-row data with contact, FV/IR,
+and model-class controls.
 ```

@@ -32,6 +32,9 @@ Current block artifacts:
 - `docs/YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_quantitative_phase_strength_underdetermination.py`
 - `outputs/yt_c3_quantitative_phase_strength_underdetermination_2026-05-27.json`
+- `docs/YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py`
+- `outputs/yt_c3_primitive_character_phase_angle_candidate_2026-05-27.json`
 - updated `docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md`
 - updated `scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
 - updated `outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json`
@@ -39,7 +42,7 @@ Current block artifacts:
 
 Next artifact if continuing:
 
-- accepted strict top/W pole-row data, or a genuinely new quantitative
-  orientation-phase angle theorem deriving nontrivial C3 phase-ordering
-  cone membership plus the accepted same-surface backend, W/top projectors,
-  and source-generator matrix elements.
+- accepted strict top/W pole-row data, or a genuinely new same-surface
+  phase-angle theorem deriving `phi=+/-2pi/3` (or another nontrivial-cone
+  angle) plus the accepted same-surface backend, W/top projectors, and
+  source-generator matrix elements.

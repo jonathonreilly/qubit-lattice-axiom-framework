@@ -14,6 +14,7 @@
 | Orientation-odd same-surface C3 phase law | Supplies nonzero `y_0` strong enough to isolate a nontrivial complex line | unsupported import on actual surface; reflection-even route pruned | `YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive accepted orientation-odd base dynamics with `|y_0| > sqrt(3) x_0` and W/top matrix elements, or bypass with strict pole rows | open blocker |
 | Quantitative C3 phase-strength law | Upgrades orientation sign/nonzero `B_y` to strict nontrivial cone membership | unsupported import on actual surface; sign-only route pruned | `YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive accepted same-surface law proving `|y_0| > sqrt(3) x_0` on signed branch | open blocker |
 | Quantitative C3 phase-angle selector | Selects where the unit-normalized base operator lies on the signed `(x_0,y_0)` circle | unsupported import on actual surface; unit-norm plus sign route pruned | `YT_C3_QUANTITATIVE_PHASE_STRENGTH_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive an accepted phase-angle/strength dynamics law, or bypass with strict pole rows | open blocker |
+| Primitive C3 character phase angle `phi=+/-2pi/3` | Gives a concrete nontrivial-cone target on the unit base circle | conditional support/open import | `YT_C3_PRIMITIVE_CHARACTER_PHASE_ANGLE_CANDIDATE_NOTE_2026-05-27.md` | yes if used for C3 route | yes for C3 route | derive an accepted same-surface Y_T phase-angle law selecting this angle, or bypass with strict pole rows | open blocker |
 | Contact/FV/IR/model-class checks | Certify strict pole-row evidence | missing certificate fields | sparse response contract | yes for strict evidence route | yes | direct sparse pole-response certificate | open blocker |
 | Accepted strict top/W pole rows | Bypass C3 line assignment and read coefficient directly | absent | strict sparse availability audit | yes | yes | produce accepted pole-row data/certificate | open blocker |
 | Microscopic backend/projector/matrix-element shortcut | Would derive the physical row from source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | pruned on current surface | `YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive accepted backend, W/top projectors, and source-generator matrix elements, or produce strict pole rows | no-go for current shortcut |
@@ -40,3 +41,7 @@ the remaining C3 theorem must be quantitative. Unit-normalized connected C3
 base dynamics plus orientation sign is now also pruned: the signed unit circle
 contains both singlet-top and nontrivial-top witnesses, so an accepted
 phase-angle selector remains load-bearing.
+The primitive nontrivial C3 character angles are now conditional support:
+`phi=+/-2pi/3` lies inside the target cone and gives `A/sqrt(12)`, but the
+accepted same-surface phase-angle law selecting that value for the physical
+Y_T base operator is still an open import.

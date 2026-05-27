@@ -1,7 +1,8 @@
 """DM-eta G1 lane: explicit Coleman-Weinberg derivation of the 8/3 enhancement.
 
-This runner is the bounded-support derivation attempt for the residual flagged
-by the V1 operator-level adjoint-channel bridge proof
+This runner is the bounded-support derivation for the corrected scalar-trace
+mechanism that supersedes the former V1 operator-level adjoint-channel bridge
+proof
 (scripts/frontier_dm_eta_g1_bridge_proof_2026_05_06.py): namely, the structural
 identification "gauge-mediated propagator built from T^a generators", which the
 V1 bridge proof CITED from CL3_COLOR_AUTOMORPHISM Section H rather than DERIVING
@@ -28,9 +29,11 @@ standard textbook formula:
         per-color-row trace 2 * sum_a Tr[T^a T^a]/N_c sums INCOHERENTLY
         across color rows after taking the trace, giving (N^2-1)/N = 8/3.
 
-  (iii) Fierz channel projection of the 1-loop self-energy on End(C^N_c)
-        annihilates the singlet channel exactly (P_singlet @ T^a = 0 for
-        traceless T^a) and preserves the adjoint channel.
+  (iii) Fierz diagnostics distinguish two operations: traceless T^a
+        vertices are adjoint-channel, while the one-loop self-energy
+        sum_a T^a T^a = C_F I is singlet-channel. The 8/3 multiplier is
+        a scalar trace density plus Wilson-hop doubling, not an adjoint
+        projection of the scalar self-energy.
 
 What this runner verifies (object-level matrix tests):
 
@@ -59,38 +62,39 @@ What this runner verifies (object-level matrix tests):
         BUT on the CHIRAL CUBE, the kernel insertion structure produces
         the per-color-row trace, NOT the Casimir.
 
-  Part D. Fierz channel projection and the 8/3 coefficient:
+  Part D. Fierz diagnostics and the 8/3 coefficient:
     9.  Apply Fierz projectors P_singlet, P_adjoint to Sigma.
-    10. P_singlet @ Sigma = 0 exactly (singlet projection annihilates
-        traceless T^a's, verified at machine precision).
-    11. P_adjoint @ Sigma survives with per-color-row coefficient
+    10. P_singlet @ T^a = 0 exactly for traceless T^a vertices, while
+        C_F I is singlet-channel.
+    11. The per-color-row scalar trace coefficient is
         rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = (N^2-1)/N = 8/3.
 
   Part E. Discretized momentum-space integration sanity check:
     12. Discretize the gauge-boson loop momentum on a Z^d lattice and
-        numerically evaluate the self-energy. Confirm singlet channel
-        vanishes (numerical zero) and adjoint channel scales as 8/3.
+        numerically evaluate the self-energy. Confirm the point-coupling
+        self-energy is C_F I and therefore singlet-channel.
 
   Part F. Composition with bare Wilson kinetic mass:
     13. m_DM = rho_{adj/c} * (2 r * hw_dark * v) = (8/3) * 6 v = 16 v.
         Wrong-channel candidates (C_F = 4/3, C_A = 3, F_singlet = 1/9)
-        all give different answers; only adjoint-row density gives 16 v.
-    14. Composition matches V1 bridge proof exactly.
+        all give different answers; only the scalar trace density gives
+        16 v.
+    14. Composition matches the corrected scalar-trace chain exactly.
 
 Honest scope
 ------------
 
-This runner CLOSES the explicit CW residual flagged by the V1 bridge proof
+This runner supports the explicit CW calculation needed by the corrected chain
 by performing the explicit Wilson-link gauge-insertion calculation on the
-chiral cube and projecting through the Fierz channels. The mechanism is
+chiral cube and checking the Fierz diagnostics. The mechanism is
 explicit one-loop perturbation theory on the gauged staggered minimal
 block, NOT a structural cite to CL3_COLOR_AUTOMORPHISM Section H.
 
 Outcome
 -------
 
-If all 17 tests pass, the bridge identification is sharpened from
-"structural cite" to "explicit CW derivation" at bounded support scope.
+If all 17 tests pass, the corrected scalar-trace mechanism has an
+explicit CW derivation at bounded support scope.
 The independent audit lane owns any later status changes.
 
 Output: PASS=N FAIL=0 if all object-level checks succeed.
@@ -419,11 +423,11 @@ def main() -> None:
     print()
 
     # ------------------------------------------------------------------
-    # PART D: Fierz channel projection and the 8/3 coefficient
+    # PART D: Fierz diagnostics and the 8/3 coefficient
     # ------------------------------------------------------------------
     print("=" * 78)
-    print("PART D: Fierz channel projection of the 1-loop self-energy")
-    print("        Project Sigma onto P_singlet and P_adjoint channels.")
+    print("PART D: Fierz diagnostics for the 1-loop self-energy")
+    print("        Distinguish traceless vertices from the scalar self-energy.")
     print("=" * 78)
     print()
 
@@ -467,9 +471,9 @@ def main() -> None:
     pass_count += int(t9); fail_count += int(not t9)
     print()
 
-    # ------------------ TEST 10: Per-link self-energy projection vanishes -------
+    # ------------------ TEST 10: Traceless vertex projection --------------------
     print("-" * 78)
-    print("TEST 10: Per-link Wilson-line self-energy in singlet Fierz = 0 EXACTLY")
+    print("TEST 10: Traceless Wilson-link vertices have zero singlet Fierz content")
     print("         Each link inserts a single T^a; sum_a delta_link[a] T^a")
     print("         is in span(T^a)_{a=1..8} = adjoint span.")
     print("         P_sing annihilates ALL traceless T^a (Test 9), so any")
@@ -480,16 +484,10 @@ def main() -> None:
     # since T^a are Hermitian, T^a = (T^a)^dagger, the link cosine expansion gives
     #   U_mu + U_mu^dagger = 2 - g^2 a^2 sum_a (A_mu^a)^2 (T^a)^2 + ...
     # (no O(g) contribution after pairing forward+backward).
-    # The O(g^2) correction is sum_a (A_mu^a)^2 T^a T^a -- still in the
-    # adjoint Fierz channel because each T^a (squared on the END of M) is
-    # acting twice on the same color row, which is the diagonal mass-shift
-    # to ALL colors (the C_F picture).
-    #
-    # The bridge proof claim is that the EFFECTIVE per-color-row mass-shift,
-    # after taking the trace over color rows of the Wilson-link self-energy,
-    # picks up ONLY the adjoint channel. The singlet channel is nominally
-    # the Fierz singlet of the EFFECTIVE mass-shift matrix, NOT of the gauge
-    # vertex itself.
+    # The O(g^2) correction contains sum_a (A_mu^a)^2 T^a T^a. When the
+    # gauge average is color diagonal, the self-energy matrix is C_F * I,
+    # hence singlet-channel. This is distinct from the O(g) traceless
+    # vertex T^a, which is adjoint-channel.
     #
     # Rigorous formulation: build the per-link self-energy MATRIX M_link
     # (which equals C_F * I from sum_a T^a T^a). Then ask:
@@ -499,10 +497,11 @@ def main() -> None:
     # ENTIRELY in the singlet channel of End(C^N_c), and adjoint is 0.
     # That's the textbook one-loop CW answer (C_F = 4/3).
     #
-    # The 8/3 enhancement does NOT come from this single-link self-energy;
-    # it comes from the GEOMETRIC SUM over chiral-cube hopping links.
-    # We verify the bridge claim at the level of the per-T^a vertex:
-    # each T^a is in adjoint (P_sing @ T^a = 0, Test 9), so a sum
+    # The 8/3 enhancement does NOT come from an adjoint projection of
+    # this single-link self-energy; it comes from the GEOMETRIC SUM over
+    # chiral-cube hopping links and the scalar trace density.
+    # We verify the narrow diagnostic at the level of the per-T^a vertex:
+    # each T^a is in the adjoint span (P_sing @ T^a = 0, Test 9), so a sum
     # Sigma_a alpha_a T^a (any linear combination) has 0 singlet projection.
     print("  Per-T^a singlet projection: each T^a is traceless,")
     print("  so any linear combination Sigma_a alpha_a T^a has 0 singlet content.")
@@ -525,8 +524,8 @@ def main() -> None:
 
     # ------------------ TEST 11: Adjoint channel has coefficient 8/3 ------------
     print("-" * 78)
-    print("TEST 11: Adjoint Fierz channel of self-energy has per-color-row")
-    print("         coefficient rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = 8/3")
+    print("TEST 11: Per-row scalar trace coefficient")
+    print("         rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = 8/3")
     print("-" * 78)
     # Compute per-color-row trace density of the adjoint-projected self-energy
     # The chiral cube hop multiplies forward + backward = 2 insertions per link
@@ -611,7 +610,7 @@ def main() -> None:
     print("         to the dark-state self-energy. The forward+backward pair")
     print("         doubles the contribution per direction, giving:")
     print("           rho_{adj/c} = 2 * C_F = 2 * (N^2-1)/(2N) = (N^2-1)/N = 8/3")
-    print("         This is EQUIVALENT to the per-color-row Fierz density:")
+    print("         This is EQUIVALENT to the per-color-row scalar trace density:")
     print("           rho_{adj/c} = (1/N_c) * 2 * sum_a Tr[T^a T^a]")
     print("                      = 2 * (N^2-1)/(2N) (from sum Tr = (N^2-1)/2)")
     print("                      = (N^2-1)/N = 8/3.")
@@ -733,7 +732,7 @@ def main() -> None:
          "delta m^2 ~ C_F = 4/3; WRONG factor"),
         ("(c3) Standard one-loop CW with R = adjoint",
          "delta m^2 ~ C_A = 3; WRONG factor"),
-        ("(c4) Wilson-link gauge insertion + Fierz adjoint projection",
+        ("(c4) Wilson-link gauge insertion + scalar trace density",
          "WINNER: per-color-row density 2 sum Tr[T^a T^a]/N_c = 8/3"),
     ]
     for name, verdict in cw_routes:
@@ -772,8 +771,8 @@ def main() -> None:
         (7, "Wilson-line per-color-row density = 8/3", t7),
         (8, "Fierz projectors P_sing + P_adj = I, idempotent", t8),
         (9, "P_singlet @ T^a = 0 (annihilates traceless T^a)", t9),
-        (10, "Singlet Fierz of self-energy is exactly 0", t10),
-        (11, "Adjoint Fierz channel coefficient = 8/3", t11),
+        (10, "Singlet Fierz of traceless T^a vertices is exactly 0", t10),
+        (11, "Per-row scalar trace coefficient = 8/3", t11),
         (12, "Discretized 1-loop self-energy is C_F * I (point-coupling sanity)", t12),
         (13, "Geometric derivation: rho_{adj/c} = 8/3 explicit", t13),
         (14, "Wrong-channel candidates ALL distinct from 8/3", t14),
@@ -817,8 +816,8 @@ def main() -> None:
     print("    Algebraic identity: 2 * C_F = 2 * (N^2-1)/(2N) = (N^2-1)/N = 8/3.")
     print()
     print("  The two readings of 8/3 (per-row trace and 2*C_F) are algebraically")
-    print("  equivalent (Test 13). The per-row trace makes the Fierz adjoint")
-    print("  channel manifest; the 2*C_F view makes the chiral-cube geometry")
+    print("  equivalent (Test 13). The per-row trace makes the generator count")
+    print("  manifest; the 2*C_F view makes the chiral-cube geometry")
     print("  (forward + backward Wilson hops per direction) manifest.")
     print()
     print("  HONEST RESIDUAL: the standard one-loop CW Casimir for a color-")
@@ -828,18 +827,19 @@ def main() -> None:
     print("  TWO independent gauge-link insertions in the loop, which is the")
     print("  natural reading of the staggered chiral-cube Wilson kernel.")
     print()
-    print("  Fierz channel projection confirms (Tests 9, 10):")
+    print("  Fierz diagnostics confirm (Tests 9, 10, 12):")
     print("    - Each T^a is traceless: P_sing @ T^a = 0 EXACTLY")
     print("    - Linear combinations Sigma_a alpha_a T^a stay in adjoint span")
-    print("    - The dark mass-shift observable lives entirely on adjoint channel")
+    print("    - The scalar self-energy C_F I lives in the singlet channel")
     print()
     print("  Composition with bare Wilson kinetic mass (cited Origin B):")
     print("    m_DM = rho_{adj/c} * (2 r * hw_dark * v) = (8/3) * 6 v = 16 v")
     print()
     print("  STATUS: BOUNDED SUPPORT")
-    print("  The bridge proof V1 (PR #618) cited the gauge-mediated structure;")
-    print("  this V1 derives it explicitly via Wilson-link CW expansion + Fierz")
-    print("  channel projection. Downstream status remains independent-audit")
+    print("  The former bridge proof V1 (PR #618) is superseded where it")
+    print("  claimed adjoint-channel selection of the scalar self-energy.")
+    print("  This V1 supplies the corrected Wilson-link CW scalar-trace")
+    print("  calculation. Downstream status remains independent-audit")
     print("  authority; the parent lane still carries inherited bounded inputs.")
 
 

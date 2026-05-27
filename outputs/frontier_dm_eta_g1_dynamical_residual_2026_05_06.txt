@@ -1,6 +1,6 @@
 ==============================================================================
-DM-eta G1 dynamical residual: operator-trace projection mechanism
-Route (c) [adjoint Fierz channel projection on End(C^N_c)]
+DM-eta G1 dynamical residual: scalar trace mechanism
+Route (c) [per-row scalar trace plus Wilson-hop doubling]
 ==============================================================================
 
 ------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ TEST 2: Trace counts of Fierz projectors
   STATUS: PASS
 
 ------------------------------------------------------------------------------
-TEST 3: Per-color-row adjoint trace density
+TEST 3: Per-color-row scalar trace density
         2 * sum_a Tr[T^a T^a] / N_c = (N_c^2 - 1)/N_c = 8/3
         (factor 2 from Tr[T^a T^b] = (1/2) delta^{ab})
 ------------------------------------------------------------------------------
@@ -37,11 +37,11 @@ TEST 4: Build bare Wilson taste-mass operator on C^8 = (C^2)^otimes 3
   STATUS: PASS
 
 ------------------------------------------------------------------------------
-TEST 5: Operator-trace projection on End(C^N_c) -- adjoint channel
-        Direct verification: rho_{adj/c} = N_c * F_adj = 8/3
+TEST 5: Scalar trace density on End(C^N_c)
+        Direct verification: rho_{adj/c} = 2*sum Tr[T^aT^a]/N_c = 8/3
 ------------------------------------------------------------------------------
-  F_adj = (N_c^2 - 1)/N_c^2 = 8/9
-  N_c * F_adj = 3 * 8/9 = 8/3
+  2*sum_a Tr[T^aT^a]/N_c = (N_c^2-1)/N_c = 8/3
+  Diagnostic F_adj = 8/9; N_c*F_adj has the same number, not a projection claim
   STATUS: PASS
 
 ------------------------------------------------------------------------------
@@ -53,8 +53,8 @@ TEST 6: Singlet:Adjoint Fierz channel ratio = 1 : (N_c^2-1)
   STATUS: PASS
 
 ------------------------------------------------------------------------------
-TEST 7: Operator-trace integration of bare Wilson mass through
-        adjoint Fierz channel: 2 r * hw_dark * rho_{adj/c} =
+TEST 7: Scalar-trace integration of bare Wilson mass
+        2 r * hw_dark * rho_{adj/c} =
         bare_wilson_mass * 8/3 = 6 * 8/3 = 16 (= N_sites)
 ------------------------------------------------------------------------------
   bare_wilson_mass * rho = 6 * 8/3 = 16.0
@@ -89,29 +89,23 @@ TEST 9: m_DM = bare_wilson_mass * rho_{adj/c} * v = 16 v
   STATUS: PASS
 
 ------------------------------------------------------------------------------
-TEST 10: Conditional bridge step (residual of the residual)
-         The dynamical claim is conditional on:
-           [B] dark hw=3 mass operator projects onto adjoint Fierz channel
-         Test: count adjoint vs singlet projector dimensions on End(C^N_c)
+TEST 10: Carrier-level structural observation
+         Count chiral-cube and SU(3) adjoint generator dimensions
 ------------------------------------------------------------------------------
   dim(C^8 chiral cube)     = 8
   dim(adj_3) = N_c^2 - 1   = 8
-  Carrier-level bridge: dim match: True
-  CARRIER-LEVEL BRIDGE: PASSES (8 = 8)
-  HONEST RESIDUAL: This is a NECESSARY but not sufficient condition.
-  The OPERATOR-LEVEL bridge -- that the dark hw=3 mass operator
-  ACTUALLY projects through the adjoint Fierz channel and not the
-  singlet channel -- requires a separate projection identification
-  theorem on the SU(3)-gauged chiral cube. NOT closed by this runner.
-  STATUS: PASS (carrier match; operator step open)
+  Dimension match: True
+  STRUCTURAL OBSERVATION: PASSES (8 = 8)
+  This does not imply an adjoint Fierz projection of the scalar self-energy.
+  STATUS: PASS (dimension check only)
 
 ------------------------------------------------------------------------------
 TEST 11: Counterfactual Pass on dynamical mechanisms (5 candidates)
 ------------------------------------------------------------------------------
   (a) 1-loop CW gauge-boson: ruled out (DM_SU3_GAUGE_LOOP_OBSTRUCTION); gives 0 for color singlet
   (b) Symmetry-pattern selection: naming, not mechanism; still needs 8/3 from somewhere
-  (c) Adjoint Fierz channel projection: WINNER -- uses cited Fierz primitive; arithmetic verified above
-  (d) Per-color-row identification: subsumed by (c); equivalent reading
+  (c) Per-row scalar trace + Wilson-hop doubling: WINNER -- uses cited generator normalization; arithmetic verified above
+  (d) Bare per-color-row identification: incomplete without the forward/backward hop factor
   (e) Higgs-analog all-channel sum: gives N_taste = 16 directly, not 8/3
   STATUS: PASS (informational)
 
@@ -119,9 +113,9 @@ TEST 11: Counterfactual Pass on dynamical mechanisms (5 candidates)
 TEST 12: Status-firewall sanity
          This is bounded support, NOT retained closure.
 ------------------------------------------------------------------------------
-  g1_dynamical_status     = bounded_support_with_open_bridge
-  g1_arithmetic_status    = closed_via_operator_trace
-  g1_bridge_status        = open_residual_of_residual
+  g1_dynamical_status     = bounded_support_via_scalar_trace
+  g1_arithmetic_status    = supported_via_scalar_trace
+  g1_bridge_status        = adjoint_projection_superseded
   parent_scope_unchanged  = True
   STATUS: PASS
 
@@ -132,12 +126,12 @@ SUMMARY
   Test  2 (Tr[P_singlet]=1, Tr[P_adj]=8): PASS
   Test  3 (Per-color-row trace density = 8/3): PASS
   Test  4 (Bare Wilson mass on |111> = 6 = 2 r hw_dark): PASS
-  Test  5 (rho_{adj/c} = N_c * F_adj = 8/3): PASS
+  Test  5 (rho_{adj/c} = 2*sum Tr[T^aT^a]/N_c = 8/3): PASS
   Test  6 (Singlet:Adjoint ratio = 1:8 = dim(adj)): PASS
-  Test  7 (Operator-trace closure: 6 * 8/3 = 16 = N_sites): PASS
+  Test  7 (Scalar-trace closure: 6 * 8/3 = 16 = N_sites): PASS
   Test  8 (Wrong-channel candidates ALL distinct from 8/3): PASS
   Test  9 (Composition: m_DM = 16 v on canonical surface): PASS
-  Test 10 (Carrier-level bridge: dim(C^8) = dim(adj_3) = 8): PASS
+  Test 10 (Dimension observation: dim(C^8) = dim(adj_3) = 8): PASS
   Test 11 (Counterfactual Pass: (c) wins 5-way scoring): PASS
   Test 12 (Status firewall: parent scope unchanged): PASS
 
@@ -145,31 +139,22 @@ SUMMARY
 
 DERIVATION SUMMARY (DYNAMICAL RESIDUAL ROUTE C)
 ==============================================================================
-  rho_{adj/c} = dim(adj_3)/N_c = 8/3 emerges as the operator-trace
-  density of the adjoint Fierz channel on End(C^N_c) -- the cited
-  Fierz primitive's color-connected (R_conn = 8/9) projection
-  scaled by N_c per color row.
+  rho_{adj/c} = dim(adj_3)/N_c = 8/3 emerges as the per-row
+  scalar trace density 2*sum_a Tr[T^aT^a]/N_c on End(C^N_c).
 
   m_DM = bare_wilson_mass * rho_{adj/c} * v
        = 6 * 8/3 * v = 16 v  (on canonical surface)
 
   Counterfactual Pass: 5 dynamical candidates scored, route (c)
-  [adjoint Fierz channel projection] is the unique tractable
+  [per-row scalar trace + Wilson-hop doubling] is the unique tractable
   route within the cited primitive set. (a) ruled out by
   obstruction note, (b) is naming, (d) subsumed by (c), (e)
   gives wrong factor.
 
-  HONEST RESIDUAL: The operator-trace ARITHMETIC is closed by
-  this runner. The chiral-cube-to-color-projection BRIDGE step
-  -- that the dark hw=3 mass operator projects through the
-  adjoint Fierz channel and not the singlet channel -- remains
-  open as the 'residual of the residual'. The carrier-level
-  necessary condition (dim(C^8) = dim(adj_3) = 8) holds
-  exactly; the operator-level bridge requires a separate
-  projection-identification theorem.
+  HONEST BOUNDARY: The scalar-trace arithmetic is supported by
+  this runner. The scalar self-energy sum_a T^aT^a = C_F I is
+  singlet-channel, so this runner does not assert an adjoint
+  Fierz projection of the dark mass operator.
 
-  STATUS: bounded_support_theorem on the operator-trace mechanism
-  for the G1 dynamical step, conditional on the adjoint-channel
-  bridge identification. This sharpens the residual from
-  'where does 8/3 come from dynamically' to 'projection through
-  the adjoint Fierz channel gives 8/3, conditional on the bridge'.
+  STATUS: bounded_support_theorem on the scalar-trace mechanism
+  for the G1 dynamical step. Downstream status remains audit-owned.

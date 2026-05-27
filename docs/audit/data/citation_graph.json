@@ -6369,6 +6369,30 @@
       "to": "higgs_mass_from_axiom_note"
     },
     {
+      "from": "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27",
+      "to": "dm_eta_g1_coleman_weinberg_bounded_theorem_note_2026-05-06"
+    },
+    {
+      "from": "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27",
+      "to": "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06"
+    },
+    {
+      "from": "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27",
+      "to": "dm_eta_g1_dynamical_residual_operator_trace_support_theorem_note_2026-05-06"
+    },
+    {
+      "from": "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27",
+      "to": "su3_adjoint_casimir_theorem_note_2026-05-02"
+    },
+    {
+      "from": "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27",
+      "to": "dm_eta_g1_cl3_adj3_embedding_algebraic_support_theorem_note_2026-05-06"
+    },
+    {
       "from": "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06",
       "to": "dm_eta_g1_dynamical_residual_operator_trace_support_theorem_note_2026-05-06"
     },
@@ -48063,7 +48087,7 @@
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "185868bb4c2614aedbbfa122647dc4541eef88a75a3181322d5788529bc618fe",
+      "note_hash": "bd63d8d7902ae3f1b275ac97aed4791fc0b6209dbc24ede87563fc35973ed472",
       "path": "docs/DM_ETA_G1_COLEMAN_WEINBERG_BOUNDED_THEOREM_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_dm_eta_g1_coleman_weinberg_2026_05_06.py",
       "title": "DM-eta G1 Wilson-Link Coleman-Weinberg Bridge Theorem (V1)"
@@ -48084,10 +48108,29 @@
         "higgs_mass_from_axiom_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c711e82dd586351ea01f18377c58ac991b77d4a3f9a929137d9b036f3c8303a8",
+      "note_hash": "226df1e1aec857380c61f6f5b444c2a88fac24fad278312e59e17b4a5102332b",
       "path": "docs/DM_ETA_G1_DYNAMICAL_RESIDUAL_OPERATOR_TRACE_SUPPORT_THEOREM_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_dm_eta_g1_dynamical_residual_2026_05_06.py",
       "title": "DM-eta G1 Dynamical Residual: Operator-Trace Support Theorem (V1)"
+    },
+    "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27": {
+      "claim_id": "dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dm_eta_g1_coleman_weinberg_bounded_theorem_note_2026-05-06",
+        "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06",
+        "dm_eta_g1_dynamical_residual_operator_trace_support_theorem_note_2026-05-06",
+        "cl3_color_automorphism_theorem",
+        "su3_adjoint_casimir_theorem_note_2026-05-02",
+        "dm_eta_g1_cl3_adj3_embedding_algebraic_support_theorem_note_2026-05-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "1d3d483854555ba52a1e161917a93d7299fc1f69331b324ef5560034e3626edd",
+      "path": "docs/DM_ETA_G1_FIERZ_CHANNEL_NARRATIVE_CORRECTION_NOTE_2026-05-27.md",
+      "runner_path": null,
+      "title": "DM-eta G1 Fierz Channel Narrative Correction Note"
     },
     "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06": {
       "claim_id": "dm_eta_g1_operator_bridge_proof_theorem_note_2026-05-06",
@@ -48102,7 +48145,7 @@
         "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "57295e7a77f861e9310fbf2a54f0cc73f2749ca45295b0bcfcede66bfc44f18e",
+      "note_hash": "4ebabe13f1c0bbf563ad6d3323ab66f6a3e616cdc429ac53c8f84e01e794f96b",
       "path": "docs/DM_ETA_G1_OPERATOR_BRIDGE_PROOF_THEOREM_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_dm_eta_g1_bridge_proof_2026_05_06.py",
       "title": "DM-eta G1 Operator-Level Adjoint-Channel Bridge Proof Theorem (V1)"
@@ -86224,7 +86267,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 637,
+      "bounded_theorem": 638,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -86233,7 +86276,7 @@
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1054,
+      "bounded_theorem": 1055,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -86241,9 +86284,9 @@
       "open_gate": 127,
       "positive_theorem": 589
     },
-    "edge_count": 9830,
-    "leaf_count": 807,
-    "node_count": 2576,
+    "edge_count": 9836,
+    "leaf_count": 808,
+    "node_count": 2577,
     "root_count": 858,
     "runners_with_path": 2152
   }

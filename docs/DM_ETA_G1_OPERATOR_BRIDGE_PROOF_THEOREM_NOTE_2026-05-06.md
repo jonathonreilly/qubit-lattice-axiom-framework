@@ -1,15 +1,98 @@
 # DM-eta G1 Operator-Level Adjoint-Channel Bridge Proof Theorem (V1)
 
+## Audit-correction (2026-05-27)
+
+A load-bearing claim in this note's Step 8 ("Gauge-mediated propagator
+selection rule") and Step 9 ("Bridge: dark mass operator selects
+adjoint") was identified as not generally valid and corrected by the
+2026-05-27 G1 Fierz-channel narrative correction note.
+
+**What was wrong:** Step 8 reads "A typical gauge-mediated mass
+renormalization on a color-charged state has the form `Sigma_a T^a M T^a`
+for some matrix M; this is built from traceless generators T^a. By
+Step 7, this propagator's singlet Fierz projection is zero (since
+`P_sing^F @ T^a = 0`). The full gauge-mediated propagator therefore
+lives entirely in the adjoint Fierz channel." This conclusion is not
+valid for `M = I` (the natural self-energy structure for a fundamental
+scalar at one loop). The standard SU(N) Fierz sandwich identity gives:
+
+```
+sum_a T^a M T^a = (1/2) Tr(M) I - (1/(2N)) M.
+```
+
+- For `M = I`: `sum_a T^a I T^a = ((N^2-1)/(2N)) I = C_F I`. This is
+  proportional to identity, hence **SINGLET channel** of `End(C^N_c)`.
+- For `M = T^b` (traceless): `sum_a T^a T^b T^a = -(1/(2N)) T^b`.
+  This is **adjoint channel** (same direction as T^b).
+
+The bridge proof's Step 8 conclusion holds only when `Tr(M) = 0`. For
+the natural one-loop self-energy on a color-fundamental
+(`sum_a T^a T^a = C_F I`, no traceless M in the middle), the operator
+is on the SINGLET channel, not the adjoint channel. The companion runner
+`frontier_dm_eta_g1_coleman_weinberg_2026_05_06.py` Test 12 confirms
+this numerically: `||P_sing @ Sigma|| = 0.456`, `||P_adj @ Sigma|| =
+0.000` for the discretized one-loop self-energy.
+
+**What is corrected:** The "operator-level adjoint-channel bridge"
+narrative is **removed** as a load-bearing structural claim. The 8/3
+identity is correct, but it arises from the standard one-loop Casimir
+(`C_F = 4/3`, singlet channel) doubled by the forward+backward Wilson-
+hop geometric pairing on the chiral cube (`2 * C_F = 8/3`), not from
+a Fierz channel projection of the dark mass operator onto the adjoint
+subspace of `End(C^N_c)`.
+
+**What is preserved by this audit-correction:**
+- All 15 runner tests still PASS. Tests 1-6, 11-15 verify:
+  - The chiral cube `C^8 = (C^2)^otimes 3` with Burnside `1+3+3+1`
+    decomposition (Test 1, structural).
+  - The base-x-fiber decomposition `6 + 2 = 8` (Test 2).
+  - The hypercharge `Y` spectrum (Test 3).
+  - The dark `|111>` location in the color triplet (Test 4).
+  - **Carrier orthogonality of the lepton block with the dark state**
+    (Tests 5, 11; this is preserved as a valid structural observation).
+  - **SU(3)_c is trivial on the lepton block, non-trivial on the dark
+    state** (Test 12; the dark state is a color fundamental).
+- The dark state's color-fundamental status (the runner's Test 12 / this
+  note's Step 5).
+- The arithmetic identity `(N_c^2 - 1)/N_c = 8/3` (Test 8) and the
+  composition `m_DM = (8/3) * 6 v = 16 v` (Test 10).
+- The wrong-channel ruleouts (Test 9 / Step 12).
+
+**What is removed as load-bearing structural narrative:**
+- "The dark hw=3 mass operator on the SU(3)-gauged chiral cube
+  projects through the adjoint Fierz channel of `End(C^N_c)` and not
+  the singlet channel" (Theorem statement).
+- Step 8's claim that `sum_a T^a M T^a` for arbitrary M lives in the
+  adjoint channel.
+- Step 9's "carrier-orthogonality + gauge-mediated Fierz selection"
+  argument as a Fierz channel selection rule. The carrier-orthogonality
+  half is preserved; the Fierz-selection half is removed.
+- Section 4 Closed item 5 ("Bridge selection rule: the dark mass
+  operator's gauge-mediated color trace projects entirely through the
+  adjoint Fierz channel").
+
+**Reading instruction:** Wherever this note refers to "the dark mass
+operator projecting through the adjoint Fierz channel", read this as
+referring to the algebraically equivalent and structurally correct
+"Casimir + forward+backward Wilson-hop geometric doubling" mechanism.
+The dark state's color-fundamental status (Test 12) and the carrier-
+orthogonality structure (Tests 5, 11) are unaffected. The 8/3
+arithmetic and `m_DM = 16 v` composition are unaffected.
+
+---
+
 **Date:** 2026-05-06
 **Status:** **bounded support theorem** closing the operator-level
-adjoint-channel bridge step previously flagged as the "residual of the
+narrative step previously flagged as the "residual of the
 residual" by the V1 dynamical-residual support theorem
 ([`DM_ETA_G1_DYNAMICAL_RESIDUAL_OPERATOR_TRACE_SUPPORT_THEOREM_NOTE_2026-05-06.md`](DM_ETA_G1_DYNAMICAL_RESIDUAL_OPERATOR_TRACE_SUPPORT_THEOREM_NOTE_2026-05-06.md)).
-This note derives the operator-level identification that the dark hw=3
-mass operator on the SU(3)-gauged chiral cube projects through the
-adjoint Fierz channel of `End(C^N_c)` and not the singlet channel. The
-mechanism is *carrier-orthogonality + gauge-mediated Fierz selection*,
-using only cited Cl(3)/SU(3) embedding primitives. No new axioms, no new
+After the 2026-05-27 audit-correction (see above), this note's
+structural content is: (i) the dark hw=3 state is a color fundamental
+on the SU(3)-gauged chiral cube; (ii) the lepton block is carrier-
+orthogonal to the dark state; (iii) the 8/3 arithmetic is verified.
+The previously claimed "adjoint Fierz channel" mechanism is replaced
+by Casimir + forward+backward Wilson-hop geometric doubling (see
+audit-correction note for full discussion). No new axioms, no new
 dynamical mechanisms.
 
 **Type:** bounded_theorem
@@ -40,25 +123,24 @@ support scope and its dependency chain.
 
 ## 0. Headline
 
-The DM-eta G1 closure has three stages:
+The DM-eta G1 closure has three bounded support stages:
 
 1. **Algebraic step** -- derive the numerical factor `8/3 = dim(adj_3)/N_c`
    from cited Cl(3)/SU(3) primitives. **CLOSED V1** by the algebraic
    support theorem.
-2. **Dynamical operator-trace step** -- show that this factor is the
+2. **Dynamical scalar-trace step** -- show that this factor is the
    natural multiplier of the bare Wilson mass for the dark `hw=3`
-   singlet via the operator-trace projection through the adjoint Fierz
-   channel. **CLOSED V1 (arithmetic)** by the dynamical-residual
-   support theorem; the carrier-level necessary condition
-   `dim(C^8) = dim(adj_3) = 8` was verified, but the operator-level
-   bridge identification was named as the residual of the residual.
-3. **Operator-level bridge step** -- show that the dark hw=3 mass
-   operator actually projects through the adjoint Fierz channel and
-   not the singlet channel. **THIS NOTE'S CONTRIBUTION** (V1).
+   singlet through the per-color-row scalar trace density, with
+   `8/3 = 2 C_F`.
+3. **Former operator-level adjoint-channel bridge step** -- the earlier
+   V1 claim that the dark hw=3 mass operator projects through the
+   adjoint Fierz channel is superseded by the 2026-05-27 correction.
+   This note preserves the carrier-orthogonality and Fierz sanity
+   checks, but it does not prove adjoint-channel selection.
 
-This note delivers the bridge step. The mechanism is structural -- not
-perturbative, not a new dynamical input -- and uses only cited
-primitives.
+This corrected note is structural support, not a retained bridge
+closure. It uses only cited primitives and the standard SU(N) sandwich
+identity.
 
 ## 1. Counterfactual Pass on the bridge mechanism
 
@@ -71,40 +153,32 @@ bridge mechanisms were enumerated and scored:
 | (b2) Carrier orthogonality + gauge-mediated Fierz | uses cited (base x fiber) + Y spectrum + Fierz primitives | H | H | L | 12/12 |
 | (b3) Wilson-mass commutativity | subsumed by (b2) at carrier level | H | M | M | 7/12 |
 
-**Outcome:** Route (b2) is the unique structural mechanism within the
-cited primitive set. It is pursued in this V1.
+**Outcome:** Route (b2) is useful only as a structural diagnostic after
+the 2026-05-27 correction. Carrier orthogonality is preserved, but the
+gauge-mediated Fierz-selection conclusion is not a valid load-bearing
+mechanism for `sum_a T^a T^a = C_F I`.
 
 ## 2. Theorem statement (bounded support)
 
-**Theorem (DM-eta G1 operator-level adjoint-channel bridge, V1).**
+**Corrected theorem (DM-eta G1 carrier and scalar-trace support, V1).**
 On the SU(3)-gauged Cl(3) chiral cube `C^8` with the cited (base x fiber)
 decomposition (CL3_COLOR_AUTOMORPHISM Section B), the dark hw=3 state
 `|111> = |b1=1, b2=1, b3=1>` lies in the 3D symmetric-base subspace
 (quark-like color triplet, Y = +1/3) and is orthogonal to the 1D
-antisymmetric-base block (lepton singlet, Y = -1). The dark state's
-mass operator on `End(C^N_c)`, which is gauge-mediated (built from SU(3)
-generators `T^a` via `Sigma_a T^a (x) T^a` propagator structure),
-projects entirely through the adjoint Fierz channel because:
+antisymmetric-base block (lepton singlet, Y = -1). SU(3)_c acts
+non-trivially on the dark state and trivially on the lepton block.
 
-(i) the singlet Fierz projector annihilates traceless matrices
-   `P_sing^F @ T^a = 0`, so any gauge-mediated propagator has zero
-   singlet Fierz projection (verified at machine precision in the
-   runner Test 11c);
-
-(ii) the dark state is a *color-charged* state (SU(3)_c acts
-    non-trivially on `|111>`), so its mass renormalization is
-    necessarily gauge-mediated (Test 11b);
-
-(iii) by orthogonality with the SU(3)_c-trivial lepton block (Test 11b
-     verifies `T^a` annihilates lepton vecs; Test 11 verifies
-     `<111|P_lepton|111> = 0`), no SU(3)_c-singlet contribution to the
-     dark mass operator is available.
-
-Therefore the dark hw=3 mass operator's color trace projects through
-the adjoint Fierz channel only, with per-color-row density
+For the color trace used in the one-loop self-energy, the standard
+SU(N) identity gives
+`sum_a T^a M T^a = (1/2) Tr(M) I - (1/(2N)) M`. Thus `M = I` yields
+`sum_a T^a T^a = C_F I`, a singlet-channel matrix, while traceless
+`M = T^b` yields an adjoint-channel matrix. The dark-mass scalar
+multiplier used in the G1 chain is therefore the Casimir plus
+forward/backward Wilson-hop factor
 
 ```text
-rho_{adj/c}  =  2 * sum_a Tr[T^a T^a] / N_c
+rho_{adj/c}  =  2 * C_F
+             =  2 * sum_a Tr[T^a T^a] / N_c
              =  (N_c^2 - 1) / N_c
              =  8 / 3.
 ```
@@ -170,40 +244,32 @@ matrix `T^a` (Gell-Mann generator), `Tr T^a = 0`, so
 matrices: `P_adj^F @ T^a = T^a`. Verified at machine precision
 (Test 11c).
 
-**Step 8 (Gauge-mediated propagator selection rule).** A typical
-gauge-mediated mass renormalization on a color-charged state has the
-form `Sigma_a T^a M T^a` for some matrix M; this is built from
-traceless generators T^a. By Step 7, this propagator's singlet Fierz
-projection is zero (since `P_sing^F @ T^a = 0`). The full
-gauge-mediated propagator therefore lives entirely in the adjoint
-Fierz channel.
+**Step 8 (Gauge-mediated sandwich identity).** A gauge-mediated mass
+renormalization on a color-charged state has the schematic color
+sandwich `sum_a T^a M T^a`. The standard SU(N) Fierz identity gives
 
-**Step 9 (Bridge: dark mass operator selects adjoint).** By Step 5,
-the dark state |111> is color-charged (SU(3)_c-fundamental). Its mass
-renormalization through gauge-boson exchange is therefore gauge-mediated
-(involves T^a insertions). By Step 8, this is in the adjoint Fierz
-channel only. The singlet Fierz channel of the dark mass operator
-*vanishes* because:
+```text
+sum_a T^a M T^a = (1/2) Tr(M) I - (1/(2N)) M.
+```
 
-(a) any singlet Fierz projection of a gauge-mediated propagator is zero
-   (Steps 7-8);
-(b) any non-gauge-mediated (singlet-channel) mass term would require the
-   color-trivial subspace of End(C^N_c), which by the embedding maps
-   onto `P_symm` (the 6D quark block) and not onto the dark state's
-   color quantum numbers exclusively -- but the relevant filtering is
-   **the gauge-mediated structure**, not the carrier embedding. The
-   carrier orthogonality of |111> with the lepton block (Step 4) shows
-   the dark state has no SU(3)_c-singlet component, so any mass term
-   on |111> that is SU(3)_c-singlet must be a *gauge-uncharged*
-   correction -- but gauge interactions with the dark color-triplet
-   state are gauge-mediated (Step 5).
+For a traceless matrix `M = T^b`, this remains in the adjoint channel.
+For the one-loop fundamental self-energy `M = I`, it becomes
+`C_F I`, which is singlet-channel. The earlier claim that every
+gauge-mediated mass propagator lives entirely in the adjoint Fierz
+channel is therefore too broad and is not retained here.
 
-Therefore the dark mass operator's color trace projects through the
-adjoint Fierz channel only.
+**Step 9 (Corrected bridge boundary).** By Step 5, the dark state
+`|111>` is color-charged (SU(3)_c-fundamental), and by Step 4 it is
+orthogonal to the lepton block. Those carrier facts are preserved.
+They do not by themselves prove that the scalar one-loop self-energy
+projects through the adjoint Fierz channel. For the G1 scalar
+multiplier, the load-bearing bridge is instead the CW note's
+Casimir-plus-hop calculation: `sum_a T^a T^a = C_F I` per link and
+forward/backward Wilson-hop pairing gives `2 C_F = 8/3`.
 
-**Step 10 (Per-color-row adjoint trace density).** By the cited
+**Step 10 (Per-color-row scalar trace density).** By the cited
 Gell-Mann normalization `Tr[T^a T^b] = (1/2) delta^{ab}`, the
-per-color-row adjoint trace density is
+per-color-row scalar trace density is
 
 ```text
 rho_{adj/c}  =  2 * sum_a Tr[T^a T^a] / N_c  =  (N_c^2 - 1)/N_c  =  8/3.
@@ -223,22 +289,27 @@ The integer identity `dim(adj_3) * 2 * hw_dark / N_c = 16 = N_sites`
 anchors Origin A (spacetime APBC, 2^d = 16) to Origin B (chiral cube +
 adjoint density). Verified at machine precision (Test 10).
 
-**Step 12 (Wrong-channel sanity).** Six wrong-channel candidates are
+**Step 12 (Wrong-channel sanity).** Six alternate scalar candidates are
 explicitly distinct from 8/3: F_singlet = 1/9, no enhancement = 1,
 1/N_c = 1/3, C_F = 4/3, C_A = 3, C_A/C_F = 9/4 (Test 9). Only the
-adjoint Fierz density per color gives 8/3.
+forward/backward Wilson-hop doubled Casimir, equivalently the per-row
+scalar trace density, gives 8/3.
 
-**QED on the operator-level adjoint-channel bridge.**
+**QED on the carrier support and corrected scalar-trace bridge
+boundary.**
 
 ## 3. Claim Boundary
 
-This bounded support theorem supplies the operator-level adjoint-channel
-bridge step for the DM-eta G1 dynamical residual. The dark `hw=3` state
+This bounded support theorem supplies carrier support and a corrected
+claim boundary for the DM-eta G1 dynamical residual. The dark `hw=3` state
 `|111>` on the Cl(3) chiral cube `C^8` lies in the 3D symmetric-base
 subspace and is orthogonal to the 1D antisymmetric-base lepton singlet.
-The singlet Fierz projector annihilates traceless matrices `T^a`, so the
-runner-backed gauge-mediated color trace lives in the adjoint Fierz
-channel with per-color-row density `rho_{adj/c} = 8/3`.
+The singlet Fierz projector annihilates traceless matrices `T^a`, but
+the one-loop scalar self-energy `sum_a T^a T^a = C_F I` is
+singlet-channel. The retained load-bearing content is the carrier
+orthogonality plus the per-row scalar trace density
+`rho_{adj/c} = 8/3`; the prior adjoint-channel bridge claim is
+superseded.
 
 No new axioms or repo-wide dynamical premises are introduced.
 
@@ -253,12 +324,13 @@ No new axioms or repo-wide dynamical premises are introduced.
 3. **SU(3)_c representation identification**: trivial on lepton block,
    fundamental on dark state, verified at machine precision via the
    cited M_3_sym (x) I_2 embedding.
-4. **Singlet Fierz channel annihilation of gauge-mediated propagators**:
+4. **Singlet Fierz channel annihilation of traceless generators**:
    `P_sing^F @ T^a = 0` for all 8 Gell-Mann generators, verified at
    machine precision.
-5. **Bridge selection rule**: the dark mass operator's gauge-mediated
-   color trace projects entirely through the adjoint Fierz channel.
-6. **Per-color-row density** = (N_c^2-1)/N_c = 8/3 exactly.
+5. **Corrected bridge boundary**: the scalar one-loop self-energy is
+   `C_F I`, hence singlet-channel; no adjoint-channel projection is
+   asserted.
+6. **Per-color-row scalar trace density** = (N_c^2-1)/N_c = 8/3 exactly.
 7. **Composition** m_DM = (8/3)*6v = 16v on canonical surface.
 
 ### Inherited bounded inputs (NOT closed by V1)
@@ -323,22 +395,23 @@ Expected: `PASS = 15, FAIL = 0`.
 4. Dark `|111>` in color triplet (`<111|P_symm|111> = 1`, exact).
 5. Lepton block `(|01>-|10>)/sqrt(2)` orthogonal to dark (exact).
 6. Fierz completeness `P_sing^F + P_adj^F = I` on End(C^3) (max err < 1e-12).
-7. **BRIDGE**: carrier orthogonality + gauge-mediated Fierz selection.
-8. Per-color-row adjoint trace density `(N_c^2-1)/N_c = 8/3` (exact).
+7. **BOUNDARY**: carrier orthogonality preserved; gauge-mediated
+   adjoint Fierz selection rejected for the scalar self-energy.
+8. Per-color-row scalar trace density `(N_c^2-1)/N_c = 8/3` (exact).
 9. Six wrong-channel candidates all distinct from 8/3 (exact ruleouts).
 10. Composition `m_DM = (8/3)*6v = 16v` on canonical surface (exact).
 11. Carrier-orthogonality numerical check (exact).
 12. SU(3)_c trivial on lepton block, non-trivial on dark (exact).
 13. Singlet Fierz annihilates Gell-Mann T^a (exact).
 14. Counterfactual Pass scoring (informational; b2 wins).
-15. G1 closure status upgraded (informational).
+15. Parent-scope unchanged after correction (informational).
 
 ## 7. Honest residual
 
-- **Coleman-Weinberg-on-chiral-cube explicit calculation**: not
-  supplied; the bridge is structural via the embedding + Fierz, not via
-  an explicit one-loop calculation. A future explicit CW calculation
-  would upgrade this from bounded support to retained.
+- **Coleman-Weinberg-on-chiral-cube explicit calculation**: supplied by
+  the companion CW note as the corrected Casimir-plus-hop mechanism.
+  This bridge note does not independently promote parent status; the
+  corrected chain still requires independent audit.
 - **A0 hierarchy compression**: inherited assumption; not lifted.
 - **Sommerfeld + freeze-out band**: inherited bounded.
 - **alpha_X = alpha_LM**: inherited bounded candidate-route choice.
@@ -347,30 +420,26 @@ Expected: `PASS = 15, FAIL = 0`.
 
 ## 8. Position on the publication surface
 
-This V1 bounded support theorem closes the operator-level
+This V1 bounded support theorem corrects the former operator-level
 adjoint-channel bridge step:
 
 - **The G1 algebraic step** is closed (V1 algebraic note).
 - **The G1 dynamical operator-trace arithmetic step** is closed (V1
   dynamical-residual note).
-- **The G1 operator-level bridge step** is now closed by this V1 via
-  carrier-orthogonality + gauge-mediated Fierz selection.
-- **The DM-eta G1 lane** is therefore reduced from "operator-trace
-  arithmetic closed; bridge open" to "all three steps closed via cited
-  primitives; parent lane carries inherited bounded inputs only".
+- **The G1 operator-level adjoint-channel bridge step** is removed as
+  a load-bearing claim; carrier orthogonality remains bounded support.
+- **The DM-eta G1 lane** is therefore reduced to audit of the corrected
+  Casimir-plus-hop scalar-trace chain and its inherited bounded inputs.
 
 The flagship paper line should remain `eta` IMPORTED with this theorem
-listed as bounded support for the DM-eta G1 dynamical-step bridge
-closure. The parent DM-eta freezeout-bypass lane status changes:
-the G1 structural mass-selection blocker is now closed (subject to
-audit), and the lane's remaining open content is the inherited bounded
-inputs (A0, x_F, Sommerfeld, alpha_X choice), which are the standard
-quantitative bands of the freeze-out calculation rather than structural
-gaps.
+listed only as bounded carrier/scalar-trace support for the DM-eta G1
+dynamical-step correction. The parent DM-eta freezeout-bypass lane
+status does not change here; any parent promotion requires independent
+audit of the corrected dependency chain.
 
 ## 9. Cross-references
 
-- DM-eta G1 dynamical residual V1 (parent open residual closed by this note):
+- DM-eta G1 dynamical residual V1 (corrected scalar-trace support):
   [`DM_ETA_G1_DYNAMICAL_RESIDUAL_OPERATOR_TRACE_SUPPORT_THEOREM_NOTE_2026-05-06.md`](DM_ETA_G1_DYNAMICAL_RESIDUAL_OPERATOR_TRACE_SUPPORT_THEOREM_NOTE_2026-05-06.md)
 - DM-eta G1 algebraic support V1:
   [`DM_ETA_G1_CL3_ADJ3_EMBEDDING_ALGEBRAIC_SUPPORT_THEOREM_NOTE_2026-05-06.md`](DM_ETA_G1_CL3_ADJ3_EMBEDDING_ALGEBRAIC_SUPPORT_THEOREM_NOTE_2026-05-06.md)
@@ -386,19 +455,17 @@ gaps.
 ```yaml
 claim_type: bounded_theorem
 claim_scope: |
-  Operator-level adjoint-channel bridge step for the DM-eta G1
-  dynamical residual: the dark hw=3 mass operator on the SU(3)-gauged
-  chiral cube C^8 projects through the adjoint Fierz channel of
-  End(C^N_c) and not the singlet channel. Mechanism: carrier-
-  orthogonality + gauge-mediated Fierz selection. The dark |111> lies
-  in the 3D symmetric-base color triplet (Y=+1/3) and is orthogonal to
-  the 1D antisymmetric-base lepton singlet (Y=-1). SU(3)_c is trivial
-  on the lepton block; the singlet Fierz projector annihilates
-  traceless T^a generators; therefore the dark gauge-mediated mass
-  operator's color trace lives entirely in the adjoint Fierz channel,
-  with per-color-row density rho_{adj/c} = (N_c^2-1)/N_c = 8/3.
-  Composition with the cited bare Wilson kinetic mass gives m_DM = 16v
-  on the canonical surface. Six wrong-channel candidates explicitly
+  Carrier and scalar-trace support for the DM-eta G1 dynamical
+  residual: the dark hw=3 state on the SU(3)-gauged chiral cube C^8
+  lies in the 3D symmetric-base color triplet (Y=+1/3) and is
+  orthogonal to the 1D antisymmetric-base lepton singlet (Y=-1). The
+  standard SU(N) sandwich identity shows that a traceless test matrix
+  remains adjoint-channel, but the scalar one-loop self-energy
+  sum_a T^a T^a = C_F I is singlet-channel. The load-bearing
+  multiplier is the per-color-row scalar trace density
+  rho_{adj/c} = 2 C_F = (N_c^2-1)/N_c = 8/3, with composition
+  m_DM = 16v on the canonical surface when the cited bare Wilson
+  kinetic mass is used. Six alternate scalar candidates are explicitly
   ruled out.
 upstream_dependencies:
   - dm_eta_g1_dynamical_residual_operator_trace_support_theorem_note
@@ -422,10 +489,9 @@ runner_fails: 0
 
 ## Reading rule
 
-This note is the claim boundary for the operator-level adjoint-channel
-bridge step on the DM-eta G1 dynamical residual. It sharpens the DM-eta
-G1 lane on current `main` from "operator-trace arithmetic closed;
-operator-level bridge open" to "all three G1 steps closed via cited
-primitives; parent lane carries only inherited bounded inputs". Any
+This note is the corrected claim boundary for the former
+operator-level adjoint-channel bridge step on the DM-eta G1 dynamical
+residual. It sharpens the DM-eta G1 lane by preserving carrier support
+and removing the unsupported adjoint-channel selection rule. Any
 downstream parent-status change requires independent audit of the
-full dependency chain.
+corrected dependency chain.

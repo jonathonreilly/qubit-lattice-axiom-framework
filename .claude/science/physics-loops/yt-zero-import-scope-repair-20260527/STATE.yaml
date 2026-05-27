@@ -1,0 +1,20 @@
+loop: yt-zero-import-scope-repair-20260527
+target_claim_id: yt_zero_import_chain_note
+target_status: proposed_retained
+actual_current_surface_status: proposed_retained
+branch: physics-loop/yt-zero-import-scope-repair-20260527
+base: origin/main
+current_route: split bounded declared-anchor subchain from historical full prediction
+files_touched:
+  - docs/YT_ZERO_IMPORT_CHAIN_NOTE.md
+  - docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md
+  - scripts/frontier_yt_declared_anchor_bounded_subchain.py
+open_imports:
+  - canonical plaquette insertion remains a declared bounded anchor
+  - kappa_EW=0 remains a declared connected-trace specialization
+  - full zero-import numerical prediction remains historical/conditional
+verification:
+  - PYTHONPATH=scripts python3 scripts/frontier_yt_declared_anchor_bounded_subchain.py
+  - python3 scripts/frontier_yt_zero_import_chain.py
+next_exact_action: run audit pipeline, commit, open PR
+stop_condition: PR created and row queued for independent re-audit

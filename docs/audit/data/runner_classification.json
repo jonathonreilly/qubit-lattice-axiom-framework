@@ -24504,6 +24504,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_yt_constructive_uv_bridge.py"
     },
+    "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_yt_declared_anchor_bounded_subchain.py"
+    },
     "yt_eft_bridge_theorem": {
       "assert_count": 0,
       "counts": {
@@ -25501,16 +25513,16 @@
       "runner": "scripts/frontier_yt_zero_import_ratio_authority.py"
     },
     "yt_zero_import_chain_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 11,
-        "D": 13
+        "C": 10,
+        "D": 4
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/frontier_yt_zero_import_chain.py"
+      "dominant_class": "C",
+      "runner": "scripts/frontier_yt_declared_anchor_bounded_subchain.py"
     },
     "yukawa_color_projection_theorem": {
       "assert_count": 1,
@@ -49403,6 +49415,22 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_yt_declared_anchor_bounded_subchain.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+        "yt_zero_import_chain_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_yt_eft_bridge.py": {
       "assert_count": 0,
       "claims": [
@@ -50518,8 +50546,7 @@
     "scripts/frontier_yt_zero_import_chain.py": {
       "assert_count": 0,
       "claims": [
-        "alpha_s_derived_note",
-        "yt_zero_import_chain_note"
+        "alpha_s_derived_note"
       ],
       "counts": {
         "A": 0,
@@ -55811,12 +55838,12 @@
     "dominant_class_distribution": {
       "A": 236,
       "B": 281,
-      "C": 754,
+      "C": 755,
       "D": 299,
       "none": 438
     },
-    "runners_classified": 2008,
-    "runners_with_C": 977,
-    "runners_with_D": 584
+    "runners_classified": 2009,
+    "runners_with_C": 978,
+    "runners_with_D": 585
   }
 }

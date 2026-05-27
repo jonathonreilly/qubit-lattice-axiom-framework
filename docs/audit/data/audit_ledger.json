@@ -299579,6 +299579,57 @@
       "transitive_descendants": 567,
       "verdict_rationale": null
     },
+    "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 9.517,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "c28f416edc8f69177e6ffdb73d8ee87d32702645500dae85f2cef5ba08adcef5",
+      "note_path": "docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
+      "title": "YT Declared-Anchor Bounded Subchain Narrow Theorem",
+      "transitive_descendants": 517,
+      "verdict_rationale": null
+    },
     "yt_eft_bridge_theorem": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -309718,79 +309769,48 @@
       "verdict_rationale": null
     },
     "yt_zero_import_chain_note": {
-      "audit_date": "2026-05-26T21:05:31.891227+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
-          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
-          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
-        },
-        "dep_claim_type": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
-          "plaquette_self_consistency_note": "bounded_theorem",
-          "rconn_derived_note": "no_go"
-        },
-        "dep_effective_status": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
-          "plaquette_self_consistency_note": "retained_bounded",
-          "rconn_derived_note": "retained_no_go"
-        },
-        "deps": [
-          "ew_current_fierz_channel_decomposition_note_2026-05-01",
-          "plaquette_self_consistency_note",
-          "rconn_derived_note"
-        ],
-        "load_bearing_score": 14.014,
-        "runner_hash": "21edd61bef97f369083bf205ad7e0bef82035c1b0c10b7761c8969835c6f73bc",
-        "transitive_descendants": 516
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-xhigh-fresh-yt-zero-import-pass1-C75Ktt-2026-05-26",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The downstream algebra/RGE calculation is internally consistent once <P> = 0.5934, R_conn/F_adj = 8/9, kappa_EW = 0, and the Ward boundary condition are supplied. The restricted packet does not derive the Ward bridge or the kappa_EW = 0 physical readout, and the runner imports or hard-codes the anchor values rather than computing them from the framework baseline.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "yt_zero_import_chain_note",
-      "claim_scope": "The current y_t/EW zero-import chain from the restricted packet to the reported v, y_t(v), m_t, alpha_s(M_Z), and sin^2(theta_W)(M_Z) outputs, including the section 9 algebraic narrowing.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-26T21:05:31.891227+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
+        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
         "plaquette_self_consistency_note",
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "rconn_derived_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.014,
-      "load_bearing_step": "The chain imposes y_t(M_Pl) = g_lattice / sqrt(6) and the connected-trace EW readout g_EW(phys) = g_EW(latt) * sqrt(9/8) after importing the canonical plaquette surface and exact Fierz fraction.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "fd262b3c4be79ab390d98532a4ef3a5710902fb094085b55bfb59ff15c444508",
+      "note_hash": "3b2fce6b7b04ed2159edf06ded10fed16731e145021c19e6ce869a20764b57fa",
       "note_path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: split the clean bounded algebraic/RGE subchain over declared <P>, F_adj, kappa_EW, and Ward-boundary premises from the full zero-import numerical prediction, or add retained-grade bridge notes before re-audit.",
-      "open_dependency_paths": [
-        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
-        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
-        "docs/RCONN_DERIVED_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-01T15:26:01.959359+00:00",
@@ -310025,21 +310045,83 @@
             "total_pass": 14
           },
           "verdict_rationale": "The source note now honestly identifies the conditional perimeter, and the visible downstream steps are mostly algebraic/RGE propagation once those inputs are admitted. However, the primary runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V from canonical_plaquette_surface, while R_conn=8/9 and the sqrt(9/8) EW readout are hard-coded rather than derived from Cl(3) inside the packet. The stdout labels these as computed or derived, but the source note itself states that the plaquette insertion and kappa_EW=0 matching selector remain residual gaps. Therefore the overall zero-import chain does not close from the provided inputs."
+        },
+        {
+          "archived_at": "2026-05-27T11:36:53.588745+00:00",
+          "archived_for_note_hash": "fd262b3c4be79ab390d98532a4ef3a5710902fb094085b55bfb59ff15c444508",
+          "audit_date": "2026-05-26T21:05:31.891227+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+              "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+              "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+            },
+            "dep_claim_type": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+              "plaquette_self_consistency_note": "bounded_theorem",
+              "rconn_derived_note": "no_go"
+            },
+            "dep_effective_status": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+              "plaquette_self_consistency_note": "retained_bounded",
+              "rconn_derived_note": "retained_no_go"
+            },
+            "deps": [
+              "ew_current_fierz_channel_decomposition_note_2026-05-01",
+              "plaquette_self_consistency_note",
+              "rconn_derived_note"
+            ],
+            "load_bearing_score": 14.014,
+            "runner_hash": "21edd61bef97f369083bf205ad7e0bef82035c1b0c10b7761c8969835c6f73bc",
+            "transitive_descendants": 516
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-yt-zero-import-pass1-C75Ktt-2026-05-26",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The downstream algebra/RGE calculation is internally consistent once <P> = 0.5934, R_conn/F_adj = 8/9, kappa_EW = 0, and the Ward boundary condition are supplied. The restricted packet does not derive the Ward bridge or the kappa_EW = 0 physical readout, and the runner imports or hard-codes the anchor values rather than computing them from the framework baseline.",
+          "claim_scope": "The current y_t/EW zero-import chain from the restricted packet to the reported v, y_t(v), m_t, alpha_s(M_Z), and sin^2(theta_W)(M_Z) outputs, including the section 9 algebraic narrowing.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-26T21:05:31.891227+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The chain imposes y_t(M_Pl) = g_lattice / sqrt(6) and the connected-trace EW readout g_EW(phys) = g_EW(latt) * sqrt(9/8) after importing the canonical plaquette surface and exact Fierz fraction.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "scope_too_broad: split the clean bounded algebraic/RGE subchain over declared <P>, F_adj, kappa_EW, and Ward-boundary premises from the full zero-import numerical prediction, or add retained-grade bridge notes before re-audit.",
+          "open_dependency_paths": [
+            "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+            "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
+            "docs/RCONN_DERIVED_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 2,
+            "C": 1,
+            "D": 6,
+            "total_pass": 14
+          },
+          "verdict_rationale": "Issue: the runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V, hard-codes R_CONN = 8/9, applies sqrt(9/8), and sets the Ward target g_lattice/sqrt(6) rather than deriving the physical bridge/readout selectors in the restricted packet. Why this blocks: the full zero-import numerical y_t/EW prediction does not follow from the supplied one-hop authorities; it is a conditional calculation over bounded/imported anchors and unclosed physical bridge choices. Repair target: provide retained-grade derivations or dependencies for the Ward boundary bridge, the kappa_EW = 0 connected-trace selector, and any intended unbounded plaquette certificate, or split the note so only the bounded algebraic calculator over declared premises is audited. Claim boundary until fixed: the packet supports internal algebraic/RGE propagation from declared inputs, not an unconditional zero-import y_t/EW prediction."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
-        "B": 2,
-        "C": 1,
-        "D": 6,
-        "total_pass": 14
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
       },
-      "runner_path": "scripts/frontier_yt_zero_import_chain.py",
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note",
       "transitive_descendants": 516,
-      "verdict_rationale": "Issue: the runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V, hard-codes R_CONN = 8/9, applies sqrt(9/8), and sets the Ward target g_lattice/sqrt(6) rather than deriving the physical bridge/readout selectors in the restricted packet. Why this blocks: the full zero-import numerical y_t/EW prediction does not follow from the supplied one-hop authorities; it is a conditional calculation over bounded/imported anchors and unclosed physical bridge choices. Repair target: provide retained-grade derivations or dependencies for the Ward boundary bridge, the kappa_EW = 0 connected-trace selector, and any intended unbounded plaquette certificate, or split the note so only the bounded algebraic calculator over declared premises is audited. Claim boundary until fixed: the packet supports internal algebraic/RGE propagation from declared inputs, not an unconditional zero-import y_t/EW prediction."
+      "verdict_rationale": null
     },
     "yukawa_color_projection_theorem": {
       "audit_date": "2026-05-25T10:18:49.309520+00:00",
@@ -310952,9 +311034,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2386,
+    "preserved_existing": 2387,
     "re_audit_required": 0,
-    "row_count": 2430,
+    "row_count": 2431,
     "seeded_new": 0
   }
 }

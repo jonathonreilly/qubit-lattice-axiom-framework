@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 535 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1168 |
+| unaudited | 1170 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 71 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,25 +57,25 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 834 |
-| `audited_conditional` | 71 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1397 |
+| `unaudited` | 1399 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1071 |
+| `bounded_theorem` | 1073 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 256 |
 | `open_gate` | 110 |
-| `positive_theorem` | 709 |
+| `positive_theorem` | 708 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 371 |
+| `critical` | 372 |
 | `high` | 509 |
 | `medium` | 581 |
 | `leaf` | 969 |
@@ -85,9 +85,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2008
-- runners with (C) first-principles compute hits: 977
-- runners with (D) external comparator hits: 584
+- runners classified: 2009
+- runners with (C) first-principles compute hits: 978
+- runners with (D) external comparator hits: 585
 - decoration candidates (no C, no D): 335
 
 ## Top 25 by load-bearing score (topology only)
@@ -1031,7 +1031,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -14922,23 +14921,6 @@ Claim boundary until fixed: given D1 and D2 as assumptions, the u_0 cancellation
 - **load-bearing step:** C_A - C_B = (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso), so C_A=C_B iff c_S*g_bare^2=2/N_iso, while C_A=C_B is itself the missing same-1PI bridge.  _(class `A`)_
 - **chain closes:** True — The algebraic gate closes as an open-gate diagnostic: the retained inputs and runner support the residual, the gate equation, and the off-surface failure. The chain does not close, and does not claim to close, the same-1PI bridge or any downstream retained theorem.
 - **rationale:** Clean only as open_gate. The note correctly blocks propagation by stating that equating Rep A and Rep B would assume the same-1PI equivalence under review. It avoids deriving g_bare=1, the Standard Model top-Yukawa observable, or same-1PI identity.
-- **auditor confidence:** high
-
-### `yt_zero_import_chain_note`
-
-- **Note:** [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](../../docs/YT_ZERO_IMPORT_CHAIN_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** The current y_t/EW zero-import chain from the restricted packet to the reported v, y_t(v), m_t, alpha_s(M_Z), and sin^2(theta_W)(M_Z) outputs, including the section 9 algebraic narrowing.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-yt-zero-import-pass1-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The chain imposes y_t(M_Pl) = g_lattice / sqrt(6) and the connected-trace EW readout g_EW(phys) = g_EW(latt) * sqrt(9/8) after importing the canonical plaquette surface and exact Fierz fraction.  _(class `B`)_
-- **chain closes:** False — The downstream algebra/RGE calculation is internally consistent once <P> = 0.5934, R_conn/F_adj = 8/9, kappa_EW = 0, and the Ward boundary condition are supplied. The restricted packet does not derive the Ward bridge or the kappa_EW = 0 physical readout, and the runner imports or hard-codes the anchor values rather than computing them from the framework baseline.
-- **rationale:** Issue: the runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V, hard-codes R_CONN = 8/9, applies sqrt(9/8), and sets the Ward target g_lattice/sqrt(6) rather than deriving the physical bridge/readout selectors in the restricted packet. Why this blocks: the full zero-import numerical y_t/EW prediction does not follow from the supplied one-hop authorities; it is a conditional calculation over bounded/imported anchors and unclosed physical bridge choices. Repair target: provide retained-grade derivations or dependencies for the Ward boundary bridge, the kappa_EW = 0 connected-trace selector, and any intended unbounded plaquette certificate, or split the note so only the bounded algebraic calculator over declared premises is audited. Claim boundary until fixed: the packet supports internal algebraic/RGE propagation from declared inputs, not an unconditional zero-import y_t/EW prediction.
-- **open / conditional deps cited:**
-  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
-  - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
-  - `RCONN_DERIVED_NOTE.md`
 - **auditor confidence:** high
 
 ### `yukawa_color_projection_theorem`

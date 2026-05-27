@@ -28446,6 +28446,10 @@
     },
     {
       "from": "yt_zero_import_chain_note",
+      "to": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "yt_zero_import_chain_note",
       "to": "plaquette_self_consistency_note"
     },
     {
@@ -82977,6 +82981,18 @@
       "runner_path": "scripts/frontier_yt_constructive_uv_bridge.py",
       "title": "Constructive UV-Localized Bridge Class for `y_t`"
     },
+    "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": {
+      "claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "c28f416edc8f69177e6ffdb73d8ee87d32702645500dae85f2cef5ba08adcef5",
+      "path": "docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
+      "title": "YT Declared-Anchor Bounded Subchain Narrow Theorem"
+    },
     "yt_eft_bridge_theorem": {
       "claim_id": "yt_eft_bridge_theorem",
       "claim_type_author_hint": null,
@@ -84444,20 +84460,19 @@
     },
     "yt_zero_import_chain_note": {
       "claim_id": "yt_zero_import_chain_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
         "plaquette_self_consistency_note",
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "rconn_derived_note"
       ],
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "note_hash": "fd262b3c4be79ab390d98532a4ef3a5710902fb094085b55bfb59ff15c444508",
+      "helper_runner_paths": [],
+      "note_hash": "3b2fce6b7b04ed2159edf06ded10fed16731e145021c19e6ce869a20764b57fa",
       "path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
-      "runner_path": "scripts/frontier_yt_zero_import_chain.py",
+      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note"
     },
     "yukawa_color_projection_theorem": {
@@ -85352,6 +85367,7 @@
     "yt_bridge_hessian_selector_note_2026-05-17",
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
+    "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
     "yt_ew_color_projection_theorem",
     "yt_ew_coupling_bridge_note_2026-05-17",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
@@ -85371,27 +85387,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 604,
+      "bounded_theorem": 606,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
-      "none": 1449,
+      "none": 1448,
       "open_gate": 49,
       "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1023,
+      "bounded_theorem": 1025,
       "decoration": 1,
       "meta": 191,
       "no_go": 183,
-      "none": 431,
+      "none": 430,
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9742,
+    "edge_count": 9743,
     "leaf_count": 790,
-    "node_count": 2544,
-    "root_count": 848,
-    "runners_with_path": 2118
+    "node_count": 2545,
+    "root_count": 849,
+    "runners_with_path": 2119
   }
 }

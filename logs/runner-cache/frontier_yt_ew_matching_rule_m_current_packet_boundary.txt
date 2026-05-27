@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py
+runner_sha256: a325d349a1ca2f3b4c934cbcb332ef414950138f07bed0544a5aa09357dafd57
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+YT EW matching rule M current-packet boundary
+  [PASS] note contains 'Current-Packet Boundary'
+  [PASS] note contains 'Claim type:** no_go'
+  [PASS] note contains 'current-packet boundary'
+  [PASS] note contains 'F_adj = (N_c^2 - 1) / N_c^2 = 8/9'
+  [PASS] note contains 'not derived by this packet'
+  [PASS] note contains 'not supplied by this packet'
+  [PASS] note contains 'not an exhaustive proof'
+  [PASS] note contains 'No external OZI theorem'
+  [PASS] note contains 'No external OZI theorem, glueball-spectrum computation, PDG Yukawa value'
+  [PASS] note contains 'no retained selector deriving exact physical EW matching rule M'
+  [PASS] note avoids broad/forbidden phrase 'The matching rule M is **NOT exact at any finite N_c**'
+  [PASS] note avoids broad/forbidden phrase 'NOT exact at any finite N_c'
+  [PASS] note avoids broad/forbidden phrase 'This is **false**. Glueball intermediate states exist'
+  [PASS] note avoids broad/forbidden phrase 'standard QFT machinery'
+  [PASS] note avoids broad/forbidden phrase 'exact OZI-vanishing theorem at all genus orders — not available'
+  [PASS] note avoids broad/forbidden phrase 'downstream rows may cite an exact physical R_conn = 8/9 derivation'
+  [PASS] note avoids broad/forbidden phrase 'would become retained'
+  [PASS] note avoids broad/forbidden phrase '\nStatus: retained\n'
+  [PASS] note avoids broad/forbidden phrase '\nStatus: promoted\n'
+  [PASS] N_c is the configured color rank 3 (N_c=3)
+  [PASS] full color trace dimension is N_c^2 = 9 (dim_full=9)
+  [PASS] singlet channel dimension is 1 (dim_singlet=1)
+  [PASS] adjoint channel dimension is 8 (dim_adjoint=8)
+  [PASS] F_adj is exactly 8/9 (F_adj=8/9)
+  [PASS] S1 is listed as a current-packet gap
+  [PASS] S2 is listed as a current-packet gap
+  [PASS] S3 is listed as a current-packet gap
+  [PASS] the repaired note links no conditional OZI dependency
+  [PASS] the repaired note leaves audit authority external
+
+YT EW matching rule M current-packet boundary: PASS
+PASS=29 FAIL=0
+
+----- stderr -----
+

@@ -83120,18 +83120,18 @@
     },
     "yt_ew_matching_rule_m_note_2026-05-02": {
       "claim_id": "yt_ew_matching_rule_m_note_2026-05-02",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [
         "yt_ew_color_projection_theorem",
         "yukawa_color_projection_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f5491df9c10bfc629a4562d5f888700d297684dbe47def49971eac48d80063f7",
+      "note_hash": "b005fb89e36996f10f3d14df5c255ee36a120da5c2e076cf91d5d042a736fff6",
       "path": "docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md",
-      "runner_path": "scripts/frontier_yt_ew_matching_rule_m_stretch.py",
-      "title": "yt_ew Matching Rule M Stretch Attempt: Named Obstruction"
+      "runner_path": "scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py",
+      "title": "YT EW Matching Rule M Current-Packet Boundary"
     },
     "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25": {
       "claim_id": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25",
@@ -85393,8 +85393,8 @@
       "bounded_theorem": 607,
       "decoration": 1,
       "meta": 191,
-      "no_go": 82,
-      "none": 1447,
+      "no_go": 83,
+      "none": 1446,
       "open_gate": 49,
       "positive_theorem": 170
     },
@@ -85402,8 +85402,8 @@
       "bounded_theorem": 1026,
       "decoration": 1,
       "meta": 191,
-      "no_go": 185,
-      "none": 429,
+      "no_go": 186,
+      "none": 428,
       "open_gate": 126,
       "positive_theorem": 589
     },

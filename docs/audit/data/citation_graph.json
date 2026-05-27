@@ -11149,6 +11149,14 @@
       "to": "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09"
     },
     {
+      "from": "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26",
+      "to": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
+    },
+    {
+      "from": "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26",
+      "to": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+    },
+    {
       "from": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
       "to": "unit_singlet_overlap_narrow_theorem_note_2026-05-02"
     },
@@ -54355,6 +54363,21 @@
       "runner_path": "scripts/frontier_g_bare_two_ward_closure.py",
       "title": "Two-Representation Ward Closure on `g_bare`"
     },
+    "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26": {
+      "claim_id": "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+        "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "79226ff5f5e7c3b0631c48e27cfc4ff3530d9cc40b0c358171a8bf4164bf7875",
+      "path": "docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py",
+      "title": "Two-Ward `g_bare` Route H_unit-Residue Accepted-Premise Bridge"
+    },
     "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": {
       "claim_id": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
       "claim_type_author_hint": "bounded_theorem",
@@ -85959,7 +85982,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 626,
+      "bounded_theorem": 627,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
@@ -85968,7 +85991,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1043,
+      "bounded_theorem": 1044,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
@@ -85976,10 +85999,10 @@
       "open_gate": 127,
       "positive_theorem": 590
     },
-    "edge_count": 9803,
-    "leaf_count": 805,
-    "node_count": 2566,
+    "edge_count": 9805,
+    "leaf_count": 806,
+    "node_count": 2567,
     "root_count": 857,
-    "runners_with_path": 2142
+    "runners_with_path": 2143
   }
 }

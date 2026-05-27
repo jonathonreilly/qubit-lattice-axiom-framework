@@ -8292,6 +8292,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_g_bare_two_ward_closure.py"
     },
+    "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 21,
+        "B": 4,
+        "C": 1,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py"
+    },
     "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": {
       "assert_count": 1,
       "counts": {
@@ -51191,6 +51203,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 21,
+        "B": 4,
+        "C": 1,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/gap_ln_born_check.py": {
       "assert_count": 0,
       "claims": [
@@ -56527,14 +56554,14 @@
   "stats": {
     "decoration_candidates": 347,
     "dominant_class_distribution": {
-      "A": 246,
+      "A": 247,
       "B": 293,
       "C": 761,
       "D": 301,
       "none": 436
     },
-    "runners_classified": 2037,
-    "runners_with_C": 992,
-    "runners_with_D": 599
+    "runners_classified": 2038,
+    "runners_with_C": 993,
+    "runners_with_D": 600
   }
 }

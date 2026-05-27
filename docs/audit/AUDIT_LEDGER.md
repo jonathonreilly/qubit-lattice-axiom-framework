@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 508 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1201 |
+| unaudited | 1200 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 69 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 805 |
-| `audited_conditional` | 69 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1430 |
+| `unaudited` | 1429 |
 
 | claim_type | count |
 |---|---:|
@@ -935,6 +935,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
@@ -1881,6 +1882,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs the two graph families, applies the layer-normalized propagator, computes corrected Sorkin I3 including -P(empty), and reports machine-precision ratios. The helper sources are present and implement graph generation, field computation, and propagation rather than importing or hard-coding the contested result.
 - **rationale:** The source note's qualitative claims are bounded to the displayed runner configuration and are supported by a completed cached run. The runner source genuinely computes the amplitudes and corrected Born ratios from generated DAGs and helper primitives; it does not merely print constants or compare against an imported target. The note's table values are stale relative to the included stdout, but the mismatch does not change the audited conclusion because the current stdout still places both lanes at 1e-16 to 1e-15 and preserves the stated non-monotone ordering/no-winner summary.
 - **auditor confidence:** medium
+
+### `born_rule_from_gleason_busch_derivation_note_2026-05-20`
+
+- **Note:** [`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](../../docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Born-rule repair route on the qubit-lattice operator algebra: if one assumes the standard Gleason-Busch probability representation on the POVM effect algebra, identifies the unique tracial state with a pre-record reference state, and assumes a Lüders/Kraus record-conditioning bridge, then the usual post-record Born form follows. This audit does not ratify the pre-record identification, the Lüders/update bridge, the record-as-Kraus bridge, or a retained closure of the failed gravitational-Hartree Born route.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing chain is Step 2 plus Steps 3-4: pinning sigma to rho_ref as the pre-record state, then using Lüders/Kraus conditioning to obtain p(j|i)=<psi_i|E_j|psi_i> and the rank-1 Born form.  _(class `B`)_
+- **chain closes:** False — The retained tracial-state dependency now closes only the unique-tracial-state theorem, and explicitly does not identify that state with a pre-record physical reference. The source note still imports the no-extra-structure/pre-record identification, Lüders compositional-consistency update, and record-as-Kraus bridge as admitted or in-flight inputs, so the Born derivation does not close from the one-hop retained packet.
+- **rationale:** Issue: the row's Born conclusion depends on physical/readout bridges that are not retained in the restricted packet: the unique tracial state is not yet identified with a pre-record reference state, Lüders compositional consistency is admitted, and record-as-Kraus is still a separate target. Why this blocks: Gleason-Busch supplies the representation form only after a probability assignment is admitted, and the retained tracial theorem supplies a mathematical state, not the physical pre-record/readout bridge needed for this row's claimed Born-rule derivation. Repair target: land retained bridge theorems for the no-extra-structure pre-record identification, Lüders/update rule or its resolved projective-measurement substitute, and persistent-record-as-Kraus/readout mapping, then wire them as direct dependencies. Claim boundary until fixed: this remains a bounded repair route showing how Born follows under named standard/admitted inputs, not a retained derivation from A1+A2.
+- **auditor confidence:** high
 
 ### `bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10`
 

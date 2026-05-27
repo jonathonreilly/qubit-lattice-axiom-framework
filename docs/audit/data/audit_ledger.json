@@ -18839,22 +18839,48 @@
       "verdict_rationale": null
     },
     "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T03:00:22.600842+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained tracial-state dependency now closes only the unique-tracial-state theorem, and explicitly does not identify that state with a pre-record physical reference. The source note still imports the no-extra-structure/pre-record identification, L\u00fcders compositional-consistency update, and record-as-Kraus bridge as admitted or in-flight inputs, so the Born derivation does not close from the one-hop retained packet.",
       "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Bounded Born-rule repair route on the qubit-lattice operator algebra: if one assumes the standard Gleason-Busch probability representation on the POVM effect algebra, identifies the unique tracial state with a pre-record reference state, and assumes a L\u00fcders/Kraus record-conditioning bridge, then the usual post-record Born form follows. This audit does not ratify the pre-record identification, the L\u00fcders/update bridge, the record-as-Kraus bridge, or a retained closure of the failed gravitational-Hartree Born route.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "bounded support",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T03:00:22.600842+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -18863,34 +18889,37 @@
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The load-bearing chain is Step 2 plus Steps 3-4: pinning sigma to rho_ref as the pre-record state, then using L\u00fcders/Kraus conditioning to obtain p(j|i)=<psi_i|E_j|psi_i> and the rank-1 Born form.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "cf6e466df5357904e7720a68f69d3f1716b9e63fa734c77727e72317466391ef",
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: land and cite retained bridge theorems for pre-record identification, L\u00fcders/update or resolved projective-measurement conditioning, and persistent-record-as-Kraus/readout mapping; then re-audit the Born derivation with those direct dependencies.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
+        "assert_count": 0,
+        "runner_result": "No runner is registered for this row.",
+        "runner_status": "no_primary_runner",
         "total_pass": 0
       },
       "runner_path": null,
       "title": "Born Rule via Gleason\u2013Busch on the Pre-Record Reference State: Bounded Support / Repair Route",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the row's Born conclusion depends on physical/readout bridges that are not retained in the restricted packet: the unique tracial state is not yet identified with a pre-record reference state, L\u00fcders compositional consistency is admitted, and record-as-Kraus is still a separate target. Why this blocks: Gleason-Busch supplies the representation form only after a probability assignment is admitted, and the retained tracial theorem supplies a mathematical state, not the physical pre-record/readout bridge needed for this row's claimed Born-rule derivation. Repair target: land retained bridge theorems for the no-extra-structure pre-record identification, L\u00fcders/update rule or its resolved projective-measurement substitute, and persistent-record-as-Kraus/readout mapping, then wire them as direct dependencies. Claim boundary until fixed: this remains a bounded repair route showing how Born follows under named standard/admitted inputs, not a retained derivation from A1+A2."
     },
     "born_scattering_comparison_note": {
       "audit_date": null,

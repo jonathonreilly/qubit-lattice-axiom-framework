@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Conditional finite Clifford/CAR carrier algebra for Planck Target 3.
+"""Conditional finite Clifford/algebraic-CAR carrier algebra for Planck Target 3.
 
 This runner verifies only the repaired scope:
 
   * supplied metric-compatible coframe response gives Cl_4(C) relations;
   * the rank-four module is irreducible;
-  * oriented Clifford pairs give two complex CAR modes using the Clifford
-    *-involution, not an ambient physical Hilbert adjoint;
+  * oriented Clifford pairs give two algebraic CAR pairs under formal
+    Clifford conjugation, not under an assumed ambient Hilbert adjoint;
   * the spin lift has the finite 2pi -> -I, 4pi -> I phase behavior.
 """
 
@@ -117,11 +117,14 @@ def car_from_majoranas(gammas: list[np.ndarray]) -> tuple[np.ndarray, np.ndarray
     return 0.5 * (gammas[0] + 1j * gammas[1]), 0.5 * (gammas[2] + 1j * gammas[3])
 
 
-def car_errors(modes: tuple[np.ndarray, ...]) -> tuple[float, float]:
+def formal_creators_from_majoranas(gammas: list[np.ndarray]) -> tuple[np.ndarray, np.ndarray]:
+    return 0.5 * (gammas[0] - 1j * gammas[1]), 0.5 * (gammas[2] - 1j * gammas[3])
+
+
+def car_errors(modes: tuple[np.ndarray, ...], creators: tuple[np.ndarray, ...]) -> tuple[float, float]:
     ident = np.eye(modes[0].shape[0], dtype=complex)
     max_cc = 0.0
     max_cct = 0.0
-    creators = [mode.conj().T for mode in modes]
     for i, ci in enumerate(modes):
         for j, cj in enumerate(modes):
             max_cc = max(max_cc, float(np.linalg.norm(anticommutator(ci, cj))))
@@ -130,19 +133,23 @@ def car_errors(modes: tuple[np.ndarray, ...]) -> tuple[float, float]:
     return max_cc, max_cct
 
 
+def transform_by_similarity(mats: list[np.ndarray], similarity: np.ndarray) -> list[np.ndarray]:
+    inverse = np.linalg.inv(similarity)
+    return [similarity @ mat @ inverse for mat in mats]
+
+
 def part0_source_firewall() -> None:
     section("PART 0: SOURCE FIREWALL")
     note = NOTE_PATH.read_text(encoding="utf-8")
     source = Path(__file__).read_text(encoding="utf-8")
 
     required_note_phrases = [
-        "conditional carrier rescope",
-        "conditional-support - finite Clifford/CAR carrier algebra",
+        "algebraic CAR rescope",
+        "conditional-support - finite Clifford/algebraic-CAR carrier algebra",
         "This row does not derive the metric-compatible coframe response on `K`",
         "This row does not prove substrate forcing of the active block",
         "This row does not claim that bare Hilbert-flow semantics alone force CAR",
-        "with creators defined by the Clifford `*`-involution",
-        "No ambient Hilbert-adjoint identification is part of the load-bearing claim",
+        "This row does not use ambient-adjoint CAR relations",
         "This row does not add a new axiom",
         RUNNER_PATH,
     ]
@@ -157,6 +164,7 @@ def part0_source_firewall() -> None:
         "Current output:",
         "PASS=34",
         "c_" + "Widom",
+        "c_j^" + "dagger",
     ]
     for phrase in forbidden_note_phrases:
         check(f"source note excludes overbroad phrase: {phrase}", phrase not in note)
@@ -172,13 +180,12 @@ def part0_source_firewall() -> None:
 
 
 def part1_clifford_and_car() -> None:
-    section("PART 1: FINITE CLIFFORD/CAR ALGEBRA")
+    section("PART 1: FINITE CLIFFORD/ALGEBRAIC-CAR ALGEBRA")
 
     gammas = clifford_generators()
     ident4 = np.eye(4, dtype=complex)
 
     max_square = max(float(np.linalg.norm(gamma @ gamma - ident4)) for gamma in gammas)
-    max_hermitian = max(float(np.linalg.norm(gamma - gamma.conj().T)) for gamma in gammas)
     max_clifford = 0.0
     for i, gi in enumerate(gammas):
         for j, gj in enumerate(gammas):
@@ -186,7 +193,6 @@ def part1_clifford_and_car() -> None:
             max_clifford = max(max_clifford, float(np.linalg.norm(anticommutator(gi, gj) - expected)))
 
     check("coframe generators square to the metric norm", max_square < TOL, f"max err={max_square:.2e}")
-    check("coframe generators are Hermitian", max_hermitian < TOL, f"max err={max_hermitian:.2e}")
     check("coframe generators satisfy Cl_4 anticommutators", max_clifford < TOL, f"max err={max_clifford:.2e}")
 
     test_vectors = [
@@ -207,22 +213,42 @@ def part1_clifford_and_car() -> None:
     check("rank-four module is minimal for Cl_4(C)", all(d * d < 16 for d in (1, 2, 3)) and 4 * 4 == 16)
 
     c_normal, c_tangent = car_from_majoranas(gammas)
-    max_cc, max_cct = car_errors((c_normal, c_tangent))
+    c_normal_creator, c_tangent_creator = formal_creators_from_majoranas(gammas)
+    max_cc, max_cct = car_errors((c_normal, c_tangent), (c_normal_creator, c_tangent_creator))
     check(
-        "oriented Clifford pairs give two CAR modes under Clifford star",
+        "oriented Clifford pairs give two algebraic CAR pairs",
         max_cc < TOL and max_cct < TOL,
         f"cc={max_cc:.2e}, cct={max_cct:.2e}",
     )
-    check("two complex CAR modes have dimension four", 2**2 == 4)
+    check("two algebraic CAR pairs have dimension four", 2**2 == 4)
 
     reconstructed = [
-        c_normal + c_normal.conj().T,
-        -1j * (c_normal - c_normal.conj().T),
-        c_tangent + c_tangent.conj().T,
-        -1j * (c_tangent - c_tangent.conj().T),
+        c_normal + c_normal_creator,
+        -1j * (c_normal - c_normal_creator),
+        c_tangent + c_tangent_creator,
+        -1j * (c_tangent - c_tangent_creator),
     ]
     reconstruction_error = max(float(np.linalg.norm(a - b)) for a, b in zip(gammas, reconstructed, strict=True))
-    check("CAR modes reconstruct the Clifford generators", reconstruction_error < TOL, f"max err={reconstruction_error:.2e}")
+    check("algebraic CAR pairs reconstruct the Clifford generators", reconstruction_error < TOL, f"max err={reconstruction_error:.2e}")
+
+    similarity = np.diag([1.0, 2.0, 3.0, 5.0]).astype(complex)
+    transformed_gammas = transform_by_similarity(gammas, similarity)
+    transformed_modes = tuple(transform_by_similarity([c_normal, c_tangent], similarity))
+    transformed_creators = tuple(transform_by_similarity([c_normal_creator, c_tangent_creator], similarity))
+    sim_square = max(float(np.linalg.norm(gamma @ gamma - ident4)) for gamma in transformed_gammas)
+    sim_clifford = 0.0
+    for i, gi in enumerate(transformed_gammas):
+        for j, gj in enumerate(transformed_gammas):
+            expected = (2.0 if i == j else 0.0) * ident4
+            sim_clifford = max(sim_clifford, float(np.linalg.norm(anticommutator(gi, gj) - expected)))
+    sim_cc, sim_cct = car_errors(transformed_modes, transformed_creators)
+    ambient_creators = tuple(mode.conj().T for mode in transformed_modes)
+    _, ambient_cct = car_errors(transformed_modes, ambient_creators)
+    sim_nonhermitian = max(float(np.linalg.norm(gamma - gamma.conj().T)) for gamma in transformed_gammas)
+    check("nonunitary-similar coframe still squares to the metric norm", sim_square < TOL, f"max err={sim_square:.2e}")
+    check("nonunitary-similar coframe still satisfies Cl_4 anticommutators", sim_clifford < TOL, f"max err={sim_clifford:.2e}")
+    check("formal Clifford-# CAR survives nonunitary similarity", sim_cc < TOL and sim_cct < TOL, f"cc={sim_cc:.2e}, cct={sim_cct:.2e}")
+    check("ambient-adjoint CAR is not inferred from metric compatibility", ambient_cct > 1.0 and sim_nonhermitian > 1.0, f"ambient cct={ambient_cct:.2e}")
 
     bivector = gammas[0] @ gammas[1]
     bivector_square_error = float(np.linalg.norm(bivector @ bivector + ident4))
@@ -259,7 +285,7 @@ class FractionLike:
 
 
 def main() -> int:
-    print("Planck Target 3 conditional Clifford/CAR carrier repair")
+    print("Planck Target 3 conditional Clifford/algebraic-CAR carrier repair")
     print(f"Claim: {CLAIM_ID}")
     print(f"Runner: {RUNNER_PATH}")
 

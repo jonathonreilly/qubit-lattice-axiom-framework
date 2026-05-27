@@ -255960,16 +255960,15 @@
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "helper_runner_paths": [
-        "scripts/numpy_replay_bootstrap.py",
-        "scripts/signed_gravity_aps_boundary_index_probe.py"
+      "deps": [
+        "signed_gravity_response_lane_status_note_2026-04-26"
       ],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 4.085,
       "load_bearing_step": "For the proposed interaction term, S_int = - sum_a chi_a M_a sum_x rho_a(x) Phi_x, the variation gives rho_active(x) = sum_a chi_a M_a rho_a(x).",
       "load_bearing_step_class": "A",
@@ -256029,9 +256028,9 @@
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 11
+        "total_pass": 0
       },
-      "runner_path": "scripts/signed_gravity_aps_locked_source_action_proposal.py",
+      "runner_path": "scripts/signed_gravity_aps_source_action_boundary_repair.py",
       "title": "Signed Gravity APS-Locked Source Action Proposal",
       "transitive_descendants": 5,
       "verdict_rationale": "The runner verifies consequences of the proposed action term by finite differentiation, sign-table checks, and unitary/Born controls; those are algebraic checks on an admitted ansatz, not an origin derivation. The source note is explicit that S_int is a new premise unless derived elsewhere, and the cited-authorities packet contains no retained upstream bridge. The helper boundary model supplies toy eta sectors but does not derive the scalar-gravity source coupling. Thus the note is a coherent conditional candidate/open gate, not a retained theorem."
@@ -257260,13 +257259,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 8,
+      "direct_in_degree": 9,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 10.17,
+      "load_bearing_score": 10.748,
       "load_bearing_step": "[PASS] strict local/taste-cell chi selector is absent (strict=[], conserved_neutral_count=3); [PASS] local signed source primitive is blocked (physical_candidates=[]); FINAL_TAGS include NO_GO_STRICT_SELECTOR, SOURCE_PRIMITIVE_BLOCKED_LOCAL, and SIGNED_GRAVITY_PHYSICAL_SECTOR_NOT_RETAINED.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -257402,7 +257401,7 @@
       },
       "runner_path": "scripts/frontier_signed_gravity_response_lane_status.py",
       "title": "Signed Gravitational Response Lane Status Note",
-      "transitive_descendants": 71,
+      "transitive_descendants": 75,
       "verdict_rationale": "The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class."
     },
     "signed_gravity_retained_boundary_source_principle_no_go_note": {

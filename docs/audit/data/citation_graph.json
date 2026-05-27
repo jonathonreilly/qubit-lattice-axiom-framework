@@ -23665,6 +23665,10 @@
       "to": "signed_gravity_cl3z3_source_character_derivation_note"
     },
     {
+      "from": "signed_gravity_aps_locked_source_action_proposal_note",
+      "to": "signed_gravity_response_lane_status_note_2026-04-26"
+    },
+    {
       "from": "signed_gravity_aps_wald_gauss_bridge_audit_note",
       "to": "signed_gravity_response_backlog_2026-04-25"
     },
@@ -77520,7 +77524,7 @@
       ],
       "note_hash": "73a27e66fd8386bb6de4c6d1bd9ed50059b5ebd4a452159ba3a219025d8e7a43",
       "path": "docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
-      "runner_path": "scripts/signed_gravity_aps_locked_source_action_proposal.py",
+      "runner_path": "scripts/signed_gravity_aps_source_action_boundary_repair.py",
       "title": "Signed Gravity APS-Locked Source Action Proposal"
     },
     "signed_gravity_aps_wald_gauss_bridge_audit_note": {
@@ -87721,7 +87725,6 @@
     "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
     "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
     "signed_gravity_aps_action_origin_superselection_stability_note_2026-05-17",
-    "signed_gravity_aps_locked_source_action_proposal_note",
     "signed_gravity_boundary_coframe_chi_probe_note_2026-05-17",
     "signed_gravity_chi_selector_theorem_or_nogo_note_2026-05-17",
     "signed_gravity_cl3z3_source_character_derivation_note_2026-05-17",

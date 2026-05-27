@@ -140,6 +140,27 @@ conditional action ansatz: if accepted or later derived, it supplies the
 missing `chi_eta` variation by construction. Until then it is a proposal and a
 test harness, not a retained theorem.
 
+## Permanent Boundary Repair (2026-05-27)
+
+The audit blocker offered two repair routes:
+
+1. derive the `chi_eta M_phys rho Phi` source-action cross term from retained
+   APS/Wald/Gauss structure; or
+2. mark the row permanently as an axiomatic extension.
+
+This repair takes route (2). The source-action term is permanently classified
+as an open-gate axiomatic-extension premise unless a future, separately
+audited theorem derives it from retained structure. This note does not ask
+audit to retain the interaction as a theorem over the current APS/Wald/Gauss
+stack.
+
+The retained lane-level authority is
+[`SIGNED_GRAVITY_RESPONSE_LANE_STATUS_NOTE_2026-04-26.md`](SIGNED_GRAVITY_RESPONSE_LANE_STATUS_NOTE_2026-04-26.md),
+which keeps the signed-response lane in no-go/open status rather than a
+physical signed-gravity closure. The downstream axiom-extension follow-up
+remains a controlled candidate only; it is not a retained theorem and not a
+physical signed-gravity claim.
+
 ## Proposed Action
 
 For each compact source region `Omega_a` with gapped APS boundary

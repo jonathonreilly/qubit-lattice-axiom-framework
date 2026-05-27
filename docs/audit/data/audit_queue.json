@@ -3,7 +3,7 @@
     "critical": 235,
     "high": 332,
     "leaf": 327,
-    "medium": 333
+    "medium": 332
   },
   "cycle_break_target_count": 3,
   "cycle_break_targets": [
@@ -6658,6 +6658,38 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "sign_portability_invariant_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
+        "alt_connectivity_family_basin_note",
+        "second_grown_family_sign_note",
+        "third_grown_family_sign_note",
+        "fourth_family_quadrant_note",
+        "fifth_family_radial_boundary_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
+        "scripts/gate_b_nonlabel_connectivity_v1.py"
+      ],
+      "load_bearing_score": 8.785,
+      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
+      "transitive_descendants": 77
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -11990,38 +12022,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "sign_portability_invariant_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
-        "alt_connectivity_family_basin_note",
-        "second_grown_family_sign_note",
-        "third_grown_family_sign_note",
-        "fourth_family_quadrant_note",
-        "fifth_family_radial_boundary_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/gate_b_nonlabel_connectivity_v1.py"
-      ],
-      "load_bearing_score": 8.785,
-      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
-      "transitive_descendants": 77
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "graviton_mass_derived_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17071,31 +17071,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/gate_b_nonlabel_connectivity_v1.py"
-      ],
-      "load_bearing_score": 6.804,
-      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
-      "transitive_descendants": 78
     },
     {
       "audit_independence_required": "any_non_self",
@@ -37019,5 +36994,5 @@
     }
   ],
   "ready_count": 57,
-  "total_pending": 1227
+  "total_pending": 1226
 }

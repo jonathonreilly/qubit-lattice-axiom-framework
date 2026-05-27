@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 496 |
+| **retained_bounded** | 497 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 792 |
+| `audited_clean` | 793 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -717,6 +717,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -10757,6 +10758,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — The finite-route synthesis follows only if the five route statuses and current-framework surface are accepted as inputs. The packet supplies no upstream authorities for T-4F-alpha-2, the current-bank Omega_DM interval, retained N_eff, the no-fitted-parameter rule, eta status, or the Lane 5 gate, and the runner hard-codes most of those status judgments.
 - **rationale:** The no-go gate passes N1 at the surface level because the note enumerates five distinct attack routes and mostly collapses non-independent routes under N2. It fails clean no-go under N4/N8: the restricted packet does not include the witness authorities needed to verify the Cycle-1 Omega_DM residue, T-4F-alpha-2, current-bank Omega_DM, eta status, or Lane 5 gate using same-packet evidence. The runner checks the PDG/CMB arithmetic but hard-codes most route-status and completeness conclusions as True. The scoped no-go is therefore plausible but conditional on missing dependency edges.
 - **auditor confidence:** high
+
+### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`
+
+- **Note:** [`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](../../docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite cached-output certificate that SIGN_PORTABILITY_INVARIANT_COMPARE reports runner-defined G1/G2/G3/G4 gate passes for the recorded derivation subset, five core family logs, and one holdout family under the stated tolerances.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-sign-portability-gate-certificate-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt, the runner reports the second-grown gate block PASS, all listed core and holdout families as G1G2G3G4=PPPP, configured thresholds, and OVERALL PASS.  _(class `B`)_
+- **chain closes:** True — The narrowed claim follows from the SHA-pinned cached runner output and the inspected runner source: the runner recomputes a two-row second-grown subset and then checks the same thresholds against registered family logs. This closes only the bounded diagnostic/cache certificate, not a unit-slope theorem, row-wise lower-bound theorem, physical sign-law derivation, or cross-family proof.
+- **rationale:** The cross-log dependence is load-bearing, so the step is class B rather than a first-principles derivation; however the source note has been narrowed to exactly that finite cached gate-certificate claim. The runner source and cache output support the stated PASS lines and thresholds, and the note explicitly excludes the broader theorem and physical-derivation readings. The decoration heuristic is not controlling here because the note is not an algebraic corollary of a single parent claim; it is a bounded runner diagnostic over recorded artifacts.
 
 ### `signed_gravity_aps_locked_source_action_proposal_note`
 

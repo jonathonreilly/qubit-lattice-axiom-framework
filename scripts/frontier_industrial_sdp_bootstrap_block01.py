@@ -37,6 +37,27 @@ from scipy.integrate import quad
 
 import cvxpy as cp
 
+PASS_COUNT = 0
+FAIL_COUNT = 0
+ACCEPTABLE_STATUSES = {"optimal", "optimal_inaccurate"}
+
+
+def check(label: str, ok: bool, detail: str = "") -> None:
+    global PASS_COUNT, FAIL_COUNT
+    if ok:
+        PASS_COUNT += 1
+        tag = "PASS"
+    else:
+        FAIL_COUNT += 1
+        tag = "FAIL"
+    suffix = f" ({detail})" if detail else ""
+    print(f"  [{tag}] {label}{suffix}")
+
+
+def contains(interval: Tuple[float, float], value: float, tol: float = 1e-6) -> bool:
+    lo, hi = interval
+    return lo - tol <= value <= hi + tol
+
 
 # ---------------------------------------------------------------------------
 # Section 1: Single-plaquette analytical references
@@ -253,7 +274,7 @@ def validate_su2_su3_brackets(beta: float = 6.0) -> List[str]:
     out.append("")
     out.append("--- CVXPY bootstrap with single-plaquette moments fixed ---")
     out.append("  Fix m_2, m_3, m_4 to single-plaquette reference values; bracket m_1.")
-    out.append("  Tests: does CVXPY correctly recover m_1 = ref value?")
+    out.append("  Tests: does CVXPY bracket contain m_1 = ref value?")
 
     # SU(2) test: fix m_2, m_3, m_4 from Bessel reference, see if CVXPY brackets m_1 = ref
     fix_su2 = {2: su2_mom[2], 3: su2_mom[3], 4: su2_mom[4]}
@@ -261,7 +282,7 @@ def validate_su2_su3_brackets(beta: float = 6.0) -> List[str]:
     out.append(f"  SU(2): fixed m_2,3,4 from Bessel ref. Bracket m_1 ∈ "
                f"[{res_su2['m1_min']:.6f}, {res_su2['m1_max']:.6f}]")
     out.append(f"    Reference m_1_SU(2) = {su2_mom[1]:.6f}; "
-               f"CVXPY recovered? {abs(res_su2['m1_max'] - su2_mom[1]) < 1e-3 or abs(res_su2['m1_min'] - su2_mom[1]) < 1e-3}")
+               f"CVXPY containment? {contains((res_su2['m1_min'], res_su2['m1_max']), su2_mom[1])}")
 
     # SU(3) test: same with SU(3) reference
     fix_su3 = {2: su3_mom[2], 3: su3_mom[3], 4: su3_mom[4]}
@@ -269,9 +290,47 @@ def validate_su2_su3_brackets(beta: float = 6.0) -> List[str]:
     out.append(f"  SU(3): fixed m_2,3,4 from Haar ref. Bracket m_1 ∈ "
                f"[{res_su3['m1_min']:.6f}, {res_su3['m1_max']:.6f}]")
     out.append(f"    Reference m_1_SU(3) = {su3_mom[1]:.6f}; "
-               f"CVXPY recovered? {abs(res_su3['m1_max'] - su3_mom[1]) < 1e-3 or abs(res_su3['m1_min'] - su3_mom[1]) < 1e-3}")
+               f"CVXPY containment? {contains((res_su3['m1_min'], res_su3['m1_max']), su3_mom[1])}")
 
     return out
+
+
+def validate_assertions(beta: float = 6.0) -> None:
+    print()
+    print("=" * 78)
+    print("Explicit PASS/FAIL containment assertions")
+    print("=" * 78)
+
+    solvers = set(cp.installed_solvers())
+    check("CVXPY has an open-source conic solver", bool(solvers & {"CLARABEL", "SCS"}), f"solvers={sorted(solvers)}")
+
+    su2_mom = su2_single_plaquette_bessel_moments(beta=beta, k_max=4)
+    su3_mom = su3_single_plaquette_haar_moments(beta=beta, k_max=4)
+    check("SU(2) reference m1 lies in support", -1.0 <= su2_mom[1] <= 1.0, f"m1={su2_mom[1]:.8f}")
+    check("SU(3) reference m1 lies in support", -1.0 / 3.0 <= su3_mom[1] <= 1.0, f"m1={su3_mom[1]:.8f}")
+
+    pure_su2 = cvxpy_max_min_m1_with_hankel(N=3, support=(-1.0, 1.0), fix_moments=None)
+    pure_su3 = cvxpy_max_min_m1_with_hankel(N=3, support=(-1.0 / 3.0, 1.0), fix_moments=None)
+    for label, res, support in [
+        ("SU(2) pure PSD bracket", pure_su2, (-1.0, 1.0)),
+        ("SU(3) pure PSD bracket", pure_su3, (-1.0 / 3.0, 1.0)),
+    ]:
+        status_ok = res["status_min"] in ACCEPTABLE_STATUSES and res["status_max"] in ACCEPTABLE_STATUSES
+        interval = (res["m1_min"], res["m1_max"])
+        check(f"{label} solver status acceptable", status_ok, f"{res['status_min']}/{res['status_max']}")
+        check(f"{label} spans support endpoints", contains(interval, support[0], 1e-3) and contains(interval, support[1], 1e-3), f"[{interval[0]:.6f}, {interval[1]:.6f}]")
+
+    fixed_su2 = cvxpy_max_min_m1_with_hankel(N=3, support=(-1.0, 1.0), fix_moments={2: su2_mom[2], 3: su2_mom[3], 4: su2_mom[4]})
+    fixed_su3 = cvxpy_max_min_m1_with_hankel(N=3, support=(-1.0 / 3.0, 1.0), fix_moments={2: su3_mom[2], 3: su3_mom[3], 4: su3_mom[4]})
+    for label, res, ref in [
+        ("SU(2) fixed-moment bracket", fixed_su2, su2_mom[1]),
+        ("SU(3) fixed-moment bracket", fixed_su3, su3_mom[1]),
+    ]:
+        status_ok = res["status_min"] in ACCEPTABLE_STATUSES and res["status_max"] in ACCEPTABLE_STATUSES
+        interval = (res["m1_min"], res["m1_max"])
+        check(f"{label} solver status acceptable", status_ok, f"{res['status_min']}/{res['status_max']}")
+        check(f"{label} contains reference m1", contains(interval, ref), f"ref={ref:.6f}, interval=[{interval[0]:.6f}, {interval[1]:.6f}]")
+        check(f"{label} is containment, not endpoint recovery", abs(interval[0] - ref) > 1e-3 and abs(interval[1] - ref) > 1e-3, f"ref={ref:.6f}")
 
 
 def main() -> int:
@@ -287,6 +346,7 @@ def main() -> int:
     # Run validation suite
     for line in validate_su2_su3_brackets(beta=6.0):
         print(line)
+    validate_assertions(beta=6.0)
 
     print()
     print("=" * 78)
@@ -301,8 +361,9 @@ def main() -> int:
     print("Adding single-plaquette moment constraints shows CVXPY workflow is")
     print("functional. Block 02 will apply real loop equations / multi-Wilson-loop")
     print("bootstrap to attempt a tighter bracket on SU(3) ⟨P⟩(β=6).")
+    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 78)
-    return 0
+    return 0 if FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":

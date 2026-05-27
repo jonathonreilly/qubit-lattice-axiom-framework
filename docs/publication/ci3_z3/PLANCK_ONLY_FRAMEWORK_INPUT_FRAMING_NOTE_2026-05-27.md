@@ -9,15 +9,53 @@ catalogs the cumulative bounded-closure posture reached after the 2026-05-25 →
 2026-05-27 hierarchy attack and frames its publication-surface presentation.
 **Source-side `proposal_allowed: false`**.
 
+## 0. Notation and dimensionality convention
+
+**The framework's accepted spacetime is `D = 3+1`** — three spatial dimensions
+(from A2: cubic lattice `Z^3`) plus one temporal dimension (emergent via Wick
+rotation, with **Lorentzian signature `(3,1)`** forced from primitives by the
+bounded sign-ε closure of PR #2026). The relevant Clifford algebra is
+**`Cl(3,1) ≅ M_4(ℝ)`** (Cartan-Bott cell at signature `(3,1)`), NOT the
+Euclidean `Cl(4,0) ≅ M_2(ℍ)` cell.
+
+When this note (and the cited PRs) refer to "d = 4" or "d_spacetime = 4", the
+intended reading is always **D = 3+1 Lorentzian**, post-Wick-rotation to
+Euclidean `Z^4` for lattice computation only. The Lorentzian-vs-Euclidean
+distinction matters because:
+
+- The 10 algebraic witnesses (PRs #2004-#2013) all hold for D = 3+1 specifically
+  via the Cl(3,1) Cartan-Bott cell identification (PR #2007) and the bounded
+  sign-ε closure (PR #2026). Cl(4,0) Euclidean is excluded by unitarity vs
+  contraction-semigroup (PR #2026 §3-§4).
+- The 7/8 fermion/boson Stefan-Boltzmann ratio (PRs #1998, #2000) is the d=4
+  Fermi-Dirac vs Bose-Einstein integral ratio — which is computed on
+  Wick-rotated Euclidean `Z^4`, but the physical content (APBC fermion vs PBC
+  boson Matsubara periodicities) is the D = 3+1 Lorentzian content.
+- The Drouffe-Zuber strong-coupling character coefficients (PR #2040, c_6 = 24)
+  count closed-surface graphs in d_spacetime = 4. This is the same number for
+  D = 3+1 Euclidean lattice computation, since the graph enumeration depends
+  only on the *spacetime* dimension count, not on the metric signature. **The
+  framework's `Z^3` spatial substrate (D_spatial = 3 alone) does not change
+  c_6** because the relevant dimension for character-expansion graph counting
+  is `d_spacetime = D = 3+1 = 4`, post-Wick-rotation to Z⁴ for lattice
+  computation.
+
+**Throughout the rest of this note and the cited PRs, please read "d=4" as
+"D=3+1 Lorentzian, Wick-rotated to Euclidean Z⁴ for lattice computation."**
+
 ## 1. Headline claim (framing only, not a theorem)
 
 > **The Cl(3)/Z³ framework takes the Planck mass `M_Pl` as its sole dimensionful
-> input.** The algebraic axioms `A_min = {A1: per-site qubit, A2: Z³ lattice}` carry
-> no numerical content. Every dimensionless ratio in the Standard Model derives
-> from this `A_min` substrate. Translating to human units (kg/m/s) using a single
-> human-unit value of `1/a = M_Pl ≈ 1.22 × 10¹⁹ GeV` reconstructs `v = 246.28 GeV`
-> (vs PDG `246.22 GeV`), with the residual `0.0255%` at the predicted 2-loop
-> running scale `(α_LM/π)² ≈ 0.083%` (confirmed at order-of-magnitude;
+> input.** The algebraic axioms `A_min = {A1: per-site qubit, A2: Z^3 lattice}`
+> carry no numerical content. The spacetime is `D = 3+1` Lorentzian
+> (Cl(3,1) signature), with the temporal direction emergent via Wick rotation
+> and the signature itself derived from primitives (PR #2026). Every
+> dimensionless ratio in the Standard Model derives from this `A_min`
+> substrate + the bounded `D = 3+1` forcing chain. Translating to human units
+> (kg/m/s) using a single human-unit value of `1/a = M_Pl ≈ 1.22 × 10¹⁹ GeV`
+> reconstructs `v = 246.28 GeV` (vs PDG `246.22 GeV`), with the residual
+> `0.0255%` at the predicted 2-loop running scale `(α_LM/π)² ≈ 0.083%`
+> (confirmed at order-of-magnitude;
 > `HIERARCHY_TWO_LOOP_RESIDUAL_F2_SCALE_TEST_NARROW_BOUNDED_NOTE_2026-05-27`).
 
 This is **not a derivation of the number `1.22 × 10¹⁹ GeV`** — that would
@@ -78,8 +116,8 @@ sole carry of dimensionful information.
 - Boundary/action-density premise: PR #1994 (accepted-premise bridge)
 - **Status:** bounded closure pending audit ratification of the two named-premise bridges
 
-**P2 (Wick rotation Z³ → Z⁴ + N=16 species count):**
-- **10 d=4 algebraic witnesses** (1 pre-existing retained + 9 new awaiting audit):
+**P2 (Wick rotation `Z^3` → Lorentzian `D = 3+1` (Cl(3,1)) + N=16 species count):**
+- **10 `D = 3+1` (i.e. `d_spacetime = 4` Lorentzian, post-Wick-rotation) algebraic witnesses** (1 pre-existing retained + 9 new awaiting audit):
   W_A so(4)≅su(2)⊕su(2) (#2004); W_B ω∧ω top-form (#2005); W_C binom(d,2)=2(d-1) (#2006);
   W_F Cl(3,1)≅M_4(ℝ) Cartan-Bott (#2007); W_D Chern-character k=2 (#2008);
   W_G Yang-Mills marginality (#2011); W_E Klein-four V_4×V_4 (#2012);
@@ -149,17 +187,23 @@ The 3/5 strong-coupling prediction is conditional on the SU(3) character coeffic
 c₆ = 24 on the framework's retained SU(3) primitives + d=4 forcing chain
 (post-Wick-rotation via PR #2026) is in flight and would close this conditional.
 
-### Spacetime vs spatial dimensionality
+### Spacetime vs spatial dimensionality (D = 3+1, not abstract d=4)
 
 The character expansion coefficients `c_n` count closed-surface lattice graphs
-touching a plaquette in `d_spacetime`. The framework's spatial substrate is
-`Z³` (per `A_min`), but the relevant plaquette in the hierarchy chain lives on
-the Wick-rotated `Z⁴ = Z³ × time` substrate (per PR #2026 bounded P2 closure).
-The Drouffe-Zuber `c_6 = 24` is the d=4 coefficient. **D=3 spatial does not change
-c_6 directly** because the relevant dimension for character-expansion graph
-enumeration is `d_spacetime = 4`, which the framework's d=4 forcing chain
-provides. The Padé[3/3] = 3/5 result therefore inherits the same d=4 chain
-already required by P2 closure.
+touching a plaquette in **`d_spacetime` = 4 = (3 spatial + 1 time)**. The framework's
+**spatial** substrate is `Z^3` (per A2 of A_min), and the temporal direction is
+emergent via Wick rotation with **Lorentzian signature `(3,1)`** forced from
+primitives by PR #2026 (the bounded sign-ε closure rules out Cl(4,0)
+Euclidean via unitarity-vs-contraction-semigroup).
+
+The Drouffe-Zuber `c_6 = 24` is the `D = 3+1` coefficient (Lorentzian
+spacetime, post-Wick-rotation to `Z^4 = Z^3 × Z` for lattice computation only;
+the metric signature does not affect graph-counting in the character
+expansion). **D = 3 spatial alone does not change c_6** because the relevant
+dimension for the character-expansion graph enumeration is `d_spacetime = 4`,
+which the framework's bounded `D = 3+1` forcing chain (PR #2026 + 10
+algebraic witnesses #2004-#2013) provides. The Padé[3/3] = 3/5 result
+therefore inherits the same `D = 3+1` chain already required by P2 closure.
 
 ## 5. What remains genuinely open (research-grade, multi-month)
 

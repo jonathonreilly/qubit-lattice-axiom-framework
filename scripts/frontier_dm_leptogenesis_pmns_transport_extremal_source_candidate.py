@@ -18,6 +18,27 @@ Purpose:
   imported transport functional has a seed endpoint below eta/eta_obs = 1, a
   sampled off-seed endpoint above 1, and therefore an interpolated closure
   witness on that parameterized family.
+
+2026-05-27 runner repair:
+  The 2026-05-26 independent audit feedback on this row recorded this
+  runner-artifact issue: "the current restricted helper packet is internally
+  inconsistent: direct import now fails because canonical_h is imported
+  from scripts/frontier_dm_leptogenesis_pmns_projector_interface.py but
+  that file defines no canonical_h." That ImportError chain was caused by
+  an earlier (2026-05-26) raw-interface rewrite that stripped five
+  pure-LA helpers (canonical_y / canonical_h / monomial_y / monomial_h /
+  pmns_projector_packet) from the projector-interface module without
+  updating 10+ downstream importers.
+
+  The repair restores the five pure-LA helpers to
+  `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` (no
+  transport dependencies introduced; the narrowing intent of the
+  raw-interface rewrite is preserved) and inlines the one transport-
+  coupled helper (`eta_ratio_single_source_flavored`) in its single
+  consumer `scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py`.
+
+  This runner now imports + runs cleanly to PASS=12 / FAIL=0, with the
+  same bounded interval-witness reading as before the import was broken.
 """
 
 from __future__ import annotations

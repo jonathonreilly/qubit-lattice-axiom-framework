@@ -55370,18 +55370,18 @@
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": {
       "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b77d3c531e3758b1dd4f1ef7959de7aa17a453b3247923c91817546bf01b15ed",
+      "note_hash": "b9a508bf8233976ec08ed206fbdf76b19abc2c1db71d7ccc4f011ee0886a4db2",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-      "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction"
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_beta6_finite_seam_route_repair.py",
+      "title": "Gauge-Vacuum Plaquette Beta=6 Finite Seam Route Repair"
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17": {
       "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17",
@@ -86224,22 +86224,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 637,
+      "bounded_theorem": 638,
       "decoration": 1,
       "meta": 192,
       "no_go": 84,
       "none": 1441,
       "open_gate": 50,
-      "positive_theorem": 171
+      "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1054,
+      "bounded_theorem": 1055,
       "decoration": 1,
       "meta": 192,
       "no_go": 187,
       "none": 426,
       "open_gate": 127,
-      "positive_theorem": 589
+      "positive_theorem": 588
     },
     "edge_count": 9830,
     "leaf_count": 807,

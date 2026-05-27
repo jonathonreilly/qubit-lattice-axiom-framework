@@ -1,222 +1,212 @@
-# Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction
+# Gauge-Vacuum Plaquette Beta=6 Finite Seam Route Repair
 
-**Date:** 2026-04-17
-**Status:** exact reduction theorem on the plaquette PF lane; after the new
-one-slab kernel-integral boundary theorem and the new full-slice rim-lift
-integral boundary theorem, the remaining framework-point seam is exactly
-evaluation of the integral-defined class-sector matrix elements, not a new
-closure principle
-**Type:** positive_theorem
-**Runner:** `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
+**Date:** 2026-04-17; 2026-05-27 scope repair.
+**Status:** finite witness/evaluator-route bounded support. This row now
+claims only the finite class-sector route certified by the runner: the
+three-sample left evaluator is fixed, the beta-side vector is a common input,
+and the listed finite structural surface does not determine that beta-side
+input uniquely. It does not claim that the full untruncated Wilson/Haar
+environment transfer identity, the exact one-slab/rim integral boundary
+objects, or the physical `beta = 6` matrix elements are already derived.
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only; this source note does not
+retag itself as retained.
+**Runner:** `scripts/frontier_gauge_vacuum_plaquette_beta6_finite_seam_route_repair.py`
+
+## 2026-05-27 Scope Repair
+
+The prior version overstated the current surface by treating
+`K_6^env` and `B_6(W)` as already-fixed exact Wilson/Haar integral objects.
+The current upstream transfer packet is narrower: it supplies a finite
+class-sector witness packet, not the full physical Wilson environment.
+
+This repair keeps the useful science and removes the overclaim. The row now
+binds only the finite route that is actually checked:
+
+- the universal three-sample left operator is fixed on the finite
+  dominant-weight box;
+- its first symmetric restriction is the exact radical matrix `F` and has rank
+  three;
+- any candidate normalized beta-side vector `rho` is mapped to a three-sample
+  value triple by that same fixed left operator;
+- the listed finite structural surface admits distinct positive self-adjoint
+  conjugation-symmetric beta-side witnesses and therefore does not determine a
+  unique normalized triple.
+
+The physical `beta = 6` integral-evaluation problem remains open. This row is
+a bounded finite witness and route-separation theorem, not a closed plaquette
+PF evaluator.
 
 ## Question
 
-After the new science-only boundary theorems fix `K_beta^env` and `B_beta(W)`
-as exact Wilson/Haar integrals, what is the strongest honest next theorem on
-the explicit `beta = 6` PF seam?
+After the current finite transfer-witness and underdetermination repairs, what
+is the strongest honest statement about the first `beta = 6` three-sample
+plaquette seam?
 
 ## Answer
 
-It is an exact reduction theorem.
+It is a finite evaluator-route theorem plus an underdetermination boundary.
 
-At `beta = 6`, the remaining framework-point seam is not:
+On the runner's finite class-sector witness surface, the left evaluator for
+the three sample holonomies is fixed. The first symmetric restriction is the
+explicit radical matrix `F`, and it has rank three. Therefore the three-sample
+route factors through one common beta-side vector hit by a fixed three-row
+operator.
 
-- a search for a new post-compression operator formalism,
-- a search for a new compressed `W`-dependence law,
-- or an unsupported claim of analytic closure.
+However, the current finite structural inputs - positivity, self-adjointness,
+conjugation symmetry, positive symmetric boundary vector, and normalization -
+do not determine that common beta-side vector. The runner exhibits two
+admissible finite witnesses satisfying those structural constraints and
+producing different normalized three-sample triples.
 
-It is exactly the evaluation problem for the class-sector matrix elements of
-the already-fixed integral objects.
+So the seam has been separated into:
 
-Let
+- fixed left evaluation geometry; and
+- still-open beta-side environment data.
 
-`S_6^env = P_cls K_6^env P_cls`,
+## Finite Setup
 
-`eta_6(W) = P_cls B_6(W)`.
+Let the finite dominant-weight box be
 
-Then the boundary coefficients are exactly
+`B_N = {(p,q): 0 <= p,q <= NMAX}`, with `NMAX = 5`.
 
-`z_(p,q)^env(6)
- = <chi_(p,q), (S_6^env)^(L_perp-1) eta_6(e)>`,
+Let `E_3` be the three-row sample operator whose rows are the Peter-Weyl
+character evaluation rows at the three sample holonomies `W_A`, `W_B`, and
+`W_C` used by the runner.
 
-and therefore
+For any normalized beta-side vector
 
-`rho_(p,q)(6)
- = z_(p,q)^env(6) / z_(0,0)^env(6)`.
+`rho = z / z_(0,0)`
 
-Since `K_6^env` and `B_6(W)` are already fixed as exact Wilson/Haar integrals,
-the remaining explicit `beta = 6` problem is exactly evaluation of the
-integral-defined class-sector matrix elements entering `S_6^env` and `eta_6`.
+on `B_N`, the induced normalized three-sample values are
 
-After compression, the marked-holonomy dependence is already canonical:
+`Zhat = E_3 rho`.
 
-`Z_6^env(W) = <K(W), v_6>`,
+The route theorem is about this finite map and the structural witness surface
+used by the runner. It is not a claim that `rho` has been identified with the
+physical Wilson/Haar environment at `beta = 6`.
 
-with
+## Theorem 1: fixed finite three-sample left evaluator
 
-`v_6 = sum_(p,q) z_(p,q)^env(6) chi_(p,q)`.
+On the first symmetric witness sector spanned by
 
-So the strongest honest next theorem is a reduction of the seam to explicit
-matrix-element evaluation, not a claim that those evaluations are already in
-closed form.
+`chi_(0,0)`, `chi_(1,0) + chi_(0,1)`, and `chi_(1,1)`,
 
-## Setup
+the three-sample row operator restricts exactly to the radical matrix `F`
+printed by the runner.
 
-From the new one-slab orthogonal-kernel integral boundary theorem:
+The runner verifies:
 
-- `K_beta^env(U_(k+1), U_k)` is one exact Wilson/Haar bulk slab integral,
-- but no explicit closed-form `beta = 6` evaluation is yet derived.
+- the symbolic radical expression for `F`;
+- numerical equality between the direct character evaluation and the row
+  operator implementation;
+- `rank(F) = 3`.
 
-From the new full-slice rim-lift integral boundary theorem:
+Thus the first symmetric left evaluator is fixed and does not collapse to a
+one- or two-sample scalar readout.
 
-- `B_beta(W)` is one exact local Wilson/Haar rim integral on the full slice,
-- `eta_beta(W) = P_cls B_beta(W)`,
-- but no explicit closed-form `beta = 6` evaluation is yet derived.
+## Theorem 2: listed finite structural constraints do not determine the beta-side vector
 
-From the exact kernel/rim compression theorem already on the PF lane:
+The runner constructs two finite beta-side witnesses
 
-- once `K_6^env` and `B_6` are explicit, `S_6^env`, `eta_6`,
-  `rho_(p,q)(6)`, and the downstream plaquette PF data follow canonically.
+`(S_A, eta_A)` and `(S_B, eta_B)`
 
-From the exact compressed rim-evaluation theorem:
+on the same dominant-weight box. Both satisfy the listed finite structural
+surface:
 
-- after compression, `Z_beta^env(W) = <K(W), v_beta>`,
-- so the compressed `W`-dependence is already explicit through the canonical
-  Peter-Weyl evaluation vector `K(W)`.
+- positive self-adjoint transfer witness;
+- conjugation-swap symmetry `(p,q) <-> (q,p)`;
+- positive conjugation-symmetric boundary vector;
+- normalized positive boundary-amplitude sequence.
 
-Therefore the only honest next theorem seam is evaluation of the beta-side
-matrix elements generated by the integral objects already fixed above.
+They induce normalized vectors
 
-## Theorem 1: exact beta=6 matrix-element reduction of the integral seam
+`rho_A = S_A^DEPTH eta_A / (S_A^DEPTH eta_A)_(0,0)`
 
-Let `chi_(p,q)` denote the marked class-function basis and let
+and
 
-`S_6^env = P_cls K_6^env P_cls`,
+`rho_B = S_B^DEPTH eta_B / (S_B^DEPTH eta_B)_(0,0)`.
 
-`eta_6(W) = P_cls B_6(W)`.
+The runner verifies `rho_A != rho_B` and
 
-Define the class-sector matrix elements
+`E_3 rho_A != E_3 rho_B`.
 
-`S_((p,q),(r,s))(6) = <chi_(p,q), S_6^env chi_(r,s)>`,
+Therefore the listed finite structural surface alone does not determine the
+beta-side vector or the normalized three-sample values.
 
-`b_(p,q)(W;6) = <chi_(p,q), eta_6(W)>`.
+## Corollary: the remaining seam is beta-side construction, not left-evaluator selection
 
-Then the framework-point boundary coefficients satisfy the exact reduction law
+The finite left evaluator is no longer the ambiguous object on this route. The
+remaining work is to construct or derive the actual physical beta-side
+environment data, or to prove a stronger admissibility theorem that collapses
+the finite witness surface to a unique beta-side vector.
 
-`z_(p,q)^env(6)
- = <chi_(p,q), (S_6^env)^(L_perp-1) eta_6(e)>`,
+## What This Closes
 
-so every `z_(p,q)^env(6)` is determined entirely by the matrix elements
-`S_((p,q),(r,s))(6)` and `b_(r,s)(e;6)`.
+- finite identification of the fixed three-row left evaluator on the first
+  symmetric witness sector;
+- exact radical form and rank-three non-collapse of that finite evaluator;
+- finite witness that the listed structural constraints do not uniquely select
+  beta-side normalized three-sample values;
+- a narrower target for later plaquette PF work: construct the beta-side
+  vector instead of searching for a new left-evaluator convention.
 
-Because `K_6^env` and `B_6(W)` are already fixed as explicit Wilson/Haar
-integrals, those class-sector matrix elements are themselves explicit
-integral-evaluation targets.
+## What This Does Not Close
 
-So the remaining explicit `beta = 6` seam is exactly:
+- the full untruncated spatial Wilson environment transfer identity;
+- exact one-slab or rim Wilson/Haar integral boundary objects;
+- physical `K_6^env` or `B_6(W)` matrix elements;
+- explicit physical coefficients `rho_(p,q)(6)`;
+- explicit framework-point plaquette PF data;
+- analytic closure of canonical `P(6)`;
+- a retained plaquette PF evaluator.
 
-- evaluate the compressed bulk matrix elements of `K_6^env`,
-- evaluate the compressed rim matrix elements of `B_6(W)`,
-- propagate them through the already-fixed boundary-amplitude law.
+## Why This Matters
 
-No additional structural unknown is introduced at this stage.
-
-## Corollary 1: exact compressed evaluation-boundary law
-
-Let
-
-`v_6 = sum_(p,q) z_(p,q)^env(6) chi_(p,q)`.
-
-Then for every marked holonomy `W`,
-
-`Z_6^env(W) = <K(W), v_6>`,
-
-with `K(W)` the canonical Peter-Weyl evaluation vector.
-
-Therefore once the matrix elements determining `v_6` are evaluated, the full
-compressed boundary class function is explicit automatically. The compressed
-`W`-dependence is not an additional open seam.
-
-## Corollary 2: strongest honest framework-point statement now supportable
-
-At the framework point `beta = 6`, the strongest honest next theorem-grade
-statement is:
-
-- the bulk side is already reduced to matrix-element evaluation of the exact
-  one-slab Wilson/Haar kernel `K_6^env`,
-- the local marked side is already reduced to matrix-element evaluation of the
-  exact full-slice Wilson/Haar rim lift `B_6(W)`,
-- the compressed `W`-dependence is already canonical,
-- so the remaining PF seam is evaluation, not a missing new formalism and not
-  analytic closure.
-
-## What this closes
-
-- exact reduction of the live `beta = 6` PF seam to evaluation of the
-  integral-defined class-sector matrix elements of `K_6^env` and `B_6(W)`
-- exact clarification that the compressed `W`-dependence is already fixed by
-  the Peter-Weyl evaluation law
-- exact clarification that no additional post-compression structural theorem is
-  needed before explicit evaluation
-
-## What this does not close
-
-- explicit closed-form matrix elements of `K_6^env`
-- explicit closed-form matrix elements of `B_6(W)`
-- explicit coefficients `rho_(p,q)(6)`
-- explicit framework-point plaquette PF data
-- analytic closure of canonical `P(6)`
-
-## Why this matters
-
-This is the strongest honest next theorem because it respects the new science
-surface.
-
-The branch no longer has to say only that `K_6^env` and `B_6(W)` exist as
-integrals, and it also does not have to pretend they are already solved.
-
-It can now say exactly what explicit work remains:
-
-- evaluate the bulk integral matrix elements,
-- evaluate the rim integral matrix elements,
-- then read off the compressed boundary data and downstream PF data
-  canonically.
+The row still preserves a useful scientific reduction, but now at the scale
+the repository can actually support. It tells us that the left sample geometry
+is fixed on the finite witness surface and that the hard work is the beta-side
+environment construction. That is a narrower and more useful next target than
+the old overbroad exact-integral language.
 
 ## Command
 
 ```bash
-python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py
+python3 scripts/frontier_gauge_vacuum_plaquette_beta6_finite_seam_route_repair.py
 ```
 
 Expected summary:
 
-- `THEOREM PASS=6 SUPPORT=3 FAIL=0`
+- `THEOREM PASS=5 SUPPORT=5 FAIL=0`
 
-## Audit dependency repair links
+## Audit Dependency Repair Links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This graph-bookkeeping section records explicit dependency links named by a
+prior conditional audit so the audit citation graph can track them. It does
+not promote this note or change the audited claim scope.
 
 - [gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md)
 - `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17`
   (downstream consumer; backticked to avoid length-3 cycle through
-  beta6_scalar_value_insufficiency — citation graph direction is
-  *compressed_rim_functional_uniqueness → beta6_scalar_value_insufficiency
-  → this_evaluation_seam*)
+  beta6_scalar_value_insufficiency - citation graph direction is
+  *compressed_rim_functional_uniqueness -> beta6_scalar_value_insufficiency
+  -> this_evaluation_seam*)
 - `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17`
-  (downstream consumer; backticked to avoid length-2 cycle —
-  citation graph direction is *first_symmetric_reconstruction_map → this_seam*)
+  (downstream consumer; backticked to avoid length-2 cycle -
+  citation graph direction is *first_symmetric_reconstruction_map ->
+  this_seam*)
 - `gauge_vacuum_plaquette_first_symmetric_three_sample_current_stack_constraint_boundary_note_2026-04-17`
   (downstream consumer; backticked to avoid length-3 cycle through
-  first_symmetric_reconstruction_map — citation graph direction is
-  *current_stack_constraint_boundary → first_symmetric_reconstruction_map
-  → this_seam*)
+  first_symmetric_reconstruction_map - citation graph direction is
+  *current_stack_constraint_boundary -> first_symmetric_reconstruction_map
+  -> this_seam*)
 - [gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md)
 - `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17`
   (see-also cross-reference; backticked to break residual plaquette-cluster
-  cycles through the local-Wilson positive-cone-obstruction surfaced after
-  the underdetermination see-also edges were demoted in this PR. The
-  positive-cone-obstruction note is a downstream three-sample positive-cone
-  reduction; the present beta6 evaluation-seam reduction note closes the
-  explicit beta=6 seam upstream and does not consume the positive-cone
-  reduction for its own scope. The load-bearing citation direction is
-  *positive_cone_obstruction → this_seam*, not vice versa.)
+  cycles through the local-Wilson positive-cone-obstruction surfaced after the
+  underdetermination see-also edges were demoted. The positive-cone-obstruction
+  note is a downstream three-sample positive-cone reduction; the present note
+  now uses only the finite left-evaluator/witness-surface route and does not
+  consume the positive-cone reduction for its own scope. The load-bearing
+  citation direction is *positive_cone_obstruction -> this_seam*, not vice
+  versa.)

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1184 |
+| unaudited | 1185 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1413 |
+| `unaudited` | 1414 |
 
 | claim_type | count |
 |---|---:|
@@ -85,10 +85,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2009
+- runners classified: 2010
 - runners with (C) first-principles compute hits: 978
 - runners with (D) external comparator hits: 585
-- decoration candidates (no C, no D): 336
+- decoration candidates (no C, no D): 337
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -998,7 +998,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
-| `omega_lambda_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9370,22 +9369,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the audited periodic staggered torus, the potential-weighted Ollivier curvature proxy tracks G*T strongly and beats random/shuffled controls, but remains a bounded structured-curvature proxy rather than an Einstein-equation derivation.  _(class `C`)_
 - **chain closes:** True — The primary runner reproduces the screened potential-weighted mean R²=0.9728 while density and combined definitions remain weak. The companion control runner reproduces the screened and low-screening control claims, including random/shuffled collapse and the low-screening shell-averaged near-match that limits the interpretation to a structured proxy.
 - **rationale:** The note's bounded claim is supported by current runners: the potential-weighted construction gives strong R² against G*T, random and shuffled controls collapse, and the low-screening rerun survives. The same current output also supports the caveat that shell-averaged structured fields reproduce almost all of the low-screening signal, so dynamic backreaction and Einstein-equation closure are not established. Residual risk is the declared method-specific observable choice and missing open-boundary/Wilson comparison, both already outside the safe claim.
-- **auditor confidence:** high
-
-### `omega_lambda_derivation_note`
-
-- **Note:** [`OMEGA_LAMBDA_DERIVATION_NOTE.md`](../../docs/OMEGA_LAMBDA_DERIVATION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional arithmetic cascade for Omega_Lambda from imported baryon density/eta, a supplied bounded DM-to-baryon ratio, and assumed flatness; the retained-bounded dependency supports only the exact R_base = 31/9 identity.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-omega-lambda-C75Ktt-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Omega_Lambda = 1 - Omega_m = 1 - (Omega_b + R * Omega_b) = 0.686 using observed Omega_b, supplied bounded R = 5.38, and assumed flatness.  _(class `A`)_
-- **chain closes:** False — The arithmetic cascade closes once Omega_b, R = 5.38, and flatness are supplied. The restricted packet closes only R_base = 31/9; it does not close the Sommerfeld/alpha_GUT continuation to R = 5.38, the eta/Omega_b BBN input, flatness, or the DM relic/matter-cosmology bridge.
-- **rationale:** Issue: Omega_Lambda = 0.686 is not a positive retained theorem from retained inputs; it is a bounded conditional cascade over observed Omega_b/eta, supplied R = 5.38, and flatness. Why this blocks: the direct retained-bounded dependency supports only R_base = 31/9, leaving the Sommerfeld/alpha_GUT lift to R = 5.38 and the cosmology bridge unclosed. Repair target: derive or admit the baryon-density input, Sommerfeld/alpha_GUT continuation, flatness mechanism, and DM relic mapping as retained-grade or explicitly bounded dependencies. Claim boundary until fixed: safe as a conditional numerical cascade given observed Omega_b, bounded R, and flatness, not as first-principles Omega_Lambda closure.
-- **open / conditional deps cited:**
-  - `DM_RELIC_GAP_CLOSURE_NOTE.md`
-  - `review.md`
 - **auditor confidence:** high
 
 ### `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10`

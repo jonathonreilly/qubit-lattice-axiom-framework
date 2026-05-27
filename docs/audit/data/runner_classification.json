@@ -16356,6 +16356,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_ollivier_einstein.py"
     },
+    "omega_lambda_derivation_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_omega_lambda_arithmetic_cascade.py"
+    },
     "omega_lambda_matter_bridge_theorem_note_2026-04-22": {
       "assert_count": 0,
       "counts": {
@@ -43452,6 +43464,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_omega_lambda_arithmetic_cascade.py": {
+      "assert_count": 1,
+      "claims": [
+        "omega_lambda_derivation_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_omega_lambda_matter_bridge.py": {
       "assert_count": 0,
       "claims": [
@@ -55847,15 +55874,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 336,
+    "decoration_candidates": 337,
     "dominant_class_distribution": {
       "A": 236,
-      "B": 282,
+      "B": 283,
       "C": 755,
       "D": 299,
       "none": 437
     },
-    "runners_classified": 2009,
+    "runners_classified": 2010,
     "runners_with_C": 978,
     "runners_with_D": 585
   }

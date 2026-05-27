@@ -1,0 +1,266 @@
+===== runner cache v1 =====
+runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
+runner_sha256: c77eb5816a56367d0bafc2bd6cd2626afe200b6e9d5f768622e22130c1f016ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+Plaquette beta=6 perturbative-derivation bounded-obstruction runner
+(Pattern A; companion-note paired)
+
+
+==============================================================================
+T1: framework-side constants at beta=6 (exact algebra)
+==============================================================================
+  [PASS] beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
+         beta = 6.0
+  [PASS] g_bare^2 = 2 N_c / beta = 1 at beta=6
+         g^2 = 1.0
+  [PASS] alpha_bare = g_bare^2/(4 pi) = 1/(4 pi) at beta=6
+         alpha_bare = 0.07957747, 1/(4 pi) = 0.07957747
+
+==============================================================================
+T2: 1-loop weak-coupling value (framework existing M5)
+==============================================================================
+  [PASS] M5 1-loop weak-coupling: <P> = 1 - (N^2-1)/(8 N^2) * 4/beta = 0.9259
+         <P>_M5 = 0.925926
+  [PASS] equivalent: <P> = 1 - w_1/beta with w_1 = (N^2-1)/(2 N^2) = 4/9
+         <P>_w1 = 0.925926, |diff| = 0.000e+00
+  [PASS] 1-loop overshoots MC 0.5934 by ~56%
+         gap = 0.3325, pct = 56.04%
+
+==============================================================================
+T3: truncated perturbative series at beta=6 (literature coefficient packet)
+==============================================================================
+  literature coefficient packet:
+    w_1=0.44444  w_2=0.20305  w_3=0.16766
+    w_4=0.18000  w_5=0.23600  w_6=0.33600
+    w_7=0.51000  w_8=0.80600  w_9=1.30000
+    w_10=2.1400  ...  w_16=60.5000
+  truncated <P>_PT(N) at beta=6:
+    N= 1:  <P>_PT = 0.925926,  gap = +0.33253,  pct = +56.037%
+    N= 2:  <P>_PT = 0.920286,  gap = +0.32689,  pct = +55.087%
+    N= 3:  <P>_PT = 0.919509,  gap = +0.32611,  pct = +54.956%
+    N= 4:  <P>_PT = 0.919371,  gap = +0.32597,  pct = +54.933%
+    N= 5:  <P>_PT = 0.919340,  gap = +0.32594,  pct = +54.928%
+    N= 6:  <P>_PT = 0.919333,  gap = +0.32593,  pct = +54.926%
+    N= 7:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N= 8:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N= 9:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N=10:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N=11:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N=12:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N=13:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N=14:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N=15:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+    N=16:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
+  best truncation: N*=16, <P>_PT(N*) = 0.919331, pct = 54.926%
+  [PASS] OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from MC
+         <P>_PT(N*=16) = 0.919331, MC = 0.5934, pct = 54.926%; residual exceeds 40% inside the listed coefficient packet
+  coefficient ratios w_(n+1)/w_n:
+    n= 1 -> n+1= 2: ratio = 0.4569
+    n= 2 -> n+1= 3: ratio = 0.8257
+    n= 3 -> n+1= 4: ratio = 1.0736
+    n= 4 -> n+1= 5: ratio = 1.3111
+    n= 5 -> n+1= 6: ratio = 1.4237
+    n= 6 -> n+1= 7: ratio = 1.5179
+    n= 7 -> n+1= 8: ratio = 1.5804
+    n= 8 -> n+1= 9: ratio = 1.6129
+    n= 9 -> n+1=10: ratio = 1.6462
+    n=10 -> n+1=11: ratio = 1.6776
+    n=11 -> n+1=12: ratio = 1.7075
+    n=12 -> n+1=13: ratio = 1.7374
+    n=13 -> n+1=14: ratio = 1.7634
+    n=14 -> n+1=15: ratio = 1.7843
+    n=15 -> n+1=16: ratio = 1.8054
+  [PASS] renormalon: coefficient ratios > 1.5 for n>=6 (factorial divergence diagnostic)
+         10/10 ratios exceed 1.5 starting at n=6
+
+==============================================================================
+T4: tadpole-improvement signature (Lepage-Mackenzie 1993)
+==============================================================================
+  [PASS] u_0 = <P>_MC^(1/4) at MC = 0.5934 gives u_0 = 0.87768
+         u_0 = 0.877681
+  tadpole-improved self-consistent <P>_TI (4-loop) = 0.910624
+  [PASS] OBSTRUCTION: tadpole-improved self-consistent <P>_TI(4-loop) saturates >40% gap
+         <P>_TI = 0.910624, MC = 0.5934, gap = +0.31722, pct = 53.459%
+  tadpole-improved self-consistent <P>_TI(N) for N=1..8:
+    N=1: <P>_TI = 0.919435, gap = +0.32604, pct = 54.944%
+    N=2: <P>_TI = 0.911997, gap = +0.31860, pct = 53.690%
+    N=3: <P>_TI = 0.910850, gap = +0.31745, pct = 53.497%
+    N=4: <P>_TI = 0.910624, gap = +0.31722, pct = 53.459%
+    N=5: <P>_TI = 0.910570, gap = +0.31717, pct = 53.450%
+    N=6: <P>_TI = 0.910555, gap = +0.31716, pct = 53.447%
+    N=7: <P>_TI = 0.910552, gap = +0.31715, pct = 53.446%
+    N=8: <P>_TI = 0.910550, gap = +0.31715, pct = 53.446%
+  best tadpole-improved truncation: N*=8, <P>_TI = 0.910550, pct = 53.446%
+  [PASS] OBSTRUCTION: best tadpole-improved truncation has |pct| > 40%
+         <P>_TI(N*=8) = 0.910550, pct = 53.446%
+
+==============================================================================
+T5: Pade [m/n] resummation of the perturbative series
+==============================================================================
+  Pade [m/n] for the truncated perturbative series at beta=6:
+    [1/1] (order 2): <P>_Pade = 0.919821, gap = +0.32642, pct = 55.009%
+    [1/2] (order 3): <P>_Pade = 0.919399, gap = +0.32600, pct = 54.938%
+    [2/1] (order 3): <P>_Pade = 0.919386, gap = +0.32599, pct = 54.935%
+    [1/3] (order 4): <P>_Pade = 0.919344, gap = +0.32594, pct = 54.928%
+    [2/2] (order 4): <P>_Pade = 0.919338, gap = +0.32594, pct = 54.927%
+    [3/1] (order 4): <P>_Pade = 0.919340, gap = +0.32594, pct = 54.928%
+    [1/4] (order 5): <P>_Pade = 0.919333, gap = +0.32593, pct = 54.926%
+    [2/3] (order 5): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/2] (order 5): <P>_Pade = 0.919330, gap = +0.32593, pct = 54.926%
+    [4/1] (order 5): <P>_Pade = 0.919332, gap = +0.32593, pct = 54.926%
+    [1/5] (order 6): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [2/4] (order 6): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/3] (order 6): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [4/2] (order 6): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [5/1] (order 6): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [1/6] (order 7): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [2/5] (order 7): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/4] (order 7): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [4/3] (order 7): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [5/2] (order 7): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [6/1] (order 7): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [1/7] (order 8): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [2/6] (order 8): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/5] (order 8): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [4/4] (order 8): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [5/3] (order 8): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [6/2] (order 8): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [7/1] (order 8): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [1/8] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [2/7] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/6] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [4/5] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [5/4] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [6/3] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [7/2] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [8/1] (order 9): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [1/9] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [2/8] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/7] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [4/6] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [5/5] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [6/4] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [7/3] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [8/2] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [9/1] (order 10): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [1/10] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [2/9] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/8] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [4/7] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [5/6] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [6/5] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [7/4] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [8/3] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [9/2] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [10/1] (order 11): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [1/11] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [2/10] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [3/9] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [4/8] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [5/7] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [6/6] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [7/5] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [8/4] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [9/3] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [10/2] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+    [11/1] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
+  best Pade: [3/2], <P>_Pade = 0.919330, pct = 54.926%
+  [PASS] OBSTRUCTION: best Pade [3/2] resummation has |pct| > 40%
+         <P>_Pade = 0.919330, MC = 0.5934, pct = 54.926%
+
+==============================================================================
+T6: tadpole-improved Pade resummation (best combined attempt)
+==============================================================================
+  Pade [m/n] self-consistent with tadpole improvement (beta_eff = beta * <P>):
+    [1/2]_TI: <P>_TI-Pade = 0.910668, gap = +0.31727, pct = 53.466%
+    [2/1]_TI: <P>_TI-Pade = 0.910645, gap = +0.31725, pct = 53.462%
+    [1/3]_TI: <P>_TI-Pade = 0.910576, gap = +0.31718, pct = 53.451%
+    [2/2]_TI: <P>_TI-Pade = 0.910564, gap = +0.31716, pct = 53.449%
+    [3/1]_TI: <P>_TI-Pade = 0.910569, gap = +0.31717, pct = 53.449%
+    [1/4]_TI: <P>_TI-Pade = 0.910555, gap = +0.31716, pct = 53.447%
+    [2/3]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [3/2]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [4/1]_TI: <P>_TI-Pade = 0.910552, gap = +0.31715, pct = 53.447%
+    [1/5]_TI: <P>_TI-Pade = 0.910551, gap = +0.31715, pct = 53.446%
+    [2/4]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [3/3]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [4/2]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [5/1]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [1/6]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [2/5]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [3/4]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [4/3]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [5/2]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [6/1]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [1/7]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [2/6]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [3/5]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [4/4]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [5/3]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [6/2]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+    [7/1]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
+  best tadpole-improved Pade: [3/2], <P> = 0.910550, pct = 53.446%
+  [PASS] OBSTRUCTION: best tadpole-improved Pade combination has |pct| > 40%
+         <P>_TI-Pade = 0.910550, MC = 0.5934, pct = 53.446%
+
+==============================================================================
+T7: finite-route residual and renormalon diagnostic
+==============================================================================
+  pure-gauge b_0 = 11.000
+  alpha_lat at beta=6 = 0.079577
+  expected renormalon n* = 4.57
+  [PASS] renormalon onset n* = 1/(alpha_lat b_0/4) in range [4, 8] at beta=6
+         n* = 4.57
+  smallest |w_n/beta^n| at n* = 16: 2.144546e-11
+  perturbative summed value (N=16): 0.919331
+  finite-route gap (PT-MC):        +0.32593 (54.926%)
+  F2 2-loop scale:                  0.0833%
+  [PASS] finite-route gap PT-MC dominates over factorial-divergence minimum-term residual
+         non_pert_gap = +0.32593, min_term = 2.145e-11, ratio = 1.52e+10
+  [PASS] finite-route gap dwarfs F2 2-loop scale (tested route cannot reach MC at beta=6)
+         gap = 54.9259%, F2 = 0.0833%, ratio = 659.4x
+
+==============================================================================
+T8: honest verdict on the perturbative-derivation question
+==============================================================================
+  HONEST best analytic estimate: method = tadpole+Pade[3/2]
+                                  <P>_analytic = 0.910550
+                                  <P>_MC = 0.5934
+                                  residual = +0.31715
+                                  residual % = 53.446%
+                                  F2 2-loop scale = 0.0833%
+  Verdict: best analytic estimate residual (53.45%) > F2 scale (0.0833%)
+  Verdict label: OBSTRUCTION_>10pct
+  [PASS] HONEST VERDICT: best analytic estimate has residual > F2 2-loop scale
+         best analytic = 0.910550, residual = 53.4462% > F2 = 0.0833%
+
+==============================================================================
+T9: scope (no new axioms / primitives / vocabulary)
+==============================================================================
+  [PASS] no new axiom introduced (Cl(3)/Z^3 baseline unchanged)
+         framework primitives unchanged; coefficients are bounded literature inputs
+  [PASS] no new repo vocabulary introduced
+         uses canonical: <P>, beta, w_n, alpha_bare, u_0, tadpole improvement, Pade
+  [PASS] MC value 0.5934 enters only as comparator (not derivation input)
+         <P>_MC = 0.5934 used only in residual computation, never as authority
+
+==============================================================================
+T10: paired note exists with matching status authority disclaimer
+==============================================================================
+  [PASS] note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
+         length = 16277 chars
+  [PASS] note declares Status authority: independent audit lane only
+         audit-lane authority pattern present
+  [PASS] note declares no new axioms / no new primitives
+         audit-discipline disclaimers present
+  [PASS] note declares MC value 0.5934 as comparator only
+         comparator pattern present
+
+TOTAL: PASS=24  FAIL=0
+
+----- stderr -----
+

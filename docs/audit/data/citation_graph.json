@@ -68282,6 +68282,18 @@
       "runner_path": "scripts/frontier_plaquette_alpha_s_chain_audit_map_synthesis.py",
       "title": "Plaquette / alpha_s Chain Audit Map Synthesis Meta Note"
     },
+    "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27": {
+      "claim_id": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "af370e5559f06573f8c182c1d3dd83e507c38979bc7d65c80a02e20c490f07cf",
+      "path": "docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md",
+      "runner_path": "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py",
+      "title": "Plaquette beta=6 Perturbative-Derivation Bounded Obstruction"
+    },
     "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27": {
       "claim_id": "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27",
       "claim_type_author_hint": "bounded_theorem",
@@ -85118,6 +85130,7 @@
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
+    "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
     "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_self_consistency_note",
@@ -85406,7 +85419,7 @@
       "bounded_theorem": 609,
       "decoration": 1,
       "meta": 191,
-      "no_go": 83,
+      "no_go": 84,
       "none": 1445,
       "open_gate": 49,
       "positive_theorem": 170
@@ -85415,15 +85428,15 @@
       "bounded_theorem": 1028,
       "decoration": 1,
       "meta": 191,
-      "no_go": 186,
+      "no_go": 187,
       "none": 427,
       "open_gate": 126,
       "positive_theorem": 589
     },
     "edge_count": 9739,
-    "leaf_count": 793,
-    "node_count": 2548,
-    "root_count": 852,
-    "runners_with_path": 2123
+    "leaf_count": 794,
+    "node_count": 2549,
+    "root_count": 853,
+    "runners_with_path": 2124
   }
 }

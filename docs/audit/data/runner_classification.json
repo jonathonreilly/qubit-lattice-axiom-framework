@@ -17112,6 +17112,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_plaquette_alpha_s_chain_audit_map_synthesis.py"
     },
+    "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 1,
+        "C": 7,
+        "D": 9
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
+    },
     "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27": {
       "assert_count": 2,
       "counts": {
@@ -43906,6 +43918,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py": {
+      "assert_count": 1,
+      "claims": [
+        "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 1,
+        "C": 7,
+        "D": 9
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py": {
       "assert_count": 2,
       "claims": [
@@ -55989,11 +56016,11 @@
       "A": 237,
       "B": 286,
       "C": 757,
-      "D": 299,
+      "D": 300,
       "none": 437
     },
-    "runners_classified": 2016,
-    "runners_with_C": 981,
-    "runners_with_D": 587
+    "runners_classified": 2017,
+    "runners_with_C": 982,
+    "runners_with_D": 588
   }
 }

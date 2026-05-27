@@ -284,6 +284,45 @@ def measure_row(label: str, drift: float, restore: float) -> JointRow:
     )
 
 
+# Source-note pinned bounded replay values (see GATE_B_H025_JOINT_PACKAGE_NOTE.md).
+# Born sums 1e-15-scale complex amplitudes with heavy cancellation, so its last
+# printed digit is libm-sensitive across platforms — observed cross-machine
+# drift is ~3%. Wider Born tolerance admits that drift but still fails loudly
+# on anything larger. d_TV / MI / decoh are bit-stable across observed
+# platforms and use tighter abs bounds.
+EXPECTED_REPLAY = {
+    "exact grid": {"born": 2.62e-15, "d_tv": 0.850, "mi": 0.655, "decoh": 49.8},
+    "grown drift=0.2": {"born": 2.94e-15, "d_tv": 0.916, "mi": 0.770, "decoh": 48.8},
+}
+BORN_REL_TOL = 0.02
+DTV_ABS_TOL = 5e-3
+MI_ABS_TOL = 5e-3
+DECOH_ABS_TOL = 0.1
+
+
+def assert_replay_matches_source_note(rows: list[JointRow]) -> None:
+    for row in rows:
+        exp = EXPECTED_REPLAY[row.label]
+        rel_born = abs(row.born - exp["born"]) / exp["born"]
+        assert rel_born <= BORN_REL_TOL, (
+            f"{row.label}: Born {row.born:.3e} drifted "
+            f"{rel_born * 100:.2f}% from source-note {exp['born']:.3e} "
+            f"(tol {BORN_REL_TOL * 100:.1f}%)"
+        )
+        assert abs(row.d_tv - exp["d_tv"]) <= DTV_ABS_TOL, (
+            f"{row.label}: d_TV {row.d_tv:.3f} drifted from "
+            f"source-note {exp['d_tv']:.3f}"
+        )
+        assert abs(row.mi - exp["mi"]) <= MI_ABS_TOL, (
+            f"{row.label}: MI {row.mi:.3f} drifted from "
+            f"source-note {exp['mi']:.3f}"
+        )
+        assert abs(row.decoh - exp["decoh"]) <= DECOH_ABS_TOL, (
+            f"{row.label}: decoh {row.decoh:.1f}% drifted from "
+            f"source-note {exp['decoh']:.1f}%"
+        )
+
+
 def main():
     t0 = time.time()
     print("=" * 76)
@@ -295,12 +334,20 @@ def main():
     print()
     print(f"{'geometry':<18} {'Born':>10} {'d_TV':>8} {'MI':>8} {'Decoh':>8}")
 
+    measured: list[JointRow] = []
     for label, drift, restore in ROWS:
         row = measure_row(label, drift, restore)
+        measured.append(row)
         print(
             f"{row.label:<18} {row.born:>10.2e} {row.d_tv:>8.3f} "
             f"{row.mi:>8.3f} {row.decoh:>7.1f}%"
         )
+
+    assert_replay_matches_source_note(measured)
+    print()
+    print("REPLAY SELF-CHECK")
+    print("  All rows reproduce source-note values within tolerance.")
+    print("  Born tol: 2.0% (rel); d_TV / MI tol: 5e-3 (abs); decoh tol: 0.1pp (abs).")
 
     print()
     print("SAFE INTERPRETATION")

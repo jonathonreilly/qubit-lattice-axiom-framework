@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_h025_joint_package.py
-runner_sha256: 523f8a7cab48a65cce2335d237cd49ef792619f4acb8c3ea952b4131040a958a
+runner_sha256: 0bcfce1c884776233eb1237e854425c26f0e47e811b0c4adc53f34565d5d42f6
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 167.52
+elapsed_sec: 93.90
 status: ok
 ----- stdout -----
 ============================================================================
@@ -14,8 +14,12 @@ h=0.25, W=6, L=3, seeds=1, LAM=10.0
 growth rule: template + drift + restore + NN connectivity from grid labels
 
 geometry                 Born     d_TV       MI    Decoh
-exact grid           2.71e-15    0.850    0.655    49.8%
-grown drift=0.2      3.08e-15    0.916    0.770    48.8%
+exact grid           2.62e-15    0.850    0.655    49.8%
+grown drift=0.2      2.94e-15    0.916    0.770    48.8%
+
+REPLAY SELF-CHECK
+  All rows reproduce source-note values within tolerance.
+  Born tol: 2.0% (rel); d_TV / MI tol: 5e-3 (abs); decoh tol: 0.1pp (abs).
 
 SAFE INTERPRETATION
   This harness freezes the h=0.25 joint interference/decoherence
@@ -23,7 +27,7 @@ SAFE INTERPRETATION
   Promote the retained grown row only if it stays close to the exact grid.
   Treat the result as a bounded scaling check, not a full closure claim.
 
-Total time: 167s
+Total time: 94s
 
 ----- stderr -----
 

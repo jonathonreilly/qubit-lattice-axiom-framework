@@ -66907,7 +66907,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "384ab5f83432f032d80fc316e61bfa424a2ad518343ae731944843c115ecdb4b",
+      "note_hash": "8d9b8c9dc43e198f816056efc47cbbaeeab95b83a19cdd504883d3bc7f34f0db",
       "path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"

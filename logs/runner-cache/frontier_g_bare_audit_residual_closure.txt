@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_audit_residual_closure.py
-runner_sha256: 9c155be2e88138c9b4d5b850ae895677694c6abc3d9397028a9c5b5fd40ff43e
+runner_sha256: 5b82fa4436749f0be366622db1fe08682dce5061745b71e9486821588361c6e7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================================
 G_BARE = 1 AUDIT-RESIDUAL CLOSURE RUNNER
-Strengthened HS rigidity (R1-R5) + four-layer stratification (C1-C5)
+Strengthened HS rigidity (R1-R3) + companion diagnostics (C1-C5)
 Cl(3) -> End(V) -> su(3) -> HS form -> Wilson action -> g_bare = 1
 ========================================================================================
 
@@ -78,8 +78,9 @@ SECTION H — Residual 2 closure: HS form joint trace-Casimir rigidity (R1-R3)
   Summary: c values that preserve BOTH trace Gram and Casimir = {±1} only.
   No continuous rescaling family exists — this is the joint rigidity (R3).
   Hence T_a → c T_a is NOT an automorphism of the canonical structure for c ≠ ±1.
-  Equivalently, the rescaling A → c A on A_op = sum_a A^a T_a is coordinate
-  redundancy on the same physical operator (R4-R5 from HS rigidity theorem).
+  This runner does not by itself prove physical connection-equivalence
+  or Wilson-action routing; those are companion diagnostics requiring
+  separate retained bridge theorems before downstream use.
   [PASS] R3 conclusion: continuous rescaling family is empty (only discrete c = ±1)  (validates R3 of G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07)
 
 ========================================================================================
@@ -147,29 +148,28 @@ SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
 ========================================================================================
 SECTION G: ledger visibility for the strengthened theorem rows
 ========================================================================================
-  [PASS] [BOUNDED] upstream dep 'g_bare_structural_normalization_theorem_note_2026-04-18' present in audit ledger  (current effective status: unaudited)
-  [PASS] [BOUNDED] upstream dep 'su3_casimir_fundamental_theorem_note_2026-05-02' present in audit ledger  (current effective status: audited_conditional)
-  [PASS] [BOUNDED] upstream dep 'cl3_color_automorphism_theorem' present in audit ledger  (current effective status: retained_bounded)
-  [PASS] [BOUNDED] new row 'g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07' seeded for independent audit  (claim_type = positive_theorem)
+  [PASS] [BOUNDED] upstream dep 'physical_lattice_necessity_note' present in audit ledger  (current effective status: retained_no_go)
+  [PASS] [BOUNDED] upstream dep 'g_bare_structural_normalization_theorem_note_2026-04-18' present in audit ledger  (current effective status: retained_bounded)
+  [PASS] [BOUNDED] new row 'g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07' seeded for independent audit  (claim_type = bounded_theorem)
   [PASS] [BOUNDED] new row 'g_bare_constraint_vs_convention_restatement_note_2026-05-07' seeded for independent audit  (claim_type = positive_theorem)
 
 ========================================================================================
 SUMMARY
 ========================================================================================
   EXACT   : PASS = 62,   FAIL = 0
-  BOUNDED : PASS = 5, FAIL = 0
-  TOTAL   : PASS = 67, FAIL = 0
+  BOUNDED : PASS = 4, FAIL = 0
+  TOTAL   : PASS = 66, FAIL = 0
 
   All exact checks passed.
 
   RESIDUAL 1 (missing primary runner): CLOSED.
     This script + scripts/frontier_g_bare_derivation.py both run end-to-end.
 
-  RESIDUAL 2 (A → A/g rescaling freedom): STRENGTHENED.
+  RESIDUAL 2 (A → A/g rescaling freedom): NARROWED TO R1-R3.
     Section H verifies joint trace-Casimir rigidity (R1-R3) under fixed
     Hilbert-Schmidt form. No real c ≠ ±1 preserves both invariants.
-    Records a theorem-candidate joint-form rigidity argument distinct
-    from the prior decoration-class algebraic substitution.
+    Physical connection-equivalence and Wilson-action routing are
+    companion diagnostics, not Section-H load-bearing conclusions.
 
   RESIDUAL 3 (constraint vs convention): CLEANLY CHARACTERIZED.
     Section I exhibits the four-layer stratification:

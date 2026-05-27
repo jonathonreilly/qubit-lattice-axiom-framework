@@ -23,9 +23,9 @@ three audit residuals named in
   Residual 2 — A → A/g rescaling freedom.
     Section H verifies the JOINT trace-AND-Casimir rigidity: under fixed
     Hilbert-Schmidt form, no real c ≠ ±1 preserves both invariants
-    simultaneously. This is the strengthened theorem-candidate version of the
-    rescaling-freedom-removal claim, separating it from the 2026-05-03 audit's
-    "decoration" tier for independent review.
+    simultaneously. This is the narrowed theorem-candidate core of the
+    rescaling-freedom-removal claim; physical connection equivalence and
+    Wilson-action routing remain separate companion diagnostics.
 
   Residual 3 — Constraint vs convention.
     Section I verifies the four-layer stratification: L1 (Cl(3) axiom),
@@ -41,8 +41,11 @@ Honest scoping
 --------------
 This runner certifies the strengthened repair-target candidates:
 
-  - HS rigidity (R1)-(R5): joint trace-Casimir rigidity under fixed
+  - HS rigidity (R1)-(R3): joint trace-Casimir rigidity under fixed
     HS form on g_conc = su(3) ⊂ End(V).
+  - Companion diagnostics for the former R4/R5 physical-connection and
+    Wilson-routing readings. These diagnostics are not load-bearing unless
+    separate retained bridge theorems supply the missing physical surfaces.
   - Four-layer stratification (C1)-(C5): convention at L3 only,
     g_bare = 1 derived at L4.
 
@@ -388,8 +391,9 @@ def section_H_hilbert_schmidt_joint_rigidity(T_triplet):
     print("\n  Summary: c values that preserve BOTH trace Gram and Casimir = {±1} only.")
     print("  No continuous rescaling family exists — this is the joint rigidity (R3).")
     print("  Hence T_a → c T_a is NOT an automorphism of the canonical structure for c ≠ ±1.")
-    print("  Equivalently, the rescaling A → c A on A_op = sum_a A^a T_a is coordinate")
-    print("  redundancy on the same physical operator (R4-R5 from HS rigidity theorem).")
+    print("  This runner does not by itself prove physical connection-equivalence")
+    print("  or Wilson-action routing; those are companion diagnostics requiring")
+    print("  separate retained bridge theorems before downstream use.")
 
     check(
         "R3 conclusion: continuous rescaling family is empty (only discrete c = ±1)",
@@ -580,9 +584,8 @@ def section_G_ledger_visibility():
         "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     ]
     upstream_deps = [
+        "physical_lattice_necessity_note",
         "g_bare_structural_normalization_theorem_note_2026-04-18",
-        "su3_casimir_fundamental_theorem_note_2026-05-02",
-        "cl3_color_automorphism_theorem",
     ]
 
     # Upstream deps should already be in the ledger
@@ -619,7 +622,7 @@ def section_G_ledger_visibility():
 def main() -> int:
     print("=" * 88)
     print("G_BARE = 1 AUDIT-RESIDUAL CLOSURE RUNNER")
-    print("Strengthened HS rigidity (R1-R5) + four-layer stratification (C1-C5)")
+    print("Strengthened HS rigidity (R1-R3) + companion diagnostics (C1-C5)")
     print("Cl(3) -> End(V) -> su(3) -> HS form -> Wilson action -> g_bare = 1")
     print("=" * 88)
 
@@ -653,11 +656,11 @@ def main() -> int:
         print("  RESIDUAL 1 (missing primary runner): CLOSED.")
         print("    This script + scripts/frontier_g_bare_derivation.py both run end-to-end.")
         print()
-        print("  RESIDUAL 2 (A → A/g rescaling freedom): STRENGTHENED.")
+        print("  RESIDUAL 2 (A → A/g rescaling freedom): NARROWED TO R1-R3.")
         print("    Section H verifies joint trace-Casimir rigidity (R1-R3) under fixed")
         print("    Hilbert-Schmidt form. No real c ≠ ±1 preserves both invariants.")
-        print("    Records a theorem-candidate joint-form rigidity argument distinct")
-        print("    from the prior decoration-class algebraic substitution.")
+        print("    Physical connection-equivalence and Wilson-action routing are")
+        print("    companion diagnostics, not Section-H load-bearing conclusions.")
         print()
         print("  RESIDUAL 3 (constraint vs convention): CLEANLY CHARACTERIZED.")
         print("    Section I exhibits the four-layer stratification:")

@@ -1,0 +1,19 @@
+loop: tensor-network-connection-scope-repair-20260527
+target_claim_id: tensor_network_connection_note
+actual_current_surface_status: conditional-support
+target_status: bounded_theorem_reaudit
+branch: physics-loop/tensor-network-connection-scope-repair-20260527
+started_from: origin/main
+files_touched:
+  - docs/TENSOR_NETWORK_CONNECTION_NOTE.md
+  - scripts/frontier_tensor_network_connection.py
+  - scripts/frontier_tensor_network_connection_scope_repair.py
+  - .claude/science/physics-loops/tensor-network-connection-scope-repair-20260527/
+active_route: remove load-bearing holographic/RT interpretation
+hard_residual: no retained finite-to-AdS/CFT or finite-to-RT bridge theorem
+open_imports:
+  - AdS/CFT dictionary not derived
+  - Ryu-Takayanagi formula not derived
+trace_gate_classification: direct_blocker_closure
+next_exact_action: verify, run audit pipeline, open draft PR
+stop_condition: draft PR opened for independent review

@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """Same-family 3D closure on the retained valley-linear 1/L^2 branch.
 
-This is a narrow review-facing wrapper around the existing valley-linear
-harness. It freezes the best same-family 3D closure read we currently have:
+This runner is a review-facing closure certificate around the existing
+valley-linear harness. It recomputes the load-bearing finite-lattice rows that
+were previously only printed as frozen constants:
 
   - core card: h=0.25, W=10, L=12
-  - properties 8-9: same h=0.25, same W=10, multiple L values
-  - property 10: core W=10 tail, plus a W=12 companion width check
+  - properties 8-9: same h=0.25, same W=10, L=8,10,12
+  - property 10: live W=10 tail, plus retained W=12 companion dependency
 
-The note for this lane should state the companion rows explicitly. This
-script is meant to make that note real on disk.
+The W=12 wide-tail companion remains supplied by the retained
+VALLEY_LINEAR_WIDE_TAIL_NOTE packet; this script prints the dependency
+boundary explicitly rather than re-running that second heavy width replay.
 """
 
 from __future__ import annotations
@@ -43,6 +45,8 @@ from lattice_3d_valley_linear_card import (
 )
 
 
+AUDIT_TIMEOUT_SEC = 1800
+
 CORE_H = 0.25
 CORE_W = 10
 CORE_L = 12
@@ -75,6 +79,7 @@ def _build_family(phys_l: int, phys_w: int, h: float):
 def _tail_fit(lat, det, blocked, zf, pos, z_values):
     b_data = []
     d_data = []
+    toward = 0
     for z_mass in z_values:
         fm, _ = make_field(lat, z_mass, STRENGTH)
         am = lat.propagate(fm, K, blocked)
@@ -83,10 +88,14 @@ def _tail_fit(lat, det, blocked, zf, pos, z_values):
             zm = sum(abs(am[d]) ** 2 * pos[d, 2] for d in det) / pm
             delta = zm - zf
             sign = "T" if delta > 0 else "A"
-            b_data.append(z_mass)
-            d_data.append(delta)
+            if delta > 0:
+                toward += 1
+                b_data.append(z_mass)
+                d_data.append(delta)
             print(f"      z={z_mass}: {delta:+.6f} ({sign})")
     tail = ""
+    slope = None
+    r2 = None
     if len(b_data) >= 3:
         peak_i = int(np.argmax(d_data))
         if peak_i < len(b_data) - 2:
@@ -95,7 +104,7 @@ def _tail_fit(lat, det, blocked, zf, pos, z_values):
                 tail = f"b^({slope:.2f}), R²={r2:.3f}"
         else:
             tail = "insufficient post-peak points"
-    return len(b_data), tail
+    return {"toward": toward, "tail": tail, "slope": slope, "r2": r2}
 
 
 def _core_card(lat, det, bi, sa, sb, blocked, pos, field_free):
@@ -277,6 +286,99 @@ def _core_card(lat, det, bi, sa, sb, blocked, pos, field_free):
     }
 
 
+def _multi_l_same_h_rows(core_result):
+    """Recompute rows 8-9 at the same h=0.25, W=10 slice."""
+
+    print("\n  8-9. Same-h multi-L rows (h=0.25, W=10):")
+    grav_data = {}
+    pur_data = {}
+    elapsed_data = {}
+
+    for phys_l in [8, 10]:
+        t0 = time.time()
+        lat, det, _bi, sa, sb, blocked, _bl, field_free = _build_family(
+            phys_l, CORE_W, CORE_H
+        )
+        pos = lat.pos
+        af = lat.propagate(field_free, K, blocked)
+        pf = sum(abs(af[d]) ** 2 for d in det)
+        zf = sum(abs(af[d]) ** 2 * pos[d, 2] for d in det) / pf
+
+        fm, _ = make_field(lat, 3, STRENGTH)
+        am = lat.propagate(fm, K, blocked)
+        pm = sum(abs(am[d]) ** 2 for d in det)
+        grav = sum(abs(am[d]) ** 2 * pos[d, 2] for d in det) / pm - zf
+
+        pa = lat.propagate(field_free, K, blocked | set(sb))
+        pb = lat.propagate(field_free, K, blocked | set(sa))
+        bw = 2 * (CORE_W + 1) / N_YBINS
+        ed = max(1, round(lat.nl / 6))
+        st = 2 * lat.nl // 3 + 1
+        sp = min(lat.nl - 1, st + ed)
+        mid = []
+        for layer in range(st, sp):
+            mid.extend(
+                [
+                    lat.nmap[(layer, iy, iz)]
+                    for iy in range(-lat.hw, lat.hw + 1)
+                    for iz in range(-lat.hw, lat.hw + 1)
+                    if (layer, iy, iz) in lat.nmap
+                ]
+            )
+        ba = np.zeros(N_YBINS, dtype=np.complex128)
+        bb = np.zeros(N_YBINS, dtype=np.complex128)
+        for m in mid:
+            b = max(0, min(N_YBINS - 1, int((pos[m, 1] + CORE_W + 1) / bw)))
+            ba[b] += pa[m]
+            bb[b] += pb[m]
+        S = float(np.sum(np.abs(ba - bb) ** 2))
+        NA = float(np.sum(np.abs(ba) ** 2))
+        NB = float(np.sum(np.abs(bb) ** 2))
+        Sn = S / (NA + NB) if (NA + NB) > 0 else 0
+        Dcl = math.exp(-LAM**2 * Sn)
+        pur = decoherence_purity(pa, pb, det, Dcl)
+
+        grav_data[phys_l] = grav
+        pur_data[phys_l] = 1 - pur
+        elapsed_data[phys_l] = time.time() - t0
+        gc.collect()
+
+    grav_data[CORE_L] = core_result["grav"]
+    pur_data[CORE_L] = core_result["decoh"] / 100.0
+    elapsed_data[CORE_L] = 0.0
+
+    for phys_l in sorted(grav_data):
+        sign = "T" if grav_data[phys_l] > 0 else "A"
+        suffix = "core row" if phys_l == CORE_L else f"{elapsed_data[phys_l]:.0f}s"
+        print(
+            f"       L={phys_l}: grav={grav_data[phys_l]:+.6f}({sign}), "
+            f"1-pur={pur_data[phys_l]:.4f}  [{suffix}]"
+        )
+
+    lvals = sorted(grav_data)
+    grav_grows = all(
+        grav_data[a] < grav_data[b] for a, b in zip(lvals, lvals[1:])
+    )
+    purity_spread = max(pur_data.values()) - min(pur_data.values())
+    print(
+        f"  8. Purity stable: mean={np.mean(list(pur_data.values())):.1%}, "
+        f"spread={purity_spread:.4f}  "
+        f"[{'PASS' if purity_spread < 0.01 else 'CHECK'}]"
+    )
+    print(
+        "  9. Gravity grows: "
+        f"{'YES' if grav_grows else 'NO'}  "
+        f"[{'PASS' if grav_grows else 'CHECK'}]"
+    )
+
+    return {
+        "grav_data": grav_data,
+        "pur_data": pur_data,
+        "grav_grows": grav_grows,
+        "purity_spread": purity_spread,
+    }
+
+
 def main():
     t_total = time.time()
     core_nl = int(CORE_L / CORE_H) + 1
@@ -291,43 +393,61 @@ def main():
     print(f"  Core family: h={CORE_H}, W={CORE_W}, L={CORE_L}, max_d={core_max_d}")
     print(f"  Nodes: {core_n:,}, layers: {core_nl}")
     print("  Honest status:")
-    print("    - properties 1-7 are the fixed core card at h=0.25, W=10, L=12")
-    print("    - properties 8-9 are same-h multi-L rows at h=0.25, W=10")
-    print("    - property 10 is core W=10 plus a W=12 width companion for the far tail")
+    print("    - properties 1-7 are live recomputed at h=0.25, W=10, L=12")
+    print("    - properties 8-9 are live recomputed at h=0.25, W=10, L=8,10,12")
+    print("    - property 10 recomputes W=10 and cites retained W=12 companion")
     print("=" * 78)
     print()
 
-    print("  Frozen core card:")
-    print(f"    1. Born = {CORE_BORN:.2e}")
-    print(f"    2. d_TV = {CORE_DTV:.4f}")
-    print(f"    3. k=0 = {CORE_K0:.6f}")
-    print(f"    4. F~M alpha = {CORE_FM:.2f}")
-    print(f"    5. Gravity = {CORE_GRAV:+.6f} ({CORE_GRAV_READ})")
-    print(f"    6. Decoherence = {CORE_DECOH:.1f}%")
-    print(f"    7. MI = {CORE_MI:.2f} bits")
-    print(f"    10. Distance = {DIST_CORE} / {DIST_COMP}")
-
-    print("\n  8-9. Same-family multi-L rows at the same h=0.25 and W=10:")
-    print("    (L=8 and L=10 were replayed separately on 2026-04-04; L=12 is the frozen core row)")
-    grav_data = {8: 0.000157, 10: 0.000199, 12: CORE_GRAV}
-    pur_data = {8: 0.4997, 10: 0.4994, 12: CORE_DECOH / 100.0}
-    print(f"    L=8: grav={grav_data[8]:+.6f}, 1-pur={pur_data[8]:.4f}")
-    print(f"    L=10: grav={grav_data[10]:+.6f}, 1-pur={pur_data[10]:.4f}")
-    print(f"    L=12: grav={grav_data[12]:+.6f}, 1-pur={pur_data[12]:.4f} (frozen core)")
-    print(f"    Purity stable: {np.mean(list(pur_data.values())):.1%} across L=8,10,12")
-    print(
-        "    Gravity grows: YES "
-        f"(+{grav_data[8]:.6f} -> +{grav_data[10]:.6f} -> +{grav_data[12]:.6f})"
+    lat, det, bi, sa, sb, blocked, _bl, field_free = _build_family(
+        CORE_L, CORE_W, CORE_H
     )
+    core_result = _core_card(lat, det, bi, sa, sb, blocked, lat.pos, field_free)
+    multi_l = _multi_l_same_h_rows(core_result)
+
+    print("\n  10. Distance law at the core W=10 slice:")
+    t0 = time.time()
+    tail = _tail_fit(lat, det, blocked, core_result["zf"], lat.pos, range(2, 10))
+    print(f"      TOWARD: {tail['toward']}/8")
+    print(f"      Tail: {tail['tail'] or 'unfit'}")
+    print(f"      ({time.time() - t0:.0f}s)")
+
+    checks = [
+        ("Born", core_result["born"] < 1e-10),
+        ("d_TV", core_result["dtv"] > 0.1),
+        ("k=0", abs(core_result["k0"]) < 1e-6),
+        ("F~M", abs(core_result["fm_alpha"] - 1.0) < 0.2),
+        ("gravity sign", core_result["grav"] > 0),
+        ("decoherence", core_result["decoh"] > 5),
+        ("MI", core_result["mi"] > 0.05),
+        ("purity stability", multi_l["purity_spread"] < 0.01),
+        ("gravity growth", multi_l["grav_grows"]),
+        ("distance sign", tail["toward"] == 8),
+        (
+            "distance tail",
+            tail["slope"] is not None and -1.3 <= tail["slope"] <= -0.7,
+        ),
+    ]
+    passed = sum(ok for _name, ok in checks)
+    for name, ok in checks:
+        print(f"  CHECK {name}: {'PASS' if ok else 'FAIL'}")
+
+    print("\n  W=12 companion dependency:")
+    print("    retained note: docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md")
+    print("    retained runner: scripts/valley_linear_wide_tail_replay.py")
+    print("    companion tail: b^(-1.07) from z>=4; b^(-1.17) from z>=5")
 
     print(f"\n{'=' * 78}")
     print("SUMMARY")
     print(f"  Core card: h={CORE_H}, W={CORE_W}, L={CORE_L}")
-    print(f"  Core rows 1-7: frozen from retained notes/logs")
-    print(f"  Rows 8-9: same-h multi-L rows at h=0.25, W=10")
-    print(f"  Row 10: frozen core W=10 tail + W=12 width companion from retained logs")
+    print(f"  Core rows 1-7: live recomputed")
+    print(f"  Rows 8-9: live same-h multi-L recomputation")
+    print(f"  Row 10: live W=10 tail + retained W=12 width companion")
+    print(f"  PASS={passed} FAIL={len(checks) - passed}")
     print(f"  Total time:  {time.time() - t_total:.0f}s")
     print(f"{'=' * 78}")
+    if passed != len(checks):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

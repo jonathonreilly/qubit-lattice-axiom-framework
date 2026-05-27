@@ -22501,6 +22501,18 @@
       "to": "anomaly_forces_time_theorem"
     },
     {
+      "from": "same_family_3d_closure_note",
+      "to": "valley_linear_wide_tail_note"
+    },
+    {
+      "from": "same_family_3d_closure_note",
+      "to": "valley_linear_action_note"
+    },
+    {
+      "from": "same_family_3d_closure_note",
+      "to": "valley_linear_asymptotic_bridge_note"
+    },
+    {
       "from": "scalar_harmonic_tower_theorem_note_2026-04-24",
       "to": "cosmological_constant_spectral_gap_identity_theorem_note"
     },
@@ -74513,11 +74525,15 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "valley_linear_wide_tail_note",
+        "valley_linear_action_note",
+        "valley_linear_asymptotic_bridge_note"
+      ],
       "helper_runner_paths": [
         "scripts/lattice_3d_valley_linear_card.py"
       ],
-      "note_hash": "6ef968ae8f0d11f7d499984dcfa66223c0fe5bde36257808217d8873d3f0fdbc",
+      "note_hash": "5ebef719d5e3cba723e62a2ecb7602d04697057ff1dd95805132fab957e00078",
       "path": "docs/SAME_FAMILY_3D_CLOSURE_NOTE.md",
       "runner_path": "scripts/same_family_3d_closure.py",
       "title": "Same-Family 3D Closure: Valley-Linear"
@@ -85169,7 +85185,6 @@
     "s3_boundary_link_theorem_note",
     "s3_mass_matrix_no_go_note",
     "s3_taste_cube_decomposition_note",
-    "same_family_3d_closure_note",
     "scalar_3plus1_temporal_ratio_note",
     "scalar_kg_rerun_note_2026-04-10",
     "scalar_selector_cycle13_meta_closure_status_note_2026-04-19",
@@ -85420,10 +85435,10 @@
       "open_gate": 126,
       "positive_theorem": 589
     },
-    "edge_count": 9739,
+    "edge_count": 9742,
     "leaf_count": 793,
     "node_count": 2548,
-    "root_count": 852,
+    "root_count": 851,
     "runners_with_path": 2123
   }
 }

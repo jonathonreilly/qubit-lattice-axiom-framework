@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1193 |
+| unaudited | 1194 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 828 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1422 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -998,7 +998,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -10922,24 +10921,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows from the retained Cl(3,0) Pauli realization, omega = iI, permutation parity, and the elementary fact that complex-linear unitary conjugation fixes scalar iI. The note explicitly excludes the downstream physical premise that generation-sector symmetries must be unitary.
 - **rationale:** The runner genuinely computes the Pauli matrix identities, permutation signs, the explicit 3-cycle unitary, and the no-unitary contradiction for transpositions; it does not import fitted values, observational comparators, or hidden helper code. The load-bearing content is a class A algebraic closure over one retained upstream Cl(3,0) authority plus standard finite linear algebra. Because the packet has zero external comparator checks and reduces to a single retained parent claim with standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
-- **auditor confidence:** high
-
-### `same_family_3d_closure_note`
-
-- **Note:** [`SAME_FAMILY_3D_CLOSURE_NOTE.md`](../../docs/SAME_FAMILY_3D_CLOSURE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the restricted packet's claim that the note and runner expose a bounded replay/aggregation of a frozen same-family 3D closure card, not a live recomputation of the closure observables.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-same_family_3d_closure_n-043`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The wrapper print-aggregates a frozen 10-row same-family closure card from retained cache excerpts and hardcoded frozen-card values, while rows 8-9 at L=8 and L=10 are narrowed to queued follow-up.  _(class `B`)_
-- **chain closes:** False — The runner source prints hardcoded constants and does not call the included computational routines, and the packet omits the helper source for the imported lattice harness. Rows 2, 6, 7 and L=8/L=10 parts of rows 8-9 lack retained same-slice source certificates in the restricted packet.
-- **rationale:** The source note is explicit that the wrapper is replay-only and does not recompute the load-bearing observables. The inlined cache excerpts support only a restricted subset of rows, while other frozen-card values are carried as constants and rows 8-9 at L=8 and L=10 are explicitly queued follow-up. Because the primary runner's executed path prints constants rather than deriving them, the restricted packet cannot retain the closure card as an independently audited theorem.
-- **open / conditional deps cited:**
-  - `logs/2026-04-04-valley-linear-same-harness-compare.txt`
-  - `logs/2026-04-04-valley-linear-asymptotic-bridge.txt`
-  - `logs/2026-04-04-valley-linear-wide-tail-replay.txt`
-  - `scripts/lattice_3d_valley_linear_card.py`
 - **auditor confidence:** high
 
 ### `scalar_3plus1_temporal_ratio_note`

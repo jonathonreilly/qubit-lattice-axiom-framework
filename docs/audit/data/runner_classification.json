@@ -19321,7 +19321,7 @@
       "runner": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py"
     },
     "same_family_3d_closure_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
@@ -54094,7 +54094,7 @@
       "exists": true
     },
     "scripts/same_family_3d_closure.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "same_family_3d_closure_note"
       ],

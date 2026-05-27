@@ -15,6 +15,9 @@ The claim should be able to survive a specialist referee who assumes the result 
 - stale numerical values relative to the runner;
 - matching the wrong observable;
 - runner PASS lines that check consistency after hard-coding the contested premise;
+- runner math that is internally self-consistent but uses the wrong sign,
+  factor, normalization, matrix ordering, objective, boundary condition, or
+  expected value;
 - algebraic decoration advertised as independent physics.
 
 The burden is on the note. If the closure is not explicit, do not infer it.
@@ -36,6 +39,20 @@ Symptoms: runner sets the target value or disputed bridge directly, then marks c
 Verdict usually: same as the note's actual failure, often `audited_conditional`, `audited_renaming`, or `audited_failed`.
 
 Repair target: runner must compute the load-bearing object from inputs and fail when the bridge is removed.
+
+### Runner Formula Error
+
+Symptoms: runner PASS output is reproducible, but the coded expression has the
+wrong sign, factor, normalization, matrix order, optimizer objective, boundary
+condition, unit convention, or expected value compared with the note or cited
+authorities.
+
+Verdict usually: `audited_failed` when the claim depends on that expression;
+`audited_conditional` with `runner_artifact_issue` only when the source claim
+may still be true but the artifact is not reliable enough to judge.
+
+Repair target: correct the formula, add an independent check that would have
+caught the error, refresh the runner/cache, and resubmit for audit.
 
 ### Misidentified Observable
 

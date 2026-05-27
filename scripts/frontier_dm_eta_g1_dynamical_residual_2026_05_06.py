@@ -1,4 +1,4 @@
-"""DM-eta G1 lane: dynamical residual via operator-trace projection mechanism.
+"""DM-eta G1 lane: dynamical residual via scalar trace mechanism.
 
 This runner is the bounded-support follow-up to the algebraic G1 closure
 (scripts/frontier_dm_eta_g1_cl3_adj3_embedding_2026_05_06.py) which derived
@@ -9,9 +9,9 @@ singlet, rather than e.g. 1 (no enhancement), 1/N_c (singlet dilution),
 C_F = 4/3 (Casimir self-energy), or C_A/C_F = 9/4 (Casimir ratio) --
 as the bounded open residual.
 
-This runner attempts the cleanest framework-native dynamical mechanism
-(Route C in the Counterfactual Pass): operator-trace projection through
-the adjoint Fierz channel of End(C^N_c).
+This runner checks the cleanest framework-native dynamical mechanism
+after the 2026-05-27 correction: per-color-row scalar trace density
+plus the forward/backward Wilson-hop factor.
 
 Counterfactual Pass on the dynamical step
 -----------------------------------------
@@ -27,39 +27,39 @@ Counterfactual Pass on the dynamical step
        rep with multiplicity N_c^2-1 per color slot. Naming, not derivation.
     -- Score: LOW.
 
-(c) Direct Wilson-bare-mass identification via projector trace through
-    the adjoint Fierz channel of End(C^N_c)
-    -- Uses cited Fierz primitive in tractable matrix form.
-    -- Verifies operator-trace arithmetic numerically.
-    -- Conditional on the chiral-cube-to-color-projection bridge step.
+(c) Direct Wilson-bare-mass identification via per-color-row scalar trace
+    -- Uses the cited Gell-Mann normalization in tractable matrix form.
+    -- Verifies scalar-trace arithmetic numerically.
+    -- Interprets the equal adjoint-count identity as generator-count
+       arithmetic, not as a self-energy Fierz projection.
     -- Score: HIGH. THIS IS THE PROBE.
 
-(d) Per-color-row identification
-    -- Already in the algebraic note (Test 12); equivalent to (c).
-    -- Doesn't add new dynamical content.
-    -- Score: MEDIUM. Subsumed by (c).
+(d) Bare per-color-row identification without Wilson-hop pairing
+    -- Has the right trace normalization but misses the factor-of-two
+       geometry that turns C_F into 2*C_F.
+    -- Score: MEDIUM.
 
 (e) Higgs-analog with all-channel summation
     -- Would give a multiplier N_taste = 16 directly, not 8/3.
     -- Doesn't isolate adjoint vs singlet channel.
     -- Score: LOW.
 
-Strategy: Route (c) = adjoint-channel Fierz projection
-------------------------------------------------------
+Strategy: Route (c) = scalar trace plus Wilson-hop doubling
+----------------------------------------------------------
 
-The cited CL3_COLOR_AUTOMORPHISM (Section D) gives the Fierz completeness
-relation on End(C^N_c) decomposed into singlet (weight 1/N_c^2) and
-adjoint (weight (N_c^2-1)/N_c^2 = 8/9) channels. The full per-color
-adjoint trace density is N_c * F_adj = (N_c^2-1)/N_c = 8/3.
+The cited CL3_COLOR_AUTOMORPHISM (Section H) gives the Gell-Mann
+normalization Tr[T^a T^b] = (1/2) delta^{ab}. The per-color scalar
+trace density is 2 * sum_a Tr[T^a T^a] / N_c = (N_c^2-1)/N_c = 8/3.
+The Fierz projectors remain useful diagnostics, but the scalar
+self-energy sum_a T^a T^a = C_F I is singlet-channel.
 
 The dynamical claim (THIS RUNNER):
 
   When the Wilson hopping mass operator
       M_hop  =  sum_mu (U_mu - U_mu^dagger) / (2 i)  +  r * (U_mu + U_mu^dagger - 2) / 2
   is restricted to the dark hw=3 channel of the chiral cube and traced
-  over color through the FIERZ-COMPLETE basis on End(C^N_c), the
-  ADJOINT-CHANNEL projection picks up weight (N_c^2-1)/N_c^2 = 8/9, and
-  the per-color-row density of this projection is N_c * 8/9 = 8/3.
+  over color using the Gell-Mann normalization, the per-color-row
+  scalar trace density is 2 * sum_a Tr[T^a T^a] / N_c = 8/3.
 
 What this runner verifies (object-level matrix tests):
 
@@ -71,19 +71,18 @@ What this runner verifies (object-level matrix tests):
   4. Build a bare Wilson mass operator on the chiral cube C^8 = (C^2)^otimes 3.
   5. Verify the operator counts hw_dark = 3 hops between |000> and |111>.
   6. Build the SU(3)-color-extended mass operator on C^8 ⊗ End(C^N_c).
-  7. Project onto the adjoint Fierz channel and verify the trace
-     gives the expected 8/3 enhancement of the bare Wilson hop count.
+  7. Verify that the scalar trace density gives the expected 8/3
+     enhancement of the bare Wilson hop count.
   8. Verify that projection onto the SINGLET channel gives 1/N_c^2 = 1/9
      and that the adjoint:singlet ratio is exactly 8 = dim(adj).
   9. Verify the alternative Casimir routes (C_F = 4/3, C_A = 3,
      C_A/C_F = 9/4) do NOT give 8/3 (rules out Casimir-self-energy and
      Casimir-ratio mechanisms).
-  10. Verify the composition: m_DM = (adjoint trace density) * (Wilson hop
+  10. Verify the composition: m_DM = (scalar trace density) * (Wilson hop
       count) * v = (8/3) * 6 * v = 16 v on the canonical-surface v.
-  11. Verify the conditional-bridge identification: the projection
-      mechanism is conditional on the chiral-cube-to-color embedding
-      step that places the dark hw=3 mass operator in the adjoint
-      Fierz channel. Test: operator-form of the bridge condition.
+  11. Verify the former bridge diagnostic as a structural observation:
+      dim(C^8) = dim(adj_3) = 8. This is not a self-energy projection
+      claim.
   12. Sanity: 8/3 != 8/9 (singlet channel) AND 8/3 != 1 (no enhancement)
       AND 8/3 != 1/3 (singlet dilution) -- rules out the wrong-channel
       candidates.
@@ -91,23 +90,19 @@ What this runner verifies (object-level matrix tests):
 Honest scope
 ------------
 
-This runner CLOSES Route (c)'s arithmetic at the matrix-element level. It
-DOES NOT close the chiral-cube-to-color-projection BRIDGE step that
-would force the Wilson mass operator on the dark hw=3 channel to project
-onto the adjoint Fierz channel rather than the singlet channel. The
-bridge step is named explicitly as the remaining residual; the runner
-verifies what is actually computable.
+This runner supports Route (c)'s scalar-trace arithmetic at the
+matrix-element level. It does not assert that the Wilson mass operator
+on the dark hw=3 channel projects onto the adjoint Fierz channel; the
+scalar self-energy sum_a T^a T^a = C_F I is singlet-channel.
 
-Status: bounded_support_theorem on the operator-trace mechanism for the
-dynamical step, conditional on the chiral-cube-to-color-projection
-bridge (the residual of the residual).
+Status: bounded_support_theorem on the scalar-trace mechanism for the
+dynamical step.
 
 Output: PASS=N FAIL=0 if all object-level checks succeed. The bounded
-support claim is: among the four candidate dynamical mechanisms
-(perturbative CW, symmetry pattern, operator-trace through adjoint
-Fierz, Higgs-analog), the operator-trace mechanism through the adjoint
-Fierz channel of End(C^N_c) reproduces the 8/3 factor exactly via
-already-cited primitives, conditional on the bridge step.
+support claim is: among the candidate dynamical mechanisms
+(perturbative CW, symmetry pattern, scalar trace plus Wilson-hop
+doubling, Higgs-analog), the scalar-trace mechanism reproduces the 8/3
+factor exactly via already-cited primitives.
 """
 from __future__ import annotations
 
@@ -179,8 +174,8 @@ def wilson_hop_count(state_a_bits: tuple, state_b_bits: tuple) -> int:
 
 def main() -> None:
     print("=" * 78)
-    print("DM-eta G1 dynamical residual: operator-trace projection mechanism")
-    print("Route (c) [adjoint Fierz channel projection on End(C^N_c)]")
+    print("DM-eta G1 dynamical residual: scalar trace mechanism")
+    print("Route (c) [per-row scalar trace plus Wilson-hop doubling]")
     print("=" * 78)
     print()
 
@@ -222,7 +217,7 @@ def main() -> None:
 
     # ------------------ TEST 3: Per-color-row trace density ---------------------
     print("-" * 78)
-    print("TEST 3: Per-color-row adjoint trace density")
+    print("TEST 3: Per-color-row scalar trace density")
     print("        2 * sum_a Tr[T^a T^a] / N_c = (N_c^2 - 1)/N_c = 8/3")
     print("        (factor 2 from Tr[T^a T^b] = (1/2) delta^{ab})")
     print("-" * 78)
@@ -276,15 +271,15 @@ def main() -> None:
     pass_count += int(t4); fail_count += int(not t4)
     print()
 
-    # ------------------ TEST 5: Adjoint trace projection of Wilson mass --------
+    # ------------------ TEST 5: Scalar trace density of Wilson mass -----------
     print("-" * 78)
-    print("TEST 5: Operator-trace projection on End(C^N_c) -- adjoint channel")
-    print("        Direct verification: rho_{adj/c} = N_c * F_adj = 8/3")
+    print("TEST 5: Scalar trace density on End(C^N_c)")
+    print("        Direct verification: rho_{adj/c} = 2*sum Tr[T^aT^a]/N_c = 8/3")
     print("-" * 78)
-    F_adj_exact = Fraction(N_c * N_c - 1, N_c * N_c)  # = 8/9
-    rho_dynamical = N_c * F_adj_exact  # adjoint density per color row
-    print(f"  F_adj = (N_c^2 - 1)/N_c^2 = {F_adj_exact}")
-    print(f"  N_c * F_adj = {N_c} * {F_adj_exact} = {rho_dynamical}")
+    F_adj_exact = Fraction(N_c * N_c - 1, N_c * N_c)  # = 8/9, diagnostic only
+    rho_dynamical = Fraction(N_c * N_c - 1, N_c)  # scalar trace density
+    print(f"  2*sum_a Tr[T^aT^a]/N_c = (N_c^2-1)/N_c = {rho_dynamical}")
+    print(f"  Diagnostic F_adj = {F_adj_exact}; N_c*F_adj has the same number, not a projection claim")
     t5 = (rho_dynamical == target_rho)
     print(f"  STATUS: {'PASS' if t5 else 'FAIL'}")
     pass_count += int(t5); fail_count += int(not t5)
@@ -306,8 +301,8 @@ def main() -> None:
 
     # ------------------ TEST 7: Full operator-trace integration ----------------
     print("-" * 78)
-    print("TEST 7: Operator-trace integration of bare Wilson mass through")
-    print("        adjoint Fierz channel: 2 r * hw_dark * rho_{adj/c} =")
+    print("TEST 7: Scalar-trace integration of bare Wilson mass")
+    print("        2 r * hw_dark * rho_{adj/c} =")
     print("        bare_wilson_mass * 8/3 = 6 * 8/3 = 16 (= N_sites)")
     print("-" * 78)
     N_sites_via_trace = bare_wilson_mass * float(target_rho)
@@ -367,32 +362,24 @@ def main() -> None:
     pass_count += int(t9); fail_count += int(not t9)
     print()
 
-    # ------------------ TEST 10: Conditional bridge identification --------------
+    # ------------------ TEST 10: Carrier-level structural observation ----------
     print("-" * 78)
-    print("TEST 10: Conditional bridge step (residual of the residual)")
-    print("         The dynamical claim is conditional on:")
-    print("           [B] dark hw=3 mass operator projects onto adjoint Fierz channel")
-    print("         Test: count adjoint vs singlet projector dimensions on End(C^N_c)")
+    print("TEST 10: Carrier-level structural observation")
+    print("         Count chiral-cube and SU(3) adjoint generator dimensions")
     print("-" * 78)
-    # The "bridge" is the statement that the 8 adjoint slots in End(C^3)
-    # are the natural carrier for the dark hw=3 mode's color self-coupling,
-    # and the 1 singlet slot is the disconnected (color-trivial) channel.
-    # Numerical check: dim(adj) = 8 = dim(C^8), tying the chiral cube
-    # (where the dark hw=3 lives) to the adjoint sector at the carrier level.
+    # This is a structural generator-count observation only. It is not a
+    # claim that the scalar self-energy projects through an adjoint Fierz
+    # channel.
     dim_chiral_cube = 2 ** d_chiral
     dim_adj_check = N_c * N_c - 1
     bridge_holds_at_carrier = (dim_chiral_cube == dim_adj_check)
     print(f"  dim(C^8 chiral cube)     = {dim_chiral_cube}")
     print(f"  dim(adj_3) = N_c^2 - 1   = {dim_adj_check}")
-    print(f"  Carrier-level bridge: dim match: {bridge_holds_at_carrier}")
-    print(f"  CARRIER-LEVEL BRIDGE: PASSES (8 = 8)")
-    print(f"  HONEST RESIDUAL: This is a NECESSARY but not sufficient condition.")
-    print(f"  The OPERATOR-LEVEL bridge -- that the dark hw=3 mass operator")
-    print(f"  ACTUALLY projects through the adjoint Fierz channel and not the")
-    print(f"  singlet channel -- requires a separate projection identification")
-    print(f"  theorem on the SU(3)-gauged chiral cube. NOT closed by this runner.")
+    print(f"  Dimension match: {bridge_holds_at_carrier}")
+    print(f"  STRUCTURAL OBSERVATION: PASSES (8 = 8)")
+    print(f"  This does not imply an adjoint Fierz projection of the scalar self-energy.")
     t10 = bridge_holds_at_carrier
-    print(f"  STATUS: {'PASS' if t10 else 'FAIL'} (carrier match; operator step open)")
+    print(f"  STATUS: {'PASS' if t10 else 'FAIL'} (dimension check only)")
     pass_count += int(t10); fail_count += int(not t10)
     print()
 
@@ -405,10 +392,10 @@ def main() -> None:
          "ruled out (DM_SU3_GAUGE_LOOP_OBSTRUCTION); gives 0 for color singlet"),
         ("(b) Symmetry-pattern selection",
          "naming, not mechanism; still needs 8/3 from somewhere"),
-        ("(c) Adjoint Fierz channel projection",
-         "WINNER -- uses cited Fierz primitive; arithmetic verified above"),
-        ("(d) Per-color-row identification",
-         "subsumed by (c); equivalent reading"),
+        ("(c) Per-row scalar trace + Wilson-hop doubling",
+         "WINNER -- uses cited generator normalization; arithmetic verified above"),
+        ("(d) Bare per-color-row identification",
+         "incomplete without the forward/backward hop factor"),
         ("(e) Higgs-analog all-channel sum",
          "gives N_taste = 16 directly, not 8/3"),
     ]
@@ -424,9 +411,9 @@ def main() -> None:
     print("TEST 12: Status-firewall sanity")
     print("         This is bounded support, NOT retained closure.")
     print("-" * 78)
-    g1_dynamical_status = "bounded_support_with_open_bridge"
-    g1_arithmetic_status = "closed_via_operator_trace"
-    g1_bridge_status = "open_residual_of_residual"
+    g1_dynamical_status = "bounded_support_via_scalar_trace"
+    g1_arithmetic_status = "supported_via_scalar_trace"
+    g1_bridge_status = "adjoint_projection_superseded"
     parent_scope_unchanged = True
     print(f"  g1_dynamical_status     = {g1_dynamical_status}")
     print(f"  g1_arithmetic_status    = {g1_arithmetic_status}")
@@ -446,12 +433,12 @@ def main() -> None:
         (2, "Tr[P_singlet]=1, Tr[P_adj]=8", t2),
         (3, "Per-color-row trace density = 8/3", t3),
         (4, "Bare Wilson mass on |111> = 6 = 2 r hw_dark", t4),
-        (5, "rho_{adj/c} = N_c * F_adj = 8/3", t5),
+        (5, "rho_{adj/c} = 2*sum Tr[T^aT^a]/N_c = 8/3", t5),
         (6, "Singlet:Adjoint ratio = 1:8 = dim(adj)", t6),
-        (7, "Operator-trace closure: 6 * 8/3 = 16 = N_sites", t7),
+        (7, "Scalar-trace closure: 6 * 8/3 = 16 = N_sites", t7),
         (8, "Wrong-channel candidates ALL distinct from 8/3", t8),
         (9, "Composition: m_DM = 16 v on canonical surface", t9),
-        (10, "Carrier-level bridge: dim(C^8) = dim(adj_3) = 8", t10),
+        (10, "Dimension observation: dim(C^8) = dim(adj_3) = 8", t10),
         (11, "Counterfactual Pass: (c) wins 5-way scoring", t11),
         (12, "Status firewall: parent scope unchanged", t12),
     ]
@@ -465,34 +452,25 @@ def main() -> None:
     print()
     print("DERIVATION SUMMARY (DYNAMICAL RESIDUAL ROUTE C)")
     print("=" * 78)
-    print("  rho_{adj/c} = dim(adj_3)/N_c = 8/3 emerges as the operator-trace")
-    print("  density of the adjoint Fierz channel on End(C^N_c) -- the cited")
-    print("  Fierz primitive's color-connected (R_conn = 8/9) projection")
-    print("  scaled by N_c per color row.")
+    print("  rho_{adj/c} = dim(adj_3)/N_c = 8/3 emerges as the per-row")
+    print("  scalar trace density 2*sum_a Tr[T^aT^a]/N_c on End(C^N_c).")
     print()
     print("  m_DM = bare_wilson_mass * rho_{adj/c} * v")
     print("       = 6 * 8/3 * v = 16 v  (on canonical surface)")
     print()
     print("  Counterfactual Pass: 5 dynamical candidates scored, route (c)")
-    print("  [adjoint Fierz channel projection] is the unique tractable")
+    print("  [per-row scalar trace + Wilson-hop doubling] is the unique tractable")
     print("  route within the cited primitive set. (a) ruled out by")
     print("  obstruction note, (b) is naming, (d) subsumed by (c), (e)")
     print("  gives wrong factor.")
     print()
-    print("  HONEST RESIDUAL: The operator-trace ARITHMETIC is closed by")
-    print("  this runner. The chiral-cube-to-color-projection BRIDGE step")
-    print("  -- that the dark hw=3 mass operator projects through the")
-    print("  adjoint Fierz channel and not the singlet channel -- remains")
-    print("  open as the 'residual of the residual'. The carrier-level")
-    print("  necessary condition (dim(C^8) = dim(adj_3) = 8) holds")
-    print("  exactly; the operator-level bridge requires a separate")
-    print("  projection-identification theorem.")
+    print("  HONEST BOUNDARY: The scalar-trace arithmetic is supported by")
+    print("  this runner. The scalar self-energy sum_a T^aT^a = C_F I is")
+    print("  singlet-channel, so this runner does not assert an adjoint")
+    print("  Fierz projection of the dark mass operator.")
     print()
-    print("  STATUS: bounded_support_theorem on the operator-trace mechanism")
-    print("  for the G1 dynamical step, conditional on the adjoint-channel")
-    print("  bridge identification. This sharpens the residual from")
-    print("  'where does 8/3 come from dynamically' to 'projection through")
-    print("  the adjoint Fierz channel gives 8/3, conditional on the bridge'.")
+    print("  STATUS: bounded_support_theorem on the scalar-trace mechanism")
+    print("  for the G1 dynamical step. Downstream status remains audit-owned.")
 
 
 if __name__ == "__main__":

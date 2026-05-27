@@ -1,16 +1,13 @@
-"""DM-eta G1 lane: operator-level adjoint-channel bridge proof.
+"""DM-eta G1 lane: carrier and scalar-trace support.
 
-This runner is the closure attempt for the "residual of the residual" flagged
-by the V1 dynamical-residual support theorem
-(scripts/frontier_dm_eta_g1_dynamical_residual_2026_05_06.py): namely, the
-operator-level identification that the dark hw=3 mass operator on the
-SU(3)-gauged chiral cube projects through the *adjoint* Fierz channel of
-End(C^N_c) and not the *singlet* channel.
+This runner preserves the carrier-support checks from the former
+operator-level adjoint-channel bridge attempt. After the 2026-05-27
+correction, it is not a proof that the dark hw=3 scalar self-energy
+projects through the adjoint Fierz channel. The scalar self-energy
+sum_a T^a T^a = C_F I is singlet-channel.
 
-The carrier-level necessary condition `dim(C^8) = dim(adj_3) = 8` is not by
-itself sufficient. This runner attempts the full operator-level bridge by
-instantiating the cited (base x fiber) decomposition of CL3_COLOR_AUTOMORPHISM
-on the explicit Cl(3) chiral cube and showing:
+This runner instantiates the cited (base x fiber) decomposition of
+CL3_COLOR_AUTOMORPHISM on the explicit Cl(3) chiral cube and checks:
 
    (1) The dark state |111> sits in the 3D symmetric-base subspace with
        hypercharge Y = +1/3 -- the *quark-like color triplet*, not the
@@ -21,25 +18,23 @@ on the explicit Cl(3) chiral cube and showing:
        lepton singlet (Y=-1) block. The lepton block carries the trivial
        SU(3)_c representation; the dark state carries the fundamental.
 
-   (3) Selection-rule argument: the singlet Fierz channel projector on
-       End(C^N_c) maps any matrix M to (Tr M / N_c) I -- the SU(3)_c-trivial
-       (color-trace) subspace. By (2), this trivial subspace is the
-       carrier-level lepton-singlet block (Y=-1) which has zero overlap
-       with the dark state |111> (Y=+1/3).
+   (3) The Fierz singlet projector maps any matrix M to (Tr M / N_c) I,
+       while the adjoint projector preserves traceless generators T^a.
+       Therefore traceless test matrices are adjoint-channel, but the
+       scalar one-loop self-energy C_F I is singlet-channel.
 
-   (4) Therefore the dark hw=3 mass operator's gauge-mediated propagator
-       projects through the *adjoint* Fierz channel only, with per-color-row
-       density 2 * sum_a Tr[T^a T^a]/N_c = (N_c^2-1)/N_c = 8/3 = 2*C_F.
+   (4) The per-color-row scalar trace density is
+       2 * sum_a Tr[T^a T^a]/N_c = (N_c^2-1)/N_c = 8/3 = 2*C_F.
 
    (5) Composition with the cited bare Wilson kinetic mass `2 r * hw_dark = 6 v`
        gives `m_DM = (8/3) * 6 v = 16 v = N_sites * v` exactly.
 
-The bridge mechanism is a *carrier-orthogonality + Fierz selection* identity,
-not a new dynamical mechanism: it follows from the cited (base x fiber)
+The corrected mechanism is carrier support plus scalar-trace arithmetic,
+not a new dynamical mechanism. It follows from the cited (base x fiber)
 decomposition (CL3_COLOR_AUTOMORPHISM Section B), the cited Y eigenvalue
-spectrum (CL3_COLOR_AUTOMORPHISM Section F), and the cited Fierz
-completeness (CL3_COLOR_AUTOMORPHISM Section D). No new axioms are
-admitted.
+spectrum (CL3_COLOR_AUTOMORPHISM Section F), the cited Fierz completeness
+(CL3_COLOR_AUTOMORPHISM Section D), and the Gell-Mann normalization. No
+new axioms are admitted.
 
 Counterfactual Pass on the bridge mechanism
 --------------------------------------------
@@ -53,15 +48,15 @@ mechanisms were enumerated and scored before this lane was pursued:
 
 (b2) Cl(3) -> SU(3) embedding via base/fiber decomposition
      -- The dark |111> lies in 3D symmetric base (color triplet), NOT
-        in 1D antisymmetric base (lepton singlet). Selection rule by
-        (sym/antisym) base orthogonality forces adjoint channel. Score:
-        HIGH. THIS IS THE PROBE.
+        in 1D antisymmetric base (lepton singlet). This is carrier
+        support, not an adjoint-channel selection proof. Score: HIGH.
+        THIS IS THE PROBE.
 
 (b3) Wilson-mass commutativity with adjoint action
      -- Generic statement; subsumed by (b2) at the carrier-orthogonality
         level. Score: MEDIUM.
 
-Strategy: Route (b2) -- carrier-orthogonality + Fierz selection.
+Strategy: Route (b2) -- carrier support + scalar trace.
 
 What this runner verifies (object-level matrix tests):
 
@@ -74,9 +69,8 @@ What this runner verifies (object-level matrix tests):
   5. Verify the dark |111> state is orthogonal to the lepton singlet
      (1D antisymmetric base block, Y = -1).
   6. Verify Fierz completeness on End(C^N_c): P_singlet + P_adj = I.
-  7. Verify the BRIDGE: carrier-orthogonality forces the dark mass
-     operator to project entirely through the adjoint Fierz channel.
-  8. Verify the per-color-row adjoint density 2 * sum_a Tr[T^a T^a]/N_c =
+  7. Verify carrier orthogonality and the diagnostic Fierz weights.
+  8. Verify the per-color-row scalar trace density 2 * sum_a Tr[T^a T^a]/N_c =
      (N_c^2-1)/N_c = 8/3 exactly.
   9. Verify the wrong-channel candidates are all distinct from 8/3.
   10. Verify the composition (8/3) * 6 v = 16 v = N_sites * v on canonical
@@ -87,16 +81,17 @@ What this runner verifies (object-level matrix tests):
        on the dark state, identifying the singlet Fierz channel with the
        SU(3)_c-trivial subspace = lepton-block carrier.
   11c. Verify the Fierz singlet projector annihilates traceless matrices
-       (T^a) and preserves the identity, confirming the gauge-mediated
-       propagator (T^a (x) T^a) lives entirely in the adjoint Fierz channel.
+       (T^a) and preserves the identity, confirming that traceless
+       matrices are adjoint-channel while identity/self-energy matrices
+       are singlet-channel.
   12. Counterfactual Pass scoring (informational, b2 wins).
-  13. Verify the bridge step extends to G1 closure.
+  13. Verify the parent scope remains unchanged and audit-owned.
 
 Honest scope
 ------------
 
-This runner CLOSES the operator-level adjoint-channel bridge by a
-carrier-orthogonality + Fierz selection argument. The mechanism uses
+This runner does not close an operator-level adjoint-channel bridge. It
+preserves carrier support and scalar-trace arithmetic. The mechanism uses
 ONLY cited primitives:
   - (base x fiber) decomposition of CL3_COLOR_AUTOMORPHISM Section B;
   - SU(3)_c on 3D symmetric base of CL3_COLOR_AUTOMORPHISM Section B and H;
@@ -110,9 +105,8 @@ ONLY cited primitives:
 
 No new axioms; no new dynamical mechanisms; no new combinatorial inputs.
 
-If all 15 tests pass, the bridge is closed and the DM-eta G1 lane upgrades
-from "operator-trace arithmetic closed; operator-level bridge open" to
-"operator-level bridge closed via carrier-orthogonality + Fierz selection".
+If all 15 tests pass, the carrier/scalar-trace support is internally
+consistent. The independent audit lane owns any downstream status change.
 
 Output: PASS=N FAIL=0 if all object-level checks succeed.
 """
@@ -190,8 +184,8 @@ def fierz_projectors(N_c: int) -> tuple[np.ndarray, np.ndarray]:
 
 def main() -> None:
     print("=" * 78)
-    print("DM-eta G1 lane: operator-level adjoint-channel bridge proof")
-    print("Carrier-orthogonality + Fierz selection mechanism")
+    print("DM-eta G1 lane: carrier and scalar-trace support")
+    print("Carrier orthogonality + Fierz diagnostics")
     print("=" * 78)
     print()
 
@@ -293,7 +287,7 @@ def main() -> None:
     # ------------------ TEST 5: Lepton-singlet block is orthogonal to dark -----
     print("-" * 78)
     print("TEST 5: Lepton-singlet block (P_antisymm, Y=-1) is ORTHOGONAL to dark |111>")
-    print("        This is the carrier-level orthogonality used in the bridge proof.")
+    print("        This is carrier-level support, not an adjoint bridge proof.")
     print("-" * 78)
     lepton_vecs = []
     for b3 in (0, 1):
@@ -341,32 +335,32 @@ def main() -> None:
     pass_count += int(t6); fail_count += int(not t6)
     print()
 
-    # ------------------ TEST 7: BRIDGE selection rule from carrier orthogonality -
+    # ------------------ TEST 7: Carrier support and Fierz diagnostics ----------
     print("-" * 78)
-    print("TEST 7: BRIDGE SELECTION RULE")
-    print("        (Carrier orthogonality + Fierz channel <-> SU(3)_c rep)")
+    print("TEST 7: Carrier support and Fierz diagnostics")
+    print("        (Carrier orthogonality + Fierz channel bookkeeping)")
     print("        The dark |111> lives in the color triplet (Y=+1/3); the")
     print("        singlet Fierz channel = identity matrix in End(C^N_c) = SU(3)_c-")
     print("        trivial subspace = carrier of the lepton block (Y=-1).")
-    print("        By <111|P_lepton|111> = 0, the dark mass operator's color")
-    print("        projection through the singlet channel VANISHES.")
-    print("        Only the adjoint Fierz channel survives, density 8/3.")
+    print("        The dark state is carrier-orthogonal to the lepton block.")
+    print("        The density 8/3 is used as scalar trace arithmetic, not")
+    print("        as an adjoint projection of the scalar self-energy.")
     print("-" * 78)
     rho_singlet_per_color = float(F_sing) * N_c   # 1/9 * 3 = 1/3
     rho_adjoint_per_color = float(F_adj) * N_c    # 8/9 * 3 = 8/3
     print(f"  Singlet per-color density = N_c * F_singlet = {rho_singlet_per_color:.6f}")
-    print(f"  Adjoint per-color density = N_c * F_adjoint = {rho_adjoint_per_color:.6f}")
+    print(f"  Generator-count density = N_c * F_adjoint = {rho_adjoint_per_color:.6f}")
     bridge_match = abs(rho_adjoint_per_color - float(target_rho)) < 1e-12
-    print(f"  Adjoint density matches target 8/3: {bridge_match}")
+    print(f"  Generator-count density matches target 8/3: {bridge_match}")
     print(f"  Carrier-level singlet/dark orthogonality: PASS (per Test 5)")
     t7 = bridge_match
     print(f"  STATUS: {'PASS' if t7 else 'FAIL'}")
     pass_count += int(t7); fail_count += int(not t7)
     print()
 
-    # ------------------ TEST 8: Per-color-row adjoint trace density 8/3 --------
+    # ------------------ TEST 8: Per-color-row scalar trace density 8/3 --------
     print("-" * 78)
-    print("TEST 8: Direct verification of per-color-row adjoint trace density")
+    print("TEST 8: Direct verification of per-color-row scalar trace density")
     print("        2 * sum_a Tr[T^a T^a] / N_c = (N_c^2-1)/N_c = 8/3")
     print("        (factor 2 from Tr[T^a T^b] = (1/2) delta^{ab})")
     print("-" * 78)
@@ -486,9 +480,9 @@ def main() -> None:
     # ------------------ TEST 11c: Fierz singlet annihilates traceless ops ------
     print("-" * 78)
     print("TEST 11c: Singlet Fierz projector annihilates traceless matrices (T^a)")
-    print("          Adjoint Fierz projector preserves them.")
-    print("          -> The gauge-mediated propagator (sum_a T^a (x) T^a) lives")
-    print("             entirely in the adjoint Fierz channel.")
+    print("          Adjoint Fierz projector preserves them; identity is singlet.")
+    print("          -> Traceless test matrices are adjoint-channel, while C_F I")
+    print("             self-energy matrices are singlet-channel.")
     print("-" * 78)
     err_sing_on_T = 0.0
     for a in range(8):
@@ -519,13 +513,13 @@ def main() -> None:
 
     # ------------------ TEST 12: Counterfactual Pass scoring (informational) ----
     print("-" * 78)
-    print("TEST 12: Counterfactual Pass on bridge mechanisms (3 candidates)")
+    print("TEST 12: Counterfactual Pass on carrier mechanisms (3 candidates)")
     print("-" * 78)
     routes = [
         ("(b1) Color-automorphism Z_3 cyclic averaging",
          "naming, not derivation; Z_3 doesn't pick adjoint vs singlet"),
-        ("(b2) Carrier orthogonality + Fierz selection",
-         "WINNER: dark |111> in color triplet, lepton singlet orthogonal,"),
+        ("(b2) Carrier orthogonality + scalar trace",
+         "WINNER: dark |111> in color triplet, lepton singlet orthogonal"),
         ("(b3) Wilson-mass commutativity argument",
          "subsumed by (b2); same mechanism on the carrier level"),
     ]
@@ -533,19 +527,19 @@ def main() -> None:
         print(f"  {name}:")
         print(f"    {verdict}")
     t12 = True
-    print(f"  STATUS: PASS (informational; (b2) wins)")
+    print(f"  STATUS: PASS (informational; (b2) supplies carrier support)")
     pass_count += int(t12); fail_count += int(not t12)
     print()
 
-    # ------------------ TEST 13: G1 bounded scope after bridge ------------------
+    # ------------------ TEST 13: G1 bounded scope after correction --------------
     print("-" * 78)
-    print("TEST 13: G1 bounded scope after bridge")
-    print("         g1_bridge_scope: carrier_orthogonality_fierz_selection")
-    print("         g1_arithmetic_status: closed_via_operator_trace (V1)")
+    print("TEST 13: G1 bounded scope after correction")
+    print("         g1_bridge_scope: adjoint_projection_superseded")
+    print("         g1_arithmetic_status: supported_via_scalar_trace")
     print("         g1_algebraic_status: closed_v1 (algebraic note)")
     print("         G1 dynamical step has bounded support via cited primitives")
     print("-" * 78)
-    g1_bridge_scope = "carrier_orthogonality_fierz_selection"
+    g1_bridge_scope = "adjoint_projection_superseded"
     g1_dynamical_scope = "bounded_support"
     parent_scope_unchanged = True
     print(f"  g1_bridge_scope      = {g1_bridge_scope}")
@@ -567,15 +561,15 @@ def main() -> None:
         (4, "Dark |111> in color triplet (Y=+1/3, P_symm=1)", t4),
         (5, "Lepton singlet block orthogonal to dark |111>", t5),
         (6, "Fierz channel decomposition: F_sing + F_adj = 1", t6),
-        (7, "BRIDGE: carrier orthogonality forces adjoint selection (8/3)", t7),
-        (8, "Per-color-row adjoint trace density = 8/3 (Gell-Mann)", t8),
+        (7, "Carrier support plus generator-count density = 8/3", t7),
+        (8, "Per-color-row scalar trace density = 8/3 (Gell-Mann)", t8),
         (9, "Wrong-channel candidates ALL distinct from 8/3", t9),
         (10, "Composition: m_DM = 6 * 8/3 * v = 16 v on canonical surface", t10),
         (11, "Carrier-orthogonality: <111|P_lepton|111> = 0", t11),
         (12, "SU(3)_c trivial on lepton, non-trivial on dark", t11b),
-        (13, "Singlet Fierz annihilates T^a (gauge-mediated -> adjoint only)", t11c),
-        (14, "Counterfactual Pass: (b2) wins 3-way scoring", t12),
-        (15, "G1 closure status upgraded: dynamical step closed", t13),
+        (13, "Fierz diagnostic: traceless adjoint, identity singlet", t11c),
+        (14, "Counterfactual Pass: (b2) supplies carrier support", t12),
+        (15, "G1 parent scope remains audit-owned", t13),
     ]
     for k, name, status in tests:
         marker = "PASS" if status else "FAIL"
@@ -585,7 +579,7 @@ def main() -> None:
     if fail_count > 0:
         raise SystemExit(1)
     print()
-    print("BRIDGE PROOF SUMMARY")
+    print("CARRIER SUPPORT SUMMARY")
     print("=" * 78)
     print("  The dark hw=3 state |111> on the Cl(3) chiral cube C^8 lives in the")
     print("  3D symmetric-base subspace (b1=b2=1 sym), tensored with b3=1 fiber.")
@@ -601,15 +595,16 @@ def main() -> None:
     print("  CL3_COLOR_AUTOMORPHISM B+H, SU(3)_c trivial = lepton-block carrier")
     print("  (verified Test 11b: T^a annihilates lepton vecs).")
     print()
-    print("  The singlet Fierz channel of the dark mass operator therefore")
-    print("  REQUIRES the lepton-block (Y=-1) carrier, which the dark |111>")
-    print("  state lacks. Singlet projection vanishes by carrier orthogonality.")
+    print("  Carrier orthogonality is preserved: the dark state has no lepton")
+    print("  block component. This does not imply that the scalar self-energy")
+    print("  projects through the adjoint Fierz channel.")
     print()
-    print("  Only the adjoint Fierz channel survives (Test 11c: P_sing^F")
-    print("  annihilates traceless T^a). Per-color-row density:")
+    print("  The Fierz diagnostic is narrow (Test 11c): P_sing^F annihilates")
+    print("  traceless T^a, while identity matrices are singlet. Per-row scalar")
+    print("  trace density:")
     print("      rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = (N_c^2-1)/N_c = 8/3.")
     print()
-    print("  This is a STRUCTURAL bridge -- not a new dynamical mechanism.")
+    print("  This is STRUCTURAL SUPPORT -- not a new dynamical mechanism.")
     print("  It uses only cited primitives: (base x fiber) decomposition")
     print("  (CL3_COLOR_AUTOMORPHISM B), Y eigenvalue spectrum (CL3_COLOR_AUTOMORPHISM F),")
     print("  SU(3)_c on sym base (CL3_COLOR_AUTOMORPHISM B+H), Fierz completeness")
@@ -620,9 +615,9 @@ def main() -> None:
     print("  Composition with bare Wilson 2 r * hw_dark = 6 v gives:")
     print("      m_DM = (8/3) * 6 v = 16 v = N_sites * v exactly.")
     print()
-    print("  STATUS: BOUNDED SUPPORT. The DM-eta G1 dynamical step now has")
-    print("  runner-backed operator-level support via cited primitives. The parent")
-    print("  DM-eta freezeout-bypass lane remains bounded by inherited inputs")
+    print("  STATUS: BOUNDED SUPPORT. The DM-eta G1 dynamical step has")
+    print("  runner-backed carrier/scalar-trace support via cited primitives.")
+    print("  The parent DM-eta freezeout-bypass lane remains bounded by inherited inputs")
     print("  (A0, x_F, Sommerfeld, alpha_X choice).")
 
 

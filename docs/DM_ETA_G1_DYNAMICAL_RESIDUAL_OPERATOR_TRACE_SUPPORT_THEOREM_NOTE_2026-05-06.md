@@ -1,12 +1,81 @@
 # DM-eta G1 Dynamical Residual: Operator-Trace Support Theorem (V1)
 
+## Audit-correction (2026-05-27)
+
+This note's framing of "operator-trace projection through the adjoint
+Fierz channel on `End(C^N_c)`" was identified as a narrative
+contradiction (the operator `sum_a T^a T^a = C_F I` is in fact in the
+SINGLET channel of `End(C^N_c)`, not the adjoint channel) and
+corrected by the 2026-05-27 G1 Fierz-channel narrative correction note.
+
+**What was wrong:** The Counterfactual Pass (Section 1) and the theorem
+statement (Section 2) frame route (c) as "adjoint Fierz channel
+projection" and derive `rho_{adj/c} = 8/3` as a Fierz-channel-density
+identity. The actual computation is a per-color-row scalar trace
+density, equivalent to `2 * C_F` where `C_F = (N^2-1)/(2N) = 4/3` is
+the textbook one-loop Casimir for a fundamental. The matrix
+`sum_a T^a T^a = C_F I` is proportional to identity, hence singlet
+channel of `End(C^N_c)`. The Fierz framing is incompatible with this.
+
+**What is corrected:** The route is relabeled "per-color-row scalar
+trace density + forward+backward Wilson-hop geometric doubling". The
+arithmetic identity `8/3 = (N_c^2 - 1)/N_c = 2 C_F` is preserved. The
+12 runner tests are unaffected.
+
+**What is preserved as structural content:**
+- The Fierz completeness identity `P_singlet + P_adj = I` on
+  `End(C^N_c)` is a correct textbook decomposition (Test 1). It is
+  used in the runner to verify projector properties; it is not the
+  mechanism through which 8/3 emerges.
+- The trace counts `Tr[P_singlet] = 1`, `Tr[P_adj] = N_c^2 - 1 = 8`
+  (Test 2) are correct (dimensions of the singlet and adjoint
+  subspaces of `End(C^N_c)`).
+- The per-color-row scalar trace density `2 * sum_a Tr[T^a T^a] / N_c
+  = (N_c^2 - 1)/N_c = 8/3` (Test 3). This is a per-row trace of the
+  *scalar* `Tr[sum_a T^a T^a] = Tr[C_F I] = C_F N_c`, multiplied by 2
+  (forward+backward Wilson hops) and divided by N_c (per-row average).
+  Note: this is a scalar trace operation, not a Fierz channel
+  projection of the operator.
+- The bare Wilson mass `m_S3_bare = 2 r * hw_dark = 6` lattice units
+  for the dark `hw=3` singlet (Test 4).
+- The composition `m_DM = 6 * (8/3) * v = 16 v = N_sites * v` (Tests
+  5, 7, 9).
+- The six wrong-channel ruleouts (Test 8).
+- The carrier-level identity `dim(C^8) = dim(adj_3) = 8` (Test 10) as
+  a structural observation: dim(adj) = N_c^2 - 1 = 8 is the count of
+  Gell-Mann generators, which equals the chiral cube dimension. This
+  algebraic equality remains; it is no longer framed as a "necessary
+  condition for an adjoint-channel bridge".
+
+**What is removed as load-bearing narrative:**
+- The Counterfactual Pass route (c) label "Adjoint Fierz channel
+  projection" (the mechanism is per-color-row trace + geometric
+  doubling, not Fierz channel projection).
+- The "residual-of-the-residual" bridge step framed as "the dark hw=3
+  Wilson mass operator on the SU(3)-gauged chiral cube projects
+  through the adjoint Fierz channel and not the singlet channel".
+  After this audit-correction, the bridge step is replaced by the
+  Casimir + Wilson-hop doubling mechanism (which is closed by the
+  Coleman-Weinberg note's runner Tests 4-7, 11, 13).
+
+**Reading instruction:** When the prose below refers to "adjoint Fierz
+channel projection" or "per-color-row adjoint Fierz density", read these
+as referring to the structurally correct "Casimir + forward+backward
+Wilson-hop geometric doubling" mechanism: `8/3 = 2 * C_F = (N^2-1)/N`.
+The arithmetic identity is correct; the channel attribution in the
+narrative is corrected by this audit-correction note.
+
+---
+
 **Date:** 2026-05-06
 **Status:** **bounded support theorem** on the dynamical step of the
 DM-eta G1 closure. This note sharpens the previously-flagged dynamical
 residual by deriving `rho_{adj/c} = 8/3`
-from the operator-trace projection through the adjoint Fierz channel
-on End(C^N_c), conditional on a named "residual-of-the-residual" bridge
-step. It does NOT change the parent DM-eta lane's ledger status.
+from the per-color-row scalar trace density of the bare Wilson taste-mass
+kernel on End(C^N_c) (NOT, per the 2026-05-27 audit-correction above,
+the adjoint Fierz channel projection -- the latter is the singlet
+channel for `sum_a T^a T^a = C_F I`). It does NOT change the parent
+DM-eta lane's ledger status.
 
 **Type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_dm_eta_g1_dynamical_residual_2026_05_06.py`](../scripts/frontier_dm_eta_g1_dynamical_residual_2026_05_06.py)
@@ -51,18 +120,18 @@ The DM-eta G1 closure has two stages:
    `1`, `1/N_c`, `C_F = 4/3`, or `C_A/C_F = 9/4`. **OPEN** at V1 of the
    algebraic step.
 
-This V1 sharpens the bounded dynamical step. After a 5-way Counterfactual
-Pass on dynamical mechanisms, the unique
-tractable route within the cited primitive set is the **operator-trace
-projection through the adjoint Fierz channel on End(C^N_c)**. The
-arithmetic is verified at the matrix-element level (`PASS = 12, FAIL = 0`).
+This V1 sharpens the bounded dynamical step. After the 2026-05-27
+correction, the tractable route within the cited primitive set is the
+**per-color-row scalar trace density plus forward/backward Wilson-hop
+doubling**. The arithmetic is verified at the matrix-element level
+(`PASS = 12, FAIL = 0`).
 
-The "residual of the residual" -- the bridge step that the dark `hw=3`
-mass operator on the SU(3)-gauged chiral cube actually projects through
-the adjoint Fierz channel rather than the singlet channel -- is not
-closed here. The carrier-level necessary condition `dim(C^8) = dim(adj_3) = 8`
-holds exactly; the operator-level bridge identification requires a
-separate theorem.
+The former "residual of the residual" -- the claim that the dark
+`hw=3` mass operator projects through the adjoint Fierz channel rather
+than the singlet channel -- is superseded. The carrier-level identity
+`dim(C^8) = dim(adj_3) = 8` remains a structural observation about the
+generator count; it is not a necessary condition for an adjoint-channel
+projection.
 
 ## 1. Counterfactual Pass on dynamical mechanisms
 
@@ -74,32 +143,34 @@ pursued:
 |---|---|---|---|---|---|
 | (a) 1-loop CW gauge boson | already ruled out (gives 0 for color singlet) | M | L | H | 4/12 |
 | (b) Symmetry-pattern selection | naming, not mechanism | L | L | H | 3/12 |
-| (c) Adjoint Fierz channel projection | uses cited Fierz primitive | H | H | M | 11/12 |
-| (d) Per-color-row identification | subsumed by (c) | H | M | M | 7/12 |
+| (c) Per-color-row scalar trace + Wilson-hop doubling | uses cited Fierz normalization and Casimir primitive | H | H | M | 11/12 |
+| (d) Bare per-color-row identification without Wilson-hop pairing | incomplete, misses the factor-of-two geometry | H | M | M | 7/12 |
 | (e) Higgs-analog all-channel sum | gives N_taste = 16, not 8/3 | M | L | H | 4/12 |
 
 **Outcome:** Route (c) is the unique tractable framework-native
-mechanism. It is pursued in this V1.
+mechanism. It is pursued in this V1 as a scalar trace/Casimir
+calculation, not as a Fierz-channel projection of the self-energy
+matrix.
 
 **Sanity ruleouts:**
 - (a) is dead by the existing obstruction note (1-loop CW gives zero
   for color-singlet scalars).
 - (b) re-labels the problem; still needs `8/3` from somewhere.
-- (d) is the same identity as (c) read per-color-row; subsumed.
+- (d) has the right trace normalization but lacks the forward/backward
+  Wilson-hop doubling that turns `C_F = 4/3` into `2 C_F = 8/3`.
 - (e) gives `N_taste = 16` directly via an all-channel coherent sum
   (the Higgs-analog reading), not `8/3`. The factor `8/3` is the
-  channel-density per axis, not the all-channel count.
+  scalar trace density per axis, not the all-channel count.
 
 ## 2. Theorem statement (bounded support)
 
-**Theorem (DM-eta G1 dynamical residual via operator-trace, V1).**
+**Theorem (DM-eta G1 dynamical residual via scalar trace, V1).**
 On End(C^N_c) with the cited Fierz completeness from CL3_COLOR_AUTOMORPHISM,
-the operator-trace projection of the bare Wilson taste-mass kernel
-through the **adjoint Fierz channel** gives the per-color-row trace
-density
+the per-color-row scalar trace of the Wilson taste-mass kernel gives
+the trace density
 
 ```text
-rho_{adj/c}  =  N_c * F_adj  =  N_c * (N_c^2 - 1) / N_c^2
+rho_{adj/c}  =  2 * sum_a Tr[T^a T^a] / N_c
              =  (N_c^2 - 1) / N_c
              =  8 / 3.
 ```
@@ -115,13 +186,12 @@ m_DM  =  rho_{adj/c} * 2 r * hw_dark * v
       =  N_sites * v          (on canonical-surface v).
 ```
 
-**Status boundary:** the operator-trace ARITHMETIC is closed by this
-note's runner (12 PASS, 0 FAIL). The dark-`hw=3`-mass-operator-projection
-BRIDGE step -- that the projection actually goes through the adjoint
-Fierz channel and not the singlet channel -- is the **residual of the
-residual**, conditional on a separate projection-identification theorem.
-Carrier-level necessary condition `dim(C^8) = dim(adj_3) = 8` holds
-exactly; the operator-level bridge is open.
+**Status boundary:** the scalar-trace arithmetic is supported by this
+note's runner (12 PASS, 0 FAIL). It does not prove an adjoint
+Fierz-channel projection of the dark mass operator. The corrected
+bridge is supplied by the companion CW calculation: the self-energy is
+`C_F I` per link and forward/backward Wilson-hop pairing doubles it to
+`2 C_F = 8/3`.
 
 ### Proof
 
@@ -136,7 +206,7 @@ the projectors `P_singlet`, `P_adj` on End(C^3) satisfy
 singlet basis vector) and `Tr[P_adj] = N_c^2 - 1 = 8` (`N_c^2-1`
 adjoint basis vectors). Verified at machine precision (Test 2).
 
-**Step 3 (Per-color-row trace density).** The adjoint trace density
+**Step 3 (Per-color-row scalar trace density).** The scalar trace density
 per color row is `2 * sum_a Tr[T^a T^a] / N_c = (N_c^2 - 1)/N_c`.
 By Gell-Mann normalization (cited), `Tr[T^a T^a] = 1/2` per generator,
 so `sum_a Tr[T^a T^a] = (N_c^2 - 1)/2` and the per-color-row density
@@ -148,11 +218,11 @@ weight. The dark `hw=3` singlet `|111>` has Hamming distance 3 from the
 vacuum `|000>`, so the bare Wilson mass is `2 r * hw_dark = 6` in
 lattice units (Test 4).
 
-**Step 5 (operator-trace closure on the canonical surface).** Composing
+**Step 5 (scalar-trace closure on the canonical surface).** Composing
 Steps 3 and 4 with the canonical-surface `v`:
 
 ```text
-m_DM  =  (Wilson hop count) * (adjoint trace density per color) * v
+m_DM  =  (Wilson hop count) * (scalar trace density per color) * v
       =  6 * (8/3) * v
       =  16 v
       =  N_sites * v        (since N_sites = 2^d for d = 4).
@@ -172,32 +242,30 @@ C_A          = 3       !=  8/3
 C_A/C_F      = 9/4     !=  8/3
 ```
 
-This rules out: (i) the singlet Fierz channel as the wrong projector,
-(ii) no-enhancement (bare Wilson mass without color trace), (iii) singlet
-dilution, (iv) C_F Casimir self-energy, (v) C_A adjoint Casimir
-absolute, and (vi) C_A/C_F Casimir ratio. Only the adjoint Fierz
-density per color gives 8/3.
+This rules out: (i) singlet Fierz weight alone, (ii) no-enhancement
+(bare Wilson mass without color trace), (iii) singlet dilution,
+(iv) a single-link `C_F` Casimir without Wilson-hop doubling, (v) `C_A`
+adjoint Casimir absolute, and (vi) `C_A/C_F` Casimir ratio. Only the
+forward/backward Wilson-hop doubled Casimir, equivalently the per-row
+scalar trace density, gives 8/3.
 
-**Step 7 (Carrier-level necessary condition).** The carrier-level
+**Step 7 (Carrier-level structural observation).** The carrier-level
 identity `dim(C^8) = dim(adj_3) = 8` holds exactly (Test 10). This is
-a NECESSARY condition for the bridge step -- the dark hw=3 chiral
-mode's space matches in dimension the adjoint sector of End(C^3).
-The bridge step that this dimensional match is dynamically realized
-by the projection of the Wilson mass operator through the adjoint
-Fierz channel -- and not the singlet -- is the residual of the
-residual.
+a structural observation about the chiral-cube state count and the
+SU(3) generator count. It is not a bridge proof that the scalar
+self-energy projects through the adjoint Fierz channel.
 
-**QED on the operator-trace ARITHMETIC**; the operator-level bridge
-identification remains open.
+**QED on the scalar-trace arithmetic**; adjoint-channel projection of
+the scalar self-energy is not asserted.
 
 ## 3. Claim Boundary
 
 This bounded support theorem derives `rho_{adj/c} = 8/3` from the
-operator-trace projection through the adjoint Fierz channel on
-`End(C^N_c)`, conditional on the named open bridge step that the dark
-`hw=3` Wilson mass operator on the SU(3)-gauged chiral cube projects
-through the adjoint Fierz channel and not the singlet channel.
-Composition with the cited bare Wilson mass gives `m_DM = 16 v` on the
+per-color-row scalar trace density on `End(C^N_c)`, equivalently
+`2 C_F` with the forward/backward Wilson-hop factor included. It does
+not claim that the dark `hw=3` Wilson mass operator on the SU(3)-gauged
+chiral cube projects through the adjoint Fierz channel. Composition
+with the cited bare Wilson mass gives `m_DM = 16 v` on the
 canonical surface. Six wrong-channel candidates are explicitly ruled out
 by the runner.
 
@@ -205,36 +273,29 @@ by the runner.
 
 ### Closed by V1 (operator-trace arithmetic)
 
-1. **Operator-trace projection arithmetic** through the adjoint Fierz
-   channel on End(C^N_c) gives `rho_{adj/c} = N_c * F_adj = 8/3`
+1. **Per-color-row scalar trace arithmetic** on End(C^N_c) gives
+   `rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = 8/3`
    exactly.
 2. **Six wrong-channel candidates** explicitly ruled out: singlet
-   Fierz channel, no enhancement, singlet dilution, C_F, C_A,
-   C_A/C_F.
+   Fierz weight alone, no enhancement, singlet dilution, single-link
+   C_F, C_A, C_A/C_F.
 3. **Composition** with the cited bare Wilson mass gives `m_DM = 16 v`
    exactly on the canonical surface.
-4. **Counterfactual Pass winner**: route (c) [adjoint Fierz channel
-   projection] is the unique tractable mechanism within the cited
+4. **Counterfactual Pass winner**: route (c) [per-row scalar trace +
+   Wilson-hop doubling] is the unique tractable mechanism within the cited
    primitive set. (a) ruled out, (b) is naming, (d) subsumed by (c),
    (e) gives wrong factor.
-5. **Carrier-level necessary condition**: `dim(C^8) = dim(adj_3) = 8`
+5. **Carrier-level structural observation**: `dim(C^8) = dim(adj_3) = 8`
    holds exactly.
 
-### Single open ingredient carried forward (residual of the residual)
+### Superseded ingredient
 
-1. **Operator-level adjoint-channel bridge step** -- the projection-
-   identification theorem stating that the dark hw=3 mass operator on
-   the SU(3)-gauged chiral cube projects through the adjoint Fierz
-   channel of End(C^N_c) and not the singlet channel. The carrier-
-   level necessary condition holds; the operator-level identification
-   is open. A natural avenue:
-   (i) explicit construction of the projector `P_dark_hw3` on the
-       SU(3)-gauged minimal block, computing
-       `Tr_color[P_dark_hw3 * P_adj] / Tr_color[P_dark_hw3 * P_singlet]`
-       and verifying the ratio is 8 = dim(adj_3);
-   (ii) an independently ratified framework convention identifying the
-       dark hw=3 collective-mode mass with the adjoint trace density,
-       paralleling the Higgs `m_H = v/(2u_0)` convention.
+1. **Operator-level adjoint-channel bridge step** -- superseded by the
+   2026-05-27 correction. For the scalar self-energy, the matrix
+   `sum_a T^a T^a = C_F I` is singlet-channel. A future route that uses
+   a genuinely traceless `M` in `sum_a T^a M T^a` would be a new
+   dynamical mechanism and must not be imported into this bounded chain
+   without its own source note and review.
 
 ### Inherited bounded inputs (NOT closed by V1)
 
@@ -273,9 +334,10 @@ Expected: `PASS = 12, FAIL = 0`.
 
 1. Fierz completeness `P_singlet + P_adj = I` on End(C^3) (max err < 1e-12).
 2. Trace counts `Tr[P_singlet] = 1, Tr[P_adj] = 8` (exact).
-3. Per-color-row adjoint trace density `(N_c^2-1)/N_c = 8/3` (exact).
+3. Per-color-row scalar trace density `(N_c^2-1)/N_c = 8/3` (exact).
 4. Bare Wilson mass on `|111>` is `2 r * hw_dark = 6` (exact).
-5. `rho_{adj/c} = N_c * F_adj = 8/3` at the Fraction level (exact).
+5. `rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = 8/3` at the Fraction
+   level (exact).
 6. Singlet:adjoint ratio is `1 : 8 = dim(adj)` (exact).
 7. Operator-trace closure: `6 * 8/3 = 16 = N_sites` (exact).
 8. Six wrong-channel candidates all distinct from 8/3 (exact ruleouts).
@@ -286,10 +348,10 @@ Expected: `PASS = 12, FAIL = 0`.
 
 ## 7. Honest residual
 
-- **Operator-level adjoint-channel bridge step**: open. The carrier-
-  level necessary condition holds; the projection-identification
-  theorem on the SU(3)-gauged chiral cube is open. This is the
-  residual of the residual.
+- **Operator-level adjoint-channel bridge step**: superseded. The
+  corrected chain uses the scalar `2 C_F` trace density plus Wilson-hop
+  doubling; it does not carry an open adjoint-channel projection as a
+  retained or bounded claim.
 - **Sommerfeld + freeze-out band**: inherited bounded; not a single-
   point prediction.
 - **alpha_X = alpha_LM**: inherited bounded candidate-route choice.
@@ -302,17 +364,15 @@ Expected: `PASS = 12, FAIL = 0`.
 This V1 bounded support theorem sharpens the DM-eta G1 lane:
 
 - **The G1 algebraic step is closed** at V1 of the algebraic note.
-- **The G1 dynamical step's operator-trace ARITHMETIC** is now closed
-  by this V1: the cleanest framework-native mechanism (operator-trace
-  through the adjoint Fierz channel) reproduces the 8/3 factor exactly
-  at the matrix-element level. Six wrong-channel candidates are
+- **The G1 dynamical step's scalar-trace arithmetic** is supported by
+  this V1: the cleanest framework-native mechanism (per-row scalar
+  trace plus Wilson-hop doubling) reproduces the 8/3 factor exactly at
+  the matrix-element level. Six alternate scalar candidates are
   explicitly ruled out.
-- **The G1 dynamical step's operator-level BRIDGE** -- whether the
-  dark hw=3 mass operator actually projects through the adjoint Fierz
-  channel rather than the singlet channel -- remains the named open
-  residual of the residual.
-- **The G1 lane** is now reduced from "derive 8/3 dynamically" to
-  "verify the operator-level adjoint-channel bridge".
+- **The G1 dynamical step's former adjoint-channel bridge** is removed
+  as a load-bearing claim.
+- **The G1 lane** is now reduced to independent audit of the corrected
+  Casimir-plus-hop chain and its inherited bounded inputs.
 
 The flagship paper line should remain `eta` IMPORTED with this theorem
 listed, at most, as bounded support for the DM-eta G1 dynamical step.
@@ -343,14 +403,15 @@ parent DM-eta freeze-out-bypass lane status remains unchanged.
 ```yaml
 claim_type: bounded_theorem
 claim_scope: |
-  Operator-trace projection mechanism for the DM-eta G1 dynamical
-  residual: rho_{adj/c} = 8/3 emerges as the per-color-row adjoint
-  Fierz channel trace density on End(C^N_c). Conditional on the
-  named open bridge step that the dark hw=3 Wilson mass operator
-  on the SU(3)-gauged chiral cube projects through the adjoint
-  Fierz channel and not the singlet channel. Composition with the
-  cited bare Wilson mass gives m_DM = 16 v on the canonical surface.
-  Six wrong-channel candidates explicitly ruled out.
+  Scalar-trace mechanism for the DM-eta G1 dynamical residual:
+  rho_{adj/c} = 8/3 emerges as the per-color-row scalar trace density
+  2 * sum_a Tr[T^a T^a] / N_c = 2 C_F on End(C^N_c), with the
+  forward/backward Wilson-hop factor included. The scalar one-loop
+  self-energy sum_a T^a T^a = C_F I is singlet-channel, so no
+  adjoint-channel projection of the dark mass operator is asserted.
+  Composition with the cited bare Wilson mass gives m_DM = 16 v on
+  the canonical surface. Six alternate scalar candidates explicitly
+  ruled out.
 upstream_dependencies:
   - dm_eta_g1_cl3_adj3_embedding_algebraic_support_theorem
   - dm_eta_freezeout_bypass_quantitative_theorem

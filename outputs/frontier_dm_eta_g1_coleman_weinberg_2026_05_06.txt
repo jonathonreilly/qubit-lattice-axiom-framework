@@ -100,8 +100,8 @@ TEST 7: Sigma(p) = sum_mu sum_a (g T^a) <A_mu^a A_mu^a> (g T^a)
   STATUS: PASS (Wilson-line gives 8/3, not 4/3)
 
 ==============================================================================
-PART D: Fierz channel projection of the 1-loop self-energy
-        Project Sigma onto P_singlet and P_adjoint channels.
+PART D: Fierz diagnostics for the 1-loop self-energy
+        Distinguish traceless vertices from the scalar self-energy.
 ==============================================================================
 
 ------------------------------------------------------------------------------
@@ -122,7 +122,7 @@ TEST 9: P_singlet @ T^a = 0 for all 8 Gell-Mann generators
   STATUS: PASS
 
 ------------------------------------------------------------------------------
-TEST 10: Per-link Wilson-line self-energy in singlet Fierz = 0 EXACTLY
+TEST 10: Traceless Wilson-link vertices have zero singlet Fierz content
          Each link inserts a single T^a; sum_a delta_link[a] T^a
          is in span(T^a)_{a=1..8} = adjoint span.
          P_sing annihilates ALL traceless T^a (Test 9), so any
@@ -135,8 +135,8 @@ TEST 10: Per-link Wilson-line self-energy in singlet Fierz = 0 EXACTLY
   STATUS: PASS
 
 ------------------------------------------------------------------------------
-TEST 11: Adjoint Fierz channel of self-energy has per-color-row
-         coefficient rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = 8/3
+TEST 11: Per-row scalar trace coefficient
+         rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = 8/3
 ------------------------------------------------------------------------------
   sum_a Tr[T^a T^a] = 4.000000 (expected (N^2-1)/2 = 4)
   2 * sum / N_c     = 2.666667 (expected 8/3 = 2.666667)
@@ -170,7 +170,7 @@ TEST 13: KEY ALGEBRAIC IDENTITY: 2 * C_F = (N^2-1)/N = 8/3
          to the dark-state self-energy. The forward+backward pair
          doubles the contribution per direction, giving:
            rho_{adj/c} = 2 * C_F = 2 * (N^2-1)/(2N) = (N^2-1)/N = 8/3
-         This is EQUIVALENT to the per-color-row Fierz density:
+         This is EQUIVALENT to the per-color-row scalar trace density:
            rho_{adj/c} = (1/N_c) * 2 * sum_a Tr[T^a T^a]
                       = 2 * (N^2-1)/(2N) (from sum Tr = (N^2-1)/2)
                       = (N^2-1)/N = 8/3.
@@ -226,7 +226,7 @@ TEST 16: Counterfactual Pass on CW route candidates (informational)
     delta m^2 ~ C_F = 4/3; WRONG factor
   (c3) Standard one-loop CW with R = adjoint:
     delta m^2 ~ C_A = 3; WRONG factor
-  (c4) Wilson-link gauge insertion + Fierz adjoint projection:
+  (c4) Wilson-link gauge insertion + scalar trace density:
     WINNER: per-color-row density 2 sum Tr[T^a T^a]/N_c = 8/3
   STATUS: PASS (informational; (c4) wins)
 
@@ -250,8 +250,8 @@ SUMMARY
   Test  7 (Wilson-line per-color-row density = 8/3): PASS
   Test  8 (Fierz projectors P_sing + P_adj = I, idempotent): PASS
   Test  9 (P_singlet @ T^a = 0 (annihilates traceless T^a)): PASS
-  Test 10 (Singlet Fierz of self-energy is exactly 0): PASS
-  Test 11 (Adjoint Fierz channel coefficient = 8/3): PASS
+  Test 10 (Singlet Fierz of traceless T^a vertices is exactly 0): PASS
+  Test 11 (Per-row scalar trace coefficient = 8/3): PASS
   Test 12 (Discretized 1-loop self-energy is C_F * I (point-coupling sanity)): PASS
   Test 13 (Geometric derivation: rho_{adj/c} = 8/3 explicit): PASS
   Test 14 (Wrong-channel candidates ALL distinct from 8/3): PASS
@@ -289,8 +289,8 @@ CW DERIVATION SUMMARY
     Algebraic identity: 2 * C_F = 2 * (N^2-1)/(2N) = (N^2-1)/N = 8/3.
 
   The two readings of 8/3 (per-row trace and 2*C_F) are algebraically
-  equivalent (Test 13). The per-row trace makes the Fierz adjoint
-  channel manifest; the 2*C_F view makes the chiral-cube geometry
+  equivalent (Test 13). The per-row trace makes the generator count
+  manifest; the 2*C_F view makes the chiral-cube geometry
   (forward + backward Wilson hops per direction) manifest.
 
   HONEST RESIDUAL: the standard one-loop CW Casimir for a color-
@@ -300,16 +300,17 @@ CW DERIVATION SUMMARY
   TWO independent gauge-link insertions in the loop, which is the
   natural reading of the staggered chiral-cube Wilson kernel.
 
-  Fierz channel projection confirms (Tests 9, 10):
+  Fierz diagnostics confirm (Tests 9, 10, 12):
     - Each T^a is traceless: P_sing @ T^a = 0 EXACTLY
     - Linear combinations Sigma_a alpha_a T^a stay in adjoint span
-    - The dark mass-shift observable lives entirely on adjoint channel
+    - The scalar self-energy C_F I lives in the singlet channel
 
   Composition with bare Wilson kinetic mass (cited Origin B):
     m_DM = rho_{adj/c} * (2 r * hw_dark * v) = (8/3) * 6 v = 16 v
 
   STATUS: BOUNDED SUPPORT
-  The bridge proof V1 (PR #618) cited the gauge-mediated structure;
-  this V1 derives it explicitly via Wilson-link CW expansion + Fierz
-  channel projection. Downstream status remains independent-audit
+  The former bridge proof V1 (PR #618) is superseded where it
+  claimed adjoint-channel selection of the scalar self-energy.
+  This V1 supplies the corrected Wilson-link CW scalar-trace
+  calculation. Downstream status remains independent-audit
   authority; the parent lane still carries inherited bounded inputs.

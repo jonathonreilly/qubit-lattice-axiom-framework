@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 533 |
+| **retained_bounded** | 534 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1164 |
+| unaudited | 1163 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 832 |
+| `audited_clean` | 833 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1393 |
+| `unaudited` | 1392 |
 
 | claim_type | count |
 |---|---:|
@@ -726,6 +726,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -11006,6 +11007,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The compact and refined families have mean inst-ret splits of -1.669200e-02 and -4.352319e-02, with retarded below instantaneous on 0/5 and 3/5 b-rows respectively, so the split survives but is not uniformly directional.  _(class `C`)_
 - **chain closes:** True — The registered runner cache is complete and matches the source note's two-family table and safe-read boundary. The audited result is only the finite smoke-probe noncollapse/partial-survival statement, not a universal retarded-gravity law or refinement-stability theorem.
 - **rationale:** The current cache supports the note's bounded table exactly: the retarded field differs from the instantaneous field on both compact and refined families, but the sign/direction is row-dependent. The source already confines the claim to a causality/scheduling smoke probe and disclaims a full wave theory or universal law. Residual risk is limited to the small two-family sample and lack of assertion gates, which does not block the audited finite readout.
+- **auditor confidence:** high
+
+### `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded representation-mapping theorem only: given the retained Gell-Mann SU(3) carrier and retained d^{abc} anticommutator decomposition, the complex-conjugate representation satisfies A(Rbar) = -A(R), so A(3bar) = -1 and two left-handed Weyl fermions in 3bar contribute -2 to the SU(3)^3 cubic-anomaly index. This does not establish right-handed colored matter existence, physical SM-color identification, uniqueness of the completion, or the full parent anomaly-cancellation chain.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting T^a_Rbar := -(T^a_R)^* into Tr_R[T^a_R {T^b_R, T^c_R}] gives one overall minus sign for the cubic trace, hence A(Rbar) = -A(R); with A(3)=1 this gives A(3bar)=-1 and two copies give -2.  _(class `A`)_
+- **chain closes:** True — Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.
+- **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

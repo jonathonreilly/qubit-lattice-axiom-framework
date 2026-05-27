@@ -231437,24 +231437,46 @@
       "verdict_rationale": null
     },
     "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T05:34:40.207603+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded.",
+          "su3_dabc_symmetric_theorem_note_2026-05-02": "Abstract algebraic SU(3) carrier supplied by the retained one-hop authority, with Gell-Mann T^a=lambda^a/2 normalization and trace-projection identities only; no physical color, QCD, or SM interpretation."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem",
+          "su3_dabc_symmetric_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained",
+          "su3_dabc_symmetric_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "su3_dabc_symmetric_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b4b669e6797df842a986eefe2c8713942c7fcf5d8e03efd10a118d56182aada1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.",
       "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Bounded representation-mapping theorem only: given the retained Gell-Mann SU(3) carrier and retained d^{abc} anticommutator decomposition, the complex-conjugate representation satisfies A(Rbar) = -A(R), so A(3bar) = -1 and two left-handed Weyl fermions in 3bar contribute -2 to the SU(3)^3 cubic-anomaly index. This does not establish right-handed colored matter existence, physical SM-color identification, uniqueness of the completion, or the full parent anomaly-cancellation chain.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T05:34:40.207603+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -231463,19 +231485,19 @@
         "su3_dabc_symmetric_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Substituting T^a_Rbar := -(T^a_R)^* into Tr_R[T^a_R {T^b_R, T^c_R}] gives one overall minus sign for the cubic trace, hence A(Rbar) = -A(R); with A(3)=1 this gives A(3bar)=-1 and two copies give -2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "524b1c74be105e6db18a158d69676206ced2c6a4dc92f3c18376207d70571cb3",
       "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Recheck only if downstream citations use this row as matter-content existence, physical-color identification, uniqueness, or full parent anomaly-cancellation closure rather than the representation-mapping sign-flip theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -231533,18 +231555,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 26,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 26
       },
       "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
       "title": "RH-Completion-to-3\u0304 Cubic Anomaly Index Mapping Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation."
     },
     "rh_sector_anomaly_cancellation_identities_note_2026-05-02": {
       "audit_date": null,
@@ -262347,11 +262370,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 1.5,
+      "load_bearing_score": 4.5,
       "load_bearing_step": "Trace-orthogonal projection of anticommutator and commutator parts in the Gell-Mann basis yields the d tensor, f tensor, and product decomposition.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "238bc30e048b9d890f8b79488609a879eb3d78da23e6204ba65ce76c0ddc8080",
       "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": "Re-audit only if the claim is later used to imply physical SM color, QCD amplitudes, four-gluon vertices, or cubic Casimir physics without a separate physical-color bridge.",

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 532 |
+| **retained_bounded** | 533 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 19 |
-| unaudited | 1166 |
+| unaudited | 1165 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -54,13 +54,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 830 |
+| `audited_clean` | 831 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1395 |
+| `unaudited` | 1394 |
 
 | claim_type | count |
 |---|---:|
@@ -685,6 +685,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10331,6 +10332,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite matrix identities: conjugation by C sends (c_1,c_2,c_3) to (c_2,c_3,c_1), I_3 has forward-cycle coefficients (0,0,0), and S(A)=P_23 A^dagger P_23 has fixed locus c_1=conjugate(c_3) with c_2 real.  _(class `A`)_
 - **chain closes:** True — The bounded claim closes over the explicitly displayed finite matrices and maps with no direct dependencies. It does not close, and does not claim to close, any physical PMNS bridge or primitive derivation.
 - **rationale:** The source narrows the row to exactly three finite matrix identities and explicitly excludes the physical carrier, observable law, identity-block interpretation, graph-first swap derivation, PMNS value selection, angle prediction, physical mixing law, and derivation from primitives. The runner source defines the displayed matrices and computes the finite matrix maps; its load-bearing checks are A-class algebraic checks, while the remaining PASS lines are source-firewall text checks. No B/C/D physical, dependency, or comparator step is being ratified. The clean verdict applies only to the bounded raw-matrix scope.
+- **auditor confidence:** high
+
+### `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded composition bridge only: given the retained graph-first antiunitary sibling and retained-grade free-point identity decoration under the retained channel-value law parent, the two parent auditor-flagged algebraic premises are supplied in the restricted dependency chain and the remaining checks reduce to finite 3x3 matrix algebra. This does not audit or promote the broader physical PMNS spectrum, species interpretation, dm_leptogenesis selector, or continuum numeric claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained antiunitary sibling and the retained-grade free-point identity sibling, the parent's two flagged premises are both supplied and the remaining cyclic-covariance, zero-cycle-coefficient, and swap-conjugation examples are direct 3x3 algebra.  _(class `A`)_
+- **chain closes:** True — The antiunitary dependency is audited_clean and retained; the free-point dependency is audited_decoration under the retained channel-value parent, which is retained-grade under the decoration policy. The primary runner reconstructs the finite matrix equalities and reports PASS=6 FAIL=0 without importing a physical spectrum or tuned comparator.
+- **rationale:** The audited claim is a narrow bounded composition statement, not a new PMNS physics theorem. Its two load-bearing imported premises are retained-grade in the restricted one-hop packet, and the local runner checks only explicit 3x3 algebra: P_23 A_fwd^dagger P_23 coefficient reversal, the free-point A_act=I_3 identity, zero forward-cycle coefficients on I_3, cyclic covariance, and P_23-fixed identity behavior. The no-go discipline gate finds no negative wall being ratified by this verdict; the prior bridge-target wording is used only to bound the positive composition repair. Residual risk is downstream scope drift: future citations must not treat this bridge as a physical PMNS spectrum, species, selector, or continuum-numeric closure.
 - **auditor confidence:** high
 
 ### `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16`

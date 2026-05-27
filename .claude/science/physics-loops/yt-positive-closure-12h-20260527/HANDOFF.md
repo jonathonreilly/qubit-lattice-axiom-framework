@@ -191,9 +191,16 @@ Cycle 11 source-orientation sign-selector no-go verification:
 - YAML validation passed.
 - `git diff --check` passed.
 
-Cycle 11 source-orientation sign-selector no-go science commit is pending at
-this checkpoint. PR #1980 body update is pending. No `POSITIVE_CLOSURE`
-marker was written.
+Cycle 11 source-orientation sign-selector no-go science commit pushed and
+recorded in PR #1980:
+
+```text
+f17bd8c821ceea4ffe2159e61d9ce848eef28017
+```
+
+PR #1980 body was updated with the source-orientation sign-selector no-go
+result, artifacts, verification, and next exact action. No
+`POSITIVE_CLOSURE` marker was written.
 
 New strict W/Z plus C3 top-row splice result:
 

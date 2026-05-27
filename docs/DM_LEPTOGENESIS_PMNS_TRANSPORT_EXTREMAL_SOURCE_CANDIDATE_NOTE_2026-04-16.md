@@ -117,3 +117,9 @@ This row does not claim:
 ```bash
 python3 scripts/cached_runner_output.py --refresh scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
 ```
+
+Expected local certificate:
+
+```text
+PASS=12  FAIL=0
+```

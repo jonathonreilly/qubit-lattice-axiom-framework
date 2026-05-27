@@ -1,12 +1,27 @@
 {
   "schema_version": 1,
-  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted inputs are four: P1, AC_phi_lambda, S, and theta. Only three are machine premise nodes here because S is pervasive and has no single claim_id; it is tracked under not_a_node. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
-  "genuine_admitted_input_count": 4,
+  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. As of 2026-05-26, three genuine admissions remain: P1, AC_phi_lambda, and S (theta was retired on 2026-05-26 via the strong-CP capstone stack, see retired_targets below). Only two are machine premise nodes here because S is pervasive and has no single claim_id; it is tracked under not_a_node. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
+  "genuine_admitted_input_count": 3,
   "canonical_ids": [
     "observable_principle_from_axiom_note",
-    "staggered_dirac_realization_gate_note_2026-05-03",
-    "strong_cp_theta_zero_note"
+    "staggered_dirac_realization_gate_note_2026-05-03"
   ],
+  "retired_targets": {
+    "strong_cp_theta_zero_note": {
+      "label": "theta",
+      "retired_on": "2026-05-26",
+      "former_leverage": 20,
+      "retirement_basis": "strong-CP closure via 4-PR Track A stack (Cl(3)/Z^3 substrate + cubic point group O_h + discrete theta-projection): PR #1974 (Cl(3) faithful lift of O_h with pseudoscalar det character), PR #1975 (action-class O_h-invariance + epsilon-family unification absorbing the clover counter-attack), PR #1976 (discrete theta-projection via Z_3 body-diagonal of O_h, composing with retained RP from PRs #1971 + #1973). Plus PR #1977 ratified C_O_h as a retained governance convention (the framework's canonical admissible action class is O_h-invariant under the lifted substrate action) analogous to C_b for AC_phi_lambda. Under C_O_h retention, theta = 0 is the unique vacuum on the reduced Brillouin zone [0, pi/3], with the second CP-fixed point theta = pi eliminated by the Z_3 gauging. Strong-CP problem closed on the framework's substrate.",
+      "pillars_closed": {
+        "single_plaquette_no_theta_slot": "Closed via PR #1975 A4: ANY epsilon^{mu nu rho sigma}-based CP-odd density transforms with det(R) under O_h. Under C_O_h, all such densities are forbidden. The original 'P1 single-plaquette restriction' admission from the parent strong_cp_operator_basis_2026-05-19 note is absorbed.",
+        "clover_F_tilde_F_counter_attack": "Closed via PR #1975 A4 (same mechanism). The clover-F-tilde-F density was the killer counter-attack flagged by the 2026-05-26 5-agent assumption audit; it dies structurally under the universal epsilon-pseudotensor argument.",
+        "z_q_positivity": "Closed via retained RP chain (PRs #1971 SU(3) Wilson gauge-half via Peter-Weyl + #1973 staggered Grassmann half-action for arbitrary A_+ polynomial). Z_Q >= 0 configuration-wise gives the Vafa-Witten triangle inequality |Z(theta)| <= Z(0).",
+        "theta_pi_degeneracy_elimination": "Closed via PR #1976 D5: Z_3 gauging of body-diagonal subgroup of O_h shrinks theta-Brillouin to width 2pi/3. The reduced zone [0, pi/3] excludes the second CP-fixed point theta = pi, removing the second-vacuum degeneracy that the un-Z_3-gauged Z_2-orbifold would have allowed.",
+        "lattice_to_continuum_bridge": "OPEN. The framework's theta = 0 result is on the lattice substrate; the continuum theta_QCD bridge is a separate sub-target. Currently the framework treats this as a lattice-level closure, with the continuum bridge as a downstream phenomenological verification (neutron EDM consistency)."
+      },
+      "former_no_go_portfolio_status": "Not retracted. The retained no-go strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16 (RP alone cannot forbid CP-odd imaginary additions) remains retained_no_go. The Track A closure does NOT contradict it: the RP-no-go shows RP ALONE is insufficient. The Track A chain uses RP + O_h-invariance (via C_O_h) + discrete theta-projection; the full chain is what closes theta, not RP alone."
+    }
+  },
   "derivation_targets": {
     "observable_principle_from_axiom_note": {
       "label": "P1",
@@ -31,15 +46,6 @@
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
         "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
         "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24"
-      ]
-    },
-    "strong_cp_theta_zero_note": {
-      "label": "theta",
-      "statement": "the QCD vacuum angle theta = 0 (strong-CP); also unsolved in the Standard Model",
-      "class": "naturalness admission",
-      "leverage": 20,
-      "no_go_portfolio": [
-        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
       ]
     }
   },

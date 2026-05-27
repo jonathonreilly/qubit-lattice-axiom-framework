@@ -21,6 +21,6 @@ open_imports:
   - physical Gate B/gravity closure remains out of scope
   - full generated-geometry family generalization remains out of scope
 review_status: local runner/cache/pipeline/vocab pass; independent audit required
-pr_status: pending
-next_exact_action: open review PR
+pr_status: open https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2061
+next_exact_action: independent audit/reviewer extraction
 stop_condition: one coherent artifact repair packaged

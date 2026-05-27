@@ -14,5 +14,7 @@ Key movement:
 - Pipeline reset the target row to `audit_status=unaudited`,
   `effective_status=unaudited`, `ready=true`.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2061
+
 Remaining science blocker: this is still a finite bounded runner certificate,
 not a physical Gate B/gravity closure theorem.

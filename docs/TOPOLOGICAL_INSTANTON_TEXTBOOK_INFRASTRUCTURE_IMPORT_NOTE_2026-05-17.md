@@ -1,139 +1,153 @@
-# Topological-Instanton Infrastructure — Named Non-Derivation Imports
+# Topological-Instanton Infrastructure
 
-**Date:** 2026-05-17
+**Date:** 2026-05-17 (bounded-certificate repair: 2026-05-27)
 **Claim type:** bounded_theorem
-**Status:** bounded named-import umbrella wrapper for four textbook
-results from Yang-Mills topological-instanton infrastructure consumed
-by the external narrow theorem notes covering 4D instanton action,
-meron half-action, fractional instantons on twisted `T^4`, and
-fractional-instanton dilute-gas condensates.
+**Status:** bounded algebraic instanton-infrastructure certificate;
+external Yang-Mills topology references are parallel literature citations, not
+load-bearing retained-grade imports.
+**Runner:** `scripts/topological_instanton_bounded_certificate.py`
 **Status authority:** independent audit lane only.
 
 ## Purpose
 
-This wrapper note documents four textbook Yang-Mills /
-gauge-topology results as named non-derivation imports so downstream
-external narrow theorem notes (notably
-`INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`,
-`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`,
-`FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`)
-can register a one-hop dependency rather than carry the four textbook
-results as unattributed external citations. (Downstream consumers
-backticked here to avoid length-2 cycles — load-bearing citation
-direction is *downstream theorem → this textbook import*, recorded in
-each consumer's "## Upstream authority" section.)
+This packet replaces the former named-import umbrella with a direct bounded
+certificate for the parts of the instanton infrastructure that can be checked
+inside the repository without adding axioms:
 
-## Imports covered
+- 4D Hodge-star algebra on two-forms;
+- the Bogomolny square-completion bound and self-dual/anti-self-dual saturation
+  in the normalized local action/topological-pairing convention;
+- the BPST radial density normalization giving `8 pi^2`;
+- twisted `T^4` flux arithmetic giving fractional charge `Q = k/N`.
 
-### 1. Bogomolny bound and BPST `|Q| = 1` solution
+Full global Atiyah-Singer, Luescher admissibility/gradient-flow, and existence
+theorems for all smooth bundles remain parallel mathematical context unless a
+separate retained-grade authority packet is independently audited.
 
-Statement: for a Euclidean Yang-Mills field with second Chern number
-`Q = (1 / 8 pi^2) ∫ tr(F ∧ F)`, the Euclidean Yang-Mills action
-satisfies the **Bogomolny bound**
+## Input Boundary
 
-```
-S_E  =  (1 / 4) ∫ tr(F ∧ *F)  >=  (8 pi^2 / g^2)  |Q|,
-```
+The bounded certificate uses these standard mathematical inputs and
+conventions; it does not derive them from `Cl(3,0)` on `Z^3`:
 
-with equality saturated when `F = +/- *F` (self-dual or anti-self-dual).
-The **BPST instanton** (Belavin, Polyakov, Schwartz, Tyupkin 1975) is
-the canonical `|Q| = 1` solution of the self-dual equation on `R^4`
-with `S_E = 8 pi^2 / g^2`.
+- oriented Euclidean `R^4` and its Hodge-star convention on two-forms;
+- the Yang-Mills local action/topological-pairing normalization
+  `Q = (1/8 pi^2) int tr(F wedge F)`;
+- the standard BPST radial charge-density profile;
+- the standard twisted-`T^4` integer flux arithmetic for `Z_N` twists.
 
-References: A. A. Belavin, A. M. Polyakov, A. S. Schwartz,
-Yu. S. Tyupkin, "Pseudoparticle Solutions of the Yang-Mills
-Equations," *Phys. Lett. B* **59**, 85 (1975); E. B. Bogomolny,
-"Stability of classical solutions," *Sov. J. Nucl. Phys.* **24**, 449
-(1976).
+Those are the named admissions for this bounded row. The runner checks the
+finite algebra and arithmetic after these conventions are fixed.
 
-Role: provides the bound `S_E >= (8 pi^2 / g^2) |Q|` and the saturation
-configuration that fixes the canonical `8 pi^2 / g^2` 4D instanton
-action.
+## Local Algebraic Certificate
 
-### 2. Atiyah-Singer index theorem (integrality of `Q`)
+Let `F` be a real 2-form on oriented Euclidean `R^4`, represented in the basis
 
-Statement: on a compact 4-manifold the second Chern number `Q` of a
-Yang-Mills bundle is the **Atiyah-Singer index** of the chiral Dirac
-operator coupled to the gauge field; it is a topological invariant
-taking values in `Z`.
-
-Reference: M. F. Atiyah, I. M. Singer, "The index of elliptic
-operators: I-V," *Annals of Math.* **87**, 484 (1968), and subsequent
-papers in the series.
-
-Role: ensures `Q in Z` on compact Yang-Mills configurations (so that
-the Bogomolny minimum `S_E = (8 pi^2 / g^2) |Q|` is quantized).
-
-### 3. Luescher admissibility and gradient-flow lattice charge
-
-Statement: on a four-dimensional lattice with sufficiently fine
-spacing, the Luescher admissibility condition
-`||1 - U_p|| < epsilon` for every plaquette `U_p` defines a smooth
-sector of lattice gauge configurations on which the Wilson gradient
-flow converges to a continuum-instanton charge `Q_flow in Z` matching
-the continuum Atiyah-Singer index.
-
-References: M. Luescher, "Topological structure of the QCD vacuum
-revealed by overlap fermions," *Nucl. Phys. B (Proc. Suppl.)* **94**,
-112 (2001); M. Luescher, "Properties and uses of the Wilson flow in
-lattice QCD," *JHEP* **08**, 071 (2010).
-
-Role: provides the lattice-side admissibility / gradient-flow
-construction that recovers the continuum integer topological charge
-`Q` from a discrete `T^4` lattice computation. Consumed by the meron
-half-action sector (which requires twisted boundary conditions
-preserved by the flow) and the fractional-instanton dilute-gas
-constructions (which require admissible patching to control
-fractional `Q = k / N` sectors on twisted `T^4`).
-
-### 4. Twisted-`T^4` 't Hooft fluxes and fractional `Q = k / N`
-
-Statement: on the 4-torus `T^4` with `'t Hooft` twist matrices
-`Omega_{mu, nu}` valued in `Z_N`, the second Chern number is shifted
-by a fractional contribution
-
-```
-Q  =  k / N   +   (integer)
+```text
+01, 02, 03, 12, 13, 23.
 ```
 
-with `k = (1 / 2) sum_{mu < nu} n_{mu nu} n_{rho sigma}
-epsilon^{mu nu rho sigma}` determined by the twist `n_{mu nu}`.
+The Hodge star satisfies `*^2 = 1` on two-forms and splits
 
-References: G. 't Hooft, "A property of electric and magnetic flux in
-nonabelian gauge theories," *Nucl. Phys. B* **153**, 141 (1979);
-P. van Baal, "Some results for SU(N) gauge fields on the
-hypertorus," *Comm. Math. Phys.* **94**, 397 (1984).
+```text
+F = F_+ + F_-,    *F_+ = F_+,    *F_- = -F_-.
+```
 
-Role: provides the canonical fractional-topological-charge sector
-`Q = k / N` on twisted `T^4` consumed by the meron half-action
-external narrow theorem (`Q = 1 / 2`, action `4 pi^2 / g^2`) and the
-fractional-instanton dilute-gas condensate.
+Therefore
 
-## What this note does NOT claim
+```text
+||F||^2 = ||F_+||^2 + ||F_-||^2,
+<F,*F> = ||F_+||^2 - ||F_-||^2,
+```
 
-- This is NOT a re-derivation of any of the cited textbook results.
-- This is NOT a framework-level derivation of the topological-charge
-  quantization from `Cl(3)` on `Z^3` alone.
-- The bounded scope is the named non-derivation import only.
+so
 
-## Downstream usage
+```text
+||F||^2 >= |<F,*F>|
+```
 
-This wrapper is consumed by the following downstream notes (back-references, not load-bearing on this wrapper — these consumers cite this wrapper as upstream authority. Markdown links demoted to backticks to break length-2 cycles `cycle-0013`, `cycle-0014`, and `cycle-0015` in `docs/audit/data/cycle_inventory.json`; citation graph direction is *consumer → this wrapper*, not vice versa):
+with equality exactly on self-dual or anti-self-dual fields. With the standard
+instanton normalization `Q = (1/8 pi^2) int tr(F wedge F)`, this is the finite
+algebraic core of the Bogomolny action bound
 
-- `INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md` — uses Bogomolny + BPST + Atiyah-Singer + Luescher.
-- `MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md` — uses Luescher + twisted-`T^4` `'t Hooft / van Baal` for the `Q = 1/2`, `S = 4 pi^2 / g^2` sector.
-- `FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md` — uses Luescher + twisted-`T^4` `'t Hooft / van Baal` for fractional `Q = k / N` sectors on twisted `T^4`.
+```text
+S_E >= (8 pi^2/g^2) |Q|.
+```
+
+The runner verifies the Hodge star, the inequality on random two-forms, and
+equality on projected self-dual/anti-self-dual components.
+
+## BPST Normalization
+
+For the standard BPST charge-density profile, the radial integral reduces to
+
+```text
+int_{R^4} 48 rho^4 / (r^2 + rho^2)^4 d^4x
+  = 2 pi^2 int_0^infty 48 rho^4 r^3/(r^2+rho^2)^4 dr
+  = 8 pi^2.
+```
+
+The runner evaluates this normalization for several `rho` values and confirms
+that the charge/action normalization is scale-independent.
+
+## Twisted-Torus Fractional Charge
+
+For an antisymmetric integer flux matrix `n_{mu nu}` on `T^4`, the cup-product
+integer
+
+```text
+k = n_01 n_23 - n_02 n_13 + n_03 n_12
+```
+
+gives the fractional charge sector
+
+```text
+Q = k/N  mod Z
+```
+
+for the usual `Z_N` twist arithmetic. The runner checks representative
+`SU(2)`, `SU(3)`, and `SU(5)` examples, including the `SU(2)` half-charge
+case `Q = 1/2`.
+
+## Runner Certificate
+
+[`scripts/topological_instanton_bounded_certificate.py`](../scripts/topological_instanton_bounded_certificate.py)
+reports:
+
+```text
+PASS=3 FAIL=0
+```
+
+It covers:
+
+- Hodge star and Bogomolny inequality;
+- BPST radial `8 pi^2` normalization;
+- twisted `T^4` `k/N` charge arithmetic.
+
+## Literature Citations In Parallel
+
+The classical literature remains the source of the global smooth-bundle and
+field-existence context:
+
+- Belavin, Polyakov, Schwartz, and Tyupkin (1975) for the BPST instanton;
+- Bogomolny (1976) for the square-completion stability bound;
+- Atiyah-Singer (1968 series) for the global chiral index theorem;
+- Luescher (2001, 2010) for lattice admissibility and Wilson flow;
+- 't Hooft (1979) and van Baal (1984) for twisted-torus flux sectors.
+
+Those references are cited in parallel. The bounded certificate content here
+is only the finite algebra and arithmetic checked by the runner.
 
 ## Boundary
 
-This wrapper note is a named-import-only bounded theorem covering
-four textbook gauge-topology imports. It does not claim:
+This packet does not claim:
 
-- a framework derivation of any of the imported textbook theorems;
-- closure of any downstream external narrow theorem;
-- a tighter audit-tier status for the consumers.
+- a derivation of the full Atiyah-Singer theorem from the `Cl(3,0)` / `Z^3`
+  framework;
+- a proof that every lattice admissibility/gradient-flow hypothesis holds in
+  a framework configuration;
+- existence and uniqueness of all smooth BPST/twisted solutions;
+- closure of any downstream external narrow theorem.
 
-Its only function is to provide a citeable one-hop authority for the
-four textbook gauge-topology results so downstream external narrow
-theorem notes register the imports cleanly instead of carrying them
-as unattributed external citations.
+It does provide a bounded, auditable replacement for the previously hidden
+mathematical imports that were actually used numerically: the action bound
+normalization and the fractional charge arithmetic.

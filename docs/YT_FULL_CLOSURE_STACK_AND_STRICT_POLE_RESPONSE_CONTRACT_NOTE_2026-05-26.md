@@ -61,6 +61,8 @@ closed exactly:
   top-line nontriviality remains load-bearing
   normalized RN/Fisher source semantics remove the identity direction, so the
   connected-source premise is derived
+  real finite-record source semantics select the reflection-even C3 source,
+  so the C3 source direction is B_x up to sign
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -72,7 +74,7 @@ still open:
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
   accepted physical target/source direction inside the C3 tangent space
-  accepted reflection-even source premise and nontrivial top C3 line assignment
+  accepted nontrivial top C3 line assignment
   accepted exclusion of the C3 singlet line as the physical top row
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
@@ -384,6 +386,19 @@ basis removes `B_a = I/sqrt(3)` and leaves the connected tangent
 `x B_x + y B_y`.  This closes connectedness, while reflection evenness and
 nontrivial top-line assignment remain open.
 
+[`YT_C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_THEOREM_NOTE_2026-05-27.md`](YT_C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_THEOREM_NOTE_2026-05-27.md)
+then burns down reflection evenness.  Primitive finite-record RN sources are
+real observables.  In the retained real `hw=1` C3 basis, `B_a` and `B_x` are
+real while
+
+```text
+B_y = i(C-C^2)/sqrt(6)
+```
+
+is imaginary and reflection-odd.  A real finite-record source therefore has
+no `B_y` component.  Combining this with the connected-source theorem leaves
+`B_x` up to sign as the C3 source direction.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -551,6 +566,14 @@ derive reflection-even neutral-source authority and nontrivial top-line
 assignment, or produce strict top/W pole rows directly.
 ```
 
+After the real-record reflection theorem, this narrows again:
+
+```text
+C3 source direction is B_x up to sign;
+derive nontrivial top-line assignment, or produce strict top/W pole rows
+directly.
+```
+
 The top-line assignment boundary shows that this is not just wording:
 
 ```text
@@ -587,15 +610,14 @@ proposal_allowed_reason: |
   The closure stack and conditional pole/response algebra are explicit, and
   the primitive no-hidden-record source law is derived. The top-source
   identification route does not close from current structural inputs, and
-  the connected/reflection-even C3 source candidate still depends on
-  reflection-even source and top-line premises. The connected-source premise
-  is now derived by normalized RN/Fisher source semantics. The B_x candidate
-  gives 1/sqrt(6) only after the nontrivial top-line premise is supplied.
-  Strict same-source response evidence is not present, so retained or
-  proposed-retained Y_T wording is not allowed.
+  the C3 source direction is now B_x up to sign from normalized RN/Fisher plus
+  real finite-record source semantics. The B_x candidate gives 1/sqrt(6) only
+  after the nontrivial top-line premise is supplied. Strict same-source
+  response evidence is not present, so retained or proposed-retained Y_T
+  wording is not allowed.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-first_open_gate: reflection-even neutral-source authority plus nontrivial top-line assignment, or strict same-source top/W response evidence
+first_open_gate: nontrivial top-line assignment, or strict same-source top/W response evidence
 backup_route: audit accepts primitive top-source premise as physical source law
 ```
 

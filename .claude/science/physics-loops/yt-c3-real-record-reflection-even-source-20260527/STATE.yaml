@@ -1,0 +1,21 @@
+loop_slug: yt-c3-real-record-reflection-even-source-20260527
+mode: campaign_block
+target_status: best-honest-status
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: partially_closes
+branch: physics-loop/yt-primitive-physical-source-theorem-20260526
+stack_pr: 1980
+active_route: C3 real-record source direction
+hard_residual_attacked: reflection-even premise for the B_x source route
+result: |
+  Real finite-record source semantics exclude the imaginary reflection-odd
+  B_y direction. With normalized RN connectedness removing B_a, the C3 source
+  direction is B_x up to sign.
+open_imports:
+  - nontrivial top-line assignment
+  - strict same-source top/W pole rows
+proposal_allowed: false
+bare_retained_allowed: false
+next_exact_action: derive top as a nontrivial C3 character line or produce strict pole rows
+stop_condition: positive retained closure or narrowest honest blocker fully documented

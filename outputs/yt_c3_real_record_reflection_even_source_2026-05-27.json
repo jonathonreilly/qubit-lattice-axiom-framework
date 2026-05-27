@@ -1,0 +1,40 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "anchors": {
+    "connected_source_status": "exact-support",
+    "primitive_record_status": "exact-support",
+    "top_line_boundary_status": "no-go"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "connected_source_premise_derived": true,
+    "no_forbidden_imports": true,
+    "nontrivial_top_line_assignment_derived": false,
+    "real_finite_record_source_law_available": true,
+    "reflection_even_neutral_source_derived": true,
+    "source_direction_bx_selected": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "claim_id": "yt_c3_real_record_reflection_even_source_theorem_note_2026-05-27",
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "nontrivial top-line assignment",
+  "generated_by": "scripts/frontier_yt_c3_real_record_reflection_even_source.py",
+  "pass_count": 76,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Real finite-record source semantics exclude the imaginary reflection-odd B_y tangent, and normalized RN source semantics remove B_a. The source direction is therefore B_x up to sign, but the nontrivial top-line assignment and strict top/W response evidence remain open.",
+  "reachability_to_target": "partially_closes",
+  "real_record_projection_witness": {
+    "connected_real_source_direction": "B_x up to sign",
+    "real_record_forces": "y=0"
+  },
+  "real_reflection_witness": {
+    "imaginary_odd_basis": "B_y",
+    "real_even_basis": [
+      "B_a",
+      "B_x"
+    ],
+    "reflection": "R C R = C^2"
+  },
+  "trace_class": "upstream_support"
+}

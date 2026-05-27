@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 511 |
+| **retained_bounded** | 512 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1194 |
+| unaudited | 1193 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 808 |
+| `audited_clean` | 809 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1423 |
+| `unaudited` | 1422 |
 
 | claim_type | count |
 |---|---:|
@@ -432,6 +432,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | B | - |
 | `half_plane_chart_equivalence_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -6234,6 +6235,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** On H_c, setting s = q - c + delta gives s >= 0, so r = sqrt(s^2 + 1/4) is >= 1/2 and sqrt(r^2 - 1/4) = sqrt(s^2) = s; conversely r >= 1/2 makes sqrt(r^2 - 1/4) >= 0, giving q >= c - delta.  _(class `A`)_
 - **chain closes:** True — The image, inverse, and boundary claims close directly from real arithmetic, nonnegativity of square roots, and the half-plane condition s >= 0. No external dependencies or parent theorem are needed.
 - **rationale:** The source theorem is independently proved as a bounded algebraic identity. The runner stdout supports the symbolic inverse and boundary checks, but the generated classifier collapses retained checks to B/D context-heavy items; those framework-instance and parent-row context checks are not load-bearing. The discrepancy does not undermine the source proof because the algebra closes without importing the parent DM-neutrino construction.
+- **auditor confidence:** high
+
+### `hard_geometry_gravity_window_note`
+
+- **Note:** [`HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md`](../../docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded primary-runner direct-gravity window only: in the cached hard_geometry_gravity_window.py sweep over N=60/80/100, central y-cuts, asymmetry thresholds, field scales, and six seeds, the largest Born-safe layer-normalized gravity mean is the generated-asymmetry row family=asym, threshold=0.05, scale=1.0, N=100, with the printed finite-window metrics; not a mass-response theorem, universal hard-geometry law, or asymptotic claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the cached primary-runner sweep, the strongest Born-safe layer-normalized direct gravity pocket is family=asym, threshold=0.05, scale=1.0, N=100, with grav_ln=+2.297 +/- 0.486, grav_lin=+2.480, pur_min=0.937, born_max=6.66e-16, and ok=6.  _(class `C`)_
+- **chain closes:** True — The registered runner constructs the central-band and generated-asymmetry graph windows, computes linear and layer-normalized propagation, Born controls, purity, and gravity metrics, filters Born-safe rows, and selects the row with maximal layer-normalized gravity mean. The source note has narrowed the claim to exactly that finite primary-runner maximum and explicitly excludes mass-response ranking, carrier theorem, universal law, and asymptotic promotion.
+- **rationale:** The bounded claim closes because the source note's load-bearing best-pocket sentence matches the current SHA-pinned runner cache and stays within the primary-runner finite-window scope. The runner and helper sources compute the graph families, propagation, Born metric, purity, and gravity values from declared inputs rather than printing the target row or importing it from the note. Residual boundary: downstream use must not cite this as a physical hard-geometry carrier theorem, mass-response ranking, or asymptotic gravity law.
 - **auditor confidence:** high
 
 ### `hard_geometry_local_note`

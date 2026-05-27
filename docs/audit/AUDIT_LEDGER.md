@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1198 |
+| unaudited | 1199 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 54 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,10 +59,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 828 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 49 |
-| `audited_failed` | 47 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1427 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -87,7 +87,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 2019
 - runners with (C) first-principles compute hits: 982
-- runners with (D) external comparator hits: 588
+- runners with (D) external comparator hits: 589
 - decoration candidates (no C, no D): 342
 
 ## Top 25 by load-bearing score (topology only)
@@ -1070,7 +1070,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_fm_transfer_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
-| `gate_b_h025_joint_package_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -5040,19 +5039,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The detector-line phase-ramp mechanism itself does not cleanly carry over on the retained grown row: the phase-ramp slopes are small and the R^2 values are low, while zero-source reduction is exact.  _(class `C`)_
 - **chain closes:** True — The live runner recomputes the fixed-field grown-row companion scan, reproducing exact zero-source same-site and wavefield spans and low-R2 phase-ramp fits for both source layers. The source note frames the result as a bounded no-go for phase-ramp transfer and does not claim a geometry-generic or self-consistent field mechanism.
 - **rationale:** The negative claim closes on its own terms: the current runner and frozen log agree that the zero-source guardrail is exactly zero for both same-site and wavefield updates, while the phase-ramp fits remain weak with R2 = 0.294 and 0.298 on the two tested source layers. The note's retained surface is the bounded no-go, not a transfer of the exact-lattice wavefield mechanism. The distinguishability comparator also reproduces as wave/same > 1 in both rows, but it is not promoted into a coherent phase-ramp law. Residual boundary: the result is limited to this fixed-field runner, its imported grown-row constructor, central detector-line readout, source layers, strengths, and two-seed scan.
-- **auditor confidence:** high
-
-### `gate_b_h025_joint_package_note`
-
-- **Note:** [`GATE_B_H025_JOINT_PACKAGE_NOTE.md`](../../docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded compact h=0.25 exact-grid versus grown drift=0.2 single-seed replay of Born, d_TV, MI, and decoherence observables on the runner-defined geometry; not a canonical-family theorem or full Gate B closure claim.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The frozen compact replay table says the exact grid has Born 2.62e-15 and the grown drift=0.2 row has Born 2.94e-15 while matching d_TV, MI, and decoherence observables qualitatively.  _(class `C`)_
-- **chain closes:** False — The current SHA-pinned runner cache for the registered primary runner does not reproduce the source note's Born table entries. It prints 2.71e-15 for exact grid and 3.08e-15 for grown drift=0.2, while the source and legacy log print 2.62e-15 and 2.94e-15.
-- **rationale:** Issue: the source note's load-bearing replay table is stale relative to the current SHA-pinned runner cache for the registered primary runner. Why this blocks: a retained bounded numerical row must match its current registered runner artifact; otherwise downstream users cannot tell whether the authoritative table is the legacy log or the current cache. Repair target: update the source table to the current runner-cache values, or register a certificate tying the legacy log to the intended runner hash and explain why that artifact is authoritative; preferably add assertion-gated checks for the table. Claim boundary until fixed: the qualitative finite observation that both rows remain Born-clean at machine precision and in the same d_TV/MI/decoherence regime still appears supported, but this exact bounded table is not audit-clean as written.
 - **auditor confidence:** high
 
 ### `gate_b_no_restore_joint_package_note`

@@ -8533,15 +8533,15 @@
       "runner": "scripts/gate_b_h025_farfield.py"
     },
     "gate_b_h025_joint_package_note": {
-      "assert_count": 0,
+      "assert_count": 4,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
-        "D": 0
+        "D": 5
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "D",
       "runner": "scripts/gate_b_h025_joint_package.py"
     },
     "gate_b_no_restore_farfield_note": {
@@ -51112,18 +51112,18 @@
       "exists": true
     },
     "scripts/gate_b_h025_joint_package.py": {
-      "assert_count": 0,
+      "assert_count": 4,
       "claims": [
         "gate_b_h025_joint_package_note"
       ],
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
-        "D": 0
+        "D": 5
       },
       "decoration_candidate": false,
-      "dominant_class": null,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/gate_b_no_restore_farfield.py": {
@@ -56070,11 +56070,11 @@
       "A": 239,
       "B": 286,
       "C": 757,
-      "D": 300,
-      "none": 437
+      "D": 301,
+      "none": 436
     },
     "runners_classified": 2019,
     "runners_with_C": 982,
-    "runners_with_D": 588
+    "runners_with_D": 589
   }
 }

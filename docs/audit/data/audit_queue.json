@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 241,
-    "high": 330,
+    "high": 331,
     "leaf": 284,
     "medium": 318
   },
@@ -6842,6 +6842,30 @@
       "ready": true,
       "runner_path": "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py",
       "transitive_descendants": 246
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gravity_sign_audit_2026-04-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
+      ],
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.248,
+      "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
+      "transitive_descendants": 75
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -35617,6 +35641,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 11,
-  "total_pending": 1173
+  "ready_count": 12,
+  "total_pending": 1174
 }

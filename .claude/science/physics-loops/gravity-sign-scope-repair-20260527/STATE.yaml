@@ -1,0 +1,18 @@
+loop: gravity-sign-scope-repair-20260527
+target_claim_id: gravity_sign_audit_2026-04-10
+target_status: proposed_retained
+actual_current_surface_status: proposed_retained
+branch: physics-loop/gravity-sign-scope-repair-20260527
+base: origin/main
+current_route: narrow to configured 1D well/hill diagnostic
+files_touched:
+  - docs/GRAVITY_SIGN_AUDIT_2026-04-10.md
+  - scripts/frontier_gravity_sign_well_hill_diagnostic.py
+open_imports:
+  - parity/lapse coupling derivation from baseline axioms
+  - physical gravity-sign interpretation
+  - irregular graph portability
+verification:
+  - python3 scripts/frontier_gravity_sign_well_hill_diagnostic.py
+next_exact_action: run audit pipeline, commit, open PR
+stop_condition: PR created and row queued for independent re-audit

@@ -9853,16 +9853,16 @@
       "runner": "scripts/gravity_observable_hierarchy.py"
     },
     "gravity_sign_audit_2026-04-10": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 6,
-        "D": 0
+        "C": 2,
+        "D": 8
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_correct_coupling.py"
+      "dominant_class": "D",
+      "runner": "scripts/frontier_gravity_sign_well_hill_diagnostic.py"
     },
     "gravity_signed_source_density_boundary_note": {
       "assert_count": 0,
@@ -33181,21 +33181,6 @@
       "dominant_class": "D",
       "exists": true
     },
-    "scripts/frontier_correct_coupling.py": {
-      "assert_count": 0,
-      "claims": [
-        "gravity_sign_audit_2026-04-10"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 6,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true
-    },
     "scripts/frontier_cosmological_constant.py": {
       "assert_count": 0,
       "claims": [
@@ -38842,6 +38827,21 @@
         "B": 0,
         "C": 0,
         "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_gravity_sign_well_hill_diagnostic.py": {
+      "assert_count": 1,
+      "claims": [
+        "gravity_sign_audit_2026-04-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 8
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -55851,12 +55851,12 @@
     "dominant_class_distribution": {
       "A": 236,
       "B": 281,
-      "C": 755,
-      "D": 299,
+      "C": 754,
+      "D": 300,
       "none": 438
     },
     "runners_classified": 2009,
     "runners_with_C": 978,
-    "runners_with_D": 585
+    "runners_with_D": 586
   }
 }

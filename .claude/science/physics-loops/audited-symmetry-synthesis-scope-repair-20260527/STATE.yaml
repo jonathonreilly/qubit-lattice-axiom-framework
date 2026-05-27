@@ -1,6 +1,6 @@
 loop: audited-symmetry-synthesis-scope-repair-20260527
 target_claim_id: audited_symmetry_synthesis_note
-status: pr_pending
+status: pr_opened
 branch: physics-loop/audited-symmetry-synthesis-scope-repair-20260527
 base: origin/main
 actual_current_surface_status: proposed_retained
@@ -8,5 +8,6 @@ audit_required_before_effective_retained: true
 files_touched:
   - docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md
   - scripts/frontier_audited_symmetry_synthesis_scope_repair.py
-next_exact_action: commit, push, open PR
-stop_condition: PR opened for independent review/audit
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2094
+next_exact_action: independent review/audit
+stop_condition: met

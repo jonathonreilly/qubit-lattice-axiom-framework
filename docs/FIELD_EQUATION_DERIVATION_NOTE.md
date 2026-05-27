@@ -1,4 +1,4 @@
-# Field Equation Derivation — Variational Argument
+# Field Equation Variational Identity For A Stipulated Quadratic Graph Action
 
 **Status:** support - structural or confirmatory support note
 **Date:** 2026-04-11
@@ -24,82 +24,139 @@ No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
 
-**Audit-dispatch parent candidate:** If a future independent audit
-evaluates whether this variational wrapper is a non-chain-closing
-alias/decorative handle, the candidate parent is
-[`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md).
-This is source-side routing context only; it does not assert an
-`audit_status` or `effective_status`.
+## Scope Repair
 
-## The Problem
+The previous row mixed two claims:
 
-The screened Poisson equation (L + μ²)Φ = G·ρ was chosen by convention.
-Four alternatives (bare Laplacian, biharmonic, heat kernel) all pass the
-same consistency tests. Is the field equation a free parameter?
+1. a correct algebraic fact: varying the displayed quadratic graph-field
+   action gives the screened Poisson equation; and
+2. a stronger selection claim: the framework uniquely forces that action and
+   therefore uniquely forces the field equation.
 
-## The Variational Argument
+The audit accepted the algebraic variational calculation but rejected the
+selection claim. The context runner also reports that multiple field operators
+pass the tested consistency battery, so the current packet does not supply a
+uniqueness theorem.
 
-The total action for the coupled matter-field system on a graph is:
+This repaired row keeps only the exact variational identity.
 
-    S = S_matter[ψ] + S_field[Φ] + S_coupling[ψ, Φ]
+## Stipulated Action
 
-where the matter action is fixed by the staggered Dirac structure and
-the coupling is fixed by the parity prescription (m + Φ)·ε(x).
+Let `G = (V,E,w)` be a finite undirected weighted graph and let `L` be its
+weighted graph Laplacian:
 
-The simplest local quadratic field action on a graph is:
+```text
+(L Phi)_i = sum_j w_ij (Phi_i - Phi_j).
+```
 
-    S_field = (1/2) Σ_edges w_ij (Φ_i − Φ_j)² + (μ²/2) Σ_nodes Φ_i² − G Σ_nodes ρ_i Φ_i
+For real field values `Phi_i`, source density `rho_i`, coupling `G_c`, and
+screening parameter `mu^2 >= 0`, define the action
 
-The first term is the graph gradient energy (penalizes spatial variation).
-The second is the mass term (penalizes large field values).
-The third is the source coupling.
+```text
+S[Phi]
+  = 1/2 sum_(i,j in E) w_ij (Phi_i - Phi_j)^2
+    + (mu^2/2) sum_i Phi_i^2
+    - G_c sum_i rho_i Phi_i.
+```
 
-Extremizing δS_field/δΦ_i = 0 gives:
+Equivalently, with the standard `1/2 Phi^T L Phi` graph-gradient convention,
 
-    Σ_j w_ij (Φ_i − Φ_j) + μ² Φ_i = G ρ_i
+```text
+S[Phi] = 1/2 Phi^T (L + mu^2 I) Phi - G_c rho^T Phi.
+```
 
-which in matrix form is exactly:
+## Theorem
 
-    (L + μ²I) Φ = G ρ
+For the stipulated action above,
 
-The screened Poisson equation is the Euler-Lagrange equation of the
-simplest local quadratic graph field action.
+```text
+grad_Phi S = (L + mu^2 I) Phi - G_c rho.
+```
 
-## What This Means
+Therefore every stationary point satisfies
 
-The field equation is NOT purely "chosen by convention." It is justified by
-the requirement that the field-matter system is at a stationary point
-of the combined action, under the constraint that the field action is:
+```text
+(L + mu^2 I) Phi = G_c rho.
+```
 
-1. **Local** — involves only nearest-neighbor differences (the graph gradient)
-2. **Quadratic** — leading-order field theory (no self-interaction)
-3. **Positive-definite** — the field has a unique minimum (stability)
+If `mu^2 > 0`, then `L + mu^2 I` is strictly positive definite on every finite
+graph, so the stationary point is unique. If `mu^2 = 0`, the equation is the
+unscreened Poisson equation on the charge-neutral / gauge-fixed subspace; the
+constant mode remains the usual Laplacian kernel.
 
-Any other choice (biharmonic, heat kernel, etc.) corresponds to a
-DIFFERENT field action with higher-order terms or non-local structure.
-Within this restricted class, the screened Poisson equation is the unique
-lowest-order local field equation on the graph.
+## Proof
 
-## What Remains Free
+The weighted graph-gradient term is
 
-- **G** (coupling constant) — analogous to Newton's G_N
-- **μ** (screening mass) — analogous to the Compton wavelength of the
-  graviton; sets the range of the gravitational interaction
-- **The graph itself** — which bipartite graph is not predicted
+```text
+1/2 sum_(i,j in E) w_ij (Phi_i - Phi_j)^2 = 1/2 Phi^T L Phi.
+```
 
-These are free parameters, like coupling constants in any field theory.
-Having free coupling constants is standard physics, not a weakness.
+Because `L` is symmetric,
 
-## Connection to Einstein's Equation
+```text
+d/dPhi [1/2 Phi^T L Phi] = L Phi.
+```
 
-The graph Laplacian L is the discrete analog of the spatial Laplacian ∇².
-In the weak-field (linearized) limit, Einstein's equation reduces to:
+The mass term contributes
 
-    ∇²Φ = 4πG ρ
+```text
+d/dPhi [(mu^2/2) Phi^T Phi] = mu^2 Phi.
+```
 
-which on the graph becomes L Φ = G ρ. The screened version (L + μ²)Φ = G ρ
-corresponds to massive gravity (Yukawa-type potential with range 1/μ).
+The source term contributes
 
-So the field equation on the graph is best read as a lowest-order discrete
-analog of the linearized Einstein / Yukawa equation, not as a full derivation
-of Einstein's equation from the axioms.
+```text
+d/dPhi [-G_c rho^T Phi] = -G_c rho.
+```
+
+Adding the three derivatives gives
+
+```text
+grad_Phi S = (L + mu^2 I) Phi - G_c rho.
+```
+
+Stationarity `grad_Phi S = 0` gives the screened Poisson equation. This proves
+the bounded variational identity for the stipulated action.
+
+## What This Claims
+
+- Exact finite-graph Euler-Lagrange algebra for the displayed action.
+- Positive-definite uniqueness of the stationary solution when `mu^2 > 0`.
+- The unscreened `mu^2 = 0` boundary has the expected constant-mode gauge
+  freedom.
+
+## What This Does Not Claim
+
+- It does not derive the quadratic action from axioms.
+- It does not prove that the mass term is selected rather than supplied.
+- It does not prove that the source coupling is selected rather than supplied.
+- It does not prove uniqueness among all local, nonlocal, higher-derivative,
+  heat-kernel, or self-consistent field operators.
+- It does not derive Einstein's equation or a full relativistic field law.
+- It does not add a new axiom or apply an audit verdict.
+
+## Relation To Self-Consistency Preference
+
+[SELF_CONSISTENCY_FORCES_POISSON_NOTE.md](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)
+is retained-bounded as a finite operator-preference result on its tested
+surface. It supports why Poisson-type operators are scientifically useful in
+the current framework, but it explicitly is not a full uniqueness theorem.
+
+This row is therefore a companion bounded identity: if the displayed action is
+the action under review, then the screened Poisson equation follows exactly.
+Selecting that action remains a separate science target.
+
+## Verification
+
+Run:
+
+```bash
+python3 scripts/frontier_field_equation_variational_scope_repair.py
+```
+
+Expected:
+
+```text
+SUMMARY: PASS=21 FAIL=0
+```

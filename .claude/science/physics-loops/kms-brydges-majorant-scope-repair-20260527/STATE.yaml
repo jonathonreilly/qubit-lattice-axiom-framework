@@ -1,0 +1,29 @@
+loop: kms-brydges-majorant-scope-repair-20260527
+date: 2026-05-27
+mode: science-fix-loop
+target_claim_id: kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+active_route: scalar_majorant_scope_repair
+hard_residual: "The KMS BBF/Polchinski theorem and hypotheses are not derived or included; the repaired row no longer claims them."
+files_touched:
+  - docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md
+  - scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py
+  - .claude/science/physics-loops/kms-brydges-majorant-scope-repair-20260527/
+runner:
+  command: "PYTHONPATH=scripts python3 scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py"
+  result: "PASS=18 FAIL=0"
+  log: ".claude/science/physics-loops/kms-brydges-majorant-scope-repair-20260527/logs/runner_output.log"
+open_imports:
+  - "KMS BBF/Polchinski inequality remains context only."
+trace_gate:
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+  artifact_role: demotion
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+pr_status: pending
+next_exact_action: "Run vocab lint, audit pipeline, commit, push, and open a draft PR."
+stop_condition: "Draft PR opened for independent review, then continue to the next ledger row."

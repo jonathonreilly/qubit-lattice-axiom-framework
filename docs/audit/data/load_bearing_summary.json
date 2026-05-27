@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 374,
     "high": 512,
-    "leaf": 1045,
+    "leaf": 1046,
     "medium": 619
   },
   "flagship_signal_used": false,
-  "node_count": 2550,
+  "node_count": 2551,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -67,8 +67,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 37.525,
-      "transitive_descendants": 1041
+      "load_bearing_score": 37.527,
+      "transitive_descendants": 1042
     },
     {
       "claim_id": "yt_ew_color_projection_theorem",
@@ -97,8 +97,8 @@
     {
       "claim_id": "minimal_axioms_2026-04-11",
       "criticality": "critical",
-      "load_bearing_score": 33.364,
-      "transitive_descendants": 931
+      "load_bearing_score": 33.366,
+      "transitive_descendants": 932
     },
     {
       "claim_id": "cl3_color_automorphism_theorem",
@@ -139,8 +139,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 30.32,
-      "transitive_descendants": 903
+      "load_bearing_score": 30.322,
+      "transitive_descendants": 904
     },
     {
       "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",

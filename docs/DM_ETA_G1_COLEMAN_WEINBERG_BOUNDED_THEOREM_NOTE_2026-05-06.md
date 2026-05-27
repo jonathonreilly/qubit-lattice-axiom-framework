@@ -1,15 +1,88 @@
 # DM-eta G1 Wilson-Link Coleman-Weinberg Bridge Theorem (V1)
 
+## Audit-correction (2026-05-27)
+
+A narrative contradiction in this note's Fierz-channel framing was
+identified and corrected by
+[`DM_ETA_G1_FIERZ_CHANNEL_NARRATIVE_CORRECTION_NOTE_2026-05-27.md`](DM_ETA_G1_FIERZ_CHANNEL_NARRATIVE_CORRECTION_NOTE_2026-05-27.md).
+
+**What was wrong:** This note describes the 8/3 enhancement as arising
+from "the per-color-row adjoint trace density" via "the operator-trace
+projection through the adjoint Fierz channel". The dark mass operator
+`sum_a T^a T^a = C_F I` is in fact **proportional to the identity**,
+which lives in the **SINGLET channel** of `End(C^N_c)`, not the
+adjoint channel. The runner's Test 12 makes this explicit:
+`||P_sing @ Sigma|| = 0.456`, `||P_adj @ Sigma|| = 0.000`. The note's
+Section 2 Step 6 already acknowledges this ("an identity matrix lives
+on the SINGLET channel"), but the headline, Section 0 Step 2, and
+Section 4 Closed item 5 retain the incompatible "adjoint Fierz channel"
+narrative.
+
+**What is corrected:** The 8/3 identity is **arithmetically correct**
+and arises from two algebraically equivalent readings, both of which
+should be read as **Casimir + Wilson-hop geometric doubling**, not as
+adjoint Fierz channel projections:
+
+  - **(R1, corrected reading) Per-color-row scalar trace density:**
+    `rho_{adj/c} = (1/N_c) * 2 * sum_a Tr[T^a T^a] = (N^2-1)/N = 8/3`.
+    This is `(1/N_c) Tr[2 C_F I] = 2 C_F`, a per-row scalar trace of
+    a singlet-channel matrix, not a Fierz channel projection. The "8"
+    in `(N^2-1)/N` is the count of Gell-Mann generators
+    (`sum_a Tr[T^a T^a] = (N^2-1)/2 = 4`), times the geometric factor
+    `2` (forward+backward Wilson hops), divided by `N_c`.
+  - **(R2) Forward + backward Wilson-hop doubling of the standard
+    one-loop CW Casimir:** `rho_{adj/c} = 2 * C_F = 2 * (N^2-1)/(2N)
+    = 8/3`. This is the correct structural reading: `C_F = 4/3` is
+    the textbook SU(N) one-loop Casimir on a fundamental scalar
+    (singlet channel of `End(C^N_c)`), doubled by the geometric
+    pairing of forward + backward Wilson links on the chiral cube.
+
+The two readings are algebraically equivalent (Test 13) because
+`sum_a Tr[T^a T^a] = Tr[sum_a T^a T^a] = Tr[C_F I] = C_F N_c`, so the
+"per-color-row trace density" reading reduces to `2 C_F`.
+
+**What is unchanged:**
+- All 17 runner tests still PASS. Tests 7, 11, 13, 15 confirm the
+  arithmetic identity `8/3` and the composition `m_DM = 16 v` on the
+  canonical surface.
+- The composition `m_DM = (8/3) * 6 v = 16 v` (Test 15).
+- The Casimir + forward+backward Wilson-hop doubling mechanism
+  (Steps 4-5 of the proof, the technical content of the explicit CW
+  derivation).
+- The standard one-loop CW Casimir `sum_a T^a T^a = C_F I` for a
+  color-fundamental (Test 4, the textbook content).
+- The dark `|111>` color-fundamental status (Test 3).
+
+**What is removed as load-bearing structural narrative:**
+- "Operator-trace projection through the adjoint Fierz channel" as
+  the mechanism for 8/3 (Section 0 Step 2). The mechanism is Casimir
+  + Wilson-hop doubling, NOT a Fierz channel projection.
+- "Per-color-row Fierz adjoint trace density" as a Fierz channel
+  reading (R1 above and Section 4 Closed item 5). The per-color-row
+  scalar trace is `(1/N_c) Tr[matrix]`, which is a scalar trace
+  operation, not a Fierz channel projection on `End(C^N_c)`.
+
+**Reading instruction:** When the prose below refers to "adjoint
+Fierz channel", "per-color-row Fierz density", or "Fierz selection",
+read these as referring to the algebraically equivalent
+"Casimir + forward+backward Wilson-hop geometric doubling" mechanism
+(R2). The arithmetic is correct; the channel attribution in the
+narrative is corrected by this audit-correction.
+
+---
+
 **Date:** 2026-05-06
 **Status:** **bounded support theorem** that derives the structural
 identification cited from `CL3_COLOR_AUTOMORPHISM_THEOREM` Section H by
 the V1 operator-level bridge proof (PR #618). This V1 supplies the
 explicit Wilson-link Coleman-Weinberg expansion on the SU(3)-gauged
-Cl(3) chiral cube and reproduces the per-color-row adjoint trace
+Cl(3) chiral cube and reproduces the per-color-row trace
 density `rho_{adj/c} = (N^2-1)/N = 8/3` exactly through two
-algebraically equivalent readings:
+algebraically equivalent readings (see Audit-correction (2026-05-27)
+above for corrected channel attribution):
 
-  - (R1) Per-color-row Fierz adjoint density:
+  - (R1) Per-color-row scalar trace density (NOT a Fierz channel
+    projection; see Audit-correction above):
     `rho_{adj/c} = (1/N_c) * 2 * sum_a Tr[T^a T^a] = 8/3`.
   - (R2) Forward + backward Wilson-hop doubling of the standard
     one-loop CW Casimir: `rho_{adj/c} = 2 * C_F = 2 * (N^2-1)/(2N) = 8/3`.

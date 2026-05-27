@@ -1,12 +1,82 @@
 # DM-eta G1 Dynamical Residual: Operator-Trace Support Theorem (V1)
 
+## Audit-correction (2026-05-27)
+
+This note's framing of "operator-trace projection through the adjoint
+Fierz channel on `End(C^N_c)`" was identified as a narrative
+contradiction (the operator `sum_a T^a T^a = C_F I` is in fact in the
+SINGLET channel of `End(C^N_c)`, not the adjoint channel) and
+corrected by
+[`DM_ETA_G1_FIERZ_CHANNEL_NARRATIVE_CORRECTION_NOTE_2026-05-27.md`](DM_ETA_G1_FIERZ_CHANNEL_NARRATIVE_CORRECTION_NOTE_2026-05-27.md).
+
+**What was wrong:** The Counterfactual Pass (Section 1) and the theorem
+statement (Section 2) frame route (c) as "adjoint Fierz channel
+projection" and derive `rho_{adj/c} = 8/3` as a Fierz-channel-density
+identity. The actual computation is a per-color-row scalar trace
+density, equivalent to `2 * C_F` where `C_F = (N^2-1)/(2N) = 4/3` is
+the textbook one-loop Casimir for a fundamental. The matrix
+`sum_a T^a T^a = C_F I` is proportional to identity, hence singlet
+channel of `End(C^N_c)`. The Fierz framing is incompatible with this.
+
+**What is corrected:** The route is relabeled "per-color-row scalar
+trace density + forward+backward Wilson-hop geometric doubling". The
+arithmetic identity `8/3 = (N_c^2 - 1)/N_c = 2 C_F` is preserved. The
+12 runner tests are unaffected.
+
+**What is preserved as structural content:**
+- The Fierz completeness identity `P_singlet + P_adj = I` on
+  `End(C^N_c)` is a correct textbook decomposition (Test 1). It is
+  used in the runner to verify projector properties; it is not the
+  mechanism through which 8/3 emerges.
+- The trace counts `Tr[P_singlet] = 1`, `Tr[P_adj] = N_c^2 - 1 = 8`
+  (Test 2) are correct (dimensions of the singlet and adjoint
+  subspaces of `End(C^N_c)`).
+- The per-color-row scalar trace density `2 * sum_a Tr[T^a T^a] / N_c
+  = (N_c^2 - 1)/N_c = 8/3` (Test 3). This is a per-row trace of the
+  *scalar* `Tr[sum_a T^a T^a] = Tr[C_F I] = C_F N_c`, multiplied by 2
+  (forward+backward Wilson hops) and divided by N_c (per-row average).
+  Note: this is a scalar trace operation, not a Fierz channel
+  projection of the operator.
+- The bare Wilson mass `m_S3_bare = 2 r * hw_dark = 6` lattice units
+  for the dark `hw=3` singlet (Test 4).
+- The composition `m_DM = 6 * (8/3) * v = 16 v = N_sites * v` (Tests
+  5, 7, 9).
+- The six wrong-channel ruleouts (Test 8).
+- The carrier-level identity `dim(C^8) = dim(adj_3) = 8` (Test 10) as
+  a structural observation: dim(adj) = N_c^2 - 1 = 8 is the count of
+  Gell-Mann generators, which equals the chiral cube dimension. This
+  algebraic equality remains; it is no longer framed as a "necessary
+  condition for an adjoint-channel bridge".
+
+**What is removed as load-bearing narrative:**
+- The Counterfactual Pass route (c) label "Adjoint Fierz channel
+  projection" (the mechanism is per-color-row trace + geometric
+  doubling, not Fierz channel projection).
+- The "residual-of-the-residual" bridge step framed as "the dark hw=3
+  Wilson mass operator on the SU(3)-gauged chiral cube projects
+  through the adjoint Fierz channel and not the singlet channel".
+  After this audit-correction, the bridge step is replaced by the
+  Casimir + Wilson-hop doubling mechanism (which is closed by the
+  Coleman-Weinberg note's runner Tests 4-7, 11, 13).
+
+**Reading instruction:** When the prose below refers to "adjoint Fierz
+channel projection" or "per-color-row adjoint Fierz density", read these
+as referring to the structurally correct "Casimir + forward+backward
+Wilson-hop geometric doubling" mechanism: `8/3 = 2 * C_F = (N^2-1)/N`.
+The arithmetic identity is correct; the channel attribution in the
+narrative is corrected by this audit-correction note.
+
+---
+
 **Date:** 2026-05-06
 **Status:** **bounded support theorem** on the dynamical step of the
 DM-eta G1 closure. This note sharpens the previously-flagged dynamical
 residual by deriving `rho_{adj/c} = 8/3`
-from the operator-trace projection through the adjoint Fierz channel
-on End(C^N_c), conditional on a named "residual-of-the-residual" bridge
-step. It does NOT change the parent DM-eta lane's ledger status.
+from the per-color-row scalar trace density of the bare Wilson taste-mass
+kernel on End(C^N_c) (NOT, per the 2026-05-27 audit-correction above,
+the adjoint Fierz channel projection -- the latter is the singlet
+channel for `sum_a T^a T^a = C_F I`). It does NOT change the parent
+DM-eta lane's ledger status.
 
 **Type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_dm_eta_g1_dynamical_residual_2026_05_06.py`](../scripts/frontier_dm_eta_g1_dynamical_residual_2026_05_06.py)

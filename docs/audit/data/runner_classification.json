@@ -22741,16 +22741,16 @@
       "runner": "scripts/frontier_three_generation_observable_theorem.py"
     },
     "three_generation_structure_note": {
-      "assert_count": 3,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 4,
+        "B": 1,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_generation_fermi_point.py"
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_three_generation_structure_narrow_spectrum.py"
     },
     "translation_abelian_composition_theorem_note_2026-05-02": {
       "assert_count": 0,
@@ -38492,8 +38492,7 @@
     "scripts/frontier_generation_fermi_point.py": {
       "assert_count": 3,
       "claims": [
-        "three_generation_chirality_boundary_note",
-        "three_generation_structure_note"
+        "three_generation_chirality_boundary_note"
       ],
       "counts": {
         "A": 0,
@@ -48125,6 +48124,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_three_generation_structure_narrow_spectrum.py": {
+      "assert_count": 1,
+      "claims": [
+        "three_generation_structure_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_trYsquared_proof_walk_lattice_independence.py": {
       "assert_count": 1,
       "claims": [
@@ -55672,15 +55686,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 334,
+    "decoration_candidates": 335,
     "dominant_class_distribution": {
       "A": 236,
-      "B": 280,
+      "B": 281,
       "C": 750,
       "D": 299,
       "none": 438
     },
-    "runners_classified": 2003,
+    "runners_classified": 2004,
     "runners_with_C": 973,
     "runners_with_D": 583
   }

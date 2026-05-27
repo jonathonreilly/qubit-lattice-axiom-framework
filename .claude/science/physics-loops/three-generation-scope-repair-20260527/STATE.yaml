@@ -1,0 +1,26 @@
+slug: three-generation-scope-repair-20260527
+date: 2026-05-27
+mode: run
+target_status: bounded-support
+current_goal: >
+  Repair the audited_conditional three_generation_structure_note by narrowing
+  it to the runner-backed Hamming-weight spectrum plus the direct M_3(C)
+  no-quotient dependency.
+cycle_count: 1
+active_route: no-rooting scope split
+hard_residual: >
+  The prior row bundled a no-rooting exclusion without a one-hop narrow theorem
+  packet. The audit accepted the spectral runner surface and the M_3(C)
+  no-quotient dependency, but not that exclusion.
+files_touched:
+  - docs/THREE_GENERATION_STRUCTURE_NOTE.md
+  - docs/audit/*
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+open_imports:
+  - The staggered-Dirac/Wilson Z^3 surface remains admitted context.
+  - No-rooting remains a separate unresolved theorem opportunity.
+trace_gate: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: run final checks, commit, push, and open review PR
+stop_condition: review PR opened with row queued for independent audit

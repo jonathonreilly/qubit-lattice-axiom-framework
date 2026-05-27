@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 537 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1158 |
+| unaudited | 1159 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 77 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 836 |
-| `audited_conditional` | 77 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1387 |
+| `unaudited` | 1388 |
 
 | claim_type | count |
 |---|---:|
@@ -85,10 +85,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2003
+- runners classified: 2004
 - runners with (C) first-principles compute hits: 973
 - runners with (D) external comparator hits: 583
-- decoration candidates (no C, no D): 334
+- decoration candidates (no C, no D): 335
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 924 | 32.35 | `audited_clean` | **retained** |
 | 16 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 565 | 32.15 | `unaudited` | unaudited |
 | 17 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 563 | 31.14 | `unaudited` | unaudited |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `audited_conditional` | ~~audited_conditional~~ |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 693 | 30.44 | `unaudited` | unaudited |
 | 19 | `left_handed_charge_matching_note` | decoration | critical | 676 | 30.40 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 20 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 908 | 30.33 | `audited_renaming` | ~~audited_renaming~~ |
 | 21 | `cpt_exact_note` | positive_theorem | critical | 901 | 29.82 | `audited_clean` | **retained** |
@@ -1025,7 +1025,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `three_generation_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13763,18 +13762,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Given the specified operators, the projector construction, matrix-unit generation, observable-descent lemma, and irreducibility argument are standard finite-dimensional linear algebra. The cited retained inputs are sufficient for this narrowed operator-algebra surface, while physical-species and substrate claims are explicitly out of scope.
 - **rationale:** The load-bearing step is a genuine class-A algebraic closure over the supplied operator inputs, not a definition, renaming, numerical match, or external comparator check. The runner source hard-codes the specified finite matrices as inputs but then actually verifies the projector ranks, matrix-unit generation, commutant dimension, observable descent, and irreducibility checks. The negative no-proper-quotient boundary passes the restricted no-go gate because attack routes such as preserving only translations, dropping C3, approximate reduction, nonlinear quotienting, or physical reinterpretation all leave the stated exact full-algebra quotient scope.
 - **auditor confidence:** high
-
-### `three_generation_structure_note`
-
-- **Note:** [`THREE_GENERATION_STRUCTURE_NOTE.md`](../../docs/THREE_GENERATION_STRUCTURE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Attempted bounded theorem for the four local structural items on the admitted staggered-Dirac/Z^3 surface: corner/Hamming-weight spectrum, hw=1 lightest nonzero-mass triplet, Hamiltonian Cl(3) no-rooting, and retained M_3(C)/no-proper-quotient; physical-species, SM-generation, substrate, CKM, and full matter-content claims are excluded.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-fresh-three-generation-structure-C75Ktt-2026-05-26-pass1`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The in-scope statement bundles four local structural items: exact corner/orbit algebra 8=1+1+3+3, hw=1 as the lightest nonzero-mass triplet on Z^3, rooting not well-defined in Hamiltonian Cl(3) on Z^3, and exact M_3(C)/no proper exact quotient on the hw=1 triplet.  _(class `C`)_
-- **chain closes:** False — The retained direct dependency is authoritative for item (4) only. The primary runner closes the finite corner/Wilson/Hamming-weight side for items (1)-(2) and prints a bounded physical-identification assumption, but it does not prove item (3), and the source admits no standalone retained no-rooting theorem packet currently exists.
-- **rationale:** Issue: the source scope bundles four items, but the restricted packet closes only the spectral/Wilson/Hamming items and the M_3(C)/no-proper-quotient item. Why this blocks: the negative rooting-not-well-defined subclaim has no retained one-hop theorem in the packet, the primary runner does not test it, and under no-go discipline the packet cannot support a clean exclusion result for that subclaim. Repair target: add and audit a no-rooting narrow theorem as a direct retained-grade dependency, or narrow this row to the spectral plus M_3(C)/no-quotient content. Claim boundary until fixed: no rooting-exclusion, physical-species, SM-generation, substrate, CKM, or full matter-content closure is retained from this row.
 
 ### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`
 

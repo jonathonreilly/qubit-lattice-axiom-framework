@@ -19549,6 +19549,18 @@
       "to": "ordered_lattice_quasi_persistent_relaunch_2d_note"
     },
     {
+      "from": "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
       "from": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
       "to": "cpt_exact_note"
     },
@@ -67233,6 +67245,22 @@
       "runner_path": "scripts/ordered_lattice_quasi_persistent_relaunch.py",
       "title": "Ordered-Lattice Quasi-Persistent Relaunch Note"
     },
+    "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {
+      "claim_id": "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e0eadc8f894fb9b2df9d3edb5e5d7f653b5894beeff98dff7b4db6db089e6320",
+      "path": "docs/OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "runner_path": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py",
+      "title": "Finite-Dimensional Spectral Wick-Rotation Bridge from Framework Companions Narrow Theorem"
+    },
     "p_lh_order_one_staggered_dirac_open_gate_note_2026-05-10_pplh_order_one": {
       "claim_id": "p_lh_order_one_staggered_dirac_open_gate_note_2026-05-10_pplh_order_one",
       "claim_type_author_hint": "open_gate",
@@ -85419,7 +85447,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 610,
+      "bounded_theorem": 611,
       "decoration": 1,
       "meta": 191,
       "no_go": 84,
@@ -85428,7 +85456,7 @@
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1028,
+      "bounded_theorem": 1029,
       "decoration": 1,
       "meta": 191,
       "no_go": 187,
@@ -85436,10 +85464,10 @@
       "open_gate": 126,
       "positive_theorem": 590
     },
-    "edge_count": 9737,
-    "leaf_count": 795,
-    "node_count": 2550,
+    "edge_count": 9740,
+    "leaf_count": 796,
+    "node_count": 2551,
     "root_count": 855,
-    "runners_with_path": 2125
+    "runners_with_path": 2126
   }
 }

@@ -16464,6 +16464,18 @@
       "dominant_class": null,
       "runner": "scripts/ordered_lattice_quasi_persistent_relaunch.py"
     },
+    "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {
+      "assert_count": 0,
+      "counts": {
+        "A": 3,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py"
+    },
     "p_lh_order_one_staggered_dirac_open_gate_note_2026-05-10_pplh_order_one": {
       "assert_count": 1,
       "counts": {
@@ -53390,6 +53402,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py": {
+      "assert_count": 0,
+      "claims": [
+        "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/packet_memory.py": {
       "assert_count": 0,
       "claims": [
@@ -56038,15 +56065,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 341,
+    "decoration_candidates": 342,
     "dominant_class_distribution": {
-      "A": 238,
+      "A": 239,
       "B": 286,
       "C": 757,
       "D": 300,
       "none": 437
     },
-    "runners_classified": 2018,
+    "runners_classified": 2019,
     "runners_with_C": 982,
     "runners_with_D": 588
   }

@@ -11538,7 +11538,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 23.322,
+      "load_bearing_score": 23.323,
       "load_bearing_step": "The complexification splits as Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands distinguished by \u03c9 \u2192 \u00b1i, so each summand has the unique 2-dimensional M_2(C) irreducible module and finite-dimensional representations decompose into copies of the two chiral irreps.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -12053,7 +12053,7 @@
       },
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
-      "transitive_descendants": 904,
+      "transitive_descendants": 905,
       "verdict_rationale": "The load-bearing step is an algebraic Clifford-algebra classification and representation-theory decomposition, not a numerical fit, definition, or external comparator. Both cited one-hop authorities are retained-grade and directly cover the split, chirality labels, two-dimensional irreps, and uniqueness within chirality. The runner source performs concrete Pauli-matrix and chirality checks, with one weak random-search exhibit for 3D nonexistence, but the proof of odd-dimensional exclusion is supplied by the retained algebraic decomposition rather than by that search."
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
@@ -12165,7 +12165,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 17.776,
+      "load_bearing_score": 17.778,
       "load_bearing_step": "The bounded claim closes by combining the finite-range Lieb-Robinson series bound for L1/L3/L4 with the one-hop retained_bounded Delta_T finite-Lambda support and mass-gap bridge for L2 only as finite-block temporal transfer-matrix clustering.",
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
@@ -12415,7 +12415,7 @@
       },
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 876,
+      "transitive_descendants": 877,
       "verdict_rationale": "A five-judge panel produced a 4-of-5 majority for the second audit tuple. The source note's L1/L3/L4 branch is an internal finite-range Lieb-Robinson/path-count/norm argument, but the full bounded parent claim also depends on the surviving L2 branch, which is supplied by one-hop retained_bounded Delta_T finite-Lambda support and the mass-gap bridge to finite-block temporal transfer-matrix clustering. That decisive full-row closure is cross-note input verification, so the ratified load-bearing class is B. The clean verdict is restricted to that finite-block/finite-Lambda temporal scope; the legacy unconditional spatial cluster-decomposition, thermodynamic-limit, continuum, and general thermal-clustering readings are not audited as closed. The runner's E1-E4 PASS lines remain representative finite 1D free-fermion computations and are not promoted to proof of the theorem."
     },
     "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": {
@@ -13904,7 +13904,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 19.77,
+      "load_bearing_score": 19.771,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -14016,7 +14016,7 @@
       },
       "runner_path": "scripts/axiom_first_microcausality_check.py",
       "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-      "transitive_descendants": 872,
+      "transitive_descendants": 873,
       "verdict_rationale": null
     },
     "axiom_first_reeh_schlieder_theorem_note_2026-05-01": {
@@ -14155,13 +14155,13 @@
         "staggered_only_det_positivity_case_a_note_2026-05-17",
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 34,
+      "direct_in_degree": 35,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 26.794,
+      "load_bearing_score": 27.296,
       "load_bearing_step": "The gauge half is asserted to be a positive Haar norm square, the staggered determinant input strictly positive configuration-by-configuration, and their product is asserted to give <Theta(F) F> = ||psi_F||^2 >= 0.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -14652,7 +14652,7 @@
       },
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only Sector",
-      "transitive_descendants": 887,
+      "transitive_descendants": 888,
       "verdict_rationale": "E1-E5 pass, but they are finite representative structural checks: free staggered transfer matrices, a truncated U(1) plaquette, finite Fock-space RP samples, a finite Gram matrix, and finite anticommutation checks. They do not compute or prove the load-bearing arbitrary compact SU(3) gauge-half boundary factorization or the staggered Grassmann half-action reflection-positive factorization. E6 is correctly diagnostic-only and cannot carry the theorem. The narrowed Wilson-excluding scope is appropriate, but the proof still imports missing reflection-positivity bridge theorems beyond the cited retained inputs."
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
@@ -14736,13 +14736,13 @@
         "lorentz_kernel_positive_closure_note",
         "minimal_axioms_2026-04-11"
       ],
-      "direct_in_degree": 19,
+      "direct_in_degree": 20,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 19.267,
+      "load_bearing_score": 19.768,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -14830,7 +14830,7 @@
       },
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
       "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 870,
+      "transitive_descendants": 871,
       "verdict_rationale": null
     },
     "axiom_first_sm_anomaly_cancellation_complete_note_2026-05-17": {
@@ -14976,13 +14976,13 @@
       "deps": [
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
-      "direct_in_degree": 10,
+      "direct_in_degree": 11,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 14.773,
+      "load_bearing_score": 15.275,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -15121,7 +15121,7 @@
       },
       "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
       "title": "Axiom-First Spectrum Condition (Lattice Analogue) on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 874,
+      "transitive_descendants": 875,
       "verdict_rationale": null
     },
     "axiom_first_spin_statistics_theorem_note_2026-04-29": {
@@ -36760,7 +36760,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 23.36,
+      "load_bearing_score": 23.361,
       "load_bearing_step": "Cl(3,0) is real-isomorphic to M_2(C), and after complexification the central idempotents e_\u00b1 split it as M_2(C) \u2295 M_2(C), whose irreducible modules have complex dimension 2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -36781,7 +36781,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
-      "transitive_descendants": 928,
+      "transitive_descendants": 929,
       "verdict_rationale": "The load-bearing content is a standard class-(A) algebraic closure: centrality and square of the pseudoscalar, the real-algebra isomorphism Cl(3,0) \u2245 M_2(C), the complexified idempotent split, and the 2-dimensional simple-module readout. The runner source genuinely performs exact symbolic Pauli-matrix and abstract idempotent checks rather than importing external constants or fitted premises. The proof stays within the stated abstract algebra scope and explicitly excludes the open physical per-site Hilbert-space bridge."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -37110,7 +37110,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 17.825,
+      "load_bearing_score": 17.827,
       "load_bearing_step": "The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with summands distinguished by omega = +/- i, yields exactly the two faithful irreducible complex 2-dimensional representations.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -37131,7 +37131,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
       "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
-      "transitive_descendants": 906,
+      "transitive_descendants": 907,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem."
     },
     "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": {
@@ -39779,7 +39779,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.78,
+      "load_bearing_score": 13.781,
       "load_bearing_step": "Lemma B gives strict positivity of the finite-Lambda SU(3) Wilson heat-kernel transfer kernel, Lemma C gives trace-class compactness, self-adjointness follows from the real symmetric kernel, and Perron-Jentzsch/Krein-Rutman then gives a simple top eigenvalue with a strict spectral gap.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -39800,7 +39800,7 @@
       },
       "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
       "title": "Operator-Theoretic Delta_T > 0 Support on the Finite-Lambda SU(3) Transfer Operator",
-      "transitive_descendants": 878,
+      "transitive_descendants": 879,
       "verdict_rationale": "The core pure-Wilson claim is not a definition, renaming, external comparison, or tuned numerical match; it is an operator-theoretic finite-volume derivation on SU(3)^E. The runner source performs genuine SU(3) character-series, Haar-quadrature, heat-equation, and sampled positivity checks, with V4 and V6 mainly algebraic spectrum checks. The staggered+Wilson T_full material is explicitly presented only as conditional on Leg A and is not promoted as an unconditional result in this audit scope."
     },
     "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": {
@@ -39867,7 +39867,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.78,
+      "load_bearing_score": 13.781,
       "load_bearing_step": "Using the spectral decomposition of T/M_T and Cauchy-Schwarz, the connected ground-state correlator is bounded by ||A|| ||B|| exp(-n Delta_T), with the thermal bound obtained by adding a 6 q_beta trace-distance correction.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -39888,7 +39888,7 @@
       },
       "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
       "title": "Mass-Gap Bridge for Cluster Decomposition on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 878,
+      "transitive_descendants": 879,
       "verdict_rationale": "The audited claim is only the bounded finite-dimensional implication from an assumed transfer-matrix gap to temporal decay, and that implication closes by standard spectral algebra. The runner constructs random positive Hermitian transfer matrices, checks the spectral identity, ground-state bound, thermal trace-distance bound, and a no-gap counterexample; it does not hard-code a disputed physical gap. The clean boundary is narrow: this does not prove Delta_T > 0 on A_min and does not prove spatial cluster decomposition."
     },
     "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
@@ -44985,7 +44985,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 30.32,
+      "load_bearing_score": 30.322,
       "load_bearing_step": "`CPT * H * (CPT)^{-1} = C * P * H * P * C = C * (-H) * C = -(-H) = H`, hence the CPT/Theta_H-odd Hamiltonian-sector projection vanishes.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -45314,7 +45314,7 @@
       },
       "runner_path": "scripts/frontier_cpt_exact.py",
       "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
-      "transitive_descendants": 903,
+      "transitive_descendants": 904,
       "verdict_rationale": "The primary runner constructs the staggered phases, finite lattice hopping operator, C/P operators, CPT transform, and odd projections directly, with no external comparator or hard-coded target constants in the load-bearing path. Its PASS=53 result supports the algebraic identities on the tested even lattices, and the note supplies the general algebraic closure for even periodic L. The runner stdout still contains stale canonical-SME wording, but the source note explicitly demotes that identification to admitted, non-retained bridge material."
     },
     "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": {
@@ -86491,7 +86491,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 19.296,
+      "load_bearing_score": 19.298,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -86717,7 +86717,7 @@
       },
       "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
       "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-      "transitive_descendants": 888,
+      "transitive_descendants": 889,
       "verdict_rationale": null
     },
     "emergent_product_law_audit_2026-04-11": {
@@ -131580,7 +131580,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-      "load_bearing_score": 11.28,
+      "load_bearing_score": 11.281,
       "load_bearing_step": "Using the retained bridge identities T_a a_x T_a^dag = a_{x+a} and T_a a_x^dag T_a^dag = a_{x+a}^dag gives T_a H_{xy} T_a^dag = H_{x+a,y+a}, with the remaining claims following by adjoints, local ladder commutators, linearity, and the finite spectral theorem.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -131654,7 +131654,7 @@
       },
       "runner_path": "scripts/hopping_bilinear_hermiticity_check.py",
       "title": "Hopping Bilinear H_{xy} = a_x^dag a_y + h.c. Is Hermitian and Translation-Covariant",
-      "transitive_descendants": 878,
+      "transitive_descendants": 879,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing work is class-A algebra over a single retained upstream bridge plus standard finite-dimensional linear algebra. There are no external comparator checks, numerical-match steps, fitted inputs, or additional open dependencies. Under the explicit tie-break rule, clean versus decoration must resolve to audited_decoration when the chain reduces to one parent claim and zero class-D checks. | The chain closes as class-A algebra over the single retained tensor-product bridge plus standard finite-dimensional linear algebra. There are no external comparator checks, tuned numerical inputs, or independent first-principles computations producing new framework numbers. Under the explicit tie-break rule, clean versus decoration resolves to audited_decoration when the chain reduces to one parent claim with zero class-D checks. | The derivation is a genuine class-A algebraic closure over the single retained tensor-product translation/fermion bridge plus standard finite-dimensional algebra. There are no external comparator checks, no numerical-match dependence, and no open dependency in the restricted packet. Under the rubric tie-breaker, clean versus decoration must be resolved as audited_decoration when the chain reduces to one parent claim and zero D checks. | Both audits correctly classify the load-bearing step as class A and find that the chain closes over the retained bridge. The rubric's clean-versus-decoration tie-break is decisive here: there are zero external comparator checks, the proof is algebraic, and the chain reduces to one upstream retained parent plus standard finite-dimensional mathematics. Therefore the applyable tuple is audited_decoration with claim_type decoration. | The derivation is class-A algebraic closure over a single retained upstream bridge plus standard finite-dimensional linear algebra. There are zero external comparator checks and no unclosed dependency in the restricted packet. Under the explicit tie-break rule, a clean algebraic consequence of one retained parent should be classified as audited_decoration rather than audited_clean."
     },
     "hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29": {
@@ -169238,7 +169238,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 10.276,
+      "load_bearing_score": 10.278,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -169259,7 +169259,7 @@
       },
       "runner_path": "scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
       "title": "Bounded Crank-Nicolson Lieb-Robinson Diagnostic for Light-Cone Framing",
-      "transitive_descendants": 876,
+      "transitive_descendants": 877,
       "verdict_rationale": null
     },
     "light_cone_framing_note": {
@@ -169292,7 +169292,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.275,
+      "load_bearing_score": 11.276,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -169443,7 +169443,7 @@
       },
       "runner_path": "scripts/light_cone_staggered_dispersion.py",
       "title": "Light Cone Framing \u2014 Lieb-Robinson is Standard Lattice QFT",
-      "transitive_descendants": 875,
+      "transitive_descendants": 876,
       "verdict_rationale": null
     },
     "linear_response_derivation_note": {
@@ -170442,7 +170442,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 15.791,
+      "load_bearing_score": 15.793,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -170534,7 +170534,7 @@
       },
       "runner_path": "scripts/frontier_lorentz_boost_2d.py",
       "title": "1+1D SO(1,1) Boost Covariance of the Path-Sum 2-Point Function",
-      "transitive_descendants": 885,
+      "transitive_descendants": 886,
       "verdict_rationale": null
     },
     "lorentz_boost_covariance_3plus1d_theorem_note": {
@@ -170568,7 +170568,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 14.773,
+      "load_bearing_score": 14.775,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -170694,7 +170694,7 @@
       },
       "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
       "title": "3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function",
-      "transitive_descendants": 874,
+      "transitive_descendants": 875,
       "verdict_rationale": null
     },
     "lorentz_kernel_positive_closure_note": {
@@ -170728,7 +170728,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 15.771,
+      "load_bearing_score": 15.773,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -170829,7 +170829,7 @@
       },
       "runner_path": "scripts/frontier_lorentz_kernel_positive_closure.py",
       "title": "Lorentz Kernel Positive Closure Note",
-      "transitive_descendants": 873,
+      "transitive_descendants": 874,
       "verdict_rationale": null
     },
     "lorentz_violation_derived_note": {
@@ -174832,7 +174832,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.778,
+      "load_bearing_score": 11.78,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -174853,7 +174853,7 @@
       },
       "runner_path": "scripts/microcausality_finite_range_h_bridge_2026_05_09.py",
       "title": "Bounded Action-Support J Bound for the Microcausality / Lieb-Robinson Bridge",
-      "transitive_descendants": 877,
+      "transitive_descendants": 878,
       "verdict_rationale": null
     },
     "minimal_absorbing_horizon_probe_note": {
@@ -175045,7 +175045,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 37.525,
+      "load_bearing_score": 37.527,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
@@ -175066,7 +175066,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)",
-      "transitive_descendants": 1041,
+      "transitive_descendants": 1042,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-04-11": {
@@ -175096,7 +175096,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 33.364,
+      "load_bearing_score": 33.366,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -175343,7 +175343,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Inputs (SUPERSEDED)",
-      "transitive_descendants": 931,
+      "transitive_descendants": 932,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-05-03": {
@@ -194183,6 +194183,61 @@
       "transitive_descendants": 38,
       "verdict_rationale": "The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims."
     },
+    "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "e0eadc8f894fb9b2df9d3edb5e5d7f653b5894beeff98dff7b4db6db089e6320",
+      "note_path": "docs/OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py",
+      "title": "Finite-Dimensional Spectral Wick-Rotation Bridge from Framework Companions Narrow Theorem",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
     "p_lh_order_one_staggered_dirac_open_gate_note_2026-05-10_pplh_order_one": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -194394,7 +194449,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.298,
+      "load_bearing_score": 10.299,
       "load_bearing_step": "Combining the formal Dirac parity table with the abstract derivative sign character gives total weight (-1)^N for every enumerated index assignment in the four named structures, with odd-N/even-N projection vanishings accordingly.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -194616,7 +194671,7 @@
       },
       "runner_path": "scripts/frontier_parity_dim5_formal_sign_repair.py",
       "title": "Parity Dimension-5 Formal Sign Identities on the SME-Style Basis",
-      "transitive_descendants": 889,
+      "transitive_descendants": 890,
       "verdict_rationale": "The runner hash matches the cache and the completed output reports PASS=164 FAIL=0; it computes the formal gamma^0 conjugation, derivative sign product, 144 enumerated structure weights, and odd/even projection vanishings rather than merely checking prose scope. The source firewall checks are not the load-bearing theorem, but they confirm the note excludes action-level LV, concrete lattice derivative representatives, CPT import, and new-axiom claims. No-go discipline N1-N8 passes only after this strict collapse of scope: the retained content is the finite formal sign identity, not a lattice-action no-go or exclusion theorem. No hidden dependency, stale runner number, external comparator, or definition-as-physical-derivation remains inside that bounded scope."
     },
     "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": {
@@ -198785,7 +198840,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.822,
+      "load_bearing_score": 15.823,
       "load_bearing_step": "Using P D P = -D and K(i) = -i, the antiunitary Theta_H = P K sends H = iD to P(-iD)P = iD, so the Theta_H-odd projection of H vanishes.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -198885,7 +198940,7 @@
       },
       "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
       "title": "Physical Hermitian Hamiltonian And SME Bridge",
-      "transitive_descendants": 904,
+      "transitive_descendants": 905,
       "verdict_rationale": "Within the narrowed scope, the load-bearing step is a direct antiunitary algebra check rather than a renaming or external numerical match. The runner source actually builds D, C, P, direction-resolved components, and computes the Hermiticity, symmetry, and odd-sector norms; it does not merely print constants or import the contested premise. The original broad SME-coefficient-zero claim would require a separate operator-basis completeness bridge, but the note explicitly removes that as load-bearing."
     },
     "physical_lattice_foundational_interpretation_note_2026-05-08": {
@@ -201385,7 +201440,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 18.298,
+      "load_bearing_score": 18.299,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -201708,7 +201763,7 @@
       },
       "runner_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
       "title": "Planck Target 3 Conditional Clifford Carrier Algebra",
-      "transitive_descendants": 889,
+      "transitive_descendants": 890,
       "verdict_rationale": null
     },
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25": {
@@ -230546,7 +230601,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.301,
+      "load_bearing_score": 15.303,
       "load_bearing_step": "Using \u0398-invariance of S_+ and reflection-Hermiticity of F, the reflected expectation becomes \u222b_X |\u03c8\u00b2(x)F(x)|\u00b2 d\u03bc(x), hence a weighted L\u00b2 norm-square.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -230567,7 +230622,7 @@
       },
       "runner_path": "scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py",
       "title": "Reflection Positivity Symmetric Involution Norm-Square Bounded Theorem",
-      "transitive_descendants": 891,
+      "transitive_descendants": 892,
       "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the explicit hypotheses in the note. The runner source actually constructs a finite measured-space model with \u0398(k)=-k, checks \u0398-invariance, Hermiticity, the norm-square identity, non-negativity, and sesquilinear properties, rather than only printing expected constants. The theorem is intentionally narrow and does not import the open Wilson plaquette, fermion determinant, or combined-sector reflection-positivity bridges. A second auditor should note the wording of strict positivity should be read as \u03c8\u00b2F not equal to zero \u03bc-a.e., not nonzero at almost every point."
     },
     "replay_environment_note": {
@@ -257196,7 +257251,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 14.801,
+      "load_bearing_score": 14.803,
       "load_bearing_step": "Equation (16) and (18): det(M)=\u220f_{i=1}^{n/2}(m\u00b2+\u03c3_i\u00b2)>0 after the det(\u03b3\u2085)=(-1)^{n/2} sign cancels the sign in det(\u03b3\u2085M).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -257217,7 +257272,7 @@
       },
       "runner_path": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py",
       "title": "Staggered-Only det(M_KS + m\u00b7I) > 0 \u2014 Sub-Theorem Note (Case A standalone)",
-      "transitive_descendants": 891,
+      "transitive_descendants": 892,
       "verdict_rationale": "The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, \u03b3\u2085-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument."
     },
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": {
@@ -257697,7 +257752,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 10.78,
+      "load_bearing_score": 10.781,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -257981,7 +258036,7 @@
       },
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note",
-      "transitive_descendants": 878,
+      "transitive_descendants": 879,
       "verdict_rationale": null
     },
     "stale_narrative_review_2026-05-03": {
@@ -259078,7 +259133,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 22.781,
+      "load_bearing_score": 22.783,
       "load_bearing_step": "On the explicitly theta-free Wilson-plus-staggered scalar-mass surface with positive real quark masses, theta_bare = 0 and arg det(M_u M_d) = 0, while the selected-surface checks show no determinant, axial, effective-action, or positive-weight topological mechanism regenerates a strong-sector phase.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -259235,7 +259290,7 @@
       },
       "runner_path": "scripts/frontier_strong_cp_theta_zero.py",
       "title": "Strong CP / \u03b8 = 0 Conditional Action-Surface Closure",
-      "transitive_descendants": 879,
+      "transitive_descendants": 880,
       "verdict_rationale": "Clean only as a retained_bounded selected-surface theorem. The runner hash matches the cache and reports THEOREM PASS=13, SELECTED-SURFACE COMPUTE PASS=30, FAIL=0, with four support items kept out of theorem count. No-go-style wall scrutiny collapses the load-bearing admissions to the named selected-surface premises: no bare theta slot and positive real mass orientation. The note does not convert those premises, finite sampled topological checks, CKM separation, canonical normalization, or support context into a full strong-CP solution beyond the selected action surface."
     },
     "structural_no_go_survey_note": {
@@ -271393,7 +271448,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 11.786,
+      "load_bearing_score": 11.788,
       "load_bearing_step": "Using definition (2), T_a sends factor-content |c_y>_y to |c_{y-a}>_y, so conjugating the single-site ladder operator a_x by T_a gives a_{x+a}.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -271414,7 +271469,7 @@
       },
       "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
       "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
-      "transitive_descendants": 882,
+      "transitive_descendants": 883,
       "verdict_rationale": "The load-bearing covariance identity is a direct algebraic consequence of the defined tensor-permutation action and the single-site ladder operator definition. The cited upstream axiom memo is explicitly flagged as an accepted axiom premise, so its meta status does not force a conditional downgrade. The runner source genuinely constructs the finite tensor-product matrices and permutation matrices with exact sympy arithmetic and verifies the claimed identities; it does not hard-code contested outputs or import external comparators."
     },
     "tensor_scalar_ratio_consolidation_theorem_note_2026-04-22": {
@@ -312000,7 +312055,7 @@
     "preserved_archived_failed": 44,
     "preserved_existing": 2392,
     "re_audit_required": 0,
-    "row_count": 2436,
-    "seeded_new": 0
+    "row_count": 2437,
+    "seeded_new": 1
   }
 }

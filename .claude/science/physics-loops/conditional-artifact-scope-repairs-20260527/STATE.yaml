@@ -1,0 +1,31 @@
+loop_slug: conditional-artifact-scope-repairs-20260527
+mode: run
+branch: physics-loop/conditional-artifact-scope-repairs-20260527
+base: origin/main
+current_goal: "Repair audited_conditional rows by source-note narrowing/artifact reconciliation without applying audit verdicts."
+cycle_count: 1
+active_routes:
+  - gate_b_grown_joint_package_note
+  - gravity_clean_derivation_note
+actual_current_surface_status: open
+audit_required_before_effective_status_changes: true
+bare_retained_allowed: false
+files_touched:
+  - docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md
+  - docs/GRAVITY_CLEAN_DERIVATION_NOTE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+  - docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md
+open_imports:
+  - "Gravity row still imports/stipulates L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), and Z^3 Green-function normalization for the bounded IF-chain."
+  - "Gate B row remains runner-defined bounded numerical support only; physical Gate B closure remains outside scope."
+next_exact_action: "Run review-loop compatibility checks, commit, push, and open review PR."
+stop_condition: "PR opened for independent reviewer/auditor; no audit verdict applied."

@@ -1,46 +1,72 @@
-# Clean Derivation: Cl(3) on Z^3 to Newton's Inverse-Square Law (Conditional)
+# Gravity Clean Derivation Note: Bounded IF-Chain to the Inverse-Square Law
 
-**Date:** 2026-04-13 (status line narrowed 2026-04-28 per audit-lane verdict)
-**Status:** bounded conditional weak-field gravity chain — IF the framework imposes the self-consistency condition `L^{-1} = G_0`, the Born/mass-density source map `rho = |psi|^2`, and the weak-field test-mass response `S = L(1 - phi)`, THEN the `Z^3` Laplacian Green function gives a `1/r` potential and inverse-square force in lattice units. The IF-conditions are not currently registered as audit-clean dependencies and no primary runner is registered. Not yet an audit-clean derivation from the single axiom alone.
-
----
-
-## Overview
-
-This note presents the complete derivation chain from the single axiom
-Cl(3) on Z^3 to Newton's law F = G M_1 M_2 / r^2. Every step is
-classified as DERIVED, THEOREM, or DEFINITION. The chain has nine links
-and zero free parameters.
-
-The critical reframing compared to earlier notes: the self-consistency
-step is not a numerical search over operator families. The propagator's
-Green's function G_0 = H^{-1} determines the field operator
-L = G_0^{-1} = H = -Delta. L^{-1} = G_0 is the framework's closure
-condition for self-consistency rather than a theorem of pure algebra.
-It is a physical statement: the framework requires the propagator and
-field to be self-consistent, and that requirement determines L.
+**Date:** 2026-04-13 (status line narrowed 2026-04-28; bounded IF-chain
+repair 2026-05-27)
+**Claim type:** bounded_theorem
+**Status:** bounded conditional weak-field gravity chain — IF the framework
+imposes the self-consistency condition `L^{-1} = G_0`, the
+Born/mass-density source map `rho = |psi|^2`, the weak-field test-mass
+response `S = L(1 - phi)`, and the `Z^3` lattice Green-function asymptotic
+with its normalization, THEN the lattice Poisson equation gives a `1/r`
+potential and inverse-square force in lattice units. This note does not
+derive those IF-premises from the current axiom surface and does not claim
+zero-free-parameter Newton gravity.
 
 ---
 
-## Assumptions
+## Binding Scope
 
-A single axiom with two parts:
+The binding content of this note is the bounded IF-chain below. Earlier
+wording in this lane described a complete, zero-free-parameter derivation from
+the axiom surface alone; that broader reading is superseded here.
 
-1. **A1 (algebra):** The physical theory is Cl(3), the Clifford algebra
-   with three generators satisfying {Gamma_mu, Gamma_nu} = 2 delta_{mu nu}.
-2. **A2 (geometry):** The physical theory lives on Z^3, the cubic lattice
-   with nearest-neighbor connectivity.
+The useful mathematical skeleton is still:
 
-Everything below is derived from A1 + A2 plus internal consistency
-conditions that carry no additional physics.
+```text
+H = -Delta_lat,
+G_0 = H^{-1},
+IF L^{-1} = G_0, THEN L = -Delta_lat,
+IF rho = |psi|^2 and S = L(1 - phi), THEN Poisson linearity plus the
+Z^3 Green-function asymptotic gives a 1/r potential and inverse-square force.
+```
+
+The load-bearing firewall is that `L^{-1} = G_0`, `rho = |psi|^2` as
+gravitational mass density, `S = L(1 - phi)` as the weak-field test-mass
+response, and the exact Green-function normalization are premises or external
+math inputs for this note. They are not established here as retained
+theorems.
 
 ---
 
-## The Derivation Chain
+## Premises
+
+Framework primitives used for context:
+
+- primitive local algebra `Cl(3)` / one-qubit algebra on each site;
+- spatial substrate `Z^3`.
+
+Additional IF-premises consumed by the bounded chain:
+
+1. `L^{-1} = G_0` is admitted as the weak-field self-consistency condition.
+2. `rho = |psi|^2` is admitted as the gravitational mass-density source map.
+3. `S = L(1 - phi)` is admitted as the weak-field test-mass response.
+4. The `Z^3` lattice Green function has the stated `1/(4 pi r)` large-distance
+   asymptotic in the normalization used by the chain.
+
+The chain is conditional on these four premises.
+
+---
+
+## The Conditional Chain
+
+The classifications in this section are local to the IF-chain. They are not
+claims that the missing physical premises have been derived from the current
+axiom surface.
 
 ### Step 1: Cl(3) on Z^3 --> Staggered Hamiltonian H = -Delta_lat
 
-**Classification: DERIVED (Kawamoto-Smit construction)**
+**Classification: LOCAL ALGEBRA (Kawamoto-Smit construction, inside the
+IF-chain)**
 
 The Clifford algebra Cl(3) on the cubic lattice Z^3 is realized by the
 Kawamoto-Smit staggered construction (Kawamoto & Smit 1981; Susskind
@@ -58,7 +84,7 @@ graph Laplacian:
 
 where (Delta_lat psi)(x) = sum_{|y-x|=1} psi(y) - 6 psi(x) on Z^3.
 
-**Why DERIVED:** Given Cl(3) on Z^3, the staggered Hamiltonian is
+**Local IF-chain role:** Given Cl(3) on Z^3, the staggered Hamiltonian is
 uniquely determined (up to an overall coupling constant which sets
 units). The identification H = -Delta_lat is an algebraic identity:
 the squared staggered Dirac operator on Z^3 IS the graph Laplacian.
@@ -90,7 +116,10 @@ this graph: the response at site y to a unit source at site x.
 
 ### Step 3: Self-consistency L^{-1} = G_0 forces L = -Delta_lat
 
-**Classification: DERIVED via the framework's self-consistency closure condition. L^{-1} = G_0 is the framework's own closure requirement -- it determines L from the propagator. This is not a theorem of pure algebra; it is a physical closure condition within the framework.**
+**Classification: CONDITIONAL STEP.** `L^{-1} = G_0` is an IF-premise of
+this note. Once that premise is admitted, the algebraic consequence
+`L = -Delta_lat` follows immediately. This note does not derive the premise
+from the current axiom surface.
 
 The gravitational field phi is sourced by the propagator density
 rho = |psi|^2 via a linear field operator L:
@@ -115,28 +144,26 @@ Invert both sides:
 
     L = G_0^{-1} = -Delta_lat
 
-**This is the framework's closure condition, not a numerical search.**
-L^{-1} = G_0 is the framework's own closure requirement -- it determines
-L from the propagator. This is not a theorem of pure algebra; it is a
-physical closure condition within the framework. The operator L is not
-selected from a family by fitting or sweeping. It is determined uniquely
-by the self-consistency requirement. The result is:
+**This is the admitted closure condition, not a numerical search.**
+If `L^{-1} = G_0` is granted, it determines `L` from the propagator. The
+operator `L` is not selected from a family by fitting or sweeping inside this
+conditional calculation. The result is:
 
     (-Delta_lat) phi = -kappa rho
 
 which is the Poisson equation on Z^3.
 
-**Why DERIVED (not BOUNDED):** The earlier notes presented this step as
-a numerical sweep over 21 operators, finding that only the Poisson
-operator gives zero mismatch. But the sweep is verification, not the
-argument. The argument is:
+**Why this remains conditional:** The earlier notes presented this step as a
+numerical sweep over 21 operators, finding that only the Poisson operator gives
+zero mismatch. The bounded chain instead treats the sweep as verification of
+the admitted premise, not as a derivation of that premise. The local algebra is:
 
     L^{-1} = G_0  (framework closure condition)
     G_0 = (-Delta)^{-1}  (Step 2)
     => L = -Delta  (inversion)
 
-This is a three-line derivation from the framework's closure condition.
-The numerical checks confirm it: the mismatch
+This is a three-line consequence of the admitted closure condition. The
+numerical checks confirm it: the mismatch
 M(L) = ||L^{-1} delta - G_0 delta|| / ||G_0 delta|| is exactly zero
 for L = -Delta and nonzero for every alternative operator tested
 (10 alternatives, all M > 0.28). The parametric family (-Delta)^alpha
@@ -144,16 +171,15 @@ has M(alpha) uniquely minimized at alpha = 1.0 with M(1.0) < 6e-16.
 These are confirmations of the closure condition, not the derivation
 itself.
 
-**Assumptions consumed:**
-- Self-consistency: the propagator sources the field it propagates in.
-  This is a closure condition of the theory, not imported physics.
-- Linearity of the field operator (weak-field regime).
+**Premises consumed:**
+- Self-consistency condition `L^{-1} = G_0`.
+- Linearity of the field operator in the weak-field regime.
 
 ---
 
 ### Step 4: Poisson equation (-Delta_lat) phi = rho where rho = |psi|^2
 
-**Classification: DERIVED (from Step 3)**
+**Classification: CONDITIONAL STEP (from Step 3 plus the source-map premise)**
 
 Combining Step 3 with the identification rho = |psi|^2 (the propagator's
 probability density is the source of the gravitational field), we obtain
@@ -168,14 +194,14 @@ for a distributed source, or
 for a point mass M at the origin (where M = integral of rho over the
 source region).
 
-**Assumptions consumed:** None beyond Step 3. The identification of
-|psi|^2 as the mass density follows from the propagator's normalization.
+**Premises consumed:** Step 3 and the admitted source map `rho = |psi|^2` as
+gravitational mass density.
 
 ---
 
 ### Step 5: Green's function G(r) --> 1/(4 pi r) for large r
 
-**Classification: THEOREM (lattice potential theory)**
+**Classification: EXTERNAL MATH INPUT (lattice potential theory)**
 
 On Z^3, the Green's function of the lattice Laplacian has the
 large-distance asymptotic form:
@@ -200,27 +226,24 @@ asymptotics are established by stationary-phase / saddle-point methods.
 - Hughes, *Random Walks and Random Environments* (Oxford, 1995)
 - Lawler & Limic, *Random Walk: A Modern Introduction* (Cambridge, 2010)
 
-**Is this imported physics?** No. This is a theorem of pure mathematics
-about the discrete Laplacian on Z^3. It belongs to the same category as
-any other asymptotic analysis theorem (e.g., Perelman's work on Ricci
-flow, or the prime number theorem). The lattice Laplacian is already
-present in the theory (Step 1); this theorem tells us what its inverse
-looks like at large distances. No physical input beyond the lattice
-structure is required.
+**Import status:** This is an external theorem of pure mathematics about the
+discrete Laplacian on `Z^3`. This note uses it as a math input; it does not
+provide a retained internal bridge or an executable derivation of the exact
+normalization.
 
 **Numerical verification:** On a 128^3 lattice, the ratio
 4 pi r G(r) / 1 deviates from unity by less than 1% for off-axis points
 at r in [5, 60]. The deviation is systematic (Dirichlet BC bias) and
 decreases monotonically with lattice size, as the theorem predicts.
 
-**Assumptions consumed:** None beyond the lattice Laplacian on Z^3,
-which is already established in Steps 1-2.
+**Premises consumed:** the lattice Laplacian on `Z^3` and the stated external
+Green-function asymptotic/normalization.
 
 ---
 
 ### Step 6: Potential phi = -GM/r
 
-**Classification: DERIVED (from Steps 4 + 5)**
+**Classification: CONDITIONAL RESULT (from Steps 4 + 5)**
 
 From Step 4, a point mass M at the origin satisfies:
 
@@ -238,15 +261,14 @@ The sign convention: phi represents a potential well (attractive), so
 phi < 0 with the physics sign convention, or phi > 0 if we define the
 Green's function as positive.
 
-**Assumptions consumed:** Point-mass idealization (standard; any
-localized rho gives the same long-range behavior by the multipole
-expansion, which is also a theorem).
+**Premises consumed:** Point-mass idealization and the admitted
+Green-function asymptotic.
 
 ---
 
 ### Step 7: Force F = -nabla phi = G_N M / r^2
 
-**Classification: DERIVED (gradient of 1/r)**
+**Classification: CONDITIONAL RESULT (gradient of `1/r`)**
 
 The gravitational force on a test particle at distance r from a mass M
 is the gradient of the potential:
@@ -260,13 +282,14 @@ On the lattice, the discrete gradient (finite difference) agrees with
 the continuum gradient to O(a^2 / r^2) where a is the lattice spacing,
 which is negligible for r >> a.
 
-**Assumptions consumed:** None beyond Steps 4-6.
+**Premises consumed:** Steps 4-6 and the weak-field force/readout convention.
 
 ---
 
 ### Step 8: Product law F = G_N M_1 M_2 / r^2
 
-**Classification: DERIVED (Poisson linearity, exact)**
+**Classification: CONDITIONAL RESULT (Poisson linearity plus admitted
+test-mass response)**
 
 For two masses M_1 at r_1 and M_2 at r_2, the Poisson equation is:
 
@@ -280,25 +303,26 @@ The force on M_2 due to M_1 is:
 
     F_12 = -M_2 nabla phi_1(r_2) = G_N M_1 M_2 / |r_1 - r_2|^2
 
-The product M_1 M_2 is NOT imposed as a bilinear ansatz. It EMERGES
-from two independent properties:
+Within the bounded IF-chain, the product `M_1 M_2` follows from two independent
+properties:
 
 1. **Poisson linearity:** phi_1(r) is proportional to M_1.
 2. **Test-mass response:** the force on M_2 is proportional to M_2
    (the deflection of a path sum in a fixed potential is proportional
    to the particle's mass through the action S = L(1 - phi)).
 
-This is the strongest link in the chain: Poisson linearity is a
-mathematical fact, and the product structure follows with no
-approximation.
+Poisson linearity is the mathematical part. The second factor depends on the
+admitted test-mass response premise.
 
-**Assumptions consumed:** None beyond the Poisson equation (Step 4).
+**Premises consumed:** Poisson linearity plus the admitted weak-field
+test-mass response `S = L(1 - phi)`.
 
 ---
 
 ### Step 9: Exponent 2 = d - 1 = 3 - 1
 
-**Classification: DERIVED (d = 3 from Cl(3))**
+**Classification: CONDITIONAL STEP (dimension fixed by the declared `Z^3`
+substrate)**
 
 In d spatial dimensions, the Poisson Green's function scales as:
 
@@ -310,51 +334,46 @@ The force is the gradient:
 
 For d = 3: F ~ 1/r^2, so the exponent is 2 = d - 1 = 3 - 1.
 
-The dimension d = 3 is itself derived from the axiom: Cl(3) has exactly
-three generators, and Z^3 has exactly three spatial dimensions. The
-framework axiom IS the statement that d = 3.
+The dimension used in this chain is `d = 3` because the declared substrate is
+`Z^3`.
 
-**Assumptions consumed:** None beyond the axiom A1 + A2.
+**Premises consumed:** the declared `Z^3` spatial substrate.
 
 ---
 
-## Complete Chain Summary
+## Bounded IF-Chain Summary
 
 ```
-AXIOM: Cl(3) on Z^3
+Context: Cl(3) on Z^3
 
-Step 1  [DERIVED]    Cl(3) on Z^3 --> staggered H = -Delta_lat
-                     (KS construction, algebraic identity)
+Step 1  [local algebra]       Cl(3) on Z^3 --> staggered H = -Delta_lat
+                              (KS construction, algebraic identity)
 
-Step 2  [DEFINITION] G_0 = H^{-1} = (-Delta_lat)^{-1}
-                     (propagator defined as Hamiltonian inverse)
+Step 2  [definition]          G_0 = H^{-1} = (-Delta_lat)^{-1}
+                              (propagator defined as Hamiltonian inverse)
 
-Step 3  [DERIVED]    Self-consistency L^{-1} = G_0 => L = -Delta_lat
-                     (framework closure condition, not pure algebra)
+Step 3  [IF-premise + algebra] IF L^{-1} = G_0, THEN L = -Delta_lat
 
-Step 4  [DERIVED]    Poisson equation: (-Delta) phi = rho
-                     (from Step 3, with rho = |psi|^2)
+Step 4  [IF-premise]          IF rho = |psi|^2 is the gravitational source,
+                              THEN (-Delta) phi = rho
 
-Step 5  [THEOREM]    G(r) --> 1/(4 pi r) for large r
-                     (lattice potential theory, Maradudin et al.)
+Step 5  [math input]          G(r) --> 1/(4 pi r) for large r
+                              (lattice potential theory)
 
-Step 6  [DERIVED]    phi = -G_N M / r
-                     (from Steps 4 + 5)
+Step 6  [conditional result]  phi = -G_N M / r
 
-Step 7  [DERIVED]    F = -nabla phi = G_N M / r^2
-                     (gradient of 1/r)
+Step 7  [conditional result]  IF S = L(1 - phi), THEN
+                              F = -nabla phi = G_N M / r^2
 
-Step 8  [DERIVED]    F = G_N M_1 M_2 / r^2
-                     (Poisson linearity, exact)
+Step 8  [conditional result]  F = G_N M_1 M_2 / r^2
+                              (Poisson linearity plus test-mass response)
 
-Step 9  [DERIVED]    Exponent 2 = d - 1 = 3 - 1
-                     (d = 3 from Cl(3))
+Step 9  [conditional result]  exponent 2 = d - 1 = 3 - 1
+                              (d = 3 from Z^3)
 ```
 
-Classification counts: 7 DERIVED, 1 THEOREM, 1 DEFINITION.
-Note: Step 3 is DERIVED via the framework's closure condition, not via
-pure algebra. The closure condition L^{-1} = G_0 is a physical
-requirement of self-consistency within the framework.
+The chain is useful because the algebra after the IF-premises is tight. It is
+not an unconditional derivation of Newton gravity from the axiom surface.
 
 ---
 
@@ -368,12 +387,11 @@ reframes the argument:
 > We swept 21 operators and found only Poisson gives an attractive
 > self-consistent fixed point. This is numerical evidence, not a proof.
 
-**New framing (DERIVED via closure condition):**
-> Self-consistency requires L^{-1} = G_0. Since G_0 = (-Delta)^{-1},
-> we have L = -Delta. L^{-1} = G_0 is the framework's closure condition
-> for self-consistency rather than a theorem of pure algebra. The
-> 21-operator sweep is verification of this closure condition, not the
-> argument itself.
+**Current bounded framing:**
+> If self-consistency is stipulated as `L^{-1} = G_0`, then since
+> `G_0 = (-Delta)^{-1}`, we have `L = -Delta`. The 21-operator sweep is
+> verification of the stipulated closure condition, not a proof that the
+> condition follows from the axiom surface.
 
 The key insight: the self-consistency condition L^{-1} = G_0 is not a
 constraint that must be checked operator-by-operator. It is a direct
@@ -382,68 +400,64 @@ L is computed, not searched for. But the condition itself is a physical
 closure requirement of the framework, not a mathematical theorem that
 follows from axioms alone.
 
-The lattice Green's function theorem (Step 5) is classified as THEOREM,
-not as imported physics. It is a result of pure mathematics about the
-discrete Laplacian, in the same category as any asymptotic analysis
-theorem. The lattice is already in the theory; the theorem tells us what
-its Green's function looks like.
+The lattice Green-function statement (Step 5) is carried as an external math
+input in this note. A future retained bridge can internalize or wrap that input
+if the row is meant to close beyond bounded IF-chain status.
 
 ---
 
 ## What Is Actually Proved
 
-The full Newton inverse-square law
+This note proves only the conditional implication:
 
-    F = G_N M_1 M_2 / r^2
+```text
+IF L^{-1} = G_0,
+IF rho = |psi|^2 is the gravitational source,
+IF S = L(1 - phi) is the weak-field test-mass response,
+IF the Z^3 Green function has the stated 1/(4 pi r) asymptotic,
+THEN F = G_N M_1 M_2 / r^2 in lattice units.
+```
 
-with:
-- G_N = 1/(4 pi) in lattice units (predicted, not input)
-- the product M_1 M_2 emergent from linearity (not assumed)
-- the exponent 2 = d - 1 determined by d = 3 (not fitted)
-- zero free parameters in the derivation chain
-
-from the single axiom Cl(3) on Z^3.
+The product structure and exponent are internal consequences of the bounded
+IF-chain. The physical source, response, and normalization premises remain
+outside this note.
 
 ---
 
 ## What Remains Open
 
-1. **Strong-field gravity:** The derivation is valid for phi << 1
-   (weak-field). Horizons, frame dragging, and gravitational waves
-   beyond linearized regime are not covered.
+1. **Self-consistency premise:** A retained theorem or accepted-premise entry
+   for `L^{-1} = G_0`.
 
-2. **The gravitational constant in SI units:** The chain gives
-   G_N = 1/(4 pi) in lattice units. Converting to SI requires one
-   calibration (identifying the lattice spacing with a physical length).
+2. **Source premise:** A retained theorem that `rho = |psi|^2` is the
+   gravitational mass-density source map on this surface.
 
-3. **Full Einstein equations:** Only the weak-field, static sector is
-   derived. The dynamic sector requires separate treatment.
+3. **Response premise:** A retained theorem for the weak-field test-mass
+   response `S = L(1 - phi)`.
 
-4. **GR signatures beyond Newton:** Time dilation, WEP, geodesics,
-   and light bending are built-in consequences of S = L(1 - phi) but
-   are documented in the gravity sub-bundle, not this note.
+4. **Green-function authority:** A registered retained bridge or import wrapper
+   for the exact `Z^3` Green-function asymptotic and normalization.
+
+5. **Beyond weak field:** Horizons, frame dragging, gravitational waves, and
+   full Einstein-equation dynamics remain outside this bounded row.
 
 ---
 
-## How This Changes The Paper
+## Paper-Facing Safe Read
 
-The gravity derivation chain is now clean:
+Safe wording:
 
-> Starting from Cl(3) on Z^3, the staggered Hamiltonian is the negative
-> graph Laplacian (KS construction). The framework's self-consistency
-> closure condition (L^{-1} = G_0) uniquely determines the field equation
-> as the lattice Poisson equation. This is not a theorem of pure algebra;
-> it is a physical closure condition within the framework. The Poisson
-> Green's function on Z^3 converges to 1/(4 pi r) at large distances
-> (theorem of lattice potential theory). Combining these yields Newton's
-> inverse-square law F = G M_1 M_2 / r^2 with the product structure
-> emergent from linearity, the exponent from d = 3, and zero free
-> parameters.
+> Conditional on the weak-field closure `L^{-1} = G_0`, the
+> Born/mass-density source map, the weak-field test-mass response, and the
+> `Z^3` Green-function asymptotic, the lattice Poisson chain yields a `1/r`
+> potential and inverse-square force in lattice units.
 
-This addresses the circularity objection directly: Poisson is not
-assumed, it is derived from the framework's self-consistency closure
-condition. The closure condition is a physical requirement, not pure
-algebra.
+Unsafe wording:
+
+- Newton gravity derived from the current axiom surface alone.
+- Zero-free-parameter gravity derivation.
+- Clean single-axiom closure of `G_N`, the source map, or the physical
+  response law.
 
 ---
 
@@ -458,10 +472,9 @@ python3 scripts/frontier_gravity_clean_derivation.py
 
 ## Relation to review.md
 
-This note covers the **retained weak-field gravity core** identified in
-`review.md`. It does not claim closure of the broader gravity bundle
-(WEP, time dilation, geodesics, strong-field). Those remain bounded per
-`review.md` and are documented separately in `GRAVITY_SUB_BUNDLE_NOTE.md`.
+This note records a bounded weak-field conditional chain. It does not claim
+closure of the broader gravity bundle, including WEP, time dilation,
+geodesics, strong-field behavior, or physical `G_N` normalization.
 
 ## Audit boundary (2026-04-28)
 
@@ -514,13 +527,11 @@ Promoting from bounded conditional to retained would require:
 
 ## Citations
 
-The four IF-conditions of the conditional theorem are each addressed by
-existing source notes in the repository. Registering the markdown links
-here makes the dependency edges explicit so the audit lane can walk the
-chain rather than treat the IF-conditions as unsourced. Until each
-linked authority is itself audit-clean, this note remains
-`audited_conditional` even with the registered edges; the wiring is the
-prerequisite, not the unlock.
+The IF-conditions of the conditional theorem are each addressed or discussed by
+existing source notes in the repository. The markdown links here make the
+dependency edges explicit so the audit lane can walk the chain rather than
+treat the IF-conditions as unsourced. These citations do not turn the
+IF-premises into retained theorems.
 
 ### Upstream authorities (citation graph deps)
 
@@ -573,6 +584,6 @@ rather than supplying input to it:
   consumes `rho = |psi|^2` from STAGGERED_FERMION_CARD upstream. It is
   not the upstream establishing the Born identification.
 
-These dependency edges are additive. The note does not narrow its claim
-or change its hypotheses; the citations only make the four upstream
-authorities visible to the citation graph and audit pipeline.
+The 2026-05-27 repair narrows the binding claim to the bounded IF-chain above.
+These dependency edges make the upstream authorities visible to the citation
+graph and audit pipeline; they do not promote this row by themselves.

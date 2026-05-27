@@ -54268,7 +54268,7 @@
         "gate_b_grown_distance_law_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "20bef463457fd3d10737edde97eb6a709ffdfe9a24b95ef1b242d0bf58e5a6f4",
+      "note_hash": "d4944ebf62969f58f5047b120ca8bdbf85e9ef855e9b8a4f8be6f0f92fd0f1ce",
       "path": "docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md",
       "runner_path": "scripts/gate_b_grown_joint_package.py",
       "title": "Gate B Grown-Geometry Joint Package Note"
@@ -56423,8 +56423,8 @@
     },
     "gravity_clean_derivation_note": {
       "claim_id": "gravity_clean_derivation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "self_consistency_forces_poisson_note",
@@ -56433,10 +56433,10 @@
         "staggered_fermion_card_2026-04-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9cb56948dd6885f8c17a2f2e01e3982698673edb9677f7f63041b10954abc717",
+      "note_hash": "2e941919a10185758318e78186b793cff8ff82f05128a6192a670105449f0558",
       "path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
       "runner_path": null,
-      "title": "Clean Derivation: Cl(3) on Z^3 to Newton's Inverse-Square Law (Conditional)"
+      "title": "Gravity Clean Derivation Note: Bounded IF-Chain to the Inverse-Square Law"
     },
     "gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25": {
       "claim_id": "gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25",
@@ -85358,11 +85358,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 603,
+      "bounded_theorem": 604,
       "decoration": 1,
       "meta": 191,
       "no_go": 80,
-      "none": 1450,
+      "none": 1449,
       "open_gate": 49,
       "positive_theorem": 169
     },

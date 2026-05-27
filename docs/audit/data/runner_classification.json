@@ -11149,11 +11149,11 @@
       "runner": "scripts/independent_generators_heldout.py"
     },
     "industrial_sdp_bootstrap_infrastructure_note_2026-05-03": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 16,
+        "C": 18,
         "D": 2
       },
       "decoration_candidate": false,
@@ -39969,14 +39969,14 @@
       "exists": true
     },
     "scripts/frontier_industrial_sdp_bootstrap_block01.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
       ],
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 16,
+        "C": 18,
         "D": 2
       },
       "decoration_candidate": false,

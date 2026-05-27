@@ -1,0 +1,7 @@
+trace_class: negative_route_pruning
+target_claim_id: yt_full_closure_stack_and_strict_pole_response_contract_note_2026-05-26
+target_blocker_text: "derive nontrivial top-line assignment, or produce strict top/W pole rows"
+source_of_blocker_text: handoff
+reachability_to_target: prunes
+artifact_role: no_go
+next_trace_action: "use strict top/W pole rows or derive a new top-line law"

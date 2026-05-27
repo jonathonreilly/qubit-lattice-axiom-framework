@@ -1,0 +1,44 @@
+{
+  "actual_current_surface_status": "no-go",
+  "anchors": {
+    "nontrivial_boundary_status": "no-go",
+    "real_record_status": "exact-support"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "bx_source_direction_derived": true,
+    "mass_ordering_selects_p0": true,
+    "mass_ordering_selects_target_nontrivial_line": false,
+    "no_forbidden_imports": true,
+    "nontrivial_line_requires_extra_top_line_law": true,
+    "retained_c3_projectors_available": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "claim_id": "yt_c3_top_line_mass_ordering_obstruction_note_2026-05-27",
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_top_line_mass_ordering_obstruction.py",
+  "mass_ordering_witness": {
+    "magnitudes": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "sqrt(6)/6",
+      "P_omega2": "sqrt(6)/6"
+    },
+    "mass_ordering_proxy_top_line": "P_0",
+    "mass_ordering_proxy_top_magnitude": "sqrt(6)/3",
+    "responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "(-sqrt(2)/2 + sqrt(6)*I/6)/(sqrt(3) - I)",
+      "P_omega2": "(-sqrt(2)/2 - sqrt(6)*I/6)/(sqrt(3) + I)"
+    },
+    "source_direction": "B_x",
+    "target_nontrivial_magnitude": "1/sqrt(6)"
+  },
+  "pass_count": 70,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "B_x source authority is now exact support, but ordinary top mass-ordering selects the C3 singlet response 2/sqrt(6), not the target nontrivial-line response 1/sqrt(6).",
+  "reachability_to_target": "prunes",
+  "route_pruned": "B_x plus mass-ordering convention selects target 1/sqrt(6)",
+  "route_still_live": "derive a same-surface nontrivial top-line law that is not mass-ordering and not target selection, or produce strict same-source top/W pole rows",
+  "trace_class": "negative_route_pruning"
+}

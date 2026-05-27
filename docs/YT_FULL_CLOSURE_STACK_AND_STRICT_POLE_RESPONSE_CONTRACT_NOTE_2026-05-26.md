@@ -586,6 +586,21 @@ So top-line nontriviality remains load-bearing.  A future closure must derive
 why the physical top row is not the C3 singlet, or bypass the issue with
 strict pole rows.
 
+The mass-ordering obstruction sharpens that statement: the mass-ordering
+convention picks the C3 singlet.  Under the now-derived
+`B_x` source direction, the ordinary "top = heaviest up-type pole" convention
+would choose the largest absolute response:
+
+```text
+argmax |Tr(P_k B_x)| = P_0,
+|Tr(P_0 B_x)| = 2/sqrt(6).
+```
+
+The target response `1/sqrt(6)` is carried by the two nontrivial C3 lines, not
+by the mass-ordering line.  Therefore the nontrivial top-line assignment cannot
+be treated as a harmless top-label convention.  It requires a new same-surface
+top-line law, or it must be bypassed with strict same-source top/W pole rows.
+
 ## Non-Claims
 
 This note does not:
@@ -618,6 +633,8 @@ proposal_allowed_reason: |
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: nontrivial top-line assignment, or strict same-source top/W response evidence
+refined_first_open_gate: strict same-source top/W response evidence, or a
+  non-mass-ordering same-surface top-line law
 backup_route: audit accepts primitive top-source premise as physical source law
 ```
 

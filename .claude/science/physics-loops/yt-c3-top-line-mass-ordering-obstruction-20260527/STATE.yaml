@@ -1,0 +1,18 @@
+slug: yt-c3-top-line-mass-ordering-obstruction-20260527
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: c3_top_line_mass_ordering
+hard_residual: nontrivial top-line assignment
+files_touched:
+  - docs/YT_C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_NOTE_2026-05-27.md
+  - scripts/frontier_yt_c3_top_line_mass_ordering_obstruction.py
+  - outputs/yt_c3_top_line_mass_ordering_obstruction_2026-05-27.json
+open_imports:
+  - same-surface nontrivial top-line law
+  - strict same-source top/W pole rows
+blocked_route:
+  - B_x plus ordinary mass-ordering convention selects target 1/sqrt(6)
+next_exact_action: produce strict top/W pole rows or derive a top-line law not equivalent to target selection
+stop_condition: route pruned and PR #1980 updated

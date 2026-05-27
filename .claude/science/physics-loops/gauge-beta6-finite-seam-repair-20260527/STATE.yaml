@@ -1,0 +1,35 @@
+slug: gauge-beta6-finite-seam-repair-20260527
+branch: physics-loop/gauge-beta6-finite-seam-repair-20260527
+base: origin/main
+date: 2026-05-27
+mode: science_fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+target_claim_id: gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md
+  - scripts/frontier_gauge_vacuum_plaquette_beta6_finite_seam_route_repair.py
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+verification:
+  runner: "SUMMARY: THEOREM PASS=5 SUPPORT=5 FAIL=0"
+  vocab_lint: clean
+  audit_pipeline: complete
+open_imports:
+  - full untruncated spatial Wilson environment transfer identity
+  - exact one-slab/rim Wilson/Haar integral boundary objects
+  - physical beta=6 matrix elements
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+pr_status: pending
+pr_url: null
+next_exact_action: "Commit, push, open draft PR, then record the PR URL."
+stop_condition: "Draft PR opened and verified."

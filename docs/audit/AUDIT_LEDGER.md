@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 488 |
+| **retained_bounded** | 489 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1241 |
+| unaudited | 1240 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 780 |
+| `audited_clean` | 781 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1470 |
+| `unaudited` | 1469 |
 
 | claim_type | count |
 |---|---:|
@@ -447,6 +447,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_physical_bridge_attempt_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -6415,6 +6416,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **open / conditional deps cited:**
   - `KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md`
 - **auditor confidence:** high
+
+### `koide_a1_loop_final_status_2026-04-22`
+
+- **Note:** [`KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md`](../../docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic consequences of the declared trace data and admitted quartic ansatz, including square nonnegativity, zero-locus, ratio, c^2, and formal Q; no derivation of the ansatz, charged-lepton Koide, or a physical mass-spectrum theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-koide-a1-2026-05-26`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given the formal trace data and the ansatz V(Phi) := [2 tr(Phi)^2 - 3 tr(Phi^2)]^2, V(Phi) = 81(a^2 - 2r^2)^2 with zero-locus a^2 = 2r^2, hence r/a = 1/sqrt(2), c^2 = 2, and formal Q = 2/3.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, direct substitution gives V0 = 9(a^2 - 2r^2) and V = 81(a^2 - 2r^2)^2, and the zero-locus consequences follow by ordinary algebra. The chain closes only over the admitted ansatz and formal trace data; it does not close an unbounded derivation of those premises or any physical charged-lepton identification.
+- **rationale:** The load-bearing step is a genuine class-A algebraic identity over explicitly stated premises, and the runner recomputes the identities with SymPy while also checking the note's boundary language; all 19 PASS lines are class A. This is not audited_decoration because there is no retained parent claim being expanded into a corollary cluster, and it is not audited_renaming because the square identity and zero-locus are derived algebraic consequences, while c and Q are only formal definitions inside the bounded statement. The residual boundary is essential: downstream use must carry the quartic-ansatz premise and must not cite this as a derivation of the ansatz, charged-lepton Koide, or a physical lepton spectrum.
 
 ### `koide_a1_physical_bridge_attempt_2026-04-22`
 

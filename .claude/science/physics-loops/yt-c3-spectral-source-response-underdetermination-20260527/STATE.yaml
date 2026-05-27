@@ -1,0 +1,19 @@
+goal: "Test whether C3 spectral projectors determine the top source response."
+target_status: "best-honest-status"
+actual_current_surface_status: "no-go"
+trace_class: "negative_route_pruning"
+active_route: "C3 spectral projectors imply coefficient-certified top response"
+block_count: 1
+files_touched:
+  - "docs/YT_C3_SPECTRAL_SOURCE_RESPONSE_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
+  - "scripts/frontier_yt_c3_spectral_source_response_underdetermination_no_go.py"
+  - "outputs/yt_c3_spectral_source_response_underdetermination_no_go_2026-05-27.json"
+  - "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md"
+  - "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py"
+open_imports:
+  - "same-surface source law for C3 circulant coefficients a(h), x(h), y(h)"
+  - "top-line eigenvalue ordering"
+  - "same-surface W response"
+verification:
+  - "python3 scripts/frontier_yt_c3_spectral_source_response_underdetermination_no_go.py -> PASS=58 FAIL=0"
+next_exact_action: "Derive or refute the same-surface source law for a(h), x(h), y(h)."

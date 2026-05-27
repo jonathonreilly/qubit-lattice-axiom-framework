@@ -48,6 +48,7 @@ NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_
 BACKEND_PROJECTOR_OBSTRUCTION = DOCS / "YT_NATIVE_BACKEND_AUTHORITY_PROJECTOR_OBSTRUCTION_NOTE_2026-05-27.md"
 TOP_SECTOR_PROJECTOR_OBSTRUCTION = DOCS / "YT_TOP_SECTOR_PROJECTOR_GENERATION_LABEL_OBSTRUCTION_NOTE_2026-05-27.md"
 C3_SPECTRAL_PROJECTOR_SUPPORT = DOCS / "YT_C3_SPECTRAL_TOP_PROJECTOR_ROUTE_SUPPORT_NOTE_2026-05-27.md"
+C3_SPECTRAL_SOURCE_RESPONSE_NOGO = DOCS / "YT_C3_SPECTRAL_SOURCE_RESPONSE_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -68,6 +69,7 @@ NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_
 BACKEND_PROJECTOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_native_backend_authority_projector_obstruction_2026-05-27.json"
 TOP_SECTOR_PROJECTOR_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_top_sector_projector_generation_label_obstruction_2026-05-27.json"
 C3_SPECTRAL_PROJECTOR_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_spectral_top_projector_route_support_2026-05-27.json"
+C3_SPECTRAL_SOURCE_RESPONSE_NOGO_OUT = ROOT / "outputs" / "yt_c3_spectral_source_response_underdetermination_no_go_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -133,6 +135,7 @@ def part1_anchors() -> dict[str, str]:
         BACKEND_PROJECTOR_OBSTRUCTION,
         TOP_SECTOR_PROJECTOR_OBSTRUCTION,
         C3_SPECTRAL_PROJECTOR_SUPPORT,
+        C3_SPECTRAL_SOURCE_RESPONSE_NOGO,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -152,6 +155,7 @@ def part1_anchors() -> dict[str, str]:
         BACKEND_PROJECTOR_OBSTRUCTION_OUT,
         TOP_SECTOR_PROJECTOR_OBSTRUCTION_OUT,
         C3_SPECTRAL_PROJECTOR_SUPPORT_OUT,
+        C3_SPECTRAL_SOURCE_RESPONSE_NOGO_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -172,6 +176,7 @@ def part1_anchors() -> dict[str, str]:
         "sector projectors are load-bearing",
         "top generation projector remains open",
         "C3 spectral-projector route remains live",
+        "C3 spectral projectors do not determine source responses",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -210,6 +215,7 @@ def part2_support_outputs() -> dict[str, Any]:
     projector_obstruction = load_json(BACKEND_PROJECTOR_OBSTRUCTION_OUT)
     top_sector_projector_obstruction = load_json(TOP_SECTOR_PROJECTOR_OBSTRUCTION_OUT)
     c3_spectral_projector_support = load_json(C3_SPECTRAL_PROJECTOR_SUPPORT_OUT)
+    c3_spectral_source_response_nogo = load_json(C3_SPECTRAL_SOURCE_RESPONSE_NOGO_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -256,6 +262,9 @@ def part2_support_outputs() -> dict[str, Any]:
     check("C3 spectral projector support passed", c3_spectral_projector_support.get("fail_count") == 0, c3_spectral_projector_support.get("fail_count"))
     check("C3 spectral projector support is upstream support", c3_spectral_projector_support.get("trace_class") == "upstream_support")
     check("C3 spectral projector route remains open", "route_still_open" in c3_spectral_projector_support)
+    check("C3 spectral source-response no-go passed", c3_spectral_source_response_nogo.get("fail_count") == 0, c3_spectral_source_response_nogo.get("fail_count"))
+    check("C3 spectral source-response no-go is route pruning", c3_spectral_source_response_nogo.get("trace_class") == "negative_route_pruning")
+    check("C3 spectral source-response route keeps source law live", "source law" in c3_spectral_source_response_nogo.get("route_still_live", ""))
 
     return {
         "fisher": fisher,
@@ -276,6 +285,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "backend_projector_obstruction": projector_obstruction,
         "top_sector_projector_obstruction": top_sector_projector_obstruction,
         "c3_spectral_projector_support": c3_spectral_projector_support,
+        "c3_spectral_source_response_nogo": c3_spectral_source_response_nogo,
     }
 
 
@@ -480,9 +490,9 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_preserving_spectral_projector_route_supported_but_open",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_response_underdetermined",
             "closed": True,
-            "next_action": "derive accepted C3-preserving circulant generation dynamics with top-line ordering and source response, or produce strict pole-row data",
+            "next_action": "derive accepted same-surface source law for C3 circulant coefficients a,x,y and top-line ordering, or produce strict pole-row data",
         },
         {
             "step": 7,
@@ -524,6 +534,7 @@ def main() -> int:
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),
+            "c3_spectral_source_response_nogo_fail_count": support_outputs["c3_spectral_source_response_nogo"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

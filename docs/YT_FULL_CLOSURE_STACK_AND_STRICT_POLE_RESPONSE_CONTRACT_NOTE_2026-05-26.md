@@ -47,6 +47,8 @@ closed exactly:
   generation support cannot pick the physical top projector by itself
   C3 spectral-projector route remains live: a derived nondegenerate
   circulant dynamics could supply mass eigenprojectors
+  C3 spectral projectors do not determine source responses: a(h), x(h), y(h)
+  source-law derivatives remain load-bearing
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -56,6 +58,7 @@ still open:
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
+  accepted same-surface source law for the C3 circulant coefficients
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -289,6 +292,14 @@ projectors.  That mass-eigenline route is live, but it still needs an accepted
 same-surface operator, eigenvalue ordering, and source-generator matrix
 elements.
 
+[`YT_C3_SPECTRAL_SOURCE_RESPONSE_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`](YT_C3_SPECTRAL_SOURCE_RESPONSE_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md)
+then prunes the next shortcut.  C3 spectral projectors do not determine the
+top source response: for eigenvalues
+`lambda_0=a+2x`, `lambda_1=a-x-sqrt(3)y`, and
+`lambda_2=a-x+sqrt(3)y`, the top-line derivative depends on the
+same-source derivatives of `a(h)`, `x(h)`, and `y(h)`.  The source law for
+those coefficients is now the live algebraic target.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -395,6 +406,14 @@ The C3 spectral support keeps the best positive projector route explicit:
 derive accepted C3-preserving circulant generation dynamics
   -> nondegenerate spectral top line
   -> source-generator matrix element.
+```
+
+The source-response no-go narrows that route one level further:
+
+```text
+derive accepted same-surface source law for a(h), x(h), y(h)
+  -> d lambda_top / dh
+  -> sparse top/W response certificate.
 ```
 
 ## Non-Claims

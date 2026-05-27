@@ -169,7 +169,11 @@ Previous science commit pushed and recorded in PR #1980 before this cycle:
 d9d4d70a955efdf83e5f689f2d8e156ea1a101b5
 ```
 
-This cycle's commit hash is recorded in the PR body after push.
+This cycle's science commit:
+
+```text
+80c00ae14ed9a2f267eaf21b13b53873bcf89403
+```
 
 Next exact action:
 

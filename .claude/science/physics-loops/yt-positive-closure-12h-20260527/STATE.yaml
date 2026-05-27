@@ -56,7 +56,7 @@ commands_run:
   - "python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py -> PASS=104 FAIL=0"
   - "python3 -m py_compile scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: pending_update_after_commit
-latest_science_commit: pending_current_block
+pr_status: pending_push_and_pr_update_for_science_commit_80c00ae14ed9a2f267eaf21b13b53873bcf89403
+latest_science_commit: 80c00ae14ed9a2f267eaf21b13b53873bcf89403
 next_exact_action: "The remaining positive route is accepted strict same-source top/W pole-row data, or a genuinely new microscopic dynamics theorem deriving the accepted same-surface backend, W/top projectors, and source-generator matrix elements with controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

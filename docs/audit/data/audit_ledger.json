@@ -4388,24 +4388,42 @@
       "verdict_rationale": null
     },
     "alpha_s_derived_narrow_theorem_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T03:07:43.083014+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "73b84396803b078fe05c9f6773da3dd210b8084d1552af498edf6088ce9c83b6",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact algebra closes only after D1, D2, and n_link=(1,2) are assumed, and the runner verifies that assumed algebra. The restricted one-hop dependency is YT_EW_COLOR_PROJECTION_THEOREM.md, whose current retained content is a kappa-family no-go for EW color projection and does not supply the CMT tadpole-power coupling identities claimed by this note.",
       "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Bounded algebraic identity candidate: if alpha_LM := alpha_bare/u_0, alpha_s(v) := alpha_bare/u_0^2, and the n_link=(1,2) tadpole-power split is supplied by retained authority, then alpha_LM^2 = alpha_bare * alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0. This audit does not ratify a value of u_0, any alpha_s(M_Z) readout, or any Standard-Model strong-coupling identification.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-27T03:07:43.083014+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -4413,20 +4431,22 @@
         "yt_ew_color_projection_theorem"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The load-bearing step is the source's assertion that the two coupling definitions D1 and D2 consume retained CMT/n_link identities from yt_ew_color_projection_theorem; after that, P1 and P2 are pure algebraic substitution.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7ded53dc702a6ae58941269c2ba9eb1477d9c2ad9ec2ccc770a8f290b4ede164",
       "note_path": "docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide or cite a retained CMT/tadpole-power coupling theorem that supplies D1, D2, and the n_link=(1,2) split; then re-audit the exact algebraic identities against that direct dependency.",
+      "open_dependency_paths": [
+        "docs/YT_EW_COLOR_PROJECTION_THEOREM.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-22T15:30:26.201355+00:00",
@@ -4479,18 +4499,24 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 16,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "assert_count": 1,
+        "runner_elapsed_sec": 0.32,
+        "runner_result": "TOTAL: PASS=16, FAIL=0; exact sympy algebra after assuming D1/D2 and n_link values.",
+        "runner_sha256": "73b84396803b078fe05c9f6773da3dd210b8084d1552af498edf6088ce9c83b6",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 16
       },
       "runner_path": "scripts/audit_companion_alpha_s_tadpole_power_identity.py",
       "title": "alpha_s Derived Narrow Theorem (Tadpole-Power Coupling-Chain Identity)",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the algebraic runner hard-codes the coupling definitions and n_link split, while the cited one-hop authority no longer supplies those CMT tadpole-power inputs. Why this blocks: without a retained source for D1, D2, and n_link=(1,2), the row reduces to a definition-level algebra identity rather than a retained positive theorem about the coupling chain. Repair target: cite and audit a retained theorem that supplies the CMT change-of-variables identity and the single-vertex/vacuum-polarization n_link counts, or rewrite this row as a purely definitional algebra lemma with no physics retention claim. Claim boundary until fixed: the symbolic identities are correct under the stated assumptions, but the assumptions are not closed by the current dependency packet."
     },
     "alpha_s_derived_note": {
       "audit_date": null,

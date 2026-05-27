@@ -52,6 +52,9 @@ closed exactly:
   B_x is scalar on the real nontrivial block P_nt, so zero singlet weight
   is sufficient for A/sqrt(12) and complex-line isolation is not needed for
   the coefficient row; zero singlet weight is still an open physical law
+  zero-singlet top-block membership no-go: current real/reflection-even C3
+  block algebra does not exclude P_0; P_nt is selected only after importing
+  a sign/order law or minimum-response convention
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -155,7 +158,8 @@ still open:
   accepted same-surface generator factorization for the top block
   accepted zero-singlet physical top-block membership law; complex-line
   isolation is not required for the coefficient row once P_nt support is
-  supplied, but the actual surface still must exclude P_0
+  supplied, but the actual surface still must exclude P_0 through a new
+  accepted sign/order/readout law or strict pole rows
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -442,6 +446,29 @@ Thus the coefficient row does not require choosing between `P_omega` and
 same-surface generator factorization and pole controls.  The actual current
 surface still does not derive that zero-singlet physical top-block membership
 law.
+
+[`YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`](YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md)
+then tests that narrower blocker directly.  For every real reflection-even
+C3-circulant block operator
+
+```text
+H(a,x) = a I + x(C + C^2),
+```
+
+the two real block eigenvalues are
+
+```text
+lambda(P_0)  = a + 2x,
+lambda(P_nt) = a - x.
+```
+
+Thus largest-block ordering selects `P_0` for `x > 0`, selects the degenerate
+nontrivial block for `x < 0`, and selects no block for `x = 0`.  The finite
+algebra names `P_nt`, but it does not derive the physical sign/order/readout
+law that excludes `P_0`.  Minimum-response selection also imports an
+underrived convention.  The zero-singlet membership route therefore remains a
+new dynamics/readout theorem or strict pole-row requirement, not an algebraic
+consequence of the current real C3 surface.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a

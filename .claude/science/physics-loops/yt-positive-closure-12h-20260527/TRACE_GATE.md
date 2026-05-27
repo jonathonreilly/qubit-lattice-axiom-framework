@@ -1,13 +1,13 @@
 # Trace Gate
 
 ```yaml
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: yt_positive_closure_pr1980
 target_blocker_text: "derive/certify the coefficient-bearing same-surface top sector matrix element dM_t/dell = A/sqrt(12)"
 source_of_blocker_text: user_goal
-reachability_to_target: supports
-artifact_role: theorem_support
-next_trace_action: "derive accepted zero-singlet top-block membership plus same-surface generator factorization, or produce accepted strict top/W pole-row data with controls"
+reachability_to_target: prunes current real/reflection-even block-membership shortcut
+artifact_role: no_go
+next_trace_action: "derive a new accepted same-surface sign/order/readout law excluding P_0 plus same-surface generator factorization, or produce accepted strict top/W pole-row data with controls"
 ```
 
 The factorization artifact shows the exact conditional shape of the requested
@@ -123,3 +123,11 @@ Complex-line isolation is therefore not needed for the coefficient row. The
 trace remains support-only because the actual current surface still does not
 derive zero-singlet physical top-block membership, accepted same-surface
 generator factorization, or strict pole controls.
+The twenty-third artifact prunes the direct zero-singlet membership shortcut
+from current real/reflection-even C3 block algebra. In the family
+`H(a,x)=aI+x(C+C^2)`, largest-block ordering selects `P_0` for `x>0`,
+selects `P_nt` only for `x<0`, and is degenerate at `x=0`. Thus the algebra
+names the real nontrivial block but does not derive the physical sign/order
+or minimum-response convention needed to exclude `P_0`. The next trace action
+is a new accepted same-surface sign/order/readout theorem with generator
+factorization, or accepted strict W/top pole rows with controls.

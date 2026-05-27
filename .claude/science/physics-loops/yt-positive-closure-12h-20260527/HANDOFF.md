@@ -1,6 +1,6 @@
 # Handoff
 
-The campaign has produced twenty-two science blocks, not positive retained-grade
+The campaign has produced twenty-three science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary and later
@@ -46,6 +46,8 @@ closure:
 22. exact support showing the coefficient row only needs zero singlet weight
     in the real nontrivial C3 block, not isolation of a single complex
     nontrivial line.
+23. a no-go showing current real/reflection-even C3 block algebra does not
+    derive that zero-singlet physical top-block membership law.
 
 New nontrivial-block matrix-element support result:
 
@@ -96,6 +98,48 @@ PR #1980:
 PR #1980 body was updated with the nontrivial-block matrix-element support
 result, artifacts, verification, and next exact action.  No
 `POSITIVE_CLOSURE` marker was written.
+
+New zero-singlet top-block membership no-go:
+
+```text
+real/reflection-even C3 block algebra
+  + P_nt coefficient support
+  -/-> accepted zero-singlet physical top-block membership
+```
+
+For every real reflection-even C3-circulant block operator:
+
+```text
+H(a,x) = a I + x(C + C^2)
+```
+
+the real block eigenvalues are:
+
+```text
+lambda(P_0)  = a + 2x
+lambda(P_nt) = a - x
+```
+
+So largest-block ordering selects `P_0` for `x > 0`, selects `P_nt` only
+after importing a sign/order premise for `x < 0`, and selects no block for
+`x = 0`. Minimum-response selection also imports an undderived convention.
+The coefficient-row blocker is therefore not an individual complex line, but
+a new accepted physical sign/order/readout law excluding `P_0`, plus
+same-surface generator factorization, or strict top/W pole rows.
+
+Cycle 10 zero-singlet membership no-go verification:
+
+- `python3 scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py` -> `SUMMARY: PASS=104 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=390 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`, real
+  top-line law obstruction `PASS=104`, mass-ordering obstruction `PASS=70`,
+  source-response extremal no-go `PASS=105`, positive Perron no-go `PASS=64`,
+  phase-ordering cone support `PASS=70`, same-surface matrix factorization
+  `PASS=77`, strict sparse availability `PASS=74`, direct sparse certificate
+  `PASS=88`, and strict W/Z plus C3 splice no-go `PASS=110`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
 
 New strict W/Z plus C3 top-row splice result:
 

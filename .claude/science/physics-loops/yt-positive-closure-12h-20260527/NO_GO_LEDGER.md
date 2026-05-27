@@ -150,3 +150,11 @@ with zero `P_0` singlet weight gives `A/sqrt(12)` after the conditional radial
 factor. This support does not close the route because zero-singlet physical
 top-block membership, same-surface generator factorization, and strict pole
 controls remain open.
+- New in the twenty-third block: current real/reflection-even C3 block algebra
+  does not derive that zero-singlet physical top-block membership. For
+  `H(a,x)=aI+x(C+C^2)`, largest-block ordering selects `P_0` when `x>0`,
+  selects `P_nt` only when `x<0` after importing a sign/order premise, and is
+  degenerate when `x=0`. Minimum-response selection also imports an undrived
+  convention. A positive closure route now needs a new accepted
+  same-surface sign/order/readout law excluding `P_0`, or strict top/W
+  pole-row data with controls.

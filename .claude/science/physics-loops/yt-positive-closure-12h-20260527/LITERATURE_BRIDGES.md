@@ -64,3 +64,9 @@ No external finite-group theorem, physical selector, or literature phase law
 is imported. This source is used as finite matrix algebra only; it does not
 provide derivation closure for the physical zero-singlet top-block membership
 law.
+The zero-singlet top-block membership no-go directly computes the finite
+real/reflection-even C3-circulant family `H(a,x)=aI+x(C+C^2)` and its two
+real block eigenvalues. No external representation theorem, physical
+mass-ordering convention, or literature sign law is load-bearing. External
+context could only motivate a new physical sign/order/readout theorem; it does
+not close the current repository surface.

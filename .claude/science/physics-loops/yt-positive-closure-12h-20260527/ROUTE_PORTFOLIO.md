@@ -47,6 +47,8 @@ top/W pole-response certificate.
 The twenty-second route tested whether the coefficient row needs an individual
 nontrivial complex line or only zero singlet weight in the real nontrivial C3
 block.
+The twenty-third route tested whether current real/reflection-even C3 block
+algebra can derive that zero-singlet top-block membership law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -73,6 +75,7 @@ block.
 | Source-response extremal readout | no-go shortcut test | 3 | Pruned: signed/absolute maxima select `P_0`; signed/absolute minima give the target row only by importing a minimum-response selector and leave the nontrivial pair degenerate |
 | Strict W/Z plus C3 top-row splice | no-go shortcut test | 3 | Pruned: the formal target splice needs same-surface authority and the physical nontrivial top line; the same denominator admits the `P_0` singlet readout |
 | Nontrivial real C3 block matrix element | exact support boundary | 2 | Landed: any zero-singlet `P_nt`-supported top readout gives `A/sqrt(12)`; zero-singlet membership remains open |
+| Zero-singlet C3 top-block membership from real block algebra | no-go shortcut test | 3 | Pruned: `H(a,x)` selects `P_0` for `x>0` and `P_nt` only with an added sign/order or minimum-response premise |
 
 ## Stuck Fan-Out
 
@@ -103,6 +106,7 @@ block.
 | Source-response extremal readout | Use the derived `B_x` response itself as a non-scalar orbit-member/top-line readout | Fails; response maxima select `P_0 -> A/sqrt(3)`, while minima select the nontrivial pair only with an extra selector |
 | Strict W/Z plus C3 top-row splice | Combine strict W/Z denominator support with the conditional C3 target row | Fails; the target readout appears only after supplying same-surface splice authority and nontrivial top-line authority, while the same denominator/source scale allows a `P_0` singlet readout |
 | Nontrivial real block support | Ask whether the coefficient row needs a complex nontrivial line or only zero singlet weight | Succeeds as support; `B_x` is scalar on `P_nt`, but zero-singlet physical membership is still not derived |
+| Zero-singlet block membership | Ask whether current real/reflection-even C3 block algebra excludes `P_0` | Fails; the same finite family selects `P_0` or `P_nt` depending on an undetermined sign/order premise |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -125,4 +129,7 @@ physical top-line/projector, and pole-row controls are accepted.
 The new block-support result weakens the C3 coefficient requirement from
 "choose `P_omega` or `P_omega2`" to "exclude `P_0`." That is a real
 simplification, but it remains an open physical top-block membership law, not
-positive retained closure.
+positive retained closure. The follow-on zero-singlet no-go prunes the
+obvious algebraic shortcut: excluding `P_0` now requires a genuinely new
+accepted same-surface sign/order/readout law with matrix elements, or accepted
+strict pole-row data.

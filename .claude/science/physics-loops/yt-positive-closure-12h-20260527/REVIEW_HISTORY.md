@@ -704,3 +704,36 @@ Verification recorded with this review:
 - `python3 -m py_compile ...` passed.
 - YAML validation passed.
 - `git diff --check` passed.
+## 2026-05-27 Local Review, Block 23
+
+Scope:
+
+- C3 zero-singlet top-block membership no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the finite real/reflection-even C3 block family, dependency outputs, selector witnesses, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open zero-singlet top-block membership law; current block algebra names `P_nt` but does not physically exclude `P_0`. |
+| Imports / support | DISCLOSED | No external sign/order law, mass data, target selector, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=104 FAIL=0`
+- Full stack runner: `PASS=390 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`, real
+  top-line law obstruction `PASS=104`, mass-ordering obstruction `PASS=70`,
+  source-response extremal no-go `PASS=105`, positive Perron no-go `PASS=64`,
+  phase-ordering cone support `PASS=70`, same-surface matrix factorization
+  `PASS=77`, strict sparse availability `PASS=74`, direct sparse certificate
+  `PASS=88`, and strict W/Z plus C3 splice no-go `PASS=110`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.

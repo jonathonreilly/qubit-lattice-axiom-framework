@@ -287781,46 +287781,24 @@
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note": {
-      "audit_date": "2026-05-27T02:37:55.673114+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
-        },
-        "dep_claim_type": {
-          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
-        },
-        "deps": [
-          "wave_direct_dm_h025_fam2_seed0_control_note",
-          "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-        ],
-        "load_bearing_score": 4.585,
-        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
-        "transitive_descendants": 11
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The retained Fam2 seed0 control dependency closes the H=0.25 controlled replay values, and the retained Fam2 synthesis dependency closes the bounded pair context. The registered primary runner cache for this row, however, is the default Fam1 seed0 invocation rather than Fam2 seed0, and the coarse-H high-band comparison values are cited as frozen logs rather than retained one-hop authorities or reproduced runner artifacts.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "wave_direct_dm_h025_fam2_seed0_boundary_note",
-      "claim_scope": "Bounded Fam2 seed0 H=0.25 boundary replay and coarse-to-fine high-band-collapse comparison; excludes family-wide fine-H law, Fam3, extra seeds, weaker-strength widening, and any H=0.25 portability theorem.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-27T02:37:55.673114+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -287829,27 +287807,23 @@
         "wave_direct_dm_h025_fam2_two_point_synthesis_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 4.7,
-      "load_bearing_step": "On the tested Fam2 seed0 row, the direct-dM sign survives at H=0.25 while the old higher-magnitude coarse-H band collapses into the lower-magnitude regime.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "9fa73444a94c0c42c4e5033617d2dac8a0cd486e37f01884a53e37d3877b9358",
+      "note_hash": "8bdadfd109517ae01166863d103ce94559f775a2aebbaefcb3833de11e56d502",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue - Register or cache a row-specific Fam2 seed0 point-runner invocation, or retarget this row to the retained self-contained Fam2 seed0 control runner, and add retained provenance for the coarse-H comparison values.",
-      "open_dependency_paths": [
-        "scripts/wave_direct_dm_h025_point_runner.py --family Fam2 --seed 0 --strength 0.004 --h 0.25",
-        "logs/2026-04-08-wave-direct-dm-h025-fam2-seed0.txt",
-        "coarse-H H=0.50/H=0.35 Fam2 seed0 provenance"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-30T01:01:47.231649+00:00",
@@ -287875,25 +287849,83 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-27T13:08:12.063963+00:00",
+          "archived_for_note_hash": "9fa73444a94c0c42c4e5033617d2dac8a0cd486e37f01884a53e37d3877b9358",
+          "audit_date": "2026-05-27T02:37:55.673114+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
+            },
+            "dep_claim_type": {
+              "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
+            },
+            "deps": [
+              "wave_direct_dm_h025_fam2_seed0_control_note",
+              "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+            ],
+            "load_bearing_score": 4.585,
+            "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+            "transitive_descendants": 11
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The retained Fam2 seed0 control dependency closes the H=0.25 controlled replay values, and the retained Fam2 synthesis dependency closes the bounded pair context. The registered primary runner cache for this row, however, is the default Fam1 seed0 invocation rather than Fam2 seed0, and the coarse-H high-band comparison values are cited as frozen logs rather than retained one-hop authorities or reproduced runner artifacts.",
+          "claim_scope": "Bounded Fam2 seed0 H=0.25 boundary replay and coarse-to-fine high-band-collapse comparison; excludes family-wide fine-H law, Fam3, extra seeds, weaker-strength widening, and any H=0.25 portability theorem.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T02:37:55.673114+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "On the tested Fam2 seed0 row, the direct-dM sign survives at H=0.25 while the old higher-magnitude coarse-H band collapses into the lower-magnitude regime.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "runner_artifact_issue - Register or cache a row-specific Fam2 seed0 point-runner invocation, or retarget this row to the retained self-contained Fam2 seed0 control runner, and add retained provenance for the coarse-H comparison values.",
+          "open_dependency_paths": [
+            "scripts/wave_direct_dm_h025_point_runner.py --family Fam2 --seed 0 --strength 0.004 --h 0.25",
+            "logs/2026-04-08-wave-direct-dm-h025-fam2-seed0.txt",
+            "coarse-H H=0.50/H=0.35 Fam2 seed0 provenance"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "assert_count": 0,
+            "claim_target": "Fam2 seed0 H=0.25 strength=0.004",
+            "primary_runner_cache_matches_claim": false,
+            "primary_runner_cache_observed": "Fam1 seed0 H=0.25 strength=0.004",
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: The row's H=0.25 Fam2 seed0 value is covered by a retained control dependency, but the registered primary runner cache is for Fam1 seed0 and the source's coarse-to-fine high-band-collapse comparison depends on coarse-H logs that are not retained one-hop authorities. Why this blocks: the audit packet can retain the current H=0.25 Fam2 seed0 control replay through the dependency, but it cannot independently close this row's own runner-backed boundary comparison or the old high-band collapse from the registered runner/cache and direct dependency chain. Repair target: register or cache a row-specific Fam2 seed0 point runner invocation, or point the row to the self-contained Fam2 seed0 control runner, and add retained/provenance edges or a reproducing runner for the H=0.50/H=0.35 coarse-band values. Claim boundary until fixed: the retained dependency supports the narrow H=0.25 Fam2 seed0 controlled replay; the row's broader coarse-to-fine boundary/compression comparison remains conditional."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "assert_count": 0,
-        "claim_target": "Fam2 seed0 H=0.25 strength=0.004",
-        "primary_runner_cache_matches_claim": false,
-        "primary_runner_cache_observed": "Fam1 seed0 H=0.25 strength=0.004",
         "total_pass": 0
       },
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Boundary Note",
       "transitive_descendants": 12,
-      "verdict_rationale": "Issue: The row's H=0.25 Fam2 seed0 value is covered by a retained control dependency, but the registered primary runner cache is for Fam1 seed0 and the source's coarse-to-fine high-band-collapse comparison depends on coarse-H logs that are not retained one-hop authorities. Why this blocks: the audit packet can retain the current H=0.25 Fam2 seed0 control replay through the dependency, but it cannot independently close this row's own runner-backed boundary comparison or the old high-band collapse from the registered runner/cache and direct dependency chain. Repair target: register or cache a row-specific Fam2 seed0 point runner invocation, or point the row to the self-contained Fam2 seed0 control runner, and add retained/provenance edges or a reproducing runner for the H=0.50/H=0.35 coarse-band values. Claim boundary until fixed: the retained dependency supports the narrow H=0.25 Fam2 seed0 controlled replay; the row's broader coarse-to-fine boundary/compression comparison remains conditional."
+      "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note_2026-05-17": {
       "audit_date": null,
@@ -311801,8 +311833,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2390,
-    "re_audit_required": 0,
+    "preserved_existing": 2389,
+    "re_audit_required": 1,
     "row_count": 2434,
     "seeded_new": 0
   }

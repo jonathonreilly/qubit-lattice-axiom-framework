@@ -81007,9 +81007,9 @@
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note": {
       "claim_id": "wave_direct_dm_h025_fam2_seed0_boundary_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "wave_direct_dm_h025_fam2_seed0_control_note",
         "wave_direct_dm_h025_fam2_two_point_synthesis_note"
@@ -81018,9 +81018,9 @@
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "9fa73444a94c0c42c4e5033617d2dac8a0cd486e37f01884a53e37d3877b9358",
+      "note_hash": "8bdadfd109517ae01166863d103ce94559f775a2aebbaefcb3833de11e56d502",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md",
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Boundary Note"
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note_2026-05-17": {
@@ -85403,20 +85403,20 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 608,
+      "bounded_theorem": 609,
       "decoration": 1,
       "meta": 191,
       "no_go": 83,
-      "none": 1446,
+      "none": 1445,
       "open_gate": 49,
       "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1027,
+      "bounded_theorem": 1028,
       "decoration": 1,
       "meta": 191,
       "no_go": 186,
-      "none": 428,
+      "none": 427,
       "open_gate": 126,
       "positive_theorem": 589
     },

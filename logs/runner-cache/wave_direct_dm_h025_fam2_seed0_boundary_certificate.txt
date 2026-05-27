@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py
+runner_sha256: 5277344ddb09006632fc5f7af0dd59868be50f5e45b1d8ad426725105333522d
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 142.93
+status: ok
+----- stdout -----
+WAVE DIRECT-DM H=0.25 FAM2 SEED0 BOUNDARY CERTIFICATE
+family=Fam2 drift=0.05 restore=0.30
+seed=0 strength=0.004000
+
+[H=0.50]
+  NL=30  PW=6.000  src_layer=10
+  start_z_real=3.000  end_z_real=0.000
+  dM(early)  = +0.005565
+  dM(late)   = +0.009650
+  delta_hist = -0.004085
+  R_hist     = -42.33%
+[PASS] H=0.50 dM(early) matches frozen row :: got +0.005565, expected +0.005565
+[PASS] H=0.50 dM(late) matches frozen row :: got +0.009650, expected +0.009650
+[PASS] H=0.50 delta_hist matches frozen row :: got -0.004085, expected -0.004085
+[PASS] H=0.50 R_hist matches frozen row :: got -0.4233, expected -0.4233
+[PASS] H=0.50 direct-dM sign survives :: delta_hist=-0.004085
+[PASS] H=0.50 late branch exceeds early branch :: early=+0.005565, late=+0.009650
+
+[H=0.35]
+  NL=43  PW=5.950  src_layer=14
+  start_z_real=3.150  end_z_real=0.000
+  dM(early)  = +0.004743
+  dM(late)   = +0.007617
+  delta_hist = -0.002874
+  R_hist     = -37.73%
+[PASS] H=0.35 dM(early) matches frozen row :: got +0.004743, expected +0.004743
+[PASS] H=0.35 dM(late) matches frozen row :: got +0.007617, expected +0.007617
+[PASS] H=0.35 delta_hist matches frozen row :: got -0.002874, expected -0.002874
+[PASS] H=0.35 R_hist matches frozen row :: got -0.3773, expected -0.3773
+[PASS] H=0.35 direct-dM sign survives :: delta_hist=-0.002874
+[PASS] H=0.35 late branch exceeds early branch :: early=+0.004743, late=+0.007617
+
+[H=0.25]
+  NL=60  PW=6.000  src_layer=20
+  start_z_real=3.000  end_z_real=0.000
+  dM(early)  = +0.005393
+  dM(late)   = +0.006969
+  delta_hist = -0.001576
+  R_hist     = -22.61%
+[PASS] H=0.25 dM(early) matches frozen row :: got +0.005393, expected +0.005393
+[PASS] H=0.25 dM(late) matches frozen row :: got +0.006969, expected +0.006969
+[PASS] H=0.25 delta_hist matches frozen row :: got -0.001576, expected -0.001576
+[PASS] H=0.25 R_hist matches frozen row :: got -0.2261, expected -0.2261
+[PASS] H=0.25 direct-dM sign survives :: delta_hist=-0.001576
+[PASS] H=0.25 late branch exceeds early branch :: early=+0.005393, late=+0.006969
+
+[PASS] fine-H value remains materially nonzero :: delta_hist=-0.001576
+[PASS] old high-band magnitude collapses at H=0.25 :: |R_hist| H=0.25 22.61%, H=0.35 37.73%, H=0.50 42.33%
+[PASS] boundary scope excludes a portability positive :: fine |R_hist|=22.61%
+
+elapsed_s = 142.87
+rss_mb    = 696.4
+PASS=21 FAIL=0
+
+----- stderr -----
+

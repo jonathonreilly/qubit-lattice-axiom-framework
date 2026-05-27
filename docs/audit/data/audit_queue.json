@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 236,
+    "critical": 237,
     "high": 328,
     "leaf": 282,
     "medium": 313
@@ -66,6 +66,30 @@
     }
   ],
   "queue": [
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "s3_cap_uniqueness_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
+      ],
+      "direct_in_degree": 21,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 19.957,
+      "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
+      "transitive_descendants": 702
+    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -35269,6 +35293,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 3,
-  "total_pending": 1159
+  "ready_count": 4,
+  "total_pending": 1160
 }

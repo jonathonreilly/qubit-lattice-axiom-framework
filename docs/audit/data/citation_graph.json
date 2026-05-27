@@ -74152,10 +74152,10 @@
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "20acdd7cf76576a1f39d99967cacc8bcafb0ae1b8276c302c783dea8eb5eb1d3",
+      "note_hash": "a7d52404bdf4185ee32bba98c2542e3c64a1847ff6ac5a20d5f580f2858f73de",
       "path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
-      "title": "S^3 Cap-Map Uniqueness: The Framework Forces Cone-Capping"
+      "title": "S^3 Cap Finite Cone-Cap Construction Certificate"
     },
     "s3_general_r_derivation_note": {
       "claim_id": "s3_general_r_derivation_note",

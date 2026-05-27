@@ -1,0 +1,20 @@
+loop: s3-cap-finite-construction-repair-20260527
+target_claim_id: s3_cap_uniqueness_note
+target_status: bounded-support
+actual_current_surface_status: unaudited
+branch: physics-loop/s3-cap-finite-construction-repair-20260527
+base: origin/main
+current_route: finite cone-cap construction repair
+files_touched:
+  - docs/S3_CAP_UNIQUENESS_NOTE.md
+  - scripts/frontier_s3_cap_uniqueness.py
+open_imports:
+  - Global PL cap uniqueness remains out of scope.
+  - PL S^3 identification remains out of scope.
+  - Physical closure/Kawamoto-Smit homogeneity remains out of scope.
+verification:
+  - python3 scripts/frontier_s3_cap_uniqueness.py
+  - python3 scripts/vocab_lint.py --report-only docs/S3_CAP_UNIQUENESS_NOTE.md
+  - audit pipeline regenerated ledger/queue; target is unaudited and ready=true
+next_exact_action: open review PR, then continue conditional backlog
+stop_condition: PR created and target queued for independent re-audit

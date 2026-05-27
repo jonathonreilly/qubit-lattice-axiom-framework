@@ -1,0 +1,119 @@
+==============================================================================
+Section A: Exact symbolic substitution chain (B1)-(B4)
+==============================================================================
+  PASS [EXACT]  (B1) Under (CN), Tr(T_a T_b) = delta_{ab}/2 gives kinetic-term coefficient 1/2
+  PASS [EXACT]  (B2) At lambda = 1 ((WS) no-rescaling), alpha = g_eff^2/(4 pi) = g_bare^2/(4 pi) = (D)
+  PASS [EXACT]  (B2) (WS) is non-trivial: lambda = 2 gives alpha = 4 g_bare^2/(4 pi) != g_bare^2/(4 pi)
+  PASS [EXACT]  (B2) (WS) probe: ratio alpha(lambda=2) / alpha(lambda=1) = 4 = lambda^2
+  PASS [EXACT]  (B3) Combined (CN)+(WS): alpha_bare = g_bare^2/(4 pi) unambiguously on Wilson surface
+  PASS [EXACT]  (B4) at g_bare = 1, alpha_bare = 1/(4 pi) exactly (I3 no-rescaling identification)
+
+==============================================================================
+Section B: SU(2) Pauli realization cross-check of (CN)
+==============================================================================
+  PASS [EXACT]  (B-SU2) Tr(T_1 T_1) = 1/2 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_1 T_2) = 0 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_1 T_3) = 0 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_2 T_1) = 0 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_2 T_2) = 1/2 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_2 T_3) = 0 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_3 T_1) = 0 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_3 T_2) = 0 for SU(2) Pauli realization
+  PASS [EXACT]  (B-SU2) Tr(T_3 T_3) = 1/2 for SU(2) Pauli realization
+
+==============================================================================
+Section C: SU(3) Gell-Mann realization cross-check of (CN)
+==============================================================================
+  Checking 64 SU(3) generator-pair traces (8 diag + 56 off-diag)...
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_1) = 1/2 (diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_2) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_3) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_4) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_5) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_6) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_7) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_1 T_8) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_2 T_2) = 1/2 (diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_2 T_3) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_2 T_4) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_2 T_5) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_2 T_6) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_2 T_7) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_2 T_8) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_3 T_3) = 1/2 (diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_3 T_4) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_3 T_5) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_3 T_6) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_3 T_7) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_3 T_8) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_4 T_4) = 1/2 (diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_4 T_5) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_4 T_6) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_4 T_7) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_4 T_8) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_5 T_5) = 1/2 (diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_5 T_6) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_5 T_7) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_5 T_8) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_6 T_6) = 1/2 (diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_6 T_7) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_6 T_8) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_7 T_7) = 1/2 (diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_7 T_8) = 0 (off-diagonal)
+  PASS [EXACT]  (B-SU3) Tr(T_8 T_8) = 1/2 (diagonal)
+
+==============================================================================
+Section D: Wilson plaquette small-a matching at canonical normalization
+==============================================================================
+  PASS [EXACT]  (D-WM) At g_bare = 1, beta = 2 N_c (Wilson matching consistency)
+  PASS [EXACT]  (D-WM) At g_bare = 1, N_c = 3: beta = 6 (canonical normalization)
+  PASS [EXACT]  (D-WM) At g_bare = 1: alpha_bare = 1/(4 pi) (independent of N_c)
+  PASS [BOUNDED] (D-num) numerical alpha_bare at g_bare=1 = 1/(4 pi) = 0.0795774... value = 0.079577471545948
+
+==============================================================================
+Section E: isolation of I3 from I1 and I2 (no over-claim)
+==============================================================================
+  PASS [EXACT]  (E1) I1 (static-source readout) NOT touched here; addressed in sibling I1 bridge (PR #2018)
+  PASS [EXACT]  (E2) I2 (alpha = g_bare^2/(4 pi)) consumed from parent I2 / sibling I2 bridge, not re-derived
+  PASS [EXACT]  (E3) single accepted-premise (P1) registered; no new admissions
+  PASS [EXACT]  (E4) (P1) is exactly the joint (CN) + (WS) convention
+  PASS [EXACT]  (E5) bridge addresses exactly parent note packet entry I3, not I1 or I2
+
+==============================================================================
+Section F: no-import audit on load-bearing chain
+==============================================================================
+  PASS [EXACT]  (F1) no continuum 4D-Fourier-measure d^4 k / (2 pi)^4 import used
+  PASS [EXACT]  (F2) no d^4 k / (2 pi)^4 string appears in load-bearing inputs
+  PASS [EXACT]  (F3) no Wick rotation Z^3 -> Z^4 in load-bearing chain
+  PASS [EXACT]  (F4) load-bearing inputs enumerable (5 items)
+
+==============================================================================
+Section G: vocabulary audit + no-go honor
+==============================================================================
+  PASS [EXACT]  (G1) no new repo vocabulary introduced
+  PASS [EXACT]  (G2) no multiplicative cross-row combination used (Cheeger-Simons R/Z no-go honored)
+  PASS [EXACT]  (G3) regulator-dependence no-go honored: only (CN)+(WS) addressed; no `16` exponent claim
+  PASS [EXACT]  (G4) bridge addresses exactly parent note packet entry I3, not I1 or I2
+  PASS [EXACT]  (G5) zero new admissions; (P1) is a re-statement of parent I3 in named-premise form
+
+==============================================================================
+Section H: rescaling parameter analysis (probes (WS) non-trivially)
+==============================================================================
+  PASS [EXACT]  (H-WS) at g_bare=1, lambda=1/2: alpha = lambda^2/(4 pi) = 1/4/(4 pi)
+  PASS [EXACT]  (H-WS) at g_bare=1, lambda=1: alpha = lambda^2/(4 pi) = 1/(4 pi)
+  PASS [EXACT]  (H-WS) at g_bare=1, lambda=2: alpha = lambda^2/(4 pi) = 4/(4 pi)
+  PASS [EXACT]  (H-WS) at g_bare=1, lambda=3: alpha = lambda^2/(4 pi) = 9/(4 pi)
+  PASS [EXACT]  (H-WS-uniq) lambda = +1 is a solution of alpha_rescaled = alpha_def (canonical (WS))
+
+==============================================================================
+Summary
+==============================================================================
+EXACT   : PASS = 73, FAIL = 0
+BOUNDED : PASS = 1, FAIL = 0
+TOTAL   : PASS = 74, FAIL = 0
+
+VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from
+  the parent alpha_bare bridge + accepted-premise packet (P1) + canonical
+  dimensionless-coupling convention (D) by exact symbolic substitution
+  arithmetic, with explicit Pauli (N_c=2) / Gell-Mann (N_c=3)
+  trace-orthogonality cross-checks confirming the (CN) component of (P1).

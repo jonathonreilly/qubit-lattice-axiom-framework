@@ -49,6 +49,8 @@ closed exactly:
   circulant dynamics could supply mass eigenprojectors
   C3 spectral projectors do not determine source responses: a(h), x(h), y(h)
   source-law derivatives remain load-bearing
+  unit source normalization fixes scale, not direction, in the C3 tangent
+  source space
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -59,6 +61,7 @@ still open:
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
   accepted same-surface source law for the C3 circulant coefficients
+  accepted physical target/source direction inside the C3 tangent space
   same-scale g_2 and matching/running if the claim is numerical y_t(v)
 ```
 
@@ -300,6 +303,12 @@ top source response: for eigenvalues
 same-source derivatives of `a(h)`, `x(h)`, and `y(h)`.  The source law for
 those coefficients is now the live algebraic target.
 
+[`YT_C3_SOURCE_DIRECTION_SELECTION_NO_GO_NOTE_2026-05-27.md`](YT_C3_SOURCE_DIRECTION_SELECTION_NO_GO_NOTE_2026-05-27.md)
+then sharpens that target.  Primitive/Fisher unit normalization fixes source
+scale, not a direction inside the three-dimensional C3-invariant Hermitian
+tangent space.  The remaining non-compute target is therefore a physical
+target/source direction, not another normalization argument.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -414,6 +423,13 @@ The source-response no-go narrows that route one level further:
 derive accepted same-surface source law for a(h), x(h), y(h)
   -> d lambda_top / dh
   -> sparse top/W response certificate.
+```
+
+The source-direction no-go makes the same point geometrically:
+
+```text
+derive physical target/source direction in the C3 tangent space;
+unit Fisher length alone is insufficient.
 ```
 
 ## Non-Claims

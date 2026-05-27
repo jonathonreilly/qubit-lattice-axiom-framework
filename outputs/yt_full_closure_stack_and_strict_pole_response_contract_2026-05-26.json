@@ -93,8 +93,8 @@
     {
       "closed": true,
       "name": "physical top generation projector",
-      "next_action": "derive accepted same-surface source law for C3 circulant coefficients a,x,y and top-line ordering, or produce strict pole-row data",
-      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_response_underdetermined",
+      "next_action": "derive physical target/source direction in C3 tangent space plus top-line ordering, or produce strict pole-row data",
+      "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open",
       "step": 6.5
     },
     {
@@ -107,7 +107,7 @@
   ],
   "fail_count": 0,
   "first_open_gate": "strict same-source top/W response evidence unless audit accepts primitive top-source premise",
-  "pass_count": 143,
+  "pass_count": 149,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The stack burns down source-coordinate scale and the primitive source law, then prunes top-source identification from current structural inputs. Coefficient-certified top/W response evidence remains absent.",
   "review_surface": [
@@ -116,6 +116,7 @@
     "outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json"
   ],
   "support_output_status": {
+    "c3_source_direction_nogo_fail_count": 0,
     "c3_spectral_projector_support_fail_count": 0,
     "c3_spectral_source_response_nogo_fail_count": 0,
     "direct_sparse_response_certificate_fail_count": 0,

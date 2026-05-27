@@ -1,0 +1,19 @@
+goal: "Test whether unit source normalization selects the C3 source direction."
+target_status: "best-honest-status"
+actual_current_surface_status: "no-go"
+trace_class: "negative_route_pruning"
+active_route: "C3 invariance plus unit source normalization derives top response"
+block_count: 1
+files_touched:
+  - "docs/YT_C3_SOURCE_DIRECTION_SELECTION_NO_GO_NOTE_2026-05-27.md"
+  - "scripts/frontier_yt_c3_source_direction_selection_no_go.py"
+  - "outputs/yt_c3_source_direction_selection_no_go_2026-05-27.json"
+  - "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md"
+  - "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py"
+open_imports:
+  - "physical target/source direction in the C3 tangent space"
+  - "top-line ordering"
+  - "same-surface W response"
+verification:
+  - "python3 scripts/frontier_yt_c3_source_direction_selection_no_go.py -> PASS=70 FAIL=0"
+next_exact_action: "Derive or refute the physical target/source direction in the C3 tangent space."

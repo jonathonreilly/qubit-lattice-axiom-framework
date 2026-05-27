@@ -1044,6 +1044,18 @@
       "dominant_class": "C",
       "runner": "scripts/axiom_first_lattice_noether_check.py"
     },
+    "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 21,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py"
+    },
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17": {
       "assert_count": 0,
       "counts": {
@@ -41504,6 +41516,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py": {
+      "assert_count": 1,
+      "claims": [
+        "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 21,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_lensing_finite_path_explanation_note_hostile_audit_findings.py": {
       "assert_count": 0,
       "claims": [
@@ -55676,12 +55703,12 @@
     "dominant_class_distribution": {
       "A": 236,
       "B": 280,
-      "C": 750,
+      "C": 751,
       "D": 299,
       "none": 438
     },
-    "runners_classified": 2003,
-    "runners_with_C": 973,
-    "runners_with_D": 583
+    "runners_classified": 2004,
+    "runners_with_C": 974,
+    "runners_with_D": 584
   }
 }

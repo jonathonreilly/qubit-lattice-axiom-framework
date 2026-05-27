@@ -1,9 +1,12 @@
 # Opportunity Queue
 
-1. **Accepted same-surface pole-residue authority.**
-   Prove or measure the isolated source/Higgs and top/W pole residues on the
-   same Y_T transfer surface.  The Fisher/LSZ equivalence is now exact support
-   once this pole surface is supplied.
+1. **Accepted same-surface pole/action authority.**
+   Prove that the physical top intervention is the minimum-information
+   RN/Fisher source on the same top/Higgs transfer surface, or measure the
+   isolated source/Higgs and top/W pole residues directly.  The certificate
+   must include contact subtraction, FV/IR controls, same model class, and
+   accepted residue normalization.  The Fisher/LSZ equivalence is exact
+   support once this surface is supplied.
 
 2. **Strict same-source top/W response evidence pipeline.**
    Implement or wire a certificate with `dM_t/dh`, `dM_W/dh`,

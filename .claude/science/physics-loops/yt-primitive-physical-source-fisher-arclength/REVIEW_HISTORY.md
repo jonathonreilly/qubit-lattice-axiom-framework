@@ -22,3 +22,11 @@ isolated-pole source surface.  The add-on proves Fisher arclength and LSZ
 unit-residue normalization agree algebraically, while preserving the pole-row
 no-go boundary: Gram purity alone still does not create the accepted pole
 surface or strict top/W response evidence.
+
+## Closure Stack Contract Review
+
+Disposition: `pass` for branch-local exact-support stack packaging.  The
+minimum-information bridge runner passed with `PASS=37 FAIL=0`.  The closure
+contract runner passed with `PASS=73 FAIL=0`, names the first open gate as
+accepted same-surface pole/action authority, and keeps retained/proposed-
+retained wording forbidden.

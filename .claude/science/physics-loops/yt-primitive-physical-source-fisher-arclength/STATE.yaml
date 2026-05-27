@@ -6,13 +6,20 @@ branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 base_branch: physics-loop/yt-lsp-source-scale-response-contract-20260526
 files_touched:
   - docs/YT_PRIMITIVE_PHYSICAL_SOURCE_FISHER_ARCLENGTH_INVARIANT_THEOREM_NOTE_2026-05-26.md
+  - docs/YT_MINIMUM_INFORMATION_SOURCE_ACTION_BRIDGE_THEOREM_NOTE_2026-05-26.md
   - docs/YT_FISHER_LSZ_SOURCE_NORMALIZATION_BRIDGE_THEOREM_NOTE_2026-05-26.md
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_primitive_physical_source_fisher_arclength_invariant.py
+  - scripts/frontier_yt_minimum_information_source_action_bridge.py
   - scripts/frontier_yt_fisher_lsz_source_normalization_bridge.py
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json
+  - outputs/yt_minimum_information_source_action_bridge_2026-05-26.json
   - outputs/yt_fisher_lsz_source_normalization_bridge_2026-05-26.json
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
   - .claude/science/physics-loops/yt-primitive-physical-source-fisher-arclength/
 open_imports:
+  - physical top intervention identification with the minimum-information RN/Fisher source surface
   - accepted same-surface isolated-pole residue authority for the Y_T source/Higgs and top/W transfer rows
   - retained one-Higgs/top carrier authority remains outside this block
   - strict same-source top/W response evidence remains absent
@@ -21,7 +28,8 @@ no_go_routes_respected:
   - LSP source-scale blindness
   - old Ward/H_unit definition-as-derivation failure
 next_exact_action: >
-  Build or derive accepted same-surface pole-residue authority and strict
-  same-source top/W response rows; the Fisher/LSZ equivalence itself is now
-  exact support under that pole surface.
+  Burn down gate 1 by deriving or producing an accepted same-surface
+  pole/action authority certificate for the Y_T top/Higgs row.  If that gate
+  cannot be derived, pivot to the strict same-source top/W pole-response
+  measurement certificate.
 stop_condition: block packaged; continue campaign if user requests more blocks

@@ -1,0 +1,105 @@
+{
+  "actual_current_surface_status": "exact-support / open strict-response gate",
+  "audit_required_before_effective_retained": true,
+  "backup_route": "strict same-source top/W pole-response measurement certificate",
+  "bare_retained_allowed": false,
+  "certificates": {
+    "required_pole_fields": [
+      "same_surface_id",
+      "source_action_authority",
+      "source_operator",
+      "higgs_operator",
+      "isolated_source_higgs_pole",
+      "accepted_pole_residue",
+      "contact_subtraction_done",
+      "fv_ir_controls_pass",
+      "same_model_class",
+      "fisher_lsz_normalized",
+      "no_forbidden_imports"
+    ],
+    "required_top_w_fields": [
+      "same_source_id",
+      "top_pole_isolated",
+      "w_pole_isolated",
+      "dM_t_dh",
+      "dM_W_dh",
+      "contact_subtraction_done",
+      "fv_ir_controls_pass",
+      "same_model_class",
+      "same_scale_g2",
+      "no_forbidden_imports"
+    ],
+    "strict_source_higgs_pole_certificate_present": false,
+    "strict_top_w_response_certificate_present": false
+  },
+  "closure_stack": [
+    {
+      "closed": false,
+      "name": "same-surface source/action authority",
+      "next_action": "derive or accept physical Y_T source/action surface, or bypass via strict same-source pole responses",
+      "status": "bounded_support_plus_minimum_information_exact_support_physical_identification_open",
+      "step": 0
+    },
+    {
+      "closed": true,
+      "name": "source-scale Fisher arclength",
+      "next_action": "use only with a physical Fisher/LSZ source readout",
+      "status": "exact_support",
+      "step": 1
+    },
+    {
+      "closed": true,
+      "name": "Fisher/LSZ source normalization",
+      "next_action": "supply accepted same-surface isolated-pole residue authority",
+      "status": "exact_support_under_accepted_isolated_pole",
+      "step": 2
+    },
+    {
+      "closed": false,
+      "name": "same-surface pole/action authority",
+      "next_action": "produce strict pole/residue certificate or theorem",
+      "status": "open_first_hard_gate",
+      "step": 3
+    },
+    {
+      "closed": false,
+      "name": "strict same-source top/W response rows",
+      "next_action": "produce coefficient-certified top/W response rows",
+      "status": "algebra_closed_evidence_absent",
+      "step": 4
+    },
+    {
+      "closed": false,
+      "name": "same-scale g2 and matching/running",
+      "next_action": "defer unless the claim is numerical y_t(v) rather than local ratio",
+      "status": "open_for_numerical_y_t_v",
+      "step": 5
+    }
+  ],
+  "fail_count": 0,
+  "first_open_gate": "accepted same-surface pole/action authority",
+  "pass_count": 73,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The stack burns down source-coordinate scale and Fisher/LSZ normalization conditional algebra, but accepted same-surface pole/action authority and coefficient-certified top/W response evidence are absent.",
+  "review_surface": [
+    "docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
+    "scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py",
+    "outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json"
+  ],
+  "support_output_status": {
+    "fh_fail_count": 0,
+    "fisher_fail_count": 0,
+    "fisher_lsz_fail_count": 0,
+    "minimum_information_fail_count": 0,
+    "same_source_fail_count": 0,
+    "strict_top_fail_count": 0,
+    "strict_wz_fail_count": 0
+  },
+  "upstream_statuses": {
+    "ew_coupling": "unaudited",
+    "ew_mass": "retained",
+    "one_higgs": "unaudited",
+    "pole_no_go": "retained_no_go",
+    "source_action": "retained_bounded"
+  }
+}

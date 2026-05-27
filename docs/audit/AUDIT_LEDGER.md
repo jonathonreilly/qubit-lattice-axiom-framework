@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 146 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 504 |
+| **retained_bounded** | 505 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1210 |
+| unaudited | 1209 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -53,13 +53,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 800 |
+| `audited_clean` | 801 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1439 |
+| `unaudited` | 1438 |
 
 | claim_type | count |
 |---|---:|
@@ -884,6 +884,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_3plus1d_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_amplification_near_horizon_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `wave_direct_dm_family_scout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_fam1_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam1_seed1_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed1_control_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -13670,6 +13671,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Holding seed=0, strength=0.004, H=0.5/0.35, and the matched direct-dM schedule fixed, all Fam1/Fam2/Fam3 rows keep the same negative R_hist sign and material magnitude.  _(class `C`)_
 - **chain closes:** True — The exact scoped runner invocation constructs the three retained families, two H values, and matched early/late schedules, then reproduces the six quoted R_hist and delta_hist rows. The chain closes only for the explicitly one-seed, one-strength scout boundary.
 - **rationale:** The exact all-family scout command reproduces the frozen result table: every family/H row has negative R_hist and a material magnitude in the stated -37.73% to -44.29% band. The note explicitly rejects portability, multi-seed, full control-stack, and continuum-stability interpretations, so the retained claim is only the bounded scout table. Residual risk is limited to future runner drift or downstream citations treating this scout as the full portability batch.
+- **auditor confidence:** high
+
+### `wave_direct_dm_h025_fam1_seed0_control_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-hilbert-2nd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The self-contained deterministic runner evaluates Fam1 seed0 at H=0.25 for S=0, 0.002, 0.004, and 0.008, producing an exact null at S=0, negative delta_hist for all nonzero strengths, R_hist near -20% to -21%, and |delta_hist/s| spread of 7.77%.  _(class `C`)_
+- **chain closes:** True — Within the restricted packet, the note's numeric table and summary match the cached self-contained deterministic runner output. The bounded claim is limited to the computed Fam1 seed0 H=0.25 control replay and does not require an additional physical/readout bridge beyond the runner-defined quantities.
+- **rationale:** The scoped computational claim closes from the packet: the cached deterministic runner output directly supports the exact null, stable negative sign pattern, and approximate weak-field scaling asserted in the note. The note explicitly excludes broader family, seed, cross-family, and portability claims, so no unclosed dependency is needed for the retained bounded scope.
 - **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam1_seed1_control_note`

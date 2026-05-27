@@ -3,7 +3,7 @@
     "critical": 235,
     "high": 329,
     "leaf": 327,
-    "medium": 319
+    "medium": 318
   },
   "cycle_break_target_count": 3,
   "cycle_break_targets": [
@@ -6653,6 +6653,35 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 56
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wave_direct_dm_h025_two_point_synthesis_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wave_direct_dm_h025_fam1_seed0_control_note",
+        "wave_direct_dm_h025_fam1_seed1_control_note",
+        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+      ],
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/wave_direct_dm_matched_history_probe.py",
+        "scripts/wave_retardation_continuum_limit.py"
+      ],
+      "load_bearing_score": 8.0,
+      "note_path": "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "transitive_descendants": 15
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16190,35 +16219,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_h025_two_point_synthesis_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam1_seed1_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 8.0,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -16990,28 +16990,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wave_direct_dm_h025_fam1_seed0_control_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.087,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36591,5 +36569,5 @@
     }
   ],
   "ready_count": 47,
-  "total_pending": 1210
+  "total_pending": 1209
 }

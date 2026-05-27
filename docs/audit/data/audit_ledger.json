@@ -62215,10 +62215,14 @@
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16",
+        "dm_leptogenesis_transport_integral_theorem_note_2026-04-16",
+        "dm_leptogenesis_hrad_theorem_note_2026-04-16"
+      ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
@@ -62347,7 +62351,7 @@
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_expansion_axiom_boundary.py",
       "title": "DM Leptogenesis Expansion Axiom Boundary",
@@ -62744,7 +62748,7 @@
         "sm_relativistic_dof_count_import_note_2026-05-17",
         "axiom_first_stefan_boltzmann_theorem_note_2026-05-01"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -68540,7 +68544,7 @@
         "dm_leptogenesis_hrad_theorem_note_2026-04-16",
         "dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -68676,7 +68680,7 @@
         "dm_leptogenesis_hrad_theorem_note_2026-04-16",
         "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [

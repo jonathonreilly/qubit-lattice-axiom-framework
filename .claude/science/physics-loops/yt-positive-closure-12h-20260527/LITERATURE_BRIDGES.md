@@ -12,6 +12,8 @@ countermodels directly. The microscopic boundary also rederives the
 finite-dimensional projector/Feynman-Hellmann equivalence and a projector
 counterfamily directly. The positive Perron block directly diagonalizes the
 entrywise-positive real C3-circulant family `a I + b(C+C^2)` and checks that
-the Perron line is `P_0`. The strict-route audit is a branch-local
+the Perron line is `P_0`. The phase-ordering cone block directly classifies
+the finite C3 character eigenvalue inequalities for `x_0 B_x + y_0 B_y`;
+no external theorem is load-bearing. The strict-route audit is a branch-local
 availability check over existing JSON certificates. No literature bridge is
 needed for the claim status.

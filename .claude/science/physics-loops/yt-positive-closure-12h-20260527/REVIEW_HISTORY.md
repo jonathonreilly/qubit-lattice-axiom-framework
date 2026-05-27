@@ -188,3 +188,32 @@ Verification recorded with this review:
   factorization, and microscopic backend/projector boundary.
 - `python3 -m py_compile ...` passed.
 - `git diff --check` passed.
+
+## 2026-05-27 Local Review, Block 7
+
+Scope:
+
+- C3 phase-ordering cone support boundary note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks C3 character eigenvalue differences, phase-ordering cone inequalities, region witnesses, target source-response rows, dependency outputs, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is exact support/open import; it does not claim the cone is derived on the actual surface. |
+| Imports / support | DISCLOSED | Accepted base operator and phase-ordering cone membership remain open; strict pole-row evidence remains a bypass. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `actual_current_surface_status`, trace class, conditional status, and proposal firewall are explicit. |
+
+Disposition: pass for exact support boundary only; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=70 FAIL=0`
+- Full stack runner: `PASS=265 FAIL=0`
+- Adjacent Y_T runners passed: positive Perron no-go, C3 dynamics boundary,
+  and same-surface matrix factorization.
+- `python3 -m py_compile ...` passed.
+- `git diff --check` passed.

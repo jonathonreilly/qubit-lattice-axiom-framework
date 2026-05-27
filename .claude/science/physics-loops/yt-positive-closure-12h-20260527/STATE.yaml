@@ -6,19 +6,22 @@ remaining_campaign_seconds_at_cycle_start: 40738
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-27T19:14:06Z"
+last_checkpoint_utc: "2026-05-27T19:22:38Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_positive_transfer_perron_top_line_no_go
+active_route: c3_phase_ordering_cone_support_boundary
 hard_residual: "derive/certify dM_t/dell = A/sqrt(12)"
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+actual_current_surface_status: exact-support / open phase-ordering import
+trace_class: upstream_support
+reachability_to_target: supports
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "The positive real C3 transfer/Perron shortcut was pruned: entrywise-positive real C3-circulant dynamics selects the C3 singlet Perron line P_0, while the target row requires a nontrivial C3 character line or strict pole-response evidence."
+claim_state_movement: "The residual C3 phase-ordering condition was characterized exactly: a nontrivial top line requires y_0 > sqrt(3) x_0 or -y_0 > sqrt(3) x_0. The current surface still does not derive accepted base-operator cone membership."
 files_touched:
+  - docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md
+  - scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py
+  - outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json
   - docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py
   - outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json
@@ -34,7 +37,7 @@ open_imports:
   - accepted same-surface transfer/action backend
   - isolated W/top projectors on that backend
   - source-generator matrix elements on accepted W/top projectors
-  - orientation/phase/top-ordering law beyond positive real C3 Perron selection
+  - accepted microscopic dynamics deriving nontrivial C3 phase-ordering cone membership
   - contact, FV/IR, and model-class controls
   - new microscopic dynamics theorem deriving the accepted backend/projectors/matrix elements
 no_go_routes:
@@ -48,6 +51,8 @@ no_go_routes:
   - current microscopic source law plus carrier amplitude plus C3 algebra plus no-kappa backend candidate derives the accepted coefficient-bearing physical top matrix element
   - positive real C3 transfer/Perron selection supplies the nontrivial physical top line
 commands_run:
+  - "python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py -> PASS=70 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=265 FAIL=0"
   - "python3 scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py -> PASS=64 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=257 FAIL=0"
   - "python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py -> PASS=114 FAIL=0"
@@ -62,8 +67,8 @@ commands_run:
   - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
   - "python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py -> PASS=104 FAIL=0"
   - "python3 -m py_compile scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS"
-review_disposition: pass_for_no_go_route_pruning_only
-pr_status: pending_push_and_pr_update_for_science_commit_cc214509a
-latest_science_commit: cc214509a
-next_exact_action: "The remaining positive route is accepted strict same-source top/W pole-row data, or a genuinely new microscopic dynamics/orientation theorem deriving the accepted same-surface backend, W/top projectors, top-ordering law, and source-generator matrix elements with controls."
+review_disposition: pass_for_exact_support_boundary_only
+pr_status: pending_push_and_pr_update_for_science_commit_f291e8410
+latest_science_commit: f291e8410
+next_exact_action: "Derive the nontrivial C3 phase-ordering cone from accepted microscopic dynamics on the same surface, or produce accepted strict same-source top/W pole-row data with controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

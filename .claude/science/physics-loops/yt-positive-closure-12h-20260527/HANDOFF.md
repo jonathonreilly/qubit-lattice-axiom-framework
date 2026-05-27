@@ -1,6 +1,6 @@
 # Handoff
 
-Supervisor cycle 2 has produced six science blocks, not positive retained-grade
+Supervisor cycle 2 has produced seven science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary;
@@ -13,7 +13,8 @@ closure:
 5. a no-go for the current microscopic source/backend/carrier/C3 shortcut to
    the accepted top matrix element;
 6. a no-go for positive real C3 transfer/Perron selection as a nontrivial
-   physical top-line law.
+   physical top-line law;
+7. exact support characterizing the residual C3 phase-ordering cone.
 
 New result:
 
@@ -142,6 +143,22 @@ block remains degenerate in the real reflection-even case.  This prunes only
 the positive-real-Perron shortcut; a future orientation/phase/top-ordering
 dynamics theorem or strict top/W pole-row evidence remains live.
 
+Seventh result:
+
+```text
+H_0 = x_0 B_x + y_0 B_y
+P_omega2 top  <=>  y_0 > 0 and y_0 > sqrt(3) x_0
+P_omega top   <=>  y_0 < 0 and -y_0 > sqrt(3) x_0
+P_0 top       <=>  x_0 > 0 and |y_0| < sqrt(3) x_0
+```
+
+This is exact support for the next C3 theorem target. If a future accepted
+same-surface microscopic dynamics theorem proves that the base operator lies
+in either nontrivial cone, then the already-derived `B_x` source derivative
+and factorization row give `A/sqrt(12)`. The current surface still does not
+derive the accepted base operator or its cone membership, so no retained or
+proposed-retained wording is allowed.
+
 Artifacts:
 
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
@@ -162,17 +179,21 @@ Artifacts:
 - `docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py`
 - `outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json`
+- `docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py`
+- `outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json`
 - updated closure stack note, runner, and JSON
 
 Verification so far:
 
 - `python3 scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py` -> `SUMMARY: PASS=114 FAIL=0`
 - `python3 scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py` -> `SUMMARY: PASS=64 FAIL=0`
+- `python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py` -> `SUMMARY: PASS=70 FAIL=0`
 - `python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py` -> `SUMMARY: PASS=77 FAIL=0`
 - `python3 scripts/frontier_yt_c3_real_same_surface_top_line_law_obstruction.py` -> `SUMMARY: PASS=104 FAIL=0`
 - `python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py` -> `SUMMARY: PASS=95 FAIL=0`
 - `python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py` -> `SUMMARY: PASS=74 FAIL=0`
-- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=257 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=265 FAIL=0`
 - `python3 scripts/frontier_yt_first_principles_transfer_response_boundary.py` -> `SUMMARY: PASS=56 FAIL=0`
 - `python3 scripts/frontier_yt_c3_real_record_reflection_even_source.py` -> `SUMMARY: PASS=76 FAIL=0`
 - `python3 scripts/frontier_yt_c3_nontrivial_top_line_assignment_boundary.py` -> `SUMMARY: PASS=81 FAIL=0`
@@ -201,14 +222,13 @@ d9d4d70a955efdf83e5f689f2d8e156ea1a101b5
 This cycle's science commit:
 
 ```text
-cc214509a
+f291e8410
 ```
 
 Next exact action:
 
 ```text
-obtain accepted strict same-source top/W pole-row data with contact, FV/IR,
-and model-class controls, or derive a genuinely new microscopic
-dynamics/orientation theorem that supplies the accepted same-surface backend,
-W/top projectors, top-ordering law, and source-generator matrix elements.
+derive the nontrivial C3 phase-ordering cone from accepted microscopic
+dynamics on the same surface, or obtain accepted strict same-source top/W
+pole-row data with contact, FV/IR, and model-class controls.
 ```

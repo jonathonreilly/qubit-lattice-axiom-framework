@@ -43,3 +43,8 @@
   C3-circulant dynamics selects the singlet Perron line `P_0`; the nontrivial
   block is degenerate, and the target row still needs an orientation/phase
   top-ordering law or strict pole rows.
+
+Non-no-go support checkpoint after the sixth block: the residual C3
+phase-ordering cone is now exact. Nontrivial top-line ordering requires
+`y_0 > sqrt(3) x_0` or `-y_0 > sqrt(3) x_0`; the actual surface does not yet
+derive accepted base-operator cone membership.

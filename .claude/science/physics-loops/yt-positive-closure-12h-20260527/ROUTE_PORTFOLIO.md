@@ -10,6 +10,7 @@ The fifth route tested the current microscopic source/backend/carrier/C3
 shortcut to the accepted matrix element.
 The sixth route tested positive real C3 transfer/Perron selection as a
 nontrivial top-line law.
+The seventh route characterized the residual C3 phase-ordering cone.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -20,6 +21,7 @@ nontrivial top-line law.
 | Strict sparse top/W pole-response evidence | availability audit | 3 | Audited absent on current branch; harness/candidate only |
 | Microscopic backend/projector/matrix-element shortcut | no-go shortcut test | 3 | Pruned: current support does not derive accepted backend, top projector, or source-generator matrix element |
 | Positive real C3 transfer/Perron selection | no-go shortcut test | 3 | Pruned: positivity selects `P_0`, not a nontrivial line |
+| C3 phase-ordering cone | exact support boundary | 2 | Landed: nontrivial top line iff `|y_0| > sqrt(3) x_0` with nonzero sign branch |
 
 ## Stuck Fan-Out
 
@@ -34,8 +36,9 @@ nontrivial top-line law.
 | Strict evidence route | Inspect current sparse certificate | Harness exists; accepted backend and pole rows absent |
 | Microscopic backend/projector route | Combine source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | Fails; accepted backend, physical projector, and source-generator matrix element remain load-bearing |
 | Positive real C3 Perron route | Use positivity to select the physical top line | Fails; Perron line is `P_0`, nontrivial block remains degenerate |
+| Phase-ordering cone map | Classify exactly when complex C3 dynamics selects a nontrivial line | Succeeds as exact support; accepted cone membership remains open |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 microscopic dynamics/orientation theorem with accepted backend/projectors,
-top-ordering law, and matrix elements, or accepted strict pole rows. It does
-not close the coefficient row.
+nontrivial phase-ordering cone membership, and matrix elements, or accepted
+strict pole rows. It does not close the coefficient row.

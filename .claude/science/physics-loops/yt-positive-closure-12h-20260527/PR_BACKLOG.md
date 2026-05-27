@@ -85,3 +85,19 @@ pole-row data or a new microscopic dynamics/orientation theorem deriving
 accepted backend, W/top projectors, top-ordering law, and source-generator
 matrix elements. No retained or proposed-retained Y_T closure is claimed.
 ```
+
+Then append the seventh block:
+
+```text
+## 2026-05-27 Update: C3 Phase-Ordering Cone Support Boundary
+
+Added exact support for the residual C3 phase-ordering condition. For
+`H_0 = x_0 B_x + y_0 B_y`, a nontrivial top line requires
+`y_0 > 0 and y_0 > sqrt(3) x_0` for `P_omega2`, or
+`y_0 < 0 and -y_0 > sqrt(3) x_0` for `P_omega`; the singlet region is
+`x_0 > 0 and |y_0| < sqrt(3) x_0`. If an accepted same-surface microscopic
+dynamics theorem derives membership in one of the nontrivial cones, the
+existing `B_x` source derivative and factorization row give `A/sqrt(12)`.
+The cone membership is not derived on the actual current surface, so no
+retained or proposed-retained Y_T closure is claimed.
+```

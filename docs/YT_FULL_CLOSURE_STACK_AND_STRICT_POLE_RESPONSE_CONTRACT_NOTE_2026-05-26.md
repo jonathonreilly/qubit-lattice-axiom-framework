@@ -240,6 +240,13 @@ that stays blocked until an accepted finite same-surface top/W transfer/action
 surface is supplied.  This is bounded support for the strict-response route,
 not the missing response evidence.
 
+[`YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md`](YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md)
+then runs the targeted assumptions / first-principles / literature / math /
+panel exercise on `kappa = 1/sqrt(6)` itself.  It confirms that the
+six-component carrier amplitude is exact support, not a physical coefficient
+proof, and ranks the native same-surface top/W transfer/action backend as the
+best positive route.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -313,6 +320,10 @@ supply an accepted finite same-surface top/W transfer/action backend, then run
 the sparse response certificate to compute coefficient-certified dM_t/dh and
 dM_W/dh with no kappa input.
 ```
+
+The targeted kappa exercise sharpens that target: the next backend must close
+the physical scalar coefficient bridge, not merely reproduce the
+`1/sqrt(6)` democratic carrier amplitude.
 
 ## Non-Claims
 

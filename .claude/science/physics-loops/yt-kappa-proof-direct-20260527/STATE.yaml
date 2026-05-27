@@ -1,0 +1,12 @@
+loop_slug: yt-kappa-proof-direct-20260527
+target: best-honest-status
+mode: targeted_exercise
+current_surface_status: exact-support / open kappa proof
+active_route: native same-surface transfer/action backend
+hard_residual: physical scalar coefficient kappa is not fixed by carrier ray alone
+files_touched:
+  - docs/YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md
+  - scripts/frontier_yt_kappa_direct_full_physics_exercise.py
+  - outputs/yt_kappa_direct_full_physics_exercise_2026-05-27.json
+next_exact_action: build an accepted finite same-surface top/W transfer/action backend with no kappa input
+stop_condition: targeted exercise packaged and verified

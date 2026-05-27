@@ -43,6 +43,7 @@ STRICT_WZ = DOCS / "YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25
 STRICT_TOP = DOCS / "YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md"
 STRICT_SAME_SOURCE_OBSTRUCTION = DOCS / "YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_COEFFICIENT_OBSTRUCTION_NOTE_2026-05-27.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
+KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -58,6 +59,7 @@ STRICT_WZ_OUT = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet
 STRICT_TOP_OUT = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
 STRICT_SAME_SOURCE_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
+KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -118,6 +120,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_TOP,
         STRICT_SAME_SOURCE_OBSTRUCTION,
         DIRECT_SPARSE_RESPONSE_CERT,
+        KAPPA_DIRECT_EXERCISE,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -132,6 +135,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_TOP_OUT,
         STRICT_SAME_SOURCE_OBSTRUCTION_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
+        KAPPA_DIRECT_EXERCISE_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -147,6 +151,7 @@ def part1_anchors() -> dict[str, str]:
         "top-source identification is pruned",
         "finite-transfer counterfamily",
         "sparse transfer response certificate",
+        "targeted kappa exercise",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -180,6 +185,7 @@ def part2_support_outputs() -> dict[str, Any]:
     top = load_json(STRICT_TOP_OUT)
     strict_obstruction = load_json(STRICT_SAME_SOURCE_OBSTRUCTION_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
+    kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -210,6 +216,9 @@ def part2_support_outputs() -> dict[str, Any]:
     check("direct sparse response certificate is bounded support", direct_sparse_cert.get("actual_current_surface_status") == "bounded-support microbench / open strict-response backend")
     check("direct sparse response certificate proposal is not allowed", direct_sparse_cert.get("proposal_allowed") is False)
     check("direct sparse response certificate does not supply strict top/W rows", direct_sparse_cert.get("strict_top_w_response_certificate_present") is False)
+    check("targeted kappa exercise passed", kappa_exercise.get("fail_count") == 0, kappa_exercise.get("fail_count"))
+    check("targeted kappa exercise is exact support/open", kappa_exercise.get("actual_current_surface_status") == "exact-support / open kappa proof")
+    check("targeted kappa exercise proposal is not allowed", kappa_exercise.get("proposal_allowed") is False)
 
     return {
         "fisher": fisher,
@@ -225,6 +234,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "strict_top": top,
         "strict_same_source_obstruction": strict_obstruction,
         "direct_sparse_response_certificate": direct_sparse_cert,
+        "kappa_direct_exercise": kappa_exercise,
     }
 
 

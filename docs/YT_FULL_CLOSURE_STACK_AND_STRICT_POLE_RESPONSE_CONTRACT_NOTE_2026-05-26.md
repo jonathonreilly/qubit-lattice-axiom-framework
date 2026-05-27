@@ -53,6 +53,8 @@ closed exactly:
   source space
   LSP projective readout supplies instruments for supplied projectors, but
   does not select the physical C3 source direction
+  positivity/orientation support selects C3 and an oriented splitter only,
+  not the physical Y_T C3 source tangent
 
 still open:
   strict same-source top/W response evidence, unless audit accepts the
@@ -319,6 +321,14 @@ unit C3 source tangents `B_a`, `B_x`, and `B_y` whose top-line responses are
 `1/sqrt(3)`, `2/sqrt(6)`, and `0`.  Therefore LSP/projective support does not
 select the physical C3 source direction.
 
+[`YT_POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md`](YT_POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md)
+then checks the existing positivity/orientation materials against the same
+blocker.  Orientation support can select the `C3` subgroup and identify the
+reflection-odd splitter axis `B_y`, but `B_y` produces spectral-line responses
+`0`, `-1/sqrt(2)`, and `+1/sqrt(2)` and still requires a physical top-line
+assignment and source-generator matrix element.  Therefore orientation support
+is not a Y_T source-direction theorem.
+
 ### 6. Coefficient Readout
 
 Current status: conditional.
@@ -448,6 +458,14 @@ remove this blocker:
 ```text
 LSP gives the canonical instrument for a supplied projector;
 it does not choose the C3 source tangent or source-generator matrix element.
+```
+
+The positivity/orientation boundary confirms that subgroup/orientation support
+also does not remove it:
+
+```text
+orientation can pick C3 and the reflection-odd splitter axis;
+it still does not derive the physical Y_T source tangent.
 ```
 
 ## Non-Claims

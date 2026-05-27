@@ -51,6 +51,7 @@ C3_SPECTRAL_PROJECTOR_SUPPORT = DOCS / "YT_C3_SPECTRAL_TOP_PROJECTOR_ROUTE_SUPPO
 C3_SPECTRAL_SOURCE_RESPONSE_NOGO = DOCS / "YT_C3_SPECTRAL_SOURCE_RESPONSE_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
 C3_SOURCE_DIRECTION_NOGO = DOCS / "YT_C3_SOURCE_DIRECTION_SELECTION_NO_GO_NOTE_2026-05-27.md"
 LSP_C3_SOURCE_DIRECTION_BOUNDARY = DOCS / "YT_LSP_PROJECTIVE_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md"
+POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY = DOCS / "YT_POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 FISHER_OUT = ROOT / "outputs" / "yt_primitive_physical_source_fisher_arclength_invariant_2026-05-26.json"
@@ -74,6 +75,7 @@ C3_SPECTRAL_PROJECTOR_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_spectral_top_proje
 C3_SPECTRAL_SOURCE_RESPONSE_NOGO_OUT = ROOT / "outputs" / "yt_c3_spectral_source_response_underdetermination_no_go_2026-05-27.json"
 C3_SOURCE_DIRECTION_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_direction_selection_no_go_2026-05-27.json"
 LSP_C3_SOURCE_DIRECTION_BOUNDARY_OUT = ROOT / "outputs" / "yt_lsp_projective_c3_source_direction_boundary_2026-05-27.json"
+POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_OUT = ROOT / "outputs" / "yt_positivity_orientation_c3_source_direction_boundary_2026-05-27.json"
 STRICT_TOP_W_ROWS = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
 STRICT_SOURCE_HIGGS_ROWS = ROOT / "outputs" / "yt_source_action_block508_id_source_higgs_strict_rows_2026-05-22.json"
 
@@ -142,6 +144,7 @@ def part1_anchors() -> dict[str, str]:
         C3_SPECTRAL_SOURCE_RESPONSE_NOGO,
         C3_SOURCE_DIRECTION_NOGO,
         LSP_C3_SOURCE_DIRECTION_BOUNDARY,
+        POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY,
         LEDGER,
         FISHER_OUT,
         MIN_INFO_OUT,
@@ -164,6 +167,7 @@ def part1_anchors() -> dict[str, str]:
         C3_SPECTRAL_SOURCE_RESPONSE_NOGO_OUT,
         C3_SOURCE_DIRECTION_NOGO_OUT,
         LSP_C3_SOURCE_DIRECTION_BOUNDARY_OUT,
+        POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_OUT,
     )
     for path in paths:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -187,6 +191,7 @@ def part1_anchors() -> dict[str, str]:
         "C3 spectral projectors do not determine source responses",
         "unit source normalization fixes scale, not direction",
         "LSP projective readout supplies instruments for supplied projectors",
+        "positivity/orientation support selects C3 and an oriented splitter only",
     ):
         check(f"note contains required section/phrase: {phrase}", phrase in note)
 
@@ -228,6 +233,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_spectral_source_response_nogo = load_json(C3_SPECTRAL_SOURCE_RESPONSE_NOGO_OUT)
     c3_source_direction_nogo = load_json(C3_SOURCE_DIRECTION_NOGO_OUT)
     lsp_c3_source_direction_boundary = load_json(LSP_C3_SOURCE_DIRECTION_BOUNDARY_OUT)
+    positivity_orientation_c3_source_direction_boundary = load_json(POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_OUT)
 
     check("minimum-information source/action bridge passed", min_info.get("fail_count") == 0, min_info.get("fail_count"))
     check("minimum-information bridge proposal is not allowed", min_info.get("proposal_allowed") is False)
@@ -283,6 +289,9 @@ def part2_support_outputs() -> dict[str, Any]:
     check("LSP/C3 source-direction boundary passed", lsp_c3_source_direction_boundary.get("fail_count") == 0, lsp_c3_source_direction_boundary.get("fail_count"))
     check("LSP/C3 source-direction boundary is route pruning", lsp_c3_source_direction_boundary.get("trace_class") == "negative_route_pruning")
     check("LSP/C3 boundary keeps source direction live", "source direction" in lsp_c3_source_direction_boundary.get("route_still_live", ""))
+    check("positivity/orientation C3 source-direction boundary passed", positivity_orientation_c3_source_direction_boundary.get("fail_count") == 0, positivity_orientation_c3_source_direction_boundary.get("fail_count"))
+    check("positivity/orientation C3 boundary is route pruning", positivity_orientation_c3_source_direction_boundary.get("trace_class") == "negative_route_pruning")
+    check("positivity/orientation C3 boundary keeps source direction live", "source direction" in positivity_orientation_c3_source_direction_boundary.get("route_still_live", ""))
 
     return {
         "fisher": fisher,
@@ -306,6 +315,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_spectral_source_response_nogo": c3_spectral_source_response_nogo,
         "c3_source_direction_nogo": c3_source_direction_nogo,
         "lsp_c3_source_direction_boundary": lsp_c3_source_direction_boundary,
+        "positivity_orientation_c3_source_direction_boundary": positivity_orientation_c3_source_direction_boundary,
     }
 
 
@@ -510,7 +520,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open_lsp_projective_shortcut_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_still_open_lsp_and_orientation_shortcuts_pruned",
             "closed": True,
             "next_action": "derive physical target/source direction in C3 tangent space plus top-line ordering, or produce strict pole-row data",
         },
@@ -557,6 +567,7 @@ def main() -> int:
             "c3_spectral_source_response_nogo_fail_count": support_outputs["c3_spectral_source_response_nogo"].get("fail_count"),
             "c3_source_direction_nogo_fail_count": support_outputs["c3_source_direction_nogo"].get("fail_count"),
             "lsp_c3_source_direction_boundary_fail_count": support_outputs["lsp_c3_source_direction_boundary"].get("fail_count"),
+            "positivity_orientation_c3_source_direction_boundary_fail_count": support_outputs["positivity_orientation_c3_source_direction_boundary"].get("fail_count"),
         },
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,

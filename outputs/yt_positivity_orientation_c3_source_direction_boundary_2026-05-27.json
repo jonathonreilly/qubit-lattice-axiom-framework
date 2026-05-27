@@ -1,0 +1,54 @@
+{
+  "actual_current_surface_status": "no-go",
+  "anchors": {
+    "positivity_c3_scope": "group-theory C3 subgroup selection",
+    "splitter_scope": "orientation-odd splitter support"
+  },
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "framework_positivity_to_hw1_bridge_closed": false,
+    "no_forbidden_imports": true,
+    "orientation_odd_splitter_axis_identified": true,
+    "orientation_selects_c3_subgroup": true,
+    "physical_yt_source_tangent_derived": false,
+    "same_surface_top_w_response_certificate_present": false,
+    "top_line_assignment_derived": false,
+    "top_line_matrix_element_derived": false
+  },
+  "claim_id": "yt_positivity_orientation_c3_source_direction_boundary_note_2026-05-27",
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_positivity_orientation_c3_source_direction_boundary.py",
+  "orientation_axis_response_witness": {
+    "B_a_responses": {
+      "P_0": "sqrt(3)/3",
+      "P_omega": "sqrt(3)/3",
+      "P_omega2": "sqrt(3)/3"
+    },
+    "B_x_responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "-sqrt(6)/6",
+      "P_omega2": "-sqrt(6)/6"
+    },
+    "B_y_responses": {
+      "P_0": "0",
+      "P_omega": "-sqrt(2)/2",
+      "P_omega2": "sqrt(2)/2"
+    },
+    "unit_family_P0_response": "sqrt(6)*sin(alpha)/3"
+  },
+  "orientation_tangent_witness": {
+    "K_C3_relation": "K_C3=-sqrt(2)*B_y",
+    "reflection_even_axes": [
+      "B_a",
+      "B_x"
+    ],
+    "reflection_odd_axis": "B_y"
+  },
+  "pass_count": 70,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Positivity/orientation support selects C3 at subgroup level and can identify an orientation-odd splitter axis, but it does not derive the physical Y_T source tangent, top-line assignment, or source-generator matrix element.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "positivity/orientation C3 selection derives physical Y_T source tangent",
+  "route_still_live": "derive physical C3 source direction from same-surface dynamics, or produce strict same-source top/W pole-response evidence",
+  "trace_class": "negative_route_pruning"
+}

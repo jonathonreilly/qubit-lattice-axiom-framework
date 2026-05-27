@@ -1,0 +1,24 @@
+loop: yt-positivity-orientation-c3-source-direction-boundary-20260527
+status: block_complete
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+active_route: positivity/orientation C3 selection derives the physical Y_T source tangent
+hard_residual: physical C3 source direction in the C3 tangent space
+files_touched:
+  - docs/YT_POSITIVITY_ORIENTATION_C3_SOURCE_DIRECTION_BOUNDARY_NOTE_2026-05-27.md
+  - scripts/frontier_yt_positivity_orientation_c3_source_direction_boundary.py
+  - outputs/yt_positivity_orientation_c3_source_direction_boundary_2026-05-27.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+open_imports:
+  - framework positivity acting on hw=1 triplet
+  - accepted same-surface source tangent
+  - top-line assignment and source-generator matrix element
+  - strict same-source top/W pole-response evidence
+no_go_routes:
+  - positivity/orientation C3 subgroup selection is enough for Y_T source direction
+  - orientation-odd splitter axis alone gives y_t/g = 1/sqrt(6)
+next_exact_action: derive source direction from same-surface dynamics or produce strict pole rows
+stop_condition: positive closure or narrowest documented blocker

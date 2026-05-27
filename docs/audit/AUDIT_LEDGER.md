@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 504 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 18 |
-| unaudited | 1211 |
+| unaudited | 1210 |
 | meta | 229 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -54,12 +54,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 800 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 65 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1440 |
+| `unaudited` | 1439 |
 
 | claim_type | count |
 |---|---:|
@@ -936,6 +936,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -3525,6 +3526,25 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Using the corrected high-precision continuum thermal evaluator on the admitted same-surface one-scalar DM family gives a unique interior closure crossing at sigma_conv = 0.145077095756643 and Omega_DM = 0.268.  _(class `D`)_
 - **chain closes:** True — The note states a bounded admitted-family convergence claim, and the runner recomputes the interior crossing, matches the quoted Omega_DM comparator, and verifies material drift away from the coarse and 9/62 values.
 - **rationale:** The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded packet-scope arithmetic showing two stipulated same-surface DM endpoint couplings are distinct and map through the helper-supplied certified thermal bounds to non-overlapping R(alpha) and Omega_DM intervals; excludes a metatheoretical no-selector theorem and excludes selector closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The two same-surface endpoint observables alpha_lo and alpha_hi are distinct, both lie above alpha_bare, and their certified same-surface DM ratio intervals do not overlap.  _(class `C`)_
+- **chain closes:** False — The runner computes the endpoint distinctness and non-overlap checks from helper-supplied alpha endpoints, eta/omega conversion, and certified thermal-bound machinery. The only direct retained dependency supplies the continuum thermal integral form, not the full helper provenance for canonical plaquette constants, endpoint construction, eta/omega conversion, or the certified endpoint ratio intervals.
+- **rationale:** Issue: The arithmetic distinctness/non-overlap checks close only over helper-supplied endpoint and thermal-bound inputs that are not closed by the row's direct retained dependency. Why this blocks: the source's cited thermal integral authority does not by itself supply CANONICAL_ALPHA_LM, the plaquette-supported short-distance endpoint, ETA_OBS/omega_b conversion, or the certified same-surface ratio-bound implementation used for the quoted intervals; the packet-scope no-selector declaration is also not a theorem-grade selector obstruction. Repair target: wire and retain direct authorities for the endpoint constants, eta/omega conversion, certified thermal bounds, and any packet-completeness/selector-obstruction claim, or narrow the row to pure arithmetic over explicitly stipulated helper outputs. Claim boundary until fixed: the runner supports conditional arithmetic that two stipulated same-surface endpoints give disjoint certified intervals; it does not establish theorem-grade selector absence or selector closure.
+- **open / conditional deps cited:**
+  - `scripts/canonical_plaquette_surface.py`
+  - `scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py`
+  - `scripts/dm_full_closure_same_surface_thermal_support_common.py`
+  - `scripts/dm_leptogenesis_exact_common.py`
+  - `selector completeness / obstruction theorem for the current DM bank`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`

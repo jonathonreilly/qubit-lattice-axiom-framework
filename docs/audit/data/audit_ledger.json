@@ -55811,22 +55811,42 @@
       "verdict_rationale": "The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure."
     },
     "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-27T02:25:40.313825+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation."
+        },
+        "dep_claim_type": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded"
+        },
+        "deps": [
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "36136c7d46fe9eed27c62ab5427c38252e61f9ff952f3187d5f479f22686e4df",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the endpoint distinctness and non-overlap checks from helper-supplied alpha endpoints, eta/omega conversion, and certified thermal-bound machinery. The only direct retained dependency supplies the continuum thermal integral form, not the full helper provenance for canonical plaquette constants, endpoint construction, eta/omega conversion, or the certified endpoint ratio intervals.",
       "claim_id": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-      "claim_scope": null,
+      "claim_scope": "Bounded packet-scope arithmetic showing two stipulated same-surface DM endpoint couplings are distinct and map through the helper-supplied certified thermal bounds to non-overlapping R(alpha) and Omega_DM intervals; excludes a metatheoretical no-selector theorem and excludes selector closure.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-27T02:25:40.313825+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -55834,25 +55854,31 @@
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The two same-surface endpoint observables alpha_lo and alpha_hi are distinct, both lie above alpha_bare, and their certified same-surface DM ratio intervals do not overlap.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "31c938c732fcbd286deb12cb7e0e689da4d88c0b9aa7c68f7f758e4d539eb21d",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge - Add direct retained authorities for the canonical plaquette endpoint constants, eta/omega conversion, certified thermal-bound helper, and any current-bank selector completeness theorem; then re-audit the endpoint non-overlap claim.",
+      "open_dependency_paths": [
+        "scripts/canonical_plaquette_surface.py",
+        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+        "scripts/dm_leptogenesis_exact_common.py",
+        "selector completeness / obstruction theorem for the current DM bank"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -55964,18 +55990,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 8,
         "D": 0,
-        "total_pass": 0
+        "assert_count": 1,
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
       "title": "DM Full Closure Same-Surface Numerator Selector Boundary",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: The arithmetic distinctness/non-overlap checks close only over helper-supplied endpoint and thermal-bound inputs that are not closed by the row's direct retained dependency. Why this blocks: the source's cited thermal integral authority does not by itself supply CANONICAL_ALPHA_LM, the plaquette-supported short-distance endpoint, ETA_OBS/omega_b conversion, or the certified same-surface ratio-bound implementation used for the quoted intervals; the packet-scope no-selector declaration is also not a theorem-grade selector obstruction. Repair target: wire and retain direct authorities for the endpoint constants, eta/omega conversion, certified thermal bounds, and any packet-completeness/selector-obstruction claim, or narrow the row to pure arithmetic over explicitly stipulated helper outputs. Claim boundary until fixed: the runner supports conditional arithmetic that two stipulated same-surface endpoints give disjoint certified intervals; it does not establish theorem-grade selector absence or selector closure."
     },
     "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17": {
       "audit_date": null,

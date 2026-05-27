@@ -16,5 +16,7 @@ Key movement:
 - Pipeline reset the target row to `audit_status=unaudited`,
   `effective_status=unaudited`, `ready=true`.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2059
+
 Remaining science blocker: derive Wilson matching from the framework, or keep
 this row bounded/conditional when used downstream.

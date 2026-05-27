@@ -22,6 +22,6 @@ open_imports:
   - Wilson action-surface matching remains an explicit premise, not proved here
   - physical Wilson plaquette action selection remains outside this row
 review_status: local runner/cache/pipeline/vocab pass; independent audit required
-pr_status: pending
-next_exact_action: open review PR
+pr_status: open https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2059
+next_exact_action: independent audit/reviewer extraction
 stop_condition: one coherent conditional rescope packaged

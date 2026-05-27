@@ -78031,7 +78031,7 @@
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e8aab23c32438a7fbb9f3634e82dc7fd2f7dabfcef920516282c1c562a464e21",
+      "note_hash": "ad2b3930627157ddd7938799834dc293e86c90a8dc9d425c2b8f497bcce42b15",
       "path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
       "title": "SU(3) L_s=3 PBC Cube Haar Monte Carlo: Honest Negative Result"

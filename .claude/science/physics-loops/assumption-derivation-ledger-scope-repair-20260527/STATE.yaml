@@ -1,0 +1,11 @@
+slug: assumption-derivation-ledger-scope-repair-20260527
+status: queued_for_reaudit
+branch: physics-loop/assumption-derivation-ledger-scope-repair-20260527
+target_claim_id: assumption_derivation_ledger
+target_note: docs/ASSUMPTION_DERIVATION_LEDGER.md
+repair_class: scope_narrowing
+audit_status_after_pipeline: unaudited
+effective_status_after_pipeline: unaudited
+ready_after_pipeline: true
+no_new_axioms: true
+pr: null

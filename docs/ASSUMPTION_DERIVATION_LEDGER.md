@@ -1,4 +1,4 @@
-# Assumption / Derivation Ledger
+# Assumption / Derivation Ledger - Narrow R_conn Authority Slice
 
 **Date:** 2026-04-15 (original); 2026-05-27 (scope narrowing + R_conn row
 repair); 2026-05-28 (reclassified `bounded_theorem → meta` per audit path (b)).
@@ -72,7 +72,7 @@ This ledger does not promote or demote any row; it summarises the
 package surface at the date stamp above so that downstream readers can
 find the authorities.
 
-## Current ledger
+## Binding Scope
 
 | ingredient | current status | what is actually true now |
 |---|---|---|
@@ -93,7 +93,9 @@ find the authorities.
 | DM flagship lane | open flagship lane | Exact transport-chain progress is real, but final DM quantitative closure is still not closed. |
 | CKM quantitative package | promoted quantitative package | The canonical atlas/axiom package on the tensor/projector surface is promoted on `main`; older Cabibbo / mass-basis / partial-Jarlskog routes remain route history only. |
 
-## Writing rule
+```text
+F_adj = dim(su(3)) / dim(M_3(C)) = 8 / 9.
+```
 
 - call computed inputs computed
 - call derived rows derived

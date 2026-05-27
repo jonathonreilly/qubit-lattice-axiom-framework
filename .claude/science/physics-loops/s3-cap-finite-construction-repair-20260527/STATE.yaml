@@ -16,5 +16,6 @@ verification:
   - python3 scripts/frontier_s3_cap_uniqueness.py
   - python3 scripts/vocab_lint.py --report-only docs/S3_CAP_UNIQUENESS_NOTE.md
   - audit pipeline regenerated ledger/queue; target is unaudited and ready=true
-next_exact_action: open review PR, then continue conditional backlog
+pr_status: open https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2063
+next_exact_action: independent audit/reviewer extraction
 stop_condition: PR created and target queued for independent re-audit

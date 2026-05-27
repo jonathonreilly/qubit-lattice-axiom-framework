@@ -1,6 +1,5 @@
 # PR Backlog
 
-PR creation is expected for this block. If GitHub access fails, push branch
-`physics-loop/s3-cap-finite-construction-repair-20260527` and open a PR titled:
+PR opened:
 
-`[physics-loop] s3-cap-finite-construction-repair proposed_retained`
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2063

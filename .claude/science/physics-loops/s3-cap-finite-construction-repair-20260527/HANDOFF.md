@@ -14,3 +14,5 @@ Remaining out of scope:
 - `PL S^3` identification;
 - physical closure from homogeneity;
 - downstream publication/governance surface updates.
+
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2063

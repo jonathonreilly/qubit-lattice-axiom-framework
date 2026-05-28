@@ -60211,18 +60211,18 @@
     },
     "koide_aps_block_by_block_forcing_note_2026-04-21": {
       "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "s3_cap_uniqueness_note",
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5f81d8878e0e2ea8fce31109da7c472d9f5246a54399be7241475c926256d13c",
+      "note_hash": "b8d0857d7b5d4b1217f6755be8b9df61d572e26cce3d6ec0eaaa618949f07910",
       "path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
       "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
-      "title": "Delta Support Route Block-by-Block Forcing: APS \u03b7 = 2/9 Verification"
+      "title": "Delta Support Route Block-by-Block APS \u03b7 = 2/9 Conditional Verification"
     },
     "koide_axiom_native_support_batch_note_2026-04-22": {
       "claim_id": "koide_axiom_native_support_batch_note_2026-04-22",
@@ -86418,22 +86418,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 644,
+      "bounded_theorem": 645,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1438,
+      "none": 1437,
       "open_gate": 50,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1059,
+      "bounded_theorem": 1060,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
       "none": 426,
       "open_gate": 127,
-      "positive_theorem": 586
+      "positive_theorem": 585
     },
     "edge_count": 9861,
     "leaf_count": 807,

@@ -1201,6 +1201,15 @@ same_model_class: false
 So strict response remains the clean positive route, but it is not present on
 the current branch.
 
+[`YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md`](YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md)
+then checks the same bypass against the freshly fetched `origin/main` surface.
+The named strict row outputs remain absent there, and the origin/main FH
+response-ratio and physical top-mass bridge outputs still mark strict
+top/W rows or strict same-source response measurements as absent.  No scanned
+origin/main Y_T output satisfies the positive packet fields.  This prunes only
+the remote-refresh shortcut; the strict route remains live as a future
+production route.
+
 [`YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md`](YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md)
 then tests whether the closed strict W/Z denominator support can be spliced
 with the conditional C3 target row to make the missing strict packet.  The
@@ -1687,6 +1696,11 @@ proposal_allowed_reason: |
   top/W pole-row certificate with backend authority, isolated W/top poles,
   coefficient-certified rows, contact/FV/IR/model-class controls, and no free
   top coefficient input.
+  The origin/main strict pole-row refresh no-go prunes the remote-refresh
+  shortcut as well: the freshly fetched mainline surface has the same named
+  strict row outputs absent, its FH response outputs still mark strict rows as
+  absent, and no scanned origin/main Y_T output completes the positive strict
+  packet fields.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

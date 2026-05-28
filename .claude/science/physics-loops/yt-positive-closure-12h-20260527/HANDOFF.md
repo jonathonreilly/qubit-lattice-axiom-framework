@@ -37,7 +37,7 @@ Cycle 23 science commit:
 Cycle 23 delivery commit:
 
 ```text
-pending_cycle_23_delivery_commit
+efa28473da09fb5b3d62765c7a75b7d961af0621
 ```
 
 Cycle 23 artifacts:

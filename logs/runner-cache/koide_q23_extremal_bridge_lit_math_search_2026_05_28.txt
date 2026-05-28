@@ -1,0 +1,12 @@
+== Frobenius-Schur classification of Z_3 ==
+[PASS] FS(chi_0) = +1 (real type)
+[PASS] FS(chi_1) = 0 (complex type)
+[PASS] FS(chi_2) = 0 (complex type)
+== Doublet commutant / real-block split ==
+[PASS] dim_R End(doublet) = 2 (= dim_R C, the U(1)_b commutant)
+[PASS] R[Z_3] = R (+) C : exactly two real-irreducible blocks
+== F1 vs F3 extremum (kappa=2 Koide vs kappa=1 not) ==
+[PASS] F1 (weight (1,1)): critical kappa = 2
+[PASS] F3 (weight (1,2)): critical kappa = 1
+
+RESULT: ALL PASS

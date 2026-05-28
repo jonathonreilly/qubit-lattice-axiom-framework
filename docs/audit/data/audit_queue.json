@@ -68,15 +68,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "gravity_clean_derivation_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded weak-field IF-chain on Z^3: assuming -Delta_lat, L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), and the standard Z^3 Green-function asymptotic G(r)~1/(4*pi*r), the lattice Poisson equation gives a 1/r potential and inverse-square bilinear force in lattice units.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
@@ -84,11 +84,11 @@
         "staggered_fermion_card_2026-04-11"
       ],
       "direct_in_degree": 19,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 17.634,
       "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 280

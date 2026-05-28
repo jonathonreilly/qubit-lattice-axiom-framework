@@ -83,6 +83,9 @@ Current block artifacts:
 - `docs/YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py`
 - `outputs/yt_c3_fisher_quotient_radial_normalization_no_go_2026-05-28.json`
+- `docs/YT_ONE_HIGGS_CARRIER_RADIAL_FACTOR_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_one_higgs_carrier_radial_factor_no_go.py`
+- `outputs/yt_one_higgs_carrier_radial_factor_no_go_2026-05-28.json`
 - `docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py`
 - `outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json`
@@ -143,3 +146,8 @@ Next artifact if continuing:
   cannot close it: the fine and binary Fisher metrics are isometric,
   Fisher-unit C3 score normalization is only a source-coordinate
   normalization, and `B_x` has no internal Fisher direction in `P_nt`.
+  One-Higgs neutral-carrier normalization cannot close it either: the
+  neutral Higgs `1/sqrt(2)` factor maps a supplied generation coefficient
+  into the top mass row, but the multiplier `eta` tying that coefficient to
+  the normalized C3 source response remains free. The target requires
+  `eta=1`, equivalently `lambda_top=1/sqrt(2)`.

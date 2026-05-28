@@ -22,6 +22,7 @@
 | Fisher/LSZ source normalization as radial generator factorization | Would infer `lambda_top=1/sqrt(2)` from Fisher arclength and LSZ raw source-scale normalization | pruned on current surface | `YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for Fisher/LSZ-radial shortcut | derive accepted same-surface dynamics identifying the normalized C3 source tangent with the top radial mass generator, or bypass with strict pole rows | no-go for source-normalization-to-radial-factor shortcut |
 | Block-rank/root-rank radial normalization | Would infer `lambda_top=1/sqrt(2)` from `rank(P_nt)=2` or from dividing the nontrivial-block response by `sqrt(rank(P_nt))` | pruned on current surface | `YT_C3_BLOCK_RANK_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for block-rank radial shortcut | derive an accepted physical root-rank radial generator law from same-surface dynamics, or bypass with strict pole rows | no-go for rank-to-radial-factor shortcut |
 | C3 RN/Fisher quotient/source-geometry radial normalization | Would infer `lambda_top=1/sqrt(2)` from reflection-even line-simplex Fisher geometry, the binary `P_0/P_nt` quotient, or Fisher-unit C3 score normalization | pruned on current surface | `YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for Fisher-quotient radial shortcut | derive an accepted physical theorem identifying Fisher/source geometry with the relative top radial mass generator, or bypass with strict pole rows | no-go for Fisher-quotient/source-geometry-to-radial-factor shortcut |
+| One-Higgs coefficient-to-C3-source law | Would identify the one-Higgs generation-matrix coefficient with the normalized C3 nontrivial-block source response with unit multiplier `eta=1` | unsupported import on actual surface; one-Higgs carrier radial-factor shortcut pruned | `YT_ONE_HIGGS_CARRIER_RADIAL_FACTOR_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for one-Higgs radial shortcut | derive an accepted same-surface law fixing `eta=1`, derive radial generator factorization independently, or bypass with strict pole rows | no-go for one-Higgs neutral-carrier normalization shortcut |
 | Real C3 irrep/dimension top-block law | Would identify the physical top block with the faithful two-dimensional real irrep `P_nt` rather than the trivial real irrep `P_0` | pruned on current surface | `YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for real-irrep shortcut | derive an accepted physical theorem selecting the faithful/nontrivial C3 summand as the Y_T top block and independently derive `lambda_top=1/sqrt(2)`, or bypass with strict pole rows | no-go for real-irrep/dimension/faithfulness-to-top-block shortcut |
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
@@ -199,6 +200,14 @@ curve and the binary `P_0/P_nt` quotient are isometric, Fisher-unit C3 score
 normalization is only a source-coordinate normalization, and `B_x` has no
 internal Fisher direction inside `P_nt`. The accepted physical
 Fisher/source-geometry-to-radial-generator theorem remains an open import.
+The one-Higgs carrier radial-factor no-go now prunes the neutral-carrier
+normalization shortcut: the Higgs `1/sqrt(2)` factor maps an already supplied
+generation-matrix coefficient into the top mass response, but the current
+surface does not identify that coefficient with the normalized C3
+nontrivial-block response at `eta=1`. The finite family
+`y_33(eta)=eta/sqrt(6)` keeps all granted one-Higgs/C3/W-row inputs while
+varying `lambda_top=eta/sqrt(2)`, so accepted coefficient-to-C3-source
+authority or strict pole rows remain load-bearing.
 The real-irrep dimension top-block no-go now prunes another zero-singlet
 shortcut: finite real C3 representation theory exposes `P_nt` as the faithful
 two-dimensional real irrep, but selecting that summand as the physical Y_T top

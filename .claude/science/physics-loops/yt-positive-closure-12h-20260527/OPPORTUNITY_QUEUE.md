@@ -2,7 +2,7 @@
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Status |
 |---:|---|---:|---:|---|---|
-| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout/hard-boundary law | medium | high | partial | factorization support landed; block support landed; radial-factor-free, target-magnitude back-solving, sharp-response, Fisher/LSZ source-normalization, block-rank/root-rank, and Fisher-quotient/source-geometry radial shortcuts pruned; current real/reflection-even block-algebra, source-orientation sign-choice, trace-free centered-source, finite minimum-information readout, real-irrep/dimension/faithfulness, and current hard-boundary geometry-alone shortcuts pruned; primitive singular-boundary support isolates a conditional `P_nt` candidate but physical readout/sign and radial generator laws remain open |
+| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout/hard-boundary law | medium | high | partial | factorization support landed; block support landed; radial-factor-free, target-magnitude back-solving, sharp-response, Fisher/LSZ source-normalization, block-rank/root-rank, Fisher-quotient/source-geometry, and one-Higgs neutral-carrier radial shortcuts pruned; current real/reflection-even block-algebra, source-orientation sign-choice, trace-free centered-source, finite minimum-information readout, real-irrep/dimension/faithfulness, and current hard-boundary geometry-alone shortcuts pruned; primitive singular-boundary support isolates a conditional `P_nt` candidate but physical readout/sign and radial generator laws remain open |
 | 2 | Non-mass-ordering C3 top-block law excluding `P_0` without target selection | low | high | present | pruned on current real/reflection-even C3 surface, including the weaker zero-singlet block-membership shortcut |
 | 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; base dynamics/order still open |
 | 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch, including repository discovery scan; freshly fetched origin/main refresh also finds no accepted strict packet |
@@ -24,6 +24,16 @@
 | 20 | Source-response extremal readout from derived `B_x` | low | high | present | pruned; maxima select `P_0`, minima import a selector and leave the nontrivial pair degenerate |
 | 21 | Strict W/Z denominator plus conditional C3 target-row splice | low | high | present | pruned; formal target readout imports same-surface and physical nontrivial top-line authority |
 | 22 | C3 RN/Fisher quotient/source geometry as radial generator normalization | low | high | present | pruned; fine and binary Fisher metrics are isometric, Fisher-unit score is a source-coordinate normalization, and `B_x` has no internal Fisher direction in `P_nt` |
+
+Queue refresh after the forty-first block: positive closure remains open. The
+one-Higgs neutral-carrier shortcut is pruned: the neutral Higgs `1/sqrt(2)`
+factor maps a supplied generation-matrix coefficient into the top mass row,
+but it does not identify that coefficient with the normalized C3
+nontrivial-block source response. The current surface admits
+`y_33(eta)=eta/sqrt(6)`, so `eta` remains free and the target requires the
+new law `eta=1`, equivalently `lambda_top=1/sqrt(2)`. The next exact action
+remains to derive new allowed same-surface radial/readout/backend laws or
+produce accepted strict top/W pole rows.
 
 Queue refresh after the fortieth block: positive closure remains open. The
 earlier physical source-law research panel is not an allowed closure input for

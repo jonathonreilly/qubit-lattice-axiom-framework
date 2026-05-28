@@ -1,5 +1,14 @@
 # No-Go Ledger
 
+- New in the forty-first block: one-Higgs neutral-carrier normalization does
+  not certify the missing radial/source coefficient. Even granting the
+  one-Higgs top carrier skeleton, the neutral Higgs `1/sqrt(2)` kinematic
+  factor, the W/Z neutral-carrier response packet, and zero-singlet C3
+  response, a finite family with
+  `y_33(eta)=eta/sqrt(6)` gives
+  `|dM_t/dell|=eta A/sqrt(12)` and
+  `lambda_top=eta/sqrt(2)`. The target row needs `eta=1`, but the accepted
+  coefficient-to-C3-source law fixing `eta` is not derived.
 - New in the fortieth block: the earlier physical source-law research panel
   synthesis cannot be imported as the current campaign's coefficient-bearing
   same-surface matrix-element proof. It targets the former no-hidden-scale /

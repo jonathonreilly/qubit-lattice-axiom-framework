@@ -21026,22 +21026,46 @@
       "verdict_rationale": null
     },
     "broad_gravity_derivation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:18:39.451871+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
+        },
+        "dep_claim_type": {
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "gravity_full_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_clean_derivation_note": "retained_bounded",
+          "gravity_full_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_clean_derivation_note",
+          "gravity_full_self_consistency_note"
+        ],
+        "load_bearing_score": 9.858,
+        "runner_hash": null,
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-broad-gravity-derivation-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop retained-bounded dependencies do not supply the promoted premise. GRAVITY_CLEAN_DERIVATION_NOTE treats S=L(1-phi), rho=|psi|^2, and L^{-1}=G_0 as named inputs in a bounded IF-chain; GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as stipulated, not derived from the Cl(3)-on-Z^3 baseline.",
       "claim_id": "broad_gravity_derivation_note",
-      "claim_scope": null,
+      "claim_scope": "Broad weak-field gravity bundle assessment claiming that S = kL(1-phi) is derived from the retained weak-field core and that WEP and gravitational time dilation can be promoted while geodesics, light bending, and the conformal metric remain bounded.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:18:39.451871+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -21050,19 +21074,19 @@
         "gravity_full_self_consistency_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 9.858,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note's central load-bearing step is that S = kL(1-phi) is derived from the framework's self-consistency chain, so WEP and gravitational time dilation inherit derived status rather than merely following from an accepted action.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7ceb196770437f8a9abf6f65aa3103f8ad0bfe344bad4689e7f74a5938fcb1ee",
       "note_path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source to the conditional IF-chain now present in the one-hop deps, or supply retained bridge theorems for closure identity, source readout, weak-field action, and clock/readout before re-audit.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -21103,18 +21127,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
+        "total_fail": 0,
         "total_pass": 0
       },
       "runner_path": null,
       "title": "Broad Gravity Bundle: Per-Signature Derivation Chains",
       "transitive_descendants": 57,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source's promotion of WEP and time dilation rests on the assertion that the weak-field action S = kL(1-phi) is derived, but its one-hop dependencies have since been narrowed to conditional statements where that response, the source readout, and the closure identity are stipulated inputs. Why this blocks: the promoted signatures are algebraic consequences once S and the Poisson/readout premises are supplied; the restricted packet does not derive those premises, and one dependency explicitly says the stronger physical-gravity closure is out of scope. Repair target: rewrite this row as a bounded conditional bundle matching the current dependency scopes, or add retained bridge theorems deriving L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the clock/readout map. Claim boundary until fixed: conditional WEP/time-dilation algebra may be cited only under the explicitly supplied weak-field action/readout assumptions; no broad gravity-signature promotion is retained from this row."
     },
     "broad_surrogate_point_source_compare_note": {
       "audit_date": "2026-05-22T23:53:07.556206+00:00",

@@ -123,7 +123,10 @@ So the first family-widening replay is another boundary, not an
 `H = 0.25` portability rescue.
 
 The complementary second-family seed-`1` follow-up has now also landed in
-[`WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md):
+`WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md` (downstream follow-up in the
+same lane; backticked file-pointer to break the length-2 audit-graph cycle —
+that note already cites this batch as its upstream parent in its audit
+dependency-repair links, which is the load-bearing direction):
 its late gain stays on the old seed-`1` scale
 (`+0.001937`, `+0.002061`, `+0.002037`) while the same family's seed-`0`
 replay had already compressed to `+0.001576`.
@@ -169,6 +172,6 @@ So the next honest hardening step is now:
 - [`docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`](./WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
-- [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
+- `docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md` (downstream follow-up; backticked file-pointer to break the length-2 audit-graph cycle, per the note above)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md)

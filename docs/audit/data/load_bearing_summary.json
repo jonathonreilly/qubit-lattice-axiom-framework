@@ -3,10 +3,10 @@
     "critical": 375,
     "high": 511,
     "leaf": 1069,
-    "medium": 640
+    "medium": 641
   },
   "flagship_signal_used": false,
-  "node_count": 2595,
+  "node_count": 2596,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,

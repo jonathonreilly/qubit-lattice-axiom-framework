@@ -14352,6 +14352,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_lepton_block_tree_level_exchange.py"
     },
+    "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 8
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py"
+    },
     "lepton_charge_universality_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -42771,6 +42783,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 8
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_lepton_charge_universality.py": {
       "assert_count": 1,
       "claims": [
@@ -57286,11 +57313,11 @@
       "A": 261,
       "B": 294,
       "C": 766,
-      "D": 303,
+      "D": 304,
       "none": 441
     },
-    "runners_classified": 2065,
+    "runners_classified": 2066,
     "runners_with_C": 1003,
-    "runners_with_D": 606
+    "runners_with_D": 607
   }
 }

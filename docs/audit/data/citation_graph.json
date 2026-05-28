@@ -17113,6 +17113,18 @@
       "to": "yt_ward_identity_derivation_theorem"
     },
     {
+      "from": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
       "from": "lepton_charge_universality_note_2026-05-02",
       "to": "ewsb_pattern_from_higgs_y_note_2026-05-02"
     },
@@ -64298,6 +64310,22 @@
       "runner_path": "scripts/frontier_lepton_block_tree_level_exchange.py",
       "title": "Lepton Block Tree-Level B-Exchange Identification Theorem (legacy alias: D16-prime)"
     },
+    "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26": {
+      "claim_id": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ebbf0b12fe707efce20465c693ab9292bbbab6abe6cce44f555ab9c63ee058d5",
+      "path": "docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py",
+      "title": "Charged-Lepton Brannen-BAE Delta-Two-Ninths Open Gate"
+    },
     "lepton_charge_universality_note_2026-05-02": {
       "claim_id": "lepton_charge_universality_note_2026-05-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -86707,7 +86735,7 @@
       "meta": 192,
       "no_go": 85,
       "none": 1431,
-      "open_gate": 52,
+      "open_gate": 53,
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
@@ -86716,13 +86744,13 @@
       "meta": 192,
       "no_go": 188,
       "none": 426,
-      "open_gate": 129,
+      "open_gate": 130,
       "positive_theorem": 592
     },
-    "edge_count": 9876,
-    "leaf_count": 816,
-    "node_count": 2595,
+    "edge_count": 9879,
+    "leaf_count": 817,
+    "node_count": 2596,
     "root_count": 866,
-    "runners_with_path": 2170
+    "runners_with_path": 2171
   }
 }

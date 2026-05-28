@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 171 |
 | **retained_bounded** | 581 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 24 |
-| unaudited | 1148 |
+| open_gate | 25 |
+| unaudited | 1147 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 885 |
+| `audited_clean` | 886 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1378 |
+| `unaudited` | 1377 |
 
 | claim_type | count |
 |---|---:|
@@ -360,6 +360,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5127,6 +5128,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** if `g_3^2 = 1`, `g_2^2 = 1/(d + 1)`, and `g_Y^2 = 1/(d + 2)`, then `1/g_em^2 = 2d + 3`  _(class `A`)_
 - **chain closes:** True — The note explicitly limits itself to algebra after the coupling inputs are assumed, and the stated identities follow by direct substitution. It does not claim to derive the inputs or a physical low-energy readout.
 - **rationale:** Within the bounded scope, the load-bearing step is ordinary algebra over explicitly assumed inputs, not a claimed first-principles derivation. The runner verifies the same substitutions and also checks boundary language in extra files, but those extra files are not needed for the scoped conditional identity. No external comparator, renaming, or tuned numerical match is present in the source note's actual claim boundary.
+- **auditor confidence:** high
+
+### `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28`
+
+- **Note:** [`FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md`](../../docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open admission-boundary record for the cosmology/eta-cascade backdrop: C1 cosmological principle, C2 adiabatic expansion, and C3 radiation/matter equation-of-state labels remain local supplied premises, not registry admissions or derived theorem content. The row records the explicit unresolved boundary and does not promote parent rows, derive FRW dynamics, derive entropy conservation, close observational parameters, or alter any effective status.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-frw-backdrop-open-gate-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The source partitions the cosmological backdrop into five framework/conditional context ingredients and three local supplied premises C1-C3, keeps the sets disjoint, records zero admission retirements, and explicitly denies theorem-grade closure or repo-wide status effects.  _(class `A`)_
+- **chain closes:** True — As an open_gate, the row closes: the registered runner verifies the finite partition, source-firewall phrases, non-link context-surface handling, and no-overclaim boundaries, while the source leaves C1-C3 and all cosmology derivations open.
+- **rationale:** Clean only as an open admission-boundary gate. The runner's 48 PASS checks are textual and finite-partition guards rather than cosmology dynamics, but that is exactly the claimed object: a record that the existing eta-cascade backdrop still depends on C1 cosmological principle, C2 adiabatic expansion, and C3 non-Lambda EOS labels. Independent partition arithmetic confirms 5 framework/conditional ingredients plus 3 supplied premises, disjoint, with union size 8 and zero retired admissions. No retained theorem, observational value, entropy-conservation derivation, FRW dynamics, Tier-A registry entry, or effective-status promotion is claimed.
 - **auditor confidence:** high
 
 ### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`

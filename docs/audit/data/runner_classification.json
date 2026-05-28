@@ -16728,6 +16728,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py"
     },
+    "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28": {
+      "assert_count": 2,
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 15,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.py"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -44607,6 +44619,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.py": {
+      "assert_count": 2,
+      "claims": [
+        "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 15,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_observable_principle_source_coupled_local_action_admission.py": {
       "assert_count": 2,
       "claims": [
@@ -57393,12 +57420,12 @@
     "dominant_class_distribution": {
       "A": 262,
       "B": 294,
-      "C": 766,
+      "C": 767,
       "D": 306,
       "none": 441
     },
-    "runners_classified": 2069,
-    "runners_with_C": 1005,
-    "runners_with_D": 610
+    "runners_classified": 2070,
+    "runners_with_C": 1006,
+    "runners_with_D": 611
   }
 }

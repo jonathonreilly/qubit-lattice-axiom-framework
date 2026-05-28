@@ -19517,6 +19517,30 @@
       "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
     },
     {
+      "from": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18"
+    },
+    {
+      "from": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+      "to": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -68186,6 +68210,25 @@
       "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
       "title": "Observable-Principle P1 + P2 from Qubit-Trace Generating Functional"
     },
+    "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28": {
+      "claim_id": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (structural reduction of the parent",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2fca830ee6bb312e847d3d3261142f72eb321a4ee9c8cb14f4bcee33abef11f1",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.py",
+      "title": "Observable Principle \u2014 Form/Scale Two-Stage Synthesis"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -86839,7 +86882,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 659,
+      "bounded_theorem": 660,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86848,7 +86891,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1069,
+      "bounded_theorem": 1070,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86856,10 +86899,10 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9893,
-    "leaf_count": 818,
-    "node_count": 2599,
+    "edge_count": 9899,
+    "leaf_count": 819,
+    "node_count": 2600,
     "root_count": 866,
-    "runners_with_path": 2174
+    "runners_with_path": 2175
   }
 }

@@ -17,8 +17,8 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| high | `unaudited` | 185 |
-| critical | `unaudited` | 151 |
+| high | `unaudited` | 184 |
+| critical | `unaudited` | 152 |
 | medium | `unaudited` | 99 |
 | high | `audited_numerical_match` | 4 |
 | high | `audited_renaming` | 3 |
@@ -82,6 +82,7 @@ publication tables phrase it.
 | critical | `dm_neutrino_source_surface_m_spectator_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_surface_scalar_baseline_active_quadratic_diagnostic_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
+| critical | `dm_neutrino_source_surface_schur_scalar_baseline_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_surface_slot_torsion_boundary_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
@@ -255,7 +256,6 @@ publication tables phrase it.
 | high | `dm_neutrino_source_surface_active_parity_compatible_diagonal_baseline_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `dm_neutrino_source_surface_parity_compatible_observable_selector_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
-| high | `dm_neutrino_source_surface_schur_scalar_baseline_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | high | `dm_neutrino_source_surface_z3_doublet_block_current_bank_blindness_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `dm_neutrino_source_surface_z3_doublet_block_full_closure_boundary_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `dm_pmns_ordered_chain_graded_current_delta_closure_theorem_note_2026-04-21` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 562 |
+| **retained_bounded** | 563 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1188 |
+| unaudited | 1187 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 862 |
+| `audited_clean` | 863 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1418 |
+| `unaudited` | 1417 |
 
 | claim_type | count |
 |---|---:|
@@ -385,6 +385,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gate_b_nonlabel_connectivity_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5298,6 +5299,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached runner completes and matches the frozen result: exact grid is 3/3 TOWARD with F~M=1.00, KNN+floor is 0/12 with no F~M fit, and geometry-sector stencil is 12/12 with F~M=1.00. Current one-hop deps are retained-bounded, and older source dependency-status prose is historical rather than audit authority.
 - **rationale:** The row closes as a bounded finite-harness comparison. The runner constructs the geometries, applies the two non-label/connectivity candidates, propagates amplitudes, and computes TOWARD/F~M readouts rather than printing a frozen conclusion. The clean scope is the declared V1 comparison only; broad Gate-B closure and universal non-label connectivity remain unaudited.
 - **auditor confidence:** medium
+
+### `gate_b_nonlabel_connectivity_v2_note`
+
+- **Note:** [`GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md`](../../docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-runner replay for scripts/gate_b_nonlabel_connectivity_v2.py at H=0.5, N_LAYERS=25, HALF=10, drift=0.2, seeds [0,1,2,3], z masses [3,4,5], comparing exact grid, no-restore label-NN, and one no-restore forward-cone/floor non-label rule only. No physical Gate B closure, primitive-to-gravity bridge, or general non-label no-go is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `fresh-agent-Schrodinger-019e6cd9-b879-7720-8f8a-07113fbfad4d`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The frozen result reports exact grid 12/12 TOWARD F~M=1.00, no-restore label-NN 12/12 TOWARD F~M=1.00, and no-restore forward-cone candidate 8/12 TOWARD F~M=0.50, so the forward-cone rule is not yet a viable replacement for label-based far-field connectivity.  _(class `C`)_
+- **chain closes:** True — The source is scoped to one completed finite runner scenario, all one-hop dependencies are retained-bounded, and the cached runner output matches the source table exactly. The table directly supports the bounded negative replacement claim while leaving physical Gate B closure outside scope.
+- **rationale:** A restricted fresh-context auditor confirmed that the runner constructs the exact-grid control, no-restore label-NN control, and actual-position forward-cone/floor candidate, propagates the runner-defined field/readout, and computes the TOWARD counts plus F~M slopes. The output reproduces the note's finite table: the controls remain 12/12 with F~M=1.00, while the non-label cone-floor candidate drops to 8/12 and F~M=0.50. This closes only the bounded comparison that the sampled cone-floor rule is not a viable replacement on the declared row; it does not ratify the admitted source law, propagation kernel, TOWARD readout, or full physical Gate B interpretation.
+- **auditor confidence:** high
 
 ### `gate_b_nonlabel_sign_grown_transfer_note`
 

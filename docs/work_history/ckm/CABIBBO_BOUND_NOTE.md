@@ -73,3 +73,10 @@ The active main-branch Cabibbo surface is instead:
 - keep Cabibbo on the bounded publication surface
 - do not promote it beyond bounded flavor-companion status until the full CKM
   lane closes
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is historical bounded CKM context only: the active
+mass-basis NNI route gives a Cabibbo-scale numerical readout close to the PDG
+comparator. The PDG value, quark masses, and fitted coefficients are not
+derived in this work-history note, and the note is not a retained CKM closure
+or a publication authority surface by itself.

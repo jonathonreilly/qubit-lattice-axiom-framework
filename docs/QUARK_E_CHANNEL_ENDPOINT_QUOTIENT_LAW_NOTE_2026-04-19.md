@@ -284,3 +284,10 @@ the 2026-05-10 scope-narrowing companion and the retained
 `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`.
 This keeps the bounded status formally traceable from the runner
 output without altering the bounded scope of the law candidate itself.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the exact endpoint algebra plus a bounded
+low-rational candidate for the still-open `E`-channel quotient. The quotient
+`15/8`, the derived `r_E = 21/4`, and `D_E = 21/8` are candidate readouts on
+the controlled endpoint class, not a retained derivation of the missing
+`E`-center primitive. The note should be audited as bounded candidate science.

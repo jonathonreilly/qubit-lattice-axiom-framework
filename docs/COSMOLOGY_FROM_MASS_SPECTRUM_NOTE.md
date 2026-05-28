@@ -1,7 +1,7 @@
 # Cosmology Cascade from Mass Spectrum (Phase 5 of mass spectrum)
 
 **Date:** 2026-04-17
-**Status:** bounded/conditional cascade; proposed_retained pieces consolidated; open
+**Status:** bounded/conditional cascade; stronger source pieces consolidated; open
 lane is promotion of `eta` from DM-gate support to retained theorem.
 **Primary runner:** `scripts/frontier_cosmology_from_mass_spectrum.py`
 **Depends on:** `NEUTRINO_MASS_DERIVED_NOTE.md` (Phase 4),
@@ -160,3 +160,11 @@ The runner verifies:
 - cross-link through all five phases of the mass-spectrum attack plan
   (Part 8);
 - a summary of retained / bounded / conditionally-closed content (Part 9).
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the conditional cascade arithmetic from the listed
+inputs: Phase-4 mass-spectrum quantities, imported `eta`, the bounded
+`alpha_GUT` Sommerfeld factor, BBN conversion, and flatness. This note does not
+derive `eta`, does not derive the observed dark/baryon ratio, and does not
+promote LCDM parameter closure from first principles. The retained content, if
+accepted, is the transparent conditional compression map and its input ledger.

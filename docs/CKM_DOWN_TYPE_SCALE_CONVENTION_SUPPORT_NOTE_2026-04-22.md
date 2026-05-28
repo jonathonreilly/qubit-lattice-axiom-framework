@@ -1,7 +1,7 @@
 # CKM Down-Type Mass-Ratio Scale-Convention Support Note
 
 **Date:** 2026-04-22 (runner patched 2026-05-16 in response to audit defects D1+D2)
-**Status:** **support-level strengthening**, not a theorem-grade closure. Consolidates the proposed_retained bounded lane's numerical scale-convention coincidence into a single cross-checked identity with explicit scope. The `5/6` bridge itself remains open; what this note closes is the SIZE of the bounded lane's live numerical evidence.
+**Status:** **support-level strengthening**, not a theorem-grade closure. Consolidates the bounded lane's numerical scale-convention coincidence into a single cross-checked identity with explicit scope. The `5/6` bridge itself remains open; what this note closes is the SIZE of the bounded lane's live numerical evidence.
 **Audit status:** `audited_numerical_match` (class G), 2026-05-05; runner-level defects D1 and D2 (see below) addressed by the 2026-05-16 patch; D3 (missing retained derivation of the `5/6` bridge and threshold-local comparator) remains open.
 **Primary runner:** `scripts/frontier_ckm_down_type_scale_convention_support.py`
 
@@ -118,3 +118,11 @@ Expected: `PASSED: 17/17`.
 - `docs/ALPHA_S_DERIVED_NOTE.md` — retained `α_s(v)`.
 - `docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md` — retained `|V_cb|_atlas`.
 - `docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md` — bounded up-sector parallel-bridge lane.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is a bounded scale-convention support calculation: given
+the threshold-local mass convention, the standard one-loop QCD transport factor,
+and the open `5/6` bridge exponent, the runner checks the stated arithmetic
+coherence of the down-type comparison. The note does not derive the `5/6`
+bridge, does not select the threshold-local convention from the framework, and
+does not promote the CKM/down-type lane beyond bounded support.

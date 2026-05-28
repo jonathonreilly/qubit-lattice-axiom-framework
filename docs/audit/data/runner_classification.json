@@ -6540,6 +6540,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py"
     },
+    "dm_neutrino_weak_triplet_coefficient_boundary_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py"
+    },
     "dm_neutrino_weak_triplet_transfer_class_theorem_note_2026-04-15": {
       "assert_count": 1,
       "counts": {
@@ -8063,6 +8075,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py"
+    },
+    "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_conditional_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py"
     },
     "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25": {
       "assert_count": 1,
@@ -14951,18 +14975,6 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/minimal_absorbing_horizon_probe.py"
-    },
-    "minimal_axioms_2026-05-03": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 2,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_generation_rooting_undefined.py"
     },
     "minimal_bidirectional_trapping_probe_note": {
       "assert_count": 0,
@@ -36700,7 +36712,8 @@
     "scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py": {
       "assert_count": 1,
       "claims": [
-        "dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15"
+        "dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15",
+        "dm_neutrino_weak_triplet_coefficient_boundary_note_2026-05-28"
       ],
       "counts": {
         "A": 0,
@@ -38067,6 +38080,7 @@
     "scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py": {
       "assert_count": 1,
       "claims": [
+        "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_conditional_note_2026-05-28",
         "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30"
       ],
@@ -39279,7 +39293,6 @@
     "scripts/frontier_generation_rooting_undefined.py": {
       "assert_count": 1,
       "claims": [
-        "minimal_axioms_2026-05-03",
         "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26"
       ],
       "counts": {

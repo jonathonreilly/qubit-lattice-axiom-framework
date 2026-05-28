@@ -139,7 +139,7 @@ def part3_the_exact_source_carrier_closes_the_even_leg() -> None:
 
     check(
         "The exact source carrier treats the two bright columns symmetrically as u_E and u_T",
-        "K_R(q) = [[u_E(q), u_T(q)], [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]]".replace(" ", "")
+        "K_R(q) := [[u_E(q), u_T(q)], [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]]".replace(" ", "")
         in primitive.replace(" ", ""),
     )
     check(
@@ -162,7 +162,9 @@ def part3_the_exact_source_carrier_closes_the_even_leg() -> None:
     )
     check(
         "The source-side carrier still factors through the symmetric row mode only",
-        "bounded linear readout" in primitive and "exact carrier" in primitive,
+        "bilinear microscopic carrier `K_R(q)`" in primitive
+        and "decoupling fact" in primitive
+        and "input symbols `delta_A1, u_E, u_T" in primitive,
     )
 
 

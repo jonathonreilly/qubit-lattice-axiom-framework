@@ -183,3 +183,11 @@ deps:
   - hierarchy_effective_potential_endpoint_note
 audit_authority: independent audit lane only
 ```
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the narrowed numerical ordering diagnostic already
+isolated here: for the runner-produced condensate-density ratio, the
+fourth-root compression lies near the imported `C_obs` prefactor while the
+direct sixteenth-root compression does not. This note does not derive the
+physical determinant-to-VEV bridge, the sign, the placement, or the effective
+potential density law; those remain the explicit repair target.

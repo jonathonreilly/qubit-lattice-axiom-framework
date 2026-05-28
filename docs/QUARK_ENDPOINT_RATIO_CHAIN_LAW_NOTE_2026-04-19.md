@@ -257,3 +257,10 @@ retained no-go
 `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`.
 The bounded scope of the chain candidate is unchanged; the new checks
 keep the bounded status formally traceable from the runner output.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the exact endpoint ratio-chain identity plus the
+bounded choice of three small-rational endpoint candidates `{5/6, -2, -8/9}`.
+The chain explains how those candidates imply `15/8` and then `r_E = 21/4`,
+but it does not derive the low-rational grammar or the missing `E`-channel
+primitive from the framework. The safe tier remains bounded candidate support.

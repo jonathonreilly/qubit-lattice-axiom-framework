@@ -37,6 +37,12 @@ Cycle 21 science commit:
 cae4183704b822ddfb65b577d137f6b4998c0cd0
 ```
 
+Cycle 21 delivery commit:
+
+```text
+aebae9d023d4050c413d01db089955b63e4339cc
+```
+
 Cycle 21 artifacts:
 
 - `docs/YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
@@ -63,6 +69,8 @@ Cycle 21 verification so far:
 - `python3 -m py_compile ...` passed.
 - YAML validation passed.
 - `git diff --check` passed.
+- Branch pushed to origin and PR #1980 body updated with the exact no-go
+  result and verification.
 
 The next exact action remains rank 1 or rank 4: derive accepted same-surface
 radial generator dynamics plus a physical top-readout law excluding `P_0`, or
